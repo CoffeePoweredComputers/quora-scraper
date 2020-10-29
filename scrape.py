@@ -15,16 +15,17 @@ CHROMEDRIVER_PATH = "./chromedriver"
 CHROME_PATH = ""
 WINDOW_SIZE = "1920,1080"
 
-TIMES = 1500
+TIMES = 15000
 
 
 def scrape_urls(category: str):
     """Takes a category and scrapes all the links associated with it"""
 
     options = Options()
-    #options.add_argument("--headless")  
+    options.add_argument("--headless")  
     options.add_argument("--window-size=%s" % WINDOW_SIZE)
     options.binary_location = CHROME_PATH
+    options.add_argument("user-agent=This is a webscraper for a university research project. Contact: davidsmith@hamiltonfour.tech")
     prefs = {'profile.managed_default_content_settings.images':2}
     options.add_experimental_option("prefs", prefs)
 

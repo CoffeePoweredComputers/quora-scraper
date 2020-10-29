@@ -1,0 +1,42 @@
+{
+    "title": "How to construct this Boolean expression (A\u2019+B\u2019+C) (A+B\u2019+C\u2019) by using only NOR gates - Quora",
+    "tags": [
+        "NOR Gate",
+        "Boolean Expression",
+        "Boolean Search",
+        "Logic Gates",
+        "Boolean Algebra",
+        "Electronics",
+        "Numbers (mathematics)",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Holloway",
+                "href": "/profile/Paul-Holloway-15"
+            },
+            "answer_text": "The following gates can be constructed from nor gates like this:  To turn a nor gate into a not gate just join the two inputs. To turn a nor gate into an or gate just not the output and to turn nor gates into an and gate use De Morgan's Law. Something this hairy can be made simpler by substitution. Let U = A' + B' + C Let W = A + B' + C' so this whole thing becomes U.W We can use De Morgan's Law to express this using only nor gates. U.W = (U' + W')' Now let's express A' + B' in terms of nor. A or B = (A nor B)' because not nor = or. so A' + B' = (A' nor B')' A' + B' + C = (A' nor B')' + C but we know A+B = (A nor B)' so (A' nor B')' + C = ((A' nor B')' nor C)' so U = (A'+ B' + C) = ((A' nor B')' nor C)' which is read not(not((not A) nor (not B)) nor C) and by the same reasoning: W = (A + B' + C') = (( A nor B')' nor C')' which is read not(not( A nor (not B)) nor (not C)) but we know U.W = (U' + W')' which is read (not U) nor (not W) If U = ((A' nor B')' nor C)' then U' = (A' nor B')' nor C because of the double negative rule. If W = (( A nor B')' nor C')' then W' = ( A nor B')' nor C' because of the same double negative rule. So (U' + W')' = ((A' nor B')' nor C) nor (( A nor B')' nor C') which is read ((not A) nor (not B) nor C) nor (A nor (not B) nor (not C)) removing unnecessary brackets: (A\u2019+B\u2019+C) (A+B\u2019+C\u2019) = (A\u2019 nor B\u2019 nor C) nor (A nor B\u2019 nor C\u2019) Which might look something like this:  Hope this helps. ",
+            "date": "Answered October 25, 2020",
+            "views": "27",
+            "upvotes": " Answer requested by Andy Atherley",
+            "upvoters": [
+                {
+                    "user_id": "Apurva Kumar",
+                    "user_href": "/profile/Apurva-Kumar-56"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "S=(A\u2032+B\u2032+C)(A+B\u2032+C\u2032)S=(A\u2032+B\u2032+C)(A+B\u2032+C\u2032) S=(A\u2032+B\u2032+C)(A+B\u2032+C\u2032)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00afS=(A\u2032+B\u2032+C)(A+B\u2032+C\u2032)\u00af\u00af S=(A\u2032+B\u2032+C)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af+(A+B\u2032+C\u2032)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00afS=(A\u2032+B\u2032+C)\u00af+(A+B\u2032+C\u2032)\u00af\u00af  ",
+            "date": "Answered October 28, 2020",
+            "views": "31",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

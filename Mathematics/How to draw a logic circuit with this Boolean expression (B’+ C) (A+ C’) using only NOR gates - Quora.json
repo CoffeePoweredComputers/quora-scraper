@@ -1,0 +1,56 @@
+{
+    "title": "How to draw a logic circuit with this Boolean expression (B\u2019+ C) (A+ C\u2019) using only NOR gates - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Digital Logic Design",
+        "Logic Gates",
+        "Boolean Algebra",
+        "Digital Electronics",
+        "Circuits",
+        "Electronics",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gregory Schoenmakers",
+                "href": "/profile/Gregory-Schoenmakers"
+            },
+            "answer_text": "I have answered a number of questions in the past which asked for the implementation of a Boolean expression using only NAND gates. The procedure here is similar. It helps that the expression is already in the \u201cproduct of sums\u201d form since the final gate is an AND gate. If it was in the \u201csum of products\u201d form then the final gate would be an OR gate and an inverter would be needed at the output to convert the final NOR gate into an OR gate. The circuit is implemented directly as shown below:  We then convert each gate into a NOR gate as shown below:  Normally we would need to add or remove some inverters to make the circuit implement the same Boolean function but because of the way this equation has been drawn, it is not necessary in this case. ",
+            "date": "Answered October 26, 2020",
+            "views": "47",
+            "upvotes": " Answer requested by Andy Atherley"
+        },
+        {
+            "author_info": {
+                "name": "Roger Larson",
+                "href": "/profile/Roger-Larson-11"
+            },
+            "answer_text": "If you have access to B\u2019 and C\u2019, then (B\u2019 + C)(A + C\u2019) can be implemented with 3 NOR gates NOR gate 1 has inputs B\u2019 and C, NOR gate 2 has inputs A and C\u2019 The outputs of gates 1 and 2 are the inputs to NOR gate 3. The output of this third NOR gate is (B\u2019 + C)( A + C\u2019) Equations of this form ( B\u2019 +C)(A + C\u2019) are known as products of Sum (POS) To see how this works use DeMorgan\u2019s theorem on the third NOR gate, it acts as AND gate with an inverter on each of the inputs. The inverters convert NOR gate 1 and NOR gate 2 into OR gates. If you must created B\u2019 and C\u2019, you can use two more NOR gates as inverters (5 NOR gates). This may not be the best way to create (B\u2019 + C)(A + C\u2019) ",
+            "date": "Answered October 24, 2020",
+            "views": "39",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Simon Forey",
+                "href": "/profile/Simon-Forey"
+            },
+            "answer_text": "This sounds too much like a homework question - so I won\u2019t give you the actual answer, just some hints. If you want an INVerter and you only have NOR gates, then tie all but one of the inputs to low.If you want an OR gate, and you only have a NOR, then just add an INVerter on the output.If you want an AND gate, and you only have a NOR, then just add INVerters on all the inputs.Two inverters on a wire cancel out.Given those you should be able to draw out the logic for any expression. ",
+            "date": "Answered October 25, 2020",
+            "views": "30",
+            "upvotes": " Answer requested by Andy Atherley"
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": " S=(A+C\u2032)(B\u2032+C)S=(A+C\u2032)(B\u2032+C) S=(A+C\u2032)(B\u2032+C)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00afS=(A+C\u2032)(B\u2032+C)\u00af\u00af S=(A+C\u2032)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af+(B\u2032+C)\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00af\u00afS=(A+C\u2032)\u00af+(B\u2032+C)\u00af\u00af  ",
+            "date": "Answered October 26, 2020",
+            "views": "28",
+            "upvotes": "0"
+        }
+    ]
+}

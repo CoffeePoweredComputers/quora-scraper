@@ -1,0 +1,40 @@
+{
+    "title": "What is the sum of all the even integers from 8 to 888, inclusive? - Quora",
+    "tags": [
+        "Integers",
+        "Number Theory",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "A. Meijster",
+                "href": "/profile/A-Meijster"
+            },
+            "answer_text": "The two answers below are incorrect. The right answer is 197568. In a programming language like Haskell you will find this answer as a one-liner. Simply type the following in the Haskell interpreter and you have the answer: sum [8,10..888] But ok, I can imagine that you find this a bit cheating. So, let\u2019s do some simple math. Let us first try to answer something simpler. What is the sum of all even integers below and including bb (where bb is even)? Well, that is 2+4+6+..+b=2\u2217(1+2+3+..+b/2)2+4+6+..+b=2\u2217(1+2+3+..+b/2). I assume you know the simple formula \u2211ni=0i=n(n+1)2.\u2211i=0ni=n(n+1)2. Hence, the sum of even number less or equal bb is 2(b/2)(b/2+1)2=b2+2b4.2(b/2)(b/2+1)2=b2+2b4. Now, if you want the sum of all even integers between a>2a>2 and b>ab>a(aa and bb both even, bb included in the sum) then we have \u2211bi=a,i\u00a0eveni=\u2211bi=0,i\u00a0eveni\u2212\u2211a\u22122i=0,i\u00a0eveni=b2+2b\u2212((a\u22122)2+2(a\u22122))4=b2\u2212a2+2a+2b4\u2211i=a,i\u00a0evenbi=\u2211i=0,i\u00a0evenbi\u2212\u2211i=0,i\u00a0evena\u22122i=b2+2b\u2212((a\u22122)2+2(a\u22122))4=b2\u2212a2+2a+2b4 Plug in a=8a=8 and b=888b=888 and you will find 197568 ",
+            "date": "Answered October 25, 2020",
+            "views": "358",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Stephen Davey",
+                "href": "/profile/Stephen-Davey-22"
+            },
+            "answer_text": "Let n1 = 8 (the first term in the AP). Let n = 888 (the nth term of the AP). Let d = 2 (the difference between the terms in the AP). Then the sum of the even integers between 8 and 888\u2026 = (n * (2 * n1 + (n - 1) * d)/2 = (888 * (2 * 8 + (888 \u2013 1) * 2)/2 = 794 760 ",
+            "date": "Answered October 24, 2020",
+            "views": "288",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Aravind Kumar",
+                "href": "/profile/Aravind-Kumar-8"
+            },
+            "answer_text": "=8+10+12+\u2026+888 =8\u00d7111+2+4+6+\u2026886=888+2(1+2+3\u2026..443)=888+2\u00d7443\u00d7444/2 =888+443\u00d7444=197580 ",
+            "date": "Answered October 25, 2020",
+            "views": "204",
+            "upvotes": "0"
+        }
+    ]
+}
