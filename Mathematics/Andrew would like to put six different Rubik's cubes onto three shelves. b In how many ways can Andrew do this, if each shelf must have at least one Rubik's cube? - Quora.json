@@ -1,0 +1,20 @@
+{
+    "title": "Andrew would like to put six different Rubik's cubes onto three shelves. b In how many ways can Andrew do this, if each shelf must have at least one Rubik's cube? - Quora",
+    "tags": [
+        "Logic Puzzles",
+        "Permutations and Combinations",
+        "Puzzles and Trick Questions"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mike Alexander",
+                "href": "/profile/Mike-Alexander-184"
+            },
+            "answer_text": "This can be treated as a \u201cstars and bars\" problem. We have 6 stars (rubik's cubes) and we need to place 2 bars in between them, so as to split them into 3 groups - top shelf, middle shelf and bottom shelf. Examples: *|**|*** = 1 top, 2 middle, 3 bottom **|***|* = 2 top, 3 middle, 1 bottom We require at least 1 on each shelf, so there are 5 possible positions for placing the first bar, any of: *|*|*|*|*|* After we place the first bar, there will be 4 positions where we can place the second bar. So that's 5x4 = 20 possibilities. However, we can pick the same pattern 2 different ways, depending on which of the bars we place first. So allowing for that, there are 5x4/2 = 10 patterns. So there are 10 different ways to arrange them on 3 shelves with at least one cube on each shelf. ",
+            "date": "Answered October 24, 2020",
+            "views": "36",
+            "upvotes": "0"
+        }
+    ]
+}

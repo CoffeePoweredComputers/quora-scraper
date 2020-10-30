@@ -1,0 +1,39 @@
+{
+    "title": "Does the CPU on a motherboard or a digital to analog converter, for example, behave like a function would in mathematics? - Quora",
+    "tags": [
+        "Analog Electronics",
+        "Trigonometry (mathematics)",
+        "Functions (mathematics)",
+        "Computer Science",
+        "Computer Hardware",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jose Soares Augusto",
+                "href": "/profile/Jose-Soares-Augusto"
+            },
+            "answer_text": "The DA converter has mathematical models in the aim of the Laplace and Z transforms, used for example when we are studying digital control systems. Seen as a continuous device, the DAC converts a number A, modeled as an impulse (Dirac) A\u03b4(t)A\u03b4(t) with area AA, into a pulse ApT(t)ApT(t) with length TT (the sampling period) and amplitude AA. So, if the input u(t)u(t) and output y(t)y(t) and the respective Laplace transforms are u(t)=A\u03b4(t)\u27f7U(s)=Au(t)=A\u03b4(t)\u27f7U(s)=A y(t)=ApT(t)\u27f7Y(s)=A1\u2212e\u2212sTsy(t)=ApT(t)\u27f7Y(s)=A1\u2212e\u2212sTs then its system, or transfer function, HDAC(s)HDAC(s), is HDAC(s)=Y(s)U(s)=1\u2212e\u2212sTsHDAC(s)=Y(s)U(s)=1\u2212e\u2212sTs This model is also called the \u201czero-order hold\u201d (ZOH) model, since it is the behavior of a sample-and-hold (keeps the value constant in each sampling interval with length TT). Below it is the response of the ZOH or DAC to a unit impulse \u03b4(t)\u03b4(t). The time axis is normalized by TT.  To go to the digital domain, in the aim of the Z transform, the DAC is considered as being connected in series with a linear time-invariant system, or plant, G(s)G(s) and the conversion of the combo HDAC(s)G(s)HDAC(s)G(s) to the Z domain is H(z)=Z{HDAC(s)G(s)}=(1\u2212z\u22121)Z{G(s)/s}H(z)=Z{HDAC(s)G(s)}=(1\u2212z\u22121)Z{G(s)/s} where Z{.}Z{.} is called the \u201cpulse transfer function\u201d. See, for instance, 7.2: Pulse Transfer Function which has a good explanation. Regarding the CPU, it can be somewhat seen has a whole \u201ccomputer\u201d, and its behavior can in principle be represented by a state-machine, but with such a huge number of states that it has really to be considered as an infinite-number-of-states state-machine. That would be the model, although irrelevant in practical terms. So there you have, models of a DAC and of a processor\u2026 HTH ",
+            "date": "Answered October 25, 2020",
+            "views": "218",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Xa Bei",
+                    "user_href": "/profile/Xa-Bei"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andy White",
+                "href": "/profile/Andy-White-341"
+            },
+            "answer_text": "The cpu is just a big fast calculator - it does logic and conditional sums. Digi-ana conv is a micro controller not a CPU so two different devices. ",
+            "date": "Answered October 24, 2020",
+            "views": "56",
+            "upvotes": "0"
+        }
+    ]
+}

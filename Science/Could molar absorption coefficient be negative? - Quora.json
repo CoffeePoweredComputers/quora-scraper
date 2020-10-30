@@ -1,0 +1,141 @@
+{
+    "title": "Could molar absorption coefficient be negative? - Quora",
+    "tags": [
+        "Analytical Chemistry",
+        "Physical Chemistry",
+        "Chemical Engineering",
+        "Biochemistry",
+        "Organic Chemistry",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marcus Abramovitch",
+                "href": "/profile/Marcus-Abramovitch-1"
+            },
+            "answer_text": "Shoumi Sarkar gave a great start but I think it would be good for me to finish it up. Very important: Whenever you are doing an experiment, it is important to know what you\u2019re doing. A spectrophotometer is like a calculator, feed it inputs and it will give you an output. That doesn't mean that the instrument is telling you what you want. The molar absorption coefficient cannot be negative. That is to say, the more a species exists, the less it will absorb at a given wavelength. What is not mentioned in the molar absorption coefficient is that it is for a particular species, at a particular wavelength. There are plenty of scenarios I can think of where adding a species in higher concentration will result in less light absorbed. An example would be if the species of interest reacts with another species in the solution to get rid of its absorption. The most probable cause for a negative absorbance reading is interesting. When you use a spectrophotometer, you don't just insert your sample. You insert a \u201cblank\u201d to compare your sample to. This blank sample should be \u201ceverything that is not the thing you want to measure\u201d so that when you put in your sample, you are only measuring one species(unless you want to measure more), the one(s) you are interested in. This means that your blank sample does absorb light. It absorbs the light of all species you are not interested in. What you actually measure when you measure absorbance of your sample is the amount your sample absorbs minus the light your blank absorbs. Some simple math will tell you that if your blank absorbs more than the sample, then you will get a negative absorbance. There are often small differences between your blank and your sample other than the species of interest. This can be anything from the absorbance of the cuvette to the turbidity of your solution. If your sample has less turbidity or a different cuvette and your species of interest does not absorb very much, the spectrophotometer will show that you have a negative absorbance. Sometimes, when measuring absorbance, you might expect absorbance to decrease as you add your analyte (species of interest). Here are two examples of this: If you were to add a surfactant which reduces the turbidity of the solution. Of course, the more you add, the less turbid(cloudy) the solution becomes and more light gets through so you measure a lower absorbance. It is not that your surfactant has a negative molar absorptivity but rather that the \u201cother stuff\u201d absorbs less because of the surfactant.If you are purposely looking for the disappearance of another substance because your analyte makes it disappear. If I start off with my blank having a species that absorbs at the particular wavelength, species A. One way I might measure my analyte, species B, is by measuring the disappearance of A. This can be having A and B form a complex, it could be B reacting with A or anything else. All that matters is that when I add species B, there is less of substance A. Once again, it is not that species B has a negative molar absorptivity but actually that you are decreasing other absorbances in your sample.Much of this will make more sense if you know that absorbance measured is the sum of all things that are absorbing at that wavelength. Good luck! ",
+            "date": "Answered June 4, 2016",
+            "views": "25",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sean Willits",
+                    "user_href": "/profile/Sean-Willits-1"
+                },
+                {
+                    "user_id": "Autumn Paolini",
+                    "user_href": "/profile/Autumn-Paolini"
+                },
+                {
+                    "user_id": "Manas Pratim Biswas",
+                    "user_href": "/profile/Manas-Pratim-Biswas-1"
+                },
+                {
+                    "user_id": "Sakshi Sharma",
+                    "user_href": "/profile/Sakshi-Sharma-1371"
+                },
+                {
+                    "user_id": "Megha Bala",
+                    "user_href": "/profile/Megha-Bala-2"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Donna Perygin",
+                    "user_href": "/profile/Donna-Perygin"
+                },
+                {
+                    "user_id": "Kevin Dickinson",
+                    "user_href": "/profile/Kevin-Dickinson-3"
+                },
+                {
+                    "user_id": "Shubham Lohchab",
+                    "user_href": "/profile/Shubham-Lohchab"
+                },
+                {
+                    "user_id": "Jeffrey Brender",
+                    "user_href": "/profile/Jeffrey-Brender"
+                },
+                {
+                    "user_id": "Theresa Jones",
+                    "user_href": "/profile/Theresa-Jones-25"
+                },
+                {
+                    "user_id": "Madhavi Pandey",
+                    "user_href": "/profile/Madhavi-Pandey-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eli Riekeberg",
+                "href": "/profile/Eli-Riekeberg"
+            },
+            "answer_text": "That\u2019s a FANTASTIC question! Short Version: I\u2019m assuming that you\u2019re coming from a purely chemistry background, at around the undergrad or new graduate level. The simple answer is no. Epsilon (or the molar asbsorptivity) measures the amount of light that does NOT pass through a solution. A higher value means more light is getting absorbed (and conversely, less is getting through). An epsilon equal to zero would indicate that light is passing through completely unimpeded; it\u2019s as if there are no molecules in the way at all! LONG Version: Ok, so lets come at this from a more physics perspective. A lot of physicists call this number \u201ck\u201d; not to be confused with the mass attenuation coefficient which is also often called k. There are basically three test cases of k: k>0, k=0 and k<0. The first case, k>0, is exactly like we would imagine it in chemistry. Light is being absorbed, with higher k\u2019s corresponding to higher levels of absorption. The next case, k=0, would be when light is traveling completely unimpeded, with no interactions or attenuation effects at all. As a fun fact, this second case would result in light traveling forever with no loss in intensity (assuming of course that k continues to equal zero over the entire path it is traveling). Now, the third case. When k<0, this would signal the opposite of k>0. That is, light intensity is increasing after interaction with a material rather than decreasing. Now that we\u2019ve framed it that way\u2026 can you think of way that is possible?  LASERS! The entire idea behind lasers is right in the acronym: Light Amplification by Stimulated Emission of Radiation. A Laser has a few main parts:  The gain mediumAn energy pumpReflective Mirrors (4 is also a reflective mirror, but it\u2019s referred to an an output coupler. Slightly different, and I encourage you to read more if you\u2019re interested)and lastly, the laser itself (number 5). The part I want to focus on is the gain medium, which I think most directly answers your question. Technically, the gain medium is a material that will emit more light than it takes in; it\u2019s the perfect example of the third case k<0 (or if you prefer, negative molar absorptivity). Of course it isn\u2019t magic; it only works this way because it is constantly being supplied with energy from the energy pump. So in reality, the gain medium is FULL of energy already and just a little bit of light is enough to make it release some of that energy\u2026 in the form of even more light. So we haven\u2019t changed the world. We didn\u2019t find a magical substance that can amplify enough light to produce all the worlds solar power. But, because of some technicalities in the definition we do have a substance that has a negative molar absorptivity. Sources: I\u2019m an analytical chemist, and I thought about this a lot myself as an undergrad. Pictures courtesy of Laser ",
+            "date": "Answered July 18, 2016",
+            "views": "35",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Anjali Mahato",
+                    "user_href": "/profile/Anjali-Mahato-5"
+                },
+                {
+                    "user_id": "Akshay Prabhakar",
+                    "user_href": "/profile/Akshay-Prabhakar-5"
+                },
+                {
+                    "user_id": "Swastik Biswas",
+                    "user_href": "/profile/Swastik-Biswas-6"
+                },
+                {
+                    "user_id": "David Curran",
+                    "user_href": "/profile/David-Curran-43"
+                },
+                {
+                    "user_id": "Zubair Wani",
+                    "user_href": "/profile/Zubair-Wani-14"
+                },
+                {
+                    "user_id": "Kris McNeill",
+                    "user_href": "/profile/Kris-McNeill"
+                },
+                {
+                    "user_id": "Jeffrey Brender",
+                    "user_href": "/profile/Jeffrey-Brender"
+                },
+                {
+                    "user_id": "Shoumi Sarkar",
+                    "user_href": "/profile/Shoumi-Sarkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shoumi Sarkar",
+                "href": "/profile/Shoumi-Sarkar"
+            },
+            "answer_text": "I haven't studied Beer's Law, but I just did some online reading so that I could try helping you with this question.  I went through the Wikipedia page for Molar Attenuation Coefficient which describes it as a \"measurement of how strongly a chemical species attenuates light at a given wavelength\". Based on this definition, it seems evident that such an index would assume only positive values.  Moreover, I came across the following discussion on ResearchGate (https://www.researchgate.net/post/What_is_negative_absorbance_and_why_am_I_getting_it), where someone got a negative value in course of their experiment:  What is negative absorbance and why am I getting it?I'm conducting on study of anion complexation. I'm using a diamide ligand as the receptor and an anion (chromate, nitrate and chloride) as the analyte. The problem is, for most of the test, the absorbance is higher than the baseline. However, some tests show absorbance lower than the baseline (negative absorbance). What is the meaning of negative absorbance and why does it happen? Which received responses (one of which I quote below) saying that a negative value was not possible:  Are you using quartz cuvets or not? Negative absorbance has no physical meaning except the fact that the blank absorbs more light than your sample. What is your blank and sample composition in the case of negative absorbances? At times refractive indexes are quite different and one gets an odd result.The luminescence phenomenon cannot give more light output than the incident radiation because the number of photons emitted cannot exceed the number of incident photons. A negative value would be due to a fault in carrying out your experiment, as decribed in one of the responses:  In my opinion there are two possible reasons for negative absorbance:1) you have a problem with instrument calibration, which means that your reference sample for baseline correction is contaminated (moisture or other surface-impurities). In this case I would suggest obtaining or creating clean fresh reference sample.2) your sample shows luminescence triggered through excitation of specific wavelength giving higher total light output. You have to note that though the source in UV-VIS spectrophotometer is monochromatic, the detectors are not, they register net total light output from your sample (whole spectra produced by interaction of source beam with the sample).  I hope someone on Quora with more expertise on the topic will confirm this. ",
+            "date": "Answered June 4, 2016",
+            "views": "947",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Malcolm Sargeant",
+                    "user_href": "/profile/Malcolm-Sargeant"
+                },
+                {
+                    "user_id": "Manas Pratim Biswas",
+                    "user_href": "/profile/Manas-Pratim-Biswas-1"
+                },
+                {
+                    "user_id": "Jeffrey Brender",
+                    "user_href": "/profile/Jeffrey-Brender"
+                }
+            ]
+        }
+    ]
+}

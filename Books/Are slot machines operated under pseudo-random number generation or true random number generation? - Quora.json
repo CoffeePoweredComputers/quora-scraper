@@ -1,0 +1,298 @@
+{
+    "title": "Are slot machines operated under pseudo-random number generation or true random number generation? - Quora",
+    "tags": [
+        "Slot Machines",
+        "Random Number Generators (RNG)",
+        "Randomness (statistics)",
+        "Gambling",
+        "Probability (statistics)",
+        "Algorithms",
+        "Statistics (academic discipline)",
+        "Computer Science",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jerry Coffin",
+                "href": "/profile/Jerry-Coffin-2"
+            },
+            "answer_text": "At least the vast majority of current machines use pseudo-random generators. This is done so the operator can adjust the \u201cyield\u201d from the machine (i.e., how much is paid out vs. how much is kept by the operator) to a level that ensures the game makes money, but still gives players the \u201cfeeling\u201d that they stand a chance of winning. For example, here\u2019s what Bally (one of the larger slot machine manufacturers) says in the introductory part of one of their patents: A significant technical challenge is to improve the operation of gaming apparatus and games played thereon, including the manner in which they leverage the underlying random element generator, by making them yield a negative return on investment in the long run (via a high quantity and/or frequency of player/apparatus interactions) and yet random and volatile enough to make players feel they can get lucky and win in the short run. Striking the right balance between yield versus randomness and volatility to create a feeling of luck involves addressing many technical problems, some of which can be at odds with one another. This luck factor is what appeals to core players and encourages prolonged and frequent player participation. Traditionally, an operator of a gaming machine, such as a casino or other gaming establishment, is provided the opportunity to adjust the yield of the game provided by the gaming machine either by installing a different software variation or by selecting one of a predefined set of yields provided by the manufacturer of the gaming machine. Greater flexibility to fine-tune such adjustments is desirable and, as the industry matures, the creativity and ingenuity required to improve such operation of gaming apparatus and games grows accordingly. So, in slot machine terms, this is saying that traditionally the machine had a single pseudo-random generator that gave a specific yield, and to adjust the yield the operator would have to install different software. This patent covers a method of letting the operator adjust the yield to a specific level by having two generators, one of which gives a low yield, and other a higher yield, and for each play \u201crandomly\u201d choosing from a weighted table to decide which one to use. So, you can choose from a range of levels of payout, and it\u2019ll produce that level. Reference Single Document ",
+            "date": "Answered November 29, 2019",
+            "views": "690",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Koushik Kumaran",
+                    "user_href": "/profile/Koushik-Kumaran-1"
+                },
+                {
+                    "user_id": "Christopher Aeneadas",
+                    "user_href": "/profile/Christopher-Aeneadas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "George Woodside",
+                "href": "/profile/George-Woodside"
+            },
+            "answer_text": "While some of the answers previously posted are partially correct, I haven\u2019t seen one that is totally correct. I am a retired senior software engineer with years of software development experience for a gaming company. You can take my word for it, or go on your merry way and ignore everything I am about to write. Note that my gaming credentials and experience are relative to Nevada, and I retired a few years ago, so it is possible (although unlikely) that things have changed. Since nearly all the gaming regulators in the USA is follow what is legal in Nevada, this is how they work. There is one and only one pseudo random number generator in all slot machines. It is a software algorithm that runs at blazingly fast speeds, generating thousands upon thousands of pseudo random numbers every second. There are only two pseudo random number generators authenticated and permitted under the regulations of the Nevada Gaming License Control Board (GLCB). The pseudo random number generators cannot be altered, nor can they be \u201ctuned\u201d to alter game outcome. The pseudo random number generator, and all the code for any game, is authenticated by the GLCB, and any game in any casino in Nevada is subject to examination and authentication at any time. It must match exactly to the code image in the GLCB records, or the casino is immediately shut down and investigated. When a player presses the \u201cPLAY\u201d button, or whatever button triggers game action, the most recently generated pseudo random number is read from memory, and mapped into an event table. The game then displays the result that event calls for. For a reel type slot machine, there may be only one pseudo random number in a million, or more, that maps to the grand prize. There will be several more numbers that map to the next highest prize, and so on, down to a lot of numbers that map to the smallest prize. Then there will be all the other numbers that map to losing combinations. The casino, in Nevada, cannot change the pseudo random number generator, nor its output, nor the pay table maps. The game on the floor must always be exactly as shipped by the manufacturer, which in turn must always be exactly what was approved by the GLCB. Should the casino want anything changed, they must contact the manufacturer, request the changes, and the manufacturer must then pull the appropriate program out of their GLCB approved library, and install that program on the machine. ",
+            "date": "Answered October 22, 2020",
+            "views": "33",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Stephen M Chase",
+                    "user_href": "/profile/Stephen-M-Chase"
+                },
+                {
+                    "user_id": "Bob Chamberlain",
+                    "user_href": "/profile/Bob-Chamberlain-7"
+                },
+                {
+                    "user_id": "Laurence Reeves",
+                    "user_href": "/profile/Laurence-Reeves-5"
+                },
+                {
+                    "user_id": "Minh Long L\u01b0u",
+                    "user_href": "/profile/Minh-Long-L\u01b0u"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Katus Ari",
+                "href": "/profile/Katus-Ari"
+            },
+            "answer_text": "There is one thing all fair slot games have in common: the outcome of each round is based exclusively on a random number provided by a Random Number Generator (RNG). The random number generated by the RNG \"tells\" the reels when to stop and therefore decides the outcome of the game. That means that the same game with the same random number must always give the same outcome. This reminds me that I should explain how RNGs work. Modern RNGs used in online casinos are dedicated hardware devices that generate random numbers out of electromagnetic noise. It\u2019s like an old television without signal \u2013 a lot of black and white dots. Black pixel is 0, white pixel is 1. Take a photo of a small part of a TV screen, convert the pixels into 1s and 0s, write them into a text file and you have a random number. RNG hardware generates thousands of random numbers every second. So on one hand, you will change the outcome of the next round if you press the start button one second later. However, on the other hand, you have no chance to predict whether the outcome will be bette r for you or not. So the fair randomness remains. The true RNG uses electromagnetic noise to generate completely random and completely unpredictable values. The PRNG works in a different way. It starts with a predefined value and then mashes it with some other inputs to generate an infinite series of values. The output values of PRNG seem completely random and impossible to predict at first glance. However, if the PRNG uses a weak algorithm and you know exactly which one, then you may be able to predict the next random number. If the PRNG uses a weak algorithm and you know exactly which one, you may be able to predict the next random number. Guy named Alex, a russian hacker hired by casino, found the glitch in system and made millions out of that. Read more here. Also - here\u2019s a video summing up slots machines, myths and how they really work. ",
+            "date": "Answered May 11, 2020",
+            "views": "72",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mauro Lacy",
+                    "user_href": "/profile/Mauro-Lacy"
+                },
+                {
+                    "user_id": "Harry Kanigel",
+                    "user_href": "/profile/Harry-Kanigel-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Wood",
+                "href": "/profile/Chris-Wood-54"
+            },
+            "answer_text": "Newer Slots use adjustable pseudo random number generators. Said another way, they are NOT random. The house can adjust the payout if/when desired. The rules in Vegas for example are that the slot must be taken out of service for 30 minutes when the payout yield is changed to stop casino\u2019s from killing off a winning streak of a lucky gambler just by electronically changing the odds on the fly. All newer machines are \u201con-line\u201d all the time to a master control center. The house knows real time what its take is and can adjust it accordingly. The machines are also RF shielded so technically adept gamblers cannot \u201ceavesdrop\u201d on the machines, or send it false commands. Also remember if you use a casino loyalty card, the casino knows where you are and how well or not well you are doing. start winning, and the drink girls will show up with your favorite cocktail and make sure you have a full glass. Buzzed gamblers are VERY profitable it turns out. ",
+            "date": "Answered December 2, 2019",
+            "views": "188",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Martin Hauser",
+                    "user_href": "/profile/Martin-Hauser"
+                },
+                {
+                    "user_id": "Lance Everett",
+                    "user_href": "/profile/Lance-Everett-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Trenholme",
+                "href": "/profile/Peter-Trenholme"
+            },
+            "answer_text": "It depends on the specific machine. The \u201creal\u201d or \u201coriginal\u201d slot machine was a mechanical device into which you inserted a coin, and pulled a lever to spin the wheels. The result, if the system was well maintained, was fairly close to \u201crandom\u201d since the impulse generated by pulling the \u201carm\u201d of the \u201cone armed bandit\u201d would be difficult to reproduce. The \u201cmodern\u201d electronic slot machines use computer programs to generate random numbers. How that\u2019s done is up to the whim of the programmer, but almost any \u201coff the shelf\u201d random number generator would be \u201cgood enough\u201d to bankrupt any player before they could collect enough data to predict the sequence of results. ",
+            "date": "Answered November 11, 2019",
+            "views": "158",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bob Chamberlain",
+                    "user_href": "/profile/Bob-Chamberlain-7"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "Joel Larson",
+                    "user_href": "/profile/Joel-Larson-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike D'Amore",
+                "href": "/profile/Mike-DAmore-3"
+            },
+            "answer_text": "Since a true random number generator would require calculations with key numbers generated from subatomic particles - Slot machines use a much less expensive method, that of a pseudo-random number generator. Since the algorithms they use, and how they generate the key numbers are highly guarded secrets - there is no real way for us to test their randomness - but suffice to say, that the PRNG\u2019s used are good enough to take your money, on a very regular basis! ",
+            "date": "Answered November 13, 2019",
+            "views": "60",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian",
+            "upvoters": [
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marian Lichner",
+                "href": "/profile/Marian-Lichner"
+            },
+            "answer_text": "I will answer you with a question: Are you able to generate a random number? If yes, Novomatic will buy your algorithm. :-) The numbers are pseudo- random, but fake is quite impossible. A process of generation is a combination of physics at analog level and a computer science on a digital level. A random number generator is a black box in your casino, which is certified with independent companies by law, and we watch the generated numbers for patterns to prevent a mistake in algorithms. Another question is how we use generated numbers in our algorithms. You have to certify the algorithms by law, because some operations are not allowed in some countries. A general rule is that the algorithm cannot use any information about player to calculate win or lose. ",
+            "date": "Updated December 31, 2019",
+            "views": "132",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Rod Nussbaumer",
+                    "user_href": "/profile/Rod-Nussbaumer-1"
+                },
+                {
+                    "user_id": "Stephen Blackstone",
+                    "user_href": "/profile/Stephen-Blackstone"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Morgan",
+                "href": "/profile/Stephen-Morgan-41"
+            },
+            "answer_text": "As a student back in 1978 I worked on a project at Leeds University in the UK on using early microprocessors to generate random numbers for gaming. The only available output at the time was pseudo-random. I lost touch with what happened later on but I suspect that nothing much has changed. The bottom line is and I still cannot fathom why folks get all upset, is that every machine has an RTP figure. That is Return To Player. The bottom line is that it is always going to be less than 100 so you are always going to lose playing the slots. It really does not matter how the machine works, you are going to lose and to fantasise about anything else is really irrational. ",
+            "date": "Answered January 1, 2020",
+            "views": "102",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Christian Brolin",
+                    "user_href": "/profile/Christian-Brolin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Greene",
+                "href": "/profile/Richard-Greene-2"
+            },
+            "answer_text": "My understanding is that they use a pseudo-random number generator, but one that is \u201cseeded\u201d (or selected from) based on the exact moment at which you pull the handle or press the Play button. So, once you close that switch, the outcome is predetermined (regardless of how long it takes for the wheels to stop spinning), but it could not have been predicted in advance of that switch closure. ",
+            "date": "Answered October 21, 2020",
+            "views": "29",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Dale Strickler",
+                "href": "/profile/Dale-Strickler-1"
+            },
+            "answer_text": "I love studying randomness. I highly recommend True Random Number Service. My impression from associates - no direct experience - in the gambling machine biz, is that the vast majority of parts of the world are covered by some gambling machine laws that do have some impact on the random number generation approach. That said they are generally pseudo-random algorithms that are well known and that the regulating authorities accept. ",
+            "date": "Answered November 29, 2019",
+            "views": "50",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Geoffrey Falk",
+                "href": "/profile/Geoffrey-Falk-1"
+            },
+            "answer_text": "I did an evaluation project for Mandalay Bay in Las Vegas. We visited a slot-machine manufacturer. The laws there, at least, are very strict. The Nevada Gaming Board does regular audits. So yes, at least there, they use true random numbers. I don't know about other places, or those games you find at the bar. ",
+            "date": "Answered December 29, 2019",
+            "views": "29",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Michael Rulle",
+                "href": "/profile/Michael-Rulle"
+            },
+            "answer_text": "Well, we know they are not random per se. They are designed for the house to win. But, relative to the mean, it is possible it is a real random number generator. My guess is if it is too difficult to do, they merely lock in the net spread to the house and don\u2019t worry about if it is a pseudo-random number generator\u2014which has very little practical applications. ",
+            "date": "Answered October 29, 2020",
+            "views": "33",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Peter Copeland",
+                "href": "/profile/Peter-Copeland-8"
+            },
+            "answer_text": "Imagine a waterfall of random numbers falling, when you press stop / play, a swipe is taken from the falling water and those numbers give you a certain combination of reels. You can lose 100 times in a row or the jackpot twice n a row. It is always completely random and the symbols are just there to replace a 5 or 6 digit number coming up, which would be boring and hard to work out if you\u2019d won or the pay was correct. Every time you press play you are paying for entertainment value of the reels spinning. Might win a little but stay on it all night and you\u2019ll go home broke. They are in place to make the Casino money, and do not care what you paid into it. ",
+            "date": "Answered November 11, 2019",
+            "views": "65",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Russell Brooker",
+                "href": "/profile/Russell-Brooker-1"
+            },
+            "answer_text": "As I understand it, there is no such thing as a \u201ctrue\u201d random number generator. Human ingenuity is incapable of devising a system of random numbers - that is, numbers with no pattern at all. It really does not matter, however. The pseudo-random number generators are so good and produce numbers that are so close to random that nobody can tell the difference or care. If I am incorrect, somebody should correct me. ",
+            "date": "Answered November 29, 2019",
+            "views": "47",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Timothy Clouse",
+                "href": "/profile/Timothy-Clouse"
+            },
+            "answer_text": "Pseudo random number generation. A deterministic machine is inherently incapable of true randomness. However, there are a variety of algorithms that that are capable of simulating randomness to the point where the digits produced are functionally indistinguishable from truly random digits. ",
+            "date": "Answered December 28, 2019",
+            "views": "23",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Avri Adleman",
+                "href": "/profile/Avri-Adleman-1"
+            },
+            "answer_text": "My guess is that the slot machines have an internal clock which ticks (bit change) every micro or possibly every pica-second. This would make it virtually impossible to predict the result. So although it is a pseudo-random number, it is very close to random. ",
+            "date": "Answered December 26, 2019",
+            "views": "27",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Nabarun Mondal",
+                "href": "/profile/Nabarun-Mondal-3"
+            },
+            "answer_text": "Slot machines are deterministic, but not really \u201cmuch\u201d predictable. Of course people hacked around. Are slot machines truly random? https://www.researchgate.net/publication/319479854_The_statistical_approach_for_slot_machine Russians Engineer a Brilliant Slot Machine Cheat---And Casinos Have No Fix ",
+            "date": "Answered June 27, 2020",
+            "views": "169",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Ray Gainer",
+                "href": "/profile/Ray-Gainer"
+            },
+            "answer_text": "Truly random is *very* hard to come by. Theoretically, random could be used, but I\u2019ve never heard of it and would doubt it if I did hear. ",
+            "date": "Answered December 29, 2019",
+            "views": "11",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        },
+        {
+            "author_info": {
+                "name": "Abdullah Jasem",
+                "href": "/profile/Abdullah-Jasem-1"
+            },
+            "answer_text": "Would be interesting to see a casino using a random number generator based on cosmic microwave background radiation lol ",
+            "date": "Answered February 2, 2020",
+            "views": "36",
+            "upvotes": " Answer requested by Anthony Andranik Moumjian"
+        }
+    ]
+}

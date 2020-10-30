@@ -1,0 +1,85 @@
+{
+    "title": "Can Python read Excel files? - Quora",
+    "tags": [
+        "Microsoft Excel",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Satish Annigeri",
+                "href": "/profile/Satish-Annigeri"
+            },
+            "answer_text": "Interacting with Microsoft Excel files is different compared to reading and/or writing MS Excel files. The former implies that your Python script can actively interact live with your Python script. This means that data from the Python script can be sent to Excel and the script can read data entered into the Excel file live (after the script begins running). The latter means that your Python script can read existing Excel files or write new Excel files (or modified version of Excel file previously read). The former can be done using Python package xlwings (and perhaps others that I may not know of) while the latter can be done using a host of packages such as xlrd, xlwt, pandas etc. ",
+            "date": "Answered July 26, 2019",
+            "views": "219",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chetan EcoLogic",
+                    "user_href": "/profile/Chetan-EcoLogic"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mukesh Singh",
+                "href": "/profile/Mukesh-Singh-2125"
+            },
+            "answer_text": "Yes, Reading, Manupulating and Writing files is the neccessity of python. For reading Excel files in Python you have to use well known Pandas Module. Install Pandas (if haven\u2019t installed) by running below code in Command Prompt - pip install pandas\u00a0Syntax for reading Excel file in Pandas use following code - # Importing the Pandas module\u00a0import pandas as pd\u00a0\u00a0# Reading and storing the data in \"df\"\u00a0df = pd.read_excel('path\\to\\your\\excle file.xlsx')\u00a0\u00a0# Printing/Displaying the stored data\u00a0print(df)\u00a0For detailed explanation about it you can refer this video. If you find this helpful then, should consider upvoting :) ",
+            "date": "Answered June 1, 2020",
+            "views": "65",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Gustavo Gradvohl",
+                "href": "/profile/Gustavo-Gradvohl"
+            },
+            "answer_text": "Yes, and you can also write to excel. You can bring the data to Python from excel, manipulate it, consolidate it, break it up, modify it, etc. Once you;re done you can save it back to excel. It can be a time saver, specially if it is a task that you do often. Look at a quick example below: Let\u2019s say you have an excel file like the one below but with many more rows and columns, and you want to break the file up to have a tab for each team.  You can do that with Pandas with a few lines of code.  Now, you can do whatever you want like create new columns, sort your data, etc. One you're done you can just call the command above to save back to excel. Lets Sort and add a columns to sheet \"B\"  ",
+            "date": "Answered May 23, 2019",
+            "views": "799",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sanjib Chhatait",
+                    "user_href": "/profile/Sanjib-Chhatait"
+                },
+                {
+                    "user_id": "Atle Ramsli",
+                    "user_href": "/profile/Atle-Ramsli"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ron Reiter",
+                "href": "/profile/Ron-Reiter"
+            },
+            "answer_text": "It can - but I would not recommend it. I would recommend using the CSV format (or TSV, or any other textual format). Using CSV is good because Excel supports it, it\u2019s easily readable using Python and very easy to write from Python as well. ",
+            "date": "Answered May 25, 2019",
+            "views": "148",
+            "upvotes": " Answer requested by Mohammed Saiful Alam Siddiquee"
+        },
+        {
+            "author_info": {
+                "name": "Will Irvin",
+                "href": "/profile/Will-Irvin-1"
+            },
+            "answer_text": "Take a look at the following website\u2026 Reading an excel file using Python - GeeksforGeeks A good resource! ",
+            "date": "Answered May 22, 2019",
+            "views": "87",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dmitri Kozlov",
+                "href": "/profile/Dmitri-Kozlov-2"
+            },
+            "answer_text": "Yes, Python can read Excel files and write to Excel files. ",
+            "date": "Answered June 3, 2019",
+            "views": "47",
+            "upvotes": " Answer requested by Mohammed Saiful Alam Siddiquee"
+        }
+    ]
+}

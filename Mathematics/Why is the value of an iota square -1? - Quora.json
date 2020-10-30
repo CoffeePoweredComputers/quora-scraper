@@ -1,0 +1,46 @@
+{
+    "title": "Why is the value of an iota square -1? - Quora",
+    "tags": [
+        "IOTA (cryptocurrency)",
+        "Square (company)",
+        "Square Roots (functions)",
+        "Value (economics)",
+        "Virtual Currencies",
+        "Cryptocurrencies",
+        "Calculus",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wes Browning",
+                "href": "/profile/Wes-Browning"
+            },
+            "answer_text": "It\u2019s not an iota. It\u2019s a lower case i, standing for (sadly) \u201cimaginary\u201d. There is no real number a, as you know, for which a^2 = -1. Hundreds of years ago it was discovered though that you could introduce a solution to the equation, call it i, so that i^2 = -1, and it all works out. At the time that was mystifying to people and it took a while for mathematicians to see how that could work. The answer turns out to be that the number i has to be visualized as in a plane containing the real number line. It\u2019s usually indicated as one being one unit directly above 0. Introducing i means not only adding that to the real numbers, but also adding all expressions of the form x+iy where x and y are real, and defining addition and multiplication accordingly, using the fact that i*i = -1. It turns out that when you do that, addition is just like addition of two dimensional vectors, but something really nice happens with multiplication. (x+iy) times (u+iv) has to be (xy-uv) + i*(xv+yu) and if you write the two numbers x+iy and u+iv in polar form as x+iy=r(cosA+sinA) and u+iv=s(cosB+sinB) (r, s, real >0, A, B, real radians) and use the angle sum formulas you find out that (x+iy)*(u+iv) = rs(cos(A+B) + i*sin(A+B)) So multiplying one complex number times another has the effect of multiplying the distances from 0 and adding the angles they make with respect to the positive x-axis. Since i has unit distance from 0 and since it makes an angle of +PI/2 with the positive x-axis the result of multiplying any complex number by i is to rotate it +PI/2 counterclockwise. In particular, we find ourselves back to i*i = -1, which we made so by fiat originally, but now we have a geometric interpretation of it. It\u2019s a consequence of the possibilty of defining multiplication in the plane by this geometric law. Now you see why we put i one unit above 0, to make the angle half of PI, and to make sure that multiplication by i didn\u2019t increase or decrease distances to 0. ",
+            "date": "Answered October 24, 2020",
+            "views": "32",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Dave Neary",
+                    "user_href": "/profile/Dave-Neary-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Neary",
+                "href": "/profile/Dave-Neary-1"
+            },
+            "answer_text": "When dealing with real numbers, there is closure under addition, multiplication, division (except for division by 0), and subtraction. However, some operations to not have an answer in the real numbers - in particular, the square root. We can calculate the real numbers which, when multiplied by themselves, give a positive real number, but we cannot do the same thing for negative real numbers. In the same way as fractions were invented to allow closure under division by whole numbers, the complex numbers were invented to allow closure under square roots and other algebraic operations. The complex space is essentially a 2 dimension vector space with the real number 1 as one of its unit vectors, and an invented number ii as the unit vector of another dimension. ii is defined as \u22121\u2212\u2212\u2212\u221a\u22121, and from this definition, we can now solve a whole slew of problems that did not have solutions in only real numbers - including, but not limited to, finding roots of polynomials which are not real numbers. ",
+            "date": "Answered October 24, 2020",
+            "views": "26",
+            "upvotes": " Answer requested by Malaika Imtiaz"
+        }
+    ]
+}

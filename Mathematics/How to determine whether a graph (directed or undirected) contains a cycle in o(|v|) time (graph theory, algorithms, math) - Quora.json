@@ -1,0 +1,25 @@
+{
+    "title": "How to determine whether a graph (directed or undirected) contains a cycle in o(|v|) time (graph theory, algorithms, math) - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Discrete Mathematics",
+        "Graph Theory",
+        "Theoretical Computer Science",
+        "Data Structures",
+        "Algorithms",
+        "Computer Science",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vladan Majerech",
+                "href": "/profile/Vladan-Majerech"
+            },
+            "answer_text": "This is impossible in o(|V|).o(|V|). Suppose the input is list of edges with arbitrary names of vertices, the most complicated task will be to find actual |V||V|. The time will be randomized O(|V|)O(|V|) as you need to count |V||V| using a \"dictionary\". Rest is easy, just be carefull to stop reading edges when their number reaches (current) number of vertices. Traversing a forest is an easy task. ",
+            "date": "Answered October 24, 2020",
+            "views": "74",
+            "upvotes": "0"
+        }
+    ]
+}

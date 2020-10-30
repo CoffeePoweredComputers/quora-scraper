@@ -1,0 +1,324 @@
+{
+    "title": "Can I include a C file in another C file? - Quora",
+    "tags": [
+        "Learning C (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mike Ciaraldi",
+                "href": "/profile/Mike-Ciaraldi"
+            },
+            "answer_text": "OK, this is really several questions: Assuming you know which file(s) you want to include, what C command do you give?Why would you want to do this?What is the best way to divide your program into files?And here are some answers. These assume that you are writing a program which you want to compile and eventually turn into an executable. Suppose you have a header file foo.h and you want to include it in your .c file. You use either of these commands (which are officially called \u201cC preprocessor directives\u201d):#include <foo.h> #include \u201cfoo.h\u201d What is the difference? You use the first version if you want to include one of the standard header files, such as stdio.h; the pointy brackets tell the preprocessor to look in the directory where all the standard header files are stored. On a Linux system this is usually /usr/include . You use the second version if this is your own .h file. In that case, the quotation marks tell the preprocessor to look for the file in the same directory as the .c file. 2. Why do this? In general, if you need to define something, and it needs to be visible to more than one .c file, you should define it in a header file, and then #include that header file in the appropriate .c files. The alternative is to manually type it into each of the files, and that has two big disadvantages (besides the wear-and-tear on your fingertips :-) ): a) You might accidentally type it differently in different files. b) If you ever want to change it, you only have to change it in one place. 3. How to divide your files (this is a good way to start, although with experience you may decide to do it somewhat differently): Unless this is a very small program, put the functions into one or more .c files. For each .c file, create a .h file with the same name (except for the extension, of course). Into the .h file you put a prototype for each function defined in the .c file. Then, in the .c file, #include the .h file (this ensures that the function prototypes match the function definitions). And #include that .h file in every other .c file which uses any of those functions (this ensures that your code calls each function correctly, in terms of parameters and return value type). Also in .h files you should put struct definitions, typedefs, and the definitions of any symbolic constants. But you should hardly ever (I originally wrote \u201cnever, never, never\u201d) put executable code (such as the body of a function) in a header file. Here is why: Suppose you declare a function in a header file. Then when you #include that file in a .c file, and compile it, there will be a copy of that function in the .o file. But if you #include it in a second .c file, there will also be a copy of the function in that second .o file. If you later try to link these two .o files to form an executable, the linker will complain, because C does not allow you to have two functions with the same name in the same executable. The linker does not care that the two copies are identical. Having said that, there are a few circumstances where you might put executable statements in a header file: macro definitions, inline functions, and functions declared \u201cstatic\u201d (which are therefore only visible inside the same .c file, so the duplicate names are allowed). In each .h file, be sure to include \u201cguards\u201d to protect you if you accidentally (or on purpose) #include the same .h file more than once in the same .c file. For example, file foo.h would look like this: #ifndef FOO_H #define FOO_H \u2026 main part of header file goes here \u2026 #endif This tells the preprocessor to skip the second time the file is #included. Once you have done all this, compile each .c file into the corresponding .o file, then use the linker to link together the .o files to form the executable. A utility such as make can handle this for you. Note that in some situations you cannot do things exactly this way. For example, if you are coding for Arduino and using the standard main program, you have to follow some other rules. But this should get you started in most cases. ",
+            "date": "Updated May 25, 2017",
+            "views": "278",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ayush Suman",
+                    "user_href": "/profile/Ayush-Suman-2"
+                },
+                {
+                    "user_id": "Isabel Huang",
+                    "user_href": "/profile/Isabel-Huang-2"
+                },
+                {
+                    "user_id": "Siddha Amruth Kedarisetti",
+                    "user_href": "/profile/Siddha-Amruth-Kedarisetti"
+                },
+                {
+                    "user_id": "Ujjwal Pratap",
+                    "user_href": "/profile/Ujjwal-Pratap-14"
+                },
+                {
+                    "user_id": "Nathan Ormond",
+                    "user_href": "/profile/Nathan-Ormond-3"
+                },
+                {
+                    "user_id": "Ahmed Syndrom",
+                    "user_href": "/profile/Ahmed-Syndrom"
+                },
+                {
+                    "user_id": "Othman Khalil",
+                    "user_href": "/profile/Othman-Khalil-1"
+                },
+                {
+                    "user_id": "Piyush Agarwal",
+                    "user_href": "/profile/Piyush-Agarwal-20"
+                },
+                {
+                    "user_id": "Lankesh Meshram",
+                    "user_href": "/profile/Lankesh-Meshram-1"
+                },
+                {
+                    "user_id": "Murali Krx",
+                    "user_href": "/profile/Murali-Krx"
+                },
+                {
+                    "user_id": "Sakthi Vignesh Radhakrishnan",
+                    "user_href": "/profile/Sakthi-Vignesh-Radhakrishnan"
+                },
+                {
+                    "user_id": "Marcel Blistein",
+                    "user_href": "/profile/Marcel-Blistein"
+                },
+                {
+                    "user_id": "Fang Han",
+                    "user_href": "/profile/Fang-Han-11"
+                },
+                {
+                    "user_id": "Mriganka Ghosh Mojumder",
+                    "user_href": "/profile/Mriganka-Ghosh-Mojumder"
+                },
+                {
+                    "user_id": "Swapnil Gade",
+                    "user_href": "/profile/Swapnil-Gade-2"
+                },
+                {
+                    "user_id": "Mohamad Salim",
+                    "user_href": "/profile/Mohamad-Salim-5"
+                },
+                {
+                    "user_id": "Rohinton Kazak",
+                    "user_href": "/profile/Rohinton-Kazak"
+                },
+                {
+                    "user_id": "Pablo Halpern",
+                    "user_href": "/profile/Pablo-Halpern"
+                },
+                {
+                    "user_id": "Jaya Nagaboina",
+                    "user_href": "/profile/Jaya-Nagaboina"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pablo Halpern",
+                "href": "/profile/Pablo-Halpern"
+            },
+            "answer_text": "Yes, you can. As others pointed out, this is the way to import interfaces from one component into another. (I use the term component to refer to something that other languages might call module; true modules are not supported at the language level in C.) There are other reasons to include one C file into another, which I\u2019ll get to in a moment, but let\u2019s talk about the most important one first: A well-constructed program of any significant size is broken down into smaller pieces, which I\u2019ll refer to as components. Typically, a component consists of a data type or two and operations on that data type. For example, a date component would have a Date type to represent a date and operations on date objects such as printing a date, adding some number of days to a date, finding the number of days between to dates, extracting the year, month, and day from a date, etc.. Good style is to put the programmer interface to the component in a file whose name ends with .h (a header file). So, a file called date.h might contain the following: struct Date {\u00a0    long int offset; /* Number of days since Jan 1, 1970 */\u00a0};\u00a0\u00a0typedef enum { Sun, Mon, Tue, Wed, Thu, Fri, Sat } DayOfWeek;\u00a0\u00a0Date dateMake(int year, int month, int day);\u00a0Date dateAddDays(Date d, long int numDays);\u00a0long int dateSubtract(Date d1, Date d2);\u00a0int dateGetYear(Date d);\u00a0int dateGetMonth(Date d);\u00a0int dateGetDay(Date d);\u00a0DayOfWeek dateGetDayOfWeek(Date d);\u00a0A separate file, date.c, would contain the bodies of the functions: #include \"date.h\"\u00a0\u00a0Date dateMake(int year, int month, int day) {\u00a0    ...\u00a0}\u00a0...\u00a0Notice that by including the header file in the .c file, in line 1, we don\u2019t need to redefine the Date type. Additionally, the compiler will ensure that our interface and our implementation have matching function prototypes. Now, in order to use a date from another component, say a calendar component, we would use the same form of #include: #include \"date.h\"\u00a0...\u00a0void AddCalendarEvent(Calendar* c, Date d, const char* description) {\u00a0    ...\u00a0}\u00a0The interface (types and function prototypes) is included multiple times in the program \u2014 each time it is #included, whereas the implementation (function bodies) appears only once. The main exception to this is functions that are declared inline, which appear in the header file and are included multiple times. OK, but I wonder if the questioner was asking whether you can include a non-header file in a C. The answer is yes; nothing prevents you from including one .c file in another .c file. It is usually a bad idea, because it doesn\u2019t lend itself to good modular programming, but there are a couple of reasons you might want to do this. One reason is to combine all of the parts of the program into one compilation unit so that the compiler can see all of it at once. This approach works for modest-sized programs but it is a maintenance headache, slows compilation times and, with modern compilers, there is little reason to do this anymore. Another reason is to use the C pre-processor to do a primitive form of code generation. For example, what if we created a list of holidays in a special format, and put them into a file called holidays.inc: HOLIDAY(NewYear,   1, 1)\u00a0HOLIDAY(MayDay,    5, 1)\u00a0HOLIDAY(Halloween, 10, 31)\u00a0HOLIDAY(Christmas, 12, 25)\u00a0We can generate a few different pieces of code from this input. If we want an enumerated list of holidays, we could write: #define HOLIDAY(name, m, d) name,\u00a0typedef enum {\u00a0#include \"holidays.inc\"\u00a0} Holidays;\u00a0#undef HOLIDAY\u00a0If we want to create a function that adds the holidays into a calendar, we could write: #define HOLIDAY(name, m, d) AddCalendarEvent(c, DateMake(m, d, 2017), #name);\u00a0void addHolidays(Calendar* c) {\u00a0#include \"holidays.inc\"\u00a0}\u00a0#undef HOLIDAY\u00a0So, you end up with two different pieces of code generated from the same C file. This use of the pre-processor is comparatively rare, but can be a useful technique for writing intricate programs like compilers, with multiple, interrelated data tables. ",
+            "date": "Answered May 22, 2017",
+            "views": "276",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rod Nussbaumer",
+                    "user_href": "/profile/Rod-Nussbaumer-1"
+                },
+                {
+                    "user_id": "Ritu Raj Joshi",
+                    "user_href": "/profile/Ritu-Raj-Joshi-1"
+                },
+                {
+                    "user_id": "Dalvie Benu",
+                    "user_href": "/profile/Dalvie-Benu"
+                },
+                {
+                    "user_id": "Prerit Vishal",
+                    "user_href": "/profile/Prerit-Vishal"
+                },
+                {
+                    "user_id": "MuthuS",
+                    "user_href": "/profile/MuthuS"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Que-Desu"
+                },
+                {
+                    "user_id": "Miriyam Sudheer",
+                    "user_href": "/profile/Miriyam-Sudheer"
+                },
+                {
+                    "user_id": "Divya Rore",
+                    "user_href": "/profile/Divya-Rore-1"
+                },
+                {
+                    "user_id": "Manjinder Singh Hanjra",
+                    "user_href": "/profile/Manjinder-Singh-Hanjra"
+                },
+                {
+                    "user_id": "Mohamad Salim",
+                    "user_href": "/profile/Mohamad-Salim-5"
+                },
+                {
+                    "user_id": "Rufei Zhao",
+                    "user_href": "/profile/Rufei-Zhao"
+                },
+                {
+                    "user_id": "Gergely Polonkai",
+                    "user_href": "/profile/Gergely-Polonkai"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rod Nussbaumer",
+                "href": "/profile/Rod-Nussbaumer-1"
+            },
+            "answer_text": "There are some valid, although obscure use case for doing so. One I have used is to create a C source code equivalent of a binary image file, in order to use it as an initializer for a byte array. The byte array is first composed in an automated way using commandline tools: od -tx1 someImageFile.png | cut -d' ' -f1 --complement --output-delimiter=\"','\\x\" | sed \"s/^/'\\\\\\x/\" | sed \"s/$/',/\" | head -n -1 | sed \"$ s/,$//\" > someImageFile.h\u00a0I\u2019d probably do the above in a Makefile. The first three lines of the resulting file look like this: '\\x89','\\x50','\\x4e','\\x47','\\x0d','\\x0a','\\x1a','\\x0a','\\x00','\\x00','\\x00','\\x0d','\\x49','\\x48','\\x44','\\x52',\u00a0'\\x00','\\x00','\\x00','\\x80','\\x00','\\x00','\\x00','\\x80','\\x08','\\x02','\\x00','\\x00','\\x00','\\x4c','\\x5c','\\xf6',\u00a0'\\x9c','\\x00','\\x00','\\x2d','\\x53','\\x49','\\x44','\\x41','\\x54','\\x78','\\xda','\\xed','\\x7d','\\x79','\\x74','\\x54',\u00a0Now, in the source code, I can initialize my array: unsigned char someImage[] = {\u00a0#include \"someImageFile.h\"\u00a0};\u00a0Now, after I\u2019ve compiled the C module, I have a .PNG image embedded in my object code. Someone will no doubt wonder why I don\u2019t simply read the image at runtime, and I would remind them that not all C code runs where there is a filesystem present. The PNG image could just as well be any binary object; a bootloader to write to flash memory, a binary device driver blob, etc. ",
+            "date": "Answered May 31, 2020",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vinay",
+                    "user_href": "/profile/Vinay-815"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rob Heusdens",
+                "href": "/profile/Rob-Heusdens"
+            },
+            "answer_text": "You do that all the time, including another C file: they are the standard header files. Now, for the compiler, it does not really matter how you name your file. To use .c for source and .h fpr header files is just a convention, and the compiler uses that as defaults. Normally you only include header files containing some standard definitions (macro definitions, struct/union or typedef declarations, etc.). But the compiler has no problem when you include one source file into another. There is one use-case in which this is used: in creating an amalgamation of all your source files, which has the benefit that some more agressive optimizations are possible. Sqlite uses this method (combining all source files in one large source file). ",
+            "date": "Answered May 22, 2017",
+            "views": "76",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roger Bliss",
+                    "user_href": "/profile/Roger-Bliss"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Brower",
+                "href": "/profile/David-Brower"
+            },
+            "answer_text": "You can include a .c file inside another; this is rarely done because it can be confusing. In some very rare instances, I\u2019ve seen it meaningfully used with various kinds of meta-programming, where some program emits a file that is C code which is incomplete in some way, and needs encompasing environment provided by an including C file. For example, ancient yacc emitted y.tab.c, which you could only rarely compile without a bunch of scaffolding around. It was quite common to see: /* bunch of my definitions */\u00a0\u00a0#include \"y.tab.c\"\u00a0Many clever tools that pre-process other things into C source can use this paradigm. ",
+            "date": "Answered May 23, 2017",
+            "views": "46",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Slava Grinbaum",
+                    "user_href": "/profile/Slava-Grinbaum"
+                },
+                {
+                    "user_id": "Adrian Ho",
+                    "user_href": "/profile/Adrian-Ho-2"
+                },
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andre Luiz Duarte Cavalcante",
+                "href": "/profile/Andre-Luiz-Duarte-Cavalcante"
+            },
+            "answer_text": "Yes. You can #include a header file inside a code file and vice-versa. You can #include a header file inside another header file. And so on. But, think about it a little. Why do this? I saw the following scenario that might be any sense: main.c: #define C8051S\u00a0#include \u201cuclibs.h\u201d\u00a0\u2026\u00a0uclibs.h: #ifdef C8051S\u00a0#include <C8051S>\u00a0#elif C8051HT\u00a0#include <C8051HT>\u00a0//etc.\u00a0#endif\u00a0Of course that you can include the right header for yourself in the main, but may be a sense if you have a lot of micro-controllers to choice and you don\u2019t want to use a lot of #ifdefs in your main.c. ",
+            "date": "Answered May 22, 2017",
+            "views": "34",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yuqi Zhao",
+                    "user_href": "/profile/Yuqi-Zhao-14"
+                },
+                {
+                    "user_id": "Mohamad Salim",
+                    "user_href": "/profile/Mohamad-Salim-5"
+                },
+                {
+                    "user_id": "Pablo Halpern",
+                    "user_href": "/profile/Pablo-Halpern"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike Duffy",
+                "href": "/profile/Mike-Duffy"
+            },
+            "answer_text": "Yes, but a more important question is \u201cWhy?\u201d In general, this indicates a misunderstanding about how to structure programs in C. 99.5% of the time, it\u2019s the wrong approach to structuring your code. ",
+            "date": "Answered May 21, 2017",
+            "views": "27",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                },
+                {
+                    "user_id": "Hans Sun",
+                    "user_href": "/profile/Hans-Sun"
+                },
+                {
+                    "user_id": "Pete Miller",
+                    "user_href": "/profile/Pete-Miller-24"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ruurd Pels",
+                "href": "/profile/Ruurd-Pels"
+            },
+            "answer_text": "Actually, that is what you are doing all the time if you are include headers. There is C in them too you know. And yes you can include a .c file too if you want to. Qt is actually doing exactly that. ",
+            "date": "Answered May 29, 2017",
+            "views": "559",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Don Hughes",
+                "href": "/profile/Don-Hughes-12"
+            },
+            "answer_text": "#include \u201cfilename.h\u201d Anywhere you like. Might be .h might be .c but it will be included inline to the compiler at that point. ",
+            "date": "Answered May 21, 2017",
+            "views": "2",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roger Bliss",
+                    "user_href": "/profile/Roger-Bliss"
+                },
+                {
+                    "user_id": "Armand Klein",
+                    "user_href": "/profile/Armand-Klein"
+                },
+                {
+                    "user_id": "Mohamad Salim",
+                    "user_href": "/profile/Mohamad-Salim-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lorenzo Snow",
+                "href": "/profile/Lorenzo-Snow-3"
+            },
+            "answer_text": "You mean file like \u201cmyfile.c\u201d, with an *.c extension? Yes, you can do this. You can include anything you want, if included file is conforming to syntax-standard. ",
+            "date": "Answered September 24, 2020",
+            "views": "68",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Madhurjya Roy",
+                "href": "/profile/Madhurjya-Roy"
+            },
+            "answer_text": "Of course, you can. Just use #include \"path_to_your_code/filename.c\" ",
+            "date": "Updated March 1, 2018",
+            "views": "6",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Victor Eijkhout",
+                    "user_href": "/profile/Victor-Eijkhout"
+                }
+            ]
+        }
+    ]
+}

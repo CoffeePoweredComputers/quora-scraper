@@ -1,0 +1,25 @@
+{
+    "title": "How to approach a number of fish in a pond estimate (combinatorics, probability distributions, optimization, math) - Quora",
+    "tags": [
+        "Ponds",
+        "Estimation (statistics)",
+        "Discrete Mathematics",
+        "Combinatorics",
+        "Permutations and Combinations",
+        "Fish",
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ang Shah",
+                "href": "/profile/Ang-Shah-1"
+            },
+            "answer_text": "One of the standard approach for this is called capture-recapture or mark-recapture method. (Mark and recapture - Wikipedia) You catch fish from a pond and mark them in some way (i.e. attach a tag) and release them in the pond. You note down the number of fish (say n) that you marked. After a few days, you catch the fish again. This time, say you catch N fish and find that X of them carry the tag you attached during the previous catch. Now using (n, X, N) you can estimate the number of fish in the pond. If the total # of fish in the pond is M, you reason like this. n out of M fish are marked. The ratio (n/M) is roughly same as the ratio you observe in the second catch (i.e. X/N). Hence (n/M)=(X/N). This means, M=(n.N/X). That is your estimate of the population of fish in the pond. This works under certain assumptions like ... No marked fish died in betweenTags did not fall off the fishPond is a closed system, no new fish came in the pond and no fish left the pondThis is one of the methods to estimate wild life population. ",
+            "date": "Answered October 26, 2020",
+            "views": "74",
+            "upvotes": "0"
+        }
+    ]
+}

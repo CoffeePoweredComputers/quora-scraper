@@ -1,0 +1,31 @@
+{
+    "title": "Can HTML communicate with MySQL? - Quora",
+    "tags": [
+        "MySQL",
+        "SQL",
+        "HTML",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Julie Frey",
+                "href": "/profile/Julie-Frey-3"
+            },
+            "answer_text": "It does not work like that. MySQL responds to SQL statements. HTML displays data on your screen. You use a table to access data in a book or on a computer. You use a typewriter to type your data. Don\u2019t mix a publishing tool with a reference tool. They are different things but you use HTML to show your table reference results. ADDED LATER Please get lessons about how to create your MySQL module that accesses your database. If you don\u2019t even know how to login to your database or where to put the config file so that it is hidden from view, read all about it here: You will need to read all of this and study each concept to get to the point of writing MySQL modules that you need to access your database with user forms or internal processes. A SQL statement in a script or compiled program is a string of characters assigned to a name like \u201ccustomerstr\u201d. It appears as a parameter in a function that you must create to accept a SQL statement as input. It returns a database action. PHP MYSQL & FORMS SQL Tutorial PHP: MySQL Database PHP Form Handling I gained my computer and programming knowledge from years of education, practice and personal projects. Blending different coding languages into one project is an advanced skill. Learn the basics first. Find examples to help you learn faster. ",
+            "date": "Answered August 21, 2020",
+            "views": "209",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Aurelio Bautista",
+                "href": "/profile/Aurelio-Bautista-1"
+            },
+            "answer_text": "Strictly speaking not to my knowledge. I don\u2019t know of any html tag indicating such a thing. Something like <mysql host=\u201dmy_host\u201d db=\u201dmy_db\u201d uid=\u201duser\u201d pwd=\u201dpassword\u201d /> then the browser handling the work of connecting to the MySQL instance. Of course you should equally need html tags for subsequent requests to the db, let\u2019s say <SQL>Select col1, col2 from tab1 where col1=value</SQL>. Too beautiful to be true. Maybe smart people could make it happen. I have no idea of the pros and cons for that. You have html script tags, allowing execution of javascript instructions. By this mean you can implement Ajax calls to access MySQL servers but you probably will need server side coding to interface with MySQL. Many years ago I wrote ActiveX controls that I used to read databases with ODBC in Internet Explorer. Neither ActiveX nor Internet Explorer are popular for the Web anymore. ",
+            "date": "Answered August 21, 2020",
+            "views": "118",
+            "upvotes": "0"
+        }
+    ]
+}

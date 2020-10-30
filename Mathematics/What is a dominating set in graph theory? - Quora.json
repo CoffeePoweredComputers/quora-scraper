@@ -1,0 +1,25 @@
+{
+    "title": "What is a dominating set in graph theory? - Quora",
+    "tags": [
+        "Discrete Mathematics",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jesse Racicot",
+                "href": "/profile/Jesse-Racicot-1-1"
+            },
+            "answer_text": "Given a graph G=(V,E)G=(V,E) a subset S\u2286VS\u2286V is said to be a dominating set if for every v\u2208Vv\u2208V, either v\u2208Sv\u2208S or vv is adjacent to some vertex u\u2208Su\u2208S. A few examples of dominating sets would maybe help build some intuition. Given a graph G=(V,E)G=(V,E), the entire set of vertices VV is a dominating set since every vertex belongs to the VV itself (that\u2019s the \u201cv\u2208Sv\u2208S\" condition being satisfied for every vertex in VV). Yet, VV is clearly over the top when a graph contains edges. For example, suppose GG had at least one edge {x,y}{x,y} then V\u2216{x}V\u2216{x} or V\u2216{y}V\u2216{y} would both be dominating sets (i.e. every v\u2260xv\u2260x belongs to V\u2216{x}V\u2216{x} and xx is adjacent to yy which belongs to V\u2216{x}V\u2216{x}). Hopefully we can see from these two examples that the goal, generally speaking, is to minimize the size of the dominating set. ",
+            "date": "Answered October 24, 2020",
+            "views": "19",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Joel Zussman",
+                    "user_href": "/profile/Joel-Zussman"
+                }
+            ]
+        }
+    ]
+}

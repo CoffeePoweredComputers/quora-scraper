@@ -1,0 +1,283 @@
+{
+    "title": "Are hard drives (Both HDD and SSD) reliable for long term storage? - Quora",
+    "tags": [
+        "Solid-State Drives (SSD)",
+        "Hard Disk Drives (HDD)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Seth Schaffer",
+                "href": "/profile/Seth-Schaffer"
+            },
+            "answer_text": "In the server world it's been acknowledged that the intensive read/write state that drives are in causes many SSDs to fail prematurely. However, HDDs remain the storage media of choice. They are surprisingly resilient, with even failing drives being usable to at least some degree for a timespan. This is more than I can say for SSDs.  I've now experienced one SSD failure and one HDD failure as a PC builder. At first I never had an SSD in my build and my main drive was a WD Blue 500GB drive. It began failing and I ignored the signs for a bit as I had running backups of irreplaceable data, but eventually I found I could no longer boot from the drive. However, after replacing it with an SSD main drive I was able and am still able a year later to use it as an external HDD in a hard drive enclosure over USB. It's lost capacity due to failing sectors but for less demanding and less frequent use it's held up. I think that drive is now pushing 5 years of age. The main SSD I replaced it with began failing within 18 months of purchase, and I found out the weakness in constant reads/writes afterwards. It turned out that I had installed a bunch of auto-updating programs and other frequent read/write programs on it. I had also been using it previously in a system plugged into a faulty surge protector which caused it to randomly lose power without warning at least 10 times, which probably did more damage than anything else. (I called several manufacturers responsible for various components of my PC and 3 of them told me it was a PSU issue before I realized after 2 replacements it needed to be plugged into the wall directly.) The thing died within a day of my first major issue and only due to my careful use of Crashplan did I escape with no permanent data losses.  TL;DR: HDDs are great if properly maintained and not abused. SSDs, not so much. However, both may have about the same length warranty period. ",
+            "date": "Answered March 12, 2016",
+            "views": "98",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Beauregard Burnside III",
+                    "user_href": "/profile/Beauregard-Burnside-III"
+                },
+                {
+                    "user_id": "Abhinav Sharma",
+                    "user_href": "/profile/Abhinav-Sharma-821"
+                },
+                {
+                    "user_id": "Hasan Mustafa",
+                    "user_href": "/profile/Hasan-Mustafa-7"
+                },
+                {
+                    "user_id": "Stanley Quint",
+                    "user_href": "/profile/Stanley-Quint"
+                },
+                {
+                    "user_id": "Sai Mallikarjuna",
+                    "user_href": "/profile/Sai-Mallikarjuna"
+                },
+                {
+                    "user_id": "Audun Bie",
+                    "user_href": "/profile/Audun-Bie"
+                },
+                {
+                    "user_id": "David Lewis",
+                    "user_href": "/profile/David-Lewis-69"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "G Saunders",
+                "href": "/profile/G-Saunders-2"
+            },
+            "answer_text": "SSD has been \u2018better\u2019 for decades but it\u2019s been wildly more expensive that HDD until fairly recently, and now gigabyte for gigabyte it\u2019s only a little more expensive. The benefits have outweighed the cost for some applications, and I\u2019d bet within a couple years SSD will be better _and_ less expensive than HDD. SSD is solid-state, has no moving parts, uses lots less energy to keep it on-line, and SSD drives can be powered up in a small fraction of a second. There is no rotational or seek delay and while SSD is not as fast as RAM, it\u2019s 10X or more faster than HDD. SSD is just flash memory suited up in HDD drag so a SSD drive fits on the same cables and controllers as the HDD it\u2019s replacing or augmenting. We\u2019re seeing some systems that use forms of flash memory for storage without the burden of mimicking HDD physics. Cylinder, Head, and Sector aren\u2019t quite the same if there\u2019s no disk spinning. SSD can\u2019t be updated indefinitely like HDD, so they\u2019re shipped with extra storage that can be used to replace cells that have been over-worked. It happens seamlessly, and a network manager needs to monitor their SSD drives\u2019 SMART reports. \u2018Tiered storage management\u2019 is automated for hybrid SSD/HDD like Apple introduced, where the recently used stuff is kept on SSD for faster access and less-recently used stuff is moved to less expensive HDD as it becomes stale. It\u2019s also a feature of some data centers, to get benefits of SSD speed for quicker access to recent data. I love my SSDs, my personal machines boot in a few seconds with it, and virtual servers at DigitalOcean that have been moved to SSD RAID 10 run database stuff _lots_ faster. The first one I used was a 20 MegaByte, in about 1999, and that was $800, was for a wearable computer in a fanny pack. Now you can get 2 Terabytes of enterprise-class SAS SSD for $799. I\u2019ll probably never buy a HDD again\u2026 ",
+            "date": "Answered September 15, 2019",
+            "views": "21",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Beauregard Burnside III",
+                "href": "/profile/Beauregard-Burnside-III"
+            },
+            "answer_text": "The problem with using SSD for LONG TERM STORAGE is the memory. The memory requires power to maintain the data saved on it long term. The memory is capable of sustaining data over a relatively short time, a year, maybe two, but as the drive sits, without being \u201crefreshed\u201d by use in the computer, it is slowly losing its charge to the memory. Once this charge is gone, the memory is gone. The SSD could have a long operating life if it were not for the Write Wear concerns where the action of saving to the SSD memory slowly shortens the life of the SSD. This Write wear concern makes it difficult to determine any life span number in years, because its life is determined on how much and how aggressively you save data to the SSD. The SSD is also not able to sustain memory if extreme temperatures. SSD memory and memory devices like it, can lose the data in 7 days, worst case senario, The HDD can sustain memory for 10 years or more, does NOT have the memory fade concern and will handle temperatures much better. It is recommended to do your long term storage from an SSD to a HDD for better data storage and reliablility. Do some research and you will be able to verify the information I have stated here. There are MANY claims about the SSD, many are not what you may think. I have posts here that go over those claims and I encourage you to read them or better yet, research the SSD for your self so you will be knowledgeable in the SSD market. Do not be nervous about using the HDD. It has been in use since the 1950\u2019s, and is a well proven storage system. If concerned about speed, that is only access speed for the SSD. The computer does NOT speed up just because you change the drive. Do your research. Make your backups and consider making a System Drive Image Backup. ",
+            "date": "Answered October 4, 2019",
+            "views": "13",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nazmul Hasan Riven",
+                    "user_href": "/profile/Nazmul-Hasan-Riven"
+                },
+                {
+                    "user_id": "Conor Smith",
+                    "user_href": "/profile/Conor-Smith-90"
+                },
+                {
+                    "user_id": "Mohammed Saiful Alam Siddiquee",
+                    "user_href": "/profile/Mohammed-Saiful-Alam-Siddiquee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jim Figlik",
+                "href": "/profile/Jim-Figlik-2"
+            },
+            "answer_text": "\u201cBetter\u201d is a subjective term. SSD has operational advantages over moving hard disks. But SSD also have limits on the number of times that you can write to the media. Given the question, if you are writing to an archive disk and then pulling it out of an enclosure and dropping it (metaphorically speaking) onto a shelf, I would say weigh the costs & capacities and go the least expensive route. Personally, I use my SSDs as operational disks and use my surplus HDDs for archive, updating them monthly. Hard Disk Drives have a longer track record. I\u2019ve not seen anything that proves that SSD will outlast HHD for long term storage, presuming that you take a powered down device and let it sit on a shelf. Now, if you are talking about actively writing to a device that you want to also retain archival information on it while you\u2019re writing to it (e.g. your computer\u2019s swap space is a directory on the same device), that\u2019s a different story. I\u2019ll go back to the write limitations on SSDs. ",
+            "date": "Answered September 16, 2019",
+            "views": "645",
+            "upvotes": " Answer requested by Mohammed Saiful Alam Siddiquee",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/MJ-870"
+                },
+                {
+                    "user_id": "David Lewis",
+                    "user_href": "/profile/David-Lewis-69"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "James Fehr",
+                "href": "/profile/James-Fehr-1"
+            },
+            "answer_text": "HDD provided they are kept in a static free environment are a great long term storage option. For more information on how hard drives store data check this out: How does a hard drive work? This means we can also make sure the drive is stored away from magnets or electromagnets and be fairly certain the data will be ok even years after storage in a safe location. SSDs on the other hand operate a bit like USB drives. I would be concerned about using one of these for long term storage due to the infancy of the technology. I would also be concerned about the use of a chip to store data where the chips can only be written to a certain number of times before they are unable to function properly anymore. See this article for more details: Digital storage basics, Part 4: SSD explained. I would say it would be a bad choice for long term data storage. ",
+            "date": "Answered March 12, 2016",
+            "views": "41",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/MJ-870"
+                },
+                {
+                    "user_id": "Thomas Rush",
+                    "user_href": "/profile/Thomas-Rush-3"
+                },
+                {
+                    "user_id": "Hasan Mustafa",
+                    "user_href": "/profile/Hasan-Mustafa-7"
+                },
+                {
+                    "user_id": "Manzhuur Pontoh",
+                    "user_href": "/profile/Manzhuur-Pontoh"
+                },
+                {
+                    "user_id": "David Lewis",
+                    "user_href": "/profile/David-Lewis-69"
+                },
+                {
+                    "user_id": "James Fehr",
+                    "user_href": "/profile/James-Fehr-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "It depends on what you mean by \"storage\". If you mean \"storage without power, sitting, unplugged on a shelf somewhere\", HDs do OK, but tapes do better (at least at scale).  The problem with SSDs for this kind of offline storage is that the charges that define bits in flash do degrade (at a much higher rate than the magnetic domains in tape or HD do) - especially at higher temperature.  (Temperature and humidity is critical for tape, of course, and there are probably environmental factors that would greatly affect HD shelf-life.) Ultimately, it's a bit foolish to expect to trust any kind of truly offline storage: to know whether your bits are intact, you have to keep checking them.  Storage is not about trust: it's about replication and failure modes and verification. ",
+            "date": "Answered March 15, 2016",
+            "views": "62",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nazmul Hasan Riven",
+                    "user_href": "/profile/Nazmul-Hasan-Riven"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jason Smith",
+                "href": "/profile/Jason-Smith-745"
+            },
+            "answer_text": "I am with Mark Hahn on this one...you need to verify the data periodically to reassure yourself the data is still there. All storage eventually fails...hard drives, tapes, cd etc. Always make sure you have a backup (assuming this is your backup then you should have a backup of your backup). Multiple backups should be kept in different physical locations, ie different buildings / towns / countries, depending on who you are and the importance of the data. Online backups are equally unreliable - if you try to restore from an online backup and the data is corrupted/missing then you will get little useful help from the provider, not to mention the hacking risk. Pro tip: Backups can seem to run and complete successfully, until you try to restore the data. Verify your backups by checking your data. A good way to do this is to do a test restore of your data (to somewhere other than where the live data is) http://www.computer-repair-in-reading.com ",
+            "date": "Answered March 26, 2016",
+            "views": "39",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Joseph Danko",
+                "href": "/profile/Joseph-Danko"
+            },
+            "answer_text": "What is LONG TERM STORAGE? Years, decades, centuries? Digital information has existed for less than 75 years. I suppose somewhere there might be some information stored on 1950s reels of metal magnetic tape. Recovering that information would be a problem. The required hardware exists only in one or two museums and functionality is doubtful. 75 years in the future, optimistically, our hardware and software will be just as archaic and what of our data? Will anyone even care? If we believe in a future and our technology there will be advanced storage methods or we will be lost in the past because currant mass storage is not viable long term. ",
+            "date": "Answered July 13, 2020",
+            "views": "198",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/MJ-870"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bas Van de Wiel",
+                "href": "/profile/Bas-Van-de-Wiel-4"
+            },
+            "answer_text": "Your mileage will vary. Magnetic media can be very reliable. I have floppy disks from the mid-eighties that still work. There\u2019s also quite a bunch of them that are unreadable. Same goes for hard drives and tape. Some tape is made for archival, as are some optical media, which are specced to be readable after 100 years. The key, however, is storage in good conditions. No fluctuation in temperature, dark, not too humid. It\u2019s difficult and expensive to provide these conditions consistently over decades. Personally I\u2019d either contact a big bank for physical storage at their facilities, or take my stuff to the cloud. The likes of Amazon and Azure have extremely reliable offerings for archival. ",
+            "date": "Answered January 18, 2020",
+            "views": "627",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jasper Chun",
+                "href": "/profile/Jasper-Chun"
+            },
+            "answer_text": "long term? the hard drive is great for this kind of job,but if you don't edit the data often,or just don't write data to the storage drive,the ssd will be best. small problem though, the power has to be stable,as a sudden outage could corrupt your ssd,but not as likely for the hdd. check hardware canucks,he was trying to create a special effect for his video,and because he manually cut the power,he killed his ssd raid,which caused him to lose all of his data. ",
+            "date": "Answered March 12, 2016",
+            "views": "27",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Beauregard Burnside III",
+                    "user_href": "/profile/Beauregard-Burnside-III"
+                },
+                {
+                    "user_id": "Mohammed Saiful Alam Siddiquee",
+                    "user_href": "/profile/Mohammed-Saiful-Alam-Siddiquee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Siddharth Kekre",
+                "href": "/profile/Siddharth-Kekre-2"
+            },
+            "answer_text": "For long-term storage where you won\u2019t be plugging-in the drive from time to time, it is better to use HDD and store it away from unsuitable climate and safe. But if you\u2019ll be plugging in the drive from time to time and the climate is not good enough, use SSD. By Suitable Climate I mean low moisture, no magnetical interference, no extreme heat etc as these will demagnetize the drives and corrupt the data permanently. ",
+            "date": "Answered September 16, 2019",
+            "views": "375",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Beauregard Burnside III",
+                    "user_href": "/profile/Beauregard-Burnside-III"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Gezelter",
+                "href": "/profile/Robert-Gezelter"
+            },
+            "answer_text": "It is wise to check the specifications of the specific device carefully. Magnetic devices can be powered down for extended periods without ill effect under reasonable conditions (temperature, humidity, magnetic fields, vibration, shock). Flash memory devices may have limitations on the time they are powered off before they begin to degrade memory contents. Word to the wise is carefully check the specifications of the flash storage device, down to the chip level. ",
+            "date": "Answered September 15, 2019",
+            "views": "449",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tanzil Rahman",
+                    "user_href": "/profile/Tanzil-Rahman-20"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Keith Connors",
+                "href": "/profile/Keith-Connors-2"
+            },
+            "answer_text": "platter-based storage for data that isnt being used. SSDs constantly rewrite their data, its called wear leveling, no one uses ssds for data that is archival. ",
+            "date": "Answered September 16, 2019",
+            "views": "114",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Andreas Reiner Szallis",
+                "href": "/profile/Andreas-Reiner-Szallis"
+            },
+            "answer_text": "It doesn't really matter, as you have to turn both on, every now and then, to keep your data and the hardware in good shape. ",
+            "date": "Answered September 15, 2019",
+            "views": "103",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Fawaz Salah Alnaqqar",
+                "href": "/profile/Fawaz-Salah-Alnaqqar"
+            },
+            "answer_text": "Hdd is better for long time storage because it\u2019s cheaper and have a higher MB/$ ratio than the ssd. Note : the bigger hdd you buy the bigger MB/$ you would have. ",
+            "date": "Answered July 14, 2020",
+            "views": "73",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Philip Rose",
+                "href": "/profile/Philip-Rose-32"
+            },
+            "answer_text": "Try using DVD and write on it the OS used to create it and the date with information of file type used. Any magnetic storage will fail and the software will be updated so that the information of the original format will be lost. ",
+            "date": "Answered May 27, 2020",
+            "views": "230",
+            "upvotes": "0"
+        }
+    ]
+}

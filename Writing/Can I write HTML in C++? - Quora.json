@@ -1,0 +1,192 @@
+{
+    "title": "Can I write HTML in C++? - Quora",
+    "tags": [
+        "HTML",
+        "C++ (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Zeeshan Dhillon",
+                "href": "/profile/Zeeshan-Dhillon"
+            },
+            "answer_text": "of course you can. Here is a C++ program which not only generate large HTML webpages but also edits them and replace different values inside the html file Download : SMBS.exe How to generate HTML file with c++: Create HTML webpage using drag&drop applications like \u201cAdobe Muse\u201d.Open HTML file with notepad++.Press ctrl+F and click on replace.Make sure that search mode is \u201cNormal\u201dType \u201c\\\u201d in \u201cFind what\u201d field and \u201c\\\\\u201d in \u201cReplace with\u201d field.Click on \u201cReplace all\u201d Repeat same procedure for single quotation mark (\u201c) in \u201cFind what\u201d field and a back slash followed by quotation (\\\u201d) mark in \u201cReplace with field\u201d. Now, change Search mode to Regular expression and replace ^ with file<<\u201dReplace All with Regular expression.It will put file<<\u201d before every html line. Repeat with dollar sign in Find what field $ and \u201c; in Replace with field.Replace All with Regular expression.It will put \u201c; on end of every line Now copy complete code from Notepad++Open c++ IDE (Dev-C++ Recommended) and type following code.#include<iostream>\u00a0#include<conio.h>\u00a0#include<fstream>\u00a0using namespace std;\u00a0int main()\u00a0{\u00a0\tofstream file(MyWebpage.html);\u00a0Paste above copied code here and continue typing following lines file.close();\u00a0ShellExecute(NULL,MyWebpage.html,str,NULL,NULL,SW_SHOW);\u00a0return 0;\u00a0}\u00a0Done! ",
+            "date": "Answered September 22, 2017",
+            "views": "92",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Krushna Mahapatra",
+                    "user_href": "/profile/Krushna-Mahapatra-1"
+                },
+                {
+                    "user_id": "Afia Ghazanfar Dhillon",
+                    "user_href": "/profile/Afia-Ghazanfar-Dhillon"
+                },
+                {
+                    "user_id": "Sabiha Sardar",
+                    "user_href": "/profile/Sabiha-Sardar-1"
+                },
+                {
+                    "user_id": "Ansar",
+                    "user_href": "/profile/Ansar-39"
+                },
+                {
+                    "user_id": "Yunaz Gilang",
+                    "user_href": "/profile/Yunaz-Gilang"
+                },
+                {
+                    "user_id": "Samuel Raphael",
+                    "user_href": "/profile/Samuel-Raphael-19"
+                },
+                {
+                    "user_id": "Ana Figueiredo",
+                    "user_href": "/profile/Ana-Figueiredo-4"
+                },
+                {
+                    "user_id": "Michele Castelletti",
+                    "user_href": "/profile/Michele-Castelletti"
+                },
+                {
+                    "user_id": "Vishal Sharma",
+                    "user_href": "/profile/Vishal-Sharma-693"
+                },
+                {
+                    "user_id": "Caleb Baksh",
+                    "user_href": "/profile/Caleb-Baksh"
+                },
+                {
+                    "user_id": "Fremont Hub",
+                    "user_href": "/profile/Fremont-Hub-1"
+                },
+                {
+                    "user_id": "Abdul Qayyum",
+                    "user_href": "/profile/Abdul-Qayyum-97"
+                },
+                {
+                    "user_id": "Umar Mahar",
+                    "user_href": "/profile/Umar-Mahar"
+                },
+                {
+                    "user_id": "Luccas Clezar",
+                    "user_href": "/profile/Luccas-Clezar"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Maxim Ratkovskyy",
+                    "user_href": "/profile/Maxim-Ratkovskyy"
+                },
+                {
+                    "user_id": "Viziteu Mihai",
+                    "user_href": "/profile/Viziteu-Mihai"
+                },
+                {
+                    "user_id": "Richard Nazar",
+                    "user_href": "/profile/Richard-Nazar"
+                },
+                {
+                    "user_id": "Peter Johnsson",
+                    "user_href": "/profile/Peter-Johnsson-1"
+                },
+                {
+                    "user_id": "Prabhmanmeet Singh",
+                    "user_href": "/profile/Prabhmanmeet-Singh"
+                },
+                {
+                    "user_id": "Citra Lestari",
+                    "user_href": "/profile/Citra-Lestari-9"
+                },
+                {
+                    "user_id": "Filip Anjou",
+                    "user_href": "/profile/Filip-Anjou"
+                },
+                {
+                    "user_id": "Emi Buliga",
+                    "user_href": "/profile/Emi-Buliga"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhay Bhave",
+                "href": "/profile/Abhay-Bhave"
+            },
+            "answer_text": "Long before fancy server packages like AngularJS came into existence, CGI was extensively used. Even today, it\u2019s in use, though it has lost popularity now. The basic idea behind CGI is you run a native executable from server (it executes on the server itself) and you get the text output. Technically, how difficult it is to print an html page from c++ program? Even dynamic?! All you need is some way to translate the ?arg1=val1&arg2=val2 part of the url to proper args passed to the executable (args to main function). And there are ways to do that. :) So, answer is, Yes But that might not be the best way. Most modern servers prefer more \u201cmanaged\u201d kind of applications rather than as native as CGI. You might not get to put and run a CGI script on shared hosting, for instance :)  P.S. Technically, how difficult it is to print an html page from c++ program? This is not \u201crendering actual html in all it\u2019s colors\u201d. Something like #include <iostream>\u00a0using namespace std;\u00a0 \u00a0int main () {\u00a0    \u00a0   cout << \"Content-type:text/html\\r\\n\\r\\n\";\u00a0   cout << \"<html>\\n\";\u00a0   cout << \"<head>\\n\";\u00a0   cout << \"<title>Hello World - First CGI Program</title>\\n\";\u00a0   cout << \"</head>\\n\";\u00a0   cout << \"<body>\\n\";\u00a0   cout << \"<h2>Hello World! This is my first CGI program</h2>\\n\";\u00a0   cout << \"</body>\\n\";\u00a0   cout << \"</html>\\n\";\u00a0   \u00a0   return 0;\u00a0}\u00a0:) Happy coding ",
+            "date": "Answered July 15, 2017",
+            "views": "26",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Prateek Gawarle",
+                    "user_href": "/profile/Prateek-Gawarle"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tamer Aly",
+                "href": "/profile/Tamer-Aly-9"
+            },
+            "answer_text": "Of course. Here you go: #include <iostream>\u00a0\u00a0// It's int main() dammit. Not void main()\u00a0int main() \u00a0{\u00a0    std::cout << \"<html><body><h1>C++ HTML</h1></body></html>\";\u00a0}\u00a0Compile that code and run it to get: <html><body><h1>C++ HTML</h1></body></html>\u00a0There\u2019s your HTML code. Now stick it in a file called \u201clol.html\u201d and run it from your browser. TADA! ",
+            "date": "Answered September 22, 2017",
+            "views": "28",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Kakali Chakraborty",
+                    "user_href": "/profile/Kakali-Chakraborty-29"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joshua A Saxby",
+                "href": "/profile/Joshua-A-Saxby"
+            },
+            "answer_text": "The C++ Web Framework CppCMS (which I have not used) has a templating system which allows you to do something similar to that, although it is more comparable to writing C++ in HTML rather than the other way round. From their documentation on Templates: CppCMS's web pages are written in a special template language, that is translated to C++ code that can be compiled to a shared object (or DLL on windows) or be statically linked into your applications.[1] Footnotes[1] Tutorial: Using Templates (v 1.x)",
+            "date": "Answered July 5, 2017",
+            "views": "13",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Zeeshan Dhillon",
+                    "user_href": "/profile/Zeeshan-Dhillon"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Komel Merchant",
+                "href": "/profile/Komel-Merchant"
+            },
+            "answer_text": "No, HTML is a language of its own (actually stands for HyperText Markup Language) :) ",
+            "date": "Answered July 5, 2017",
+            "views": "364",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ken Foskey",
+                "href": "/profile/Ken-Foskey"
+            },
+            "answer_text": "What are you actually trying to achieve. You can as advises spit out html as text which is cgi from ancient memory. A better approach is to do your html in a framework like angular and provide web api services to pass data to it using ajax ",
+            "date": "Answered July 5, 2017",
+            "views": "904",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Conner Pope",
+                "href": "/profile/Conner-Pope"
+            },
+            "answer_text": "No, this is not possible. If you want to create a UI for your C++ applications, search online for \u201cC++ GUI\u201d - Should get you going in the right direction. ",
+            "date": "Answered July 5, 2017",
+            "views": "694",
+            "upvotes": "0"
+        }
+    ]
+}

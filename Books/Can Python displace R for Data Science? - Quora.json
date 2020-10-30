@@ -1,0 +1,1113 @@
+{
+    "title": "Can Python displace R for Data Science? - Quora",
+    "tags": [
+        "Machine Learning in Python",
+        "R (programming language)",
+        "Data Mining",
+        "Data",
+        "Data Science",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "JQ Veenstra",
+                "href": "/profile/JQ-Veenstra"
+            },
+            "answer_text": "I know this is an old question. I saw it on my feed, and after reading all of the answers given, I felt I had something to add. First, and foremost, it depends on what you define as \u201cdata science.\u201d There are places I doubt R will ever lose ground, and that is with those who do \u201cdata science\u201d from a strictly statistical analysis point of view - which, while not considered mainstream as the definition, is at least a huge part of what we call data science today. In all three of my degrees (BSc, MMath, and PhD in statistics) R has been the tool of choice by professors and students. That includes the students who went on to be professors. Like begets like and all of that. As a matter of fact, R was my personal favourite for a while, and I had a much larger programming background as well as relevant CS courses than most of my peers. Compared to my peers specifically in the PhD program while I was there - more than all, by a large margin. There are, of course, some problems with R that Python mostly skirts or doesn\u2019t have even remotely. First, R is not, technically, a programming language: it is an environment equipped with a programming language. To be fair, it was designed to be that way, because it was designed and written by statisticians for statisticians well before the term data science was ever used. I\u2019m not saying that these were statisticians who were poor programmers, but they were statisticians first. I have known a couple of members of the R Core Development team (Duncan Murdoch and I had the occasional chat while I was at Western, and although I never had him teach me a class or TAed for him, I followed his work), and while I have a great deal of respect for all of them, again, statistician first, programmer second. If it weren\u2019t for RStudio and Hadley Wickham, \u201cregular\u201d R wouldn\u2019t be where it is now. And if it weren\u2019t for Revolution Analytics (now Microsoft R), you would still be forced to deal with R as a memory hog. The thing is, this isn\u2019t really anyone\u2019s fault: when R was developed, there were no real data sets considered even close to the size we have now. I doubt anyone conceived such a situation was possible. And memory management is really, really, hard to change on a system like R without breaking a lot of things, which is why Revolution (and now presumably Microsoft) could charge a mint for its product. Python, on the other hand, wasn\u2019t originally meant for data science. It is very good at certain specific things. It\u2019s the ultimate glue language, and its idioms are enough like R\u2019s that I felt comfortable switching. Adding easier C integration than R has and Cython (and eventually Numba\u2026 oh my) make it blazing fast for custom algorithms. And, lest we forget, Numpy, Scipy and scikit-learn for everything non-custom (although you can do a lot of custom data science algorithms by tweaking and/or extending things.) I don\u2019t really know the history of Python nearly as well as the history of R, so I don\u2019t know what decisions made all of the (mostly written in C) code that made all of this data science magic happen. It was there when I started with Python, and again, the similarities to R made me comfortable switching. (Note that I had been programming in various other languages for a long time previous.) But the similarity made sense in terms of analyses. R has a huge number of packages. More than I hope Python will ever have, because there\u2019s repetition, poor quality, and wildly different syntax in a lot of them. If it weren\u2019t for Hadley, RStudio, and lots of years of using R, I wouldn\u2019t be using R at all these days. As it is, I use it for custom things I need to bang out if I know there\u2019s something R has a package I trust for. There\u2019s really no need to choose one over the other if you can use both. Especially as you can call R from Python (but heck, you can call practically any other language from Python). If I were just starting out now, and I had to choose one\u2026 it would still be tough. Especially since I have such a long history with R already. But I probably would choose Python\u2026 eventually. But why make a choice if you don\u2019t have to? ",
+            "date": "Answered June 21, 2016",
+            "views": "355",
+            "upvotes": " View 106 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gilbert Duy Doan",
+                    "user_href": "/profile/Gilbert-Duy-Doan"
+                },
+                {
+                    "user_id": "Alfred Rossman",
+                    "user_href": "/profile/Alfred-Rossman"
+                },
+                {
+                    "user_id": "Lisandro Bucciarelli",
+                    "user_href": "/profile/Lisandro-Bucciarelli"
+                },
+                {
+                    "user_id": "Thaminda Perera",
+                    "user_href": "/profile/Thaminda-Perera-1"
+                },
+                {
+                    "user_id": "Yaset Evo",
+                    "user_href": "/profile/Yaset-Evo-2"
+                },
+                {
+                    "user_id": "Proma Mukherjee",
+                    "user_href": "/profile/Proma-Mukherjee"
+                },
+                {
+                    "user_id": "Yee Hoon Foong",
+                    "user_href": "/profile/Yee-Hoon-Foong-1"
+                },
+                {
+                    "user_id": "Johan Rodriguez",
+                    "user_href": "/profile/Johan-Rodriguez-14-1"
+                },
+                {
+                    "user_id": "Bo Huang",
+                    "user_href": "/profile/Bo-Huang-11"
+                },
+                {
+                    "user_id": "Rafa\u0142 Borawski",
+                    "user_href": "/profile/Rafa\u0142-Borawski"
+                },
+                {
+                    "user_id": "Benjamin Wiseman",
+                    "user_href": "/profile/Benjamin-Wiseman-2"
+                },
+                {
+                    "user_id": "\u0110\u0103ng Hu\u1ef3nh L\u00e2m H\u1ea3i",
+                    "user_href": "/profile/\u0110\u0103ng-Hu\u1ef3nh-L\u00e2m-H\u1ea3i"
+                },
+                {
+                    "user_id": "Meo Khan",
+                    "user_href": "/profile/Meo-Khan"
+                },
+                {
+                    "user_id": "Vaibhav Malviya",
+                    "user_href": "/profile/Vaibhav-Malviya-8"
+                },
+                {
+                    "user_id": "Peter Strand",
+                    "user_href": "/profile/Peter-Strand-14"
+                },
+                {
+                    "user_id": "Olabode Alamu",
+                    "user_href": "/profile/Olabode-Alamu"
+                },
+                {
+                    "user_id": "Robert Kairu",
+                    "user_href": "/profile/Robert-Kairu-1"
+                },
+                {
+                    "user_id": "Jos\u00e9 Koji",
+                    "user_href": "/profile/Jos\u00e9-Koji"
+                },
+                {
+                    "user_id": "Rafael Fran\u00e7a",
+                    "user_href": "/profile/Rafael-Fran\u00e7a-4"
+                },
+                {
+                    "user_id": "Conrad Leonard",
+                    "user_href": "/profile/Conrad-Leonard-2"
+                },
+                {
+                    "user_id": "David John Lemay",
+                    "user_href": "/profile/David-John-Lemay"
+                },
+                {
+                    "user_id": "Andrew Edbert",
+                    "user_href": "/profile/Andrew-Edbert"
+                },
+                {
+                    "user_id": "D-H Doug Oh-Kim",
+                    "user_href": "/profile/D-H-Doug-Oh-Kim"
+                },
+                {
+                    "user_id": "Mario Clavijo",
+                    "user_href": "/profile/Mario-Clavijo"
+                },
+                {
+                    "user_id": "James Brown",
+                    "user_href": "/profile/James-Brown-2791"
+                },
+                {
+                    "user_id": "JohnG Stuart",
+                    "user_href": "/profile/JohnG-Stuart"
+                },
+                {
+                    "user_id": "Atufa Akhtar",
+                    "user_href": "/profile/Atufa-Akhtar"
+                },
+                {
+                    "user_id": "Andra\u017e Poje",
+                    "user_href": "/profile/Andra\u017e-Poje-1"
+                },
+                {
+                    "user_id": "Pablo Delgado",
+                    "user_href": "/profile/Pablo-Delgado-11"
+                },
+                {
+                    "user_id": "Thales Tozatto",
+                    "user_href": "/profile/Thales-Tozatto"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/B-Boczon"
+                },
+                {
+                    "user_id": "Andrew LEE",
+                    "user_href": "/profile/Andrew-LEE-471"
+                },
+                {
+                    "user_id": "Sairam Sasupathi",
+                    "user_href": "/profile/Sairam-Sasupathi"
+                },
+                {
+                    "user_id": "Sean Ippolito",
+                    "user_href": "/profile/Sean-Ippolito-1"
+                },
+                {
+                    "user_id": "Alan Richards",
+                    "user_href": "/profile/Alan-Richards-6"
+                },
+                {
+                    "user_id": "Fulgence Kayiranga",
+                    "user_href": "/profile/Fulgence-Kayiranga-1"
+                },
+                {
+                    "user_id": "Syl Vaz",
+                    "user_href": "/profile/Syl-Vaz"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Green-Cabbage-3"
+                },
+                {
+                    "user_id": "Rajavel KS",
+                    "user_href": "/profile/Rajavel-KS"
+                },
+                {
+                    "user_id": "Paris Dalianis",
+                    "user_href": "/profile/Paris-Dalianis"
+                },
+                {
+                    "user_id": "Craig Slinkman",
+                    "user_href": "/profile/Craig-Slinkman-1"
+                },
+                {
+                    "user_id": "Lester Clowney",
+                    "user_href": "/profile/Lester-Clowney"
+                },
+                {
+                    "user_id": "Rahul Rao",
+                    "user_href": "/profile/Rahul-Rao-17"
+                },
+                {
+                    "user_id": "Taras Koniukhov",
+                    "user_href": "/profile/Taras-Koniukhov"
+                },
+                {
+                    "user_id": "Rodrigo Morales Flores",
+                    "user_href": "/profile/Rodrigo-Morales-Flores"
+                },
+                {
+                    "user_id": "Filipe Alves Crusat",
+                    "user_href": "/profile/Filipe-Alves-Crusat"
+                },
+                {
+                    "user_id": "William Henry",
+                    "user_href": "/profile/William-Henry-98"
+                },
+                {
+                    "user_id": "Avizit Adhikary",
+                    "user_href": "/profile/Avizit-Adhikary"
+                },
+                {
+                    "user_id": "Sicab\u00ed Cruz",
+                    "user_href": "/profile/Sicab\u00ed-Cruz"
+                },
+                {
+                    "user_id": "Blaster Hoff",
+                    "user_href": "/profile/Blaster-Hoff"
+                },
+                {
+                    "user_id": "Fred Sagwe",
+                    "user_href": "/profile/Fred-Sagwe"
+                },
+                {
+                    "user_id": "Daniel Maangi",
+                    "user_href": "/profile/Daniel-Maangi"
+                },
+                {
+                    "user_id": "Israel Nicolas",
+                    "user_href": "/profile/Israel-Nicolas"
+                },
+                {
+                    "user_id": "Asef Daqiq",
+                    "user_href": "/profile/Asef-Daqiq"
+                },
+                {
+                    "user_id": "Franklin Parker",
+                    "user_href": "/profile/Franklin-Parker-2"
+                },
+                {
+                    "user_id": "Peter Stark",
+                    "user_href": "/profile/Peter-Stark-1"
+                },
+                {
+                    "user_id": "Pete Cacioppi",
+                    "user_href": "/profile/Pete-Cacioppi"
+                },
+                {
+                    "user_id": "Giovanni Papini",
+                    "user_href": "/profile/Giovanni-Papini-2"
+                },
+                {
+                    "user_id": "Carlos Aguilar",
+                    "user_href": "/profile/Carlos-Aguilar-78"
+                },
+                {
+                    "user_id": "Trevor Johnson",
+                    "user_href": "/profile/Trevor-Johnson-89"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Chang",
+                "href": "/profile/Robert-Chang-1"
+            },
+            "answer_text": "In my opinion, it all depends on the switching cost, and this is probably not just limited to R and/or Python: 1. Are there sufficient use cases where you will be more efficient or productive when switching to a new tool? If the use cases that you have encountered are mostly taken care by your existing tool, then the cost of learning a new language, syntax, and its philosophy might not be worth it. However, if there are compelling use cases that are not available or it's hard to do efficiently using your existing tool, you might be in business. Additionally, you want to make sure that the new tool has wider coverage -- in the sense that it not only covers the new use cases, but also your existing use cases very well. 2. How much of your current work is dependent on your current tool (say R)? If your works involve mostly building prototypes that do not interact with other system, and is not part of a pipeline, then the cost of switching will be lower. On the other hand, if your pipeline/system heavily depends on the platform you are using, the code that you need to re-write is not necessarily just the job itself, but also other things that streamline everything together. 3. Is the programming paradigm for the new tool different enough that you will have a new understanding of how data analysis can be structured? To give a more concrete example -- R is essentially a functional programming language, and many of its data processing workflow follow this paradigm. It also have an object oriented spin to it, but I usually find it much harder to grasp compare than how Python approach it.  There will be times where a particular paradigm is more suitable for the analysis you are trying to do, and choosing the right tool is important.  If the new tool follows mostly the same paradigm as your existing tool, you are likely to learn it pretty quickly, but it wouldn't stretch your mind as much and give you new perspectives. ",
+            "date": "Answered November 27, 2013",
+            "views": "43",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Franklin Parker",
+                    "user_href": "/profile/Franklin-Parker-2"
+                },
+                {
+                    "user_id": "\u5e0c \u97e9",
+                    "user_href": "/profile/\u5e0c-\u97e9"
+                },
+                {
+                    "user_id": "Alexis S\u00e1ez",
+                    "user_href": "/profile/Alexis-S\u00e1ez"
+                },
+                {
+                    "user_id": "Datta Dharanikota",
+                    "user_href": "/profile/Datta-Dharanikota"
+                },
+                {
+                    "user_id": "Joel Chan",
+                    "user_href": "/profile/Joel-Chan"
+                },
+                {
+                    "user_id": "Shubham Singh Tomar",
+                    "user_href": "/profile/Shubham-Singh-Tomar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sumit Rana",
+                "href": "/profile/Sumit-Rana-495"
+            },
+            "answer_text": "R vs Python is one of the most common but important question asked by lots of data science students. Today I am going to tell of the major difference between R and Python. We know that R and Python both are open source programming languages. Both of these languages are having a large community. Both of these languages are having continuous development. That\u2019s is the reason these languages add new libraries and tools in their catalog. The major purpose of using R is for statistical analysis, on the other hand Python provide the more general approach to data science. Both of the languages are state of the art programming language for data science. Python is one of the simplest programming languages in terms of its syntax. That\u2019s why any beginner in a programming language can learn R without putting extra efforts. On the other hand, R is built by statisticians that are a little bit hard to learn. There are some reasons that will help us to find out why we should not use both R and Python. R R is one of the oldest programming language developed by academics and statisticians. R comes into existence in the year 1995. Now R is providing the richest ecosystem for data analysis. The R programming language is full of libraries. There are a couple of repositories also available with R. In fact, CRAN is having around 12000 packages. The rich variety of library makes it the first choice for statistical analysis and analytical work. Key features of R Consists of packages for almost any statistical application one can think of. CRAN currently hosts more than 10k packages.Comes equipped with excellent visualization libraries like ggplot2.Capable of standalone analysesPython On the other hand Python can do the same tasks as R programming language does. The major features of python are data wrangling, engineering, web scraping and so on. Python is also having the tools that help in implementing the machine learning at large scale. Python is one of the simplest languages to maintain and it is more robust than R. Now a day Python is having the cutting edge API. This API is quite helpful in machine learning and AI. Most of the data scientist uses only five Python libraries i.e Numpy, Pandas, Scipy, Scikit-learn and Seaborn. It is quite handy to use Python over R. Key features of Python programming language:- Object-oriented languageGeneral PurposeHas a lot of extensions and incredible community supportSimple and easy to understand and learnpackages like pandas, numpy and scikit-learn, make Python an excellent choice for machine learning activities.R or Python Usage Python has developed by Guido van Rossum in 1991. Python is the most popular programming language in the world. It has most powerful libraries for math, statistic, artificial intelligence and machine learning. But still python is not useful for econometrics and communication, and also for business analytics. On the other hand, R is developed by academics and scientist. It is specially designed for machine learning and data science. R is having the most powerful communication libraries that are quite helpful in data science. In addition, R is equipped with many packages that are used to perform the data mining and time series analysis. Why not use Both? Lots of people think that they can use both the programming languages at the same time. But we should prevent to use them at the same time. Majority of people are using only one of these programming languages. But they always want to have access to the capability of the language adversary. For example, if you use both the language at the same time that may face some of the problems. If you use R and you want to perform some object-oriented function than you can\u2019t use it on R. On the other hand, Python is not suitable for statistical distributions. So that they should not use both the language at the same time, because there is a mismatch of their functions. But there are some ways that will help you to use both of these languages with one another. We will talk about them in our next blog. Let\u2019s have a look at the comparison between R vs Python. R is more functional, Python is more object-oriented. R is more functional, it provides a variety of functions to the data scientist i.e Im, predict and so on. Most of the work done by functions in R. On the other hand Python use classes to perform any task within the python. R has more data analysis built-in, Python relies on packages. R provides the build-in data analysis for summary statistics, it is supported by summary built-in functions in R. But on the other hand, we have to import the statsmodel packages in Python to use this function. In addition, there is also a built-in constructor in R i.e is dataframe. On the other hand, we have to import it in Python. Read more ",
+            "date": "Answered August 5, 2019",
+            "views": "235",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alfred Rossman",
+                    "user_href": "/profile/Alfred-Rossman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeremy Cox",
+                "href": "/profile/Jeremy-Cox-10"
+            },
+            "answer_text": "I think the tagline in the article you cited is pretty clear:\"R remains popular with the PhDs of data science, but as data moves mainstream, Python is taking over.\"  R will always be used by the people really serious about using the most powerful thing (PhD).  Python makes data tools more available to everyone, but it just might not be optimal way to solve a problem.  Most people don't need optimal solutions, so yeah, Python will go mainstream for data analysis. Different programming languages are good at different things and that is a positive thing. Mainstream users aren't interested building an analysis system that is the most robust, fastest and most powerful.  They just want an answer to their question.  Python is a great, accessible/easy, and generally fast enough way to get that. Anyone who really needs speed for something big and ugly is always going to go to R.  Just like if I need to data mine strings I would probably go with PERL instead of Python. R will never be displaced by Python. A better question might be if Python will displace SAS or SPSS ",
+            "date": "Answered May 4, 2014",
+            "views": "24",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Franklin Parker",
+                    "user_href": "/profile/Franklin-Parker-2"
+                },
+                {
+                    "user_id": "Edward Azkarra",
+                    "user_href": "/profile/Edward-Azkarra"
+                },
+                {
+                    "user_id": "Adri\u00e0 Cereto i Massagu\u00e9",
+                    "user_href": "/profile/Adri\u00e0-Cereto-i-Massagu\u00e9"
+                },
+                {
+                    "user_id": "Abhinav Litkar",
+                    "user_href": "/profile/Abhinav-Litkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pekka Kohonen",
+                "href": "/profile/Pekka-Kohonen"
+            },
+            "answer_text": "What many do not realize is that many subject-oriented analysts have and probably will always have trouble with doing data analysis using a fairly low-level language like python. Python will surely eat R\u2019s lunch in data sciences. But R will eat stata\u2019s, SPSS, Excel and graphpad\u2019s lunch (and more people do data analysis with these tools than with python). Also there are huge application areas (like bioinformatics) that are heavily reliant on R packages (like Bioconductor, which has over 1000 specialized packages and a common data model). So I think they will coexist. But be used by somewhat different people depending on discipline. RStudio has played a huge part in making R more accessible to new people and facilitating reproducible data analysis through the use of R scripting and to some extent programming. A lot of \u201cData Science\u201d, understood broadly, does not require a more powerful language than R. And R is improving all the time. ",
+            "date": "Answered August 25, 2016",
+            "views": "46",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jethro Torczon",
+                    "user_href": "/profile/Jethro-Torczon"
+                },
+                {
+                    "user_id": "Andres Castro Ara\u00fajo",
+                    "user_href": "/profile/Andres-Castro-Ara\u00fajo"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Tanvir Khan",
+                    "user_href": "/profile/\u09a4\u09be\u09a8\u09ad\u09c0\u09b0-\u0996\u09be\u09a8-Tanvir-Khan"
+                },
+                {
+                    "user_id": "Fares Gafaf",
+                    "user_href": "/profile/Fares-Gafaf"
+                },
+                {
+                    "user_id": "Murray Jorgensen",
+                    "user_href": "/profile/Murray-Jorgensen"
+                },
+                {
+                    "user_id": "Hannah van der Deijl",
+                    "user_href": "/profile/Hannah-van-der-Deijl"
+                },
+                {
+                    "user_id": "Adrian Olszewski",
+                    "user_href": "/profile/Adrian-Olszewski-1"
+                },
+                {
+                    "user_id": "Wendy Geller",
+                    "user_href": "/profile/Wendy-Geller"
+                },
+                {
+                    "user_id": "Pedro Henrique Veloso",
+                    "user_href": "/profile/Pedro-Henrique-Veloso"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dima Korolev",
+                "href": "/profile/Dima-Korolev"
+            },
+            "answer_text": "Python certainly has its place in data science. R stands tall though, it won't be going anywhere anytime soon. Two languages will happily co-exist. Data Scientists would be using R for mode math-driven modeling and experiments. Engineers would be using Python for more code-driven ideas that can be made live faster. ",
+            "date": "Answered November 26, 2013",
+            "views": "156",
+            "upvotes": " View 53 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vladimir Novakovski",
+                    "user_href": "/profile/Vladimir-Novakovski"
+                },
+                {
+                    "user_id": "Bowen Li",
+                    "user_href": "/profile/Bowen-Li-7"
+                },
+                {
+                    "user_id": "Gilbert Duy Doan",
+                    "user_href": "/profile/Gilbert-Duy-Doan"
+                },
+                {
+                    "user_id": "Dung Nguyen Duc",
+                    "user_href": "/profile/Dung-Nguyen-Duc"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Abhishek Kumar",
+                    "user_href": "/profile/Abhishek-Kumar-620"
+                },
+                {
+                    "user_id": "Ruben Flecha",
+                    "user_href": "/profile/Ruben-Flecha"
+                },
+                {
+                    "user_id": "Rohan Pota",
+                    "user_href": "/profile/Rohan-Pota"
+                },
+                {
+                    "user_id": "\u05d0\u05d4\u05e8\u05d5\u05df \u05e7\u05dc\u05e0\u05d8\u05e8",
+                    "user_href": "/profile/\u05d0\u05d4\u05e8\u05d5\u05df-\u05e7\u05dc\u05e0\u05d8\u05e8"
+                },
+                {
+                    "user_id": "Ahmed M. Mocdad",
+                    "user_href": "/profile/Ahmed-M-Mocdad"
+                },
+                {
+                    "user_id": "Dragon Kin",
+                    "user_href": "/profile/Dragon-Kin"
+                },
+                {
+                    "user_id": "\u5e0c \u97e9",
+                    "user_href": "/profile/\u5e0c-\u97e9"
+                },
+                {
+                    "user_id": "Edward Azkarra",
+                    "user_href": "/profile/Edward-Azkarra"
+                },
+                {
+                    "user_id": "Giri Bhushan Ch",
+                    "user_href": "/profile/Giri-Bhushan-Ch"
+                },
+                {
+                    "user_id": "Abel Junior",
+                    "user_href": "/profile/Abel-Junior"
+                },
+                {
+                    "user_id": "Katya Mijatovic",
+                    "user_href": "/profile/Katya-Mijatovic"
+                },
+                {
+                    "user_id": "Roshan Riazi",
+                    "user_href": "/profile/Roshan-Riazi"
+                },
+                {
+                    "user_id": "Sanjay Vinayak",
+                    "user_href": "/profile/Sanjay-Vinayak"
+                },
+                {
+                    "user_id": "Alexis S\u00e1ez",
+                    "user_href": "/profile/Alexis-S\u00e1ez"
+                },
+                {
+                    "user_id": "Jeff Despain",
+                    "user_href": "/profile/Jeff-Despain"
+                },
+                {
+                    "user_id": "Rahul Agarwal",
+                    "user_href": "/profile/Rahul-Agarwal-10"
+                },
+                {
+                    "user_id": "Abhi Suri",
+                    "user_href": "/profile/Abhi-Suri"
+                },
+                {
+                    "user_id": "Rahul Mehta",
+                    "user_href": "/profile/Rahul-Mehta-10"
+                },
+                {
+                    "user_id": "Byung Jun Kong",
+                    "user_href": "/profile/Byung-Jun-Kong"
+                },
+                {
+                    "user_id": "Alexander Danieli",
+                    "user_href": "/profile/Alexander-Danieli"
+                },
+                {
+                    "user_id": "Kiran Ganji",
+                    "user_href": "/profile/Kiran-Ganji"
+                },
+                {
+                    "user_id": "James Wang",
+                    "user_href": "/profile/James-Wang-625"
+                },
+                {
+                    "user_id": "Sairaam Varadarajan",
+                    "user_href": "/profile/Sairaam-Varadarajan"
+                },
+                {
+                    "user_id": "Adam Li",
+                    "user_href": "/profile/Adam-Li-8"
+                },
+                {
+                    "user_id": "Murli Manohar Jha",
+                    "user_href": "/profile/Murli-Manohar-Jha"
+                },
+                {
+                    "user_id": "Raza Hamdani",
+                    "user_href": "/profile/Raza-Hamdani"
+                },
+                {
+                    "user_id": "Dennis Wang",
+                    "user_href": "/profile/Dennis-Wang-9"
+                },
+                {
+                    "user_id": "Kai Brusch",
+                    "user_href": "/profile/Kai-Brusch"
+                },
+                {
+                    "user_id": "Kien Cung",
+                    "user_href": "/profile/Kien-Cung"
+                },
+                {
+                    "user_id": "Vijay Bhore",
+                    "user_href": "/profile/Vijay-Bhore"
+                },
+                {
+                    "user_id": "Arnav Kalra",
+                    "user_href": "/profile/Arnav-Kalra"
+                },
+                {
+                    "user_id": "Vikram Jha",
+                    "user_href": "/profile/Vikram-Jha"
+                },
+                {
+                    "user_id": "Divyansh Khanna",
+                    "user_href": "/profile/Divyansh-Khanna"
+                },
+                {
+                    "user_id": "Deepita Pai",
+                    "user_href": "/profile/Deepita-Pai-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joel Grus",
+                "href": "/profile/Joel-Grus"
+            },
+            "answer_text": "I'm not exactly sure what \"displace\" means here.  If the question is, \"can many data scientists do their jobs just as easily using Python as using R?\" then certainly. Many of us use Python over R already.  (I barely even know R.)   If the question is \"will data scientists all stop using R in favor of Python?\" then I would say no. There are a lot of people who prefer to use R, and a number of specialized R packages that have no easy Python equivalent. If the question is \"will data scientists use the best tool for the job?\" then I hope the answer is yes.  :) ",
+            "date": "Answered November 26, 2013",
+            "views": "56",
+            "upvotes": " View 38 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ricardo Vladimiro",
+                    "user_href": "/profile/Ricardo-Vladimiro-1"
+                },
+                {
+                    "user_id": "Gilbert Duy Doan",
+                    "user_href": "/profile/Gilbert-Duy-Doan"
+                },
+                {
+                    "user_id": "Bowen Li",
+                    "user_href": "/profile/Bowen-Li-7"
+                },
+                {
+                    "user_id": "Badri Rao",
+                    "user_href": "/profile/Badri-Rao-1"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Shweta Gupta",
+                    "user_href": "/profile/Shweta-Gupta-27"
+                },
+                {
+                    "user_id": "Ajay Mehta",
+                    "user_href": "/profile/Ajay-Mehta-3"
+                },
+                {
+                    "user_id": "Naznin Farzana Lisa",
+                    "user_href": "/profile/Naznin-Farzana-Lisa"
+                },
+                {
+                    "user_id": "Shrikanth Jagannathan",
+                    "user_href": "/profile/Shrikanth-Jagannathan-1"
+                },
+                {
+                    "user_id": "Arnab Mukherjee",
+                    "user_href": "/profile/Arnab-Mukherjee-52"
+                },
+                {
+                    "user_id": "Philip Chong",
+                    "user_href": "/profile/Philip-Chong-10"
+                },
+                {
+                    "user_id": "\u5e0c \u97e9",
+                    "user_href": "/profile/\u5e0c-\u97e9"
+                },
+                {
+                    "user_id": "Edward Azkarra",
+                    "user_href": "/profile/Edward-Azkarra"
+                },
+                {
+                    "user_id": "Syed Masood",
+                    "user_href": "/profile/Syed-Masood-15"
+                },
+                {
+                    "user_id": "Mayank Bhushan",
+                    "user_href": "/profile/Mayank-Bhushan-1"
+                },
+                {
+                    "user_id": "Francesco Donnini",
+                    "user_href": "/profile/Francesco-Donnini"
+                },
+                {
+                    "user_id": "Daniel Vianna",
+                    "user_href": "/profile/Daniel-Vianna"
+                },
+                {
+                    "user_id": "Lode Nachtergaele",
+                    "user_href": "/profile/Lode-Nachtergaele"
+                },
+                {
+                    "user_id": "Jos\u00e9 Luis S\u00e1nchez Rojas",
+                    "user_href": "/profile/Jos\u00e9-Luis-S\u00e1nchez-Rojas"
+                },
+                {
+                    "user_id": "Anuja Kelkar",
+                    "user_href": "/profile/Anuja-Kelkar"
+                },
+                {
+                    "user_id": "Floris Snuif",
+                    "user_href": "/profile/Floris-Snuif-1"
+                },
+                {
+                    "user_id": "Unmesh Phadke",
+                    "user_href": "/profile/Unmesh-Phadke"
+                },
+                {
+                    "user_id": "Simon Benninga",
+                    "user_href": "/profile/Simon-Benninga"
+                },
+                {
+                    "user_id": "Nick Lee",
+                    "user_href": "/profile/Nick-Lee-18"
+                },
+                {
+                    "user_id": "John Valente",
+                    "user_href": "/profile/John-Valente"
+                },
+                {
+                    "user_id": "Adri\u00e0 Cereto i Massagu\u00e9",
+                    "user_href": "/profile/Adri\u00e0-Cereto-i-Massagu\u00e9"
+                },
+                {
+                    "user_id": "Daifuku San",
+                    "user_href": "/profile/Daifuku-San"
+                },
+                {
+                    "user_id": "Feyzi Bagirov",
+                    "user_href": "/profile/Feyzi-Bagirov"
+                },
+                {
+                    "user_id": "Prasetya Ajie Utama",
+                    "user_href": "/profile/Prasetya-Ajie-Utama"
+                },
+                {
+                    "user_id": "Ryan Rodriguez",
+                    "user_href": "/profile/Ryan-Rodriguez-1"
+                },
+                {
+                    "user_id": "Tusan Esen",
+                    "user_href": "/profile/Tusan-Esen"
+                },
+                {
+                    "user_id": "Tai Elliott",
+                    "user_href": "/profile/Tai-Elliott"
+                },
+                {
+                    "user_id": "Pawe\u0142 Pi\u0105tkowski",
+                    "user_href": "/profile/Pawe\u0142-Pi\u0105tkowski"
+                },
+                {
+                    "user_id": "Jeremy Caney",
+                    "user_href": "/profile/Jeremy-Caney"
+                },
+                {
+                    "user_id": "Stephen Oates",
+                    "user_href": "/profile/Stephen-Oates"
+                },
+                {
+                    "user_id": "Madhu Sudhan",
+                    "user_href": "/profile/Madhu-Sudhan-97"
+                },
+                {
+                    "user_id": "Jowanza Joseph",
+                    "user_href": "/profile/Jowanza-Joseph"
+                },
+                {
+                    "user_id": "Randy Zwitch",
+                    "user_href": "/profile/Randy-Zwitch"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Cohort",
+                "href": "/profile/Daniel-Cohort"
+            },
+            "answer_text": "No, not likely. Python was not originally designed for statistical computing and data mining. It was designed for programmers to write programs to build websites, softwares etc. Later, because of its ease of use, Python expanded into the big data field (both Hadoop and Spark now support Python). R is a different story. It was invented for statisticians. It has many many open source data mining / statistical packages. R programmers have developed a tradition to open-source their work and contribute to the community. Lately, Microsoft developed a multi-threading version of R using MLK called Microsoft R Open. Spark community also embraced R with SparkR. As R is becoming more and more popular, I think one day it might kick out Python from the big data community if it solves its own problems such as data processing. ",
+            "date": "Answered August 26, 2016",
+            "views": "15",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Benjamin Wiseman",
+                    "user_href": "/profile/Benjamin-Wiseman-2"
+                },
+                {
+                    "user_id": "Jethro Torczon",
+                    "user_href": "/profile/Jethro-Torczon"
+                },
+                {
+                    "user_id": "Craig Slinkman",
+                    "user_href": "/profile/Craig-Slinkman-1"
+                },
+                {
+                    "user_id": "Mohammad Kashif",
+                    "user_href": "/profile/Mohammad-Kashif-7"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Kenneth Roy Cabrera Torres",
+                    "user_href": "/profile/Kenneth-Roy-Cabrera-Torres"
+                },
+                {
+                    "user_id": "Tanvir Khan",
+                    "user_href": "/profile/\u09a4\u09be\u09a8\u09ad\u09c0\u09b0-\u0996\u09be\u09a8-Tanvir-Khan"
+                },
+                {
+                    "user_id": "Pekka Kohonen",
+                    "user_href": "/profile/Pekka-Kohonen"
+                },
+                {
+                    "user_id": "Adrian Olszewski",
+                    "user_href": "/profile/Adrian-Olszewski-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ahmed Besbes",
+                "href": "/profile/Ahmed-Besbes"
+            },
+            "answer_text": "I don t know if Python will ever replace R but what I know is that it is a very mature programming langage surrounded by a large open source community. You can use it for many purposes Data analysis, cleaning, preprocessing, visualizing,building many many machine learning modelsText mining and NLPDeep learningHandling SQL and NoSQL database connectionsProcessing large scale data (e.g using spark)Wrapping up things around a web appUnit testingPushing to productionI love python because it makes all these tasks really easy thanks to powerful libraries. If you want to learn more about python and its data science capabilities, you can follow my blog, where I write some data science use cases. Hope this helps Cheers ",
+            "date": "Answered May 12, 2017",
+            "views": "25",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Srikar Saggurthi",
+                    "user_href": "/profile/Srikar-Saggurthi-1"
+                },
+                {
+                    "user_id": "Franco Arda",
+                    "user_href": "/profile/Franco-Arda"
+                },
+                {
+                    "user_id": "Drew Rice",
+                    "user_href": "/profile/Drew-Rice-1"
+                },
+                {
+                    "user_id": "Sanjeev S Nair",
+                    "user_href": "/profile/Sanjeev-S-Nair-2"
+                },
+                {
+                    "user_id": "Naitik Chandak",
+                    "user_href": "/profile/Naitik-Chandak-\u0928\u0948\u0924\u093f\u0915-\u091a\u093e\u0902\u0921\u0915"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sreejith Menon",
+                "href": "/profile/Sreejith-Menon-18"
+            },
+            "answer_text": "R and Python will both co-exist. I have seen places where both R and Python co-exist and neither can exist without the other. R is widely used in data-science for quick prototyping while Python is used to translate the same code for slightly faster running production systems. R is ideal for the case where you want to quickly write out an algorithm, test it out on like a sample from the original dataset and later use Python for real-time production systems. ",
+            "date": "Answered June 22, 2016",
+            "views": "937",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Kenneth Roy Cabrera Torres",
+                    "user_href": "/profile/Kenneth-Roy-Cabrera-Torres"
+                },
+                {
+                    "user_id": "Pekka Kohonen",
+                    "user_href": "/profile/Pekka-Kohonen"
+                },
+                {
+                    "user_id": "Varsha Venkat",
+                    "user_href": "/profile/Varsha-Venkat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Randy Zwitch",
+                "href": "/profile/Randy-Zwitch"
+            },
+            "answer_text": "As someone proficient in both, this is just a sensationalist headline with no basis in fact.  Both tools have the same memory-in-RAM limits, both are single core by default and both of those issues are solved the same way on either platform (add more RAM, HDF5, RDBMS). Additionally, to get great performance from either language, people write code in C/C++/Fortran or try to work with JIT compilers (Numba, PyPy, compiler in R). So what are we arguing about, syntax preferences? That's hardly \"eating ones  lunch\" IMO. ",
+            "date": "Answered November 26, 2013",
+            "views": "27",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bowen Li",
+                    "user_href": "/profile/Bowen-Li-7"
+                },
+                {
+                    "user_id": "Jonathan Beattie",
+                    "user_href": "/profile/Jonathan-Beattie-9"
+                },
+                {
+                    "user_id": "MikkelGH .",
+                    "user_href": "/profile/MikkelGH"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Majdi Kallel",
+                    "user_href": "/profile/Majdi-Kallel"
+                },
+                {
+                    "user_id": "Sabin Khadka",
+                    "user_href": "/profile/Sabin-Khadka-7"
+                },
+                {
+                    "user_id": "Ronen Cohen",
+                    "user_href": "/profile/Ronen-Cohen-2"
+                },
+                {
+                    "user_id": "Simon Benninga",
+                    "user_href": "/profile/Simon-Benninga"
+                },
+                {
+                    "user_id": "Abhi Suri",
+                    "user_href": "/profile/Abhi-Suri"
+                },
+                {
+                    "user_id": "Filipe Ferminiano",
+                    "user_href": "/profile/Filipe-Ferminiano"
+                },
+                {
+                    "user_id": "Giuseppe Paleologo",
+                    "user_href": "/profile/Giuseppe-Paleologo"
+                },
+                {
+                    "user_id": "Micha\u0142 W\u0142asenko",
+                    "user_href": "/profile/Micha\u0142-W\u0142asenko"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Simple-Guy-3"
+                },
+                {
+                    "user_id": "Benjamin Paul Rollert",
+                    "user_href": "/profile/Benjamin-Paul-Rollert"
+                },
+                {
+                    "user_id": "Raj Dasgupta",
+                    "user_href": "/profile/Raj-Dasgupta-3"
+                },
+                {
+                    "user_id": "Bob Nguyen",
+                    "user_href": "/profile/Bob-Nguyen"
+                },
+                {
+                    "user_id": "Abhinav Litkar",
+                    "user_href": "/profile/Abhinav-Litkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Clark Gaylord",
+                "href": "/profile/Clark-Gaylord"
+            },
+            "answer_text": "While Python is considered a more general purpose programming tool, R will continue to be the first choice for most data analysts doing the job of data analysis. R is immediately useful to performing numerous standard - and not so standard - statistical analyses, usually with good default choices for optional parameters and reasonably formatted and useful output. As you explore a new analytic method, you'll often find there's already an R package that does that (or a couple competing packages\u2026) Python is thought of first as a programming language. R is thought of first as a data analysis environment. Each is useful in its own way. ",
+            "date": "Answered November 25, 2017",
+            "views": "57",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Christopher Bielinski",
+                    "user_href": "/profile/Christopher-Bielinski"
+                },
+                {
+                    "user_id": "Al Schimke",
+                    "user_href": "/profile/Al-Schimke-1"
+                },
+                {
+                    "user_id": "Mouna Belaid",
+                    "user_href": "/profile/Mouna-Belaid-1"
+                },
+                {
+                    "user_id": "Vincenzo Gianferrari Pini",
+                    "user_href": "/profile/Vincenzo-Gianferrari-Pini"
+                },
+                {
+                    "user_id": "Saumitra Rai",
+                    "user_href": "/profile/Saumitra-Rai-1"
+                },
+                {
+                    "user_id": "Johann Ryan",
+                    "user_href": "/profile/Johann-Ryan"
+                },
+                {
+                    "user_id": "Anders Wigren",
+                    "user_href": "/profile/Anders-Wigren"
+                },
+                {
+                    "user_id": "Wahid El Chaar",
+                    "user_href": "/profile/Wahid-El-Chaar"
+                },
+                {
+                    "user_id": "Carlos Macedo",
+                    "user_href": "/profile/Carlos-Macedo-8"
+                },
+                {
+                    "user_id": "Williams Kamer",
+                    "user_href": "/profile/Williams-Kamer"
+                },
+                {
+                    "user_id": "Hendri L Tobing",
+                    "user_href": "/profile/Hendri-L-Tobing"
+                },
+                {
+                    "user_id": "Yuchi Matsuoka",
+                    "user_href": "/profile/Yuchi-Matsuoka"
+                },
+                {
+                    "user_id": "Jeff Despain",
+                    "user_href": "/profile/Jeff-Despain"
+                },
+                {
+                    "user_id": "Kenneth Roy Cabrera Torres",
+                    "user_href": "/profile/Kenneth-Roy-Cabrera-Torres"
+                },
+                {
+                    "user_id": "Aziz Budiman",
+                    "user_href": "/profile/Aziz-Budiman"
+                },
+                {
+                    "user_id": "Gerard Blais",
+                    "user_href": "/profile/Gerard-Blais"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shweta Gupta",
+                "href": "/profile/Shweta-Gupta-27"
+            },
+            "answer_text": "Lets say what the Kagglers say on Python or R. Remember this analysis is demonstrative of where technology is headed, and comes from the Data Scientists globally. Kaggle 2017 Survey Results Note that in terms of actual use in a work-environment, Kaggle users using Python and R is very close (13% vs. 10% of respondents). 51% of R users recommended that beginners learn Python first 39% of R users that recommended R 72% of Python users recommended Python 19% of Python users that recommended R first. Programmers who use both R and Python at work recommend Python twice as often as they recommend R as the best language for beginners. Python is the most recommended language for beginners regardless of what language the respondent uses at work. ",
+            "date": "Answered November 28, 2017",
+            "views": "1",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nithin TS",
+                    "user_href": "/profile/Nithin-TS-1"
+                },
+                {
+                    "user_id": "Akhilesh Jain",
+                    "user_href": "/profile/Akhilesh-Jain"
+                },
+                {
+                    "user_id": "Jasleen Kaur",
+                    "user_href": "/profile/Jasleen-Kaur-171"
+                },
+                {
+                    "user_id": "Kapil Nakra",
+                    "user_href": "/profile/Kapil-Nakra"
+                },
+                {
+                    "user_id": "Riten",
+                    "user_href": "/profile/Riten-2"
+                },
+                {
+                    "user_id": "Tapas Mohanty",
+                    "user_href": "/profile/Tapas-Mohanty-2"
+                },
+                {
+                    "user_id": "Abhinav Kr",
+                    "user_href": "/profile/Abhinav-Kr-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric J. Lin",
+                "href": "/profile/Eric-J-Lin-1"
+            },
+            "answer_text": "Just to add one additional point. For doing statistics and econometrics, I would say the answer is No for the near future we can see.   In native Python (no R-magic), it is still very difficult to even run a slightly more complicated regression or generate reader-friendly statistic test report. ",
+            "date": "Answered January 14, 2014",
+            "views": "17",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jalem Raj Rohit",
+                    "user_href": "/profile/Jalem-Raj-Rohit"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sebastian-514"
+                },
+                {
+                    "user_id": "Pawe\u0142 Pi\u0105tkowski",
+                    "user_href": "/profile/Pawe\u0142-Pi\u0105tkowski"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Harshit Sharma",
+                "href": "/profile/Harshit-Sharma"
+            },
+            "answer_text": "I think most of data science will agree with this , here is a related article which was trending on Hacker News : The homogenization of scientific computing, or why Python is steadily eating other languages' lunch ",
+            "date": "Answered November 26, 2013",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Joel Chan",
+                    "user_href": "/profile/Joel-Chan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ishan Dutta",
+                "href": "/profile/Ishan-Dutta"
+            },
+            "answer_text": "Yes it can , infact I would say it is very much on the verge of doing so . Until few years back the race was even but with google launching tensorflow in python tilted the game very much in favour of python. Python seems to be the language for AI for future. ",
+            "date": "Answered December 13, 2017",
+            "views": "154",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jun Zhang",
+                "href": "/profile/Jun-Zhang-68"
+            },
+            "answer_text": "The realation between R and Python like spoons and forks As data scientists , you should learn how to use languages depends on the scene ",
+            "date": "Answered September 11, 2015",
+            "views": "689",
+            "upvotes": "0"
+        }
+    ]
+}

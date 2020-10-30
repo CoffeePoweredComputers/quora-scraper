@@ -1,0 +1,43 @@
+{
+    "title": "How many ways are there to arrange 5-digit numbers (from numbers 0-9), with exactly only 2 of those digits being the same numbers? - Quora",
+    "tags": [
+        "Combination (mathematics)",
+        "Combinatorics",
+        "Permutations and Combinations",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Isaac Sofair",
+                "href": "/profile/Isaac-Sofair"
+            },
+            "answer_text": "I assume that 5-digit numbers starting with 0 on the left don\u2019t count because otherwise they would be either 4-digit or 3-digit numbers depending on whether the number contains one zero or two zeroes on the left. We can classify the possible numbers as follows: (1) No zeroes. In this case, the 5-digit number consists of 4 non-zero different digits 1 - 9 with one of the four digits being duplicated. Number of arrangements is C(9,4)5!/2 = 7560. (2) One zero. In this case, the 5-digit number consists of the one zero and 3 non-zero different digits 1 - 9 with one of the three digits being duplicated. Number of arrangements, taking into account that the one zero can\u2019t be the first digit on the left side, is C(9,3)(5!/2 - 4!/2) = 4032. (3) Two zeroes. In this case, the 5-digit number consists of the two zeroes and 3 non-zero different digits 1 - 9, where a zero can\u2019t be the first digit on the left side. Number of arrangements is C(9,3)(5!/2 - 4!) = 3024. Adding the three results, we get 14616 total arrangements. ",
+            "date": "Answered October 25, 2020",
+            "views": "25",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Reza Nugraha",
+                    "user_href": "/profile/Reza-Nugraha-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mario Skrtic",
+                "href": "/profile/Mario-Skrtic"
+            },
+            "answer_text": "In 5-digit number we have 4 distinct digits and one repeated digit.First we have to find all 4-digit combination of distinct digits.10*9*8*7 Now we can put one extra digit of this 4 digits on different positions to get 5-digit combination.First digit repeated, this extra digit can go on position 2 or 3 or 4 or 5 (4 comb.)Second digit repeated on position 3,4 or 5 (3 comb.)Third digit repeated on position 4,5 (2 comb.)Fourth digit repeated on position 5 (1 comb)Total is 1+2+3+4=10 10*9*8*7*10 This number includes leading 0 and 00 combinations which have to be removed. In case of leading 00:first and second digits are 0, other digits are from 1\u201391*1*9*8*7 In case of leading 0 we have two cases. 0 is repeating on place 3 or 4 or 5 : 1*9*8*7*3 and second case first digit is 0 and remaining 4 digits have 3 distinct and one repeated digit from set 1\u20139. Second digit repeated on position 3,4 or 5 (3 comb.)Third digit repeated on position 4,5 (2 comb.)Fourth digit repeated on position 5 (1 comb)Total is 1+2+3=61*9*8*7*6 10*9*8*7*10 - 1*1*9*8*7 - 1*9*8*7*3 - 1*9*8*7*6=9*8*7*(100\u20131\u20133\u20136)=9*8*7*90=45360 ",
+            "date": "Answered October 24, 2020",
+            "views": "20",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Reza Nugraha",
+                    "user_href": "/profile/Reza-Nugraha-5"
+                }
+            ]
+        }
+    ]
+}

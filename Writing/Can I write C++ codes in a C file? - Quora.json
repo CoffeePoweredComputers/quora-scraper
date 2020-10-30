@@ -1,0 +1,133 @@
+{
+    "title": "Can I write C++ codes in a C file? - Quora",
+    "tags": [
+        "C++ (programming language)",
+        "C (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jerry Coffin",
+                "href": "/profile/Jerry-Coffin-2"
+            },
+            "answer_text": "Of course you can (though it's rarely a good idea, at least in my opinion). If you use syntax that's specific to C++ in a file with a \".c\" extension, you'll usually have to include some special flag to force the compiler to treat that file as C++ instead of C. With VC++ that would be \"/Tp\" to force a single file to be compiled as C++, or \"/TP\" to force all the files given in a call to the compiler to be treated as C++. With gcc, you'd use \"-x c++\" to specify that the following files should be compiled as C++, regardless of extension. You can revert that to the default of guessing based on the extension with \"-x none\". ",
+            "date": "Answered August 27, 2015",
+            "views": "24",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rahul Yedida",
+                    "user_href": "/profile/Rahul-Yedida"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Jatin Dhankhar",
+                    "user_href": "/profile/Jatin-Dhankhar"
+                },
+                {
+                    "user_id": "Rahul Choudhary",
+                    "user_href": "/profile/Rahul-Choudhary-27"
+                },
+                {
+                    "user_id": "Rohan Sinha",
+                    "user_href": "/profile/Rohan-Sinha-2"
+                },
+                {
+                    "user_id": "Joshua Grosso",
+                    "user_href": "/profile/Joshua-Grosso"
+                },
+                {
+                    "user_id": "Pedro Alvarez",
+                    "user_href": "/profile/Pedro-Alvarez-1"
+                },
+                {
+                    "user_id": "Roie Gal",
+                    "user_href": "/profile/Roie-Gal"
+                },
+                {
+                    "user_id": "Haoyue Wang",
+                    "user_href": "/profile/Haoyue-Wang-1"
+                },
+                {
+                    "user_id": "Sergey Zubkov",
+                    "user_href": "/profile/Sergey-Zubkov-1"
+                },
+                {
+                    "user_id": "Michael Gautier",
+                    "user_href": "/profile/Michael-Gautier-1"
+                },
+                {
+                    "user_id": "AbdelHameed Hamed",
+                    "user_href": "/profile/AbdelHameed-Hamed"
+                },
+                {
+                    "user_id": "Lukil Adhim",
+                    "user_href": "/profile/Lukil-Adhim"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Massimo Coletti",
+                "href": "/profile/Massimo-Coletti"
+            },
+            "answer_text": "You can, as long as you don't use C++ specific syntax or directly use classes, objects, templates, etc... Structures can be used. You must also surround functions with the following directives: #ifdef __cplusplusextern \"C\" {#endif /* put the C++ functions here */ #ifdef __cplusplus} #endif For more information, refer to the C++ FAQ:Standard C++ ",
+            "date": "Answered August 24, 2015",
+            "views": "402",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joshua Grosso",
+                    "user_href": "/profile/Joshua-Grosso"
+                },
+                {
+                    "user_id": "Roie Gal",
+                    "user_href": "/profile/Roie-Gal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aniket Kariya",
+                "href": "/profile/Aniket-Kariya"
+            },
+            "answer_text": "Simple answer : no Complex answer : yes You can use C code in C++. So I will suggest you to save the file with .cpp or. c++ extension, so you can easily use both languages functionalities with just changing the file extension\u2026!! ",
+            "date": "Answered November 17, 2017",
+            "views": "106",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Steve Knudsen",
+                "href": "/profile/Steve-Knudsen"
+            },
+            "answer_text": "Not easily. If you want to do the opposite, which is write C code in a cpp file, you include files such as <cstring> by writing #include <cstring> Consult a reference ",
+            "date": "Answered August 24, 2015",
+            "views": "115",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Bhushan Bharat Borade",
+                "href": "/profile/Bhushan-Bharat-Borade"
+            },
+            "answer_text": "the basic concepts of C,C++,are same but the syntax of printing are diffrent that is C:- printf and scanfC++:- cin and coutyou can write C++ code in c only the change the cout to printf and cin to scanf ",
+            "date": "Answered May 6, 2017",
+            "views": "82",
+            "upvotes": " Answer requested by Tamra Tamara"
+        },
+        {
+            "author_info": {
+                "name": "Lanka Naveen (\u0c32\u0c02\u0c15 \u0c28\u0c35\u0c40\u0c28\u0c4d)",
+                "href": "/profile/Lanka-Naveen-\u0c32\u0c02\u0c15-\u0c28\u0c35\u0c40\u0c28\u0c4d"
+            },
+            "answer_text": "Nope, we can't. The c compiler won't execute the c++ code but we can compile c code in c++ .... ",
+            "date": "Answered August 24, 2015",
+            "views": "18",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "title": "How to prove by mathematical induction that 5n \u2013 1 is divisible by 4 for all positive integers [5] - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Integers",
+        "Proofs (mathematics)",
+        "Number Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Darrah Chavey",
+                "href": "/profile/Darrah-Chavey"
+            },
+            "answer_text": "As others have noted, the standard interpretation of your question leads to an incorrect statement. Some authors use the notation you have for \u201c[5]\u201d to represent the set of all multiples of 5 (primarily in older sources). Thus they would write this to mean n\u2208{0,5,10,15,20,\u2026}n\u2208{0,5,10,15,20,\u2026}. But even then the statement is false, e.g. when n = 10, 5n\u22121=495n\u22121=49, which is not divisible by 4. ",
+            "date": "Answered October 25, 2020",
+            "views": "47",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mike Roberts",
+                "href": "/profile/Mike-Roberts-153"
+            },
+            "answer_text": "First, show that it is true for a base case : When n = 1, 5n -1 = 4, which is divisible by 4 Next, show that if it true for n, it is true for n+1. 5(n+1) - 1 = 5n + 5 -1 = [5n-1] + 5. The first term is divisible by 4, the next is not. The proof is invalid. Test - n = 3; 5n - 1 = 14. Not divisible by 4. ",
+            "date": "Answered October 24, 2020",
+            "views": "130",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Darrah Chavey",
+                    "user_href": "/profile/Darrah-Chavey"
+                },
+                {
+                    "user_id": "Mario Bourgoin",
+                    "user_href": "/profile/Mario-Bourgoin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Douglas Magowan",
+                "href": "/profile/Douglas-Magowan-1"
+            },
+            "answer_text": "You can\u2019t prove it because it is not true. e.g. Let n=2,5\u22c52\u22121=9n=2,5\u22c52\u22121=9 which is not divisible by 5. ",
+            "date": "Answered October 24, 2020",
+            "views": "45",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Darrah Chavey",
+                    "user_href": "/profile/Darrah-Chavey"
+                },
+                {
+                    "user_id": "Mario Bourgoin",
+                    "user_href": "/profile/Mario-Bourgoin"
+                }
+            ]
+        }
+    ]
+}

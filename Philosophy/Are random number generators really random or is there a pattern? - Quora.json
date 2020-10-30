@@ -1,0 +1,68 @@
+{
+    "title": "Are random number generators really random or is there a pattern? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Generators",
+        "Randomness (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frederick Reinders",
+                "href": "/profile/Frederick-Reinders"
+            },
+            "answer_text": "It depends on the source of the value they return. True random number generators (RNG) use a source that does not have any discernible pattern. Examples of these are white noise generators, the sound of turbulent flowing water, and other noise sources that either have no pattern or a pattern that is so complex that it defies analysis. Pseudorandom number generators (PRNG), which are the most common computer RNG, use an algorithm to generate numbers in a pattern that is too complex for analysis by ordinary equipment. Creating an algorithm that defies simple analysis is difficult and is an important field of study in cryptography, both for cracking the existing algorithms and designing new ones that are even more difficult to crack. PRNGs are started with a \u201cseed\u201d value supplied when the function is called the first time and they will always generate the same sequence of values for any given seed value. For this reason, unless you need the sequence to repeat, the seed is taken from a rapidly changing value that the program can read. A clock timer that counts in fractions of a second is a good seed source. Other good sources are write only hardware registers that return random values when read (not all do, so test before using this), white noise generators, and any noise created by chaotic turbulence such as a faucet rapidly blasting water. The key is that the seed source should not have a pattern that can be predicted by either a program or expert user. PRNGs are random enough for most purposes when seeded properly. The randomness of white noise or turbulence can be used to make analysis even more unlikely, but that level of random is rarely needed. ",
+            "date": "Answered February 28, 2019",
+            "views": "19",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lorenzo Lodi",
+                    "user_href": "/profile/Lorenzo-Lodi-1"
+                },
+                {
+                    "user_id": "Aayush Verma",
+                    "user_href": "/profile/Aayush-Verma-22"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "John Hirst",
+                    "user_href": "/profile/John-Hirst-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Wood",
+                "href": "/profile/Chris-Wood-98"
+            },
+            "answer_text": "In a perfect world, but we live in an imperfect world, so yes they do. They try very hard to not have a discernible pattern using cryptographic algorithms or factors of pi with a lot of digits, but none of these are perfect. Some however are very, very good. Not the one in Excel \u2018rand\u2019 function. Be warned. ",
+            "date": "Answered July 8, 2019",
+            "views": "528",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Muheeb Hussain",
+                    "user_href": "/profile/Muheeb-Hussain"
+                },
+                {
+                    "user_id": "John Hirst",
+                    "user_href": "/profile/John-Hirst-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Wade Brooks",
+                "href": "/profile/Richard-Wade-Brooks"
+            },
+            "answer_text": "If a random number is coming from a random number generator on a computer it can have a pattern, and will repeat if given the same seed. If a random number is truly random it will have no pattern. ",
+            "date": "Answered July 8, 2019",
+            "views": "301",
+            "upvotes": "0"
+        }
+    ]
+}

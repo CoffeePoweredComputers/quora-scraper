@@ -1,0 +1,193 @@
+{
+    "title": "At what height above the surface of the earth will its acceleration due to gravity decrease by 64%? - Quora",
+    "tags": [
+        "Acceleration (physics)",
+        "Gravity",
+        "Earth (planet)",
+        "Planetary Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rituraj Phukan",
+                "href": "/profile/Rituraj-Phukan-4"
+            },
+            "answer_text": "g decreases to 64% of it\u2019s value at 1,592,750 meters height, or 1,592.75 km height. I made a blueJ program to solve your question. All you have to do is put the percentage of g you want, and it can calculate the height above the surface of the earth. The program was actually beta for some other personal complex calculation I was trying to do, but when I saw your question on quora, I thought I can help you by twisting the program a bit. If you know how to use blueJ, you can use the program I have provided below to easily plug in the percentage of g and get the height. I could have made the program a little more less demanding and faster by removing the unnecessary iteration, but since the problem doesn\u2019t need that much of computing power, I got a bit lazy and left it. It works however. import java.io.*; import java.lang.Math; public class AccelerationDueToGravity { public static void main() throws IOException { int c; for(int i=1;i>=0; i++) { double f, g, p, h=0, k=0; BufferedReader br = new BufferedReader(new InputStreamReader(System Resources and Information.)); System.out.println(\"Please enter the percentage of g\"); p = Double.parseDouble(br.readLine()); g = (6.67408*(Math.pow(10,-11))*5.972*(Math.pow(10,24)))/((6.371*(Math.pow(10,6))+h)*(6.371*(Math.pow(10,6))+h)); System.out.println(\"The acceleration due to gravity on earth's surface is \"+g+\" m/s^2\"); f = (g/100)*p; for(h=0; h>=0; h++) { k = (6.67408*(Math.pow(10,-11))*5.972*(Math.pow(10,24)))/((6.371*(Math.pow(10,6))+h)*(6.371*(Math.pow(10,6))+h)); if (k <= f) break; } System.out.println(\"The height in meters is = \"+h+\" or in kilometers is \"+(h/1000)); System.out.println(\"The value of g at \"+h+\" is = \"+k); System.out.println(\"\\n If you want to do the calculations again, press 1, else press any other number\"); c = Integer.parseInt(br.readLine()); if(c==1) continue; else break; } } } ",
+            "date": "Answered November 11, 2017",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vidya Dighule",
+                    "user_href": "/profile/Vidya-Dighule"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tapash Bhagabati",
+                "href": "/profile/Tapash-Bhagabati-1"
+            },
+            "answer_text": "Let's derive an equation first.  We know that on the surface of the Earth, mg=GMmR2mg=GMmR2 where, mm is mass of an object, MM is the mass of the Earth, RR is the radius of the Earth. \u2234g=GMR2\u2234g=GMR2 At height hh, gh=GM(R+h)2gh=GM(R+h)2 \u2234ghg=R2(R+h)2\u22ef(1)\u2234ghg=R2(R+h)2\u22ef(1)  According to the question, at the height of hh, the value of GG decreases by 6464 which implies that the value of GG is 3636 of the original value at the height hh. ghg=36100ghg=36100 \u2234(1)\u27f9R2(R+h)2\u27f9RR+h\u27f9h=36100=610=2R3\u2234(1)\u27f9R2(R+h)2=36100\u27f9RR+h=610\u27f9h=2R3 We know that the radius of the Earth is around 64006400 km. So, the required height will be 2\u22c5640032\u22c564003 km or 4266.664266.66 km. (Thank you Nick Shales for pointing out my error) ",
+            "date": "Answered November 8, 2017",
+            "views": "25",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ankush Khantwal",
+                    "user_href": "/profile/Ankush-Khantwal"
+                },
+                {
+                    "user_id": "Meena Joshi",
+                    "user_href": "/profile/Meena-Joshi-37"
+                },
+                {
+                    "user_id": "Aanshiki Raj",
+                    "user_href": "/profile/Aanshiki-Raj"
+                },
+                {
+                    "user_id": "Awnon Bhowmik",
+                    "user_href": "/profile/Awnon-Bhowmik"
+                },
+                {
+                    "user_id": "Hritwick Parashar",
+                    "user_href": "/profile/Hritwick-Parashar"
+                },
+                {
+                    "user_id": "Unnikrishnan Menon",
+                    "user_href": "/profile/Unnikrishnan-Menon-5"
+                },
+                {
+                    "user_id": "RafDouglas Tommasi C",
+                    "user_href": "/profile/RafDouglas-Tommasi-C"
+                },
+                {
+                    "user_id": "Nick Shales",
+                    "user_href": "/profile/Nick-Shales"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ram Diwane",
+                "href": "/profile/Ram-Diwane-1"
+            },
+            "answer_text": "Variation of acceleration due to gravity at height greater than or equal to radius of earth is given by formula g(h) = g(R/(R+h))^2 Where g(h) is acceleration due to gravity at height h. R is radius of earth and h is height. Given g(h) = 64% of g. 64% = (64/100) (64/100 )\u00d7g = g\u00d7 ((R/(R+h))^2 Taking square root of both sides (8/10)= ((R/(R+h)) h = (1/4)\u00d7R = (1/4) \u00d7 6400\u00d710^3 h = 1600 KM from surface of earth.(approximately) This answer is for \u201c At what height acceleration due to gravity decrease to 64% of that at on surface of earth. But if acceleration due to gravity decreases by 64%, then remaining is 36%. Then by applying same formula, (36/100 )\u00d7g = g\u00d7 ((R/(R+h))^2 Solving in same way as above, we have h = 21.3 \u00d7 10^3 KM from surface of earth. Hope this will help. ",
+            "date": "Updated November 13, 2017",
+            "views": "22",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fredric Prabu",
+                    "user_href": "/profile/Fredric-Prabu"
+                },
+                {
+                    "user_id": "Alexie John Lood",
+                    "user_href": "/profile/Alexie-John-Lood"
+                },
+                {
+                    "user_id": "Aakash Bhagala",
+                    "user_href": "/profile/Aakash-Bhagala"
+                },
+                {
+                    "user_id": "Kalyankumar Tiwary",
+                    "user_href": "/profile/Kalyankumar-Tiwary"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nrusingha Behera",
+                "href": "/profile/Nrusingha-Behera-1"
+            },
+            "answer_text": "The acceleration due to gravity is governed by the eqn =>g`=GM/(Re+h)\u00b2 at a height h above ground and that at the surface of earth is GM/Re\u00b2.As g`is 64% so it is 36% of that on earth.=>GM/(Re+h)\u00b2=0.36{GM/(Re)\u00b2} =>(Re+h)\u00b2/(Re)\u00b2=1/0.36=100/36 =>(Re+h)/Re=10/6=5/3=>1+(h/Re)=5/3 =>h/Re=5/3\u20131=2/3=>h=(2/3)Re Re is radius of earth. Ans.. ",
+            "date": "Answered October 11, 2017",
+            "views": "709",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Karan Das",
+                    "user_href": "/profile/Karan-Das-25"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Debdatta Banerjee",
+                "href": "/profile/Debdatta-Banerjee-5"
+            },
+            "answer_text": "Just go through it. I hope it helps. Let me know if the answer was correct.  ",
+            "date": "Updated September 10, 2017",
+            "views": "21",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nageswara rao Kodali",
+                    "user_href": "/profile/Nageswara-rao-Kodali"
+                },
+                {
+                    "user_id": "Salil Talwar",
+                    "user_href": "/profile/Salil-Talwar-1"
+                },
+                {
+                    "user_id": "Kalyankumar Tiwary",
+                    "user_href": "/profile/Kalyankumar-Tiwary"
+                },
+                {
+                    "user_id": "Niroja Panda",
+                    "user_href": "/profile/Niroja-Panda-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Simpson",
+                "href": "/profile/David-Simpson-68"
+            },
+            "answer_text": "The acceleration due to gravity is given by g(r)=GMr2g(r)=GMr2 so that the radius at which you find a given gg is given by r=GMg\u2212\u2212\u2212\u221ar=GMg We wish to know the rr for which g=0.64\u00d79.8\u00a0m/s2=6.272\u00a0m/s2g=0.64\u00d79.8\u00a0m/s2=6.272\u00a0m/s2, so r=3.986004418\u00d71014\u00a0m3\u00a0s\u221226.272\u00a0m/s2\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u2212\u221a=7971.974\u00a0kmr=3.986004418\u00d71014\u00a0m3\u00a0s\u221226.272\u00a0m/s2=7971.974\u00a0km Since the Earth\u2019s radius is 6378.140 km, this gives an altitude of 1594 km. ",
+            "date": "Answered November 11, 2017",
+            "views": "785",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gursimran",
+                    "user_href": "/profile/Gursimran-9"
+                },
+                {
+                    "user_id": "Yuriy Usanov",
+                    "user_href": "/profile/Yuriy-Usanov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Punnamaraju Vinayaka Tejas",
+                "href": "/profile/Punnamaraju-Vinayaka-Tejas"
+            },
+            "answer_text": "1/r\u00b2 becomes 36% of its original value (since the rest of the terms are constant). 1/r becomes 6/10 of 1/6400km. Distance from centre is 10666.6666666km. 4266.66666\u2026 km above the surface of the earth. ",
+            "date": "Answered December 21, 2017",
+            "views": "592",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wangmayum Wajid",
+                    "user_href": "/profile/Wangmayum-Wajid"
+                },
+                {
+                    "user_id": "Seshakumar N",
+                    "user_href": "/profile/Seshakumar-N"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Most Likely",
+                "href": "/profile/Most-Likely-1"
+            },
+            "answer_text": " ",
+            "date": "Answered December 12, 2018",
+            "views": "117",
+            "upvotes": "0"
+        }
+    ]
+}

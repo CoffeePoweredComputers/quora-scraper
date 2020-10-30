@@ -1,0 +1,72 @@
+{
+    "title": "Can a paper clip be used as a jumper wire? - Quora",
+    "tags": [
+        "Paper clips",
+        "Electrical Wiring",
+        "Wires"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Farnsworth",
+                "href": "/profile/Richard-Farnsworth"
+            },
+            "answer_text": "Most paper clips are made of mild steel, useful for low voltage, they have a high resistance compared to, say copper. However, they are sturdy, easily available and conductive. I personally used to use paper clips as jumpers when writing and bench testing software device drivers. Certain devices use RS232 for communications, and I would often use the paper clip to bridge pins 2 and 3 on either a females DB25 or a female DB9 when setting up the test in the first place. Certain paper clips fit in nicely. You can\u2019t use this trick on a Modular jack though. Pin 2 is transmit and Pin 3 is receive, so if you short the two together, and you are testing your driver, if you send a command and receive it back, you can be sure: 1/ Your wiring is setup correctly 2/ Your software is talking to the right device and can, indeed issue commands All essential first steps for pretty much any device drivers. You can even go the full \u201cbodge\u201d and make your own full on paper clip null modem, which on a DB25, crosses 2&3, 4&5 and shorts 6&8 and crosses 8&20. This require two females of course. This also requires four paper clips but hang the expense. I rarely needed to do anything other than cross two and three. In another application entirely, I\u2019ve also used them for substitute PCB stakes, they\u2019ll even take solder. ",
+            "date": "Answered March 27, 2020",
+            "views": "453",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vincent Licari",
+                "href": "/profile/Vincent-Licari"
+            },
+            "answer_text": "Ok I have to answer this one because there is a funny story that goes with it. I was on standby at a refrigeration company and I\u2019m not supposed to go to far from my work truck just in case a call came in. Well I went out from Long Island to brooklyn in my car just hoping no calls would come in. I\u2019m sitting at a coffee shop when I got a call. Well wouldn\u2019t you know it the call was further into brooklyn at a supermarket and the whole store basically crashed. If I went back to get my truck and back to the call it would be a couple of hours and I\u2019d be in trouble. I didn\u2019t have much in my car, screwdriver and Pliers that\u2019s it but I decided to just hope for the best and go, maybe it was something obvious. I get to the store and two of seven compressors are not running, I checked the computer and it indicates they should be running. I have no voltmeter so at first I think \u201cnow what\u201d ? So I grab a paper clip and open it to a \u201cU\u201d shape and with my pliers (insulated of course) I jump across sets of terminals, when I got to a time delay I heard a CLICK and compressor comes on so I bypassed the control. What could have been a really bad day for me actually turned out to be a simple fix. This is something like what I was dealing with, generally you can\u2019t do anything without a meter obviously. I didn\u2019t leave it jumped with paper clip, I found a piece of wire and bypassed it until I could get a new control. The second compressor was a blown fuse which was obvious  ",
+            "date": "Answered March 27, 2020",
+            "views": "223",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Richard Farnsworth",
+                    "user_href": "/profile/Richard-Farnsworth"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Virgil Garcia",
+                "href": "/profile/Virgil-Garcia-2"
+            },
+            "answer_text": "Yes with a caveat. Stainless steel is not a great conductor. It probably won't be too troublesome with most applications, but it will add some resistance to the circuit, more than an equivilent legnth of copper at least. It's also exposed, and stiff emough that it would be hard to manipulate into a good shape to bridge from point a to point b That said, I've used a paper clip to jump 2 wires together, for the purpose of doing continuity checks. I would not wish to use it as a permanent way to close a circuit, too exposed. On a bread board it's more than adequate. In the real world it would be a pain in the neck to use ",
+            "date": "Answered March 27, 2020",
+            "views": "158",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Charles Davis",
+                "href": "/profile/Charles-Davis-594"
+            },
+            "answer_text": "I suppose it could, but it would kind of depend on the load. I wouldn\u2019t use a paper clip to jump out a 400 amp load, but for a VERY few amps and in EMERGENCY situation, it would work. However, I wouldn\u2019t recommend it unless you understood what you were doing. So what I am saying is, if you have to ask this question you do not know what you\u2019re doing. ",
+            "date": "Answered March 27, 2020",
+            "views": "129",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "John Robson",
+                    "user_href": "/profile/John-Robson-110"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Allen Jones",
+                "href": "/profile/Allen-Jones-11"
+            },
+            "answer_text": "I'd say yes. ",
+            "date": "Answered March 27, 2020",
+            "views": "75",
+            "upvotes": "0"
+        }
+    ]
+}

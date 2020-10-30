@@ -1,0 +1,251 @@
+{
+    "title": "Can we use du=cvdt for any thermodynamic process? - Quora",
+    "tags": [
+        "Entropy (physics)",
+        "Thermodynamics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rahul Sharma",
+                "href": "/profile/Rahul-Sharma-948"
+            },
+            "answer_text": "From the first law of thermodynamics (for a closed system), we know that dU = dW + dQ For a reversible process, dW = -PdV For a constant volume process dV = 0 and hence, dW=0 (no work is done by the system or on the system) In that case, we define Cv (heat capacity at constant volume) = dQ/dT (at constant volume) Q = U => Cv = dU/dT (at constant volume) This gives dU = CvdT (for a constant volume process) So in general this relation is valid for constant volume process only. But for an ideal gas system, this relation is valid for all process which I am going to explain below, why? From phase rule (F = C - P + 2) for a system of one phase and one component, we get F = 2 This implies that for the state of the system to be fixed we need to specify 2 intensive variables and then all other variables are automatically fixed. Hence, we can fix Cv for a given state by defining two intensive variables. Let those variables be T and P. So, we can write Cv = Cv{T,P} (Cv as a function of T and P) For an ideal gas, there is no interaction between molecules (attraction or repulsion). Internal energy is composed of Kinetic Energy (rotation, translational and vibrational) of molecules which is an affected by the temperature of the system and potential energy (intermolecular forces) which is affected due to the pressure of the system. Since there is no intermolecular interaction between molecules in an ideal gas, internal energy becomes independent of pressure and is dependent on temperature only. Similarly, Cv is a function of T only and not dependent on P for an ideal gas. [ Cv = Cv{T} ] This is why dU = Cv dT is valid for all process for an ideal gas. U is a state function and is dependent on initial and final condition. So, if we know the initial and final temperature of process and Cv as a function of temperature (although for large no of cases it is taken constant) we can get change in internal energy irrespective of path/process taken to reach the final state. ",
+            "date": "Answered November 23, 2019",
+            "views": "32",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akshay Bharadwaj",
+                    "user_href": "/profile/Akshay-Bharadwaj-29"
+                },
+                {
+                    "user_id": "Adam Alfrey",
+                    "user_href": "/profile/Adam-Alfrey"
+                },
+                {
+                    "user_id": "Anish Singh",
+                    "user_href": "/profile/Anish-Singh-104"
+                },
+                {
+                    "user_id": "Meghana Varanasi",
+                    "user_href": "/profile/Meghana-Varanasi-5"
+                },
+                {
+                    "user_id": "Sudarshan U",
+                    "user_href": "/profile/Sudarshan-U-1"
+                },
+                {
+                    "user_id": "Rajesh Rajendran",
+                    "user_href": "/profile/Rajesh-Rajendran-138"
+                },
+                {
+                    "user_id": "Pragalbh Vashishtha",
+                    "user_href": "/profile/Pragalbh-Vashishtha"
+                },
+                {
+                    "user_id": "Shulabh Pachori",
+                    "user_href": "/profile/Shulabh-Pachori"
+                },
+                {
+                    "user_id": "Rajnish Kumar",
+                    "user_href": "/profile/Rajnish-Kumar-2384"
+                },
+                {
+                    "user_id": "Lin Jing",
+                    "user_href": "/profile/Lin-Jing-10"
+                },
+                {
+                    "user_id": "Arnab jan Baishya Arnab jan Baishya",
+                    "user_href": "/profile/Arnab-jan-Baishya-Arnab-jan-Baishya"
+                },
+                {
+                    "user_id": "Carolina T. Duran",
+                    "user_href": "/profile/Carolina-T-Duran"
+                },
+                {
+                    "user_id": "Simone Frosecchi",
+                    "user_href": "/profile/Simone-Frosecchi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Avinash Singh",
+                "href": "/profile/Avinash-Singh-2037"
+            },
+            "answer_text": "Dear first you have to understand the very basic of calculation of internal energy change. There are infinite number of specific heat capacity depending on various process and different change in internal energy for corresponding process hence for real gases you have to use particular sp. Heat capacity accordingly. As isochoric process is very well known process and sp. Heat capacity is defined as Cv. So for real as well ideal gas you can use du=cvdt only for isochoric process. And if your gas is ideal then you can use du=cvdt for any themodynamic process. I hope you understand and answer will help you. ",
+            "date": "Answered November 1, 2018",
+            "views": "36",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Saurabh Yadav",
+                    "user_href": "/profile/Saurabh-Yadav-863"
+                },
+                {
+                    "user_id": "Rajesh Kumar Dolai",
+                    "user_href": "/profile/Rajesh-Kumar-Dolai"
+                },
+                {
+                    "user_id": "Vikram Pareek",
+                    "user_href": "/profile/Vikram-Pareek-13"
+                },
+                {
+                    "user_id": "Himanshu Rautela",
+                    "user_href": "/profile/Himanshu-Rautela-13"
+                },
+                {
+                    "user_id": "Aswin Mohan",
+                    "user_href": "/profile/Aswin-Mohan-40"
+                },
+                {
+                    "user_id": "Hemanth R",
+                    "user_href": "/profile/Hemanth-R-126"
+                },
+                {
+                    "user_id": "Suhani Babu",
+                    "user_href": "/profile/Suhani-Babu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vaibhav Bathri",
+                "href": "/profile/Vaibhav-Bathri"
+            },
+            "answer_text": "First of all, U = f(V,T). dU = CvdT can be written for a constant volume process. But Joule\u2019s experiment suggested that for an ideal gas U =f (T) only, therefore no matter what the process is, we can write dU = Cv dT for an ideal gas. Also, by thermodynamic relations we see that this can be applied to either an ideal gas or an incompressible substance {since volume doesn\u2019t change hence U=f(T) only} for any process. ",
+            "date": "Answered October 23, 2016",
+            "views": "113",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shriyash Shetti",
+                    "user_href": "/profile/Shriyash-Shetti"
+                },
+                {
+                    "user_id": "Abhishek Nanda",
+                    "user_href": "/profile/Abhishek-Nanda-88"
+                },
+                {
+                    "user_id": "Saurabh Yadav",
+                    "user_href": "/profile/Saurabh-Yadav-863"
+                },
+                {
+                    "user_id": "Xander Smeets",
+                    "user_href": "/profile/Xander-Smeets"
+                },
+                {
+                    "user_id": "Ayush Srivastava",
+                    "user_href": "/profile/Ayush-Srivastava-41"
+                },
+                {
+                    "user_id": "Minsu Kim",
+                    "user_href": "/profile/Minsu-Kim-74"
+                },
+                {
+                    "user_id": "Hari Om Yadav",
+                    "user_href": "/profile/Hari-Om-Yadav-6"
+                },
+                {
+                    "user_id": "Harsh Narayan Garg",
+                    "user_href": "/profile/Harsh-Narayan-Garg"
+                },
+                {
+                    "user_id": "Satya Dheeraj",
+                    "user_href": "/profile/Satya-Dheeraj-3"
+                },
+                {
+                    "user_id": "Invincible Fiend",
+                    "user_href": "/profile/Invincible-Fiend"
+                },
+                {
+                    "user_id": "Rajesh Kumar Dolai",
+                    "user_href": "/profile/Rajesh-Kumar-Dolai"
+                },
+                {
+                    "user_id": "Niladri Singh",
+                    "user_href": "/profile/Niladri-Singh-1"
+                },
+                {
+                    "user_id": "Rupesh Behera",
+                    "user_href": "/profile/Rupesh-Behera-4"
+                },
+                {
+                    "user_id": "Aaryan Sharma",
+                    "user_href": "/profile/Aaryan-Sharma-48"
+                },
+                {
+                    "user_id": "Skyler Chen",
+                    "user_href": "/profile/Skyler-Chen-2"
+                },
+                {
+                    "user_id": "Suhani Babu",
+                    "user_href": "/profile/Suhani-Babu"
+                },
+                {
+                    "user_id": "Ankur Sharma",
+                    "user_href": "/profile/Ankur-Sharma-2590"
+                },
+                {
+                    "user_id": "Aritra Bhattacharyya",
+                    "user_href": "/profile/Aritra-Bhattacharyya-5"
+                },
+                {
+                    "user_id": "Pradyumna Nunna",
+                    "user_href": "/profile/Pradyumna-Nunna"
+                },
+                {
+                    "user_id": "Sami Abdul",
+                    "user_href": "/profile/Sami-Abdul"
+                },
+                {
+                    "user_id": "Pushkal Singh",
+                    "user_href": "/profile/Pushkal-Singh"
+                },
+                {
+                    "user_id": "Kamalini Bindhani",
+                    "user_href": "/profile/Kamalini-Bindhani"
+                },
+                {
+                    "user_id": "Amritesh Srinivasa",
+                    "user_href": "/profile/Amritesh-Srinivasa"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prashant Malokar",
+                "href": "/profile/Prashant-Malokar"
+            },
+            "answer_text": "No. In general du=cvdt. But not necessarily it is used in every process. According to first law of thermodynamics , Q=dU + W where, Q is heat supplied to the system, W is work done by the system, dU is change in internal energy of the system Now Q=cpdt W=Rdt=Pdv and cp-cv=R Therefore du found out to be \u2018cvdt\u2019. But in Isobaric process dv=0 therefore W=0Hence Q=dU Which means dU=cpdt 2. In adiabatic process Q=0 Hence dU=W Therefore dU=Rdt or Pdv ",
+            "date": "Answered June 18, 2019",
+            "views": "16",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arindam Samanta",
+                    "user_href": "/profile/Arindam-Samanta-62"
+                },
+                {
+                    "user_id": "Debarshi Majumder",
+                    "user_href": "/profile/Debarshi-Majumder-5"
+                },
+                {
+                    "user_id": "Dong-Hyeon Lee",
+                    "user_href": "/profile/Dong-Hyeon-Lee-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nagarajan Margasahayam",
+                "href": "/profile/Nagarajan-Margasahayam"
+            },
+            "answer_text": "By definition U is a monotonic function of T. However, U has multiple degrees of freedom. For instance, T remains a constant while mass transfer takes place e.g. phase change due to addition of thermal energy. Incidentally, dU = Cv.dT is valid for heat addition to an ideal gas (Cv = const.). ",
+            "date": "Answered October 17, 2018",
+            "views": "911",
+            "upvotes": "0"
+        }
+    ]
+}

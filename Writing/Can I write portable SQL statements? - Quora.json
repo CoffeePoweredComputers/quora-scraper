@@ -1,0 +1,39 @@
+{
+    "title": "Can I write portable SQL statements? - Quora",
+    "tags": [
+        "PL/SQL",
+        "MS SQL Server (product)",
+        "MySQL",
+        "SQL",
+        "Database Systems",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Hopkins",
+                "href": "/profile/John-Hopkins-91"
+            },
+            "answer_text": "In general, yes. If you pay close attention to ANSI-standard SQL you\u2019ll create mostly-portable SQL. \u201cMostly\u201d is the key here. The standard is much more about \u201cwhat\u201d than \u201chow\u201d. Each vendor will have non-standard extensions that frequently add significant utility. Each vendor will also implement standards differently. For instance, I\u2019ve recently ported SQL from MS SQL Server to Redshift, then to Snowflake. The latter two are both based on Postgres based on their own documentation. All the implement the CTE concept differently. Redshift doesn\u2019t support recursive CTEs. Snowflake and SQL Server sequence things a bit differently when using a CTE to drive an INSERT or UPDATE. SQL Server and Oracle implement ROLLUP quite differently (one of the few places I recall really liking Oracle\u2019s approach). So maybe I should have said \u201cyes, but probably not\u201d. It really depends on whether you\u2019re writing basic, simple stuff or using more advanced, perhaps recent. features. ",
+            "date": "Answered January 14, 2020",
+            "views": "55",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Parth Thakore",
+                    "user_href": "/profile/Parth-Thakore-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "Yes, the SQL language has a standard dialect. Most RDBMS vendors support at least the SQL-92 standard by now. SQL-92 makes sure the CREATE TABLE\u2026 and basic SELECT statements are consistent. You can use these SQL online sites, sqlfiddle.com or DB Fiddle to test SQL statements in several RDBMS vendors. Just set the database to each RDBMS vendors to prove the SQL is still good. SQL Fiddle | A tool for easy online testing and sharing of database problems and their solutions.DB Fiddle - SQL Database Playground",
+            "date": "Answered January 14, 2020",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

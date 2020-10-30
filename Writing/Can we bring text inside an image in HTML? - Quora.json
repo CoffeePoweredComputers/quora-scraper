@@ -1,0 +1,68 @@
+{
+    "title": "Can we bring text inside an image in HTML? - Quora",
+    "tags": [
+        "HTML5",
+        "HTML",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Naren Miyan",
+                "href": "/profile/Naren-Miyan"
+            },
+            "answer_text": "Yes you can. First create a container and nest image and paragraph inside it . And then CSS would img{ position : relative; } p{ position:absolute; left:50%; transform:translate(-50%,-50%); } Text is center aligned vertically and horizontally both. You can also set the background image for div and make it relative positioning. ",
+            "date": "Answered April 28, 2018",
+            "views": "390",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Karthikkumar N (gotocartik)",
+                "href": "/profile/Karthikkumar-N-gotocartik"
+            },
+            "answer_text": "How TO - Position Text Over an Image  Learn how to place text over an image.  Image Text   How To Place Text in Image Step 1) Add HTML: Example <div class=\"container\">\u00a0  <img src=\"img_fjords_wide.jpg\"alt=\"Norway\" style=\"width:100%;\">\u00a0  <div class=\"bottom-left\">Bottom Left</div>\u00a0  <div class=\"top-left\">Top Left</div>\u00a0  <div class=\"top-right\">Top Right</div>\u00a0  <div class=\"bottom-right\">Bottom Right</div>\u00a0  <divclass=\"centered\">Centered</div>\u00a0</div>\u00a0 Step 2) Add CSS: <!DOCTYPE html> <html> <head> <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> <style> .container { position: relative; text-align: center; color: white; } .bottom-left { position: absolute; bottom: 8px; left: 16px; } .top-left { position: absolute; top: 8px; left: 16px; } .top-right { position: absolute; top: 8px; right: 16px; } .bottom-right { position: absolute; bottom: 8px; } </head> <body> <h2>Image Text</h2> <p>How to place text over an image:</p> <div class=\"container\"> <img src=\"img_fjords_wide.jpg\" alt=\"Norway\" style=\"width:100%;\"> <div class=\"bottom-left\">Bottom Left</div> <div class=\"top-left\">Top Left</div> <div class=\"top-right\">Top Right</div> <div class=\"bottom-right\">Bottom Right</div> <div class=\"centered\">Centered</div> </div> </body> </html> ",
+            "date": "Answered April 12, 2018",
+            "views": "1",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Pooja",
+                    "user_href": "/profile/Pooja-1071"
+                },
+                {
+                    "user_id": "Arjun",
+                    "user_href": "/profile/Arjun-542"
+                },
+                {
+                    "user_id": "David Jones",
+                    "user_href": "/profile/David-Jones-1434"
+                },
+                {
+                    "user_id": "Ranjan Ghate",
+                    "user_href": "/profile/Ranjan-Ghate-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin D'Souza",
+                "href": "/profile/Kevin-DSouza-40"
+            },
+            "answer_text": "Yes it is possible! Step1: Create a \u2018parent\u2019 div with any position: (relative, fixed, absolute) Step2: Create an image in that div and give it a width of 100% and change its display to \u2018block\u2019 Step3: Now create a div; with your text; with position: absolute; top:0; left: 0; width: 100%; height: 100%; z-index: 1; inside the \u2018parent\u2019 div Done! Note: Your text should be lesser than the image size or else your text \u2018overflows\u2019 outside the parent container. Parent div width and image width should be the same ",
+            "date": "Answered April 11, 2018",
+            "views": "366",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Naresh",
+                "href": "/profile/Naresh-398"
+            },
+            "answer_text": "Yes, you can by either two way as Setting text over image - wrap the image and text inside div and set its position property relative. Then change the position property of text tag -> set position property absoluteRender the text on image using canvasThe first one is easy way to do this. ",
+            "date": "Answered April 13, 2018",
+            "views": "275",
+            "upvotes": "0"
+        }
+    ]
+}

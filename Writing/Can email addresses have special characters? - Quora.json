@@ -1,0 +1,25 @@
+{
+    "title": "Can email addresses have special characters? - Quora",
+    "tags": [
+        "Special Characters",
+        "Email Addresses"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Perry Toone",
+                "href": "/profile/Perry-Toone"
+            },
+            "answer_text": "Email addresses can but there are rules to keep in mind. In general, the local part can have these ASCII characters: lowercase Latin letters: abcdefghijklmnopqrstuvwxyz,uppercase Latin letters: ABCDEFGHIJKLMNOPQRSTUVWXYZ,digits: 0123456789,special characters: !#$%&'*+-/=?^_`{|}~,dot: . (not first or last character or repeated unless quoted),space punctuations such as: \"(),:;<>@[\\] (with some restrictions),comments: () (are allowed within parentheses, e.g. (comment)john.smith@example.com).Domain part: lowercase Latin letters: abcdefghijklmnopqrstuvwxyz,uppercase Latin letters: ABCDEFGHIJKLMNOPQRSTUVWXYZ,digits: 0123456789,hyphen: - (not first or last character),can contain IP address surrounded by square brackets: jsmith@[192.168.2.1] or jsmith@[IPv6:2001:db8::1].These e-mail addresses are valid: prettyandsimple@example.comvery.common@example.comdisposable.style.email.with+symbol@example.comother.email-with-dash@example.comx@example.com (one-letter local part)\"much.more unusual\"@example.com\"very.unusual.@.unusual.com\"@example.com\"very.(),:;<>[]\\\".VERY.\\\"very@\\ \\\"very\\\".unusual\"@strange.example.comexample-indeed@strange-example.comadmin@mailserver1 (local domain name with no top-level domain)#!$%&'*+-/=?^_`{}|~@example.org\"()<>[]:,;@\\\\\"!#$%&'-/=?^_`{}| ~.a\"@example.org\" \"@example.org (space between the quotes)example@localhost (sent from localhost)example@s.solutions (see the List of Internet top-level domains)user@comuser@localserveruser@[IPv6:2001:db8::1]And these examples of invalid: Abc.example.com (no @ character)A@b@c@example.com (only one @ is allowed outside quotation marks)a\"b(c)d,e:f;gi[j\\k]l@example.com (none of the special characters in this local part are allowed outside quotation marks)just\"not\"right@example.com (quoted strings must be dot separated or the only element making up the local part)this is\"not\\allowed@example.com (spaces, quotes, and backslashes may only exist when within quoted strings and preceded by a backslash)this\\ still\\\"not\\allowed@example.com (even if escaped (preceded by a backslash), spaces, quotes, and backslashes must still be contained by quotes)john..doe@example.com (double dot before @); (with caveat: Gmail lets this through)john.doe@example..com (double dot after @)a valid address with a leading spacea valid address with a trailing spaceSource: Email address at Wikipedia ",
+            "date": "Answered August 19, 2019",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Poorv Patel",
+                    "user_href": "/profile/Poorv-Patel"
+                }
+            ]
+        }
+    ]
+}

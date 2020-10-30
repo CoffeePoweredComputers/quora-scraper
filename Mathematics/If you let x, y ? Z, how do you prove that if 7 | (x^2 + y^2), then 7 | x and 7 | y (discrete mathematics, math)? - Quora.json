@@ -1,0 +1,45 @@
+{
+    "title": "If you let x, y ? Z, how do you prove that if 7 | (x^2 + y^2), then 7 | x and 7 | y (discrete mathematics, math)? - Quora",
+    "tags": [
+        "Algebra (high school mathematics)",
+        "Discrete Mathematics",
+        "Differential Equations",
+        "Proofs (mathematics)",
+        "Equations",
+        "Functions (mathematics)",
+        "Calculus",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mokh Bel",
+                "href": "/profile/Mokh-Bel"
+            },
+            "answer_text": "The euclidian division of xx and yy by 77 gives: x=7k+l;y=7k\u2032+l\u2032withl,l\u2032\u22080,1,2,3,4,5,6x=7k+l;y=7k\u2032+l\u2032withl,l\u2032\u22080,1,2,3,4,5,6 x2+y2=(7k+l)2+(7k\u2032+l\u2032)2=7(7k2+7k\u20322+2k+2k\u2032)+l2+l\u20322x2+y2=(7k+l)2+(7k\u2032+l\u2032)2=7(7k2+7k\u20322+2k+2k\u2032)+l2+l\u20322 \u27fax2+y2\u22127(7k2+7k\u20322+2k+2k\u2032)=l2+l\u20322\u27fax2+y2\u22127(7k2+7k\u20322+2k+2k\u2032)=l2+l\u20322 7|(x2+y2)7|(x2+y2) and 7|7(7k2+7k\u20322+2k+2k\u2032)7|7(7k2+7k\u20322+2k+2k\u2032) So 7|(x2+y2\u22127(7k2+7k\u20322+2k+2k\u2032))7|(x2+y2\u22127(7k2+7k\u20322+2k+2k\u2032)) i.e 7|(l2+l\u20322)7|(l2+l\u20322) So l=l\u2032=0l=l\u2032=0 so x=7kx=7k and y=7k\u2032y=7k\u2032 so 7|x7|x and 7|y7|y ",
+            "date": "Answered October 24, 2020",
+            "views": "36",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dave Neary",
+                "href": "/profile/Dave-Neary-1"
+            },
+            "answer_text": "Looking at the squares of Z/7ZZ/7Z (mod7)(mod7) we can see that: 02=0,12=1,22=4,32=2,42=2,52=4,62=102=0,12=1,22=4,32=2,42=2,52=4,62=1 So the quadratic residues of 7 are 0, 1, 2, 4. Since the only way to add two of these numbers to get 0 is 0+0, this proves that if x2+y2\u22610(mod7)x2+y2\u22610(mod7) then x\u22610(mod7)x\u22610(mod7) and y\u22610(mod7)y\u22610(mod7) ",
+            "date": "Updated October 26, 2020",
+            "views": "33",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Douglas Keyes",
+                "href": "/profile/Andrew-Douglas-Keyes"
+            },
+            "answer_text": "The squares mod 7 are 0, 1, 4, 2 and no two add to 0 mod 7 except 0+0 and that does it. ",
+            "date": "Answered October 24, 2020",
+            "views": "22",
+            "upvotes": "0"
+        }
+    ]
+}

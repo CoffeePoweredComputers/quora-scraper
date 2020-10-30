@@ -1,0 +1,43 @@
+{
+    "title": "Can I use HAProxy for Apache web server and does Apache have its own load balancer software? Which is better for an Apache web server? - Quora",
+    "tags": [
+        "Apache HTTP Server",
+        "Apache Software Foundation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Clinton Goveas",
+                "href": "/profile/Clinton-Goveas"
+            },
+            "answer_text": "Yes, Apache has its own load balancer available as the mod_proxy_balancer module. However, I would not recommend using Apache with load balancing. An analogy I\u2019d like to use is why use a battleship to go fishing? Why use a resource-intensive web server to do a simple task such as load balancing? This is even more relevant on a pay-as-you-use cloud setup. HAProxy is my favorite load balancer. It is easy to configure, light on resources, quick on response, and does its job reliably. If you have just one Apache server you do not need a load balancer in front of it. For two or more Apache web servers, you can use a HAProxy in layer 4 mode or layer 7 mode depending on how your web app is setup on the web servers. ",
+            "date": "Answered October 15, 2018",
+            "views": "910",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Paul Fischer",
+                "href": "/profile/Paul-Fischer-25"
+            },
+            "answer_text": "One of my favourite topics! Thanks for A2A. I use a combination of haproxy, Apache2 and heartbeat on two debian servers. Heartbeat establishes a floating ip between my two loadbalancers. Then I run haproxy on that floating ip. Haproxy is configured with my ssl certificates and some hardening, to listen on port 443 on the floating ip. Any request on port 443 is forwarded to the Apache2 service. I then configure a site on Apache2 that reverse proxies all of my websites onto the single, loadbalancer ip, as locations, ie: Url/service Url/service2 Url/service3 All the sites are ssl secured with the same cert, all my sites can be load balanced and as a bonus, I can also proxy TCP connections on my floating ip. So smtp, ftp, rest Api's, you name it. This is my solution for all of my front-end and public facing services. ",
+            "date": "Answered March 17, 2018",
+            "views": "15",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Tom Harrison",
+                    "user_href": "/profile/Tom-Harrison-4"
+                },
+                {
+                    "user_id": "Nicolas Guerinet",
+                    "user_href": "/profile/Nicolas-Guerinet"
+                },
+                {
+                    "user_id": "Kamyar Lajani",
+                    "user_href": "/profile/Kamyar-Lajani"
+                }
+            ]
+        }
+    ]
+}

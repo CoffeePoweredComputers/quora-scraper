@@ -1,0 +1,300 @@
+{
+    "title": "What is a permutation? - Quora",
+    "tags": [
+        "Discrete Mathematics",
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harry Kanigel",
+                "href": "/profile/Harry-Kanigel"
+            },
+            "answer_text": "A permutation is one of all possible ordered arrangements of elements. The set of elements may conform to certain rules to aid our discussion. For example, let\u2019s examine the permutations of three-digit numbers derived from the set of ten numerals 0\u20139. We know instantly from our knowledge of the base 10 system that there are a thousand distinct values that can be represented. If we didn\u2019t know this we could compute it: there are ten possibilities for the first position, ten possibilities for the second position and ten possibilities for the third position so, therefore, 10 cubed distinct arrangements or permutations. By contrast, there are many fewer \u201ccombinations\u201d where the order of the numerals does not matter. If we were interested in combinations instead of permutations, the set of numerals 9 0 0 is the equivalent of 0 0 9 and 0 9 0. There are three permutations but only one combination. Notice that the combination 1 2 3 has six possible arrangements \u2014 that is, six permutations. To compute the number of combinations we must negate the effect of redundant permutations. When we examine our sets of three numerals, we notice they come in three flavors: (1) all numerals are different, e.g. 1 2 3 (2) two numerals are the same (one is different), e.g. 0 0 9 (3) all are the same. e.g. 3 3 3. Each of these flavors get its own treatment to negate redundant permutations. Flavor 1 has 10 * 9 * 8 = 720 permutations. Flavor 2 has 10 * 9 * 3 = 270 permutations. This derives from the fact that there are three different possible positions for the unpaired numeral. Flavor 3 has 10 permutations which just corresponds to the number of distinct numerals. The three flavors added together gives us 720 + 270 + 10 = 1000. Just what we expected. Now to winnow out the dups: Flavor 1: 720 / (3!) = 120 combinations. We are dividing by \u201c3 factorial\u201d which is 3 * 2 = 6. In this way we \u201cback out\u201d the redundancy because three items can be ordered in six different ways. Flavor 2: 270 / 3 = 90. We are just backing out the last step in the original calculation. So, there are 90 combinations where there is one paired numeral and one unpaired. In any such combination, we don\u2019t care where the unpaired numeral resides. Flavor 3: 10 is just 10. The number of permutations is equal to the number of combinations. So, we have 120 + 90 + 10 + 220 combinations comprising 1000 permutations. There are ways to generalize this more elegantly but I thought this approach makes clear the distinction between combinations and permutations, which I inferred was the motivation of the questioner. ",
+            "date": "Answered August 22, 2017",
+            "views": "459",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Abhi Singh",
+                "href": "/profile/Abhi-Singh-79"
+            },
+            "answer_text": "A permutation is a single way of arranging a group of objects. It is useful in mathematics. A permutation can be changed into another permutation by simply switching two or more of the objects. For example, the way four people can sit in a car is a permutation. If some of them chose different seats, it would be a different permutation. In mathematics, the notion of permutation relates to the act of arranging all the members of a set into some sequence or if the set is already ordered, rearranging (reordering) its elements, a process called permuting. These differ from combinations, which are selections of some members of a set where order is disregarded. For example, written as tuples, there are six permutations of the set {1,2,3}, namely: (1,2,3), (1,3,2), (2,1,3), (2,3,1), (3,1,2), and (3,2,1). These are all the possible orderings of this three element set. As another example, an anagram of a word, all of whose letters are different, is a permutation of its letters. In this example, the letters are already ordered in the original word and the anagram is a reordering of the letters. The study of permutations of finite sets is a topic in the field of combinotrics. Permutations occur, in more or less prominent ways, in almost every area of mathematics. They often arise when different orderings on certain finite sets are considered, possibly only because one wants to ignore such orderings and needs to know how many configurations are thus identified. For similar reasons permutations arise in the study of sorting alhorithms in computer science. The number of permutations of n distinct objects is n factorial, usually written as n!, which means the product of all positive integers less than or equal to n. For in depth study refer the link : Permutation - Wikipedia ",
+            "date": "Answered August 22, 2017",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shivam Jha",
+                    "user_href": "/profile/Shivam-Jha-182"
+                },
+                {
+                    "user_id": "Anamika S",
+                    "user_href": "/profile/Anamika-S-8"
+                },
+                {
+                    "user_id": "Vinod Mehta",
+                    "user_href": "/profile/Vinod-Mehta-45"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bhushan Bharat Borade",
+                "href": "/profile/Bhushan-Bharat-Borade"
+            },
+            "answer_text": "Permutations: The hairy details Let\u2019s start with permutations, or all possible ways of doing something. We\u2019re using the fancy-pants term \u201cpermutation\u201d, so we\u2019re going to care about every last detail, including the order of each item. Let\u2019s say we have 8 people: 1: Alice\u00a02: Bob\u00a03: Charlie\u00a04: David\u00a05: Eve\u00a06: Frank\u00a07: George\u00a08: Horatio\u00a0How many ways can we award a 1st, 2nd and 3rd place prize among eight contestants? (Gold / Silver / Bronze)  We\u2019re going to use permutations since the order we hand out these medals matters. Here\u2019s how it breaks down: Gold medal: 8 choices: A B C D E F G H (Clever how I made the names match up with letters, eh?). Let\u2019s say A wins the Gold.Silver medal: 7 choices: B C D E F G H. Let\u2019s say B wins the silver.Bronze medal: 6 choices: C D E F G H. Let\u2019s say\u2026 C wins the bronze.We picked certain people to win, but the details don\u2019t matter: we had 8 choices at first, then 7, then 6. The total number of options was 8 \u00b7 7 \u00b7 6 = 336. Let\u2019s look at the details. We had to order 3 people out of 8. To do this, we started with all options (8) then took them away one at a time (7, then 6) until we ran out of medals. We know the factorial is:  Unfortunately, that does too much! We only want 8 \u00b7 7 \u00b7 6. How can we \u201cstop\u201d the factorial at 5? This is where permutations get cool: notice how we want to get rid of 5 \u00b7 4 \u00b7 3 \u00b7 2 \u00b7 1. What\u2019s another name for this? 5 factorial! So, if we do 8!/5! we get:  And why did we use the number 5? Because it was left over after we picked 3 medals from 8. So, a better way to write this would be:  where 8!/(8-3)! is just a fancy way of saying \u201cUse the first 3 numbers of 8!\u201d. If we have n items total and want to pick k in a certain order, we get:  And this is the fancy permutation formula: You have n items and want to find the number of ways k items can be ordered: ",
+            "date": "Updated October 8, 2018",
+            "views": "538",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Robert R",
+                    "user_href": "/profile/Robert-R-128"
+                },
+                {
+                    "user_id": "Deepak Verma",
+                    "user_href": "/profile/Deepak-Verma-136"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sourabh Soni",
+                "href": "/profile/Sourabh-Soni-24"
+            },
+            "answer_text": "Permutation means all possible arrangements of Number, letter or any other product or things etc. Before understanding the meaning of Permutation let us first understand why do we need to understand it? Is it have any practical implication in our life? Of course yes!! Let me explain. Our beloved joker is getting bored hence he is going to plan bank robbery  He is planning to enter near the bank main safe at Sunday night 9PM when Bank is closed. Mind it Bank will open and all the bank employees will come at 9 am Monday morning. That is pretty much time for our joker? Isn\u2019t it? Complete 12 hours to crack the code of main safe.  Oh But what happened here? Why our joker is crying? It is just 9 digit code which he need to crack and he has 12 hours to do that. What is stopping him to finish his job? Mathematics!! Can Mathematics stop him to do his job? Yes!!  I think he has not studied permutation in his math classes. 1 2 3 4 5 6 7 8 9 these 9 digits can have following arrangements 9! = 1\u00d72\u00d73\u00d74\u00d75\u00d76\u00d77\u00d78\u00d79 = 362880 (We will explain the formula in detail in next lecture). SO basically our Joker may has to try up to 362880 different arrangement for cracking the bank safe!!!  If he spent just one second for trying one arrangement let\u2019s say 234567918 it means he has to spend 362880 seconds for trying all the arrangements. Which means 6048 Minutes! Which means 100.8 hours Which means 4.2 days nonstop working!! If we include little Nap, Food and bathroom activity it\u2019s approximately 5 days of work!!  LearnX - Android Apps on Google Play Regards Sourabh Global co founder of learnX LearnX is the social learning app that connects people to learn together! Meet Knowers, people that know things, or Learners, people that learn things. Connect with them locally or online to learn school subjects, languages, computer skills and more! ",
+            "date": "Answered December 10, 2017",
+            "views": "782",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Parth Pruthi",
+                    "user_href": "/profile/Parth-Pruthi-1"
+                },
+                {
+                    "user_id": "A. I. Marshel",
+                    "user_href": "/profile/A-I-Marshel-2"
+                },
+                {
+                    "user_id": "Rahul Singh",
+                    "user_href": "/profile/Rahul-Singh-1878"
+                },
+                {
+                    "user_id": "Ronak Boobana",
+                    "user_href": "/profile/Ronak-Boobana"
+                },
+                {
+                    "user_id": "Bindu",
+                    "user_href": "/profile/Bindu-103"
+                },
+                {
+                    "user_id": "Gautam Rally",
+                    "user_href": "/profile/Gautam-Rally"
+                },
+                {
+                    "user_id": "Sam Sameer",
+                    "user_href": "/profile/Sam-Sameer-12"
+                },
+                {
+                    "user_id": "Sean Davidson",
+                    "user_href": "/profile/Sean-Davidson-83"
+                },
+                {
+                    "user_id": "Karthik B",
+                    "user_href": "/profile/Karthik-B-31"
+                },
+                {
+                    "user_id": "Umang Ravani",
+                    "user_href": "/profile/Umang-Ravani"
+                },
+                {
+                    "user_id": "Rahul Rai",
+                    "user_href": "/profile/Rahul-Rai-34"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henk Verhelle",
+                "href": "/profile/Henk-Verhelle"
+            },
+            "answer_text": "The probability of rolling 2 sixes in 12 throws is C(12, 2) p\u00b2 (1 - p)^10 (binomial distribution) C(12,2)=12!/(10!2!) = 66 = 66 p\u00b2 (1 - p)^10 = 0.183 => p\u00b2(1-p)^10 = 0.183 / 66 => p(1-p)^5 = sqrt(0.183/66) This is a sextic equation in p. We must solve it numerically. Wolfram equation solver gives : p(1-p)^5=+sqrt(0.183/66) - Wolfram|Alpha 2 real solutions p = 0.0798 or p = 0.288 ",
+            "date": "Answered October 24, 2020",
+            "views": "27",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ron Schwartz",
+                    "user_href": "/profile/Ron-Schwartz-23"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chase Connolly",
+                "href": "/profile/Chase-Connolly"
+            },
+            "answer_text": "Permutations is a statistical term that deals with things that depend on order, basically. Imagine you\u2019re ordering ice cream. You want 2 scoops of ice cream and the store sells vanilla, chocolate, and strawberry (nobody eats strawberry ice cream so this isn\u2019t all too realistic I suppose). But the sample space of a permutation of this example would include any and all possible orders of 2 scoops. The difference between a permutation and a combination is that in a permutation, vanilla-chocolate is different than chocolate-vanilla, so both of them count as options. In a combination, chocolate-vanilla and vanilla-chocolate are the same thing, because the content is the same. feel free to ask any questions in the comments  ",
+            "date": "Answered December 31, 2017",
+            "views": "513",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jeff Muscato",
+                    "user_href": "/profile/Jeff-Muscato"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike Kayser",
+                "href": "/profile/Mike-Kayser"
+            },
+            "answer_text": "Informally: A reordering. If I have three objects arranged in a line on the table, there are 3!=6 ways to order them in that line. (Three ways to pick which one is on the left, times 2 ways to pick which one is in the middle, times exactly one way to pick the one on the right). Formally: a bijection from a set to itself.  A bijection in general is just a map from XX to YY where: (1) every element of YY got mapped to by some element of XX (surjective), and (2) each element of YY doesn't get mapped to by more than one element of XX (injective).That's the same as saying that every element of YY got mapped to by one and only one element of XX.In a bijection ff from XX to XX, you can think of f(x)f(x) as meaning roughly \"where do I put xx?\" and as f(x)=yf(x)=y as meaning \"I put xx in yy's old position.\"The bijective property we mentioned above is equivalent to ensuring that every \"old position\" is the \"new home\" for exactly one object in the set.",
+            "date": "Answered March 6, 2014",
+            "views": "942",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Nancy Mitchell",
+                    "user_href": "/profile/Nancy-Mitchell-29"
+                },
+                {
+                    "user_id": "Marco Vona",
+                    "user_href": "/profile/Marco-Vona"
+                },
+                {
+                    "user_id": "Rashidali",
+                    "user_href": "/profile/Rashidali-1"
+                },
+                {
+                    "user_id": "Dennis O'Keeffe",
+                    "user_href": "/profile/Dennis-OKeeffe-1"
+                },
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                },
+                {
+                    "user_id": "Joachim Pense",
+                    "user_href": "/profile/Joachim-Pense"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alf Salte",
+                "href": "/profile/Alf-Salte"
+            },
+            "answer_text": "Permutations are scrambling of data in a way. Say you have an ordered list of the number 1,2,3,4,5 then a permutation may be 1,3,5,2,4  the sequence 1,3,6,2 would not be a permutation because 6 is not in the original sequence and 4 and 5 are missing. It is often interesting to count how many permutations there can be as that is necessary when you for example want to compute how likely this particular permutation is. The formula is simple: If you have n different elements arranged in a sequence of all n elements, the number of permutations is n factorial or n!n!. This is because the first slot can have any of the n numbers, the next slot can have any of the n\u22121n\u22121 remaining numbers and so on so the total number of permutations is n factorial. I just mentioned permutations in a previous answer where I said that if you picked another solution you would just get a permutation of the solutions. This just means that the solutions you get are fixed values, such as U, V, W and Z and if you were to use another value you might get them as W V, Z, U instead. The same values just in a different order. ",
+            "date": "Answered May 10, 2016",
+            "views": "689",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Polunsky",
+                "href": "/profile/Richard-Polunsky-1"
+            },
+            "answer_text": "Permutation relates to the order of things in a set. Say you have three letters, A, B and C, all together. Then you have one COMBINATION: { A, B, C } The order that you list them in is irrelevant, it\u2019s always one A, one B and one C in the combination. If the order of the items is meaningful, then you have PERMUTATIONs. { A, B, C } is considered different from { A, C, B }, { B, A, C }, { B, C, A }, { C, A, B }, and { C, B, A } In this case, one combination, six permutations. ",
+            "date": "Answered February 7, 2018",
+            "views": "154",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steve Brown",
+                    "user_href": "/profile/Steve-Brown-145"
+                },
+                {
+                    "user_id": "Stalin Armijos",
+                    "user_href": "/profile/Stalin-Armijos"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Richard McElravy",
+                "href": "/profile/Paul-Richard-McElravy"
+            },
+            "answer_text": "permutation [\u02ccp\u0259rmyo\u035do\u02c8t\u0101SH(\u0259)n] NOUN a way, especially one of several possible variations, in which a set or number of things can be ordered or arranged. Suppose you pull three cards out of a deck of cards, and they are Ace, two, three. You can arrange these A,2,3, or A,3,2 or 2,A,3, or 2,3,A, or 3,A,2 or 3,2,A. Six different permutations of the same combination of cards. I hope this helps. ",
+            "date": "Answered September 12, 2019",
+            "views": "59",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Oying Doso",
+                    "user_href": "/profile/Oying-Doso-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rishi Raj",
+                "href": "/profile/Rishi-Raj-417"
+            },
+            "answer_text": "A permutation is a way of arranging or placing items. In other words, a permutation is a particular sequence. This arrangement can be an open curve (usually a straight line considered) or a closed loop (usually a circle). While changing permutations, we dont add or remove items. We rather rearrange those very elements. Examples of permutation cases: a. People sitting on a straight bench b. Children sitting in a circular merry-go-round ",
+            "date": "Answered August 25, 2017",
+            "views": "139",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alexandre Decuq",
+                "href": "/profile/Alexandre-Decuq"
+            },
+            "answer_text": "ex : \u201cabc\u201d \u2013> { \u201cabc\u201d, \u201cacb\u201d, \u201cbac\u201d, \u201cbca\u201d, \u201ccba\u201d, \u201ccab\u201d }  I wrote code to generate all permutations: Subsets vs Permutations [Survival Guide]  ",
+            "date": "Answered March 10, 2016",
+            "views": "210",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sarah Fernandez",
+                    "user_href": "/profile/Sarah-Fernandez-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nahas Ellathu Parambil",
+                "href": "/profile/Nahas-Ellathu-Parambil"
+            },
+            "answer_text": "Permutation is the maximum possible ordered arrangement of N items in to R positions or slots. Here the order is important. For eg. (1) Selecting captain, wise captain from a team of 7 players. (2) Arranging the batting order of a cricket team. ",
+            "date": "Answered August 3, 2017",
+            "views": "147",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Saibharath Kavuri",
+                "href": "/profile/Saibharath-Kavuri"
+            },
+            "answer_text": "Total number of possible ways in which a set or number of things can be ordered or arranged . ",
+            "date": "Answered April 17, 2019",
+            "views": "22",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kingsley Ukwuoma",
+                "href": "/profile/Kingsley-Ukwuoma-1"
+            },
+            "answer_text": " Goodluck. ",
+            "date": "Answered August 7, 2017",
+            "views": "134",
+            "upvotes": "0"
+        }
+    ]
+}

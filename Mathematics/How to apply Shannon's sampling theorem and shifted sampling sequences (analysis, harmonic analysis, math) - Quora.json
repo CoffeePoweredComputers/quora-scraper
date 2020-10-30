@@ -1,0 +1,25 @@
+{
+    "title": "How to apply Shannon's sampling theorem and shifted sampling sequences (analysis, harmonic analysis, math) - Quora",
+    "tags": [
+        "Nyquist-Shannon Sampling Theorem",
+        "Harmonic Analysis",
+        "Sampling (signal processing)",
+        "Sampling (statistics)",
+        "Theorems and Lemmas",
+        "Digital Signal Processing",
+        "Analysis",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Glen Herrmannsfeldt",
+                "href": "/profile/Glen-Herrmannsfeldt"
+            },
+            "answer_text": "The sampling theorem is usually named for Nyquist, even though Shannon did much of the work. In the early years of telegraphy, Nyquist was figuring out how fast you can send telegraph pulses down a wire. This was especially important when the (insulated) wires went under water, where the capacitance is high. He found that the highest pulse rate was twice the highest frequency that the cable could support, in the case of a frequency limiting cable. (Read about loaded transmission lines to find out about that.) Later, Shannon worked on the properties of analog signals, especially in the case of noise, and figured out that you can sample an analog signal and, with appropriate conditions, reconstruct it from the samples. This allows a frequency limited analog signal to be sampled, digitized, and later being reconstructed from the digitized samples, if the sampling rate is at least twice the highest frequency component of the analog signal. Note that the two are mathematical duals. Nyquist was putting digital signals through analog lines, and Shannon analog signals through digital lines. The math is the same, though, so the sampling theorem is named for Nyquist. The parts related to entropy and noise are named for Shannon. Actual use of Nyquist sampling is a little more complicated. The math only works for an infinite number of sample points, and they don\u2019t even have to be evenly spaced. (It is also exact for periodic signals.) I am not sure what you are asking about shifted signals, but as long as you have enough sample points, it works. ",
+            "date": "Answered October 24, 2020",
+            "views": "17",
+            "upvotes": "0"
+        }
+    ]
+}

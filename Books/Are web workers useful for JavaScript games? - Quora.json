@@ -1,0 +1,45 @@
+{
+    "title": "Are web workers useful for JavaScript games? - Quora",
+    "tags": [
+        "JavaScript (programming language)",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Justen Robertson",
+                "href": "/profile/Justen-Robertson-1"
+            },
+            "answer_text": "Yes! I've had some success offloading certain pieces of code to workers. It's going to depend on where the performance issues are in your code, but if you're doing a lot of work that can run in parallel they can definitely help. For a concrete example, several years ago I put together a simple artificial life sim wherein I offloaded a lot of the lifecycle and behavior logic of my critters to workers and achieved between 10-100x performance improvements. I broke them up into groups and let each worker handle one group per game loop. Unfortunately the demo isn't live right now because I'm in the midst of revamping my website, but it was the difference between being able to simulate 30-40 critters and up to 1500 in real time.  There are probably a lot of other things in the code that I could have tightened up, but the the performance gains provided by parallelizing that code would have scaled with them. There are some things that you can't put in workers though because some APIs can only live in the main thread. Notably WebGL. So if your performance bottleneck is graphics related it's not going to help much. If it's related to game logic, it might. ",
+            "date": "Answered February 28, 2016",
+            "views": "1",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hubert Nguyen",
+                    "user_href": "/profile/Hubert-Nguyen-3"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Ramiro Rojo",
+                    "user_href": "/profile/Ramiro-Rojo"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Ryan Cook",
+                    "user_href": "/profile/Ryan-Cook-55"
+                },
+                {
+                    "user_id": "Ivan Fonseca",
+                    "user_href": "/profile/Ivan-Fonseca-4"
+                }
+            ]
+        }
+    ]
+}

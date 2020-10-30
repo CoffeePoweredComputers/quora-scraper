@@ -1,0 +1,64 @@
+{
+    "title": "Are Velodyne and other LiDAR sensors light sensitive? - Quora",
+    "tags": [
+        "ZephIR Lidar",
+        "Light Sensitive Paint",
+        "Velodyne LiDAR",
+        "LIght Detection and Ranging",
+        "Sensitivity"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kate Cheng",
+                "href": "/profile/Kate-Cheng-7"
+            },
+            "answer_text": "LiDAR sensors sends out laser pulses and measure the returned wavelength to obtain the distance to the first object in its path. These measurements happen millions of times per second and create what we call a \u201cpoint cloud\u201d. These sensors record other attributes, such as time, location information, and the number of satellites in view. Velodyne LiDAR sensors also capture intensity, which is in part a measure of reflectivity. Reflectivity does not require daylight to be captured, and for many applications, point cloud data taken at night is favored over point cloud captured during the day. Below is a surface model created from an aerial LiDAR dataset taken at night, and colorized based on intensity.  Here is another example of a dataset captured at night, this time on rail tracks, where it can difficult to get access during the day. Similarly, if mobile data is to be collected on a busy roadway, nighttime is the best time to capture a clean dataset.  Having said that, many mobile and terrestrial LiDAR sensors are commercially sold as a unit in conjunction with a (panoramic) camera. Imagery and point cloud are simultaneously collected - and in the \u201cpost processing\u201d of the data, routines are applied to add a color attribute to every point, based on the imagery taken for that precise location. We can then obtain what we call \u201ccolorized point cloud\u201d, which can better represent semantic information found in pictures. To do this, the data needs to be captured during the day in order to get good images. Colorized point cloud can be very useful for identifying and classifying assets.  I hope this helps clear things up! ",
+            "date": "Answered August 31, 2016",
+            "views": "377",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Something",
+                    "user_href": "/profile/Something-66"
+                },
+                {
+                    "user_id": "Zhihua Wang",
+                    "user_href": "/profile/Zhihua-Wang-15"
+                },
+                {
+                    "user_id": "Satish C",
+                    "user_href": "/profile/Satish-C-69"
+                },
+                {
+                    "user_id": "Mark Nabil",
+                    "user_href": "/profile/Mark-Nabil"
+                },
+                {
+                    "user_id": "Avinash Hiremath",
+                    "user_href": "/profile/Avinash-Hiremath-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Barnard",
+                "href": "/profile/Michael-Barnard-14"
+            },
+            "answer_text": "They are not particularly affected by normal frequencies of light. However, they can be spoofed by being targeted by the same frequencies of laser light which they emit. This is incredibly hard to do, but it is possible. And they do get effected much more than radar by rain, fog and snow. In general, you get an adequate mix of sensor data with cameras, radar and sonar at a much lower price point, weight point and sensor-protrusion point. Lidar isn\u2019t required, which is why Tesla doesn\u2019t use it. http://cleantechnica.com/2016/07/29/tesla-google-disagree-lidar-right/ ",
+            "date": "Answered August 20, 2016",
+            "views": "680",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Nabil",
+                    "user_href": "/profile/Mark-Nabil"
+                },
+                {
+                    "user_id": "Avinash Hiremath",
+                    "user_href": "/profile/Avinash-Hiremath-1"
+                }
+            ]
+        }
+    ]
+}

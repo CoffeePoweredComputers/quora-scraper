@@ -1,0 +1,256 @@
+{
+    "title": "Can we trace back every theorem to a set of axioms? - Quora",
+    "tags": [
+        "Axioms (logic and mathematics)",
+        "Theorems and Lemmas",
+        "Set Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "M\u00e1rcio Sim\u00f5es",
+                "href": "/profile/M\u00e1rcio-Sim\u00f5es"
+            },
+            "answer_text": "Original question: Can we trace back every theorem to a set of axioms? Yes, in a sense, or No, in another sense. Let's first study the \"no\" case with a little help from Aristotle. In the argument bellow, \u201cP1\u201d means \u201cpremise 1\u201d and \u201cC1\u201d means \u201cconclusion 1\u201d. P1. For any p, if p is a proposition, then you can give reasons for p or you can give reasons against p. P2. p is a proposition. C1. You can give reasons for p or you can give reasons against p. (modus ponens, P1, P2) P4. q and r are propositions for p or q and r are propositions against p. P5. If q and r are propositions, then you can give reasons for q or you can give reasons against q, and you can give reasons for r or you can give reasons against r. P6. q is a proposition. P7. r is a proposition. C2. You can give reasons for q or you can give reasons against q. (modus ponens, P5, P6) C3. You can give reasons for r or you can give reasons against r. (modus ponens, P5, P7) Etc., etc., etc., ad infinitum. Of course Aristotle didn\u2019t write the whole thing the way above; what he wrote, as far as we know, was: \u201cIt is impossible that there should be a demonstration of absolutely everything; [because] then there would be an infinite regress, so that there would still be no demonstration.\u201d In modern words: \u201cAn argument must begin somewhere.\u201d So, if you let me rephrase \u201cCan we trace back every theorem to a set of axioms?\u201d as \u201cCan any true proposition of mathematics be explained by even more basic propositions?\u201d, the answer is \u201cNot really, because by doing this you would do only this for the rest of your life.\u201d Now, the \u201cyes\u201d case. Nowadays, you can define mathematics like this: (1). The propositions t_1, t_2, t_3, \u2026, t_n, explained bellow, are theorems of the mathematical system S. (2). [Explanation of t_1, t_2, t_3, \u2026, t_n, omitted.] (3). The rules of inference r_1, r_2, r_3, \u2026, r_m, explained bellow, are the rules of inference of the system S. (4). [Explanation of r_1, r_2, r_3, \u2026, r_m, omitted.] (5). Any proposition p that you can infer by any of the rules of inference r_1, r_2, r_3, \u2026, r_m from propositions t_1, t_2, t_3, \u2026, t_n is also a theorem of the system S. As you can see, you could call the propositions t_1, t_2, t_3, \u2026, t_n as \u201caxioms\u201d. What I am saying is that, nowadays, there is no significant difference between axiom and theorem \u2014 an axiom is just a theorem that, at the beginning, you declare as true. (Or, saying this in another way, given any mathematical system S, \u2018a theorem of the system S\u2019 is a true proposition in the system S, be it an axiom or be it some proposition you correctly inferred from the axioms.) Some current works in this area, axiomatics, not even mention the word \u201caxiom\u201d anymore: every proposition is either a theorem or a rule of inference. So, if you let me rephrase \u201cCan we trace back every theorem to a set of axioms?\u201d as \u201cCan I trace back any theorem of a mathematical system S to a set of first theorems, possibly a set of theorems declared true by the creator of the system?\u201d, the answer is \u201cYes, sure, because the creator is free to create any system she likes.\u201d (When I say any system, I really mean that. Some systems will be utterly useless, of course, but we\u2019re not discussing usefulness here.) One day, questions like this one will twist my brain; I will be found drooling, and somebody will have to reboot me. Books. The \u201cAristotle\u2019s argument to end all arguments\u201d is an adaptation of the argument I saw on Just the Arguments: 100 of the Most Important Arguments in Western Philosophy, page 198. The explanation on axiomatics is an adaptation of the chapter 8 of Concepts of Modern Mathematics, page 113. ",
+            "date": "Answered October 10, 2017",
+            "views": "483",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shao Yang",
+                    "user_href": "/profile/Shao-Yang-6"
+                },
+                {
+                    "user_id": "Dave Gulimlim",
+                    "user_href": "/profile/Dave-Gulimlim"
+                },
+                {
+                    "user_id": "Charles Conlon",
+                    "user_href": "/profile/Charles-Conlon"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roman Andronov",
+                "href": "/profile/Roman-Andronov"
+            },
+            "answer_text": "(full disclosure - I\u2019m not a professional mathematician) Theoretically - yes, it is a sweeping statement but any theorem in mathematics should be traceable back to a set of first principles otherwise we have a problem. On its primordial or mechanistic level only four molecules - the logical connectives NOT, OR, AND plus the IF p THEN q inference make up the fabric of proofs. Plane geometry: (B1P5): IF a triangle has a property of being isosceles THEN its interior angles at the base are equal. (B1P6): IF a triangle has a property that its interior angles at the base are equal THEN this triangle is isosceles. The direct AND the converse statements are both true, hence - the two are logically equivalent. Number Theory: IF pp is a number with a property of being prime AND p/|ap\u29f8|a THEN ap\u22121\u22611(modp)ap\u22121\u22611(modp) Graph Theory: IF GG is a graph with a property of being simple AND has at least two vertices THEN GG contains at least two vertices of the same degree We can mint those for as long as our patience allows. From a stock of primitive connectives we can construct the new ones: the exclusive OR or XOR, for example, can be assembled from (an inclusive) OR and AND as follows: (pANDNOTq)OR(NOTpANDq)(pANDNOTq)OR(NOTpANDq) Isn\u2019t it wonderful? Gottfried Leibniz (1646\u20131716) authored the idea that from a small number of simplicities and arbitrary complexity can be formed. Witness - the modern body of mathematics. The book \u201cThe Princeton Companion to Mathematics\u201d is over 1,000 pages long - and it is mostly highlighting/enumeration of various fields of mathematics. It may be too outlandish but my brain sometimes catches a glimpse of a parallel between the formation of life on our planet and the flourishing of mathematics. It so happened that recently I undertook a public experiment that is not exactly but is very similar to what you want: in this Quora answer I traced the origin of a simple theorem in plane geometry by constructing its dependency tree or its genealogy of sort. If you unfold the tree in its entirety you will notice its peculiar feature - all of its branches have a terminal node that reads \u201c11\u201d - the very first proposition of the very first book of \u201cElements\u201d. For the entire body of mathematical knowledge the task, as Mr. Joyce mentioned, is monumental and maybe, let us day dream a bit, in the future it might be undertaken - with the help of computers which find its use in mathematics more and more and in an amazingly wide spectrum - from razor sharp and focused to engulfing. For example, on the one hand, a thorough computer-based search in 1989 revealed a previously unknown Mersenne prime M110503M110503 which was hiding in the woodwork between M86243M86243 and M216091M216091 and on the other hand we can ask systems like MAPLE, MATLAB, MATHEMATICA, Wolframalpha and the likes to perform very high level tasks - compute an integral or some such. ",
+            "date": "Answered October 8, 2017",
+            "views": "616",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Theodore Weld Smith",
+                    "user_href": "/profile/Theodore-Weld-Smith"
+                },
+                {
+                    "user_id": "Anupam Nayak",
+                    "user_href": "/profile/Anupam-Nayak-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "Yes. At least in principle. A theorem is not valid unless its proof only relies on previously proven theorems, definitions, and axioms. In some cases that may require a lot of background, and determining all the steps leading to the conclusion is a monumental task. It was simplified when set theory was codified and used as foundations for the rest of mathematics in the 20th century. ",
+            "date": "Answered October 7, 2017",
+            "views": "11",
+            "upvotes": " View 34 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Sebastiano Argenti",
+                    "user_href": "/profile/Sebastiano-Argenti"
+                },
+                {
+                    "user_id": "Danya Rose",
+                    "user_href": "/profile/Danya-Rose"
+                },
+                {
+                    "user_id": "Vasu Jaganath",
+                    "user_href": "/profile/Vasu-Jaganath"
+                },
+                {
+                    "user_id": "Conor Sheehan",
+                    "user_href": "/profile/Conor-Sheehan-3"
+                },
+                {
+                    "user_id": "Travis Brauer",
+                    "user_href": "/profile/Travis-Brauer"
+                },
+                {
+                    "user_id": "Alex Almeida",
+                    "user_href": "/profile/Alex-Almeida-10"
+                },
+                {
+                    "user_id": "Lamrini Younes",
+                    "user_href": "/profile/Lamrini-Younes"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Dhruv Gupta",
+                    "user_href": "/profile/Dhruv-Gupta-65"
+                },
+                {
+                    "user_id": "Paul Legrand",
+                    "user_href": "/profile/Paul-Legrand-4"
+                },
+                {
+                    "user_id": "Jonathan Sullivan",
+                    "user_href": "/profile/Jonathan-Sullivan-10"
+                },
+                {
+                    "user_id": "Kumail Al Hamoud",
+                    "user_href": "/profile/Kumail-Al-Hamoud"
+                },
+                {
+                    "user_id": "Eric Dietrich",
+                    "user_href": "/profile/Eric-Dietrich-8"
+                },
+                {
+                    "user_id": "Tymur Porkuian",
+                    "user_href": "/profile/Tymur-Porkuian"
+                },
+                {
+                    "user_id": "Jonas Oberhauser",
+                    "user_href": "/profile/Jonas-Oberhauser"
+                },
+                {
+                    "user_id": "David W. Vogel",
+                    "user_href": "/profile/David-W-Vogel"
+                },
+                {
+                    "user_id": "David Moore",
+                    "user_href": "/profile/David-Moore-408"
+                },
+                {
+                    "user_id": "Anjay Goel",
+                    "user_href": "/profile/Anjay-Goel"
+                },
+                {
+                    "user_id": "Demetrios E. Lekkas",
+                    "user_href": "/profile/Demetrios-E-Lekkas"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                },
+                {
+                    "user_id": "Quang Ho Le",
+                    "user_href": "/profile/Quang-Ho-Le"
+                },
+                {
+                    "user_id": "Yashee Sinha",
+                    "user_href": "/profile/Yashee-Sinha"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                },
+                {
+                    "user_id": "Praneeth Kacham",
+                    "user_href": "/profile/Praneeth-Kacham"
+                },
+                {
+                    "user_id": "AbdelHameed Hamed",
+                    "user_href": "/profile/AbdelHameed-Hamed"
+                },
+                {
+                    "user_id": "Danielle Ren",
+                    "user_href": "/profile/Danielle-Ren-1"
+                },
+                {
+                    "user_id": "Sourav Sharma",
+                    "user_href": "/profile/Sourav-Sharma-317"
+                },
+                {
+                    "user_id": "Manny Condas",
+                    "user_href": "/profile/Manny-Condas"
+                },
+                {
+                    "user_id": "Anupam Nayak",
+                    "user_href": "/profile/Anupam-Nayak-12"
+                },
+                {
+                    "user_id": "Mohammad Dorgham",
+                    "user_href": "/profile/Mohammad-Dorgham-1"
+                },
+                {
+                    "user_id": "Ramneek Singh",
+                    "user_href": "/profile/Ramneek-Singh-37"
+                },
+                {
+                    "user_id": "Janesh Motiwala",
+                    "user_href": "/profile/Janesh-Motiwala"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David R. Jefferson",
+                "href": "/profile/David-R-Jefferson"
+            },
+            "answer_text": "Yes. In logic the term \u201ctheorem\u201d refers to a statement that has been proved, i.e. has a formal proof. And a formal proof is based on a set of axioms and one or more rules of inference. (Technically the set of axioms has to be \u201crecursive\u201d and so must the rules of inference.) In most of mathematics those axioms are understood to be the axioms of logic augmented with those of set theory, but in some esoteric cases in may be others. In the major areas of mathematics the proofs that are published are generally at a much higher, more abstract level. But it is still the case that all of them are supposed to be expandable in principle to detailed formal proofs from axioms and rules of inference. The formal version of the proof, if fully expanded, may be millions of times longer than the more abstract published version, which is why almost no one publishes full formal proofs. But when mathematicians agree that a published proof is \u201ccorrect\u201d what they mean is that they are satisfied that the published proof could in principle be expanded into a fully formal proof from axioms via rules of inference. ",
+            "date": "Answered June 18, 2019",
+            "views": "104",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Eric Dietrich",
+                "href": "/profile/Eric-Dietrich-8"
+            },
+            "answer_text": "Have you ever played the \u201cwhy\u201d game with someone? (Especially children; they seem to like it far too often). Like, actually participated. Eventually you get down to some \u201cwhy\u201d question and answer that seems to be a universally accept truth, which is literally the definition of \u201caxiom.\u201d  This really includes everything. If you know the steps taken to prove something in math, and assuming that the theorem is actually true, you should be able to get back to some axiom someone stated at some point in time. Maybe it was the person who wrote the paper, maybe it was Ernst Zermelo and Abraham Fraenkel, or maybe it was Giuseppe Peano. On a side note, people should play the \u201cwhy\u201d game far more often. It gets really philosophical really quick. ",
+            "date": "Answered October 8, 2017",
+            "views": "22",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gintaras Gr\u0117bli\u016bnas",
+                    "user_href": "/profile/Gintaras-Gr\u0117bli\u016bnas-1"
+                },
+                {
+                    "user_id": "Prince Ahmed",
+                    "user_href": "/profile/Prince-Ahmed-29"
+                },
+                {
+                    "user_id": "Tadeo Segovia",
+                    "user_href": "/profile/Tadeo-Segovia"
+                },
+                {
+                    "user_id": "Zane Jakobs",
+                    "user_href": "/profile/Zane-Jakobs"
+                },
+                {
+                    "user_id": "Raunakk Chandhoke",
+                    "user_href": "/profile/Raunakk-Chandhoke"
+                },
+                {
+                    "user_id": "Othman Nejjar",
+                    "user_href": "/profile/Othman-Nejjar"
+                },
+                {
+                    "user_id": "M\u0101tl\u0101lihhu\u012btl Quiroz Mendez",
+                    "user_href": "/profile/M\u0101tl\u0101lihhu\u012btl-Quiroz-Mendez"
+                }
+            ]
+        }
+    ]
+}

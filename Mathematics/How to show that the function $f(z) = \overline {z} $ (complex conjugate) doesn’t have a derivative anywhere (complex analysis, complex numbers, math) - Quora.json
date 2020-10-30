@@ -1,0 +1,25 @@
+{
+    "title": "How to show that the function $f(z) = \\overline {z} $ (complex conjugate) doesn\u2019t have a derivative anywhere (complex analysis, complex numbers, math) - Quora",
+    "tags": [
+        "Complex Analysis (mathematics)",
+        "Abstract Algebra",
+        "Complex Numbers",
+        "Complexity",
+        "Derivatives and Differentiation (mathematics)",
+        "Functions (mathematics)",
+        "Calculus",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wes Browning",
+                "href": "/profile/Wes-Browning"
+            },
+            "answer_text": "The definition of complex differentiability requires that the derivative exist and be the same in all direction in the plane. So say u+iv = f(x+iy) where x, y, u, and v are real variables, we require lim as h real \u2192 0 of ((f(x+iy+h) - f(x+iy))/h to exist and to be the same as lim as h real \u2192 0 of ((f(x+iy+ih) - f(x+iy))/ih. The equality of these limits leads to the equation:partial derivative wrt x of u+iy = (1/i)*(partial derivative wrt y of u+iy)which gets you the Cauchy-Riemann equations. See the link below. The conjugate function fails to satisfy the Cauchy-Riemannequations. Eg the partial derivative of Re(x-iy) wrt x is 1, that of Im(x-iy) wrt y is -1. The derivative is not the same when taken in real and imaginary directions. Cauchy\u2013Riemann equations - Wikipedia ",
+            "date": "Answered October 24, 2020",
+            "views": "45",
+            "upvotes": "0"
+        }
+    ]
+}

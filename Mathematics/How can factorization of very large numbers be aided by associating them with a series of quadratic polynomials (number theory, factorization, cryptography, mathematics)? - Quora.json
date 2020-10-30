@@ -1,0 +1,31 @@
+{
+    "title": "How can factorization of very large numbers be aided by associating them with a series of quadratic polynomials (number theory, factorization, cryptography, mathematics)? - Quora",
+    "tags": [
+        "Polynomials",
+        "Polynomial Functions",
+        "Cryptography",
+        "Prime Numbers",
+        "Theoretical Computer Science",
+        "Number Theory",
+        "Algorithms",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Claude Cr\u00e9peau",
+                "href": "/profile/Claude-Cr\u00e9peau"
+            },
+            "answer_text": "The only meaning I can attach to your question is the polynomial-time equivalence of FACTORING N and SQUARE ROOT extraction modulo N. Let N be a composite number. Assume you have an efficient algorithm SQ(s,N) that returns an r such that s = r^2 mod N whenever it exists. You can find non-trivial factors of N easily. Pick a random number r mod N and obtain r\u2019 = SQ(r^2 mod N, N). If r\u2019=r or r\u2019=N-r then try again. Otherwise u=gcd(r+r\u2019,N) and v=gcd(r-r\u2019,N) are non-trivial factors of N. For each random r you have success probability at least 1/2. Once you have u and v, you can further factor them by recursively using the same method. Details are left as an exercise. ",
+            "date": "Answered October 24, 2020",
+            "views": "175",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Higgins",
+                    "user_href": "/profile/Michael-Higgins-7"
+                }
+            ]
+        }
+    ]
+}

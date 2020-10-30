@@ -10,8 +10,8 @@
                 "href": "/profile/Ben-Harsant"
             },
             "answer_text": "I will assume you have a basic understanding of calculus in order to answer this. I will not be too rigorous in this answer and I will begin by formulating your question into one we can analyze using mathematics. We want to have some number xx, increase by a factor of nn every nn years. This can be plotted with the equation: y=nxny=nxn For a visual aid, when n=2n=2 our graph looks something like this:  Notice the yy value doubles every 2 years, and starts arbitrarily at 11 after 0 years. To find the value of nn for which we receive the largest long term gain, an intuitive method of approach would be finding the gradient of the slope for each value of nn at some point ( x=0x=0 for example), and determine which one has the fastest rate of growth (gradient). To find the gradient at some point, we begin by differentiating our model equation: y=nxny=nxn ln(y)=xnln(n)ln(y)=xnln(n) 1ydydx=1nln(n)1ydydx=1nln(n) dydx=nxn\u22171nln(n)dydx=nxn\u22171nln(n) Evaluating dydxdydx at x=0x=0 yields: dydxx=0=1nln(n)dydxx=0=1nln(n) We now have an equation in terms of nn, and our task is to now find the value of nn which maximizes the output. Below is a plot of our equation1nln(n)1nln(n), squished a little to aid in viewing the local maxima:  We now have a clear point representing the maximum rate of increase, all we need to do know is find the value of nn at that point. From the graph it is clearly around 2.52.5, but we can find it exactly by differentiating and finding where the gradient is equal to 00. Letting y=1nln(n)y=1nln(n) By the chain rule: dydn=1n2\u22121n2\u2217ln(n)dydn=1n2\u22121n2\u2217ln(n) dydn=1\u2212ln(n)n2dydn=1\u2212ln(n)n2 And thus dydn=0\u27f9ln(n)=1\u27f9n=e\u22482.718dydn=0\u27f9ln(n)=1\u27f9n=e\u22482.718 TLDR The fastest way to increase is by a factor of ee every ee years where e\u22482.718e\u22482.718 . ",
-            "date": "Answered October 24, 2020",
-            "views": "420",
+            "date": "Answered October 25, 2020",
+            "views": "427",
             "upvotes": " View 10 Upvoters",
             "upvoters": [
                 {
@@ -62,8 +62,8 @@
                 "href": "/profile/Alex-Eustis"
             },
             "answer_text": "If you have an exponential function that starts at the value 1 and increases by a factor of xx every xx time units, the formula for that function is f(t)=xt/x=(x1/x)tf(t)=xt/x=(x1/x)t. Thus, the base of the exponential is x1/xx1/x , so this problem is equivalent to maximizing this value subject to x>1x>1. As usual, we can do this using a bit of Calculus. Let g(x)=ln(x1/x)=lnxxg(x)=ln\u2061(x1/x)=ln\u2061xx. It can be shown that this function must attain a maximum value at a critical point on the interval [1,\u221e)[1,\u221e) (hint: use the substitution w=1/xw=1/x to transform the domain to a compact interval.) To find the critical point we just set 0=g\u2032(x)=1\u2212lnxx20=g\u2032(x)=1\u2212ln\u2061xx2 and thus lnx=1ln\u2061x=1. Therefore x=ex=e gives the fastest growth. ",
-            "date": "Answered October 24, 2020",
-            "views": "369",
+            "date": "Answered October 25, 2020",
+            "views": "374",
             "upvotes": " View 9 Upvoters",
             "upvoters": [
                 {

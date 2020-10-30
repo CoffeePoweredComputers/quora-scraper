@@ -1,0 +1,108 @@
+{
+    "title": "Are multi-core hyperthreading processors faster than a faster single core CPU if you are only trying to run one large program? - Quora",
+    "tags": [
+        "Hyper-threading",
+        "Multi-core Processor",
+        "Threading (computer science)",
+        "Central Processing Units",
+        "Processors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Art Kagel",
+                "href": "/profile/Art-Kagel"
+            },
+            "answer_text": "Multiple core, hyperthreading, and equivalent of hyperthreading on non-Intel processors are three different concepts with three different performance profiles. I will, therefore, discuss what I know about them separately: Multi-core processors: One can treat all of the defined cores as if they are independent processors because each core has the full resources of an independent single-core processor. The multiple cores are only sharing interface pins and some cache memory. Performance of each core in a multi-core processor is nearly 100% of what one would expect from the same number of single core processors and sometimes better because of improved cache latency.Hyperthreads: Intel hyperthreads cannot be considered as if they are independent cores. They share most of the hardware on the processor. An internet search will reveal that Intel and independent testing indicate that the hyperthreads provide about 30% of the processing power of the primary hardware thread on each core.Other multi-thread processors: The two major multi-thread processors exhibit different behavior and different versions of each of them as well:Oracle/Sun-Sparc T-class processors - The original purpose of these processors was to execute multi-threaded application, especially web and Java apps, better. All of the hardware threads in a Sparc processor exhibit equal performance. In the early versions, however, Sun stripped out some internal structures that the earlier M-class Spark processors had that are needed to run long code blocks with multiple branches efficiently. This caused them to be poor at running large single threaded applications like databases (including Oracle). Once Oracle bought Sun and figured this out they began to improve things. So:T1-T4 - only good for multi-threaded applications with very short code blocks having few branches.T5\u20136 - a bit better. Thread performance for large single threaded applications for all threads was about 60% of an equivalent M-class core.T7 and later - The hardware threads in these processors appear to perform as well as any M-class single threaded core.IBM Power processors. IBM white papers report that in a Power processor the first hardware SMT thread performs at 100% of its rated speed. The first few SMT threads after that up to half of the available threads perform at about 80% or better of the rated speed. The remaining available threads vary from 60% to 40% of rated performance. So:P6 & P7 - offer 4 SMT threads per core. Two will run at or near full speed.P8 - offer 8 SMT threads per core. Four will run at or near full speed.P9 - comes in 4 SMT and 8 SMT versions. Two or four SMT threads, repectively, will run at or near full speed.",
+            "date": "Answered September 3, 2019",
+            "views": "389",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aaron Dwi",
+                    "user_href": "/profile/Aaron-Dwi"
+                },
+                {
+                    "user_id": "Wilbert Frias",
+                    "user_href": "/profile/Wilbert-Frias"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Edward Morgan",
+                "href": "/profile/Edward-Morgan-3"
+            },
+            "answer_text": "Yes. If you could find a 6GHz single core CPU and a 3.4GHz quad-core with hyperthreading, the quad-core would win every time unless you\u2019re running an old DOS PC. All contemporary OSes use the extra cores and threads for not only background tasks, like OS housekeeping, antivirus, having more than one Chrome tab open at a time, etc. but for making programs run faster as well by splitting tasks up to different threads. A single-core CPU is just not useful for contemporary PC usage unless you don\u2019t mind having your CPU pegged at 100% all the time and while still running slowly. Just to illustrate, I have an old MSI Wind U100 netbook. It runs a low-power single core Atom CPU with multithreading. It runs as slow as molasses, even on a SSD. I even tried running a lite Linux distro on it from a SSD with ridiculously slow results. So, if you can avoid it, stick to quad-cores for anything requiring more oomph than websurfing. ",
+            "date": "Answered September 3, 2019",
+            "views": "175",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Michael Krech",
+                "href": "/profile/Michael-Krech"
+            },
+            "answer_text": "Thanks for the A2A. Strange the other answers to this question. No, the multi core one is most likely slower, if your program is mostly using only 1 thread. Like a lot of programs do. Even if the multi core CPU has the same performance per core and MHz, it will not be any faster, if the program has only 1 thread. About hyper-threading, surprisingly, can slow down some programs, as the benchmarks comparing the i7 9700k vs i9 9900k prove (the 9700k has 8 cores with no multithreading vs 8 cores with multithreading of the 9900k). Strangely still most every day tasks, require higher single thread performance, that is why Intel CPUs are still faster for games compared to AMD CPUs that have double the number of cores. ",
+            "date": "Answered September 3, 2019",
+            "views": "142",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Larry Pyeatt",
+                    "user_href": "/profile/Larry-Pyeatt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christopher Hall",
+                "href": "/profile/Christopher-Hall-4"
+            },
+            "answer_text": "It depends on what one large program means. If this is a program with lots of parallelism then it will do much better on a multi-core system as it will be able to use all the threads. Hyperthreading does help a bit, and depending on the workload seems to give about 20% boost over using the core in non-hyperthread mode - you do not get double as the two hyperthreads share most of the core computational capacity. If the program is a single thread program i.e. no parallelism is used the Intel CPU currently performing better than AMD. How ever that the a rare case and most systems exploit some degree of parallelism even if it is just other programs being run by the OS. The AMD CPUs do give you more cores per packages at a lower cost than Intel so may give you better performance if the program can use the additional cores. If there is a lot of concurrency then it is really going to depend on the amount of locking that is occurring and how much contention there is over the shared state within the program. In this case more cores may not help if the locking is essentially reducing yo to a single thread. ",
+            "date": "Answered September 4, 2019",
+            "views": "161",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Liana. Brentano",
+                    "user_href": "/profile/Liana-Brentano"
+                },
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "No, never. At best, HT can provide greater throughput (across multiple threads). This is because HT is really just timesliceing of a core. If either thread is effective at using the core, then timeslicing will only hurt. And it may hurt badly (consider two threads that are finely tuned to use 100% of the cache.) Worse, some core resources are actually partitioned when HT is enabled - this means that even if the core is only running one thread, it can run slower. The best case for HT is where both threads are inefficient - full of cache misses and mispredictions. After all, every pipeline stall provides resources for the other thread to use. OTOH, most consumer code is inefficient! So HT is pretty good for running random consumer-level applications (web browsing, etc). ",
+            "date": "Answered September 3, 2019",
+            "views": "123",
+            "upvotes": " Answer requested by Eric Andersen",
+            "upvoters": [
+                {
+                    "user_id": "Larry Pyeatt",
+                    "user_href": "/profile/Larry-Pyeatt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Huseyin Tugrul Buyukisik",
+                "href": "/profile/Huseyin-Tugrul-Buyukisik"
+            },
+            "answer_text": "Depends on the program and the performance of CPUs. Embarrassingly parallel algorithms or compute-i/o-heavy algorithms with little synchronization contention will be scalable on multiple cores. Algorithms with high synchronization contention will not be very good on multiple threads. If single core CPU has 1000 points of performance and if multi core CPU has 100 points of performance per thread, then you would need at least an embarrassingly parallel algorithm and 10 threads to reach performance of that single core CPU. When algorithm\u2019s thread sync contention gets worse, single core CPU will start winning. When multi-core CPU loses cores, single core CPU will win again. ",
+            "date": "Answered September 3, 2019",
+            "views": "80",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

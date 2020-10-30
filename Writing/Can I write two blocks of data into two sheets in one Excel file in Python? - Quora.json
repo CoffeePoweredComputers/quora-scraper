@@ -1,0 +1,54 @@
+{
+    "title": "Can I write two blocks of data into two sheets in one Excel file in Python? - Quora",
+    "tags": [
+        "Working with Excel Using Python",
+        "Pandas DataFrames",
+        "Microsoft Excel"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aliza Ayan",
+                "href": "/profile/Aliza-Ayan"
+            },
+            "answer_text": "Many spreadsheets have formulas and formatting that Python tools for reading and writing Excel files cannot faithfully reproduce. That means that any file I want to create programmatically must be something I basically create from scratch, and then other Excel files (with the aforementioned sophistication) have to refer to that file (which creates a variety of other dependency issues). My understanding of Excel file 'tabs' is that they're actually just a collection of XML files. Well, is it possible to use pandas (or one of the underlying read/write engines such as xlsxwriter or openpyxl to modify just one of the tabs, leaving other tabs (with more wicked stuff in there) intact? EDIT: I'll try to further articulate the problem with an example. Excel Sheet test.xlsx has four tabs (aka worksheets): Sheet1, Sheet2, Sheet3, Sheet4I read Sheet3 into a DataFrame (let's call it df) using pandas.read_excel()Sheet1 and Sheet2 contain formulas, graphs, and various formatting that neither openpyxl nor xlrd can successfully parse, and Sheet4 contains other data. I don't want to touch those tabs at all.Sheet2 actually has some references to cells on Sheet3I make some edits to df and now want to write it back to sheet3, leaving the other sheets untouched (and the references to it from other worksheets in the workbook intact)Can I do that and, if so, how? ",
+            "date": "Answered February 22, 2017",
+            "views": "18",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Kenneth Richardson",
+                "href": "/profile/David-Kenneth-Richardson"
+            },
+            "answer_text": "Yes, there are a few Python packages that can deal with Excel directly. The one I most familiar with is openpyxl. Openpyxl is a module that allows you to both amend already created Excel files or write new ones. If you were to create a method \u201c.to_excel()\u201d, what would be best is that you tell Python where you want the data to go. In this situation you would have to activate each sheet in order to put the data in it (much the same way as you would in VBA in Excel itself). Here is the URL for the Documentation for Openpyxl as package. https://media.readthedocs.org/pdf/openpyxl/latest/openpyxl.pdf I know there are other packages like xlsxwriter and such, but some of these only allow you to just either amend a file singly or create a file singly. You can also look into the Pandas module Python has. This one, myself, I am still learning how to use. You can research that into as well. ",
+            "date": "Answered February 22, 2017",
+            "views": "2",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Venkatesh Kumar",
+                "href": "/profile/Venkatesh-Kumar-194"
+            },
+            "answer_text": "Yes, all you need to do is include another parameter specifying the sheet name.By default, it always is Sheet1, causing an overwrite, but once you specify it, it should be fine. Excerpt from Pandas Documentation: >>> writer = ExcelWriter('output.xlsx')\u00a0>>> df1.to_excel(writer,'Sheet1')\u00a0\u00a0>>> df2.to_excel(writer,'Sheet2')\u00a0\u00a0>>> writer.save()\u00a0Source ",
+            "date": "Answered February 20, 2017",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Amber Hsu",
+                    "user_href": "/profile/Amber-Hsu-13"
+                },
+                {
+                    "user_id": "Rahul Chawla",
+                    "user_href": "/profile/Rahul-Chawla-52"
+                },
+                {
+                    "user_id": "Frank Cao",
+                    "user_href": "/profile/Frank-Cao-18"
+                }
+            ]
+        }
+    ]
+}

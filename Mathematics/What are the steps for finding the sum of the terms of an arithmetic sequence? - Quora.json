@@ -1,0 +1,48 @@
+{
+    "title": "What are the steps for finding the sum of the terms of an arithmetic sequence? - Quora",
+    "tags": [
+        "Arithmetic Sequences",
+        "Arithmetic",
+        "Sums and Series (mathematics)",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mehmet Bodur",
+                "href": "/profile/Mehmet-Bodur-2"
+            },
+            "answer_text": "Consider the series 3 7 11 15 19 ... with a1=3 and d=4. If we have even number of terms, we pair the first and the last terms which gives sums equal to each other, to get sum=nr_of_terms*( a(first)+a(last) )/2 For example, from n=1 to n=4 the sum is a1+a4 + a2+a3 = 4/2*(a1+a4), If we have odd number of terms, the remaining middle_term after the pairing is always middle_term=(a(first) + a(last))/2, and therefore the expression of sum is still valid. For example, sum from n=1 to n=5 is a1+a5 + a2+a4 + a3 = 5/2*(a1+a5). That means the general expression of sum of terms from the first term to the last term is sum = number_of_terms * ( a(first)+a(last) )/2. ",
+            "date": "Answered October 24, 2020",
+            "views": "174",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alain Couniot",
+                    "user_href": "/profile/Alain-Couniot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Subhasish Debroy",
+                "href": "/profile/Subhasish-Debroy-1"
+            },
+            "answer_text": "With an example we can understand better. Let the sequence 1,3,5,7\u2026\u2026..where no. Of terms =12. We are to find 1+3+5+7+ \u2026\u2026 where n=12.First see the first term a= 1, then common difference b = 3\u20131=2 , S = n/2{2a +(n-1)*b} S = n/2{2a +(12\u20131)*2}= 12/2{2*1+11*2}=144 We can also find 12 th term as below do as alternative way: T12 = a+(n-1)*b = 1+(12\u20131)*2 =23 and then put the formula , S = n/2(a+l) , where a=1 ,l= last term here= 23 , n=12 S = 12/2(1+23)=144 ",
+            "date": "Answered October 14, 2020",
+            "views": "32",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Pratheek Kulkarni",
+                "href": "/profile/Pratheek-Kulkarni"
+            },
+            "answer_text": "Let a,a+d,a+2d\u2026..,a+(n-1)d be in AP Sum is (a)+(a+d)+(a+2d)\u2026.. Sum is (na)+(1+2+3\u2026\u2026(n-1))d Therefore na+(n(n-1)/2)d Hence (n/2)(2a+(n-1)d) ",
+            "date": "Answered October 24, 2020",
+            "views": "102",
+            "upvotes": "0"
+        }
+    ]
+}
