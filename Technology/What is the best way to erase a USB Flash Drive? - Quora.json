@@ -1,0 +1,28 @@
+{
+    "title": "What is the best way to erase a USB Flash Drive? - Quora",
+    "tags": [
+        "Flash Memory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Oliver Powell",
+                "href": "/profile/Oliver-Powell"
+            },
+            "answer_text": "Permanently deleting data or formatting your drive, will not erase it permanently & also recovering data from that particular drive is not a tough task for any technical or non-technical person. Anyone can easily recover lost or deleted data from formatted drive using any reliable data recovery software, as whenever you delete any document or file from your system or any storage device then the data is not completely wiped out from that location and the traces of those deleted files are still present on the sectors of the storage drive, until & unless it\u2019s overwritten by any other data or else it was treated by any data erasure software to delete the file permanently. If you are looking for the best way to erase your USB flash drive data completely, then I suggest you using software like BitRaser for File. It is an advanced file erasure software that completely wipe out the data from any storage device, beyond the scope of any recovery. ",
+            "date": "Answered December 11, 2019",
+            "views": "195",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Paul Grimshaw",
+                "href": "/profile/Paul-Grimshaw-6"
+            },
+            "answer_text": "You cannot completely and reliably erase flash drives, USB or otherwise, using generic secure erase tools. The problem is that flash drive controllers write to different areas of the flash memory each time the same \u201cdisk sector\u201d is written. This is done partly to even out the number of writes across the memory so as to minimise the number of re-writes to any specific memory location. Also with flash memory the drive controller has to first erase a sector before writing new contents, and this is generally done as a background \u201cspace reclaim\u201d operation after a sector is written elsewhere, in order to minimise the impact of the erase operation on write performance. So in general when you tell a flash drive to overwrite a sector, you\u2019re not actually overwriting the original area of flash memory at all. Instead you\u2019re relying on the drive controller\u2019s space reclaim algorithm to get around to erasing the original data, which can\u2019t be controlled by standard disk calls. Good drive manufacturers recognise this security flaw of the technology, and to get around it they provide their own dedicated tools for secure erase. Samsung provide such a tool for their Evo range for example, as part of the Samsung Magician utility. Using the manufacturer\u2019s tool is therefore probably the most secure approach. Unfortunately though, you\u2019re then having to trust that the manufacturer\u2019s software and hardware work without bugs, in a facility that\u2019s rarely used, and for something that would require specialist flash memory data recovery tools to verify the result. Bottom line is that if you need to be certain that you\u2019re erasing all data, then either avoid flash drives to store the data in the first place, or resort to physically destroying the flash memory entirely. ",
+            "date": "Answered May 7, 2017",
+            "views": "18",
+            "upvotes": "0"
+        }
+    ]
+}

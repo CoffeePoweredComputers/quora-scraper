@@ -1,0 +1,57 @@
+{
+    "title": "How to factorize p\u00b3 + q\u00b3 + r\u00b3 -3pqr - Quora",
+    "tags": [
+        "Polynomial Factorization",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Peter Vanroose",
+                "href": "/profile/Peter-Vanroose"
+            },
+            "answer_text": "Your expression is homogeneous of the 3rd degree in [math]p[/math], [math]q[/math] and [math]r[/math]. So if it factorizes it will into either three 1st degree homogeneous polynomials in [math]p[/math], [math]q[/math], and [math]r[/math]; or into a 1st degree polynomial and a 2nd degree polynomial. So we search for numbers [math]a[/math], [math]b[/math], [math]c[/math], [math]d[/math], [math]e[/math], [math]f[/math] and [math]g[/math] such that [math](p+aq+br)(p^2+cpq+dpr+eq^2+fqr+gr^2) = p^3+q^3+r^3-3pqr[/math] Working out the left hand side, we are left with the following conditions on the numbers [math]a[/math],[math]b[/math],[math]c[/math],[math]d[/math],[math]e[/math],[math]f[/math],[math]g[/math]: [math]a+c=0[/math] (term in [math]p^2q[/math]) [math]e+ac=0[/math] (term in [math]pq^2[/math]) [math]ae=1[/math] (term in [math]q^3[/math]) [math]b+d=0[/math] (term in [math]p^2r[/math]) [math]g+bd=0[/math] (term in [math]pr^2[/math]) [math]bg=1[/math] (term in [math]r^3[/math]) [math]af+be=0[/math] (term in [math]q^2r[/math]) [math]ag+bf=0[/math] (term in [math]qr^2[/math]) [math]f+ad+bc=-3[/math] (term in [math]pqr[/math]) We easily eliminate [math]c[/math] ([math]=-a[/math]), [math]e[/math] ([math]=a^2[/math]), [math]d[/math] ([math]=-b[/math]), [math]g[/math] ([math]=b^2[/math]), and [math]f[/math] ([math]=-3\u20132ab[/math]), so we are left with: [math]a^3=1[/math] [math]b^3=1[/math] [math]-a(3+2ab) + ba^2=0[/math], or: [math]a(3+ab)=0[/math] [math]ab^2-b(3+2ab)=0, or: b(3+ab)=0[/math] From this we see that both [math]a[/math] and [math]b[/math] must be nonzero, hence [math]3+ab=0[/math]. So the only two real-valued candidate solutions [math]a=b=1[/math] don\u2019t satisfy [math]3+ab=0[/math]. There are also two complex solutions to [math]a^3=1[/math]: [math]-\\frac12\\pm i \\frac12\\sqrt3[/math]. And similarly for [math]b^3=1[/math]. But none of the products of any choice of [math]a[/math] with any choice of [math]b[/math] is [math]-3[/math]. Conclusion: [math]p^3+q^3+r^3-3pqr[/math] cannot be factorized into a 1st degree polynomial and a 2nd degree polynomial. A fortiori, it cannot be factored into three 1st degree polynomials. So it cannot be factored. ",
+            "date": "Answered December 24, 2018",
+            "views": "781",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Kyle",
+                    "user_href": "/profile/Kyle-913"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Goh Kim Tee",
+                "href": "/profile/Goh-Kim-Tee-1"
+            },
+            "answer_text": "p\u00b3+q\u00b3+r\u00b3-3pqr =(p+q+r)(p\u00b2+q\u00b2+r\u00b2-(pq+qr+rp) =(p+q+r){(p+q+r)\u00b2-3(pq+qr+rp)} ",
+            "date": "Answered December 24, 2018",
+            "views": "477",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kyle",
+                    "user_href": "/profile/Kyle-913"
+                },
+                {
+                    "user_id": "MD ASIF ALI",
+                    "user_href": "/profile/MD-ASIF-ALI-56"
+                },
+                {
+                    "user_id": "Rahul Vishwakarma",
+                    "user_href": "/profile/Rahul-Vishwakarma-188"
+                },
+                {
+                    "user_id": "Devesh Kumar",
+                    "user_href": "/profile/Devesh-Kumar-546"
+                },
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                }
+            ]
+        }
+    ]
+}

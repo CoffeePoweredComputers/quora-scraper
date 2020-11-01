@@ -1,0 +1,141 @@
+{
+    "title": "What happens to a dropped packet in a network? - Quora",
+    "tags": [
+        "TCP/IP",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel Nebdal",
+                "href": "/profile/Daniel-Nebdal"
+            },
+            "answer_text": "Depends on the context. If you monitor an IP stream and a packet is dropped, it means no more or less than \"it didn't make it to me\". Maybe there was a burst of noise so it disappeared in a hop somewhere? Maybe a bug somewhere meant it never made it out of a network card? Maybe a connection dropped and a few packets were sent into nothing before things rerouted? The by far most common cause is congestion, though. If a router can handle a certain amount of traffic, it will start \"dropping\" packets when it approaches full load. This basically means that they will be given up on - the memory they use will be marked as free, and will get overwritten by another package shortly afterwards. So, yes, in a way the router deletes the packet - or acts as if it never got it.  There's two slightly different forms of router packet dropping: Planned and unplanned. TCP transfers will slow down when packets are lost, so actively dropping a few packets before the router is completely full is a way to ask for the incoming traffic to slow down. This can be done e.g. by having a random chance of dropping packets that ramps up as the buffer on the incoming side fills up. The unplanned version is what happens when there just isn't enough resources to handle the incoming packets.  Network card also have small buffers where they put together the incoming packages and hold them until the OS can do something with them - and if the OS is too busy handle them in time, they'll get re-used to handle newer packages. The same happens if the OS does react in time, but can't do anything with them (because there's already too many unhandled incoming packets). ",
+            "date": "Answered March 31, 2016",
+            "views": "3",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akash Shrestha",
+                    "user_href": "/profile/Akash-Shrestha-9"
+                },
+                {
+                    "user_id": "Abhishek Pratap Singh",
+                    "user_href": "/profile/Abhishek-Pratap-Singh-129"
+                },
+                {
+                    "user_id": "Surbhi Jain",
+                    "user_href": "/profile/Surbhi-Jain-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Travis Casey",
+                "href": "/profile/Travis-Casey-4"
+            },
+            "answer_text": "It means the packet somehow didn\u2019t make it. There are many reasons that might happen. Here\u2019s a few: traffic is coming in to a device faster than it can handle it at the moment, and its buffers fill up.a packet is sent down a route where the network isn\u2019t functioning.noise on a line causes a packet\u2019s data to be corrupted. A receiving device sees that the checksum doesn\u2019t match, and discards the packet.a hardware failure causes a packet to not be received, or to not be sent.A software error does the same, or causes a packet to be mishandled.Often, packets are flowing across a network you don\u2019t have full control of, so you may never know what actually happened to them. Thus, the use of the simple term \u201cdropped\u201d. ",
+            "date": "Answered May 25, 2017",
+            "views": "891",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Igor Machado",
+                    "user_href": "/profile/Igor-Machado-16"
+                },
+                {
+                    "user_id": "Akash Shrestha",
+                    "user_href": "/profile/Akash-Shrestha-9"
+                },
+                {
+                    "user_id": "Surbhi Jain",
+                    "user_href": "/profile/Surbhi-Jain-1"
+                },
+                {
+                    "user_id": "Neil Phan",
+                    "user_href": "/profile/Neil-Phan-1"
+                },
+                {
+                    "user_id": "Anusree Variyar",
+                    "user_href": "/profile/Anusree-Variyar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alessandro Maggio",
+                "href": "/profile/Alessandro-Maggio-2"
+            },
+            "answer_text": "It disappears. A common cause for packet drops is that some interferences made the packet undreadable, or a full queue on a router didn't accept it. In the first case, the packet is deleted. In the second, it disappears as the receiving router hasn't listened to it. Now, that very packet is gone. Forever. The information in it may be retransmitted depending on appliccation layer. ",
+            "date": "Answered May 20, 2017",
+            "views": "763",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akash Shrestha",
+                    "user_href": "/profile/Akash-Shrestha-9"
+                },
+                {
+                    "user_id": "Surbhi Jain",
+                    "user_href": "/profile/Surbhi-Jain-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Phillip Remaker",
+                "href": "/profile/Phillip-Remaker"
+            },
+            "answer_text": "A dropped packet is simply deleted.  All devices that use packet networking know that they may have an occasion to retransmit a packet, and have mechanisms to detect loss and retransmit. The end point, not the router, bears responsibility for retransmission.  ",
+            "date": "Answered April 5, 2016",
+            "views": "2",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akash Shrestha",
+                    "user_href": "/profile/Akash-Shrestha-9"
+                },
+                {
+                    "user_id": "Alfred Wandati",
+                    "user_href": "/profile/Alfred-Wandati"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Phillip Stewart",
+                    "user_href": "/profile/Phillip-Stewart"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Tony Li",
+                    "user_href": "/profile/Tony-Li-19"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shubham Jain",
+                "href": "/profile/Shubham-Jain-\u0936\u0941\u092d\u092e-\u091c\u0948\u0928"
+            },
+            "answer_text": "Packet loss is typically caused by network congestion. Packet loss is measured as a percentage of packets lost with respect to packets sent. The Transmission Control Protocol (TCP) detects packet loss and performs retransmissions to ensure reliable messaging. Packet loss in a TCP connection is also used to avoid congestion and reduces throughput of the connection. In streaming media and online game applications, packet loss can affect the user experience. I hope it helps. :) ",
+            "date": "Answered March 31, 2016",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akash Shrestha",
+                    "user_href": "/profile/Akash-Shrestha-9"
+                },
+                {
+                    "user_id": "Surbhi Jain",
+                    "user_href": "/profile/Surbhi-Jain-1"
+                }
+            ]
+        }
+    ]
+}

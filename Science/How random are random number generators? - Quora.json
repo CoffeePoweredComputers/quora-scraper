@@ -1,0 +1,32 @@
+{
+    "title": "How random are random number generators? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Hyer",
+                "href": "/profile/Tom-Hyer-1"
+            },
+            "answer_text": "They are pretty good for most purposes, if you choose a tested standard one.  Period lengths are very long -- usually over 10^20 -- and there are no simple patterns to be found.   Exceptions:  the built-in RAND() function in Excel is based on a terrible linear-congruential generator with a short period (unless they have fixed it).  Old versions of Numerical Recipes contained a low-quality generator; this was fixed around 1995. Built-in system rand()/srand()  functions, accessed directly in C and probably used as the implementation under most scripting languages, do not have a standard implementation so there can be no guarantee of their quality.  (As of C++11, there is a C++ standard random generation package offering engines and adaptors you can mix to your heart's content:  Pseudo-random number generation.) I guess there was a gradual shift from about 1990 to 2005, by the end of which good random number generators were easy enough to find.  In today's world there are a few scattered bad generators, in very old or incompetently maintained code.   ",
+            "date": "Answered January 12, 2016",
+            "views": "590",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mickael Bergeron Neron",
+                    "user_href": "/profile/Mickael-Bergeron-Neron"
+                },
+                {
+                    "user_id": "Gene Familiinet",
+                    "user_href": "/profile/Gene-Familiinet"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        }
+    ]
+}

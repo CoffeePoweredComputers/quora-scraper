@@ -1,0 +1,82 @@
+{
+    "title": "How powerful will computers get? - Quora",
+    "tags": [
+        "Computability Theory (computer science)",
+        "Supercomputers",
+        "High Performance Computing",
+        "Desktop Computers",
+        "Personal Computers",
+        "Computer Science",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tharindu Rusira",
+                "href": "/profile/Tharindu-Rusira"
+            },
+            "answer_text": "Interesting question and you have already got a few interesting answers. However, I would like to add some thoughts as well and I will try to build my answer upon the previous answers.  To begin with, the \"power of a computer\" is an ambiguous term in the context. I will assume, it is a measure of the computing ability. Garry's idea is the origin of distributed-computing/ cluster-computing /supercomputing and many other related technical jargon to say that many computing-units work collaboratively to do a given computation.  Decades ago, we hit the the practical limits of what is commonly known as a CPU. Until then, the main strategy was to increase the clock speed of the conventional uni-processor architecture. Then came a point where that was no longer feasible due to elevated power requirement and consequent cooling issues.  As a result, multi/many-core systems were developed. Different levels of parallelism(eg, Instruction-level, task-level,...) were invented and these ideas formed the basis of the new concept.  However, though, I do not fully agree with \" but there is no real limit on how many of those processors we can have (Garry Taylor)\". Theoretically, ture; there is no limit. Quoting Wikipedia, \" Tianhe-1A consumes 4.04 megawatts (MW) of electricity. The cost to power and cool the system can be significant, e.g. 4 MW at $0.10/kWh is $400 an hour or about $3.5 million per year\", you now see the problem. As of this writing, the world's most powerful supercomputer Tianhe-2's (33.86 pflops, 32,000 Xeon E5 cores and 48,000 Xeon Phis) power requirement is 17.6 MW.   On the other hand, writing right software plays a huge role in making the maximum use of the available resources. Because of the fact that conventional programming paradigm(and human thinking) is based on sequential execution, it requires extra effort to write parallel programs. Even now, a lot of research is underway in different areas such as parallel algorithms, parallel compilers, programming models, etc. So in practice, these are all limiting factors to achieving the peak computing power. That being said, let me divert to show another aspect of the problem. The processing power of the computers improved by leaps and bounds over the years but the memory speed did not at the same rate. This speed gap between the processor and memory almost prevents us from the maximal utilization of the CPU  on the conventional Von-Neumann architecture that is still in use today. So in a way, it is fair to say(at least for the memory-bound applications), it is not more computing power that we need but memory bandwidth. (food for thought!)  Right now, we are in the petaflops range and it will not be too long until we achieve exascale and continue improving. So to answer the question, NO, there is no such limit for the power of computing. If it cannot grow in one direction, it will, in another.  All in all, the bottomline is the power of a computer depends on a number of factors and merely piling up cores will not solve the problem. P.S.: I am not qualified to elaborate on Johnny's answer on quantum computers but I have come across interesting ideas on the topic. So there is hope. :)    ",
+            "date": "Answered February 9, 2016",
+            "views": "31",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Paul Oroborust",
+                    "user_href": "/profile/Paul-Oroborust"
+                },
+                {
+                    "user_id": "Naveen David",
+                    "user_href": "/profile/Naveen-David-10"
+                },
+                {
+                    "user_id": "Sergiu Jurca",
+                    "user_href": "/profile/Sergiu-Jurca"
+                },
+                {
+                    "user_id": "Jeremy Reuwer",
+                    "user_href": "/profile/Jeremy-Reuwer"
+                },
+                {
+                    "user_id": "Daniel Maurer",
+                    "user_href": "/profile/Daniel-Maurer-4"
+                },
+                {
+                    "user_id": "Ricardo Gabriel",
+                    "user_href": "/profile/Ricardo-Gabriel-2"
+                },
+                {
+                    "user_id": "Shavindi Udanee Ediriarachchi",
+                    "user_href": "/profile/Shavindi-Udanee-Ediriarachchi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Teodor Spiridon",
+                "href": "/profile/Teodor-Spiridon"
+            },
+            "answer_text": "The other answers are both excellent, but I think the question is going to shift away from the power of the computer to the intelligence of the software being executed. Think of it like this: 1. If I ask you to divide any two numbers together, you will do so in some set amount of time. 2. As I ask you to do more and more numbers per hour, you will have to get faster and faster in doing the work, but at some point you will reach a limit and then you will start to fail to meet expectations. 3. If however, you noticed that 90% of the questions were the same three numbers, you could just store the answer and save yourself 90% of the work.  This would allow you to effectively handle more work. So, if the simple example above, looking at the problem differently allowed you to generate a net increase in system throughput without having to increase the power of the system. ",
+            "date": "Answered February 8, 2016",
+            "views": "974",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sergiu Jurca",
+                    "user_href": "/profile/Sergiu-Jurca"
+                },
+                {
+                    "user_id": "Martin Hauser",
+                    "user_href": "/profile/Martin-Hauser"
+                },
+                {
+                    "user_id": "Daniel Maurer",
+                    "user_href": "/profile/Daniel-Maurer-4"
+                },
+                {
+                    "user_id": "Ricardo Gabriel",
+                    "user_href": "/profile/Ricardo-Gabriel-2"
+                }
+            ]
+        }
+    ]
+}

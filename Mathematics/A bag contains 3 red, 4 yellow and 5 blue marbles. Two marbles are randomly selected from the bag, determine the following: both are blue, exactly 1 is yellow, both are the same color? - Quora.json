@@ -1,0 +1,29 @@
+{
+    "title": "A bag contains 3 red, 4 yellow and 5 blue marbles. Two marbles are randomly selected from the bag, determine the following: both are blue, exactly 1 is yellow, both are the same color? - Quora",
+    "tags": [
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sergei Michailov",
+                "href": "/profile/Sergei-Michailov"
+            },
+            "answer_text": "3+4+5=12 Both are blue: (5/12)*(4/11). Exactly one is yellow. It is the sum of two events (blue, nonblue), (nonblue, blue), the probability is (5/12)*(7/11)+(7/12)*(5/11). Both are the same color. It is the sum of both blue, both red, and both yellow, the probability is (5/12)*(4/11)+(3/12)*(2/11)+(4/12)*(3/11) ",
+            "date": "Answered August 21, 2020",
+            "views": "130",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Bob Kelly",
+                "href": "/profile/Bob-Kelly-115"
+            },
+            "answer_text": "These are straightforward combinatorics problems. Note that there are 12 choices on the first selection and 11 on the second so overall 12x11 = 132 combinations. To find how many of these have exactly 1 yellow we (1) find combinations where first is yellow and second is not - this is 4*8 = 32 and (b) where first is not yellow and second one is - this is 8*4 also 32. So total probability is (32+32)/132 = 16/33. The other two problems can be solved by similar analyses. ",
+            "date": "Answered August 21, 2020",
+            "views": "46",
+            "upvotes": "0"
+        }
+    ]
+}

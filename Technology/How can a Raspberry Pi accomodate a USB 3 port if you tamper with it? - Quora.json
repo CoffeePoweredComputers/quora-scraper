@@ -1,0 +1,135 @@
+{
+    "title": "How can a Raspberry Pi accomodate a USB 3 port if you tamper with it? - Quora",
+    "tags": [
+        "Startup Computer Programming Careers",
+        "Raspberry Pi",
+        "Universal Serial Bus (USB)",
+        "Startups",
+        "Electronics",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Busby",
+                "href": "/profile/Jonathan-Busby"
+            },
+            "answer_text": "Actually, the answer is \"unknown at this time\" ( at least unknown to me :) ). All RPi models only have USB 2.0 ports, limiting the maximum USB speed to 480Mbit/sec. Even with an externally powered USB 3.0 hub, plugging that hub into a USB 2.0 port limits the effective bit rate to 480Mbit/sec -- you will not get 5 Gbit/sec. If there is a way to get \"native\" USB 3.0 working on the RPi, then it would have to be via some type of eg. expansion card / board or other similar hack. The only such \"hack\" that I know of is this : http://www.suptronics.com/Xseries/x300.html . I don't know if it supports SATA 3.0 / 6Gbit/sec . If it doesn't, and only supports slower SATA versions then that's still not enough bandwidth to match USB 3.0's 5Gbit/sec. Also, even if the expansion board to which I Iinked provides a 6Gbit/sec SATA link, you would still need a USB 3.0 to SATA bridge board or other similar adapter. Furthermore, the USB 3.0 port on the adapter would treat the SATA port on the expansion board as a *slave* and the USB 3.0 port on the adapter as a *host* ( I've searched and found no adapter which does the opposite ). Also, you'd only be able to use USB mass storage devices. If the external busses on the BCM2835 can support the bandwidth, then the answer is \"possibly,\" but only if the expansion board that I mentioned supports SATA 3.0/6Gbit/sec. Also, assuming that the RPi can handle 6Gbit/sec, if one wanted to upload or backup one's RPi file system(s) to a cloud based service, you'd have to \"pipe\" the SATA connection though another device ( eg. Linux system ) which in turn would cache the SATA data transfer and concurrently upload it to your cloud service of choice ( assuming the device to which you \"pipe\" the data has an extremely fast Internet connection). Barring further research into the BCM2835 internals and RPi schematics, I think the appropriate answer is \"sort of,\" since if the mentioned adapter doesn't support a 6Gbit/sec SATA link and/or the BCM2835 and RPi hardware can't handle 5Gbit/sec, then you'd at least get a transfer rate of \"somewhere in between\" 480Mbit/sec and 5/6Gbit/sec, which is a very large range -- someone would have to research the linked board and RPi hardware to more accurately narrow the range. EDIT: After doing some research, I found this link : http://codeandlife.com/2012/07/03/benchmarking-raspberry-pi-gpio-speed/ The maximum frequency that could be achieved on the \"free\" GPIO pins -- ie. where they were not otherwise configured for a certain peripheral on the BCM2835 -- was about 5.4 MHz. So, a **very liberal** estimate, and one which is probably not correct, is an effective data rate of 172.8Mbit/sec, assuming 32 GPIO lines are free, and no type of capacitance, load or any other interference is present on the pins. EDIT : The Raspberry Pi 2 model B can apparently achieve about 42MHz even by just bit-banging the GPIO pins ( See here : Raspberry Pi 2 vs. 1 GPIO Benchmark ). So, the lower limit on the transfer speed of an add-on card ( at least for the RPi 2 ) is about 1.344 Gbit/sec . Assuming that one could get around the above restriction, and toggle each GPIO line in a set of 32 lines at the ~125Mhz ( see note 1 ) maximum allowed by the BCM2835 peripheral spec ( http://www.raspberrypi.org/documentation/hardware/raspberrypi/bcm2835/BCM2835-ARM-Peripherals.pdf ) , one could, hypothetically ( see note 2 ), achieve a data rate of 4Gbit/sec. (Note 1 : 125MHz, at least according to the spec, only applies to a clock signal over the GPIO lines. As for data, I'm not sure ) (Note 2 : Since the BCM2835's ARM processor only runs at 700 MHz, if you achieved this bandwidth, it would almost certainly necessitate the use of the BCM2835's DMA controller. Also -- and you might find this obvious if you have electronics knowledge -- the \"add on card\" connected to the GPIO header would of course have to use a parallel to serial converter circuit, as both SATA and USB are high speed serial interfaces. Sorry for all the editing :P ) EDIT #2 : I thought that I\u2019d update this answer to take into account the performance improvements on the new Raspberry Pi 3 Model B. According this source : hzeller/rpi-gpio-dma-demo , the maximum, practically achievable GPIO toggle rate for the Raspberry Pi 3 Model B is about 65.8 MHz. This means that, assuming one can use 32 free GPIO pins, on the Raspberry Pi 3 Model B, one could achieve speeds of about 2.1056Gbits/sec over the GPIO lines. This is again assuming that no type of capacitance, load or any other interference is present on the pins. So, the answer is a definite \"no\", but a partial \"yes,\" in that you may be able to achieve speeds through the GPIO pins that are much faster than USB 2.0 but slower than USB 3.0 . Hope this helps :) Regards, Jonathan Note : This answer is an edited concatenation of my previous replies to the only other answer posted by Pradumn Joshi about a year ago. ",
+            "date": "Updated August 1, 2016",
+            "views": "21",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Hong",
+                    "user_href": "/profile/Andrew-Hong-49"
+                },
+                {
+                    "user_id": "William Roberts",
+                    "user_href": "/profile/William-Roberts-65"
+                },
+                {
+                    "user_id": "Andrew Sychra",
+                    "user_href": "/profile/Andrew-Sychra"
+                },
+                {
+                    "user_id": "Marcus Alvares",
+                    "user_href": "/profile/Marcus-Alvares"
+                },
+                {
+                    "user_id": "Cole Johnson",
+                    "user_href": "/profile/Cole-Johnson-13"
+                },
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Arina Nuha",
+                "href": "/profile/Arina-Nuha"
+            },
+            "answer_text": "They can't. Except if RPi soc has external interface which can be hooked to USB3.0 controller chip. Using USB 3.0 hub wont help either. Take note that the HighsPeed part (480Mb/s) and SuperSpeed(5Gb/s) part inside USB3.0 hub is distinct and completely separated. If you hook HighSpeed USB device into USB3.0 hub, your upstream direction will still use HighSpeed signalling. Your hub won't convert/translate HighSpeed packet into SuperSpeed packet. This is contrast to USB 2.0 hub which will translate downstream USB LowSpeed(1,5Mb/s) and FullSpeed(12Mb/s) signal into HighSpeed signal on the upstream direction. The implication is that USB3.0 cable basically only combine conductor for USB 2.0 and SuperSpeed in a single cable. USB 2.0 signal (lowspeed,fullspeed, highspeed) use the D+ and D- signal, while SuperSpeed use the StdA_SSRX\u2212 ,StdA_SSRX+ pair and StdA_SSTX\u2212 ,StdA_SSTX+ pair) ",
+            "date": "Answered July 30, 2015",
+            "views": "204",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andriy Tymchenko",
+                    "user_href": "/profile/Andriy-Tymchenko"
+                },
+                {
+                    "user_id": "Marcin \u015aliwi\u0144ski",
+                    "user_href": "/profile/Marcin-\u015aliwi\u0144ski"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pradumn Joshi",
+                "href": "/profile/Pradumn-Joshi"
+            },
+            "answer_text": "The answer is yes, if you use an external powered USB hub.-------------------- Edit :The answer I wrote is completely wrong I am really thankful to Jonathan Busby for correcting as i thought connecting to 3 usb ports in my comment. I am also correcting the answer by stating the same below :  Actually, the answer is \"unknown at this time.\" All RPi models only have USB 2.0 ports, limiting the maximum USB speed to 480Mbit/sec . Your answer \"The answer is yes, if you use an external powered USB hub\" is inaccurate, to say the least. Even with an externally powered USB 3.0  hub, plugging that hub into a USB 2.0 port limits the effective bit rate to 480Mbit/sec -- you will not get 5 Gbit/sec. If there is a way to get \"native\" USB 3.0 working on the RPi, then it would have to be via some type of eg.  expansion card / board or other similar hack. EDIT : One thing that I forgot to mention is that even if the expansion board to which I Iinked provides a 6Gbit/sec SATA link, you would still need a USB 3.0 to SATA bridge board or other similar adapter. Also, the USB 3.0 port on the adapter would treat the SATA port on the expansion board as a *slave* and the USB 3.0 port on the adapter as a *host* ( I've searched and found no adapter which does the opposite ). Also, you'd only be able to use USB mass storage devices. ",
+            "date": "Updated March 25, 2015",
+            "views": "69",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Parikshit Joshi",
+                    "user_href": "/profile/Parikshit-Joshi"
+                },
+                {
+                    "user_id": "Amy Bowersox",
+                    "user_href": "/profile/Amy-Bowersox"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Banibrata Dutta",
+                "href": "/profile/Banibrata-Dutta"
+            },
+            "answer_text": "Not sure that I understand your question completely, but one easy answer would by by adding a USB hub. If all you wish to connect are low power peripherals like USB keyboard, mouse, an unpowered USB hub would suffice, in fact a USB1.1 el-cheapo $1 hub would do. However, if you wish to add USB ports for things like external USB disk-drive, 3G dongle etc., you would most probably need a powered hub that is ideally USB 2.0, even though given the design constraint of RaspberryPi I/O bus shared between Ethernet and USB, you won't be able to realize full theoretical bandwidth of either. ",
+            "date": "Answered August 26, 2015",
+            "views": "38",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Klemen Soeargo",
+                    "user_href": "/profile/Klemen-Soeargo"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maximilian Batz",
+                "href": "/profile/Maximilian-Batz"
+            },
+            "answer_text": "it can't. it is one USB 2.0 port, right there in the Silicon. select another device, you will also need a more powerful CPU to actually be able to use that bandwidth. ",
+            "date": "Answered August 19, 2015",
+            "views": "46",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Burton",
+                "href": "/profile/Chris-Burton-27"
+            },
+            "answer_text": "No the Raspberry Pi would not be able to utilize a USB 3 port. The Pi is not desinged to be the fasted or best computer but an affordable computer for educational purpose. The system would not be able to handle USB 3 transfer speeds. ",
+            "date": "Answered March 25, 2015",
+            "views": "119",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "title": "How to protect an SD card content if I use Raspberry Pi in a commercial product - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "SD Cards",
+        "Memory Cards",
+        "Data Storage"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tim Elliot",
+                "href": "/profile/Tim-Elliot"
+            },
+            "answer_text": "How can I protect an SD card content if I use Raspberry Pi in a commercial product? Same as with any computer. You make the SD card physically inaccessible, and you lock the entire machine down in software so there is no way to access it via the network. Or set the SD card up as encrypted Booting a Raspberry Pi from an Encrypted SD Card ",
+            "date": "Answered June 14, 2018",
+            "views": "26",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Oliver Chen",
+                    "user_href": "/profile/Oliver-Chen-118"
+                },
+                {
+                    "user_id": "David Vanderschel",
+                    "user_href": "/profile/David-Vanderschel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Torrens",
+                "href": "/profile/David-Torrens"
+            },
+            "answer_text": "Set up an additional user with a secure password and put all the material you want to keep secret under that user. Change the \u201cpi\u201d user password to a secure password. Additionally you could password protect or encrypt particular files or diectories that are particularly sensitive. You need to decide how far to go as too much protection could cause problems for you maintaining the system. ",
+            "date": "Answered June 16, 2018",
+            "views": "25",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Hitesh Hambarde",
+                "href": "/profile/Hitesh-Hambarde"
+            },
+            "answer_text": "There is no perfect way to protect SD card content. Only physical security can be increased. Turn off SSH and default users. Other than this you cannot do anything. Encryption process mention in one of the answer is good idea but it is an experiment and also user need to enter password while booting. So it won't be automated process. ",
+            "date": "Answered September 23, 2018",
+            "views": "16",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "title": "What are some of the attempts to order complex numbers, and why do these fail? - Quora",
+    "tags": [
+        "Ordering",
+        "Imaginary Numbers",
+        "Complex Numbers",
+        "List Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Yasha Berchenko-Kogan",
+                "href": "/profile/Yasha-Berchenko-Kogan"
+            },
+            "answer_text": "It's certainly possible to order the complex numbers. However, it's fairly easy to show that any such order will fail to respect the multiplication and addition operations on the complex numbers, making it not very useful. A simple example of an ordering on the complex numbers is the lexicographic ordering: We set [math]a+bi<c+di[/math] whenever either we have [math]a<c[/math] or we have [math]a=c[/math] and [math]b<d[/math], using the usual ordering of the real numbers. You can check that all the properties of an order, such as transitivity, are satisfied. However, when working with a field, for an order to be useful, it has to satisfy some additional nice properties. One of those properties is that the product of two positive numbers should be positive. Assume for contradiction that you have an order on the complex numbers that satisfies this property. Consider the complex number [math]i[/math]. If [math]i[/math] is positive, then [math]i\\cdot i=-1[/math] is the product of two positive numbers, which would make -1 positive, a contradiction. On the other hand, if [math]i[/math] is negative, then [math]-i[/math] is positive, which would make [math](-i)(-i)=-1[/math] positive, also a contradiction. Therefore, although it's possible to make an order on the complex numbers, such an order would not be very useful. ",
+            "date": "Answered June 29, 2012",
+            "views": "42",
+            "upvotes": " View 52 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel McLaury",
+                    "user_href": "/profile/Daniel-McLaury"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Alon Amit",
+                    "user_href": "/profile/Alon-Amit"
+                },
+                {
+                    "user_id": "Anurag Bishnoi",
+                    "user_href": "/profile/Anurag-Bishnoi"
+                },
+                {
+                    "user_id": "Nathan Lin",
+                    "user_href": "/profile/Nathan-Lin-10"
+                },
+                {
+                    "user_id": "Prakhar Pratyush",
+                    "user_href": "/profile/Prakhar-Pratyush-3"
+                },
+                {
+                    "user_id": "Nelvin Tan",
+                    "user_href": "/profile/Nelvin-Tan"
+                },
+                {
+                    "user_id": "Naman Pratap",
+                    "user_href": "/profile/Naman-Pratap"
+                },
+                {
+                    "user_id": "Edward Elric",
+                    "user_href": "/profile/Edward-Elric-225"
+                },
+                {
+                    "user_id": "Kashish Jagga",
+                    "user_href": "/profile/Kashish-Jagga"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian McCullough",
+                "href": "/profile/Ian-McCullough"
+            },
+            "answer_text": "Order is a \"real\" construct, and \u2013 as Yasha has laid out \u2013 that construct of order is only really meaningful if it holds reliably through operations. It ultimately ties back to the ways number lines that we all learned about in elementary school work. That, in turn, was the foundation for greater than/less than inequalities in algebra. In a nutshell, [math]i[/math] messes up number lines. Any n-dimensional real number can ultimately be reduced to a vector with a magnitude and a direction (although it becomes mind-bendingly difficult to visualize numbers above 3-space or 4-space). That vector and direction allows for operations and comparisons. [math]i[/math] isn't a different dimension; it's a different universe that exists between changes in direction on any given real axis. Since I'm punching above my weight class on this,  I'll have to borrow from the Internet. http://www.cut-the-knot.org/do_you_know/complex_compare.shtml To see what the problem is let's turn to the multiplication. The following is true for real numbers: (1)\t If [math]a<b[/math] and [math]0<c[/math] then [math]ac<bc[/math] Note that i may be written as [math]0+i1[/math] while [math]0=0+i0[/math]. Therefore, by definition, [math]0<i[/math]. Assume (1) holds for complex numbers and the lexicographic order. Obviously [math]-1<1[/math]. Multiplying by i we get [math]-i<i[/math]. Multiplying by i one more time produces [math]-i^2<i^2[/math]. By definition, this implies [math]1<(-1)[/math] which is absurd. The derivation is quite formal and does not use any particular properties of the lexicographic order. The crucial thing was that i satisfied the inequality [math]0 < i[/math]. Had we had [math]i<0[/math] we would have gotten a contradiction in precisely the same way now applying [math]0<(-i)[/math]. The real problem stems from the sheer fact that [math]i[/math] is somehow comparable to [math]0[/math]. The law by which for any two numbers [math]a[/math] and [math]b[/math], either [math]a<b[/math] or [math]b<a[/math] or [math]a=b[math], is known as Trichotomy. Trichotomy holds for the usual order of real numbers. But, as we just saw, the order between complex numbers for which (1) holds, could not satisfy the law of trichotomy and vice versa. If the order between complex numbers is complete (i.e. satisfies the Trichotomy law) then (1) could not possibly hold. See also: http://mathworld.wolfram.com/ComplexNumber.html ",
+            "date": "Answered June 29, 2012",
+            "views": "699",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Joshua Engel",
+                    "user_href": "/profile/Joshua-Engel"
+                },
+                {
+                    "user_id": "Frank Heile",
+                    "user_href": "/profile/Frank-Heile"
+                },
+                {
+                    "user_id": "David Urquhart",
+                    "user_href": "/profile/David-Urquhart"
+                },
+                {
+                    "user_id": "Marc Bodnick",
+                    "user_href": "/profile/Marc-Bodnick"
+                },
+                {
+                    "user_id": "Daniel Helman",
+                    "user_href": "/profile/Daniel-Helman"
+                }
+            ]
+        }
+    ]
+}

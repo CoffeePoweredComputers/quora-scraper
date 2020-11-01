@@ -1,0 +1,37 @@
+{
+    "title": "How to prove that anything to the power of 0 is equal to 1 - Quora",
+    "tags": [
+        "Division by Zero",
+        "Zero (number)",
+        "Proofs (mathematics)",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Lang",
+                "href": "/profile/Jonathan-Lang-6"
+            },
+            "answer_text": "   \u2026and so on. That is, when you raise  to the power of a counting number, you multiply  by that many s. This definition logically works with zero as well: you multiply  by no s \u2014 that is, you don't multiply it by anything. So . This can be expanded using the fact that : \u2022 what about negative exponents? , so . \u2022 rational exponents? , so . This can be generalized to show that . Raise that to the power of , and you now have a definition that works for all rational numbers. \u2022 irrational exponents? Every irrational number can be represented by an infinite series that gets closer and closer to the number's value the more terms you add. Apply  to that, and you end up with an infinite series of factors multiplied together instead of an infinite series of terms added together. It can be shown that if the series of terms converges to a real number, then so does the corresponding series of factors. You can even extend the definition to complex exponents, though doing so is easier to explain using the natural number  as the base instead of an arbitrary base of . It can be shown that . That is  maps the rectilinear coordinates of Z to the polar coordinates of a new complex number. ",
+            "date": "Updated May 21, 2018",
+            "views": "16",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sammy McClelland",
+                    "user_href": "/profile/Sammy-McClelland-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Drake Way",
+                "href": "/profile/Drake-Way"
+            },
+            "answer_text": "There are a lot of good answers that explain how to get there, but I want to cover this from a more fundamental understanding of what exponentiation is. Not only that b^0 can exist, more importantly, that it must exist. Exponentiation is the process of converting addition to multiplication. If we have a base b, then: [math]b^{x+y}=b^xb^y.[/math] Left side, addition. Right side, multiplication. This property, the index property, is what makes exponentiation important and interesting. So, what does this have to do with zeroes and ones? Zero has many properties, but in addition, it's property is that of the additive identity. Add anything to zero or zero to anything, and nothing changes. This means that: [math]b^{a+0}=b^a[/math] However, because exponentiation must also convert addition to multiplication the following must also be true: [math]b^{a+0}=b^ab^0[/math] Which means by corrolary: [math]b^a=b^ab^0.[/math] Thus we prove that if 0 is the additive identity, [math]b^0[/math] must be the multiplicative identity. The identity must convert from addition to multiplication because exponents convert addition to multiplication! And the multiplicative identity is 1. Therefore exponentiation must convert 0, to 1. ",
+            "date": "Answered May 20, 2018",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "title": "How can we avoid attempting to solve impossible or undecidable problems? How do we know a problem does have a solution? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ben Clare",
+                "href": "/profile/Ben-Clare-4"
+            },
+            "answer_text": "Let's pretend we have some magical new problem, that you've just found. How do we find if it has any solutions, and how do we find them? First, I'd look at if you can check if a solution is correct. Is that possible? If you cant check that, it's unsolvable. This may sound dumb, but for example, if Im looking at the Halting Problem, if I have a Turing machine, and I know it halts for all inputs, I can't verify if that is true or not. I can't prove that to someone else. Next, I'd look at the range of possible solutions. Is it bounded? In other words, is there a finite number of solutions? If so, we have an algorithm to solve it. Just go through each possible solution, and check if valid. It's usually inefficient, but at least you've shown the problem is solvable. Next, I'd be looking at the problem from an abstract point of view. Try rephrasing the problem. You may find it looks like something you've seen before. This is sometimes called transformation. If you can transform your problem into another, then if you can solve either of them, you can solve both. But if either is unsolvable/undecidable, they are both undecidable. That'll get you somewhere. These are the normal methods for finding if something is undecidable or not. You see if you can do a \u201cmapping reduction\u201d, or transformation, from your new problem, to a known and studied problem. Then you infer properties from that. ",
+            "date": "Answered January 11, 2018",
+            "views": "148",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nuda Lu Velasco",
+                    "user_href": "/profile/Nuda-Lu-Velasco"
+                }
+            ]
+        }
+    ]
+}

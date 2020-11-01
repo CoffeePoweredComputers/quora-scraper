@@ -1,0 +1,1479 @@
+{
+    "title": "What is the sum of n terms of a Fibonacci series? - Quora",
+    "tags": [
+        "Fibonacci Sequence",
+        "Fibonacci Numbers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andriansyah Lesner",
+                "href": "/profile/Andriansyah-Lesner"
+            },
+            "answer_text": "It has something to do with binet\u2019s formula I can tell you, but before we get to that, allow me to introduce you to the generating function method on how to find the n-th terms of the series below, [math]F_{n+1}=F_{n-1}+F_{n},[/math] for [math]F_0=1[/math], [math]F_1=1[/math] I had learned this method quite for some time. And I think personally this is the best way to prove binet\u2019s Fibonacci formula via generating function. Ok, so here it is. Write down the original implicit formula: [math]F_{n+1}=F_{n-1}+F_{n},[/math] for [math]F_0=1[/math], [math]F_1=1[/math] Then sum up both side of the equation after you multiply each terms with [math]x^n.[/math] Pretty much it\u2019ll go like this, [math]\\sum{F_{n+1}x^n}=\\sum{F_{n-1}x^n}+\\sum{{F_n}x^n}[/math] Now if the generating function of [math]F(x)=\\sum{F_n}x^n[/math] then [math]\\sum{F_{n+1}x^n}=\\frac{F(x)-x}{x}[/math] also, we have [math]\\sum{F_{n-1}x^n}=xF(x)[/math] From here we have, [math]\\frac{F(x)-x}{x}=xF(x)+F(x)[/math] And so we have the generating function of the Fibonacci series, [math]F(x)=\\frac{x}{1-x-x^2}[/math] You might have noticed that the explicit formula of the given generating function is the coefficient of [math]x^n[/math] in [math]F(x)=\\sum{{F_n}x^n}[/math]. On with the solution, here comes the trickiest part of all. We need to factor the de numerator of [math]\\frac{x}{1-x-x^2}[/math]. Here it goes, [math]F(x)=\\frac{x}{1-x-x^2}=\\frac{x}{(1-px)(1-qx)}=\\frac{1}{\\sqrt{5}}(\\frac{1}{1-px}-\\frac{1}{1-qx})[/math] From here, take [math]|x|<1[/math] we have [math]F(x)=\\frac{1}{\\sqrt{5}}(\\sum{p^nx^n}-\\sum{q^nx^n})[/math] we can extract the coefficient of [math]x^n[/math] and assign it as binet\u2019s Fibonacci number formula i.e, [math]F_{n}=\\frac{1}{\\sqrt{5}}(p^n-q^n)[/math] Now [math]F_{n}[/math] is n-th term of the Fibonacci series or the explicit formula of Fibonacci number where [math]p=\\frac{1+\\sqrt{5}}{2}[/math] and [math]q=\\frac{1-\\sqrt{5}}{2}.[/math] I guess that is all from me if you have a question put in the comment section below, peace out! ",
+            "date": "Answered January 13, 2018",
+            "views": "178",
+            "upvotes": " View 26 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Farhana Bernan",
+                    "user_href": "/profile/Farhana-Bernan"
+                },
+                {
+                    "user_id": "Debraj Kundu",
+                    "user_href": "/profile/Debraj-Kundu-18"
+                },
+                {
+                    "user_id": "Nguy\u1ec5n An",
+                    "user_href": "/profile/Nguy\u1ec5n-An-51"
+                },
+                {
+                    "user_id": "Preeti Yadav",
+                    "user_href": "/profile/Preeti-Yadav-1032"
+                },
+                {
+                    "user_id": "Madhavi Latha",
+                    "user_href": "/profile/Madhavi-Latha-274"
+                },
+                {
+                    "user_id": "Suryansh Sharma",
+                    "user_href": "/profile/Suryansh-Sharma-188"
+                },
+                {
+                    "user_id": "Ganesh Chandra",
+                    "user_href": "/profile/Ganesh-Chandra-43"
+                },
+                {
+                    "user_id": "Suresh Rathore",
+                    "user_href": "/profile/Suresh-Rathore-8"
+                },
+                {
+                    "user_id": "Ph\u1ed3ng T\u00f4m B\u00e1nh",
+                    "user_href": "/profile/Ph\u1ed3ng-T\u00f4m-B\u00e1nh"
+                },
+                {
+                    "user_id": "M.K. Malik",
+                    "user_href": "/profile/M-K-Malik"
+                },
+                {
+                    "user_id": "Anil Kohli",
+                    "user_href": "/profile/Anil-Kohli-23"
+                },
+                {
+                    "user_id": "Tripti Gupta",
+                    "user_href": "/profile/Tripti-Gupta-70"
+                },
+                {
+                    "user_id": "Sree Vatsa",
+                    "user_href": "/profile/Sree-Vatsa-11"
+                },
+                {
+                    "user_id": "Akash Ram",
+                    "user_href": "/profile/Akash-Ram-35"
+                },
+                {
+                    "user_id": "Nabarun Gupta",
+                    "user_href": "/profile/Nabarun-Gupta"
+                },
+                {
+                    "user_id": "Karen Zheung",
+                    "user_href": "/profile/Karen-Zheung-1"
+                },
+                {
+                    "user_id": "Kousshik Raj",
+                    "user_href": "/profile/Kousshik-Raj-1"
+                },
+                {
+                    "user_id": "Marko Beocanin",
+                    "user_href": "/profile/Marko-Beocanin"
+                },
+                {
+                    "user_id": "\u05e9\u05d5\u05df \u05e7\u05e8\u05e0\u05d9\u05e6\u05de\u05df",
+                    "user_href": "/profile/\u05e9\u05d5\u05df-\u05e7\u05e8\u05e0\u05d9\u05e6\u05de\u05df"
+                },
+                {
+                    "user_id": "Sarthak Tomar",
+                    "user_href": "/profile/Sarthak-Tomar-16"
+                },
+                {
+                    "user_id": "Debendra Gurung",
+                    "user_href": "/profile/Debendra-Gurung"
+                },
+                {
+                    "user_id": "Yash Jain",
+                    "user_href": "/profile/Yash-Jain-128"
+                },
+                {
+                    "user_id": "Priyanshu Bohra",
+                    "user_href": "/profile/Priyanshu-Bohra-1"
+                },
+                {
+                    "user_id": "Ellen Sassani",
+                    "user_href": "/profile/Ellen-Sassani"
+                },
+                {
+                    "user_id": "Nick Shales",
+                    "user_href": "/profile/Nick-Shales"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ashok Saini",
+                "href": "/profile/Ashok-Saini-40"
+            },
+            "answer_text": "Fibonacci sequence is  We can observe that a recurrence relation exist  or  with initial conditions  Now we take the help of Z transform Taking Z transform on both side of 1st equation  Now taking the common all  Now we have to perform inverse Z transform  Find the roots of this equation  Here Golden Ratio appears  Now apply the partial fraction decomposition  Find the value of A and B  A and B are obtained in terms of [math]\\alpha [/math] and [math]\\beta[/math]  Now taking the help of Z transform  Applying the time shifting property  Finally got the expression of [math]y(n) [/math]in terms of [math]\\alpha [/math]and [math]\\beta[/math]  Golden Ratio  Relationships between [math]\\alpha [/math]and [math]\\phi[/math]  Relationships between [math]\\alpha [/math]and [math]\\beta[/math]   Expression of [math]y(n) [/math]  Substituting the value of Golden Ratio  This is the General term of the Fibonacci Sequence Now to find the sum of first nth term [math]\\displaystyle \\sum_{k=1}^{n} \\phi^{k} u(k-1) = \\sum_{k=2}^{n} \\phi^{k} = 0 + \\phi^2 + \\phi^3 + \\phi^4 + ...... +\\phi^n = \\phi^2 \\Bigg[ \\frac {\\phi^{n-1} - 1}{\\phi -1} \\Bigg] u(n-1)[/math] [math]\\displaystyle \\sum_{k=1}^{n} (1 - \\phi)^{k} u(k-1) = \\sum_{k=2}^{n} (1- \\phi)^{k}  = 0 + (1 - \\phi)^2 + (1 - \\phi)^3 + ...... + (1- \\phi)^{n} = - (1 - \\phi)^2 \\Bigg[ \\frac {(1 - \\phi)^{n-1} - 1}{\\phi} \\Bigg] u(n-1)[/math] Now replace the values of above two expression [math]\\displaystyle S_n = \\frac {1}{\\sqrt{5}} \\Bigg[ \\phi^2 \\frac {\\phi^{n-1} - 1}{\\phi -1} u(n-1) +  (1 - \\phi)^2 \\frac {(1 - \\phi)^{n-1} - 1}{\\phi} u(n-1) \\Bigg][/math] || Please upvote the answer if you find something useful || ",
+            "date": "Answered November 5, 2018",
+            "views": "65",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arvind Mishra",
+                    "user_href": "/profile/Arvind-Mishra-308"
+                },
+                {
+                    "user_id": "Shankar Sain",
+                    "user_href": "/profile/Shankar-Sain-4"
+                },
+                {
+                    "user_id": "Manash Baul",
+                    "user_href": "/profile/Manash-Baul"
+                },
+                {
+                    "user_id": "Rajasekhar Muppidi",
+                    "user_href": "/profile/Rajasekhar-Muppidi"
+                },
+                {
+                    "user_id": "ATHARVA JOSHI",
+                    "user_href": "/profile/ATHARVA-JOSHI-54"
+                },
+                {
+                    "user_id": "Deepak Ojha",
+                    "user_href": "/profile/Deepak-Ojha-182"
+                },
+                {
+                    "user_id": "Ph\u1ed3ng T\u00f4m B\u00e1nh",
+                    "user_href": "/profile/Ph\u1ed3ng-T\u00f4m-B\u00e1nh"
+                },
+                {
+                    "user_id": "Reddy Vishwas",
+                    "user_href": "/profile/Reddy-Vishwas"
+                },
+                {
+                    "user_id": "\u0410\u0442\u0430\u043d\u0430\u0441 \u0414\u0438\u043c\u0438\u0442\u0440\u043e\u0432",
+                    "user_href": "/profile/\u0410\u0442\u0430\u043d\u0430\u0441-\u0414\u0438\u043c\u0438\u0442\u0440\u043e\u0432-3"
+                },
+                {
+                    "user_id": "Juan Pablo CILFONE ARGIBAY",
+                    "user_href": "/profile/Juan-Pablo-CILFONE-ARGIBAY"
+                },
+                {
+                    "user_id": "Kousshik Raj",
+                    "user_href": "/profile/Kousshik-Raj-1"
+                },
+                {
+                    "user_id": "Kunal Kishore",
+                    "user_href": "/profile/Kunal-Kishore-219"
+                },
+                {
+                    "user_id": "Satyam Pandey",
+                    "user_href": "/profile/Satyam-Pandey-127"
+                },
+                {
+                    "user_id": "Ajit Singh",
+                    "user_href": "/profile/Ajit-Singh-1328"
+                },
+                {
+                    "user_id": "Ajay M",
+                    "user_href": "/profile/Ajay-M-68"
+                },
+                {
+                    "user_id": "ASHOK SAINI",
+                    "user_href": "/profile/ASHOK-SAINI-100"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "B.L. Srivastava",
+                "href": "/profile/B-L-Srivastava"
+            },
+            "answer_text": "A Fibonacci sequence is usually given as follows ; 0, 1, 1, 2, 3, 5, \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7\u00b7 y(n), y(n +1), y(n+2), \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7. Here every term of the sequence is the sum of the preceeding two terms with first two starting terms as y(0) = 0 and y(1) = 1 . In fact, we have, the general term of this sequence as y(n + 2) = y(n + 1) + y(n) \u00b7\u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7 (1) with y(0) = 0 & y(1) = 1 . Now observe that this is a linear homogeneous difference equation and can be solved by techniques available for solving such type of difference equations which is analogus to the solving of linear differential equations . For that we proceed as below; The equation of (1) can be written in terms of shift operator E as : [E^(2) - E - 1] y(n) = 0 \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7(2) Now its auxiliary equation is ; m^(2) - m - 1 = 0 ==> m = (1 \u00b1\u221a(5))/2 . Therefore C. F. is ; y(n)=A(1+\u221a5))/2)^(n)+B(1\u2212 \u221a5))/2)^(n) where A, B are constants to be determined, with the help of initial conditions . Now if we put n = 0 & n = 1 in the C. F. , we get, A + B = 0 and A (1 + \u221a5))/2) +B(1\u2212\u221a5))/2 = 1 . Solving these two equations for A, B ,we get, A = 1/\u221a5 and B = - 1/\u221a5 . Putting these values of A, B in C. F. , we have C. F. = y(n) =(1/\u221a5)[(1 + \u221a5)/2)^(n)-(1 -\u221a5)/2)^(n)] . And clearly P. S. = 0/(E^(2) - E - 1) = 0 . Therefore general solution of (1 ) is : y(n) = C.F. + P.S. =(1/\u221a5)[(1 + \u221a5)/2)^(n)-(1-\u221a5)/2)^(n)]. Now, the sum of n terms of this sequence may be found as follows ; we have from (1) ; y(n) = y(n+2) - y(n+1) , putting the value of n = 1, 2, 3, \u00b7\u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7\u00b7 we get, y(0) = y(2) - y(1) y(1) = y(3) - y(2) y(2) = y(4) - y(3) continuing like this , we get , \u00b7\u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7 \u00b7\u00b7\u00b7\u00b7 y(n) = y(n+2) - y(n+1) . Adding both side,we obtain ; \u03a3(y(k)) = y(n + 2) - y(1) [math]              [/math]= y(n + 2) - 1 . Which is the required sum . ",
+            "date": "Updated October 15, 2020",
+            "views": "37",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fiona Martino",
+                    "user_href": "/profile/Fiona-Martino"
+                },
+                {
+                    "user_id": "Upendra Kadre",
+                    "user_href": "/profile/Upendra-Kadre"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "I'm following the convention that [math]F_0 = 0[/math] and [math]F_1 = 1[/math] to avoid ambiguity about which term is zero.  We can get a recurrence relation for the sums following a pretty straightforward calculation:[math]\\sum_{i = 1}^n F_i = F_1 + \\sum_{i = 2}^n F_i[/math][math]\\sum_{i = 1}^n F_i = F_1 + \\sum_{i = 2}^n F_{i - 1} + \\sum_{i = 2}^n F_{i - 2}[/math][math]\\sum_{i = 1}^n F_i = F_1 + \\sum_{i = 1}^{n - 1} F_i + \\sum_{i = 0}^{n - 2} F_i[/math][math]\\sum_{i = 1}^n F_i = F_1 + \\sum_{i = 1}^{n - 1} F_i + \\sum_{i = 1}^{n - 2} F_i[/math]So if we define [math]S_n = \\sum_{i = 1}^n F_i[/math], we get the recurrence relation[math]S_n = 1 + S_{n - 1} + S_{n - 2}[/math]with the initial conditions [math]S_0 = 0[/math] and [math]S_1 = 1[/math].  You can solve that by hand if you're feeling brave, or you can plug in various thing to see what works and eventually conclude that [math]S_n = F_{n + 2} - 1[/math]. ",
+            "date": "Answered February 7, 2013",
+            "views": "369",
+            "upvotes": " View 27 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rishabh Deep Singh",
+                    "user_href": "/profile/Rishabh-Deep-Singh"
+                },
+                {
+                    "user_id": "Ashish Kumar Jha",
+                    "user_href": "/profile/Ashish-Kumar-Jha-146"
+                },
+                {
+                    "user_id": "Sezan Ahmed",
+                    "user_href": "/profile/Sezan-Ahmed"
+                },
+                {
+                    "user_id": "Debendra Gurung",
+                    "user_href": "/profile/Debendra-Gurung"
+                },
+                {
+                    "user_id": "Shibabrata Nanda",
+                    "user_href": "/profile/Shibabrata-Nanda"
+                },
+                {
+                    "user_id": "Sudhanva Narayana",
+                    "user_href": "/profile/Sudhanva-Narayana"
+                },
+                {
+                    "user_id": "Mann",
+                    "user_href": "/profile/Mann-31"
+                },
+                {
+                    "user_id": "Bhavit Sharma",
+                    "user_href": "/profile/Bhavit-Sharma-1"
+                },
+                {
+                    "user_id": "Sajal Agrawal",
+                    "user_href": "/profile/Sajal-Agrawal-4"
+                },
+                {
+                    "user_id": "Aditya Pratap Singh",
+                    "user_href": "/profile/Aditya-Pratap-Singh-114"
+                },
+                {
+                    "user_id": "Prashanth CN",
+                    "user_href": "/profile/Prashanth-CN"
+                },
+                {
+                    "user_id": "Ashikur Rahman Nabir",
+                    "user_href": "/profile/Ashikur-Rahman-Nabir"
+                },
+                {
+                    "user_id": "Dragon Fly",
+                    "user_href": "/profile/Dragon-Fly-144"
+                },
+                {
+                    "user_id": "James-Andrew Sarmiento",
+                    "user_href": "/profile/James-Andrew-Sarmiento-1"
+                },
+                {
+                    "user_id": "Abhishek Yadav",
+                    "user_href": "/profile/Abhishek-Yadav-19"
+                },
+                {
+                    "user_id": "June Ho",
+                    "user_href": "/profile/June-Ho-8"
+                },
+                {
+                    "user_id": "Shailesh Makhija",
+                    "user_href": "/profile/Shailesh-Makhija"
+                },
+                {
+                    "user_id": "Nitesh Gupta",
+                    "user_href": "/profile/Nitesh-Gupta-92"
+                },
+                {
+                    "user_id": "Vidhyalakshmi Kalaichelvan",
+                    "user_href": "/profile/Vidhyalakshmi-Kalaichelvan"
+                },
+                {
+                    "user_id": "Mohammad Ahmar Hashmi",
+                    "user_href": "/profile/Mohammad-Ahmar-Hashmi"
+                },
+                {
+                    "user_id": "Harinder Singh Gill",
+                    "user_href": "/profile/Harinder-Singh-Gill-1"
+                },
+                {
+                    "user_id": "Bhargav Ram",
+                    "user_href": "/profile/Bhargav-Ram-12"
+                },
+                {
+                    "user_id": "Marlon Misra",
+                    "user_href": "/profile/Marlon-Misra"
+                },
+                {
+                    "user_id": "Benjamin Golub",
+                    "user_href": "/profile/Benjamin-Golub-2"
+                },
+                {
+                    "user_id": "Satya Nand",
+                    "user_href": "/profile/Satya-Nand"
+                },
+                {
+                    "user_id": "Samit Barai",
+                    "user_href": "/profile/Samit-Barai"
+                },
+                {
+                    "user_id": "Gaurav Jain",
+                    "user_href": "/profile/Gaurav-Jain-49"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Devendra Shelar",
+                "href": "/profile/Devendra-Shelar"
+            },
+            "answer_text": "F(n)       =    F(n+2)   -   F(n+1)F(n-1)    =    F(n+1)   -   F(n).                       .                 ..                       .                 ..                       .                 .F(1)       =    F(3)       -    F(2)------------------------------------------sum       =    F(n+2)   -    F(2)                  .... adding all equations In right hand side, the top left and bottom right element remain. Others get cancelled. Left hand side is the sum of fibonacci numbers Thus,sum     =     F(n+2)   -     1 Other answers are correct too. But, this is another technique that could be used elsewhere. ",
+            "date": "Answered February 25, 2013",
+            "views": "441",
+            "upvotes": " View 125 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arbash Nazeer",
+                    "user_href": "/profile/Arbash-Nazeer"
+                },
+                {
+                    "user_id": "Bappa Bain",
+                    "user_href": "/profile/Bappa-Bain-1"
+                },
+                {
+                    "user_id": "Hi\u1ec7p M\u1ea1nh",
+                    "user_href": "/profile/Hi\u1ec7p-M\u1ea1nh"
+                },
+                {
+                    "user_id": "Hemanth Kollipara",
+                    "user_href": "/profile/Hemanth-Kollipara-2"
+                },
+                {
+                    "user_id": "Saurabh Puthal",
+                    "user_href": "/profile/Saurabh-Puthal-1"
+                },
+                {
+                    "user_id": "Sanjay Singh",
+                    "user_href": "/profile/Sanjay-Singh-2242"
+                },
+                {
+                    "user_id": "Satej Bidvai",
+                    "user_href": "/profile/Satej-Bidvai"
+                },
+                {
+                    "user_id": "Adithyan Ms",
+                    "user_href": "/profile/Adithyan-Ms"
+                },
+                {
+                    "user_id": "Nishit Patel",
+                    "user_href": "/profile/Nishit-Patel-61"
+                },
+                {
+                    "user_id": "Ashwin S. Hebbar",
+                    "user_href": "/profile/Ashwin-S-Hebbar"
+                },
+                {
+                    "user_id": "Bohar Steve",
+                    "user_href": "/profile/Bohar-Steve"
+                },
+                {
+                    "user_id": "James Camacho",
+                    "user_href": "/profile/James-Camacho-5"
+                },
+                {
+                    "user_id": "Naveen Kumar",
+                    "user_href": "/profile/Naveen-Kumar-649"
+                },
+                {
+                    "user_id": "Kanika Das",
+                    "user_href": "/profile/Kanika-Das-44"
+                },
+                {
+                    "user_id": "Icy Floaty",
+                    "user_href": "/profile/Icy-Floaty"
+                },
+                {
+                    "user_id": "Hemanth Kumar Dasari",
+                    "user_href": "/profile/Hemanth-Kumar-Dasari-1"
+                },
+                {
+                    "user_id": "Yash Kumar",
+                    "user_href": "/profile/Yash-Kumar-461"
+                },
+                {
+                    "user_id": "Moataz Mohamed",
+                    "user_href": "/profile/Moataz-Mohamed-17"
+                },
+                {
+                    "user_id": "Delta Arts",
+                    "user_href": "/profile/Delta-Arts"
+                },
+                {
+                    "user_id": "Vivek Sharma",
+                    "user_href": "/profile/Vivek-Sharma-6386"
+                },
+                {
+                    "user_id": "Hemant Dhanuka",
+                    "user_href": "/profile/Hemant-Dhanuka-1"
+                },
+                {
+                    "user_id": "V\u0169 T\u00f4",
+                    "user_href": "/profile/V\u0169-T\u00f4"
+                },
+                {
+                    "user_id": "Tushar Kanaujia",
+                    "user_href": "/profile/Tushar-Kanaujia-1"
+                },
+                {
+                    "user_id": "Christopher Ernst",
+                    "user_href": "/profile/Christopher-Ernst"
+                },
+                {
+                    "user_id": "Satyam Pandey",
+                    "user_href": "/profile/Satyam-Pandey-127"
+                },
+                {
+                    "user_id": "Han Solo",
+                    "user_href": "/profile/Han-Solo-171"
+                },
+                {
+                    "user_id": "Dunatotatos Majuscule",
+                    "user_href": "/profile/Dunatotatos-Majuscule"
+                },
+                {
+                    "user_id": "Prerna Aggarwal",
+                    "user_href": "/profile/Prerna-Aggarwal-20"
+                },
+                {
+                    "user_id": "Byron Johnson",
+                    "user_href": "/profile/Byron-Johnson"
+                },
+                {
+                    "user_id": "Rohan Agrawal",
+                    "user_href": "/profile/Rohan-Agrawal-8"
+                },
+                {
+                    "user_id": "Sai Nikhil",
+                    "user_href": "/profile/Sai-Nikhil-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/ASCII-\u0c6b-Code"
+                },
+                {
+                    "user_id": "Sai Harish",
+                    "user_href": "/profile/Sai-Harish-18"
+                },
+                {
+                    "user_id": "Vineet Singh",
+                    "user_href": "/profile/Vineet-Singh-603"
+                },
+                {
+                    "user_id": "Manish Mahalwal",
+                    "user_href": "/profile/Manish-Mahalwal-1"
+                },
+                {
+                    "user_id": "Avneesh Gupta",
+                    "user_href": "/profile/Avneesh-Gupta-17"
+                },
+                {
+                    "user_id": "Jessie Chen",
+                    "user_href": "/profile/Jessie-Chen-69"
+                },
+                {
+                    "user_id": "Anirudh K Chadha",
+                    "user_href": "/profile/Anirudh-K-Chadha"
+                },
+                {
+                    "user_id": "Ritwik Shanker",
+                    "user_href": "/profile/Ritwik-Shanker"
+                },
+                {
+                    "user_id": "Piyush Kanti Chanda",
+                    "user_href": "/profile/Piyush-Kanti-Chanda"
+                },
+                {
+                    "user_id": "Sreyashi Bhattacharjee",
+                    "user_href": "/profile/Sreyashi-Bhattacharjee-6"
+                },
+                {
+                    "user_id": "Makarand Patare",
+                    "user_href": "/profile/Makarand-Patare"
+                },
+                {
+                    "user_id": "Sridhar Thiagarajan",
+                    "user_href": "/profile/Sridhar-Thiagarajan"
+                },
+                {
+                    "user_id": "\u0110\u1ed7 Th\u00e0nh",
+                    "user_href": "/profile/\u0110\u1ed7-Th\u00e0nh-1"
+                },
+                {
+                    "user_id": "Saurav Tiwary",
+                    "user_href": "/profile/Saurav-Tiwary-2"
+                },
+                {
+                    "user_id": "Rakesh Kumar",
+                    "user_href": "/profile/Rakesh-Kumar-25"
+                },
+                {
+                    "user_id": "Bahar B",
+                    "user_href": "/profile/Bahar-B-1"
+                },
+                {
+                    "user_id": "Dmitro Dvoryanov",
+                    "user_href": "/profile/Dmitro-Dvoryanov"
+                },
+                {
+                    "user_id": "Farhad Allahverdiyev",
+                    "user_href": "/profile/Farhad-Allahverdiyev"
+                },
+                {
+                    "user_id": "Ishan Keshri",
+                    "user_href": "/profile/Ishan-Keshri"
+                },
+                {
+                    "user_id": "Marco Vona",
+                    "user_href": "/profile/Marco-Vona"
+                },
+                {
+                    "user_id": "Shivam Jindal",
+                    "user_href": "/profile/Shivam-Jindal-38"
+                },
+                {
+                    "user_id": "Nikita Melnikov",
+                    "user_href": "/profile/Nikita-Melnikov-2"
+                },
+                {
+                    "user_id": "Haris bin Zahid",
+                    "user_href": "/profile/Haris-bin-Zahid"
+                },
+                {
+                    "user_id": "Paarth Sachan",
+                    "user_href": "/profile/Paarth-Sachan"
+                },
+                {
+                    "user_id": "Jyotishka Ray Choudhury",
+                    "user_href": "/profile/Jyotishka-Ray-Choudhury"
+                },
+                {
+                    "user_id": "Sushant Gupta",
+                    "user_href": "/profile/Sushant-Gupta-57"
+                },
+                {
+                    "user_id": "Kyuhwa Lee",
+                    "user_href": "/profile/Kyuhwa-Lee"
+                },
+                {
+                    "user_id": "Mladen Ferne\u017eir",
+                    "user_href": "/profile/Mladen-Ferne\u017eir"
+                },
+                {
+                    "user_id": "Shashank",
+                    "user_href": "/profile/Shashank-415"
+                },
+                {
+                    "user_id": "NITISH KUMAR",
+                    "user_href": "/profile/NITISH-KUMAR-1060"
+                },
+                {
+                    "user_id": "Wenhai Zheng",
+                    "user_href": "/profile/Wenhai-Zheng"
+                },
+                {
+                    "user_id": "Prashanth CN",
+                    "user_href": "/profile/Prashanth-CN"
+                },
+                {
+                    "user_id": "Miljan Martic",
+                    "user_href": "/profile/Miljan-Martic"
+                },
+                {
+                    "user_id": "Pawan Kumar",
+                    "user_href": "/profile/Pawan-Kumar-623"
+                },
+                {
+                    "user_id": "Ashikur Rahman Nabir",
+                    "user_href": "/profile/Ashikur-Rahman-Nabir"
+                },
+                {
+                    "user_id": "Nilanjana Lodh",
+                    "user_href": "/profile/Nilanjana-Lodh"
+                },
+                {
+                    "user_id": "Archit Rai",
+                    "user_href": "/profile/Archit-Rai-1"
+                },
+                {
+                    "user_id": "Albert Heisenberg",
+                    "user_href": "/profile/Albert-Heisenberg"
+                },
+                {
+                    "user_id": "Jair Hern\u00e1ndez",
+                    "user_href": "/profile/Jair-Hern\u00e1ndez"
+                },
+                {
+                    "user_id": "Dragon Fly",
+                    "user_href": "/profile/Dragon-Fly-144"
+                },
+                {
+                    "user_id": "Chandan Chotu",
+                    "user_href": "/profile/Chandan-Chotu"
+                },
+                {
+                    "user_id": "S\u00e9v\u00e8re Durand",
+                    "user_href": "/profile/S\u00e9v\u00e8re-Durand"
+                },
+                {
+                    "user_id": "Sumit Jha",
+                    "user_href": "/profile/Sumit-Jha-3"
+                },
+                {
+                    "user_id": "Liu Lu",
+                    "user_href": "/profile/Liu-Lu-35"
+                },
+                {
+                    "user_id": "Hema Malini",
+                    "user_href": "/profile/Hema-Malini-5"
+                },
+                {
+                    "user_id": "Willy George Amaral Petrenko",
+                    "user_href": "/profile/Willy-George-Amaral-Petrenko"
+                },
+                {
+                    "user_id": "Ajit Yadav",
+                    "user_href": "/profile/Ajit-Yadav-22"
+                },
+                {
+                    "user_id": "Stephen Kazoullis",
+                    "user_href": "/profile/Stephen-Kazoullis"
+                },
+                {
+                    "user_id": "Motasem AL-Kayed",
+                    "user_href": "/profile/Motasem-AL-Kayed"
+                },
+                {
+                    "user_id": "Ansuman Bebarta",
+                    "user_href": "/profile/Ansuman-Bebarta"
+                },
+                {
+                    "user_id": "Raman R",
+                    "user_href": "/profile/Raman-R-4"
+                },
+                {
+                    "user_id": "Prabhat Singh",
+                    "user_href": "/profile/Prabhat-Singh-111"
+                },
+                {
+                    "user_id": "Josiah Wood",
+                    "user_href": "/profile/Josiah-Wood"
+                },
+                {
+                    "user_id": "Roopeshwar Devarajan",
+                    "user_href": "/profile/Roopeshwar-Devarajan"
+                },
+                {
+                    "user_id": "Pedro Paulo Andrade",
+                    "user_href": "/profile/Pedro-Paulo-Andrade-1"
+                },
+                {
+                    "user_id": "Neeraj Singh Aithani",
+                    "user_href": "/profile/Neeraj-Singh-Aithani"
+                },
+                {
+                    "user_id": "Bhavit Sharma",
+                    "user_href": "/profile/Bhavit-Sharma-1"
+                },
+                {
+                    "user_id": "Prathamesh Dahale",
+                    "user_href": "/profile/Prathamesh-Dahale"
+                },
+                {
+                    "user_id": "Gregorio Morales",
+                    "user_href": "/profile/Gregorio-Morales-1"
+                },
+                {
+                    "user_id": "Tejasvi Sharma",
+                    "user_href": "/profile/Tejasvi-Sharma-4"
+                },
+                {
+                    "user_id": "Saatwik Singh",
+                    "user_href": "/profile/Saatwik-Singh"
+                },
+                {
+                    "user_id": "Bhuvnesh Jain",
+                    "user_href": "/profile/Bhuvnesh-Jain"
+                },
+                {
+                    "user_id": "Sanchayapol Lewgasamsarn",
+                    "user_href": "/profile/Sanchayapol-Lewgasamsarn"
+                },
+                {
+                    "user_id": "Bololox Matador",
+                    "user_href": "/profile/Bololox-Matador"
+                },
+                {
+                    "user_id": "Ripunjay Tripathi",
+                    "user_href": "/profile/Ripunjay-Tripathi"
+                },
+                {
+                    "user_id": "Vivek Kumar",
+                    "user_href": "/profile/Vivek-Kumar-644"
+                },
+                {
+                    "user_id": "Pankaj Birat",
+                    "user_href": "/profile/Pankaj-Birat"
+                },
+                {
+                    "user_id": "Pomin Wu",
+                    "user_href": "/profile/Pomin-Wu"
+                },
+                {
+                    "user_id": "Shriharsh Mishra",
+                    "user_href": "/profile/Shriharsh-Mishra"
+                },
+                {
+                    "user_id": "Anurag Shukla",
+                    "user_href": "/profile/Anurag-Shukla-3"
+                },
+                {
+                    "user_id": "Ravi Agarwal",
+                    "user_href": "/profile/Ravi-Agarwal-86"
+                },
+                {
+                    "user_id": "Shuhei Kagawa",
+                    "user_href": "/profile/Shuhei-Kagawa"
+                },
+                {
+                    "user_id": "Sanjeev Kumar",
+                    "user_href": "/profile/Sanjeev-Kumar-6797"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Quoc Trong Pham",
+                    "user_href": "/profile/Quoc-Trong-Pham"
+                },
+                {
+                    "user_id": "Md Imrul Hassan",
+                    "user_href": "/profile/Md-Imrul-Hassan"
+                },
+                {
+                    "user_id": "Sinjan Bandyopadhyay",
+                    "user_href": "/profile/Sinjan-Bandyopadhyay"
+                },
+                {
+                    "user_id": "Mohammad Ahmar Hashmi",
+                    "user_href": "/profile/Mohammad-Ahmar-Hashmi"
+                },
+                {
+                    "user_id": "Yunho An",
+                    "user_href": "/profile/Yunho-An"
+                },
+                {
+                    "user_id": "Praveen Ranjan Keshri",
+                    "user_href": "/profile/Praveen-Ranjan-Keshri"
+                },
+                {
+                    "user_id": "Aditya Dakur",
+                    "user_href": "/profile/Aditya-Dakur"
+                },
+                {
+                    "user_id": "Parth Kanungo",
+                    "user_href": "/profile/Parth-Kanungo"
+                },
+                {
+                    "user_id": "Nimesh Nagar",
+                    "user_href": "/profile/Nimesh-Nagar-1"
+                },
+                {
+                    "user_id": "Bhrigu Srivastava",
+                    "user_href": "/profile/Bhrigu-Srivastava"
+                },
+                {
+                    "user_id": "Mihir Shah",
+                    "user_href": "/profile/Mihir-Shah-37"
+                },
+                {
+                    "user_id": "Aanchal Dalmia",
+                    "user_href": "/profile/Aanchal-Dalmia"
+                },
+                {
+                    "user_id": "Rohan Suri",
+                    "user_href": "/profile/Rohan-Suri-3"
+                },
+                {
+                    "user_id": "Dhruv Sharma",
+                    "user_href": "/profile/Dhruv-Sharma-56"
+                },
+                {
+                    "user_id": "Jitendra Singh",
+                    "user_href": "/profile/Jitendra-Singh-20"
+                },
+                {
+                    "user_id": "Atul Vaibhav",
+                    "user_href": "/profile/Atul-Vaibhav-2"
+                },
+                {
+                    "user_id": "Abhijit Mondal",
+                    "user_href": "/profile/Abhijit-Mondal"
+                },
+                {
+                    "user_id": "J.Carlos Navea",
+                    "user_href": "/profile/J-Carlos-Navea"
+                },
+                {
+                    "user_id": "Ravi Kumar Roshan",
+                    "user_href": "/profile/Ravi-Kumar-Roshan"
+                },
+                {
+                    "user_id": "Abhijeet Somani",
+                    "user_href": "/profile/Abhijeet-Somani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Eichenlaub",
+                "href": "/profile/Mark-Eichenlaub"
+            },
+            "answer_text": "You can visualize the sum by turning it into a little game with jumping pennies. Here's a video I just made for it. (3:00 length)   ",
+            "date": "Answered February 7, 2013",
+            "views": "33",
+            "upvotes": " View 102 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ganesh Ravisankar",
+                    "user_href": "/profile/Ganesh-Ravisankar-1"
+                },
+                {
+                    "user_id": "Nathan Welsh",
+                    "user_href": "/profile/Nathan-Welsh-14"
+                },
+                {
+                    "user_id": "Alexander Viklund",
+                    "user_href": "/profile/Alexander-Viklund"
+                },
+                {
+                    "user_id": "Sophia Chen",
+                    "user_href": "/profile/Sophia-Chen-140"
+                },
+                {
+                    "user_id": "Nour Bzour",
+                    "user_href": "/profile/Nour-Bzour"
+                },
+                {
+                    "user_id": "Makarand Patare",
+                    "user_href": "/profile/Makarand-Patare"
+                },
+                {
+                    "user_id": "Eddy Cael Mamani",
+                    "user_href": "/profile/Eddy-Cael-Mamani"
+                },
+                {
+                    "user_id": "Jitesh Mittal",
+                    "user_href": "/profile/Jitesh-Mittal-3"
+                },
+                {
+                    "user_id": "Martin PK",
+                    "user_href": "/profile/Martin-PK"
+                },
+                {
+                    "user_id": "Andrew Lin",
+                    "user_href": "/profile/Andrew-Lin-78"
+                },
+                {
+                    "user_id": "Atul Kumar Mangat",
+                    "user_href": "/profile/Atul-Kumar-Mangat"
+                },
+                {
+                    "user_id": "Lin Sun",
+                    "user_href": "/profile/Lin-Sun-42"
+                },
+                {
+                    "user_id": "Mega Soft",
+                    "user_href": "/profile/Mega-Soft-2"
+                },
+                {
+                    "user_id": "Varun Gupta",
+                    "user_href": "/profile/Varun-Gupta-238"
+                },
+                {
+                    "user_id": "Himanshu Negi",
+                    "user_href": "/profile/Himanshu-Negi-14"
+                },
+                {
+                    "user_id": "Aryan Chouhan",
+                    "user_href": "/profile/Aryan-Chouhan"
+                },
+                {
+                    "user_id": "Ashish Yadav",
+                    "user_href": "/profile/Ashish-Yadav-314"
+                },
+                {
+                    "user_id": "Fiona Lyczynska",
+                    "user_href": "/profile/Fiona-Lyczynska"
+                },
+                {
+                    "user_id": "Harish Chakravarty",
+                    "user_href": "/profile/Harish-Chakravarty"
+                },
+                {
+                    "user_id": "Motasem AL-Kayed",
+                    "user_href": "/profile/Motasem-AL-Kayed"
+                },
+                {
+                    "user_id": "Ankit Garg",
+                    "user_href": "/profile/Ankit-Garg-15"
+                },
+                {
+                    "user_id": "Navroz Josan",
+                    "user_href": "/profile/Navroz-Josan"
+                },
+                {
+                    "user_id": "Lakshmana Ram",
+                    "user_href": "/profile/Lakshmana-Ram"
+                },
+                {
+                    "user_id": "Naimul Rifat",
+                    "user_href": "/profile/Naimul-Rifat"
+                },
+                {
+                    "user_id": "Chaitanya Kanna Chaitanya Kanna",
+                    "user_href": "/profile/Chaitanya-Kanna-Chaitanya-Kanna"
+                },
+                {
+                    "user_id": "Prathamesh Dahale",
+                    "user_href": "/profile/Prathamesh-Dahale"
+                },
+                {
+                    "user_id": "Saurabh Kadian",
+                    "user_href": "/profile/Saurabh-Kadian"
+                },
+                {
+                    "user_id": "Vineet Mehta",
+                    "user_href": "/profile/Vineet-Mehta-5"
+                },
+                {
+                    "user_id": "Riyaz Panjwani",
+                    "user_href": "/profile/Riyaz-Panjwani"
+                },
+                {
+                    "user_id": "Ripunjay Tripathi",
+                    "user_href": "/profile/Ripunjay-Tripathi"
+                },
+                {
+                    "user_id": "Archil K Srivastava",
+                    "user_href": "/profile/Archil-K-Srivastava"
+                },
+                {
+                    "user_id": "Tom McNamara",
+                    "user_href": "/profile/Tom-McNamara-4"
+                },
+                {
+                    "user_id": "Harshal Shinde",
+                    "user_href": "/profile/Harshal-Shinde-36"
+                },
+                {
+                    "user_id": "Yash Bhatt",
+                    "user_href": "/profile/Yash-Bhatt-12"
+                },
+                {
+                    "user_id": "Aayush Agarwal",
+                    "user_href": "/profile/Aayush-Agarwal-57"
+                },
+                {
+                    "user_id": "Raghav Somani",
+                    "user_href": "/profile/Raghav-Somani-3"
+                },
+                {
+                    "user_id": "Diego Z\u00fa\u00f1iga",
+                    "user_href": "/profile/Diego-Z\u00fa\u00f1iga"
+                },
+                {
+                    "user_id": "Vikash Srivastava",
+                    "user_href": "/profile/Vikash-Srivastava-43"
+                },
+                {
+                    "user_id": "Mughilan Thiru Ramasamy",
+                    "user_href": "/profile/Mughilan-Thiru-Ramasamy"
+                },
+                {
+                    "user_id": "Paul Knittel",
+                    "user_href": "/profile/Paul-Knittel"
+                },
+                {
+                    "user_id": "Bhrigu Srivastava",
+                    "user_href": "/profile/Bhrigu-Srivastava"
+                },
+                {
+                    "user_id": "Shyam Mehta",
+                    "user_href": "/profile/Shyam-Mehta-3"
+                },
+                {
+                    "user_id": "Aakriti Raj",
+                    "user_href": "/profile/Aakriti-Raj"
+                },
+                {
+                    "user_id": "Marco Devincenzis",
+                    "user_href": "/profile/Marco-Devincenzis"
+                },
+                {
+                    "user_id": "Murali Krishna",
+                    "user_href": "/profile/Murali-Krishna-11"
+                },
+                {
+                    "user_id": "Thomas B\u00f8rstad",
+                    "user_href": "/profile/Thomas-B\u00f8rstad"
+                },
+                {
+                    "user_id": "Matt Hodel",
+                    "user_href": "/profile/Matt-Hodel"
+                },
+                {
+                    "user_id": "Vasudha Pande",
+                    "user_href": "/profile/Vasudha-Pande"
+                },
+                {
+                    "user_id": "Satya Nand",
+                    "user_href": "/profile/Satya-Nand"
+                },
+                {
+                    "user_id": "Joseph Heavner",
+                    "user_href": "/profile/Joseph-Heavner"
+                },
+                {
+                    "user_id": "Akik Dey",
+                    "user_href": "/profile/Akik-Dey"
+                },
+                {
+                    "user_id": "Bjarke M\u00f8nsted",
+                    "user_href": "/profile/Bjarke-M\u00f8nsted"
+                },
+                {
+                    "user_id": "Julius Bier Kirkegaard",
+                    "user_href": "/profile/Julius-Bier-Kirkegaard"
+                },
+                {
+                    "user_id": "Christian Acosta",
+                    "user_href": "/profile/Christian-Acosta-3"
+                },
+                {
+                    "user_id": "Ankit Sharma",
+                    "user_href": "/profile/Ankit-Sharma-29"
+                },
+                {
+                    "user_id": "Samuel Salfati",
+                    "user_href": "/profile/Samuel-Salfati"
+                },
+                {
+                    "user_id": "Gautam Kumar",
+                    "user_href": "/profile/Gautam-Kumar-2"
+                },
+                {
+                    "user_id": "Kevin Cong",
+                    "user_href": "/profile/Kevin-Cong"
+                },
+                {
+                    "user_id": "Rahul Chandrashekhar",
+                    "user_href": "/profile/Rahul-Chandrashekhar"
+                },
+                {
+                    "user_id": "Devjyoti Patra",
+                    "user_href": "/profile/Devjyoti-Patra"
+                },
+                {
+                    "user_id": "AJ Cressman",
+                    "user_href": "/profile/AJ-Cressman"
+                },
+                {
+                    "user_id": "Balasubramoniam Rajendran",
+                    "user_href": "/profile/Balasubramoniam-Rajendran"
+                },
+                {
+                    "user_id": "Sunil Kumar Gopal",
+                    "user_href": "/profile/Sunil-Kumar-Gopal"
+                },
+                {
+                    "user_id": "Swarnaprakash Udayakumar",
+                    "user_href": "/profile/Swarnaprakash-Udayakumar"
+                },
+                {
+                    "user_id": "Rakshith Kunchum",
+                    "user_href": "/profile/Rakshith-Kunchum"
+                },
+                {
+                    "user_id": "Waqar Sarguroh",
+                    "user_href": "/profile/Waqar-Sarguroh"
+                },
+                {
+                    "user_id": "Abhimanyu Dhamija",
+                    "user_href": "/profile/Abhimanyu-Dhamija"
+                },
+                {
+                    "user_id": "Chinmay Jain",
+                    "user_href": "/profile/Chinmay-Jain"
+                },
+                {
+                    "user_id": "Kaushik Jayaram",
+                    "user_href": "/profile/Kaushik-Jayaram-1"
+                },
+                {
+                    "user_id": "Aatif Misbah",
+                    "user_href": "/profile/Aatif-Misbah"
+                },
+                {
+                    "user_id": "Raph Ael",
+                    "user_href": "/profile/Raph-Ael-2"
+                },
+                {
+                    "user_id": "John Varghese",
+                    "user_href": "/profile/John-Varghese-1"
+                },
+                {
+                    "user_id": "Ankit Pat",
+                    "user_href": "/profile/Ankit-Pat"
+                },
+                {
+                    "user_id": "Gaurav Jain",
+                    "user_href": "/profile/Gaurav-Jain-49"
+                },
+                {
+                    "user_id": "Prasanna Srinivasan V",
+                    "user_href": "/profile/Prasanna-Srinivasan-V"
+                },
+                {
+                    "user_id": "Anil Kumar Ankireddy",
+                    "user_href": "/profile/Anil-Kumar-Ankireddy"
+                },
+                {
+                    "user_id": "Apurv Anand",
+                    "user_href": "/profile/Apurv-Anand"
+                },
+                {
+                    "user_id": "Sumeet Katariya",
+                    "user_href": "/profile/Sumeet-Katariya"
+                },
+                {
+                    "user_id": "Reese Iyer",
+                    "user_href": "/profile/Reese-Iyer"
+                },
+                {
+                    "user_id": "Jayesh Khunti",
+                    "user_href": "/profile/Jayesh-Khunti"
+                },
+                {
+                    "user_id": "Nishant Agarwal",
+                    "user_href": "/profile/Nishant-Agarwal-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/ESF-1"
+                },
+                {
+                    "user_id": "Ramakrishna Nalam",
+                    "user_href": "/profile/Ramakrishna-Nalam"
+                },
+                {
+                    "user_id": "Don van der Drift",
+                    "user_href": "/profile/Don-van-der-Drift"
+                },
+                {
+                    "user_id": "Tim Johnson",
+                    "user_href": "/profile/Tim-Johnson-7"
+                },
+                {
+                    "user_id": "James Gay",
+                    "user_href": "/profile/James-Gay"
+                },
+                {
+                    "user_id": "Carlos Ortiz",
+                    "user_href": "/profile/Carlos-Ortiz-5"
+                },
+                {
+                    "user_id": "Kishore Vedavyasan",
+                    "user_href": "/profile/Kishore-Vedavyasan"
+                },
+                {
+                    "user_id": "Nitica Sakharwade",
+                    "user_href": "/profile/Nitica-Sakharwade"
+                },
+                {
+                    "user_id": "Varun Sharma",
+                    "user_href": "/profile/Varun-Sharma-10"
+                },
+                {
+                    "user_id": "Dennis Li",
+                    "user_href": "/profile/Dennis-Li-2"
+                },
+                {
+                    "user_id": "Kate Simmons",
+                    "user_href": "/profile/Kate-Simmons"
+                },
+                {
+                    "user_id": "Joseph Quattrocchi",
+                    "user_href": "/profile/Joseph-Quattrocchi"
+                },
+                {
+                    "user_id": "Caio Alves",
+                    "user_href": "/profile/Caio-Alves"
+                },
+                {
+                    "user_id": "Abraham Buditama",
+                    "user_href": "/profile/Abraham-Buditama"
+                },
+                {
+                    "user_id": "A Arun Prasath",
+                    "user_href": "/profile/A-Arun-Prasath"
+                },
+                {
+                    "user_id": "Rudradeep Mukherjee",
+                    "user_href": "/profile/Rudradeep-Mukherjee"
+                },
+                {
+                    "user_id": "Leo C. Stein",
+                    "user_href": "/profile/Leo-C-Stein"
+                },
+                {
+                    "user_id": "Srinivasan K N Srini",
+                    "user_href": "/profile/Srinivasan-K-N-Srini"
+                },
+                {
+                    "user_id": "Lulu Liu",
+                    "user_href": "/profile/Lulu-Liu"
+                },
+                {
+                    "user_id": "Alex Tamkin",
+                    "user_href": "/profile/Alex-Tamkin"
+                },
+                {
+                    "user_id": "Henry Lin",
+                    "user_href": "/profile/Henry-Lin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "James Gay",
+                "href": "/profile/James-Gay"
+            },
+            "answer_text": " where  is the nth Fibonacci number. The proof is just a straightforward induction. Edit: since there was some confusion here, I was starting at . ",
+            "date": "Updated February 9, 2013",
+            "views": "356",
+            "upvotes": " View 33 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tausif Mohd",
+                    "user_href": "/profile/Tausif-Mohd-1"
+                },
+                {
+                    "user_id": "Jon Mukaj",
+                    "user_href": "/profile/Jon-Mukaj"
+                },
+                {
+                    "user_id": "Julia Kim",
+                    "user_href": "/profile/Julia-Kim-79"
+                },
+                {
+                    "user_id": "Sezan Ahmed",
+                    "user_href": "/profile/Sezan-Ahmed"
+                },
+                {
+                    "user_id": "Rishabh Sethi",
+                    "user_href": "/profile/Rishabh-Sethi-21"
+                },
+                {
+                    "user_id": "David Adam Leon",
+                    "user_href": "/profile/David-Adam-Leon"
+                },
+                {
+                    "user_id": "Sriharinaidu Lakkakula",
+                    "user_href": "/profile/Sriharinaidu-Lakkakula"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/TeaNikeOh"
+                },
+                {
+                    "user_id": "Sam Lukes",
+                    "user_href": "/profile/Sam-Lukes"
+                },
+                {
+                    "user_id": "Bulat Suleymanov",
+                    "user_href": "/profile/Bulat-Suleymanov"
+                },
+                {
+                    "user_id": "Prashanth CN",
+                    "user_href": "/profile/Prashanth-CN"
+                },
+                {
+                    "user_id": "Mohamed Abobakr",
+                    "user_href": "/profile/Mohamed-Abobakr-3"
+                },
+                {
+                    "user_id": "Sumit Jha",
+                    "user_href": "/profile/Sumit-Jha-3"
+                },
+                {
+                    "user_id": "Manoj Sahu",
+                    "user_href": "/profile/Manoj-Sahu-81"
+                },
+                {
+                    "user_id": "James-Andrew Sarmiento",
+                    "user_href": "/profile/James-Andrew-Sarmiento-1"
+                },
+                {
+                    "user_id": "Neeraj Singh Aithani",
+                    "user_href": "/profile/Neeraj-Singh-Aithani"
+                },
+                {
+                    "user_id": "Saurabh Kadian",
+                    "user_href": "/profile/Saurabh-Kadian"
+                },
+                {
+                    "user_id": "Kiran B",
+                    "user_href": "/profile/Kiran-B-122"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/I-Love-Physics-2"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Aditya N. Joshi",
+                    "user_href": "/profile/Aditya-N-Joshi"
+                },
+                {
+                    "user_id": "X. Shen",
+                    "user_href": "/profile/X-Shen-3"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Chun-Ho Hung",
+                    "user_href": "/profile/Chun-Ho-Hung"
+                },
+                {
+                    "user_id": "Ravi Tandon",
+                    "user_href": "/profile/Ravi-Tandon-1"
+                },
+                {
+                    "user_id": "Adrien Lucas Ecoffet",
+                    "user_href": "/profile/Adrien-Lucas-Ecoffet"
+                },
+                {
+                    "user_id": "Alistair Israel",
+                    "user_href": "/profile/Alistair-Israel"
+                },
+                {
+                    "user_id": "Srinivasan K N Srini",
+                    "user_href": "/profile/Srinivasan-K-N-Srini"
+                },
+                {
+                    "user_id": "Vikrant Singh",
+                    "user_href": "/profile/Vikrant-Singh-4"
+                },
+                {
+                    "user_id": "Mark Skilbeck",
+                    "user_href": "/profile/Mark-Skilbeck"
+                },
+                {
+                    "user_id": "Spencer Chan",
+                    "user_href": "/profile/Spencer-Chan"
+                },
+                {
+                    "user_id": "Joshua Engel",
+                    "user_href": "/profile/Joshua-Engel"
+                },
+                {
+                    "user_id": "A Arun Prasath",
+                    "user_href": "/profile/A-Arun-Prasath"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ankush Jain",
+                "href": "/profile/Ankush-Jain-6"
+            },
+            "answer_text": "I am using the techniques described below by Devendra Shelar and Sai Dhanireddy. It is easy to follow Devendra's answer to get :sum = F(n+2) - F(2) You already know F(2)=1 Using Binet's Formula from  http://en.wikipedia.org/wiki/Jacques_Philippe_Marie_Binet   you can calculate F(n+2),  There you go, you now have a closed form expression! ",
+            "date": "Answered September 30, 2014",
+            "views": "181",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nihrantz Bunreth",
+                    "user_href": "/profile/Nihrantz-Bunreth"
+                },
+                {
+                    "user_id": "Murtaza Nazir",
+                    "user_href": "/profile/Murtaza-Nazir-4"
+                },
+                {
+                    "user_id": "Ahamed Sabahy",
+                    "user_href": "/profile/Ahamed-Sabahy"
+                },
+                {
+                    "user_id": "Rishabh Verma",
+                    "user_href": "/profile/Rishabh-Verma-25"
+                },
+                {
+                    "user_id": "Ripunjay Tripathi",
+                    "user_href": "/profile/Ripunjay-Tripathi"
+                },
+                {
+                    "user_id": "Krati Chaturvedi",
+                    "user_href": "/profile/Krati-Chaturvedi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Md Aatif Zafar",
+                "href": "/profile/Md-Aatif-Zafar"
+            },
+            "answer_text": "Not N terms but i have a result made for infinite summation of fibonacci sequence it is as follows S=summation of fibonacci sequence S=0+1+1+2+3+5+8+13+21+34\u2026\u2026\u2026\u2026\u2026\u2026 2S=0+2+2+4+6+10+16\u2026.. 2S=0+1+1+1+1+2+2+3+3+5+5+8+8\u2026\u2026.(because 2 can be written 1+1 and so on for every number) 2S=(0+1)+(1+1)+(1+2)+(2+3)+(3+5)+(5+8)+\u2026\u2026.. 2S=1+2+3+5+8+13\u2026\u2026.. 2S=S-1(because this series lacks a one as the original is 1+1+2\u2026, but this is 1+2+..) 2S-S= -1 S= -1 ",
+            "date": "Answered October 28, 2019",
+            "views": "19",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Abhishek Kumar",
+                    "user_href": "/profile/Abhishek-Kumar-27741"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohd Hammad Siddiqui",
+                "href": "/profile/Mohd-Hammad-Siddiqui"
+            },
+            "answer_text": "well , i am deriving a formula for sum of fibonacii series i have discovered that t(n)=t(n-3)+2(t(n-2)) where n>=4 and where the series start from 1,2,3,5,8\u2026\u2026 plz help me generalize a formula for sum using it ",
+            "date": "Answered May 18, 2017",
+            "views": "14",
+            "upvotes": "0"
+        }
+    ]
+}

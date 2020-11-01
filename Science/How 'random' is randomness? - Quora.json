@@ -1,0 +1,45 @@
+{
+    "title": "How 'random' is randomness? - Quora",
+    "tags": [
+        "Randomness (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Gough",
+                "href": "/profile/Andrew-Gough-8"
+            },
+            "answer_text": "Randomness - Wikipedia defines it as: Randomness is the lack of pattern or predictability in events.[1] A random sequence of events, symbols or steps has no order and does not follow an intelligible pattern or combination. Individual random events are by definition unpredictable, but in many cases the frequency of different outcomes over a large number of events (or \"trials\") is predictable. For example, when throwing two dice, the outcome of any particular roll is unpredictable, but a sum of 7 will occur twice as often as 4. In this view, randomness is a measure of uncertainty of an outcome, rather than haphazardness, and applies to concepts of chance, probability, and information entropy. How would we measure how \u201crandom\u201d something was (or is)? We are very adept at converting observations of the physical world into numbers. Hence questions about random events randomness invariably end up asking the questions: How random is this sequence of numbers? How can we quantify, or measure, that?How random is this number?Does it even make sense to ask if how random a single number is? We do have some sense (or suspicion) that 9999999 is less random than 01101010001011101101100101010011101101.An answer to this is Kolomogorov Complexity. The introduction to that is quit long, so let me refer you to these two articles by Scott Aaronson on the topic: The Quest for Randomness Quantum Randomness A review of randomness literature: Research Comments by Ritter ",
+            "date": "Answered October 22, 2017",
+            "views": "378",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Emre Ak\u0131",
+                    "user_href": "/profile/Emre-Ak\u0131-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Geoffrey Falk",
+                "href": "/profile/Geoffrey-Falk-1"
+            },
+            "answer_text": "A fascinating subject: Statistical information theory. Invented by Claude Shannon, the subject deals with the information content of data. Among other things, this can tell you how much a file can be compressed; or how easily it can be transmitted, or decrypted. The key concept is information-theoretic entropy. By analogy to Boltzmann entropy in physics, it is defined as the weighted sum [math] -\\sum P(x) \\log_n P(x) [/math] where the random variable x ranges (usually) over the values of a discrete probability distribution [math] P(x) [/math] with n possible values. P may also be a conditional probability. In that case, it really represents how well you can predict the next symbol in your data, given all previous symbols. This is extremely relevant to data compression, as well as to cryptography. Totally random information has maximum entropy, equal to (say, in binary) the number of bits. Such data cannot be compressed in theory. However, it depends on your model of the data. If you can write a small algorithm to generate, say, the digits of [math] \\pi[/math], then what is the entropy? Basically just the size of your computer program.* *See also: Kolmogorov complexity ",
+            "date": "Answered October 17, 2017",
+            "views": "400",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nick Poulis",
+                    "user_href": "/profile/Nick-Poulis-1"
+                },
+                {
+                    "user_id": "Emre Ak\u0131",
+                    "user_href": "/profile/Emre-Ak\u0131-1"
+                }
+            ]
+        }
+    ]
+}

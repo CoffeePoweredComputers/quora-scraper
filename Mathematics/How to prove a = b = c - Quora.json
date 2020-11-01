@@ -1,0 +1,97 @@
+{
+    "title": "How to prove a = b = c - Quora",
+    "tags": [
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lucas Fehlau Arbulu",
+                "href": "/profile/Lucas-Fehlau-Arbulu"
+            },
+            "answer_text": "At first I answered: You can't. If they are known numbers they just are, or aren't, and if they are unknown, without more context, it's a statement, like declaring variables.  I saw the details after that, so here's what I tried to do. It doesn't lead to a result yet, so if you want a solution, stop reading now. [math](ab+1)[/math]/[math]b = (bc+1)/c = (ac+1)/a[/math] Removing denominators by multiplying by abc and extracting common terms: [math]ac(ab+1)  = ab(bc+1)  = bc(ac+1) [/math] We simplify the first two terms, but keep in mind that, as there are three entangled equations, we have to be careful and not relate this to the third equation, without dividing it by [math]a[/math] as well. [math]abc+c = b\u00b2c+b[/math] So, [math]b\u00b2c+abc+b=c[/math] I would like to continue, but I sincerely don't know how without an in determination. By the way, I don't know how to type fractions in Quora either. ",
+            "date": "Answered March 11, 2017",
+            "views": "329",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vincent Aquino",
+                    "user_href": "/profile/Vincent-Aquino"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Shaffer",
+                "href": "/profile/David-Shaffer-14"
+            },
+            "answer_text": "Question as asked: If [math]\\frac{ab + 1}{b} = \\frac{bc + 1}{c} = \\frac{ca + 1}{a}[/math]. Also, I don\u2019t know how to type fractions. I forgot to say [math]abc[/math] is not equal to 1 and please!  EDIT: The statement in the question is not correct. For example take [math]a=-1, b=\\frac12, c=2[/math]. I think the final line should read [math]abc\\ne1[/math] and [math]abc\\ne-1[/math]. and I\u2019ve edited my answer as if that was the question.  Taking the first equality, we have: [math]c(ab+1)=b(bc+1)[/math] [math]abc+c=b^2c+b[/math] [math]bc(a-b)=(b-c)[/math] Similarly from the other two equalities, we find: [math]ca(b-c)=(c-a)[/math] [math]ab(c-a)=(a-b)[/math] Using these three equations, we have: [math](b-c)=bc(a-b)=bcab(c-a)=bcabca(b-c)=(abc)^2(b-c)[/math] We are told that [math]abc\\ne 1[/math] and [math]abc\\ne -1[/math] which means that the only solution to this is that [math]b-c=0[/math] and so [math]b=c[/math]. Similarly we can show that [math]a=c[/math]. ",
+            "date": "Answered March 11, 2017",
+            "views": "829",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Hari Krishna Prasad Talluru",
+                    "user_href": "/profile/Hari-Krishna-Prasad-Talluru"
+                },
+                {
+                    "user_id": "Anders Kouru",
+                    "user_href": "/profile/Anders-Kouru"
+                },
+                {
+                    "user_id": "Ying Mi",
+                    "user_href": "/profile/Ying-Mi-3"
+                },
+                {
+                    "user_id": "Geoffrey Chan",
+                    "user_href": "/profile/Geoffrey-Chan-2"
+                },
+                {
+                    "user_id": "Ritvik Gupta",
+                    "user_href": "/profile/Ritvik-Gupta-27"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Mealey",
+                "href": "/profile/William-Mealey"
+            },
+            "answer_text": "I\u2019ve done similar algebraic gymnastics that I see others have tried like making each expression into two fractions or multiplying by a common denominator to get rid of fracctions or substitution for \u201ca\u201d. Now intuitively I know they must be equal for it to be true, but proving it seems trickier. Maybe if I start with a=b=c and then add 1 and multiply by a form of 1 I get (ab+b)/b=(bc+c)/c=(ca+a)/a which is so close maybe that helps someone finish. ",
+            "date": "Answered March 11, 2017",
+            "views": "145",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Siddharth Gupta",
+                "href": "/profile/Siddharth-Gupta-380"
+            },
+            "answer_text": "A much simpler way to prove it is to notice that all the variables can occupy all positions. Suppose a and c switch; that means they must be the same (Equal). This way, you can prove a=b=c. ",
+            "date": "Answered March 11, 2017",
+            "views": "64",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Lukas Schmidinger",
+                "href": "/profile/Lukas-Schmidinger-1"
+            },
+            "answer_text": "On typing fractions and other math things see here: An introduction beautiful math on Quora Now to your problem: First solve under what coitions this holds: [math]\\frac{ab+1}{b}=\\frac{bc+1}{c}[/math] And we find out we would have [math]a=\\frac{bc+1}{c}-\\frac{1}{b}[/math] No when replace a with this term in [math]\\frac{bc+1}{c}=\\frac{ca+1}{a}[/math] you should see if it is equal or not. ",
+            "date": "Answered March 11, 2017",
+            "views": "116",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alan Markley",
+                "href": "/profile/Alan-Markley"
+            },
+            "answer_text": "a*a*b*c +ac = a*b*b*c+ab = a*b*c*c+bc ac(ab + 1) = ab(bc + 1) = bc(ac+1) ac(ab+1) - ab(bc+1) = 0 C(AB+1) - B(BC+1) = 0 ABC - BBC = 0 AC - BC = 0 A - B = 0 A = B Now, substitute A = B into the following: ab(bc + 1) = bc(ac+1) AA(AC+1) = AC(AC+1) A(AC+1) = C(AC+1) Now divide both sides by (AC+1): A = C Since A = B, A=B=C. Hope this helps. ",
+            "date": "Answered March 12, 2017",
+            "views": "487",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,2292 @@
+{
+    "title": "How to interpret Godel's incompleteness theorem - Quora",
+    "tags": [
+        "Kurt G\u00f6del",
+        "G\u00f6del\u2019s Incompleteness Theorem",
+        "Logic (philosophy)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bruno Marchal",
+                "href": "/profile/Bruno-Marchal"
+            },
+            "answer_text": "You can interpret it in computer science. It says that any consistent machine is unable to prove some (true) assertion (notably about itself. The machine is able to prove their own theorem (this was seen and announced by G\u00f6del, but proved by Hilbert and Bernays later, and by L\u00f6b). You can see this as a theorem in neoplatonist machine theology, and indeed, the theory of matter made by the neoplatonist is vindicated by logic, as we found quantum logic for the behaviour of the machine\u2019s observable, when defined in the neoplatonist self-referential mode of the (sound, or just consistent) machine. This shows that for any machine introspecting itself the machine is able to distinguish qualia and quanta, and that eventually physics is reduced to a statistic on the many computations (realised in arithmetic. We know (or should know) that elementary arithmetic emulate all computations since the 1930s. So, G\u00f6del\u2019s incompleteness can be seen as the first theorem in exact neoplatonician mechanist theory of mind and matter. It is at the least a reminder that science has not yet decided between the Platonic and the Aristotelian conception of reality. I work on this since long and can give references if asked. Contrary to a widespread misconception, G\u00f6del\u2019s incompleteness is a good new for the mechanist theory of mind. Note also that incompleteness can be proved very easily from the Church-Turing thesis in computability theory, using just one diagonalization. G\u00f6del\u2019s technic have been elaborated by Church and Kleene (and foreseen by Emil Post). Post and Kleene are at the origin of recursion or computability theory, making such incompleteness result very important in theoretical computer science. The whole logic of provability of the \u201crich machine\u201d (Turing universal + enough induction axioms) has been axiomatised in the logic modal G and G* through two fundamental theorem by Solovay in 1976. G forlmibes the part which is justifiable by the machine, and G* formalise the true part, including the corona of the true but non provable part, showing it accessible by the introspecting machine, and laking the machine aware that she knows more than what she can justifie, and this can be used to develop a machine\u2019s theory of its own qualia. In fact G\u00f6del\u2019s incompleteness enforced the epistemic nuances that Theatetus used in its theory of knowledge (in Plato). Indeed, with p an arbitrary sigma_1 (partial computable) sentences, f = false, and \u201c[]\u201d interpreted by \u201cthe machine proves\u201d, we have: G* proves p <-> []p <-> ([]p & p) <-> ([]p & ~[]f) <-> ([]p & ~[]f & p), but G does not prove most of them, and this attached an intuitionist knower, and a quantum observer, canonically to any self-referentially correct machine. ",
+            "date": "Answered May 25, 2020",
+            "views": "218",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Lukasz T. Stepien",
+                "href": "/profile/Lukasz-T-Stepien"
+            },
+            "answer_text": "Well, I have never dealt with G\u00f6del\u2019s Incompleteness Theorems, so I write now some my thoughts related to them. I have been always admiring G\u00f6del\u2019s technique leading to prove G\u00f6del\u2019s First Incompleteness Theorem. An interesting fact is that G\u00f6del never proved G\u00f6del\u2019s Second Incompleteness Theorem. He proved G\u00f6del's First Incompleteness Theorem. The first full proof of the G\u00f6del's Second Incompleteness Theorem was published in the book: David Hilbert and Paul Bernays, \"Grundlagen der Mathematik\", vol. 2, in 1939 (for e.g.: Roman Murawski, \"Recursive Functions and Metamathematics\", Springer Dordrecht 1999). I would like also to inform you about the paper: T. J. St\u0119pie\u0144, \u0141. T. St\u0119pie\u0144, \u201eOn the Consistency of the Arithmetic System\u201d, Journal of Mathematics and System Science, vol. 7, 43 (2017), arXiv:1803.11072 , where a proof of the consistency of the Arithmetic System was published (this proof had been done within this Arithmetic System); the abstract of this paper: T. J. Stepien and L. T. Stepien, \"On the consistency of Peano's Arithmetic System\" , The Bulletin of Symbolic Logic , vol. 16, No. 1, 132 (2010). The Bulletin of Symbolic Logic . ",
+            "date": "Answered May 6, 2020",
+            "views": "139",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rafael Bernal Arce",
+                "href": "/profile/Rafael-Bernal-Arce"
+            },
+            "answer_text": "It says that any axiomatic-based mathematical system, at least as complex as arithmetic, will not be complete and may even be inconsistent. The first theorem, Incompleteness, says that these mathematical systems (basically all up to set theory) will not be able to demonstrate all its truths within the system. For that, it\u2019s necessary to asume more axioms, that is, go to another more complex level, like algebra or calculus, which they in themselves will not be able to prove all their own truths. You may be seeing something that is obviously true, but cannot be proven within the system. The second theorem, which I understand is a corollary of the first, is even worse. It says that any such mathematical system cannot prove its own consistency. For that it needs to recur to a more complete system. This case is worse, because it says that, given the potential inconsistency of mathematical systems, there\u2019s a chance a contradiction may be proven, like two theorems that prove opposite truths. ",
+            "date": "Answered April 27, 2020",
+            "views": "273",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Eduardo Carrion",
+                    "user_href": "/profile/Eduardo-Carrion"
+                },
+                {
+                    "user_id": "Roberto Santocho",
+                    "user_href": "/profile/Roberto-Santocho"
+                },
+                {
+                    "user_id": "David Winne",
+                    "user_href": "/profile/David-Winne-1"
+                },
+                {
+                    "user_id": "Brent Mosley",
+                    "user_href": "/profile/Brent-Mosley-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "D\u00e9cio Krause",
+                "href": "/profile/D\u00e9cio-Krause"
+            },
+            "answer_text": "G\u00f6del\u2019s theorems applies to *formal systems* (please, note: formal systems), and they say that no formal system satisfy the following properties at once: For every sentence A formulated in the language of the system (note: you need to have a well defined notion of sentences, something you don\u2019t have in natural languages), the system proves either A or ~A, the negation of A.The system does not prove (note: you need a clear definition of what means \u201cto prove\u201d) both a sentence A and its negation, ~A.It is an *effective* theory, that is, we can know in an effective way (OK, say by a computer program) if some sentence of the well stated language of the theory is or not an axiom of the system.it is strong enough to express Robinson\u2019s arithmetic.So, the theorem does not apply to the Bible, nor to the human consciousness, nor to nothing that is not a recursive formal system able to cope with (at least) Robinson\u2019s arithmetic. ",
+            "date": "Answered April 29, 2020",
+            "views": "748",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Eduardo Carrion",
+                    "user_href": "/profile/Eduardo-Carrion"
+                },
+                {
+                    "user_id": "Jesse Raffield",
+                    "user_href": "/profile/Jesse-Raffield-1"
+                },
+                {
+                    "user_id": "Riju Bhatt",
+                    "user_href": "/profile/Riju-Bhatt-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alon Amit",
+                "href": "/profile/Alon-Amit"
+            },
+            "answer_text": "Nowadays, one of my favorite pastimes is not interpreting G\u00f6del\u2019s incompleteness theorems. Seriously, I really enjoy it. I could spend hours not interpreting one of the theorems, and on the best days \u2013 which, honestly, are most days \u2013 I interpret neither the first nor the second. Reading other people\u2019s interpretations, paraphrases, exegeses, extrapolations, exaggerations and transubstantiations has cost me dearly. I lost time, hair and romantic partners \u2013 I confess, there were some hearty laughs, but bitter ones, tinged with despair. I\u2019d rather not experience it again. I am, in fact, happy to share what G\u00f6del\u2019s Incompleteness Theorems actually say. This, too, is an excellent pastime, almost on par with not interpreting them. Here is one such attempt, right here on Quora. I should dig up a talk I once gave, at the closing ceremony of the Berkeley Math Circle. See also this. And this. Or this. There\u2019s more, I\u2019m quite sure. Really, I love talking about the theorems, but \u201dinterpreting\u201d them is something I learned to deeply resent. ",
+            "date": "Answered April 28, 2020",
+            "views": "275",
+            "upvotes": " View 588 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alex Eustis",
+                    "user_href": "/profile/Alex-Eustis"
+                },
+                {
+                    "user_id": "Hans-Richard Gr\u00fcmm",
+                    "user_href": "/profile/Hans-Richard-Gr\u00fcmm"
+                },
+                {
+                    "user_id": "Yair Livne",
+                    "user_href": "/profile/Yair-Livne"
+                },
+                {
+                    "user_id": "Aditya Garg",
+                    "user_href": "/profile/Aditya-Garg-38"
+                },
+                {
+                    "user_id": "Fabio Garc\u00eda",
+                    "user_href": "/profile/Fabio-Garc\u00eda"
+                },
+                {
+                    "user_id": "Dolev Dabush",
+                    "user_href": "/profile/Dolev-Dabush"
+                },
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Ben Weldon",
+                    "user_href": "/profile/Ben-Weldon-3"
+                },
+                {
+                    "user_id": "Kevin Shenoy",
+                    "user_href": "/profile/Kevin-Shenoy-6"
+                },
+                {
+                    "user_id": "Stephen Zisk",
+                    "user_href": "/profile/Stephen-Zisk-1"
+                },
+                {
+                    "user_id": "Ryan Baron",
+                    "user_href": "/profile/Ryan-Baron-1"
+                },
+                {
+                    "user_id": "Martin Fabian",
+                    "user_href": "/profile/Martin-Fabian-1"
+                },
+                {
+                    "user_id": "Marcel Zanetti de Carvallho",
+                    "user_href": "/profile/Marcel-Zanetti-de-Carvallho"
+                },
+                {
+                    "user_id": "Ronald K\u00fcnneth",
+                    "user_href": "/profile/Ronald-K\u00fcnneth"
+                },
+                {
+                    "user_id": "Mateusz Paluchowski",
+                    "user_href": "/profile/Mateusz-Paluchowski"
+                },
+                {
+                    "user_id": "Alexander Koran",
+                    "user_href": "/profile/Alexander-Koran-3"
+                },
+                {
+                    "user_id": "Bashir Nadeem",
+                    "user_href": "/profile/Bashir-Nadeem"
+                },
+                {
+                    "user_id": "Adhavan",
+                    "user_href": "/profile/Adhavan-6"
+                },
+                {
+                    "user_id": "Sarthak Bindal",
+                    "user_href": "/profile/Sarthak-Bindal-4"
+                },
+                {
+                    "user_id": "Ekansh Kashyap",
+                    "user_href": "/profile/Ekansh-Kashyap-1"
+                },
+                {
+                    "user_id": "Achinta Roy",
+                    "user_href": "/profile/Achinta-Roy"
+                },
+                {
+                    "user_id": "Ashwin Bhandare",
+                    "user_href": "/profile/Ashwin-Bhandare-1"
+                },
+                {
+                    "user_id": "Mythra Varuna",
+                    "user_href": "/profile/Mythra-Varuna-1"
+                },
+                {
+                    "user_id": "Andrew Dennehy",
+                    "user_href": "/profile/Andrew-Dennehy-2"
+                },
+                {
+                    "user_id": "Tamer Alamoudi",
+                    "user_href": "/profile/Tamer-Alamoudi"
+                },
+                {
+                    "user_id": "Alex Jones",
+                    "user_href": "/profile/Alex-Jones-2114"
+                },
+                {
+                    "user_id": "Russell Blakey",
+                    "user_href": "/profile/Russell-Blakey-1"
+                },
+                {
+                    "user_id": "Adam Bla\u017eek",
+                    "user_href": "/profile/Adam-Bla\u017eek-2"
+                },
+                {
+                    "user_id": "Souvik Ghosh",
+                    "user_href": "/profile/Souvik-Ghosh-625"
+                },
+                {
+                    "user_id": "Andrei Adamian",
+                    "user_href": "/profile/Andrei-Adamian"
+                },
+                {
+                    "user_id": "Harold F. Callahan",
+                    "user_href": "/profile/Harold-F-Callahan"
+                },
+                {
+                    "user_id": "\u05d9\u05d4\u05d5\u05e0\u05ea\u05df \u05e2\u05dc\u05d5\u05df",
+                    "user_href": "/profile/\u05d9\u05d4\u05d5\u05e0\u05ea\u05df-\u05e2\u05dc\u05d5\u05df"
+                },
+                {
+                    "user_id": "Zeed Arceus",
+                    "user_href": "/profile/Zeed-Arceus"
+                },
+                {
+                    "user_id": "Jonathan Brown",
+                    "user_href": "/profile/Jonathan-Brown-28"
+                },
+                {
+                    "user_id": "Mads K. Christensen",
+                    "user_href": "/profile/Mads-K-Christensen"
+                },
+                {
+                    "user_id": "Nachiket Gokhale",
+                    "user_href": "/profile/Nachiket-Gokhale"
+                },
+                {
+                    "user_id": "Misho Okropiridze",
+                    "user_href": "/profile/Misho-Okropiridze"
+                },
+                {
+                    "user_id": "Johan",
+                    "user_href": "/profile/Johan-144"
+                },
+                {
+                    "user_id": "Farouk Hjabo",
+                    "user_href": "/profile/Farouk-Hjabo"
+                },
+                {
+                    "user_id": "Stonewall Ballard",
+                    "user_href": "/profile/Stonewall-Ballard"
+                },
+                {
+                    "user_id": "Abraham Levin",
+                    "user_href": "/profile/Abraham-Levin-2"
+                },
+                {
+                    "user_id": "Fares Tareq",
+                    "user_href": "/profile/Fares-Tareq"
+                },
+                {
+                    "user_id": "Isabelle Larivi\u00e8re",
+                    "user_href": "/profile/Isabelle-Larivi\u00e8re"
+                },
+                {
+                    "user_id": "Michiel Kamphuis",
+                    "user_href": "/profile/Michiel-Kamphuis-1"
+                },
+                {
+                    "user_id": "Gerard Bargall\u00f3",
+                    "user_href": "/profile/Gerard-Bargall\u00f3"
+                },
+                {
+                    "user_id": "Raghu Boyapati",
+                    "user_href": "/profile/Raghu-Boyapati-1"
+                },
+                {
+                    "user_id": "Murat Bayraktar",
+                    "user_href": "/profile/Murat-Bayraktar"
+                },
+                {
+                    "user_id": "D\u00e1niel K\u00f6ves",
+                    "user_href": "/profile/D\u00e1niel-K\u00f6ves"
+                },
+                {
+                    "user_id": "Akash Srivastava",
+                    "user_href": "/profile/Akash-Srivastava"
+                },
+                {
+                    "user_id": "Rishab Pal",
+                    "user_href": "/profile/Rishab-Pal-22"
+                },
+                {
+                    "user_id": "Bruno Charri\u00e8re",
+                    "user_href": "/profile/Bruno-Charri\u00e8re"
+                },
+                {
+                    "user_id": "Stephen Nestor",
+                    "user_href": "/profile/Stephen-Nestor-1"
+                },
+                {
+                    "user_id": "David Leon Zahlenmann",
+                    "user_href": "/profile/David-Leon-Zahlenmann"
+                },
+                {
+                    "user_id": "Robin Dawes",
+                    "user_href": "/profile/Robin-Dawes"
+                },
+                {
+                    "user_id": "Asad Afridi",
+                    "user_href": "/profile/Asad-Afridi-4"
+                },
+                {
+                    "user_id": "Kaiser Tarafdar",
+                    "user_href": "/profile/Kaiser-Tarafdar"
+                },
+                {
+                    "user_id": "Will Ewen",
+                    "user_href": "/profile/Will-Ewen"
+                },
+                {
+                    "user_id": "Benedict Heal",
+                    "user_href": "/profile/Benedict-Heal-1"
+                },
+                {
+                    "user_id": "Ambrish Abhijatya",
+                    "user_href": "/profile/Ambrish-Abhijatya"
+                },
+                {
+                    "user_id": "Kuyilan Kuyil",
+                    "user_href": "/profile/\u0b95\u0bc1\u0baf\u0bbf\u0bb2\u0ba9\u0bcd-\u0b95\u0bc1\u0baf\u0bbf\u0bb2\u0bcd-Kuyilan-Kuyil"
+                },
+                {
+                    "user_id": "Rahul Saha",
+                    "user_href": "/profile/Rahul-Saha-14"
+                },
+                {
+                    "user_id": "Mauricio Mej\u00eda Castro",
+                    "user_href": "/profile/Mauricio-Mej\u00eda-Castro"
+                },
+                {
+                    "user_id": "Alexander Poltorak",
+                    "user_href": "/profile/Alexander-Poltorak"
+                },
+                {
+                    "user_id": "Rafael Maia",
+                    "user_href": "/profile/Rafael-Maia-15"
+                },
+                {
+                    "user_id": "Cosmin Truta",
+                    "user_href": "/profile/Cosmin-Truta"
+                },
+                {
+                    "user_id": "Jan Bours",
+                    "user_href": "/profile/Jan-Bours-1"
+                },
+                {
+                    "user_id": "Alexander Burton",
+                    "user_href": "/profile/Alexander-Burton-12"
+                },
+                {
+                    "user_id": "Hrishikesh Ram",
+                    "user_href": "/profile/Hrishikesh-Ram"
+                },
+                {
+                    "user_id": "Caio Ursulino",
+                    "user_href": "/profile/Caio-Ursulino"
+                },
+                {
+                    "user_id": "Pablo D. Carrasco",
+                    "user_href": "/profile/Pablo-D-Carrasco"
+                },
+                {
+                    "user_id": "Eyal Rozenman",
+                    "user_href": "/profile/Eyal-Rozenman"
+                },
+                {
+                    "user_id": "Miguel Arjona Ramirez",
+                    "user_href": "/profile/Miguel-Arjona-Ramirez"
+                },
+                {
+                    "user_id": "Clive Bach",
+                    "user_href": "/profile/Clive-Bach"
+                },
+                {
+                    "user_id": "Anirvan Shukla",
+                    "user_href": "/profile/Anirvan-Shukla"
+                },
+                {
+                    "user_id": "Juha Nurmonen",
+                    "user_href": "/profile/Juha-Nurmonen"
+                },
+                {
+                    "user_id": "Flavio Nicola Iodice",
+                    "user_href": "/profile/Flavio-Nicola-Iodice"
+                },
+                {
+                    "user_id": "Siddhant Ritwick",
+                    "user_href": "/profile/Siddhant-Ritwick-1"
+                },
+                {
+                    "user_id": "Arun B",
+                    "user_href": "/profile/Arun-B-58"
+                },
+                {
+                    "user_id": "Joseph Heavner",
+                    "user_href": "/profile/Joseph-Heavner"
+                },
+                {
+                    "user_id": "Jim Burgess",
+                    "user_href": "/profile/Jim-Burgess-40"
+                },
+                {
+                    "user_id": "Michel Kuhne",
+                    "user_href": "/profile/Michel-Kuhne"
+                },
+                {
+                    "user_id": "Adam Hassler",
+                    "user_href": "/profile/Adam-Hassler-1"
+                },
+                {
+                    "user_id": "Comet",
+                    "user_href": "/profile/Comet-7"
+                },
+                {
+                    "user_id": "P\u00e4r Johansson",
+                    "user_href": "/profile/P\u00e4r-Johansson-1"
+                },
+                {
+                    "user_id": "Daniel God\u00ednez",
+                    "user_href": "/profile/Daniel-God\u00ednez"
+                },
+                {
+                    "user_id": "Tom Omondi",
+                    "user_href": "/profile/Tom-Omondi-5"
+                },
+                {
+                    "user_id": "Bill Pointer",
+                    "user_href": "/profile/Bill-Pointer-1"
+                },
+                {
+                    "user_id": "Victor Brunsden",
+                    "user_href": "/profile/Victor-Brunsden"
+                },
+                {
+                    "user_id": "ThePotatoIsAutomated",
+                    "user_href": "/profile/ThePotatoIsAutomated"
+                },
+                {
+                    "user_id": "Allen Stairs",
+                    "user_href": "/profile/Allen-Stairs"
+                },
+                {
+                    "user_id": "Adam Kean",
+                    "user_href": "/profile/Adam-Kean"
+                },
+                {
+                    "user_id": "Paul Ragnauth",
+                    "user_href": "/profile/Paul-Ragnauth"
+                },
+                {
+                    "user_id": "Valerian Mahdi Pratama",
+                    "user_href": "/profile/Valerian-Mahdi-Pratama"
+                },
+                {
+                    "user_id": "Eduardo Carrion",
+                    "user_href": "/profile/Eduardo-Carrion"
+                },
+                {
+                    "user_id": "Mauro Marchesi",
+                    "user_href": "/profile/Mauro-Marchesi"
+                },
+                {
+                    "user_id": "Sundara Srinivasan",
+                    "user_href": "/profile/Sundara-Srinivasan-6"
+                },
+                {
+                    "user_id": "Nagesh Adluru",
+                    "user_href": "/profile/Nagesh-Adluru"
+                },
+                {
+                    "user_id": "Sass Ezekiel",
+                    "user_href": "/profile/Sass-Ezekiel"
+                },
+                {
+                    "user_id": "Darren Pearce",
+                    "user_href": "/profile/Darren-Pearce-3"
+                },
+                {
+                    "user_id": "Michael Shmoish",
+                    "user_href": "/profile/Michael-Shmoish"
+                },
+                {
+                    "user_id": "Earl Patrick Bellinger",
+                    "user_href": "/profile/Earl-Patrick-Bellinger"
+                },
+                {
+                    "user_id": "Filippo Passante",
+                    "user_href": "/profile/Filippo-Passante-1"
+                },
+                {
+                    "user_id": "Akhil Patel",
+                    "user_href": "/profile/Akhil-Patel-99"
+                },
+                {
+                    "user_id": "Nicco Mnisi",
+                    "user_href": "/profile/Nicco-Mnisi"
+                },
+                {
+                    "user_id": "Josef Lauri",
+                    "user_href": "/profile/Josef-Lauri"
+                },
+                {
+                    "user_id": "Jack Hidary",
+                    "user_href": "/profile/Jack-Hidary"
+                },
+                {
+                    "user_id": "Javier Jim\u00e9nez Delgado",
+                    "user_href": "/profile/Javier-Jim\u00e9nez-Delgado"
+                },
+                {
+                    "user_id": "Nabarun Mondal",
+                    "user_href": "/profile/Nabarun-Mondal-3"
+                },
+                {
+                    "user_id": "Altu\u011f Mert M\u0131s\u0131rl\u0131o\u011flu",
+                    "user_href": "/profile/Altu\u011f-Mert-M\u0131s\u0131rl\u0131o\u011flu-1"
+                },
+                {
+                    "user_id": "Gustavo Souza Podboi Adachi",
+                    "user_href": "/profile/Gustavo-Souza-Podboi-Adachi"
+                },
+                {
+                    "user_id": "Roney Ant\u00f4nio Barbosa",
+                    "user_href": "/profile/Roney-Ant\u00f4nio-Barbosa"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Aaron-Da-SIlva-4"
+                },
+                {
+                    "user_id": "Haneesh Malla",
+                    "user_href": "/profile/Haneesh-Malla-1"
+                },
+                {
+                    "user_id": "Fernando Rocha Villas-B\u00f4as",
+                    "user_href": "/profile/Fernando-Rocha-Villas-B\u00f4as"
+                },
+                {
+                    "user_id": "Siddharth Chatterjee",
+                    "user_href": "/profile/Siddharth-Chatterjee-1"
+                },
+                {
+                    "user_id": "Istvan Miklos",
+                    "user_href": "/profile/Istvan-Miklos-2"
+                },
+                {
+                    "user_id": "Snail Erato",
+                    "user_href": "/profile/Snail-Erato"
+                },
+                {
+                    "user_id": "Michael Dykman",
+                    "user_href": "/profile/Michael-Dykman"
+                },
+                {
+                    "user_id": "Boopathiraja Ramasamy",
+                    "user_href": "/profile/Boopathiraja-Ramasamy"
+                },
+                {
+                    "user_id": "Adam Wang",
+                    "user_href": "/profile/Adam-Wang-111"
+                },
+                {
+                    "user_id": "Hamad Khan",
+                    "user_href": "/profile/Hamad-Khan-291"
+                },
+                {
+                    "user_id": "Steve Rivera",
+                    "user_href": "/profile/Steve-Rivera-17"
+                },
+                {
+                    "user_id": "Neal Wakershauser",
+                    "user_href": "/profile/Neal-Wakershauser"
+                },
+                {
+                    "user_id": "Nasheeda Anjum",
+                    "user_href": "/profile/Nasheeda-Anjum"
+                },
+                {
+                    "user_id": "Lucas de Jong",
+                    "user_href": "/profile/Lucas-de-Jong-5"
+                },
+                {
+                    "user_id": "Dhruba Prasad",
+                    "user_href": "/profile/Dhruba-Prasad"
+                },
+                {
+                    "user_id": "Dominik St\u0119pie\u0144",
+                    "user_href": "/profile/Dominik-St\u0119pie\u0144-3"
+                },
+                {
+                    "user_id": "Marc Erlich",
+                    "user_href": "/profile/Marc-Erlich"
+                },
+                {
+                    "user_id": "Charles David Grimshaw",
+                    "user_href": "/profile/Charles-David-Grimshaw"
+                },
+                {
+                    "user_id": "Sudheer Patri",
+                    "user_href": "/profile/Sudheer-Patri"
+                },
+                {
+                    "user_id": "Alessandro Takeshi",
+                    "user_href": "/profile/Alessandro-Takeshi"
+                },
+                {
+                    "user_id": "Richard Anslow",
+                    "user_href": "/profile/Richard-Anslow"
+                },
+                {
+                    "user_id": "Muhammadyusuf Odinaev",
+                    "user_href": "/profile/Muhammadyusuf-Odinaev-1"
+                },
+                {
+                    "user_id": "Koushal Reddy",
+                    "user_href": "/profile/Koushal-Reddy-1"
+                },
+                {
+                    "user_id": "Pranav Bhamidipati",
+                    "user_href": "/profile/Pranav-Bhamidipati"
+                },
+                {
+                    "user_id": "Martin Hunke",
+                    "user_href": "/profile/Martin-Hunke"
+                },
+                {
+                    "user_id": "Jonathan Huang",
+                    "user_href": "/profile/Jonathan-Huang-63"
+                },
+                {
+                    "user_id": "Ben Chapel",
+                    "user_href": "/profile/Ben-Chapel"
+                },
+                {
+                    "user_id": "Tim van Oijen",
+                    "user_href": "/profile/Tim-van-Oijen"
+                },
+                {
+                    "user_id": "Sergio Urias",
+                    "user_href": "/profile/Sergio-Urias"
+                },
+                {
+                    "user_id": "Arlo Morris",
+                    "user_href": "/profile/Arlo-Morris"
+                },
+                {
+                    "user_id": "Khalid Bin Walid",
+                    "user_href": "/profile/Khalid-Bin-Walid"
+                },
+                {
+                    "user_id": "IJeanette Lemieux",
+                    "user_href": "/profile/IJeanette-Lemieux"
+                },
+                {
+                    "user_id": "Tal Reichert",
+                    "user_href": "/profile/Tal-Reichert"
+                },
+                {
+                    "user_id": "Keith Makan",
+                    "user_href": "/profile/Keith-Makan"
+                },
+                {
+                    "user_id": "Alex Risteski",
+                    "user_href": "/profile/Alex-Risteski"
+                },
+                {
+                    "user_id": "Ashley Khng",
+                    "user_href": "/profile/Ashley-Khng"
+                },
+                {
+                    "user_id": "Gabriel Opazo",
+                    "user_href": "/profile/Gabriel-Opazo"
+                },
+                {
+                    "user_id": "Albert Coronel",
+                    "user_href": "/profile/Albert-Coronel-1"
+                },
+                {
+                    "user_id": "Hasan Hasan",
+                    "user_href": "/profile/Hasan-Hasan-296"
+                },
+                {
+                    "user_id": "Sebastian Singer",
+                    "user_href": "/profile/Sebastian-Singer-1"
+                },
+                {
+                    "user_id": "Jeff Xu",
+                    "user_href": "/profile/Jeff-Xu-61"
+                },
+                {
+                    "user_id": "Aaron Soellinger",
+                    "user_href": "/profile/Aaron-Soellinger"
+                },
+                {
+                    "user_id": "Gon\u00e7alo Cordeiro",
+                    "user_href": "/profile/Gon\u00e7alo-Cordeiro-4"
+                },
+                {
+                    "user_id": "Carlos Rocha",
+                    "user_href": "/profile/Carlos-Rocha-69"
+                },
+                {
+                    "user_id": "Daniel Braga da Silva",
+                    "user_href": "/profile/Daniel-Braga-da-Silva"
+                },
+                {
+                    "user_id": "Logan R. Kearsley",
+                    "user_href": "/profile/Logan-R-Kearsley"
+                },
+                {
+                    "user_id": "Ben Emmich",
+                    "user_href": "/profile/Ben-Emmich"
+                },
+                {
+                    "user_id": "Blake Winfield",
+                    "user_href": "/profile/Blake-Winfield-4"
+                },
+                {
+                    "user_id": "Stephan Hattinger",
+                    "user_href": "/profile/Stephan-Hattinger"
+                },
+                {
+                    "user_id": "Divya Ghanshani",
+                    "user_href": "/profile/Divya-Ghanshani"
+                },
+                {
+                    "user_id": "Reed Oei",
+                    "user_href": "/profile/Reed-Oei"
+                },
+                {
+                    "user_id": "Yash Sharma",
+                    "user_href": "/profile/Yash-Sharma-478"
+                },
+                {
+                    "user_id": "Hannes Steinhauser",
+                    "user_href": "/profile/Hannes-Steinhauser"
+                },
+                {
+                    "user_id": "David Stinner",
+                    "user_href": "/profile/David-Stinner-1"
+                },
+                {
+                    "user_id": "Vyacheslavs Kashcheyevs",
+                    "user_href": "/profile/Vyacheslavs-Kashcheyevs"
+                },
+                {
+                    "user_id": "Gerry Surette",
+                    "user_href": "/profile/Gerry-Surette-1"
+                },
+                {
+                    "user_id": "Ella Coppla",
+                    "user_href": "/profile/Ella-Coppla"
+                },
+                {
+                    "user_id": "Stan Hanks",
+                    "user_href": "/profile/Stan-Hanks"
+                },
+                {
+                    "user_id": "Ted L. Field",
+                    "user_href": "/profile/Ted-L-Field"
+                },
+                {
+                    "user_id": "Mikael Bengtsson",
+                    "user_href": "/profile/Mikael-Bengtsson"
+                },
+                {
+                    "user_id": "Helene Hoegsbro Thygesen",
+                    "user_href": "/profile/Helene-Hoegsbro-Thygesen"
+                },
+                {
+                    "user_id": "Devang Naik",
+                    "user_href": "/profile/Devang-Naik-6"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Ameya Agnihotri",
+                    "user_href": "/profile/Ameya-Agnihotri-2"
+                },
+                {
+                    "user_id": "Catalin Ciurte",
+                    "user_href": "/profile/Catalin-Ciurte"
+                },
+                {
+                    "user_id": "Mike Battaglia",
+                    "user_href": "/profile/Mike-Battaglia"
+                },
+                {
+                    "user_id": "Igor Zbitnoff",
+                    "user_href": "/profile/Igor-Zbitnoff-1"
+                },
+                {
+                    "user_id": "Kostis Gourgoulias",
+                    "user_href": "/profile/Kostis-Gourgoulias"
+                },
+                {
+                    "user_id": "Dallas Pinkerton",
+                    "user_href": "/profile/Dallas-Pinkerton-1"
+                },
+                {
+                    "user_id": "Alper Y\u0131ld\u0131r\u0131m",
+                    "user_href": "/profile/Alper-Y\u0131ld\u0131r\u0131m-1"
+                },
+                {
+                    "user_id": "Sunanda Gamage",
+                    "user_href": "/profile/Sunanda-Gamage"
+                },
+                {
+                    "user_id": "Faruk Balc\u0131",
+                    "user_href": "/profile/Faruk-Balc\u0131"
+                },
+                {
+                    "user_id": "David Stevenson",
+                    "user_href": "/profile/David-Stevenson-100"
+                },
+                {
+                    "user_id": "Will Razen",
+                    "user_href": "/profile/Will-Razen"
+                },
+                {
+                    "user_id": "Florin Ma",
+                    "user_href": "/profile/Florin-Ma"
+                },
+                {
+                    "user_id": "Ankit Kumar Singh",
+                    "user_href": "/profile/Ankit-Kumar-Singh-621"
+                },
+                {
+                    "user_id": "Arnav Dev Singh",
+                    "user_href": "/profile/Arnav-Dev-Singh"
+                },
+                {
+                    "user_id": "Arturo Ballesteros-Ontiveros",
+                    "user_href": "/profile/Arturo-Ballesteros-Ontiveros"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                },
+                {
+                    "user_id": "Wyatt Peak",
+                    "user_href": "/profile/Wyatt-Peak"
+                },
+                {
+                    "user_id": "Eric Song",
+                    "user_href": "/profile/Eric-Song-39"
+                },
+                {
+                    "user_id": "Brian Wang",
+                    "user_href": "/profile/Brian-Wang-124"
+                },
+                {
+                    "user_id": "Eivind Kl\u00f8vjan",
+                    "user_href": "/profile/Eivind-Kl\u00f8vjan"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "Mattias Langseth",
+                    "user_href": "/profile/Mattias-Langseth"
+                },
+                {
+                    "user_id": "Vik Randall",
+                    "user_href": "/profile/Vik-Randall"
+                },
+                {
+                    "user_id": "Suhas S",
+                    "user_href": "/profile/Suhas-S-124"
+                },
+                {
+                    "user_id": "Lars Br\u00fcnjes",
+                    "user_href": "/profile/Lars-Br\u00fcnjes-1"
+                },
+                {
+                    "user_id": "Tejash Desai",
+                    "user_href": "/profile/Tejash-Desai-2"
+                },
+                {
+                    "user_id": "Casey Hawthorne",
+                    "user_href": "/profile/Casey-Hawthorne"
+                },
+                {
+                    "user_id": "Kurt Behnke",
+                    "user_href": "/profile/Kurt-Behnke"
+                },
+                {
+                    "user_id": "Max Sklar",
+                    "user_href": "/profile/Max-Sklar"
+                },
+                {
+                    "user_id": "Harrison Beard",
+                    "user_href": "/profile/Harrison-Beard"
+                },
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                },
+                {
+                    "user_id": "Pat McCormack",
+                    "user_href": "/profile/Pat-McCormack"
+                },
+                {
+                    "user_id": "Micha\u0142 Wr\u00f3bel",
+                    "user_href": "/profile/Micha\u0142-Wr\u00f3bel-3"
+                },
+                {
+                    "user_id": "Alan Cooper",
+                    "user_href": "/profile/Alan-Cooper-5"
+                },
+                {
+                    "user_id": "Jonatan Sundqvist",
+                    "user_href": "/profile/Jonatan-Sundqvist-1"
+                },
+                {
+                    "user_id": "Luis Felipe Moraes",
+                    "user_href": "/profile/Luis-Felipe-Moraes"
+                },
+                {
+                    "user_id": "Ph\u00fa Phan",
+                    "user_href": "/profile/Ph\u00fa-Phan-2"
+                },
+                {
+                    "user_id": "Elias Lanides",
+                    "user_href": "/profile/Elias-Lanides"
+                },
+                {
+                    "user_id": "Joydeep Burman",
+                    "user_href": "/profile/Joydeep-Burman"
+                },
+                {
+                    "user_id": "Swoyam Panda",
+                    "user_href": "/profile/Swoyam-Panda-1"
+                },
+                {
+                    "user_id": "Aaron Green",
+                    "user_href": "/profile/Aaron-Green-40"
+                },
+                {
+                    "user_id": "Kartik Nair",
+                    "user_href": "/profile/Kartik-Nair-63"
+                },
+                {
+                    "user_id": "Kevin Nguyen",
+                    "user_href": "/profile/Kevin-Nguyen-834"
+                },
+                {
+                    "user_id": "Nicol\u00e1s Samanez Cruzate",
+                    "user_href": "/profile/Nicol\u00e1s-Samanez-Cruzate"
+                },
+                {
+                    "user_id": "Vatsalya Awasthi",
+                    "user_href": "/profile/Vatsalya-Awasthi-1"
+                },
+                {
+                    "user_id": "Andr\u00e9 Lopes de Souza",
+                    "user_href": "/profile/Andr\u00e9-Lopes-de-Souza-1"
+                },
+                {
+                    "user_id": "Sal Barone",
+                    "user_href": "/profile/Sal-Barone"
+                },
+                {
+                    "user_id": "Wayne Skladal",
+                    "user_href": "/profile/Wayne-Skladal"
+                },
+                {
+                    "user_id": "James Zhou",
+                    "user_href": "/profile/James-Zhou-7"
+                },
+                {
+                    "user_id": "Alexander Junxiang Chen (\u9648\u9a8f\u7fd4)",
+                    "user_href": "/profile/Alexander-Junxiang-Chen-\u9648\u9a8f\u7fd4"
+                },
+                {
+                    "user_id": "Kr\u00fcgen Baz\u00fcmpski",
+                    "user_href": "/profile/Kr\u00fcgen-Baz\u00fcmpski"
+                },
+                {
+                    "user_id": "Aishik Roy",
+                    "user_href": "/profile/Aishik-Roy"
+                },
+                {
+                    "user_id": "Zachary Carlini",
+                    "user_href": "/profile/Zachary-Carlini"
+                },
+                {
+                    "user_id": "Aamir Soni",
+                    "user_href": "/profile/Aamir-Soni"
+                },
+                {
+                    "user_id": "Johan Veltheim",
+                    "user_href": "/profile/Johan-Veltheim"
+                },
+                {
+                    "user_id": "Agnishom Chattopadhyay",
+                    "user_href": "/profile/Agnishom-Chattopadhyay"
+                },
+                {
+                    "user_id": "Katharina M\u00fcller",
+                    "user_href": "/profile/Katharina-M\u00fcller-4"
+                },
+                {
+                    "user_id": "Dylan Chester",
+                    "user_href": "/profile/Dylan-Chester"
+                },
+                {
+                    "user_id": "Sugat Borthakur",
+                    "user_href": "/profile/Sugat-Borthakur-2"
+                },
+                {
+                    "user_id": "Sara Bello",
+                    "user_href": "/profile/Sara-Bello-1"
+                },
+                {
+                    "user_id": "Thomaz Rocha",
+                    "user_href": "/profile/Thomaz-Rocha"
+                },
+                {
+                    "user_id": "Vibhav Tiwari",
+                    "user_href": "/profile/\u0935\u093f\u092d\u0935-\u0924\u093f\u0935\u093e\u0930\u0940-Vibhav-Tiwari"
+                },
+                {
+                    "user_id": "Sazid Hasan Khan",
+                    "user_href": "/profile/Sazid-Hasan-Khan"
+                },
+                {
+                    "user_id": "Dima Korolev",
+                    "user_href": "/profile/Dima-Korolev"
+                },
+                {
+                    "user_id": "David Isaac",
+                    "user_href": "/profile/David-Isaac-64"
+                },
+                {
+                    "user_id": "Astoria DeTuncq",
+                    "user_href": "/profile/Astoria-DeTuncq"
+                },
+                {
+                    "user_id": "Lakhan Kadam",
+                    "user_href": "/profile/Lakhan-Kadam-12"
+                },
+                {
+                    "user_id": "Dawid Migacz",
+                    "user_href": "/profile/Dawid-Migacz-1"
+                },
+                {
+                    "user_id": "Lyblix Wren",
+                    "user_href": "/profile/Lyblix-Wren"
+                },
+                {
+                    "user_id": "Jack Surem",
+                    "user_href": "/profile/Jack-Surem-1"
+                },
+                {
+                    "user_id": "Richard H. Schwartz",
+                    "user_href": "/profile/Richard-H-Schwartz"
+                },
+                {
+                    "user_id": "Tim Glatzer",
+                    "user_href": "/profile/Tim-Glatzer"
+                },
+                {
+                    "user_id": "Joshua Gross",
+                    "user_href": "/profile/Joshua-Gross-8"
+                },
+                {
+                    "user_id": "Islam Benfifi",
+                    "user_href": "/profile/Islam-Benfifi"
+                },
+                {
+                    "user_id": "Syed Saad",
+                    "user_href": "/profile/Syed-Saad-9"
+                },
+                {
+                    "user_id": "Zachary Smith",
+                    "user_href": "/profile/Zachary-Smith-183"
+                },
+                {
+                    "user_id": "Francisco Manuel Bernal",
+                    "user_href": "/profile/Francisco-Manuel-Bernal"
+                },
+                {
+                    "user_id": "Naran Bayanbat",
+                    "user_href": "/profile/Naran-Bayanbat"
+                },
+                {
+                    "user_id": "Mousam Mallick",
+                    "user_href": "/profile/Mousam-Mallick-2"
+                },
+                {
+                    "user_id": "Patrick Coyne",
+                    "user_href": "/profile/Patrick-Coyne-23"
+                },
+                {
+                    "user_id": "Lukas Rybok",
+                    "user_href": "/profile/Lukas-Rybok"
+                },
+                {
+                    "user_id": "Sigurj\u00f3n Halld\u00f3rsson",
+                    "user_href": "/profile/Sigurj\u00f3n-Halld\u00f3rsson"
+                },
+                {
+                    "user_id": "Madsen Zimbric",
+                    "user_href": "/profile/Madsen-Zimbric"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Jereme Tirschmann",
+                    "user_href": "/profile/Jereme-Tirschmann-1"
+                },
+                {
+                    "user_id": "Joshua Helland",
+                    "user_href": "/profile/Joshua-Helland-1"
+                },
+                {
+                    "user_id": "Abhay Chaudhary",
+                    "user_href": "/profile/Abhay-Chaudhary-1"
+                },
+                {
+                    "user_id": "Joseph Boyle",
+                    "user_href": "/profile/Joseph-Boyle"
+                },
+                {
+                    "user_id": "Julian Grodzicky",
+                    "user_href": "/profile/Julian-Grodzicky"
+                },
+                {
+                    "user_id": "Paul Maguire",
+                    "user_href": "/profile/Paul-Maguire-26"
+                },
+                {
+                    "user_id": "Bjorn Heijligers",
+                    "user_href": "/profile/Bjorn-Heijligers"
+                },
+                {
+                    "user_id": "G\u00e9rard Rozsavolgyi",
+                    "user_href": "/profile/G\u00e9rard-Rozsavolgyi"
+                },
+                {
+                    "user_id": "Deepu Bhar",
+                    "user_href": "/profile/Deepu-Bhar"
+                },
+                {
+                    "user_id": "Ashif Akram",
+                    "user_href": "/profile/Ashif-Akram-1"
+                },
+                {
+                    "user_id": "Pelle Evensen",
+                    "user_href": "/profile/Pelle-Evensen"
+                },
+                {
+                    "user_id": "Zachary Tay",
+                    "user_href": "/profile/Zachary-Tay-5"
+                },
+                {
+                    "user_id": "Toms Thomas",
+                    "user_href": "/profile/Toms-Thomas"
+                },
+                {
+                    "user_id": "Nitsa Movshovitz-Hadar",
+                    "user_href": "/profile/Nitsa-Movshovitz-Hadar"
+                },
+                {
+                    "user_id": "Robert Smith",
+                    "user_href": "/profile/Robert-Smith-4945"
+                },
+                {
+                    "user_id": "Hansu Lee",
+                    "user_href": "/profile/Hansu-Lee-1"
+                },
+                {
+                    "user_id": "Andrew Methean",
+                    "user_href": "/profile/Andrew-Methean"
+                },
+                {
+                    "user_id": "Nicholas Mc Donnell Schmidt",
+                    "user_href": "/profile/Nicholas-Mc-Donnell-Schmidt"
+                },
+                {
+                    "user_id": "Rico Pajarola",
+                    "user_href": "/profile/Rico-Pajarola"
+                },
+                {
+                    "user_id": "Nikolas Scholz",
+                    "user_href": "/profile/Nikolas-Scholz"
+                },
+                {
+                    "user_id": "Graham Cox",
+                    "user_href": "/profile/Graham-Cox-18"
+                },
+                {
+                    "user_id": "Patrick O'Neill",
+                    "user_href": "/profile/Patrick-ONeill-45"
+                },
+                {
+                    "user_id": "David Muccigrosso",
+                    "user_href": "/profile/David-Muccigrosso"
+                },
+                {
+                    "user_id": "Henri Maes",
+                    "user_href": "/profile/Henri-Maes"
+                },
+                {
+                    "user_id": "Timothy Johnson",
+                    "user_href": "/profile/Timothy-Johnson-6"
+                },
+                {
+                    "user_id": "Mathew Soto",
+                    "user_href": "/profile/Mathew-Soto-1"
+                },
+                {
+                    "user_id": "Nathaniel Spanne",
+                    "user_href": "/profile/Nathaniel-Spanne"
+                },
+                {
+                    "user_id": "James Fullwood",
+                    "user_href": "/profile/James-Fullwood-2"
+                },
+                {
+                    "user_id": "David A Craig",
+                    "user_href": "/profile/David-A-Craig-1"
+                },
+                {
+                    "user_id": "Davide Cafaro",
+                    "user_href": "/profile/Davide-Cafaro"
+                },
+                {
+                    "user_id": "Niyanth Rao",
+                    "user_href": "/profile/Niyanth-Rao"
+                },
+                {
+                    "user_id": "Atharva Pangarkar",
+                    "user_href": "/profile/Atharva-Pangarkar"
+                },
+                {
+                    "user_id": "Nawal Mahmood",
+                    "user_href": "/profile/Nawal-Mahmood"
+                },
+                {
+                    "user_id": "Ishaan Sethi",
+                    "user_href": "/profile/Ishaan-Sethi-9"
+                },
+                {
+                    "user_id": "Rafih Yahya",
+                    "user_href": "/profile/Rafih-Yahya"
+                },
+                {
+                    "user_id": "Nicola Bova",
+                    "user_href": "/profile/Nicola-Bova"
+                },
+                {
+                    "user_id": "Ward Van Frost",
+                    "user_href": "/profile/Ward-Van-Frost"
+                },
+                {
+                    "user_id": "Pace Chitanuntavitaya",
+                    "user_href": "/profile/Pace-Chitanuntavitaya"
+                },
+                {
+                    "user_id": "Jet Foncannon",
+                    "user_href": "/profile/Jet-Foncannon"
+                },
+                {
+                    "user_id": "Mateus Souza",
+                    "user_href": "/profile/Mateus-Souza-9"
+                },
+                {
+                    "user_id": "Monika Parmar",
+                    "user_href": "/profile/Monika-Parmar-11"
+                },
+                {
+                    "user_id": "Moaaz Alqady",
+                    "user_href": "/profile/Moaaz-Alqady"
+                },
+                {
+                    "user_id": "David Croft",
+                    "user_href": "/profile/David-Croft-6"
+                },
+                {
+                    "user_id": "Alexandra Torres",
+                    "user_href": "/profile/Alexandra-Torres-20"
+                },
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "JQ Veenstra",
+                    "user_href": "/profile/JQ-Veenstra"
+                },
+                {
+                    "user_id": "Prakhar Nigam",
+                    "user_href": "/profile/Prakhar-Nigam-1"
+                },
+                {
+                    "user_id": "Ruslan Mushkaev",
+                    "user_href": "/profile/Ruslan-Mushkaev"
+                },
+                {
+                    "user_id": "Darshan Aravind",
+                    "user_href": "/profile/Darshan-Aravind"
+                },
+                {
+                    "user_id": "Amal Guptan",
+                    "user_href": "/profile/Amal-Guptan"
+                },
+                {
+                    "user_id": "Lou P. Andreev",
+                    "user_href": "/profile/Lou-P-Andreev"
+                },
+                {
+                    "user_id": "Mike Dulles",
+                    "user_href": "/profile/Mike-Dulles"
+                },
+                {
+                    "user_id": "Sambit Senapati",
+                    "user_href": "/profile/Sambit-Senapati-3"
+                },
+                {
+                    "user_id": "Avishuman Roy",
+                    "user_href": "/profile/Avishuman-Roy"
+                },
+                {
+                    "user_id": "Arbash Nazeer",
+                    "user_href": "/profile/Arbash-Nazeer"
+                },
+                {
+                    "user_id": "Elko Schnur",
+                    "user_href": "/profile/Elko-Schnur-1"
+                },
+                {
+                    "user_id": "Abdulla AlShirawi",
+                    "user_href": "/profile/Abdulla-AlShirawi"
+                },
+                {
+                    "user_id": "Christopher Dumas",
+                    "user_href": "/profile/Christopher-Dumas"
+                },
+                {
+                    "user_id": "Sudarshan Vankudre",
+                    "user_href": "/profile/Sudarshan-Vankudre"
+                },
+                {
+                    "user_id": "Jack McClurg",
+                    "user_href": "/profile/Jack-McClurg"
+                },
+                {
+                    "user_id": "Piyush Ravi",
+                    "user_href": "/profile/Piyush-Ravi"
+                },
+                {
+                    "user_id": "Rodney Baker",
+                    "user_href": "/profile/Rodney-Baker-1"
+                },
+                {
+                    "user_id": "Dean Waters",
+                    "user_href": "/profile/Dean-Waters-11"
+                },
+                {
+                    "user_id": "Moe Li",
+                    "user_href": "/profile/Moe-Li-3"
+                },
+                {
+                    "user_id": "John Seungjin Oh",
+                    "user_href": "/profile/John-Seungjin-Oh"
+                },
+                {
+                    "user_id": "Gunnar Westerling",
+                    "user_href": "/profile/Gunnar-Westerling"
+                },
+                {
+                    "user_id": "Kelly Kinkade",
+                    "user_href": "/profile/Kelly-Kinkade-1"
+                },
+                {
+                    "user_id": "Charles Grissom",
+                    "user_href": "/profile/Charles-Grissom"
+                },
+                {
+                    "user_id": "Scott Peverelle",
+                    "user_href": "/profile/Scott-Peverelle"
+                },
+                {
+                    "user_id": "Gabriel J. Ferrer",
+                    "user_href": "/profile/Gabriel-J-Ferrer"
+                },
+                {
+                    "user_id": "Jackson Ehrenworth",
+                    "user_href": "/profile/Jackson-Ehrenworth"
+                },
+                {
+                    "user_id": "Yallabandi Kiran",
+                    "user_href": "/profile/Yallabandi-Kiran"
+                },
+                {
+                    "user_id": "Dennis Clawson",
+                    "user_href": "/profile/Dennis-Clawson-7"
+                },
+                {
+                    "user_id": "Peter Landry",
+                    "user_href": "/profile/Patrick-Legland"
+                },
+                {
+                    "user_id": "Danny D. Leybzon",
+                    "user_href": "/profile/Danny-D-Leybzon"
+                },
+                {
+                    "user_id": "Jens Adler Nielsen",
+                    "user_href": "/profile/Jens-Adler-Nielsen"
+                },
+                {
+                    "user_id": "Craig Wilson",
+                    "user_href": "/profile/Craig-Wilson-42"
+                },
+                {
+                    "user_id": "Sayan Ganguly",
+                    "user_href": "/profile/Sayan-Ganguly-14"
+                },
+                {
+                    "user_id": "Tanmay Bhore",
+                    "user_href": "/profile/Tanmay-Bhore-1"
+                },
+                {
+                    "user_id": "Fran\u00e7ois L\u00e9onard",
+                    "user_href": "/profile/Fran\u00e7ois-L\u00e9onard"
+                },
+                {
+                    "user_id": "Dimitrij Maslov",
+                    "user_href": "/profile/Dimitrij-Maslov"
+                },
+                {
+                    "user_id": "Anchit Mishra",
+                    "user_href": "/profile/Anchit-Mishra-1"
+                },
+                {
+                    "user_id": "George Teo Chew Lang",
+                    "user_href": "/profile/George-Teo-Chew-Lang"
+                },
+                {
+                    "user_id": "Alexandru-Petre Pitrop",
+                    "user_href": "/profile/Alexandru-Petre-Pitrop"
+                },
+                {
+                    "user_id": "Steve Rapaport",
+                    "user_href": "/profile/Steve-Rapaport"
+                },
+                {
+                    "user_id": "Srishtik Dutta",
+                    "user_href": "/profile/Srishtik-Dutta"
+                },
+                {
+                    "user_id": "Joji Thomas",
+                    "user_href": "/profile/Joji-Thomas-5"
+                },
+                {
+                    "user_id": "Xander de Vries",
+                    "user_href": "/profile/Xander-de-Vries-2"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Richard O. Gregory",
+                    "user_href": "/profile/Richard-O-Gregory"
+                },
+                {
+                    "user_id": "Harit Kohli",
+                    "user_href": "/profile/Harit-Kohli-2"
+                },
+                {
+                    "user_id": "Maxwell Conradt",
+                    "user_href": "/profile/Maxwell-Conradt"
+                },
+                {
+                    "user_id": "Ava Dena",
+                    "user_href": "/profile/Ava-Dena"
+                },
+                {
+                    "user_id": "Ernestas Ju\u0161ka",
+                    "user_href": "/profile/Ernestas-Ju\u0161ka"
+                },
+                {
+                    "user_id": "Maxime Casas",
+                    "user_href": "/profile/Maxime-Casas"
+                },
+                {
+                    "user_id": "Caleb Oki",
+                    "user_href": "/profile/Caleb-Oki"
+                },
+                {
+                    "user_id": "Todd Allen",
+                    "user_href": "/profile/Todd-Allen-9"
+                },
+                {
+                    "user_id": "Matheus Griebel",
+                    "user_href": "/profile/Matheus-Griebel-1"
+                },
+                {
+                    "user_id": "Jose Nicolas Marin",
+                    "user_href": "/profile/Jose-Nicolas-Marin"
+                },
+                {
+                    "user_id": "Reinier Post",
+                    "user_href": "/profile/Reinier-Post"
+                },
+                {
+                    "user_id": "Eial Teomy",
+                    "user_href": "/profile/Eial-Teomy"
+                },
+                {
+                    "user_id": "Ivan Yakovenko",
+                    "user_href": "/profile/Ivan-Yakovenko"
+                },
+                {
+                    "user_id": "Owen Levin",
+                    "user_href": "/profile/Owen-Levin-1"
+                },
+                {
+                    "user_id": "Paisa Seeluangsawat",
+                    "user_href": "/profile/Paisa-Seeluangsawat"
+                },
+                {
+                    "user_id": "Ayush Sengupta",
+                    "user_href": "/profile/Ayush-Sengupta"
+                },
+                {
+                    "user_id": "Aditya Ranjan",
+                    "user_href": "/profile/Aditya-Ranjan-58"
+                },
+                {
+                    "user_id": "Jos\u00e9 Luis Aguilar",
+                    "user_href": "/profile/Jos\u00e9-Luis-Aguilar-1"
+                },
+                {
+                    "user_id": "Steven Erickson",
+                    "user_href": "/profile/Steven-Erickson-30"
+                },
+                {
+                    "user_id": "Krishnamoorthy Iyer",
+                    "user_href": "/profile/Krishnamoorthy-Iyer"
+                },
+                {
+                    "user_id": "Cyrus Pacht",
+                    "user_href": "/profile/Cyrus-Pacht"
+                },
+                {
+                    "user_id": "Edmond \"Bubbles\" Gagnon",
+                    "user_href": "/profile/Edmond-Bubbles-Gagnon"
+                },
+                {
+                    "user_id": "Jason Hausenloy",
+                    "user_href": "/profile/Jason-Hausenloy"
+                },
+                {
+                    "user_id": "Kelly Gass",
+                    "user_href": "/profile/Kelly-Gass"
+                },
+                {
+                    "user_id": "Julian Bushelli",
+                    "user_href": "/profile/Julian-Bushelli"
+                },
+                {
+                    "user_id": "Willy George Amaral Petrenko",
+                    "user_href": "/profile/Willy-George-Amaral-Petrenko"
+                },
+                {
+                    "user_id": "Choon Yik Tang",
+                    "user_href": "/profile/Choon-Yik-Tang"
+                },
+                {
+                    "user_id": "Arnav Das",
+                    "user_href": "/profile/Arnav-Das-13"
+                },
+                {
+                    "user_id": "Dhaval Shah",
+                    "user_href": "/profile/Dhaval-Shah-110"
+                },
+                {
+                    "user_id": "Suraj Priyank",
+                    "user_href": "/profile/Suraj-Priyank"
+                },
+                {
+                    "user_id": "Mauricio Schmidt Muniz",
+                    "user_href": "/profile/Mauricio-Schmidt-Muniz"
+                },
+                {
+                    "user_id": "Andrew Reed",
+                    "user_href": "/profile/Andrew-Reed-3"
+                },
+                {
+                    "user_id": "Benjamin Keilty",
+                    "user_href": "/profile/Benjamin-Keilty"
+                },
+                {
+                    "user_id": "Marcos Passini",
+                    "user_href": "/profile/Marcos-Passini"
+                },
+                {
+                    "user_id": "Rohit Shinde",
+                    "user_href": "/profile/Rohit-Shinde-2"
+                },
+                {
+                    "user_id": "Elliott Zaresky-Williams",
+                    "user_href": "/profile/Elliott-Zaresky-Williams"
+                },
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                },
+                {
+                    "user_id": "Nikola Jankovi\u0107",
+                    "user_href": "/profile/Nikola-Jankovi\u0107-13"
+                },
+                {
+                    "user_id": "Abdur Rehman Zahid",
+                    "user_href": "/profile/Abdur-Rehman-Zahid"
+                },
+                {
+                    "user_id": "Yixin Lin",
+                    "user_href": "/profile/Yixin-Lin"
+                },
+                {
+                    "user_id": "Nathan Lin",
+                    "user_href": "/profile/Nathan-Lin-10"
+                },
+                {
+                    "user_id": "Liyosi Collins",
+                    "user_href": "/profile/Liyosi-Collins-1"
+                },
+                {
+                    "user_id": "M\u00e1rcio Sim\u00f5es",
+                    "user_href": "/profile/M\u00e1rcio-Sim\u00f5es"
+                },
+                {
+                    "user_id": "Xavier van Gorp",
+                    "user_href": "/profile/Xavier-van-Gorp"
+                },
+                {
+                    "user_id": "Darshan Hegde",
+                    "user_href": "/profile/Darshan-Hegde-15"
+                },
+                {
+                    "user_id": "Ale Ballester",
+                    "user_href": "/profile/Ale-Ballester"
+                },
+                {
+                    "user_id": "Nisarg Shah",
+                    "user_href": "/profile/Nisarg-Shah-3"
+                },
+                {
+                    "user_id": "Ankit Tyagi",
+                    "user_href": "/profile/Ankit-Tyagi-551"
+                },
+                {
+                    "user_id": "Ben Thayer",
+                    "user_href": "/profile/Ben-Thayer"
+                },
+                {
+                    "user_id": "Marty Fouts",
+                    "user_href": "/profile/Marty-Fouts-2"
+                },
+                {
+                    "user_id": "Theodore Weld Smith",
+                    "user_href": "/profile/Theodore-Weld-Smith"
+                },
+                {
+                    "user_id": "Sagar Gohri",
+                    "user_href": "/profile/Sagar-Gohri-1"
+                },
+                {
+                    "user_id": "Jean B\u00e9nichou",
+                    "user_href": "/profile/Jean-B\u00e9nichou-2"
+                },
+                {
+                    "user_id": "Santosh Abraham",
+                    "user_href": "/profile/Santosh-Abraham-3"
+                },
+                {
+                    "user_id": "Bogdan Georgiev",
+                    "user_href": "/profile/Bogdan-Georgiev-1"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Santiago Renteria",
+                    "user_href": "/profile/Santiago-Renteria"
+                },
+                {
+                    "user_id": "M\u00e1t\u00e9 Kov\u00e1cs",
+                    "user_href": "/profile/M\u00e1t\u00e9-Kov\u00e1cs-3"
+                },
+                {
+                    "user_id": "Konstantin Titarenko",
+                    "user_href": "/profile/Konstantin-Titarenko"
+                },
+                {
+                    "user_id": "Pablo Rimancus",
+                    "user_href": "/profile/Pablo-Rimancus"
+                },
+                {
+                    "user_id": "Krishnan Raghavan",
+                    "user_href": "/profile/Krishnan-Raghavan"
+                },
+                {
+                    "user_id": "Ludger Starke",
+                    "user_href": "/profile/Ludger-Starke"
+                },
+                {
+                    "user_id": "H\u00e9ctor Hern\u00e1ndez",
+                    "user_href": "/profile/H\u00e9ctor-Hern\u00e1ndez-20"
+                },
+                {
+                    "user_id": "Gyan Dissanaike",
+                    "user_href": "/profile/Gyan-Dissanaike"
+                },
+                {
+                    "user_id": "George Stepanek",
+                    "user_href": "/profile/George-Stepanek"
+                },
+                {
+                    "user_id": "Michael Boland",
+                    "user_href": "/profile/Michael-Boland-67"
+                },
+                {
+                    "user_id": "Soham J Deshmukh",
+                    "user_href": "/profile/Soham-J-Deshmukh"
+                },
+                {
+                    "user_id": "Joshua Duncan",
+                    "user_href": "/profile/Joshua-Duncan-21"
+                },
+                {
+                    "user_id": "Najwa Laabid",
+                    "user_href": "/profile/Najwa-Laabid"
+                },
+                {
+                    "user_id": "Bill Mbogho",
+                    "user_href": "/profile/Bill-Mbogho"
+                },
+                {
+                    "user_id": "Koushik Kumaran",
+                    "user_href": "/profile/Koushik-Kumaran-1"
+                },
+                {
+                    "user_id": "Jeff Rey",
+                    "user_href": "/profile/Jeff-Rey-11"
+                },
+                {
+                    "user_id": "Jeyahar Antony",
+                    "user_href": "/profile/Jeyahar-Antony"
+                },
+                {
+                    "user_id": "Ryan Graham",
+                    "user_href": "/profile/Ryan-Graham-146"
+                },
+                {
+                    "user_id": "Yen Kaow Ng",
+                    "user_href": "/profile/Yen-Kaow-Ng"
+                },
+                {
+                    "user_id": "Marc Visser",
+                    "user_href": "/profile/Marc-Visser-6"
+                },
+                {
+                    "user_id": "Ben Tennyson",
+                    "user_href": "/profile/Ben-Tennyson-127"
+                },
+                {
+                    "user_id": "Rajgopal Varadharajan",
+                    "user_href": "/profile/Rajgopal-Varadharajan"
+                },
+                {
+                    "user_id": "Adithya kamath",
+                    "user_href": "/profile/Adithya-kamath-8"
+                },
+                {
+                    "user_id": "Eddie Heyne",
+                    "user_href": "/profile/Eddie-Heyne"
+                },
+                {
+                    "user_id": "Mohit Sinha",
+                    "user_href": "/profile/Mohit-Sinha-1"
+                },
+                {
+                    "user_id": "Anthony Tang",
+                    "user_href": "/profile/Anthony-Tang-32"
+                },
+                {
+                    "user_id": "Ernie Sykes",
+                    "user_href": "/profile/Ernie-Sykes"
+                },
+                {
+                    "user_id": "Yasha Berchenko-Kogan",
+                    "user_href": "/profile/Yasha-Berchenko-Kogan"
+                },
+                {
+                    "user_id": "Wittmann Goh",
+                    "user_href": "/profile/Wittmann-Goh"
+                },
+                {
+                    "user_id": "Keith Carscadden",
+                    "user_href": "/profile/Keith-Carscadden"
+                },
+                {
+                    "user_id": "Jhevon Smith",
+                    "user_href": "/profile/Jhevon-Smith"
+                },
+                {
+                    "user_id": "Tobin Baker",
+                    "user_href": "/profile/Tobin-Baker-1"
+                },
+                {
+                    "user_id": "Avi Zeff",
+                    "user_href": "/profile/Avi-Zeff-1"
+                },
+                {
+                    "user_id": "Victor A. Davis",
+                    "user_href": "/profile/Victor-A-Davis"
+                },
+                {
+                    "user_id": "Burak G\u00fczel",
+                    "user_href": "/profile/Burak-G\u00fczel"
+                },
+                {
+                    "user_id": "Siranat Usawasutsakorn",
+                    "user_href": "/profile/Siranat-Usawasutsakorn"
+                },
+                {
+                    "user_id": "Cristian Alexander",
+                    "user_href": "/profile/Cristian-Alexander-2"
+                },
+                {
+                    "user_id": "Helena Reis",
+                    "user_href": "/profile/Helena-Reis-5"
+                },
+                {
+                    "user_id": "Luan Roos",
+                    "user_href": "/profile/Luan-Roos"
+                },
+                {
+                    "user_id": "Sachin Govind",
+                    "user_href": "/profile/Sachin-Govind-1"
+                },
+                {
+                    "user_id": "Kweweli Togba Doya",
+                    "user_href": "/profile/Kweweli-Togba-Doya"
+                },
+                {
+                    "user_id": "Abhiram",
+                    "user_href": "/profile/Abhiram-77"
+                },
+                {
+                    "user_id": "Drew McBride",
+                    "user_href": "/profile/Drew-McBride-7"
+                },
+                {
+                    "user_id": "Evan Walter",
+                    "user_href": "/profile/Evan-Walter-15"
+                },
+                {
+                    "user_id": "Vic Bahl",
+                    "user_href": "/profile/Vic-Bahl"
+                },
+                {
+                    "user_id": "William Bradley",
+                    "user_href": "/profile/William-Bradley-37"
+                },
+                {
+                    "user_id": "Guangyuan Chen",
+                    "user_href": "/profile/Guangyuan-Chen"
+                },
+                {
+                    "user_id": "Antonio Badia",
+                    "user_href": "/profile/Antonio-Badia"
+                },
+                {
+                    "user_id": "Colin Yao",
+                    "user_href": "/profile/Colin-Yao-7"
+                },
+                {
+                    "user_id": "Nick Picard",
+                    "user_href": "/profile/Nick-Picard"
+                },
+                {
+                    "user_id": "Jan Christian Meyer",
+                    "user_href": "/profile/Jan-Christian-Meyer"
+                },
+                {
+                    "user_id": "Oskar Stangenberg",
+                    "user_href": "/profile/Oskar-Stangenberg"
+                },
+                {
+                    "user_id": "Brandon Malone",
+                    "user_href": "/profile/Brandon-Malone-1"
+                },
+                {
+                    "user_id": "Sa\u00fal Alvarez",
+                    "user_href": "/profile/Sa\u00fal-Alvarez"
+                },
+                {
+                    "user_id": "That Bebu Guy",
+                    "user_href": "/profile/That-Bebu-Guy"
+                },
+                {
+                    "user_id": "Asher Reich",
+                    "user_href": "/profile/Asher-Reich"
+                },
+                {
+                    "user_id": "Brando Miranda",
+                    "user_href": "/profile/Brando-Miranda"
+                },
+                {
+                    "user_id": "Paolo Cuzzato",
+                    "user_href": "/profile/Paolo-Cuzzato"
+                },
+                {
+                    "user_id": "McGwire Jones",
+                    "user_href": "/profile/McGwire-Jones"
+                },
+                {
+                    "user_id": "Gregorio Morales",
+                    "user_href": "/profile/Gregorio-Morales-1"
+                },
+                {
+                    "user_id": "Nebojsa Stankovic",
+                    "user_href": "/profile/Nebojsa-Stankovic"
+                },
+                {
+                    "user_id": "Fl\u00e1vio Menezes",
+                    "user_href": "/profile/Fl\u00e1vio-Menezes-1"
+                },
+                {
+                    "user_id": "Christian Odenius",
+                    "user_href": "/profile/Christian-Odenius"
+                },
+                {
+                    "user_id": "Rafael Tu",
+                    "user_href": "/profile/Rafael-Tu"
+                },
+                {
+                    "user_id": "Andrii Melnykov",
+                    "user_href": "/profile/Andrii-Melnykov"
+                },
+                {
+                    "user_id": "Ayush Sharma",
+                    "user_href": "/profile/Ayush-Sharma-1108"
+                },
+                {
+                    "user_id": "Brett Schmidt",
+                    "user_href": "/profile/Brett-Schmidt-5"
+                },
+                {
+                    "user_id": "Alireza Rafiei",
+                    "user_href": "/profile/Alireza-Rafiei-2"
+                },
+                {
+                    "user_id": "Christian Howard",
+                    "user_href": "/profile/Christian-Howard-2"
+                },
+                {
+                    "user_id": "Alfas Hakeem",
+                    "user_href": "/profile/Alfas-Hakeem"
+                },
+                {
+                    "user_id": "Eddie Rydell",
+                    "user_href": "/profile/Eddie-Rydell"
+                },
+                {
+                    "user_id": "Shouvik Ganguly",
+                    "user_href": "/profile/Shouvik-Ganguly"
+                },
+                {
+                    "user_id": "Aleksandar Bakic",
+                    "user_href": "/profile/Aleksandar-Bakic"
+                },
+                {
+                    "user_id": "Martin Jansche",
+                    "user_href": "/profile/Martin-Jansche"
+                },
+                {
+                    "user_id": "Braden Wilson",
+                    "user_href": "/profile/Braden-Wilson-1"
+                },
+                {
+                    "user_id": "Prabhanjan Sahoo",
+                    "user_href": "/profile/Prabhanjan-Sahoo-4"
+                },
+                {
+                    "user_id": "Steven de Rooij",
+                    "user_href": "/profile/Steven-de-Rooij"
+                },
+                {
+                    "user_id": "Raul Nosal",
+                    "user_href": "/profile/Raul-Nosal"
+                },
+                {
+                    "user_id": "Moe Khalid",
+                    "user_href": "/profile/Moe-Khalid-1"
+                },
+                {
+                    "user_id": "James Ryan",
+                    "user_href": "/profile/James-Ryan-164"
+                },
+                {
+                    "user_id": "Moby Azra",
+                    "user_href": "/profile/Moby-Azra"
+                },
+                {
+                    "user_id": "Ze Chen",
+                    "user_href": "/profile/Ze-Chen-15"
+                },
+                {
+                    "user_id": "Luis Sierra Muntane",
+                    "user_href": "/profile/Luis-Sierra-Muntane"
+                },
+                {
+                    "user_id": "Francisco Ortiz",
+                    "user_href": "/profile/Francisco-Ortiz-56"
+                },
+                {
+                    "user_id": "Dave Voorhis",
+                    "user_href": "/profile/Dave-Voorhis"
+                },
+                {
+                    "user_id": "Skiea Fiedem",
+                    "user_href": "/profile/Skiea-Fiedem"
+                },
+                {
+                    "user_id": "Sudip Sinha",
+                    "user_href": "/profile/Sudip-Sinha"
+                },
+                {
+                    "user_id": "Yitzhak Kornbluth",
+                    "user_href": "/profile/Yitzhak-Kornbluth"
+                },
+                {
+                    "user_id": "Lakshay Sood",
+                    "user_href": "/profile/Lakshay-Sood"
+                },
+                {
+                    "user_id": "Francisco Toro",
+                    "user_href": "/profile/Francisco-Toro-1-1"
+                },
+                {
+                    "user_id": "Raul Abdullayev",
+                    "user_href": "/profile/Raul-Abdullayev"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Eric Platt",
+                    "user_href": "/profile/Eric-Platt-9"
+                },
+                {
+                    "user_id": "Travis Brauer",
+                    "user_href": "/profile/Travis-Brauer"
+                },
+                {
+                    "user_id": "Isaac Blackburn",
+                    "user_href": "/profile/Isaac-Blackburn-1"
+                },
+                {
+                    "user_id": "Cody Estes",
+                    "user_href": "/profile/Cody-Estes"
+                },
+                {
+                    "user_id": "Jered Wasburn-Moses",
+                    "user_href": "/profile/Jered-Wasburn-Moses"
+                },
+                {
+                    "user_id": "Michael McClennen",
+                    "user_href": "/profile/Michael-McClennen"
+                },
+                {
+                    "user_id": "Hannes Harnisch",
+                    "user_href": "/profile/Hannes-Harnisch-1"
+                },
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten-1"
+                },
+                {
+                    "user_id": "Bret O'Brien",
+                    "user_href": "/profile/Bret-OBrien"
+                },
+                {
+                    "user_id": "Liu Sean",
+                    "user_href": "/profile/Liu-Sean"
+                },
+                {
+                    "user_id": "Roopesh Ranjan",
+                    "user_href": "/profile/Roopesh-Ranjan-1"
+                },
+                {
+                    "user_id": "Erik Anson",
+                    "user_href": "/profile/Erik-Anson"
+                },
+                {
+                    "user_id": "Ben Harsant",
+                    "user_href": "/profile/Ben-Harsant"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Sean Cray",
+                    "user_href": "/profile/Sean-Cray-1"
+                },
+                {
+                    "user_id": "Carlos Zepeda Rosas",
+                    "user_href": "/profile/Carlos-Zepeda-Rosas"
+                },
+                {
+                    "user_id": "Federico Perez",
+                    "user_href": "/profile/Federico-Perez-29"
+                },
+                {
+                    "user_id": "Aashutosh Sharma",
+                    "user_href": "/profile/Aashutosh-Sharma-37"
+                },
+                {
+                    "user_id": "Erik Bergland",
+                    "user_href": "/profile/Erik-Bergland"
+                },
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                },
+                {
+                    "user_id": "Gideon Shavit",
+                    "user_href": "/profile/Gideon-Shavit"
+                },
+                {
+                    "user_id": "Simon FitzGerald",
+                    "user_href": "/profile/Simon-FitzGerald-17"
+                },
+                {
+                    "user_id": "Rohen Giralt",
+                    "user_href": "/profile/Rohen-Giralt"
+                },
+                {
+                    "user_id": "Ushnish Sengupta",
+                    "user_href": "/profile/\u0989\u09b7\u09cd\u09a3\u09c0\u09b7-\u09b8\u09c7\u09a8\u0997\u09c1\u09aa\u09cd\u09a4-Ushnish-Sengupta"
+                },
+                {
+                    "user_id": "Benyamin Kellow",
+                    "user_href": "/profile/Benyamin-Kellow"
+                },
+                {
+                    "user_id": "Jesse Raffield",
+                    "user_href": "/profile/Jesse-Raffield-1"
+                },
+                {
+                    "user_id": "Deniz \u015eu\u00f6zer",
+                    "user_href": "/profile/Deniz-\u015eu\u00f6zer-1"
+                },
+                {
+                    "user_id": "Kenneth Shin",
+                    "user_href": "/profile/Kenneth-Shin-5"
+                },
+                {
+                    "user_id": "Victor Duarte",
+                    "user_href": "/profile/Victor-Duarte-16"
+                },
+                {
+                    "user_id": "Dami\u00e1n \u010cih\u00e1k",
+                    "user_href": "/profile/Dami\u00e1n-\u010cih\u00e1k"
+                },
+                {
+                    "user_id": "Philip Howie",
+                    "user_href": "/profile/Philip-Howie"
+                },
+                {
+                    "user_id": "Alexander Fainshtein",
+                    "user_href": "/profile/Alexander-Fainshtein"
+                },
+                {
+                    "user_id": "Alfred Milgrom",
+                    "user_href": "/profile/Alfred-Milgrom"
+                },
+                {
+                    "user_id": "Shawn Endresen",
+                    "user_href": "/profile/Shawn-Endresen"
+                },
+                {
+                    "user_id": "Aditya Tamar",
+                    "user_href": "/profile/Aditya-Tamar-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Larry Terrell",
+                "href": "/profile/Larry-Terrell-3"
+            },
+            "answer_text": "Basically, it states that any formal logical system that\u2019s consistent (i.e., doesn\u2019t prove false statements), as well as \u201csufficiently complex\u201d (i.e., able to talk about integer arithmetic in a certain way that\u2019s well-known to mathematicians), will always contain true statements that cannot be proven within that system \u2014 that\u2019s the sense in which they are incomplete. It came as quite a disappointment when Godel announced it, since it claimed that formal logical systems are inherently limited in their scope of application. ",
+            "date": "Answered May 2, 2020",
+            "views": "163",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                },
+                {
+                    "user_id": "Aashish Reddy",
+                    "user_href": "/profile/Aashish-Reddy-4"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Dillof",
+                "href": "/profile/Tony-Dillof"
+            },
+            "answer_text": "I took a class in \u201cPhilosophical Significance of Goedel\u2019s Theorem\u201d at Harvard in the early 80s. We spent almost the entire class working through the details of the theorem and its extensions. At the end, someone asked the instructor (a philosophy professor), \u201cWhen are we going to learn about its philosophical significance.\u201d The instructor replied, \u201cIf you understand the math, you\u2019ll see it it has no philosophical significance.\u201d ",
+            "date": "Answered May 10, 2020",
+            "views": "143",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Wes Hansen",
+                "href": "/profile/Wes-Hansen-1"
+            },
+            "answer_text": "There is only one correct way to interpret Goedel\u2019s Incompleteness results. Verena Huber-Dyson gives the correct interpretation, albeit informally, in her excellent Edge article, G\u00d6DEL AND THE NATURE OF MATHEMATICAL TRUTH II. I have already explained Goedel\u2019s First Incompleteness Theorem in Wes Hansen's answer to Is the following sentence equivalent to G\u00f6del gamma sentence: \"It is unprovable a sentence which says that a sentence is unprovable\"? and I will reproduce that discussion here; but first allow me to lay a bit of groundwork. The modern way we deal with truth arose primarily due to Alfred Tarski\u2019s work, which resulted in Model Theory; you can read a bit about it in the Alfred Tarski entry on Stanford\u2019s Encyclopedia of Philosophy (see the subject heading, truth). What follows is largely from A Problem Course in Mathematical Logic, which is not a very good textbook unless you already know logic or are engaged with an instructor. It\u2019s perfect for this discussion however. What we need from that book is simply an understanding of what the logical symbols, [math]\\vdash[/math] and [math]\\models[/math], actually mean. Okay, so we need a couple of definitions from A Problem Course. From page 24, we define the symbols used in a First-order Language: Definition 5.1. The symbols of a first-order language [math]\\mathcal{L}[/math] include: Parentheses: [math]([/math] and [math])[/math].Connectives: [math]\\neg[/math] and [math]\\implies[/math] (negation and implication, respectively).Quantifier: [math]\\forall[/math] (for any or for all).Variables: [math]v_0, v_1, v_2,..., v_n,...[/math]Equality: [math]=[/math].A (possibly empty) set of constant symbols.For each [math]k \\geq 1[/math], a (possibly empty) set of [math]k[/math]-place function symbols (these are often called operations).For each [math]k \\geq 1[/math], a (possibly empty) set of [math]k[/math]-place relation (or predicate) symbols.From page 33, we define a structure for a language: Definition 6.1. A structure [math]\\mathcal{M}[/math] for [math]\\mathcal{L}[/math] consists of the following: A non-empty set [math]M[/math], often written as |[math]\\mathcal{M}[/math]|, called the universe of [math]\\mathcal{M}[/math].For each constant symbol [math]c[/math] of [math]\\mathcal{L}[/math], an element [math]c^\\mathcal{M}[/math] of [math]\\mathcal{M}[/math].For each [math]k[/math]-place function symbol [math]f[/math] of [math]\\mathcal{L}[/math], a function [math]f^\\mathcal{M} : \\mathcal{M}_k \\implies \\mathcal{M}[/math], i.e. a [math]k[/math]-place function on [math]\\mathcal{M}[/math].For each [math]k[/math]-place relation symbol [math]P[/math] of [math]\\mathcal{L}[/math], a relation [math]P^ \\mathcal{M} \\subseteq M^k[/math], i.e. a [math]k[/math]-place relation on [math]\\mathcal{M}[/math].Okay, so that defines a structure of a logical language, a formal language. These structures have no semantical content. To give them semantical content we must interpret the symbols in such a way that all of the axioms of our structure are true at the same time; this results in a model of our structure. So now, suppose we have a language we call Peano Arithmetic, [math]\\mathcal{L}_{PA}[/math], and suppose we have some sentence about Peano Arithmetic, [math]q[/math]. Then the sentence [math]\\mathcal{L}_{PA} \\models q[/math] simply says that there is an interpretation of the symbols such that the axioms of our structure AND the sentence [math]q[/math] are true at the same time; the sentence [math]\\mathcal{L}_{PA} \\vdash q[/math] simply says that there is a formal deduction from the axioms of our language which concludes with the sentence [math]q[/math] or, in other words, there is a proof of [math]q[/math] from our axioms. Okay, with that out of the way, I\u2019m going to simply reproduce that other answer of mine here and add an explanation of the Second Incompleteness Theorem. No, that would be a tautology and you can prove tautologies from the empty set. An example of an actual Goedel sentence could be the binary Goldbach conjecture. Let [math]P[/math] be the set of all prime numbers and let [math]E[/math] be the set of all even positive integers greater than two. Then the binary Goldbach conjecture says that for any [math]e \\in E[/math] there exists [math]p_1, p_2 \\in P[/math] such that [math]e = p_1 + p_2[/math]. Many believe this to be not only undecidable but also an instance of incompleteness. But the actual content of Goedel\u2019s sentence [math]g[/math] doesn\u2019t really matter other than it is a sentence about Peano Arithmetic. Goedel\u2019s result is in the domain of meta-mathematics and is really a statement about First-Order Logic (FOL) and the concepts truth and proof which accompany FOL. For a great long time it was believed by most if not all mathematicians that our first-order concepts truth and proof were equivalent; this belief largely motivated the search for soundness and completeness theorems: Soundness Theorem: If [math]\u03b1[/math] is a sentence and [math]\u2206[/math] is a set of sentences such that [math]\u2206 \\vdash \u03b1[/math], then [math]\u2206 \\models \u03b1[/math]. In English, if there is a proof from [math]\u2206[/math] which concludes with [math]\u03b1[/math], then there is an interpretation which makes all of the sentences in [math]\u2206 \\cup \u03b1[/math] true at the same time. Completeness Theorem: If [math]\u03b1[/math] is a sentence and [math]\u2206[/math] is a set of sentences such that [math]\u2206 \\models \u03b1[/math], then [math]\u2206 \\vdash \u03b1[/math]. In English, if there is an interpretation which makes all of the sentences in [math]\u2206 \\cup \u03b1[/math] true at the same time, then there is a proof from [math]\u2206[/math] which concludes with [math]\u03b1[/math]. By the Law of Biconditional, these demonstrate equivalence between proof and truth, truth here represented by Tarski\u2019s Model Theoretic method. Tarski was the founder of Model Theory and Model Theory was largely motivated by Goedel\u2019s results and Tarski\u2019s own closely related Undefinability Theorem. When we prove Soundness and Completeness of FOL in an introductory course, we use an arbitrary set of sentences, meaning these theorems are completely general, i.e. they hold for any possible axiomatic system that FOL could be utilized with. While investigating the so-called decision problem, Goedel, using very creative meta-mathematical techniques, demonstrated that this is not true. Let [math]\\mathcal{L}_{PA}[/math] be the language of Peano Arithmetic. Then Goedel proved what is today called the Fixed-Point Lemma or the Diagonalization Lemma which leads straightaway to: [math]\\mathcal{L}_{PA} \\vdash (g \\iff \\mathcal{L}_{PA} \\nvdash g)[/math]. Supposing [math]\\mathcal{L}_{PA}[/math] is sound, then [math]\\mathcal{L}_{PA} \\models (g \\iff \\mathcal{L} \\nvdash g)[/math]. By the Law of Biconditional, we can decompose this as [math](g \\implies \\mathcal{L}_{PA} \\nvdash g) \\wedge (\\mathcal{L}_{PA} \\nvdash g \\implies g)[/math]. By the Law of Contraposition, [math]\\mathcal{L}_{PA} \\nvdash g \\implies g[/math] is logically equivalent to [math]\\neg g \\implies \\mathcal{L}_{PA} \\vdash g[/math]. Now we pose two inconvenient counter-factuals: Suppose [math]\\mathcal{L}_{PA} \\models g[/math], then, since [math]\\mathcal{L}_{PA} \\models (g \\implies \\mathcal{L}_{PA} \\nvdash g)[/math] from above, by the Law of Detachment, [math]\\mathcal{L}_{PA} \\nvdash g[/math] and [math]\\mathcal{L}_{PA}[/math] represents a counter-example to the Completeness Theorem;Suppose [math]\\mathcal{L}_{PA} \\models \\neg g[/math], then, since [math]\\mathcal{L}_{PA} \\models (\\neg g \\implies \\mathcal{L}_{PA} \\vdash g)[/math] from above, by the Law of Detachment, [math]\\mathcal{L}_{PA} \\vdash g[/math] and [math]\\mathcal{L}_{PA}[/math] represents a counter-example to the Soundness Theorem.The only other possibility is [math]\\mathcal{L}_{PA}[/math] is a counter-example to both Soundness and Completeness. So what we find here is that our concepts of truth and proof are not equivalent and that we cannot be 100% certain about our logical deductions. This is why I find Jakko Hintikka\u2019s IFFOL so interesting; IFFOL is based on a generalization of Game Theoretic Semantics to games with imperfect information, a straight-forward formalization of cognitive semantics. I see as the true foundation of mathematics, the subsumption hierarchy of recursive arithmetics expressed in IFFOL. Another common misconception I would clear up: it seems common to conflate undecidability with incompleteness but undecidability is a much weaker result. Undecidability says that there does not exist an algorithm (a finite procedure) for deciding whether or not a sentence is a logical conclusion from a set of axioms. Incompleteness, technically speaking, says that given a consistent and recursive set of axioms there exist sentences [math]g[/math] such that neither [math]g[/math] nor [math]\\neg g[/math] can be proven from those axioms and the above discussion tells us why. Incompleteness, then, is a Corollary to a much more general phenomenon, Turing\u2019s Uncomputability. For a really great explication of Goedel\u2019s results, see On Fixed-Points, Diagonalization, and Self-Reference. [end other answer] Okay, now, to understand the Second Incompleteness result, that a recursive, consistent system cannot prove it\u2019s own consistency, it is only necessary to realize that an inconsistent system \u201cblows up,\u201d i. e. it becomes useless because it will prove anything, including any sentence [math]g[/math] and its negation. With this realization, it is quite simple to show a logical equivalence between Goedel\u2019s sentence [math]g[/math] and the sentence, \u201c[math]PA[/math] is consistent.\u201d If [math]PA[/math] can prove it\u2019s own consistency then, it could also prove the sentence [math]g[/math] and we have shown that that is impossible. Do you understand that? The idea is, saying that a system is consistent is the same thing, logically, as saying that there exists sentences unprovable by the system. ",
+            "date": "Answered July 2, 2020",
+            "views": "203",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Frank Hubeny",
+                    "user_href": "/profile/Frank-Hubeny"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "James Buddenhagen",
+                "href": "/profile/James-Buddenhagen"
+            },
+            "answer_text": "How do you interpret Godel's incompleteness theorem? It says, approximately, that in any axiomatic system that models the basic arithmetic of the integers, there will be true statements within that system that cannot be proved within the system. I am not an expert on this, so hope for other answers. ",
+            "date": "Answered April 27, 2020",
+            "views": "202",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Gon\u00e7alo Cordeiro",
+                    "user_href": "/profile/Gon\u00e7alo-Cordeiro-4"
+                },
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                },
+                {
+                    "user_id": "John Parker",
+                    "user_href": "/profile/John-Parker-703"
+                }
+            ]
+        }
+    ]
+}

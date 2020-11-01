@@ -1,0 +1,34 @@
+{
+    "title": "How to construct a circuit for a Boolean expression - Quora",
+    "tags": [
+        "Discrete Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sylvain J.R. Garceau-Bergeron",
+                "href": "/profile/Sylvain-J-R-Garceau-Bergeron"
+            },
+            "answer_text": "-First you must understand what needs to be solved.-In a truth table, you set up a series of variables each identified with a letter or a symbol (A, B, C etc).-Then you write the state of every combination of variable logic Boolean variable, ex. 1 for TRUE, 0 for FALSE.-You determine on the output section where a TRUE or FALSE condition is required.-Then you write the sum of the \u201cminterms\u201d of the outputs which have a TRUE value. If ALL outputs are TRUE, then the system is called a TAUTOLOGY. If ALL FALSE, the it is called a CONTRADICTION.-By using Boolean logic math, you then minimize the minterms to get the simplest form of output the system will have. There are many techniques: Karnaugh maps, digital Boolean equation solvers, de DeMorgan simplification and many more.-Using basic logic gates (ANDs, ORs, NANDs, NORs, NOTs, XORs, XNORs, etc) you construct the circuit. You can also use PLDs and FPGA, and Verilog.-Using the truth table constructed earlier then you TEST the system logic using a breadboard, logic gate ICs, logic switches and LEDs for output indicators (manual-old way\u2026still useful) or by using simulation software like Proteus. ",
+            "date": "Answered September 21, 2018",
+            "views": "643",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "D. Ghosh",
+                "href": "/profile/D-Ghosh"
+            },
+            "answer_text": "Using logical gates:  ",
+            "date": "Answered January 14, 2014",
+            "views": "659",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                }
+            ]
+        }
+    ]
+}

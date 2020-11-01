@@ -1,0 +1,35 @@
+{
+    "title": "When I log into the Raspberry Pi, I want it to say 'Welcome'. How can I program it? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Damir Tomic",
+                "href": "/profile/Damir-Tomic"
+            },
+            "answer_text": "Rpi has the Linux OS. To be more specific, a custom version of Debian called Raspbian. So, what you looking for is a way to change the default message after login, in Linux. What are the different ways that a message can be displayed to a bash shell after a user logs in? or this, is you use SSH to connect to the machine: Modify the SSH welcome message to include system IP address These tutorials are for Ubuntu, there may be some differences for Debian. Google it. ",
+            "date": "Answered April 2, 2017",
+            "views": "212",
+            "upvotes": " Answer requested by Hristo Mitsev",
+            "upvoters": [
+                {
+                    "user_id": "Jyothish Soman",
+                    "user_href": "/profile/Jyothish-Soman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jesus Balbastro",
+                "href": "/profile/Jesus-Balbastro"
+            },
+            "answer_text": "You want it to say, with audio, \u201cWelcome\u201d? Install moc, or mplayer, and edit your .xinitrc file to play something. Append Something like: mplayer Welcome.ogg\u00a0",
+            "date": "Answered April 2, 2017",
+            "views": "105",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

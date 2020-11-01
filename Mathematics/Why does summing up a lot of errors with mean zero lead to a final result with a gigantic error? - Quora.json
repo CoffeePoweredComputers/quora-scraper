@@ -1,0 +1,113 @@
+{
+    "title": "Why does summing up a lot of errors with mean zero lead to a final result with a gigantic error? - Quora",
+    "tags": [
+        "Engineering",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "Let  be a sequence of  independent random variables with mean zero and standard deviations . (This formalization is the way to model the kinds of errors you are talking about mathematically. You learn about this in probability theory which most undergrad math majors would study.) Then the total error is given by . Because the  are independent, it follows that the standard deviation of  is given by  I should also point out that the mean of  remains zero. So, for example, if all the errors had the same standard deviation, , then the standard deviation of their sum would be given by  So on average, the combined error is zero, but the spread of its distribution grows like the square root of the number of errors being added. That means that there is an ever-growing probability that the combined error will be more than some fixed distance from zero. The random walk you describe in the details are an example of exactly this idea. There are a number of interesting and fairly deep results in the field of Markov Chains that discuss how these random walks behave. ",
+            "date": "Answered May 10, 2017",
+            "views": "463",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Charles Lamar",
+                    "user_href": "/profile/Charles-Lamar-1"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Gerard Blais",
+                    "user_href": "/profile/Gerard-Blais"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Tuan Le",
+                    "user_href": "/profile/Tuan-Le-14"
+                },
+                {
+                    "user_id": "Wes Whiting",
+                    "user_href": "/profile/Wes-Whiting"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                },
+                {
+                    "user_id": "Casey Johnson",
+                    "user_href": "/profile/Casey-Johnson-63"
+                },
+                {
+                    "user_id": "Bob Byers",
+                    "user_href": "/profile/Bob-Byers-3"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Flom",
+                "href": "/profile/Peter-Flom"
+            },
+            "answer_text": "When you sum up a lot of errors there are two key factors: Is the mean 0?Are they independent?If both are true, then, while it is possible to get a huge error, it is very unlikely. But be careful! It is easy to assume that both are true when they are not. This accounts for a lot of major screwups. ",
+            "date": "Answered May 14, 2017",
+            "views": "529",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kostis Gourgoulias",
+                    "user_href": "/profile/Kostis-Gourgoulias"
+                },
+                {
+                    "user_id": "Zachary Taylor",
+                    "user_href": "/profile/Zachary-Taylor-3"
+                },
+                {
+                    "user_id": "David Loke",
+                    "user_href": "/profile/David-Loke-1"
+                },
+                {
+                    "user_id": "Alexander Burton",
+                    "user_href": "/profile/Alexander-Burton-12"
+                },
+                {
+                    "user_id": "Bobby Setjaguna",
+                    "user_href": "/profile/Bobby-Setjaguna"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Richard Byzan",
+                    "user_href": "/profile/Richard-Byzan"
+                },
+                {
+                    "user_id": "Daniel Linds\u00e4th",
+                    "user_href": "/profile/Daniel-Linds\u00e4th"
+                },
+                {
+                    "user_id": "Alan Wu",
+                    "user_href": "/profile/Alan-Wu-13"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                }
+            ]
+        }
+    ]
+}

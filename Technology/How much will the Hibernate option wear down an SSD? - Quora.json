@@ -1,0 +1,109 @@
+{
+    "title": "How much will the Hibernate option wear down an SSD? - Quora",
+    "tags": [
+        "Solid-State Drives (SSD)",
+        "Laptops"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "It's very straightforward: hibernation stores at most your RAM size onto the SSD.  So since you should expect something like 3000 lifetime whole-disk writes from an SSD, hibernating 8G onto a 128G SSD should cause wear of about 1/((128/8)*3000) (48000 lifetime hibernations, assuming no other IO to the SSD, and no write-amplification).  This is quite approximate!  I think it's safe to say that hibernating a few times a day is safe. The 3000 is the approximate flash cell endurance - they can vary, probably as low as 1000.  A Samsung EVO 850 claims a life of 75TB, which is 3000-6000 whole-disk writes (each of which implies erasing every flash cell).  If hibernation somehow triggered worst-possible behavior from the SSD, it might cause a few times more wear-per-hibernation. Wear is not a big issue, mainly since people seek bigger SSDs, which means the wear gets spread across more cells, and thus takes longer to hit the limit in erase cycles.  And hibernation is fairly SSD-friendly IO: probably sequential, and relatively small (RAM-sized).  Obviously, you should not fill your SSD, and should use TRIM (both help the SSD manage wear).  And probably try not to hibernate \"frequently\" (not more than a few times a day), especially if you have big RAM and/or small SSD. OTOH, disks, whether SSD or HD, have to be regarded as consumables, even if the timescale is years. ",
+            "date": "Answered January 13, 2016",
+            "views": "366",
+            "upvotes": " View 33 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Amru Mufid",
+                    "user_href": "/profile/Amru-Mufid"
+                },
+                {
+                    "user_id": "Andrew Gump",
+                    "user_href": "/profile/Andrew-Gump-2"
+                },
+                {
+                    "user_id": "Karter Krueger",
+                    "user_href": "/profile/Karter-Krueger-1"
+                },
+                {
+                    "user_id": "Naimul Kabir",
+                    "user_href": "/profile/Naimul-Kabir-5"
+                },
+                {
+                    "user_id": "Mike Jeter",
+                    "user_href": "/profile/Mike-Jeter-17"
+                },
+                {
+                    "user_id": "Maqsood Alam",
+                    "user_href": "/profile/Maqsood-Alam-46"
+                },
+                {
+                    "user_id": "Dario Cansino",
+                    "user_href": "/profile/Dario-Cansino"
+                },
+                {
+                    "user_id": "Rhitish Haulooman",
+                    "user_href": "/profile/Rhitish-Haulooman"
+                },
+                {
+                    "user_id": "Philip Rose",
+                    "user_href": "/profile/Philip-Rose-32"
+                },
+                {
+                    "user_id": "Baurzhan Aigelov",
+                    "user_href": "/profile/Baurzhan-Aigelov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhishek Dujari",
+                "href": "/profile/Abhishek-Dujari-1"
+            },
+            "answer_text": "It is not bad for SSD. It is just not very useful with SSD. Hibernate: Allows you to resume your work after putting it to sleep. It saves everything to disk from memory. So even on power failure or low battery you can resume where you left off. Unlike Sleep mode where stuff is in RAM and can be lost. Now resuming from hibernate takes awhile as all the ram data needs to be put back in. However with SSD its as fast almost as fast as Sleep mode. So SSD helps a lot. The theory regarding SSD and hibernate is that the more disk you use the higher the change of it using up the extra cells and die earlier. Well , under majority use cases, hibernate will have very little impact if any to the lifetime of the SSD. One of the notions earlier on was due to SSD already being expensive, you;d have only about 80G to 120G and hibernate can use 8GB plus disk space. Kind of waste if you use a desktop and unlikely to hibernate. The most common idea behind Hibernate causing damage to SSD is this What is P/E cycle? - Definition from WhatIs.com That is, NAND flash has limited number of writes (including erase) after which is becomes unusable. Now if you go trying to save every write and erase (which you can\u2019t anyway as disk will erase itself to free up unused blocks ) then you might as well not use the SSD at all. I have been using an SSD for almost 3 years as my OS Drive and on a desktop that\u2019s almost always on. It has a 4 other regular drives of which 2 have been replaced due to random failures (bought around the same time as SSD or after). The SSD is just fine. ",
+            "date": "Answered February 23, 2017",
+            "views": "204",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Naimul Kabir",
+                    "user_href": "/profile/Naimul-Kabir-5"
+                },
+                {
+                    "user_id": "John Casper Necor",
+                    "user_href": "/profile/John-Casper-Necor"
+                },
+                {
+                    "user_id": "Frederick W. Chapman",
+                    "user_href": "/profile/Frederick-W-Chapman"
+                },
+                {
+                    "user_id": "Sasmito Adibowo",
+                    "user_href": "/profile/Sasmito-Adibowo"
+                },
+                {
+                    "user_id": "Jacob Shirley",
+                    "user_href": "/profile/Jacob-Shirley-8"
+                },
+                {
+                    "user_id": "Brian Ramsey",
+                    "user_href": "/profile/Brian-Ramsey-14"
+                },
+                {
+                    "user_id": "Thomas Reuland",
+                    "user_href": "/profile/Thomas-Reuland"
+                },
+                {
+                    "user_id": "Sasha Drozdov",
+                    "user_href": "/profile/Sasha-Drozdov"
+                },
+                {
+                    "user_id": "Jacob Glaister",
+                    "user_href": "/profile/Jacob-Glaister-1"
+                }
+            ]
+        }
+    ]
+}

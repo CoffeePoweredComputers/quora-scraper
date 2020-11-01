@@ -1,0 +1,44 @@
+{
+    "title": "Is my computer safe without any firewall software installed on it? - Quora",
+    "tags": [
+        "Firewalls",
+        "Personal Computers",
+        "Computer Security",
+        "Microsoft Windows",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mario Ortega",
+                "href": "/profile/Mario-Ortega-2"
+            },
+            "answer_text": "no it is not, and it depends on your browsing habits and computer \u201cpromiscuity\u201d too, I\u2019m not even close to being an expert, I wouldn\u2019t even move the needle if compared with a computer security expert, but I know how the windows firewall is called in the security circles, they call it the gruyere cheese, full of holes of different sizes, now, I do have something to prove my theory, if you were able to install ubuntu linux (see? I told you ain\u2019t no expert) in a spare computer and after that, while connected to the same router than the w7 computer, run (well, more like install and run) a program called etherape, which is some kind of eyecandy graphic program which will show you traces of connections between computers and websites (ok, websites are also computers, btw) you\u2019ll see SO much traffic which you would never notice while using your windows computer, that you\u2019ll be amazed about how much is going on under the hood and away from your eyes and that\u2019s only the tip of the iceberg, trust me, there is a lot more going on, nowadays using two antivirus simultaneously is stupid, but using an antivirus without at least a free firewall, its the same, the problem is, using a firewall is a PITA and you have to train it, it comes blank and you have to teach it whats normal and what\u2019s not normal traffic in your network and which apps can and need and cannot and need not access to the internet, still, there is another firewall in yout router, so you\u2019re probably covered by that one, but I wouldn\u2019t trust it all my computers, even more, the secret of a security breach is usually maintained secret for long periods of time, sometimes for years, nobody will ever call you and say: \u201chey, I can see all your files and your broswer history every day, also I plan to encrypt all your data and ask you for money, just for fun, trust me, nobody, and even as jumping through a firewall is not trivial, neither is connecting to a WAP2 encrypted wifi AP, still, check youtube and you\u2019ll see a lot of guys showing how to do it, so all it takes is a little tenacity and some patience, and voila! they\u2019re in, btw you don\u2019t say what you\u2019re afraid of, trojans, virus, spyware, botnets? . good luck ",
+            "date": "Answered December 31, 2016",
+            "views": "718",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nissim Hadar",
+                    "user_href": "/profile/Nissim-Hadar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Daviel",
+                "href": "/profile/Andrew-Daviel"
+            },
+            "answer_text": "Mostly safe. Windows firewall has a large number of application-specific inbound and outbound rules, which prevent arbitrary programs from accessing the internet. Every single application which you install, pretty much, punches holes in the firewall so that it will work. You granted it that access when you typed an admin password during the install process. So if you don\u2019t have a webserver installed, the firewall blocks access to it. If you do, there is a hole in the firewall, opening you up to application-specific attacks against wordpress etc. The firewall comes by default with a lot of holes for software you\u2019ve never heard of and have no intention of running - there\u2019s one called \u201cMicrosoft.BingHealthandFitness\u201d for instance, allowing that app access to any address or port on the internet. Anyone writing malware for windows is going to assume that the firewall is running, and will either bypass it somehow or trick you into giving it access. If you get malware sent to you as an email attachment, a firewall will not help since your email program is permitted to contact email servers. Firewalls do have their place. If you have some ancient device like a webcam that uses ftp to upload files to your computer, and it can\u2019t use a password, or uses a fixed one that\u2019s well-known, you need a firewall (or some kind of access control) to make sure that only that device can talk to your ftp server, so that random people on the net don\u2019t use your computer to store warez. But most people don\u2019t do that - they sit behind NAT and don\u2019t run servers; the only way malware gets on their computer is if they installed it by clicking on something. I\u2019m not saying turn off Windows firewall because it\u2019s useless, I\u2019m saying don\u2019t be complacent and think that it will protect you. ",
+            "date": "Answered January 21, 2017",
+            "views": "832",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chirag Vora",
+                    "user_href": "/profile/Chirag-Vora-1"
+                }
+            ]
+        }
+    ]
+}

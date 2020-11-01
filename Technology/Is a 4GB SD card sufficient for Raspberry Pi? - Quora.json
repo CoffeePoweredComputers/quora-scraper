@@ -1,0 +1,41 @@
+{
+    "title": "Is a 4GB SD card sufficient for Raspberry Pi? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "SD Cards"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marco Rosales",
+                "href": "/profile/Marco-Rosales-10"
+            },
+            "answer_text": "If you have planned to install a thinclient like a kiosk machine (POS -point of sale, employee time clock) or else (I.e, access control or devices which depends of relevators/sensors or card readers), a print server and/or SANE server, at least 2 Gb are enough, but like previously they had answered, it depends what you want to install e.g. when you use etcher for flashing an ISO image, this application doesn\u2019t resize the filesystem and expand the entire installation onto the SD card, therefore depends of the size of the distro e.g if you use Raspbian with Desktop will take about 4 Gb or a lot, however if you install the Lite version, 2 Gb would be enough. I will list some cases in which you need to select an SD card with enough capacity to perform an installation which requires a lot of space: Media server (for storing video or audio files etc.).Telephony or PBX (if you are planning store recordings and/or call reports).Databases (at least until you are not using the RPi like a pivot table or slave without dumping often or automatically the database tables).Document server (storing or managing documents stored from RPi).Logs or events of the operating system (depends are you auditing and how many spaces does it occupy)You might try use NOOBS first seeking the best hint for the required space by the wanted distro that you need and for the appropriate filesystem resizing. ",
+            "date": "Answered March 23, 2018",
+            "views": "29",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "CAO BACH",
+                    "user_href": "/profile/CAO-BACH"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lee Assam",
+                "href": "/profile/Lee-Assam"
+            },
+            "answer_text": "It depends on what OS you want to install on your Raspberry Pi. Raspbian Lite has a 4GB minimum and smaller distors like OSMC or LibreELEC need about 1 GB. However NOOBs , Raspbian, Ubuntu Mate or Windows IOT Core have a 8GB recommended size. To be safe, I would recommend an 8GB card at the minimum if you want to install a distro and have a stable system where you do not run out of space ",
+            "date": "Answered January 16, 2018",
+            "views": "3",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Marco Rosales",
+                    "user_href": "/profile/Marco-Rosales-10"
+                }
+            ]
+        }
+    ]
+}

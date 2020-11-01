@@ -1,0 +1,147 @@
+{
+    "title": "How are CPUs programmed? - Quora",
+    "tags": [
+        "Central Processing Units",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vlad Ellis",
+                "href": "/profile/Vlad-Ellis"
+            },
+            "answer_text": "You put this question under the \u201cComputer Hardware\u201d tag, so I assume you know what you mean and didn\u2019t mean to ask the much higher level question, \u201cHow do I program a computer.\u201d If you want an answer to that, ask it properly, but a Google search will be much easier. Anyway.. At a very low level, the CPU is indeed programmed, but as an average (or even advanced) user you probably will never need to worry about the CPU firmware or how it works, but I will explain it anyway very simply, just for those interested. Every microprocessor chip, from a CPU to the chips on a stick of RAM, will have a firmware on it. This is a special program written as microcode by the chip manufacturer, almost always hard-coded into the chip\u2019s circuitry and not re-programmable once the chip has been produced. The firmware enables the chip to function properly, it is the very first thing that runs as soon as the power is connected, before any user-land program, the OS or even the CFE load. A chip\u2019s firmware gives a strict read-only operational flow for the protocols and standards it is designed to comply with. Technically, you could flash a CPU to operate as a tiny RAM device, or the chips on a RAM card to emulate a very slow CPU\u2026 Not sure why you ever would, but it is possible. If the firmware in a chip becomes corrupt or encounters an error during run-time, the chip becomes \u201cbricked\u201d. As the name suggests, the functionality of a \u201cbricked\u201d piece of electronics is about as extensive as that of a paperweight. For this reason, outside of development labs and research facilities, very few people ever need to worry about developing or deploying hardware firmware, and it is very unlikely you\u2019ll find many books or online material on the topic. With the example of a CPU, as soon as the chip is connected to power, the CPU starts it\u2019s internal firmware that allows it to operate as a CPU, fetching instructions to execute, parsing their data, and applying whatever operation is encoded. This fetch-execute cycle happens on a very low level. Any standard debugger will not let you step through these operations. When you run a program and step through even it\u2019s machine code instructions/disassembly, the cpu does a lot of things to progress from one instruction to the next, but you don\u2019t see what is happening behind the scenes. As a user it would be pointless to debug anyway, the implementation of the fetch-execute cycle is all done in the extensively tested and trusted firmware, and you have no control over what happens below the machine code level. ~~ Bonus ~~ Sometimes, even CPU \u201cprograms\u201d (the firmware) can have bugs in it, which can be catastrophic for the manufacturer, as only very recently have microprocessors started supporting re-flashing of microcode. For example, in 2005, a bug in Intel\u2019s extensively used 6th Gen codebase meant thousands of Intel CPUs were vulnerable to a bug where the CPU could hang for long periods of time (CVE-2015-8104). Luckily this was found by a Google engineers Ben Serebrin and Jan Beulic, and a CPU microcode patch was released very quickly afterwards. In recent years, most essential components, such as the CPU, Hard-drive and BIOS chips are re-programmable at a very low level with correctly code-signed patches exclusively released by the chip\u2019s manufacturer. ",
+            "date": "Answered August 1, 2016",
+            "views": "48",
+            "upvotes": " View 24 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pierce Rossi",
+                    "user_href": "/profile/Pierce-Rossi"
+                },
+                {
+                    "user_id": "Rajiv Sorna",
+                    "user_href": "/profile/Rajiv-Sorna"
+                },
+                {
+                    "user_id": "Ikechukwu Aladimma",
+                    "user_href": "/profile/Ikechukwu-Aladimma"
+                },
+                {
+                    "user_id": "M D",
+                    "user_href": "/profile/M-D-59"
+                },
+                {
+                    "user_id": "Dhananjay Jadhav",
+                    "user_href": "/profile/Dhananjay-Jadhav-75"
+                },
+                {
+                    "user_id": "Kaysasama Kayasama",
+                    "user_href": "/profile/Kaysasama-Kayasama"
+                },
+                {
+                    "user_id": "Shivang Gangadia",
+                    "user_href": "/profile/Shivang-Gangadia"
+                },
+                {
+                    "user_id": "Akash Sil",
+                    "user_href": "/profile/Akash-Sil"
+                },
+                {
+                    "user_id": "Voiculescu Cristian Constantin",
+                    "user_href": "/profile/Voiculescu-Cristian-Constantin"
+                },
+                {
+                    "user_id": "Jack Stopak",
+                    "user_href": "/profile/Jack-Stopak-1"
+                },
+                {
+                    "user_id": "Dymar Dymar",
+                    "user_href": "/profile/Dymar-Dymar"
+                },
+                {
+                    "user_id": "Igor Rafael",
+                    "user_href": "/profile/Igor-Rafael-1"
+                },
+                {
+                    "user_id": "Isaw It",
+                    "user_href": "/profile/Isaw-It"
+                },
+                {
+                    "user_id": "Noman Afzal",
+                    "user_href": "/profile/Noman-Afzal-17"
+                },
+                {
+                    "user_id": "Ryan Aiello",
+                    "user_href": "/profile/Ryan-Aiello-1"
+                },
+                {
+                    "user_id": "Praneet Kapoor",
+                    "user_href": "/profile/Praneet-Kapoor"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/HK-310"
+                },
+                {
+                    "user_id": "Maria Maria",
+                    "user_href": "/profile/Maria-Maria-456"
+                },
+                {
+                    "user_id": "Will Tang",
+                    "user_href": "/profile/Will-Tang-3"
+                },
+                {
+                    "user_id": "Alfredo Osorio",
+                    "user_href": "/profile/Alfredo-Osorio-2"
+                },
+                {
+                    "user_id": "Alex Jay",
+                    "user_href": "/profile/Alex-Jay-31"
+                },
+                {
+                    "user_id": "Tejas Prakash",
+                    "user_href": "/profile/Tejas-Prakash-5"
+                },
+                {
+                    "user_id": "Jack Scott",
+                    "user_href": "/profile/Jack-Scott-21"
+                },
+                {
+                    "user_id": "Mike Install",
+                    "user_href": "/profile/Mike-Install"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Jay",
+                "href": "/profile/Alex-Jay-31"
+            },
+            "answer_text": "A CPU (or any microchip for that matter) has the programming directly on it in microcode, called firmware.  In fact, unless you\u2019re constructing or designing your own CPU or processor, you would likely never have to worry about this firmware - unless otherwise stated, the chip you\u2019re using will have firmware on it. If you are trying to design your own microchip, however, here\u2019s a more advanced explanation: The CPU contains a small amount of Flash memory (obviously it wouldn\u2019t be a hard drive) that contains the firmware on it.  Usually this firmware is uneditable, but as Vlad Ellis says, in recent times it has become possible for the company itself to edit the firmware.  But, as an outsider, you would not be able too. The firmware on the chip itself is booted up when the computer is turned on, basically by an electrical signal through one of the pegs saying \u2018hey CPU, we\u2019re on now, start your engines.  The CPU then repeats this process to the rest of the computer, as I remember it (except the Hard Drive, the hard drive is continually on because if it ever stops moving it will corrupt all the data.  The \u2018awakening\u2019 by the CPU just tells it to start transmitting data).  From there, the firmware basically shows the CPU what it is supposed to be able to do, what connections to accept, etc. ",
+            "date": "Answered August 9, 2016",
+            "views": "2",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roie Gal",
+                    "user_href": "/profile/Roie-Gal"
+                },
+                {
+                    "user_id": "Arav Singhal",
+                    "user_href": "/profile/Arav-Singhal-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "I will assume you mean, how do CPUs run programs, or that sort of thing. Old skool CPUs were not programmed. They were strictly \u201chard wired\u201d boolean logic circuits. They had hardwired instruction sets. People wrote programs using those instruction sets. For example, you could look at how the circuit for an adder is constructed. It\u2019s made up up logic gates, which in turn are based on transistors. There is no program, just the circuits allowing the CPU to add binary numbers. Modern CPUs can have something called microcode. In this case, they have capabilities beyond \u201chardwired\u201d circuitry. I am not an expert on this topic, but that\u2019s my current understanding. ",
+            "date": "Answered September 20, 2018",
+            "views": "997",
+            "upvotes": "0"
+        }
+    ]
+}

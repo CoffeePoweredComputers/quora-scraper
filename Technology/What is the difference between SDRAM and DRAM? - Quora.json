@@ -1,0 +1,88 @@
+{
+    "title": "What is the difference between SDRAM and DRAM? - Quora",
+    "tags": [
+        "SRAM",
+        "Direct Memory Access",
+        "DRAM",
+        "Computer Memory",
+        "Computer Architecture",
+        "Memory (information storage)",
+        "Random-Access Memory",
+        "Computer Science",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Luc Boulesteix",
+                "href": "/profile/Luc-Boulesteix"
+            },
+            "answer_text": "They are technically different things: DRAM is a type of memory while SDRAM is just an interface. At the heart of every PC RAM chip, you\u2019ll find this: the humble DRAM bitcell.  image: http://www.cse.scu.edu/~tschwarz/coen180/LN/DRAM.html This is DRAM in the purest sense of the word. This type of cell has been in use for decades at this point, and it\u2019s at the heart of even the modern DDR4 RAM you can buy today. Operation is quite simple: you have a capacitor which stores a charge (representing data) and a transistor which controls the flow of electricity in and out of said capacitor. The transistor itself is activated using the word line, which acts as a control gate of sorts. These bitcells will typically be grouped into one large array of cells. Each array is 2 dimensional and is made up of rows and columns. DRAM is accessed using the RAS-CAS cycle: unlike SRAM, there is no central address bus. Instead, you assert a portion of the address bits on the address bus, run the row address strobe, wait, put the leftover address bits on the bus, and then run the column address strobe. When you run the RAS or the CAS, the circuitry will actually physically select the appropriate Row or Column. Special decoder circuitry will then convert the information passed during RAS-CAS (plus control info) into internal control signals which are used to open or close transistors with the data we want.  image: Static and Dynamic Read/Write memories That\u2019s where the \u201cinterface\u201d part comes in. In the early days, the DRAM you could buy was strictly asynchronous. Delays were quoted in nanoseconds, not cycles. There was no clock to mediate it all. Early implementations of DRAM memory were simply called DRAM: they consisted of an array of DRAM bitcells and the previously mentioned decoder circuitry. Nothing fancy.  image from ebay The problem is that this implementation of DRAM is very slow: fairly early, memory designers figured out that DRAM simply can\u2019t access random places in memory quickly. DRAM (the interface) required a new transfer (a new RAS-CAS cycle) be initiated for every single data transaction. Need to access 1K of data on DRAM? That\u2019s 1000 individual,slow accesses for you. Which is why we started seeing the concept of\u201dburst mode\u201d be implemented in computer memory, and interfaces such as EDO, FPM and SCR hit the market. Do note: every single one of those implementations uses the same DRAM bitcells. The basic memory itself has not changed. What has changed is the circuitry around the memory itself, and how it\u2019s accessed. These new memory technologies would typically define a new construct called a \u201cpage\u201d or \u201cneighborhood\u201d of a given length: whenever a piece of data was accessed at a given location in memory (slow), nearby pieces of data within this \u201cneighborhood\u201d could be accessed at a much greater speed. This greatly improved sequential transfer speeds. Static Column RAM, for example, would load the contents of an entire Row into a bank of static memory (SRAM), which could then sustain much faster, lower latency access to any data from that row.  image: Primary Memory Memory like EDO and FPM saw widespread use during much of the 80s and 90s. It was eventually figured out that memory could be made to go much faster if synchronous. Hence why a new type of DRAM, called Synchronous DRAM (or SDRAM for short) was created. SDRAM still uses the same DRAM bitcells seen at the top of this answer. That hasn\u2019t changed. What has changed is that everything is now controlled by a clock. Tighter timing constraints among many other improvements made SDRAM significantly better at chucking data to and from the CPU compared to earlier EDO. SDRAM would be expanded when DDR memory came out. While the basic technology was the same, DDR could now do 2 transfers every clock cycle (one per clock edge) compared to just one on simple SDRAM. DDR2, DDR3 and DDR4 brought better performance, lower power and better capacity as time went on. To drive the \u201cinterface\u201d point home: GDDR(x) ram is typically used on GPUs and offers insane transfer speeds. But internally, it\u2019s the same DRAM cells found everywhere else. The only thing that differs is the entire chain of components between the actual memory cells and the processor itself. ",
+            "date": "Answered June 21, 2019",
+            "views": "45",
+            "upvotes": " View 19 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sethu Raman",
+                    "user_href": "/profile/Sethu-Raman-221"
+                },
+                {
+                    "user_id": "Bhargav Narasimhan",
+                    "user_href": "/profile/Bhargav-Narasimhan-3"
+                },
+                {
+                    "user_id": "Ruangvit Sriumphaiviwat",
+                    "user_href": "/profile/Ruangvit-Sriumphaiviwat"
+                },
+                {
+                    "user_id": "Ram Prakash",
+                    "user_href": "/profile/Ram-Prakash-217"
+                },
+                {
+                    "user_id": "Ashwat Acharya",
+                    "user_href": "/profile/Ashwat-Acharya"
+                },
+                {
+                    "user_id": "Akhilesh Bandi",
+                    "user_href": "/profile/Akhilesh-Bandi-2"
+                },
+                {
+                    "user_id": "Mark Farley",
+                    "user_href": "/profile/Mark-Farley"
+                },
+                {
+                    "user_id": "RJ Santiago",
+                    "user_href": "/profile/RJ-Santiago-2"
+                },
+                {
+                    "user_id": "Gregory Reed",
+                    "user_href": "/profile/Gregory-Reed-28"
+                },
+                {
+                    "user_id": "Marco Zoccolan",
+                    "user_href": "/profile/Marco-Zoccolan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Priti Vishwakarma",
+                "href": "/profile/Priti-Vishwakarma-22"
+            },
+            "answer_text": "Difference between SDRAM AND DRAM Dynamic random access memory (DRAM) is a simple way to store data on a computer for a short period of time.Synchronous random access memory (SDRAM) is the same as DRAM except that regular DRAM is asynchronous. Synchronous random access memory stays synchronized with the computer's clock which allows greater efficiency in storing and retrieving data compared to asynchronous DRAM.Dynamic random access memory utilizes one transistor to store data on one capacitor, but that capacitor will lose the data as it loses its charge unless the capacitor is periodically recharged. The recharging of the capacitors is the reason the word dynamic is used in dynamic random access memory. Once the capacitors no longer receive a charge, the data is lost. DRAM operates asynchronously with the computer's clock sending instructions as soon as it receives them from the user's interface instead of waiting to synchronize with the computer system's clock like SDRAM.SDRAM is synchronized with the computer's clock to allow it to send instructions more efficiently by joining a pipeline of other instructions the computer is processing. The pipelining of information in a computer allows it to receive another command before it has finished processing the previous command. This allows SDRAM to operate at much higher speeds, making it the most popular form of RAM offered on computers.",
+            "date": "Answered July 22, 2019",
+            "views": "572",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rajesh Jeswani",
+                    "user_href": "/profile/Rajesh-Jeswani-4"
+                },
+                {
+                    "user_id": "Sunaan Sultan",
+                    "user_href": "/profile/Sunaan-Sultan"
+                }
+            ]
+        }
+    ]
+}

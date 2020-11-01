@@ -1,0 +1,36 @@
+{
+    "title": "What are some modern techniques that are used by big companies to make a DRAM controller more efficient? - Quora",
+    "tags": [
+        "DRAM",
+        "Microprocessors",
+        "Computer Architecture",
+        "Techniques",
+        "Processors",
+        "Electronics",
+        "Companies",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joseph Newcomer",
+                "href": "/profile/Joseph-Newcomer-2"
+            },
+            "answer_text": "More efficient than what? What is the metric of efficiency? Power? Speed? Size? Parts cost? Manufacturing cost? Reliability? Why are you limiting the techniques to those used by \u201cbig\u201d companies? How \u201cbig\u201d does a company have to be to meet your definition of \u201cbig\u201d? Billions of dollars gross sales? Billions of dollars of profit? Total number of units sold? Why aren\u2019t techniques used by \u201cnon-big\u201d companies valid? And why is it limited to \u201cmodern\u201d techniques? What\u2019s wrong with techniques that are \u201colder\u201d. How old is \u201cmodern\u201d? Weeks? Months? Single-digit years? This is the sort of really bad question I have come to expect on Quora. It contains embedded value judgments by the questioner, posed as if they are part of the question, but the assumption here is that only companies that meet the questioner\u2019s undefined notion of \u201cbig\u201d are likely to use meaningful techniques, thus precluding any solutions from companies the questioner does not \u201crespect\u201d because they are not \u201cbig\u201d. It assumes that there is an undefined metric of \u201cefficiency\u201d that matters, and this (we know to be) multidimensional metric is necessarily unidimensional, thus ignoring all other metrics that might be applied. I am wasting time answering it, only in the hope that somehow I will cause someone to rethink their fundamentally stupid question and ask one that is actually intelligent, and make it worthwhile to spend time answering it. A well-phrased question might be \u201cWhat are some techniques that might be applied to make DRAM controllers run faster?\u201d or \u201cWhat are some techniques that might be applied to make DRAM controllers more energy-efficient?\u201d As soon as you start using pointless noise words and phrases like \u201cmodern\u201d, \u201cbig companies\u201d and \u201cmore efficient\u201d, you are not asking a question, you are taking up space. Learn the difference. Please. Perhaps it is just because I am right now in extreme physical pain that makes me irascible. But I am losing patience with these nonsense \u201cquestions\u201d. Unless you know what parameter you are trying to maximize/minimize, and can state it as part of the question, you are not asking a question. If I am building a supercomputer, I do not care if the cost is five times that of a desktop, or it consumes four times the physical space, and uses twice the energy, if I can get the data out eight times faster. If I am building a computer that is supposed to operate on two AAA batteries and fit on the back of an albatross, I don\u2019t care if it is slow, if it can keep running for two years. ",
+            "date": "Answered October 24, 2020",
+            "views": "91",
+            "upvotes": " Answer requested by Quora User"
+        },
+        {
+            "author_info": {
+                "name": "Michael Sporer",
+                "href": "/profile/Michael-Sporer-1"
+            },
+            "answer_text": "First, define the metric used to measure efficiency. Performance? Power? Cost? Reliability? Each has different optimizations. DRAM was productized in 1974 by Intel and the basic operation has remained the same since. It has been ruthlessly optimized over the years and the industry-standard interface and device architecture have been upgraded to meet the needs of the market while maintaining a cost-driven, high capacity, multi-sourced solution. Memory CONTROLLERS are designed to provide a certain level of performance to the host device, whether a general-purpose CPU, mobile, HPC, or fixed-function embedded application. The controller is designed to provide to the application the level of performance required using the least amount of Silicon area. SOC silicon costs a lot! Or if financial cost is not of concern there is an opportunity cost; what other functionality could the silicon be used for if it is not used for an overly complex controller? Most \u201cmodern techniques\u201d for memory controller optimization have been around for a long time; it\u2019s only a decision as to whether or not the application requires the complexity to include it. ",
+            "date": "Answered October 24, 2020",
+            "views": "73",
+            "upvotes": " Answer requested by Quora User"
+        }
+    ]
+}

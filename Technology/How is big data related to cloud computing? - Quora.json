@@ -1,0 +1,31 @@
+{
+    "title": "How is big data related to cloud computing? - Quora",
+    "tags": [
+        "Cloud Services",
+        "Cloud Computing",
+        "Data Analysis",
+        "Big Data"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Tuttle",
+                "href": "/profile/Mark-Tuttle-6"
+            },
+            "answer_text": "[Edited] In the context of \u201cbig data\u201d, Cloud Computing is \u201cjust\u201d an extension of dramatically cheaper, and more flexible, storage. In my professional lifetime I\u2019ve seen storage go from a limiting resource - with enormous effort being expended to get around this limitation (think the Y2K problem) - to much, much cheaper secondary storage (disk drives). I think the latter is what kicked off \u201cbig data\u201d and the corresponding power of analytics. Some of the latter methods had been around since the 1950s, but with limited computing resources these methods were themselves limited. Cloud Computing provides additional freedom from resource constraints. The biggest additional benefit is flexibility, namely the ability to use, and, therefore, pay for, computing resources as needed, instead of having to pay for a data center that can support maximum needs. My favorite story supporting the latter was an instructor who would use the cloud to create a custom instance of an electronic health record system for each student in his class. He would then write each instance onto a DVD and the students would run their instance off the DVD. He did this using Amazon, paying for the use out of his own pocket. Obviously, he could not have done this locally without access to major resources, resources that would not have been available in an educational environment. ",
+            "date": "Updated December 26, 2017",
+            "views": "186",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Scott McNeil",
+                "href": "/profile/Scott-McNeil-15"
+            },
+            "answer_text": "Oh great 2uestion! ;-) I worked on a contract where the client would upload its healthcare data to S3 buckets. Then we would run a Nifi XML-based script that would ingest data from their AWS S3 account. In less words, cloud computing is basically paying that third-party provider in charge of their LAN (i.e. their cloud) than harnesses the disk space and computer power and I/O throughput and most of tera to peta to exabytes of data in memory and in persistence to their disks to do what could be down with less (\u201csmall data\u201d) on a local cluster of machines. The \u201ccloud\u201d is not some magical Cheech-and-Chong mural of clouds that can do what local clusters can do on-site for companies. It\u2019s just a fancy name for a powerful third-party LAN that opens up their daemon services (e.g. PaaS, BDaaS, etc.) that you can Kerberos Auth *and/or maybe SAML tokenize too* and SSH into, they monitor, send you the bill, life goes on. Voila. After all, chaos and disarray never function in the Computer Science of the word, so there has to be some electricity and computation entities present for this \u201ccloud\u201d to exist. Not thunder, lightening, humidity, and water droplets. AWS and Azure\u2019s HDinsight are the heavy-hitters of the Cloud-Computer game. ",
+            "date": "Answered December 18, 2017",
+            "views": "147",
+            "upvotes": "0"
+        }
+    ]
+}

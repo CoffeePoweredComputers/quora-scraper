@@ -1,0 +1,2627 @@
+{
+    "title": "What happened to Unix operating systems? Has Linux killed Unix? - Quora",
+    "tags": [
+        "Unix",
+        "Linux"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ryan Quinn",
+                "href": "/profile/Ryan-Quinn-7"
+            },
+            "answer_text": "It\u2019s not so much that Linux killed UNIX as much as the x86 ISA caught up with the RISC chips which most UNIX OSs ran on top of, and Linux was a cheap, friendly UNIX substitute. UNIX operating systems were, and most still are, tied to expensive RISC processors. AIX, Solaris, and HP-UX are tied to the Power, SPARC, and Itanium ISAs respectively. The x86 ISA expanded to 64-bit, and the x86 manufacturers were able to increase the performance of their chips to levels that were equal, or better, then the RISC ISAs. In the heyday of the UNIX systems, x86 systems were cheap, crappy systems only suitable for end users, and the RISC systems were the industrial solution for production and people serious about work. Once cheap x86 systems were on equal footing with RISC systems performance wise, or close enough anyway, businesses made the decision to go with the cheaper, \u201cgood enough\u201d systems. UNIX operating systems were really expensive, and they weren\u2019t very user friendly. SCO Unix was one of the few Unix OSs which ran on x86, and it required licensing fees, while Linux did not. Running Solaris was an expensive proposition even without the cost of the hardware. Linux support licenses could be purchased from Red Hat, and they were a fraction of what IBM, Sun, and HP were charging. Once again, business went with the cheaper, \u201cgood enough\u201d solution. Something that gets over looked is just how user friendly Linux is. Linux is still user focused, even after all these years. People generally preferred the GNU tools, and all of their extensions, to the more limited Unix tools, so when an OS came about which featured a GNU userland people were very happy. Having used Solaris, it can be prickly. Decisions are made based on stability rather then what enhances the user\u2019s experience. Linux is still something that is meant to be touched by users. It accommodates people rather then working against them or forcing people to accommodate the machine. If you\u2019re wondering where the BSDs are in all of this, they were getting sued by AT&T, and it took them 5 years to get a full OS after the legal battle. With their future in jeopardy, businesses went with the clean room implementation to avoid any problems, and people were looking for a SysV style OS rather then a BSD style OS. IBM, in particular, was looking for a Sys V, Unix-like OS to run on their x86 server line. One that could be enhanced collaboratively to avoid the fragmentation of the \u201880s Unix Wars. Overall, people were looking for a Unix-like OS with a Sys V init system which ran on x86 hardware, and Linux fit the bill. In the meantime, x86 has become the dominant ISA in the computing landscape, and Linux has been brought along with it. ",
+            "date": "Answered January 22, 2018",
+            "views": "121",
+            "upvotes": " View 76 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Steven Patterson",
+                    "user_href": "/profile/Steven-Patterson-26"
+                },
+                {
+                    "user_id": "Gorka Porteiro",
+                    "user_href": "/profile/Gorka-Porteiro"
+                },
+                {
+                    "user_id": "Ben Willson",
+                    "user_href": "/profile/Ben-Willson-12"
+                },
+                {
+                    "user_id": "Manav",
+                    "user_href": "/profile/Manav-125"
+                },
+                {
+                    "user_id": "Thomas Borders",
+                    "user_href": "/profile/Thomas-Borders-5"
+                },
+                {
+                    "user_id": "Ritobrata Ghosh",
+                    "user_href": "/profile/Ritobrata-Ghosh"
+                },
+                {
+                    "user_id": "Todd Henning",
+                    "user_href": "/profile/Todd-Henning"
+                },
+                {
+                    "user_id": "Robert Marshall",
+                    "user_href": "/profile/Robert-Marshall-38"
+                },
+                {
+                    "user_id": "Ola Dunk",
+                    "user_href": "/profile/Ola-Dunk-6"
+                },
+                {
+                    "user_id": "Bal\u00e1zs Iv\u00e1n J\u00f3zsef",
+                    "user_href": "/profile/Bal\u00e1zs-Iv\u00e1n-J\u00f3zsef"
+                },
+                {
+                    "user_id": "Kevin Loguancio",
+                    "user_href": "/profile/Kevin-Loguancio"
+                },
+                {
+                    "user_id": "OLALEKAN ELEWURO",
+                    "user_href": "/profile/OLALEKAN-ELEWURO"
+                },
+                {
+                    "user_id": "Doug Smith",
+                    "user_href": "/profile/Doug-Smith-142"
+                },
+                {
+                    "user_id": "Hemil Ruparel",
+                    "user_href": "/profile/Hemil-Ruparel-2"
+                },
+                {
+                    "user_id": "Kakashi Hatake",
+                    "user_href": "/profile/Kakashi-Hatake-57"
+                },
+                {
+                    "user_id": "Mark Bobak",
+                    "user_href": "/profile/Mark-Bobak"
+                },
+                {
+                    "user_id": "Gilbert Healton",
+                    "user_href": "/profile/Gilbert-Healton"
+                },
+                {
+                    "user_id": "Prabhakaran M",
+                    "user_href": "/profile/Prabhakaran-M-100"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Tyson Key",
+                    "user_href": "/profile/Tyson-Key"
+                },
+                {
+                    "user_id": "Reinier Post",
+                    "user_href": "/profile/Reinier-Post"
+                },
+                {
+                    "user_id": "Percy Carte",
+                    "user_href": "/profile/Percy-Carte-1"
+                },
+                {
+                    "user_id": "Sinicha Jeftic",
+                    "user_href": "/profile/Sinicha-Jeftic"
+                },
+                {
+                    "user_id": "Kirill Nov",
+                    "user_href": "/profile/Kirill-Nov"
+                },
+                {
+                    "user_id": "Asif Mehedi",
+                    "user_href": "/profile/Asif-Mehedi"
+                },
+                {
+                    "user_id": "Himanshu Sharma",
+                    "user_href": "/profile/Himanshu-Sharma-3590"
+                },
+                {
+                    "user_id": "Joe Smith",
+                    "user_href": "/profile/Joe-Smith-1332"
+                },
+                {
+                    "user_id": "Don Marti",
+                    "user_href": "/profile/Don-Marti"
+                },
+                {
+                    "user_id": "John Owens",
+                    "user_href": "/profile/John-Owens-27"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Diego Ferruchelli",
+                    "user_href": "/profile/Diego-Ferruchelli"
+                },
+                {
+                    "user_id": "David Brower",
+                    "user_href": "/profile/David-Brower"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "Vinay Chandrakant",
+                    "user_href": "/profile/Vinay-Chandrakant"
+                },
+                {
+                    "user_id": "Bizolekhulu Mkhwanazi",
+                    "user_href": "/profile/Bizolekhulu-Mkhwanazi"
+                },
+                {
+                    "user_id": "Phani Nadavi",
+                    "user_href": "/profile/Phani-Nadavi"
+                },
+                {
+                    "user_id": "Sassan Behzadi",
+                    "user_href": "/profile/Sassan-Behzadi"
+                },
+                {
+                    "user_id": "John Coiner",
+                    "user_href": "/profile/John-Coiner"
+                },
+                {
+                    "user_id": "Felipe Rodrigues",
+                    "user_href": "/profile/Felipe-Rodrigues-41"
+                },
+                {
+                    "user_id": "Tony deAraujo",
+                    "user_href": "/profile/Tony-deAraujo-1"
+                },
+                {
+                    "user_id": "Steven Grauwmans",
+                    "user_href": "/profile/Steven-Grauwmans"
+                },
+                {
+                    "user_id": "Ahmet Soper",
+                    "user_href": "/profile/Ahmet-Soper"
+                },
+                {
+                    "user_id": "Alexei Trebunski",
+                    "user_href": "/profile/Alexei-Trebunski"
+                },
+                {
+                    "user_id": "Bill Flewelling",
+                    "user_href": "/profile/Bill-Flewelling"
+                },
+                {
+                    "user_id": "Ajai Beehyv",
+                    "user_href": "/profile/Ajai-Beehyv"
+                },
+                {
+                    "user_id": "Bob Laci",
+                    "user_href": "/profile/Bob-Laci"
+                },
+                {
+                    "user_id": "David Ecale",
+                    "user_href": "/profile/David-Ecale"
+                },
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten"
+                },
+                {
+                    "user_id": "Matthew Deyell",
+                    "user_href": "/profile/Matthew-Deyell"
+                },
+                {
+                    "user_id": "Alvin Grissom II",
+                    "user_href": "/profile/\u30b0\u30ea\u30b5\u30e0-\u30a2\u30eb\u30d3\u30f3-Alvin-Grissom-II"
+                },
+                {
+                    "user_id": "Maximilian Patan",
+                    "user_href": "/profile/Maximilian-Patan-1"
+                },
+                {
+                    "user_id": "Peter Haagerup",
+                    "user_href": "/profile/Peter-Haagerup"
+                },
+                {
+                    "user_id": "Homer Hegedus",
+                    "user_href": "/profile/Homer-Hegedus"
+                },
+                {
+                    "user_id": "Yayin S",
+                    "user_href": "/profile/Yayin-S"
+                },
+                {
+                    "user_id": "Gorjan Dzundev",
+                    "user_href": "/profile/Gorjan-Dzundev"
+                },
+                {
+                    "user_id": "Vanessa Landry",
+                    "user_href": "/profile/Vanessa-Landry"
+                },
+                {
+                    "user_id": "Ryan Reich",
+                    "user_href": "/profile/Ryan-Reich-1"
+                },
+                {
+                    "user_id": "Tahir Abdullayev",
+                    "user_href": "/profile/Tahir-Abdullayev"
+                },
+                {
+                    "user_id": "James Jones",
+                    "user_href": "/profile/James-Jones-156"
+                },
+                {
+                    "user_id": "Vito Marolda",
+                    "user_href": "/profile/Vito-Marolda"
+                },
+                {
+                    "user_id": "Henry Gregory",
+                    "user_href": "/profile/Henry-Gregory"
+                },
+                {
+                    "user_id": "Bayu Aditya H",
+                    "user_href": "/profile/Bayu-Aditya-H"
+                },
+                {
+                    "user_id": "Patrick Andersen",
+                    "user_href": "/profile/Patrick-Andersen-10"
+                },
+                {
+                    "user_id": "Jason Yan",
+                    "user_href": "/profile/Jason-Yan-22"
+                },
+                {
+                    "user_id": "Ira Baxter",
+                    "user_href": "/profile/Ira-Baxter"
+                },
+                {
+                    "user_id": "Chris Baughman",
+                    "user_href": "/profile/Chris-Baughman-2"
+                },
+                {
+                    "user_id": "Paul Bissex",
+                    "user_href": "/profile/Paul-Bissex-1"
+                },
+                {
+                    "user_id": "Mohammad Sadegh Jazayeri",
+                    "user_href": "/profile/Mohammad-Sadegh-Jazayeri"
+                },
+                {
+                    "user_id": "Frank Tominc",
+                    "user_href": "/profile/Frank-Tominc"
+                },
+                {
+                    "user_id": "Jason Li",
+                    "user_href": "/profile/Jason-Li-181"
+                },
+                {
+                    "user_id": "Wayne Jamieson",
+                    "user_href": "/profile/Wayne-Jamieson"
+                },
+                {
+                    "user_id": "Ahiante Stephen",
+                    "user_href": "/profile/Ahiante-Stephen"
+                },
+                {
+                    "user_id": "Gurpreet Singh Kakar",
+                    "user_href": "/profile/Gurpreet-Singh-Kakar"
+                },
+                {
+                    "user_id": "Thomas Kutz",
+                    "user_href": "/profile/Thomas-Kutz-2"
+                },
+                {
+                    "user_id": "Steve R. Hastings",
+                    "user_href": "/profile/Steve-R-Hastings-1"
+                },
+                {
+                    "user_id": "Marian Robert",
+                    "user_href": "/profile/Marian-Robert-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Randy Thomas",
+                "href": "/profile/Randy-Thomas-52"
+            },
+            "answer_text": "No. Unix is still alive and well, but it's market share has definitely shrunk. In certain high availability applicatons some companies feel more comfortable running Unix Than Linux. One also has to look at the history of Unix to understand - there were a couple of variants. Unix emerged out of Bell Labs and Berkeley. For years the two variants influenced other Unixes that were based on them\u2026 kind of like what has happened to Linux, many things sprouted from one or two things. Attempts at unification of Unixes in the 80s led to SysV. the most popular version of SysV was release 4, SVR4. However, Berkeley Unix still carried on separately and didn't join this specification. Features from Berkeley did leak into SVR4, so the two started having similarities. The main Unixes that are still SVR4 now are HP\u2019s HPUX, IBM\u2019s AIX, and Oracle Solaris. These are still entrenched in many large corporations. I would guess that they are around 15\u201320 percent of the high end server market, combined, on proprietary hardware. In the early days SunOS (now Solaris) was a Berkeley Unix. Berkeley Unix has basically become BSD. OSX is a BSD offshoot. Government, banks, and oil companies are the biggest consumers of Unix these days. The reason is partly familiarity but also partly the ability to have robust support at a moments notice. There is a lot of legacy software around too that companies, and especially government, don't want to spend the money to port over to Linux. Unix has a high cost, but it is stable and secure, and while Linux rivals it in uptime and reliability, the few companies that offer support don't do as well at it as the large Unix companies. HP realized in the 2000s that their code compilation for printers was an order of magnitude faster on Linux Redhat with x86 than on HPUX on HP workstations, and so, the death knell for HPUX was sounded there on their workstations. HP maintained the HPUX operating system on servers however, to keep customers happy I believe. One could almost say the same about other Unixes, they have been maintained for two reasons - one, the customers especially ones with legacy software, still want them (and the warm fuzzies that a support contract provides) and two, there has to be support and a decision on end of life before a company does away with a product like that. They don\u2019t just pull the plug one day, normally. As some others have noted Unix, like Linux, reinvents itself over the years. Linux will most likely become an approved Unix at some point. In conclusion I'd say that most of the old guard Unixes are not dead and will not really disappear, it's just that hybrids and trickle downs and some unification will make everything be called Unix later on\u2026can't say how long though for sure. ",
+            "date": "Answered May 5, 2017",
+            "views": "24",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Secker",
+                    "user_href": "/profile/Alan-Secker"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Michael Schwartz",
+                    "user_href": "/profile/Michael-Schwartz-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohammed Isam",
+                "href": "/profile/Mohammed-Isam-2"
+            },
+            "answer_text": "What happened is that Unix outgrew its own self. It reached a level of maturity and wide adoption that the Unix community felt the need to standardize the system interfaces in order to maintain a lower level of common functionality between different vendors. This resulted in different regulatory bodies appearing along the way, eventually culminating in the Open Group, the current holder of the Unix trademark. At one point, everyone wanted to be Unix, or be like Unix. Andrew Tanenbaum created Minix as a clone of Unix (it's MIni-UNIx). Richard Stallman created GNU as a UNIX clone, despite the name (GNU\u2019s Not Unix). Linus Torvalds created Linux as a UNIX kernel clone. BSD and it's derivatives (FreeBSD, NetBSD, \u2026) are all Unixes. Solaris is Unix. MacOS is a derivative of FreeBSD, hence Unix. Unix has grown so big and influential that it was no longer practical to continue it as an OS. It transformed into a system specification (Single Unix Specification - SUS, or POSIX). That is the specification most systems today are aiming to implement (most, not all). So in answering your question: no, Linux did not kill Unix, simply because you can't kill Unix. It transcended to another level now. Very few systems in history could reach that level. ",
+            "date": "Answered February 11, 2017",
+            "views": "576",
+            "upvotes": " View 357 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Henk Langeveld",
+                    "user_href": "/profile/Henk-Langeveld"
+                },
+                {
+                    "user_id": "Alan Secker",
+                    "user_href": "/profile/Alan-Secker"
+                },
+                {
+                    "user_id": "Martin Ott",
+                    "user_href": "/profile/Martin-Ott-1"
+                },
+                {
+                    "user_id": "Hemil Ruparel",
+                    "user_href": "/profile/Hemil-Ruparel-2"
+                },
+                {
+                    "user_id": "Thomas Platzer",
+                    "user_href": "/profile/Thomas-Platzer"
+                },
+                {
+                    "user_id": "Kakashi Hatake",
+                    "user_href": "/profile/Kakashi-Hatake-57"
+                },
+                {
+                    "user_id": "Phil Hartfield",
+                    "user_href": "/profile/Phil-Hartfield-1"
+                },
+                {
+                    "user_id": "Ahmed Faruq",
+                    "user_href": "/profile/Ahmed-Faruq-2"
+                },
+                {
+                    "user_id": "David C. Menges",
+                    "user_href": "/profile/David-C-Menges"
+                },
+                {
+                    "user_id": "Julian Pereira",
+                    "user_href": "/profile/Julian-Pereira-2"
+                },
+                {
+                    "user_id": "Thanh Nguyen",
+                    "user_href": "/profile/Thanh-Nguyen-1592"
+                },
+                {
+                    "user_id": "Nescient Prentice",
+                    "user_href": "/profile/Nescient-Prentice"
+                },
+                {
+                    "user_id": "Keith Mayhew",
+                    "user_href": "/profile/Keith-Mayhew-1"
+                },
+                {
+                    "user_id": "Bhargav Lakkur Kusha Kumar",
+                    "user_href": "/profile/Bhargav-Lakkur-Kusha-Kumar"
+                },
+                {
+                    "user_id": "Krish",
+                    "user_href": "/profile/Krish-314"
+                },
+                {
+                    "user_id": "Bruce Haynes",
+                    "user_href": "/profile/Bruce-Haynes-1"
+                },
+                {
+                    "user_id": "Matthias Muth",
+                    "user_href": "/profile/Matthias-Muth"
+                },
+                {
+                    "user_id": "Will England",
+                    "user_href": "/profile/Will-England"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Tyson Key",
+                    "user_href": "/profile/Tyson-Key"
+                },
+                {
+                    "user_id": "Hui Cheng",
+                    "user_href": "/profile/Hui-Cheng-52"
+                },
+                {
+                    "user_id": "Reinier Post",
+                    "user_href": "/profile/Reinier-Post"
+                },
+                {
+                    "user_id": "Dani Richard",
+                    "user_href": "/profile/Dani-Richard"
+                },
+                {
+                    "user_id": "Edgar Allen",
+                    "user_href": "/profile/Edgar-Allen-1"
+                },
+                {
+                    "user_id": "Infant Patrick",
+                    "user_href": "/profile/Infant-Patrick-1"
+                },
+                {
+                    "user_id": "Gregory Wilson",
+                    "user_href": "/profile/Gregory-Wilson-43"
+                },
+                {
+                    "user_id": "Joe Smith",
+                    "user_href": "/profile/Joe-Smith-1332"
+                },
+                {
+                    "user_id": "Ankit Sinha",
+                    "user_href": "/profile/Ankit-Sinha-344"
+                },
+                {
+                    "user_id": "Kunal Ambavale",
+                    "user_href": "/profile/Kunal-Ambavale"
+                },
+                {
+                    "user_id": "Petr Bena",
+                    "user_href": "/profile/Petr-Bena"
+                },
+                {
+                    "user_id": "John Owens",
+                    "user_href": "/profile/John-Owens-27"
+                },
+                {
+                    "user_id": "Brad Oliver",
+                    "user_href": "/profile/Brad-Oliver-20"
+                },
+                {
+                    "user_id": "Tech Toread",
+                    "user_href": "/profile/Tech-Toread"
+                },
+                {
+                    "user_id": "Lee Stoltz",
+                    "user_href": "/profile/Lee-Stoltz"
+                },
+                {
+                    "user_id": "Karim Vergnes",
+                    "user_href": "/profile/Karim-Vergnes"
+                },
+                {
+                    "user_id": "Michael Dykman",
+                    "user_href": "/profile/Michael-Dykman"
+                },
+                {
+                    "user_id": "Myat Thura",
+                    "user_href": "/profile/Myat-Thura-7"
+                },
+                {
+                    "user_id": "Trisnoadi Wikantoro",
+                    "user_href": "/profile/Trisnoadi-Wikantoro"
+                },
+                {
+                    "user_id": "Balaji Prasad",
+                    "user_href": "/profile/Balaji-Prasad"
+                },
+                {
+                    "user_id": "Manuel Martinez",
+                    "user_href": "/profile/Manuel-Martinez-46"
+                },
+                {
+                    "user_id": "Igor Berezhnoy",
+                    "user_href": "/profile/Igor-Berezhnoy-1"
+                },
+                {
+                    "user_id": "Beam Davis",
+                    "user_href": "/profile/Beam-Davis"
+                },
+                {
+                    "user_id": "Guilherme de Lazari",
+                    "user_href": "/profile/Guilherme-de-Lazari"
+                },
+                {
+                    "user_id": "Harm Hermsen",
+                    "user_href": "/profile/Harm-Hermsen"
+                },
+                {
+                    "user_id": "Suren Vy",
+                    "user_href": "/profile/Suren-Vy"
+                },
+                {
+                    "user_id": "Rudhisundar Beura",
+                    "user_href": "/profile/Rudhisundar-Beura"
+                },
+                {
+                    "user_id": "Isaac Govan",
+                    "user_href": "/profile/Isaac-Govan"
+                },
+                {
+                    "user_id": "Maxim Sokolov",
+                    "user_href": "/profile/Maxim-Sokolov-1"
+                },
+                {
+                    "user_id": "Jorge Pereira",
+                    "user_href": "/profile/Jorge-Pereira-15"
+                },
+                {
+                    "user_id": "Asad Bilal",
+                    "user_href": "/profile/Asad-Bilal-4"
+                },
+                {
+                    "user_id": "Tsaf Eltrut",
+                    "user_href": "/profile/Tsaf-Eltrut"
+                },
+                {
+                    "user_id": "David Lee Lambert",
+                    "user_href": "/profile/David-Lee-Lambert-1"
+                },
+                {
+                    "user_id": "Antonio Maximo-Lozada",
+                    "user_href": "/profile/Antonio-Maximo-Lozada-1"
+                },
+                {
+                    "user_id": "Rob Sheehy",
+                    "user_href": "/profile/Rob-Sheehy-1"
+                },
+                {
+                    "user_id": "Tikken Grey",
+                    "user_href": "/profile/Tikken-Grey"
+                },
+                {
+                    "user_id": "Sharanya Madhyastha",
+                    "user_href": "/profile/Sharanya-Madhyastha"
+                },
+                {
+                    "user_id": "Ilias Ioakimidis",
+                    "user_href": "/profile/Ilias-Ioakimidis-1"
+                },
+                {
+                    "user_id": "Leon Wanderi",
+                    "user_href": "/profile/Leon-Wanderi"
+                },
+                {
+                    "user_id": "Chris Millins",
+                    "user_href": "/profile/Chris-Millins"
+                },
+                {
+                    "user_id": "Bob Laci",
+                    "user_href": "/profile/Bob-Laci"
+                },
+                {
+                    "user_id": "Jose Quintero",
+                    "user_href": "/profile/Jose-Quintero-1"
+                },
+                {
+                    "user_id": "Tom Jansson",
+                    "user_href": "/profile/Tom-Jansson"
+                },
+                {
+                    "user_id": "Joanna G",
+                    "user_href": "/profile/Joanna-G-11"
+                },
+                {
+                    "user_id": "Ben Perlin",
+                    "user_href": "/profile/Ben-Perlin"
+                },
+                {
+                    "user_id": "Andrei Estioco",
+                    "user_href": "/profile/Andrei-Estioco"
+                },
+                {
+                    "user_id": "Vladimir Dzyuba",
+                    "user_href": "/profile/Vladimir-Dzyuba"
+                },
+                {
+                    "user_id": "Mihai Ionescu",
+                    "user_href": "/profile/Mihai-Ionescu-1"
+                },
+                {
+                    "user_id": "Petrut Coman",
+                    "user_href": "/profile/Petrut-Coman"
+                },
+                {
+                    "user_id": "Sivaraam Subramanian",
+                    "user_href": "/profile/Sivaraam-Subramanian-1"
+                },
+                {
+                    "user_id": "Izzeldeen Abumatar",
+                    "user_href": "/profile/Izzeldeen-Abumatar"
+                },
+                {
+                    "user_id": "Nishal Shettigar",
+                    "user_href": "/profile/Nishal-Shettigar"
+                },
+                {
+                    "user_id": "Anirudha Paul",
+                    "user_href": "/profile/Anirudha-Paul"
+                },
+                {
+                    "user_id": "Abdulaziz Abduqodirov",
+                    "user_href": "/profile/Abdulaziz-Abduqodirov"
+                },
+                {
+                    "user_id": "Michael Naud\u00e9",
+                    "user_href": "/profile/Michael-Naud\u00e9"
+                },
+                {
+                    "user_id": "Steve Fletcher",
+                    "user_href": "/profile/Steve-Fletcher-1"
+                },
+                {
+                    "user_id": "Derrik Pates",
+                    "user_href": "/profile/Derrik-Pates"
+                },
+                {
+                    "user_id": "Igor Carpanese",
+                    "user_href": "/profile/Igor-Carpanese"
+                },
+                {
+                    "user_id": "Swapnil Kumbhare",
+                    "user_href": "/profile/Swapnil-Kumbhare"
+                },
+                {
+                    "user_id": "David Blache",
+                    "user_href": "/profile/David-Blache"
+                },
+                {
+                    "user_id": "Fl\u00e1vio Sousa da Vitoria",
+                    "user_href": "/profile/Fl\u00e1vio-Sousa-da-Vitoria"
+                },
+                {
+                    "user_id": "EPeruser",
+                    "user_href": "/profile/EPeruser"
+                },
+                {
+                    "user_id": "Abhijith Pm",
+                    "user_href": "/profile/Abhijith-Pm-1"
+                },
+                {
+                    "user_id": "Satya Da",
+                    "user_href": "/profile/Satya-Da"
+                },
+                {
+                    "user_id": "Renju Zac",
+                    "user_href": "/profile/Renju-Zac"
+                },
+                {
+                    "user_id": "Mohammad Husain",
+                    "user_href": "/profile/Mohammad-Husain"
+                },
+                {
+                    "user_id": "Peter Burris",
+                    "user_href": "/profile/Peter-Burris-2"
+                },
+                {
+                    "user_id": "Samar Tareen",
+                    "user_href": "/profile/Samar-Tareen"
+                },
+                {
+                    "user_id": "Michiel Lombaers",
+                    "user_href": "/profile/Michiel-Lombaers"
+                },
+                {
+                    "user_id": "Jacopo Galati",
+                    "user_href": "/profile/Jacopo-Galati"
+                },
+                {
+                    "user_id": "Rimau Trg",
+                    "user_href": "/profile/Rimau-Trg"
+                },
+                {
+                    "user_id": "Tom Balaban",
+                    "user_href": "/profile/Tom-Balaban"
+                },
+                {
+                    "user_id": "Kevin Dunphy",
+                    "user_href": "/profile/Kevin-Dunphy-6"
+                },
+                {
+                    "user_id": "Kshitij Gaipal",
+                    "user_href": "/profile/Kshitij-Gaipal"
+                },
+                {
+                    "user_id": "Max Fischer",
+                    "user_href": "/profile/Max-Fischer-10"
+                },
+                {
+                    "user_id": "Alex Szeto",
+                    "user_href": "/profile/Alex-Szeto"
+                },
+                {
+                    "user_id": "Laurent Senta",
+                    "user_href": "/profile/Laurent-Senta"
+                },
+                {
+                    "user_id": "Roman Karpichev",
+                    "user_href": "/profile/Roman-Karpichev"
+                },
+                {
+                    "user_id": "Karim Oumghar",
+                    "user_href": "/profile/Karim-Oumghar"
+                },
+                {
+                    "user_id": "Bharath GS",
+                    "user_href": "/profile/Bharath-GS-1"
+                },
+                {
+                    "user_id": "Aneesh Sv",
+                    "user_href": "/profile/Aneesh-Sv-2"
+                },
+                {
+                    "user_id": "Mathieu Dutour Sikiric",
+                    "user_href": "/profile/Mathieu-Dutour-Sikiric"
+                },
+                {
+                    "user_id": "Saumik Satapathy",
+                    "user_href": "/profile/Saumik-Satapathy-1"
+                },
+                {
+                    "user_id": "Sudip Das",
+                    "user_href": "/profile/Sudip-Das-139"
+                },
+                {
+                    "user_id": "Jack Hill",
+                    "user_href": "/profile/Jack-Hill-13"
+                },
+                {
+                    "user_id": "Jacob Share",
+                    "user_href": "/profile/Jacob-Share"
+                },
+                {
+                    "user_id": "Deep Gaurav",
+                    "user_href": "/profile/Deep-Gaurav-3"
+                },
+                {
+                    "user_id": "Rohit Dhundele",
+                    "user_href": "/profile/Rohit-Dhundele"
+                },
+                {
+                    "user_id": "Paul van Fraassen",
+                    "user_href": "/profile/Paul-van-Fraassen-1"
+                },
+                {
+                    "user_id": "\u00c1quilla Daniel Ferreira Soares",
+                    "user_href": "/profile/\u00c1quilla-Daniel-Ferreira-Soares"
+                },
+                {
+                    "user_id": "Jos\u00e9 Fernando Anselmo Guimaraes",
+                    "user_href": "/profile/Jos\u00e9-Fernando-Anselmo-Guimaraes"
+                },
+                {
+                    "user_id": "Steven Atkinson",
+                    "user_href": "/profile/Steven-Atkinson-10"
+                },
+                {
+                    "user_id": "Daniel Vaughan",
+                    "user_href": "/profile/Daniel-Vaughan-9"
+                },
+                {
+                    "user_id": "Vladi Rehanek",
+                    "user_href": "/profile/Vladi-Rehanek"
+                },
+                {
+                    "user_id": "Sundeep Kamath",
+                    "user_href": "/profile/Sundeep-Kamath-2"
+                },
+                {
+                    "user_id": "Alexandre Gomes",
+                    "user_href": "/profile/Alexandre-Gomes-5"
+                },
+                {
+                    "user_id": "Bill Hassard",
+                    "user_href": "/profile/Bill-Hassard"
+                },
+                {
+                    "user_id": "Justin Saunders",
+                    "user_href": "/profile/Justin-Saunders-1"
+                },
+                {
+                    "user_id": "James Nevik",
+                    "user_href": "/profile/James-Nevik-1"
+                },
+                {
+                    "user_id": "Sean Kelleher",
+                    "user_href": "/profile/Sean-Kelleher-1"
+                },
+                {
+                    "user_id": "Vinayak Kulkarni",
+                    "user_href": "/profile/Vinayak-Kulkarni-29"
+                },
+                {
+                    "user_id": "Jos\u00e9 Miguel Arroyo",
+                    "user_href": "/profile/Jos\u00e9-Miguel-Arroyo"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Stien-A-Seeker"
+                },
+                {
+                    "user_id": "Abhishek Madhani",
+                    "user_href": "/profile/Abhishek-Madhani"
+                },
+                {
+                    "user_id": "Marius Manea",
+                    "user_href": "/profile/Marius-Manea"
+                },
+                {
+                    "user_id": "Alex Schmidt",
+                    "user_href": "/profile/Alex-Schmidt-16"
+                },
+                {
+                    "user_id": "Akhil Handoo",
+                    "user_href": "/profile/Akhil-Handoo"
+                },
+                {
+                    "user_id": "Showkat Akbar",
+                    "user_href": "/profile/Showkat-Akbar"
+                },
+                {
+                    "user_id": "Lee Ley",
+                    "user_href": "/profile/Lee-Ley-1"
+                },
+                {
+                    "user_id": "Nishant Kaushik",
+                    "user_href": "/profile/Nishant-Kaushik-25"
+                },
+                {
+                    "user_id": "Luqmanul Hakeem",
+                    "user_href": "/profile/Luqmanul-Hakeem-1"
+                },
+                {
+                    "user_id": "Arnez Bridges",
+                    "user_href": "/profile/Arnez-Bridges"
+                },
+                {
+                    "user_id": "William Barker",
+                    "user_href": "/profile/William-Barker-9"
+                },
+                {
+                    "user_id": "Tonton Figueroa",
+                    "user_href": "/profile/Tonton-Figueroa"
+                },
+                {
+                    "user_id": "Matteo Ianeselli",
+                    "user_href": "/profile/Matteo-Ianeselli"
+                },
+                {
+                    "user_id": "Tejas Shah",
+                    "user_href": "/profile/Tejas-Shah-52"
+                },
+                {
+                    "user_id": "Wessam Ahmed",
+                    "user_href": "/profile/Wessam-Ahmed-4"
+                },
+                {
+                    "user_id": "David Choitz",
+                    "user_href": "/profile/David-Choitz-1"
+                },
+                {
+                    "user_id": "Sergio Mora",
+                    "user_href": "/profile/Sergio-Mora-11"
+                },
+                {
+                    "user_id": "Michael Chen",
+                    "user_href": "/profile/Michael-Chen-344"
+                },
+                {
+                    "user_id": "Magnus Reynhamar",
+                    "user_href": "/profile/Magnus-Reynhamar"
+                },
+                {
+                    "user_id": "Afzal Rahman",
+                    "user_href": "/profile/Afzal-Rahman-15"
+                },
+                {
+                    "user_id": "Thach Nguyen",
+                    "user_href": "/profile/Thach-Nguyen-2"
+                },
+                {
+                    "user_id": "Thomas Braxton",
+                    "user_href": "/profile/Thomas-Braxton"
+                },
+                {
+                    "user_id": "Pavel Vodr\u00e1\u017eka",
+                    "user_href": "/profile/Pavel-Vodr\u00e1\u017eka"
+                },
+                {
+                    "user_id": "Punit Soni",
+                    "user_href": "/profile/Punit-Soni-1"
+                },
+                {
+                    "user_id": "Ben Pedras",
+                    "user_href": "/profile/Ben-Pedras"
+                },
+                {
+                    "user_id": "Joaqu\u00edn Cruz Acevedo Duprat",
+                    "user_href": "/profile/Joaqu\u00edn-Cruz-Acevedo-Duprat"
+                },
+                {
+                    "user_id": "Kieran Peckett",
+                    "user_href": "/profile/Kieran-Peckett"
+                },
+                {
+                    "user_id": "Jan Michael Ibanez",
+                    "user_href": "/profile/Jan-Michael-Ibanez"
+                },
+                {
+                    "user_id": "Ed Smith",
+                    "user_href": "/profile/Ed-Smith-125"
+                },
+                {
+                    "user_id": "Ijaj Mulani",
+                    "user_href": "/profile/Ijaj-Mulani"
+                },
+                {
+                    "user_id": "Muflah Ul Furqan",
+                    "user_href": "/profile/Muflah-Ul-Furqan"
+                },
+                {
+                    "user_id": "Mehmet Kaplan",
+                    "user_href": "/profile/Mehmet-Kaplan-3"
+                },
+                {
+                    "user_id": "Rajan Patel",
+                    "user_href": "/profile/Rajan-Patel-3"
+                },
+                {
+                    "user_id": "Mathew Daniel",
+                    "user_href": "/profile/Mathew-Daniel"
+                },
+                {
+                    "user_id": "Sam A",
+                    "user_href": "/profile/Sam-A-545"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                },
+                {
+                    "user_id": "Deepankar Kr",
+                    "user_href": "/profile/Deepankar-Kr"
+                },
+                {
+                    "user_id": "Gorantla Sai",
+                    "user_href": "/profile/Gorantla-Sai"
+                },
+                {
+                    "user_id": "Ong Zhong Liang",
+                    "user_href": "/profile/Ong-Zhong-Liang"
+                },
+                {
+                    "user_id": "Maco Young",
+                    "user_href": "/profile/Maco-Young"
+                },
+                {
+                    "user_id": "Sandeep Srivastav Vaddiparthy",
+                    "user_href": "/profile/Sandeep-Srivastav-Vaddiparthy"
+                },
+                {
+                    "user_id": "Nicolas Dominguez",
+                    "user_href": "/profile/Nicolas-Dominguez-1"
+                },
+                {
+                    "user_id": "Felipe Silveira",
+                    "user_href": "/profile/Felipe-Silveira-4"
+                },
+                {
+                    "user_id": "John Meaders",
+                    "user_href": "/profile/John-Meaders"
+                },
+                {
+                    "user_id": "Jive Cords Fils",
+                    "user_href": "/profile/Jive-Cords-Fils"
+                },
+                {
+                    "user_id": "Beloved Blind Chicken",
+                    "user_href": "/profile/Beloved-Blind-Chicken"
+                },
+                {
+                    "user_id": "Keith Russell",
+                    "user_href": "/profile/Keith-Russell-17"
+                },
+                {
+                    "user_id": "Pablo Oliva",
+                    "user_href": "/profile/Pablo-Oliva-2"
+                },
+                {
+                    "user_id": "George Daniel Arteni",
+                    "user_href": "/profile/George-Daniel-Arteni"
+                },
+                {
+                    "user_id": "Gaurav Garg",
+                    "user_href": "/profile/Gaurav-Garg-354"
+                },
+                {
+                    "user_id": "Ygor Lemos",
+                    "user_href": "/profile/Ygor-Lemos"
+                },
+                {
+                    "user_id": "Ricardo Rodrigues",
+                    "user_href": "/profile/Ricardo-Rodrigues-38"
+                },
+                {
+                    "user_id": "Christopher Sack",
+                    "user_href": "/profile/Christopher-Sack"
+                },
+                {
+                    "user_id": "Sudesh Chandar",
+                    "user_href": "/profile/Sudesh-Chandar-1"
+                },
+                {
+                    "user_id": "Gabriele Venturato",
+                    "user_href": "/profile/Gabriele-Venturato"
+                },
+                {
+                    "user_id": "Javier Hernandez",
+                    "user_href": "/profile/Javier-Hernandez-126"
+                },
+                {
+                    "user_id": "Tim Westlake",
+                    "user_href": "/profile/Tim-Westlake"
+                },
+                {
+                    "user_id": "Roger Sj\u00f6berg",
+                    "user_href": "/profile/Roger-Sj\u00f6berg"
+                },
+                {
+                    "user_id": "Belavadi Prahalad",
+                    "user_href": "/profile/Belavadi-Prahalad"
+                },
+                {
+                    "user_id": "Jagadeesh Gowda",
+                    "user_href": "/profile/Jagadeesh-Gowda-9"
+                },
+                {
+                    "user_id": "Alexander E. Hillaris",
+                    "user_href": "/profile/Alexander-E-Hillaris"
+                },
+                {
+                    "user_id": "David Rogal",
+                    "user_href": "/profile/David-Rogal"
+                },
+                {
+                    "user_id": "Hugo Augusto",
+                    "user_href": "/profile/Hugo-Augusto-2"
+                },
+                {
+                    "user_id": "Itay Dan",
+                    "user_href": "/profile/Itay-Dan"
+                },
+                {
+                    "user_id": "Jose Felix Gomez",
+                    "user_href": "/profile/Jose-Felix-Gomez"
+                },
+                {
+                    "user_id": "Carolina Carreira",
+                    "user_href": "/profile/Carolina-Carreira"
+                },
+                {
+                    "user_id": "Marcus Ooi",
+                    "user_href": "/profile/Marcus-Ooi"
+                },
+                {
+                    "user_id": "Augier Marc",
+                    "user_href": "/profile/Augier-Marc"
+                },
+                {
+                    "user_id": "Panya Thanyaprasertkul",
+                    "user_href": "/profile/Panya-Thanyaprasertkul"
+                },
+                {
+                    "user_id": "Aron Somodi",
+                    "user_href": "/profile/Aron-Somodi"
+                },
+                {
+                    "user_id": "Dane Rossenrode",
+                    "user_href": "/profile/Dane-Rossenrode"
+                },
+                {
+                    "user_id": "Bill Nichols",
+                    "user_href": "/profile/Bill-Nichols-24"
+                },
+                {
+                    "user_id": "John Cate",
+                    "user_href": "/profile/John-Cate-2"
+                },
+                {
+                    "user_id": "Muhammad Shoaib",
+                    "user_href": "/profile/Muhammad-Shoaib-133"
+                },
+                {
+                    "user_id": "Ernesto Hernandez",
+                    "user_href": "/profile/Ernesto-Hernandez-11"
+                },
+                {
+                    "user_id": "Nils Andreas Svee",
+                    "user_href": "/profile/Nils-Andreas-Svee"
+                },
+                {
+                    "user_id": "Juan Pablo Contreras Franco",
+                    "user_href": "/profile/Juan-Pablo-Contreras-Franco-1"
+                },
+                {
+                    "user_id": "Yuri Nagibovich",
+                    "user_href": "/profile/Yuri-Nagibovich"
+                },
+                {
+                    "user_id": "Rohit Sharma",
+                    "user_href": "/profile/Rohit-Sharma-719"
+                },
+                {
+                    "user_id": "Scott Tilghman",
+                    "user_href": "/profile/Scott-Tilghman"
+                },
+                {
+                    "user_id": "Juan Carlos Goyes",
+                    "user_href": "/profile/Juan-Carlos-Goyes"
+                },
+                {
+                    "user_id": "Jonathan Z\u00fa\u00f1iga",
+                    "user_href": "/profile/Jonathan-Z\u00fa\u00f1iga"
+                },
+                {
+                    "user_id": "Keith Blair",
+                    "user_href": "/profile/Keith-Blair-3"
+                },
+                {
+                    "user_id": "Fred Smith",
+                    "user_href": "/profile/Fred-Smith-136"
+                },
+                {
+                    "user_id": "Juan C.Cilleruelo",
+                    "user_href": "/profile/Juan-C-Cilleruelo-1"
+                },
+                {
+                    "user_id": "Geoffrey Wade",
+                    "user_href": "/profile/Geoffrey-Wade-1"
+                },
+                {
+                    "user_id": "Safayet Hossain",
+                    "user_href": "/profile/Safayet-Hossain-3"
+                },
+                {
+                    "user_id": "D. Lingo",
+                    "user_href": "/profile/D-Lingo"
+                },
+                {
+                    "user_id": "Wyatt Kroemer",
+                    "user_href": "/profile/Wyatt-Kroemer"
+                },
+                {
+                    "user_id": "H\u01b0ng Nguy\u1ec5n Gia",
+                    "user_href": "/profile/H\u01b0ng-Nguy\u1ec5n-Gia"
+                },
+                {
+                    "user_id": "Antonella Red",
+                    "user_href": "/profile/Antonella-Red"
+                },
+                {
+                    "user_id": "Gorka Porteiro Zubiaurre",
+                    "user_href": "/profile/Gorka-Porteiro-Zubiaurre"
+                },
+                {
+                    "user_id": "Noam Cohen",
+                    "user_href": "/profile/Noam-Cohen-6"
+                },
+                {
+                    "user_id": "Cory Miller",
+                    "user_href": "/profile/Cory-Miller-1"
+                },
+                {
+                    "user_id": "Amrani Youcef",
+                    "user_href": "/profile/Amrani-Youcef-1"
+                },
+                {
+                    "user_id": "Ajith Bhaskaran",
+                    "user_href": "/profile/Ajith-Bhaskaran-5"
+                },
+                {
+                    "user_id": "David Parks",
+                    "user_href": "/profile/David-Parks-9"
+                },
+                {
+                    "user_id": "Andrew Jarcho",
+                    "user_href": "/profile/Andrew-Jarcho"
+                },
+                {
+                    "user_id": "Omar Ali Mokhtar",
+                    "user_href": "/profile/Omar-Ali-Mokhtar"
+                },
+                {
+                    "user_id": "Atle Ramsli",
+                    "user_href": "/profile/Atle-Ramsli"
+                },
+                {
+                    "user_id": "Kajsa Anderson",
+                    "user_href": "/profile/Kajsa-Anderson-1"
+                },
+                {
+                    "user_id": "\u0410\u0440\u0442\u0435\u043c \u041d\u0435\u0441\u0442\u0435\u0440\u0435\u043d\u043a\u043e",
+                    "user_href": "/profile/\u0410\u0440\u0442\u0435\u043c-\u041d\u0435\u0441\u0442\u0435\u0440\u0435\u043d\u043a\u043e"
+                },
+                {
+                    "user_id": "Krish Panesar",
+                    "user_href": "/profile/Krish-Panesar-1"
+                },
+                {
+                    "user_id": "John Tilghman",
+                    "user_href": "/profile/John-Tilghman"
+                },
+                {
+                    "user_id": "Jaden Sorrenvino",
+                    "user_href": "/profile/Jaden-Sorrenvino"
+                },
+                {
+                    "user_id": "Joseph \"Alec\" Sidwa",
+                    "user_href": "/profile/Joseph-Alec-Sidwa"
+                },
+                {
+                    "user_id": "Scott Stensland",
+                    "user_href": "/profile/Scott-Stensland"
+                },
+                {
+                    "user_id": "William Kibirango",
+                    "user_href": "/profile/William-Kibirango"
+                },
+                {
+                    "user_id": "Henrique Flach Latorre Moreno",
+                    "user_href": "/profile/Henrique-Flach-Latorre-Moreno"
+                },
+                {
+                    "user_id": "Witold Wr\u00f3bel",
+                    "user_href": "/profile/Witold-Wr\u00f3bel-1"
+                },
+                {
+                    "user_id": "South Bound",
+                    "user_href": "/profile/South-Bound-1"
+                },
+                {
+                    "user_id": "Peter Escalante",
+                    "user_href": "/profile/Peter-Escalante"
+                },
+                {
+                    "user_id": "Zoerab Tchahkiev",
+                    "user_href": "/profile/Zoerab-Tchahkiev"
+                },
+                {
+                    "user_id": "Armin Rosu",
+                    "user_href": "/profile/Armin-Rosu"
+                },
+                {
+                    "user_id": "Eivydas",
+                    "user_href": "/profile/Eivydas"
+                },
+                {
+                    "user_id": "Jes\u00fas Torres",
+                    "user_href": "/profile/Jes\u00fas-Torres-1"
+                },
+                {
+                    "user_id": "Jos\u00e9 Garc\u00eda",
+                    "user_href": "/profile/Jos\u00e9-Garc\u00eda-27"
+                },
+                {
+                    "user_id": "Frederic Ulric",
+                    "user_href": "/profile/Frederic-Ulric"
+                },
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                },
+                {
+                    "user_id": "Ed Grade",
+                    "user_href": "/profile/Ed-Grade"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/VT-Stafford"
+                },
+                {
+                    "user_id": "Don Whitteker",
+                    "user_href": "/profile/Don-Whitteker"
+                },
+                {
+                    "user_id": "Dominic Snowdon",
+                    "user_href": "/profile/Dominic-Snowdon"
+                },
+                {
+                    "user_id": "Jacek Ru\u017cyczka",
+                    "user_href": "/profile/Jacek-Ru\u017cyczka"
+                },
+                {
+                    "user_id": "Pablo G\u00f3mez",
+                    "user_href": "/profile/Pablo-G\u00f3mez-10"
+                },
+                {
+                    "user_id": "Curtis Hall",
+                    "user_href": "/profile/Curtis-Hall-19"
+                },
+                {
+                    "user_id": "Tanmay Patel",
+                    "user_href": "/profile/Tanmay-Patel-68"
+                },
+                {
+                    "user_id": "Richard James",
+                    "user_href": "/profile/Richard-James-16"
+                },
+                {
+                    "user_id": "Oskar Stangenberg",
+                    "user_href": "/profile/Oskar-Stangenberg"
+                },
+                {
+                    "user_id": "Prabina Kumar Samal",
+                    "user_href": "/profile/Prabina-Kumar-Samal"
+                },
+                {
+                    "user_id": "Narayanachar S Murali",
+                    "user_href": "/profile/Narayanachar-S-Murali"
+                },
+                {
+                    "user_id": "David Turvene",
+                    "user_href": "/profile/David-Turvene-1"
+                },
+                {
+                    "user_id": "Kevin Cain",
+                    "user_href": "/profile/Kevin-Cain-6"
+                },
+                {
+                    "user_id": "Mikhail Dubov",
+                    "user_href": "/profile/Mikhail-Dubov-1"
+                },
+                {
+                    "user_id": "Pea Nguyen",
+                    "user_href": "/profile/Pea-Nguyen"
+                },
+                {
+                    "user_id": "Lyndon Jay Figuerres",
+                    "user_href": "/profile/Lyndon-Jay-Figuerres-1"
+                },
+                {
+                    "user_id": "Jesse Green",
+                    "user_href": "/profile/Jesse-Green"
+                },
+                {
+                    "user_id": "Jurij Hude\u010dek",
+                    "user_href": "/profile/Jurij-Hude\u010dek"
+                },
+                {
+                    "user_id": "Chris Fisher",
+                    "user_href": "/profile/Chris-Fisher-20"
+                },
+                {
+                    "user_id": "Dave Blair",
+                    "user_href": "/profile/Dave-Blair"
+                },
+                {
+                    "user_id": "Phil Kaskela",
+                    "user_href": "/profile/Phil-Kaskela"
+                },
+                {
+                    "user_id": "Graham Klerks",
+                    "user_href": "/profile/Graham-Klerks"
+                },
+                {
+                    "user_id": "Norbert Rovira",
+                    "user_href": "/profile/Norbert-Rovira"
+                },
+                {
+                    "user_id": "Julio Carlos Barrera",
+                    "user_href": "/profile/Julio-Carlos-Barrera"
+                },
+                {
+                    "user_id": "Paul Allen",
+                    "user_href": "/profile/Paul-Allen-81"
+                },
+                {
+                    "user_id": "Arunava Karmakar",
+                    "user_href": "/profile/Arunava-Karmakar-2"
+                },
+                {
+                    "user_id": "Deepak Kumar",
+                    "user_href": "/profile/Deepak-Kumar-1319"
+                },
+                {
+                    "user_id": "Joseph Boyd",
+                    "user_href": "/profile/Joseph-Boyd-15"
+                },
+                {
+                    "user_id": "Dmitry Herwagen",
+                    "user_href": "/profile/Dmitry-Herwagen"
+                },
+                {
+                    "user_id": "Mostafa Alaa",
+                    "user_href": "/profile/Mostafa-Alaa-1"
+                },
+                {
+                    "user_id": "Jan Fetzer",
+                    "user_href": "/profile/Jan-Fetzer-1"
+                },
+                {
+                    "user_id": "Chidiebere Okpoechi",
+                    "user_href": "/profile/Chidiebere-Okpoechi"
+                },
+                {
+                    "user_id": "Richard Green",
+                    "user_href": "/profile/Richard-Green-64"
+                },
+                {
+                    "user_id": "Agaba Albert",
+                    "user_href": "/profile/Agaba-Albert"
+                },
+                {
+                    "user_id": "Marcus Kober",
+                    "user_href": "/profile/Marcus-Kober"
+                },
+                {
+                    "user_id": "Subhadip Chatterjee",
+                    "user_href": "/profile/Subhadip-Chatterjee-3"
+                },
+                {
+                    "user_id": "Juan Morales",
+                    "user_href": "/profile/Juan-Morales-24"
+                },
+                {
+                    "user_id": "Heath Lee Fournier",
+                    "user_href": "/profile/Heath-Lee-Fournier"
+                },
+                {
+                    "user_id": "Houman Babai",
+                    "user_href": "/profile/Houman-Babai"
+                },
+                {
+                    "user_id": "Yasin Inat",
+                    "user_href": "/profile/Yasin-Inat"
+                },
+                {
+                    "user_id": "Ferdun Mestan",
+                    "user_href": "/profile/Ferdun-Mestan"
+                },
+                {
+                    "user_id": "Angelos Georgalas",
+                    "user_href": "/profile/Angelos-Georgalas"
+                },
+                {
+                    "user_id": "Mike Carlson",
+                    "user_href": "/profile/Mike-Carlson-4"
+                },
+                {
+                    "user_id": "Jeff Dodd",
+                    "user_href": "/profile/Jeff-Dodd-7"
+                },
+                {
+                    "user_id": "Jeremiah Miller",
+                    "user_href": "/profile/Jeremiah-Miller-3"
+                },
+                {
+                    "user_id": "Murilo Queiroz",
+                    "user_href": "/profile/Murilo-Queiroz"
+                },
+                {
+                    "user_id": "Marcus Schorn",
+                    "user_href": "/profile/Marcus-Schorn"
+                },
+                {
+                    "user_id": "Daniel Joseph Day",
+                    "user_href": "/profile/Daniel-Joseph-Day"
+                },
+                {
+                    "user_id": "Lewis LaCook",
+                    "user_href": "/profile/Lewis-LaCook-1"
+                },
+                {
+                    "user_id": "Ryan Hill",
+                    "user_href": "/profile/Ryan-Hill-257"
+                },
+                {
+                    "user_id": "Andreas Sehr",
+                    "user_href": "/profile/Andreas-Sehr"
+                },
+                {
+                    "user_id": "Rok Kos",
+                    "user_href": "/profile/Rok-Kos"
+                },
+                {
+                    "user_id": "William H. Magill",
+                    "user_href": "/profile/William-H-Magill"
+                },
+                {
+                    "user_id": "Luis Meza",
+                    "user_href": "/profile/Luis-Meza-14"
+                },
+                {
+                    "user_id": "Imdad Thufaili",
+                    "user_href": "/profile/Imdad-Thufaili"
+                },
+                {
+                    "user_id": "Francois Swanepoel",
+                    "user_href": "/profile/Francois-Swanepoel-1"
+                },
+                {
+                    "user_id": "Ankit Gandhi",
+                    "user_href": "/profile/Ankit-Gandhi-16"
+                },
+                {
+                    "user_id": "Fernando D. Bozzo",
+                    "user_href": "/profile/Fernando-D-Bozzo"
+                },
+                {
+                    "user_id": "Kevin Cameron",
+                    "user_href": "/profile/Kevin-Cameron-7"
+                },
+                {
+                    "user_id": "Jossemar Cordero",
+                    "user_href": "/profile/Jossemar-Cordero"
+                },
+                {
+                    "user_id": "Soumen Pradhan",
+                    "user_href": "/profile/Soumen-Pradhan-1"
+                },
+                {
+                    "user_id": "Andrew Pope",
+                    "user_href": "/profile/Andrew-Pope-2"
+                },
+                {
+                    "user_id": "Antonio Maximo-Lozada",
+                    "user_href": "/profile/Antonio-Maximo-Lozada"
+                },
+                {
+                    "user_id": "Janis Baumanis",
+                    "user_href": "/profile/Janis-Baumanis"
+                },
+                {
+                    "user_id": "George Aiken",
+                    "user_href": "/profile/George-Aiken"
+                },
+                {
+                    "user_id": "Matt Barnes",
+                    "user_href": "/profile/Matt-Barnes-54"
+                },
+                {
+                    "user_id": "Neil Macmillan",
+                    "user_href": "/profile/Neil-Macmillan"
+                },
+                {
+                    "user_id": "Vladimir Vrzi\u0107",
+                    "user_href": "/profile/Vladimir-Vrzi\u0107"
+                },
+                {
+                    "user_id": "David Vikstr\u00f6m",
+                    "user_href": "/profile/David-Vikstr\u00f6m"
+                },
+                {
+                    "user_id": "Sanket Payghan",
+                    "user_href": "/profile/Sanket-Payghan"
+                },
+                {
+                    "user_id": "Pritesh Ugrankar",
+                    "user_href": "/profile/Pritesh-Ugrankar"
+                },
+                {
+                    "user_id": "Yousif Anwar",
+                    "user_href": "/profile/Yousif-Anwar"
+                },
+                {
+                    "user_id": "Francisco J Montilla",
+                    "user_href": "/profile/Francisco-J-Montilla"
+                },
+                {
+                    "user_id": "Gary Denby",
+                    "user_href": "/profile/Gary-Denby"
+                },
+                {
+                    "user_id": "Leo Daidone",
+                    "user_href": "/profile/Leo-Daidone"
+                },
+                {
+                    "user_id": "Ted Chien",
+                    "user_href": "/profile/Ted-Chien-1"
+                },
+                {
+                    "user_id": "Aaron Carson",
+                    "user_href": "/profile/Aaron-Carson"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Vinh-12"
+                },
+                {
+                    "user_id": "Manolis Fanourgakis",
+                    "user_href": "/profile/Manolis-Fanourgakis"
+                },
+                {
+                    "user_id": "Mike Hoida",
+                    "user_href": "/profile/Mike-Hoida"
+                },
+                {
+                    "user_id": "Brian Holland",
+                    "user_href": "/profile/Brian-Holland-35"
+                },
+                {
+                    "user_id": "Matthieu Barth\u00e9lemy",
+                    "user_href": "/profile/Matthieu-Barth\u00e9lemy"
+                },
+                {
+                    "user_id": "Stephen Kuhn",
+                    "user_href": "/profile/Stephen-Kuhn-2"
+                },
+                {
+                    "user_id": "Joe Zbiciak",
+                    "user_href": "/profile/Joe-Zbiciak"
+                },
+                {
+                    "user_id": "Stephen Hall",
+                    "user_href": "/profile/Stephen-Hall-34"
+                },
+                {
+                    "user_id": "Michael Woodman",
+                    "user_href": "/profile/Michael-Woodman-1"
+                },
+                {
+                    "user_id": "Muhammad Shaheer",
+                    "user_href": "/profile/Muhammad-Shaheer-3"
+                },
+                {
+                    "user_id": "David Lawrence",
+                    "user_href": "/profile/David-Lawrence-26"
+                },
+                {
+                    "user_id": "Jos\u00e9 Emiliano Cabrera Blancas",
+                    "user_href": "/profile/Jos\u00e9-Emiliano-Cabrera-Blancas"
+                },
+                {
+                    "user_id": "Ethar Alali",
+                    "user_href": "/profile/Ethar-Alali"
+                },
+                {
+                    "user_id": "Prakash Tiwari",
+                    "user_href": "/profile/Prakash-Tiwari-32"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "J. Gavin Ray",
+                    "user_href": "/profile/J-Gavin-Ray"
+                },
+                {
+                    "user_id": "Anthony Kressevich",
+                    "user_href": "/profile/Anthony-Kressevich"
+                },
+                {
+                    "user_id": "Mahir Chowdhury",
+                    "user_href": "/profile/Mahir-Chowdhury"
+                },
+                {
+                    "user_id": "Mauro Sardu",
+                    "user_href": "/profile/Mauro-Sardu"
+                },
+                {
+                    "user_id": "J\u0101nis Gailis",
+                    "user_href": "/profile/J\u0101nis-Gailis-2"
+                },
+                {
+                    "user_id": "Daniel Margarido",
+                    "user_href": "/profile/Daniel-Margarido"
+                },
+                {
+                    "user_id": "Manish Manepalli",
+                    "user_href": "/profile/Manish-Manepalli"
+                },
+                {
+                    "user_id": "Rajiv Teja Nagipogu",
+                    "user_href": "/profile/Rajiv-Teja-Nagipogu"
+                },
+                {
+                    "user_id": "Mike Schoonover",
+                    "user_href": "/profile/Mike-Schoonover"
+                },
+                {
+                    "user_id": "Khang L\u01b0\u01a1ng V\u0129nh",
+                    "user_href": "/profile/Khang-L\u01b0\u01a1ng-V\u0129nh"
+                },
+                {
+                    "user_id": "Vivek Sura",
+                    "user_href": "/profile/Vivek-Sura-1"
+                },
+                {
+                    "user_id": "Nafees Hassan",
+                    "user_href": "/profile/Nafees-Hassan-1"
+                },
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Spencer Brown",
+                    "user_href": "/profile/Spencer-Brown-35"
+                },
+                {
+                    "user_id": "Valerio Cietto",
+                    "user_href": "/profile/Valerio-Cietto"
+                },
+                {
+                    "user_id": "Diego Sep\u00falveda",
+                    "user_href": "/profile/Diego-Sep\u00falveda"
+                },
+                {
+                    "user_id": "Saul Tobin",
+                    "user_href": "/profile/Saul-Tobin"
+                },
+                {
+                    "user_id": "Jarvis Luong",
+                    "user_href": "/profile/Jarvis-Luong"
+                },
+                {
+                    "user_id": "Dvir Sha",
+                    "user_href": "/profile/Dvir-Sha"
+                },
+                {
+                    "user_id": "Benjamin Jamison",
+                    "user_href": "/profile/Benjamin-Jamison"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Basile Starynkevitch",
+                    "user_href": "/profile/Basile-Starynkevitch"
+                },
+                {
+                    "user_id": "Jason Yan",
+                    "user_href": "/profile/Jason-Yan-22"
+                },
+                {
+                    "user_id": "Chaitanya Chalasani",
+                    "user_href": "/profile/Chaitanya-Chalasani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zoran Gagic",
+                "href": "/profile/Zoran-Gagic-1"
+            },
+            "answer_text": "Linux is a UNIX derivative just like Solaris/AIX/HP-UX/Tru64 I spent late 80s, early 90s working with Sun/IBM/HP on their proprietary UNIX systems. Initially these ran on proprietary CPUs (SPARC/POWER/PA/Alpha) and were derived from AT&T System V/BSD/Mach based origins but essentially proprietary form of UNIX. Commodity Intel CPUs became faster and slowly started challenging proprietary CPUs in terms of performance and in the early 90s Linus Torvalds created Linux a UNIX derivative kernel and GNU provided the tools and compilers and magically we had a free UNIX derivative. In 1993 I installed Slackware Linux on my PC and this blew my brain\u2026.we had a free UNIX able to run on a low cost PC. Enterprises were much slower to take on Linux, once commercial support was available with Red Hat and more and more commercial software vendors ported their applications to Linux it was only a matter of time before Linux took over from proprietary UNIX derivatives. Linux was UNIX at much lower cost. Even today I still believe that commercial UNIX has more features than Linux, but Linux is free and Intel CPUs offer amazing performance\u2026..why would anyone still run expensive UNIX when low cost Linux is a small fraction of the cost. What killed UNIX? Low cost, powerful commodity hardware and open source. The same will soon kill propitiatory networking and storage. ",
+            "date": "Answered October 11, 2017",
+            "views": "2",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Secker",
+                    "user_href": "/profile/Alan-Secker"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Sinicha Jeftic",
+                    "user_href": "/profile/Sinicha-Jeftic"
+                },
+                {
+                    "user_id": "Gregory Dodwell",
+                    "user_href": "/profile/Gregory-Dodwell"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Arno Brevoort",
+                    "user_href": "/profile/Arno-Brevoort"
+                },
+                {
+                    "user_id": "Diego Ferruchelli",
+                    "user_href": "/profile/Diego-Ferruchelli"
+                },
+                {
+                    "user_id": "Frederic Vets",
+                    "user_href": "/profile/Frederic-Vets"
+                },
+                {
+                    "user_id": "Tapio Vaattanen",
+                    "user_href": "/profile/Tapio-Vaattanen"
+                },
+                {
+                    "user_id": "Marc Lewis",
+                    "user_href": "/profile/Marc-Lewis-51"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Mike-Moon-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Garry Taylor",
+                "href": "/profile/Garry-Taylor-5"
+            },
+            "answer_text": "There are UNIX Operating Systems still around, such as Solaris, HP-UX, AIX, and I believe that z/OS (mainframe) is a certified UNIX. There are is NetBSD, FreeBSD, and probably many more too. Linux most certainly sidelined UNIX in many areas especially in commodity servers (i.e. simple 1U 1\u20134 processor servers). Various UNIX Operating Systems don\u2019t see much action in cheap servers (i.e. under $10,000) but are still pretty big business in bigger machines (i.e. over $250,000). In my last job we used pretty much the cheapest SPARC Solaris machine that Oracle made, it ran for many years then had a board failure. Oracle was out within 24 hours and the machine was fixed. That\u2019s pretty much what UNIX is about these days, it\u2019s about SLAs and support. If a large bank has a problem, they want a number to call, and not be told \u201cHave you tried the OpenSSL mailing list?\u201d. You can get service contracts of course on Linux too, but a lot of big companies have a long history using UNIX on large machines with great success, and that\u2019s pretty valuable to them. ",
+            "date": "Answered February 11, 2017",
+            "views": "47",
+            "upvotes": " View 39 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Secker",
+                    "user_href": "/profile/Alan-Secker"
+                },
+                {
+                    "user_id": "Antti M\u00e4ki",
+                    "user_href": "/profile/Antti-M\u00e4ki-3"
+                },
+                {
+                    "user_id": "Lazy Engineer",
+                    "user_href": "/profile/Lazy-Engineer-3"
+                },
+                {
+                    "user_id": "Craig Tullis",
+                    "user_href": "/profile/Craig-Tullis-2"
+                },
+                {
+                    "user_id": "Timothy Bieniosek",
+                    "user_href": "/profile/Timothy-Bieniosek"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Igor Berezhnoy",
+                    "user_href": "/profile/Igor-Berezhnoy-1"
+                },
+                {
+                    "user_id": "Tapio Vaattanen",
+                    "user_href": "/profile/Tapio-Vaattanen"
+                },
+                {
+                    "user_id": "YuXiaoNing Jiang",
+                    "user_href": "/profile/YuXiaoNing-Jiang"
+                },
+                {
+                    "user_id": "Nikesh Khatiwada",
+                    "user_href": "/profile/Nikesh-Khatiwada-1"
+                },
+                {
+                    "user_id": "Max Jones",
+                    "user_href": "/profile/Max-Jones"
+                },
+                {
+                    "user_id": "Derrik Pates",
+                    "user_href": "/profile/Derrik-Pates"
+                },
+                {
+                    "user_id": "Ravi Nallappan",
+                    "user_href": "/profile/Ravi-Nallappan"
+                },
+                {
+                    "user_id": "David Brower",
+                    "user_href": "/profile/David-Brower"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Paan-Waala"
+                },
+                {
+                    "user_id": "Alex Old",
+                    "user_href": "/profile/Alex-Old"
+                },
+                {
+                    "user_id": "Brendan Burkhart",
+                    "user_href": "/profile/Brendan-Burkhart"
+                },
+                {
+                    "user_id": "Bob Laci",
+                    "user_href": "/profile/Bob-Laci"
+                },
+                {
+                    "user_id": "Scott Stensland",
+                    "user_href": "/profile/Scott-Stensland"
+                },
+                {
+                    "user_id": "Jos\u00e9 Rada",
+                    "user_href": "/profile/Jos\u00e9-Rada"
+                },
+                {
+                    "user_id": "Derry Redjeki",
+                    "user_href": "/profile/Derry-Redjeki"
+                },
+                {
+                    "user_id": "Ankush Jain",
+                    "user_href": "/profile/Ankush-Jain-1"
+                },
+                {
+                    "user_id": "Jose Quintana",
+                    "user_href": "/profile/Jose-Quintana-64"
+                },
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                },
+                {
+                    "user_id": "Michael Carter",
+                    "user_href": "/profile/Michael-Carter-132"
+                },
+                {
+                    "user_id": "Dave Blair",
+                    "user_href": "/profile/Dave-Blair"
+                },
+                {
+                    "user_id": "Amrith Nayak",
+                    "user_href": "/profile/Amrith-Nayak"
+                },
+                {
+                    "user_id": "Jayakumar Chandrasekharan",
+                    "user_href": "/profile/Jayakumar-Chandrasekharan"
+                },
+                {
+                    "user_id": "Gurpreet Singh Kakar",
+                    "user_href": "/profile/Gurpreet-Singh-Kakar"
+                },
+                {
+                    "user_id": "Goutham Srinivas",
+                    "user_href": "/profile/Goutham-Srinivas-1"
+                },
+                {
+                    "user_id": "Harikrishnan",
+                    "user_href": "/profile/Harikrishnan-58"
+                },
+                {
+                    "user_id": "Brian Cheney",
+                    "user_href": "/profile/Brian-Cheney"
+                },
+                {
+                    "user_id": "Basile Starynkevitch",
+                    "user_href": "/profile/Basile-Starynkevitch"
+                },
+                {
+                    "user_id": "Wastabir Rajvee Alam",
+                    "user_href": "/profile/Wastabir-Rajvee-Alam"
+                },
+                {
+                    "user_id": "Aykut Duru",
+                    "user_href": "/profile/Aykut-Duru"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "James Swingland",
+                    "user_href": "/profile/James-Swingland-1"
+                },
+                {
+                    "user_id": "Jack Coe",
+                    "user_href": "/profile/Jack-Coe-3"
+                },
+                {
+                    "user_id": "Moray Taylor",
+                    "user_href": "/profile/Moray-Taylor"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matthew Smith",
+                "href": "/profile/Matthew-Smith-963"
+            },
+            "answer_text": "Unix as such divided into two in the 70s, the AT&T flavour and the BSD flavour, which was developed out of the Berkeley university in California, and this was widely used by third-party workstation manufacturers in the early 1980s such as Sun, Silicon Graphcs, Hewlett-Packard and so on. In the late 1980s, AT&T decided to capitalise on their product by releasing System V, Release 4 which became the basis for a number of commercial versions of Unix in the 90s and early 2000s for everything from the Amiga 3000 to the big workstations. Solaris remains based on it. Unix came to be used as a common term but as a brand name, it could only be applied to the AT&T product. BSD was released as open source in the 1990s and quickly divided into a number of different operating systems such as FreeBSD, NetBSD and OpenBSD and, later, Dragonfly BSD. Mac OS X and iOS are partly based on FreeBSD and this accounts for the biggest share of individual Unix users today. Linux has a limited desktop share, but is still widely used on web servers and is also the basis for Android. So no, Linux has definitely not killed Unix; Unix is alive and well on every Mac, iPhone and iPad as well as on some supercomputers and database servers. ",
+            "date": "Answered May 13, 2018",
+            "views": "875",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Diego Ferruchelli",
+                    "user_href": "/profile/Diego-Ferruchelli"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Othniel Mark Graichen",
+                "href": "/profile/Othniel-Mark-Graichen"
+            },
+            "answer_text": "Are you familiar with the English word, subsume? Unix did not die, people just don\u2019t call it Unix anymore. All the technology, ideas and expertise was subsumed into what is Linux today. We can justifiably say that DOS 2.0 borrowed concepts from Linux even though DOS predates Linux. Windows NT and its progenitor OS/2 used none of the Unix technology and precepts so did not compete or contribute to any demise. What happened to Unix had more to do with MS-DOS 2.0 borrowing and popularizing the subdirectory nomenclature of Unix [cd/../.] Thus, when the Intel 80386 processor architecture became popular and brought hardware support for Unix process and paged memory security model, the inevitable PC implementation of Unix that we now call Linux subsumed the entire Unix ecosystem on generic PC hardware platform. My background includes both SCO Unix and SGI Irix and I propose that the learning curve from any 90\u2019s decade Unix flavor to the Linux distributions with XFree86 was negligible if not zero. The Unix vendors at the time were charging for their hardware while Linux would run on commodity hardware which improved thru 486, Pentium and AMD64 varieties by riding the wave of Windows popularity. Linux subsumed Unix. Long live Unix. ",
+            "date": "Answered September 9, 2019",
+            "views": "518",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bv Ch",
+                    "user_href": "/profile/Bv-Ch"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Noam Winter",
+                "href": "/profile/Noam-Winter"
+            },
+            "answer_text": "AT&T owned and created Unix, and AT&T killed Unix by not giving it away for free. Novel bought it from AT&T, and they made the same mistake. Then Linux came out, and was free\u2026 It was instrumental in beginning the Free Software movement. This is what killed Unix finally. The community model of software development couldn\u2019t be beaten, and sometimes equalled, or surpassed closed model software. Unix had an entire suite of tools that worked with it\u2019s shell environment, and Linux styled itself after this\u2026 POSIX set standards and Linux follows the standards. I think it\u2019s more correct to say that Linux was what Unix evolved into, and allowed Unix to survive, and thrive to today, rather than die, a forgotten footnote in computing history. ",
+            "date": "Answered July 7, 2017",
+            "views": "16",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Siam Sami",
+                    "user_href": "/profile/Siam-Sami"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Swapnil Kulkarni",
+                "href": "/profile/Swapnil-Kulkarni-13"
+            },
+            "answer_text": "In 1984, AT&T started selling UNIX as a proprietary product, and entered into a courtroom battle with BSD. It took AT&T five years to win that legal battle. During this time, businesses went with AT&T\u2019s clean room implementation to avoid any problems \u2014 people were looking for a System V style OS rather than a BSD style OS; so the popularity of BSD UNIX went down. In 1991, that wait was over. Linus Torvalds, a student from the University of Helsinki, introduced the Linux kernel, which was developed as part of an educational project. Later, it merged with Stallman\u2019s GNU project that was UNIX-like but free. Read more Story behind the development of UNIX operating system ",
+            "date": "Answered June 27, 2019",
+            "views": "269",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jaco Bezuidenhout",
+                "href": "/profile/Jaco-Bezuidenhout-3"
+            },
+            "answer_text": "UNIX is very alive and well. I\u2019m an IBM AIX specialist since 1997 and believe me, a LOT of DBs and apps are very much alive on AIX O/Ses on IBM Power hardware in data centres around the world. It harnesses raw processing at the best of ways. Virtualization, Active memory expansion, Active memory sharing, High Availability clusters across remote data centers, Partition mobility (moving systems from 1 kit to another without users even logging out or the system rebooting) are some of the features. Its proprietary and it works in ways other O/Ses will hardly ever come close to. It is expensive but super RAS (Reliable, Available and Scalable). Linux has a big part in it too, so the answer to your question is NO. ",
+            "date": "Answered May 11, 2018",
+            "views": "39",
+            "upvotes": " View 26 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Lazy Engineer",
+                    "user_href": "/profile/Lazy-Engineer-3"
+                },
+                {
+                    "user_id": "John Owens",
+                    "user_href": "/profile/John-Owens-27"
+                },
+                {
+                    "user_id": "Barath Avinash",
+                    "user_href": "/profile/Barath-Avinash"
+                },
+                {
+                    "user_id": "Sucharitha",
+                    "user_href": "/profile/Sucharitha-4"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                },
+                {
+                    "user_id": "Rick Hansen",
+                    "user_href": "/profile/Rick-Hansen-13"
+                },
+                {
+                    "user_id": "Paul Sappington",
+                    "user_href": "/profile/Paul-Sappington"
+                },
+                {
+                    "user_id": "Ash Gbadamassi",
+                    "user_href": "/profile/Ash-Gbadamassi"
+                },
+                {
+                    "user_id": "Micha\u0142 Fita",
+                    "user_href": "/profile/Micha\u0142-Fita"
+                },
+                {
+                    "user_id": "Grahame Vowles",
+                    "user_href": "/profile/Grahame-Vowles"
+                },
+                {
+                    "user_id": "Eivind K. Nilsbakken",
+                    "user_href": "/profile/Eivind-K-Nilsbakken"
+                },
+                {
+                    "user_id": "Alvaro Urbaez",
+                    "user_href": "/profile/Alvaro-Urbaez"
+                },
+                {
+                    "user_id": "\u535a\u4ec1(Buo-ren) \u6797(Lin)",
+                    "user_href": "/profile/\u535a\u4ec1-Buo-ren-\u6797-Lin"
+                },
+                {
+                    "user_id": "Igor Guida",
+                    "user_href": "/profile/Igor-Guida"
+                },
+                {
+                    "user_id": "Kevin Range",
+                    "user_href": "/profile/Kevin-Range"
+                },
+                {
+                    "user_id": "Jeremy Toms",
+                    "user_href": "/profile/Jeremy-Toms-1"
+                },
+                {
+                    "user_id": "Paco Zamora",
+                    "user_href": "/profile/Paco-Zamora-1"
+                },
+                {
+                    "user_id": "Nguy\u1ec5n Nh\u00e2n",
+                    "user_href": "/profile/Nguy\u1ec5n-Nh\u00e2n-10"
+                },
+                {
+                    "user_id": "Maria Antoaneta",
+                    "user_href": "/profile/Maria-Antoaneta-1"
+                },
+                {
+                    "user_id": "Carlos Macasaet",
+                    "user_href": "/profile/Carlos-Macasaet"
+                },
+                {
+                    "user_id": "Corey Schulz",
+                    "user_href": "/profile/Corey-Schulz-2"
+                },
+                {
+                    "user_id": "Sanchit Sharma",
+                    "user_href": "/profile/Sanchit-Sharma-16"
+                },
+                {
+                    "user_id": "Frank Tominc",
+                    "user_href": "/profile/Frank-Tominc"
+                },
+                {
+                    "user_id": "Leandro Ariza",
+                    "user_href": "/profile/Leandro-Ariza"
+                },
+                {
+                    "user_id": "Brady McDermott",
+                    "user_href": "/profile/Brady-McDermott-2"
+                },
+                {
+                    "user_id": "David Brower",
+                    "user_href": "/profile/David-Brower"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Schwartz",
+                "href": "/profile/Michael-Schwartz-5"
+            },
+            "answer_text": "Unix is still around. If you use a Mac, you\u2019re using it. With Linux taking over the server space and Mac & Linux taking over the *nix desktop space, the demand for the other Unix flavors has fell as a share of the market, though. Many of the Unix variants were designed to run on specific vendor hardware, and that hardware is not in as much demand. Read more: https://arstechnica.com/information-technology/2013/10/linux-is-king-nix-of-the-data-center-but-unix-may-live-on-forever/ Linux is king *nix of the data center\u2014but Unix may live on forever ",
+            "date": "Answered March 20, 2018",
+            "views": "11",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "Adam Russell",
+                    "user_href": "/profile/Adam-Russell-35"
+                },
+                {
+                    "user_id": "Magnus Badel",
+                    "user_href": "/profile/Magnus-Badel"
+                },
+                {
+                    "user_id": "Dismas Sayre",
+                    "user_href": "/profile/Dismas-Sayre"
+                },
+                {
+                    "user_id": "Sam McCormack",
+                    "user_href": "/profile/Sam-McCormack-7"
+                },
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten"
+                },
+                {
+                    "user_id": "Kyle Harvey",
+                    "user_href": "/profile/Kyle-Harvey-25"
+                },
+                {
+                    "user_id": "Len Lattanzi",
+                    "user_href": "/profile/Len-Lattanzi"
+                },
+                {
+                    "user_id": "Mike Rasmusson",
+                    "user_href": "/profile/Mike-Rasmusson"
+                },
+                {
+                    "user_id": "Adrian Florin Lazar",
+                    "user_href": "/profile/Adrian-Florin-Lazar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Carmichael",
+                "href": "/profile/Steven-Carmichael-1"
+            },
+            "answer_text": "What Les Mikesell said. Sun made great SPARCstations, but broke many applications when migrating from BSD to Solaris, then SPARC technology ran out of gas. Apple managed their migration from PowerPC to Intel, but few of their customers were commercial workstation users and CAD experts. Meanwhile, Linux was a POSIX flavor native to x86, not a port compromised by lack of optimization. FWIW, I also suffered with MIPS IRIX, too many flavors of AIX and a couple of flavors of BSD on x86 before it became clear that Linux was more stable and better supported generic PC parts. Then, networking effects took over. ",
+            "date": "Updated October 18, 2020",
+            "views": "920",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Carsten May",
+                    "user_href": "/profile/Carsten-May"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Les Mikesell",
+                "href": "/profile/Les-Mikesell"
+            },
+            "answer_text": "Unix killed itself by forking into a lot of different flavors with no standardization across them. Look at any large open source project to see the effort that had to be put into making it compile and work across different versions that had no reason for the arbitrary differences they added. Or look at the horror that is autoconf. You couldn\u2019t design a better way to make something unusable if you tried. Linux just continued the tradition with its own flavors, but at least you aren\u2019t paying extra for the pain of using it. ",
+            "date": "Answered February 11, 2017",
+            "views": "16",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gorka Porteiro",
+                    "user_href": "/profile/Gorka-Porteiro"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Philippus",
+                "href": "/profile/Daniel-Philippus-1"
+            },
+            "answer_text": "Oh, they\u2019re still out there. The proprietary UNIXes don\u2019t seem to be around much, but, while they\u2019re not officially UNIX, the BSD family descends directly from UNIX, and the BSDs are definitely still in use, FreeBSD in particular for servers (~1% market share, including a couple of big names, I believe), and OpenBSD for high-security systems. Linux largely dominates, I think in large part due to having stepped in at a critical moment (when BSD was temporarily down) to build a large community and having held onto that advantage since. The BSDs have much smaller communities, which means less support, fewer developers, etc. ",
+            "date": "Answered February 11, 2017",
+            "views": "485",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gorka Porteiro",
+                    "user_href": "/profile/Gorka-Porteiro"
+                },
+                {
+                    "user_id": "Ryan Quinn",
+                    "user_href": "/profile/Ryan-Quinn-7"
+                },
+                {
+                    "user_id": "Max Fischer",
+                    "user_href": "/profile/Max-Fischer-10"
+                },
+                {
+                    "user_id": "Mikhail Gambarian",
+                    "user_href": "/profile/Mikhail-Gambarian-1"
+                },
+                {
+                    "user_id": "Jack Stevenson",
+                    "user_href": "/profile/Jack-Stevenson-44"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carsten May",
+                "href": "/profile/Carsten-May"
+            },
+            "answer_text": " I own one of these where it says linux instead of UNIX. I don\u2019t think UNIX is dead and there are few examples of linux distros that are actually certified UNIX same as mac OSX are a certified UNIX and people still buy macs. its a shame oracle took over sun solaris and killed open solaris but solaris is still alive at version 11 and BSD is doing just fine as well. ",
+            "date": "Answered January 17, 2020",
+            "views": "326",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Thomas Alexander Stephens",
+                    "user_href": "/profile/Thomas-Alexander-Stephens"
+                },
+                {
+                    "user_id": "Nathan Paul Jones",
+                    "user_href": "/profile/Nathan-Paul-Jones"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Frank Lazar",
+                "href": "/profile/Frank-Lazar"
+            },
+            "answer_text": "Actually, if you count MacOS X, UNIX has done where no one would imagine it would ever go. It became an OS that even Grandma can use. And that\u2019s not nearly true for Linux, despite some very good efforts by groups such as Ubuntu. And given that Mac OSX is about 10\u201314 percent of the user database for PC desktops, UNIX numerically is doing quite well. ",
+            "date": "Answered July 1, 2019",
+            "views": "271",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Louis Frayser",
+                    "user_href": "/profile/Louis-Frayser"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "\u00c9ric Nunya",
+                "href": "/profile/\u00c9ric-Nunya"
+            },
+            "answer_text": "Not at all, there\u2019s plenty of other Unix/Unix-like systems still in use today. Linux just happens to be the implementation of Unix which is the most widely used currently. This is because it\u2019s free of all the legal shackles which have been plaguing the world of Unix since at least the late 1970\u2019s. Which was Linus Torvalds\u2019s goal with starting this project, to create a free and open-source Unix implementation - and he pretty much succeeded at that, as you can see. ",
+            "date": "Answered December 7, 2019",
+            "views": "132",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jon Obermark",
+                "href": "/profile/Jon-Obermark-2"
+            },
+            "answer_text": "Linux and MacOS are both Unix operating systems, and they are two of the most popular in the world. Android is Linux which is Unix, so if you count cell phones, Unix is the most popular genre of operating systems around. They just all have more specific names now than <whatever-vendor> Unix. The reason it appears no one talks about Unix is that variations between varieties of Unix have increased to the point that you want to call the separate versions by their more proper names. That does not stop them from sharing an important core of functionality that will always be Unix. ",
+            "date": "Answered March 27, 2020",
+            "views": "84",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jim Dennis",
+                "href": "/profile/Jim-Dennis-1"
+            },
+            "answer_text": "How do you think \u201cuse of the Unix operating system\u201d was defined prior to Linux and how do you think it\u2019s defined now? How do you think Linux\u2019 influence compares to that or FreeBSD (and it\u2019s various derivatives). I don\u2019t think Linux redefined Unix. I think clone() vs, fork() redefined the process/thread distinction. I think Linus\u2019 tmpfs (filesystem in the cache) vs RAM disk (memory block device driver) redefined ephemeral filesystem management. I think seccomp-BPF has redefined the concept of \u201cBerkeley Packet Filters.\u201d I think Linux kernel adaptations for operating the bare metal and hosting Linux guests are redefining the concept of \u201cthe kernel\u201d and Linux namespaces have defined a unique concept of containment, way beyond chroot(). I think Linux with its initramfs has enables the concept of unikernel applications to be practical. But it remains to be seen if they are viable in the market, I think Linux\u2019 complex thicket of networking features, including various kernel bypass networking options (Why we use the Linux kernel's TCP stack) has utterly redefined the relationship of Unix to networking. But I\u2019m not sure I understand networking well enough to truly appreciate the results. ",
+            "date": "Updated July 31, 2019",
+            "views": "585",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chimaroke Okwara",
+                    "user_href": "/profile/Chimaroke-Okwara"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Brian Gaudenti",
+                "href": "/profile/Brian-Gaudenti"
+            },
+            "answer_text": "Linux: Started as a user\u2019s OS, moved to the server room UNIX: Started in the server room, moved to user devices The largest consumer tech company (and largest company in general) has put billions of UNIX devices in the hands of the general public without them really noticing. Meanwhile Linux went from a hobbyist\u2019s OS to ruling datacenters around the world. ",
+            "date": "Answered September 19, 2018",
+            "views": "398",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vivek Raj",
+                    "user_href": "/profile/Vivek-Raj-101"
+                },
+                {
+                    "user_id": "Surya Teja Parnampedu",
+                    "user_href": "/profile/Surya-Teja-Parnampedu"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                },
+                {
+                    "user_id": "Sagar Chhatrala",
+                    "user_href": "/profile/Sagar-Chhatrala"
+                },
+                {
+                    "user_id": "Reinier Post",
+                    "user_href": "/profile/Reinier-Post"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Harsh Panchal",
+                "href": "/profile/Harsh-Panchal-129"
+            },
+            "answer_text": "No, Unix is the base operations system and without that we cannot do everyday stuff. UNIX has advantages itself and Linux has not killed Unix it has expanded its use in the name of Linux. It's the backbone of some of the worlds largest data center and it's been used in many other purposes. See this below article: UNIX Recap UNIX Recap \u2013 Harsh Panchal \u2013 Medium #UNIX #UnixCommunity ",
+            "date": "Answered August 11, 2018",
+            "views": "386",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Barzia Tehrani",
+                "href": "/profile/Barzia-Tehrani"
+            },
+            "answer_text": "Following large number of variations and clones, the original UNIX operating system turned into an OS specification. Today, there are many Unix operating systems out there, even though only few are certified by the Open Group. Note that just recently, macOS Sierra received Unix certification. I think it is safe to argue Linux is an uncertified Unix. ",
+            "date": "Updated February 24, 2017",
+            "views": "16",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gorka Porteiro",
+                    "user_href": "/profile/Gorka-Porteiro"
+                },
+                {
+                    "user_id": "Naga Nithin Manne",
+                    "user_href": "/profile/Naga-Nithin-Manne"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Brower",
+                "href": "/profile/David-Brower"
+            },
+            "answer_text": "It pretty much killed the market for proprietary UNIX systems derived from the original AT&T code-base. Of the 80s/90s UNIX machine vendors, only IBM is really trying to keep AIX on Power Series afloat. Hardly anybody uses the free BSD derivitives. Everybody else is using Linux. ",
+            "date": "Answered June 12, 2019",
+            "views": "91",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sinicha Jeftic",
+                    "user_href": "/profile/Sinicha-Jeftic"
+                },
+                {
+                    "user_id": "Juhan Leemet",
+                    "user_href": "/profile/Juhan-Leemet"
+                },
+                {
+                    "user_id": "Thomas Alexander Stephens",
+                    "user_href": "/profile/Thomas-Alexander-Stephens"
+                },
+                {
+                    "user_id": "Henrique Flach Latorre Moreno",
+                    "user_href": "/profile/Henrique-Flach-Latorre-Moreno"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vineet Billorey",
+                "href": "/profile/Vineet-Billorey"
+            },
+            "answer_text": "Unix(written in Assembly+C) was indeed a very powerful OS but it was not Open Source. Linus Torvalds rewrote its kernel in C/C++, named it Linux, and put it Open Source. Hence it became more and more popular and the many tools and libraries were written for using it. ",
+            "date": "Answered December 9, 2017",
+            "views": "351",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jim Murphy",
+                    "user_href": "/profile/Jim-Murphy-49"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Madi Connors",
+                "href": "/profile/Madi-Connors"
+            },
+            "answer_text": "Oh, hello, here I am on my MacBook Pro. MacOS is certified as a Unix 03 compliant system. There\u2019s a different answer here though, inasmuch as you\u2019ll sometimes see a distinction between branded Unix and genetic Unix. Linux is the latter and Dennis Ritchie of all people acknowledged it as such; pretty authoritative if you ask me. Unix lives on in part because of Linux, not despite it. ",
+            "date": "Updated September 19, 2019",
+            "views": "156",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "In no way which I can think of. The relevant redefinition was not in the use of such an OS, but in the way the source code was made available to anyone for further development. The code improved as the result of much donated effort and many different sorts of useful incarnations arose. See open source software. The relevant license for Linux is the GPL. ",
+            "date": "Answered June 10, 2019",
+            "views": "193",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ben Midland",
+                "href": "/profile/Ben-Midland"
+            },
+            "answer_text": "Windows NT never killed UNIX. UNIX is far more stable than NT. The problem with UNIX is there were too many different holders of the AT&T license. LINUX is open source, while for the use of UNIX big money has to be paid. ",
+            "date": "Answered January 23, 2018",
+            "views": "187",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Moser",
+                    "user_href": "/profile/Thomas-Moser-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alan Dike",
+                "href": "/profile/Alan-Dike"
+            },
+            "answer_text": "They\u2019re very much in use. BSD is a genuine Unix\u2026 it\u2019s used very frequently in firewalls and networking gear. OSX is a Unix as well.. Unix is far from dead.. and honestly it\u2019s picking up a larger share as time goes on and mac\u2019s get more popular.. ",
+            "date": "Answered September 22, 2020",
+            "views": "37",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Frank Greco",
+                "href": "/profile/Frank-Greco-5"
+            },
+            "answer_text": "Linux is Unix\u2026 Anyone that says otherwise is just fooling themselves. Yes, it doesn\u2019t have all the original AT&T code or even the Minix code, but it was inspired by Ken Thompson\u2019s original OS architecture. I\u2019m a fan of Linux (but not for multimedia) but I am a bigger fan of the ground-breaking work that the team at BTL did post-Multics. ",
+            "date": "Answered July 29, 2019",
+            "views": "135",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ken Collins",
+                "href": "/profile/Ken-Collins-64"
+            },
+            "answer_text": "UNIX is alive and well, just not on consumer computers\u2014except Macs. macOS is certified UNIX, according to OpenBrand, the certification authority for UNIX. ",
+            "date": "Answered March 26, 2020",
+            "views": "41",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Daiyu Hurst",
+                "href": "/profile/Daiyu-Hurst"
+            },
+            "answer_text": "It\u2019s so ironic that Unix\u2019s genesis was due to the bloat of Multics. Now Unix et. al. is just as bloated. Now, Multics is the streamlined OS. ",
+            "date": "Answered February 20, 2017",
+            "views": "845",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dmitri Koulikoff",
+                "href": "/profile/Dmitri-Koulikoff"
+            },
+            "answer_text": "See the project The GNU Operating System and the Free Software Movement ",
+            "date": "Answered June 10, 2019",
+            "views": "73",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Abhiram Shibu",
+                "href": "/profile/Abhiram-Shibu"
+            },
+            "answer_text": "A widely used unix is Mac OS ",
+            "date": "Answered December 14, 2019",
+            "views": "29",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "title": "How to solve these problems dealing with probability - Quora",
+    "tags": [
+        "Homework Question",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Charles Slade",
+                "href": "/profile/Charles-Slade"
+            },
+            "answer_text": "I don't usually provide full solutions to homework questions, but I'll give some hints: 1.  The third problem is the simplest. If you're having a hard time with that, you should review the material about how to combine probabilities... when you multiply them, when you add them, etc.  You should also review combinations and permutations.  I find it easy not to think about what the combination and permutation formulas are at first, just understand the concepts.  When you are doing your homework or taking a test and a problem involves one of these concepts, I often write C(n,m) instead of the \"n chose m\" formula, just to make sure my logic is clear.  Only after that do I replace it with the formula and start doing algebraic manipulations. So, for this problem, it's as easy as writing down:  (a) how many ways are there to chose 8 cards from a deck of 52?(b) What is the probability that the first card is a king?  The second? The third?  Etc. Then you combine those probabilities, giving careful consideration to whether these questions are independent or not. 2.  Consider the classic version of the Monty Hall problem, in which Dan picks a box, Monty shows an empty box, and then asks Dan if he wants to switch.  The hint is to organize cases:  case 1, Dan's initial guess was a winner.  (What's the probability of this case?)  Case 2, Dan's initial guess was a loser.  (What's the probability of this case?)  Also note that if Dan switches, he wins if and only if his initial guess was wrong. 3.  For the birthday problem, first note that with 23 people there are Chose(23,2) = 253 pairs.  It's a little easier to find the probability that two people don't share the same birthday (call that probability P'), and then the probability P that two people do share the same birthday is P = 1-P'.  (I bet that's what the hint is.) In any case, the probability that the first guy doesn't share the same birthday as anyone before him is 1... he's the first guy.  Then the probability that the second guy doesn't share a birthday with anyone before him is 364/365.  After all, he only has to miss the first guy's birthday.  For the third guy, it's 363 / 365.  And so on down the list... if you had ten guys in a room, you'd have something like P' = 1*(364/365)*(363/365)*...*(356/365).  Should be straightforward to generalize from there. ",
+            "date": "Answered April 14, 2015",
+            "views": "567",
+            "upvotes": "0"
+        }
+    ]
+}

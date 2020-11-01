@@ -1,0 +1,98 @@
+{
+    "title": "Can you explain the Fibonacci sequence in Python? - Quora",
+    "tags": [
+        "Fibonacci Numbers",
+        "Python (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Overland",
+                "href": "/profile/Brian-Overland-1"
+            },
+            "answer_text": "Edit: i didn\u2019t see your detailed explanation the first time, so let me edit my answer to explain the code. Yes, it will work. First of all, it is using i as a simple loop variable rather than using the for and range keywords. While this is inefficient, it will work just fine. The while loop is running 2 to n (where n is input to the function) and then terminating at n. Then what your code is doing is building a list beginning with 0, 1: [0, 1] To get the next member, it is adding the last two elements of this list together. In this case, you\u2019d get 2, and that number is appended to the list. [0, 1, 2] Then the operation is repeated. Adding the last two elements of the list in this case yields 3. Then that is added to the list: [0, 1, 2, 3] Python lists are extremely flexible. You can append to them as often as you like without worrying about running out of space. The next element, by the way, is 2+3=5: [0, 1, 2, 3, 5] The line of code that does the appending is: terms.append(terms[i-1] + terms[i-2])\u00a0Because i starts out as 2, the length of the list, and is incremented by 1 each time, this should work. Here\u2019s the rest of my answer\u2026. The Fibonacci squence provides one of the most impressive demonstrations of Python programming power. The first two numbers in the sequnce are 1 and 1, and these can be represented by two variables, a and b, both set to 1: a = b = 1\u00a0The next number in the sequence is the total of the two numbers immediately before it; this continues indefinitely. We can set up a loop that prints Fibonacci numbers for as long as we like. while a < 200:        # Print until a exceeds 200\u00a0    a, b = a + b, a\u00a0    print(a)\u00a0The statement \u201ca, b = a + b, a\u201d has the effect of assigning from the tuple (a + b, a) to the tuple (a, b), which means that a + b is assigned to a and b is assigned to a simultaneously, in effect. Such an operation would normally require a series of steps, because the values of a, b, and a+b are inter-depedent. Therefore, you\u2019d normally need a temporary variable: temp = a\u00a0a = a + b\u00a0b = temp\u00a0During each iteration of the loop, the newest value, a, is computed from the old values of a and b, in which a is always the highest value and b is always the second-highest value. Then b is computed from the old value of a, so that the operation can be repeated. Therefore, after 1 and 1, the next values in the sequence are: 2 3 5 8 13 21 34 55 89 144 233\u00a0",
+            "date": "Updated March 1, 2017",
+            "views": "24",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dominic Shum",
+                    "user_href": "/profile/Dominic-Shum"
+                },
+                {
+                    "user_id": "Geoffrey Wade",
+                    "user_href": "/profile/Geoffrey-Wade-1"
+                },
+                {
+                    "user_id": "Ramnath Kamat",
+                    "user_href": "/profile/Ramnath-Kamat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alec Felix",
+                "href": "/profile/Alec-Felix"
+            },
+            "answer_text": "The Fibonacci sequence is a sequence where the next number is found by adding the two numbers before it. For example counting to 5: 0, 1, 1, 2, 3, 5 Taking a look at the code: The array i starts with the first 2 numbers in the sequence 0 and 1. The parameter n is the number in the sequence you want to count to. In the while loop each time the program is adding the last 2 numbers in terms and then adding the result onto the array. if n is 4 First go into the loop and add the number in terms[1] + terms[0] which is 0 + 1 = 1. So 1 is added to position 2 in the array and i increments to 3 the array is now [0,1,1] Next round in the loop the numbers in terms[3\u20131] + terms[3\u20132] are added which is 1+1 = 2 and i is incremented to 4 the array is now [0,1,1,2] now since i is greater than n we exit the loop and the array terms is returned. Hope this helps ",
+            "date": "Answered February 25, 2017",
+            "views": "873",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mohamd Selowe",
+                    "user_href": "/profile/Mohamd-Selowe"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Geoffrey Wade",
+                "href": "/profile/Geoffrey-Wade-1"
+            },
+            "answer_text": "It\u2019s pretty simple as I recall. The sequence begins at either 0 or 1, and the next number in the sequence is 1. The current sum value is then added to the previous in the sequence. So say you wanted to find the Fibonacci sequence of n=13, with a starting value of n=1. The sequence would go something like this: #! /usr/bin/python\u00a0# calculate the fibonacci number\u00a0# author: GeoWade\u00a0def fib():\u00a0    # fib(13) = 1,1,2,3,5,8,13,21,34,55,89,144,233\u00a0    # create a temp variable to hold the new value\u00a0    newTmp = 0\u00a0\u00a0    # create a variable to increment the first two index \u00a0    # positions\u00a0    nowTmp = 1\u00a0\u00a0    # create an integer list to hold each member of the sequence\u00a0    # as it's summated\u00a0    fiblst = []\u00a0\u00a0    # iterate a for loop 13 times\u00a0    for x in range(0,13):\u00a0        # The first two iterations: 0, 1 we have no use for since\u00a0        # we are starting at one. \u00a0    \tif (x < 2):\u00a0          fiblst.append(nowTmp)\u00a0\u00a0        # when x >= 2, The previous index position of fiblst will  \u00a0        # be added to the current\u00a0        else:\u00a0          newTmp += fiblst[x-1]+fiblst[x-2]\u00a0          fiblst.append(newTmp)\u00a0\u00a0        newTmp = 0\u00a0\u00a0    return fiblst\u00a0\u00a0def prntFib():\u00a0\u00a0    # functional abstraction and object creation (a list)\u00a0    lstPrtFib = fib()\u00a0\u00a0    # the size of the list\u00a0    lstsiz = len(lstPrtFib)\u00a0\u00a0    print 'The Fibonacci number at n=13: ', lstPrtFib[lstsiz-1]\u00a0\u00a0    # delete the n = 13.\u00a0    del lstPrtFib[lstsiz-1]\u00a0\u00a0    # For the sake of it print the previous elements in the\u00a0    # fibonacci sequence.\u00a0\u00a0    # A temporary string variable for the \u00a0    # concatenation of the elements of the sequence into a string\u00a0    holdStr = ''\u00a0    numb = 0\u00a0    # iterate over the original list switch it up a little\u00a0    # you don't have to do back to back for-in-range loops\u00a0    for line in lstPrtFib:\u00a0        if (numb < 1):\u00a0            holdStr += str(line) \u00a0        else:\u00a0            holdStr += ', ' + str(line)\u00a0        numb += 1\u00a0    print 'The previous elements in the sequence are: ', holdStr\u00a0def main():\u00a0    # call the two previously created functions\u00a0    fib()\u00a0    prntFib()\u00a0main()\u00a0\u00a0# output:\u00a0# The Fibonacci number at n=13:  233\u00a0# The previous elements in the sequence are:  1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144\u00a0Here you go, pretty sloppy. Another way of doing it would have been a recursive function. I will post a recursive program to perform the computation in a bit. \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 EDITING THIS NOW: I decided to code two different Recursive Fibonacci programs as examples. The first program that will be shown below, is very dangerous in automaton type fashion to the machine in my opinion. None the less: # This fibrec.py program is design and created \u00a0# to compute the nth Fibonacci sequence using RECURSION.\u00a0# author:GeoWade \u00a0\u00a0def fib_runner(fnum):\u00a0    # if fnum = 0, the sequence is over\u00a0    if fnum==0: \u00a0        return 0       \u00a0    # every possible Fn over 2 would require the recursive\u00a0    # summation of the current value - the previous value.\u00a0    elif fnum > 2:\u00a0        return fib_runner(fnum-1)+fib_runner(fnum-2)\u00a0    else:\u00a0        return 1\u00a0def main():\u00a0    \u00a0    # prompt the user for a desired fibonacci number\u00a0    fibnum = input('Please a Fibonacci number : ')\u00a0    for x in range(0,1):\u00a0        print fib_runner(fibnum)\u00a0main()\u00a0# output:\u00a0# Please a Fibonacci number : 14\u00a0# 377\u00a0The program is more robust, and utilizes more programming techniques with python, yet it\u2019s still recursive # This fibrec1.py program is designed and \u00a0# created to perform the computation\u00a0# the Fibonacci sequence using RECURSION. \u00a0# The output_Fib() function calls \u00a0# fib_prompt_user(), assigns the returned value to an object. \u00a0# The output_Fib() function, then calls fib_call() function and \u00a0# passes fib_call() the argument of w, which is the value the user\u00a0# inputted from prompt.\u00a0# NOTE: The communication, and calls of the functions are absolute!\u00a0# For the functions to have any other interaction \u00a0# would at the least cause recursive calls to fib_prompt_user(),\u00a0# forcing the user to enter their input more than once; or the \u00a0# possibility of infinite recursion.\u00a0# main() > output_Fib() > w=fib_prompt_user(), fib_call(w) > \u00a0# fib_runner()\u00a0\u00a0# author:GeoWade\u00a0\u00a0def fib_prompt_user():\u00a0    # ask the user for an input\u00a0    fibnum = input('Please enter a Fibonacci number: ')\u00a0\u00a0    # increment the user's input by one in order to set the \u00a0    # high limit of the loops constraint at the next \u00a0    # value above the desired Fn.\u00a0    fibnum1 = fibnum + 1\u00a0\u00a0    # return the value\u00a0    return fibnum1\u00a0\u00a0# The recursive function\u00a0def fib_runner(fnum):\u00a0    if fnum==0:\u00a0        return 0\u00a0    elif fnum > 2:\u00a0        return fib_runner(fnum-1)+fib_runner(fnum-2)\u00a0    else:\u00a0        return 1\u00a0\u00a0def fib_call(w):\u00a0    # create an object and initialize it with the value passed\u00a0    # as an argument. \u00a0    numfib = w\u00a0\u00a0    # create a list to hold the values of the sequence\u00a0    fiblst = []\u00a0\u00a0    # Iterate the recursive function, and pass the argument\u00a0    # of the increment variable to the function.\u00a0    # Store the returned value in the list\u00a0    for x in range(1,numfib):\u00a0        # store the returned value in a temp variable\u00a0        fibtstr = fib_runner(x)\u00a0        fiblst.append(fibtstr)\u00a0\u00a0    # append the desired Fibonacci number to the end of the list\u00a0    fiblst.append(numfib)\u00a0    return fiblst\u00a0\u00a0def output_Fib():\u00a0    # create an object and assign the value \u00a0    # returned by fib_prompt_user()\u00a0    w = fib_prompt_user()\u00a0\u00a0    # pass fib_call() the value stored in the \u00a0    # argument to fib_call()\u00a0    # and create a list object and assign the returned value \u00a0    # from fib_call function\u00a0    fibOut = fib_call(w)\u00a0\u00a0    # a concatenation hold variable used to output \u00a0    # the whole sequence.\u00a0    holdStr = ''\u00a0\u00a0    fibsiz = len(fibOut)\u00a0\u00a0    # NOTE: Remember we incremented the desired Fibonacci number \u00a0    # so that for in range loop would have an upper constraint \u00a0    # of +1 over the desired\u00a0\u00a0    # Fibonacci number, hence: fibOut[fibsiz-1]-1\u00a0    print 'The value of the Fn:',(fibOut[fibsiz-1]-1), 'is:', fibOut[fibsiz-2]\u00a0\u00a0    # Delete the desired Fibonacci number from the end of the \u00a0    # list. A.K.A. the users initial entry\u00a0    del fibOut[fibsiz-1]\u00a0\u00a0    # Delete the value produced in the sequence from the input of\u00a0    # desired Fibonacci number from the end of the list\u00a0    del fibOut[fibsiz-2]\u00a0\u00a0    # an increment variable to keep track of the count\u00a0    # with in the while (the test/terminating condition)\u00a0    tstnum = 0\u00a0\u00a0    # a while loop to iterate over the list\u00a0    while (tstnum < fibsiz-2):\u00a0        if (tstnum < 1):\u00a0            valhold = fibOut[tstnum]\u00a0            holdStr += str(valhold)  \u00a0        else:\u00a0            valhold = fibOut[tstnum]\u00a0            holdStr += ', ' + str(valhold)\u00a0        tstnum += 1\u00a0\u00a0    print 'The sequence up until the desired Fn number is:\\n', holdStr\u00a0\u00a0def main():\u00a0    # call the output_Fib() function\u00a0    output_Fib()\u00a0main()\u00a0\u00a0# Please enter a Fibonacci number: 14\u00a0# The value of the Fn: 14 is: 377\u00a0# The sequence up until the desired Fn number is:\u00a0# 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233\u00a0Hope this helps ",
+            "date": "Updated February 25, 2017",
+            "views": "17",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Juha Nurmonen",
+                    "user_href": "/profile/Juha-Nurmonen"
+                },
+                {
+                    "user_id": "Dominic Shum",
+                    "user_href": "/profile/Dominic-Shum"
+                },
+                {
+                    "user_id": "Jack Pock",
+                    "user_href": "/profile/Jack-Pock"
+                },
+                {
+                    "user_id": "Mohamd Selowe",
+                    "user_href": "/profile/Mohamd-Selowe"
+                },
+                {
+                    "user_id": "Aaron Meese",
+                    "user_href": "/profile/Aaron-Meese-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Martin O'Shea",
+                "href": "/profile/Martin-OShea-1"
+            },
+            "answer_text": "Have a look at 5 Ways of Fibonacci in Python and also Python Program to Print the Fibonacci sequence which provides a sample program which can be set to accept user input. ",
+            "date": "Answered February 23, 2017",
+            "views": "616",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "C. Oliver Godby",
+                    "user_href": "/profile/C-Oliver-Godby"
+                }
+            ]
+        }
+    ]
+}

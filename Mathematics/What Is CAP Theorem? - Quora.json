@@ -1,0 +1,104 @@
+{
+    "title": "What Is CAP Theorem? - Quora",
+    "tags": [
+        "CAP Theorem"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Siddharth Teotia",
+                "href": "/profile/Siddharth-Teotia"
+            },
+            "answer_text": "This is purely my notion and understanding of the CAP theorem. Since the time it came out initially, it has had a fair evolution. People have identified some flaws, caveats, and as far as I know, there is no single stamped explanation of the theorem. Below is my attempt to explain it by talking about some distributed system concepts that surround the theorem. The CAP theorem by Eric Brewer _originally_ states that any distributed system with shared data is likely to see tension between the following systemic properties: Consistency - All the replicas are in sync and maintain the same state of any given object at any given point of time. Also known as sequential consistency.Availability - A request will eventually complete successfully. A read/write request on any node of the system will never be rejected as long as the particular node is up and running.Network Partition Tolerance - When the network connecting the nodes goes down, the system will still continue to operate even though some/all nodes can longer communicate with each other. Alternately, the theorem states that it is possible for the system to satisfy any two but not all of the properties mentioned above. Let's say the system comprises of 2 nodes interconnected with network.  If a data item is stored only at node N1, then that node will  always have the consistent state of that data as all the updates  are  always serialized on the same node. So, we achieve consistency \"C\". Suppose, the data at node N1 is replicated at node N2, and both the replicas are always in sync maintaining consistent copies of data at any point of time. This implies that an update happening at node N1 will atomically propagate to node N2 and vice-versa. So, a read/get request for a data item on any of the replicas (N1 or N2) will never return stale or outdated copy of the data. Our system again achieves consistency \"C\". Now that we briefly understand  \"C\" of the CAP theorem, let's assume that our distributed system of two nodes N1 and N2 is designed and implemented in a way where data is replicated on both the nodes, and the system maintains consistent copy of the data.  Having said this, let's say that the network connecting both the nodes goes down (network gets partitioned), but both nodes N1 and N2 are up and running fine.  How will this impact the overall operations of the system ? The updates happening at node N1 can no longer reach node N2 and vice-versa. If now : 1. Both the replicas continue to service update requests for a data item, and because the system is network partitioned, these updates can no longer be propagated to the other replica. Thus both the replicas diverge, and end up maintaining conflicting or inconsistent copies of the data item. So, the system no longer possesses consistency (\"C\") property. Here we chose availability (\"A\"), and continued to service operations in a disconnected environment. In other words, we preferred availability \"A\" over consistency \"C\", and tolerated network partitions \"P\". Hence, the system provides \"A\" and \"P\" properties from the CAP theorem. OR 2. One of the replicas (let's say N2) stops servicing read/write requests on detecting that network connecting the system got partitioned. This means that system treats node N1 as not available any more, and any request on this node will be rejected. In this case, we preserve the consistency property as all the updates will be serialized only at node N1, and there is no possibility of replica divergence since the other replica is not going to service any request. Note that N2 should not service even a read/get request as it will end up returning the old/stale copy of the data. Hence, this kind of system provides consistency \"C\" at the cost of availability \"A\", and as before we tolerate network partitions \"P\". OR  3. Both the replicas N1 and N2 stop servicing update requests, but continue to provide read/get operations. In this case, the system is available for read operations, but not for updates. Here again we preserve the consistency \"C\" at the cost of availability \"A\", and tolerate network partitions \"P\".  In all the points above, it was a choice between \"C\" and \"A\". From the literature I have read and understood, I feel that it is almost always the case that the trade-off is between \"C\" and \"A\". Partition tolerance \"P\" is not really a choice. I consider it as a baseline property used to trade-off between consistency and availability, and accordingly design the system. If the network gets partitioned, I don't know of a way where the system can be both consistent \"C\" and available \"A\".  \"The replicas in the system are unable to communicate with each other, but the system is strongly consistent which requires the replicas to propagate changes to each other via the network, but this can't happen as the network is partitioned\".   Hence, strong consistency (C) and availability (A) are not likely to co-exist together. The above discussion also implies that \"C\", \"A\", and \"P\" can't be together achieved in the  distributed system with shared data, and this is in accordance with the  theorem.  The notion of consistency has also evolved leading to systems with weak or eventually consistent models. For example, in DynamoDB, the updates are allowed to happen on the replicas in the event of network failure. Background replica synchronization is done using Merkle trees to restore the consistency between the data maintained at the replicas. This means that updates eventually propagate to all the replicas and hence the system is \"eventually consistent\". It effectively means that all three  properties \"C\", \"A\", and \"P\" are provided by the data store. However, the notion and definition of \"C\" is very different. ",
+            "date": "Answered June 23, 2015",
+            "views": "149",
+            "upvotes": " View 54 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Madhu Neupane",
+                    "user_href": "/profile/Madhu-Neupane-7"
+                },
+                {
+                    "user_id": "Ali Nasserzadeh",
+                    "user_href": "/profile/Ali-Nasserzadeh"
+                },
+                {
+                    "user_id": "Cyrus Mehta",
+                    "user_href": "/profile/Cyrus-Mehta-8"
+                },
+                {
+                    "user_id": "Canberk UYSAL",
+                    "user_href": "/profile/Canberk-UYSAL-1"
+                },
+                {
+                    "user_id": "Pranjal Gupta",
+                    "user_href": "/profile/Pranjal-Gupta-2"
+                },
+                {
+                    "user_id": "Amrit Bhardwaj",
+                    "user_href": "/profile/Amrit-Bhardwaj"
+                },
+                {
+                    "user_id": "Parth",
+                    "user_href": "/profile/Parth-87"
+                },
+                {
+                    "user_id": "Abc",
+                    "user_href": "/profile/Abc-524"
+                },
+                {
+                    "user_id": "Sridhar Chandrashekar",
+                    "user_href": "/profile/Sridhar-Chandrashekar-1"
+                },
+                {
+                    "user_id": "David Decanio",
+                    "user_href": "/profile/David-Decanio"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amrith Kumar",
+                "href": "/profile/Amrith-Kumar"
+            },
+            "answer_text": "In his keynote at PODC 2000, Eric Brewer made the case that of the three  attributes, Consistency, Availability, and Partition Tolerance, you can  have at most two. The complete presentation is available for download  at http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf. Nothing in Eric Brewer\u2019s original comments seem to indicate that you  have to entirely forsake the unlucky attribute. On the other hand, I  believe that the sentiment is that one cannot \u201cguarantee\u201d all three  attributes, potentially weakening one of them. The three attributes, Consistency, Availability and Partition Tolerance, are not binary things. In practical large systems, all of these are in fact continuous variables. A more detailed treatment of this subject can be found at http://www.parelastic.com/blog/analysis-cap-theorem. In practice, a distributed service can either be perfectly consistent implying that all nodes will return the same answer to a question. A system that is not consistent may be characterized based on the maximum latency in the data it returns. Let us refer to this as Tc the maximum amount of inconsistency that the system will suffer. Further, a distributed service that is perfectly available will always respond immediately to any question posed to it. A system that is not perfectly available may take some time to respond to a question and let us refer to this as Ta, the maximum response time to any question. Finally, the network on which the system operates may be a perfect network where there are never any network partitions, or it may be a practical network where there may be times when one node is unable to communicate with another node. Let us designate Tp as the maximum amount of time for which any node in the system is unable to talk to some other node in the system. One can prove that Tc + Ta >= Tp (the complete mathematical proof is available here http://www.parelastic.com/blog/analysis-cap-theorem). In a system that is perfectly consistent, Tc = 0.In a system that is perfectly available, Ta = 0In a system with a network that is perfect (never partitioned), Tp = 0 Conversely, a system that is partition tolerant has a non-zero value of Tp. For a system to be both consistent and available, you would have  0 + 0 > 0 which is a contradiction. That is in essence the CAP theorem. However, the equation provided above gives you a good way to quantify, in a practical system, what the CAP theorem can tell you. If you know from the design of your network that you can recover from any network partition in 5 seconds, then you can conclude that on your system,  Tc + Ta >= 5.  In other words, your system could respond immediately and may give you a response based on data no more than 5 seconds old, or it may respond in 5 seconds and give you an answer based on consistent data, or something inbetween. ",
+            "date": "Answered July 2, 2012",
+            "views": "78",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Srishtik Dutta",
+                    "user_href": "/profile/Srishtik-Dutta"
+                },
+                {
+                    "user_id": "Mehmet Yildiz",
+                    "user_href": "/profile/Mehmet-Yildiz-5"
+                },
+                {
+                    "user_id": "Onur Gun",
+                    "user_href": "/profile/Onur-Gun"
+                },
+                {
+                    "user_id": "John Eremic",
+                    "user_href": "/profile/John-Eremic-1"
+                },
+                {
+                    "user_id": "Ebby Wiselyn",
+                    "user_href": "/profile/Ebby-Wiselyn"
+                },
+                {
+                    "user_id": "Lintao Cui",
+                    "user_href": "/profile/Lintao-Cui"
+                },
+                {
+                    "user_id": "Yang Yi",
+                    "user_href": "/profile/Yang-Yi-6"
+                },
+                {
+                    "user_id": "Vijay Sathish",
+                    "user_href": "/profile/Vijay-Sathish"
+                }
+            ]
+        }
+    ]
+}

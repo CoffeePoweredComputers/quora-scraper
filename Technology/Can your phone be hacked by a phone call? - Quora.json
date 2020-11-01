@@ -1,0 +1,397 @@
+{
+    "title": "Can your phone be hacked by a phone call? - Quora",
+    "tags": [
+        "Telephone Calls",
+        "Computer Hacking (security)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Crowley",
+                "href": "/profile/Paul-Crowley-26"
+            },
+            "answer_text": "Well, it is incredibly unlikely. First off, the entire \u201cphone call\u201d portion of a smartphone is very walled off from the phone\u2019s main processor. This is to prevent people doing things with smartphones which disrupt the cellular network. It also eliminates exposure from some kind of potential exploit affecting the phone via a cellular call. So nothing is going to happen there. As far as using a SIP (or other application) on your phone instead of a cellular call, there is a potential exposure there. If someone found an exploit in a particular app and crafted a data stream to take advantage of this, I suppose something bad could happen. However, so far the worst that anyone has been able to do with cell phone exploits has been to crash the phone. As far as I know there has never been an exploit which resulted, even as part of a research project, in actual foreign machine code being given to a phone and have it executed. So the phone crashes? Big deal. So in order to \u201chack\u201d your phone via a phone call someone would need to find an exploit and write a lot of code to (a) send machine code to your phone and have it executed, (b) create a data stream for this that could pass through multiple intermediaries to reach your phone, and (c) figure out how to send this data stream to your phone. Aside from this, just being able to execute foreign code on your phone is meaningless - what any self-respecting hacker would need to do is gain privileged access on the phone, which means another sort of exploit that provides privilege escalation. Once you are on the phone, this isn\u2019t that hard to do as jailbreak and rooting apps show us. But all of this has to happen together. Not saying it is impossible, but it is very difficult and so far nobody has ever done it. So far, nobody has even come up with something you send to a current phone which crashes it. The last exploit like this was around 2012 I believe. So is there anything to worry about? If you are using regular cellular calling, no, nothing at all. Not even for the very paranoid. If you are using a different sort of Internet calling program, is there much to worry about? No. We are talking about a hurdle that is nearly impossible to overcome right now. ",
+            "date": "Answered August 31, 2018",
+            "views": "142",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shanu Ckhouse",
+                    "user_href": "/profile/Shanu-Ckhouse"
+                },
+                {
+                    "user_id": "Bobbi Jo Hochstetler",
+                    "user_href": "/profile/Bobbi-Jo-Hochstetler"
+                },
+                {
+                    "user_id": "Lukas Pak",
+                    "user_href": "/profile/Lukas-Pak"
+                },
+                {
+                    "user_id": "Eva Marion",
+                    "user_href": "/profile/Eva-Marion-1"
+                },
+                {
+                    "user_id": "Vadim Lioubimov",
+                    "user_href": "/profile/Vadim-Lioubimov"
+                },
+                {
+                    "user_id": "The Whyway",
+                    "user_href": "/profile/The-Whyway"
+                },
+                {
+                    "user_id": "Arbab Khan",
+                    "user_href": "/profile/Arbab-Khan-34"
+                },
+                {
+                    "user_id": "Kunj Soam",
+                    "user_href": "/profile/Kunj-Soam"
+                },
+                {
+                    "user_id": "Benson Tan",
+                    "user_href": "/profile/Benson-Tan-19"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Conrad",
+                "href": "/profile/Steven-Conrad-9"
+            },
+            "answer_text": "Strange that you asked me this question, in less than a week after a malicious malware attack was done to numerous mobile phones. However, as far as I am aware this has not happened on the cellular level, it could possibly be done but you would an excellent knowledge of how mobiles work. To be honest, it is not that difficult to develop a mobile phone these days, the parts are all available on places like Amazon or eBay. It is simple to develop an Android OS phone, using one of the latest mini-computers that is Linux based. The latest attack on WhatsApp can infect any mobile without you even answering the call. I wrote a post on this just a few days which explains more about it here:https://www.quora.com/Why-do-hackers-attack-WhatsApp-with-the-targeted-surveillance-attack-What-do-they-want-to-do-with-this-hack I would imagine cell phone hacking is pretty low at the moment because most hackers only know how to \u201creverse-engineer\u201d code, not electronics (hardware). However, I only know about electronic \u201creverse-engineering\u201d from decades of experience in the field, I started in the early \u201970s when I was only 9 or 10 years old. There are professional hackers that do know software and hardware hacking, which makes this more dangerous. These you\u2019ll find hacking cars, smart houses, refrigerators, right up to industrial level control of machines. I am not implying cellular phones cannot be hacked by just calling them, because nothing in the world is 100% safe, if it was we would not need security for our privacy, etc. So, as for your question, I would not state it was impossible. Never assume anything in this world today is secure, the more advanced techniques used in security just creates more security holes. One major company that falls into this category is Facebook, with 6 major breaches in the last 18 months! \u2026and \u201cno\u201d I do not have an account! ",
+            "date": "Answered May 20, 2019",
+            "views": "48",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jarvis Mercer",
+                    "user_href": "/profile/Jarvis-Mercer"
+                },
+                {
+                    "user_id": "Benson Tan",
+                    "user_href": "/profile/Benson-Tan-19"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ben Clare",
+                "href": "/profile/Ben-Clare-4"
+            },
+            "answer_text": "Highly unlikely. Extremely highly unlikely. But possible I guess. As you have a data stream going into your phone, being processed, then output out the speaker, there is a possibility (albeit an extremely small one) that somehow your phone has a vulnerability in that process. They could then send specially crafted packets designed to exploit this, and somehow get access to your phone. Please note, this is nigh on impossible and probably never has/never will happen. Phone calls arnt a particularly viable attack vector, usually attackers look for places where code is being run based on input. In a phone call, the data is streamed to the speaker regardless of the data's actual content, meaning it's never really read. This significantly limits the ways this could go wrong. So yes, it's POSSIBLE, but don't get scared. It's ridiculously unlikely. ",
+            "date": "Answered August 11, 2017",
+            "views": "279",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hernan Becerril",
+                    "user_href": "/profile/Hernan-Becerril"
+                },
+                {
+                    "user_id": "Liran Cohen",
+                    "user_href": "/profile/Liran-Cohen-26"
+                },
+                {
+                    "user_id": "Hayden Brutas",
+                    "user_href": "/profile/Hayden-Brutas"
+                },
+                {
+                    "user_id": "Ishaan Sharma",
+                    "user_href": "/profile/Ishaan-Sharma-33"
+                },
+                {
+                    "user_id": "Albin Jaison Thundathil",
+                    "user_href": "/profile/Albin-Jaison-Thundathil"
+                },
+                {
+                    "user_id": "Palak Pandey",
+                    "user_href": "/profile/Palak-Pandey-20"
+                },
+                {
+                    "user_id": "Anju Mathew",
+                    "user_href": "/profile/Anju-Mathew-8"
+                },
+                {
+                    "user_id": "Nidhi Singh",
+                    "user_href": "/profile/Nidhi-Singh-3006"
+                },
+                {
+                    "user_id": "Anjana R",
+                    "user_href": "/profile/Anjana-R-56"
+                },
+                {
+                    "user_id": "The Whyway",
+                    "user_href": "/profile/The-Whyway"
+                },
+                {
+                    "user_id": "Kunj Soam",
+                    "user_href": "/profile/Kunj-Soam"
+                },
+                {
+                    "user_id": "Esther Itinagbedia",
+                    "user_href": "/profile/Esther-Itinagbedia"
+                },
+                {
+                    "user_id": "Cassandra Villegas",
+                    "user_href": "/profile/Cassandra-Villegas-3"
+                },
+                {
+                    "user_id": "Davide Quaranta",
+                    "user_href": "/profile/Davide-Quaranta"
+                },
+                {
+                    "user_id": "Aleksandr Sujatov",
+                    "user_href": "/profile/Aleksandr-Sujatov"
+                },
+                {
+                    "user_id": "Thu Tran",
+                    "user_href": "/profile/Thu-Tran-89"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gokul Rajendren",
+                "href": "/profile/Gokul-Rajendren"
+            },
+            "answer_text": "Nope.. It's mostly not happening\u2026 basics is the reason.. 1G Signal is the Signal we use to send messages.. 2G For Voice.. 3G For data .. 4G More fast.. So call comes in the 2G section.. u guys know the Speed of 2G net.. you probably have used it.. the loading of the data takes so much time.. To get a packet sent to the phone and runned and the phone to get the information to the hacker is not going to happen as that much data sent to through the phone will take more than 30 minutes or more to reach the phone.. and no sound will be heard if the data is hacking data.. becoz there will be no space for voice data to come to your phone.. as the 2G wave can't carry more data than a limited information.. so most of the cases of hacking through the voice call is fake\u2026 But I'm not sure about hacking through whatsapp calls(app to app).. not sure.. but that also low I think so.. ",
+            "date": "Answered February 27, 2020",
+            "views": "65",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sai Sreeja Gummi",
+                    "user_href": "/profile/Sai-Sreeja-Gummi"
+                },
+                {
+                    "user_id": "Mukesh Ratre",
+                    "user_href": "/profile/Mukesh-Ratre-9"
+                },
+                {
+                    "user_id": "Sai Jithendra Nagella",
+                    "user_href": "/profile/Sai-Jithendra-Nagella"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Stampfel",
+                "href": "/profile/John-Stampfel-1"
+            },
+            "answer_text": "Apparently YES. Here\u2019s a quote of part of WhatsApp exploit let attackers install government-grade spyware on phones \u2013 TechCrunch \u201cThe vulnerability (documented here) was discovered by the Facebook-owned WhatsApp in early May, the company confirmed to TechCrunch. It apparently leveraged a bug in the audio call feature of the app to allow the caller to allow the installation of spyware on the device being called, whether the call was answered or not.\u201d (Emphasis added.) So this was found and fixed in WhatsApp. That doesn\u2019t mean it isn\u2019t present in some other app, or won\u2019t be a bug in some other app in the future. Answering: \u201cCan someone hack your phone by calling you?\u201d ",
+            "date": "Answered May 15, 2019",
+            "views": "56",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Simone Morgan",
+                    "user_href": "/profile/Simone-Morgan-8"
+                },
+                {
+                    "user_id": "Ankush Ganiyar",
+                    "user_href": "/profile/Ankush-Ganiyar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Elder",
+                "href": "/profile/Jonathan-Elder"
+            },
+            "answer_text": "Yes. The hacker just needs to exploit the part of the phone that is easy to trick, vulnerable to all sorts of hacks and trivial to connect to remotely. You. By far the easiest way to hack your phone over voice would be to call you, claim to be someone in authority, like your bank or phone provider, then get you to install a malicious app, probably deliberately by passing the phones built-in security at the same time. Hacking the phone hardware using a audio call would be possible, but I\u2019ve never heard of it being done. The worst similar item I\u2019ve seen is making a phone crash by sending DTMF tones in a specific sequence, and that was on a phone last sold 15 years ago. ",
+            "date": "Answered April 13, 2018",
+            "views": "182",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hayden Brutas",
+                    "user_href": "/profile/Hayden-Brutas"
+                },
+                {
+                    "user_id": "Jim D",
+                    "user_href": "/profile/Jim-D-149"
+                },
+                {
+                    "user_id": "Andreea Oancea",
+                    "user_href": "/profile/Andreea-Oancea-4"
+                },
+                {
+                    "user_id": "Albin Jaison Thundathil",
+                    "user_href": "/profile/Albin-Jaison-Thundathil"
+                },
+                {
+                    "user_id": "Anirudh Rana",
+                    "user_href": "/profile/Anirudh-Rana-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jona Kats",
+                "href": "/profile/Jona-Kats"
+            },
+            "answer_text": "Is it possible that someone could hack my phone simply by calling me and I answer Hypothetically, yes. Some could spoof call you and Insert data packages into the stream of data. In reality, this would be very expensive and currently hard. Now, if you are on android and use any WiFi calling app, such as WhatsApp or Viber, this would be a lot easier to do. Lastly, this wouldn\u2019t work on iPhone because of how data is stored. ",
+            "date": "Answered August 31, 2018",
+            "views": "18",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Riaan Coetzee",
+                    "user_href": "/profile/Riaan-Coetzee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Riaan Coetzee",
+                "href": "/profile/Riaan-Coetzee"
+            },
+            "answer_text": "As Jonas Kats said, hypothetically yes, but for the common man on the street the amount of effort and knowledge that would have to go in to such a project would be astronomical . Governments do have devices that can intercept your signal called a man in the middle attack and then they can intercept your calls, messages, photos you send etc. These devices are manufactured in Israel I believe but costs upwards og $500 000 . So it\u2019s possible, but very unprobable ",
+            "date": "Answered September 1, 2018",
+            "views": "17",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Claudia",
+                    "user_href": "/profile/Claudia-669"
+                },
+                {
+                    "user_id": "Gert Grobler",
+                    "user_href": "/profile/Gert-Grobler"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bob Smith",
+                "href": "/profile/Bob-Smith-3460"
+            },
+            "answer_text": "No, but there's a possibility of getting told that your computer has a virus from your trusted brand Microsoft when you have a Mac\u2026 Or that they need your credit card number to send you the $200 million you just won!!!!! But really the worst thing that could happen is getting phone tapped. If you didn't trust that you won $200 million of course. ",
+            "date": "Answered September 21, 2020",
+            "views": "223",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Zach Braddock",
+                "href": "/profile/Zach-Braddock-4"
+            },
+            "answer_text": "Do not act on what I'm about to say, but technically, you are more likley to get hacked by NOT answering the phone. Now don't go answering every spam call, because you aren't going to get hacked, but when you let your phone go to voice-mail, depending on the carrier, you can hit some buttons on the keypad and then type in the voicemail password and check whoever your callings voicemail. So by not answering you give whoevers calling access to the options to check your voicemail. ",
+            "date": "Answered October 9, 2020",
+            "views": "135",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Leo Sayer",
+                "href": "/profile/Leo-Sayer-2"
+            },
+            "answer_text": "yes, this can happen, generally fixed now. . the usual way was to send out a connection with a string of numbers and hashes which \u2018unlocked\u2019 your phone settings, then a followup could be made with acess to your phone. this was fixed a long time ago i believe. . some people may have seen an attempt on their phones, and suddently connect the dots. whilst others who have never seen this before will adamantly preach that it cannot and did not happen. ",
+            "date": "Answered May 15, 2019",
+            "views": "22",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Comet",
+                "href": "/profile/Comet-7"
+            },
+            "answer_text": "If somebody wanted to hack your phone, it is not needed that you answer a phone call. Some social engineering exploits do work by having your answer your phone, as well as data leak checks; when you answer the phone you reveal information about yourself. ",
+            "date": "Answered August 31, 2018",
+            "views": "461",
+            "upvotes": " Answer requested by Benson Tan",
+            "upvoters": [
+                {
+                    "user_id": "Ashfaq Ahmed",
+                    "user_href": "/profile/Ashfaq-Ahmed-284"
+                },
+                {
+                    "user_id": "Alex Kordatzakis",
+                    "user_href": "/profile/Alex-Kordatzakis"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lisa Hugh",
+                "href": "/profile/Lisa-Hugh-3"
+            },
+            "answer_text": "Absolutely not. Unless you click on something or download something, your smartphone will not be hacked, especially by merely answering a phone call. ",
+            "date": "Answered September 21, 2020",
+            "views": "162",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jaikar Sathish",
+                    "user_href": "/profile/Jaikar-Sathish"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Senthil Nathan",
+                "href": "/profile/Senthil-Nathan-150"
+            },
+            "answer_text": "No way unless you rooted the phone and downloadaded untrusted apps. If you would have installed untrusted apps, then incoming call could be an input or trigger for specific harmful tasks. Never download the apps from untrusted source and neither root the phone. ",
+            "date": "Answered April 13, 2018",
+            "views": "29",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Atishay Gupta",
+                    "user_href": "/profile/Atishay-Gupta-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sathya Raj",
+                "href": "/profile/Sathya-Raj-95"
+            },
+            "answer_text": "Long back secret agencies used this way with legal approval for calling WhatsApp. When they call and connected then they can install other apps on background It got leaked later and they got banned for that. ",
+            "date": "Answered April 15, 2020",
+            "views": "15",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Lakshmi Jaswanth",
+                "href": "/profile/Lakshmi-Jaswanth-1"
+            },
+            "answer_text": "yes.There are exploits\u2026.\u2026but most of them are secured. Pegasus is an exploit that can hack through Whats app call. But keep your mobile up-to date ,so that are less chances of getting exploit. ",
+            "date": "Answered May 10, 2020",
+            "views": "308",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Nirav R",
+                "href": "/profile/Nirav-R-1"
+            },
+            "answer_text": "Hey there \ud83d\udc4b Nope, The only time that can happen is when you provide information over the phone. Thanks! \ud83d\ude0a ",
+            "date": "Answered October 9, 2020",
+            "views": "74",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "BINDAS STAR",
+                "href": "/profile/BINDAS-STAR"
+            },
+            "answer_text": "Yes ",
+            "date": "Answered July 30, 2018",
+            "views": "848",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tomiwa Joseph Akanbi",
+                "href": "/profile/Tomiwa-Joseph-Akanbi"
+            },
+            "answer_text": "No ",
+            "date": "Answered August 11, 2017",
+            "views": "920",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,2695 @@
+{
+    "title": "What is the coolest thing you've done with a Raspberry Pi? - Quora",
+    "tags": [
+        "Projects on Raspberry Pi",
+        "Raspberry Pi Projects",
+        "Raspberry Pi",
+        "Being Cool",
+        "Computer Hardware",
+        "Electronics",
+        "Computers",
+        "Technology",
+        "Experiences in Life",
+        "Computer Programming"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robin Bussell",
+                "href": "/profile/Robin-Bussell"
+            },
+            "answer_text": "My raspberry pi now has more than 25 times as many followers as me on Twitter!  I have interfaced it to an array of vintage neon display tubes and it acts as a clock and window onto random twitter utterances for my workshop. It is also a twitter bot that will react to the right hashtags and, using the raspberry pi camera module, send back movies or pictures of custom text to any twitter user who can get the command syntax right. I had an idea that it would be interesting to see how people reacted when given such a resource ( no real surprise, the young ones use it mostly to hurl insults and mindlessly repeat \u201cmemes\u201d ) and maybe that the fact that their actions would be open for all to see might elicit more thought before commanding a broadcast of words to all followers\u2026 Evidence would suggest otherwise :) Maybe Quora users can help the signal to noise ratio? There have been some good uses: at least one guy was building up a large lexicon of neon words for some yet to be realised art project recently, I\u2019ve seen a few declarations of undying love and marriage proposals go by too. The pattern of usage is quite interesting as one group will suddenly discover it and things get very busy for a short while . There is a rate limit on how fast an app can post to twitter of about one every 50 seconds, so the queue of requests can quickly hit a point where there is a delay of an hour or more before a user gets a picture back. This tends to cause traffic to drop again until the next interconnected group discover it and so on. To try it out simply post a tweet with the hashtag #NixieBotShowMe followed by a word or a phrase:separated:by:colons and wait and see. Due to its account getting suspended once or twice for automated replies to keywords, you also need to \u201c@mention\u201d nixiebot. It uses twitter\u2019s stream filter API to find all instances of that hashtag. This happens astonishingly quickly considering the amount of traffic that Twitter must get, I can see a search result pop up on the console almost immediately a tweet is sent, kudos to twitter engineers on that! Full instructions for the many other features I keep adding (did I mention it can give \u201coblique strategy\u201d or \u201cmagic eight ball\u201d answers too?) can be found on it\u2019s tumblr pages: NixieBot The source is free to browse, grab and modify on github: Zedsquared/NixieBot it\u2019s a big old pile of python that has no pretense to structure any more so you have been warned! It uses the Twython library to access twitter and is running under the command line only version of raspbian Jessie. The tubes are Burroughs B7971 nixies from the early 1960\u2019s and were once used as stock ticker displays. The camera is mounted using these handy camera to HDMI cable adapters from Tindie: https://www.tindie.com/products/freto/pi-camera-hdmi-cable-extension/ Some more hardware and software details are now available on Nixiebot\u2019s page on hackaday.io: NixieBot . ",
+            "date": "Updated February 2, 2019",
+            "views": "63",
+            "upvotes": " View 31 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Iv\u00e1n Garc\u00eda",
+                    "user_href": "/profile/Iv\u00e1n-Garc\u00eda-3"
+                },
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Rudra Joshi",
+                    "user_href": "/profile/Rudra-Joshi-14"
+                },
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Kiran Konathala",
+                    "user_href": "/profile/Kiran-Konathala-1"
+                },
+                {
+                    "user_id": "Akshit Kumar",
+                    "user_href": "/profile/Akshit-Kumar-8"
+                },
+                {
+                    "user_id": "Himanshi Kalra",
+                    "user_href": "/profile/Himanshi-Kalra-2"
+                },
+                {
+                    "user_id": "Amanpreet Singh",
+                    "user_href": "/profile/Amanpreet-Singh-28"
+                },
+                {
+                    "user_id": "Neos Kynigos",
+                    "user_href": "/profile/Neos-Kynigos"
+                },
+                {
+                    "user_id": "Atharva R. Patil",
+                    "user_href": "/profile/Atharva-R-Patil"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijaya Lakshmi",
+                "href": "/profile/Vijaya-Lakshmi-1000"
+            },
+            "answer_text": "I don\u2019t know why this question appeared in my feed. But this gave me an opportunity to share something. Not me, but my son did something cool with Raspberry pi. In 2015 our younger granddaughter underwent a tracheotomy, when she was five months baby. I have written about this in detail in my answer Vijaya Lakshmi's answer to What has been the most difficult situation in your life which you finally overcame?. After this surgery, she could not cry. I mean no sound would come out of her mouth. Even if she cried it would be without any sound. So how to monitor her when she was sleeping? Baby monitor with video works but one should constantly watch the monitor. But what if the baby wakes up in the night and cries(without sound)? In such a case oximeter will make no sound. Staying awake through out the night for two years even by taking turns was impractical. So that time my son got this idea. He purchased a Raspberry pi, a mic and a high resolution web camera. Within two days he wrote a code. So whenever the baby makes any movement in her sleep or after waking up, it would give loud signals shouting \u201cBaby is moving\u201d He also attached that Raspberry pi with oximeter. This app would open in any web browser(after logging in) and smart phone. When ever the baby moved, it would give a loud alarm. It detects not only baby\u2019s movements but also abnormalities in oximeter. Everybody in the house either had a laptop or smartphone with them always. So even the slightest movement would alert all of us. We would wait to see if the movement was just a normal movement in sleep or she had woken up from sleep. This equipment along with the app served its purpose really cool for two years. After two years when the trach was removed, son and daughter-in-law donated the equipment to one of local hospitals. Many people advised him to sell that app in the market and make some money. But he was against it. He made the code public. Location of these files is available in the answer I have mentioned above. After 2 years the trach was removed. Now she is the most mischievous chatterbox. ",
+            "date": "Updated May 31, 2019",
+            "views": "59",
+            "upvotes": " View 3.6K Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shiva Nandyala",
+                    "user_href": "/profile/Shiva-Nandyala"
+                },
+                {
+                    "user_id": "Hamid Siddiqui",
+                    "user_href": "/profile/Hamid-Siddiqui"
+                },
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Gautam Arora",
+                    "user_href": "/profile/Gautam-Arora-160"
+                },
+                {
+                    "user_id": "Shiva Godasu",
+                    "user_href": "/profile/Shiva-Godasu"
+                },
+                {
+                    "user_id": "Sshubam Verma",
+                    "user_href": "/profile/Sshubam-Verma"
+                },
+                {
+                    "user_id": "Salma",
+                    "user_href": "/profile/Salma-409"
+                },
+                {
+                    "user_id": "Vivek Ps",
+                    "user_href": "/profile/Vivek-Ps-1"
+                },
+                {
+                    "user_id": "Keerthana Kowshik",
+                    "user_href": "/profile/Keerthana-Kowshik"
+                },
+                {
+                    "user_id": "Nanda",
+                    "user_href": "/profile/Nanda-185"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Krishna Chaitanya Chavati",
+                "href": "/profile/Krishna-Chaitanya-Chavati"
+            },
+            "answer_text": "I used Raspberry Pi for my undergraduate final sem project. Basically I mixed in a bit of Wearable Technology, Computer Vision and the Pi to create an Assistive wearable Low vision device.  The Initial idea was to try and find out which computer vision algorithms actually help people with low vision. Just so a normal vision person can see an algorithm improve the view doesn't mean that a low vision person will experience the same way. We have to test it in Person and take systematic feedback. I thought even if the zoom coupled with contrast sensitivity correction works, it could greatly improve the lives of people with low vision. The things I used for the prototype are as follows: HARDWARE 1)  Vuzix wrap 920 video eyewear : I used this as it was the only good eye wear available at that time. Provides decent field of view and has good control settings. It has audio too, though I didn't use it in this experiment.   2) Raspberry Pi and the Camera Module: The awesome 35$ computer to perform computer vision operations. And the amazingly capable Raspberry Pi camera module which can churn out HQ video with greater than 30 fps. 3) A Mobile Power Bank : A power bank (3500 mAh) to power the whole setup. SOFTWARE 1) OpenCV : I used the python wrapper of OpenCV for the computer vision algorithms. Basic ones like Enhanced Zoom, Histogram equalisation for Contrast sensitivity improvement and some edge detection techniques. The implementation could not be simpler.  1) Get the frames from Pi Camera 2) Process them in the Pi 3) Route the processed feed to Vuzix eyewear I made a quick assembly to test if the idea would work. This was what it looked like :-).   I wore it around my neck with camera at my chest level and experienced it. It was good and working as expected. But to make it ready for testing I had to package it well and make it a bit durable to survive atleast 2 months of testing. After lots of glue, cardboard, soldering and white paper it transformed to this.  I had the great privilege of testing this device in a famous low vision clinic in Chennai, Sankara Nethralaya. Every year thousands of people come here for treatment of their eye diseases. With the help of the friendly passionate staff of SN, I was able to personally test the device with 30 volunteers who suffered from Low vision. Here it is with a test volunteer.    Test ResultsReceived overwhelmingly positive reviews from the volunteers. It's wonderful how a simple algorithm like zoom with minor enhancements could help people so much. I would like to mention one volunteer, a 11 year old girl who has extreme low vision. She normally can see letters only below 2 feet distance. With the help of this device, she was able to read letters which were at 8-10 feet distance very fluently and without facing any difficulty. Her Mother who was there in the room felt very happy. She explained to me how she met many doctors and eye clinics over the years and asked me when this device would be available as a clinical device. I explained to her that it could take a while. She appreciated my effort and it was one of the proudest moments of my life. pic credits(vuzix) : Amazon ",
+            "date": "Updated April 29, 2016",
+            "views": "406",
+            "upvotes": " View 665 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Nadkarni",
+                    "user_href": "/profile/Siddhant-Nadkarni"
+                },
+                {
+                    "user_id": "Kirimi Derrick",
+                    "user_href": "/profile/Kirimi-Derrick-1"
+                },
+                {
+                    "user_id": "Gautam Arora",
+                    "user_href": "/profile/Gautam-Arora-160"
+                },
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Salma",
+                    "user_href": "/profile/Salma-409"
+                },
+                {
+                    "user_id": "Abhinav Bansal",
+                    "user_href": "/profile/Abhinav-Bansal-88"
+                },
+                {
+                    "user_id": "Nikhil",
+                    "user_href": "/profile/Nikhil-1476"
+                },
+                {
+                    "user_id": "Mrigank Shekhar Pathak",
+                    "user_href": "/profile/Mrigank-Shekhar-Pathak"
+                },
+                {
+                    "user_id": "Rajan Gupta",
+                    "user_href": "/profile/Rajan-Gupta-1007"
+                },
+                {
+                    "user_id": "Piyush Partani",
+                    "user_href": "/profile/Piyush-Partani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Anderson",
+                "href": "/profile/Chris-Anderson-74"
+            },
+            "answer_text": "I created my own custom controller for my in-ground sprinkler system. I was never happy with the rain sensor on my RainBird system, and since I already had a custom Arduino-based home weather station that gathers the normal readings (temp, humidity, wind speed, wind direction, rain amount) I decided to build my own sprinkler system controller using my own actual rain amount readings. The software is written with C#.NET WinForms app (running on Mono). The official Raspberry Pi touchscreen is the interface and the sprinkler system solenoids are controlled with a simple bank of 8 relays. The hardware is really pretty straightforward. Right now, though, I'm powering the solenoids separately from the Pi since they run on different voltage. This winter I'm hoping to build a power converter so I'll only need one outlet to power the 24VAC solenoids and the 5VDC Pi. The real work on this piece is the software. There are two main pieces: the client device software and the backing web application. The client app is about what you'd expect. It lets you start and stop the program and test an individual zone. The web app, though, was the fun part. One of my biggest annoyances throughout the year was changing the programming in the spring, then again in the summer when it gets hotter, then backing it off in the fall when it cools down. The web app lets me create multiple different programs (the runtime for each zone), the start time of the program and when it should run. Just as you'd expect for any scheduling software. Additionally, the website lets me stop or stop the entire program or just an individual zone, and since it's a responsive website, it works from my phone, as well. I built the web app so it could technically be used by many people, just as any SaaS service. After creating an account on the website and turning on the client device, the device connects to the website, tries to authenticate and if it can't it gives you a activation code (just like when you'd open Netflix or any TV app on an Apple TV or similar). You log into your account on the web app, put in the activation code, and you're connected. Somebody when it's stabilized I might open it up for use and type up the direction for building a client device. This winter I've got further plans for the whole system. Rather than running a WinForms app on Mono I'm re-writing the app as a UWP app and running it on Win 10 IOT, which should definitely be more stabile than Mono on Raspbian. (I'm a C# developer professionally so it's much easier for me to work on my hobby projects on that platform since I don't have that much free time to begin with.) Additionally, now that Xamarin is free I'm working on an iOS app to control the systems. I'm also planning on getting a 3D printer and designing a more solid case for the whole device. Eventually I plan on taking more than just rain into account when determining when the program should run. I could look at temp, humidity, how windy it was, how sunny it was, or any number of factors. And not only could I tell it to run or not run, but I could have it run a bit longer or shorter depending on those factors. ",
+            "date": "Answered September 6, 2016",
+            "views": "25",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rajan Gupta",
+                    "user_href": "/profile/Rajan-Gupta-1007"
+                },
+                {
+                    "user_id": "Jacob Schwartz",
+                    "user_href": "/profile/Jacob-Schwartz-11"
+                },
+                {
+                    "user_id": "Shravan Kumar",
+                    "user_href": "/profile/Shravan-Kumar-184"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rishav Sharma",
+                "href": "/profile/Rishav-Sharma-12"
+            },
+            "answer_text": "Well, looking at the answers I see a lot of innovation. Well I have also tried to exploit the features of raspberry to build out something. I don't know how cool it is, hope it is worth sharing!! :P   I have built a self navigating robot that recognises the environment and moves accordingly. The interesting point here is that I have just used opencv and usb webcam module of the raspberry pi to build the same. The operations happen over a tcp connection  and main opencv computations are done over my laptop as a server. I will split the actions on the basis of scenario. Scenario 1: Firstly I connected my pi with  over wifi with my laptop and through a tcp connection managed to send the command to pi. The command can be send by a keyboard or an audio signal from android. Command can be like \"go to kitchen\" or \"kitchen\" or \"dining table\"  The video below shows how to enter the command:    Scenario 2: Here goes the video for the movement of the pi over to the target for the command \"kitchen\". I have also put the feature to notify me about the whereabouts of the robot. It's done over the UDP socket service.     Theory behind the project: Through this project I made a small step forward in the field of AI using IOT. I loved how machines worked synchronously. I loved when I saw the machine moving in the right direction. Through this project I was amazed that what a great thing opencv is. You can extract such features right from the open source things. It's just amazing isn't it. Talking in technical terms, I used the concepts of surf and sift key point extraction and training my server to define a path for my pi. I used opencv surf objects to train the server about is environment and used TCP connection to stream the surroundings to my system over the camera. The stream of environment that the machine received were compared to images on which I trained the machine, and it returned a flag bit that was again passed to the pi to decide its path. The analysis generated by the flann matcher gave an educated perspective to decide the path of the pi. Talking about the project,   there are some assumptions I  made.  Some of them are: Agent is aware of only right direction of world, so if the object lies on its left side, then it has to rotate in its initial position to cover the same which is just not optimised.Due to slow connection problems (of course due to unnecessary tcp overheads) it may lead to timeout and failed results. Use of protocols such as CoAp, UDP for IOT should have been usedLightening factor is always an issue. Environment variation of training and testing also plays a major role to define the result.The android app I talked about, well it has a service class in it which helps me notify as soon as the robot reaches its target. The app contains feature of handling voice queries and facial recognition to suggest the person according to him. The project inspires suggestion to user on the basis of location and user specification.For instance, in kitchen it would suggest you something to cook, but what to cook depends on person to person and hence the facial recognition. I don't know if this is cool or not, but it certainly helped me to make an initiative to program my own Jarvis kind of machine and feel like a iron man. :P   Here are the sources of my project. rishav2708/self-navigating-robot   To read about feature matching through opencv in python have a look at :  http://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_matcher/py_matcher.html   ",
+            "date": "Answered February 5, 2016",
+            "views": "73",
+            "upvotes": " View 26 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Nadkarni",
+                    "user_href": "/profile/Siddhant-Nadkarni"
+                },
+                {
+                    "user_id": "Adhil Ashraf",
+                    "user_href": "/profile/Adhil-Ashraf"
+                },
+                {
+                    "user_id": "Manohar",
+                    "user_href": "/profile/Manohar-85"
+                },
+                {
+                    "user_id": "Karthik U J",
+                    "user_href": "/profile/Karthik-U-J"
+                },
+                {
+                    "user_id": "Pranav Mittal",
+                    "user_href": "/profile/Pranav-Mittal-7"
+                },
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Gaurav Gupta",
+                    "user_href": "/profile/Gaurav-Gupta-1977"
+                },
+                {
+                    "user_id": "Flavius Hobbs",
+                    "user_href": "/profile/Flavius-Hobbs"
+                },
+                {
+                    "user_id": "Amanpreet Singh",
+                    "user_href": "/profile/Amanpreet-Singh-28"
+                },
+                {
+                    "user_id": "Raza Qureshi",
+                    "user_href": "/profile/Raza-Qureshi-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henry Carter",
+                "href": "/profile/Henry-Carter-73"
+            },
+            "answer_text": "Going down the memory lane. Just after graduating when I was looking for a job. I spent my extra hours developing insane things. So, during all of this, I found the cheapest possible way to build a home automation system. I know you must be thinking just another home automation. People misinterpret the word automation. Automation means it should always operate on its own without any human effort or direction. I had 3 objectives: The lights should turn on when I am in the room and should turn off when I am not. (Should Also have the ability to understand how many people are present in the room. Lights should remain off when no person is present in the room).To control the room temperature only when a person is present in the room.Have the ability to control instruct raspberry pi manually through Wi-Fi.This is what my setup comprised of. Red Laser, LDR, IR Sensor, IR Emitter, Temperature Sensor, Relays, Analogue to Digital Converter and a Raspberry. The most important task for me was to implement the first task successfully without buying an expensive motion sensor. So, this is the solution I came up with; I installed two Red Lasers along with two LDR in parallel at the beginning of the room just before the door. I recorded the pattern of which Laser was interrupting first to determine if the Lights should turn on or not. The same method was used to count how many people are coming in and how many are going out. Relays were used as a switch to change the state of lights from ON to OFF and vice versa. Now, for the second task, I used IR Sensor to decode the instructions of AC remote control. Then I used IR Emitter to transmit particular instructions to AC. I used a temperature sensor along with the state of the relay to automate AC. And finally. built a mobile app to set up and change default states of every single component. So, did you like it? :) ",
+            "date": "Answered May 13, 2019",
+            "views": "13",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Praveen Agarwal",
+                    "user_href": "/profile/Praveen-Agarwal-51"
+                },
+                {
+                    "user_id": "Rajan Gupta",
+                    "user_href": "/profile/Rajan-Gupta-1007"
+                },
+                {
+                    "user_id": "Rudra Joshi",
+                    "user_href": "/profile/Rudra-Joshi-14"
+                },
+                {
+                    "user_id": "Jonathan Contreras Jimenez",
+                    "user_href": "/profile/Jonathan-Contreras-Jimenez"
+                },
+                {
+                    "user_id": "Shashank Bharadwaj",
+                    "user_href": "/profile/Shashank-Bharadwaj-44"
+                },
+                {
+                    "user_id": "Anthony Davis",
+                    "user_href": "/profile/Anthony-Davis-673"
+                },
+                {
+                    "user_id": "Ryan Miller",
+                    "user_href": "/profile/Ryan-Miller-574"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sandeep Gantait",
+                "href": "/profile/Sandeep-Gantait"
+            },
+            "answer_text": "I had an event in my office and I was in the organizing committee and one of my task was to aware the other employees about the event. After rejecting a lot of small and big ideas I came across an advertisement on youtube, in the video there was a billboard in a metro(underground) station with a picture of a beautiful model, but the moment any train enters the station the model\u2019s image come alive and all her hairs starts waving, as if she is actually standing in front of the train. Initial Billboard:  When a train enters:  With this idea in mind, I though of making a similar billboard for my event. So the plan was, I will ask the organizing team to record a short video in which initially everyone would be just standing and chit chatting with one another and in another video they would just start jumping with a big banner with our event name somewhat like this:  So this entire thing would be put on a big 100+ inch TV Screen installed at the entrance gate, initially the video of people chit-chatting would be played, but as soon as someone walk across the TV, my PIR sensor would detect the movement and the video of people jumping with banner would be played. After some time of inactivity the initial video would be played again. With a week of sleepless night I finally made a prototype with Iron man test - flying scene. Here is the video:  In this video, Iron man is just standing and trying to fly, But as soon as I move my hands the sensor detects my gesture and the video with Iron Man flying starts playing. And if there is no movement, the Iron Man lands back. Though it looks little simple, but there were lot of complications involved with making video continuous. And this entire POC was made with client-server mechanism. So I had made a small server and a website which was keep looking for change in service response and act accordingly. Though i was unable to to present it for the event, but it is still one of my favorite project apart from small and big Home Automation projects like, controlling lights by Alexa, automatic plant watering system, anti theft alarm system which only works at night, and a cool alarm which will only stops if you stand and dance(continuous movement) for 5 mins :p ",
+            "date": "Answered March 13, 2018",
+            "views": "15",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Shashank Bharadwaj",
+                    "user_href": "/profile/Shashank-Bharadwaj-44"
+                },
+                {
+                    "user_id": "Vaishnavi Sridhar",
+                    "user_href": "/profile/Vaishnavi-Sridhar-11"
+                },
+                {
+                    "user_id": "Manohar",
+                    "user_href": "/profile/Manohar-85"
+                },
+                {
+                    "user_id": "Terri Coleman",
+                    "user_href": "/profile/Terri-Coleman-38"
+                },
+                {
+                    "user_id": "Jayant Rao",
+                    "user_href": "/profile/Jayant-Rao-17"
+                },
+                {
+                    "user_id": "Mithil Shah",
+                    "user_href": "/profile/Mithil-Shah-9"
+                },
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Jose Luis Ortiz",
+                    "user_href": "/profile/Jose-Luis-Ortiz"
+                },
+                {
+                    "user_id": "Akshit Kumar",
+                    "user_href": "/profile/Akshit-Kumar-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christophe Catherine Slychan",
+                "href": "/profile/Christophe-Catherine-Slychan"
+            },
+            "answer_text": "Designed a HAT and built a control unit for a Monotype composition caster. See, back in the 20th century there was this old technology named \u201chot metal typesetting\u201d which allowed to compose texts for printing (which still ran on lead type) much quicker than manually. Two most common systems were Linotype (which assembled matrices in a row, then cast a slug of lead) and Monotype (which cast whole pages of text composed of single sorts). The Monotype used two machines. The compositor worked on a typesetting machine (\u201ckeyboard\u201d) which coded the text and all typographic decisions (justification, kerning, single or multiple columns, formulae, accented characters etc.) to a perforated paper tape (\u201cribbon\u201d) which was basically a 31-channel parallel interface. The ribbon was then put on the casting machine (\u201ccomposition caster\u201d). Different combinations of holes, or a lack thereof, addressed the matrices in the matrix case, put the ready line out to the galley, etc. The machine read the tape by passing compressed air through the holes in the ribbon, and then directing it through a network of copper tubes into three assemblies (\u201cpin blocks\u201d), where miniature pistons were raised and lowered, blocking the movement of certain mechanical parts (the machine has a few thousands of moving parts, some of which are made with a precision of single or even fraction of a micron). The problem is that the machines see some sort of a revival for fine printing and letterpress typography, but the factory has been defunct since 1980s, so spare parts are very hard to get. Our museum has a keyboard, but can\u2019t operate it without the parts that translate the keypresses into different combinations of holes in the ribbon. Plus the ribbon itself is already expensive as there is probably a single place in the world that makes it. So, computer control. The device has 32 solenoid valves (4 8-channel valve blocks from Matrix, Italy - model BX 758) and an opto sensor coupled with the machine itself (it needs to know when to let the air in and cut the flow). It\u2019s connected to a 24VDC power supply, Ethernet LAN and compressed air input. It has a special connection block that attaches where the perforated tape readout normally takes place. I made three units up till now, not counting early prototypes and proofs of concept. The first prototype was based on a RPi B rev. 2 and built on a perfboard; everything later used B+ / 2B / 3B and a HAT controlling 32 outputs at 24VDC (basically, two MCP23017s and four ULN2803s as the output drivers). See it in one of my photo galleries: Type foundry at Book Art Museum, Lodz, PL The hardware design is stable and pretty simple; software is where I\u2019m struggling a bit\u2026 I have two separate programs (rpi2caster - a typesetting/casting utility that runs on anything that supports Python 3.5, and rpi2casterd - a machine control daemon that runs on the Raspberry and exposes a REST API for communicating with the utility), still not released. I host the code at elegantandrogyne/rpi2caster (typesetting/casting utility) and elegantandrogyne/rpi2casterd (machine control daemon). I was thinking about telling MagPi about the project\u2026 ",
+            "date": "Answered December 5, 2017",
+            "views": "744",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rowida Nagah",
+                    "user_href": "/profile/Rowida-Nagah"
+                },
+                {
+                    "user_id": "Zakariae Oulqaid",
+                    "user_href": "/profile/Zakariae-Oulqaid-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jayant Kumar",
+                "href": "/profile/Jayant-Kumar"
+            },
+            "answer_text": "I am using my pi as As an inhouse temperature & humidity monitoring system. I have connected my pi to a DHT22 sensor and got the in house temperature and humidity from it. I am also picking up the outside temperature and humidity from openweather. Finally, I am logging the information in elasticsearch and using kibana to give me detailed graphs. The graphs can be accessed at here Here is how the setup looks  A bit torrent server. I have setup deluge to download torrents. I have setup DNS using Free Dynamic DNS - Managed DNS - Managed Email - Domain Registration - No-IP, so inspite of power cuts, I am able to access my pi any time and add torrents that I want to download.Since, now, quite a lot of media now resides on my pi, I am also using it to stream media to different devices - my tablet or my pc. Edit: Shifted my dynamic dns from noip to Duck DNS . Updated the link to view graph. I now have 8 months data. Here is the updated graph.  Also added rpi monitor dashboard to my pi\u2026 http://gamezgeek.duckdns.org:8114/status.html Edit : July 2017 My micro sd card crashed. I have lost all data. I had the complete weather graph for more than an year and it was a very interesting thing to see. But now that is lost, I do not see the benefit in setting it again. As per multiple blogs, that i went through, SD cards have a very small life cycle with limited read and write capabilities. And logging data every 1 minute and indexing it continuously for more than an year crashed it. So, i am now using it as a simple file server - torrent box and to access the home network from outside. ",
+            "date": "Updated September 1, 2017",
+            "views": "75",
+            "upvotes": " View 34 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vikrant V Joliya",
+                    "user_href": "/profile/Vikrant-V-Joliya"
+                },
+                {
+                    "user_id": "Manohar",
+                    "user_href": "/profile/Manohar-85"
+                },
+                {
+                    "user_id": "Jose Luis Ortiz",
+                    "user_href": "/profile/Jose-Luis-Ortiz"
+                },
+                {
+                    "user_id": "Kiran Konathala",
+                    "user_href": "/profile/Kiran-Konathala-1"
+                },
+                {
+                    "user_id": "Andre Casado",
+                    "user_href": "/profile/Andre-Casado"
+                },
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "Amanpreet Singh",
+                    "user_href": "/profile/Amanpreet-Singh-28"
+                },
+                {
+                    "user_id": "Allen",
+                    "user_href": "/profile/Allen-185"
+                },
+                {
+                    "user_id": "Himanshu Patel",
+                    "user_href": "/profile/Himanshu-Patel-82"
+                },
+                {
+                    "user_id": "Ali Khundmiri",
+                    "user_href": "/profile/Ali-Khundmiri"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "James Kern",
+                "href": "/profile/James-Kern-10"
+            },
+            "answer_text": "I have put several raspberry pi\u2019s to work. I have one that monitors my sump pump. I downloaded the \u201craspi-sump\u201d code for it (I take zero credit for the actual sump pump monitoring, I just followed the instructions on github) which monitors the sump water level and sends out an alert if it gets too high. I added a camera to it to take pics every 5 min and to create a time lapse mp4. I have a separate pi that monitors line voltage and if it detects a power outage, it will sent out an email / text alert as well as attach the last pic taken. The time lapse video is uploaded to google docs every hour so I can see how fast the water level is rising so I have an idea how much time I have to get home before my basement starts turning into a swimming pool. I put two raspberry pi\u2019s to work at our firehouse. They are essentially in kiosk mode and open up to a specific web page which displays a subscription service we subscribe to.. the pi / site displays fire call information.. who is going to what firehouse and the location of the call on a map. It gives the people coming to the call a quick glance where it is and who is coming. Planned projects - For the spring, a pi that monitors the soil and waters as necessary for a vegetable garden we plan on building. I also have a ham radio project to use a pi zero w and a SDR receiver for a remote receive antenna for some specific radio bands. ",
+            "date": "Answered September 10, 2020",
+            "views": "96",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Surya Kulshreshtha",
+                "href": "/profile/Surya-Kulshreshtha"
+            },
+            "answer_text": "Raspberry Pi tablet - How To Make It At Home  Cut files were created in Vectric\u2019s Aspire. Components were scanned and traced for fitment. The files were cut on my CNC machine. Due to time constraints and cut path layer confusion, I used a hobby knife to cut the frame. Cutting access ports in the frame with a hobby knife. Cutting through layers of plywood. Test fitting. Trying on the top cover. A bit from the top of the frame has to be cut out too. It fits! Cutting in the rest of the components. Frame with all cuts complete. Looking good on this side. This side looks good too. I later found out this was far too much foam tape. Measuring for the SD card slot. My DIY drill level looks ghetto but it worked great. Clearing out the SD card slot with a coping saw. Smoothing out the SD slot with a strip of sand paper. Everything fits nicely! Almost ready for the top frame. It took a bit of sanding to get the LCD to fit correctly. Finally got it sitting flush into the frame. Everything fits! Time to stain. All hardware was removed for finishing. The carbon fiber backing was glued into place. A nice bead of glue. Final component installation. Notice the missing Ethernet and USB port? The completed setup running RaspBMC (the touchscreen driver doesn\u2019t work in RaspBMC.) ",
+            "date": "Answered February 3, 2014",
+            "views": "37",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gaurav Agarwal",
+                    "user_href": "/profile/Gaurav-Agarwal-75"
+                },
+                {
+                    "user_id": "Bondan Ari Rahmawan",
+                    "user_href": "/profile/Bondan-Ari-Rahmawan"
+                },
+                {
+                    "user_id": "Abdulaziz Al-Oshin",
+                    "user_href": "/profile/Abdulaziz-Al-Oshin"
+                },
+                {
+                    "user_id": "Vignesh Anantharaman",
+                    "user_href": "/profile/Vignesh-Anantharaman"
+                },
+                {
+                    "user_id": "Anil Patrick",
+                    "user_href": "/profile/Anil-Patrick"
+                },
+                {
+                    "user_id": "Tushar Pal",
+                    "user_href": "/profile/Tushar-Pal"
+                },
+                {
+                    "user_id": "Alessandro Prioni",
+                    "user_href": "/profile/Alessandro-Prioni"
+                },
+                {
+                    "user_id": "Mani Cavalieri",
+                    "user_href": "/profile/Mani-Cavalieri"
+                },
+                {
+                    "user_id": "Adam Faulkner",
+                    "user_href": "/profile/Adam-Faulkner"
+                },
+                {
+                    "user_id": "Joe Samson",
+                    "user_href": "/profile/Joe-Samson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akshay Nagpal",
+                "href": "/profile/Akshay-Nagpal-1"
+            },
+            "answer_text": "This project is a prototype for a variety of uses. It can help the user in doing simple tasks like checking mail inbox, time, weather conditions etc. as well as complex tasks like computing arithmetic problems, searching Wikipedia and face recognition for security at home.  The project has features pertaining to information, entertainment and security. The user can check his Gmail for unread messages, ask the current time and calculate basic arithmetic problems using just voice commands. In addition to this, the system can search Wikipedia for any term that the user asks, and gives the results through voice only. The user can also entertain himself by telling the system to play music from his playlist in both normal and shuffled manner. For security, the system can click a picture through the webcam, and detect the face in the image. It further processes the face and tells whether the person is a friend or stranger. It does so by matching the face to a set of faces, already stored and labelled as friends in the system. OpenCV and normalized cross-correlation has been used for face detection and matching. It can help the visually impaired to connect with the world by giving them access to Wikipedia, Calculator, Email and Music all through their voice. The voice controlled calculator can be used for visually impaired students in primary school. The prototype can also keep people secure as it can be used as a surveillance system which captures the face of the person standing at the door, and tells the owner whether the visitor is a known person or not. ",
+            "date": "Answered May 14, 2016",
+            "views": "16",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Greg Perry",
+                    "user_href": "/profile/Greg-Perry-72"
+                },
+                {
+                    "user_id": "Karthik Ram",
+                    "user_href": "/profile/Karthik-Ram-115"
+                },
+                {
+                    "user_id": "Robin",
+                    "user_href": "/profile/Robin-1054"
+                },
+                {
+                    "user_id": "Adil Saju",
+                    "user_href": "/profile/Adil-Saju"
+                },
+                {
+                    "user_id": "Moulik Gupta",
+                    "user_href": "/profile/Moulik-Gupta-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Riaz Munshi",
+                "href": "/profile/Riaz-Munshi"
+            },
+            "answer_text": "Thanks for the A2A. I have actually been successful in turning the Raspberry Pi into a FM radio station. To achieve this I had to write a tiny program in Python using the Python module PiFm. The sound files that I was able to broadcast had to meet the following specifications: 16 bit 44.1 kHzMonoCode: radioStation.py              import PiFm              PiFm.play_sound(\"<your sound file>\") Test:[Radio Station Configuration]Schmod u+x radioStation.py$python radioStation.py [frequency] Note: Specifying frequency is optional, which defaults to 103.3 in the FM spectrum. Next, put a long metal pin/wire [this will be the antenna] and hold it to the GPIO-4 pin in the Raspberry Pi board. Test: [Receiver Configuration] You just need a radio receiver [I used my phone] , and tune it to FM band 103.3 and keep adjusting the antenna until you hear the sound being broadcast and you get a awesome feel of the power of Raspberry Pi. ",
+            "date": "Updated September 22, 2014",
+            "views": "147",
+            "upvotes": " View 118 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Md.Alamin Rahman",
+                    "user_href": "/profile/Md-Alamin-Rahman"
+                },
+                {
+                    "user_id": "Manohar",
+                    "user_href": "/profile/Manohar-85"
+                },
+                {
+                    "user_id": "Jacob Pollack",
+                    "user_href": "/profile/Jacob-Pollack-7"
+                },
+                {
+                    "user_id": "Ajaykrishna Madhu",
+                    "user_href": "/profile/Ajaykrishna-Madhu"
+                },
+                {
+                    "user_id": "Barkha Chainani",
+                    "user_href": "/profile/Barkha-Chainani-2"
+                },
+                {
+                    "user_id": "Kanishg Shiva",
+                    "user_href": "/profile/Kanishg-Shiva"
+                },
+                {
+                    "user_id": "David Westebbe",
+                    "user_href": "/profile/David-Westebbe"
+                },
+                {
+                    "user_id": "Gyanesh Badgujar",
+                    "user_href": "/profile/Gyanesh-Badgujar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zafer Yusuf Vardar",
+                "href": "/profile/Zafer-Yusuf-Vardar"
+            },
+            "answer_text": "I will list what I do or did with raspberry pi. Media center with Kodi. Also osmc is based on Kodi and fine too.Network attached storage.FM transmitter.My father used it for browsing internet some time.FTP server.As a downloader. I was connecting it with ssh and download files with wget.As a portable computer. I don't have a fast internet connection. Sometimes I go somewhere with a fast connection to download some files. I bring my Pi because my laptop is not that portable. I can only cool it with this fan and it requires a power outlet and my battery died too. So I need to carry a keyboard, mouse, charger, fan etc.Right now I installed prota os to an SD card and using it for simple things that controlled by Google assistant. For example i say \u201cHey pi play music\u201d and it plays music in USB and that USB is accessible from every computer in network. We can transfer songs to it without plugging it out. Also it can execute scripts or commands in remote computers. For example i can say \u201cshut down my computer\u201d to my Google assistant and it powers off my computer. This is my computer. I couldn't include a photo in a list. ",
+            "date": "Answered September 15, 2017",
+            "views": "35",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Md.Alamin Rahman",
+                    "user_href": "/profile/Md-Alamin-Rahman"
+                },
+                {
+                    "user_id": "Terri Coleman",
+                    "user_href": "/profile/Terri-Coleman-38"
+                },
+                {
+                    "user_id": "Andrei Dicu",
+                    "user_href": "/profile/Andrei-Dicu-1"
+                },
+                {
+                    "user_id": "Karan Bhandari",
+                    "user_href": "/profile/Karan-Bhandari-46"
+                },
+                {
+                    "user_id": "Ethan Proulx",
+                    "user_href": "/profile/Ethan-Proulx-1"
+                },
+                {
+                    "user_id": "Shaik Suhail",
+                    "user_href": "/profile/Shaik-Suhail-6"
+                },
+                {
+                    "user_id": "Praneeth Nanduri",
+                    "user_href": "/profile/Praneeth-Nanduri-1"
+                },
+                {
+                    "user_id": "Vedant",
+                    "user_href": "/profile/Vedant-76"
+                },
+                {
+                    "user_id": "Santiago M\u00e9ndez Mej\u00eda",
+                    "user_href": "/profile/Santiago-M\u00e9ndez-Mej\u00eda"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pulkit Chandak",
+                "href": "/profile/Pulkit-Chandak-4"
+            },
+            "answer_text": "Great question! You know, considering the fact that I got an RPi after doing a lot of research (loads and loads), it was basically extremely hard for me to decide what to do with it. I, by the way, am a young 15 year old and don\u2019t own much stuff so I couldn\u2019t create any accessory for anything as well. I looked at many options and finally on the final list were: A Raspbian running P.C. A Personal Assistant A Retro-gaming console And the most eccentric and difficult to make, A SATNOGS! (About ) I was really confused and I thought of making it all together. So I did. I created a basic device, An RPi, a Waveshare 5\u2033 display, a mouse-keyboard set ,a controller and a lot of 16 GB Micro-SD cards. On one, Raspbian, on another, the P.A. program, and on the other one Retropie. It was a very good plan and it worked! I could get anything I wanted to use anytime and I created a kind of case to store all the cards together. So it was a good creation and extremely useful and impressive too! P.S.- I later bought a power bank so now its a +1 for portability! Thank you for the question, and hope you liked my answer. ",
+            "date": "Answered August 19, 2017",
+            "views": "901",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Eleftherios Kosmas",
+                    "user_href": "/profile/Eleftherios-Kosmas"
+                },
+                {
+                    "user_id": "Victor Oliveira",
+                    "user_href": "/profile/Victor-Oliveira-21"
+                },
+                {
+                    "user_id": "Abhishek Anil Nair",
+                    "user_href": "/profile/Abhishek-Anil-Nair-2"
+                },
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lokesh Dudigollar",
+                "href": "/profile/Lokesh-Dudigollar"
+            },
+            "answer_text": "I\u2019ve built many projects using pi but coolest thing was to build a voice assistant, although it wasn't my own. I've always been fan of Iron Man kinda stuff. I used Amazon Alexa which my friend had bought and was really inspired. I wanted to have one but it wasn't affordable for me so I thought of building my own using Pi. Then I started Googling . I found a tutorial of a person who's built Alexa's replica using C.H.I.P so I followed it to build on Pi. Although I didn't had to code it took a lot of time for me debug errors. Finally when successful it was really cool. It was taking my voice input through mic attached to pi through sound dongle. The pi would process it and give output via speaker attached to pi through sound dongle. I tried all things possible with regular Alexa and it worked perfect. ",
+            "date": "Answered March 10, 2017",
+            "views": "727",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Likith Gowda",
+                    "user_href": "/profile/Likith-Gowda-103"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vaidu Iyer",
+                "href": "/profile/Vaidu-Iyer"
+            },
+            "answer_text": "I run a web server on it.This can be used to control the Raspberry Pi via the browser (on my phone). Using it, I have made a enhanced web-based remote control for my TV's set-top box.I  no longer have to remember what number each channel is on. Plus with a  custom software remote, I get more features like custom channel type  filters, unlimited favorites, bigger list of recently viewed channels.The UI needs a little more work.      I can extend this to make it a universal remote, with macros (for example, turn on TV, music system and the set top box with one click). Home automation would be next, and then a cloud-based media server.So that I have access to all my music/movies over the Internet. ",
+            "date": "Updated September 12, 2014",
+            "views": "58",
+            "upvotes": " View 35 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Gopinath J",
+                    "user_href": "/profile/Gopinath-J-20"
+                },
+                {
+                    "user_id": "Flavius Hobbs",
+                    "user_href": "/profile/Flavius-Hobbs"
+                },
+                {
+                    "user_id": "Ganesh Kumar",
+                    "user_href": "/profile/Ganesh-Kumar-110"
+                },
+                {
+                    "user_id": "Dhiraj Khodade",
+                    "user_href": "/profile/Dhiraj-Khodade"
+                },
+                {
+                    "user_id": "Smrutiranjan Tripathy",
+                    "user_href": "/profile/Smrutiranjan-Tripathy-2"
+                },
+                {
+                    "user_id": "Neo You Ming",
+                    "user_href": "/profile/Neo-You-Ming"
+                },
+                {
+                    "user_id": "Satyadeep Karnati",
+                    "user_href": "/profile/Satyadeep-Karnati"
+                },
+                {
+                    "user_id": "Yashasvee Ardeshana",
+                    "user_href": "/profile/Yashasvee-Ardeshana"
+                },
+                {
+                    "user_id": "Vedang R. Vatsa",
+                    "user_href": "/profile/Vedang-R-Vatsa"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Galbraith",
+                "href": "/profile/John-Galbraith-9"
+            },
+            "answer_text": "I have several but my coolest project has a little back story. My wife's parents are in their late 70s and are very involved in politics and have become target to hundreds of scam and sales calls to the point that their home phone was annoying to the max and they had fallen for a couple scams and were taken for some money. I built a Pi project that used a USB modem and listens for caller ID information. I built a job that sends the log entries for the calls to an api I built on my cloud based web server and in that same job, retrieves updates and then modifies the whitelist and blacklist and restarts the daemon when the lists are updated. I built a web interface for my father and mother in law to log in to and edit the block list or mark annoying numbers as bad or whitelist numbers that got blocked. When they click save the update flag is up and waiting on the Pi to check in and retrieve the data.  An update from my father in law two months later is that no bad calls have gotten through and they feel much more at peace now without their phone ringing off the hook. Big win!  ",
+            "date": "Answered February 4, 2016",
+            "views": "31",
+            "upvotes": " View 26 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shashank Bharadwaj",
+                    "user_href": "/profile/Shashank-Bharadwaj-44"
+                },
+                {
+                    "user_id": "Manohar",
+                    "user_href": "/profile/Manohar-85"
+                },
+                {
+                    "user_id": "Anmol Deep",
+                    "user_href": "/profile/Anmol-Deep-1"
+                },
+                {
+                    "user_id": "Landon Alumbaugh",
+                    "user_href": "/profile/Landon-Alumbaugh"
+                },
+                {
+                    "user_id": "Matt Stephen Thackeray",
+                    "user_href": "/profile/Matt-Stephen-Thackeray"
+                },
+                {
+                    "user_id": "Victor Oliveira",
+                    "user_href": "/profile/Victor-Oliveira-21"
+                },
+                {
+                    "user_id": "\u0130brahim Sel",
+                    "user_href": "/profile/\u0130brahim-Sel"
+                },
+                {
+                    "user_id": "Jose Luis Ortiz",
+                    "user_href": "/profile/Jose-Luis-Ortiz"
+                },
+                {
+                    "user_id": "Akshit Kumar",
+                    "user_href": "/profile/Akshit-Kumar-8"
+                },
+                {
+                    "user_id": "David Kenneth Richardson",
+                    "user_href": "/profile/David-Kenneth-Richardson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akshay Kumar",
+                "href": "/profile/Akshay-Kumar-5556"
+            },
+            "answer_text": "I first used a Raspberry Pi as a sophomore with not a lot of knowledge about Linux or programming. I basically learned from my teammates about how to use one. Fast-forward two years, as a senior, I worked on two very interesting projects using Raspberry Pi Model 3 B+. The first project was a 12-DOF bipedal robot that would do basic maneuvers and walk crookedly. For me, it was the first time I was using all the capabilities that this amazing device offered. I used the GPIO pins, sensing capabilities, UI and communication interfaces to get the project working. I think it was basically a hack to use the Pi board instead of a more real-time application suitable microcontroller, but I am glad things worked pretty satisfactorily in the end. My second project was a smart animatronic humanoid face that we built, inspired by Sophia robot from Hanson Robotics. This project was another great experience that I explored several concepts of programming, robotics, controls and machine learning.PS - Links to the complete project webpages WELCOME - AKSHAY KUMARThe Smart Animatronic FaceI hope you like it. Cheers! ",
+            "date": "Answered October 11, 2018",
+            "views": "182",
+            "upvotes": " View 129 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Istvan Mayer",
+                    "user_href": "/profile/Istvan-Mayer"
+                },
+                {
+                    "user_id": "Krovvidi Madhulash Babu",
+                    "user_href": "/profile/Krovvidi-Madhulash-Babu"
+                },
+                {
+                    "user_id": "Sudesh Chandar",
+                    "user_href": "/profile/Sudesh-Chandar-1"
+                },
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Navin Kumar",
+                    "user_href": "/profile/Navin-Kumar-351"
+                },
+                {
+                    "user_id": "Utkarsh Sakalle",
+                    "user_href": "/profile/Utkarsh-Sakalle"
+                },
+                {
+                    "user_id": "Ashwin Saseendhran",
+                    "user_href": "/profile/Ashwin-Saseendhran"
+                },
+                {
+                    "user_id": "Otsile Mapini",
+                    "user_href": "/profile/Otsile-Mapini"
+                },
+                {
+                    "user_id": "Jacob Pollack",
+                    "user_href": "/profile/Jacob-Pollack-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Niyas Mohammed",
+                "href": "/profile/Niyas-Mohammed-14"
+            },
+            "answer_text": "I built a home automation system. I used Twisted server to serve the interface and configured my router so I could control it from within my browser. This was my first project that involved using a Raspberry Pi, and I had it up and running in a week. It also gives a live temperature reading. I later tweaked it to turn devices on when the temperature crossed a certain limit.  \u200b   \u200b I am certainly not stopping there. I'm working on adding illumination controls, so I can set the lights to go on automatically when it starts getting dark. Another cool idea is to throw in a few motion sensors and have it let me notify my activity in various rooms, though I doubt whether my parents would approve of that! It was a great week, and I'll probably write a neat blog post explain how to do it yourself. I'm sure it's not that complicated, but I think it'll help a lot of beginners get started. ",
+            "date": "Updated April 5, 2015",
+            "views": "98",
+            "upvotes": " View 128 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Nadkarni",
+                    "user_href": "/profile/Siddhant-Nadkarni"
+                },
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Jose Luis Ortiz",
+                    "user_href": "/profile/Jose-Luis-Ortiz"
+                },
+                {
+                    "user_id": "Kiran Konathala",
+                    "user_href": "/profile/Kiran-Konathala-1"
+                },
+                {
+                    "user_id": "Akshit Kumar",
+                    "user_href": "/profile/Akshit-Kumar-8"
+                },
+                {
+                    "user_id": "Jilu Raju",
+                    "user_href": "/profile/Jilu-Raju"
+                },
+                {
+                    "user_id": "Gajanan Patil",
+                    "user_href": "/profile/Gajanan-Patil-16"
+                },
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "Akhil Kumar",
+                    "user_href": "/profile/Akhil-Kumar-761"
+                },
+                {
+                    "user_id": "Sadhana Dinesh Rao",
+                    "user_href": "/profile/Sadhana-Dinesh-Rao"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Max Reynolds",
+                "href": "/profile/Max-Reynolds-10"
+            },
+            "answer_text": "I haven\u2019t done very much cool stuff with a raspberry pi. If the question was \u201cWhat is the coolest thing you\u2019ve wanted to do with a Raspberry Pi\u201d, I\u2019m highly qualified to answer! A \u2018phone\u2019, with the Pi Zero and a 5\u2033 TFT screen - the phone bit was optional, just a glorified mp4 with a terminal would have been awesome! I ran into difficulties finding a driver board for the display.One of these that prints emails instead! But now Alexa has taken precedence.. Maybe a custom API to order\u2026An Alexa (yeah, she\u2019s pretty cool, honest!) integrated light switch, hopefully advancing to more complicated things like temperature control etc\u2026Further updates as events warrant - I\u2019m sure to remember more cool things to do with a rasperry pi, or come up with new cool things\u2026",
+            "date": "Answered January 19, 2017",
+            "views": "19",
+            "upvotes": " Answer requested by Anshul Bansal",
+            "upvoters": [
+                {
+                    "user_id": "Navin Kumar",
+                    "user_href": "/profile/Navin-Kumar-351"
+                },
+                {
+                    "user_id": "Hima Vamshi",
+                    "user_href": "/profile/Hima-Vamshi-6"
+                },
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                },
+                {
+                    "user_id": "Harsha S Kanchina",
+                    "user_href": "/profile/Harsha-S-Kanchina"
+                },
+                {
+                    "user_id": "Kim Bahir Andersen",
+                    "user_href": "/profile/Kim-Bahir-Andersen"
+                },
+                {
+                    "user_id": "Vangelis Kotsifis",
+                    "user_href": "/profile/Vangelis-Kotsifis"
+                },
+                {
+                    "user_id": "Thomas Faller",
+                    "user_href": "/profile/Thomas-Faller"
+                },
+                {
+                    "user_id": "Nenad Mandi\u0107",
+                    "user_href": "/profile/Nenad-Mandi\u0107-1"
+                },
+                {
+                    "user_id": "Liviu Solcovenco",
+                    "user_href": "/profile/Liviu-Solcovenco"
+                },
+                {
+                    "user_id": "Tejas Garhewal",
+                    "user_href": "/profile/Tejas-Garhewal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bob Colwell",
+                "href": "/profile/Bob-Colwell"
+            },
+            "answer_text": "I wanted a controller to turn my yard\u2019s landscaping lights on at/near dusk, and off around bedtime. Dusk, of course, occurs at different times over the year, while bedtime can be set to, say, 10:30pm. I designed, built and programmed (with some purchased help & coaching from an Upwork expert) a Raspberry Pi to be that controller. It also hosts a website (via Tornado/nginx) that I can reach from my house\u2019s network, which lets me (a) force the lights on, (b) force the lights off, or (c) automatically control the lights. Once per minute, my \u201cpispi\u201d program wakes up, compares the current time to today\u2019s dusk and bedtime values, and acts accordingly. Didn\u2019t break any new tech ground, and doesn\u2019t cause the Pi to even break an electronic sweat in terms of workload, but it was fun to do and I learned a lot. Here\u2019s a picture of it in action. (Admittedly it\u2019s not that pretty in this photo \u2014 it\u2019s been hanging outdoors for about a year now.)  ",
+            "date": "Answered September 24, 2018",
+            "views": "779",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Edgaras Tara\u0161kevi\u010dius",
+                    "user_href": "/profile/Edgaras-Tara\u0161kevi\u010dius"
+                },
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matthew McLeod",
+                "href": "/profile/Matthew-McLeod-10"
+            },
+            "answer_text": "Well I wouldn\u2019t say I did anything cool yet haha Currently I only have two Raspberry Pis, a Raspberry Pi Zero W and a Raspberry Pi 3. I do plan on getting more in the future tho. With my Raspberry Pi Zero W, I\u2019m currently using it to block ads with Pi-Hole, hosting a Discord bot (written in Python), and as a torrent box. As for my Raspberry Pi 3, It\u2019s in a SNES-like case that I use for retro gaming. It\u2019s running off RetroPie, also has Kodi and a desktop installed for other uses. I know these might not be \u201ccool\u201d, but hey, your creativity is your limit with these Pis, so have fun with anything cool you make~ ",
+            "date": "Answered September 9, 2018",
+            "views": "247",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Amanpreet Singh",
+                    "user_href": "/profile/Amanpreet-Singh-28"
+                },
+                {
+                    "user_id": "Reza Rawassizadeh",
+                    "user_href": "/profile/Reza-Rawassizadeh"
+                },
+                {
+                    "user_id": "Cloud Monk",
+                    "user_href": "/profile/Cloud-Monk"
+                },
+                {
+                    "user_id": "Valentina Calabrese",
+                    "user_href": "/profile/Valentina-Calabrese-2"
+                },
+                {
+                    "user_id": "Ashutosh",
+                    "user_href": "/profile/Ashutosh-157"
+                },
+                {
+                    "user_id": "Mohammad Hamza",
+                    "user_href": "/profile/Mohammad-Hamza"
+                },
+                {
+                    "user_id": "Amal Pavithran",
+                    "user_href": "/profile/Amal-Pavithran"
+                },
+                {
+                    "user_id": "Cheuk Kin Tang",
+                    "user_href": "/profile/Cheuk-Kin-Tang"
+                },
+                {
+                    "user_id": "Lakshman Teja",
+                    "user_href": "/profile/Lakshman-Teja-2"
+                },
+                {
+                    "user_id": "Andre Komatsu",
+                    "user_href": "/profile/Andre-Komatsu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Leinbach",
+                "href": "/profile/Chris-Leinbach-1"
+            },
+            "answer_text": "I don't know if this counts but currently I am turning one in to an engine information system. Its not a finished project, I'm actually only in the very first stages. My car is a 1966 Ford Mustang so there is no computer on the engine like the cars nowadays but I'd like to be able to access vital information on the engine's performance easily. ",
+            "date": "Answered May 28, 2013",
+            "views": "108",
+            "upvotes": " View 59 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jim Riley",
+                    "user_href": "/profile/Jim-Riley-90"
+                },
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                },
+                {
+                    "user_id": "Marco-Luis Salcedo Tovar",
+                    "user_href": "/profile/Marco-Luis-Salcedo-Tovar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin Rome",
+                "href": "/profile/Kevin-Rome-2"
+            },
+            "answer_text": "This is going to be super simple. However, it\u2019s really useful in my house. A few years ago, I used my son\u2019s old Raspberry Pi and turned it into an AirPlay device to mirror iDevices (Apple) for my kids playroom TV. Now they\u2019re able to stream from their iPad mini straight to the TV. They can enjoy Netflix, YouTube, movies\u2026etc. It really is simple. You just need to download some software. But the utility is just what was needed to turn their regular old \u2018dumb TV\u2019 into a \u2018SmartTV\u2019. ",
+            "date": "Answered September 7, 2018",
+            "views": "294",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Likith Gowda",
+                    "user_href": "/profile/Likith-Gowda-103"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hardik Tarpara",
+                "href": "/profile/Hardik-Tarpara"
+            },
+            "answer_text": "hello, my dear friend if we can find out exact value of  \"\u03c0\", than we could figure out what we can achieve using raspberry pi.... it's like milky way \"endless........\",  so what you wan to achieve is more important than what we can do with it , there are so many projects are out there and we can't make all of them even it takes moths for an expert to make all and even if you are newbie like me  than may be little bit more but that's not an issue. so there is an interesting story behind making of pi if you are interested than please read it,  Raspberry Pi Foundation - About Us it is mainly developed  for education of children or who can not afford a 300-500 bucks pc or laptop and which can also full fill requirement of only education not gaming or professional development or any thing else. everyone is interested in pi even Microsoft getting their hands on pi and lastly what you can do with this tiny device ,so i am posting here some links for reference if you find out what is cool in there than please go for it..... https://www.hackster.io/microsoft/products/windows-10-iot-core Raspberry Pi \u2022 View forum and even this time raspberry pi foundation host their official site from model pi 3 \" Serving the Raspberry Pi 3 launch from a Raspberry Pi 3 - Raspberry Pi  \"that may be really cool for you if you coming from web development or web hosting environment. ",
+            "date": "Answered April 19, 2016",
+            "views": "523",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Victor Oliveira",
+                    "user_href": "/profile/Victor-Oliveira-21"
+                },
+                {
+                    "user_id": "Akshit Kumar",
+                    "user_href": "/profile/Akshit-Kumar-8"
+                },
+                {
+                    "user_id": "Vishwanath Deshpande",
+                    "user_href": "/profile/Vishwanath-Deshpande-3"
+                },
+                {
+                    "user_id": "Ankit Anand",
+                    "user_href": "/profile/Ankit-Anand-84"
+                },
+                {
+                    "user_id": "Flavius Hobbs",
+                    "user_href": "/profile/Flavius-Hobbs"
+                },
+                {
+                    "user_id": "Faizal Heesyam",
+                    "user_href": "/profile/Faizal-Heesyam"
+                },
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "EMMANUEL KAYCE",
+                    "user_href": "/profile/EMMANUEL-KAYCE"
+                },
+                {
+                    "user_id": "Ravi",
+                    "user_href": "/profile/Ravi-1805"
+                },
+                {
+                    "user_id": "Abhishek Pratap Singh",
+                    "user_href": "/profile/Abhishek-Pratap-Singh-129"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kelvien Hidayat",
+                "href": "/profile/Kelvien-Hidayat"
+            },
+            "answer_text": "I made a \u2018smart home\u2019 that is also connected to a web application.  Here are the \u2018smart\u2019 components: Light sensorMotion sensorCameraLight bulbsLightstrip\u2018Door opener\u2019 (Servo)NFC ReaderMy daily routine when I want to come into my house: Grab my NFC tag from my pocket, place it on some designated area on my door, and then my door will be unlocked. My daily routine when I am home: I work in my computer, and have my web application open in any tab in my browser, I can open the door in my living room with a single button. This usually happens when friends come and they are detected by my motion sensor which will give me a notification from the browser. My daily routine when I am not at home: Receive an email saying that my \u2018smart home\u2019 detected a movement in front of my home, attached is also a GIF image that contains sequence of images when the movement is detected. For more complete story, visit a blog I wrote here: Japri ",
+            "date": "Updated August 12, 2018",
+            "views": "31",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Nadkarni",
+                    "user_href": "/profile/Siddhant-Nadkarni"
+                },
+                {
+                    "user_id": "Jonathan Rodgers",
+                    "user_href": "/profile/Jonathan-Rodgers-8"
+                },
+                {
+                    "user_id": "John Smith",
+                    "user_href": "/profile/John-Smith-15528"
+                },
+                {
+                    "user_id": "Aditya Tiwari",
+                    "user_href": "/profile/Aditya-Tiwari-1198"
+                },
+                {
+                    "user_id": "Girish \"Gary\" Nair",
+                    "user_href": "/profile/Girish-Gary-Nair"
+                },
+                {
+                    "user_id": "Buga David",
+                    "user_href": "/profile/Buga-David"
+                },
+                {
+                    "user_id": "Brett Diaz",
+                    "user_href": "/profile/Brett-Diaz-4"
+                },
+                {
+                    "user_id": "Victor Hogeweij",
+                    "user_href": "/profile/Victor-Hogeweij"
+                },
+                {
+                    "user_id": "Dovi Cowan",
+                    "user_href": "/profile/Dovi-Cowan"
+                },
+                {
+                    "user_id": "Sagar Prasad",
+                    "user_href": "/profile/Sagar-Prasad-10"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Bryant",
+                "href": "/profile/Stephen-Bryant"
+            },
+            "answer_text": "I built an outdoor lighting control system and programmed it with Java. The Raspberry Pi is connected to 4 motion sensors on all 4 sides of the house and to a solid state relay that controls the lights.     The code checks sunset and sunrise using a REST Web Service and during the daylight hours everything is off. For the first 3 hours after sunset the lights are on and through the rest of the nighttime hours the lights are triggered by the motion control sensors. Sunrise and sunset varies a lot in Sweden due to time of the year. The project is running outdoors in a waterproof box. Pretty simple overall. Tried it first in Python but the thread behaviour pretty weird so I moved to Java. ",
+            "date": "Answered September 22, 2015",
+            "views": "635",
+            "upvotes": " View 863 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bob Colwell",
+                    "user_href": "/profile/Bob-Colwell"
+                },
+                {
+                    "user_id": "Kim Bahir Andersen",
+                    "user_href": "/profile/Kim-Bahir-Andersen"
+                },
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                },
+                {
+                    "user_id": "Holger Gruber",
+                    "user_href": "/profile/Holger-Gruber-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Adams",
+                "href": "/profile/Steve-Adams-213"
+            },
+            "answer_text": "I made a demo for a physics professor. I made two falling water drop sensors by driving sewing needles into a plastic block. Odd needles were connected to 5v. Even needles were connected to ground. The pi could then detect a water drop falling through the top sensor and the bottom sensor and use the formula Gravity acceleration=1/2A*(seconds)^2 Display on a monitor so the whole class can see the calculation after the water drop hit the second sensor. It was easy, it was cheap, and the prof said it was better than very expensive stuff that the school could have bought. Now that Wolfram gives you a Mathematica license there is a ton of stuff you can easily do on a mathematica worksheet to make really slick lab demonstrations for chemistry or physics even when you have to do a little calculus. ",
+            "date": "Answered September 9, 2018",
+            "views": "264",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Agriya Khetarpal",
+                    "user_href": "/profile/Agriya-Khetarpal"
+                },
+                {
+                    "user_id": "Jitesh Saini",
+                    "user_href": "/profile/Jitesh-Saini-12"
+                },
+                {
+                    "user_id": "Andrei Dicu",
+                    "user_href": "/profile/Andrei-Dicu-1"
+                },
+                {
+                    "user_id": "Andre Casado",
+                    "user_href": "/profile/Andre-Casado"
+                },
+                {
+                    "user_id": "Mohit Bagade",
+                    "user_href": "/profile/Mohit-Bagade"
+                },
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "Ben Lee",
+                    "user_href": "/profile/Ben-Lee-304"
+                },
+                {
+                    "user_id": "Anuj Kumar Y",
+                    "user_href": "/profile/Anuj-Kumar-Y"
+                },
+                {
+                    "user_id": "Amanpreet Singh",
+                    "user_href": "/profile/Amanpreet-Singh-28"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amutha Bharathi",
+                "href": "/profile/Amutha-Bharathi"
+            },
+            "answer_text": "I reverse engineered a Nokia 2760's caller ID screen (yes, the small teeny tiny blue screen) to display a Raspberry Pi's vital stats like IP address, temperature, RAM usage, etc. Apart from this, I was able to stream monochrome videos to the LCD as well. :) Here are the video demos:Demo 1: Image and video playback   You can start seeing the monochrome video from 0:32 :) Demo 2: Status notifier   ",
+            "date": "Updated September 11, 2014",
+            "views": "183",
+            "upvotes": " View 187 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dheeraj Acharya",
+                    "user_href": "/profile/Dheeraj-Acharya"
+                },
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Rudra Joshi",
+                    "user_href": "/profile/Rudra-Joshi-14"
+                },
+                {
+                    "user_id": "Vipul L",
+                    "user_href": "/profile/Vipul-L"
+                },
+                {
+                    "user_id": "Udip Shrestha",
+                    "user_href": "/profile/Udip-Shrestha-11"
+                },
+                {
+                    "user_id": "Lorraine Lyu",
+                    "user_href": "/profile/Lorraine-Lyu-1"
+                },
+                {
+                    "user_id": "Kiran Konathala",
+                    "user_href": "/profile/Kiran-Konathala-1"
+                },
+                {
+                    "user_id": "Sathish Kumar Balakrishnan",
+                    "user_href": "/profile/Sathish-Kumar-Balakrishnan"
+                },
+                {
+                    "user_id": "Aditya Singh",
+                    "user_href": "/profile/Aditya-Singh-3911"
+                },
+                {
+                    "user_id": "Bhargav Lakkur Kusha Kumar",
+                    "user_href": "/profile/Bhargav-Lakkur-Kusha-Kumar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pradheap Alagarsamy",
+                "href": "/profile/Pradheap-Alagarsamy"
+            },
+            "answer_text": "You can build a better Siri like application in less than an hour. (A personal assistant) You will create an application with wolfram alpha, Google voice recognition API and Google TTS (text to speech) API. And just search in google, you will get a number of useful links on how to build it.  Apart from that, you'll need a SD card, external power, USB microphone, external speaker and an ethernet cable (or a wifi usb). It depends on the capabilities of Wolfram alpha.  A sample transcript of our conversation:  Its more fun and informative! One thing to note here is it was better than Siri in understanding my accent. I tested my voice on both of them simultaneously. But I do know that Siri does more than just answering, like assisting you in every other applications on the iPhone. What more, is you can go on and build something more of an Q & A machine which can process your question (based on NLP), retrieve information from the web and answers you, more like a factoid Q & A system. BTW, I am still reading. ",
+            "date": "Answered September 24, 2013",
+            "views": "127",
+            "upvotes": " View 138 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jeevanandham",
+                    "user_href": "/profile/Jeevanandham-7"
+                },
+                {
+                    "user_id": "Harsh Singh",
+                    "user_href": "/profile/Harsh-Singh-327"
+                },
+                {
+                    "user_id": "Krishna Koppisetti",
+                    "user_href": "/profile/Krishna-Koppisetti-2"
+                },
+                {
+                    "user_id": "Amartya Singh",
+                    "user_href": "/profile/Amartya-Singh-34"
+                },
+                {
+                    "user_id": "Saiyad Rasikh",
+                    "user_href": "/profile/Saiyad-Rasikh"
+                },
+                {
+                    "user_id": "Rohan Gaikwad",
+                    "user_href": "/profile/Rohan-Gaikwad-138"
+                },
+                {
+                    "user_id": "John Duerksen",
+                    "user_href": "/profile/John-Duerksen-1"
+                },
+                {
+                    "user_id": "Shaik Suhail",
+                    "user_href": "/profile/Shaik-Suhail-6"
+                },
+                {
+                    "user_id": "Ayush Dhruw",
+                    "user_href": "/profile/Ayush-Dhruw"
+                },
+                {
+                    "user_id": "Kruthi J P",
+                    "user_href": "/profile/Kruthi-J-P"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Darshita Patel",
+                "href": "/profile/\u0926\u0930\u094d\u0936\u093f\u0924\u093e-\u092a\u091f\u0947\u0932-Darshita-Patel"
+            },
+            "answer_text": "I did\u2019t done any thing coolest with raspberry Pi - Actually we made Raspberry pi \u201c The coolest and easy to go\u201d device. What we actually did? Okay, I am done with physical raspberry pi - Those wired connection costing me a lot. Plus the extra cost of peripherals is, not cool at all. So, Think - What if I can have a virtual raspberry pi - No need of Physical connection - No sd card - No need to buy those costly peripherals. All I wanted to do is Login - Code - And Logout. In short, All in one shot. That what exactly we did. IoTIFY.io - Develop full stack IoT solutions with cloud based IoT tools  Happy IoTIFYing ",
+            "date": "Answered February 17, 2017",
+            "views": "21",
+            "upvotes": " View 28 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bob Jones",
+                    "user_href": "/profile/Bob-Jones-1183"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Contreni",
+                "href": "/profile/David-Contreni"
+            },
+            "answer_text": "I finally \u201cfinished\u201d the robot I\u2019ve been building for fifty years. It started out as a cardboard box taped to a largish remote controlled car that was tethered by a stiff sheathed wire that moved a cam to move the front wheels for steering. Eventually, through relay, and then digital electronics I got some \u201cintelligent\u201d obstacle avoiding and light tracking activity out of it. Arduino\u2019s, Raspi\u2019s, electronic modules and open source software, and free api\u2019s have finally gotten it to the point where it can do most of the things I expect a robot to do. I call it \u201cfinished\u201d because I keep making changes and jacking with it. Currently I\u2019m experimenting with incorporating Google\u2019s AIY speech and vision kits. ",
+            "date": "Answered October 4, 2018",
+            "views": "290",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Nadkarni",
+                    "user_href": "/profile/Siddhant-Nadkarni"
+                },
+                {
+                    "user_id": "Arun Thennaram Vakkayil",
+                    "user_href": "/profile/Arun-Thennaram-Vakkayil"
+                },
+                {
+                    "user_id": "Mohammad Hamza",
+                    "user_href": "/profile/Mohammad-Hamza"
+                },
+                {
+                    "user_id": "Jaiyam Sharma",
+                    "user_href": "/profile/\u091c\u092f\u092e-\u0936\u0930\u094d\u092e\u093e-Jaiyam-Sharma"
+                },
+                {
+                    "user_id": "Roomman Israili",
+                    "user_href": "/profile/Roomman-Israili"
+                },
+                {
+                    "user_id": "Subrat Jain",
+                    "user_href": "/profile/Subrat-Jain-1"
+                },
+                {
+                    "user_id": "Navdeep Singh",
+                    "user_href": "/profile/Navdeep-Singh-39"
+                },
+                {
+                    "user_id": "Jayadeep Karnati",
+                    "user_href": "/profile/Jayadeep-Karnati"
+                },
+                {
+                    "user_id": "Akshay Jain",
+                    "user_href": "/profile/Akshay-Jain-829"
+                },
+                {
+                    "user_id": "Sharwon Pius",
+                    "user_href": "/profile/Sharwon-Pius"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Samar Singla",
+                "href": "/profile/Samar-Singla"
+            },
+            "answer_text": "A few things actually:I used it to build a constant temperature bath for a physics experiment. Later I unsuccessfully tried to build a microbrewery using the same setup. I used it to control a gamma ray detectors' movement. Basically, it was a 2D platform with two mounted motors and I needed to control their motion to make the detector move in an ellipse. It was used in an experiment in CERN and I got to go. :) ",
+            "date": "Answered May 29, 2013",
+            "views": "59",
+            "upvotes": " View 35 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Duerksen",
+                    "user_href": "/profile/John-Duerksen-1"
+                },
+                {
+                    "user_id": "Ray T Parker",
+                    "user_href": "/profile/Ray-T-Parker"
+                },
+                {
+                    "user_id": "Sagar Nilawar",
+                    "user_href": "/profile/Sagar-Nilawar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gopal Vishwakarma",
+                "href": "/profile/Gopal-Vishwakarma-1"
+            },
+            "answer_text": "I was designing a gateway between sensors and server. Means, Sensors will provide data to Raspberry pi 3 and Raspberry pi analyses this data and send it to server. Basically, I wanted to design headless system(Has no monitor display) . So the Challenge was how to configure WIFI SSID and PASSWORD on raspberry pi without having monitor and keyboard? So that I used HOSTAPD service which configures RPi into hotspot with static IP as well as developed one simple webpage . Whatever I write on that Webpage will get written into \u2018/etc/wpa_supplicant/spa_supplicant.conf\u2019 which usually contains WIFI SSID and PASSWORD with specific format. After this RPi will reboot. After boot-up Rock and Roll, Your Raspberry Pi connected to Your Router. So Now I can configure Raspberry pi with mobile(Andriod/IOS) , PC anything just I need internet browser :) ",
+            "date": "Answered November 22, 2016",
+            "views": "11",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sobithaa Sivakumar",
+                    "user_href": "/profile/Sobithaa-Sivakumar"
+                },
+                {
+                    "user_id": "Ram Pratap",
+                    "user_href": "/profile/Ram-Pratap-27"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Lindsey",
+                "href": "/profile/Andrew-Lindsey-3"
+            },
+            "answer_text": "Things which I have done, or seen done, with the Raspberry Pi: -Wifi print server for a 3D printer, so I can upload files, monitor and start/stop prints without actually needing to plug my laptop into the printer. -Webcam server and video recorder. -Aquarium monitor - logging temperature/ph/salinity over time and turning pumps and lights on and off. -Handheld classic game emulator, running a multi-emulator package. -Home media system controller. -Custom production test hardware controller for programming and testing various consumer electronics. -Hobby weather station controller (gather data from sensors, log and publish to a web site). Essentially they are very useful for anywhere you need to monitor or control something, usually with a wifi connection to allow convenient access remotely. ",
+            "date": "Answered September 15, 2017",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Patrick DiJusto",
+                    "user_href": "/profile/Patrick-DiJusto"
+                },
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonat\u00e1n Iv\u00e1n",
+                "href": "/profile/Jonat\u00e1n-Iv\u00e1n"
+            },
+            "answer_text": "Face detection and tracking with a Neural Network trained \u201cwith\u201d Deep Learning I am doing my BSc thesis now what I bought my first RPi for. It supposed to be a face tracking system, and now I just got some results. However, the Pi just takes the photos and adjusts the servos, so the neural network is running on an Nvidia GPU. The Raspberry Pi is pretty awesome, it is so cool that it runs a linux based operating system so a lot of stuff is available to use. I like it.  ",
+            "date": "Answered November 12, 2017",
+            "views": "381",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Wolf Donat",
+                "href": "/profile/Wolf-Donat"
+            },
+            "answer_text": "It\u2019s hard to narrow it down - I\u2019ve made quite a few things with my Pis over the years. If I had to pick one, however, it\u2019d probably be the robot/rover I built for Make books. Remote log in capability, remote driving, and with a camera on a robot arm to boot! Yeah, that one was fun and looked pretty cool, if I do say so myself, driving around. Now I\u2019m curious: what are you going to build? There\u2019s really no excuse for not building anything with yours! ",
+            "date": "Answered September 8, 2018",
+            "views": "148",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Hsu",
+                    "user_href": "/profile/David-Hsu-10"
+                },
+                {
+                    "user_id": "Torsten Thau",
+                    "user_href": "/profile/Torsten-Thau"
+                },
+                {
+                    "user_id": "Sergej Kychkn",
+                    "user_href": "/profile/Sergej-Kychkn"
+                },
+                {
+                    "user_id": "Khaled Charkie",
+                    "user_href": "/profile/Khaled-Charkie"
+                },
+                {
+                    "user_id": "Alexia Konstantinidi",
+                    "user_href": "/profile/Alexia-Konstantinidi"
+                },
+                {
+                    "user_id": "Ali Reda",
+                    "user_href": "/profile/Ali-Reda-4"
+                },
+                {
+                    "user_id": "Sheju John",
+                    "user_href": "/profile/Sheju-John"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gautam Singaraju",
+                "href": "/profile/Gautam-Singaraju"
+            },
+            "answer_text": "Using Raspberry PI, I have created a system that uses voice and image interaction along with deep learning (Convolutional Neural Networks) to identify Objects (fruits). Read about it here: Object Detection using Deep Learning and Raspberry PI   Watch the videos:  Apple being recognized as Apple   Lemon being recognized as Lemon:   Orange being recognized as Apricots! :     ",
+            "date": "Answered February 17, 2016",
+            "views": "22",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Irfan Salini",
+                    "user_href": "/profile/Irfan-Salini"
+                },
+                {
+                    "user_id": "Naoya Shiga",
+                    "user_href": "/profile/Naoya-Shiga"
+                },
+                {
+                    "user_id": "Atharva Gupta",
+                    "user_href": "/profile/Atharva-Gupta-3"
+                },
+                {
+                    "user_id": "Abhinav Ganguly",
+                    "user_href": "/profile/Abhinav-Ganguly"
+                },
+                {
+                    "user_id": "Rohit Patil",
+                    "user_href": "/profile/Rohit-Patil-613"
+                },
+                {
+                    "user_id": "Thomas Smith",
+                    "user_href": "/profile/Thomas-Smith-880"
+                },
+                {
+                    "user_id": "Pawel Wludyka",
+                    "user_href": "/profile/Pawel-Wludyka"
+                },
+                {
+                    "user_id": "Rajasekhar Reddy Narahari",
+                    "user_href": "/profile/Rajasekhar-Reddy-Narahari"
+                },
+                {
+                    "user_id": "Adam Niklaus",
+                    "user_href": "/profile/Adam-Niklaus"
+                },
+                {
+                    "user_id": "Kartik Sharma",
+                    "user_href": "/profile/Kartik-Sharma-167"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nicolas Zin",
+                "href": "/profile/Nicolas-Zin"
+            },
+            "answer_text": "Personaly I manage to connect a e-paper screen (from Pervasive Display MpicoSys 10.2\" TCM), and write a python script to: show me the timefetch and show me the weather forecast (the screenshot is from last winter)fetch and show me the next bus coming in at my nearest bus stop: What I like a lot: contrary to an \u201cactive\u201d screen (like a computer screen), it fits perfectly in the living room, it doesn\u2019t disturb/attract the eyes. So it better integrates into the room. I did my own \u201cGoogle Home Hub\u201d sort of, but 2 years ago. ",
+            "date": "Answered October 11, 2018",
+            "views": "16",
+            "upvotes": " View 21 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bineesh Balasubramanian",
+                    "user_href": "/profile/Bineesh-Balasubramanian"
+                },
+                {
+                    "user_id": "Susanna",
+                    "user_href": "/profile/Susanna-119"
+                },
+                {
+                    "user_id": "Vaibhav Paliwal",
+                    "user_href": "/profile/Vaibhav-Paliwal-17"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akashdeep Jassal",
+                "href": "/profile/Akashdeep-Jassal"
+            },
+            "answer_text": "Raspberry Pi has many uses for me .At some point I was controlling my room lights with it and now I'm about to finish my four node Raspberry Pi cluster which I may use as a big data cluster or a server . Other things that I have done is home surveillance and a smart parking system . We were about to implement smart attendance system in our college with Raspberry Pi but dropped that idea as it's costly . A sneak peek at my yet to be finished cluster and that's the coolest thing I have done with my Raspberry Pi . I will use it as my hadoop mapreduce big data cluster .  ",
+            "date": "Answered January 16, 2017",
+            "views": "879",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Krause",
+                    "user_href": "/profile/David-Krause"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marco-Luis Salcedo Tovar",
+                "href": "/profile/Marco-Luis-Salcedo-Tovar"
+            },
+            "answer_text": "Hello there, Some time ago I was playing with my (new in those days) camera module, here is the album link with some comments: RasPiCam | Facebook Another album, this time is the Raspberry Pi Camera Module plastic mount assembly: Raspberry-Pi Experiments: Camera Mount for Raspberry Pi Camera Some pictures of the final assembly of the Raspberry Pi Camera. At some point this will housed in a weather resistant enclosure for taking outdoors videos or stills: Raspberry-Pi Experiments: Raspberry Pi Camera, final assembly This time we resurrect this device of her well gained rest to support the data processing of my new research paper on the oven: Raspberry-Pi Experiments: YV1HX server backs online! ",
+            "date": "Updated October 27, 2016",
+            "views": "14",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "MasonHsieh MasonHsieh",
+                    "user_href": "/profile/MasonHsieh-MasonHsieh"
+                },
+                {
+                    "user_id": "David Bowman",
+                    "user_href": "/profile/David-Bowman"
+                },
+                {
+                    "user_id": "Ananyaja Debadipta",
+                    "user_href": "/profile/Ananyaja-Debadipta"
+                },
+                {
+                    "user_id": "Varun Malyala",
+                    "user_href": "/profile/Varun-Malyala"
+                },
+                {
+                    "user_id": "Nupul Kukreja",
+                    "user_href": "/profile/Nupul-Kukreja"
+                },
+                {
+                    "user_id": "Ron Gross",
+                    "user_href": "/profile/Ron-Gross"
+                },
+                {
+                    "user_id": "Franheit Sangapta Manullang",
+                    "user_href": "/profile/Franheit-Sangapta-Manullang"
+                },
+                {
+                    "user_id": "Mike Gnanakone",
+                    "user_href": "/profile/Mike-Gnanakone"
+                },
+                {
+                    "user_id": "Varrun Ramani",
+                    "user_href": "/profile/Varrun-Ramani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mariz Melo",
+                "href": "/profile/Mariz-Melo"
+            },
+            "answer_text": "What I've tried so far:1. Media center with XBMC (with airplay for iphone/ipad)2. Laptop replacement... using Motorola dock3. Local web stage server4. Git server with external hard drive5. Video game machine ",
+            "date": "Answered December 17, 2012",
+            "views": "21",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andre Casado",
+                    "user_href": "/profile/Andre-Casado"
+                },
+                {
+                    "user_id": "David Hsu",
+                    "user_href": "/profile/David-Hsu-10"
+                },
+                {
+                    "user_id": "Chandra Shekhar Menaria",
+                    "user_href": "/profile/Chandra-Shekhar-Menaria-1"
+                },
+                {
+                    "user_id": "Jacob Schwartz",
+                    "user_href": "/profile/Jacob-Schwartz-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sony Arouje",
+                "href": "/profile/Sony-Arouje"
+            },
+            "answer_text": "I have created an Aeroponic controller using Raspberry pi, also I created a mobile app to set different parameters, changing the interval, switch of Motor, etc. You can find more details here Raspberry Pi controlled Aeroponic System V2  Currently I am working on a Farm automation system with multiple Arduinos and Raspberry pi as the brain. All communicate to Raspberry pi via Radio Frequency (XBee). More details here Farm Automation system based on Arduino and Raspberrypi    ",
+            "date": "Answered March 16, 2016",
+            "views": "19",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shady Ahmed",
+                    "user_href": "/profile/Shady-Ahmed-6"
+                },
+                {
+                    "user_id": "Rudra Joshi",
+                    "user_href": "/profile/Rudra-Joshi-14"
+                },
+                {
+                    "user_id": "Prasanna Kumar",
+                    "user_href": "/profile/Prasanna-Kumar-347"
+                },
+                {
+                    "user_id": "Sumati Shambhavi",
+                    "user_href": "/profile/Sumati-Shambhavi"
+                },
+                {
+                    "user_id": "Gage Vanegas",
+                    "user_href": "/profile/Gage-Vanegas"
+                },
+                {
+                    "user_id": "Navin Kumar",
+                    "user_href": "/profile/Navin-Kumar-351"
+                },
+                {
+                    "user_id": "Soum Biki",
+                    "user_href": "/profile/Soum-Biki"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Oleander Me",
+                "href": "/profile/Oleander-Me"
+            },
+            "answer_text": "My partner made this interactive mirror. If you would like to hear more about the details behind it, just let me know and I can put you in touch with him :) It is now also connected to our \u201cfamily calendar\u201d and the information is displayed in the top left corner, under the time/date bit. (those pictures are from good few months back)       ",
+            "date": "Answered September 16, 2016",
+            "views": "782",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andrei Dicu",
+                    "user_href": "/profile/Andrei-Dicu-1"
+                },
+                {
+                    "user_id": "Robin Bussell",
+                    "user_href": "/profile/Robin-Bussell"
+                },
+                {
+                    "user_id": "David Bowman",
+                    "user_href": "/profile/David-Bowman"
+                },
+                {
+                    "user_id": "Mitch Siegel",
+                    "user_href": "/profile/Mitch-Siegel-2"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "Varun Malyala",
+                    "user_href": "/profile/Varun-Malyala"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tim Elliot",
+                "href": "/profile/Tim-Elliot"
+            },
+            "answer_text": "Here's the stuff I thought up and started implementing in the first few months of owning an R-Pi:- range safety controller (raises red flag, sounds warning horn, energises firing circuits, sounds all-clear, hauls down flag)- emulation of a 1960s computer game for the IBM 7094- time-lapse camera- traffic counter and speed measurement- controller for robot arm- servo-controlled equatorial mount for sunsightsPLEASE NOTE I am absolutely not any kind of creative genius - this is just the effect the Pi had on me. ",
+            "date": "Answered May 31, 2015",
+            "views": "23",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                },
+                {
+                    "user_id": "Shivram Swaminathan",
+                    "user_href": "/profile/Shivram-Swaminathan"
+                },
+                {
+                    "user_id": "Frederic Cerfvol",
+                    "user_href": "/profile/Frederic-Cerfvol-2"
+                },
+                {
+                    "user_id": "Aakash Sajwan",
+                    "user_href": "/profile/Aakash-Sajwan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chouaib Hamrouche",
+                "href": "/profile/Chouaib-Hamrouche"
+            },
+            "answer_text": "With a group of friends we managed to make a fully functioning tablet with the use of Raspberry Pi. Well we have designed our custom PCB that contains other modules like Wifi/BT, Micro-controller, and Power Management. Other connectors like Micro HDMI, USB-C, USB-A\u2026 but in the heart it runs on Raspberry Pi Compute Module CM3. Add to that a battery, 8 inch touch screen and 3D printed case and here you go! you can see it in action in this video: https://www.youtube.com/watch?time_continue=117&v=ivkR3tvci1Q&feature=emb_logo Every developer can enjoy making his projects anywhere anytime. More info from the official website: CutiePi tablet - Your Pi Projects, Untethered  [Image Source: CutiePi tablet - Your Pi Projects, Untethered] ",
+            "date": "Answered June 19, 2020",
+            "views": "695",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ashank D'souza",
+                    "user_href": "/profile/Ashank-Dsouza"
+                },
+                {
+                    "user_id": "Nikola Samardzija",
+                    "user_href": "/profile/Nikola-Samardzija"
+                },
+                {
+                    "user_id": "Ed Oyama",
+                    "user_href": "/profile/Ed-Oyama"
+                },
+                {
+                    "user_id": "Sriram Tanikella",
+                    "user_href": "/profile/Sriram-Tanikella"
+                },
+                {
+                    "user_id": "Rohit Karadkar",
+                    "user_href": "/profile/Rohit-Karadkar"
+                },
+                {
+                    "user_id": "Sidharth Makhija",
+                    "user_href": "/profile/Sidharth-Makhija"
+                },
+                {
+                    "user_id": "Sharan Gowda",
+                    "user_href": "/profile/Sharan-Gowda"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sriniv-Sampathirao"
+                },
+                {
+                    "user_id": "Karan Shah",
+                    "user_href": "/profile/Karan-Shah-7"
+                },
+                {
+                    "user_id": "Manoj Madanmohan",
+                    "user_href": "/profile/Manoj-Madanmohan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amitabh Saran",
+                "href": "/profile/Amitabh-Saran"
+            },
+            "answer_text": "I have connected my HP Deskjet color printer F4400 to Raspberry Pi and am able to print wirelessly from my iPad, iPhone, Windows 7 and Ubuntu laptop. ",
+            "date": "Updated September 12, 2014",
+            "views": "35",
+            "upvotes": " View 17 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "PRATEEK GUPTA",
+                    "user_href": "/profile/PRATEEK-GUPTA-679"
+                },
+                {
+                    "user_id": "Mickael Hich",
+                    "user_href": "/profile/Mickael-Hich"
+                },
+                {
+                    "user_id": "David Bowman",
+                    "user_href": "/profile/David-Bowman"
+                },
+                {
+                    "user_id": "An Truong",
+                    "user_href": "/profile/An-Truong-9"
+                },
+                {
+                    "user_id": "Ananyaja Debadipta",
+                    "user_href": "/profile/Ananyaja-Debadipta"
+                },
+                {
+                    "user_id": "Ian Morris",
+                    "user_href": "/profile/Ian-Morris-22"
+                },
+                {
+                    "user_id": "Calvin Huang",
+                    "user_href": "/profile/Calvin-Huang"
+                },
+                {
+                    "user_id": "Varun Malyala",
+                    "user_href": "/profile/Varun-Malyala"
+                },
+                {
+                    "user_id": "Joe Mescher",
+                    "user_href": "/profile/Joe-Mescher"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohammad Hamid",
+                "href": "/profile/Mohammad-Hamid-5"
+            },
+            "answer_text": "I know a few people who created mini home media centers with it. From what I've seen, XBMC works pretty well on it. All you really need to make it work is an HDMI cable, SD card, Micro-USB cable for power, USB keyboard or remote, and obviously a raspberry pi.  If you're interested, here are two links to help you get started:  Build a $35 Media Center with Raspbmc and Raspberry Pi XBMC ",
+            "date": "Answered December 11, 2012",
+            "views": "47",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mansi Singh",
+                    "user_href": "/profile/Mansi-Singh-915"
+                },
+                {
+                    "user_id": "Anurag Pandey",
+                    "user_href": "/profile/Anurag-Pandey-880"
+                },
+                {
+                    "user_id": "Sai Krishna",
+                    "user_href": "/profile/Sai-Krishna-3184"
+                },
+                {
+                    "user_id": "Pratyush Adhikary",
+                    "user_href": "/profile/Pratyush-Adhikary-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ayush Dhruw",
+                "href": "/profile/Ayush-Dhruw-2"
+            },
+            "answer_text": "I Am Just A Beginner My This is my 2nd Project With Raspberry Pi & Node Red Home automation with Raspberry Pi 3 and Node-RED Node-RED is a visual tool for wiring the Internet of Things that can be run on a Raspberry Pi and allows for rapid prototyping of projects. In this tutorial we will first set up Node-RED on a Raspberry Pi 2, before creating a flow that will read a temperature sensor and control a LightwaveRF mains socket.  You Can Check In Connstruction & Working Here[1]  Footnotes[1] IOT Based Home Automation With Raspberry Pi And Node RED",
+            "date": "Answered April 22, 2019",
+            "views": "21",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andre Casado",
+                    "user_href": "/profile/Andre-Casado"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Meghna Kapoor",
+                "href": "/profile/Meghna-Kapoor-3"
+            },
+            "answer_text": "It wasn\u2019t coolest but stupid. I had a submission and my alcohol sensor refused to had any interaction with pi. My judge for the show, ttl logic couldn\u2019t arrive on time so I had to put a mediator in between. So , the sensor would whisper it to arduino and which passed the info to pi. I doubt, if someone will ever use this in their car . I won\u2019t recommend it. ",
+            "date": "Answered April 27, 2019",
+            "views": "156",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Christopher Szekeres",
+                "href": "/profile/Christopher-Szekeres"
+            },
+            "answer_text": "The raspberry Pi was designed to help a population that has spent its years consuming technology, understand how the technology they enjoy works. In the 80's and 90's people loved to tinker and design new things. Unfortunately this has been lost on today's generations.  The people over at Raspberry Pi thought up a clever solution to this problem and built a small computer that can fit in your pocket, that is also capable of using Linux based code to do just about anything.  Some popular raspberry pi projects are making personal arcade machines and video game consoles and other projects include things like making code locks. Some really cool creations have been automatic pet feeders and whether monitoring systems. However the potential of the raspberry pi is only limited by your imagination! Hope this helps! ",
+            "date": "Answered August 1, 2015",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Andre Casado",
+                    "user_href": "/profile/Andre-Casado"
+                },
+                {
+                    "user_id": "Ludo Dutat",
+                    "user_href": "/profile/Ludo-Dutat"
+                },
+                {
+                    "user_id": "Bob Marley",
+                    "user_href": "/profile/Bob-Marley-294"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John A. Tamplin",
+                "href": "/profile/John-A-Tamplin-1"
+            },
+            "answer_text": "Record data from all 4 CAN buses in my car simultaneously at the track, in particular capturing data about drivetrain temperature:  I used 4 CANables (An Open-Source USB to CAN Adapter) connected to a small USB hub, and then wired to the diagnostic connector under the center console. A small latching pushbutton with LED is wired up to GPIO pins to start/stop recording and show recording status. ",
+            "date": "Answered September 14, 2016",
+            "views": "11",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kartik Verma",
+                    "user_href": "/profile/Kartik-Verma-6"
+                },
+                {
+                    "user_id": "Khaled Charkie",
+                    "user_href": "/profile/Khaled-Charkie"
+                },
+                {
+                    "user_id": "Pradeep Sharma",
+                    "user_href": "/profile/Pradeep-Sharma-51"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robomart",
+                "href": "/profile/Robomart-1"
+            },
+            "answer_text": "WALL MOUNTED CALENDAR USING RASPBERRY-PI As we all know, Raspberry pi is a unique trendy gadget with high demanding approach not only in India but all across the globe. It\u2019s used for entertainment purposes moreover its functionality caters domestic purposes too. Students are keener of using as it provides games and information of programming and hi-tech technological gadgets. Raspberry pi is a small computer that is easily attached to various monitor devices. Raspberry pi in India gears a high volume that every Indian home is set with it. Its educational importance, entertainment and latest versions of technology make it a precious asset.From Raspberry Pi Controller Board, We can work on so many Robotics Project.Today we are working on Wall Mounted Google Calendar. For more details please visit - https://www.robomart.com/blog/2015/08/20/wall-mounted-calendar-raspberry-pi/ ",
+            "date": "Answered August 27, 2015",
+            "views": "2",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jawad Jaffer",
+                    "user_href": "/profile/Jawad-Jaffer"
+                },
+                {
+                    "user_id": "Vinod Madhu",
+                    "user_href": "/profile/Vinod-Madhu"
+                },
+                {
+                    "user_id": "Mitch Siegel",
+                    "user_href": "/profile/Mitch-Siegel-2"
+                },
+                {
+                    "user_id": "Vic Shybayev",
+                    "user_href": "/profile/Vic-Shybayev"
+                },
+                {
+                    "user_id": "Hrishi Rao",
+                    "user_href": "/profile/Hrishi-Rao-5"
+                },
+                {
+                    "user_id": "Atul Mirajkar",
+                    "user_href": "/profile/Atul-Mirajkar"
+                },
+                {
+                    "user_id": "Shane Shennan",
+                    "user_href": "/profile/Shane-Shennan"
+                },
+                {
+                    "user_id": "Patrick Keane",
+                    "user_href": "/profile/Patrick-Keane-1"
+                },
+                {
+                    "user_id": "Vazha Vili",
+                    "user_href": "/profile/Vazha-Vili"
+                },
+                {
+                    "user_id": "Ved Antani",
+                    "user_href": "/profile/Ved-Antani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "George C. Privon",
+                "href": "/profile/George-C-Privon"
+            },
+            "answer_text": "I am using mine as a mini home server. The primary use is as a \"cloud\" server (using the OwnCloud software, https://owncloud.org/) to synchronize my contacts and calendar between my computers and my phone. ",
+            "date": "Updated June 3, 2013",
+            "views": "54",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Apeksha Singhal",
+                    "user_href": "/profile/Apeksha-Singhal-3"
+                },
+                {
+                    "user_id": "Suthin Surendran",
+                    "user_href": "/profile/Suthin-Surendran"
+                },
+                {
+                    "user_id": "Harish S",
+                    "user_href": "/profile/Harish-S-121"
+                },
+                {
+                    "user_id": "Arun Sridhar",
+                    "user_href": "/profile/Arun-Sridhar-1"
+                },
+                {
+                    "user_id": "Kong Wong, Ivan",
+                    "user_href": "/profile/Kong-Wong-Ivan"
+                },
+                {
+                    "user_id": "Elva Cabrera",
+                    "user_href": "/profile/Elva-Cabrera-1"
+                },
+                {
+                    "user_id": "Piyush Rai",
+                    "user_href": "/profile/Piyush-Rai-10"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ankit Rajpoot",
+                "href": "/profile/Ankit-Rajpoot"
+            },
+            "answer_text": "I built an automated watering system for my small balcony garden using a Raspberry Pi. It takes care of watering the plants whenever I am traveling. I hooked up a Raspberry Pi to a relay board and wrote multiple python scripts to control a water pump. It also runs a web interface that lets me check the system status and watering logs. I also added the capability to trigger the pump remotely from the web interface. Raspberry PI Based DIY Automated Watering System for Your Garden  ",
+            "date": "Answered December 21, 2018",
+            "views": "373",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Khaled Charkie",
+                    "user_href": "/profile/Khaled-Charkie"
+                },
+                {
+                    "user_id": "Prateek Jain",
+                    "user_href": "/profile/Prateek-Jain-19"
+                },
+                {
+                    "user_id": "Michael Okuboyejo",
+                    "user_href": "/profile/Michael-Okuboyejo"
+                },
+                {
+                    "user_id": "Adesh Atole",
+                    "user_href": "/profile/Adesh-Atole"
+                },
+                {
+                    "user_id": "Manoj Madanmohan",
+                    "user_href": "/profile/Manoj-Madanmohan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Khairul Shahid",
+                "href": "/profile/Khairul-Shahid"
+            },
+            "answer_text": "So far the coolest thing I've done is running a Bitcoin mining software on it, 24x7 for few months. Then Bitcoin price drop and mining useless, I turn it a credit card web server for development purposes . Did blog about it here : Install Linux On A Raspberry Pi  ",
+            "date": "Answered December 6, 2015",
+            "views": "244",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Anil Patrick",
+                "href": "/profile/Anil-Patrick"
+            },
+            "answer_text": "Compared to the others, my coolest experiment with the Raspberry Pi pales. Anyway, here it is. I've converted the Raspberry Pi into a home media server to play movies, play YouTube videos and drive my other media experiments. It's powered by Raspbmc. I use the XBMC Remote on android to control this media center from the phone. ",
+            "date": "Updated September 12, 2014",
+            "views": "36",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Thangamuthu Venugopal",
+                    "user_href": "/profile/Thangamuthu-Venugopal"
+                },
+                {
+                    "user_id": "David Bowman",
+                    "user_href": "/profile/David-Bowman"
+                },
+                {
+                    "user_id": "Ananyaja Debadipta",
+                    "user_href": "/profile/Ananyaja-Debadipta"
+                },
+                {
+                    "user_id": "Dhruv Kapur",
+                    "user_href": "/profile/Dhruv-Kapur"
+                },
+                {
+                    "user_id": "Ian Morris",
+                    "user_href": "/profile/Ian-Morris-22"
+                },
+                {
+                    "user_id": "Jatin Batra",
+                    "user_href": "/profile/Jatin-Batra-1"
+                },
+                {
+                    "user_id": "Varun Malyala",
+                    "user_href": "/profile/Varun-Malyala"
+                },
+                {
+                    "user_id": "Ajit Anbiah",
+                    "user_href": "/profile/Ajit-Anbiah"
+                },
+                {
+                    "user_id": "David Lee",
+                    "user_href": "/profile/David-Lee-7"
+                },
+                {
+                    "user_id": "Mike Gnanakone",
+                    "user_href": "/profile/Mike-Gnanakone"
+                },
+                {
+                    "user_id": "Varrun Ramani",
+                    "user_href": "/profile/Varrun-Ramani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matthew Wrobel",
+                "href": "/profile/Matthew-Wrobel"
+            },
+            "answer_text": "Unfortunately, the RbPi and especially version 2 are so much more powerful than the Arduino \"toy\" microcontrollers.... that they are used in a cool professional/industrial application that I can't talk about :( It's seems like not a useful answer, but I just wanted to point out that there's probably a bunch of people reading this thinking \"I wish I could talk about it\"...and so you see mostly neato hobby applications that seem to involve/revolve-around the residence. ",
+            "date": "Answered September 22, 2015",
+            "views": "375",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Yuvaraj Loganathan",
+                "href": "/profile/Yuvaraj-Loganathan"
+            },
+            "answer_text": "You can build an FM transmitter in couple of minutes using a 10 inch length  wire. Turning the Raspberry Pi Into an FM Transmitter Edit 1 10 Raspberry Pi creations that show how amazing the tiny PC can be ",
+            "date": "Updated January 4, 2013",
+            "views": "37",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Eli Minkoff",
+                    "user_href": "/profile/Eli-Minkoff"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jitesh Saini",
+                "href": "/profile/Jitesh-Saini-12"
+            },
+            "answer_text": "I think i am yet to do the coolest thing with Raspberry Pi. As of now, I have been able use it for creating a \u201cWeb application based home automation system\u201d and also made a robot which can be controlled through Web based GUI. I like to mix Web programming with Python to create my projects. These are few videos of my work:- Web application based home automation system 2. Robot with camera and range sensor, controlled through Web GUI  ",
+            "date": "Answered October 17, 2019",
+            "views": "112",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Gary Hall",
+                "href": "/profile/Gary-Hall-34"
+            },
+            "answer_text": "I've got a couple of Raspberry Pi's and I teach kids how to program the 4 we have at school too. Some interesting things that I've done with them: Speaking weather forecast Installing FreeBSD Teaching students how to write scripts Running a CMS on the model A Automated tweeting ",
+            "date": "Answered April 23, 2016",
+            "views": "909",
+            "upvotes": " Answer requested by Vicky Gill",
+            "upvoters": [
+                {
+                    "user_id": "Rob Crofts",
+                    "user_href": "/profile/Rob-Crofts"
+                },
+                {
+                    "user_id": "Rachel Tang",
+                    "user_href": "/profile/Rachel-Tang-55"
+                },
+                {
+                    "user_id": "Framk Lee",
+                    "user_href": "/profile/Framk-Lee"
+                },
+                {
+                    "user_id": "Cheng Wilson",
+                    "user_href": "/profile/Cheng-Wilson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Darren Compton",
+                "href": "/profile/Darren-Compton"
+            },
+            "answer_text": "Not sure if this is cool, but I installed an Rune Audio image on to PI 3 and connected some pc speakers I had lying around and then created a network share where I had my music stored on my main pc. I then added the network share to Rune Audio and then installed the Rune Audio Android App on to my phone and now I have the beginnings of a Multi-Room Music Player ",
+            "date": "Answered February 11, 2017",
+            "views": "340",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dilan Omer",
+                    "user_href": "/profile/Dilan-Omer"
+                },
+                {
+                    "user_id": "Sean Lentz",
+                    "user_href": "/profile/Sean-Lentz-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jarvan Hu",
+                "href": "/profile/Jarvan-Hu"
+            },
+            "answer_text": "Our team make an amazing case CrowPi for people to master Raspberry Pi. It can help you get hands on Raspberry Pi easier. It would be extremely friendly for beginners to make their own projects followed our step-by-step tutorials. There are so many things you can do with CrwoPi. Here are some examples. Take photos or videos  Make NFC Trigger  Build Water flow LED with Scratch  You can visit our Kickstarter campaign page to know more. >>CrowPi- Lead You Go from Zero to Hero With Raspberry Pi ",
+            "date": "Answered May 9, 2018",
+            "views": "193",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Varun Malyala",
+                    "user_href": "/profile/Varun-Malyala"
+                },
+                {
+                    "user_id": "Ananyaja Debadipta",
+                    "user_href": "/profile/Ananyaja-Debadipta"
+                },
+                {
+                    "user_id": "Ian Morris",
+                    "user_href": "/profile/Ian-Morris-22"
+                },
+                {
+                    "user_id": "Anshul Jain",
+                    "user_href": "/profile/Anshul-Jain-36"
+                },
+                {
+                    "user_id": "Mike Gnanakone",
+                    "user_href": "/profile/Mike-Gnanakone"
+                },
+                {
+                    "user_id": "Varrun Ramani",
+                    "user_href": "/profile/Varrun-Ramani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christopher Hall",
+                "href": "/profile/Christopher-Hall-4"
+            },
+            "answer_text": "Only really simple things so far including: E-Ink clockAlert lamp that displays animated 8x8 RGB display on server faultUsing it as a status display (really only VNC client but makes use of the fact you can use the GPU to rotate to portrait very easily)Colour changing LCD clock this was an attempt to use Rust to create simple GUI but ended up a lots of unsafe X11 library calls",
+            "date": "Answered May 9, 2019",
+            "views": "399",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arun Thennaram Vakkayil",
+                    "user_href": "/profile/Arun-Thennaram-Vakkayil"
+                },
+                {
+                    "user_id": "Jacob Schwartz",
+                    "user_href": "/profile/Jacob-Schwartz-11"
+                },
+                {
+                    "user_id": "Sri Harsha",
+                    "user_href": "/profile/Sri-Harsha-241"
+                },
+                {
+                    "user_id": "Bill Shackleton",
+                    "user_href": "/profile/Bill-Shackleton"
+                },
+                {
+                    "user_id": "Eric Jones",
+                    "user_href": "/profile/Eric-Jones-903"
+                },
+                {
+                    "user_id": "Jeremy Miles",
+                    "user_href": "/profile/Jeremy-Miles"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henry Jeynes",
+                "href": "/profile/Henry-Jeynes"
+            },
+            "answer_text": "I set up a fully functional website server. I used the Pi Zero, which costs $5. I also bought an Ethernet adapter ($10), a micro SD card ($10), and a two-pack of OTG cables ($5). The total cost was less than the standard $30 Pi 3. Unfortunately, due to the terms of service of my ISP, I can't use it as a proper server. It worked very nicely as a home server, running Apache and Partkeepr. And it fits in the palm of your hand. ",
+            "date": "Answered June 16, 2016",
+            "views": "917",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ian Sawyer",
+                "href": "/profile/Ian-Sawyer"
+            },
+            "answer_text": "You can turn any HD TV into a smart TV with full network and internet connectivity, either wired or wireless.  Other than the power supply, all you need to add is an HDMI cable, an infra-red or bluetooth remote controller or mini-keyboard and a wireless USB stick if you don't have a handy ethernet connection to your home network. ",
+            "date": "Answered December 17, 2012",
+            "views": "29",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Will Wang",
+                    "user_href": "/profile/Will-Wang-52"
+                },
+                {
+                    "user_id": "William Daland",
+                    "user_href": "/profile/William-Daland"
+                },
+                {
+                    "user_id": "Rodrigo Tello",
+                    "user_href": "/profile/Rodrigo-Tello-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stuart Dunstan",
+                "href": "/profile/Stuart-Dunstan"
+            },
+            "answer_text": "Use it as a basis for learning electronics, via the GPIO pins, run a headless server, turn a TV into an internet connected edu/entertainment screen.Maybe even build a robot around it. ",
+            "date": "Answered September 26, 2012",
+            "views": "18",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sagar Shukla",
+                    "user_href": "/profile/Sagar-Shukla"
+                },
+                {
+                    "user_id": "Adesh Atole",
+                    "user_href": "/profile/Adesh-Atole"
+                },
+                {
+                    "user_id": "Garion Hall",
+                    "user_href": "/profile/Garion-Hall"
+                },
+                {
+                    "user_id": "Mani Cavalieri",
+                    "user_href": "/profile/Mani-Cavalieri"
+                },
+                {
+                    "user_id": "Long Zhang",
+                    "user_href": "/profile/Long-Zhang-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mendel Cooper",
+                "href": "/profile/Mendel-Cooper"
+            },
+            "answer_text": "Hooked it up to communicate with an Arduino via thehardware serial port.The Raspberry Pi - Arduino Connection ",
+            "date": "Answered February 9, 2014",
+            "views": "23",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                },
+                {
+                    "user_id": "David Kittrell",
+                    "user_href": "/profile/David-Kittrell"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Urwin",
+                "href": "/profile/Richard-Urwin-1"
+            },
+            "answer_text": " This sealed terrarium monitors its temperature and humidity and can be lit in any colour and brightness. It has its own web server which sits on the local WiFi and allows its owner to see how it is doing or change the lighting to fit the mood or decor. The hardest part was that one of the libraries required root privileges and that isn\u2019t something to give a web server. So the hard work is done by a daemon listening on a named pipe. The webserver sends commands down the pipe. ",
+            "date": "Answered November 1, 2018",
+            "views": "152",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Roger Bischof",
+                    "user_href": "/profile/Roger-Bischof"
+                },
+                {
+                    "user_id": "Hardik Tarpara",
+                    "user_href": "/profile/Hardik-Tarpara"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhiraj Tiwari",
+                "href": "/profile/Abhiraj-Tiwari"
+            },
+            "answer_text": "Watch this.  I would say that you could do possibly anything you could think of. Apart from the list in website. You can do home automationLearn programming.Play music.Enable apple's airplay and airprint in any gadget Use it to make music using sonic pi.Possibilities are endless you just need the beat idea that YOU think is cool. Hope you enjoy!! ",
+            "date": "Answered April 19, 2016",
+            "views": "870",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Kittrell",
+                "href": "/profile/David-Kittrell"
+            },
+            "answer_text": "I built an eight-RPi \u201cmicro cluster\u201d to experiment with parallel coding of text analysis methods. It\u2019s hardly cutting edge but it gave me the ability to test different approaches for a fraction of the cost of all but the least espensive commercial cloud providers. In a portable chassis. <g> ",
+            "date": "Answered October 31, 2018",
+            "views": "105",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Vedika Hansaria",
+                    "user_href": "/profile/Vedika-Hansaria"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hemant Kumar",
+                "href": "/profile/Hemant-Kumar-663"
+            },
+            "answer_text": "I created a real time temperature and humidity monitoring dashboard for my home! The real time graphs look really awesome, knowing that they\u2019re a measurement of something physical. Here\u2019s how I did it: Setting up Grafana dashboard for monitoring Temperature and Humidity using InfluxDb and Telegraf on Raspberry Pi. ",
+            "date": "Answered February 24, 2019",
+            "views": "136",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Hardik Tarpara",
+                    "user_href": "/profile/Hardik-Tarpara"
+                },
+                {
+                    "user_id": "Roomman Israili",
+                    "user_href": "/profile/Roomman-Israili"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jayagopal Kannan",
+                "href": "/profile/Jayagopal-Kannan"
+            },
+            "answer_text": "Always 'ON' torrent boxpersonal cloud dropboxhome automation / details loggerPersonal meteorological station to name a few",
+            "date": "Answered September 6, 2015",
+            "views": "746",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ananyaja Debadipta",
+                    "user_href": "/profile/Ananyaja-Debadipta"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Varun Malyala",
+                "href": "/profile/Varun-Malyala"
+            },
+            "answer_text": "You can create your Wall-E by hooking up your solar panel,and with video camera and sound to your Raspberry Pi. You can connect it with Arduino Micro controller and make your Wall-E movable. You can even automate it to do various things ",
+            "date": "Answered November 9, 2013",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Durborow",
+                    "user_href": "/profile/Joseph-Durborow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian Hendry",
+                "href": "/profile/Ian-Hendry-11"
+            },
+            "answer_text": "Me? , I would rather use a mix of different microcontroller boards for projects, and use the Pi for a small Linux computer, and a media player with HiFi sound. I have bought a zero W and a paper white display, but have not got round to fixing it up. ",
+            "date": "Answered September 11, 2018",
+            "views": "46",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Kinshuk Kar",
+                    "user_href": "/profile/Kinshuk-Kar"
+                },
+                {
+                    "user_id": "Vijay Britto",
+                    "user_href": "/profile/Vijay-Britto-1"
+                },
+                {
+                    "user_id": "Manali Bhutiyani",
+                    "user_href": "/profile/Manali-Bhutiyani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Raghu Goud",
+                "href": "/profile/Raghu-Goud"
+            },
+            "answer_text": "Running a Node JS server on raspberry pi to control lights and fans in my room  using a web application. ",
+            "date": "Answered June 12, 2013",
+            "views": "15",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sean Lentz",
+                    "user_href": "/profile/Sean-Lentz-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Edward John",
+                "href": "/profile/Edward-John-65"
+            },
+            "answer_text": "Well, here asking about Raspberry pi what you did while in you last Project Else career life .Here are some when nobody knows about uses of Raspberry pi. How to implement and purposes for Raspberry Pi,, ",
+            "date": "Answered August 26, 2020",
+            "views": "37",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tim Rowledge",
+                "href": "/profile/Tim-Rowledge"
+            },
+            "answer_text": "Well I got paid for four years to work for the Pi foundation, making Scratch much, much, better. One of the coolest jobs I ever had, to be honest. Nicely paid and I was helping literally millions of kids. ",
+            "date": "Answered April 12, 2019",
+            "views": "89",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Ashish Kumar",
+                    "user_href": "/profile/Ashish-Kumar-762"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henry Underwood",
+                "href": "/profile/Henry-Underwood-2"
+            },
+            "answer_text": "I haven't personally used a rasberry pi but you can make all sorts of creations from them. A few ideas would be your own diy robot, media server, network switch ",
+            "date": "Answered September 12, 2018",
+            "views": "14",
+            "upvotes": " Answer requested by Joseph Durborow",
+            "upvoters": [
+                {
+                    "user_id": "Rajkumar Maheshwari",
+                    "user_href": "/profile/Rajkumar-Maheshwari-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mukesh Tiwari",
+                "href": "/profile/Mukesh-Tiwari"
+            },
+            "answer_text": "I am not sure if this answers your question but Alen Ribic wrote the distributed ping  using Cloud Haskell  on Raspberry Pi. http://alenribic.com/writings/post/raspberry-pi-in-a-haskell-cloud ",
+            "date": "Answered September 2, 2012",
+            "views": "11",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Oswald Campesato",
+                "href": "/profile/Oswald-Campesato"
+            },
+            "answer_text": "I collaborated with Jesse Monroy to create Glassware (launched via a voice command) to communicate with an RPI that in turn activated a Roomba. ",
+            "date": "Answered May 19, 2014",
+            "views": "582",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Huang Harry",
+                "href": "/profile/Huang-Harry-3"
+            },
+            "answer_text": " ",
+            "date": "Answered October 12, 2018",
+            "views": "372",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Gaukhar Kambarbaeva",
+                "href": "/profile/Gaukhar-Kambarbaeva"
+            },
+            "answer_text": "Probably, not that \u201ccoolest\u201d, to say so, but quite an interesting user case of mine that you can find in the article on my blog - Run Dropbox on Raspberry Pi ",
+            "date": "Answered May 29, 2017",
+            "views": "104",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Md Saifudaullah Bin Bahrudin",
+                "href": "/profile/Md-Saifudaullah-Bin-Bahrudin"
+            },
+            "answer_text": "You can use it as a PC replacement, you can use it as a web server, you can use it to control motor, etc. It is a small computer. ",
+            "date": "Answered December 1, 2017",
+            "views": "34",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Fraser Rennie",
+                "href": "/profile/Fraser-Rennie"
+            },
+            "answer_text": "Here are some really cool projects that you can do yourself: Covert CameraApache WebserverServo Arm: ",
+            "date": "Answered May 18, 2018",
+            "views": "257",
+            "upvotes": " Answer requested by Joseph Durborow"
+        },
+        {
+            "author_info": {
+                "name": "Wes Peters",
+                "href": "/profile/Wes-Peters-2"
+            },
+            "answer_text": "I used one to blink the Christmas tree lights in Morse code. New video by Wes Peters ",
+            "date": "Answered December 2, 2017",
+            "views": "137",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Syed Balal Rumy",
+                "href": "/profile/Syed-Balal-Rumy"
+            },
+            "answer_text": "Today i build the Raspberry Pi bitcoin mining rig by following this article How to make a Raspberry Pi bitcoin mining rig ",
+            "date": "Answered January 7, 2018",
+            "views": "129",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Shayan Doust",
+                "href": "/profile/Shayan-Doust-1"
+            },
+            "answer_text": "Hi there. 20 Awesome Projects for Raspberry Pi Microcomputers ",
+            "date": "Answered July 29, 2015",
+            "views": "140",
+            "upvotes": "0"
+        }
+    ]
+}

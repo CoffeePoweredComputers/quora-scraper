@@ -1,0 +1,165 @@
+{
+    "title": "How to prove if a union b=a union c and a intersection b=a intersection c, then can you prove that b=c - Quora",
+    "tags": [
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dhaval Furia",
+                "href": "/profile/Dhaval-Furia"
+            },
+            "answer_text": "Question: How do I prove if a union b=a union c and a intersection b=a intersection c, then can you prove that b=c? Answer: Let me rephrase the question as follows: Prove that B = C given AUB = AUC and AnB = AnC Proof: Let x be an arbitrary element in B So x is in AUB (as B is a subset of AUB) So x is in AUC (as AUB = AUC) So x is in A or x is in C If x is in C, then we are done So let x be in A So x is in AnB (as x was originally in B, not it is in A as well) So x is in AnC (as AnB = AnC) So x is in C (as AnC is a subset of C) As x was an arbitrary element of B, B is a subset of C Similarly C is a subset of B Hence, B = C (as both are subsets of each other) ",
+            "date": "Answered August 2, 2020",
+            "views": "2",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aakriti Sunderum",
+                    "user_href": "/profile/Aakriti-Sunderum"
+                },
+                {
+                    "user_id": "Archana Singh",
+                    "user_href": "/profile/Archana-Singh-1520"
+                },
+                {
+                    "user_id": "Swagatam Bhattacharjee",
+                    "user_href": "/profile/Swagatam-Bhattacharjee-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Spandan Londhe",
+                "href": "/profile/Spandan-Londhe"
+            },
+            "answer_text": "n(A U B) = n(A U C) \u2026\u2026.1 n(A \u2229 B) = n(A \u2229 C)\u2026\u2026\u20262 Expanding equation 1 n(A) + n(B) \u2014 n( A \u2229 B) = n(A) + n(C) \u2014 n(A\u2229C)\u20263 Substituting 2 in equation 3 n(A) + n(B) \u2014 n(A\u2229B) = n(A) + n(C) \u2014 n(A\u2229 B) Therefore n(B) = n(C) ",
+            "date": "Answered November 26, 2018",
+            "views": "76",
+            "upvotes": " View 17 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kajal Maurya",
+                    "user_href": "/profile/Kajal-Maurya-106"
+                },
+                {
+                    "user_id": "Aditya Aware",
+                    "user_href": "/profile/Aditya-Aware-6"
+                },
+                {
+                    "user_id": "Sandeep Gupta",
+                    "user_href": "/profile/Sandeep-Gupta-1686"
+                },
+                {
+                    "user_id": "Rohit Garg",
+                    "user_href": "/profile/Rohit-Garg-216"
+                },
+                {
+                    "user_id": "Sudhi's Music Mania",
+                    "user_href": "/profile/Sudhis-Music-Mania"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Manjit-Panda-144"
+                },
+                {
+                    "user_id": "Jeet Patel",
+                    "user_href": "/profile/Jeet-Patel-59"
+                },
+                {
+                    "user_id": "K. Rangaiah",
+                    "user_href": "/profile/K-Rangaiah"
+                },
+                {
+                    "user_id": "Nitish Kumar",
+                    "user_href": "/profile/Nitish-Kumar-7341"
+                },
+                {
+                    "user_id": "Palak Agrawal",
+                    "user_href": "/profile/Palak-Agrawal-375"
+                },
+                {
+                    "user_id": "Aashvi Singhvi",
+                    "user_href": "/profile/Aashvi-Singhvi-1"
+                },
+                {
+                    "user_id": "Koga Gamer",
+                    "user_href": "/profile/Koga-Gamer"
+                },
+                {
+                    "user_id": "Sameer Dhawan",
+                    "user_href": "/profile/Sameer-Dhawan-7"
+                },
+                {
+                    "user_id": "Aaddmd Desai",
+                    "user_href": "/profile/Aaddmd-Desai"
+                },
+                {
+                    "user_id": "Suresh Tulshyani",
+                    "user_href": "/profile/Suresh-Tulshyani"
+                },
+                {
+                    "user_id": "Satvik Vinod",
+                    "user_href": "/profile/Satvik-Vinod"
+                },
+                {
+                    "user_id": "Sannidhi Venkata Subba Manikanta Swamy",
+                    "user_href": "/profile/Sannidhi-Venkata-Subba-Manikanta-Swamy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anish Sarkar",
+                "href": "/profile/Anish-Sarkar-6"
+            },
+            "answer_text": "[math] \\begin{align*} & B \\\\ & = (A \\cap B) \\cup (A^c \\cap B ) \\\\ & = (A \\cap B) \\cup \\bigl( A^c \\cap ( A \\cup B) \\bigr) \\\\ & = (A \\cap C) \\cup \\bigl( A^c \\cap ( A \\cup C) \\bigr) \\\\ & = (A \\cap C) \\cup (A^c \\cap C ) \\\\ & = C. \\end{align*} [/math] ",
+            "date": "Answered November 28, 2018",
+            "views": "42",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yash Raj",
+                    "user_href": "/profile/Yash-Raj-849"
+                },
+                {
+                    "user_id": "Abhay Katyal",
+                    "user_href": "/profile/Abhay-Katyal-1"
+                },
+                {
+                    "user_id": "Sudhi's Music Mania",
+                    "user_href": "/profile/Sudhis-Music-Mania"
+                },
+                {
+                    "user_id": "Mohammed Siddiq",
+                    "user_href": "/profile/Mohammed-Siddiq-76"
+                },
+                {
+                    "user_id": "Koga Gamer",
+                    "user_href": "/profile/Koga-Gamer"
+                },
+                {
+                    "user_id": "Tejas",
+                    "user_href": "/profile/Tejas-175"
+                },
+                {
+                    "user_id": "Vedeesh",
+                    "user_href": "/profile/Vedeesh"
+                },
+                {
+                    "user_id": "Jigar Joshi",
+                    "user_href": "/profile/Jigar-Joshi-46"
+                },
+                {
+                    "user_id": "Mithu Saha",
+                    "user_href": "/profile/Mithu-Saha-28"
+                },
+                {
+                    "user_id": "Krishna Singh",
+                    "user_href": "/profile/Krishna-Singh-710"
+                }
+            ]
+        }
+    ]
+}

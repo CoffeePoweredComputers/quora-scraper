@@ -1,0 +1,29 @@
+{
+    "title": "Which is better, 16-bit or 32-bit? - Quora",
+    "tags": [
+        "32-Bits",
+        "64-Bit"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gr\u00e9gori Mac\u00e1rio Harbs",
+                "href": "/profile/Gr\u00e9gori-Mac\u00e1rio-Harbs"
+            },
+            "answer_text": "while most people will miss the point\u2026 and say that 64 is simply better than 32 and 32 is simple better than 16\u2026 thats just not entirely true\u2026 for example while is undeniable true\u2026 that having 32bit address (4gb) is really much much better than 16bit (64kb), and that using segments on 16bit to achieve 1mb (that could had designed to handle up to 4gb!! if each segment were a 64kb block), something that 16bit consoles tend to do with bank switch (so a portion of the memory is used to view a much larger block of memory)\u2026 and the segment choice on 16bit was based on maximum amount of memory on its own time\u2026 to offer the best granularity (to make easy on memory allocation and etc\u2026) 32bit with the flat is really great\u2026 but on the other hand\u2026 with great powers come great responsability, so\u2026 32bit allowed to easily misuse stuff\u2026 as well the insane amout of power that 32bit machines were getting\u2026 so that said\u2026 16bit had some nice characteristics\u2026 it allowed code to be more compact\u2026 and it forced programmers to properly manager their memory\u2026 in 32bit if you think just having a huge array is the best arrangement you are hitting hard on a wall\u2026 so in the end you realize that you end splitting in smaller allocations. and that convenience often means misuse of memory, thats why now that we have plenty of ram\u2026 plenty of ram is wasted for convenience\u2026 so 16bit is better than 32bit in forcing BETTER conservation strategies\u2026 also while it may be a bit harder\u2026 it also enforce the programmer to be a BETTER programmer, which helps even a 32bit programmer\u2026 and 64bit is basically the opposite\u2026 it went beyond what was really required resulting mostly in a waste\u2026 backed just by laziness, and while SERVERS and really BIG data benefit from that\u2026 that is still a very small portion\u2026 and the rest only think they need that\u2026 or abuse the fact that they can use that\u2026 ARM for example designed their processors based on what GCC used to generate\u2026 and the fact that most \u201cconstants\u201d were small enough to work very well with just 8 effective bits (plus the natural shifter)\u2026 which is TRUE! \u2026 but at same time\u2026 it kills usage of packed math, and many other advanced stuff\u2026 same goes for ARM having more registers\u2026 because it NEED more\u2026 to compensate other weakness\u2026 and so on\u2026 so while its a nice design\u2026 its far from easy to tell that the 32bit ARM is better, (and the 16bit on ARM\u2026 is only 16bit on code\u2026 called \u201cthumb mode\u201d that is again a sacrifice on less commonly instructions to keep each instruction 16bit (since ARM have fixed instruction size)\u2026 and that said 64bit arm didnt did the mistake to make each instruction 64bit\u2026 as they realized that would be just stupid\u2026 so on ARM one could say that the only thing that increased was the register size\u2026 (so both on x86\u201364 and arm64) they are far from what a true 64bit would be capable but that was for compatibility reasons (and the faillure of ITANIUM), but in part because that 64bit is NOT REALLY necessary\u2026 and theres other ways (imo better but capitalism wont allow them to see), to have >4gb on 32bit and so in short\u2026 32bit may make many things easier\u2026 and being able to handle 32bit numbers as well is convenient in many cases\u2026 altough a x86 32bit processor in 16bit mode can still use 32bit registers\u2026 (and that is not really that bad\u2026 but the improvement on addressing on 32bit to add freedom\u2026 is one of the selling points of it in my opinion\u2026 freedom that was not even passed ahead to x86\u201364 because they turned it into more like 64bit RISC backed by 32bit RISC) so trying to save powers\u2026 and since only the minority of people were capable of use it properly they degraded its overall quality (and then intel learned to have similar power saving trough intelligent design)\u2026 so imo, its again capitalism that things were worse to allow more not qualified people to do stuff\u2026 so\u2026 yeah\u2026 another loss to empower people that does not value it :) ",
+            "date": "Answered October 15, 2019",
+            "views": "368",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Steve Leh",
+                "href": "/profile/Steve-Leh-1"
+            },
+            "answer_text": "32 bit is better than 16 bit. And we are up to 64 bit in Windows. It\u2019s easy to understand this: Each bit-packet of data means there are 64 bits of data to a packet as packets run through the computer at the same speed as the processor. So if we increase packet size, we can get more data per each packet, and this increases the speed of the computer. Each time the packets change to a higher bit-packet of data the computer speeds up as more data passes through the system. ",
+            "date": "Answered October 14, 2019",
+            "views": "114",
+            "upvotes": "0"
+        }
+    ]
+}

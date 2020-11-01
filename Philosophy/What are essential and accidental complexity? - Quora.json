@@ -1,0 +1,92 @@
+{
+    "title": "What are essential and accidental complexity? - Quora",
+    "tags": [
+        "Complexity"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "George Mamaladze",
+                "href": "/profile/George-Mamaladze"
+            },
+            "answer_text": "Let\u2019s reduce the scope of the answer to the essential and accidental complexity in the domain of software engineering, because that\u2019s what the tag \u201cComputer Science\u201d imply. What is a complexity of a piece of software? Even if term complexity can be interpreted very widely in general, in context of software engineering / programming it is referred mostly as combination of following two properties: Ability to understand and maintain a piece of code or a part of software system after it has been created.Big-O algorithm complexity[1] - this is the ability of an algorithm to scale while the input size is growing. It applies primarily to the processing time, but is also used for space used (e.g. in memory or on disk) by an algorithm.Complexity expectation Very often when taking a quick look at the complex piece of code an experienced professional can say whether the complexity he is observing is essential or accidental. In simple words without knowing exact implementation details he can estimate if the same problem can be solved with a less complex piece of code or not. Typical causes: When a developer is not familiar with full range of capabilities of used framework or technology, he often tends to pick-up one technique and reuse it for all purposes, even if there are better alternatives (hammer and nail syndrome[2]). Probably most problematic is ignorance of well known algorithms and data structures. For instance a lot of Java / c# developers overuse List data structure, even if an iterator, Stack or Array could be sufficient. An experienced engineer will quickly notice that there are no remove operations, so using the list is obviously oversized.A developer tends to overgeneralize a task. A friend of mine asked a programmer to write a program to print names of top 10 most profitable customers. The programmer came up with an application with complex UI giving endless possibilities of querying customer data. We programmers often forget to do minimum of what is required, trying to predict possible future requirements.Once written and working a piece of code can be optimized and simplified to reduce complexity. Nevertheless many programmers tend not to touch a running system due to lack of time and tests. The situation gets even worse when bugs are fixed under time pressure and without having tests in place. Developers try to make changes with as minimal impact as possible, without revisiting and optimizing whole piece of code. As a result complexity grows unnecessarily over the time.Footnotes[1] A beginner's guide to Big O notation[2] Law of the instrument - Wikipedia",
+            "date": "Answered November 30, 2016",
+            "views": "49",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alban Leandri",
+                    "user_href": "/profile/Alban-Leandri"
+                },
+                {
+                    "user_id": "Santhosh Ps",
+                    "user_href": "/profile/Santhosh-Ps"
+                },
+                {
+                    "user_id": "Victor Douglas Rumanski",
+                    "user_href": "/profile/Victor-Douglas-Rumanski"
+                },
+                {
+                    "user_id": "Irakli Safareli",
+                    "user_href": "/profile/Irakli-Safareli"
+                },
+                {
+                    "user_id": "Nika Chxartishvili",
+                    "user_href": "/profile/Nika-Chxartishvili-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gordon Lin",
+                "href": "/profile/Gordon-Lin-2"
+            },
+            "answer_text": "The terms Essential Complexity and Accidental Complexity are coined by Ben Moseley and Peter Marks in their paper Out of the Tarpit[1]. Their meaning on the words Essential and Accidental are pulled from Fred Brook\u2019s No Silver Bullet[2]. To summarize, the terms are defined as such: Essential Complexity is complexity inherent to the problem. It is complexity related to the problem and cannot be removed.Accidental Complexity is complexity not related to the problem. Ben Mosely and Peter Marks describe it as a \u201cmishap\u201d. It is complexity from the fault of the developer and just happens to be there.What is Software Complexity? Moseley, Marks, and Brooks don\u2019t define complexity very well. They seem to only agree that complexity is something which makes software hard to understand and difficult to program correctly. For the definition of complexity, I really like the definition given by Rich Hickey in Simple Made Easy[3]. Complexity is basically entanglement of components, ideas, etc. In my eyes, the definitions of essential and accidental complexity becomes: Essential complexity is the entanglement/combination of components/ideas in software necessary for solving the problem at hand. It cannot be avoided.Accidental complexity is the entanglement of components/ideas that is not necessary for solving the problem. This complexity is accidental because someone probably didn\u2019t think hard enough before unnecessarily tying things together. As a result, the software is harder to understand than it should be.Footnotes[1] http://shaffner.us/cs/papers/tarpit.pdf[2] http://worrydream.com/refs/Brooks-NoSilverBullet.pdf[3] Simple Made Easy ",
+            "date": "Answered December 9, 2016",
+            "views": "69",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Najeeb Shaikh",
+                    "user_href": "/profile/Najeeb-Shaikh"
+                },
+                {
+                    "user_id": "Suratin Pattanawongthai",
+                    "user_href": "/profile/Suratin-Pattanawongthai"
+                },
+                {
+                    "user_id": "Monica Nangobi",
+                    "user_href": "/profile/Monica-Nangobi"
+                },
+                {
+                    "user_id": "Leon Mak",
+                    "user_href": "/profile/Leon-Mak-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/PROGETTAZIONE-STUDIO-GB"
+                },
+                {
+                    "user_id": "Harshit Anand",
+                    "user_href": "/profile/Harshit-Anand-6"
+                },
+                {
+                    "user_id": "Andres Vidal",
+                    "user_href": "/profile/Andres-Vidal"
+                },
+                {
+                    "user_id": "Chijioke Onukem",
+                    "user_href": "/profile/Chijioke-Onukem"
+                },
+                {
+                    "user_id": "Alban Leandri",
+                    "user_href": "/profile/Alban-Leandri"
+                },
+                {
+                    "user_id": "Pierre Dufour",
+                    "user_href": "/profile/Pierre-Dufour-4"
+                }
+            ]
+        }
+    ]
+}

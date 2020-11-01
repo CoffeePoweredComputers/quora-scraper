@@ -1,0 +1,116 @@
+{
+    "title": "How to learn mathematics for machine learning - Quora",
+    "tags": [
+        "Mathematics and Machine Learning",
+        "Studying Advice",
+        "Mathematics Education",
+        "Machine Learning",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Pankesh Bamotra",
+                "href": "/profile/Pankesh-Bamotra"
+            },
+            "answer_text": "Mathematics is too vast a subject to be considered for this question. The breadth and depth of mathematical awareness you require for machine learning  totally depends on what you are learning in the subject. Keeping this in mind, let's deal with what you need to know in \"mathematics\" for  machine learning. 1. Probability and mathematical statistics  This is a fundamental requirement for machine learning and so you need to know well. When I say probability it's more than what you studied in High school and almost everything you probably not paid attention to during your undergrad. You need to know about Random variables, their distributions, probabilistic convergence, and estimation theory. That covers a major part of what you need to know here.Two of my favourite resources are:-1. Joseph Blitzstein - Harvard Stat 110 lectures 2. Larry Wasserman's book - All of statistics  2. Linear algebraLinear algebra will pop up every now and then in ML. PCA, SVD, LU decomposition, QR decomposition, symmetric matrices, othogonalization, projections, matrix operations are needed many a times. The good thing is that there are countless resources available on linear algebra.My all time favourite is Gilbert Strang's MIT lectures on linear algebra. 3. Optimisation Though only a few things from optimisation are needed most of the time, a strong foundational knowledge will help long way. You need to know Langrange multipliers, gradient descent, and primal-dual formulation. The best resource on this is Boyd and Vandenberghe's course on Convex optimisation from Stanford. 4. Calculus I wanted to put this on the top, but I'm putting it in the last just to emphasise on the fact that only a fundamental knowledge is needed in terms of calculus. Know about 3-D geometry, integration, and differentiation and you'll survive. It's the easiest to start with amongst the topic I've mentioned here. MIT has good lectures on calculus. I think with these 4 tools you'll most likely find ML easy to understand. Other than these you may find real analysis and functional analysis relevant too, but they are just formal generalisations of the topics mentioned before. ",
+            "date": "Answered October 13, 2015",
+            "views": "271",
+            "upvotes": " View 67 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Yuval Feinstein",
+                    "user_href": "/profile/Yuval-Feinstein"
+                },
+                {
+                    "user_id": "Mats Moreau",
+                    "user_href": "/profile/Mats-Moreau"
+                },
+                {
+                    "user_id": "Siwei Wang",
+                    "user_href": "/profile/Siwei-Wang-4"
+                },
+                {
+                    "user_id": "Abhishek Banerjee",
+                    "user_href": "/profile/Abhishek-Banerjee-42"
+                },
+                {
+                    "user_id": "Gaurav Pathak",
+                    "user_href": "/profile/Gaurav-Pathak-487"
+                },
+                {
+                    "user_id": "Winston Chung Jr.",
+                    "user_href": "/profile/Winston-Chung-Jr"
+                },
+                {
+                    "user_id": "Rahel Measho",
+                    "user_href": "/profile/Rahel-Measho"
+                },
+                {
+                    "user_id": "Furqat Sultonov",
+                    "user_href": "/profile/Furqat-Sultonov"
+                },
+                {
+                    "user_id": "Ankita Singh",
+                    "user_href": "/profile/Ankita-Singh-4365"
+                },
+                {
+                    "user_id": "Harsh Deo",
+                    "user_href": "/profile/Harsh-Deo-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Florian Courtial",
+                "href": "/profile/Florian-Courtial"
+            },
+            "answer_text": "Some people say that mathematics are useless for a software engineer, machine learning proves them false. Mathematics are the prerequisites for machine learning because machine learning is math. The computer is only useful to do the calculus. You'll mainly need to learn calculus, matrix calculation, linear and non linear algebra, statistics and graph calculus. Let's take a basic ML algorithm, the linear regression. The goal is to use some data to find a function which takes parameters and gives an output. Data are used to find the function and test it. In the future, we will use the function with some parameters and we will obtain an approximate output. Let's say our data are about planes, as input we have the number of miles travelled by the plane and its age. As output we have the price of the plane. I don't normalize data to keep things simple. A sample of our data could be : miles;age;price 120000;12;120000 48000;4;1500000 ... Our question is : Given the miles travelled by a plane and its age, give a price. Using linear regression (gradient descent) we will find a vector theta. This vector has two values, theta[0] and theta[1]. To find an approximate price we will multiply the miles by theta[0] and the age by theta[1] to obtain a result, which is an approximate price. For instance our algorithm could find theta = [2;-10 000] and if we have a plane 5 years old with 78 000 miles, we can than approximate the price doing 78 000 * 2 + 5 * -10 000 so 106 000 dollars. The hard part is to find the good values for theta. To do that you need some maths. You have a cost function that give you how good your theta is, this cost function tests your theta values using your data (which already have a price for a plane regarding the miles and the age). So your goal is to minimize the cost function by adjusting your theta values. The cost function to minimize is this one :  where  Using the batch gradient descent algorithm each iteration adjusts the theta values using this formula :   then you test the theta value with the previous function J(theta) and you'll see that the cost (ie. the diff between the predicted value and the real) will decrease at each iteration. As you can see this simple ML algorithm is math. The computer will be useful to compute the previous formulas.  ",
+            "date": "Updated December 16, 2015",
+            "views": "218",
+            "upvotes": " View 35 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Venom Raiders",
+                    "user_href": "/profile/Venom-Raiders"
+                },
+                {
+                    "user_id": "Naina Naina",
+                    "user_href": "/profile/Naina-Naina-118"
+                },
+                {
+                    "user_id": "Shashwat Jha",
+                    "user_href": "/profile/Shashwat-Jha-35"
+                },
+                {
+                    "user_id": "Meghashyamnaidu B",
+                    "user_href": "/profile/Meghashyamnaidu-B"
+                },
+                {
+                    "user_id": "Vrushi",
+                    "user_href": "/profile/Vrushi-1"
+                },
+                {
+                    "user_id": "Lubo Stefanov",
+                    "user_href": "/profile/Lubo-Stefanov"
+                },
+                {
+                    "user_id": "Nguyen Loc Duy",
+                    "user_href": "/profile/Nguyen-Loc-Duy"
+                },
+                {
+                    "user_id": "Abraham Jones",
+                    "user_href": "/profile/Abraham-Jones-10"
+                },
+                {
+                    "user_id": "Rafay Ghafoor",
+                    "user_href": "/profile/Rafay-Ghafoor"
+                },
+                {
+                    "user_id": "Ng Say Joe",
+                    "user_href": "/profile/Ng-Say-Joe"
+                }
+            ]
+        }
+    ]
+}

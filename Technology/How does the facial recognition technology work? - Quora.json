@@ -1,0 +1,72 @@
+{
+    "title": "How does the facial recognition technology work? - Quora",
+    "tags": [
+        "Image Recognition",
+        "Face Recognition (software techniques)",
+        "Computer Vision"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tanushri Dixit",
+                "href": "/profile/Tanushri-Dixit"
+            },
+            "answer_text": "In this day and age, when privacy and security is top priority for companies across the globe when it comes to technologically advanced devices, many entrepreneurs have not shied away from incorporating parts of the human body as security measures. These experiments have resulted in the invention of facial recognition and iris recognition software. The human face is perhaps a mathematical marvel. The placement of the nose, eyes, ears, hair and mouth is quite symmetrical and since almost no two people share the same face, it provides ideal security. Using machine learning and data science, renowned companies such as Apple and Samsung, to name a few, are using facial recognition to provide enhanced security. The way facial ID works is also quite interesting. Data scientists collect a profile of human skin colors, facial features and body measurements across continents to arrive at an understanding of how similarly or differently a human face is engineered. This information is usually collected from ATM cameras, CCTV footage or public database. Based on this information, a map of the human face is updated to the AI system of the device which then creates an outlook of how a face looks like. Using lines, angles and more commonly dots situated at unique positions, the device then creates a facial profile. When the user tries to unlock the device, the face ID system would make a copy of the face in its memory. Once the image is recorded in the device\u2019s memory, the user can use his/her face to unlock it. In layman\u2019s terms, the steps to creating a human face on paper or the steps a sketch artist takes to make real life portraits of live or dead people follow the above approach. While the former is a digital process, the latter is a manual one. But both methods follow a mathematical process of developing or capturing a face and then producing the ideal portrait. However, facial recognition is not foolproof. Real life photos or makeup can fool the system into believing that it's the user, and not an imposter, who\u2019s accessing the phone. To overcome this menace, developers will need to make the system more secure. A Gait Analytics Scanner (GAS) can possibly make facial recognition better but more research needs to be done in this matter. Sources https://www.apple.com/uk/iphone-xs/face-id/?afid=p238%7CsPZ2yNQQw-dc_mtid_20925ukn39931_pcrid_294509512479_&cid=wwa-uk-kwgo-iphone-slid---face+id-e-productid- https://www.samsung.com/global/galaxy/galaxy-s8/security/ https://us.norton.com/internetsecurity-iot-how-facial-recognition-software-works.html https://theconversation.com/facial-recognition-is-increasingly-common-but-how-does-it-work-61354 https://www.economist.com/science-and-technology/2018/07/12/the-way-people-walk-can-be-used-for-id-and-health-checks http://rapidfireart.com/2015/12/07/how-to-draw-a-face-in-8-steps/ ",
+            "date": "Answered January 3, 2019",
+            "views": "608",
+            "upvotes": " View Sharers",
+            "upvoters": [
+                {
+                    "user_id": "Zeynep K\u00fc\u00e7\u00fck",
+                    "user_href": "/profile/Zeynep-K\u00fc\u00e7\u00fck-6"
+                },
+                {
+                    "user_id": "Norman Lawson",
+                    "user_href": "/profile/Norman-Lawson-5"
+                },
+                {
+                    "user_id": "Fd Jin",
+                    "user_href": "/profile/Fd-Jin"
+                },
+                {
+                    "user_id": "Kurmendra Teja",
+                    "user_href": "/profile/Kurmendra-Teja"
+                },
+                {
+                    "user_id": "Andres Reyes",
+                    "user_href": "/profile/Andres-Reyes-7-1"
+                },
+                {
+                    "user_id": "Rishi Singh",
+                    "user_href": "/profile/Rishi-Singh-964"
+                },
+                {
+                    "user_id": "Anuj Kumar Saxena",
+                    "user_href": "/profile/Anuj-Kumar-Saxena-1"
+                },
+                {
+                    "user_id": "Aniket Vats",
+                    "user_href": "/profile/Aniket-Vats-3"
+                },
+                {
+                    "user_id": "Mwilk",
+                    "user_href": "/profile/Mwilk"
+                },
+                {
+                    "user_id": "Hanh Vu Duy",
+                    "user_href": "/profile/Hanh-Vu-Duy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Olivia Lawrence",
+                "href": "/profile/Olivia-Lawrence-39"
+            },
+            "answer_text": "The science behind Facial Recognition Every face has numerous, distinguishable landmarks, the different peaks, and valleys that make up facial features. These are called nodal points. Each human face has approximately 80 nodal points. Some critical data points are : Distance between the eyesWidth of the noseDepth of the eye socketsThe shape of the cheekbonesThe length of the jaw lineThese nodal points are measured creating a numerical code, called a faceprint, representing the face in the database. Facial recognition system internally goes through various steps. Step 1: Detection of faces Since deep learning is a more accurate method of face detection as compared to HOG + Linear SVM object detector hence it is used to locate the presence and location of a face on a frame. The face is not identified at this stage. The algorithm then extracts the 128-d feature vectors (called \u201cembeddings\u201d) that quantify each face in an image. Tracking can be done in the video once the face is detected. Step 2: Feature Extraction: A convolutional neural network is majorly used to extract features from input images. The neural network computes the 128-d embeddings for each face and then improves the weights of the network (via the triplet loss function). Triplet loss works on minimizing the distance from positive examples while maximizing the distance from negative examples. In embedding space, Euclidean distance directly corresponds to face similarity. In this manner, the network is able to learn to quantify faces and return highly discriminating embeddings suitable for face recognition.  Step 3: Train Facial Recognition model: A machine learning model is trained by providing an ML algorithm (that is, the learning algorithm) such as an SVM, k-NN classifier, Random Forest, etc. with training data to learn from. These ML algorithms help the system in identifying the faces of people. Step 4: Recognition Recognition of face is done by extracting the face from the query image and generating a 128-D vector of the face. Then, we use that vector to decide if the features extracted from the new sample are matching or not. Alignment: Face recognition system results depends upon how the face is aligned towards the camera. Hence recognition accuracy can be increased by aligning the face based on translation, rotation, and scale. Dlib library can be used to detect facial landmarks. These facial landmarks further used to align face properly using openCV.  New Challenges met by Facial Recognition (Applications) General Identity Verification: Facial recognition can play important role in identity verification like Electoral Registration, banking, electronic commerce, national IDs, passports, employee IDs. Hardware Security: With the increase in dependency of cellphones, computers for confidential work it is very important to secure the hardware. 3D facial recognition biometric can be used to elevate the level of phone and computer security. Criminal Identification Face recognition can help quickly identify suspects in the field. Face recognition system can be installed in vulnerable areas to quickly identify persons of interest. Since it only requires camera hence identification can be done from anywhere just using a cell phone camera and a centralized system. Airport Security Places like international airports are more likely to have the movement of people of interest trying to evade enforcement authorities. This presents a security challenge as well as an opportunity to catch criminals by scanning their face. Offices In these modern times, office security is the need of the hour for the development of the market as a whole which in turn will help in the development of our cities industries. So the concept of facial recognition to gain access to the office is an idea which is used to make our working area more secure. Face recognition can be used in office door access control, hardware access control and many more. Scope for future work Face recognition systems used today work under constrained conditions, these systems work much better with frontal mug-shot images with constant lighting. All current face recognition algorithms fail under the varying environmental conditions. Next generation face recognition systems will need to recognize people\u2019s face in real-time and in much less constrained situations. Identification systems must be robust in natural environments, in the presence of noise and illumination changes, cannot rely on a single modality, so the fusion with other modalities is the way this area will progress. Face Recognition | Facial Recognition using Deep Learning - CronJ Blog ",
+            "date": "Answered October 4, 2018",
+            "views": "45",
+            "upvotes": " View 14 Upvoters "
+        }
+    ]
+}

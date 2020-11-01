@@ -1,0 +1,26 @@
+{
+    "title": "How many devices can you have on private Internet access? - Quora",
+    "tags": [
+        "Internet Access",
+        "Devices",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "Q: How many devices can you have on private Internet access? I suspect you don\u2019t mean \u201cprivate Internet\u201d access. The Internet is a single public network. For a private network, you can make up your own rules and protocols, but it would require a separate physical network carry it between sites. I suspect you mean \u201cHow many devices can you have on a private network with Internet access?\u201d. This is different. In IPv4, you can use the subnet 10.0.0.0/8, which is defined as a private subnet, to connect 16777213 hosts to a single network/subnet. Basically, this is 2\u00b2\u2074-3. One address is reserved for the subnet ID, one for the broadcast address and one for the gateway router going to the Internet. This is a theoretical maximum, but in practise would be unworkable. I do not believe any NAT routers will handle this number of client devices, and the bandwidth of the gateway will also be a major constraint. For most residential implementations, the maximum is likely to be 253 (2\u2078-3) for wired connections and much lower for WiFi connections. I would not expect residential WiFi networks to handle more than 32 concurrent devices, and many will be limited to much fewer, perhaps down to 8 WiFi clients. Commercial wired networks can have much higher connectivity limits, but will probably be limited as above for WiFi networks as a WiFi network is a shared, half-duplex system. ",
+            "date": "Answered October 10, 2020",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        }
+    ]
+}

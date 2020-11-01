@@ -1,0 +1,221 @@
+{
+    "title": "How to execute a .sql file in Python - Quora",
+    "tags": [
+        "SQL Files",
+        "File Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jim Dennis",
+                "href": "/profile/Jim-Dennis-1"
+            },
+            "answer_text": "This is the sort of question that isn\u2019t even quite wrong. There isn\u2019t a standard way to \u201crun a .sql file\u201d in any system. Each database engine supports different dialects of SQL and each tool which acts as an interface to an SQL engine can support different ways of processing a file full of SQL commands. But, in any case, you\u2019re never running SQL \u201cin\u201d Python. Your running it through Python in some engine. This is conceptually a bit complicated when we talk about SQLite which is library code implementing an SQL engine and hosted within the Python interpreter. But Python is still passing the SQL statements to functions within that library (and marshaling result sets back). You might try simply reading the entire SQL file\u2019s contents and passing the whole thing in through a call to cursor.execute(). That\u2019s the method voted up here on StackOverflow: Python and sqlite3 - importing and exporting databases. Similar techniques should work for any supported SQL RDBMS. But memory and other processing limits may apply. You might find some sort of PRAGMA or extension in your database which might be more efficient or less limited. ",
+            "date": "Answered June 29, 2019",
+            "views": "195",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Yao",
+                    "user_href": "/profile/Andrew-Yao-4"
+                },
+                {
+                    "user_id": "Kevin Kazemian",
+                    "user_href": "/profile/Kevin-Kazemian"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Franck Dernoncourt",
+                "href": "/profile/Franck-Dernoncourt"
+            },
+            "answer_text": "You you can use the MySQL for Python package:  #!/usr/bin/python\u00a0# -*- coding: utf-8 -*-\u00a0\u00a0# Download it at http://sourceforge.net/projects/mysql-python/?source=dlp\u00a0# Tutorials: http://mysql-python.sourceforge.net/MySQLdb.html\u00a0#            http://zetcode.com/db/mysqlpython/\u00a0import MySQLdb as mdb \u00a0\u00a0import datetime, time\u00a0\u00a0def run_sql_file(filename, connection):\u00a0    '''\u00a0    The function takes a filename and a connection as input\u00a0    and will run the SQL query on the given connection  \u00a0    '''\u00a0    start = time.time()\u00a0    \u00a0    file = open(filename, 'r')\u00a0    sql = s = \" \".join(file.readlines())\u00a0    print \"Start executing: \" + filename + \" at \" + str(datetime.datetime.now().strftime(\"%Y-%m-%d %H:%M\")) + \"\\n\" + sql \u00a0    cursor = connection.cursor()\u00a0    cursor.execute(sql)    \u00a0    connection.commit()\u00a0    \u00a0    end = time.time()\u00a0    print \"Time elapsed to run the query:\"\u00a0    print str((end - start)*1000) + ' ms'\u00a0    \u00a0    \u00a0\u00a0def main():    \u00a0    connection = mdb.connect('127.0.0.1', 'root', 'password', 'database_name')\u00a0    run_sql_file(\"my_query_file.sql\", connection)    \u00a0    connection.close()\u00a0    \u00a0if __name__ == \"__main__\":\u00a0    main()\u00a0 The output will be something like:  Start executing: create_moocdb_demo.sql at 2013-06-13 16:25\u00a0SELECT user_name\u00a0 FROM users;\u00a0Time elapsed to run the query:\u00a0141.000032425 ms\u00a0 Warning: (thanks Bill Karwin!) I haven't tried with DELIMITER or large packets. I don't know how MySQLdb would react to it, but it might blow. Also, it will break if the file contain several SQL statements, in which case we need to process like  for statement in file(filename).read().split(';')): cur.execute(statement)  or with more refinements. Execute .sql file in Python with MySQLdb might give some good ideas. ",
+            "date": "Updated June 27, 2013",
+            "views": "613",
+            "upvotes": " View 24 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rodolfo Teles",
+                    "user_href": "/profile/Rodolfo-Teles"
+                },
+                {
+                    "user_id": "Andrew Yao",
+                    "user_href": "/profile/Andrew-Yao-4"
+                },
+                {
+                    "user_id": "Qingqing Cai",
+                    "user_href": "/profile/Qingqing-Cai-2"
+                },
+                {
+                    "user_id": "Atle Ramsli",
+                    "user_href": "/profile/Atle-Ramsli"
+                },
+                {
+                    "user_id": "Justin Mahesh",
+                    "user_href": "/profile/Justin-Mahesh"
+                },
+                {
+                    "user_id": "\u81f4\u8fdc \u5218",
+                    "user_href": "/profile/\u81f4\u8fdc-\u5218-6"
+                },
+                {
+                    "user_id": "Kinshuk Chandra",
+                    "user_href": "/profile/Kinshuk-Chandra"
+                },
+                {
+                    "user_id": "Luis Loret de Mola",
+                    "user_href": "/profile/Luis-Loret-de-Mola"
+                },
+                {
+                    "user_id": "Ankur Kishore",
+                    "user_href": "/profile/Ankur-Kishore"
+                },
+                {
+                    "user_id": "Nabarun Mondal",
+                    "user_href": "/profile/Nabarun-Mondal-3"
+                },
+                {
+                    "user_id": "Jess Nault",
+                    "user_href": "/profile/Jess-Nault-1"
+                },
+                {
+                    "user_id": "Sushil Shah",
+                    "user_href": "/profile/\u0938\u0941\u0936\u0940\u0932-\u0936\u093e\u0939-Sushil-Shah"
+                },
+                {
+                    "user_id": "Devrath Mohanty",
+                    "user_href": "/profile/Devrath-Mohanty-1"
+                },
+                {
+                    "user_id": "Ramya Selvam",
+                    "user_href": "/profile/Ramya-Selvam-2"
+                },
+                {
+                    "user_id": "Vishal Gupta",
+                    "user_href": "/profile/Vishal-Gupta-29"
+                },
+                {
+                    "user_id": "Sarang Manjrekar",
+                    "user_href": "/profile/Sarang-Manjrekar"
+                },
+                {
+                    "user_id": "Doddy Iskandar",
+                    "user_href": "/profile/Doddy-Iskandar"
+                },
+                {
+                    "user_id": "Rishi Ganesh V",
+                    "user_href": "/profile/Rishi-Ganesh-V"
+                },
+                {
+                    "user_id": "Prajit Kumar Das",
+                    "user_href": "/profile/Prajit-Kumar-Das"
+                },
+                {
+                    "user_id": "Rarylson Freitas",
+                    "user_href": "/profile/Rarylson-Freitas"
+                },
+                {
+                    "user_id": "Abhinav Maurya",
+                    "user_href": "/profile/Abhinav-Maurya"
+                },
+                {
+                    "user_id": "Aymen Jaffry",
+                    "user_href": "/profile/Aymen-Jaffry"
+                },
+                {
+                    "user_id": "Jeremy Moritz",
+                    "user_href": "/profile/Jeremy-Moritz-1"
+                },
+                {
+                    "user_id": "Amit Pal",
+                    "user_href": "/profile/Amit-Pal-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christopher Albertson",
+                "href": "/profile/Christopher-Albertson-3"
+            },
+            "answer_text": "Do you really want to just run a .sql file? I\u2019m guessing the goal is to place some data that is in your Python program into the SQL database or do a query and get some data into your Python program. Simply running the files would be like running it from the command prompt. The answer depends on that database you are using. It is MySQL, PostgreSQL, Oracle? There are many and the answer depends on which one you are using. Typically the people who made the database system will provide a Python binding. The best why to find it is Google. Type in \u201cPython\u201d and the name of your database you will get pointed in the right direction. ",
+            "date": "Answered January 20, 2018",
+            "views": "331",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pak Kin Yip",
+                    "user_href": "/profile/Pak-Kin-Yip"
+                },
+                {
+                    "user_id": "Mourad Karib",
+                    "user_href": "/profile/Mourad-Karib"
+                },
+                {
+                    "user_id": "Goran Biljetina",
+                    "user_href": "/profile/Goran-Biljetina"
+                },
+                {
+                    "user_id": "Saikumar Gv",
+                    "user_href": "/profile/Saikumar-Gv-1"
+                },
+                {
+                    "user_id": "TRABELSI Mohamed Elamine",
+                    "user_href": "/profile/TRABELSI-Mohamed-Elamine"
+                },
+                {
+                    "user_id": "Armaan Gupta",
+                    "user_href": "/profile/Armaan-Gupta-33"
+                },
+                {
+                    "user_id": "Medha Singh",
+                    "user_href": "/profile/Medha-Singh-12"
+                },
+                {
+                    "user_id": "Mike Zuhl",
+                    "user_href": "/profile/Mike-Zuhl"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shankara Narayanan Sethuraman",
+                "href": "/profile/\u0bb7\u0b99\u0bcd\u0b95\u0bb0-\u0ba8\u0bbe\u0bb0\u0bbe\u0baf\u0ba3\u0ba9\u0bcd-\u0bb8\u0bc7\u0ba4\u0bc1\u0bb0\u0bbe\u0bae\u0ba9\u0bcd-Shankara-Narayanan-Sethuraman"
+            },
+            "answer_text": "There are two senarios here: You have a set of static queries in a SQL file that you want executed via a python scriptYou have a set of dynamic queries that you want to define and execute via a python scriptIn both cases the main way you do it is by using SQL wrapper for python like psycopg2 if you are using a PostgreSQL DB or mysql-connector-python if you are using a MySQL DB and opening a connection and cursor and executing the queries. In the 1st case read the file to a string and execute it via the cursor. In the 2nd case execute the queries as you build them. If the queries are mutually exclusive and take time you can use multiprocessing to execute them in parallel. Beyond that it's customization based on the use case at hand. ",
+            "date": "Answered February 25, 2020",
+            "views": "39",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nilaksha Neththikumara",
+                    "user_href": "/profile/Nilaksha-Neththikumara"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bill Bell",
+                "href": "/profile/Bill-Bell-1"
+            },
+            "answer_text": "If you create a sqlite database you can then create a pandas dataframe by running the pandas read_sql_query against that database, as shown in one of my recent answers on StackOverflow: Create a dataframe of missing data from XML in Python . Although my answer involves the sql in the form of a string it would be an easy matter to replace the string with, say, open(\u2018sqlfile.sql\u2019).read(). ",
+            "date": "Answered January 20, 2018",
+            "views": "146",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Martinez Mki",
+                    "user_href": "/profile/Martinez-Mki-1"
+                },
+                {
+                    "user_id": "Aaron Paul",
+                    "user_href": "/profile/Aaron-Paul-18"
+                }
+            ]
+        }
+    ]
+}

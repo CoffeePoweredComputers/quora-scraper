@@ -1,0 +1,43 @@
+{
+    "title": "Is pi a good random number generator? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Pi (number)",
+        "Randomness (statistics)",
+        "Mathematics and Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ted Armitage",
+                "href": "/profile/Ted-Armitage"
+            },
+            "answer_text": "If someone saw the sequence 3,1,4,1,5,9 they might get suspicious and guess the next number. However, if you skip the first 1000 digits very few people would recognise that the digits are not random and mathematicians suspect that the digits are effectively random, but of course they are not truly random. Random number generators are generally designed to be fast, which disqualifies pi. It is much faster to just multiply the last pseudo-random number by a constant and take the result modulo another constant. Mathematicians have worked out how to choose optimal constants . ",
+            "date": "Answered July 3, 2019",
+            "views": "107",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Walter Kailey",
+                    "user_href": "/profile/Walter-Kailey"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Subham Soni",
+                "href": "/profile/Subham-Soni-4"
+            },
+            "answer_text": "Random number generators don't exist What really exist is pseudo random number generator.By pseudo I mean,  even in the random number generated there are possibilities that it's sequence can be determined. When a random number has to be generated,  the function is given a seed value with which it determines the number and yes the seed must be updated. When a random number is generated using a constant, it is more likely that the sequence is not random in nature.  The sequence can be determined.  As in your case,  the sequence will be a multiple of pi.  So therefore any constant cannot be used to generate a random sequence. ",
+            "date": "Answered September 10, 2014",
+            "views": "796",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Andy Wilkinson",
+                    "user_href": "/profile/Andy-Wilkinson-9"
+                }
+            ]
+        }
+    ]
+}

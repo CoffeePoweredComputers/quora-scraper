@@ -1,0 +1,47 @@
+{
+    "title": "What is the equation of ellipse having foci (2,-2) and (4,-2)? - Quora",
+    "tags": [
+        "Ellipses (geometry)",
+        "Equations",
+        "Geometry",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eric Hawk",
+                "href": "/profile/Eric-Hawk-1"
+            },
+            "answer_text": "I think you need additional information to determine the equation of a unique ellipse, as it is defined as the set of points for which the sum of the distances from the two foci is some fixed constant. The coordinates of one point lying on the ellipse would provide this infomation. You would use the distance formula to find this sum of distances. If the coordinates are (x1, y1), the sum of the distances would be SQRT((2 - x1)^2 + (-2 - y1)^2) + SQRT((4 - x1)^2 + (-2 - y1)^2) This distance is equal to twice the semimajor axis, 2*a: SQRT((2 - x1)^2 + (-2 - y1)^2) + SQRT((4 - x1)^2 + (-2 - y1)^2) = 2*a a^2 = ([SQRT((2 - x1)^2 + (-2 - y1)^2) + SQRT((4 - x1)^2 + (-2 - y1)^2)]/2)^2 The center of the ellipse is located at the average of the x and y coordinates of the two foci: center = (3, -2) The value c is the distance of the two foci from this center: c = 1 The value of the semi-minor axis, b, is given by b^2 = a^2 - c^2 = a^2 - 1 And now you have enough information to put the equation for the ellipse in its standard form for a shifted ellipse with center at (3, -2): ([x - 3]/a)^2 + ([y + 2]/b)^2 = 1, Where a and b have the form of the expressions above. Ellipse - Wikipedia The standard form of an ellipse in Cartesian coordinates assumes that the origin is the center of the ellipse, the x-axis is the major axis, and: the foci are the points [math]{\\displaystyle F_{1}=(c,\\,0),\\ F_{2}=(-c,\\,0)}[/math], the vertices are [math]{\\displaystyle V_{1}=(a,\\,0),\\ V_{2}=(-a,\\,0)}[/math]. For an arbitrary point [math]{\\displaystyle (x,y)}[/math] the distance to the focus [math]{\\displaystyle (c,0)}[/math] is [math]{\\displaystyle {\\sqrt {(x-c)^{2}+y^{2}}}}[/math] and to the other focus [math]{\\displaystyle {\\sqrt {(x+c)^{2}+y^{2}}}}[/math]. Hence the point [math]{\\displaystyle (x,\\,y)}[/math] is on the ellipse whenever: [math]{\\displaystyle {\\sqrt {(x-c)^{2}+y^{2}}}+{\\sqrt {(x+c)^{2}+y^{2}}}=2a\\ .}[/math] Removing the radicals by suitable squarings and using [math]{\\displaystyle b^{2}=a^{2}-c^{2}}[/math] produces the standard equation of the ellipse: [math]{\\displaystyle {\\frac {x^{2}}{a^{2}}}+{\\frac {y^{2}}{b^{2}}}=1,}[/math] Ellipse - Wikipedia If the standard ellipse is shifted to have center [math]{\\displaystyle \\left(x_{\\circ },\\,y_{\\circ }\\right)}[/math], its equation is [math]{\\displaystyle {\\frac {\\left(x-x_{\\circ }\\right)^{2}}{a^{2}}}+{\\frac {\\left(y-y_{\\circ }\\right)^{2}}{b^{2}}}=1\\ .}[/math] The axes are still parallel to the x- and y-axes. Hope this helps and does not mislead or confuse you. ",
+            "date": "Answered February 9, 2020",
+            "views": "105",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Abel Zewdu",
+                    "user_href": "/profile/Abel-Zewdu-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anca Horsfall",
+                "href": "/profile/Anca-Horsfall"
+            },
+            "answer_text": "That Wolframalpha engine is full of surprises: equation of ellipse with foci (2,-2) and (4, -2) - Wolfram|Alpha (so intuitive to use) For the basics on ellipses, you still need to hit the books, or see online resources such as PurpleMath: Ellipses ",
+            "date": "Answered February 9, 2020",
+            "views": "49",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kabir Belgikar",
+                    "user_href": "/profile/Kabir-Belgikar"
+                },
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                }
+            ]
+        }
+    ]
+}

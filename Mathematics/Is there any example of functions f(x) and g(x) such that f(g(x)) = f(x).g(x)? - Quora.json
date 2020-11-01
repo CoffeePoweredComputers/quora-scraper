@@ -1,0 +1,45 @@
+{
+    "title": "Is there any example of functions f(x) and g(x) such that f(g(x)) = f(x).g(x)? - Quora",
+    "tags": [
+        "Functional Equations",
+        "Functions (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alex Jones",
+                "href": "/profile/Alex-Jones-1227"
+            },
+            "answer_text": "If we have [math]f(x) = ax^p[/math] and [math]g(x) = bx^q[/math] Then we have [math]a(bx^q)^p = (ax^p)(bx^q)[/math] so [math]b^px^{pq} = bx^{p+q}[/math] So as long as [math]b^p = b [/math] and [math]pq=p+q[/math] this will work. That is, [math]f(x) = ax^p[/math] and [math]g(x) = x^\\frac{p}{p-1}[/math] Is a class of solutions for [math]p\\neq 1[/math]. Note that [math]p=0[/math] gives [math]f[/math] as any constant function and [math]g[/math] as the unit constant function. Also, [math]p=2[/math] is the other integer solution. In fact, we can see from this that if [math]f,g[/math] is a solution, [math]af,g[/math] is a solution for any constant [math]a[/math]. If [math]f[/math] is the zero function, [math]f,g[/math] is a solution for any [math]g[/math]. All the simple solutions are the ones where the function types are closed under composition and multiplication. We did it for monomials but polynomials also have this property, so we could check for those, but that would be pretty messy algebra so I\u2019ll skip it.  Not a solution, but a property I just noticed is that if [math]x_0[/math] is a fixed point of [math]g[/math], then [math]f(g(x_0)) = f(x_0)[/math] and [math]f(x_0)g(x_0) = x_0f(x_0)[/math], so [math](x_0-1)f(x_0) = 0[/math] so either [math]x_0 = 1[/math] or [math]f(x_0) = 0[/math]. From this we can deduce that [math]f\\circ g[/math] has a fixed point iff [math]f[/math] and [math]g[/math] have the same fixed point, and that fixed point is [math]x_0 = 0[/math]. ",
+            "date": "Answered September 12, 2020",
+            "views": "38",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chetna Kesarwani",
+                    "user_href": "/profile/Chetna-Kesarwani-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Louis Trogneux",
+                "href": "/profile/Louis-Trogneux-1"
+            },
+            "answer_text": "I don\u2019t know if I can find all possible examples but I can certainly find at least some: For every function  we can verify the equation if  is the constant function :  If  is a constant function defined by :  So every function  that verifies  is a solution in this case. So any  and  or  and any  such that  are two possibilities. There might be others, I\u2019m not sure. ",
+            "date": "Answered September 12, 2020",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Trisha Choudhury",
+                    "user_href": "/profile/Trisha-Choudhury-13"
+                },
+                {
+                    "user_id": "Chetna Kesarwani",
+                    "user_href": "/profile/Chetna-Kesarwani-2"
+                }
+            ]
+        }
+    ]
+}

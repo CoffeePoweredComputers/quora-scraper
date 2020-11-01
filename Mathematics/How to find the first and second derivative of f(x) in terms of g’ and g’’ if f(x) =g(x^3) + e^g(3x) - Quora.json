@@ -1,0 +1,49 @@
+{
+    "title": "How to find the first and second derivative of f(x) in terms of g\u2019 and g\u2019\u2019 if f(x) =g(x^3) + e^g(3x) - Quora",
+    "tags": [
+        "Calculus Education",
+        "Derivatives and Differentiation (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mikayla Eckel Cifrese",
+                "href": "/profile/Mikayla-Eckel-Cifrese-1"
+            },
+            "answer_text": "You just apply the chain rule for derivatives: [math]\\frac{d}{dx}(f(g(x))=(f(g(x))'=f'(g(x))g'(x)[/math] In English: multiply the derivative of the outer function by the derivative of the inner function. I don't want to give you the exact answer in case this is a homework problem, so let\u2019s look at a similar problem: [math]f(x)=g(x^2)+sin(g(3x))[/math] To find the first derivative, applying the chain rule to to first term gives [math]2xg'(x^2)[/math]. For the second term, it might look more complicated, but it's the same idea \u2014 we just have to apply the chain rule twice. Applying it the first time, we get [math]cos(g(3x)(g(3x)'[/math]. Now apply it again to evaluate [math](g(3x)'[/math]. That gives [math]3g'(3x)[/math]. So putting it all together, we get [math]f'(x)=2xg'(x^2)+3g'(3x)cos(g(3x))[/math]. Now the second derivative. That's a little trickier because now we need the product rule as well as the chain rule: [math](fg)'=f'g+g'f[/math]. Ok, first term: apply the product rule, which includes applying the chain rule to the [math]g'(x^2)[/math] in the second half of the product rule \u2014 [math]2g'(x^2)+2xg''(x^2)*2x[/math] Now the second term: same process as we just did except remember to multiply everything by [math]3[/math] and we need to apply the chain rule twice in the second half of the product rule\u2014 [math]3[3g''(3x)cos(g(3x))-3g'(3x)sin(g(3x))*g'(3x)][/math] Now, putting it all together, [math]f''(x)=2g'(x^2)+2xg''(x^2)*2x+3[3g''(3x)cos(g(3x))-3g'(3x)sin(g(3x))*g'(3x)]=[/math] [math]f''(x)=2g'(x^2)+4x^2g''(x^2)+9[g''(3x)cos(g(3x))-(g'(3x))^2sin(g(3x))][/math]. Hopefully that helps. Let me know if you'd like any clarification. ;) ",
+            "date": "Answered December 18, 2019",
+            "views": "80",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nic Banks",
+                    "user_href": "/profile/Nic-Banks-2"
+                },
+                {
+                    "user_id": "Jessica McGonagall",
+                    "user_href": "/profile/Jessica-McGonagall"
+                },
+                {
+                    "user_id": "William Mansley",
+                    "user_href": "/profile/William-Mansley"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Donald Hartig",
+                "href": "/profile/Donald-Hartig"
+            },
+            "answer_text": "First use the Chain Rule.  Then apply the Product Rule and the Chain Rule.   ",
+            "date": "Answered December 16, 2019",
+            "views": "26",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Jessica McGonagall",
+                    "user_href": "/profile/Jessica-McGonagall"
+                }
+            ]
+        }
+    ]
+}

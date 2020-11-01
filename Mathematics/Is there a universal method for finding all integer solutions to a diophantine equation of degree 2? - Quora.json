@@ -1,0 +1,72 @@
+{
+    "title": "Is there a universal method for finding all integer solutions to a diophantine equation of degree 2? - Quora",
+    "tags": [
+        "Diophantine Equations",
+        "Integers",
+        "Number Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "Yes, but I can\u2019t claim to understand it. See Fritz Grunewald and Dan Segal, \u201cOn the integer solutions of quadratic equations\u201d, J. Reine Angew. Math. 569 (2004), 13\u201345. https://www.degruyter.com/view/j/crll.2004.2004.issue-569/crll.2004.023/crll.2004.023.xml Almost all citations on the degree-two problem refer back to this result; I don\u2019t know of any newer work. (There is an older result from 1972 for arbitrary integer solutions; the Grunewald and Segal paper finds positive integer solutions.) Their abstract states that the decision procedure they describe for quadratic diophantine equations is effective (i.e., it actually lists the solutions.) This is because their result is to provide bounds for the possible solutions in terms of a set of hyperplanes. From this the number of solutions can either be determined to be infinite, or found via exhaustive search. (I don\u2019t know what the bounds look like for this procedure, but they are likely to be infeasibly large for practical computation.) ",
+            "date": "Answered February 9, 2019",
+            "views": "14",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mike Thompson",
+                    "user_href": "/profile/Mike-Thompson-283"
+                },
+                {
+                    "user_id": "Suhas K",
+                    "user_href": "/profile/Suhas-K-6"
+                },
+                {
+                    "user_id": "Logan R. Kearsley",
+                    "user_href": "/profile/Logan-R-Kearsley"
+                },
+                {
+                    "user_id": "Pedro Volpi",
+                    "user_href": "/profile/Pedro-Volpi-1"
+                },
+                {
+                    "user_id": "William Tao",
+                    "user_href": "/profile/William-Tao-8"
+                },
+                {
+                    "user_id": "Mo Nastri",
+                    "user_href": "/profile/Mo-Nastri"
+                },
+                {
+                    "user_id": "Jan van Delden",
+                    "user_href": "/profile/Jan-van-Delden-2"
+                },
+                {
+                    "user_id": "Noah Hoke",
+                    "user_href": "/profile/Noah-Hoke"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Aditya Ranjan",
+                    "user_href": "/profile/Aditya-Ranjan-58"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bill Crean",
+                "href": "/profile/Bill-Crean"
+            },
+            "answer_text": "Possibly the easiest universal method for finding solutions to these equations is to write a computer program and try to find the values, essentially, by trial, but at least the computer will be doing all the work. It may be possible to make short cuts but that depends on the equation. ",
+            "date": "Answered February 8, 2019",
+            "views": "96",
+            "upvotes": "0"
+        }
+    ]
+}

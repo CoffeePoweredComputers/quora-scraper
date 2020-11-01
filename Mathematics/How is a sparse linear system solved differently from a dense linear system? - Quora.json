@@ -1,0 +1,70 @@
+{
+    "title": "How is a sparse linear system solved differently from a dense linear system? - Quora",
+    "tags": [
+        "Linear Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Igor Markov",
+                "href": "/profile/Igor-Markov"
+            },
+            "answer_text": "Algorithms for solving large linear systems can be categorized as direct and iterative. The short answer to the question is that large sparse linear systems (and applications where they arise) favor iterative methods because classic direct methods often require too much memory and can also be slow. Direct methods formalize and generalize the conventional approaches based on repeated substitution, such as Gaussian elimination. A more advanced way to view these methods is through matrix decompositions, such as the LU decomposition, Cholesky decomposition and QR decomposition - representing a given matrix as a product of two special-form easy-to-invert matrices (by viewing each substitution as a matrix and taking products of those). Such algorithms find exact solutions, assuming precise arithmetic operations. They work great for dense systems (those with few nonzero terms). However, when applied to large sparse systems (those where each equation involves relatively few variables, on average), these methods can sharply increase the number of non-zero terms (matrix elements), requiring much greater storage and the number of steps. This calls for methods that do not modify the linear equations. On the other hand, exact solutions are rarely needed in practice, as long as one can approximate them to desired accuracy. Iterative methods start with an initial guess, then iteratively update it using matrix-vector multiplication and similar operations. The process is formulated so that the intermediate vector-values (called iterates) converge to the desired solution (or one of multiple available solutions). The process is stopped when the equality in the linear system is attained with an error that is smaller than the desired threshold. Straightforward algorithms of this type are based on the idea of successive relaxation of constraints/equations. Consider one equation at a time, and see if the given guess at solution (the current iterate) satisfies it. If not, adjust the iterate by replacing one of the variables accordingly. For example, when looking at the k-th equation, we could adjust the k-th variable. There is also some flexibility as to whether we use the adjusted variables immediately or only after we go through all equations. Specific methods include Gauss\u2013Seidel method and Successive over-relaxation. The runtime of iterative methods can be estimated by the product of the number of iterations and the number of computational steps taken by one iteration (which usually does not change from one iteration to the next). The number of iterations, of course, depends on how good the initial guess, how small is the desired error is, and how fast the method converges. As a result, iterative methods are particularly good in algorithms that solve a linear system, then change it a little bit, then solve it again, and repeat this many times. Such high-level iterations can handle non-linear problems and optimize objectives beyond quadratic. Even some non-convex optimization problems can be handled this way. For example, my graduate students and I developed one such algorithm for optimizing layouts of large semiconductor chips, and it has been used in the industry for several years (SimPL: An Algorithm for Placing VLSI Circuits). All linear systems arising in this context are sparse because the rows of the matrix represent individual wired connections between logic gates. The total length of connections is a convex objective (which can be locally approximated by quadratic forms), but the requirement that logic gates do not overlap makes the problem nonconvex. To compare different sparse methods, one needs to somehow disregard the impact of the initial solution and the accuracy parameter. This is done by estimating the convergence speed of the method - how quickly it decreases the error after a given number of iterations. The classic methods based on relaxation typically exhibit linear convergence, i.e., the log of the error decreases linearly with the number of iterations. However, the Conjugate gradient method improves that to quadratic convergence, and gives rise to a variety of related methods, such as the Biconjugate gradient stabilized method. These methods are commonly used when solving large sparse systems arising in computational physics and computer games (through the discretization of partial differential equations). Runtime analysis of sparse methods gets really interesting when you want to account the impact of the equations matrix. To make the long story short, the ratio between the largest and the smallest eigenvalue (the Condition number) shows up in runtime estimates (under square-root). To improve this parameter, the matrix can be pre-processed by a Preconditioner, for example, each row can be divided by its diagonal element (or the non-zero element closest to the diagonal). Direct methods can still be used for some sparse systems (for example in electrical circuit simulation), and recent research made them more applicable by minimizing \"fill\" - the non-zero elements appearing in the matrix during their operation. Iterative methods are also not staying still, and this is an area of active research. Making direct and iterative methods faster on parallel computers and GPGPUs is a very important area both in academia and industrial practice. A recent dissertation on this topic (for direct methods) out of Beijing won a major international award. ",
+            "date": "Answered February 29, 2016",
+            "views": "32",
+            "upvotes": " View 31 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                },
+                {
+                    "user_id": "Ashwath Rabindranath",
+                    "user_href": "/profile/Ashwath-Rabindranath"
+                },
+                {
+                    "user_id": "Anita Tiwari",
+                    "user_href": "/profile/Anita-Tiwari-15"
+                },
+                {
+                    "user_id": "Dalibor Knis",
+                    "user_href": "/profile/Dalibor-Knis"
+                },
+                {
+                    "user_id": "Jamorn Sriwasansak",
+                    "user_href": "/profile/Jamorn-Sriwasansak-1"
+                },
+                {
+                    "user_id": "JJL",
+                    "user_href": "/profile/JJL-2"
+                },
+                {
+                    "user_id": "Prashant Saikia",
+                    "user_href": "/profile/Prashant-Saikia"
+                },
+                {
+                    "user_id": "Pasquale Ferrara",
+                    "user_href": "/profile/Pasquale-Ferrara"
+                },
+                {
+                    "user_id": "Vyacheslavs Kashcheyevs",
+                    "user_href": "/profile/Vyacheslavs-Kashcheyevs"
+                },
+                {
+                    "user_id": "Jayaram Reddy",
+                    "user_href": "/profile/Jayaram-Reddy-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Francesco Mastrangelo",
+                "href": "/profile/Francesco-Mastrangelo"
+            },
+            "answer_text": "Sparsity is the key point: generally iterative methods perform well or better than direct method. Often for non linear PDE the solution of the system is just a small step forward the solution. A good differencing scheme or a reduction of the problem by multigrid/preconditioning/ eigenvectos can squeeze solution time to less than 20%. ",
+            "date": "Answered June 16, 2016",
+            "views": "453",
+            "upvotes": "0"
+        }
+    ]
+}

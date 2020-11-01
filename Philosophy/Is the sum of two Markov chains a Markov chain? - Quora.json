@@ -1,0 +1,72 @@
+{
+    "title": "Is the sum of two Markov chains a Markov chain? - Quora",
+    "tags": [
+        "Markov Chains",
+        "Mathematics and Machine Learning",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "It turns out that the sum need not be a Markov Chain. Here's a counter-example: Let [math]X_k[/math] be Markov chain on the integers.Let [math]Y_k=k[/math] if [math]X_1=1[/math] and [math]Y_k = 0[/math] if [math]X_1\\ne 1[/math].Let [math]S_k=X_k+Y_k[/math].Notice that [math]Y_{k+1}=Y_k+1[/math] if [math]X_1=1[/math] and [math]Y_{k+1}=Y_k = 0[/math] if [math]X_1\\ne 1[/math]. We can see that [math]Y_k[/math] is a Markov chain since (informally) knowing its entire history is equivalent to knowing its most recent state. If the most recent state is zero, then its entire history has been zero. If the most recent state is non-zero, then its entire history is 1, 2, 3, ... Those are the only two possibilities. However, [math]S_k[/math] is not a Markov chain. To see why, suppose I told you that [math]S_4=4[/math]. What can we learn about the distribution on [math]S_5[/math]? Well, there are two ways that [math]S_4 =4[/math]. Either [math]X_1=1[/math] in which case [math]X_4 = 0[/math] while [math]Y_4=4[/math] or [math]X_1\\ne 1[/math] in which case [math]X_4 = 4[/math] while [math]Y_4=0[/math]. In the first case, we know with probability one that [math]S_5=5[/math]. In the second case, we know with probability one that [math]S_5=X_5[/math] so the transition probabilities of [math]X_4 \\to X_5[/math] tell us the distribution of [math]S_5[/math]. So if we ONLY know that [math]S_4 =4[/math], the distribution on [math]S_5[/math] is a mixture of these two results (based on how likely it is that [math]X_1=1[/math]). On the other hand, if we know that [math]S_4=4[/math] AND that [math]S_1 = 3[/math], the distribution on [math]S_5[/math] changes. To see why, notice that knowing that [math]S_1 = 3[/math] tells me that [math]Y_1 =0[/math] and [math]X_1=3[/math]. This is true because the only other choice for [math]Y_1[/math] is [math]Y_1=1[/math]. But [math]Y_1=1 \\implies X_1=1\\implies S_1=X_1+Y_1=1+1=2\\ne 3[/math] and we see that [math]P(Y_1=0)=1[/math]. But [math]P(Y_1=0)=1 [/math] implies that [math]P(Y_5=0)=1[/math] which in turn implies that [math]P(S_5=X_5)=1[/math]. So given this extra information about the history of [math]S_k[/math], we have eliminated one of the two possibilities and the distribution on [math]S_5[/math] is no longer the mixture that it was before. Since knowing [math]S_1[/math] and [math]S_4[/math] gives a different distribution on [math]S_5[/math] than knowing [math]S_4[/math] only, we conclude that the sum is not a Markov chain. ",
+            "date": "Updated April 23, 2020",
+            "views": "39",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Alison Weir",
+                    "user_href": "/profile/Alison-Weir-7"
+                },
+                {
+                    "user_id": "Siddharth",
+                    "user_href": "/profile/Siddharth-542"
+                },
+                {
+                    "user_id": "Yariv Adan",
+                    "user_href": "/profile/Yariv-Adan-2"
+                },
+                {
+                    "user_id": "Kaibo Zhang",
+                    "user_href": "/profile/Kaibo-Zhang-3"
+                },
+                {
+                    "user_id": "Samsuddin Ahmed",
+                    "user_href": "/profile/Samsuddin-Ahmed-5"
+                },
+                {
+                    "user_id": "Ay\u00e7a Altay",
+                    "user_href": "/profile/Ay\u00e7a-Altay"
+                },
+                {
+                    "user_id": "Rumen Paletov",
+                    "user_href": "/profile/Rumen-Paletov"
+                },
+                {
+                    "user_id": "Owen Jones",
+                    "user_href": "/profile/Owen-Jones-18"
+                },
+                {
+                    "user_id": "Joshua Engel",
+                    "user_href": "/profile/Joshua-Engel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abdelhadi Nakhal",
+                "href": "/profile/Abdelhadi-Nakhal"
+            },
+            "answer_text": "I dont understand what you mean by the sum of two markov chains. A markov chain is a model defined by 3 components: A set of Discrete states say [math]i=1,2,\\cdots,n[/math]a discrete times steps t_i or continuoustogether with transition probabilities [math]p_{i,j,t}[/math] that define the probability that the system at time t moves from the state i to the state j.The system is memoryles that is the transition probability from state i to state j at time t doesnt depends on history (or trajectory ) of the system before tSo now what you mean by summing 2 Markov chains",
+            "date": "Answered November 20, 2019",
+            "views": "368",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "title": "How to calculate 1+2+3+4+5+6+7+8+9+10 quickly - Quora",
+    "tags": [
+        "Brain Teasers",
+        "Puzzles and Trick Questions",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Milton Simmons",
+                "href": "/profile/Milton-Simmons-7"
+            },
+            "answer_text": "Adding 1+2+3+4+5+6+7+8+9+10 up one at a time would take some time, calculating each addition, even if for a few seconds, would take half a minute for some people. So, an easier option has been discovered: Why not make multiple amounts of a certain number, and add them instead? It is a much easier, more fun and faster solution to just adding them all. First, we find the lowest number we can do this with. Some would say 10, as 10 is the lowest number, however that would not work, as we would end with 10 (made of the number 10) X 10 (9 + 1) X 10 (8 + 2 X 10 (7 + 3) X 10 (6 + 4) X \u2026 5? There would still be a five left over, even if the others where all 10\u2019s, which would make 10 X 5 (10 + 10 + 10 + 10 + 10) + 5, easy to do, but wait! Theres yet a faster way! Why not remove the 5 at the end and add it to each of the 10\u2019s, to make an entirely multiple question, quicker and easier to do! This would make 11 X 5 (not using 10\u2019s any more, now 11\u2019s, which still works as 10 + 1 = 11, and 9 + 2 == 11, and so on until 5 + 6 = 11.), without any extra add ons, which is a quick and easy 55. Although it needs multiplication and a little mental work, it proves to be a much faster, and fun, way to solve questions such as that. Enjoy! P.s: A few of the other questions would-be 1+2+3+4+5\u2026+98+99+100 (adding every number up to 100). The clear answer would-be 101 (100 + 1) + 101 (99 + 2) and so forth until + 101 (50 + 51), which would imply incorporating 50 101\u2019s, or 101 X 50, which any professional multipliers (or calculators) should corresponding to 5050! (near 55, with two 5\u2019s, except it is to 100 perhaps not 10, so its two 50\u2019s instead!). P.p.s: For those of you desiring a great formula with this equation, I have gone and found one: S = n(n+1)\\/2, a neat bit of mathematics that you ought to test time! Enjoy (again)!! ",
+            "date": "Answered March 15, 2020",
+            "views": "194",
+            "upvotes": " View 44 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Johannes Ashipala",
+                    "user_href": "/profile/Johannes-Ashipala-2"
+                },
+                {
+                    "user_id": "Amy Lou Anderson",
+                    "user_href": "/profile/Amy-Lou-Anderson"
+                },
+                {
+                    "user_id": "John McClelland",
+                    "user_href": "/profile/John-McClelland-31"
+                },
+                {
+                    "user_id": "M. Shr",
+                    "user_href": "/profile/M-Shr"
+                },
+                {
+                    "user_id": "Dominick Bagnoli",
+                    "user_href": "/profile/Dominick-Bagnoli"
+                },
+                {
+                    "user_id": "David Ryan",
+                    "user_href": "/profile/David-Ryan-658"
+                },
+                {
+                    "user_id": "Leo Bouahom",
+                    "user_href": "/profile/Leo-Bouahom-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/TheGodofDeals-Visionaire"
+                },
+                {
+                    "user_id": "Alan Steinberg",
+                    "user_href": "/profile/Alan-Steinberg-2"
+                },
+                {
+                    "user_id": "Gt-R Vspec",
+                    "user_href": "/profile/Gt-R-Vspec"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adam Wright",
+                "href": "/profile/Adam-Wright-143"
+            },
+            "answer_text": "So, due to the size of the actual problem given, the simplest way to add the sequence is to add the first and last number (1+10 = 11), then the next two inward (2+9 = 11) and notice that each pair of numbers gives us 11 as we move inward. Again, due to the small size, we could just point our fingers at the numbers as we move inward and meet in the middle. The next bit of intuition we could ask is, how many numbers do we have? \u2014 10. How many *pairs* of numbers do we have? \u2014 5.And each pair was worth 11. [math]11 \\cdot 5 = 55[/math] Great, easy! Let\u2019s say, instead of this short sequence that we easily brute-forced our way through, we\u2019re given an even longer one: \u201cFind the sum of all integers from 1 to 517.\u201d 1 + 2 + 3 + 4 + \u2026 + 517 = ? Even writing this sequence out would take way too long and we\u2019d probably injure ourselves in the process, and who wants that?! But we should have picked up some clues about how we can approach this one from the last problem. The sequence started at 1 last time, and it ended at 10, which meant it had 10 numbers. This sequence starts at 1 and ends at 517, meaning there\u2019s 517 numbers. We were adding the outermost numbers together and then working our way in, and each time it gave us the same sum, so each pair of numbers will always give us 1 + 517, which is 518. So, how many pairs are there in this sequence? There\u2019s an odd number of numbers! It doesn\u2019t make perfect sense to say there would be 258-and-a-half pairs \u2014 though we could just recognize that half of a pair is half of a pair\u2019s value. BUT, what ELSE can we do about that? We\u2019ll call the number of terms in the sequence n, like some boring mathematician would or something, and in this case n = 517. The sum of the first and last terms in the sequence was 518, which is 1 more than our value for n. This means the sum of the outer terms was n+1. We know we have to divide the number of numbers, n, by 2 because we are pairing the terms off, meaning we have [math]\\dfrac{n}{2}[/math] pairs. Each pair is worth n+1. So we are multiplying [math]\\dfrac{n}{2}[/math] by [math]n+1[/math], to get: [math]\\frac{n(n+1)}{2}[/math] Plug in 517 for n, and we get [math]\\frac{517(517+1)}{2}[/math], which is [math]\\frac{517 \\cdot 518}{2}[/math], or 133,903 And now you have the way a mathematician would tell you to solve it just to get you off their back. GREAT, so now we can do that to any sum that looks like that, right? No, not quite. There\u2019s a few problems with this method that we have to address. First, the sequence we had before started at 1 and they were consecutive integers. But what if it doesn\u2019t start at 1? How many numbers are in the sequence then? Take the sum: 84 + 85 + 86 + 87 + \u2026 + 1022 = ? How many terms are in the sequence? If you said \u201c1022,\u201d you didn\u2019t notice the first number is no longer 1. It doesn\u2019t fit our original setup, so we have to look for what changed and how that affects our answer. We COULD say that our original setup started at 1, and 84 is 83 away from 1, so we have 83 fewer terms in the sequence. That works perfectly fine, for now, but it won\u2019t work later when I stop using integers (SPOILERS!!), so we need to look at the logic a bit. How many fingers do most people have on their hand? \u2014 Five.How many spaces are there between those fingers altogether? \u2014 Four.The number of spaces between objects is always one less than the number of objects (unless they\u2019re arranged in a circuit). Conversely, the number of objects is always one more than the number of spaces between them. To word this another way, the number of destinations is one more than the number of trips if you count the place you originally departed from. If you imagine each trip being the same distance as the previous trip, you can imagine a line with points on it. Oh, look, we\u2019re on a number line! We can think of this number line in the following way:A point on a line is not a value; it\u2019s a location. The value is the length of line, that you have to travel across to get to another location. The length of line is always the distance between the two locations, which are helpfully numbered for us on a number line. In fact, if we just take the difference of those numbers we find the distance we traveled, and between any two points on a number line of consecutive integers the distance is always ONE. So to go from, let\u2019s say, 12 to 14, we travel TWO LENGTHS; but the number of locations we visited in total was THREE NUMBERS. The number of numbers is always one more than the distance between them! EUREKA WE CAN DO THE PROBLEM NOW In our problem way up there (remember?) we were travelling from 84 all the way to 1022. The distance between 84 and 1022 is 1022\u201384, or 938. BUT we always have one extra number that we were visiting \u2014 the starting point \u2014 so we have to add one more, giving us a total of 939 numbers. The value of each pair of numbers is 1022 + 84, or 1106. 1106 (sum of the extremes) times 939 (number of numbers) divided by 2 (to find the number of pairs) = 519,267 84 + 85 + 86 + 87 + \u2026 + 1022 = 519,267 If we look at the way we had to solve this one, it\u2019s not going to work to simply say \u201cJust use the formula [math]\\dfrac{n(n+1)}{2}[/math]\u201d because the value we wanted for n wasn\u2019t 1022 and the value we wanted for n+1 wasn\u2019t 939. That\u2019s a big problem! How do we rectify it? We\u2019re not gonna leave the above problem just yet, because this is a great moment to start labeling what we see with an example we\u2019ve already worked with. If we call the first and last terms the \u201cExtremes\u201d (so our Extremes, or E, are 84 and 1022), we can see that we do two different things to the extremes in the process of solving the problem. To find the distance we traveled, we subtracted them from one another (the Difference of Extremes, or D), and to find the sum of each pair we added them together (the Sum of Extremes, or S). However, we didn\u2019t actually use the Difference of Extremes in our final problem, because we had to add one. Well, I know that the word for the \u201cnumber of elements in a set\u201d is called Cardinality, or C, so we\u2019ll just say that the number of terms in our problem is C, which we will call the Difference of Extremes + 1, or D + 1. So now what we have is [math]D + 1 = C[/math], and if we multiply the cardinality by the sum and divide by two \u2014 [math]\\dfrac{CS}{2}[/math] \u2014 we get the sum of the series. So in our problem,E = {84, 1022},S = 1022 + 84, or S = 1106D = 1022 - 84, or D = 938D + 1 = C, or 938 + 1 = C, therefore C = 939 Sum of the series is [math]\\dfrac{CS}{2}[/math], or [math]\\dfrac{1106 \\cdot 939}{2} = 519,267[/math] That\u2019s faster! So great, we\u2019re done, right? Almost, but there\u2019s just ONE more fly in the ointment: What if they\u2019re not consecutive integers? :( 22 + 25 + 28 + 31 + \u2026 + 79 = ? So here we have a series of terms that are all evenly-spaced. They aren\u2019t multiples of 3, but they are being increased by 3. And they don\u2019t start at 1. All the old problems, plus a new one. Well, the solution to how to do this problem is actually pretty simple now that we have the logic down. Because the increment (amount the numbers are increasing by each time) is constant and knowable (just find the difference of the first two terms), we can remember our trips between numbers on the number line: Last time we went on the trip, each destination was only 1 apart. Now, they\u2019re 3. How far are we trying to go? That\u2019s the Difference of Extremes, or D: D = 79 - 22, or 57 We don\u2019t actually want to know how far we went, though; we want to know how many destinations we got to. We didn\u2019t stop at all the landmarks along the way, only every THIRD one. So divide by three! [math]\\dfrac{57}{3} = 19[/math] But don\u2019t forget we also started somewhere, so add one back on. 19 + 1 = 20 So there are 20 terms in the series, which is the Cardinality (or C). How much is each term worth? This should be getting old hat to you by now: S = 79 + 22, or 101 Sum of the series is [math]\\dfrac{CS}{2}[/math]: [math]\\dfrac{20 \\cdot 101}{2} = 1,010[/math] Nice! Much faster. Now like last time, let\u2019s label things so we can remember it better. 22 + 25 + 28 + 31 + \u2026 + 79 = ? The first thing we had to do was figure out what the Increment, or I, was. To do that, we just find the difference between any two adjacent terms in the sequence. Typically, it\u2019s just easiest to do it with the first two (25 and 22, here). Increment (I) = Second Term - First Term We find how far we traveled (Distance of Extremes, or D), and divide that by the Increment (I) to find how many landmarks we actually stopped at, but add 1 back onto it because we had to start somewhere, to give us our Cardinality (C) [math]C = \\dfrac{D}{I} + 1[/math] Then we multiply the sum of each pair, which is the Sum of Extremes (S), by the Cardinality (C), and divide by 2 because we\u2019re pairing off numbers in the set, and that gives us the sum of the series: [math]\\dfrac{CS}{2}[/math] = sum of series In all, it looks like this: E = {22, 79},I = 25 - 22, or I = 3,S = 79 + 22, or 101,D = 79 - 22, or 57[math]C = \\dfrac{D}{I} + 1[/math], which is [math]\\dfrac{57}{3} + 1[/math], or 20 sum of the series: [math]\\dfrac{CS}{2}[/math], which is [math]\\dfrac{20 \\cdot 101}{2} = 1,010[/math] E = {first element, last element}I = second element - first elementS = sum of elements in ED = difference of elements in E [math]C = \\dfrac{D}{I} + 1[/math]sum of series: [math]\\dfrac{CS}{2}[/math] Using this setup, you can do this with any series of well-defined, equidistant bounded numbers. Decimals, fractions, integers both positive and negative... GO WILD WITH IT you person, you. Try these on for size! \u201cThe sum of all integers from 4 to 400.\u201d \u201cThe sum of all odd integers from 4 to 400.\u201d(watch out; what\u2019s the real first and last number in the sequence?) \u201cThe sum of all multiples of 5 from 57 to 721.\u201d \u201cThe sum of all multiples of 0.05 from 0.92 to 2.1.\u201d \u201cThe sum of all integers from -72 to 33.\u201d \u201cThe sum of the sequence 1/4 + 1/2 + 3/4 + 1 + \u2026 + 65.\u201d The following is just for fun: Using a bit of substitution, if you want the REAL formula, it all looks like this: [math]\\frac{CS}{2}[/math] \u2014 replace C with [math]\\frac{D}{I} + 1[/math] [math]\\frac{(\\frac{D}{I} + 1)S}{2}[/math] \u2014 replace D with difference of extremes (we\u2019ll call the first element [math]E_1[/math] and the last element [math]E_L[/math]) [math]\\frac{ (\\frac{E_L - E_1}{I}+1)S }{2}[/math] \u2014 replace I with the difference of the first two elements (we\u2019ll call the second element [math]E_2[/math]) [math]\\frac{ (\\frac{E_L - E_1}{E_2 - E_1}+1)S }{2}[/math] \u2014 replace S with the sum of the extremes [math]\\frac{ (\\frac{E_L - E_1}{E_2 - E_1}+1)(E_L + E_1) }{2}[/math] Reading this out loud, we get: \u201cDifference of last and first element, divided by difference of second and first element, plus 1, all multiplied by the sum of the last and first element, and all divided by 2.\u201d ",
+            "date": "Updated August 17, 2020",
+            "views": "591",
+            "upvotes": " View 233 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Calin T",
+                    "user_href": "/profile/Calin-T"
+                },
+                {
+                    "user_id": "Anissa Chahboun",
+                    "user_href": "/profile/Anissa-Chahboun"
+                },
+                {
+                    "user_id": "Simon David",
+                    "user_href": "/profile/Simon-David-61"
+                },
+                {
+                    "user_id": "Camila Carson",
+                    "user_href": "/profile/Camila-Carson"
+                },
+                {
+                    "user_id": "4n Tmp",
+                    "user_href": "/profile/4n-Tmp"
+                },
+                {
+                    "user_id": "Jeremy Vanbawi",
+                    "user_href": "/profile/Jeremy-Vanbawi"
+                },
+                {
+                    "user_id": "Rory Mills",
+                    "user_href": "/profile/Rory-Mills-2"
+                },
+                {
+                    "user_id": "KC Cass",
+                    "user_href": "/profile/KC-Cass-1"
+                },
+                {
+                    "user_id": "Moustafa Mohsen",
+                    "user_href": "/profile/Moustafa-Mohsen-4"
+                },
+                {
+                    "user_id": "Codru\u021b Marinescu",
+                    "user_href": "/profile/Codru\u021b-Marinescu"
+                }
+            ]
+        }
+    ]
+}

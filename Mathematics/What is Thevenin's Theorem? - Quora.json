@@ -1,0 +1,115 @@
+{
+    "title": "What is Thevenin's Theorem? - Quora",
+    "tags": [
+        "Theorems",
+        "Th\u00e9venin's Theorem",
+        "Theorems and Lemmas",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Abhiram",
+                "href": "/profile/Abhiram-83"
+            },
+            "answer_text": "Thevenin's theorem is used to solve complex circuits. The theorem states that \u201cAny linear circuit with any number of voltage sources and resistors can be replaced with a single voltage source in series with a resistance connected across a load\u201d Thevenin's theorem is widely used when it is not possible to simplify a circuit using kirchoff's laws, ohm's law etc, Simplifying a circuit using thevenin's theorem is as easy as eating a chocolate. Just, follow the given steps: 1. Remove the load resistance. 2. Find equivalent resistance by shorting all voltage sources or open circuiting all the current sourced. 3. Find the equivalent voltage by circuit analysis methods. 4. Find the current flow through the load resistance. 5. Draw the simplified circuit. Lets see an example: Consider the following circuit:  Let R1 = 20 ohm and R2 = 10 ohm and RL = 40 ohm Now, from steps 1 and 2, we need to remove the load resistance and short circuit voltage sources, just as shown below:  The equivalent thevenin resistance(RT) is found as :  One cannot assume R1 and R2 to be in series because, even though the load resistance is removed, it is reconnected in the later part. Hence, the load resistance is considered in between R1 and R2. Hence, R1 and R2 are said to be in parallel. Then, thevenin's equivalent voltage(Vs) is found as shown below:  First step is to reconnect the voltage sources as given in the picture. The current I is found as follows:  V is taken as 20v - 10v, as V represents the net voltage in the circuit. Here thevenin's equivalent voltage(Vs) = Voltage across AB(Vab) {because, thevenin's voltage is the voltage across load resistance terminals A and B} This current of 0.33 Amps is common to both the resistances and hence the voltage drop Now, you need to find the thevenin voltage by applying KCL at node A:  Therefore, the equivalent resistance and voltages are 6.67 ohm and 13.33 volts respectively. Now the 40 ohm load resistance is reconnected in the circuit and the circuit is redrawn as shown:  Above is the simplified circuit. The current is taken as 0.286 A instead of 0.33 A, because previously, the resistance value while calculating the current was 6.67 ohms. But, here we are also including load resistance of 40 ohms in series with the 6.67 ohms. Hence the total resistance becomes 46.67 ohms. Therefore I = 13.33 volts \u00f7 46.67 ohms = 0.286 A Hope you understood well. Ping me if you have any doubts. Cheer up!! Source: Google (Google) and https://www.electronics-tutorials.ws/ (https://www.electronics-tutorials.ws/) ",
+            "date": "Updated June 20, 2019",
+            "views": "64",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abdul Latif",
+                    "user_href": "/profile/Abdul-Latif-132"
+                },
+                {
+                    "user_id": "Dipul Kumar",
+                    "user_href": "/profile/\u0926\u0940\u092a\u0941\u0932-\u0915\u0941\u092e\u093e\u0930-Dipul-Kumar"
+                },
+                {
+                    "user_id": "Spalzes Wangmo",
+                    "user_href": "/profile/Spalzes-Wangmo-2"
+                },
+                {
+                    "user_id": "Rohan Kumar",
+                    "user_href": "/profile/Rohan-Kumar-3298"
+                },
+                {
+                    "user_id": "Samruddha",
+                    "user_href": "/profile/Samruddha-1"
+                },
+                {
+                    "user_id": "Shivend Singh",
+                    "user_href": "/profile/Shivend-Singh-1"
+                },
+                {
+                    "user_id": "Ankur Kumar",
+                    "user_href": "/profile/Ankur-Kumar-274"
+                },
+                {
+                    "user_id": "Abhishek Jainer",
+                    "user_href": "/profile/Abhishek-Jainer"
+                },
+                {
+                    "user_id": "Tushar Ganotra",
+                    "user_href": "/profile/Tushar-Ganotra"
+                },
+                {
+                    "user_id": "Dangor Baba",
+                    "user_href": "/profile/Dangor-Baba"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Saurabh Nayar",
+                "href": "/profile/Saurabh-Nayar-1"
+            },
+            "answer_text": "Thevenin\u2019s Theorem states that \u201cAny linear circuit containing several voltages and resistances can be replaced by just one single voltage in series with a single resistance or impedance connected across the load\u201c. In other words, it is possible to simplify any electrical circuit, no matter how complex, to an equivalent two-terminal circuit with just a single constant voltage source in series with a resistance (or impedance) connected to a load.  Steps to follow for Thevenin\u2019s Theorem: (1) Find the Thevenin source voltage by removing the load resistor from the original circuit and calculating voltage across the open connection points where the load resistor used to be. (2) Find the Thevenin resistance by removing all power sources in the original circuit (voltage sources shorted and current sources open) and calculating total resistance between the open connection points. (3) Draw the Thevenin equivalent circuit, with the Thevenin voltage source in series with the Thevenin resistance. The load resistor re-attaches between the two open points of the equivalent circuit. (4) Analyze voltage and current for the load resistor following the rules for series circuit.  Image source- Google Images. ",
+            "date": "Answered July 6, 2017",
+            "views": "167",
+            "upvotes": " View 32 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Spalzes Wangmo",
+                    "user_href": "/profile/Spalzes-Wangmo-2"
+                },
+                {
+                    "user_id": "Balaji S",
+                    "user_href": "/profile/Balaji-S-447"
+                },
+                {
+                    "user_id": "Ovais (\u0627\u0648\u06cc\u0633)",
+                    "user_href": "/profile/Ovais-\u0627\u0648\u06cc\u0633"
+                },
+                {
+                    "user_id": "Priya Venkat",
+                    "user_href": "/profile/Priya-Venkat-18"
+                },
+                {
+                    "user_id": "Mahidhar Lolla",
+                    "user_href": "/profile/Mahidhar-Lolla"
+                },
+                {
+                    "user_id": "Sparrow Niraj",
+                    "user_href": "/profile/Sparrow-Niraj"
+                },
+                {
+                    "user_id": "Debjit Mandal",
+                    "user_href": "/profile/Debjit-Mandal-6"
+                },
+                {
+                    "user_id": "Aprameya",
+                    "user_href": "/profile/Aprameya-7"
+                },
+                {
+                    "user_id": "Riteshh Kumar",
+                    "user_href": "/profile/Riteshh-Kumar-1"
+                },
+                {
+                    "user_id": "Rechal Jala",
+                    "user_href": "/profile/Rechal-Jala"
+                }
+            ]
+        }
+    ]
+}

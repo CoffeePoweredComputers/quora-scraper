@@ -1,0 +1,46 @@
+{
+    "title": "Is Perl still relevant in 2020? - Quora",
+    "tags": [
+        "Perl 6",
+        "Is X Still Relevant",
+        "Scripting Languages",
+        "Perl (programming language)",
+        "Relevance",
+        "Scripting (programming)",
+        "2020 (year)",
+        "Fame and Mass Popularity",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eric Wolf",
+                "href": "/profile/Eric-Wolf-11"
+            },
+            "answer_text": "Perl's influence on language design is huge today. It\u2019s still in the top 20 languages being used. It\u2019s a powerful and controversial language and language designers would do well to carefully examine both what it got right and got wrong. Perl had many influences as well as its own innovations. So many of them seem to address something that is a slow pain in the ass to deal with in prior languages. Modern javascript has borrowed ideas found in perl. `templates with ${interpolation}`flowing style of map filter sort/first class regular expressions/npmLet\u2019s deconstruct Perl. What is it about perl that makes it what it is? What about it makes it both vilified and celebrated? culture From early on, perl had a collaborative culture.The mascot, the camel reflects this in the saying that a camel is a horse designed by committee. Perl has an enormous number of libraries in CPAN. Successful projects have not only the community, but the community repositories. terseness and magic sorting Most sort routines make you return -1 when you want the first value on the right and 1 when you want it on the left. Or..maybe it is the reverse. I can ~never~ remember that. With perl, I don't have to. It gives me a visual clue with perl's \"spaceship\" operator <=> and the magic variables $a and $b. I am not even going to explain it, it's easier to understand if it is just shown. RESULT LIST <---------------------< SOURCE LIST\u00a0@low_to_high  =   sort { $a <=> $b } @number_list \u00a0@high_to_low  =   sort { $b <=> $a } @number_list\u00a0map and grep - aka map and filter in other languages. RESULT LIST <-----<     MAP  <----< FILTER <-----< SOURCE LIST\u00a0@even_cubes  = map { $_ * $_ * $_ } grep { 0 == $_ % 2 } (3 4 9 2)\u00a0strings as numbers as strings \"3\" + 4 = a compile time or run time error for many languages. Javascript will annoyingly give you \u201834\u2019. perl figures you just want a 7. building strings Sure, you don't lose sprintf and printf, but perl's everyday string building is a breeze to use with variable interpolation. $name = \"larry\"; $string = \"Here is my string named '$name'\"; Other languages :  \"Here is my string named '\" + name + \"'\"; Modern javascript `Here is my string named ${name}` truthiness many languages are pretty strict with what they interpret as 'true' values. perl thinks everything but undef, '', '0' and 0 is true. Most of the time, that is what you want. If you want something else, you can also get that in perl. regular expressions perl manipulates text like nobody's business. Sure you get regexes in just about any language today. Few match perl's ease of using them. \"But it looks like line noise!\" there is more than one way to do it (TIMTOWTDI) The opposite of the 'one size fits all approach'. Positives - people have various ways to approach problems. More creative expression. Negatives - fox and cat problem. Cognitive load increases if you don't know the many ways when reading. never far from the C. There are places in perl that are just the thinnest of wrappers over C calls. Many perl modules are programmed in the perl XS bridging language. These modules run fast. autovivication / data structures on the fly I've not seen anything that constructs arbitrarily complex data structures with the ease that perl does. Create a config option that includes addresses? Treat the data like it is there already and it is there. If the addresses list wasn't there before, it is now. Same with the options hash. push @{ $config{options}{addresses} }, 'new address';\u00a0",
+            "date": "Answered April 29, 2020",
+            "views": "801",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pritesh Ugrankar",
+                    "user_href": "/profile/Pritesh-Ugrankar"
+                },
+                {
+                    "user_id": "Les Mikesell",
+                    "user_href": "/profile/Les-Mikesell"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roland Hughes",
+                "href": "/profile/Roland-Hughes-6"
+            },
+            "answer_text": "In order to be relevant a language has to have an undeniable niche. COBOL has high volume financial calculations. C has OS kernel, device driver, relational database and even deterministic programming. FORTRAN has scientific computing. C++ is being propped up by Qt for cross platform and embedded device work. Niches are medical and other embedded devices with touch screens, automotive infotainment. Might eventually be replaced by RUST. Perl gained popularity because \u201cit was just there\u201d on all Linux distros and some Web development got done with it. Today it feels like there are 100 languages vying for the Web development niche. Most Linux distros seem to include about half of them. The real danger in the Web/scripted language world is that there is no clear winner. Anything you choose will most likely be a fond memory 5 years from now. Adding insult to injury, at some point in the not too distant future a viable Quantum computer will get built. This will open up the wild west of new languages and development camps. ",
+            "date": "Answered April 10, 2020",
+            "views": "343",
+            "upvotes": " Answer requested by Jeet Rathi"
+        }
+    ]
+}

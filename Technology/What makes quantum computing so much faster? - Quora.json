@@ -1,0 +1,52 @@
+{
+    "title": "What makes quantum computing so much faster? - Quora",
+    "tags": [
+        "Quantum Computing and Computers",
+        "Quantum Computers",
+        "Quantum Information",
+        "Quantum Computing",
+        "Quantum Mechanics",
+        "Physics of Everyday Life",
+        "Computer Science",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brent Meeker",
+                "href": "/profile/Brent-Meeker"
+            },
+            "answer_text": "First, it\u2019s not necessarily true that quantum computers are faster. There are about a dozen algorithms for quantum computation that are faster than the best known classical computer algorithm. But there are no proofs, and generally cannot be proofs, that a faster classical algorithm cannot be discovered. In fact that has already happened once. A grad student studying a new faster quantum computation saw that it suggested a way to speed up a classical computation and in fact he was able to create a faster classical algorithm It is expected that the quantum algorithms found so far will provide a speed up, and they do so in different ways. Some implement a kind of parallelism. Some use projection in Hilbert space to narrow the problem. But there are some other caveats in assuming quantum computation is faster. First, there is some overhead in preparing the quantum input state. Second, the quantum algorithm computation time grows more slowly as the size of the problem grows. But for small problems the quantum computation may be slower, especially considering the overhead. Just because it\u2019s faster for the traveling salesman problem for 10,000 cities doesn\u2019t mean it\u2019s faster for a 100 cities. Third, the quantum algorithm doesn\u2019t necessarily return the correct answer. It may only have a certain probability that the right answer has been found. If this probability is greater than one-half, then you can just re-run the problem enough to get the probability as close to 1.0 as you want\u2026but it\u2019s more runtime. ",
+            "date": "Answered February 7, 2020",
+            "views": "112",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Misha Erementchouk",
+                    "user_href": "/profile/Misha-Erementchouk"
+                },
+                {
+                    "user_id": "Willie Carpenter",
+                    "user_href": "/profile/Willie-Carpenter-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "James H. Kelly",
+                "href": "/profile/James-H-Kelly"
+            },
+            "answer_text": "Quantum computing is not faster than classical computing. In fact, it\u2019s currently much, much slower. What\u2019s interesting about quantum computing is that for a few specific classes of algorithm, it requires fewer calculations to come up with a (probable) result. Why this is has to do with the math of quantum states. Instead of each bit representing a 0 or 1, qubits can be in a state between 0 and 1 and can be entangled to other states which allows for more complex calculations to be done \u201cat once\u201d. This article might help to understand what\u2019s happening under the hood: Shor, I\u2019ll do it ",
+            "date": "Answered February 7, 2020",
+            "views": "69",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Greg Young",
+                    "user_href": "/profile/Greg-Young-8"
+                }
+            ]
+        }
+    ]
+}

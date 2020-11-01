@@ -1,0 +1,51 @@
+{
+    "title": "Can we connect a sensor wirelessly to Raspberry Pi? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Sensors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Arun Shankar",
+                "href": "/profile/Arun-Shankar-9"
+            },
+            "answer_text": "The straightforward way to connect RPI3 wireless is using WiFi. Rpi has an On board Wifi, even if you are using a older version of the PI you can use a Wifi Dongle. For connecting Sensor to WiFi, you can use a cheap WiFi micro controller like ESP8266 (ESP8266 - Wikipedia). If you are just starting with Electronics, and not that good with soldering, I would suggest, you buying the nodemcu variant of ESP8266 (ESP8266 NodeMcu WiFi Development Board). Now all you have to do is write a listener program in Raspberry PI and have the ESP8266 send data to the Pi. You can also write a listener in the ESP8266 module and have RPi check poll for sensor data. Or try a starndard IOT protocol like MQTT. The implementation is really up to you. This forum would help you get started.Pi + ESP8266 Communication If you have any more questions, you can contact me at my LinkedIn page (https://www.linkedin.com/in/easonline/). ",
+            "date": "Answered November 13, 2017",
+            "views": "3",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Maheshg Python",
+                    "user_href": "/profile/Maheshg-Python"
+                },
+                {
+                    "user_id": "Damien Jallon",
+                    "user_href": "/profile/Damien-Jallon"
+                },
+                {
+                    "user_id": "Asiq Ahamed",
+                    "user_href": "/profile/Asiq-Ahamed"
+                },
+                {
+                    "user_id": "Balaji",
+                    "user_href": "/profile/Balaji-400"
+                },
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rajashri Gavali",
+                "href": "/profile/Rajashri-Gavali"
+            },
+            "answer_text": "To turn Raspberry Pi into a wireless sensor, start monitoring the performance of wireless home network. The procedure to do this as follows : Get dashboard : Initially, request a dashboard. Then, follow instructions to load the agent image on Raspberry Pi\u2019s SD card.Set up wireless card : Procure a wireless dongle that is supported by the Raspberry Pi and install the proper drivers.Install WPA supplicant client : Configure wpa_supplicant client.Turn the wired agent into a wireless : Change the interfaces parameter.Reboot the agent from the command line and disconnect the ethernet interface.This process connects the wireless sensor appear on the dashboard to Raspberry Pi. ",
+            "date": "Answered June 13, 2020",
+            "views": "263",
+            "upvotes": "0"
+        }
+    ]
+}

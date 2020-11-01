@@ -1,0 +1,50 @@
+{
+    "title": "What are the major improvements or benefits in mysql 5.7 as compared to earlier mysql 5.6 version? - Quora",
+    "tags": [
+        "MySQL",
+        "SQL",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Satyam Rai",
+                "href": "/profile/Satyam-Rai"
+            },
+            "answer_text": "Oracle has announced MySQL 5.7, an upgrade of the popular open-source database that the vendor says will deliver \"significantly higher\" performance and improved manageability over MySQL 5.6. To ease management, the company released beta (1.0) MySQL Fabric software for high-availability support and database sharding.Improving performance at high scale, MySQL 5.7 takes better advantage of high-end, multi-core severs. With MySQL 5.6, performance topped out with 32-core servers, but 5.7 makes the most of top-the-line 64-core servers, according to Tomas Ulin, VP of MySQL engineering.\"MySQL 5.7 is three times faster than 5.5 at high scale and two times faster than 5.6,\" Ulin told Information Week in a phone interview. \"We're constantly pushing the limits of where you run into bottlenecks. And it's now at around 60 cores where you see performance flatten out.\" In two other upgrades tied to state-of-the-art hardware, MySQL 5.7 can detect when it has direct access to solid state disks, in which case it can turn off unnecessary performance boosters such as double-write buffering, thereby improving efficiency. The 5.7 query optimizer has also been improved, with better control over seek times, memory, RAM tables, and other hardware features that can improve query performance.\"The flexibility of the 5.6 optimizer was limited, so we created an API that has much more granularity around how you can specify costs and performance attributes,\" said Ulin. With improved granularity you get better control over optimization choices.In another performance improvement, the MySQL 5.7 connection layer offers higher capacity for short-lived connections, a common challenge for high-scale Web applications. The number of sustainable database connect and disconnect actions over a given time period has doubled, according to Ulin.MySQL Fabric offers a ready-made framework for ensuring high availability and supporting database sharing. MySQL users have long solved these reliability and scalability challenges on their own, but MySQL Fabric covers the basics of high availability and sharing and is a starting point for additional features to come, says Ulin. General availability will depend on user feedback, he told us, with review periods generally taking two to six months.With Monday's announcements Oracle also released MySQL Workbench 6.1, an upgrade offering two new features. Visual Explain lets administrators examine the function of a query so they can better understand performance trade-offs and bottlenecks. A new performance schema dashboard lets administrators study memory usage and performance characteristics.The release of MySQL 5.7 comes less than a week after Facebook, Google, LinkedIn, and Twitter introduced WebScaleSQL, a high-scale branch of MySQL based on the MySQL 5.6 Community Edition release. NoSQL and NewSQL vendors insist this high-scale enhancement won't be a threat, but Ulin said WebScaleSQL features, developed to improve scalability and to ease administration at scale, will be folded into future MySQL releases. ",
+            "date": "Answered November 26, 2015",
+            "views": "8",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                },
+                {
+                    "user_id": "Dave Mackey",
+                    "user_href": "/profile/Dave-Mackey"
+                },
+                {
+                    "user_id": "Pramod Patil",
+                    "user_href": "/profile/Pramod-Patil-5"
+                },
+                {
+                    "user_id": "Paul V Franklin",
+                    "user_href": "/profile/Paul-V-Franklin"
+                },
+                {
+                    "user_id": "Shaheer Shaheen",
+                    "user_href": "/profile/Shaheer-Shaheen"
+                },
+                {
+                    "user_id": "Scott T Keller",
+                    "user_href": "/profile/Scott-T-Keller"
+                },
+                {
+                    "user_id": "Anil Joshi",
+                    "user_href": "/profile/Anil-Joshi-6"
+                }
+            ]
+        }
+    ]
+}

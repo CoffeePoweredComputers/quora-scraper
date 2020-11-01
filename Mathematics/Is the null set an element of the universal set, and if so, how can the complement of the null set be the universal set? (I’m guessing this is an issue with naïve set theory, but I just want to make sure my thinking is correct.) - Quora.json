@@ -1,0 +1,86 @@
+{
+    "title": "Is the null set an element of the universal set, and if so, how can the complement of the null set be the universal set? (I\u2019m guessing this is an issue with na\u00efve set theory, but I just want to make sure my thinking is correct.) - Quora",
+    "tags": [
+        "Set Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Se\u00e1n Lyons",
+                "href": "/profile/Se\u00e1n-Lyons-1"
+            },
+            "answer_text": "My guess is that this refers to the Russell Paradox, where should the null set exist, it is automatically a member of the universal set. By membership, it cannot be a complement of the universal set, though that being said, all complements of the universal set must also be members of the null set, leading it to be a set contained in the universal set. This is clarified in the Zermelo-Fraenkel set theory: where there simply is no universal set, and only relative complements exist (Given Sets A and B, A - B creates a complement set of elements not present in B), thereby avoiding the paradox. The null set exists regardless of the existance of the universal set. Yes, the paradox is a result of informal set theory (or na\u00efve set theory), though canonically it is accepted that the universal set does not exist, allowing for extensionality among other things. ",
+            "date": "Answered August 12, 2017",
+            "views": "14",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Armin Bahamin",
+                    "user_href": "/profile/Armin-Bahamin"
+                },
+                {
+                    "user_id": "Sharika Sabha",
+                    "user_href": "/profile/Sharika-Sabha"
+                },
+                {
+                    "user_id": "Rushali Ghosh",
+                    "user_href": "/profile/Rushali-Ghosh-6"
+                },
+                {
+                    "user_id": "Janesh Motiwala",
+                    "user_href": "/profile/Janesh-Motiwala"
+                },
+                {
+                    "user_id": "Danny McCarthy",
+                    "user_href": "/profile/Danny-McCarthy-21"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joshua James Hillerup",
+                "href": "/profile/Joshua-James-Hillerup"
+            },
+            "answer_text": "In modern mathematics an absolute universal set does not exist. You can have all elements of the domain of discourse in question be the elements of some set, but that's not the same thing and doesn't lead to the sort of paradox you're talking about. To put it another way, you can have some set U for whatever domain of discourse. If U is the complement of null, then we would call U the universal set, but that just means that U is all elements in the domain of discourse, minus null. As an asside, you can try playing with a domain of discourse that does not include null, but that will lead to weird results and probably not be useful, since you have to throw out a number of comon axioms (or however you construct your set theory) to avoid the empty set. ",
+            "date": "Answered June 9, 2018",
+            "views": "627",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Matt Blaisdell",
+                "href": "/profile/Matt-Blaisdell"
+            },
+            "answer_text": "Yes. The null set does not contain itself, so it makes sense then that its complement, the universal set, does contain it. Universal sets are paradoxical, but this isn\u2019t an example of that. ",
+            "date": "Answered August 12, 2017",
+            "views": "439",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rushali Ghosh",
+                    "user_href": "/profile/Rushali-Ghosh-6"
+                },
+                {
+                    "user_id": "Joshua James Hillerup",
+                    "user_href": "/profile/Joshua-James-Hillerup"
+                },
+                {
+                    "user_id": "Danya Rose",
+                    "user_href": "/profile/Danya-Rose"
+                },
+                {
+                    "user_id": "Garrett Borawski",
+                    "user_href": "/profile/Garrett-Borawski"
+                },
+                {
+                    "user_id": "Maddin Manek",
+                    "user_href": "/profile/Maddin-Manek"
+                },
+                {
+                    "user_id": "Bernard Leak",
+                    "user_href": "/profile/Bernard-Leak"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,339 @@
+{
+    "title": "What is the differential solution for y'' + y = 0? - Quora",
+    "tags": [
+        "Differential Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alex Moon",
+                "href": "/profile/Alex-Moon-76"
+            },
+            "answer_text": "suppose [math] y = e^{rx} [/math] [math] 0 =[/math] [math] y\u201d+y =[/math] [math]r^{2}e^{rx}+e^{rx} =[/math] [math] (r^{2}+1)e^{rx} =[/math] [math] 0 [/math] and [math] x\\in\u211d \u21d2\ufe0e e^{rx} \u2260 0 [/math] so [math] r^{2}+1 = 0 [/math] therefore [math] r = \u00b1i [/math] if [math] f(x) = y [/math] is a solution to the homogenous equation, then [math] kf(x) = y [/math] also is, so: [math] y = c_{1}e^{ix}+c_{2}e^{-ix} [/math] is the most general solution, using [math]e^{\u00b1ix} [/math] We know [math] e^{ix} = cosx+isinx,[/math] [math] e^{-ix} = cosx-isinx [/math] therefore [math] \\frac{e^{ix}+e^{-ix}}{2} = cosx,[/math] [math]\\frac{e^{ix}-e^{-ix}}{2i} = sinx [/math] and we can change our basis from linear combinations of [math] e^{ix}, e^{-ix} [/math] to combinations of [math] cosx, sinx [/math] and we get: [math] y = k_{1}cosx+k_{2}sinx [/math] [math] k_{1} = y(2\u03c0n),[/math] [math] k_{2} = y(2\u03c0m+\\frac{\u03c0}{2});[/math] [math] \u2200\ufe0en,m\\in\u2124 [/math] ",
+            "date": "Answered January 27, 2020",
+            "views": "34",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "DING HEKAI",
+                    "user_href": "/profile/DING-HEKAI"
+                },
+                {
+                    "user_id": "Miguel Gutierrez",
+                    "user_href": "/profile/Miguel-Gutierrez-2-1"
+                },
+                {
+                    "user_id": "Arsen Goian",
+                    "user_href": "/profile/Arsen-Goian"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Virendra Pawar",
+                "href": "/profile/Virendra-Pawar-12"
+            },
+            "answer_text": "Can you think of a function whose second derivative is a negative of itself? Sure, a very popular function: cosine (cos x)'' = -cos x Let's put y=a*cos x and check the result (a is an arbitrary constant). From the DE we have: (-a*cos x) + a*cos x = 0 The equation is satisfied and the solution y = a*cos x is acceptable. But it's not a complete solution. Why is that? Because we can think of another function which exhibits similar properties as the cosine function. The sine function. Let's construct the solution as y = a*cos x + b*sin x (The linearity of DE allows us to add solutions) Put it back in the DE and check: (-a*cos x - b*sin x) + (a*cos x + b*sin x) = 0 This does indeed work. We therefore have the complete (general) solution: y = a*cos x + b*sin x We can stop here because we are aware that a second order DE allows for two auxiliary conditions to uniquely determine the solution: determining the arbitrary constants. We have introduced two such constants (a & b) already. ",
+            "date": "Answered September 8, 2019",
+            "views": "43",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aaron Briseno",
+                    "user_href": "/profile/Aaron-Briseno"
+                },
+                {
+                    "user_id": "Tamir Ben-Eli",
+                    "user_href": "/profile/Tamir-Ben-Eli"
+                },
+                {
+                    "user_id": "Allan Gilbertson",
+                    "user_href": "/profile/Allan-Gilbertson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Jones",
+                "href": "/profile/Alex-Jones-1227"
+            },
+            "answer_text": "This question is quite similar to another one I recently answered, so you can see Alex Jones's answer to What is the general solution to y''-y=0? for an interesting mathematical solution method. For this one, though, I want to give a physical \u201csolution\u201d. Since this equation is seen a lot and famously (spoilers) has a solution in terms of sines and cosines, and so it is periodic and often called the \u201charmonic oscillator\u201d, I\u2019d like to connect the equation to that meaning and derive a solution from there. Pretend you have rock tied securely to a string or a rope, and you\u2019re swinging it around above your head so that the center of the rotation (your hand) is more or less fixed in place, and you\u2019re swinging it quite fast so that the rope is taut. There\u2019s a couple things we know about this situation The path the rock follows is circular, because the length of the rope is constant.The main force acting on the rock is along the rope, towards the center.If we call the arrow from the center to the rock [math]r[/math], then the force on the rock is proportional to [math]-r[/math]. By Newton\u2019s 2nd law, we know that force is proportional to acceleration, so the acceleration is also proportional to [math]-r[/math], i.e. [math]r'' = -cr[/math]. That [math]c[/math] could be dependent on the other variables in the equation, such as the speed of the swinging (frequency of the rotation), the mass of the rock, and the length of the rope. Since we have so many degrees of freedom here, we can choose all the other variables in such a way that when the frequency of the rotation is [math]1[/math] time per second, then we have [math]c=1[/math]. Rearranging, that leaves us with the final equation that determines the motion of the rock in this situation [math]\\displaystyle r'' + r = 0[/math] But since we started from the motion, we know what it is, and thus we know the solution to this equation. Keep in mind this is a vector equation so it\u2019s not exactly the same equation as the one from the question, we need to look at the components instead. Since the rotation is happening once per second, the components of [math]r[/math] are [math](\\ell\\cos t, \\ell\\sin t)[/math] for whatever the length of rope [math]\\ell[/math] is. We know that we can factor constants out of derivatives, so that [math]\\ell[/math] won\u2019t matter anyways. We can try plugging in [math]y = \\cos x[/math] and [math]y = \\sin x[/math] to the original equation, and we\u2019ll find that they do in fact satisfy. And again, because derivatives don\u2019t care about constant multiples or addition, we can combine these two into one solution [math]\\displaystyle y = c_1\\cos x + c_2\\sin x[/math]  A few notes: There\u2019s definitely some hand waving going on in the physical system. The constants thing can be made more rigorous, and there is an implicit assumption that the dominating force is the only force.There is no derivation required for the claim that the components of a circle are [math]\\cos[/math] and [math]\\sin[/math], since we usually take that to be their definition.Don\u2019t swing rocks tied to string above your head, it\u2019s very dangerous.",
+            "date": "Answered June 12, 2020",
+            "views": "46",
+            "upvotes": " Answer requested by Blake Winfield",
+            "upvoters": [
+                {
+                    "user_id": "Shubham Sharma",
+                    "user_href": "/profile/Shubham-Sharma-832"
+                },
+                {
+                    "user_id": "Jonathan Kipper",
+                    "user_href": "/profile/Jonathan-Kipper-2"
+                },
+                {
+                    "user_id": "Deo Saju",
+                    "user_href": "/profile/Deo-Saju"
+                },
+                {
+                    "user_id": "August Arnstad",
+                    "user_href": "/profile/August-Arnstad"
+                },
+                {
+                    "user_id": "Yang Zeyu",
+                    "user_href": "/profile/Yang-Zeyu-4"
+                },
+                {
+                    "user_id": "Aalekh Patel",
+                    "user_href": "/profile/Aalekh-Patel-3"
+                },
+                {
+                    "user_id": "Allan Gilbertson",
+                    "user_href": "/profile/Allan-Gilbertson"
+                },
+                {
+                    "user_id": "David Kaplan",
+                    "user_href": "/profile/David-Kaplan-28"
+                },
+                {
+                    "user_id": "Andrew Droffner",
+                    "user_href": "/profile/Andrew-Droffner"
+                },
+                {
+                    "user_id": "Reuben Mason",
+                    "user_href": "/profile/Reuben-Mason"
+                },
+                {
+                    "user_id": "Jeremy Goff",
+                    "user_href": "/profile/Jeremy-Goff-5"
+                },
+                {
+                    "user_id": "Sullivan Wenger",
+                    "user_href": "/profile/Sullivan-Wenger"
+                },
+                {
+                    "user_id": "Abiola Adewoyin",
+                    "user_href": "/profile/Abiola-Adewoyin-1"
+                },
+                {
+                    "user_id": "Ryan Graham",
+                    "user_href": "/profile/Ryan-Graham-146"
+                },
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "Abdullahi Idris",
+                    "user_href": "/profile/Abdullahi-Idris-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Victor Vega",
+                "href": "/profile/Victor-Vega-93"
+            },
+            "answer_text": "Solution: (Try this yourself first!) Step 1: Assume a solution will be proportional to e^(\u03bb x) for some constant \u03bb. Step 2: Substitute y(x) = e^(\u03bb x) into the differential equation: ( d^2 )/( dx^2)(e^(\u03bb x)) + e^(\u03bb x) = 0 Substitute ( d^2 )/( dx^2)(e^(\u03bb x)) = \u03bb^2 e^(\u03bb x): \u03bb^2 e^(\u03bb x) + e^(\u03bb x) = 0 Step 3: Factor out e^(\u03bb x): (\u03bb^2 + 1) e^(\u03bb x) = 0 Step 4: Since e^(\u03bb x) !=0 for any finite \u03bb, the zeros must come from the polynomial: \u03bb^2 + 1 = 0 Step 5: Solve for \u03bb: \u03bb = i or \u03bb = -i Step 6: The roots \u03bb = \u00b1 i give y_1(x) = c_1 e^(i x), y_2(x) = c_2 e^(-i x) as solutions, where c_1 and c_2 are arbitrary constants. The general solution is the sum of the above solutions: y(x) = y_1(x) + y_2(x) = c_1 e^(i x) + c_2 e^(-i x) Step 7: Apply Euler's identity e^(\u03b1 + i \u03b2) = e^\u03b1 cos(\u03b2) + i e^\u03b1 sin(\u03b2): y(x) = c_1 (cos(x) + i sin(x)) + c_2 (cos(x) - i sin(x)) Step 8: Regroup terms: y(x) = (c_1 + c_2) cos(x) + i (c_1 - c_2) sin(x) Redefine c_1 + c_2 as c_1 and i (c_1 - c_2) as c_2, since these are arbitrary constants: Answer: y(x) = c_1 cos(x) + c_2 sin(x) ",
+            "date": "Answered April 3, 2019",
+            "views": "94",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jean-Paul Chatry",
+                    "user_href": "/profile/Jean-Paul-Chatry"
+                },
+                {
+                    "user_id": "Allan Gilbertson",
+                    "user_href": "/profile/Allan-Gilbertson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sachith Kasthuriarachchi",
+                "href": "/profile/Sachith-Kasthuriarachchi"
+            },
+            "answer_text": "Well for this problem I\u2019ll use the following notation for [math]\\frac{dy}{dx}[/math] , [math]\\frac{dy}{dx} = Dy[/math] By re-writing the above equation using that notation I get, [math]D^2y + y = 0[/math] [math]\\iff D^2 + 1 = 0[/math] [math]\\iff D = \\pm i[/math] [math]\\iff \\frac{dy}{dx} = \\pm iy[/math] [math]\\therefore \\frac{dy}{y} = \\pm idx[/math] By integrating, [math]\\int \\frac{dy}{y} = \\pm i \\int dx[/math] [math]\\implies \\ln y = \\pm i x + \\ln C[/math] [math]\\implies y = Ce^{\\pm i x} [/math] Therefore, [math]e^{i x}[/math] and [math]e^{-i x}[/math] satisfy the given differential equation. That implies any linear combination of the above two solutions satisfy the differential equation. Therefore, the final solution would be, [math]y = C_1 e^{i x} + C_2 e^{-i x}[/math] ( Here [math]D[/math] is the differential operator and [math]C, C_1, C_2[/math] are arbitrary constants) ",
+            "date": "Answered September 23, 2019",
+            "views": "2",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "This is a second order linear homogenous differential equation. There should be a section on these in your textbook. The quick treatment below should help you find it. y\u201d + y = 0In general, a linear differential equation has a characteristic polynomial in r where the exponents of r are the derivative orders. We expect a solution is a linear combination of y =exp(rx) for each r. This equation\u2019s characteristic polynomial is\u2026 r^2 + 1 = 0 (y has derivative order zero and y^0 = 1)r has imaginary roots (r + i)(r - i) = 0 in this caseEuler\u2019s formula changes the complex roots into cos(r1*x) and sin(r2*x) terms. solution: y = a*cos(x) + b*sin(x)a,b are constants of integrationr1 = r2 =1 are the roots",
+            "date": "Answered September 6, 2019",
+            "views": "26",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abbey Elizabeth",
+                    "user_href": "/profile/Abbey-Elizabeth-16"
+                },
+                {
+                    "user_id": "Prayaga Dakshin",
+                    "user_href": "/profile/Prayaga-Dakshin"
+                },
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kyle Sockalingum",
+                "href": "/profile/Kyle-Sockalingum"
+            },
+            "answer_text": "Well, if we assume that  is a solution to the equation then the leaves you with an auxiliary equation,   For complex roots of auxiliary equations , the general solution looks like  So here,  ",
+            "date": "Answered December 25, 2019",
+            "views": "917",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Huli Ram",
+                    "user_href": "/profile/Huli-Ram"
+                },
+                {
+                    "user_id": "Aloknanda Mukherjee",
+                    "user_href": "/profile/Aloknanda-Mukherjee-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "C Isaac",
+                "href": "/profile/C-Isaac-4"
+            },
+            "answer_text": "y=0y=k sin x (d^2y/dx^2 k sin x=dy/dx k cos x=-k sin x =>-k sin x+k sin x=0)y=k cos x (d^2y/dx^2 k cos x=dy/dx(-k sin x)= -k cos x =>-k cos x+k cos x=0)reminder: k is a arbitrary constant ",
+            "date": "Answered November 20, 2019",
+            "views": "762",
+            "upvotes": " Answer requested by Aleksai Losey",
+            "upvoters": [
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Harrison",
+                "href": "/profile/Michael-Harrison-482"
+            },
+            "answer_text": "Another way to approach the problem: as the equation is linear, its solution space is closed under addition and scalar multiplication. As it is second-order, there are two constants of integration (which you can think of as degrees of freedom). Allowing complex answers, we can say two solutions are e^(ix) and e^(-ix), for a general solution of a e^(ix) + b e^(-ix). You can show that a change of basis gives us c (e^(ix)+e^(-ix))/2 + d (e^(ix) - e^(-ix))/2i, better known as c cos x + d sin x. This can further be rewritten A cos(x + p), where p is a phase shift (here our degrees of freedom are controlled by A and p). ",
+            "date": "Answered December 20, 2019",
+            "views": "13",
+            "upvotes": " Answer requested by Blake Winfield",
+            "upvoters": [
+                {
+                    "user_id": "Victor Vega",
+                    "user_href": "/profile/Victor-Vega-93"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Benny Jhonson",
+                "href": "/profile/Benny-Jhonson"
+            },
+            "answer_text": " ",
+            "date": "Answered December 30, 2019",
+            "views": "67",
+            "upvotes": " View 2 Upvoters "
+        },
+        {
+            "author_info": {
+                "name": "Howard B. Jackson",
+                "href": "/profile/Howard-B-Jackson"
+            },
+            "answer_text": "I don\u2019t know about \u201cthe differential\u201d solution. What does that mean? The solution y=Asin(x)+Bcos(x) comes to mind where A and B are arbitrary constants. Check: If y=Asin(x)+Bcos(x) y\u2019=Acos(x)-Bsin(x) y\u2019\u2019=-Asin(x)-Bcos(x) OK, y\u2019\u2019+y=0. ",
+            "date": "Answered December 22, 2019",
+            "views": "342",
+            "upvotes": " Answer requested by Blake Winfield"
+        },
+        {
+            "author_info": {
+                "name": "Roger Cook",
+                "href": "/profile/Roger-Cook-80"
+            },
+            "answer_text": "y = Asin(x) +Bcos(x) ",
+            "date": "Answered December 30, 2019",
+            "views": "16",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Leo Harten",
+                "href": "/profile/Leo-Harten"
+            },
+            "answer_text": "Other forms of the solution will be a*sin(x+b) or c*cos(x+d) or f*exp(%i*x)+g*exp(-%i*x) ",
+            "date": "Answered April 4, 2019",
+            "views": "11",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Pierre Hachem",
+                "href": "/profile/Pierre-Hachem-2"
+            },
+            "answer_text": "V= y\u2019 V\u2019= Y\u2019\u2019 V\u2019 + V = 0 DV/DX = -V DV/V = DX Int(DV/V) = INT(DX) LN (V) = X V = e^x Y\u2019 = e^x Y= e^x ",
+            "date": "Answered December 19, 2019",
+            "views": "341",
+            "upvotes": " Answer requested by Blake Winfield"
+        },
+        {
+            "author_info": {
+                "name": "Franco Ariatti",
+                "href": "/profile/Franco-Ariatti"
+            },
+            "answer_text": "y\"=-y;y=a sin x+ b cos x; y'=a cos x- b sin x; y\" = - a sin x - b cos x= - y. ",
+            "date": "Answered December 22, 2019",
+            "views": "475",
+            "upvotes": " Answer requested by Blake Winfield"
+        },
+        {
+            "author_info": {
+                "name": "Michael C Palau",
+                "href": "/profile/Michael-C-Palau"
+            },
+            "answer_text": "k*e^(i*x) & k*e(-i*x) which makes k*sin(x) & k*cos(x) and the trivial 0 ",
+            "date": "Answered May 17, 2020",
+            "views": "170",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Norman Morton",
+                "href": "/profile/Norman-Morton"
+            },
+            "answer_text": "Y=Sinx will do. Y\"=-Sinx Then Y\"+Y = -Sinx +Sinx = 0 ",
+            "date": "Answered December 21, 2019",
+            "views": "210",
+            "upvotes": " Answer requested by Blake Winfield"
+        },
+        {
+            "author_info": {
+                "name": "Louis M. Rappeport",
+                "href": "/profile/Louis-M-Rappeport"
+            },
+            "answer_text": "y\u201d+y\u2019=0 y\u201d=-y\u2019 y(x)=(c1)e^-x+c2 ",
+            "date": "Answered April 9, 2019",
+            "views": "136",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Samuel Chukwudi Ogbonna",
+                "href": "/profile/Samuel-Chukwudi-Ogbonna"
+            },
+            "answer_text": "y = C^e-x ",
+            "date": "Answered June 18, 2020",
+            "views": "137",
+            "upvotes": "0"
+        }
+    ]
+}

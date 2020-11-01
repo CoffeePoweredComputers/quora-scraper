@@ -1,0 +1,69 @@
+{
+    "title": "How do hackers hack people by using their IP? - Quora",
+    "tags": [
+        "IP Addresses",
+        "Hackers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Crowley",
+                "href": "/profile/Paul-Crowley-26"
+            },
+            "answer_text": "if by \u201chack\u201d you mean compromise, well it is very simple. First, you need a service that is running on the phone in the background that has some sort of exploit. These are non-existent on iPhones and rare on Android. The alternative is to have such a service installed by the user by sending them something they install - because they think they are getting something good. This is sort of the kind of thing where in order to view some nifty naked celebrity pictures you need to install the app \u201cFree Celebrity Porn Viewer\u201d. Of course, you need to give this app all sorts of permissions on Android and would need to be installed on a jailbroken iPhone. Maybe you can get someone to do this, but it would have to be really, really good porn. So now you have a service which opens a back door to allowing you to connect up to the phone and do all sorts of nasty things. Only problem is, you would need to know the current IP address for the phone. That would be hard. It would have to be a on Wi-Fi as cellular data networks do not allow inbound connections to the phone at all. So, you find out the phone IP address is 49.142.367.42 \u2026 except that is the public IP address of the library where the phone is right now. Knowing the phone\u2019s IP address of 192.168.100.202 is useless because you can\u2019t connect to that except from the library. You would need your back door to call out to a server and pick up instructions rather than being able to give them directly to the phone. So you really don\u2019t need the IP address after all - it is useless. Getting the compromising app on the phone is the key. Don\u2019t want your phone compromised? Don\u2019t install stuff you don\u2019t actually need. And nobody needs a porn viewer. ",
+            "date": "Answered July 12, 2018",
+            "views": "41",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Djnimbin .",
+                    "user_href": "/profile/Djnimbin"
+                },
+                {
+                    "user_id": "Richmond Forbes",
+                    "user_href": "/profile/Richmond-Forbes"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "If all you have is the public IP address on the Internet, and the device is behind a NAT based router, then unless the device has just contacted you or the device is configured in a DMZ, the router should block the hack. Most people using the Internet over a home ISP connection, or accessing the Internet from a large corporate network will be protected in this way. They share a public IP address with other users, and there is no way for an unsolicited connection to reach a specific device on the internal network. However, web servers have to leave doorways open to allow people on the Internet to be able to access the server. Web servers are often the computers that are most likely to suffer a hack attempt as the public IP address can go directly to the server. Cell phones normally share their public IP address with other phones, and so the same thing applies. The NAT function in the cellular network means there is no way for an incoming hack to be directed to a specific phone. Voice calls and texts are different. For those, the mapping is not from an Internet IP address to the phone, but is from the phone number to the phone, and although IPv4 IP addresses have run out, there are still plenty of phone numbers available. Phone companies do periodically add an extra digit into phone numbers when numbers grow scarce. This may apply at a city level or at a national level. Beyond that there are the country codes such as +1 for USA and +44 for UK. The number of countries is not likely to increase drastically, so the problems of shortage of phone numbers tends to stop at the national boundary. Finally, I suspect that a cell phone does not rely on having its own IP address when using a cellular Internet connection. The voice and text connections rely on the SIM card ID to identify the actual phone. It is logical to assume that the same SIM card ID rather than an IP address is used across the cellular network. It is only in the networks gateways to the Internet or the telephone network that IP addresses and phone numbers appear. ",
+            "date": "Answered December 28, 2018",
+            "views": "14",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kwanele Giyose",
+                    "user_href": "/profile/Kwanele-Giyose"
+                },
+                {
+                    "user_id": "Nikhil Saraswat",
+                    "user_href": "/profile/Nikhil-Saraswat"
+                },
+                {
+                    "user_id": "Prem Prakash Singh",
+                    "user_href": "/profile/Prem-Prakash-Singh-71"
+                },
+                {
+                    "user_id": "T\u0151ke Pali",
+                    "user_href": "/profile/T\u0151ke-Pali"
+                },
+                {
+                    "user_id": "Kumar Natesan",
+                    "user_href": "/profile/Kumar-Natesan-7"
+                },
+                {
+                    "user_id": "Minhajur Rahman",
+                    "user_href": "/profile/Minhajur-Rahman-46"
+                },
+                {
+                    "user_id": "Romik Bhai",
+                    "user_href": "/profile/Romik-Bhai"
+                }
+            ]
+        }
+    ]
+}

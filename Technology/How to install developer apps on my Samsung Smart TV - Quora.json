@@ -1,0 +1,114 @@
+{
+    "title": "How to install developer apps on my Samsung Smart TV - Quora",
+    "tags": [
+        "Samsung Smart TV",
+        "Smart TVs",
+        "Samsung (conglomerate)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Naod T George",
+                "href": "/profile/Naod-T-George"
+            },
+            "answer_text": "Prerequisites To test your application on a TV: Make sure that the TV has the latest firmware installed.Connect your computer and the TV to the same network.Create a certificate profile.Connecting the TV and SDK To connect the TV to the SDK as a remote device: Enable Developer Mode on the TV:On the TV, open the \"Smart Hub\".Select the \"Apps\" panel.Figure 1. Apps panel locationIn the \"Apps\" panel, enter \"12345\" using the remote control or the on-screen number keypad.The developer mode configuration popup appears.Figure 2. Developer mode configurationSwitch \"Developer mode\" to \"On\".Enter the IP address of the computer that you want to connect to the TV, and click \"OK\".Reboot the TV.Figure 3. Reboot popupWhen you open the \"Apps\" panel after the reboot, \"Develop Mode\" is marked at the top of the screen.Figure 4. Developer mode enabledConnect the TV to the SDK:In the Tizen Studio, select \"Tools > Device Manager\".The Device Manager launches.Figure 5. Device ManagerTo add a TV, click \"Remote Device Manager\" and \"+\".Figure 6. Remote Device ManagerIn the \"Add Device\" popup, define information for the TV you want to connect to, such as the name, IP address, and port number, and click \"Add\".Figure 7. Add Device dialogIn the Device Manager window, select the TV from the list, and switch \"Connection\" to \"On\".Figure 8. Switch connection onNow you can launch applications on the TV directly from the Tizen Studio.Launching Applications on the TV You can launch your application on the target device in normal or debug mode: To launch the application in normal mode, right-click the project in the \"Project Explorer\" view, and select \"Run As\" and a specific launch mode:\"Tizen Web Application\": Run the application on the connected device.\"Tizen Web Unit Test Application\": Run the application with unit tests.To launch the application in debug mode, right-click the project in the \"Project Explorer\" view, and select \"Debug As > Tizen Web Application\".The Web Inspector runs automatically when you launch the application in debug mode. It is based on the WebKit Web Inspector, and has been modified to support remote debugging.Figure 9. Web InspectorTroubleshooting The following are common issues you can encounter when working with an application on the TV: Error codes\"1009 : App uninstall fail\"The application cannot be uninstalled through the Tizen Studio due to internal device problems.Uninstall the application from the \"Apps\" panel on the TV.\"1010 : App install fail\"Application installation can fail for many reasons. A problem with the signing certificates is a common reason.Check your certificates and try again.\"1013 : App run fail\"The application cannot be launched through the Tizen Studio due to internal device problems.Try to run the application again, or reboot the device.\"You are not an authorized user!\" error and \"Null Pointer\" error (NPE)These error messages occur if you are using older versions of the device firmware or SDK. Make sure you are using the newest firmware and SDK versions.\"Failed to get a device information\" messageThis message occurs only on 2015 devices, and has no effect on running the application. You can ignore the message.On a macOS computer, the Tizen Studio freezes or hangsUpdate your Java Development Kit installation.Frequently Asked Questions When I install a newer version of an application on the TV, is the previous version overwritten or uninstalled?The previous version of the application will uninstall automatically when you install the new version.Can applications or widgets be installed on the TV through USB?For security reasons, installing applications or widgets through USB is no longer supported.Why do some applications run perfectly on Web Simulator but fail to run on the TV or the emulator?The Web engine of the Web simulator is different than that of the TV and the emulator. Therefore, application behavior can vary between Web simulator, TV, and emulator. Make sure you perform the final testing of your application on the emulator and TV.How do I open port 26101?Port 26101 is an internal device port. It cannot be opened separately.",
+            "date": "Answered October 19, 2018",
+            "views": "344",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Korkut Ozkan",
+                    "user_href": "/profile/Korkut-Ozkan-1"
+                },
+                {
+                    "user_id": "Mashhood Mahmood",
+                    "user_href": "/profile/Mashhood-Mahmood"
+                },
+                {
+                    "user_id": "Michael Jacobsen",
+                    "user_href": "/profile/Michael-Jacobsen-64"
+                },
+                {
+                    "user_id": "Bittu Kumar",
+                    "user_href": "/profile/Bittu-Kumar-781"
+                },
+                {
+                    "user_id": "Satvik Gandhi",
+                    "user_href": "/profile/Satvik-Gandhi-4"
+                },
+                {
+                    "user_id": "Tran Khai",
+                    "user_href": "/profile/Tran-Khai-6"
+                },
+                {
+                    "user_id": "Dr Major",
+                    "user_href": "/profile/Dr-Major"
+                },
+                {
+                    "user_id": "NAG N",
+                    "user_href": "/profile/NAG-N"
+                },
+                {
+                    "user_id": "Nikhil Sharma",
+                    "user_href": "/profile/Nikhil-Sharma-87"
+                },
+                {
+                    "user_id": "Arjun S",
+                    "user_href": "/profile/Arjun-S-237"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jps Goshawmi",
+                "href": "/profile/Jps-Goshawmi"
+            },
+            "answer_text": "Developer Mode on the TV: On the TV, open the \"Smart Hub\".Select the \"Apps\" panel. ...In the \"Apps\" panel, enter \"12345\" using the remote control or the on-screen number keypad. ...Switch \"Developer mode\" to \"On\".Enter the IP address of the computer that you want to connect to the TV, and click \"OK\".Reboot the TV.",
+            "date": "Answered April 8, 2018",
+            "views": "74",
+            "upvotes": " View 26 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Trivans Tuikki",
+                    "user_href": "/profile/Trivans-Tuikki"
+                },
+                {
+                    "user_id": "Sibi Aadharsh",
+                    "user_href": "/profile/Sibi-Aadharsh"
+                },
+                {
+                    "user_id": "Korkut Ozkan",
+                    "user_href": "/profile/Korkut-Ozkan-1"
+                },
+                {
+                    "user_id": "Saritha Pilli",
+                    "user_href": "/profile/Saritha-Pilli"
+                },
+                {
+                    "user_id": "Lukies Videos",
+                    "user_href": "/profile/Lukies-Videos"
+                },
+                {
+                    "user_id": "Satya Manikanta",
+                    "user_href": "/profile/Satya-Manikanta-15"
+                },
+                {
+                    "user_id": "Abrar Shabhai",
+                    "user_href": "/profile/Abrar-Shabhai"
+                },
+                {
+                    "user_id": "Joop Wingen",
+                    "user_href": "/profile/Joop-Wingen"
+                },
+                {
+                    "user_id": "Vodcan Eshhak",
+                    "user_href": "/profile/Vodcan-Eshhak"
+                },
+                {
+                    "user_id": "Byuzand Azizyan",
+                    "user_href": "/profile/Byuzand-Azizyan"
+                }
+            ]
+        }
+    ]
+}

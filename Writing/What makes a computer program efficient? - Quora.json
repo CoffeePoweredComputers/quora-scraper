@@ -1,0 +1,405 @@
+{
+    "title": "What makes a computer program efficient? - Quora",
+    "tags": [
+        "Computer Science Education",
+        "Software Engineering",
+        "Computers",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steve Baker",
+                "href": "/profile/Steve-Baker-100"
+            },
+            "answer_text": "There are really two principle measures of efficiency: Time and Space. Time: You need the program to run fast enough to perform any realtime calculations within an acceptable amount of time. If a human is in the loop - then 0.1 seconds should be the acceptable response time. But if you\u2019re playing video then 0.017 seconds is the requirement. If you\u2019re driving some physical device (like the computer in your car that\u2019s timing valve opening and closing) then you may have to get all of the work done in 0.0001 seconds or less!Space: You only have just so much memory (and disk space) - so you have to use it efficiently. Also, on most computers, you\u2019re sharing the memory with other programs - so being \u201cfriendly\u201d means using the least possible memory - even if more is available.Those aren\u2019t the only measures - but they are generally the most important. But for embedded systems and mobile systems that have to run off of battery power - then minimizing power consumption adds another layer. I wrote software to control a 3D printer - and using the least possible plastic filament to make the desired shape was an additional \u201cefficiency\u201d requirement. The first (and usually most important) thing is to choose - or design - an efficient algorithm. So, for example, if you want to sort a bunch of names into alphabetical order - you can choose from at least a dozen standard algorithms - some are faster than others - but consume more memory - so better on time - worse on space. Others are very fast when the data is almost in the right order already - but slower if not\u2026so if you know something about the data you have to sort - then you can choose more wisely. Getting the right algorithm usually gets you most of the way there. But if that\u2019s not enough - then you get into the ikky realms of \u201coptimization\u201d. The rule here is to MEASURE. Use whatever tools you have available to figure out which parts of your program use the most time - and which data structures use the most space. This allows you to focus your efforts on the lowest/most-memory-hogging functions FIRST - rather than wasting you efforts in doubling the speed of a piece code that only takes 0.001% of the time in the first place! Much better to find the code that takes 90% of the time - and even if you can only increase it\u2019s performance by 10%\u2026that\u2019s a MUCH better use of your effort. Very often, you end up with a time-versus-space tradeoff - where you can make something faster by using more memory - or you can save memory at the cost of making things slower. So knowing at all times whether time or space is your biggest problem is very valuable. Another thing to consider is whether you\u2019re using all of the resources available to you. If your program is too slow - you\u2019re probably running on a computer with 2 or even 4 \u201ccores\u201d. That computer can do two or four things at the same time - so can you use threading to split your biggest time hog into two or four processes? Even more radical - many computers have a \u201cGPU\u201d for doing graphics alongside the CPU. The GPU probably has between 500 and 3,000 cores(!!) and although each core is a VERY simple computer - you may be able to do thousands of calculations at the same time!! But mostly - choose the right algorithm at the outset. ",
+            "date": "Answered April 3, 2019",
+            "views": "28",
+            "upvotes": " View 50 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "NISHI KAITHWAS",
+                    "user_href": "/profile/NISHI-KAITHWAS"
+                },
+                {
+                    "user_id": "Suprateek Nag",
+                    "user_href": "/profile/Suprateek-Nag"
+                },
+                {
+                    "user_id": "Constant Oduol",
+                    "user_href": "/profile/Constant-Oduol"
+                },
+                {
+                    "user_id": "Andrew Marcell",
+                    "user_href": "/profile/Andrew-Marcell"
+                },
+                {
+                    "user_id": "Piotr Musial",
+                    "user_href": "/profile/Piotr-Musial"
+                },
+                {
+                    "user_id": "Danny Wright",
+                    "user_href": "/profile/Danny-Wright-35"
+                },
+                {
+                    "user_id": "Norman Skinner",
+                    "user_href": "/profile/Norman-Skinner-2"
+                },
+                {
+                    "user_id": "Jack Eastman",
+                    "user_href": "/profile/Jack-Eastman-4"
+                },
+                {
+                    "user_id": "Ernestas Ju\u0161ka",
+                    "user_href": "/profile/Ernestas-Ju\u0161ka"
+                },
+                {
+                    "user_id": "Hamoud Rodriguez",
+                    "user_href": "/profile/Hamoud-Rodriguez"
+                },
+                {
+                    "user_id": "Bosca Fabian",
+                    "user_href": "/profile/Bosca-Fabian"
+                },
+                {
+                    "user_id": "Tae Lim Kook",
+                    "user_href": "/profile/Tae-Lim-Kook"
+                },
+                {
+                    "user_id": "Dave Askprey",
+                    "user_href": "/profile/Dave-Askprey"
+                },
+                {
+                    "user_id": "Michael Gautier",
+                    "user_href": "/profile/Michael-Gautier-1"
+                },
+                {
+                    "user_id": "Owen Klan",
+                    "user_href": "/profile/Owen-Klan"
+                },
+                {
+                    "user_id": "Abdulmajid Almesned",
+                    "user_href": "/profile/Abdulmajid-Almesned"
+                },
+                {
+                    "user_id": "Faizan Anwar",
+                    "user_href": "/profile/Faizan-Anwar-2"
+                },
+                {
+                    "user_id": "Ayush Salik",
+                    "user_href": "/profile/Ayush-Salik"
+                },
+                {
+                    "user_id": "Sushant Kr. Singh",
+                    "user_href": "/profile/Sushant-Kr-Singh-1"
+                },
+                {
+                    "user_id": "Aidb David",
+                    "user_href": "/profile/Aidb-David"
+                },
+                {
+                    "user_id": "Li Xian Wong",
+                    "user_href": "/profile/Li-Xian-Wong"
+                },
+                {
+                    "user_id": "Mustafa Kibar",
+                    "user_href": "/profile/Mustafa-Kibar"
+                },
+                {
+                    "user_id": "Connor Blomquist",
+                    "user_href": "/profile/Connor-Blomquist"
+                },
+                {
+                    "user_id": "Rajan Kumar",
+                    "user_href": "/profile/Rajan-Kumar-591"
+                },
+                {
+                    "user_id": "Joylon Cornelio",
+                    "user_href": "/profile/Joylon-Cornelio"
+                },
+                {
+                    "user_id": "Aaron Dwi",
+                    "user_href": "/profile/Aaron-Dwi"
+                },
+                {
+                    "user_id": "Alexandru Beloiu",
+                    "user_href": "/profile/Alexandru-Beloiu"
+                },
+                {
+                    "user_id": "Eric Rovell",
+                    "user_href": "/profile/Eric-Rovell"
+                },
+                {
+                    "user_id": "Rostislav Kondratenko",
+                    "user_href": "/profile/Rostislav-Kondratenko"
+                },
+                {
+                    "user_id": "Indraneel Rajeevan",
+                    "user_href": "/profile/Indraneel-Rajeevan"
+                },
+                {
+                    "user_id": "Mohamed Talaat Harb",
+                    "user_href": "/profile/Mohamed-Talaat-Harb-1"
+                },
+                {
+                    "user_id": "M Abhijith Bhuvandas",
+                    "user_href": "/profile/M-Abhijith-Bhuvandas"
+                },
+                {
+                    "user_id": "Mina Farag",
+                    "user_href": "/profile/Mina-Farag-6"
+                },
+                {
+                    "user_id": "Yashasvi Goel",
+                    "user_href": "/profile/Yashasvi-Goel"
+                },
+                {
+                    "user_id": "V\u00e1clav Bla\u017eek",
+                    "user_href": "/profile/V\u00e1clav-Bla\u017eek"
+                },
+                {
+                    "user_id": "Rafael Antunes",
+                    "user_href": "/profile/Rafael-Antunes-1"
+                },
+                {
+                    "user_id": "Jason Cobb",
+                    "user_href": "/profile/Jason-Cobb-12"
+                },
+                {
+                    "user_id": "Alex Simpson",
+                    "user_href": "/profile/Alex-Simpson-211"
+                },
+                {
+                    "user_id": "Logan R. Kearsley",
+                    "user_href": "/profile/Logan-R-Kearsley"
+                },
+                {
+                    "user_id": "Martin Keiblinger",
+                    "user_href": "/profile/Martin-Keiblinger-2"
+                },
+                {
+                    "user_id": "Sudhath Jain",
+                    "user_href": "/profile/Sudhath-Jain"
+                },
+                {
+                    "user_id": "Almaghfuur Lahu",
+                    "user_href": "/profile/Almaghfuur-Lahu"
+                },
+                {
+                    "user_id": "Ayman Azm",
+                    "user_href": "/profile/Ayman-Azm"
+                },
+                {
+                    "user_id": "G\u00e1bor Kiss",
+                    "user_href": "/profile/G\u00e1bor-Kiss-8"
+                },
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "Pedro Miranda",
+                    "user_href": "/profile/Pedro-Miranda-50"
+                },
+                {
+                    "user_id": "Tato Barilatti",
+                    "user_href": "/profile/Tato-Barilatti"
+                },
+                {
+                    "user_id": "Nat Condit-Schultz",
+                    "user_href": "/profile/Nat-Condit-Schultz"
+                },
+                {
+                    "user_id": "Dimitar Ivanov",
+                    "user_href": "/profile/Dimitar-Ivanov-13"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sunnylearner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roger Scott",
+                "href": "/profile/Roger-Scott-40"
+            },
+            "answer_text": "Well, the absence of things that make it inefficient. Efficient programs don\u2019t do things they don\u2019t need to. The two main things that a program can be efficient in terms of are its use of time (i.e., number of instructions it needs to execute to do its job) and space, or memory, which usually refers to the maximum amount of memory it needs at any one time (a.k.a. the \u201chigh water mark\u201d) to do its job. Often the \u201cobvious\u201d way for a human to do something is not the most efficient, and the most efficient algorithm is often far from obvious to the uninitiated. ",
+            "date": "Answered May 22, 2019",
+            "views": "93",
+            "upvotes": " Answer requested by Quora User",
+            "upvoters": [
+                {
+                    "user_id": "Carl E. Zimmerman",
+                    "user_href": "/profile/Carl-E-Zimmerman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ira J Perlow",
+                "href": "/profile/Ira-J-Perlow"
+            },
+            "answer_text": "What makes a computer program efficient? Steve Baker\u2019s answer outlines the characteristics of what an efficient program\u2019s measuring stick could be. But what really makes the program efficient or not is either the programmer Choosing the correct algorithm for the taskWriting better code for the taskChoosing the correct switches for the the compiler to optimize for speed or space. However, this isn\u2019t black and white, as sometimes choosing for space is often faster too because it utilizes the CPU\u2019s cache better and runs faster.In today\u2019s typical PC\u2019s large memory environments, memory space is not normally a limitation, so most people code for speed. But in specialized processors or microcontollers, RAM or ROM can be very limited, along with power (Power can be affected by the number of total cycles used). So programs need to be cognizant of these limitations and code to the task. ",
+            "date": "Answered April 4, 2019",
+            "views": "170",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dani Richard",
+                "href": "/profile/Dani-Richard"
+            },
+            "answer_text": "Program \u201cefficiency\u201d is a measure of how fast a program executes. Efficiency is a relative measurement. So it a comparison between two implementations of a program. The desire for \u201cefficiency\u201d starts with requirements and then design. Algorithm selection is the single biggest influence in \u201cefficiency\u201d at the intended scale. Next is language choice. Then is how memory is managed during execution. This can be a hidden cost if memory allocation dominates the process. If the program uses the internet, fast executed may unimportant compared to communication overhead and server response time. For addition information see:\u201dComputer Systems: A Programmer\u2019s Perspective\u201d 3rd edition by Brant and O\u2019Hallaron at CS:APP3e, Bryant and O'Hallaron ",
+            "date": "Answered April 4, 2019",
+            "views": "352",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Ylia Ocevcenkao",
+                    "user_href": "/profile/Ylia-Ocevcenkao"
+                },
+                {
+                    "user_id": "Adnan James",
+                    "user_href": "/profile/Adnan-James"
+                },
+                {
+                    "user_id": "Hillary Chen",
+                    "user_href": "/profile/Hillary-Chen-9"
+                },
+                {
+                    "user_id": "Greg Dean",
+                    "user_href": "/profile/Greg-Dean-59"
+                },
+                {
+                    "user_id": "Garvita Lynne",
+                    "user_href": "/profile/Garvita-Lynne"
+                },
+                {
+                    "user_id": "James Carter",
+                    "user_href": "/profile/James-Carter-864"
+                },
+                {
+                    "user_id": "Voiva Zebarejkow",
+                    "user_href": "/profile/Voiva-Zebarejkow"
+                },
+                {
+                    "user_id": "Viktoir Cemakow",
+                    "user_href": "/profile/Viktoir-Cemakow"
+                },
+                {
+                    "user_id": "Bob Garg",
+                    "user_href": "/profile/Bob-Garg-2"
+                },
+                {
+                    "user_id": "Tony Ayaz",
+                    "user_href": "/profile/Tony-Ayaz-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Russell McCabe",
+                "href": "/profile/Russell-McCabe-2"
+            },
+            "answer_text": "From the top: The choice of algorithm, language(s) used and most of all, WRITING GOOD CODE! ",
+            "date": "Answered April 8, 2019",
+            "views": "96",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Theo Reos",
+                    "user_href": "/profile/Theo-Reos"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tedi Kakatsi",
+                "href": "/profile/Tedi-Kakatsi"
+            },
+            "answer_text": "It depends of the areas, the perfect efficient app should depending of domain work differently. In IoT and mobile apps domain, an efficient program are one who consume little to nothing power and execute task as fast as possible.On servers app: the program should handle heavy numbers of transaction and traffic with little to nothing cpu, Ram and ressources consumption. Without any visible latence.On compute or desktop apps, the program should do the job as fast as possible on any type of computer.The common point between these are the efficient of program algorithm. Hope it helps. ",
+            "date": "Answered May 1, 2019",
+            "views": "74",
+            "upvotes": " Answer requested by Quora User",
+            "upvoters": [
+                {
+                    "user_id": "Ken Iisaka",
+                    "user_href": "/profile/\u98ef\u5742-\u5065-Ken-Iisaka"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sunnylearner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Kenneth Eng",
+                "href": "/profile/Richard-Kenneth-Eng"
+            },
+            "answer_text": "Smart algorithm design.Skillful coding with the programming language. This may involve solving special problems related to the hardware and user requirements.The programming language generates highly optimized code.",
+            "date": "Answered April 4, 2019",
+            "views": "84",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sunnylearner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eliot Miranda",
+                "href": "/profile/Eliot-Miranda"
+            },
+            "answer_text": "[[self readAllAvailableAboutTopic: #Algorithms] repeat] forkAt: Processor activePriority - 1. [[self readAllAvailableAboutTopic: #ComplexityTheory] repeat] forkAt: Processor activePriority - 1. [self profile. self think. self rewrite] repeat ",
+            "date": "Answered March 20, 2019",
+            "views": "143",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Prannaya Gupta",
+                    "user_href": "/profile/Prannaya-Gupta"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nasser Ghoseiri",
+                "href": "/profile/Nasser-Ghoseiri"
+            },
+            "answer_text": "To name a few: quality of code, experience of engineers behind it, having been built with scalability in mind, proper use of Heap memory, lack of memory-leaks, correct use of Multi-Thread/Multi-Process architecture (most people haven\u2019t heard of Multi-Process architecture sadly, in my experience). ",
+            "date": "Answered April 4, 2019",
+            "views": "43",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sunnylearner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zayan Karimi",
+                "href": "/profile/Zayan-Karimi"
+            },
+            "answer_text": "Basically there is this metric known as big O notation. A single for loop has a big O of O(n) A nested for loop has a big O of O(n^c) where c is some constant There are different O notations for bigger values. O(1) most efficient O(Log(n)) O(n) O(nLog(n)) O(n^c) O(c^n) O(n!) Least efficient You can research more about it ",
+            "date": "Answered April 7, 2019",
+            "views": "93",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Anton Carver",
+                "href": "/profile/Anton-Carver"
+            },
+            "answer_text": "The programmer mostly. A good optimizing compiler can help, but only if the programmer implements efficient algorithms in the first place. ",
+            "date": "Answered March 20, 2019",
+            "views": "50",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "title": "How to find out a database name in MySQL - Quora",
+    "tags": [
+        "MySQL",
+        "SQL",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Adam Taylor",
+                "href": "/profile/Adam-Taylor-366"
+            },
+            "answer_text": "There are several ways to obtain a list of databases. Let me count the ways\u2026 If you need currently selected database you could use the DATABASE() function: SELECT DATABASE();\u00a0To get a list of all your databases, try this: SHOW DATABASES;\u00a0+--------------------+\u00a0| Database           |\u00a0+--------------------+\u00a0| classicmodels      |\u00a0| information_schema |\u00a0| mysql              |\u00a0| performance_schema |\u00a0| sys                |\u00a0| test               |\u00a0+--------------------+\u00a0For more fine-grained control over your results, you can query the INFORMATION_SCHEMA. Here\u2019s the basic syntax for fetching the full database list: SELECT `schema_name` from INFORMATION_SCHEMA.SCHEMATA;\u00a0Both the SHOW DATABASES() and INFORMATION_SCHEMA queries above include the default system schemas, which ship with MySQL. They are: mysql: the system database that contains tables that store information required by the MySQL serverinformation_schema: provides access to database metadataperformance_schema: a feature for monitoring MySQL Server execution at a low levelsys: a set of objects that helps DBAs and developers interpret data collected by the Performance SchemaYou can exclude the default system schemas by adding a WHERE clause like the following: SELECT `schema_name` from INFORMATION_SCHEMA.SCHEMATA  \u00a0WHERE  `schema_name` \u00a0    NOT IN('information_schema', 'mysql', 'performance_schema');\u00a0If you care to invest in a GUI DB client, you should be able to view all of the databases, along with their tables, fields, and all objects and their attributes. The client that I use, Navicat for MySQL, shows all the databases in the object pane. I highlighted them within a red rectangle in the screenshot below:  Choose whichever of those methods work for you! Best regards, Adam ",
+            "date": "Answered June 6, 2019",
+            "views": "112",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Krishankant Mani",
+                    "user_href": "/profile/Krishankant-Mani"
+                },
+                {
+                    "user_id": "Martin Wheeler",
+                    "user_href": "/profile/Martin-Wheeler-19"
+                },
+                {
+                    "user_id": "Rob Gravelle",
+                    "user_href": "/profile/Rob-Gravelle-2"
+                },
+                {
+                    "user_id": "Rob Gravelle",
+                    "user_href": "/profile/Rob-Gravelle"
+                },
+                {
+                    "user_id": "Rob Gravelle",
+                    "user_href": "/profile/Rob-Gravelle-1"
+                },
+                {
+                    "user_id": "Julius Blue",
+                    "user_href": "/profile/Julius-Blue-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pavel Katiushyn",
+                "href": "/profile/Pavel-Katiushyn"
+            },
+            "answer_text": "Except simple and most used show databases; there is other way. To get database information and name query schemata table: select * from information_schema.schemata;\u00a0From schemata it is easier to do things like this: select concat('drop database ', SCHEMA_NAME,';') \u00a0  from information_schema.schemata;\u00a0\u00a0+-------------------------------------------+\u00a0| concat('drop database ', SCHEMA_NAME,';') |\u00a0+-------------------------------------------+\u00a0| drop database test;                       |\u00a0| drop database test1;                      |\u00a0",
+            "date": "Updated June 13, 2016",
+            "views": "324",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ana Gurgenidze",
+                    "user_href": "/profile/Ana-Gurgenidze"
+                },
+                {
+                    "user_id": "Ashwat Acharya",
+                    "user_href": "/profile/Ashwat-Acharya"
+                },
+                {
+                    "user_id": "Patrick Ira DonEgan",
+                    "user_href": "/profile/Patrick-Ira-DonEgan"
+                },
+                {
+                    "user_id": "Jishnu Jayakrishnan",
+                    "user_href": "/profile/Jishnu-Jayakrishnan-2"
+                },
+                {
+                    "user_id": "Alex Stamp",
+                    "user_href": "/profile/Alex-Stamp-1"
+                }
+            ]
+        }
+    ]
+}

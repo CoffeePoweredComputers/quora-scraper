@@ -1,0 +1,84 @@
+{
+    "title": "Statistics (academic discipline): What are some alternatives to p-values? - Quora",
+    "tags": [
+        "P-value (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nigel Delaney",
+                "href": "/profile/Nigel-Delaney"
+            },
+            "answer_text": "P-Values are useless for very large datasets (n >>> p).  They were designed as a guard against stating too much from too little data, though somewhat paradoxically, they also allow you to say too much with too much data. The essential problem is that a p-value is always significant for even trivial factors in large datasets, as there is always some bit of model misspecification that makes all terms significant and gives them very low p-values. For large (and even small) datasets, there are several alternative metrics in this case that are more useful.   Cross Validation Error - This is typically used when the predictive ability of the whole model is desired.  For example, one could do a regression to estimate car-insurance rates and test the effect of adding a trivial factor (like temperature at time of the insurance application) into the model.  With a very large dataset the p-value for the significance of this term would effectively be 0, despite it not contributing anything to the predictive ability. Cross validation would show it was useless, and allow you to evaluate how much a covariate actually helps a model.  Cross validation is typically more computationally expensive than other methods, but has the advantage of being readily interpretable by just about everyone. Effect Sizes - Great when the individual effect of a parameter is of interest, the p-value is typically a function of the effect size and the sample size, and for interpretative purposes it makes more sense to focus on this.Information Criteria - There are several criteria that assess the significance of an improved model fit for a particular number of parameters (Akaike information criterion). Looking for a large change in these values is a great way to evaluate the effect of any covariate, and again is more meaningful than p-values.Pseudo-R2 - (FAQ: What are pseudo R-squareds?) Like the information criteria, these evaluate how the likelihood of the model changes.  However, they look at the percent change in the likelihood, rather than the absolute difference, which allows you to scale better for the dataset size.  This is one of my favorite metrics, but is not widely known and so is more difficult to communicate.  Doing your model selection using pseudo-R^2 and communicating the final model with cross validation is an effective strategy to save time for both model building and presentation.Mixture Models - There are several frameworks that assign variables (or even models) into \"active\" and \"non-active\" components.  One can look at the posterior assignment of a factor to either category to assess significance.  One example of this are the spike/slab methods (Page on arxiv.org)",
+            "date": "Updated July 30, 2015",
+            "views": "611",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mindguard Eran",
+                    "user_href": "/profile/Mindguard-Eran"
+                },
+                {
+                    "user_id": "Jacob Ningen",
+                    "user_href": "/profile/Jacob-Ningen"
+                },
+                {
+                    "user_id": "Pelle Evensen",
+                    "user_href": "/profile/Pelle-Evensen"
+                },
+                {
+                    "user_id": "Ruben Zelaya-Vargas",
+                    "user_href": "/profile/Ruben-Zelaya-Vargas"
+                },
+                {
+                    "user_id": "Kevin H. Lin",
+                    "user_href": "/profile/Kevin-H-Lin"
+                },
+                {
+                    "user_id": "Gibran Fuentes Pineda",
+                    "user_href": "/profile/Gibran-Fuentes-Pineda"
+                },
+                {
+                    "user_id": "Deng Shao",
+                    "user_href": "/profile/Deng-Shao-2"
+                },
+                {
+                    "user_id": "William Chiu",
+                    "user_href": "/profile/William-Chiu"
+                },
+                {
+                    "user_id": "Ninnat Tom Dangniam",
+                    "user_href": "/profile/Ninnat-Tom-Dangniam"
+                },
+                {
+                    "user_id": "Karthik Sriram Chandrashekaran",
+                    "user_href": "/profile/Karthik-Sriram-Chandrashekaran"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Fred Feinberg",
+                "href": "/profile/Fred-Feinberg"
+            },
+            "answer_text": "There are many alternatives, as Nigel's answer details. I'd like to mention another. When your outcome variable is on some nice, level, granular scale (i.e., it's \"interval\") data, you can compute the Mean Absolute Deviation under any model; this is essentially how off you are, on average (or, the Root Mean Squared Error, which penalizes larger deviations more). Like, if I have a hundred point scale, and the MAD is 4, I'm off by 4 points in my prediction, on average. The metric I try to report in comparing any two models is how much worse is one than the other. So, if my standard model has MAD = 5, and the new alternative has MAD = 4, my predictions just got 25% better. ANYONE can understand this. p-values are often absurdly tiny for large data sets, regardless of what you are looking at. They are more of a reality check. Computing effect sizes and relative model fits are much more sensible. ",
+            "date": "Answered June 5, 2015",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Lucy Buj",
+                    "user_href": "/profile/Lucy-Buj"
+                },
+                {
+                    "user_id": "Matthias Quinn",
+                    "user_href": "/profile/Matthias-Quinn"
+                },
+                {
+                    "user_id": "Garry Tuohy",
+                    "user_href": "/profile/Garry-Tuohy"
+                }
+            ]
+        }
+    ]
+}

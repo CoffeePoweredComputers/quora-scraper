@@ -1,0 +1,795 @@
+{
+    "title": "What is the intuitive meaning of the Nyquist\u2013Shannon sampling theorem? Why is it that the sampling frequency has to be greater than twice of the message signal? What is the physical meaning and significance of over and under sampling? - Quora",
+    "tags": [
+        "Nyquist-Shannon Sampling Theorem",
+        "Intuitive Explanations",
+        "Sampling (statistics)",
+        "Theorems and Lemmas"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aneesh Kulkarni",
+                "href": "/profile/Aneesh-Kulkarni-1"
+            },
+            "answer_text": "For me, the most intuitive way to understand the sampling theorem has been to visualize the sampling process in time domain. This way, the problem gets reduced to 'connecting the dots'. Consider a sine wave, being sampled at a rate eight times its frequency.   We have eight samples per cycle of the wave. Do these samples contain enough information for us to reconstruct the original wave? Yes, for if we were to draw a 'sine wave' passing through these eight 'dots', the reconstructed waveform would be exactly the same as the original wave. Physically, this reconstruction can be done with the help of a low pass filter. With the cut-off frequency adjusted appropriately, a low pass filter will extract the fundamental from the sampled waveform.  Next, let us try to reduce the number of samples (dots) per cycle. With six samples per cycle, we see that we can still join the dots to get back the original wave.   Is there a lower limit to the number of dots per cycle? Clearly, we would need at least two dots, one in the positive lobe and the other in the negative lobe, so that we may join them to reconstruct the original wave.   This is how the number 'two' crops up in the sampling theorem.  But there's a catch here - in the above figure, we have assumed that we are sampling right at the peaks. What if we were sampling slightly off the peaks?  We still have two samples per cycle. Surprisingly, although the wave formed by joining the dots has exactly the same frequency as the original wave, it differs in amplitude and phase.  Extending this logic even further, what if we were to sample exactly at the zero crossings?   Again we have two samples per cycle, but they are all zeroes! There is no way we can reconstruct the original wave from a series of zeroes. Thus we see that sampling at double the frequency may not lead to correct to reconstruction in all cases. This is the reason why the theorem contains a strict inequality. That is, the sampling frequency must be greater than (not equal to) twice the frequency of the sampled wave. Here we considered the signal to be a single sine wave. Real world signals can be thought to be made up of a number of sinusoidal components. Thus the sampling frequency must be greater than twice the highest frequency component.  Oversampling occurs when we sample at a frequency much greater than the critical frequency (twice the highest frequency component). This is the case in the first two figures in this answer.  Undersampling occurs when the sampling frequency is less than the critical frequency. An undersampled signal, on reconstruction, gives a signal whose frequency is lower than the original signal. This is called aliasing.   In the above figure, we have one sample per cycle of the original wave. The reconstructed wave, formed by joining the dots, has a lesser frequency than the original wave. These two waves are said to be the aliases of each other. ",
+            "date": "Updated April 7, 2015",
+            "views": "334",
+            "upvotes": " View 200 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ojas Saran",
+                    "user_href": "/profile/Ojas-Saran-2"
+                },
+                {
+                    "user_id": "KS Srivathsan",
+                    "user_href": "/profile/KS-Srivathsan"
+                },
+                {
+                    "user_id": "Chris Savva",
+                    "user_href": "/profile/Chris-Savva-16"
+                },
+                {
+                    "user_id": "Krishna Dutta",
+                    "user_href": "/profile/Krishna-Dutta-82"
+                },
+                {
+                    "user_id": "Pooja Kabra",
+                    "user_href": "/profile/Pooja-Kabra-3"
+                },
+                {
+                    "user_id": "K.V.S.Satya Prakash",
+                    "user_href": "/profile/K-V-S-Satya-Prakash"
+                },
+                {
+                    "user_id": "Umur Do\u011fan",
+                    "user_href": "/profile/Umur-Do\u011fan"
+                },
+                {
+                    "user_id": "B M Krishna",
+                    "user_href": "/profile/B-M-Krishna-2"
+                },
+                {
+                    "user_id": "Ucef Mjb",
+                    "user_href": "/profile/Ucef-Mjb"
+                },
+                {
+                    "user_id": "Surya Prakash Sahu",
+                    "user_href": "/profile/Surya-Prakash-Sahu"
+                },
+                {
+                    "user_id": "Kaiwan N Billimoria",
+                    "user_href": "/profile/Kaiwan-N-Billimoria"
+                },
+                {
+                    "user_id": "Vidur Singh",
+                    "user_href": "/profile/Vidur-Singh"
+                },
+                {
+                    "user_id": "Rajeshwaran Ravi",
+                    "user_href": "/profile/Rajeshwaran-Ravi"
+                },
+                {
+                    "user_id": "Pavan Pk",
+                    "user_href": "/profile/Pavan-Pk-2"
+                },
+                {
+                    "user_id": "Kathiravan RS",
+                    "user_href": "/profile/Kathiravan-RS"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Yenj-Yenj"
+                },
+                {
+                    "user_id": "Linbo He",
+                    "user_href": "/profile/Linbo-He"
+                },
+                {
+                    "user_id": "Jack London",
+                    "user_href": "/profile/Jack-London-223"
+                },
+                {
+                    "user_id": "Keerthi Radhakrishnan",
+                    "user_href": "/profile/Keerthi-Radhakrishnan-3"
+                },
+                {
+                    "user_id": "Srujana Nandoju",
+                    "user_href": "/profile/Srujana-Nandoju"
+                },
+                {
+                    "user_id": "Minghe Xu",
+                    "user_href": "/profile/Minghe-Xu"
+                },
+                {
+                    "user_id": "Bhushan Kumar",
+                    "user_href": "/profile/Bhushan-Kumar-6"
+                },
+                {
+                    "user_id": "Kristian Gonzalez",
+                    "user_href": "/profile/Kristian-Gonzalez-7"
+                },
+                {
+                    "user_id": "Salvador \u00c1lvarez",
+                    "user_href": "/profile/Salvador-\u00c1lvarez-2"
+                },
+                {
+                    "user_id": "Naveen Francis",
+                    "user_href": "/profile/Naveen-Francis-3"
+                },
+                {
+                    "user_id": "Nikhil Agarwal",
+                    "user_href": "/profile/Nikhil-Agarwal-138"
+                },
+                {
+                    "user_id": "Manish Prajapat",
+                    "user_href": "/profile/Manish-Prajapat-3"
+                },
+                {
+                    "user_id": "Erik Ponce",
+                    "user_href": "/profile/Erik-Ponce-1"
+                },
+                {
+                    "user_id": "Robin Tomar",
+                    "user_href": "/profile/Robin-Tomar-6"
+                },
+                {
+                    "user_id": "Mita Suresh",
+                    "user_href": "/profile/Mita-Suresh"
+                },
+                {
+                    "user_id": "Jo\u00e3o Paulo M. Fran\u00e7a",
+                    "user_href": "/profile/Jo\u00e3o-Paulo-M-Fran\u00e7a"
+                },
+                {
+                    "user_id": "Jirka Lhotka",
+                    "user_href": "/profile/Jirka-Lhotka"
+                },
+                {
+                    "user_id": "Abhishek Thakur",
+                    "user_href": "/profile/Abhishek-Thakur-375"
+                },
+                {
+                    "user_id": "Chitra Lalawat",
+                    "user_href": "/profile/Chitra-Lalawat"
+                },
+                {
+                    "user_id": "Jonny Boyre",
+                    "user_href": "/profile/Jonny-Boyre"
+                },
+                {
+                    "user_id": "Deepak Gupta",
+                    "user_href": "/profile/Deepak-Gupta-35"
+                },
+                {
+                    "user_id": "Nico Simon",
+                    "user_href": "/profile/Nico-Simon-1"
+                },
+                {
+                    "user_id": "Mugilan Raja",
+                    "user_href": "/profile/Mugilan-Raja-1"
+                },
+                {
+                    "user_id": "Shalini",
+                    "user_href": "/profile/Shalini-43"
+                },
+                {
+                    "user_id": "Vjekoslav Nemec",
+                    "user_href": "/profile/Vjekoslav-Nemec"
+                },
+                {
+                    "user_id": "Amir",
+                    "user_href": "/profile/Amir-261"
+                },
+                {
+                    "user_id": "Ben Royal",
+                    "user_href": "/profile/Ben-Royal"
+                },
+                {
+                    "user_id": "Paul Roald Julian Hoets",
+                    "user_href": "/profile/Paul-Roald-Julian-Hoets"
+                },
+                {
+                    "user_id": "Irving Martinez Acosta",
+                    "user_href": "/profile/Irving-Martinez-Acosta"
+                },
+                {
+                    "user_id": "Ahmed Reda",
+                    "user_href": "/profile/Ahmed-Reda-26"
+                },
+                {
+                    "user_id": "Prama Kar",
+                    "user_href": "/profile/Prama-Kar"
+                },
+                {
+                    "user_id": "Junior Teudjio",
+                    "user_href": "/profile/Junior-Teudjio"
+                },
+                {
+                    "user_id": "Omar Abd El Nasser",
+                    "user_href": "/profile/Omar-Abd-El-Nasser-1"
+                },
+                {
+                    "user_id": "Dan Bovey",
+                    "user_href": "/profile/Dan-Bovey-1"
+                },
+                {
+                    "user_id": "Sai Charan",
+                    "user_href": "/profile/Sai-Charan-230"
+                },
+                {
+                    "user_id": "Nikhilanj Pv",
+                    "user_href": "/profile/Nikhilanj-Pv"
+                },
+                {
+                    "user_id": "Malik Maricar",
+                    "user_href": "/profile/Malik-Maricar-2"
+                },
+                {
+                    "user_id": "Shailesh Choyal",
+                    "user_href": "/profile/Shailesh-Choyal"
+                },
+                {
+                    "user_id": "Jason Zhang",
+                    "user_href": "/profile/Jason-Zhang-51"
+                },
+                {
+                    "user_id": "Justin Jayne",
+                    "user_href": "/profile/Justin-Jayne"
+                },
+                {
+                    "user_id": "ChenJinluo",
+                    "user_href": "/profile/ChenJinluo"
+                },
+                {
+                    "user_id": "Dinu",
+                    "user_href": "/profile/Dinu-18"
+                },
+                {
+                    "user_id": "Sudhanshu Kumar Singh",
+                    "user_href": "/profile/Sudhanshu-Kumar-Singh"
+                },
+                {
+                    "user_id": "Mustafa Baouch",
+                    "user_href": "/profile/Mustafa-Baouch"
+                },
+                {
+                    "user_id": "Cailley Factor",
+                    "user_href": "/profile/Cailley-Factor"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kedar Tatwawadi",
+                "href": "/profile/Kedar-Tatwawadi"
+            },
+            "answer_text": "Instead of giving formal arguments, which have already been pointed out quite well already, I will try to point out real life examples of situations where we get a Shannon-Nyquist criteria. 1) The Stationery Helicopter  For the uninformed this seems pretty bizarre! But, for a student of EE, this is merely an extreme case of non-nyquist sampling. What is happening here?The camera video feature, is basically taking samples at a frequency (Frame rate ) of 24 frames per second. If the helicopter blades rotate at multiples of this rate, (say 48 fps), this is what you will observe!  How is it related to the Shannon-Nyquist Criteria?In signal processing terms, we are trying to capture a signal ( the rotation of blades in this case) by a much smaller sampling rate, due to which there is no unique reconstruction from the samples.Thus, our brain tries to pick up the simplest reconstruction, and falters at that, thanks to the Shannon-Nyquist criteria, which simply states that the sampling frequency should be twice the frequency of the signal.  A more educative example of the same phenomenon, which I am sure most of us would have expericed is given below:  Apart form the example above, I also love a few others, which showcase how wrong reconstruction of signal can occur due to insufficient sampling rates: 2) Moire Patterns:  Moir\u00e9 pattern 3) Aliasing of Camera Images:     In this case, the pixel resolution of the camera represents the sampling frequency. ",
+            "date": "Answered January 5, 2015",
+            "views": "83",
+            "upvotes": " View 36 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Laukesh Jaiswal",
+                    "user_href": "/profile/Laukesh-Jaiswal"
+                },
+                {
+                    "user_id": "Ravi Kallem",
+                    "user_href": "/profile/Ravi-Kallem-1"
+                },
+                {
+                    "user_id": "Pooja Kabra",
+                    "user_href": "/profile/Pooja-Kabra-3"
+                },
+                {
+                    "user_id": "Tayab Shafique",
+                    "user_href": "/profile/Tayab-Shafique-1"
+                },
+                {
+                    "user_id": "Jorge Carrillo",
+                    "user_href": "/profile/Jorge-Carrillo-5"
+                },
+                {
+                    "user_id": "Ucef Mjb",
+                    "user_href": "/profile/Ucef-Mjb"
+                },
+                {
+                    "user_id": "Stefano Tizianel",
+                    "user_href": "/profile/Stefano-Tizianel"
+                },
+                {
+                    "user_id": "Kaiwan N Billimoria",
+                    "user_href": "/profile/Kaiwan-N-Billimoria"
+                },
+                {
+                    "user_id": "Khushbu Kishnani",
+                    "user_href": "/profile/Khushbu-Kishnani"
+                },
+                {
+                    "user_id": "Wyatt Epp",
+                    "user_href": "/profile/Wyatt-Epp"
+                },
+                {
+                    "user_id": "Gurubaran",
+                    "user_href": "/profile/Gurubaran-4"
+                },
+                {
+                    "user_id": "M. A. Nayeem",
+                    "user_href": "/profile/M-A-Nayeem-4"
+                },
+                {
+                    "user_id": "Bhushan Kumar",
+                    "user_href": "/profile/Bhushan-Kumar-6"
+                },
+                {
+                    "user_id": "Sacchit Sreenivasan",
+                    "user_href": "/profile/Sacchit-Sreenivasan"
+                },
+                {
+                    "user_id": "Siro T\u00e1o",
+                    "user_href": "/profile/Siro-T\u00e1o"
+                },
+                {
+                    "user_id": "Ahmed Reda",
+                    "user_href": "/profile/Ahmed-Reda-26"
+                },
+                {
+                    "user_id": "Thariq Shanavas",
+                    "user_href": "/profile/Thariq-Shanavas"
+                },
+                {
+                    "user_id": "John Cousins",
+                    "user_href": "/profile/John-Cousins-10"
+                },
+                {
+                    "user_id": "Shailesh Choyal",
+                    "user_href": "/profile/Shailesh-Choyal"
+                },
+                {
+                    "user_id": "Mike Evergreen",
+                    "user_href": "/profile/Mike-Evergreen"
+                },
+                {
+                    "user_id": "Sumit Sapra",
+                    "user_href": "/profile/Sumit-Sapra-2"
+                },
+                {
+                    "user_id": "Julio Cesar",
+                    "user_href": "/profile/Julio-Cesar-10"
+                },
+                {
+                    "user_id": "Jesus OhLove",
+                    "user_href": "/profile/Jesus-OhLove"
+                },
+                {
+                    "user_id": "Ian Hung",
+                    "user_href": "/profile/Ian-Hung-3"
+                },
+                {
+                    "user_id": "Prasanna Nuvvala",
+                    "user_href": "/profile/Prasanna-Nuvvala"
+                },
+                {
+                    "user_id": "Swanand Nirgudkar",
+                    "user_href": "/profile/Swanand-Nirgudkar"
+                },
+                {
+                    "user_id": "Tamojit Maiti",
+                    "user_href": "/profile/Tamojit-Maiti"
+                },
+                {
+                    "user_id": "Dushyanth Edadasula",
+                    "user_href": "/profile/Dushyanth-Edadasula-1"
+                },
+                {
+                    "user_id": "Peter Zahemszky",
+                    "user_href": "/profile/Peter-Zahemszky"
+                },
+                {
+                    "user_id": "Fuming Wang",
+                    "user_href": "/profile/Fuming-Wang"
+                },
+                {
+                    "user_id": "Surya Satya Kumar",
+                    "user_href": "/profile/Surya-Satya-Kumar"
+                },
+                {
+                    "user_id": "Wasim Akram Khan",
+                    "user_href": "/profile/Wasim-Akram-Khan-1"
+                },
+                {
+                    "user_id": "Raghavendra V",
+                    "user_href": "/profile/Raghavendra-V-35"
+                },
+                {
+                    "user_id": "Thiago Gasparino",
+                    "user_href": "/profile/Thiago-Gasparino"
+                },
+                {
+                    "user_id": "Mukul Kabra",
+                    "user_href": "/profile/Mukul-Kabra-1"
+                },
+                {
+                    "user_id": "Adithya Bharadwaj",
+                    "user_href": "/profile/Adithya-Bharadwaj-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jovana Savic",
+                "href": "/profile/Jovana-Savic-1"
+            },
+            "answer_text": "Ideally, sampling with a period T can be represented as multiplying the signal with a sum of delta impulses with period T. As shown in the picture below:   Now, it's much easier to understand this once you go into frequency domain. The Fourier transform of the sampled signal is:   (I'm not going to go into math here because I don't think it's that important for this purposes and it's not really hard, but if you want let me know and I'll add the steps that lead to this answer) This formula says that the spectrum of the signal after sampling is sum of original signal spectrum translated by n*omega sampling where n can be any integer.  This is how the spectrum looks like before sampling and after:   If you put this sampled signal through low pass filter with border frequency fm only the parts of the spectrum which absolute value is lower than fm will go through. So after filtering you will be left with the original signal (usually scaled, because the filters usually amplify the signal too).  But take a look at this example:   Sampling frequency is smaller than 2fm in this picture so there is an overlap between the original spectrum and it's translations. If you use the same filter the output spectrum won't be the original one, it will have this overlaps added to it to.  In order to prevent this overlapping you need to have sampling frequency that's at least 2fm, which is pretty obvious from the graph.   Intuitively, looking at the time domain, this might not make much sense. But this is showing us that the when it comes to signals that have limited bandwidth there is a lot of redundant information, and the samples have enough information in them to reconstruct the original signal. But you see, once you move to frequency domain, it's kinda of obvious.  If you have a sinusoidal signal then it's spectrum has non zero value for only one value of f, but with random signals (such as audio and similar) that aren't periodic the spectrum is infinitely large so that's probably why this seems counter intuitive. But most of the signal's power is in fact in one part of the spectrum that is limited, so we aren't loosing much information if we say that after some frequency fm the spectrum is zero and neglect the overlap.   As you saw above, if you do under sampling you will have overlaps and the reconstructed signal won't be the same as the original one so you've lost information about it. To understand problems with oversampling we need to go back to see how sampling is done in real life. Like I said above, this is ideal sampling. You can't generate delta impulses in real world, because you would need a switch that can open and close in infinitesimally small amount of time. Practically, for this process, instead of Dirac's impulses, we use regular square impulse signals. This is called impulse modulation. This is how the spectrum look like after that:   As you can see, there aren't really any fundamental changes when it comes to sampling frequency and signal spectrum. There are changes on the translated parts,but they won't pass through the filter, so who cares.  The most obvious problem is this: the higher the sampling frequency, the higher the frequency of this impulses is needed. Oversampling won't really do much expect require impulses with bigger frequency, and this would be overkill.  There is also another thing that's worth mentioning. If you sample a signal and send it you will have empty space between those points at which you are measuring it. These empty spaces can be used for sending more signals. This is called multiplexing. This empty spaces can be maximized by lowering the sampling frequency, so you would be able to send more signals. Multiplexing is something that's very important, it allows you to send many different signals through one medium, thus making everything much cheaper. This is why the oversampling isn't something that's very practical, it robes of many opportunities compared to what it gives.     This is some basic explanation, and there is a lot more to say about this, but I think it's enough for the purposes of this question. If you want me to add anything let me know. *The pictures and explanations are pretty much what I did in school, I'm just passing on what my great professor explained to us. ",
+            "date": "Answered September 3, 2015",
+            "views": "79",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Allan Steinhardt",
+                    "user_href": "/profile/Allan-Steinhardt"
+                },
+                {
+                    "user_id": "Alejandro Nava",
+                    "user_href": "/profile/Alejandro-Nava-2"
+                },
+                {
+                    "user_id": "Leonardo Duarte",
+                    "user_href": "/profile/Leonardo-Duarte-9"
+                },
+                {
+                    "user_id": "Sanchit Pathak",
+                    "user_href": "/profile/Sanchit-Pathak-1"
+                },
+                {
+                    "user_id": "Michael Mc Laughlin",
+                    "user_href": "/profile/Michael-Mc-Laughlin"
+                },
+                {
+                    "user_id": "Mark Vygoder",
+                    "user_href": "/profile/Mark-Vygoder"
+                },
+                {
+                    "user_id": "Aaron Yip",
+                    "user_href": "/profile/Aaron-Yip-2"
+                },
+                {
+                    "user_id": "Roman Trusov",
+                    "user_href": "/profile/Roman-Trusov"
+                },
+                {
+                    "user_id": "Harsh",
+                    "user_href": "/profile/Harsh-353"
+                },
+                {
+                    "user_id": "Omar Guti\u00e9rrez Navarro",
+                    "user_href": "/profile/Omar-Guti\u00e9rrez-Navarro"
+                },
+                {
+                    "user_id": "Divyam Khandelwal",
+                    "user_href": "/profile/Divyam-Khandelwal"
+                },
+                {
+                    "user_id": "Naresh Kumar",
+                    "user_href": "/profile/Naresh-Kumar-282"
+                },
+                {
+                    "user_id": "Dushyanth Edadasula",
+                    "user_href": "/profile/Dushyanth-Edadasula-1"
+                },
+                {
+                    "user_id": "Anwesh Nayak",
+                    "user_href": "/profile/Anwesh-Nayak"
+                },
+                {
+                    "user_id": "Shubham Bansal",
+                    "user_href": "/profile/Shubham-Bansal-15"
+                },
+                {
+                    "user_id": "Kapil Sethi",
+                    "user_href": "/profile/Kapil-Sethi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jaidev Deshpande",
+                "href": "/profile/Jaidev-Deshpande"
+            },
+            "answer_text": "Think about it this way... You are a prisoner. You were born and raised in a dungeon. You have never seen the sun or the sky. Then, one day, you were shifted to a cell with a single window, which you can open and close at will. However, the window is fully opaque. Opening it will let the sunlight in and closing it will block it out entirely. You have been promised that if you can figure out the period of time (in hours) between sun crossing the horizon (now you know what the sun is, since you have a window), you will be set free. However, every time you open the window, you are penalized in some way. Let's say you are whipped every time you open the window. The Sampling ProblemYou need to figure out how often you should open and close the window, in order to correctly guess the duration between sunrise and sunset, while at the same time minimizing the frequency of opening the window (you want to be whipped as less as possible).Assumptions: All days are like the equinoxes, i.e. the durations of day and night are exactly equal.The sun rises at 0600 hours.The SolutionWe know that 12 hours pass between sunrise and sunset. So this is a periodic 'signal' with a period of 12 hours. Sampling this particular signal consists of opening the window, noting if it is day or night, and closing the window. Since this signal repeats every 12 hours, the Nyquist sampling theorem tells us that you must open and close the window at (at least) twice it's frequency, i.e. every 6 hours. So the problem reduces to this: How do we arrive at the figure of six hours when we don't know anything about sunrise and sunset?How do we ensure that this is indeed the minimum frequency? (You don't want to get whipped unless it is absolutely necessary.)The Proof Consider an extreme approach: You want to be set free so badly that you keep the window open all the time and keep watching the sky for 24 hours and correctly record the answer. But there's a heavy penalty. You'll probably be flogged to death. Similarly, higher than necessary sampling rates can make your signal processing application die slowly and painfully. Moreover, they're just unnecessary! This is called ideal sampling.  Another case: you open the window every hour.You see the sun rise once (0600 hrs), you see it in the sky eleven times (0700-1700 hrs), you see it set once (1800 hrs), and you see the night sky eleven times (1900-0500 hrs), and the cycle repeats. With this you can easily conclude that the sun stays in the sky for 12 hours, since you've seen it rise and set exactly 12 hours apart. However, out of these sightings of the sun, the only time you get any useful information is when the sun is rising and setting. The rest of the information is redundant, since the sun is in the sky for eleven straight samples and then the sky is dark during eleven straight samples. After making this observation, you conclude that you can easily afford to open and close the window less frequently.  Open the window every three hours.The sun rises when you first open the window (0600 hrs), remains in the sky for the next three samples (0900 hrs, 1200 hrs, 1500 hrs), sets during the next sample (1800 hrs), there sky is dark for the next three samples (2100 hrs, 0000 hrs, 0300 hrs), and the cycle repeats. Now, between sunrise and sunset, there are three samples which between them give you no information. So you can further reduce the sampling rate.  Open the window every six hours (you don't yet know that this is the correct answer).There will be four samples. The sun rises (0600 hrs), it is up in the sky (1200 hrs), it sets (1800 hrs), the sky becomes dark (0000 hrs), and the cycle repeats. Since you know that these samples are equally spaced in time, you can again calculate the right time as twelve hours. But you're getting too confident, and you decide to decrease your frequency further.  Open the window every eight hours. (This is where it gets tricky!)You see the sunrise (0600 hrs), you see the sun in the sky (1400 hrs), you see the sky dark (2200 hrs), and the cycle repeats. But hold on! You never saw the sunset! The sun could have set any time between 1400 hrs and 2200 hrs! You have no way of knowing when sunset happened, and your calculations go wrong. This is called undersampling. InferencesSince you know that sampling every eight hours is not sufficient (undersampling), you go back to sampling every six hours (Nyquist sampling). But you want to leave no room for error, so you increase the sampling rate slightly (oversampling). For an interactive demo of the Nyquist theorem, see this:\"Sampling Theorem\" from the Wolfram Demonstrations Project Wolfram Demonstrations Project(Demo contributed by: Carsten Roppel) ",
+            "date": "Answered June 6, 2013",
+            "views": "118",
+            "upvotes": " View 58 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nikhil Mishra",
+                    "user_href": "/profile/Nikhil-Mishra-145"
+                },
+                {
+                    "user_id": "Tayab Shafique",
+                    "user_href": "/profile/Tayab-Shafique-1"
+                },
+                {
+                    "user_id": "Pavani Ganisetti",
+                    "user_href": "/profile/Pavani-Ganisetti-1"
+                },
+                {
+                    "user_id": "Neha Reddy Nelly",
+                    "user_href": "/profile/Neha-Reddy-Nelly"
+                },
+                {
+                    "user_id": "Yashvinder Singh",
+                    "user_href": "/profile/Yashvinder-Singh-2"
+                },
+                {
+                    "user_id": "Bhushan Kumar",
+                    "user_href": "/profile/Bhushan-Kumar-6"
+                },
+                {
+                    "user_id": "Himanshu Shaw",
+                    "user_href": "/profile/Himanshu-Shaw-1"
+                },
+                {
+                    "user_id": "Sumanth",
+                    "user_href": "/profile/Sumanth-140"
+                },
+                {
+                    "user_id": "Allen Wong",
+                    "user_href": "/profile/Allen-Wong-66"
+                },
+                {
+                    "user_id": "Manash Mandal",
+                    "user_href": "/profile/Manash-Mandal"
+                },
+                {
+                    "user_id": "Bhumi Shah",
+                    "user_href": "/profile/Bhumi-Shah-19"
+                },
+                {
+                    "user_id": "Balaji A",
+                    "user_href": "/profile/Balaji-A-27"
+                },
+                {
+                    "user_id": "Vilashini Manivannan",
+                    "user_href": "/profile/Vilashini-Manivannan"
+                },
+                {
+                    "user_id": "Aditya Krishna",
+                    "user_href": "/profile/Aditya-Krishna-16"
+                },
+                {
+                    "user_id": "Prathamesh Shinde",
+                    "user_href": "/profile/Prathamesh-Shinde-2"
+                },
+                {
+                    "user_id": "Arun Ghontale",
+                    "user_href": "/profile/Arun-Ghontale"
+                },
+                {
+                    "user_id": "Sharon Pak",
+                    "user_href": "/profile/Sharon-Pak"
+                },
+                {
+                    "user_id": "Surya Satya Kumar",
+                    "user_href": "/profile/Surya-Satya-Kumar"
+                },
+                {
+                    "user_id": "Raghavendra V",
+                    "user_href": "/profile/Raghavendra-V-35"
+                },
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                },
+                {
+                    "user_id": "Anirudh Goyal",
+                    "user_href": "/profile/Anirudh-Goyal-1"
+                },
+                {
+                    "user_id": "Maruthi Prasanna",
+                    "user_href": "/profile/Maruthi-Prasanna-11"
+                },
+                {
+                    "user_id": "John Fu",
+                    "user_href": "/profile/John-Fu-5"
+                },
+                {
+                    "user_id": "'Edwin Chang",
+                    "user_href": "/profile/Edwin-Chang-2"
+                },
+                {
+                    "user_id": "Rakshit Kothari",
+                    "user_href": "/profile/Rakshit-Kothari"
+                },
+                {
+                    "user_id": "Hesham Eraqi",
+                    "user_href": "/profile/Hesham-Eraqi-1"
+                },
+                {
+                    "user_id": "Deep Wilson",
+                    "user_href": "/profile/Deep-Wilson"
+                },
+                {
+                    "user_id": "Nandha Kishore",
+                    "user_href": "/profile/Nandha-Kishore-2"
+                },
+                {
+                    "user_id": "Dhivya Srinivasan",
+                    "user_href": "/profile/Dhivya-Srinivasan-2"
+                },
+                {
+                    "user_id": "Abhishek Verma",
+                    "user_href": "/profile/Abhishek-Verma-332"
+                },
+                {
+                    "user_id": "Thenmozhi Elango",
+                    "user_href": "/profile/Thenmozhi-Elango"
+                },
+                {
+                    "user_id": "Disha Menda",
+                    "user_href": "/profile/Disha-Menda"
+                },
+                {
+                    "user_id": "Dharin Shah",
+                    "user_href": "/profile/Dharin-Shah"
+                },
+                {
+                    "user_id": "Debmalya Mukherjee",
+                    "user_href": "/profile/Debmalya-Mukherjee"
+                },
+                {
+                    "user_id": "Vaibhav Khankar",
+                    "user_href": "/profile/Vaibhav-Khankar"
+                },
+                {
+                    "user_id": "Vineet Naik",
+                    "user_href": "/profile/Vineet-Naik"
+                },
+                {
+                    "user_id": "Asif Zaidi",
+                    "user_href": "/profile/Asif-Zaidi"
+                },
+                {
+                    "user_id": "Suraj Srinivas",
+                    "user_href": "/profile/Suraj-Srinivas"
+                },
+                {
+                    "user_id": "Suresh Ash",
+                    "user_href": "/profile/Suresh-Ash"
+                },
+                {
+                    "user_id": "Anish Bhalerao",
+                    "user_href": "/profile/Anish-Bhalerao"
+                },
+                {
+                    "user_id": "Kavita Varma",
+                    "user_href": "/profile/Kavita-Varma"
+                },
+                {
+                    "user_id": "Aditya Prasad",
+                    "user_href": "/profile/Aditya-Prasad-13"
+                },
+                {
+                    "user_id": "Shashank Kumar",
+                    "user_href": "/profile/Shashank-Kumar-6"
+                },
+                {
+                    "user_id": "Shivangi Saxena",
+                    "user_href": "/profile/Shivangi-Saxena"
+                },
+                {
+                    "user_id": "Joshua Engel",
+                    "user_href": "/profile/Joshua-Engel"
+                },
+                {
+                    "user_id": "Manyu Deshpande",
+                    "user_href": "/profile/Manyu-Deshpande"
+                },
+                {
+                    "user_id": "Jennifer Hu",
+                    "user_href": "/profile/Jennifer-Hu-1"
+                },
+                {
+                    "user_id": "Momodu Blake Jamiu",
+                    "user_href": "/profile/Momodu-Blake-Jamiu"
+                },
+                {
+                    "user_id": "Adl",
+                    "user_href": "/profile/Adl-4"
+                },
+                {
+                    "user_id": "Akshay Padegaonkar",
+                    "user_href": "/profile/Akshay-Padegaonkar"
+                },
+                {
+                    "user_id": "Tejaswini Soor",
+                    "user_href": "/profile/Tejaswini-Soor"
+                },
+                {
+                    "user_id": "Karthik Chellappan",
+                    "user_href": "/profile/Karthik-Chellappan"
+                },
+                {
+                    "user_id": "Mihika Kulkarni",
+                    "user_href": "/profile/Mihika-Kulkarni"
+                },
+                {
+                    "user_id": "Harikrishna Raghuraman",
+                    "user_href": "/profile/Harikrishna-Raghuraman"
+                },
+                {
+                    "user_id": "Ayush Rastogi",
+                    "user_href": "/profile/Ayush-Rastogi-1"
+                },
+                {
+                    "user_id": "John McGonagle",
+                    "user_href": "/profile/John-McGonagle"
+                },
+                {
+                    "user_id": "Adam Liss",
+                    "user_href": "/profile/Adam-Liss"
+                },
+                {
+                    "user_id": "Saurabh Mutha",
+                    "user_href": "/profile/Saurabh-Mutha"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vivekgautham Soundararaj",
+                "href": "/profile/Vivekgautham-Soundararaj"
+            },
+            "answer_text": "The first question 'the intuitive meaning' has been answered substantiallyBut the answer to the second question the reason behind this NyQuist Shannon sampling theorem is not what it was assumed for years.Shannon and Nyquist thought that any signal must be sampled more than twice the maximum freq of the signal.But almost all natural signals are sparse in nature which means that they do not contain that much information as previously thought.There is a whole new field of study which has been evolved from this idea called compressed sensing.Essentially less no of samples can be used for reconstruction . Just that ,we use different techniques in convex optimisation to reconstruct ,like L1 minimisation. ",
+            "date": "Updated February 18, 2014",
+            "views": "36",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Surya Deekshith",
+                    "user_href": "/profile/Surya-Deekshith"
+                },
+                {
+                    "user_id": "Akhil Patel",
+                    "user_href": "/profile/Akhil-Patel-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Janssen",
+                "href": "/profile/Mark-Janssen"
+            },
+            "answer_text": "A strobe light is flashing off and on at a certain rate.  If I don't look and sample the room at least twice the rate of the strobe, I can't tell if the data I record is merely variance in the strobe frequency or whether the strobe really does carry that frequency. ",
+            "date": "Answered June 6, 2013",
+            "views": "39",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Harikrishna Raghuraman",
+                    "user_href": "/profile/Harikrishna-Raghuraman"
+                },
+                {
+                    "user_id": "Vinay Kumar",
+                    "user_href": "/profile/Vinay-Kumar-107"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Fabrice Neyret",
+                "href": "/profile/Fabrice-Neyret"
+            },
+            "answer_text": "What is the shortest wavy black&white strip pattern that you can draw on screen ? alternates of black and white lines. So the shortest wavelength you can draw on screen is twice the pixel resolution (i.e. the screen sampling). Now, if you want to try an even shorter wavelength, just make a drawing and see illusory low frequencies emerge (which is very similar to what occurs in Moir\u00e9 and in stroboscopic effect). ",
+            "date": "Answered November 4, 2017",
+            "views": "717",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Giedrius Raguckas",
+                    "user_href": "/profile/Giedrius-Raguckas"
+                }
+            ]
+        }
+    ]
+}

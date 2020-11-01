@@ -1,0 +1,78 @@
+{
+    "title": "What are the simplification methods for Boolean expression in the digital system? - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Boolean Search",
+        "Digital Logic Design",
+        "Boolean Algebra",
+        "Theoretical Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Stone",
+                "href": "/profile/Michael-Stone-518"
+            },
+            "answer_text": "If you look in any Digital Logic textbook, you will find that there are about 11 to 13 different boolean simplification rules that you can use to simplify Boolean equations. Additionally, DeMorgan\u2019s Theorem can be used as well as Karnaugh Maps (K-Maps) for very long and tedious equations. One thing to note. Boolean equations can be written in POS form or SOP form. POS = Product of Sums which describes the various gates in terms of its zeroes, and SOP = Sum of Products, which describes the various gates in terms of its ones. And what does that mean? Each gate, AND, OR, NAND, NOR, INVERTER, XOR, and XNOR has its own truth table that describes its outputs in terms of its inputs. Digital Logic Courses are generally taught using truth tables with gates that have two inputs and one output for simplification purposes, though any gate can have more than two inputs and more than two outputs. ",
+            "date": "Answered July 9, 2020",
+            "views": "30",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jose Soares Augusto",
+                "href": "/profile/Jose-Soares-Augusto"
+            },
+            "answer_text": "There are several methods. But first let\u2019s overview a bit the framework of the problem\u2026 The problem is difficult because the complexity (number of operations until getting the solution) grows in a non-polynomial (NP) way, so in an exponential-like way, with the number of variables present in the expression (see \u201cComplexity of two-level logic minimization\u201d in https://authors.library.caltech.edu/4830/1/UMAittttcadics06.pdf, noting that this is a very thorough paper, but quite hard to read). To have an idea of the complexity in Boolean problems \u2014 which is completely hidden when we deal with textbook examples with 3 or 4 variables, \u2014 note that the truth table for an 8 input combinatoric function has [math]2^{10}=256[/math] lines, and so the number of different Boolean functions with 8 input variables is [math]2^{256} \\approx 10^{77}[/math] (since each of the 256 lines of the truth table can be either 0 or 1). How large is that number? Well, the estimated number of atoms in the Universe is [math]10^{78}[/math] to [math]10^{82}[/math] (see e.g. How Many Atoms Are There in the Universe? - Universe Today). So, the number of different Boolean combinatoric functions with 8 inputs is not very far from the estimated number of atoms in the Universe\u2026 8-input Boolean functions are bread-and-butter in day-to-day digital design. One of those functions, found as a whole IC in common logic circuit families, is the 8-input NAND gate sketched below, in this case it is in the TTL 74LS family:  But, wait! There are still [math]10^{77}-1[/math] different 8-input functions which we could sketch instead :-) So, having shown that the problem is not so simple :-) let\u2019s overview the more common techniques for simplifying/minimizing Boolean functions. Using Boolean Laws/Theorems. It is good for simplifying functions with up to about 6 variables. It is an algebraic method. There is no need to write the truth table of the function which, for 6 variables, would have 64 lines (ouch\u2026). It can be difficult to know if in the end we get an \u201coptimal\u201d solution (e.g. with the least number of written variables in the simplified expression). It is not easily used by a computer.The popular Karnaugh maps (or K-maps) are also useful to simplify functions with up to 5 or 6 variables, not more. Visual patterns and symmetry in the K-map are the techniques (or tricks?) used in K-maps. It is needed to write a truth table (or, better, a truth \u201ctableau\u201d) for the function, with [math]2^5[/math] or [math]2^6[/math] entries, using Gray code to index the table. This can take some time and effort\u2026 In K-maps with 5 or 6 variables it is difficult to spot if we are getting an \u201coptimal\u201d solution, because the visual patterns become too complex to the average human been (or bean, or bin, :-) )\u2026The Quine/McCluskey method (Quine\u2013McCluskey algorithm - Wikipedia). It can handle more than the 5 or 6 variables of the former two methods. Its complexity is NP, so the number of operations grows very fast. Perhaps it works up to 8 or 10 variables, manually, with some patience. It is amenable to be automatized in a computer.Finally, there is the Espresso heuristic logic minimizer - Wikipedia which uses heuristic methods to get \u201cvery good\u201d solutions to logic minimization problems. It can handle many variables (a few hundreds?) You can usually find a binary executable of Expresso around (or compile the sources in Linux or BSD/MacOS). Of course, you don\u2019t know if you are getting the optimal solution. But Espresso is good enough to be widely used (at least it was, two decades ago\u2026 :-) ) in almost all logic synthesis tools. The Wikipedia link has information on the ways of getting it.So, that is it. Notice however that there are more complex methods for logic minimization, see Logic optimization - Wikipedia which lists many (or all?) of them. Thousands of papers have been published on this and related problems, and many of these problems are still open for you to devote your life, or a part of it, to look for a solution :-) HTH ",
+            "date": "Answered July 9, 2020",
+            "views": "97",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alex Sadovsky",
+                "href": "/profile/Alex-Sadovsky"
+            },
+            "answer_text": "A2A, thanks. Now exactly sure what is being sought here, but I do know that the laws of distributivity and the identity (B or (not B)) = True imply the following: (A and B) or (A and (not B)) = A or ( B and (not B)) = A or (True) = AYou can get a much more comprehensive (albeit dense) coverage in the first ten pages of https://math.berkeley.edu/~giventh/DM.pdf. Expect to have to study the text; i.e., repeated readings of different portions of it, interspersed with analyzing examples with pencil and paper. ",
+            "date": "Answered July 9, 2020",
+            "views": "39",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Widad Khan",
+                    "user_href": "/profile/Widad-Khan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prem Sobel",
+                "href": "/profile/Prem-Sobel"
+            },
+            "answer_text": "There are a few simple Boolean simplification formulas that any book on logic design or Boolean algebra will have. As a function of the number of Boolean variables here are an ever growing number of corner cases which need Cover Reduction. It is not necessary to use Cover Reduction, unless you want the absolute simplest expression. ",
+            "date": "Answered July 10, 2020",
+            "views": "43",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Martin Wennberg",
+                "href": "/profile/Martin-Wennberg"
+            },
+            "answer_text": "Consider this, everything can be written in terms of negation and or. A and B = not(not(B) or not(B)) for example. Now consider that not(not(A)) = A With this, if we can rewrite everything in terms of negation and or, we can cancel a lot of things and then rewrite it with more general operations. ",
+            "date": "Answered July 10, 2020",
+            "views": "18",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jeff Drobman",
+                "href": "/profile/Jeff-Drobman"
+            },
+            "answer_text": "an old brute force minimization algorithm for logic is the Quine-McKluskey algorithm, based on finding all \u201cprime implicants\u201d. the preferred method now, for logic functions of <=4 vars, is use of Karnaugh (K) Maps, which are laid out with Gray Code logic distancing of one. ",
+            "date": "Answered July 10, 2020",
+            "views": "11",
+            "upvotes": " Answer requested by Widad Khan"
+        }
+    ]
+}

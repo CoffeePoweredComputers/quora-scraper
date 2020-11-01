@@ -1,0 +1,88 @@
+{
+    "title": "What is the most promising technology for replacing CMOS in electronics? - Quora",
+    "tags": [
+        "Nanoelectronics",
+        "Microelectronics",
+        "Technology Trends",
+        "Electronics",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tapa Ghosh",
+                "href": "/profile/Tapa-Ghosh"
+            },
+            "answer_text": "In all honesty, I don't see it happening. CMOS is amazing and we've continually integrated new materials into the platform to improve it. CMOS is also versatile: We can do photonics, RF, mems and even quantum computing with cmos. The other factor is that anything which even thinks to challenge cmos (and its almost trillion dollar total aggregate investment) must do better than it in ALL these areas: Power consumption- cmos is extremely energy efficientSpeed- many MOSFETs are even faster than HEMTs nowDensity of integration- we can get 10 billion+ transistors on a single chip, and counting!Cost- we can make a billion transistors for a buckThe truth is that there are very few non-CMOS technologies that satisfy all those areas. 2D materials suffer from defect densities that are ~100,000 \u2014 1000000X too high. Carbon nanotubes suffer from similar defect density issues but also have high contact resistance with metal and have bad chirality distribution issues. Intel actually published a comparison of several novel transistor technologies and compared it with standard cmos. It's a bit outdated but iirc only a couple even managed to somewhat beat cmos. Image source: Intel (https://www.eetimes.com/document.asp?doc_id=1327650)  ",
+            "date": "Answered July 24, 2018",
+            "views": "13",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bob Colwell",
+                    "user_href": "/profile/Bob-Colwell"
+                },
+                {
+                    "user_id": "Prabal Basu",
+                    "user_href": "/profile/Prabal-Basu"
+                },
+                {
+                    "user_id": "Amogh K M",
+                    "user_href": "/profile/Amogh-K-M"
+                },
+                {
+                    "user_id": "Peter Scott Coutts",
+                    "user_href": "/profile/Peter-Scott-Coutts"
+                },
+                {
+                    "user_id": "Ferenc Valenta",
+                    "user_href": "/profile/Ferenc-Valenta"
+                },
+                {
+                    "user_id": "Myla Izai",
+                    "user_href": "/profile/Myla-Izai"
+                },
+                {
+                    "user_id": "Siddharth Dumbre",
+                    "user_href": "/profile/Siddharth-Dumbre"
+                },
+                {
+                    "user_id": "Vishwas Purohit",
+                    "user_href": "/profile/Vishwas-Purohit"
+                },
+                {
+                    "user_id": "Brad Senet",
+                    "user_href": "/profile/Brad-Senet"
+                },
+                {
+                    "user_id": "Brad Bjorndahl",
+                    "user_href": "/profile/Brad-Bjorndahl"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Gruszynski",
+                "href": "/profile/Jeff-Gruszynski"
+            },
+            "answer_text": "NOTHING will be a \u201cdrop-in replacement\u201d or something that can continue Moore\u2019s Law as it\u2019s existed since the 1960s. NOTHING. Nothing is physically possible. Nothing is on the horizon. What will happen is we will \u201cpivot\u201d by changing what the question is and what the \u201creal\u201d need is, and then with that, change the solution to fit it that happens to be physically realizable to that new scope and problem space. That\u2019s what\u2019s happening already. One thing people have noted is that most software is bloatware and most application problems are not actually helped that much by GP computer scaling and new speed. There are a very small subset of problems that are really driving current performance requirements: graphics, advance matrix-based computation, digital signal processing and pattern recognition. It turns out general purpose computer does not actually help with these that much. You can use GP Von Neumann architectures but they are generally very inefficient for that purpose, and these problems that are better suited to a different answer/solution. Traditional architectures are well suited to, well, traditional problems ca. 1990s, and they are generally NOT pushing performance economically. Hence we have GPUs for graphics, SIMD and even NN/ML. So the best brains have realized we should focus ONLY on what is economically straining technology and demand and create architectures that match and are optimized primarily for those applications and needs only. And that generally means letting Von Neumann architectures stop where it is in the next 10-odd years and focus just on new concepts and architectures for problems we can solve. That\u2019s the idea behind: N3XT 1000. This is in my professional 35+ year IC designer opinion, the most promising roadmap and concept offered for post-Moore\u2019s Law micro/nano electronics. Nothing else really fits the bill or is realistic. N3XT 1000 Energy Efficient Computing.pdf If you read this you will see this is a path conventional computing can NOT follow. The key aspect: merged memory and computing. The other is reducing the primary cause of heat by eliminated architectural features that require heat generation (which ultimately limits speed and performance). That doesn\u2019t mean convention computer will die but it will cease to radically improve or remain the \u201cbleeding edge\u201d, and it will play the support role of \u201cglue\u201d and \u201cinterface\u201d to technologies like this. ",
+            "date": "Answered June 6, 2019",
+            "views": "398",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pedro Henrique",
+                    "user_href": "/profile/Pedro-Henrique-44"
+                },
+                {
+                    "user_id": "Joseph Mullens",
+                    "user_href": "/profile/Joseph-Mullens"
+                },
+                {
+                    "user_id": "Karan Mehta",
+                    "user_href": "/profile/Karan-Mehta-8"
+                }
+            ]
+        }
+    ]
+}

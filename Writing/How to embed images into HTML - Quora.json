@@ -1,0 +1,71 @@
+{
+    "title": "How to embed images into HTML - Quora",
+    "tags": [
+        "Images",
+        "HTML"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Calvin Huang",
+                "href": "/profile/Calvin-Huang"
+            },
+            "answer_text": "You can encode the image data in base64, which drastically increases the file size (to 4/3rds the original size) but serializes the binary data in a text-safe format. So you just include it in the HTML as such: <img\u00a0\tsrc=\"data:image/png;base64,your-base-64-encoded-image-data\"\u00a0\talt=\"some textual description of your image\"\u00a0/>\u00a0To base64 encode a file on a *nix system (such as OS X or Linux), you can use the base64 command: base64 -i \"myimage.jpg\"\u00a0or: base64 -i \"myimage.jpg\" -o \"base64.txt\"\u00a0There are also online encoders you can find on Google, but I don't know what their file size limits are. Also, note that different browsers have different max sizes for data URLs. For IE8, it\u2019s 32 kb. For Opera 11, it\u2019s 65 kb. Firefox has, in theory, no limit (though in practice I\u2019m sure there is some kind of limit that you\u2019re simply unlikely to reach). Chrome\u2019s limit is 5MB, I think. Per usual, see the Mozilla Developer Network for more details: Data URLs. ",
+            "date": "Updated April 20, 2018",
+            "views": "146",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Danilo B",
+                    "user_href": "/profile/Danilo-B-9"
+                },
+                {
+                    "user_id": "Rafael Otake",
+                    "user_href": "/profile/Rafael-Otake"
+                },
+                {
+                    "user_id": "Ankit Joon",
+                    "user_href": "/profile/Ankit-Joon-15"
+                },
+                {
+                    "user_id": "Paul Porthas",
+                    "user_href": "/profile/Paul-Porthas"
+                },
+                {
+                    "user_id": "Matthew",
+                    "user_href": "/profile/Matthew-628"
+                },
+                {
+                    "user_id": "Herman Ziaja",
+                    "user_href": "/profile/Herman-Ziaja"
+                },
+                {
+                    "user_id": "Mazdak Mohammadi",
+                    "user_href": "/profile/Mazdak-Mohammadi"
+                },
+                {
+                    "user_id": "Max Oriola Mas",
+                    "user_href": "/profile/Max-Oriola-Mas"
+                },
+                {
+                    "user_id": "Robert Pinson",
+                    "user_href": "/profile/Robert-Pinson-1"
+                },
+                {
+                    "user_id": "Thierry Koblentz",
+                    "user_href": "/profile/Thierry-Koblentz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aman Singh",
+                "href": "/profile/Aman-Singh-4270"
+            },
+            "answer_text": "For embedding images into HTML you have to usse <img> tag. For example- <img src=\u201dlink\u201d alt=\u201dImage\u201d /> or if you are using css and then you can also embed by using css property. For example- HTML- <div class=\u201dimage\u201d></div> CSS- .image{ background-image:url( source of the image );} ",
+            "date": "Answered June 3, 2020",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

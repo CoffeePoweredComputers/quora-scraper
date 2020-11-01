@@ -1,0 +1,36 @@
+{
+    "title": "How to read data from a serial port using Python - Quora",
+    "tags": [
+        "Data",
+        "Python (programming language)",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Grigoris Gogakis",
+                "href": "/profile/Grigoris-Gogakis"
+            },
+            "answer_text": "Install the PySerial library and import it to a sketch. With serial.Serial(#parameters) you create a handler for the COM port you want to read/write and the characteristics of the communication i.e. baud rate, parity bits etc. Then you could write something like data = serial.readline() and read bytes in the buffer until you meet a null terminator. You can either use data = serial.data(128) #read 128 bytes. Check the library on Google, is very well documented. ",
+            "date": "Answered October 15, 2020",
+            "views": "42",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vsevolod Lapshin",
+                "href": "/profile/Vsevolod-Lapshin"
+            },
+            "answer_text": "Reading data from a serial port is a standard procedure, it doesn\u2019t depend on a programming language. To use a serial port, a user application must open it first and obtain a handle. Then, by using this handle, the application can invoke driver functions that send and receive data. If the serial port is not needed anymore, it must be closed. ",
+            "date": "Answered October 14, 2020",
+            "views": "36",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shivram Swaminathan",
+                    "user_href": "/profile/Shivram-Swaminathan"
+                }
+            ]
+        }
+    ]
+}

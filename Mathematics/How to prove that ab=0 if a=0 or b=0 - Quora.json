@@ -1,0 +1,93 @@
+{
+    "title": "How to prove that ab=0 if a=0 or b=0 - Quora",
+    "tags": [
+        "Proofs (mathematics)",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "This theorem is valid in any field. A field has the usual operations of addition, subtraction, multiplication, and division and satisfies the usual properties of these operations. The required properties are few (called field axioms), but from them more complicated properties can be proved like the one in this question. As this is an \"if and only if\" statement, its proof requires two parts. We have to show that if ab = 0, then either a = 0 or b = 0, and we have to show that if a = 0 or b = 0, then ab = 0. Let's do the second one first because it's easier. Proof: Given a = 0 or b = 0, to show that ab = 0. If we know that 0 times anything is 0, then we can conclude that. If a is 0, then a times b is 0, but if b is 0 then b times a is 0. Q.E.D. (Note that for this half of the proof, we needed to know x0 = 0x = 0 for all x. That isn't usually taken as an axiom for fields, but is proved from the axioms.) Proof: Given ab = 0, to show that either a = 0 or b = 0. If a = 0, then we're done, so we'll consider the case a \u2260 0. Then by one of the axioms for a field, a has a reciprocal, [math]a^{-1},[/math] so that [math]a^{-1}a=1.[/math] Multiply both sides of the equation ab = 0 by [math]a^{-1}.[/math] Then [math]a^{-1}(ab)=a^{-1}0\\tag*{}[/math] By the associativity axiom for fields, [math]a^{-1}(ab)=(a^{-1}a)b,[/math] and since we know that [math]a^{-1}a=1,[/math] therefore [math]a^{-1}(ab)=1b.[/math] And by another axiom, [math]1b=b.[/math] Therefore, the left side of the equation above equals b. But the right side equals 0 (by the parenthetical remark in the previous half of the proof). Therefore b = 0. Thus, either a = 0 or b = 0. Q.E.D. By the way, you can find the definition of field at my answer to What is meant by a field in mathematics? ",
+            "date": "Updated August 31, 2020",
+            "views": "268",
+            "upvotes": " View 173 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vinay Madhusudanan",
+                    "user_href": "/profile/Vinay-Madhusudanan"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Michael J\u00f8rgensen",
+                    "user_href": "/profile/Michael-J\u00f8rgensen-2"
+                },
+                {
+                    "user_id": "Ricky Kwok",
+                    "user_href": "/profile/Ricky-Kwok"
+                },
+                {
+                    "user_id": "Juan David Salas Camargo",
+                    "user_href": "/profile/Juan-David-Salas-Camargo"
+                },
+                {
+                    "user_id": "Auhood Mohammed",
+                    "user_href": "/profile/Auhood-Mohammed"
+                },
+                {
+                    "user_id": "Leidy Andrea Loaiza",
+                    "user_href": "/profile/Leidy-Andrea-Loaiza"
+                },
+                {
+                    "user_id": "RJ GAMING",
+                    "user_href": "/profile/RJ-GAMING-38"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pranav Shankar",
+                "href": "/profile/Pranav-Shankar-8"
+            },
+            "answer_text": "My approach is a lot easier than what is mentioned here, probably because I am far less knowledgeable in Mathematics when compared to most of them. Firstly I'm going to make a couple of assumptions, You're talking about a and b as variables and not matrices.This is not a homework question.Let me rephrase this question a little bit,  If ab = 0 then a = 0 or b = 0. My proof is fairly straightforward.  Assume for the sake of contradiction that a is not equal to 0 and b is not equal to 0, when you multiply a and b you get zero, but that is a contradiction because when you multiply two non zero numbers, the resulting number is also non-zero. Thus we have found a contradiction! Therefore at least one of a or b must be zero in order to produce the given result.  The theory behind the proof is if you have a hypothesis A which implies B such that A => B. If we prove the negation of it to be false, then the statement itself must be true. The negation of A=>B is A (AND) (NOT) (B). Not B is the negation of B which is a not equal to zero and b not equal to zero. We have proved that to be false, therefore the actual statement must be true.  EDIT: Another way you could do this is by assuming ab = 0 and a not equal to zero and b not equal to zero, if you divide both sides by b you would get a = 0, which contradicts our assumption, therefore the given statement is false. I hope I've made it clear, I'm not the brightest mathematician so I can't compare to the answers of Senia or Professor David. But I hope I've given you an easier answer to what seems like an innocent question. Good luck, happy studying! ",
+            "date": "Updated November 7, 2015",
+            "views": "114",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ruth Rudden",
+                    "user_href": "/profile/Ruth-Rudden"
+                },
+                {
+                    "user_id": "Jonathan Bird",
+                    "user_href": "/profile/Jonathan-Bird-54"
+                },
+                {
+                    "user_id": "Juan David Salas Camargo",
+                    "user_href": "/profile/Juan-David-Salas-Camargo"
+                },
+                {
+                    "user_id": "Cathrine Claveria",
+                    "user_href": "/profile/Cathrine-Claveria"
+                },
+                {
+                    "user_id": "Jyoti Motwani",
+                    "user_href": "/profile/Jyoti-Motwani-11"
+                }
+            ]
+        }
+    ]
+}

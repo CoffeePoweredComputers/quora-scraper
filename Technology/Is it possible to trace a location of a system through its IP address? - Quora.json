@@ -1,0 +1,98 @@
+{
+    "title": "Is it possible to trace a location of a system through its IP address? - Quora",
+    "tags": [
+        "Business Networking",
+        "Facebook Hacking",
+        "Ethical Hacking",
+        "IP Addresses",
+        "Mobile Phones",
+        "Computer Hacking (security)",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Lambert",
+                "href": "/profile/Terry-Lambert"
+            },
+            "answer_text": "Yes. Within reason. If it\u2019s your IP address, then it has an assigned billing address, name, payment method and so on. If it\u2019s an IP address temporarily assigned to one of your machines (e.g. a mobile phone), from an address pool, it becomes slight more difficult, since the address may be, and usually is, periodically reassigned to other people. So there\u2019s a requirement to correlate time of use with the IP address. This is generally pretty easy to do. This information can be revealed by your ISP to police agencies, courts, or pretty much anyone, if there\u2019s no privacy policy in place. Even if there\u2019s a privacy policy in place, however, unless there\u2019s a contractual obligation, the ISP can choose to tell someone, without being required legally to do so.If it\u2019s an IP address given to you on a temporary basis in an Internet cafe or Starbucks or McDonalds or other business, there may be no direct records correlation, but it can be obtained from the records of the business \u2014 since such IP addresses are typically assigned for limited times \u2014 and either credit/bank card sales, or from employees, if they know you, or from video surveillance, if they don\u2019t. Again, the conditions under which they surrender these records is typically self-regulated by the business \u2014 it\u2019s a matter of it being time consuming for them, that they will demand dome form of official request, rather than them being unable to comply: they can almost always comply, if they choose to do so.If it\u2019s an IP address on a VPN or a proxy server, to get the original customer information, it\u2019s usually required to execute an additional court order; these people typically operate under a contractual privacy policy. Depending on the circumstances, a judge will usually sign off on such an order immediately, if it\u2019s brought to them during normal business hours, and bears on an active police investigation. If there are exigent circumstances (for example: if you SWAT\u2019ed someone), they\u2019ll drag a judge out of bed, and have a faxed court order in 5\u201310 minutes. They\u2019ll get the source IP from the VPN information in about 10\u201315 minutes from the VPN provider, and then they\u2019ll serve the court order on the ISP, and have your information in about another 10 minutes or less. Call it half an hour, ballpark. Every one of these service providers operates under a law called CALEA (Communications Assistance for Law Enforcement Act), and they have to provide the information to the police agencies, sometimes without warrant (there is a fuzzy boundary which has yet to be clarified by the courts). Minimally, even if you are using a stolen device, in a public place, using a public hotspot, it\u2019s likely that you MAC address is logged. This will give them, minimally, the manufacturer of the device, and probably what it looked like (model, color, etc.) before you put it in a case and put \u201cMy Little Pony\u201d stickers all over it. It\u2019ll be possible to correlate this MAC address with the specific device, and it\u2019ll be possible to do either over time, or as a result of active monitoring of DHCP IP address request traffic within an area. A lot of mail clients can also intentionally leak this information in email headers, so if they really want you badly, they can engage in \u201cinformation sharing\u201d with other federal agencies, under recently passed legislation, and executive orders in force from the Obama administration, to hunt for that specific device in all sorts of other records that you probably don\u2019t know are being collected (they are being collected).  Even if law enforcement isn\u2019t involved, it\u2019s possible to social engineer this information out of ISPs, or engage in the quasi-legal (depending on circumstances) practice of \u201cpretexting\u201d. There are also people who have equipment as good, or better, than police agencies, for tracking this sort of thing (go to DEF CON some time; you will be amazed). Use of it can be illegal, but that\u2019s not going to matter, if someone doesn\u2019t tell you how they tracked you down, because they are too busy punching your face in. And then there\u2019s always \u201cslip the telephone/cabe/ISP employee a $500.00 VISA gift card\u201d method of getting the information (rates for purchasing the illegal services of ISP employees may vary in your area).  I admit to personally tracking people down using some of these methods in the past; obviously I haven\u2019t done it recently, and the statute of limitations have all run out on things I would admit to doing. The methods work.  There are also countermeasures you can engage in. I\u2019m not going to describe them here, since they all involve quasi-legal to blatantly illegal practices.  Note: If you hire these services done illegally, and someone doing them for you gets caught, in order to get out of trouble themselves, they are going to turn you in so fast you will not know you\u2019ve been turned in until you hear the handcuffs click. ",
+            "date": "Answered February 4, 2017",
+            "views": "85",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kh\u1ee7ng Long C\u1eafn K\u1eb9o",
+                    "user_href": "/profile/Kh\u1ee7ng-Long-C\u1eafn-K\u1eb9o"
+                },
+                {
+                    "user_id": "Ankit",
+                    "user_href": "/profile/Ankit-833"
+                },
+                {
+                    "user_id": "Besada Hanna",
+                    "user_href": "/profile/Besada-Hanna"
+                },
+                {
+                    "user_id": "Jeanne Marie",
+                    "user_href": "/profile/Jeanne-Marie-40"
+                },
+                {
+                    "user_id": "Matthieu Barth\u00e9lemy",
+                    "user_href": "/profile/Matthieu-Barth\u00e9lemy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kyle Hewitt",
+                "href": "/profile/Kyle-Hewitt-8"
+            },
+            "answer_text": "There's a huge miconception about IPs, people think they're this magic number that connects you to the world and connects the world to you, which in a way it does but not in the scope that people think. People think it's possible to hack into computers using only an IP or that you can be tracked or blocked by your IP and it's really not as capable as most people think. First off, your IP probably isn't static so it changes pretty regularly and in the case of a cell phone on mobile data it's probably changing at least a few times per day. There are static IPs out there(meaning they always stay the same) but they're not as common and it's not likely you would have one and not know it. As far as tracking someone based off their IP, you can trace an IP back to the ISP (Internet service provider) and in principle they can look at the modem information that the IP address is registered to assuming you're using your ISP\u2019s modem. If you're using your own modem it's not as simple. But that being said, ISPs don't give that information out for anything short of a warrent and usually by the time a warrent is given the IP may not track to the same customer, so any fear that some random person is going to track you down because they know your IP address you can let go of. Best they can do is get your zip code based off of where your ISP is located. Even that isn't that reliable, because if you have sattilite based Internet, even that can be inaccurate. And there's a million ways around even your ISP knowing where your datagrams are ending up. If it was so black and white then anyone who ever commits a crime online would be caught immediately and it wouldn't be an issue but it's a BIG issue. You can spoof your IP so that the IP seen by someone else isn't your real IP. You can use a VPN which is a legitimate tool used by many corporations to allow employes to work away from the host network while still behaving like they're on their network and you can very easily go through a proxy server. Also if you're on a large network the public IP address is what is seen by the outside would which has no relation to your IP device and therefore a public IP can only theoreticly be tracked back to an access point. To illistrate this look up your IP on your device and you're probably going to see it start with 196.168.xx.xx and then google \u201cwhat's my ip\u201d and you'll see a totally different address, this is the IP of your access point that from there forwards it to your device. So if you're on a public network or on an institutional network it wouldnt be easy if even possible to identify a single user unless some special provision within the network was set up to do so. So trying to track someone by their IP is extremely inaccurate, unreliable and very easily worked around and anyone who has the knowledge to do so probably already knows this. So I would worry about getting tracked by IP as much as I worry about getting mauled by a bear in my living room; it could happen, but not something I really worry about. ",
+            "date": "Answered February 4, 2017",
+            "views": "131",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Simon Knock",
+                    "user_href": "/profile/Simon-Knock-1"
+                },
+                {
+                    "user_id": "Carrie Sanders",
+                    "user_href": "/profile/Carrie-Sanders-32"
+                },
+                {
+                    "user_id": "Gaurav Garg",
+                    "user_href": "/profile/Gaurav-Garg-190"
+                },
+                {
+                    "user_id": "Lauren Young",
+                    "user_href": "/profile/Lauren-Young-99"
+                },
+                {
+                    "user_id": "Blue Fire",
+                    "user_href": "/profile/Blue-Fire-25"
+                },
+                {
+                    "user_id": "Gracias Ruth",
+                    "user_href": "/profile/Gracias-Ruth"
+                },
+                {
+                    "user_id": "Amsal Khan",
+                    "user_href": "/profile/Amsal-Khan"
+                },
+                {
+                    "user_id": "Fernando Jose Isart Infante",
+                    "user_href": "/profile/Fernando-Jose-Isart-Infante"
+                },
+                {
+                    "user_id": "Renee Gade",
+                    "user_href": "/profile/Renee-Gade-1"
+                },
+                {
+                    "user_id": "Apoorv Sharma",
+                    "user_href": "/profile/Apoorv-Sharma-21"
+                }
+            ]
+        }
+    ]
+}

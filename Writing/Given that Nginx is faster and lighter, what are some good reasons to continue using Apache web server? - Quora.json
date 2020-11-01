@@ -1,0 +1,68 @@
+{
+    "title": "Given that Nginx is faster and lighter, what are some good reasons to continue using Apache web server? - Quora",
+    "tags": [
+        "Nginx (web server)",
+        "Local Server Testing",
+        "Apache HTTP Server",
+        "Web Servers",
+        "Servers (computers)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Filip Hru\u0161ka",
+                "href": "/profile/Filip-Hru\u0161ka"
+            },
+            "answer_text": "Nginx is a really bad choice for shared hosting environments. Why?The answer is pretty simple.Nginx wasn't designed for shared, multi-tenant environments.Nginx has a centralized configuration system and lacks security features needed in shared hosting environment. For example, you need to provide users some interface to allow them to make rewrites, indexes, custom errors etc. With apache you have .htaccess files; those are locked to allow users to configure only certain, non-crucial apache functions. With nginx, you can't do this, because if you allow users to directly access nginx' configuration system, they can do what they want - change nginx system settings (worker limit, user, group, etc).This is why nginx in it's current form will never replace apache in multi-tenant environments. ",
+            "date": "Answered July 26, 2015",
+            "views": "2",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Simon Greenwood",
+                    "user_href": "/profile/Simon-Greenwood-1"
+                },
+                {
+                    "user_id": "Ching-Kai Huang",
+                    "user_href": "/profile/Ching-Kai-Huang"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Damian Paul Dennis",
+                    "user_href": "/profile/Damian-Paul-Dennis"
+                },
+                {
+                    "user_id": "J. Merrill",
+                    "user_href": "/profile/J-Merrill-1"
+                },
+                {
+                    "user_id": "Simon Gardner",
+                    "user_href": "/profile/Simon-Gardner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Gardiner",
+                "href": "/profile/Daniel-Gardiner-1"
+            },
+            "answer_text": "Off the top of my head ... Apache is still a very useful web service for the following reasons - If you use Mod-Perl it provides a lot of controls and performance optimizations including memory limits and cleanup. - Apache uses a plugin model so if you want to use Pagespeed or Mod-Security they are easy installs. If you use these with Nginx you will need to download the source code of both Nginx and the plugins to compile together and redistribute the binary across a cluster of machines. - Apache out the door has a better security setup built-in for vhost management in a public shared environment. ",
+            "date": "Answered July 27, 2015",
+            "views": "233",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vinod Chacko",
+                "href": "/profile/Vinod-Chacko"
+            },
+            "answer_text": "nginx is a good web server - But it have its own issues when it comes to shared hosting. Nginx rewrite and redirect rules need to be modified by the root user, mostly. In apache, you have .htaccess. I have written an answer on a similar question here Vinod Chacko's answer to Why is Apache still used when NGINX is easier to understand and configure, and apparently performs better? ",
+            "date": "Answered October 11, 2017",
+            "views": "290",
+            "upvotes": "0"
+        }
+    ]
+}

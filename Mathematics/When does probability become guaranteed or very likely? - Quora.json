@@ -1,0 +1,57 @@
+{
+    "title": "When does probability become guaranteed or very likely? - Quora",
+    "tags": [
+        "Probability (statistics)",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Logia den Drase",
+                "href": "/profile/Logia-den-Drase"
+            },
+            "answer_text": "When does probability become guaranteed or very likely? For example if you flip a coin ten times it likely won't be a perfect 50:50 ratio. When quantity is added( i.e. You flip the coin a million times) it almost becomes a perfect 50:50 ratio. Around what number does accuracy occur? As others have already stated, for the specified system, there is never a guarantee of exactly even counts \u2014 except for trivial or unattainable cases like 0 flips or an infinite number of flips. However, we have a field of science/mathematics that deals with large numbers of particles and emergent properties like suggested. It\u2019s (they\u2019re) called Thermodynamics and Statistical mechanics.  In fact, the more flips, the less likely the ratio wil be exactly 1:1. Here is a combined plot of probabilities: horizontal axis is how many extra heads (or tails) there are; vertical axis is the probability; blue for 20 coin tosses; red for 100 tosses.  Notice that the probability of {10 heads, 10 tails} is about 0.18, but the probability of {50 heads, 50 tails} is about 0.08. But the question said \u201c\u2026 almost becomes a perfect\u2026\u201d! While it is true that the probability of any specific result becomes less, when we look at the bell-shaped curves above in a slightly different way, we see that the one for 100 tosses is much tighter. That means the overall ratio will usually be much closer to 1:1, even if it is not exactly 1:1, the more samples are taken. To show this, we squash the curves horizontally, so they go from 0 (0%) heads (or tails), to 1 (100%) heads (or tails). We can also vertically stretch each plot so that the peaks are the same height.  How did we calculate these?  The following discussion is a brief overview and not intended to fully explain the concepts involved. Rather, readers are advised to treat it as an introduction of a few of the terms and notation involved, and proceed with their own study at their leisure. In terms of flipping a coin, the mathematics is fairly straightforward. If we flip a coin [math]F[/math] times, we obtain a sequence of heads/tails that has a length of [math]F[/math]. If we are looking for [math]T[/math] tails, there are [math]\\frac{F!}{T!\\left(F-T\\right)!}[/math] sequences containing exactly that many tails (notice that it\u2019s symmetrical, too). The exclamation mark means factorial. The total number of possible heads/tails sequences of length [math]F[/math] is [math]2^F[/math]. Divide the number of sequences with [math]T[/math] tails, by this total number of sequences [math]2^F[/math], to find the probability. We call the number of heads, or the number of tails, a \u201cmacrostate\u201d. We call the exact sequence of heads and tails, the \u201cmicrostate\u201d.  Additional edit time! The contributor who initially posted the question offered a response: That is simply not true because the more times you flip, the smaller the chance that you will not reach 50/50. For example, your chances of getting 100 tails and no heads is astronomically small, while flipping 50 heads and 50 tails is much more likely. This shows how the chances of not getting 50/50 decrease with more and more flips. While the mathematics (or, if you like, statistics) above is fairly clear, we decided some science would be in order. Here are the results of 100 coin tosses, twice! THHHTTTTTHTTHHTHHTHHHTHHHHTHHTTHHTHHTTHHHHHTHTTTHTHHTHTHHHTHHTHHHTTTHTTHHHHHTTHHTTHTHHHHHHTHHTTTTTHT (57 heads; 43 tails) TTHHTHHHTTHHTHTHHHHTHTHTHTHHTTHTHHTHHTTTHTTTTTHTHTTTTHHTTHHHTTHTHTTHHTTTTHHTHTTTTTTHHHHHTTHHTTHHHHTT (48 heads; 52 tails)  Well, there you go. Neither of those seems to be a 1:1 ratio, but as you can see this was an Australian 20 cent coin minted in 2016, flipped by just one member of our team, so it could well have been full of bias (this well known effect is particularly evident in the drier states of our country: Flipping a coin no even bet after all). Seriously though, if you flip a coin twice, you\u2019ll get a 1:1 result about half the time. Flipping exactly 50 heads and 50 tails in a sequence of 100 is not going to happen that often! ",
+            "date": "Answered April 5, 2017",
+            "views": "23",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "\u0141ukasz Golon",
+                    "user_href": "/profile/\u0141ukasz-Golon"
+                },
+                {
+                    "user_id": "Momen Ali",
+                    "user_href": "/profile/Momen-Ali-4"
+                },
+                {
+                    "user_id": "Erdem Tumurov",
+                    "user_href": "/profile/Erdem-Tumurov"
+                },
+                {
+                    "user_id": "Zolt\u00e1n B\u00e1thori",
+                    "user_href": "/profile/Zolt\u00e1n-B\u00e1thori"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Nichols",
+                "href": "/profile/Robert-Nichols-34"
+            },
+            "answer_text": "You will never be able to be 100% sure of an exact 50% heads proportion. Say you had flipped a coin 999,999 times, if you had exactly 500,000 tails (very unlikely) would that ensure that your 1,000,000th flip would be heads? A probability confidence interval is often used in these type of problems. So a statistician might say that they are 95% confident that the proportion of Heads is between (49.9% and 50.1%). Or they might say they are 80% confident that the proportion of heads is (between 48% to 52%) as another example of a confidence interval. Confidence intervals have two factors, the confidence level and the margin of error. To increase a confidence level, from say 80% confidence to 95% calls for an increase in sample size. The other factor is the margin of error, the 48% to 52% interval has a margin of error of +/-2%, but the 49.9% to 50.1% has a margin of error of +/- 0.1%. To shrink the margin of error also calls for increasing the sample size. ",
+            "date": "Answered April 5, 2017",
+            "views": "459",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Erdem Tumurov",
+                    "user_href": "/profile/Erdem-Tumurov"
+                },
+                {
+                    "user_id": "Ryan Wendt",
+                    "user_href": "/profile/Ryan-Wendt-6"
+                }
+            ]
+        }
+    ]
+}

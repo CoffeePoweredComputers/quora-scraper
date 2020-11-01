@@ -1,0 +1,42 @@
+{
+    "title": "How to add text on top of an image using HTML - Quora",
+    "tags": [
+        "Image Editing",
+        "Text",
+        "HTML",
+        "How-to Question",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nadeem Hosenbokus",
+                "href": "/profile/Nadeem-Hosenbokus"
+            },
+            "answer_text": "A background image should usually do the trick: <p style=\"min-height: 300px; background: url(relative/path/to/image) center no-repeat; background-size: cover;\">\u00a0\tText\u00a0</p> \u00a0If that doesn\u2019t work then use absolute positioning (although you should really try to rethink things if this is what you have to do): <div style=\"position: relative; display: block; height: 300px;\">\u00a0\t<img src=\"absolute/path/to/image\" style=\"position: absolute; left: 0; top: 0; z-index: 1;\" />\u00a0\t<p style=\"position: absolute; left: 0; top: 0; z-index: 2;\">Text</p>\u00a0</div> \u00a0Just in case you\u2019re asking about something like watermarks, you cannot embed text into an image using HTML (which only *describes* what appears on the page). You would have to use something server-side to do that because these types of scripts create a new image on the disk. PHP includes a range of functions to do this: start with imagecreate(). ",
+            "date": "Answered October 30, 2016",
+            "views": "34",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Julie Frey",
+                "href": "/profile/Julie-Frey-3"
+            },
+            "answer_text": "WRAP TEXT AROUND IMAGE (LIKE A CAPTION) If you want to do this for one image and text and you do not have a separate CSS file, here\u2019s a way to do it with inline style: <IMG SRC=\u201dpath to your image\u201d alt=\u201dimage description\u201d title=\u201dthis text appears when mouse or finger hovers over image\u201d <style=\u201dfloat:left;margin:10px;width:100px;height:100px;\u201d> <p> Type your text here. </p> STUDY FLOAT TAG STYLE ADJUSTMENTS Adjust width and height for best fit and given image size. Mind how text wraps or lays next to image. Do you like it? Adjust margin and padding to fit your page container and preference. Check how each browser and a mobile phone (if desirable) sees it. MULTIPLE IMAGES/TEXT CAPTIONS ON ONE PAGE? If you want to add more images, study the \u201cclear-fix\u201d issue where it is hard to get images of various sizes to line up nice next to text captions on one page without resorting to multiple </br> tags. MORE ADVANCED METHODS If your images use a common theme or layout, use CSS to define your image and text blocks. ",
+            "date": "Answered October 14, 2016",
+            "views": "51",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sriesh Agrawal",
+                    "user_href": "/profile/Sriesh-Agrawal"
+                },
+                {
+                    "user_id": "AJAY KOLI",
+                    "user_href": "/profile/AJAY-KOLI-26"
+                }
+            ]
+        }
+    ]
+}

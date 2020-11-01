@@ -1,0 +1,75 @@
+{
+    "title": "How does Google Docs work? - Quora",
+    "tags": [
+        "JavaFX Vs. HTML5",
+        "Document Object Model (DOM)",
+        "Word Processors",
+        "Google Docs",
+        "Google Docs and Drive",
+        "HTML5"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gilles Castel",
+                "href": "/profile/Gilles-Castel-1"
+            },
+            "answer_text": "Google Docs does not use content-editable.   Why doesn't Google Docs use contentEditable? Why? Because it spits out a  HTML soup, the implementation is different between browsers, it has many bugs ... How would you let the user change the color with a GUI? Yes, execCommand works, but anyone who has worked with it, knows it's bad.How do you handle user copy-and-pasting tables, images ... ? It's possible to handle this correctly, but it is hard. Nested list are another example (try it in the editor of Quora) Another thing about contentEditable is that the resulting HTML is sometimes bad or outdated. For example, when you press <ctrl-u> to underline text, it generates a <u></u>-tag. In HTML 4 and XHTML 1, this is deprecated, and in HTML 5 the semantics have been changed:  In HTML5, this element [<u>] represents a span of text with an unarticulated, though explicitly rendered, non-textual annotation, such as labeling the text as being a proper name in Chinese text (a Chinese proper name mark), or labeling the text as being misspelled. \u2013 MDN: <u>  What does it use then? As Google wanted a more controllable editor, they made an editor, named Kix, from scratch. That's how much they hated contentEditable. Sadly, this is closed-source.  They had to implement their own cursor, selection, ... The DOM is not actually editable, they just pretend it is. They capture events and change de DOM accordingly. The cursor blinking on the screen is not actually a cursor, it's just a div that's hidden and  shown each second. This approach is better, but also very difficult. For example, you have to deal yourself with bi-directional text. When you're mixing Arabic with English, what is supposed to happen when you press the arrow keys? Another thing is the context menu. If it's just a non-editable div, how can the browser know it has to show 'select all', 'copy', 'paste', 'cut'? Google Docs solves this problem by showing a 'fake' context menu. To be able to cut and paste with Javascript, Google Docs uses a Chrome extension for this as Javascript can't access the system clipboard. In Firefox and IE/Edge, that's another story. Google Docs and Clipboard Access.   (Another trick to deal with this is to pop up a transparent textarea when the user clicks with his right mouse button. This is easy to implement for 'select all', but really hard for copy and paste.) With this technique, Google Docs is able to provide a very good editing experience. Other editors that use this technique: ProseMirrorThe High Performance Code Editor for the WebCodeMirrorA talk from Marijn Haverbeke (from ProseMirror and CodeMirror) on contentEditable:    As for the backend of Google Docs, it uses operational transformation:  \"The basic idea of operational transformation is to transform (or adjust) the parameters of an editing operation according to the effects of previously executed concurrent operations so that the transformed operation can achieve the correct effect and maintain document consistency.\" ",
+            "date": "Answered November 21, 2015",
+            "views": "76",
+            "upvotes": " View 21 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aman Mishra",
+                    "user_href": "/profile/Aman-Mishra-229"
+                },
+                {
+                    "user_id": "Ian Lindley",
+                    "user_href": "/profile/Ian-Lindley-1"
+                },
+                {
+                    "user_id": "Andrei Basto",
+                    "user_href": "/profile/Andrei-Basto"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Salman M\u00f6hamed",
+                    "user_href": "/profile/Salman-M\u00f6hamed"
+                },
+                {
+                    "user_id": "ANDREE FRANKLIN S",
+                    "user_href": "/profile/ANDREE-FRANKLIN-S"
+                },
+                {
+                    "user_id": "Brian Benson",
+                    "user_href": "/profile/Brian-Benson-11"
+                },
+                {
+                    "user_id": "Mien Ng",
+                    "user_href": "/profile/Mien-Ng"
+                },
+                {
+                    "user_id": "Tyler Bell",
+                    "user_href": "/profile/Tyler-Bell-66"
+                },
+                {
+                    "user_id": "Karthik Chintala",
+                    "user_href": "/profile/Karthik-Chintala"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Techy Gator",
+                "href": "/profile/Techy-Gator"
+            },
+            "answer_text": "Using Google Docs \u0939\u093f\u0928\u094d\u0926\u0940 Google docs, google ka ek bahut hi usefull tool hai. Aur bahut saari badi badi IT Companies executive ya Market Executive iss tool ka bahut hi achha use karte hai.Iss tool ka use daily reports ya daily updates jaha par multiple circles me bahut saare executives hai waha use hota hai. Agar aapki executive market hai aur baut saare executive alag-alag area mein hai aur aapko unke kaam ki report agar aapko submit karni hai. Toh aap ek document ko google drive me sabke sath share kar sakte hai. Aur har ek person uss Google drive me sabke sath share kar sakte hai. Aur har person uss Google Drive Document ko update krke aap tak pahuncha sakta hai. Yeh google ka ek esa online ducument hai jaha pe hum Microsoft Applications, M/S word, Microsoft Excell aur Powerpoint aur kyi forms ke related information uske andar share kar sakte hai. Kaafi logo ko iss information ke baare me pata hi nahi hai jo IT me kaam karte hai ya marketing me kaam karte hai. Lekin bahut saare log hai,jo aksar iss tool ke baare me unko pta nahi hai. read more.. ",
+            "date": "Answered March 16, 2019",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

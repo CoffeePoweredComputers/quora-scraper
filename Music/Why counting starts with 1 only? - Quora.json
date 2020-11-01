@@ -1,0 +1,28 @@
+{
+    "title": "Why counting starts with 1 only? - Quora",
+    "tags": [
+        "Counting (1,2,3...)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kevin Coombes",
+                "href": "/profile/Kevin-Coombes"
+            },
+            "answer_text": "In computer science (and programming languages), any answer to this question has to start with \u201cnever ask \u2018why' before you ask \u2018if'.\u201d Some computer languages (like FORTRAN) do start counting positions in an array at 1. Other computer languages (like C) start counting array positions at 0. The difference is part of a famous programming error known as an \u201coff-by-one\u201d or fence post\u201d error. When you are describing the length or structure of a fence, do you count the number of fence posts or the number of fence sections? For a straight stretch of fence, these differ by one, since there is always one more post than there are sections. In C (and related/derived languages), arrays are closely related to pointers. The pointer can be thought of as the address of the beginning element of the array. (That sentence was hard to write, since I can\u2019t yet, in this context, clearly talk about the \u201cfirst element\u201d or the \u201czeroth element\u201d without confusing everybody, myself included.) So, that beginning element has an offset of zero from the beginning, and gets denoted a[0] and called the zeroth element. The next element in the array has an offset of 1, and is written a[1] and called the first element. In FORTRAN and related languages, arrays are \u201cthings-in-themselves\u201d and you don\u2019t have to worry about pointers or addresses. And so they start with the \u201cfirst thing\u201d, which gets written as a[1]. ",
+            "date": "Answered March 19, 2018",
+            "views": "122",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jack Smith",
+                "href": "/profile/Jack-Smith-2311"
+            },
+            "answer_text": "Let\u2019s count to 3. If we start with 1, you count 1\u20262\u20263. You counted 3 numbers. But if you started with 0, you would count 0\u20261\u20262\u20263. Then you would have counted 4 numbers and not 3. If there are 50 participants, the winner would be 1st and the last place would be 50th. If the winner is 0th, the last place would be 49th. But if there are 50 participants, why is there no 50th place? Sad but true, there is no such a thing as year \u201c0\u201d. The year after 1 B.C. is 1 A.D. (0 didn\u2019t exist at the time, someone invented it at 600 A.D. or something). Last but not least, 0 means nothing. You can\u2019t count nothing so that\u2019s why we start counting at 1 and not 0. ",
+            "date": "Answered December 6, 2019",
+            "views": "32",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "title": "How to run two threads at the same time - Quora",
+    "tags": [
+        "Threading (computer science)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Umar Sharif",
+                "href": "/profile/Umar-Sharif-3"
+            },
+            "answer_text": " When you\u2019re writing code in any language, you\u2019re already dealing with threads, the main thread specifically\u2026 But most languages have a library that let you create additional threads. Let\u2019s solve a trivial example in C. Find the sum of integers from 1 to 100. Of course this is an arithmetic sequence so it can be solved with a single formula. But we\u2019re just doing this for fun. Short disclaimer: The example below is not a real-world example of how you should use threads, it\u2019s just a fun simple demonstration. Threads are like workers, we can assign worker 1 to find the sum from 1 to 50 and worker 2 to find the sum from 51 to 100. Then they\u2019ll both meet up and add their results together, theoretically saving half the time it would take one worker to do it on their own. int a = 0, b = 0; // a is worker 1's result, b is worker 2's\u00a0Create the second thread, do #include <pthread.h> for it to work. pthread_t newThread; // declare second thread\u00a0Now we can start the thread, specify the thread being used, the function to run and a variable to reference. pthread_create(&newThread, NULL, sum100, &b); // second thread runs sum100 and updates value in b\u00a0Worker 2 is already busy so lets assign a task to worker 1. We call the sum50 function normally since we\u2019re on the main thread. sum50(&a); // main thread runs sum50 and updates value in a\u00a0Worker 2 may take longer than worker 1 so we need to wait for both of them to finish in order to add our results up correctly. pthread_join(newThread, NULL); // waits for thread 2 to meet with the main thread.\u00a0Now that we have two seperate results from both workers we can add them together and output the answer. printf(\"%d\\n\", a + b); // combine results\u00a0We get the correct answer, 5050. The individual functions are simple, it\u2019s just incrementing a value but i\u2019ll show them anyways. void sum50(int *a) {\u00a0    for (int i = 1; i <= 50; ++i)\u00a0        *a += i;\u00a0}\u00a0\u00a0void* sum100(void* b) {\u00a0\tfor (int i = 51; i <= 100; ++i)\u00a0        *((int*) b) += i;\u00a0    return NULL;\u00a0}\u00a0Additionally, if you wanted to handle numerous threads rather than just 2, you should create a thread executor function to simplify the logic. The example is in python but the logic is the same. def addThreads(*functions):\u00a0    global threads\u00a0    for func in functions:\u00a0        threads.append(Thread(target=func))\u00a0\u00a0def threadExecutor():\u00a0    global threads\u00a0    for thread in threads:\u00a0        thread.daemon = True # kills thread when main exits\u00a0        thread.start()\u00a0",
+            "date": "Answered June 13, 2020",
+            "views": "650",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Saad Mehmood",
+                    "user_href": "/profile/Saad-Mehmood-13"
+                },
+                {
+                    "user_id": "Ahmed A. Ali",
+                    "user_href": "/profile/Ahmed-A-Ali-5"
+                },
+                {
+                    "user_id": "Marcus Kreider",
+                    "user_href": "/profile/Marcus-Kreider"
+                },
+                {
+                    "user_id": "Huy Nguyen",
+                    "user_href": "/profile/Huy-Nguyen-264"
+                },
+                {
+                    "user_id": "Usman",
+                    "user_href": "/profile/Usman-134"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Black",
+                "href": "/profile/Jeff-Black-83"
+            },
+            "answer_text": "I guess by simply running both threads? This is done in Java: public class MyClass {\u00a0\u00a0    static Thread t1 = new Thread( () -> {\u00a0        while (true) \u00a0            System.out.println(\"A\");\u00a0       });\u00a0\u00a0    static Thread t2 = new Thread( () -> {\u00a0        while (true) \u00a0            System.out.println(\"B\");\u00a0       });\u00a0\u00a0    public static void main(String[] args) {\u00a0        t1.start();\u00a0        t2.start();\u00a0    }\u00a0\u00a0}\u00a0You can see that both threads are executing at the same time while the code is running; The output would be a mixture of \u2018A' (first thread) and \u2018B' (second thread) in the standard output stream. I hope this is what you meant, though. ",
+            "date": "Answered June 13, 2020",
+            "views": "45",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        }
+    ]
+}

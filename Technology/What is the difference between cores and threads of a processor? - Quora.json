@@ -1,0 +1,1485 @@
+{
+    "title": "What is the difference between cores and threads of a processor? - Quora",
+    "tags": [
+        "Threads",
+        "Computer Architecture"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Wills",
+                "href": "/profile/David-Wills-16"
+            },
+            "answer_text": "Early CPU designs had 1 core. A \u2019core\u2019 is the physical part of the CPU that does the actual computing under the control of machine code instructions. The code is executed by the CPU core is one \u2018thread\u2019 which processes the data using specialized sub components like the ALU (Arithmetic Logic Unit) and MMU (Memory Management Unit). The CPU operates at very high frequency. This is the CPU clock. Typically on earlier CPUs the clock ran at many millions of cycles per second. These days this is now in the billions. OK so picture an enormous number of very high speed transactions taking place within the CPU core as it processes the instructions and data of the program thread. In early operating systems one one program could execute at a time meaning the running program had exclusive control of the computer. because of the high speed of later CPU clocks Intel introduced a technology called hyperthreading which divided CPU clock cycles between different programs running at the same time on more modern operating systems that could multitask (run more than 1 program at a time by sharing the CPU cycles between different programs). Hyperthreading was a more efficient hardware accelerated way of sharing these cycles. A multi core CPU has more than 1 physical core. It\u2019s like having 2, 4, sometimes 6 or 8 CPU cores all on the one CPU chip without having to have 2 or more physical CPU chips on the motherboard thereby saving a lot of space and power management requirements etc. Some multi core CPUs also have hyperthreading essentially doubling the dumber of simulatneous program threads that can execute. Multiple cores and hyperthreading or the combination thereof is a useful way to multiply the performance of an application, but not all programs can take advantage of multiple cores/threads. I have a HP Z800 workstation computer. It has two 6 core Intel Xeon CPUs which are also hyperthreaded. So I have the logical equivalent of 24 CPUs in my computer (2 CPUs x 6 cores each with hyperthreading or 2x6x2 which is the equivalent of 24 CPUs) in certain applications this gives an enormous performance advantage. I do a lot of computer aided design work including rendering so the extra cores get a regular workout. ",
+            "date": "Answered March 26, 2018",
+            "views": "678",
+            "upvotes": " View 84 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nitin Sai",
+                    "user_href": "/profile/Nitin-Sai-15"
+                },
+                {
+                    "user_id": "The Smileyfan",
+                    "user_href": "/profile/The-Smileyfan"
+                },
+                {
+                    "user_id": "Gideon Appiah",
+                    "user_href": "/profile/Gideon-Appiah-15"
+                },
+                {
+                    "user_id": "Varun Mohanta",
+                    "user_href": "/profile/Varun-Mohanta"
+                },
+                {
+                    "user_id": "John Carroll",
+                    "user_href": "/profile/John-Carroll-213"
+                },
+                {
+                    "user_id": "Mohammad Jumail",
+                    "user_href": "/profile/Mohammad-Jumail"
+                },
+                {
+                    "user_id": "Aditi Chandrasekar",
+                    "user_href": "/profile/Aditi-Chandrasekar"
+                },
+                {
+                    "user_id": "Gourab Ghosh",
+                    "user_href": "/profile/Gourab-Ghosh-25"
+                },
+                {
+                    "user_id": "Jeremy Miller",
+                    "user_href": "/profile/Jeremy-Miller-283"
+                },
+                {
+                    "user_id": "Jakub Rutkowski",
+                    "user_href": "/profile/Jakub-Rutkowski-4"
+                },
+                {
+                    "user_id": "Parag Sawaikar",
+                    "user_href": "/profile/Parag-Sawaikar"
+                },
+                {
+                    "user_id": "Sujit John",
+                    "user_href": "/profile/Sujit-John"
+                },
+                {
+                    "user_id": "Kaka Yangu",
+                    "user_href": "/profile/Kaka-Yangu"
+                },
+                {
+                    "user_id": "Anthony Sanchez",
+                    "user_href": "/profile/Anthony-Sanchez-499"
+                },
+                {
+                    "user_id": "Moustoifa Djoss",
+                    "user_href": "/profile/Moustoifa-Djoss"
+                },
+                {
+                    "user_id": "Sakib Hussain",
+                    "user_href": "/profile/Sakib-Hussain-49"
+                },
+                {
+                    "user_id": "Shad Brix",
+                    "user_href": "/profile/Shad-Brix"
+                },
+                {
+                    "user_id": "RAJAT Pandey",
+                    "user_href": "/profile/RAJAT-Pandey-104"
+                },
+                {
+                    "user_id": "Harsha Vardhan Reddy",
+                    "user_href": "/profile/Harsha-Vardhan-Reddy-272"
+                },
+                {
+                    "user_id": "Kyle Davis",
+                    "user_href": "/profile/Kyle-Davis-99"
+                },
+                {
+                    "user_id": "Himanshu Tanwar",
+                    "user_href": "/profile/Himanshu-Tanwar-45"
+                },
+                {
+                    "user_id": "Sadiq S",
+                    "user_href": "/profile/Sadiq-S"
+                },
+                {
+                    "user_id": "Nikkanor Malabay",
+                    "user_href": "/profile/Nikkanor-Malabay"
+                },
+                {
+                    "user_id": "Nguyen Trung Hieu",
+                    "user_href": "/profile/Nguyen-Trung-Hieu-23"
+                },
+                {
+                    "user_id": "Arvind S",
+                    "user_href": "/profile/Arvind-S-36"
+                },
+                {
+                    "user_id": "Nithish K Gnani",
+                    "user_href": "/profile/Nithish-K-Gnani-1"
+                },
+                {
+                    "user_id": "Do Young Kim",
+                    "user_href": "/profile/Do-Young-Kim-15"
+                },
+                {
+                    "user_id": "Fayiz T K",
+                    "user_href": "/profile/Fayiz-T-K"
+                },
+                {
+                    "user_id": "Khemtat Lengpaiboon",
+                    "user_href": "/profile/Khemtat-Lengpaiboon"
+                },
+                {
+                    "user_id": "Konstantin Popov",
+                    "user_href": "/profile/Konstantin-Popov-5"
+                },
+                {
+                    "user_id": "Fareed Mohammed",
+                    "user_href": "/profile/Fareed-Mohammed-14"
+                },
+                {
+                    "user_id": "Nguyen Phuong Quynh",
+                    "user_href": "/profile/Nguyen-Phuong-Quynh-2"
+                },
+                {
+                    "user_id": "Sasindu Meththananda",
+                    "user_href": "/profile/Sasindu-Meththananda"
+                },
+                {
+                    "user_id": "Chanakya Srinivas",
+                    "user_href": "/profile/Chanakya-Srinivas-1"
+                },
+                {
+                    "user_id": "Sam Abraham Varghese",
+                    "user_href": "/profile/Sam-Abraham-Varghese"
+                },
+                {
+                    "user_id": "Tarun Kumar Y",
+                    "user_href": "/profile/Tarun-Kumar-Y-1"
+                },
+                {
+                    "user_id": "Daulton Whitehead",
+                    "user_href": "/profile/Daulton-Whitehead-1"
+                },
+                {
+                    "user_id": "Vidya Vivaswanth",
+                    "user_href": "/profile/Vidya-Vivaswanth"
+                },
+                {
+                    "user_id": "Ismail Baig",
+                    "user_href": "/profile/Ismail-Baig-34"
+                },
+                {
+                    "user_id": "Anuj Patil",
+                    "user_href": "/profile/Anuj-Patil-9"
+                },
+                {
+                    "user_id": "Gandharv Srivastava",
+                    "user_href": "/profile/Gandharv-Srivastava"
+                },
+                {
+                    "user_id": "Diego Miranda-Saavedra",
+                    "user_href": "/profile/Diego-Miranda-Saavedra"
+                },
+                {
+                    "user_id": "Srivatsan Sridhar",
+                    "user_href": "/profile/Srivatsan-Sridhar-4"
+                },
+                {
+                    "user_id": "Gyorgy Oh",
+                    "user_href": "/profile/Gyorgy-Oh"
+                },
+                {
+                    "user_id": "Joseph Peterson",
+                    "user_href": "/profile/Joseph-Peterson-33"
+                },
+                {
+                    "user_id": "Ryan G",
+                    "user_href": "/profile/Ryan-G-55"
+                },
+                {
+                    "user_id": "Sameer Tiwari",
+                    "user_href": "/profile/Sameer-Tiwari-22"
+                },
+                {
+                    "user_id": "Sudheendra Rudravaram",
+                    "user_href": "/profile/Sudheendra-Rudravaram-1"
+                },
+                {
+                    "user_id": "Chris Orza",
+                    "user_href": "/profile/Chris-Orza-1"
+                },
+                {
+                    "user_id": "Lalith Samanthapuri",
+                    "user_href": "/profile/Lalith-Samanthapuri"
+                },
+                {
+                    "user_id": "Buddhadev Choudhury",
+                    "user_href": "/profile/Buddhadev-Choudhury-1"
+                },
+                {
+                    "user_id": "Akshay Patil",
+                    "user_href": "/profile/Akshay-Patil-504"
+                },
+                {
+                    "user_id": "Aditya Rai",
+                    "user_href": "/profile/Aditya-Rai-209"
+                },
+                {
+                    "user_id": "Eden Martins",
+                    "user_href": "/profile/Eden-Martins"
+                },
+                {
+                    "user_id": "Nandashyam Rao",
+                    "user_href": "/profile/Nandashyam-Rao"
+                },
+                {
+                    "user_id": "Mohammed AboHashem",
+                    "user_href": "/profile/Mohammed-AboHashem"
+                },
+                {
+                    "user_id": "Melkisedik E. Hassa",
+                    "user_href": "/profile/Melkisedik-E-Hassa"
+                },
+                {
+                    "user_id": "Ankit Shah",
+                    "user_href": "/profile/Ankit-Shah-114"
+                },
+                {
+                    "user_id": "Faizan Anwar",
+                    "user_href": "/profile/Faizan-Anwar-2"
+                },
+                {
+                    "user_id": "Baskaran",
+                    "user_href": "/profile/Baskaran-13"
+                },
+                {
+                    "user_id": "Rx Sohel Pashtoon",
+                    "user_href": "/profile/Rx-Sohel-Pashtoon"
+                },
+                {
+                    "user_id": "Jigar Bhati",
+                    "user_href": "/profile/Jigar-Bhati"
+                },
+                {
+                    "user_id": "Shantanu Baviskar",
+                    "user_href": "/profile/Shantanu-Baviskar-2"
+                },
+                {
+                    "user_id": "Nick Marks",
+                    "user_href": "/profile/Nick-Marks"
+                },
+                {
+                    "user_id": "Tushar Ahire",
+                    "user_href": "/profile/Tushar-Ahire-18"
+                },
+                {
+                    "user_id": "Roki Das Gupta",
+                    "user_href": "/profile/Roki-Das-Gupta"
+                },
+                {
+                    "user_id": "Sekhar Rout",
+                    "user_href": "/profile/Sekhar-Rout"
+                },
+                {
+                    "user_id": "Vijendhar SAMULA",
+                    "user_href": "/profile/Vijendhar-SAMULA"
+                },
+                {
+                    "user_id": "Pavan Sai",
+                    "user_href": "/profile/Pavan-Sai-3"
+                },
+                {
+                    "user_id": "Dennis Knight",
+                    "user_href": "/profile/Dennis-Knight-29"
+                },
+                {
+                    "user_id": "Tianyu Tao",
+                    "user_href": "/profile/Tianyu-Tao"
+                },
+                {
+                    "user_id": "Rajasuba Subramanian",
+                    "user_href": "/profile/Rajasuba-Subramanian-1"
+                },
+                {
+                    "user_id": "Vamshi Krishna",
+                    "user_href": "/profile/Vamshi-Krishna-859"
+                },
+                {
+                    "user_id": "Khushboo Singhal",
+                    "user_href": "/profile/Khushboo-Singhal-1"
+                },
+                {
+                    "user_id": "Amit Namdeo",
+                    "user_href": "/profile/Amit-Namdeo-6"
+                },
+                {
+                    "user_id": "Shrujal Gor",
+                    "user_href": "/profile/Shrujal-Gor"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sreerag-s-Ram"
+                },
+                {
+                    "user_id": "Pranav Prashant",
+                    "user_href": "/profile/Pranav-Prashant-3"
+                },
+                {
+                    "user_id": "Richard Hoefer",
+                    "user_href": "/profile/Richard-Hoefer-2"
+                },
+                {
+                    "user_id": "Alon Poleg-Polsky",
+                    "user_href": "/profile/Alon-Poleg-Polsky-1"
+                },
+                {
+                    "user_id": "Pratap Reddy Kasina",
+                    "user_href": "/profile/Pratap-Reddy-Kasina"
+                },
+                {
+                    "user_id": "Norman Skinner",
+                    "user_href": "/profile/Norman-Skinner-2"
+                },
+                {
+                    "user_id": "Andrew Wallace",
+                    "user_href": "/profile/Andrew-Wallace-78"
+                },
+                {
+                    "user_id": "Manika Shrivastava",
+                    "user_href": "/profile/Manika-Shrivastava-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bert Verrycken",
+                "href": "/profile/Bert-Verrycken"
+            },
+            "answer_text": "I will give you an old Quora answer, from about 5 years ago. Then I am going to add some very boring stuff to it below. Coz that\u2019s the kind of person I am. A hardware clown that has a broader view than just x86 and ARM architectures. Boring processor stuff Back in the day, we got a 286 with 648 kB RAM and EGA I believe. I think it was a 20 MB harddrive or something. So long ago. Every program basically runs serially, executing the instructions that the processor supports. Today, we have a lot more requirements, we even hold a computer in our backpocket that is faster than the first Cray supercomputer in the 1970s. Phones and tablets are different architectures than the x86 architecture. My generation grew up without cell phone and with x86 (Intel, AMD and who remembers Cyrix?). Today, we have a lot more compute power than just x86. We have ARM and all its derivatives used by Apple, Samsung, Qualcomm, \u2026 Apple is dumping Intel for ARM starting in 2020 (they claim) in their Macs. But, we also have GPU\u2019s, on the same die as the CPU or seperate as a discrete component. A GPU works on pixels, simplified. Today 1920x1080 pixels need to be parallel processed. People familiar with NVIDIA CUDA cores, know that they are usable for machine learning purposes for example. Because these pixel or per group of pixel cores are actually small processors themselves that need to execute the same manipulations on a number of pixels if not all of them in parallel. Generally speaking in the graphics pipeline thare are multiple threads running, like 16 in parallel, with different pixel data but the same instructions, one control processors fires these 16 threads in parallel. Just to say that processor cores are not that well defined. When does a configurable state machine a processor core? I believe the picoblaze was a tiny (about 2K gates processor) that was born out of essentially an FSM. It was developed by Xilinx and is great for serial communication protocols for example. Hardware view Today, parallel versus serial is the disruptive force triggered by the need for massive parallel computing power for inference and training of artificial intelligence algorithms. More cores and more threads haven\u2019t given us much the past decade except for the fact that we now can run a few apps concurrently (iPhone) or programs on our linux or windows machine. Basically parallelism has been a big issue for software because you can\u2019t parallelise if you need the outcome of one thread to start another thread. Today, the hardware bozo\u2019s have successfully demonstrated that a lot of math on a lot of data can benefit from massive parallellization. Hence, application specific IC\u2019s are outperforming general purpose CPU\u2019s with incredible factors and certainly more energy efficient. Core and threads are what software engineers always have worked with, x86, ARM, \u2026. But the hardware view of cores and threads is exploding right now. I would just speak of serial and parallel execution of instructions, that is my humble assessment that keeps me sane enough to this day to design more cores and more threads. Dang, I mean serial execution thingies and parallel execution thingies. Thanks, Anthony Bissell, for the A2A. ",
+            "date": "Updated August 29, 2020",
+            "views": "19",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Liam",
+                    "user_href": "/profile/Liam-927"
+                },
+                {
+                    "user_id": "Kuldeep Udai",
+                    "user_href": "/profile/Kuldeep-Udai"
+                },
+                {
+                    "user_id": "Ishmael Ahab",
+                    "user_href": "/profile/Ishmael-Ahab"
+                },
+                {
+                    "user_id": "Aditya Jadhav",
+                    "user_href": "/profile/Aditya-Jadhav-101"
+                },
+                {
+                    "user_id": "D R Vaquera",
+                    "user_href": "/profile/D-R-Vaquera"
+                },
+                {
+                    "user_id": "Chanakya Srinivas",
+                    "user_href": "/profile/Chanakya-Srinivas-1"
+                },
+                {
+                    "user_id": "Daulton Whitehead",
+                    "user_href": "/profile/Daulton-Whitehead-1"
+                },
+                {
+                    "user_id": "Sailesh Dhulipala",
+                    "user_href": "/profile/Sailesh-Dhulipala-1"
+                },
+                {
+                    "user_id": "Nadie Cane",
+                    "user_href": "/profile/Nadie-Cane"
+                },
+                {
+                    "user_id": "Steven Bergen",
+                    "user_href": "/profile/Steven-Bergen"
+                },
+                {
+                    "user_id": "Niranjan Shintre",
+                    "user_href": "/profile/Niranjan-Shintre"
+                },
+                {
+                    "user_id": "Adam Boxall",
+                    "user_href": "/profile/Adam-Boxall"
+                },
+                {
+                    "user_id": "Liam Jenkins",
+                    "user_href": "/profile/Liam-Jenkins-24"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Heikki Kultala",
+                "href": "/profile/Heikki-Kultala-1"
+            },
+            "answer_text": "Thread is part of a program. It means a stream of instructions which are being executed. All programs have at least one thread which is created when the program is started, but a program can start more threads to perform work in parallel. Core in modern terminology would have been called a processor in traditional terminology. (Now processor typically means a chip containing multiple cores). A core (or processor in traditional terminology) is a complex piece of logic which can execute instructions. A relative simple core executes instructions from only one thread at a time (and the operating system can swap which thread is executing on the core). Modern processors such as Intel Core series, AMD Ryzen and IBM power series processors have simultaneous multithreading(SMT), which means that each core can execute multiple (in Intels and AMDs case 2, in IBMs case even 4 or 8) threads at the same time. These cores look like multiple cores to the software. So, for example Ryzen 1800 chip has 8 cores, which each support 2-way SMT, means that the whole chip can execute 16 threads(8*2) in parallel. There are mostly two reasons to use multiple threads in programs: 1) To perform multiple different things at the same time responsively. For example, one thread is communicating over network while another is handling user input. Both threads can concentrate on their own tasks and these can happen at same time. 2) To achieve higher throughput for calculations. The only way to utilize all the calculation resources of a multi-core chip from a single program is make the program multi-threaded. ",
+            "date": "Answered January 28, 2020",
+            "views": "84",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mat\u011bj J",
+                    "user_href": "/profile/Mat\u011bj-J"
+                },
+                {
+                    "user_id": "The Smileyfan",
+                    "user_href": "/profile/The-Smileyfan"
+                },
+                {
+                    "user_id": "Dhruv Patel",
+                    "user_href": "/profile/Dhruv-Patel-111"
+                },
+                {
+                    "user_id": "Samson Ho",
+                    "user_href": "/profile/Samson-Ho-8"
+                },
+                {
+                    "user_id": "Mohan Das",
+                    "user_href": "/profile/Mohan-Das-715"
+                },
+                {
+                    "user_id": "J\u00f8rgen Ilstad",
+                    "user_href": "/profile/J\u00f8rgen-Ilstad"
+                },
+                {
+                    "user_id": "Yvan Williams Willems",
+                    "user_href": "/profile/Yvan-Williams-Willems"
+                },
+                {
+                    "user_id": "Ariel Charach",
+                    "user_href": "/profile/Ariel-Charach"
+                },
+                {
+                    "user_id": "Andrii Lukianenko",
+                    "user_href": "/profile/Andrii-Lukianenko-1"
+                },
+                {
+                    "user_id": "Stalin Mariaraj",
+                    "user_href": "/profile/Stalin-Mariaraj"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Dan-L-Oom"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "A thread is really a set of contents of machine registers, and a memory address space. When running, a CPU fetches instructions according to the program counter (one of the registers) and executes it. Changes are made to the other registers as a result. When the thread reads or writes memory, the reads and writes are directed to physical memory according to the mapping of the address space. The name thread comes from \u201cthread of control\u201d, namely a single sequence of machine instructions. A process (not asked about, but relevant) is a running program, which has a single address space, some number of threads, and operating system constructs like open files and so forth. A Core is a hardware thing that can execute a thread. It includes registers, a control unit, arithmetic units, and so forth. A core may be able to run more than one thread at the same time, by interleaving their instructions or by switching between threads when one is blocked waiting for memory or something. Cores that have this ability are called \u201cSMT\u201d or simultaneous multithreading, or hyperthread capable. They have enough registers to hold the active state of at least two threads. A second hyperthread may or may not speed up your machine, depending on how busy the actual physical core is running the first thread. It is not too unusual to get about 1.5X overall performance, but sometimes performance goes down. ",
+            "date": "Answered March 26, 2018",
+            "views": "273",
+            "upvotes": " View 27 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gopi Mech",
+                    "user_href": "/profile/Gopi-Mech-4"
+                },
+                {
+                    "user_id": "Rafik Shaikh",
+                    "user_href": "/profile/Rafik-Shaikh-34"
+                },
+                {
+                    "user_id": "Aditya Jadhav",
+                    "user_href": "/profile/Aditya-Jadhav-101"
+                },
+                {
+                    "user_id": "Jen\u0151 Niini",
+                    "user_href": "/profile/Jen\u0151-Niini"
+                },
+                {
+                    "user_id": "Himanshu Tanwar",
+                    "user_href": "/profile/Himanshu-Tanwar-45"
+                },
+                {
+                    "user_id": "Mihai Mihai",
+                    "user_href": "/profile/Mihai-Mihai-24"
+                },
+                {
+                    "user_id": "M\u0101rti\u0146\u0161 Me\u017eajevs",
+                    "user_href": "/profile/M\u0101rti\u0146\u0161-Me\u017eajevs"
+                },
+                {
+                    "user_id": "Oleksandr Kovalenko",
+                    "user_href": "/profile/Oleksandr-Kovalenko-1"
+                },
+                {
+                    "user_id": "Daulton Whitehead",
+                    "user_href": "/profile/Daulton-Whitehead-1"
+                },
+                {
+                    "user_id": "Audrey Karperien",
+                    "user_href": "/profile/Audrey-Karperien"
+                },
+                {
+                    "user_id": "Prince Johnson",
+                    "user_href": "/profile/Prince-Johnson-14"
+                },
+                {
+                    "user_id": "Divya Shah",
+                    "user_href": "/profile/Divya-Shah-60"
+                },
+                {
+                    "user_id": "Sudheendra Rudravaram",
+                    "user_href": "/profile/Sudheendra-Rudravaram-1"
+                },
+                {
+                    "user_id": "Lalith Samanthapuri",
+                    "user_href": "/profile/Lalith-Samanthapuri"
+                },
+                {
+                    "user_id": "Shubhabrata Bose",
+                    "user_href": "/profile/Shubhabrata-Bose"
+                },
+                {
+                    "user_id": "Akshay Patil",
+                    "user_href": "/profile/Akshay-Patil-504"
+                },
+                {
+                    "user_id": "Umme Salma",
+                    "user_href": "/profile/Umme-Salma"
+                },
+                {
+                    "user_id": "Melkisedik E. Hassa",
+                    "user_href": "/profile/Melkisedik-E-Hassa"
+                },
+                {
+                    "user_id": "Alex Roseno",
+                    "user_href": "/profile/Alex-Roseno"
+                },
+                {
+                    "user_id": "Sam Ellis",
+                    "user_href": "/profile/Sam-Ellis-41"
+                },
+                {
+                    "user_id": "Venkatesh Pasupuleti",
+                    "user_href": "/profile/Venkatesh-Pasupuleti"
+                },
+                {
+                    "user_id": "Paul Allen",
+                    "user_href": "/profile/Paul-Allen-81"
+                },
+                {
+                    "user_id": "Vinith Gurram",
+                    "user_href": "/profile/Vinith-Gurram"
+                },
+                {
+                    "user_id": "Gary Cunningham",
+                    "user_href": "/profile/Gary-Cunningham-48"
+                },
+                {
+                    "user_id": "Manish Kakwani",
+                    "user_href": "/profile/Manish-Kakwani"
+                },
+                {
+                    "user_id": "Jerry Coffin",
+                    "user_href": "/profile/Jerry-Coffin-2"
+                },
+                {
+                    "user_id": "Krishnaprasad Bhat",
+                    "user_href": "/profile/Krishnaprasad-Bhat-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anushka Gurjar",
+                "href": "/profile/Anushka-Gurjar"
+            },
+            "answer_text": "Core :- A core is a single computing component with independent CPU. A core is defined as a CPU which read and execute program instructions. Number of cores directly affect processing speed of Device. The more number of cores you have the faster Processing you get. It simply means number of CPUs you have to run a single Device. A multi-core processor is a single computing component with two or more independent processing units called cores. (Dual Core , Quad Core , Octa core and now you have Hexa core also.) They have shared Secondary memory, private cache memory and separate Registers. Process Thread :- It is just a portion of a Process that CPU currently executing. Larger programs are divided into threads (small sections) so that processor can execute them simultaneously to get fast execution. Hyper Threading :- Example - It means that the CPU has 2 physical cores but can process 4 threads simultaneously through hyper threading. In reality, one physical core can only truly run one thread at a time, but using hyper threading, the CPU exploits the idle stages in the pipeline to process another thread. Hope it helped ;-) ",
+            "date": "Answered January 27, 2018",
+            "views": "492",
+            "upvotes": " View 86 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "The Smileyfan",
+                    "user_href": "/profile/The-Smileyfan"
+                },
+                {
+                    "user_id": "Faizan",
+                    "user_href": "/profile/Faizan-80"
+                },
+                {
+                    "user_id": "Moinak Debnath",
+                    "user_href": "/profile/Moinak-Debnath"
+                },
+                {
+                    "user_id": "Aabid",
+                    "user_href": "/profile/Aabid-8"
+                },
+                {
+                    "user_id": "Gourab Ghosh",
+                    "user_href": "/profile/Gourab-Ghosh-25"
+                },
+                {
+                    "user_id": "Erma S",
+                    "user_href": "/profile/Erma-S"
+                },
+                {
+                    "user_id": "Avinash Pb",
+                    "user_href": "/profile/Avinash-Pb-3"
+                },
+                {
+                    "user_id": "J\u00f8rgen Ilstad",
+                    "user_href": "/profile/J\u00f8rgen-Ilstad"
+                },
+                {
+                    "user_id": "Shah Moomin",
+                    "user_href": "/profile/Shah-Moomin"
+                },
+                {
+                    "user_id": "Khair Ali Naqvi",
+                    "user_href": "/profile/Khair-Ali-Naqvi"
+                },
+                {
+                    "user_id": "It Mahsan",
+                    "user_href": "/profile/It-Mahsan"
+                },
+                {
+                    "user_id": "Aditya Jadhav",
+                    "user_href": "/profile/Aditya-Jadhav-101"
+                },
+                {
+                    "user_id": "Pawandeep Singh",
+                    "user_href": "/profile/Pawandeep-Singh-256"
+                },
+                {
+                    "user_id": "Jen\u0151 Niini",
+                    "user_href": "/profile/Jen\u0151-Niini"
+                },
+                {
+                    "user_id": "Alaa Osama",
+                    "user_href": "/profile/Alaa-Osama-33"
+                },
+                {
+                    "user_id": "Manoj M Byrankoppa",
+                    "user_href": "/profile/Manoj-M-Byrankoppa"
+                },
+                {
+                    "user_id": "Himanshu Tanwar",
+                    "user_href": "/profile/Himanshu-Tanwar-45"
+                },
+                {
+                    "user_id": "Shiva Tejesh",
+                    "user_href": "/profile/Shiva-Tejesh"
+                },
+                {
+                    "user_id": "Nikkanor Malabay",
+                    "user_href": "/profile/Nikkanor-Malabay"
+                },
+                {
+                    "user_id": "Ajwad Mahi",
+                    "user_href": "/profile/Ajwad-Mahi-1"
+                },
+                {
+                    "user_id": "Norman",
+                    "user_href": "/profile/Norman-16"
+                },
+                {
+                    "user_id": "Hocine Gasmi",
+                    "user_href": "/profile/Hocine-Gasmi"
+                },
+                {
+                    "user_id": "Nithish K Gnani",
+                    "user_href": "/profile/Nithish-K-Gnani-1"
+                },
+                {
+                    "user_id": "Alan Preciado Grijalva",
+                    "user_href": "/profile/Alan-Preciado-Grijalva-1"
+                },
+                {
+                    "user_id": "Joseph Henry",
+                    "user_href": "/profile/Joseph-Henry-111"
+                },
+                {
+                    "user_id": "Konstantin Popov",
+                    "user_href": "/profile/Konstantin-Popov-5"
+                },
+                {
+                    "user_id": "Stalin Mariaraj",
+                    "user_href": "/profile/Stalin-Mariaraj"
+                },
+                {
+                    "user_id": "Salom Dunyo",
+                    "user_href": "/profile/Salom-Dunyo"
+                },
+                {
+                    "user_id": "Rafid Hassan",
+                    "user_href": "/profile/Rafid-Hassan-6"
+                },
+                {
+                    "user_id": "Mahesh Reddy",
+                    "user_href": "/profile/Mahesh-Reddy-869"
+                },
+                {
+                    "user_id": "Tarun Kumar Y",
+                    "user_href": "/profile/Tarun-Kumar-Y-1"
+                },
+                {
+                    "user_id": "Daulton Whitehead",
+                    "user_href": "/profile/Daulton-Whitehead-1"
+                },
+                {
+                    "user_id": "Emil Navod",
+                    "user_href": "/profile/Emil-Navod"
+                },
+                {
+                    "user_id": "Uv Venkatesh",
+                    "user_href": "/profile/Uv-Venkatesh"
+                },
+                {
+                    "user_id": "Chethan Kumar",
+                    "user_href": "/profile/Chethan-Kumar-901"
+                },
+                {
+                    "user_id": "Oleg Tsyba",
+                    "user_href": "/profile/Oleg-Tsyba-1"
+                },
+                {
+                    "user_id": "Jayanth Saikiran Chatti",
+                    "user_href": "/profile/Jayanth-Saikiran-Chatti"
+                },
+                {
+                    "user_id": "KINGSHUK JANA",
+                    "user_href": "/profile/KINGSHUK-JANA-6"
+                },
+                {
+                    "user_id": "Juho Pesonen",
+                    "user_href": "/profile/Juho-Pesonen-2"
+                },
+                {
+                    "user_id": "Madhwaraj Nadager",
+                    "user_href": "/profile/Madhwaraj-Nadager"
+                },
+                {
+                    "user_id": "Alin Luca",
+                    "user_href": "/profile/Alin-Luca-2"
+                },
+                {
+                    "user_id": "Rehnuma Purnata",
+                    "user_href": "/profile/Rehnuma-Purnata-2"
+                },
+                {
+                    "user_id": "Rylie Harrison",
+                    "user_href": "/profile/Rylie-Harrison"
+                },
+                {
+                    "user_id": "Md Kiron",
+                    "user_href": "/profile/Md-Kiron-3"
+                },
+                {
+                    "user_id": "Ayush Khandelwal",
+                    "user_href": "/profile/Ayush-Khandelwal-34"
+                },
+                {
+                    "user_id": "Michael Robertson",
+                    "user_href": "/profile/Michael-Robertson-102"
+                },
+                {
+                    "user_id": "Jerry Lee",
+                    "user_href": "/profile/Jerry-Lee-349"
+                },
+                {
+                    "user_id": "Hamza Bzd",
+                    "user_href": "/profile/Hamza-Bzd"
+                },
+                {
+                    "user_id": "Dabany DB",
+                    "user_href": "/profile/Dabany-DB"
+                },
+                {
+                    "user_id": "Hari Warshan",
+                    "user_href": "/profile/Hari-Warshan"
+                },
+                {
+                    "user_id": "Baldev Singh",
+                    "user_href": "/profile/Baldev-Singh-209"
+                },
+                {
+                    "user_id": "TunTun Aung",
+                    "user_href": "/profile/TunTun-Aung-4"
+                },
+                {
+                    "user_id": "Ambica Pramod",
+                    "user_href": "/profile/Ambica-Pramod"
+                },
+                {
+                    "user_id": "Saad Ahmed",
+                    "user_href": "/profile/Saad-Ahmed-55"
+                },
+                {
+                    "user_id": "Tanzir Islam",
+                    "user_href": "/profile/Tanzir-Islam-1"
+                },
+                {
+                    "user_id": "Christopher Lautsch",
+                    "user_href": "/profile/Christopher-Lautsch"
+                },
+                {
+                    "user_id": "Lalith Samanthapuri",
+                    "user_href": "/profile/Lalith-Samanthapuri"
+                },
+                {
+                    "user_id": "Akira Rafhael",
+                    "user_href": "/profile/Akira-Rafhael"
+                },
+                {
+                    "user_id": "Ankit Gyawali",
+                    "user_href": "/profile/Ankit-Gyawali-1"
+                },
+                {
+                    "user_id": "Mithika Mburung'a",
+                    "user_href": "/profile/Mithika-Mburunga"
+                },
+                {
+                    "user_id": "Dan Mombourquette",
+                    "user_href": "/profile/Dan-Mombourquette"
+                },
+                {
+                    "user_id": "Ollie Jackson",
+                    "user_href": "/profile/Ollie-Jackson-21"
+                },
+                {
+                    "user_id": "Rachid M'Khatri",
+                    "user_href": "/profile/Rachid-MKhatri"
+                },
+                {
+                    "user_id": "Akshay Patil",
+                    "user_href": "/profile/Akshay-Patil-504"
+                },
+                {
+                    "user_id": "Jazeel Calicut",
+                    "user_href": "/profile/Jazeel-Calicut"
+                },
+                {
+                    "user_id": "Sneha Rathod-Solanki",
+                    "user_href": "/profile/Sneha-Rathod-Solanki"
+                },
+                {
+                    "user_id": "Payal Das",
+                    "user_href": "/profile/Payal-Das-11"
+                },
+                {
+                    "user_id": "Chaudhury Swastik",
+                    "user_href": "/profile/Chaudhury-Swastik"
+                },
+                {
+                    "user_id": "Andrew Gerst",
+                    "user_href": "/profile/Andrew-Gerst-2"
+                },
+                {
+                    "user_id": "Wen Ming",
+                    "user_href": "/profile/Wen-Ming-5"
+                },
+                {
+                    "user_id": "Yash Patel",
+                    "user_href": "/profile/Yash-Patel-607"
+                },
+                {
+                    "user_id": "Akshai Raj",
+                    "user_href": "/profile/Akshai-Raj-1"
+                },
+                {
+                    "user_id": "Vignesh Raja",
+                    "user_href": "/profile/Vignesh-Raja-42"
+                },
+                {
+                    "user_id": "Giridhar Vedula",
+                    "user_href": "/profile/Giridhar-Vedula-2"
+                },
+                {
+                    "user_id": "Mohammed AboHashem",
+                    "user_href": "/profile/Mohammed-AboHashem"
+                },
+                {
+                    "user_id": "Deyan Chen",
+                    "user_href": "/profile/Deyan-Chen"
+                },
+                {
+                    "user_id": "Arsh Jamadar",
+                    "user_href": "/profile/Arsh-Jamadar-1"
+                },
+                {
+                    "user_id": "Ravi Teja",
+                    "user_href": "/profile/Ravi-Teja-816"
+                },
+                {
+                    "user_id": "Arjun Varma R",
+                    "user_href": "/profile/Arjun-Varma-R-1"
+                },
+                {
+                    "user_id": "Baskaran",
+                    "user_href": "/profile/Baskaran-13"
+                },
+                {
+                    "user_id": "Rx Sohel Pashtoon",
+                    "user_href": "/profile/Rx-Sohel-Pashtoon"
+                },
+                {
+                    "user_id": "Trey Huffine",
+                    "user_href": "/profile/Trey-Huffine"
+                },
+                {
+                    "user_id": "Phoebe Tang",
+                    "user_href": "/profile/Phoebe-Tang-3"
+                },
+                {
+                    "user_id": "Gil Wiraatmadja",
+                    "user_href": "/profile/Gil-Wiraatmadja"
+                },
+                {
+                    "user_id": "Andrew Silverman",
+                    "user_href": "/profile/Andrew-Silverman-10"
+                },
+                {
+                    "user_id": "Niranjan Mahapatra",
+                    "user_href": "/profile/Niranjan-Mahapatra-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sufiyan Shakil Memon",
+                "href": "/profile/Sufiyan-Shakil-Memon"
+            },
+            "answer_text": "A thread is a single line of commands that are getting processed. Each application has at least one thread, most have multiples. A core is the physical hardware that works on the thread. In general, a processor can only work on one thread per core (CPUs with hyper threading can work on up to two threads per core). For processors with hyper threading, there are extra registers and execution units in the core so it can store the state of two threads and work on them both. To change threads, you normally have to empty the registers into the cache, write that back to the main memory, then load up the cache with the new values and load up the registers. Context switches hurt performance significantly. For more information about cores, threads, hyper threading and much more, go on the link below, I have added that for a better understanding. CPU Core, Multi-Core, Thread, Core vs Threads, Hyper-Threading ",
+            "date": "Answered January 28, 2020",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sanjeev Kumar Tudu",
+                    "user_href": "/profile/Sanjeev-Kumar-Tudu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Brown",
+                "href": "/profile/Andrew-Brown-222"
+            },
+            "answer_text": "A core is the bit that actually contains the Arithmetic and Logic Unit (ALU) that is the actual business end of a CPU. It used to be that a core was slow and the main memory would clock at the same frequency. This meant that there was no need for cache and there was only one thread of execution. Along came high density manufacturing and CPU\u2019s needed cache to keep running at full speed because memory could no longer keep pace. Then came full integration and Moore\u2019s Law was coined and multiple level caches came along with speculative execution to feed the CPU at full speed. Finally came multi threading. The CPU was so fast and integration so high that multiple execution threads could be run on the same CPU. For x86 type systems this is 2 threads per core but Power and SPARC can go to 8 threads per core. TL;DR A core actually does the work, a thread delivers work to the core. If you have a 4/8 CPU that is 4 cores that each run 2 threads. ",
+            "date": "Answered March 26, 2018",
+            "views": "112",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ariyous",
+                    "user_href": "/profile/Ariyous"
+                },
+                {
+                    "user_id": "Cohen Bryant",
+                    "user_href": "/profile/Cohen-Bryant-2"
+                },
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten"
+                },
+                {
+                    "user_id": "Nikhil Kothari",
+                    "user_href": "/profile/Nikhil-Kothari-20"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Huseyin Tugrul Buyukisik",
+                "href": "/profile/Huseyin-Tugrul-Buyukisik"
+            },
+            "answer_text": "Core can compute/fetch/send data. Thread feeds core with instructions. Its an entrance point of core. More entrance means more chance to place work on different compute resources of same core. Sometimes software is not efficient to use a core fully occupied leaving some pipelines idle. Multiple threads per core overcomes this issue by constantly sending instructions to compute resources and let them work always. Some Amd processors have 1 thread per core. This means low scaling. Some Amd/Intel processors have 2 threads per core. This means high scaling. Some Ibm processors have 4\u20138 threads per core. This means high throughput. GPUs have generally 10\u201340 threads per 32-bit ALU(this is not even a core). GPUs generally have 1000s of threads per core(this is a group of ALUs). GPU should have 10000s of threads in-flight, for high throughput. So, If your GPU has at least 640 CUDA pipelines, you should give it at least 10000 CUDA threads to keep it occupied by in-flight instructions. ",
+            "date": "Updated November 19, 2018",
+            "views": "11",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jayavishnu K",
+                    "user_href": "/profile/Jayavishnu-K"
+                },
+                {
+                    "user_id": "Ariyous",
+                    "user_href": "/profile/Ariyous"
+                },
+                {
+                    "user_id": "Lalith Samanthapuri",
+                    "user_href": "/profile/Lalith-Samanthapuri"
+                },
+                {
+                    "user_id": "Ashok Reddy",
+                    "user_href": "/profile/Ashok-Reddy-377"
+                },
+                {
+                    "user_id": "Lo X",
+                    "user_href": "/profile/Lo-X-1"
+                },
+                {
+                    "user_id": "Kaustubh Aglawe",
+                    "user_href": "/profile/Kaustubh-Aglawe"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shubhajit Roy",
+                "href": "/profile/Shubhajit-Roy-9"
+            },
+            "answer_text": "Basically consider that the cores are your mouth and threads are your hand. The process done by the CPU be eating your food. So if you have multiple mouth then you can eat a lot at a time. But it would be bottlenecked by your hand because only two hand to put food in multiple mouth. So the speed would be slow. Likewise, if you have multiple hands not only one mouth then also problem would occur. Here the bottleneck would be your mouth as your hand can give you plenty of food at a time but it is restricted by your mouth. So there should be complete balance between the thread and the cores so that the CPU can would at it's best efficiency. That's why we see double the thread w.r.t cores which in a way symbolises one mouth and two hand. It's like 1:2 ratio. ",
+            "date": "Answered March 26, 2018",
+            "views": "924",
+            "upvotes": " View 264 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aryan Tiwari",
+                    "user_href": "/profile/Aryan-Tiwari-239"
+                },
+                {
+                    "user_id": "Mohammad Jumail",
+                    "user_href": "/profile/Mohammad-Jumail"
+                },
+                {
+                    "user_id": "Leo Vronski",
+                    "user_href": "/profile/Leo-Vronski"
+                },
+                {
+                    "user_id": "Rajalakshmi S",
+                    "user_href": "/profile/Rajalakshmi-S-13"
+                },
+                {
+                    "user_id": "Jayavishnu K",
+                    "user_href": "/profile/Jayavishnu-K"
+                },
+                {
+                    "user_id": "Barry William Irvine",
+                    "user_href": "/profile/Barry-William-Irvine"
+                },
+                {
+                    "user_id": "Avinash Pb",
+                    "user_href": "/profile/Avinash-Pb-3"
+                },
+                {
+                    "user_id": "Girish Mali",
+                    "user_href": "/profile/Girish-Mali-1"
+                },
+                {
+                    "user_id": "Rohan Patel",
+                    "user_href": "/profile/Rohan-Patel-12"
+                },
+                {
+                    "user_id": "Ion Lamasanu",
+                    "user_href": "/profile/Ion-Lamasanu-1"
+                },
+                {
+                    "user_id": "Rudy Tambunan",
+                    "user_href": "/profile/Rudy-Tambunan"
+                },
+                {
+                    "user_id": "Mohd Belal Naim",
+                    "user_href": "/profile/Mohd-Belal-Naim"
+                },
+                {
+                    "user_id": "Khair Ali Naqvi",
+                    "user_href": "/profile/Khair-Ali-Naqvi"
+                },
+                {
+                    "user_id": "Vincent Perron",
+                    "user_href": "/profile/Vincent-Perron-1"
+                },
+                {
+                    "user_id": "Things Done",
+                    "user_href": "/profile/Things-Done-1"
+                },
+                {
+                    "user_id": "Ashok Bhushan",
+                    "user_href": "/profile/Ashok-Bhushan-4"
+                },
+                {
+                    "user_id": "Narandhran Thangavel",
+                    "user_href": "/profile/Narandhran-Thangavel"
+                },
+                {
+                    "user_id": "Akshay Akash",
+                    "user_href": "/profile/Akshay-Akash-2"
+                },
+                {
+                    "user_id": "Gio Mane",
+                    "user_href": "/profile/Gio-Mane-2"
+                },
+                {
+                    "user_id": "It Mahsan",
+                    "user_href": "/profile/It-Mahsan"
+                },
+                {
+                    "user_id": "Sami CHEHADE",
+                    "user_href": "/profile/Sami-CHEHADE"
+                },
+                {
+                    "user_id": "Rajdeep Das",
+                    "user_href": "/profile/Rajdeep-Das-267"
+                },
+                {
+                    "user_id": "Jonathan Vonlanthen",
+                    "user_href": "/profile/Jonathan-Vonlanthen"
+                },
+                {
+                    "user_id": "Andrew Li",
+                    "user_href": "/profile/Andrew-Li-116"
+                },
+                {
+                    "user_id": "Gita Shmueli",
+                    "user_href": "/profile/Gita-Shmueli-1"
+                },
+                {
+                    "user_id": "Shivam Gupta",
+                    "user_href": "/profile/Shivam-Gupta-1046"
+                },
+                {
+                    "user_id": "Ck Khoo",
+                    "user_href": "/profile/Ck-Khoo"
+                },
+                {
+                    "user_id": "Aditya Jadhav",
+                    "user_href": "/profile/Aditya-Jadhav-101"
+                },
+                {
+                    "user_id": "David Brutoczki",
+                    "user_href": "/profile/David-Brutoczki"
+                },
+                {
+                    "user_id": "Patel Kunjan",
+                    "user_href": "/profile/Patel-Kunjan-4"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Jose-934"
+                },
+                {
+                    "user_id": "Mashood Ijaz",
+                    "user_href": "/profile/Mashood-Ijaz"
+                },
+                {
+                    "user_id": "Marcus Coleman",
+                    "user_href": "/profile/Marcus-Coleman-38"
+                },
+                {
+                    "user_id": "Eddie Shim",
+                    "user_href": "/profile/Eddie-Shim"
+                },
+                {
+                    "user_id": "Anand Ratnaparkhi",
+                    "user_href": "/profile/Anand-Ratnaparkhi-2"
+                },
+                {
+                    "user_id": "Adarsh Babu",
+                    "user_href": "/profile/Adarsh-Babu-47"
+                },
+                {
+                    "user_id": "Pawandeep Singh",
+                    "user_href": "/profile/Pawandeep-Singh-256"
+                },
+                {
+                    "user_id": "Irfan Adil",
+                    "user_href": "/profile/Irfan-Adil-1"
+                },
+                {
+                    "user_id": "Jen\u0151 Niini",
+                    "user_href": "/profile/Jen\u0151-Niini"
+                },
+                {
+                    "user_id": "Ravi Prakash",
+                    "user_href": "/profile/Ravi-Prakash-733"
+                },
+                {
+                    "user_id": "Vishnu Raj",
+                    "user_href": "/profile/Vishnu-Raj-427"
+                },
+                {
+                    "user_id": "Omar Mabrouk",
+                    "user_href": "/profile/Omar-Mabrouk-11"
+                },
+                {
+                    "user_id": "Adham Baquroun",
+                    "user_href": "/profile/Adham-Baquroun"
+                },
+                {
+                    "user_id": "Tommaso Di Noto",
+                    "user_href": "/profile/Tommaso-Di-Noto"
+                },
+                {
+                    "user_id": "Tam Khoi Nguyen",
+                    "user_href": "/profile/Tam-Khoi-Nguyen"
+                },
+                {
+                    "user_id": "Christopher Siciliano",
+                    "user_href": "/profile/Christopher-Siciliano"
+                },
+                {
+                    "user_id": "Daniyal Ahmad",
+                    "user_href": "/profile/Daniyal-Ahmad-48"
+                },
+                {
+                    "user_id": "Choong Ming Xuan",
+                    "user_href": "/profile/Choong-Ming-Xuan"
+                },
+                {
+                    "user_id": "Jonathan Wredstr\u00f8m",
+                    "user_href": "/profile/Jonathan-Wredstr\u00f8m"
+                },
+                {
+                    "user_id": "Ahmet Soper",
+                    "user_href": "/profile/Ahmet-Soper"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adam Giles",
+                "href": "/profile/Adam-Giles-12"
+            },
+            "answer_text": "The simplest way to think of a core is that each core is it\u2019s own processor. It gets a little more complicated in practice, but if you think of a quad core cpu as just four cpus, that\u2019s more or less how it works. A thread is a single piece of instructions that the computer feeds to the cpu to process. Traditionally each core can handle one thread, but now most cpus can multitask and handle multiple threads at once. This is primarily so you can load the next task while running the current task, it\u2019s usually not true multi-tasking. The short answer is cores are the hardware of the cpu, while threads are the units of software that runs on the cpu. ",
+            "date": "Answered June 17, 2019",
+            "views": "1",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Motaz Hammouda",
+                "href": "/profile/Motaz-Hammouda"
+            },
+            "answer_text": "a core is a physical thing. A thread is a software thing ( mostly). To further explain two cores processor is essentialy two processors inside the same chip. two threads single core process is essentialy a single processor that understands two different operations simultaneously, tries to work on them simultaneously, but not necessarily succeed in that One may think then that a two threads processor is completely useless. However this is not true, since it is more often than not the case that while a part of the processor is busy doing something there is another part that is free, multithreaded cores allow the programmer to use that part. CPU Core, Multi-Core, Thread, Core vs Threads, Hyper-Threading ",
+            "date": "Answered January 28, 2020",
+            "views": "973",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Petr Titera",
+                "href": "/profile/Petr-Titera-1"
+            },
+            "answer_text": "Core combines register files of one or more CPU threads and execution units and manages their use. It also manages memory access as requested by program. From system point of view is CPU thread (or should be) indistinguishable from CPU so most operating system will represent thread as separate CPUs There is plenty of possible ways how each core can handle several threads in CPU. Some techniques exploit the property of most programs, where some execution units are always not utilized. It is then possible to issue instructions from other programs to achieve better throughput. This is how Hyper-threading - Wikipedia works. Some CPUs like Barrel processor - Wikipedia will periodically switch between several CPU threads. ",
+            "date": "Answered January 28, 2020",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Christian Gingras",
+                "href": "/profile/Christian-Gingras-1"
+            },
+            "answer_text": "Multiple core is exactly the same as multiple microprocessors on a mother board. If you could open the die, you would see 2 or 4 repetitives shapes; it is really 2 or 4 times the exact same patterns. And you would see the logic that interconnect each cores as a small percentages of circuits connecting between each cores. Like with external CPUs, they must share common bus for memory and some high speed signal allow to synchronize the caches on each processors. Threads are also mimicking what unix programmers invented first: pre-emptive multitasking. The time consuming operation of saving the context of the thread to stop and restoring the context of a new thread is replaced by high speed thread context cache. ",
+            "date": "Answered July 18, 2019",
+            "views": "24",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Daulton Whitehead",
+                    "user_href": "/profile/Daulton-Whitehead-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ronith S.kumar",
+                "href": "/profile/Ronith-S-kumar"
+            },
+            "answer_text": "Threads are the space to execute commands on a processor and what a core is the space where thread are. One core consists one thread.But nowadays some processors have hyperthreading which give you 2 threads in core.That is you get the power of two threads in one. Like the i7 8700K It has 6 core s which has 12 threads and can simultaneously do 12 actions.Thats more you get the power of two in one. Simply Thread is a place in core which does the computing.And Sorry I said more about Hyperthreading Thankyou and Cheers ",
+            "date": "Answered March 26, 2018",
+            "views": "46",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aryan Tiwari",
+                    "user_href": "/profile/Aryan-Tiwari-239"
+                },
+                {
+                    "user_id": "Ariyous",
+                    "user_href": "/profile/Ariyous"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Albert Garcon",
+                "href": "/profile/Albert-Garcon"
+            },
+            "answer_text": "Cores are like different processors put together. Two cores are like two single core processors in one. Threads means the ability to read lines of code simultaneously. I.e., instead of reading line 1 and then line 2 and then line 3\u2026 a 2 thread core can read 2 lines in parallel: line 1 and line 2 at the same time. This, for some tasks is useful. ",
+            "date": "Answered November 21, 2017",
+            "views": "34",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Richard Hoefer",
+                    "user_href": "/profile/Richard-Hoefer-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Artour Aman",
+                "href": "/profile/Artour-Aman"
+            },
+            "answer_text": "The Core is the hardware that processes the data. The Thread is the path the data is delivered to the Core on. Generally each core has one thread transferring data to and from it. In the case of Hyperthreading each core has 2 threads moving data to and from them therefore doubling the processing of each core effectively doubling the core count. For example the i7 4790 has 4 physical and 4 virtual cores due to hyperthreading. ",
+            "date": "Answered March 26, 2018",
+            "views": "43",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Erik Fair",
+                    "user_href": "/profile/Erik-Fair"
+                },
+                {
+                    "user_id": "Ashok Reddy",
+                    "user_href": "/profile/Ashok-Reddy-377"
+                },
+                {
+                    "user_id": "Paul Allen",
+                    "user_href": "/profile/Paul-Allen-81"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akshay Dwivedi",
+                "href": "/profile/Akshay-Dwivedi-3"
+            },
+            "answer_text": "cores are independent physical processing units embedded in a single Processor. In real world scenario a 2 core processor consist of two independent units capable of performing a task. A thread is just a fractional part of a particular process which any of the cores can perform. So threads are basically the tiny fraction of logical task. ",
+            "date": "Updated June 23, 2016",
+            "views": "76",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Phoebe Tang",
+                    "user_href": "/profile/Phoebe-Tang-3"
+                },
+                {
+                    "user_id": "Albert Garcon",
+                    "user_href": "/profile/Albert-Garcon"
+                },
+                {
+                    "user_id": "Mansi Malhotra",
+                    "user_href": "/profile/Mansi-Malhotra-6"
+                },
+                {
+                    "user_id": "Ajay Kumar Kommaraju",
+                    "user_href": "/profile/Ajay-Kumar-Kommaraju"
+                },
+                {
+                    "user_id": "Mehdi Merai",
+                    "user_href": "/profile/Mehdi-Merai"
+                },
+                {
+                    "user_id": "Shrikant Kharade",
+                    "user_href": "/profile/Shrikant-Kharade"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles Stafford",
+                "href": "/profile/Charles-Stafford-6"
+            },
+            "answer_text": "The number cores a processor has its the amount of actual bits of silicon that can do processing whereas the amount of threads is how many different tasks the processor can do at the same time. The amount of threads can be either equal to the number of cores or large (usually if there are more threads than cores, there will be twice as many threads as there are cores). ",
+            "date": "Answered March 26, 2018",
+            "views": "31",
+            "upvotes": " Answer requested by Ant\u00f4nio Pena",
+            "upvoters": [
+                {
+                    "user_id": "Aryan Tiwari",
+                    "user_href": "/profile/Aryan-Tiwari-239"
+                },
+                {
+                    "user_id": "Mithika Mburung'a",
+                    "user_href": "/profile/Mithika-Mburunga"
+                },
+                {
+                    "user_id": "Ashok Reddy",
+                    "user_href": "/profile/Ashok-Reddy-377"
+                },
+                {
+                    "user_id": "Vinay Reddy",
+                    "user_href": "/profile/Vinay-Reddy-940"
+                },
+                {
+                    "user_id": "Ammu Chathukulam",
+                    "user_href": "/profile/Ammu-Chathukulam"
+                },
+                {
+                    "user_id": "Abhijit Kasi",
+                    "user_href": "/profile/Abhijit-Kasi-1"
+                },
+                {
+                    "user_id": "Srikara Surabathula",
+                    "user_href": "/profile/Srikara-Surabathula"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Siddarth Shah",
+                "href": "/profile/Siddarth-Shah-5"
+            },
+            "answer_text": "A Thread basically means a line of command that is being processed whereas, a Core is the hardware that performs operations on the thread. Hyper-threading is the technology currently used in the latest generation cores( e.g in i7 processsor of Intel) ",
+            "date": "Answered May 14, 2017",
+            "views": "223",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Prajvi Sikka",
+                    "user_href": "/profile/Prajvi-Sikka"
+                },
+                {
+                    "user_id": "James Lew",
+                    "user_href": "/profile/James-Lew-9"
+                },
+                {
+                    "user_id": "Shrikant Kharade",
+                    "user_href": "/profile/Shrikant-Kharade"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Tim-Song-35"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Parth Sikka",
+                "href": "/profile/Parth-Sikka"
+            },
+            "answer_text": "core is simply the no.of embedded cores in the processor while threads is the no. of tasks each core can perform simultaneously. ",
+            "date": "Answered May 16, 2014",
+            "views": "21",
+            "upvotes": " View 4 Upvoters"
+        },
+        {
+            "author_info": {
+                "name": "Harsh Gupta",
+                "href": "/profile/Harsh-Gupta-1211"
+            },
+            "answer_text": "Cores vs Threads \u2013 An Ultimate Guide for Difference Between Cores and Threads Read more: https://www.techlila.com/cores-vs-threads/#ixzz5A2bWQhIG ",
+            "date": "Answered March 17, 2018",
+            "views": "23",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Anaisha Singhal",
+                "href": "/profile/Anaisha-Singhal"
+            },
+            "answer_text": "hey watch this you will get your answer  ",
+            "date": "Answered April 6, 2020",
+            "views": "222",
+            "upvotes": "0"
+        }
+    ]
+}

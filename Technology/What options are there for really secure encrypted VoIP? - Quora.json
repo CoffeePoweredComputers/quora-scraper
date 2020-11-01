@@ -1,0 +1,36 @@
+{
+    "title": "What options are there for really secure encrypted VoIP? - Quora",
+    "tags": [
+        "VoIP",
+        "Encryption",
+        "Telephones"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alexander Portman",
+                "href": "/profile/Alexander-Portman"
+            },
+            "answer_text": "If we talk about underlying technology, here are a few examples how to make your VoIP calls more secure: SRTP and ZRTP - SRTP offers you protection with almost no effect on call quality. A unique encryption key is generated for every call you make and that makes your calls almost impossible to intercept. VPN - you can use your built-in VPN encryption feature if your business has VPN. Though, a VPN can only assure data protection from gateway to gateway. IPsec and TLS - IPsec is designed to encrypt data for two end-points and all the software which is running on those end-points while TLS encrypts VoIP data transmitted between two applications. Some big VoIP terminating providers such as Verizon require IPsec tunnels to be installed on all incoming traffic to their gateways. IPsec tunnels are an integral part of our Cloud VoIP switch - http://HostedSwitch.COM. ",
+            "date": "Answered April 11, 2012",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "MUNISH BHATIA",
+                    "user_href": "/profile/MUNISH-BHATIA-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tim Panton",
+                "href": "/profile/Tim-Panton"
+            },
+            "answer_text": "The easiest encrypted VoIP (set up wise) is IAX2, as described in http://tools.ietf.org/search/rfc5456You just set a config flag and 2 Asterisks ( http://asterisk.org ) will encrypt the authenticated IAX calls between them. There are a few caveats:  it only works between Asterisk PBXs, so is useful on inter-office trunks and the like, but not on endpoints.it is easy to set up because it derives the key from the (pre-shared) authentication password, meaning you place all your (security) eggs in one basket. Conceptually however this is no different from SRTP where the auth and encryption keys are derived from the same master key.the caller and called names and numbers are passed in the clear as part of the call setup, only the media is actually encrypted.",
+            "date": "Answered May 1, 2011",
+            "views": "744",
+            "upvotes": "0"
+        }
+    ]
+}

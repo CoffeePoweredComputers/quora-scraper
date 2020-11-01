@@ -1,0 +1,115 @@
+{
+    "title": "How to learn SQL? What are some good online resources, like websites, blogs, or videos - Quora",
+    "tags": [
+        "Learning SQL",
+        "Subscriptions",
+        "Beginning Computer Programming Advice",
+        "SQL",
+        "Database Systems",
+        "Learning New Things",
+        "Learning",
+        "Learning to Program"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Varun Singh",
+                "href": "/profile/Varun-Singh"
+            },
+            "answer_text": "What I am recommending isn't necessarily a set of best practices, but a small trick that I use to learn any technology that is new to me which can help leapfrog the hardest part of learning something new; the initial understanding of how the system behaves when given commands, and what the commands mean, and how they are constructed to do a certain task.  In the 90s when I was learning Cisco networking, their configmaker tool  (which Cisco later turned into various other tools such as Cisco Network Assistant, Professional Configurator etc.) was an incredibly helpful tool because it would let you visually plan a network, and output the plan into a textual configuration script, which you could then use to understand the underlying code, and its function. You could then use the same commands on your own and see what the hardware did in response to each, and how you could modify them on your own to suit your purpose beyond what the tool was capable of.  The same way, SQL tools such as Toad, phpMyAdmin or SQL Management Studio are a great way to learn your way around the way SQL commands work, and also learn how some of them fetch and aggregate the information that can help you analyze SQL performance.  For example, you can learn a lot from phpMyAdmin's table information commands, and the kind of fields they fetch, as well as when it executes a certain command, you can enable it to do so with profiling, which when visualized, gives you a good view of the internals of SQL.  Once again, the admin tools only go so far. They can't teach you how apps use SQL. They are typically oriented around database maintenance, so their use cases begin and end there. Another valuable tool for learning application behavior, and SQL's response to different types of commands is actually an analytics tool that we built into ScaleArc, which can help you understand app-SQL relationships very quickly, and at a much more granular level.  It's similar in some ways to tools like pt-query-digest, or SQL's management data warehouse, or Oracle's performance advisor, but unlike those tools, we did a few things differently, which makes it a much better fit for understanding app-SQL relationships.  First off, it's not sampled data. It's the whole SQL session stream analyzed and reported on a per-query basis, with even the individual variables captured.  Secondly, it has various views which give you a high level overview, while still retaining the deep, low level info so it's very \"dig-friendly\" info which is in an open format so you can get your hands dirty by diving ino it with SQLite, or raw logs.  Third, you also have a tonne of \"Just In Time\" time-state info like number of connections, load metrics, type of SQL traffic (read/write/errors), which can be correlated with the query data to come up with a better understanding of why an app-database combo performs the way it does.  What that does is allows you to very quickly understand how an app utilizes SQL, and what it does well, and what it sucks at. Just check it out in one of the webinars on our site, and you will understand exactly what I am saying. It is very hard to describe it, but much easier to just see it and understand why it works. ",
+            "date": "Answered February 28, 2014",
+            "views": "164",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "\u017dydr\u016bnas Venclova",
+                    "user_href": "/profile/\u017dydr\u016bnas-Venclova"
+                },
+                {
+                    "user_id": "Bhaskar Gaur",
+                    "user_href": "/profile/Bhaskar-Gaur"
+                },
+                {
+                    "user_id": "Jatin Bhowad",
+                    "user_href": "/profile/Jatin-Bhowad"
+                },
+                {
+                    "user_id": "Swaroop Joshi",
+                    "user_href": "/profile/Swaroop-Joshi"
+                },
+                {
+                    "user_id": "Vaibhav Tulsyan",
+                    "user_href": "/profile/Vaibhav-Tulsyan"
+                },
+                {
+                    "user_id": "Ankit Anurag",
+                    "user_href": "/profile/Ankit-Anurag-2"
+                },
+                {
+                    "user_id": "Prashanth Sampigethaya",
+                    "user_href": "/profile/Prashanth-Sampigethaya"
+                },
+                {
+                    "user_id": "Karthik Nellian Arunachalam",
+                    "user_href": "/profile/Karthik-Nellian-Arunachalam"
+                },
+                {
+                    "user_id": "Shanmugasundaram Muthuswamy",
+                    "user_href": "/profile/Shanmugasundaram-Muthuswamy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chad Hynes",
+                "href": "/profile/Chad-Hynes"
+            },
+            "answer_text": "I learned SQL in school. Data structure, syntax for doing various things within a couple different SQL platforms (we learned Microsoft SQL Server and Oracle). These lessons were valuable to understand what there is available to me. I could write line-by-line code to CREATE TABLE... ALTER TABLE.... etc. But it wasn't until I started actually using it in my work with SQL Server Management studio that I started understanding what's possible and actually enjoying database work. I'm by no means a master, and a lot of the time I have to look things up (how do you write a CTE again?)... but I can learn what's required to build most things. Ok, so massive-scale applications spanning multiple servers across multiple continents is a little out of my league, but you don't start at that level. You gotta start somewhere... What I recommend doing is this:  Download a platform that you want to work with (I prefer SQL Server Express Edition | Microsoft) and install it on your personal or development machine.Open it up and use the GUI to setup a new database and add a single table to it (right click > add...)Then add a single column to that table, again using the GUI (right click > add...)Then run an export of the database to a query window so you can see what just happened. What the tool did all on its own without you having to run a single line of codeContinue to do this for each of the different options (column types, relational keys, etc.) Get an idea of what's possible without even coding. Then learn what's going on behind the scenes when you do it that way by exporting it again and again. Then if there's something you don't understand go and google it.Do it again and again until you're familiar with how to setup a database with 20+ tables without even coding. It's surprising what's possible without code these days.Now add some fake data. Again, there's a GUI for this too! Amazing stuff.Now do some queries. Select *. group by... having... aggregates... subqueries... CTEs.... so many possibilities. Learn what you need to, for now, but expand your vocabulary over time because there's sometimes simpler ways to do things you don't even know about.Now try your hand at writing stored procedures and views. Google \"how to write a stored procedure\"... it's free and will probably tell you MORE than a textbook ever will if you spend the same amount of time reading it.Now wire that stored procedure up to a front end and pull some data off the server. This involves connection strings. Learn about those too, they're important. Integrated Security? What's that?Then try an Object-Relational Mapper and essentially throw away all that effort you spent learning stored procedures because ORMs make your life SOOOO much easier (ok ok, stored procs are still useful sometimes). ORMs, if you're unfamiliar, essentially let you map your DB to your application logic so you don't have to write repetitive data access code. Try one out... or more... Entity Framework is nice in .net.In short, I find it's easier to work with the tool directly in practical scenarios and learn what (recent 2015) options are available without having to put all that extra effort in of learning line-by-line semantic crap that some textbook written 10 years ago thinks is the proper way to do something. Be lazy if you can be, but take the time to understand the things you can be lazy with and what areas require more \"hands on\" efforts and deep understanding to \"get right\". Once you're building databases like it's just another Tuesday, then worry about becoming a \"Master\". ",
+            "date": "Answered August 14, 2015",
+            "views": "147",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sonal Tiwari",
+                    "user_href": "/profile/Sonal-Tiwari-5"
+                },
+                {
+                    "user_id": "Asfand Khawaja",
+                    "user_href": "/profile/Asfand-Khawaja-1"
+                },
+                {
+                    "user_id": "Ting Sang",
+                    "user_href": "/profile/Ting-Sang"
+                },
+                {
+                    "user_id": "Sindhu P",
+                    "user_href": "/profile/Sindhu-P-59"
+                },
+                {
+                    "user_id": "Meena C",
+                    "user_href": "/profile/Meena-C-11"
+                },
+                {
+                    "user_id": "Parvinder Bardhen",
+                    "user_href": "/profile/Parvinder-Bardhen"
+                },
+                {
+                    "user_id": "Ayomide Asubiojo",
+                    "user_href": "/profile/Ayomide-Asubiojo"
+                },
+                {
+                    "user_id": "Martin Mensch",
+                    "user_href": "/profile/Martin-Mensch"
+                },
+                {
+                    "user_id": "Sahiba Thakral",
+                    "user_href": "/profile/Sahiba-Thakral"
+                },
+                {
+                    "user_id": "Edythe O",
+                    "user_href": "/profile/Edythe-O"
+                }
+            ]
+        }
+    ]
+}

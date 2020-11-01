@@ -1,0 +1,39 @@
+{
+    "title": "What programming languages should learn in college? - Quora",
+    "tags": [
+        "Learning to Program",
+        "Academic and Educational Advice"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Archis Gore",
+                "href": "/profile/Archis-Gore"
+            },
+            "answer_text": "You should learn different \"classes\" of languages. This answer applies to everyone really. Whether it be college or not. But the sooner you learn them, the better sense many things will make. Now before I go into a list of those languages, I think a followup question you should ask is, \"What types of problems should I be solving or learning to solve in college?\" The answer to that question will greatly influence how you perceive the answer to this question here.  For instance, if you will look at static analysis of source code, or theorem provers or formal verification, you'll suddenly love Prolog, which'll may very little sense for displaying a stock quote. There are many data transformations I do where Prolog-like languages make SO MUCH sense and writing the same code in procedural languages is downright hostile. C will make a lot of sense all over the place, but especially when writing systems software. With C, what-you-see-is-what-you-get. I think of C as a macro preprocessor over machine code (technically that is EVERY language, but C is really close.) For example, a function-call is a function-call is a function-call in C every single time. That's how it works. With C++ you'll begin to have abstractions like overloads and you won't know until link time how something behaves (and why Linus famously rejects it for the kernel.) C++ begins to make sense for large systems of interacting components where you want to establish \"contracts\" between organizations, people, or even companies. C#/Java are safer/easier versions of C++ (I'm going to get soooo burned for saying this! :-D) Lisp is a cool one. The second programming language ever invented, it represents data-as-programs and programs-as-data. Imagine if you're Java program's \"lines\" were a Java Array. So that you could write array-based logic to walk the lines of itself. (Bad analogy - that's the best I can do in two lines.) You'll find many languages borrow the same concepts - Javascript, Perl, etc. allow you to declare more code from within the language (the famously derided \"eval\".) This means that JSON isn't a \"format\". It's literal Javascript code - in the same way (1 2 3 4) in Lisp isn't simply a data structure. It's literal Lisp code. Erlang introduces very little in terms of \"language\", but it demonstrates key concepts of runtime. Highly-available systems are just so easy to write in it. Heroku, SimpleDB, the 19-billion-dollar Whatsapp all use Erlang, not to mention Ericsson routers that have such a high uptime, its on the order of 2 minutes per every 40 years (citation needed - I could be wrong.) If you go a little further afield, you can break out of the Turing Machine/Von Neumann architecture itself. All languages I have mentioned/spoken of are Turing-Complete (or are subsets; see Chomsky Heirarchy.) I.e. you are the \"programmer\" giving a machine instructions.  Artificial Neural Networks are a way of programming an entirely different type of \"machine\": by examples. I can show an ANN 50 pictures of a dog and have it \"learn\" what a dog looks like. (Again gross simplification because I have to compress it in two lines.) To recap I can think of a few conceptual things you want to cover:1. The types of problems we solve, or will have to solve.2. Logical/declarative/predicate-based programming languages.3. Machine-level or low-level languages (C, Rust, Assembly.)4. Functional Programming (Lisp, F#, Scala, Javascript)5. Object Oriented Programming (Smalltalk, Objective-C, C++, Java, C#) ",
+            "date": "Answered February 7, 2015",
+            "views": "38",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Al Klein",
+                "href": "/profile/Al-Klein"
+            },
+            "answer_text": "That really can\u2019t be answered because you don\u2019t yet know what kind of job you\u2019ll land (unless you\u2019ve already decided to be a game programmer or a database programmer, etc). Once you\u2019ve learned programming, though, learning languages is pretty trivial, so try to get some experience in each of at least a few classes of language. Having spent 3 years of college becoming pretty expert in C++ won\u2019t get you in the door if the company is looking for someone to maintain legacy Forth code. Having spent 6 months studying Forth as one of the languages you learned might. (But if all you know is languages, and not programming, you\u2019re not going to be working for a software house, you\u2019re going to be a \u201cprogrammer\u201d at a company doing other things, where the person doing the hiring has no idea what the difference between coding and programming is. (Coding is just translating a program - that might be \u201cwritten: in English or in a flow chart - into a computer language. Programming is looking at the problem and spending time - maybe months of it - figuring out how to solve it with a computer. It has nothing to do with coding, although most programmers code their own programs [almost as an afterthought, which is why a coder may earn as much as $50k, while a programmer may earn more than 10 times that - coding is to a programmer what filling a glass with water is to a chef].) ",
+            "date": "Answered June 9, 2016",
+            "views": "581",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Millybenilly",
+                    "user_href": "/profile/Millybenilly"
+                },
+                {
+                    "user_id": "Yash Jain",
+                    "user_href": "/profile/Yash-Jain-1489"
+                }
+            ]
+        }
+    ]
+}

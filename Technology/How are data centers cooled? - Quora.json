@@ -1,0 +1,106 @@
+{
+    "title": "How are data centers cooled? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Todd Lipcon",
+                "href": "/profile/Todd-Lipcon"
+            },
+            "answer_text": "Most commonly, datacenters are arranged in what's called \"hot row cold row\" layout. In this layout, the racks of machines are arranged in rows such that each adjacent pair of rows faces each other. To make an ugly diagram of it:[C]H[C]H[C]The front of each machine (the \"open\" side of the brackets) face the \"cool\" row, and the back of the machines face the \"hot\" row -- most rack hardware sucks cool air in the front and expels hot air out the back. The cooling is then directed from HVAC systems into the cool row, and exhaust is pulled from the hot row. This has the nice property that datacenter techs can stand in the cool row to work with machines, and you don't have one machine exhausting hot air into the intake of the next. I'm no expert on the subject, but I think having this rather \"orderly\" flow also reduces turbulence, etc, that can lead to inefficiencies (your BS detector should be blaring loud right about now) As for the cooling itself, generally it's just very large HVAC systems, where there are some chillers (often on the roof of the building) which pump chilled water to the datacenter, and then within the datacenter several more units which actually exchange heat from the air back into that water. A good datacenter has at least N+1 capacity on cooling, often N+2 or N+3 - meaning that a loss of an HVAC unit doesn't put the datacenter above safe temperature thresholds. Typically, operations will monitor heat at several points in the datacenter and have alerting should temperature cross safe thresholds (eg 80 or 90 degrees) ",
+            "date": "Answered November 16, 2010",
+            "views": "24",
+            "upvotes": " View 15 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                },
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "Daniel Sosa",
+                    "user_href": "/profile/Daniel-Sosa-6-1"
+                },
+                {
+                    "user_id": "Vijaynath Guntakalla",
+                    "user_href": "/profile/Vijaynath-Guntakalla"
+                },
+                {
+                    "user_id": "Peter Brandon Hanley",
+                    "user_href": "/profile/Peter-Brandon-Hanley"
+                },
+                {
+                    "user_id": "Vasanth Ramamurthy",
+                    "user_href": "/profile/Vasanth-Ramamurthy-1"
+                },
+                {
+                    "user_id": "Ilya Brovashov",
+                    "user_href": "/profile/Ilya-Brovashov"
+                },
+                {
+                    "user_id": "Michael Duke",
+                    "user_href": "/profile/Michael-Duke-6"
+                },
+                {
+                    "user_id": "Sandy Ryza",
+                    "user_href": "/profile/Sandy-Ryza"
+                },
+                {
+                    "user_id": "Lalith Suresh",
+                    "user_href": "/profile/Lalith-Suresh"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anastasia Churazova",
+                "href": "/profile/Anastasia-Churazova"
+            },
+            "answer_text": "If you want to learn more you might want to attend this free webinar: Cooling Strategies for Data Center Design It\u2019s one of the data center world\u2019s oldest debates. Some of the commonly used techniques include raised floor, slab floor, and fan wall. When the raised floor technique is used, the cold air enters the room through the perforated tiles in the floor, which in turn cools the server racks. Proponents of raised floor tout the ease with which cool air can be directed where needed. A data center operator needs only rearrange perforated floor tiles so that the cool air blown through the raised floor plenum vents up at the desired point of cooling. Some argue the overhead ducts in a concrete slab floor system can\u2019t direct the cool air with the same precision. The fan wall technique actually involves two walls \u2013 an exterior wall covered with air cooling units and an interior wall covered with louvers, both separated by a 5-to-6 foot wide gap, or plenum. The cooling units feed air into the plenum and fans circulate the air into the data center, capitalizing on pressure and air flow dynamics to cool the entire space and push hot air up, where it\u2019s vented out of the facility. It\u2019s extremely energy efficient and quiet. However, overhead ducts in a slab floor design have also proven extremely effective. Some say they are the superior option as power density increases, since copious amounts of heavier cool air can be efficiently dropped from above \u2013 especially when combined with systems that contain the computing equipment\u2019s warm exhaust in certain aisles. In addition, system air balancing can be easier with a slab floor design because there are fewer leakage issues, such as with improperly sealed cable openings on a floor.  ",
+            "date": "Answered February 14, 2018",
+            "views": "512",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Sosa",
+                    "user_href": "/profile/Daniel-Sosa-6-1"
+                },
+                {
+                    "user_id": "Fedmar Heramis",
+                    "user_href": "/profile/Fedmar-Heramis"
+                },
+                {
+                    "user_id": "Elliot Stenquist",
+                    "user_href": "/profile/Elliot-Stenquist"
+                },
+                {
+                    "user_id": "Adrian Lopez",
+                    "user_href": "/profile/Adrian-Lopez-35"
+                },
+                {
+                    "user_id": "Jenny Coleman",
+                    "user_href": "/profile/Jenny-Coleman-21"
+                },
+                {
+                    "user_id": "Gilbert Blankson",
+                    "user_href": "/profile/Gilbert-Blankson"
+                },
+                {
+                    "user_id": "Andrea Zaharia",
+                    "user_href": "/profile/Andrea-Zaharia"
+                },
+                {
+                    "user_id": "Pawel Sosnowski",
+                    "user_href": "/profile/Pawel-Sosnowski"
+                },
+                {
+                    "user_id": "Jousef Murad",
+                    "user_href": "/profile/Jousef-Murad"
+                }
+            ]
+        }
+    ]
+}

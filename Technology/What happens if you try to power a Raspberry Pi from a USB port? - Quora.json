@@ -1,0 +1,51 @@
+{
+    "title": "What happens if you try to power a Raspberry Pi from a USB port? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Universal Serial Bus (USB)",
+        "Computer Hardware",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Darshita Patel",
+                "href": "/profile/\u0926\u0930\u094d\u0936\u093f\u0924\u093e-\u092a\u091f\u0947\u0932-Darshita-Patel"
+            },
+            "answer_text": "It wont burn the motherboard. All USB chips have over current detection. Some motherboards have high power ports for up to 1000ma for super fast charging but that is not a standard just a feature. If the current goes off the USB port usually resets and if it resets a few times it will go into off mode to prevent short circuit damage if it may exist. The fact it works for my friend if maybe because he does not plug anything into the Pi USB port or he uses another USB powered hub. It is not advised to use PC power because of reset problems on the port as B needs up to 1A. I personally would never rely on the regular USB port's ability to provide such level of power as the one required by the Model B, but Model A's much lower consumption would be under the usually known 500 mA limit on the USB port.In my experience, a number of USB hosts that I have tried in the past aren't even able to supply the old nominal 500 mA of the standard. I feel this value changed from older to newer USB specifications, last one I read was version 2.0.Consider that \"check your power supply\" is by far the most common answer I give to a myriad of different issues I am asked about concerning the Raspberry Pi. Just use a good reliable power source that can provide 1 A, if you don't want to run into random problems (from reboots to dying network adapters to SD writing errors).",
+            "date": "Answered July 5, 2017",
+            "views": "989",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sugash Rajavelu",
+                    "user_href": "/profile/Sugash-Rajavelu"
+                },
+                {
+                    "user_id": "Arun Singh",
+                    "user_href": "/profile/Arun-Singh-63"
+                },
+                {
+                    "user_id": "Mohammed Raiyan",
+                    "user_href": "/profile/Mohammed-Raiyan"
+                },
+                {
+                    "user_id": "Shreyas Patel ( \u0936\u094d\u0930\u0947\u092f\u0938 \u092a\u091f\u0947\u0932 )",
+                    "user_href": "/profile/Shreyas-Patel-\u0936\u094d\u0930\u0947\u092f\u0938-\u092a\u091f\u0947\u0932"
+                },
+                {
+                    "user_id": "Raghavendra KS",
+                    "user_href": "/profile/Raghavendra-KS"
+                },
+                {
+                    "user_id": "Hashmi Ahtesham",
+                    "user_href": "/profile/Hashmi-Ahtesham"
+                },
+                {
+                    "user_id": "Mrunal Ahirao (\u092e\u0943\u0923\u093e\u0932 \u0905\u0939\u093f\u0930\u093e\u0935)",
+                    "user_href": "/profile/Mrunal-Ahirao-\u092e\u0943\u0923\u093e\u0932-\u0905\u0939\u093f\u0930\u093e\u0935"
+                }
+            ]
+        }
+    ]
+}

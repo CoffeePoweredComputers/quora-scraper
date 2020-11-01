@@ -1,0 +1,36 @@
+{
+    "title": "For phones that take SD cards, why is there a limit on how big a card they can take? Why can\u2019t it be the biggest available? - Quora",
+    "tags": [
+        "MicroSD",
+        "SD Cards",
+        "Memory Cards",
+        "Credit Card Processing",
+        "Data Storage",
+        "Mobile Technology",
+        "Credit Cards",
+        "Android (operating system)",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Fr. Clement Dickie, OP",
+                "href": "/profile/Fr-Clement-Dickie-OP"
+            },
+            "answer_text": "The file-size limit on many devices is the result of software limitations. External drives like SD cards are typically encoded with a FAT32 file system. Almost any computer or device can read an SD card or USB drive encoded in FAT32, it is ubiquitous. But it has one unfortunate limitation, the whole drive (card) can only be up to 32GB. Microsoft solved this problem by create exFAT, a file system with no size limitations. The trouble with exFAT is that Microsoft charges a licensing fee in order to add support for it to your device. The result is that products that don\u2019t require a lot of data (e.g. video cameras) don\u2019t bother adding support for exFAT and can\u2019t read cards encoded in it. Therefore, they can\u2019t read SD card larger than 32GB. exFAT - Wikipedia It sometimes can be possible to trick phones into reading larger sized SD cards by formatting the card with special software. ",
+            "date": "Answered June 29, 2020",
+            "views": "78",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kjell Lindberg",
+                "href": "/profile/Kjell-Lindberg"
+            },
+            "answer_text": "The newer SD card has a different standard set. Older devices can just not communicate with them. We have SD, SDHC, SDXC, SDUC. Those standards are NOT upwards compatible, but they are backward compatible (mostly). They even have different connectors (number of pins) and they are in their native form electrical incompatible. You should have started by a better source then Quora, but do the read up. SD card - Wikipedia ",
+            "date": "Answered June 29, 2020",
+            "views": "40",
+            "upvotes": "0"
+        }
+    ]
+}

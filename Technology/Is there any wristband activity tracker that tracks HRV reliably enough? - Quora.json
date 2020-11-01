@@ -1,0 +1,74 @@
+{
+    "title": "Is there any wristband activity tracker that tracks HRV reliably enough? - Quora",
+    "tags": [
+        "Heart Rate Variability",
+        "Activity Tracker",
+        "Wristbands",
+        "Fitness Trackers",
+        "Existence Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marco Altini",
+                "href": "/profile/Marco-Altini"
+            },
+            "answer_text": "Edit 4 (6/2018): Yes. As of today the best choice is the Scosche Rhythm24 (powered by Valencell), which includes an HRV mode. The armband provides accurate RR intervals and also complies to standard protocols (Bluetooth 4.0 heart rate profile) so that you can use it with your favorite HRV app (e.g. HRV4Training ), similarly to how you would use a chest strap. An analysis of the data, limitations and additional considerations can be found in this blog post What about the Apple Watch? There is now a reliable workaround there is now a reliable workaround to use your Apple Watch to collect meaningful HRV data points first thing in the morning, and interpret them. Please refer to this article to learn more: How to make sense of your Apple Watch Heart Rate Variability (HRV) data For an overview of all the associated limitations, read this one: On Heart Rate Variability and the Apple Watch \u2013 Marco Altini \u2013 Medium \u2014- I will leave below the original answer as most of what is in there still applies (considerations on standards, technology, validations, use of the data). There is currently no wristband activity tracker that can measure heart rate variability (HRV) features reliably. The answer above assumes that: We are interested in well known HRV features (e.g. rMSSD) or in either raw data or RR intervals (peak to peak differences in beats), so that we can compute well known HRV features.We are interested in wristbands that have been validated with respect to other methods normally used in clinical practice (i.e. electrocardiography, or ECG). However, this does not mean that it is not feasible to measure HRV from the wrist. Most wrist-worn trackers are facing many challenges in providing reliable heart rate (HR) data, mainly due to motion artifacts. For this reason these trackers include heavy filtering which aims at dealing with artifacts and providing reliable HR data. Some of these trackers do work quite well in this context. However, the filtering and signal averaging necessary to provide reliable HR makes the data unusable for HRV analysis, since by definition we are interested in beat to beat variations that get highly reduced or canceled out by the averaging. Here is an example in which I compared a full ECG to a Polar chest strap and a mio alpha wristband, showing what I've just explained: Hardware for HRV: what sensor should you use? In terms of technology, however, it is feasible to use photoplethysmography (PPG) to extract HRV features. This has been validated multiple times in literature, see for example: A comparison of photoplethysmography and ECG recording to analyse heart rate variability in healthy subjects We can go as far as doing the same using only an iPhone camera, as in HRV4Training (here is our clinical validation with respect to chest straps and electrocardiography: Validation paper accepted for publication in the International Journal of Sports Physiology and Performance: PPG vs Polar H7 vs Electrocardiogram ). However, both the findings in literature and the current camera based solutions require the subject or user to be steady and limit movement as much as possible during the measurement. Thus, suffering as well from motion artifact problems, but with the advantage that spot check measurements can be feasibly taken while steady, since we are talking about short periods of time (typically 60 seconds). A few new wristbands are being released on the market, claiming to \"do HRV analysis\", something that per-se does not really mean much, since HRV is not a single number and can be quantified in many different ways. Thus, it is difficult to go beyond marketing claims when the manufacturer don't bother to explain much about what they are trying to sell. On the other hand, two types of devices are worth looking at. 1) the ones that provide RR intervals, i.e. beat to beat intervals, and allow others to compute HRV features based on the extracted data. An example are all wearable sensors that are compliant with the bluetooth low energy heart rate profile (e.g. a mio alpha, but not a fitbit). However, these devices should also be validated, just providing RR intervals does not mean that such RR intervals are correct (surprisingly enough), as the example above using the mio alpha shows. Still, providing RR intervals allows others to validated the ability of the sensor in reliably detecting beats and compute HRV. 2) another group of sensors that are worth looking at are the ones that provide raw PPG data. Very few sensors go as far as providing PPG data, however once PPG data is provided, techniques similar to the ones I've explained here: Heart Rate Variability using the phone's camera can be used to up-sample the signal, deal with motion artifact and other issues (see: Issues in heart rate variability (HRV) analysis: motion artifacts & ectopic beats ) and compute HRV reliably. I am aware of two sensors that claim to provide raw PPG data, one made by Empatica (the research version) and the Angel sensor: Angel Sensor - Open Mobile Health Wearable - which was supposed to ship sometime ago, but I haven't received it yet [see edit below].  Finally, I\u2019d like to stress two points, one around complexity of interpreting these data and one around the specific application you are interested in. HRV data is insightful but particularly challenging to interpret when acquired continuously and with limited contextual information. For parameters such as HRV, where basically anything affects the data (exercise, mental stress, circadian rhythm, food intake, social interactions, etc.), and artifacts due to motion, ectopic beats, noise in the measurement, are extremely frequent, spot check measurements taken under very consistent conditions (e.g. first thing in the morning, when you are affected the least by external factors, see: Summary of best practices for 60 seconds PPG measurements ) can provide more insights than continuous, de-contextualized data (here are some final examples on the relation between training intensity and HRV, for people interested in sports-related applications: Investigating the relation between training intensity and acute HRV changes in endurance and power sports: an analysis of HRV4Training users data as well as on the relation between eustress and HRV, see: Life Stress ). The application of interest should also be considered when making technological choices, for example if your interest is outside health-related applications or you do not particularly care about absolute values and comparisons with published literature or other people, but only at relative changes over time (e.g. during gaming), most sensors will do the job, meaning that even a sensor that provides much averaging can still capture some underlying changes during periods of higher or lower physiological stress.  Edit 1 (4/2016): we've tried unsuccessfully to get HRV out of the Angel Sensor, full post here: AngelSensor & HRV, a preliminary analysis Edit 2 (11/2016): the PulseOn wristband as of today is the best we could find in terms of providing reliable beat to beat intervals as well as allowing third party apps to link the sensor using the standard bluetooth low energy heart rate profile (which is necessary to validate the sensor), see details here: Heart rate variability analysis using the PulseOn wristband - there are still some limitations, as shown in the blog post it seems that for higher HRV values some data is lost, even though it is unclear if this is an issue with the bluetooth protocol or the sensor itself, however the improvement in accuracy with respect to other wristbands (e.g. mio alpha) is clear. For another comparison of different PPG devices, see this post: Comparison of different devices using photoplethysmography (PPG) to extract RR intervals: can we use them for HRV analysis? Edit 3 (6/2017): Yes. The Zoom HRV sensor provides accurate RR intervals and complies to standard protocols (Bluetooth 4.0 heart rate profile) so that you can use it with your favorite HRV app (e.g. HRV4Training) similarly to how you would use a chest strap. An analysis of the data, limitations and additional considerations can be found in this blog post: Wrist-based HRV analysis update (edit: this sensor does not seem to be on the market anymore). ",
+            "date": "Updated November 10, 2018",
+            "views": "258",
+            "upvotes": " View 64 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sachi Muchi",
+                    "user_href": "/profile/Sachi-Muchi"
+                },
+                {
+                    "user_id": "Arvind Nadar",
+                    "user_href": "/profile/Arvind-Nadar-6"
+                },
+                {
+                    "user_id": "Mayur Dhurpate",
+                    "user_href": "/profile/Mayur-Dhurpate-1"
+                },
+                {
+                    "user_id": "Ali Rhouse",
+                    "user_href": "/profile/Ali-Rhouse"
+                },
+                {
+                    "user_id": "Laura Ann",
+                    "user_href": "/profile/Laura-Ann-339"
+                },
+                {
+                    "user_id": "Ren\u00e9 Emanuelson",
+                    "user_href": "/profile/Ren\u00e9-Emanuelson"
+                },
+                {
+                    "user_id": "Drew Eckhardt",
+                    "user_href": "/profile/Drew-Eckhardt"
+                },
+                {
+                    "user_id": "Stephen Fortune",
+                    "user_href": "/profile/Stephen-Fortune"
+                },
+                {
+                    "user_id": "Adam Kolkman",
+                    "user_href": "/profile/Adam-Kolkman"
+                },
+                {
+                    "user_id": "Reins Grants",
+                    "user_href": "/profile/Reins-Grants"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Oliver Molbech",
+                "href": "/profile/Oliver-Molbech"
+            },
+            "answer_text": "after heart surgery my dad had to wear two white boxes and 8\u201312 electrodes. It was recorded over 14 days straight, 24/7. Aome medical startups try having three different sensors near the heart area for medical grade precision. The issue with wristbands, afaik, is that they are too far away from the heart. There are some consumer grade trackers that you put around your chest below bra level. They must be better. ",
+            "date": "Answered May 29, 2018",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

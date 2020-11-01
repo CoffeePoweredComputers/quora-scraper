@@ -1,0 +1,94 @@
+{
+    "title": "How many servers does a typical data center house? - Quora",
+    "tags": [
+        "Data Center Infrastructure Management (DCIM)",
+        "Data Center Design",
+        "Data Center Management"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Smith",
+                "href": "/profile/Mark-Smith-16"
+            },
+            "answer_text": "Short answer: on the order of tens of thousands of servers in a typical data center. More data and one way to think about it: The limiting factor for servers-per-datacenter is either the power or cooling. Square footage is not typically an issue, since it's pretty easy to get space a dozen miles outside of town where the land is cheap. Cooling is generally scaled with the power available in a building, too, so I'm going to talk about power to keep things simple. The number of servers you can power per megawatt varies greatly, and really depends on the data center generation and what's inside. Companies like Google, Facebook, and Apple (and others) build their own data centers and high-efficiency hardware, reducing the power and cooling cost enormously. This allows them to stack two or three times the number of servers per data center as a traditional, commodity building. It wouldn't surprise me to hear that Google has managed to break 100,000 servers in the 40MW complex they've built in Oregon. Assuming a server draws 300 watts of power (a reasonable ballpark guess), that's pushing 30MW of power. Bigger facilities exist, too. The commercial data centers I've used have ~10MW of power, but of course the efficiency of commodity hardware is much worse. A database machine (a dozen disks, dual CPU, etc) can consume 800 watts or more. A typical machine might use 400 watts. If you average everything out to 500 watts, you'll only fit 20,000 machines in a 10MW data center. This answer brushes over a lot of details (you can't fully load a data center's power feed, f.ex.), and certainly it is only based on locations I've had experience with (five Silicon Valley facilities). ",
+            "date": "Answered April 24, 2013",
+            "views": "173",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sumeet Multani",
+                    "user_href": "/profile/Sumeet-Multani"
+                },
+                {
+                    "user_id": "Luis Gualpa",
+                    "user_href": "/profile/Luis-Gualpa"
+                },
+                {
+                    "user_id": "Martin Va\u0148o",
+                    "user_href": "/profile/Martin-Va\u0148o"
+                },
+                {
+                    "user_id": "Daniel Sosa",
+                    "user_href": "/profile/Daniel-Sosa-6-1"
+                },
+                {
+                    "user_id": "Mus Hu",
+                    "user_href": "/profile/Mus-Hu"
+                },
+                {
+                    "user_id": "Christopher A. Harper",
+                    "user_href": "/profile/Christopher-A-Harper-1"
+                },
+                {
+                    "user_id": "Missy Johnson",
+                    "user_href": "/profile/Missy-Johnson-30"
+                },
+                {
+                    "user_id": "Mark Grechanik",
+                    "user_href": "/profile/Mark-Grechanik"
+                },
+                {
+                    "user_id": "Shane Greenstein",
+                    "user_href": "/profile/Shane-Greenstein"
+                },
+                {
+                    "user_id": "Brian Piercy",
+                    "user_href": "/profile/Brian-Piercy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matthew Huxtable",
+                "href": "/profile/Matthew-Huxtable"
+            },
+            "answer_text": "Lots. Definitions of the term \"data centre\" tend to vary. Some would label a small machine room with 2 or 3 racks a data centre, but that is not really a large facility by any stretch of the imagination. Most such installations are never going to hit the usual problems which data centres see at that scale, so I would hardly call it a data centre. Typical data centres typically contain a number of servers on the order of thousands. A common model for exceptionally large locations (\"data warehouses\") is to use specially constructed shipping containers, pre-fitted with electrical, network and cooling ducts, to house servers. This is used by Google and I believe Microsoft - among others - and is very popular, with each container often housing 1000 or more servers. If you have 10 or 20 of these, you have a lot of servers... and that's just the start. Have a watch of https://www.google.co.uk/url?sa=t&source=web&cd=1&ved=0CDwQtwIwAA&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dbs3Et540-_s&ei=X3J4UYb3DofKhAev_IGAAQ&usg=AFQjCNGQK-Gg4myTlJpiJIjmhaVW8Bcm6A&sig2=ciCs8I7KAB4r-PEC5v_TvA if you are interested. ",
+            "date": "Answered April 24, 2013",
+            "views": "102",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jesline Johnny",
+                    "user_href": "/profile/Jesline-Johnny"
+                },
+                {
+                    "user_id": "Daniel Sosa",
+                    "user_href": "/profile/Daniel-Sosa-6-1"
+                },
+                {
+                    "user_id": "Brian Piercy",
+                    "user_href": "/profile/Brian-Piercy"
+                },
+                {
+                    "user_id": "Ashish Gupta",
+                    "user_href": "/profile/Ashish-Gupta-32"
+                },
+                {
+                    "user_id": "Vishal Bandre",
+                    "user_href": "/profile/Vishal-Bandre"
+                }
+            ]
+        }
+    ]
+}

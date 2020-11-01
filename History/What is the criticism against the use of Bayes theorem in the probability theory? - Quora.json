@@ -1,0 +1,58 @@
+{
+    "title": "What is the criticism against the use of Bayes theorem in the probability theory? - Quora",
+    "tags": [
+        "Critical Theory",
+        "Bayes' Theorem",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Johnston",
+                "href": "/profile/David-Johnston-147"
+            },
+            "answer_text": "Bayesian analysis is incredibly useful but it\u2019s not magical. It is useful when you have to choose between sets of models of how things are based on observable data. But you run into problems that are seemingly unsuited for Bayesian analysis in which you end up in a philosophical muddle without making much progress. Consider even the case of identifying an unfair die. We know what a fair die is. It should roll 1..6 with uniform (1/6 th) probability. Given me a series of rolls and I can compute the likelihood of that data. But what about an unfair die? How do I evaluate the likelihood of that? That\u2019s a problem. A die can be unfair in infinite numbers of ways. In fact, any die created by humans is not going to be perfect. If one were to give a prior probability to a perfectly fair die it would be zero. So any Bayesian analysis would result in you saying that no die is fair. That is right but actually useless since it didn\u2019t use the data at all. You have just made a circular argument. What would a practical person do if they were working in a dice factory and had to throw out unfair dice? Let\u2019s say that for each die, you had a data set consisting of 100 rolls. You could compute the fair-die likelihood for each. The practical person would probably plot of a histogram of these values. And hopefully the distribution would be bimodal with a sharp peak representing fair dice and a long tail or perhaps other clusters indicating various manufacturing failure modes. Depending on what you see, you would make some action such as applying a threshold and throwing out dice with a likelihood below that threshold. This is a reasonable thing to do. Note however that it violates the principles of Bayesian reasoning. In Bayesian reasoning, you are supposed to come up with the models before you observe the data. If you observe the histogram and only then decide what the model is, you have not performed a Bayesian analysis. Scientists do this all the time. In fact, Bayesian analysis can never really be done in any pure sense. You can only come up with models by having some information about the things in question which can only come from data in combination with inherently unjustifiable assumptions about how it relates to other data. So if humans do Bayesian statistics either formally or intuitively, it\u2019s not a complete way of bootstrapping knowledge and learning. It\u2019s one side of a process of coming to decisions but the other side, model formation, is still a mystery. ",
+            "date": "Answered March 7, 2019",
+            "views": "14",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janne Wilhelm",
+                    "user_href": "/profile/Janne-Wilhelm-2"
+                },
+                {
+                    "user_id": "Pascal Bercker",
+                    "user_href": "/profile/Pascal-Bercker"
+                },
+                {
+                    "user_id": "Yonathan Tate",
+                    "user_href": "/profile/Yonathan-Tate"
+                },
+                {
+                    "user_id": "Clive Hunt",
+                    "user_href": "/profile/Clive-Hunt"
+                },
+                {
+                    "user_id": "Roger Hood",
+                    "user_href": "/profile/Roger-Hood-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mikael Rusin",
+                "href": "/profile/Mikael-Rusin"
+            },
+            "answer_text": "I think the problem stems from perception, rather than factual based ideas. I think Alon Amit, in this thread, made a nice summary to the subject in question - But i would like to add my own spin, on the subject.  Most of the time, in terms of Data analytics and Theorems overall, be that physics or otherwise - People have a severe issue, a deep running one - The application of their own emotions unto mathematical predictions. Assuming that we let the Axioms be to which we every day call our normal \u2018numeral system\u2019, you would agree, that: 1 + 1 = 2 Right? Here, is the issue. The reason a lot of people, will agree upon this - is just that, it\u2019s \u2018commonly agreed upon\u2019. Few, will take the time or have the knowledge, to actually have mathematical proof in terms of proving, that 1 + 1, is indeed, 2. Now, assume, that we something that is akin to Bayes theorem. The issue with such high levels of mathematics, is a ancient one. Someone predicted mathematically, that something was one way - and another said \u201cBollocks\u201d, to that. Who wins out? Well, it is on the person who called \u201cBollocks\u201d, to disprove the Theorem. Of course. Because, Science and Theories, are not derived from opinion. They are not, derived, from the idea of that, \u201cI think X about thing\u201d. You don\u2019t \u201cthink\u201d anything about Gravity, for instance - You can mathematically describe it, and perhaps even attempt to disprove it. But, you don\u2019t say - \u201cGravity? That\u2019s pure BS, i tell you! It\u2019s sheer bollocks!\u201d and get taken very seriously, in the scientific community. ",
+            "date": "Answered November 19, 2017",
+            "views": "812",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Holden Rohrer",
+                    "user_href": "/profile/Holden-Rohrer"
+                }
+            ]
+        }
+    ]
+}

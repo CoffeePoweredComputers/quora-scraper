@@ -1,0 +1,63 @@
+{
+    "title": "What is an 'improper' prior and when is it used in Bayesian Inference? - Quora",
+    "tags": [
+        "Bayesian Inference",
+        "Mathematics and Machine Learning",
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Chang",
+                "href": "/profile/Jonathan-Chang"
+            },
+            "answer_text": "An improper prior just means that the prior need not be a proper distribution, i.e., it doesn't integrate to one (it doesn't even need to be finite).   It turns out that the for many computations, substituting an improper prior for a proper one still works out.  For example, consider a naive Bayes classifier: p(Y | X) \\propto p(X | Y) * p(Y) It is evident that p(Y) just serves as a weighting function and you are free to replace it with arbitrary weights: p(Y | x) \\propto p(X | Y) * w(Y) and your result still makes sense. ",
+            "date": "Answered January 10, 2013",
+            "views": "91",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alberto Bietti",
+                    "user_href": "/profile/Alberto-Bietti"
+                },
+                {
+                    "user_id": "Jiwei He",
+                    "user_href": "/profile/Jiwei-He-1"
+                },
+                {
+                    "user_id": "Nguyen Thanh",
+                    "user_href": "/profile/Nguyen-Thanh-15"
+                },
+                {
+                    "user_id": "Edward Wong",
+                    "user_href": "/profile/Edward-Wong-22"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Kenotron-Xl"
+                },
+                {
+                    "user_id": "Ke Zhang",
+                    "user_href": "/profile/Ke-Zhang-49"
+                },
+                {
+                    "user_id": "Robert J. Kolker",
+                    "user_href": "/profile/Robert-J-Kolker"
+                },
+                {
+                    "user_id": "Jessica Verena Schulze",
+                    "user_href": "/profile/Jessica-Verena-Schulze"
+                },
+                {
+                    "user_id": "Mateesh Bhave",
+                    "user_href": "/profile/Mateesh-Bhave"
+                },
+                {
+                    "user_id": "Shijing Si",
+                    "user_href": "/profile/Shijing-Si"
+                }
+            ]
+        }
+    ]
+}

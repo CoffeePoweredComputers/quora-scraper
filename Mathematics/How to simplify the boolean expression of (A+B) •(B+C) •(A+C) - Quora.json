@@ -1,0 +1,131 @@
+{
+    "title": "How to simplify the boolean expression of (A+B) \u2022(B+C) \u2022(A+C) - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sangramjit Chakraborty",
+                "href": "/profile/Sangramjit-Chakraborty"
+            },
+            "answer_text": "Let us first define some basic formulas of boolean algebra that we're gonna need for the solution (X+X)=X(X.X)=X(X+1)=11.X=XNow let us get to the problem (A+B)(B+C)(A+C) =(AB+AC+BC+BB)(A+C) {Multiplying the first two terms} =(AB+AC+BC+B)(A+C) {Using formula 2} =[AB+AC+B(C+1)](A+C) {Taking the common terms} =(AB+B+AC)(A+C) {Using formulas 3 and 4} =(AAB+ABC+AB+BC+AAC+ACC) =(AB+ABC+AB+BC+AC+AC) {Using formula 2} =(AB+BC+AC+ABC) {Using formula 1} =[AB+BC+AC+ABC+ABC+ABC] {Using the inverse of formula 1} =(AB+ABC+BC+ABC+AC+ABC) =[AB(C+1)+BC(A+1)+AC(B+1)] {Taking the common terms} =(AB+BC+AC) {Using formulas 3 and 4} You can keep it in this form or change it a bit more to get A(B+C)+BC ",
+            "date": "Answered October 1, 2018",
+            "views": "104",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aftab Alam",
+                    "user_href": "/profile/Aftab-Alam-1849"
+                },
+                {
+                    "user_id": "Krishna Madar",
+                    "user_href": "/profile/Krishna-Madar-6"
+                },
+                {
+                    "user_id": "Surajit Paul",
+                    "user_href": "/profile/Surajit-Paul-28"
+                },
+                {
+                    "user_id": "Ashutosh Baunthiyal",
+                    "user_href": "/profile/Ashutosh-Baunthiyal-1"
+                },
+                {
+                    "user_id": "Jo Waru",
+                    "user_href": "/profile/Jo-Waru"
+                },
+                {
+                    "user_id": "Prapti Borthakur",
+                    "user_href": "/profile/Prapti-Borthakur"
+                },
+                {
+                    "user_id": "Nikhil Mundra",
+                    "user_href": "/profile/Nikhil-Mundra-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jayanta Mukherjee",
+                "href": "/profile/Jayanta-Mukherjee-49"
+            },
+            "answer_text": "Y = (A+B).(B+C).(C+A) will give \u20181\u2019 only when all (A+B), (B+C) and (C+A) give \u20181\u2019 each; i.e., when at least two among A, B and C are \u20181\u2019. A=0; B=0; C=0\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=0 A=0; B=0; C=1\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=0 A=0; B=1; C=0\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=0 A=0; B=1; C=1\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026Y=1 A=1; B=0; C=0\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=0 A=1; B=0; C=1\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=1 A=1; B=1; C=0\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=1 A=1; B=1; C=1\u2026\u2026\u2026\u2026\u2026\u2026\u2026..Y=1 ",
+            "date": "Answered September 22, 2018",
+            "views": "39",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Indresh Mukherjee",
+                    "user_href": "/profile/Indresh-Mukherjee"
+                },
+                {
+                    "user_id": "Khaja Mainuddin",
+                    "user_href": "/profile/Khaja-Mainuddin-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anupriya Choudhary",
+                "href": "/profile/Anupriya-Choudhary-1"
+            },
+            "answer_text": "[AB+ AC+ BB + BC] (A+C)=> [AB+AC+B+BC](A+C)=> [AB+AC+B(1+C)](A+C). NOTE: X.X = X, 1+X= 1, X+X= X, X.Y =Y.X [AB+AC+B](A+C)=> [B(1+A)+ AC](A+C)=> [B+AC](A+C)=> BA+BC+AC.A+AC.C Which can be further broken down as: BA+BC+AC+AC => BA+BC+AC Which can also be written as: AB+BC+AC ",
+            "date": "Answered October 2, 2018",
+            "views": "33",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Saurabh Kumar",
+                    "user_href": "/profile/Saurabh-Kumar-84"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ranjith Kumar",
+                "href": "/profile/Ranjith-Kumar-912"
+            },
+            "answer_text": "  So it's B.(A+C) + A.C ",
+            "date": "Answered February 13, 2017",
+            "views": "42",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Naman Joshi",
+                    "user_href": "/profile/Naman-Joshi-71"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anudeep Reddy",
+                "href": "/profile/Anudeep-Reddy-107"
+            },
+            "answer_text": "(a+b)(b+c)(c+a)=(ab+b+ca+bc)(c+a) (as bb=b) =(b(1+a+c)+ac)(c+a)=(b+ac)(c+a) as(1+anything=1) =bc+ac+ab+ac=ab+bc+ca (as a+a=a) ",
+            "date": "Answered October 1, 2018",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "First see in POS form,  So it can not be simplified further. Now in SOP form, it will be like  Hope it helps. ",
+            "date": "Answered May 8, 2020",
+            "views": "464",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Anugya Sharma",
+                "href": "/profile/Anugya-Sharma-10"
+            },
+            "answer_text": "3 ABC+ A^2C +AC^2+ 2B^2A+ A^2B ",
+            "date": "Answered October 2, 2018",
+            "views": "921",
+            "upvotes": "0"
+        }
+    ]
+}

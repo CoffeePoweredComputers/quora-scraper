@@ -1,0 +1,35 @@
+{
+    "title": "How does Perl work on XAMPP? - Quora",
+    "tags": [
+        "XAMPP",
+        "Perl (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rana Banam",
+                "href": "/profile/Rana-Banam"
+            },
+            "answer_text": "XAMPP is a user-friendly installer for your Web- and DB-server on a Windows host. The \"A\" means [A]pache Web-server, which leads directly into the main problem: there is, to my knowledge, no usable mod_perl binary for Apache 2.4.x, unfortunately. But you can, of course, use the (included) Perl interpreter in CGI mode, you put your Perl script into the /cgi-bin/ directory and write a shebang in the first line of your script: #!/XAMPP/perl/bin/perl.exe\u00a0# (Make sure this path corresponds to your Perl location!)\u00a0\u00a0# your script here:\u00a0But with mod_perl, you can make use of Perl in a Web-server environment in a very powerful way, this is (after 2011/Apache 2.4.x) only possible with Linux-like operating systems.  With mod_perl you have direct access on any aspect of the HTTP request through the Apache-API, Perl stays resident in the HTTP-server process. You can play with that by installing a Linux in a virtual machine, running on Windows. Bottom line: in Windows, you can use Perl in CGI-mode, but not from within Apache through mod_perl. Stackoverflow covers this question too. ",
+            "date": "Answered April 13, 2016",
+            "views": "32",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Laus",
+                    "user_href": "/profile/Michael-Laus-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "ASHISH GUPTA",
+                "href": "/profile/ASHISH-GUPTA-1029"
+            },
+            "answer_text": "Hi, XAMPP basically used when use windows operating system. Firstly you need to download - Active Perl , also you use strawberry Perl  . Then you install Xampp server .  You need to write \"#!c:\\Perl64\\bin\\perl\" perl script shebang line for run perl script. Add handler on httpd.conf file for run perl cgi script/application. AddHandler cgi-script .cgi .pl  Please set that thing. Hope you are getting answer to your query. Thanks, Ashish ",
+            "date": "Answered May 5, 2016",
+            "views": "22",
+            "upvotes": "0"
+        }
+    ]
+}

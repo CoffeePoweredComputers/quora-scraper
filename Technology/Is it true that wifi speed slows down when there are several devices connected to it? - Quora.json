@@ -1,0 +1,85 @@
+{
+    "title": "Is it true that wifi speed slows down when there are several devices connected to it? - Quora",
+    "tags": [
+        "Wireless Technology",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jim Grup\u00e9",
+                "href": "/profile/Jim-Grup\u00e9"
+            },
+            "answer_text": "Is it true that wifi speed slows down when there are several devices connected to it? There are several effects, which various answers have addressed individually, and I suspect with too much complexity in some cases. I\u2019ll describe them in order of major impact: (1) WiFi uses the Ethernet protocol. Ethernet is a contention protocol, meaning that anyone can transmit at any time, and the protocol has a mechanism to resolve errors when two or more transmissions \u201ccollide\u201d, i.e., occur at the same time. That mechanism is for each sender wait a random amount of time and then re-transmit. Because both wait a random amount of time, the chance of them colliding again is very small. BUT\u2026if those users are transmitting a lot, they could be colliding a lot. And if there are more users, there will be even more collisions. The problem is that since the solution is to re-transmit, that means there will be even more traffic and more collisions. The net result is that as soon as you have more than one user, the maximum bandwidth drops to 40% of what it was with only one user. You lose 60%. Anything more than that, and the number of re-transmissions is so great that the network is choked with re-transmissions and no one gets anything. (2) NOW, with 40% of the original bandwidth, you have to divide that by the number of users to estimate the average \u201cshare\u201d each one gets. If 10 people share the SSID, each user only gets one-tenth of the available bandwidth. (3) Additionally, there is a certain amount of overhead associated with maintaining a connection in a router. So, even if a user is not transmitting any data, they are using up some of the capacity. It\u2019s a small percentage, but its still a loss that is proportional to the number of connected users. Of course, there are other losses, but they are not dependent on the number of connected devices. Overall signal loss and interference from ambient noise. Microwave ovens Car engines. Bluetooth speakers. Power lines. Sun spots. They all cause noise that reduces the effective bandwidth of a WiFi radio from its \u201cideal\u201d.Competing channels. At 2.4GHz, there are only 11 channels used in the USA and all but 3 overlap. If someone else nearby has chosen to use the same channel, you might lose more than half the bandwidth.Insufficient port or cpu capacity. We tend to assume that the cpu and port can handle the speed, but now that WiFi speeds can get up into the gigabit range, that is not a safe assumption.Similarly, the type of data could be a limitation. For example, VOIP uses very small packets which means that router has to do a lot more work. So even a router that works fine with typical data streams might overload if it has to handle voice calls.",
+            "date": "Answered September 20, 2019",
+            "views": "135",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Chanuga Jayathilaka",
+                    "user_href": "/profile/Chanuga-Jayathilaka"
+                },
+                {
+                    "user_id": "Andris Firsovs",
+                    "user_href": "/profile/Andris-Firsovs"
+                },
+                {
+                    "user_id": "Josh Long",
+                    "user_href": "/profile/Josh-Long-57"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Glyn Davies",
+                "href": "/profile/Glyn-Davies-20"
+            },
+            "answer_text": "Having more devices CONNECTED to WiFi doesn\u2019t slow it down very much. The more devices that are downloading or transferring data over that WIFI DOES slow it down as the router can only deliver a fixed amount of data per second and that has to be shared amongst all users. The same thing happens if more users are connected via ethernet cables as well. Having more devices connected doesn\u2019t slow it down significantly but the more devices that are actively using it at the same time the slower it gets. While you are READING a web page or typing in facebook etc you are not transferring a significant amount. if you are downloading data then you are and while a web page is being downloaded and displayed you are using data. If you are watching a video on-line then you are transferring a lot of data. In most cases connecting devices via a cable is significantly faster than connecting them via WIFI. If you have WIFI capable of 150mbps then this is the HIGHEST transfer rate that you can get at any time and this is split between the WIFI devices connected to the WIFI. If the same WIFI router has 4 gigabit ethernet connectors then the speed across each of these connectors is 1000mbps so much higher. With WIFI the further you are away from the router the slower the data transfer rate until eventually, if you move far enough away, the signal drops out and you get ZERO transfer rate. Also if you are on the other side of one or more walls etc then they ALSO slow down WIFI. With an ethernet wired connection the speed is the same until you exceed the maximum length ethernet cable which I think is around 100m. longer cables than that will generally not work at all although you can use one 100m cable then plug in a network switch and plug another 10m cable into that switch also and achieve a 200m because the network switch receives the data, partly decodes it, then reencodes it and sends it out again as a new, clean signal. The maximum speed you get is also controlled by the speed of your internet connection. If you have a 150mbps WIFI connection and your device is very close to the router so you actually GET that speed you can\u2019t download faster than your internet speed which might be 4mbps if you have an ADSL connection or in my case I have a 25mbs fibre to the node connection with VDSL for the last 700m to my home. So the fastest speed I can get via WIFI is only 25mbps even with faster WIFI devices. That 25mbps download speed also has to be shared amongst all of the devices using the connection regardless of whether they are via WIFI or via ethernet cable. Where having faster network connections is handy is when you are transferring information from one device in your network to another device in your network. In these cases the 1000mbps wired ethernet connection is obviously MUCh faster than a WIFI connection with a maximum speed of 150mbps. I keep talking about 150mbps WIFI because that is probably the most common speed out there but there are WIFI routers and WIFI connected devices that CAN go much faster but for most practical cases a wired connection is faster and certainly MUCH more reliable. ",
+            "date": "Answered February 1, 2018",
+            "views": "458",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sebasti\u00e1n Restrepo",
+                    "user_href": "/profile/Sebasti\u00e1n-Restrepo-3"
+                },
+                {
+                    "user_id": "Dominic Inglis",
+                    "user_href": "/profile/Dominic-Inglis"
+                },
+                {
+                    "user_id": "Azaliah Yuboc",
+                    "user_href": "/profile/Azaliah-Yuboc"
+                },
+                {
+                    "user_id": "Shrey Shah",
+                    "user_href": "/profile/Shrey-Shah-59"
+                },
+                {
+                    "user_id": "Sirgaliev Ali",
+                    "user_href": "/profile/Sirgaliev-Ali"
+                },
+                {
+                    "user_id": "Ma Anya Solomon",
+                    "user_href": "/profile/Ma-Anya-Solomon"
+                },
+                {
+                    "user_id": "Drew Hartley",
+                    "user_href": "/profile/Drew-Hartley-7"
+                },
+                {
+                    "user_id": "Berry Occean",
+                    "user_href": "/profile/Berry-Occean"
+                },
+                {
+                    "user_id": "Aditya Kulshrestha",
+                    "user_href": "/profile/Aditya-Kulshrestha-21"
+                },
+                {
+                    "user_id": "Jad Mogaizel",
+                    "user_href": "/profile/Jad-Mogaizel"
+                }
+            ]
+        }
+    ]
+}

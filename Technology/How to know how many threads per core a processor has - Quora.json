@@ -1,0 +1,94 @@
+{
+    "title": "How to know how many threads per core a processor has - Quora",
+    "tags": [
+        "Threading (computer science)",
+        "Central Processing Units",
+        "Processors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": " If you\u2019re talking about hardware-supported threads (Intel\u2019s Hyperthreading, for example), you can look up the architecture of the specific chip you\u2019re running. Or, if you know the number of physical cores, OS tools can usually reveal the number of virtual cores in the system. For example, the Windows task manager on my laptop here will show eight CPUs, but I actually just have four cores, each of which has two hardware threads. That\u2019s certainly not the only way to do it. And there are processors with up to eight hardware threads (Dave Haynie's answer to Is it possible for a CPU core to have three or four threads and how will this affect performance?). But you\u2019re not so likely to encouter them, unless you work in a data center. As far as software threads go, every [virtual] CPU has one. Software multithreading is time-division multiplexing of a CPU resource. A thread runs for while, then there\u2019s some event \u2014 a wait on an I/O resource, a system-level timer \u2014 that signals a task swap. The OS looks at the pending task queue for priorities, and schedules the next N threads, one per virtual core. But until the thread is actually running, it exists as a chunk of memory somewhere, it\u2019s not \u201con\u201d any core. It\u2019s possible, but rare, for a thread to specifically be assigned an \u201caffinity\u201d for one specific core in a system. One example would be a virtual machine \u2014 there are very good reasons to assign a VM to just one core. Some multiprocessing computer architectures are not fully symmetric. For example, early Macintosh multiprocessing systems had only one CPU that could handle interrupts. So all interrupt processing had to happen on that one CPU, no matter how many cores you actually had. In software terms, there are other reasons. When you say \u201cthread\u201d in software, you\u2019re usually talking about the smallest unit of code execution. A thread pretty much just deals with the context of the CPU itself. Versus \u201cprocess\u201d, which includes resource management and tracking of I/O allocations, MMU contexts, etc. I can write a multi-process application on UNIX-based systems using the fork() function, which is really easy to use (it splits a process into two processes), but uses lots of resources. I can use threads on most OSs, which are much lower in overead. However, every thread within a program runs in the same process context. So a smart scheduler can realize that when the next round of scheduling comes up, and swap new threads into the same process context, which means the same CPU. No requirement for that, just an optimization to shrink the overhead of scheduling. ",
+            "date": "Answered September 25, 2016",
+            "views": "629",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sai Koushik",
+                    "user_href": "/profile/Sai-Koushik-28"
+                },
+                {
+                    "user_id": "Vin Mar",
+                    "user_href": "/profile/Vin-Mar-3"
+                },
+                {
+                    "user_id": "Satheesh Palanisamy",
+                    "user_href": "/profile/Satheesh-Palanisamy-3"
+                },
+                {
+                    "user_id": "Kanishk Jain",
+                    "user_href": "/profile/Kanishk-Jain"
+                },
+                {
+                    "user_id": "Ravi Loganathan",
+                    "user_href": "/profile/Ravi-Loganathan"
+                },
+                {
+                    "user_id": "Martin Packer",
+                    "user_href": "/profile/Martin-Packer-1"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Bobby Newman",
+                    "user_href": "/profile/Bobby-Newman-18"
+                },
+                {
+                    "user_id": "Anthony Rey",
+                    "user_href": "/profile/Anthony-Rey-8"
+                },
+                {
+                    "user_id": "Mona Gamal",
+                    "user_href": "/profile/Mona-Gamal-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Fletch Hasues",
+                "href": "/profile/Fletch-Hasues"
+            },
+            "answer_text": "First one would determine the make and model of one\u2019s CPU being used; that\u2019s going to vary based on your Operating System. Task Manager gives this information in Windows\u201cdmidecode\u201d \u201ccat /proc/cpuinfo\u201d or \u201clscpu\u201d can give this in Linux\u201csysctl -n machdep.cpu.brand_string\u201d can give this info in MacOSX\u201cpsrinfo\u201d in SolarisObviously, find tools of choice for his or her operating system to get the model. Next, take that make and model and cross reference it on the maker\u2019s documentation. It will tell you the number of threads that the CPU can have. The operating system can often give this information directly, depending if the operating system has support for utilizing said threads. In Linux, for example, if the hyperthreading scheduler is disabled, one would not be able to utilize these virtual CPUs. Anyway, in Linux if I use \u201ccat /proc/cpuinfo\u201d and I see that it states in any of the read outs of the detected CPUs has a reading of \u201ccpu cores\u201d and there are more CPUs detected than that value, those are \u201cthreads\u201d and not \u201ccores\u201d. However, to simply get this information in Linux: lscpu \u2014all \u2014extended\u00a0CPU NODE SOCKET CORE L1d:L1i:L2:L3 ONLINE MAXMHZ MINMHZ\u00a00 0 0 0 0:0:0:0 yes 3300.0000 1600.0000\u00a01 0 0 1 1:1:1:0 yes 3300.0000 1600.0000\u00a02 0 0 0 0:0:0:0 yes 3300.0000 1600.0000\u00a03 0 0 1 1:1:1:0 yes 3300.0000 1600.0000\u00a0Note the fourth row indicates what \u201ccore\u201d the detected CPU is running. So there are four threads, two per core. In MacOS, this would work: sysctl -n machdep.cpu.core_count\u00a04\u00a0sysctl -n machdep.cpu.thread_count\u00a08\u00a0This states I have four cores and eight total threads, so there are two threads per core. This is easy to determine in Solaris utilizing: \u201cpsrinfo -pv\u201d$ psrinfo -pv\u00a0The UltraSPARC-IV physical processor has 2 virtual processors (8, 520)\u00a0The UltraSPARC-IV physical processor has 2 virtual processors (9, 521)\u00a0The UltraSPARC-IV physical processor has 2 virtual processors (10, 522)\u00a0The UltraSPARC-IV physical processor has 2 virtual processors (11, 523)\u00a0This is indicating that that out of the four physical processors, there are two threads per core. Additionally, if \u201cpsrinfo -p\u201d is ran, it will give an integer to indicate the number of physical processors in a host. The question needs to be a bit clear. I would need to know if it is asking based on having that model and information handy, or if it is asking if the CPU is installed and running on a specific operating system. ",
+            "date": "Answered August 31, 2017",
+            "views": "29",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "\u60f3 \u674e",
+                    "user_href": "/profile/\u60f3-\u674e-18"
+                },
+                {
+                    "user_id": "Sushant Amin",
+                    "user_href": "/profile/Sushant-Amin-2"
+                },
+                {
+                    "user_id": "Israel Adura",
+                    "user_href": "/profile/Israel-Adura"
+                },
+                {
+                    "user_id": "Omar Alaadin",
+                    "user_href": "/profile/Omar-Alaadin"
+                },
+                {
+                    "user_id": "Jordan Madrigal",
+                    "user_href": "/profile/Jordan-Madrigal"
+                }
+            ]
+        }
+    ]
+}

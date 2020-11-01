@@ -1,0 +1,48 @@
+{
+    "title": "Do seven people have keys with the power to restart the World Wide Web in the event of a catastrophic event? - Quora",
+    "tags": [
+        "Catastrophes",
+        "History of the Internet",
+        "Keys",
+        "Deep Web",
+        "World Wide Web",
+        "Apocalyptic and Post-Apocalyptic Hypothetical Scenarios",
+        "The Internet",
+        "Technology",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jesse Pollard",
+                "href": "/profile/Jesse-Pollard-1"
+            },
+            "answer_text": "Do seven people have keys with the power to restart the World Wide Web in the event of a catastrophic event? Nope. All it takes is a known name service for hosts you don\u2019t know. It might take time for the propagation of those references (between days to weeks), but anyone can do it. DNS is designed as a distributed tree. Each registrar only has references for direct references. Then those references may reference other references\u2026 The ROOT references have some 14+ base references, each of those contains backup references (one or more). And anyone can make a base reference just by copying one of these. It won\u2019t be an official reference, but it will work as soon as anyone else adds it as an official reference. I have done this once. Later when the PHBs in charge of DoD networking realized they needed one - mine was merged into theirs, and I quit. It turned out there was no \u201cnavy.mil\u201d domain, so I created it, and then added a subdomain that belonged to the organization I was working for. I included references to other known top level servers (so queries for outside names worked just fine). External references to us didn\u2019t work - for for the basic goals, it didn\u2019t have to. If they wanted it to work (some did) they could add my server as authoritative. I didn\u2019t try to claim any other domains, and when the DoD and Navy decided that the Navy should have its own entry in the .mil domain they started\u2026 and found several instances of bases creating their own \u201cnavy.mil\u201d domain just like I did. These were merged together, along with official requests for bases to be added, and poof. another tree added to DNS. All I did was remove the definition \u201cnavy.mil\u201d from my name server. DNS is a VOLUNTARY membership. If you want world wide recognition of your host, then you sign up with a registrar that already has world wide membership. Basically, that membership is just the list of \u201cdns root servers\u201d that is distributed with the code for a DNS server. It is very easy to add a reference to that file. There are alternate DNS trees (generally referred to as \u201cshadow DNS\u201d), which has such alternate registrars. ANYONE can set one up. But for remote users to use it requires a reference to YOUR server. ",
+            "date": "Answered May 6, 2019",
+            "views": "33",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Harold Slagle",
+                    "user_href": "/profile/Harold-Slagle"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Scott Michael",
+                "href": "/profile/Scott-Michael-10"
+            },
+            "answer_text": "No, just Bill Gates and a fellow named Fred who works as a janitor at a Chick-fil-A in Gatlinburg TN. Hope this helps. ",
+            "date": "Answered May 6, 2019",
+            "views": "35",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                }
+            ]
+        }
+    ]
+}

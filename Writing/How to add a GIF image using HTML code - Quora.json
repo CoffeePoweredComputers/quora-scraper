@@ -1,0 +1,81 @@
+{
+    "title": "How to add a GIF image using HTML code - Quora",
+    "tags": [
+        "Animated GIFs",
+        "GIF (image file format)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jon Wong",
+                "href": "/profile/Jon-Wong-66"
+            },
+            "answer_text": "To embed any image using the HTML markup language you can use the following code: <img src=\"example.gif\" alt=\"description of gif\" />\u00a0This applies to any web image format. JPG/JPEG/PNG/GIF Remember to respect file locations, if you\u2019re image is located at the root of your domain then you would do <img src=\"/example.gif\" alt=\"description of gif\" />\u00a0if you don\u2019t know, you can use different techniques. with full file system path. <img src=\"/home/user/www/website/example.gif\" alt=\"description of gif\" />\u00a0with nested directories <img src=\"../example.gif\" alt=\"description of gif\" />\u00a0or <img src=\"../img/example.gif\" alt=\"description of gif\" />\u00a0Each ../ represents a sub directory, if the image is in /home/user/www/website/img/ and your html file is in /home/user/www/website/blog/post then the above would check for the image one directory deep then add /img/example.gif to the html code. ",
+            "date": "Answered November 18, 2017",
+            "views": "269",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shraddha Ghadge",
+                    "user_href": "/profile/Shraddha-Ghadge-7"
+                },
+                {
+                    "user_id": "Deepanjali Rukma",
+                    "user_href": "/profile/Deepanjali-Rukma"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kim Cho",
+                "href": "/profile/Kim-Cho-1"
+            },
+            "answer_text": "If you\u2019re asking how to add a GIF image to a site using HTML code: <img src=\"foo.gif\" />\u00a0If you\u2019re asking how to animate a sequence of images without converting them to a GIF image then you\u2019ll need to rely on something other than HTML: <style>\u00a0@keyframes foo {\u00a0\t0% { content: url(image1.jpg); }\u00a0\t25% { content: url(image2.jpg); }\u00a0\t50% { content: url(image3.jpg); }\u00a0\t75% { content: url(image4.jpg); }\u00a0\t100% { content: url(image5.jpg); }\u00a0}\u00a0\u00a0.bar {\u00a0\tanimation-name: foo;\u00a0\tanimation-duration: 3s;\u00a0\tanimation-iteration-count: infinite;\u00a0\tmax-height: 500px;\u00a0\tmax-width: 90vw;\u00a0}\u00a0</style>\u00a0<img class=\"bar\" />\u00a0I\u2019d recommend converting your sequence of images into a GIF since not all browsers may support CSS animations. The easiest method of creating a near lossless GIF from an image sequence is using FFMPEG to convert the sequence of images into a video file and then converting the video file into a GIF: ffmpeg -r 2 -start_number 1 -i \"%cd%\\image%d.jpg\" output.mp4\u00a0ffmpeg -y -i output.mp4 -vf fps=2,scale=-1:-1:flags=lanczos,palettegen palette.png\u00a0ffmpeg -i output.mp4 -i palette.png -lavfi \"fps=2,scale=-1:-1:flags=lanczos [x]; [x][1:v] paletteuse\" -y output.gif\u00a0Then you can use the 1st method for HTML. ",
+            "date": "Answered November 18, 2017",
+            "views": "528",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abd Mukhsit",
+                    "user_href": "/profile/Abd-Mukhsit"
+                },
+                {
+                    "user_id": "Duy Tr\u1ea7n",
+                    "user_href": "/profile/Duy-Tr\u1ea7n-54"
+                },
+                {
+                    "user_id": "Ik Emmanule",
+                    "user_href": "/profile/Ik-Emmanule"
+                },
+                {
+                    "user_id": "Adwesh Penmetsa",
+                    "user_href": "/profile/Adwesh-Penmetsa"
+                },
+                {
+                    "user_id": "Mason McLeod",
+                    "user_href": "/profile/Mason-McLeod-1"
+                },
+                {
+                    "user_id": "Deca Minions",
+                    "user_href": "/profile/Deca-Minions"
+                },
+                {
+                    "user_id": "Gaurav Arora",
+                    "user_href": "/profile/Gaurav-Arora-154"
+                },
+                {
+                    "user_id": "Muslim",
+                    "user_href": "/profile/Muslim-16"
+                },
+                {
+                    "user_id": "Matt Winchester",
+                    "user_href": "/profile/Matt-Winchester-4"
+                },
+                {
+                    "user_id": "Timi Ogunkeye",
+                    "user_href": "/profile/Timi-Ogunkeye"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "title": "How to determine R1 in the voltage divider circuit - Quora",
+    "tags": [
+        "Circuits",
+        "Voltage",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Loring Chien",
+                "href": "/profile/Loring-Chien"
+            },
+            "answer_text": "Assuming you have two resistors, R1 being the lower and R2 being the upper resistor, here\u2019s how I might do it. And Vin. First determine how much current you want to expend on the divider. It should be at least 100 times any current being drawn off the junction to minimize any distortion of the value. But it can\u2019t be too high\u2026 or you\u2019ll waste a lot of power. I\u2019d choose something like I = 1 mA. Now you want Vj the voltage at the junction, developed at R1 with current, so R1 = Vj/I Now its easy, you have a value for R1; Now just solve for (R1+R2) * .001 A = Vin or alternately R2 = (Vin-Vj)/.001 A Now just to make sure go back and calculate P = I^2/R for both resistors and make sure you have high enough wattage resistors by a safety factor of two. ",
+            "date": "Answered March 25, 2017",
+            "views": "17",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sharan Dilip",
+                    "user_href": "/profile/Sharan-Dilip"
+                },
+                {
+                    "user_id": "Gohn Bernard",
+                    "user_href": "/profile/Gohn-Bernard"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shrenik Jain",
+                "href": "/profile/Shrenik-Jain-51"
+            },
+            "answer_text": "only way!!! (one of the tricky sum)  ",
+            "date": "Answered August 30, 2017",
+            "views": "1",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "title": "What is the difference between undirected graph and bi directed graph? Doesn\u2019t an undirected edge between two nodes symbolize bi direction? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel R. Page",
+                "href": "/profile/Daniel-R-Page"
+            },
+            "answer_text": "It is easier to insert a third concept, a directed graph. Undirected graphs contain edges with no direction, meaning all the edges are unordered pairs of vertices. Directed graphs contain edges with a direction, meaning all the edges are ordered pairs. Bi-directed graphs are a generalization of directed graphs where instead of each edge having one direction, it has two depending on which way \u201cyou enter a vertex\u201d. Namely, each endpoint of an edge has a direction. You can take any directed graph and form a bidirected graph by simply orienting both endpoints of an edge in the same direction. But, unlike directed graphs, you can have endpoints that have opposite directions.  Source: Bidirected graph - Wikipedia (https://en.wikipedia.org/wiki/Bidirected_graph#/media/File:Bidirected_graph_features.svg) Most likely it is a confusion over the notion of traversing an edge versus the representation of the edge itself. Correct, in an undirected graph you can traverse back and forth (in that sense, bidirectionally), but this is not the exact same notion of \u201cbi directional\u201d as with bidirected edges in a bidirected graph. For a decent start, check out Bidirected graph - Wikipedia . I hope this helps! ",
+            "date": "Answered August 26, 2017",
+            "views": "38",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Edward Ellis",
+                    "user_href": "/profile/Edward-Ellis-36"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Glenn Redd",
+                "href": "/profile/Glenn-Redd"
+            },
+            "answer_text": "For the first question: A bi-directed graph can have different edge weights between two adjacent vertices depending on the direction. An undirected graph can only have the one edge weight between the adjacent vertices. For the second question: I think it kind of depends on what sort of conventions you are adhering to. I would have said it was the case, but Rittick Datta has already answered no, so I am thinking it depends on exactly what sorts of graphs you are talking about. In the graph theory class I took for example, we would have graphs where some edges were undirected, some were directed, and some vertices had directed edges in both directions, each with various weights. ",
+            "date": "Answered August 27, 2017",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Jame-bond-16"
+                }
+            ]
+        }
+    ]
+}

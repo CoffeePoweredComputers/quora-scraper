@@ -1,0 +1,113 @@
+{
+    "title": "What is a p-value, explained in layman\u2019s terms? - Quora",
+    "tags": [
+        "P-value (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shikha Roy",
+                "href": "/profile/Shikha-Roy-13"
+            },
+            "answer_text": "Most of us are guilty of not understanding what p-value exactly means when read for the first time. One thing we all are well versed is about the fact that when your p-value is greater than 0.05 we fail to reject our null hypothesis, while when it is less than 0.05 we reject the null hypothesis. (At 5 % level of significance.) So what is the idea behind this? Let us take an example of an experiment which we are all familiar with. We order food from Zomato and it claims that your food will be delivered within 45 minutes. Here our null hypothesis is an ideal scenario where the food will be delivered within 45 minutes. Ho: The food delivery time of Zomato is equal to 45 minutes. But that is not the case for some of us. Why? Due to external factors such as traffic jams, rains, technical error, delay from the restaurant, delay due to wrong/longer routes, etc, there might be incidents wherein many of us have experienced delivery times greater than 45 minutes. So our Alternative Hypothesis would be: H1: The food delivery time of Zomato is greater than 45 minutes. So how often these external factors distort the delivery time claimed by Zomato? How many times has it gone beyond 45 minutes? Is that number significant? How are we going to decide upon its significance? Is the claim even true for about even 100 or 1000 of the population? How do we trust this claim? We run an experiment on a sample of customers ordering from Zomato. This sample should be such that it summarizes our true population in terms of various factors such as location, age groups of delivery boys who fulfilled the order, experience of delivery boys, time of order, number of orders per customers, etc. All in all our sample should not be biased and should not contain only delivery times which are closer to 45 minutes. Let us say we ran the experiment on a sample of 10,000 customers who had ordered from Zomato in the last year. We take a 5 % level of significance, in other words 0.05 as our cut off to accept or reject our claim. (If you want to be stricter with your experiment you can choose even 0.001(0.1%) and if you want to be lenient you can take the cut off as 0.1 (10%).) After running the experiment ( meaning statistical tests such as Z-test, t-test, ANOVA, etc) we observe one of the following scenarios: Lets take the P-value definition which says \u2018The probability under the assumption of no effect/difference of obtaining a result which is equal to or extreme than what was actually observed. Here no difference indicates the Null Hypothesis (Delivery time=45 ) while extreme result is Alternative Hypothesis (Delivery time>45). P-value as 0.03. As it is less than 0.05 we reject Ho. Only 3 % of the samples( 300 out of 10000 customers) had delivery times equal to 45 minutes which is far below the cut off you have set which is 5 % (Level of Significance=0.05).It is very less likely that the observed difference of delivery time being greater than 45 mins is due to chance, therefore we have sufficient evidence from our sample to reject the claim. Your result is statistically significant.Hence, you have stronger evidence against the null hypothesis, implying Zomato\u2019s claim is false and therefore delivery times are greater than 45 minutes.P-value as 0.98 As it is greater than 0.05 we fail to reject Ho. 98 % of the samples (9800 out of 10000 customers) had delivery times equal to 45 minutes which is far above the cut off you have set which is 5 % (Level of Significance=0.05).It implies no difference in the delivery times as claimed by Zomato other than due to chance. Your result is statistically not significant. (However, it could be possible that this result would have been due to chance , one of the reason being your sampling methodolgy is not correct and you might be sampling from a biased population with delivery times equal to 45 mins. Or if your sample is not biased, then woah, Zomato\u2019s claim is true and their services are really awesome!)Hence, you have weak evidence against the null hypothesis, implying Zomato\u2019s claim is true and delivery times are indeed equal to 45 minutes.",
+            "date": "Updated May 17, 2020",
+            "views": "18",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Evelyn Shafer",
+                    "user_href": "/profile/Evelyn-Shafer"
+                },
+                {
+                    "user_id": "Raveesh Raghunathan",
+                    "user_href": "/profile/Raveesh-Raghunathan"
+                },
+                {
+                    "user_id": "Jayprakash Rakh",
+                    "user_href": "/profile/Jayprakash-Rakh-2"
+                },
+                {
+                    "user_id": "Mandar Deshpande",
+                    "user_href": "/profile/Mandar-Deshpande-11"
+                },
+                {
+                    "user_id": "Bibek Malakar",
+                    "user_href": "/profile/Bibek-Malakar-3"
+                },
+                {
+                    "user_id": "Pratik Pandey",
+                    "user_href": "/profile/Pratik-Pandey-180"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "Somen Pattanaik",
+                    "user_href": "/profile/Somen-Pattanaik-1"
+                },
+                {
+                    "user_id": "Lonakshi Bhagat",
+                    "user_href": "/profile/Lonakshi-Bhagat-1"
+                },
+                {
+                    "user_id": "Shruti Bhatnagar",
+                    "user_href": "/profile/Shruti-Bhatnagar-17"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maarten Keijzer",
+                "href": "/profile/Maarten-Keijzer"
+            },
+            "answer_text": "The p-value is an instrument that you use to convince a skeptic. Say you claim that green jelly beans cause acne. You get your team to collect data about people eating jelly beans, not eating jelly beans, and eating green jelly beans, and voila, you find a correlation. People eating green jelly beans have 7% more chance to get acne when compared to people not eating green jelly beans. You go to your boss and claim success, and want to go to the press. The boss is not convinced. He says that you can\u2019t rule out that this result happens by chance simply because of the size of your experiment. He says there are too few people tested to rule out the possibility that this 7% difference is occurring by chance. Now you go to your statistical apparatus, and compute the probability of this result occurring by chance. That probability is the p-value. It tells you how likely it is that you get a correlation like this simply by being lucky with the set of subjects that you test. It\u2019s quite easy to see how it can happen that you get results by chance. Say you examine 20 people. 5 typically eat green jelly beans, and 15 do not. Of the five that eat green jelly beans, 2 have acne. So that\u2019s 40%. Of the 15 that do not, 5 have acne. So that\u2019s 33%. Is this enough to conclude that this is real? Of course not. Suppose you examine one more green jelly beaner, and that one doesn\u2019t have acne, the relationship between green bean and acne will drop to 2/6=30%, and the result is reversed. Now suddenly, it seems that green jelly beans help you avoid acne. The p-value of this particular experiment will be very high. It will state for instance that there\u2019s a 60% probability that the difference observed between green jelly bean eaters and other wrt acne could occur by chance alone. This means that if you run your experiment multiple times, by finding 20 new people, in 60% of the cases you would expect to see a difference that\u2019s at least as large as the 7% you measured before. And it will go either way. Your boss was right. Your sample size is too small to make your result significant. You either need to make your sample size larger, or you need to find a larger difference. That is what p-values are: the probability that what you measured is the result of some random fluke, and therefore not reproducible, not real. And it\u2019s not a very good instrument at that. Here\u2019s an example of what\u2019s called p-value mining:  ",
+            "date": "Answered April 14, 2018",
+            "views": "101",
+            "upvotes": " View 57 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Tarek Dib",
+                    "user_href": "/profile/Tarek-Dib"
+                },
+                {
+                    "user_id": "Felipe Guerrero",
+                    "user_href": "/profile/Felipe-Guerrero-1"
+                },
+                {
+                    "user_id": "Diego Floor",
+                    "user_href": "/profile/Diego-Floor"
+                },
+                {
+                    "user_id": "Daniel I. Frank",
+                    "user_href": "/profile/Daniel-I-Frank"
+                },
+                {
+                    "user_id": "Ankur Morbale",
+                    "user_href": "/profile/Ankur-Morbale"
+                },
+                {
+                    "user_id": "Megh Abhyankar",
+                    "user_href": "/profile/Megh-Abhyankar"
+                },
+                {
+                    "user_id": "Anil Koju",
+                    "user_href": "/profile/Anil-Koju-1"
+                },
+                {
+                    "user_id": "Pratiksha Kar",
+                    "user_href": "/profile/Pratiksha-Kar"
+                },
+                {
+                    "user_id": "Richard Browne",
+                    "user_href": "/profile/Richard-Browne-23"
+                },
+                {
+                    "user_id": "Alaina DePaul",
+                    "user_href": "/profile/Alaina-DePaul"
+                }
+            ]
+        }
+    ]
+}

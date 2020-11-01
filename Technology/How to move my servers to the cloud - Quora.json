@@ -1,0 +1,46 @@
+{
+    "title": "How to move my servers to the cloud - Quora",
+    "tags": [
+        "Servers (computers)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mithun Kotian",
+                "href": "/profile/Mithun-Kotian"
+            },
+            "answer_text": "\"The Cloud\" is basically an aggregation of hundreds(or thousands) of servers connected to each other via a network and available to the end user as a service/URL/website/storage etc. Defined very loosely, even the internet itself can be described as a \"Cloud\". Now that we have got the definition out of the way, lets look at the specifics.  Assuming that you have some in-house servers that you want to put in the cloud, the way to get your servers to the cloud would be to connect them to the internet, maybe get a static IP address, tie that to a domain and have some way of redirecting all the varied requests that come in to the correct servers. load balance the requests if need be and then make sure that the servers are maintained fairly well. There are solutions for this very specific problem. Two that come to mind are OpenStack and Ubuntu Cloud. These are called on-premise private/public clouds. If I am not wrong, even Microsoft has a version of Azure that does the same thing called the Appliance and Oracle has something similar in the works as well. This model requires little code change but has huge headaches associated with physical infrastructure and other teething issues.Assuming that you mean to put your applications on the cloud (and not the physical machines), then it becomes simpler. You need to choose between Cloud providers like Amazon, Microsoft, Google and some other players as to what fits best for your needs (e.g. its much easier to spin up .NET applications on Windows Azure than others). Code changes may or may not be needed based on how the instances are setup. Its a per provider thing really. The advantage here is that you pay by the hour, there are no long term commitments and you can junk it if it doesn't suit your fancy. Disadvantage is that code might need to be changed, devops are needed for monitoring, debugging and maintenance have their down upsides/downsides depending on how you look at it. You can also get a bare machine and do your thing, if needed, all paid for by the hour. Well, thats the gist about all the ways of putting your application/server on the cloud. Each of the ways is a multi-hour deep dive discussion if one wants to go deep into it. ",
+            "date": "Answered October 10, 2013",
+            "views": "78",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suryakant Mangalgi",
+                    "user_href": "/profile/Suryakant-Mangalgi"
+                },
+                {
+                    "user_id": "Rishikreddy Pakala",
+                    "user_href": "/profile/Rishikreddy-Pakala"
+                },
+                {
+                    "user_id": "Dins Leo",
+                    "user_href": "/profile/Dins-Leo"
+                },
+                {
+                    "user_id": "Ashish Gupta",
+                    "user_href": "/profile/Ashish-Gupta-165"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hei Bai",
+                "href": "/profile/Hei-Bai-3"
+            },
+            "answer_text": "What systems do you want to move to the cloud? As a business, when you think about moving your server to the cloud it\u2019s important to understand what aspects of your IT systems you are moving. A typical small business will probably make use of the following computer systems or services: Desktop Applications \u2013 software programs designed to do a particular task. For example Office software so you can write letters, create spreadsheets, or accounting software, payroll software, Stock Control, CRMs etc.Data \u2013 Structured Data such as the information held in databases used by your accounting software; and Unstructured Data such as documents, spreadsheets, pictures, pdf files.Back-End systems \u2013 these are other software applications that work behind the scenes on that server in the corner of the office, which make all the desktop applications work. This might include: Email Servers such as Microsoft Exchange, SQL Servers that manage databases for some applications, File Servers to enable you to save documents and share them with colleagues in a secure manner.Peripherals \u2013 things like printers, scanners, bar-code readers-networks \u2013 the wires, or Wi-Fi connections that allow your computers to talk to each other and to the back-end systems as well as to the wider world via\u2026The Internet \u2013 A bunch of other back-end systems and applications open to the world to provide information and services.If you want to know more about this, then I will suggest you check out this link Cloud Server. I hope it will help you to know more about Cloud. ",
+            "date": "Answered April 28, 2020",
+            "views": "199",
+            "upvotes": " View Sharers"
+        }
+    ]
+}

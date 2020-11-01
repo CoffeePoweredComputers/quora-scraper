@@ -1,0 +1,39 @@
+{
+    "title": "How to redirect or rewrite a url with .htaccess - Quora",
+    "tags": [
+        "UNIX Configuration Files",
+        "Mod_rewrite",
+        ".htaccess (configuration files)",
+        "SEO of URLs",
+        "Apache HTTP Server",
+        "Uniform Resource Locators (URLs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jen Geller",
+                "href": "/profile/Jen-Geller-1"
+            },
+            "answer_text": "301 redirect /path/to/page http://absolute/path/to/page\u00a0This is a 301 redirect for htaccess. It has 3 parts. Part 1: 301 redirect - this tells what type of redirect it is. In this case it is a permenant redirect. This way googlebot can note that the page has moved for good. Part 2: Url path to the old location, without the domain name. This is called a relative path, In this case, relative to the root of the domain, Part 3: The full (absolute) url of the new location. There is a single space between each part. Each redirect should also be on it\u2019s own line. Be careful, because messing up the syntax can crash your site. Also, be careful of redirecting sub-pages with the same names. Like if for some reason you have http://website.com/contact but you also have a page, http://website.com/contact/contact/ Redirecting contact to contact/contact will cause an infinite loop which is bad and will crash, I don\u2019t have a source to cite, because this came from my own brain. However, if you google 301 redirect, you can confirm this, ",
+            "date": "Answered November 4, 2017",
+            "views": "541",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "David Abraham",
+                    "user_href": "/profile/David-Abraham-24"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Girish Sundaram",
+                "href": "/profile/Girish-Sundaram-2"
+            },
+            "answer_text": "It is a common practice to redirect a url (home page) to a different url using .htaccess file. Here are the Steps, Backup you .htaccess file so that you can recover it anytime if there is a problem.Use a ftp client software , for example filezilla , to access your website in ftp.add following code to your .htaccess fileRewriteEngine On Redirect 301 /any older post/ http://site.com/new post/ Note that, all 3xx are redirection code in HTTP. ",
+            "date": "Answered March 31, 2017",
+            "views": "254",
+            "upvotes": "0"
+        }
+    ]
+}

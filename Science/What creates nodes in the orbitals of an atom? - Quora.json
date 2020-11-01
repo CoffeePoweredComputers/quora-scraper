@@ -1,0 +1,42 @@
+{
+    "title": "What creates nodes in the orbitals of an atom? - Quora",
+    "tags": [
+        "Nodes",
+        "Physics and Chemistry",
+        "Atoms",
+        "Quantum Mechanics",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Kahana",
+                "href": "/profile/David-Kahana"
+            },
+            "answer_text": "Orbitals in an atom are solutions to the time independent Schr\u00f6dinger equation. Ultimately it is the properties of that differential equation that create the nodes in the bound state wave functions, or orbitals. I could point you to a very technical answer to this question: there are strong mathematical results on the pattern and number of nodes in the discrete bound state wave functions of the one body Schr\u00f6dinger equation. But let me just describe qualitatively the reasons that nodes form in the higher energy bound states, by looking at the simplest one-dimensional example. Suppose that the potential is a very simple one - just a square well of width  and depth , in one dimension, and that we search for a solution with total energy . Since the potential is everywhere constant, we can easily solve the differential equation in each region: the solutions, formally, are exponential functions. Since the equation is second order in space there are two independent solutions, and since the equation is linear the general solution is a superposition of these two solutions with constant coefficients. The independent solutions are , where  is a constant called the wave number. In the interior of the well, it is easy to show that  is imaginary - which means that the solutions are oscillating there - they are superpositions of sines and cosines. In the exterior regions the wave functions have real , so they are superpositions of growing and falling exponentials. Normalizability of the wave function requires that the falling exponentials be chosen in the exterior - the growing exponentials would imply an infinite probability for the particle to be found outside the well at , which is not physically meaningful. Instead, the potential confines the particle to a small region of space near the well, when a bound state forms. To get a solution to the equation over all space we then demand that the wave function and its first derivative be continuous across the discontinuities in the  potential at  - this produces a set of simultaneous equations which can be called the matching conditions, and these have to be solved. So already, the reason for the presence of nodes in atomic orbitals begins to be clear - the wave functions are oscillatory in the classically allowed regions inside the potential well, where  and the particle is essentially free to move, but the solutions decay exponentially, in the classically forbidden regions outside of the well, where , and the potential is zero. If the potential well is deep enough, so that  can be made larger and larger, and the matching conditions can still be satisfied, then  in the interior will also become larger and larger, and at large enough  the solution will develop a node in the interior region: it must do so, since the width of the well  is a constant. If you go through the whole exercise of writing the matching conditions out for the square well, which is tedious but not too hard to do, you'll find that they can only be satisfied for certain discrete values of , and that the bound states having higher and higher energy have higher and higher magnitude of  in the interior, and so the higher states have more and more nodes inside the potential well. It's a simple exercise to show that the ground state has no nodes. The orbitals of the hydrogen atom can be discussed in a very similar way, but in that case, you would first reduce the problem to a one-dimensional problem, by separation of variables in polar coordinates. It's a bit trickier, since the problem is over a semi-infinite interval and the potential is long range, meaning that it tends to zero slowly as , and it is also divergent at , but it turns out these complications are not serious. The principles are exactly the same as for the square well: at large  the wave functions are exponentially decaying, while at small , inside the classical turning points, the solutions are oscillatory. So the general reason that nodes form in atomic orbitals of single electron atoms is the tension between the oscillatory behavior of the wave function in the classically allowed regions and the decaying behavior in the classically forbidden regions. In multi-electron atoms, there are many more coordinates, and many more reasons that nodes form in the various coordinates, having to do with the Pauli exclusion principle - but this is more complicated to discuss. ",
+            "date": "Answered February 8, 2014",
+            "views": "912",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kapse S M",
+                    "user_href": "/profile/Kapse-S-M"
+                },
+                {
+                    "user_id": "Edwin Khoo",
+                    "user_href": "/profile/Edwin-Khoo"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shiva Meucci",
+                "href": "/profile/Shiva-Meucci"
+            },
+            "answer_text": "Harmonics would be one way to easily think about it. The Schrodinger equation is all about wave interaction.  It's about waves bouncing around and interacting. So the creation of nodes is the interactions of waves within an atom and specifically the Schrodinger equation is a case of spherical harmonics. Constructive and destructive interference make up the shapes of the orbitals themselves and the nodes are simply a consequence of typical wave mechanics. A physical analogy that helps to understand the reason for probability of finding a particle in a zone can be found in the bouncing silicon oil-drop experiments.    Additionally these cymatic experiments show how wave disturbance cause nodes to seemingly attract particles because the amount of disturbance is minimal at those nodes.    The exact same phenomena is used to \"levitate\" or confine particles within a zone in these experiments and the following video contains some visualizations showing how the node based confinement plays a role:   ",
+            "date": "Updated September 12, 2015",
+            "views": "357",
+            "upvotes": "0"
+        }
+    ]
+}

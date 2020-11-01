@@ -1,0 +1,60 @@
+{
+    "title": "How close do cell phone towers have to be between each other to complete a strong signal chain? - Quora",
+    "tags": [
+        "Cellular Networks",
+        "Cell Towers",
+        "Digital Signal Processing",
+        "Signal (communications)",
+        "Signal Processing",
+        "Telecommunications",
+        "Wireless Technology",
+        "Cellular Service Providers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Olsen",
+                "href": "/profile/Richard-Olsen-48"
+            },
+            "answer_text": "I\u2019m going to read something into your question that might not be there, but here goes. When you ask about creating a \u2018signal chain\u2019, be aware that cellular systems do not have an RF channel between base stations*. They are connected to each other via fiber optic cables. The anatomy of a cellular call from a cellphone in LA to a cellphone in NYC is: an RF channel from cellphone 1 to the nearest base station in LA. That base station in LA is connected to the base station in NYC closest to cellphone 2 by fiber optic cable. Then there is an RF channel from the base station in NYC to cellphone 2. So, the RF part of the call on each end is tiny, perhaps only 500 feet on both ends combined, compared to the physical fiber optic connection which in this case could be almost 3,000 miles. When cellular service first began in the early 1980s, some base stations served an area up to 20 miles in radius. But that was only in the rural areas with no mountains. As the demand and number of customers grew, the cells (area served by the base stations) were split into smaller areas by the installation of more/new base stations. This has continued over the years. Today we have \u2018small cells\u2019 that may only serve an area 100 to 300 feet in radius and can be \u2018beamed\u2019 in given directions. Most of the cellular phone network consists of fiber cables. *There are some base stations that link to each other via microwave RF channels. This is predominately in developing countries including China. But in the USA, this is rare. ",
+            "date": "Answered May 24, 2019",
+            "views": "12",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kirn Gill",
+                    "user_href": "/profile/Kirn-Gill"
+                },
+                {
+                    "user_id": "Mitch Williams",
+                    "user_href": "/profile/Mitch-Williams-2"
+                },
+                {
+                    "user_id": "Mike Austin",
+                    "user_href": "/profile/Mike-Austin-36"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian Heggie",
+                "href": "/profile/Ian-Heggie"
+            },
+            "answer_text": "Receiving a \u201cstrong signal\u201d depends on how many/few obstructions there are, how good your mobile phone\u2019s antenna is (inbuilt or external) etc. Some examples: In Australia it is common to be able to use mobile phones up to 20 km offshore, and if you are in difficulties the emergency services will ask for the phone numbers of the mobile phones on board when you contact them over VHF. So if the land is flat, towers could easily be up to 10 km\u2019s apart. Along freeways, and where there are hills and dales, they are more frequent to handle the quantity of devices connected simultaneously and provide continuous coverage, and the antenna will not generally cover equally in all directions. Here is an example of a tower near a small town covering devices up to around 8km away from Telstra (Australia) Cell Tower Map:  Note: In Australia, cell towers in the country are often connected via microwave links rather than fiber optic cable, which leads to the problem that you may have good reception to the cell tower, but the chain of microwave links back to a fiber connected tower may experience congestion from too many users or reduced bandwidth due to signal degradation (eg due to heavy rain). Microwave links can extend way further then the 3/4/5G signals from the tower to the end user device. The particularly curious can research the official records to determine the microwave allocations (which give gps coordinates, frequency, polarization, distance and direction to the next hop, as well as who obtained the license for that link) to work out the chain of links back to a fiber connection point. Thanks Mike for the A2A ",
+            "date": "Answered May 25, 2019",
+            "views": "409",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lars Poulsen",
+                    "user_href": "/profile/Lars-Poulsen-2"
+                },
+                {
+                    "user_id": "Mike Austin",
+                    "user_href": "/profile/Mike-Austin-36"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "title": "What are the pros and cons of FreeBSD and Linux? - Quora",
+    "tags": [
+        "FreeBSD",
+        "Pros and Cons"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "I'm pretty much on board with Marcas Neal's answer, with a slight caveat. That used to be universally true, not so much anymore. For me, all of the BSD descendants are much more powerful, intuitive and stable than all of the Linux distros. They're as simple as possible, but no simpler. Linux, on the other hand, is vast, prolific and ubiquitous. It's impossible to find developers that haven't at least heard of it, very difficult to find those that haven't used it (even among the hard-core MSFT .NET developer crowd), and not uncommon to find those who have dove into the kernel sources. These days, with Amazon AWS providing a heavily supported Linux version, more and more backend is running on Linux, and less and less on some BSD variant. The primary advantage that Linux has over BSD is ubiquity. It's literally everywhere, and no matter what distro you want to run, there's a really large community of people who can help you figure out how to do whatever it is that you're trying to do.  Plus, it's something your boss has heard of, so when you say \"I want to do this in Linux\" it's not likely to provoke a \"what the hell is that\" response. The primary advantage that BSD has over Linux is that BSD, ah, how to put this politely... Oh well, I'll just go for it. BSD *typically* hasn't had the internals meddled with by amateurs. The guys that wrote the core code are alpha technologists who learned their craft from the people who invented the technologies. It's at worst, 2nd generation from core code. Linux?  I don't even recognize the names of some of the people with commits. It's probably 5th generation from origin.  Sometimes, that's a good thing. When I, personally, look at the vast feature creep that's happened in Linux over in particular the last five years, I think it's not, in this case. ",
+            "date": "Updated July 22, 2015",
+            "views": "55",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Jacob",
+                    "user_href": "/profile/David-Jacob-58"
+                },
+                {
+                    "user_id": "Karthikeya Kaza",
+                    "user_href": "/profile/Karthikeya-Kaza"
+                },
+                {
+                    "user_id": "Istvan Dobos",
+                    "user_href": "/profile/Istvan-Dobos-1"
+                },
+                {
+                    "user_id": "Valeriy Ivanov",
+                    "user_href": "/profile/Valeriy-Ivanov-5"
+                },
+                {
+                    "user_id": "Michael Kamrath",
+                    "user_href": "/profile/Michael-Kamrath"
+                },
+                {
+                    "user_id": "Karen Marie Shelton",
+                    "user_href": "/profile/Karen-Marie-Shelton"
+                },
+                {
+                    "user_id": "Tsaf Eltrut",
+                    "user_href": "/profile/Tsaf-Eltrut"
+                },
+                {
+                    "user_id": "Andranik Avakyan",
+                    "user_href": "/profile/Andranik-Avakyan"
+                },
+                {
+                    "user_id": "Aakash Kumar",
+                    "user_href": "/profile/Aakash-Kumar-301"
+                },
+                {
+                    "user_id": "Leon Wanderi",
+                    "user_href": "/profile/Leon-Wanderi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "ServerAdminz",
+                "href": "/profile/ServerAdminz-1"
+            },
+            "answer_text": "FreeBSD and Linux system are two free, open supply systems. Indeed, their users can simply check and modify the ASCII text file with an absolute freedom. Linux is something you will be able to use for game servers or embedded systems or as desktop OS. FreeBSD was perpetually meant to be an extremely stable server OS. Free BSD software is same as Free BSD UNIX but not a by-product of UNIX. This software was developed by the Berkeley package Distribution in 1993. FreeBSD ASCII text source code is usually discharged under a permissive BSD license. As numerous set of server-related code is embedded in FreeBSD, it is possible to use it as a mail server, web server, FTP server and as a router. Linux is UNIX-like, open supply, and community-developed software for computers, servers, mainframes, mobile devices and embedded devices. Linux is packaged in a shape called a Linux distribution (or distro for quick) for each desktop and server use. Advantage of FreeBSD BSD License is less restrictive and it permits distribution of the binary-only source.FreeBSD is an absolutely free software.FreeBSD is a complete operating system by itself.FreeBSD uses ipfw as the firewall.ipfw -q add [rule number] allow tcp from any to any 80 in ipfw -q add [rule number] allow tcp from any to any 443 in BSD systems boot and reboot faster than Linux.FreeBSD developers can manage the essential operating systems remotely and efficiently.A lot of common tools are available which are fully owned by FreeBSD Team.Disadvantage of FreeBSD Less community support especially for newbies.Lack of driver support.The file system is old.Advantage of Linux Stability: Linux doesn\u2019t have to be compelled to be rebooted periodically to take care of performance levels. It doesn\u2019t freeze up or bog down over time as a result of memory leaks.Network friendliness: Linux was developed by a bunch of programmers over the net and has thus provided robust support for network functionality; consumer and server systems are often simply started on any pc running Linux.Linux uses iptables as the firewalliptables -A INPUT -s 0/0 -d 0/0 -p tcp \u2014dport 80 -j ACCEPT iptables -A INPUT -s 0/0 -d 0/0 -p tcp \u2014dport 443 -j ACCEPT Linux is very omnipresent and it is widely supported.Linux has good community support and hardware support.Disadvantage of Linux Linux is licensed under GPL. They prevent the distribution of the binary-only source.Linux has control permission restrictions.Linux is just a kernel, thus in order to use Linux as an OS, we\u2019d like to decide on any of flavors like RedHat Enterprise Linux, Ubuntu.With Linux, there are some difficulties while managing a system. Since the different components maintained will be from different sources, Linux developers need to assemble them into groups having the same Linux tools from GNU, due to this its usage is controlled.FreeBSD and UNIX the two free and open supply systems which share varied similarities yet they are different at some points. Both FreeBSD and UNIX, have a set of options and specifications that make them unique. ",
+            "date": "Answered March 22, 2018",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

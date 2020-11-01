@@ -1,0 +1,108 @@
+{
+    "title": "How can we find all simple cycles in an undirected graph efficiently? How do I find the points that are forming a cycle in a graph? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Complexity",
+        "Graph Theory",
+        "Object-Oriented Programming",
+        "Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aditya Prakash",
+                "href": "/profile/Aditya-Prakash-17"
+            },
+            "answer_text": "Use dfs to find cycles in a graph as it saves memory. Maintain the dfs stack that  stores the \"under processing nodes (gray color)\" in the stack and -  just keep track when a visited node is tried to be accessed by a new node. . Get the node which was already visited but was tried to be accessed. . Find the position in stack.(as the stack has visited nodes)  right from this position move up till top of the stack , you will get the cycle in cyclic order. You may miss some sub cycles (cycles inside cycle) but you will never miss any disjoint cycle.  (So you have a solution in case the graph has disjoint cycles). Actually it is not cool to find all cycles in an undirected graph as it would be of the order 2^V.( worst case - graph having V(V-1)/2 edges ). But still for sub cycle cases you can find the cycles from this algo by tracking it from the available cycles you have( figure it out yourself!! ). But it will make the complexity non plynomial. In case you need a robust solution brute force will be the only way out as said in previous posts. ",
+            "date": "Updated July 1, 2014",
+            "views": "208",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Iqra Hassan",
+                    "user_href": "/profile/Iqra-Hassan-13"
+                },
+                {
+                    "user_id": "Neer N Patel",
+                    "user_href": "/profile/Neer-N-Patel-1"
+                },
+                {
+                    "user_id": "Rishi C",
+                    "user_href": "/profile/Rishi-C-7"
+                },
+                {
+                    "user_id": "Chayanika Bhandary",
+                    "user_href": "/profile/Chayanika-Bhandary"
+                },
+                {
+                    "user_id": "Avinandan Das",
+                    "user_href": "/profile/Avinandan-Das"
+                },
+                {
+                    "user_id": "Ramakrishna Cheruku",
+                    "user_href": "/profile/Ramakrishna-Cheruku"
+                },
+                {
+                    "user_id": "Gopi Gandhi",
+                    "user_href": "/profile/Gopi-Gandhi"
+                },
+                {
+                    "user_id": "Tejasvi Gaurav Mishra",
+                    "user_href": "/profile/Tejasvi-Gaurav-Mishra"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anshu Maheshwari",
+                "href": "/profile/Anshu-Maheshwari-1"
+            },
+            "answer_text": "Run BFS/DFS on the graph and obtain a tree. Find a edge which is in the graph but not in this tree. Let it be between (v1,v2). Find lowest common ancestor of v1 and v2, let it be w. The path from w to v1, w to v2 and the edge (v1,v2) forms the cycle. ",
+            "date": "Answered October 8, 2016",
+            "views": "71",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kumar Karan",
+                    "user_href": "/profile/Kumar-Karan-71"
+                },
+                {
+                    "user_id": "Pooja Khivasra",
+                    "user_href": "/profile/Pooja-Khivasra"
+                },
+                {
+                    "user_id": "Bilyana Indjeva",
+                    "user_href": "/profile/Bilyana-Indjeva"
+                },
+                {
+                    "user_id": "Pias Roy",
+                    "user_href": "/profile/Pias-Roy"
+                },
+                {
+                    "user_id": "Peeyush Bharadwaj",
+                    "user_href": "/profile/Peeyush-Bharadwaj-2"
+                },
+                {
+                    "user_id": "Nitish Nehra",
+                    "user_href": "/profile/Nitish-Nehra"
+                },
+                {
+                    "user_id": "Aya Elbohoty",
+                    "user_href": "/profile/Aya-Elbohoty"
+                },
+                {
+                    "user_id": "Iv\u00e1n Alejandro Soto Vel\u00e1zquez",
+                    "user_href": "/profile/Iv\u00e1n-Alejandro-Soto-Vel\u00e1zquez"
+                },
+                {
+                    "user_id": "gwasterisk",
+                    "user_href": "/profile/gwasterisk"
+                },
+                {
+                    "user_id": "Yash Kodesia",
+                    "user_href": "/profile/Yash-Kodesia-1"
+                }
+            ]
+        }
+    ]
+}

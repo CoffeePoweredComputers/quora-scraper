@@ -1,0 +1,118 @@
+{
+    "title": "What is concurrency in programming? - Quora",
+    "tags": [
+        "Multiprogramming",
+        "Parallel Programming",
+        "Multiprocessing",
+        "Concurrency (computer science)",
+        "Parallel Computing",
+        "Data Synchronization",
+        "Threading (computer science)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Bi",
+                "href": "/profile/Brian-Bi"
+            },
+            "answer_text": "Some people distinguish between \u201cconcurrency\u201d and \u201cparallelism\u201d. Parallelism is simpler. Parallelism is when multiple copies of the same program are run at the same time, but on different data, and not necessarily on the same machine. For example, a search engine company would use a large number of machines to crawl the web, and each of those machines would be running a program that sends requests out to websites, but each copy of the program is given a different list of URLs, and will therefore produce a different set of downloaded content. You could say that all the copies of the program run \u201cin parallel\u201d, so they will get the job done faster than if there was just one machine that would go through the entire list of URLs, one at a time. When you use parallelism, you can refer to each copy of the program as one \u201cinstance\u201d or one \u201creplica\u201d. Concurrency happens when multiple copies of the same program are run at the same time, but in the course of their execution, those copies communicate with each other. In many simple concurrent applications, you use a single machine, and the program\u2019s instruction code is only loaded into memory once\u2014in other words, a single process is created\u2014but the process\u2019s execution has multiple threads. Each thread remembers which instruction it\u2019s on, and executes that instruction before going on to the next one; thus, the various threads in a process each follow their own control flow, but can make decisions based on information they receive from other threads. Concurrency can be very tricky. Two threads can communicate by having a shared memory location that one writes to and the other reads from. But then the value read by the latter depends on whether the read occurred before or after the former wrote to that memory location. Worse still, if the read and write happen at the same time, it\u2019s possible for the reader to see a partially updated value because the writer started updating it but did not finish before the reader read the value. In order to avoid this, we use synchronization instructions, which tell one thread to wait until some action is performed by another thread before the former continues its execution. There are even more complex concurrent applications in which multiple machines must be used because a single machine is not powerful enough, for example, a database system that holds 10 petabytes of data. You then have what\u2019s called a distributed system. Distributed systems are even harder to develop than single-machine concurrent applications because of the communication latency between machines; excessive use of synchronization will cause threads to be idle for long periods of time while they wait for something to happen on another machine. So you have to write the program in such a way so that there is enough synchronization for the entire system to have some consistent state that can be reasoned about and controlled, but not so much that it hurts performance. ",
+            "date": "Answered February 11, 2017",
+            "views": "418",
+            "upvotes": " View 399 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ian Hoffman",
+                    "user_href": "/profile/Ian-Hoffman-11"
+                },
+                {
+                    "user_id": "Jonathan Bowman",
+                    "user_href": "/profile/Jonathan-Bowman-2"
+                },
+                {
+                    "user_id": "Jhansi Bojja",
+                    "user_href": "/profile/Jhansi-Bojja"
+                },
+                {
+                    "user_id": "Sakshi",
+                    "user_href": "/profile/Sakshi-856"
+                },
+                {
+                    "user_id": "Chekka Suhasini",
+                    "user_href": "/profile/Chekka-Suhasini"
+                },
+                {
+                    "user_id": "Ayush",
+                    "user_href": "/profile/Ayush-445"
+                },
+                {
+                    "user_id": "Carlos Hern\u00e1ndez",
+                    "user_href": "/profile/Carlos-Hern\u00e1ndez-27"
+                },
+                {
+                    "user_id": "Sammy Lee",
+                    "user_href": "/profile/Sammy-Lee"
+                },
+                {
+                    "user_id": "Pranjal Choubey",
+                    "user_href": "/profile/Pranjal-Choubey-1"
+                },
+                {
+                    "user_id": "P Jingjie Suckxer",
+                    "user_href": "/profile/P-Jingjie-Suckxer"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akshat Mahajan",
+                "href": "/profile/Akshat-Mahajan-1"
+            },
+            "answer_text": "Concurrency is when two tasks overlap in execution. In programming, these situations are encountered: When two processes are assigned to different cores on a machine by the kernel, and both cores execute the process instructions at the same time.When more connections arrive before earlier connections are finished, and need to be handled immediately.More generally, it\u2019s when we need to handle multiple tasks at about the same time. That\u2019s it. That\u2019s all concurrency is. Parallel execution is when two tasks start at the same time, making it a special case of concurrent execution. Why Does The Ability to Handle Concurrency Matter? Because concurrency leads to several issues: How do you maintain, store and ensure the consistency of information between independent tasks that require the ability to read and write to shared information?How do you adequately allocate a finite number of resources to handle a potentially monotonically increasing number of jobs to finish?How do you distribute novel information across existing services concurrently handling work at the same time?A kernel is a microcosm of all these conundrums: It must be able to prevent memory corruption by dynamically assigning and reassigning virtual memory addresses to programs when they require it while maintaining a mapping from virtual memory to physical memory.It must allocate and assign a finite number of cores to multiple programs, often utilising scheduling algorithms to allow the same core to work on multiple programs in the same unit of time to maximise utilisation.It must be able to communicate with programs in the event of unexpected issues e.g. when a hardware interrupt occurs that requires the program to quit immediately.But these issues are not limited to the kernel: A distributed database may handle several hundred thousand reads and writes at the same time. It is of interest to ensure that each read reflects the state of the database after the writes received at the same time were processed.A data ingestion pipeline may require several processes to communicate with each other, often to synchronise their executions if they\u2019re taking place on machines with a different clock frequency.A content delivery network must be able to handle the unexpected loss of a server or the addition of brand new ones without compromising the integrity of the information, as they may be launched at any moment to handle increased load such as during a DDoS attack).Approaches to Handling Concurrency From a very high-level perspective, there are really only a few tactics for safely dealing with tasks that must be run concurrently: Launch many workers, and have them read, as well as write, information from the same place for all to see.This is like hiring workers and having them all come up to a bulletin board to learn of new changes and update it with discoveries. This approach often runs into race conditions: what happens if one worker tries to read the bulletin board at the same time someone is trying to write on it? Should they wait for them to finish, or should they get back to work right away? What if they both try to write at the same time over each other, even though the overwritten information is more important?Computers deal with these situations by eitheremploying the use of thread-safe structures - effectively, all workers must stand in a queue if they want to read or write. This is one of the oldest solutions out there to this problem, and features heavily in Python, C++, and Java.requiring that a shared resource never have writes written to it. This is called guaranteeing immutability, and is fashionable in modern server-side Javascript development as well as being a design feature of the programming language Rust.Launch many workers, and have them update any other worker that requires information.This is like hiring workers and having them go up to other workers and tell them that they\u2019re done. For programs that require a lot of cooperation, this means a lot of messages passed. For programs that have many workers at many stages, it is ideal for intimating other stages that one stage is done. This is also the concurrency model espoused by many languages, such as Eralng and Scala, and is referred to as the actor model or message-passing concurrency.Launch one very, very, very good worker and have them split their time effectively on tasks.This is a design staple of web servers like Nginx and Node.js, or in-memory stores like Redis, where they handle multiple incoming tasks with exactly one worker. Exactly one worker handles incoming tasks. This worker is able to effectively divide its time very effectively between working on an existing task and beginning a new work, so that it \u201cseems\u201d like it\u2019s actually doing both tasks at the same time but really isn\u2019t. It immediately sidesteps all the problems associated with multiple people, but, well, even one worker can only do so much.",
+            "date": "Updated February 26, 2017",
+            "views": "28",
+            "upvotes": " View 44 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Richard Wainaina",
+                    "user_href": "/profile/Richard-Wainaina-1"
+                },
+                {
+                    "user_id": "Nick Kapatais",
+                    "user_href": "/profile/Nick-Kapatais"
+                },
+                {
+                    "user_id": "Sakibul Islam",
+                    "user_href": "/profile/Sakibul-Islam-11"
+                },
+                {
+                    "user_id": "Pavankumar Geddapu",
+                    "user_href": "/profile/Pavankumar-Geddapu"
+                },
+                {
+                    "user_id": "Mike Hinkleman",
+                    "user_href": "/profile/Mike-Hinkleman-1"
+                },
+                {
+                    "user_id": "Eli Kponblanou",
+                    "user_href": "/profile/Eli-Kponblanou"
+                },
+                {
+                    "user_id": "Akande Adeyemi Siraj",
+                    "user_href": "/profile/Akande-Adeyemi-Siraj"
+                },
+                {
+                    "user_id": "Yanis Alfian",
+                    "user_href": "/profile/Yanis-Alfian"
+                },
+                {
+                    "user_id": "Khaled Hosseini",
+                    "user_href": "/profile/Khaled-Hosseini"
+                },
+                {
+                    "user_id": "Tom\u00e1\u0161 \u0160abata",
+                    "user_href": "/profile/Tom\u00e1\u0161-\u0160abata"
+                }
+            ]
+        }
+    ]
+}

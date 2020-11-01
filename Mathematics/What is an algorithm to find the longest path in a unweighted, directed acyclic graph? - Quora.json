@@ -1,0 +1,114 @@
+{
+    "title": "What is an algorithm to find the longest path in a unweighted, directed acyclic graph? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory",
+        "Data Structures"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Roman Dzhabarov",
+                "href": "/profile/Roman-Dzhabarov"
+            },
+            "answer_text": "When you have DAG the very first things that comes to mind is to get topological order of the graph (Topological sorting) This will give us complexity of O(V+E). Now suppose that we have our vertices so that there are only arcs going forward, meaning if you get the vertex on position i all of the adjacent vertices will have positions bigger than i. Let's now have vector<int> distances which will store the max distance to the particular vertex, so distances[i] is the max path to vertex i, no mater where we started. Iterate vertices in topological order and for all adjacent vertices j, make distances[j] = max(distances[j], distances[i] + 1); The longest path will be *max_element(distances.begin(), distances.end()) So, overal complexity will be O(V+E). ",
+            "date": "Answered March 25, 2014",
+            "views": "224",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pradeep Balla",
+                    "user_href": "/profile/Pradeep-Balla-2"
+                },
+                {
+                    "user_id": "Mandela Mahato",
+                    "user_href": "/profile/Mandela-Mahato-1"
+                },
+                {
+                    "user_id": "Arun Selvaraj",
+                    "user_href": "/profile/Arun-Selvaraj-20"
+                },
+                {
+                    "user_id": "Vishwajeet Singh Thakur",
+                    "user_href": "/profile/Vishwajeet-Singh-Thakur"
+                },
+                {
+                    "user_id": "Yash Kodesia",
+                    "user_href": "/profile/Yash-Kodesia-1"
+                },
+                {
+                    "user_id": "Sunil Kumar",
+                    "user_href": "/profile/Sunil-Kumar-7280"
+                },
+                {
+                    "user_id": "Swapnil Pawar",
+                    "user_href": "/profile/Swapnil-Pawar-19"
+                },
+                {
+                    "user_id": "Kanan Singh",
+                    "user_href": "/profile/Kanan-Singh"
+                },
+                {
+                    "user_id": "Eugene Yarovoi",
+                    "user_href": "/profile/Eugene-Yarovoi"
+                },
+                {
+                    "user_id": "Jeff Ronne",
+                    "user_href": "/profile/Jeff-Ronne"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chun-Ho Hung",
+                "href": "/profile/Chun-Ho-Hung"
+            },
+            "answer_text": "Roman Dzhabarov is correct that we could apply the recurrence: dist(to_node) = max{dist(from_node) + 1} (For each directed edge from from_node to to_node)And then pick the maximum possible value from dist as the answer.  However, just a note regarding implementation: If you do it top-down with memoization, there is actually no need to explicitly compute a topological sorting. For example, in Python, you may write something like this:  memo = {}\u00a0\u00a0def get_longest(to_node):\u00a0    if to_node in memo:\u00a0        return memo[to_node]\u00a0\u00a0    best = 0\u00a0    for from_node in from_nodes[to_node]:\u00a0        best = max(best, get_longest(from_node) + 1)\u00a0    memo[to_node] = best\u00a0\u00a0    return best\u00a0\u00a0length, node = max([(get_longest(to_node), to_node) for to_node in all_nodes])\u00a0print 'Length of a longest path: length = %d, ending at %s' % (length, node)\u00a0 By adding some code in the for loop inside get_longest, you could easily backtrack to find one (or even all) longest path. ",
+            "date": "Answered March 26, 2014",
+            "views": "373",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ramu Bavireddi",
+                    "user_href": "/profile/Ramu-Bavireddi"
+                },
+                {
+                    "user_id": "Yogesh Palav",
+                    "user_href": "/profile/Yogesh-Palav"
+                },
+                {
+                    "user_id": "Max Moroz",
+                    "user_href": "/profile/Max-Moroz"
+                },
+                {
+                    "user_id": "Pavithira KC",
+                    "user_href": "/profile/Pavithira-KC"
+                },
+                {
+                    "user_id": "Ping Zhang",
+                    "user_href": "/profile/Ping-Zhang-18"
+                },
+                {
+                    "user_id": "Nitin",
+                    "user_href": "/profile/Nitin-893"
+                },
+                {
+                    "user_id": "Gautam Singh",
+                    "user_href": "/profile/Gautam-Singh-6"
+                },
+                {
+                    "user_id": "Eugene Yarovoi",
+                    "user_href": "/profile/Eugene-Yarovoi"
+                },
+                {
+                    "user_id": "Piyush Maheshwari",
+                    "user_href": "/profile/Piyush-Maheshwari"
+                },
+                {
+                    "user_id": "Nikhil Garg",
+                    "user_href": "/profile/Nikhil-Garg"
+                }
+            ]
+        }
+    ]
+}

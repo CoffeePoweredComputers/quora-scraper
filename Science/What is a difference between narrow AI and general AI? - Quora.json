@@ -1,0 +1,39 @@
+{
+    "title": "What is a difference between narrow AI and general AI? - Quora",
+    "tags": [
+        "Api.ai Is Now Dialogflow",
+        "Computer Architecture",
+        "Internet of Things (IoT)",
+        "Artificial Neural Networks",
+        "Artificial Intelligence",
+        "Machine Learning"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ilya Taytslin",
+                "href": "/profile/Ilya-Taytslin"
+            },
+            "answer_text": "First, there is no standard definition of AI. Objectively speaking, why is the computer program which separates images of moles into \u201ccancerous\u201d and \u201cbenign\u201d an AI, and the program which separates numbers into \u201cprime\u201d and \u201cnon-prime\u201d is not? Nowadays the accepted definition seems to be: \u201cAnything coded by hand is not AI; anything trained via machine learning is AI\u201d. But that\u2019s an artifact of the current state of the art \u2014 machine learning is what gives us most useful results, but back when the term \u201cartificial intelligence\u201d was invented, machine learning not only did not exist, anyone suggesting such thing would be laughed out of the room. (For two reasons: ML requires amounts of data which were absolutely inconceivable in 1950\u2019s-60\u2019s, and it works very very differently from the way humans or even animals learn.) And that brings us to your question: All AI which currently exists is narrow AI \u2014 neural networks which are trained on enormous amount of data specific to some domain, and thus learn to be very very good at that particular domain, whether diagnosing cancer, playing chess, or driving a car (that latter one is still merely \u201cpretty good\u201d). Increasingly often, such \u201cnarrow AI\u2019s\u201d find solutions which never occurred to any human being, or are impractical for a human to implement, which makes them seem very smart, but that\u2019s an illusion. Very good example IMO is a neural network which was given access to the computer game Breakout, with a goal \u201cmaximize score\u201d. Note that the neural network had no prior knowledge of things like \u201cmovement\u201d, \u201cbricks\u201d or \u201cangle of reflection\u201d \u2014 all it had was pixels on the screen and \u201cmove left, move right\u201d. Within a few hours the network found a way to make a hole at one end of the brick wall, send the ball through it, and have it bounce at the top of the screen obliterating the bricks from behind. This looks like a very smart strategy, but when the paddle in Breakout was moved only three pixels up (something a human player might not even notice), the neural network failed completely. It cannot generalize. And that\u2019s what general AI is supposed to be \u2014 a computer program which applies prior knowledge to make inferences about new data, recognizes causal relationship between objects and/or events, and has vast repertoire of \u201ccommon sense\u201d (e.g. you pull with a rope but not push with a rope). In other words, it \u201cthinks like a human\u201d or at least a mammal. All attempts to create an AGI so far have failed completely, and it is pretty clear that machine learning \u2014 or at least just machine learning, \u2014 will not get us there. So far it is not at all obvious that AGI is even possible in principle. My own somewhat professional (I have an M.S. in AI) view on it is: \u201cBrain in a box\u201d is not going to get us AGI, ever. It needs to learn about the world by interacting with it via some physical body (i.e. robot), like humans and animals do. Although unlike living creatures, the program does not have to reside inside the robot, and almost certainly will have access to multiple robot bodies simultaneously. BTW, that\u2019s the approach all self-driving cars use.Even if we do get AGI, it will never \u201cthink like a human\u201d: Ilya Taytslin's answer to Will robots ever be able to think? And that\u2019s a good thing: AGI will be far more useful if it can come up with insights no human could \u2014 even if it remains clueless about some things obvious to us.",
+            "date": "Answered January 25, 2019",
+            "views": "322",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alket Cecaj",
+                    "user_href": "/profile/Alket-Cecaj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Vonachen",
+                "href": "/profile/John-Vonachen-1"
+            },
+            "answer_text": "They can make engineered examples of automation for factories to process specific things into other things like wrapping a box of playing cards with shrink wrap, with no human interaction. They can also take an industrial robot and program it to do stuff but then later take that same robot and move it somewhere else and change its programming to do something different but similar. Narrow AI would be like making what they call an expert system for instance to diagnose diseases based on symptoms. That\u2019s a custom made narrow AI. Or they can take a neural network library or module and use it to do OCR Optical Character Reading and train it to recognize handwriting, and then take that same module or library and apply it to some other task like finding alien signals in records of radio frequency logs. That\u2019s more general. The ultimate would be something that you can talk to in natural language like, \u201cAlexa, find a cure for the effects of human aging.\u201d, \u201cI can\u2019t do that, yet. But I\u2019ll think about it and get back to you.\u201d  ",
+            "date": "Answered October 5, 2020",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

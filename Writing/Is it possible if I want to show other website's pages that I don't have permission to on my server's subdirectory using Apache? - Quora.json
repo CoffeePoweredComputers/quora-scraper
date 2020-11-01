@@ -1,0 +1,33 @@
+{
+    "title": "Is it possible if I want to show other website's pages that I don't have permission to on my server's subdirectory using Apache? - Quora",
+    "tags": [
+        "Apache HTTP Server",
+        "Proxy Servers",
+        "World Wide Web",
+        "Web Servers",
+        "Servers (computers)",
+        "Websites"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ken Lawton",
+                "href": "/profile/Ken-Lawton-2"
+            },
+            "answer_text": "If I understand what you\u2019re asking, to show content from other folders on your server, even though they aren\u2019t part of your domain\u2026 I do not think this can be done. You may be able to see the folders when you are looking around via FTP or cPanel or something. But they are not part of the same logical domain structure. So the server won\u2019t be able to serve them up. They would need to be part of the same tree branch. If you happen to know the domain that those files are being served from, then you can access them that way, via a typical HTTP call. They call this \u201chotlinking\u201d. People do it with images all the time. This may or may not be allowed depending on how the domain/server is configured. ",
+            "date": "Answered November 12, 2019",
+            "views": "71",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Joe Smith",
+                "href": "/profile/Joe-Smith-1332"
+            },
+            "answer_text": "If you don\u2019t have permission to the other website\u2019s pages, then you will not have any data to show. Defining a subdirectory for Apache does not magically give you access to the other website\u2019s pages. ",
+            "date": "Answered November 11, 2019",
+            "views": "7",
+            "upvotes": " Answer requested by Louis Raymond"
+        }
+    ]
+}

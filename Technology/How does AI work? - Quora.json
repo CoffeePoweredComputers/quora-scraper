@@ -1,0 +1,77 @@
+{
+    "title": "How does AI work? - Quora",
+    "tags": [
+        "Artificial Neural Networks",
+        "Deep Learning",
+        "Artificial General Intelligence",
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Computer Science",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mikkel Duif",
+                "href": "/profile/Mikkel-Duif"
+            },
+            "answer_text": "Let me give you a code-free example of how AI works and how you can play around with yourself! First of all, it is important to understand that AI can be a lot of things. However, at recent time one would probably refer to more advanced AI such as neural networks. It is also important to have in mind that neural networks can be a lot of things, and the network provided here is just a simply trained network that will give you an idea how it all works. Below you will see a picture from Excel trying to predict the a handwritten digit in a 28x28 grid. All cells are turned into a range between 0 and 1 indicating the greyscale of the digit. You see that it is 96% confident that this number is an 8.  So how you could let Excel guess what this number is? There could be several methods. Maybe you use the =SUM() function to take the sum of all the cells, and tell it that the probability it is an 8 is higher the more pixels are coloured, as 8 is typically covering a lot of pixels. Maybe you would use a combination of =IF() functions, to tell it that if certain areas contain values, we will guess x number. Maybe you play around with it enough and get and accuracy that is fairly high (random guessing is 10%). However, consistently getting above 90% accuracy requires advanced methods - and one of them could be a neural network. If you are already familiar with neural networks, you might have seen this illustration before (NB: the following example uses n = 30 in the hidden layer)[1]:  What we see is that it is simply some parameters that are initialised and in the end provides an output based on the input given. This is exactly what our Excel file does! The Excel file contains 3 sheets: \u2018Model\u2019, \u2018Parameters\u2019, \u2018Numbers\u2019. Let\u2019s have a look at \u2018Parameters\u2019.  What wee see are matrices of weights (ranging from weight_1_1 to weight_1_30) with dimensions 28x28. So what are all these numbers used for? It is used for our formulas in the cells Sigmoid1. So if we refer back to our previous illustration of the neural network, we see that each input has a weight going over to a new neuron in the hidden layer. So this is basically what\u2019s going on here! The first hidden neuron located in cell AD2 simply has the 28x28 input pixels multiplied by each weight in the first matrix of weight_1_1, and then a \u2018bias\u2019 (biases are located further down in the Parameters sheet) is added. All of this is then squeezed into the Sigmoid function. So let\u2019s quickly review the formula in cell AD2: [math]z=X \\cdot W+b[/math] [math]AD2=\\dfrac{1}{1+e^{-z}}[/math] Where X is the matrix of the input pixels and W is the matrix of the weight_1_1. I.e. the upper left pixel is multiplied by the upper left weight. This is done for all 784 weights and pixels, and the sum of this plus a bias in the end we call z. This is then put into the sigmoid function and we get our output in cell AD2. The same is true for our Sigmoid2 range. If you think back to the illustration of the network, you will remember that there are fewer weights connecting the second layer to the output layer.  As you see, we do it all over again for our output layer, just with fewer weights, and this time treating all the results we got from Sigmoid1 as our new [math]X[/math]. As you have noticed, the secondlast value has the highest activation, indicating that this number should be the number 8. Let just have a look at the last sheet called numbers. Just to show that the correct values of the numbers are not already given to the network.  As you see, this is just a sheet containing a lot of handwritten digits converted into 28x28 ranges with numbers ranging from 0 to 1. Now you might wonder: \u2018but how did we get all this weights and biases in the first place?\u2019. That a very good point. And to answer this question, we would have to know a bit about how to optimise parameters. For this, we use an algorithm called gradient descent. But for now, I think we should stop here, and just focus on that you actually understand the structure of a neural network now! I hope this little example has shown you how much neural networks are actually dependent on math and parameters, and is not any kind of voodoo magic as one of my readers commented in another of my posts. Update: I managed to remove the VBA code to generate numbers, so I could upload for you guys to play around with. In order to see a new number, just double click the number to the right, or manually enter something between 0 and 999. Here is a link: MNIST_Neural_Network - Quora.xlsx Footnotes[1] Neural networks and deep learning",
+            "date": "Updated December 12, 2017",
+            "views": "337",
+            "upvotes": " View 283 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aditya Deshpande",
+                    "user_href": "/profile/Aditya-Deshpande-21"
+                },
+                {
+                    "user_id": "Nikhil Sreenivasa",
+                    "user_href": "/profile/Nikhil-Sreenivasa"
+                },
+                {
+                    "user_id": "Ashutosh Choudhary",
+                    "user_href": "/profile/Ashutosh-Choudhary-2"
+                },
+                {
+                    "user_id": "Sathishkumar Thangavel",
+                    "user_href": "/profile/Sathishkumar-Thangavel-1"
+                },
+                {
+                    "user_id": "Joe Smith",
+                    "user_href": "/profile/Joe-Smith-3332"
+                },
+                {
+                    "user_id": "Devesh K",
+                    "user_href": "/profile/Devesh-K"
+                },
+                {
+                    "user_id": "Harper Wilson",
+                    "user_href": "/profile/Harper-Wilson-13"
+                },
+                {
+                    "user_id": "Carlos Johnson",
+                    "user_href": "/profile/Carlos-Johnson-100"
+                },
+                {
+                    "user_id": "Anil Alaf",
+                    "user_href": "/profile/Anil-Alaf"
+                },
+                {
+                    "user_id": "Eapen Ninan",
+                    "user_href": "/profile/Eapen-Ninan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gaurang Asopa",
+                "href": "/profile/Gaurang-Asopa-1"
+            },
+            "answer_text": "Artificial Intelligence. We all have come across this term very frequently lately. We hear things like, \"AI will take over our job\", and \"Trends are showing a sudden rise in AI-related jobs, should we be worried? \", and we often find ourselves unaware of what AI or Artificial Intelligence is. Let us find out what AI is. AI is a form of intelligence demonstrated by machines, in contrast to the natural intelligence displayed by humans. Colloquially, the term \"artificial intelligence\" is often used to describe machines (or computers) that mimic \"cognitive\" functions that humans associate with the human mind, such as \"learning\" and \"problem-solving\". (Artificial intelligence, n.d.) AI is of two types, ABI (artificial broad intelligence) and ANI (artificial narrow intelligence). ABI is what was used in Ultron in the Avengers movie. It is a type of artificial intelligence, which can take up and complete many tasks at once. This is still a distant dream for us, as we have just started understanding what ABI is and how we can harness it. It may be a couple of decades or even a century before this comes to life. ANI, on the other hand, is called artificial narrow intelligence and consists of machines, which are created to perform only one task. All forms of AI we use today belong to this sector. Ranging from Alexa to self-driving cars, all forms of AI are created to perform only one set of tasks at once. Let us try to understand how AI works. AI uses a simple concept of machine learning or supervised learning to train machines on how they can perform certain tasks without human intervention. We train machines using the concept of A to B mapping or A-B mapping. Let us understand this using an example of a machine which is used to find out if the image input made to it is a cat or not. After the initial coding is done, the program is made to learn how an image of a cat looks and for this purpose lots of images are added to it initially and each image is identified as \u2018cat\u2019 or \u2018not cat\u2019. This process of educating the machine on what an image of a cat looks like is called A-B mapping. Here all the images initially demarcated as \u2018cat\u2019 or \u2018not cat\u2019 are A and the output, which in this case is \u2018cat\u2019 or \u2018not cat\u2019 constitutes to B. Hundreds of images have to be added initially and each image must be classified as \u2018cat\u2019 or \u2018not cat\u2019 for a sophisticated machine to be created. Larger the data set that is used for training better the machine is at distinguishing whether the image is a \u2018cat' or \u2018not a cat'. Using the principles of A-B mapping the machine is essentially learning the difference between a cat and all other objects. Now that we have created a mechanism to train the machine, we need data to do so. Where does one get such large quantities of data? There are three major ways to do so, 1. Manual labelling. This is a time consuming and mundane way to collect data but does not involve and cost and is very accurate as we are labelling data exactly what we want it to be. In the above example, we can extract images of Google and manually label each image as \u2018cat' or \u2018not cat'. 2. Observing behaviour: In this method, the behaviour of the specific object we are trying to observe is noted and its corresponding output is recorded. For example if we want to create a program which helps us find out whether a machine in the production department is about to fail or not we can observe the behaviour of other such machine in other departments and record values such as machine temperature, pressure, etc. and a corresponding output such as machine failure or not. This way we can develop a program which warns us when it obverse eves behaviours when it is likely that the machine will fail considering the records. 3. Download from websites: we have millions of catalogues online, which help one train a machine quickly. These catalogues are usually paid and are the most expensive way to train a machine but are also the quickest way to do so, if time is a constraint. Working with large quantities of data has its own set of problems. Some of the most common problems with data are: 1. The phenomenon of \u2018garbage-in, garbage-out': Most project engineers do not know what kind of data is best required for training the machine. AI engineers come handy when one is trying to figure out what kind of data is best suited for the training of the machine. For example, if one is collecting data from a machine every 1 hour and is trying to figure out if it is going to need a break because its temperature is too high using a program, an AI engineer could tell him to collect information about the machine every 5 minutes as it is more apt for finding out when to stop the machine due to high temperatures. 2. Wrong labels and missing values: When training a machine one uses large quantities of data, which usually comes with certain values, which are wrong or missing. For example, one inputs \u2018cat' for a picture which is not of a cat or types \u2018cat' in front of a blank canvas. The machine in both cases will give a wrong analysis of the input image, it will output \u2018cat\u2019 for all blank canvases and may not be very accurate because of the wrong inputs initially. 3. Unstructured data: machines also cannot interpret unstructured data, which usually comes in the form of images or voice messages. Any machine, which is not specially made to analysis any of the data types, will show an error message or may crash every time the input is of a data type it cannot analyse. ",
+            "date": "Answered September 1, 2019",
+            "views": "269",
+            "upvotes": "0"
+        }
+    ]
+}

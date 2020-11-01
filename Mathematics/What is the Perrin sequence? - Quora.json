@@ -1,0 +1,27 @@
+{
+    "title": "What is the Perrin sequence? - Quora",
+    "tags": [
+        "Perrin Sequence",
+        "Number Sequences",
+        "Arithmetic",
+        "Sums and Series (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sabhya Kaushal",
+                "href": "/profile/Sabhya-Kaushal"
+            },
+            "answer_text": "Not going to mention anything here which a simple Wikipedia lookup wouldn\u2019t have uncovered, but here goes: An integer sequence depicted by the following recurrence relation: ,  is the Perrin sequence, with ,  and  as the seed values. The way it differs from its more well- known sibling Fibonacci sequence is that it considers the sum of its two predecessors skipping the immediate one, as opposed to: ,  , whose seed values are  and .  Coming back to the sequence under consideration, here are a first few terms of the Perrin sequence less than :  , as defined at OEIS.  Just as an addendum, here is a Python script to find the numbers belonging to the Perrin sequence lesser than upper_limit: #defining the seed values\u00a0list_1 = [3, 0, 2];\u00a0upper_limit = 100;\u00a0\u00a0for i in range(3, 100, 1):\u00a0    number = list_1[i - 2] + list_1[i - 3];\u00a0\u00a0    #breaking out of the loop as soon as the ith Perrin number crosses the upper_limit\u00a0    if(number > upper_limit):\u00a0        break;\u00a0\u00a0    #appending the number to the list list_1\u00a0    list_1.append(number);\u00a0\u00a0print(list_1);\u00a0, which prints out: [3, 0, 2, 3, 2, 5, 5, 7, 10, 12, 17, 22, 29, 39, 51, 68, 90]\u00a0The code above is quite straightforward, but in case there are some doubts somewhere, I will be more than glad to respond in the comment section.  Kindly have a look here, here, here and here for more information on the topic. Hope that helped. </EOA235> ",
+            "date": "Answered October 18, 2016",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sushil Kaushal",
+                    "user_href": "/profile/Sushil-Kaushal-2"
+                }
+            ]
+        }
+    ]
+}

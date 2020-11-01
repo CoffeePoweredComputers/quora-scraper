@@ -1,0 +1,74 @@
+{
+    "title": "How to use SQL 'with' statement - Quora",
+    "tags": [
+        "MySQL",
+        "SQL",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Adis Hrnjica",
+                "href": "/profile/Adis-Hrnjica"
+            },
+            "answer_text": "So WITH syntax is like using temp variable or inline view where you can organize complex queries. To make queries reusable, SQL added views which can be used in other queries just like tables. View has a name in database schema, so SQL added a WITH statement so we can define \u201cstatement scoped views\u201d. You will often hear a term CTE (common table expression), which is also called WITH clause, and they are only valid in the query they below to. For the usage, you can have 1 query or multiple like below: ;WITH query_name1 AS (\u00a0     SELECT ...\u00a0     )\u00a0   , query_name2 AS (\u00a0     SELECT ...\u00a0       FROM query_name1\u00a0        ...\u00a0     )\u00a0SELECT ...\u00a0You will notice that syntax after WITH is the same as for creating a view, but it MUST be followed with SELECT. I use them to break complex queries, complex joins so it easier for me to see what\u2019s happening. You can create a recursive queries with them, and you can reference the resulting table multiple times. Basically, you create inline view and then you can do a custom SELECT from that view. ",
+            "date": "Answered April 24, 2017",
+            "views": "77",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rohan Rao",
+                    "user_href": "/profile/Rohan-Rao-66"
+                },
+                {
+                    "user_id": "Andriy Malenkov",
+                    "user_href": "/profile/Andriy-Malenkov"
+                },
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                },
+                {
+                    "user_id": "Javier Carrion",
+                    "user_href": "/profile/Javier-Carrion"
+                },
+                {
+                    "user_id": "Franklin Horn",
+                    "user_href": "/profile/Franklin-Horn"
+                },
+                {
+                    "user_id": "Tara Zieminek",
+                    "user_href": "/profile/Tara-Zieminek"
+                },
+                {
+                    "user_id": "Preeti Satya",
+                    "user_href": "/profile/Preeti-Satya-1"
+                },
+                {
+                    "user_id": "Johnnie Shlomo",
+                    "user_href": "/profile/Johnnie-Shlomo"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rakesh Gopal",
+                "href": "/profile/Rakesh-Gopal-1"
+            },
+            "answer_text": "WITH Statements is like a temporary result set holder. WITH statements need to be followed by SELECT, INSERT, UPDATE or DELETE statements. You use them to break very complex queries. On the other hand, simplifying code makes it easily readable. The generic Syntax of WITH Statement is: ;WITH CTE1 AS (YOUR SELECT STATEMENT), CTE2 AS (YOUR SELECT STATEMENT) SELECT * FROM CTE1 JOIN CTE2; GO I also have a detailed course on Common Table Expressions (CTE) ",
+            "date": "Answered May 7, 2017",
+            "views": "45",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andriy Malenkov",
+                    "user_href": "/profile/Andriy-Malenkov"
+                },
+                {
+                    "user_id": "Preeti Satya",
+                    "user_href": "/profile/Preeti-Satya-1"
+                }
+            ]
+        }
+    ]
+}

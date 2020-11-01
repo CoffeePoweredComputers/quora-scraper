@@ -1,0 +1,40 @@
+{
+    "title": "How much RAM can a 32-bit operating system use? - Quora",
+    "tags": [
+        "32-Bits",
+        "64-Bit",
+        "Random-Access Memory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Wessel",
+                "href": "/profile/Robert-Wessel"
+            },
+            "answer_text": "A number of 32-bit (and smaller) ISAs have grown some sort of addressing extensions, that allow the use of more than the nominal amount of RAM that the address bits would imply. In x86, this was known as PAE, and allowed the CPU to attach up to 64GB of RAM to otherwise 32-bit processors. This is commonly done by using some extra bits in the page tables. An OS has to have special code to take advantage of that sort of thing, and the degree t which it takes advantage impacts the complexity of that code. For example, it would be a relatively isolated amount of code if the OS just used that extra RFFAM for disk caching. It\u2019s more complex if that extra RAM can be used for normal process storage. 32-bit versions Windows, for example, supported up to 64GB in server versions. The issue with client OS\u2019s for Windows was that device driver with LME (\u201cLarge Memory Enabled\u201d) support was thin, at best for much consumer hardware. This is actually a very old idea, and some form of that tends to get reinvented every time an ISA runs out of address space. For example, in the mid-1970s, the 24-bit addressing IBM S/370s grew what ended being called the \u201c3033 extensions (after the processor they were first shipped in), which used two otherwise unused address bits in the page tables to be able to address 64MB (instead of 16MB) of physical RAM. Of course that sort of thing is a PITA for everyone, and the usual long term solution solution is to (eventually) move to a \u201cwider\u201d ISA (64-bit processors, in the most recent set of transitions). ",
+            "date": "Answered August 1, 2020",
+            "views": "130",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Dan-L-Oom"
+                },
+                {
+                    "user_id": "Ferenc Valenta",
+                    "user_href": "/profile/Ferenc-Valenta"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ferenc Valenta",
+                "href": "/profile/Ferenc-Valenta"
+            },
+            "answer_text": "\u201cHow much RAM can a 32-bit operating system use?\u201d That depends on the OS. See here for Windows: Memory Limits for Windows and Windows Server Releases - Win32 apps Many 32-bit systems can handle much more than 4G, however for one process, typically no more than 2G addressable memory is available. Server operating systems were designed to run many applications at a time, that\u2019s why more memory has to be handled. The 2G addressable memory does not mean that no more memory can be used by a process. The 2G limit exhaust the virtual address space. It\u2019s possible to have much more memory allocated and used for data storage, the constraint is only that no more than 2G can be mapped at a time. Clever applications can dynamically map and unmap the physical memory into the virtual address space as needed. ",
+            "date": "Answered August 1, 2020",
+            "views": "67",
+            "upvotes": "0"
+        }
+    ]
+}

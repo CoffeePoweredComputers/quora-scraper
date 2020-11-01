@@ -1,0 +1,69 @@
+{
+    "title": "What is \u03c0ps sampling? How is it different from PPS sampling? Could you provide derivations also? - Quora",
+    "tags": [
+        "Sampling (signal processing)",
+        "Sampling (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sanket Agrawal",
+                "href": "/profile/Sanket-Agrawal-36"
+            },
+            "answer_text": "Note that both PPS and ps are \u201cProbability proportional to size sampling scheme\u201d. The difference actually lies in the sampling strategy, i.e. with or without replacement. Consider a Simple Random sampling scheme. For the with replacement case, we find that each unit at any point of time has the same probability of being selected. This probability does not differ, neither across the units nor across the subsequent draws. While for without replacement case, the probability of selecting a unit, though constant across all units at any given draw, varies for subsequent draws given the results of the previous draws are known. Thus in a way, shifting from WR to WOR, adds variation across one level of probabilities. Now consider the Varying probability sampling scheme, where the probability of selection of any unit at any draw is proportional to its size. This is called the Probability Proportional to Size sampling scheme (PPS). Thus, the probability of selection of a unit at any draw varies inherently across all units. Then whether or not \u201creplacement\u201d, there is already one level of variation present. Now, for a with replacement case, since the probability of selection at any subsequent draws is independent of any of the previous draws and remains the same, we finally have again only one level of variation. Whereas, for the without replacement case, we now have varying probabilities across the units as well as across subsequent draws. And thus, we have variation at two levels. The two sampling methods are called PPSWR and PPSWOR respectively. The problem arises here since dealing with one level of variation is easy while dealing with two levels of variations is quite an ordeal. Look at the Des Raj estimators and Murthy estimators for the case of sample size 2 and their analysis, you will understand the problem. So now, we want to reduce this two level variation to a one level variation. And thus we bring into ps sampling scheme. According to this scheme, the inclusion probability of a unit is made proportional to its size. And the estimators employed depend on these inclusion probabilities. One of the examples is Horvitz-Thompson estimator. Doing so, we need only to depend on the inclusion probabilities of the units, which does not depend on any draw and thus varies only across the different units of the population which makes the further analysis quite simpler. ",
+            "date": "Answered November 22, 2019",
+            "views": "564",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Manish Kumar",
+                    "user_href": "/profile/Manish-Kumar-8695"
+                },
+                {
+                    "user_id": "Kunjan Kaim",
+                    "user_href": "/profile/Kunjan-Kaim-1"
+                },
+                {
+                    "user_id": "Rajni Prajapat",
+                    "user_href": "/profile/Rajni-Prajapat-1"
+                },
+                {
+                    "user_id": "Namrata Pandey",
+                    "user_href": "/profile/Namrata-Pandey"
+                },
+                {
+                    "user_id": "Kumar Satyam",
+                    "user_href": "/profile/Kumar-Satyam-14"
+                },
+                {
+                    "user_id": "Ritu Sharma",
+                    "user_href": "/profile/Ritu-Sharma-354"
+                },
+                {
+                    "user_id": "ANUPAMA NANDI",
+                    "user_href": "/profile/ANUPAMA-NANDI-1"
+                },
+                {
+                    "user_id": "Rishabh Tyagi",
+                    "user_href": "/profile/Rishabh-Tyagi-11"
+                },
+                {
+                    "user_id": "Brijesh Dhimmar",
+                    "user_href": "/profile/Brijesh-Dhimmar"
+                },
+                {
+                    "user_id": "Arpan Sil",
+                    "user_href": "/profile/Arpan-Sil"
+                },
+                {
+                    "user_id": "Nalin Sharma",
+                    "user_href": "/profile/Nalin-Sharma-20"
+                },
+                {
+                    "user_id": "Shreya Srivastava",
+                    "user_href": "/profile/Shreya-Srivastava-175"
+                }
+            ]
+        }
+    ]
+}

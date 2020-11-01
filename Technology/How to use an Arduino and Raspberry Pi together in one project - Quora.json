@@ -1,0 +1,237 @@
+{
+    "title": "How to use an Arduino and Raspberry Pi together in one project - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Arduino (company)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tim Cole",
+                "href": "/profile/Tim-Cole-7"
+            },
+            "answer_text": "As others have pointed out, the two platforms work together quite nicely. The RPi has a lot of high-end capability, but interfacing with hardware can be very tricky with Linux. It\u2019s not a real-time operating system, and getting Linux programs to work with new hardware is tricky. The Arduino has no operating system, and you can work at the hardware level with no restrictions. You\u2019re limited only by your ability to understand the demands of your sensors and actuators. Your Arduino can act as a buffer between your RPi and your custom hardware. You\u2019d use your RPi to handle things like a nice user interface, access to the internet, or number crunching. It would communicate with one or more Arduinos which would hide the hardware details. For example, you might have a serial link between your RPi and an Arduino that runs weather sensors. Your RPi could send a message such as \u201cGet temperature\u201d across the serial link. Your Arduino would then reply with its most up-to-date temperature measurement. At the RPi level, you don\u2019t need to worry about how the Arduino does it. You just get the temperature and put it up on your display \u2014 a task that\u2019s pretty easy with Linux. At the Arduino level, you don\u2019t need to worry about what to do with the temperature. You load the proper registers, tend to whatever timing requirements the temperature sensor might have, and store the data. When a command comes in, you just send the data off, and do it all over again. It\u2019s an elegant way to handle a complex problem. ",
+            "date": "Answered November 22, 2017",
+            "views": "27",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kiran Maathu",
+                    "user_href": "/profile/Kiran-Maathu"
+                },
+                {
+                    "user_id": "Bj\u00f6rn David Paulsen",
+                    "user_href": "/profile/Bj\u00f6rn-David-Paulsen"
+                },
+                {
+                    "user_id": "Sheela Kathavate",
+                    "user_href": "/profile/Sheela-Kathavate"
+                },
+                {
+                    "user_id": "Wolf Donat",
+                    "user_href": "/profile/Wolf-Donat"
+                },
+                {
+                    "user_id": "Soroush J Pour",
+                    "user_href": "/profile/Soroush-J-Pour"
+                },
+                {
+                    "user_id": "Nikhil Goyal",
+                    "user_href": "/profile/Nikhil-Goyal-33"
+                },
+                {
+                    "user_id": "Andrew Rothman",
+                    "user_href": "/profile/Andrew-Rothman-6"
+                },
+                {
+                    "user_id": "Clivant Yeo",
+                    "user_href": "/profile/Clivant-Yeo"
+                },
+                {
+                    "user_id": "Jason Li",
+                    "user_href": "/profile/Jason-Li-181"
+                },
+                {
+                    "user_id": "David Kittrell",
+                    "user_href": "/profile/David-Kittrell"
+                },
+                {
+                    "user_id": "Joel Hacker",
+                    "user_href": "/profile/Joel-Hacker-4"
+                },
+                {
+                    "user_id": "Sander Sorbo",
+                    "user_href": "/profile/Sander-Sorbo"
+                },
+                {
+                    "user_id": "Jon Hurd",
+                    "user_href": "/profile/Jon-Hurd-4"
+                },
+                {
+                    "user_id": "Srikanth Arjunan Rajamanickam",
+                    "user_href": "/profile/Srikanth-Arjunan-Rajamanickam"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rod Nussbaumer",
+                "href": "/profile/Rod-Nussbaumer-1"
+            },
+            "answer_text": "In principle, each one brings an important thing to the table that the other lacks. The Pi has a nice OS with all sorts of facilities to support a GUI, filesystem, networking and other high-end capabilities. The thing it lacks it determinism, due to the multitasking that it provides. That\u2019s where the Arduino is very strong. You can run code in a tight loop, or make it interrupt driven from a timer, and have very fast and precise timing, which makes it useful for the low-level bitbashing tasks that a microcontroller is good at. Plus the Arduino is more abundant in IO. So, the happy marriage is to allow the two to communicate in some way that is well supported on both platforms, such as RS-232 or even TTL level serial. In theory, you could speed things up a bit using SPI or I2C, but I think that is overkill unless performance is at a premium. Maybe they can use the USB as a serial interface, as well a a way to power the Arduino. Or, maybe you just use a Beaglebone, and get the benefit of both devices in one package. ",
+            "date": "Answered November 22, 2017",
+            "views": "14",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nikhil Goyal",
+                    "user_href": "/profile/Nikhil-Goyal-33"
+                },
+                {
+                    "user_id": "David Kittrell",
+                    "user_href": "/profile/David-Kittrell"
+                },
+                {
+                    "user_id": "Andrew Rothman",
+                    "user_href": "/profile/Andrew-Rothman-6"
+                },
+                {
+                    "user_id": "Joel Hacker",
+                    "user_href": "/profile/Joel-Hacker-4"
+                },
+                {
+                    "user_id": "Andrew Lindsey",
+                    "user_href": "/profile/Andrew-Lindsey-3"
+                },
+                {
+                    "user_id": "Robin Bussell",
+                    "user_href": "/profile/Robin-Bussell"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andy Heilveil",
+                "href": "/profile/Andy-Heilveil"
+            },
+            "answer_text": "I am currently doing so at a haunted house. The Pi runs video while the Arduino runs some stepper motors. They are connected over the USB serial link of the Arduino. The video is a simulation of the walls of a mine elevator shaft and the motors are simulating a pulley attached to the roof of the elevator car and a depth indicator dial. The Pi also flickers the lights when the whole elevator fails catastrophically dropping the guests deep into the Earth. To move a stepper motor smoothly you must issue the steps at a very regular pace. You can never trust the Pi to produce regularly timed pulses. The best I could ever do with gaining root privileges and other arcane system settings was to up my task\u2019s priority to 20 notches past the nominal highest.I still suffered from occasional 6 millisecond interruptions. That is longer than the step rate of the motors which leads to all sorts of undesired behavior. Note: it was planned that the Pi was going to run multiple monitors so it was programmed to push the video to some widows laptops. We ended up with a donation of a 52\u2033 monitor and the Pi might have run that directly. ",
+            "date": "Answered October 26, 2019",
+            "views": "290",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Maharshi Oza",
+                "href": "/profile/Maharshi-Oza-4"
+            },
+            "answer_text": "Use communication protocol between Arduino and Raspberry PI . There is lot of options available for communication. UART Communication. ( Rx |Tx | GND pins used )USB port (Com port used)SPI communication (MISO | MOSI | SS | SCK )I2C Communication (SDA|SDL|GND pins used )This is the basic methods for use two board in one project for Extra extending I\\O. Raspberry pi is not having a analog input so some time I use the combination of it for analog input. ",
+            "date": "Answered November 22, 2017",
+            "views": "962",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kiran Maathu",
+                    "user_href": "/profile/Kiran-Maathu"
+                },
+                {
+                    "user_id": "Nikhil Goyal",
+                    "user_href": "/profile/Nikhil-Goyal-33"
+                },
+                {
+                    "user_id": "Geeta Pandya",
+                    "user_href": "/profile/Geeta-Pandya-1"
+                },
+                {
+                    "user_id": "Bhavesh Khamar",
+                    "user_href": "/profile/Bhavesh-Khamar"
+                },
+                {
+                    "user_id": "Ajay Rajpoot",
+                    "user_href": "/profile/Ajay-Rajpoot-5"
+                },
+                {
+                    "user_id": "Tim Cole",
+                    "user_href": "/profile/Tim-Cole-7"
+                },
+                {
+                    "user_id": "Meet Panchal",
+                    "user_href": "/profile/Meet-Panchal-6"
+                },
+                {
+                    "user_id": "Amy Bowersox",
+                    "user_href": "/profile/Amy-Bowersox"
+                },
+                {
+                    "user_id": "Arjun Mertiya",
+                    "user_href": "/profile/Arjun-Mertiya"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Lindsey",
+                "href": "/profile/Andrew-Lindsey-3"
+            },
+            "answer_text": "I configure the Arduino to act as a USB serial device. Of course, this requires you to use an Arduino with a USB connection. The Arduino can take actions based on serial commands, or gather data and transmit it on the serial link. You can then use a USB port on the Pi and any standard serial driver to connect to it. I then use a Python script on the Pi to look for the USB serial port, connect to it, send commands and receive data from the Arduino. ",
+            "date": "Answered November 22, 2017",
+            "views": "524",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nikhil Goyal",
+                    "user_href": "/profile/Nikhil-Goyal-33"
+                },
+                {
+                    "user_id": "Amy Bowersox",
+                    "user_href": "/profile/Amy-Bowersox"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anders Borg",
+                "href": "/profile/Anders-Borg-1"
+            },
+            "answer_text": "Complementing others answers, via a bridge you can connect Arduino shields to a Pi without an Arduino: Raspberry Pi to Arduino Shields Connection Bridge Note that a Pi is great for number-crunching, visualization and communication, while an Arduino and related shields are optimized for digital and analog I/O. ",
+            "date": "Answered November 26, 2017",
+            "views": "654",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Chuck Britton",
+                    "user_href": "/profile/Chuck-Britton"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Mccullough",
+                "href": "/profile/John-Mccullough-26"
+            },
+            "answer_text": "You might have the Pi act as a weather station display, and the Arduino as field sensors. Some Pi models already have Bluetooth, then all you need is an HC-05 Bluetooth module for the Arduino and the temperature sensors, wind speed sensors, and wind direction sensors. ",
+            "date": "Answered November 22, 2017",
+            "views": "422",
+            "upvotes": " Answer requested by Bennett Godinho-Nelson"
+        },
+        {
+            "author_info": {
+                "name": "Matt Galles",
+                "href": "/profile/Matt-Galles"
+            },
+            "answer_text": "You could use Arduino for data acquisition or more control, then use a Raspberry Pi for the logic of the system, passing commands to the Arduino. ",
+            "date": "Answered November 23, 2017",
+            "views": "310",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Reg Burkett",
+                "href": "/profile/Reg-Burkett"
+            },
+            "answer_text": "How to Connect and Interface a Raspberry Pi with an Arduino ",
+            "date": "Answered November 22, 2017",
+            "views": "467",
+            "upvotes": " Answer requested by Bennett Godinho-Nelson"
+        }
+    ]
+}

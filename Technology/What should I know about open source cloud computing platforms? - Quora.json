@@ -1,0 +1,74 @@
+{
+    "title": "What should I know about open source cloud computing platforms? - Quora",
+    "tags": [
+        "What Should I Know About X?",
+        "Distributed Systems",
+        "Open Source Software",
+        "Cloud Services",
+        "Open Source"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "M\u00e5rten Mickos",
+                "href": "/profile/M\u00e5rten-Mickos"
+            },
+            "answer_text": "There are 4 main open source cloud platforms, i.e. orchestration platforms on the IaaS layer: Eucalyptus, OpenNebula, CloudStack, and OpenStack. The 3 first mentioned (Eucalyptus, OpenNebula, CloudStack) are products whereas OpenStack is \"a loosely coupled set of components\", as its co-founder Chris Kemp describes it. Eucalyptus stands out as the only one with API compatibility with Amazon Web Services (AWS). It's typically used by companies who also use AWS. They value ease of operation, agility and affordability. OpenNebula has a loyal following among research institutions and some tech companies. One could argue that their strength lies in virtualization management. CloudStack is a robust product, popular among service providers. Its primary developer is Citrix. OpenStack has the largest community of contributor and the largest set of supporting IT vendors. It has been argued that its broad and all-encompassing feature ambition makes it cumbersome to deploy and operate. There is some fragmentation in the OpenStack ecosystem; not all flavors of the project are mutually compatible. Red Hat seems likely to become the leading vendor in the OpenStack ecosystem. They have said that it will take another 18-24 months before it starts being a business for them. CloudStack and OpenStack have ambitions to power public clouds, whereas Eucalyptus and OpenNebula are focused on private and hybrid clouds. In terms of total number of hosts / nodes / servers served worldwide, I would guess that CloudStack currently has the most. ",
+            "date": "Answered November 3, 2013",
+            "views": "19",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nitin Shukla",
+                    "user_href": "/profile/Nitin-Shukla-2"
+                },
+                {
+                    "user_id": "Ankur Sao",
+                    "user_href": "/profile/Ankur-Sao"
+                },
+                {
+                    "user_id": "Pranay Pareek",
+                    "user_href": "/profile/Pranay-Pareek"
+                },
+                {
+                    "user_id": "Punith Somanna",
+                    "user_href": "/profile/Punith-Somanna"
+                },
+                {
+                    "user_id": "William Mason",
+                    "user_href": "/profile/William-Mason-5"
+                },
+                {
+                    "user_id": "Aleksandr Blekh",
+                    "user_href": "/profile/Aleksandr-Blekh"
+                },
+                {
+                    "user_id": "Timothy Cramer",
+                    "user_href": "/profile/Timothy-Cramer-1"
+                },
+                {
+                    "user_id": "Greg DeKoenigsberg",
+                    "user_href": "/profile/Greg-DeKoenigsberg-1"
+                },
+                {
+                    "user_id": "Mike Harnish",
+                    "user_href": "/profile/Mike-Harnish"
+                },
+                {
+                    "user_id": "Eric Choi",
+                    "user_href": "/profile/Eric-Choi-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maarten Ectors",
+                "href": "/profile/Maarten-Ectors"
+            },
+            "answer_text": "I assume you are wondering about IaaS open source solutions like cloudstack, eucalyptus, OpenStack, etc.  OpenStack is the market leader and is likely the only one that will be broadly deployed. Eucalyptus was the first but its architecture does not scale as much when used for public cloud. Cloudstack is not having wide adoption due to OpenStack being the fastest growing open source solution. Within OpenStack there are different distributions. The leading one is Ubuntu because OpenStack's development process is based on Ubuntu's. You might also want to check out their other open source products like Juju and MaaS. ",
+            "date": "Updated November 5, 2013",
+            "views": "222",
+            "upvotes": "0"
+        }
+    ]
+}

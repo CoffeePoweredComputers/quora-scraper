@@ -1,0 +1,100 @@
+{
+    "title": "What is the difference between Linux, Unix, Mac and Windows? - Quora",
+    "tags": [
+        "Mac OS Classic",
+        "Windows Vs. Linux",
+        "Unix",
+        "Linux",
+        "Microsoft Windows"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gareth Jones",
+                "href": "/profile/Gareth-Jones-59"
+            },
+            "answer_text": "There are some excellent answers, but I\u2019ll try for a shorter and perhaps simpler one. Everything you mentioned is an operating system. In the beginning, there was UNIX. This was an operating system so that BIG computers could run programs and talk to each other. It was developed at Bell Labs. It wasn\u2019t important for Bell to control who got a copy of the software, since the computers to run it were rare anyway. Other companies licensed UNIX from Bell and made their own versions. Computers got more common, so Bell got more restrictive. It eventually went to court to try to shut down the Berkeley Software Distribution (BSD) version of UNIX, which was being given away for free. It failed, because it had lost its copyright over the software. The decision in the trial was kept secret until 2004. These days, there are several versions of BSD UNIX. While the outcome of the UNIX trial was uncertain, a Finnish university student named Linus Torvalds wrote a \u201ckernel\u201d for a UNIX system that he he could run on his personal computer. He combined that with a bunch of programs written for the Free Software Foundation, which had just about everything needed for a UNIX-style operating system except the kernel. Together, they made Linux. It\u2019s like UNIX, but since the kernel is different, it isn\u2019t called UNIX. Since it\u2019s free to use and free to modify, a number of individuals have made customized installations comprised of the Linux kernel and various programs. These are called \u201cdistributions,\u201d and the most famous of them these days are Ubuntu (put out by a company called Canonical), Fedora (put out by a company called Red Hat) and Mint (a community-driven project). The Mac OS was originally an Apple-only operating system, written from scratch, and mostly famous for its excellent user interface. You know, the whole \u201cWindows, icons, menus, pointer\u201d or WIMP interface that everyone is using now. Later, it decided to adapt a BSD UNIX as its kernel, so it is, strictly speaking, a UNIX itself. It just doesn\u2019t look like the others, and you\u2019re not supposed to run it on non-Apple computers. Windows was originally a WIMP interface for Microsoft\u2019s Disk Operating System, or DOS. A pretty wimpy interface it was, too, until about version 3.3, when people began to find using it less painful than having root canals. It is the one mainstream operating system that is not UNIX or derived from UNIX. Before Windows NT, it was derived from DOS; Windows NT and after are derived from an operating system called VMS. I hope this helps. ",
+            "date": "Answered January 28, 2017",
+            "views": "128",
+            "upvotes": " View 27 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sridevi Ramalingam",
+                    "user_href": "/profile/Sridevi-Ramalingam-3"
+                },
+                {
+                    "user_id": "Robin Ceres",
+                    "user_href": "/profile/Robin-Ceres"
+                },
+                {
+                    "user_id": "Shajal Kumer",
+                    "user_href": "/profile/Shajal-Kumer"
+                },
+                {
+                    "user_id": "Hamish Goater",
+                    "user_href": "/profile/Hamish-Goater"
+                },
+                {
+                    "user_id": "Kurmanadh Valla",
+                    "user_href": "/profile/Kurmanadh-Valla"
+                },
+                {
+                    "user_id": "Charan Teja",
+                    "user_href": "/profile/Charan-Teja-34"
+                },
+                {
+                    "user_id": "John Ye",
+                    "user_href": "/profile/John-Ye-29"
+                },
+                {
+                    "user_id": "James Nguyen",
+                    "user_href": "/profile/James-Nguyen-62"
+                },
+                {
+                    "user_id": "K\u00f6vics Gerg\u0151",
+                    "user_href": "/profile/K\u00f6vics-Gerg\u0151"
+                },
+                {
+                    "user_id": "Faiz Arifin",
+                    "user_href": "/profile/Faiz-Arifin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hugh Caley",
+                "href": "/profile/Hugh-Caley"
+            },
+            "answer_text": "Back in the 70s it started to become obvious that personal computers were going to become important in the home and the economy. Three of the people/groups that became important in the race to become the computer providers for these purposes were: Apple Computer, driven by Steve Jobs who wanted personal computers to not only be useful but to also be beautiful, works of art in their own right, from the outer hardware to the user interface. Apple computers, such as the Macintosh, therefore tend to be innovative in hardware and software, and maintain a smaller, loyal fan base. Microsoft: came up with Windows as a cheaper alternative to the Macintosh operating system that would run on less expensive generic PC hardware. UNIX/Linux: originally created primarily by computer scientists to implement more esoteric computer features such as multitasking and memory protection, which would become very important to computer users later. As time passed and computer processors became more and more powerful, it became possible, and important, for personal computer operating systems to become less vulnerable to errors and bad programming so they could run longer without crashing, and to have the abliity to truly run multiple programs at once. The Windows user interface added true multitasking with Windows 95, but was still too vulnerable to program errors. Eventually the Windows interface was merged with Microsoft's more serious \"server\" platform, Windows NT, to become Windows 2000 and its descendants. Apple eventually \"ported\" (rewrote) their user interface to run on top of a type of UNIX, which already had multitasking and memory protection. This was MacOS X. So the Macintosh is currently a type of UNIX, but Apple is very careful to hide that complexity from the casual user. UNIX itself was well designed to use the new hardware, having originally been designed to run on more powerful and expensive \"mini\" computers, but the various versions of UNIX were either very expensive (Sun, IRIx, SGI, etc.) or were meant for academic use and had very restrictive licenses (the various versions of BSD). An American, Richard Stallman, decided to create a \"clone\" of the UNIX programs that would have a public license and would be free to use, as long as the developers who used it would contribute any updates they came up with back to the community, the famous GNU license. Stallman\u2019s choice for a \u201ckernel\u201d, HURD, never really worked out. Meanwhile, a Finnish man, Linus Torvalds, wanted a version of the UNIX kernel (the very low level software between the hardware and the operating system) that wouldn't be encumbered by the various UNIX licenses either. This became Linux (Linus + UNIX), which he eventually released under the GNU license as well. Stallman's and Torvald's work were combined to become GNU/Linux, now generally just called Linux. UNIX and Linux have graphical user interfaces, but they have a very powerful non-graphical interface (cli) that is more useful for server applications. So, to conclude: UNIX, powerful operating system, not owned by any single company, generally expensive and used primarily by large companies who have legacy programs or who will pay more for more guaranteed uptime. Runs on many types of processors. Linux, a \"clone\" of UNIX that is free to use, has the power of UNIX and is licensed using the GNU license. Used extensively for \"backend\" purposes since it is inexpensive and powerful but doesn't have a single well-defined graphical user interface. Distributed by several companies that provide various levels of service to the platform for a fee, such as RedHat and Ubuntu. In return, these companies give back software they develop and update to the community. Macintosh: now running a type of UNIX with an elaborate and easy to use user interface; only runs on hardware sold by Apple itself. Generally used by people who want a consistent user interface and \"pretty\" hardware, and who will pay a bit more for this. Currently running on x86-type processors only. Windows: originally a knockoff of the Macintosh operating system which has now become very powerful and the most popular OS on inexpensive PC hardware provided primarily by other manufacturers (Microsoft generally doesn't build computers). Currently running on x86-type processors only. ",
+            "date": "Updated May 20, 2020",
+            "views": "65",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nishith Sheth",
+                    "user_href": "/profile/Nishith-Sheth-8"
+                },
+                {
+                    "user_id": "Viswajith P Viswanath",
+                    "user_href": "/profile/Viswajith-P-Viswanath"
+                },
+                {
+                    "user_id": "Nirmal Nair",
+                    "user_href": "/profile/Nirmal-Nair-4"
+                },
+                {
+                    "user_id": "Mrinal Sethi",
+                    "user_href": "/profile/Mrinal-Sethi"
+                },
+                {
+                    "user_id": "Mohit Anchan",
+                    "user_href": "/profile/Mohit-Anchan"
+                },
+                {
+                    "user_id": "Amruta Shelar",
+                    "user_href": "/profile/Amruta-Shelar-2"
+                }
+            ]
+        }
+    ]
+}

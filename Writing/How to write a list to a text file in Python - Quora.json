@@ -1,0 +1,24 @@
+{
+    "title": "How to write a list to a text file in Python - Quora",
+    "tags": [
+        "Text Files",
+        "Python Libraries",
+        "Python 3",
+        "Learning Python",
+        "Python (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kirby Urner",
+                "href": "/profile/Kirby-Urner"
+            },
+            "answer_text": "That sounds like an easy question to answer, and if all the elements in your list have a textual representation, starting with Python strings, then it is. A list of strings and numbers may be read out to a text file, one element per line: with open(\u201coutput.txt\u201d, \u201cw\u201d) as the_file:\u00a0    for elem in the_list:\u00a0        print(elem, file = the_file)\u00a0That\u2019s in Python 3.x wherein print is a function, not a keyword, and takes the named argument file=. However, the Python collection type list is able to hold objects of any type and so the question then becomes: do all the elements in your list actually have a way to represent themselves in text? Think of datetime objects for example. You have many string formats to choose from in that case. Even if the list elements do have string representations, does the representation constitute sufficient information to reconstitute said objects whenever they\u2019re read back in, from the list? Could you send the list to another computer and get all the same objects just from that list? Answer: not necessarily. These kinds of questions take you deeper into Python and the whole topic of object serialization. ",
+            "date": "Answered July 21, 2020",
+            "views": "100",
+            "upvotes": "0"
+        }
+    ]
+}

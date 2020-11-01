@@ -1,0 +1,67 @@
+{
+    "title": "What is a graph in graph theory? - Quora",
+    "tags": [
+        "Discrete Mathematics",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hadayat Seddiqi",
+                "href": "/profile/Hadayat-Seddiqi"
+            },
+            "answer_text": "A graph [math]G[/math] is just a set of vertices [math]V[/math] and edges [math]E[/math]. The vertices are like dots and the edges connect dots to other dots. The vertices can be weighted or unweighted. If it is weighted then you can assign some number to each vertex, and if it is unweighted then there is no such assignment. Same thing for edges. In addition to weightings, edges can be directed or undirected. This is actually a property of the graph itself, so one says that [math]G[/math] is either a directed or undirected graph. What this means is that if I have vertex [math]a[/math] and vertex [math]b[/math] and I say I have a directed edge between the two, then I'm making an ambiguous statement because the edge must be from one vertex to another. In other words, edges are represented by pairs of vertices, i.e. [math]e_{ab} = (a,b)[/math] which means there is an edge going from [math]a[/math] to [math]b[/math]. If [math]G[/math] is an undirected graph, then [math]e_{ab} = (a,b) = (b,a) = e_{ba}[/math], but this is not the case if our graph is directed (i.e. [math](b,a)[/math] doesn't necessarily exist in the set of edges just because [math](a,b)[/math] does).  Here's an example. Imagine we have a graph that represents flights to and from Atlanta, New York, and Los Angeles. Then we can weight edges according to ticket prices. So to fly from Atlanta to LA is $250, so we can assign a directed edge from ATL to LA to be 250. There might be a flight back from LA to ATL, but maybe it turns out that it's $300 instead (if you used an undirected graph, you wouldn't be able to do this, the undirected edge would be the same as having two directed edges of equal weight). And maybe there's a flight from NY to LA, but not the other way around. Maybe you are planning a trip though, from Argentina to Greenland, and you have a set of cities (vertices) that you can hop around to get to your destination, and edges again are flight paths. Make the edges weighted by ticket prices as before, and now make the vertices weighted by how expensive food and lodging is there (assuming you use the same amount of resources at any city). This is a good way to frame a problem such as, \"How do I get to Greenland from Argentina while spending the least amount of money?\" Graphs can be represented in mainly two ways, an adjacency matrix and an adjacency list. The adjacency matrix indexes the vertices by the row and column indexes. Say you have a matrix [math]A[/math] with elements [math]a_{ij}[/math]. Then [math]a_{1,1}[/math] is the weight of vertex one, and [math]a_{1,4}[/math] is the weight of a directed edge from vertex one to vertex four. Notice that if our graph is an undirected graph, its corresponding adjacency matrix is symmetric, i.e. [math]A = A^T[/math], but in a directed graph this is not always true. Also, if an off-diagonal element is zero, that means that edge does not exist in the graph (equivalent to saying an edge has zero weight). One interesting part of graph theory is the way you can interpret [math]A[/math], including looking at its eigenspectrum. In the context of quantum mechanics, for example, it can tell you about the energies in a multi-particle system existing in a lattice. The other way of representing a graph is with an adjacency list. Take a list of objects where the list has length equal to the number of vertices in the graph. Then at each point in the list, there exists another list which includes the vertices. In other words, you have a list [math]L = {l_1, l_2, \\ldots, l_n}[/math] for [math]n[/math] vertices. Then [math]l_1 = {4,6,7}[/math], meaning that in this graph, we have directed edges going from vertex one to vertices four, six, and seven. If this graph is undirected, then you can move to [math]l_4[/math] and you will find that it includes a one in it (but for the directed case this is not always true). The benefit of using a list instead of a matrix is that, if your graph is sparse (meaning the number of edges is \"not large\"), then it's very memory-efficient when storing on a computer, but the downside is that you don't have a nice linear-algebraic way of looking at it. We can go into the properties of graphs (like cycles), or types of connectivities (a fully connected graph includes every possible edge from any vertex to any other), but that seems out of the scope of this question. ",
+            "date": "Answered December 4, 2013",
+            "views": "29",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Brian Bascom",
+                    "user_href": "/profile/Brian-Bascom"
+                },
+                {
+                    "user_id": "David Hu",
+                    "user_href": "/profile/David-Hu-18"
+                },
+                {
+                    "user_id": "Eric Jones",
+                    "user_href": "/profile/Eric-Jones-903"
+                },
+                {
+                    "user_id": "Eric Pepke",
+                    "user_href": "/profile/Eric-Pepke"
+                },
+                {
+                    "user_id": "Dhwanit Agarwal",
+                    "user_href": "/profile/Dhwanit-Agarwal"
+                },
+                {
+                    "user_id": "Ryan Rodriguez",
+                    "user_href": "/profile/Ryan-Rodriguez-1"
+                },
+                {
+                    "user_id": "Jaimal Ichharam",
+                    "user_href": "/profile/Jaimal-Ichharam"
+                },
+                {
+                    "user_id": "Joshua Engel",
+                    "user_href": "/profile/Joshua-Engel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vadim Antonov",
+                "href": "/profile/Vadim-Antonov-3"
+            },
+            "answer_text": "A graph is a set of vertices {V} and a set of edges {E} connecting the vertices (so that each edge refers to a pair of vertices <V1, V2>). There are several flavors of graphs, the main distinction is being between directed and undirected graphs: in directed graphs the pairs of vertices are ordered (i.e. one is \u201csource\u201d and another is \u201cdestination\u201d), in undirected graphs the order of vertices connected by an edge is not important. Usually directed graphs are depicted by edges with an arrow at one end, and undirected graphs have edges depicted as simple lines. Graphs can have any density of connections between vertices: from all vertices connected to all vertices (the complete graph) to graph with no edges at all. Note that the definition above allows multiple edges between the same pair of vertices: this is called \u201cmultigraph\u201d. Normally, graphs are assumed to allow only one edge between the pair of vertices for undirected graphs, and two edges in different directions for directed graphs. Usual graphs also allow an edge from a vertex to itself. A directed graph can be represented as an explicit data structure containing edges and vertices, or as a binary matrix where 0 means no connection and 1 means there\u2019s connection between source and destination vertices corresponding to rows and columns of the matrix. An undirected graph is represented by a symmetric matrix. The cells on the diagonal represent connection from a vertex to itself. You can augment the graphs further by either adding annotations (such as colors, weights, etc) to edges and vertices, or by restricting the sets of edges (for example, a bipartite graph would contain only edges connecting vertices from one group to vertices from another). Graph is a fundamental mathematical structure studied extensively by graph theory, a subfield of discrete mathematics. (The other meaning of the word \u201cgraph\u201d is a diagram of a function usually plotted on (x, y) Cartesian coordinate system where y=f(x)\u2026 this meaning is rarely used by mathematicians (and often used by school teachers), as it only provides a nice visualization useful for learning or problem solving, but not an actual mathematical object). ",
+            "date": "Answered February 27, 2018",
+            "views": "104",
+            "upvotes": "0"
+        }
+    ]
+}

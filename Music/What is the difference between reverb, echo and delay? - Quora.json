@@ -1,0 +1,114 @@
+{
+    "title": "What is the difference between reverb, echo and delay? - Quora",
+    "tags": [
+        "Reverb",
+        "Electronic Music",
+        "Music Production"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "These are all related, and all based around the building block of a simple delay. Some of the difference is in the signal processing, some of that\u2019s based on our psychology. And as far as what you can buy for real off the shelf, there\u2019s an element of tradition in there, too. Delay is Temporary Storage If I feed any old audio signal into a device, and it comes out a little later, that\u2019s delay. That\u2019s really all there is to basic delay. When used musically, of course, you would like some ability to control a specific amount of delay. One example most people have heard is the say U2\u2019s Edge plays guitar on some songs. He sets up a delay that\u2019s at a precise note interval, and so when he plays, that same note sounds twice, but maybe an 1/8th or a 1/4 note apart. I\u2019ve actually programmed one of my effects devices for this to play \u201cNew Year\u2019s Day\u201d\u2026 it\u2019s very cool, but very weird, playing in time with yourself that way.  In the analog world, there\u2019s a device called a delay line that does this for you: analog signal enters one end, comes out the other end some set period of time later. So for music, a simple delay line like this is not terribly useful all by itself. We probably want to at least hear the original signal as well. So we add a mixer.  Now we have both delayed and original signals available on the output. And we might expect in a real world delay that the mixer has level controls on both inputs, so we can adjust the delay (wet) versus original (dry) signal at the output. Delay lines with varability are hard to make, but some simple delays used a \u201ctapped\u201d delay line, which simply includes outputs along the way.  Once I have these multiple taps, I have three options for the length of the delay. And since they all go into the mixer, I can actually use all three delays plus the original signal if I want to. Now, I mentioned that a delay can be constructed from a magical device called an analog delay line. These actually exist\u2026 in fact, a long, long piece of wire will do the job. But there\u2019s practicality and expense to making very long delays out of simple compoinents. So over time, a bunch of different approaches were used. One often used in music is the tape delay. You can imagine a tape machine with a continous-loop tape (like an 8-track tape, if you\u2019re old enough to remember those), with one head for writing sound onto the tape, another to reading it off. And of course, you could create a multi-tap delay.  To make a digital delay, you feed an analog signal into an analog-to-digital converter, drop those resulting numbers into a circular memory buffer, and based on the time desired, start reading them out to a digital-to-analog converter, and there\u2019s your delay. You\u2019ve probably heard the \u201cSlapback\u201d function, which some call an echo but I\u2019d just call a delay. It\u2019s a pretty short delay, usually in the 40ms-120ms range\u2026 lots of early delay effects, 50\u2019s rock and roll, Rockabilly, etc. used this, both because that music became popular around the time these devices became popular, and a short delay because, at the time, that\u2019s all you could get out of analog delay box. Adding Stuff to a Delay So what if I messed around a little with the original delay plus mixer\u2026 could I make that a little more clever. Sure I could\u2026 I\u2019m going to add feedback!  So what you have now is the original signal going directly to the mixer, and the delay also going to the mixer. The mixer, in turn, has its usual output to the rest of the world, but also now one that\u2019s fed into the delay. So if I set the gain on the input to the delay at 1.0, and play a note through this, I\u2019ll hear the original note going out of the box, but then it\u2019s going to be repeated through the delay, again and again, forever\u2026 or at least until I shut this mess down. The Effect of Time: Echo But what if I set the gain for the mixer to delay to 0.75x rather than 1.0x? So I play my note at volume 1, and I hear that original note at full volume. But say the feedback has only a 0.75x gain. So the first repeated sound is at at a volume of 0.75, then 0.56, then 0.42, etc. If this were a long enough delay, you would probably probably recognize what most people recognize as echo. Just as if you shout into a canyon and hear a bunch of increasingly dampened repeats of that shout, that\u2019s what this will give you, at least if you set the delay long enough. When you hear an echo, it\u2019s recognized as a sound distinct from the original one you made, a copy of that sound perhaps, not something reinforcing the original sound. That\u2019s what your brain is telling you, because your brain is time sensitive, and sounds far apart from one another are perceived as separate sounds.  The simple echo uses a mixer with attenuation to make the sound fade. But maybe we want a different formula there. In fact, a more generalized echo device will have variety of functions that modify the sound. You might try to build one that accurately represents the acoustics of a canyon, or maybe one that sounds like a tape delay. Once you go digital, all of those are a \u201csimple matter of software\u201d, as we hardware engineers like to say. The Effect of Time: Reverb If I only dial in a very short delay, something maybe 50ms or less, your brain won\u2019t process the original and the delayed sound as separate things, but as a single thing. So for example, if I run my voice through a short delay and out at the same level, it\u2019ll provide a richer sound, similar to vocal doubling (eg, when i sing the same track twice). It won\u2019t sound like someone\u2019s singing what I just sang. If I do my shout in a room rather than a canyon, I\u2019m going to get repeated, dampened reflections of my voice off the walls of the room, just as I did off the walls of the canyon. But based on the speed of sound, that\u2019s going to come back very fast, seemingly part of the original shout rather than that distinct echo I got in the canyon. That\u2019s what we call reverb. In simple terms, it\u2019s exactly the same thing as echo. In modern use, reverb is different than echo based on the kind of feedback function you\u2019re using as well as the timing. Some reverbs use feedback models that simulate different room sizes\u2026 are you playing in a club, a stadium, in a church, etc. But that\u2019s only part of it. Pretty early in the days of electric guitar music, for example, folks came up with clever ways to deliver an analog delay, a short one, for the purposes of delivering a reverb effect. You wanted to be able to add the sound of reverb to your guitar, without gettying too spendy. So this generally meant feeding the input into a small speaker/tranducer, though a physical medium, and then into a microphone/transducer. Among these are the plate reverb, that arrangement using a large metal plate, and the spring reverb, which takes that througth a long metal spring. Neither of these were necessarily usable for voice, but they sounded pretty good on guitar.  An actual spring reverb unit. Over time, plate and spring reverbs kind of became their own thing. Part of the musical vocabulary we all share. Just like tape delay or tape saturation became part of the greater musical vocabulary. Or tube amplifiers. The fact is, even though many of these things orginally represented limitations of technology, but their creative use in popular music created a demand for these specific sounds, long after the need for that level of technology had passed. So today, a digital reverb, which can of course support all sorts of different algorithms, can provide feedback models that sound like rooms, like metal plates, live various spring delay setups, etc. And there are various ways to do this. I have a DAW plug-in called Necklace that\u2019s actually a physically modeled spring reverb. The code is actually running a simulation of the springs\u2019 behaviors in a number of different configurations. Sounds pretty amazing on the right guitar input. Other reverbs use comb filters to create multiple images of the input. Some even use proprietary signal processing tricks the manufacturers keep to themselves. Even More Effects: Chorus So, as I mentioned, I can make a doubling of my voice with a straight short delay. But it\u2019s not going to really sound as good as a true doubling, because the delay will be exact. When I actually sing the same song twice, the difference in my timing between takes will be subtile and random.  So let\u2019s forget about the feedback itself and just take my original voice through a variable small delay. In many old analog systems, particularly synthesizers, the delay time for a variable delay might be controlled by a control voltage. Lots of things were. This means that if you increase the voltage on that control, the delay increases, if you lower the voltage, the delay decreases. So in the analog world, a great way to get a seemingly random variation is to use a low frequency oscillator (LFO). If we take two delays and modulate each delay a bit, then include my original voice, it\u2019s going to have a randomness that\u2019s at least similar to what happens if I were to make three takes on the same song. Or if there were three of me, in a chorus\u2026 and so, this has been dubbed the chorus effect. In a digital delay device, it\u2019s reasonable to have a number of these going at once, based on the user\u2019s needs. We might also toss in a little random pitch shifting, we might get an even more convincing, fuller sounding chorus effect. Even More Effects: Flanging Another popular effect for guitar and sometimes other things is the flanger. In this effect, I\u2019m going to basically build on the chorus effect and the previous echo/reverb effect.  As shown in the block diagram, the original signal is mixed a short, reverb-like delay with feedback. But we have an LFO again modulating that delay time, so you get weird interactions between the original and each copy of the orignal signal. Some more sophisticated flangers may also incorporate filters in either signal path, to allow additional customization of the signal. Some devices incorporate both flanging and phasing, which is another classic effect done with filters, not delays. But they\u2019re sometimes offered together. The Pedal Question Well, my Line 6 Pod HD500 does it all. And more. That\u2019s why I don\u2019t own any other pedals\u2026 well, other than a Roland looper. Which itself is yet another kind of delay, just one with enough storage to delay for a very long time.  But it entirely depends on the pedal. Some pedals are very specific\u2026 you can find a pedal that\u2019s just doing classic spring and plate reverb. Lots of reverb pedals have a long enough delay to give you echo. If it says \u201creverb\u201d, that\u2019s a pretty good indication it\u2019s going to have that feedback loop with options to give you that big room sound, if nothing else. Most have control over the number of echos/reflections to some extent. The main reason I approached the question this way is that they\u2019re all delay, and then the things that build on delay to create specific kinds of delay. You don\u2019t necessarily get the length-of-delay you might want in a reverb pedal. You don\u2019t necessarily get the more creative or natural sounding feedback options if you buy an echo-only pedal. Then again, you\u2019ll find difference between any two reverb or echo pedals anyway. So you have to dig down into what\u2019s in your price range and what you\u2019re looking for.  Just to single out one company, Boss makes a whole mess of delay pedals. The DD7 is their straight-up delay pedal, which can give you over 6 seconds of delay. You can dial in feedback, apply some modulation (like a chorus pedal), and some other stuff. But you need the RV6 for a full selection of reverb effects. That\u2019s got classic reverb models, a straight-up delay mode, a modulation mode, but far as I can tell, less storage time. They also make the TE-2, which is a specialized echo pedal that does some dynamic adjustment (eg, it follows your playing)\u2026 sounds like fun, but probably not an starter delay pedal. And a specialized chorusing pedal, the CE-5, although that\u2019s also using similar fundamental components. They\u2019re all delays, but specializing in different applicaiton areas. You can find some, like the Line 6 DL4, that\u2019s really a delay/echo pedal because they\u2019re emulating pretty much every kind of delay known to mankind: tape, analog, digital, etc. It\u2019s also kind of in-tradition, whether from Boss or Line 6 or anyone else, in that from their analog roots, stomp boxes have tended to try to do one thing just well. There may be the implicit assumption that you\u2019d use reverb and delay/echo together, too.  But you can get an \u201ceverything and then some\u201d box like the Zoom MS-70CDR. This does chorus, reverb, straight delay, echo, flanger, tremolo, etc. Zoom (Samson) hasn\u2019t been a big player in pedals, and tends to be disruptive with their technology. Your choice. And of course, if you have the budget, there are all kinds of multi-effects pedals around, like my HD500, which also does amp and cabinet modeling. Going Further You can actually experiment with these kinds elements: delay, mixers, feedback, LFOs, etc. There are a number of online \u201cmodular synthesizers\u201d that let you mess around with these things: Patchwork ModularGrid WebModular | g200kg Music & Software Audiotool: Make Music Online In Your Browser That last one also include stomp boxes in its virtual instrument environment. Yeah, some of these are a bit involved. If they\u2019re not complex enough, try learning the ChucK programming language, which is a language designed for building music and virtual musical instruments. All of these things are primitives in the ChucK language. The ChucK Programming Language - [Documentation] Coursera used to offer the course \u201cIntroduction to Programming for Musicians and Digital Artists\u201d, which covered ChucK pretty nicely, but I didn\u2019t find it up there anymore. Some of the stuff I wrote in ChucK: Tunes in ChucK. ",
+            "date": "Answered February 13, 2017",
+            "views": "87",
+            "upvotes": " View 24 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Liam Wickins",
+                    "user_href": "/profile/Liam-Wickins"
+                },
+                {
+                    "user_id": "Zairrd Vordenta",
+                    "user_href": "/profile/Zairrd-Vordenta"
+                },
+                {
+                    "user_id": "Damien Stewart",
+                    "user_href": "/profile/Damien-Stewart-5"
+                },
+                {
+                    "user_id": "Ricky Herbert",
+                    "user_href": "/profile/Ricky-Herbert"
+                },
+                {
+                    "user_id": "Prime Kien",
+                    "user_href": "/profile/Prime-Kien"
+                },
+                {
+                    "user_id": "Jorge de los R\u00edos Sanz",
+                    "user_href": "/profile/Jorge-de-los-R\u00edos-Sanz"
+                },
+                {
+                    "user_id": "Salvator Gomez",
+                    "user_href": "/profile/Salvator-Gomez"
+                },
+                {
+                    "user_id": "Jason Hamilton",
+                    "user_href": "/profile/Jason-Hamilton-8"
+                },
+                {
+                    "user_id": "Mark Hindwell",
+                    "user_href": "/profile/Mark-Hindwell"
+                },
+                {
+                    "user_id": "Mark Saxen",
+                    "user_href": "/profile/Mark-Saxen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sheryn Samson",
+                "href": "/profile/Sheryn-Samson"
+            },
+            "answer_text": "Reverb vs. Delay vs. Echo. Hmmm. Tricky one. Let's start with the technicalities. Basically, Delay is nothing but the same original audio signal that's delayed by units of time and repeated. The number of times the sound signal has to be repeated is called the feedback. The more the feedback, the more number of times the signal is repeated. And hence, longer the sound carries on. There are basically two kinds of delays: Short DelaysLong DelaysShort Delays are again classified into Doubling delay and Slapback delays. Doubling delays are usually in the range of 20\u201340 milliseconds. Slapback delays usually range from 75\u2013150 milliseconds. Long delays are predominantly used for rhythmic purposes by increasing the feedback. Coming to Echoes, it's not that different from delays. Echoes are, infact in some ways, a type of delay. Echoes are basically just a subset of delays. Repeat the delayed signals for a significant amount of times and diminish the amplitude with every repeated signal and Hola! You have an echo! Now, Reverb.. It's nothing but a collection of all the small delayed signals (or echoes) reflected from the walls of your environment. Reverb is just an echo expect that the feedback time is very less and the time between each repeated signal is so small that all the little echoes sound like a clamped up single echo. To put it in layman terms, Stand in an open area (preferrably, a hilly area) and shout \u201cDuck you, bruh\u201d, and someone would say that back at you after, say 2 or 3 seconds. That's an Echo. Do the same thing again. But now, Record it and start playing the recording along, say, 1 second after you started the sentence and continue your sentence while the recording plays on. That's a Delay. Do the same thing in a concert hall. That's a Reverb. Reverbs are closed-environment echoes. The larger the room/hall the greater the reverb. The smaller the room, lesser. Soundproof rooms? Zero Reverb. ",
+            "date": "Updated August 23, 2018",
+            "views": "91",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Brian Abraham",
+                    "user_href": "/profile/Brian-Abraham-45"
+                },
+                {
+                    "user_id": "Faris",
+                    "user_href": "/profile/Faris-147"
+                },
+                {
+                    "user_id": "Liam Wickins",
+                    "user_href": "/profile/Liam-Wickins"
+                },
+                {
+                    "user_id": "Bruno Berastain",
+                    "user_href": "/profile/Bruno-Berastain"
+                },
+                {
+                    "user_id": "Raphael Victor",
+                    "user_href": "/profile/Raphael-Victor"
+                },
+                {
+                    "user_id": "Deepanshu Singal",
+                    "user_href": "/profile/Deepanshu-Singal"
+                },
+                {
+                    "user_id": "Louie Genzano",
+                    "user_href": "/profile/Louie-Genzano"
+                },
+                {
+                    "user_id": "Mayank Datyal",
+                    "user_href": "/profile/Mayank-Datyal"
+                },
+                {
+                    "user_id": "V\u00f5 Ki\u00ean C\u01b0\u1eddng",
+                    "user_href": "/profile/V\u00f5-Ki\u00ean-C\u01b0\u1eddng"
+                },
+                {
+                    "user_id": "Raskidon Iykestar",
+                    "user_href": "/profile/Raskidon-Iykestar"
+                }
+            ]
+        }
+    ]
+}

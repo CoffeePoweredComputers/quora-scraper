@@ -1,0 +1,116 @@
+{
+    "title": "Which is the most difficult programming language to learn and why? - Quora",
+    "tags": [
+        "Learning About Computer Science",
+        "Beginning Computer Programming Advice",
+        "Learning New Things",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andy Grace",
+                "href": "/profile/Andy-Grace-2"
+            },
+            "answer_text": "Apart from the 'joke' languages invented purely for their unintelligibility, most answers here seem to be concentrating on standard Von Neumann or Harvard architecture languages.     In that case probably the lower level languages starting from C down through various flavours of macro-assembler, or even the microcode that runs inside the processor itself are the most difficult. Mastering any flavour of assembler is akin to mastering the underlying electronics hardware of the machine, which is a really good reason to learn at least something about it.   I've seen comments here saying assembler has no variables, but every microprocessor has registers and memory address space - these are the very definition of variables.  An 8 bit register is just a type int8_t, four of them together is an int32_t.    These can be defined as signed or unsigned numbers and cascaded to calculate with incredible precision at enormous speed.  The program counter that points to the next instruction to be executed is a special type of variable that needs to be adjusted or we wouldn't have looping and therefore any computers.    RAM itself is variable depending on how you define it - perhaps as a string of ASCII characters followed by a zero delimiter.     Most modern processors have built-in floating point instructions too.   A stack is a special type of last-on first-off array.   For me, the hardest languages to master are undoubtedly the parallel processing languages and in that I include occam on the original Transputer, the differing implementations of parallel-C, and at the FPGA level, VHDL.   Leaving parallelism up to an optimising compiler will never fully exploit the true potential of massively parallel processing.   It will require an entirely different way of thinking to code for tens of thousands of tiny, power efficient processors compared with a high end multi-threaded PC of today.        If you're interested in this stuff, check out the Epiphany chip used in the Parallella range of $100 boards.  It's a good way to get your feet wet, but you've been warned, it's a challenge.   ",
+            "date": "Answered February 3, 2016",
+            "views": "155",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Emmanuel Flesselles",
+                    "user_href": "/profile/Emmanuel-Flesselles"
+                },
+                {
+                    "user_id": "Tomi Toivio",
+                    "user_href": "/profile/Tomi-Toivio-2"
+                },
+                {
+                    "user_id": "Nigon Kouk",
+                    "user_href": "/profile/Nigon-Kouk"
+                },
+                {
+                    "user_id": "Arish Sheikh",
+                    "user_href": "/profile/Arish-Sheikh"
+                },
+                {
+                    "user_id": "Mario Peshev",
+                    "user_href": "/profile/Mario-Peshev"
+                },
+                {
+                    "user_id": "Glenn Hampson",
+                    "user_href": "/profile/Glenn-Hampson"
+                },
+                {
+                    "user_id": "P\u00e1ll Haraldsson",
+                    "user_href": "/profile/P\u00e1ll-Haraldsson"
+                },
+                {
+                    "user_id": "Randall Scott",
+                    "user_href": "/profile/Randall-Scott-17"
+                },
+                {
+                    "user_id": "Tony Heskett",
+                    "user_href": "/profile/Tony-Heskett"
+                },
+                {
+                    "user_id": "Steve Silverman",
+                    "user_href": "/profile/Steve-Silverman-17"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Travis Casey",
+                "href": "/profile/Travis-Casey-4"
+            },
+            "answer_text": "It\u2019s looking like most of the answers are talking about languages that are deliberately designed to be difficult. A couple mention APL, which is certainly a candidate, but mostly because it\u2019s heavily mathematical and uses a large variety of symbols. And a few talk about assembly. I\u2019ve got a different candidate for you. It\u2019s a real, practical language designed to be used in productive environments. It\u2019s called Forth. Forth differs from more familiar programming languages in three main ways: First, it uses postfix notation, where an operator follows the operands. So, where in most other languages you\u2019d write something like: x = 3 + 3 In Forth, you\u2019d write: 3 3 + x ! (! is the command to store a value into a variable) Second, Forth is a stack-based language. This means that you normally operate by putting data directly onto the stack, and operations fetch values from the stack and work on them. Since, however, a one-stack machine cannot emulate a universal Turing machine (trust me on it; the proof is a bit complicated, but anybody going through a CS degree is going to be exposed to it at some point), Forth has two stacks. The second is called the return stack and doubles as the stack the Forth itself uses to keep track of where to resume execution once it finishes running a subroutine (a \u201cword\u201d in Forth parlance). This in turn means that Forth has quite a few operations dedicated to manipulating the stack. This is something you don\u2019t have to do in non-stack-based languages, so it takes some getting used to. Third, Forth belongs to the class of languages in which user-written functions are called in exactly the same way as those that are fundamental to the language. Thus, Forth programming is often described as creating your own extension to Forth to handle the problem domain you want your program to deal with. Extending the language in Forth is done in exactly the same way as you\u2019d write any other program. Indeed, it\u2019s very common for Forth systems to be implemented in Forth, except for the few absolutely most basic operations, which are written in assembly. Since writing Forth in Forth is a commonplace, many Forth implementations allow you to mix assembly into Forth. Like assembly, Forth is designed to be easy for computers to deal with - but it approaches the task in a different way. Where assembly tends to be hard to work with because it breaks things down into such tiny steps, Forth is hard to work with because it requires adapting to a different way of thinking about how computers work. ",
+            "date": "Answered February 12, 2017",
+            "views": "78",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arslan Arif",
+                    "user_href": "/profile/Arslan-Arif-10"
+                },
+                {
+                    "user_id": "Caspian Ahlberg",
+                    "user_href": "/profile/Caspian-Ahlberg"
+                },
+                {
+                    "user_id": "Gabriel Buonomano",
+                    "user_href": "/profile/Gabriel-Buonomano"
+                },
+                {
+                    "user_id": "Hamza Nice",
+                    "user_href": "/profile/Hamza-Nice"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Tony Heskett",
+                    "user_href": "/profile/Tony-Heskett"
+                },
+                {
+                    "user_id": "John Connor",
+                    "user_href": "/profile/John-Connor-86"
+                },
+                {
+                    "user_id": "Antonio S\u00e1nchez",
+                    "user_href": "/profile/Antonio-S\u00e1nchez-2-1"
+                },
+                {
+                    "user_id": "Yuval Peled",
+                    "user_href": "/profile/Yuval-Peled-1"
+                },
+                {
+                    "user_id": "Robert Patten",
+                    "user_href": "/profile/Robert-Patten-1"
+                }
+            ]
+        }
+    ]
+}

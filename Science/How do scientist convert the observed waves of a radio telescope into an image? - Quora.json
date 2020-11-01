@@ -1,0 +1,121 @@
+{
+    "title": "How do scientist convert the observed waves of a radio telescope into an image? - Quora",
+    "tags": [
+        "Radio Astronomy",
+        "Radio Waves",
+        "Amateur Astronomy",
+        "Telescopes",
+        "Radio",
+        "Waves (physics)",
+        "Scientists",
+        "Astronomy"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rob Pettengill",
+                "href": "/profile/Rob-Pettengill"
+            },
+            "answer_text": "The following figure may help:  Visible light has a wave length that is thousands of times shorter than radio waves. In an optical telescope, the image is formed by focusing light in the telescope which is captured with a two dimensional photo sensor at the focal plane. Radio waves have a wavelength thousands of times longer than visible light, even a large radio telescope disk can only capture a very low resolution image by scanning the sky. High resolution imagery in the radio spectrum requires an array of multiple telescopes which increases the effective aperture and resolution by thousands of times. The image is \u201cfocused\u201d electronically by a process called interferometry. Precision delays perform the same focusing function as the curve of the mirror in an optical telescope. The figure above shows the capture of the central pixel of an image with both kinds of telescope. In an optical telescope the adjacent pixels are captured by a sensor array at the focus point. Each sensor pixel receives light rays from a slightly different path with slightly different timing. Slight adjustments in the electronic delays for each telescope in a radio telescope array, allows the array to look off the central axis. A complete two dimensional image is formed by combining the same data from each telescope with the appropriate delays for that region of the image. ",
+            "date": "Answered June 1, 2019",
+            "views": "218",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Eric Meier",
+                    "user_href": "/profile/Eric-Meier-5"
+                },
+                {
+                    "user_id": "Marcelo Besser",
+                    "user_href": "/profile/Marcelo-Besser"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Thomas Herbig",
+                "href": "/profile/Thomas-Herbig"
+            },
+            "answer_text": "If you have a single radio telescope only, you can create an image by scanning the telescope across the sky and recording the signal for each position (there are some radio detectors that have multiple channels in a focal plane, but this is unusual). This is only done in very specialized measurements, however, because the resolution is very poor as it is limited by the size of the telescope. The standard way radio astronomers make images nowadays is by using interferometers. In these, you have an array of multiple telescopes observing the same location in the sky. Their signals are then combined to create a much larger virtual telescope with a size equivalent to the largest separation of any telescope pair in the array. The advantage of this is that you obtain a full image of the telescopes\u2019 field of view all at the same time, no scanning required. The mathematics for this are fairly complicated, but they are the exact equivalent to what an optical parabolic mirror does in creating a focal plane. A parabolic mirror combines (interferes) the physical rays coming from each point of the mirror\u2019s surface. This is what is meant by focusing a telescope. A radio interferometer does exactly the same thing, except using a combination of specialized hardware and software. ",
+            "date": "Answered April 22, 2019",
+            "views": "116",
+            "upvotes": " Answer requested by Richard Noel Braga Amora",
+            "upvoters": [
+                {
+                    "user_id": "Bill Otto",
+                    "user_href": "/profile/Bill-Otto-5"
+                },
+                {
+                    "user_id": "Richard Noel Braga Amora",
+                    "user_href": "/profile/Richard-Noel-Braga-Amora"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Zisk",
+                "href": "/profile/Stephen-Zisk-1"
+            },
+            "answer_text": "The signal is detected as an electrical current inside a MASER, an amplifier for microwaves. The signal is received at a particular time from a particular direction, and a set of these signals is assembled by a computer into a matrix of pixels. This assembly is very similar to what a digital camera does to assemble a picture, although the signal end of the camera is a CCD array that produces current in response to light, not radio. If multiple radio antennas are used and there is an accurate time signal, the interference among signals can be used to calculate more detail (radio interferometer). If the antenna sends a radio wave out and receives the reflection (from a moon, planet, or spacecraft), it may be possible to heterodyne the signal to produce a Doppler image for other details. Finally, for some signals, it\u2019s possible to measure polarization and fine frequency details to understand what electrical reactions are occurring in which chemical species or what fields and materials the signal has passed through enroute to the antenna. ",
+            "date": "Answered April 10, 2019",
+            "views": "295",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Manas Pratim Biswas",
+                    "user_href": "/profile/Manas-Pratim-Biswas-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikolay Pavlov",
+                "href": "/profile/Nikolay-Pavlov-7"
+            },
+            "answer_text": "There two things Large parabolic mirror (has to be large because of diffraction limit and to collect more signal) allows you to achieve rather good angular resolution(better than eye but still lower than optical telescope). That allows you to slowly scan (essentially by pixel) and record the image of the sky.Seeing correlations in fast fluctuations of the signals with telescopes spread apart by large distance. That allows you dramatically improve resolution (by emulating really large telescope). There is quite fascinating physics and math behind it e.g. Hanbury Brown and Twiss effect - Wikipedia",
+            "date": "Answered April 30, 2019",
+            "views": "60",
+            "upvotes": " Answer requested by Richard Noel Braga Amora"
+        },
+        {
+            "author_info": {
+                "name": "Jack Capehart",
+                "href": "/profile/Jack-Capehart"
+            },
+            "answer_text": "By using different colors to represent different frequencies of radio waves and different brightness to different amplitudes of radio waves. In a word, they convert radio signals to the range of visible light. After all radio waves and visible light are both electromagnetic waves and differ only in frequency. ",
+            "date": "Answered April 21, 2019",
+            "views": "43",
+            "upvotes": " Answer requested by Richard Noel Braga Amora"
+        },
+        {
+            "author_info": {
+                "name": "Leon Sprenger",
+                "href": "/profile/Leon-Sprenger"
+            },
+            "answer_text": "Radio waves are electromagnetic waves of a certain frequency range x1 - x2. Visible light are also electromagnetic waves of another frequency range y1 - y2. Then it is just a matter of shifting the frequency range x1 - x2 to y1 - y2 for all the individual pixels of the radio wave data and print the result. ",
+            "date": "Answered June 8, 2019",
+            "views": "31",
+            "upvotes": " Answer requested by Richard Noel Braga Amora"
+        },
+        {
+            "author_info": {
+                "name": "Paul Camp",
+                "href": "/profile/Paul-Camp-3"
+            },
+            "answer_text": "You color code them according to some desired feature that you want to highlight and then assign that color to each pixel based on how much of the feature it has. The black hole image is coded by signal intensity \u2014 yellow is \u201cbrighter.\u201d You could code by temperature, or orbital velocity. Nebulas are often color coded by specific elements like hydrogen and oxygen. ",
+            "date": "Answered April 15, 2019",
+            "views": "61",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "RB Nerf",
+                "href": "/profile/RB-Nerf"
+            },
+            "answer_text": "I could explain the process to you, but then I\u2019d have to kill you (with boredom). Read up on Fourier Analysis, and come back with your question and add \u201cand I understand Fourier Analysis\u2026\u201d ",
+            "date": "Answered April 10, 2019",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

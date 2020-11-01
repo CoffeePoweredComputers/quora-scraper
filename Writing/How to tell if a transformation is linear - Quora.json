@@ -1,0 +1,111 @@
+{
+    "title": "How to tell if a transformation is linear - Quora",
+    "tags": [
+        "Linear Transformation",
+        "Transformation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "A linear transformation has two properties. Otherwise, it is non-linear. Linear Transformation A linear operator [math]f(x)[/math] satisfies these two properties. [math]f(x)[/math] is a linear transformation. The transformation of a sum [math]f(x+y) = f(x) + f(y)[/math]The transformation pulls out a constant [math]f(ax) = af(x)[/math]Examples In Calculus, the derivative is a linear operator. [math]\\frac{d}{dx}(x+y) = \\frac{dx}{dx} + \\frac{dy}{dx} = 1 + \\frac{dy}{dx}[/math] Cartesian lines are of course linear. [math]ax + by = c[/math] is a two-dimensional line [math]ax + by + cz = d[/math] is a three-dimensional line Non-Linear Example Polynomials other than lines are non-linear. A quadratic polynomial [math](y+z)^2[/math] creates a new term [math]2yz[/math]. [math]p(x) = x^2[/math] [math]p(y+z) = (y+z)^2 = y^2 + 2yz + z^2 \\ne (y^2 + z^2)[/math] ",
+            "date": "Answered December 31, 2019",
+            "views": "534",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Johnny Toan Truong",
+                    "user_href": "/profile/Johnny-Toan-Truong"
+                },
+                {
+                    "user_id": "Rohit Ramakrishnan",
+                    "user_href": "/profile/Rohit-Ramakrishnan-8"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Platt",
+                "href": "/profile/Eric-Platt-9"
+            },
+            "answer_text": "Linearity is a combination of two properties. A map [math]f[/math] is linear if [math]f(\\alpha x) = \\alpha f(x)[/math]Scaling the input is the same thing as scaling the output.[math]f(x+y) = f(x) + f(y)[/math]We can add and then take the mapping, or we can add after we map each of the parts. This is known as a homomorphism.When we put these rules together we get [math]f(\\alpha x + \\beta y) = \\alpha f(x) + \\beta f(y)[/math] Or more generally [math]f(\\sum_j \\alpha_j x_j) = \\sum_j \\alpha_j f(x_j)[/math] A map is linear if it takes linear combinations of [math]x_j [/math]to linear combinations of [math]f(x_j)[/math] with the same coefficients. To prove that a map is linear you just have to show one of these equivalent conditions. ",
+            "date": "Answered March 22, 2017",
+            "views": "44",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Johnny Toan Truong",
+                    "user_href": "/profile/Johnny-Toan-Truong"
+                },
+                {
+                    "user_id": "Priyanshu Jangid",
+                    "user_href": "/profile/Priyanshu-Jangid-15"
+                },
+                {
+                    "user_id": "Moeen Kamali",
+                    "user_href": "/profile/Moeen-Kamali-1"
+                },
+                {
+                    "user_id": "Manish Kumar",
+                    "user_href": "/profile/Manish-Kumar-3495"
+                },
+                {
+                    "user_id": "Samyak Jain",
+                    "user_href": "/profile/Samyak-Jain-329"
+                },
+                {
+                    "user_id": "Betsy Griffith",
+                    "user_href": "/profile/Betsy-Griffith-3"
+                },
+                {
+                    "user_id": "Manny Condas",
+                    "user_href": "/profile/Manny-Condas"
+                },
+                {
+                    "user_id": "Joseph Heavner",
+                    "user_href": "/profile/Joseph-Heavner"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Evelyn Schneider",
+                "href": "/profile/Evelyn-Schneider"
+            },
+            "answer_text": "It really depends on what the transformation is, but if  is your transformation, it\u2019s not linear if you can find any  such that  or any  and scalar  such that . Similarly,  is linear if and only if for every vectors  and scalar ,  and . ",
+            "date": "Answered July 15, 2020",
+            "views": "198",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Nolan Snell",
+                "href": "/profile/Nolan-Snell"
+            },
+            "answer_text": "First if it is NOT additive, i.e. if T(u +v) != (not equal) T(u) + T(v) Second if it doesn\u2019t scale i.e. if for c a constant T(cu) != cT(u) ",
+            "date": "Answered July 15, 2020",
+            "views": "140",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Thomas",
+                "href": "/profile/Andrew-Thomas-174"
+            },
+            "answer_text": "A map f:A->B is linear if for all x,y in A and m in R say, then f(x+m.y) = f(x) + m.f(y). Note that this definition simultaneously imposes the two conditions :- f(x+y) = f(x) +f(y) and f(m.x) = m.f(x) ",
+            "date": "Answered October 11, 2018",
+            "views": "29",
+            "upvotes": "0"
+        }
+    ]
+}

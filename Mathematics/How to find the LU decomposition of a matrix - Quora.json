@@ -1,0 +1,25 @@
+{
+    "title": "How to find the LU decomposition of a matrix - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Matrices (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ed Klotz",
+                "href": "/profile/Ed-Klotz-2"
+            },
+            "answer_text": "I assume you are familiar with the basic operations for calculating the inverse of a matrix, namely take the matrix, append an identity matrix, and pivot on the original matrix to eliminate all the elements besides the diagonal, recording the pivots on the identity matrix as well. When you complete this operation for each column in the matrix, the identity matrix has been transformed to the inverse of the original matrix. If instead you just pivot to eliminate the elements below the diagonaals of the original matrix, at the end of the process you the original matrix will be transform to an upper triangular matrix, and the identity matrix will have been transformed to a lower triangular matrix, call it L\u2019. So if your original matrix is B, and the upper triangular matrix you derived is U, you now have L\u2019B = U, The inverse of L\u2019 is just L\u2019 with the sub diagonal elements negated, call that L. Then you have B = LU, the decomposition you seek. Now, in some cases you also have to permute the rows or columns during this pivoiing operation because of 0 diagonal elements (or if implementing on a computer, relatively small diagonal that would result in numerically unstable operations), but let\u2019s skip that discussion here. Duff, Erisman and Reid have a text book on matrix computations that go into that level of details. But the operations are basically the same; you are basically just assuming that the original matrix was in some different row or column order, and you implicitly treat the off diagonal elements as diagonals for pivoting purposes. ",
+            "date": "Answered October 13, 2018",
+            "views": "319",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Matthew Saltzman",
+                    "user_href": "/profile/Matthew-Saltzman-1"
+                }
+            ]
+        }
+    ]
+}

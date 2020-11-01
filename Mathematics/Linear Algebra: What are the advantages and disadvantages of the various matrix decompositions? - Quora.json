@@ -1,0 +1,74 @@
+{
+    "title": "Linear Algebra: What are the advantages and disadvantages of the various matrix decompositions? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Matrices (mathematics)",
+        "Theoretical Computer Science",
+        "Pros and Cons",
+        "Linear Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Blanchet",
+                "href": "/profile/Tom-Blanchet"
+            },
+            "answer_text": "This is an incredibly broad question. Essentially, almost anything you do in linear algebra is a decomposition in some way. Although, there are some decompositions that come up more often than not.  LU decomposition: This is Gaussian elimination. The L is a lower triangular matrix, U is an upper triangular matrix. The U is a row echelon form of the matrix, and the L are the Gaussian elimination steps (without row swaps) that got you to U. There is also the options to swap rows and/or columns, otherwise known as the ability to \"pivot\" (row, column, or full pivoting) and variations include the LDU factorization, where D is a diagonal matrix. There are many algorithms that can do this, and it really depends on what you need. QR decomposition: This factorization is the orthonomalization of the columns of the matrix. Q is a unitary matrix which are the orthonormalized columns, and R is a right (upper) triangular matrix that expresses how each of the columns of Q can be recombined to find the original columns of the matrix. This is incredibly useful, and is the core piece in the \"QR Algorithm,\" as well as useful in finding the pseudo-inverse of a matrix and finding the Singular Value Decomposition. A variation is the RRQR (rank reveling QR) algorithm, which includes a column pivot and can be used to find the nullity, rank, and the orthonormilization of the kernel and image of a matrix. Once again, QR factorization has many algorithms, and it, again, depends on what you are doing. (For instance, I would rather use the Gram-Schmidt process if I had to solve this paper and pencil, but Given's rotations are much better on a parallel processing computer)SVD (Singular Value Decomposition): This is a way of expressing a matrix in terms of how much it expands the linear space, and how it rotates the space as well. A SVD is a matrix in the form [math]U\\Sigma V^{*}[/math]. [math]\\Sigma[/math] is a diagonal matrix that represents the scaling factors of a matrix, and U and V represent rotations before and after the scaling. Wikipedia has a nice visualization of this for the 2x2 case:  This can be used for a large number of applications, including statistics, signal processing, weather prediction, dating websites, etc. As it turns out, for any Hermitian matrix (or, any matrix equal to it's conjugate transpose), this is the same as the eigendecomposition (which I'll get to in a minute). There are a handful of methods to calculate the SVD, and even more ways if you count the ways to get the magnitudes of the largest values in the diagonal matrix. (Squares of these are the \"principal components,\" used in principal component analysis.)Eigendecomposition: This is probably the most important decomposition. The matrix is decomposed into [math]Q\\Lambda Q^{-1}[/math], where Q is a matrix of the \"eigenvectors\" (as columns), and [math]\\Lambda[/math] is a diagonal matrix of the \"eigenvalues\". The elements of [math]\\Lambda[/math] are roots to the characteristic polynomial of the matrix:[math]det(\\lambda I - M)[/math]. The reason that this guy is so important is that it breaks the matrix down into acting more like a scalar. That is, for every eigenvector [math]q[/math], there's some eigenvalue [math]\\lambda[/math] such that [math]Mq = \\lambda q [/math]. Moreover, the eigenvectors span the space, so you can express ANY vector as a sum of eigenvectors, distribute the matrix through the sum, use the identity above to scale each of the components by the corresponding eigenvalue, and then recombine the components. This can result in much faster iterated multiplication, and can make a nice closed form for certain sequences and iterated operations. (EG, the Fibonacci sequence's closed form, aka Binet's Formula, can be found this way.)  Although this is all very nice, the eigendecomposition only can be done if the matrix is diagonalizable and square. However, the \"generalized eigendecomposition\" can solve the diagonalizable problem at least. It represents [math]\\Lambda[/math] instead as a \"block diagonal\" matrix, where there are rules about what the blocks in [math]\\Lambda[/math] can be. (Specifically, the blocks are either 1x1 matricies or bidiagonal matricies with only ones on the superdiagonal and the same eigenvalue along the diagonal. I won't go into detail about why this is, but it's interesting to look into)In general, this is a hard thing to calculate. There are, once again, several ways to do it, and it's all about what you need and what you have. For matrices larger than 5x5's, you almost always have to use numerical methods, as there isn't generally a radical closed form for the eigenvalues. An example a relatively simple numerical method is the QR algorithm mentioned in the \"QR decomposition\" section. Another method (generally taught as the way to go in undergrad) is to calculate the characteristic polynomial, extract it's roots, and then use those roots to find the corresponding eigenvalues via some kind of kernel finding algorithm.There are several more decompositions, algorithms, and just linear algebra concepts that I did not mention here that are directly relevant, but that's what linear algebra courses are for. :D ",
+            "date": "Answered July 31, 2014",
+            "views": "153",
+            "upvotes": " View 53 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Will Bergmann",
+                    "user_href": "/profile/Will-Bergmann"
+                },
+                {
+                    "user_id": "Marco Moldovan",
+                    "user_href": "/profile/Marco-Moldovan"
+                },
+                {
+                    "user_id": "Aram Dovlatyan",
+                    "user_href": "/profile/Aram-Dovlatyan"
+                },
+                {
+                    "user_id": "Eduardo Matias",
+                    "user_href": "/profile/Eduardo-Matias-7"
+                },
+                {
+                    "user_id": "Vishal Anand",
+                    "user_href": "/profile/Vishal-Anand-6"
+                },
+                {
+                    "user_id": "Paul Gavrikov",
+                    "user_href": "/profile/Paul-Gavrikov"
+                },
+                {
+                    "user_id": "Animesh Biyani",
+                    "user_href": "/profile/Animesh-Biyani"
+                },
+                {
+                    "user_id": "Rahul Kumar",
+                    "user_href": "/profile/Rahul-Kumar-182"
+                },
+                {
+                    "user_id": "Kunal Kotian",
+                    "user_href": "/profile/Kunal-Kotian-1"
+                },
+                {
+                    "user_id": "Eduardo Gomes",
+                    "user_href": "/profile/Eduardo-Gomes-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yves Daoust",
+                "href": "/profile/Yves-Daoust"
+            },
+            "answer_text": "It is not a matter of advantages vs. disadvantages. It is a matter of applications. When you want to solve a dense system of equation, you use LU. When you want to characterize a point cloud, you use the Eigendecomposition. For linear least-squares fit, you can use QR and do on. ",
+            "date": "Answered June 23, 2020",
+            "views": "218",
+            "upvotes": "0"
+        }
+    ]
+}

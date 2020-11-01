@@ -1,0 +1,76 @@
+{
+    "title": "Why do SSDs have a limited number of writes? - Quora",
+    "tags": [
+        "Solid-State Drives (SSD)",
+        "Hard Disk Drives (HDD)",
+        "Data Storage",
+        "Laptops",
+        "Computer Science",
+        "Computer Hardware",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steve Baker",
+                "href": "/profile/Steve-Baker-100"
+            },
+            "answer_text": "(Originally answered: \u201cDo SSDs have a limited number of writes?\u201d) Yes - the \u201cflash memory\u201d technology that they use has a limited number of \u201cwrite\u201d cycles for each individual memory cell before they start to die. You can \u201cread\u201d them as often as you want though - which is good. The devil is in the details. Good flash memory can survive more write cycles than some of the earlier flash memory chip designs. Cheap, no-name USB memory sticks from China have CRAP chips in them - and they wear out incredibly quickly.Clever software can definitely help. So, for example, most modern operating systems do something called \u201cwear levelling\u201d where they keep track of how many times each part of the flash memory has been written to and try to use areas that haven\u2019t been changed much. Very often, there are files (such as if you download a game) where those files may be written once - and then never overwritten again. Other parts of the memory might be used for temporary storage and rewritten every minute or so. So when an area gets heavily worn, it might make sense to move a file that hasn\u2019t changed in a couple of years onto the worn-out spot - leaving the only-written-to-once memory where it was at to be hammered by those temporary files.Size Matters. Even if you don\u2019t need much storage space - having a high capacity SSD means that each memory cell gets written to less often. A 16Gbyte SSD will last 16 times as long as 1Gbyte SSD with the same amount of data on them.Extra hardware helps too - so many SSD\u2019s have a substantial amount of RAM memory in them - when you write to them, the data is stored in the RAM - and only copied onto the flash chip when you shut the computer down. So if you have a file that has (say) your progress at playing a video game - and the game stores that progress every 30 seconds - then this will wear out the flash memory alarmingly quickly. So instead, the SSD card only stores that data in RAM, until you shut the system down (or if that RAM gets full) - and THEN it writes it to flash. So if you\u2019ve been playing the game for 10 hours straight and there would have been 1,200 game status writes - there is in fact only one.It\u2019s also the case where you might have an SSD *and* an old-school spinning magnetic disk. In those cases, the smart thing is to load up all of the programs you use onto the SSD - so that when you start something up, it loads QUICKLY - but have things like your Google Chrome page cache stored on the magnetic disk drive. On my Windows machine, the C: drive is the SSD and the D: is the old-school drive. I have my user directory on the D: drive and the Program and Windows folder on the SSD. So I get the speed benefits of SSD when loading programs - and the wear-resistance of the hard drive for things like log files and things I change a lot.REAL WORLD EXAMPLE: An excellent example of how this can go horribly wrong is some of the older Tesla Model S cars. They have a Linux computer that runs the display screen. With Linux, you can turn on a TON of logging functions in the operating system that are written to disk to show exactly what\u2019s going on at very deep levels. Evidently some Tesla engineer needed to see all of that detail while doing some kind of debugging - and turned on a LOT of Linux kernel logging messages. But evidently, nobody turned them off again before the updated operating system was installed on people\u2019s cars. As a result, the display computers on those cars soon started to fail in large numbers because the flash memory was being worn out by all of those log messages being pointlessly saved to the SSD. And when the SSD wore down, the car wouldn\u2019t start up. Needless to say, when they figured that out and turned off the Linux kernel logging - the problem didn\u2019t get worse - but the people with crapped out SSD\u2019s needed a costly computer replacement. CONCLUSION: So you can see how easy it is to screw up and trash your SSD just by thoughtlessly turning on some seemingly unimportant logging function. Flash memory is wonderful, almost magical, stuff - but it\u2019s not without its problems! ",
+            "date": "Updated October 30, 2020",
+            "views": "8",
+            "upvotes": " View 230 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Karan Bhatt",
+                    "user_href": "/profile/Karan-Bhatt-53"
+                },
+                {
+                    "user_id": "Sushant Kumar",
+                    "user_href": "/profile/Sushant-Kumar-1248"
+                },
+                {
+                    "user_id": "K Hemanth",
+                    "user_href": "/profile/K-Hemanth-1"
+                },
+                {
+                    "user_id": "Emanuel Paul Filho",
+                    "user_href": "/profile/Emanuel-Paul-Filho"
+                },
+                {
+                    "user_id": "Stephen Keebler",
+                    "user_href": "/profile/Stephen-Keebler"
+                },
+                {
+                    "user_id": "Maria Alexander",
+                    "user_href": "/profile/Maria-Alexander-46"
+                },
+                {
+                    "user_id": "Manthan Shah",
+                    "user_href": "/profile/Manthan-Shah-8"
+                },
+                {
+                    "user_id": "John Bade",
+                    "user_href": "/profile/John-Bade-5"
+                },
+                {
+                    "user_id": "Vishal Goel",
+                    "user_href": "/profile/Vishal-Goel-179"
+                },
+                {
+                    "user_id": "Christopher Bullock",
+                    "user_href": "/profile/Christopher-Bullock-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Cownie",
+                "href": "/profile/Richard-Cownie-1"
+            },
+            "answer_text": "Almost all current SSDs are based on non-volatile semiconductor \u201cflash\u201d memory - this stores data as particular voltage levels on an isolated gate of a transistor. The erase and write operations are achieved by using relatively high voltages to allow charge carriers to \u201ctunnel\u201d through a narrow insulating layer to change the charge on the normally-isolated gate. Over many cycles of erasing and writing, the high electric field across the insulator degrades the material structure and the gate eventually starts to leak charge and become unreliable. This low-level effect is masked to some extent by \u201cwear-levelling\u201d in the firmware which remaps virtual disk blocks across the whole set of physical flash memory pages. But at some point you\u2019ve erased and written most of the flash too many times and the SSD can\u2019t cope with it. ",
+            "date": "Answered October 23, 2020",
+            "views": "243",
+            "upvotes": "0"
+        }
+    ]
+}

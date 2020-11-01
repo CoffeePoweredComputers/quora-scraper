@@ -1,0 +1,29 @@
+{
+    "title": "What algorithm finds out if an undirected graph contains even length cycle or if it is not using BFS? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vance Faber",
+                "href": "/profile/Vance-Faber"
+            },
+            "answer_text": "You can try to color it with two colors using BFS. Start at any vertex and color it red. Then color all the neighbors blue, etc. If at any step you color two neighboring colors the same you have actually discovered an odd cycle. If you manage to color all vertices you have proved there are no odd cycles. ",
+            "date": "Answered July 13, 2018",
+            "views": "502",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Yash Goyal",
+                    "user_href": "/profile/Yash-Goyal-399"
+                },
+                {
+                    "user_id": "Vinay",
+                    "user_href": "/profile/Vinay-Vicky-Gupta"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "title": "How does the concept of probability in Bayesian statistics differ from its frequentist counterpart? - Quora",
+    "tags": [
+        "Bayesian Statistics",
+        "Bayesian Inference",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ra\u00fal Machado",
+                "href": "/profile/Ra\u00fal-Machado"
+            },
+            "answer_text": "So many things can be said about their differences. Better to focus on some view of them though. 1- About the so-called [math]p[/math]-value, e.g. the likelihood of \\[math]theta[/math] falling in [math]C[/math]: Frequentist view: If we could recompute [math]C[/math] for a large number of datasets collected in the same way as ours, about [math]p[/math] x 100 % of them would contain the true value of \\[math]theta[/math] Bayesian view: the probability that \\[math]theta [/math]lies in [math]C  [/math] given the observed data is at least [math]p[/math]. Note already here that the frequentist view does not have \u201cprobability\u201d in the statement and you have to repeat the experiment whilst in the Bayesian view, you can get the value based on the observed data and a prior. This last one can be subjective or not. 2- Assume you want to analyze (or comparing) groups having different or little size: Frequentist view: You have to have \u201cenough\u201d data to analyze (or compare) groups (to get fair results).   Bayesian view: You can analyze (or compare) groups, even if there is little data. You just need to add a prior. Note also here that you can always get results using Bayesian, via using priors. When the data is large \u201cenough\u201d then, the Bayesian results is dominated by the likelihood, i.e. the data, and less by the prior, leaning towards the frequentist view. You can start reading the subsection 2.3.2 in the book Bayesian Methods for Data Analysis 3rd Ed by Bradley P. Carlin;Thomas A. Louis, as a starting point. ",
+            "date": "Updated October 26, 2018",
+            "views": "871",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "E Douglas Jensen",
+                    "user_href": "/profile/E-Douglas-Jensen"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Colleen Farrelly",
+                "href": "/profile/Colleen-Farrelly-1"
+            },
+            "answer_text": "The use of prior is the biggest difference. A prior is like a schema in psychology--something that seems to be a pattern that might fit. This is used to compare with the data and see how well it fits the prior (which gives a posterior distribution). ",
+            "date": "Answered November 2, 2017",
+            "views": "11",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Henry Char",
+                    "user_href": "/profile/Henry-Char"
+                },
+                {
+                    "user_id": "Paul Ryberg",
+                    "user_href": "/profile/Paul-Ryberg"
+                },
+                {
+                    "user_id": "Rishav Dutta(\u098b\u09b7\u09ad \u09a6\u09a4\u09cd\u09a4)",
+                    "user_href": "/profile/Rishav-Dutta-\u098b\u09b7\u09ad-\u09a6\u09a4\u09cd\u09a4"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                },
+                {
+                    "user_id": "Alvaro Neira",
+                    "user_href": "/profile/Alvaro-Neira"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,125 @@
+{
+    "title": "How to prove that A-(B intersect C) = (A -B) union (A-C) for all sets A, B and C - Quora",
+    "tags": [
+        "Sets (mathematics)",
+        "Set Theory",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frank Hubeny",
+                "href": "/profile/Frank-Hubeny"
+            },
+            "answer_text": "One way to prove this is to first prove two conditional statements: Assume [math]a\\in (A\\setminus (B\\cap C))[/math] and then derive that [math]a\\in((A\\setminus B)\\cup (A\\setminus C))[/math]. Using conditional introduction and then universal introduction, you can derive [math]\\forall x(x\\in (A\\setminus (B\\cap C)) \\to x\\in ((A\\setminus B)\\cup (A\\setminus C))[/math].Assume [math]a\\in ((A\\setminus B)\\cup (A\\setminus C))[/math] and derive that [math]a\\in (A\\setminus (B\\cap C))[/math]. Using conditional introduction and then universal introduction, you can derive [math]\\forall x(x\\in ((A\\setminus B)\\cup (A\\setminus C))\\to x\\in ((A\\setminus B)\\cup (A\\setminus C))[/math].If you can show both of those conditional statements then by the axiom of extensionality the two sets are equal. To prove this you will need to recall what the following mean in terms of set membership (along with DeMorgan\u2019s laws and the distributive property): Set intersection: [math]A\\cap B = \\{x : x\\in A[/math] and [math]x\\in B\\}[/math]Set union: [math]A\\cup B = \\{x : x\\in A[/math] or [math]x\\in B\\}[/math]Set difference: [math]A\\setminus B = \\{x : x\\in A[/math] and [math]x\\notin B\\}[/math]To show (1) above, let [math]a\\in (A\\setminus (B\\cap C))[/math]. By the definition of set difference [math]a\\in A[/math] and [math]a\\notin (B\\cap C)[/math]. By the definition of set intersection, [math]a\\in A[/math] and not [math](a\\in B[/math] and [math]a\\in C)[/math]. By DeMorgan\u2019s law, [math]a\\in A[/math] and ([math]a\\notin B[/math] or [math]a\\notin C)[/math]. By the distributive law, ([math]a\\in A[/math] and [math]a\\notin B[/math]) or ([math]a\\in A[/math] and [math]a\\notin C[/math]). By set difference, [math]a\\in (A\\setminus B)[/math] or [math]a\\in (A\\setminus C)[/math]. By set union, [math]a\\in ((A\\setminus B)\\cup(A\\setminus C))[/math]. By conditional introduction, [math]a\\in (A\\setminus (B\\cap C)) \\to a\\in ((A\\setminus B)\\cup(A\\setminus C))[/math]. By universal introduction, [math]\\forall x(x\\in  (A\\setminus (B\\cap C)) \\to x\\in ((A\\setminus B)\\cup(A\\setminus C))[/math]. You can show (2) using a similar approach. and then using biconditional introduction to combine both of those subproofs together. Using the axiom of extensionality, you have shown that the sets are equal. ",
+            "date": "Answered June 13, 2020",
+            "views": "2",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "This is a version of one of De Morgan\u2019s laws. The complement of [math]B[/math] intersect [math]C[/math] is equal to the union of the complements of [math]B[/math] and [math]C.[/math] In order to prove this statement in set theory, you\u2019ll use the corresponding statement in logic. The negation of a conjunction is the disjunction of the negations, symbolically, [math]\\lnot (P\\land Q)\\iff \\lnot P\\lor \\lnot Q.[/math] Here are the details. Each line is logically equivalent to the next. [math]\\quad x\\in A-(B\\cap C).[/math] First, use the definition of set difference. [math]\\quad x\\in A\\land\\lnot(x\\in B\\cap C).[/math] Next, use the definition of intersection. [math]\\quad x\\in A\\land\\lnot(x\\in B\\land x\\in C).[/math] Now use De Morgan\u2019s law from logic. [math]\\quad x\\in A\\land(\\lnot (x\\in B)\\lor\\lnot (x\\in C)).[/math] Then use distributivity of AND over OR. [math]\\quad (x\\in A\\land\\lnot (x\\in B))\\lor(x\\in A\\land\\lnot (x\\in C))[/math] Now use the definition of set difference again. [math]\\quad (x\\in A-B)\\lor(x\\in A-C).[/math] And finally use the definition of union. [math]\\quad x\\in (A-B)\\cup(A-C).[/math] Since for all [math]x,[/math] [math]x\\in A-(B\\cap C)[/math] if and only if [math]x\\in (A-B)\\cup(A-C),[/math] therefore [math]A-(B\\cap C) = (A-B)\\cup(A-C.[/math] ",
+            "date": "Answered June 13, 2020",
+            "views": "14",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rk Sethi",
+                    "user_href": "/profile/Rk-Sethi-3"
+                },
+                {
+                    "user_id": "Jan Hidders",
+                    "user_href": "/profile/Jan-Hidders"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Maxime Denis",
+                    "user_href": "/profile/Maxime-Denis-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Lindsay",
+                "href": "/profile/Richard-Lindsay-53"
+            },
+            "answer_text": "First, show if x is an element of LHS (left hand side) then it is an element of RHS; then show the reverse. Let x \u2208 A-(B\u2229C); then x\u2208A and x\u2209B\u2229C So x\u2208A and x\u2209B - or - x\u2208A and x\u2209C So x\u2208(A-B) or x\u2208(A-C) So x\u2208(A-B)\u222a(A-C) So x \u2208 A-(B\u2229C) => x\u2208(A-B)\u222a(A-C) Now the reverse: Let x\u2208(A-B)\u222a(A-C) Then x\u2208(A-B) or x\u2208(A-C) (or both) If x\u2208(A-B), then x\u2208A and x\u2209B, in which case x \u2208 A and x\u2209 (B\u2229C) f x\u2208(A-C), then x\u2208A and x\u2209C, in which case x \u2208 A and x\u2209 (B\u2229C) Either way, x \u2208 A-(B\u2229C) QED ",
+            "date": "Answered June 13, 2020",
+            "views": "664",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Aniket Roy",
+                    "user_href": "/profile/Aniket-Roy-178"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Doug Reiss",
+                "href": "/profile/Doug-Reiss"
+            },
+            "answer_text": "Use a Venn - Gauss diagramShow, alternatively (which is actually exactly the same method as 1 above) that every member of the set on the left is a member of the set defined on the right and vice versa (that each set is contained in the other, which can only be the case for the empty set or identical sets)",
+            "date": "Answered June 13, 2020",
+            "views": "479",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "A2A: To prove two sets are the same, you must prove that membership in either implies membership in the other. E.g., in A but not in B and C implies \u2026 . ",
+            "date": "Answered June 13, 2020",
+            "views": "239",
+            "upvotes": " Answer requested by Phil Chawendera",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Philip Calabrese",
+                "href": "/profile/Philip-Calabrese-1"
+            },
+            "answer_text": "Using \u2018 for \u201cnot\u201d, juxtaposition for \u201cintersect\u201d, and v for \u201cor\u201d, A(BC)\u2019 = A(B\u2019 v C\u2019) = AB\u2019 v AC\u2019 Using a de Morgan formula and distributivity. ",
+            "date": "Answered June 13, 2020",
+            "views": "284",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Yves Rousson",
+                "href": "/profile/Yves-Rousson-1"
+            },
+            "answer_text": "B\u2019 is complement of BA-B=AnB\u2019.A-(BnC)=An(BnC)\u2019=An(B\u2019uC\u2019)=(AnB\u2019)u(AnC\u2019) =(A-B)u(A-C) ",
+            "date": "Answered June 13, 2020",
+            "views": "180",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "title": "Why does a variance calculated from a sample differ from an estimated variance of a population? - Quora",
+    "tags": [
+        "Intuitive Explanations",
+        "Layman's Explanations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Emily Chang",
+                "href": "/profile/Emily-Chang-20"
+            },
+            "answer_text": "This question is a little unclear to me, but I hope the answer's in here (if not, I'll edit accordingly). When you calculate the variance of a sample, ie you do 1/n*SUM((x_i-samplemean)^2), you can use this as an estimate for the variance of a population. However, you'll find that this estimate is biased to be a bit too small. This makes sense, as in a sample, you're not as likely to get the far extreme values (that's how I understand it, anyway).Through some expectation calculations, you find that multiplying that previous estimate by n/(n-1) corrects for this bias, and in doing so, this reduces to the more commonly used estimator for population variance, 1/(n-1)*SUM((x_i-samplemean)^2) ",
+            "date": "Answered March 18, 2014",
+            "views": "424",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Flom",
+                "href": "/profile/Peter-Flom"
+            },
+            "answer_text": "The variance of a population isn't estimated, it is known. ",
+            "date": "Answered May 13, 2014",
+            "views": "311",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

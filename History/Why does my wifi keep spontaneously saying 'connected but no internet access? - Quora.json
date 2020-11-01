@@ -1,0 +1,57 @@
+{
+    "title": "Why does my wifi keep spontaneously saying 'connected but no internet access? - Quora",
+    "tags": [
+        "Internet Access",
+        "Internet Connection",
+        "Wireless Technology",
+        "Wi-Fi",
+        "Computer Networking",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chuck Croll",
+                "href": "/profile/Chuck-Croll"
+            },
+            "answer_text": "The \u201cConnected\u201d status means that your computer is connected, by WiFi, to the router. In addition to connection to WiFi, you need multiple services to actually connect to the LAN, and to the Internet. Right now, I can think of a few possibilities. Authentication. Connection is the first step in using the LAN. Next comes proving that you are entitled to use the LAN. If your computer is not properly authenticated, you get no service - even if \u201cconnected\u201d.Hardware address filter. Every different computer (phone, refrigerator, tablet, TV, watch, whatever \u2026) in the world has a unique hardware aka MAC address. Some routers use MAC address filtering, which requires that you add each computer MAC address to a permission list before it gets connectivity.Address service aka DHCP. You can be \u201cconnected\u201d but the router service that provides your computer an IP address can be overloaded or down. No IP address == no service.Bandwidth. You can be \u201cconnected\u201d - but still have a poor connection. Or a neighbour (using this LAN or a different LAN) can hog the channel, leaving you with no / poor bandwidth. Your neighbour may be stealing your service - or they can have their own LAN / Internet service / WiFi using the same radio service (\u201cchannel\u201d).ISP. Your ISP may be having problems - or your service may be off.Any or all can be a problem - even with \u201cConnected\u201d status displayed. This can be a lot of fun to diagnose. Do you have a second computer - or only one? It\u2019s always easier to diagnose connectivity issues when you have multiple computers. Do you have a second computer, connected by Ethernet / fiber / whatever? It\u2019s still more useful to remove WiFi from the problem, and diagnose. Do you have a friend or neighbour, who will let you connect to his LAN? It\u2019s similarly useful to verify that your computer is operational. If any of this makes your head spin, it may be time to bring a local tech into the problem. Failing that, you can provide details about your LAN / WiFi / ISP here, and I\u2019ll try to give you hints. Again, this can be a lot of fun, for people like me. Maybe not for you, though. ",
+            "date": "Answered July 3, 2019",
+            "views": "74",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dinis Freixo",
+                    "user_href": "/profile/Dinis-Freixo"
+                },
+                {
+                    "user_id": "Michael C. McKinney",
+                    "user_href": "/profile/Michael-C-McKinney"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "SourceTech411",
+                "href": "/profile/SourceTech411"
+            },
+            "answer_text": "Imagine two areas for your WiFi - the part that is inside your house (LAN = \u201cLocal Area Network\u201d), and the part that is outside (WAN = \u201cWide Area Network\u201d). There is a \u201cgateway\u201d device that connects the LAN and the WAN together. This gateway can be a combination device or two separate devices. The front end is some type of \u201cmodem\u201d. The input is your phone line in the case of a DSL Modem or a co-axial cable in the case of a Cable Modem. For a stand-alone modem, there is an output that connects to the \u201crouter\u201d. The back end is some type of \u201crouter\u201d. This is what your device connect to, and can be a version of 802.11 wireless Ethernet or wired Ethernet with a CAT-5 cable or a combination of the two. With a combo device, both the modem and the router are in the same physical box. Now that we have all the parts for connecting, lets get to your question \u2026 With your router turned on, your devices will be able to connect to it. This lets them communicate with each other. In that sense you are \u201cconnected\u201d. In a combo device, if the modem part isn\u2019t connecting to the outside world (e.g., your ISP = \u201cInternet Service Provider\u201d), which is the internet, then you\u2019ll still see that your device is \u201cconnected\u201d but there is no internet service. For separate modem + router, the router has to be connected to the modem and the modem has to be connected to the ISP. So if for whatever reason the modem is not working properly, or the ISP is not working, then your home WiFi will be connected but you won\u2019t have any internet connection. The follow up question is then: How do I connect the home WiFi (LAN) to the Internet (WAN). And that can be a *VERY* long answer, since there are many things which can go wrong. We\u2019ve published a 2-part (yes, I said it was long) trouble shooting guide that can help you with that. It\u2019s too much to include in this answer, so here is the link to Part 1 - Network Connectivity Troubleshooting \u2013 Part One - and a quick bullet summary. 1.Check the power 2.Check the router 3.Check the cables 4.Reboot both router and PC 5. Check functionality 6. Test functionality 7. Check virus software 8. Try another system 9. Check ISP 10. Final options Hope that helps! ",
+            "date": "Answered January 9, 2019",
+            "views": "42",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suresh Tambe",
+                    "user_href": "/profile/Suresh-Tambe-18"
+                },
+                {
+                    "user_id": "Tom Donoghue",
+                    "user_href": "/profile/Tom-Donoghue-6"
+                },
+                {
+                    "user_id": "Garret Walenski",
+                    "user_href": "/profile/Garret-Walenski"
+                }
+            ]
+        }
+    ]
+}

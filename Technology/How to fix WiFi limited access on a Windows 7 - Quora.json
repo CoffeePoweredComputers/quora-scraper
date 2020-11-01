@@ -1,0 +1,36 @@
+{
+    "title": "How to fix WiFi limited access on a Windows 7 - Quora",
+    "tags": [
+        "Limited Wifi Access",
+        "Windows 7",
+        "Wi-Fi Access Points"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shubam Gupta",
+                "href": "/profile/Shubam-Gupta-37"
+            },
+            "answer_text": "From last how many days you are facing this issue? Any recent s/w or h/w changes done? Try the below steps: Connect with the differnt network and check. Check if the same network is working fine with the other unit? Check for the IP Address. (Go to run by pressing win + r and type in cmd and press enter, now in the black window type in ipconfig /all and press enter). Check what ip v4 address you are getting. If you are getting something like 169.x.x.x starting with 169 that means machine is not taking the correct ip. If 169.x.x.x ip is there go to the network and sharing center (win +r \u300b ncpa.cpl and press enter) double click on the wifi option and click on properties. Once property windows pop out click on ipv4 and make sure ip and preferred DNS is set to Automatic. If at all some different ip is there insteqd of 169.x.x.x. Note down the default gateway and check if you are able to ping the Default gateway. If reply sucessful that means there might be some issue with the Router anf in that case you need to contact to ISP. If ping to the Default gateway is also not sucessful. Try below commands in cmd(As an Admin): ipconfig /releaseipconfig /renewipconfig /flushdnsRestart your pc and check. If still not working try the below command in admin mode netsh int ip reset Restart and check. Also make sure your device has latest drivers for the BIOS , CHIPSET, WIFI if after performing the above issue still persist. Try system restore that will store the registry to the previous date. Else at the end if nothing is working try os reinstall and check. If after reinstall same issue replace wlan card. Hope this will help. Revert if any help required. Regards Shubam Gupta ",
+            "date": "Answered September 11, 2018",
+            "views": "82",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Nilesh Patel",
+                    "user_href": "/profile/Nilesh-Patel-1310"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Priyam Saxena",
+                "href": "/profile/Priyam-Saxena-11"
+            },
+            "answer_text": "Usually, there can be two reasons for such kind of issues: No Internet - Sometimes, we all face downtimes with our Internet connections. So, you just need to wait for few minutes, and your Issue will be resolved automatically.Restart required- Sometimes, the WiFi Router really requires a Reboot. So, just reboot it, and connect to your network again.These are the very often reasons of \u201cWiFi limited access\u201d issue. And, they can be resolved by the solutions, which I've provided above.  Hope this helps :) Thanks for asking!! ",
+            "date": "Answered September 21, 2017",
+            "views": "62",
+            "upvotes": " Answer requested by C.S.Jadimath"
+        }
+    ]
+}

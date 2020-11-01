@@ -1,0 +1,55 @@
+{
+    "title": "Can you use a Raspberry Pi without an SD card? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "SD Cards"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Tonkavich",
+                "href": "/profile/Robert-Tonkavich"
+            },
+            "answer_text": "Hi Efrayim. Yes you can use many different types of drives, an SSD is a good choice and can be inexpensive. You essentially need two components. An SSD Drive (256 GB is a good choice) and a cable to connect the drive to your Raspberry PI. You would use a SATA to USB Cable similar to the one in the attached image.  There are many different Inexpensive SSD Drives on the market, pick one within your budget range and you should be fine. You connect the SSD to your Raspberry Pi though a USB Port. Once connected you will need to identify the drive and mount the drive so you can have acccess to read and write. There are a Number of Very Good YouTube Videos that explain and visually demonstrate on how to make the connections and methods of attachment. Along with the required \u201cCommands\u201d to mount and partition the drive for use. Once you have your SSD \u201cmounted\u201d and Accessible, you then you clone a copy of your SD Card onto the SSD Drive so that your Raspberry Pi boots from the SSD. I believe there is a blog post on the RPi Website that gives the neccessary instructions for accomplishing that task. Good Luck. You can use the attached drive as a File Share Device and share files with your other computers. But, I think the most fun is using your Raspberry Pi as a Foundation for IoT Experiments. Thanks for the Question. Sincerely Robert Tonkavich ",
+            "date": "Answered June 7, 2020",
+            "views": "201",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Leo Ueno",
+                "href": "/profile/Leo-Ueno"
+            },
+            "answer_text": "Yes. Instead of using a SD card as a boot drive, you are also able to use any storage media that is able to be connected via USB as well. (USB drives, etc) A Raspberry Pi 3B+ has a native USB boot mode (this mode has to be manually enabled by setting an OTP bit on a Raspberry Pi 3B).[1] Footnotes[1] Running Raspbian from USB Devices : Made Easy",
+            "date": "Answered June 6, 2020",
+            "views": "56",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Holt",
+                "href": "/profile/David-Holt-126"
+            },
+            "answer_text": "Yes, the PI 3/4 will boot from USB once you carry out a firmware update. You need to write the Raspbian/Raspberry PI OS image to the USB device. This is only true for the PI 4 since May 15th 2020. I have successfully done this, it only works with Raspberry PI OS , not NOOBS or Raspbian, though Raspbian cane be updated to PI OS. ",
+            "date": "Answered June 7, 2020",
+            "views": "53",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,91 @@
+{
+    "title": "How should I study math? - Quora",
+    "tags": [
+        "Study Habits",
+        "Mathematics Education",
+        "How-to Question",
+        "Studying"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ron Maimon",
+                "href": "/profile/Ron-Maimon"
+            },
+            "answer_text": "Read classic rigorous pedagogical authors. I like Serge Lang from the older generation, Terrance Tao does similar things today on his blog. Lang is good for all the simple things, his generation formulated mathematics within set-theory from the ground up, in the Bourbaki project, which essentially should have been called the \"Lang/Grothendieck project\". Tao is good for more modern things, because he usually blogs as a prelude to some original work. Read ALL the books on a subject, there is always one with a different good presentation that everyone else forgot or standardized away. For example, the \"bisection\" proofs of the intermediate value theorems and mean value theorem are good, but modern proofs introduce point-set concepts like connectedness and compactness. I read these in 19th century calculus textbooks that were collecting dust on shelves, but they made the basic ideas clear. For more advanced stuff, Milnor is good for geometry of the mid 20th century. It is always best to read literature about a discovery from the era when the discovery was made, not the later \"simplifications\", and \"generalizations\". The generalizations first obscure the basic idea, which is always clear originally, because someone had to come up with it, and then the simplifications don't simplify the idea, they simplify the generalizations, which are obscurantist. This is how math books become opaque, through wrong-headed too early over-generalization, and simplification of the generalization. Don't worry about how simple a proof is to read, worry about how straightforward it is for the brain to understand. When both criteria are met, when you have a simple, general formulation, you have what Erdos called a \"book proof\", a proof from God's book of theorems. Never be satisfied until you know a book proof for the theorem in question. So always, always, read the historical literature. It is much easier than the modern literature, because people back then were stupid and ignorant (not their fault, all the interesting stuff was discovered later), and you can become fluent in it more quickly, This is good practice for becoming fluent in the modern literature. You need to learn to \"unpack\" proofs into the construction that is involved, to know what the proof is saying really. It is no good to memorize the proof, you need to understand the construction, and this will motivate the proof. I will give an example of unpacking: consider the proof of the Jordan curve theorem. This is proved in modern books always in the same way: by noting a paradox regarding some homotopies (I forgot the details of standard presentations, but I remember the idea, I unpacked it). The proof is obscure, so much so that mathematicians consider it difficult! They tell students it's a hard theorem. It's not hard, it's trivial. First, you should prove it yourself in the differentiable (or piecewise linear) case, by using the original demonstration from the end of the 19th century. If you pick a random line from a point, the number of intersections with the curve is even or odd, according to the insideness or outsidenes. If you cross the curve, obviously this changes by 1 unit, and if you count intersections by their \"sense\" (the orientation which they happen by), you can't have a number of intersections which is different from 0 or 1 without the curve having a self-intesection, as you can see by turning the line by 360 degrees, and seeing how the intersections meet and annihilate (they have to come back to their original position at the end). This is a sketch, but it's easy to fill out to a proof in the differentiable or piecewise linear case, and the singularity sliding method is a baby version of more sophisticated later constructions in higher dimension using Morse theory, due to smale, which proved the higher-dimensional Poincare conjecture. Why doesn't this work as a modern proof? Because the theorem is also true for continuous Jordan curves, which can be very wild, they can have positive Lebesgue measure (another easy 19th century construction you should do for yourself, it helps to know how to construct a space-filling curve). So you want a proof that works for continuous Jordan curves, where the number of intersections with a line is generically infinite. The modern theorem is proved using a general method involving homology groups which look complicated, but only because they are generalizing to arbitrary dimension and to a general formalism for obstructions. If you read Munkres' proof, the only computation involved is of the winding number of a map from a circle to a circle, which is an integer, which tells you how many times the map went around the circle. So the actual proof is just a simple winding number construction. What is it? It turns out that the winding number of a Jordan curve around a point can be easily seen to be either 0 or 1, depending on whether the point is \"inside\" or \"outside\", and this can be easily related to the differentiable case proof, because this winding number changes in the proper way when you go along a line and pass an intersection (this is easy to prove). So this is the generalization for the continuous case. You can then explicitly prove the Jordan curve theorem in an ugly way using winding number, and construct the winding number yourself, using your favorite homegrown method. This will make the proofs in the textbook obvious and intuitive, although they will be annoying, because you will think they are obscuring something simple for no good reason. To generalize to higher dimension, you need to learn how to define homology, so that you know the abelian notion of sphere-winding. This is NOT equivalent to sphere-onto-sphere homotopy classification, but it's the same thing when the spheres are equal dimension, and it's the \"right\" thing to study anyway, in that it is more regular, and any computation of homotopy proceeds through homology in any case. When you are finished, you have an ugly personal proof, but this is not the main goal. The personal proof has made all the literature stuff clear, because you see it is just standardizing the personal proof so that it can be applied without thinking to a large number of cases, and in a way that is completely standard between different authors. This is the thing that makes mathematics difficult. The ideas can only be discovered by a personal process of ugly construction and half-baked personal proofs, but the final result is an elegant machinary, that you can learn in a half-assed way by studying the formal proof, without understanding any of it. The goal of mathematics education is to force you to break down and reconstruct all the theorems for yourself. The easiest way to do this is simply to explain theorems to others. You can do this through teaching, you can also explain it to yourself, close the book, and present the theorem on your own, with no notes. The mathematicians hide their concepts through this mechanism, but they expect each other to unhide their theorems, by reconstructing it themselves. The mathematicians have some historical presentations too, which help with things that have acquired modern obfuscation. Also, you shouldn't bother with some theorems which are just make-work. For example, in knot theory, there is a notion of \"isotopy\" which is difficult to make precise, but whose only purpose is to prove that the reidemeister moves are fine for computing knot-motions. You should learn how to do the differentiable case, because it is easy and is the motivating thing, but the generalizations to the continuous case are not so insightful, and generally serve as make-work for mathematicians who are at the moment unable to find a new idea. You also need to get over the hump of the political bullshit. So you need to learn infinitesimals, constructive/Soviet mathematics, ordinal analysis, and all the secret things that are politicially hidden. But this doesn't take long. You also need to trust your own intuition, because it is easy to snow a person with a lot of complicated symbols that don't mean anything. If you are intellectually honest, it is easy to ask questions and figure out what the gibberish means, and then it stops being gibberish. ",
+            "date": "Updated December 2, 2013",
+            "views": "51",
+            "upvotes": " View 40 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Anurag Bishnoi",
+                    "user_href": "/profile/Anurag-Bishnoi"
+                },
+                {
+                    "user_id": "Navneet Anilkumar",
+                    "user_href": "/profile/Navneet-Anilkumar-1"
+                },
+                {
+                    "user_id": "Melanie Gutierrez",
+                    "user_href": "/profile/Melanie-Gutierrez-42"
+                },
+                {
+                    "user_id": "Cj Galang",
+                    "user_href": "/profile/Cj-Galang-3"
+                },
+                {
+                    "user_id": "Deepak Mishra",
+                    "user_href": "/profile/Deepak-Mishra-415"
+                },
+                {
+                    "user_id": "Dmitry Cherkassov",
+                    "user_href": "/profile/Dmitry-Cherkassov"
+                },
+                {
+                    "user_id": "Igor Zhirkov",
+                    "user_href": "/profile/Igor-Zhirkov"
+                },
+                {
+                    "user_id": "Johan Persson",
+                    "user_href": "/profile/Johan-Persson-38"
+                },
+                {
+                    "user_id": "Jeremy Surjoputro",
+                    "user_href": "/profile/Jeremy-Surjoputro-1"
+                },
+                {
+                    "user_id": "Leo Lerena",
+                    "user_href": "/profile/Leo-Lerena"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Varun Kotharkar",
+                "href": "/profile/Varun-Kotharkar"
+            },
+            "answer_text": "It's a little vague question to ask, it depends on whether you want to study math at a high school level or university level. For high school students, following some rudimentary texts and solving some easy questions from places like Mathematical Circles (Russian experience)Hall and knight (Higher Algebra)S. L. Money( he has a lot of books)Calculus in one variable (I.A.Maron)Number theory (David Berton)These books are good starters and can develop basic problem solving ability it areas like co-ordinate geometry, elementary combinatorics, high school calculus, Algebra, etc. In general at a high school level, theory is very limited and therefore one needs to solve a lot of problems. One can always try questions from Art of problem solving (Aops) and videos from Khan academy. Now coming to university level, it's different from high school, because focus is more on theory and there's a lot to explore. Definitions need to be understood very well, it might sound simple but it's not that easy. It gets proof based in university level. One must very carefully and slowly analyze the proofs. A lot of results in areas like abstract Algebra, algebric topology, etc are very difficult to understand intuitively. Too much dependence on visualisation is not very good, a few things are abstract and therefore need to be understood so. I believe slow but clear thinkers can become good mathematicians. I cannot list books that need to be followed because there are too many ( not just that areas of mathematics are too many). There is a word that is used often, 'mathematical maturity'. It's vital to have that at a university level. Using good reference text which prove things in generality and take topics on a different level help in gaining mathematical maturity, also after reading a research paper after having grasp on it's prerequisites is a good idea. There are a few things I would like to point out, mathematics is not really like other subjects, it has advanced a lot in recent times probably 100 yrs ahead of time, a lot of thinking is required to do proper mathematics, there isn't exactly a formula to excel in mathematics, getting marks is one thing but truly learning mathematics requires nothing less than dedication and hard work.( A few things I wrote are my personal opinion, need not hold in generality) Keep doing mathematics and get amazed. ",
+            "date": "Answered May 22, 2017",
+            "views": "18",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Olasunkanmi Alabi",
+                    "user_href": "/profile/Olasunkanmi-Alabi-2"
+                },
+                {
+                    "user_id": "Vartika",
+                    "user_href": "/profile/Vartika-62"
+                },
+                {
+                    "user_id": "Hithesh Haridas",
+                    "user_href": "/profile/Hithesh-Haridas"
+                },
+                {
+                    "user_id": "Dhaval Patel",
+                    "user_href": "/profile/Dhaval-Patel-1003"
+                }
+            ]
+        }
+    ]
+}

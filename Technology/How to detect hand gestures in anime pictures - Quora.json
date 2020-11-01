@@ -1,0 +1,49 @@
+{
+    "title": "How to detect hand gestures in anime pictures - Quora",
+    "tags": [
+        "Hand Gestures",
+        "Gestures"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Zeeshan Zia",
+                "href": "/profile/Zeeshan-Zia-1"
+            },
+            "answer_text": "What you need is full template matching, not just interest points. The problem you are working on is called \u201cobject class detection\u201d, since you are not interested in finding those exact hands+gesture, rather hands in a very similar gesture. It was discovered in [1] that object \u201cclass\u201d detection works best if you have dense descriptors as opposed to interest point matches. I\u2019d recommend looking into Deformable Parts Model (DPM) code and paper [2]. Just download the code, annotate a lot of training examples i.e. bounding boxes around such hand gestures (a few hundred), train a model, and then see how well it can do on unseen images. If you only have that one image 2.png to match against, then one might try extracting conv4 features from a pre-trained deep CNN e.g. AlexNet [3] from 2.png, and then running sliding window detection (at multiple scales, grid search in 2D location) on the test image. Use nearest neighbor classification with some threshold on conv4 features on the test image. Anyways, in this case (single training example), the problem becomes much worse and I doubt you\u2019ll get very high accuracies. The idea case will be when you have a lot of training examples of these gestures (1000s of examples for each gesture) and could train a deep CNN on top of those. [1] https://hal.inria.fr/file/index/docid/548512/filename/hog_cvpr2005.pdf [2] Discriminatively Trained Deformable Part Models (Release 5) [3] http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf ",
+            "date": "Answered January 18, 2017",
+            "views": "763",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vivek Rathore",
+                    "user_href": "/profile/Vivek-Rathore-52"
+                },
+                {
+                    "user_id": "Nilesh Patil",
+                    "user_href": "/profile/Nilesh-Patil-5"
+                },
+                {
+                    "user_id": "Safiullah Mubashir",
+                    "user_href": "/profile/Safiullah-Mubashir"
+                },
+                {
+                    "user_id": "Chomba Bupe",
+                    "user_href": "/profile/Chomba-Bupe"
+                },
+                {
+                    "user_id": "Anurag Ghosh",
+                    "user_href": "/profile/Anurag-Ghosh-3"
+                },
+                {
+                    "user_id": "Kevin George",
+                    "user_href": "/profile/Kevin-George-43"
+                },
+                {
+                    "user_id": "Pratyush Kar",
+                    "user_href": "/profile/Pratyush-Kar"
+                }
+            ]
+        }
+    ]
+}

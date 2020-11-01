@@ -1,0 +1,115 @@
+{
+    "title": "How to solve the given differential equation xy' + y = y^(2) log(x) - Quora",
+    "tags": [
+        "Differential Equations",
+        "Equations",
+        "Calculus",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Elaine Dawe",
+                "href": "/profile/Elaine-Dawe"
+            },
+            "answer_text": "This is a Bernoulli equation of the form: [math]\\frac{dy}{dx} + p(x)\\,y = q(x)\\,y^n[/math].We can solve by using the substitution: [math]v = y^{1-n}[/math], which will give equation: [math]\\begin{array}{c} \\dfrac{dv}{dx} + (1\\!-\\!n)p(x)\\,v = (1\\!-\\!n) q(x)\\end{array}[/math]  Rewrite Bernoulli Equation in the appropriate form: [math]xy\u2019 + y = y^2\\ln x[/math] [math]\\dfrac{dy}{dx} + \\dfrac{1}{x}\\:y = \\dfrac{\\ln x}{x}\\:y^2[/math] Use a substitution: [math]v = y^{1-2} = y^{-1}[/math] [math]\\begin{align*} \\frac{dv}{dx} & = -y^{-2}\\,\\frac{dy}{dx} \\\\ & = -y^{-2} \\left( -\\frac{1}{x}\\:y + \\frac{\\ln x}{x}\\:y^2 \\right) \\\\ & = \\frac{1}{x}\\:y^{-1} - \\frac{\\ln x}{x} \\\\ & = \\frac{1}{x}\\:v - \\frac{\\ln x}{x} \\end{align*}[/math] [math]\\dfrac{dv}{dx} - \\dfrac{1}{x}\\:v = -\\dfrac{\\ln x}{x}[/math] Find integrating factor: [math]\\mu = e^{\\int -\\frac{1}{x}\\,dx} = e^{-\\ln x} = \\dfrac{1}{x}[/math] [math]\\dfrac{1}{x}\\,\\dfrac{dv}{dx} - \\dfrac{1}{x^2}\\:v = -\\dfrac{\\ln x}{x^2}[/math] Solve for v: [math]\\dfrac{d}{dx} \\left(\\dfrac{v}{x}\\right) = -\\dfrac{\\ln x}{x^2}[/math] [math]d \\left(\\dfrac{v}{x}\\right) = -\\dfrac{\\ln x}{x^2} \\: dx[/math] Integrate by parts: [math]\\begin{array}{ll} \\begin{align*}  \\frac{v}{x} & = \\int -\\frac{\\ln x}{x^2} \\: dx \\\\ & = \\frac{1}{x}\\ln x - \\int \\frac{1}{x^2} \\:dx \\\\ & = \\frac{1}{x}\\ln x + \\frac{1}{x} + C \\\\ v & = Cx + \\ln x + 1 \\end{align*}  & \\left\\{ \\begin{array} {l} \\int u\\:dw = uw - \\int w\\:du \\\\ \\begin{array} {ll} u = \\ln x & dw = -\\frac{1}{x^2} \\: dx \\\\ du = \\frac{1}{x}\\:dx & w = \\frac{1}{x} \\end{array} \\end{array}  \\right. \\end{array}[/math] Substitute back and solve for y: [math]y^{-1} = Cx + \\ln x + 1[/math] [math]\\boxed{\\boldsymbol{y = \\frac{1}{Cx + \\ln x + 1}}}[/math] ",
+            "date": "Answered April 18, 2018",
+            "views": "4",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shubham Kumar",
+                    "user_href": "/profile/Shubham-Kumar-4713"
+                },
+                {
+                    "user_id": "Andrew Droffner",
+                    "user_href": "/profile/Andrew-Droffner"
+                },
+                {
+                    "user_id": "Eric Cattone",
+                    "user_href": "/profile/Eric-Cattone"
+                },
+                {
+                    "user_id": "Robert Chin",
+                    "user_href": "/profile/Robert-Chin-3"
+                },
+                {
+                    "user_id": "Jaczar Melin",
+                    "user_href": "/profile/Jaczar-Melin"
+                },
+                {
+                    "user_id": "Ryan Graham",
+                    "user_href": "/profile/Ryan-Graham-146"
+                },
+                {
+                    "user_id": "Ioannis Tsoukalidis",
+                    "user_href": "/profile/Ioannis-Tsoukalidis-1"
+                },
+                {
+                    "user_id": "Sazgar Slah",
+                    "user_href": "/profile/Sazgar-Slah"
+                },
+                {
+                    "user_id": "Randy Sherman",
+                    "user_href": "/profile/Randy-Sherman-4"
+                },
+                {
+                    "user_id": "Andy Whyte",
+                    "user_href": "/profile/Andy-Whyte-1"
+                },
+                {
+                    "user_id": "Ram Chandrashaker",
+                    "user_href": "/profile/Ram-Chandrashaker"
+                },
+                {
+                    "user_id": "Kyumars Dadelahi",
+                    "user_href": "/profile/Kyumars-Dadelahi"
+                },
+                {
+                    "user_id": "Eberhard von Kitzing",
+                    "user_href": "/profile/Eberhard-von-Kitzing"
+                },
+                {
+                    "user_id": "Abou Sidibe",
+                    "user_href": "/profile/Abou-Sidibe"
+                },
+                {
+                    "user_id": "Ilia Semenkov",
+                    "user_href": "/profile/Ilia-Semenkov"
+                },
+                {
+                    "user_id": "Harshit Maheshwari",
+                    "user_href": "/profile/Harshit-Maheshwari"
+                },
+                {
+                    "user_id": "Vigneshwaran Sankar",
+                    "user_href": "/profile/Vigneshwaran-Sankar-1"
+                },
+                {
+                    "user_id": "Ray Lin",
+                    "user_href": "/profile/Ray-Lin-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Olubunmi Covenant Peace",
+                "href": "/profile/Olubunmi-Covenant-Peace"
+            },
+            "answer_text": "You differentiate implicitly, y+xdy/dx+dy/dx=2ydy/dx\u00d71/x Rearranging -xdy/dx-dy/dx+2ydy/xdx=y Factorising dy/dx dy/dx=y/(-x-1+2y/x) I think its clear!!! ",
+            "date": "Answered April 17, 2018",
+            "views": "239",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ashis Ghosh",
+                "href": "/profile/Ashis-Ghosh-27"
+            },
+            "answer_text": " ",
+            "date": "Answered September 18, 2019",
+            "views": "394",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "title": "What is the difference between Server session and Browser Session? - Quora",
+    "tags": [
+        "Seating Allocations",
+        "Server Sessions",
+        "Sessions",
+        "Similarities and Differences"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Atik Shaikh",
+                "href": "/profile/Atik-Shaikh-9"
+            },
+            "answer_text": "A server session creates a file in a temporary directory on the server where registered session variables and their values are stored. This data will be available to all pages on the site during that visit. A session ends when the user loses the browser or after leaving the site, the server will terminate the session after a predetermined period of time, commonly 30 minutes duration. I think both of them are same. Because a browser session remains as long as the user has kept the browser opened. As soon as he closes it, the session expires. And once this session expires, it sends data to the server to close this session over there as well. So they both work simultaneously I believe. Hope this helps. ",
+            "date": "Answered October 25, 2016",
+            "views": "74",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Raghav Sagar",
+                "href": "/profile/Raghav-Sagar"
+            },
+            "answer_text": "I think you are referring to Session-based authentication (which maintains server state) vs Token-based authentication (which is stateless) Session based authentication: On login, server generates a unique (very difficult to guess) session id, passes this to the client (browser) which stores it (eg. browser cookie)Maintains all session state on the server keyed on session idAll future incoming requests from client provide this session id to server, which can authenticate the clientToken based authentication On login, server generates an authentication token based on some cryptographic scheme, passes this to the client (browser) which stores it (eg. browser cookie)No state is maintained on the serverAll future incoming requests from client provide the auth token to server. Server then uses the features of the cryptographic scheme to verify the auth token on the fly to authenticate clientRef: Sessions vs. Token based authentication ",
+            "date": "Answered June 8, 2018",
+            "views": "52",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gopinath Tambrahalli",
+                    "user_href": "/profile/Gopinath-Tambrahalli"
+                },
+                {
+                    "user_id": "Harish Sadaram",
+                    "user_href": "/profile/Harish-Sadaram"
+                },
+                {
+                    "user_id": "Raghad Abugharbieh",
+                    "user_href": "/profile/Raghad-Abugharbieh"
+                },
+                {
+                    "user_id": "Victor Manea",
+                    "user_href": "/profile/Victor-Manea-2"
+                },
+                {
+                    "user_id": "Yati Raj",
+                    "user_href": "/profile/Yati-Raj"
+                }
+            ]
+        }
+    ]
+}

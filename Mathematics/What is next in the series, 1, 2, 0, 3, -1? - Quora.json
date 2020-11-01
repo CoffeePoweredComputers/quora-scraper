@@ -1,0 +1,66 @@
+{
+    "title": "What is next in the series, 1, 2, 0, 3, -1? - Quora",
+    "tags": [
+        "Sums and Series (mathematics)",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John K Williamsson",
+                "href": "/profile/John-K-Williamsson"
+            },
+            "answer_text": "One of the challenges that I enjoy is using my TI-84 PLUS CE Graphing Calculator to create sequences with as few statements or least complexity as possible. I came up with three different methods for my calculator to create this sequence: {1, 2, 0, 3, -1, \u2026} As far as simplicity goes, the first method I created was the shortest, in terms of the actual length of each line on the screen: First line of code:0 \u2192 Nposition of last number in the sequencewill also be used for the absolute value of each addend-1 \u2192 SSign (positive or negative) of addend{1} \u2192 [math]L_{1}[/math]List starts with first number already in storageRepeated line of code:N + 1 \u2192 Nposition and addend (see earlier comment)-S \u2192 Sinvert sign, negative, positive, negative, etc.SN+ [math]L_{1}[/math](N) \u2192 [math]L_{1}[/math](N+1)Multiply Sign\u00d7Addend, then add to end of list to create new value stored as next item in list.[math]L_{1}[/math]This code simply displays the entire list so farHow is my second method different from the first? Instead of using S to keep track of what sign to use, I use the remainder function to determine if N is even or odd, then multiply by -1 or +1 depending on whether N is even or odd.How is my third method different from the second? I wondered if I could avoid defining N in the first statement, but still ended up defining it in order to shorten each of the repeated statements.I\u2019ll leave it to an interested calculator nerd to rewrite the repeated line so that the variable N is not used at all. Have fun with it. P.S. If you are going to be buying one of the 84 models for classroom use, read this article: Why the TI-84-Plus-CE is better than all the other TI-84's . There are some differences that make the CE better than the Silver Edition or the older 83+ or 84+. ",
+            "date": "Answered July 13, 2018",
+            "views": "26",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ethan Snyder",
+                    "user_href": "/profile/Ethan-Snyder-49"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Larry Phillips",
+                "href": "/profile/Larry-Phillips-38"
+            },
+            "answer_text": "It seems to be an alternative +/- incremental series. +1, -2, +3, -4, and so on. 1 (+1) = 2 2 (-2) = 0 0 (+3) = 3 3 (-4) = -1 So the next in the series should be -1 (+5) = 4 ",
+            "date": "Answered March 4, 2018",
+            "views": "93",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anne Karakash",
+                    "user_href": "/profile/Anne-Karakash"
+                },
+                {
+                    "user_id": "Octavia Dabney",
+                    "user_href": "/profile/Octavia-Dabney"
+                },
+                {
+                    "user_id": "Jennifer Bowman",
+                    "user_href": "/profile/Jennifer-Bowman-131"
+                },
+                {
+                    "user_id": "Linus Redacted",
+                    "user_href": "/profile/Linus-Redacted"
+                },
+                {
+                    "user_id": "Raven Raven",
+                    "user_href": "/profile/Raven-Raven-69"
+                },
+                {
+                    "user_id": "Justin Lee",
+                    "user_href": "/profile/Justin-Lee-966"
+                },
+                {
+                    "user_id": "Paolo Regazzi",
+                    "user_href": "/profile/Paolo-Regazzi"
+                }
+            ]
+        }
+    ]
+}

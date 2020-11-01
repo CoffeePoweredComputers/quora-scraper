@@ -1,0 +1,32 @@
+{
+    "title": "What is the difference between an 80486 microprocessor and an 80186 microprocessor? - Quora",
+    "tags": [
+        "Microprocessors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jerry Coffin",
+                "href": "/profile/Jerry-Coffin-2"
+            },
+            "answer_text": "The difference is pretty massive, actually. The 80186 is basically similar to an 8086, but with higher clock speed (up to 10 MHz or so), and more peripherals (PIC, clock generator, a couple timers, etc.) integrated onto the CPU die. It also added some new instructions. But fundamentally, it was pretty much like an 8086, particularly in the fact that it supported only real mode and 1 megabyte of memory. The 80486 was a follow-on to the 80386. The 80386 added protected mode to address more memory, and support protection so (for example) one process wouldn\u2019t be able to easily overwrite another process\u2019 memory. It had 4 protection \u201crings\u201d so a normal process wouldn\u2019t be able to overwrite kernel memory. It had 32-bit registers and addressing so it supported up to 4 Gigabytes of RAM. The 80486 was pretty similar to an 80386, but with an on-die cache and higher clock speeds to significantly improve execution speed. But (in particular) it still had 32-bit protected mode to address lots more memory, isolate each process, and so on. As Travis Casey was kind enough to remind me, the 80486 also included on-die floating point hardware, where the 80186 used a separate 80187 floating point processor, or (much more often) used much slower software emulation of floating point. Moving the floating point hardware onto the CPU die reduced communication overhead, substantially increasing performance. ",
+            "date": "Answered April 6, 2020",
+            "views": "462",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Travis Casey",
+                    "user_href": "/profile/Travis-Casey-4"
+                },
+                {
+                    "user_id": "James C. Maxwell",
+                    "user_href": "/profile/James-C-Maxwell"
+                },
+                {
+                    "user_id": "Jomin Yu",
+                    "user_href": "/profile/Jomin-Yu"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "title": "Why is Apache still used when NGINX is easier to understand and configure, and apparently performs better? - Quora",
+    "tags": [
+        "Nginx (web server)",
+        "Apache HTTP Server",
+        "Apache Software Foundation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Quaid",
+                "href": "/profile/David-Quaid-2"
+            },
+            "answer_text": "There are many webmasters who think Apache is much faster than NGINX for dynamic content. And - the things that NGINX does provide speedwise, like caching and compressing can be better handled by a load balancer in front of a web server - including putting a load balancer in front of Apache or NGINX.  ADC\u2019s or load balancers are optimized for things like traffic distribution and SSL acceleration. This means the web servers have less work to do. By moving caching and compression to the front, the web servers only have to deal with dynamic requests - giving the web server infrastructure much more room to scale and deal with higher traffic levels. Secondly, the only way to achieve HA (high availability) is to have more than one web server. Monolithic web servers have multiple points of failure, hardware more so than virtual. For example, what if there\u2019s a bug or issue in the OS? What if the web application fails? Well, load balancers can perform health checks and route servers in and out based on their health. One of my colleagues wrote this script[1] to demonstrate how a load balancer can test and deploy web servers based on sampling a small amount of traffic and then asking the Admin if it should deploy or not. The LB will automatically route traffic away from a sick server. More - Load Balancers, like the one made by the company I work for, offer HTTP/2. So even if you\u2019re servers aren\u2019t yet HTTP/2, the connection between the client and the ADC will be - giving you a nice SEO boost. Also, you can now get a tool, an application performance monitor if you will - for free - that lets you see traffic going through your ADC\u2019s - including F5, KEMP and NGINX. All in one place!   Footnotes[1] KEMPtechnologies/python-kemptech-api",
+            "date": "Answered May 6, 2017",
+            "views": "3",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Cheney Ketley",
+                    "user_href": "/profile/Cheney-Ketley"
+                },
+                {
+                    "user_id": "Anand Purohit",
+                    "user_href": "/profile/Anand-Purohit"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Raghav Gupta",
+                "href": "/profile/Raghav-Gupta-279"
+            },
+            "answer_text": "There are many use case of web servers and nginx is not an all rounder. NGINX was primarily created to increase the speed of static resources and act as reverse proxy. Time has changed and it works well for other uses if configured properly but if the site is at large dynamic Apache is good to go. If there are ample resources, the best is to use Apache as backened and setup NGINX on its front and configure it as a reverse proxy for apache. Also use nginx as cache. For basic use cases nowadays, nginx is the best to start with . Also, because cPanel does not have the kind of integration it has with Apache, and most shared hosting is based on that,apache wont go anywhere, anytime soon ",
+            "date": "Answered March 28, 2017",
+            "views": "13",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "David Quaid",
+                    "user_href": "/profile/David-Quaid-2"
+                }
+            ]
+        }
+    ]
+}

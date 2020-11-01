@@ -1,0 +1,37 @@
+{
+    "title": "How to prove by mathematical induction that 3^n > n^3 for all +ve integer n>3 - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)",
+        "Number Theory",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lukas Schmidinger",
+                "href": "/profile/Lukas-Schmidinger-1"
+            },
+            "answer_text": "A general case for  is shown in the Alexander Farrugia's answer to Which is greater, 32^{23} or 23^{32}? In this spefic case: The base case is self evident:  When we increase n by 1 We have [math]3 \\cdot 3^n \\gt 3n^3 \\overset{?}{\\gt}{(n+1)^3=n^3+3n^2+3n+1[/math] For the last claim we need to compare  and  Well if  Than  As  all we need is  To secure it is true. Solving the quadtric inequality gives  which is the case here. ",
+            "date": "Answered January 11, 2020",
+            "views": "47",
+            "upvotes": " Answer requested by Wong Tsz Yau Martin",
+            "upvoters": [
+                {
+                    "user_id": "Wong Tsz Yau Martin",
+                    "user_href": "/profile/Wong-Tsz-Yau-Martin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Tam",
+                "href": "/profile/Michael-Tam-28"
+            },
+            "answer_text": "Let n = k + 3 Case 1: k = 1 3^4 = 81 and 4^3 = 64 3^4 > 4^3 Case 2: let there be a natural number m, k = m, such that 3^(m + 3) > (m + 3)^3 Prove by induction that when k = m + 1, 3^(m + 4) > (m + 4)^3 From case 2, 3 * 3^(m + 3) > 3 * (m + 3)^3 3^(m + 4) > 3 * (m + 3)^3 But 3 * (m + 3)^3 > (m + 4)^3 if and only if 3 > ((m + 4)/(m + 3))^3 = (1 + 1/(m + 3))^3 1 + 1/(m + 3) <= 1 + 1/4 = 1.25 So (1 + 1/(m + 3))^3 <= (1.25)^3 = 1.953125 < 3 Thus (1 + 1/(m + 3))^3 < 3 3^(m + 4) > 3 * (m + 3)^3 and 3^(m + 3)^3 > (m + 4)^3 means 3^(m + 4)^3 > 3 * (m + 3)^3 > (m + 4)^3, which implies 3^(m + 4)^3 > (m + 4)^3 ",
+            "date": "Answered January 11, 2020",
+            "views": "82",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

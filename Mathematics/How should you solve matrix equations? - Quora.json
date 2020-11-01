@@ -1,0 +1,21 @@
+{
+    "title": "How should you solve matrix equations? - Quora",
+    "tags": [
+        "Matrices (mathematics)",
+        "Algebraic Equations",
+        "Linear Algebra",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Simon Giz",
+                "href": "/profile/Simon-Giz-1"
+            },
+            "answer_text": "I guess you are talking about an equation of the type AX=B, where A is a mxn matrix, X is a nx1 column unknown vector, and B is a mx1 constant vector? In that case, you multiply both side on the left by the inverse of the A matrix, giving: A^(-1)AX = X = A^(-1)B So the main part of the resolution consist in finding the inverse matrix of A. For it to exist, you must be sure its rank is maximal (its determinant is not zero), otherwise at least two of the equations of the system are not linearly indepedant. ",
+            "date": "Answered December 6, 2016",
+            "views": "138",
+            "upvotes": "0"
+        }
+    ]
+}

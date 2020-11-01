@@ -1,0 +1,45 @@
+{
+    "title": "What are IP address prefixes (in IPv4 & IPv6)? - Quora",
+    "tags": [
+        "IPv4",
+        "IPv6"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Timothy Dutton",
+                "href": "/profile/Timothy-Dutton-3"
+            },
+            "answer_text": "To understand prefixes it might help to go back to that start of classless addressing. Originally we just had an IP address as a 32 bit number with the leading bits denoting the type of address. Class A,B,C etc. However this was extremely wasteful as it meant for example, if someone needed a few more IP addresses than could be provided with a class C network (254 hosts), then they might ask for a class B IP address range instead (65534 hosts) which potentially wasted thousands of IP addresses. It\u2019s even worse if you needed slightly more than a class B could provide and were given a class A address instead. Classless addressing added an additional 32 bit integer - the network mask. Now you get two numbers e.g. IP address - 192.168.0.1Network mask - 255.255.255.0 Every bit in the network mask that is set to one denotes the network portion of the IP address. By using the same format as the IP address it\u2019s easier to match the bits. 255 decimal is 11111111 in binary meaning that in the example above. 192.168.0 is the network portion while 1 is the host portion. Fun fact 1: When network masks were first added, there was no requirement that the network bits had to be coninguous. Meaning this was quite acceptable. IP address - 192.168.0.1Subnet mask - 246.255.255.0 HOWEVER in practice managing such networks would be difficult so RFC 1219 changed this so that the network bits were the contiguous bits from the left side indicated by 1\u2019s and the host bits were the contiguous bits from the right side indicated by zeroes. This now leads us to CIDR notation or prefixes. If we go back to our first example with a subnet mask of 255.255.255.0 we see that the first 24 bits are used for the network portion. This can be expressed by using the prefix /24 So we can now rewrite our example as: 192.168.0.1 /24 This translates very easily to the larger address space of IPv6 if we adopt a similar IP address and subnet mask notation things start to get messy. Imagine if you will a facebook IP with a 128 bit subnet mask. This COULD have ended up being expressed IP address  - 2a03:2880:f129:83:face:b00c:0:25de\u00a0Subnet mask - ffff:ffff:ffff:ffff::\u00a0If I were using the same rules for writing the subnet mask as allowed in writing an IPv6 address that is. Fortunately you will NEVER see this - instead you\u2019ll see something like this instead. 2a03:2880:f129:83:face:b00c:0:25de /64\u00a0Which shows that the first 64 bits of the address is the network portion. If you want to denote a single IPv6 host - you might see this used instead 2a03:2880:f129:83:face:b00c:0:25de /128\u00a0As you can see the larger the prefix, the fewer hosts there are on a network. Fun fact 2: In IPv6 the smallest possible prefix for a single network MUST be a /64. This is to allow things like SLAAC to work correctly as these use 64 bits to automatically assign a host portion for an address. TL:DR A network prefix is a notation to express the number of bits (counted from the left or most significant bit) of an IP address that represent the network portion of the address and is written /n where n is a number Between 1 and 32 (IPv4)Between 1 and 128 (IPv6)",
+            "date": "Answered April 5, 2019",
+            "views": "13",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Lev Zelenin",
+                    "user_href": "/profile/Lev-Zelenin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carlos Ribeiro",
+                "href": "/profile/Carlos-Ribeiro"
+            },
+            "answer_text": "TLDR: an IP address prefix is the fixed part in a contiguous block of IP address, also know as a subnet. Prefixes are useful to refer to the entire subnet for planning, documentation, and routing purposes. Now for the long answer. IP addresses prefixes are a way to segment and organize both the distribution of addresses and also the routing process. I think that instead of thinking about prefixes, it's better to think about subnets. A subnet is a contiguous block of IP addresses. Because both IPv4 and IPv6 addresses are expressed as binary values (32 bits and 128 bits respectively), subnets are sized in powers of two. The rules are different, and subnetting is much more important and fine grained in IPv4 because of the smaller address space. But the idea is basically the same. Now, if you think about any particular subnet, you can split the IP address in two parts: The first part is the prefix, that is comprised of all bits leading to the subnet part of the address. The prefix for any given subnet is fixed.The second and final part are the bits on the subnet, that vary from the \"all zeroes\" to the \"all ones\". There one distinct IP address for each value in this count.The bigger the subnet is, the shorter the prefix. For example, the network 10.0.0.0/8 has a prefix of only 8 bits, and the subnet covers a large 24 bit space. But the network 192.168.0.0/24 is the opposite: a long 24 bit prefix, and only 8 bits in the subnet, for 256 possible addresses (some of them reserved). Adjacent subnets may be combined to form a larger network. In this case a single prefix can be used to refer to the aggregate. This is useful to simplify routing tables, consolidating smaller entries in a larger prefix. ",
+            "date": "Answered December 6, 2015",
+            "views": "19",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Derrik Pates",
+                    "user_href": "/profile/Derrik-Pates"
+                },
+                {
+                    "user_id": "David Decker",
+                    "user_href": "/profile/David-Decker-10"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,81 @@
+{
+    "title": "What does N-1 mean in a sample variance? - Quora",
+    "tags": [
+        "Variance (statistics)",
+        "Sampling (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Helene Hoegsbro Thygesen",
+                "href": "/profile/Helene-Hoegsbro-Thygesen"
+            },
+            "answer_text": "N is the sample size so N-1 is one less. Suppose you sample the two numbers -1 and 1. The sample mean is zero so the deviations are -1 and +1, and the sum of the squared deviations (relative to the sample mean) is (-1)^2+1^2=2. How do we estimate the variance, i.e. the mean squared deviation, from this? In the sample itself, obviously, it is 2/N = 2/2 = 1. However, if you want to estimate the variance of the population from which the two numbers were samples, you have to take into account that the population mean might not be 0. If it is -1, for example, you would get a mean squared deviation of 2. If it were -2, you will get 5. It turns out that the unbiased estimate is 2, not 1, in this case. More generally, you have to divide the sum of squared deviations by N-1 instead of by N. Unless you somehow (magically) know the population mean. In that case, you ignore the sample mean, add up the squared deviations relative to the known population mean, and divide by N. ",
+            "date": "Answered February 25, 2018",
+            "views": "22",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Giovanni Papini",
+                    "user_href": "/profile/Giovanni-Papini-2"
+                },
+                {
+                    "user_id": "Ravi",
+                    "user_href": "/profile/Ravi-9"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stefano Marchetti",
+                "href": "/profile/Stefano-Marchetti-5"
+            },
+            "answer_text": "There is not a particular meaning. It comes out to get an unbiased estimator for the population variance, [math]\\sigma^2[/math]. Under simple random sampling with replication [math]X_1,X_2,\\ldots,X_n[/math] are independent and identically distributed random variable with mean [math]\\mu[/math] and variance [math]\\sigma^2[/math], [math]X_i\\sim (\\mu,\\sigma^2)[/math]. No distributional assumption on the X variables has been made. Let [math]\\sigma^2=V[X]=E[(X-E[X])^2]=E[X^2]-(E[X])^2[/math] [math]\\sigma^2/n = V[\\bar{X}]=E[\\bar{X}^2]-(E[\\bar{X}])^2,[/math] then we can write [math]E[X^2]=\\sigma^2+(E[X])^2=\\sigma^2+\\mu^2[/math] [math]E[\\bar{X}^2]=\\sigma^2/n+(E[\\bar{X}])^2=\\sigma^2/n+\\mu^2.[/math] Since the variance in finite population is defined as [math]N^{-1}\\sum_{i=1}^N(x_i-\\mu)^2[/math], where [math]N[/math] is the population size, one can be tempted to estimate the variance using the estimator [math]\\tilde{S}^2=\\frac{1}{n}\\sum_{i=1}^n(X_i-\\bar{X})^2.[/math] This estimator is biased, indeed [math]E[\\tilde{S}^2]=E[\\frac{1}{n}\\sum_{i=1}^n(X_i-\\bar{X})^2]=\\frac{1}{n}E[\\sum_{i=1}^nX_i^2-n\\bar{X}^2][/math] [math]=\\frac{1}{n}\\Big\\{\\sum_{i=1}^nE[X_i^2]-nE[\\bar{X}^2]\\Big\\}=\\frac{1}{n}\\Big\\{n(\\sigma^2+\\mu^2)-n(\\frac{\\sigma^2}{n}+\\mu^2)\\Big\\}[/math] [math]=\\sigma^2+\\mu^2-\\frac{\\sigma^2}{n}-\\mu^2=\\sigma^2\\Big(1\u2013\\frac{1}{n}\\Big)=\\sigma^2\\Big(\\frac{n-1}{n}\\Big)\\neq \\sigma^2.[/math] From the above result we can easily derive an unbiased estimator for [math]\\sigma^2[/math] by multiplying [math]\\tilde{S}^2[/math] by [math]\\frac{n}{n-1}[/math], therefore, an unbiased estimator for [math]\\sigma^2[/math] is [math]S^2=\\frac{n}{n-1}\\tilde{S}^2= \\frac{n}{n-1}\\frac{1}{n}\\sum_{i=1}^n(X_i-\\bar{X})^2=\\frac{1}{n-1}\\sum_{i=1}^n(X_i-\\bar{X})^2.[/math] We can easily show this estimator is unbiased, [math]E[S^2]=E[\\frac{n}{n-1}\\tilde{S}^2]=\\frac{n}{n-1}E[\\tilde{S}^2]=\\frac{n}{n-1}\\sigma^2\\Big(\\frac{n-1}{n}\\Big)=\\sigma^2.[/math] ",
+            "date": "Answered October 23, 2018",
+            "views": "1",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Martin Lukac",
+                    "user_href": "/profile/Martin-Lukac-2"
+                },
+                {
+                    "user_id": "Bill Liu",
+                    "user_href": "/profile/Bill-Liu-133"
+                },
+                {
+                    "user_id": "Jimmy Ziu",
+                    "user_href": "/profile/Jimmy-Ziu"
+                },
+                {
+                    "user_id": "Nate Kotila",
+                    "user_href": "/profile/Nate-Kotila-1"
+                },
+                {
+                    "user_id": "Mbuso Mbambo",
+                    "user_href": "/profile/Mbuso-Mbambo-1"
+                },
+                {
+                    "user_id": "Nuno Ko",
+                    "user_href": "/profile/Nuno-Ko"
+                },
+                {
+                    "user_id": "Bryan Bernard",
+                    "user_href": "/profile/Bryan-Bernard-7"
+                },
+                {
+                    "user_id": "Robin Koppe",
+                    "user_href": "/profile/Robin-Koppe-1"
+                },
+                {
+                    "user_id": "Larry Storeling",
+                    "user_href": "/profile/Larry-Storeling"
+                }
+            ]
+        }
+    ]
+}

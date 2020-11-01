@@ -1,0 +1,70 @@
+{
+    "title": "Prove that N\u00d7N is countable? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gogole PI Mukherjee",
+                "href": "/profile/Gogole-PI-Mukherjee"
+            },
+            "answer_text": "Well, with due respect to everyone who tried to answer this , I am very disappointed and depressed by the answers. Someone just copied from Google, and someone headed towards some pointless discussion. But they forgot the simplest thing they could do , i.e defining a mapping from N\u00d7N to N and showing it's a bijection. And we are gonna do that simplest thing here . So without further delay let's explore it\u2026\u2026 And keep patience as it is gonna be long!! So, first let's consider a mapping. What it could be ? Well that's fully my choice. Here let's talk about ' pointing funtion' . This is not a usual funtion with a usual name \u2026so how to define it !!! If we take an element from N\u00d7N , suppose ( m,n) ( they should be ordered pairs!!) . Now let's make a table with arbitrary values of 'm' and 'n' . And it would look like,  Now if Jack comes and tell me which diagonal will be the mother town for a specific (m,n) i.e (1,2) or (2,3) etc. Then this pic will help;  So, as we have put the points as we wanted a point for a specific m and n , if lies on the diagonal k then, k=m+n-1 . This is not a conjecture. I just have tried to find out the link and there it is\u2026. Now u can find the position of (m,n) ,if u step down in k-th diagonal from left to right. Now it seems easy as we have very few points, what will happen if we have so many points ( more than what u think!!) ? \u2026\u2026.. For that we can proceed in the manner, count the points from 1 to (k-1) diagonals and add m to them as the point is (m,n) . Now , there comes a question why to add m and it's because of our permutation. We kept them as a manner that all the m=1 are in one line , m=2 in one line, and it's goes on. So the intervel from position of the first point to the required point of a diagonal is the 'x' co-ordinate of the point, i.e if it's (m,n) , we should take 'm' step from first point. Okay let's move, So, the position of a point (m,n) is , 1+2+3+\u2026\u2026.+(k-1)+m =1+2+3+\u2026.+(m+n-2)+m =1/2(m+n-2)(m+n-1) + m =g(m+n-2)+m \u2026where g(x) is a increasing funtion and g(x)=1+2+\u2026\u2026+x. And our \u2018pointing funtion' h :N\u00d7N-N is defined by, h(m,n)=g(m+n-2) +m. Now we have defined it, and we are gonna check whether it's a bijection or not!!! Injection: Let's take two different elements from N\u00d7N . Let it be (m,n) and (m',n') . Now if (m,n)\u2260(m',n') it means; either, m+n<m'+n' Or, m+n=m'+n' but m\u2260 m' (1+4=2+3 ; but 1\u22602\u22603\u22604) For case-1, h(m,n)=g(m+n-2)+m\u2264 g(m+n-2)+(m+n-1) =g(m+n-1)\u2264 g(m'+n'-2)< g(m+n'-2)+m' ( as m'>O) = h(m',n') . So for every, (m,n)<(m',n') ; h(m,n)<h(m',n'). So h is injective. Case-2 h(m,n)-m=g(m+n-2)=g(m'+n'-2) [as, m+n=m'+n'] = h(m',n')-m' So for every m\u2260 m' , h(m,n)\u2260h(m',n'). Again h is injective. Surjection: Okay, this gonna be a little bit complex. So , h(1,1)= 1 ,as it's the first point from left at bottom. Now if we chose (m*,n*) from N\u00d7N then we should get h(m*,n*) =t , for some t belongs to N. Now we are gonna prove that , for surjectivity. Here t is the position of a specific point. We are gonna check whether it's (m*,n*) or not . So t<g(t) so if we construct a set E:=(l belongs to N: t\u2264g(l suffixes t) ) . Now E is not empty clearly and by well ordering principal it must have a list element. Let it's l>1 . It means t lies on l -th diagonal. Then, g(l suf t-1)< t\u2264 g(l suf t)\u2026.(1) g(x)=1+2+\u2026.+x= 1+2+\u2026 +(x-1) +x =g(x-1)+x. So, g(l suf t)=g (l suf t-1)+ l suf t\u2026\u2026(2) By (1) and (2) , t\u2264 g(l suf t-1)+ l suf t. Let,m*=t-g( l suf t-1) and, 1 \u2264m*\u2264 l suf t . n*=(l suf t) +1 -m* where, 1\u2264n*\u2264 l suf t. So,by above relations, m*+n*-1= l suf t . Now, h( m*,n*)= g( m*+n*-2)+m* =g(m*+n*-1\u20131)+m*= g ( l suf t-1)+ ( l suf t) = t. So, h(m*,n*)= t. So, h is surjective. And as h is simultaneously injective and surjective, thus it's bijective !!!. At last we have proved this !!! THANKS!!! ",
+            "date": "Answered February 23, 2019",
+            "views": "33",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Atreyee Mukherjee",
+                    "user_href": "/profile/Atreyee-Mukherjee-30"
+                },
+                {
+                    "user_id": "Gunda Bhatt",
+                    "user_href": "/profile/Gunda-Bhatt"
+                },
+                {
+                    "user_id": "Harshil Singhal",
+                    "user_href": "/profile/Harshil-Singhal"
+                },
+                {
+                    "user_id": "Manoj Kumar",
+                    "user_href": "/profile/Manoj-Kumar-21107"
+                },
+                {
+                    "user_id": "Tin Aung",
+                    "user_href": "/profile/Tin-Aung-38"
+                },
+                {
+                    "user_id": "Yuvraj Garg",
+                    "user_href": "/profile/Yuvraj-Garg-18"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rupali Bharambe",
+                "href": "/profile/Rupali-Bharambe-1"
+            },
+            "answer_text": "Consider the sets A1={(1,1),(1,2),(1,3),\u2026\u2026\u2026\u2026.} A2={(2,1),(2,2),(2,3),\u2026\u2026\u2026\u2026.} A3={(3,1),(3,2),(3,3),\u2026\u2026\u2026\u2026..} \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026. An={(n, 1),(n,2),(n,3)\u2026\u2026\u2026} Clearly N*N=U An Then n\u20acN Also the function f :An belong to N defined by f(n, i) =i is one-one and onto. Therfore, An is denumerable. SinceN*N is denumerable collection of denumerable and hence countable. ",
+            "date": "Answered April 20, 2018",
+            "views": "38",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jim Avery",
+                    "user_href": "/profile/Jim-Avery-14"
+                },
+                {
+                    "user_id": "Nay Whon Thit",
+                    "user_href": "/profile/Nay-Whon-Thit"
+                },
+                {
+                    "user_id": "Eleine Calingayan",
+                    "user_href": "/profile/Eleine-Calingayan"
+                },
+                {
+                    "user_id": "Sipu",
+                    "user_href": "/profile/Sipu-2"
+                }
+            ]
+        }
+    ]
+}

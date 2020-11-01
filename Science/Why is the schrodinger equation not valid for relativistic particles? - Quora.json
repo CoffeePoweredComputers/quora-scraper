@@ -1,0 +1,53 @@
+{
+    "title": "Why is the schrodinger equation not valid for relativistic particles? - Quora",
+    "tags": [
+        "Quantum Mechanics",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "\u0160t\u011bp\u00e1n Svoboda",
+                "href": "/profile/\u0160t\u011bp\u00e1n-Svoboda-1"
+            },
+            "answer_text": "There is an \u201cintuitive\u201d (not rigorous!) way how to obtain Shrodinger\u2019s equation. We were told that this is how they postulated it. First, take a wave\u2026 [math]\\psi = A . exp(i ( k r - \\omega t))[/math] Luis de Broglie postulated wave-corpuscular dual nature of quantum objects. If we know that the \u201cwave\u201d part of our problem is described by a wave (that is a solution to the wave equation. It must be true for our quantum system as well. But to get further, lets rewrite it. Frequency is directly related to energy, as wave vector to momentum. [math]E = \\hbar . \\omega[/math] and [math]p = \\hbar . k[/math] substitue and rewrite and we get just a wave not in terms of angular frequency and wave vector, but in terms of energy and momentum. Nothing changed so far [math]\\psi = A . exp (i/\\hbar ( p . r - E . t) )[/math] In such case we can see that we can get Energy of the wave simply by differential of the wave by time and Momentum as differential by space. And here comes the \u201cmagic\u201d. What will it help? It will help a lot. Because we knot that for non-relativistic particles the relation between Energy and momentum is? [math]E = p^2/m + V[/math] (where V is any potential the particle might be in.) So from the wave we have: [math]\\frac{\\partial\\psi}{\\partial t} = -\\frac{i.E}{\\hbar}.\\psi[/math] [math]\\frac{\\partial\\psi}{\\partial r} = -\\frac{i.p}{\\hbar}.\\psi [/math]and its second derivative to get the square of momentum[math]\\frac{\\partial^2\\psi}{\\partial t^2} = \\frac{p^2}{\\hbar^2}.\\psi[/math] If you isolate momentum and energy of the wave you get: (And let [math]E = i.\\hbar \\frac{\\partial\\psi}{\\partial t} / \\psi[/math] [math]p^2 = \\hbar^2 \\frac{\\partial^2\\psi}{\\partial t^2} / \\psi[/math] If you substitute Energy and momentum into our non-relativistic equation for energy and momentum\u2026 you get Schrodinger equation. (And now, it all started! We have new equation! What does it mean?) If you are interested in relativistic particles, you need to take into account relativistic relation of energy and momentum which is: [math]E = \\sqrt{c^2.p^2 + (m_0.c^2)^2} +V[/math] Where c is speed of light and m0 the rest mass of the particle. (Dirac 1928) If you substitute our Energy and momentum expressions into the relativistic equation of Energy-momentum you get equation that describes the behaviour of relativistic quantum particles. That equation is known as Dirac Equation Dirac equation - Wikipedia ",
+            "date": "Answered January 15, 2019",
+            "views": "19",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rohan Chaudhary",
+                    "user_href": "/profile/Rohan-Chaudhary-180"
+                },
+                {
+                    "user_id": "Saumya Singh",
+                    "user_href": "/profile/Saumya-Singh-1103"
+                },
+                {
+                    "user_id": "Khrys Tapang",
+                    "user_href": "/profile/Khrys-Tapang-1"
+                },
+                {
+                    "user_id": "Valiant Asfar",
+                    "user_href": "/profile/Valiant-Asfar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nathan Kaye",
+                "href": "/profile/Nathan-Kaye-5"
+            },
+            "answer_text": "\u201cQM + SR = QFT\u201d There are relativistic corrections that are imperfect but capture more relativistic effects. Here is the full \u201cfine structure\u201d Hamiltonian for hydrogen. It is not truly relativistic but it\u2019s a lot more accurate for many practical purposes. [math]H=H_{\\rm Coulomb}+H_{\\mathrm{kinetic}}+H_{\\mathrm{SO}}+H_{\\mathrm{Darwin}}[/math] The Klein Gordan and Dirac equations were a step forward. They at least capture the true relativistic energy momentum relations unlike the above. However as I understand it, single particle equations could not fully satisfy the needs of relativity, a problem which is one path leading to quantum field theory. It is not enough to merely satisfy the relativistic energy momentum relation instead of [math]p^2/2m[/math]. The propagation of the wavefunction must be relativistic which means that the field at [math]x[/math] can\u2019t be correlated with events outside of the light cone. There was an issue with doing this in the conventional Schrodinger equation with a single particle or a fixed number of particles. Markus Luty explains this at the start of this video during which he writes \u201cQM + SR = QFT\u201d  Here is the first problem:  (The Green\u2019s function leaks outside the light cone) It was found for example that the number of particles in a field depended on the velocity of the reference frame. A framework was created called relativistic quantum field theory. Field operators of locations uncorrelated due to relativity commute with each other, the correct behavior for a relativistic theory. [math][\\phi(x), \\phi(y)] = \\Delta(x-y)[/math] described here or in QFT textbooks or notes such as David Tong\u2019s notes p 36. Relativistic QFT is the modern causal approach to relativistic QM. ",
+            "date": "Answered October 6, 2020",
+            "views": "102",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ryan Howe",
+                    "user_href": "/profile/Ryan-Howe-88"
+                }
+            ]
+        }
+    ]
+}

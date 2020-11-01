@@ -1,0 +1,57 @@
+{
+    "title": "What are some real world examples of concurrent or parallel software? Why is it needed? - Quora",
+    "tags": [
+        "Concurrency (computer science)",
+        "Parallel Computing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bill Bell",
+                "href": "/profile/Bill-Bell-1"
+            },
+            "answer_text": "You are using some kind of computer to place questions on Quora, and to read the answers. That computer could be a laptop, a mobile or cellular telephone, a desktop or something else. The operating system that animates that computer could be some form of Linus, Android, Windows, iPod OS, or various other alternatives. No matter, they all share one characteristic. The processes executed by these systems run concurrently, in parallel. Now, why? Put simply, it\u2019s because all of these systems have many things to do more or less at the same time. As you press keys each of these must be processed. Most of them are just ordinary \u2018typewriter\u2019 keys but some have special meaning. When you press a special key combination the computer must invoke another process to handle that, without \u2018forgetting\u2019 that it was working on key presses. As ordinary keys come in they must be stored for processing; meanwhile, they must be sent somehow to the process that writes characters to the screen. There are then at least two processes running independently just to handle the characters you type. This is forgetting that in an answer like this, which is getting a tad long, another process might have to be invoked to find more space \u2018somewhere\u2019 to put it. All of these processes are competing for resources such as the CPU. At least one of the processes has to exert overall control. Otherwise, one of the other processes could take control and keep it. There is a balancing act to perform involving CPU, fast and slow memory, etc. ",
+            "date": "Answered April 13, 2018",
+            "views": "29",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sumangala Rao",
+                    "user_href": "/profile/Sumangala-Rao"
+                },
+                {
+                    "user_id": "Vasco Ferreira",
+                    "user_href": "/profile/Vasco-Ferreira-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vaclav Krpec",
+                "href": "/profile/Vaclav-Krpec"
+            },
+            "answer_text": "Are you reading this in a browser? There you are, a web browser is such an example. So is the web server that provided you with the content. So is your machine\u2019s operating system. And the server\u2019s. Parallelism is needed in order to increase the computation power of the machine. This is done on 2 levels: 1/ your CPU has multiple cores, each capable of running one thread of computation at a time, 2/ your operating system schedules processes on the cores based on whether they are ready to actually do something. The 1st case is rather obvious. We need more speed. Always. A faster computer, that\u2019s what we want, right? But you can\u2019t increase your CPU speed that easily, there are physical limits. What you can do is to add more CPUs (or their cores). They will be able to run more computations in parallel, so if your process is single-threaded, you won\u2019t be able to use the extra labour force. But we run many processes in parallel on our machines and we can also parallelise computations, like doing half of it on one CPU, half of it on the other, at the same time. So it works rather nicely. The 2nd case is important because the CPU executes code much faster than e.g. the peripheral devices (like disks) can provide data. Basically, when you read data from the disk or a communication line, your CPU is waiting and getting bored. It takes quite long, from its perspective. So the idea is: let\u2019s allow it to do something else before the data is ready to be transferred. Your operating system switches context of computations all the time. If it let the CPU to wait for data, your computer would seem veeeeeery sllloooooowwwww indddeeeeeeeeeddddddddddddddd, believe me. ",
+            "date": "Answered April 13, 2018",
+            "views": "17",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Eshika Gupta",
+                    "user_href": "/profile/Eshika-Gupta-1"
+                },
+                {
+                    "user_id": "Huseyin Tugrul Buyukisik",
+                    "user_href": "/profile/Huseyin-Tugrul-Buyukisik"
+                },
+                {
+                    "user_id": "Nathaniel Brown",
+                    "user_href": "/profile/Nathaniel-Brown-6"
+                },
+                {
+                    "user_id": "Vasco Ferreira",
+                    "user_href": "/profile/Vasco-Ferreira-15"
+                }
+            ]
+        }
+    ]
+}

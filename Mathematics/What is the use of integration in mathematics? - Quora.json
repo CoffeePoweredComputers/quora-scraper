@@ -1,0 +1,78 @@
+{
+    "title": "What is the use of integration in mathematics? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Trevor Cheung",
+                "href": "/profile/Trevor-Cheung"
+            },
+            "answer_text": "It is the reverse of differentiation, the rate of change of a function. [math]\\displaystyle \\frac d{dx} F(x) = f(x) \\iff \\int f(x) dx = F(x) + C \\tag* {}[/math] This is called indefinite integration, where the constant is not determined yet because any primitive plus another constant yield the same derivative, so we always add +C towards the end of our answer to indicate that the constant is yet to be determined. However, you might have heard that integration is integral to calculate the area under a curve. That is called definite integration.  This is the notation for the area under consideration, but how do we calculate the area? It is originally defined to be the sum of areas of the rectangular strips when the width is approaching 0, which means something like this:  Hope you get the idea. But this does not work for all the functions, because it is extremely tedious to get the area in this way. So what we want to do is to consider the derivative of the area function starting from a fixed value of x. To consider that, we consider [math]A(x+h) - A(x)[/math] for a smaller value of h. It is basically a little strip with width h, which we would approximate that to be a rectangle. That means the area would be [math]\\Delta A \\approx f(x)\\cdot h \\tag*{}[/math] That means [math]\\dfrac d{dx} A(x) = f(x) \\tag*{}[/math]  This is called the fundamental theorem of calculus. There is just one bit to complete. To find the actual area, it seems that we are finding the integral, but according to the discussion in the very first bit of this answer, there is infinitely many answer differing by constants. To cope with this, if we have [math]\\displaystyle \\int^x_a f(t)dt = F(x) + C \\tag*{} [/math] And replace [math]x[/math] by [math]a[/math], we should have the answer to be 0 because the area under the curve from x = a to x = a, should obviously be 0. So the required integration constant is [math]-F(a)[/math] In general we have [math]\\displaystyle \\int^b_a f(t)dt = F(b)-F(a) \\tag*{}[/math] This is a crash course on what integration is about! ",
+            "date": "Answered July 2, 2017",
+            "views": "8",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sara Wilson",
+                    "user_href": "/profile/Sara-Wilson-423"
+                },
+                {
+                    "user_id": "Arit Sarma",
+                    "user_href": "/profile/Arit-Sarma"
+                },
+                {
+                    "user_id": "Kiseki Hirakawa",
+                    "user_href": "/profile/\u5e73\u5ddd-\u5947\u8de1-Kiseki-Hirakawa"
+                },
+                {
+                    "user_id": "Kupferman Judy",
+                    "user_href": "/profile/Kupferman-Judy"
+                },
+                {
+                    "user_id": "Dave Clark",
+                    "user_href": "/profile/Dave-Clark-7"
+                },
+                {
+                    "user_id": "Alok Dave",
+                    "user_href": "/profile/Alok-Dave-3"
+                },
+                {
+                    "user_id": "Oscar Hildebrandt",
+                    "user_href": "/profile/Oscar-Hildebrandt"
+                },
+                {
+                    "user_id": "Piyush Jain",
+                    "user_href": "/profile/Piyush-Jain-573"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "M\u1ea1nh Tr\u00ed",
+                "href": "/profile/M\u1ea1nh-Tr\u00ed"
+            },
+            "answer_text": "1. Applications of the Indefinite Integral shows how to find displacement (from velocity) and velocity (from acceleration) using the indefinite integral. There are also some electronics applications in this section.In primary school, we learned how to find areas of shapes with straight sides (e.g. area of a triangle or rectangle). But how do you find areas when the sides are curved? We'll find out how in: 2. Area Under a Curve and3. Area Between 2 Curves 4. Volume of Solid of Revolution explains how to use integration to find the volume of an object with curved sides, e.g. wine barrels.5. Centroid of an Area means the centre of mass. We see how to use integration to find the centroid of an area with curved sides.6. Moments of Inertia explains how to find the resistance of a rotating body. We use integration when the shape has curved sides.7. Work by a Variable Force shows how to find the work done on an object when the force is not constant. This section includes Hooke's Law for springs.Survival TipsBefore you start this section, it's a good idea to revise: Graph of the Quadratic FunctionGraphs of Exponential and Log FunctionsPlane Analytic GeometryCurve Sketching(This chapter is easier if you can draw curves confidently.)You may also wish to see the Introduction to Calculus.8. Electric Charges have a force between them that varies depending on the amount of charge and the distance between the charges. We use integration to calculate the work done when charges are separated.9. Average Value of a curve can be calculated using integration.Head Injury Criterion is an application of average value and used in road safety research.10. Force by Liquid Pressure varies depending on the shape of the object and its depth. We use integration to find the force. (Source: intmath.com/applications-integration/applications-integrals-intro.php and you can find each and every application explained in details in this website).Hope this helps ",
+            "date": "Answered January 18, 2013",
+            "views": "18",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ricky Kwok",
+                    "user_href": "/profile/Ricky-Kwok"
+                },
+                {
+                    "user_id": "Abhiroop CVK",
+                    "user_href": "/profile/Abhiroop-CVK-1"
+                },
+                {
+                    "user_id": "Martin Mrva",
+                    "user_href": "/profile/Martin-Mrva"
+                },
+                {
+                    "user_id": "Meghasyam Meghu",
+                    "user_href": "/profile/Meghasyam-Meghu"
+                }
+            ]
+        }
+    ]
+}

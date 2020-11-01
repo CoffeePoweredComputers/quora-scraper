@@ -1,0 +1,61 @@
+{
+    "title": "How to write this program in C++ - Quora",
+    "tags": [
+        "Learning C (programming language)",
+        "Learning C++",
+        "C++ (programming language)",
+        "C (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ganapati Shinde",
+                "href": "/profile/Ganapati-Shinde"
+            },
+            "answer_text": "There are two methods to do this.(1) Using Temporary variable (2)Without Using Temporary Variable, (3) Using BitWise Operator (1)Using temporary variable : In this method, use \u201ctemp\u201d variable to temporarily store value of one of the variable C or D and then exchange values. i.e temp=C; C= D; D=temp; Code : #include <iostream> using namespace std; int main() { int C, D, temp; cout<<\"Enter the value of C and D : \"); cin>>C>>D; cout<<\"Before Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; temp = C; C = D; D = temp; cout<<\"After Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; return 0; } Output: Enter the value of C and D : 10 20 Before Swapping C =10 D = 20 After Swapping C =20 D = 10 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014- (2) Without Using Temporary Variable : In this method, first add both values and store the result in first variable, then subtract both values and store into another, then again subtract. i.e C=C+D; D=C-D; C=C-D; Code : #include <iostream> using namespace std; int main() { int C, D; cout<<\"Enter the value of C and D : \"); cin>>C>>D; cout<<\"Before Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; C = C+D; D = C-D; C = C-D; cout<<\"After Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; return 0; } Output: Enter the value of C and D : 10 20 Before Swapping C =10 D = 20 After Swapping C =20 D = 10 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014- (3) Using BitWise Operator : In this method, using \u201c^\u201d both values are EX-ORed and result is stored in one variable say C, again two values exored and result is stored in D, again exored and stored in C. i.e C = C ^ D; D = C ^ D; C = C ^ D; Code : C=C-D; Code : #include <iostream> using namespace std; int main() { int C, D; cout<<\"Enter the value of C and D : \"); cin>>C>>D; cout<<\"Before Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; C = C^D; D = C^D; C = C^D; cout<<\"After Swapping\\n C =\u201d<<C<<\u201d D = \u201c<<D; return 0; } Output: Enter the value of C and D : 10 20 Before Swapping C =10 D = 20 After Swapping C =20 D = 10 \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014- Hope this will help! ",
+            "date": "Answered September 28, 2016",
+            "views": "630",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aditi Khedkar",
+                    "user_href": "/profile/Aditi-Khedkar-1"
+                },
+                {
+                    "user_id": "Kariyappa Biradar",
+                    "user_href": "/profile/Kariyappa-Biradar"
+                },
+                {
+                    "user_id": "Amaresh Ilalpur",
+                    "user_href": "/profile/Amaresh-Ilalpur"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sahil Rajput",
+                "href": "/profile/Sahil-Rajput-28"
+            },
+            "answer_text": "Before attempting any question in coding , try to make an algorithm for that by this it will be easier for you to write code. In this question you have to swap two integers. So try to make an Algorithm for that.Try to understand this question by like this. You have two bottles A(fill with milk) and B(fill with juice).Now you have to fill A with juice and B with milk i.e swap their contents.For this you need an empty bottle(you can call that temporary variable). So that you fill empty bottle with content of A. now A become empty,so you can fill bottle A with content(Juice) of B.After that B become empty and then fill B with temporary bottle you took. Thats how you can swap two integers. Hope you find this answer usefull. ",
+            "date": "Updated November 5, 2016",
+            "views": "219",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Divyanshu Goyal",
+                    "user_href": "/profile/Divyanshu-Goyal-14"
+                },
+                {
+                    "user_id": "Kanishk Patil",
+                    "user_href": "/profile/Kanishk-Patil-1"
+                },
+                {
+                    "user_id": "Smriti Chawla",
+                    "user_href": "/profile/Smriti-Chawla-7"
+                }
+            ]
+        }
+    ]
+}

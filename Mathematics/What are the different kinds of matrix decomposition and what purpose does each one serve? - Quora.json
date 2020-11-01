@@ -1,0 +1,83 @@
+{
+    "title": "What are the different kinds of matrix decomposition and what purpose does each one serve? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Singular Value Decomposition",
+        "Numerical Analysis",
+        "Matrix Computations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Maher",
+                "href": "/profile/David-Maher-3"
+            },
+            "answer_text": "To paraphrase the Wiki article, there are two broad classes of decompositions:1) To solve linear equations, of which:     a) Some only apply to n x n matricies     b) Some apply to more general m x n matricies2) Eigenvalue-based decompositions Let's take a step back.  To solve a linear equation of the form , we would normally want to find   such that   (note I am just restricting to the n x n case here). The first type of decomposition tries to simplify or avoid the process of finding .  Always try to avoid finding inverses of a matrix if you can! For example, in the  decomposition, the linear equation becomes:    and so   as  The choice of which kind of decomposition often depends on the nature of matrix, and what sort of algorithm you're prepared to undertake. So, without getting embroiled in any further detail, that is then the general circumstances for which you would use them. But I will give one common example of where the Cholesky decomposition is used, which is in the generation of correlated random variables.  Consider a matrix of covariances   (which is a square, symmetric and positive definite).  We need to find the \"square root\" of this matrix in analogy to the way we would take the square root of the variance in the one-dimensional case.  The matrix  in the Cholesky decomposition  can be thought of as the analogue of a square-root. As for the eigenvalue type  , you are really changing the basis of the underlying, ie    and so   thus   Eigenvalue-based decompositions are then some variation of this. What are uses for eigenvalues?  Lots.  This comes from the inherent fact that it is looking at where (under a change of basis) that  acts like a constant, aka, the spectrum. Principle Component Analysis (PCA) is not a decomposition in itself  -  It is an application of the eigenvalue decomposition. Another common use is when you want to take the power of a matrix, as   On application of this is in analysis of finite state, discrete time Markov chains. ",
+            "date": "Answered December 8, 2014",
+            "views": "32",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David He",
+                    "user_href": "/profile/David-He-44"
+                },
+                {
+                    "user_id": "Neha Iyer",
+                    "user_href": "/profile/Neha-Iyer-14"
+                },
+                {
+                    "user_id": "Zoj",
+                    "user_href": "/profile/Zoj"
+                },
+                {
+                    "user_id": "Mohamedmoideen Kader Mastan",
+                    "user_href": "/profile/Mohamedmoideen-Kader-Mastan"
+                },
+                {
+                    "user_id": "Logan Yang",
+                    "user_href": "/profile/Logan-Yang"
+                },
+                {
+                    "user_id": "Ashkan Abbasi",
+                    "user_href": "/profile/Ashkan-Abbasi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ashkan Abbasi",
+                "href": "/profile/Ashkan-Abbasi"
+            },
+            "answer_text": "PCA is a transform that uses eigen decomposition to obtain the transform matrix.Eigen decomposition factorizes a square matrix A into  [math] A=EDE^{-1}[/math],where E consists of A's eigen-vectors.SVD is a factorization method for any matrix with any dimension. It is [math]A=U \\Sigma V^T[/math]. LU decomposition factorizes a matrix into a Lower triangle and a Upper triangle matrix. a QR factorization of a matrix is a decomposition of a matrix A into a product A = QR of an orthogonal matrix Q and an upper triangular matrix R. Non-negative matrix factorization (NMF) decomposes a matrix A into two matrices that have non-negative elements. (A must have non-negative elements too.) all of this factorization methods have lots of application. but I think It is good to consider the following points:1) all of them approximate the matrix in some way.2) some may become your problem easier to solve.3) Algorithm to find is very important.* Is there an efficient way to find the decomposition? (especially for large matrices. for example SVD is computed more efficiently for large matrices than eigen-decomposition.)* Can we obtain it with an online algorithm? (updating factorization when new data samples comes in without recomputing all the steps) ",
+            "date": "Answered December 5, 2014",
+            "views": "3",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Pradeep Gowda",
+                    "user_href": "/profile/Pradeep-Gowda-14"
+                },
+                {
+                    "user_id": "Xiaofeng Cui",
+                    "user_href": "/profile/Xiaofeng-Cui"
+                },
+                {
+                    "user_id": "Mohamedmoideen Kader Mastan",
+                    "user_href": "/profile/Mohamedmoideen-Kader-Mastan"
+                },
+                {
+                    "user_id": "Sunny Kumar Raghuvanshi",
+                    "user_href": "/profile/Sunny-Kumar-Raghuvanshi"
+                },
+                {
+                    "user_id": "Omri Mendels",
+                    "user_href": "/profile/Omri-Mendels-1"
+                },
+                {
+                    "user_id": "Roy P Joseph",
+                    "user_href": "/profile/Roy-P-Joseph"
+                }
+            ]
+        }
+    ]
+}

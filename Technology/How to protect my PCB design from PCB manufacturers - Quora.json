@@ -1,0 +1,343 @@
+{
+    "title": "How to protect my PCB design from PCB manufacturers - Quora",
+    "tags": [
+        "PCB Design",
+        "Printed Circuit Boards",
+        "How-to Question",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Haddy",
+                "href": "/profile/John-Haddy"
+            },
+            "answer_text": "Q: How can I protect my PCB design from PCB manufacturers? That depends - how paranoid are you? There are some PCB fabricators who also have a design service. Some of these also do ODM work. Since these companies do more than just fabrication, they might be tempted to copy something that comes through the door; but probably won\u2019t. If your design is for a consumer product that you think might be of value to copy, then choose a fabricator that doesn\u2019t offer design or ODM services - such a manufacturer has absolutely no interest in copying your PCB design. Their business model relies on manufacturing to a customer\u2019s specification. The PCB fabrication business is really mostly chemical engineering, not electronics. In a pure-play fabricator it may well be that not a single person understands electronics other than in the area of impedance control (even then, they\u2019ll use software tools rather than perform calculations themselves). Remember, the PCB is just a means to connect components together. The fabricator has no way of knowing which components go where, so the basic PCB is useless unless other information becomes available. As another answer suggests, using separate fabricator and assembler allows segregation of data. I only ever go to a fabricate-and-assemble house when I don\u2019t give a rats whether anybody copies my design (e.g. test jigs which nobody in their right mind would copy because they\u2019re specific to a product that won\u2019t be sent to that manufacturer). For normal \u201cvolume\u201d products I go to a pure-play fabricator for the PCBs and then to a contract assembler that has no financial or other interest in the fabricator. My contract assembler often has all of the data - they do the procurement so they need to send fabrication data to the PCB supplier. However, they don\u2019t have control of the firmware - that is loaded by my own test systems - so even if they wanted to copy the PC assembly the result would be useless to them. ",
+            "date": "Answered January 3, 2020",
+            "views": "416",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Gaurav Gupta",
+                    "user_href": "/profile/Gaurav-Gupta-1977"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Loring Chien",
+                "href": "/profile/Loring-Chien"
+            },
+            "answer_text": "If you are contract turnkey manufacturing your PCB in CHina, you will have to provide them with all the assembly documentation as well as the BOM and Gerber image files for the PCB and any programming for Firmware (PROMs or programmable logic devices) and it will be particularly easy for them to make a run for themselves or an overrun and keep the extras. In fact, its common to make overruuns simply to account for manufacturing losses that are cheaper to replace than to diagnose and repair. Your only hope is either a completely honest contractor, OR, to provide key programmable parts that you have ordered with specific programming (and security locked so it can\u2019t be copied) from a vendor you control. Even then they will request extras for overruns and you should have accounting for the parts you don\u2019t get back in assembled boards. Or agree to pay for and take overruns and scrap to account for the extra parts. OR, to take posession of assembled and partially tested boards (perhaps with a dummy test program in PROMS and PLDs), and then burn the correct operating data into the board using ICP at your facility. Which takes a technician and some equipment. On further thought, the ther option would be for you to make sure that one organization does not have both the PCB gerbers (artwork) and the BOM at the same time. That means you will have to order the PCB blanks from a reputable firm, giving them the gerbers, then ship the PCB blanks to your PCB assembler with a BOM and assembly diagram for them to order and place parts. Further security can be done using the technique I outlined above for firmware downloads. Neither supplier can reproduce the board in its entirety without some major reverse engineering (in a complex board). ",
+            "date": "Updated June 25, 2016",
+            "views": "24",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vikram Balaji",
+                    "user_href": "/profile/Vikram-Balaji-6"
+                },
+                {
+                    "user_id": "Nyx",
+                    "user_href": "/profile/Nyx-32"
+                },
+                {
+                    "user_id": "George Gonzalez",
+                    "user_href": "/profile/George-Gonzalez-54"
+                },
+                {
+                    "user_id": "Jay Thuse",
+                    "user_href": "/profile/Jay-Thuse"
+                },
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Wilson-Jsdpcb"
+                },
+                {
+                    "user_id": "Don Lucas",
+                    "user_href": "/profile/Don-Lucas-5"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                },
+                {
+                    "user_id": "Petru Tarabuta",
+                    "user_href": "/profile/Petru-Tarabuta-1"
+                },
+                {
+                    "user_id": "Steven J Greenfield",
+                    "user_href": "/profile/Steven-J-Greenfield"
+                },
+                {
+                    "user_id": "Faisal Izhar",
+                    "user_href": "/profile/Faisal-Izhar"
+                },
+                {
+                    "user_id": "Richard Morris",
+                    "user_href": "/profile/Richard-Morris-34"
+                },
+                {
+                    "user_id": "Ron Garrett",
+                    "user_href": "/profile/Ron-Garrett-2"
+                },
+                {
+                    "user_id": "Safiullah Hussaini",
+                    "user_href": "/profile/Safiullah-Hussaini-1"
+                },
+                {
+                    "user_id": "Charles Kevin",
+                    "user_href": "/profile/Charles-Kevin-3"
+                },
+                {
+                    "user_id": "Scott Welch",
+                    "user_href": "/profile/Scott-Welch"
+                },
+                {
+                    "user_id": "Rob Lion",
+                    "user_href": "/profile/Rob-Lion"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Safiullah Hussaini",
+                "href": "/profile/Safiullah-Hussaini-1"
+            },
+            "answer_text": "You pretty much can\u2019t. If your \u201csecret sauce\u201d is your PCB design and/or manufacturing technique, and you have to contract manufacture it, you are doomed from the start. If your design is unique or if you have found a great manufacturing process that you want to protect, you will either a) have to get an IP or keep it a trade secret, or b) manufacture yourself, or both. This is the only way you will protect your design or process. Most hardware start-ups don\u2019t care about the contractor copying their \u201chardware\u201d. I know right? It\u2019s weird. What they do is put all of their proprietary stuff in firmware or software. Without the firmware for the Processor/controller/FPGA the board it almost utterly useless. Heck I don\u2019t even design my PCB myself, I get the contractor to do it for me. Your PCB design can be copied after manufacturing and assembling as well. All one has to do it buy it from you and reverse engineer it. Even if it is a multi-layer board or of you remove some components in the silkscreen, you will have to add them in your finished product, which you won\u2019t be able to control unless you intend to use them internally within your organization. EDIT: In most cases, you don\u2019t need to worry about your contractor as much. Most contractors do not have overlapping business with their customers, although there are cases otherwise as well. What your really need is your competitors getting hold of your PCB and reverse engineer it, and this is something that can\u2019t be helped. ",
+            "date": "Answered June 14, 2016",
+            "views": "23",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Geoffrey Burnham",
+                    "user_href": "/profile/Geoffrey-Burnham-1"
+                },
+                {
+                    "user_id": "Jay Thuse",
+                    "user_href": "/profile/Jay-Thuse"
+                },
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                },
+                {
+                    "user_id": "Charles Kevin",
+                    "user_href": "/profile/Charles-Kevin-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Don Lucas",
+                "href": "/profile/Don-Lucas-5"
+            },
+            "answer_text": "As the founder of a startup many years ago that built more or less undocumented spare parts for service companies supporting obsolete products in the field, even having the BOM and the Gerber artwork and the assembly instructions does not give you much of a clue of what the board does or how it works. If your goal is to steal the design, improve upon it, and then sell it as your own, it will take less time to simply design a board that does what you want. I have built and worked in R&D organizations most of my life and the engineers have such a tough time making some designs work that they sit around and laugh about the possibility of someone stealing the design. They actually hope that a competitor will! Without the sweat and tears of the intense learning process that a particular machine or application requires, having a design (even if you understand it) does not mean that you understand the application and you will usually spend a lot of money and then still be unsuccessful. I don\u2019t worry too much about this and sleep well at night. By the time that someone reverse engineers a particular design and reaches the point of selling it, the originators of the design will have already produced version 2 of the design and still be a generation ahead. ",
+            "date": "Answered September 9, 2017",
+            "views": "869",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Zeng",
+                "href": "/profile/Stephen-Zeng-2"
+            },
+            "answer_text": "Thanks for the invitation. There are many ways to avoid your design being copied by the PCB manufacturers or even turnkey contractor manufacturer. NDA. You can request the manufacturer to sign the NDA with you. So you will get your design legally protected.PCB is only a small part of the completed product. There are many things need to be done to get a real product, like components, software, enclosure etc. Without programming and software, you can not get a \u201cproduct\u201d run.The contract manufacturer won\u2019t copy your design as their core business is different from yours. There are much more work need to be done rather than manufacturing a product, for example, sales & marketing etc.iPhone and iPad etc are produced by Foxcomm. They are so popular, but will Foxcomm copy the design and make his own products? No, they won\u2019t. So stop thinking about it. And the image of China manufacturers may not the same as what you think. At least our company is not. Thank you! ",
+            "date": "Answered June 16, 2016",
+            "views": "31",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gaurav Gupta",
+                    "user_href": "/profile/Gaurav-Gupta-1977"
+                },
+                {
+                    "user_id": "Mark Lewis",
+                    "user_href": "/profile/Mark-Lewis-443"
+                },
+                {
+                    "user_id": "Abdelali Boussetta",
+                    "user_href": "/profile/Abdelali-Boussetta"
+                },
+                {
+                    "user_id": "Akash Tanwar",
+                    "user_href": "/profile/Akash-Tanwar"
+                },
+                {
+                    "user_id": "Faiz Usmani",
+                    "user_href": "/profile/Faiz-Usmani-10"
+                },
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                },
+                {
+                    "user_id": "Ahmad Nabil",
+                    "user_href": "/profile/Ahmad-Nabil-18"
+                },
+                {
+                    "user_id": "Don Lucas",
+                    "user_href": "/profile/Don-Lucas-5"
+                },
+                {
+                    "user_id": "Om Prakash",
+                    "user_href": "/profile/Om-Prakash-354"
+                },
+                {
+                    "user_id": "Patrick Tuite",
+                    "user_href": "/profile/Patrick-Tuite-3"
+                },
+                {
+                    "user_id": "Jhonny Naranjo",
+                    "user_href": "/profile/Jhonny-Naranjo-1"
+                },
+                {
+                    "user_id": "Charles Kevin",
+                    "user_href": "/profile/Charles-Kevin-3"
+                },
+                {
+                    "user_id": "John McClenny",
+                    "user_href": "/profile/John-McClenny"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kai Huang",
+                "href": "/profile/Kai-Huang-29"
+            },
+            "answer_text": "Thanks for A2A. This is actually a legal question other than a technical or engineering problem. It\u2019s all about IP(intellectual property) protection. Let\u2019s assume you are a U.S. based company and you are hiring PCB manufacturers in USA as a contract. This is fairly easily to handle since both companies is a domestic company and a on-disclosure agreement(NDA) drafted by a professional IP lawyer should be able to put yourself in the legal shield. However, if the production or the PCB manufacturing going to overseas things are getting a lot more complicated. In fact, most of the PCB assembly is actually done with China PCB manufacturer. There were indeed examples where the IP of the client was stolen by their PCBA manufacturers during the electronic contract manufacturing and their supplier were selling the knockoffs to the market. In this case, the best practice is to work with a broker that has a company in the ground of China, or whatever place where your product is manufactured. Having a local lawyer or law firm to create the NDA in the native language is critical since legal documents in foreign language sometimes is sometimes not well acknowledged with the local court. I hope this is helpful to you. Regards, Kai CEO Electronics Manufacturer Circuitsify ",
+            "date": "Answered November 6, 2018",
+            "views": "823",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Satoshi Nagamoto-Ye",
+                    "user_href": "/profile/Satoshi-Nagamoto-Ye"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Feranec",
+                "href": "/profile/Robert-Feranec"
+            },
+            "answer_text": "The simple and quite effective way is to do PCB manufacturing through one subcontractor and board assembly through a different one. For example, very often we manufacture PCBs in China and do board assembly in our own country. This way, there is no one manufacturer with complete documentation to build your product (PCB manufacturer only gets the PCB data, Assembly house only gets the list of components and positions). When you split the manufacturing steps between more subcontractors, if they would want to copy your design, they would need to make some effort to do it. In case you manufacture everything by one manufacturer, they have complete documentation and process of copying is effortless and extremely easy. Of course, if someone really wants to copy your design, they always can do it. ",
+            "date": "Answered June 18, 2016",
+            "views": "11",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Santhosh Kumar H O",
+                    "user_href": "/profile/Santhosh-Kumar-H-O"
+                },
+                {
+                    "user_id": "Yang Ruixuan",
+                    "user_href": "/profile/Yang-Ruixuan"
+                },
+                {
+                    "user_id": "Robin Harville",
+                    "user_href": "/profile/Robin-Harville"
+                },
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                },
+                {
+                    "user_id": "Anthony May",
+                    "user_href": "/profile/Anthony-May-2"
+                },
+                {
+                    "user_id": "ANDREE FRANKLIN S",
+                    "user_href": "/profile/ANDREE-FRANKLIN-S"
+                },
+                {
+                    "user_id": "Diezi Shiro",
+                    "user_href": "/profile/Diezi-Shiro"
+                },
+                {
+                    "user_id": "Jhonny Naranjo",
+                    "user_href": "/profile/Jhonny-Naranjo-1"
+                },
+                {
+                    "user_id": "Charles Kevin",
+                    "user_href": "/profile/Charles-Kevin-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Candice Wu",
+                "href": "/profile/Candice-Wu-33"
+            },
+            "answer_text": "There are many ways to avoid your design being copied by the PCB manufacturers or even turnkey contractor manufacturer. NDA. You can request the manufacturer to sign the NDA with you. So you will get your design legally protected. Before I ordered PCB on www.raypcb.com, I sent the NDA to their manager ask sign and stamp.PCB is only a small part of the completed product. There are many things need to be done to get a real product, like components, software, enclosure etc. Without programming and software, you can not get a \u201cproduct\u201d run.The contract manufacturer won\u2019t copy your design as their core business is different from yours. There are much more work need to be done rather than manufacturing a product, for example, sales & marketing etc. ",
+            "date": "Answered March 27, 2019",
+            "views": "320",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Satoshi Nagamoto-Ye",
+                    "user_href": "/profile/Satoshi-Nagamoto-Ye"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gonzalo Perez",
+                "href": "/profile/Gonzalo-Perez-9"
+            },
+            "answer_text": "It\u2019s almost impossible these days. Even industry elephants like Apple with their army of lawyers can stop copycats. I just send all the hardware files along with a quality check test program just to test the peripherals, I/O ports, etc. and a serial bootloader. Then push the final firmware elsewhere, or ask the end users to connect to a private link to download the firmware. ",
+            "date": "Answered September 4, 2017",
+            "views": "341",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Prabhudev Metgud",
+                    "user_href": "/profile/Prabhudev-Metgud-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Romacery",
+                "href": "/profile/Romacery"
+            },
+            "answer_text": "In fact, when we choose a pcb prototype manufacturer to fabricate our board,we should choose the reliable manufacturer. Not only the price but also the comment. If it's just a topspeed pcb prototype manufacturer,like ALLPCB,China, they are unlikely to plagiarize your idea, because it's not a copy board company. So the first step is to pick a good manufacturer. This is the best choice. ",
+            "date": "Answered September 20, 2018",
+            "views": "347",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Emma Liu",
+                    "user_href": "/profile/Emma-Liu-118"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eileen Wong",
+                "href": "/profile/Eileen-Wong-43"
+            },
+            "answer_text": "On accounting of protecting your PCB design, you may consider it from the following points as well, such as: Application for patent;Deliberately set some bugs or other marks.Sign NDA if necessary.",
+            "date": "Updated June 11, 2019",
+            "views": "266",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mohammad Shakir",
+                    "user_href": "/profile/Mohammad-Shakir-29"
+                }
+            ]
+        }
+    ]
+}

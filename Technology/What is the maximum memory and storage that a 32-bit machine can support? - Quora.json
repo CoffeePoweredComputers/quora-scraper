@@ -1,0 +1,222 @@
+{
+    "title": "What is the maximum memory and storage that a 32-bit machine can support? - Quora",
+    "tags": [
+        "Memory Management (computer programming)",
+        "32-Bits",
+        "64-Bit",
+        "Data Storage",
+        "Memory (information storage)",
+        "Random-Access Memory",
+        "Microsoft Windows",
+        "Operating Systems",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Osmo Ronkanen",
+                "href": "/profile/Osmo-Ronkanen-1"
+            },
+            "answer_text": "There are several things that can limit the memory: the CPU, the computer hardware and the OS. You can use the lowest of these. Typical32 bit Windows versions support only 4 GB so that is the limit. I have an Intel i3-3217U processor. It is 64 bit but still it cans support only 32 GB. Theoretically 64 bit processors have 64 address lines but in practice Intel realized that nobody will use more than 32 GB on a laptop using such a CPU. According Acer the laptop supports 16 GB. Intel 386 was released in 1985. It had 32 address lines and could support 4 GB memory. In 1985 4 GB was almost two million dollars. Even in 1995 when 386 was obsolescent it was over 100 k. On the other hand when my CPU was introduce its maximum memory amount was $150. CPU makers have become more realistic. It is not important that the current CPUs support the theoretical maximum, It is enough that the supported amount scales up nicely as new CPUs are made and there will not be a similar barrier like 1 MB was in real mode. ",
+            "date": "Answered July 26, 2019",
+            "views": "139",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vladislav Zorov",
+                "href": "/profile/Vladislav-Zorov"
+            },
+            "answer_text": "If we\u2019re talking about Intel CPUs from Pentium Pro and up, and AMD Athlon and up, then you can use up to 64GB of RAM. Not 4GB, as some people here have claimed - it would be 4GB if the address bus was 32 bits wide, which in CPUs with Physical Address Extension it isn\u2019t - it\u2019s 36 bits. TL;DR: The \u201cbit-ness\u201d of a CPU only tells you its native integer and pointer size - not the sizes of anything else, like the address bus, or the sizes of AVX registers or whatever. If your computer doesn\u2019t recognize more than 4GB, the problem is the edition of Windows you\u2019re using, not the hardware - server editions of Windows can work with up to 64GB on a 32-bit CPU just fine. To make consumer versions of Windows also work with up to 64GB, you need a small, tiny patch to the Windows kernel (to remove a couple of instructions that cut the memory above 4GB - Licensed Memory in 32-Bit Windows Vista). P.S. Note that while you\u2019re limited to 64GB in total, each individual 32-bit application is still limited to 4GB. ",
+            "date": "Answered July 26, 2019",
+            "views": "13",
+            "upvotes": " View 27 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Maur\u00edcio Pessoa",
+                    "user_href": "/profile/Maur\u00edcio-Pessoa"
+                },
+                {
+                    "user_id": "Bi\u1ebft Ch\u01b0a Th\u1ec3",
+                    "user_href": "/profile/Bi\u1ebft-Ch\u01b0a-Th\u1ec3"
+                },
+                {
+                    "user_id": "Andreas Pandega",
+                    "user_href": "/profile/Andreas-Pandega"
+                },
+                {
+                    "user_id": "Amin Chigara",
+                    "user_href": "/profile/Amin-Chigara"
+                },
+                {
+                    "user_id": "Gary Warren",
+                    "user_href": "/profile/Gary-Warren-37"
+                },
+                {
+                    "user_id": "Nic Wong",
+                    "user_href": "/profile/Nic-Wong-16"
+                },
+                {
+                    "user_id": "Jin Xin Hoe",
+                    "user_href": "/profile/Jin-Xin-Hoe"
+                },
+                {
+                    "user_id": "Mike Janzen",
+                    "user_href": "/profile/Mike-Janzen-5"
+                },
+                {
+                    "user_id": "Beomsoo Kim",
+                    "user_href": "/profile/Beomsoo-Kim-7"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Petr Titera",
+                    "user_href": "/profile/Petr-Titera-1"
+                },
+                {
+                    "user_id": "Antti M\u00e4ki",
+                    "user_href": "/profile/Antti-M\u00e4ki-3"
+                },
+                {
+                    "user_id": "Alexander Lehmann",
+                    "user_href": "/profile/Alexander-Lehmann"
+                },
+                {
+                    "user_id": "Edward Attia",
+                    "user_href": "/profile/Edward-Attia"
+                },
+                {
+                    "user_id": "Eli Poultorak",
+                    "user_href": "/profile/Eli-Poultorak"
+                },
+                {
+                    "user_id": "Vivek Subramanian",
+                    "user_href": "/profile/Vivek-Subramanian-10"
+                },
+                {
+                    "user_id": "Joseph Belobrajdic",
+                    "user_href": "/profile/Joseph-Belobrajdic"
+                },
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "Anvesh Reddy",
+                    "user_href": "/profile/Anvesh-Reddy-70"
+                },
+                {
+                    "user_id": "Aditya Santhosh",
+                    "user_href": "/profile/Aditya-Santhosh-5"
+                },
+                {
+                    "user_id": "Sumit Singh",
+                    "user_href": "/profile/Sumit-Singh-275"
+                },
+                {
+                    "user_id": "Chris Feilbach",
+                    "user_href": "/profile/Chris-Feilbach"
+                },
+                {
+                    "user_id": "Luc Boulesteix",
+                    "user_href": "/profile/Luc-Boulesteix"
+                },
+                {
+                    "user_id": "Samuel Dokowe",
+                    "user_href": "/profile/Samuel-Dokowe"
+                },
+                {
+                    "user_id": "Jonas Oberhauser",
+                    "user_href": "/profile/Jonas-Oberhauser"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Feilbach",
+                "href": "/profile/Chris-Feilbach"
+            },
+            "answer_text": "Vladislav Zorov is the closest to being right, if you want to limit yourself to using conventional loads and stores. In the mean time since writing this answer, Pawel Kraszewski wrote an even better one. My answer adds the concept of addressibility onto the others, which is an important but often neglected concept when describing memory systems. It depends on the addressibility of your machine. While it is common practice to have this be a single byte, machines have been designed where this is not true, and nothing is stopping a new machine from violating that constraint. The only thing that 2^32 addresses gives you is 2^32 unique names for 2^32 unique locations. It doesn\u2019t tell you anything about what those locations are \u2014 that\u2019s where addressibility comes into play. ",
+            "date": "Answered July 26, 2019",
+            "views": "157",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Pillot IV",
+                    "user_href": "/profile/James-Pillot-IV"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Suraj Moon",
+                "href": "/profile/Suraj-Moon"
+            },
+            "answer_text": "A 32-bit machine supports up to 4 Gigs of RAM. It\u2019s the processor architecture\u2026a 32-bit machine can read and write 32bit data at a time same way with 64-bit machine\u2026. whats the maximum memory that a 32-bit machine can access? It is 2^32=4Gb (4Gigabit = 0.5 GigaByte)= 4Gb. for higher memory 64-bit is used. ",
+            "date": "Answered July 26, 2019",
+            "views": "38",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Pawel Kraszewski",
+                "href": "/profile/Pawel-Kraszewski"
+            },
+            "answer_text": "What is the maximum memory and storage that a 32-bit machine can support? It is the same amount as with the most basic 8-bit microcontroller: as many as your glue logic and software driver can handle. ",
+            "date": "Answered July 26, 2019",
+            "views": "46",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Cosmin Halmagi",
+                    "user_href": "/profile/Cosmin-Halmagi"
+                },
+                {
+                    "user_id": "Chris Feilbach",
+                    "user_href": "/profile/Chris-Feilbach"
+                },
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "Joe Zbiciak",
+                    "user_href": "/profile/Joe-Zbiciak"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Takeya Yuki",
+                "href": "/profile/Takeya-Yuki"
+            },
+            "answer_text": "No storage limits, unless you are not using GPT formatted drives, but maximum memory will be limited to 4GB, because of mamory address mapping problem. ",
+            "date": "Answered July 26, 2019",
+            "views": "26",
+            "upvotes": "0"
+        }
+    ]
+}

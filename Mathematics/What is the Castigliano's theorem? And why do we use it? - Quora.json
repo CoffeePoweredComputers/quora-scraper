@@ -1,0 +1,56 @@
+{
+    "title": "What is the Castigliano's theorem? And why do we use it? - Quora",
+    "tags": [
+        "Theorems and Lemmas"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sourav Mishra",
+                "href": "/profile/Sourav-Mishra-37"
+            },
+            "answer_text": "Ever tried to solve a complicated truss or beam. Let\u2019s start with the example of a simply supported beam. You would like to find the deflections of the beam at certain positions on it given the nature of loading it is subject to. One approach is to use the elastic equation to predict the shape of the beam using the end conditions as boundary conditions - so basically you have to solve a boundary value problem. Or you have to solve it by using area moment method. Now, the first method is usually lengthy and difficult and sometimes you put in Dirac deltas or some combinations of unit step functions to take care of point loads and uniformly distributed loads respectively - so the analysis becomes really involved. The second method is relatively easier but it is hard to visualize sometimes. Another fact is these methods are applicable to beams in general. When extended to structures like trusses, they become too complicated. So we need a simple way to solve deflection and forces in trusses. Castigliano\u2019s theorem provides the way. Castigliano\u2019s theorem uses assumes that the structure in under static equilibrium under the action of the applied system of forces. It computes the total internal strain energy of the structure. By the principle of virtual work this is the dot product of the force field and the displacement field over the entire structure. The next step is to differentiate the resulting strain energy expression with respect to - force - if you are interested in finding displacementdisplacement - if you are interested in finding forceCastigliano\u2019s theorem is applicable to a lot of structures and it is easy to use because the only involved computations are the geometry of the structure and the simplification of the strain energy expression. So one must be careful in selecting a system of coordinates in which the calculations become less laborious. Castigliano\u2019s theorems are two in number and they say exactly the same thing as I have stated above. Note that you will get the quantity at the same place as the quantity with respect to which you are differentiating. So if you wish to find the force/displacement at a point then you have to differentiate the strain energy expression with respect to displacement/force at that point. Castigliano\u2019s theorem applies to moments and twists/bends as well in the same way as it applies to forces and displacements. ",
+            "date": "Answered April 25, 2018",
+            "views": "24",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mohan Kumar Surampudi",
+                    "user_href": "/profile/Mohan-Kumar-Surampudi"
+                },
+                {
+                    "user_id": "Hamad Azhar",
+                    "user_href": "/profile/Hamad-Azhar"
+                },
+                {
+                    "user_id": "Tran TUNG ANH",
+                    "user_href": "/profile/Tran-TUNG-ANH"
+                },
+                {
+                    "user_id": "Prakhar Jha",
+                    "user_href": "/profile/Prakhar-Jha-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Deepshikha Dadhwal",
+                "href": "/profile/Deepshikha-Dadhwal"
+            },
+            "answer_text": "Here , check this out.  ",
+            "date": "Answered July 5, 2018",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jatin Chaudhary",
+                    "user_href": "/profile/Jatin-Chaudhary-46"
+                },
+                {
+                    "user_id": "Harshvardhan Singh",
+                    "user_href": "/profile/Harshvardhan-Singh-645"
+                }
+            ]
+        }
+    ]
+}

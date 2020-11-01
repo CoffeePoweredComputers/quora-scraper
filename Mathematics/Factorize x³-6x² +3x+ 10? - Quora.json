@@ -1,0 +1,44 @@
+{
+    "title": "Factorize x\u00b3-6x\u00b2 +3x+ 10? - Quora",
+    "tags": [
+        "Factoring (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ferdinand Sannes",
+                "href": "/profile/Ferdinand-Sannes-1"
+            },
+            "answer_text": "I would definitely suggest trial and error; however in case you don't like trial and error, there's another way: Question: factorize [math] y = x\u00b3 -6x\u00b2 +3x+ 10 [/math] The solution - in the general case - should look like: [math]y = (x+a)(x+b)(x+c)[/math] [math]y = (x^2 + ax + bx + ab)(x+c)[/math] [math]y = x^3 + ax^2 + bx^2 + abx + cx^2 + cax + cbx + cab[/math] [math]y = x^3 + (ax^2 + bx^2 + cx^2) + (abx + cax+ cbx) + cab[/math] Rewrite: [math]y = x^3 + (a+b+c)x^2 + (ab + ac + bc)x + abc = 0[/math] For y it was given that: [math]a+b+c = -6[/math] [math]ab+ac+bc = 3 [/math] [math]abc = 10 [/math] It follows that, [math]abc = 10 [/math] suggests the positive or negative numbers: 1,5 and 2. [math]a+b+c = -6[/math] suggest the combination a=1, b=-5 and c=-2. [math]ab + ac + bc = (1)(-5) + (1)(-2) + (-5)(-2) = 3[/math] , which holds true. Hence, [math]y = x^3 - 6x^2 + 3x + 10 = (x+1)(x-5)(x-2)[/math] ",
+            "date": "Answered April 9, 2016",
+            "views": "39",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ruposhree Bose",
+                    "user_href": "/profile/Ruposhree-Bose"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Frank Mabuka",
+                "href": "/profile/Frank-Mabuka"
+            },
+            "answer_text": "This is an algebraic test. I will introduce you to the remainder theorem which states that, when a polynomial function, f(x) is divided by a factor x-c, the remainder is f(c). Now let try which factor will give us a remainder of zero(0). For (x-1): f(1)=1^3 - 6*1^2 + 3*1 +10 =8 for (x+1):f(-1)=(-1)^3\u20136*(-1)^2+3*(-1)+10=0 Therefore (x+1) is one of the factors.  (x^3\u20136x^2+3x+10)/(x+1)=x^2\u20137x+10 An easy way to solve the second quadratic factor is: look for factors with a product of 10 and a sum of -7. in this case it will be (-5) and (-2) x^2\u20132x-5x+10=0 x(x-2)-5(x-2)=0 (x-5)(x-2)=0 Therefore we know have all the factors: (x+1)(x-5)(x-2)=x^3\u20136x^2+3x+10 thank you guys! ",
+            "date": "Answered September 10, 2018",
+            "views": "27",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akshaya Manoj",
+                    "user_href": "/profile/Akshaya-Manoj-5"
+                },
+                {
+                    "user_id": "Sharan Gk",
+                    "user_href": "/profile/Sharan-Gk-3"
+                }
+            ]
+        }
+    ]
+}

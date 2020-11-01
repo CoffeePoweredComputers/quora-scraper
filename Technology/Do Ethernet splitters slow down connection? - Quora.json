@@ -1,0 +1,126 @@
+{
+    "title": "Do Ethernet splitters slow down connection? - Quora",
+    "tags": [
+        "Ethernet",
+        "Internet Connection",
+        "Internet Speed",
+        "Routers (networking)",
+        "Wi-Fi",
+        "Computer Networking",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dennis Eichenlaub",
+                "href": "/profile/Dennis-Eichenlaub"
+            },
+            "answer_text": "In most cases, no. Ethernet cable has 4 pairs of wires. For 10 Mbps or 100 Mbps, one pair is used for transmit, one for receive. The other two pairs aren\u2019t used. A pair of splitters (one on each end) uses the unused wire pairs to add a transmit and receive path for a second device. You get two connections with one cable for just pennies of cost. For 1 Gbps, two pairs are used for transmit, two pairs for receive. Each transmit pair and each receive pair work at 500 Mbps. By using both pairs, the cable can work at 1 Gbps. You cannot use splitter because all the wires are already used. If you have a long cable, it\u2019s possible the various signals will interfere with each other. If your 100 Mbps Ethernet cable is at the edge and you add two more signals using a splitter, it\u2019s possible the new signals will interfere with the old. But in most cases, you\u2019ll be fine. ",
+            "date": "Answered June 1, 2019",
+            "views": "214",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sandra E Chmarney",
+                    "user_href": "/profile/Sandra-E-Chmarney-1"
+                },
+                {
+                    "user_id": "David Lee",
+                    "user_href": "/profile/David-Lee-3120"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jason De Nike",
+                "href": "/profile/Jason-De-Nike"
+            },
+            "answer_text": "There is no such thing as an Ethernet splitter. There are only hubs and switches. Based on your question I\u2019m going to make an assumption that you are talking about internet speeds when you reference connection. The simple answer would be as long as you\u2019re using an Ethernet switch it will not slow down the connection in all likelihood. If the Ethernet switch you\u2019re using has gigabit ports then your transfer speed on the switch will greatly surpass that of your internet download speeds. Even your cheapest gigabit switches will have transfer speeds in the gigabits per second range while most internet download speeds are 1/10 of that in the hundreds of megabits per second range. ",
+            "date": "Answered June 1, 2019",
+            "views": "8",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vincent Aitro",
+                    "user_href": "/profile/Vincent-Aitro"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adriaan Bloem",
+                "href": "/profile/Adriaan-Bloem"
+            },
+            "answer_text": "I\u2019m assuming you mean those splitters that use the \u201cunused\u201d pair in UTP wires. (So you need two splitters, one on either end, and I don\u2019t think you\u2019d have spare wires with power over ethernet.) And yes, they tend to mess up the signal, so the equipment on either side will probably sense the signal degradation and go to a lower speed. You\u2019ll never get 1 gbps out of a splitter, and most likely no more than 10 mbps. It\u2019s much better to use a switch at the end where you need multiple ports, instead. They\u2019re cheap nowadays and give you full speed. ",
+            "date": "Answered June 1, 2019",
+            "views": "65",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Daniel McEachern",
+                    "user_href": "/profile/Daniel-McEachern-6"
+                },
+                {
+                    "user_id": "Eugene Lewis",
+                    "user_href": "/profile/Eugene-Lewis-14"
+                },
+                {
+                    "user_id": "Andrew Davies",
+                    "user_href": "/profile/Andrew-Davies-272"
+                },
+                {
+                    "user_id": "Randy Fulford",
+                    "user_href": "/profile/Randy-Fulford"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Don Schultz",
+                "href": "/profile/Don-Schultz-35"
+            },
+            "answer_text": "Well, it sort of depends on how you define \u201csplitter\u201d. If you mean switch, then as long as the interconnected Ethernet switches all share the same speed protocol set (like 1000BASE-T) you won\u2019t get a slow down. If, on the other hand, you mean an RJ45 to RJ45 Ethernet cable coupler, then indeed this seemingly handy device can cause issues with speed and connection reliability. In fact, inserting one into an \u201cEthernet Channel\u201d might cause a Fluke Certification test to fail as the performance of the channel will degrade outside of ANSI/TIA specifications for the given Category. ",
+            "date": "Answered March 13, 2020",
+            "views": "61",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joshua Tanagon",
+                    "user_href": "/profile/Joshua-Tanagon"
+                },
+                {
+                    "user_id": "Serena Verbena",
+                    "user_href": "/profile/Serena-Verbena"
+                },
+                {
+                    "user_id": "Mohammed Saiful Alam Siddiquee",
+                    "user_href": "/profile/Mohammed-Saiful-Alam-Siddiquee"
+                },
+                {
+                    "user_id": "Eugene Vermeland",
+                    "user_href": "/profile/Eugene-Vermeland-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Oron Joffe",
+                "href": "/profile/Oron-Joffe-1"
+            },
+            "answer_text": "If by \u201csplitters\u201d you mean socket savers (adapters which split 1 cable into 2) then no, they simply use different wires within the cable. However, they only work up to 100 mbps. If on the other hand you mean switches (electronic circuits/device, such as you may find on the back of a broadband router) then they slow things down infinitesimally (by a factor of nano-seconds), unless the total bandwidth is saturated in which case things slow down a lot because, well, you are trying to share more than you have. ",
+            "date": "Answered March 12, 2020",
+            "views": "38",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kjell \u00d8ien",
+                "href": "/profile/Kjell-\u00d8ien"
+            },
+            "answer_text": "The cables that split in two rj45 connectors does not slow down a 100Mbps network. But they are only capable of transporting 100Mbps so they will slow down a 1000Mbps network. ",
+            "date": "Answered March 13, 2020",
+            "views": "929",
+            "upvotes": "0"
+        }
+    ]
+}

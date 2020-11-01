@@ -1,0 +1,118 @@
+{
+    "title": "Which one should I learn first: C or C++? - Quora",
+    "tags": [
+        "C vs. C++",
+        "Learning C (programming language)",
+        "Learning C++",
+        "C++ (programming language)",
+        "C (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nathan F Yospe",
+                "href": "/profile/Nathan-F-Yospe"
+            },
+            "answer_text": "Strong disagreement with all of the C proponents here. C++17 first. Learning C first teaches you a number of bad habits and archaic practices, and, like coming from a pure Java background, stands a good chance, if you are not sufficiently flexible, of turning you into a terrible C++ programmer. I'm a bit of a hypocrite here - I learned FORTRAN and C long before I learned C++, and the C++ I learned first was a much less mature language than the current one, especially in terms of patterns - but I would like to point out a common fallacy that appears in nearly every single response that advocates C. Every one of them says something like \"knowing C is a prerequisite for understanding C++\" or \"C++ is an extension of C\". This is a clear indicator that they do not understand C++ as well as they believe they do. Here's the thing... to really understand C++, you have to understand the machine code it generates. You can best understand the machine code in terms of assembly, and C is closely mapped to assembly... but efficient machine code generated from well written C++ no longer in any way resembles well written C, and that's the point that the C advocates completely miss. Modern C++ requires you to think in several paradigms at once. Once upon a time, long before the first standard, C++ encapsulated two paradigms - procedural programming (like C) and an object = data + methods + method overrides version of object oriented programming (like Java without annotations or reflection). Learning C taught a couple of bad habits, but it wasn't a huge jump from C to C++, and learning to write terse functions in C actually made you a better C++ programmer. Now, though, C++ has evolved to incorporate generic programming (in a manner far beyond anything Java could ever dream of), generative and algorithm driven programming (think of this as a static form of functional programming), and functional programming (though there are limits to lambdas in C++, mostly on account of the early evaluation of execution paths) - and, more to the point, it has evolved into a language that, in its best-use form, incorporates these paradigms seamlessly to express models of whatever problem is being solved. This is not something that comes easily to someone who has taken a deep dive into a single-paradigm language like C or Java. It comes more easily to someone who has started with a language like Python, as you have, though concurrency tends to be a difficult hurdle for people coming from Python. Every so often I find myself trying to integrate an obvious C programmer who learned some superficial C++ concepts into a deep C++ codebase, and the effort is always painful. Do yourself a favor... if you do feel compelled to learn C first, don't go straight to C++. Fluency in Python does mitigate some of the pitfalls, but the temptation to view C++ as an extension of C is still a danger if you attempt that transition. ",
+            "date": "Updated April 26, 2019",
+            "views": "1504",
+            "upvotes": " View 366 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Oscar Rodriguez",
+                    "user_href": "/profile/Oscar-Rodriguez-165"
+                },
+                {
+                    "user_id": "Richard Wilhelm Focke",
+                    "user_href": "/profile/Richard-Wilhelm-Focke"
+                },
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Saahi Buddiga",
+                    "user_href": "/profile/Saahi-Buddiga"
+                },
+                {
+                    "user_id": "Makis Roumpas",
+                    "user_href": "/profile/Makis-Roumpas-1"
+                },
+                {
+                    "user_id": "Aky Alfarius",
+                    "user_href": "/profile/Aky-Alfarius"
+                },
+                {
+                    "user_id": "Uttaran Das",
+                    "user_href": "/profile/Uttaran-Das-3"
+                },
+                {
+                    "user_id": "Gareth Morgan",
+                    "user_href": "/profile/Gareth-Morgan-68"
+                },
+                {
+                    "user_id": "Goutham R",
+                    "user_href": "/profile/Goutham-R-10"
+                },
+                {
+                    "user_id": "Karan Jadaun",
+                    "user_href": "/profile/Karan-Jadaun-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kirk Augustin",
+                "href": "/profile/Kirk-Augustin"
+            },
+            "answer_text": "I strongly disagree with those who say C++ first. C is very close to the machine, and learning C is the basics of understanding how the machine actually works. If you do not learn C, likely you do not really know how the cpu works and will never be a good programmer.C is also very small, easy to learn, and promotes good habits and understanding. C++ is NOT at all necessary, simple, or create good habits. The worst code I have seen is C++ because far too many people writing C++ are just trying to show off, that they know all the details of a very large language, that most of which should almost never be used. And whenever people use asbstract terms that are not intuitive, like abstraction, encapsulation, polymorphism, etc., they clearly do not know what the actual concepts are. For example, polymorphism in taxonomy means animals of the same species, that can vary in appearance, like a leopard can be all black or spotted orange and black. That is not at all how polymorphism is intended in C++, since derived classes really ARE different species, and not just varying by appearance. Always use intuitive terms. And forget insane things like Design Patterns, which although has some sense in its origins, goes down the idiotic path of recommending you make templates for everything and use their ridiculous patters like a Singleton template. I program almost entirely in C++, and have for over 30 years, but if you do not know C, you will likely write very bad C++. And knowing C first will show you want C++ can do to make your programming easier. Anything that does not make your programming easier, should NOT be done. ",
+            "date": "Answered October 22, 2018",
+            "views": "89",
+            "upvotes": " View 59 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Haixu Yuan",
+                    "user_href": "/profile/Haixu-Yuan"
+                },
+                {
+                    "user_id": "Ali Musa",
+                    "user_href": "/profile/Ali-Musa-120"
+                },
+                {
+                    "user_id": "Luke Avedon",
+                    "user_href": "/profile/Luke-Avedon"
+                },
+                {
+                    "user_id": "Matthew Petricone",
+                    "user_href": "/profile/Matthew-Petricone"
+                },
+                {
+                    "user_id": "Shaiman Shaikh",
+                    "user_href": "/profile/Shaiman-Shaikh"
+                },
+                {
+                    "user_id": "Tyler Savage",
+                    "user_href": "/profile/Tyler-Savage"
+                },
+                {
+                    "user_id": "Gary Anams",
+                    "user_href": "/profile/Gary-Anams"
+                },
+                {
+                    "user_id": "Chastity Rose",
+                    "user_href": "/profile/Chastity-Rose-4"
+                },
+                {
+                    "user_id": "Isha Joshi",
+                    "user_href": "/profile/Isha-Joshi-68"
+                },
+                {
+                    "user_id": "Omid Shagiwal",
+                    "user_href": "/profile/Omid-Shagiwal"
+                }
+            ]
+        }
+    ]
+}

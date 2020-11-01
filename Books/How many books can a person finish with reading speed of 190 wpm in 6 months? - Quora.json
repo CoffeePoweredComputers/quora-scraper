@@ -1,0 +1,61 @@
+{
+    "title": "How many books can a person finish with reading speed of 190 wpm in 6 months? - Quora",
+    "tags": [
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Patrick Reilly",
+                "href": "/profile/Patrick-Reilly"
+            },
+            "answer_text": "This is basically a dimensional analysis problem, although the units involved are atypical for such a problem. There is a rate involved, the reading rate, measured in words per minute.  You want to change the units of that rate from words per minute to 200 page books per 6 months (or 300 page books per 6 months or 400 page books per 6 months).  How do we convert between these two sets of units?  We need ratios and constants. Another key comprehension involved in this question is whether or not we limit the parameters of the question, such as the person not reading every hour of every day (makes things more realistic), not reading every day of the week (again, fairly realistic), etc. Now to state the numbers the problem gives: [math]\\frac{200\\; pages}{1\\; book}[/math] [math]\\frac{6\\; hours\\; reading}{1\\; day\\; reading}[/math] [math]\\frac{6\\; days\\; reading}{1\\; week}[/math] [math]\\frac{190\\; words}{1\\; minute}[/math] [math]\\frac{60\\; minutes}{1\\; hour}[/math] And a number the problem does not give, but we will assume the shorter bunch of 6 months (365 divided by 2 is not even, so we take 182 days as the 6 months used): [math]\\frac{26\\; weeks}{6\\; months}[/math] (Corrected from 11 weeks per 6 months, ignore my tomfoolery of logic...  Thanks go to Robert Harron for catching it.) One additional parameter: number of words per pageThis parameter is hard to narrow down, but on average for a paperback, this ranges from 250 to 300.  Let's use 300 to get a lower estimate on the number of books (more realistic, as we have lots of distractions that aren't accounted for in the other ratios). [math]\\frac{300\\; words}{1\\; page}[/math] We start the dimensional analysis:  Notice that you can cancel out all the units except for \"book\" and \"mos\".  This is what you want in dimensional analysis.For 300, you just change the last ratio (1 book per 200 pgs becomes 1 book per 300 pgs), and you get 19.76 books per 6 months.For 400, same thing, and you get 14.82 books per 6 months. Edit: As per (who I assume to be the OP)'s commentary, there is an extra piece of information in the question details that has two possible interpretations.  This piece of information is \"Break of 15 minutes after every hour\". One interpretation of this would be to assume there are 6 hours total of reading in the day, but they are not consecutive hours of reading.  Rather, they are each separated by 15 minutes.  This way, each 15 minute segment is incorporated in the 18 hour segment of non-reading, thus the answers do not change. The second interpretation is that a 6 hour block is allocated for reading, and the 15 minute break segments are a part of that block.  Ultimately, what this means is that not all of this 6 hour block is reading time.To find out how much time is really spent reading, we can just iterate through the hours of the block:1 hour reading, 15 minutes break: 1.25 hrs1 more hour reading, another 15 minute break: 2.5 hrs1 more hour reading, another 15 minute break: 3.75 hrs1 more hour reading, another 15 minute break: 5 hrs1 more hour reading: 6 hrs Sum up the hours of reading, and you get 5 hours of reading per day.Adjusting the dimensional analysis, we get:  And then filling in the other calculations for the other book sizes:300 pages per book: 16.47 books per 6 months400 pages per book: 12.35 books per 6 months  Do note that these are all approximate, as the books may vary in length, and may vary in average number of words per page. ",
+            "date": "Answered May 3, 2012",
+            "views": "22",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Beth McDermott",
+                    "user_href": "/profile/Beth-McDermott"
+                },
+                {
+                    "user_id": "Chris Best",
+                    "user_href": "/profile/Chris-Best-25"
+                },
+                {
+                    "user_id": "Deepak Raj Purushothaman",
+                    "user_href": "/profile/Deepak-Raj-Purushothaman-1"
+                },
+                {
+                    "user_id": "Lakshmi Narasimhan Parthasarathy",
+                    "user_href": "/profile/Lakshmi-Narasimhan-Parthasarathy"
+                },
+                {
+                    "user_id": "Aurel Kurtula",
+                    "user_href": "/profile/Aurel-Kurtula-1"
+                },
+                {
+                    "user_id": "Noorca Armadi",
+                    "user_href": "/profile/Noorca-Armadi"
+                },
+                {
+                    "user_id": "Ars\u00e8ne Hodali",
+                    "user_href": "/profile/Ars\u00e8ne-Hodali"
+                },
+                {
+                    "user_id": "Soussan Sabra",
+                    "user_href": "/profile/Soussan-Sabra"
+                },
+                {
+                    "user_id": "Elizabeth L. Mead",
+                    "user_href": "/profile/Elizabeth-L-Mead"
+                },
+                {
+                    "user_id": "Czen de la Serna-Limbago",
+                    "user_href": "/profile/Czen-de-la-Serna-Limbago"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+    "title": "What are the advantages and disadvantages of the different frequency bands available for 5G communications? - Quora",
+    "tags": [
+        "5G Technology",
+        "Frequency Bands",
+        "Wireless Communication",
+        "5G (wireless communication)",
+        "Pros and Cons",
+        "Telecommunications",
+        "Wireless Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wade Sarver",
+                "href": "/profile/Wade-Sarver"
+            },
+            "answer_text": "Several spectrums are available. in the 600MHz and 700MHz bands, signals travel farther, cover the area very well, and have decent building penetration. The thing is, for data signals like LTE and 5G, it also causes a lot of self-interference. When it travels so far it can be heard by several devices farther away causing a timing issue with the end device. So the disadvantage is that you need to lower power and increase down tilt at the macro site to limit self-interference. Another limitation is that the spectrum available is very limited. Then you have 1GHz to 3GHz, this is a very good spectrum for wireless data. It allows the signal to travel well, but not too far. Self-interference is still an issue but better regulated. Most spectrum is limited the lower you go. Then you have 3GHz to 6GHz, and that works very well it doesn\u2019t travel far. It\u2019s easy to control and has limited building penetration. This is also bad because that spectrum will not penetrate building well. Then, you get over 6GHz and they also have 24GHz and up for the mmwave. That is very local coverage. The good thing is there are huge swaths of spectrum available making it the new spectrum of choice. Penetration is terrible and it doesn\u2019t travel far. That\u2019s the downside. ",
+            "date": "Answered February 17, 2019",
+            "views": "483",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Tertius Baardwijk",
+                    "user_href": "/profile/Tertius-Baardwijk"
+                },
+                {
+                    "user_id": "Qiwei Zhang",
+                    "user_href": "/profile/Qiwei-Zhang-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vikram Singh Anttal",
+                "href": "/profile/Vikram-Singh-Anttal"
+            },
+            "answer_text": "Wade Sarver has summarized most of the aspects very well. I will try to elaborate a few topics. Different frequency bands has different characteristics. _________________________________________________________________________________Sub 6 GHz Bands([math]\\leq[/math] 6 GHz) : [math]\\underline{Pros :}[/math]Microwave bands has very good propagation characteristics. Path loss coefficients are small resulting in signal traveling for long distance. RF signal can easily travel through walls/obstructions. The wavelength is large hence the RF channel/medium is invariant for a longer period([math]\\mu[/math] seconds). [math]\\underline{Cons :}[/math]Bandwidth([math]B[/math]) is small limiting the maximum achievable data rate and time resolution([math]\\frac{1}{B}[/math]). Signals doesn\u2019t die that rapidly resulting in requirement of strong multi-cell interference management/mitigation/co-ordination techniques.  _________________________________________________________________________________mmWave Bands([math]\\geq[/math] 24 GHz) : [math]\\underline{Pros :}[/math]Most exciting aspect of millimeter wave bands is its large bandwidth which not only provide high data rate but also enables many new use cases such as high precision accuracy. The small wavelength reduces the size and inter-separation required for antenna elements. Hence more antennas can be packed in smaller space i.e. higher order MIMO which can improve the data rate and QoS requirements in wireless systems. Good for small cells deployments as signal doesn\u2019t travel far but beamforming using large number of antenna can be used for improving coverage. [math]\\underline{Cons :}[/math]Propagation characteristics are very harsh, signal attenuates very rapidly which restricts deployment for macro-cell deployment. Its very difficult to maintain connection if LOS path is lost. Small objects (even human nails, leaves) can cause heavy path loss or even temporary link failure.  [math]\\underline{\\textbf{Technology Aspects} :}[/math]Its difficult to process very high bandwidth signals, hence mmWave system is expensive and can be bulky due to various frequency specific hardware impairments e.g. phase noise, blockages etc. Although the subject of microwave is very mature and technology is very well developed, hence comparatively economic. Thanks for reading. ",
+            "date": "Answered August 15, 2019",
+            "views": "291",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "title": "What are the expected value (mean) and variance of a negative binomial distribution? - Quora",
+    "tags": [
+        "Binomial Distribution",
+        "Binomials",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Parkinson",
+                "href": "/profile/Tom-Parkinson-3"
+            },
+            "answer_text": "Another way to approach this problem is to understand where the negative binomial distribution comes from. It all starts with the geometric distribution, which is just the number of Bernoulli events until the first success. A Pascal distribution is the sum of a defined number (say r) of independent geometric distributions \u2014 in other words, the number of events until we have r successes. A negative binomial distribution is simply a generalisation of the Pascal distribution having a parameter r that is non-integral. A key probabilistic property is that the mean and variance of a sum of independent random variables equal the sums of the respective means and variances. So the mean and variance of a negative binomial distribution just equal r times the mean and variance of the underlying geometric distribution. ",
+            "date": "Answered November 8, 2017",
+            "views": "801",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Wishy Cornor",
+                    "user_href": "/profile/Wishy-Cornor"
+                },
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Meltem Tekinay",
+                    "user_href": "/profile/Meltem-Tekinay"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Smith",
+                "href": "/profile/Steven-Smith-440"
+            },
+            "answer_text": "There are at least 2 different versions of the Negative Binomial distribution. One where  represents the number of failures you get before seeing  successes. Another where  represents the number of trials until you first see  successes. The expected value for the first is , where  is the probability of a success on each trial, and  is the probability of a failure on each trial The expected value for the second is . The variance for both are the same:  ",
+            "date": "Answered November 5, 2017",
+            "views": "13",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Douglas Adolph",
+                    "user_href": "/profile/Douglas-Adolph"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "title": "A test consists of 9 true or false questions. A student randomly answers every question. What is the probability that the student answers two questions correctly? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jennifer Edeburn",
+                "href": "/profile/Jennifer-Edeburn"
+            },
+            "answer_text": "Ah, ambiguity. There are a few answers here already that cover some of the possibilities. More than one answer correctly points out the need to use the binomial distribution. One answer correctly points out that \u201crandomly\u201d is not the same as \u201cwith equal probability\u201d. Now it is my turn, to point out that \u201canswers two questions correctly\u201d is not the same as \u201canswers exactly two questions correctly\u201d. So to sum up: You need the formula for binomial distribution: [math]P(k \\:occurrences \\:in \\:n \\:trials) = {n\\choose k}p^kq^(n-k)[/math] To use this formula you need to know what that funny notation with n and k is at the front of the formula: [math]{n\\choose k} = \\frac{n!}{k!(n-k)!}\\: [/math]where[math] \\:n! = n(n-1)(n-2)\u2026(1)[/math] You must also know p (the probability of guessing correctly), and q (the probability of guessing incorrectly, which should be the same as 1-p). Last, you need to know k. If you are looking for the probability of getting exactly two answers correct, then k will be 2. But if you are looking for the probability of getting at least 2 answers correct, then the answer you are looking for will be the sum of the probability for all k greater than or equal to 2. That is: [math]P(2) + P(3) + P(4) + \u2026 + P(9)[/math] In this case you might find it more straightforward to calculate the probability of getting no more than 1 correct, which is simply [math]1-P(0)-P(1)[/math]. ",
+            "date": "Answered January 18, 2020",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rebecca Baldwin",
+                    "user_href": "/profile/Rebecca-Baldwin-8"
+                },
+                {
+                    "user_id": "Amy Goldfarb",
+                    "user_href": "/profile/Amy-Goldfarb-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Nichols",
+                "href": "/profile/Michael-Nichols-16"
+            },
+            "answer_text": "Using the binomial probability distribution which works well in cases where there are only two options - T/F , Heads/Tails ) .There must be a fixed number of trials and events must be independent of each other. P (x) =nCr \u2022 p^ (r ) ) q ^ (n-r) = 9C2 \u2022 ( 1/2)^2 (1/2) ^ 7 = 36 \u2022 (1/4) ( 1/128) = 0.0703125 n = # events or trials r= # favorable outcomes p = probability of true q= probability of false 0.0703125 is approximately a 7 % chance of randomly guessing 2 correct answers. This is a logical assumption being that guessing one out of 9 correctly has a probability of 0.11 or 11%and we would expect randomly getting 2 questions correct would be less likely than one. ",
+            "date": "Answered February 6, 2019",
+            "views": "26",
+            "upvotes": "0"
+        }
+    ]
+}

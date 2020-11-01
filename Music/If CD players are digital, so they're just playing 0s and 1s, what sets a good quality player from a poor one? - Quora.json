@@ -1,0 +1,58 @@
+{
+    "title": "If CD players are digital, so they're just playing 0s and 1s, what sets a good quality player from a poor one? - Quora",
+    "tags": [
+        "CD Players",
+        "Compact Discs (CDs)",
+        "Audiophiles",
+        "Audio",
+        "Audio Equipment",
+        "Electronics",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Claude Galinsky",
+                "href": "/profile/Claude-Galinsky"
+            },
+            "answer_text": "(Caveat: I always welcome corrections from more knowledgeable folks. Dave Haynie, for example, who knows freaking everything.) Basically, all a CD player has to do is read 1s and 0s from a spinning disc, convert them into audio and squirt the audio out the output jacks. Well, that and obey the buttons telling it to play/pause/skip/etcetera. There are two places a good player performs better than a poor one. Getting the data off the disc - The 1s and 0s are read by shining a laser off tiny pits on the surface of a rapidly spinning disk and reading the reflections. This is an analog function, which is subject to errors - lots of them. So much so, in fact, that all CD players have to rely on oversampling and error correction algorithms built into the hardware to get good data. I once asked a brilliant EE why there was no error indicator light on CD players. He said people would complain that it was constantly lit. Corrected errors are not a problem, but poor quality CD mechanisms result in a larger number of uncorrectable errors.Assuming that the error correction hardware is the same on all levels of CD player, uncorrectable errors can be caused by dirty or scratched CDs, motors with inconstant speed, and/or poor shock tolerance for bumps.A single datum from a CD represents the volume of the audio at one particular 1/44100-second snapshot, like a single frame of a movie is a snapshot taken at one 1/25 second interval. Imagine what the movie would look like if the camera had changed speed all the time. (In fact, you don\u2019t have to imagine - just view an early silent movie.) This inconsistent snapshot interval is called jitter, and in the audio domain it sounds like distortion. It comes from various sources, mechanical (varying motor speed) and electronic (poor clock circuitry).Digital-to-Analog conversion - Once correct data has been read off the disc, it must be made into analog voltages compatible with an audio amplifier. This is done in hardware by a chip known as a DAC. DACs come in a variety of price and quality levels. Better quality DAC chips handle timebase jitter more gracefully than cheap ones. They also introduce less noise and have greater dynamic range and less harmonic distortion. But audio quality comes at a price. The reality of manufacturing engineering is that you\u2019re a hero if you can save a quarter of a cent on the cost to build a device. When you\u2019re manufacturing CD players by the millions, a DAC that costs $1.55 a pop in big quantities means more profit than one costing $1.56, and a lot more than one costing $6. So the more expensive components tend to be used where price is less of an object.To recap: A better CD player will have a better quality mechanical transport and better quality DAC circuitry. It will handle errors in timing and reading better, and will add less distortion. ",
+            "date": "Answered October 5, 2019",
+            "views": "595",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ivan Berger",
+                    "user_href": "/profile/Ivan-Berger-1"
+                },
+                {
+                    "user_id": "Gregory Dickson",
+                    "user_href": "/profile/Gregory-Dickson-4"
+                },
+                {
+                    "user_id": "Jerry Ricks",
+                    "user_href": "/profile/Jerry-Ricks-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "There is debate over whether the digital to analog stage makes a difference. I have seen the wave output from a basic DAC, and the analog output directly compared to the analog input ( the input was converted to digital, than back to analog.) The input matched the output as expected. I think it was a pure sine wave in, and it was a pure sine wave out. Seeing how a lot of sound is just a bunch of sine waves, I was convinced that even a basic DAC is accurate. Of course the specs can be improved. Note that people lived with phonographs and cassette decks who\u2019s noise floor was tens of decibels less than typical DACs. It\u2019s apparently no challenge for cheap DACs to manage 100+ dB signal to noise ratio. There\u2019s also allegations that cheap CD players are \u201cplagued\u201d with jitter. I have my doubts based on reading up on this topic, but it\u2019s still discussed all the time. I have seen nothing from an engineering perspective that makes me think there\u2019s a significant difference in DACs. But I have read many posts from many people on audio forums where people swear there\u2019s a difference. The problem in audio, in my experience, is people will swear there are differences between two pieces of gear, when there\u2019s evidence such differences are subtle, based on blind listening tests. So everyone has to decide for themselves. ",
+            "date": "Answered October 5, 2019",
+            "views": "458",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Reg Boyle",
+                    "user_href": "/profile/Reg-Boyle"
+                },
+                {
+                    "user_id": "Sumukh Ramprasad",
+                    "user_href": "/profile/Sumukh-Ramprasad"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "title": "How to create an eBook - Quora",
+    "tags": [
+        "eBook Formats",
+        "ePUB",
+        "Self-Publishing",
+        "eBooks"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sabrina Ricci",
+                "href": "/profile/Sabrina-Ricci-1"
+            },
+            "answer_text": "I agree with a lot of these answers, and yes the first major step is to write the book (which I also think is the hardest). After that, I'd say there are 10 steps to creating the ebook. 1. Download and install Sigil (Sigil Ebook) I recommend using Sigil because it's a free program and because it allows you to create a clean, optimized file--I've had a lot of trouble with Calibre in the past, getting error messages and then not being able to upload to different distribution channels, and straight up Word doc conversions tend to be messy and end up not looking the way I want. 2. Create XHTML/HTML files. When you open Sigil, you'll see an untitled, blank EPUB. Select the file \u201cSection0001.xhtml\u201d in the left sidebar under the folder \u201cText.\u201d Right click and a set of options will appear. Use it to rename the file and to create more blank XHTML files. You will want separate files for the cover, title page, copyright, table of contents, acknowledgements, about the author, each chapter, and any additional sections in your book. 3. Add information in the <head> section of each XHTML file. To do this, make sure you are viewing your EPUB in the Code view. Click on the <> icon in the middle of the top tool bar to view the code. The icon of the book to the left of the code icon will switch it back to book view, which will display the file in a way that looks similar to an e-reading device. At the very least, you will want to add a line of code to link to the stylesheet (see next step). Use this line of code:<link href=\"../Styles/style.css\" rel=\"stylesheet\" type=\"text/css\" /> 4. Make a stylesheet. Select the folder \u201cStyles\u201d and right click. Click on \u201cAdd Blank Stylesheet.\u201d Rename your new CSS file, and make sure it matches the name in the <head> section of your XHTML files (if you use the code above you should name it \"style\"). This will ensure your stylesheet is linked to your content, and that the styles (or formatting rules) you define will actually be applied to your e-book. Now add your CSS rules. You can also use the rules defined in the sample EPUB. Common formatting includes indenting paragraphs, adding space between text, and centering images. (See http://www.skillshare.com/classe...) 5. Add text to your e-book. Use http://word2cleanhtml.com to convert text from your Word doc to well-formatted HTML/XHTML code. Then apply your CSS rules in the XHTML, using \u201cclass\u201d and \u201cstyle\u201d tags. 6. Insert images. Use SVG for your cover so it resizes to fit any screen. To add regular images in Sigil, select the \u201cImages\u201d folder. Rick click and choose \u201cAdd Existing Files.\u201d The image will automatically be added to the \u201cImages\u201d folder. Make sure the names of your images do not contain spaces, as this will cause the EPUB to not validate. For example, an image file should be named\u201cimage1.jpg\u201d NOT \u201cimage 1.jpg\u201d. You can also add an image directly into the XHTML file. Go to book view and click on the area where you want the image to appear. Select \u201cInsert\u201d, on the top tool bar, and click \u201cFile.\u201d Then either select an image already in the e-book, or click on other files to add a new image. 7. Enhance the OPF file. The OPF file contains a list of all the files included in the EPUB, and tells the reading device the order in which to display the XHTML files. There are four parts of the OPF file: metadata, manifest, spine, and guide. Use Sigil\u2019s Metadata Editor to add important information about the e-book. Click on the icon with the \u201ci\u201d on top of an image of a book, in the upper right corner, to access the Metadata Editor. Click on \u201cAdd Basic\u201d and add the following: publication date, description, ISBN, language, publisher, and title. You can also add more fields if you\u2019d like. Fill in the information. Next, click \u201cAdd Role\u201d and add author and any other contributors. Fill in the information. Sigil automatically adds information to the manifest each time you create/add an XHTML file, stylesheet, image, or other assets. The pro\u00adgram also automatically adds XHTML files to the spine. The spine tells the e-reader or tablet the order in which to display XHTML files. If you want to change the order, edit the code in the spine. 8. Generate a Table of Contents. Personally I add two table of contents, one as an XHTML file with hyperlinks to chapters and one as an NCX file. To create the NCX file, first make sure you have headings in your XHTML for all your chapters and sub-sections. Then click on the icon next to the Metadata Editor icon. Choose which headings to include in the NCX and whether or not you want to nest them. Then click OK. 9. Validate your EPUB.Use at least two different tools to validate. First, use Flight Crew in Sigil. Click on the big green checkmark in the upper right corner. Fix an errors or warnings that come up. Next, validate with EPUBCHECK. If your EPUB is under 10 mb, you can use the IDPF Validator at http://validator.idpf.org/. If your EPUB is larger, download EPUBCHECK at w3c/epubcheck. 10. Check your EPUB.Make sure it is high-quality and looks good on as many devices as possible. E-books look different on each device. Invest in at least one tablet or e-reader, if possible, to see what your e-book will actually look like to a reader. You can also use the following free tools: Adobe Digital Editions EPUBReader (Firefox)Kindle Previewer ",
+            "date": "Answered February 21, 2019",
+            "views": "623",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Shawn Bell",
+                "href": "/profile/Shawn-Bell"
+            },
+            "answer_text": "You DO NOT want to use Word.  Period.  Ever. To create an ePub, you can go a couple of ways: Free: Get a copy of LibreOffice (Free Office Suite) and the Writer2ePub extension (Writer2ePub | Apache OpenOffice Extensions) Paid: Get a copy of Scrivener (Literature and Latte - Scrivener Writing Software) or Get a copy of Jutoh (Jutoh Ebook Editor For Windows, Mac and Linux. Create Epub and Kindle books, Epub Converter For Mac And PC, Epub Software For Mac And PC, Epub Creator For Mac And PC, Kindle Epub Editor Software, iPad Epub Creator Software, Mobipocket Ebooks Editor Software) Using any one of those tools you can create a great ePub file.  That won't get your work up on Amazon, though.  To do that, you'll need a copy of Kindlegen (KindleGen) - which can be clunky - or Kindle Previewer (Kindle Previewer) which is a graphical interface and allows you to view your work on any number of different Kindle devices through the emulator.  These apps will allow you to create an Amazon-format file that you can upload through Kindle Direct Publishing. If you need any help, please feel free to ask; I help get authors published every day! ",
+            "date": "Answered March 28, 2015",
+            "views": "565",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tim White",
+                    "user_href": "/profile/Tim-White-375"
+                },
+                {
+                    "user_id": "KJ",
+                    "user_href": "/profile/KJ-278"
+                },
+                {
+                    "user_id": "Steve Lorincz",
+                    "user_href": "/profile/Steve-Lorincz-1"
+                },
+                {
+                    "user_id": "Roslyn Ellerbee",
+                    "user_href": "/profile/Roslyn-Ellerbee"
+                },
+                {
+                    "user_id": "Maaike Hkstr",
+                    "user_href": "/profile/Maaike-Hkstr"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "title": "How does Apple build 5G new iPhones? - Quora",
+    "tags": [
+        "5G (wireless communication)",
+        "iOS",
+        "Wireless Technology",
+        "Technology Trends",
+        "Apple (company)",
+        "iPhones (product)",
+        "Apple Products and Services",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Roberto Santocho",
+                "href": "/profile/Roberto-Santocho"
+            },
+            "answer_text": "Q: How does Apple build 5G new iPhones? A: Its an integration problem, they have to: Get all the components to work together in a reasonable mannerModemFor 2020 the 5G modem chip comes from QualcommIntel failed to deliver a working 5G modern chip to Apple in timeApple purchased the entire Intel 5G modem design division, and began their own work on future Apple Silicon Modem chips (5G and beyond)Apple signed a multi-billion USD contract with Qualcomm, to set aside the monopoly charges against Qualcomm (which are true) so that Apple could start buying Qualcomm modem chips for as much as the next 6 yearsObviously, Apple expects to have Apple Silicon 5G chips ready and in their product offerings within 6 years, I will take a guess right now that it will actually happen sooner rather than later if Apple simply finishes the work on the overdue Intel 5G modem chips, but I also think that it could be closer to 6 years if Apple carves out a chunk of space directly on the Apple Silicon A-Series SoC, so that 5G (and future) cell modem technology will be built into the core Apple chip. That integration will eventually save space on the motherboard which is highly welcome, at the cost of more development timeAntenna5G operates on three bands, low band, mid band and high bandThat requires a lot of work for antenna designApple has its own high tech anechoic antenna test chamber and labApple will need to work with antenna vendors who can manufacture Apple designs, using the latest antenna designs, materials and shapes (these antenna are rather exoticThere could be a need for three separate antenna or possibly one exotic antenna that can span the huge range of frequencies that the three 5G bands coverBattery5G consumes more battery powerYou have to design a more power efficient chip (the first generation Samsung 5G modem used in 2019 and 2020, so that Samsung could be first to market with 5G can only download data continuously on 5G for 30 seconds before switching to 4G or before overheating the Samsung device and shutting it down completely)We already know that the first iPhone with 5G, the iPhone 12, can run approximately 8 hours when used exclusively on 5G, which is less than what it can do in 4G, but its far superior to the 30 seconds of the first Samsung offerings; obviously Samsung was focused on fooling the consumer with fancy marketing, where Apple delivered a phone that can use 5G in a practical mannerBatteries will have to be redesigned to support the high power drain of 5G, but they are limited to sharing internal phone space with the motherboardSo now we can see that Apple probably purchased Intel\u2019s 5G modem design division so that Apple can work on integrating 5G (and 6G, etc.) directly into the Apple A-Series SoC, thus saving motherboard space which then allows for more space for the batteryIntegrating the 5G modem into the Apple A-Series Apple Silicon also means that the modem will be manufactured on the state of the art silicon process (5 nanometer at this moment) which means that the model will draw less battery power due to it being on a much smaller process (the smaller the process, the less power those transistors draw, to work efficiently)HeatThe Samsung 5G modems used in 2019 and 2020 Samsung phones ran so hot that it nearly burned the hands of the media reviewers that tested them for their articles, and they even dropped a few of those Samsungs on the concrete sidewalk due their hands jerking back when they were being burned by the hot phoneSmartphones have a limit to how big they can be; the larger they are the cooler they run because they have greater surface area but they would have to be the size of a tablet to have sufficient surface area to cool the super hot first and second generation Samsung modem chips, so other means to manage heat must be developed to keep the phone at a reasonable temperature; Apple has already integrated heat management features into the first 5G iPhone (the iPhone 12) to keep the phone from burning anyone\u2019s hands; it seems logical that once Apple integrates their state of the art 5G modem design inside the Apple Silicon SoC that they will have even more methods to manage the toasty 5G feature well under controlAt that point Apple simply hands off the latest Apple Silicon design to TSMC to have them stamp put the chips on the latest (smallest) process because TSMC does not do any chip design work, Apple will be doing all of that themselvesThere are more details to work out, performance vs speed, active napping modes, and much more but this gives an introductory view to a very complex subject",
+            "date": "Answered October 21, 2020",
+            "views": "111",
+            "upvotes": " View Sharers",
+            "upvoters": [
+                {
+                    "user_id": "Rumeysa \u00d6zdemir",
+                    "user_href": "/profile/Rumeysa-\u00d6zdemir-4"
+                },
+                {
+                    "user_id": "Semra Oz",
+                    "user_href": "/profile/Semra-Oz-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kurt Behnke",
+                "href": "/profile/Kurt-Behnke"
+            },
+            "answer_text": "A phone that supports 5G is different in exactly two ways from a phone with 4G capabilities: It needs a 5G capable radio chip (SOC = System on a chip) instead of the existing 4G chip. And one, that supports the right frequency bands for the targeted market. Apple sources its radio chips from Qualcomm.It needs antennas for - the market specific frequency bands, and - the MIMO capabilities that the phone is supposed to support. Space for the antennas is one of the greater design challenges. In many markets the \u201crake receivers\u201d or similar for 3G need to go, to fit the new antenna elements in.Which means: apart from fitting the new components in, there isn't much to do on top of what a new iPhone release would require anyway. Since the new 5G chips on the market are not a commodity, and come with a hefty price tag, Apple will wait until the market is ready for 5G volume. Samsung is in a slightly different position, since they are a chipmaker and probably are going to do their own 5G chips. So it is not a big commercial deal for Samsung to come early with 5G phones. ",
+            "date": "Answered October 19, 2020",
+            "views": "96",
+            "upvotes": " View 2 Upvoters "
+        }
+    ]
+}

@@ -1,0 +1,49 @@
+{
+    "title": "Is kotlin exist beyond Android, or it's only for Android development? Can I use kotlin anywhere in place of Java? - Quora",
+    "tags": [
+        "Android Application Development",
+        "Java (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ranjit Paul",
+                "href": "/profile/Ranjit-Paul-2"
+            },
+            "answer_text": "Kotlin for Server Side: Kotlin is a great fit for developing server-side applications, allowing to write concise and expressive code while maintaining full compatibility with existing Java-based technology stacks and a smooth learning curve: Expressiveness: Kotlin's innovative language features, such as its support for type-safe builders and delegated properties, help build powerful and easy-to-use abstractions.Scalability: Kotlin's support for coroutines helps build server-side applications that scale to massive numbers of clients with modest hardware requirements.Interoperability: Kotlin is fully compatible with all Java-based frameworks, which lets you stay on your familiar technology stack while reaping the benefits of a more modern language.Migration: Kotlin supports gradual, step by step migration of large codebases from Java to Kotlin. You can start writing new code in Kotlin while keeping older parts of your system in Java.Tooling: In addition to great IDE support in general, Kotlin offers framework-specific tooling (for example, for Spring) in the plugin for IntelliJ IDEA Ultimate.Learning Curve: For a Java developer, getting started with Kotlin is very easy. The automated Java to Kotlin converter included in the Kotlin plugin helps with the first steps. Kotlin Koans offer a guide through the key features of the language with a series of interactive exercises.Frameworks for Server-side Development with Kotlin Spring makes use of Kotlin's language features to offer more concise APIs, starting with version 5.0. The online project generator allows to quickly generate a new project in Kotlin.Vert.x, a framework for building reactive Web applications on the JVM, offers dedicated support for Kotlin, including full documentation.Ktor is a Kotlin-native Web framework built by JetBrains, making use of coroutines for high scalability and offering an easy-to-use and idiomatic API.kotlinx.html is a DSL that can be used to build HTML in a Web application. It serves as an alternative to traditional templating systems such as JSP and FreeMarker.The available options for persistence include direct JDBC access, JPA, as well as using NoSQL databases through their Java drivers. For JPA, the kotlin-jpa compiler plugin adapts Kotlin-compiled classes to the requirements of the framework.Deploying Kotlin Server-side Applications Kotlin applications can be deployed into any host that supports Java Web applications, including Amazon Web Services, Google Cloud Platform and more. To deploy Kotlin applications on Heroku, you can follow the official Heroku tutorial. AWS Labs provides a sample project showing the use of Kotlin for writing AWS Lambda functions. Kotlin for Android: Kotlin is a great fit for developing Android applications, bringing all of the advantages of a modern language to the Android platform without introducing any new restrictions: Compatibility: Kotlin is fully compatible with JDK 6, ensuring that Kotlin applications can run on older Android devices with no issues. The Kotlin tooling is fully supported in Android Studio and compatible with the Android build system.Performance: A Kotlin application runs as fast as an equivalent Java one, thanks to very similar bytecode structure. With Kotlin's support for inline functions, code using lambdas often runs even faster than the same code written in Java.Interoperability: Kotlin is 100% interoperable with Java, allowing to use all existing Android libraries in a Kotlin application. This includes annotation processing, so databinding and Dagger work too.Footprint: Kotlin has a very compact runtime library, which can be further reduced through the use of ProGuard. In a real application, the Kotlin runtime adds only a few hundred methods and less than 100K to the size of the .apk file.Compilation Time: Kotlin supports efficient incremental compilation, so while there's some additional overhead for clean builds, incremental builds are usually as fast or faster than with Java.Learning Curve: For a Java developer, getting started with Kotlin is very easy. The automated Java to Kotlin converter included in the Kotlin plugin helps with the first steps. Kotlin Koans offer a guide through the key features of the language with a series of interactive exercises.Kotlin for JavaScript: Kotlin provides the ability to target JavaScript. It does so by transpiling Kotlin to JavaScript. The current implementation targets ECMAScript 5.1 but there are plans to eventually target ECMAScript 2015 also. When you choose the JavaScript target, any Kotlin code that is part of the project as well as the standard library that ships with Kotlin is transpiled to JavaScript. However, this excludes the JDK and any JVM or Java framework or library used. Any file that is not Kotlin will be ignored during compilation. The Kotlin compiler tries to comply with the following goals: Provide output that is optimal in sizeProvide output that is readable JavaScriptProvide interoperability with existing module systemsProvide the same functionality in the standard library whether targeting JavaScript or the JVM (to the largest possible degree).How can it be used You may want to compile Kotlin to JavaScript in the following scenarios: Creating Kotlin code that targets client-side JavaScriptInteracting with DOM elements. Kotlin provides a series of statically typed interfaces to interact with the Document Object Model, allowing creation and update of DOM elements.Interacting with graphics such as WebGL. You can use Kotlin to create graphical elements on a web page using WebGL.Creating Kotlin code that targets server-side JavaScriptWorking with server-side technology. You can use Kotlin to interact with server-side JavaScript such as node.jsKotlin can be used together with existing third-party libraries and frameworks, such as JQuery or ReactJS. To access third-party frameworks with a strongly-typed API, you can convert TypeScript definitions from the Definitely Typed type definitions repository to Kotlin using the ts2kt tool. Alternatively, you can use the dynamic type to access any framework without strong typing. Kotlin is also compatible with CommonJS, AMD and UMD, making interaction with different (https://kotlinlang.org/docs/tutorials/javascript/working-with-modules/working-with-modules.html) module systems straightforward. ",
+            "date": "Answered October 27, 2017",
+            "views": "710",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Gille Fromka",
+                    "user_href": "/profile/Gille-Fromka"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anil V Deshpande",
+                "href": "/profile/Anil-V-Deshpande"
+            },
+            "answer_text": "Yes, Kotlin is beyond Android programming. Kotlin is mainly associated with Android because the company that came up with Kotlin was Jetbrains. Jet brains are the same folks who have developed Android\u2019s IDE - Android Studio. They are also the people who came up with Java IDE - IntelliJ. So you can see that how Kotlin got associated with Android development. Kotlin is JVM compliant language. So, whatever code that you write, gets converted in to JVM compliant code. So that basically means, wherever Java/JVM is used, Kotlin can replace Java. If you want to know bit know more about Kotlin and Android then please visit this video that I have created in my YouTube channel - Codetutor.  ",
+            "date": "Answered October 25, 2017",
+            "views": "463",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bhavik Makvana",
+                    "user_href": "/profile/Bhavik-Makvana"
+                },
+                {
+                    "user_id": "Muhammad Ahsan Taqveem",
+                    "user_href": "/profile/Muhammad-Ahsan-Taqveem"
+                },
+                {
+                    "user_id": "Kabir Nazir",
+                    "user_href": "/profile/Kabir-Nazir"
+                }
+            ]
+        }
+    ]
+}

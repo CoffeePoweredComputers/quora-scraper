@@ -1,0 +1,38 @@
+{
+    "title": "What is the time hierarchy theorem? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "The Time Hierarchy Theorem for deterministic Turing machines says that  is a proper subset of  for any function  that is \u201ctime-computable.\u201d Let\u2019s unpack the definitions in that statement.  is the class of decision problems that are decidable by a deterministic Turing machine in time bounded by , where  in the size of the input.  is a little-o bound, which in this context means the class of functions that is asymptotically smaller than the function . If  is  then the limit of  goes to zero, as  goes to infinity. See What is the difference between big O notation and little o notation in asymptotic notations? \u201c is a proper subset of \u201d means that there is at least one element in  that is not in . A \u201ctime-computable\u201d function just means that  can be computed in time , when  is given in unary. This omits uncomputable functions, as well as functions like , which aren\u2019t the upper bound of any Turing machine. (A machine which runs in time  could not even finish reading its input.) So, the theorem says that given some reasonably-behaved function , there are decision problems which take time , and not some lower time complexity. It guarantees the existence of \u201chard\u201d decision problems for any such . For example, if , then the theorem says  We can then replace  by anything which is asymptotically slower-growing, such as  or  or . Dividing by the logarithm gives an order of growth that is \u201cinfinitesimally\u201d smaller than . So, while we don\u2019t know very many lower bounds for specific problem, we do know that there are decision problems \u201cout there\u201d that require time  but no smaller, or , or . There aren\u2019t any gaps (among time-computable functions) where we can write a time bound but no decision problem exists that occupies that time bound (at least, not more than a logarithm-sized gap.) ",
+            "date": "Answered February 20, 2018",
+            "views": "384",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Martin Michelsen",
+                    "user_href": "/profile/Martin-Michelsen"
+                },
+                {
+                    "user_id": "George Li",
+                    "user_href": "/profile/George-Li-4"
+                },
+                {
+                    "user_id": "Juspreet-Singh Sandhu",
+                    "user_href": "/profile/Juspreet-Singh-Sandhu"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                }
+            ]
+        }
+    ]
+}

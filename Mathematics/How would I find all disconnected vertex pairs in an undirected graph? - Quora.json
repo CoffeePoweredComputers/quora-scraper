@@ -1,0 +1,29 @@
+{
+    "title": "How would I find all disconnected vertex pairs in an undirected graph? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marcelo De Oliveira Rosa Prates",
+                "href": "/profile/Marcelo-De-Oliveira-Rosa-Prates"
+            },
+            "answer_text": "The answer depends on the nature of the graph. Sparse graphs have (proportionally speaking) few edges (the ratio [math]|E|/{|V|}^2[/math] is low), and therefore it is more efficient to represent them using adjacency lists rather than adjacency matrices. The set of disconnected vertex pairs corresponds to the complement of set of edges over the edge set of the corresponding complete graph: [math]{|V|}^2 \\setminus |E|[/math]. It is easy to see that a sparse graph becomes a dense graph, and vice-versa, under this transformation. Therefore your problem resumes to efficiently representing (i) a dense graph (in the case that your original graph is sparse) or (ii) a sparse graph (in the case that your original graph is dense). The solution to problem (ii) is straightforward: use an adjacency list. The solution to problem (i) is more tricky. If you don\u2019t have the memory resources to use an adjacency matrix, you can exchange your space complexity by time complexity. How? Represent the original graph as an ordered adjacency list (each vertex\u2019s list of neighbors is ordered). Then you can test whether a disconnected vertex pair [math](i,j)[/math] exists in time [math]O(\\log{|N(i)|})[/math] by running a binary search on the list of neighbors of vertex [math]i[/math] ([math]N(i)[/math] denotes the neighborhood of vertex [math]i[/math]). And because [math]O(\\log{|N(i)|}) = O(\\log{|E|})[/math], a loose upper bound for the complexity of checking the existence of a disconnected vertex pair is [math]O(\\log{|E|})[/math]. ",
+            "date": "Answered November 26, 2016",
+            "views": "292",
+            "upvotes": " Answer requested by Nick Predey"
+        },
+        {
+            "author_info": {
+                "name": "Matthew",
+                "href": "/profile/Matthew-2004"
+            },
+            "answer_text": "If you find the connected components which exist in some graph, the disconnected vertex pairs which exist are simply the pairings of two nodes which belong to two different components. The number of pairings is enumerated as the product of the size of each of the components in the graph, and the number of pairs can be found by selecting two points which belong to different components in the graph, which with a brute force would take upwards of O(V^2). ",
+            "date": "Answered January 18, 2020",
+            "views": "177",
+            "upvotes": "0"
+        }
+    ]
+}

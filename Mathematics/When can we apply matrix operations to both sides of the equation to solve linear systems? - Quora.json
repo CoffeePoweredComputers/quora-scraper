@@ -1,0 +1,81 @@
+{
+    "title": "When can we apply matrix operations to both sides of the equation to solve linear systems? - Quora",
+    "tags": [
+        "Linear Algebra",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alan Bustany",
+                "href": "/profile/Alan-Bustany"
+            },
+            "answer_text": "Always. But you have to do the same operation to both sides. Matrix multiplication is not (in general) commutative, so multiplying one side on the right whilst multiplying the other side on the left is not allowed. That\u2019s easy to forget as multiplication on Real numbers is commutative, so you can multiply on different sides without having to worry. The ability to substitute one equal for another, the rule that allows one to perform operations on both sides of an equation, is a fundamental property of equality. It is essentially independent of the operation so you can happily perform any (valid) operation to both sides of an equation. To undo such an operation, however, the operation must have an inverse (that you can apply to both sides). That requires the operation to be injective (one-to-one). This leads to a pitfall for many people, because you can happily multiply both sides of an equation by zero to get [math]0=0[/math], but you can\u2019t undo that operation because zero does not have a multiplicative inverse. Similarly I can square both sides of an equation to get [math]x^2=y^2[/math] but I cannot undo this to get [math]x=y[/math] because squaring is not injective (and so square-rooting is not a function without restricting it to the principal square root). Some matrices have inverses and so can be \u201cremoved\u201d from an equation, but many do not. A matrix in the middle of an equation would also require inverses for the other operations so that the matrix can be \u201cisolated\u201d so that it can be multiplied by its inverse with the same multiplication by the inverse being applied to the other side of the equation. ",
+            "date": "Answered October 22, 2017",
+            "views": "29",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tarun Trivedi",
+                    "user_href": "/profile/Tarun-Trivedi-16"
+                },
+                {
+                    "user_id": "Daniel Svitek",
+                    "user_href": "/profile/Daniel-Svitek"
+                },
+                {
+                    "user_id": "Tim Farage",
+                    "user_href": "/profile/Tim-Farage-1"
+                },
+                {
+                    "user_id": "Vivek Nangia",
+                    "user_href": "/profile/Vivek-Nangia"
+                },
+                {
+                    "user_id": "Graham Giles",
+                    "user_href": "/profile/Graham-Giles"
+                },
+                {
+                    "user_id": "Chris Craddock",
+                    "user_href": "/profile/Chris-Craddock"
+                },
+                {
+                    "user_id": "Jo\u00e3o Guilherme Madeira Ara\u00fajo",
+                    "user_href": "/profile/Jo\u00e3o-Guilherme-Madeira-Ara\u00fajo"
+                },
+                {
+                    "user_id": "Bob Gluck",
+                    "user_href": "/profile/Bob-Gluck-3"
+                },
+                {
+                    "user_id": "John Tearne",
+                    "user_href": "/profile/John-Tearne-1"
+                },
+                {
+                    "user_id": "Wes Whiting",
+                    "user_href": "/profile/Wes-Whiting"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matt Blaisdell",
+                "href": "/profile/Matt-Blaisdell"
+            },
+            "answer_text": "The issue with doing operations to both sides, is that you can\u2019t just change the order of matrix multiplication. On the linked stack exchange question this occurs between the 6th and 7th equation where it goes from X*w = y*I to X*X_c*w = y*X_c*I. Just because w and y are vectors does not mean that you can ignore them. When you do a matrix operation and either left or right multiply an equation by a matrix you have do the exact same thing to both sides and you have to left or right multiply the entire side of the equation. You can double check that you\u2019ve done this correctly if the order of the terms is unchanged, except for the new matrix on either the right or the left side. In a nutshell: A*B*C <> A*C*B. Secondly: you cannot right multiply a vector with a matrix without first transposing it, since the dimensions don\u2019t match, so y*I doesn\u2019t make sense, it would be y^T*I. ",
+            "date": "Answered October 22, 2017",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "title": "What type of information does Google collect when you do a search? - Quora",
+    "tags": [
+        "Google",
+        "Information"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Rossney",
+                "href": "/profile/Robert-Rossney"
+            },
+            "answer_text": "The short answer is, \u201cAs much as possible.\u201d Which is, basically, everything that\u2019s in the HTTP requests that your browser makes when you do a search. Everything in this answer is based on my knowledge of how HTTP requests work. I know almost nothing about what Google actually does when receiving a request. There is probably more that Google can do than I\u2019m laying out here, because I\u2019m probably overlooking something. But let\u2019s see. You can see what\u2019s in one of these requests if you\u2019re using a desktop browser. In Chrome, hit CTRL+SHIFT+J to open the developer tools. Click on the \u201cNetwork\u201d tab. Navigate to Google and make a search. In the list of requests that shows up in the \u201cNetwork\u201d window, click on the one that starts \u201csearch?\u201d Then click on the Headers tab. The stuff in the \u201cGeneral\u201d and \u201cRequest Headers\u201d sections are everything that Google was sent from your search. Most of it looks like gobbledygook, to be sure, but let\u2019s break it down: The request URL is the query that the browser sent to the server. It contains the query that you typed in, plus some information that was in the page you made the search from - that\u2019s information that Google uses to keep track of which of the zillion ways that you can execute a Google search you were using at the time you made it. The remote address is the IP address that you made the request from. That tells Google who your ISP is, and where in the world you probably are. The user-agent is a string that your browser sends to identify it to web sites. That is mostly telling the site what sort of device it\u2019s getting a request from, though extracting that information out of user-agent strings is a black art. The user-agent string in the search I just did is Mozilla/5.0 (X11; CrOS x86_64 9901.77.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.97 Safari/537.36, for instance, which Google which version of Chrome I\u2019m using, and may even tell it that I\u2019m using a Chromebook. The cookie is information that Google (formally, the google.com domain) has previously stored in your browser. If you\u2019re a Google user and you\u2019re logged in, for instance, the cookie will include a token that identifies your Google account. If you\u2019re NOT logged in, the first time you do anything on any google.com site it\u2019ll stick a token in the cookie. All subsequent requests you make will also contain that token. The cookie is the source of much that is spooky about using the web. Even though you\u2019re not logged in, a domain (Google, sure, but Facebook and Quora and everyone else) can store a unique token in the cookie, and then keep track, on the server, of everything that the browser containing that token has done on the domain since making its first, token-less request. So even if you\u2019re not logged in, Google can correlate your search with your previous searches (or, at least, previous searches made in your browser since you last cleared your cookies). So, let\u2019s suppose that you want to reduce the amount of information you give Google to a bare minimum. How can you do that? The simplest way is to not use a browser at all. If you\u2019re using Linux, for instance, you can use curl to make a request from the command line, which a URL like https://www.google.com/search?q=thing+that+i+am+searching+for. That won\u2019t send any information other than the bare minimum needed to make an HTTP request (e.g. the URL, the remote address, etc.) True, the results you get back will be a little hard to read, since you\u2019re not using a browser - you\u2019ll get a huge blob of HTML with the search results somewhere in the middle - but you\u2019ll have given Google about as little information as possible. (I don\u2019t think curl even sends a user-agent string, but you can change that with the -A option even if it does.) The next best thing is to use a browser in incognito mode. If you open a new incognito session, it won\u2019t have any cookies, so your request will only contain the query, the user agent, and the remote address. Just be sure to close the session after you\u2019ve made your first request, because \u201cincognito mode\u201d doesn\u2019t mean \u201cthrows away cookies after every response.\u201d The one thing you can\u2019t easily change is the remote address, since without an address, the server can\u2019t send you its response. To change that, you\u2019ll need to use a VPN, or a proxy. Basically that\u2019s a server under your control that you send the request to. It then sends the request to Google, using its address. When it gets the response, it sends the response back to you. So the proxy knows your address, but Google doesn\u2019t. I think that\u2019s everything. Oh, no, wait, I totally forgot something. All requests that go to Google are encrypted. So another thing that\u2019s in the request is a random key that your browser has generated, encrypted using the public key in Google\u2019s SSL certificate. Google decrypts this key and then uses it to encrypt the response before sending it to you, and your browser then uses the key to decrypt the response. So another part of your request is a random string that your browser generated. I\u2019d expect that string gets logged somewhere, if only so that some security geek can analyze the random keys we\u2019re receiving from each user-agent and find out if there\u2019s something not-random about them, as that would indicate a security vulnerability in some version of a web browser. But I can\u2019t imagine any other use that those one-time random numbers can be put to. I encourage any engineering types to fill me in on what I\u2019ve overlooked in the comments, and I\u2019ll revise this to make it as complete as possible. ",
+            "date": "Answered December 30, 2017",
+            "views": "15",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "R M",
+                    "user_href": "/profile/R-M-2422"
+                },
+                {
+                    "user_id": "Maddox Rasmussen",
+                    "user_href": "/profile/Maddox-Rasmussen"
+                },
+                {
+                    "user_id": "Dilan Omer",
+                    "user_href": "/profile/Dilan-Omer"
+                },
+                {
+                    "user_id": "Josh Lehan",
+                    "user_href": "/profile/Josh-Lehan"
+                },
+                {
+                    "user_id": "Nikhil Jain",
+                    "user_href": "/profile/Nikhil-Jain-23"
+                },
+                {
+                    "user_id": "Surya Teja Parnampedu",
+                    "user_href": "/profile/Surya-Teja-Parnampedu"
+                },
+                {
+                    "user_id": "Bachir El Khadir",
+                    "user_href": "/profile/Bachir-El-Khadir"
+                },
+                {
+                    "user_id": "Roberto B. Beltran",
+                    "user_href": "/profile/Roberto-B-Beltran"
+                },
+                {
+                    "user_id": "Mark Papadakis",
+                    "user_href": "/profile/Mark-Papadakis"
+                },
+                {
+                    "user_id": "Onufry Wojtaszczyk",
+                    "user_href": "/profile/Onufry-Wojtaszczyk"
+                },
+                {
+                    "user_id": "Luv Kapur",
+                    "user_href": "/profile/Luv-Kapur"
+                },
+                {
+                    "user_id": "Anirudh Joshi",
+                    "user_href": "/profile/Anirudh-Joshi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Nichols",
+                "href": "/profile/Jeff-Nichols-21"
+            },
+            "answer_text": "As much as \u2018searchers\u2019 allow. If you have cookies enabled on your browser and are signed into a Google account while searching they will track your IP, the time, date, location, search phrase, search result selected or follow up action, if you have an active web cam they probably snap a photo too! If you use a VPN or a private (incognito) window they are not supposed to track anything beyond the use of the search engine, BUT your ISP may be able to and odds are that Google has a relationship with your ISP\u2026.. ",
+            "date": "Answered December 28, 2017",
+            "views": "64",
+            "upvotes": "0"
+        }
+    ]
+}

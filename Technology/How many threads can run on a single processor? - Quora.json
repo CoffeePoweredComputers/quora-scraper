@@ -1,0 +1,40 @@
+{
+    "title": "How many threads can run on a single processor? - Quora",
+    "tags": [
+        "Threading (computer science)",
+        "Central Processing Units",
+        "Processors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "This depends on what you mean by \u201cprocessor\u201d and by what you mean by \u201cthread\u201d. I think \u201cthread\u201d means trhe execution context of a program. Typically it means a set of register contents and an instruction pointer. One can have many threads in a single address space. (Separate address spaces with threads are often called \u201cprocesses\u201d.) In recent usage, a processor is a separately packaged chip that you plug into a \u201csocket\u201d in a \u201ccomputer\u201d or \u201cserver\u201d. A processor can have many \u201ccores\u201d which are what used to be called central processing units. A core can run one or several threads at a time. On some systems, these concurrently running threads would have to be in the same address space, but not always. So the processor might put a limit on the number of threads that can run simultaneously, but there is typically no hardware limit to the number of threads that can exist in a running operating system, as long as they don\u2019t all need to run at once. My macbook pro happens to have one processor, with four cores, each of which can run two threads, so it can run 8 threads \u201cat once\u201d but according to the Activity Monitor in MacOS, there are currently 1845 threads. The Activity Monitor says my system is 75% idle, which I think means that on average, there are only two active threads. Currently the processors that can run the most threads at once are things like the AMD ThreadRipper (128 threads) and the Intel Knight\u2019s Landing (up to 256 threads). ",
+            "date": "Answered May 30, 2020",
+            "views": "256",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Laszlo Weber",
+                    "user_href": "/profile/Laszlo-Weber"
+                },
+                {
+                    "user_id": "Clem Cole",
+                    "user_href": "/profile/Clem-Cole"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gerhard Adam",
+                "href": "/profile/Gerhard-Adam"
+            },
+            "answer_text": "If Simultaneous Multithreading (SMT) is enabled then two threads can run ",
+            "date": "Answered June 3, 2020",
+            "views": "64",
+            "upvotes": "0"
+        }
+    ]
+}

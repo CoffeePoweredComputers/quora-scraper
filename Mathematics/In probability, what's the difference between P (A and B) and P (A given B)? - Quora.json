@@ -1,0 +1,80 @@
+{
+    "title": "In probability, what's the difference between P (A and B) and P (A given B)? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "Suppose that there's a town with 1000 people where everyone is either a Democrat or a Republican, and the demographics break down like this: 300 Republican men200 Republican women200 Democratic men300 Democratic womenThese are numbers that I just made up and shouldn't be taken to have any relationship with reality. Let [math]A[/math] be the event that a person is a Democrat, and let [math]B[/math] be the event that a person is a woman.  [math]\\mathbb{P}(A \\cap B)[/math] is the probability that a randomly chosen person is a Democratic woman, and is equal to 30%.  [math]\\mathbb{P}(A|B)[/math] is the probability that a randomly chosen woman is a Democrat, and is equal to 60%. ",
+            "date": "Answered May 28, 2015",
+            "views": "62",
+            "upvotes": " View 82 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sam Sinai",
+                    "user_href": "/profile/Sam-Sinai"
+                },
+                {
+                    "user_id": "Michael J\u00f8rgensen",
+                    "user_href": "/profile/Michael-J\u00f8rgensen-2"
+                },
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "Vivian Tran",
+                    "user_href": "/profile/Vivian-Tran-196"
+                },
+                {
+                    "user_id": "Sachin Govind",
+                    "user_href": "/profile/Sachin-Govind-1"
+                },
+                {
+                    "user_id": "Dr.Sam Khawaja",
+                    "user_href": "/profile/Dr-Sam-Khawaja"
+                },
+                {
+                    "user_id": "Abigail Yang",
+                    "user_href": "/profile/Abigail-Yang-1"
+                },
+                {
+                    "user_id": "James Kang",
+                    "user_href": "/profile/James-Kang-67"
+                },
+                {
+                    "user_id": "Tom Arthur",
+                    "user_href": "/profile/Tom-Arthur-26"
+                },
+                {
+                    "user_id": "JQ Veenstra",
+                    "user_href": "/profile/JQ-Veenstra"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Hufford",
+                "href": "/profile/John-Hufford-5"
+            },
+            "answer_text": "Mathematically, the only difference is that P(A given B) is divided by P(B). Conceptually, P(A and B) is the probability that both A and B occur (the joint probability, or the probability of the intersection of A and B). P(A given B) is the probability that A occurs if B also occurs (conditional probability). The formula for P(A given B) is [P(A and B)/P(B)]. Illustrating with an example: suppose we have 10 rabbits. 4 are male, 6 are female, 2 are pregnant. P(male) = .4 P(female) = .6 P(pregnant) = .2 (dividing # of pregnant rabbits by total # of rabbits); this is the likelihood of randomly picking up a bunny out of the 10 and discovering that it is pregnant. P(pregnant and female) also is .2 (dividing # of pregnant female rabbits by total # of rabbits); this is the likelihood of picking up a bunny out of the 10 and discovering that it is a pregnant female. P(pregnant and male) is zero (dividing # of pregnant male rabbits by total # of rabbits) P(pregnant given female) = 2/6 (dividing # of pregnant female rabbits by the # of female rabbits OR dividing the probability of being female and pregnant by the probability of being female) P(pregnant given male) = 0 (dividing # of pregnant males by # of males, or P(male and pregnant) by P(male). P(female given pregnant) = 1 (dividing # of pregnant females by the # of pregnant bunnies or dividing P(female and pregnant) by P(pregnant) ",
+            "date": "Answered November 5, 2019",
+            "views": "26",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dalvin Pang",
+                    "user_href": "/profile/Dalvin-Pang-1"
+                },
+                {
+                    "user_id": "Carlene Webb",
+                    "user_href": "/profile/Carlene-Webb"
+                }
+            ]
+        }
+    ]
+}

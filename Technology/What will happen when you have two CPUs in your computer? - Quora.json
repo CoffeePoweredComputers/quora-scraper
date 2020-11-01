@@ -1,0 +1,137 @@
+{
+    "title": "What will happen when you have two CPUs in your computer? - Quora",
+    "tags": [
+        "Central Processing Units",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matt Joyce",
+                "href": "/profile/Matt-Joyce-8"
+            },
+            "answer_text": "From a logical perspective nothing special multiple CPU\u2019s provided that all have unrestricted access to the whole of main memory are no different from the system perspective to a multi-core system with a single chip. Things do get more complex if subgroups of processors have dedicated memory not accessible to other processors, though this too is actually a situation that every modern mobile phone, laptop or desktop has, it has at least two core subgroups of processors with separate memory systems the CPU and GPU. In the second case each is in effect it\u2019s own computer, with it\u2019s own CPU, RAM and IO interfaces. That said these can still be merged and used together to solve any parallel task it just requires a more advanced scheduler and more complex memory management to ensure synchronisation of shared memory etc. ",
+            "date": "Answered November 1, 2016",
+            "views": "659",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mio Kreski",
+                    "user_href": "/profile/Mio-Kreski"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Douglas Duncan Pickard",
+                "href": "/profile/Douglas-Duncan-Pickard"
+            },
+            "answer_text": "Servers. That's about it. Mostly two CPUs are useful when you have a lot of seperate tasks that need to be executed in parallel. See while different cores in the same CPU can talk to each other quickly talking to a seperate CPU (for CPUs that even allow it) is SLOW. Seperate tasks make inter-CPU communication less likely, so it's less of a bottleneck. Multi CPU designs have fallen somewhat out of favor as CPUs with previously unimaginable numbers of cores like the AMththreadrippers have come out. When one CPU can have 64 cores, having two just is not something most applications require. ",
+            "date": "Answered June 5, 2020",
+            "views": "137",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Matthew Petricone",
+                    "user_href": "/profile/Matthew-Petricone"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alec Cawley",
+                "href": "/profile/Alec-Cawley"
+            },
+            "answer_text": "I already have four CPUs in my computer. Because they are all in one chip they are called cores. But in the past, there have been plenty of computers with multiple separated CPUs. They just make your computer go faster in many, but not all, circumstances. ",
+            "date": "Answered November 1, 2016",
+            "views": "476",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ross Rheingans-Yoo",
+                    "user_href": "/profile/Ross-Rheingans-Yoo"
+                },
+                {
+                    "user_id": "Aykut Duru",
+                    "user_href": "/profile/Aykut-Duru"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Toms Thomas",
+                    "user_href": "/profile/Toms-Thomas"
+                },
+                {
+                    "user_id": "Sreesh Mallya",
+                    "user_href": "/profile/Sreesh-Mallya"
+                },
+                {
+                    "user_id": "Mikael Bengtsson",
+                    "user_href": "/profile/Mikael-Bengtsson"
+                },
+                {
+                    "user_id": "Anne Fletcher-Jones",
+                    "user_href": "/profile/Anne-Fletcher-Jones"
+                },
+                {
+                    "user_id": "Henrik Oldcorn",
+                    "user_href": "/profile/Henrik-Oldcorn"
+                },
+                {
+                    "user_id": "Michael McClennen",
+                    "user_href": "/profile/Michael-McClennen"
+                },
+                {
+                    "user_id": "Frank Dauenhauer",
+                    "user_href": "/profile/Frank-Dauenhauer"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gerhard Adam",
+                "href": "/profile/Gerhard-Adam"
+            },
+            "answer_text": "Increasing parallelism which allows more flexibility to an enterprise. Besides a smaller footprint, the power and environmental costs are reduced. While there may be talk of multiple cores the reality is that modern systems are quite sophisticated and large. http://www.redbooks.ibm.com/redbooks/pdfs/sg248851.pdf ",
+            "date": "Answered June 6, 2020",
+            "views": "47",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Gokul Gopi",
+                "href": "/profile/Gokul-Gopi-17"
+            },
+            "answer_text": "If by CPU you mean cores it is in every computer these days. Be it your mobile or computer. They are handled and tasks are allocated accordingly by a controller and run in smooth sync. But if you mean CPU as in physical processor it requires a special motherboard that supports two physical processor which is costlier because the mobo takes care of routing data from ram to two processor based on availability the processor sholud be selected for a particular job and scheduling, parllel programming ,shared memory, message passing all is taken care. Consider you have two quad core processor running with hyper threading so each processor has 8 threads now you get 8 x 2 = 16 threads!! That is a lot of computing power. ",
+            "date": "Answered November 30, 2016",
+            "views": "282",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vadim Yakovlevich",
+                "href": "/profile/Vadim-Yakovlevich"
+            },
+            "answer_text": "Pretty much all CPU\u2019s these days are multi-core, which effectively means there are multiple CPU\u2019s on the same chip. Multiple CPU\u2019s works the same way, except they\u2019re in different sockets and there\u2019s usually no shared cache. ",
+            "date": "Answered November 1, 2016",
+            "views": "115",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jasper Chun",
+                "href": "/profile/Jasper-Chun"
+            },
+            "answer_text": "Well,firstly,if you have a workflow that even requires a dual socket mobo,you would not ask us this question. But i\u2019m assuming you\u2019re asking out of curiousity. Jasper Chun's answer to Can you use a dual-processor motherboard for gaming? Is it worth it? Here is my answer to your question. ",
+            "date": "Answered November 1, 2016",
+            "views": "185",
+            "upvotes": "0"
+        }
+    ]
+}

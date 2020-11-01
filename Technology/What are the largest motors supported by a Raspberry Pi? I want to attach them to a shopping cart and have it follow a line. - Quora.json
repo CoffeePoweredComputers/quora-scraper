@@ -1,0 +1,32 @@
+{
+    "title": "What are the largest motors supported by a Raspberry Pi? I want to attach them to a shopping cart and have it follow a line. - Quora",
+    "tags": [
+        "Raspberry Pi 2",
+        "Shopping Cart Software",
+        "Raspberry Pi",
+        "Electronics",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rod Rishworth",
+                "href": "/profile/Rod-Rishworth"
+            },
+            "answer_text": "A Raspberry Pi will \u2018support\u2019 any motor you want, but it won\u2019t be able to power much beyond a couple of very small servos, and even then you should probably be using something intermediate like a PCA9685 servo/LED driver board ($2 from China) if the Pi is going to be doing image processing in real time. There are plenty of tutorials around that can be found by googling \u201chow to power a motor with <x>\u201d where x could be raspberry pi but also say arduino. One such can be found at Arduino DC Motor Control Tutorial - L298N | PWM | H-Bridge - HowToMechatronics; the L298N datasheet says that it can handle up to 25 Watts, which may be just enough for your purposes, on the basis that: at 1 m/s (3.6 kph) this converts simply to a force of exactly 25 Newtons;25 Newtons is about the same as lifting 2.5 kilos, but pushing a shopping cart - even when quite full - that is already moving only needs to overcome friction;A lower power means fewer batteries to recharge, since you aren\u2019t wired up to the grid, or alternatively a longer time between charges if this cart is used quite a lot (for example with two battery packs).The Raspberry Pi is fine powering a handful of LEDs and ICs and perhaps a couple of tiny 9g servos, but it needs to get steady power over USB, or perhaps a PoE hat, and any \u2018motor\u2019 risks eating into the power supply of the CPU itself, especially since you also already have a camera module consuming too. So work backwards: get a couple of decent motors, find drivers for them - perhaps a couple of L298Ns if they exceed 12 W each, work out how to power both them - likely more than 5 V - and the Pi (which needs 5 V or very close) and then interface the Pi with that driver by whatever means is compatible to both. ",
+            "date": "Answered October 22, 2020",
+            "views": "261",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rod Nussbaumer",
+                "href": "/profile/Rod-Nussbaumer-1"
+            },
+            "answer_text": "Since the Raspberry Pi cannot source any motive power, no motors are \u2018supported\u2019 by the RPi. A microprocessor like the Pi supplies only the logic to control devices, and that doesn\u2019t include any ability to source current that things like motors use. The logic used to drive a motor varies according to the type of motor, and there are many types, and also various types of control (on/off, speed, direction, braking/holding, acceleration, etc). In order to drive a motor, you will need to have the RPi drive some external electronics that are capable of supplying the current level and other factors to your motors. You will need to determine what kind of motors you need to drive, and that will dictate the type of controller you need to implement. I strongly suggest that you start with something much smaller in scale than a shopping cart to develop the logic and other electronics like reading and interpreting sensors. The mass of a shopping cart containing the batteries used to drive it will require a bit of specialization in handling energy. The result of getting things wrong can pose some significant hazards, so reducing the risk while learning makes a lot of sense. Perhaps take a kit design, assemble it, learn how it works and how to control it, and then figure out how to scale it up. ",
+            "date": "Answered October 22, 2020",
+            "views": "189",
+            "upvotes": " Answer requested by Harry Akins"
+        }
+    ]
+}

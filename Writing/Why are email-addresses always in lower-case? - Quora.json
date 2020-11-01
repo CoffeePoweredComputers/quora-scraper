@@ -1,0 +1,36 @@
+{
+    "title": "Why are email-addresses always in lower-case? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Franck Dernoncourt",
+                "href": "/profile/Franck-Dernoncourt"
+            },
+            "answer_text": "http://www.ietf.org/rfc/rfc5321.txt: The local-part of a mailbox MUST BE treated as case sensitive. Therefore, SMTP implementations MUST take care to preserve the case of mailbox local-parts. In particular, for some hosts, the user \"smith\" is different from the user \"Smith\". However, exploiting the case sensitivity of mailbox local-parts impedes interoperability and is discouraged. Mailbox domains follow normal DNS rules and are hence not case sensitive. So in practice e-mail addresses are case-insensitive. Just try with yourself. ",
+            "date": "Answered June 3, 2013",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rikky Yoelanda Putra",
+                    "user_href": "/profile/Rikky-Yoelanda-Putra"
+                },
+                {
+                    "user_id": "Mike Zhong",
+                    "user_href": "/profile/Mike-Zhong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jack Dahlgren",
+                "href": "/profile/Jack-Dahlgren"
+            },
+            "answer_text": "They are not always in lowercase. In fact, they are case insensitive.  FoO@ExAmPlE.oRg is the same as fOO@exampLe.OrG The reason you see them most often in lowercase is because that way there is no need to hit the caps key. ",
+            "date": "Answered June 4, 2013",
+            "views": "518",
+            "upvotes": "0"
+        }
+    ]
+}

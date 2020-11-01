@@ -1,0 +1,39 @@
+{
+    "title": "What is the difference between Ethernet and Industrial Ethernet? - Quora",
+    "tags": [
+        "Ethernet",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sinan Korkmaz",
+                "href": "/profile/Sinan-Korkmaz"
+            },
+            "answer_text": "Industrial Ethernet is a generic (marketing) term to speficy some devices produced for specific environmental conditions. An Industrial Ethernet  (or Rugged Ethernet, as some call it) switch hasjust the same functionality with a usual Ethernet switch, mostly even much much less functionality, but has some special packaging that would endure conditions that a usual switch can not. Most \"control\" and SCADA communications tend to run over IP nowadays, and Ethernet connectivity is required in all end stations, but in some specific locations, use of \"office grade\" equipment is no possible. Some examples I can think of: - facilities where the temperature is too hot, or humid for a regular switch to work, like the welding or painting  processes of mechanical parts production factories - outdoor CCTV camera installations - Electrical distribution systems. Although most systems are covered well inside facilities, once a circuit breaker cuts or recovers a supply line, the produced magnetic field is so intense that it would typically damage electronic devices in the same shelter, if they are not \"rugged\" in the sense of grounding and packaging. The application space for industrial Ethernet is expanding. Those devices are typically fanless, because of very tightly closed packages (one can check for \"IP\" numbering for packaging standards - this is nothing to do with Internet Protocol IP). Hence they have no cooling at all. Which brings in some special extra spacing between components, also puts a limit on the CPU power. Hence the feature set of those devices are quite limited. Still, they are closing a huge gap, and allow us to extend networks to extreme environmental conditions using the well-known \"Ethernet\". ",
+            "date": "Answered February 19, 2016",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arsen Freshminder",
+                    "user_href": "/profile/Arsen-Freshminder"
+                },
+                {
+                    "user_id": "Shantanu Hadgekar",
+                    "user_href": "/profile/Shantanu-Hadgekar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ron Brash",
+                "href": "/profile/Ron-Brash"
+            },
+            "answer_text": "As someone who works alot in the industrial space - Tony said it basically, one is basically real, the other not. However, when we speak of the conditions of \u201cindustrial\u201d, non-IT based infrastructure or non-consumption - here are a few more differences: Certifications (quality must adhere to more testing. It could be the same components, but different binning). Can also be like the DIV standards for gas\u2026. Normal Ethernet can cause a spark if not properly isolatedValidation and testing. Guaranteed long-term support for functionality and updates. Often environment specific.Expected running environment expects near zero downtime per yearHas features not in IT. Redundant networking schemes not always common.Different conformal coatings and casing for the environment.Administrstors are often not the ones setting up networking on the plant floor. The audience sometimes differs ;)",
+            "date": "Answered June 18, 2017",
+            "views": "1",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "title": "In layman's terms can you explain Uniform norm? - Quora",
+    "tags": [
+        "Layman's Explanations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Siwei Wang",
+                "href": "/profile/Siwei-Wang-4"
+            },
+            "answer_text": "A norm on a vector space assigns a \u201clength\u201d to each vector in your space. In this case, the vector space is the space of all bounded real or complex valued functions. Let\u2019s consider the space of bounded real-valued functions. Given some arbitrary function [math]f: S \\to \\mathbb{R}[/math] in the vector space, we want to know how \u201clong\u201d it is. We do so by defining the norm [math] ||f|| := \\sup\\{ |f(x)| : x \\in S \\}[/math]. This is the uniform norm. We are looking at the image of [math]S[/math] under [math]f[/math] and finding the tightest possible upper bound on the possible output values of [math]f[/math]. So for example, [math]f(x) = -3 + 2\\sin(x)[/math] would have a norm of [math]5[/math], since the range of [math]f[/math] is [math][-5, -1][/math] for which we see that [math]-5[/math] has the greatest absolute value. It\u2019s important to note that the norm can only be defined in this way when we know that the function is bounded. Otherwise, the supremum does not exist. Now that each function has been given a length, we can find the \u201cdistance\u201d between 2 functions in the space by taking the norm of their difference. So if we have [math]f, g: S \\to \\mathbb{R}[/math] both bounded, we know that [math]f - g: S \\to \\mathbb{R}[/math] is also bounded, and so we can find its length using the norm we\u2019ve defined above. This can be interpreted as the maximal separation between [math]f[/math] and [math]g.[/math] ",
+            "date": "Answered April 28, 2019",
+            "views": "63",
+            "upvotes": "0"
+        }
+    ]
+}

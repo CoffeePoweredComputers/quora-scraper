@@ -1,0 +1,71 @@
+{
+    "title": "Is MySQL good for a large database? - Quora",
+    "tags": [
+        "MySQL",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "St\u00e9phane Varoqui",
+                "href": "/profile/St\u00e9phane-Varoqui"
+            },
+            "answer_text": "Sure, it\u2019s excellent for large databases. Large databases is only one dimension of the many requirements needed from a RDBMS. Historically speaking on ROLAP MyISAM was one way to enable large dataset with the sacrifice of ACID requirements, later on many GAFA pick up on InnoDB and scale up ROLAP using sharding, MySQL open source licence was a key point deploying thousands of instances , thanks to advanced replication solution the HA was good enough to get open source competitors out of this market. The MariaDB fork contribute more to this non ending story, with major contributions on ROLAP scalability using spider that enable transparent data partitionning and TokuDB(slow spinning storage) and RocksDB (Fast flash storage) focusing on better than BTREE for big data indexing on disk, parallel replication for HA, and later on some column storage analytic solutions ",
+            "date": "Answered October 21, 2020",
+            "views": "442",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Greg Kemnitz",
+                "href": "/profile/Greg-Kemnitz"
+            },
+            "answer_text": "Sure - we run a dataworld with about 800 servers (in single primary, two replica configuration) with about 1.2 petabytes of \u201cpayload\u201d data in MySQL. (We have a similar-sized Cassandra world as well.) In modern MySQL using InnoDB, you can handle databases that are as big as you\u2019d likely ever want. Our individual hosts have up to about six terabytes each, but in previous companies, we had hosts with up to 12 terabytes and 20 billion rows in individual instances. Once things get this big, it\u2019s all about the schema and query design, no matter what db vendor you choose. ",
+            "date": "Answered September 25, 2020",
+            "views": "1093",
+            "upvotes": " View 334 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arch Kumar",
+                    "user_href": "/profile/Arch-Kumar-2"
+                },
+                {
+                    "user_id": "Oshosanya Michael",
+                    "user_href": "/profile/Oshosanya-Michael"
+                },
+                {
+                    "user_id": "Zhe Li \u674e\u5586",
+                    "user_href": "/profile/Zhe-Li-\u674e\u5586"
+                },
+                {
+                    "user_id": "Andre S\u00e4\u00e4sk",
+                    "user_href": "/profile/Andre-S\u00e4\u00e4sk"
+                },
+                {
+                    "user_id": "Mottakin Chowdhury",
+                    "user_href": "/profile/Mottakin-Chowdhury"
+                },
+                {
+                    "user_id": "Muhammad Bagoes Bachtiar",
+                    "user_href": "/profile/Muhammad-Bagoes-Bachtiar"
+                },
+                {
+                    "user_id": "Dan Morin",
+                    "user_href": "/profile/Dan-Morin-1"
+                },
+                {
+                    "user_id": "Martin Suster",
+                    "user_href": "/profile/Martin-Suster"
+                },
+                {
+                    "user_id": "Ayo Dele",
+                    "user_href": "/profile/Ayo-Dele-2"
+                },
+                {
+                    "user_id": "Pranay Reddy",
+                    "user_href": "/profile/Pranay-Reddy-40"
+                }
+            ]
+        }
+    ]
+}

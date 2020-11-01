@@ -1,0 +1,18 @@
+{
+    "title": "How to log back into Raspberry Pi - Quora",
+    "tags": [
+        "Raspberry Pi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jayagopal Kannan",
+                "href": "/profile/Jayagopal-Kannan"
+            },
+            "answer_text": "Rasp provides an alternative which I haven\u2019t tried myself yet (Not willing to play around with passwords). Try this out\u2026 Remove the sd card and insert it on a pc.open the file \u2018cmdline.txt\u2019 and add \u2018init=/bin/sh' to the end of the file.put it back in to the pi and boot it.type \u2018su\u2019 to login as root in terminal.type in \u2018passwd pi\u2019 and follow the steps to enter a new passwordonce done , remove the sd card and edit the cmdline.txt file to remove the line we added earlier - \u201cint=/bin/sh\u201d",
+            "date": "Answered July 24, 2016",
+            "views": "175",
+            "upvotes": "0"
+        }
+    ]
+}

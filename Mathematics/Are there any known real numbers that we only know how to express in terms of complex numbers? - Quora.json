@@ -1,0 +1,75 @@
+{
+    "title": "Are there any known real numbers that we only know how to express in terms of complex numbers? - Quora",
+    "tags": [
+        "Imaginary Numbers",
+        "Real Numbers",
+        "Complex Analysis (mathematics)",
+        "Real Analysis",
+        "Complex Numbers",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dean Rubine",
+                "href": "/profile/Dean-Rubine"
+            },
+            "answer_text": "Yes. The bane of the sixteenth century mathematicians who solved the cubic equation is called casus irreducibilis, the irreducible case. There\u2019s always a real solution to a cubic equation with integer coefficients. The irreducible case occurs when those real solutions are only expressible as the sum of two complex numbers. Of course that only applies to expressing the number using integers, the four arithmetic operations and root taking. There are other ways we can express these numbers, for example by saying \u201cthe root of <equation> near x=<approximation>.\u201d Trig affords many examples, for example [math]\\cos 20^\\circ.[/math] That\u2019s of course one third of sixty degrees. DeMoivre offers the complex expression: [math](\\cos 20^\\circ + i \\sin 20^\\circ)^3 = \\cos 60^\\circ + i \\sin 60^\\circ[/math] [math]\\cos 20^\\circ = \\textrm{Re} \\left( \\sqrt[3]{ \\cos 60^\\circ + i \\sin 60^\\circ} \\right)[/math] Since the real part is half the sum of a number and its conjugate, we get [math]\\cos 20^\\circ = \\frac 1 2 \\left( \\sqrt[3]{ \\cos 60^\\circ + i \\sin 60^\\circ}+\\sqrt[3]{ \\cos 60^\\circ - i \\sin 60^\\circ}\\right)[/math] [math]\\cos 20^\\circ = \\frac 1 2 \\left( \\sqrt[3]{ \\frac 1 2(1 + i\\sqrt{3}) }+\\sqrt[3]{ \\frac 1 2(1-i\\sqrt{3}) }\\right)[/math] [math]\\cos 20^\\circ = \\frac 1 {4} \\left( \\sqrt[3]{ 4 + 4i\\sqrt{3}}+\\sqrt[3]{ 4-4i\\sqrt{3} }\\right)[/math] That\u2019s a real number expressed in terms of the cube roots of a couple of complex numbers. The cube roots aren\u2019t independent; to get the real solution we need a conjugate pair of cube roots. It\u2019s actually a case of casus irreducibilis; there\u2019s no expression consisting of integers, the four operations and real root taking which will express the same number. Let\u2019s look at the irreducible cubic equation. We know [math]\\cos 60^\\circ = \\frac 1 2 [/math] and that the triple angle formula is [math]\\cos 3 \\theta = 4 \\cos ^3 \\theta - 3 \\cos \\theta[/math] So [math]x=\\cos 20^\\circ[/math] satisfies [math]\\frac 1 2 = 4 x^3 - 3x[/math] [math]8x^3 - 6x - 1 = 0[/math] That\u2019s a depressed cubic, no [math]x^2[/math] term. There\u2019s a depressed cubic formula that\u2019s pretty straightforward; let\u2019s give it a try: [math]x^3 + 3px = 2q [/math] has solutions [math]x= \\sqrt[3] { q + \\sqrt{p^3+q^2} } + \\sqrt[3] { q - \\sqrt{p^3+q^2} } [/math] [math] x^3 - \\frac 3 4 x = \\frac 1 8[/math] We have [math]p=-1/4, q=1/16, p^3+q^2=-3/256, \\sqrt{p^3+q^2}=\\frac {\\sqrt{3}}{16} i[/math] [math]x= \\sqrt[3] { \\frac 1 {16}+ \\frac {\\sqrt{3}}{16} i } + \\sqrt[3] { \\frac 1 {16}-\\frac {\\sqrt{3}}{16} i  } [/math] [math]x= \\frac 1 {4} \\left( \\sqrt[3] { 4+ 4i\\sqrt{3} } + \\sqrt[3] { 4 - 4i\\sqrt{3}} \\right) [/math] We get the same expression as before, involving complex numbers. There\u2019s no way to express [math]\\cos 20^\\circ[/math] in an expression of integers composed via the four arithmetic operations and real root taking. ",
+            "date": "Updated February 24, 2020",
+            "views": "13",
+            "upvotes": " View 29 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Marcel Zanetti de Carvallho",
+                    "user_href": "/profile/Marcel-Zanetti-de-Carvallho"
+                },
+                {
+                    "user_id": "Rahul Panicker",
+                    "user_href": "/profile/Rahul-Panicker-2"
+                },
+                {
+                    "user_id": "James Thomson",
+                    "user_href": "/profile/James-Thomson-152"
+                },
+                {
+                    "user_id": "Jacques Levy-Vehel",
+                    "user_href": "/profile/Jacques-Levy-Vehel"
+                },
+                {
+                    "user_id": "Francois Leyvraz",
+                    "user_href": "/profile/Francois-Leyvraz"
+                },
+                {
+                    "user_id": "Tom Ramos",
+                    "user_href": "/profile/Tom-Ramos-7"
+                },
+                {
+                    "user_id": "Kabir Belgikar",
+                    "user_href": "/profile/Kabir-Belgikar"
+                },
+                {
+                    "user_id": "Arbash Nazeer",
+                    "user_href": "/profile/Arbash-Nazeer"
+                },
+                {
+                    "user_id": "Jens Knudsen",
+                    "user_href": "/profile/Jens-Knudsen-1"
+                },
+                {
+                    "user_id": "Georges Siminel",
+                    "user_href": "/profile/Georges-Siminel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gengh Eng",
+                "href": "/profile/Gengh-Eng"
+            },
+            "answer_text": "My favorite is the following. The cubic can be solved by radicals alone, and the quartic can also be solved as either a cubic-and-linear or quadratic-and-quadratic, while (at least some) quintics exist that cannot be expressed by radicals alone. All well and good. Now all angle trisections reduce to a particular cubic. One of the earliest realizations that you cannot trisect a general angle with a compass and a straight edge is associated with the fact that you cannot trisect the 60-degree angle (or pi/3 radians). If you work out the cubic, with Theta=(pi/3), \u201csolving\u201d the trisection cubic brings you back to the cube-root of exp(i Theta), as an irreducible form. The only \u201canswer\u201d yout get is that it is exp(i Theta/3) = exp( i pi/9), but you cannot get separate expressions out for cos(pi/9) or sin(pi/9) individually, even though both are fine \u201creal numbers\u201d. ",
+            "date": "Answered August 1, 2020",
+            "views": "50",
+            "upvotes": "0"
+        }
+    ]
+}

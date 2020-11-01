@@ -1,0 +1,115 @@
+{
+    "title": "Does VPN hide web activities from a local router and router logs? - Quora",
+    "tags": [
+        "Virtual Private Networks",
+        "Wireless Routers",
+        "Routers (networking)",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mattia Campagnano",
+                "href": "/profile/Mattia-Campagnano"
+            },
+            "answer_text": "There are different types of VPN. What a VPN does is to create an encrypted subnetwork between hosts by using the Internet (Todd Lammie, Network + De Luxe Study Guide) A VPN can be realized in two different modes: transport mode: it encrypts only the data part of the packet while the original packet headers are unencrypted.tunnel mode: all packets are encrypted in both the above parts. As original headers are encrypted, it\u2019s necessary to encapsulate the packet with a new header. When the packet reaches its final destination, the encapsulation is removed and the packet is decrypted.There are different ways of realizing a VPN: Host-to-host: communication between hosts is encrypted and tunneled. It requires transport mode because the two systems are end-node.Site-to-site: creates a VPN between two routers, each one located on a different site. In this case the VPN protects all the Internet traffic on these routers while the LAN traffic for each one is open within the organization. In this case is more appropriate to use the tunnel mode to hide the source host addresses from any possible attack.Host-to-site: the client has a host-based VPN application, which connects it to a router at the boundary between the organization and the Internet. This way the client can behave as if it were locally attached to the LAN while the traffic on the WAN is encrypted.The more VPNs are created, the more complex it gets to manage them. This can not be the optimal solution for organizations requiring a large quantities of private session on the Internet. VPNs require to update the symmetrical session keys as needed. The best solution for this can be to encrypt the keys with an asymmetrical cryptographic application and exchange them this way. VPNs use different protocols: PPTP (point to point tunneling protocol): it\u2019s Microsoft proprietary and supported by Windows but it isn\u2019t considered as the most secure.L2TP: it\u2019s been developed by Cisco and Microsoft and it\u2019s a very minimal protocol that should be used in combination with IPSec.IPSec (IP security): is the industry-standard protocol for VPNs which encrypts IP packets in either transport or tunnel modes. It doesn\u2019t handle multiprotocol tunneling and for this purpose it must be combined with another protocol, such as L2TP.The main downside of VPNs can be the excessive confidence in the security of the tunnel. In fact, if one of the system part of the tunnel has been infected with a Trojan, and the Trojan is activated inside the VPN, it will have access to the network the same way as it was installed on either end of the connection. The VPN in fact makes the remote client appear as part of the local network. ",
+            "date": "Updated June 13, 2017",
+            "views": "712",
+            "upvotes": " View 33 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                },
+                {
+                    "user_id": "Nidhish Lakhinana",
+                    "user_href": "/profile/Nidhish-Lakhinana-1"
+                },
+                {
+                    "user_id": "Ti\u1ebfn Th\u1ecbnh",
+                    "user_href": "/profile/Ti\u1ebfn-Th\u1ecbnh-2"
+                },
+                {
+                    "user_id": "Ethan Loper",
+                    "user_href": "/profile/Ethan-Loper"
+                },
+                {
+                    "user_id": "Robert McFarland",
+                    "user_href": "/profile/Robert-McFarland-16"
+                },
+                {
+                    "user_id": "Susan White",
+                    "user_href": "/profile/Susan-White-141"
+                },
+                {
+                    "user_id": "William Sieben",
+                    "user_href": "/profile/William-Sieben"
+                },
+                {
+                    "user_id": "Darlene Rust",
+                    "user_href": "/profile/Darlene-Rust"
+                },
+                {
+                    "user_id": "Greg Patel",
+                    "user_href": "/profile/Greg-Patel-2"
+                },
+                {
+                    "user_id": "Edwin Kula",
+                    "user_href": "/profile/Edwin-Kula"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jason Appel",
+                "href": "/profile/Jason-Appel-1"
+            },
+            "answer_text": "To add to the other great comments here, your web activity will only be hidden if that traffic flows across the VPN. In a typical VPN from, lets say, a computer at home to a corporate network, the VPN may only be configured to route traffic to the corporate network through the VPN tunnel. All other traffic would be routed normally, and be visible to the local router. This is known as \"Split Tunnel\" and is generally configured at the VPN device the computer is connecting to. A quick way to check would be to compare your public IP address when connected to the VPN, to when not connected (such as from What Is My IP - The IP Address Experts Since 1999). If they are different, then your web traffic is flowing through the VPN, and you are using the corporate office's internet connection. ",
+            "date": "Answered December 4, 2014",
+            "views": "404",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                },
+                {
+                    "user_id": "Nidhish Lakhinana",
+                    "user_href": "/profile/Nidhish-Lakhinana-1"
+                },
+                {
+                    "user_id": "Samer Ajami",
+                    "user_href": "/profile/Samer-Ajami"
+                },
+                {
+                    "user_id": "Izzat Hafiz",
+                    "user_href": "/profile/Izzat-Hafiz-2"
+                },
+                {
+                    "user_id": "Tocky Run",
+                    "user_href": "/profile/Tocky-Run"
+                },
+                {
+                    "user_id": "Bolaloro Zhorachu",
+                    "user_href": "/profile/Bolaloro-Zhorachu"
+                },
+                {
+                    "user_id": "Edward Hall",
+                    "user_href": "/profile/Edward-Hall-58"
+                },
+                {
+                    "user_id": "Kayla Abbas",
+                    "user_href": "/profile/Kayla-Abbas"
+                },
+                {
+                    "user_id": "William Samuelson",
+                    "user_href": "/profile/William-Samuelson-3"
+                },
+                {
+                    "user_id": "Mark Warner",
+                    "user_href": "/profile/Mark-Warner-59"
+                }
+            ]
+        }
+    ]
+}

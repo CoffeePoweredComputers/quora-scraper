@@ -1,0 +1,87 @@
+{
+    "title": "Why are IPv4 addresses running out? - Quora",
+    "tags": [
+        "IPv4",
+        "IP Addresses"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ronnie Wong",
+                "href": "/profile/Ronnie-Wong-16"
+            },
+            "answer_text": "IPv4 are based on 32bit binary. that means 2^32 power number of possible numbers. This is equal to approximately 4.3 billion addresses. The growth of the internet in the early days when IP addressing was classful address meant that organizations could request \u2018blocks\u2019 of IP addresses. So there were originally in Class A only 120 or so address blocks. Class B, Tens of thousands of \u2018blocs, and Class C, really just a few million \u2018blocks\u2019 Class As just disappeared quickly leased and Class Bs were just about depleted. Class A blocks had millions of IPs (14,777,214) and Class Bs had 65,534 and Class C blocks had 254 address for each block. When these major blocks were leased quickly. It meant the rest had to deal with the quick growth of the internet with fewer IP addresses. This was handled using a combination different techniques. classless IP addressing on the internet\u2026no longer following the rules.Private IP addressingNAT (network address translations) translations, that allows the translation of Private IP Addresses to Public IP Addresses in a One to One translation, or the most popular\u2014Many Private IP addresses could be translated and overloaded on a single Public IP Addresses.These 3 technologies allowed us to slow down the depletion of the internet address waste almost\u2026almost to a standstill\u2026for decades beyond the projection of IPv4 end. ",
+            "date": "Answered April 18, 2019",
+            "views": "158",
+            "upvotes": " Answer requested by Hongyi Shui",
+            "upvoters": [
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rick Chadderdon",
+                "href": "/profile/Rick-Chadderdon"
+            },
+            "answer_text": "When the IPv4 numbering system was created, the growth of the Internet to what it is now was not part of the design criteria. There are about 3.7 billion public addresses available in this scheme. We\u2019re not actually \u201crunning out\u201d - we\u2019re out. You may be able to get a few public addresses from your ISP, but all of the registries responsible for assigning new blocks are unable to provide any blocks of significance. There are no more fresh addresses available. Early on, some large companies requested (and were granted) very large blocks of addresses. Of course, many of those agencies which over-allocated are now selling their spare address space to the highest bidders. ISPs reuse their address blocks as customers leave and join. None of this means that we still have IPv4 address space available, regardless of what some wish to argue. Some of us have been pushing for a couple of decades for the move to IPv6. For a number of reasons - none of which I agree with - this hasn\u2019t happened yet. This is the actual reason we\u2019re out of addresses. In-nerd-tia. Nerds like me are among the most stubborn people on the planet. Unfortunately, the ones who are scared of IPv6 have FUD (and the fear of spending money) on their side when it comes to talking to CEOs. IPv6 will happen, it\u2019s inevitable. If implementation had been taken seriously when we first started talking about it, though, only the people who truly needed it would still be using IPv4 - and they\u2019d probably not have run us out of addresses. ",
+            "date": "Answered April 18, 2019",
+            "views": "395",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alexander Lehmann",
+                "href": "/profile/Alexander-Lehmann"
+            },
+            "answer_text": "there are [math]2^{32}[/math] possible IP addresses, but some are reserved so that about 3.7 billion public addresses available. All of these addresses are registered to companies, some are not in use but are still registered to some major company. Large providers use a lot of IP addresses, for example cable companies or Amazon, some companies have registered large blocks of addresses even though they do not use them completely. When all addresses are registered, it is only possible to get IP addresses by buying or renting them from another company that already has them, so the IPv4 addresses are running out. ",
+            "date": "Answered April 18, 2019",
+            "views": "122",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jim Murphy",
+                    "user_href": "/profile/Jim-Murphy-49"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian Heggie",
+                "href": "/profile/Ian-Heggie"
+            },
+            "answer_text": "You could argue that we have not \u201crun out\u201d, just that the difficulty of reusing the unused IPv4 addresses is now too high to be worth it. See IPv4 address exhaustion - Wikipedia for more details. For example we generally only use one of the 127.0.0.0/8 addresses in practice (127.0.0.1 for localhost). We also reserve one IPc4 addresses in each network for the Broadcast address, which is wasteful for networks that don\u2019t require it (ie many to one point). Many ISP\u2019s allocate public IP numbers to customers who could just as easily be behind an NAT, thus saving many IP#s. IP numbers are allocated on a fixed basis, rather than a dynamic pool between organizations, with each allocation being at the max justified size rounded up to the next power of 2. Or even a pool that splits a sub net of a power of two into odd lengths between different companies. Since no one (in their right mind) is expecting to be able to reprogram all the computers in the world to be able to reclaim and use these \u201cunused\u201d IPv4 addresses, or force independent companies to merge their networks to free up a few IP numbers, we have \u201crun out of\u201d IPv4 addresses in that there are no free blocks left to be allocated and you have to hire IPv4 addresses off companies that already have them. ",
+            "date": "Answered April 22, 2019",
+            "views": "109",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Silverman",
+                "href": "/profile/Andrew-Silverman-10"
+            },
+            "answer_text": "It\u2019s not that every single one is in use, but of the 4 billion theoretically possible addresses in a 32-bit IPv4 address, large hunks of them are carved out as being for special purposes, (for example, broadcast addresses) and many of the other ranges were long ago allocated to various large entities, corporations or governments, so that the net result is that they have just plain run out of unassigned chunks of address space. The saving grace to all of this is the availability of NAT and private network address ranges which allows millions of personal and private machines to be aggregated and sit behind a much smaller number of publicly visible addresses. ",
+            "date": "Answered April 18, 2019",
+            "views": "116",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Matthew Petach",
+                "href": "/profile/Matthew-Petach"
+            },
+            "answer_text": "There\u2019s only 4 billion possible IPv4 addresses, and well over that many devices wanting IP connectivity. The exact whys and accounting of who has unused blocks doesn\u2019t really matter; that\u2019s arranging deck chairs on the Titanic. Simple math says there\u2019s not enough, no matter what we do, which is why we\u2019re all moving to IPv6 instead. If your ISP isn\u2019t providing IPv6 connectivity for you yet, it\u2019s time to start asking them why not, and when they\u2019ll catch up with the rest of the planet. ",
+            "date": "Answered April 18, 2019",
+            "views": "78",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

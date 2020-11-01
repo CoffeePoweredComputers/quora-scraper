@@ -1,0 +1,21 @@
+{
+    "title": "How to play music through a microphone in Zoom - Quora",
+    "tags": [
+        "Zoom (product)",
+        "Microphones",
+        "Audio Recording",
+        "Audio Equipment"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nikoo Shakiba",
+                "href": "/profile/Nikoo-Shakiba"
+            },
+            "answer_text": "This would be somehow tricky, but it worth trying because after this, you can play your song on your PC, then we will route it through a Virtual Microphone and everybody will hear the music that is you are playing. Here are the steps: (1) Download and install VB-Audio Virtual Audio Cable Go to VB-Audio software website and download the VB-CABLE Driver You would receive a zip file, unzip it and run setup file:VBCABLE_Setup_x64.exe (if you are using a 64bit system)VBCABLE_Setup.exe (if you are using a 32bit system)Note: Right-Click on program name and choose \u201cRun as Administrator\u201dFollow steps and when it is done, restart your system.This is actually a device driver that will add two virtual audio devices to your windows: CABLE Input: this is a virtual playback device that will act as one end of a virtual audio cableCABLE Output: this is a virtual Recording device that will act as other end of the virtual cable(2) Setup your Sound Devices Press WIN-R to open a new Run windowEnter: \u201ccontrol mmsys.cpl sounds\u201d on the command line (enter only what is within \u201c\u201d); this will open your Sound Settings window Choose CABLE Input and then click on \u201cSet Default\u201d button to make it your default playback device.Now switch to Recording tab, and do the same for CABLE Output and make it your default recording device.While you are there, choose CABLE Output, click on Properties to open its properties page then switch to Listen tab: Make sure that the \u201cListen to this device\u201d is checked and the \u201cPlayback through this device\u201d is set to \u201cDefault Playback Device\u201d as shown: What you have done is that you have connected your Playback device to a virtual microphone called \u201cCABLE Output\u201d, from now on, everything you play on your computer will be directed to this virtual microphone! Then don\u2019t surprise if you playing something and not hearing anything from your speakers\u2026 but wait\u2026(3) Setup your Zoom Audio devices We need to make sure that your Zoom audio devices are set correctly so that it is listening to our virtual mic (CABLE Output) instead of normal mic. Play some music in your computer and while it is still playing,Log in to the Zoom client and click your profile picture then click SettingsClick the Audio tabIn the Microphone section, make sure that the CABLE Output is selected as microphoneYou should see the mic is picking some input. This is actually your song that is playing on background, you can pause it and replay it to see it is true.(4) Test it Call one of your friends to Zoom to test if it is working(5) Switch to normal mode You can always change these settings to normal by simply opening your Sound Settings page again and setting back the Playback device to Speakers and Recording device to Internal/External Mic.This procedure should work for any other kind of video or call conference or web streaming services. You can use this during a virtual party or actual parties that people wearing headphones.  If you found this answer helpful, please spread word about our app NikooPlayer by simply sharing this post on your social media. Thanks for your support. ",
+            "date": "Answered April 28, 2020",
+            "views": "379",
+            "upvotes": " Answer requested by Nelson Vidinha"
+        }
+    ]
+}

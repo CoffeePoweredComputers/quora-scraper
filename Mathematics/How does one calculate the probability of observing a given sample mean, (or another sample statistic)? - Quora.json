@@ -1,0 +1,35 @@
+{
+    "title": "How does one calculate the probability of observing a given sample mean, (or another sample statistic)? - Quora",
+    "tags": [
+        "Sampling (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "How does one calculate the probability of observing a given sample mean, (or another sample statistic)? You need to know the probability distribution of the data. In the case of the sample mean, the distribution is derived from the distribution of a sum. This is what is known as a convolution. In general it is complicated. But if the data comes from a normal distribution, the sum of two independent normal is normal, so the sum of any number would also be normal and so would the mean. Other statistics have their own methods. For example the standard deviation has a distribution (if the data are independent normals with the same distribution) has a distribution related to chi-squared. It was a major research project in the early 20th century to find the distributions of the common sampling statistics. Another example. The sum of two iid uniform variables has a double triangular distribution. The sum of three has a distribution with density that consists of three quadratic curves joined end to end. The sum of four has four cubics and so on. These start to look very like normal distributions, and this is a special case of the central limit theorem. When the central limit theorem applies, you just need to find the mean and standard deviation of the sample mean and then you can use a normal distribution with these vales as an approximation. ",
+            "date": "Answered April 2, 2018",
+            "views": "543",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Roan Garcia-Quintana",
+                    "user_href": "/profile/Roan-Garcia-Quintana"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henry Schaffer",
+                "href": "/profile/Henry-Schaffer"
+            },
+            "answer_text": "I\u2019ll take your question literally - you want the probability of a particular sample mean, the exact value. The answer is then 0 (assuming a continuous distribution.) Perhaps you meant the probability of a sample mean falling into a range, and then you can follow the method described by Terry Moore - find the distribution and then calculate the probability/area for that range. ",
+            "date": "Answered April 2, 2018",
+            "views": "309",
+            "upvotes": " Answer requested by Dmitry Rominski"
+        }
+    ]
+}

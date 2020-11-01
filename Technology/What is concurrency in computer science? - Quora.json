@@ -1,0 +1,34 @@
+{
+    "title": "What is concurrency in computer science? - Quora",
+    "tags": [
+        "Concurrency (computer science)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nick Kuklich",
+                "href": "/profile/Nick-Kuklich"
+            },
+            "answer_text": "Almost the same as in real life - when different entities want to use the same (shared) resource or have uncontrolled and unordered access to it. I think the simplest example is a site, which can be accessed by 1 or by 100,000 users. So, each user have unconcurrent access to his own resources, like cookies and web page, that was created on server to be displayed in browser also his own. But on server there can be a shared resources, like a field in memory \u201cnumberOfCurrentUsers\u201d, that can be accessed by any user (their sessions) and that is common for(shared between) everyone. Or log file on disk. Information to it is written concurrently from all sessions. Also there can be more complex functionality that should work with shared resources or with database. And database is also a shared resource, that is why it has transactions to ensure that each request to read or modify data will start and finish properly. At the lowest level, if we look closer at running application or process, we can see that all it\u2019s logic can be spitted between several tasks (that are called - threads), that are not depend much on each other and can be executed in parallel, at the same time and not sequential. In case those threads have to access shared resources and you are responsible to make this access safe (in other words - sequential), in most cases - by surrounding this resource with critical section. I hope this quick explanation gives some basic understanding about all this stuff and you can google for more detailed and proper explanation as there are tons of material available. ",
+            "date": "Answered October 18, 2016",
+            "views": "732",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chuck Matthews",
+                    "user_href": "/profile/Chuck-Matthews"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chuck Matthews",
+                "href": "/profile/Chuck-Matthews"
+            },
+            "answer_text": "In general, concurrency is the ability of decomposing an algorithm or program into independent or ordered components. This means that instructions executed out of order will yield a consistent result, no matter the order of input. The concept of concurrency allows for parallel execution of transactions or concurrent programs in distributed systems or where multiple processors are being used. There are a number of approaches (mathematical concepts) to allow for this. ",
+            "date": "Answered October 27, 2016",
+            "views": "420",
+            "upvotes": "0"
+        }
+    ]
+}

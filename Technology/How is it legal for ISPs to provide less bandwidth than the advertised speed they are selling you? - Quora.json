@@ -1,0 +1,80 @@
+{
+    "title": "How is it legal for ISPs to provide less bandwidth than the advertised speed they are selling you? - Quora",
+    "tags": [
+        "Bandwidth",
+        "Internet Speed",
+        "Internet Service Providers",
+        "Telecommunications",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "As far as I know, 100% of the time, ISPs provide speed offerings in bands with a disclaimer \u201cup to\u201d whatever they\u2019re offering. Here\u2019s the real deal: the economics of operating an ISP - of actually the entire Internet - is based on something called statistical multiplexing. You never, ever have a \u201cguaranteed bandwidth connection\u201d to anything - the data, both ways, is in packets. Those packets are sent over what at the time they\u2019re sent looks like the \u201cbest path\u201d. Shit happens. Paths go down or fill up - but that\u2019s ok, because routing will replace them with alternate paths. Packets get damaged, lost, or discarded - but that\u2019s OK, because the TCP retransmission protocols will replace them pretty quickly and the out-of-order reassembly protocols will smoothly insert them in place. Servers get overloaded - so there\u2019s no place for your inbound packets to go, or they can\u2019t move fast enough to queue up the outbound packets you\u2019re looking for. That\u2019s also ok, the protocols treat that like packet damage. All of this stuff is going on full-time, and it means that even if you were the only person actually using the Internet, it\u2019s not possible to guarantee that you\u2019ll get a specific performance. I spent a huge amount of timing studying this problem, and came up with a bunch of commercial implementations at Enron Broadband that let us offer actually guaranteed bandwidth to our customers - but only to other communications providers; the volumes at which you had to deal to make that feasible economically were far too vast for end-user customers. So what your brain tells you is that you signed up for \u201cguaranteed 300mbps Internet\u201d but what your eyes failed to see or your brain failed comprehend was the disclaimer that said \u201cup to\u201d. Because at the end user level? There\u2019s no way to get guaranteed performance. ",
+            "date": "Answered June 1, 2020",
+            "views": "23",
+            "upvotes": " View 53 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nic Wong",
+                    "user_href": "/profile/Nic-Wong-16"
+                },
+                {
+                    "user_id": "Tsaf Eltrut",
+                    "user_href": "/profile/Tsaf-Eltrut"
+                },
+                {
+                    "user_id": "Abhishek Joshi",
+                    "user_href": "/profile/Abhishek-Joshi-66"
+                },
+                {
+                    "user_id": "Robert Jackson",
+                    "user_href": "/profile/Robert-Jackson-98"
+                },
+                {
+                    "user_id": "Randall Greer",
+                    "user_href": "/profile/Randall-Greer"
+                },
+                {
+                    "user_id": "Ari Kestenbaum",
+                    "user_href": "/profile/Ari-Kestenbaum"
+                },
+                {
+                    "user_id": "Jean Amarante",
+                    "user_href": "/profile/Jean-Amarante"
+                },
+                {
+                    "user_id": "Ulises Maga\u00f1a",
+                    "user_href": "/profile/Ulises-Maga\u00f1a"
+                },
+                {
+                    "user_id": "Rishabh Bhandari",
+                    "user_href": "/profile/Rishabh-Bhandari-6"
+                },
+                {
+                    "user_id": "Kelly Erickson",
+                    "user_href": "/profile/Kelly-Erickson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ton Klompmaker",
+                "href": "/profile/Ton-Klompmaker"
+            },
+            "answer_text": "It is illegal in most countries of course. In some countries it may be perfectly OK since the law isn\u2019t adheareed to for more important matters either, so who cares \u2026. Hoever, commonly people do not read the service discription too well and this description often states that the service is \u201cupto\u201d rather than guaranteed. In fact, this may mean 2 things, 1. there may a level of sharing on their link between the Local Exchange and the data centres / backbone, which in the old days could be as much as 1:40 (before IPTV became a common service) and 2. their link to the infrastructure (i.e. the one from your home to the local exchange) uses a technology which maximum speed is depending on the wire plant quality and the distance between the LE and the customer. This may be overcome but there is potentially a signifficant cost involved to upgrade the wireplant and / or block capacity on the backbone for a customer. For consumer services it is also fact that the customer\u2019s home cable or wifi infrastructure is often of poor quality, or poorly configured, and limiting the access capacity to the link.. so 100 Mbit is often just about right\u2026. Then again, people are complaining about bandwidth but often it s merely a principle question since most computers cannot coop with sustained speeds over 100 Mbit or so anyway. Burst, OK but try to transfer a 10 GByte file. between your PC\u2019s using your consumer router. You will definitively see some hickups due to all sorts of limiting factors like I/O busses, interrups, disk handling, Memory handling etc. immagine what it will be when trying this to the other side of the world\u2026 Next of course is asking the question why a residential consumer needs a dedicated 1000 Mbit link anyway (except for streaming sites etc.). To the best of my knowledge there is no commonly used application which utilises this kind of bandwidth except VOD and streaming platforms. However, a customer is in most countries protected agains suppliers which perform structurally below advertised levels. Proving this is and getting compensated is another thing since the above points rightfully provide plenty of handles for a lawyer to ensure the ISP gets away with complaints (for one, the ISP are often not the owner of the wireplant\u2026.). It would however be nice to have the ISP\u2019s explain on their web site\u2019s site calculations tools (where offered) what the estimated bandwidth is they have calculated for your location. It would surely be limiting the number of complaits. Over here this was done at some point in time. Not sure they all (still) do. I was told to expect 7 Mbit here and over time they improved a few things and I get about 15 now\u2026 so that is OK allthough the setup should support upto about 22 Mbit. In my case this is a matter of long distance to the LE. Just my 2 cents. ",
+            "date": "Answered September 30, 2019",
+            "views": "137",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Satoshi Nagamoto-Ye",
+                    "user_href": "/profile/Satoshi-Nagamoto-Ye"
+                }
+            ]
+        }
+    ]
+}

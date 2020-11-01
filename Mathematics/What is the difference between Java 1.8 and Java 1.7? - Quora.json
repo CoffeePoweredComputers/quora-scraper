@@ -1,0 +1,95 @@
+{
+    "title": "What is the difference between Java 1.8 and Java 1.7? - Quora",
+    "tags": [
+        "Programming Language Comparisons",
+        "Comparisons",
+        "Java (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Yogesh Pawar",
+                "href": "/profile/Yogesh-Pawar-120"
+            },
+            "answer_text": "The Following features are added in Java 8 which is missing in Java 7 1)forEach loop:- added forEach method in java.lang.Iterable Interface. for each loop is alternate option for for loop class ForEachDemo{ public static void main(String args[]){ int num[]={1,3,4,5}; for(int i:num){ System.out.println(i); } } } 2:default and static methods in Interfaces:- Java 8, interfaces are enhanced to have method with implementation. We can use default and static keyword to create interfaces with method implementation. 3:-Functional Interfaces and Lambda Expressions:- Functional Interface An interface with exactly one abstract method is called Functional Interface. @FunctionalInterface annotation is added so that we can mark an interface as functional interface. It is not mandatory to use it, but it\u2019s best practice to use it with functional interfaces to avoid addition of extra methods accidentally. If the interface is annotated with @FunctionalInterface annotation and we try to have more than one abstract method, it throws compiler error. Lambda Expression Lambda Expression are the way through which we can visualize functional programming in the java object oriented world. Objects are the base of java programming language and we can never have a function without an Object, that\u2019s why Java language provide support for using lambda expressions only with functional interfaces. Since there is only one abstract function in the functional interfaces, there is no confusion in applying the lambda expression to the method. Lambda Expressions syntax is (argument) -> (body). Now let\u2019s see how we can write above anonymous Runnable using lambda expression. Runnable r1 = () -> System.out.println(\"My Runnable\"); Let\u2019s try to understand what is happening in the lambda expression above. Runnable is a functional interface, that\u2019s why we can use lambda expression to create it\u2019s instance. Since run() method takes no argument, our lambda expression also have no argument. Just like if-else blocks, we can avoid curly braces ({}) since we have a single statement in the method body. For multiple statements, we would have to use curly braces like any other methods. 4:-Java Stream API for Bulk Data Operations on Collections 5:-Improvment in Java Time API 6:-Improvment in Collection API 7:Concurrency API improvements 8:-java IO improvement This all are newly added feature in Java 8. Regards, Yogesh Pawar Java Programmer ",
+            "date": "Answered November 7, 2017",
+            "views": "218",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rahul Megilamane",
+                    "user_href": "/profile/Rahul-Megilamane-1"
+                },
+                {
+                    "user_id": "VIVEK DHAMNE",
+                    "user_href": "/profile/VIVEK-DHAMNE"
+                },
+                {
+                    "user_id": "Rajesh Ap",
+                    "user_href": "/profile/Rajesh-Ap-4"
+                },
+                {
+                    "user_id": "Ketansing Pawar",
+                    "user_href": "/profile/Ketansing-Pawar"
+                },
+                {
+                    "user_id": "Sayali Nangare",
+                    "user_href": "/profile/Sayali-Nangare"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Arundhati Banerjee",
+                "href": "/profile/Arundhati-Banerjee-33"
+            },
+            "answer_text": "Well, I hope you all understand the difference between the word \u201cdifference\u201d and \u201cupgradation\u201d\u2026 Considering this, I will be sharing the various version upgrades of Java SE 8 and Java SE 7 (Java 1.8 and Java 1.7)\u2026 So, what is Java? Java is a high-level programming language originally developed by Sun Microsystems and released in 1995. It is a general-purpose computer programming language that is concurrent, class-based, object-oriented,and specifically designed to have as few implementation dependencies as possible. It is intended to let application developers \"write once, run anywhere\" (WORA), meaning that compiled Java code can run on all platforms that support Java without the need for recompilation. Java SE 8 & Java SE 7: Java SE 8 (March 18, 2014): The code name culture is dropped with Java 8 and so no official code name going forward from Java 8. New features in Java SE 8 Lambda ExpressionsPipelines and StreamsDate and Time APIDefault MethodsType AnnotationsNashhorn JavaScript EngineConcurrent AccumulatorsParallel operationsPermGen Error RemovedTLS SNIJava SE 7 (July 28, 2011): The code was named Dolphin. New features in Java SE 7 Strings in Switch StatementType Inference for Generic Instance CreationMultiple Exception HandlingSupport for Dynamic LanguagesTry with ResourcesJava nio PackageBinary Literals, Underscore in literalsDiamond SyntaxAutomatic Null HandlingJava SE 8 vs Java SE 7:  Hope by now, you have well-differentiated Java SE 8 with Java SE 7\u2026 Love Java!!! Live Java!!! ",
+            "date": "Answered July 12, 2017",
+            "views": "355",
+            "upvotes": " View 20 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Boobalan Sivaprakasam",
+                    "user_href": "/profile/Boobalan-Sivaprakasam"
+                },
+                {
+                    "user_id": "Saravana Kumar",
+                    "user_href": "/profile/Saravana-Kumar-1650"
+                },
+                {
+                    "user_id": "Rahul Kumar Pandey",
+                    "user_href": "/profile/Rahul-Kumar-Pandey-65"
+                },
+                {
+                    "user_id": "Nitin Shivakumar",
+                    "user_href": "/profile/Nitin-Shivakumar"
+                },
+                {
+                    "user_id": "Ganesan Karthik",
+                    "user_href": "/profile/Ganesan-Karthik-1"
+                },
+                {
+                    "user_id": "Tom Winter",
+                    "user_href": "/profile/Tom-Winter-13"
+                },
+                {
+                    "user_id": "\u0939\u093f\u0924\u0947\u0928 \u092a\u093e\u091f\u0940\u0932",
+                    "user_href": "/profile/\u0939\u093f\u0924\u0947\u0928-\u092a\u093e\u091f\u0940\u0932"
+                },
+                {
+                    "user_id": "Ketansing Pawar",
+                    "user_href": "/profile/Ketansing-Pawar"
+                },
+                {
+                    "user_id": "Abir Chaudhary",
+                    "user_href": "/profile/Abir-Chaudhary-1"
+                },
+                {
+                    "user_id": "Nikhil Bhonsle",
+                    "user_href": "/profile/\u0928\u093f\u0916\u093f\u0932-\u092d\u094b\u0902\u0938\u0932\u0947-Nikhil-Bhonsle"
+                }
+            ]
+        }
+    ]
+}

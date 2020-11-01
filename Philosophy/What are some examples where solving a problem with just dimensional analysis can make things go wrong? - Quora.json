@@ -1,0 +1,90 @@
+{
+    "title": "What are some examples where solving a problem with just dimensional analysis can make things go wrong? - Quora",
+    "tags": [
+        "Dimensional Analysis",
+        "Getting Things Done (system)",
+        "List Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Simmons-Duffin",
+                "href": "/profile/David-Simmons-Duffin"
+            },
+            "answer_text": "Dimensional analysis going wrong is almost always an indication that one is ignoring an important physical effect.  This is actually an excellent rule of thumb that physicists can use to identify new physics. A simple example is a naive estimate of the ground-state energy of Hydrogen.  We particle physicists like to use units where [math]c=\\hbar=1[/math].  In these units, one has [math]\\mathrm{mass}=\\mathrm{energy}=\\mathrm{length}^{-1}=\\mathrm{time}^{-1}[/math].  For the sake of computing the ground-state energy of Hydrogen, we can think of the proton as being very heavy and fixed.  Then the only dimensionful quantity that's left is the electron mass, so we might conjecture [math]E_\\mathrm{ground}\\approx m_e=5\\times 10^{5}\\mathrm{eV}[/math], which is way off.  The problem is that the orbital energy of an electron depends on its electromagnetic interaction with the nucleus, which is proportional to the (dimensionless) fine structure constant [math]\\alpha\\approx 1/137[/math].  So let's throw one of those in for good measure: [math]E_\\mathrm{ground}\\approx \\alpha m_e=3.6\\times 10^3\\mathrm{eV}[/math]... still way too big.  Once again, we're being too naive and missing an important physical effect: the strength of the electromagnetic interaction sets the orbital radius of the electron (smaller coupling means bigger radius) AND at a given radius the energy is still proportional to the electromagnetic coupling.  So we need two factors of [math]\\alpha[/math]: [math]E_\\mathrm{ground}\\approx \\alpha^2 m_e=26\\,\\mathrm{eV}[/math], which is only off by a factor of 2. To correct our naive dimensional analysis, we needed to understand more and more of how the physics works.  Now here are a couple famous examples where we don't understand how the physics works: the Hierarchy problem and the Cosmological Constant problem [1].  Naively, the smallest scale where particle physics makes sense is the Planck scale [math]M_\\mathrm{Pl}=10^{19}\\mathrm{GeV}[/math].  Let's suppose that microscopic things happening at the Planck scale give rise to the Standard Model of particle physics.  Once again, using particle physics units, there is only one dimensionful parameter in the game, so we might guess that all the dimensionful parameters in the Standard Model are determined by it: [math]m_\\mathrm{Higgs}\\approx M_\\mathrm{Pl}[/math] and [math]\\Lambda\\approx M_\\mathrm{Pl}^4[/math], where [math]m_\\mathrm{Higgs}[/math] is the mass of the Higgs boson, and [math]\\Lambda[/math] is the Cosmological Constant (these are the only two dimensionful parameters in the Standard Model).  These estimates are off by 17 and 120 orders of magnitude, respectively. Clearly our assumptions were too naive.  The challenge is to understand more of the details of how the physics works, and figure out how important dimensionless quantities could creep into the answers.  For the Hierarchy problem (the 17 orders of magnitude discrepancy between [math]m_\\mathrm{Higgs}[/math] and [math]M_\\mathrm{Pl}[/math]), this has been one of the main sources of activity in physics over the last several decades, leading to the ideas of Supersymmetry [2], Large Extra Dimensions [3], Warped Extra Dimensions [4], and many others.  For the Cosmological Constant problem (the 120 orders of magnitude discrepancy), there are currently no good solutions based on a simple physical mechanism [5]. --------------------- [1] See http://en.wikipedia.org/wiki/Hierarchy_problem and http://en.wikipedia.org/wiki/Cosmological_constant [2] http://en.wikipedia.org/wiki/Supersymmetry [3] http://en.wikipedia.org/wiki/Large_extra_dimension [4] http://en.wikipedia.org/wiki/Randall%E2%80%93Sundrum_model [5] Some scientists like to invoke anthropic reasoning (especially an argument of Weinberg http://en.wikipedia.org/wiki/Anthropic_principle#Anthropic_coincidences) to explain smallness of the Cosmological Constant, though many others are uncomfortable with this as a solution to the problem. ",
+            "date": "Answered October 31, 2011",
+            "views": "36",
+            "upvotes": " View 42 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Xuyang Yu",
+                    "user_href": "/profile/Xuyang-Yu-2"
+                },
+                {
+                    "user_id": "Robin Hodson",
+                    "user_href": "/profile/Robin-Hodson"
+                },
+                {
+                    "user_id": "Robert Kimera",
+                    "user_href": "/profile/Robert-Kimera-1"
+                },
+                {
+                    "user_id": "Xiaojun Tan",
+                    "user_href": "/profile/Xiaojun-Tan-3"
+                },
+                {
+                    "user_id": "JAMES BERNARD",
+                    "user_href": "/profile/JAMES-BERNARD-26"
+                },
+                {
+                    "user_id": "Song He",
+                    "user_href": "/profile/Song-He"
+                },
+                {
+                    "user_id": "Yongcheng Jiang",
+                    "user_href": "/profile/Yongcheng-Jiang"
+                },
+                {
+                    "user_id": "Shrinidhi Raghunandan",
+                    "user_href": "/profile/Shrinidhi-Raghunandan"
+                },
+                {
+                    "user_id": "Beverly Simmons",
+                    "user_href": "/profile/Beverly-Simmons-1"
+                },
+                {
+                    "user_id": "Robert Fajber",
+                    "user_href": "/profile/Robert-Fajber"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ashwin Murthy",
+                "href": "/profile/Ashwin-Murthy-2"
+            },
+            "answer_text": "In my first high school physics class when we were learning the basic laws of Newtonian Mechanics, everything seemed like it could be explained by dimensional analysis. It seemed for any given problem relating all of the basic quantities Force, velocity, acceleration, Work, Power, etc. could all be found from the others just by using dimensional analysis. Then one day I had this idea [math]F\\times v\\times t = ma \\times v\\times t = m\\frac{v}{t} \\times v \\times t = mv^2[/math]. Hey look! It has units of joules. This must be the formula for energy, until I learned later on that the formula for kinetic energy is [math]\\frac{1}{2}mv^2[/math] because that initial [math]t[/math] should have been a [math]dt[/math]. Another potential misinterpretation of units like these is when dealing in rotational mechanics. If you look at the units for Joules it is [math]\\frac{kg\\times meters^2}{seconds^2}[/math]. It is kind of difficult to wrap your head around this quantity as is. It only makes sense when you decompose it as a product of more tangible quantities like force and distance. A curious result is that Torque has the same units of energy, because its force times distance of your lever arm, but the physical interpretation of torque is much different than energy. It would never make sense to write your result for torque in terms of Joules, even though they both have units of [math]\\frac{kg\\times meters^2}{seconds^2}[/math]. ",
+            "date": "Answered March 10, 2014",
+            "views": "299",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Farhana R. Khan",
+                    "user_href": "/profile/Farhana-R-Khan"
+                },
+                {
+                    "user_id": "Dakota Lim",
+                    "user_href": "/profile/Dakota-Lim"
+                },
+                {
+                    "user_id": "Nayan Bhat",
+                    "user_href": "/profile/Nayan-Bhat"
+                },
+                {
+                    "user_id": "Yotam Dvir",
+                    "user_href": "/profile/Yotam-Dvir"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "title": "Where do Bayesian priors come from? - Quora",
+    "tags": [
+        "Bayesian Networks",
+        "Bayesian Inference"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sean Gerrish",
+                "href": "/profile/Sean-Gerrish"
+            },
+            "answer_text": "This question, as stated, is a bit ambiguous. I\u2019m also assuming that the question refers to the general idea of setting a model prior before observing any data at all (which is both a frequentist and Bayesian idea, as opposed to anything that\u2019s specifically Bayesian). Anyways, there are a few answers. One of the biggest reasons priors are chosen is mathematical convenience. Conjugate priors are popular here because they allow one to specify the distribution in closed form, while each subsequent observation also allows the posterior (i.e., the prior + observed data) to be described simply in closed form: If you have a model in which you make each observation with Gaussian noise, and you want to measure the mean, then a Gaussian prior makes sense.If you want to measure the probability of a coin showing up heads on a flip, then a beta distribution makes sense.In the case of a coin flip (#2 above), updating the posterior is as easy as adding two numbers: if the prior is specified by beta(10, 10), the posterior after the first coin flip coming up heads is beta(10 +1, 10). That posterior can then serve as a prior, beta(11, 10), for the following coin flip. The importance of mathematical convenience here is difficult to overemphasize. Imagine if having to write the posterior in closed form meant that you had to write O(N) terms or O(N^2) algebraic terms for N observations. It would quickly become unwieldy, and students around the world would be unhappy. A second reason Bayesian priors are selected \u2014 really, the main reason they are \u2014 is because they succinctly provide specific information we hope to convey about the world before observing any data. In some cases, we hope to say, \u201cI have no belief about the state of the world\u201d, in which case an uninformative prior might make sense. Priors can convey not just directionality but also confidence. For example, with a beta prior for the probability of a coin coming up heads, we can specify both the prior probability of a coin flip and our confidence about that prior. We might reasonably say that we think the prior is beta(1000, 1000), indicating that a single coin flip is unlikely to change our opinion much \u2014 it means the probability of showing heads is 1001 / (1001 + 1000). This is in contrast to a prior of beta(1, 1), which means that with a single coin flip of heads, our belief about the next flip coming up heads is 2/(2 + 1). I\u2019m happy to extend my answer if the question is clarified some. ",
+            "date": "Answered June 4, 2016",
+            "views": "17",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terr-No",
+                    "user_href": "/profile/Terr-No"
+                },
+                {
+                    "user_id": "Sherif Nada",
+                    "user_href": "/profile/Sherif-Nada"
+                },
+                {
+                    "user_id": "Xiaowei Xu",
+                    "user_href": "/profile/Xiaowei-Xu-1"
+                },
+                {
+                    "user_id": "Shivam Misra",
+                    "user_href": "/profile/Shivam-Misra"
+                },
+                {
+                    "user_id": "Mohitdeep Singh",
+                    "user_href": "/profile/Mohitdeep-Singh"
+                },
+                {
+                    "user_id": "Fred Feinberg",
+                    "user_href": "/profile/Fred-Feinberg"
+                },
+                {
+                    "user_id": "Jeroen Janssens",
+                    "user_href": "/profile/Jeroen-Janssens-1"
+                },
+                {
+                    "user_id": "Stefano Ghirlanda",
+                    "user_href": "/profile/Stefano-Ghirlanda"
+                },
+                {
+                    "user_id": "Bram Cohen",
+                    "user_href": "/profile/Bram-Cohen"
+                },
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Fred Feinberg",
+                "href": "/profile/Fred-Feinberg"
+            },
+            "answer_text": "Sean Gerrish\u2019s answer really gets at the heart of it, although I\u2019d like to add one more point (at the end). But, basically, the idea is that you try to choose priors from a family that are easy to work with \u2014 which in practice means they are conjugate, which allows Gibbs draws (assuming one has a convenient sampler from the posterior for that particular conditional density) \u2014 and that also reflect any information that one either has or wishes to assume. The additional point I wanted to make concerns \u201cnoninformative\u201d priors, which are trickier than they seem. First, frequentists will often point to the prior as an arbitrary or dangerous element of Bayesian analysis. It helps to challenge them to think of something about which they know absolutely nothing. It\u2019s nearly impossible: any \u201chow many?\u201d question is bounded by the number of quarks in the universe; any \u201chow long?\u201d question is bounded by the age of the universe; etc. And of course these bounds are much more friendly in real-world problems. For example, if someone asks about the weight of the next person to walk through the door, I may not know the exact distribution (of weights of people who walk through that particular door), but I can choose a very diffuse distribution that tops out at the heaviest person on record, and doesn\u2019t go below zero. FREQUENTIST ANALYSES OMIT THIS INFORMATION, even though it\u2019s incontrovertible and helpful. Second, a prior that\u2019s noninformative on one scale can be informative on another. For example, if you set a flat prior on the standard deviation in a regression, you are actually saying something informative about the variance (i.e., the square of the standard deviation), namely, that it\u2019s more likely to be close to zero than far away. This can seem counterintuitive, but it can be seen by realizing that the noninformative prior on the standard deviation places an equal weight on [0, 1] and [1, 2], but that means it places equal weight on [0, 1] and [1, 4] for the variance: more weight on lower values, in other words. This is where the idea of maximum entropy priors are helpful (which interested readers can google). In short, there is always prior information, and what you say about the prior of any \u201cparameter\u201d depends on how you\u2019ve parameterized your model. ",
+            "date": "Answered June 6, 2016",
+            "views": "849",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hassan Siddiqui",
+                    "user_href": "/profile/Hassan-Siddiqui-10"
+                },
+                {
+                    "user_id": "Tobin Baker-Jones",
+                    "user_href": "/profile/Tobin-Baker-Jones"
+                },
+                {
+                    "user_id": "Brent Ostrum",
+                    "user_href": "/profile/Brent-Ostrum"
+                },
+                {
+                    "user_id": "Bram Cohen",
+                    "user_href": "/profile/Bram-Cohen"
+                },
+                {
+                    "user_id": "Timothy Johnson",
+                    "user_href": "/profile/Timothy-Johnson-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stanislav Shalunov",
+                "href": "/profile/Stanislav-Shalunov"
+            },
+            "answer_text": "Bayesian priors do not really come from anywhere anymore than presuppositions do, generally speaking. Bayesian inference works, in this regard, analogously to rules of logical inference (except it updates probabilities and distributions rather than derives statements definitely). Where does the antecedent in the modus ponens rule come from? It can be anything, and the rule still works. A related question is how to choose Bayesian priors in practice. The usual answer is that the correct prior is to reflect the best it can existing understanding of the underlying situation. Note that because Bayesian inference automatically implies Occam\u2019s razor, there is usually no further need to find compromises between faithfulness and convenience of expression. ",
+            "date": "Answered June 4, 2016",
+            "views": "487",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mohitdeep Singh",
+                    "user_href": "/profile/Mohitdeep-Singh"
+                },
+                {
+                    "user_id": "Christian Kaiser",
+                    "user_href": "/profile/Christian-Kaiser"
+                },
+                {
+                    "user_id": "Erdem Devge",
+                    "user_href": "/profile/Erdem-Devge"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhinav Maurya",
+                "href": "/profile/Abhinav-Maurya"
+            },
+            "answer_text": "I cam across a tweet by Kirk Borne on Twitter recently that is quite relevant to this question: 46,656 varieties of Bayes Statistics: \"Ye shall know them by their posteriors.\"  The picture is from the book The Theory That Would Not Die: How Bayes\u2019 Rule Cracked the Enigma Code, Hunted Down Russian Submarines, and Emerged Triumphant from Two Centuries of Controversy by Sharon Bertsch McGrayne. ",
+            "date": "Answered July 2, 2016",
+            "views": "737",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Anant Jain",
+                    "user_href": "/profile/Anant-Jain-12"
+                }
+            ]
+        }
+    ]
+}

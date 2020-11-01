@@ -1,0 +1,30 @@
+{
+    "title": "What polygon has 35 diagonals? - Quora",
+    "tags": [
+        "Computational Geometry",
+        "Polygons",
+        "Geometry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hungenahalli Sitaramarao Badarinath",
+                "href": "/profile/Hungenahalli-Sitaramarao-Badarinath"
+            },
+            "answer_text": "Number of diagonals in polygons of n sides = n(n-3)/2. Here, n(n-3)/2 = 35, or n(n-3) = 70 So n = 10. So a decagon has 35 diagonals. 360/10 = 36. So sum of all interior angles = (!80\u201336)*10 = 144*10 = 1440 deg. 1440/180 = 8. So at any one vertex we can draw 8 diagonals and thus form 8 triangles at each vertex. ",
+            "date": "Answered September 6, 2019",
+            "views": "713",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "John Pabrinkis",
+                "href": "/profile/John-Pabrinkis"
+            },
+            "answer_text": "In any polygon with n sides each vertex can be connected to n-3 other vertices (not to itself or either adjacent vertex) by a diagonal. Thus, there are a total of n(n-3)/2 diagonals (the division by 2 is to avoid double counting each diagonal, once from each endpoint.) So we want: n(n-3)/2 = 35 or n^2 -3n -70 = 0 which is readily factored as (n-10)(n+7) = 0, which has the two roots n=10 and n=-7. Discarding the negative root, we have the only answer, n=10, a decagon. As a quick check n(n-3)/2 = (10*7)/2= 35. Check! ",
+            "date": "Answered September 13, 2019",
+            "views": "191",
+            "upvotes": " Answer requested by David Niehaus"
+        }
+    ]
+}

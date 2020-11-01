@@ -1,0 +1,93 @@
+{
+    "title": "How to position an image in HTML - Quora",
+    "tags": [
+        "HTML5",
+        "Image Processing",
+        "HTML",
+        "Web Design",
+        "How-to Question",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andy Gongea",
+                "href": "/profile/Andy-Gongea"
+            },
+            "answer_text": "It really depends on your situation. Here are some potential cases: Using MARGIN:In this case, all you have to do is to define a rule and apply it to your item. .my-image { margin-left: 20px; }\u00a0Using TRANSFORM:In this case, you can apply a transformation to your image and translate it on the X axis. .my-image { transform: translateX(20px) }\u00a0Using POSITION:In this situation, you need to set POSITION: RELATIVE to the element and then define the LEFT value for indentation. .my-image { position: relative; left: 20px; }\u00a0Using PADDING:In order to use padding, you will need to apply it to the parent of the image <style type=\"text/css\">\u00a0\t.my-wrapper { padding-left: 20px }\u00a0</style>\u00a0\u00a0<div class=\"my-wrapper\">\u00a0\t<img class=\"my-image\" src=\"some-image.png\" alt=\"my image\" /> \u00a0</div>\u00a0",
+            "date": "Answered February 9, 2018",
+            "views": "97",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jenine Alkhatib",
+                    "user_href": "/profile/Jenine-Alkhatib-1"
+                },
+                {
+                    "user_id": "Brett Clelland",
+                    "user_href": "/profile/Brett-Clelland-1"
+                },
+                {
+                    "user_id": "Konstantine Ovchinikov",
+                    "user_href": "/profile/Konstantine-Ovchinikov"
+                },
+                {
+                    "user_id": "Joko Joko Cheong",
+                    "user_href": "/profile/Joko-Joko-Cheong"
+                },
+                {
+                    "user_id": "Luka Leer",
+                    "user_href": "/profile/Luka-Leer"
+                },
+                {
+                    "user_id": "Justin Stephens",
+                    "user_href": "/profile/Justin-Stephens-26"
+                },
+                {
+                    "user_id": "Danny Wright",
+                    "user_href": "/profile/Danny-Wright-35"
+                },
+                {
+                    "user_id": "Caleb Baksh",
+                    "user_href": "/profile/Caleb-Baksh"
+                },
+                {
+                    "user_id": "Zach Leavitt",
+                    "user_href": "/profile/Zach-Leavitt-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aastha Kulkarni",
+                "href": "/profile/Aastha-Kulkarni"
+            },
+            "answer_text": "Below are the few tags that you can use to define the position of image in HTML: IMGdenotes that this will be an image.STYLE=proclaims what will follow are style commands.position:absolute;states that the image will go exactly where I say it will. If text or another picture is already there -- tough. This will go right over top of it. That is one of the drawbacks to this positioning stuff.TOP:35px;LEFT:170px;These are the plot points for the image: 35 pixels down from the top and 170 pixels in from the left.WIDTH:50px;HEIGHT:50px This is the height and width of the image itself.",
+            "date": "Answered October 9, 2019",
+            "views": "133",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Rajput",
+                    "user_href": "/profile/Vaibhav-Rajput-160"
+                },
+                {
+                    "user_id": "Ye Edward",
+                    "user_href": "/profile/Ye-Edward"
+                },
+                {
+                    "user_id": "Terry Harris",
+                    "user_href": "/profile/Terry-Harris-3"
+                },
+                {
+                    "user_id": "Muhammad Zahid",
+                    "user_href": "/profile/Muhammad-Zahid-225"
+                },
+                {
+                    "user_id": "Muj Moh",
+                    "user_href": "/profile/Muj-Moh"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "title": "How often does a cell phone ping the towers? - Quora",
+    "tags": [
+        "Consumer Cellular",
+        "How Often Does X Occur?",
+        "Cellular Data",
+        "Institute of Electrical and Electronics Engineers",
+        "Cell Towers",
+        "Mobile Phones",
+        "Electronics and Communication Engineering",
+        "Cellular Service Providers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Fred",
+                "href": "/profile/David-Fred-3"
+            },
+            "answer_text": "Mr. Rodrigues has it right, generally. The phone sitting inactive as he describes, there is a parameter that can be set by the carrier. It is basically an activity timer. We set ours, when I still worked for a carrier, at 8 hours. So you turn your phone on, and it pings once, to tell the network it's on,and where it is. With the activity timer set at 8 hours, unless the phone moves to another cell, makes or recieves a cal or text, or starts a data session, nothing happens. After 8 hours, the phone will ping again, then be dormant for 8 more hours. The purpose of the timer, is to not use network resources for a phone that has been off for more than 8 hours. As long as the 8 hours hasn\u2019t passed, everytime an incoming text or voice call comes, the network will \u201cpage\u201d the phone, in an attempt to complete the call. If the timer expires, and the phone doesnt\u2019t ping again, the network won\u2019t bother to look for it. You can tell when you call it. If you call, and the phone rings 2 times (again, a timer and paging protocol defined by the carrier. Most carriers \u201cpage\u201d twice, before routing to voicemail, about 2 rings worth), then goes to voicemail, it is likely off, but has been off less than 8 hours. If it has been longer than 8 hours, the caller won\u2019t hear a ring at all, the ne work knows it hasn't \u201cpinged\u201d at the appropriate time, 8 hours. So no network resources are wasted looking for it. If you get 4, or 5 rings before voicemail, the phone is on, but no one is answering. Again, there are no \u201cstandards\u201d for how these timers are set. The standards make them available, and specifies how they work. Each carrier has internal,practices for how they are set. The only exception to the above, is if your phone is on a border between two \u201clocation areas\u201d, which again are the defined by the carrier according to their preferences. If so, all phones periodically rescan, periodic registration, looking to be sure it's on the strongest cell (the rescan time is also defined by the carrier). If that timer is set at let\u2019s say 5 minutes, every 5 minutes your phone will scan a list of towers, sent to it by the network, to see if it is still on the best tower. If on one scan, tower A is strongest, it will register (ping), and the 8 hour clock starts. 5 minutes later, the phone scans again. If tower A is still the strongest, nothing happens. If for some reason (you moved the phone, even slightly) on the next scan Tower B is now strongest, and B is a different location area, it will register again, pinging tower B, and updating its location in the network. Now, if a call comes, the network knows not to look for you on tower A, so it won\u2019t waste paging resources, it will page on tower B, and any other towers sorftware defined as being part of the same location area. So if your phone is smack dab between two towers, with nearly equal signal strength, the phone could \u201cpimg\u201d every 5 minutes, or whatever rescan time is set. Note that while the phone is scanning, it can\u2019t receive calls, which is why sometimes you call a phone and it goes to voicemail, but you try a minute later it rings. I can\u2019t recall the IEEE standard, a group called 3GPP develops the standards. ",
+            "date": "Updated June 10, 2019",
+            "views": "237",
+            "upvotes": " View 25 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "A Umphlett",
+                    "user_href": "/profile/A-Umphlett"
+                },
+                {
+                    "user_id": "Lauch McMillan",
+                    "user_href": "/profile/Lauch-McMillan"
+                },
+                {
+                    "user_id": "Mat McCoy Madiice",
+                    "user_href": "/profile/Mat-McCoy-Madiice"
+                },
+                {
+                    "user_id": "Richard Bagby",
+                    "user_href": "/profile/Richard-Bagby"
+                },
+                {
+                    "user_id": "Gerell McCann",
+                    "user_href": "/profile/Gerell-McCann"
+                },
+                {
+                    "user_id": "Sarah Kimberly",
+                    "user_href": "/profile/Sarah-Kimberly-15"
+                },
+                {
+                    "user_id": "Jim Crusan",
+                    "user_href": "/profile/Jim-Crusan"
+                },
+                {
+                    "user_id": "Maria Zampella",
+                    "user_href": "/profile/Maria-Zampella"
+                },
+                {
+                    "user_id": "Meti Mts",
+                    "user_href": "/profile/Meti-Mts"
+                },
+                {
+                    "user_id": "Edgar Faulk",
+                    "user_href": "/profile/Edgar-Faulk-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alistair Urie",
+                "href": "/profile/Alistair-Urie"
+            },
+            "answer_text": "A cell phone selects and \u201cpings\u201d a base station whenever it wants to go from IDLE to Connected mode. At a technical level the ping is a Random Access Channel (RACH) message. It will do this for a wide range of reasons including: Answering a network page (incoming call, etc.). Maybe a few times per hour depends upon incoming call rateOutgoing voice call. Again maybe a few per hourApplication initiated data session. This is not user initiated but rather application polling to check for messages or email. Often set to every 5 or 15 min for email.User initiated data session. Depends a lot on who the person is and what they are doing. Obviously very low rate when the user is sleeping. Very high rate for someone texting or reading and writing in QuoraLocation update. Networks configure devices to periodically update their location. Maybe a few times per dayLocation update when crossing location boundaries. Devices also initiate signalling when crossing a location area zone. This is essential to make the paging system workNote also that some of these events are skipped if the phone is ready Connected for another reason. If you are interested then read some of the key system specifications from 3GPP. ",
+            "date": "Updated February 25, 2019",
+            "views": "10",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Brittany Barry",
+                    "user_href": "/profile/Brittany-Barry-13"
+                },
+                {
+                    "user_id": "Maria Zampella",
+                    "user_href": "/profile/Maria-Zampella"
+                },
+                {
+                    "user_id": "Kagiso Moikanyane",
+                    "user_href": "/profile/Kagiso-Moikanyane"
+                },
+                {
+                    "user_id": "Aloiamoa Anesi Jr",
+                    "user_href": "/profile/Aloiamoa-Anesi-Jr"
+                },
+                {
+                    "user_id": "Daryl Mccullough",
+                    "user_href": "/profile/Daryl-Mccullough-3"
+                },
+                {
+                    "user_id": "Joe Maldonado",
+                    "user_href": "/profile/Joe-Maldonado-11"
+                },
+                {
+                    "user_id": "Harish AG",
+                    "user_href": "/profile/Harish-AG-3"
+                },
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                },
+                {
+                    "user_id": "Praveen Kumar",
+                    "user_href": "/profile/Praveen-Kumar-5837"
+                },
+                {
+                    "user_id": "Daksh Malhotra",
+                    "user_href": "/profile/Daksh-Malhotra-27"
+                }
+            ]
+        }
+    ]
+}

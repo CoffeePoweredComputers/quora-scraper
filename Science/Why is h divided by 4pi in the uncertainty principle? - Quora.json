@@ -1,0 +1,80 @@
+{
+    "title": "Why is h divided by 4pi in the uncertainty principle? - Quora",
+    "tags": [
+        "Heisenberg Uncertainty Principle"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Hardis",
+                "href": "/profile/Jonathan-Hardis"
+            },
+            "answer_text": "There are two ways to interpret the question. One is: Why is the constant h-bar over two? The other is that you\u2019re fussing over just the 2 Pi part, or the other factor of 2, because some back-of-the-envelope derivations that you\u2019ve seen in a textbook don\u2019t get it quite right. Heisenberg\u2019s uncertainty principle is just the Fourier Transform in disguise. You know it from other places as well, like: If you want to transmit data faster (e.g., a shorter period of time in which you express a particular bit), you need to have more bandwidth. AM radio sounds really crappy (in 10 kHz bandwidth), but FM radio sounds much better (in 200 kHz bandwidth). There\u2019s a very nice book by Leon Brillouin (who\u2019s name is well known by solid state physicists for another reason) called Science and Information Theory. Science and Information Theory: Second Edition (Dover Books on Physics): Leon Brillouin: 9780486497556: Amazon.com: Books One of the things that I remember about this book is that Brillouin riffs on physicists who can\u2019t get the 2 Pi right in the uncertainty principle. Electrical engineers would never have such trouble, he says! He then picks apart the NTSC television signal\u2014the standard before digital HDTV\u2014and shows that for that number of scan lines (525, vertically), and for that many lines of resolution (something like 350, horizontally), it requires 6 MHz of bandwidth\u2014which is exactly how wide TV channels actually are. So, how is television connected to quantum mechanics? Drawing a white dot on the old TV screen entailed turning the electron gun on and off for a brief period of time (delta t). The limiting resolution of the white dot (horizontally) was how quick delta-t could be. A smaller delta-t required a larger delta-f, where delta-f is the bandwidth of the signal. It\u2019s beginning to look like the uncertainty principle now \u2026 right? The connection to quantum mechanics is that energy is proportional to frequency, with the Planck constant as the proportionality factor. Voila \u2026 the delta-E x delta-t uncertainty principle! (Okay, so I glossed over a few steps. Read the book.) ",
+            "date": "Answered July 14, 2017",
+            "views": "33",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aditya Dahiya",
+                    "user_href": "/profile/Aditya-Dahiya-52"
+                },
+                {
+                    "user_id": "Rik Sinha",
+                    "user_href": "/profile/Rik-Sinha-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jack Fraser",
+                "href": "/profile/Jack-Fraser-11"
+            },
+            "answer_text": "I can\u2019t think of a better way to demonstrate where each term comes from, than simply to prove the uncertainty principle - so here we go. I have copied the proof of the Uncertainty Principle from my answer to this: Jack Fraser's answer to Can we conclude the Heisenberg Uncertainty principle is a physical conjecture with no proof mathematically or physically?  Proof of the uncertainty principle for any two operators [math]\\hat{A}[/math], [math]\\hat{B}[/math] Given the postulate of quantum mechanics: To every observable in classical mechanics there corresponds a linear, Hermitian operator in quantum mechanics. Define the operators [math]\\hat{F}[/math] and [math]\\hat{G}[/math] as: [math]\\hat{F} = \\hat{A} + \\langle \\hat{A} \\rangle[/math] [math]\\hat{G} = \\hat{B} + \\langle \\hat{B} \\rangle[/math] Where [math]\\langle \\hat{A} \\rangle = \\langle \\psi |\\hat{A}|\\psi \\rangle[/math] is the usual expectation value notation. Hence, we then define: [math]|\\Phi \\rangle = (\\hat{F} + i\\cdot s \\cdot \\hat{G})|\\psi \\rangle[/math] The definition of the inner product gives that [math]\\langle \\Phi|\\Phi \\rangle \\geq 0[/math] and [math] \\in \\mathbb{R}[/math] We therefore have: [math]\\langle\\psi | (\\hat{F} - i\\cdot s \\cdot \\hat{G})(\\hat{F} + i\\cdot s \\cdot \\hat{G})|\\psi \\rangle \\geq 0[/math] Which expands to [math]\\langle \\hat{F}^2 \\rangle + s^2 \\langle \\hat{G}^2 \\rangle + i s \\langle [\\hat{F},\\hat{G}] \\rangle \\geq 0[/math] Where [math][\\hat{A}, \\hat{B}][/math] represents the usual commutator of the operators. We then note that we required this to be [math]\\in \\mathbb{R}[/math], which means that [math]\\langle [\\hat{F},\\hat{G}] \\rangle[/math] must be purely complex - i.e. [math]\\langle [\\hat{F},\\hat{G}] \\rangle = i q, q\\in \\mathbb{R}[/math] Hence: [math]\\langle \\hat{F}^2 \\rangle + s^2 \\langle \\hat{G}^2 \\rangle - q s \\geq 0[/math] Since this has to be true no matter what the value of s is, the quadratic must fail to have any valid solutions in the reals. Since, from the quadratic formula: [math]s = \\frac{q \\pm \\sqrt{q^2 - 4\\langle \\hat{F}^2 \\rangle \\langle \\hat{G}^2 \\rangle}}{2 \\langle \\hat{G}^2 \\rangle}[/math] This means: [math]q^2 - 4\\langle \\hat{F}^2 \\rangle \\langle \\hat{G}^2 \\rangle \\leq 0[/math] Which rearranges to: [math]4\\langle \\hat{F}^2 \\rangle \\langle \\hat{G}^2 \\rangle \\geq q^2[/math] So now we ask - what do [math]\\langle \\hat{F}^2 \\rangle[/math] and [math]\\langle \\hat{G}^2 \\rangle[/math] mean? Well, expanding in terms of it\u2019s original definition: [math]\\langle \\hat{F}^2 \\rangle = \\langle (\\hat{A} - \\langle \\hat{A} \\rangle)^2\\rangle[/math] Well, we note that this is simply the definition of the variance of A, or in other words: [math]\\langle \\hat{F}^2 \\rangle = \\sigma_A^2[/math] Which means, after rearranging, we get: [math]\\sigma_A \\sigma_B = \\frac{1}{2} |~~\\langle ~[\\hat{A},\\hat{B}]~ \\rangle~~ |[/math] This is the general uncertainty principle for any two operators A and B.  If you want, you can then prove that [math][\\hat{x}, \\hat{p}] = i \\hbar[/math] Which then gives: [math]\\sigma_x \\sigma_p = \\frac{1}{2} |\\langle i \\hbar \\rangle |[/math] [math]\\sigma_x \\sigma_p = \\frac{\\hbar}{2}[/math] This is the specific Heisenberg uncertainty principle  So, you can see that the factor of [math]\\frac{1}{2}[/math] comes from the general identity, and then you get a factor of [math]\\hbar = \\frac{h}{2 \\pi}[/math] from the commutator [math][\\hat{x},\\hat{p}][/math] ",
+            "date": "Answered December 8, 2016",
+            "views": "93",
+            "upvotes": " View 46 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sara Mathew",
+                    "user_href": "/profile/Sara-Mathew-59"
+                },
+                {
+                    "user_id": "Priyatosh Pradhan",
+                    "user_href": "/profile/Priyatosh-Pradhan-9"
+                },
+                {
+                    "user_id": "Aditya Dahiya",
+                    "user_href": "/profile/Aditya-Dahiya-52"
+                },
+                {
+                    "user_id": "Sitaram Kumawat",
+                    "user_href": "/profile/Sitaram-Kumawat-31"
+                },
+                {
+                    "user_id": "Darin Gates",
+                    "user_href": "/profile/Darin-Gates"
+                },
+                {
+                    "user_id": "Aradhay Sharma",
+                    "user_href": "/profile/Aradhay-Sharma-1"
+                },
+                {
+                    "user_id": "Subham Das",
+                    "user_href": "/profile/Subham-Das-60"
+                },
+                {
+                    "user_id": "Raju Kumar",
+                    "user_href": "/profile/Raju-Kumar-1415"
+                },
+                {
+                    "user_id": "Patrick Gono",
+                    "user_href": "/profile/Patrick-Gono"
+                },
+                {
+                    "user_id": "Rik Sinha",
+                    "user_href": "/profile/Rik-Sinha-3"
+                }
+            ]
+        }
+    ]
+}

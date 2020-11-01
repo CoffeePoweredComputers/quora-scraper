@@ -1,0 +1,41 @@
+{
+    "title": "What is the exact or total differential equation (9x^2 + y -1)-(4y-x) y' = 0? - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations",
+        "Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marco Biagini",
+                "href": "/profile/Marco-Biagini-1"
+            },
+            "answer_text": "Solve 9 x^2 - ( dy(x))/( dx) (-x + 4 y(x)) + y(x) - 1 = 0: Rewrite the equation: -1 + 9 x^2 + y(x) + (x - 4 y(x)) ( dy(x))/( dx) = 0 Let P(x, y) = 9 x^2 + y - 1 and Q(x, y) = x - 4 y. This is an exact equation, because (dP(x, y))/(dy) = 1 = (dQ(x, y))/(dx). Define f(x, y) such that (df(x, y))/(dx) = P(x, y) and (df(x, y))/(dy) = Q(x, y). Then, the solution will be given by f(x, y) = c_1, where c_1 is an arbitrary constant. Integrate (df(x, y))/(dx) with respect to x in order to find f(x, y): f(x, y) = integral(9 x^2 + y - 1) dx = -x + 3 x^3 + x y + g(y) where g(y) is an arbitrary function of y. Differentiate f(x, y) with respect to y in order to find g(y): (df(x, y))/(dy) = d/(dy)(-x + 3 x^3 + y x + g(y)) = x + ( dg(y))/( dy) Substitute into (df(x, y))/(dy) = Q(x, y): x + ( dg(y))/( dy) = x - 4 y Solve for ( dg(y))/( dy): ( dg(y))/( dy) = -4 y Integrate ( dg(y))/( dy) with respect to y: g(y) = integral-4 y dy = -2 y^2 Substitute g(y) into f(x, y): f(x, y) = 3 x^3 - x - 2 y^2 + y x The solution is f(x, y) = c_1: 3 x^3 - x - 2 y^2 + y x = c_1 Solve for y: y(x) = 1/4 (x - sqrt(24 x^3 + x^2 - 8 x - 8 c_1)) or y(x) = 1/4 (x + sqrt(24 x^3 + x^2 - 8 x - 8 c_1)) Simplify the arbitrary constants: Answer: y(x) = 1/4 (x - sqrt(24 x^3 + x^2 - 8 x + c_1)) or y(x) = 1/4 (x + sqrt(24 x^3 + x^2 - 8 x + c_1)) ",
+            "date": "Answered June 26, 2020",
+            "views": "205",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "[math](9x^2 + y - 1) - (4y - x) y' = 0[/math] Yes, this is an exact differential equation. [math]M(x, y) dx + N(x, y) dy = 0, \\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}[/math] [math]F(x, y) = C[/math] is the answer.  Solve this differential equation using the method of exact equations. [math](9x^2 + y - 1) - (4y - x) \\frac{dy}{dx} = 0[/math]  Show the Differential Equation is Exact First write it out in differential form, the standard form to solve exact equations. [math](9x^2 + y - 1) dx + (x - 4y) dy = 0[/math] [math]M(x, y) = (9x^2 + y - 1), \\frac{\\partial M}{\\partial y} = 1[/math] [math]N(x, y) = (x - 4y), \\frac{\\partial N}{\\partial x} = 1[/math] Clearly, the differential equation is exact.[math]\\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x} = 1[/math]  Find the solution function [math]F(x, y)[/math]. First, integrate with respect to [math]x[/math]. [math]\\frac{\\partial F}{\\partial x}(x, y) = M(x, y) = (9x^2 + y - 1)[/math] [math]F(x, y) = 3x^3 + xy - x + g(y)[/math] There is an arbitrary function [math]g(y)[/math] instead of a constant of integration. Differentiate with respect to [math]y[/math], and set it equal to [math]N(x, y)[/math]. [math]\\frac{\\partial F}{\\partial y}(x, y) = N(x, y)[/math] [math]x + g'(y) = (x - 4y) \\iff g'(y) = (x - 4y) - x[/math] Now, integrate [math]g'(y)[/math] to get [math]g(y)[/math]. This completes the general solution. [math]g(y) = \\int g'(y) dy = \\int (-4)y dy = (-2)y^2 + A[/math] The general solution is [math]F(x, y) = C[/math]. [math]F(x, y) = 3x^3 + xy - x + ((-2)y^2 + A) = B[/math] [math]F(x, y) = 3x^3 + xy - x - 2y^2 = C, C = (B - A)[/math]  Answer The general solution is [math]F(x, y) = C[/math]. [math]3x^3 + xy - x - 2y^2 = C[/math] ",
+            "date": "Answered July 3, 2020",
+            "views": "105",
+            "upvotes": " Answer requested by Risala Hadia Guna"
+        },
+        {
+            "author_info": {
+                "name": "Kwok Choy Yue",
+                "href": "/profile/Kwok-Choy-Yue"
+            },
+            "answer_text": " ",
+            "date": "Answered June 26, 2020",
+            "views": "128",
+            "upvotes": " View Sharers "
+        }
+    ]
+}

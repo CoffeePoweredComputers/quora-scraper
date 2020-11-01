@@ -1,0 +1,42 @@
+{
+    "title": "A fair coin is tossed five times. What is the probability that it lands head-up at least twice? (I found it on Kaplan SAT subject test book) - Quora",
+    "tags": [
+        "Probability Puzzles",
+        "Probability Distributions",
+        "Coin Flipping",
+        "Homework",
+        "SAT (Scholastic Assessment Test)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Wolff",
+                "href": "/profile/Richard-Wolff-6"
+            },
+            "answer_text": "Since it\u2019s a fair coin, both heads (H) and tails (T) have probability p = 0.5. After tossing it five times, we have 2^5 = 32 different possible outcomes. This also considers the order in which they appear (which doesn\u2019t matter to us). You can read \u201cat least\u201d also as probability = 1 - p(H=0) - p(H=1). In this case this calculation is simpler than p(H=2) + p(H=3) + p(H=4) + p(H=5), but they both yield the same result. In order to calculate the result for this simple example we actually can just count all 32 results and see what fits. HHHHH; THHHH, HTHHH, HHTHH, HHHTH, HHHHT; TTHHH, THTHH, THHTH, THHHT, HTTHH, HTHTH, HTHHT, HHTTH, HHTHT, HHHTT; TTTHH, TTHTH, TTHHT, THTTH, THHTT, THTHT, HTTTH, HTTHT, HTHTT, HHTTT; TTTTH, TTTHT, TTHTT, THTTT, HTTTT; TTTT; I felt it\u2019s important to do this, because none of the previous answers had this result. So after counting up you see that the answer is 26/32 = 81.25%. But it\u2019s also important to understand the calculation behind it. In this case we call the calculation to be carried out \u201cbigger number: total flips\u201d Choose (C) \u201cshorter number: flips we are interested in\u201d, so \u201cTotal\u201d Choose \u201cSelection\u201d. In this case we have 5 flips total, and as we look at p(H=0) we see that there is only 1 combination 5C0 with zero \u201cH\u201d (5 Choose 0) and for p(H=1) there are 5 different combinations for 1 \u201cH\u201d 5C1 (5 Choose 1). cf. your calculator for this function \u201cC\u201d. What does it do? It selects all the possible combinations to position them, which is 1x2x3x4x5 = 5! and then looks at combinations that have the same number of \u201cH\u201d, but a different order. Possible results of 5C0 = 5! / 0! x (5\u20130)! = 5! / 1 x 5! = 1 Possible results of 5C1 = 5! / 1! x (5\u20131)! = 5! / 1 x 4! = 5 Possible results of 5C2 = 5! / 2! x (5\u20132)! = 5! / (2 x 3!) = 4 x 5 / 2 = 10 Due to axial symmetry the results of 5C3 = 10, 5C4 = 5, 5C5 = 1 result accordingly. If you now calculate the probabilities, we have either 1 - 1/32 -5/32 = 26/32 or also the longer route for 10/32 + 10/32 + 5/32 + 1/32 =26/32. We get the same result as above with p = 81.25% ",
+            "date": "Answered March 29, 2017",
+            "views": "48",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shayan Lodhi",
+                    "user_href": "/profile/Shayan-Lodhi-1"
+                },
+                {
+                    "user_id": "Robert Nicol",
+                    "user_href": "/profile/Robert-Nicol"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alexander Kdota",
+                "href": "/profile/Alexander-Kdota"
+            },
+            "answer_text": "The probability of getting heads up on a single flip is 50% (1/2) The probability of getting one heads up on two flips is 25% (1/4) The probability of getting one heads up on three flips is 12.5% (1/8) The probability of getting one heads up on four flips is 6.25% (1/16) The probability of getting one heads up on five flips is 3.125%. (1/32)\u2014\u2014 it's very unlikely for you to get one heads up out of 5 coin flips I say since a coin is always 50% (half and half) we have to consider the probability of how many times can we get heads out of five flips- the more likely and non luck based answer is surprisingly 50% ( 16/32) I say it's safe to say you have a 4 out of 32 chance of getting 2 heads out 5flips- it's very unlikely ",
+            "date": "Answered August 22, 2018",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

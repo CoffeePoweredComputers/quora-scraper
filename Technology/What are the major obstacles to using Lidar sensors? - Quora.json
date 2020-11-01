@@ -1,0 +1,61 @@
+{
+    "title": "What are the major obstacles to using Lidar sensors? - Quora",
+    "tags": [
+        "LIght Detection and Ranging",
+        "Obstacles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bill Otto",
+                "href": "/profile/Bill-Otto-5"
+            },
+            "answer_text": "Let\u2019s say that you want to use a lidar sensor to for a 3D map of an area, for example under a tree canopy to detect military assets or dug activity. First you need an infrared light source (pulsed laser) that can emit short pulses (of the order of a nanosecond) at a few kilohertz (maybe up to a hundred kilohertz). You need a telescope to project the beam and another telescope to receive the return scatter. You need a photon counting detector array. This could be a Geiger mode array. You probably need for it to reset pretty quickly after a detection. You need some algorithms to sort through and identify \u201csignal\u201d photoelectrons and \u201cnoise\u201d electrons. You need software to construct a 3D image from the pixel location and the time of flight of the photons. Finally you need algorithms to sort multiple bounces from primary and secondary bounce photons. To make all this work requires a nanosecond timing clock, very fast memory, and massively parallel processing field programmable gate arrays. Nevertheless, groups like Boeing Laser and Electro-Optical Systems in Albuquerque have been successfully doing this type of works for decades. If you are trying to detect lidar to avoid a ticket, you only have a tiny window of time where you can detect the lidar before they can detect your speed. In Virgina, the detector is illegal. In any event, it is unlikely you could slow down before your speed were measured. Only on a long straight unobstructed stretch of road would you be successful. ",
+            "date": "Answered July 8, 2019",
+            "views": "367",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mikko Rantalainen",
+                    "user_href": "/profile/Mikko-Rantalainen"
+                },
+                {
+                    "user_id": "John Adler",
+                    "user_href": "/profile/John-Adler-6"
+                },
+                {
+                    "user_id": "Christopher VanLang",
+                    "user_href": "/profile/Christopher-VanLang"
+                },
+                {
+                    "user_id": "Greg Edwards",
+                    "user_href": "/profile/Greg-Edwards-78"
+                },
+                {
+                    "user_id": "Pasha Aulia Muhammad",
+                    "user_href": "/profile/Pasha-Aulia-Muhammad"
+                },
+                {
+                    "user_id": "Toby David Low",
+                    "user_href": "/profile/Toby-David-Low"
+                },
+                {
+                    "user_id": "Alex Niemeyer",
+                    "user_href": "/profile/Alex-Niemeyer-1"
+                },
+                {
+                    "user_id": "Jim Surber",
+                    "user_href": "/profile/Jim-Surber-1"
+                },
+                {
+                    "user_id": "Ira J Perlow",
+                    "user_href": "/profile/Ira-J-Perlow"
+                },
+                {
+                    "user_id": "John Mccullough",
+                    "user_href": "/profile/John-Mccullough-26"
+                }
+            ]
+        }
+    ]
+}

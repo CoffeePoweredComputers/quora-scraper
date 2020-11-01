@@ -1,0 +1,52 @@
+{
+    "title": "How to determine if a difference is statistically significant - Quora",
+    "tags": [
+        "Statistical Analysis",
+        "Statistical Significance",
+        "Statistical Hypothesis Testing",
+        "Correlations",
+        "Statistics (collected data)",
+        "Scientific Research",
+        "Data Analysis",
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wolfgang Maleck",
+                "href": "/profile/Wolfgang-Maleck"
+            },
+            "answer_text": "There are many tests, depending on sample size, and distribution (normal or not).  Let us go for a very easy task. Let us assume that an illness has a very high mortality (but not 100% per definition, we are not speaking about the guillotine, or rabies before the year 2000). You test a new remedy against the disease in a randomized test. In the untreated group, ALL patients die, and in the treated group ZERO patients die. How large must your sample be to provide evidence at the usual 0.05 level? In a two-sided test, i.e. we pretend to not knowing that the illness has a high mortality without treatment? If you test two patients, and find the the treatment saves, the untreated dies, than this result could be by chance in 50% of cases because there would be - if the treatments are equal in effect - a 50% chance for one of the arms being superior (throw two coins, and in 50% of the cases they will show the same side). With 4 patients, and the two untreated dying, the two treated surviving, such an extreme result is only 25% due to chance. With 10 patients, five untreated dead, five treated survive, the chance that one study arm is so much better goes down to 1/32, and thus to about 0.03 and would be considered significant at the usual 0.05 level: the new treatment is superior.  As this is, more or less, the most favorable situation imaginable as to significance, it follows that studies with less than 5 patients per study arm are highly suspect, although there are some borderline legitimate techniques to get at significant results with less than twice five patients (or study animals).  And of course, the same goes for other, not as drastic outcomes, such as five untreated patients vomiting, and none of the treated patients having nausea - but then, with the advantage only being avoidance of vomiting, you would have to show the absence of serious side effects, too. Which requires a much larger sample. ",
+            "date": "Answered May 22, 2020",
+            "views": "70",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sarnath K",
+                    "user_href": "/profile/Sarnath-K"
+                },
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elia Sinaiko",
+                "href": "/profile/Elia-Sinaiko"
+            },
+            "answer_text": "You assess the variance (variation) of your two samples. There are formulas for this which I have long forgotten. But simply put, say you are measuring the height of men versus women. The difference (effect size) of the means (averages) of your two groups is compared to the variation within the groups. The bigger that ratio is (between group mean difference is bigger than within groups variation) the more significant your result. Watch out for claims that a .05 (5%) error rate (or any other value) is significant and therefore the theory being tested is true. The effect sizes with these error rates, might be trivial (very small.) The testable validity of the of the question is far more important. You will need converging evidences to be confident of your theory. ",
+            "date": "Answered September 21, 2019",
+            "views": "92",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Yves Mulkers",
+                    "user_href": "/profile/Yves-Mulkers"
+                }
+            ]
+        }
+    ]
+}

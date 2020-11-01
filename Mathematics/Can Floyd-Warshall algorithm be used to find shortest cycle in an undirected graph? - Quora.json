@@ -1,0 +1,72 @@
+{
+    "title": "Can Floyd-Warshall algorithm be used to find shortest cycle in an undirected graph? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory",
+        "Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amir Hossein Shahriari",
+                "href": "/profile/Amir-Hossein-Shahriari"
+            },
+            "answer_text": "No it can't. The Floyd\u2013Warshall algorithm can be used to find the shortest cycle if and only if the graph is directed. For directed graphs the method is as Melissa explained (setting [math]dist[u][u]=\\infty[/math]). But it cannot be used in undirected graphs. Let me give you a counter example: Suppose that the graph is a tree (i.e. a connected graph with no cycles) and all edge weights are equal to 1. Obviously there is no cycle in this graph. But what does the Floyd-Warshall find? Let's say there is an edge between vertices [math]u[/math] and [math]v[/math]. Since the graph is undirected we have [math]dist[u][v]=dist[v][u]=1[/math] (look at Floyd\u2013Warshall algorithm implementation). Now at the iteration where [math]i=j=u[/math] and [math]k=v[/math] we see that [math]dist[i][k]=dist[k][j]=1[/math] and [math]dist[i][j]=dist[u][u]=\\infty [/math] so the condition [math]dist[i][j]>dist[i][k]+dist[k][j][/math] holds and it sets [math]dist[i][j]=2[/math] which is [math]dist[u][u][/math] and it reports it as a cycle including [math]u[/math]. Note that even if the graph had a cycle it's min length would be at least 3 (a triangle). The problem is that the Floyd-Warshall algorithm keeps 2 directed edges instead of each undirected edge. This is not an issue in problems like All-pairs shortest path, but in shortest cycle it is an issue since we can have a directed cycle using 2 directed edges. ",
+            "date": "Answered January 5, 2015",
+            "views": "51",
+            "upvotes": " View 26 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel R. Page",
+                    "user_href": "/profile/Daniel-R-Page"
+                },
+                {
+                    "user_id": "Naman Sharma",
+                    "user_href": "/profile/Naman-Sharma-966"
+                },
+                {
+                    "user_id": "Kiran Sai",
+                    "user_href": "/profile/Kiran-Sai-48"
+                },
+                {
+                    "user_id": "Farhan Hasin",
+                    "user_href": "/profile/Farhan-Hasin-2"
+                },
+                {
+                    "user_id": "VISHAL ARYA",
+                    "user_href": "/profile/VISHAL-ARYA-101"
+                },
+                {
+                    "user_id": "Mahir Shahriyar Sezan",
+                    "user_href": "/profile/Mahir-Shahriyar-Sezan"
+                },
+                {
+                    "user_id": "Chirag Shah",
+                    "user_href": "/profile/Chirag-Shah-201"
+                },
+                {
+                    "user_id": "F\u00e9lix Moreno Pe\u00f1arrubia",
+                    "user_href": "/profile/F\u00e9lix-Moreno-Pe\u00f1arrubia"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/AMOGH-KULKARNI-20"
+                },
+                {
+                    "user_id": "Jeff Erickson",
+                    "user_href": "/profile/Jeff-Erickson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jay Chu",
+                "href": "/profile/Jay-Chu-28"
+            },
+            "answer_text": "I feel so sorry that any answer to this question present here at this moment is wrong and misleading. TL,RD: Yes, Floyd-Warshall algorithm (and also Dijkstra algorithm) can be used to find shortest cycle in both directed graphs and undirected graphs. For directed graphs, set each dist[i][j] to infinite. Run Floyd-Warshell and the answer is min(dist[i][i] for i in vertices_set). Proved in other answers and proof can also be easily found on the internet. For undirected graphs, note that the outer most loop variable (say, k) means \u201cOnly vertices with an index smaller or equal to k can be used as medium vertices in the route between the points the other inner two loop variables (say, i and j) represent\u201d. So, consider the shortest circle now and suppose the max index of vertices in it is W, and the two points next to it is U and V. Then when the first time k loops to W, the circle length can be calculated as dist[U][V] + edge_length[U][W] + edge_length[W][V]. Thus gives us a O(N^3) algorithm. Original Chinese post about this idea: \u6700\u5c0f\u73af - OI Wiki ",
+            "date": "Answered September 24, 2020",
+            "views": "45",
+            "upvotes": "0"
+        }
+    ]
+}

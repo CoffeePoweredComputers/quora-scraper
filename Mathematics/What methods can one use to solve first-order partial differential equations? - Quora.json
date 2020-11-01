@@ -1,0 +1,49 @@
+{
+    "title": "What methods can one use to solve first-order partial differential equations? - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aaron Dunbrack",
+                "href": "/profile/Aaron-Dunbrack-1"
+            },
+            "answer_text": "There are two main (general) methods I am aware of. Both work by reducing the PDE to one or more ODEs. \u2014\u2014 Separation of variables would work for linear equations. This works as follows: Suppose you have your equation; e.g.,  (subscripts mean partial derivatives w.r.t. those indices. First, we will find a \u201cspecial\u201d . Plug in:  Divide the whole equation by  to get  Note that the left-hand side does not depend on , so neither does the right-hand side. Similarly, the right-hand side does not depend on , so neither does the left-hand side. (Recall that  and  are independent variables.) Therefore, neither side can depend on any variable, and so both must be equal to a constant, . Thus,  and . Solving these ODEs produces the solution  Now, note that sums over different (/integrals ) of  still produce solutions; more generally, linear combinations still produce solutions. Thus, one can write down some more general possible solutions. For  some arbitrary constants (for distinct ) and  an arbitrary function (for continuous ):   Now, obviously, you need to fit to boundary and/or initial conditions, etc. But that\u2019s a pretty general way of solving linear ODEs. Some general remarks: This also works for second-order or higher PDEs, and even for some non-constant coefficient PDEs of appropriate forms.You can do this in more variables, but you do it in an iterated way: first put one variable on one side, and the other variables on the other side. Solve the one side as an ODE; on the other side, you have a new PDE (some expression equals a constant). Try solving that again [it\u2019s already separated!] and see what you can do with it, etc. - rinse and repeat.Working with the boundary conditions is the hard part, and forms a general theory in itself. A lot of special functions emerge through this. Fourier series and spherical harmonics are of particular note. Also worth noting is that these boundary conditions often constrain what your constant can be - e.g., in Fourier series with particular boundary conditions, they can often only give particular frequency sine waves (thus must be at particular values).I make no claim your equations will have unique solutions - that\u2019s something you have to prove separately. However, if your equation has a solution (for your boundary condition), this will help find it (albeit usually as an infinite sum - so check convergence!)\u2014\u2014 Alternative: The way I learned for first-order is the method of characteristics. This way works for linear and some non-linear first-order PDEs. I\u2019ll take  as my general example. Admittedly, this example is slightly limited because it is linear in the first-order derivatives (but not in the base, un-differentiated function ). However, this is fully general for such equations in two variables, since you can divide out whatever initial coefficient you had on , provided it is not identically zero. The \u201cpicture\u201d will be as follows. Suppose  is some measurable quantity of [1-d] position and time, like \u201cconcentration of some chemical in a pipe.\u201d That\u2019ll be our physical scenario. The initial distribution will be . Then, we will proceed to solve using the following method. We will set up a network of \u201csensors\u201d which initially cover our space. These sensors will move around over time, in some (TBD) way. Suppose we can keep track of what concentration a particular sensor sees (purely as a function of time) and which sensor will be where at what times. Then, for a given position and time, we can calculate  by first asking what sensor is at position  at time , then asking what value of  that sensor sees at that time. [Disclaimer: I\u2019d suggest reading this, then reading the example, then coming back and re-reading the general theory once you have a sense of it - or finding another source, depending - because it\u2019s quite a complicated method, which is why it is fairly powerful.] Now, to solve that equation. Consider a function  (which will be the position of a single sensor) such that , for  the solution we\u2019re looking for. What happens when we plug  into the expression? Well, we derive:  Note that the left-hand side is actually the total derivative of  (using the chain rule), so you can now write down a system of ODEs:   So now we have two ODEs which solve for  and  as functions of , given initial conditions  and . Recall we have an initial condition  such that . Then, we have  for our initial conditions. Now, let us consider what we have done so far. We suppose we have a \u201csensor\u201d located at a particular point at any particular time, which traces out the path . Then, if it measures , it will measure  - which we now have a system of ODEs with an initial condition for! So we\u2019ve reduced our PDE to a system of ODEs - \u201cvastly simpler\u201d (although still a difficult problem). I\u2019ll now specialize, for convenience (since general ODEs are hard), to the case when these equations decouple:  is only a function of  and , and  is only a function of  and . (This is so that I can deal with the ODEs separately.) Then, considering the  differential equation, we can find  (the solution to the differential equation, dependent on the initial position). This is asking: \u201cIf a sensor starts at , where does it end up at time ? Now, what if we invert this? Let\u2019s suppose we can find , the initial condition dependent on the position and time - inverting the above equation. This is thus asking: \u201cif a sensor is at position  at time , what was its initial position ?\u201d Let\u2019s pretend for the sake of argument we can find that. Let\u2019s also suppose we have  from the first ODE of the pair (where, recall, ). Now, we have a series of increasingly complicated expressions which gives us an answer at the end:  There! We have our answer in terms of  and  now. \u2014 Let me consider a concrete example to solve by the method of characteristics. Let  and . Now, our PDE is:  Now, we want that ; i.e., giving . Therefore, our \u201csensor\u201d will be moving exponentially outward from the origin. We also know that ; i.e., the sensor observes a constant value. Thus,  (the  will be the same as its initial value, according to the sensor). Invert: . Thus:  Hooray, we solved our sample problem in terms of the initial condition ! Recall our steps: we found how the sensors were moving by computing  and what they were measuring by computing . For a given  and , we found where the sensor that ended up there started, by calculating . We then had all the information we needed: for a given , we knew its initial position, and therefore knew what  it would measure later, when it was at the position  (although that step was trivial, since ). This is the general procedure [if the two ODEs are independent, as I chose for simplicity; if not, then you have to solve them simultaneously, however you do that.] Again, a few caveats/extensions: More (space) variables is relatively easy: just turn the -derivative into a gradient. You\u2019ll get a more complicated expression (a larger system of ODEs), but it\u2019s the same theory.You might run into a few complications, especially for nonlinear problems. Sometimes, there will be no characteristics at a location; sometimes, there will be multiple characteristics (these both occur when you cannot invert to find , due to lack of surjectivity and injectivity respectively). These produce so-called rarefaction waves and shock waves, respectively. In order to understand these, you need to learn the theory of weak solutions. The former naively produces non-uniqueness, so you have to impose additional conditions (entropy conditions); the latter produces discontinuities, which require their own way of working with them (which is apparently not, the case of interacting shock waves, generally fully understood - it\u2019s a problem of active research!). I\u2019ll leave it to you to read about those issues on your own time, though.",
+            "date": "Answered July 8, 2017",
+            "views": "394",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Droffner",
+                    "user_href": "/profile/Andrew-Droffner"
+                },
+                {
+                    "user_id": "Rajan Rambabu",
+                    "user_href": "/profile/Rajan-Rambabu"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joe Dinius, PhD",
+                "href": "/profile/Joe-Dinius-PhD"
+            },
+            "answer_text": "Numerically or analytically? Numerically, you can use stencils (finite differences) in space and time. These are based on the Taylor expansion of functions about the current solution point. Analytically, you can see if separation of variables works. ",
+            "date": "Answered July 7, 2017",
+            "views": "132",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Gatik Patel",
+                    "user_href": "/profile/Gatik-Patel"
+                }
+            ]
+        }
+    ]
+}

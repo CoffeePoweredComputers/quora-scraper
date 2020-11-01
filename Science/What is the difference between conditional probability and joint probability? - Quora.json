@@ -1,0 +1,113 @@
+{
+    "title": "What is the difference between conditional probability and joint probability? - Quora",
+    "tags": [
+        "Conditional Probability",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Simon Batzner",
+                "href": "/profile/Simon-Batzner-1"
+            },
+            "answer_text": "Let me try an intuitive approach: you are interested in the probability that a person crossing a street gets hit by a car in dependence of the color of the traffic light. We have two variables in this: H = {hit, not hit}C={green, yellow, red} - the color of the traffic lightYou\u2019re crossing the street while the traffic light is red. The conditional probability that you get hit in this case is the probability P(H=hit|C=red), i.e. given that the light is red, how high is the chance that you will get hit by a car. The joint probability on the other hand, is P(H=hit, C=red), i.e. the probability that the light is red and you get hit by a car. The essential difference between the two is that in for the joint case, you are looking at all different combinations of (H, C) and assign them probabilities, you are in the universe of all possible scenarios, i.e. looking at all people crossing the street. The case {hit, red} is one of these. In the conditional case on the other hand, you\u2019re only interested in what happens under the assumption that the light is red, i.e. you are now in a universe in which the light is always red and there remain only two cases: you get hit or you don\u2019t. In other words, you are only observing the people crossing the street while the light is red. Let\u2019s bring in some numbers: say the light is red about 40% of the time, and if you cross the street while the light is red, there is a 60% chance you get hit by a car. The conditional probability describes how likely it is that you get hit if the light is red, that is just the 60% specified in the question. We can compute the joint probability using two steps: first, we step into the universe of a red light, chances for that are 40%. Second, we now need to take into account, how likely it is that we actually get hit by a car in the red-light-universe: that is 60%. This gives: P(H=hit, C=red) = P(C=red) * P(H=hit|C=red) (this was taken in analogy to: intuitive difference between joint probability and conditional probability in this example) ",
+            "date": "Answered September 20, 2017",
+            "views": "143",
+            "upvotes": " View 62 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Oishee Eerada",
+                    "user_href": "/profile/Oishee-Eerada"
+                },
+                {
+                    "user_id": "Aman Savaria",
+                    "user_href": "/profile/Aman-Savaria"
+                },
+                {
+                    "user_id": "Kundan Kumar",
+                    "user_href": "/profile/Kundan-Kumar-81"
+                },
+                {
+                    "user_id": "Abhishek Pandey",
+                    "user_href": "/profile/Abhishek-Pandey"
+                },
+                {
+                    "user_id": "Gerard Blais",
+                    "user_href": "/profile/Gerard-Blais"
+                },
+                {
+                    "user_id": "Mujeeb Rehman",
+                    "user_href": "/profile/Mujeeb-Rehman-243"
+                },
+                {
+                    "user_id": "Ashwini Kodlimath",
+                    "user_href": "/profile/Ashwini-Kodlimath"
+                },
+                {
+                    "user_id": "Thuy Duong Nguyen Dang",
+                    "user_href": "/profile/Thuy-Duong-Nguyen-Dang-1"
+                },
+                {
+                    "user_id": "Kunduz Efronova",
+                    "user_href": "/profile/Kunduz-Efronova"
+                },
+                {
+                    "user_id": "Bilal Bayrakdar",
+                    "user_href": "/profile/Bilal-Bayrakdar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "Joint probability is a measure of how likely it is that two (or more) things will both occur.  For example, if you roll two dice, what is the probability of getting a six on the first and a four on the second?   Conditional probability is a measure of how likely one thing is to happen if you know that another thing has happened.  For example, what is the probability that that the second die shows a four if the sum of the numbers on the two dice is ten?  Once I know that the sum is ten, it turns out that it is far more likely that the second die is a four than if I knew nothing about the sum. ",
+            "date": "Answered October 9, 2015",
+            "views": "107",
+            "upvotes": " View 40 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ifty Mohammad Rezwan",
+                    "user_href": "/profile/Ifty-Mohammad-Rezwan"
+                },
+                {
+                    "user_id": "Vida Tonkova",
+                    "user_href": "/profile/Vida-Tonkova"
+                },
+                {
+                    "user_id": "Hrushikesh Joshi",
+                    "user_href": "/profile/Hrushikesh-Joshi-11"
+                },
+                {
+                    "user_id": "Arianna Stefani",
+                    "user_href": "/profile/Arianna-Stefani-1"
+                },
+                {
+                    "user_id": "Asha Lyngdoh",
+                    "user_href": "/profile/Asha-Lyngdoh"
+                },
+                {
+                    "user_id": "Rebeen Ali",
+                    "user_href": "/profile/Rebeen-Ali"
+                },
+                {
+                    "user_id": "Nurul Quamar Khan",
+                    "user_href": "/profile/Nurul-Quamar-Khan-1"
+                },
+                {
+                    "user_id": "Hayley Atwood",
+                    "user_href": "/profile/Hayley-Atwood"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/\u0421\u0435\u0440\u0433\u0435\u0439-\u0421\u0435\u0440\u0433\u0435\u0439-6"
+                },
+                {
+                    "user_id": "Furqan Khawaja",
+                    "user_href": "/profile/Furqan-Khawaja-1"
+                }
+            ]
+        }
+    ]
+}

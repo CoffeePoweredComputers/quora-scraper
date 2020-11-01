@@ -1,0 +1,29 @@
+{
+    "title": "Why we used 2as=v2-u2 in kinetic energy rather than remaining two equation of motion? - Quora",
+    "tags": [
+        "Kinetic Energy",
+        "Energy (physics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rizky Maulana Nugraha",
+                "href": "/profile/Rizky-Maulana-Nugraha"
+            },
+            "answer_text": "TL;DR; versionI'm not sure how to answer this, but the term \"Kinetic Energy\" means an amount of energy an object have that is stored in its momentum/motions/kinetic. So it makes sense if we express the equation to consists mainly of velocity. It is not useful to put variable t or s, because we want to calculate that energy from just the velocity information. Intuitive approximation answer The approach being used to derive Kinetic Energy equation described in High School is usually involves some approximations. For example, using Energy-Work conservation principle, we know that the amount of work done to a system is equal to the change of energy. If we only have Kinetic Energy being calculated and the work is caused by a constant force, then: [math]\\Delta{E_k}=W[/math]  [math]\\Delta{E_k}=F\\Delta{s}[/math] [math]\\Delta{E_k}=ma\\Delta{s}[/math] From this point onwards, we decide to replace a and s with only velocity dependent variable. Fortunately, we got the perfect equation. We got rid a, s, and t in one fell swoop. Assuming  that a is constant, we got [math]2as=v_f^2-v_i^2[/math] [math]\\Delta{E_k}=\\frac{1}{2} m(v_f^2-v_i^2)[/math] Thus: [math]E_k=\\frac{1}{2} mv^2[/math]  Calculus-based answer More bad ass approach involving some integrations. Also using Energy-Work conservation principle. But now, we work on an infinitesimal change of time [math]dt[/math], we observe an infinitesimal change of kinetic energy caused by the work done along an infinitesimal path [math]ds[/math] by force F. [math]dE_k=F\\cdot ds[/math] [math]dE_k=mads[/math] We know, that a is a derivative of v with respect to t. thus: [math]dE_k=m\\frac{dv}{dt}ds[/math] Using chain rule, we got: [math]dE_k=mdv\\frac{ds}{dt}=mvdv[/math]  Integrating both sides, we will get the same result: [math]\\Delta{E_k}=\\frac{1}{2} m(v_f^2-v_i^2)[/math] Thus: [math]E_k=\\frac{1}{2} mv^2[/math] ",
+            "date": "Answered April 11, 2016",
+            "views": "952",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Naveen Sundar",
+                    "user_href": "/profile/Naveen-Sundar-21"
+                },
+                {
+                    "user_id": "Ajinkya Kottawar",
+                    "user_href": "/profile/Ajinkya-Kottawar"
+                }
+            ]
+        }
+    ]
+}

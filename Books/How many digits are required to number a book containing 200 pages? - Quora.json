@@ -1,0 +1,89 @@
+{
+    "title": "How many digits are required to number a book containing 200 pages? - Quora",
+    "tags": [
+        "Mathematical Puzzles",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chris Golden",
+                "href": "/profile/Chris-Golden-15"
+            },
+            "answer_text": "To simultaneously over-complicate and simplify the process for finding the digits required to number any number of pages, I decided to spend an embarrassing amount of time developing a universal equation that nobody is likely to use. Here it is: D = ((P-p)N)+d) Meaning, D (current number of digits needed) is equal to the current number of pages needed (P), minus the number of pages possible in the previous (p) decimal range (meaning, if we\u2019re currently looking at a double digit number, p refers to what the number of max pages was in single digit (so, in this case, p would equal 9), multiply by number of current decimal places (meaning, if we\u2019re using a double digit number, N would be 2, triple digit would be 3, and so on), and add the total digits needed to compute the max number of pages at the previous decimal place\u2019s range (so with a double digit number, we would look back at single digit, which happens need 9 digits to represent 9 pages, so this value would be 9). So, we\u2019ll use 12 as the example. D = ((12-9)2)+9) D = (3)2)+9) D = (6 + 9) D = 15 Now, let\u2019s use 111 as the example. D = ((111-99)3)+189) D = (12)3)+189) D = (36+189) D = (225) Now, if you\u2019re unsure of where I got 189 from, just test out how many digits would be needed to number the max amount of pages in the previous decimal range (double digit). D = ((99-9)2)+9) D = (90)2)+9) D = (180)+9) D = 189 Of course, though it\u2019s a bit silly, this equation can be used for single digits as well (otherwise I would\u2019ve thrown it out \u2013 as I did countless times today) Let\u2019s use 4 as an example. D = ((4-0)1)+0) D = (4)1)+0 D = 4 Remember, p and d are zero since there is no previous decimal range to refer to. Page numbers only make sense when referred to as whole integers starting from 1. So this equation does not have to account for fractions or decimals below the ones place. No matter what size number of pages you need to find D for, you can always back up until you find a range you\u2019re comfortable with, then find the max of that range, jump up to the next, and so on until you get to size number you need. ",
+            "date": "Answered October 8, 2016",
+            "views": "8",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Siddhant Chiring",
+                    "user_href": "/profile/Siddhant-Chiring"
+                },
+                {
+                    "user_id": "Daman Virdi",
+                    "user_href": "/profile/Daman-Virdi-3"
+                },
+                {
+                    "user_id": "Tomasz Tarczy\u0144ski",
+                    "user_href": "/profile/Tomasz-Tarczy\u0144ski"
+                },
+                {
+                    "user_id": "Priyanka Paul",
+                    "user_href": "/profile/Priyanka-Paul-216"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sivaranjini Senthilvel",
+                "href": "/profile/Sivaranjini-Senthilvel"
+            },
+            "answer_text": "492 digits are required. If your book has no preface pages and foreword pages numbered by Roman numerals,then the answer is 492.  To number 200 pages we need numbers 1-200 which includes 9 one digit numbers(1-9),90 two digit numbers(10-99) and 101 (100-200)three digit numbers. The number of digits required to number pages 1-9: 1*9 = 9 since they are all one digit numbers. The number of digits required to number pages 10-99 : 90*2 (since they all are two digit numbers)= 180 The number of digits required to number pages 100-200 : 101*3(since they all are 3 digit numbers)= 303Total number of digits required to number all the 200 pages: 303+180+9=492 ",
+            "date": "Answered June 23, 2016",
+            "views": "412",
+            "upvotes": " View 46 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Victoria Edwards",
+                    "user_href": "/profile/Victoria-Edwards-173"
+                },
+                {
+                    "user_id": "Santoshi Suru",
+                    "user_href": "/profile/Santoshi-Suru"
+                },
+                {
+                    "user_id": "Harsha Varthini Harsha Varthini",
+                    "user_href": "/profile/Harsha-Varthini-Harsha-Varthini"
+                },
+                {
+                    "user_id": "Priyanshu Gupta",
+                    "user_href": "/profile/Priyanshu-Gupta-214"
+                },
+                {
+                    "user_id": "Indian Asmr",
+                    "user_href": "/profile/Indian-Asmr"
+                },
+                {
+                    "user_id": "Malappa Salotagi",
+                    "user_href": "/profile/Malappa-Salotagi"
+                },
+                {
+                    "user_id": "Aprajita Aprajita",
+                    "user_href": "/profile/Aprajita-Aprajita-2"
+                },
+                {
+                    "user_id": "Ayan Maity",
+                    "user_href": "/profile/Ayan-Maity-5"
+                },
+                {
+                    "user_id": "Needhu Kumaran",
+                    "user_href": "/profile/Needhu-Kumaran"
+                },
+                {
+                    "user_id": "Pravin Antony Raj",
+                    "user_href": "/profile/Pravin-Antony-Raj"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "title": "Will the Raspberry Pi 4 support Ubuntu 20.10? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Ubuntu (operating system)",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chris Bailey",
+                "href": "/profile/Chris-Bailey-364"
+            },
+            "answer_text": "There are a number of problems with this question: Raspberries use ARM chipsets and therefore an instruction set other than desktop chipsets like Intel or AMD. So, you can\u2019t just take over Ubuntu from desktop to your Raspberry. That\u2019s not how it works.20.10 is an intermediate release between long-term releases, that is only supported for 9 months. As a normal user you shouldn\u2019t use it at all. As a desktop user you should stick with the long-term support releases. Even though, those show many glitches these days, that\u2019s your safest bet as a user with Ubuntu. You should only use the short-term releases as a system developer. Given the nature of the question, you shouldn\u2019t use it.Ubuntu does run on Raspberries but is very limited. It looks nice on the surface, but when I used it on ARM, it didn\u2019t even come with basics like an image viewer. Ubuntu is quite limited. There are better options. Raspbian is obviously one of them. Another one and the one I use most would be Arch Linux for ARM chipsets. Next to another few that come with solid support and feature sets.So, it might be available for Raspberries or it might not be. But be it as it may, it\u2019s a poor choice. It\u2019s Ubuntu, it\u2019s short-term and it\u2019s not for production use. The nature of the question doesn\u2019t exactly suggest, that you are an Ubuntu system developer for either Raspberries OR desktop. So, the recommendation has to be, to use a better option. ",
+            "date": "Answered June 10, 2020",
+            "views": "467",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lee Mauriac",
+                    "user_href": "/profile/Lee-Mauriac"
+                },
+                {
+                    "user_id": "Afonso Klein",
+                    "user_href": "/profile/Afonso-Klein"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Afonso Klein",
+                "href": "/profile/Afonso-Klein"
+            },
+            "answer_text": "There\u2019s a comprehensive answer to this question, by Chris Bailey, which enlightened my understanding of the subject, but I want also to indicate that Ubuntu Server 20.04 LTS seems to be fully supported on Raspberrry PIs, as you can see on this page: Install Ubuntu Server on a Raspberry Pi 2, 3 or 4 | Ubuntu If you choose so, after downloading, writing the image to a SD card, booting the Pi, configuring\u2026 , you can then install one of the available desktop interfaces. I did that some time ago, and I had problems with Gnome and/or KDE. Perhaps LXDE or some other lightweight should work better. But you\u2019re at your own risk! ",
+            "date": "Answered June 11, 2020",
+            "views": "266",
+            "upvotes": " Answer requested by Brhett Friedrich"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "title": "What is the best way to share screen via Wi-Fi? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bart Loews",
+                "href": "/profile/Bart-Loews"
+            },
+            "answer_text": "There are dozens of solutions. First, ditch the Wi-Fi label, Wi-Fi is just the layer 1 protocol you're using any screen sharing tool can be used over any networked medium. First I'll talk about 3rd party solutions. These you'll need to connect to a third party to initialize the call, some are free, some aren't.  If your business has this, Microsoft Lync (they've rebranded it as Skype for business) is one of the coolest collaboration tools I've used. It turns your computer into an IP phone that you can use to make telephone calls, video calls, meetings, presentations, etc, and it's all incredibly easy to use.  Speaking of which Screen Sharing | Skype, Skype has this feature for free also.With google hangouts you can screen share: Share your screen or present during a HangoutLog me in was a great tool I used a while back, but it's not free, thought you can get a free trial: Remote Access and Remote Desktop Software for Your Computer (join.me) Free Screen Sharing and Online Meetings is a good meeting and screen sharing tool, works with Mac and PCEasy Online Meetings With HD Video Conferencing (gotomeeting) and GoToAssist  are Citrix's solutions, they come with at least a free trial.I'd be remiss if I left out one of the screen sharing originals: WebEx: Sign Up for Cisco WebEx Meetings Basic or PremiumNow for the ones that I know of that operate within a network: RealVNC\u00ae remote access & control software for desktop and mobile One of the first ones out there lets you control a desktop as the user and the user can watch. Can be secured so that only certain people can use the remote connection.  This is what apple uses by default. The huge advantage to this one is that there is no centralized cloud based service that you have to connect to, you just connect to the PC you want to control.If you just need to access a desktop and not share it, Windows comes with Remote Desktop, you enable this under system settings.  This is usually used for administering servers, accessing your office computer from home, or utilizing a Virtual Desktop Infrastructure (you have commodity desktops that act as thin clients to your actual computer which is a virtual desktop in the office).  You use remote desktop client to connect to the server or desktop in question. Sometimes you might use a website on the server to initialize the connection if you're using terminal services proxy or a VDI.  Just like VNC, you don't need to connect to a 3rd party service, just directly to the machine...the problem here is that you can't see what's going on on the computer you're playing with, the screen get's locked on desktops and servers can have multiple sessions.For windows there's also remote assistance, which is pretty complicated to set up since it's a very dangerous feature: Set up & use Windows Remote Assistance in Windows 8.1 if you don't know what you're doing.These are all the ones that I can think of that I've used before, there are pros and cons to all of them, but it really depends on what your exact needs are.  If you need something cheap and secure, I'd use VNC or Remote Desktop for windows...RDP is encrypted by default, the latest iteration is pretty secure in transit. Make sure that you read up on how to secure VNC before running with it, the last time I played with it it was unencrypted by default and only required a simple password to gain access to the machine, I imagine it's improved since then, but make sure to follow best practices, especially if you're using it over wifi. ",
+            "date": "Answered June 2, 2015",
+            "views": "11",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Cameron Tonkery",
+                    "user_href": "/profile/Cameron-Tonkery"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anupam Mishra",
+                "href": "/profile/Anupam-Mishra-204"
+            },
+            "answer_text": "You can use MobiLock Pro remote cast feature to share your device screen on PC/Laptop.It mirrors the active screen of the device on the administrator\u2019s dashboard giving real-time information about the device\u2019s current activity. Hence, it helps to provide remote technical support to the users for the devices in Kiosk Lockdown mode.  Benefits of Remote Cast Monitor: It becomes very easy for the Admin to easily monitor the devices as RemoteCast mirrors its screen on the MobiLock dashboard. Control: RemoteCast enables access of the registered devices by the admin by which they can have better control over enterprise devices. Support: Remote support can be effortlessly extended to the registered devices as RemoteCast enables remote access and screen sharing. Find here how to install RemoteCast on your Android devices : RemoteCast Installation Steps - MobiLock Pro ",
+            "date": "Answered January 24, 2018",
+            "views": "26",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shiv Chauhan",
+                    "user_href": "/profile/Shiv-Chauhan-71"
+                },
+                {
+                    "user_id": "Nitin Soni",
+                    "user_href": "/profile/Nitin-Soni-84"
+                },
+                {
+                    "user_id": "Mike Larry",
+                    "user_href": "/profile/Mike-Larry-90"
+                },
+                {
+                    "user_id": "Vaishak Nair",
+                    "user_href": "/profile/Vaishak-Nair-15"
+                },
+                {
+                    "user_id": "Neel Patel",
+                    "user_href": "/profile/Neel-Patel-264"
+                },
+                {
+                    "user_id": "Nitin Soni",
+                    "user_href": "/profile/Nitin-Soni-76"
+                }
+            ]
+        }
+    ]
+}

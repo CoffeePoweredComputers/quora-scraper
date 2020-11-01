@@ -1,0 +1,139 @@
+{
+    "title": "Is random really random? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Randomness (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aaron Brown",
+                "href": "/profile/Aaron-Brown-165"
+            },
+            "answer_text": "There are different definitions of random, some of which are thought to apply to reality, others of which are convenient models known to be fiction. The original studies of randomness concerned games like dice and cards. These are devices manufactured by people for generating unpredictable results, but they are governed by the laws of physics and are no more random than the motions of the planets. Computer pseudo random generators are modern variants. In this case, randomness is a fiction convenient because calculations are usually too complex and too sensitive to initial conditions. It\u2019s also an artificial example, because it does not occur without human design. It is consistent with a deterministic universe. Randomness next arose in Darwin\u2019s theory, which is now usually described as random mutation plus natural selection. Natural selection was not controversial, and everyone knew that unnatural selection (a.k.a. breeding) worked. Darwin\u2019s controversial claim was that the raw material selection worked upon was not caused. Today we have some explanations for what causes mutations, but Darwin was still essentially correct in that the mutations are not caused by anything that relates to their fitness (actually, some elaborations of Darwinian evolution challenge this, but that\u2019s an empirical matter that doesn\u2019t affect the philosophic point). Thus evolutionary randomness is truly random in its biological context, even if ultimately mutations are determined by physical laws. Statistical thermodynamics was the next place randomness arose. It is controversial today whether the second law of thermodynamics is a true physical law, in which case entropy and therefore randomness is real, or just a convenient model for aggregating deterministic phenomena. Quantum physics inserted a new kind of randomness into the picture, and it also remains controversial whether it is true randomness or an illusion caused by our perceptions of reality. Bayesian theory was developed in the 1930s and posited subjective belief as the fundamental definition of randomness. Subjective beliefs are certainly real, but they don\u2019t seem to obey the mathematical rules of randomness. Nevertheless, Bayesian randomness is a real experience, even if it has deterministic underlying physical causes. Game theory required a new type of randomness. It is certainly real in the sense that it can be used to improve strategic decisions, but whether or not it is real randomness depends on your theory of consciousness and free will. ",
+            "date": "Answered February 26, 2017",
+            "views": "24",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Lier Wu",
+                    "user_href": "/profile/Lier-Wu"
+                },
+                {
+                    "user_id": "Vinay Kumar Nagubandi",
+                    "user_href": "/profile/Vinay-Kumar-Nagubandi"
+                },
+                {
+                    "user_id": "Toyen Newing",
+                    "user_href": "/profile/Toyen-Newing"
+                },
+                {
+                    "user_id": "Arjun Santhosh",
+                    "user_href": "/profile/Arjun-Santhosh-23"
+                },
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Arkadij Orlov",
+                    "user_href": "/profile/Arkadij-Orlov"
+                },
+                {
+                    "user_id": "David Friedman",
+                    "user_href": "/profile/David-Friedman-1"
+                },
+                {
+                    "user_id": "Will Ish",
+                    "user_href": "/profile/Will-Ish"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Warnock",
+                "href": "/profile/Tony-Warnock"
+            },
+            "answer_text": "The term \u201crandom\u201d has lots of meanings. Some are useful. Often, random just means \u201cunknown\u201d or \u201cunpredictable.\u201d Not bad but not very precise. Some terms \u201cRandom Variable\u201d have nothing to do with randomness; it\u2019s a synonym for \u201cMeasurable Function.\u201d One can compute (some) things such as averages by measuring \u201cenough\u201d of an object. Fortunately there are theorems which lead to procedures for doing this effectively. I like to think of this as \u201crandomness by saturation\u201d; one knows enough to get answers. There is (in physics) another type of randomness that occurs simply because of the existence of atoms and molecules. Small particles of dust or pollen can be observed to jump around rather irregularly. A botanist (Robert Brown in 1827) observed this phenomenon. It was finally described by Albert Einstein in 1905. Mathematically, the particles do not have a velocity; they are bounced around by varying numbers of atoms and molecules in a manner that seem to fit what one means by \u201crandom.\u201d One interest point is that one cannot measure the location of the particles because a small probe would be subject to the same \u201crandom\u201d collisions with molecules. (This has nothing to do Heisenberg or anything quantum mechanical; it only has to do with the existence of tiny particles.) There is one type of \u201creal\u201d randomness that occurs. Quantum mechanics has some random choices. One can\u2019t really get around this feature such attempts either predict violations of well-established experiments or they are subject to their own random choices. Sometimes, \u201crandom\u201d is used to mean \u201cunpredictable\u201d but they are distinct. Unpredictable has the hidden question of ,\u201cBy whom?\u201d There are computations whose outcome is unpredictable if one doesn\u2019t have a powerful enough computer (really, if one doesn\u2019t have enough money to pay for the computation.) A combination lock that takes more than a couple of days to open may be considered random from the point of view one trying to break in. ",
+            "date": "Answered December 26, 2018",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Darshana Ambulkar",
+                    "user_href": "/profile/Darshana-Ambulkar"
+                },
+                {
+                    "user_id": "Taha Mimarlar",
+                    "user_href": "/profile/Taha-Mimarlar-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tina Sharma",
+                "href": "/profile/Tina-Sharma-33"
+            },
+            "answer_text": "I hope you are asking this question in context to computer science. As we programmers have rand() function that has a job to generate random numbers. But those random numbers are NOT truly random. We call it as pseudo random number. That means its sufficient to have rand() function in my application that is assumed to generate sufficient randomness. You know what algorithm is called randomized algorithm? The algorithm which has at least one step which generates random number or sequence. ie algorithm uses rand() function at least once in it. But if you see the implementation of rand() function itself, it is deterministic algorithm. How can deterministic algorithm generate random numbers? That\u2019s a trick question. If you know how rand works, there is always SEED associated with each execution of rand(). As a programmer we can initialize the seed to call rand(). But if we give, say \u201cx\u201d as a seed value every time then algorithm will generate the exact same sequence of numbers every time. Then how can this be a function that generates random numbers? So to achieve at least pseudo randomness, we initialize SEED with timestamps each time of its execution. Now every time seed value will be different. Thats the reason every time the random sequence generated by the rand() will be different and we achieve pseudo randomness. ",
+            "date": "Answered April 4, 2017",
+            "views": "32",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dhruv Shah",
+                    "user_href": "/profile/Dhruv-Shah-683"
+                },
+                {
+                    "user_id": "Mohammad Jabareen",
+                    "user_href": "/profile/Mohammad-Jabareen"
+                },
+                {
+                    "user_id": "San'Quan Prioleau",
+                    "user_href": "/profile/SanQuan-Prioleau"
+                },
+                {
+                    "user_id": "Anirudh Shekhawat",
+                    "user_href": "/profile/\u0905\u0928\u093f\u0930\u0941\u0926\u094d\u0927-\u0936\u0947\u0916\u093e\u0935\u0924-Anirudh-Shekhawat"
+                },
+                {
+                    "user_id": "El Mrabet Youssef",
+                    "user_href": "/profile/El-Mrabet-Youssef"
+                },
+                {
+                    "user_id": "Dinesh Joshi",
+                    "user_href": "/profile/Dinesh-Joshi-9"
+                },
+                {
+                    "user_id": "Manoj Chavan",
+                    "user_href": "/profile/Manoj-Chavan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paulo Lameiras",
+                "href": "/profile/Paulo-Lameiras"
+            },
+            "answer_text": "Interesting question. The fact is that randomness is a relative concept. It\u2019s not a \u201cyes\u201d or a \u201cno\u201d. Not knowing or accepting this is not knowing the true meaning if randomness. So by saying this, you could actually measure randomness through the outcome frequency distribution type of a set/sequence/sample. Somethings could be proven to be more random and others less random. True randomness could not be replicated in a real physical world/scenario because there are to many variables and external factors that influence and condition the possible outcomes. Even something truly random would always have multiple possible sequences and multiple possible outcome distribution types, being that no single one of them wouldn\u2019t prove randomness 100%. A toss of a coin would be as random as you could get because it only has 2 possible outcomes (heads, tails). The more the possible outcomes the harder it is to replicate true randomness. And the bigger the number of elements in your set/sample the harder it is to prove a high degree of randomness (even considering something truly random). ",
+            "date": "Answered September 15, 2020",
+            "views": "39",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrea Sessa",
+                "href": "/profile/Andrea-Sessa"
+            },
+            "answer_text": "In probability theory? yes. In computer programming? no, you have pseudo-random numbers, for example. In computer security there are type of attack that leverages on the goodness of random number generator. If you know a bit of the TCP protocol, there is an attack called TCP hijacking. In this type of attack the attacker tries guess the Initial Sequence Number(ISN) of a TCP handshake. The ISN is chosen \u201crandomly\u201d by the computer of the victim, but if the random number generator is not too good the attacker can easily guess the ISN.  This picture report the distribution of the ISN in the IRIX operating system and you can see these \u201crandom\u201d ISN are actually clustered around a few points. You can find other pictures for other OS at: Strange Attractors and TCP/IP Sequence Number Analysis Hope this is useful! Bye! ",
+            "date": "Answered February 24, 2017",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Toby Thain",
+                    "user_href": "/profile/Toby-Thain"
+                }
+            ]
+        }
+    ]
+}

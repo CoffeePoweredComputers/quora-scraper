@@ -1,0 +1,37 @@
+{
+    "title": "What is the relationship between the threads in Java and processors? How are the threads handled by processors? Consider the scenario with 4 threads in 2 processors. - Quora",
+    "tags": [
+        "Threading (computer science)",
+        "Processors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andy Hayes",
+                "href": "/profile/Andy-Hayes-7"
+            },
+            "answer_text": "I'm not too sure if Java plays into this at all, as threading is generally handled by the OS. If you are multi-threading a high level program (Like a Java program), you must assume these things:1. The threads can and will run in a random order.2. The processor they run on is also random.3. The threads can interleave each other, or run at the same time (if you have multiple processors) When you have a thread, the Operating System Scheduler schedules the Thread to run on a processor. It will run for a small slice of time, then it will be paused, and another thread will get its chance to run (not necessarily one of yours.).  So if we take your example, (4 threads, 2 processors), it will schedule them independently. So thread 4 could run first on processor 1, then thread 2 could run for a bit on processor 1. Thread 4 could get another go on processor 1 at the same time thread 3 is on processor 2.. Or they could all run beautifully in order on 1 processor. You don't know any of this ahead of time.  With this in mind, you must take steps to prevent the threads treading on each others toes. If a thread was in the process of changing something, then that thread is paused by the OS, the next thread could come in a see the half made changes and error out. This is where mutexes come in. Java is generally regarded to have quite good concurrency. You will use Synchronized methods to ensure only one thread can be active in that method at a time. Allowing it to complete its changes before another can see the half made changes. This is a simplification of course, as concurrency is a very complex subject. So in summary, there is little relationship between threads in Java and processors. The OS handles which thread runs on which processor and when. So all you can do is plan ways to handle this fact, and test the hell out of what you've done in the hope you see the mistakes first. Because there is always hidden issues when using concurrency. ",
+            "date": "Answered November 21, 2014",
+            "views": "25",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ahmed Khalil",
+                    "user_href": "/profile/Ahmed-Khalil-119"
+                },
+                {
+                    "user_id": "Dinara Keron",
+                    "user_href": "/profile/Dinara-Keron"
+                },
+                {
+                    "user_id": "Ipsit Patra",
+                    "user_href": "/profile/Ipsit-Patra"
+                },
+                {
+                    "user_id": "Jayabal Manoharan",
+                    "user_href": "/profile/Jayabal-Manoharan"
+                }
+            ]
+        }
+    ]
+}

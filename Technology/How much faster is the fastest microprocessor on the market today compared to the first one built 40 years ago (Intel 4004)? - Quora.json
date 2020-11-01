@@ -1,0 +1,75 @@
+{
+    "title": "How much faster is the fastest microprocessor on the market today compared to the first one built 40 years ago (Intel 4004)? - Quora",
+    "tags": [
+        "Microprocessors",
+        "Intel (company)",
+        "Personal Computers",
+        "Microsoft Windows"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Antonio Luna",
+                "href": "/profile/Antonio-Luna-1"
+            },
+            "answer_text": "This one is hard to answer. I'll try to cover the basics. A in-deep analysis would be very more extensive. First, the 4004 was a 4-bit processor. It means it was able to process only 4 bits of data per instruction. 4 bits can be used to represent only 16 numbers (0 to 15).  Second, the 4004 had a really slow clock, less than 1 MHz. In order to complete an instruction it needs 8 or 16 clock cycles. Thus it's maximum throughput was less than 100,000 instructions per second. Current processors have way higher clock frequencies, around  3 or 4 GHz. However the clock frequency is not the only difference. Today's processors are usually 64-bit wide. It means that a single instruction can process a 64bit number. 64 bits can represent a wide variety of data. Talking about integer numbers it can represent from 0 to 18,446,744,073,709,551,615 (~18.44 quintillion). It can represent also floating point numbers with wider range than integers. Today's processors have lots different instructions such as instructions to process vectorial data, floating point numbers, among many others. Besides being able to process more data per instruction, it can process many instructions simultaneously (pipeline). Finally a today's processor has also many cores (individual processors) in the same package and each processor supports 1 or 2 execution threads (like 2 virtual processors). I will not jump into the math. Instead, take a look at this wikipedia list. Instructions per second. The 4004 is rated at 0.092 MIPS (millions of instructions per second) while a Haswell processor (Intel Core i7 4770k) is rated at hundreds of MIPS per second. Remember, the rating is only regarding number of instructions. Consider that a single instruction from today's processors is way more powerful than a 4004's instruction. Hope this helps to understand that while today's processors are way more powerful it's really hard to benchmark against old processors. ",
+            "date": "Answered March 29, 2014",
+            "views": "25",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Utsav Kumar",
+                    "user_href": "/profile/Utsav-Kumar-31"
+                },
+                {
+                    "user_id": "Jorge Emmanuel Ortiz Garcia",
+                    "user_href": "/profile/Jorge-Emmanuel-Ortiz-Garcia"
+                },
+                {
+                    "user_id": "Omar X. Avelar",
+                    "user_href": "/profile/Omar-X-Avelar"
+                },
+                {
+                    "user_id": "Vikram Nayak",
+                    "user_href": "/profile/Vikram-Nayak-8"
+                },
+                {
+                    "user_id": "Santosh Desiraju",
+                    "user_href": "/profile/Santosh-Desiraju"
+                },
+                {
+                    "user_id": "Garrick Saito",
+                    "user_href": "/profile/Garrick-Saito"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jon Lee",
+                "href": "/profile/Jon-Lee-6"
+            },
+            "answer_text": "I don't think any unit could properly express how much faster a CPU is today due to the number of architecture differences but if I had to choose, instructions per second (IPS or MIPS for millions of IPS) might be better than overall clock frequency.  Why? Because modern processors are pipelined, allowing for more instructions per clock cycle, vs non-pipelined architectures of the past.  Here, take a look at the list here: http://en.wikipedia.org/wiki/Instructions_per_second It even has an entry for the 4004!  The order of magnitude is pretty staggering.  That being said, boot time is much more dependant on your disk speed than your CPU speed - and disk technology has not kept up as well as semiconductor technology. Also, don't discount the fact that software complexity has grown very quickly as well. ",
+            "date": "Answered March 24, 2012",
+            "views": "21",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ron Garrett",
+                    "user_href": "/profile/Ron-Garrett-2"
+                },
+                {
+                    "user_id": "Daniel Lo",
+                    "user_href": "/profile/Daniel-Lo"
+                },
+                {
+                    "user_id": "Alexandr Isakov",
+                    "user_href": "/profile/Alexandr-Isakov"
+                },
+                {
+                    "user_id": "Garrick Saito",
+                    "user_href": "/profile/Garrick-Saito"
+                }
+            ]
+        }
+    ]
+}

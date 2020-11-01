@@ -1,0 +1,35 @@
+{
+    "title": "Which Internet protocols are the most used? - Quora",
+    "tags": [
+        "Internet Protocols",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David McKen",
+                "href": "/profile/David-McKen"
+            },
+            "answer_text": "I'm going to ignore layer1&2, also are we talking which protocol transfers the most data or is used the most times? BTW, I'm going to use the 5 layer OSI model. Layer 3 - A bit of a cheap shot but IP takes this by a landslide, IPv6 will catch and surpass eventually but that will likely take some years still. Layer 4 - As with layer 3 TCP takes this in terms of raw data throughput and individual transactions. Layer 5 - Raw throughput and transactions I would say would go to HTTP, this is mainly decided by the ubiquity of the world wide web (with some pages taking 10s of requests to load a single page, then AJAX for dynamic updates) as well as the rise of streaming in general (which is mainly http with the exception of certain protocols like YouTube's dash). In terms of transactions DNS would come in second to HTTP and theoretically should match it were it not for DNS caching (once all the assets for a web page load from the same server only one DNS query would occur). DNS is also used as the address book for quite a few other protocols in addition to http which helps it in terms of transactions. ",
+            "date": "Answered June 30, 2019",
+            "views": "264",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roberto Santocho",
+                    "user_href": "/profile/Roberto-Santocho"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aditya Raj",
+                "href": "/profile/Aditya-Raj-4125"
+            },
+            "answer_text": "IP (Internet Protocol) versions  Two versions of the Internet Protocol are in common use in the Internet today. The original version of the Internet Protocol that was first deployed in 1983 in the ARPANET, the predecessor of the Internet, is Internet Protocol version 4 (IPv4). The rapid exhaustion of IPv4 address space available for assignment to Internet service providers and end user organizations by the early 1990s, prompted the Internet Engineering Task Force (IETF) to explore new technologies to expand the addressing capability in the Internet. The result was a redesign of the Internet Protocol which became eventually known as Internet Protocol Version 6 (IPv6) in 1995.nIPv6 technology was in various testing stages until the mid-2000s, when commercial production deployment commenced. Today, these two versions of the Internet Protocol are in simultaneous use. Among other technical changes, each version defines the format of addresses differently. Because of the historical prevalence of IPv4, the generic term IP address typically still refers to the addresses defined by IPv4. The gap in version sequence between IPv4 and IPv6 resulted from the assignment of version 5 to the experimental Internet Stream Protocol in 1979, which however was never referred to as IPv5. Other versions v1 to v9 were defined, but only v4 and v6 ever gained widespread use. v1 and v2 were names for TCP protocols in 1974 and 1977, as there was to separate IP specification at the time. v3 was defined in 1978, and v3.1 is the first version where TCP is separated from IP. v6 is a synthesis of several suggested versions, v6 Simple Internet Protocol, v7 TP/IX: The Next Internet, v8 PIP \u2014 The P Internet Protocol, and v9 TUBA \u2014 Tcp & Udp with Big Addresses. Subnetworks IP networks may be divided into subnetworks in both IPv4 and IPv6. For this purpose, an IP address is recognized as consisting of two parts: the network prefix in the high-order bits and the remaining bits called the rest field, host identifier, or interface identifier (IPv6), used for host numbering within a network.[1] The subnet mask or CIDR notation determines how the IP address is divided into network and host parts. The term subnet mask is only used within IPv4. Both IP versions however use the CIDR concept and notation. In this, the IP address is followed by a slash and the number (in decimal) of bits used for the network part, also called the routing prefix. For example, an IPv4 address and its subnet mask may be 192.0.2.1 and 255.255.255.0, respectively. The CIDR notation for the same IP address and subnet is 192.0.2.1/24, because the first 24 bits of the IP address indicate the network and subnet. IPv4 address An IPv4 address has a size of 32 bits, which limits the address space to 4294967296 (232) addresses. Of this number, some addresses are reserved for special purposes such as private networks (~18 million addresses) and multicast addressing (~270 million addresses). IPv4 addresses are usually represented in dot-decimal notation, consisting of four decimal numbers, each ranging from 0 to 255, separated by dots, e.g., 172.16.254.1. Each part represents a group of 8 bits (an octet) of the address. In some cases of technical writing, IPv4 addresses may be presented in various hexadecimal, octal, or binary representations. Continue Reading\u2026 ",
+            "date": "Answered April 17, 2020",
+            "views": "262",
+            "upvotes": "0"
+        }
+    ]
+}

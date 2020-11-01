@@ -1,0 +1,40 @@
+{
+    "title": "How to find out the IP address and location out of an email - Quora",
+    "tags": [
+        "Hacking (programming style)",
+        "IP Addresses",
+        "Hackers",
+        "Computer Hacking (security)",
+        "Computer Networking",
+        "Email",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Whitla",
+                "href": "/profile/Dave-Whitla"
+            },
+            "answer_text": "Edit: I did jump to the conclusion that the question was posed out of some fear that this might be possible - as most times people ask \"can X discover my IP\" it is out of some concern. After writing this answer it occurred to me that the poster may simply want to discover their own IP despite an email account being one of the least convenient sources for that information :) Whilst there is no permanent relationship between an email address and an IP, you do create a temporal one every time you connect to your mail server to send or retrieve email. If I have your email account then it is possible  for me to determine your IP address from the headers in one of your sent emails. If you send me an email I don't even need access to your account. Depending upon the nature of the account and what degree of access I have to it I may also be able to determine your address when you connect to fetch mail. But that information alone is of little use to a malicious individual if that is what worries you. Depending upon your internet provider you may have a static or dynamically allocated IP address. If it is the latter, then by the time I know what your IP was when you last sent an email, it may have already been reassigned. Your IP address may also be non-routeable. Many carriers NAT their subscribers, making connection establishment from the outside more failure prone. I don't understand peoples' fear of others discovering their IP address. How exactly do you think Quora sent you this page now? You may be shocked to learn that every packet that leaves your computer carries your IP as the return address - it's how the remote computers are able to reply - in fact to even establish the connection allowing your request. Stop worrying about others \"discovering\" your IP. You are (metaphorically) broadcasting it to the world whenever you use the Internet. You should be more concerned about the guy/girl having access to your email in the first place, and the fact that your unencrypted messages could be stored on any number of intermediary computers on their way to their intended recipients, temporarily or indefinitely. ",
+            "date": "Answered July 24, 2016",
+            "views": "24",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dan Chien",
+                "href": "/profile/Dan-Chien"
+            },
+            "answer_text": "Yes. You can find what is the email domain name of the sender and where the geographic location is. Every smtp email has a header with lots of information. Some of them was in early day for debugging purpose. But it is very useful to find where is the sender. SMTP is point to point connection.. means Gmail send to Apple Corp. will not go to Hotmail first, then to Apple. In the header (you may need to find out how to see the whole header), there are \u201cReceived: from\u201d field. There may have many of them, and hacker can add fake one as well. The one is the last one (usually the top one, but in some case, your corp. may route email internally to your SMTP, so it may not be the last one) that your SMTP wrote (with internet IP, and other SMTP domain name). It should have the sender email domain name, and IP address. From the email domain name, you know where the email is actually from. If you got an email said it is from IRS, but the domain name is Gmail, then you known it is spoofed. Also, the IP address can tell you 1. where this IP geographic location is. 2. who is the owner of this IP. The other Received are telling you how this email being route through the internal mail services..The most important you need to look at the last one what your SMTP wrote. ",
+            "date": "Answered November 4, 2019",
+            "views": "611",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Keenan Griffin",
+                    "user_href": "/profile/Keenan-Griffin-5"
+                }
+            ]
+        }
+    ]
+}

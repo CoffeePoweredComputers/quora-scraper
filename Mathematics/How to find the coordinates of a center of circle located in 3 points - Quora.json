@@ -1,0 +1,63 @@
+{
+    "title": "How to find the coordinates of a center of circle located in 3 points - Quora",
+    "tags": [
+        "Coordinates",
+        "Circles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "The perpendicular bisectors of the line segments joining pairs of points meet at the centre. If you do this geometrically, bisect all three lines as a check on accuracy. Algebraically, Find the equation of the line through the mid-point of each line segment perpendicular to the line. Solve the resulting pair of simultaneous equations. I presume you know how to find the mid-point of a line segment, the gradient of a line perpendicular to a given line, and how to solved simultaneous equations. (You wouldn\u2019t have been asked to solve this otherwise.) The radius is the distance from the centre to any one of the given points. You should know how to calculate this. Edit: points are A(3,4), B(2,2), C(6,0). The mid-point of AB is (2.5, 3), the mid point of BC is (4, 1) and the mid point of AC is (4.5, 2). The gradients of the normals to AB, BC and AC are respectively (2\u20133)/(4\u20132) = -0.5, (6\u20132)/(2\u20130) = 2 and (6\u20133)/(4\u20130) = 0.75 so the equations of these normals are y = -0.5(x- 2.5) + 3, y = 2(x-4) + 1 and y = 0.75(x-4.5) + 2. So you have three equations (hopefully consistent) y = 4.25 - 0.5x, y = -7 + 2x, y = -1.375 + 0.75x The first two equations give 2.5x = 11.25, x = 4.5, y = 2. Check for consistency by substituting into the third equation 2 = -1.375 + 3.375 = 2. So you could solve any pair of the equations consistently. It is a good idea to do this as an error check. ",
+            "date": "Answered March 2, 2017",
+            "views": "14",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Herbert Levinson",
+                    "user_href": "/profile/Herbert-Levinson"
+                },
+                {
+                    "user_id": "Hea Jung Park",
+                    "user_href": "/profile/Hea-Jung-Park"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sang Joon Park",
+                "href": "/profile/Sang-Joon-Park-2"
+            },
+            "answer_text": "You have three points. With the circle equation being x^2 + y^2 + Ax + By = r^2 you can make three equations. (3,4) : 9 + 16 + 3A + 4B = r^2 (2,2) : 4 + 4 + 2A + 2B = r^2 (6,0) : 36 + 6A = r^2 3 variables, 3 equations. Solve. ",
+            "date": "Answered March 2, 2017",
+            "views": "647",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vaas Pascal",
+                    "user_href": "/profile/Vaas-Pascal"
+                },
+                {
+                    "user_id": "Brent Boggs",
+                    "user_href": "/profile/Brent-Boggs"
+                },
+                {
+                    "user_id": "Hea Jung Park",
+                    "user_href": "/profile/Hea-Jung-Park"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Doruk Aksoy",
+                "href": "/profile/Doruk-Aksoy"
+            },
+            "answer_text": "Suppse circle has the equation of the form (x - cx)^2 + (y - cy)^2 = R^2 where cx and cy are the x and y coordinates of the center. One option is to just plug in all the points, and solve a system of equations. (3 equations 3 unknowns) Another way to view it is, since the distance from the center to those points is always R, you can use that and use the point to point distance formula to arrive at an answer. ",
+            "date": "Answered March 2, 2017",
+            "views": "436",
+            "upvotes": " Answer requested by Hea Jung Park"
+        }
+    ]
+}

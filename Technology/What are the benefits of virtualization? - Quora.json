@@ -1,0 +1,29 @@
+{
+    "title": "What are the benefits of virtualization? - Quora",
+    "tags": [
+        "Benefits",
+        "Virtualization"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew Cooke",
+                "href": "/profile/Matthew-Cooke"
+            },
+            "answer_text": "Virtualisation typically offers a number of useful features in server environments that can then be consistently offered across different hardware/machine-types (and often across different OS\u2019s too) these include standardised security and performance monitoring, storage migration (adding, removing and moving storage and files without having to physically replug drives), Live VM migration (move a running OS and apps from old to new hardware or away from failing hardware) , VM consolidation (multiple OS+apps on a single physical machine), memory overcommitment (sharing of unused memory across VM\u2019s), Image backup and restore (backup a live machine) and cloning to replicate one machine over multiple new machines. I have probably missed a tonne of other features - you could look up the feature list of any major virtualisation software for a more extensive list. The list of features is so long and it\u2019s so likely in a server environment that you will at some point wish you had access to one or other of these features it would be much easier to ask \u201cWhy would you not use virtualisation?\u201d as the list of answers to this question is much much shorter. Perhaps if your application intensively uses a particular resources that is a pathologically bad case for the virtualisation layer from a performance perspective that is the main reason. You have an old server that is still running, prior to virtualisation becoming popular is another. Virtualisation is so popular today in server environments that it get\u2019s increasing hardware level support to mitigate a lot of the potential slowdowns. I guess if you had some other software layer that provided many of the benefits of Virtualisation you might also consider skipping it, such as if you use a host OS with a good container system. Container systems are typically lighter weight but provide less separation and protection for each instance. Virtualisation is the technology that really enabled \u201cthe cloud computing\u201d platforms of today - a seismic shift in the computing landscape made possible because operations on thousands of machines, or fleets of machines at once could all be automated in software that used to require people to mess around with disks and storage and RAID controllers and BIOS settings. Software, along with it\u2019s containing OS is able to roam around the cloud, freed from the shackles of a particular piece of hardware that could fail at any time :) If you watch the TV series, \u201cAltered Carbon\u201d - Virtualisation is like the stack technology that allows the human consciousness to avoid death by being uploaded into a new body - or even into multiple bodies at once. Of course virtualisation is currently just for software, but still it is pretty neat\u2026 ",
+            "date": "Answered February 27, 2018",
+            "views": "412",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Paul Olaru",
+                "href": "/profile/Paul-Olaru"
+            },
+            "answer_text": "For end users, virtualization isn\u2019t too useful, although it can be used (and modern versions of Windows 10 do use it) as a security feature where certain parts of memory are hidden and protected from even drivers. Sometimes you may want to experiment with Windows 7 or older, which isn\u2019t supported by modern hardware (my laptop won\u2019t boot up Windows 7\u2019s installer! Too new of a CPU\u2026). In that case installing a virtualization program and running a virtual machine is a nice thing. I use it for Windows XP. Or for random OSes on OS Development :) Server side, virtualization is immensely important. You want an extra server? Just make a new VM and rebalance how VMs are distributed among your physical servers, and go ham. You can even rent these \u201clow-power servers\u201d to others, and there are a few businesses that work on this business model. Amazon Web Services, Amazon Elastic Compute is one example. Google, Microsoft, DigitalOcean and probably others as well have enough extra compute power that they can monetize on giving out some of it. You seem to have a full machine with whichever OS you want that just runs your server software normally. Could be Linux (Linux is probably more popular nowadays in the server OSes in these small VMs), could be Windows (Windows Server used to be pretty popular and is still an important competitor). And distros, you can pick any distribution of Linux, have a VM made just for you to have full control over, ask the company hosting said VMs to give you a public IP, to have a nice firewall that only allows connections to certain ports (80 for handover, 443 for HTTPS, maybe 22 for SSH if convenient and you don\u2019t change from the secure-by-default configuration of your distro, etc) So virtual machines and virtualization has its place and in my vision it will only evolve to be better and more seamless. I wouldn\u2019t be surprised if phones 10 years from now will have hardware virtualization support or even use it to implement certain security features. ",
+            "date": "Answered April 30, 2020",
+            "views": "186",
+            "upvotes": "0"
+        }
+    ]
+}

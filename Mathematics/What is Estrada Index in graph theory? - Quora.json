@@ -1,0 +1,40 @@
+{
+    "title": "What is Estrada Index in graph theory? - Quora",
+    "tags": [
+        "Discrete Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alexander Farrugia",
+                "href": "/profile/Alexander-Farrugia"
+            },
+            "answer_text": "The Estrada index of a graph  is defined as  where  are the eigenvalues of . This definition was made by Ernesto Estrada at the beginning of this millennium. Originally, he called it \u2018the sum of the subgraph centralities\u2019. In the 2007 paper \u201cEstimating the Estrada Index\u201d, the authors suggested calling it the \u2018Estrada index\u2019 and everyone seemed to agree with this new terminology. Here\u2019s a little information about what the Estrada index of a graph actually measures. We need the ubiquitous result in algebraic graph theory stating that the  diagonal entry of  is the number of closed walks starting and ending at vertex . Here,  is the adjacency matrix of . I\u2019m going to quote Estrada\u2019s own explanation of his Estrada index, taken from his and Higham\u2019s paper \u201cNetwork Properties Revealed Through Matrix Functions\u201d. In the sequel, the notation  denotes the entry in the  row and  column of matrix . Suppose that each node (vertex) is to be assigned a number that quanti\ufb01es its \u201cwell-connectedness.\u201d A simple choice is given by the degree , which counts the number of edges involving node . We note in passing that , so the degree can be characterized through the diagonal of . The degree, however, paints a very localized picture of a node\u2019s importance; it does not distinguish between edges that connect to well-connected or poorly-connected nodes. We may interpret  as counting the number of closed walks of length two based on node . This suggests that it might also be of interest to consider how many walks of length three begin and end at node . A better-connected node should have more opportunities to form triangles . We note that the number of such length three walks is given by . Continuing this reasoning, we could argue that  , for each , provides a useful piece of information, because it counts the number of closed of walks of length  based on node . How may we combine these counts in order to obtain a single number that summarizes well-connectedness? Shorter walks are typically more important that longer walks \u2014 information is passed more quickly and e\ufb03ciently \u2014 so it is intuitively reasonable to form a length-based weighted average. Estrada and Rodriguez-Velazquez put forward this viewpoint, and suggested that the number of walks of length  could be scaled by . Recalling that  and noting that the relative ordering does not change if we add a constant, say , to each node\u2019s value, we arrive at a measure for node  of the form  where  is an identity matrix. This, of course, may be written  where  denotes the matrix exponential. This quantity was originally referred to as the subgraph centrality of node , but has since become known as the Estrada Index. After doing this, Estrada simply sums up the diagonal entries of  to obtain the Estrada index. Hence, we could say that the Estrada index is the trace of . Since the trace of a matrix is equal to the sum of its eigenvalues, the definition  follows. ",
+            "date": "Answered December 23, 2016",
+            "views": "12",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Martin Gale",
+                    "user_href": "/profile/Martin-Gale-8"
+                },
+                {
+                    "user_id": "Tanya Jeffries",
+                    "user_href": "/profile/Tanya-Jeffries-2"
+                },
+                {
+                    "user_id": "Lev Kruglyak",
+                    "user_href": "/profile/Lev-Kruglyak"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Dominic Mills",
+                    "user_href": "/profile/Dominic-Mills-6"
+                }
+            ]
+        }
+    ]
+}

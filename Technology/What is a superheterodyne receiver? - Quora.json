@@ -1,0 +1,62 @@
+{
+    "title": "What is a superheterodyne receiver? - Quora",
+    "tags": [
+        "Electronics Engineerng",
+        "Communication Systems",
+        "Electronics and Communication Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Logan Bishop-Van Horn",
+                "href": "/profile/Logan-Bishop-Van-Horn"
+            },
+            "answer_text": "A superheterodyne receiver[1] is a receiver for AM (amplitude modulated) or FM (frequency modulated) radio-frequency (RF) signals. A superhet has four main components: Amplifier(s): increases the amplitude of input signalFrequency mixer(s): \u201cmultiplies\u201d two signals togetherFilter(s): blocks certain ranges of frequenciesLocal oscillator(s): provides a signal with known frequency and amplitude Suppose you have a signal, with carrier frequency MHz. MHz is pretty high, and you likely want to do something with the signal (digitize it, demodulate it, etc.). It sure would be easier to work with a MHz signal instead, wouldn\u2019t it? Here\u2019s where the superheterodyne receiver comes in. First, we can use an RF filter (high pass, low pass, or bandpass) to block frequencies far from the MHz we are interested in (Hz noise, other RF noise from different radio sources, etc.).Then, since RF signals picked up with an antenna are often quite small (V) , we can amplify the signal.Next, we use a mixer to multiply two signals together: our input signal and a known RF signal from the local oscillator (LO). A mixer takes two sinusoidal signals as inputs: one with frequency (=MHz) in our case, and the other with frequency  (hence the \u201chetero\u201d [i.e. \u201cdifferent\u201d] part of superheterodyne). The circuit\u2019s output is a superposition of sinusoidal signals, one with frequency  and the other with frequency . (This is a real-world application of the trig identity )Typically, we will want to \u201cpick\u201d the lower-frequency portion of the output signal, , and discard the higher-frequency portion. A low pass filter is used to block the higher frequency portion.After mixing and filtering, the signal has been attenuated by at least a factor of 4 (a factor of 2 from the 1/2 in the trig identity, and factor of 2 from filtering out the high frequency component), so we\u2019ll want to amplify it once again. If we chose MHz, we would now have the desired MHz carrier frequency. Better yet, the mixing has preserved the modulation of the original signal.If necessary, we can perform steps 3\u20135 again, this time with a lower local oscillator frequency to further \u201cmix down\u201d the carrier frequency. This may be desirable if we want to filter out all but a very narrow range of frequencies.After we\u2019ve mixed the signal down as much as we want, we can then digitize, demodulate, or otherwise process the now much easier to handle low-frequency signal.This type of receiver is obviously used quite a bit in radio (audio) applications, but it\u2019s useful elsewhere as well. In my research (RF penetration depth measurements of superconductors in high magnetic fields), we typically use a superheterodyne receiver with two stages of mix-filter-amplify. The \u201csignal\u201d we are after is a change in frequency  of a self-resonant circuit. The \u201ccarrier frequency\u201d, i.e. resonant frequency of the circuit, is typically around MHz, and the \u201csensitivity\u201d of the measurement is given by . Now,  is typically on the order of kHzMHz, so without a superheterodyne receiver, our sensitivity would be on the order of , not very good. However, with a superheterodyne, we can essentially make  as small as we like (as long at it\u2019s bigger than ), while keeping  unchanged, meaning we can achieve sensitivity , while at the same time filtering out lots of noise at other frequencies. Footnotes[1] Superheterodyne receiver",
+            "date": "Updated January 13, 2017",
+            "views": "47",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jaya Priya",
+                    "user_href": "/profile/Jaya-Priya-151"
+                },
+                {
+                    "user_id": "Moha Engineer",
+                    "user_href": "/profile/Moha-Engineer"
+                },
+                {
+                    "user_id": "Muhammad Akhtar",
+                    "user_href": "/profile/Muhammad-Akhtar-186"
+                },
+                {
+                    "user_id": "Shreedhar Shekhar",
+                    "user_href": "/profile/Shreedhar-Shekhar-1"
+                },
+                {
+                    "user_id": "Sharon Shelton",
+                    "user_href": "/profile/Sharon-Shelton-20"
+                },
+                {
+                    "user_id": "Soham Shreeram Lakhote",
+                    "user_href": "/profile/Soham-Shreeram-Lakhote"
+                },
+                {
+                    "user_id": "Akash Kumar",
+                    "user_href": "/profile/Akash-Kumar-4849"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/SARONA-VISHNOI"
+                },
+                {
+                    "user_id": "Subbu Padala",
+                    "user_href": "/profile/Subbu-Padala-2"
+                },
+                {
+                    "user_id": "Sahil Usmani",
+                    "user_href": "/profile/Sahil-Usmani"
+                }
+            ]
+        }
+    ]
+}

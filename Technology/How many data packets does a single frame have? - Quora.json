@@ -1,0 +1,21 @@
+{
+    "title": "How many data packets does a single frame have? - Quora",
+    "tags": [
+        "Video Processing",
+        "Image Processing",
+        "Data",
+        "Data Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Charlie Stobert",
+                "href": "/profile/Charlie-Stobert"
+            },
+            "answer_text": "A \u201cframe\u201d (which is an Ethernet data link layer, a.k.a. layer 2, Protocol Data Unit or PDU) contains one (and only one) higher layer protocol data unit. This is usually an Internet Protocol \u201cpacket\u201d (IP packet). This packet, in turn, contains all of the PDUs of the layers above it. In the case of IP, this is usually (but not always) the TCP PDU (called a \u201csegment\u201d). The segment contains a payload of the application data (whichever application or service it happens to be), and it\u2019s the job of TCP to deliver that data to the application in question reliably. ",
+            "date": "Answered November 13, 2018",
+            "views": "231",
+            "upvotes": "0"
+        }
+    ]
+}

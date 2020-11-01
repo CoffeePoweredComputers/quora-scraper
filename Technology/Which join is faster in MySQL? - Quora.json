@@ -1,0 +1,47 @@
+{
+    "title": "Which join is faster in MySQL? - Quora",
+    "tags": [
+        "MySQL Performance",
+        "PostgreSQL",
+        "PHP MySQL",
+        "MS SQL Server (product)",
+        "Databases",
+        "MySQL",
+        "SQL",
+        "PHP (programming language)",
+        "Database Systems",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Cliff Crerar",
+                "href": "/profile/Cliff-Crerar"
+            },
+            "answer_text": "It\u2019s not so much about what join is faster as it is about the datatype of the column you are using to form the bind is. Numeric data join much better than strings. A relationship defined on the join columns, meaning one is a primary key and the other a foreign key. A relationship is like a prepared join ready to be invoked. Indexed column also join a lot faster than unindexed columns. Columns where nulls are allowed, join slower than columns where there are no gaps in the data. Then there is the question of, are the keys you are using for the join composed or computed from more than one column. Many factors play a role when evaluating the performance of a database join. But least of all the type of join. If a relationship is predefined between two relations, there is naturally an index on at least the primary key. In contrast joining two on string fields on where the length is inconsistent and no indexes have been defined. Before the database can start processing the actual join it must first index the columns and then attempt to join them. This the reason why database design should never be neglected when developing a database. ",
+            "date": "Answered July 11, 2019",
+            "views": "815",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nithin Krishna",
+                    "user_href": "/profile/Nithin-Krishna-37"
+                },
+                {
+                    "user_id": "Vivek B",
+                    "user_href": "/profile/Vivek-B-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Geoffrey Hoffman",
+                "href": "/profile/Geoffrey-Hoffman"
+            },
+            "answer_text": "The fastest join in MySQL is the one that has indexes on all the columns specified in your where clause, the same one that doesn\u2019t have functions like substring and concat in your where clause, the same one that uses integer columns for the join and not varchar columns in your where clause, the same one that doesn\u2019t have range lookups by date if you can use precalculated primary keys. If you mean right vs left vs inner vs outer, the answer is it depends on many factors, including, but not limited to all of the above, plus table size, plus current db workload. ",
+            "date": "Answered July 31, 2019",
+            "views": "456",
+            "upvotes": " Answer requested by Vivek B"
+        }
+    ]
+}

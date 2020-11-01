@@ -1,0 +1,29 @@
+{
+    "title": "How to find whether a polygon lies within other polygon or not - Quora",
+    "tags": [
+        "Polygons",
+        "Geometry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shiva Sitaraman",
+                "href": "/profile/Shiva-Sitaraman"
+            },
+            "answer_text": "Hmm. Very interesting problem. So let's define it. You are given two polygons A and B, and you need to find if A lies in B. The immediate response that was triggered in my mind was, using the concepts of Circumcircle/Circumscribed Circle. Refer to the following:Circumcircle of a Regular Polygon Let C(polygon) represent the circumcircle.  For any given polygon, there will be a unique circumcircle. C1 = C(A),C2 = C(B) If radius of C1 is less than that of C2, then it is safe to say that A lies within B. You might think, A and B need not be regular always. I think it does not matter.  Proof: The circumcircle depicts the outermost reach of a polygon (if you get what I mean), and if the circumcircle of the inner polygon has a smaller radius than the circumcircle of the outer polygon, it is certain that the inner polygon lies inside the outer polygon. Let me know if you need some illustration. Hoping for a healthy discussion. A very good question indeed! Cheers! ",
+            "date": "Answered June 8, 2015",
+            "views": "250",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Herberth Diestro",
+                "href": "/profile/Herberth-Diestro"
+            },
+            "answer_text": "You are given two polygons A and B, and you need to find if A lies in B. Polygon A is a set of [math]a_i[/math] points [math](x_{ai},y_{ai})[/math]A={[math]a_1, a_2, a_3, \\dots, a_n[/math]} Polygon B is a set of [math]b_j[/math] points [math](x_{bj},y_{bj})[/math]B={[math]b_1, b_2, b_3, \\dots, b_m[/math]} If A lies in B, then every [math]a_i[/math] point must be inside B.To compute that you may use this solution: Given coordinate of a polygon and a point. How do I compute if the point is located inside the polygon? ",
+            "date": "Answered January 16, 2017",
+            "views": "41",
+            "upvotes": "0"
+        }
+    ]
+}

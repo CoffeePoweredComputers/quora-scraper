@@ -1,0 +1,78 @@
+{
+    "title": "Can true wireless charging ever be achieved? What will be the pros and cons of such a technology? - Quora",
+    "tags": [
+        "Inductive Charging",
+        "Battery Chargers",
+        "Wireless Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": " We have true wireless charging. We\u2019ve had it for awhile\u2026 like, since before I was born. When I was a kid, I had an electric toothbrush that charged, wirelessly, in its stand. The good news here: unlike previous electric toothbrushes, this one didn\u2019t plug directly into 110/220V power\u2026 kind of not what I want in my mouth. The bad news was that the first GE toothbrushes with wireless charging, as early as 1959 I believe, held enough charge for maybe 2\u20133 toothbrushings.  This used basic magnetic induction: an AC signal goes though a coil (in electronics, a device called an inductor) in the base, creating a varying magnetic field. Another coil, in the toothbrush, now becomes a coil of wire in a moving electric field, and current starts to flow in that coil. That\u2019s an alternating current that the charging circuit in the toothbrush will rectify to direct current and apply to charge the toothbrush\u2019s battery.  Pretty much all of today\u2019s systems using inductive charging, just like that toothbrush from the 1960s. The problem here is energy loss. Any normal electromagnetic energy drops off as the square of the distance it\u2019s travelling \u2014 this is called the inverse square law. But there is a trick used in radio that can help. If you take a perfect antenna that radiates the same in every direction, that\u2019s said to be a 0dBi antenna, and power out of that antenna will go everywhere, but drop off pretty fast. But if I don\u2019t send that energy everywhere, but restrict it in just one direction, I get what\u2019s called an antenna gain. Some very high gain Yagi antennas can offer a 20dBi gain. So the signal effectively gets a huge boost before being transmitted out and falling off at the usual inverse square rate. The problem is that make the transmission very focused\u2026 it\u2019s aimed precisely at a small target. That\u2019s not going to work if you want even medium-range wireless charging, say, a charger that could get every phone on your conference table. Ok, sorry, just kidding\u2026 I did say magnetic energy, didn\u2019t I? Power dropping off from a monopole will obey the inverse-square law, but inductive systems are dipolar, and the power actually drops off with the inverse-cube of the distance! The reason you\u2019re dropping your iPhone directly on top of charging pad is because of this. Standard Qi inductive charging is near-field charging only. Even a few extra millimeters is going to dramatically affect the coupling efficiency.  But again, the radio world already has a solution, which is already used on your local cellphone tower and in some of the new 802.11ac hotspots: beamforming. Basically, rather than have a very high gain antenna, a transmitter will have a large number of normal antennas that can vary their phase very accurately, creating a phased array. Timing this just so, a set of small antennas can form a directional beam just like a big directional antenna, with the same inherent gain, but it can be pointed anywhere. And sure enough, there\u2019s a company working on that, using the Qi standard for charging, that\u2019s getting at least medium-range charging out of it. Maybe not the whole conference table, but all the phones put near the charger, rather than trying to all sit on the charger. See: Pi can wirelessly charge your phone from a short distance. Beating the Inverse-Square Law Ok, you can\u2019t possibly defeat the Inverse-Square/Cube Law. But you can boost the power of your signal up so high, form a beam so narrow, that it might seem to be doing that. What\u2019s really happening is that you\u2019re getting more of the energy delivered to your device\u2019s antenna, less to the rest of the world. This works because the inverse-square law isn\u2019t really about power loss\u2026 it\u2019s about power spreading. The area over which the energy from your device spreads is what is following the inverse square law. If the width of the beam at your device is smaller than the receiving antenna, you\u2019re not losing much energy. Another recent trick being employed by some systems, including the popular Qi standard, is a thing called magnetic phase synchronous coupling, or Resonant inductive coupling. This is a particularly low-loss means of coupling for wireless energy transfer. Some folks at MIT conducted a project in 2006 that delivered power to a 60W light bulb via 20 inch coils across a distance of 7 feet with 45% efficiency. So sure, you\u2019re losing 55% of the energy, but with a standard inductive charger, you\u2019d drop too much power in 7\u2033 to be of any use. So that IS progress. And oh-by-the-way, those folks went on to found a company called WiTricity, commercializing medium-range power delivery via magnetic phase synchronous coupling\u2026 they claim they\u2019re getting a million times more efficiency in transmission than a non-resonant inductive system. So given that this question is unqualified, I don\u2019t know the exact definition the OP has for \u201ctrue wireless charging\u201d, given that we\u2019ve truly had it for decades. Longer distance will be real, but it\u2019s not as if mankind really needs a way to waste an additional 25% or 50% of all the power we generate. At least not yet. So hopefully, this is used sparingly and only where it\u2019s really useful. Update: Someone Is Releasing a System Ok, so it does look like a company, Ossia (Ossia: Proven Wireless Power Technology You Can Use Today) is at least talking with technology companies about their wireless system, which seems to be a high frequency resonant system with beamforming \u2014 they claim 100 antennas in the transmitter, which ought to let them deliver a really tight focus to a receiver. That said, they are not claiming to beat physics, which is good. The system can deliver a 3W charge to devices very close to it, reduced to \u201cmilliwatts\u201d for devices further away.  The basic Cota Tile transmitter is a replacement for a ceiling tile, which has fairly limited applications, it\u2019s huge, but they claim about two of these will cover a 3000sqft house. They\u2019ll probably have something less weird at some point, but being on the ceiling gives it the advantage of not being quite so easily blocked by furniture, pets, people, etc.  And they also have this: wirelessly recharged AA batteries. Do I want there? Well, the basic design means there\u2019s a batetry and a whole wireless charging system in every battery. So their capacity as stand-alone will suck. But how about your AA-powered TV remote control. That has batteries that maybe last a year or more. That slow charge rate, even from a distance, is good enough to basically make your remote, my several battery powered Nest Protect fire alarms, etc. immortal, with batteries only being replaced as the internal cell fails. So I think, if you\u2019re expecting this to charge your phone, it probably fails compared to a close-up charger. But I also have a few lithium-cell powered IoT devices, which run maybe two years on a battery. If I could drop in a CR123 or whatever replacement battery and mostly never worry again about replacing batteries (and when I did, the Cota system would warn me about future battery failure long before the devices would), I would be interested. Over all, it probably can\u2019t be a cost savings thing. But measured against decades, they might be offering an overall cleaner solution, environmentally, even given the 10x or so power needed for remote nodes. It does mean fewer batteries in landfills. It\u2019s interesting to me, when you\u2019re looking at micropower. See more here: Ossia Debuts Next-Gen Cota\u00ae Tile at CES 2018, This Wireless Charging 'Forever Battery' Will Never Die Dave Does the Math And from the comments, it\u2019s clear that some readers are just not getting this. Or the fact that when the manufacturers speak of wireless charging, they are speaking of just the device, not that you\u2019ll magically eliminate any wire anywhere near the phone. Again, micropower IoT is not the same thing, but so many folks think about wireless power throught the house in terms of their phone, we need to look there. Some have asked why charging can\u2019t be like Wifi, and just work anywhere in the room. Here\u2019s a good example of why. Your typical Wifi access point transmits are sending at a power level o 20dBm = 100mW\u2026 that\u2019s the power going into the antenna. And sure, you can get higher power radios, I had a 500mW device in my old, very large house, but even that\u2019s not legal in every country. Your phone, your laptop, any other wireless device will work just dandy with a received signal at -60dBm, or 0.000001mW. There is no problem in losing all that energy between devices just to send information. If your device could live on microwatt power, day to day, you\u2019d be spending 10x-100x the power to charge it, but that would at least be doable. At 100mW \u2014 the power going into the antenna on your WiFi device \u2014 it would take about five to six days to charge your average smartphone with a 100% efficient power reciver. That\u2019s of course completely silly, since that wouldn\u2019t even beat the use-rate of the power from your phone. At 0.000001mW, it would take well over a million years to charge your smartphone\u2026 and that\u2019s ignoring the 2\u20133% self-discharge rate of Li-ion cells per month. As mentioned, there have been some schemes like magnetic phase synchronous coupling matched with beamforming that essentially follows you around with a tightly focused beam of power\u2026 if it\u2019s just you. Each additional device is going to make the system less efficient, and you\u2019re already talking about paying 2x, 4x, maybe even more in practical systems to get a charge to fly maybe a meter or so through the air. So now think about this\u2026 to charge my phone in an hour, the power brick I have plugged in will be delivering about 12W of power. To shoot that through the air a meter or so, I\u2019ll need something like 48W, maybe a bit more, maybe that\u2019s enough. You don\u2019t want to go too high\u2026 we have another device that throws energy into the air at high frequencies, but usually more like 500W or more. It\u2019s called a microwave oven. And before you cry foul, consumer microwaves operate in the 2.4GHz band. The exact same RF band occupied by Wifi and Bluetooth. And the same band WiTricity chose to send energy across that meter\u2019s gap. I already have eight different wireless systems in my house at 100mW or less\u2026 not sure I want a 50W-100W transmitter or two in every room. ",
+            "date": "Updated October 18, 2019",
+            "views": "293",
+            "upvotes": " View 168 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jacob Jayan",
+                    "user_href": "/profile/Jacob-Jayan"
+                },
+                {
+                    "user_id": "Sreejith Vijaykumar",
+                    "user_href": "/profile/Sreejith-Vijaykumar-1"
+                },
+                {
+                    "user_id": "Arjun Sahdev",
+                    "user_href": "/profile/Arjun-Sahdev-3"
+                },
+                {
+                    "user_id": "George Vardoulias",
+                    "user_href": "/profile/George-Vardoulias"
+                },
+                {
+                    "user_id": "Ankit Khurapati",
+                    "user_href": "/profile/Ankit-Khurapati"
+                },
+                {
+                    "user_id": "Pramodya Thilakarathna",
+                    "user_href": "/profile/Pramodya-Thilakarathna"
+                },
+                {
+                    "user_id": "Tony K. Tran",
+                    "user_href": "/profile/Tony-K-Tran"
+                },
+                {
+                    "user_id": "Aditya Ranganath",
+                    "user_href": "/profile/Aditya-Ranganath-1"
+                },
+                {
+                    "user_id": "Sandip Dev",
+                    "user_href": "/profile/Sandip-Dev-1"
+                },
+                {
+                    "user_id": "Bob Heinlin",
+                    "user_href": "/profile/Bob-Heinlin-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Cretesio",
+                "href": "/profile/Justin-Cretesio"
+            },
+            "answer_text": "currently wireless charging is very limited. Items are usually on top of a charging pad and the wireless charging is very short in range. True wireless charging would be entering a room or area and your device automatically transfers energy. Can you imagine the applications? we wouldn\u2019t really need larger batteries, our devices would constantly be at a charge. we could invest our mobile phones to push more developments since energy constrains are now lifted. Within a short times pan you could see Mixed reality devices that wont rely on a battery pack, phones with the capability of a modern console or pc. if we moved wireless to their furthest extent, no more stopping for gas or energy station while driving! Drive on a energy shoulder lane and bam your energy vehicle is good to go for another few miles! Being able to transfer energy on a large scale would be phenomenal! Although cons there\u2019s probably military applications and the like, but the applications would be endless! ",
+            "date": "Answered September 13, 2017",
+            "views": "562",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nic Wong",
+                    "user_href": "/profile/Nic-Wong-16"
+                }
+            ]
+        }
+    ]
+}

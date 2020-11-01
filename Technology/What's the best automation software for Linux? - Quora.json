@@ -1,0 +1,43 @@
+{
+    "title": "What's the best automation software for Linux? - Quora",
+    "tags": [
+        "Windows Vs. Linux",
+        "Software Recommendations",
+        "Automation",
+        "Best of X",
+        "Linux",
+        "Microsoft Windows"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrii Melnykov",
+                "href": "/profile/Andrii-Melnykov"
+            },
+            "answer_text": "While make and shell scripting could be used to automate many things, you are basically limited to reinventing the wheel. So you need a system with a vast library of ready-made robust modules to automate tasks. What you need is called Configuration management - Wikipedia and it\u2019s similar in the spirit to Windows DSC (Desired State Configuration) There are several commonly used configuration management tools: Puppet (mentioned by another guy)ChefAnsibleI use ansible because it works on a clean server with SSH and python installed, and it doesn\u2019t increase the attack surface beyond SSH which is open anyway (I mean no daemons). However each of the three approach has their pro and cons. The main flaw of Ansible for me is its pretty sluggish performance. If you meant UI automation, it\u2019s a different system from configuration management. See . Unfortunately I have very little knowledge of those.StackOverflow answer about Linux Desktop UI Automation Tools available ",
+            "date": "Answered October 3, 2018",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ahmed Sajjad Zaidi",
+                "href": "/profile/Ahmed-Sajjad-Zaidi"
+            },
+            "answer_text": "There are quite a few, but arguably the most widely used one, and one that I myself have used to automate dozens of servers, is Puppet: http://puppetlabs.com/ ",
+            "date": "Answered April 11, 2014",
+            "views": "18",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Starich",
+                    "user_href": "/profile/John-Starich"
+                },
+                {
+                    "user_id": "Nikman Nik",
+                    "user_href": "/profile/Nikman-Nik"
+                }
+            ]
+        }
+    ]
+}

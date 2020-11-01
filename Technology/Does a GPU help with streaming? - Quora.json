@@ -1,0 +1,28 @@
+{
+    "title": "Does a GPU help with streaming? - Quora",
+    "tags": [
+        "Streaming",
+        "GPU Computation",
+        "Graphics Processing Unit",
+        "Streaming Content",
+        "Streaming Video Content"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Huseyin Tugrul Buyukisik",
+                "href": "/profile/Huseyin-Tugrul-Buyukisik"
+            },
+            "answer_text": "New GPUs have both video encoding and video decoding engines. Doing the encoding on CPU takes longer time than GPU or decreases FPS more than GPU version. GPUs have ability to do encoding, decoding, computing and rendering at the same time. If encoding is done inside GPU, pci-e bottleneck is evaded, hence the better performance even if compute performance is same with CPU. Because sending the encoded/compressed data from pci-e is better than sending uncompressed frames from pci-e (It adds milliseconds to frame time and this means dropping FPS from 60 to 50). If uncrompressed frame data is 5MB and if pcie is able to do 3GB/s then it will take nearly 2 milliseconds to send it to RAM through pci-e bridge. This means 60FPS (16.7ms) to 53FPS(18.7ms). Another advantage of GPU encoding is that the encoder can accumulate results inside GPU memory which is to be queried opportunistically to decrease stutter. If GPU buffer can hold 100 frames then it should tolerate up to 1.5 seconds of delay of encoding (at 60 FPS) before seeing any stutter. An uncompressed 1080p frame at 32bit color is more than 8MB. Holding 100 frames means 800MB. This means lowering game settings to use VRAM efficiently. An encoded 1080p frame at 25 FPS using H.264 is nearly 4.5 MB per second. 4.5 MB per second is much better than 8MB per frame. This can even tolerate 10 seconds of encoding lag if it accumulates inside 45MB of VRAM before sending streaming pipeline. Encoding shouldn\u2019t lag though, it is a fixed pipeline but memory can be busy for textures or something like that. ",
+            "date": "Answered April 4, 2019",
+            "views": "464",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Niranjan Shintre",
+                    "user_href": "/profile/Niranjan-Shintre"
+                }
+            ]
+        }
+    ]
+}

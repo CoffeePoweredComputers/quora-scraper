@@ -1,0 +1,159 @@
+{
+    "title": "Why and how does restarting your device almost always fix basic computer problems? What exactly is happening that might cause these problems to occur? - Quora",
+    "tags": [
+        "Problem Solving",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joseph Admire",
+                "href": "/profile/Joseph-Admire"
+            },
+            "answer_text": "Put as simply as possible (and I'm probably leaving out a lot of technical stuff!), the reason that periodically shutting down the OS, turning off the power and restarting your computer (a \"hard boot\", as opposed to a \"soft boot\", which is basically just restarting the operating system without actually turning the computer's power off and then on again) is a good idea is that, on computer running Windows, a lot of junk builds up in the computer's memory over time. This usually comes either from left-over bits of data that were used while a program was running but weren't deleted from the RAM when the program was closed, or from programs that, for some reason, didn't close down totally when the user was done with them and clicked \"exit\" and left still-running processes or data behind. All this junk builds up over time in your computer's RAM, gradually bulks up the amount of memory being used and eventually slows down both whatever programs you're running and the OS itself. For instance, try an experiment; leave your web browser running for several days while you use it as per normal habit, and get one of the numerous available freeware or shareware system monitors (Rainmeter is a very popular one) to keep track of your computer's memory usage. Windows' Task Manager also shows how much memory each program is using at any given time. You'll see that the amount of RAM the browser is using goes steadily upward the longer you use it and the more sites you visit. When you shut down your operating system and then turn off your computer - the right way to do it is to save whatever you're doing, close down all programs you're using by clicking \"exit\" from the menu or the close button at the top of the window, then shutting down the operating system by selecting \"shut down\" from the system menu, which essentially tells it to turn itself and the computer off - it basically flushes out all the stuff that's been piling up in the RAM. When you turn on the power again and the PC boots up again, you're getting a fresh start with the maximum possible amount of RAM available for your use; remember that the OS, as well as any programs that start up automatically when you power up your system, will always take up a certain amount of memory. ",
+            "date": "Answered November 2, 2018",
+            "views": "910",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Serhant-Hedkins"
+                },
+                {
+                    "user_id": "Ron Restorff",
+                    "user_href": "/profile/Ron-Restorff"
+                },
+                {
+                    "user_id": "Darsh Vora",
+                    "user_href": "/profile/Darsh-Vora-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ch Arslan Shabir",
+                "href": "/profile/Ch-Arslan-Shabir"
+            },
+            "answer_text": "Why Restarting Something Works So Well Now that the this-actually-works part is out of the way, it begs the question: why does it work? Let's start by talking about what happens when your computer is running: You open programs, you close programs, maybe you even install and uninstall software or apps. Sometimes programs like your Internet browser are open for hours, or even days, at a time. Lots of other things stop and start too - things you never see yourself. Are you picturing that time lapse montage of your computer usage in your head right now? It's a bit crazy, we know. We use our computers a lot, especially over the course of several days or more. What you might not realize is that a lot of what you and your operating system does is leave behind a kind of footprint, usually in the form of background processes you don't really need running anymore, or programs that didn't quite close all the way. These \"leftovers\" hog your system resources, usually your RAM. If too much of that goes on, you start to get problems, like a sluggish system, programs that won't open anymore, error messages... you name it. When you reboot your computer, every single program and process ends as the power leaves your computer during the restart process. Once your computer starts back up, you have a clean slate of sorts again and, more often than not, a faster, better working computer.[1] In most cases it\u2019s about cache, buffers or registers which are sometime full or their are some corrupted entries in them which are sometimes nearly impossible to fix manually.When you restart your PC most of these places are cleared by default on shutdown and computer is refreshed through out. This same logic applies to other devices that you don't call a computer, but in reality actually are.Devices like your television, smartphone, modem, router, DVR, home security system, digital camera, (etc., etc.) all have tiny operating systems or embedded Os in technical terms and software that run into the same issues that your full blown PC sometimes does. Also Frequent Restarting is Probably a Sign of a Bigger Problem Footnotes[1] Why Restarting Something Tends to Fix Most Problems",
+            "date": "Answered November 6, 2017",
+            "views": "565",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alex Montressor",
+                    "user_href": "/profile/Alex-Montressor"
+                },
+                {
+                    "user_id": "Webstellar WS",
+                    "user_href": "/profile/Webstellar-WS"
+                },
+                {
+                    "user_id": "Gabe Y. Youngblood",
+                    "user_href": "/profile/Gabe-Y-Youngblood"
+                },
+                {
+                    "user_id": "Francis Vollono",
+                    "user_href": "/profile/Francis-Vollono"
+                },
+                {
+                    "user_id": "Joan Hoffman",
+                    "user_href": "/profile/Joan-Hoffman-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jessi Viscoza",
+                "href": "/profile/Jessi-Viscoza"
+            },
+            "answer_text": "A lot of what you and your operating system does is leave behind a kind of footprint, usually in the form of background processes you don't really need running anymore, or programs that didn't quite close all the way. These \"leftovers\" hog your system resources, usually your RAM. When you reboot your computer, every single program and process ends as the power leaves your computer during the restart process. Once your computer starts back up, you have a clean slate of sorts again and, more often than not, a faster, better working computer. ",
+            "date": "Answered November 6, 2017",
+            "views": "147",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Josh Hall",
+                "href": "/profile/Josh-Hall-120"
+            },
+            "answer_text": "The term for what is happening is called memory leak. The memory does not get properly unallocated and therefore never can get realocated. That and the system runs a sort of basic self check when it boots. Aside from cleaning up the leaks and or footprints as was put in other answers, the cache is cleared all the irq are released and made availible again and so it's basically a refresh. There is more to it but you are welcome to do that research yourself ",
+            "date": "Answered November 6, 2017",
+            "views": "107",
+            "upvotes": " Answer requested by Henry Vaughan",
+            "upvoters": [
+                {
+                    "user_id": "Henry Vaughan",
+                    "user_href": "/profile/Henry-Vaughan-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Lobraico",
+                "href": "/profile/John-Lobraico"
+            },
+            "answer_text": "Many of the problems are caused by software which waits for events to occur but does not have a timeout system in place for when the events do not occur in a timely manner. I\u2019ve seen cases where bad hardware has the device driver software waiting forever for a certain bit to go high. If someone had wrapped that in a loop then they could have broken out of the wait and tried to re-init the board or at least given an error msg as to what signal failed. Also lots of software fails to notify users or different errors when they occur. I see lots of the other answers cite memory leaks yet I cannot remember the last time I saw a msg from the os saying that there was not enough memory available to do something\u2026 ",
+            "date": "Answered November 6, 2018",
+            "views": "125",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ben Marley",
+                "href": "/profile/Ben-Marley-8"
+            },
+            "answer_text": "Thx for A2A The easiest way to explain this is a story. Think of it like this. I am running an endless path holding stacks of plates. If I drop the plate then the mission goes crazy since should I keep running or stay? Sometimes I get tired or the official knocks one of my plates off. Sometimes I simply get tired and drop one on accident. I just crack a plate and a piece fell off but I have to keep running. They official might notice the cracked plate but I have to go on. The official just called a timeout and it feels so nice. I can go back and fix the cracked plates, fallen plates . And also I am refreshed and don\u2019t have to carry 20 plates unless if the official stacks them. ",
+            "date": "Answered November 6, 2017",
+            "views": "230",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Emily Rae",
+                    "user_href": "/profile/Emily-Rae-12"
+                },
+                {
+                    "user_id": "Karissa Laughlin",
+                    "user_href": "/profile/Karissa-Laughlin"
+                },
+                {
+                    "user_id": "Jonathan Ankin Dranoff",
+                    "user_href": "/profile/Jonathan-Ankin-Dranoff"
+                },
+                {
+                    "user_id": "Robert Kuesterman",
+                    "user_href": "/profile/Robert-Kuesterman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Burak Ates",
+                "href": "/profile/Burak-Ates-3"
+            },
+            "answer_text": "Such problems generally occur with any aspect of the program of the computer missing a tiny step that the software/hardware cannot recover from. Afterwards issues pile up on that tiny problem and it becomes even harder to recover, which is only possible if there\u2019s some sort of health monitoring. Restarting initiates the entire process and that tiny problem is wiped off. ",
+            "date": "Answered November 6, 2017",
+            "views": "227",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Toby Dillon",
+                "href": "/profile/Toby-Dillon"
+            },
+            "answer_text": "Data corruption. It can happen on the hard drive, in RAM, or even going through the CPU. It can happen because of poorly-written software or poorly-written firmware. It might happen because something failed to load or something failed to unload properly. Whatever the cause, one of the best ways to solve it is to start over, so: reboot. ",
+            "date": "Answered November 6, 2017",
+            "views": "145",
+            "upvotes": " View 4 Upvoters "
+        },
+        {
+            "author_info": {
+                "name": "Anthony Thunders",
+                "href": "/profile/Anthony-Thunders"
+            },
+            "answer_text": "Because it \u201crefreshes\u201d the device. It\u2019s just like doing a math question, making a mistake halfway, not realizing it and getting a wrong answer. Insteal of going back, you just redo the question. ",
+            "date": "Answered November 10, 2017",
+            "views": "35",
+            "upvotes": " Answer requested by Henry Vaughan"
+        }
+    ]
+}

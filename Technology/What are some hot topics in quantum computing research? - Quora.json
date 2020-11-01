@@ -1,0 +1,119 @@
+{
+    "title": "What are some hot topics in quantum computing research? - Quora",
+    "tags": [
+        "Physics Research",
+        "Quantum Information",
+        "Computer Science Research",
+        "Quantum Computing",
+        "Scientific Research",
+        "Quantum Mechanics",
+        "Computer Science",
+        "List Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hadayat Seddiqi",
+                "href": "/profile/Hadayat-Seddiqi"
+            },
+            "answer_text": "One really interesting trend is the new models of quantum computation that are being motivated by different ideas in [mathematical] physics. I started to realize the trend with the help of a friend (Mark Morales, who btw is a guy you should desperately find some excuse to talk with), who pointed it out to me as I was reading the following paper: [0906.2508] Permutational Quantum Computing I think the trend is made most obvious by the topological model of computation presented by Alexei Kitaev in 1997, and further expounded on by Kitaev and his very impressive company, which includes John Preskill and Michael Freedman. The ideas from topological QC were motivated by trying to understand exotic materials and phenomenon topologically, and to be able to exploit some of these properties to try and mitigate the problem of fault-tolerance and error correction, which is alluded to in Igor Markov's first bullet point. Some interesting ideas have started to come out of this too, in particular the simulation of quantum field theories using the topological computation model: [1111.3633] Quantum Algorithms for Quantum Field Theories (the space-complexity is, of course, polynomial, so this truly is a good advancement). Another effort on that problem was by Edward Farhi, who introduced the adiabatic model in 2000: [quant-ph/0001106] Quantum Computation by Adiabatic Evolution. The adiabatic model is resistant to noise by design as well, attempting to adiabatically change from easily preparable states to difficult ones, hoping to exploit quantum tunneling effects to aid a quantum global optimization algorithm. It has sparked a flurry of research, though significant \"credit\" for this is also due to D-Wave Systems for their controversial marketing campaigns and products. Unfortunately, the model suffers from other serious problems, like characterizing complexity and the embedding problem in practical implementations. It was Dorit Aharonov, a very prolific QC theorist, and others who showed that it was equivalent to the standard circuit model (the method is really quite clever and interesting!): [quant-ph/0405098] Adiabatic Quantum Computation is Equivalent to Standard Quantum Computation Another model introduced by Farhi and friends is the quantum random walk, which is immediately recognized to have applications in any problem where the primary construct is a tree graph, and the goal is finding some vertex of that graph which can be done in [math]mathcal{O}(sqrt{n})[/math] time. This has obvious applications to AI and game theory, among other things probably. Here's a nice lecture about it (and the corresponding paper: [quant-ph/0702144] A Quantum Algorithm for the Hamiltonian NAND Tree):   Andrew Childs put out a paper just last year extending the idea and proving that quantum random walks are capable of universal computation: [1205.3782] Universal computation by multi-particle quantum walk. He (and others) also showed that it gives a definite increase in efficiency over classical computation: [quant-ph/0209131] Exponential algorithmic speedup by quantum walk It should be noted that the permutational model linked at the top was invented by Stephen Jordan, who was a student of Farhi's at MIT (he was also the primary author on the QFT simulation paper). His doctoral thesis is pretty illuminating on the topic of novel quantum models of computation and some motivations for doing so: [0809.2307] Quantum Computation Beyond the Circuit Model. Specifically, it talks about the one-clean-qubit model, amongst other things like adiabatic error correction, and gives a decent overview of the more well-known models in the introduction. I've also happened upon some efforts by those involved in biophysics. I don't know much about this, but here are a couple of interesting papers: Page on Iop (infact, I found this through Stephan Hoyer's website, so maybe he can explain some about it if you were curious), [1311.4688] Evolutionary Design in Biological Quantum Computing, and [0807.0929] Environment-Assisted Quantum Transport. There is talk of quantum black hole computers, but this relies on some conjectures about the physics of black holes, of which there is no consensus as of yet. Also I'm too noob to understand any of it, and I haven't stumbled across any good papers about it (admittedly, i haven't tried very hard to find them, but if you know any, please send them). As for why this trend is happening, I think it's clear from some of the problems many are facing experimentally with the standard quantum circuit model. Decoherence is a big issue, and the topological and adiabatic models were mainly aimed to fix it, but they end up having their own problems. For topological QC, there has been no evidence of the types of particles that are needed for an experimental realization (non-abelian anyons). The adiabatic model has many problems, and it's my suspicion that it wouldn't be getting nearly as much attention if it weren't for D-Wave or another group with some motivation for physical implementations, the problems are pretty annoying but are covered elsewhere on Quora, see What are the main criticisms of adiabatic quantum computing?. I'm not sure what problems exist for the one-clean-qubit model or the permutational model (the latter has not been proven to be capable of universal computation, at least). Still, there is enough difficulty with circuit implementations like ion traps (decoherence), SQUIDs (also decoherence), and NMR (addressing) that seems to be keeping the QC community motivated to find alternative models, which would lead to alternative physical implementations of QC. Feel free to post comments, criticisms, further explanations, or whatever. These thoughts and references are a work in progress in my head, and I'm so I very much welcome additional insights. ",
+            "date": "Updated June 30, 2014",
+            "views": "105",
+            "upvotes": " View 40 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yupan Liu",
+                    "user_href": "/profile/Yupan-Liu"
+                },
+                {
+                    "user_id": "Stephan Hoyer",
+                    "user_href": "/profile/Stephan-Hoyer"
+                },
+                {
+                    "user_id": "Allan Steinhardt",
+                    "user_href": "/profile/Allan-Steinhardt"
+                },
+                {
+                    "user_id": "Ben Cordier",
+                    "user_href": "/profile/Ben-Cordier"
+                },
+                {
+                    "user_id": "Gokul Alex",
+                    "user_href": "/profile/Gokul-Alex-1"
+                },
+                {
+                    "user_id": "Gabriele Manganelli",
+                    "user_href": "/profile/Gabriele-Manganelli-1"
+                },
+                {
+                    "user_id": "Vaibhav Chimalgi",
+                    "user_href": "/profile/Vaibhav-Chimalgi"
+                },
+                {
+                    "user_id": "Soundarya R",
+                    "user_href": "/profile/Soundarya-R-32"
+                },
+                {
+                    "user_id": "Mark John Fernee",
+                    "user_href": "/profile/Mark-John-Fernee"
+                },
+                {
+                    "user_id": "Veziroglu Vedat",
+                    "user_href": "/profile/Veziroglu-Vedat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Igor Markov",
+                "href": "/profile/Igor-Markov"
+            },
+            "answer_text": "Quantum fault-tolerance and error-correction --- necessary for achieving scalable quantum computationSimulation of quantum systems in general and quantum computers in particular, on classical and on quantum computers (four topics here)Design of quantum algorithms: what would you do with a working quantum computer?Building scalable quantum processors and quantum memoryOptimization of quantum control signals, circuits, and programsDeveloping tests for quantum hardware: is it really quantum?",
+            "date": "Updated November 10, 2013",
+            "views": "68",
+            "upvotes": " View 39 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gokul Alex",
+                    "user_href": "/profile/Gokul-Alex-1"
+                },
+                {
+                    "user_id": "Muhammad Rizwan",
+                    "user_href": "/profile/Muhammad-Rizwan-1138"
+                },
+                {
+                    "user_id": "Harsh Darji",
+                    "user_href": "/profile/Harsh-Darji-64"
+                },
+                {
+                    "user_id": "Thadishetti Ravishanker",
+                    "user_href": "/profile/Thadishetti-Ravishanker"
+                },
+                {
+                    "user_id": "Athul Perfect",
+                    "user_href": "/profile/Athul-Perfect"
+                },
+                {
+                    "user_id": "Thupten Dukpa",
+                    "user_href": "/profile/Thupten-Dukpa-1"
+                },
+                {
+                    "user_id": "Lester Kim",
+                    "user_href": "/profile/Lester-Kim"
+                },
+                {
+                    "user_id": "Sonakshi Kumari",
+                    "user_href": "/profile/Sonakshi-Kumari-1"
+                },
+                {
+                    "user_id": "Debojyoti Sarkar",
+                    "user_href": "/profile/Debojyoti-Sarkar-2"
+                },
+                {
+                    "user_id": "Srivathsan Iyengar",
+                    "user_href": "/profile/Srivathsan-Iyengar-3"
+                }
+            ]
+        }
+    ]
+}

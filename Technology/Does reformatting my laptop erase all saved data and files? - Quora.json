@@ -1,0 +1,46 @@
+{
+    "title": "Does reformatting my laptop erase all saved data and files? - Quora",
+    "tags": [
+        "Hard Disk Drives (HDD)",
+        "Data",
+        "Laptops"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Prem Ranjan",
+                "href": "/profile/Prem-Ranjan"
+            },
+            "answer_text": "Depends on the security scenario. While formatting, you might have selected \"quick\" option, which means that the data is still on the disk sectors, but the OS can not directly read that via the filesystem, as it assumes that those sectors are not part of any file. We can still read the data sectors via hard disk firmware system calls. If you had not select \"quick\" option, then the OS (or even the firmware) can not get the data back . . . But there are commercial low level tools (hard disk forensics) to check the magnetic properties of the disk bits, and still get the previous bits back. In this case, we can choose to overwrite the existing data with random bits or all 1s or all 0s,etc. If we do this 8 times, then almost nobody can get the original bits back, though I heard rumors that \"some government agencies\" can still get the data back.So we have to overwrite 16 times with random bits. If we are really paranoid and nobody must read the data at any cost, then we have to destroy the disk, but only after overwriting 16 times, because even a destroyed disk can be put back, by \"some government agencies\" . . . ",
+            "date": "Answered July 14, 2014",
+            "views": "236",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Patrick Ira DonEgan",
+                    "user_href": "/profile/Patrick-Ira-DonEgan"
+                },
+                {
+                    "user_id": "Malcolm Sargeant",
+                    "user_href": "/profile/Malcolm-Sargeant"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Kay",
+                "href": "/profile/Jeff-Kay"
+            },
+            "answer_text": "The simplest answer here is, yes, it does erase everything. You would need a special program to recover anything, and only if you haven't written anything on the disk since the formatting.   The best course of action is always preventative, make sure you back up your data on a regular basis. ",
+            "date": "Answered July 14, 2014",
+            "views": "307",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jacob VanWagoner",
+                    "user_href": "/profile/Jacob-VanWagoner"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "title": "What is the best and most secure way to use the internet with Windows? - Quora",
+    "tags": [
+        "Internet Security",
+        "Security",
+        "Information Security",
+        "Computer Security",
+        "Microsoft Windows",
+        "Operating Systems",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lee Haskell",
+                "href": "/profile/Lee-Haskell-3"
+            },
+            "answer_text": "The \u201cbest and most secure\u201d requires work, especially since there is no \u201cbest\u201d, only \u201cbetter\u201d. You want to use what is know as defense-in-depth (ie layers): harden your windows box- change default passwords- remove unused accounts- close unused ports- disable (or bet yet, remove) unused services- use a host firewall- engage malware detection (ie antivirus & anti-malware defender)- engage logging- use strong passwords- use encryption on data at rest and in motion- make sure all current patches are applied- turn on auto updatesinstall a hardened gateway router- change defaults (users and passwords)- close off external management access- limit access to a few internal IP/MAC address- turn off external ping response- apply patches and use most current firmware- use NAT translation- use stateful packet inspection- use DDoS detection- use strong passwordsuse a edge/perimeter firewall- integrated into router is good; standalone device is better- update rules frequently- engage logging & monitoringinstall IDS/IPS- consider Snortset up DMZ- if you are going to be allowing public facing machinesset up subnetting- break networks into logical groups- reduce potential pivot points- reduce broadcast waves- reduce total network compromiseavoid using WiFi; strengthen if you must- notoriously weak point in the chain- use WPA/2 for encryption- use super strong passwords- place AP in the center of your location to limit radio signalback up your system- automate and schedule- use the cloud for offsite storagemonitor you system- set up a NMS and a SIEMhire a cyber security expert- do an internal audit and review- run a pen testYou will end up spending inordinate amounts of time and money to \u2018better\u2019 secure one Windows machine, and \u2018best\u2019 is probably outside of your price and skill range. Your goal should be to take \u2018reasonable\u2019 security precautions. You want to make your machine is more difficult to get into than other end points; hackers look at time & effort in comparison to the payout. You wouldn\u2019t work on digging a hole all day just to steal a penny; neither will a hacker. Of course, as others have pointed out, you should use good \u201ccyber hygiene\u201d:- use encryption (HTTPS) for web traffic- use a VPN if applicable- don\u2019t visit sketchy websites- don\u2019t click on untrusted web links- don\u2019t open unsolicited email- don\u2019t click on links in emails- don\u2019t share information with unknown phone callers- don\u2019t trust strangers on the Internet- don\u2019t fall victim to social engineering or phishing attacks Humans are the weakest link in the defense-in-depth strategy, and the easiest for us to hack. There are more options available, but you get the gist. ",
+            "date": "Answered October 24, 2020",
+            "views": "106",
+            "upvotes": " Answer requested by Kevin Bridges"
+        },
+        {
+            "author_info": {
+                "name": "Kyle Manel",
+                "href": "/profile/Kyle-Manel"
+            },
+            "answer_text": "Don\u2019t use the internet. If your purpose is web browsing I would advise utilizing Linux to browse the web;This is because Linux is quite well protected by relative insignificance by comparison to Windows, but is quite capable of providing comparable user experience. It isn\u2019t like it was, even 5 years ago, attempting to use Linux as a comparable product. I would generally suggest Linux Mint, as it has a comparable interface to Windows. In addition to the above, Linux is also FAR more cost effective, it can run many applications at comparable speed, with significantly reduced requirements, and also does not require a license to utilize. ",
+            "date": "Answered October 22, 2020",
+            "views": "111",
+            "upvotes": " Answer requested by Kevin Bridges"
+        }
+    ]
+}

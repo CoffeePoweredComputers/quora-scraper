@@ -1,0 +1,77 @@
+{
+    "title": "What is the relationship between statistics and probability? - Quora",
+    "tags": [
+        "Statistics (collected data)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Emmanuel Gautier",
+                "href": "/profile/Emmanuel-Gautier"
+            },
+            "answer_text": "Statistics are used to quantify observations of phenomena whose behaviour is predicted by probability. You can make sense of their relationship using Plato\u2019s Allegory of the Cave. Plato compares our human condition to being tied up in a cave, facing the cave\u2019s wall. Behind us is a fire. Outside, there is a world full of fascinating objects, and sometimes puppeteers come into the cave to animate the objects. Except we can\u2019t see them. As they stroll behind us, they agitate the objects in front of the fire, and all we see are the shadows projected onto the wall. Plato\u2019s point is that there is a world out there, which we do not have access to, which is the world of pure ideas. We live in the world of the senses, where we only perceive the physical manifestations of ideas.  Similarly, you cannot actually observe a probability: when you toss a coin, it either falls heads or tails. The underlying probability law is not directly visible. But you can see manifestations of probability, by gathering statistics. How? Well, very often, by repeating the same experience over and over again - thanks, Law of large numbers! When you\u2019ve tossed the coin a million times, and got 500 023 heads and 499 977 tails, you can be pretty sure (but not entirely certain) that your coin is fair. There\u2019s an illustration that\u2019s even more elegant: consider the binomial experiment, i.e. a succession of independent and identical random experiments, each with two outcomes of constant probabilities. Say, a series of coin tosses, for instance! Probability tells you that if the probability of getting tails is [math]p[/math], and after repreating the experiments [math]n[/math] times you count the number of times you got tails, the probability that the result [math]X[/math] will be equal to [math]k[/math] is: [math]P(X=k) = \\binom{n}{k}p^{k}(1-p)^{n-k}[/math] That\u2019s the binomial distribution - the probability law of the binomial experiment. Of course, [math]k[/math] can vary between [math]0 [/math] and [math]n[/math]. Visualizing the probability for those various values gives you the famous Gaussian curve:  Again, all this is theory. It\u2019s not physical, it\u2019s not palpable. But you can yank that probability law right into the physical world with the following experiment:  One by one, small, round beans fall on pins. When they fall on a pin, it\u2019s a 50/50 chance: they might either fall left or right. They all fall on the same amount of pins before joining the rest of the beans in a compartment. So, hey, the net movement (number of falls to the right minus number of falls to the left) of one bean over the course of its fall follows a binomial distribution! And since the beans are grouped by net movement when they reach the lower part, the binomial distribution bar chart pretty much draws itself! More complicated now: using the probability law, we can predict the height, the mid-height width, and other features of the curve as a function of the parameters (here, the number of experiments [math]n[/math] and the probability of outcome 1, [math]p[/math]). Imagine you had no idea about the value of [math]p[/math], but wanted to find out. In that case, you would just pick a (large) value for [math]n[/math], repeat the experiment [math]n[/math] times, and measure those features! Using the equations, you could trace back to the value of [math]p[/math] and voil\u00e0! And that\u2019s pretty much how all of statistics work. You make the assumption that a random experiment follows a certain distribution, of which you don\u2019t know the parameters. You repeat that experience many times, and gather the results. You confront your statistical measurements with what the probability law predicts, and use that to infer the parameters. All that\u2019s left is confidence in your model. Say you toss a coin twice, and get heads twice. Would it be reasonable to infer that this coin will yield heads every time? No. Because your sample size is too small for you to be confident in the inferred model. Again, the law of large numbers (and its corollaries) is the vital tool for statistical analysis, which helps you infer statistical models from repeated experiments, but it implies that you must have a sample set as large as possible to be confident in your model. This is why, when an opinion poll is released, the media that releases it, if it\u2019s doing honest journalism, also mentions the sample size and margin of error. As you can see on this series of polls about the 2016 US presidential election[1], the larger the sample, the smaller the margin of error (although some other factors in the pollster\u2019s methodology influence the margin of error, hence the discrepancies):  This is something you should always pay attention to when reading polls. If candidate A has a 3-point lead with a 4.2% margin of error, that means that candidate A could well be trailing by 1.2 points (or leading by 7.2 points, too). A 2-point lead with a 1.2% margin is narrower but more certain. Footnotes[1] Nationwide opinion polling for the United States presidential election, 2016",
+            "date": "Answered August 10, 2016",
+            "views": "95",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Istabraq Shaheer",
+                    "user_href": "/profile/Istabraq-Shaheer"
+                },
+                {
+                    "user_id": "Andrew Ingalls",
+                    "user_href": "/profile/Andrew-Ingalls-4"
+                },
+                {
+                    "user_id": "Djellel Eddine",
+                    "user_href": "/profile/Djellel-Eddine"
+                },
+                {
+                    "user_id": "Wu-Tang Gavin",
+                    "user_href": "/profile/Wu-Tang-Gavin"
+                },
+                {
+                    "user_id": "Francisco Ortiz Pe\u00f1aloza",
+                    "user_href": "/profile/Francisco-Ortiz-Pe\u00f1aloza"
+                },
+                {
+                    "user_id": "Abhishek Ahet",
+                    "user_href": "/profile/Abhishek-Ahet"
+                },
+                {
+                    "user_id": "Bijay Gurung",
+                    "user_href": "/profile/Bijay-Gurung-5"
+                },
+                {
+                    "user_id": "Saurav Shekhar",
+                    "user_href": "/profile/Saurav-Shekhar-1"
+                },
+                {
+                    "user_id": "Eduardo Pellegrini Laste",
+                    "user_href": "/profile/Eduardo-Pellegrini-Laste"
+                },
+                {
+                    "user_id": "Ming Jie Wong",
+                    "user_href": "/profile/Ming-Jie-Wong-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Jo",
+                "href": "/profile/Jeff-Jo-4"
+            },
+            "answer_text": "Flip a coin. What are the chances for each possible result? Since we can\u2019t calculate what the result will be from the information \u201cflip a coin,\u201d we assign a number we call a probability to each possible result. You can think of these numbers as a measure of our uncertainty in that result.  Call the set of possible results {Heads, Tails, Other}, and the probability for each {Pr(H), Pr(T), Pr(O)}. Probability makes no assumptions about what happens in the physical world, it just defines the relationships that must exist between the possibilities. They are: Pr(H), Pr(T), and Pr(O) are each greater than, or equal to, zero.The probability for any combination of the three possibilities is the sum of the probability of the individual probabilities that were combined.Pr(H)+Pr(T)+Pr(O)=1.Statistics assumes that there are fixed values for these probabilities; we just don\u2019t know what they are. But we can narrow the range of these values by using repeated experiments in the physical world. (That is, flip your coin many times.) Here is a gross simplification of how this is done: We first use the laws of probability to describe the number of times we should see each possibility, based on our best guess of the possibilities. We then use the same laws in a different way to estimate the range of times we should see expect to see each result. If the experimental result is outside this estimated range, we know something was wrong with our guess. ",
+            "date": "Answered August 11, 2016",
+            "views": "25",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mahdi Shahtalebi",
+                    "user_href": "/profile/Mahdi-Shahtalebi"
+                }
+            ]
+        }
+    ]
+}

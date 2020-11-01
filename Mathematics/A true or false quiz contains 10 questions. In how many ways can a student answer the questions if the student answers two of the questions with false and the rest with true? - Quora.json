@@ -1,0 +1,16 @@
+{
+    "title": "A true or false quiz contains 10 questions. In how many ways can a student answer the questions if the student answers two of the questions with false and the rest with true? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "It\u2019s as simple as asking how many ways you can write down two false answers. I always like to do a simple version, to check my reasoning. Say there\u2019s a 4 question test. How many ways to write false? 1 and 2; 1 and 3; 1 and 4; 2 and 3; 2 and 4; 3 and 4 Six ways. Does this match the permutation formula? nPr is n!/(n-r)!. 4!/(2*1)=4*3. Doesn\u2019t match well. Because permutations would treat 1 and 2 vs 2 and 1 differently. So that\u2019s why this is a combination problem. You have to learn to tell the difference, to work out these sorts of problems. So how about combination formula? nCr is n!/(n-r)!/r!. 4!/2!/2!=2*3=6. That seems much better. In fact, it looks correct! Ok, so then apply it to your 10 question version. nCr, where n=10 and r=2. 10!/(10\u20132)!/2! I get 45, but you should do your own work, and double check me! ",
+            "date": "Answered September 30, 2020",
+            "views": "344",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "title": "Has anyone lost data by removing a pen-drive without selecting 'Safely Remove USB' first? - Quora",
+    "tags": [
+        "USB Powered Devices",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nate Waddoups",
+                "href": "/profile/Nate-Waddoups"
+            },
+            "answer_text": "I have.  For quite some time I would transfer data from my desktop PC to a laptop that I kept in my car, using a USB keychain, a few times per week (not quite daily, but close). I would occasionally yank the drive too quickly. This would trigger a dialog box the next time I plugged it in, telling me that the drive had not been unmounted gracefully. The warning would be followed by a time-consuming disk-check process that usually ended with a clean bill of health, but every once in a while, that would be followed by corruption of the contents of the USB drive. I might add that the USB drive contains a source-control repository (initially bzr, currently hg, soon git), and I would push changes to it and pull changes from it, so corrupt data would often manifest as error messages from the revision control software. There's a setting in Windows that will cause it to flush writes to removable storage aggressively. I've forgotten now where the setting lives, but flipping that switch greatly reduced the incidence of the warning dialog boxes.  One of my USB drives had an LED that would blink with activity, and at some point I noticed that writes to the USB drive would be followed about 5 seconds later by a single blink of the LED. As long as I wait for that blink, I don't have any trouble. The drive I'm using now doesn't have an LED, but waiting a few seconds between writing and unplugging has been enough to avoid the warnings and consistency checks. ",
+            "date": "Answered November 16, 2012",
+            "views": "629",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael J. McFadden",
+                    "user_href": "/profile/Michael-J-McFadden"
+                },
+                {
+                    "user_id": "George Karpel",
+                    "user_href": "/profile/George-Karpel"
+                },
+                {
+                    "user_id": "Leonid S. Knyshov",
+                    "user_href": "/profile/Leonid-S.-Knyshov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Fuhrman",
+                "href": "/profile/Jeff-Fuhrman"
+            },
+            "answer_text": "I've not had any trouble with any of my newer flash drives, but I've had issues with a couple of SanDisk Cruzer Micro U3 drives. One would just yell at me when I plugged it back in (an old 1Gb one from the mid-2000's) and my newer one (an 8Gb from ~2009) would wipe itself. CHKDSK found the stuff, it just was annoying. So long as you make sure it's not writing anything, you should be okay. ",
+            "date": "Answered March 23, 2013",
+            "views": "266",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Johnny Ho",
+                    "user_href": "/profile/Johnny-Ho"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christoffer Aasted",
+                "href": "/profile/Christoffer-Aasted"
+            },
+            "answer_text": "Yes I have. I have spend some time making a small toolchain USB with Portable Software, various fonts and configurations, keys, utilities, etc. All files were cluttered, splitted, renamed, and impossible to recover. I ended up recreating everything just to be sure the integrity was there. So if you want integrity and the same files as you left them, you better use the Safe Removal. This was on Windows 7. ",
+            "date": "Answered November 16, 2012",
+            "views": "641",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tanmay Mhatre",
+                    "user_href": "/profile/Tanmay-Mhatre-2"
+                },
+                {
+                    "user_id": "Johnny Ho",
+                    "user_href": "/profile/Johnny-Ho"
+                },
+                {
+                    "user_id": "Leonid S. Knyshov",
+                    "user_href": "/profile/Leonid-S.-Knyshov"
+                },
+                {
+                    "user_id": "Shrikanth Shetty",
+                    "user_href": "/profile/Shrikanth-Shetty"
+                },
+                {
+                    "user_id": "Ole Bergmann",
+                    "user_href": "/profile/Ole-Bergmann"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "George Karpel",
+                "href": "/profile/George-Karpel"
+            },
+            "answer_text": "No.  Never lost anything : and I do it a lot ! ... BUT - I never remove it when reading or writing it.  Wait for all R/W processes to finish, completely,   wait a few seconds for it to settle down, then remove it. Side note : If you have that bizarre U3 setup on it - Get rid of that as soon as possible. ",
+            "date": "Answered September 11, 2014",
+            "views": "313",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Liza Bustin",
+                "href": "/profile/Liza-Bustin"
+            },
+            "answer_text": "Yes, as a matter of fact, I\u2019m looking for a solution now, to recover it. This is the third time in my computing life (since 1992) that I have had a USB drive get corrupted. It shows up in Windows Disk Manager, but as \u201cnot initialized\u201d. I had just gotten done restoring all my old drives\u2019 data, and backing up my computer, when it happened. ",
+            "date": "Answered August 15, 2016",
+            "views": "76",
+            "upvotes": "0"
+        }
+    ]
+}

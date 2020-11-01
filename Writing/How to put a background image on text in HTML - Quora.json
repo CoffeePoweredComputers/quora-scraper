@@ -1,0 +1,25 @@
+{
+    "title": "How to put a background image on text in HTML - Quora",
+    "tags": [
+        "HTML",
+        "Web Design"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alireza Tayebinejad",
+                "href": "/profile/Alireza-Tayebinejad"
+            },
+            "answer_text": "To set the image in the text background, some CSS property is used. HTML Code: HTML code is used to create a basic structure of the body. In the following code, we will use paragraph tag to write text content. <!DOCTYPE html> <html> <head> <title> How to Add Image in Text Background using HTML and CSS ? </title> </head> <body> <p>GeeksforGeeks</p> </body> </html> CSS Code: The CSS property is used to set the image as background in the text. The background-image property is used to set an image as background. The -webkit-text-fill-color property is used to give the text a transparent color, the background image will show through the text, thus completing the clipping effect. filter_none brightness_4 <style> p { background-image: url(demo.jpg); background-repeat: repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 200px; font-size: 120px; text-align: center; font-weight: bold; text-transform: uppercase; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 800; -webkit-font-smoothing: antialiased; } </style> Complete Code: In this section, we will combine the above two sections to add an image as text background. filter_none edit play_arrow brightness_4 <!DOCTYPE html> <html> <head> <title> How to Add Image in Text Background using HTML and CSS ? </title> <style> p { background-image: url(demo.jpg); background-repeat: repeat; -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-top: 200px; font-size: 120px; text-align: center; font-weight: bold; text-transform: uppercase; font-family: 'Steelfish Rg', 'helvetica neue', helvetica, arial, sans-serif; font-weight: 800; -webkit-font-smoothing: antialiased; } </style> </head> <body> <p>GeeksforGeeks</p> </body> </html> output:  ",
+            "date": "Answered October 19, 2020",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        }
+    ]
+}

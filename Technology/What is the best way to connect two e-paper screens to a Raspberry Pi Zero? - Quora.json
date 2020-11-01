@@ -1,0 +1,32 @@
+{
+    "title": "What is the best way to connect two e-paper screens to a Raspberry Pi Zero? - Quora",
+    "tags": [
+        "Raspberry Pi Zero",
+        "Raspberry Pi",
+        "Tablet Devices",
+        "Computer Monitors and Screens",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Micah Stevens",
+                "href": "/profile/Micah-Stevens"
+            },
+            "answer_text": "Well it depends a bit, but I would use the SPI port. You can connect both displays to the SPI port, and use 2 GPIOs, one each to enable the displays. The displays should have a CE pin, which when active tells the display to pay attention to the SPI data. By toggling these pins you can talk to each display independently. I2C has addresses, so you could do that too, but I2C is slower than SPI generally, which is why I tend to avoid it for displays. ",
+            "date": "Answered October 23, 2020",
+            "views": "245",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Martyn Davies",
+                    "user_href": "/profile/Martyn-Davies-1"
+                },
+                {
+                    "user_id": "Johan Van Niekerk",
+                    "user_href": "/profile/Johan-Van-Niekerk-16"
+                }
+            ]
+        }
+    ]
+}

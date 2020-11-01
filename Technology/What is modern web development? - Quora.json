@@ -1,0 +1,61 @@
+{
+    "title": "What is modern web development? - Quora",
+    "tags": [
+        "Web Developers",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Polevoi",
+                "href": "/profile/Robert-Polevoi"
+            },
+            "answer_text": "In my opinion, \u201cmodern web development\u201d \u2014 driven by the mobile revolution \u2014 amounts to attempting to achieve the user experience and business utility expected from native applications, but in the web browser environment. The web browser is itself an application, so you are writing an application within an application, rather than directly on top of the operating system (e.g. Android, iOS in mobile, Windows or macOS or linux in laptop). Writing an application within a browser means writing JavaScript which is the only language for which browsers provide a \u201cruntime environment.\u201d Thus modern web development involves using JavaScript at a level of ambition for which it was not originally intended, but for which it is very rapidly adapting itself. The use of JavaScript \u201cframeworks\u201d such as React and Angular has become standard because these provide so much functionality and context that most developers would be incapable of creating for themselves. Thus, for very many people, \u201cmodern web development\u201d means writing web applications within the API\u2019s of JavaScript frameworks, and perhaps using other advanced JavaScript tools (like TypeScript) that also sit \u201con top of\u201d what is often called \u201cvanilla JavaScript.\u201d This is only the \u201cfront end\u201d side of the equation \u2014 the application written to be downloaded into the users browser and executed there. But the server side of the equation (\u2018back end\u201d) is also rapid evolving. It use to be that the browser side app did little more than present an interface, and the server did everything including compose the contents of the page being viewed in every respect. With the rise of what is called the \u201cSingle Page Application\u201d (SPA), the server-side simply provides data as requested by the client-side \u201cfront-end\u201d application, which takes care of all aspects of the display. The SPA is driven by the need for mobile user to make as minimal and as efficient use of data transactions with the server as possible, and let the \u201cfront end\u201d application in the mobile device handle as much of the work as possible. This arose naturally in native mobile apps \u2014 that don\u2019t run in the browser \u2014 and so the present effort is to duplicate that model as closely as possible with \u201cweb apps\u201d running in a mobile browser. The move from native apps (downloaded from a \u201cstore\u201d and installed locally) to web apps that require no such installation and can be easily linked to (and thus discovered in search engines) is fundamental, and in my view, irreversible and certain. It\u2019s just a question of web app performance catching up entirely with native app performance. This will happen at warp speed because everything in this business happens at warp speed, which is why it\u2019s so successful. ",
+            "date": "Answered July 2, 2017",
+            "views": "504",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vikram Dutt",
+                    "user_href": "/profile/Vikram-Dutt"
+                },
+                {
+                    "user_id": "Gao Ling",
+                    "user_href": "/profile/Gao-Ling-3"
+                },
+                {
+                    "user_id": "Eamon Bohan",
+                    "user_href": "/profile/Eamon-Bohan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tommy Byrd",
+                "href": "/profile/Tommy-Byrd"
+            },
+            "answer_text": "The answer to this question can be taken so many different ways depending on the experience and opinions of the respondent, and I\u2019m actually curious to hear other view points, but I\u2019ll try and give you mine. TL;DR, Web development used to be about novel ways to render text to a screen. Now it\u2019s about creating apps and experiences. In the earliest days of web development, web browsers were really only good at doing things like displaying text and images, and providing a system of links to other websites where you could read additional text and see more images. Pretty quickly, digital companies figured out ways to use the web to make money. E-commerce businesses, advertising agencies, and media outlets all had business models based around displaying images and text and getting you to click on enough links that it turned into revenue. Bloggers saw how easy this was and decided to write things down, throw some images and links around their words, and put themselves out there to see if they could build a business doing the same thing. Once web browsers and back-end servers got a little more sophisticated, a web site could do a few more things beyond just displaying images and text. With the invention of social networks, now they could actually connect you to friends, family, and even strangers with a click of a button. While the front-end of these sites were still essentially just rendering text and images, the social graphs being built behind the scenes made the content much more personally interesting. Instead of just reading articles from people who figured out how to setup their own website, you could now find out what\u2019s going on with just about anybody with the wherewithal to write a few words about it. But some truly interesting and ground breaking work is being done with web technology that\u2019s changing the game entirely. Things like WebSockets, WebGL, WebAssembly, and WebVR are making it possible to build web-based applications that rival the functionality and power that previously could\u2019ve only been possible in a native application. I\u2019ve heard many times that Slack is basically \u201cIRC for the web\u201d, and while that\u2019s true, it\u2019s also pretty similar to the brush off from people that said the iPad is \u201cjust a big iPod\u201d. There\u2019s something fundamentally different about an application when it\u2019s UI and UX is approachable, even when the functionality is mostly duplicated elsewhere. Since the websites we access in browsers have become much more \u201capp-like\u201d lately, modern web developers are starting to look a lot more like app developers. They need things like build tools, compilers, and unit tests, because the code they write is doing a lot more than just rendering some text and images to a screen. As a language, as Javascript itself matures and is responsible for more than just DOM manipulation (https://www.sitepoint.com/dom-manipulation-vanilla-javascript-no-jquery/), it\u2019s taking on characteristics of languages a native developer might use. Things like asynchronous functions look almost identical in C#, for instance. There\u2019s even a proposal for a pipe operator to support functional programming styles seen typically in languages like Elixir and F#! WebAssembly in particular is quite interesting because of the promise to not have to \u201cthrow away\u201d all the amazing work that\u2019s been done in native applications for years. Currently, if you want to build any kind of dynamic application for the web, you have to write the client-side (read: browser) code in Javascript. This has led to all kinds of things like video players, photo editors, and web-based games that were either written directly in Javascript, or compiled to Javascript from another language. The problem with this is that Javascript then is further interpreted by the browser into something the computer can understand. With WebAssembly, we can skip that intermediary step entirely and ship the code the machine understands directly to the browser. So to me, modern web development is about building desktop-class experiences like games, apps, and multimedia experiences that can be shipped directly to the browser over the web. But these experiences can still render text and images really well, too! ",
+            "date": "Answered July 2, 2017",
+            "views": "716",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Erland Flaten",
+                    "user_href": "/profile/Erland-Flaten"
+                },
+                {
+                    "user_id": "Vikram Dutt",
+                    "user_href": "/profile/Vikram-Dutt"
+                },
+                {
+                    "user_id": "Eamon Bohan",
+                    "user_href": "/profile/Eamon-Bohan"
+                },
+                {
+                    "user_id": "Mose Enam",
+                    "user_href": "/profile/Mose-Enam"
+                }
+            ]
+        }
+    ]
+}

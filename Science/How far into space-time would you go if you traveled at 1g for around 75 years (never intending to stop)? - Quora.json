@@ -1,0 +1,100 @@
+{
+    "title": "How far into space-time would you go if you traveled at 1g for around 75 years (never intending to stop)? - Quora",
+    "tags": [
+        "Spacetime",
+        "General Relativity",
+        "Time (physics)",
+        "Relativity (physics)",
+        "Space Travel",
+        "Outer Space",
+        "Physics of Everyday Life",
+        "Astrophysics",
+        "Hypothetical Scenarios"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mattias Sj\u00f6",
+                "href": "/profile/Mattias-Sj\u00f6"
+            },
+            "answer_text": "For some reason, the question was edited, but I\u2019m still answering the original one: How far into space-time would I go if I accelerated at 1g for around 75 years (never intending to stop)? Let\u2019s assume that you are traveling away from Earth using some magical spaceship capable of indefinitely sustained 1 g acceleration and survival at near-light speed. If one ignores relativity, you would reach the speed of light in almost exactly 1 year, so we definitely need to account for relativistic effects. Therefore, we\u2019ll consider an observer at rest on Earth (the Earth is not at rest, but moves slowly enough that we can live with the approximation) and find out how you\u2019ll appear to them. I\u2019ll make a full derivation of all numbers I give, but if you\u2019re not interested in the math, just skip ahead to the end of each section for short answers.  Acceleration and velocity. In your own frame of reference, you\u2019re accelerating at [math]a_0=9.81\\:\\mathrm{m/s^2}[/math]. If you\u2019re momentarily moving at a speed [math]v[/math] away from Earth, they will observe you accelerating at an acceleration [math]a[/math] given by [math]\\displaystyle a = a_0\\left(1-\\frac{v^2}{c^2}\\right)^{3/2}[/math], which is easy enough to look up or derive from first principles. We see that as your speed approaches [math]c[/math], your acceleration will drop towards zero and you\u2019ll never exceed the speed of light in any frame. Since [math]a=dv/dt[/math] (both [math]v[/math] and [math]t[/math] being in Earth\u2019s frame), we can solve the above expression to get [math]v(t)[/math]. For convenience, we\u2019ll use [math]\\beta = v/c[/math] instead. So, we have [math]\\displaystyle\\frac{d\\beta}{d t} = \\frac{a_0}{c}\\left(1-\\beta^2\\right)^{3/2}[/math], which can be shuffled around to [math]\\displaystyle\\frac{d\\beta}{\\left(1-\\beta^2\\right)^{3/2}} = \\frac{a_0\\:dt}{c}[/math], using the physicist\u2019s shortcut of moving differentials around. (Yes, shoot me, mathematicians!) Taking the integral of both sides yields [math]\\displaystyle\\frac{\\beta}{\\sqrt{1-\\beta^2}} = \\frac{a_0t}{c} + \\text{const.}[/math] (the right-hand side is trivial, the left-hand side not too hard if you think a little). Taking [math]\\beta=0[/math] at [math]t=0[/math] makes the integration constant equal to zero. By moving stuff around and converting back to [math]v[/math], we have our answer: [math]\\displaystyle v(t) = \\frac{a_0 t}{\\sqrt{1 + \\left(\\frac{a_0t}{c}\\right)^2}}[/math]. We see that as [math]a_0t[/math] (your \u201cclassical\u201d velocity) approaches [math]c[/math] after about a year, your actual velocity is heavily suppressed and approaches [math]c[/math] only as [math]t\\to\\infty[/math]. Plugging in values reveals that after 353 days, 16 hours and 50 minutes (the time when you classically would have reached the speed of light), you\u2019re really only travelling at [math]1/sqrt(2)\\approx 70.7\\%[/math] of the speed of light. After [math]75[/math] years (as seen from Earth), you have reached [math]99.97\\%[/math] of the speed of light, enough to make time pass [math]44[/math] times slower for you than on Earth.  Distance. From Earth\u2019s frame of reference, the distance [math]x[/math] you travel is simply given by [math]\\displaystyle x(t) = \\int v(t)\\:dt[/math]. Using the convenient variable [math]\\alpha = a_0t/c[/math] and our above formula for [math]v(t)[/math], the integral is [math]\\displaystyle x(t) = \\frac{c^2}{a_0}\\int\\frac{\\alpha\\:d\\alpha}{\\sqrt{1+\\alpha^2}} = \\frac{c^2}{a_0}\\sqrt{1+\\alpha^2} + \\text{const.}[/math] (using a rather simple integral). Reinstating the original variables and adjusting the constant so that [math]x(0)=0[/math], we arrive at [math]\\displaystyle x(t) = \\frac{c^2}{a_0}\\left[\\sqrt{1+\\left(\\frac{a_0t}{c}\\right)^2} - 1\\right][/math]. We see that as [math]a_0t[/math] grows much larger than [math]c[/math], the distance traveled approaches [math]ct[/math]. After [math]75[/math] years on Earth, you have traveled [math]74[/math] light-years, only one less than if you had traveled at light-speed all the time. Even during the first year, you manage about [math]0.4[/math] light-years.  Proper time. As you accelerate, your perception of time slows down compared to that of Earth. They say it\u2019s been 75 years, but what do you say? Since you\u2019re not at rest, your own (proper) time has to be defined in a new frame of reference for each moment in time. By the formula for time dilation, each increment in your proper time [math]\\tau[/math] is related to the increment in Earth\u2019s time [math]t[/math] by [math]\\displaystyle d\\tau = dt\\sqrt{1-\\beta^2(t)}[/math], so with our above formula for [math]v(t) = c\\beta(t)[/math], the total elapsed proper time is [math]\\displaystyle \\tau(t) = \\frac{c}{a_0}\\int\\sqrt{1-\\frac{\\alpha^2}{1+\\alpha^2}}d\\alpha = \\frac{c}{a_0}\\int\\frac{d\\alpha}{\\sqrt{1+\\alpha^2}}[/math]. This integral is not as simple, but is very well-known and easy to look up. With the constant set by [math]\\tau(0)=0[/math], the answer is [math]\\displaystyle\\tau(t) = \\frac{c}{a_0}\\sinh^{-1}\\left(\\frac{a_0t}{c}\\right)[/math]. [math]\\sinh^{-1}[/math] is the inverse hyperbolic sine. It grows linearly when its argument is small, and transitions to logarithmic growth when its argument is large. Since logarithms grow slowly, you will perceive a much smaller amount of time than Earth does. When [math]1[/math] year has passed on Earth, only [math]311[/math] days will have passed on your spaceship. After [math]75[/math] Earth-years, [math]1783[/math] days have passed for you, still shy of [math]5[/math] years.  What if those 75 years are yours? So far, I\u2019ve assumed that the [math]75[/math] years are measured on Earth, but what if they\u2019re measured by you instead? Inverting the formula for [math]\\tau(t)[/math] gives [math]\\displaystyle t(\\tau) = \\frac{c}{a_0}\\sinh\\left(\\frac{a_0\\tau}{c}\\right)[/math], where the hyperbolic sine grows exponentially for large inputs. When[math]\\tau[/math] is [math]75[/math] years, [math]2\\cdot 10^{33}[/math] years will have passed on Earth \u2014 far, far longer than the current age of the Universe! During your [math]75[/math] years, you will be traveling so close to the speed of light that the accuracy of my calculator program breaks down. You will have traversed [math]2\\cdot 10^{33}[/math] light-years from the (now long-dead) Earth, finding yourself zooming through a greatly different Universe with nothing but slowly evaporating black holes. So yeah, I think it\u2019s best to let those [math]75[/math] years be measured by the Earth, not by you. ",
+            "date": "Answered August 6, 2019",
+            "views": "12",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Erik Kofoed",
+                    "user_href": "/profile/Erik-Kofoed-2"
+                },
+                {
+                    "user_id": "Donald Dowden",
+                    "user_href": "/profile/Donald-Dowden"
+                },
+                {
+                    "user_id": "Saskia Plura",
+                    "user_href": "/profile/Saskia-Plura"
+                },
+                {
+                    "user_id": "Alexander Zaleski",
+                    "user_href": "/profile/Alexander-Zaleski-2"
+                },
+                {
+                    "user_id": "Adam Stewart",
+                    "user_href": "/profile/Adam-Stewart-114"
+                },
+                {
+                    "user_id": "Yash Rane",
+                    "user_href": "/profile/Yash-Rane-51"
+                },
+                {
+                    "user_id": "\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2 \u039a\u03bf\u03c4\u03c4\u03b1\u03c1\u03ac\u03c2",
+                    "user_href": "/profile/\u0394\u03b7\u03bc\u03ae\u03c4\u03c1\u03b7\u03c2-\u039a\u03bf\u03c4\u03c4\u03b1\u03c1\u03ac\u03c2"
+                },
+                {
+                    "user_id": "Sadhbhav Singh",
+                    "user_href": "/profile/Sadhbhav-Singh"
+                },
+                {
+                    "user_id": "Paul Rosu",
+                    "user_href": "/profile/Paul-Rosu-1"
+                },
+                {
+                    "user_id": "Benyamin Kellow",
+                    "user_href": "/profile/Benyamin-Kellow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Cody Campbell",
+                "href": "/profile/Cody-Campbell-127"
+            },
+            "answer_text": "Not know the calculations off the top if my head, but recently watching a video on this topic(with Neil degrasse Tyson) , I believe i saw that traveling at 1 g constant acceration would reach light speed just short of 1 year. This is theoretically also a way to simulate gravity obviously. Accelerate half way there, turn around and decelerate at 1 g. This would also cause you to not overshoot the target. As for after the 354days (when light speed would be reached) im not sure. Not a theoretical physicist, but einstein did say its impossible. ",
+            "date": "Answered August 6, 2019",
+            "views": "63",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Bob HiHi",
+                    "user_href": "/profile/Bob-HiHi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christopher Pellerito",
+                "href": "/profile/Christopher-Pellerito"
+            },
+            "answer_text": "Nope. Using 300 billion m/s as c and 9.8 m/s as g, it would take 354.3 days to reach the speed of light, and of course you cannot accelerate a body with mass to the speed of light. ",
+            "date": "Answered August 6, 2019",
+            "views": "54",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Brock Pagnello",
+                    "user_href": "/profile/Brock-Pagnello"
+                }
+            ]
+        }
+    ]
+}

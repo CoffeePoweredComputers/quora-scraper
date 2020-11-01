@@ -1,0 +1,45 @@
+{
+    "title": "What is an interface objects? - Quora",
+    "tags": [
+        "Object-Oriented Programming",
+        "User Interface Design",
+        "User Interfaces",
+        "Java (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bruce Richardson",
+                "href": "/profile/Bruce-Richardson-4"
+            },
+            "answer_text": "If we are talking C#/Java\u2026 Essentials An interface defines a set of method signatures and groups them together under one name. The method declarations are abstract -that is, the interface only defines for each method Its nameNames and types of each parameterReturn type(Actually, that changed a little in Java 8 but let\u2019s keep the story simple here). Interfaces cannot be instantiated - you have to define a class which implements the interface. Classes can implement multiple interfaces. Declaring that a class implements an interface requires that the class provide concrete code for each of the abstract methods defined in the interface. If a method parameter has an interface type then it will accept objects of any class which implements that interface. If the method has an interface type, it can return an instance of any class which implements that interface. Subclasses inherit any interface implementations from their parents. Motivation and Uses Java and C# do not allow multiple inheritance (to avoid the problem of diamond inheritance). If inheriting from parent classes were the only way for a class to satisfy constraints, object hierarchies in all but the simplest applications would become very deep. The original motivation for interfaces was simply to compensate for the lack of multiple inheritance. However, there has for some time been a growing consensus that even single inheritance causes significant design problems. Interfaces have become a part of composition over inheritance. Basing a design on interfaces rather than classes allows you to specify the behaviours you want/need without committing yourself early on to a specific class hierarchy. Without interfaces, it is difficult in Java or C# to model a workflow where an object may go through many state changes. Developers have a tendency to either create classes which inherit from other classes which are not relevant to the current stage of the workflow or to create one monster class with fields/methods for every possible circumstance. Either way, the result is ugly and hard to maintain. Interfaces offer a solution where you define a common interface, implemented by different classes which contain only the information and methods relevant to their part of the workflow. I can show you an example\u2026 Over on StackExchange\u2019s Code Review site, I once reviewed code from somebody who was writing a job/ticket tracking application. He had chosen the \u201cone monster class\u201d solution. In my answer, I took some time to explain how an interface-based design would make his code safer and cleaner. ",
+            "date": "Answered November 25, 2016",
+            "views": "375",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rakesh Kumar",
+                "href": "/profile/Rakesh-Kumar-6160"
+            },
+            "answer_text": "Interface object in java is nothing. You can\u2019t create/instantiate object of interface in java. Yes you can make object reference of interface. interface HelloUniverse{ public String hello(); public String hi(); } public class HelloWorld implements HelloUniverse{ // You got to write definition of all methods in this classpublic String hello(){ return \u201cHello Universe!\u201d;}public String hi(){return \u201cHi Universe\u201d; }// Now implementation of own method of classpublic String helloWorld(){return \u201cHello World\u201d; }public static void main(String[] args){HelloUniverse hu = new HelloUniverse(); // You can\u2019t do thisHelloUniverse hu1 = new HelloWorld(); // You can do thisHelloWorld hw = new HelloWorld(); // You can do this } } ",
+            "date": "Answered December 18, 2017",
+            "views": "264",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Srinadh Chowdary",
+                    "user_href": "/profile/Srinadh-Chowdary-5"
+                },
+                {
+                    "user_id": "Yashovardhan Dhanania",
+                    "user_href": "/profile/Yashovardhan-Dhanania"
+                },
+                {
+                    "user_id": "Swarnim Bhardwaj",
+                    "user_href": "/profile/Swarnim-Bhardwaj"
+                }
+            ]
+        }
+    ]
+}

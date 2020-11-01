@@ -1,0 +1,46 @@
+{
+    "title": "How to check for end of file in Python - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "En.ny",
+                "href": "/profile/En-ny-1"
+            },
+            "answer_text": "fp.read() reads up to the end of the file, so after it's successfully finished you know the file is at EOF; there's no need to check. If it cannot reach EOF it will raise an exception. When reading a file in chunks rather than with read(), you know you've hit EOF when readreturns less than the number of bytes you requested. In that case, the following read call will return the empty string (not None). The following loop reads a file in chunks; it will call read at most once too many. assert n > 0\u00a0while True:\u00a0    chunk = fp.read(n)\u00a0    if chunk == '':\u00a0        break\u00a0    process(chunk)\u00a0Or, shorter: for chunk in iter(lambda: fp.read(n), ''):\u00a0    process(chunk)\u00a0",
+            "date": "Answered October 13, 2017",
+            "views": "52",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Barry Rountree",
+                    "user_href": "/profile/Barry-Rountree"
+                },
+                {
+                    "user_id": "Danny Wright",
+                    "user_href": "/profile/Danny-Wright-35"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Graham",
+                "href": "/profile/Jonathan-Graham-20"
+            },
+            "answer_text": "Generally speaking there's no need... You can read all the data into a variable with... f = open(\"test.txt\")\u00a0data = f.read()\u00a0print data\u00a0You can iterate across a file with... f= open(\"test.txt\")\u00a0data = \"\"\u00a0for line in f.readlines():\u00a0    data += line\u00a0print data\u00a0But if you're say reading chunks you can test for the length of the chunk returned... f = open(\"test.txt\")\u00a0block = f.read(100)\u00a0data = block\u00a0while len(block) == 100:\u00a0    block = f.read(100)\u00a0    data += block\u00a0print data\u00a0...or you can simply test for the empty string f = open(\"test.txt\")\u00a0block = f.read(100)\u00a0data = block\u00a0while  block != \"\":\u00a0    block = f.read(100)\u00a0    data += block\u00a0print data\u00a0",
+            "date": "Answered August 4, 2015",
+            "views": "56",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Navya Dommeti",
+                    "user_href": "/profile/Navya-Dommeti"
+                },
+                {
+                    "user_id": "Lukil Adhim",
+                    "user_href": "/profile/Lukil-Adhim"
+                }
+            ]
+        }
+    ]
+}

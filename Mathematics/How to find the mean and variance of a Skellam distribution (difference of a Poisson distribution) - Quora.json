@@ -1,0 +1,49 @@
+{
+    "title": "How to find the mean and variance of a Skellam distribution (difference of a Poisson distribution) - Quora",
+    "tags": [
+        "Poisson Distribution",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Yves Shen",
+                "href": "/profile/Yves-Shen-1"
+            },
+            "answer_text": "As you said, Skellam distribution is the distribution of the difference of two independent Poisson distributions. That is, let [math]N_1[/math] and [math]N_2[/math] be two independent random variables following Poisson distributions with [math]\\mu_1[/math] and [math]\\mu_2[/math], respectively, and you want the mean and variance of [math]N=N_1-N_2[/math]. A Poisson distribution with parameter [math]\\mu[/math] has mean and variance being both [math]\\mu[/math]. Mean: [math]E(N)=E(N_1-N_2)=E(N_1)-E(N_2)=\\mu_1-\\mu_2[/math] by additivity of expectation. Variance: [math]Var(N)=Var(N_1+(-N_2))=Var(N_1)+Var(-N_2)=Var(N_1)+Var(N_2)=\\mu_1+\\mu_2[/math] by the fact that the variance is additive when the random variables are independent. ",
+            "date": "Answered November 24, 2017",
+            "views": "431",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kiseki Hirakawa",
+                    "user_href": "/profile/\u5e73\u5ddd-\u5947\u8de1-Kiseki-Hirakawa"
+                },
+                {
+                    "user_id": "Guoyang Qin (\u79e6\u56fd\u9633)",
+                    "user_href": "/profile/Guoyang-Qin-\u79e6\u56fd\u9633"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sanket Agrawal",
+                "href": "/profile/Sanket-Agrawal-36"
+            },
+            "answer_text": "Since it is the difference of two Poisson distribution, the expectation and the variance can be worked out by simple arithmetic. Eg., if [math]X \\sim Poisson(\\lambda)[/math] and [math]Y \\sim Poisson(\\mu) [/math]independently, then we have [math]Z = X - Y,[/math] given as the difference of two independent Poisson variables. Then, [math]E(Z) = E(X) - E(Y) = \\lambda - \\mu[/math] and since [math]X[/math] and [math]Y [/math]are independent, [math]Var(Z) = Var(X) + Var(Y) = \\lambda + \\mu[/math] Thanks for A2A. ",
+            "date": "Answered February 13, 2018",
+            "views": "598",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shreya Srivastava",
+                    "user_href": "/profile/Shreya-Srivastava-175"
+                },
+                {
+                    "user_id": "ShivanshGarg",
+                    "user_href": "/profile/ShivanshGarg"
+                }
+            ]
+        }
+    ]
+}

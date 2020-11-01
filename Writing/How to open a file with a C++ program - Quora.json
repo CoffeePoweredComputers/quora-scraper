@@ -1,0 +1,35 @@
+{
+    "title": "How to open a file with a C++ program - Quora",
+    "tags": [
+        "File Systems",
+        "C++ (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joseph Newcomer",
+                "href": "/profile/Joseph-Newcomer-2"
+            },
+            "answer_text": "Hmmm. How to open a file? FILE * fh = fopen(\u201cfilename here\u201d, \u201coptions here\u201d); Did I miss something? Note that many C++ libraries have a file class (e.g., MFC\u2019s CFile class) but then all you have to do is read the documentation for your particular C++ library to see what is in it. ",
+            "date": "Answered July 29, 2020",
+            "views": "65",
+            "upvotes": " Answer requested by Luka Rapava",
+            "upvoters": [
+                {
+                    "user_id": "Alexander Lawrence Carter",
+                    "user_href": "/profile/Alexander-Lawrence-Carter"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "// basic file operations\u00a0#include <iostream>\u00a0#include <fstream>\u00a0using namespace std;\u00a0\u00a0int main () {\u00a0  ofstream myfile;\u00a0  myfile.open (\"example.txt\");\u00a0  myfile << \"Writing this to a file.\\n\";\u00a0  myfile.close();\u00a0  return 0;\u00a0}\u00a0Copied from The C++ Resources Network ",
+            "date": "Answered July 29, 2020",
+            "views": "66",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

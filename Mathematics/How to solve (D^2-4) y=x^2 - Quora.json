@@ -1,0 +1,61 @@
+{
+    "title": "How to solve (D^2-4) y=x^2 - Quora",
+    "tags": [
+        "Mathematics Homework Question ",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shambhu Bhat",
+                "href": "/profile/Shambhu-Bhat-2"
+            },
+            "answer_text": "Auxiliary equation is [math]m^2\u20134=(m+2)(m-2)=0[/math] The roots are 2 and -2. The complimentary function is [math]y_c=C_1e^{2x}+C_2 e^{-2x}[/math] Particular integral [math]y_p=\\dfrac {1}{D^2\u20134} x^2[/math] [math]=\\dfrac {1}{-4(1-\\frac {D^2}{4})} x^2[/math] [math]=\\dfrac {(1-\\frac {D^2}{4})^{-1}}{-4} x^2[/math] [math]=\\dfrac {(1+\\frac {D^2}{4}+\\frac {D^4}{16}+\u2026.)^{-1}}{-4} x^2[/math] [math]=\\dfrac {(x^2+\\frac {2}{4}+0+\u2026.)}{-4} x^2[/math] [math]=-\\dfrac {(2x^2+1)}{8}[/math] [math]y=y_c+y_p[/math] [math]=\\boxed{C_1e^{2x}+C_2 e^{-2x}-\\dfrac {(2x^2+1)}{8}}[/math] ",
+            "date": "Answered June 26, 2017",
+            "views": "53",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rajeev Magar",
+                    "user_href": "/profile/Rajeev-Magar-2"
+                },
+                {
+                    "user_id": "Santosh Rajput",
+                    "user_href": "/profile/Santosh-Rajput-102"
+                },
+                {
+                    "user_id": "Rishabh Singh",
+                    "user_href": "/profile/Rishabh-Singh-18"
+                },
+                {
+                    "user_id": "Uddipta Gogoi",
+                    "user_href": "/profile/Uddipta-Gogoi-11"
+                },
+                {
+                    "user_id": "Chandan Mohanty",
+                    "user_href": "/profile/Chandan-Mohanty-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Park",
+                "href": "/profile/Justin-Park-34"
+            },
+            "answer_text": "This is a second-order linear ordinary differential equation with constant coefficients. Although this can be solved using a particular integral, the equation is simple enough that I would instead solve this using undetermined coefficients. We have [math]y'' - 4y = x^2.[/math] First solve the homogeneous equation [math]y'' - 4y = 0,[/math] the solutions of which can be obtained by finding the roots of the characteristic polynomial: [math]r^2 - 4 = 0[/math] [math]r = 2, -2[/math] The homogeneous solution is therefore [math]y_h = c_1 e^{2x} + c_2 e^{-2x}.[/math] Now, to find a particular solution of the original equation, use undetermined coefficients. Since the right-hand side is [math]x^2[/math], let [math]y = ax^2 + bx + c.[/math] Then [math]y' = 2ax + b[/math] and [math]y'' = 2a.[/math] Substituting this back into the equation gives [math]y'' - 4y = 2a - 4(ax^2 + bx + c) = -4ax^2 - 4bx + (2a - 4c) = x^2.[/math] Thus, [math]a = -\\frac{1}{4}, b = 0, c = -\\frac{1}{8},[/math] so a particular solution is given by [math]y_p = -\\frac{x^2}{4} - \\frac{1}{8} = -\\frac{1}{8} (2x^2 + 1).[/math] The general solution of the differential equation is simply the sum of a particular solution and the homogeneous solution, so [math]y = c_1 e^{2x} + c_2 e^{-2x} - \\frac{1}{8} (2x^2 + 1).[/math] ",
+            "date": "Answered June 25, 2017",
+            "views": "33",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Ueberall",
+                    "user_href": "/profile/Thomas-Ueberall"
+                },
+                {
+                    "user_id": "Lev Borisov",
+                    "user_href": "/profile/Lev-Borisov"
+                }
+            ]
+        }
+    ]
+}

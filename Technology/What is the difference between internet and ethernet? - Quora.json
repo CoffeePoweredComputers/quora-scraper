@@ -1,0 +1,783 @@
+{
+    "title": "What is the difference between internet and ethernet? - Quora",
+    "tags": [
+        "Ethernet",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alec Cawley",
+                "href": "/profile/Alec-Cawley"
+            },
+            "answer_text": "Ethernet is a particular networking technology well adapted to the scale of one building, be it a single hours or a large office block. There are a number of versions of Ethernet which have developed over the years. And the fundamental thing that Ethernet does is transfer packets between computers.  The Internet is a world wide packet switching network. Since it is based on packets, and Ethernet delivers packets, the carrier for the Internet that most people encounter is Ethernet. Within one building , the Internet is often carried by Ethernet. But over longer distances, others technologies are used. The broadband connections used to connect homes to the Internet are not Ethernet; they may be a number of other technology's such as ADSL. Likewise, the trans-ocean fibre optic links that deliver Internet packets from one continent to another are not Ethernet. The Internet can be carried across many such links. But the one you encounter most often is Ethernet. ",
+            "date": "Answered September 15, 2015",
+            "views": "566",
+            "upvotes": " View 44 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Xu Chen",
+                    "user_href": "/profile/Xu-Chen-213"
+                },
+                {
+                    "user_id": "Haseeb UrRehman",
+                    "user_href": "/profile/Haseeb-UrRehman-7"
+                },
+                {
+                    "user_id": "Sai Teja Sangireddy",
+                    "user_href": "/profile/Sai-Teja-Sangireddy"
+                },
+                {
+                    "user_id": "Hamza Chaiheder",
+                    "user_href": "/profile/Hamza-Chaiheder"
+                },
+                {
+                    "user_id": "Keith Null",
+                    "user_href": "/profile/Keith-Null-3"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "George Mavr",
+                    "user_href": "/profile/George-Mavr-2"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Ankur Satya",
+                    "user_href": "/profile/Ankur-Satya"
+                },
+                {
+                    "user_id": "Karlo Sinkovi\u0107",
+                    "user_href": "/profile/Karlo-Sinkovi\u0107"
+                },
+                {
+                    "user_id": "David Major",
+                    "user_href": "/profile/David-Major-10"
+                },
+                {
+                    "user_id": "Ozlem Ozkan Kor",
+                    "user_href": "/profile/Ozlem-Ozkan-Kor"
+                },
+                {
+                    "user_id": "Anik Paul",
+                    "user_href": "/profile/Anik-Paul-17"
+                },
+                {
+                    "user_id": "John Smiths William",
+                    "user_href": "/profile/John-Smiths-William"
+                },
+                {
+                    "user_id": "Navjot Singh",
+                    "user_href": "/profile/Navjot-Singh-693"
+                },
+                {
+                    "user_id": "Shivam Sahu",
+                    "user_href": "/profile/Shivam-Sahu-156"
+                },
+                {
+                    "user_id": "Mary Adama Lamptey",
+                    "user_href": "/profile/Mary-Adama-Lamptey"
+                },
+                {
+                    "user_id": "William Xiang",
+                    "user_href": "/profile/William-Xiang-3"
+                },
+                {
+                    "user_id": "Sumeet Sharma",
+                    "user_href": "/profile/Sumeet-Sharma-160"
+                },
+                {
+                    "user_id": "Ramanuj Vishvjit",
+                    "user_href": "/profile/Ramanuj-Vishvjit"
+                },
+                {
+                    "user_id": "Henry Yang",
+                    "user_href": "/profile/Henry-Yang-1"
+                },
+                {
+                    "user_id": "Jeff Chiu",
+                    "user_href": "/profile/Jeff-Chiu-8"
+                },
+                {
+                    "user_id": "Muhammed Yusuf \u015eener",
+                    "user_href": "/profile/Muhammed-Yusuf-\u015eener"
+                },
+                {
+                    "user_id": "Harpreet Singh",
+                    "user_href": "/profile/Harpreet-Singh-1751"
+                },
+                {
+                    "user_id": "PRITAM DEY",
+                    "user_href": "/profile/PRITAM-DEY-37"
+                },
+                {
+                    "user_id": "Yushan Zhang",
+                    "user_href": "/profile/Yushan-Zhang-10"
+                },
+                {
+                    "user_id": "Weierstrass Pronton",
+                    "user_href": "/profile/Weierstrass-Pronton"
+                },
+                {
+                    "user_id": "Ajit Kumar",
+                    "user_href": "/profile/Ajit-Kumar-457"
+                },
+                {
+                    "user_id": "M\u00f8h\u00e6m\u00ebd H\u00fa\u00dfs\u00ea\u00een \u00c5hm\u00ebd",
+                    "user_href": "/profile/M\u00f8h\u00e6m\u00ebd-H\u00fa\u00dfs\u00ea\u00een-\u00c5hm\u00ebd"
+                },
+                {
+                    "user_id": "Terence Maria Shiny",
+                    "user_href": "/profile/Terence-Maria-Shiny"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anthony Bartoletti",
+                "href": "/profile/Anthony-Bartoletti-1"
+            },
+            "answer_text": "Ethernet is a very common, lower-level (sometimes called \u201clayer-2, or datalink-layer) data transmission protocol that only operates within a \u201clocal area network\u201d (LAN). Such transmissions are conducted \u201cmachine to machine\u201d using a given machine\u2019s hardware MAC (Media Access Control) address. A discovery protocol called ARP allows each machine in the LAN to respond to \u201cWhat MAC has this IP address\u201d with \u201cThis MAC\u201d, and so data gets routed to the right machine. In principle, machines whose network cards \u201csee\u201d layer-2 transmissions that are not addressed to their own MAC address are supposed to ignore that data. The Internet is the planet-scale network of millions of smaller networks. It operates \u201chop-by-hop\u201d using layer-2 data transmissions, but encapsulates higher-level protocols (TCP and UDP over IP), whereby billions of packets are routed by IP address across the globe, being bundled and unbundled at each hop (major Internet router) so the the \u201cbest path\u201d from source to a destination can be selected (which can change from moment to moment due to congestion issues.) These \u201cmajor Internet routers\u201d are operated by major telcos - they are sort of the ISP for your ISP, and \u201cpeer\u201d with one another to route traffic globally. When the TCP/IP (or UDP/IP) packets are delivered to their final router (such as your home or business router/gateway, the packets may again revert to layer-2 Ethernet protocol to be delivered to your specific machine. ",
+            "date": "Answered January 16, 2019",
+            "views": "42",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shefali Sharma",
+                    "user_href": "/profile/Shefali-Sharma-46"
+                },
+                {
+                    "user_id": "Sujith Kumar",
+                    "user_href": "/profile/Sujith-Kumar-102"
+                },
+                {
+                    "user_id": "Sanjarbek Jonuzoqov",
+                    "user_href": "/profile/Sanjarbek-Jonuzoqov"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Heli Kolambekar",
+                    "user_href": "/profile/Heli-Kolambekar"
+                },
+                {
+                    "user_id": "J Oswald",
+                    "user_href": "/profile/J-Oswald"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles Hill",
+                "href": "/profile/Charles-Hill-25"
+            },
+            "answer_text": "The Ethernet protocol is a layer 2 network protocol in the Open Systems Interconnection model (OSI model). IP or Internet Protocol is a layer 3 network protocol. An Ethernet frame can contain an IP packet, so they work in concert. Ethernet is primarily a local area network (LAN) protocol. Device addresses are assigned by the hardware or software manufacturer so that each interface has a globally unique address, but these addresses are not hierarchical, so the overhead to use Ethernet to globally route traffic would involve very high resource overhead. IP address space is allocated globally by region. Regional Internet Registries (RIRs) are nonprofit corporations that administer and register Internet Protocol (IP) address space and Autonomous System (AS) numbers within a defined region, so that IP address routing information can be exchanged globally among the router devices in the default-free zone. Because addresses can be summarized and advertised via a routing protocol by Autonomous System, the overhead is low enough that provider routers can hold the entirety of the Internet\u2019s routing information, which allows it to function on a global scale. ",
+            "date": "Answered March 2, 2018",
+            "views": "38",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Jon Opacich",
+                    "user_href": "/profile/Jon-Opacich"
+                },
+                {
+                    "user_id": "Anoopps Kumar",
+                    "user_href": "/profile/Anoopps-Kumar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pramod Niraneya",
+                "href": "/profile/Pramod-Niraneya"
+            },
+            "answer_text": "Internet is the massive global system that connects computer networks around the world together. Millions of private, public, academic, business, and government networks worldwide connect with each other over the internet to share massive amounts of information, resources and services. Internet is what we use to access web pages, send e-mails, listen to music or watch videos online. It hosts an extensive range of information, one that we generally take for granted today. Ethernet is basically a network that allows computers in a local area to connect to each other. It is a group of technologies that allow computers to transmit data between each other. The computers connected over the Ethernet are usually within the same building or within close proximity of each other. With modern technology and improvements in Ethernet cables, the range of an Ethernet network can be improved up to a maximum span of ten kilometers. However, since the computers use meters of cable to connect to each other, it is impractical to connect computers very far away from each other. ",
+            "date": "Answered January 16, 2019",
+            "views": "956",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Nikola Miladinovic",
+                    "user_href": "/profile/Nikola-Miladinovic-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Allen",
+                "href": "/profile/Paul-Allen-213"
+            },
+            "answer_text": "To use an analogy - one with plenty of (pot)holes - Ethernet is like the road system without lane lines or markers. Some roads are concrete, some asphalt, some are dirt, some are public, some are private, some are behind gates; but they are all places for vehicles to drive (as opposed to say trains\u2026 we hope). TCP/IP (Transmission Control Protocol/Internet Protocol) is like the lane lines, road markers, the rules that govern how traffic flows, and what kinds of vehicles are allowed to be on the road. Finally, \u201cThe Internet,\u201d as you experience it, is like a certain kind of traffic that can only enter and exit the roadway at certain on/off ramps. This implies that there are other vehicles and kinds of traffic sharing the road and going other places; and there are. Ethernet is called \u201cethernet\u201d because some of the first cables used to connect computers using the early Ethernet protocols actually had an insulator in them that contained ether. ",
+            "date": "Answered May 22, 2018",
+            "views": "53",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Srujan Raj",
+                    "user_href": "/profile/Srujan-Raj-1"
+                },
+                {
+                    "user_id": "Roger Heckman",
+                    "user_href": "/profile/Roger-Heckman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Owen",
+                "href": "/profile/Chris-Owen-53"
+            },
+            "answer_text": "What is the difference between Ethernet and the Internet? The uneducated will muddle these meanings that have zero in common meaning. Ethernet is a Physical Layer or Media of transportation of information. Typically Copper Twisted pair cable, it can be used to describe a port on a device such as a switch. Internet is a collaboration of many computers usually having Websites or other services running on them for others to access from great distances. INTRANET is an INTERNAL network of filtered Internet sites and can be other Websites that are not published for Internet use. A Private Internet just for staff or others within a complex such as a college/university or hospital would use such a network. ",
+            "date": "Answered January 16, 2019",
+            "views": "16",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wyla Reedy",
+                    "user_href": "/profile/Wyla-Reedy"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Ben Storm",
+                    "user_href": "/profile/Ben-Storm-1"
+                },
+                {
+                    "user_id": "Greg Behrens",
+                    "user_href": "/profile/Greg-Behrens-1"
+                },
+                {
+                    "user_id": "Brian Dague",
+                    "user_href": "/profile/Brian-Dague"
+                },
+                {
+                    "user_id": "Read Carlton",
+                    "user_href": "/profile/Read-Carlton"
+                },
+                {
+                    "user_id": "Al Klein",
+                    "user_href": "/profile/Al-Klein"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dinesh Sharma",
+                "href": "/profile/Dinesh-Sharma-191"
+            },
+            "answer_text": "Ethernet is communication standard for transferring data between two networking devices. It comprises of the physical layer, which are the typical Cat 5 cables used for connection, fiber cables can also run on Ethernet standard. The other layer is the datalink layer which has signaling standards for transfer of data on Ethernet. Internet on the other hand is a collection of all the world networks connected together using different technologies and are able to communicate through each other. Its just like a giant web of nodes (PCs,servers etc) connected with each other all over the world. ",
+            "date": "Answered December 28, 2016",
+            "views": "118",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Xu Chen",
+                    "user_href": "/profile/Xu-Chen-213"
+                },
+                {
+                    "user_id": "James H",
+                    "user_href": "/profile/James-H-534"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Vannalu Aruna",
+                    "user_href": "/profile/Vannalu-Aruna"
+                },
+                {
+                    "user_id": "Barry Lester Weingast",
+                    "user_href": "/profile/Barry-Lester-Weingast"
+                },
+                {
+                    "user_id": "Tsi Tsi",
+                    "user_href": "/profile/Tsi-Tsi"
+                },
+                {
+                    "user_id": "Ozlem Ozkan Kor",
+                    "user_href": "/profile/Ozlem-Ozkan-Kor"
+                },
+                {
+                    "user_id": "Anoopps Kumar",
+                    "user_href": "/profile/Anoopps-Kumar"
+                },
+                {
+                    "user_id": "Vinay Kumar",
+                    "user_href": "/profile/Vinay-Kumar-5383"
+                },
+                {
+                    "user_id": "Amitoz Kaur",
+                    "user_href": "/profile/Amitoz-Kaur-1"
+                },
+                {
+                    "user_id": "Elena B. Sanford",
+                    "user_href": "/profile/Elena-B-Sanford"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ravi Singh",
+                "href": "/profile/Ravi-Singh-389"
+            },
+            "answer_text": "Fantastic question! Ethernet is a broad family of standards (technologies) that govern the way communication takes place at a physical level and the most primitive layer of hardware-software interactions. If we look at the OSI model this is Layer 1 and part of Layer 2. Two primitives are defined by ethernet: the frame and the packet. [StartPacket][StartFrame][Data][EndFrame][EndPacket] The internet is much more abstract concept where some folks like to say: A publicly accessible network of networks. I hope this sheds at least a little light. I can add details or make clarifications. ",
+            "date": "Answered September 15, 2015",
+            "views": "79",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Jay Kadam",
+                    "user_href": "/profile/Jay-Kadam-61"
+                },
+                {
+                    "user_id": "Kalaimukil Murugesan",
+                    "user_href": "/profile/Kalaimukil-Murugesan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zoya Shaikh",
+                "href": "/profile/Zoya-Shaikh-71"
+            },
+            "answer_text": "In common terms, i would simply say \u2018Internet\u2019 is the web of inter connected networks to provide wide range of information. To create these networks you require a physical medium called \u2018Ethernet\u2019. For instance, in your working place, you will have each department with computers and laptops which will be connected in a network either by an \u2018Ethernet\u2019 cable or through wi-fi. In order to get these departments online or on internet, you will need to connect them to the gateway with internet access. ",
+            "date": "Answered September 21, 2017",
+            "views": "13",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roger Heckman",
+                "href": "/profile/Roger-Heckman"
+            },
+            "answer_text": "\u201cEthernet\u201d is typically a networking term and most often refers to the cables that connect one computer to another, or to hubs, switches, and routers which are then connected to other computers. This can be observed on a very local network. Typically the data being transferred or communicated is at the file and folder level. The \u201cinternet\u201d refers more to the vast network of servers and client machines around the world, where information it most often presented on web pages using http, java, php, etc\u2014while still allowing for the transfer of files between users, and uploading and downloading to and from servers. ",
+            "date": "Answered May 22, 2018",
+            "views": "942",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "A Ziegler",
+                    "user_href": "/profile/A-Ziegler-1"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Micha\u0142 Lewandowski",
+                    "user_href": "/profile/Micha\u0142-Lewandowski-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Wilson",
+                "href": "/profile/Paul-Wilson-82"
+            },
+            "answer_text": "Ethernet enables what\u2019s referred to as a Local Area Network. Simply, that\u2019s a collection of computers and printers all in the same small area. That\u2019s why it\u2019s a \u201clocal\u201d network. The blue or black cable that you see so often in offices and homes provide the hardware that connects it all together, and \u201cethernet\u201d is the name of the protocol that allows information to be exchanged between devices. The Internet, on the other hand, is an accumulation of lots and lots of networks interconnected so that information from any one PC can reach another PC or a server. It\u2019s reasonable to look at an ethernet-connected network as one small part of the whole Internet. ",
+            "date": "Answered May 22, 2018",
+            "views": "762",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Brower",
+                "href": "/profile/David-Brower"
+            },
+            "answer_text": "Ethernet is to Internet as roads are to the transportation of goods.   Ethernet is one kind of technology used to carry packets of information that can also travel by other means.    Ethernet uses wires of one kind or another; roads are flat-(ish).   WiFi uses no wires, and goes through the air.  Internet is the space you can reach by any technology that has compatible packets, addresses, and connected routes over any technology. There is a description of using homing pigeons to carry Internet traffic.  (High bandwidth, high latency, unreliable delivery). Page on ietf.org ",
+            "date": "Answered September 15, 2015",
+            "views": "14",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Frans Jeferson",
+                    "user_href": "/profile/Frans-Jeferson"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Zheng De Ng",
+                    "user_href": "/profile/Zheng-De-Ng"
+                },
+                {
+                    "user_id": "Chin Sem Chang",
+                    "user_href": "/profile/Chin-Sem-Chang"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Abilash-t"
+                },
+                {
+                    "user_id": "Ankit Anand",
+                    "user_href": "/profile/Ankit-Anand-3"
+                },
+                {
+                    "user_id": "Suman Maji",
+                    "user_href": "/profile/Suman-Maji-4"
+                },
+                {
+                    "user_id": "Patryk Az",
+                    "user_href": "/profile/Patryk-Az"
+                },
+                {
+                    "user_id": "Jay Kadam",
+                    "user_href": "/profile/Jay-Kadam-61"
+                },
+                {
+                    "user_id": "Bruno Bini",
+                    "user_href": "/profile/Bruno-Bini"
+                },
+                {
+                    "user_id": "Yash Aggarwal",
+                    "user_href": "/profile/Yash-Aggarwal-21"
+                },
+                {
+                    "user_id": "Sahil Sharma",
+                    "user_href": "/profile/Sahil-Sharma-307"
+                },
+                {
+                    "user_id": "Greg Kemnitz",
+                    "user_href": "/profile/Greg-Kemnitz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Smith",
+                "href": "/profile/Daniel-Smith-2680"
+            },
+            "answer_text": "Internet is a Wide Area Network, whereas Ethernet is a Local Area Network. It can be possible to connect a large number of devices around the world using internet. Internet allows the user to exchange information instantly. Internet offers various resources and services. In other words, internet is a global system of interconnected computer networks. On the contrary, an Ethernet is a networking technology that is basically used in local area networks. In a local area network, different computers are connected within a primary physical space. A LAN is capable of covering a small geographical area. There is only one internet, but there are multiple Ethernets. ",
+            "date": "Answered September 12, 2019",
+            "views": "272",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Iris Reid",
+                "href": "/profile/Iris-Reid"
+            },
+            "answer_text": "Ethernet and Internet are both the same terms for data transfer and sharing information. If we are making a network in one room, building, or a particular location then it's called as an Ethernet which is also know as a local area network(LAN). If you use global information from one city to another, one country to another country, it's possible through wide area network(WAN), which stands as an Internet. If you want to get detailed information about Ethernet and Internet, click on this link: Internet vs Ethernet ",
+            "date": "Answered March 12, 2018",
+            "views": "585",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Sanjay Kumar",
+                    "user_href": "/profile/Sanjay-Kumar-16076"
+                },
+                {
+                    "user_id": "Vivek Soni",
+                    "user_href": "/profile/Vivek-Soni-199"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tamal Biswas",
+                "href": "/profile/Tamal-Biswas-3"
+            },
+            "answer_text": "Internet: Global Computer network, network of various sized network, Connectivity between you and rest of the world, connectivity between your country to rest of the world, connectivity between whole world to whole world. Ethernet: A network technology to connect to network/internet. In layman's term a bunch of wires comprised into a cable enables you to connect to network/internet. ",
+            "date": "Answered May 2, 2015",
+            "views": "101",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "HJ P",
+                    "user_href": "/profile/HJ-P-15"
+                },
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Jitendra Irungbam",
+                    "user_href": "/profile/Jitendra-Irungbam"
+                },
+                {
+                    "user_id": "Yash Aggarwal",
+                    "user_href": "/profile/Yash-Aggarwal-21"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sonali Hiranandani",
+                "href": "/profile/Sonali-Hiranandani"
+            },
+            "answer_text": "Internet is a WAN i.e wide area network. While Ethernet is is LAN protocol i.e local area network.. Internet connects multiple LANs among them. You can relate Ethernet to those physical CAT cables that we use in modems/routers..As those cables are used to form a LAN to make a local network by connecting some devices, ethernet was evolved then as a LAN protocol.. Internet is like a pool that connects LANs, via many networks.. Hope this helped, if you find any flaw, ractify me..As learning is fun :) ",
+            "date": "Answered May 13, 2017",
+            "views": "18",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hritik Kumar Murmu",
+                "href": "/profile/Hritik-Kumar-Murmu"
+            },
+            "answer_text": "The \u201cinternet\u201d is a world wide packet switching network. Since it is based on packets, and \u201cethernet\u201d delivers packets, the carrier for the \u201cinternet\u201d that most people encounter is \u201cethernet\u201d .Within one building , the \u201cinternet\u201d is often carried by \u201cethernet\u201d . But over longer distances, others technologies are used. ",
+            "date": "Answered July 8, 2017",
+            "views": "35",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "AKARSH",
+                    "user_href": "/profile/AKARSH-8"
+                },
+                {
+                    "user_id": "Sneha Mathi",
+                    "user_href": "/profile/Sneha-Mathi"
+                },
+                {
+                    "user_id": "John Sethu",
+                    "user_href": "/profile/John-Sethu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jordi Conrald",
+                "href": "/profile/Jordi-Conrald-1"
+            },
+            "answer_text": "Not in the slightest bit. Ethernet defines connectivity standards and a large family of cabling models -802.3x family- works typically at the layers 1 and 2 of the OSI model. Ethernet defines just wired standards at both layers. The 802.11x family handles wireless. And the internet\u2026 well is the internet. Giant interconnection of WAN networks ( there are a variety of defs) . ",
+            "date": "Answered November 18, 2017",
+            "views": "615",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dale Sargent",
+                "href": "/profile/Dale-Sargent-1"
+            },
+            "answer_text": "Internet is shorthand for internal network. The Internet as we have labeled it isn\u2019t actual an internet it is a WAN or wide area network. Ethernet is the name of the suite of protocols that support communications over a network whether it be an internet or the Internet. ",
+            "date": "Answered November 18, 2017",
+            "views": "74",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mary Ware",
+                "href": "/profile/Mary-Ware-2"
+            },
+            "answer_text": "Both Internet and ethernet are used as a medium to transfer data. However, Ethernet is basically a local area network to connect computer systems to one another within a particular locality. Whereas, Internet is a wide area network that enables different computers to get connected sitting at different places of the world with each other. ",
+            "date": "Answered December 6, 2017",
+            "views": "3",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                },
+                {
+                    "user_id": "Anilkumar Mamillapalli",
+                    "user_href": "/profile/Anilkumar-Mamillapalli"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rosland MJ",
+                "href": "/profile/Rosland-MJ"
+            },
+            "answer_text": "They are not the same but is intended to transfer data in a network and operate on different OSI layer for data communication . In short To understand the difference, Ethernet protocaol operates on a secondlayer (data interface) that rileks the amount of data transfer a device is rated from 1/10/100/1000 Or multiplies of GB. A comparable protocol will be ATM (Ansynchronous Transfer Mode) usually used optical switch gears. Internet data transport operates at the 4\u20137 layer using TCP-IP protocol that determines the data in packetised format, both work together to deliver you all the Applications data on this network we call the Internet ",
+            "date": "Answered November 18, 2017",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Conto",
+                "href": "/profile/Richard-Conto"
+            },
+            "answer_text": "The question is \u201cWhat is the difference between Ethernet and the Internet?\u201d I\u2019m favoring metaphors and similes these days. A simile for this would be: Ethernet is to the Internet as the postal carrier who delivers letters to your home is to the international postal system. ",
+            "date": "Answered January 17, 2019",
+            "views": "123",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kush Rajput",
+                "href": "/profile/Kush-Rajput-8"
+            },
+            "answer_text": "Internet is World Wide Web Service and Ethernet is a system for connecting a number of computer systems to form a local area network, with protocols to control the passing of information and to avoid simultaneous transmission by two or more systems. ",
+            "date": "Answered November 18, 2016",
+            "views": "32",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Talat Noor",
+                    "user_href": "/profile/Talat-Noor-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Karl Hildreth",
+                "href": "/profile/Karl-Hildreth"
+            },
+            "answer_text": "Ethernet refers to connections in a particular area. The internet refers to the connections in the whole world. Nowadays one uses the other to be connected as a lot of data is sent and received. ",
+            "date": "Answered May 9, 2020",
+            "views": "43",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Thanikasalam Krishnasamy",
+                "href": "/profile/Thanikasalam-Krishnasamy"
+            },
+            "answer_text": "Internet refers to network. Ethernet refers to hardware device. Internet refers to world wide communication network. While Ethernet adapter or Ethernet cable is a hardware device which helps to connect network devices & computers to achieve the local network or world wide network (Internet). ",
+            "date": "Answered December 6, 2017",
+            "views": "243",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin Rome",
+                "href": "/profile/Kevin-Rome-2"
+            },
+            "answer_text": "In simplest terms, Ethernet is a way to connect two or more computer systems together to form a local network. Internet is a world-wide network of interconnected networks. ",
+            "date": "Answered March 2, 2018",
+            "views": "399",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Max Boettger",
+                "href": "/profile/Max-Boettger-2"
+            },
+            "answer_text": "Difference between Internet and Ethernet Ethernet is local, internet is global. ",
+            "date": "Answered March 22, 2017",
+            "views": "21",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dan Kits",
+                    "user_href": "/profile/Dan-Kits"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rasel Khan Taj",
+                "href": "/profile/Rasel-Khan-Taj"
+            },
+            "answer_text": "Ethernet is a particular networking system technology well adapted to the scale of one building, be it a single hours or a large office block. There are a number of... ",
+            "date": "Answered August 3, 2016",
+            "views": "19",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Johnny Johnson",
+                "href": "/profile/Johnny-Johnson-161"
+            },
+            "answer_text": "Ethernet is a system for connecting a number of computer systems to form a local area network. The internet is a global computer network that provides a variety of information and communication facilities ",
+            "date": "Answered March 2, 2018",
+            "views": "224",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Wes Deviers",
+                "href": "/profile/Wes-Deviers-1"
+            },
+            "answer_text": "Nope. Ethernet is a standard for wired connections. Most commonly using plastic plugs with 8 conductor wires. Internet is..interent. It\u2019s roughly analogous to copper power lines in your house and electricity. ",
+            "date": "Answered November 18, 2017",
+            "views": "744",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Akshay Korgaonkar",
+                "href": "/profile/Akshay-Korgaonkar-2"
+            },
+            "answer_text": "Ethernet is what gives you Internet which is the media and Internet is the medium. ",
+            "date": "Answered May 10, 2020",
+            "views": "23",
+            "upvotes": "0"
+        }
+    ]
+}

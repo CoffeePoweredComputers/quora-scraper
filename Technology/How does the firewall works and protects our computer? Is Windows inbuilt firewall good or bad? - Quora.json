@@ -1,0 +1,29 @@
+{
+    "title": "How does the firewall works and protects our computer? Is Windows inbuilt firewall good or bad? - Quora",
+    "tags": [
+        "Firewalls",
+        "Computer Security"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rodney Baker",
+                "href": "/profile/Rodney-Baker-1"
+            },
+            "answer_text": "A firewall in the context of computers and networks is named after a firewall from the world of buildings. For example, in the case of a block of units/town-houses or the like, which are separate dwellings joined together into a single construction, a firewall is used between the dwellings to prevent or slow the spread of fire from one dwelling to the next. A firewall in the computer networks world performs the same function - it is the \u201cgatekeeper\u201d of the network, if you like. It keeps unwanted traffic out, and can also control what traffic can exit a network. It does so by comparing incoming and outgoing network traffic to a pre-defined set of rules. Those rules can be created in two ways: Specify traffic that IS allowed, and block everything else;Specify traffic to be blocked, and allow everything else.It is more common to use 1 for incoming traffic, and 2 for outgoing traffic, although 1 may be used in both directions. Traffic can be matched on any or all of the following parameters: Network protocolSource addressDestination addressSource portDestination portThe Windows firewall does the same thing, but on a local computer level. How effective it is is very much dependent on how well it is configured and tuned. It should NOT, however, be the only form of defense used. It should be considered the \u201clast line of defense\u201d (unless your computer is directly connected to the internet e.g. via an internal cellular modem talking directly via the mobile network, or on a public WiFi network that you don\u2019t control, in which case you really don\u2019t have much choice). It is much, much better to keep unwanted traffic OUTSIDE your network than let it get inside and block it at your PC. That can be achieved by making sure that the stateful firewall and threat detection that is built into your ISP-provided router/modem is turned on and working. If you\u2019re keen, you can use a hardware-based firewall appliance between your modem and the rest of your network, but you need to have some idea of how to configure it or you\u2019ll kill your internet access. If you\u2019re connected to a network at work or school, hopefully you\u2019ll have a network administrator (either an employee or a contractor) who knows what they\u2019re doing and how to manage/monitor the firewall that protects the network. Don\u2019t disable the Windows firewall, though, unless you are 100% confident that you\u2019re only connected to a trusted network and that only other trusted devices connect to that network. Otherwise, you\u2019re simply asking for trouble. ",
+            "date": "Answered September 23, 2018",
+            "views": "287",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dima She",
+                "href": "/profile/Dima-She"
+            },
+            "answer_text": "That's funny misunderstanding. While most firewalls block connections to computer, Ms firewall mostly blocks outcoming connections. So it's not really protects computer, but protects other computers in network from evil stuff running on Ms windows. ",
+            "date": "Answered September 23, 2018",
+            "views": "52",
+            "upvotes": "0"
+        }
+    ]
+}

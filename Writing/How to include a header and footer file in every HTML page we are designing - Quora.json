@@ -1,0 +1,97 @@
+{
+    "title": "How to include a header and footer file in every HTML page we are designing - Quora",
+    "tags": [
+        "Header and Footer",
+        "Headers",
+        "HTML",
+        "Design",
+        "How-to Question",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mohit Panchal",
+                "href": "/profile/Mohit-Panchal-4"
+            },
+            "answer_text": "You can also add header and footer using jQuery too: <html>\u00a0<head>\u00a0<title></title>\u00a0<script src=\"//code.jquery.com/jquery-1.10.2.js\"></script>\u00a0<script> \u00a0$(function(){\u00a0  $(\"#header\").load(\"header.html\"); \u00a0  $(\"#footer\").load(\"footer.html\"); \u00a0});\u00a0</script> \u00a0</head>\u00a0<body>\u00a0<div id=\"header\"></div>\u00a0<!--Remaining section-->\u00a0<div id=\"footer\"></div>\u00a0</body>\u00a0</html>\u00a0No need to use php if u dont want to use it. Useful in most of the static websites. And if you want to use the header and footer to be used with php just add these two line to your index page: <?php include('header.php'); ?>\u00a0<div>\u00a0    <!--Code goes here-->\u00a0    \u00a0    <!--Code ends here-->\u00a0</div>\u00a0\u00a0<?php include('footer.php'); ?>\u00a0And moreover if you don\u2019t want to use the header in your page then don\u2019t include: <?php include('header.php'); ?>\u00a0if don\u2019t want to add footer in your then don\u2019t include: <?php include('footer.php'); ?>\u00a0You can also try Server Side Includes - Wikipedia ",
+            "date": "Updated June 15, 2020",
+            "views": "537",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wesley Toma-Lee",
+                    "user_href": "/profile/Wesley-Toma-Lee"
+                },
+                {
+                    "user_id": "Meghavi Kshatriya",
+                    "user_href": "/profile/Meghavi-Kshatriya-1"
+                },
+                {
+                    "user_id": "Minu Alex",
+                    "user_href": "/profile/Minu-Alex-3"
+                },
+                {
+                    "user_id": "Lakshya Goyal",
+                    "user_href": "/profile/Lakshya-Goyal-4"
+                },
+                {
+                    "user_id": "Abi Smart",
+                    "user_href": "/profile/Abi-Smart-5"
+                },
+                {
+                    "user_id": "Christiaan Huynen",
+                    "user_href": "/profile/Christiaan-Huynen-1"
+                },
+                {
+                    "user_id": "Alison McMillan",
+                    "user_href": "/profile/Alison-McMillan-8"
+                },
+                {
+                    "user_id": "Zara Jamshaid",
+                    "user_href": "/profile/Zara-Jamshaid"
+                },
+                {
+                    "user_id": "Golak Chandra Satiar",
+                    "user_href": "/profile/Golak-Chandra-Satiar"
+                },
+                {
+                    "user_id": "Anirudh Rathore",
+                    "user_href": "/profile/Anirudh-Rathore-13"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Herron",
+                "href": "/profile/David-Herron-1"
+            },
+            "answer_text": "I suppose this feature still exists \u2014 on a static HTML site using straight HTML it\u2019s possible to use \u201cServer Side Includes\u201d. However, nowadays there are several \u201cStatic Site Generator\u201d systems. I know the one I created, AkashaCMS - the powerful static file CMS to build your dream website \u2014 In such a system you write content in, for example Markdown, then run some software to render the Markdown files into HTML for your website using layout templates. In AkashaCMS you have several capabilities to have reusable code snippets that are used across the site such as in the header and footer. First is a layout template \u2014 each file declares which template it is to be rendered with. The template contains the full HTML for that type of page, and of course the site designer sets up each page as they wish. Second is what\u2019s called a \u201cpartial\u201d. These are code snippets that can be used anywhere on a page. This is the most likely place to have a common header/footer for the entire site. You create one Partial for the header, another for the footer, then every page layout template uses the Partial\u2019s for header and footer. ",
+            "date": "Answered October 14, 2017",
+            "views": "296",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Clinton Ufere",
+                    "user_href": "/profile/Clinton-Ufere"
+                },
+                {
+                    "user_id": "Leif Neland",
+                    "user_href": "/profile/Leif-Neland-1"
+                },
+                {
+                    "user_id": "Ceyhan Ileri",
+                    "user_href": "/profile/Ceyhan-Ileri"
+                },
+                {
+                    "user_id": "Samson Rapando",
+                    "user_href": "/profile/Samson-Rapando"
+                }
+            ]
+        }
+    ]
+}

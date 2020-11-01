@@ -1,0 +1,658 @@
+{
+    "title": "How do scientists from LIGO know that what they discovered is caused by gravitational waves? - Quora",
+    "tags": [
+        "Laser Interferometer Gravitational-wave Observatory (LIGO)",
+        "Detection of Gravitational Waves (February 2016)",
+        "Waves (physics)",
+        "Astrophysics",
+        "Astronomy"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shern Ren Tee",
+                "href": "/profile/Shern-Ren-Tee"
+            },
+            "answer_text": "This:   \u200bis how.  When I first saw the news, I wanted to read the paper (on my phone browser, typing \"prl\" - the journal name - autocompletes with \"gravitational waves\"!) but I couldn't get past this figure. It's astounding for a few reasons.  1. Simply looking at the match between the signal (top graphs) and the computer predictions (middle graphs) is mind-blowing. This is the kind of theory - experiment match scientists would die for.  2. Not only does the signal match theoretical predictions, the two signals match each other, further confirmation that it's a real, astronomical signal. The two detectors are in opposite corners of the United States - only a massive astronomical effect could affect both of them simultaneously and so clearly. Apparently the team wondered at one point if a lightning strike in Africa might have caused it, but that could also be ruled out because: 3. The frequency characteristic is highly unusual. This is what made this signal the slam dunk and the one they quickly pushed out for publication. You can see that initially the signal has low frequency (the \"peaks\" are spaced out), and then the frequency increases at the same time as the amplitude (the heights of the peaks), and then suddenly the amplitude drops massively even while the frequency is still increasing.  This makes the signal convincing because the vast majority of terrestrial noise is either random or fixed frequency. If they'd picked up noise from the electrical mains, it would have been 60Hz (I think? Not sure what it is in the US). If it were radio, you'd see a signal hover around millions of hertz - it would be in the wrong frequency band too. On the other hand, a black hole merger makes complete sense - initially the black holes are doing their normal orbiting, but as they get closer to each other their speeds pick up and the waves they throw off get louder, and then there's an almighty crash! And the new bigger black hole \"rings\" the excess energy away and subsides into stillness.  It's magnificent. EDIT: There are some subsidiary questions below, which I'll answer here! Also, immense apologies for initially attaching a very ugly small image, as this was initially answered on my phone. How do we know they were emitted 1.3 billion years ago? No we don't! What we do know is that they were emitted 1.3 billion light-years away (or to use the units from the abstract, 410 megaparsecs). We know this by going through the following steps: First, calculate what the signal looks like for a whole heap of possible black hole mergers of different sizes, distances and angles.Then comb through all the experimental data and see if any of it looks like any of the signals.Aha! We have an initial match for a signal where a 36 Ms black hole eats a 29 Ms black hole and spits out a 62 Ms black hole. But where did the other 3 Ms go? (Note: Ms = solar mass)That energy disappeared as gravitational waves! (Wow.) But that means we know how strong it was at source, and:We know how strong it was here on Earth, where we measured it. That means we know how far away it was!Now, we also know that the signal arrived 7 milliseconds later at the Washington detector than it did at the Louisiana detector. Since gravitational waves travel at the speed of light, and since we know the distance between Louisiana and Washington, we know the angle in the sky from which the signal came!See the answers here for more explanations. Do we know that gravitational waves travel at the speed of light, though? No, we don't! This is one of those areas where theory simply hasn't given us a good reason for doubt. I can give you a hand-wavey reason: gravitational waves are ripples in space-time itself, and the only speed that is \"embedded\" into the structure of space-time - the only way to convert between units of time and units of space when doing special relativity - is the speed of light, so you are going to have to work very hard to smuggle another, not-speed-of-light speed into the structure of space-time which gravitational waves could also travel at! We haven't measured that from this experiment, though. We could do it if we had three interferometers - simply pretend that you have three separate pairs, do the analyses separately as above (assuming the speed of light), and if the answers for \"where in the sky did the signal come from\" point in wildly different directions, we will have a massive problem. I doubt it will come to that, but you never know! Stranger things have happened. Is the 5.1-sigma claim exaggerated? One comment below is that the noise is quite large, and therefore the claim of a 5.1-sigma significance - or the probability of an equivalent random event happening every 203,000 years - is exaggerated. This is an important and valid question. To put it in non-statistical terms: suppose you ran a tomato-canning factory that produces 400-gram cans of tomato. You randomly choose a can to test one day, and horror of horrors! It only weighs 397 grams! Has theft occurred? That depends: If the can-factory usually produces cans weighing 390-410 grams (corresponding to a sigma of about 3 grams), then of course a 397-gram can is entirely usual. The difference is just random (only 1 sigma).But if the can-factory usually produces cans weighing 398-402 grams (sigma about 0.6 grams) then a 397-gram can is highly unusual! Someone stole the 3 grams! (It's a 5-sigma difference, which has a very very small chance of random occurrence.)What happens is that if you leave the LIGO detectors on (as one does, to detect stuff), a whole lot of noise comes in, due to all the random motions in the machinery and circuitry and such. But the LIGO team is then making the claim that their signal looks completely different from that noise. They're not operating the can factory and seeing a slightly lighter can roll off; they're operating it and seeing a half-empty can come off it, and they know such an event should only happen by randomness once every 200 millennia, and hence they have a black hole merger! (Black holes eat canned tomatoes. Who knew?) They show their analysis in section V of their (freely available online) paper, and it basically does what it says on the ... can.  Let's take the graph on the right first. On the x-axis we have the \"detection statistic\", which is basically a \"how much would we bet on this event being a black hole merger?\" number, and the graph as a whole counts how often such events happen in the measurement data. (The number takes into account correlation between the two sensors; if one sensor returns a great signal but it's completely missing in the other sensor, that signal is greatly discounted.) You can see that, on the left side, events with a low likelihood of being a black hole merger occur fairly often. But events with a medium likelihood are much, much rarer - a detection statistic of 14 happens about a million times less often than a detection statistic of 8. But the GW150914 event has a statistic of 24, which is way larger still. Even events with a statistic of 20 only occur, again, about a millionth as often as the most likely events. That's where the 5.1 sigma estimate comes from. (Note that this isn't even an exact statistic, it's a lower bound, and includes a rather arbitrary factor of 3 for \"the number of search classes\", which is basically the statistical equivalent of humblebragging.) But what about the graph on the left? That's to answer the entirely legitimate objection: If you go looking for black hole mergers, of course you'll find them! So they do another search for \"anything weird\" as opposed to \"anything black hole merger Nobel prize-ish\". This time, there are events with a higher detection statistic of 32 - though note they are very. very rare. Why aren't they in the right side graph? Because, although they belong in the \"anything weird\" category, they certainly don't look like black hole mergers! But they do provide an independent baseline for how often we should expect to see those weird events, which is comparable to their other estimate. What this tells us is that even with the initial noise (fair comment), a signal like that is still highly statistically significant. It is worth noting that their detection statistic utilizes the spectral energy distribution, so that the frequency of the incoming signal is weighted for quite heavily (as one would expect; the instantaneous amplitude is bound to be a very noisy metric). The discrepancy between the initial noise and the modelled signal is far outweighed by the discrepancy between the massive final signal and the typical noise of the detector. Also, for what it's worth, the residuals are quite uncorrelated between the two detectors, as shown below:   ",
+            "date": "Updated February 23, 2016",
+            "views": "16",
+            "upvotes": " View 186 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jess H. Brewer",
+                    "user_href": "/profile/Jess-H-Brewer-3"
+                },
+                {
+                    "user_id": "Pax Sreekantan",
+                    "user_href": "/profile/Pax-Sreekantan"
+                },
+                {
+                    "user_id": "John Challis",
+                    "user_href": "/profile/John-Challis"
+                },
+                {
+                    "user_id": "Ben Tennison",
+                    "user_href": "/profile/Ben-Tennison-24"
+                },
+                {
+                    "user_id": "Hasib Rahman",
+                    "user_href": "/profile/Hasib-Rahman-47"
+                },
+                {
+                    "user_id": "Johnatan Holanda",
+                    "user_href": "/profile/Johnatan-Holanda"
+                },
+                {
+                    "user_id": "Chetan Nachane",
+                    "user_href": "/profile/Chetan-Nachane-1"
+                },
+                {
+                    "user_id": "Lance Wenban",
+                    "user_href": "/profile/Lance-Wenban"
+                },
+                {
+                    "user_id": "Paul Vittay",
+                    "user_href": "/profile/Paul-Vittay"
+                },
+                {
+                    "user_id": "Scott Danzig",
+                    "user_href": "/profile/Scott-Danzig"
+                },
+                {
+                    "user_id": "Sudarshan Ghonge",
+                    "user_href": "/profile/Sudarshan-Ghonge"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Siddarth Tiwari",
+                    "user_href": "/profile/Siddarth-Tiwari"
+                },
+                {
+                    "user_id": "Bharat Choudhary",
+                    "user_href": "/profile/Bharat-Choudhary-62"
+                },
+                {
+                    "user_id": "Sagar Arora",
+                    "user_href": "/profile/Sagar-Arora-41"
+                },
+                {
+                    "user_id": "Pradeep Sethi",
+                    "user_href": "/profile/Pradeep-Sethi-10"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                },
+                {
+                    "user_id": "Deepak Ranganathan",
+                    "user_href": "/profile/Deepak-Ranganathan-2"
+                },
+                {
+                    "user_id": "Jonathan Sv\u00e4rd\u00e9n",
+                    "user_href": "/profile/Jonathan-Sv\u00e4rd\u00e9n"
+                },
+                {
+                    "user_id": "Connor Schwarz",
+                    "user_href": "/profile/Connor-Schwarz"
+                },
+                {
+                    "user_id": "Kalyan Subramanian",
+                    "user_href": "/profile/Kalyan-Subramanian-1"
+                },
+                {
+                    "user_id": "Yavuz Kaynar",
+                    "user_href": "/profile/Yavuz-Kaynar"
+                },
+                {
+                    "user_id": "Charlie Garcia",
+                    "user_href": "/profile/Charlie-Garcia-10"
+                },
+                {
+                    "user_id": "David Caune",
+                    "user_href": "/profile/David-Caune"
+                },
+                {
+                    "user_id": "Nghia Tran",
+                    "user_href": "/profile/Nghia-Tran-100"
+                },
+                {
+                    "user_id": "Kunal Singh Tanwar",
+                    "user_href": "/profile/Kunal-Singh-Tanwar-3"
+                },
+                {
+                    "user_id": "Syed Zaid Ali",
+                    "user_href": "/profile/Syed-Zaid-Ali-3"
+                },
+                {
+                    "user_id": "Ashish Chopra",
+                    "user_href": "/profile/Ashish-Chopra-1"
+                },
+                {
+                    "user_id": "Senthil Ganesh",
+                    "user_href": "/profile/Senthil-Ganesh-33"
+                },
+                {
+                    "user_id": "Jiban Adhikary",
+                    "user_href": "/profile/Jiban-Adhikary-1"
+                },
+                {
+                    "user_id": "Sayan Chatterjee",
+                    "user_href": "/profile/Sayan-Chatterjee-3"
+                },
+                {
+                    "user_id": "Bryce Cousins",
+                    "user_href": "/profile/Bryce-Cousins"
+                },
+                {
+                    "user_id": "Rachna Makhija",
+                    "user_href": "/profile/Rachna-Makhija-3"
+                },
+                {
+                    "user_id": "Sergiu Bologa",
+                    "user_href": "/profile/Sergiu-Bologa"
+                },
+                {
+                    "user_id": "Minh Ha",
+                    "user_href": "/profile/Minh-Ha-4"
+                },
+                {
+                    "user_id": "Vinay Sharma",
+                    "user_href": "/profile/Vinay-Sharma-21"
+                },
+                {
+                    "user_id": "Vadim Ippolitov",
+                    "user_href": "/profile/Vadim-Ippolitov"
+                },
+                {
+                    "user_id": "Sourabh Shrivastava",
+                    "user_href": "/profile/Sourabh-Shrivastava-3"
+                },
+                {
+                    "user_id": "Paul Urban",
+                    "user_href": "/profile/Paul-Urban-4"
+                },
+                {
+                    "user_id": "Lau Siaw Sam",
+                    "user_href": "/profile/Lau-Siaw-Sam"
+                },
+                {
+                    "user_id": "Daryl Beggs",
+                    "user_href": "/profile/Daryl-Beggs-1"
+                },
+                {
+                    "user_id": "Pat Britten",
+                    "user_href": "/profile/Pat-Britten"
+                },
+                {
+                    "user_id": "Rohit Mathew",
+                    "user_href": "/profile/Rohit-Mathew"
+                },
+                {
+                    "user_id": "Liviu Ionescu",
+                    "user_href": "/profile/Liviu-Ionescu-1"
+                },
+                {
+                    "user_id": "Akshaya SN",
+                    "user_href": "/profile/Akshaya-SN"
+                },
+                {
+                    "user_id": "Sumit Gupta",
+                    "user_href": "/profile/Sumit-Gupta-32"
+                },
+                {
+                    "user_id": "Myles Fullen",
+                    "user_href": "/profile/Myles-Fullen"
+                },
+                {
+                    "user_id": "Vishal Mondal",
+                    "user_href": "/profile/Vishal-Mondal"
+                },
+                {
+                    "user_id": "Ambalika Saha",
+                    "user_href": "/profile/Ambalika-Saha"
+                },
+                {
+                    "user_id": "Pierz Newton-John",
+                    "user_href": "/profile/Pierz-Newton-John"
+                },
+                {
+                    "user_id": "Aalay Kapadia",
+                    "user_href": "/profile/Aalay-Kapadia"
+                },
+                {
+                    "user_id": "Nyatom Taji",
+                    "user_href": "/profile/Nyatom-Taji"
+                },
+                {
+                    "user_id": "Shikhar Srivastava",
+                    "user_href": "/profile/Shikhar-Srivastava-4"
+                },
+                {
+                    "user_id": "Sadhu Pandu Ranga Rao",
+                    "user_href": "/profile/Sadhu-Pandu-Ranga-Rao"
+                },
+                {
+                    "user_id": "Harusha",
+                    "user_href": "/profile/Harusha"
+                },
+                {
+                    "user_id": "Frank David Popa",
+                    "user_href": "/profile/Frank-David-Popa"
+                },
+                {
+                    "user_id": "Naga Priya",
+                    "user_href": "/profile/Naga-Priya"
+                },
+                {
+                    "user_id": "Imam Hidayat",
+                    "user_href": "/profile/Imam-Hidayat"
+                },
+                {
+                    "user_id": "Ayush Jain",
+                    "user_href": "/profile/Ayush-Jain-185"
+                },
+                {
+                    "user_id": "Esther Wang",
+                    "user_href": "/profile/Esther-Wang-25"
+                },
+                {
+                    "user_id": "Monika Kumari",
+                    "user_href": "/profile/Monika-Kumari-17"
+                },
+                {
+                    "user_id": "Gary Thomas",
+                    "user_href": "/profile/Gary-Thomas-59"
+                },
+                {
+                    "user_id": "Ali Sabet",
+                    "user_href": "/profile/Ali-Sabet-6"
+                },
+                {
+                    "user_id": "Sonja Brits",
+                    "user_href": "/profile/Sonja-Brits"
+                },
+                {
+                    "user_id": "Dustin Nash",
+                    "user_href": "/profile/Dustin-Nash"
+                },
+                {
+                    "user_id": "Matteo Guzman",
+                    "user_href": "/profile/Matteo-Guzman"
+                },
+                {
+                    "user_id": "Jeetendra Gour",
+                    "user_href": "/profile/Jeetendra-Gour"
+                },
+                {
+                    "user_id": "Rafael de Oliveira",
+                    "user_href": "/profile/Rafael-de-Oliveira"
+                },
+                {
+                    "user_id": "C\u00e9sar Alberto Tapia Mar",
+                    "user_href": "/profile/C\u00e9sar-Alberto-Tapia-Mar"
+                },
+                {
+                    "user_id": "Mahendra Nandanwar",
+                    "user_href": "/profile/Mahendra-Nandanwar-1"
+                },
+                {
+                    "user_id": "Ashraf Rizvi",
+                    "user_href": "/profile/Ashraf-Rizvi"
+                },
+                {
+                    "user_id": "Aliyah Camut",
+                    "user_href": "/profile/Aliyah-Camut"
+                },
+                {
+                    "user_id": "Jesus Urquiza",
+                    "user_href": "/profile/Jesus-Urquiza"
+                },
+                {
+                    "user_id": "Satyam Kumar Shivam",
+                    "user_href": "/profile/Satyam-Kumar-Shivam"
+                },
+                {
+                    "user_id": "Ishaan Kumar",
+                    "user_href": "/profile/Ishaan-Kumar"
+                },
+                {
+                    "user_id": "Zvonimir Vanjak",
+                    "user_href": "/profile/Zvonimir-Vanjak"
+                },
+                {
+                    "user_id": "Krishnan Iyer",
+                    "user_href": "/profile/Krishnan-Iyer-4"
+                },
+                {
+                    "user_id": "Pranav Patil",
+                    "user_href": "/profile/Pranav-Patil-7"
+                },
+                {
+                    "user_id": "Srinidhi Kulkarni",
+                    "user_href": "/profile/Srinidhi-Kulkarni"
+                },
+                {
+                    "user_id": "Daksh Kumar",
+                    "user_href": "/profile/Daksh-Kumar-5"
+                },
+                {
+                    "user_id": "Aditya Sinha",
+                    "user_href": "/profile/Aditya-Sinha-18"
+                },
+                {
+                    "user_id": "Sandeep Kumar",
+                    "user_href": "/profile/Sandeep-Kumar-48"
+                },
+                {
+                    "user_id": "Vikram Rathi",
+                    "user_href": "/profile/Vikram-Rathi"
+                },
+                {
+                    "user_id": "Vivek Gupta",
+                    "user_href": "/profile/Vivek-Gupta-21"
+                },
+                {
+                    "user_id": "Amurta Nath",
+                    "user_href": "/profile/Amurta-Nath"
+                },
+                {
+                    "user_id": "Ankit Kumar",
+                    "user_href": "/profile/Ankit-Kumar-43"
+                },
+                {
+                    "user_id": "Berke Korkmaz",
+                    "user_href": "/profile/Berke-Korkmaz"
+                },
+                {
+                    "user_id": "Amit Pradhani",
+                    "user_href": "/profile/Amit-Pradhani"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Daniel Spector",
+                    "user_href": "/profile/Daniel-Spector"
+                },
+                {
+                    "user_id": "Vishnu Thirugnanasambandam",
+                    "user_href": "/profile/Vishnu-Thirugnanasambandam"
+                },
+                {
+                    "user_id": "Glenn Dowdle",
+                    "user_href": "/profile/Glenn-Dowdle"
+                },
+                {
+                    "user_id": "JG Thomas",
+                    "user_href": "/profile/JG-Thomas"
+                },
+                {
+                    "user_id": "Padmanabhan Mahadevan",
+                    "user_href": "/profile/Padmanabhan-Mahadevan"
+                },
+                {
+                    "user_id": "Aswin Kumar C S",
+                    "user_href": "/profile/Aswin-Kumar-C-S"
+                },
+                {
+                    "user_id": "Simon Patole",
+                    "user_href": "/profile/Simon-Patole"
+                },
+                {
+                    "user_id": "Sridhar Kotha",
+                    "user_href": "/profile/Sridhar-Kotha-2"
+                },
+                {
+                    "user_id": "Kiran Patel",
+                    "user_href": "/profile/Kiran-Patel-101"
+                },
+                {
+                    "user_id": "Tamanna Thukral",
+                    "user_href": "/profile/Tamanna-Thukral"
+                },
+                {
+                    "user_id": "Miguel Angel Fern\u00e1ndez Arribas",
+                    "user_href": "/profile/Miguel-Angel-Fern\u00e1ndez-Arribas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Thaddeus Gutierrez",
+                "href": "/profile/Thaddeus-Gutierrez"
+            },
+            "answer_text": "They don\u2019t, and it\u2019s both embarrassing to the scientific establishment and insulting to those who value analytical rigor controlled by loophole-free foreground monitoring and unbiased application of non-Bayesian methodologies. More evidence that LIGO is a blunder exists than the alternative, which is a labyrinth of self-contradictions, dilatory tactics, weasel words, and systematic fallacies. Here are links to resources, themselves replete with further data sources and links to papers relevant to such inquiry and its testing: Continental and global cloud-ground lightning and solar-terrestrial foreground models during total LIGO putative GW event intervals (N=32) GW150914 foreground and instrumental signals Lags, geophysical scaling analogues, and spatial eigenmodes from TE-TM waveguide modes for GW150914 as coherent trans-terrestrial signal North American ground magnetometer data array for UTC day of GW150914 surrounding LIGO network Criticism and refutation of Nielsen et al. 2018, Green-Moffat 2017/2018, Ian Harry 2017 blog post, and Van Putten et al. 2018 compendium of observations, references, and data representing known LIGO-Virgo false trigger rate, known/unrecognized systematic error, and obfuscated magnetic coupling effects GW170817 foreground and instrumental signals Why has so little attention been devoted to oscillating late-time afterglow evolution of NGC 4993/GRB170817A/AT2017gfo? ",
+            "date": "Answered August 13, 2019",
+            "views": "148",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "J. Catania",
+                    "user_href": "/profile/J-Catania"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andy Briggs",
+                "href": "/profile/Andy-Briggs-11"
+            },
+            "answer_text": "Because they had spent forty years developing hardware and software which filter terrestrial vibrations out, including an incredibly advanced damping system. Not only that, but they also have equipment to recognise and filter out the vibrations of ocean waves breaking on the shore, even though the ocean is many miles away from both LIGO sites. Each source of terrestrial vibration has a recognisable waveform, which can be filtered out. Sometimes, even after all that effort, terrestrial interference does get through, but it's very quickly recognised. Your question is actually an insult to the intelligence of the LIGO team. What, did you think they wouldn't go to such enormous lengths to recognise sources of terrestrial interference? ",
+            "date": "Answered October 15, 2019",
+            "views": "107",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Julie Wolfenberger",
+                    "user_href": "/profile/Julie-Wolfenberger"
+                },
+                {
+                    "user_id": "Matt Rimmer",
+                    "user_href": "/profile/Matt-Rimmer-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Patrick Banner",
+                "href": "/profile/Patrick-Banner-1"
+            },
+            "answer_text": "LIGO actually has two detectors. There\u2019s one in Washington State, and one about 3000 km away in Mississippi. The combination of data from the two detectors gives information about the speed at which gravitational waves travel, as well as negating all \u201clocal\u201d effects, such as earthquakes or even trucks passing by. Indeed, for such a sensitive detector, there has to be at least one other detector acting as a sort of \u201ccontrol.\u201d It\u2019s only when the readings from both detectors correlate in the right way that you begin to think you\u2019ve seen a gravitational wave. ",
+            "date": "Answered October 15, 2019",
+            "views": "83",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Matt Rimmer",
+                    "user_href": "/profile/Matt-Rimmer-6"
+                },
+                {
+                    "user_id": "Bob Barnes",
+                    "user_href": "/profile/Bob-Barnes-10"
+                },
+                {
+                    "user_id": "Tamara Ivy Iverson",
+                    "user_href": "/profile/Tamara-Ivy-Iverson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alec Cawley",
+                "href": "/profile/Alec-Cawley"
+            },
+            "answer_text": "In the best traditions of science, they had a theory, devised an experiment to test it, performed the experiment, and got the result theory predicted. They looked for gravitational waves, and got exactly the result theory predicted before they ran the experiment. Classic science. It is always possible that they have discovered some other effect. But that would be wildly unlikely. The shape of the waves they detected conforms precisely to the theoretical predictions they made before they saw it. Barring the possibility that this is an experimental error, it has to be a gravitational wave. Studying its shape might reveal a need for a change in our theories, but so far that looks unlikely - the waveforms they showed looked almost too good to be true.  ",
+            "date": "Answered February 13, 2016",
+            "views": "803",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Corliss",
+                    "user_href": "/profile/David-Corliss"
+                },
+                {
+                    "user_id": "Julie Wolfenberger",
+                    "user_href": "/profile/Julie-Wolfenberger"
+                },
+                {
+                    "user_id": "Matt Rimmer",
+                    "user_href": "/profile/Matt-Rimmer-6"
+                },
+                {
+                    "user_id": "Daren Scot Wilson",
+                    "user_href": "/profile/Daren-Scot-Wilson"
+                },
+                {
+                    "user_id": "Frank Hollis",
+                    "user_href": "/profile/Frank-Hollis"
+                },
+                {
+                    "user_id": "Paul Urban",
+                    "user_href": "/profile/Paul-Urban-4"
+                },
+                {
+                    "user_id": "Glenn Dowdle",
+                    "user_href": "/profile/Glenn-Dowdle"
+                },
+                {
+                    "user_id": "Vignesh Ramakrishnan",
+                    "user_href": "/profile/\u0935\u093f\u0918\u094d\u0928\u0947\u0936-\u0930\u093e\u092e\u0915\u0943\u0937\u094d\u0923\u0928-Vignesh-Ramakrishnan"
+                },
+                {
+                    "user_id": "Coba Weel",
+                    "user_href": "/profile/Coba-Weel"
+                },
+                {
+                    "user_id": "Glenn Rager",
+                    "user_href": "/profile/Glenn-Rager"
+                },
+                {
+                    "user_id": "Erik Anson",
+                    "user_href": "/profile/Erik-Anson"
+                },
+                {
+                    "user_id": "Shady Yousef",
+                    "user_href": "/profile/Shady-Yousef-1"
+                },
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kirsten Hacker",
+                "href": "/profile/Kirsten-Hacker"
+            },
+            "answer_text": "Pop scientists are finally beginning to pick up on the flaws in the LIGO experimental design. We have no way to distinguish a gravitational wave signal from something terrestrial in origin like Schumann resonances. None of the attempts to correlate gamma-ray bursts with gravitational waves have been successful to date.  I differ with Dr. Hossenfelder on one key point. She thinks that the experimental design is valid because light responds to gravitational waves at a different rate than matter. I think that this is an assumption, not a fact. I\u2019ve been writing about these issues here on Quora since 2017. https://www.quora.com/profile/Kirsten-Hacker/answers/Laser-Interferometer-Gravitational-wave-Observatory-LIGO ",
+            "date": "Updated November 7, 2019",
+            "views": "15",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Berger",
+                    "user_href": "/profile/David-Berger-64"
+                },
+                {
+                    "user_id": "Dina Ali",
+                    "user_href": "/profile/Dina-Ali-18"
+                },
+                {
+                    "user_id": "Marta Opie",
+                    "user_href": "/profile/Marta-Opie"
+                },
+                {
+                    "user_id": "Hermanpaye .",
+                    "user_href": "/profile/Hermanpaye"
+                },
+                {
+                    "user_id": "Cynthia Chan",
+                    "user_href": "/profile/Cynthia-Chan-10"
+                },
+                {
+                    "user_id": "Denis Havlik",
+                    "user_href": "/profile/Denis-Havlik"
+                },
+                {
+                    "user_id": "Chris Modisette",
+                    "user_href": "/profile/Chris-Modisette"
+                },
+                {
+                    "user_id": "Andrej Jertec",
+                    "user_href": "/profile/Andrej-Jertec"
+                },
+                {
+                    "user_id": "Chakra Simhan",
+                    "user_href": "/profile/Chakra-Simhan"
+                },
+                {
+                    "user_id": "Davide Jones",
+                    "user_href": "/profile/Davide-Jones-1"
+                },
+                {
+                    "user_id": "Richard Benish",
+                    "user_href": "/profile/Richard-Benish-1"
+                },
+                {
+                    "user_id": "Sanjeev Saju",
+                    "user_href": "/profile/Sanjeev-Saju"
+                },
+                {
+                    "user_id": "Sophia Philia",
+                    "user_href": "/profile/Sophia-Philia"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Jackson",
+                "href": "/profile/Peter-Jackson-545"
+            },
+            "answer_text": "If they measure fluctuations in gravitational potential then it must be, by definition. I find it no shock at all. I\u2019ve long had a measuring device outside my office responding well to the regular passing overhead of two large gravitating objects on different orbits. I have a set of tables accurately predicting the fluid levels, though atmospheric conditions do influence them. They\u2019re called \u2018tide tables\u2019. Those major effects are removed from the LIGO data as \u2018background noise\u2019. Was it Freeman Dyson who said; \u201cAdvancement of scientific understanding isn\u2019t so much about discovering new things as about discovering new ways to look at familiar things.\u201d ",
+            "date": "Answered December 18, 2018",
+            "views": "56",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Matt Rimmer",
+                    "user_href": "/profile/Matt-Rimmer-6"
+                },
+                {
+                    "user_id": "Saroj Rujirawat",
+                    "user_href": "/profile/Saroj-Rujirawat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ali Abdulla",
+                "href": "/profile/Ali-Abdulla-15"
+            },
+            "answer_text": "This waves was predicted by the general relativity field equation derived by Einstein,they are physically well specified,so LIGO detect them according to their characters. ",
+            "date": "Answered July 20, 2017",
+            "views": "71",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ahsan Ali Amjad",
+                "href": "/profile/Ahsan-Ali-Amjad"
+            },
+            "answer_text": "Gravitational wave produced specific graph as you would expect...chirp as they say.It caused gradual increase then a sudden stop...Moreover frequency for G waves are also specific. ",
+            "date": "Answered February 12, 2016",
+            "views": "159",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Paul Urban",
+                    "user_href": "/profile/Paul-Urban-4"
+                }
+            ]
+        }
+    ]
+}

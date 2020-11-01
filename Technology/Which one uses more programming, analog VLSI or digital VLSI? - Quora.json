@@ -1,0 +1,112 @@
+{
+    "title": "Which one uses more programming, analog VLSI or digital VLSI? - Quora",
+    "tags": [
+        "VLSI Startups"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mallikarjuna Ankinapalli",
+                "href": "/profile/Mallikarjuna-Ankinapalli"
+            },
+            "answer_text": "The amount of coding expertise went into developing every vlsi tool is humongous. Majority of the VLSI work has now shifted into modelling environment and very few phases (post silicon, silicon bring up, fabrication etc..) deal with chip hardware directly. Be it Digital RTL coding, Verification, Physical Design, Analog circuit design , Layout design and Mixed signal design etc.. every phase of VLSI work gets done in modelling tools. To put it in simple words : What we as VLSI engineers do is we just model the real world designs using modelling softwares and check if the modeled design meets characteristics as required. Rest everything is just around this. When it comes to day-to-day life of a typical vlsi engineer - digital engineer spend lot of time with coding ( text files :) atleast i do !!). Where as analog circuit and layout engineers work with schematic, layout GUI interfaces most of the time. I think if you look at the following classification, you would agree that digital vlsi revolves around coding Digital Logic Design, Verification - Verilog, System Verilog, VHDL, System C . You would need minimum one of these hardware description language expertise (all of these have similar programming constructs like C ..) Digital Layout Design - Synthesis, Physical Design , Sign-off closure (many EDA tools written with TCL framework and one would need PERL/TCL/SHELL expertise to automate/guide the tools to achive the required tagets) Analog Circuit Design - One of the toughest and critical VLSI phase. But you dont need to be an expert in coding for this!!. If you are familiar with one of the circuit modelling EDA tool (Virtuoso for eg) and spice modelling you should be able to manage Analog Layout Design - Again similar to analog circuit design, majority of the work gets done in GUI environment and yes there are certain times to turn into CLI aswell. I am not comparing the difficulty and amount of work gets in either DIGITAL or ANALOG (both have their own challenges)- its just CLI vs GUI !! CLI - Command Line Interface GUI - Graphical User Interface  \u2026.. ",
+            "date": "Answered June 20, 2017",
+            "views": "17",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sweety Pareek",
+                    "user_href": "/profile/Sweety-Pareek"
+                },
+                {
+                    "user_id": "Yash Zavar",
+                    "user_href": "/profile/Yash-Zavar-1"
+                },
+                {
+                    "user_id": "Koushik Saha",
+                    "user_href": "/profile/Koushik-Saha-25"
+                },
+                {
+                    "user_id": "Hariprasad Kannan",
+                    "user_href": "/profile/Hariprasad-Kannan-1"
+                },
+                {
+                    "user_id": "Rishabh Pathak",
+                    "user_href": "/profile/Rishabh-Pathak-94"
+                },
+                {
+                    "user_id": "Monal Gupta",
+                    "user_href": "/profile/Monal-Gupta-7"
+                },
+                {
+                    "user_id": "Mohd Muktadar Mohiuddin",
+                    "user_href": "/profile/Mohd-Muktadar-Mohiuddin"
+                },
+                {
+                    "user_id": "Shivanand Pujari",
+                    "user_href": "/profile/Shivanand-Pujari-1"
+                },
+                {
+                    "user_id": "Pratap Reddy K",
+                    "user_href": "/profile/Pratap-Reddy-K-3"
+                },
+                {
+                    "user_id": "Varun Nagpal",
+                    "user_href": "/profile/Varun-Nagpal-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sougata Bhattacharjee",
+                "href": "/profile/Sougata-Bhattacharjee-2"
+            },
+            "answer_text": "Digital VLSI or Frontend deals with more coding or programming as compared to Analog or Backend.  Digital VLSI mostly deals with modelling a digital circuit at higher level of abstraction and to make sure the design got synthesized.For modelling those circuits RTL coding is used which can be achieved through HDL language like VHDL or Verilog and lately using SystemVerilog as well. Later on if we move through the ASIC design flow it can be noted that after the RTL coding is done Logic synthesis is done with the help of netlist and library files as input.Once it completes Timing issues can be resolved using STA analysis as well which also involves quite a good amount of calculation.  While dealing with Analog or Backend it mostly deals with the Stick diagrams,Layout schematics,Floorplan,Place & Route using graphical interface and using various DRC and LVS rules. The physical design and DFT also deals with the area requirement and placement of each cell with the chip,scan insertion which eventually decided the sign off the chip and generates the GDS2 format.  The only coding knowledge that Analog VLSI needs is the expertise on scripting language like PERL and TCL. While Digital VLSI mostly deals with the coding related to VHDL,Verilog, SystemVerilog,UVM/OVM/VMM,Perl,TCL,C, Python. ",
+            "date": "Answered December 30, 2018",
+            "views": "3",
+            "upvotes": " View 24 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mohd Muktadar Mohiuddin",
+                    "user_href": "/profile/Mohd-Muktadar-Mohiuddin"
+                },
+                {
+                    "user_id": "Trishita Chatterjee",
+                    "user_href": "/profile/Trishita-Chatterjee-8"
+                },
+                {
+                    "user_id": "Raghav Balaji",
+                    "user_href": "/profile/Raghav-Balaji-2"
+                },
+                {
+                    "user_id": "Hariprasad Kannan",
+                    "user_href": "/profile/Hariprasad-Kannan-1"
+                },
+                {
+                    "user_id": "Monal Gupta",
+                    "user_href": "/profile/Monal-Gupta-7"
+                },
+                {
+                    "user_id": "Harshwardhan Bhangale",
+                    "user_href": "/profile/Harshwardhan-Bhangale-1"
+                },
+                {
+                    "user_id": "Prashanth Reddy",
+                    "user_href": "/profile/Prashanth-Reddy-672"
+                },
+                {
+                    "user_id": "Gaurav Puri",
+                    "user_href": "/profile/Gaurav-Puri-23"
+                },
+                {
+                    "user_id": "Tamanna Sinha",
+                    "user_href": "/profile/Tamanna-Sinha-2"
+                },
+                {
+                    "user_id": "Pratyush Emani",
+                    "user_href": "/profile/Pratyush-Emani"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "title": "How to figure out the circumference of a circle - Quora",
+    "tags": [
+        "Circumference",
+        "Pi (number)",
+        "Geometry of Circles",
+        "Circles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Leo Cutter",
+                "href": "/profile/Leo-Cutter"
+            },
+            "answer_text": "In this answer, I will attempt to prove the formula for finding the circumference of a circle with radius [math]r. [/math] We will begin with the equation of a circle. Assume that [math](h,k) = (0,0)[/math] for the sake of simplicity. [math]x^2+y^2=r^2\\tag*{}[/math] Solving for [math]y[/math], we get: [math]y=\\pm\\sqrt{r^2-x^2}\\tag*{}[/math] [math]y=\\sqrt{r^2-x^2}\\tag*{}[/math] We\u2019ve toss out the minus sign just because it\u2019ll needlessly complicate things. You\u2019ll see why we do this later. But for now, we\u2019ll go ahead and use the formula for finding arclength, which is given by the following: [math]\\displaystyle\\int_a^b\\sqrt{1+\\left(\\dfrac{\\mathrm dy}{\\mathrm dx}\\right)^2}\\,\\mathrm dx\\tag*{}[/math] So we have everything we need, except for arguably the most crucial detail: the bounds of the integral. Luckily for us, this isn\u2019t too difficult to find. We\u2019re going from the far left side of the circle all the way to the far right, meaning that our bounds should be [math][-r,r][/math]. So we see that all we need is to find the derivative of our function and we should be able to go on with our derivation. [math]y=(r^2-x^2)^\\frac 1 2\\tag*{}[/math] Apply the chain rule: [math]\\dfrac{\\mathrm dy}{\\mathrm dx}=\\dfrac{-x}{\\sqrt{r^2-x^2}}\\tag*{}[/math] Great, we now have everything we need. Let\u2019s plug these values into the formula for arclength. [math]\\displaystyle\\int_{-r}^{r}\\sqrt{1+\\left(\\dfrac{-x}{\\sqrt{r^2-x^2}}\\right)^2}\\,\\mathrm dx\\tag*{}[/math] We can work out the squared parentheses: [math]\\displaystyle\\int_{-r}^{r}\\sqrt{1+\\dfrac{x^2}{r^2-x^2}}\\,\\mathrm dx\\tag*{}[/math] Note that we can replace [math]1[/math] with [math]\\dfrac{r^2-x^2}{r^2-x^2}[/math]. This won\u2019t change the value of anything since the fraction simplifies down to [math]1.[/math] [math]\\displaystyle\\Large\\int_{-r}^{r}\\sqrt{\\dfrac{r^2-x^2}{r^2-x^2}+\\dfrac{x^2}{r^2-x^2}}\\,\\mathrm dx\\tag*{}[/math] Notice that the [math]x^2[/math] terms get removed from the numerator. We are now left with: *Apparently quora has cut off the other half of my answer. I will have to rewrite it later, but for now finishing the verification can be left as an exercize to the reader. Sorry about that. Edit: I have gone and rewritten everything that has been deleted. Even now, I am completely puzzled and frustrated that everything from here was deleted. You can now continue reading. [math]2\\displaystyle\\int_{-r}^{r}\\dfrac{r}{\\sqrt{r^2\\left(1-\\dfrac{x^2}{r^2}\\right)}}\\mathrm dx\\tag*{}[/math] [math]2\\displaystyle\\int_{-r}^{r}\\dfrac{r}{r\\sqrt{\\left(1-\\dfrac{x^2}{r^2}\\right)}}\\mathrm dx\\tag*{}[/math] [math]2\\displaystyle\\int_{-r}^{r}\\dfrac{1}{\\sqrt{1-\\dfrac{x^2}{r^2}}}\\mathrm dx\\tag*{}[/math] So it turns out that we will need to make a substitution. [math]\\text{Let}\\,u=\\dfrac x r.\\,\\text{Then}\\,r\\mathrm du =\\mathrm dx\\tag*{}[/math] [math]2r\\displaystyle\\int_{-1}^{1}\\dfrac{1}{\\sqrt{1-u^2}}\\mathrm dx\\tag*{}[/math] This looks familiar. Arcsine, anyone? [math]2r[\\sin^{-1}u]_{-1}^1\\tag*{}[/math] [math]2r\\left(\\dfrac{\\pi}{2}-\\dfrac{-\\pi}{2}\\right)\\tag*{}[/math] [math]2r\\pi.\\tag*{}[/math] To keep the two formulas consistent, we can rearrange this since multiplication is commutative. [math]\\boxed{\\displaystyle\\int_{-r}^{r}\\sqrt{1+\\left(\\dfrac{-x}{\\sqrt{r^2-x^2}}\\right)^2}\\,\\mathrm dx=2\\pi r.}\\tag*{}[/math] ",
+            "date": "Updated November 23, 2018",
+            "views": "46",
+            "upvotes": " View 36 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anil Kumar Singh",
+                    "user_href": "/profile/Anil-Kumar-Singh-74"
+                },
+                {
+                    "user_id": "Marwan Harb",
+                    "user_href": "/profile/Marwan-Harb-5"
+                },
+                {
+                    "user_id": "Emily Cutter",
+                    "user_href": "/profile/Emily-Cutter-6"
+                },
+                {
+                    "user_id": "Daniel Tripp",
+                    "user_href": "/profile/Daniel-Tripp-13"
+                },
+                {
+                    "user_id": "Vikas Sarna",
+                    "user_href": "/profile/Vikas-Sarna-5"
+                },
+                {
+                    "user_id": "Vineet Kumar",
+                    "user_href": "/profile/\u0935\u093f\u0928\u0940\u0924-\u0915\u0941\u092e\u093e\u0930-Vineet-Kumar"
+                },
+                {
+                    "user_id": "Stefano Bregante",
+                    "user_href": "/profile/Stefano-Bregante-1"
+                },
+                {
+                    "user_id": "Rafael Stonoga",
+                    "user_href": "/profile/Rafael-Stonoga"
+                },
+                {
+                    "user_id": "Pradyuman Singh",
+                    "user_href": "/profile/Pradyuman-Singh-17"
+                },
+                {
+                    "user_id": "Michael Clasby",
+                    "user_href": "/profile/Michael-Clasby-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aditya Soreng",
+                "href": "/profile/Aditya-Soreng"
+            },
+            "answer_text": "Formula for Circumference of a circle is 2\u03c0r or \u03c0D ( D stands for diameter ). But if you want to derive its formula, I can help you out. Draw a circle of radius of your choice with the help of a compass. Now that a thin string and place it along the circumference of the circle. Cut it accordingly to the length of circumference. Measure it using a scale. You get your length for circumference. I know folks. This is not theoretical at all and is purely practical. I agree, not only for this but also for that fact that it requires super efficiency and since human system is highly falliable, we almost never get the accurate answer. That's why, thereotically, we use radius and diameter to almost acurately find the circumference, since these components of circle (radius and diameter) could be measured accurately. So we could somehow derive the relation between circumference and it's diameter. So, if we divide the circumference by a diameter, the units get cancelled, and we are left behind with a constant called \u03c0. Please keep asking questions and leave an upvote. ",
+            "date": "Answered September 10, 2018",
+            "views": "83",
+            "upvotes": "0"
+        }
+    ]
+}

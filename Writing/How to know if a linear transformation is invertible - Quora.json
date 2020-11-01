@@ -1,0 +1,40 @@
+{
+    "title": "How to know if a linear transformation is invertible - Quora",
+    "tags": [
+        "Linear Transformation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Akyn Dyan",
+                "href": "/profile/Akyn-Dyan"
+            },
+            "answer_text": "et T1,T2[math]T1,T2[/math] be two linear transformations from Rn[math]Rn[/math] to Rm[math]Rm[/math]. Let {x1,\u22ef,xn}[math]{x1,\u22ef,xn}[/math] be a basis of Rn[math]Rn[/math]. Suppose that T1xi\u22600[math]T1xi\u22600[/math] for every i=1,2,\u22ef,n[math]i=1,2,\u22ef,n[/math] and that xi\u22a5kerT2[math]xi\u22a5ker\u2061T2[/math] for every i=1,2,\u22ef,n[math]i=1,2,\u22ef,n[/math]. Which of the following is/are necessarily true? T1[math]T1[/math] is invertible.T2[math]T2[/math] is invertible.both T1,T2[math]T1,T2[/math] are invertible.neither T1[math]T1[/math] nor T2[math]T2[/math] is invertible.My Approch: Given dimension of R=n[math]R=n[/math] and xi\u22a5Ker(T2)[math]xi\u22a5Ker(T2)[/math] So, KerT2=0[math]KerT2=0[/math] Row space and null space are perpendicular to each other. From Rank Nullity Theorem: let T : V \u2192 W be a linear map. Then the rank of T is the dimension of the image of T and the nullity of T is the dimension of the kernel of T, so we have dim(Im(T))+dim(Ker(T))=dim(V)[math]dim(Im(T))+dim(Ker(T))=dim(V)[/math] Applying above result we get, dim(Im(T))+0=n[math]dim(Im(T))+0=n[/math] Therefore, T2[math]T2[/math] is one-one. ",
+            "date": "Answered July 10, 2020",
+            "views": "28",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Johann Joss",
+                "href": "/profile/Johann-Joss"
+            },
+            "answer_text": "You may compute the determinant. For large matrices this is impracticable. Also be aware of roundoff errors. A better way is just run an inversion algorithm. If it succeeds you may assume that the matrix was in fact invertable. You may compute its eigenvalues. If there is any one zero, it is not invertable. Be aware of roundoff errors and inaccuracies in the algorithm. ",
+            "date": "Answered July 8, 2020",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        }
+    ]
+}

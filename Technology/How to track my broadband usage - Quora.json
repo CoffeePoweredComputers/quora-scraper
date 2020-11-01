@@ -1,0 +1,52 @@
+{
+    "title": "How to track my broadband usage - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Rutledge",
+                "href": "/profile/Michael-Rutledge-1"
+            },
+            "answer_text": "If you have a relatively advanced network architecture you can easily monitor all inbound and outbound network activity for every single component on the network and then generate custom reporting on exactly who is doing what with extremely granular data points. Some of the common data collected is Client -> server connectionsclient session durationclient bandwidth on a per session and per site basisclient motility, I.e. is your client moving around the network and are they doing different things from different physical areas of the network (this is useful when troubleshooting WiFi issues for instance)most of the SSL data if your client is using a proxy on your network (aka MITM)total bandwidth usedlatency per site per clienttotal number of sessions active per clientAnd then these are all rolled up into live data feeds, minute level, hourly, daily, weekly, and monthly data sets. Here\u2019s a screencap of a normal high level view (this drills down into far far greater detail down to the packet capture level)\u2026 so this is kind of the 30\u2032000\u2032 view. (I\u2019ve redacted info for obvious reasons. ) This is a last two hours view,  And a monthly view, showing usage trends clearly and giving you a really clear view of utilization.  As you can see this allows you to determine trends and perform capacity analysis and planning for future expansions, etc. Personally I have a DMZ mesh (firewall) that\u2019s a meraki and also Cisco switches and WiFi ap\u2019s (all running in full mesh) and it tracks all of this data on its own, uploads it to their cloud and allows me to monitor activity in real time from my laptop or even my phone. It\u2019s extremely helpful in troubleshooting. ",
+            "date": "Answered March 2, 2020",
+            "views": "16",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rico Trevisan",
+                "href": "/profile/Rico-Trevisan"
+            },
+            "answer_text": "On episode 509 of Mac Geek Gab, the guys try to tackle that question. Short answer: there's no precise way. With the residential equipment you could probably have a rough idea of how much traffic has gone through your network, but you most likely can't get the interesting information - which type of software, which machine, time of day, etc.. They do point to a longer answer: place an industrial grade equipment at the beginning of your network. Maybe a Ubiquity EdgeRouter Lite could do the trick? MGG 509: WiFi Answers with Wi-Fi Guru Alf Watt of iStumbler - Mac Geek Gab Podcast - The Mac Observer http://www.ubnt.com/edgemax/edgerouter-lite/ ",
+            "date": "Answered July 31, 2014",
+            "views": "21",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vishal Chouhan",
+                    "user_href": "/profile/Vishal-Chouhan-18"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Thaddeus Norvoc",
+                "href": "/profile/Thaddeus-Norvoc"
+            },
+            "answer_text": "The simplest way is to check if you can log into your ISP\u2019s customer portal with your customer account. Some ISP\u2019s even have an app and they can display your monthly/daily or weekly bandwidth usage. ",
+            "date": "Answered March 3, 2020",
+            "views": "315",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Janeesa Hollingshead",
+                "href": "/profile/Janeesa-Hollingshead"
+            },
+            "answer_text": "I use Rescue Time. It runs in the background and measures where you're spending time on the computer (not just Internet) as well as how productive you are at every hour of the day. ",
+            "date": "Answered June 20, 2014",
+            "views": "537",
+            "upvotes": "0"
+        }
+    ]
+}

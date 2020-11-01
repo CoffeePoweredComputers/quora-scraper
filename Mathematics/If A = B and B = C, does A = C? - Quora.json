@@ -1,0 +1,82 @@
+{
+    "title": "If A = B and B = C, does A = C? - Quora",
+    "tags": [
+        "Set Theory",
+        "Proofs (mathematics)",
+        "Number Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul K. Young",
+                "href": "/profile/Paul-K-Young-3"
+            },
+            "answer_text": "In mathematics = is assumed to be a transitive relationship. Transitivity means precisely what you stated: A = B and B = C implies A = C. While it\u2019s possible to use = to represent a non-transitive relationship this would be considered an abuse of notation. A ~ B or R(A, B) would be a better way to express the relation in this case. Similar assumptions are made about operators like + and *. + is generally assumed to be commutative, whereas * can be used for noncommutative operations like matrix multiplication. E.g. A * B != B * A. Equality in programming is another story entirely. In many languages = is the assignment operator and == is the equality operator. Assignment is not transitive - it\u2019s not even a relation.There are cases where the equality operator doesn\u2019t define a transitive relation. E.g. in JavaScript:js> '0' == 0truejs> 0 == ''truejs> '0' == ''false The reason this happens is because of implicit type conversion. When == encounters a numerical type it will force a numerical conversion of the other value. However if both of the arguments are strings, not numbers, then they use string comparison. Also, the numerical conversion of the string \u2018\u2019 gives 0, which is why we get the above result. JavaScript also has a strict equality operator === in which no implicit type conversion occurs. Strings are not ===-equal to numbers so the above inconsistencies don\u2019t arise. Still there are cases where even a === a is false. In particular if a is NaN (a floating-point value used to represent an indeterminate form, e.g. division by zero or infinity - infinity) then strict equality returns false for all comparisons of a, even with itself. There are some other pathological cases that might occur with floating-point numbers and rounding. In fact in the olden days a context switch could subtly change a floating point value. (Extra precision bits could be dropped/rounded when saving the FP registers.) Some of these issues have since been resolved. Still, strict equality tests with floats are generally to be avoided. ",
+            "date": "Answered September 28, 2016",
+            "views": "133",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Forty Eight",
+                    "user_href": "/profile/Forty-Eight-3"
+                },
+                {
+                    "user_id": "William Bradley",
+                    "user_href": "/profile/William-Bradley-37"
+                },
+                {
+                    "user_id": "Monika R Gowda",
+                    "user_href": "/profile/Monika-R-Gowda-1"
+                },
+                {
+                    "user_id": "Kevin Ochieng",
+                    "user_href": "/profile/Kevin-Ochieng-46"
+                },
+                {
+                    "user_id": "Shruti Ghule",
+                    "user_href": "/profile/Shruti-Ghule-2"
+                },
+                {
+                    "user_id": "Skyper Gee",
+                    "user_href": "/profile/Skyper-Gee"
+                },
+                {
+                    "user_id": "Pramodh Kumar M",
+                    "user_href": "/profile/Pramodh-Kumar-M-1"
+                },
+                {
+                    "user_id": "Zachary Taylor",
+                    "user_href": "/profile/Zachary-Taylor-3"
+                },
+                {
+                    "user_id": "Ricardo Barreira",
+                    "user_href": "/profile/Ricardo-Barreira"
+                },
+                {
+                    "user_id": "Colton Crowe",
+                    "user_href": "/profile/Colton-Crowe"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wes Whiting",
+                "href": "/profile/Wes-Whiting"
+            },
+            "answer_text": "That depends on what A, B, C, and = are supposed to indicate. Is there even a standard meaning for an = symbol in logic? This isn\u2019t as vacuous an answer as it might appear. = can mean different things in different contexts. Two numbers are equal if they have the same value. Two sets are equal if they contain the same elements. Two functions are equal if they have the same domain, and the same image for everything in the domain. And lots of the time, what we\u2019re really interested in is equivalence, rather than equality - which can be a radically different thing depending on exactly what kind of equivalence we want to examine. But if your = symbol is supposed to mean anything like what it usually does, then yes, it ought to be transitive. ",
+            "date": "Answered September 30, 2016",
+            "views": "53",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ben Reynolds",
+                    "user_href": "/profile/Ben-Reynolds-15"
+                },
+                {
+                    "user_id": "Zahid Jivanji",
+                    "user_href": "/profile/Zahid-Jivanji"
+                }
+            ]
+        }
+    ]
+}

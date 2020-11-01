@@ -1,0 +1,38 @@
+{
+    "title": "How to build an automatic temperature and light sensor - Quora",
+    "tags": [
+        "Sensors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Giorgi Jambazishvili",
+                "href": "/profile/Giorgi-Jambazishvili"
+            },
+            "answer_text": "You quested is strange, I really don\u2019t understand what is automatic sensor generally and I think it would be hard to build temperature sensor from scratch, so as I understand you need to have temperature and light sensor and get this information and process them to make some decisions. If that\u2019s right, I will tell you. First of all the easiest way is to use Arduino and connect light and temperature sensors. Temperature sensors are easy to choose, since you have good choices and I will recommend BMP180 which also measures the pressure and it has i2c interface or just 1 wire interface DS18B20. Light sensors has 2 main differences, there are sensors which measure light in Lux and sensors which measure change of the light and you need some reference. The second type is simple Light Depended Resistor (LDR) which varies it\u2019s resistance depending on light conditions. and the First type of the sensor, like TSL2561 measures the real light in luxes and also IR level. It has i2c interface and libraries are ready to use. As a second option, if you don\u2019t want to use microcontrollers you can change them with micro computers like RPi, Beaglebone or Intel edison, since all the sensors except LDR support digital interface (i2c/1-wire) they are compatible with this micro computer boards. One you have this information you can easily use and process it and make corresponding decisions. Update: For setup, like author said, it would be better to use PIR sensor to detect motion in hall, and 5V relay to control AC power. This would be basic concept of using basic parts and I would do the same. ",
+            "date": "Answered August 9, 2016",
+            "views": "343",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "VhkThor Paul",
+                    "user_href": "/profile/VhkThor-Paul"
+                },
+                {
+                    "user_id": "Alexandria von Bromssen",
+                    "user_href": "/profile/Alexandria-von-Bromssen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark McGinty",
+                "href": "/profile/Mark-McGinty-1"
+            },
+            "answer_text": "There are probably a million ways to do it, this one worked for me: I built it around the ESP8266\u201312, a microcontroller with 4MB of flash and on-board WiFi, that can be had for about $2.50. I burned the NodeMCU firmware to it, which provides a powerful programming environment. I connected a DHT22 temperature and humidity sensor, which is supported by NodeMCU, and also a small board with a photoresistor and a trim pot to set sensitivity, that outputs a binary on or off signal, that I connected to a GPIO. I programmed it to read the sensors once every 5 minutes, and then send the values to a WebAPI service that I wrote, via HTTP. The WebAPI stores the values in a database table, that is read by a web page that graphs the values. I published the WebAPI and graph page to my hosting provider, though hosting isn\u2019t absolutely necessary, I could\u2019ve just as easily installed a web server on my PC. The parts cost less than $10 (plus shipping.) I couldn\u2019t tell you how many hours I have into it, surely dozens\u2026 part of it was learning curve. I might be talked into checking it into Git as open source (time permitting) if there was interest. Links to parts: ESP8266 SMD Adapter Board R2 - ElectroDragon (optionally includes ESP8266) DHT22 Digital Humidity and Temperature Sensor (AM2302) - ElectroDragon Photocell Light-Sensitive Module - ElectroDragon ",
+            "date": "Answered August 11, 2016",
+            "views": "135",
+            "upvotes": "0"
+        }
+    ]
+}

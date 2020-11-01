@@ -1,0 +1,117 @@
+{
+    "title": "Which is better, Arduino or Raspberry Pi? - Quora",
+    "tags": [
+        "Product and Services Comparisons",
+        "Raspberry Pi",
+        "Arduino (company)",
+        "Embedded Systems",
+        "Comparisons",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Alexander Haydon",
+                "href": "/profile/Richard-Alexander-Haydon"
+            },
+            "answer_text": "Although the Raspberry Pi offers much better specifications for your money, it boils down to what you intend to do with your board. Raspberry Pi is a family of fully-fledged single-board computers with CPUs, MMUs and all the necessary components to run a full operating system with a hardware abstraction layer, virtual memory abstraction etc. such as Archlinux or Raspbian. As such, RPi SBCs are best used for tasks that require a lot of computational power, relatively speaking. (Minecraft Pi, anyone?) While the Raspberry Pi boards have their fair share of GPIO pins, these use 3.3V logic levels and as such, they are incompatible with sensors, servo motors and other peripherals that make use of 5V logic levels. Of course, you could solve this problem with the help of 3.3V \u2192 5V logic converters or a purpose-built HAT (Hardware Attached on Top, the Pi equivalent of Arduino\u2019s shields), but this is unnecessarily complicated (and expensive!) and most of your projects probably don\u2019t need the processing power of a Raspberry Pi. This is where Arduino comes in. Despite having much lower specifications and a lot less processing power than the RPi family, they make up for it by being ridiculously cheap and disposable. As I explained in my answer to Where can I buy arduino uno r3 at a cheaper rate?, the cheapest of clones come in at less than \u00a32/unit - fees, postage, packing etc. included. Basically, you get a lot more GPIO pins for your money; and these are (usually) compatible with 5V logic. In conclusion, a Raspberry Pi is better if your project demands plenty of processing power; while an AVR-based Arduino is better suited to less demanding applications, or tasks that require peripherals that make use of 5V logic levels and/or reliable low-power operation.  Happy hacking! ",
+            "date": "Answered April 30, 2017",
+            "views": "188",
+            "upvotes": " View 50 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Luc Berger",
+                    "user_href": "/profile/Luc-Berger"
+                },
+                {
+                    "user_id": "Marcus P. Hagen",
+                    "user_href": "/profile/Marcus-P-Hagen"
+                },
+                {
+                    "user_id": "Janis Baumanis",
+                    "user_href": "/profile/Janis-Baumanis"
+                },
+                {
+                    "user_id": "Rochi Jacob",
+                    "user_href": "/profile/Rochi-Jacob"
+                },
+                {
+                    "user_id": "Iftekhar Fahim Aziz",
+                    "user_href": "/profile/Iftekhar-Fahim-Aziz-1"
+                },
+                {
+                    "user_id": "Abhinav Bansal",
+                    "user_href": "/profile/Abhinav-Bansal-88"
+                },
+                {
+                    "user_id": "Rajan Gupta",
+                    "user_href": "/profile/Rajan-Gupta-1007"
+                },
+                {
+                    "user_id": "Avin Kurian",
+                    "user_href": "/profile/Avin-Kurian-1"
+                },
+                {
+                    "user_id": "David Bolton",
+                    "user_href": "/profile/David-Bolton-2"
+                },
+                {
+                    "user_id": "Jeevaraam K",
+                    "user_href": "/profile/Jeevaraam-K"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Devi Prasad Khatua",
+                "href": "/profile/Devi-Prasad-Khatua"
+            },
+            "answer_text": "Arduino is a micro controller and raspeberry pi\u2019s a micro processor, so we can generalize the your question to which is better, a micro-controller or a micro-processor? So we start off by asking an even better question: Who's better Arnold Schwarzenegger or Stephen Hawking? See you won't get a definitive answer. Same holds for your answer, It depends upon the purpose for which you may wanna use. Micro'controller' is used when you require raw muscle power(like Arnold's)and Micro'processor' when you require brain power(like Hawking's).  Let me come to the point,In simple words, Micro'controller'(focus on 'controller') is used when you need to control(read/generate) multiple I/O devices and sensors.Say, you want to automate your house electrical devices you use a microcontroller.Microcontrollers are designed to perform specific tasks. Specific means applications where the relationship of input and output is defined. Depending on the input, some processing needs to be done and output is delivered. For example, keyboards, mouse, washing machine, digicam, pendrive, remote, microwave, cars, bikes, telephone, mobiles, watches, etc. Since the applications are very specific, they need small resources like RAM, ROM, I/O ports etc and hence can be embedded on a single chip. This in turn reduces the size and the cost. On the other hand Micro'processor'(focus on 'processor') is used when you want processing power. Say, you want to automate traffic by processing real-time images and various other inputs, for which you need to a microcontroller.Microprocessor specifically find applications where tasks are unspecific like developing software, games, websites, photo editing, creating documents etc. In such cases the relationship between input and output is not defined. They need high amount of resources like RAM, ROM, I/O ports etc. The clock speed of the Microprocessor is quite high as compared to the microcontroller. Whereas the microcontrollers operate from a few MHz to 30 to 50 MHz, today\u2019s microprocessor operate above 1GHz as they perform complex tasks. So it all comes down for what purpose you may want to use it. Having said that you shouldn't accept the fact that microprocessor can't be used in place of microcontroller. Yes, we can use microprocessor instead of microcontroller but it will add complexity and cost to the system which is pretty unwanted. You can read more Comparison between Microprocessor and Microcontroller ",
+            "date": "Answered June 22, 2016",
+            "views": "87",
+            "upvotes": " View 76 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Luc Berger",
+                    "user_href": "/profile/Luc-Berger"
+                },
+                {
+                    "user_id": "Here I Am Taru",
+                    "user_href": "/profile/Here-I-Am-Taru"
+                },
+                {
+                    "user_id": "Aniruddha Das",
+                    "user_href": "/profile/Aniruddha-Das-34"
+                },
+                {
+                    "user_id": "Conner Wolfe",
+                    "user_href": "/profile/Conner-Wolfe-5"
+                },
+                {
+                    "user_id": "Marcus P. Hagen",
+                    "user_href": "/profile/Marcus-P-Hagen"
+                },
+                {
+                    "user_id": "Subha Sikdar",
+                    "user_href": "/profile/Subha-Sikdar-1"
+                },
+                {
+                    "user_id": "Mahima Kumar",
+                    "user_href": "/profile/Mahima-Kumar-19"
+                },
+                {
+                    "user_id": "Surendra Kulkarni",
+                    "user_href": "/profile/Surendra-Kulkarni-19"
+                },
+                {
+                    "user_id": "Abhinav Bansal",
+                    "user_href": "/profile/Abhinav-Bansal-88"
+                },
+                {
+                    "user_id": "Soumen Das",
+                    "user_href": "/profile/Soumen-Das-12"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,106 @@
+{
+    "title": "How to insert spaces in HTML - Quora",
+    "tags": [
+        "HTML",
+        "Web Design",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sean Baek",
+                "href": "/profile/Sean-Baek"
+            },
+            "answer_text": "Insert the HTML entity &nbsp; wherever you would like to add a single space (\"nbsp\" stands for non breaking space). Insert <p> before the text you would like formatted as in paragraph form. Insert <p> at the start of every paragraph. Use </p> to peer inside. He noticed the lock had been tampered with and the store was quite messy. <p> John began to grow worried, and decided to call the local police. </p> Use four or five non-breaking spaces to add a tab. The code will look like this: &nbsp;&nbsp;&nbsp;&nbsp;. There is no proper html code for a tab. If you need to use tabs throughout something you are displaying, consider formatting options offered by CSS code.Insert <br> where ever you would like to display a line break. If you are double spacing using this method, you'll need to add two line breaks - <br> <br> - one to account for moving the next line and another to skip that line.Insert <pre> before the text you'd like to display as written, or \"preformatted.\" To display text as written, or to preformat, means that the whitespace which would normally not display will. Every spacebar or enter keystroke will display as if in a word processor. Use </pre> to end the preformatting. This method is particularly helpful when trying to showcase poetry or code.",
+            "date": "Answered July 14, 2015",
+            "views": "728",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Srineethi",
+                    "user_href": "/profile/Srineethi"
+                },
+                {
+                    "user_id": "Mayur Thakkar",
+                    "user_href": "/profile/Mayur-Thakkar-8"
+                },
+                {
+                    "user_id": "Mr. Fascinating",
+                    "user_href": "/profile/Mr-Fascinating"
+                },
+                {
+                    "user_id": "Bhupesh Khadka",
+                    "user_href": "/profile/Bhupesh-Khadka"
+                },
+                {
+                    "user_id": "Hassan Hilles",
+                    "user_href": "/profile/Hassan-Hilles-1"
+                },
+                {
+                    "user_id": "Razvan Radu",
+                    "user_href": "/profile/Razvan-Radu-16"
+                },
+                {
+                    "user_id": "Steven Smith",
+                    "user_href": "/profile/Steven-Smith-785"
+                },
+                {
+                    "user_id": "Michael Canfield",
+                    "user_href": "/profile/Michael-Canfield-6"
+                },
+                {
+                    "user_id": "Vasile Razvan Luca",
+                    "user_href": "/profile/Vasile-Razvan-Luca"
+                },
+                {
+                    "user_id": "Amir Saleem",
+                    "user_href": "/profile/Amir-Saleem-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bharat Kumar",
+                "href": "/profile/Bharat-Kumar-155"
+            },
+            "answer_text": "Don't use &nbsp; for just adding space. &nbsp; is intended for other purpose.  If you justified the text, your paragraph might broke at unexpected places. E.g. if you have units in your para say '5 cm' and if the number '5' comes at the end of line and 'cm' goes to next line it doesn't make sense. In this case you should use \"5&nbsp;cm\" so it will not allow \"5 cm\" to break. It will be at the end of line or both will go to next line.see this link for detailed explanation Butterick\u2019s Practical Typography There are other ways to add space :Word spacing - to insert space between words,Letter spacing - to insert space between letters,line height - to insert space between lines in a paragraph,margin - insert space between any two sections or divs or what ever,padding - for adding space between inner content and it's border.text indent - to add space for the first line in a paragraph. You should use appropriate tool for appropriate purpose! ",
+            "date": "Answered June 26, 2015",
+            "views": "304",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bo Aakerstrom",
+                    "user_href": "/profile/Bo-Aakerstrom-1"
+                },
+                {
+                    "user_id": "Nidhal Bouzara",
+                    "user_href": "/profile/Nidhal-Bouzara"
+                },
+                {
+                    "user_id": "Leila Palmer",
+                    "user_href": "/profile/Leila-Palmer-3"
+                },
+                {
+                    "user_id": "Nuzhat Tabassum",
+                    "user_href": "/profile/Nuzhat-Tabassum-6"
+                },
+                {
+                    "user_id": "Trent Nelson",
+                    "user_href": "/profile/Trent-Nelson-4"
+                },
+                {
+                    "user_id": "Teon Prudent",
+                    "user_href": "/profile/Teon-Prudent"
+                },
+                {
+                    "user_id": "Nick James",
+                    "user_href": "/profile/Nick-James-67"
+                },
+                {
+                    "user_id": "Niels van der Gali\u00ebn",
+                    "user_href": "/profile/Niels-van-der-Gali\u00ebn"
+                }
+            ]
+        }
+    ]
+}

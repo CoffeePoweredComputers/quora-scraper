@@ -1,0 +1,64 @@
+{
+    "title": "How can a WAN network connect a LAN network? - Quora",
+    "tags": [
+        "Wide Area Networks",
+        "Local Area Networks",
+        "Networks",
+        "Network Security",
+        "Routers (networking)",
+        "Wireless Technology",
+        "Wi-Fi",
+        "Computer Networking",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eric Martinson",
+                "href": "/profile/Eric-Martinson-1"
+            },
+            "answer_text": "It\u2019s usually the reverse, where you are connecting a LAN to a WAN. To do that, you need a router as the LAN network usually consists of non-routable IP addresses that need to be routed to an external network. The best example of this is a home network connecting to the Internet. Your DSL or Cable modem acts as the router to take your local traffic and connect it to the outside world. If you\u2019re actually asking you do you access a LAN from a WAN network, that is a different question. In that case, you would need a device that does Network Address Translation (NAT) that could take traffic that hit your public IP address and routed that to your local network. That is usually a function of a firewall as you want to then block all of the traffic you don\u2019t want coming in to your network. ",
+            "date": "Answered December 11, 2018",
+            "views": "193",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Fitzgerald",
+                "href": "/profile/David-Fitzgerald-26"
+            },
+            "answer_text": "With a router. Specifically, with a gateway router. A gateway router typically has an inside interface, the LAN, and an outside interface, the WAN. It\u2019s that simple, really. ",
+            "date": "Answered November 17, 2018",
+            "views": "120",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tony Ayaz",
+                    "user_href": "/profile/Tony-Ayaz-2"
+                },
+                {
+                    "user_id": "Ryan Alder",
+                    "user_href": "/profile/Ryan-Alder-3"
+                },
+                {
+                    "user_id": "Allan Clark",
+                    "user_href": "/profile/Allan-Clark-12"
+                },
+                {
+                    "user_id": "Scott Helms",
+                    "user_href": "/profile/Scott-Helms-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tim Elliot",
+                "href": "/profile/Tim-Elliot"
+            },
+            "answer_text": "How connect LAN to WAN? That what your modem/router is for. It will usually be supplied by your ISP. ",
+            "date": "Answered May 21, 2019",
+            "views": "23",
+            "upvotes": "0"
+        }
+    ]
+}

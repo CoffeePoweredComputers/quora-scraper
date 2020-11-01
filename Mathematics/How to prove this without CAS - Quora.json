@@ -1,0 +1,115 @@
+{
+    "title": "How to prove this without CAS - Quora",
+    "tags": [
+        "Sums and Series (mathematics)",
+        "Calculus",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Edeki Okoh",
+                "href": "/profile/Edeki-Okoh"
+            },
+            "answer_text": "The Wikapedia article skips over a lot of steps, so I will give an explanation that goes through each step in the proof so you can better understand this identity. I hope you have tried to prove this using normal methods so you can that they are a waste of time. This is a special summation commonly known as sophomore's dream, which requires higher level algebra to solve. Let [math]f(x) = x^{-x}. [/math] [math]e^{ln(f(x))} = e^{ln(x^{-x})} = e^{(-x)ln(x)}[/math] Now before we move further, we have to prove that two other summations are equal to each other, specifically: [math](1) \\sum_{n = 0}^{\\infty} \\frac{x^{n}}{n!} = e^{x} . [/math] Proof of (1) : Note that [math]e^{0} = 1 = \\frac{x^{0}}{0!}. [/math]Thus we know that these two equations start at the same point. Now notice that [math]\\frac{d}{dx} e^{x} = e^{x}[/math] Now what happens if we take the derivative of [math]\\sum[/math][math]_{n=0}^{\\infty}[/math][math]\\frac{x^{n}}{n!}?[/math] [math]\\frac{d}{dx} \\sum_{n=0}^{\\infty}\\frac{x^{n}}{n!} = \\sum_{n=1}^{\\infty}\\frac{x^{n}}{n!} = \\sum_{n=1}^{\\infty} \\frac{n*x^{n-1}}{n!} = \\sum_{n=1}^{\\infty} \\frac{x^{n-1}}{(n-1)!} = \\sum_{n=0}^{\\infty} \\frac{x^{n}}{n!}. [/math] So what we have here are two separate equations that start at the same point, have have derivatives that are equal to themselves. Start same point, moves at same rate, well these have to be the same equation. Thus we have proved (1). (This is not a full proof, one can be seen here on the bottom of the page). Now we can use (1) and u substitution to rewrite [math]e^{(-x)ln(x)}:[/math] Let [math]u = (-x)ln(x).  [/math]Then [math]e^{u} = \\sum_{n=0}^{\\infty} \\frac{(-xln(x))^{n}}{n!} [/math] Looking at this summation, we can see that we are raising the numerator to an exponent, so this is actually a power series! So what we can do is test the convergence of this series. Using the limit test, with: [math]a_n = \\sum_{n=0}^{\\infty} \\frac{(-xln(x))^{n}}{n!} [/math] We can see that: [math]\\lim_{n\\to\\infty} | \\frac{(a_(n+1)}{a_n} | = \\lim_{n\\to\\infty} |\\frac{ln(x)^{n} * x}{n}| = 0. [/math] *I dropped the negative since we are looking at an absolute value Now we need to find the interval of convergence in order to find which values we can integrate this on. Using the ratio test with: [math]a_n = \\frac{ln(x)^{n} * x}{n}[/math] We find that this summation converges when [math]|ln(x)| < 1[/math], and this this series is uniformly convergent on the interval [math][0,1]. [/math] (Page 19 shows a good example on proving uniform convergence. I won\u2019t add it in at the moment but can at OP request). Now that we know that this series converges uniformly over the interval [0,1], we can integrate over this interval as follows: [math]f(n) = \\int_{0}^{1} \\frac{(-ln(x)*x)^{n}}{n!}dx [/math] Now use a change of variables: [math]u = -ln(x) [/math] To get the following integral: [math]f(n) = \\int_{0}^{\\infty} \\frac{u^{n}*e^{(-n+1)*u}}{n!}du[/math] *The interval of integration was changed from [0,1] to [0,[math]\\infty[/math]] because of the change of substitution, we went from dx to du.[math] [/math] *This is more clearly seen when we rewrite the integral as [math]f(n) = \\int_{0}^{1} \\frac{(-ln(x)x)^{n}*x^{n}}{n!}dx [/math] and use (1) which we proved earlier. Now we can pull out the [math]n![/math] from the denominator, since we are taking the derivative with respect to du, and use another change of variables: [math]v = (n+1)*u[/math] To get a very nasty looking integral [math]f(n) = \\frac{1}{n!} \\int_{0}^{\\infty} \\frac{v^{n}e^{-v}}{(n+1)^{n+1}}dv[/math] Now that we are taking the integral in terms of dv, we can remove all of the terms with n from the integral to get: [math]\\frac{1}{(n!)(n+1)^{n+1}} \\int_{0}^{\\infty} v^{n}e^{-v}dv[/math] But how do we evaluate that integral, especially since it is in terms of two different change of variables? This is where we can use the gamma function to help us. Remember, the gamma function is defined as follows: [math]\\Gamma(n) = (n-1)! = \\int_{0}^{\\infty} x^{n-1}e^{-x}dx [/math] Therefore with alittle manipulation, we can see that: [math]\\Gamma(n+1) = (n)! = \\int_{0}^{\\infty} x^{n}e^{-x} dx[/math] After swapping some variables, we can see that: [math]\\int_{0}^{\\infty} v^{n}e^{-v}dv = \\Gamma(n+1) = n! [/math] Thus we can reduce this all down to the following expression: [math]\\int_{0}^{\\infty} x^{-x} = \\int_{0}^{\\infty} \\frac{n!}{n!*(n+1)^{n+1}} = \\sum_{n=0}^{\\infty} \\frac{1}{(n+1)^{n+1}} = \\frac{1}{1^1}+ \\frac{1}{2^2} + ...... + \\frac{1}{n^n} [/math] This is the proof, I hope it helps! If you need any clarification at any parts let me know and I can throw it in real quick. ",
+            "date": "Updated April 9, 2018",
+            "views": "52",
+            "upvotes": " View 57 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Utkarsh Priyam",
+                    "user_href": "/profile/Utkarsh-Priyam"
+                },
+                {
+                    "user_id": "SK Maurya",
+                    "user_href": "/profile/SK-Maurya-51"
+                },
+                {
+                    "user_id": "Tafari James",
+                    "user_href": "/profile/Tafari-James"
+                },
+                {
+                    "user_id": "Juan Ramon Guillam\u00f3n Andreu",
+                    "user_href": "/profile/Juan-Ramon-Guillam\u00f3n-Andreu"
+                },
+                {
+                    "user_id": "Abhishek.S. Nair",
+                    "user_href": "/profile/Abhishek-S-Nair-2"
+                },
+                {
+                    "user_id": "Mo Poopers",
+                    "user_href": "/profile/Mo-Poopers"
+                },
+                {
+                    "user_id": "Arpan Mathur",
+                    "user_href": "/profile/Arpan-Mathur-2"
+                },
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                },
+                {
+                    "user_id": "Michael Kamrath",
+                    "user_href": "/profile/Michael-Kamrath"
+                },
+                {
+                    "user_id": "Larry",
+                    "user_href": "/profile/Larry-604"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abu Zafar",
+                "href": "/profile/Abu-Zafar-35"
+            },
+            "answer_text": "This one is known as Bernoulli\u2019s integral. There are more general cases for this integral. The solution technique for this type of integral was discussed in the book of Inside Interesting Integral written by Paul J. Nahin. The solution which I attached is taken from his book. Enjoy!    ",
+            "date": "Answered April 27, 2019",
+            "views": "781",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Maxie Schmidt",
+                    "user_href": "/profile/Maxie-Schmidt-1"
+                },
+                {
+                    "user_id": "Biswadeep Ghosh",
+                    "user_href": "/profile/Biswadeep-Ghosh-10"
+                },
+                {
+                    "user_id": "Arpan Mathur",
+                    "user_href": "/profile/Arpan-Mathur-2"
+                },
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                },
+                {
+                    "user_id": "Gita Melkote",
+                    "user_href": "/profile/Gita-Melkote"
+                },
+                {
+                    "user_id": "Alp AG",
+                    "user_href": "/profile/Alp-AG"
+                },
+                {
+                    "user_id": "Benny Jhonson",
+                    "user_href": "/profile/Benny-Jhonson"
+                },
+                {
+                    "user_id": "Martijn Verstelle",
+                    "user_href": "/profile/Martijn-Verstelle-1"
+                },
+                {
+                    "user_id": "Amal Guptan",
+                    "user_href": "/profile/Amal-Guptan"
+                },
+                {
+                    "user_id": "Riju Bhatt",
+                    "user_href": "/profile/Riju-Bhatt-1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "title": "What will be the 288th term of the sequence a, b, b, c, c, c, d, d, d, d, e, e, e, e, e, f, f, f, f, f, f, etc.? - Quora",
+    "tags": [
+        "Series and Sequences"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shreyes Mohanya",
+                "href": "/profile/Shreyes-Mohanya"
+            },
+            "answer_text": "I SOLVED IT PROGRAMMATICALLY So If anyone\u2019s interested,Here\u2019s the code in C int i,j,count=0;\u00a0\tint a=97;\u00a0\tfor(j=0;j<24;j++){\u00a0\t\tfor(i=0;i<=j;i++)\u00a0\t\t{\u00a0\t\t\tprintf(\"%c\\t\",a);\u00a0\t\t\tif(count==288){\u00a0\t\t\tprintf(\"%d\",count);\u00a0\t\t\t}\u00a0\t\t\tcount++;\u00a0\t\t}\u00a0\t\tprintf(\"%d\\n\",count);\u00a0\t\ta++;\u00a0\t\t}\u00a0 This is the output of the code and as you can see:- The 288th Term of the series is x. HAPPY TO HELP. If you follow me I\u201dll try my best not to disappoint you. THANKYOU FOR READING. Suggestions are welcome Your UPVOTE motivates me to WRITE more. ",
+            "date": "Answered September 12, 2018",
+            "views": "2",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sagnick Dutta",
+                    "user_href": "/profile/Sagnick-Dutta"
+                },
+                {
+                    "user_id": "Sai Gana Priya",
+                    "user_href": "/profile/Sai-Gana-Priya"
+                },
+                {
+                    "user_id": "Indeswari Chipilla",
+                    "user_href": "/profile/Indeswari-Chipilla"
+                },
+                {
+                    "user_id": "Mani Ram Sri Harsha",
+                    "user_href": "/profile/Mani-Ram-Sri-Harsha"
+                },
+                {
+                    "user_id": "Dhananjay M",
+                    "user_href": "/profile/Dhananjay-M-8"
+                },
+                {
+                    "user_id": "Pathikrit Dutta",
+                    "user_href": "/profile/Pathikrit-Dutta"
+                },
+                {
+                    "user_id": "Diksha Dandekar",
+                    "user_href": "/profile/Diksha-Dandekar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikhil Bansal",
+                "href": "/profile/Nikhil-Bansal-29"
+            },
+            "answer_text": "Consider the sequence to be: 1,2,2,3,3,3,4,4,4,4,5,5,5,5,5\u2026and so on. By observation, 1 ends at 1st term, 2 ends at 3rd term, 3 ends at 6th term, 4 ends at 10th term and 5 ends at 15th term. So we see that a number \u2019n\u2019 ends at \u2018n(n+1)/2\u2019th term. Calculating, \u2019n\u2019 turns out to be 24 in this case which ends at 300th term. 24th alphabet = x ",
+            "date": "Answered July 4, 2017",
+            "views": "38",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sambit SenGupta",
+                    "user_href": "/profile/Sambit-SenGupta-4"
+                },
+                {
+                    "user_id": "Chaitanya",
+                    "user_href": "/profile/Chaitanya-497"
+                },
+                {
+                    "user_id": "Koya Vasudha",
+                    "user_href": "/profile/Koya-Vasudha"
+                },
+                {
+                    "user_id": "Ruchi jha",
+                    "user_href": "/profile/Ruchi-jha-20"
+                },
+                {
+                    "user_id": "Ranka Rajan",
+                    "user_href": "/profile/Ranka-Rajan"
+                },
+                {
+                    "user_id": "Sravya Saragadam",
+                    "user_href": "/profile/Sravya-Saragadam-2"
+                },
+                {
+                    "user_id": "Shreyes Mohanya",
+                    "user_href": "/profile/Shreyes-Mohanya"
+                },
+                {
+                    "user_id": "Sunil Hn",
+                    "user_href": "/profile/Sunil-Hn"
+                },
+                {
+                    "user_id": "Shivam Sharma",
+                    "user_href": "/profile/Shivam-Sharma-1445"
+                },
+                {
+                    "user_id": "Ali Asgar Sir",
+                    "user_href": "/profile/Ali-Asgar-Sir"
+                }
+            ]
+        }
+    ]
+}

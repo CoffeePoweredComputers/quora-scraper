@@ -1,0 +1,59 @@
+{
+    "title": "What are the different ways of proving that Reachability is not definable in first order logic? - Quora",
+    "tags": [
+        "ReachAbility",
+        "Model Theory (mathematics)",
+        "First-order Logic",
+        "Logic (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andr\u00e9s Occhipinti",
+                "href": "/profile/Andr\u00e9s-Occhipinti"
+            },
+            "answer_text": "Before addressing your question, some important remarks: Reachability is definable in first-order logic. For instance, you can express it in the language of set theory by quantifying over paths in the graph. And set theory is a first-order theory. Reachability is not definable in the particular first-order language where quantification is only permitted over nodes and the only relation symbols available are for the incidence relation on the graph and equality. So whether reachability is definable or not depends on the particulars of the first-order language that is being allowed. When people claim that \"reachability is not definable in first order logic\", they implicitly assume a language with the features that I mentioned above (or a similar one). Hereafter I'll assume that we are indeed restricting our attention to such a language. A standard proof of non expressibility of reachability goes as follows: Suppose there is a formula [math]\\phi(x, y)[/math], with free variables [math]x[/math] and [math]y[/math], expressing reachability between [math]x[/math] and [math]y[/math]. Using [math]\\phi(x, y)[/math], we will define a formula that will be true of a graph if the graph is a cycle. First, we let [math]\\phi_1:= \\forall x \\forall y \\phi(x, y) [/math] which says that the graph is strongly connected, i. e., all nodes are reachable from all nodes. Then we construct two more formulas, [math]\\phi_2,\\phi_3[/math], stating that every node of the graph has indegree one and that every node has outdegree one, respectively.The conjuction of the above three formulas: [math]\\psi:=\\phi_1\\wedge \\phi_2\\wedge\\phi_3[/math] states that a graph is strongly connected and all nodes have indegree and outdegree one. That is, the graph is a cycle. As there are finite cycles with as many nodes as desired, [math]\\psi[/math] has arbitrarily large finite models. Thus, by Lowenheim-Skolem theorem, it also has an infinite model. But infinite cycles do not exist, so our assumption that [math]\\phi(x, y)[/math] exists must be false. Hope this helps! - A ",
+            "date": "Answered July 14, 2016",
+            "views": "670",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tim Glatzer",
+                    "user_href": "/profile/Tim-Glatzer"
+                },
+                {
+                    "user_id": "Mohammad Ali Baydoun",
+                    "user_href": "/profile/Mohammad-Ali-Baydoun-1"
+                },
+                {
+                    "user_id": "Rawane",
+                    "user_href": "/profile/Rawane-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniil Kozhemiachenko (\u0414\u0430\u043d\u0438\u0438\u043b \u041a\u043e\u0436\u0435\u043c\u044f\u0447\u0435\u043d\u043a\u043e)",
+                "href": "/profile/Daniil-Kozhemiachenko-\u0414\u0430\u043d\u0438\u0438\u043b-\u041a\u043e\u0436\u0435\u043c\u044f\u0447\u0435\u043d\u043a\u043e"
+            },
+            "answer_text": "Not a single relation (even equality) is definable in a pure first order logic, i.e. logic without already defined predicate and functional symbols. The thing here is the fact that first order logic cannot quantify over predicates and functions. However, many relations can be defined in first order languages and first order theories which are actually non-conservative extensions of FOL (i.e., one can prove therein more than in \u201cpure\u201d FOL). Why is it so? Because there are vastly more models for pure FOL than for any of first order theories: a theorem of FOL is true in every possible model, while a theorem of some first order theory is true only in the models of that very theory. Example: [math]1+1=2[/math] is true only in the models wherein arithmetic holds. However, it is not true in a two-valued Boolean algebra over signature [math]+,\\times,\\prime,1,0[/math], because there is no symbol [math]2[/math] there. Hence, it is not a FOL tautology (we have found one model wherein the expression holds and another wherein it doesn\u2019t). In other words, a theorem in FOL is always a tautology, a theorem in a first order theory isn\u2019t. Another example: one cannot prove in FOL for arbitrary binary predicate symbol that it is, say, reflexive. In fact, reflexivity \u2014 \\forall x_1[math]P^2_{1}(x_1,x_1)[/math] (or something else like [math]\\forall x_1 P^2_3(x_1,x_1)[/math]) is only a satisfiable formula because we don\u2019t know the interpretation of a given predicate symbol in pure FOL. Hope, that helps. ",
+            "date": "Updated July 22, 2016",
+            "views": "660",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tim Glatzer",
+                    "user_href": "/profile/Tim-Glatzer"
+                },
+                {
+                    "user_id": "Quinn Rusnell",
+                    "user_href": "/profile/Quinn-Rusnell"
+                },
+                {
+                    "user_id": "John Bryan",
+                    "user_href": "/profile/John-Bryan-25"
+                }
+            ]
+        }
+    ]
+}

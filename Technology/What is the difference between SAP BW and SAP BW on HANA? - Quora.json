@@ -1,0 +1,63 @@
+{
+    "title": "What is the difference between SAP BW and SAP BW on HANA? - Quora",
+    "tags": [
+        "SAP Business Warehouse",
+        "SAP HANA"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nikhil Dhawan",
+                "href": "/profile/Nikhil-Dhawan-9"
+            },
+            "answer_text": "Simple analogy is a owning a normal car Vs Ferrari. Normal SAP BW can run on any DB(Oracle, DB2 etc.) whereas SAP BW on HANA runs on HANA DB. HANA DB is faster than other DB because of In-memory Processing and its HANA engine. HANA is not just about hardware but also a software, hence its referred as appliance. There are many advantages for migrating on SAP BW on HANA few are listed below: In standard DSO data activation is faster, hence it improves overall run time of the process chainsSince Dimension tables are removed, no need of cube(Except few scenarios like aggregating data from multiple sources, banking)As we don\u2019t have cube, we won\u2019t have to maintain rollups, indexes, aggregates, no more partitioning of cubes.And since we don\u2019t have to do 3 and 4 developers save timeData footprint is reduced by advanced compression techniquesOverall complexity of the system is reducedFaster run time for the BEx queriesThe list can go on, but when we migrate from any DB to HANA, companies need to take ROI/economic feasibility and other factors into consideration. ",
+            "date": "Answered September 14, 2017",
+            "views": "82",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vasu",
+                    "user_href": "/profile/Vasu-328"
+                },
+                {
+                    "user_id": "Tanja Kekenovska",
+                    "user_href": "/profile/Tanja-Kekenovska"
+                },
+                {
+                    "user_id": "Satya Sig",
+                    "user_href": "/profile/Satya-Sig"
+                },
+                {
+                    "user_id": "Kiranmai Namala",
+                    "user_href": "/profile/Kiranmai-Namala"
+                },
+                {
+                    "user_id": "Abishek Subramanian",
+                    "user_href": "/profile/Abishek-Subramanian"
+                },
+                {
+                    "user_id": "Rishi Kumar",
+                    "user_href": "/profile/Rishi-Kumar-630"
+                },
+                {
+                    "user_id": "Siva Reddy",
+                    "user_href": "/profile/Siva-Reddy-1129"
+                },
+                {
+                    "user_id": "Santhanaa",
+                    "user_href": "/profile/Santhanaa"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Harika Shetty",
+                "href": "/profile/Harika-Shetty-4"
+            },
+            "answer_text": "As we all know that every business and every organization conducts a lot of business activities every day and they create a lot of data. If you have like thousands and millions of every day transactions which are at a very detailed level there is no intelligence you can draw from it, but if you can put them in the multi-dimensional way and look at the total revenue for a particular customer or what are the profits that you are getting from a particular vendor like that you can use that intelligent information change your business activities, so that you can get more profits so in order to do that SAP BW serves the purpose In SAP BW HANA we learn HANA Optimized BW Objects. That is we learn about HANA Optimized DSO/ Info cubes/ Virtual Providers/ Transient Providers/ Advanced DSO/ Composite Provider/ Open DSO view. Now, we also provide SAP BW BI 7.4 online course. Actually the easy way to understand SAP HANA is, SAP HANA platform everything starts with the Business suite, when you set up the Business Suite you get all your operational applications integrated. All these applications generate a lot of data that is behind, and you want to access this data, not easy when you have all your operational systems running on it, so then we need to Extract Transform and Load (ETL) all this data into another data set. And we call it as the Operational Data Store(ODS), so after the Operational Data Store in a very big cube. check with this link for details: https://www.globalonlinetrainings.com/sap-bw-training-2 ",
+            "date": "Answered December 6, 2017",
+            "views": "35",
+            "upvotes": "0"
+        }
+    ]
+}

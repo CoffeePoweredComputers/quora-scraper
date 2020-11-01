@@ -1,0 +1,97 @@
+{
+    "title": "Are all subsets of an infinite set infinite? - Quora",
+    "tags": [
+        "Set Theory",
+        "Infinity (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Howard Ludwig",
+                "href": "/profile/Howard-Ludwig"
+            },
+            "answer_text": "\u201cAre all subsets of an infinite set infinite?\u201d No. If you have an infinite set, you will have: an infinite number of sets that are finite (such as the empty set being a subset of every set, as well as all the singleton sets, each of which contains one element of the given set);an infinite number of infinite subsets (such as the set itself, as well as all the sets that have exactly one element removed from the original set).One definition of infinite set is: \u201cA set S is infinite if and only if there exists a proper subset T of S with a bijection [one-to-one correspondence] between S and T.\u201d This implies the subset T to be infinite as well, so, yes, there are infinite subsets. However, the definition uses \u201cthere exists\u201d rather than \u201cfor all\u201d so that not all proper subsets need to satisfy this property, and, indeed, as presented above there are always finite subsets, none of which can work. Thus there is no such thing as a \u201csmallest\u201d infinite subset of a set\u2014you can always remove one more element and the resulting set is still infinite. This concept is the counterpart to there being no largest finite set. To add one further detail, there are cases where an infinite subset T of an infinite set S does not have the same cardinality as S.For example, with the set of real numbers R:R \\ Q is an infinite proper subset of R that has the same cardinality as R;Z in an infinite proper subset of R that has a different cardinality than R;{0, 1} is a finite proper subset of R.(Here Q denotes the set of rational numbers and Z denotes the set of integers. For all of these sets, I am taking them as merely raw sets of numbers without algebraic structure. As Alan Bustany very appropriately points out in some of his posts, the algebraic structure imposed by applying an arithmetic to these sets yields a situation in which an integer 1 is not actually a rational 1, which is not actually a real 1, \u2026, but are intimately related to each other through isomorphisms.) The meaning and implications of a set being infinite are very entertaining and often contrary to intuition, so one must be very careful in handling them. ",
+            "date": "Answered October 14, 2018",
+            "views": "22",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jenna Ravenstone",
+                    "user_href": "/profile/Jenna-Ravenstone"
+                },
+                {
+                    "user_id": "Renny Barrett",
+                    "user_href": "/profile/Renny-Barrett"
+                },
+                {
+                    "user_id": "Brad Kelly",
+                    "user_href": "/profile/Brad-Kelly-5"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Danya Rose",
+                "href": "/profile/Danya-Rose"
+            },
+            "answer_text": "Hypothesis: All subsets of an infinite set are infinite. Discussion: The hypothesis is that if [math]X[/math] is a set with transfinite cardinality [math]|X|[/math], then there is no [math]Y\\subseteq X[/math] such that [math]|Y|[/math] is finite. Finding or constructing any finite subset of [math]X[/math] will disprove the hypothesis. Failing that, we might attempt proof by contradiction (which would entail assuming that there exists some finite subset of [math]X[/math], and using the properties of sets and subsets to show that a contradiction arises). Luckily we don\u2019t have to go as far as contradiction to prove either the hypothesis or its negation. The empty set [math]\\emptyset=\\{\\}\\subseteq X[/math] for every set (finite or infinite) [math]X[/math], and [math]|\\emptyset|=0[/math] is finite. Use the definition of a subset to show that for all sets [math]X[/math], [math]\\emptyset\\subseteq X[/math]. (Hint: look up the definition of \u201cvacuously true\u201d, if you are stuck.) For every single element [math]x\\in X[/math] there is the singleton set [math]\\{x\\}\\subseteq X[/math]. For every two distinct elements [math]x,y\\in X[/math] there is the two-element set [math]\\{x,y\\}\\subseteq X[/math]. For every three distinct elements\u2026 and so on. There are infinitely many finite subsets of any infinite set. In fact, it\u2019s a solid exercise to find out whether the set of finite subsets of the infinite set [math]X[/math] has cardinality equal to or exceeding [math]|X|[/math] itself. ",
+            "date": "Updated October 16, 2018",
+            "views": "11",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dolev Dabush",
+                    "user_href": "/profile/Dolev-Dabush"
+                },
+                {
+                    "user_id": "Patrick Tam",
+                    "user_href": "/profile/Patrick-Tam-5"
+                },
+                {
+                    "user_id": "Shravya N",
+                    "user_href": "/profile/Shravya-N-15"
+                },
+                {
+                    "user_id": "Dhaval Vyas",
+                    "user_href": "/profile/Dhaval-Vyas-23"
+                },
+                {
+                    "user_id": "Comet",
+                    "user_href": "/profile/Comet-7"
+                },
+                {
+                    "user_id": "Murray Eisenberg",
+                    "user_href": "/profile/Murray-Eisenberg"
+                },
+                {
+                    "user_id": "Jakob Nebeling",
+                    "user_href": "/profile/Jakob-Nebeling"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Eric Platt",
+                    "user_href": "/profile/Eric-Platt-9"
+                },
+                {
+                    "user_id": "Robert Chin",
+                    "user_href": "/profile/Robert-Chin-3"
+                }
+            ]
+        }
+    ]
+}

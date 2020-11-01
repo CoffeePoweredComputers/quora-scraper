@@ -1,0 +1,114 @@
+{
+    "title": "Why is the Rust programming language so fast? - Quora",
+    "tags": [
+        "Rust (programming language)",
+        "Computer Programmers",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Evgeny Permyakov",
+                "href": "/profile/Evgeny-Permyakov"
+            },
+            "answer_text": "Rust is a compiled language with static typing and without anything like garbage collection. Interpreted (dynamic) languages are rarely fast. Exceptions occur if they utilize heavily external libraries and even then the code outside the libraries is slow. Dynamically typed languages are slow. Even languages with dynamic polymorphism are slow when they rely on that dynamic polimorphism. The problem is in dispatch. Indirect and double indirect function calls are slow and are not friendly for CPU predictors. Languages with garbage collection often are slow, because they need scan their heap, and objects need to hold extra info. There are various implementation of GC algorithms, but every one has a price for performance that is rarely overcome. However, everything noted above can be said about C. Rust has several features that make it potentially faster than C. Or, at least, idiomatic code in Rust can be faster than idiomatic code in C. Rust offers static dispatch of traits. This is similar to C++ templates, but cleaner. Static dispatch allows for abstracted code with composition without paying for indirection. It still allows dynamic dispatch of traits when needed. Rust explicitly tracks ownership of variables. That\u2019s huge, because C has to assume that any variable with an address can change at any moment. Rust does not. This opens many possibilities for optimizations that otherwise can break the code. Rust expects variables to be immutable by default. Again, it helps optimizer. Rust offers algebraic data types. This feature can be imitated in C with unions, but it is pain. Also, unions don\u2019t have nice math theory behind them, so they are very unfriendly for optimizations. Rust ADTs are fairly friendly for optimization. Rust allows for return of tuples, making returning several values from a function trivial. Alltogether this makes Rust similar to C with features making advanced programming techniques less painful and more friendly to optimizer. ",
+            "date": "Answered January 27, 2019",
+            "views": "92",
+            "upvotes": " View 45 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "X Or",
+                    "user_href": "/profile/X-Or-1"
+                },
+                {
+                    "user_id": "Benny Kulangive",
+                    "user_href": "/profile/Benny-Kulangive"
+                },
+                {
+                    "user_id": "Philip Ingvaldsson Kitselis",
+                    "user_href": "/profile/Philip-Ingvaldsson-Kitselis"
+                },
+                {
+                    "user_id": "Eric Morrison",
+                    "user_href": "/profile/Eric-Morrison-4"
+                },
+                {
+                    "user_id": "Quintin van Rooyen",
+                    "user_href": "/profile/Quintin-van-Rooyen"
+                },
+                {
+                    "user_id": "Mile Zajkovski",
+                    "user_href": "/profile/Mile-Zajkovski-1"
+                },
+                {
+                    "user_id": "Kanel Soeng",
+                    "user_href": "/profile/Kanel-Soeng"
+                },
+                {
+                    "user_id": "William Steinberg",
+                    "user_href": "/profile/William-Steinberg-1"
+                },
+                {
+                    "user_id": "Tyler McDaniel",
+                    "user_href": "/profile/Tyler-McDaniel-12"
+                },
+                {
+                    "user_id": "William Westlake",
+                    "user_href": "/profile/William-Westlake-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vlado Boza",
+                "href": "/profile/Vlado-Boza"
+            },
+            "answer_text": "Because: it is statically typed and compiled, so compiler can optimize your code to be fastit does not use any boxing (data are stored without any overhead), garbage collection (no sudden pauses) or other runtime shenanigansalmost all of its abstraction are zero cost (there is no runtime penalty for using them).It is basically C with some nice features on top of it. ",
+            "date": "Answered January 21, 2019",
+            "views": "42",
+            "upvotes": " View 37 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Juan Pablo",
+                    "user_href": "/profile/Juan-Pablo-635"
+                },
+                {
+                    "user_id": "Vitor Domingues",
+                    "user_href": "/profile/Vitor-Domingues-1"
+                },
+                {
+                    "user_id": "Yacob Cohen-Arazi",
+                    "user_href": "/profile/Yacob-Cohen-Arazi"
+                },
+                {
+                    "user_id": "Eric Morrison",
+                    "user_href": "/profile/Eric-Morrison-4"
+                },
+                {
+                    "user_id": "Martin Gale",
+                    "user_href": "/profile/Martin-Gale-8"
+                },
+                {
+                    "user_id": "William Steinberg",
+                    "user_href": "/profile/William-Steinberg-1"
+                },
+                {
+                    "user_id": "Ali Naqvi",
+                    "user_href": "/profile/Ali-Naqvi-37"
+                },
+                {
+                    "user_id": "S\u00e9v\u00e8re Durand",
+                    "user_href": "/profile/S\u00e9v\u00e8re-Durand"
+                },
+                {
+                    "user_id": "Jonathan Busby",
+                    "user_href": "/profile/Jonathan-Busby"
+                },
+                {
+                    "user_id": "Linus Behrbohm",
+                    "user_href": "/profile/Linus-Behrbohm-1"
+                }
+            ]
+        }
+    ]
+}

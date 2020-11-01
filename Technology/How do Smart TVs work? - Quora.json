@@ -1,0 +1,52 @@
+{
+    "title": "How do Smart TVs work? - Quora",
+    "tags": [
+        "Smart TVs"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bob Hannent",
+                "href": "/profile/Bob-Hannent"
+            },
+            "answer_text": "The majority of the chips in TVs come from a company called MStar. There is a bit of an odd separation with them that they believe that Smart TVs are Android and Connected TVs are Linux plus browser. This is wrong to me and leads to another consequence: Android sucks CPU, Flash and RAM and so MStar provide Android customers with the faster chips but they don't easily give them to the Linux customers! Older smart TVs, earlier less capable generations were less than 2000DMIPS usually MIPS cores but today we are getting 5000DMIPS dual core ARM A9. As we being to win the argument over Linux vs Android they are starting to recognise the Linux customers would like the more powerful chips and we are seeing 10k DMIPS. RAM is between 512MB and 1GB (Android much more). Flash is odd because you could work with 128MB or less, but TVs often have to work in several markets and they sometimes have dual banks so if one set fails you have a backup flash. I've seen it reach above 512MB (Android much more). Usually you have the native TV core code which looks after tuning, etc. The OS, a media player, some frame buffer (Direct FB or OpenGLES), then a browser on top. The browser is usually a WebKit derivative but it will also have HbbTV extensions. Sometimes the UI is written in C, or Qt/QML or even increasingly in HTML. ",
+            "date": "Answered June 21, 2015",
+            "views": "12",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Naveen Puttu",
+                    "user_href": "/profile/Naveen-Puttu"
+                },
+                {
+                    "user_id": "Michael Lancaster",
+                    "user_href": "/profile/Michael-Lancaster-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wirawan Winarto",
+                "href": "/profile/Wirawan-Winarto"
+            },
+            "answer_text": "It depends. (well, what else do you expect?) It depends on which brands of Smart TV.Let's assume, it's Samsung. Samsung has two kinds of Smart TV, again, it depends on which version of Smart TV do you buy. The first version is the original Smart TV while the second version is the new one that is based on operating system named Tizen.   There are two kinds of apps you can develop on top of Tizen OS, native application and web application.Native application runs directly on top of the platform, which is probably faster and more \"adventurous\". While the web application is basically run above a \"sandbox\", just like building an app running on web browser. Samsung Smart TV (the new ones) is running on top of TizenOS platform while the OS is also used on Samsung washing machines, refrigerator, air conditioner, rice cooker, set-top boxes, etc. To develop for Tizen, you can refer to this page : Tizen Developers ",
+            "date": "Answered June 20, 2015",
+            "views": "26",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Naveen Puttu",
+                    "user_href": "/profile/Naveen-Puttu"
+                },
+                {
+                    "user_id": "Bob Hannent",
+                    "user_href": "/profile/Bob-Hannent"
+                },
+                {
+                    "user_id": "Michael Lancaster",
+                    "user_href": "/profile/Michael-Lancaster-1"
+                }
+            ]
+        }
+    ]
+}

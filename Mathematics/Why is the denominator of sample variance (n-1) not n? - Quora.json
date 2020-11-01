@@ -1,0 +1,112 @@
+{
+    "title": "Why is the denominator of sample variance (n-1) not n? - Quora",
+    "tags": [
+        "Sampling (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tara Rajendran",
+                "href": "/profile/Tara-Rajendran"
+            },
+            "answer_text": "I have come across a very sensible answer to this in a book. (Don't recall the book, but the explanation made so much sense that it stayed with me.)  Imagine you have a huge bookshelf.  You measure the total thickness of the first 6 books and it turns out to be 158mm. This means that the mean thickness of a book based on first 6 samples is 26.3mm.  Now you take out and measure the first book's thickness (one degree of freedom) and find that it is 22mm. This means that the remaining 5 books must have a total thickness of 136mmNow you measure the second book (second degree of freedom) and find it to be 28mm. So you know that the remaining 4 books should have a total thickness of 108mm . ..In this way, by the time you measure the thickness of the 5th book individually (5th degree of freedom) , you automatically know the thickness of the remaining 1 book. This means that you automatically know the thickness of 6th book even though you have measured only 5.  Extrapolating this concept, In a sample of size n, you know the value of the n'th observation even though you have only taken (n-1) measurements. i.e,  the opportunity to vary has been taken away for the n'th observation.  This means that if you have measured (n-1) objects then the nth object has no freedom to vary. Therefore, degree of freedom is only (n-1) and not n. NOTE- Suppose your mother told you that she had calculated the mean thickness of all the books in the bookshelf and found it to be 25.8[Let's call this mean(mom) and your original mean of 26.3 mean(you)].  If you use this measurement and perform the same experiment as above, then even the 6th observation can vary because it is not necessary that mean(mom)*n = total thickness of n books. Whereas since you calculated mean(you) from the n samples, it automatically follows that mean(you)*n = total thickness of n books. ",
+            "date": "Answered December 5, 2015",
+            "views": "107",
+            "upvotes": " View 64 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Pranjal Singh",
+                    "user_href": "/profile/Pranjal-Singh"
+                },
+                {
+                    "user_id": "Farida Kalsoom",
+                    "user_href": "/profile/Farida-Kalsoom"
+                },
+                {
+                    "user_id": "Manoj Sivaram",
+                    "user_href": "/profile/Manoj-Sivaram"
+                },
+                {
+                    "user_id": "Parth Jain",
+                    "user_href": "/profile/Parth-Jain-267"
+                },
+                {
+                    "user_id": "Kiran Venna",
+                    "user_href": "/profile/Kiran-Venna-1"
+                },
+                {
+                    "user_id": "Roopa Mohan",
+                    "user_href": "/profile/Roopa-Mohan-14"
+                },
+                {
+                    "user_id": "Daniel Osuto",
+                    "user_href": "/profile/Daniel-Osuto"
+                },
+                {
+                    "user_id": "Preeti Singh",
+                    "user_href": "/profile/Preeti-Singh-3372"
+                },
+                {
+                    "user_id": "Shubham Bavishi",
+                    "user_href": "/profile/Shubham-Bavishi"
+                },
+                {
+                    "user_id": "Sayyam Luhadiya",
+                    "user_href": "/profile/Sayyam-Luhadiya"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mirko \u0160purek",
+                "href": "/profile/Mirko-\u0160purek"
+            },
+            "answer_text": "The key of understanding lies in fundamentals of mathematics/geometry. Let\u2019s put away all the equations for a moment. Imagine any, let\u2019s say 2-dimensional object - for example square. All the points on the edge (black & red), which form our square, represent population. The red points on the edge, represent our sample. Mean is a measure of central tendency and it is represented by \u201cmiddle value\u201d. In math/geometry mean is represented by the center of the object. So, red point inside the square represent the sample mean, black point inside the square represent population mean ( or at least it should look like that :) )  Now, let\u2019s think about it for a second. You will find out, that the distance between the red insider and all the red outsiders on the edge, is the smallest possible distance you can measure. There is no other point inside the square (or anywhere else), which is closer to ALL the red points, than this one (in other words, the sum of distances is the smallest possible number). Of course, the same applies for the population centre. Now, let\u2019s measure \u201cthe average distance\u201d between the centre and the outsiders. Distance 1 + Distance 2 + Distance 3 + Distance 4, divided by 4, since we have four samples. In some sense, we\u2019ve just measured variance (in other words, if all the edge points should be equally distributed around the center, while the total distance measured remains the same, how would the picture look like ? ). You can measure both, sample variance & population variance. Here, \u201cn-1\u201d takes the place in the story. In sample variance, we are measuring average distance between the Red center & red outsiders. We don\u2019t know that population look like square, we see only the red points!!! In a perfect world, we would know that population forms a square, and subsequently we would know, where the population mean/center is. World unfortunately, is not a perfect place. But we can try to make it as perfect as possible (that\u2019s why we use \u201cn-1). We are using statistics, because we want to ESTIMATE the truth, the population. Sample is just a tool how to estimate it. What i am trying to say is, that we are measuring distance between the sample and it\u2019s center, but we are actually interested in the measurement of distance between the sample (which is the subset of the population) and the POPULATION CENTER. Sample mid-point is not the part of the truth, but since we don\u2019t know the true mid-point, we have to use the sample mid point. To eliminate this imperfection, we implement \u201cn-1\u201d. As we already know, the red-centre represents the smallest possible distance between the centre and all the other red points . If you will measure the average distance between the sample red points and the true-black mid point, you will always, always get a bigger number. That\u2019s why we are using \u201cn-1\u201d in denominator, so we can get a little bit bigger number as a result, which is closer to truth. Statistics tests shown us, that if we would use \u201cn-2\u201d, we would already overestimate the truth. By using just \u201cn\u201d we are underestimating the truth. That\u2019s why we use \u201cn-1\u201d. Makes sense ? I hope yes. I highly recommend to watch some khan academy videos on this problem. https://www.khanacademy.org/math/ap-statistics/summarizing-quantitative-data-ap/more-standard-deviation/v/another-simulation-giving-evidence-that-n-1-gives-us-an-unbiased-estimate-of-variance ",
+            "date": "Answered November 1, 2017",
+            "views": "126",
+            "upvotes": " View 49 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abhay Patil",
+                    "user_href": "/profile/Abhay-Patil-92"
+                },
+                {
+                    "user_id": "Find Swe",
+                    "user_href": "/profile/Find-Swe"
+                },
+                {
+                    "user_id": "Heeba",
+                    "user_href": "/profile/Heeba-2"
+                },
+                {
+                    "user_id": "Sudha",
+                    "user_href": "/profile/Sudha-281"
+                },
+                {
+                    "user_id": "Archer Tu",
+                    "user_href": "/profile/Archer-Tu-1"
+                },
+                {
+                    "user_id": "Ashraf Jamadar",
+                    "user_href": "/profile/Ashraf-Jamadar-2"
+                },
+                {
+                    "user_id": "Roshni Soni",
+                    "user_href": "/profile/Roshni-Soni-2"
+                },
+                {
+                    "user_id": "Naz Drovje",
+                    "user_href": "/profile/Naz-Drovje"
+                },
+                {
+                    "user_id": "Dhana Dev",
+                    "user_href": "/profile/Dhana-Dev-3"
+                },
+                {
+                    "user_id": "Collin Law",
+                    "user_href": "/profile/Collin-Law-5"
+                }
+            ]
+        }
+    ]
+}

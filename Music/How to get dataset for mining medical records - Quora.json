@@ -1,0 +1,81 @@
+{
+    "title": "How to get dataset for mining medical records - Quora",
+    "tags": [
+        "Medical Records",
+        "Electronic Medical Records"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Stanley Chin",
+                "href": "/profile/Stanley-Chin"
+            },
+            "answer_text": "[I started to write a short answer, then realized that for my own purposes it was useful to put a compilation of potential resources out there, so this is a little long, sorry]. In general, you can\u2019t. Asking to work with medical records is sort of like asking to work with plutonium. In the US, at a minimum you need a partnering healthcare provider organization with records, a HIPAA Business Agreement with that organization that outlines what you are going to do with the data and why, a HIPAA and Privacy Act data protection plan and program in place to protect individually identifiable personal health information signed off by the data partner\u2019s Privacy Board, an analysis plan, approval from an Institutional Review Board for that analysis, and a data disposal plan. All relevant staff need to be HIPAA and privacy act trained, possibly human subjects protection trained as well. You would need a HIPAA security officer. There are likely other requirements that I\u2019ve forgotten, since this list is off the top of my head. Many research institutions (e.g. Medical Schools) have these programs and people in place already, allowing you to leverage these resources for a quicker start at lower cost. Independent researchers and those working in commercial settings have no such options and may have to construct them from scratch. But. There are a handful of publicly available resources that are deidentified but still useful. Chief among these is the MIMIC Critical Care Database program MIMIC-III (\u2018Medical Information Mart for Intensive Care\u2019) is a large, single-center database comprising information relating to patients admitted to critical care units at a large tertiary care hospital. Data includes vital signs, medications, laboratory measurements, observations and notes charted by care providers, fluid balance, procedure codes, diagnostic codes, imaging reports, hospital length of stay, survival data, and more. The database supports applications including academic and industrial research, quality improvement initiatives, and higher education coursework. Because it is critical care at a large hospital, the patient population is not representative and will have an unusual distribution of diagnoses, treatments and outcomes relative to a standard inpatient dataset. And as they note, The latest version of MIMIC is MIMIC-III, which comprises over 58,000 hospital admissions for 38,645 adults and 7,875 neonates. The data spans June 2001 - October 2012. The database, although de-identified, still contains detailed information regarding the clinical care of patients, so must be treated with appropriate care and respect. Thus you need a data use agreement and other paperwork to gain access. The host organization, PhysioNet, along with Computing in Cardiology, so runs annual Data Challenges with specific datasets available to participants, and, generally, to the public after the fact. Informatics for Integrating Biology & the Bedside also runs annual clinical data analytics challenges with related datasets, with a focus on natural language processing of clinical information. Specific deidentified data sets exist over the past ten years, and can be accessed with appropriate data use agreements \u2014 see NLP challenge data sets for i2b2. As far as I know, MIMIC, PhysioNet and i2b2 are the only sources of (deidentified) clinical notes and related clinical data that are readily accessible to outside researchers. A number of research institutions and consortia also have deidentified EHR-based repositories available for their own research staff and affiliated partners. These include: New York City - Clinical Data Research NetworkCAPriCORNMid-South Clinical Data Research Networkand other members of the PCORnet Clinical Data Research NetworksThe process of becoming a research partner is non-trivial and usually requires a sponsoring individual within the organization. The Mid-South CDRN referenced above provides a link to Vanderbilt\u2019s research data program, which is an excellent example of large medical school research programs using EHRs, often with de-identified data to expedite the process and reduce HIPAA burden on research staff. These programs are generally limited to researchers at the institution, but outside researchers with a sponsor inside the organization and appropriate paperwork (research plan, data use agreements, etc.) can be eligible. Further info on Vanderbilt\u2019s program can be found here and here. Similar programs exist at UCSF, the University of Washington, the University of Minnesota, etc. And just as a final note, the National Institutes of Health also has a federated data program, the NIH Collaboratory Distributed Research Network, which holds data in place at each organization and allows partners to submit queries to these datasets. Only results are returned, not original data. You may still need IRB and/or HIPAA Privacy Board approval, depending on your research. See the link above or here for info on participating. ",
+            "date": "Answered December 16, 2016",
+            "views": "28",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arvin Matabang",
+                    "user_href": "/profile/Arvin-Matabang-1"
+                },
+                {
+                    "user_id": "M\u00e1rio J. Silva",
+                    "user_href": "/profile/M\u00e1rio-J-Silva"
+                },
+                {
+                    "user_id": "Teris Wing Kin Tam",
+                    "user_href": "/profile/Teris-Wing-Kin-Tam"
+                },
+                {
+                    "user_id": "Gabriel Candia",
+                    "user_href": "/profile/Gabriel-Candia-4"
+                },
+                {
+                    "user_id": "Piter Oliveira Vergara",
+                    "user_href": "/profile/Piter-Oliveira-Vergara"
+                },
+                {
+                    "user_id": "Varun Shah",
+                    "user_href": "/profile/Varun-Shah-126"
+                },
+                {
+                    "user_id": "Ryan Musa",
+                    "user_href": "/profile/Ryan-Musa-1"
+                },
+                {
+                    "user_id": "Jerry Hicks",
+                    "user_href": "/profile/Jerry-Hicks-3"
+                },
+                {
+                    "user_id": "Jim Ashby",
+                    "user_href": "/profile/Jim-Ashby"
+                },
+                {
+                    "user_id": "Jo van Schalkwyk",
+                    "user_href": "/profile/Jo-van-Schalkwyk"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Filipa Rodrigues",
+                "href": "/profile/Filipa-Rodrigues-1"
+            },
+            "answer_text": "You have: PhysioNet - free web access to large collections of recorded physiologic signals (PhysioBank) and related open-source software (PhysioToolkit)Competitions | Kaggle, containing a lot of competitions with medical datahttps://www.healthdata.gov/ - 25 years of US healthcare data including claim-level Medicare data, epidemiology and population statisticshttp://www.hscic.gov.uk/home - Health data sets from the UK National Health ServiceWorld Health Organization - world hunger, health, and disease statisticsThe BROAD Institute - cancer-related databasesEnjoy :) ",
+            "date": "Answered December 16, 2016",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rory Sharp",
+                    "user_href": "/profile/Rory-Sharp-1"
+                },
+                {
+                    "user_id": "Sarah Ayyad",
+                    "user_href": "/profile/Sarah-Ayyad-1"
+                }
+            ]
+        }
+    ]
+}

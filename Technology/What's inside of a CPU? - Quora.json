@@ -1,0 +1,349 @@
+{
+    "title": "What's inside of a CPU? - Quora",
+    "tags": [
+        "Central Processing Units",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steve Adams",
+                "href": "/profile/Steve-Adams-213"
+            },
+            "answer_text": "This sounds like a homework question, that is loaded with lecture specific context. There are different architectures available to design a CPU and a lot of design choices within those architectures. So to get exactly 7 componets you have to know which architecture and which design choices. Most CPUs in desktop computers and cellphones are a Von Neuman architecture. So a CPU that is adding A to B has to fetch the add instruction, fetch A then fetch B. All program and data is stored in the same memory. But some jobs have to be done quickly in real time so there is separate memory for programs and data. That means you can fetch the instructions and data at the same time. But that also requires an extra address bus and data bus for talking to program memory or data memory. TI and Analog Devices have both made some pretty slick DSP CPUs that have been used to process radar at Mach speeds. You aren\u2019t going to build a cpu with 7 componets that supports 100MIPS of multiply accumulates from the instruction level parallelism of a VLIW. (Very Long Instruction Word) And it takes a lot of multiply accumulates to do FFTs and inverse FFTs for a single step in radar process or target image recognition. Some CPUs are designed with instruction pipelining to improve performance. That will add more boxes in your cpu block diagram. Some CPUs offer memory segmentation and paging methods with code privilege level controls. Again more boxes in the cpu block diagram. If you have heard of Spectre and meltdown; this is the cpu box we are talking about here. But if you learn enough about digital logic, and then a hardware description language like Verilog or VHDL, you might be able to write your own CPU. And then you might cynically observe that there are only 5 componets to a CPU: 1 Master Clock and derived timing 2 Multiplexors and demultiplexors 3 Combinatorial gating 4 Microcode Control Store 5 Nested state machines optionally 6 JTAG; Because you have to be a masochist to design a CPU without some kind of debugging tool. And that is pretty well true regardless of which architecture and design decisions are made. So I can legitimately claim there is 5 or 6 componets to a CPU. ",
+            "date": "Answered September 7, 2018",
+            "views": "37",
+            "upvotes": " View Sharers",
+            "upvoters": [
+                {
+                    "user_id": "John B. Anderson III",
+                    "user_href": "/profile/John-B-Anderson-III"
+                },
+                {
+                    "user_id": "Kean Sakata",
+                    "user_href": "/profile/Kean-Sakata-1"
+                },
+                {
+                    "user_id": "Ashish Doharey",
+                    "user_href": "/profile/Ashish-Doharey"
+                },
+                {
+                    "user_id": "Sanguansakdi Yostumrong",
+                    "user_href": "/profile/Sanguansakdi-Yostumrong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yowan Rajcoomar",
+                "href": "/profile/Yowan-Rajcoomar"
+            },
+            "answer_text": "Those are some of the basic functional units you\u2019ll find inside a modern microprocessor/system-on-chip (SoC): CPU cores with their Level 1 instruction + data caches along with their Level 2 cache. Note that the L1 cache is located inside the cpu pipeline but the L2 is outside but still part of the the core silicon.Inside each CPU Core you have the pipeline, most cpu microarchitectures will do the following:- Fetch the instructions from the Level 1 i-cache and pre-decodes them.- Store pre-decoded instruction in a queue.- Decode instructions into smaller units called micro-operations. This process is aided by the micro-code ROM.- Store decoded micro-operations into an allocation queue.- Execute micro-ops. This is done by the execution engine (often out-of-order) which includes a scheduler and a reservation station (RS). The RS has several execution ports which are linked to execution units (EUs). Those EUs (or ALUs) can perform many tasks involving integer, vector, floating point and load/store operations.- Write data in a store or forward buffer which will itself move it in the Level 1 d-cache. The data will eventually move back to the L2, L3 and RAM after several cycles.A large shared Level 3 cache which is split in small slices for each of the cores. For example, an Intel Core i7-7700 has 8MiB of L3 which is split in four 2MiB slices for each of the four cores.An interconnect or common processor data fabric which links each of the core L3 slices together (or core group to L3). Examples are: Ring Interconnect for Intel, Infinity Fabric for AMD and Dynamic IQ Shared Unit (DSU) for ARM SoCs.A graphics processing unit (GPU) which is also linked to the interconnect/fabric.Memory controller for interfacing with DRAM and a PCI Express (or I/O) controller which provides a number of PCI Express lanes (often 20\u201324). A number of lanes (~4) are reserved for the point-to-point interconnect which links the processor SoC to the chipset/platform controller hub. If a microprocessor has 24 lanes, 16 may be reserved for external graphics, 4 for the CPU<->Chipset link and another 4 for PCIe storage (NVME SSD).A display engine which contain display pipes for digital output (HDMI, DP, DVI-D).A multimedia engine which consists of digital signal processors (DSP), image signal processors (ISP), hardware codecs (for encoding and decoding audio and video streams), Note that some SoCs may have an LTE modem and wireless comms (WiFi and BT) integrated.Here is what the whole thing looks like for AMD Ryzen:  ",
+            "date": "Answered February 13, 2018",
+            "views": "85",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gilet",
+                    "user_href": "/profile/Mark-Gilet"
+                },
+                {
+                    "user_id": "Hashib Himel",
+                    "user_href": "/profile/Hashib-Himel"
+                },
+                {
+                    "user_id": "Siana Gearz",
+                    "user_href": "/profile/Siana-Gearz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Connor",
+                "href": "/profile/John-Connor-86"
+            },
+            "answer_text": "This is a fairly long Wikipedia article on CPUs: Central processing unit - Wikipedia In summary, you need an address unit to select different addresses in memorya program counter to hold the address of the next instruction, normally automatically incremented after each instructiona unit which fetches the instruction from the address held in the program counter, and decodes itan arithmetic/logic unit which effectively carries out the decoded instruction. This may among other things modify the program counter, thus causing a jump in the program.a unit to read or write data. Reading can be from any accessible location, but writing can only be to locations which allow it.This is drastically simplified, and real processors have many other features - internal registers, effectively local specialised memory, cache memory, pipelines, floating point units, interrupt handling and so on. The Wiki article has a lot more detail ",
+            "date": "Answered November 7, 2019",
+            "views": "321",
+            "upvotes": " Answer requested by Adjapong Jacob",
+            "upvoters": [
+                {
+                    "user_id": "Doug Kerrigan",
+                    "user_href": "/profile/Doug-Kerrigan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tommy Mitchell",
+                "href": "/profile/Tommy-Mitchell-59"
+            },
+            "answer_text": "Only seven? For this to be seven consult the class notes where they were presented and that context. Download some processor marketing literature and make a chart. Some CPU have no cache, some have one, two and three levels of cache. Some CPUs have memory management some do not. Some CPUs have a floating point unit others do not. Some have memory controllers some a simple interface to a memory subsystem. Some have a TLB where a TLB and MMU are different. Some have instruction caches , Some have data caches, some a unified cache. Some have a microcode engine design\u2026 some not. Some have a management coprocessor (in the news). Instruction pointer, stack pointer, register set, accumulator, status register, register sets (z80). \u2026. And more so consult your class notes. ",
+            "date": "Answered July 14, 2018",
+            "views": "34",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ajay Gautam",
+                    "user_href": "/profile/Ajay-Gautam-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Petr Chloupek",
+                "href": "/profile/Petr-Chloupek"
+            },
+            "answer_text": "This is not by any means a complete answer, but it may be a good starting point. The key component of the CPU (or other integrated circuits) is the Transistor. The basic idea of the transistor is an electronic device composed of three layers of semiconductors where the middle layer has different characteristic than the ones on the side. Various types of transistors were derived from the original idea, but one key type is metal\u2013oxide\u2013semiconductor field-effect transistor (MOSFET) or metal\u2013oxide\u2013silicon transistor. As the name suggests - silicon and some metal oxide are involved. According to this page Semiconductor device: \u201cthere have been an estimated 13 sextillion MOSFETs manufactured between 1960 and 2018.\u201d Some of those for sure must have gone to the CPUs. Here is a more detailed article about how MOSFET works https://www.norwegiancreations.com/2019/01/physical-properties-of-a-mosfet/ ",
+            "date": "Answered March 6, 2020",
+            "views": "211",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Malam Khaleed Umar",
+                    "user_href": "/profile/Malam-Khaleed-Umar"
+                },
+                {
+                    "user_id": "Alabi Olawunmi",
+                    "user_href": "/profile/Alabi-Olawunmi"
+                },
+                {
+                    "user_id": "Virtue Okpa Ekam",
+                    "user_href": "/profile/Virtue-Okpa-Ekam"
+                },
+                {
+                    "user_id": "Geoff Fellows",
+                    "user_href": "/profile/Geoff-Fellows"
+                },
+                {
+                    "user_id": "Daniel Fishman",
+                    "user_href": "/profile/Daniel-Fishman"
+                },
+                {
+                    "user_id": "John Diotay",
+                    "user_href": "/profile/John-Diotay"
+                },
+                {
+                    "user_id": "Joe Low",
+                    "user_href": "/profile/Joe-Low-23"
+                },
+                {
+                    "user_id": "Ashton Williams",
+                    "user_href": "/profile/Ashton-Williams-46"
+                },
+                {
+                    "user_id": "Filipe M. Cross",
+                    "user_href": "/profile/Filipe-M-Cross"
+                },
+                {
+                    "user_id": "C.D. Mays Jr.",
+                    "user_href": "/profile/C-D-Mays-Jr"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Toby Thain",
+                "href": "/profile/Toby-Thain"
+            },
+            "answer_text": "Oooh! There\u2019s a site that can show you the insides of several generations of CPUs: ZeptoBars Here\u2019s a small 8 bit CPU (microcontroller): Atmel AT90USB162 : weekend die-shot \u2014 this is a micrograph of the silicon die inside the package. This is probably of the order of a couple of millimetres square. Here\u2019s a much larger, more capable CPU (8mm x 8mm): Playstation 1 - MIPS R3051 CPU : weekend die-shot ",
+            "date": "Answered May 10, 2017",
+            "views": "29",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ishan Takkar",
+                    "user_href": "/profile/Ishan-Takkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Stevens",
+                "href": "/profile/David-Stevens-182"
+            },
+            "answer_text": "ALUAccumulator (ACC)Instruction Register (IR)Data Register (DR)Address Register (AR)Instruction DecoderControl LogicCheers. ",
+            "date": "Answered January 19, 2018",
+            "views": "111",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Ngenegbo",
+                    "user_href": "/profile/Daniel-Ngenegbo"
+                },
+                {
+                    "user_id": "Hello Hello",
+                    "user_href": "/profile/Hello-Hello-182"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akhil Biju",
+                "href": "/profile/Akhil-Biju-24"
+            },
+            "answer_text": "Lots and lots of Transistors and Silicon chips! That are based on FinFET for Smartphones, ARM for supercomputers , AM4/AM(any number) for AMD , and LGA115(any number) for Intel sockets . They are different sockets which transfer calculations and processes between the components (GPU/ram/monitor) to the CPU!!! Its basically the brain !! ",
+            "date": "Answered November 21, 2019",
+            "views": "207",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Darryl Gardner",
+                "href": "/profile/Darryl-Gardner-2"
+            },
+            "answer_text": "This isn\u2019t intended to be a seriously detailed answer to your question, but a CPU consists of a protective shell, with hundreds or thousands of electrical connections (pins) that include several each for power, ground, with the rest used for input-output (I/O). The internals contain thousands, millions, or billions (depending on how new it is) of transistors, capacitors, resistors, and other components used for timing and processing of signals and information. ",
+            "date": "Updated March 10, 2018",
+            "views": "32",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ali Sabet",
+                    "user_href": "/profile/Ali-Sabet-6"
+                },
+                {
+                    "user_id": "Chris Feilbach",
+                    "user_href": "/profile/Chris-Feilbach"
+                },
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                },
+                {
+                    "user_id": "Tejas Garhewal",
+                    "user_href": "/profile/Tejas-Garhewal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Howard Kong",
+                "href": "/profile/Howard-Kong-5"
+            },
+            "answer_text": "Hmmm. There are way too many, but I will try to split it into a mere 7 modules. From instruction fetch to retirement: Branch predictorCaches (I will consider them as one component)DecoderRenaming logic and physical register fileReservation station, issue and dispatch logicExecution engine. This includes all the ALU, AGU, TLB and such.Reorder buffer and store buffer",
+            "date": "Answered June 25, 2020",
+            "views": "242",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John B. Anderson III",
+                    "user_href": "/profile/John-B-Anderson-III"
+                },
+                {
+                    "user_id": "Rob James",
+                    "user_href": "/profile/Rob-James-179"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nate Lee",
+                "href": "/profile/Nate-Lee-15"
+            },
+            "answer_text": "Transistors. Lots and lots and lots and LOTS of transistors. Oh, did you mean \u201cwhat are the functional divisions of circuits within a CPU? Find a decent Computer Science textbook of appropriate level (ar a good wikipedia article on the topic) and READ. DO YOUR OWN BLOODY HOMEWORK. Quora is not about helping students cheat. ",
+            "date": "Answered January 20, 2019",
+            "views": "22",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Juan Carlos Aliaga",
+                "href": "/profile/Juan-Carlos-Aliaga"
+            },
+            "answer_text": "Your basic computer consists of seven major parts: Motherboard.Processor/CPU.Power Supply.Hard Drive.PCI-Express Cards.Graphics Cards.RAM/Memory",
+            "date": "Answered July 12, 2018",
+            "views": "57",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Daniel Fishman",
+                "href": "/profile/Daniel-Fishman"
+            },
+            "answer_text": "Billions of transistors connected to each other - creating logic gates (NOR, AND etc). Those gates are connected as functional blocks (registers, ROM and RAM cells etc.) and as whole makes a CPU. But the smallest, functional building block of CPU is a transistor. Cheers! ",
+            "date": "Answered May 11, 2017",
+            "views": "19",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John B. Anderson III",
+                    "user_href": "/profile/John-B-Anderson-III"
+                },
+                {
+                    "user_id": "David Tordahl",
+                    "user_href": "/profile/David-Tordahl-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Geoff Fellows",
+                "href": "/profile/Geoff-Fellows"
+            },
+            "answer_text": " Central Processing Units (CPUs) are complex chips with billions of active parts. Essentially there are three parts: the Arithmetic and Logic Unit (ALU), register banks which hold data for processing, and the Control Unit which makes things happen. More information here. ",
+            "date": "Updated August 29, 2018",
+            "views": "63",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Geoff Fellows",
+                    "user_href": "/profile/Geoff-Fellows"
+                },
+                {
+                    "user_id": "David Tordahl",
+                    "user_href": "/profile/David-Tordahl-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ryan Ellis",
+                "href": "/profile/Ryan-Ellis-164"
+            },
+            "answer_text": "There is the arithmetic logic unit, aka the ALU performs arithmetic and logical operations (duh). And then there is the control unit, aka the CU which takes the instructions given from memory, decodes and then executes them \u2014 calling upon the ALU when it is needed. Those are the actual processors. There is also a cache and Memory. ",
+            "date": "Answered January 20, 2019",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Steven Cruz",
+                "href": "/profile/Steven-Cruz-2"
+            },
+            "answer_text": "ALU (Arithmetic Logic Unit) CU (Control unit) Memory Unit ",
+            "date": "Answered June 5, 2018",
+            "views": "41",
+            "upvotes": " View 2 Upvoters"
+        },
+        {
+            "author_info": {
+                "name": "Akshit Singh",
+                "href": "/profile/Akshit-Singh-53"
+            },
+            "answer_text": " ",
+            "date": "Answered February 13, 2018",
+            "views": "28",
+            "upvotes": " View 2 Upvoters"
+        },
+        {
+            "author_info": {
+                "name": "Dirk Griebel",
+                "href": "/profile/Dirk-Griebel"
+            },
+            "answer_text": "CPU/GPU/SSD or HHD/DVD player/PSU/UPS/BIOS/Motherboard/CPU cooler ",
+            "date": "Answered May 8, 2018",
+            "views": "67",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Reginald Allen",
+                "href": "/profile/Reginald-Allen-1"
+            },
+            "answer_text": "Basic explanation Arithmetic - calculations (ground level explanation) Logic - true false statements etc ",
+            "date": "Answered January 20, 2019",
+            "views": "63",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "title": "How does an unmanaged Ethernet switch work? - Quora",
+    "tags": [
+        "Ethernet",
+        "Wi-Fi",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kevin Thorpe",
+                "href": "/profile/Kevin-Thorpe-5"
+            },
+            "answer_text": "Well let's go back to the early devices, a hub. An ethernet hub simply copies any packet it receives on any port to all other ports. Basically just shouts. Now you see this is wasteful as there's a lot of packets flying around that the end computer ignores. So the next step is a switch. All ethernet cards have a unique number (normally), a MAC address. When a switch sees a packet from a new Mac address it remembers which port that is connected to. For TCP/IP which is mostly used now there is also an IP address assigned to route traffic. So the switch collates a list of IP numbers and which port to send packets with that address to. This saves on traffic and speeds up the whole network. There are other layers on top do this to manage those routing tables but the above is the basic functionality of an unmanaged switch. ",
+            "date": "Answered May 23, 2020",
+            "views": "92",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steven J Owens",
+                    "user_href": "/profile/Steven-J-Owens"
+                },
+                {
+                    "user_id": "Dennis Eichenlaub",
+                    "user_href": "/profile/Dennis-Eichenlaub"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Brickman",
+                "href": "/profile/Jonathan-Brickman-4"
+            },
+            "answer_text": "Basically, an unmanaged Ethernet switch sends everything to and from every active port, to and from every other active port. Very much like a hub, but with much more bandwidth, because it\u2019s active. This is the same as the default in a managed switch. Things only get more efficient and different, in a managed switch, when changes are made. ",
+            "date": "Answered May 23, 2020",
+            "views": "49",
+            "upvotes": "0"
+        }
+    ]
+}

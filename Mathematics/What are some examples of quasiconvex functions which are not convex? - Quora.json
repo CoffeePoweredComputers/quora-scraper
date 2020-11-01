@@ -1,0 +1,90 @@
+{
+    "title": "What are some examples of quasiconvex functions which are not convex? - Quora",
+    "tags": [
+        "Convex Optimization",
+        "Mathematical Optimization",
+        "List Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amit Goyal",
+                "href": "/profile/Amit-Goyal-135"
+            },
+            "answer_text": "There are many examples of quasi convex functions that are not convex. Note that every increasing function [math]f:\\mathbb{R}\\rightarrow\\mathbb{R}[/math] is also quasi convex. This is always true when the domain of [math]f[/math] is real line [math]\\mathbb{R}[/math] or any subset of it. Examples: [math]f_1(x) = x^3[/math][math]f_2(x) = \\min(x,1)[/math]There are more examples of quasi convex functions that are not convex: [math]f_3(x) = \\min(|x|,2)[/math]Now let us look at functions with higher dimensional domains [math]f:\\mathbb{R^2_+}\\rightarrow\\mathbb{R}[/math] [math]f_4(x,y) = \\sqrt{\\max(x,y)}[/math][math]f_5(x,y) = \\log(x^2 + y^2)[/math]There are many more. ",
+            "date": "Answered July 6, 2016",
+            "views": "5",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Laura \u017dup\u010di\u0107",
+                    "user_href": "/profile/Laura-\u017dup\u010di\u0107"
+                },
+                {
+                    "user_id": "TAUHEED ALI",
+                    "user_href": "/profile/TAUHEED-ALI-5"
+                },
+                {
+                    "user_id": "Rahul Panicker",
+                    "user_href": "/profile/Rahul-Panicker-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/A-R-1253"
+                },
+                {
+                    "user_id": "Lakshya Rana",
+                    "user_href": "/profile/Lakshya-Rana-14"
+                },
+                {
+                    "user_id": "Varsha Sahu",
+                    "user_href": "/profile/Varsha-Sahu-1"
+                },
+                {
+                    "user_id": "Kirti Jain",
+                    "user_href": "/profile/Kirti-Jain-69"
+                },
+                {
+                    "user_id": "Aastha Jain",
+                    "user_href": "/profile/Aastha-Jain-37"
+                },
+                {
+                    "user_id": "Sakshi Goel",
+                    "user_href": "/profile/Sakshi-Goel-46"
+                },
+                {
+                    "user_id": "Chanchal Gupta",
+                    "user_href": "/profile/Chanchal-Gupta-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Weimholt",
+                "href": "/profile/Andrew-Weimholt"
+            },
+            "answer_text": "[math]f(x) = \\sqrt{|x|}[/math] It's quasiconvex because any horizontal line segment connecting two points on the graph of the function, contains no points that lie beneath the graph of the function. It's not convex because there do exist lines segments (not horizontal) which connect two points on the graph in which some points of the line segment lie beneath the graph of the function. Namely, any line segment with [math](0,0)[/math] as one of its endpoints and any other point on the curve as its other endpoint lies entirely beneath the curve except at the endpoints. ",
+            "date": "Answered November 25, 2014",
+            "views": "54",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alberto Bietti",
+                    "user_href": "/profile/Alberto-Bietti"
+                },
+                {
+                    "user_id": "Jagrati Goyal",
+                    "user_href": "/profile/Jagrati-Goyal-1"
+                },
+                {
+                    "user_id": "Ali Omar",
+                    "user_href": "/profile/Ali-Omar-95"
+                },
+                {
+                    "user_id": "Arya Mitra",
+                    "user_href": "/profile/Arya-Mitra"
+                }
+            ]
+        }
+    ]
+}

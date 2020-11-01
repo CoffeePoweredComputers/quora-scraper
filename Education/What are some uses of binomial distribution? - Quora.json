@@ -1,0 +1,69 @@
+{
+    "title": "What are some uses of binomial distribution? - Quora",
+    "tags": [
+        "Binomial Distribution",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew Anderson",
+                "href": "/profile/Matthew-Anderson-176"
+            },
+            "answer_text": "The binomial distribution calculates the probability that their are k number of successes in n number of Bernoulli trials given the probability that a trial is a success, p. Here are a few examples of where a binomial distribution would be helpful: Your friend makes a bet with you: you will flip a fair coin 20 times, and if a head comes up at least 15 times, you win $100. Otherwise, you have to pay him $10.In this instance, the number of trials is 20 (n=20); and the probability of a success - a head - is 0.5, given that the coin is fair. You would calculate the binomial cumulative distribution function to find the probability that at least 15 successes happen.Consider a supermarket. They sell eggs in packets of one. Their transport system from the farm to the shop is not very good, so some of the eggs get damaged on the way. If an egg gets damaged with probability p then the number of damaged eggs in a packet is binomially distributed.The binomial distribution is used in genetics to determine the probability that k out of n individuals will have a certain genotype or phenotype.The binomial distribution can also be used to approximate another discrete probability distribution, the Poisson distribution, although this is rare.Suppose you go through 10 traffic signals, what is the probability that you hit fewer than 2 red lights?For the sake of the argument, assume that traffic signals are independent. For this, you will again use the binomialcdf.Suppose you and your spouse plan to have 6 babies, but want at least 1 to be a boy. What is the probability that at least 1 is a boys? Is it worth the risk?The binomial distribution has nearly endless applications. ",
+            "date": "Answered April 19, 2017",
+            "views": "116",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Murali Parthasarathy",
+                    "user_href": "/profile/Murali-Parthasarathy-3"
+                },
+                {
+                    "user_id": "Shankar Orchu",
+                    "user_href": "/profile/Shankar-Orchu"
+                },
+                {
+                    "user_id": "Dabs Ag",
+                    "user_href": "/profile/Dabs-Ag"
+                },
+                {
+                    "user_id": "Zawwad ul Sami",
+                    "user_href": "/profile/Zawwad-ul-Sami"
+                },
+                {
+                    "user_id": "Supriya Sha",
+                    "user_href": "/profile/Supriya-Sha"
+                },
+                {
+                    "user_id": "Yoris Garfield",
+                    "user_href": "/profile/Yoris-Garfield-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gian Carlo Diluvi",
+                "href": "/profile/Gian-Carlo-Diluvi"
+            },
+            "answer_text": "The Binomial distribution models the number of successes in [math]n[/math] independent Bernoulli trials. This is very general and, thus, has a lot of applications. The classic one: number of heads in [math]n[/math] independent throws of a fair coin.Number of applicants out of [math]n[/math] who get the job after their interviews.How many people, out of [math]n[/math] you asked, voted for candidate A (assuming each one votes for A independently and with the same probability, which can be justified.)You repeat 3. in many places, each with the same characteristics and indpendently. In the end you have a random sample of a Binomial random variable.You want to model the number of accidents in a certain highway and time lapse. Although this is modeled with a Poisson random variable, an asymptotic argument lets you model it with a Binomial one. Pretty cool, right?As you can see, the posibilities are endless. Plus, it\u2019s rather easy to work with a Binomial distribution. ",
+            "date": "Answered January 29, 2017",
+            "views": "61",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aniruth Srinivas",
+                    "user_href": "/profile/Aniruth-Srinivas"
+                },
+                {
+                    "user_id": "Mangirish Naik",
+                    "user_href": "/profile/Mangirish-Naik-3"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Zhila"
+                }
+            ]
+        }
+    ]
+}

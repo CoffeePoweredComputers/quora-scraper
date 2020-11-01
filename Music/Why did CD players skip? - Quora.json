@@ -1,0 +1,35 @@
+{
+    "title": "Why did CD players skip? - Quora",
+    "tags": [
+        "CD Players",
+        "Compact Discs (CDs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Calin Ceteras",
+                "href": "/profile/Calin-Ceteras"
+            },
+            "answer_text": "TLDR: The read head \u201cjumps\u201d over one or more spirals. A CD player is somewhat similar to a vinyl disc: The surface has a \u201cgroove\u201d (a spiral) that contains data, and a read head reads it and then play it. There are some differences though: the groove starts at the beginning of the disc (on the inside) - this explains why the CD players with trays works equally better with \u201csmall\u201d CDs instead of the regular onesthe data is recorded digitally (I think in sectors about 2.5 kB long, with 20+% used for error detection and recovery)the grooves are much closer together than on a vinyl disc (I might be wrong but I remember there being 7 per millimeter)the CD actually has variable rotation speed, with 700rpm on the inside and 200 rpm on the outside (as I remember it) - the read happens at constant linear velocity, unlike the vinyl disks which are read at constant angular velocity (every spiral plays the same time on a vinyl disc but the outside spirals plays for a longer time on a CD)Now, the mechanism to precisely position the read head (the laser) on a CD works perfectly most of the times, but it might shift. If this happens, one (or more) spirals are lost, and playback resumes from the start of the next data sector (the start of a data sector contains a bit sequence that can not appear anywhere else on the disc). Also, if a sector is damaged enough that data recovery is impossible (too many scratches usually), it will not be played at all. Considering that the CD data rate is 44 kHz at 16 bits per sampling, stereo (two channels), the bit rate is some 160 kilo bytes per second (the so-called 1x speed for computer CD drives). There are 75 sectors for one second of audio, so the loss of one sector is not incredibly obvious (at least compared to typical vinyl scratches or cassette issues). By the way, there are some offroad vehicles that come out of the factory with cassettes instead of CDs - because, unlike a CD player, a cassette won\u2019t skip when offroading ",
+            "date": "Answered June 14, 2019",
+            "views": "108",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Douglas Currens",
+                "href": "/profile/Douglas-Currens"
+            },
+            "answer_text": "Generally, a CD skip is caused by a faulty misreading of the track the laser should be getting its data from, caused usually by either a scratch or a small blob of something (food, dust, a fingerprint) that causes the laser to lose orientation right at that point. If it\u2019s a small enough chunk of missing data, the CD player is designed to retrieve a copy using Reed-Solomon (CIRC) error correction, or in more desperate moments, actually interpolate data from the data most recently read. Pretty sophisticated error correction, but no match for a blob of jelly on the disc! This is the reason you are supposed to only clean CDs from the inside to outside or vice versa, not radially as you would a vinyl record. If you obscure a piece of data going across the track, it\u2019s usually a very short gap, where if you smeared or scratched the disc along the path of the CD track, there\u2019s way too much data missing for any error correction to compensate for. So don\u2019t be afraid to wash or gently wipe the CD from inside to outside, and look very closely at the area where it skips - the CD is read from the inside table of contents (TOC) area, gradually moving towards the outer edge. That small rainbow TOC \u201ctrack\u201d closest to the inside must be read before the machine knows how to play that CD, so any damage here makes things very difficult. Sometimes you can see the slight change in data where tracks change, which can help if the skip is always at the same spot. If cleaning allows a proper \u201cread,\u201d it\u2019d be a good idea to rip the CD to your hard drive and make a fresh copy - unless you know you found the specific blob or booger that caused the problem, and successfully removed it. ",
+            "date": "Answered April 19, 2020",
+            "views": "90",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Rob Edmunds",
+                    "user_href": "/profile/Rob-Edmunds-4"
+                }
+            ]
+        }
+    ]
+}

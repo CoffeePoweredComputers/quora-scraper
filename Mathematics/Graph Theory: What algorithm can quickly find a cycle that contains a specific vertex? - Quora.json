@@ -1,0 +1,56 @@
+{
+    "title": "Graph Theory: What algorithm can quickly find a cycle that contains a specific vertex? - Quora",
+    "tags": [
+        "Graph Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shubham Sharma",
+                "href": "/profile/Shubham-Sharma-4"
+            },
+            "answer_text": "It can be done with a simple depth first search.Just start from the given vertex and marking each node that you visit as visited. Also store each vertex's parent.If any time in future(excluding the first time) you find that vertex again.You know that there is a cycle including that vertex otherwise there is no cycle. To generate all the nodes in the cycle you can simply backtrack from the node to find all the vertex by following the parents links. ",
+            "date": "Answered June 10, 2013",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nathan Pinsker",
+                    "user_href": "/profile/Nathan-Pinsker"
+                },
+                {
+                    "user_id": "Anurag Sharma",
+                    "user_href": "/profile/Anurag-Sharma-868"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "You can do it with a slight modification of a breadth first search starting at .  For each node you see, keep track of how you got there.  As soon as you see a node twice, you can construct a cycle from the information you've been tracking. ",
+            "date": "Answered March 4, 2013",
+            "views": "21",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Satya Nand",
+                    "user_href": "/profile/Satya-Nand"
+                },
+                {
+                    "user_id": "Riyad Parvez",
+                    "user_href": "/profile/Riyad-Parvez"
+                },
+                {
+                    "user_id": "Siddharth Choudhary.",
+                    "user_href": "/profile/Siddharth-Choudhary-2"
+                },
+                {
+                    "user_id": "Ankit Mehta",
+                    "user_href": "/profile/Ankit-Mehta-2"
+                }
+            ]
+        }
+    ]
+}

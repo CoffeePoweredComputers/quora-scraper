@@ -1,0 +1,211 @@
+{
+    "title": "How to make beautiful figures in my research paper - Quora",
+    "tags": [
+        "Academic Research Papers",
+        "Academic Papers",
+        "Academic Research",
+        "Scientific Research"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Prateek Verma",
+                "href": "/profile/Prateek-Verma-3"
+            },
+            "answer_text": "What kind of figures exactly? For plotted graphs - I use MATLAB, Excel or Origin. There are very few things that Excel cannot do for which you can use the other two. If you do use Excel make sure to choose primary colors, Times/Arial fonts, smaller markers and thinner lines to make them appear more 'standard'. For drawings/diagrams/sketches - I use Adobe Illustrator or Adobe Flash. Flash drawing is easier, though not as powerful as Illustrator's. You can use Inkscape as the free alternative. Or Sketch on a Mac. You can also use Microsoft Powerpoint (although I hate to draw in Powerpoint, some of my colleagues do a very good job with it) or Microsoft Word to draw simple figures, smart art etc. Just make sure to change thick outlines to thin ones, use colors such that they look great in grayscale too and use more standard fonts if you use Microsoft Office's products.Another great tool I recently discovered is Google Drive's Drawing document. It has basic but nice vector drawing capabilitites. Easy and quick. Post processing -After creating your drawing, you will need to produce a 1200dpi or so .jpeg file for your figure. For drawings created in MS Office, proceed by first creating a pdf document. Then you will need to convert the pdf into a 1200 dpi image (jpeg) using something like Adobe Photoshop or Gimp (free). Figures created in Flash/Illustrator/Inkscape/Matlab etc. can be directly exported to high resolution jpeg images. Google about these conversions if it is all new to you. Or ask in comment. Appearance - Font - Use the journal's standard fonts. Arial (sans-serif) is usually recommended.Font size - Should be specified in the journal's instructions. But a 8-12 point Arial font is usually the norm. Be careful with keeping the sizes consistent. When converting from pdf (vector) to jpeg (raster), maintaining font sizes is a relatively tough task that will need some understanding of the file formats.Colors - Journals usually stick to primary colors in their plots. I don't know why. But whatever you use, be consistent and most importantly use colors and symbols that also make sense if the figure is converted into a grayscale image. Also note that a CMYK pallette is used for printing purposes.Figure size - White spaces should be minimized. Choose between half column or full column figures. Journal figures are tinier than what we are used to in presentations or books. Think about combining multiple plots into one plot or putting multiple plots (say four) in a 2x2 matrix layout. Hope this helps! ",
+            "date": "Answered January 29, 2015",
+            "views": "4",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sonias Th",
+                    "user_href": "/profile/Sonias-Th"
+                },
+                {
+                    "user_id": "Munawar Jawad",
+                    "user_href": "/profile/Munawar-Jawad"
+                },
+                {
+                    "user_id": "Mohamed Abdullah",
+                    "user_href": "/profile/Mohamed-Abdullah-6"
+                },
+                {
+                    "user_id": "Qing He",
+                    "user_href": "/profile/Qing-He-23"
+                },
+                {
+                    "user_id": "Gomathi",
+                    "user_href": "/profile/Gomathi-35"
+                },
+                {
+                    "user_id": "Ali Ahmad",
+                    "user_href": "/profile/Ali-Ahmad-543"
+                },
+                {
+                    "user_id": "Jie Chen",
+                    "user_href": "/profile/Jie-Chen-114"
+                },
+                {
+                    "user_id": "Jon Patman",
+                    "user_href": "/profile/Jon-Patman-1"
+                },
+                {
+                    "user_id": "Keren Zhou",
+                    "user_href": "/profile/Keren-Zhou"
+                },
+                {
+                    "user_id": "Xia Zhaoming",
+                    "user_href": "/profile/Xia-Zhaoming"
+                },
+                {
+                    "user_id": "Christopher VanLang",
+                    "user_href": "/profile/Christopher-VanLang"
+                },
+                {
+                    "user_id": "Bharat Mallapur",
+                    "user_href": "/profile/Bharat-Mallapur-1"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mathieu Dutour Sikiric",
+                "href": "/profile/Mathieu-Dutour-Sikiric"
+            },
+            "answer_text": "Tough question. It all depends on what you want to draw. I think you should avoid Matlab. Sure, it is easy to make figures in Matlab. Problems happens later when you want to change your figure and have some problem. Or when the code you wrote suddenly gives ugly pictures. That being said, I did have some success in Matlab such as TorusDraw:   but notice how I limit my use of matlab to drawing lines.For pictures in geophysics, the best is probably CISL's NCAR Command Language (NCL). It is quite fast. It is hard to compile, so best is to take binaries. It has a small language with which you can call it. The website has a lot of examples and NCAR pays some people to answer your questions if you have some on the mailing list. Personally, I find it best to write a script from a C++ program to call it. Calling the library itself is more challenging.If you want something to link your program to, you have another more reasonable option with Magics - Magics++ - ECMWF Confluence Wiki.For drawing planar graphs, I think CaGe -- Chemical & abstract Graph environment is the best by far. You have an old Tcl/Tk version that I personally and a new fancy Java version. Example:   which is quite nice.You need to be able to use vector graphics editor. For example nobody beats the antiquity XFIG in ease of use and robustness. Also, you need convert, pstoedit. There are some more modern alternatives to xfig like inkscape.For bitmap pictures, you have gimp, pinta and others.As should be apparent from above, if your need are really specialized then you may need to write your own software. The trick is to interface nicely with another existing program. ",
+            "date": "Updated February 16, 2015",
+            "views": "33",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Zhun-Yong Ong",
+                    "user_href": "/profile/Zhun-Yong-Ong"
+                },
+                {
+                    "user_id": "Xia Zhaoming",
+                    "user_href": "/profile/Xia-Zhaoming"
+                },
+                {
+                    "user_id": "Noah Rahman",
+                    "user_href": "/profile/Noah-Rahman"
+                },
+                {
+                    "user_id": "Nandan Bagchee",
+                    "user_href": "/profile/Nandan-Bagchee"
+                },
+                {
+                    "user_id": "Listra Y. Ginting",
+                    "user_href": "/profile/Listra-Y-Ginting"
+                },
+                {
+                    "user_id": "Inna Vishik",
+                    "user_href": "/profile/Inna-Vishik"
+                },
+                {
+                    "user_id": "Anurag Bishnoi",
+                    "user_href": "/profile/Anurag-Bishnoi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nita Ostroff",
+                "href": "/profile/Nita-Ostroff"
+            },
+            "answer_text": "For plotted graphs of various types, Word has a function that is adequate for almost everyone, and it allows you to change quite easily among graphy styles if your instuctor wants a change or you don't like how it looks. You can also do the data analsysis in Excel and plug it in. I have a friend whose life's work is Excel and the stuff he has been able to do is phenomenal. Then you just use the \"Insert\" function to plug it into Word. Another program that I use a LOT is called RFFlow. It describes itself as a flow-chart program but it is all that and SO much more. It is great for engineers, plumbers, students, military people -- I have used it and a plug in to do loads of military diagrams, which are a real pain. It also has a section for police, fire, and investigators. Everything from org charts to ancestry to designing your office. They have a free version you can download. I loved it immediately, and get asked all the time how I do those \"great\" illustrations. By the way, you can easily do the dreaded Gantt charts, use multiple fonts and colors -- it's great. Here is the link to the overview:  http://www.rff.com/overview.htm ",
+            "date": "Answered January 30, 2015",
+            "views": "17",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Xia Zhaoming",
+                    "user_href": "/profile/Xia-Zhaoming"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shern Ren Tee",
+                "href": "/profile/Shern-Ren-Tee"
+            },
+            "answer_text": "I was asked to answer. Thanks, but my answer is particularly bad because: I draw my figures in Mathematica, but then againI do everything in Mathematica.If I could go back in time I would have set aside time to learn three other languages / systems: gnuplot, TikZ, and Origin. TikZ is the crazy genie of graphics software. It\u2019s free, embeds seamlessly into LaTeX, and does anything you ask it to do. You just have to learn how to ask, and that\u2019s no fun. gnuplot is the good old uncle who\u2019s mildly deaf and slightly disturbed, but generally knows how to get things done too. It\u2019s also free, and handles data input (which I don\u2019t even want to imagine hooking up to TikZ). Origin is the thinks-he\u2019s-cool young-money entrepreneur who, unfortunately, really only has one trick up his sleeve. Thankfully that trick is really good: if you embed an Origin graph into Microsoft Office documents (mostly PowerPoint, for group meetings), the graph can be rescaled or manipulated and its raw data extracted from the graph object itself. That nifty trick means that, if you get the hang of it, you can make PowerPoint presentations that are themselves also raw data repositories, which is great for archival purposes. Unfortunately, both Origin and his cool friend PowerPoint are paid software (but hey, so is Mathematica, so I\u2019m just really being prejudiced here). ",
+            "date": "Answered August 16, 2016",
+            "views": "18",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jonathan Brill",
+                    "user_href": "/profile/Jonathan-Brill"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zen Faulkes",
+                "href": "/profile/Zen-Faulkes"
+            },
+            "answer_text": "Think about design first, software later. A good place to start are Edward Tufte\u2019s books, particularly The Visual Display of Quantitative Information. Tufte is opinionated, argumentative, and not always correct, but that\u2019s partly what makes his stuff so readable and important. His work is a useful starting point to thinking about design principles in graphics. Some of the trends I\u2019ve seen in looking at stuff academics design on the Better Posters blog: Not enough space. Academics seem to be offended by margins. No. Margins and spacings help.Boxes. Academics love boxes around things. They\u2019re almost never needed.Excessive emphasis. Academics seem to use heavy line weights and thick letters. Underlining is never necessary, and looks downright wild-eyed crazy when combined with bolding, italics or (shudder) all three together.Additional: Another resource I just found: Data visualization: A view of every Points of View column. Note that all of these blog posts are collected into an affordable ebook, too. ",
+            "date": "Updated August 16, 2016",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Zhun-Yong Ong",
+                    "user_href": "/profile/Zhun-Yong-Ong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aykut Yildiz",
+                "href": "/profile/Aykut-Yildiz"
+            },
+            "answer_text": "You can follow these guidelines to make proper figures for your research paper. In order to render the figure distinguishable in grey scale, you may use different markers like * and + instead of drawing each curve with a different color.Labels, legends, and caption should have adequate size and thickness to be readable.You may use grids so that the coordinate values should be noticeable.Figure width should be large enough so that it looks more legible.You might want to create a distinct figure folder for each project.You may want to save the figure in order to modify it in future without creating it again.",
+            "date": "Answered April 15, 2020",
+            "views": "303",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Akif Mufti",
+                    "user_href": "/profile/Akif-Mufti"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ananya Muddukrishna",
+                "href": "/profile/Ananya-Muddukrishna"
+            },
+            "answer_text": "Try using what is popular and effective in your community. Ask authors of top research papers and posters about their drawing methods.  The key is to produce a beautiful figure once and use it in any context without worrying about scaling, content updates etc. I strongly suggest you learn producing figures in vector graphics or EPS formats. These formats scale to any size and support effortless content updates.  As suggested above, R packages produces astonishingly beautiful figures/plots. I also recommend draw.io and Inkscape to draw figures. If you want to draw flowcharts, there is possibly nothing better than yEd. ",
+            "date": "Answered February 15, 2015",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Xia Zhaoming",
+                    "user_href": "/profile/Xia-Zhaoming"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carlos Soto",
+                "href": "/profile/Carlos-Soto-13"
+            },
+            "answer_text": "In my own opinion with latex and TikZ you can get the most beautiful images but it will requires some time to learn both tools. ",
+            "date": "Answered August 28, 2016",
+            "views": "837",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Justin Ling Mao",
+                    "user_href": "/profile/Justin-Ling-Mao"
+                }
+            ]
+        }
+    ]
+}

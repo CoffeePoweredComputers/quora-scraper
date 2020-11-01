@@ -1,0 +1,127 @@
+{
+    "title": "How many ways are there to divide a set with 6 elements into 3 non-empty disjoint subsets? - Quora",
+    "tags": [
+        "Stirling Numbers",
+        "Combinatorics",
+        "Set Theory",
+        "Permutations and Combinations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Glenn Redd",
+                "href": "/profile/Glenn-Redd"
+            },
+            "answer_text": "Groups of 4, 1, and 1: There are [math]{6\\choose 4}=15[/math] ways to choose such a group of subests. In other words, we choose 4 of the 6 elements to be in the size 4 subset, then the two left over digits get put into size 1 subsets. Groups of 3, 2, and 1: There are [math]{6\\choose 3}{3\\choose 2}=20*3=60[/math] ways to choose. In other words, choose 3 of the 6 for the size 3 subset, then choose 2 of the remaining 3 for the size 2 subset, then the leftover gets put into the size 1 subset. Groups of 2, 2 and 2: There are [math]\\frac{{6\\choose 2}{4\\choose 2}}{3!}=\\frac{15*6}{6}=15[/math] ways to choose. In other words, choose 2 of the 6 for one subset, 2 of the remaining 4 for another, then the final 2 get put in another. Then we must consider that the ordering of the subsets themselves doesn\u2019t matter - the first size 2 subset is freely interchangable with the second and third size 2 subsets, but the way I chose values implied ordering. So there are n! ways to arrange n things, so here n=3, so divide by 3!=6 to remove that ordering. Summing it all up we get 15+60+15=90 total arrangements. ",
+            "date": "Answered December 4, 2019",
+            "views": "566",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Hamza Haddad",
+                    "user_href": "/profile/Hamza-Haddad-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stacey G Harris",
+                "href": "/profile/Stacey-G-Harris"
+            },
+            "answer_text": "Ways to divide {1, 2, 3, 4, 5, 6} into subsets of size 1, 2, and 3 (for instance: {1}, {2, 3}, {4, 5, 6}): This means picking one number for the singleton (6 choices), then choosing 2 of the remaining 5 for the doubleton (\u201c5 choose 2\u201d = 10 choices), so that\u2019s 6(10) = 60. Ways to divide {1, 2, 3, 4, 5, 6} into subsets of size 1, 1, and 4 (for instance: {1}, {2}, {3, 4, 5, 6}): This means plucking out two numbers for the two singleton sets, so that\u2019s \u201c6 choose 2\u201d = 15. Ways to divide {1, 2, 3, 4, 5, 6} into subsets of size 2, 2, and 2 (for instance: {1, 2}, {3, 4}, {5, 6}): This means choosing which number goes with 1 (5 choices), and then choosing which of 3 ways [I originally said 2 ways, but Glenn Redd noticed that\u2019s an error] to pair up the remaining four numbers, so that\u2019s 5(3) = 15. Total: 60 + 15 + 15 = 90. General method on similar type counting problems: Figure out how to partition your divisions in some manner that ensures you cover all cases. (Here I decided to start with divisions that include a size-1 set, then first asked for how many ways I can do that without another size-1 set; then with two size-1 sets; and that\u2019s it for divisions including a size-1 set. Then there\u2019s only one way to do the divisions that have the smallest division is size 2. And there\u2019s no way to do it with divisions where the smallest division is size 3.) This can be a bit tedious, but is usually straight-forward. Then for each division-scheme, figure out how many ways there are to partition your objects within such a scheme that are actually different. (Here we have to note that in the 1\u20131\u20134 partition, having, say, 1 in the first singleton and 2 in the second singleton is no different from having 2 in the the first singleton and 1 in the second singleton. And in the 2\u20132\u20132 partition, the only thing that matters is which number is paired with which, not which of the doubletons it ends up in.) This can get complicated when there\u2019s a largish number of divisions in the partition, with different numbers of divisions sharing one size or another. And always remember that you\u2019re taking subsets, not lists, so order doesn\u2019t matter. (First time I answered this I put in 6! = 720 for the 1\u20132\u20133 partition, instead of 60, having neglected this dictum.) ",
+            "date": "Updated December 4, 2019",
+            "views": "908",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "Yours is a particular instance of a general question: How many ways can you divide a set with [math]n[/math] elements into [math]k[/math] nonempty disjoint sets? Dividing a set into disjoint sets is called partitioning it into parts, and such a division is called a partition. By the way, partitions on a set correspond to equivalence relations on the set. The relation associated to a partition says two elements are the same part. The total number of partitions of a set is answered in the question What is the number of equivalence relations on a set? But you\u2019re not interested in the total number, but instead the number of partitions into a certain number of parts. A [math]k[/math]-partition is a partition of a set into [math]k[/math] parts. So the question is, how many k-partitions are there of a set of size [math]n[/math]? The answer to this question is a Sterling number of the second kind.[1] Stirling numbers of the second kind have a notation of their own, [math]\\genfrac\\{\\}{0pt}{}nk,[/math] so you\u2019re looking for is [math]\\genfrac\\{\\}{0pt}{}63,[/math] which is 90. You can evaluate Sterling numbers of the second kind in terms of binomial coefficients. [math]\\displaystyle\\genfrac\\{\\}{0pt}{}nk=\\frac1{k!}\\sum_{i=0}^k(-1)^i\\binom ki(k-i)^n\\tag*{}[/math] That summation when written out looks like this alternating sum [math]\\displaystyle\\frac1{k!}\\left( \\binom k0k^n-\\binom k1(k-1)^n+\\cdots\\pm\\binom kk0^n\\right).\\tag*{}[/math] In particular, when [math]n=6[/math] and [math]k=3[/math] you have [math]\\displaystyle\\genfrac\\{\\}{0pt}{}63= \\frac1{3!}\\left(\\binom 30 3^6-\\binom31 2^6+\\binom32 1^6-\\binom33 0^6\\right)\\tag*{}[/math] So [math]\\genfrac\\{\\}{0pt}{}63= \\frac1{3!}\\left(3^6\u20133\\cdot2^6+3\\cdot1^6\u20130\\right)=\\frac16(729\u2013192+3)=90.[/math] Footnotes[1] Stirling numbers of the second kind - Wikipedia",
+            "date": "Answered November 27, 2019",
+            "views": "630",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Frank Hubeny",
+                    "user_href": "/profile/Frank-Hubeny"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Glenn Redd",
+                    "user_href": "/profile/Glenn-Redd"
+                },
+                {
+                    "user_id": "Neeladri Maitra",
+                    "user_href": "/profile/Neeladri-Maitra-1"
+                },
+                {
+                    "user_id": "James Ryan",
+                    "user_href": "/profile/James-Ryan-164"
+                },
+                {
+                    "user_id": "Krishna Kumar R",
+                    "user_href": "/profile/Krishna-Kumar-R-15"
+                },
+                {
+                    "user_id": "Vladimir Pitch",
+                    "user_href": "/profile/Vladimir-Pitch"
+                },
+                {
+                    "user_id": "Jan van Delden",
+                    "user_href": "/profile/Jan-van-Delden-2"
+                },
+                {
+                    "user_id": "Ertan Halilov",
+                    "user_href": "/profile/Ertan-Halilov"
+                },
+                {
+                    "user_id": "Harry Wang",
+                    "user_href": "/profile/Harry-Wang-118"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Erik Kofoed",
+                    "user_href": "/profile/Erik-Kofoed-2"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                },
+                {
+                    "user_id": "Mia Ezra",
+                    "user_href": "/profile/Mia-Ezra-1"
+                },
+                {
+                    "user_id": "Nick Shales",
+                    "user_href": "/profile/Nick-Shales"
+                },
+                {
+                    "user_id": "Anggi Sasmito",
+                    "user_href": "/profile/Anggi-Sasmito"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vital Sine",
+                "href": "/profile/Vital-Sine-1"
+            },
+            "answer_text": "Stirling partition numbers S(n,k) represent the number of ways to divide a set of n elements into k non-empty subsets. Therefore, S(6,3) will be your answer. To calculate S(6,3), we can use the recursive formula or explicit formula for Stirling partition numbers. The recursive formula is quite short, but requires that you know S(5, 2) and S(5, 3): S(6,3) = S(5,2) + 3*S(5,3) You could also use the explicit formula, shown here:  Basically, just sum from j = 0 to j = k. The reason this formula works is because of inclusion-exclusion (that\u2019s where the alternating powers of -1 come from) and the 1/k! comes from the fact that you\u2019re counting with identical boxes, not distinct boxes. The whole formula here is derived from the formula for distributing n distinct items (elements), into k distinct boxes (subsets), which is ordinarily k^n. However, the boxes are identical in the case of Stirling partition numbers, and no box can be empty either. So we had to tweak the simple k^n using inclusion/exclusion and 1/k!. If you want to learn more, check out this video:  ",
+            "date": "Answered December 21, 2019",
+            "views": "203",
+            "upvotes": "0"
+        }
+    ]
+}

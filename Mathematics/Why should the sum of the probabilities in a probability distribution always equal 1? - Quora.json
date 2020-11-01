@@ -1,0 +1,68 @@
+{
+    "title": "Why should the sum of the probabilities in a probability distribution always equal 1? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Carter McClung",
+                "href": "/profile/Carter-McClung"
+            },
+            "answer_text": "One textbook I used calls it the \u201csomething has to happen\u201d rule. A probability of 1 represents certainty, and we\u2019re certain something happened, so if we add up all disjoint possibilities, it should equal certainty. Suppose your probability distribution added to 0.8. If the probability that your value is less than n is 0.25, then the probability that your value is greater than n is 0.55. This means that in 20% of instances we expect the value to be neither less than or greater than n. That doesn\u2019t make sense in most situations. Similarly, suppose your probability distribution adds to 1.2. If the probability that your value is less than n is 0.25, then the probability that the value is greater than n is 0.95. That means that in 20% of instances, we expect the value to be both less than n and greater than n. Again. That doesn\u2019t really make sense. So again, all the possibilities add up to complete certainty. ",
+            "date": "Answered November 19, 2017",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Khang Nguyen",
+                    "user_href": "/profile/Khang-Nguyen-18"
+                },
+                {
+                    "user_id": "Manish Chhatlani",
+                    "user_href": "/profile/Manish-Chhatlani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hadrien Chevalier",
+                "href": "/profile/Hadrien-Chevalier"
+            },
+            "answer_text": "Because it is a defining property of a probability\u2026 If you reject it, then what you are left with is a measure, which is actually still very useful in mathematics !  A measure [math]\\mu[/math] on a (measureable) set [math]E[/math] is a function which domain is [math]\\mathcal{P}(E)[/math] (the powerset of [math]E[/math], i.e. the set of its parts) and which codomain is included [math]\\mathbb{R}_+[/math], the positive real line. So it has positive values. Furthermore : [math]\\mu(\\varnothing) = 0[/math][math]\\mu[/math] is sigma-additive, i.e. if [math]X_n[/math] is a collection of mutually disjoint subsets of [math]E[/math], then [math]\\mu\\left(\\bigcup\\limits_{n} X_n\\right) = \\sum\\limits_{n} \\mu(X_n)[/math]If you add to that the condition : [math]\\mu(E) = 1[/math] then you have defined a probability measure on [math]E[/math]. ",
+            "date": "Answered November 19, 2017",
+            "views": "12",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jiniribb",
+                    "user_href": "/profile/Jiniribb"
+                },
+                {
+                    "user_id": "Marelle Hisona",
+                    "user_href": "/profile/Marelle-Hisona"
+                },
+                {
+                    "user_id": "Li Chevalier",
+                    "user_href": "/profile/Li-Chevalier"
+                },
+                {
+                    "user_id": "Kenneth Ganning",
+                    "user_href": "/profile/Kenneth-Ganning"
+                },
+                {
+                    "user_id": "Xiang Qiu",
+                    "user_href": "/profile/Xiang-Qiu-3"
+                },
+                {
+                    "user_id": "Tim Hanson",
+                    "user_href": "/profile/Tim-Hanson-4"
+                },
+                {
+                    "user_id": "Giovanni Rikard \u00c5brink",
+                    "user_href": "/profile/Giovanni-Rikard-\u00c5brink"
+                }
+            ]
+        }
+    ]
+}

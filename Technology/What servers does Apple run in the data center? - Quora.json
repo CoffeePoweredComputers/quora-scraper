@@ -1,0 +1,69 @@
+{
+    "title": "What servers does Apple run in the data center? - Quora",
+    "tags": [
+        "Data Centers",
+        "Servers (computers)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jason Douglas",
+                "href": "/profile/Jason-Douglas-58"
+            },
+            "answer_text": "Mostly Linux, on general purpose rack server hardware (like Intel Xeon), supplied by large vendors (for example, HP). Most were fully spec\u2019ed out: as many cores as possible, many many gigabytes of RAM, massive hard drives or SSD, depending on use case. There are many vendors for these types of servers, but only a few can satisfy an order that might run over $100M for thousands of machines. This covers like 99.9% of Apple\u2019s servers, occasionally you find an odd service here or there that might require a Mac or even a Windows computer, but it\u2019s the exception. In the old days, when Steve was still at Apple, things were a bit different. Apple used to design its own software for web services (WebObjects) and even its own hardware (XServe\u2019s). So many early Apple data centers (before the big massive ones they\u2019ve built now) ran some interesting choices of hardware, like the XServe and also quite a bit of stuff from Sun, either to run WebObjects services (which were written in Java) or large massive Oracle databases. As the years went on, those specialty software and hardware stacks just couldn\u2019t keep up with the price/performance ratio of Linux / Intel servers, and were gradually phased out. ",
+            "date": "Answered May 15, 2018",
+            "views": "44",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Jovic",
+                    "user_href": "/profile/Justin-Jovic"
+                },
+                {
+                    "user_id": "Mike Roulston",
+                    "user_href": "/profile/Mike-Roulston"
+                },
+                {
+                    "user_id": "Kevin McClelland",
+                    "user_href": "/profile/Kevin-McClelland-5"
+                },
+                {
+                    "user_id": "Charles T Goolsbee",
+                    "user_href": "/profile/Charles-T-Goolsbee"
+                },
+                {
+                    "user_id": "Chirag Malik",
+                    "user_href": "/profile/Chirag-Malik-6"
+                },
+                {
+                    "user_id": "Pablo Villaronga",
+                    "user_href": "/profile/Pablo-Villaronga"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joel Phelan",
+                "href": "/profile/Joel-Phelan"
+            },
+            "answer_text": "Starting with the OS, probably a combination of Microsoft Windows and Linux. Like everyone else in the world (discounting SunOS and HP-UX flavors of Unix for these purposes). If they have specialized needs / legacy programs around still, then the above and.. SunOS and HP-UX flavors of Unix. Hardware I\u2019d imagine is a mixture to some degree - whichever vendors they currently have contracts with. I\u2019m sure they have a few OS X servers for running legacy applications and testing and so they can say they have their own server line. I\u2019d be willing to bet that the bulk of their work is done on other vendor\u2019s products (the two I mentioned above) simply because they\u2019re much, much better for the enterprise tasks performed by any company, including Apple. ",
+            "date": "Answered April 18, 2017",
+            "views": "32",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pablo Villaronga",
+                    "user_href": "/profile/Pablo-Villaronga"
+                },
+                {
+                    "user_id": "Stewart A White Jr.",
+                    "user_href": "/profile/Stewart-A-White-Jr"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Putrd"
+                }
+            ]
+        }
+    ]
+}

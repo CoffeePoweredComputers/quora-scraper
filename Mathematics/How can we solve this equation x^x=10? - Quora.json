@@ -1,0 +1,68 @@
+{
+    "title": "How can we solve this equation x^x=10? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Steele",
+                "href": "/profile/John-Steele-88"
+            },
+            "answer_text": "Another approach is to start with a graph: Desmos graph It pretty clearly shows one solution, x \u2248 2.506 If this is not good enough, Newton\u2019s method will quickly refine it from a good starter. I find it better to take the natural log of both sides in such an equation, then f = x\u00b7ln(x) - ln(10) f\u2019 = 1 + ln(x) Iterating x = x-f/f\u2019, two iterations give 10 figures x1 = 2.506 184 149 x2 = 2.506 184 145 My 10 digit calculator can do no better If you don\u2019t have graphing software, a few trial values and bisection will get you off to a good start. Trying 2 and 3, 2 is too small, 3 is too big, and 2.5 is pretty close, at least a good starter. ",
+            "date": "Answered October 3, 2019",
+            "views": "117",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ajesh K C",
+                "href": "/profile/Ajesh-K-C-1"
+            },
+            "answer_text": "Answer is x = 2.5062 SOLUTION Given x^x=10 x^x - 10 = 0 = f(x) Now we have to find f'(x) f'(x) = x^x (1 + log(x))  The solution of x^x =10 can be find using numerical methods. Here I am using Newton\u2019s Method Taking x(0) = 2  Here I did five iterations. For more accurate result more iterations is needed The solution of x^x = 10 is x = 2.5062 ",
+            "date": "Answered July 18, 2019",
+            "views": "1505",
+            "upvotes": " View 135 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rahul Gupta",
+                    "user_href": "/profile/Rahul-Gupta-8397"
+                },
+                {
+                    "user_id": "Sandeep Bora",
+                    "user_href": "/profile/Sandeep-Bora-22"
+                },
+                {
+                    "user_id": "Naveen Singh Gangola",
+                    "user_href": "/profile/Naveen-Singh-Gangola"
+                },
+                {
+                    "user_id": "Sunita Ayare",
+                    "user_href": "/profile/Sunita-Ayare"
+                },
+                {
+                    "user_id": "Samuel Wright",
+                    "user_href": "/profile/Samuel-Wright-81"
+                },
+                {
+                    "user_id": "Ishan Murjhani",
+                    "user_href": "/profile/Ishan-Murjhani"
+                },
+                {
+                    "user_id": "Vishwam Khapre",
+                    "user_href": "/profile/Vishwam-Khapre"
+                },
+                {
+                    "user_id": "Guria Kumari",
+                    "user_href": "/profile/Guria-Kumari-2"
+                },
+                {
+                    "user_id": "Vedant Talegaonkar",
+                    "user_href": "/profile/Vedant-Talegaonkar"
+                },
+                {
+                    "user_id": "Binayak Badapanda",
+                    "user_href": "/profile/Binayak-Badapanda"
+                }
+            ]
+        }
+    ]
+}

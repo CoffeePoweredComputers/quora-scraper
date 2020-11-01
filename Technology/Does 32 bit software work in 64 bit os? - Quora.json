@@ -1,0 +1,408 @@
+{
+    "title": "Does 32 bit software work in 64 bit os? - Quora",
+    "tags": [
+        "32-Bits",
+        "64-Bit",
+        "Operating Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Abhijeet Viswa",
+                "href": "/profile/Abhijeet-Viswa"
+            },
+            "answer_text": "Yes, a 32 bit software can be run on a 64 bit Operating System. When a 32 bit software is launched, in Windows for example, an emulator is launched. The emulator 'tricks' the 32 bit software and makes it think that it's running on a 32 bit system. Any system calls are intercepted by the emulator and runs 32 bit variations for system calls that differ b/w 64 and 32 bit operating systems.  However, it is best recommended to use the 64 bit version if it is provided to you. EDIT: The 32 bit applications will be installed into the 'Program Files (x86)' folder in your System Partition. And the 'SystemWOW64' has all the 32-bit dlls and system files. ",
+            "date": "Answered October 6, 2015",
+            "views": "588",
+            "upvotes": " View 28 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Russell Kapryn",
+                    "user_href": "/profile/Russell-Kapryn-1"
+                },
+                {
+                    "user_id": "Saurabh Ithape",
+                    "user_href": "/profile/Saurabh-Ithape"
+                },
+                {
+                    "user_id": "Pragyan Poudel",
+                    "user_href": "/profile/Pragyan-Poudel-3"
+                },
+                {
+                    "user_id": "Jasraj Navish",
+                    "user_href": "/profile/Jasraj-Navish"
+                },
+                {
+                    "user_id": "RAKIL P",
+                    "user_href": "/profile/RAKIL-P-1"
+                },
+                {
+                    "user_id": "Sean Kula",
+                    "user_href": "/profile/Sean-Kula"
+                },
+                {
+                    "user_id": "Hassan Ali",
+                    "user_href": "/profile/Hassan-Ali-972"
+                },
+                {
+                    "user_id": "Sankar Riser",
+                    "user_href": "/profile/Sankar-Riser"
+                },
+                {
+                    "user_id": "Kunal V Manusmare",
+                    "user_href": "/profile/Kunal-V-Manusmare"
+                },
+                {
+                    "user_id": "Siddhesh Ranade",
+                    "user_href": "/profile/Siddhesh-Ranade-3"
+                },
+                {
+                    "user_id": "Brian Davis",
+                    "user_href": "/profile/Brian-Davis-144"
+                },
+                {
+                    "user_id": "Anand Gorkar",
+                    "user_href": "/profile/Anand-Gorkar-1"
+                },
+                {
+                    "user_id": "Elcan Ibrahimov",
+                    "user_href": "/profile/Elcan-Ibrahimov"
+                },
+                {
+                    "user_id": "Aiman Aamir",
+                    "user_href": "/profile/Aiman-Aamir-3"
+                },
+                {
+                    "user_id": "Nightmare Foxy",
+                    "user_href": "/profile/Nightmare-Foxy-4"
+                },
+                {
+                    "user_id": "Hi Cham",
+                    "user_href": "/profile/Hi-Cham-11"
+                },
+                {
+                    "user_id": "Ananya Mukherjee",
+                    "user_href": "/profile/Ananya-Mukherjee-12"
+                },
+                {
+                    "user_id": "Lakshya Malik",
+                    "user_href": "/profile/Lakshya-Malik-2"
+                },
+                {
+                    "user_id": "Ayon Tarafdar",
+                    "user_href": "/profile/Ayon-Tarafdar-2"
+                },
+                {
+                    "user_id": "Manupendra Tiwari",
+                    "user_href": "/profile/Manupendra-Tiwari"
+                },
+                {
+                    "user_id": "Kumar Urmilesh",
+                    "user_href": "/profile/Kumar-Urmilesh"
+                },
+                {
+                    "user_id": "Anand Dhuriya",
+                    "user_href": "/profile/Anand-Dhuriya"
+                },
+                {
+                    "user_id": "Stephen Kendall",
+                    "user_href": "/profile/Stephen-Kendall-4"
+                },
+                {
+                    "user_id": "Arshad Thodantavida",
+                    "user_href": "/profile/Arshad-Thodantavida"
+                },
+                {
+                    "user_id": "Anshuman Gupta",
+                    "user_href": "/profile/Anshuman-Gupta-108"
+                },
+                {
+                    "user_id": "Howard Cortex",
+                    "user_href": "/profile/Howard-Cortex"
+                },
+                {
+                    "user_id": "Azhar Syed",
+                    "user_href": "/profile/Azhar-Syed-27"
+                },
+                {
+                    "user_id": "Jimit Shah",
+                    "user_href": "/profile/Jimit-Shah-59"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Emmeryn Gelblicht",
+                "href": "/profile/Emmeryn-Gelblicht"
+            },
+            "answer_text": "That depends on the CPU and OS, but if you\u2019re on x86\u201364 or ARMv8 (probably the two most common 64-bit instruction sets), and on a fairly common OS like Windows or a major UNIX derivative (MacOS/OSX, Linux, etc.), generally the answer is YES. Both of these instruction sets add extra instructions to an existing 32-bit instruction set (x86 and ARMv7 respectively), but the 32-bit instructions are still valid, so an OS can fairly easily run 32-bit software. And, since most operating systems place a high priority on compatibility, most of them provide support. ",
+            "date": "Answered July 24, 2020",
+            "views": "21",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Russell Kapryn",
+                    "user_href": "/profile/Russell-Kapryn-1"
+                },
+                {
+                    "user_id": "Naman Palliwal",
+                    "user_href": "/profile/Naman-Palliwal-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chirag Kulshreshtha",
+                "href": "/profile/Chirag-Kulshreshtha-1"
+            },
+            "answer_text": "Yes, you can fill 10 litres of water in a 20 litre bucket but you can\u2019t fill 20 litres of water in a 10 litre bucket..Same is with 32 bit and 64 bit ",
+            "date": "Answered September 13, 2017",
+            "views": "174",
+            "upvotes": " View 24 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vikash Kumar Roy",
+                    "user_href": "/profile/Vikash-Kumar-Roy-10"
+                },
+                {
+                    "user_id": "Gobinda Dutta",
+                    "user_href": "/profile/Gobinda-Dutta-11"
+                },
+                {
+                    "user_id": "Sean Kula",
+                    "user_href": "/profile/Sean-Kula"
+                },
+                {
+                    "user_id": "MUZAMMIL S",
+                    "user_href": "/profile/MUZAMMIL-S-2"
+                },
+                {
+                    "user_id": "BHAVANI PRASAD MORLA",
+                    "user_href": "/profile/BHAVANI-PRASAD-MORLA"
+                },
+                {
+                    "user_id": "Glass Prism",
+                    "user_href": "/profile/Glass-Prism-4"
+                },
+                {
+                    "user_id": "Colorado Wilderness",
+                    "user_href": "/profile/Colorado-Wilderness-1"
+                },
+                {
+                    "user_id": "Dinesh Neupane",
+                    "user_href": "/profile/Dinesh-Neupane-7"
+                },
+                {
+                    "user_id": "Adeniyi Emmanuel",
+                    "user_href": "/profile/Adeniyi-Emmanuel-2"
+                },
+                {
+                    "user_id": "Ghazali Shacklebolt",
+                    "user_href": "/profile/Ghazali-Shacklebolt"
+                },
+                {
+                    "user_id": "Shreyas Shingare",
+                    "user_href": "/profile/Shreyas-Shingare"
+                },
+                {
+                    "user_id": "Celvin Abraham",
+                    "user_href": "/profile/Celvin-Abraham"
+                },
+                {
+                    "user_id": "Nathaniel Forbes",
+                    "user_href": "/profile/Nathaniel-Forbes-5"
+                },
+                {
+                    "user_id": "Dhruv Jyoti Das",
+                    "user_href": "/profile/Dhruv-Jyoti-Das-1"
+                },
+                {
+                    "user_id": "The Information Seeker",
+                    "user_href": "/profile/The-Information-Seeker"
+                },
+                {
+                    "user_id": "Albert Essiaw Junior",
+                    "user_href": "/profile/Albert-Essiaw-Junior"
+                },
+                {
+                    "user_id": "S\u00e9rgio Ramalho",
+                    "user_href": "/profile/S\u00e9rgio-Ramalho"
+                },
+                {
+                    "user_id": "Kumar Urmilesh",
+                    "user_href": "/profile/Kumar-Urmilesh"
+                },
+                {
+                    "user_id": "Kartik Thakur",
+                    "user_href": "/profile/Kartik-Thakur-80"
+                },
+                {
+                    "user_id": "Anshuman Gupta",
+                    "user_href": "/profile/Anshuman-Gupta-108"
+                },
+                {
+                    "user_id": "Emmanuel Mathew",
+                    "user_href": "/profile/Emmanuel-Mathew-3"
+                },
+                {
+                    "user_id": "Marios Soteriou",
+                    "user_href": "/profile/Marios-Soteriou"
+                },
+                {
+                    "user_id": "Parmeshwar Sahu",
+                    "user_href": "/profile/Parmeshwar-Sahu-1"
+                },
+                {
+                    "user_id": "Howard Cortex",
+                    "user_href": "/profile/Howard-Cortex"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Viral Parmar",
+                "href": "/profile/Viral-Parmar-25"
+            },
+            "answer_text": "Well i doscribe it via example: You can run 32 bit software over 64 bit environment it's similar to you have large scale highway and you can run either bike or bus on it. Ie: you can run 32 bit software on 64 bit environment easily. Basically 32 and 64 is a type of bus which is used in motherbord to make communication betweeb memory and processor if you have a 32 bit bus than you are not able to run 64 on it (its similer to run an volvo bus on small street so..). Another thing is that whenever 32 bit cpu builded at that time we dont have much processing power so thats why we make 32x wider bus to transfer data between HDD to RAM, RAM to processor etc. But right now we have much better CPU power. I say we have now CPU, GPU,TPU to process complex algorithms. Thank you, Viral parmar ",
+            "date": "Updated September 29, 2019",
+            "views": "83",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Akshai Aravindh Official",
+                    "user_href": "/profile/Akshai-Aravindh-Official"
+                },
+                {
+                    "user_id": "Adnan Khan",
+                    "user_href": "/profile/Adnan-Khan-913"
+                },
+                {
+                    "user_id": "Vikash Kumar Roy",
+                    "user_href": "/profile/Vikash-Kumar-Roy-10"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ignas Balsys",
+                "href": "/profile/Ignas-Balsys"
+            },
+            "answer_text": "No, a 64 operating system on x86 runs in a long mode, that means the CPU is in 64 bit mode, a 32 bit program won\u2019t run in 64 bit mode, because the opcodes, registers and the whole architecture is very different. What you probably think about is that windows emulates a 32 bit enviroment for 32 bit programs, then switches the cpu mode to 32 bit one when it schedules the program. ",
+            "date": "Answered March 26, 2020",
+            "views": "16",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Anshuman Gupta",
+                "href": "/profile/Anshuman-Gupta-108"
+            },
+            "answer_text": "In some cases, you can. Most 64-bit operating systems are designed in such a way that it will emulate 32-bit applications. The main downside of 32-bit applications is that they can allocate only 4GB of RAM. This is because the maximum integer value of 32-bit binary is 2,147,483,647 bits, so it can\u2019t look up memory addresses past that. In the case of Windows, it simply emulates a 32-bit system so the app that doesn\u2019t support 64-bit architectures thinks it\u2019s running on a 32-bit architecture. Unfortunately, some OSes have chosen to not support 32-bit apps anymore. With the latest version of iOS, you can\u2019t run apps that are designed for 32-bit CPUs. Canonical came under fire recently when it tried to drop support for 32-bit binaries. They got so much pushback that they reversed the descision, but in some distributions, support has been dropped. Hope this helped you Anshuman Gupta Edit : Thank you for the edit :D Elijah Ciali ",
+            "date": "Updated June 6, 2020",
+            "views": "225",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anthony Corbin",
+                    "user_href": "/profile/Anthony-Corbin-16"
+                },
+                {
+                    "user_id": "Ansh",
+                    "user_href": "/profile/Ansh-108"
+                },
+                {
+                    "user_id": "Ansh Sharma",
+                    "user_href": "/profile/Ansh-Sharma-108"
+                },
+                {
+                    "user_id": "Mihir Wadekar",
+                    "user_href": "/profile/Mihir-Wadekar-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shivam Vatshayan",
+                "href": "/profile/Shivam-Vatshayan"
+            },
+            "answer_text": "Both a 32 and 64 bit OS can run on a 64 bit processor, but the 64 bit OS can use full-power of the 64bit processor (larger registers, more instructions,more command) - in short it can do more work in same time. A 32 bit processor supports only 32 bit Windows OS Its all about speed ! ",
+            "date": "Answered October 29, 2016",
+            "views": "86",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Danial Chakkaravarthy",
+                    "user_href": "/profile/Danial-Chakkaravarthy"
+                },
+                {
+                    "user_id": "Howard Cortex",
+                    "user_href": "/profile/Howard-Cortex"
+                },
+                {
+                    "user_id": "Azhar Syed",
+                    "user_href": "/profile/Azhar-Syed-27"
+                },
+                {
+                    "user_id": "Sumit Kumar",
+                    "user_href": "/profile/Sumit-Kumar-2926"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vishnu U",
+                "href": "/profile/Vishnu-U-39"
+            },
+            "answer_text": "The bit value refers to the amount of data that can be send in a single instruction. 32-bit softwares work smoothly on 64-bit OS but vice versa does not work. ",
+            "date": "Answered December 17, 2017",
+            "views": "155",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anthony Corbin",
+                    "user_href": "/profile/Anthony-Corbin-16"
+                },
+                {
+                    "user_id": "BHAVANI PRASAD MORLA",
+                    "user_href": "/profile/BHAVANI-PRASAD-MORLA"
+                },
+                {
+                    "user_id": "Joy Choma",
+                    "user_href": "/profile/Joy-Choma"
+                },
+                {
+                    "user_id": "Narayana Rampura",
+                    "user_href": "/profile/Narayana-Rampura"
+                },
+                {
+                    "user_id": "JONES WAMBUA",
+                    "user_href": "/profile/JONES-WAMBUA"
+                },
+                {
+                    "user_id": "Abhishek Deshpande",
+                    "user_href": "/profile/Abhishek-Deshpande-106"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "San",
+                "href": "/profile/San-464"
+            },
+            "answer_text": "I say \u2018yes\u2019 it will work, provided your underneath hardware has support for that. As we already know , software is interface between human and hardware; It only makes your OS faster and efficient. ",
+            "date": "Answered August 25, 2018",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Fenil Patel",
+                "href": "/profile/Fenil-Patel-154"
+            },
+            "answer_text": "No I said never ",
+            "date": "Answered November 12, 2017",
+            "views": "340",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "title": "What is the difference Statistical significance and Effect Size? - Quora",
+    "tags": [
+        "Effect Size",
+        "Statistical Significance",
+        "Correlations",
+        "Statistics (collected data)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Scott Brickner",
+                "href": "/profile/Scott-Brickner"
+            },
+            "answer_text": "Statistical significance is the probability you\u2019d observe the data you saw if there was no effect at all. Suppose you have the hypothesis that your coin is biased. If you flip it twice, and it comes up heads both times, the probability you\u2019d get that if there\u2019s no bias is 25%. In other words, you\u2019d see it pretty often even if it was a completely fair coin. If you flip it ten times, and it comes up heads all ten times, the probability is 1/1024 if there\u2019s no bias. So it seems pretty likely the coin is biased. If you flip it ten times, and it comes up heads seven times, it\u2019s harder to judge. The probability is about 17%. If it came up heads eight times, the probability is a bit over 5%. You have to figure out where to draw the line\u2014how much evidence is enough to say that there\u2019s actually a bias. Of course, the more data you collect, the easier it is to decide. If the coin really has a 70% chance of coming up heads, and you flip it a thousand times, the odds of getting over 700 heads are pretty good (over 51%). But if the coin is actually fair, the odds are pretty astronomically low that you\u2019d get over 700 heads. Observing 700 heads is strong evidence of bias. So the more data you collect, the more precisely your experiment is able to measure whether an effect exists. With ten thousand tosses of a fair coin, there\u2019s only a 2% chance of getting more than 5100 heads. If the coin is only slightly biased (say a 51% chance of heads) there\u2019s more than a 50% chance you\u2019ll see over 5100 heads. Ten thousand flips makes the experiment very sensitive to bias. Now let\u2019s look at effect size. A coin that comes up heads every time has an enormous bias. The odds of even six heads in a row with a fair coin are less than 1%, so it\u2019s easy to tell that this coin is biased. If it\u2019s only very slightly biased, it\u2019s much harder to tell. That\u2019s the effect size. Statistical significance is about whether the null hypothesis can be rule out, but once you\u2019ve ruled it out, the effect size tells you whether it\u2019s actually important. Does it actually matter if the coin comes up heads 51% of the time? If it takes thousands of flips to discover it, it doesn\u2019t make much practical difference. If you\u2019re looking at a real-world scenario, you might be looking at some new drug and asking whether it improves a patient\u2019s chance of recovering from a heart attack. If the difference between patients who take the drug and patients who don\u2019t is that one extra patient out of every ten thousand recovers, you\u2019d have to do an enormous study just to show it works\u2014and having shown it, will anyone actually pay for a drug that only improves their odds by one in ten thousand? A result is statistically significant if it\u2019s unlikely there\u2019s no effect. Effect size is about how big the effect is, given that it exists. ",
+            "date": "Answered January 29, 2019",
+            "views": "265",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Larry Storeling",
+                    "user_href": "/profile/Larry-Storeling"
+                },
+                {
+                    "user_id": "Jean Philius",
+                    "user_href": "/profile/Jean-Philius"
+                },
+                {
+                    "user_id": "Ertugrul Bayindir",
+                    "user_href": "/profile/Ertugrul-Bayindir-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Takashi J. Ozaki",
+                "href": "/profile/Takashi-J-Ozaki"
+            },
+            "answer_text": "In short, please read both of the following articles. Statistical significance - WikipediaEffect size - WikipediaSimply, the first phrase of each article describes well respectively. Statistical significance means a sense of \u201cunlikeliness\u201d of the result, and effect size means a sense of \u201cmagnitude\u201d of the phenomenon. In statistical hypothesis testing, a result has statistical significance when it is very unlikely to have occurred given the null hypothesis. In statistics, an effect size is a quantitative measure of the magnitude of a phenomenon. I would add one more point; please imagine that a factory of pencils wants to check a quality of their production lines. You got 10,000 pencils from A and B lines respectively and you ran a t-test. The result showed p < 0.05 and that a mean difference of length of pencils between A and B was 0.1 mm. The mean length of pencil from B line was shorter than prescribed length, with 0.1 mm. In this case, do you have to fix B line with a huge cost as $100 million? Before answering this question, please remember that the length of usual pencil is around 15 or 16 cm. In this case, actually the t-test showed statistical significance as p < 0.05 and it was statistically significant. But its effect size was too small to fix B line with such a huge cost. ",
+            "date": "Answered January 28, 2019",
+            "views": "257",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Larry Storeling",
+                    "user_href": "/profile/Larry-Storeling"
+                }
+            ]
+        }
+    ]
+}

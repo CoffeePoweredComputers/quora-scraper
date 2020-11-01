@@ -1,0 +1,114 @@
+{
+    "title": "How does Ethernet work? - Quora",
+    "tags": [
+        "Local Area Networks",
+        "Ethernet",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rahul Anand",
+                "href": "/profile/Rahul-Anand-145"
+            },
+            "answer_text": "Ethernet was developed in the late 1970's by the Xerox Corporation at their Palo Alto Research Centre in California. It has been estimated that over 70% of the worlds networks use the Ethernet protocol, so with this in mind it would seem only sensible to discuss how it works. If you would like to buy books on this subject, have a look at the Network Cabling Help online book store. OK, lets begin the lesson. Ethernet uses a protocol called CSMA/CD, this stands for Carrier Sense, Multiple Access with Collision Detection. To understand what this means lets separate the three parts.Carrier Sense - When a device connected to an Ethernet network wants to send data it first checks to make sure it has a carrier on which to send its data (usually a piece of copper cable connected to a hub or another machine).Multiple Access - This means that all machines on the network are free to use the network whenever they like so long as no one else is transmitting.Collision Detection - A means of ensuring that when two machines start to transmit data simultaneously, that the resultant corrupted data is discarded, and re-transmissions are generated at differing time intervals.Here are some animated GIF's to help explain basic Ethernet operation, below each one is a description of what is happening.If you want to start an animation from the beginning hit your browsers refresh button. The Basic Ethernet Bus This is a coax based Ethernet network where all machines are daisy chained using RG58 coaxial cable (sometimes referred to as Thin Ethernet or Thin-net). This type of network is no longer used but understanding how Thin Ethernet worked explains the very basics of Ethernet operation.Machine 2 wants to send a message to machine 4, but first it 'listens' to make sure no one else is using the network.If it is all clear it starts to transmit its data on to the network (represented by the yellow flashing screens). Each packet of data contains the destination address, the senders address, and of course the data to be transmitted.The signal moves down the cable and is received by every machine on the network but because it is only addressed to number 4, the other machines ignore it.Machine 4 then sends a message back to number 2 acknowledging receipt of the data (represented by the purple flashing screens).But what happens when two machines try to transmit at the same time? . . . . . a collision occurs, and each machine has to 'back off' for a random period of time before re-trying.For the sake of simplicity I have omitted the acknowledgement transmissions from the rest of the animation's on this page. Collisions This animation starts with machine 2 and machine 5 both trying to transmit simultaneously.The resulting collision destroys both signals and each machine knows this has happened because they do not 'hear' their own transmission within a given period of time (this time period is the propagation delay and is equivalent to the time it takes for a signal to travel to the furthest part of the network and back again).Both machines then wait for a random period of time before re-trying. On small networks this all happens so quickly that it is virtually unnoticeable, however, as more and more machines are added to a network the number of collisions rises dramatically and eventually results in slow network response. The exact number of machines that a single Ethernet segment can handle depends upon the applications being used, but it is generally considered that between 40 and 70 users are the limit before network speed is compromised. Using a Hub An Ethernet hub changes the topology from a 'bus' to a 'star wired bus', here's how it works.Again, machine 1 is transmitting data to machine 4, but this time the signal travels in and out of the hub to each of the other http://machines.As you can see, it is still possible for collisions to occur but hubs have the advantage of centralised wiring, and they can automatically bypass any ports that are disconnected or have a cabling fault. This makes the network much more fault tolerant than a coax based system where disconnecting a single connection will bring the whole network down. Hubs are very rare these days, but understanding how they work makes it easier to explain the difference between a hub and a switch. Using a Switch To overcome the problem of collisions and other effects on network speed we now use switches.With a switch, machines can transmit simultaneously, in this case 1 & 5 first, and then 2 & 4. As you can see, the switch reads the destination addresses and 'switches' the signals directly to the recipients without broadcasting to all of the machines on the network.This 'point to point' switching alleviates the problems associated with collisions and considerably improves network http://speed.In the real world however, one or more of these machines will be servers, and as most network traffic is between the clients and a server a serious bottle neck can occur. The answer to this problem is to make server connections faster than the clients. The normal solution is to have the client machines on 100Mbs ports and the servers on 1000Mbs ports (Gigabit Ethernet). This ten to one ratio is usually adequate because not all of the clients will need to access the servers at the same time. ",
+            "date": "Answered September 11, 2016",
+            "views": "98",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vankayalapati Santosh",
+                    "user_href": "/profile/Vankayalapati-Santosh"
+                },
+                {
+                    "user_id": "Clive Hunt",
+                    "user_href": "/profile/Clive-Hunt"
+                },
+                {
+                    "user_id": "Rohit Upadhyay",
+                    "user_href": "/profile/Rohit-Upadhyay-45"
+                },
+                {
+                    "user_id": "Masood Raza",
+                    "user_href": "/profile/Masood-Raza-1"
+                },
+                {
+                    "user_id": "Sultan Alseiari",
+                    "user_href": "/profile/Sultan-Alseiari"
+                },
+                {
+                    "user_id": "Owolabi Yussuf Kehinde",
+                    "user_href": "/profile/Owolabi-Yussuf-Kehinde"
+                },
+                {
+                    "user_id": "Jayakumar Govindaraj",
+                    "user_href": "/profile/Jayakumar-Govindaraj"
+                },
+                {
+                    "user_id": "Sidharth Singh",
+                    "user_href": "/profile/Sidharth-Singh-156"
+                },
+                {
+                    "user_id": "Sirn Nedunuri",
+                    "user_href": "/profile/Sirn-Nedunuri"
+                },
+                {
+                    "user_id": "Medhavi Pandya",
+                    "user_href": "/profile/Medhavi-Pandya"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Frank Andrews",
+                "href": "/profile/Frank-Andrews-15"
+            },
+            "answer_text": "It goes bit by bit.  You'd think that'd make for a slow process, but considering we are able to wiggle the voltages fast enough to reach gigabits per second, it really makes you think. Without getting deeply into the different kinds of transmission modes, where we use different voltage levels to transmit in more efficient ways than simply saying near ground voltage is 0 and +5v is a 1, that's essentially what happens.  Let's say you want to transfer the number 5 across the network.  If we ignore the header (more on that later), what we need to do is convert the number 5 to ASCII value, which is 35, and then to binary 0010 0101.  We will transfer the right most bits first.  That means we literally send a 1, 0, 1, 0, 0, 1, 0, 0 with extremely fast pulses of electricity and the receiving end is programmed to know how to receive that because we have something called protocols which are essentially agreements in data transfer, where we have agreed that we send the right most bits first and we agreed on the header format, how long a message (packet) can be before being broken up into smaller messages.   That's the gist of how a simple message is sent.  The circuitry behind it is worth at least a masters degree worth of education to completely discuss as far as theory behind how we do it and how we actually do it (in engineering there is a great deal of difference usually behind how we plan something and how we actually did it).   The last thing to really consider is the header which enables us to send to more than one machine.  Headers contain source and destination addresses as well as other information for managing the packet.  The source says who it is from and the destination says who its intended for.  The destination address is actually quite volatile as it moves on a network.  For instance if you're playing an online game with a friend at their house, and he is behind a router, when your PC sends a message to his PC (assuming the game doesn't use a server and it uses a host protocol), the IP address in the destination starts off as being your routers IP, then any routers in between your router and his router, and then finally his router, which then knows how to send it to his PC. This all happens faster than the blink of an eye, usually measured in milliseconds. ",
+            "date": "Answered December 9, 2015",
+            "views": "91",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rui Marques",
+                    "user_href": "/profile/Rui-Marques-13"
+                },
+                {
+                    "user_id": "Tyler Lowrey",
+                    "user_href": "/profile/Tyler-Lowrey-1"
+                },
+                {
+                    "user_id": "Sultan Alseiari",
+                    "user_href": "/profile/Sultan-Alseiari"
+                },
+                {
+                    "user_id": "Pamir Roy",
+                    "user_href": "/profile/Pamir-Roy-2"
+                },
+                {
+                    "user_id": "K Sakshi",
+                    "user_href": "/profile/K-Sakshi-1"
+                },
+                {
+                    "user_id": "Emanon Emanon",
+                    "user_href": "/profile/Emanon-Emanon-1"
+                },
+                {
+                    "user_id": "Jayakumar Govindaraj",
+                    "user_href": "/profile/Jayakumar-Govindaraj"
+                },
+                {
+                    "user_id": "Vajhula Avinash",
+                    "user_href": "/profile/Vajhula-Avinash"
+                },
+                {
+                    "user_id": "Soumyajit Das",
+                    "user_href": "/profile/Soumyajit-Das-18"
+                },
+                {
+                    "user_id": "Shantha Kumar",
+                    "user_href": "/profile/Shantha-Kumar-42"
+                }
+            ]
+        }
+    ]
+}

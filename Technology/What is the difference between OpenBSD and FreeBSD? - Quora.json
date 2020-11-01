@@ -1,0 +1,72 @@
+{
+    "title": "What is the difference between OpenBSD and FreeBSD? - Quora",
+    "tags": [
+        "Unix Implementation",
+        "OpenBSD",
+        "FreeBSD",
+        "Unix",
+        "Open Source Software"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mei Douthitt",
+                "href": "/profile/Mei-Douthitt"
+            },
+            "answer_text": "FreeBSD was created from the original BSD code in 1993 when a group of developers found that the pace of development of 386BSD was too slow, and they wanted to try a more open approach to developing the operating system.[1] FreeBSD was the first of the three major free software BSD variants available today. OpenBSD was started by Theo deRaadt when he was kicked off of the core NetBSD team.[2] OpenBSD focuses on two things mainly: security, and licensing. OpenBSD is famous for saying that there is only one port open upon installation: OpenSSH (also a Theo deRaadt project).[3] The licensing on OpenBSD is entirely based on the BSD license (much to the chagrin of the GPL crowd). In 2001, the OpenBSD project actually went through the code to eradicate and rewrite all code licensed with something incompatible to the BSD 4-clause license.[4] Footnotes[1] FreeBSD | Wikiwand[2] OpenBSD | Wikiwand[3] OpenBSD | Wikiwand[4] OpenBSD | Wikiwand",
+            "date": "Answered May 5, 2020",
+            "views": "663",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roberto Santocho",
+                    "user_href": "/profile/Roberto-Santocho"
+                },
+                {
+                    "user_id": "Osric Fernandes",
+                    "user_href": "/profile/Osric-Fernandes"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marko Vihoma",
+                "href": "/profile/Marko-Vihoma"
+            },
+            "answer_text": "Except, that FreeBSD has jails and ACL's which are not supported by OpenBSD... OpenBSD's chroot mechanism for isolating services is more secure than on at least most other *nix, but it's still not as secure as a FreeBSD jail. Lack of ACL's on OpenBSD is inexcusable in my opinion, but your mileage may vary. If OpenBSD is used as a firewall/router, then these problems may not be a deciding factor and the code review may be more important. On other purposes OpenBSD is not as strong as FreeBSD even as a server platform (FreeBSD has the pf firewall software also, even though a little behind of OpenBSD's). Still, I use OpenBSD as a web server and have not had many problems, it's secure by default because of the default chroot environment and code review, but if CGI-scripts need utilities from the base (which is very often), you need to copy them from the base install to the chroot environment and possibly dependency libraries. Also, FreeBSD has the possibility to use TrustedBSD MAC (Mandatory Access Control), which is not available on OpenBSD, so decide which you need and use the OS which meets your needs... ",
+            "date": "Answered April 11, 2014",
+            "views": "48",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roberto Santocho",
+                    "user_href": "/profile/Roberto-Santocho"
+                },
+                {
+                    "user_id": "Claude Luiz S.B",
+                    "user_href": "/profile/Claude-Luiz-S-B"
+                },
+                {
+                    "user_id": "Avinash More",
+                    "user_href": "/profile/Avinash-More"
+                },
+                {
+                    "user_id": "Bill Carpenter",
+                    "user_href": "/profile/Bill-Carpenter-11"
+                },
+                {
+                    "user_id": "Thomas Thomson",
+                    "user_href": "/profile/Thomas-Thomson-16"
+                },
+                {
+                    "user_id": "Ravi Kumar Tenneti",
+                    "user_href": "/profile/Ravi-Kumar-Tenneti-1"
+                },
+                {
+                    "user_id": "He Shang",
+                    "user_href": "/profile/He-Shang"
+                }
+            ]
+        }
+    ]
+}

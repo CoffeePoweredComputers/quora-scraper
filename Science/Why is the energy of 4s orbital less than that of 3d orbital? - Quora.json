@@ -1,0 +1,85 @@
+{
+    "title": "Why is the energy of 4s orbital less than that of 3d orbital? - Quora",
+    "tags": [
+        "Quantum Mechanics",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Moldenhauer",
+                "href": "/profile/Michael-Moldenhauer-1"
+            },
+            "answer_text": "There are at least 3 effects that go into determining the energy levels of orbitals: Coulomb's law, shielding, and penetration. The first of these, Coulomb's law, is the usual inverse square relationship for the electric force between charged objects. The closer they are, the greater the force. For oppositely charged objects, this means the more strongly they are attracted, and the lower their potential energy. In a single-electron atom, this is mostly the only thing at play, and as a result, the orbitals with the same [math]l[/math] quantum number all have the same energy, while those of different [math]n[/math] quantum numbers have different energies. In a multi-electron atom, though, there are the other two effects I mentioned: electrons in other orbitals can \"shield\" those in outer orbitals from some of the nuclear charge -- that is, they create a \"screen\" of negative charge around the positive charge of the nucleus, cancelling some of it out. As a result, the outer orbital rises in energy, as it is a more loosely bound state since there is \"effectively\" less charge to bind it. Penetration is where one orbital has a part that is inside another, so it experiences less of the shielding effect that that other orbital would otherwise provide, allowing it to be attracted more strongly and lowering its energy. The effects can be determined by examining the radial distribution functions of the orbitals. The radial distribution function gives the probability that the electron will be found within a certain distance of the nucleus. Formally, it is the integral of the orbital wave function over a sphere of the given radius centered at the nucleus, to get a probability level. The RDF for the 3d and 4s orbitals looks like Figure 2.23.5 on this page:http://www.sas.upenn.edu/~milester/courses/chem101/AQMChem101/AQMPages/FiguresSet2235.html Note that 4s contains several peaks within the space of the 3d orbital. As a result, it experiences penetration of the shielding the 3d would otherwise provide, and is pulled closer and thus its energy level is lower. ",
+            "date": "Answered March 3, 2016",
+            "views": "151",
+            "upvotes": " View 27 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ian Replinger",
+                    "user_href": "/profile/Ian-Replinger-1"
+                },
+                {
+                    "user_id": "James R. Hamilton",
+                    "user_href": "/profile/James-R-Hamilton-1"
+                },
+                {
+                    "user_id": "ABDULAZEEZ MOHAMMED RAZZAQ",
+                    "user_href": "/profile/ABDULAZEEZ-MOHAMMED-RAZZAQ"
+                },
+                {
+                    "user_id": "Jamshid Ochilov",
+                    "user_href": "/profile/Jamshid-Ochilov-3"
+                },
+                {
+                    "user_id": "Preeti Charan",
+                    "user_href": "/profile/Preeti-Charan-5"
+                },
+                {
+                    "user_id": "Nikola \u0160egedin",
+                    "user_href": "/profile/Nikola-\u0160egedin"
+                },
+                {
+                    "user_id": "Derick Sukasuka",
+                    "user_href": "/profile/Derick-Sukasuka"
+                },
+                {
+                    "user_id": "Muhammad Atef Abdoullah",
+                    "user_href": "/profile/Muhammad-Atef-Abdoullah"
+                },
+                {
+                    "user_id": "Ben Jasper",
+                    "user_href": "/profile/Ben-Jasper-6"
+                },
+                {
+                    "user_id": "Samir Gyawali",
+                    "user_href": "/profile/Samir-Gyawali-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Flavio Matsumoto",
+                "href": "/profile/Flavio-Matsumoto"
+            },
+            "answer_text": "This statement is used as justification of Madelung rule, but it is not quite accurate. For hydrogen, an one electron atom, the electronic energy depends only on n quantum number. Thus, 3s, 3p and 3d orbitals have the same energy, whose value is lower than 4s, 4p, 4d and 4f orbitals. Adding one more electron (and one proton into the nucleus), electron-electron repulsion makes electronic energy to depend on n and l quantum numbers. Helium 3d and 4s orbitals are not occupied at ground state, but one can find the energies of 1s\u00b93d\u00b9 and 1s\u00b94s\u00b9 excited states at NIST: Atomic Spectra Database. 1s\u00b93d\u00b9: ~23.074 eV 1s\u00b94s\u00b9: ~23.6 eV The ground state 1s\u00b2 has 0 eV. Looking the energy values shown above, one can conclude that 3d orbital is less energetic than 4s. For a more exact description of polyelectronic atoms, electronic configuration is not enough because one of such configuration can give origin to many different energy states. Each of that energy state is represented by term symbol. The ground state electronic configuration 2s\u00b22p\u00b2 gives origin to the following terms (energy of given term is enclosed in brackets). 2s\u00b22p\u00b2: \u00b3P [0 eV]; \u00b9D [ 1.263 eV]; \u00b9S [2.684 eV] The splitting of energy for different terms are owing to different ways that two electrons can occupy three 2p orbitals, giving origin to different electron-electron interactions. Let\u2019s see some excited states of carbon atom. 2s\u00b22p\u00b93d\u00b9: \u00b9D [9.631 eV]; \u00b3F [9.69 eV]; \u00b3D [9.70 eV]; \u00b9F [9.74 eV]; \u00b9P [9.76 eV]; \u00b3P [9.83 eV] 2s\u00b22p\u00b94s\u00b9: \u00b3P [9.68 eV]; \u00b9P [9.70 eV] These configurations give origin to a number of closely spaced terms, but still 3d orbital seems to be less energetic than 4s. In the nitrogen the order reverses: 2s\u00b22p\u00b24s\u00b9: \u2074P [12.85 eV]; \u00b2P [12.91 eV}; 2s\u00b22p\u00b23d\u00b9: \u00b2P [12.97 eV}; \u2074F [12.98 eV}; \u00b2F [12.99 eV}; \u2074P [13.00 eV}; \u2074D [13.01 eV}; \u00b2D [13.03 eV} All the elements after nitrogen the energy order is 4s<3d, up to calcium: 3d\u20704s\u00b2: \u00b9S [0 eV} 3d\u00b94s\u00b9: \u00b3D [2.52 eV]; \u00b9D [2.72 eV] However for scadium, the energy order is reversed again. This can be seen easier in Sc\u00b2\u207a cation, which lone electron has less energy when occupies 3d orbital. 3d\u00b94s\u2070: \u00b2D [0 eV] 3d\u20704s\u00b9: \u00b2S [25539 eV] One can be tempted to put the second electron into 3d electron for Sc\u207a ion, but this is not what will happen. 3d\u00b24s\u2070: \u00b3F [4880 eV] ; \u00b9D [10944 eV]; \u00b3P [12100 eV]; \u00b9G [14261 eV]; \u00b9S [25955 eV] 3d\u00b94s\u00b9: \u00b3D [0 eV]; \u00b9D [2540 eV] Why the second electron in the ground state occupies 4s orbital, whose energy is greater than of 3d orbital? The answer is not easy, it involves inter-electronic repulsion and exchange energy and is supported by some quantum-mechanical calculations. So, answering your question, there is no such an orbital energy order that is valid for any atom or ion. 3d energy may be same of 4s energy or different (greater or less than) depending on the atom. ",
+            "date": "Answered April 28, 2018",
+            "views": "39",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Laboni Gautam",
+                    "user_href": "/profile/Laboni-Gautam"
+                },
+                {
+                    "user_id": "Kavita Devi Dhaka",
+                    "user_href": "/profile/Kavita-Devi-Dhaka"
+                },
+                {
+                    "user_id": "Bhuvraj Singh Sandhu",
+                    "user_href": "/profile/Bhuvraj-Singh-Sandhu"
+                }
+            ]
+        }
+    ]
+}

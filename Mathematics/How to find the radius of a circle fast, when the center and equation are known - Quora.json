@@ -1,0 +1,94 @@
+{
+    "title": "How to find the radius of a circle fast, when the center and equation are known - Quora",
+    "tags": [
+        "Planar Geometry",
+        "Geometry of Circles",
+        "Circles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bill Crean",
+                "href": "/profile/Bill-Crean"
+            },
+            "answer_text": "The general equation of a circle is x^2 + y^2 + 2gx + 2fy + c = 0, where (-g, -f) are the coordinates of the centre and the radius, r is given in r^2 = g^2 + f^2 - c. If, as you say, the equation of the circle is known, then the -g, -f and c can be read directly from the equation, for example, the circle x^2 + y^2 - 10x - 10y + 25 = 0 has centre coordinates of (5, 5) because equating coefficients of x and y with the general equation gives: 2g = -10 and 2f = -10, which yields g = -5 and f = -5 and so (-g, -f) = (5, 5) . Also the radius is easily calculated from r^2 = 5^2 + 5^2 - c = 25 + 25 - 25 = 25, therefore r = 5. ",
+            "date": "Answered May 21, 2017",
+            "views": "349",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Karun Dawadi",
+                    "user_href": "/profile/Karun-Dawadi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dean Rubine",
+                "href": "/profile/Dean-Rubine"
+            },
+            "answer_text": "There\u2019s actually a sneaky way that doesn\u2019t require completing the square or anything. If the equation for the circle with center [math](a,b)[/math] is [math]f(x,y) = 0[/math] then it\u2019s [math](x-a)^2 + (y-b)^2 - r^2 = 0[/math] so [math]r^2 = -f(a,b)[/math] Pretty fast. There\u2019s only one catch \u2014 This assumed it was a monic second degree polynomial, meaning a coefficient of 1 on [math]x^2[/math] and [math]y^2[/math]. So in general [math]r^2 = - \\frac{1}{c} f(a,b)[/math] where [math]c[/math] is the coefficient on [math]x^2[/math] in [math]f[/math]. Let\u2019s test it out on [math](x-2)^2+(y+1)^2=5^2;[/math] say we were given center [math](2,-1)[/math] and [math]f(x,y)=x^2 - 4 x + y^2 + 2 y - 20 = 0[/math] It\u2019s monic so the squared radius is [math]r^2=-f(2,-1) = - ( 2^2- 4(2) + (-1)^2 + 2(-1) - 20 ) = 25 =5 ^2 \\quad\\checkmark[/math] ",
+            "date": "Answered July 25, 2019",
+            "views": "227",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jean B\u00e9nichou",
+                    "user_href": "/profile/Jean-B\u00e9nichou-2"
+                },
+                {
+                    "user_id": "Karun Dawadi",
+                    "user_href": "/profile/Karun-Dawadi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tom Parkinson",
+                "href": "/profile/Tom-Parkinson-3"
+            },
+            "answer_text": "Let x=0 in the equation for the circle. That will yield a quadratic in y. Solving the quadratic will define a point (0, y) on the circle. The distance from the known centre (x*, y*) to the point (0, y) \u2014 equal to sqrt[x*^2+(y*-y)^2] \u2014 equals the radius. ",
+            "date": "Answered May 20, 2017",
+            "views": "205",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Karun Dawadi",
+                    "user_href": "/profile/Karun-Dawadi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roger Steward",
+                "href": "/profile/Roger-Steward"
+            },
+            "answer_text": "You can't unless you either know the location of a point on the circumference or the length of the circumference. ",
+            "date": "Answered May 20, 2017",
+            "views": "100",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Karun Dawadi",
+                    "user_href": "/profile/Karun-Dawadi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kenneth Fiore",
+                "href": "/profile/Kenneth-Fiore"
+            },
+            "answer_text": "When the equation is in the form x^2 + y^2 = N or the form (x-a)^2 + (y-b)^2 = N the radius would always be the square root of the number N. ",
+            "date": "Answered May 20, 2017",
+            "views": "35",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Karun Dawadi",
+                    "user_href": "/profile/Karun-Dawadi-1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "title": "How does an antenna convert electromagnetic waves into radio frequency? - Quora",
+    "tags": [
+        "Radio Frequency",
+        "Electromagnetic Waves",
+        "Radio Waves",
+        "Antennas",
+        "Electromagnetic Radiation",
+        "Radio",
+        "Waves (physics)",
+        "Electromagnetism",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eli Pasternak",
+                "href": "/profile/Eli-Pasternak"
+            },
+            "answer_text": "An antenna is not much different from an optical lens, parabolic reflector or horn that concentrates light into a sub-wavelength focus for further processing. Both are electromagnetic waves however since we can\u2019t conduct light with wires light has to remain a field while with radio the field is converted to voltage and current in wires. Consider a receiving horn antenna where the conversion of electromagnetic waves to guided radio signals is quite direct. What I am about to describe is an approximated qualitative process. The actual description requires solving electromagnetic differential equations that takes a few pages of math but is unavoidable for actual design. A flat electromagnetic wave hits the wide opening of the horn. The waves are gradually concentrated into the narrowing horn until they reach the horn\u2019s waveguide which is a conducting hollow pipe. Here is small transition occurs: the waveguide cannot support transverse waves thus one of the field\u2019s components, either the electric or the magnetic, adds a longitudinal component into the propagation mode inside the waveguide. If the remaining transverse field is magnetic we call it TM waves and if electric, TE. Eventually a radio receiver needs conventional electrical voltages and currents. This is accomplished by a waveguide to coax transition near the narrow end of the waveguide where a small conducting probe is held at the electric field direction. Once the fields have moved to the coax it is a conventional electric signal that can feed the receiver circuitry for, amplifiers, down conversion and demodulation.  From: Radartutorial ",
+            "date": "Answered July 27, 2020",
+            "views": "594",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hubert Okari",
+                    "user_href": "/profile/Hubert-Okari"
+                },
+                {
+                    "user_id": "David Berger",
+                    "user_href": "/profile/David-Berger-64"
+                },
+                {
+                    "user_id": "Noel Puklowski",
+                    "user_href": "/profile/Noel-Puklowski"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Allen",
+                "href": "/profile/Mark-Allen-15"
+            },
+            "answer_text": "EM waves and RF are the same thing. For Wi-Fi, WLAN channel 1 has a frequency of 2.412 GHz and a wavelength of 12.4292 cm. Any frequency has a wavelength, and vice versa. Antennas cannot tune radio frequencies to convert a physical-layer waveform into an application-aware signal, however. That\u2019s a job for a tuner. For instance, a Wi-Fi router has a radio chain comprising one or more dipole antennas and possibly amplifiers, with a jumper cable coupled between the antenna port and the printed circuit board. But a Wi-Fi radio module is needed to modulate the waveforms, schedule transmissions, etc. Similarly, you may have a TV antenna, but your TV set very likely has a tuner embedded in its digital signal processor board to make sense of the waveform received by the antenna. ",
+            "date": "Answered July 27, 2020",
+            "views": "70",
+            "upvotes": "0"
+        }
+    ]
+}

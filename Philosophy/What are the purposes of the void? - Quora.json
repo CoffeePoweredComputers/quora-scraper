@@ -1,0 +1,42 @@
+{
+    "title": "What are the purposes of the void? - Quora",
+    "tags": [
+        "Void",
+        "Purpose",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bhanu Parashar",
+                "href": "/profile/\u092d\u093e\u0928\u0942-\u092a\u093e\u0930\u093e\u0936\u0930-Bhanu-Parashar"
+            },
+            "answer_text": "In languages like C and C++ void is a keyword that represents absence of data. I know 2 important purposes of void: Define that a function does not returns anything, that is absence of data in return statement of function, hence the return statement can even be left.void pointer, that is pointer to a location without a reference to the datatype. You can see one of the example of point 2 as: #include<iostream>\u00a0 \u00a0using namespace std;\u00a0 \u00a0int main()\u00a0{\u00a0 void *ptr;\u00a0 ptr=new int(10);\u00a0 cout<<*((int*)ptr)<<endl;\u00a0 delete ptr;\u00a0 ptr=new char('a');\u00a0 cout<<*((char*)ptr);\u00a0 delete ptr;\u00a0 return 0;\u00a0}\u00a0Here a void pointer is used and then it can be easily type-casted to required type at time of usage. Hence this can be used as a way to store data without knowledge of the datatype. This is the basic concept that is also used in weakly typed languages like python where in there internal implementation something like this must have been used, as we all know python is made in C.  Thanks for Tolerating Me (Bhanu Dutta Parashar) ",
+            "date": "Answered November 10, 2018",
+            "views": "12",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Manish Kumar",
+                    "user_href": "/profile/Manish-Kumar-3882"
+                },
+                {
+                    "user_id": "Mohit Kushwaha",
+                    "user_href": "/profile/Mohit-Kushwaha-63"
+                },
+                {
+                    "user_id": "Yamini Gore",
+                    "user_href": "/profile/Yamini-Gore-5"
+                },
+                {
+                    "user_id": "Raj Ansh",
+                    "user_href": "/profile/Raj-Ansh"
+                },
+                {
+                    "user_id": "Divya Shah",
+                    "user_href": "/profile/Divya-Shah-60"
+                }
+            ]
+        }
+    ]
+}

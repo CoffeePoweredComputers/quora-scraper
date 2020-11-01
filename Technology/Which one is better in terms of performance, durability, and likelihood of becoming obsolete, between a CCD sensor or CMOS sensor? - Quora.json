@@ -1,0 +1,104 @@
+{
+    "title": "Which one is better in terms of performance, durability, and likelihood of becoming obsolete, between a CCD sensor or CMOS sensor? - Quora",
+    "tags": [
+        "Charge-Coupled Devices",
+        "CMOS Sensor",
+        "Sensors",
+        "Photography",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "Charge-Coupled Devices (CCDs) were originally the right answer. The CCD was the first high quality sensor, and they're still found in a few cameras. CMOS sensors, however, are the better choice in most cases. Much of this has been about chip process. CCDs are largely analog devices, and need special production processes that aren't really used by other devices. This has slowed the evolution of CCDs and kept the prices high -- CCDs today are absolutely more expensive than CMOS imagers of the same resolution. CMOS chips leverage the vast production capabilities of the digital semiconductor industry, being made in a process similar to that used for DRAM and CPUs. Early CMOS chips were pretty evil... low cost and low quality. This started to change in the early DSLR era, when in 2000, Canon produced the first CMOS-powered DSLR, the EOS D30, which produced photos with measurably less noise than the CCD-based cameras of the era. Before long, higher end CMOS had become common for use in DSLRs and professional camcorders (around the time of the move to HD video). Meanwhile, the lower-end CMOS sensors improved in quality, to the point where they basically took over all low-end photography and video (P&S cameras, consumer camcorders, smartphones, etc). CMOS sensors have been using the advantage of digital technology to improve image quality. The analog signals don't have to travel as far on a CMOS chip, and as the geometries shrink, noise has been dramatically reduced, to the point we're at today, where CMOS-based still cameras come with ISOs over 100,000, besting any film that's been invented. CCD still has one advantage, though that's more of \"current practice\" than any hard limitation. A CCD is basically a huge analog shift register. Each pixel accumulates a charge during exposure -- light strikes a photodiode, each photo releases an electron. Such a sensor is basically always active, so it needs a mechanical shutter as well, to stop the accumulation of charge and allow the \"coupling\" of charge from cell to cell to sense amplifier and analog to digital converter... kind of a bucket brigade of charge. Most current CCDs use a thing called interline transfer. Basically, the CCD has twice as many pixels as the rating... every other pixel is masked off from light. So the sensor exposes, then shifts every pixel over by one, from light-gathering pixels to dark pixels, where the charge will no longer change. The dark pixels are then shifted out while the next set of light pixels is exposed. This is what allowed modern camcorders: the effect of a global electronic shutter and fast operation. As a down side, it also limited the light gathering area of the CCD to less than 50% of the total area, though that's been somewhat mitigated by microlenses and other cool tricks. CMOS sensors are fast enough to shift out pixel data nearly in real time, while they can be used with a mechanical shutter (as on any DSLR or mirrorless ILM camera), they don't have to be. For video and cheaper consumer models, the electronic shutter is all you have. With no need for a backing store of charge, CMOS became much cheaper (and as before, it's already in a cheaper IC process). The down side is what's been termed \"the jello effect\". The CMOS sensor will have groups of pixels enabled in turn for charge collection, a few lines at a time or so depending on the sensor architecture. These expose and then shift the result very quickly out of the chip and into digital. Then the next set gets exposed, and so far. The end result is that the exposure varies in time a bit over the sensor... and when you're shooting fast moving things, you get this \"jello\" effect. Not an issue with digital still photography on a good camera, but definitely a video concern. Again, it's possible to build a CMOS sensor with a global electronic shutter (using a backing store like the CCD would do it), but the current emphasis has been on lowering costs. What Anthony is alluding to has nothing to do with the sensor technology. In the classic small-sensor camcorder, there are three sensors: one for red, one for green, one for blue. They're all the same, and can be CMOS or CCD. The trick is that they're very small, and right behind the lens there's a diachroic prism, which splits light by color to feed each sensor separately. This is not done in large-sensor cameras (still or video). Rather, using a much larger sensor and 4x as many pixels as you need for your video size, there's \"pixel bucketing\" where each video pixel is actually made of four physical pixels (often straight Bayer pattern RGBG, sometimes RWGB, where \"W\" is an unfiltered pixel ... \"white\" ... no color information but about 3x more sensitive). ",
+            "date": "Updated March 21, 2018",
+            "views": "456",
+            "upvotes": " View 35 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Joe Monti",
+                    "user_href": "/profile/Joe-Monti-3"
+                },
+                {
+                    "user_id": "Marcus Wilson",
+                    "user_href": "/profile/Marcus-Wilson-184"
+                },
+                {
+                    "user_id": "Anirudh Sharma",
+                    "user_href": "/profile/Anirudh-Sharma-20"
+                },
+                {
+                    "user_id": "Ganesha Gopala Rao",
+                    "user_href": "/profile/Ganesha-Gopala-Rao"
+                },
+                {
+                    "user_id": "Khem Iglesis Barrull",
+                    "user_href": "/profile/Khem-Iglesis-Barrull"
+                },
+                {
+                    "user_id": "Mukul Sati",
+                    "user_href": "/profile/Mukul-Sati"
+                },
+                {
+                    "user_id": "Rupesh Routray",
+                    "user_href": "/profile/Rupesh-Routray"
+                },
+                {
+                    "user_id": "Karthik S",
+                    "user_href": "/profile/Karthik-S-144"
+                },
+                {
+                    "user_id": "Arnel Cruz Enero",
+                    "user_href": "/profile/Arnel-Cruz-Enero"
+                },
+                {
+                    "user_id": "Padmanabh Kulkarni",
+                    "user_href": "/profile/\u092a\u0926\u094d\u092e\u0928\u093e\u092d-\u0915\u0941\u0932\u0915\u0930\u094d\u0923\u0940-Padmanabh-Kulkarni"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ville Nummela",
+                "href": "/profile/Ville-Nummela"
+            },
+            "answer_text": "10 years ago, the CCD would have clearly won the contest. Since the advent of the phone camera, the CMOS world has caught up and is generally getting a lot more research money than CCD. Small sensors (such as those in handsets) are in practice all CMOS. They are both cheaper and better. Big sensors are still cheaper to make using the CCD process. Thus most DSLRs use CCDs, but that will likely soon change. Anyway: For the purpose of picking a camera, the choice of sensor technology is not really relevant. You'll spend your time much better reading e.g. Digital Photography Review than worrying about the sensor manufacturing method. If one was clearly better than the other, why would any manufacturer ever use the inferior one? Anthony, aren't you mixing 3CCD with CCD? 3CCD is an optical arrangement of 3 CCD (or CMOS) sensors, CCD is the sensor technology. Not all CCDs use the 3CCD method. ",
+            "date": "Answered February 16, 2013",
+            "views": "203",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Htet Aung",
+                    "user_href": "/profile/Htet-Aung-363"
+                },
+                {
+                    "user_id": "Rumi Lutful Hasan",
+                    "user_href": "/profile/Rumi-Lutful-Hasan"
+                },
+                {
+                    "user_id": "Rik Andino",
+                    "user_href": "/profile/Rik-Andino"
+                },
+                {
+                    "user_id": "Tariq Maqsood Khan",
+                    "user_href": "/profile/Tariq-Maqsood-Khan"
+                },
+                {
+                    "user_id": "Dmitri Chubarov",
+                    "user_href": "/profile/Dmitri-Chubarov"
+                },
+                {
+                    "user_id": "Rahul Srivastava",
+                    "user_href": "/profile/Rahul-Srivastava-66"
+                },
+                {
+                    "user_id": "Jerry Rice",
+                    "user_href": "/profile/Jerry-Rice-14"
+                }
+            ]
+        }
+    ]
+}

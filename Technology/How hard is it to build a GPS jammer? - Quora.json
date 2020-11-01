@@ -1,0 +1,43 @@
+{
+    "title": "How hard is it to build a GPS jammer? - Quora",
+    "tags": [
+        "Cell Phone Jammers",
+        "GPS Devices"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dan Gerrity",
+                "href": "/profile/Dan-Gerrity-1"
+            },
+            "answer_text": "A GPS jammer is easy to build. GPS signals are relatively weak and centered around frequencies of 1.0, 1.2, and 1.5 GHz, which are in the microwave spectrum. Simple emission of microwave energy in the vicinity of a receiver will mask out the weak signals transmitted by satellites (which are ~20k kilometers away) and render the GPS unit ineffective. Note that this does not spoof the signal, or cause the receiver to compute and display an incorrect position, it just renders the receiver ineffective. Any properly designed GPS receiver will indicate the failure as either no satellites present or as a RAIM error, which is a self-diagnosis that the precision of the GPS position solution cannot be guaranteed. Consumer devices that have the potential to transmit radio frequency energy have to be approved by the FCC to ensure those emissions are weak enough to prevent, for example, a phone from generating enough power to jam a GPS signal. However, the parts to generate massive energy at those frequencies are readily available at very low costs - think microwave ovens. ",
+            "date": "Answered April 8, 2018",
+            "views": "56",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Brooke Murphy",
+                    "user_href": "/profile/Brooke-Murphy-38"
+                },
+                {
+                    "user_id": "Kymaani Heketoa",
+                    "user_href": "/profile/Kymaani-Heketoa"
+                },
+                {
+                    "user_id": "David Murray",
+                    "user_href": "/profile/David-Murray-177"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Elder",
+                "href": "/profile/Jonathan-Elder"
+            },
+            "answer_text": "Not very hard at all. The GPS signals, since they come from satellites, are really low power by the time they reach the ground. All you would need to do would be create a small radio transmitter with a decent power output that broadcast something else on the same frequency, even just a simple tone. It would swamp the GPS signal and prevent all the nearby receivers picking it up. A competent electronic engineer could probably make one in an afternoon. However, it very illegal almost everywhere to own or operate a radio transmitter that does not use one of the permitted frequencies. And, given that you are transmitting a continuous signal on a very specific frequency, it\u2019s not going to be hard at all to track you down with a simple directional aerial. After which, bad things happen. ",
+            "date": "Answered May 27, 2020",
+            "views": "282",
+            "upvotes": "0"
+        }
+    ]
+}

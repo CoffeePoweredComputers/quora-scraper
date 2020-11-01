@@ -1,0 +1,56 @@
+{
+    "title": "What is the value of a and b: a^b=b^a and a=2b? - Quora",
+    "tags": [
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Reuven Harmelin",
+                "href": "/profile/Reuven-Harmelin"
+            },
+            "answer_text": "In fact, the equation: a^b=b^a, with the conditions: a>1 and b>1 are 2 different natural numbers, has a unique solution; even without the additional requirement: a=2*b. First, take the natural logarithm of both sides: b*ln(a)=a*ln(b) and divide by a*b to get an equation of the form: f(a)=f(b) where f(x)=ln(x)/x  and since a,b are 2 different natural numbers, we can assume WNLG that a>b>1. The derivative of f(x)=ln(x)/x is f\u2019(x)=(1-ln(x))/x^2 from which we deduce that f\u2019(x)>0 for 1<x<e and f\u2019(x)<0 for x>e. Therefore, f(x) is strictly increasing in the interval [1.e] and strictly decreasing in [e,infinity). Hence, the 2 different natural numbers a,b, satisfying the given equation could not be both either in [1,e] or in [e,infinity), and consequently 1<b<e<a. Since the only natural number b between 1 and e is 2 and ln(4)/4=ln(2^2)/(2*2)=2*ln(2)/(2*2)=ln(2)/2, we conclude at once that the only solution to that question is a=4, b=2. ",
+            "date": "Answered December 29, 2019",
+            "views": "182",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kermit Rose",
+                    "user_href": "/profile/Kermit-Rose"
+                },
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Juvin Abayon",
+                "href": "/profile/Juvin-Abayon"
+            },
+            "answer_text": "Knowing that , we have    Or, by factoring,  Either  or  is equal to zero, but there is no such b for which  Considering the other factor, it is apparent that  Let us verify.     Either b or  is equal to zero, but by considering b = 0 the original equation would not hold. Therefore we have and thus  as asserted. We then have  Hope this helps. ",
+            "date": "Answered December 29, 2019",
+            "views": "162",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Said Arabi",
+                    "user_href": "/profile/Said-Arabi"
+                },
+                {
+                    "user_id": "Kermit Rose",
+                    "user_href": "/profile/Kermit-Rose"
+                },
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        }
+    ]
+}

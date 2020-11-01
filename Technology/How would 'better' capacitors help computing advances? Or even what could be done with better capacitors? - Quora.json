@@ -1,0 +1,110 @@
+{
+    "title": "How would 'better' capacitors help computing advances? Or even what could be done with better capacitors? - Quora",
+    "tags": [
+        "Capacitors",
+        "Electronics",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jacob VanWagoner",
+                "href": "/profile/Jacob-VanWagoner"
+            },
+            "answer_text": "I think the question you really want to ask about is \"how would graphene help electronic device advances?\" The main point of the article you link to is about supercapacitors, not capacitors.  Supercapacitors aren't \"better capacitors,\" they're a different class of device.  They're sort of a bridge between batteries and capacitors in terms of the compromise between charge/discharge speed and storage density. They're better than batteries at quick charging and can discharge higher power, but they can't hold as much energy  (4 hour battery charge = 30 second supercapacitor charge, but 24-hour battery power supply = 1 hour supercapacitor power supply).  They can hold a lot more energy than capacitors, but can't charge or discharge quite as quick (capacitor charges to full capacity in 1 millisecond, small supercapacitor takes 2 seconds, but supercap can power a device for 1 minute on that charge while regular cap can only make it last 2 seconds.)  Supercapacitors already exist, but they're expensive compared to capacitors and batteries.  The energy density they have is enormous for a capacitor (but not that big compared to a battery) -- 150 farads per gram, limited to 5 volts before the pseudo-dielectric liquid starts evaporating, and mass-energy density is consequently .  Graphene-based supercapacitors are theorized to hit 550 farads per gram, with a higher voltage limit. (To George Gonzalez's answer, a supercapacitor operates differently from a standard capacitor and is not just a simple dielectric surrounded by conductors, and often don't even have a solid dielectric.  The effective capacitance is not a true capacitance, but rather a pseudocapacitance that is partly electrochemical (battery) and partly stacked electrostatic (more like capacitor)  See: Page on mitre.org, Page on intechopen.com, and, just for fun, the wikipedia page on Supercapacitors) ",
+            "date": "Answered December 10, 2014",
+            "views": "706",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Saikrishna Vasudevan",
+                    "user_href": "/profile/Saikrishna-Vasudevan-1"
+                },
+                {
+                    "user_id": "Dan Lenski",
+                    "user_href": "/profile/Dan-Lenski"
+                },
+                {
+                    "user_id": "Kirill Nenartovich",
+                    "user_href": "/profile/Kirill-Nenartovich"
+                },
+                {
+                    "user_id": "Jack Dahlgren",
+                    "user_href": "/profile/Jack-Dahlgren"
+                },
+                {
+                    "user_id": "Chetan Vashisht",
+                    "user_href": "/profile/Chetan-Vashisht"
+                },
+                {
+                    "user_id": "Arjun M Das",
+                    "user_href": "/profile/Arjun-M-Das-1"
+                },
+                {
+                    "user_id": "Terry Drinkwater",
+                    "user_href": "/profile/Terry-Drinkwater"
+                },
+                {
+                    "user_id": "Rusdy Simano",
+                    "user_href": "/profile/Rusdy-Simano"
+                },
+                {
+                    "user_id": "Harrison Prather",
+                    "user_href": "/profile/Harrison-Prather"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dan Lenski",
+                "href": "/profile/Dan-Lenski"
+            },
+            "answer_text": "How can better capacitors make better computers? I'm going to go off on a slightly different tack from other answers and tell you how about how better-integrated capacitors can help us make faster computing devices, by allowing us to build high-capacity, high-bandwidth memory integrated into processors. Ron Garrett's and Loring Chien's answers discuss capacitors as passive devices, used in power supplies and other analog circuits (e.g. RC filter), but this doesn't quite tell the whole story... DRAM There is one indispensable use case for capacitors in general-purpose computing devices: Dynamic random-access memory. This is the main form of fast, high-density, low-power random-access memory* used in modern computers, tablets, and smartphones. And we just can't get enough of it: The minimum requirement for Windows 7 is 2 GiB (2009), while it was 128 MiB for Windows XP (2003), and 4 MiB for Windows 95 (1995). The HTC G1 had 192 MiB of DRAM (first commercial Android smartphone, 2008) while the Nexus 5 has 2 GiB (2013).And we need to be able to get data into and out of this memory fast, otherwise our fast CPUs will do us no good; they will be memory bound. Imagine multiplying two large matrices of data. Let's say you have a screaming fast multiplier circuit that can multiply two numbers together 10 billion times a second... now, if your memory is only fast enough to feed it 1 billion numbers a second, it will run 20x slower than the speed of the multiplier circuit. That might sound pretty abstract, but it is used all the time in 3D graphics rendering. Conventional DRAM The DRAM cell (one bit of memory) is a pretty simple structure, consisting of a storage capacitor to hold charge, and a single access transistor to mediate access between the cell and the \"outside world.\" (Contrast this with the more complex 6-transistor SRAM cell design.)   In brief, when the DRAM cell's wordline is \"on,\" the storage capacitor is connected to the bitline\u2014by which the stored voltage or charge can be read\u2014and when the wordline is \"off,\" the storage capacitor is isolated and the charge is retained. In reality, the charge slowly leaks out of the cell, which is why DRAM needs to be periodically refreshed so as not to lose or corrupt the contents of the memory. Typical refresh intervals are 10-100ms; more frequent refresh consumes more electrical power. One of the typical traditional implementations of a DRAM storage capacitor in a silicon chip is as a trench coated with successive thin films of conducting and dielectric materials:  What's wrong with DRAM? For our present purposes, the problem with DRAM is that it can't easily be manufactured on the same die as a high-density, high-speed digital logic circuit. An efficient DRAM manufacturing process produces charge storage devices with low leakage (high resistance) and high capacitance. But high resistance and high capacitance is bad for digital logic: the higher the RC time constant of a circuit, the slower it can switch states. So DRAM memory normally has to be manufactured in a physically separate die from a CPU. Now your computer motherboard contains two chips instead of one. No big deal, especially for a desktop computer where there's plenty of room inside the case, right? So why is that a problem? Remember how I mentioned above that a computer's speed is often limited by memory bandwidth, by how fast the CPU can get data into and out of memory? Take a look at this picture of a 2GiB laptop memory module (contains about 16 billion bits of DRAM):  There are a couple of hundred gold pins at the bottom, by which the DRAM is connected to the motherboard and the CPU. Basically, that means there are only a couple hundred paths by which billions of bits of memory can get to the billions of transistors in the CPU. That's a major bottleneck. Integrating DRAM into a CPU If we could combine DRAM memory into a CPU or GPU, we could vastly increase our memory bandwidth. A modern CPU or GPU contains billions of copper interconnects: if the DRAM cells were part of the same die, it would be feasible to create millions of interconnections between those billions of memory bits and billions of transistors. As a result, there has been a lot of research into embedded DRAM, in which DRAM is manufactured as part of a digital logic chip. As I mentioned, it's a difficult challenge to make low-leakage high-capacitance storage capacitors using the same manufacturing process as high-speed, high-density digital logic... but it's not insurmountable. Intel's Haswell processors with Iris Pro Graphics use eDRAM to make a more powerful graphics processor, alleviating the memory-bandwidth limitations which I described above. For some details of how it's done, you can read the paper announcing this technology, \"A 22nm high performance embedded DRAM SoC technology\" (I'm one of many authors!), or this more accessible article from ChipWorks, \"Intel\u2019s e-DRAM Shows up in the Wild,\" which also compare's Intel's eDRAM to competitors' versions. One of the key innovations of Intel's eDRAM is that the DRAM storage capacitors are made in a completely separate layer above the transistors, alongside the metal interconnections between transistors:  ",
+            "date": "Updated May 4, 2015",
+            "views": "63",
+            "upvotes": " View 57 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gautham Sh",
+                    "user_href": "/profile/Gautham-Sh"
+                },
+                {
+                    "user_id": "Sayan Ganguly",
+                    "user_href": "/profile/Sayan-Ganguly-14"
+                },
+                {
+                    "user_id": "S. Damon",
+                    "user_href": "/profile/S-Damon"
+                },
+                {
+                    "user_id": "Vivek Nagarajan",
+                    "user_href": "/profile/Vivek-Nagarajan-1"
+                },
+                {
+                    "user_id": "Rishabh Bhardwaj",
+                    "user_href": "/profile/Rishabh-Bhardwaj-28"
+                },
+                {
+                    "user_id": "Jeff Persons",
+                    "user_href": "/profile/\u30d1\u30fc\u30bd\u30f3\u30ba-\u30b8\u30a7\u30d5-Jeff-Persons"
+                },
+                {
+                    "user_id": "Josh Tustanowski",
+                    "user_href": "/profile/Josh-Tustanowski"
+                },
+                {
+                    "user_id": "Andac Unal",
+                    "user_href": "/profile/Andac-Unal"
+                },
+                {
+                    "user_id": "Kamesh Mullapudi",
+                    "user_href": "/profile/Kamesh-Mullapudi-2"
+                },
+                {
+                    "user_id": "Alonso Enero",
+                    "user_href": "/profile/Alonso-Enero"
+                }
+            ]
+        }
+    ]
+}

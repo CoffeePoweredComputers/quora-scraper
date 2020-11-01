@@ -1,0 +1,82 @@
+{
+    "title": "The Jordan curve theorem states, \u201cA simple closed curve C in the plane divides the plane into exactly two domains, an inside and an outside.\u201d Why isn't the Jordan curve theorem obviously true? - Quora",
+    "tags": [
+        "Jordan Curve Theorem",
+        "Topology",
+        "Theorems and Lemmas"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jake Januzelli",
+                "href": "/profile/Jake-Januzelli"
+            },
+            "answer_text": "One answer might be that when you picture a simple closed curve, you are picturing a super nice simple closed curve. For example, when you picture a simple closed curve it might look something like this:  Or this:  But what about this?  Although you can\u2019t see from the picture, this last example is a very very badly behaved curve called the Koch Snowflake. It is a fractal that is nowhere differentiable. In fact, your intuition is right. It is quite easy to prove the Jordan Curve Theorem for piecewise [math]C^1[/math] curves, like the first two examples. Where our intuition breaks down is when we try and extend that same technique to all examples, especially things that we don\u2019t normally think of when told to imagine a simple closed curve. Edit: As Senia Sheydvasser pointed out in the comments, even the Koch snowflake is a relatively tame example of a curve where our intuition breaks down. The Peano curve (Peano curve - Wikipedia) is much much worse: it is a space filling curve. ",
+            "date": "Answered May 30, 2017",
+            "views": "9",
+            "upvotes": " View 148 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Anton Fahlgren",
+                    "user_href": "/profile/Anton-Fahlgren-2"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Deniz \u015eu\u00f6zer",
+                    "user_href": "/profile/Deniz-\u015eu\u00f6zer-1"
+                },
+                {
+                    "user_id": "Marcus Kreider",
+                    "user_href": "/profile/Marcus-Kreider"
+                },
+                {
+                    "user_id": "Prakhar Pratyush",
+                    "user_href": "/profile/Prakhar-Pratyush-3"
+                },
+                {
+                    "user_id": "Jingchuan Shi",
+                    "user_href": "/profile/Jingchuan-Shi"
+                },
+                {
+                    "user_id": "Noah Asaria",
+                    "user_href": "/profile/Noah-Asaria-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Webb",
+                "href": "/profile/Peter-Webb-9"
+            },
+            "answer_text": "Allow me to commend you first on your reading material; I also first read about the Jordan curve theorem from this same classic text. The problem is that many, many things that are obviously true in mathematics turn out to be false. Here are things which mathematicians at various times have thought obviously true:  All real numbers can be expressed in the form p/q where p and q are integers.-1 has no square rootThere is only type of infinityAn infinite series where successive terms are strictly decreasing to zero must have a finite sum.You can choose a single member of any infinite set.About a billion fixed point theorems, see the \"Illustrations\" section of Brouwer fixed-point theorem And many others. An intuition is not a proof. Its not even evidence that an idea may be correct.The proof given in \"What is mathematics\" (1969 edition!) on page 267 relies on an understanding of continuity and limits; in a sense it has to, because these are the building blocks of the Real line and hence curves in two dimensional space. The proof is quite simple if you understand these concepts reasonably well. And much better than \"intuition\". ",
+            "date": "Answered September 8, 2015",
+            "views": "904",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Tung",
+                    "user_href": "/profile/David-Tung"
+                },
+                {
+                    "user_id": "Thang Duong",
+                    "user_href": "/profile/Thang-Duong"
+                }
+            ]
+        }
+    ]
+}

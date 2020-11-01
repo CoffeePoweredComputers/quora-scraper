@@ -1,0 +1,92 @@
+{
+    "title": "What's the best place to learn React.js? - Quora",
+    "tags": [
+        "React (JavaScript library)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jeremy Schifeling",
+                "href": "/profile/Jeremy-Schifeling"
+            },
+            "answer_text": "I want to focus on the \u201clearn\u201d part of your question. Because as a former teacher, I think a lot about how humans actually acquire new information - at least until we can download data straight into our cortices\u2026 :)  Thus, while there are lots of great comments here about the different content you should focus on, those points are moot if the content isn\u2019t delivered to you in a way that\u2019s motivating and easy to grok. So ask yourself the following questions: Am I good at learning a new topic just by reading about it?Am I good at learning a new topic just by watching videos about it?If you can honestly answer \u201cYes\u201d to either, then pretty much any site will do. But if you\u2019re like most mere mortals, you may need a little more support in order to reach your peak learning state. Just think about the best teacher you\u2019ve ever had - how they pushed you, supported you, and drove you to be your best - and you\u2019ll quickly realize that content had almost nothing to do with your success. Which is why Udacity just launched a React Nanodegree that goes beyond pure content to focus on how many humans learn best: Humans learn best by doing - not just reading/watching - so there are projects at each step along the wayHumans learn best through expert feedback (check out the literature on deliberate practice) - so you get code reviews from React pros on every submissionHumans learn best with social support - so you\u2019ve got a mentor with you throughout the programHumans learn best with a clear goal - so you\u2019ve got career coaching to help you connect what you learn into a job you\u2019re excited aboutSo if that sounds like the way that you learn best, check it out by the enrollment deadline on June 27: React Nanodegree | Udacity Disclosure: I recently joined Udacity after running my own tech career coaching biz since I believe so strongly in their pedagogical model. But I don\u2019t work on the React team. ",
+            "date": "Answered June 23, 2017",
+            "views": "99",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Neslihan Y\u0131ld\u0131z",
+                    "user_href": "/profile/Neslihan-Y\u0131ld\u0131z-3"
+                },
+                {
+                    "user_id": "Ronak Patel",
+                    "user_href": "/profile/Ronak-Patel-994"
+                },
+                {
+                    "user_id": "Nikhil Chauhan",
+                    "user_href": "/profile/Nikhil-Chauhan-93"
+                },
+                {
+                    "user_id": "Delyan Raychev",
+                    "user_href": "/profile/Delyan-Raychev-1"
+                },
+                {
+                    "user_id": "Bhanu Prathap",
+                    "user_href": "/profile/Bhanu-Prathap-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Samer Buna",
+                "href": "/profile/Samer-Buna"
+            },
+            "answer_text": "Update: I turned this answer into a Medium blog post with a few minor changes, So you want to learn React.js? Original Answer: First, make peace with the fact that you need to learn more than just React to work with React. This is a good thing, React is a library that does one thing really well, but it\u2019s not the answer to everything. However, identify whether what you\u2019re currently learning is React or not, mainly so that you don\u2019t get confused about your effort to learn React itself. A programmer who is comfortable with HTML and one other programming language will be able to pick 100% of React in 1 day or less. A beginner programmer should be good enough with React in a about a week. This is not counting the tools and other libraries that complete React like for example, Redux. There is an important question about the order with which you need to learn things. This order would vary based on what skills you have. It goes without saying that you need a solid understanding of JavaScript itself first, and of course, HTML as well. I like to be specific about this here, so if you don\u2019t know how to map or reduce an array, or if you don\u2019t understand the concept of closures and callbacks, or if seeing \u201cthis\u201d in JavaScript code confuses you, you\u2019re not ready for React and you still have a lot to do in JavaScript land. Refreshing your knowledge on JavaScript first would not hurt, specially because you need to learn ES2015, not because React depends on it (it does not), but because it\u2019s a much better language, and most of the examples, courses, and tutorials you\u2019ll find use ES2015 syntax. Specifically, you need to learn the following: The new features of the object literal and template stringsBlock scopes and let/const vs varArrow functionsDestructuring and default/rest/spread.Classes and inheritance (used slightly in defining component, but avoided otherwise)Imports and exports of modules (most important of all)You don\u2019t have to start with ES2015, but you do need to eventually learn it (and not because you\u2019re learning React). So other than ES2015 stuff, you need to learn the following to be a productive React developer. The APIs of React, ReactDOM, ReactDOMServer: These are not big APIs really, we\u2019re talking about maybe 25 different things and you would rarely use them all. The documentation about them is readable but not the best place to start. Watch an online course, read a book, or join a focused workshop. Your options are endless here, but be careful what you pick and make sure it has a focus on React itself and not its tools and ecosystem.node and npm: the reason you need to learn those (for React), is because there are a ton of tools that are hosted at npmjs.org that would make your life easy. Also, since Node allows you to execute JavaScript on your servers, you can re-use your front-end React code on the server (Isomorphic/Universal applications). Mostly, what you\u2019ll find valuable with node and npm is working with module bundlers like webpack, this is much more important when you\u2019re writing a big application, but you will need at least one tool to work with JSX (ignore the advice that JSX is optional.) Learn JSX and use it. The recommended tool is Babel.jsReact ecosystem libraries: Since React is just the UI language, you\u2019ll need tools to complete the picture and go beyond even MVC. Don\u2019t start here until you\u2019re very comfortable with React itself. I\u2019ll give you 2 things to focus on, just forget everything else you encounter and learn these 2 in order first once you\u2019re done with React itself: react-router and redux.During your learning process, the best thing you can possibly do is build stuff with your own hands. don\u2019t copy paste examples, don\u2019t follow instructions blindly, but rather, mirror the instructions to build something else (ideally, something you care more about). Whatever you do, just do not build a TODOs app I find building simple games to demonstrate the ideas of React much better than starting with data-driven serious web applications. That\u2019s why in my Getting started with React.js course, I focus on building a simple game. I\u2019ve also build a different game in my React.js Succinctly book which you can read for free. Try to implement other similar games in a JavaScript playground like that, it\u2019s a good start, you don\u2019t need a server, and you don\u2019t need to manage a crazy state. Good luck and have fun! If you ask nicely, I\u2019ll be happy to review your first React application and give you some pointers. ",
+            "date": "Updated February 23, 2017",
+            "views": "1221",
+            "upvotes": " View 242 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Prashant Kumar Chugh",
+                    "user_href": "/profile/Prashant-Kumar-Chugh"
+                },
+                {
+                    "user_id": "Sonali Gupta",
+                    "user_href": "/profile/Sonali-Gupta-639"
+                },
+                {
+                    "user_id": "Kushagra Gupta",
+                    "user_href": "/profile/Kushagra-Gupta-18"
+                },
+                {
+                    "user_id": "Vi\u1ec7t \u0110\u1eb7ng",
+                    "user_href": "/profile/Vi\u1ec7t-\u0110\u1eb7ng-1"
+                },
+                {
+                    "user_id": "Nishigandha Bhor",
+                    "user_href": "/profile/Nishigandha-Bhor"
+                },
+                {
+                    "user_id": "Utkarsh Gupta",
+                    "user_href": "/profile/Utkarsh-Gupta-226"
+                },
+                {
+                    "user_id": "Dilip Pro",
+                    "user_href": "/profile/Dilip-Pro"
+                },
+                {
+                    "user_id": "Sai Krishnam Raju",
+                    "user_href": "/profile/Sai-Krishnam-Raju-1"
+                },
+                {
+                    "user_id": "Anik Dey Shaon",
+                    "user_href": "/profile/Anik-Dey-Shaon"
+                },
+                {
+                    "user_id": "Pretheesh G Presannan",
+                    "user_href": "/profile/Pretheesh-G-Presannan"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+{
+    "title": "What is the easiest way to factor a cubic polynomial? - Quora",
+    "tags": [
+        "Polynomials",
+        "Polynomial Functions",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Goldsmith",
+                "href": "/profile/David-Goldsmith-9"
+            },
+            "answer_text": "Sorry, there is no \"easy\" way to precisely and completely factor an arbitrary cubic polynomial, though, over the complex numbers, this task is always theoretically possible; there is a way that \"always works\"\u2014use the algorithm for finding the exact zeros of the polynomial and then use the fact that if [math]r[/math] is a root, then [math](x-r)[/math] is a factor\u2014but few if any would describe that algorithm as \"easy.\" However, if approximations are good enough, the following is comparatively \"easy\": use a graphing calculator to estimate, to desired precision, as many of the real zeros as the graph indicates the polynomial possesses (a real coefficient cubic always has at least one such), then use the fact stated above to write the approximate factor(s) this information implies; if the graph indicates three zeros and you've approximated them all, you're done; if the graph indicates two zeros, one of them will be a point where the graph of the cubic is tangent to the [math]x[/math]-axis, and this zero will have a multiplicity of two, meaning it's factor will be squared; finally, if there's only one real zero, write the corresponding linear binomial factor and use an algorithm, e.g., long-division, synthetic division, or trial-and-error, to find the other, necessarily-quadratic factor, find its (complex) roots using the quadratic formula, and these two (approximate) roots will give you your other two factors. Again, I emphasize that these will be only approximations, but you should be able to get pretty precise such w/ today's graphing calculators. Of course, this assumes all real coefficients\u2014if even one of the coefficients is complex, you pretty much just have the cubic solutions algorithm to obtain the zeros you need to get the factors. HTH. ",
+            "date": "Answered November 16, 2018",
+            "views": "122",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "Stephen Forrest",
+                    "user_href": "/profile/Stephen-Forrest"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Erik Anson",
+                "href": "/profile/Erik-Anson"
+            },
+            "answer_text": "One useful thing to note is that irrational solutions to polynomials always come in pairs. So, if you have a cubic, at least one of the solutions must be rational!* So, we can do the following. Factor out anything that\u2019s a common factor of all of the terms. If this includes one or more factors of [math]x[/math], i.e., if your cubic has no constant term, then you\u2019re left with a quadratic or lower and your life just got easier (you can skip to step 4).Use the Rational root theorem to narrow the set of possible rational solutions down to a finite list (plus or minus some factor of the constant term divided by some factor of the leading coefficient).Try to guess something from that list that looks reasonable, and use Synthetic division to test it. If it doesn\u2019t work, guess again. If it does, you\u2019ve just found a factor, and you\u2019re down to factoring a quadratic. Because you got down to a finite list of options in step 2, this will always work eventually.Factor the quadratic however you like (there are lots of methods). If all else fails, use the Quadratic Formula to find the roots, and use the fact that if [math]a[/math] is a root then [math](x-a)[/math] is a factor.There is, of course, a \u201cCubic Formula\u201d, which is similar to the Quadratic Formula but much more annoying to have to memorize and use. Still, if you prefer that to what I wrote above, then go for it.  * Edit: as pointed out in the comments, this isn\u2019t actually true. Sorry about that! I must have remembered something incorrectly. I still recommend using the Rational Root Theorem where applicable, but it\u2019s less of a slam dunk than I made it seem. Alas! ",
+            "date": "Updated November 25, 2019",
+            "views": "107",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tom Tarabay Mitchell",
+                    "user_href": "/profile/Tom-Tarabay-Mitchell"
+                },
+                {
+                    "user_id": "Viren Razdan",
+                    "user_href": "/profile/Viren-Razdan-2"
+                },
+                {
+                    "user_id": "Saipriya P",
+                    "user_href": "/profile/Saipriya-P"
+                },
+                {
+                    "user_id": "Rashmi Singh",
+                    "user_href": "/profile/Rashmi-Singh-1077"
+                },
+                {
+                    "user_id": "Abhishek Sharma",
+                    "user_href": "/profile/Abhishek-Sharma-4047"
+                },
+                {
+                    "user_id": "Neeraj Ramkumar",
+                    "user_href": "/profile/Neeraj-Ramkumar"
+                },
+                {
+                    "user_id": "Ahmad Mbark",
+                    "user_href": "/profile/Ahmad-Mbark"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                }
+            ]
+        }
+    ]
+}

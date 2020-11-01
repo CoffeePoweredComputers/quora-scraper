@@ -1,0 +1,1480 @@
+{
+    "title": "What is the difference between a pseudo random number and a truly random number? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Randomness (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jo van Schalkwyk",
+                "href": "/profile/Jo-van-Schalkwyk"
+            },
+            "answer_text": "Several good answers already that mostly boil down to: If you\u2019re looking for apparent randomness, a good quality pseudorandom number generator will serve you well unless you\u2019re doing cryptography. For \u2018good quality\u2019 you want something based on e.g. the Mersenne Twister. This is the basis of many current PRNGs. These are deterministic. Changing the seed changes the starting point\u2014but they\u2019re still completely predictable. Use of these for cryptography will utterly compromise your system.If you want truly* random, your choices are limited. Useful options are:Obtaining noise from an electronic circuitBackground noise (e.g. radio noise**)Radioactive decay (usually an expensive option).***Of these, the first is perhaps the most useful. Some modern processors have a built-in random noise generator based on this principle, but if you don\u2019t have access to this, here\u2019s a practical circuit that\u2019s easy to build.  The basic idea is that the reverse-biased Zener diode (1N5235 or similar) provides the noise, which is amplified. (Disclaimer: if you break your PC or the circuit doesn\u2019t work, that\u2019s your responsibility. I provide no guarantees whatsoever. Remember to put the electrolytic caps in the right way around :) If you have some vague skill with electronics, you should be able to breadboard it, plug in a 9V battery, and read the voltage on Vout using the microphone socket of your PC. This is the sort of noise spectrum you\u2019ll get:  The circuit is designed so the noise tapers off above about 20kHz. On your PC you should be able to select the microphone as the source, and listen to the resulting white noise. To actually capture the data, in Linux you might say something like: arecord -f S16_LE -r8000 |od -N1024 -An -j44 -t d2 \u00a0The noise will be normally distributed and likely have an offset bias. Have fun! My 2c, Jo.  *Okay, some determinists will argue that nothing is random. For practical purposes, their blathering can almost be used as a source of entropy :) **There\u2019s a widespread story that some of the noise you get on an old-fashioned TV comes from cosmic background microwave radiation. Claims abound (e.g. Origins: CERN: Ideas: The Big Bang | Exploratorium) but here are some calculations (it\u2019s likely very tiny). ***There are some online sources (mostly broken) but you do have to ask \u201cWho is listening\u201d if you use these for cryptography. You can obtain some \u2018true randomness\u2019 from generators in your operating system, but be very careful, as the entropy of these sources may be limited (among other problems). In Linux, try playing with: cat /dev/urandom | aplay\u00a0",
+            "date": "Answered April 6, 2018",
+            "views": "33",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jan Bours",
+                    "user_href": "/profile/Jan-Bours-1"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Gaurav Maheshwari",
+                    "user_href": "/profile/Gaurav-Maheshwari-11"
+                },
+                {
+                    "user_id": "Steven J Owens",
+                    "user_href": "/profile/Steven-J-Owens"
+                },
+                {
+                    "user_id": "Vivienne Marcus",
+                    "user_href": "/profile/Vivienne-Marcus"
+                },
+                {
+                    "user_id": "Michael Penn",
+                    "user_href": "/profile/Michael-Penn-12"
+                },
+                {
+                    "user_id": "Jared Bryan Espiritu",
+                    "user_href": "/profile/Jared-Bryan-Espiritu"
+                },
+                {
+                    "user_id": "Mohamed Hassan",
+                    "user_href": "/profile/Mohamed-Hassan-840"
+                },
+                {
+                    "user_id": "Vikas Dubey",
+                    "user_href": "/profile/\u0bb5\u0bbf\u0b95\u0bbe\u0bb8\u0bcd-\u0ba4\u0bc1\u0baa\u0bc7\u0baf\u0bcd-Vikas-Dubey"
+                },
+                {
+                    "user_id": "Mike Mo",
+                    "user_href": "/profile/Mike-Mo-16"
+                },
+                {
+                    "user_id": "Rod Rishworth",
+                    "user_href": "/profile/Rod-Rishworth"
+                },
+                {
+                    "user_id": "Steve Durbin",
+                    "user_href": "/profile/Steve-Durbin"
+                },
+                {
+                    "user_id": "Drew Smith",
+                    "user_href": "/profile/Drew-Smith-48"
+                },
+                {
+                    "user_id": "Ammar Abu-Yasein",
+                    "user_href": "/profile/Ammar-Abu-Yasein"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mikko Kotila",
+                "href": "/profile/Mikko-Kotila-1"
+            },
+            "answer_text": "First some relevant terminology. There are basically four categories of random numbers: Pseudo randomRegularCryptographically SecureQuasi random (e.g. Sobol and Halton sequences)True randomQuantum randomThe first distinction to make here is between \u201ctrue\u201d and \u201ctruly\u201d random. Whereas \u201ctrue\u201d refers to a type of randomness, \u201ctruly\u201d refers to a state which is perfectly random. One might argue that true and quantum random are somewhat the same thing, but in this categorization quantum refers to a method that implements some form of quantum mechanical contraption to produce the states. In each of these examples, an element of observation is present and therefore none can be consider as \u201ctruly\u201d random. Observation (i.e. identifying a given state) implies affecting the outcome, whereas whatever comes out can\u2019t be random. For example, when we setup a given experiment (instead of some other experiment) to produce true random numbers (e.g. in the style of True Random Number Service), we will get certain kind of output because we decided to use that method. Randomness is a riddle of a sort; once you say random, it can no longer be random. The fact that we are pointing out something limits it from being random, because there is a sense of determinism in us pointing something out.  Research focused on randomness can be described as trying to climb a steep hill that is covered in ice. You might think that you have a strong foothold or grip, but the moment you try to move, you find out that you didn\u2019t ",
+            "date": "Answered October 4, 2018",
+            "views": "19",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Aditya",
+                    "user_href": "/profile/Aditya-809"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Baker",
+                "href": "/profile/Steve-Baker-100"
+            },
+            "answer_text": "It depends on the situation\u2026here are three examples: If you\u2019re writing a video game and you want to decide whether the bad guy shoots and hits the player or shoots and misses or doesn\u2019t shoot at all - then a pseudo-random number is just fine. Nobody really cares whether it\u2019s statistically valid or not - and (typically) you can generate a pseudo-random number much more rapidly than a truly random number. So for this use-case, either would work - but pseudo-random is faster, so that\u2019s what we do.If you\u2019re writing a physics simulation - then you might want good quality pseudo-random numbers - but you don\u2019t want TRUE randomness because you may want to re-run the simulation with slightly different conditions but with the same exact random numbers. So in this case, you REALLY want pseudo-randomness and true random numbers would be a terrible choice.If you\u2019re writing a security package where random numbers are used to generate software locks and keys - then pseudo-random numbers are a bad idea because the bad guy might be able to figure out what key you\u2019re going to generate next by observing the past few keys that you generated. So in this case, you definitely want true randomness if you can get it.So it all depends on the situation. In many cases, a hybrid approach may be desirable - so in our video game example, we may want to ensure that each time you play the same \u201cmission\u201d, the bad guy hits or misses differently every time you play. In that case, you might want to use a truly random number to \u201cseed\u201d the pseudo-random number generator. For example, you might read the real time clock chip - which maybe tells you something like the number of milliseconds that have elapsed since the computer was rebooted. Taking the low order digits of that huge number gives you something that\u2019s (essentially) a truly random number so long as you only use it once when the program was started. That kicks off the sequence of numbers that the pseudo-random generator produces - so the game plays out differently every time. I almost always do this in games that I write. Even in situations where true randomness is really needed - you might decide to save some compute cycles by re-seeding the pseudo-random number generator with true randomness every few seconds or something. That might be \u201cgood enough\u201d in some circumstances - or a terrible choice in others. There are also situations (such as in the \u201cGPU\u201d on your graphics card) where no source of true randomness is available - even in principle\u2026so pseudo-random ends up being the only game in town. ",
+            "date": "Answered April 5, 2018",
+            "views": "91",
+            "upvotes": " View 54 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Anam Arooj",
+                    "user_href": "/profile/Anam-Arooj"
+                },
+                {
+                    "user_id": "Gabriel Florentin Balaban",
+                    "user_href": "/profile/Gabriel-Florentin-Balaban"
+                },
+                {
+                    "user_id": "Tessy Joseph",
+                    "user_href": "/profile/Tessy-Joseph-1"
+                },
+                {
+                    "user_id": "Maximiliano Di Rienzo",
+                    "user_href": "/profile/Maximiliano-Di-Rienzo"
+                },
+                {
+                    "user_id": "Alfredo Miranda",
+                    "user_href": "/profile/Alfredo-Miranda-2"
+                },
+                {
+                    "user_id": "Adriano Gaved",
+                    "user_href": "/profile/Adriano-Gaved"
+                },
+                {
+                    "user_id": "Niko Knop",
+                    "user_href": "/profile/Niko-Knop"
+                },
+                {
+                    "user_id": "James Bennett",
+                    "user_href": "/profile/James-Bennett-267"
+                },
+                {
+                    "user_id": "Dinesh Yalavarthy",
+                    "user_href": "/profile/Dinesh-Yalavarthy"
+                },
+                {
+                    "user_id": "Aabhas Asawa",
+                    "user_href": "/profile/Aabhas-Asawa"
+                },
+                {
+                    "user_id": "Shiv Krishna Jaiswal",
+                    "user_href": "/profile/Shiv-Krishna-Jaiswal"
+                },
+                {
+                    "user_id": "Israel Gomez",
+                    "user_href": "/profile/Israel-Gomez-7"
+                },
+                {
+                    "user_id": "Martin Hogbin",
+                    "user_href": "/profile/Martin-Hogbin"
+                },
+                {
+                    "user_id": "Armand Klein",
+                    "user_href": "/profile/Armand-Klein"
+                },
+                {
+                    "user_id": "Aakash Agarwal",
+                    "user_href": "/profile/Aakash-Agarwal-12"
+                },
+                {
+                    "user_id": "Luis Lasch",
+                    "user_href": "/profile/Luis-Lasch"
+                },
+                {
+                    "user_id": "Mottakin Chowdhury",
+                    "user_href": "/profile/Mottakin-Chowdhury"
+                },
+                {
+                    "user_id": "Pratyush Ghosh",
+                    "user_href": "/profile/Pratyush-Ghosh"
+                },
+                {
+                    "user_id": "Iain Shepherd",
+                    "user_href": "/profile/Iain-Shepherd-2"
+                },
+                {
+                    "user_id": "Vignesh Nageswaran",
+                    "user_href": "/profile/Vignesh-Nageswaran"
+                },
+                {
+                    "user_id": "Sivaraman Lakshmipathy",
+                    "user_href": "/profile/Sivaraman-Lakshmipathy"
+                },
+                {
+                    "user_id": "William Qin",
+                    "user_href": "/profile/William-Qin-10"
+                },
+                {
+                    "user_id": "Pratheesh Rani Prakash",
+                    "user_href": "/profile/Pratheesh-Rani-Prakash"
+                },
+                {
+                    "user_id": "Kaustubh Gupta",
+                    "user_href": "/profile/Kaustubh-Gupta-17"
+                },
+                {
+                    "user_id": "Adam Banda",
+                    "user_href": "/profile/Adam-Banda-1"
+                },
+                {
+                    "user_id": "Ajay KRB",
+                    "user_href": "/profile/Ajay-KRB"
+                },
+                {
+                    "user_id": "Jason Cobb",
+                    "user_href": "/profile/Jason-Cobb-12"
+                },
+                {
+                    "user_id": "Manos Angelis",
+                    "user_href": "/profile/Manos-Angelis-1"
+                },
+                {
+                    "user_id": "Jayant Shivarajan",
+                    "user_href": "/profile/Jayant-Shivarajan"
+                },
+                {
+                    "user_id": "Prasad Kulkarni",
+                    "user_href": "/profile/Prasad-Kulkarni-21"
+                },
+                {
+                    "user_id": "Jim Zubov",
+                    "user_href": "/profile/Jim-Zubov"
+                },
+                {
+                    "user_id": "Mark Baldwin",
+                    "user_href": "/profile/Mark-Baldwin-23"
+                },
+                {
+                    "user_id": "Boris Gutman",
+                    "user_href": "/profile/Boris-Gutman"
+                },
+                {
+                    "user_id": "Gerard van Wilgen",
+                    "user_href": "/profile/Gerard-van-Wilgen"
+                },
+                {
+                    "user_id": "Jonatan Sundqvist",
+                    "user_href": "/profile/Jonatan-Sundqvist-1"
+                },
+                {
+                    "user_id": "Robbert Nix",
+                    "user_href": "/profile/Robbert-Nix"
+                },
+                {
+                    "user_id": "Jo van Schalkwyk",
+                    "user_href": "/profile/Jo-van-Schalkwyk"
+                },
+                {
+                    "user_id": "Dmitry Shapovalov",
+                    "user_href": "/profile/Dmitry-Shapovalov-4"
+                },
+                {
+                    "user_id": "Jaz Singh",
+                    "user_href": "/profile/Jaz-Singh-4"
+                },
+                {
+                    "user_id": "Irakli Khaduri",
+                    "user_href": "/profile/Irakli-Khaduri-1"
+                },
+                {
+                    "user_id": "Kunal Vichare",
+                    "user_href": "/profile/Kunal-Vichare"
+                },
+                {
+                    "user_id": "Ashutosh Srivastav",
+                    "user_href": "/profile/Ashutosh-Srivastav-5"
+                },
+                {
+                    "user_id": "Patrick Gono",
+                    "user_href": "/profile/Patrick-Gono"
+                },
+                {
+                    "user_id": "Mukundhan",
+                    "user_href": "/profile/Mukundhan"
+                },
+                {
+                    "user_id": "Ankit Barsainya",
+                    "user_href": "/profile/Ankit-Barsainya"
+                },
+                {
+                    "user_id": "Jef Pauwels",
+                    "user_href": "/profile/Jef-Pauwels-2"
+                },
+                {
+                    "user_id": "Harri K. Hiltunen",
+                    "user_href": "/profile/Harri-K-Hiltunen"
+                },
+                {
+                    "user_id": "Chuck Duby",
+                    "user_href": "/profile/Chuck-Duby"
+                },
+                {
+                    "user_id": "Marian Robert",
+                    "user_href": "/profile/Marian-Robert-1"
+                },
+                {
+                    "user_id": "Risheek Raj Srivastava",
+                    "user_href": "/profile/Risheek-Raj-Srivastava"
+                },
+                {
+                    "user_id": "Robert Adams",
+                    "user_href": "/profile/Robert-Adams-4"
+                },
+                {
+                    "user_id": "Kevin Troy",
+                    "user_href": "/profile/Kevin-Troy"
+                },
+                {
+                    "user_id": "Ramon Morales",
+                    "user_href": "/profile/Ramon-Morales-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Flom",
+                "href": "/profile/Peter-Flom"
+            },
+            "answer_text": "Pseudo random numbers are generated by computers using an algorithm (there are many) and a seed (either chosen by the user or, sometimes, clock time). They are not strictly random as, if you  start with the same seed and same algorithm, you  will get the same numbers. E.g. in R  set.seed(123) #Set the seedx <- runif(10,0,1) #1 uniform random numbers between 0 and 1x #10 numbers, appear random set.seed(123) #Set the seedx <- runif(10,0,1) #1 uniform random numbers between 0 and 1x #same as before but if you substitute () for (123) R will use the time as seed and get different streams. A truly random number, on the other hand, is completely unpredictable. I know of no way to generate a series of truly random numbers via computer; the usual ways are flipping coins, throwing darts, rolling dice and other physical processes. ",
+            "date": "Answered March 15, 2014",
+            "views": "102",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dima Miroshnichenko",
+                    "user_href": "/profile/Dima-Miroshnichenko-2"
+                },
+                {
+                    "user_id": "Sharadha Ramakrishnan",
+                    "user_href": "/profile/Sharadha-Ramakrishnan-1"
+                },
+                {
+                    "user_id": "Sambo Sisala",
+                    "user_href": "/profile/Sambo-Sisala"
+                },
+                {
+                    "user_id": "Peter Kirwan",
+                    "user_href": "/profile/Peter-Kirwan-6"
+                },
+                {
+                    "user_id": "Tazwar Utshas",
+                    "user_href": "/profile/Tazwar-Utshas"
+                },
+                {
+                    "user_id": "Suman Roy Ghatak",
+                    "user_href": "/profile/Suman-Roy-Ghatak"
+                },
+                {
+                    "user_id": "Jim Li",
+                    "user_href": "/profile/Jim-Li-10"
+                },
+                {
+                    "user_id": "Pooja Singh",
+                    "user_href": "/profile/Pooja-Singh-908"
+                },
+                {
+                    "user_id": "Shubham Agarwal",
+                    "user_href": "/profile/Shubham-Agarwal-13"
+                },
+                {
+                    "user_id": "Shantnu Gupta",
+                    "user_href": "/profile/Shantnu-Gupta-5"
+                },
+                {
+                    "user_id": "Ralph Winters",
+                    "user_href": "/profile/Ralph-Winters"
+                },
+                {
+                    "user_id": "Tanya Zyabkina",
+                    "user_href": "/profile/Tanya-Zyabkina"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                },
+                {
+                    "user_id": "Ayush Saraf",
+                    "user_href": "/profile/Ayush-Saraf"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robbie Hatley",
+                "href": "/profile/Robbie-Hatley"
+            },
+            "answer_text": "\u201cTrue random numbers\u201d are very, very hard to come by, especially if derived by computer programs, because computers are very predictable beasts, whereas randomness is all about unpredicability. \u201cPseudo-random numbers\u201d are just a computer program\u2019s attempt to generate numbers which are \u201cas random as feasible\u201d. For most apps (except, perhaps, for some areas in science or cryptography for which truly-random numbers are actually necessary), pseudo-random numbers work just fine for when randomness is required. But I recommend you seed the pseudo-random-number generator at the top of main(), using time(), otherwise your pseudo-random numbers will start off with the same sequence every time you run your program: // Randomly-seed pseudo-random-number generator:\u00a0srand((unsigned)time(NULL));\u00a0\u00a0// Get random number in 0.0 - 37.5 range:\u00a0double RanNum = 37.5 * (double)rand() / (double)RAND_MAX);\u00a0",
+            "date": "Answered April 3, 2018",
+            "views": "420",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chitra Shyam",
+                    "user_href": "/profile/Chitra-Shyam-2"
+                },
+                {
+                    "user_id": "James Barton",
+                    "user_href": "/profile/James-Barton-129"
+                },
+                {
+                    "user_id": "Arvind Gupta",
+                    "user_href": "/profile/Arvind-Gupta-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chandrima D",
+                "href": "/profile/Chandrima-D"
+            },
+            "answer_text": "Have you used the RAND() function in MS Excel? It does return a pseudo-random number, not an actual random number. Go through this MS Office\u2019s official website\u2019s description to know how the algorithm works for producing pseudo-random numbers using different seed values. This RAND() function returns [math]10^{13}[/math] different random numbers to us and after that we notice a repetition in the generated random numbers. The same sequence of random numbers will repeat after [math]10^{13}[/math] times. So, you can predict the future number from observation of this cycle. If it were truly random, then there were no pattern, no repetition. And you would not be able to predict the future numbers. Usually, when a data set is tested for its randomness, they are fed into a regression system and their [math]R^2[/math] value is checked. If [math]R^2[/math] value is very small, then there is no actual pattern being followed, and the set of data is considered as random. (But remember that the size of data set matters a lot in making a conclusion. The bigger the data set, more accurate will be the conclusion). ",
+            "date": "Updated November 15, 2018",
+            "views": "21",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aditya",
+                    "user_href": "/profile/Aditya-809"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "You can program a computer to produce a pseudorandom number between 1 and 100.  You'll get some number like 45. Perhaps you can construct some device which depends on radioactive decay or something else to produce a number at random between 1 and 100.  You'll get some number like 45. Aha! Insight. You see that it's not a single number than can be random or pseudorandom. So, we have to talk about random and pseudorandom something else.  For that, we can discuss infinite sequences, and it will do to make them bitstrings of 0's and 1's, such as  0010110101010010101011111010101000110101101010011... A pseudorandom number generator can produce a infinite sequence of bits like that, if, of course, we pretend it can run forever.  But it will be limited somehow, whereas a \"truly\" random bit sequence won't have such a limitation.  The entropy, or information, in a pseudorandom number generator is limited because the computer program is finite.  The Kolmogorov complexity of a finite string of bits is the shortest possible description of the string in some fixed language, such as a programming language.  The Kolmogorov complexity of the entire sequence of bits produced by a pseudorandom number is no longer than size of the program used to produce it. On the other hand, the Kolmogorov complexity of a truly random bit sequence can grow without bound as the sequence gets longer. ",
+            "date": "Answered March 15, 2014",
+            "views": "106",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Comet",
+                    "user_href": "/profile/Comet-7"
+                },
+                {
+                    "user_id": "Aditya",
+                    "user_href": "/profile/Aditya-809"
+                },
+                {
+                    "user_id": "Pelle Evensen",
+                    "user_href": "/profile/Pelle-Evensen"
+                },
+                {
+                    "user_id": "Hanna Nicholson",
+                    "user_href": "/profile/Hanna-Nicholson"
+                },
+                {
+                    "user_id": "Koncz Imre",
+                    "user_href": "/profile/Koncz-Imre"
+                },
+                {
+                    "user_id": "Alexandre Moreno",
+                    "user_href": "/profile/Alexandre-Moreno-1"
+                },
+                {
+                    "user_id": "Engin Girisgen",
+                    "user_href": "/profile/Engin-Girisgen"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                },
+                {
+                    "user_id": "Ayush Saraf",
+                    "user_href": "/profile/Ayush-Saraf"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michal Fori\u0161ek",
+                "href": "/profile/Michal-Fori\u0161ek"
+            },
+            "answer_text": " The difference is not in the number. A number is a number. By looking at a number you cannot tell how it was generated. The difference is in the statistical properties of a stream of numbers. We know the properties a stream of truly random values should have. A good pseudo-random number generator (PRNG) gives you a fast way to generate a stream of numbers that looks similar enough to a truly random stream in many statistical tests. Usually, PRNGs are actually deterministic and their outputs are periodic, but the period is so huge you'll never notice. For example, the most common version of the Mersenne twister PRNG has a period length of [math]2^{19937}-1[/math]. ",
+            "date": "Answered March 17, 2014",
+            "views": "318",
+            "upvotes": " View 158 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Stefano Marchetti",
+                    "user_href": "/profile/Stefano-Marchetti-5"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Michael Lamar",
+                    "user_href": "/profile/Michael-Lamar"
+                },
+                {
+                    "user_id": "Aman Raj",
+                    "user_href": "/profile/Aman-Raj-1282"
+                },
+                {
+                    "user_id": "Mahesh Jethalia",
+                    "user_href": "/profile/\u092e\u0939\u0947\u0936-\u091c\u0947\u0925\u0932\u093f\u092f\u093e-Mahesh-Jethalia"
+                },
+                {
+                    "user_id": "Necati Ergin",
+                    "user_href": "/profile/Necati-Ergin-1"
+                },
+                {
+                    "user_id": "Austin Farr",
+                    "user_href": "/profile/Austin-Farr-3"
+                },
+                {
+                    "user_id": "Tsung-Han Yu",
+                    "user_href": "/profile/Tsung-Han-Yu"
+                },
+                {
+                    "user_id": "Jainil Gosalia",
+                    "user_href": "/profile/Jainil-Gosalia"
+                },
+                {
+                    "user_id": "Boontawat Kumpiroj",
+                    "user_href": "/profile/Boontawat-Kumpiroj"
+                },
+                {
+                    "user_id": "Ahmed Adejumat",
+                    "user_href": "/profile/Ahmed-Adejumat"
+                },
+                {
+                    "user_id": "Tai Hang Fu",
+                    "user_href": "/profile/Tai-Hang-Fu"
+                },
+                {
+                    "user_id": "Piyush Khurana",
+                    "user_href": "/profile/Piyush-Khurana-13"
+                },
+                {
+                    "user_id": "Rare\u0219 Li\u021bescu",
+                    "user_href": "/profile/Rare\u0219-Li\u021bescu"
+                },
+                {
+                    "user_id": "Suraj Menon",
+                    "user_href": "/profile/Suraj-Menon-47"
+                },
+                {
+                    "user_id": "Jaume Balliu",
+                    "user_href": "/profile/Jaume-Balliu"
+                },
+                {
+                    "user_id": "Hanna Nicholson",
+                    "user_href": "/profile/Hanna-Nicholson"
+                },
+                {
+                    "user_id": "Amir Rahbaran",
+                    "user_href": "/profile/Amir-Rahbaran"
+                },
+                {
+                    "user_id": "Kevin Zheng",
+                    "user_href": "/profile/Kevin-Zheng-128"
+                },
+                {
+                    "user_id": "Mahathir Ahmad",
+                    "user_href": "/profile/Mahathir-Ahmad"
+                },
+                {
+                    "user_id": "Abhinav Maurya",
+                    "user_href": "/profile/Abhinav-Maurya"
+                },
+                {
+                    "user_id": "George Vasios",
+                    "user_href": "/profile/George-Vasios"
+                },
+                {
+                    "user_id": "Kajetan Zwieniecki",
+                    "user_href": "/profile/Kajetan-Zwieniecki"
+                },
+                {
+                    "user_id": "Kenneth Roy Cabrera Torres",
+                    "user_href": "/profile/Kenneth-Roy-Cabrera-Torres"
+                },
+                {
+                    "user_id": "Aseem Raina",
+                    "user_href": "/profile/Aseem-Raina-2"
+                },
+                {
+                    "user_id": "Ansh Khanna",
+                    "user_href": "/profile/Ansh-Khanna-1"
+                },
+                {
+                    "user_id": "Anjaneya Sastry K",
+                    "user_href": "/profile/Anjaneya-Sastry-K"
+                },
+                {
+                    "user_id": "Sean Van Der Merwe",
+                    "user_href": "/profile/Sean-Van-Der-Merwe"
+                },
+                {
+                    "user_id": "Mattia Branchini",
+                    "user_href": "/profile/Mattia-Branchini-1"
+                },
+                {
+                    "user_id": "Jonas Oberhauser",
+                    "user_href": "/profile/Jonas-Oberhauser"
+                },
+                {
+                    "user_id": "Rohit Sharma",
+                    "user_href": "/profile/Rohit-Sharma-719"
+                },
+                {
+                    "user_id": "Sidharth Samant",
+                    "user_href": "/profile/Sidharth-Samant"
+                },
+                {
+                    "user_id": "Al Simmons",
+                    "user_href": "/profile/Al-Simmons-27"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                },
+                {
+                    "user_id": "Zack Clement",
+                    "user_href": "/profile/Zack-Clement"
+                },
+                {
+                    "user_id": "Alexander Farrugia",
+                    "user_href": "/profile/Alexander-Farrugia"
+                },
+                {
+                    "user_id": "Aaron Yip",
+                    "user_href": "/profile/Aaron-Yip-2"
+                },
+                {
+                    "user_id": "Kishan Panaganti Badrinath",
+                    "user_href": "/profile/Kishan-Panaganti-Badrinath"
+                },
+                {
+                    "user_id": "Mateo Wirth",
+                    "user_href": "/profile/Mateo-Wirth"
+                },
+                {
+                    "user_id": "James Ryan",
+                    "user_href": "/profile/James-Ryan-164"
+                },
+                {
+                    "user_id": "Logan R. Kearsley",
+                    "user_href": "/profile/Logan-R-Kearsley"
+                },
+                {
+                    "user_id": "Nishat Ahmed",
+                    "user_href": "/profile/Nishat-Ahmed-32"
+                },
+                {
+                    "user_id": "Peter Hecht",
+                    "user_href": "/profile/Peter-Hecht-3"
+                },
+                {
+                    "user_id": "Kostis Gourgoulias",
+                    "user_href": "/profile/Kostis-Gourgoulias"
+                },
+                {
+                    "user_id": "John Phileas",
+                    "user_href": "/profile/John-Phileas"
+                },
+                {
+                    "user_id": "Roman Karpichev",
+                    "user_href": "/profile/Roman-Karpichev"
+                },
+                {
+                    "user_id": "Greenchu",
+                    "user_href": "/profile/Greenchu"
+                },
+                {
+                    "user_id": "Maryam Shamsi",
+                    "user_href": "/profile/Maryam-Shamsi"
+                },
+                {
+                    "user_id": "Kausik Subramanian",
+                    "user_href": "/profile/Kausik-Subramanian"
+                },
+                {
+                    "user_id": "Paras Avkirkar",
+                    "user_href": "/profile/Paras-Avkirkar"
+                },
+                {
+                    "user_id": "Ben Grant",
+                    "user_href": "/profile/Ben-Grant-17"
+                },
+                {
+                    "user_id": "Leung Ngai-Hang Zachary",
+                    "user_href": "/profile/Leung-Ngai-Hang-Zachary"
+                },
+                {
+                    "user_id": "Christian Howard",
+                    "user_href": "/profile/Christian-Howard-2"
+                },
+                {
+                    "user_id": "Alex Seewald",
+                    "user_href": "/profile/Alex-Seewald-1"
+                },
+                {
+                    "user_id": "Engin Girisgen",
+                    "user_href": "/profile/Engin-Girisgen"
+                },
+                {
+                    "user_id": "Radek Hendrych",
+                    "user_href": "/profile/Radek-Hendrych"
+                },
+                {
+                    "user_id": "Sritanu Chakraborty",
+                    "user_href": "/profile/Sritanu-Chakraborty"
+                },
+                {
+                    "user_id": "Vidhyalakshmi Kalaichelvan",
+                    "user_href": "/profile/Vidhyalakshmi-Kalaichelvan"
+                },
+                {
+                    "user_id": "Mohammad Solaiman",
+                    "user_href": "/profile/Mohammad-Solaiman"
+                },
+                {
+                    "user_id": "P\u00e5l Bergerskogen",
+                    "user_href": "/profile/P\u00e5l-Bergerskogen"
+                },
+                {
+                    "user_id": "Dana Jacobsen",
+                    "user_href": "/profile/Dana-Jacobsen"
+                },
+                {
+                    "user_id": "Tapasweni Pathak",
+                    "user_href": "/profile/Tapasweni-Pathak"
+                },
+                {
+                    "user_id": "Kiran Kannar",
+                    "user_href": "/profile/Kiran-Kannar"
+                },
+                {
+                    "user_id": "Daniel Linds\u00e4th",
+                    "user_href": "/profile/Daniel-Linds\u00e4th"
+                },
+                {
+                    "user_id": "Nu\u00f1o Sempere",
+                    "user_href": "/profile/Nu\u00f1o-Sempere"
+                },
+                {
+                    "user_id": "Carlos Federico Gaona",
+                    "user_href": "/profile/Carlos-Federico-Gaona-1"
+                },
+                {
+                    "user_id": "Sebastian Singer",
+                    "user_href": "/profile/Sebastian-Singer-1"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Sasha Sami",
+                    "user_href": "/profile/Sasha-Sami"
+                },
+                {
+                    "user_id": "Nitin Gupta",
+                    "user_href": "/profile/Nitin-Gupta-134"
+                },
+                {
+                    "user_id": "Niels Peter Rasmussen",
+                    "user_href": "/profile/Niels-Peter-Rasmussen"
+                },
+                {
+                    "user_id": "Sanjay Vinayak",
+                    "user_href": "/profile/Sanjay-Vinayak"
+                },
+                {
+                    "user_id": "Jainil Shah",
+                    "user_href": "/profile/Jainil-Shah-28"
+                },
+                {
+                    "user_id": "Deng Shao",
+                    "user_href": "/profile/Deng-Shao-2"
+                },
+                {
+                    "user_id": "Amiya Patanaik",
+                    "user_href": "/profile/Amiya-Patanaik"
+                },
+                {
+                    "user_id": "Sanat Anand",
+                    "user_href": "/profile/Sanat-Anand"
+                },
+                {
+                    "user_id": "Abdullah Mamun",
+                    "user_href": "/profile/Abdullah-Mamun-170"
+                },
+                {
+                    "user_id": "Corey Cole",
+                    "user_href": "/profile/Corey-Cole-1"
+                },
+                {
+                    "user_id": "Zane Jakobs",
+                    "user_href": "/profile/Zane-Jakobs"
+                },
+                {
+                    "user_id": "Sudarshan Konge",
+                    "user_href": "/profile/Sudarshan-Konge"
+                },
+                {
+                    "user_id": "Joe Smith",
+                    "user_href": "/profile/Joe-Smith-1350"
+                },
+                {
+                    "user_id": "Joel Lindegger",
+                    "user_href": "/profile/Joel-Lindegger"
+                },
+                {
+                    "user_id": "Yebraw Mada",
+                    "user_href": "/profile/Yebraw-Mada"
+                },
+                {
+                    "user_id": "Tim McGilly",
+                    "user_href": "/profile/Tim-McGilly"
+                },
+                {
+                    "user_id": "Divam Lehri",
+                    "user_href": "/profile/Divam-Lehri"
+                },
+                {
+                    "user_id": "Ryan Nguyen",
+                    "user_href": "/profile/Ryan-Nguyen-43"
+                },
+                {
+                    "user_id": "Brendan Burkhart",
+                    "user_href": "/profile/Brendan-Burkhart"
+                },
+                {
+                    "user_id": "Clint Dunn",
+                    "user_href": "/profile/Clint-Dunn"
+                },
+                {
+                    "user_id": "Cem Nurlu",
+                    "user_href": "/profile/Cem-Nurlu"
+                },
+                {
+                    "user_id": "Lamrini Younes",
+                    "user_href": "/profile/Lamrini-Younes"
+                },
+                {
+                    "user_id": "Pratik Chakrabarti",
+                    "user_href": "/profile/Pratik-Chakrabarti"
+                },
+                {
+                    "user_id": "Bhavit Sharma",
+                    "user_href": "/profile/Bhavit-Sharma-1"
+                },
+                {
+                    "user_id": "Kenneth Lo",
+                    "user_href": "/profile/Kenneth-Lo-14"
+                },
+                {
+                    "user_id": "Liam Woodward",
+                    "user_href": "/profile/Liam-Woodward-1"
+                },
+                {
+                    "user_id": "Nilanjana Lodh",
+                    "user_href": "/profile/Nilanjana-Lodh"
+                },
+                {
+                    "user_id": "Yiu-Loon Chui",
+                    "user_href": "/profile/Yiu-Loon-Chui-1"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Travis Brauer",
+                    "user_href": "/profile/Travis-Brauer"
+                },
+                {
+                    "user_id": "Adam Bla\u017eek",
+                    "user_href": "/profile/Adam-Bla\u017eek-2"
+                },
+                {
+                    "user_id": "Arun Soma",
+                    "user_href": "/profile/Arun-Soma"
+                },
+                {
+                    "user_id": "Rafael Korba\u0161",
+                    "user_href": "/profile/Rafael-Korba\u0161"
+                },
+                {
+                    "user_id": "Anveshi Shukla",
+                    "user_href": "/profile/Anveshi-Shukla"
+                },
+                {
+                    "user_id": "Davide Cossu",
+                    "user_href": "/profile/Davide-Cossu"
+                },
+                {
+                    "user_id": "Stephen Simon",
+                    "user_href": "/profile/Stephen-Simon-12"
+                },
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                },
+                {
+                    "user_id": "Sindhu Raghu",
+                    "user_href": "/profile/Sindhu-Raghu"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Ng David",
+                    "user_href": "/profile/Ng-David"
+                },
+                {
+                    "user_id": "Sumit Jha",
+                    "user_href": "/profile/Sumit-Jha-3"
+                },
+                {
+                    "user_id": "Sujeet Poudel",
+                    "user_href": "/profile/Sujeet-Poudel"
+                },
+                {
+                    "user_id": "Peter Kirby",
+                    "user_href": "/profile/Peter-Kirby-5"
+                },
+                {
+                    "user_id": "Alexis S\u00e1ez",
+                    "user_href": "/profile/Alexis-S\u00e1ez"
+                },
+                {
+                    "user_id": "Shubham Patil",
+                    "user_href": "/profile/Shubham-Patil-41"
+                },
+                {
+                    "user_id": "Mimansa Jaiswal",
+                    "user_href": "/profile/Mimansa-Jaiswal"
+                },
+                {
+                    "user_id": "Timothy Johnson",
+                    "user_href": "/profile/Timothy-Johnson-6"
+                },
+                {
+                    "user_id": "Jason Teoh",
+                    "user_href": "/profile/Jason-Teoh-7"
+                },
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Guy Verrijdt",
+                    "user_href": "/profile/Guy-Verrijdt"
+                },
+                {
+                    "user_id": "Gilles Castel",
+                    "user_href": "/profile/Gilles-Castel-1"
+                },
+                {
+                    "user_id": "Felipe Oliveira",
+                    "user_href": "/profile/Felipe-Oliveira-29"
+                },
+                {
+                    "user_id": "Shoumi Sarkar",
+                    "user_href": "/profile/Shoumi-Sarkar"
+                },
+                {
+                    "user_id": "Zach Nason",
+                    "user_href": "/profile/Zach-Nason"
+                },
+                {
+                    "user_id": "Ralph Winters",
+                    "user_href": "/profile/Ralph-Winters"
+                },
+                {
+                    "user_id": "Eddie Shim",
+                    "user_href": "/profile/Eddie-Shim"
+                },
+                {
+                    "user_id": "Rakesh Ranjan Sukla",
+                    "user_href": "/profile/Rakesh-Ranjan-Sukla"
+                },
+                {
+                    "user_id": "Adri\u00e1n Arellano Dav\u00edn",
+                    "user_href": "/profile/Adri\u00e1n-Arellano-Dav\u00edn"
+                },
+                {
+                    "user_id": "Robert Kaspar",
+                    "user_href": "/profile/Robert-Kaspar"
+                },
+                {
+                    "user_id": "AbdelHameed Hamed",
+                    "user_href": "/profile/AbdelHameed-Hamed"
+                },
+                {
+                    "user_id": "Ahmed Mohammed",
+                    "user_href": "/profile/Ahmed-Mohammed-11"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Zen Yan",
+                    "user_href": "/profile/Zen-Yan"
+                },
+                {
+                    "user_id": "Absher Rashid",
+                    "user_href": "/profile/Absher-Rashid"
+                },
+                {
+                    "user_id": "Balajiganapathi Senthilnathan",
+                    "user_href": "/profile/Balajiganapathi-Senthilnathan"
+                },
+                {
+                    "user_id": "Nikhil Kishore",
+                    "user_href": "/profile/Nikhil-Kishore-1"
+                },
+                {
+                    "user_id": "Kashish Jagga",
+                    "user_href": "/profile/Kashish-Jagga"
+                },
+                {
+                    "user_id": "Gerard Blais",
+                    "user_href": "/profile/Gerard-Blais"
+                },
+                {
+                    "user_id": "Gaurav Pathak",
+                    "user_href": "/profile/Gaurav-Pathak-18"
+                },
+                {
+                    "user_id": "Paul Bates",
+                    "user_href": "/profile/Paul-Bates-11"
+                },
+                {
+                    "user_id": "Jason He",
+                    "user_href": "/profile/Jason-He"
+                },
+                {
+                    "user_id": "Aawaz Pokhrel",
+                    "user_href": "/profile/Aawaz-Pokhrel"
+                },
+                {
+                    "user_id": "Hendrik Brackmann",
+                    "user_href": "/profile/Hendrik-Brackmann"
+                },
+                {
+                    "user_id": "Riley Matthews",
+                    "user_href": "/profile/Riley-Matthews"
+                },
+                {
+                    "user_id": "Ricardo Monti",
+                    "user_href": "/profile/Ricardo-Monti"
+                },
+                {
+                    "user_id": "Luca Biffi",
+                    "user_href": "/profile/Luca-Biffi"
+                },
+                {
+                    "user_id": "Geir Gunnarsson",
+                    "user_href": "/profile/Geir-Gunnarsson"
+                },
+                {
+                    "user_id": "Adam Merberg",
+                    "user_href": "/profile/Adam-Merberg"
+                },
+                {
+                    "user_id": "Raja Sriram",
+                    "user_href": "/profile/Raja-Sriram"
+                },
+                {
+                    "user_id": "Ratul Saha",
+                    "user_href": "/profile/Ratul-Saha"
+                },
+                {
+                    "user_id": "Varun Appaswami",
+                    "user_href": "/profile/Varun-Appaswami"
+                },
+                {
+                    "user_id": "Swati Jha",
+                    "user_href": "/profile/Swati-Jha-4"
+                },
+                {
+                    "user_id": "Filipe Ferminiano",
+                    "user_href": "/profile/Filipe-Ferminiano"
+                },
+                {
+                    "user_id": "Brian Bi",
+                    "user_href": "/profile/Brian-Bi"
+                },
+                {
+                    "user_id": "David Hu",
+                    "user_href": "/profile/David-Hu-18"
+                },
+                {
+                    "user_id": "Naman Aggarwal",
+                    "user_href": "/profile/Naman-Aggarwal-1"
+                },
+                {
+                    "user_id": "Luk\u00e1\u0161 Pol\u00e1\u010dek",
+                    "user_href": "/profile/Luk\u00e1\u0161-Pol\u00e1\u010dek"
+                },
+                {
+                    "user_id": "Ayush Saraf",
+                    "user_href": "/profile/Ayush-Saraf"
+                },
+                {
+                    "user_id": "Nikhil Garg",
+                    "user_href": "/profile/Nikhil-Garg"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Clancy Merrick",
+                "href": "/profile/Clancy-Merrick"
+            },
+            "answer_text": "In practice it is quite clear: truly random number generators do not exist but pseudo random number generators most certainly do exist. In theory, a truly random number generator would produce a series of truly random numbers. The problem is that we don\u2019t know that such numbers actually exist or can be generated. To generate them implies some knowledge of what it is to be truly random which is self-defeating as this knowledge would negate their truly random status. In theory, with pseudo random number generators, it would always be possible to predict the next number with sufficient knowledge of the generation algorithm. Nothing that has ever happened has been shown without doubt to be truly random. And while some still claim today that certain phenomena are indeed truly random, it is impossible to prove this without self negation. ",
+            "date": "Answered May 31, 2019",
+            "views": "646",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Uddipta Sarma",
+                    "user_href": "/profile/Uddipta-Sarma"
+                },
+                {
+                    "user_id": "William Hutton",
+                    "user_href": "/profile/William-Hutton-19"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Franklin Veaux",
+                "href": "/profile/Franklin-Veaux"
+            },
+            "answer_text": "Any arbitrary-length sequence of pseudorandom numbers can always be replicated and predicted if you know the RNG being used and you know the initial state. A sequence of true random numbers can\u2019t be predicted or repeated. This matters if it\u2019s really really important that your random numbers can\u2019t be predicted or repeated. Cryptography is the go-to example, but some scientific applications need real random numbers as well. ",
+            "date": "Answered March 23, 2018",
+            "views": "2",
+            "upvotes": " View 46 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kaiya Mudge",
+                    "user_href": "/profile/Kaiya-Mudge-2"
+                },
+                {
+                    "user_id": "Dawid Migacz",
+                    "user_href": "/profile/Dawid-Migacz-1"
+                },
+                {
+                    "user_id": "Jeff Muscato",
+                    "user_href": "/profile/Jeff-Muscato"
+                },
+                {
+                    "user_id": "Akhil Raj",
+                    "user_href": "/profile/Akhil-Raj-14"
+                },
+                {
+                    "user_id": "Apoorve Singhal",
+                    "user_href": "/profile/Apoorve-Singhal-1"
+                },
+                {
+                    "user_id": "Poul Bundgaard",
+                    "user_href": "/profile/Poul-Bundgaard-1"
+                },
+                {
+                    "user_id": "Yuvraj",
+                    "user_href": "/profile/Yuvraj-108"
+                },
+                {
+                    "user_id": "Garion Hall",
+                    "user_href": "/profile/Garion-Hall"
+                },
+                {
+                    "user_id": "Arsya Asharhadi",
+                    "user_href": "/profile/Arsya-Asharhadi"
+                },
+                {
+                    "user_id": "Abhishek Kashyap",
+                    "user_href": "/profile/Abhishek-Kashyap"
+                },
+                {
+                    "user_id": "Paul Maguire",
+                    "user_href": "/profile/Paul-Maguire-26"
+                },
+                {
+                    "user_id": "Promise Ogechi Izuagbala",
+                    "user_href": "/profile/Promise-Ogechi-Izuagbala"
+                },
+                {
+                    "user_id": "Steve Rapaport",
+                    "user_href": "/profile/Steve-Rapaport"
+                },
+                {
+                    "user_id": "Mitchell Kitzinger",
+                    "user_href": "/profile/Mitchell-Kitzinger-2"
+                },
+                {
+                    "user_id": "Zane Jakobs",
+                    "user_href": "/profile/Zane-Jakobs"
+                },
+                {
+                    "user_id": "Madhav Rathod",
+                    "user_href": "/profile/Madhav-Rathod-1"
+                },
+                {
+                    "user_id": "Jana P\u00e9rez Lauco",
+                    "user_href": "/profile/Jana-P\u00e9rez-Lauco"
+                },
+                {
+                    "user_id": "Armando Cordero",
+                    "user_href": "/profile/Armando-Cordero"
+                },
+                {
+                    "user_id": "Christopher Reddington",
+                    "user_href": "/profile/Christopher-Reddington"
+                },
+                {
+                    "user_id": "Eamon Bohan",
+                    "user_href": "/profile/Eamon-Bohan"
+                },
+                {
+                    "user_id": "Luv Kapur",
+                    "user_href": "/profile/Luv-Kapur"
+                },
+                {
+                    "user_id": "Sagar Gourimath",
+                    "user_href": "/profile/Sagar-Gourimath-1"
+                },
+                {
+                    "user_id": "Yang Guowei",
+                    "user_href": "/profile/Yang-Guowei-2"
+                },
+                {
+                    "user_id": "Plamen Vassilev",
+                    "user_href": "/profile/Plamen-Vassilev"
+                },
+                {
+                    "user_id": "Emmet Feerick",
+                    "user_href": "/profile/Emmet-Feerick"
+                },
+                {
+                    "user_id": "Kieran Peckett",
+                    "user_href": "/profile/Kieran-Peckett"
+                },
+                {
+                    "user_id": "Kevin Ossia",
+                    "user_href": "/profile/Kevin-Ossia"
+                },
+                {
+                    "user_id": "Laura Tokeensuu",
+                    "user_href": "/profile/Laura-Tokeensuu"
+                },
+                {
+                    "user_id": "Travis Brauer",
+                    "user_href": "/profile/Travis-Brauer"
+                },
+                {
+                    "user_id": "Okereke Onyekachi",
+                    "user_href": "/profile/Okereke-Onyekachi"
+                },
+                {
+                    "user_id": "Siwei Wang",
+                    "user_href": "/profile/Siwei-Wang-4"
+                },
+                {
+                    "user_id": "Stijn Hommes",
+                    "user_href": "/profile/Stijn-Hommes"
+                },
+                {
+                    "user_id": "Arun Soma",
+                    "user_href": "/profile/Arun-Soma"
+                },
+                {
+                    "user_id": "Jordan Yates",
+                    "user_href": "/profile/Jordan-Yates-4"
+                },
+                {
+                    "user_id": "Sebastian D\u00e4deby",
+                    "user_href": "/profile/Sebastian-D\u00e4deby"
+                },
+                {
+                    "user_id": "Mikhael Bornstein",
+                    "user_href": "/profile/Mikhael-Bornstein"
+                },
+                {
+                    "user_id": "Hemelton Matlonya",
+                    "user_href": "/profile/Hemelton-Matlonya"
+                },
+                {
+                    "user_id": "Rajorshi Chaudhuri",
+                    "user_href": "/profile/Rajorshi-Chaudhuri"
+                },
+                {
+                    "user_id": "Krishna Chaitanya",
+                    "user_href": "/profile/Krishna-Chaitanya-89"
+                },
+                {
+                    "user_id": "Faruk Balc\u0131",
+                    "user_href": "/profile/Faruk-Balc\u0131"
+                },
+                {
+                    "user_id": "Jenin Jose",
+                    "user_href": "/profile/Jenin-Jose-1"
+                },
+                {
+                    "user_id": "Jesse Raffield",
+                    "user_href": "/profile/Jesse-Raffield-1"
+                },
+                {
+                    "user_id": "Drake Zirkle",
+                    "user_href": "/profile/Drake-Zirkle"
+                },
+                {
+                    "user_id": "Drew Eckhardt",
+                    "user_href": "/profile/Drew-Eckhardt"
+                },
+                {
+                    "user_id": "R Madhukar",
+                    "user_href": "/profile/R-Madhukar"
+                },
+                {
+                    "user_id": "Ethan Stancliff",
+                    "user_href": "/profile/Ethan-Stancliff-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maksym Yehorov",
+                "href": "/profile/Maksym-Yehorov"
+            },
+            "answer_text": "Imagine that you pick numbers from 1 to 100 and put them into 100 bins, after a million picks you would have almost equal amount of numbers in each bin. That is a trait of random numbers - uniform probability or uniform distribution. Another one is that next random number can not be deduced from previous numbers. Pseudo random numbers are generated by an algorithm. Algorithms are designed to supply numbers with a uniform or close to uniform probability. Unfortunately, algorithms wrap around and at some point the pseudo random sequence repeats. Also algoritms require a seed value which effectively define an entire sequence. That makes it extremely difficult to generate unpredictable numbers. No matter how sofisticated a pseudo random number generation (PRNG) algorithm is it is possible to reverse engineer it and recreate the sequence. To mitigate this random inputs can be fed into PRNG. And that is completely different and complicated story. ",
+            "date": "Answered April 6, 2018",
+            "views": "261",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alan Armstrong",
+                "href": "/profile/Alan-Armstrong-21"
+            },
+            "answer_text": "A mathematician gave me the answer way back in University days. \u201cA table of random numbers can never be published.\u201d That\u2019s because the definition says it must be impossible to predict the next from those preceding it. If they\u2019re taken from a published table someone with enough diligence can find that table and look up the next one. That\u2019s the only difference. Pseudo-random numbers have exactly the same properties as true random numbers but if they\u2019re generated from an algorithm with a random seed (the popular one is the current second in UTC) anyone who knows the algorithm and seed can generate the same list. ",
+            "date": "Answered March 23, 2018",
+            "views": "176",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Rob Belics",
+                    "user_href": "/profile/Rob-Belics"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prasoon Goyal",
+                "href": "/profile/Prasoon-Goyal"
+            },
+            "answer_text": "A2A. As the documentation says, quasi-random numbers do not pass many statistical tests that the pseudo-random numbers pass. They try to generate samples farther from the last sample more often than closer ones.So yes, that might affect your algorithm. Let's consider a simple example -- suppose you are sampling a single variable. Say you start with a uniform distribution over the variable. You draw a sample [math]x= 0.2[/math]. Now, your new distribution is [math]Q(x' | x = 0.2)[/math]. Suppose this is also is a uniform distribution. So you want your next sample to be drawn from uniform distribution. But the way quasi-random number generator works, it will try to generate a sample that will have values farther from [math]x = 0.2[/math] with a higher probability compared to values near it. So you are more likely to get [math]x' = 0.9[/math] compared to [math]x'=0.21[/math]. Thus you are in effect drawing samples from the wrong distribution. Of course, when you have multiple variables and complex distributions, this might affect your solution quality by a lot. Is there a specific reason why you have to use quasi-random number generator? Why not just replace it with the pseudo-random number generator and see if that improves the solution quality? ",
+            "date": "Answered November 8, 2015",
+            "views": "522",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Pal Hargitai",
+                "href": "/profile/Pal-Hargitai"
+            },
+            "answer_text": "As the other answers point out, making random numbers is a science on it\u2019s own, especially true random numbers ask something that a computer can\u2019t do. How can you have a deterministic device produce something that is by definition not deterministic? If you\u2019re talking about what are good uses for true random numbers or pseudo random numbers. That depends on what the randomness requirements are. If you\u2019re using random numbers to influence some uncertain behaviour of some AI in a game, pseudo random numbers are just fine. If you\u2019re generating an encyption key you definitely need true random numbers. It\u2019s important to note that a system will usually readily generate pseudo random numbers but will wait for a certain amount of entropy before it produces true random numbers. So handling this well on a server system is a bit deal as it might bottleneck performance. ",
+            "date": "Answered March 24, 2018",
+            "views": "245",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Ana Peraita",
+                    "user_href": "/profile/Ana-Peraita"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "A2A: You cannot generate truly random numbers directly from any sort of programming. Truly random numbers can be generated by specialized hardware. (Indeed, some modern CPUs have such a hardware generator built in.) Most programs which require a source of random numbers will work fine with a good software-only pseudo-random number generation algorithm. Encryption algorithms are an important exception. ",
+            "date": "Answered March 24, 2018",
+            "views": "156",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sunavo Ghosh",
+                    "user_href": "/profile/Sunavo-Ghosh"
+                },
+                {
+                    "user_id": "Mohamed Hassan",
+                    "user_href": "/profile/Mohamed-Hassan-840"
+                },
+                {
+                    "user_id": "Tamoghna Chowdhury",
+                    "user_href": "/profile/Tamoghna-Chowdhury"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Errington",
+                "href": "/profile/John-Errington-1"
+            },
+            "answer_text": "Writing a \u201ctrue\u201d random number generator program is something I\u2019d guess most programmers have attempted. No matter how we try, often a simple process will show up how non-random they are. The first problem is finding a \u201ctruly random\u201d \u201cseed\u201d to start the algorithm. Inside any PC there are a few numbers that can be used that are unlikely to be the same on each run of the program - such as a real time clock value, or a microphone input. I eventually gave up and turned to electrical devices used to generate \u201cwhite\u201d or \u201cpink\u201d noise. eg poor quality electrical diodes. Even then analysis showed up flaws. ",
+            "date": "Answered April 6, 2018",
+            "views": "187",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Rutter",
+                "href": "/profile/David-Rutter-2"
+            },
+            "answer_text": "With enough information, you can predict the output of a PRNG. As such, it's not cryptographically safe, as an attacker could figure out secret numbers that you have used the generator to produce. For most other purposes, there's no practical difference between true random data and the output of a high quality PRNG. ",
+            "date": "Answered May 30, 2019",
+            "views": "115",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Don Davis",
+                    "user_href": "/profile/Don-Davis-14"
+                },
+                {
+                    "user_id": "Doug Smith",
+                    "user_href": "/profile/Doug-Smith-142"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dale Strickler",
+                "href": "/profile/Dale-Strickler-1"
+            },
+            "answer_text": "This is an easy way to see it: Pseudo-Random vs. True Random. If you want the math and a lot of other stuff about randomness I highly recommend True Random Number Service. ",
+            "date": "Answered March 23, 2018",
+            "views": "130",
+            "upvotes": " Answer requested by Mohamed Hassan"
+        },
+        {
+            "author_info": {
+                "name": "Gregory Schoenmakers",
+                "href": "/profile/Gregory-Schoenmakers"
+            },
+            "answer_text": "See Gregory Schoenmakers's answer to What are good ways to write a function that returns a random value? ",
+            "date": "Answered March 23, 2018",
+            "views": "143",
+            "upvotes": " Answer requested by Mohamed Hassan"
+        }
+    ]
+}

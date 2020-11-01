@@ -1,0 +1,40 @@
+{
+    "title": "How can one justify that a linear transformation is one to one or is it an onto? - Quora",
+    "tags": [
+        "Linear Transformation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sio Ieng",
+                "href": "/profile/Sio-Ieng"
+            },
+            "answer_text": "Actually the one-to-one function definition is not the one I was used to. But since you are also reffering to \u201conto\u201d function, then I\u2019ll adopt the follwing definitions which seemed to be yours: \u201cone to one\u201d = injection and \u201conto\u201d = surjection A linear transformation is actually a bijection of its domain E to its codomain F, i.e. it is both a injection and bijection. (E and F 2 vector space of same dimension) To prove it, the usual way to do is actually to show it is an injection i.e. each y of F has at most one (it can have none) x from E such that f(x)=y.an surjection i.e. for each element y of F, you have at least one (hence you can also have many) x of E such that f(x)=y.You can also check if f is invertible for all element of F. If it is it means it is bijective and you are done. Actually in the case of a linear function this is actually easier ",
+            "date": "Answered November 7, 2016",
+            "views": "912",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Dunbrack",
+                "href": "/profile/Aaron-Dunbrack-1"
+            },
+            "answer_text": "For one-to-one: show if f(a)=f(b), then a=b. Note f(a)-f(b)=f(a-b) by definition of a linear transformation, so it suffices to show f(x)=0 iff x=0. How you do that depends on the problem.For onto: consider a general y; find an x such that y=f(x). Depending on the context, easiest way is typically by dimension-counting using the dimensions of the nullspace (x such that f(x)=0), domain, and image. (In particular, if it is one-to-one, it is onto if and only if the dimensions match.) Also, rather than solving y=f(x) for all y, it suffices to solve only enough y to form a basis (or, more generally, to span the space).",
+            "date": "Answered November 7, 2016",
+            "views": "1",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Bharani Raj",
+                    "user_href": "/profile/Bharani-Raj-15"
+                }
+            ]
+        }
+    ]
+}

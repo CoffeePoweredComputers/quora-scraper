@@ -1,0 +1,61 @@
+{
+    "title": "How can we remove an invisible character from Excel using VBA? - Quora",
+    "tags": [
+        "Visual Basic for Applications (VBA)",
+        "Excel VBA"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brad Yundt",
+                "href": "/profile/Brad-Yundt"
+            },
+            "answer_text": "Let\u2019s suppose that you wanted to remove the line feed character from a cell. This is an invisible character with ASCII character code 10. You may get rid of it in a pre-selected range of cells using the VBA Replace function: Sub RemoveLineFeed()\u00a0Dim cel As Range, rg As Range\u00a0Set rg = Selection\u00a0For Each cel In rg.Cells\u00a0    cel.Value = Replace(cel.Value, Chr(10), \"\")\u00a0Next\u00a0End Sub\u00a0If you don\u2019t want to remove all of that particular invisible character, you can use the InStr function to find its location and then remove it. For example to remove just the first line feed character, you might use: Sub RemoveFirstLineFeed()\u00a0Dim cel As Range, rg As Range\u00a0Dim j As Long\u00a0Set rg = Selection\u00a0For Each cel In rg.Cells\u00a0    j = 0\u00a0    j = InStr(1, cel.Value, Chr(10))\u00a0    If j > 0 Then cel.Value = Left(cel.Value, j - 1) & Mid(cel.Value, j + 1)\u00a0Next\u00a0End Sub\u00a0FWIW, both macros will work with a pre-selected range of cells, even if that range is non-contiguous. ",
+            "date": "Answered January 10, 2019",
+            "views": "558",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                },
+                {
+                    "user_id": "M. Tithveasna",
+                    "user_href": "/profile/M-Tithveasna"
+                },
+                {
+                    "user_id": "Jamil Mohammad",
+                    "user_href": "/profile/Jamil-Mohammad-2"
+                },
+                {
+                    "user_id": "Tej Kumar Raghupathi",
+                    "user_href": "/profile/Tej-Kumar-Raghupathi"
+                },
+                {
+                    "user_id": "Dale Whitehead",
+                    "user_href": "/profile/Dale-Whitehead"
+                },
+                {
+                    "user_id": "Thomas Moser",
+                    "user_href": "/profile/Thomas-Moser-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Linzenmeyer",
+                "href": "/profile/Michael-Linzenmeyer"
+            },
+            "answer_text": "I cant give you direct code\u2026but what you are looking for are ascii characters. Further, you are looking for ascii characters that are considered commands. I would be careful not to remove certain ones like vbcrlf (cr or lf) as this is the invisible command for the \u201cEnter\u201d key and stands for carriage return line feed. (This, more or less, pertains to reading a text file) After that, the process is pretty straight forward. Read each cell into a byte array, remove unwanted characters or replace those characters with a space, then overwrite the read cell with the modified byte array..to str, int or whatever formatting you are using. Rinse and repeat. Hope this helps. ",
+            "date": "Answered January 10, 2019",
+            "views": "238",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                }
+            ]
+        }
+    ]
+}

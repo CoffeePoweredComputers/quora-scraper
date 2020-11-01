@@ -1,0 +1,63 @@
+{
+    "title": "How does Homebrew work internally? - Quora",
+    "tags": [
+        "Homebrew (software)",
+        "Package Management",
+        "macOS Applications",
+        "macOS (operating system)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Baptiste Fontaine",
+                "href": "/profile/Baptiste-Fontaine"
+            },
+            "answer_text": "Homebrew is based on Git and Ruby. The first time you install it it\u2019ll set things up in /usr/local (this is the default; you can install it elsewhere but we don\u2019t officially support it) as a Git repository that\u2019s an exact clone of the Homebrew/homebrew GitHub repository. All the core files as well as the formulae (packages) are in this repo*. These formulae are Ruby files that describe the software they install and contain instructions to install and test it. Every time you run brew update it does a git pull, infers what changed from the diff and gives you a nice overview. Let\u2019s create a dummy formula so you\u2019ll understand what each command does: class Foo < Formula\u00a0  desc \"Does nothing\"\u00a0  homepage \"https://example.com/foo\"\u00a0  url \"https://example.com/foo-1.0.tar.gz\"\u00a0  sha256 \"477a8137de342f858d364383266e9551e582718e96b34051a6aaef57606d6bfe\"\u00a0  def install\u00a0    system \"make\", \"PREFIX=#{prefix}\"\u00a0    bin.install \"foo\"\u00a0  end\u00a0  test do\u00a0    assert_equal \"qux\", shell_ouput(\"#{bin}/foo bar\")\u00a0  end\u00a0end\u00a0This is saved in /usr/local/Library/Formula/foo.rb. When you run brew install foo, Homebrew fetches the URL (here that\u2019s https://example.com/foo-1.0.tar.gz) using curl and stores the archive in a cache directory so you won\u2019t download it twice. It computes its checksum and compares it against the one the formula provides (that\u2019s the sha256 line above). If it doesn\u2019t match it refuses to continue, to ensure you\u2019re downloading the right file; if someone hacks a website and changes the archive the checksum will change so you\u2019re protected from that. It then unpacks the archive in a temporary directory, and executes the install method above. In this example it runs make PREFIX=/usr/local/Cellar/foo/1.0 then install foo in the formula\u2019s bin directory (Here it\u2019s /usr/local/Cellar/foo/1.0/bin). This is normal Ruby code but we have a custom Domain-Specific Language (DSL) on top of it. Once it did everything in that method it links it: here it creates a symlink from /usr/local/bin/foo to /usr/local/Cellar/foo/1.0/bin/foo. This ensures you have all your executables under /usr/local/bin/. It does the same for other directories such as lib and man. This is a simple example but formulae can get much more complicated. They can depend on other formulae; have patches and external resources; download stuff from Git, SVN, Mercurial or through FTP; and more. Also note that we provide bottles (pre-built formulae); which are essentially formulae built by a bot then stored as a .tar.gz on a server so that you can download them directly instead of re-building everything from source every time. Bottles are defined in formulae and brew install use them when they\u2019re available. Let\u2019s keep our simple example and try the other commands Homebrew provides: brew desc foo prints the formula\u2019s description as written in the file: $ brew desc foo\u00a0foo: Does nothing\u00a0brew info foo is similar but prints more info such as the version it extracted from the URL, the homepage, and the formula file location: $ brew info foo\u00a0foo: stable 1.0\u00a0Does nothing\u00a0https://example.com/foo \u00a0Not installed\u00a0From: https://github.com/Homebrew/homebrew.git:Library/Formula/foo.rb\u00a0brew uninstall foo removes the symlinks it created before and wipe the /usr/local/Cellar/foo directory. brew test foo creates a temporary directory; sets up a sandbox; and runs the code in the test do block above. We use this to ensure a formula is correctly installed. brew cat foo shows you the formula code above. Under the hood it locates the formula file and calls cat on it for you. brew edit foo is similar and opens the file in your editor. This useful if you want to contribute to Homebrew or edit your own formulae. brew home foo opens https://example.com/foo  in your browser. Those are the main commands. To have an overview of all commands you can run brew commands. You can also create your own commands, but that\u2019s another topic ;-)  Note: I omitted some details to give you an overview without being too specific. Feel free to ask more questions if you want. (*): This will change in the future; we plan to separate the formulae and the core in two different repositories. ",
+            "date": "Answered February 10, 2016",
+            "views": "81",
+            "upvotes": " View 59 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suraj Dubey",
+                    "user_href": "/profile/Suraj-Dubey"
+                },
+                {
+                    "user_id": "Miroslav Kovar",
+                    "user_href": "/profile/Miroslav-Kovar"
+                },
+                {
+                    "user_id": "Siddhi Chandan",
+                    "user_href": "/profile/Siddhi-Chandan"
+                },
+                {
+                    "user_id": "Gagandeep Singh",
+                    "user_href": "/profile/Gagandeep-Singh-54"
+                },
+                {
+                    "user_id": "Snehasish Roy",
+                    "user_href": "/profile/Snehasish-Roy"
+                },
+                {
+                    "user_id": "Vedang Bhardwaj",
+                    "user_href": "/profile/Vedang-Bhardwaj"
+                },
+                {
+                    "user_id": "Nick Simpson",
+                    "user_href": "/profile/Nick-Simpson-101"
+                },
+                {
+                    "user_id": "Flavio Andrei",
+                    "user_href": "/profile/Flavio-Andrei"
+                },
+                {
+                    "user_id": "Hossein Soltanloo",
+                    "user_href": "/profile/Hossein-Soltanloo"
+                },
+                {
+                    "user_id": "Yash Gulani",
+                    "user_href": "/profile/Yash-Gulani"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "title": "How does wireless meshing technology (used in Firechat app) work? - Quora",
+    "tags": [
+        "FireChat"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joe McMahon",
+                "href": "/profile/Joe-McMahon"
+            },
+            "answer_text": "Basically, this is a new networking protocol. This new protocol is device-to-device, rather than device to ISP to device. This means on the plus side, that it doesn't matter if someone has shut down the local cellphone/Internet network; people who are close enough that they can pick up each other's Wifi or Bluetooth signals can still chat. On the negative side, you're limited to the distance these signals will cover, which is maybe 50 feet (I would imagine that in a serious pinch, people would figure out how to mod their phones to get much longer ranges - search on \"Pringles can Wifi antenna\".) This shortcoming, however, can be overcome via relays - person one connects to person two 40 feet away, person three is another 40 feet away and in contact with person two, so they can chat with person one as well. A large mesh of people running FireChat could conceivably span a very wide area, given enough users. ",
+            "date": "Answered April 6, 2014",
+            "views": "31",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Dovey",
+                    "user_href": "/profile/John-Dovey"
+                },
+                {
+                    "user_id": "Kokez Jr",
+                    "user_href": "/profile/Kokez-Jr"
+                },
+                {
+                    "user_id": "Ankur Tyagi",
+                    "user_href": "/profile/Ankur-Tyagi-15"
+                },
+                {
+                    "user_id": "Aakash Soma",
+                    "user_href": "/profile/Aakash-Soma-1"
+                },
+                {
+                    "user_id": "Ravin Kohli",
+                    "user_href": "/profile/Ravin-Kohli-1"
+                },
+                {
+                    "user_id": "Dave Ahl",
+                    "user_href": "/profile/Dave-Ahl-1"
+                },
+                {
+                    "user_id": "Siladitya Dey",
+                    "user_href": "/profile/Siladitya-Dey"
+                },
+                {
+                    "user_id": "Zhensong Qian",
+                    "user_href": "/profile/Zhensong-Qian"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Javier Cardona",
+                "href": "/profile/Javier-Cardona"
+            },
+            "answer_text": "Firechat uses a proprietary wireless ad-hoc protocol developed by Apple.  When a Firechat session is in progress, it is possible to capture traffic with any wireless traffic analyzer (e.g. wireshark).  Then look for Apple's Organizationally Unique Identifier in the vendor identifier field of some of the frames.  You can find a traffic capture file in this blog post: How anonymous is Firechat? Apple's link-layer protocol does not support multi-hopping and will not allow connections with non-Apple devices. Source: Wireless traffic inspection in our lab. ",
+            "date": "Answered April 1, 2014",
+            "views": "29",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Edi Imanto",
+                    "user_href": "/profile/Edi-Imanto"
+                },
+                {
+                    "user_id": "Kokez Jr",
+                    "user_href": "/profile/Kokez-Jr"
+                },
+                {
+                    "user_id": "Jason Mobarak",
+                    "user_href": "/profile/Jason-Mobarak-2"
+                },
+                {
+                    "user_id": "Ankur Tyagi",
+                    "user_href": "/profile/Ankur-Tyagi-15"
+                },
+                {
+                    "user_id": "Ravin Kohli",
+                    "user_href": "/profile/Ravin-Kohli-1"
+                },
+                {
+                    "user_id": "Hitesh Durgani",
+                    "user_href": "/profile/Hitesh-Durgani"
+                },
+                {
+                    "user_id": "Raji Rock",
+                    "user_href": "/profile/Raji-Rock"
+                },
+                {
+                    "user_id": "Angeliki Kapoglou",
+                    "user_href": "/profile/Angeliki-Kapoglou"
+                },
+                {
+                    "user_id": "Jason Mobarak",
+                    "user_href": "/profile/Jason-Mobarak-1"
+                },
+                {
+                    "user_id": "Emma Saboureau",
+                    "user_href": "/profile/Emma-Saboureau"
+                }
+            ]
+        }
+    ]
+}

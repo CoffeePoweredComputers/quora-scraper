@@ -1,0 +1,50 @@
+{
+    "title": "How does the iPhone 12 keep 5G from being a power hog? - Quora",
+    "tags": [
+        "5G (wireless communication)",
+        "iOS",
+        "Wireless Technology",
+        "Cellular Service Providers",
+        "Mobile Technology",
+        "Apple (company)",
+        "iPhones (product)",
+        "Apple Products and Services",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Josh Osborne",
+                "href": "/profile/Josh-Osborne-6"
+            },
+            "answer_text": "Well we don\u2019t really know that it manages that. We do know how it attempts to keep 5G\u2019s power use as low as it can. They have a fancy name for it, but it really is the simplest solution you can imagine. Can you guess what it is? I\u2019ll pause for a moment. Just waiting right here? Ok, did you guess? The iPhone 12 turns off 5G as much as possible and uses LTE. Yep, 5G isn\u2019t a power hog when it isn\u2019t in use. But\u2026but\u2026why do they show super fast download speeds on TV commercials? The TV commercials are showing stuff going fast, so obviously that \u201cfast thing\u201d was deemed slow and the 5G radio was powered up and speed happens (well, some places, like a very few places with mmWave, the larger number of places with \u201cNormal sub 6Ghz 5G\u201d you get a little more speed maybe). How exactly does the phone decide? Apple hasn\u2019t said. Since it does it \u201cautomatically\u201d I expect it is one or more of the following: When the 4G radio has been maxed out for more then some period of time the 5G radio kicks inAnything using the system URL fetching service looks at the content-length header and anything \u201cbig\u201d kicks in 5Gapplications get an API to request high speed networking and/or low latency (I\u2019m unaware of any new pubic API for this, so while I think it would be a good idea, I don\u2019t think Apple has chosen it)The first two methods would work fairly well for determining when you need more speed, but neither automatically guess when less latency would be important. The second method is good at getting things warmed up \u201cearly\u201d, but only works when apps use the system framework to fetch data and when the protocol includes content length. The first method is kind of ham fisted, but you would be amazed by how frequently that sort of thing is good enough. However I don\u2019t know what actually is used here. For all I know some fancy AI stuff is involved to crank up the speed when you launch an app that normally needs the speed. How important that sort of thing is depends strongly on how long it takes to power up 5G and switch over. ",
+            "date": "Answered October 20, 2020",
+            "views": "668",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nevi L\u00f8vfelt",
+                    "user_href": "/profile/Nevi-L\u00f8vfelt"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Jon Barnes",
+                    "user_href": "/profile/Jon-Barnes-50"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Norman Jobling",
+                "href": "/profile/Norman-Jobling"
+            },
+            "answer_text": "It doesn't. Testing suggests a 2 hour battery hit in 5G mode iPhone 12 battery test shows 2-hour hit when using 5G - 9to5Mac ",
+            "date": "Answered October 22, 2020",
+            "views": "502",
+            "upvotes": " Answer requested by Urvinder S Madhok"
+        }
+    ]
+}

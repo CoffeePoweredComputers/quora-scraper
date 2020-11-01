@@ -1,0 +1,78 @@
+{
+    "title": "Where do you write Code? - Quora",
+    "tags": [
+        "CodesXKPL",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Kenneth Eng",
+                "href": "/profile/Richard-Kenneth-Eng"
+            },
+            "answer_text": "This question suggests that you are thoroughly confused about what programming is. First of all, you don\u2019t just write code. You solve a programming problem, and then you express the resulting solution in code using the programming language of your choice. The language is largely incidental. The key thing is to find a solution to the problem. For example, if you want to make a game, you must first understand the requirements of the game (what are the rules of the game? how do you play the game?). Then you must design or architect the game (plan out its complete structure and the user interface). This is the problem you are trying to solve. Once you have the solution in hand (the program design and architecture), then you proceed to \u201ccode\u201d it. This means mapping the elements of your program design to the features of the programming language you are using (the data structures and the logical control flow). But that\u2019s not the end of it\u2026 Your program will have many defects (nobody writes perfect code right off the bat). So you must test your program and find all the \u201cbugs.\u201d Diagnosing bugs is often a very difficult task. Once you track down the bugs, you must fix them. Hopefully, you can fix them without introducing new defects. If all of this sounds daunting, it is! Programming is hard. Anyone who tells you otherwise is a fool. Typically, to write the code means using a text editor, and saving the code to a file or files. These files will reside in a project folder somewhere. The files may be \u201ccompiled\u201d to native code or byte code (depending on the kind of language you\u2019re using), or \u201cinterpreted\u201d as is. This should answer your question of \u201cwhere to write code.\u201d Once your program has been compiled and built, it needs to be deployed for use. There are many ways your game program can be deployed. If it\u2019s a web-based game, it may be deployed server-side for distribution to end-users\u2019 web browsers. If it\u2019s a console game like PlayStation, it needs to be loaded into the console. If it\u2019s a desktop PC game, you just download and run it on the PC. If it\u2019s a mobile game, you download and run it on the mobile device. And so on. ",
+            "date": "Answered December 4, 2016",
+            "views": "42",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tanya Sharma",
+                    "user_href": "/profile/Tanya-Sharma-370"
+                },
+                {
+                    "user_id": "Christian Posadas",
+                    "user_href": "/profile/Christian-Posadas-4"
+                },
+                {
+                    "user_id": "Alana Audet",
+                    "user_href": "/profile/Alana-Audet"
+                },
+                {
+                    "user_id": "Miles Fidelman",
+                    "user_href": "/profile/Miles-Fidelman"
+                },
+                {
+                    "user_id": "Ioan Petrescu",
+                    "user_href": "/profile/Ioan-Petrescu-1"
+                },
+                {
+                    "user_id": "H\u01b0ng Nguy\u1ec5n Gia",
+                    "user_href": "/profile/H\u01b0ng-Nguy\u1ec5n-Gia"
+                },
+                {
+                    "user_id": "Abdullah Yousuf",
+                    "user_href": "/profile/Abdullah-Yousuf-2"
+                },
+                {
+                    "user_id": "Jokin Astobiza",
+                    "user_href": "/profile/Jokin-Astobiza"
+                },
+                {
+                    "user_id": "Sukrant Luthra \u0a74",
+                    "user_href": "/profile/Sukrant-Luthra-\u0a74"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Miles Fidelman",
+                "href": "/profile/Miles-Fidelman"
+            },
+            "answer_text": "Ahh\u2026 now that\u2019s one of those things that nobody teachers - be it university programs or codeacademy and it\u2019s ilk (not sure about bootcamps). Usually, you learn on the job. And it\u2019s one of the areas of knowledge that distinguishes true software professionals from wannabes. The answer is complicated - and it depends on what you\u2019re writing. For a traditional, compiled language - you typically write code in a text editor (e.g., emacs), store it in a version control system (e.g, GIT), and when you\u2019re ready to test things, you run it through a compiler & linker (e.g., gcc), and you end up with object code that can be loaded and run - and you might end up with a bunch of files that need to be put in different places. If you want to actually build real software, you end up with lots of source files - and you typically create a \u201cmakefile\u201d that contains all the instructions on how to compile, assemble, and install things. Then you put everything in a single directory, and typically create a \u201ctar\u201d file that bundles all the files together, then you compress that, and voila, that\u2019s what you distribute. Or, you compile the mess, and \u201cpackage it\u201d - again combining it into something that can be installed. (I\u2019ve left out all the testing and documentation steps.) For an interpreted language (e.g. Python), you may just put everything in one file, and then type run - and the interpreter does the rest. More likely you\u2019ll break things up into lots of files. Then there are things like Java, that compile to a bytecode that runs on a \u201cvirtual machine\u201d - using java specific tools. For the web, you write web pages in HTML + CSS + JavaScript and you write back-end stuff that might take any number of forms. At the other extreme are self-contained language environments - Smalltalk being the most obvious - you\u2019re always interacting with the Smalltalk environment - adding bits of code here and there - and the environment now can do more things. To learn more, you might google the terms \u201ctool chain\u201d \u201cbuild chain\u201d and IDE (Integrated Development Environment). You might also search those, combined with a particular language (e.g., \u201cc tool chain\u201d \u201cpython tool chain\u201d). If you\u2019re using a Mac, you might go to Apple Developer - download and install Xcode. Read the documentation. I\u2019m sure there are some books that provide an overview - but I can\u2019t think of any offhand. A lot of language-specific books include sections on \u201csetting up your development environment\u201d and more advanced books might talk about tooling, packaging, and deployment. It also helps to start with some understanding about how software works, in its target run-time environment. ",
+            "date": "Answered December 4, 2016",
+            "views": "33",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Anandhu Babu",
+                    "user_href": "/profile/Anandhu-Babu-19"
+                },
+                {
+                    "user_id": "Julio Rose",
+                    "user_href": "/profile/Julio-Rose-1"
+                }
+            ]
+        }
+    ]
+}

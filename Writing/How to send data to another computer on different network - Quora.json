@@ -1,0 +1,56 @@
+{
+    "title": "How to send data to another computer on different network - Quora",
+    "tags": [
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tony Josi",
+                "href": "/profile/Tony-Josi"
+            },
+            "answer_text": "If you are using Linux there are many ways to copy files from one computer to another in your same LAN network.  Copying Files between Linux Computers Linux offers a rich set of protocols you can use to copy files between computers. Which protocol you use depends on how much work you want to invest and whether you need to be compatible with future Windows installations. The following sections feature various methods to transfer files from and to Linux computers. Make sure to have a working network connection, otherwise they will not work. All scenarios rely on a working name resolution in the network. If your network does not include a name service, use IP addresses directly or add the IP addresses along with respective hostnames in /etc/hosts on all clients. The following example IP addresses and hostnames are used across this section: Target Hostname sun.example.com Target IP 192.168.0.20 Source Hostname earth.example.com Source IP 192.168.0.1 User tux 11.4.1. Copying Files with SSH The following requirements must be met on both server and client: Make sure hostnames of IP addresses of both server and client are known across the network. Each hostname needs to be listed in /etc/hosts, for both server and client (see Section \u201c /etc/hosts \u201d (Chapter 21, Basic Networking, \u2191Reference).)If you use a firewall, open the SSH port. Start YaST, and select Security and Users+Firewall. Go to Allowed Services and check, whether SSH is displayed as part of the list. If this is not the case, select SSH from Service to Allow and click Add. Apply your changes and leave YaST with Next and Accept.To copy files from a server to a client, you need to know where the files are located on the server. For example, to copy a single file /srv/foo_file from the server to the current directory, use the scp command (do not forget the dot!): scp tux@sun.example.com:/foo_file .\u00a0To copy a whole directory structure, use the recursive mode of scp: scp -r tux@sun.example.com:/foo_directory .\u00a0If your network does not provide name resolution, use the server's IP address directly: scp tux@192.168.0.20:/foo_file .\u00a0Using the sftp Protocol Copying files in KDE or GNOME with SFTP is very simple. Proceed as follows: Press Alt-F2.Enter the following at the address prompt:sftp://tux@sun.example.comEnter your the password of tux on sun.example.com.Drag and drop your server files or directories to your desktop or a local directory.KDE provides another protocol called fish that can be used if sftp is not available. The usage of this protocol is similar to sftp, just replace the sftp protocol prefix of the URL by fish. Transferring Files with rsync Before using rsync to synchronize file and directories between different computers, make sure the following requirements are met: The package rsync is installed.Identical users are available on both systems.Enough disk space is available on the server.If you want to benefit from rsync's full potential, make sure rsyncd is installed on one of the systems.rsync is useful for archiving or copying data. You only need a remote shell (such as ssh) on the target system. rsync can also be used as a daemon to provide directories to the network (see Advanced Setup for rsync Synchronization). rsync Basic Mode The basic mode of operation of rsync does not require any special configuration. rsync allows mirroring of complete directories onto another system out of the box. Its usage is not much different from a regular copying tool, such as scp. The following command creates a backup of the home directory of tux on a backup server called sun: rsync -Hbaz -e ssh /home/tux/ tux@sun:backup\u00a0Use the following command to apply your backup: rsync -Haz -e ssh tux@sun:backup /home/tux/\u00a0rsync Daemon Mode Start the rsyncd daemon on one of your systems to make use of the full functionality of rsync. In this mode it is possible to create synchronization points (modules) that can be accessed without account. To use the rsyncd daemon, proceed as follows: Procedure 11.1. Advanced Setup for rsync Synchronization Log in as root and install the rsync package.Configure your \u201csynchronization points\u201d:gid = nobody uid = nobody read only = true use chroot = no transfer logging = true log format = %h %o %f %l %b log file = /var/log/rsyncd.log \t\t\t\t\t\t [FTP] path = /srv/ftp comment = An ExampleStart the rsyncd daemon as user root:rcrsyncd startTo automatically start the rsync service upon system boot, call:insserv rsyncdList all files located in the /srv/ftp directory (note the double colon):rsync -avz sun::FTPInitiate the transfer by providing a target directory (in this example the current directory is represented by a dot):rsync -avz sun::FTP .By default, files are not deleted while synchronizing with rsync. To force file deletion, add the --delete option. To make sure that the --delete does not accidentally remove newer files, use the --update option instead. Any conflicts that arise must be resolved manually. Copying Files with FTP Use Setup for Home Networks Only The setup featured in the following sections is suited for use in home networks only. Do not deploy it to sites wholly unprotected by firewalls and do not enable world wide access. To configure an FTP server, proceed as follows: Prepare the FTP server:Install the vsftp \tpackage.Open a shell, login as root and save a backup copy of \t/etc/vsftpd.conf:cp /etc/vsftpd.conf /etc/vsftpd.conf.bakCreate an access point for anonymous FTPmkdir ~ftp/incoming chown -R ftp:ftp ~ftp/incomingReplace the configuration files depending on the scenario you prefer (refer to the manual page of vsftpd.conf for advanced configuration options):Allowing Anonymous Read and Write Access# listen=YES \t\t\t\t\t\t\t\t\t # Enable anonymous access to FTP server anonymous_enable=YES \t\t\t\t\t\t\t\t\t # local_enable=YES # Enable write access write_enable=YES anon_upload_enable=YES anon_mkdir_write_enable=YES dirmessage_enable=YES # Write log file xferlog_enable=YES connect_from_port_20=YES chown_uploads=YES chown_username=ftp ftpd_banner=Welcome to FTP service. anon_root=/srv/ftpGrant Restricted Permissions to FTP Users (Home Only)chroot_local_users=YESRestart the FTP server:rcvsftp startOn the client, just enter the URL ftp://HOST in your browser or FTP client. Replace HOST with either the hostname or the IP address of your server. There are many graphical user interfaces available that are suited to browse the contents of your FTP server. For a list of them, just enter FTP at the search prompt of the YaST package manager. Courtesy: openSUSE Documentation Hope it Helps! :) ",
+            "date": "Answered January 30, 2017",
+            "views": "26",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Basu Kumar",
+                    "user_href": "/profile/Basu-Kumar"
+                },
+                {
+                    "user_id": "Vaibhav Bansal",
+                    "user_href": "/profile/Vaibhav-Bansal-37"
+                },
+                {
+                    "user_id": "Deepraj Chandra",
+                    "user_href": "/profile/Deepraj-Chandra"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chanchal Panda",
+                "href": "/profile/Chanchal-Panda"
+            },
+            "answer_text": "Your query has two part. You not able to ping another host on different network. You need to configure routing ( a software routing will do the trick)Want to send packet from one host to another? Do you know how to do it? If yes then its very simple. Else you need to through some extra detail. Are you trying to write both server and client part or you just want to use n existing server and code the client part only?",
+            "date": "Answered January 30, 2017",
+            "views": "12",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Joe Chen",
+                    "user_href": "/profile/Joe-Chen-237"
+                },
+                {
+                    "user_id": "Suman Shrestha",
+                    "user_href": "/profile/Suman-Shrestha-190"
+                },
+                {
+                    "user_id": "Deepraj Chandra",
+                    "user_href": "/profile/Deepraj-Chandra"
+                }
+            ]
+        }
+    ]
+}

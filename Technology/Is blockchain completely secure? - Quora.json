@@ -1,0 +1,82 @@
+{
+    "title": "Is blockchain completely secure? - Quora",
+    "tags": [
+        "Blockchain (database)",
+        "Security",
+        "Bitcoin"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alexandra Goldberg",
+                "href": "/profile/Alexandra-Goldberg-2"
+            },
+            "answer_text": "No. Encryption is fundamental. We believe that any communication within our system, and data at rest must be encrypted. \u201cEncryption protects our data. It protects our data when it's sitting on our computers and in data centers, and it protects it when it's being transmitted around the Internet. It protects our conversations, whether video, voice, or text. It protects our privacy. It protects our anonymity. And sometimes, it protects our lives.\u201d \u2014 Bruce Schneier, Fellow at the Berkman Center for Internet & Society, Harvard Law School All communication within COTI infrastructure occurs over TLS1.2 encrypted channels. TLS1.0, SSLv2 and SSLv3 have been disabled, in accordance with NIST guidelines All data-at-rest is encrypted with FIPS140-2 technology. This is the same level of encryption required by the United States Department of Defense, and recommended via NIST. Zero Knowledge Infrastructure As another security tactic, we have implemented a zero-knowledge architecture when communicating with client devices. Client devices (app, web browser, etc.) connect through a public API. This public API has no direct access to databases that hold financial information. The public API only has access to authentication mechanisms to verify and authenticate clients. It passes all operations to a private API which brokers requests out to other micro-services as required. Segregating calls in this manner provides two layers of security: 1. It helps to thwart pivot attacks 2. It helps to prevent SQL injection Industry Best Practices Best Practices are so-named for a good reason \u2014 they work. We have followed Industry standards where practical, especially when it comes to reliability and availability. Every facet of our infrastructure has been tuned for high availability. We operate in geographically diversified locations for disaster aversion, as well as local latency and privacy concerns. Our datacenters are located in countries with stable governments that have a track record of supporting and demanding privacy standards. Our datacenters are in countries with highly reliable internet connections, and are located away from environmental problem areas; we do not have data centers in locations prone to Natural Disasters or conflict zones. We operate with fully redundant data-sets and automated failover mechanisms. If an outage were to hit a facility in Europe, the traffic would be dynamically routed to our other facilities without any impact to the underlying data. In the event of a continental failure, traffic would still be dynamically routed to other facilities without any data loss. ",
+            "date": "Answered November 8, 2017",
+            "views": "716",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alex Mills",
+                    "user_href": "/profile/Alex-Mills-4"
+                },
+                {
+                    "user_id": "Hemal Patil",
+                    "user_href": "/profile/Hemal-Patil"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sophia Gold",
+                "href": "/profile/Sophia-Gold-2"
+            },
+            "answer_text": "Essentially, yes. The Bitcoin blockchain consists of the 256 bit version of the widely used SHA-2 hash function. For comparison, its predecessor SHA-1 (which was officially deprecated in 2011) should theoretically take 2^80 operations to brute force, although various researchers demonstrated a number of weaknesses culminating in Marc Stevens proving a full collision could be obtained in as little as 2^61 operations, which he estimated would cost $2.77M in 2010. Earlier this year it was broken for the first time by Google, who released two PDFs with the same hash, requiring 110 GPU-years each. For reference, Google charges $.70/hour for GPUs on their cloud platform, which puts an estimated market value of this attack at $674,520. Bitcoin is currently valued at $2,525 or roughly 0.37% of that, which would make such an effort far from worthwhile if it was possible. Except it isn\u2019t\u2026 In reality Bitcoin uses SHA-2 instead of SHA-1, which has never been broken in practice and the current best meet-in-the-middle preimage attack requires 2^511.5 operations\u2026which would take centuries to complete. Ethereum uses a custom variant of SHA-3 called Ethash that uses various seed sizes to generate a 1GB block. SHA-3 was introduced in 2015 for the primary purpose of being able to produce large hashes through key stretching, at the expense of running much slower when implemented in software. I\u2019m not personally aware of any attacks against it having been published as SHA-2 is still considered extremely secure and likely will be for a long time to come. The point is blockchains themselves are not the problem, it\u2019s the applications that runs on them. Much of that is just regular software when it clearly shouldn\u2019t be treated as such. The cause of the $50mm DAO hack last year that prompted a hard-fork in Ethereum or, even more flagrantly, the $32mm stolen from Parity wallets last week was just incompetent software design. The former was referred to as a \u201crecursive call bug,\u201d which was essentially a race condition allowing the same funds to be spent numerous times without depleting themselves (in other words, the exact bug used in textbooks to demonstrate how not to program distributed systems for longer than I\u2019ve been alive\u2026). The latter had a public function used to initialize wallets to a particular owner that didn\u2019t check whether they had already been assigned. Do you ever hear programmers referring to things like formal methods, high assurance, and concurrent programming as impractical? All while insisting on the superiority of techniques from an era before computers were even networked? This is what happens when those people are allowed to write software that handles large amounts of money. When it comes to finance, though, one person\u2019s loss is usually another one\u2019s gain. And I actually don\u2019t mean the hackers. Many programmers make a living cleaning up and protecting against the incompetent ones\u2019 messes. In the blockchain business it\u2019s reaching the point of a business model. ",
+            "date": "Answered July 25, 2017",
+            "views": "4",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nikhil Srinivas",
+                    "user_href": "/profile/Nikhil-Srinivas-18"
+                },
+                {
+                    "user_id": "Andy Sizer",
+                    "user_href": "/profile/Andy-Sizer-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/D-I-Sclaimer"
+                },
+                {
+                    "user_id": "Fede Leguizamo",
+                    "user_href": "/profile/Fede-Leguizamo"
+                },
+                {
+                    "user_id": "Jithu Gregary",
+                    "user_href": "/profile/Jithu-Gregary"
+                },
+                {
+                    "user_id": "Rufinus Ondieki",
+                    "user_href": "/profile/Rufinus-Ondieki"
+                },
+                {
+                    "user_id": "P\u00e1ll Haraldsson",
+                    "user_href": "/profile/P\u00e1ll-Haraldsson"
+                },
+                {
+                    "user_id": "Kalyan Ayyagari",
+                    "user_href": "/profile/Kalyan-Ayyagari-1"
+                },
+                {
+                    "user_id": "Mervin Fugelsnes",
+                    "user_href": "/profile/Mervin-Fugelsnes"
+                },
+                {
+                    "user_id": "Pedro Matias",
+                    "user_href": "/profile/Pedro-Matias-3"
+                }
+            ]
+        }
+    ]
+}

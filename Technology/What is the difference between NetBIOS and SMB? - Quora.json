@@ -1,0 +1,75 @@
+{
+    "title": "What is the difference between NetBIOS and SMB? - Quora",
+    "tags": [
+        "SMB/CIFS",
+        "Samba (software)",
+        "Windows Vs. Linux",
+        "Network Protocols",
+        "Comparisons",
+        "Linux"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matt Seitz",
+                "href": "/profile/Matt-Seitz-1"
+            },
+            "answer_text": "The fundamental differences are: -NetBIOS is an API.  It gives a generic way for a software program to communicate with another computer on a network, without having to know the details of how the two computers will actually talk to each other. -NetBIOS is a simple and general purpose networking tool.  The NetBIOS API has only simple commands:  connect to a computer, send data to a computer, receive data from a computer.  It is up to the clients and servers that use the NetBIOS API to decide how to interpret the data they send and receive -NetBIOS is not a protocol. The NetBIOS API does not specify how two implementations of NetBIOS will actually talk to each other over a network.  So for two implementations of NetBIOS to communicate, they have to support a common network protocol.  Some common protocols for NetBIOS APIS to use are NetBEUI and NetBIOS-over-TCP. -SMB is a protocol.  It specifies the specific format of the data that computers will send to each other the network. -SMB is primarily designed for file sharing and printer sharing.  It is not intended as a general purpose networking tools -SMB is not an API.  SMB does not specify how a program can actually send an SMB command to another computer.  It only specifies the format of the command. The NetBIOS API and the SMB protocol are generally used together as follows: -An SMB client will use the NetBIOS API to send an SMB command to an SMB server, and to listen for replies from the SMB server. -An SMB server will use the NetBIOS API to listen for SMB commands from SMB clients, and to send replies to the SMB client But there is nothing requiring that NetBIOS and SMB  be used together.  An SMB client and SMB server could use other APIs, such as the Berkeley Sockets API, to communicate with each other.  Likewise, any network client and server could use the NetBIOS API to communicate with each other. ",
+            "date": "Answered May 27, 2017",
+            "views": "39",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ashish Agarwal",
+                    "user_href": "/profile/Ashish-Agarwal-1516"
+                },
+                {
+                    "user_id": "Syed Khalid",
+                    "user_href": "/profile/Syed-Khalid-3"
+                },
+                {
+                    "user_id": "Moataz Siraj",
+                    "user_href": "/profile/Moataz-Siraj"
+                },
+                {
+                    "user_id": "Thomas B Ragsdale",
+                    "user_href": "/profile/Thomas-B-Ragsdale"
+                },
+                {
+                    "user_id": "Dave Mitton",
+                    "user_href": "/profile/Dave-Mitton"
+                },
+                {
+                    "user_id": "David Kra",
+                    "user_href": "/profile/David-Kra"
+                },
+                {
+                    "user_id": "Rohan Sawant",
+                    "user_href": "/profile/Rohan-Sawant-16"
+                },
+                {
+                    "user_id": "Mohammed Siraj",
+                    "user_href": "/profile/Mohammed-Siraj-45"
+                },
+                {
+                    "user_id": "Partha Bhatta",
+                    "user_href": "/profile/Partha-Bhatta"
+                },
+                {
+                    "user_id": "Dawood Aijaz",
+                    "user_href": "/profile/Dawood-Aijaz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "J. W. Bruce Shaw",
+                "href": "/profile/J-W-Bruce-Shaw"
+            },
+            "answer_text": "NetBIOS is an obsolete naming service used by Microsoft. SMB stands for System Message Block and is the underlying protocol for Microsoft network file systems. It can also stand for Small to Medium Business. ",
+            "date": "Answered June 15, 2016",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

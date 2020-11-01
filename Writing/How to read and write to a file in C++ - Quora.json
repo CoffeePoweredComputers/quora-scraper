@@ -1,0 +1,26 @@
+{
+    "title": "How to read and write to a file in C++ - Quora",
+    "tags": [
+        "C++ (programming language)",
+        "C (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Manish Jha",
+                "href": "/profile/Manish-Jha-85"
+            },
+            "answer_text": "To read and write a file in C you can use fprintf and fscanf. fprintf is used to write to a file and fscanf is used to read from a file. Every file based i/o operation is done by declaring a pointer to a file as below. FILE *filePointer = fopen(\u201cfile.log\u201d, \u201cw\u201d); FILE : Structure defined to hold details about current file. fopen() : function to open the file(load in the memory). It accepts two arguments File name(full path if not in the same path where .c file is)Mode in which is to be opened(\u2018w\u2019 means write which is your case). You can google for other modes.",
+            "date": "Answered March 15, 2017",
+            "views": "507",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Santosh Kumar Sharma",
+                    "user_href": "/profile/Santosh-Kumar-Sharma-15"
+                }
+            ]
+        }
+    ]
+}

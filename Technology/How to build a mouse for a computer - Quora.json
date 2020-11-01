@@ -1,0 +1,41 @@
+{
+    "title": "How to build a mouse for a computer - Quora",
+    "tags": [
+        "Computer Mouses",
+        "Computer Peripherals",
+        "Computer Mice",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wim ten Brink",
+                "href": "/profile/Wim-ten-Brink-1"
+            },
+            "answer_text": " A computer mouse has a software and hardware component. The software will have to communicate over the USB port with the operating system on the computer while the hardware will have to register specific commands and send those to the computer. A simple Arduino board should be enough as main processor for your mouse software and be able to link the hardware up to the system. At https://www.instructables.com/id/PC-Mouse-Made-With-Arduino-Uno-and-Joystick/ you will find some example of how to make it work but it has a serious flaw as it depends on an extra Java application running on the computer as \u201cmouse driver\u201d. But this is mostly because the Arduino Uno lacks some good USB support. This mouse version is not a true HID mouse. At Arduino - JoystickMouseControl you will find a better example that uses the Arduino Leonardo, Micro or Due board, which does have USB support. These use a mouse library and you can also attach a keyboard library so your board can pretend to be both a mouse and a keyboard. These would generate HID mice and thus be recognized without any extra software on your computer. If you want something smaller than an Arduino board then the smallest you could use would be an ATTiny85 processor. It\u2019s just a processor with 8 pins so there will be challenges to attach your mouse hardware to it. And as the processor lacks USB support, you would need something like the V-USB software emulator in the processor to pretend it\u2019s still is an USB device. There are hardware components that you can add to add this USB support but it would make the whole hardware scheme more complex. Or use the ATmega32U4 processor instead, as it has build-in USB support. (Be aware, it ends with U4, as there are many different ATmega32 processors and not all of them support USB!) When using a raw processor, you will also need to use a crystal as raw processors are slow by themselves. This is not very practical with an ATtiny as it only has 8 pins and the power, reset and crystal would eat up 5 pins. The USB connection would also need 2 pins so you\u2019d have just one pin left\u2026 So ATmega32U4 is the better choice with a 16MHz crystal, as it has 44 pins that you can use. Next to the software, you would need hardware that can respond to the user actions. You would need something for the left and right movements of the mouse and something for the up and down movements, plus the mouse buttons. Adding scroll wheel functionality might also be nice, which you do with the mouse.Move() function from the Arduino Mouse library. So, what kind of hardware would you need? Many just use a simple joystick controller and/or push buttons. You can also use rotary wheels and other techniques. It all depends on how you want the user to interact with the mouse. Some techniques will be more complex than others, though. ",
+            "date": "Updated August 29, 2018",
+            "views": "28",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Abinash Dash",
+                    "user_href": "/profile/Abinash-Dash-12"
+                },
+                {
+                    "user_id": "Ethan Proulx",
+                    "user_href": "/profile/Ethan-Proulx-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "A2A: You could hope to build a ball mouse. Before they became popular, I once visited a lab at MIT where they were building them. The tricky part is the pair of devices that detect and encode the amount of turning along the two axes. Each of those used a light shining through what looked like a little bitty squirrel cage. Interpretation of the pulses occurred on the attached computer. For a modern type optical mouse, no chance. The essence is an IC. You can\u2019t build an IC. You have to hire someone else to fabricate one for you. Getting the first one is a very expensive process. ",
+            "date": "Answered February 26, 2020",
+            "views": "919",
+            "upvotes": " Answer requested by James Cook"
+        }
+    ]
+}

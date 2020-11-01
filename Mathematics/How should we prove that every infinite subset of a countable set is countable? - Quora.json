@@ -1,0 +1,93 @@
+{
+    "title": "How should we prove that every infinite subset of a countable set is countable? - Quora",
+    "tags": [
+        "Set Theory",
+        "Infinity (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frank Hubeny",
+                "href": "/profile/Frank-Hubeny"
+            },
+            "answer_text": "According to Wikipedia a countable set can be defined as follows[1]: A set S is countable if there exists an injective function f from S to the natural numbers N = {0, 1, 2, 3, ...}. By assumption a set  is assumed to be countable. That means by this definition that there exists an injective function  from  to . We want to show that any subset of  is also countable. Let  be an arbitrary subset of . Then  with its domain restricted to  remains an injective function although now from  to . Hence  is countable. In this proof  could be either finite or infinite. Footnotes[1] Countable set - Wikipedia",
+            "date": "Answered November 19, 2019",
+            "views": "318",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Arash Jamshidi",
+                    "user_href": "/profile/Arash-Jamshidi-2"
+                },
+                {
+                    "user_id": "Danya Rose",
+                    "user_href": "/profile/Danya-Rose"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lu\u00eds Sequeira",
+                "href": "/profile/Lu\u00eds-Sequeira-2"
+            },
+            "answer_text": "Let A be countable and B an infinite subset of A. The inclusion map is an injection from B to A. By a standard argument a countable set maps injectively into any infinite set (let me know in the comments in case you need help with this part). So A injects into B and B injects into A. By the CSB Theorem, there is a bijection between A and B. (CSB stands for Cantor-Schr\u00f6der-Bernstein) ",
+            "date": "Answered October 3, 2018",
+            "views": "837",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anton Fahlgren",
+                    "user_href": "/profile/Anton-Fahlgren-2"
+                },
+                {
+                    "user_id": "Nick Picard",
+                    "user_href": "/profile/Nick-Picard"
+                },
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Rj-Y-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Qiaochu Yuan",
+                "href": "/profile/Qiaochu-Yuan-1"
+            },
+            "answer_text": "By counting them! It suffices to prove that every infinite subset of the natural numbers  is countable, and they can be counted very explicitly: you just count them in order, starting from the smallest one and going to the next smallest one, etc. (This is a sketch but it can be fleshed out rigorously; you can define the bijection above by induction and the well-ordering principle.) ",
+            "date": "Answered October 3, 2019",
+            "views": "29",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anindya Mahajan",
+                    "user_href": "/profile/Anindya-Mahajan-1"
+                },
+                {
+                    "user_id": "Valiant Asfar",
+                    "user_href": "/profile/Valiant-Asfar"
+                },
+                {
+                    "user_id": "Vladimir Pitch",
+                    "user_href": "/profile/Vladimir-Pitch"
+                },
+                {
+                    "user_id": "Satvik Beri",
+                    "user_href": "/profile/Satvik-Beri"
+                },
+                {
+                    "user_id": "Vikas Dubey",
+                    "user_href": "/profile/\u0bb5\u0bbf\u0b95\u0bbe\u0bb8\u0bcd-\u0ba4\u0bc1\u0baa\u0bc7\u0baf\u0bcd-Vikas-Dubey"
+                }
+            ]
+        }
+    ]
+}

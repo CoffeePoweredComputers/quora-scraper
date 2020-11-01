@@ -1,0 +1,70 @@
+{
+    "title": "What's the difference between a linear transformation and a non-linear transformation, can any one give some intuitive explanation? - Quora",
+    "tags": [
+        "Transformation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Samuel Brum Martins",
+                "href": "/profile/Samuel-Brum-Martins"
+            },
+            "answer_text": "Imagine a transformation as a machine that takes an input and chugs out an output. The input and output can be various types of mathematical objects, such as number or vectors but many more as well. Now take a and b each as one of these objects. A transformation is linear if: When you take the transformation of a and multiply it by a number (a scalar), the result is the same as multiplying a by the number and then applying the transformation.AND The transformation of (a+b) is the same as summing the transformation of a and the transformation of b individually.Ok, this is the definition. Now, how can we break it down in a simpler manner? Well, a transformation is linear if its output is proportional to its input, as in: You double the hours you work, you get twice the money;And if it is additive, as in: If you and your friend make 6 cakes in an hour but each one can make 3 cakes separately in one hour and end up with 6 cakes anyway;Of course you can see that sometimes these examples above do not correspond to reality. You might work twice the hours, but make a big breakthrough in a project and receive a big bonus, maybe ten times your normal salary. On the second example you could apply something as an assembly line and, while you and your friend can bake 3 cakes separately, together you could make maybe 10 cakes. These counterpoints are examples of non linear transformations. Basically if a transformation does not satisfy those two proprierties in the beggining, it\u2019s non-linear. Hope that helped, have a good one! ",
+            "date": "Answered December 31, 2016",
+            "views": "55",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nida Zakir",
+                    "user_href": "/profile/Nida-Zakir-3"
+                },
+                {
+                    "user_id": "Mark Dirac",
+                    "user_href": "/profile/Mark-Dirac"
+                },
+                {
+                    "user_id": "Saurabh Kannawar",
+                    "user_href": "/profile/Saurabh-Kannawar"
+                },
+                {
+                    "user_id": "Ewa Turska",
+                    "user_href": "/profile/Ewa-Turska"
+                },
+                {
+                    "user_id": "Enam Biswas",
+                    "user_href": "/profile/Enam-Biswas"
+                },
+                {
+                    "user_id": "Mumtahina Jahan",
+                    "user_href": "/profile/Mumtahina-Jahan"
+                },
+                {
+                    "user_id": "Ali Enver Arslan",
+                    "user_href": "/profile/Ali-Enver-Arslan-1"
+                },
+                {
+                    "user_id": "Kyle Joseph",
+                    "user_href": "/profile/Kyle-Joseph-57"
+                },
+                {
+                    "user_id": "Arijit Roy",
+                    "user_href": "/profile/Arijit-Roy-65"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/amjass"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ethan Martin",
+                "href": "/profile/Ethan-Martin-81"
+            },
+            "answer_text": "A non-linear transformation is any transformation that is not linear. [math]f(x) = x^2[/math] for instance. The reason why there is so much emphasis on linear transformations in linear algebra is because those are the so called \u201cstructure preserving maps\u201d aka the homomorphisms between vector spaces. In general, a homomorphism [math]\\varphi[/math] between objects [math]X[/math] whose elements can be operated on with an arbitrary operation [math]\\circ,[/math] and [math]Y[/math] under an arbitrary operation [math]+[/math] have the property that for all [math]x,y \\in X[/math], [math]\\varphi(x \\circ y) = \\varphi(x)+\\varphi(y).[/math] Linear transformations would simply be simultaneous homomorphisms of vector addition and scalar multiplication. ",
+            "date": "Answered October 3, 2019",
+            "views": "985",
+            "upvotes": "0"
+        }
+    ]
+}

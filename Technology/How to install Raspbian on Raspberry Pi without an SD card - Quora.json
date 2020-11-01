@@ -1,0 +1,46 @@
+{
+    "title": "How to install Raspbian on Raspberry Pi without an SD card - Quora",
+    "tags": [
+        "Raspberry Pi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Oliver Chen",
+                "href": "/profile/Oliver-Chen-118"
+            },
+            "answer_text": "You can\u2019t install Raspbian on a Raspberry Pi without an SD card, per se, but it is possible to boot your Raspberry Pi from an image of Raspbian from your computer. There are ways, I\u2019m sure, of booting a Raspberry Pi from a USB Mass Storage Device, and I\u2019ve heard of it being done. However, the steps one must take to perform such a thing and the effort that one would have to put into it would be, beyond doubt, impractical. Anyway, there is an open source program you could install on your computer if you wanted to boot your Raspberry Pi without a SD card. However, note that you will have the Pi connected to your computer when you want it in operation, for it is booting off of an image on the computer. The program is called USBBoot. GitHub: raspberrypi/usbboot ",
+            "date": "Answered January 25, 2020",
+            "views": "23",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Richard Alexander Haydon",
+                "href": "/profile/Richard-Alexander-Haydon"
+            },
+            "answer_text": "As the Raspberry Pi series of boards have no on-board/integrated eMMC or other non-volatile storage method, there is no way to boot Raspbian without a SD card or external hardware. Instead of using a SD card, you should consider creating a boot disk using a conventional USB flash stick. The drawback here is that you still have to boot from the SD card in order to let your other disk take over, as the RPi is pre-configured to boot from the SD. If you want to boot an operating system from a SBC without a memory card or external components, consider getting a BeagleBone Black. ",
+            "date": "Answered November 27, 2016",
+            "views": "135",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Renato Crepisky Francisco",
+                    "user_href": "/profile/Renato-Crepisky-Francisco"
+                },
+                {
+                    "user_id": "Hari Hara Sudhan",
+                    "user_href": "/profile/\u0b85\u0bb0\u0bbf\u0b95\u0bb0\u0b9a\u0bc1\u0ba4\u0ba9\u0bcd-Hari-Hara-Sudhan"
+                },
+                {
+                    "user_id": "Tal Cohen",
+                    "user_href": "/profile/Tal-Cohen-1"
+                },
+                {
+                    "user_id": "Marco-Luis Salcedo Tovar",
+                    "user_href": "/profile/Marco-Luis-Salcedo-Tovar"
+                }
+            ]
+        }
+    ]
+}

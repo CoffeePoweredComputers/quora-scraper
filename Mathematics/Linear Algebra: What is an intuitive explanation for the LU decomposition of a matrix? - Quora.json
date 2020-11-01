@@ -1,0 +1,58 @@
+{
+    "title": "Linear Algebra: What is an intuitive explanation for the LU decomposition of a matrix? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Numerical Linear Algebra",
+        "Intuitive Explanations",
+        "Numerical Analysis",
+        "Matrix Computations",
+        "Matrices (mathematics)",
+        "Applied Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Abhinav Maurya",
+                "href": "/profile/Abhinav-Maurya"
+            },
+            "answer_text": "When performing the transformation from A to U, one goes through columns sequentially. For each column, one uses multiples of the pivot row to zero out the elements below the pivot. In case the pivot is zero, one performs a row exchange. Thus, one uses two kinds of elementary transformations: Row Addition Transformations and Row Switching Transformations.Let us ignore row exchanges for the purpose of this answer. They arise as edge cases with zero pivots and the corresponding transformation is [math]PA = LU[/math] where P is a Permutation matrix. If there are no row exchanges, P is the identity matrix and we get the simple case of [math]A = LU[/math]. Thus, the only kind of elementary row transformations we need to consider are Row Addition Transformations. This simplifying assumption makes the entire process of transforming A to U incur a fixed number of row additions without having to worry about the conditional row exchanges.You repeatedly perform row addition transformations wherein you use multiples of the current pivot to zero out matrix elements below the pivot. Every row addition transformation we perform on A to transform it to U corresponds to pre-multiplication on A by a Row Addition Elementary Matrix which looks like   When the above matrix T pre-multiplies A, its rows serve as coefficients for the linear combinations of rows of A (an awesomely useful way of looking at matrix multiplication). Thus, the first row of T picks up the first row of A and so on, except the row with the scalar m in the [math]i,j_{th}[/math] position. This row performs the following operation: [math] A[i,:] \\leftarrow m.A[j,:] + A[i,:][/math] where m is chosen to zero out [math]A_{i,j}[/math].Thus, the transformation from A to U can be represented as [math]E_{n-1,n}E_{n-2,n}E_{n-2,n-1}...E_{1,3}E_{1,2}A = U[/math] where pre-multiplication by [math]E_{i,j}[/math] corresponds to the row addition transformation which uses the [math]i_{th}[/math] pivot i.e. [math]i,i_{th}[/math] element to zero out the [math]j,i_{th}[/math] element of the matrix (where [math]j > i[/math]).Since you do not encounter any zero pivots, the elementary matrices that you pre-multiply with are all lower triangular matrices. (If there are zero pivots, you perform a row exchange. The corresponding elementary permutation matrix is not lower triangular.) Row addition elementary matrices are invertible and have lower triangular inverses as well. See Row Addition Elementary Matrix. Thus, [math]E_{n-1,n}E_{n-2,n}E_{n-2,n-1}...E_{1,3}E_{1,2}A = U[/math] implies [math]A = E_{1,2}^{-1}E_{1,3}^{-1}...E_{n-2,n-1}^{-1}E_{n-2,n}^{-1}E_{n-1,n}^{-1}U[/math]. Since all the inverses on the RHS are lower triangular, their product is also lower triangular and is denoted as L. Thus, [math]A = LU[/math].A cleaner higher-level way to look at the above transformations is to group together the transformations by pivot. Thus, [math]E_{i,n}...E_{i,i+2}E_{i,i+1} = F_{i}[/math] where [math]F_{i}[/math] is the Frobenius Matrix (also known as Atomic Triangular Matrix) which is lower triangular. In keeping with the neatness of linear algebra, the inverse of a Frobenius matrix is also a Frobenius matrix. More importantly, the inverse is easily known since it corresponds to just reversing/negating the original row transformations encoded in the Frobenius matrix.L is the product of inverses of the Frobenius matrices corresponding to row transformations per pivot, and hence is also lower triangular. Since the inverse Frobenius matrices are already known from the original multipliers, the multipliers go into L since the inverse Frobenius matrices are multiplied together to get L.An even higher-level (though obfuscated) way to look at the transformations is to multiply all elementary row addition matrices into E. Hence, [math]EA = U[/math]. Since all elementary row addition matrices are lower triangular, E is lower triangular and its inverse is lower triangular as well. Hence, [math]EA = U \\rightarrow A = E^{-1}U \\rightarrow A = LU[/math].",
+            "date": "Answered June 23, 2014",
+            "views": "23",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Duy Phan",
+                    "user_href": "/profile/Duy-Phan-14"
+                },
+                {
+                    "user_id": "Matthieu Poullet",
+                    "user_href": "/profile/Matthieu-Poullet"
+                },
+                {
+                    "user_id": "Luka Senekovi\u010d",
+                    "user_href": "/profile/Luka-Senekovi\u010d"
+                },
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                },
+                {
+                    "user_id": "Jack Kinsella",
+                    "user_href": "/profile/Jack-Kinsella"
+                },
+                {
+                    "user_id": "Kushal D. Ghate",
+                    "user_href": "/profile/Kushal-D-Ghate"
+                },
+                {
+                    "user_id": "Nilanjan Sarkar",
+                    "user_href": "/profile/Nilanjan-Sarkar"
+                },
+                {
+                    "user_id": "Govind Gopakumar",
+                    "user_href": "/profile/Govind-Gopakumar"
+                }
+            ]
+        }
+    ]
+}

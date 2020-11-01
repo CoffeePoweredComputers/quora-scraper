@@ -1,0 +1,112 @@
+{
+    "title": "If something has a probability of 1 in 100, what is the probability of it happening in 100 samples? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Chayat",
+                "href": "/profile/Jonathan-Chayat"
+            },
+            "answer_text": "Justin Rising has a good answer, but in his spirit of looking at the problem more generally, I'm going to propose yet another way of looking at it - the Poisson distribution. Let me explain a little more about that (informally). The Poisson distribution describes the probability of an event happening [math]k[/math] times during a \"memoryless\" process with an average rate of [math]\\lambda[/math]. Let me explain a little more about that. A memoryless process is one where events happen at a certain average rate but the probability of an event happening at any given time is independent of the past. To derive the formula for the Poisson distribution we take a certain interval of time and slice it to  [math]n[/math] slices ([math]n[/math] being a large number). Now because the slices are so small, we can assume that the probability for an event happening more than once in each slice is 0, meaning that for each slice there are only two options: either the event happens or it doesn't. Because we are looking at a memoryless process we also know that an event happening in a certain slice is independent of it happening in any other slice. Since the expected number of events for the whole interval is [math]\\lambda[/math] we have to set the probability for it happening in each slice at [math]\\lambda/n[/math].  We can now treat our process as having a Binomial distribution. A Binomial distribution measures the probability of getting [math]k[/math] heads if you flip [math]n[/math] times a biased coin having a probability of [math]p[/math] for getting a head. It is given by [math]B(k;n,p) = \\Pr(X = k) = {n\\choose k}p^k(1-p)^{n-k}[/math]  In our case (Poisson distribution) [math]p = \\lambda/n[/math]. When you do the limit [math]n \\rightarrow \\infty[/math] you will get the the formula for the Poisson distribution: [math]\\!P(k; \\lambda)= \\Pr(X=k)= \\frac{\\lambda^k e^{-\\lambda}}{k!}[/math] So why did I bother telling you that long story? Because I want you to notice how the problem you presented is really very similar to what we did to derive the Poisson distribution: in both cases we look at performing a large number of trials each having a small chance of success. This means that the Poisson distribution is an excellent tool for reasoning about your problem. Now in the case of your question, we are going to look at [math]\\lambda = 1[/math] because the expected number of events happening is [math]5000*\\frac{1}{5000}=1[/math] (mean of a sum is the sum of means). We are going to look at [math]k=0[/math] meaning we are going to look at the probability of 0 events happening. What we get is [math]\\!P(0; 1)= \\frac{1^0 e^{-1}}{0!}= e^{-1}[/math]. The probability of at least one event happening is then of course [math]1 - e^{-1} \\approx 0.632[/math]. Right now you might think that I've wasted a lot of your time because Justin Rising and Mark Whitfield before him already gave us that answer. Well, first, I'm really happy that my method gives the same result. Second, the new method now allows us to answer more general questions like: What is the chance of an event happening more than once if we do 7500 attempts? Well in that case we are going to look at [math]\\lambda=7500/5000=1.5[/math] and [math]k=0,1[/math]. [math]\\!P(0; 1.5)= \\frac{1.5^0 e^{-1.5}}{0!} \\approx 0.223[/math] and [math]\\!P(1; 1.5)= \\frac{1.5^1 e^{-1.5}}{1!} \\approx 0.335[/math] so we get that the answer is [math]1- P(0; 1.5) - P(1; 1.5) \\approx 0.442[/math] Hope this helps,    Jon ",
+            "date": "Answered June 14, 2013",
+            "views": "49",
+            "upvotes": " View 37 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yair Livne",
+                    "user_href": "/profile/Yair-Livne"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Brent Collins",
+                    "user_href": "/profile/Brent-Collins-2"
+                },
+                {
+                    "user_id": "Haralambos Kasapidis",
+                    "user_href": "/profile/Haralambos-Kasapidis"
+                },
+                {
+                    "user_id": "Benjamin Covington",
+                    "user_href": "/profile/Benjamin-Covington-6"
+                },
+                {
+                    "user_id": "Gary Kusuma",
+                    "user_href": "/profile/Gary-Kusuma"
+                },
+                {
+                    "user_id": "Assela Pathirana",
+                    "user_href": "/profile/Assela-Pathirana"
+                },
+                {
+                    "user_id": "Payal Bhatia",
+                    "user_href": "/profile/Payal-Bhatia-2"
+                },
+                {
+                    "user_id": "Patrick Cosgrove",
+                    "user_href": "/profile/Patrick-Cosgrove"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Noah Forman",
+                "href": "/profile/Noah-Forman"
+            },
+            "answer_text": "If you make 100 attempts, and each one has probability [math]\\frac{1}{100}[/math] of success, then the chance of having no successes is [math](1-\\frac{1}{100})^{100}[/math], and so the probability of having at least one success is [math]1-(\\frac{99}{100})^{100}[/math]. In fact, this is approximately [math]1- e^{-1}[/math] - read on! There are actually some interesting limits and connections here. If you have a [math]1/N[/math] chance of success on each of [math]N[/math] trials, for some large number [math]N[/math], then the probability of failing every attempt is[math](1-\\frac{1}{N})^N \\approx \\lim_{n\\uparrow\\infty}(1-\\frac{1}{n})^n = e^{-1}[/math]And more generally, if [math]p[/math] is really small, and you make [math]N[/math] attempts with probability [math]p[/math] of success on each, then the probability of having no successes is[math](1-p)^N = [(1-p)^{\\frac{1}{p}}]^{Np} \\approx [e^{-1}]^{Np} = e^{-Np}.[/math] ",
+            "date": "Answered September 20, 2015",
+            "views": "122",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Matt Davis",
+                    "user_href": "/profile/Matt-Davis-191"
+                },
+                {
+                    "user_id": "Adam Balin",
+                    "user_href": "/profile/Adam-Balin"
+                },
+                {
+                    "user_id": "Christine Rosquist",
+                    "user_href": "/profile/Christine-Rosquist"
+                },
+                {
+                    "user_id": "Matt Davis",
+                    "user_href": "/profile/Matt-Davis-190"
+                },
+                {
+                    "user_id": "Matthew Menard",
+                    "user_href": "/profile/Matthew-Menard"
+                },
+                {
+                    "user_id": "Yuanwen Wang",
+                    "user_href": "/profile/Yuanwen-Wang"
+                },
+                {
+                    "user_id": "Ryan Fox Squire",
+                    "user_href": "/profile/Ryan-Fox-Squire"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Dale Thomas",
+                    "user_href": "/profile/\u30c8\u30fc\u30de\u30b9-\u30c7\u30fc\u30eb-Dale-Thomas"
+                },
+                {
+                    "user_id": "Michal Fori\u0161ek",
+                    "user_href": "/profile/Michal-Fori\u0161ek"
+                }
+            ]
+        }
+    ]
+}

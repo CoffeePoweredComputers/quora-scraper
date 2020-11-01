@@ -1,0 +1,45 @@
+{
+    "title": "Why is it true that more nodes in an orbital result in a higher energy? - Quora",
+    "tags": [
+        "Particle Physics",
+        "Physics of Everyday Life",
+        "Science",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brad Barker",
+                "href": "/profile/Brad-Barker-24"
+            },
+            "answer_text": "In quantum mechanics, the kinetic energy of a quantum state is determined by the (real-space) curvature of the wavefunction. It should be visually recognizable that a shape with more nodes has more curvature than a shape with fewer. Think for a moment about a pair of plane-wave wavefunctions, with different wavelengths. From the de Broglie relations, the plane-wave with longer wavelength will have less momentum and therefore less kinetic energy. And it certainly has fewer nodes than the other, as well. The full argument is just a generalization of that point. You can consider a pair of real wavefunctions, for instance, which would represent bound states in one dimension. A Gaussian, say, and some polynomial times a Gaussian will have different kinetic energies, surely, with the zeros of the polynomial giving the nodes of that higher-energy wavefunction. You can brute-force solve for the expectation value of the kinetic energies of each wavefunction, but the physical reasoning is the same as for planewaves. Indeed, a sketch of a proof might use a Fourier transform of these real-space orbitals to expand them in planewaves; the state with more nodes will have significant contribution from smaller wavelengths than the simple Gaussian. I was working on a general proof, but it was taking a bit more time than I prefer for a single question for this website. Let me know if there\u2019s anything unclear regarding the above. ",
+            "date": "Answered October 19, 2018",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Edward Measure",
+                    "user_href": "/profile/Edward-Measure-1"
+                },
+                {
+                    "user_id": "Birendra Chhotaray",
+                    "user_href": "/profile/Birendra-Chhotaray"
+                },
+                {
+                    "user_id": "Parichita Das",
+                    "user_href": "/profile/Parichita-Das-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bruce Thawne",
+                "href": "/profile/Bruce-Thawne"
+            },
+            "answer_text": "Speaking of orbitals and nodes, I assume you are referring to the properties of a wavefunction. We can calculate the energy of a particle, which is characterized by its wavefunction:   As the wavefunction has more nodes, it also gains more points where the second derivative is the greatest. All in all the above formula lead to a greater energy. But that\u2019s not enough to argument, let\u2019s take a look on the derivative, assuming our wavefunction looks like this:  we get\u2026  Both only differ in one factor  Since the schr\u00f6dinger equation makes one multiplicate this with a negative factor, it always yields a positive result for the energy  But that\u2019s not the point. The point is that we have the following relation:  More nodes make the function have a shorter wavelength ! And this easily explains how the number of nodes affects the kinetic energy of a particle. Stable states are always multiples of the wavenumber :   with the number of nodes    ",
+            "date": "Answered June 30, 2020",
+            "views": "386",
+            "upvotes": "0"
+        }
+    ]
+}

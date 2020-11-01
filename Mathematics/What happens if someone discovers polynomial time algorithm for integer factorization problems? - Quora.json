@@ -1,0 +1,49 @@
+{
+    "title": "What happens if someone discovers polynomial time algorithm for integer factorization problems? - Quora",
+    "tags": [
+        "Public-key Cryptography",
+        "Cryptography",
+        "Mathematics and Algorithms",
+        "Prime Numbers",
+        "Number Theory",
+        "Security"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dana Jacobsen",
+                "href": "/profile/Dana-Jacobsen"
+            },
+            "answer_text": "Let me give a different view. The problem of primality was long thought to be in P, but we didn't have a deterministic polynomial time algorithm until AKS was discovered in 2002.  What practical impacts has it had?  None.  Sure it's polynomial time, but it's really slow due to a large exponent and large constants.  It is of theretical importance, and it still offers some hope that we could come up with improvements, but for now we continue to use the non-deterministic-polynomial-time algorithms we were using before. Unlike primality, I believe we lean toward integer factorization not being a polynomial time problem.  But let's say we get surprised and an algorithm is found.  From the previous example, it is quite possible it would have no impact at all other than to news organizations and the endless explaining we would all have to do.  Like some of the primality methods, our best current factoring algorithms are sub-exponential time.  So it may be that our polynomial time algorithm does not become faster until key sizes are billions of orders of magnitude larger than we currently use, making it of no practical use at all.  We would probably get quite nervous however, as then the door is much farther open for someone (e.g. the NSA) hiding a better solution. For example, algorithm 1 is not polynomial time.  It has complexity [math]O(\\log^{\\log\\log\\log n}(n))[/math].  Algorithm 2 is polynomial time.  It has complexity [math]O(\\log^{8}(n))[/math].   Algorithm 1, despite not being polynomial time, will be faster than algorithm 2 for all sizes of numbers we would care about.  That is, the crossover point is much past the point of computational feasibility. ",
+            "date": "Answered July 25, 2015",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Junze Xu",
+                    "user_href": "/profile/Junze-Xu-5"
+                },
+                {
+                    "user_id": "Ash SoAccount",
+                    "user_href": "/profile/Ash-SoAccount"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sumit Omprakash Toshniwal",
+                "href": "/profile/Sumit-Omprakash-Toshniwal"
+            },
+            "answer_text": "The RSA algorithm works because there is no polynomial time algorithm exists for integer factorization. Now, you imagine if someone finds the polynomial time algorithm then following things may happen :  The HTTPS will not work. The man in the middle attack will again become famous. So our most of the online life will be lostWe would not be able to make transaction by sitting at home.We can't enjoy the online shopping at all. Unless some new protocol comes into existence.On the other side it will be possible for us to enjoy the life with much less internet interventionWe will be living era of Facebook behind. More real life conversation would happenFinally researchers will find a new task to design some better encryption techniqueLife will be drastically changed of every individual. ",
+            "date": "Answered July 25, 2015",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Francesco Nuzzo",
+                    "user_href": "/profile/Francesco-Nuzzo"
+                }
+            ]
+        }
+    ]
+}

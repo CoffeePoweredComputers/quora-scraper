@@ -1,0 +1,45 @@
+{
+    "title": "My PC suddenly became very slow. After trying to reinstall Windows, it corrupted my M.2. We managed to get it fixed and running Windows, but I became even slower. Why? What can I do to help it? - Quora",
+    "tags": [
+        "Windows and PC Tech Support",
+        "Computer Advice",
+        "Windows 10",
+        "Tech Support",
+        "Personal Computers",
+        "Microsoft Windows",
+        "Operating Systems",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rick Chadderdon",
+                "href": "/profile/Rick-Chadderdon"
+            },
+            "answer_text": "A2A: It sounds very much as though your SSD Is failing. Reinstalling an OS cannot corrupt a properly functioning drive. If one does not have software running wild consuming CPU cycles, slowness is almost invariably caused by hardware problems. The most likely issue, especially in light of the information you\u2019ve provided, is the M.2 drive. Failing memory is a distant second possibility, although that usually causes crashes, not slowdowns. Your best bet at this time is to backup all of your personal files, then get a new M.2 drive and do a clean install of Windows and your applications. Definitely back up your important files before doing anything more with that computer. You can try using another computer to make a bootable Macrium Reflect USB key and image the drive to an external device, but if the drive is going bad this is likely to fail or take a very long time to complete. If you do successfully image the drive, you can then restore that image to a new M.2 drive. Good luck. ",
+            "date": "Answered April 3, 2020",
+            "views": "113",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "R\u0103zvan Sandu",
+                    "user_href": "/profile/R\u0103zvan-Sandu"
+                },
+                {
+                    "user_id": "HRH George J Rickle IV",
+                    "user_href": "/profile/HRH-George-J-Rickle-IV"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joseph Danko",
+                "href": "/profile/Joseph-Danko"
+            },
+            "answer_text": "Windows can have problems installing if the hard drive has corrupt partitions. You can try this during installation. Instead of starting the install goto REPAIR, then TROUBLESHOOTING, then COMMAND LINE. Run DISKPART, LIST DISK, SELECT DISK 0, CLEAN, EXIT. This cleans any leftover partitions and formats off the disk. Do the install. ",
+            "date": "Answered April 3, 2020",
+            "views": "43",
+            "upvotes": " Answer requested by Rachel Dawn"
+        }
+    ]
+}

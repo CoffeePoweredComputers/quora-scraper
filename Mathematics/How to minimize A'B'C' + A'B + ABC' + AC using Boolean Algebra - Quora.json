@@ -1,0 +1,213 @@
+{
+    "title": "How to minimize A'B'C' + A'B + ABC' + AC using Boolean Algebra - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Singer",
+                "href": "/profile/John-Singer-59"
+            },
+            "answer_text": "Just use the laws of boolean algebra.  Most of the rules are just arithmetic rules but changed a little for binary operation.   Y = A'B'C' + A'B + ABC' + AC Y = A'(B'C' +B) + A(BC'+C)  (Just factor out the terms like algebra) Now work on the sub terms (B'C' +B) and (BC' + C) to reduce them. B'C' + B  (using AND distributive law) becomes  (B + B')(B+C')   Now (B+B') is simply = 1 Use the same step for the (BC'+C) which becomes (B+C) NOW.. Y = A'(B+C') + A(B+C) Y = A'B + A'C' + AB + AC   (OR distributive law) (you distribute to see if you can combine and reduce any more terms.) Y = A'B + AB + A'C' + AC Y = B(A'+A) + A'C' + AC  where (A' + A) = 1 Y = A'C' + AC + B To verify this you will have to perform the operation manually for the original equation and the reduced equation.  You input all possible combinations of 3 variables.  You have to brute force this and if the output is the same for both the original equation and the reduced equation then the answer is correct.  ",
+            "date": "Answered March 8, 2016",
+            "views": "105",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mimi Ruth",
+                    "user_href": "/profile/Mimi-Ruth"
+                },
+                {
+                    "user_id": "Mes Haftu",
+                    "user_href": "/profile/Mes-Haftu"
+                },
+                {
+                    "user_id": "Prabin Ghimire",
+                    "user_href": "/profile/Prabin-Ghimire-34"
+                },
+                {
+                    "user_id": "Yap Wylie",
+                    "user_href": "/profile/Yap-Wylie"
+                },
+                {
+                    "user_id": "Armash Ansari",
+                    "user_href": "/profile/Armash-Ansari-5"
+                },
+                {
+                    "user_id": "Nishant Gulia",
+                    "user_href": "/profile/Nishant-Gulia-4"
+                },
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                },
+                {
+                    "user_id": "Azizul Haque Raz",
+                    "user_href": "/profile/Azizul-Haque-Raz"
+                },
+                {
+                    "user_id": "Samhitha Sree",
+                    "user_href": "/profile/Samhitha-Sree"
+                },
+                {
+                    "user_id": "Terry Hendrickson",
+                    "user_href": "/profile/Terry-Hendrickson-8"
+                },
+                {
+                    "user_id": "Kruthi M",
+                    "user_href": "/profile/Kruthi-M-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Strive-10"
+                },
+                {
+                    "user_id": "Yash Patel",
+                    "user_href": "/profile/Yash-Patel-124"
+                },
+                {
+                    "user_id": "Gregory Schoenmakers",
+                    "user_href": "/profile/Gregory-Schoenmakers"
+                },
+                {
+                    "user_id": "Abhay Singh Farswan",
+                    "user_href": "/profile/Abhay-Singh-Farswan"
+                },
+                {
+                    "user_id": "Pedro Abreu",
+                    "user_href": "/profile/Pedro-Abreu-8"
+                },
+                {
+                    "user_id": "Douglas Adolph",
+                    "user_href": "/profile/Douglas-Adolph"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "         Using K map it vanne simplified as   ",
+            "date": "Updated March 14, 2019",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Armash Ansari",
+                    "user_href": "/profile/Armash-Ansari-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lyle Cosmopolite",
+                "href": "/profile/Lyle-Cosmopolite"
+            },
+            "answer_text": "A'B'C' + A'B + ABC' + AC translates as: = (ABC)(AB')(A'B'C)(A'C') = (((ABC)(AB')))(((A'B'C)(A'C'))), [X = ((X)), 2x] = (A((BC)(B')))(A'((B'C)(C'))), [distributive law, 2x] = (A((BC)B))(A'((B'C)C)), [X = ((X))], 2x] = (A(C'B))(A'((B')C)), (XY)X = [(Y)X, 2x] = (A(BC'))(A'(BC)), [XY = YX and X = ((X))], which translates as: A'(B+C') + A(B+C) ",
+            "date": "Answered December 1, 2017",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kishore Prabhala",
+                "href": "/profile/Kishore-Prabhala"
+            },
+            "answer_text": "You have there variables: A, B, C So there are Eight possible input combinations as defined in the truth table and write the out put condition for each one using the equation. Map the output using a 3 input karnuagh map and minimize. This is the standard part of logic design course at B.Tech. 2nd year through out the world. If not learned find how to transfer outputs onto K-Maps and optimize. ",
+            "date": "Answered October 4, 2018",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Elad Ben-Tzedeff",
+                "href": "/profile/Elad-Ben-Tzedeff"
+            },
+            "answer_text": "Been a while since Using Boolean algebra.Let's prove in general a lemma  x+x'y = x+yx+x'y= x(x'+x+y) +x'y = xx'+xx+xy +x'y =(x+x')(x+y)=x+y Now we can starta'b'c'+a'b+abc'+ac= a'b'c'+a'b+abc'+a(b+b')c=b'(a'c'+ac)+b(a'+ac'+ac)=b'(a'c'+ac)+b(a'+a(c'+c))=b'(a'c'+ac)+b(a'+a)=b'(a'c'+ac)+b= {By the lemma } = b+ac+a'c' ",
+            "date": "Answered March 9, 2016",
+            "views": "39",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Douglas Adolph",
+                    "user_href": "/profile/Douglas-Adolph"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Venkatesh Dharmaraj",
+                "href": "/profile/Venkatesh-Dharmaraj-4"
+            },
+            "answer_text": " ",
+            "date": "Answered September 5, 2019",
+            "views": "969",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suresh Krishnaa R",
+                    "user_href": "/profile/Suresh-Krishnaa-R"
+                },
+                {
+                    "user_id": "Vishwa Jith",
+                    "user_href": "/profile/Vishwa-Jith-17"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin Cameron",
+                "href": "/profile/Kevin-Cameron-7"
+            },
+            "answer_text": "Try >> 3 variables << Karnaugh map solver ",
+            "date": "Answered March 10, 2016",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alexey Filippov",
+                    "user_href": "/profile/Alexey-Filippov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Samhitha Sree",
+                "href": "/profile/Samhitha-Sree"
+            },
+            "answer_text": " ",
+            "date": "Answered February 16, 2019",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aditi Awasthi",
+                    "user_href": "/profile/Aditi-Awasthi-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John R. Clymer",
+                "href": "/profile/John-R-Clymer"
+            },
+            "answer_text": "B + A\u2019C\u2019 + AC by KMap ",
+            "date": "Answered April 15, 2020",
+            "views": "367",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Halanagouda Majigoudar",
+                "href": "/profile/Halanagouda-Majigoudar"
+            },
+            "answer_text": "1 ",
+            "date": "Answered March 8, 2020",
+            "views": "367",
+            "upvotes": "0"
+        }
+    ]
+}

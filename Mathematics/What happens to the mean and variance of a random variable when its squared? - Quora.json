@@ -1,0 +1,71 @@
+{
+    "title": "What happens to the mean and variance of a random variable when its squared? - Quora",
+    "tags": [
+        "Randomness (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "The answer depends entirely on the distribution. There isn\u2019t much you can say at all about increases or decreases. If we let [math]\\mathbb E(X)=\\mu[/math] and [math]\\mathbb V(X)=\\sigma^2[/math] then one thing we do know is that: [math]\\mathbb E(X^2)=\\sigma^2+\\mu^2[/math] So we see that the mean of the square is equal to the variance of the random variable plus square of its mean. We also know that [math]\\mathbb V(X^2)=\\mathbb E(X^4)-\\mathbb E(X^2)^2[/math] [math]\\mathbb V(X^2)=\\mathbb E(X^4)-\\left(\\sigma^2+\\mu^2\\right)^2 [/math] [math]\\mathbb V(X^2)=\\mathbb E(X^4)-\\sigma^4-\\mu^4-2\\sigma^2\\mu^2[/math] So we can derive expressions for these quantities, but we cannot say much about how big they are. The mean of the square might be greater than, less than, or equal to the mean. (It might even be infinite while the mean is finite.) The variance of the square might be greater than, less than, or equal to the original variance. (Again, it might even be infinite while the variance of the original random variable is finite.) This really should not be all that surprising. Consider a positive constant. If the constant is in (0,1), its square is less than itself. If it is equal to one, its square is equal to itself, and otherwise, its square is greater than itself. So it follows that any random variable whose distribution is entirely in [math](0,1)[/math] will behave like the constant in that interval. Similarly, any random variable whose distribution is entirely in [math](1,\\infty)[/math] will behave like a constant in that interval. A random variable whose distribution has some probability in each interval can behave like either of these, or it can have the square of its mean equal to its mean. ",
+            "date": "Answered August 11, 2016",
+            "views": "104",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Bob Byers",
+                    "user_href": "/profile/Bob-Byers-3"
+                },
+                {
+                    "user_id": "Alex Boyko",
+                    "user_href": "/profile/Alex-Boyko"
+                },
+                {
+                    "user_id": "John Smith",
+                    "user_href": "/profile/John-Smith-26505"
+                },
+                {
+                    "user_id": "Zachary Taylor",
+                    "user_href": "/profile/Zachary-Taylor-3"
+                },
+                {
+                    "user_id": "Tim Hanson",
+                    "user_href": "/profile/Tim-Hanson-4"
+                },
+                {
+                    "user_id": "Gabriel Dernbach",
+                    "user_href": "/profile/Gabriel-Dernbach"
+                },
+                {
+                    "user_id": "Appiah Ernest Konadu",
+                    "user_href": "/profile/Appiah-Ernest-Konadu"
+                },
+                {
+                    "user_id": "Lance Everett",
+                    "user_href": "/profile/Lance-Everett-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joe McMahon",
+                "href": "/profile/Joe-McMahon-12"
+            },
+            "answer_text": "This depends on the problem you are looking at. We can calculate the square of the mean, but the answer will change drastically depending on what the mean and variance were originally. It can also depend on if it's a continuous or discrete random variable. This is a difficult question to answer without using specific numbers and scenarios. Theoretically we can describe what the mean and new variance will look like, but that does not help much unless you have numbers to see what's going on with the distribution. There are also some strange scenarios to consider. For instance, if mean we're 0, then the new mean would also be 0. If the mean we're a negative number, then squaring it would produce a positive number et cetera. ",
+            "date": "Answered August 18, 2016",
+            "views": "39",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "title": "How to skip one line in a file each time in Python - Quora",
+    "tags": [
+        "Python 2.7",
+        "Python Libraries",
+        "Python 3",
+        "Learning Python",
+        "Python (programming language)",
+        "Learning to Program"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "An\u0131l \u00c7\u00f6rek\u00e7io\u011flu",
+                "href": "/profile/An\u0131l-\u00c7\u00f6rek\u00e7io\u011flu"
+            },
+            "answer_text": "It is very easy to do it. You can get exact number of lines by using len() function. So, if you know which line is that you can skip. Otherwise, if there is a specific line you would like to take out you can do that without using external regex by just using in statement. This is how it looks like: >>> for line in file_:\u00a0...     print (line)\u00a0... \u00a0fdadsfdsa\u00a0lllllll\u00a0pppdsa\u00a0>>> len(file_)\u00a017\u00a0\u00a0>>> with open('file.txt', 'r') as file_:\u00a0...     file_ = file_.read().splitlines()\u00a0... \u00a0>>> buff = ''\u00a0>>> for line in file_:\u00a0...     if 'll' in line:\u00a0...             continue\u00a0...     else:\u00a0...             buff = buff + '\\n' + line\u00a0... \u00a0>>> print (buff)\u00a0\u00a0fdadsfdsa\u00a0pppdsa\u00a0",
+            "date": "Updated June 26, 2020",
+            "views": "18",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Chetan Khanna",
+                "href": "/profile/Chetan-Khanna-41"
+            },
+            "answer_text": "file.readlines()\u00a0The readlines() command returns a list of strings, with each element as a single line in the file, seperated by EOL character. Since the returned object is a list, we can use python slicing as in any other list. For example to skip the first line, simply start using the list from the second element. with open ('file_path') as file:\u00a0    reader = file.readlines()\u00a0    for line in reader[1:]:\u00a0        do something\u00a0Similarly, to skip every alternate line : for line in reader[::2]:\u00a0    do something\u00a0",
+            "date": "Answered January 10, 2020",
+            "views": "2",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Dillman",
+                    "user_href": "/profile/Alan-Dillman"
+                },
+                {
+                    "user_id": "Martin Wettstein",
+                    "user_href": "/profile/Martin-Wettstein"
+                },
+                {
+                    "user_id": "Dale Gulledge",
+                    "user_href": "/profile/Dale-Gulledge"
+                }
+            ]
+        }
+    ]
+}

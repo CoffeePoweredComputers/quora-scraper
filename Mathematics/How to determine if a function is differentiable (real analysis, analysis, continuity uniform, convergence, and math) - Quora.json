@@ -1,0 +1,57 @@
+{
+    "title": "How to determine if a function is differentiable (real analysis, analysis, continuity uniform, convergence, and math) - Quora",
+    "tags": [
+        "Continuity (mathematics)",
+        "Mathematical Analysis",
+        "Convergence (mathematics)",
+        "Real Analysis",
+        "Analysis",
+        "Differential Equations",
+        "Functions (mathematics)",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jack Gindi",
+                "href": "/profile/Jack-Gindi"
+            },
+            "answer_text": "To show that a function is differentiable, you need to show that its derivative exists at every point in its domain - it usually suffices to show it for an arbitrary point. This generally requires a good bit of fiddling with the definition of the derivative. Sometimes, though, a function (of one variable) has a continuous derivative on interior of its domain. If you can show that, for each point in the interval, the left and right limits of the derivative must be equal, the function is differentiable (and therefore continuous) with a continuous derivative (which is, I should note, more specific than having a derivative at each point - for a counterexample, see this). This is usually a good way to check for most elementary applications. A couple of examples: [math]f(x) = x^2[/math] on (-1,1). For each [math]a \\in (-1,1)[/math], we have [math]\\lim_{x\\to a^+} 2x = 2a = lim_{x\\to a^-}2x[/math], so the derivative is continuous on this interval, i.e., [math]f[/math] is differentiable on (-1,1).[math]f(x) = |x|[/math]. In this case, the derivative of [math]f[/math] to the left of 0 is -1, while to the right of 0, it\u2019s 1. Thus, at zero, where the graph of [math]f[/math] has a kink, the derivative has a jump (from -1 to 1) and is therefore not continuous.Differentiability is a very important property; are various algorithms in machine learning and optimization that rely on functions being differentiable, among myriad applications all across mathematics. Happy studying! ",
+            "date": "Answered May 14, 2020",
+            "views": "38",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Philip Lloyd",
+                "href": "/profile/Philip-Lloyd-2"
+            },
+            "answer_text": "\u201cContinuous\u201d at a point simply means \u201cJOINED\u201d at that point. \u201cDifferentiable\u201d at a point simply means \u201cSMOOTHLY JOINED\u201d at that point. (i.e. at the point, the gradient on the left hand side has to equal the gradient on the right hand side.) (ie left hand derivative = right hand derivative) Consider a parabola joined to a line graph. You certainly would not expect this to be a smooth join!     Just a final note: You could have the left hand gradient equal to the right hand gradient but if the two halves are not joined, the function is not differentiable at the point.   ",
+            "date": "Answered May 13, 2020",
+            "views": "417",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ayu Nazrah",
+                    "user_href": "/profile/Ayu-Nazrah"
+                },
+                {
+                    "user_id": "Anggi Sasmito",
+                    "user_href": "/profile/Anggi-Sasmito"
+                },
+                {
+                    "user_id": "Nakul Nataraj",
+                    "user_href": "/profile/Nakul-Nataraj"
+                },
+                {
+                    "user_id": "Syed Kazmi",
+                    "user_href": "/profile/Syed-Kazmi-2"
+                },
+                {
+                    "user_id": "Vikas Dubey",
+                    "user_href": "/profile/\u0bb5\u0bbf\u0b95\u0bbe\u0bb8\u0bcd-\u0ba4\u0bc1\u0baa\u0bc7\u0baf\u0bcd-Vikas-Dubey"
+                }
+            ]
+        }
+    ]
+}

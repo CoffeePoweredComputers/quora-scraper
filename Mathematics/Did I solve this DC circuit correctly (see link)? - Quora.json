@@ -1,0 +1,41 @@
+{
+    "title": "Did I solve this DC circuit correctly (see link)? - Quora",
+    "tags": [
+        "DC Circuits",
+        "Electronic Circuits",
+        "Homework Question",
+        "Circuits",
+        "Electromagnetism",
+        "Electricity",
+        "Electronics",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Dawson",
+                "href": "/profile/Richard-Dawson-3"
+            },
+            "answer_text": "If I am following what you did, you have a fundamental error. You appear to have set up the two loops with out distinguishing between the two currents. You need to consider the current that you show circulating in a counter-clockwise direction as current #1, call it I1, and the current you show circulating in a clockwise direction as a separate current, call it 12. In the center leg the currents are flowing in an opposite direction. Now, walk around each loop and write down the equation for the sum of voltages around the loop. Consider loop 1: 15 - 1.0*11 \u2013 8.0*I1 - 20*(I1-I2) -9*(I1-I2) +5.0 =0 Do essentially the same thing for loop2. Now you have two equations in two unknowns (I1 and I2) Incidentally, you didn\u2019t have to pick the particular loops that you did. A third loop, which could be substituted for either one of the two that you chose, would be a loop around the outside of the circuit. Note that in the center leg you wouldn\u2019t measure I1 or I2 if you inserted an ammeter to read the physical current in that leg. What you would observe would be I1-I2 (or vice versa if you inserted the ammeter with reverse polarity. ",
+            "date": "Answered April 5, 2020",
+            "views": "67",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mikayla Eckel Cifrese",
+                    "user_href": "/profile/Mikayla-Eckel-Cifrese-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ranjeet Gavali",
+                "href": "/profile/Ranjeet-Gavali-1"
+            },
+            "answer_text": "No..you didnt solve it correctly. Let current in first loop x amp. and second loop y amp. After applying KVL First loop equation is: 33x -24y=10 And second loop equation is: 42y -24x=5 After solving these equation for value x and ywe get\u2026 x = 0.37037 y = 0.1158. The direction of current x is same as shown in that paper work. But dirwction of current y reverses. ",
+            "date": "Answered April 5, 2020",
+            "views": "40",
+            "upvotes": "0"
+        }
+    ]
+}

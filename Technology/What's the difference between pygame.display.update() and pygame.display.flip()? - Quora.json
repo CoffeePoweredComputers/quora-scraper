@@ -1,0 +1,52 @@
+{
+    "title": "What's the difference between pygame.display.update() and pygame.display.flip()? - Quora",
+    "tags": [
+        "Pygame-python module"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alankar Paul",
+                "href": "/profile/Alankar-Paul"
+            },
+            "answer_text": "pygame.display.flip() updates the entire Surface on the display. pygame.display.update() updates the entire Surface, only if no argument is passed. You can pass rectangle(s) instead to update only that portion of the Surface, instead of the entire surface.The declaration for this function is update(rectangle=None)\u00a0 If you want to update only a portion of the display instead of the entire Surface, use update() eg: If you want to update a rectangle of length (X-axis) 5 and breadth (Y-axis) 3, and the top left corner is (100, 200), then use  Rectangle1 = pygame.Rect(100, 200, 5, 3)\u00a0pygame.display.update(Rectangle1)\u00a0",
+            "date": "Answered July 10, 2015",
+            "views": "102",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "TextProgram",
+                    "user_href": "/profile/TextProgram"
+                },
+                {
+                    "user_id": "Joachim Bharathi",
+                    "user_href": "/profile/Joachim-Bharathi"
+                },
+                {
+                    "user_id": "Jean-Pierre Schnyder",
+                    "user_href": "/profile/Jean-Pierre-Schnyder"
+                },
+                {
+                    "user_id": "Gaurav",
+                    "user_href": "/profile/Gaurav-1031"
+                },
+                {
+                    "user_id": "Ashank D'souza",
+                    "user_href": "/profile/Ashank-Dsouza"
+                },
+                {
+                    "user_id": "Aditya Dixit",
+                    "user_href": "/profile/Aditya-Dixit-19"
+                },
+                {
+                    "user_id": "Kunal Gupta",
+                    "user_href": "/profile/Kunal-Gupta-299"
+                },
+                {
+                    "user_id": "Jayanta Kumar Satapathy",
+                    "user_href": "/profile/Jayanta-Kumar-Satapathy"
+                }
+            ]
+        }
+    ]
+}

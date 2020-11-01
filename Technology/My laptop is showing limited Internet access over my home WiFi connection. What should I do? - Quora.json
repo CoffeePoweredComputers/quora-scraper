@@ -1,0 +1,121 @@
+{
+    "title": "My laptop is showing limited Internet access over my home WiFi connection. What should I do? - Quora",
+    "tags": [
+        "Tech Support Advice",
+        "Internet Access",
+        "Internet Connection",
+        "Laptop Advice",
+        "Wi-Fi Access Points",
+        "Wireless Technology",
+        "Wi-Fi",
+        "Laptops",
+        "The Internet",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Zorin Frank",
+                "href": "/profile/Zorin-Frank"
+            },
+            "answer_text": "Let's try to understand the problem first. You are getting message of Limited Access when you are connected to your wi-fi. It means you are connected to your Router but there is no internet or there is internet but your computer isn't able to recieve that. It means your LAN card is working fine. Now we have 3 different steps to fix this issue but before going further just restart your computer. 1. Disconnect your computer from your wifi and re-connect it. If this works then no need to follow other steps. 2.Go in Start menu and search CMD or Command Prompt. A black window will be pop up on your screen. You need to type further commands : ipconfig/release then press enter, ipconfig/renew then press enter, netsh winsock reset then press enter. Restart your computer. Normally it should work by now. Still if you are facing the same issue then, follow 3rd step 3. Restart your Router/gateway router. And follow step 2 before restarting and if it still doesn't work then contact your ISP (Internet Service Provider). At this point there is no issue in your computer because you are already connected to your network. It is just your network. I hope it helps. Thanks. ",
+            "date": "Updated February 12, 2017",
+            "views": "4959",
+            "upvotes": " View 334 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Abdul Aziz",
+                    "user_href": "/profile/Abdul-Aziz-3018"
+                },
+                {
+                    "user_id": "James Jones",
+                    "user_href": "/profile/James-Jones-156"
+                },
+                {
+                    "user_id": "Prasna Raja",
+                    "user_href": "/profile/Prasna-Raja"
+                },
+                {
+                    "user_id": "Jayashree S",
+                    "user_href": "/profile/Jayashree-S-74"
+                },
+                {
+                    "user_id": "Abdullah Tilal",
+                    "user_href": "/profile/Abdullah-Tilal"
+                },
+                {
+                    "user_id": "Sky Melody",
+                    "user_href": "/profile/Sky-Melody-6"
+                },
+                {
+                    "user_id": "Robert Hart",
+                    "user_href": "/profile/Robert-Hart-285"
+                },
+                {
+                    "user_id": "Dan Revermann",
+                    "user_href": "/profile/Dan-Revermann"
+                },
+                {
+                    "user_id": "Urvashi Babbar",
+                    "user_href": "/profile/Urvashi-Babbar-1"
+                },
+                {
+                    "user_id": "Mattie Madlangbayan",
+                    "user_href": "/profile/Mattie-Madlangbayan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anurag Khanna",
+                "href": "/profile/Anurag-Khanna-18"
+            },
+            "answer_text": "A2A, Break down the problem by method of elimination: Check your Internet Connectivity : If you have consistent connectivity to Internet using your Smartphone?Another Laptop / PC is connected to Internet?Connect the Laptop to your Router using an Ethernet Connection Cable directly to one of its LAN ports.If none of the above is positive then the issue is Internet Connectivity with your ISP Device (Modem/Router) IF 1 & 2 are positive that means the issue is with your laptop. If 3 is also positive then the issue is with the Wifi connection in your Laptop. Follow the following steps to resolve Wifi issues on your Laptop.Open Control Panel - Select Network and Sharing Center - Manage Wireless Networks - Highlight your Wifi Network - Right Click and Remove.Reset the TCP/IP stack of the windows system with limited connection status.https://support.microsoft.com/en... To manually reset TCP/IP, follow these steps: Note You must be logged on to the computer as an administrator to perform the steps. For Windows 8 and Windows 8.1 On the Start screen, type CMD. In the search results, right-click Command Prompt, and then click Run as administrator.At the command prompt, enter the following command, and then press Enter:netsh int ip reset c:\\resetlog.txtNote If you don't want to specify a directory path for the log file, run the following command instead:netsh int ip resetRestart the computer.For Windows 7 and Windows Vista To open a command prompt, click Start and then type cmd in the Search programs and files box.Under Programs, right-click the CMD.exe icon, and then click Run as administrator.When the User Account Control box appears, click Yes.At the command prompt, enter the following command, and then press Enter:netsh int ip reset c:\\resetlog.txtNote If you don't want to specify a directory path for the log file, run the following command instead:netsh int ip reset resetlog.txtRestart the computer.After Restart, add your Wifi Access point details again. ",
+            "date": "Answered June 15, 2016",
+            "views": "5125",
+            "upvotes": " View 196 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Parth Patmar",
+                    "user_href": "/profile/Parth-Patmar"
+                },
+                {
+                    "user_id": "Shridhar Talwar",
+                    "user_href": "/profile/Shridhar-Talwar"
+                },
+                {
+                    "user_id": "Laljesai Vaiphei",
+                    "user_href": "/profile/Laljesai-Vaiphei"
+                },
+                {
+                    "user_id": "Sachin Soin",
+                    "user_href": "/profile/Sachin-Soin"
+                },
+                {
+                    "user_id": "PL Cheong",
+                    "user_href": "/profile/PL-Cheong"
+                },
+                {
+                    "user_id": "Nandan B",
+                    "user_href": "/profile/Nandan-B"
+                },
+                {
+                    "user_id": "James Jones",
+                    "user_href": "/profile/James-Jones-156"
+                },
+                {
+                    "user_id": "AMIT SINGH NEGI",
+                    "user_href": "/profile/AMIT-SINGH-NEGI-21"
+                },
+                {
+                    "user_id": "Xies Gameplay",
+                    "user_href": "/profile/Xies-Gameplay"
+                },
+                {
+                    "user_id": "Pratik Parikh",
+                    "user_href": "/profile/Pratik-Parikh-21"
+                }
+            ]
+        }
+    ]
+}

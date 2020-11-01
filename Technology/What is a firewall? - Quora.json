@@ -1,0 +1,100 @@
+{
+    "title": "What is a firewall? - Quora",
+    "tags": [
+        "Firewalls"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Surbhi Aruna Pareek",
+                "href": "/profile/Surbhi-Aruna-Pareek"
+            },
+            "answer_text": "In a normal way Firewall means a wall or partition designed to inhibit or prevent the spread of fire. In computing way firewall is a wall and shield that protect a network or system from unauthorized access via outer. Firewall is a security system which protects the System from Intruders and hackers. It is a network security device that keeps an eye on incoming and outgoing traffic and stop and slowdown viruses and malware to spread from one computer or sub net or network to another. Firewall uses a define set of rules and terms for checking and filtering packet. Firewall security device filter outgoing and incoming traffic and only allows that traffic which fulfill all rules. Firewall decides whether to allow or block specific traffic according to security rules. Example-You could think of a firewall as a security guard that decides who enters or exits a building. Example- You could also think of a firewall as airport security. Only authorized person can go to take a flight. A person can go inside only when he/she pass all security checks Firewall can divide into two categories- A firewall is a software utility or hardware device that acts as a filter for data entering or leaving a network or computer. Hardware: Basically the router is used for hardware firewalls but any other security product can also use. Hardware firewall is placed between your PC and the outside world. Router and Security device can connect more than one device at a time. It is a tangible product or devices that secure system and PC from outer threads, viruses, malware and many more harmful viruses.Software Firewall: Software firewall is an intangible product. Software Firewall is a program and set of codes that install in computer or system. In case of attack software firewall hide open ports and will deflect incoming attacks. Software Firewall also aware and warn from suspicious outgoing traffic. When software firewall present in a system an attacker will have to cross two level securities to access your PC and it\u2019s too difficult for any attacker.Firewall support services are like a back bone for every system and network. Firewall can secures and protects network of both sides, client sides and server sides and deliver only useful content. ",
+            "date": "Answered September 26, 2018",
+            "views": "32",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "M Mahor",
+                    "user_href": "/profile/M-Mahor-1"
+                },
+                {
+                    "user_id": "OK LAter",
+                    "user_href": "/profile/OK-LAter"
+                },
+                {
+                    "user_id": "AMIT KASHYAP",
+                    "user_href": "/profile/AMIT-KASHYAP-217"
+                },
+                {
+                    "user_id": "Navin Rangar",
+                    "user_href": "/profile/Navin-Rangar"
+                },
+                {
+                    "user_id": "DR Abhishek Navik",
+                    "user_href": "/profile/DR-Abhishek-Navik"
+                },
+                {
+                    "user_id": "Julius Fernandez",
+                    "user_href": "/profile/Julius-Fernandez-2"
+                },
+                {
+                    "user_id": "Amit Roy",
+                    "user_href": "/profile/Amit-Roy-173"
+                },
+                {
+                    "user_id": "Arpeet Rasal",
+                    "user_href": "/profile/Arpeet-Rasal"
+                },
+                {
+                    "user_id": "Super Status",
+                    "user_href": "/profile/Super-Status-8"
+                },
+                {
+                    "user_id": "Vivekananda Pasam ( \u0c35\u0c3f\u0c35\u0c47\u0c15\u0c3e\u0c28\u0c02\u0c26 \u0c2a\u0c3e\u0c36\u0c02 )",
+                    "user_href": "/profile/Vivekananda-Pasam-\u0c35\u0c3f\u0c35\u0c47\u0c15\u0c3e\u0c28\u0c02\u0c26-\u0c2a\u0c3e\u0c36\u0c02"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mukul Kashiv",
+                "href": "/profile/Mukul-Kashiv"
+            },
+            "answer_text": "Firewalls can be an effective means of protecting a local system or network of systems from network-based security threats while at the same time affording access to the outside world via wide area networks and the Internet. Now Here\u2019s the Catch It not only define rules to prevent certain set of Ip addresses/protocols or ports but also define rules to access different type of Services.  Firewall provides four type of controls: \u2022 Service control: Determines the types of Internet services that can be accessed, inbound(packets which are coming inside the network) or outbound(packets which are going outside the network). For Example: In many companies services like Gmail and Facebook are not accessible if you use company\u2019s wifi network because firewall is keeping a check on outbound network(This may vary from company to company). \u2022 Direction control: Determines the direction in which particular service requests may be initiated and allowed to flow through the firewall. \u2022 User control: Controls access to a service according to which user is attempting to access it.This feature is typically applied to users inside the firewall perimeter (local users).It may also be applied to incoming traffic from external users. For Example: Many companies have inbuilt policies of Web content filtering based on the position of an Employee/or a particular department. Mr X(Manager ) might have access to Quora but a trainee might not have for the same. \u2022 Behavior control: Controls how particular services are used.For example,the firewall may filter e-mail to eliminate spam,or it may enable external access to only a portion of the information on a local Web server. According to the National Institute of Standards and Technology (NIST) 800-10 firewall can be of three types: Packet FilterStateful InspectionsProxyNote: These three categories of firewall may or may not be mutually exclusive. In real world scenario we use mix of firewalls. Packet Filter firewall: In Packet filter firewall each packet(incoming or outgoing) is compared to certain set of rules(As defined by the administrator) before it is forwarded.If the packet seems to follow the rule/criteria, packet is forwarded and if it does not then packet gets dropped. Rules may include: Source Ip address or destination Ip addressSource port and the destination portProtocol or services allowedThese rules differ from company to company and there\u2019s no set criteria or an ideal model to follow. Packet filter firewalls are generally susceptible to attacks which takes advantage of vulnerabilities within TCP IP specifications. For Example: If an intruder spoofs source ip address most packet layer firewalls are unable to detect it. Packet layer firewalls are unable to check whether the packet header is spoofed or not ,henceforth used by many attackers to bypass security of an organisation.Because of this many firewalls maintain state information of every packet that is traversed through the firewall. 2. Stateful Inspections: It is a Packet filter firewall with an additional functionality of maintaining state of connections(for each packet) and blocking packets which deviates from their ideal state. Three major states exist for TCP traffic 1. Connection establishment, 2. Usage 3. Termination For example, an attacker could generate a packet with a header indicating it is part of an established connection(Let\u2019s say the attacker spoofed an ip of internal connection), in hopes it will pass through a firewall. If the firewall uses stateful inspection, it will first verify that the packet is part of an established connection listed in the state table. If it is already a part of established connection that means someone is trying to gain unauthorized access and packet will be dropped. 3. Application-Level Proxy: These firewalls contain a proxy agent that acts as an intermediary between two hosts that wish to communicate with each other, and never allows a direct connection between them. Each successful connection attempt actually results in the creation of two separate connections\u2014one between the client and the proxy server, and another between the proxy server and the true destination. The proxy is meant to be transparent to the two hosts\u2014from their perspectives there is a direct connection. Because external hosts only communicate with the proxy agent, internal IP addresses are not visible to the outside world. The proxy agent interfaces directly with the firewall ruleset to determine whether a given instance of network traffic should be allowed to transit the firewall. ",
+            "date": "Updated October 15, 2017",
+            "views": "22",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Maniteja Pulipaka",
+                    "user_href": "/profile/Maniteja-Pulipaka"
+                },
+                {
+                    "user_id": "Rohit Nandi",
+                    "user_href": "/profile/Rohit-Nandi-14"
+                },
+                {
+                    "user_id": "Charan Singh",
+                    "user_href": "/profile/Charan-Singh-173"
+                },
+                {
+                    "user_id": "Vinamrata Saxena",
+                    "user_href": "/profile/Vinamrata-Saxena-1"
+                },
+                {
+                    "user_id": "Karan Phougat",
+                    "user_href": "/profile/Karan-Phougat"
+                },
+                {
+                    "user_id": "Shubham Kumar",
+                    "user_href": "/profile/Shubham-Kumar-2193"
+                },
+                {
+                    "user_id": "Rahul Mistry",
+                    "user_href": "/profile/Rahul-Mistry-35"
+                }
+            ]
+        }
+    ]
+}

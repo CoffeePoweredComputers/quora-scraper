@@ -1,0 +1,108 @@
+{
+    "title": "How should a computer science student start learning about robotics? - Quora",
+    "tags": [
+        "Robots",
+        "Robotics",
+        "Computer Science Education",
+        "Learning",
+        "Learning to Program"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frederic Py",
+                "href": "/profile/Frederic-Py"
+            },
+            "answer_text": "First I have a good news for you: robotics is as much about software that it is about hardware. You do not need to make the robot -- some people with a good background in EE or ME will do that nbetter than you do, but to make this hardware make autonomously good thins you need complex software that deal with all the sensor and actuator, merge their information to ma sense of the dat at a semantic level and then turn it back into commands to the actuators. And believe me, whether you look at it at the low level decision lop or at the high level decision making  this is an hard task.  My background is also in CS: Verification & validation, Knowledge Representation and Inference were the subjects I studied more in depth till I moved in robotics architectures for my PhD. Robotic software is a large domain that gather from different fields related to CS.  The most natural one and often directly applicable is Control theory: in this domain you attempt to implement a Control Law that will close the low level loop between the information you have (6 DOF position and speed of a drone for example) into the commands that best allow to follow a path. There's a lot of linear optimization involved in here and a good background in math is necessary. Any robot that moves around -- should it be a vehicle or an arm -- will have at its lower level a control loop that takes its roots within this field. The stochastic processing and reasoning are up there too. As sensing data is often noisy and outcome of commands is uncertain using stochastic representation at the intermediate level either to anchor noisy perception into grounded concepts or deciding the leas risky/most promising action to avoid failure/reach a local objective is a necessity. Artificial Intelligence: Programming a Robotic Car, the course from S. Thrun in his own website is all about this -- all the techniques he presents are related one way or another to gaussian process and stochastic inference. This course is also targeted to people having a good CS background so you should be comfortable with it. Having either of these 2 makes you well equipped on the way the industry perceive an automated/\"autonomous\" robot nowadays. Going further will require you to explore higher level decision making problems or software architecture for robotic systems. Higher level decision making implies to generally some concepts presented in the Thrun course to more abstract concept. For example the path planning he presents remain fairly simple as a car has relatively few degree of liberty. Should you try to do path planning on a more complex system such as a robotic arm or even a humanoid robot you need to explore more advanced technique. The book from Steve Lavalle is a good material for it (Planning Algorithms / Motion Planning which is available freely on the link). beware this start to be frail advanced material though and do not treat the problem on integrating such techniques within a control loop. My personal preference goes to higher level task planning and execution as it is my own field :) This include classical planning preferably with representation of time and resource or probabilistic planning which deals with similar representations than the one provided by Thrun. Most of the work there is related to Search algorithms, maybe  a little of game theory and a lot of software architecture. This is still fairly far out to be really useful beside PhD level experimentation though. Hope this help. EDIT: I need to mention that the field I gave are related to my own interests with growing level of abstraction from the low level control loop to high level decision making with a strong emphasis on decision making. There are other fields more related to perception that are relevant to robotic: signal processing, machine Learning, merging of  information (stochastic or otherwise) which can relate to SLAM and the list could go on and on while I know them at the high level I prefer to let other give more accurate pointers. ",
+            "date": "Answered September 29, 2014",
+            "views": "225",
+            "upvotes": " View 49 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Brian Kang",
+                    "user_href": "/profile/Brian-Kang-76"
+                },
+                {
+                    "user_id": "Ankit Bulchandani",
+                    "user_href": "/profile/Ankit-Bulchandani"
+                },
+                {
+                    "user_id": "Mohammed Hafiz",
+                    "user_href": "/profile/Mohammed-Hafiz-6"
+                },
+                {
+                    "user_id": "Arup Mondal",
+                    "user_href": "/profile/Arup-Mondal-96"
+                },
+                {
+                    "user_id": "Sukumaran Kasivishwanathan",
+                    "user_href": "/profile/Sukumaran-Kasivishwanathan"
+                },
+                {
+                    "user_id": "Alok Jadhav",
+                    "user_href": "/profile/Alok-Jadhav-8"
+                },
+                {
+                    "user_id": "Michael Hermann",
+                    "user_href": "/profile/Michael-Hermann"
+                },
+                {
+                    "user_id": "Adejumo David Adewale",
+                    "user_href": "/profile/Adejumo-David-Adewale"
+                },
+                {
+                    "user_id": "Ubee James",
+                    "user_href": "/profile/Ubee-James"
+                },
+                {
+                    "user_id": "Kotresh R",
+                    "user_href": "/profile/Kotresh-R"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Sheer Pullen",
+                "href": "/profile/Jonathan-Sheer-Pullen"
+            },
+            "answer_text": "Build a few robots. Get yourself a old, beat up digital storage scope, a DMM, some prototyping boards, a soldering iron, some junk box mosfets and relays, and a microcontroller development board like a arduino. Also, grab some texts on electronics, find some forums where people discuss such things, and start building, asking questions, and learning! Have fun. Yes, you'll burn out some silicon. It's okay, it's fairly cheap. Yes, you'll occasionally be frustrated and not understand why your high side line driver isn't working or your stepper motor isn't stepping or your sensor is returning noise. That's also part of the process. If you get really stuck, find a hackerspace near you and go talk over your problem with other hardware guys. You'll figure it out as countless have before you. As every musician ever knows.. aint nothing to it but to do it. ",
+            "date": "Answered September 30, 2014",
+            "views": "91",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Marko Verban\u010di\u010d",
+                    "user_href": "/profile/Marko-Verban\u010di\u010d"
+                },
+                {
+                    "user_id": "Wilson Guo",
+                    "user_href": "/profile/Wilson-Guo-12"
+                },
+                {
+                    "user_id": "Nandan Nishad",
+                    "user_href": "/profile/Nandan-Nishad"
+                },
+                {
+                    "user_id": "Deva Kumar",
+                    "user_href": "/profile/Deva-Kumar-87"
+                },
+                {
+                    "user_id": "Roman Gekhman",
+                    "user_href": "/profile/Roman-Gekhman"
+                },
+                {
+                    "user_id": "Madara Uchiha",
+                    "user_href": "/profile/Madara-Uchiha-80"
+                },
+                {
+                    "user_id": "Aishwarya Chandrabose",
+                    "user_href": "/profile/Aishwarya-Chandrabose"
+                },
+                {
+                    "user_id": "J Delaney",
+                    "user_href": "/profile/J-Delaney"
+                }
+            ]
+        }
+    ]
+}

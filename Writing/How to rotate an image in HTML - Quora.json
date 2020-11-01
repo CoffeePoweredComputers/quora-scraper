@@ -1,0 +1,66 @@
+{
+    "title": "How to rotate an image in HTML - Quora",
+    "tags": [
+        "HTML",
+        "Web Design",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul McCann",
+                "href": "/profile/Paul-McCann-1"
+            },
+            "answer_text": "Another answer suggested the image-orientation CSS property, which is only supported in Firefox. A more inclusive method would be the CSS transform property with a rotate method applied: img {\u00a0transform: rotate(90deg);\u00a0}\u00a0You can use a negative number to go the other way. If you need to support IE 9 and/or older versions of  iOS Safari and the Android browser, include the browser prefixes: img {\u00a0-ms-transform: rotate(90deg);\u00a0-webkit-transform: rotate(90deg); \u00a0transform: rotate(90deg);\u00a0}\u00a0Also you could use the scale method to flip, or flop and image. Scaling an image negatively on the x axis will fl0p it (make a mirror-image), scaling on the y axis will flip it upside-down. /* flop, or mirror image */ \u00a0transform: scale(-1, 1);\u00a0\u00a0/* flip upside-down */ \u00a0transform: scale(1, -1);\u00a0",
+            "date": "Answered March 25, 2016",
+            "views": "529",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joseph David",
+                    "user_href": "/profile/Joseph-David-207"
+                },
+                {
+                    "user_id": "Rezaul Karim",
+                    "user_href": "/profile/Rezaul-Karim-645"
+                },
+                {
+                    "user_id": "Ember Flame",
+                    "user_href": "/profile/Ember-Flame-2"
+                },
+                {
+                    "user_id": "Aditya Narayan",
+                    "user_href": "/profile/Aditya-Narayan-399"
+                },
+                {
+                    "user_id": "Cheri Skurkis",
+                    "user_href": "/profile/Cheri-Skurkis"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                },
+                {
+                    "user_id": "Subhash Karupusamy",
+                    "user_href": "/profile/Subhash-Karupusamy-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nathan Hawks",
+                "href": "/profile/Nathan-Hawks"
+            },
+            "answer_text": "With HTML alone? You can't. With HTML+CSS, however... Paul Mccann's answer is the right answer because transform is supported on most platforms: Can I use... Support tables for HTML5, CSS3, etc  Whereas the image-orientation feature is only supported by Firefox and Mobile Safari: Can I use... Support tables for HTML5, CSS3, etc  The -webkit-transform feature is widely implemented and cooler when used appropriately, but it's overkill for 2D and it's a nonstandard feature, to boot: Can I use... Support tables for HTML5, CSS3, etc  ",
+            "date": "Answered April 3, 2016",
+            "views": "287",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alex Pismenny",
+                    "user_href": "/profile/Alex-Pismenny"
+                }
+            ]
+        }
+    ]
+}

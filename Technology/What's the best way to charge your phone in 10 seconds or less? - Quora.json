@@ -1,0 +1,409 @@
+{
+    "title": "What's the best way to charge your phone in 10 seconds or less? - Quora",
+    "tags": [
+        "Smartphone Batteries",
+        "Electronic Batteries",
+        "Batteries",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Haas",
+                "href": "/profile/Paul-Haas-4"
+            },
+            "answer_text": "You could convert a carefully chosen cell phone into one that only needs to charge for ten seconds, as long you don't mind having a phone that goes dead in 4 minutes or less. I will describe how below, or you can just take my word for it and go straight to the upvote button. Someone could modify an Open Source phone OS such as the Cyanogenmod version of Android to limit a supported phone to only charge for 10 seconds. It could also be modified to report that the battery went from 0% to 100% in that time. My Nexus 5 phone starts charging at less than 500 mA and slowly ramps up the current draw until it reaches 1.4 Amps or the charger voltage drops too far. I am not sure if this behavior is in the charging circuit or is controlled by the main CPU. There is a good chance the OS doesn't directly control the charge rate. Without a phone that can instantly go into fast charge mode, the 4 minute run time is just a fantasy (unlike the rest of this answer which is totally plausible). If we start with a phone that normally needs to charge for an hour in order to operate for a day, then that phone gets 23 additional time units of operation for each unit of charging. So that gives us a total 240 seconds of use time, of which the phone only needs to be plugged in for 10 seconds. Note, that to achieve the full 4 minutes of life, the phone can't be working hard the whole time. I would guess you will be able to talk for 30 seconds or play Candy Crush for 20 seconds, but not both in a single 4 minute session. With a custom charge controller, a custom high current power supply, and a battery designed for rapid charging, it would be possible to achieve much longer run times without making the phone larger or heavier. It might even be possible to get runtimes of better than half an hour. The trick is that the battery can generate a lot more heat per second than one that gets charged for minutes at a time. The charger can be designed to get the battery to its temperature limit in just ten seconds. The battery will then have several minutes to cool down. Since most people don't want phones that need to be recharged every few minutes, you will have to do all of the design and engineering work yourself. Good luck. ",
+            "date": "Answered June 25, 2016",
+            "views": "77",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jean-Pierre Kafoe",
+                    "user_href": "/profile/Jean-Pierre-Kafoe"
+                },
+                {
+                    "user_id": "Abdelrahman Amr",
+                    "user_href": "/profile/Abdelrahman-Amr-4"
+                },
+                {
+                    "user_id": "Alan Wu",
+                    "user_href": "/profile/Alan-Wu-13"
+                },
+                {
+                    "user_id": "Edward Browning",
+                    "user_href": "/profile/Edward-Browning-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Lockman",
+                "href": "/profile/David-Lockman-1"
+            },
+            "answer_text": "As I understand Lithium-Ion / Lithium-Polymer battery technology, there is NO way to charge a phone battery in 10 seconds or less. Batteries are a way of storing electrical energy chemically. I am sure you have noticed that your phone gets warm when charging. Pumping enough energy into a LiPo battery to bring it to a full charge in only 10 seconds would (in my opinion - at the moment I am too lazy to look up the figures and do the math) most likely cause the battery to fail. The process of charging causes a chemical reaction within the cell, which also generates heat, as the process is not 100% efficient. (see the Wikipedia entry for more details.) The amount of heat generated could even cause the battery to burst into flame. Goodbye, little cell phone. If you often find that your phone runs out of charge, pick up 2 or 3 USB power banks, and keep them charged. A power bank is little more than an external battery pack which contains one or more of the same sort of cells you will find in a laptop battery. They seem to be everywhere, and the cost is reasonable. When your phone needs a charge, plug its charger cable into the power bank, and you are back in business! Your phone can then be used while its internal battery is recharged by the external battery. ",
+            "date": "Answered June 21, 2016",
+            "views": "122",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shikha Sharma Dwivedi",
+                    "user_href": "/profile/Shikha-Sharma-Dwivedi"
+                },
+                {
+                    "user_id": "Omer Fink",
+                    "user_href": "/profile/Omer-Fink"
+                },
+                {
+                    "user_id": "Saksham",
+                    "user_href": "/profile/Saksham-127"
+                },
+                {
+                    "user_id": "Bagus Adiwiluhung",
+                    "user_href": "/profile/Bagus-Adiwiluhung"
+                },
+                {
+                    "user_id": "Tsvetan Borisov",
+                    "user_href": "/profile/Tsvetan-Borisov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abdalla Rehab",
+                "href": "/profile/Abdalla-Rehab"
+            },
+            "answer_text": "Just to make it clear there is no \u201cbest way\u201d because it doesnt exist.Of course tinfoil thing is BS. Ive worked on designing lithium ion battery chargers. Assuming you\u2019re talking about actually charging your phone from 0 to 80% in 10s . I wont say its impossible because you never know what could happen in the future but let me explain . To charge it in 10s you need a 50C charger which is not even close to the highest rate ive heard of for Ultra-fast charging. To put things into context, if you want to charge a 3000 mAh phone battery in 10s you need a charger supplying about 870 Amps this is extremly high (normal for chargers now are 2 Amps). Other than this ridiculous number, your battery needs to be designed to handle that much current ( which until today is not yet designed). Also, this will require an extremly efficient cooling technology to control the heat ( which also until today is not yet designed ). Finally, the battery life time will decrease substantially. Thats a very fast approach to answer your question, hope it helps :) ",
+            "date": "Answered May 31, 2017",
+            "views": "35",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kaylee Mann",
+                    "user_href": "/profile/Kaylee-Mann-2"
+                },
+                {
+                    "user_id": "Ashwin MP",
+                    "user_href": "/profile/Ashwin-MP-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Raman Karhad",
+                "href": "/profile/Raman-Karhad"
+            },
+            "answer_text": "Well there are actually couple of ways to \u201ccharge phone in just 10 seconds\" One is obviously use phone with swappable batteries and it's already mentioned in one of the answers but that would turn off your phone. Second you use supercapacitor instead of your phone battery and use a charger with very high current rating. Although you won't get as much battery life as you would get with Li ion battery and your phone will look ugly and bulky, You would be able get your phone charged in 10 seconds. Hope it helps. Note : assuming 3.7 volt and 400F supercapacitor You will get a capacity of 411mah.(just rough numbers) ",
+            "date": "Answered June 8, 2020",
+            "views": "313",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Khushi",
+                    "user_href": "/profile/Khushi-547"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eduardo Mercer",
+                "href": "/profile/Eduardo-Mercer"
+            },
+            "answer_text": "You can\u2019t, that\u2019s not how Lithium-Ion batteries work.To charge e.g. an iPhone 7 with its 11.1 Watt-hours battery in 10 seconds, you\u2019d have to do it at 3996 Watts (assuming perfect circuity, which doesn\u2019t exist).That\u2019s enough to run a space heater for a 500 sq. ft. room. Some very special fast-charging technologies can give you 50% or even 75% juice on your phone in 30 minutes, but these require special circuitry in either the phone, the charger or both. ",
+            "date": "Answered February 17, 2018",
+            "views": "78",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aleksandar Panovski",
+                    "user_href": "/profile/Aleksandar-Panovski"
+                },
+                {
+                    "user_id": "Mohammad Moniruzzaman",
+                    "user_href": "/profile/Mohammad-Moniruzzaman-30"
+                },
+                {
+                    "user_id": "Utkarsh Priyam",
+                    "user_href": "/profile/Utkarsh-Priyam"
+                },
+                {
+                    "user_id": "Eric Ownbey",
+                    "user_href": "/profile/Eric-Ownbey-1"
+                },
+                {
+                    "user_id": "Mitchel Littleton",
+                    "user_href": "/profile/Mitchel-Littleton"
+                },
+                {
+                    "user_id": "Kihiro Tanakamaru",
+                    "user_href": "/profile/Kihiro-Tanakamaru"
+                },
+                {
+                    "user_id": "John Cunningham-Smith",
+                    "user_href": "/profile/John-Cunningham-Smith"
+                },
+                {
+                    "user_id": "Ariel Kusnoto",
+                    "user_href": "/profile/Ariel-Kusnoto-2"
+                },
+                {
+                    "user_id": "Travis Moore",
+                    "user_href": "/profile/Travis-Moore-73"
+                },
+                {
+                    "user_id": "Harry Butcher",
+                    "user_href": "/profile/Harry-Butcher-4"
+                },
+                {
+                    "user_id": "Sriram Subramaniam",
+                    "user_href": "/profile/Sriram-Subramaniam-8"
+                },
+                {
+                    "user_id": "David Jenne",
+                    "user_href": "/profile/David-Jenne-2"
+                },
+                {
+                    "user_id": "Zhen Bradley",
+                    "user_href": "/profile/Zhen-Bradley"
+                },
+                {
+                    "user_id": "Kian Bayno",
+                    "user_href": "/profile/Kian-Bayno"
+                },
+                {
+                    "user_id": "Muhammad Rizqi Ardiansyah",
+                    "user_href": "/profile/Muhammad-Rizqi-Ardiansyah"
+                },
+                {
+                    "user_id": "Naveen Joby",
+                    "user_href": "/profile/Naveen-Joby"
+                },
+                {
+                    "user_id": "Anthony Fauver",
+                    "user_href": "/profile/Anthony-Fauver"
+                },
+                {
+                    "user_id": "Nathan Schmidt",
+                    "user_href": "/profile/Nathan-Schmidt-9"
+                },
+                {
+                    "user_id": "Ian Lang",
+                    "user_href": "/profile/Ian-Lang-16"
+                },
+                {
+                    "user_id": "Doug Smith",
+                    "user_href": "/profile/Doug-Smith-142"
+                },
+                {
+                    "user_id": "Onick Voskinarian",
+                    "user_href": "/profile/Onick-Voskinarian"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Brown",
+                "href": "/profile/Jonathan-Brown-84"
+            },
+            "answer_text": "TheoJoe is a YouTuber that makes really inane parody videos that aren't even that funny to be honest. Other ridiculous ones include 'doubling your Internet speed' etc. He takes so long to carry these instructionals out, that surely nobody will actually copy so that the only person he trolls is himself. I hope he doesn't make too much money from those vids, but each to their own. PS. The only electricity storage device you can charge in 10 seconds would be some form of capacitor. A battery based on today's technology would not survive. ",
+            "date": "Answered June 21, 2016",
+            "views": "21",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dave McKnight",
+                    "user_href": "/profile/Dave-McKnight-1"
+                },
+                {
+                    "user_id": "Andrew Daviel",
+                    "user_href": "/profile/Andrew-Daviel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mena Beshai",
+                "href": "/profile/Mena-Beshai"
+            },
+            "answer_text": "super capacitors. they do not exist in phones yet and only beta or prototypes have been tested. but with current phones now a days. you can\u2019t. but with super capacitors. sure. will it exist in phones\u2026.. maybe someday. sorry to burst your bubble. and if you attempt this and bypass the charging speed. that is how heat is created. the faster you charge the more heat. till eventually it puffs up or explodes or bursts into flames. so if you don\u2019t want a note 7 all over again. i suggest you don\u2019t do it. lol but seriously. it is dangerous. (btw note 7 was actually an engineering flaw and the metal contacts in the battery touched causing the short circuit which caused said scenarios to happen. but thought people would enjoy the reference :-) ) ",
+            "date": "Answered August 8, 2020",
+            "views": "75",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mark Taylor",
+                "href": "/profile/Mark-Taylor-172"
+            },
+            "answer_text": "The only way to charge your phone to 80% in 10 seconds is to plug it in to a high current charger and have the phone already at 79% When you start. Seriously, there is no way to charge your phone faster then a high current charger and the high current charger will take as long as is needed to charge the battery safely, and within its specifications. If you were somehow able to show more current into it then it was designed for, and the wires did not overheat or melt, and the battery would overheat and possibly go into thermal runaway. If there really was a way to charge it faster, you would not want to as it would reduce the useful life of the battery, at best, and catch fire if worst. Putting your phone into airplane mode, or turning it off would minimize the time needed to charge it. Wrapping it in foil would be counterproductive unless it's an airplane mode or turned off, as the phone would be increasing its transmitting power trying to reach the cell tower. ",
+            "date": "Answered June 21, 2016",
+            "views": "584",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Dave McKnight",
+                    "user_href": "/profile/Dave-McKnight-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Erik Frank",
+                "href": "/profile/Erik-Frank-11"
+            },
+            "answer_text": "Whatever it is that you are trying to do I recommend that you stop it right now. Such a thing is impossibele and even if done then it could have catastrophic results. Meaning that you can die from attempting such a thing. Just like humans cannot eat too much food at one time, batteries cannot also take it much current at on time. If a human does that then they might get chocked or hurt their throat really bad. The same applies to batteries to. If you charge a cellphone battery that fast then it will swell and possibly explode. It will be like a mnii bomb. Believe me it has been attempted and the resulsts were just as bad. ",
+            "date": "Answered May 27, 2020",
+            "views": "171",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Valerio Cietto",
+                "href": "/profile/Valerio-Cietto"
+            },
+            "answer_text": "About wrapping in tin foil, false. if you want a charged battery fast, get a phone with detachable battery, and swap the battery for a charged one.Then charge the battery separately if you want. ",
+            "date": "Answered June 22, 2016",
+            "views": "2",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arpit Pandey",
+                    "user_href": "/profile/Arpit-Pandey-42"
+                },
+                {
+                    "user_id": "Paul Haas",
+                    "user_href": "/profile/Paul-Haas-4"
+                },
+                {
+                    "user_id": "David Lockman",
+                    "user_href": "/profile/David-Lockman-1"
+                },
+                {
+                    "user_id": "Money Gram Transfer Unit Director",
+                    "user_href": "/profile/Money-Gram-Transfer-Unit-Director"
+                },
+                {
+                    "user_id": "Bichu Krishnan",
+                    "user_href": "/profile/Bichu-Krishnan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Woolley",
+                "href": "/profile/Mark-Woolley-3"
+            },
+            "answer_text": "To charge it this quickly you'll need to have a second charged battery, and swap out the discharged battery. This assumes you have a phone that has a removable battery, and some method of charging a second battery (like a second phone of the same type!). ",
+            "date": "Answered June 21, 2016",
+            "views": "19",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tsvetan Borisov",
+                    "user_href": "/profile/Tsvetan-Borisov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Devine Paramour",
+                "href": "/profile/David-Devine-Paramour"
+            },
+            "answer_text": "Technically he is right, although 10 seconds seem really fast. What he is doing is trapping heat. When your batt is hot it holds less power, so technically it could charge the fast, but that is like saying if you fill the bottom of a class with clay you can fill it up faster. ",
+            "date": "Answered May 10, 2017",
+            "views": "108",
+            "upvotes": " Answer requested by Gilbert Feliciano",
+            "upvoters": [
+                {
+                    "user_id": "Mohammad Ali",
+                    "user_href": "/profile/Mohammad-Ali-240"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Obaidullah Zafar",
+                "href": "/profile/Obaidullah-Zafar"
+            },
+            "answer_text": "-Plug the charger in a wall socket -Next, very carefully connect the cable to your phone And BOOM! Your phone is being charged. Just unplug it before 10 seconds and you will charge your phone within 10 seconds (Your never said how to charge my phone to 100% within 10 seconds :p) ",
+            "date": "Answered February 17, 2018",
+            "views": "411",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tsvetan Borisov",
+                    "user_href": "/profile/Tsvetan-Borisov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Daviel",
+                "href": "/profile/Andrew-Daviel"
+            },
+            "answer_text": "In principle I think you could use a Flow battery and just change the liquid. But no phone uses that, and I can\u2019t see that it\u2019s at all practical. Change the battery - but that probably takes more than 10 seconds. I can change the battery in my cordless drill in less than 10 seconds, but it\u2019s designed for that. ",
+            "date": "Answered June 25, 2016",
+            "views": "11",
+            "upvotes": " Answer requested by Caleb Chalk"
+        },
+        {
+            "author_info": {
+                "name": "Blair Wickstrand",
+                "href": "/profile/Blair-Wickstrand"
+            },
+            "answer_text": "In 10 seconds ? What you want is a phone with swappable batteries, drop one off and snap in a charged battery. Used to do that with the old Motorola flip phones. Carried 2 or 3 batteries in my pocket. ",
+            "date": "Answered June 23, 2020",
+            "views": "102",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Naeem Hussain Awan",
+                "href": "/profile/Naeem-Hussain-Awan"
+            },
+            "answer_text": "Yeah you can charege your phone in 10 minutes just follow simple tips, use Fast Charging Adapter.Turn off WiFi .Turn off Mobile Mobile Data.Turn off Bluetooth.Put your phone on Airplane mode.",
+            "date": "Answered February 17, 2018",
+            "views": "121",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Steven Gao",
+                "href": "/profile/Steven-Gao-60"
+            },
+            "answer_text": "There is no way you could charge any electronic device from nothing to max in 10 seconds or less. Not if you don\u2019t want the device to explode and kill everyone in the building to death and start a fire from the overheating battery. ",
+            "date": "Answered June 25, 2020",
+            "views": "75",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Matthew Lai",
+                "href": "/profile/Matthew-Lai-17"
+            },
+            "answer_text": "You first remove the battery. That way you\u2019ll be able to charge it up to full capacity (nothing) in zero time. ",
+            "date": "Answered June 21, 2016",
+            "views": "829",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Harry Parker",
+                "href": "/profile/Harry-Parker"
+            },
+            "answer_text": "It is really possible in four easy steps: Open phone case.Remove battery.Replace with another charged battery.Close case.(Optional) Place first battery in a charger.",
+            "date": "Answered February 17, 2018",
+            "views": "221",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alex Boris",
+                "href": "/profile/Alex-Boris-2"
+            },
+            "answer_text": "Pray, and maybe god will hear you. ",
+            "date": "Answered February 17, 2018",
+            "views": "103",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "title": "How to solve the following differential equation: 3x y^2 y^2 y'+3y^2=1 - Quora",
+    "tags": [
+        "Algebra Homework Question",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Adrien Dimitri",
+                "href": "/profile/Adrien-Dimitri"
+            },
+            "answer_text": "I\u2019ll assume you mistakenly wrote [math]y^2[/math] twice here also, remember that [math]y' = \\frac{dy}{dx}[/math] [math]3x y^2y'+3y^2=1[/math] separate the [math]x[/math] and [math]y[/math] terms [math]y^2(3x \\frac{dy}{dx}+3) = 1[/math] [math]3x \\frac{dy}{dx}+3 = \\frac{1}{y^2}[/math] [math]3x \\frac{dy}{dx} = \\frac{1}{y^2} - 3[/math] move the terms such that [math]y[/math] terms are next to the [math]\\frac{dy}{dx}[/math] [math]\\frac{1}{\\frac{1}{y^2} - 3} (\\frac{dy}{dx}) = \\frac{1}{3x}[/math] multiply both sides by [math]dx[/math] [math](\\frac{y^2}{1 - 3y^2}) dy = (\\frac{1}{3x}) dx[/math] Since there are [math]dy[/math] and [math]dx[/math], this means we must integrate each side by their respective variables [math]\\int(\\frac{y^2}{1 - 3y^2}) dy = \\frac{1}{3}\\int(\\frac{1}{x}) dx[/math] Integrating, we get [math]\\frac{\\sqrt{3}\\left(\\ln\\left(\\left|3y+\\sqrt{3}\\right|\\right)-\\ln\\left(\\left|3y-\\sqrt{3}\\right|\\right)\\right)-6y}{18} = \\frac{lnx}{3}[/math] \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 NOTE that: [math]\\sqrt{3}[\\ln(3y+\\sqrt{3})-\\ln(3y-\\sqrt{3})] =\\sqrt{3}\\ln[\\frac{(3y+\\sqrt{3})}{(3y-\\sqrt{3})}] [/math] and let [math]\\ln(\\frac{3y+\\sqrt{3}}{3y-\\sqrt{3}})[/math] be equal to [math]a[/math] for convenience, so [math]\\sqrt{3}[\\ln(3y+\\sqrt{3})-\\ln(3y-\\sqrt{3})] =\\sqrt{3}\\ln(a) [/math] \u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 back to where we were now [math]\\frac{\\sqrt{3}\\left(\\ln\\left(\\left|3y+\\sqrt{3}\\right|\\right)-\\ln\\left(\\left|3y-\\sqrt{3}\\right|\\right)\\right)-6y}{18} = \\frac{lnx}{3}[/math] [math]\\sqrt{3}[\\ln(3y+\\sqrt{3})-\\ln(3y-\\sqrt{3})] -6y = 6\\ln(x)[/math] [math]\\sqrt{3}\\ln(a) - 6y = 6\\ln(x)[/math] [math]\\ln(a^{\\sqrt{3}}) - 6y\\ln(e) = \\ln(x^6)[/math] [math]\\ln(a^{\\sqrt{3}}) - \\ln(e^{6y}) = \\ln(x^6)[/math] [math] \\ln(\\frac{a^{\\sqrt{3}}}{e^{6y}})=\\ln(x^6)[/math] eliminating [math]\\ln[/math] [math]\\frac{a^{\\sqrt{3}}}{e^{6y}} = x^6[/math] that\u2019s the general equation for the D.E given above, you could find x in terms of y though [math](\\frac{a^{\\sqrt{3}}}{e^{6y}})^{\\frac{1}{6}} = x[/math] [math]x = \\Bigg(\\frac{\\ln\\bigr(\\frac{3y+\\sqrt{3}}{3y-\\sqrt{3}}\\bigr)^{\\sqrt{3}}}{e^{6y}}\\Bigg)^{\\frac{1}{6}}[/math] It was very tedious and i may have let some mistakes here or there, please anyone, feel free to correct me :) ",
+            "date": "Answered June 3, 2018",
+            "views": "82",
+            "upvotes": " Answer requested by Verdy Pospos",
+            "upvoters": [
+                {
+                    "user_id": "Jhad Chao",
+                    "user_href": "/profile/Jhad-Chao"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Manjunath Subramanya Iyer",
+                "href": "/profile/Manjunath-Subramanya-Iyer"
+            },
+            "answer_text": " ",
+            "date": "Answered December 19, 2017",
+            "views": "57",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

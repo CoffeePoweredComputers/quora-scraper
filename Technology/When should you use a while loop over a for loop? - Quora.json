@@ -1,0 +1,56 @@
+{
+    "title": "When should you use a while loop over a for loop? - Quora",
+    "tags": [
+        "Programming Loops"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tommaso Ricci",
+                "href": "/profile/Tommaso-Ricci-1"
+            },
+            "answer_text": "For loops are meant for structure of a fixed size like an array. They are useful when you need to do an operation a fixed number of times. While loops , in the other hand, are more dynamic, and you usually use them for lists or until a certain expression meets a criteria, for example. Let\u2019s say you have an array and need to visit it. You can do it while loop: i = arr.len - 1\u00a0\u00a0while i >= 0 :\u00a0    useless = arr[i] //visiting the i position\u00a0    i--\u00a0or with a for loop: for(i=o ; i<arr.len ; i++):\u00a0\tuseless = arr[i]  //visiting the i position\u00a0As you can see they are both correct but the for loop is more elegant and logical. There are many cases where one type of loop is better than the other, what you need to understand is how they behave and then it will be automatic for you to choose the right one. ",
+            "date": "Answered March 27, 2017",
+            "views": "676",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Petr Kotas",
+                    "user_href": "/profile/Petr-Kotas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abrar Hussain",
+                "href": "/profile/Abrar-Hussain-4"
+            },
+            "answer_text": "Typically, you would want to use a for loop when you have a determinate number of iterations and a while loop when you have an indeterminate number of iterations. For example, if you\u2019re iterating through an array, you should usually know how many times you\u2019ll loop. If you\u2019re reading through a file, you don\u2019t necessarily know when the reading should end - you would stop at the point of reaching EOF. ",
+            "date": "Answered March 27, 2017",
+            "views": "17",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Musarrat Amin",
+                    "user_href": "/profile/Musarrat-Amin"
+                },
+                {
+                    "user_id": "Baldo",
+                    "user_href": "/profile/Baldo-3"
+                },
+                {
+                    "user_id": "Waqas Hamid",
+                    "user_href": "/profile/Waqas-Hamid-2"
+                },
+                {
+                    "user_id": "Brandon Lind",
+                    "user_href": "/profile/Brandon-Lind-3"
+                },
+                {
+                    "user_id": "Aleksey Matiychenko",
+                    "user_href": "/profile/Aleksey-Matiychenko-1"
+                }
+            ]
+        }
+    ]
+}

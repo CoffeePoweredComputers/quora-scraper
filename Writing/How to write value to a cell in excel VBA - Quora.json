@@ -1,0 +1,54 @@
+{
+    "title": "How to write value to a cell in excel VBA - Quora",
+    "tags": [
+        "Visual Basic for Applications (VBA)",
+        "Excel Tricks",
+        "Excel VBA",
+        "Microsoft Excel Spreadsheets",
+        "Spreadsheets",
+        "Microsoft Excel",
+        "Microsoft Office"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Laura Christina Warren",
+                "href": "/profile/Laura-Christina-Warren"
+            },
+            "answer_text": "I\u2019ve just been asked to answer even though there are already several excellent responses. This is a wide open question and you don\u2019t really say what you\u2019re trying to accomplish, but here are a few very basic ways. I\u2019m assuming you understand concepts like using the Visual Editor, inserting modules, declaring variables, and using conditional statements. You can write a sub to enter data in the active cell using the ActiveCell property.  The first line enters the current date in the active cell.The second line applies the full date format.The third line widens the column so that the entire date fits.If you want to prompt the user for data and then place it in a particular cell, use the InputBox function.  The first line declares a variable called UserVal and assigns the value to the result of an InputBox displayed to the user.The second line tests the entry from the InputBox. If there was no response, the routine quits.The section after the first Else checks that the response was a numeric value.If the response was a numeric value, assigns it to the UserVal variable and uses the Range property to insert the value into cell A15.The next row formats the number to currency.The section after the second Else is for when a non-numeric value was entered. A message box displays prompting the user for a number.The Call GetValue line restarts the routine if necessary.If you\u2019re a beginner, you\u2019re going to need more understanding of what is known as the object model before you start using VBA. Check some of the links or buy yourself a book on Excel VBA. ",
+            "date": "Answered August 1, 2019",
+            "views": "137",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Judith Engelstad",
+                    "user_href": "/profile/Judith-Engelstad"
+                },
+                {
+                    "user_id": "Nelson Vidinha",
+                    "user_href": "/profile/Nelson-Vidinha"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richa Bajpai",
+                "href": "/profile/Richa-Bajpai-5"
+            },
+            "answer_text": "There are multiple ways you can write or update value in particular cell, in excel there is following flowchart:  There are following way we can update value in cell: 1.using worksheet Worksheet(\u201csheetname\u201d).Range(\u201cA1\u201d).value=\u201dhello\u201d 2.using index number of sheet worksheet(1).Range(\u201cA1\u201d).value=\u201dhello\u201d 3.Using code name Sheet1.range(\u201cA1\u201d).Value=\u201dhello\u201d 4.using cell Sheet1.Range(Cells(\u201c1,1\u201d)).Value=\u201dhello\u201d ",
+            "date": "Answered November 5, 2019",
+            "views": "55",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dan Joseph",
+                    "user_href": "/profile/Dan-Joseph-79"
+                },
+                {
+                    "user_id": "Tom Varghese Konikkara",
+                    "user_href": "/profile/Tom-Varghese-Konikkara"
+                }
+            ]
+        }
+    ]
+}

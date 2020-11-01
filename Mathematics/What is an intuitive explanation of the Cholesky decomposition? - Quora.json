@@ -1,0 +1,113 @@
+{
+    "title": "What is an intuitive explanation of the Cholesky decomposition? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Intuitive Explanations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Hyer",
+                "href": "/profile/Tom-Hyer-1"
+            },
+            "answer_text": "I'm going to answer from the context of generating correlated random numbers (this is the most familiar use case, to me anyway). The problem is:  we need a random draw from an n-dimensional multivariate normal distribution with covariance matrix [math]A[/math].  We have [math]n[/math] independent random deviates drawn from [math]N(0,1)[/math].  What is a transformation matrix that we can multiply by? For any such matrix [math]M[/math], we must have [math]MM^T=A[/math], because the dot product of the [math]i^{\\rm th}[/math] and [math]j^{\\rm th}[/math] rows of [math]M[/math] must always equal [math]A_{ij}[/math].  This gives [math]n(n+1)/2[/math] constraints, and [math]M[/math] has [math]n^2[/math] elements, so there are many solutions. One thing we can do is to proceed inductively.  We start with an artificial constraint:  the first random output (call it [math]b_1[/math]) is to be completely controlled by the first deviate.  Then [math]M_{1j}=0[/math] for [math]j>1[/math], and [math]M_{11}^2=A_{11}[/math].  So now we know [math]M_{11}[/math]. Now the covariance between [math]b_1[/math] and [math]b_2[/math] is exactly [math]M_{11}M_{21}[/math].  So now we know [math]M_{21}[/math].  Now we add another artificial constraint, that [math]M_{2j}=0[/math] for [math]j>2[/math] (so that only the first two deviates contribute to [math]b_2[/math]).  Then we need [math]M_{21}^2+M_{22}^2=A_{22}[/math], and since we already know [math]M_{21}[/math], now we know [math]M_{22}[/math] as well. Now we continue working forward through successive [math]b_i[/math], which correspond to rows of [math]M[/math].  In each row we work from left to right, computing [math]M_{ij}[/math] for successive [math]j<i[/math].  (At each step we find the [math]M_{ij}[/math] which gives the correct value of [math]A_{ij}[/math], which is just an arithmetic problem because we know all the other contributors to [math]A_{ij}[/math] already.)  Then we assume [math]M_{ij}=0[/math] for [math]j>i[/math], and choose [math]M_{ii}[/math] to yield the correct value for [math]A_{ii}[/math]. At the end of this process [math]M[/math] is lower triangular because of the artificial constraints we added at each row.  That's the Cholesky decomposition. ",
+            "date": "Answered March 16, 2016",
+            "views": "25",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Soroush Kalantari",
+                    "user_href": "/profile/Soroush-Kalantari"
+                },
+                {
+                    "user_id": "Ahish Madhavan",
+                    "user_href": "/profile/Ahish-Madhavan"
+                },
+                {
+                    "user_id": "Srinivas Bakki",
+                    "user_href": "/profile/Srinivas-Bakki"
+                },
+                {
+                    "user_id": "Vesselin Petrov",
+                    "user_href": "/profile/Vesselin-Petrov"
+                },
+                {
+                    "user_id": "Brian Xu",
+                    "user_href": "/profile/Brian-Xu-32"
+                },
+                {
+                    "user_id": "Paul Gradie",
+                    "user_href": "/profile/Paul-Gradie-2"
+                },
+                {
+                    "user_id": "Siva Rajesh",
+                    "user_href": "/profile/Siva-Rajesh"
+                },
+                {
+                    "user_id": "Junjie He",
+                    "user_href": "/profile/Junjie-He-4"
+                },
+                {
+                    "user_id": "Lee Jyh Jiin",
+                    "user_href": "/profile/Lee-Jyh-Jiin"
+                },
+                {
+                    "user_id": "Alok Singh",
+                    "user_href": "/profile/Alok-Singh-259"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Harron",
+                "href": "/profile/Robert-Harron"
+            },
+            "answer_text": "Suppose (as required) that A is a symmetric, positive definite, n-by-n matrix. Then it can be viewed as giving an inner product on [math]\\mathbf{R}^n[/math] given by [math]\\langle v,w\\rangle:=v^\\mathrm{T}Aw[/math] where v and w are considered as column vectors. The (i,j)-entry of A is then the value of the inner product [math]\\langle e_i,e_j\\rangle[/math] with respect to some choice of basis [math]B=\\{e_1,\\dots,e_n\\}[/math]. If M is the matrix whose ith row is given by the coordinates of [math]e_i[/math], then [math]A=MM^\\mathrm{T}[/math]. To turn M into a lower-triangular matrix, use the Gram\u2013Schmidt process to turn B into an orthonormal basis. The change of basis matrix is a triangular matrix L (which if you do the process in the right order can be chosen as lower-triangular). Thus, M=LK, where the rows of K are the coordinates of the new orthornomal basis. Hence K is an orthogonal matrix, i.e. [math]KK^\\mathrm{T}[/math]=I. So, [math]A=MM^\\mathrm{T}=LK(LK)^\\mathrm{T}=LKK^\\mathrm{T}L^\\mathrm{T}=LL^\\mathrm{T}[/math] as desired. In other words, the answer is that a symmetric positive-definite matrix encodes an inner product on some lattice in [math]\\mathbf{R}^n[/math]. You can change the basis of this lattice using Gram\u2013Schmidt process to obtain the result. ",
+            "date": "Answered February 2, 2010",
+            "views": "55",
+            "upvotes": " View 29 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel McLaury",
+                    "user_href": "/profile/Daniel-McLaury"
+                },
+                {
+                    "user_id": "Josef Ond\u0159ej",
+                    "user_href": "/profile/Josef-Ond\u0159ej"
+                },
+                {
+                    "user_id": "Smrati Rai",
+                    "user_href": "/profile/Smrati-Rai"
+                },
+                {
+                    "user_id": "Ahish Madhavan",
+                    "user_href": "/profile/Ahish-Madhavan"
+                },
+                {
+                    "user_id": "Akhil Goyal",
+                    "user_href": "/profile/Akhil-Goyal-5"
+                },
+                {
+                    "user_id": "Ryan Stoner",
+                    "user_href": "/profile/Ryan-Stoner-12"
+                },
+                {
+                    "user_id": "Kalpendu Pasad",
+                    "user_href": "/profile/Kalpendu-Pasad"
+                },
+                {
+                    "user_id": "Petra Blackstone",
+                    "user_href": "/profile/Petra-Blackstone-1"
+                },
+                {
+                    "user_id": "Istvan Varga",
+                    "user_href": "/profile/Istvan-Varga"
+                },
+                {
+                    "user_id": "Shamindra Shrotriya",
+                    "user_href": "/profile/Shamindra-Shrotriya"
+                }
+            ]
+        }
+    ]
+}

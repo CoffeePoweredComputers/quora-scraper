@@ -1,0 +1,73 @@
+{
+    "title": "What is the meaning of &' in Rust? - Quora",
+    "tags": [
+        "Rust (programming language)",
+        "Meaning (philosophy)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rahul Sharma",
+                "href": "/profile/Rahul-Sharma-556"
+            },
+            "answer_text": "I assume the the reader to be familiar with lifetime and ownership mechanism in scopes in Rust language. If not, read this : Lifetimes in Rust Lets break it apart.There are two things here. First is the `&` symbol which has similar meaning : (a reference to a variable) as in C/C++. The next symbol ` ' ` is actually not attached to the & symbol, but it is seen before a type followed by a single lower case letter in rust like ( &'a u32 ) or ( &'m Vec<f64>). The ('a) is called a Lifetime Annotation for a reference type (say &u32) and what it means is basically specifying a named lifetime to a reference type and it provides a way to the compiler to infer the scope of a variable. They are only required for Reference types ( anything with an '&' before it ). But in trivial cases, you don't need to manually annotate lifetimes to types, as rust compiler does this statically at compile time for your code (called lifetime elision). For example: Let us see a function which returns the bigger of two strings, passed to it as a reference Here an explicit lifetime annotation to function parameters is necessary. fn bigger(a:&str,b:&str) -> &str {\u00a0\tif a.len() > b.len()\u00a0\t\t{a} else {b}\u00a0}\u00a0The above won't compile, as compiler is unable to infer the appropriate output lifetime i.e., a lifetime for the returned str slice, because there are two borrowed input reference variables here. If there was, only a single reference parameter on bigger, then no explicit lifetime would have been required as in that case Rust's lifetime elision would kick in. To make it compile we need, to change our function signature like below. fn bigger<'a>(a:&'a str,b:&'a str) -> &'a str {\u00a0\tif a.len() > b.len()\u00a0\t\t{a} else {b}\u00a0}\u00a0Here we have said to the compiler that, the return value from bigger will have the same lifetime as its parameters a and b. Also a trivial example seen in rust code is `&'static str` .This basically reads as \"a reference to a string slice with the lifetime of static\", which means that the string has a lifetime of the global scope. It also has been explained nicely in a SO thread : Lifetimes in Rust ",
+            "date": "Updated March 3, 2017",
+            "views": "57",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Taha Dhailey",
+                    "user_href": "/profile/Taha-Dhailey"
+                },
+                {
+                    "user_id": "Atsushi Neki",
+                    "user_href": "/profile/Atsushi-Neki"
+                },
+                {
+                    "user_id": "Stephen Blum",
+                    "user_href": "/profile/Stephen-Blum"
+                },
+                {
+                    "user_id": "Jeffrey Smith",
+                    "user_href": "/profile/Jeffrey-Smith-158"
+                },
+                {
+                    "user_id": "Ta Thanh Dinh",
+                    "user_href": "/profile/Ta-Thanh-Dinh"
+                },
+                {
+                    "user_id": "Bob Marshal",
+                    "user_href": "/profile/Bob-Marshal"
+                },
+                {
+                    "user_id": "Yolier Galan Tasse",
+                    "user_href": "/profile/Yolier-Galan-Tasse"
+                },
+                {
+                    "user_id": "Sumit Bhanushali",
+                    "user_href": "/profile/Sumit-Bhanushali"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joseph Ross",
+                "href": "/profile/Joseph-Ross-100"
+            },
+            "answer_text": "\"&\" (ampersand) and \"'\"(apostrophe) they both have different meanings. \"&\" is just a reference of any variable and \"'\" is used to provide an explicit lifetime to any variable, in other words, \"'\" is to provide a lifetime annotation. like ('a) here value after \"'\"could be anything. For Example: (name:&'a str) => here it means we have provided the explicit lifetime to the reference of the name(variable) ",
+            "date": "Answered June 26, 2019",
+            "views": "844",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pawan Bisht",
+                    "user_href": "/profile/Pawan-Bisht-54"
+                },
+                {
+                    "user_id": "Stephen Blum",
+                    "user_href": "/profile/Stephen-Blum"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,370 @@
+{
+    "title": "Do SSDs have unlimited reads? I know that at least some SSDs can run out of writes and then it is a 'read only' drive, but after than happens can I still use the drive? - Quora",
+    "tags": [
+        "Solid-State Drives (SSD)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Irn\u00e9 Barnard",
+                "href": "/profile/Irn\u00e9-Barnard"
+            },
+            "answer_text": "While strictly speaking Neelima & Tony are correct that there are issues which could cause reads to make data corrupt, especially after the write life-cycle has been reached. You also need to take this into context. Just how long would that take? Well some studies have already been done: Modern SSDs can last a lifetime The life span of an SSD - how long does it last and what can be done to take care? How Long Do Solid State Drives Really Last? Grueling endurance test blows away SSD durability fears The worst case in that meant a SSD failed after writing 728 TB of data. What they effectively did is just write random data onto the drive then overwrite it again and again constantly for a year. What you can also see is some of the drives are still in this test and have already surpassed the 2 PB (1 PB = 1000 TB = 1 000 000 GB) mark. Thus some manufacturers make MUCH better drives than others. And what does this mean for you as a user? How much are you going to write, never mind read after it has failed? You\u2019d really need to do something strange to surpass a handful of GB per year. So even if you bought one of the weaker SSDs you\u2019d likely not see the write-cycle issue crop up for several years to decades. And on others it might only happen after you\u2019ve left this world. Now compare that to spindle drives which also wears out mechanically as their parts rub together. These have also been shown to last between 2 to 20 years (depending on manufacturing quality). So should you worry? I\u2019d be much more worried about a HDD failing than a SSD, and from personal experience this is very justified (of the 15 or so HDDs I\u2019ve had 5 of them have failed in under 5 years, 3 in under 10, the rest are still usable after 15), while the 3 SSDs are running constantly (one is now 7 years old inside my file server / desktop combo, the newest in my laptop is 2 years). But also I\u2019d be extremely worried if all my stuff is on only one drive (no matter which). If you need to store data for long periods, then none of the normal media would suffice. Not without some possible problems in a few years to decades. For long term storage you should really be looking at archival quality optical media, something like MDisc (or other archival blue ray discs): New Blu-ray Disc offers 'lifetime of storage' ",
+            "date": "Answered January 5, 2018",
+            "views": "42",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jonathan Mahoney",
+                    "user_href": "/profile/Jonathan-Mahoney-2"
+                },
+                {
+                    "user_id": "Younes Rezaie",
+                    "user_href": "/profile/Younes-Rezaie"
+                },
+                {
+                    "user_id": "Judge Godzuki",
+                    "user_href": "/profile/Judge-Godzuki"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "David David",
+                    "user_href": "/profile/David-David-875"
+                },
+                {
+                    "user_id": "Efron Berlian",
+                    "user_href": "/profile/Efron-Berlian"
+                },
+                {
+                    "user_id": "Aishik Roy",
+                    "user_href": "/profile/Aishik-Roy"
+                },
+                {
+                    "user_id": "John White",
+                    "user_href": "/profile/John-White-363"
+                },
+                {
+                    "user_id": "Utkarsh Bhatt",
+                    "user_href": "/profile/Utkarsh-Bhatt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Neelima P",
+                "href": "/profile/Neelima-P-36"
+            },
+            "answer_text": "No, they do not have unlimited reads. The SSD may switch to a read only mode after it has been determined that there aren\u2019t enough \u201cgood\u201d blocks remaining to write new data to. Blocks wear out after going through a large number of program/erase cycles. However, NAND flash also suffers from: Read Disturb: A read disturb error occurs when data is changed during repeated reads (between erases). Repeated reads to a block without an erase can alter data contained in that block. To recover, it is necessary to erase the block and reprogram the data. Data retention issues: During extended storage periods, NAND cells can lose data by charge loss. This problem is exacerbated at high program/erase cycle counts. To recover from this, it is necessary to erase the block and reprogram the data. High P/E cycles aggravate both read disturb/data retention, so reading indefinitely is not possible. Data retention also deteriorates at higher temperatures. ",
+            "date": "Answered December 31, 2017",
+            "views": "95",
+            "upvotes": " View 52 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Younes Rezaie",
+                    "user_href": "/profile/Younes-Rezaie"
+                },
+                {
+                    "user_id": "Girish Gowda",
+                    "user_href": "/profile/Girish-Gowda-87"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Lo\u00efc CLECH",
+                    "user_href": "/profile/Lo\u00efc-CLECH"
+                },
+                {
+                    "user_id": "PIYUSH KINGE",
+                    "user_href": "/profile/PIYUSH-KINGE"
+                },
+                {
+                    "user_id": "Sravya Borra",
+                    "user_href": "/profile/Sravya-Borra-6"
+                },
+                {
+                    "user_id": "Hrisimir Angelov",
+                    "user_href": "/profile/Hrisimir-Angelov-1"
+                },
+                {
+                    "user_id": "Stephen Kendall",
+                    "user_href": "/profile/Stephen-Kendall-4"
+                },
+                {
+                    "user_id": "Evan Darrow",
+                    "user_href": "/profile/Evan-Darrow-1"
+                },
+                {
+                    "user_id": "David David",
+                    "user_href": "/profile/David-David-875"
+                },
+                {
+                    "user_id": "Paul Justin Aranzamendez",
+                    "user_href": "/profile/Paul-Justin-Aranzamendez"
+                },
+                {
+                    "user_id": "Tommy Long",
+                    "user_href": "/profile/Tommy-Long-11"
+                },
+                {
+                    "user_id": "Vivek Jayabalan",
+                    "user_href": "/profile/Vivek-Jayabalan"
+                },
+                {
+                    "user_id": "John HM Gon\u00e7alves",
+                    "user_href": "/profile/John-HM-Gon\u00e7alves"
+                },
+                {
+                    "user_id": "Art Burke",
+                    "user_href": "/profile/Art-Burke-1"
+                },
+                {
+                    "user_id": "Matt Mahoney",
+                    "user_href": "/profile/Matt-Mahoney-2"
+                },
+                {
+                    "user_id": "J\u00f3zsef Csernik",
+                    "user_href": "/profile/J\u00f3zsef-Csernik"
+                },
+                {
+                    "user_id": "Amogh Adkar",
+                    "user_href": "/profile/Amogh-Adkar"
+                },
+                {
+                    "user_id": "Viet Hoang",
+                    "user_href": "/profile/Viet-Hoang-73"
+                },
+                {
+                    "user_id": "Ankesh Gupta",
+                    "user_href": "/profile/Ankesh-Gupta-8"
+                },
+                {
+                    "user_id": "Sergiu Gruita",
+                    "user_href": "/profile/Sergiu-Gruita-1"
+                },
+                {
+                    "user_id": "Arzu Abasov",
+                    "user_href": "/profile/Arzu-Abasov"
+                },
+                {
+                    "user_id": "Jeff Fuhrman",
+                    "user_href": "/profile/Jeff-Fuhrman"
+                },
+                {
+                    "user_id": "Deepak Kumar",
+                    "user_href": "/profile/Deepak-Kumar-7892"
+                },
+                {
+                    "user_id": "Pratyush Ghosh",
+                    "user_href": "/profile/Pratyush-Ghosh"
+                },
+                {
+                    "user_id": "Israel Gomez",
+                    "user_href": "/profile/Israel-Gomez-8"
+                },
+                {
+                    "user_id": "Aaron Scheiner",
+                    "user_href": "/profile/Aaron-Scheiner"
+                },
+                {
+                    "user_id": "Aaron Brodney",
+                    "user_href": "/profile/Aaron-Brodney-1"
+                },
+                {
+                    "user_id": "Alex Kurzon",
+                    "user_href": "/profile/Alex-Kurzon"
+                },
+                {
+                    "user_id": "Mohamed Abdullah",
+                    "user_href": "/profile/Mohamed-Abdullah-6"
+                },
+                {
+                    "user_id": "Dave Griffin",
+                    "user_href": "/profile/Dave-Griffin"
+                },
+                {
+                    "user_id": "Zeke Levin",
+                    "user_href": "/profile/Zeke-Levin"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Krishna Chaitanya",
+                    "user_href": "/profile/Krishna-Chaitanya-89"
+                },
+                {
+                    "user_id": "Nitesh Patel",
+                    "user_href": "/profile/Nitesh-Patel-32"
+                },
+                {
+                    "user_id": "Vivek Nagarajan",
+                    "user_href": "/profile/Vivek-Nagarajan-1"
+                },
+                {
+                    "user_id": "Prakhar Pouranick",
+                    "user_href": "/profile/Prakhar-Pouranick"
+                },
+                {
+                    "user_id": "Pep Alzamora Orpi",
+                    "user_href": "/profile/Pep-Alzamora-Orpi"
+                },
+                {
+                    "user_id": "Eivind Kj\u00f8rstad",
+                    "user_href": "/profile/Eivind-Kj\u00f8rstad"
+                },
+                {
+                    "user_id": "Gunawan Wicaksono",
+                    "user_href": "/profile/Gunawan-Wicaksono"
+                },
+                {
+                    "user_id": "Ricky Sng",
+                    "user_href": "/profile/Ricky-Sng"
+                },
+                {
+                    "user_id": "Donatien Couka",
+                    "user_href": "/profile/Donatien-Couka"
+                },
+                {
+                    "user_id": "Alex Kranz",
+                    "user_href": "/profile/Alex-Kranz-1"
+                },
+                {
+                    "user_id": "Kevin Liu",
+                    "user_href": "/profile/Kevin-Liu-470"
+                },
+                {
+                    "user_id": "Amol Bhagwat",
+                    "user_href": "/profile/Amol-Bhagwat"
+                },
+                {
+                    "user_id": "Jorge Garcia",
+                    "user_href": "/profile/Jorge-Garcia-198"
+                },
+                {
+                    "user_id": "Tony Wong",
+                    "user_href": "/profile/Tony-Wong-105"
+                },
+                {
+                    "user_id": "Ankhi Mun",
+                    "user_href": "/profile/\u0906\u0916\u0940\u0902-\u092e\u0941\u0928-Ankhi-Mun"
+                },
+                {
+                    "user_id": "Vincent Maldia",
+                    "user_href": "/profile/Vincent-Maldia"
+                },
+                {
+                    "user_id": "Vitalie Vrabie",
+                    "user_href": "/profile/Vitalie-Vrabie"
+                },
+                {
+                    "user_id": "Jacob Landon Santos",
+                    "user_href": "/profile/Jacob-Landon-Santos"
+                },
+                {
+                    "user_id": "John White",
+                    "user_href": "/profile/John-White-363"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Wong",
+                "href": "/profile/Tony-Wong-105"
+            },
+            "answer_text": "No, SSDs do not have unlimited reads. For that matter, I can\u2019t think of any computer part that has unlimited anything. Back to SSDs, when they reach their limits of their memory endurance, it\u2019s not correct to say it becomes a read-only drive. The memory cells that reach their limit become unusable and your data stored in those cells is then at risk, both reading and writing. Source: The SSD Endurance Experiment: They're all dead ",
+            "date": "Answered December 31, 2017",
+            "views": "38",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Richard Felder",
+                    "user_href": "/profile/Richard-Felder-6"
+                },
+                {
+                    "user_id": "David David",
+                    "user_href": "/profile/David-David-875"
+                },
+                {
+                    "user_id": "Anders Christensen",
+                    "user_href": "/profile/Anders-Christensen-27"
+                },
+                {
+                    "user_id": "John B. Anderson III",
+                    "user_href": "/profile/John-B-Anderson-III"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Vitalie Vrabie",
+                    "user_href": "/profile/Vitalie-Vrabie"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Pep Alzamora Orpi",
+                    "user_href": "/profile/Pep-Alzamora-Orpi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tose Nikolov",
+                "href": "/profile/Tose-Nikolov"
+            },
+            "answer_text": "You won't get even near to the write limit of the ssd. I am a heavy computer user and in 1 year of owning the ssd I have around 10TB written to the drive. By the time you have gotten near its write limits the drive would have paid itself off a thousand times. ",
+            "date": "Answered December 31, 2017",
+            "views": "831",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John B. Anderson III",
+                    "user_href": "/profile/John-B-Anderson-III"
+                },
+                {
+                    "user_id": "Pep Alzamora Orpi",
+                    "user_href": "/profile/Pep-Alzamora-Orpi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin Cameron",
+                "href": "/profile/Kevin-Cameron"
+            },
+            "answer_text": "Pretty much - there is no wear involved in reading. Writing to Flash memory requires firing electrons at relatively high energy into structures where they get stuck - the high energy cause some displacement of atoms which eventually causes failure in the cells (something like 10000 writes). Magnetic drives wear symmetrically, i.e. reads and writes cause equivalent wear. ",
+            "date": "Answered January 2, 2018",
+            "views": "846",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Judge Godzuki",
+                    "user_href": "/profile/Judge-Godzuki"
+                },
+                {
+                    "user_id": "John White",
+                    "user_href": "/profile/John-White-363"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anthony Guzzi",
+                "href": "/profile/Anthony-Guzzi"
+            },
+            "answer_text": "I have heard that also, however I have never heard of it actually happening to anyone. ",
+            "date": "Answered December 31, 2017",
+            "views": "246",
+            "upvotes": "0"
+        }
+    ]
+}

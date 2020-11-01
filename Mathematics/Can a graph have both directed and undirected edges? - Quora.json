@@ -1,0 +1,76 @@
+{
+    "title": "Can a graph have both directed and undirected edges? - Quora",
+    "tags": [
+        "Graphs (computer science)",
+        "Graph Algorithms",
+        "Graphs (visualization)",
+        "Graph Theory",
+        "Data Structures"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel R. Page",
+                "href": "/profile/Daniel-R-Page"
+            },
+            "answer_text": "Let undirected graph [math]G=(V,E)[/math]. Any undirected graph can be represented as a directed graph as follows: -For each undirected edge [math]e=\\{u,v\\} \\in E[/math], replace [math]e[/math] by two directed edges [math](u,v)[/math], and [math](v,u)[/math]. Now you have a directed graph. You can do this for any undirected graph. So if you had a graph with \u201cundirected\u201d and \u201cdirected\u201d edges, just turn the remaining undirected edges into directed edges. It would not surprise me if somebody were to use them at the same time to avoid needing to explain this fact. I think I\u2019ve heard somewhere a researcher using a term \u201cmixed graph\u201d for if you have both types in a graph, but don\u2019t hold me to it. The way we normally talk about these things in Graph Theory (at least on the Computer Science side) we pick one or the other. There are other kinds of graphs that can capture if the endpoints are also directed (meaning can be directed on both ends) called bidirected graphs too, but these are not relevant to the question. Hope this helps! ",
+            "date": "Answered October 5, 2016",
+            "views": "26",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Huang",
+                    "user_href": "/profile/Andrew-Huang-52"
+                },
+                {
+                    "user_id": "Zaied Zaman",
+                    "user_href": "/profile/Zaied-Zaman"
+                },
+                {
+                    "user_id": "Ashutosh Khare",
+                    "user_href": "/profile/Ashutosh-Khare-4"
+                },
+                {
+                    "user_id": "David Whittle",
+                    "user_href": "/profile/David-Whittle-13"
+                },
+                {
+                    "user_id": "Juspreet-Singh Sandhu",
+                    "user_href": "/profile/Juspreet-Singh-Sandhu"
+                },
+                {
+                    "user_id": "Rahul Sridhar",
+                    "user_href": "/profile/Rahul-Sridhar-4"
+                },
+                {
+                    "user_id": "Janko Jerinic",
+                    "user_href": "/profile/Janko-Jerinic"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vithor Rosa Franco",
+                "href": "/profile/Vithor-Rosa-Franco"
+            },
+            "answer_text": "Yes, it can. In the probabilistic graph model\u2019s literature they are better known as chain graphs. At least two types of chain graphs exist. The first is the Lauritzen-Wermuth-Frydenberg chain graph (LWF CG), which assumes that causal effects propagates through associations between dependent variables. This means that, if you have a graph such as C1 \u2192 D1 \u2014 D2 \u2190 C2, one can say that C2 has a causal effect in D1, even if there is no arrow connecting C2 and D1. This happens because the causal effect \u201cpropagates\u201d through D2\u2019s \u2014 relation with D1. The same reasoning can be applied for the relation between C1 and D2. The second type is the Andersson-Madigan-Perlman chain graph (AMP CG), which assumes that causal effects do not propagate through associations between dependent variables. Using the same example as above, if you use AMP CG, C1 has no causal effect on D2 and C2 has no causal effect on D1, given that there are no arrows connecting these nodes. Finally, you can have even more complex graph models combining bidirected edges (representing mutual causation), circle arrowheads (which indicates the presence of a shared latent cause between nodes), dashed arrows (representing non-propagating causal effects), and many others, with the traditional directed and undirected edges. Some referencesLinear Dependencies Represented by Chain GraphsAlternative Markov Properties for Chain GraphOn the Markov Equivalence of Chain Graphs, Undirected Graphs, and Acyclic DigraphsUnifying Gaussian LWF and AMP Chain Graphs to Model InterferenceChain graph models and their causal interpretations An Anytime Algorithm for Causal Inference ",
+            "date": "Answered April 25, 2019",
+            "views": "807",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael Mozer",
+                    "user_href": "/profile/Michael-Mozer"
+                },
+                {
+                    "user_id": "Melissa Gresser",
+                    "user_href": "/profile/Melissa-Gresser"
+                },
+                {
+                    "user_id": "Rajorshi Chaudhuri",
+                    "user_href": "/profile/Rajorshi-Chaudhuri"
+                }
+            ]
+        }
+    ]
+}

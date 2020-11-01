@@ -1,0 +1,70 @@
+{
+    "title": "How to write a computer program - Quora",
+    "tags": [
+        "Computer Programs",
+        "C (programming language)",
+        "Learning to Program",
+        "Computers",
+        "Software and Applications",
+        "Programming Languages",
+        "Computer Programming"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amy Bowersox",
+                "href": "/profile/Amy-Bowersox"
+            },
+            "answer_text": "I'll illustrate this using the language I use most often these days, Java. Thankfully, you can download the Java tools for free, at this link: Java SE - Downloads. You'll want to get the \"Java Development Kit\" (JDK) in order to compile programs.  When you install it, make sure it sets up the right \"environment variables\" so that you can compile programs from the command line. Check this by opening up a command prompt (terminal window, on OSX or Linux), and typing the following command: javac -version You should see the version number of the Java compiler. Now open up a text editor (not a word processor!). On Windows, Notepad will do.  Enter into it the following text:  public class Hello\u00a0{\u00a0  public static void main(String[] args)\u00a0  {\u00a0    System.out.println(\"Hello, world!\");\u00a0  }\u00a0}\u00a0 Save this file as \"Hello.java\" (yes, it must be named that).  Go back to your command prompt and type the command: javac Hello.java If you didn't make any errors the command prompt will just \"come back\" without printing anything, and you will have another file named \"Hello.class\".  Now type the command: java Hello You should see the following text printed: Hello, world! You've just created your first program and executed it successfully.  Now, consult with some good Java programming references to learn how to take it further.  See also my answer to How do I go from Java noob to pro in a four month grind? and my answer to How do I master Java step by step? What are the best sites to get help?, if I may toot my own horn for a minute. :-) Hat tip: Daniel Catalan for the A2A. ",
+            "date": "Answered June 11, 2014",
+            "views": "28",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Julie Prentice",
+                    "user_href": "/profile/Julie-Prentice"
+                },
+                {
+                    "user_id": "Aryeh Friedman",
+                    "user_href": "/profile/Aryeh-Friedman"
+                },
+                {
+                    "user_id": "Henri Hyyryl\u00e4inen",
+                    "user_href": "/profile/Henri-Hyyryl\u00e4inen"
+                },
+                {
+                    "user_id": "Sabrina Hoyt",
+                    "user_href": "/profile/Sabrina-Hoyt"
+                },
+                {
+                    "user_id": "Sheri Fresonke Harper",
+                    "user_href": "/profile/Sheri-Fresonke-Harper"
+                },
+                {
+                    "user_id": "Blendor Sefaj",
+                    "user_href": "/profile/Blendor-Sefaj"
+                },
+                {
+                    "user_id": "Daniel Catalan",
+                    "user_href": "/profile/Daniel-Catalan-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adam Avramov",
+                "href": "/profile/Adam-Avramov"
+            },
+            "answer_text": "1. Write program.2. Compile to executable.3. Put icon on desktop.4. Click icon. Or, if you're using an interpreted language (e.g. Python, Ruby, or what-have-you), you could skip step two and just create an icon that points to the interpreter AND your program. Magic, huh? Now seriously, the \"icon\" think got to me. Get your hands on a command line environment right now, and learn your way around it. A GNU/Linux server in VirtualBox is a good start, you could download a 30MB Ubuntu Mini ISO from here and work from there, putting together your custom-tailored work environment out of available pre-built packages. Besides giving you valuable practical skills and insight into how it all comes together, this will show you the bigger picture of how much the desktop paradigm that is so ingrained into our expectation of modern computing actually only serves to obscure what's going on, dumbing down the computer experience until it's more enslaving than empowering, and turning the computer operator into a mere consumer of someone else's completely arbitrary intellectual product. Computers are proving to be the greatest thinking aid ever, and some corporate CEO in the late 80s (when personal computing was just starting to take off, mind you, and was indeed an alien concept) decided that what users need is to think less. ",
+            "date": "Answered June 10, 2014",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Blendor Sefaj",
+                    "user_href": "/profile/Blendor-Sefaj"
+                }
+            ]
+        }
+    ]
+}

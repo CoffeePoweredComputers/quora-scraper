@@ -1,0 +1,58 @@
+{
+    "title": "How to find the expectation of exp(X) where X has the Poisson distribution - Quora",
+    "tags": [
+        "Poisson Distribution",
+        "Probability (statistics)",
+        "Functions (mathematics)",
+        "Statistics (academic discipline)",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ananyo Banerjee",
+                "href": "/profile/Ananyo-Banerjee-7"
+            },
+            "answer_text": "We know that if  has a Poisson Distribution with parameter say,  then  The expected value of  is . Also the moment generating function is  Now to find the expectation of  we just put  in  Because So if we put in  then we get  Hence. ",
+            "date": "Answered October 12, 2019",
+            "views": "58",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "B.L. Srivastava",
+                "href": "/profile/B-L-Srivastava"
+            },
+            "answer_text": "Poisson distribution with parameter m is given by the formula; p(X= x) = e^(-m) m^(x)/x ! ; x = 0, 1, 2, 3, \u2026. . or for x = 0, 1, 2, 3, \u2026. \u2026. \u2026, then e^(x) = x\u2019 = 1, e, e^(2), e^(3), \u2026 \u2026 \u2026, and the corresponding probabilities are listed as; e^(-m){ 1, m, m^(2)/2!, m^(3)/3!, \u2026. \u2026 ..} . Therefore E(X) = e^(-m){0.1 + 1.m/1! + 2.m^(2)/2! + 3.m^(3)/3! + \u2026. \u2026. .. }. = e^(-m) m { 1 + m/1! + m^(2)/2! + \u2026. \u2026 ..} = m e^(-m) e^(m) = m . Next, let us come to the actual problem i.e. let us find E(e^(X)) . For that we can go as above way but an easier way will be as follows; We know that m.g.f. of a poisson variate X is given as M((t, X) = E(e^(tX)) = e^{m(e^(t)-1)} . Now, if we put t = 1 in the above, we get, M(1, X) = E(e^(X)) = e^(m(e-1)) . Which is the required answer of the problem. ",
+            "date": "Answered October 12, 2019",
+            "views": "108",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tom\u00e1s Molina Morbiducci",
+                "href": "/profile/Tom\u00e1s-Molina-Morbiducci"
+            },
+            "answer_text": "You must add each value with its corresponding probability, since there are continues (infinite) values you must integrate. And after that divide by the infinite possibility values, another integral So if p(X) is the poission distribution then <e^X> = integrate(e^X * p(X))dx /integrate(p(X))dx As you can see, its nothing more than the average for getting your grades for example, only that it is continues The limits of the integral go from -infinite to infinite both. It can be less depending if p(x) reaches 0 before going to plus or minus infinite. ",
+            "date": "Answered October 13, 2019",
+            "views": "76",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Happy Javi",
+                    "user_href": "/profile/Happy-Javi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kwok Choy Yue",
+                "href": "/profile/Kwok-Choy-Yue"
+            },
+            "answer_text": " ",
+            "date": "Answered October 12, 2019",
+            "views": "77",
+            "upvotes": "0"
+        }
+    ]
+}

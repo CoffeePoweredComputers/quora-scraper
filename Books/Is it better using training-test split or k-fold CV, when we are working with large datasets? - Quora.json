@@ -1,0 +1,86 @@
+{
+    "title": "Is it better using training-test split or k-fold CV, when we are working with large datasets? - Quora",
+    "tags": [
+        "Datasets",
+        "Data Mining",
+        "Data Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hari Hara Subramanyam Sreenivasan",
+                "href": "/profile/Hari-Hara-Subramanyam-Sreenivasan"
+            },
+            "answer_text": "Either technique is used for two purposes: Evaluating model performance.Preventing overfitting*.However, there are limitations depending on the data which you will be using. Off the top of my head, I can boldly say that you will need to use a training-test split in the event that you are working with time series data (in this case, all types of k-fold CV will not be acceptable). There are a few options: Training-test split: This split is usually done using a 70\u201330 ratio and is beneficial because the amount of time required for training will be lower than CV. This can be helpful if you have computational constraints (especially since you specifically mentioned you will be using large datasets)Training-validation-test split: This is another way to split the data using a 60\u201330\u201310 ratio. In this type of split, you will use the 60 and 30 percent of data in order to train and test the data for fit. Once you have a model you are confident about, you can proceed to use the 10% of data in order to do a \u201cfinal check\u201d to confirm the performance of the model. It is better to use the 10% sparingly and refrain from actively utilizing it while testing (that should be done using the 30%).k-fold cross validation: The number of folds you choose for training the data is dependent on your computational resources again. I typically choose either k = 5 for larger datasets, or k = 10 when I have the resources. This is the best method in my opinion. In general, Cross validation provides a reliable method to test your model performance.Leave one-out cross validation (LOOCV): I have included this just for completeness but do not recommend it at all. It is time intensive, I find the results to be unreliable and have never met anyone who recommends it.In conclusion, I would suggest the following order: 10-fold CV5-fold CVtraining-validation-test splittraining-test split *I need to point out that these techniques help us identify the occurrence and degree of overfitting. The reasons for overfitting will depend on the models being built/used, the tuning of the hyperparameters (whenever applicable), features engineered and so on. ",
+            "date": "Answered June 11, 2017",
+            "views": "87",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mohit Goyal",
+                    "user_href": "/profile/Mohit-Goyal-440"
+                },
+                {
+                    "user_id": "Ivan Shelonik",
+                    "user_href": "/profile/Ivan-Shelonik"
+                },
+                {
+                    "user_id": "Steven Kolawole",
+                    "user_href": "/profile/Steven-Kolawole"
+                },
+                {
+                    "user_id": "Jan Bours",
+                    "user_href": "/profile/Jan-Bours-1"
+                },
+                {
+                    "user_id": "Jermaine Marshall",
+                    "user_href": "/profile/Jermaine-Marshall-1"
+                },
+                {
+                    "user_id": "Mohamed Naas",
+                    "user_href": "/profile/Mohamed-Naas-5"
+                },
+                {
+                    "user_id": "Abram Setyo Prabowo",
+                    "user_href": "/profile/Abram-Setyo-Prabowo"
+                },
+                {
+                    "user_id": "Ash Setter",
+                    "user_href": "/profile/Ash-Setter"
+                },
+                {
+                    "user_id": "Sean D'Rosario",
+                    "user_href": "/profile/Sean-DRosario"
+                },
+                {
+                    "user_id": "Joe Philleo",
+                    "user_href": "/profile/Joe-Philleo-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Lee",
+                "href": "/profile/Daniel-Lee-283"
+            },
+            "answer_text": "When in doubt K-fold CV, but that\u2019s not to say train-test split has little merit. It has its benefit at the right time and right place. Consider Time Series prediction. Why would you care about errors in the past? You should care about errors you would make in the future. In that sense, you want to partition your dataset in past TS datapoints and the most current datapoints and perform MSE or Log Loss ( depending on whether this is classification or regression ) to evaluate how well your model can predict into the future. In other general cases, K-Fold CV should do enough and should be considering that your question is whether to use CV in \u201clarge\u201d dataset. Although large dataset is subjective depending on who you really ask. But let\u2019s say you have at least a 5k data points, then that should be suffice to perform CV. ",
+            "date": "Answered June 8, 2017",
+            "views": "43",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Avantika Sharma",
+                    "user_href": "/profile/Avantika-Sharma-44"
+                },
+                {
+                    "user_id": "Jan Bours",
+                    "user_href": "/profile/Jan-Bours-1"
+                },
+                {
+                    "user_id": "Simone Cancelli",
+                    "user_href": "/profile/Simone-Cancelli-1"
+                }
+            ]
+        }
+    ]
+}

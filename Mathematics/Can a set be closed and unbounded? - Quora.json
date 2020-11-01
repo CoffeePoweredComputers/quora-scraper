@@ -1,0 +1,82 @@
+{
+    "title": "Can a set be closed and unbounded? - Quora",
+    "tags": [
+        "Metric Spaces",
+        "Topology",
+        "Set Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lance Everett",
+                "href": "/profile/Lance-Everett-3"
+            },
+            "answer_text": "Yes, in fact for any topological space [math]X[/math], the whole space [math]X[/math] is always closed, by definition. This is because [math]\\emptyset[/math] is open by definition, and a closed set is a set whose complement is open. Thus, in a metric space [math](X,d)[/math], if the whole space is unbounded, then the whole space is the kind of set in question, where the topology is induced by the metric. And likewise, if we have any unbounded set, then the whole space must be unbounded, and hence we have a closed unbounded set. As a less trivial example, the set [math][0,\\infty)[/math] is a closed, unbounded set in [math]\\R[/math] with the normal metric and topology. It is closed because it is the complement of the set [math](-\\infty,0)[/math], which is open. There are countless other examples (literally). As you can see, being closed and unbounded is not very special. What is special, though, is being compact, which is a sort of generalization of being closed and bounded in [math]\\R^n[/math]. If [math]X[/math] is compact, it means that every open cover of [math]X[/math] has a finite subcover. The Heine\u2013Borel theorem gives the result. ",
+            "date": "Updated February 11, 2020",
+            "views": "28",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael Harrison",
+                    "user_href": "/profile/Michael-Harrison-482"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Filip Spycha\u0142a",
+                    "user_href": "/profile/Filip-Spycha\u0142a"
+                },
+                {
+                    "user_id": "Muntadhar A",
+                    "user_href": "/profile/Muntadhar-A"
+                },
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mariano Llancaman",
+                "href": "/profile/Mariano-Llancaman"
+            },
+            "answer_text": "Can a set be closed and unbounded? There can absolutely exist closed and unbounded sets. Not in every metric space of course, depending on what set and metric you use you may not even have a single unbounded set. For example: The set  with the usual metric in  with the metric In both cases the distance between two points can never be greater than 1, so no unbounded sets exist. Now consider  with its usual distance. Examples of closed and unbounded sets are in this metric space are: etc ",
+            "date": "Answered July 29, 2019",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wes Browning",
+                    "user_href": "/profile/Wes-Browning"
+                },
+                {
+                    "user_id": "Kermit Rose",
+                    "user_href": "/profile/Kermit-Rose"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Townsend",
+                "href": "/profile/David-Townsend-37"
+            },
+            "answer_text": "The set F = U [2n,2n+1] - where n is an integer, that is the closed intervals [-4,-5], [-2,-1], [0,1], [2,3], [4,5] etc , is unbounded and closed - it is closed because if x is a point not in F, then there is some open interval, (2n+1, 2n) which contains x. You can even consider the closed set F1 = [0,infinity) since any point not in F1 would be in the set R\\F1 which is open. And for that matter, the entire real line is unbounded and closed, since it\u2019s complement is the empty set which is always open. ",
+            "date": "Answered May 30, 2020",
+            "views": "351",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tony Bunn",
+                "href": "/profile/Tony-Bunn-1"
+            },
+            "answer_text": "The Set of all sets that contain no members is both closed (as each is the empty set, by definition) and unbounded (as the number of descriptions of such sets are infinite). ",
+            "date": "Answered July 30, 2019",
+            "views": "359",
+            "upvotes": "0"
+        }
+    ]
+}

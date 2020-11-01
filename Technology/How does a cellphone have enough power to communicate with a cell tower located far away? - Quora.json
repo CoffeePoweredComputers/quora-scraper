@@ -1,0 +1,65 @@
+{
+    "title": "How does a cellphone have enough power to communicate with a cell tower located far away? - Quora",
+    "tags": [
+        "Cell Towers",
+        "Mobile Phones"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gonzalo Perez",
+                "href": "/profile/Gonzalo-Perez-9"
+            },
+            "answer_text": "Cellphones do wonders to maintain a stable signal level, because the bands they use (UHF, microwave) are specially prone to all sorts of issues, specially when moving. Phones use custom strip antennas, designed to be as much isothropic as possible (radiate signal evenly in all directions) regardless if the phone is on hand, pocket, etc. State-of-the-art antenna amplifiers can decode extremely weak signals down to -95dBm. Signals are encoded by different combinations of phase and amplitude (for ex. QAM-64) or \u2018wrapped\u2019 using specific codes to prevent interference (ex.: WCDMA), to add diversity and minimize data loss, i.e. further increasing the s/n ratio. Error correction codes are added to data, to help the base station detect and repair data errors on-the-fly, rather than rejecting a packet and asking the phone to re-send it. This improves data rates and further reduce data loss. Voice is heavily processed by DSP codecs that compress data, stretch the dynamic range, reduce bit depth, add dithering, equalization and filtering, reducing data loss, and using some of brain\u2019s auditive perception principles to remove non-relevant sounds from the data stream. In a sense, phones \u201ccheat\u201d on us playing a very distorted collection of noises, that our brain perceives as someone talking on the other end. ",
+            "date": "Answered February 10, 2017",
+            "views": "11",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Allen",
+                    "user_href": "/profile/Mark-Allen-15"
+                },
+                {
+                    "user_id": "Ahmet Felix",
+                    "user_href": "/profile/Ahmet-Felix"
+                },
+                {
+                    "user_id": "David Bookstaber",
+                    "user_href": "/profile/David-Bookstaber-1"
+                },
+                {
+                    "user_id": "Dean Wys",
+                    "user_href": "/profile/Dean-Wys"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aloiamoa Anesi Jr",
+                "href": "/profile/Aloiamoa-Anesi-Jr"
+            },
+            "answer_text": "Cellphone antenna's usually have an output power of anywhere from 125mW (Power Class 4) to 500mW (Power Class 2). Older phones went all the way up to 2W (Power Class 1). You can contrast that with a typical cellphone tower broadcast of 20W to 60W. The reason the cellphone can output so low is that the tower base station includes an amplifier and a noise filter. So, the received signal from the cellphone is boosted and cleaned up. ",
+            "date": "Answered December 3, 2013",
+            "views": "1",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Bookstaber",
+                    "user_href": "/profile/David-Bookstaber-1"
+                },
+                {
+                    "user_id": "Raymond Barberio",
+                    "user_href": "/profile/Raymond-Barberio"
+                },
+                {
+                    "user_id": "David Michaelangelo Silva",
+                    "user_href": "/profile/David-Michaelangelo-Silva"
+                },
+                {
+                    "user_id": "Michelle L. Stone",
+                    "user_href": "/profile/Michelle-L-Stone"
+                }
+            ]
+        }
+    ]
+}

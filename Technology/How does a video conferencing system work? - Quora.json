@@ -1,0 +1,57 @@
+{
+    "title": "How does a video conferencing system work? - Quora",
+    "tags": [
+        "Online Meetings",
+        "Web Conferencing",
+        "Video Conferencing",
+        "Streaming Video Content"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Daviel",
+                "href": "/profile/Andrew-Daviel"
+            },
+            "answer_text": "It varies from very simple to somewhat complex. An H323 point-to-point conference is conceptually simple - you call someone's IP address just like you would a telephone, their video set rings and they pick up. Then you can see each other as well as talk. Over the internet, the audio and video are digitized, assembled into UDP packets and sent across the network to the far end, where they are converted back into analog signals. In fact, even landline telephones use this scheme now on trunk lines internal to the phone company. Both video and audio are usually compressed with a codec to save bandwidth, but they don't have to be on a good link - compression introduces delay, as well as some distortion, so it makes it harder to hold a conversation or to play a musical instrument in time. Most videoconference sets incorporate echo cancelling for hands-free operation; if that is not done, sound travels to the far end, is played though their speaker, is picked up by their microphone, and reappears from your speaker to be picked up by your microphone, and so on, to create a series of annoying echoes. Either the far end audio has to be electronically subtracted from the sound received by the microphone, or both parties must wear headphones. One variant I have used is Accessgrid (now defunct) which used multicast on the internet to connect multiple sites. Each site sent audio direct to all the others at once on a shared multicast address, conceptually like people around a table talking using the same air. There was no infrastructure required, except a low-bandwidth server to set up calls in the first place (announce the IP addresses, agree on bandwidth and codecs). in general, you need infrastructure if you need to traverse NAT (most home users), or make a multi-party call, or connect multiple users with different equipment and different bandwidth. H323 handles NAT with a gatekeeper - a device on the internet that proxies calls. Many H323 sets from e.g. Polycom can handle multipoint calls - 3 people can all call the same IP address, and that set mixes the audio and shows either all users in \"Hollywood Squares\" or shows the person currently talking. Older sets would force all connections to the speed of the slowest participant. Newer ones can transcode - if 3 people are on a fast network connection with HD video, and one is on a slow connection with legacy video, the 3 people can see each other in HD but see the one in low definition, and that one will see a low-res version of the others. Newer devices handle NAT and transcoding with a cloud service - they don't have their own network, they use a generic service like Amazon that they can scale as demand requires. Each endpoint connects directly with unicast to the cloud, rather than to each other. ",
+            "date": "Answered April 1, 2016",
+            "views": "51",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vikram Goyal",
+                    "user_href": "/profile/Vikram-Goyal-1"
+                },
+                {
+                    "user_id": "David Akin",
+                    "user_href": "/profile/David-Akin-10"
+                },
+                {
+                    "user_id": "Shubhangi Chandorkar",
+                    "user_href": "/profile/Shubhangi-Chandorkar"
+                },
+                {
+                    "user_id": "Alexa Terpanjian",
+                    "user_href": "/profile/Alexa-Terpanjian"
+                },
+                {
+                    "user_id": "Naufaldi Rafif Satriya",
+                    "user_href": "/profile/Naufaldi-Rafif-Satriya"
+                },
+                {
+                    "user_id": "Will Toher",
+                    "user_href": "/profile/Will-Toher"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christine Janczun",
+                "href": "/profile/Christine-Janczun"
+            },
+            "answer_text": "According to Webopedia, a video conferencing system is conducting a video conference between two or more people who are in different sites or locations via the internet and a video conferencing platform. As long as you have those two and the necessary pieces of equipment, everything should be good to go and it doesn\u2019t matter what part of the world you're in. It\u2019s like a telephone call, except this time, you can see the face of the person(s) you are talking to and you do not have to rely on their tone of voice to gauge the sincerity of what they are saying. The microphone/speaker and camera that will be used during the video conference will pick up the voice and images, process them and turn them into audio and video data. This mode of business communication was only available for enterprises and giant businesses who have the budget to buy such expensive software and pieces of equipment back in the early \u201890s, and even then, it was a commodity reserved only for the higher-ups. But the world is changing, and so is the face of technology. More inventions led to lower prices that made this particular technology more readily available to almost anybody. When I was old enough to understand and use computer and the internet (third year of high school because I\u2019m a mountain hick and computer and world wide web were both an alien concept until I was sent to the city hundreds of kilometres away from my hometown to study) I was first introduced to Yahoo! Messenger. It was fairly popular back then and it was the first time I was able to use video call. It was used for personal communication. And then, I was introduced to Skype a few years later. This platform is the first that I know of that was used as a video conference for businesses via the internet where you can do computer to computer video call. Skype has improved so much in the past 15 to 16 years of its existence and is one of the widely used. It revolutionized a lot of aspects, not just the way we communicate but also the way we run our offices and workplaces. https://blog.gigaclear.com/how-to-do-video-conferencing ",
+            "date": "Answered April 2, 2019",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "title": "How to remotely access a Raspberry Pi from an Ubuntu desktop - Quora",
+    "tags": [
+        "Remote Desktop",
+        "Raspberry Pi",
+        "Ubuntu (operating system)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christophe Catherine Slychan",
+                "href": "/profile/Christophe-Catherine-Slychan"
+            },
+            "answer_text": "If you know the IP address of the Raspberry, you just ssh [username]@[ip_address]\u00a0(the username is typically \u201cpi\u201d) Otherwise, you need to scan the LAN for the Raspberry.You can use a program called Adafruit Pi Finder, or you can do it with `nmap` (you\u2019ll probably have to install it with apt-get, aptitude or synaptic). First, you need to know what your desktop\u2019s IP address is: ip addr\u00a0(look for an entry for \u201ceth0\u201d if you\u2019re on a wired network or \u201cwlan0\u201d if you\u2019re on WiFi). If you know your desktop\u2019s IP address (most often something like 192.168.x.y), you typically get the network address by substituting the last number (y) with 0, e.g. 192.168.1.0. There is also a parameter called a network mask and it\u2019s typically 24 on networks with 192.168.x.y addresses. Too much explaining how it works though :). Then you need to scan the LAN to find other hosts.However, nmap works a little bit different if you run it with administrator privileges: it lists MAC addresses for each host, and looks up the vendor (manufacturer) of the device in a database. We\u2019d like to know which host is a Raspberry, so, we need to run nmap as root: sudo nmap -sP 192.168.1.0\u00a0Look for an IP address above the line that says \u201cRaspberry Pi Foundation\u201d. Then just ssh into the address and you\u2019re done. Oh, and you may want to configure your router to give a specified IP address to the Raspberry whenever it connects with the network, so you no longer have to scan it. You can also change the Raspberry\u2019s network settings to use a static IP address rather than dynamic (DHCP). ",
+            "date": "Answered June 21, 2017",
+            "views": "13",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Computer Port IT Solutions",
+                "href": "/profile/Computer-Port-IT-Solutions"
+            },
+            "answer_text": "It depends on so many factors. What is the OS you are using on Raspberry Pi? More over, do you want to access or control (like Team Viewer) the Raspberry Pi from Ubuntu. If you want to access, it is easy, your Raspberry Pi will get an IP and find out that IP and use ssh from Ubuntu to access it. It is simple. If you would like to access your Raspberry Pi which is not connected to the Ubuntu desktop, then there are other methods. If it is like this scenario, then you can still ssh to your Raspberry Pi with Port Forwarding in your Router. All the Best :) ",
+            "date": "Answered June 21, 2017",
+            "views": "749",
+            "upvotes": " Answer requested by Yash Gupta"
+        }
+    ]
+}

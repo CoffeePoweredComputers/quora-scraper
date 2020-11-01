@@ -1,0 +1,77 @@
+{
+    "title": "How does a tiny SD card hold 256 GB of data? - Quora",
+    "tags": [
+        "SD Cards",
+        "Memory Cards"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Meservy",
+                "href": "/profile/Robert-Meservy"
+            },
+            "answer_text": "Please read the excellent answer by Dave Haynie and the reply to his answer by Yuan Gao (picture of deconstructed microSD cards) MicroSD cards use flash memory (specifically NAND) to store data. The flash memory is manufactured on a Silicon wafer, usually 12in/300mm in diameter. Several hundred to a thousand or so \u201cdie\u201d are made on a single wafer which contain the individual memory cells, various caches, randomizers, and other support circuitry. A typical 300mm Silicon wafer will be ~750um in thickness (~0.8mm). This thickness is so that the wafer can be handled safely within the fab, once processing is complete only the smallest of fractions of the wafer thickness is \u201cactive\u201d. Since we don\u2019t need the majority of the wafer, it is removed through \u201cback-grinding\u201d.Typical post back-grinding thickness is 50\u201375um, IE 90%+ of the wafer is removed.  After back-grinding the die are thin enough that multiple die can be stacked into a single \u201cpackage\u201d. The most die I\u2019ve heard of someone putting into a single package was Toshiba with 16[1]. Stacking die can be dangerous though, it makes your individual packages have more capacity but trades off reliability[2]- one bad die will take the entire package with it. For this reason most manufacturers stay in the 1/2/4 range with the occasional foray into 8DP if they have the fail rate to support it. Toshiba was either desperate or very very confident in their process. 4DP seems to be the \u201cpreferred\u201d number as it packs more die in, only slightly complicates the assembly process, and doesn\u2019t increase your failure rate much more than 4x, and has the benefit of \u201cforcing\u201d your buyers to purchase more of your die.  In a press release in 2017 Micron bragged about their latest 3DNAND tech giving 32GB in a single \u201cmicroSD friendly die\u201d enabling uSD capacities of 128GB and 256GB. Running the math, that would be 4\u20138 NAND chips in a microSD card, within the \u201creasonable\u201d range. Moving onto your microSD - a single microSD card can hold 2(!) NAND die. I stole this image from Yuan Gao\u2019s answer to Dave Haynie, no idea where he got it:  In the third row you can see that all 7 samples are holding 2 (!) chips. Going back to Micron\u2019s announcement, the 8 die needed to reach their 256GB (2017) microSD card were likely two 4DP and not a 8DP which brings us back to what I would consider a \u201csafe\u201d stack. So, How does a tiny SD card hold 256 GB of data?1. I just realized I inserted \u201cmicro-SD\u201d in my head you said \u201ctiny\u201d, whoops2. A uSD can hold two (2) NAND packages3. a NAND package can hold 1\u201316 die (typically 4) Ergo, the typical size you will find for a microSD card will be: 2x4x the largest uSD friendly die a manufacturer makes. Meanwhile, the LARGEST size you\u2019ll find can\u2019t be more than 2x16x largest uSD friendly die. I ran a quick search on my favourite e-tailer and found the largest size they offered was a 1TB SanDisk (Western Digital) card (micro). Unfortunately with a commodity like this people usually don\u2019t care too much about the inner workings unless you have a direct stake or are a weirdo like me, but we can make some assumptions around what we can find out. The specific product I found was first released in Aug 2020, WD announced a new chip (BiCS5) in Jan 2020 but that timeline\u2019s a little tight so we should assume it was made using a previous generation (BiCS4). BiCS4 uses 96 layers[3], was expected to arrive early 2018, and was going to start at 256Gb with expectations to ramp to 1Tb as the product matured. *Note the lower case \u2018b\u2019 for \u2018bit\u2019 not byte. WD highlights improvements in bits/cell being the driver for the change with the top being QLC (4bits/cell)[4]. Notice that we\u2019re running from 256Gb to 4x256Gb with a max top of 4 bits/cell - I think it\u2019s reasonable to assume that they started with SLC (easier to manage with a rough product) then expected to migrate SLC \u2192 MLC \u2192 TLC \u2192 QLC. Let\u2019s assume they\u2019ve managed to hit their target during the past 2 years, which would mean that they have a 1Tb die using QLC. To get from 1Tb to 1TB we need 8 die (8bits/byte) and since we can fit 2 packages\u2026.surprise surprise! we have two 4DPs. Nice and comfortable for our manufacturer. BiCS5 is expected to hit 1.33Tb which would let them make the 1TB cards with just 6 die or expand into a 1.3TB size at the normal 2x4. Hopefully when you see that happen you\u2019ll remember our little conversation and be able to tell your friends how they were able to fit so much storage in such a small package. Footnotes[1] Toshiba\u2019s 16-die stacked NAND chips can enable 16TB SSDs - KitGuru[2] https://ewh.ieee.org/soc/cpmt/presentations/cpmt1211a.pdf[3] Western Digital Announces BICS4 3D NAND with 96 Layers | eTeknix[4] Western Digital Announces Industry\u2019s First 96-Layer 3D NAND Technology",
+            "date": "Answered August 20, 2020",
+            "views": "13",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Vidhan Agrawal",
+                    "user_href": "/profile/Vidhan-Agrawal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": " Basically, by building in something like this. Each of these chips, smaller than a microSD card, contains 256GB of flash. This is based on a technology called 3D VNAND.  In a traditional memory chip, you have a matrix of memory cells. For a flash chip, it\u2019s long been floating gate on a transistor. That gate is isolated from the rest of the chip when read at normal voltages or left alone, so if you can put a charge there, it sticks around, and it can be read back. As the density gets higher, the actual transistors, gates, insulators, have been shunk and shunk again. But we\u2019re getting to the point where they might get unreliable if they shrink too much more.  So awhile back, rather than just shrink the cells, they took a look at the charge storage. A standard memory cell, whether flash or EEPROM or DRAM stores two different levels of charge per cell. But engineers figured out how to put four levels, this storing two bits in one cell, dubbed MLC (multi-level-cell) flash. Inevitably, this was pushed to eight levels, three bits, in the latest TLC (triple-level cell) flash. One more innovation was charge-trap flash. In the floating gate design, you have a second gate on every transistor that\u2019s an island of conductive material surrounded by insulator. In a charge-trap flash, they\u2019re actually storing the charge in a \u201ccharge trap\u201d, an area of the insulator itself. So now enter VNAND, or vertical NAND. Rather than extend the NAND array horizontally, these are now built vertically. VNAND chips store 32 or 48 gates \u2014 thus 64\u2013144 bits per vertical stack, in the space of a few normal NAND cells.  And going back to the chip itself, these can be bought in chip-scale packaging for things like microSD cards. A classic chip is mounted in a chip carrier and then wire bonded \u2014 little gold wires \u2014 to the leads on the package. In a chip-scale package, the chip is connected via ball-grid-array bumps on the flipped-over chip, and the package is essentially just a thin layer over the chip\u2019s die.  And so, depending on the specific chips used, you\u2019ll have one or possibly two NAND Flash chips into the tiny micro-SD package. So the specific 256GB microSD might actually use two 128GB chips \u2014 I didn\u2019t find anyone online who had destroyed one yet in order to find out. ",
+            "date": "Answered April 18, 2017",
+            "views": "305",
+            "upvotes": " View 142 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Priyansh Choudhary",
+                    "user_href": "/profile/Priyansh-Choudhary-5"
+                },
+                {
+                    "user_id": "Vidhan Agrawal",
+                    "user_href": "/profile/Vidhan-Agrawal"
+                },
+                {
+                    "user_id": "James M VanTress",
+                    "user_href": "/profile/James-M-VanTress"
+                },
+                {
+                    "user_id": "Rushi Patel",
+                    "user_href": "/profile/Rushi-Patel-378"
+                },
+                {
+                    "user_id": "Pierce Zhang",
+                    "user_href": "/profile/Pierce-Zhang-1"
+                },
+                {
+                    "user_id": "Daniel Braga da Silva",
+                    "user_href": "/profile/Daniel-Braga-da-Silva"
+                },
+                {
+                    "user_id": "Sumudu Lakmal",
+                    "user_href": "/profile/Sumudu-Lakmal"
+                },
+                {
+                    "user_id": "Rachel Johns",
+                    "user_href": "/profile/Rachel-Johns-15"
+                },
+                {
+                    "user_id": "Sabari Sabari",
+                    "user_href": "/profile/Sabari-Sabari-153"
+                },
+                {
+                    "user_id": "Rohit Verma",
+                    "user_href": "/profile/Rohit-Verma-2707"
+                }
+            ]
+        }
+    ]
+}

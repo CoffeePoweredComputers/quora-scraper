@@ -1,0 +1,93 @@
+{
+    "title": "What is negative binomial distribution? - Quora",
+    "tags": [
+        "Binomials",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "The negative binomial distribution arises in at least three ways. It can be very similar to a Poisson distribution, but as it has two parameters instead of one, it can be a little more flexible. In one version one of the parameters is a whole number. Bjarke M\u00f8nsted\u2019s answer has given that derivation. But this version can\u2019t be used in place of the Poisson distribution because it\u2019s domain doesn\u2019t start at zero. In a slight variation of his answer, instead of the number of independent Bernoulli trials necessary to achieve k successes, it is the distribution of the number of failures before k successes have occurred. So the distribution takes values 0, 1, 2, \u2026 instead of k, k+1, k+2, \u2026, and a random variable in one version is k greater than in the other. The parameters in both versions are p, the probability of a success in a single trial, and k. (There is another variation in which the words \u2018success\u2019 and \u2018failure\u2019 are interchanged.) In the other derivations, k can be any positive number, it is not restricted to integers. These arise by relaxing the assumptions that lead to a Poisson distribution. The Poisson distribution arises when events occur randomly and independently in time or space. The number of events in a given time (accidents, for example) or space (raisins in a scone, for example) has a Poisson distribution when those conditions apply. If we count the number of events per unit (e.g. accidents per worker) when each unit has a different event rate, we have a mixture of Poisson distributions. If the rates vary according to a gamma distribution, we get a negative binomial. The other derivation occurs if events are clusters. For example if we count the number of fatalities in motor vehicle accidents, the Poisson doesn\u2019t apply because multiple fatalities in an accident are not independent. If the number of fatalities per accident varies according to a zeta distribution we again find that the distribution is negative binomial. In practice we can never expect exact gamma or zeta distributions, so the derivations are not very important. However, the negative binomial is always worth trying if we recognise that there are clusters or a mixture of rates, and the Poisson fit is not good enough. ",
+            "date": "Updated July 23, 2019",
+            "views": "918",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jeffrey Howarth",
+                    "user_href": "/profile/Jeffrey-Howarth-1"
+                },
+                {
+                    "user_id": "Vishivajith Rama",
+                    "user_href": "/profile/Vishivajith-Rama"
+                },
+                {
+                    "user_id": "Jamil Chowdhury",
+                    "user_href": "/profile/Jamil-Chowdhury-8"
+                },
+                {
+                    "user_id": "Chandranshu Jain",
+                    "user_href": "/profile/Chandranshu-Jain-1"
+                },
+                {
+                    "user_id": "Clara Stackpool",
+                    "user_href": "/profile/Clara-Stackpool"
+                },
+                {
+                    "user_id": "Alexei Vink",
+                    "user_href": "/profile/Alexei-Vink-1"
+                },
+                {
+                    "user_id": "Vishal Katyal",
+                    "user_href": "/profile/Vishal-Katyal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amit Goyal",
+                "href": "/profile/Amit-Goyal-135"
+            },
+            "answer_text": "Consider a sequence of iid Bernoulli [math]p[/math] trials. Number of of failures before the first success is a Geometric[math](p)[/math] random variable, and number of of failures before the [math]r[/math]th success (where [math]r\\in\\mathbb{N}[/math]) is a Negative Binomial (NB) random variable with parameter vector [math](r, p)[/math]. Negative Binomial random variable [math]X\\sim\\text{NB}(r,p)[/math] has the PMF: [math]p_X(k) = {k+r-1 \\choose r-1} p^{r}(1-p)^{k}[/math] for [math]k\\in\\{0,1,2,3,\\ldots\\}[/math] Some facts: Geometric random variable is a special case of negative binomial random variable i.e. [math]\\text{NB}(1,p) = \\text{Geom}(p)[/math].Negative binomial random variable i.e. [math]\\text{NB}(r,p)[/math] can be written as the sum of [math]r[/math] iid Geom[math](p)[/math] random variables.Expectation of [math]Y\\sim \\text{Geom}(p)[/math] is [math]\\frac{1-p}{p}[/math], so the expectation of [math]X\\sim\\text{NB}(r,p)[/math] is [math]\\frac{r(1-p)}{p}[/math].Variance of [math]Y\\sim \\text{Geom}(p)[/math] is [math]\\frac{1-p}{p^2}[/math], so the variance of [math]X\\sim\\text{NB}(r,p)[/math] is [math]\\frac{r(1-p)}{p^2}[/math].",
+            "date": "Answered February 9, 2017",
+            "views": "963",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nithesh",
+                    "user_href": "/profile/\u0ba8\u0bbf\u0ba4\u0bc7\u0bb7\u0bcd-Nithesh"
+                },
+                {
+                    "user_id": "Vishivajith Rama",
+                    "user_href": "/profile/Vishivajith-Rama"
+                },
+                {
+                    "user_id": "Chandrashekhar Patel",
+                    "user_href": "/profile/Chandrashekhar-Patel-24"
+                },
+                {
+                    "user_id": "Chanchal Gupta",
+                    "user_href": "/profile/Chanchal-Gupta-12"
+                },
+                {
+                    "user_id": "Suman Kumar",
+                    "user_href": "/profile/Suman-Kumar-173"
+                },
+                {
+                    "user_id": "Rinkesh Verma",
+                    "user_href": "/profile/Rinkesh-Verma-1"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Nidhi Jain",
+                    "user_href": "/profile/Nidhi-Jain-76"
+                }
+            ]
+        }
+    ]
+}

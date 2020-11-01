@@ -1,0 +1,41 @@
+{
+    "title": "When I work with dynamic routing which routing protocol is better to choose out of all? - Quora",
+    "tags": [
+        "Routing Protocols",
+        "Routing",
+        "Protocols (system of rules)",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jonathan Day",
+                "href": "/profile/Jonathan-Day-10"
+            },
+            "answer_text": "I cannot give you a specific name, only a specific method. Step 1: Use interior gateway protocols for interior gateways (intranets and extranets) and exterior gateway protocols for exterior gateways (everything else). Step 2: Use wired routing protocols for wired networks, wireless routing protocols for wireless networks. Step 3: If you need to support fast changes, use a responsive/low-latency routing protocol. Step 4: Use a networking protocol whose complexity does not exceed the ability of the administrator. Step 5: Use the least chatty (lowest bandwidth) routing protocol that supports the type of Internet traffic you want. Step 6: Use the protocol that's \u201cbest-known\u201d or widest-used. The order of these steps can be varied, to a degree. I've put them in an order that should make it relatively simple to filter out the ones you don't want, but in some cases, other orders might make more sense. I've put \u201cbest-known\" last because most systems will be fire-and-forget installs. You set them up and nobody will open the closet until an IT manager decides to replace all the hardware to appear as if they're doing something. If you can assume that's going to be the case, then the routers you set up can be the last surviving machines on the planet running that protocol when you set them up. As long as nothing is likely to break, blow up or catch fire in the time they're likely to be used, what does it matter? If the network admin can set them up in half the time, then the time saved is more valuable than the potential time that never gets saved by buying standard. Obviously if there's going to be turnover of network admins or you're running a multi-datacentre corporate network where downtime per year must be in minutes, the dynamic changes. There, standards and indefinite ease of supply matter a lot. A week spent on initial configuration becomes time well spent if the alternative would involve a week and a day of downtime during the lifetime of the network due to training, finding vendors, etc. Could you use AODV (a wireless routing protocol) on a wired network? Probably, but you're not using its strengths and it's likely going to massacre resources. Could you use MOSPF to route non-multicast traffic? Sure, you'd tunnel the regular traffic over scalable reliable multicast, but as all your multicast groups are now point-to-point, the overheads would be insane. Could you use BGP in the home to route between a single PC, a printer and a cable modem, rather than using a switch? Yes, and if you were practicing using BGP or seeing how it worked for fun, that might even make sense. Otherwise, you might want to get a hobby. So any routing protocol can be used but most of the time most won't make sense. When you've gone through all the points, you may well still have several choices. There are many hundreds of protocols, after all, and the above list will only give you 64 groups. At least one group will have two or more entries. Functionally, for your use-case, there should be no difference which you choose. ",
+            "date": "Answered March 20, 2017",
+            "views": "341",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aneel Kumar",
+                    "user_href": "/profile/Aneel-Kumar-50"
+                },
+                {
+                    "user_id": "Sinthu Kananathan",
+                    "user_href": "/profile/Sinthu-Kananathan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shawn Kleinart",
+                "href": "/profile/Shawn-Kleinart"
+            },
+            "answer_text": "Factoring popularity of use, if I was building a new network from scratch\u2026 IGP (interior gateway protocol): My vote is probably with IS-IS, OSPF second. Understanding RIP is good, as are all options/protocols. The others are not worth the time: they are proprietary and of specific-use only. Environment dependent. EGP (exterior gateway protocol): There is only one\u2026 BGP. Overall, if you\u2019re limiting yourself to just one\u2026 BGP is probably the best bet to understand or focus on. Without it, you cannot connect to anyone else. If you want to interconnect, you need to know it. In that context, it\u2019s simple. It depends on your network\u2026 do you plan to connect to more than one other network? Two? 10? 100? ",
+            "date": "Answered March 21, 2017",
+            "views": "163",
+            "upvotes": "0"
+        }
+    ]
+}

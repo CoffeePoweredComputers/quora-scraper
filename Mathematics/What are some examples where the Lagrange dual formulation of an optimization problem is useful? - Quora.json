@@ -1,0 +1,172 @@
+{
+    "title": "What are some examples where the Lagrange dual formulation of an optimization problem is useful? - Quora",
+    "tags": [
+        "Operations Research",
+        "Mathematics and Machine Learning",
+        "Convex Optimization",
+        "Mathematical Optimization",
+        "Numerical Analysis"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ross Kravitz",
+                "href": "/profile/Ross-Kravitz"
+            },
+            "answer_text": "A classical problem in mathematical finance is utility maximization / portfolio optimization.  An agent is basically investing in a stock market, and can choose an investment strategy pi, which results in some terminal wealth [math] X_T = X^\\pi_T [/math], which is some random variable, and the T refers to the end of the time horizon.  The agents wants to pick a strategy that maximizes his expected utility, [math] E \\left[ U \\left(X_T \\right) \\right] [/math].   Now U expresses the agent's risk aversion, and is modeled as a concave function, because the agent is wealth loving, but prefers a sure thing to an even bet.  Thus, the portfolio optimization is a convex (ok, concave) optimization problem.  This problem has a dual formulation.  Instead of maximizing over terminal wealths, one can minimize over the dual variables to terminal wealths, which are the (arbitrage free) pricing rules.  This is actually a common theme in economic theory, this duality between goods and prices.   In the classical case, one assumes that financial markets are complete.  This means that all risk in the market is capable of being hedged.  After some math (what is called the 2nd Fundamental Theorem of Asset Pricing), it emerges that this is equivalent to there being precisely one dual element (this is called the unique martingale measure).  Therefore, the dual optimization problem is trivial!  It is solved, and then inverted to get the primal optimum.  This methodology can be extended to incomplete markets, where there are unhedgeable sources of risk.  In a generalized sense, the dual optimization problem then becomes one of minimizing the entropy with respect to the physical measure This method was pioneered by Karatzas, and extended very deeply by Kramkov and Schachermayer. ",
+            "date": "Answered December 13, 2013",
+            "views": "23",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Prasanna Muthuraman",
+                    "user_href": "/profile/Prasanna-Muthuraman"
+                },
+                {
+                    "user_id": "Raghuram Kowdeed",
+                    "user_href": "/profile/Raghuram-Kowdeed"
+                },
+                {
+                    "user_id": "Edwin Khoo",
+                    "user_href": "/profile/Edwin-Khoo"
+                },
+                {
+                    "user_id": "Riyad Parvez",
+                    "user_href": "/profile/Riyad-Parvez"
+                },
+                {
+                    "user_id": "Meekal Bajaj",
+                    "user_href": "/profile/Meekal-Bajaj"
+                },
+                {
+                    "user_id": "Tushar Madaan",
+                    "user_href": "/profile/Tushar-Madaan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles H Martin",
+                "href": "/profile/Charles-H-Martin"
+            },
+            "answer_text": "In quantum chemistry, there is a classic problem called the N-representability problem, which is essentially to find the correct form of the constraints on a convex optimization problem (over 2 electrons) that is dual to the N-electron  Hamilonian  this has, remarkably, recently been solved by David Mazziotti (University of Chicago) Structure of Fermionic Density Matrices: Complete N-representability Conditions Complete N-representability Conditions and details can be found there It is a fascinating read of how convex optimization is related to a very old problem in quantum chemistry (if there is enough interest, i will write a blog post on this) ",
+            "date": "Updated December 14, 2013",
+            "views": "14",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Heavner",
+                    "user_href": "/profile/Joseph-Heavner"
+                },
+                {
+                    "user_id": "Souradeep Purkayastha",
+                    "user_href": "/profile/\u09b8\u09cc\u09b0\u09a6\u09c0\u09aa-\u09aa\u09c1\u09b0\u0995\u09be\u09df\u09b8\u09cd\u09a5-Souradeep-Purkayastha"
+                },
+                {
+                    "user_id": "Jaimal Ichharam",
+                    "user_href": "/profile/Jaimal-Ichharam"
+                },
+                {
+                    "user_id": "Sathya Narayanan Ravi",
+                    "user_href": "/profile/Sathya-Narayanan-Ravi"
+                },
+                {
+                    "user_id": "Jenny Yoeng",
+                    "user_href": "/profile/Jenny-Yoeng"
+                },
+                {
+                    "user_id": "Hadayat Seddiqi",
+                    "user_href": "/profile/Hadayat-Seddiqi"
+                },
+                {
+                    "user_id": "Mark Morales",
+                    "user_href": "/profile/Mark-Morales"
+                },
+                {
+                    "user_id": "Edwin Khoo",
+                    "user_href": "/profile/Edwin-Khoo"
+                },
+                {
+                    "user_id": "Tanmoy Mukherjee",
+                    "user_href": "/profile/Tanmoy-Mukherjee-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "Probably the most famous application of duality is the max-flow min-cut theorem which relies on the fact that for any flow network, the maximum flow and minimum cut problems are dual to each other. ",
+            "date": "Answered December 13, 2013",
+            "views": "19",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Chris Li",
+                    "user_href": "/profile/Chris-Li-6"
+                },
+                {
+                    "user_id": "Saransh Singh",
+                    "user_href": "/profile/Saransh-Singh"
+                },
+                {
+                    "user_id": "Anirudh Subramanyam",
+                    "user_href": "/profile/Anirudh-Subramanyam"
+                },
+                {
+                    "user_id": "Edwin Khoo",
+                    "user_href": "/profile/Edwin-Khoo"
+                },
+                {
+                    "user_id": "Vikram Jha",
+                    "user_href": "/profile/Vikram-Jha"
+                },
+                {
+                    "user_id": "Jack Rae",
+                    "user_href": "/profile/Jack-Rae"
+                },
+                {
+                    "user_id": "Mark Morales",
+                    "user_href": "/profile/Mark-Morales"
+                },
+                {
+                    "user_id": "Tanmoy Mukherjee",
+                    "user_href": "/profile/Tanmoy-Mukherjee-1"
+                },
+                {
+                    "user_id": "Ross Kravitz",
+                    "user_href": "/profile/Ross-Kravitz"
+                },
+                {
+                    "user_id": "Charles H Martin",
+                    "user_href": "/profile/Charles-H-Martin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sameer Gupta",
+                "href": "/profile/Sameer-Gupta"
+            },
+            "answer_text": "tl;drstrategy to get feasible schedules. (and similar soughts @Nash equilibrium)Context:Using  framework of combinatorial auction  for jobshop scheduling problems with Lagrangian relaxation method. Continuous relaxation computed from the Lagrangian dual problem (equivalent to that from a noncooperative game model  for the Lagrangian relaxation method) provides a mixed strategy Nash equilibrium for this game model. ",
+            "date": "Answered April 19, 2014",
+            "views": "503",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Julie Prentice",
+                    "user_href": "/profile/Julie-Prentice"
+                }
+            ]
+        }
+    ]
+}

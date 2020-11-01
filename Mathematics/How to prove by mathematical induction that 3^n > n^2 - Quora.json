@@ -1,0 +1,40 @@
+{
+    "title": "How to prove by mathematical induction that 3^n > n^2 - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)",
+        "Mathematics Homework Question "
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eleftherios Argyropoulos",
+                "href": "/profile/Eleftherios-Argyropoulos"
+            },
+            "answer_text": "First proof (by induction): Check for [math]n = 0: 3^0 > 0^2[/math] true Check for [math]n = 1: 3^1 > 1^2[/math] true Assume that for [math]n = k[/math]: [math]3^k > k^2 \u2026 (1)[/math] We will show that for [math]n = k+1[/math]: [math]3^{k+1} > (k+1)^2 \u2026 (2)[/math] We multiply both sides of [math](1)[/math] by [math]3[/math] and we take: [math]3^{k+1} > 3k^2 \u2026 (3)[/math] It is obvious that if we prove that [math]3k^2 > (k+1)^2[/math], then we will be done. Indeed for any integer [math]k>1[/math], we have: [math]k > 1+1/(2k) => 2k^2 > 2k+1 => [/math] [math]3k^2 > k^2+2k+1 => 3k^2 > (k+1)^2  ... (4)[/math] Now, by [math](3)[/math] and [math](4)[/math], it follows that: [math]3^{k+1} > (k+1)^2[/math], therefore the proof is complete. Second proof: Consider the function [math]f(x) = 3^x - x^2[/math]. By taking the first derivative of [math]f(x)[/math], we obtain: [math]f\u2019(x) =  (3^x)ln(3) - 2x \u2026 (1)[/math] Now, by [math](1)[/math] we conclude that for every [math]x>0[/math] we have [math]f\u2019(x)>0[/math], therefore the function [math]f(x)[/math] is genuinely increasing for every [math]x>0[/math] and hence for every nonegative integral value of [math]x = n[/math], we take [math]3^n > n^2[/math]. Third proof: Since we want to prove that [math]3^n>n^2[/math], this means that we need to prove that: [math](2+1)^n > n^2 \u2026 (1)[/math] Now, by Newton\u2019s binomial we take: [math](2+1)^n = 2^n+n2^{n-1}+\u2026+1 \u2026 (2)[/math] Evidently, [math](2+1)^n > 2^n+n2^{n-1}+1 \u2026 (3)[/math] Now, we observe that: [math]2^n/n+2^{n-1}+1/n > n => 2^n+n2^{n-1}+1 > n^2 \u2026 (4)[/math] Therefore, by [math](3)[/math] and [math](4)[/math] the proof follows. ",
+            "date": "Answered March 18, 2020",
+            "views": "309",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nikos Mantzakouras",
+                    "user_href": "/profile/Nikos-Mantzakouras"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Moon",
+                "href": "/profile/Alex-Moon-76"
+            },
+            "answer_text": "Let\u2019s define  Now define  Okay, so  from  and  respectively.  for all  in the natural numbers. That\u2019s our inductive argument. Time for our choice of base case. Given  we conclude  for all natural numbers  ",
+            "date": "Answered March 22, 2020",
+            "views": "52",
+            "upvotes": " Answer requested by Jimeto Kehinde Iyanu"
+        }
+    ]
+}

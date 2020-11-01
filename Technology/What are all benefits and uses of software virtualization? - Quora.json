@@ -1,0 +1,31 @@
+{
+    "title": "What are all benefits and uses of software virtualization? - Quora",
+    "tags": [
+        "Software Virtualization",
+        "VMware (company)",
+        "Benefits",
+        "Virtualization"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Samuel Smith",
+                "href": "/profile/Samuel-Smith-100"
+            },
+            "answer_text": "In no particular order... Security: Isolating strategic VMs for virus testing. Honeypots for attackers.  Testing: Trying out new operating systems and software is easier on VMs as no additional hardware is needed so long as there are sufficient resources on the host(s). Once testing is complete, the VM can be moved into production, or deleted and the resources returned to the pool.  Utilization: Higher efficiency in resource utilization (if tuned correctly). Each VM can be given exactly what they need (compute, RAM, drive space). The aggregate of multiple VMs requires less hardware resources than the equivalent number of physical machines. This is due to differences in peak load times, and the ability of the hypervisor to divvy out resources to VMs on an as needed basis. Power: Perhaps a subset of Utilization, a server can run 12 virtual machines so you don't need 12 physical boxes each using power. This reduces both direct power cost, as well as cost of cooling the server room. Uptime: Upgrades to VMs can often be done while the VM is running, such as adding drive space. Upgrading hardware can also be done without the VMs going down: Transfer the running VMs from the first host to another. When the host has no running VMs it may be upgraded, rebooted (or replaced) and the VMs moved back with no down time. These features also create a resource that can expand as future needs increase, growing with the company's demand for IT infrastructure. Flexibility: VMs can be spun up on demand, in as short a time as a few minutes barring complicated configuration requests. They can be adjusted easily as workload changes as well. Templates: Once a VM is configured as needed, with all software installed etc. it can be converted into a template.  Use this template to quickly make multiple copies identical to the original. Legacy Applications: Old hardware breaks down, but the software doesn't have to. If an application is too old to run on a modern OS, a legacy version can be installed to run the application. Infrastructure Virtualization: Servers and computers are not the only thing you can virtualize. Switches and routers can be virtualized as well, and configured as required by business needs. There may be other advantages as well, such as ease of administration, depending on the individual setup. ",
+            "date": "Answered January 27, 2016",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Indu Varshney",
+                    "user_href": "/profile/Indu-Varshney"
+                },
+                {
+                    "user_id": "Nikita Abdullin",
+                    "user_href": "/profile/Nikita-Abdullin"
+                }
+            ]
+        }
+    ]
+}

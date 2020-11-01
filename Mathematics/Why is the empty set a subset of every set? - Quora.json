@@ -1,0 +1,114 @@
+{
+    "title": "Why is the empty set a subset of every set? - Quora",
+    "tags": [
+        "Empty Set",
+        "Subset",
+        "Sets (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joseph Murray",
+                "href": "/profile/Joseph-Murray-7"
+            },
+            "answer_text": "Consider the following two statements: Every marble in this bag is redThere are no marbles in this bag which are not redThese two statements are logically equivalent to one another, so whenever one is true, the other must be true, and vice-versa. Now, if I have an empty bag, then the statement \u201cThere are no marbles in this bag which are not red\u201d is pretty clearly true, because there are no marbles in the bag at all. Another way to look at it is the following - in order for a statement about a collection of things to be false, there must exist a counterexample. For instance, \u201cEvery marble in this bag is red\u201d is false if and only if there is a marble in the bag which isn\u2019t red\u201cEverybody in this room is less than 20 years old\u201d is false if and only if there is somebody in the room who is 20 years old or older\u201cI have to work every day this week\u201d is false if and only if there is a day this week on which you don\u2019t have to work.This approach turns out to be extremely useful, and is a part of standard logic - see here[1] for more detail. There are those who object to this, which has led to the development of non-standard logic.  With that being said, a set [math]A[/math] is a subset of a set [math]B[/math] if and only if [math]x\\in A[/math] implies that [math]x\\in B[/math]. In other words, [math]A\\subseteq B[/math] if every element in [math]A[/math] is also an element of [math] B[/math]. In keeping with the above pattern, this statement is false if and only if there is an element of [math]A[/math] which is not an element of [math]B[/math]. Because [math]A[/math] is, in this case, the empty set, then there are no elements of [math]A[/math] to begin with, which makes the statement [math]A\\subseteq B[/math] true by default. Footnotes[1] Page on wikipedia.org",
+            "date": "Answered March 22, 2018",
+            "views": "77",
+            "upvotes": " View 17 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suvansh Nain",
+                    "user_href": "/profile/Suvansh-Nain-1"
+                },
+                {
+                    "user_id": "Rebecca Luo",
+                    "user_href": "/profile/Rebecca-Luo-10"
+                },
+                {
+                    "user_id": "Paulo Miranda",
+                    "user_href": "/profile/Paulo-Miranda-53"
+                },
+                {
+                    "user_id": "Bharath Ch",
+                    "user_href": "/profile/Bharath-Ch-48"
+                },
+                {
+                    "user_id": "ShReYaSi SiNgH",
+                    "user_href": "/profile/ShReYaSi-SiNgH-27"
+                },
+                {
+                    "user_id": "Gourav Bhardwaj",
+                    "user_href": "/profile/Gourav-Bhardwaj-3"
+                },
+                {
+                    "user_id": "Byunggyu Park",
+                    "user_href": "/profile/Byunggyu-Park-1"
+                },
+                {
+                    "user_id": "Mohd Athar",
+                    "user_href": "/profile/Mohd-Athar-17"
+                },
+                {
+                    "user_id": "Sharad Kumar Dubey",
+                    "user_href": "/profile/Sharad-Kumar-Dubey-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Lucy-Van-Pelt-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Danya Rose",
+                "href": "/profile/Danya-Rose"
+            },
+            "answer_text": "We say that [math]A\\subseteq B[/math] ([math]A[/math] is a subset of [math]B[/math]) if for every member [math]x\\in A[/math], it is true that [math]x\\in B[/math]. It is vacuously true that for every [math]x\\in\\emptyset[/math], [math]x\\in B[/math], for every set [math]B[/math], because there is no [math]x[/math] satisfying [math]x\\in\\emptyset[/math]. So without having to do any work, we get for \u201cfree\u201d that every [math]x\\in\\emptyset[/math] is also in [math]B[/math]. Think of sets as abstract \u201cbaskets\u201d, or \u201cpotential baskets\u201d, in the sense that you can enclose certain collections of things within them \u2014 including enclosing nothing at all (the empty basket) \u2014 just by thinking about them as being so enclosed. If I reach into the empty basket, I can (will only ever, by its definition!) pull out nothing (more precisely, there is no [math]x[/math] such that I can pull [math]x[/math] out of the empty basket). I can also reach into basket [math]B[/math] and not pull out any of its members, no matter what basket [math]B[/math] I choose. Pulling nothing out of [math]B[/math] is the same as pulling out the contents of the empty basket, so the empty basket is clearly a sub-basket of any basket [math]B[/math]. A further way to think about it is that if [math]A\\subseteq B[/math], then [math]A\\cup B = B[/math]. If [math]A\\cup B \\ne B[/math], then [math]A\\not\\subseteq B[/math]. For every set [math]B[/math], it is true that [math]\\emptyset\\cup B = B[/math], so it follows that [math]\\emptyset\\subseteq B[/math]. To understand this, it\u2019s important to note the properties of sets that [math]\\{a,a,\\ldots\\} = \\{a,\\ldots\\}[/math], and that [math]\\{a,b\\} = \\{b,a\\}[/math] \u2014 that is, sets contain only unique elements, and sets are not ordered. In terms of the basket analogy, adding the contents of the empty basket to any other basket [math]B[/math] doesn\u2019t put into the combined basket [math]\\emptyset\\cup B[/math] anything that wasn\u2019t in [math]B[/math] already. ",
+            "date": "Answered September 25, 2018",
+            "views": "36",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "A Ramenaden",
+                    "user_href": "/profile/A-Ramenaden"
+                },
+                {
+                    "user_id": "Jaya Guru",
+                    "user_href": "/profile/Jaya-Guru-4"
+                },
+                {
+                    "user_id": "Kelvin Malunga",
+                    "user_href": "/profile/Kelvin-Malunga-3"
+                },
+                {
+                    "user_id": "Ramasamy Kandasamy",
+                    "user_href": "/profile/Ramasamy-Kandasamy"
+                },
+                {
+                    "user_id": "Koustav Choudhury",
+                    "user_href": "/profile/Koustav-Choudhury"
+                },
+                {
+                    "user_id": "Jianyun Wu",
+                    "user_href": "/profile/Jianyun-Wu-2"
+                },
+                {
+                    "user_id": "Ilia Semenkov",
+                    "user_href": "/profile/Ilia-Semenkov"
+                },
+                {
+                    "user_id": "Garv Lalwani",
+                    "user_href": "/profile/Garv-Lalwani-2"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

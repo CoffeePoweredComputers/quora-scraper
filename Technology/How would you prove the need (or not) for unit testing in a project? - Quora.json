@@ -1,0 +1,54 @@
+{
+    "title": "How would you prove the need (or not) for unit testing in a project? - Quora",
+    "tags": [
+        "Unit Testing",
+        "Automated Testing",
+        "Software Testing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "James Grenning",
+                "href": "/profile/James-Grenning-1"
+            },
+            "answer_text": "I wouldn\u2019t. I can\u2019t prove it to you, but I prove it to me regularly. I can demonstrate the unit testing is the only practical way to check that your code is doing what you think your code should do. Image you have code with five decisions, a.k.a. a complexity of five. Test it by itself takes five tests. Test it integrated with four other bits of code, each with a complexity of five, and you need 5x5x5x5 (a.k.a 625) tests. Generally, it is not practical to fully test them together. Separately they can be tested with 20 tests. (You will also need some integration tests to assure the parts communicate correctly.) ",
+            "date": "Answered June 15, 2016",
+            "views": "440",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Scott Willis",
+                    "user_href": "/profile/Scott-Willis-10"
+                },
+                {
+                    "user_id": "Vojt\u011bch Patschka",
+                    "user_href": "/profile/Vojt\u011bch-Patschka"
+                },
+                {
+                    "user_id": "Rowan Bunning",
+                    "user_href": "/profile/Rowan-Bunning-1"
+                },
+                {
+                    "user_id": "Jeff Hoover",
+                    "user_href": "/profile/Jeff-Hoover-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tim Harrison",
+                "href": "/profile/Tim-Harrison"
+            },
+            "answer_text": "This is often a big decision many companies make, and sadly they make it for the wrong reasons. They think about time commitment, difficulty, complexity, etc. but what they should be thinking about is COST. The earliest you catch a defect, the cheaper it is. This is a common understanding in the QA community. Catching a defect in development is the cheapest, while catching a defect in production is the most costly. This image below, borrowed from \u201cWhat is the cost of defects in software testing?\u201d illustrates this perfectly:  As a defect progresses along not found or not fixed, the cost exponentially increases. This is because once a defect gets to production, it\u2019s in front of customers. This could affect their willingness or even ability to give your organization money for your goods or services. Besides that, you also have to include the cost of taking a feature or bug back to development and going through QA, UAT, and deployment all over again. This is where unit testing comes in as the first line of defense against defects creeping towards production and costing more money to fix. The sooner a defect is caught, the cheaper it is. That is why you implement unit testing. Some might say \u201cUnit testing isn\u2019t perfect, that\u2019s why we don\u2019t waste our time.\u201d I know that unit testing is not perfect. That is why any software development company must invest in proper QA. It\u2019s all about cost saving. ",
+            "date": "Answered June 14, 2016",
+            "views": "572",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Dmitry Murashenkov",
+                    "user_href": "/profile/Dmitry-Murashenkov"
+                }
+            ]
+        }
+    ]
+}

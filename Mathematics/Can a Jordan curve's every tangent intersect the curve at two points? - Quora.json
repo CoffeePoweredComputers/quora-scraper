@@ -1,0 +1,46 @@
+{
+    "title": "Can a Jordan curve's every tangent intersect the curve at two points? - Quora",
+    "tags": [
+        "Tangent",
+        "Derivatives and Differentiation (mathematics)",
+        "Geometry",
+        "Calculus",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Livshits",
+                "href": "/profile/Michael-Livshits"
+            },
+            "answer_text": "If your curve is smooth and you want every of its tangents to intersect this curve at even 1 point that is different from the point of tangency, it is impossible. Here is why. Assuming the origin does not belong to our curve [math]C[/math], it can be described in the polar coordinates by a pair of differentiable functions [math]r(t)\\text { and } \\phi(t)[/math] on the interval [0,l] with matching values and derivatives at 0 and 1 to make it smooth. We can also assume that ([math]r'(t))^2+(\\phi'(t))^2=1 [/math] and [math]l[/math] is the length of our curve. Now, being continuous, [math]r  [/math] reaches its maximum [math]m=r(a),[/math] and the tangent to [math]C [/math] at the point [math]p=(r(a),\\phi(a))[/math] will also be the tangent to the circle [math]r=m[/math] and can not intersect [math]C[/math] at any other point because [math]C [/math] is inside the disk [math]r\\leq m[/math] which only have the point [math]p[/math] in common with the tangent to [math]C [/math]at [math]p.[/math] But if you allow your curve to have angles and cusps, you can do much better, but I am not sure that the condition can be satisfied for ALL the tangens without any exceptions. As an example, consider the curve composed of 4 circular arcs of the same radius [math]R[/math] and [math]\\pi/2[/math] angle inscribed into 4 quadrants on the plane and tangent to the coordinate axes at their ends. This curve has 4 cusps at the points (R,0), (-R,0), (0,R), and (0,-R). All the tangents except the coorditate axes will intersect this curve at 2 points in addition to the point of tangency. I am not sure if you can get rid of the exceptions, you can try or prove that it\u2019s impossible. Good luck. Actually, if you take a concave triangle composed, say, of 3 circular arcs, then the tangent to one side at any corner will also intersect with the other side at this corner, so you can say that every tangent will have 2 additional intersections with this triangle. ",
+            "date": "Answered September 9, 2020",
+            "views": "112",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alex Sadovsky",
+                    "user_href": "/profile/Alex-Sadovsky"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Jeremy Collins",
+                    "user_href": "/profile/Jeremy-Collins-137"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Morris",
+                "href": "/profile/Richard-Morris-34"
+            },
+            "answer_text": "David Joyce has given the example of the circle as a curve where all tangents only intersect the curve in its point of contact. We can widen this to any Convex set whose boundary does not contain a straight edge segment, then the tangents of such sets can never intersect the curve at any point other than the point of tangency. We can see this by considering the converse. Recall that a set is convex if, given any two points, it contains the whole line segment that joins them. let A be the point of tangency, if there was some other point of intersection B then the line segment AB must lie entirely inside the set. We also need another result: \u201cA curve is called simple if it does not intersect itself. A closed regular plane simple curve C is convex if and only if its curvature is either always non-negative or always non-positive.\u201d Taken from Convex curve - Wikipedia. Our restriction on the boundary not containing line segments means that the curvature is either strictly positive or strictly negative.* A little bit of hand waving leads us to our result.*  So now consider non-convex sets. We can divide the boundary points into those where the boundary point is contained in the convex hull and those where it does not. Following a similar argument to the above, the tangents to points in the convex hull only intersect at the points of tangency. If a point on the boundary is not in the convex hull then there must be points in the shape lying on either side of the line tangent. So this line must intersect the boundary at least two points. ",
+            "date": "Updated September 11, 2020",
+            "views": "112",
+            "upvotes": "0"
+        }
+    ]
+}

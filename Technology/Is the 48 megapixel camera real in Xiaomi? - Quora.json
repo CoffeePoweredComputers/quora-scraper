@@ -1,0 +1,74 @@
+{
+    "title": "Is the 48 megapixel camera real in Xiaomi? - Quora",
+    "tags": [
+        "Megapixels",
+        "Digital Cameras",
+        "Xiaomi (company)",
+        "Cameras",
+        "Photography"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "Yes\u2026 with qualifications. These new sensors all use, so far, 800nm pixels, the smallest yet in a phone. Years back, most smartphone companies settled on 12 megapixels, more or less, as the best compromise between low light noise and bright light resolution for a phone camera. Keep in mind, too, that very few phone photographers actually publish prints, or much of anything else that commands a higher resolution. Anything you upload to Instagram is reduced to 1080x1080 pixels.  But they also use a clever new color matrix. In most digital cameras, there\u2019s an RGB matrix called a Bayer mosaic, after Bryce Bayer, a Kodak scientist who invented this back in the 1970s. Each photodiode is thus sensitive to one color, and the camera runs an algorithm to interpolate color from adjacent pixels to deliver the missing R, G, or B sample for each pixel.  These high resolution sensors use a different mosaic, one that Sony calls QuadBayer and Samsung calls tetracell. Either way, imagine a 12 megpixel sensor in which each photodiode is splt into four, but the color is maintained. Why? So in low light, one of these chips will group the R\u2019s, the G\u2019s, and the B\u2019s and process a conventional 12 megapixel image with the advantage of four samples per pixel from each color. When in full resolution mode, each pixel is output separately. That\u2019s actually a problem already, in that the de-Bayering engine in most camera image processors is hard wired for a Bayer matrix. So they actually go through 4x4 cells of RGGB and flip around pixels, delivering a normal Bayer mosaic, but naturally with a much greater chance of color error. More advanced de-Bayering algorithms may handle this better in the future, but for now, they\u2019re just going to live with the errors at higher resolutions. After all, it\u2019s just a phone. One other thing to some out of this is that, at least for two years or so, 800nm pixels were pretty much agreed-upon as the smallest pixel you\u2019d want. If you look at the 1/2.55\u2033 chips used in iPhones, in Google Pixels, in many Samsungs, etc. they\u2019re using 1.4\u00b5m pixels. But on these 48 megpixel chips from both Samsung and Sony, they aggregate as 1.6\u00b5m pixels, a 1/2\u2033 chip rater than 1/2.55\u2033. Most light is always better for a camera.  And it\u2019s not just 48 megapixels. This one is equallly nuts. In fact, Facebook only allows uploads at 80 megapixels or less. No one needs a 108 megapixel smartphone camera. But this isn\u2019t about need, it\u2019s about \u201cbecause we can\u201d and that with the knowledge that consumers don\u2019t understand much about digital cameras other than the megapixel count. This chip, made by Samsung, is also using 800nm pixels, so it\u2019s a whopping 1/1.3\u2033 in size, very large for a phone. This will lead to a fatter phone or at least a fatter camera hump, but the additional light gathering is a good thing. Now, the other thing to consider is that, not only does no one really need 48 or 108 megapixels on a phone, no one\u2019s really getting that anyway. Yes, the digital output of these can be an honest 48 or 108 or 64 (another Samsung chip) megapixels, but the optical systems for these phones can\u2019t deliver that. First of all, you have the lens problem. We\u2019ve seen phone lenses at f/2.2, f/2.0, f/1.8, and lately, f/1.5. Samsung\u2019s f/1.5 lens cameras actually offer a second aperture stop at f/2.4\u2026 and the lens actually gets a little sharper at f/2.4. It\u2019s difficult to make a really good, really fast lens. It\u2019s even more difficult if you have to live with the 4\u20135mm contraint on lens length for a smartphone. That means maybe 4\u20136 lens elements, tops. If your f/1.5 lens isn\u2019t sharp enough, your 12 megapixel sensor may not be actually delivering an honest 12 megpixels of optical resolution. That\u2019s about lens design, and maybe that\u2019s not insurmoutable. But other aspects of physics are. When light runs through an opening \u2014 like a camera aperture \u2014 it bends just a bit. This means that a perfect dot of light doesn\u2019t make it to your image sensor chip as a dot, but a disc. This is called the Airy Disc, named after George Airy, the first guy to do all the math about diffraction. When your lens delivers less resolution than your camera\u2019s sensor has due to diffraction, that camera is said to be \u201cdiffraction limited\u201d. So for 800nm pixels, you pretty need an f/1.2 lens to avoid diffraction limiting and get your real 48 megapixel result. But trying to push the same basic 4\u20136 element design to f/1.2 is just going to make the lens itself fuzzier, defeating the purpose of speeding the lens up. Again, none of the camera vendors are terribly bothered about this, because \u201cit\u2019s just a phone,\u201d but it\u2019s important to understand that a 48 megapixel phone has nothing really in common with a 48 megapixel professional camera in terms of image quality. And the other thing that not discussed here is dynamic range \u2014 color depth. For each pixel on a sensor, you have a certain noise level based on excitation of electrons from the ambient room temperature. And you have a \u201cread\u201d noise, the noise from your phone\u2019s computer system that gets into the image while the image is being converted from analog to digital. On the other hand, the brightest light a sensor can capture without saturating is based on the charge well capacity. When photons hit photodiodes in a sensor, they cause electrons to be conducted. During exposure, these are stored in a capacitor called a charge well. When a light is bright enough to either saturate your camera\u2019s photodiodes or overflow the charge well, you have hit the limit on brightness. The difference between that lowest point not flooded by noise and that brightest point is called your dynamic range. And the problem: as sensor pixels get smaller, fewer photons get captured, fewer electrons are released and captured, and so the difference between a exposed pixels and background noise is lower. And there\u2019s also correspondingly less room for the charge wells, so the sensor saturates sooner. The end result is that you don\u2019t have a good color resolution available on this kind of sensor. Except that some actually fix that, too. What if I set up that big image array to shoot different sensitivities for each of the pixels in the array, or even different exposures. So those same-color quads could be sampling at different levels. That\u2019s essentially a single exposure HDR shot, and it promised to deliver better color in an image\u2026 but of course, at 12 megpixels, not 48 megapixels. Xiaomi also plans to do another trick with their 108 megpixel sensor: \u201clossless\u201d digital zoom. What if we did a 2:1 crop on the 108 megpixel sensor? We get a 27 megapixel image. At a 3:1 crop, we have a 12 megapixel image. So if we process each of these as 12 megapixels, we can have a \u201cdigital\u201d zoom that\u2019s delivering a 12 megapixel image (well, almost, since you\u2019ll be limited by the lens at 3x) at each zoom level. In fact, Nokia did this in a couple of phones about a decade ago. Not as good as optical zoom, but probably good enough for Instagram! Read More How Tetracell delivers crystal clear photos day and night | Samsung Semiconductor Global Website ",
+            "date": "Answered October 28, 2019",
+            "views": "38",
+            "upvotes": " View 44 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sanaie Baqiry",
+                    "user_href": "/profile/Sanaie-Baqiry"
+                },
+                {
+                    "user_id": "Chris Williams",
+                    "user_href": "/profile/Chris-Williams-1272"
+                },
+                {
+                    "user_id": "Drow Kakoma",
+                    "user_href": "/profile/Drow-Kakoma"
+                },
+                {
+                    "user_id": "Pritesh Kumar",
+                    "user_href": "/profile/Pritesh-Kumar-21"
+                },
+                {
+                    "user_id": "C\u00e9dric Renard",
+                    "user_href": "/profile/C\u00e9dric-Renard"
+                },
+                {
+                    "user_id": "Sebastian Br\u00f6ckl",
+                    "user_href": "/profile/Sebastian-Br\u00f6ckl-1"
+                },
+                {
+                    "user_id": "Steven Zhang",
+                    "user_href": "/profile/Steven-Zhang-265"
+                },
+                {
+                    "user_id": "Debojyoti Mukherjee",
+                    "user_href": "/profile/Debojyoti-Mukherjee-4"
+                },
+                {
+                    "user_id": "Prashant Gnawali",
+                    "user_href": "/profile/Prashant-Gnawali-1"
+                },
+                {
+                    "user_id": "Vishnu Rajan",
+                    "user_href": "/profile/Vishnu-Rajan-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Seidel",
+                "href": "/profile/Steve-Seidel-2"
+            },
+            "answer_text": "I\u2019ll spare you the windbag response to this question and get right to it. Yes, the sensor is real, but no, it\u2019s really not significantly different from a 12mp sensor. These (Sony) 48mp sensors are just the same 12mp sensors with a Quad Bayer filter. While there are theoretical advantages in great lighting conditions, in practice there is no real advantage. ",
+            "date": "Answered November 4, 2019",
+            "views": "88",
+            "upvotes": "0"
+        }
+    ]
+}

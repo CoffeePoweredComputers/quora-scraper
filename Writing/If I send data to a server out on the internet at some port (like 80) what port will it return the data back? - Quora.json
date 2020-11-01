@@ -1,0 +1,63 @@
+{
+    "title": "If I send data to a server out on the internet at some port (like 80) what port will it return the data back? - Quora",
+    "tags": [
+        "Computer Networking Advice",
+        "TCP/IP",
+        "Computer Networking",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tulio Arends",
+                "href": "/profile/Tulio-Arends"
+            },
+            "answer_text": "It depends. All internet traffic is based on two transport protocols: TCP and UDP. UDP (User Datagram Protocol) is like an SMS: fast, cheap and short.  UDP traffic is one-way, you send it an forget about it.  It's very usefull when applications need speed of comunication more than reliability, like FPS games or P2P file sharing.  If two-way communication is needed, the application is responsible for managing the incoming port (usually random, but not always), it has to tell the other side on which port it will listen for UDP packets when first starting to communicate and hope the message is not lost.   TCP (Transfer Control Protocol) is like making a call: you dial a number (ip + port number), wait for the other side to pick up (receive an acknowledgement a.k.a. ack packet) and say hello, then you can start transmiting and receiving data.  TCP is always two-way, your data comes from a random (usually) port, which is included in the original connection setup.  This protocol has a lot more overhead than UDP, but is usefull when you need reliability in the transmission, especially in client-server requests like web pages.To summarize: In TCP your data returns on the same port the request left from.  In UDP you have to let the other side know on which port you will listen on. In the case of UDP two-way communication you also have to tell any firewall or router you are behind to open or forward the port you expect incoming traffic on, most discard incoming UDP packets to the majority of ports by default.  This is usually handled automaticaly using UPnP, or can be done manually if you have admin acces.  The same has to be done for TCP if you expect the other side to innitiate the connection, like port 80 for web servers. ",
+            "date": "Answered April 21, 2016",
+            "views": "12",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Zili Liang",
+                    "user_href": "/profile/Zili-Liang"
+                },
+                {
+                    "user_id": "Shubham Pandey",
+                    "user_href": "/profile/Shubham-Pandey-5"
+                },
+                {
+                    "user_id": "Rob Lion",
+                    "user_href": "/profile/Rob-Lion"
+                },
+                {
+                    "user_id": "Prabhpreet Singh Dua",
+                    "user_href": "/profile/Prabhpreet-Singh-Dua"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hitesh Balwani",
+                "href": "/profile/Hitesh-Balwani-1"
+            },
+            "answer_text": "When the client requests(eg-http page) something from a server..the request first goes through clients transport layer..during which it attaches a random port to the segments.(>1024). (Lets say 2048) That is ..it requests through a port no..and on sever side the request is send on Port no 80 now the Server acknowledges it and sends the web page through port no 80..now is the important part..Notice that the tcp is connection is still there..so the client receives the web page on the same port(in this case 2048)through which it gave a request.. ",
+            "date": "Answered April 19, 2016",
+            "views": "752",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Purva Bachhav",
+                    "user_href": "/profile/Purva-Bachhav"
+                },
+                {
+                    "user_id": "Grey Steele",
+                    "user_href": "/profile/Grey-Steele"
+                },
+                {
+                    "user_id": "Oluwalana Olasubomi",
+                    "user_href": "/profile/Oluwalana-Olasubomi-1"
+                }
+            ]
+        }
+    ]
+}

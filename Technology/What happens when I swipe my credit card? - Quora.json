@@ -1,0 +1,141 @@
+{
+    "title": "What happens when I swipe my credit card? - Quora",
+    "tags": [
+        "Square (product)",
+        "Credit Card Processing",
+        "Online Payment Gateways and Processing",
+        "Payments"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Parijat Bose",
+                "href": "/profile/Parijat-Bose"
+            },
+            "answer_text": "Before answering this question, I would like to list the 5 stake holders with examples involved in the process. Card Holder-> Me, YouMerchant-> The shop where I am going to buy a burger or have a cup of coffee. Ex: Starbucks, McDonalds, etcCard Issuer-> The bank which has issued a Credit Card to me. Ex: Chase, Bank of America, etcMerchant Acquirer-> The bank which has issued the Point of Sale machine (Card machine) to the merchant.Ex: Bank Of America, State bank Of India,etcPayment Gateway-> The electronic network which communicates between all the above mentioned above to complete the process. Ex: VISA, MasterCard, etcNow coming to the answer, which I would also like to list in a real life sequential manner. I go to a shop and buy a meal worth $20.I bring out my Credit Card from my purse and hand it to the sale guy who dips it or swipes it through the Point of Sale Machine.Depending on the card type, either I need to enter a PIN or need not.I receive a notification in my cell phone that an amount of $20 has been deducted from my Credit Card balance and the sales guy smiles to me and says \u201cThank You\u201d.This seems to be pretty much simple and straight forward but it isn\u2019t. There are a lot of back ground processes that goes on right from the moment when my card is swiped till the next day when the merchant actually receives the money. These are a combination of financial and technical obligations that the payment gateways like VISA or Master Card takes care of primarily. When the card is swiped, personal information is being fed into the Point of Sale machine.If further required, a user specific PIN needs also to be entered into the machine for additional Card Holder verification.This message along as well as the amount is now passed to the Card Issuing bank by the Payment Gateway provider.If the Card verification is found to be true and if the amount to be credited to the merchant is \u201crisk-free\u201d, then the amount is deducted from the Card Holders Credit Card balance.The merchant post all its transactions done before, through the PoS machine to the Acquirer bank.The Merchant Acquirer Bank registers this along with all such other transactions of Merchants that it has in its book.At the end of the day, a clearing job is done by the Payment Gateway provider and the acquirer which decides on how much amount has to be paid to the Merchant, how much interchange fee the Issuer , Acquirer and the Payment Gateway provider will receive. The fees are fixed for a point and may change with due course of time.The next day, the settlement is done when all the stake holders except the Card Holder receives its dues.There are a few more things to notice upon: What is meant by \u201crisk-free\u201d? Example 1: Suppose the card holder is regular defaulter in paying his dues to the Issuer, then his all transactions can be held up terming as \u201cRisk\u201d. Example 2: Suppose, at 5.30 UTC Time, a card is swiped in San Mateo County, California and the same card is swiped again at Las Vegas Boulevard, Texas at 5.45 UTC Time then there must be some sort of fraud. The reason being the card holder in no way will be able to travel from San Francisco to Las Vegas in 15 minutes and make transactions. Example 3: A card holder who always tends to transact in amount of less than $200, suddenly is seen to make a transaction of his credit limit in a Las Vegas Casino. This is a deviation from his purchase habits and might be a probable fraud. The Card Issuer along with the Payment Gateway has to come over all of this Risk Profile and decide whether the transaction made by its customer is valid or not. Because, at the end of the day it is the Issuer who has to take this Risk and pay the money to the Merchant via the Payment Gateway. What if the card holder does not pays back the loan to the Issuing Bank? Hence it gets the lion\u2019s share from the interchange fee. The Acquirer gets his share too as it also invested in acquiring the Merchant as well as having a little risk of a fraud Merchant. The Payment Gateway provider receives it\u2019s share as it has provided a network through which all channels has communicated to each other and also having additional tasks of calculating clearing and settlement bills for all parties as well as countering fraudulent transactions. The amount of money receivable by the parties is directly proportional to the risks that they are involved with. The Merchant receives his due but not the amount that was paid by the Card Holder. He ends up losing around 2% of the paid amount or $2 of $100. So, receiving $98 from the customer on goods sold for $100 isn\u2019t quite a loss depending on the volume of transactions made in a Merchant\u2019s store. It\u2019s a win win for every stake holder. A customer can purchase without actually having a cut in his savings pocket. The Merchant enjoys loyal customers. The Issuer, Acquirer and the Payment Gateway provider receives their charges in the form of interchange fees. ",
+            "date": "Answered August 8, 2018",
+            "views": "28",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sanchit Singhal",
+                    "user_href": "/profile/Sanchit-Singhal-29"
+                },
+                {
+                    "user_id": "Siddharth Amitanshu",
+                    "user_href": "/profile/Siddharth-Amitanshu"
+                },
+                {
+                    "user_id": "Niall MacDonagh",
+                    "user_href": "/profile/Niall-MacDonagh-2"
+                },
+                {
+                    "user_id": "Sarath M",
+                    "user_href": "/profile/Sarath-M-66"
+                },
+                {
+                    "user_id": "Shobhit Saxena",
+                    "user_href": "/profile/Shobhit-Saxena-10"
+                },
+                {
+                    "user_id": "Paul Unterberg",
+                    "user_href": "/profile/Paul-Unterberg"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joosep K\u00f5ljalg",
+                "href": "/profile/Joosep-K\u00f5ljalg"
+            },
+            "answer_text": "What happens when I swipe my credit card. I assume that you are asking this question to understand how the money from your bank account ends up in the merchant\u2019s bank account.  As the process is quite long I have divided the credit card transaction into 3 separate steps. These steps or sub processes are as follows: Cardholder VerificationAuthorization and capture of fundsClearing and SettlementCardholder verification Everything starts with verification of the cardholder. There are handful of verification methods used with credit cards today. These methods are there to make sure that this cardholder has the right to use the funds on the account that is associated with this credit card. I\u2019m going to cover 3 types of verification methods here, these are used on majority of the transactions today.  Swiping the cardWhen the card is swiped, then the merchant is asked to enter last 4 numbers from the card. This is to prove that the the card is actually present in the store and has number embossed on it. Once this is done the Authorization message is sent to the card issuer. Some merchants may ask the customer to sign the printed receipt and might ask to see a ID with a photo on it. Whether they ask for these detail depends on the merchant\u2019s and the acquiring bank\u2019s risk and fraud procedures. Chip and PinCustomer enters their credit card to the card reader. They are shown the amount due and asked to identify themselves and confirm the transaction with a PIN code. The PIN code is either checked on card or online PIN, this depends on the merchant POS terminal capabilities. Once the correct PIN is entered the payment is sent for Authorization. OnlineWhen purchasing online the mandatory fields are always the cardholder name, card number and expiry date. Most merchants and acquiring banks require the use of additional verification methods to be used. These methods typically are Card Security Code (CVV2) and 3D secure. These verification methods (except for 3D Secure) are sent to issuing bank together with the authorization message.  AuthorizationOnce the cardholder is verified then an authorization message for the payment has been sent to the card issuer. This message and all later messages will be relayed through Card Organization (Visa, MasterCard, Amex, etc) systems to correct issuer. Card issuer will check if the card is active and there are enough funds on the associated account. In case there are enough free funds on the account the issuer will debit the account accordingly and will send out OK message to the merchant\u2019s POS terminal. If there are not enough funds available or there is other issues with the card, then NOK message is sent to the merchant with the error code. Third option is also possible - referral this means that the merchant is expected to contact the card issuer to verify the cardholder.Once the Merchant has received the OK message back, they can give the goods/service to the customer. Depending if the acquiring bank\u2019s processor (might be one entity with the bank) is using Single Message System or the Dual Message System if the financial transaction is completed with authorization or later separately.  With Single Message System, the POS terminal sends the authorization and capture within one message. This means that the transaction is sent for clearing and settlement at once. With Dual Message System the POS Terminal will collect the daily transactions into a batch and send them to the processor all at one for clearing and settlement.Clearing and SettlementProcessor will send the transactions data to Card Organizations on behalf of acquiring bank. Based on that data the card organizations create clearing files that have all the necessary information about the transactions made.  Based on the information from clearing files settlement between Card Organizations, card issuer and acquiring bank will take place. Acquiring bank will now debit the merchant\u2019s account with earnings and the process is finished. ",
+            "date": "Updated December 29, 2014",
+            "views": "18",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yogesh Pathade",
+                    "user_href": "/profile/Yogesh-Pathade"
+                },
+                {
+                    "user_id": "Recep Selli",
+                    "user_href": "/profile/Recep-Selli-1"
+                },
+                {
+                    "user_id": "Santu Debnath",
+                    "user_href": "/profile/Santu-Debnath-1"
+                },
+                {
+                    "user_id": "Argo M\u00e4ndmaa",
+                    "user_href": "/profile/Argo-M\u00e4ndmaa"
+                },
+                {
+                    "user_id": "Marko Anspal",
+                    "user_href": "/profile/Marko-Anspal"
+                },
+                {
+                    "user_id": "Stephanie Yuan",
+                    "user_href": "/profile/Stephanie-Yuan-18"
+                },
+                {
+                    "user_id": "Charles Zhang",
+                    "user_href": "/profile/Charles-Zhang-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wellington W. Sculley",
+                "href": "/profile/Wellington-W.-Sculley"
+            },
+            "answer_text": "tl;dr banks exchange information about you to determine whether you have enough money to pay for a transaction. Payment devices (e.g. cards) help strangers transact What's the difference between a Visa credit card e vs. PayPal e-wallet vs. Google Wallet app vs. etc.? Not very much. They are all payment instruments with unique information about you to give the receiver (e.g. a merchant) confidence that the sender (i.e. you, the customer) will pay them in the future.  ...by including information about you A credit card is simply one example of a payment instrument: One side of a card has human-readable information about you (see Anand \u2740's answer to What happens when I swipe my credit card?), and the other has a computer-readable version of the same information. Using this information, one exchange messages with your bank about your bank account. Again, all this information is used to help merchants answer a simple question: Does this stranger have enough money to pay for my stuff? ...to indicate your ability to pay To do this, all instruments transmit more or less the same information in more or less the same way. It usually works like this: The merchant gets your information using a card-reader (\"the swipe\")The merchant's payment processor uses your information to send the 'Is there enough money?'-question to your bankYour bank sends the answer ('yes' or 'no') back to the merchantThe merchant gives you the stuff (if 'yes') or tells you to buzz off (if 'no')",
+            "date": "Answered December 26, 2014",
+            "views": "23",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Xavier Mukodi",
+                    "user_href": "/profile/Xavier-Mukodi"
+                },
+                {
+                    "user_id": "Meher Roy",
+                    "user_href": "/profile/Meher-Roy"
+                },
+                {
+                    "user_id": "Lucas McMurray",
+                    "user_href": "/profile/Lucas-McMurray"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anand \u2740",
+                "href": "/profile/Anand-1446"
+            },
+            "answer_text": "You may find the following link useful.   How Credit Cards Work - HowStuffWorks ",
+            "date": "Answered November 21, 2014",
+            "views": "663",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rohan Sharma",
+                    "user_href": "/profile/Rohan-Sharma-46"
+                },
+                {
+                    "user_id": "Kerenza Doxolodeo",
+                    "user_href": "/profile/Kerenza-Doxolodeo"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "IndiaLends",
+                "href": "/profile/IndiaLends-2"
+            },
+            "answer_text": " Here is a clear view of how credit card payments work- ",
+            "date": "Answered October 6, 2018",
+            "views": "229",
+            "upvotes": "0"
+        }
+    ]
+}

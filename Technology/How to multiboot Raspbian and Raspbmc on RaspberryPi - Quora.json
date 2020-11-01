@@ -1,0 +1,36 @@
+{
+    "title": "How to multiboot Raspbian and Raspbmc on RaspberryPi - Quora",
+    "tags": [
+        "RaspBMC",
+        "Raspbian",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Dickens",
+                "href": "/profile/Michael-Dickens-5"
+            },
+            "answer_text": "You really can\u2019t multiboot a Raspberry Pi in the same way as you can multiboot a regular PC, on one OS can be installed at a time on a single SD card The only way you can boot multiple OSs on the same Pi is to have multiple SD cards, each with it\u2019s own OS, then swap the SD cards depending on which OS you want Now don\u2019t get confused with NOOBS, NOOBS is not multibooting as much as the other reply may have you believe, NOOBS is simply an image that contains multiple OSs that you can choose from, while it may seem like you can freely switch between them whenever you want (like multibooting), you can\u2019t With multibooting, you can install one OS, install software, reboot, install another OS, install different software, reboot, select the first OS and the same instance the OS along with all software is still there, this is not the case with NOOBS NOOBS only allows you to install one instance of an OS at a time, once installed, you\u2019re stuck with it, if you install software, you need to backup before you switch OSs, once you install an OS, it will boot directly to that OS If you want to swap OSs, hold Shift during boot, you will then get the NOOBS OS selector again\u2026. Heed my warning about backing up before proceeding, all previously installed software will be lost, you now have the option to select another OS, select the other OS you want This will now begin the install of the other OS \u2026. This will wipe and overwrite your previous OS, not install alongside, which is not possible on the Pi, finish the install and you can now use the other OS, again, it will boot directly to this OS every time the Pi boots, be sure to backup before proceeding Now like before, to swap OSs, hold down the Shift key during boot, you will then get the NOOBS menu again, select the previous OS You will notice that it will no longer boot normally, it wants you to install again, yes, you will have to install it all over again, because you overwritten it when you installed the other OS, reinstall the OS Once you have it installed again, you will notice you no longer have the software and files you had before, it will look fresh, this is where that backup comes in, you will now need to restore that backup, and make a new backup every time you make a change Your best bet is to get an SD card for each OS you want, mass install NOOBS on each SD card, choose which OS you want on each card and select it at the OS selector screen, then each SD card will contain each OS and the software on each OS ",
+            "date": "Answered April 3, 2018",
+            "views": "355",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Sadhanandhan Balakrishnan",
+                "href": "/profile/Sadhanandhan-Balakrishnan"
+            },
+            "answer_text": "Multibooting Rapbian Pi and Raspbmc only needs the NOOBS installation which can be downloaded from the R-pi website. Downloads | Raspberry Pi Install NOOBS as per the setup guide, preferably on a 8 GB SD Card or bigger capacity for booting all the O/s provided with NOOBS. ",
+            "date": "Answered July 22, 2014",
+            "views": "563",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "San Luthra",
+                    "user_href": "/profile/San-Luthra"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "title": "What is the equation of tangent to circle x^2+y^2=25 which is inclined at an angle 30 degree with x axis? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nirmalya Chakraborty | \u09a8\u09bf\u09b0\u09cd\u09ae\u09be\u09b2\u09cd\u09af \u099a\u0995\u09cd\u09b0\u09ac\u09b0\u09cd\u09a4\u09c0",
+                "href": "/profile/Nirmalya-Chakraborty-\u09a8\u09bf\u09b0\u09cd\u09ae\u09be\u09b2\u09cd\u09af-\u099a\u0995\u09cd\u09b0\u09ac\u09b0\u09cd\u09a4\u09c0"
+            },
+            "answer_text": "Interesting question. We'll travel a long way. Stick with me. Yesterday , I had my History and Civics board exams. I couldn't focus much on the exam because I was stuck on one problem , how could I animate the tangents to a circle of radius [math]r[/math] fixed at the origin in Desmos ? I was looking for ways to get through the problem. Fortunately , I found a way by my own before 6 P.M and could give most of my time to the exam. Here's it : The equation of the circle is , [math]x^2+y^2=r^2 \\tag*{}[/math] Here comes the interesting part , I wanted to animate the radius too with the tangent as to make them perpendicular to each other at every instance. So , I let [math]a[/math] be the angle between the radius and the [math]x[/math]-axis. Then , the equation of the line of which the radius is a segment is [math]y=x\\tan (a)[/math] ( since the slope is [math]\\tan (a)[/math] and the [math]y[/math]-intercept is 0). Now comes the hard part. I needed to find the equation of the tangent with respect to [math]a[/math]. But , [math]m_{\\text{radius}}\u00d7m_{\\text{tangent}}=-1[/math]. [math]\\therefore \\qquad \\implies m_{\\text{tangent}}=-\\frac1{\\tan (a)}.[/math] Let the point of intersection of the circle and the radius be [math](x_1,y_1)[/math]. On solving the simultaneous equations : [math]\\begin{cases} x_1^2+y_1^2=r^2 \\\\ y_1=\\tan (a) x_1 \\end{cases}[/math] We get [math](x_1,y_1)=(r\\cos a,r\\sin a)[/math] We know , [math]\\begin{align} -\\frac1{\\tan (a)}=\\frac{y-y_1}{x-x_1} \\\\\\implies -\\frac1{\\tan (a)}=\\frac{y-r\\sin (a)}{x-r\\cos (a)} \\\\\\implies y=\\left(-\\dfrac1{\\tan (a)}\\right)x + r\\big(\\cos (a) + \\sin (a)\\tan (a)\\big) \\end{align}[/math] That's it. That's our tangent there ! I had a lot of fun in getting it. The question is , how's it going to help us ? From here , we can make out the y-intercept which is needed here. It's [math]c=r\\big(\\cos (a) + \\sin (a)\\tan (a)\\big)=5\\left(\\dfrac{\\sqrt3}2+\\dfrac1{2\\sqrt3}\\right)[/math] Hence ,the required equation should be : [math]y=\\dfrac{x}{\\sqrt3}+5\\left(\\dfrac{\\sqrt3}2+\\dfrac1{2\\sqrt3}\\right)\\tag*{}[/math] ",
+            "date": "Answered March 2, 2019",
+            "views": "943",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/SHERAZ-KHAN-359"
+                },
+                {
+                    "user_id": "Aman Kanwar",
+                    "user_href": "/profile/Aman-Kanwar-3"
+                },
+                {
+                    "user_id": "Nick Shales",
+                    "user_href": "/profile/Nick-Shales"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elaine Dawe",
+                "href": "/profile/Elaine-Dawe"
+            },
+            "answer_text": "[math]x^2 + y^2 = 25[/math] Differentiate implicitly: [math]\\qquad 2x + 2y \\dfrac{dy}{dx} = 0[/math] [math]\\qquad 2y \\dfrac{dy}{dx} = -2x[/math] [math]\\qquad \\dfrac{dy}{dx} = -\\dfrac{x}{y}[/math] Set derivative [math]=[/math] slope of tangent line [math]\\qquad \\dfrac{dy}{dx} = \\tan(30^\\circ)[/math] [math]\\qquad -\\dfrac{x}{y} = \\dfrac{1}{\\sqrt{3}}[/math] [math]\\qquad y = -\\sqrt{3}\\,x[/math] Plug into equation of circle and solve for [math]x[/math]: [math]\\qquad x^2 + \\left(-x\\sqrt{3}\\right)^2 = 25[/math] [math]\\qquad 4x^2 = 25[/math] [math]\\qquad x = \\pm\\dfrac{5}{2}[/math] Solve for [math]y[/math]: [math]\\qquad y = -\\sqrt{3} \\times \\pm\\dfrac{5}{2}[/math] [math]\\qquad y = \\mp\\dfrac{5\\sqrt{3}}{2}[/math] Tangent line with slope [math]\\tfrac{1}{\\sqrt{3}}[/math] through point [math]\\left(\\tfrac{5}{2}, -\\tfrac{5\\sqrt{3}}{2}\\right)[/math] [math]\\qquad y + \\dfrac{5\\sqrt{3}}{2} = \\dfrac{1}{\\sqrt{3}} \\left(x - \\dfrac{5}{2}\\right)[/math] [math]\\qquad \\sqrt{3}\\,y + \\dfrac{15}{2} = x - \\dfrac{5}{2}[/math] [math]\\qquad \\boxed{\\boldsymbol{x - \\sqrt{3}\\,y = 10}}[/math] Tangent line with slope [math]\\tfrac{1}{\\sqrt{3}}[/math] through point [math]\\left(-\\tfrac{5}{2}, \\tfrac{5\\sqrt{3}}{2}\\right)[/math] [math]\\qquad y - \\dfrac{5\\sqrt{3}}{2} = \\dfrac{1}{\\sqrt{3}} \\left(x + \\dfrac{5}{2}\\right)[/math] [math]\\qquad \\sqrt{3}\\,y - \\dfrac{15}{2} = x + \\dfrac{5}{2}[/math] [math]\\qquad \\boxed{\\boldsymbol{x - \\sqrt{3}\\,y = -10}}[/math] Desmos graph  ",
+            "date": "Answered March 2, 2019",
+            "views": "347",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Om Burhade",
+                    "user_href": "/profile/Om-Burhade"
+                },
+                {
+                    "user_id": "Laurence Lu",
+                    "user_href": "/profile/Laurence-Lu-3"
+                }
+            ]
+        }
+    ]
+}

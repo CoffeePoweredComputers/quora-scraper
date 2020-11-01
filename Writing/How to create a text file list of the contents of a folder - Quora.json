@@ -1,0 +1,88 @@
+{
+    "title": "How to create a text file list of the contents of a folder - Quora",
+    "tags": [
+        "Text Files",
+        "Files",
+        "Folders (paper)",
+        "Text",
+        "File Conversions",
+        "File Systems",
+        "Microsoft Windows",
+        "Software and Applications",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Laura Christina Warren",
+                "href": "/profile/Laura-Christina-Warren"
+            },
+            "answer_text": "Thank you for the A2A. I\u2019ll just try to add some points to the answers already given. To get a list of files in a particular folder, open up your Windows Explorer and navigate to the folder you\u2019re interested in. At the top select everything in the address bar and copy it.  This will copy the entire directory path of the folder you want. Now go to your Windows Taskbar and at the left type in \u201ccmd.\u201d  Press Enter. In the Command Prompt window that opens you\u2019ll see something like this:  Just after the greater than symbol in the last row, type cd and a space; then paste the folder path you copied from the Windows Explorer. It should look something like this:  When the command has been pasted in, press Enter. This will change the current directory in the Command Prompt window to the one you want to list. If you were to type dir and then press Enter, you would see an entire list of files scroll down. You can try that if you like. There are various switches with the dir command. You might find some of them useful. Without any of the switches, the dir command prints out the file names, dates, times, and sizes, along with the names of any subdirectories. The /b switch (dir /b) strips away all excess information, displaying only the name of the folders and files in the current directory and not attributes like file size and time stamps.The /s switch (dir /s) show all files and folders inside the current directory. This means all files and folders in every subdirectory, all files and folders in those subdirectories, and so on.In addition, you can sort the files with the /o switch. Sort any of the following ways: The /od switch (dir /od) sorts by date/time. Older entries appear first.The /oe switch (dir /oe) sorts by file extension in alphabetical order.The /og switch (dir /og) sorts by listing folders first, then files.The /on switch (dir /on) sorts by the name of file/folder in alphabetical order.The /os switch (dir /os) sorts by file size, smallest to largest.So to get a list of all file names only, including all subdirectories, in alphabetical order, you would type dir /b /s /on To get a printed listing of any of these commands just add a greater than symbol and then the text filename you want. dir /b /s /on>MyFileList.txt  When you press Enter, the new file (MyFileList.txt) will appear in that folder\u2019s contents. Just go back to File Explorer to find it.  ",
+            "date": "Answered January 16, 2020",
+            "views": "46",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bill Vlasak",
+                    "user_href": "/profile/Bill-Vlasak-1"
+                },
+                {
+                    "user_id": "Scott Sturgeon",
+                    "user_href": "/profile/Scott-Sturgeon-1"
+                },
+                {
+                    "user_id": "Alan Meyers",
+                    "user_href": "/profile/Alan-Meyers-8"
+                },
+                {
+                    "user_id": "Barry Stanly",
+                    "user_href": "/profile/Barry-Stanly"
+                },
+                {
+                    "user_id": "Edward Nupa",
+                    "user_href": "/profile/Edward-Nupa"
+                },
+                {
+                    "user_id": "Peter Shea",
+                    "user_href": "/profile/Peter-Shea-37"
+                },
+                {
+                    "user_id": "Iulian Preda",
+                    "user_href": "/profile/Iulian-Preda-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tom Smith",
+                "href": "/profile/Tom-Smith-11"
+            },
+            "answer_text": "Adding to the excellent information about the DIR command in windows: Go to your \u201csearch\u201d on the taskbar and type in: CMD Then hit enter or select the Command Prompt app that will appear. This will open a window that resembles:  Assuming the drive your files are on is the C drive, and to use the DIR command, you will need to navigate to the folder where the files you want to list in the text file are located. You would use the CD (Change Directory) command to do this navigation. If I wanted to go to my Pictures folder this would look something like:  Once you are there, I would recommend playing with the various switches to make sure you will get the information that you want before writing any files. Based on your question, I would recommend starting with: dir /b That will list just the names of all the files and folders in that directory.  To get the information you have selected to a text file, you add the pipe option mentioned. You have two options to choose from, the single \u201ccarrot\u201d (>) and the double \u201ccarrot (>>). The double version of the pipe (\u201c>>\u201d) will open and write the file each time the command is executed, appending all subsequent results to anything previously in the file. This means that if you execute the command twice in a row, there will be two copies of the result in the file. This is advantageous if you want to list the contents of several folders in the same file. The single version of the pipe (\u201c>\u201d) will empty the file and then write the new results to the file each time the command is executed. This means that if you execute the command 10 times in a row, only the last results will appear in the file. I would recommend starting with the single \u201ccarrot\u201d so you don\u2019t have to remember to erase an old version before using the command if used again. I would also recommend always fully qualifying the name of your output file or else you might have to go do searching to find it. So, I want to write the output file to my Documents folder with a file with the name: \u201cMyPictureList.txt\u201d After opening the CMD app and navigating to the folder I want to list and write to my file, I would use the command: dir /b >C:\\Users\\Tom\\Documents\\MyPictureList.txt Note that you will not see much happen:  This is because all of your output has been written to the file. If we navigate to my Documents folder, you will see the file:  And the list of files is contained in that file now:  Hope that helps. Oh, and by the way, if this is something you would want to do often you might want to consider making this an executable .bat file. If you need help doing that, just let me know. ",
+            "date": "Answered November 15, 2019",
+            "views": "31",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bill Vlasak",
+                    "user_href": "/profile/Bill-Vlasak-1"
+                },
+                {
+                    "user_id": "Johannes Str\u00f6mberg",
+                    "user_href": "/profile/Johannes-Str\u00f6mberg"
+                },
+                {
+                    "user_id": "Dawid Bielecki",
+                    "user_href": "/profile/Dawid-Bielecki"
+                },
+                {
+                    "user_id": "Alexis Boh\u00f3rquez Pareja",
+                    "user_href": "/profile/Alexis-Boh\u00f3rquez-Pareja-1"
+                },
+                {
+                    "user_id": "Nikunj Bhatt",
+                    "user_href": "/profile/Nikunj-Bhatt-4"
+                }
+            ]
+        }
+    ]
+}

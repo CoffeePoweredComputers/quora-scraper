@@ -1,0 +1,72 @@
+{
+    "title": "How can one solve the chicken and egg problem computationally? - Quora",
+    "tags": [
+        "Chicken and Egg Problem (Social Startups)",
+        "Problem Solving in Computer Programming",
+        "Problem Solving"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Prabhat Alok Tyagi",
+                "href": "/profile/Prabhat-Alok-Tyagi"
+            },
+            "answer_text": "This should provide the solution you are looking for: void chicken() {        cout << \"...but chicken comes from egg\" << endl;        egg();}void egg() {        cout << \"...but egg comes from chicken\" << endl;        chicken();} void chickenNegg() {        char c;        cout << \"Did chicken come before egg? [y/n]\" << endl;        if ('y' == c) {                cout << \"I knew chicken came first\" << endl;                chicken();        } else {                cout << \"I knew egg came first...\" << endl;                egg();        }   } ",
+            "date": "Answered November 16, 2012",
+            "views": "14",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Luis Hdz Diaz",
+                    "user_href": "/profile/Luis-Hdz-Diaz"
+                },
+                {
+                    "user_id": "Ng Tsz Ho",
+                    "user_href": "/profile/Ng-Tsz-Ho"
+                },
+                {
+                    "user_id": "Ashish Nitin Patil",
+                    "user_href": "/profile/Ashish-Nitin-Patil"
+                },
+                {
+                    "user_id": "Zane McCaig",
+                    "user_href": "/profile/Zane-McCaig"
+                },
+                {
+                    "user_id": "Abhishek Choudhary",
+                    "user_href": "/profile/Abhishek-Choudhary"
+                },
+                {
+                    "user_id": "Ashish Gaurav",
+                    "user_href": "/profile/Ashish-Gaurav"
+                },
+                {
+                    "user_id": "Zhi An Ng",
+                    "user_href": "/profile/Zhi-An-Ng"
+                },
+                {
+                    "user_id": "Franck Dernoncourt",
+                    "user_href": "/profile/Franck-Dernoncourt"
+                },
+                {
+                    "user_id": "Hetal Rach",
+                    "user_href": "/profile/Hetal-Rach"
+                },
+                {
+                    "user_id": "Michael Yang",
+                    "user_href": "/profile/Michael-Yang-25"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nadeesha Cabral",
+                "href": "/profile/Nadeesha-Cabral"
+            },
+            "answer_text": "Using an OO approach: Create the class \"Egg\", which is inherited by class \"Chicken\". And make sure class \"Chicken\" is inherited by class \"Egg\". If you get this far, then try to initialize either of the classes. You should get your answer. ",
+            "date": "Answered November 7, 2012",
+            "views": "559",
+            "upvotes": "0"
+        }
+    ]
+}

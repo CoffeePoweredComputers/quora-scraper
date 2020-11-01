@@ -1,0 +1,54 @@
+{
+    "title": "What is the difference between the Stark effect and the Franz-Keldysh effect? - Quora",
+    "tags": [
+        "Silicon Photonics",
+        "Photonics",
+        "Semiconductors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom McNamara",
+                "href": "/profile/Tom-McNamara-4"
+            },
+            "answer_text": "The Stark effect is a shift in the electron levels of an individual atom due to an applied electric field [1]. If the atoms are in a gas, you can see the absorption peaks of the gas shift using a light source and a spectrometer. For the theory, you can use perturbation theory on the levels of a single atom, using undergrad QM, similar to the theory of the Zeeman effect which you may have been forced to do in class. It's a little involved, though [2].  The Stark effect can split multiplets (degenerate states). Here's calcualated Stark effect for some atomic levels vs applied field. A thousand V/cm is very doable in the lab. The split is linear vs applied field below, but that depends on what states you're splitting. It can be quadratic instead [1].   Source: Wikipedia, Stark effect The Franz-Keldysh effect is a shift in the absorption edge of a semiconductor* due to an applied electric field. The mechanism is photon-assisted tunneling across the bandgap.  The English-language Wikipedia lacks the key diagram.   Source: Franz-Keldysh-Effekt \u2013 Wikipedia ( Wikipedia) How it works [3]. \"Applied electric field\" means an applied potential that varies linearly in space. That tilts the conduction band and the valence band(solid diagonal lines in the figure). That tilt allows electrons and hole states to tunnel sideways into what (for nearby atoms) would ordinarily be forbidden energies near the gap edge. This moves the absorption edge of the material to lower photon energies, so longer wavelengths.  If you've heard of \"quantum cascade lasers,\" that's a related mechanism. The basic theory here is more accessible to undergrads willing to do some QM than the Stark Effect. Let free electrons and free holes each tunnel towards each other past triangular barriers [4]. They'll only tunnel so far, and unfortunately that will depend on the electric field (the slope of the barrier).  Say they tunnel 1 nm. Well, how much does the bandgap close up in 1 nm? The bandgap has narrowed proportional to something like 2*(tunneled distance)*(electric field), right? The estimate you get may not be particularly accurate, but the most important thing is to understand the mechanism. Once you understand just what the effect is, of course you can look up early papers that have painstaking calculations of how much Franz-Keldysh, and see how close those people got to their experimental data. But don't bother until you see clearly what the effect is! *or insulator Refs[1] Pankove, Optical Processes in Semiconductors http://www.powells.com/book/optical-processes-in-semiconductors-9780486602752/1-7 , p. 28. Just buy Pankove now if you're an experimentalist who cares about light in semiconductors. It's old but it's cheap and it gives you the simplest possible explanation for a lot of different things. [2] Cohen-Tannoudji, Diu, Laloe, Quantum Mechanics Volume 2, pp. 1279-1282.[3] Ibid [1] (i.e. the Pankove book), p. 29.[4] Notes, EE230 - Solid State Electronics, University of California, Berkeley Page on berkeley.edu Start mid-page 145, Fowler-Nordheim tunneling. ",
+            "date": "Updated November 10, 2015",
+            "views": "38",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Charles Qian",
+                    "user_href": "/profile/Charles-Qian-1"
+                },
+                {
+                    "user_id": "Wei Cao",
+                    "user_href": "/profile/Wei-Cao-8"
+                },
+                {
+                    "user_id": "Fred Chen",
+                    "user_href": "/profile/Fred-Chen-13"
+                },
+                {
+                    "user_id": "Razvan Baba",
+                    "user_href": "/profile/Razvan-Baba"
+                },
+                {
+                    "user_id": "Karan Mehta",
+                    "user_href": "/profile/Karan-Mehta-8"
+                },
+                {
+                    "user_id": "Amey Apte",
+                    "user_href": "/profile/Amey-Apte"
+                },
+                {
+                    "user_id": "Vivek Brahmbhatt",
+                    "user_href": "/profile/Vivek-Brahmbhatt"
+                },
+                {
+                    "user_id": "Inna Vishik",
+                    "user_href": "/profile/Inna-Vishik"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "title": "What are convergent and divergent functions? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mitchell Schoenbrun",
+                "href": "/profile/Mitchell-Schoenbrun"
+            },
+            "answer_text": "Quite amazing how different all the other answers are. Part of the problem here is that the question is poorly worded. When talking about convergence, one is usually talking about a sequence. There\u2019s a formal definition of a convergent sequence involving deltas and epsilons. There\u2019s a close relationship between this definition and the definition of the limit of a function at a point. A divergent sequence is very simply one that doesn\u2019t converge. Examples include things like 2, 4, 8, 16 as well as 1, -1, 1, -1 There are definite integrals that diverge, meaning the computed area grows without bounds. I think however what you probably are looking at is a convergent sequence of functions. Even this is not that simple. A convergent sequence of functions can be pointwise convergent, meaning if you look at each point x of the series f1(x), f2(x)\u2026. F(x) that for each you have a convergent sequence. There are other stricter types of convergence such as absolute convergence. Consider the functions that are the partial sums of a Fourier decomposition of a function. As you add more and more terms, the function you get becomes closer and closer to the original function. You could refer to the original function as the limit of the sequence of functions as you add more and more terms. If there is such a limit, the sequence of functions is divergent. For some such sequences of functions such as for a square wave, the sequence is only pointwise convergent. For a sawtooth wave the sequence is absolutely convergent. Understanding why there is this difference is part of a first year college analysis course. There are other curiosities involving series of sequences of functions. Consider the sequence of functions with the domain x > 0. 1/x, 1/2x, 1/3x,\u2026 Each one of the these functions is differentiable. If you look at the pointwise convergence you get two rays, one from the origin straight up and one to the right. It\u2019s not even a function. There are other examples where every function in a sequence is differentiable where the sequence of functions is convergent, but the limit function is not differentiable, at least not everywhere. There are lots of peculiar but beautiful results found in real analysis, but unfortunately it\u2019s usually only math majors who get a glimpse. ",
+            "date": "Answered August 18, 2020",
+            "views": "600",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Lukas Leibfried",
+                "href": "/profile/Lukas-Leibfried"
+            },
+            "answer_text": "A function [math]f:A \\rightarrow B[/math] where [math]A[/math] is a totally ordered, unbounded set and [math](B,d)[/math] is a metric space with the metric [math]d[/math] converges to the value [math]F[/math] as [math]x[/math] approaches positive infinity if for every [math]\\epsilon > 0[/math], there exists a value [math]X( \\epsilon ) \\in \\mathbb{A}[/math] such that [math]d(F, f(x)) < \\epsilon[/math] for all [math]x > X[/math]. Similarly, the function converges to the value [math]G[/math] as [math]x[/math] approaches negative infinity if for every [math]\\epsilon > 0[/math], there exists a value [math]Y( \\epsilon ) \\in \\mathbb{A}[/math] such that [math]d(G, f(x)) < \\epsilon[/math] for all [math]x < Y[/math]. A function [math]f:A \\rightarrow B[/math] where [math]A[/math] is a totally ordered, unbounded set and [math](B,d)[/math] is a metric space with the metric [math]d[/math] is divergent if it does not have the properties above. This essentially means that if a function approaches a certain value as its argument increases or decreases indefinitely, it is convergent. For example, the function [math]f: \\mathbb{R} \\rightarrow \\mathbb{R}[/math] where [math]f(x) = \\frac{1}{x}[/math] approaches 0 as [math]x[/math] approaches positive or negative infinity. We can write this as [math]\\lim_{x \\rightarrow + \\infty}\\frac{1}{x} = 0[/math] or [math]\\lim_{x \\rightarrow - \\infty}\\frac{1}{x} = 0[/math], respectively. However, the function [math]g: \\mathbb{R} \\rightarrow \\mathbb{R}[/math] where [math]g[/math][math](x) = \\sin x[/math] does not converge to any value due to its oscillating nature. ",
+            "date": "Answered February 4, 2018",
+            "views": "31",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Amal Guptan",
+                    "user_href": "/profile/Amal-Guptan"
+                }
+            ]
+        }
+    ]
+}

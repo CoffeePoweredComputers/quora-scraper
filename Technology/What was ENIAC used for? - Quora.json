@@ -1,0 +1,104 @@
+{
+    "title": "What was ENIAC used for? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gray Wilton",
+                "href": "/profile/Gray-Wilton-1"
+            },
+            "answer_text": "What a great military history AND technology history question. The actual events surrounding the use of the ENIAC are a little misleading since the ENIAC itself was not officially dedicated until after WWII was in fact over, in February 1946. It was the other way around where the NEED to solve firing data and create FIRING TABLES was the reason for the creation of ENIAC rather than the other way around. Artillery firing tables are really nothing more than calculated extrapolation of collected data and projections of that data that then creates all the other data that was not actually fired and observed. In other words, data is generally collected from nearest, farthest and median distances and all the other data is extrapolated. Firing tables are not really a problem as the calculations, while complicated, can be done by hand. The problem that the U.S. military had in the early \u201840s was that to do a complete table for a single artillery piece, in particular a NEW dimension OR new munition could take MONTHS to complete. In war time is not a luxury that anyone could afford. So, the purpose of designing the ENIAC was do all those calculations AS QUICKLY and ACCURATELY as possible. Here are some link that will better explain the history of ENIAC and its development: The Minds Behind ENIAC ENIAC simulation: history and for more on the computations themselves: Firing table computations on the Eniac ",
+            "date": "Answered December 27, 2017",
+            "views": "14",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jeetendra Mahavar",
+                    "user_href": "/profile/Jeetendra-Mahavar-2"
+                },
+                {
+                    "user_id": "Jeffrey Simnacher",
+                    "user_href": "/profile/Jeffrey-Simnacher"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tom Crosley",
+                "href": "/profile/Tom-Crosley-1"
+            },
+            "answer_text": "A detailed explanation of the methods used to calculate firing tables on the ENIAC (Electronic Numerical Integrator and Computer) is provided in the paper Firing table computations on the Eniac by Harry L. Reed, Jr. (Aberdeen Proving Ground), in the ACM '52 Proceedings of the 1952 ACM national meeting (Pittsburgh), pages 103-106. This is behind a paywall, so I can\u2019t show details here. The paper includes lots of formulas and graphs, as shown here:  The preparation of a firing table was accomplished in three phases. The first phase was the reduction of empirical data to parameters which could be used in a mathematical model, simple enough to allow numerical computations to be made on the ENIAC. The second phase consisted of the computation of trajectories with this model for both nominal conditions and for various perturbations of the nominal conditions. The third phase involved high order interpolations on the data obtained from the second phase into information usable in the field. The parameters involved in the description of each trajectory included the distance down range, altitude, distance cross range, wind down range, wind across range, angular velocity of the earth, latitude, azimuth, relative velocity of sound, relative air density, drag function, and mass and diameter of projectile. The method of integration used to compute trajectories on the ENIAC was one due to Heun. It consisted of an application of the trapezoidal rule of integration. Values along the normal trajectories were printed for every second of time of flight. A typical firing table required the calculation of about 3000 trajectories. It took a human 7 hours just to calculate one trajectory. Herman Goldstine was located at Ballistic Research Laboratory (BRL) at the Abeerdeen Proving Ground in Maryland, and was in charge of the hundred or so women calculating the tables by hand. To speed things up, BRL enlisted the Moore School of Electrical Engineering at the University of Pennsylvania and Goldstine was the liaison between BRL and the university. Thus came about ENIAC. Note the term Numerical Integrator in the spelled-out name. This is an important clue in how it was constructed. ENIAC, despite being the first general purpose electronic computer, did not have an instruction set as we know it today. Instead it had twenty 20 accumulators (for addition and subtraction), a multiplier, and a combination divider and square rooter which could be wired together using patch cords, and a Master Programmer which could control the operation of the different units, essentially creating loops. Multiplications took 3 ms and were 14 times longer than an addition which took 200 \u00b5s. So they were avoided as much as possible. Integration often requires the solving of a formula for n, and then n+1, and then n+2 etc. In his book The Computer from Pascal to von Neumann (1972), Goldstein explains how a table of the form [math] n[/math] and [math] n^2 [/math] was formed without doing multiplies for each step. The example we choose is to form a table of squares. Thus at the start we assume Accumulator 1 contains [math] n  [/math]and Accumulator 2 contains [math] n^2  [/math]and we show how to form [math]n + 1  [/math]and  ([math]n + 1)^2.[/math] This is shown in the figure below:  At the start we may suppose that Accumulator 1 contains [math]n[/math] and Accumulator 2 contains [math]n^2[/math] and that somehow\u2014by pushing a button\u2014the initiating unit transmits a pulse causing Accumulator 1 to transmit its contents twice and Accumulator 2 to receive it twice. Then, upon the execution of this operation, Accumulator 2 will contain [math]n^2 + 2n[/math] and Accumulator 1 will send out a signal which causes the constant transmitter to send out a 1 and both accumulators to receive it. Thus Accumulator 1 now contains [math]n + 1[/math] and Accumulator 2 contains [math]n^2 + 2n + 1 = (n + 1)^2[/math]. At this point the program stops since no other program pulses are transmitted. How could this be used in an iterative fashion to build up a table for n = 0, 1, \u2026? This was the function of a unit called the Master Programmer. It contained 10 program controls each of which could count program pulses and switch program connections. ",
+            "date": "Answered April 28, 2019",
+            "views": "690",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Sindorf",
+                    "user_href": "/profile/John-Sindorf"
+                },
+                {
+                    "user_id": "Craig Adams",
+                    "user_href": "/profile/Craig-Adams-54"
+                },
+                {
+                    "user_id": "Dale Whitehead",
+                    "user_href": "/profile/Dale-Whitehead"
+                },
+                {
+                    "user_id": "Adrian Gerber",
+                    "user_href": "/profile/Adrian-Gerber-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matt Micalizzi",
+                "href": "/profile/Matt-Micalizzi"
+            },
+            "answer_text": "ENIAC was used to calculate the tables used for trajectory of artillery shells. The simplest expression of this is Trajectory equals Tan(Theta where theta equals the angle that the canon is fired at) however many variables also contribute (mass and velocity of the shell, amount of charge propelling the shell through the cannon, and ambient conditions (elevation vs sea level) all contribute to the measured distance the shell will travel\u2026 These equations get complicated quickly as each of the contributing factors move into the calculations. Artillerymen used to use charts based on simple calculations or more complex tables compiled by human calculators until the computing horsepower of ENIAC was achieved and was run around the clock to improve the accuracy of the tables thus increased the accuracy of cannons on ships and on battlefields (tanks and artillery) which had a profound affect on the war\u2026 ",
+            "date": "Answered December 26, 2017",
+            "views": "420",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gray Wilton",
+                    "user_href": "/profile/Gray-Wilton-1"
+                },
+                {
+                    "user_id": "Daniel Berry",
+                    "user_href": "/profile/Daniel-Berry-18"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jennifer Usher",
+                "href": "/profile/Jennifer-Usher-2"
+            },
+            "answer_text": "Thanks for the A2A. ENIAC was one of the first general purpose electronic computers developed. It was originally intended to compute ballistic tables for artillery, but it\u2019s first use was calculating the possibility of building a thermonuclear weapon. John von Neumann, who was a mathematician at Los Alamos, was working on the design of the hydrogen bomb. He learned of ENIAC\u2019s existence, and that became the first test program run. The input and output for this was one million cards. If you visit the Computer History Museum in Mountain View, CA you can see some of the panels from ENIAC. When I was there, I took out my iPhone, held it up, and said, \u201cThat\u2019s your great, great, great, great, great, great, great, great, granddaddy.\u201d And, in answer to the original question, it was the first such computer that the public was widely aware of. Earlier ones, such as Z3, which was built in Germany but which was not seen as being worthwhile by the Nazis, and Colossus, which was extremely top secret as part of the British code breaking operation at Bletchley Park, were not widely know until later. ENIAC was revealed to the press when it was first dedicated. ",
+            "date": "Answered August 23, 2018",
+            "views": "490",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dang Pham",
+                "href": "/profile/Dang-Pham"
+            },
+            "answer_text": "It was used by the US Army to calculate bullet paths for heavy guns. Also, in developing the hydrogen bomb. Also, developing the Monte Carlos method to test how neutrons would travel through different materials. That\u2019s my understanding from reading wikipedia. ",
+            "date": "Updated October 29, 2019",
+            "views": "29",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vishal Bari",
+                "href": "/profile/Vishal-Bari-36"
+            },
+            "answer_text": "It is first electronic digital computer. Used for weather prediction, and other scientific uses. ",
+            "date": "Answered August 1, 2020",
+            "views": "9",
+            "upvotes": "0"
+        }
+    ]
+}

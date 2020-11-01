@@ -1,0 +1,1056 @@
+{
+    "title": "What is an intuitive explanation of reservoir sampling? - Quora",
+    "tags": [
+        "Intuitive Explanations",
+        "Sampling (statistics)",
+        "Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Charles Yang Zheng",
+                "href": "/profile/Charles-Yang-Zheng"
+            },
+            "answer_text": "Imagine the following \"dating\" game show.  The contestant, a bachelorette, is seated at a table with an empty chair.  The host introduces the first suitor; the bachelorette has to invite him to sit with her and be her current \"date\".  Next, the host introduces the second suitor.  Now the girl gets the choice of whether she will keep her current \"date\" or replace him with the new suitor.  She can use a variety of means to make her decision, such as asking questions, or making the two suitors compete in some way.  After that, the host introduces the third suitor, and again the girl can choose to either keep or replace her current \"date.\" After showing n suitors this way, the game show ends, and the girl goes on  a real date with the suitor she kept at the end, the \"winner\" of the show. Imagine one contestant who simply flips a coin to decide whether or not to swap her current \"date\".  Is this \"fair\" to the suitors, i.e., is the probability distribution of the winner uniform over all the suitors?  The answer is no, because it is much more likely for the last few suitors to win than the first few suitors.  The very first suitor is most unfortunate of all, since if he wants to go on a date with the girl, he has to survive n-1 coin flips.  The last suitor has the best chances--he only needs to win a single coin flip. So, what kind of procedure should the girl use if she wants to give all the suitors an equal chance, 1/n?  First of all, she has to swap to the last suitor with probability 1/n, since the last suitor wins if and only if she decides to swap on the last step.  Now what about the second-to-last suitor?  In order for him to win, she has to decide to swap on the (n-1)th step, and then also decide to not swap on the nth step.  This happens with probability [math]p_{n-1}[/math](n-1)/n, where [math]p_{n-1}[/math] is the probability that she swaps on the (n-1)th step and (n-1)/n is the probability she does not swap on the nth step.  Solving for  [math]p_{n-1}[/math](n-1)/n = 1/n we get [math]p_{n-1}[/math] = 1/(n-1).  Continuing the pattern, we see that her swap probability on the kth step is 1/k. That is the algorithm for reservoir sampling. ",
+            "date": "Answered November 13, 2014",
+            "views": "126",
+            "upvotes": " View 154 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mangrer",
+                    "user_href": "/profile/Mangrer"
+                },
+                {
+                    "user_id": "Sandeep Kumar",
+                    "user_href": "/profile/Sandeep-Kumar-201"
+                },
+                {
+                    "user_id": "Madhur Jain",
+                    "user_href": "/profile/Madhur-Jain"
+                },
+                {
+                    "user_id": "Archit Rai Gupta",
+                    "user_href": "/profile/Archit-Rai-Gupta"
+                },
+                {
+                    "user_id": "Mohiuddin Ahmed Sohel",
+                    "user_href": "/profile/Mohiuddin-Ahmed-Sohel"
+                },
+                {
+                    "user_id": "Mitesh Joshi",
+                    "user_href": "/profile/Mitesh-Joshi"
+                },
+                {
+                    "user_id": "Ridha Chahed",
+                    "user_href": "/profile/Ridha-Chahed"
+                },
+                {
+                    "user_id": "Nam Nguyen",
+                    "user_href": "/profile/Nam-Nguyen-879"
+                },
+                {
+                    "user_id": "Gordon Yoon",
+                    "user_href": "/profile/Gordon-Yoon"
+                },
+                {
+                    "user_id": "Xinghua Li",
+                    "user_href": "/profile/Xinghua-Li-11"
+                },
+                {
+                    "user_id": "Raksha Shenoy",
+                    "user_href": "/profile/Raksha-Shenoy-4"
+                },
+                {
+                    "user_id": "Andrew Norris",
+                    "user_href": "/profile/Andrew-Norris-121"
+                },
+                {
+                    "user_id": "Cristina Menghini",
+                    "user_href": "/profile/Cristina-Menghini-1"
+                },
+                {
+                    "user_id": "Saurabh Rana",
+                    "user_href": "/profile/Saurabh-Rana"
+                },
+                {
+                    "user_id": "Ankish Bansal",
+                    "user_href": "/profile/Ankish-Bansal"
+                },
+                {
+                    "user_id": "Sai Shyam",
+                    "user_href": "/profile/Sai-Shyam-36"
+                },
+                {
+                    "user_id": "Kanishk Varshney",
+                    "user_href": "/profile/Kanishk-Varshney"
+                },
+                {
+                    "user_id": "Anmol Singh Jaggi",
+                    "user_href": "/profile/Anmol-Singh-Jaggi"
+                },
+                {
+                    "user_id": "Roger Li",
+                    "user_href": "/profile/Roger-Li-19"
+                },
+                {
+                    "user_id": "Timoth\u00e9e Givois",
+                    "user_href": "/profile/Timoth\u00e9e-Givois"
+                },
+                {
+                    "user_id": "Azhar Khan",
+                    "user_href": "/profile/Azhar-Khan-143"
+                },
+                {
+                    "user_id": "Anirudha Sundaresan",
+                    "user_href": "/profile/Anirudha-Sundaresan"
+                },
+                {
+                    "user_id": "Rajesh Kannan S",
+                    "user_href": "/profile/Rajesh-Kannan-S"
+                },
+                {
+                    "user_id": "Sayanna Chandula",
+                    "user_href": "/profile/Sayanna-Chandula"
+                },
+                {
+                    "user_id": "Utkarsh Gupta",
+                    "user_href": "/profile/Utkarsh-Gupta-35"
+                },
+                {
+                    "user_id": "Abhishek Sharma",
+                    "user_href": "/profile/Abhishek-Sharma-66"
+                },
+                {
+                    "user_id": "Raj",
+                    "user_href": "/profile/Raj-1125"
+                },
+                {
+                    "user_id": "Sohail Momin",
+                    "user_href": "/profile/Sohail-Momin-12"
+                },
+                {
+                    "user_id": "Suhas",
+                    "user_href": "/profile/Suhas-13"
+                },
+                {
+                    "user_id": "Anirudh Vyas",
+                    "user_href": "/profile/Anirudh-Vyas-5"
+                },
+                {
+                    "user_id": "Chidi Beracah",
+                    "user_href": "/profile/Chidi-Beracah"
+                },
+                {
+                    "user_id": "Louis Francini",
+                    "user_href": "/profile/Louis-Francini"
+                },
+                {
+                    "user_id": "Seema Rohilla",
+                    "user_href": "/profile/Seema-Rohilla-2"
+                },
+                {
+                    "user_id": "Hammas Hamzah Kuddah",
+                    "user_href": "/profile/Hammas-Hamzah-Kuddah"
+                },
+                {
+                    "user_id": "Anup Rokkam",
+                    "user_href": "/profile/Anup-Rokkam"
+                },
+                {
+                    "user_id": "Sandeep Nannuri",
+                    "user_href": "/profile/Sandeep-Nannuri-2"
+                },
+                {
+                    "user_id": "Alex Lee",
+                    "user_href": "/profile/Alex-Lee-27"
+                },
+                {
+                    "user_id": "Melody Lin",
+                    "user_href": "/profile/Melody-Lin-17"
+                },
+                {
+                    "user_id": "Nandini Singh",
+                    "user_href": "/profile/Nandini-Singh-15"
+                },
+                {
+                    "user_id": "Nikhil Katre",
+                    "user_href": "/profile/Nikhil-Katre-1"
+                },
+                {
+                    "user_id": "Sayantan Sen",
+                    "user_href": "/profile/Sayantan-Sen"
+                },
+                {
+                    "user_id": "Kojin Oshiba",
+                    "user_href": "/profile/Kojin-Oshiba"
+                },
+                {
+                    "user_id": "Ilan Perez",
+                    "user_href": "/profile/Ilan-Perez"
+                },
+                {
+                    "user_id": "Aravind Reddy",
+                    "user_href": "/profile/Aravind-Reddy-17"
+                },
+                {
+                    "user_id": "Quynh-Nga Pham",
+                    "user_href": "/profile/Quynh-Nga-Pham"
+                },
+                {
+                    "user_id": "Debalina Gupta",
+                    "user_href": "/profile/Debalina-Gupta"
+                },
+                {
+                    "user_id": "Skand S Gupta",
+                    "user_href": "/profile/Skand-S-Gupta"
+                },
+                {
+                    "user_id": "Ajitesh Jain",
+                    "user_href": "/profile/Ajitesh-Jain"
+                },
+                {
+                    "user_id": "Gunjan Kumar",
+                    "user_href": "/profile/Gunjan-Kumar-2"
+                },
+                {
+                    "user_id": "Erdem Ozdemir",
+                    "user_href": "/profile/Erdem-Ozdemir"
+                },
+                {
+                    "user_id": "Miroslav Dimitrov",
+                    "user_href": "/profile/Miroslav-Dimitrov-18"
+                },
+                {
+                    "user_id": "Mrinmoy Das",
+                    "user_href": "/profile/Mrinmoy-Das-13"
+                },
+                {
+                    "user_id": "Revant Kumar",
+                    "user_href": "/profile/Revant-Kumar"
+                },
+                {
+                    "user_id": "Rushabh Shah",
+                    "user_href": "/profile/Rushabh-Shah-77"
+                },
+                {
+                    "user_id": "Pratik Joshi",
+                    "user_href": "/profile/Pratik-Joshi-13"
+                },
+                {
+                    "user_id": "Omkar Joshi",
+                    "user_href": "/profile/Omkar-Joshi-2"
+                },
+                {
+                    "user_id": "Ashish Behl",
+                    "user_href": "/profile/Ashish-Behl-2"
+                },
+                {
+                    "user_id": "Karl Bear",
+                    "user_href": "/profile/Karl-Bear"
+                },
+                {
+                    "user_id": "Yang Tian",
+                    "user_href": "/profile/Yang-Tian-18"
+                },
+                {
+                    "user_id": "Akash Mehta",
+                    "user_href": "/profile/Akash-Mehta-13"
+                },
+                {
+                    "user_id": "Swapnil Ghike",
+                    "user_href": "/profile/Swapnil-Ghike"
+                },
+                {
+                    "user_id": "Anant Kaushik",
+                    "user_href": "/profile/Anant-Kaushik"
+                },
+                {
+                    "user_id": "Tejal Bhamre",
+                    "user_href": "/profile/Tejal-Bhamre"
+                },
+                {
+                    "user_id": "Priyanshu Pandey",
+                    "user_href": "/profile/Priyanshu-Pandey"
+                },
+                {
+                    "user_id": "Raam Arvind",
+                    "user_href": "/profile/Raam-Arvind"
+                },
+                {
+                    "user_id": "Suprith Suvarneshwar",
+                    "user_href": "/profile/Suprith-Suvarneshwar"
+                },
+                {
+                    "user_id": "Filip Bocse",
+                    "user_href": "/profile/Filip-Bocse"
+                },
+                {
+                    "user_id": "Kaushik",
+                    "user_href": "/profile/Kaushik-221"
+                },
+                {
+                    "user_id": "Anish Kumar",
+                    "user_href": "/profile/Anish-Kumar-131"
+                },
+                {
+                    "user_id": "Nikolaos Vergos",
+                    "user_href": "/profile/Nikolaos-Vergos"
+                },
+                {
+                    "user_id": "Zinzi Budd",
+                    "user_href": "/profile/Zinzi-Budd"
+                },
+                {
+                    "user_id": "Jinjin Liu",
+                    "user_href": "/profile/Jinjin-Liu-3"
+                },
+                {
+                    "user_id": "Mudit Uppal",
+                    "user_href": "/profile/Mudit-Uppal-1"
+                },
+                {
+                    "user_id": "Swati Pandey",
+                    "user_href": "/profile/Swati-Pandey-94"
+                },
+                {
+                    "user_id": "Nabanita De",
+                    "user_href": "/profile/Nabanita-De-1"
+                },
+                {
+                    "user_id": "Alan Siegler",
+                    "user_href": "/profile/Alan-Siegler"
+                },
+                {
+                    "user_id": "Vidya Bhat",
+                    "user_href": "/profile/Vidya-Bhat-7"
+                },
+                {
+                    "user_id": "Hyunjun Kim",
+                    "user_href": "/profile/Hyunjun-Kim-1"
+                },
+                {
+                    "user_id": "Brahma Reddy Chilakala",
+                    "user_href": "/profile/Brahma-Reddy-Chilakala"
+                },
+                {
+                    "user_id": "Ritvik Singh",
+                    "user_href": "/profile/Ritvik-Singh-11"
+                },
+                {
+                    "user_id": "Neeraj Baji",
+                    "user_href": "/profile/Neeraj-Baji"
+                },
+                {
+                    "user_id": "Jodi Spring",
+                    "user_href": "/profile/Jodi-Spring"
+                },
+                {
+                    "user_id": "Kevin Chow",
+                    "user_href": "/profile/Kevin-Chow-38"
+                },
+                {
+                    "user_id": "Vignesh Ram",
+                    "user_href": "/profile/Vignesh-Ram-21"
+                },
+                {
+                    "user_id": "Ronak Shah",
+                    "user_href": "/profile/Ronak-Shah-70"
+                },
+                {
+                    "user_id": "Toh Yong Cheng",
+                    "user_href": "/profile/Toh-Yong-Cheng"
+                },
+                {
+                    "user_id": "Anjali Jogeshwar",
+                    "user_href": "/profile/Anjali-Jogeshwar"
+                },
+                {
+                    "user_id": "Anirudh Bhargava",
+                    "user_href": "/profile/Anirudh-Bhargava-6"
+                },
+                {
+                    "user_id": "Vijay Erramilli",
+                    "user_href": "/profile/Vijay-Erramilli"
+                },
+                {
+                    "user_id": "Sergey Muratov",
+                    "user_href": "/profile/Sergey-Muratov"
+                },
+                {
+                    "user_id": "Amit Jadhav",
+                    "user_href": "/profile/\u0905\u092e\u093f\u0924-\u091c\u093e\u0927\u0935-Amit-Jadhav"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Kun-Han Lee",
+                    "user_href": "/profile/Kun-Han-Lee"
+                },
+                {
+                    "user_id": "Srinivas Gubbala",
+                    "user_href": "/profile/Srinivas-Gubbala-2"
+                },
+                {
+                    "user_id": "Danchen Huang",
+                    "user_href": "/profile/Danchen-Huang-1"
+                },
+                {
+                    "user_id": "Shubham Pachauri",
+                    "user_href": "/profile/Shubham-Pachauri"
+                },
+                {
+                    "user_id": "Sayat Satybaldiyev",
+                    "user_href": "/profile/Sayat-Satybaldiyev"
+                },
+                {
+                    "user_id": "Rahul Shrestha",
+                    "user_href": "/profile/Rahul-Shrestha-1"
+                },
+                {
+                    "user_id": "Anish Singh",
+                    "user_href": "/profile/Anish-Singh-2"
+                },
+                {
+                    "user_id": "Liviu Anca",
+                    "user_href": "/profile/Liviu-Anca"
+                },
+                {
+                    "user_id": "Shujian Liu",
+                    "user_href": "/profile/Shujian-Liu-1"
+                },
+                {
+                    "user_id": "Kartik Goyal",
+                    "user_href": "/profile/Kartik-Goyal-4"
+                },
+                {
+                    "user_id": "Venkatesh Elango",
+                    "user_href": "/profile/Venkatesh-Elango"
+                },
+                {
+                    "user_id": "Daodao Wang",
+                    "user_href": "/profile/Daodao-Wang-2"
+                },
+                {
+                    "user_id": "Akshat Verma",
+                    "user_href": "/profile/Akshat-Verma-1"
+                },
+                {
+                    "user_id": "Ryan Codrai",
+                    "user_href": "/profile/Ryan-Codrai"
+                },
+                {
+                    "user_id": "Alejandro Cassis",
+                    "user_href": "/profile/Alejandro-Cassis"
+                },
+                {
+                    "user_id": "Sharmeen Rehan",
+                    "user_href": "/profile/Sharmeen-Rehan"
+                },
+                {
+                    "user_id": "Dev Agarwal",
+                    "user_href": "/profile/Dev-Agarwal"
+                },
+                {
+                    "user_id": "Shiman Ding",
+                    "user_href": "/profile/Shiman-Ding"
+                },
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                },
+                {
+                    "user_id": "Gourab Nath",
+                    "user_href": "/profile/Gourab-Nath"
+                },
+                {
+                    "user_id": "Dong Won Ahn",
+                    "user_href": "/profile/Dong-Won-Ahn"
+                },
+                {
+                    "user_id": "Larry David",
+                    "user_href": "/profile/Larry-David-1"
+                },
+                {
+                    "user_id": "Anshu Mishra",
+                    "user_href": "/profile/Anshu-Mishra-6"
+                },
+                {
+                    "user_id": "Jithendra Koduru",
+                    "user_href": "/profile/Jithendra-Koduru"
+                },
+                {
+                    "user_id": "Niels Abel",
+                    "user_href": "/profile/Niels-Abel"
+                },
+                {
+                    "user_id": "Kelvin Hsu",
+                    "user_href": "/profile/Kelvin-Hsu"
+                },
+                {
+                    "user_id": "Abhishek Choudhary",
+                    "user_href": "/profile/Abhishek-Choudhary-11"
+                },
+                {
+                    "user_id": "Ganesh Rakate",
+                    "user_href": "/profile/Ganesh-Rakate"
+                },
+                {
+                    "user_id": "Bryan David",
+                    "user_href": "/profile/Bryan-David-2"
+                },
+                {
+                    "user_id": "Sandeep Reddy Goli",
+                    "user_href": "/profile/Sandeep-Reddy-Goli"
+                },
+                {
+                    "user_id": "Amey Deshpande",
+                    "user_href": "/profile/\u0905\u092e\u0947\u092f-\u0926\u0947\u0936\u092a\u093e\u0902\u0921\u0947-Amey-Deshpande"
+                },
+                {
+                    "user_id": "Hari Narayanan",
+                    "user_href": "/profile/Hari-Narayanan-8"
+                },
+                {
+                    "user_id": "Sairaam Varadarajan",
+                    "user_href": "/profile/Sairaam-Varadarajan"
+                },
+                {
+                    "user_id": "Sumitra Narayanan",
+                    "user_href": "/profile/Sumitra-Narayanan"
+                },
+                {
+                    "user_id": "Waleed Nasir",
+                    "user_href": "/profile/Waleed-Nasir-1"
+                },
+                {
+                    "user_id": "Trevor Brothers",
+                    "user_href": "/profile/Trevor-Brothers"
+                },
+                {
+                    "user_id": "Gabor Takacs",
+                    "user_href": "/profile/Gabor-Takacs"
+                },
+                {
+                    "user_id": "Suchindra Agarwal",
+                    "user_href": "/profile/Suchindra-Agarwal"
+                },
+                {
+                    "user_id": "Deepali Semwal",
+                    "user_href": "/profile/Deepali-Semwal"
+                },
+                {
+                    "user_id": "Joseph Tingsanchali",
+                    "user_href": "/profile/Joseph-Tingsanchali"
+                },
+                {
+                    "user_id": "Oscar Ng",
+                    "user_href": "/profile/Oscar-Ng-2"
+                },
+                {
+                    "user_id": "Michael Valentino Ochoa",
+                    "user_href": "/profile/Michael-Valentino-Ochoa"
+                },
+                {
+                    "user_id": "Vikas Pandey",
+                    "user_href": "/profile/Vikas-Pandey"
+                },
+                {
+                    "user_id": "Eric Lebigot",
+                    "user_href": "/profile/Eric-Lebigot"
+                },
+                {
+                    "user_id": "Hemant Gupta",
+                    "user_href": "/profile/Hemant-Gupta-7"
+                },
+                {
+                    "user_id": "Harsh Shah",
+                    "user_href": "/profile/Harsh-Shah-86"
+                },
+                {
+                    "user_id": "Ajay Kamath",
+                    "user_href": "/profile/Ajay-Kamath"
+                },
+                {
+                    "user_id": "Gaurav Pathak",
+                    "user_href": "/profile/Gaurav-Pathak-18"
+                },
+                {
+                    "user_id": "Travis Addair",
+                    "user_href": "/profile/Travis-Addair"
+                },
+                {
+                    "user_id": "Gaurav Ramesh",
+                    "user_href": "/profile/Gaurav-Ramesh"
+                },
+                {
+                    "user_id": "Mack Ward",
+                    "user_href": "/profile/Mack-Ward"
+                },
+                {
+                    "user_id": "Andrea Baisero",
+                    "user_href": "/profile/Andrea-Baisero"
+                },
+                {
+                    "user_id": "Songgu Xie",
+                    "user_href": "/profile/Songgu-Xie"
+                },
+                {
+                    "user_id": "Eugene Sarnetsky",
+                    "user_href": "/profile/Eugene-Sarnetsky"
+                },
+                {
+                    "user_id": "Laxman Vemula",
+                    "user_href": "/profile/Laxman-Vemula"
+                },
+                {
+                    "user_id": "Peggy Li",
+                    "user_href": "/profile/Peggy-Li-2"
+                },
+                {
+                    "user_id": "Biswa R",
+                    "user_href": "/profile/Biswa-R-2"
+                },
+                {
+                    "user_id": "Bjarke M\u00f8nsted",
+                    "user_href": "/profile/Bjarke-M\u00f8nsted"
+                },
+                {
+                    "user_id": "Jason Zhang",
+                    "user_href": "/profile/Jason-Zhang-27"
+                },
+                {
+                    "user_id": "William Chen",
+                    "user_href": "/profile/William-Chen-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Himank Agrawal",
+                "href": "/profile/Himank-Agrawal"
+            },
+            "answer_text": "I will give procedural mathematical explanation -: Problem -: Given a stream of elements, keep a sample of size k so that every element in the stream have equal probability of being in the sample. Now for first k elements, keep them all in the sample. For k+1st element, lets say we are going to select it by probability x. Now we will select 1 element from the existing sample uniformly and replace it with k+1st element. So, for any existing element, probability(P) of it to remain in sample after processing k+1st element is P = (1-x) + x(k-1)/k\u00a01-x => probability that k+1st element did not get selected. x(k-1)/k => probability that k+1st element did get selected, but the existing element in sample did not get replaced by k+1st element. Now this probability P should be equal to x, as after this processing all k+1 elements should have equal probability of being in sample. Putting P = x, we will get x = k/(k+1) Now coming to k+2nd element, We will follow same procedure, say x is the probability of it getting selected and P is probability of any existing element to survive after this round is P = ((1\u2013x) + x(k-1)/k) * k/(k+1) ((1\u2013x) + x(k-1)/k) is probability to survive current round as explained above k/(k+1) is probability that element was part of sample before this round. Putting P=x gives, x = k/(k+2). Do you see a trend here? every element after k should be selected by the probability of k/i and replaced by one of elements in the existing sample by selecting uniformly. So this lead to solution - Generate a random number from 0 to i where i is index of current item in stream[]. Let the generated random number is j. If j is in range 0 to k-1, replace reservoir[j] with arr[i] ",
+            "date": "Answered June 14, 2019",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kumar Saurabh",
+                    "user_href": "/profile/Kumar-Saurabh-835"
+                },
+                {
+                    "user_id": "Divyanshu Kumar",
+                    "user_href": "/profile/Divyanshu-Kumar-192"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jason Liu",
+                "href": "/profile/Jason-Liu-21"
+            },
+            "answer_text": "Randomized algorithms are very useful, particularly data science. The main benefit is that it allows us to be both time and space efficient. One such algorithm is called Reservoir Sampling, or otherwise known as Algorithm R by Jeffrey Vitter in his paper on the subject. His goal was the address the following question.  Given a data set of unknown size N, uniformly select k elements from the set such that each element has a 1/N probability of being chosen. Reservoir Sampling requires only O(n) time and only O(k) space. Some examples If [math]k=1,N=2[/math]. We place the first element in the reservoir. Since we know that the second / last element must have an acceptance probability of [math]P=1/2[/math] When the stream ends after [math]2[/math], it is clear that both elements had a [math]1/2[/math] probability of being in the reservoir. If [math]k=1,N=3.[/math] We know that the third element must have an acceptance probability of [math]1/3[/math]. This also means that the element in the reservoir has a [math]2/3[/math] chance of staying in the reservoir. Note that at [math]n=2[/math] it had a [math]1/2[/math] chance of being replaced. The probabilities telescope inwards when we calculate the probability of the first and second elements being in the reservoir. [math]P=1\u22c5\\frac{1}{2}\u22c5\\frac{2}{3}=\\frac{1}{3}[/math] If we define the acceptance probability [math]f(n, k)=1/n[/math] we will obtain any item with a final probability of [math]1/N[/math] [math]P=\\frac{1}{2}\u22c5\\frac{2}{3}\u22c5\\frac{3}{4}\u22ef\\frac{n\u22122}{n\u22121}\u22c5\\frac{n\u22121}{n}=\\frac{1}{n}[/math] Generalizing for other values of k It turns out that to generalize this for the case where [math]k=k[/math], all we need to do is put the first k items into your reservoir first, this is to say that the first k elements have an acceptance probability of p=1=k/k. Afterwards, we sample each element with: [math]P(accept)=\\frac{k}{n}[/math] Once the new value from the stream is accepted, all we need to do is remove one element from the reservoir (with uniform probability) and fill in the new spot.In this case, we will see the following telescoping effect with the probabilities. [math]P(kept)=1\u22c5\\frac{k}{k+1}\u22c5\\frac{k+1}{k+2}\u22c5\\frac{k+2}{k+3}\u22ef\\frac{k+n\u2212k\u22121}{n}=\\frac{k}{n}[/math] ",
+            "date": "Answered June 8, 2015",
+            "views": "72",
+            "upvotes": " View 32 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Phyllis N. Ju",
+                    "user_href": "/profile/Phyllis-N-Ju"
+                },
+                {
+                    "user_id": "Germanium Algo",
+                    "user_href": "/profile/Germanium-Algo"
+                },
+                {
+                    "user_id": "Ayush Singh",
+                    "user_href": "/profile/Ayush-Singh-19"
+                },
+                {
+                    "user_id": "Hrishikesh Alshi",
+                    "user_href": "/profile/Hrishikesh-Alshi"
+                },
+                {
+                    "user_id": "Fan Wu",
+                    "user_href": "/profile/Fan-Wu-28"
+                },
+                {
+                    "user_id": "Jeet Banerjee",
+                    "user_href": "/profile/Jeet-Banerjee-7"
+                },
+                {
+                    "user_id": "Rajesh Reddy",
+                    "user_href": "/profile/Rajesh-Reddy-2"
+                },
+                {
+                    "user_id": "Long Law",
+                    "user_href": "/profile/Long-Law"
+                },
+                {
+                    "user_id": "Tammy Tseng",
+                    "user_href": "/profile/Tammy-Tseng-2"
+                },
+                {
+                    "user_id": "Xuelian Han",
+                    "user_href": "/profile/Xuelian-Han"
+                },
+                {
+                    "user_id": "Resy Verma",
+                    "user_href": "/profile/Resy-Verma"
+                },
+                {
+                    "user_id": "Aditya Agrawal",
+                    "user_href": "/profile/Aditya-Agrawal-93"
+                },
+                {
+                    "user_id": "Luca Schidu",
+                    "user_href": "/profile/Luca-Schidu"
+                },
+                {
+                    "user_id": "Kojin Oshiba",
+                    "user_href": "/profile/Kojin-Oshiba"
+                },
+                {
+                    "user_id": "Congyang Wang",
+                    "user_href": "/profile/Congyang-Wang"
+                },
+                {
+                    "user_id": "Ashish Behl",
+                    "user_href": "/profile/Ashish-Behl-2"
+                },
+                {
+                    "user_id": "Apurv Verma",
+                    "user_href": "/profile/Apurv-Verma"
+                },
+                {
+                    "user_id": "Priyanshu Pandey",
+                    "user_href": "/profile/Priyanshu-Pandey"
+                },
+                {
+                    "user_id": "Aniket Shah",
+                    "user_href": "/profile/Aniket-Shah-3"
+                },
+                {
+                    "user_id": "Ming Huang",
+                    "user_href": "/profile/Ming-Huang-4"
+                },
+                {
+                    "user_id": "Ayman Shalaby",
+                    "user_href": "/profile/Ayman-Shalaby"
+                },
+                {
+                    "user_id": "Balaji Narayanaswami",
+                    "user_href": "/profile/Balaji-Narayanaswami"
+                },
+                {
+                    "user_id": "Fatih Amasyali",
+                    "user_href": "/profile/Fatih-Amasyali"
+                },
+                {
+                    "user_id": "Pang Yan Han",
+                    "user_href": "/profile/Pang-Yan-Han"
+                },
+                {
+                    "user_id": "Vinh Tran",
+                    "user_href": "/profile/Vinh-Tran-8"
+                },
+                {
+                    "user_id": "Wesley W. Qian",
+                    "user_href": "/profile/Wesley-W-Qian"
+                },
+                {
+                    "user_id": "Sha Chengcen",
+                    "user_href": "/profile/Sha-Chengcen"
+                },
+                {
+                    "user_id": "Aditya Awalkar",
+                    "user_href": "/profile/Aditya-Awalkar"
+                },
+                {
+                    "user_id": "Sharon Pak",
+                    "user_href": "/profile/Sharon-Pak"
+                },
+                {
+                    "user_id": "Kamaljot Dhaliwal",
+                    "user_href": "/profile/Kamaljot-Dhaliwal"
+                },
+                {
+                    "user_id": "Jumana Bahrainwala",
+                    "user_href": "/profile/Jumana-Bahrainwala"
+                },
+                {
+                    "user_id": "Massey Cashore",
+                    "user_href": "/profile/Massey-Cashore"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sumitra Narayanan",
+                "href": "/profile/Sumitra-Narayanan"
+            },
+            "answer_text": "I looked at several resources online to understand reservoir sampling, and being quite the noob at probability, wasn't 100% convinced by the explanations, although some were better than others. I kept thinking about it to see if I could come up with an explanation that made sense to me by breaking it down. I hope this helps: Imagine an infinite stream of data from which we want k representative samples. So, our reservoir size is k data samples/elements. Now, assume the elements come in from the infinite stream, one by one. We can keep putting each of these into the reservoir one by one until we hit the capacity limit on the reservoir. Now our reservoir is full, and the (k+1)th element comes in. Reservoir sampling is a technique where each of the elements coming in from the stream must have an equal probability of being in the reservoir. How do we ensure this? Now that our reservoir is full, we may or may not add this (k+1)th element to the reservoir. The probability that we add it to the reservoir is: The number of ways of choosing k elements from k+1 elements such that the (k+1)th element is in this selected k / The total number of ways of choosing k elements from k+1 elements This is equal to 1 - (The number of ways of choosing k elements from k+1 elements such that the (k+1)th element is not in this selected k / The number of ways of choosing k elements from k+1 elements)  The denominator of the term in the above expression is simply (k+1) choose k, which is (k+1), and the numerator is simply 1, since there is only 1 way to choose k elements from (k+1) elements without including the (k+1)th element. Thus, the probability we add the (k+1)th element to the reservoir is: 1 - (1 / (k+1)) = (k + 1 - 1) / (k+1) = k / (k+1) By similar logic, the probability that we add the (k+2)th element to the reservoir that can hold a maximum of k elements is: k / (k+2) and so on, where the probability of adding the nth element to this reservoir (where n >= (k+1)) is: k / n As 'n' increases more and more, (k / n) gets smaller and smaller for a fixed 'k' (reservoir size). Thus, the larger 'n' is, the smaller (k / n) is. Intuitively: It's clear that as more and more elements keep coming in starting at the (k+1)th element, the probability that any of these n elements (yes, even the ones already in the reservoir*) are selected for the 'chosen' k elements of the reservoir gets lesser and lesser.  This is reservoir sampling.  I'm also a fan of Charles's dating game show explanation for a very real-world example. ;-) * When the nth element comes in (where n >= (k+1)): 'k' elements are selected from among the total 'n' elements, where k of these elements are currently in the reservoir and (n - k) of these elements are not currently in the reservoir. This way, every time a new element comes in, all elements are given an equal chance to be a part of the reservoir regardless of whether they were in the reservoir in the past or not. ",
+            "date": "Answered February 1, 2015",
+            "views": "134",
+            "upvotes": " View 56 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Divyanshu Kumar",
+                    "user_href": "/profile/Divyanshu-Kumar-192"
+                },
+                {
+                    "user_id": "Anirban Bachher",
+                    "user_href": "/profile/Anirban-Bachher"
+                },
+                {
+                    "user_id": "Bhargav Thota",
+                    "user_href": "/profile/Bhargav-Thota-9"
+                },
+                {
+                    "user_id": "MacVincent Agha-Oko",
+                    "user_href": "/profile/MacVincent-Agha-Oko"
+                },
+                {
+                    "user_id": "Kt",
+                    "user_href": "/profile/Kt-472"
+                },
+                {
+                    "user_id": "Xinghua Li",
+                    "user_href": "/profile/Xinghua-Li-11"
+                },
+                {
+                    "user_id": "Bharat Bhushan Reddy",
+                    "user_href": "/profile/Bharat-Bhushan-Reddy"
+                },
+                {
+                    "user_id": "Francesco Grimaldi",
+                    "user_href": "/profile/Francesco-Grimaldi-2"
+                },
+                {
+                    "user_id": "Prakhar Maini",
+                    "user_href": "/profile/Prakhar-Maini-3"
+                },
+                {
+                    "user_id": "Dharmendra Tolani",
+                    "user_href": "/profile/Dharmendra-Tolani"
+                },
+                {
+                    "user_id": "Nilesh Agrawal",
+                    "user_href": "/profile/Nilesh-Agrawal-25"
+                },
+                {
+                    "user_id": "Shivam Arya",
+                    "user_href": "/profile/Shivam-Arya-52"
+                },
+                {
+                    "user_id": "Keerthi Vutla",
+                    "user_href": "/profile/Keerthi-Vutla"
+                },
+                {
+                    "user_id": "Amrut Jadhav",
+                    "user_href": "/profile/Amrut-Jadhav-1"
+                },
+                {
+                    "user_id": "Prabhat Sharma",
+                    "user_href": "/profile/Prabhat-Sharma-122"
+                },
+                {
+                    "user_id": "Rahul Sisondia",
+                    "user_href": "/profile/Rahul-Sisondia"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Aadhi-civil-eng"
+                },
+                {
+                    "user_id": "Prashant Singh",
+                    "user_href": "/profile/Prashant-Singh-1209"
+                },
+                {
+                    "user_id": "Shyam Bhalodia",
+                    "user_href": "/profile/Shyam-Bhalodia"
+                },
+                {
+                    "user_id": "Sai Sudarshan",
+                    "user_href": "/profile/Sai-Sudarshan"
+                },
+                {
+                    "user_id": "Srikanth Babu K",
+                    "user_href": "/profile/Srikanth-Babu-K"
+                },
+                {
+                    "user_id": "Yilun Chen",
+                    "user_href": "/profile/Yilun-Chen-13"
+                },
+                {
+                    "user_id": "Maithreya Samboji",
+                    "user_href": "/profile/Maithreya-Samboji"
+                },
+                {
+                    "user_id": "Paul Zuo",
+                    "user_href": "/profile/Paul-Zuo-1"
+                },
+                {
+                    "user_id": "Rohan Chauhan",
+                    "user_href": "/profile/Rohan-Chauhan-38"
+                },
+                {
+                    "user_id": "Akshesh Doshi",
+                    "user_href": "/profile/Akshesh-Doshi"
+                },
+                {
+                    "user_id": "Sohail Momin",
+                    "user_href": "/profile/Sohail-Momin-12"
+                },
+                {
+                    "user_id": "Anuj Tewari",
+                    "user_href": "/profile/Anuj-Tewari"
+                },
+                {
+                    "user_id": "Alencia Lysander",
+                    "user_href": "/profile/Alencia-Lysander"
+                },
+                {
+                    "user_id": "Muhammad Usman",
+                    "user_href": "/profile/Muhammad-Usman-308"
+                },
+                {
+                    "user_id": "Ayushi Jain",
+                    "user_href": "/profile/Ayushi-Jain-236"
+                },
+                {
+                    "user_id": "Nikhil Katre",
+                    "user_href": "/profile/Nikhil-Katre-1"
+                },
+                {
+                    "user_id": "Ajay Shaan",
+                    "user_href": "/profile/Ajay-Shaan-2"
+                },
+                {
+                    "user_id": "Anil Singh",
+                    "user_href": "/profile/Anil-Singh"
+                },
+                {
+                    "user_id": "Pranshu Pancholi",
+                    "user_href": "/profile/Pranshu-Pancholi"
+                },
+                {
+                    "user_id": "Omkar Joshi",
+                    "user_href": "/profile/Omkar-Joshi-2"
+                },
+                {
+                    "user_id": "Sohinee Basak",
+                    "user_href": "/profile/Sohinee-Basak"
+                },
+                {
+                    "user_id": "Seema Mudgil",
+                    "user_href": "/profile/Seema-Mudgil-1"
+                },
+                {
+                    "user_id": "Koo Zhengqun",
+                    "user_href": "/profile/Koo-Zhengqun"
+                },
+                {
+                    "user_id": "Jodi Spring",
+                    "user_href": "/profile/Jodi-Spring"
+                },
+                {
+                    "user_id": "Namratha Bhat",
+                    "user_href": "/profile/Namratha-Bhat-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Shawnee-N"
+                },
+                {
+                    "user_id": "Vinh Tran",
+                    "user_href": "/profile/Vinh-Tran-8"
+                },
+                {
+                    "user_id": "Santosh Pandey",
+                    "user_href": "/profile/Santosh-Pandey-2"
+                },
+                {
+                    "user_id": "Alejandro Cassis",
+                    "user_href": "/profile/Alejandro-Cassis"
+                },
+                {
+                    "user_id": "Melody Yin",
+                    "user_href": "/profile/Melody-Yin-5"
+                },
+                {
+                    "user_id": "Gourab Nath",
+                    "user_href": "/profile/Gourab-Nath"
+                },
+                {
+                    "user_id": "Harsh Ramchandani",
+                    "user_href": "/profile/Harsh-Ramchandani"
+                },
+                {
+                    "user_id": "Dong Won Ahn",
+                    "user_href": "/profile/Dong-Won-Ahn"
+                },
+                {
+                    "user_id": "Gaurav Pathak",
+                    "user_href": "/profile/Gaurav-Pathak-18"
+                },
+                {
+                    "user_id": "Alagunarayanan Narayanan",
+                    "user_href": "/profile/Alagunarayanan-Narayanan"
+                },
+                {
+                    "user_id": "Preeti Lahoti",
+                    "user_href": "/profile/Preeti-Lahoti"
+                },
+                {
+                    "user_id": "Sandeep Reddy Goli",
+                    "user_href": "/profile/Sandeep-Reddy-Goli"
+                },
+                {
+                    "user_id": "Santoshkalyan (Tosh) Rayadhurgam",
+                    "user_href": "/profile/Santoshkalyan-Tosh-Rayadhurgam"
+                },
+                {
+                    "user_id": "Hari Narayanan",
+                    "user_href": "/profile/Hari-Narayanan-8"
+                },
+                {
+                    "user_id": "Rogers Jeffrey L",
+                    "user_href": "/profile/Rogers-Jeffrey-L"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Skomoroch",
+                "href": "/profile/Peter-Skomoroch"
+            },
+            "answer_text": "Python and Perl code here: http://data-analytics-tools.blogspot.com/2009/09/reservoir-sampling-algorithm-in-perl.html ",
+            "date": "Answered January 20, 2010",
+            "views": "87",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shane McGrath",
+                    "user_href": "/profile/Shane-McGrath-2"
+                },
+                {
+                    "user_id": "Joseb Yoseb Yi",
+                    "user_href": "/profile/Joseb-Yoseb-Yi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Utkarsh Gupta",
+                "href": "/profile/Utkarsh-Gupta-35"
+            },
+            "answer_text": "A great intuitive explanation is already shared by Charles Yang Zheng below. For mathematical explanation, Please go through this link. It should surely help you in understanding Reservoir sampling better. Brief explanation for Reservoir Sampling ",
+            "date": "Answered December 8, 2018",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

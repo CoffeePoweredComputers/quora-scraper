@@ -1,0 +1,116 @@
+{
+    "title": "What is Unix and Linux? Are they co-related? - Quora",
+    "tags": [
+        "Linux Unix",
+        "Unix History",
+        "Unix Commands",
+        "Unix",
+        "Linux"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steve Baker",
+                "href": "/profile/Steve-Baker-100"
+            },
+            "answer_text": "So \u201cUnix\u201d was a relatively simple - but very clever - operating system from Bell Laboratories in 1969 (the name comes from it\u2019s relation to \u201cMultics\u201d - but the name has no special significance). Unix was enormously popular on the DEC PDP-11 series computers that were by far the most common computers on the planet before the rise of the microprocessor\u2026so LOTS of people who used computers in the 1970\u2019s know Unix. Bell Labs were legally prevented from selling computer software - so they let people use Unix for free - and the folks at Berkeley added much to it and produced their own version (called \u201cBSD Unix\u201d). When the PC appeared, there were a couple of efforts to make a version of Unix for the PC. A Comp.Sci professor called Andrew Tannenbaum built a version called MINIX that worked quite well, using a somewhat unusual kernel architecture called a \u201cmicrokernel\u201d. It was also ported to the AtariST home computer (I used it on both my ST and my first PC)\u2026but the licensing arrangements were a pain and further development of MINIX was stifled because of that. Linux was written by a guy named Linus Torvalds in 1991. He didn\u2019t set out to write a clone of Unix - he just wanted a little stand-alone program to let him connect to a remote computer by modem. The little program grew until he realised that by replicating most of the C standard library - he was close to having a working clone of Unix. As he gradually turned it into an operating system - he released it so other people could play with it. At that point, it didn\u2019t have a name. Some people called it \u201cLinus\u2019 Unix\u201d - which was soon compressed down to \u201cLinUx\u201d - then \u201cLinux\u201d. Although Torvalds knew about MINIX (and used it\u2019s file system to get started) - he was only writing this for his own interest - so he built a \u201cconventional\u201d operating system kernel without following Tannenbaums\u2019 work. The Linux Kernel started out being a very close clone of Unix - although without using any original Unix source code. Since then, Linux has grown and Unix has faded - and divergences are appearing. MINIX and Linux were (briefly) rivals - and hot debate about microkernels versus conventional kernels was kicked around in the community - but Linux gave his software away under a VERY liberal license - and that got him a lot of eyes. One of other the things that made Linux become so rapidly useful and popular was that it was sufficiently close to Unix to allow all of the \u201cGNU\u201d software (written for Unix) to run more or less without change. (GNU stands for \u201cGNU\u2019s Not Unix\u201d - and it\u2019s not \u201cUnix\u201d - it\u2019s a set of tools that run under Unix). The GNU folks had set about re-writing every Unix support program and tool imaginable from the ground up so that it could be released without being encumbered by either Bell Labs or Berkeley licensing rules. That code includes shell programs, compilers, all of the little support tools you need to have a useful computer. Pretty soon after, the X11 windowing system was supported - so then Linux had a graphical interface like MS Windows or Apple\u2019s IOS. So some people call Linux \u201cGNU-Linux\u201d because any reasonable Linux distribution contains a mountain of GNU software\u2026but most just say \u201cLinux\u201d. Subsequent work has now made Linux by far the most commonly used operating system on the planet. Most Internet servers use it - all Android phones are running Linux \u201cunder the hood\u201d - so are all Chrome OS computers - many TV sets have Linux running behind the scenes! Computers like the BeagleBone and the Raspberry Pi allow you to run Linux on a computer costing less than $30 and about the size of a credit card. Many people run Linux at home (I\u2019m typing on a Linux computer right now!) But all of this enormous success rests on the shoulders of the Unix operating system - of which Linux is a clone. Unix itself (in the \u201cBSD Unix\u201d flavor) now runs on Mac computers - so MacOS is really a variant of BSD Unix. Everyone thinks of MS Windows as being the biggest player in the operating system market - but it\u2019s really a drop in the bucket compared to BSD Unix and Linux. ",
+            "date": "Answered May 24, 2017",
+            "views": "177",
+            "upvotes": " View 157 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Israr Sayed",
+                    "user_href": "/profile/Israr-Sayed-1"
+                },
+                {
+                    "user_id": "Bill Flewelling",
+                    "user_href": "/profile/Bill-Flewelling"
+                },
+                {
+                    "user_id": "Ajay Singh",
+                    "user_href": "/profile/Ajay-Singh-1599"
+                },
+                {
+                    "user_id": "John Marshall",
+                    "user_href": "/profile/John-Marshall-459"
+                },
+                {
+                    "user_id": "Gavin Tabor",
+                    "user_href": "/profile/Gavin-Tabor"
+                },
+                {
+                    "user_id": "Andrew Walker",
+                    "user_href": "/profile/Andrew-Walker-291"
+                },
+                {
+                    "user_id": "Tim Ward",
+                    "user_href": "/profile/Tim-Ward-15"
+                },
+                {
+                    "user_id": "Priy Raghav(\u092a\u094d\u0930\u093f\u092f\u0935\u094d\u0930\u0924 \u0930\u093e\u0918\u0935)",
+                    "user_href": "/profile/Priy-Raghav-\u092a\u094d\u0930\u093f\u092f\u0935\u094d\u0930\u0924-\u0930\u093e\u0918\u0935"
+                },
+                {
+                    "user_id": "Kaustubh Gupta",
+                    "user_href": "/profile/Kaustubh-Gupta-17"
+                },
+                {
+                    "user_id": "Tabish Sarwar",
+                    "user_href": "/profile/Tabish-Sarwar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Phillip Remaker",
+                "href": "/profile/Phillip-Remaker"
+            },
+            "answer_text": "Unix \u201cis a family of multitasking, multiuser computer operating systems that derive from the original AT&T Unix, developed starting in the 1970s at the Bell Labs research center by Ken Thompson, Dennis Ritchie, and others.\u201d UNIX a registered trademark of The Open Group, referring to a specific subset of these operating systems. To prevent confusion, the complete, non-trademarked family of operating systems derived from or inspired by the original Unix OS will sometimes be called \u201cUnix-like\u201d or \u201c*nix\u201d Linux is one of the Unix-like operating systems in the *nix family. The kernel was developed from scratch by Linus Torvalds under a free and open-source license, unpolluted by any copyright claims of other Unix-like systems. The complete system would properly be called \u201cGNU/Linux,\u201d though almost everyone just calls it \u201cLinux.\u201d (What is the relation between GNU and Linux?) It\u2019s one big, happy family. Well, it\u2019s a big family, at least.  ",
+            "date": "Answered May 24, 2017",
+            "views": "3",
+            "upvotes": " View 41 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Thapelo Chuene",
+                    "user_href": "/profile/Thapelo-Chuene"
+                },
+                {
+                    "user_id": "Chang Liu",
+                    "user_href": "/profile/Chang-Liu-362"
+                },
+                {
+                    "user_id": "Vivek Raj",
+                    "user_href": "/profile/Vivek-Raj-101"
+                },
+                {
+                    "user_id": "Peter Long",
+                    "user_href": "/profile/Peter-Long"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                },
+                {
+                    "user_id": "Surya Teja Parnampedu",
+                    "user_href": "/profile/Surya-Teja-Parnampedu"
+                },
+                {
+                    "user_id": "Satish",
+                    "user_href": "/profile/Satish-671"
+                },
+                {
+                    "user_id": "\u0100de\u015b Candra",
+                    "user_href": "/profile/\u0100de\u015b-Candra"
+                },
+                {
+                    "user_id": "Pratik Chowdhury",
+                    "user_href": "/profile/Pratik-Chowdhury-14"
+                },
+                {
+                    "user_id": "Akshay Pai Raikar",
+                    "user_href": "/profile/Akshay-Pai-Raikar"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,50 @@
+{
+    "title": "How does the if statement work in Excel? - Quora",
+    "tags": [
+        "Excel Formulas",
+        "Excel Tricks",
+        "Microsoft Excel Spreadsheets",
+        "Spreadsheets",
+        "Microsoft Excel",
+        "Microsoft Office",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Thomas Williams",
+                "href": "/profile/Thomas-Williams-959"
+            },
+            "answer_text": "The IF function can perform a logical test and return one value for a TRUE result, and another for a FALSE result. For example, to \"pass\" scores above 70: =IF(A1>70,\"Pass\",\"Fail\"). More than one condition can be tested by nesting IF functions. The IF function can be combined with logical functions like AND and OR. Purpose Test for a specific condition Return value The values you supply for TRUE or FALSE Syntax =IF (logical_test, [value_if_true], [value_if_false]) Arguments logical_test - A value or logical expression that can be evaluated as TRUE or FALSE.value_if_true - [optional] The value to return when logical_test evaluates to TRUE.value_if_false - [optional] The value to return when logical_test evaluates to FALSE.Usage notes Use the IF function to test for or evaluate certain conditions, and then react differently depending on whether the test was TRUE or FALSE. In the example shown, we want to assign either \"Pass\" or \"Fail\" based on a test score. A passing score is 70 or higher. The formula in D6, copied down, is: =IF(C6>=70,\"Pass\",\"Fail\")\u00a0Translation: If the value in C6 is greater than or equal to 70, return \"Pass\". Otherwise, return \"Fail\". The logical flow this formula can be reversed. The formula below returns the same result: =IF(C6<70,\"Fail\",\"Pass\")\u00a0Translation: If the value in C6 is less than 70, return \"Fail\". Otherwise, return \"Pass\". Both formulas above, when copied down, will return correct results. Nested IF statements The IF function can be \"nested\". A \"nested IF\" refers to a formula where at least one IF function is nested inside another in order to test for more conditions and return more possible results. Each IF statement needs to be carefully \"nested\" inside another so that the logic is correct. For example, the following formula can be used to assign an grade rather than a pass / fail result: =IF(C6<70,\"F\",IF(C6<75,\"D\",IF(C6<85,\"C\",IF(C6<95,\"B\",\"A\"))))\u00a0Up to 64 IF functions can be nested. However, in general, you should consider other functions, like VLOOKUP or HLOOKUP for more complex scenarios, because they can handle more conditions in much more streamlined fashion. IF with AND, OR The IF function can be combined with the AND function and the OR function. For example, to return \"OK\" when A1 is between 7 and 10, you can use use a formula like this: =IF(AND(A1>7,A1<10),\"OK\",\"\")\u00a0Translation: if A1 is greater than 7 and less than 10, return \"OK\". Otherwise, return nothing (\"\"). To return B1+10 when A1 is \"red\" or \"blue\" you can use the OR function like this: =IF(OR(A1=\"red\",A1=\"blue\"),B1+10,B1)\u00a0Translation: if A1 is red or blue, return B1+10, otherwise return B1. ",
+            "date": "Answered March 2, 2020",
+            "views": "41",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Isa Bel",
+                    "user_href": "/profile/Isa-Bel-90"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ralph Planthold",
+                "href": "/profile/Ralph-Planthold"
+            },
+            "answer_text": "An IF statement can have one of two possible results. The first result is if your comparison is True, the second if your comparison is False. For example, if cell B2 contains: =IF(C2=\u201dYes\u201d,1,2), this says: IF cell C2 contains Yes, then return (display) a 1 in cell B2, otherwise return (display) a 2 in cell B2). ",
+            "date": "Answered February 28, 2020",
+            "views": "21",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael Lewis",
+                    "user_href": "/profile/Michael-Lewis-361"
+                },
+                {
+                    "user_id": "Isa Bel",
+                    "user_href": "/profile/Isa-Bel-90"
+                }
+            ]
+        }
+    ]
+}

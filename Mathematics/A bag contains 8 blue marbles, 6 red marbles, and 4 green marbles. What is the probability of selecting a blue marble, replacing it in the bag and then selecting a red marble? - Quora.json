@@ -1,0 +1,41 @@
+{
+    "title": "A bag contains 8 blue marbles, 6 red marbles, and 4 green marbles. What is the probability of selecting a blue marble, replacing it in the bag and then selecting a red marble? - Quora",
+    "tags": [
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Henry Schaffer",
+                "href": "/profile/Henry-Schaffer"
+            },
+            "answer_text": "Back to basics - to get the probability of several independent events, multiply the individual probabilities. Here we have two independent events, so find the probability of each and multiply them. To get the probability of several mutually exclusive events, add the individual probabilities. Here we have 8 blue marbles in a bag of 18. Imagine that each has a number on it. Selecting blue-1 has a probability of 1/18. (Why? Because there are 18 different marbles which could be selected - with equal probabilities - and because those are 18 mutually exclusive events, the 18 probabilities add to 1.) Selecting blue-2 also has a proabability of 1/18, ditto for blue-3, \u2026, blue-8. Add those up to get the probability of selecting a blue (any blue). Then do the same for red. Multiply the two probabilities - and that\u2019s what was requested. The arithmetic is left for the interested reader. ",
+            "date": "Answered September 30, 2019",
+            "views": "16",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Simple Gaming",
+                    "user_href": "/profile/Simple-Gaming-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Marilley",
+                "href": "/profile/David-Marilley"
+            },
+            "answer_text": "You have 8+6+4 = 18 marbles, each assumed to have a 1/18 probability of being drawn. There are 8\u00d76 = 48 ways of drawing blue, then red, so P = (8\u00d76)/(18\u00d718) = (4\u00d73)/(9\u00d79) = 4/(3\u00d79) = 4/27 = 0.148148148\u2026., or just under 15%. Given that you have BB, RR, GG, BR, RB, BG, GB, RG, GR, it makes sense to look at 16/81, 9/81, 4/81, 12/81, 12/81, 8/81, 8/81, 6/81, 6/81. These do indeed add up to 81/81 and answer each pair of draws with replacement. ",
+            "date": "Answered September 30, 2019",
+            "views": "25",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Simple Gaming",
+                    "user_href": "/profile/Simple-Gaming-6"
+                }
+            ]
+        }
+    ]
+}

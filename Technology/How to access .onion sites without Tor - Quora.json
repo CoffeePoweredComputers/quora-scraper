@@ -1,0 +1,63 @@
+{
+    "title": "How to access .onion sites without Tor - Quora",
+    "tags": [
+        ".onion",
+        "Tor (The Onion Router)",
+        "Internet Security",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Katie Donovan",
+                "href": "/profile/Katie-Donovan-22"
+            },
+            "answer_text": "I really would not recommend doing that. For one thing, the only way not using your own stuff is to use third-party sites which allow you to interact with their computers, which are, of course, running ToR. See, the short answer is there is no way to access an .onion site without someone along the way using ToR. Even if you are just using a remote browser session to do so. See, .onion addresses are not \u201csites,\u201d they are addresses. The same way \u201c2222 Sycamore Ln.\u201d is not a house; it is an address. You must access a ToR site using an .onion address, but the site itself can be\u2026.whatever. You can reach sites in the clear from an .onion node. Of course, by doing so you are potentially exposing your traffic to the top web, which entirely negates any benefit of anonymity. The best way I can think of to access an .onion address without having ToR traffic show up on your network is to set up a service like RealVNC on a computer somewhere and then use the RealVNC client to remote into that machine with a full desktop session, start the ToR browser on that machine, and do your thing. ",
+            "date": "Answered August 11, 2019",
+            "views": "116",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sueli Oliveira de Jesus",
+                    "user_href": "/profile/Sueli-Oliveira-de-Jesus"
+                },
+                {
+                    "user_id": "Osman Ongun",
+                    "user_href": "/profile/Osman-Ongun"
+                },
+                {
+                    "user_id": "Jeremy Godal",
+                    "user_href": "/profile/Jeremy-Godal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Pudalov",
+                "href": "/profile/Eric-Pudalov"
+            },
+            "answer_text": "As Brandon Rivera said above, there are several ways. If you mean doing it without the Tor Browser, I have to warn you that you aren\u2019t anonymous in that case, and that defeats the whole purpose. There is something called a Tor2Web proxy, which allows you to access .onion sites without the Tor Browser. If you take an onion address, such as http://facebookcorewwwi.onion, and add \u201c.gq,\u201d \u201c.to,\u201d or \u201c.link\u201d to the end of it, that will sometimes take you there via the proxy (but it doesn\u2019t work for all sites).  I realize that some of the people asking about this want it for the convenience factor, but not only are you not anonymous, in some cases you can get malware from the proxy (if the operator is malicious). Personally, I think it\u2019s better to just download the browser, even if it is a bit slow (that\u2019s the tradeoff for anonymity). Also, as Sam Craddock said above, you can access onion sites from your mobile device with apps like Orbot and Orfox. Orbot is a proxy app that connects you to Tor, while Orfox is the Android version of the browser. Orbot seemed slightly faster to me than the desktop version of Tor, but that might be my imagination.  If you choose to do it this way, good luck! ",
+            "date": "Answered May 25, 2018",
+            "views": "163",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Subhadeep Paul",
+                    "user_href": "/profile/Subhadeep-Paul-31"
+                },
+                {
+                    "user_id": "Solomon Ucko",
+                    "user_href": "/profile/Solomon-Ucko-1"
+                },
+                {
+                    "user_id": "Dan Francis",
+                    "user_href": "/profile/Dan-Francis-38"
+                },
+                {
+                    "user_id": "Tom Peracchio",
+                    "user_href": "/profile/Tom-Peracchio"
+                }
+            ]
+        }
+    ]
+}

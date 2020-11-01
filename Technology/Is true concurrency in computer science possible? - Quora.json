@@ -1,0 +1,85 @@
+{
+    "title": "Is true concurrency in computer science possible? - Quora",
+    "tags": [
+        "Multicore Programming",
+        "Multi-core Processor",
+        "Central Processing Units",
+        "Processors",
+        "Computer Science",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Greg Pfister",
+                "href": "/profile/Greg-Pfister"
+            },
+            "answer_text": "This depends on what you mean by \"true concurrency\" and \"running.\" (It also kind of smells like a homework problem, but anyway...) First, without poking at the definitions, multicore processors clearly do provide \"true concurrency\" by any reasonable definition of the term. So do collections of completely separate computers, as used in, e.g., MapReduce, Supercomputers, and most Cloud computing. Now let's poke. Suppose a program issues an instruction that produces a cache miss. The program is now waiting for the result. Is the program still running? Ummm... Could be either, depending on your definition: Yes, it's just suspended for a bit; No, because, well, it's suspended.  If you picked \"Yes,\" then while it's suspended and the processor is doing nothing but waiting, it may be possible to sneak in some instructions from another program or thread of the same program. This is hardware multithreading (Multithreading (computer architecture)). It's \"kind of\" concurrency, since it depends on your definition. Is it \"true\" concurrency? Again, depends. But: Suppose there are some instructions following that cache miss that do not depend on the result coming back from memory? The processor could sneak those in while the program's suspended, if it's designed to do that. This is a form of \"true concurrency\" by anybody's definition - concurrency of the program with itself. It's a variety of what's called Instruction-level parallelism, a term which also includes pipelining instruction execution (Pipeline (computing)), where many instructions can be simultaneously executing. Is concurrent execution of the program with itself that \"true concurrency\"? It really depends on what the person asking means. Going back to the suspended instruction - Along the same lines, what if the program issues some I/O operation that, for example, initiates reading something from disk. It's just going to sit there, again suspended, for milliseconds (a.k.a., \"forever\" in CPU terms). Once again, is it running, or not? It's the same problem. Clearly while it's waiting that long you can switch to doing something else, and return when the I/O is done. This actually is the original form of concurrency, and has been used since the 1960s (at least). But that latter form, overlapping computing with I/O, is probably what the word \"true\" in \"true concurrency\" was intended to rule out. (In my experience, that's what people intend when they say \"true\" concurrency.) So it probably doesn't count. Hardware multithreading, though... It's a halfway point, I'd say, between I/O overlap and multiple CPUs being involved. So I wouldn't know whether to count it in, or out, of cases of \"true concurrency.\" Likewise, instruction-level parallelism is a grey area requiring \"true concurrency\" to be more completely specified. ",
+            "date": "Answered February 9, 2015",
+            "views": "465",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Archana Kumari",
+                    "user_href": "/profile/Archana-Kumari-45"
+                },
+                {
+                    "user_id": "Sylvain Genev\u00e8s",
+                    "user_href": "/profile/Sylvain-Genev\u00e8s"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Li",
+                "href": "/profile/Tony-Li-19"
+            },
+            "answer_text": "You are confusing concurrency with parallelism. See Tony Li's answer to What is the difference between concurrency and parallelism? Yes, you need multiple cores or multiple execution units (e.g. vectorized, VLIW) to achieve true parallelism. Concurrency just require pre-emption. ",
+            "date": "Answered October 7, 2015",
+            "views": "914",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Noah Stebbins",
+                    "user_href": "/profile/Noah-Stebbins"
+                },
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten"
+                },
+                {
+                    "user_id": "Saurabh Srivastav",
+                    "user_href": "/profile/Saurabh-Srivastav-1"
+                },
+                {
+                    "user_id": "Eldar Kersebaum",
+                    "user_href": "/profile/Eldar-Kersebaum"
+                },
+                {
+                    "user_id": "Giumo X. Clanjor",
+                    "user_href": "/profile/Giumo-X-Clanjor"
+                },
+                {
+                    "user_id": "John McClenny",
+                    "user_href": "/profile/John-McClenny"
+                },
+                {
+                    "user_id": "Anirban Ghoshal",
+                    "user_href": "/profile/Anirban-Ghoshal-1"
+                },
+                {
+                    "user_id": "Mark Rawls",
+                    "user_href": "/profile/Mark-Rawls"
+                },
+                {
+                    "user_id": "Erik Fair",
+                    "user_href": "/profile/Erik-Fair"
+                },
+                {
+                    "user_id": "Kelly Kinkade",
+                    "user_href": "/profile/Kelly-Kinkade-1"
+                }
+            ]
+        }
+    ]
+}

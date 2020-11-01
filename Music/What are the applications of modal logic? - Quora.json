@@ -1,0 +1,78 @@
+{
+    "title": "What are the applications of modal logic? - Quora",
+    "tags": [
+        "Modal Logic",
+        "Logic (mathematics)",
+        "Logic (philosophy)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tikhon Jelvis",
+                "href": "/profile/Tikhon-Jelvis"
+            },
+            "answer_text": "Temporal logic, a particular kind of modal logic, gets used in computer science in a few surprisingly different places: robotics, formal verification and even semantics. In general, temporal logic happens to be useful when dealing with reactive systems. Temporal logic has two modalities: \u25a1 and \u25c7. \u25a1\u03c6 means \"\u03c6 always holds\" and \u25c7\u03c6 means \"\u03c6 will eventually hold\". They have the usual relationship for modal logic: \u25a1\u03c6 \u21d4 \u00ac\u25c7\u00ac\u03c6 and \u25c7\u03c6 \u21d4 \u00ac\u25a1\u00ac\u03c6. Sometimes temporal logic is extended with a few additional operators like \u2218 for \"next\" and \u25b9 for \"then\" (x\u25b9y means \"x will be true then y will be true\"). In formal verification, temporal logic can be used to state invariants about code\u2014especially useful for distributed systems. For example, you can easily represent safety (\"nothing bad will happen\") and liveness (\"something good will happen eventually\") properties using temporal logic. A safety property would look like \u25a1\u00ac\u03c6 where \u03c6 is \"something bad\"; a liveness property would be \u25c7\u03c6 where \u03c6 is \"something good\". Your program can then be verified against temporal specifications using a model-checker like Spin. Robotics inherited the use of temporal logic from formal verification of concurrent systems. In robotics, we can use temporal logic to specify requirements about a robot's plan. For example, we could specify avoiding obstacles as: [math]\\lnot(o_1 \\lor o_2 \\lor \\ldots \\lor o_n) \\triangleright \\pi)[/math]. Here the robot's goal is \u03c0; this statement says it has to avoid all obstacles o until it reaches \u03c0. Another example is sequencing goals: [math]\\Diamond(\\pi_1 \\land \\Diamond(\\pi_2 \\land \\Diamond \\pi_3))[/math]; this ensures that the robot first visits \u03c0\u2081 then \u03c0\u2082 then \u03c0\u2083 in that order. These properties can also be verified using tools like Spin. For more detail, take a look at this overview from UPenn's Grasp lab: http://repository.upenn.edu/cgi/viewcontent.cgi?article=1064&context=grasp_papers A slightly different use for temporal logic is in giving semantics to functional reactive programming. Functional reactive programming presents the programmer with two \"primitive\" data types: event streams and behaviors. A stream represents discrete events like keypresses; you could model a keyboard as a Event Char which would give you a character each time somebody pressed a key. A behavior represents a value that always exists but can change continually over time; this is good for things like the position of the cursor, which would be a Behavior (Int, Int). For a more detailed introduction, look at: What is Functional Reactive Programming? Following Curry-Howard, FRP events and behaviors correspond to temporal logic. In particular, events are \u25c7 and behaviors are \u25a1. This is useful for reasoning about functional reactive programs, and is also used to define dependent types for FRP. The basic idea is simple: first, we express \u25a1 and \u25c7 using time explicitly:[math] \\begin{align} \\square x &\\equiv \\forall t' \\in [t, \\infty). x_{t'}\\\\ \\diamond x &\\equiv \\exists t' \\in [t, \\infty). x_{t'} \\end{align}[/math]Here [math][t, \\infty)[/math] is the domain of time, which can be any totally ordered set and is usually continuous. The trick is that \u25c7 and \u25a1 now have a \"starting time\" [math]t[/math], which we will use in our types to make sure we only ever combine compatible streams and behaviors. Given this idea, we can easily transcribe it to dependent types:[math] \\begin{align} \\text{behavior}\\ \\alpha &\\equiv \\Pi t' : \\mathbf{time}. \\alpha_{t'} \\\\ \\text{stream}\\ \\alpha &\\equiv \\Sigma t' : \\mathbf{time}. \\alpha_{t'} \\\\ \\end{align}[/math] This allows us to enforce \"start time consistency\" using our type system, which just makes sure that all reactive values are valid at the time that they're used as events and behaviors may have different start times. So: temporal logic is used for formal verification, concurrent systems, robotics and even types for functional reactive programming. I'm sure there's more stuff yet that I missed. ",
+            "date": "Answered February 17, 2014",
+            "views": "22",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "David S\u00e1nchez",
+                    "user_href": "/profile/David-S\u00e1nchez-20"
+                },
+                {
+                    "user_id": "David Barrett",
+                    "user_href": "/profile/David-Barrett-14"
+                },
+                {
+                    "user_id": "Steven Yang",
+                    "user_href": "/profile/Steven-Yang-153"
+                },
+                {
+                    "user_id": "Nenad Golubovi\u0107",
+                    "user_href": "/profile/Nenad-Golubovi\u0107"
+                },
+                {
+                    "user_id": "Hari K Raghavan",
+                    "user_href": "/profile/Hari-K-Raghavan"
+                },
+                {
+                    "user_id": "Bent Rasmussen",
+                    "user_href": "/profile/Bent-Rasmussen-1"
+                },
+                {
+                    "user_id": "Mincho Krastev",
+                    "user_href": "/profile/Mincho-Krastev"
+                },
+                {
+                    "user_id": "Jens Oliver Gutsfeld",
+                    "user_href": "/profile/Jens-Oliver-Gutsfeld"
+                },
+                {
+                    "user_id": "Fabi\u00e1n Heredia Montiel",
+                    "user_href": "/profile/Fabi\u00e1n-Heredia-Montiel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dmitry Archangelsky",
+                "href": "/profile/Dmitry-Archangelsky-1"
+            },
+            "answer_text": "There is a set of modal logics, which can describe binary relations and therefore can be used to describe a and learn properties of systems with binary relations. Unlike a conventional modal logic with a Kripke semantics describing a single relation those logic may describe multiple relations by using a special notation. Instead of the modality operation \u25a1 here we have a modality operation [R], where the symbol R denotes some relation in corresponding models. Some logic instead of abstract relational symbols use special ones e.g. [<=] with specific properties expressed by corresponding axioms. For example a reflexivity of a relation R can be expressed by the axiom schema |- [R]A -> A. A transitivity of a relation R can be expressed by the axiom schema |- [R]A -> [R][R]A. Of course relations can be well described by a First Order Logic using predicates. For binary relations only dyadic predicates would be sufficient. However even such a subset of the First Order Logic is unsolvable. That is there is no algorithm to detect whether a given formula is valid (or if a given formula is a theorem).Using the above approach one can build complete resolvable logics. ",
+            "date": "Answered December 5, 2019",
+            "views": "131",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jacob Ningen",
+                    "user_href": "/profile/Jacob-Ningen"
+                }
+            ]
+        }
+    ]
+}

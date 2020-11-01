@@ -1,0 +1,35 @@
+{
+    "title": "What is the usual range for a cellphone to a cell tower in a city environment? - Quora",
+    "tags": [
+        "Cell Towers",
+        "Cellular Service Providers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alistair Urie",
+                "href": "/profile/Alistair-Urie"
+            },
+            "answer_text": "Mobile phones ate normal capable of transmitting over a reasonable distance (at least 15 km but up to 100 km is possible) in rural areas but things are more complex in a city environment. Firstly we have a coverage limit that depends a lot on the mobile base station tower height and the surrounding buildings. In a nice open suburban environment the link will function over a few km while in downtown areas even 500 m is a long way. Secondly mobile networks don't actually want phones to transmit very far in cities because they interfer with other users. For this reason the networks normally commands to phones to reduce power and deliberately place base station antenna on roof tops instead of high towers and point the antenna downwards to limit the range. Net effect is that modern systems could actually operate over a reasonable long range but we limit it to ensure that spectrum may be re-used multiple times in less than 1 km. ",
+            "date": "Answered June 11, 2018",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mark Allen",
+                    "user_href": "/profile/Mark-Allen-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amit Sharma",
+                "href": "/profile/Amit-Sharma-895"
+            },
+            "answer_text": "Remember that cellphone and BTS communication is full/half duplex. So both have to be transmitter and receivers at the same time or at different times, but they have to. Also that phone runs on small battery and has limits on maximum power it can radiate due to SAR limits. BTS on the other hand can develop more power but cannot increase range in duplex communication as phone has to also answer back. Phone has a 0dB antenna as it could receive signals from any direction. BTS on other hand has a directional antenna with a special pattern which covers say 120 degree in azimuth/horizontal plane and say 15 degree in vertical plane and has a gain of say 15dB. This is beneficial as it increases BTS transmission power as well as receive sensitivity. At the cellphone frequencies and bandwidths we are looking at -120dBm of sensitivity of phone receiver and similar for BTS. Now realize that buildings and urban canyons can result in path loss variable from 20 to 100dB. Our link budget is 165dB (1W=30dBm + 120dBm sensitivity+15dB antenna gain we talked about) at voice calls. For HD Video download this link would be lesser. So because of variability of building shadows it\u2019s no single answer. But range is from say 100m in dense urban jungles or basements to >5km in clear Line of sight conditions. ",
+            "date": "Answered February 11, 2018",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

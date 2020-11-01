@@ -1,0 +1,71 @@
+{
+    "title": "What is a bayesian model? - Quora",
+    "tags": [
+        "Bayesian Nonparametrics",
+        "Bayesian Inference"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Freddie Kalaitzis",
+                "href": "/profile/Freddie-Kalaitzis"
+            },
+            "answer_text": "Perhaps in a year or two, Bayesian modeling will be to Probabilistic Programming what Neural Networks were to Deep Learning. The same, but rebranded to clarify the mission. Once you look at Bayesian models as probabilistic computer code, then it\u2019s suddenly clear why they\u2019re so ubiquitous but also why they are so hard to scale to larger problems (in fact, NP-hard[1] but that\u2019s beyond the topic of this question). Remember Logo? Think of any computer program that you\u2019ve written in terms of a sequence of Logo instructions. For instance:  The Logo environment is exact: your inputs, commands and respective arguments are specific, and known to the environment.deterministic: the same sequence always yields the same output.observed: we can see the output without fail or compromise.understood: we have all the info we need to reach the desired output in a finite amount of steps.(Disclaimer: I\u2019ve pulled these out of my posterior, and not from the literature. But they\u2019re sensible in my humble opinion.) The above criteria are satisfied mainly because the channel / interface between us and the environment (machine) is noiseless. It\u2019s designed and engineered to be completely understood by the user. The I/O interface is a perfect medium for man and machine (environment) to do work. Thankfully(!) the reality is more interesting and none of the above criteria apply to real-world complex environments. The channels between us and such an environment are noisy. This induces an intrinsic uncertainty to our work that no amount of precision can mitigate (we don\u2019t know what we can\u2019t know). The channel is also complex enough that increasing our precision requires an energy that outweighs the benefit of our work. This is epistemic uncertainty (we don\u2019t know what we can\u2019t afford to know). Centuries ago we bit the bullet and decided to work with all available information in the face of uncertainty. Thomas Bayes [2]discovered - with one of the highest significance-to-simplicity ratios of all time - a way to take the [math]P(o|h)[/math]: probability of an observation of the output being generated from an environment\u2019s true hidden state (e.g. [math]P([/math]getting sixes [math]|[/math] loaded dice[math])[/math]), combined with[math]P(h)[/math]: the conjectured likelihood of the hidden state (e.g. [math]P([/math]loaded dice[math])[/math])and invert it into the [math]P(h|o)[/math]: probability of the true hidden state, in light of an observation about the output (e.g. [math]P([/math]loaded dice [math]|[/math] getting sixes[math])[/math]).Bayes kickstarted a kind of calculus that enabled the systematic usage of knowledge, as encoded by [math]P(h),[/math] combined with new observations and the know of how those are generated, encoded by [math]P(o|h)[/math], and convert it an updated knowledge [math]P(h|o)[/math]. All encoded in terms of probability distributions. You might say that this protocol formalizes the entirely of scientific endeavour, and you\u2019d be in good company[3]. Back to the Logo example, the properties of exactness, determinism, observation and understanding are satisfied because the user-environment interface is noiseless and simple, so in a way all relevant probabilities are either [math]1[/math] or [math]0[/math]. Once you introduce some noise or cannot afford to fully understand the environment, everything is True (or false) with a probability less than [math]1[/math]. Bayes\u2019 theorem is the principled way of navigating around that noisy-complex environment, starting by postulating prior beliefs about logical statements (e.g. \u201cthe forward command will run correctly with probability [math]0.89[/math]\u201d or \u201cright 50 will rotate right with an angle distributed as a standard-normal centered on [math]50[/math]\u201d)collecting observations as you go and postulating the probabilities with which those are generatedupdating your prior beliefs through Bayes\u2019 theorem, to form posterior beliefs.These can iterate once for a batch of observations, or sequentially one observation per iteration. In the latter mode, your posterior belief becomes the prior for the next iteration. The collective of distributions and operations in steps 1\u20133 is a Bayesian model or a probabilistic program. Footnotes[1] Bayesian network[2] Thomas Bayes[3] Probability Theory",
+            "date": "Answered August 15, 2016",
+            "views": "53",
+            "upvotes": " View 21 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Zhuravlev",
+                    "user_href": "/profile/David-Zhuravlev"
+                },
+                {
+                    "user_id": "Thomas Miller",
+                    "user_href": "/profile/Thomas-Miller-72"
+                },
+                {
+                    "user_id": "Furkan Mert Akda\u011f",
+                    "user_href": "/profile/Furkan-Mert-Akda\u011f"
+                },
+                {
+                    "user_id": "Andrew Smith",
+                    "user_href": "/profile/Andrew-Smith-43"
+                },
+                {
+                    "user_id": "Mario Thds",
+                    "user_href": "/profile/Mario-Thds"
+                },
+                {
+                    "user_id": "Salil Tiwari",
+                    "user_href": "/profile/Salil-Tiwari"
+                },
+                {
+                    "user_id": "Stan Hanks",
+                    "user_href": "/profile/Stan-Hanks"
+                },
+                {
+                    "user_id": "Ross Ledehrman",
+                    "user_href": "/profile/Ross-Ledehrman"
+                },
+                {
+                    "user_id": "Dario Colombotto",
+                    "user_href": "/profile/Dario-Colombotto"
+                },
+                {
+                    "user_id": "Carolina Daza",
+                    "user_href": "/profile/Carolina-Daza-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gabriel Synnaeve",
+                "href": "/profile/Gabriel-Synnaeve"
+            },
+            "answer_text": "It depends on which domain you are applying your Bayesian model to. However the constant is that a Bayesian model explicits (as all models have some) prior knowledge and uses it along with data to compute the posterior distribution(s) on the parameters of the model. P(parameters | data) = [P(data | parameters).P(parameters)] / P(data)  P(parameters) is the prior,P(data | parameters) is the likelihood of the data under your model's assumptions,P(parameters | data) is the posterior on your model's parameters.Yes, that's simply Bayes rule! A truly Bayesian approach would then be to use the full posterior (the distribution on the parameters) when iterating over this equation.  A poor's man (more easy to compute) Bayesian approach is Maximum A Posteriori, which would iterate with the most probable parameter over the equation above. Another approach to \"what is a Bayesian model?\" would be to say that's it's a logic-based model (any rational model) that can deal with uncertainty (c.f. Cox's theorem). Hoping I didn't dumb this down too much by trying to answer this vague and wide coverage question... ",
+            "date": "Answered September 12, 2013",
+            "views": "18",
+            "upvotes": "0"
+        }
+    ]
+}

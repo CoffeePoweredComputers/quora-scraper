@@ -1,0 +1,71 @@
+{
+    "title": "What is Heisenberg's Uncertainty Principle in energy-time domain? - Quora",
+    "tags": [
+        "Heisenberg Uncertainty Principle",
+        "Quantum Field Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel Merthe",
+                "href": "/profile/Daniel-Merthe-1"
+            },
+            "answer_text": "The energy-time form of the Heisenberg uncertainty principle has an interpretation very different from the position-momentum form. First, the generalized uncertainty principle for two physical observables [math]A[/math] and [math]B[/math] can be written as [math]\\Delta A \\Delta B  \\geq \\frac{1}{2}| \\langle [\\hat{A},\\hat{B}] \\rangle |[/math] where [math]\\Delta A[/math] and [math]\\Delta B[/math] are the uncertainties in [math]A[/math] and [math]B[/math], [math]||[/math] is the absolute value, [math]\\langle \\rangle[/math] is the expectation value, [math][,][/math] is the commutator and [math]\\hat{A}[/math] and [math]\\hat{B}[/math] are the quantum mechanical operators corresponding to [math]A[/math] and [math]B[/math]. If you insert [math]A=x[/math] (position), [math]B=p[/math] (momentum) and the canonical commutation relation, [math][\\hat{x},\\hat{p}]=i\\hbar[/math], you get the position-momentum uncertainty relation, [math]\\Delta x \\Delta p \\geq \\frac{\\hbar}{2}[/math] If there were a time \u201coperator\u201d [math]\\hat{t}[/math] which obeyed a similar relation with the Hamiltonian [math]\\hat{H}[/math] (which is the energy operator), [math][\\hat{t},\\hat{H}]=i\\hbar[/math], then we would have [math]\\Delta t \\Delta E \\geq \\frac{\\hbar}{2}[/math] But alas, there is no time operator. That is because in non-relativistic quantum mechanics, time is not an observable that can take on a multitude of values in an experiment. Time is an independent variable that invariably increases with absolute certainty. So, [math]\\Delta t[/math] cannot be interpreted as a statistical uncertainty. However, we can think of [math]\\Delta t[/math] as some characteristic timescale. According to Ehrenfest\u2019s theorem, the rate of change of an expectation value of an observable is given by, [math]\\frac{\\partial \\langle \\hat{A} \\rangle }{\\partial t}= \\frac{1}{i\\hbar} \\langle [\\hat{A}, \\hat{H}] \\rangle[/math] Inserting this into the generalized uncertainty relation above, with [math]B=E[/math] ([math]\\hat{B} =\\hat{H}[/math]), we get [math]\\frac{\\Delta A}{|\\partial \\langle \\hat{A} \\rangle / \\partial t|} \\Delta E \\geq \\frac{\\hbar}{2}[/math] The fraction on the left can be interpreted as the time [math]\\Delta t[/math] it takes for the quantum state to change significantly, with respect to the observable [math]A[/math] (sort of like the time it takes your car to travel a distance [math]\\Delta x[/math] is [math]\\Delta x/v[/math], where [math]v = \\partial x/\\partial t[/math] is the speed of your car). With this we have [math]\\Delta t \\Delta E \\geq \\frac{\\hbar}{2}[/math] This says that the time it takes for the system to change significantly times the uncertainty in the energy is always greater than [math]\\hbar/2[/math]. Example Consider an electron with magnetic moment [math]\\mu[/math] in a magnetic field [math]B[/math] pointing in the [math]z[/math]-direction. The Hamiltonian for this system is [math]\\hat{H}= -\\mu B \\hat{\\sigma}_z[/math] where the Pauli matrices are defined as [math]\\hat{\\sigma}_x = \\left(\\begin{array}{cc} 0 & 1 \\\\ 1 & 0 \\end{array}\\right)[/math], [math]\\hat{\\sigma}_y = \\left(\\begin{array}{cc} 0 & -i \\\\ i & 0 \\end{array}\\right)[/math] and [math]\\hat{\\sigma}_z = \\left(\\begin{array}{cc} 1 & 0 \\\\ 0 & -1 \\end{array}\\right)[/math] The available quantum states for the electron in this situation are spin up (parallel to the magnetic field) and spin down (anti-parallel to it), [math]|\\uparrow\\rangle=\\left( \\begin{array}{c} 1 \\\\ 0 \\end{array}\\right)[/math] and [math]|\\downarrow\\rangle=\\left( \\begin{array}{c} 0 \\\\ 1 \\end{array}\\right)[/math] with energies [math]-\\mu B[/math] and [math]\\mu B[/math], respectively. Let's say that the electron is in an even combination of the spin up and spin down states, [math]|\\psi(t)\\rangle =  \\frac{1}{\\sqrt{2}} \\left( |\\uparrow\\rangle e^{i t \\mu B/\\hbar}+|\\downarrow \\rangle e^{-i t \\mu B/\\hbar}\\right)[/math] (You can verify that this wave function solves the Schr\u00f6dinger equation.) The average energy of this state is clearly zero (the overall state is equal parts of opposite energy states), so the uncertainty in the energy of this state is [math]\\Delta E =\\sqrt{\\frac{1}{2}(-\\mu B)^2+\\frac{1}{2}(\\mu B)^2} = \\mu B[/math] Now, let's say that we want to know the time-scale [math]\\Delta t[/math] over which the projection of the magnetic moment onto the [math]x[/math]-axis changes. The corresponding operator is [math]\\hat{\\mu}_x=\\mu \\hat{\\sigma}_x[/math]. The expectation value of this operator with the given state is, [math]\\langle \\hat{\\mu}_x \\rangle = \\langle \\psi |\\hat{\\mu}_x|\\psi\\rangle = \\mu \\cos (2\\mu B t/\\hbar)[/math] Its derivative is [math]\\frac{ \\partial \\langle \\hat{\\mu}_x \\rangle}{\\partial t} = - \\frac{\\mu^2 B}{\\hbar} \\sin (2\\mu B t/\\hbar)[/math] The uncertainty of [math]\\mu_x[/math] is [math]\\Delta \\mu_x = \\sqrt{\\langle \\hat{\\mu}_x^2 \\rangle-\\langle \\hat{\\mu}_x \\rangle^2}= \\mu |\\sin (2\\mu B t/\\hbar)|[/math] (I skipped some algebra and trigonometry there, but feel free to verify it for yourself.) So, the characteristic time scale over which the observable [math]\\mu_x[/math] changes is [math]\\Delta t = \\frac{\\Delta \\mu_x}{|\\partial \\langle \\hat{\\mu}_x \\rangle / \\partial t|} = \\frac{\\hbar}{2 \\mu B}[/math] Hence, regardless of the strength of the magnetic field or the particular value of the electron\u2019s magnetic moment, [math]\\Delta t \\Delta E = \\frac{\\hbar}{2}[/math] You can increase the magnetic field to shorten the period of the oscillations of [math]\\mu_x[/math] (these oscillations are the quantum mechanical analogue to Larmor procession, by the way), but that also increases the energy difference between the spin up and spin down states which increases the energy uncertainty (and vice versa). We got lucky - we chose a special situation in which the energy-time uncertainty relation is \u201csaturated\u201d. If you choose a different quantum state of the electron (i.e. different combination of spin up or spin down states), the product [math]\\Delta t \\Delta E[/math] will always be greater than or equal to this minimum (check it!). ",
+            "date": "Updated June 2, 2020",
+            "views": "116",
+            "upvotes": " View 37 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Croft",
+                    "user_href": "/profile/David-Croft-6"
+                },
+                {
+                    "user_id": "Karthik B",
+                    "user_href": "/profile/Karthik-B-328"
+                },
+                {
+                    "user_id": "Jerry Winniczek",
+                    "user_href": "/profile/Jerry-Winniczek-2"
+                },
+                {
+                    "user_id": "Giuseppe Falcone",
+                    "user_href": "/profile/Giuseppe-Falcone-2"
+                },
+                {
+                    "user_id": "David Shaffer",
+                    "user_href": "/profile/David-Shaffer-14"
+                },
+                {
+                    "user_id": "Matteo Furia",
+                    "user_href": "/profile/Matteo-Furia"
+                },
+                {
+                    "user_id": "Idk",
+                    "user_href": "/profile/Idk-863"
+                },
+                {
+                    "user_id": "Mojtaba Abdollahzadeh",
+                    "user_href": "/profile/Mojtaba-Abdollahzadeh"
+                },
+                {
+                    "user_id": "Devang S. Naik",
+                    "user_href": "/profile/Devang-S-Naik"
+                },
+                {
+                    "user_id": "Sarosij Bose",
+                    "user_href": "/profile/Sarosij-Bose"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian Miller",
+                "href": "/profile/Ian-Miller-39"
+            },
+            "answer_text": "An interesting feature of the Uncertainty Principle is that everybody quotes a relationship, but hardly anybody seems to know why it holds. The usual approach is to quote operator-based formalism, but that always assumes the premises that led to the conclusion are physically correct. My version of the Uncertainty Principle gives higher uncertainty than the usual one (derivation in my ebook \u201cGuidance Waves\u201d) and of course I would be wrong if anybody made measurements that were more accurate than my limit, but as far as I know, nobody has actually tried to find out what the extreme limit is. My derivation states that for a single particle travelling from A to B, thanks to Euler\u2019s complex number theory, you cannot know the action in units less than the number of quanta h. This arises from the fact you cannot know the phase of the wave function, and the fact that a wave must have a crest and a trough. This means my uncertainty is 4\u03c0 larger than the formalism. So my challenge is, make a measurement more accurate than one quantum of action. For the situation where you want the measurement to apply to an electron pair, you can divide by 2. For angular momentum you can divide by the 2\u03c0 because you can have a defined angular momentum with an undefined radial distance. To the specific question, E\u03c4 gives the action of a particle, where \u03c4 is the wave periodic time. Strictly speaking, you don\u2019t know that anyway, and you have to calculate it from wave properties. ",
+            "date": "Answered June 17, 2019",
+            "views": "1",
+            "upvotes": " Answer requested by Fabian Sommerfeld"
+        }
+    ]
+}

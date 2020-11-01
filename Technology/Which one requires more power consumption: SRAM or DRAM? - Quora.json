@@ -1,0 +1,94 @@
+{
+    "title": "Which one requires more power consumption: SRAM or DRAM? - Quora",
+    "tags": [
+        "Dynamic Random-access Memory",
+        "Static Random Access Memory (SRAM)",
+        "Power Consumption"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Sporer",
+                "href": "/profile/Michael-Sporer-1"
+            },
+            "answer_text": "There are two broad classes of SRAM; Low Power (LP) is built in low leakage processes and used for battery operated devices. These are relatively slow and almost no power consumption when idle.  Then there are SRAM built for high performance caches, the leakage current and standby power is pretty high and the transistors are fast, so they have high power consumption when idle and even higher when operating fast. DRAM in comparison always requires refresh periodically, so the idle or sleep power can never be as low as a LP SRAM and the power when running is also higher. But even the most extreme performance DRAM is lower power than the most extreme performance SRAM. ",
+            "date": "Answered October 29, 2015",
+            "views": "74",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gokulnath Pillai",
+                    "user_href": "/profile/Gokulnath-Pillai"
+                },
+                {
+                    "user_id": "Laxmana Vh",
+                    "user_href": "/profile/Laxmana-Vh"
+                },
+                {
+                    "user_id": "Huang ZheYu",
+                    "user_href": "/profile/Huang-ZheYu"
+                },
+                {
+                    "user_id": "Mark Farley",
+                    "user_href": "/profile/Mark-Farley"
+                },
+                {
+                    "user_id": "Shivam Sahgal",
+                    "user_href": "/profile/Shivam-Sahgal"
+                },
+                {
+                    "user_id": "Umang Solanki",
+                    "user_href": "/profile/Umang-Solanki-9"
+                },
+                {
+                    "user_id": "Aniruddha Paul",
+                    "user_href": "/profile/Aniruddha-Paul-3"
+                },
+                {
+                    "user_id": "Alex Stuckey",
+                    "user_href": "/profile/Alex-Stuckey"
+                },
+                {
+                    "user_id": "Suraj Tiwari",
+                    "user_href": "/profile/Suraj-Tiwari-93"
+                },
+                {
+                    "user_id": "Vivek Singh",
+                    "user_href": "/profile/Vivek-Singh-2181"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kiran Edala",
+                "href": "/profile/Kiran-Edala"
+            },
+            "answer_text": "Typically, an SRAM module consumes less power than a DRAM module. This is because SRAM only requires a small steady current while DRAM requires bursts of power every few milliseconds to refresh. This refresh current is several orders of magnitude greater than the low SRAM standby current. Thus, SRAM is used in most portable and battery-operated equipment. However, the power consumption of SRAM does depend on the frequency at which it is accessed. When SRAM is used at a slower pace, it draws nearly negligible power while idled. On the other hand, at higher frequencies, SRAM can consume as much power as DRAM ",
+            "date": "Answered September 15, 2017",
+            "views": "31",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kyle Anderson",
+                    "user_href": "/profile/Kyle-Anderson-8"
+                },
+                {
+                    "user_id": "Martin Cropper",
+                    "user_href": "/profile/Martin-Cropper"
+                },
+                {
+                    "user_id": "Shivam Sahgal",
+                    "user_href": "/profile/Shivam-Sahgal"
+                },
+                {
+                    "user_id": "Sri Sai Harsha",
+                    "user_href": "/profile/Sri-Sai-Harsha"
+                },
+                {
+                    "user_id": "Keshav Sharma",
+                    "user_href": "/profile/Keshav-Sharma-41"
+                }
+            ]
+        }
+    ]
+}

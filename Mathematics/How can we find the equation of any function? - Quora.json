@@ -1,0 +1,54 @@
+{
+    "title": "How can we find the equation of any function? - Quora",
+    "tags": [
+        "Algebraic Equations",
+        "Equations",
+        "Functions (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alexander Farrugia",
+                "href": "/profile/Alexander-Farrugia"
+            },
+            "answer_text": "First of all, I'm going to assume the following, otherwise this problem isn't practical: 1) The graph is available within only some particular range of values.2) Only a finite number of points on the given curve are available. (If not, then nothing on Earth can hold an infinite amount of possibly unrelated points, countable or not.) In general, finding the function of a curve from its curve is not possible. However, there exist techniques that allow you to approximate functions as polynomials or other curves. See Curve fitting for a summary of these techniques. ",
+            "date": "Answered November 27, 2015",
+            "views": "468",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark White",
+                    "user_href": "/profile/Mark-White-101"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Damien Gerard",
+                    "user_href": "/profile/Damien-Gerard"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amitya Narayan",
+                "href": "/profile/Amitya-Narayan-1"
+            },
+            "answer_text": "Well you can approximate a polynomial to that function.According to the Weierstrass Approximation Theorem:I f a function [math]t(x)[/math] is continuous on a close interval [math][a,b][/math] then for every {math]\\epsilon > 0[/math] there exist a polynomial [math]P(x)[/math] such that inequality:[math] |t(x) - P(x)| < \\epsilon[/math] is satisfies at all points of this interval Sergei Natanovich Bernstein gave a formula to directly construct such polynomials  that is approximately equal to  the continuous function [math]t(x)[/math] *Assuming it is continuous on the interval [0,1][math] B_{n} = \\sum_{m = 0}^{n} t(\\frac {m}{n}) C^{m}_{n} x^m (1-x)^{n-m}[/math] where [math]B_{n}[/math] is a Bernstein Polynomial of nth degree.You can choose a Bernstein polynomial of degree n such that all the values of x on interval [math][0,1][/math] satisfies the following inequality: [math] |t(x) - P(x)| < \\epsilon[/math]for any arbitrary [math]\\epsilon[/math] You can also checkout Chebyshev's Polynomials And https://en.wikipedia.org/wiki/Approximation_theory ",
+            "date": "Answered November 27, 2015",
+            "views": "327",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Damien Gerard",
+                    "user_href": "/profile/Damien-Gerard"
+                }
+            ]
+        }
+    ]
+}

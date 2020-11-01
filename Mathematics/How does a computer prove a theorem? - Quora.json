@@ -1,0 +1,84 @@
+{
+    "title": "How does a computer prove a theorem? - Quora",
+    "tags": [
+        "Theorems and Lemmas"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Senia Sheydvasser",
+                "href": "/profile/Senia-Sheydvasser"
+            },
+            "answer_text": "Generally, they don\u2019t. There are some special cases where computers have been used to help prove theorems. To do this, the idea is simple: reduce the proof of the theorem to some finite number of computations that a computer can do. As you can probably guess, this is incredibly difficult in practice. However, sometimes it is possible: for example, to prove the Four color theorem, Appel and Haken painstakingly showed that the theorem was true unless it happened to fail for one of 1,936 possible exceptions. They then used a computer to go through those 1,936 cases and show that the theorem held for each of them. There is some software, such as Coq, that is able to take mathematical statements written in its own internal language and, at least for simple statements, try to search for proofs. However, there is no existing software that can handle even remotely difficult theorems in such a manner. At present, computers offer computational power that is a good supplement to human mathematical reasoning, but is an utterly inadequate substitute. ",
+            "date": "Answered November 23, 2016",
+            "views": "18",
+            "upvotes": " View 28 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Fel\u00edcia F\u00e9lix",
+                    "user_href": "/profile/Fel\u00edcia-F\u00e9lix"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Alexandru Lazar",
+                    "user_href": "/profile/Alexandru-Lazar-2"
+                },
+                {
+                    "user_id": "Dhruv Gupta",
+                    "user_href": "/profile/Dhruv-Gupta-65"
+                },
+                {
+                    "user_id": "Umut Eren Ustural\u0131",
+                    "user_href": "/profile/Umut-Eren-Ustural\u0131"
+                },
+                {
+                    "user_id": "Nishant Mehrotra",
+                    "user_href": "/profile/Nishant-Mehrotra-2"
+                },
+                {
+                    "user_id": "Yen Kaow Ng",
+                    "user_href": "/profile/Yen-Kaow-Ng"
+                },
+                {
+                    "user_id": "Himanshu Jhamb",
+                    "user_href": "/profile/Himanshu-Jhamb-2"
+                },
+                {
+                    "user_id": "Rudradeep Mukherjee",
+                    "user_href": "/profile/Rudradeep-Mukherjee"
+                },
+                {
+                    "user_id": "Naz\u0131m Kemal \u00dcre",
+                    "user_href": "/profile/Naz\u0131m-Kemal-\u00dcre"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lu\u00eds Sequeira",
+                "href": "/profile/Lu\u00eds-Sequeira-2"
+            },
+            "answer_text": "It can prove some. Or rather, a computer program can be used to prove some theorems. And they are. Some are easy to check, but hard to find. Here is a simple example - it is a sample proof from the site proverx.com. It shows a computer generated proof that every group of exponent 2 (ie. such that the square of each element is the identity) is Abelian. On the left is the program - basically a bunch of axioms that describe a group of exponent 2, and the \u201cgoal\u201d to prove:  x * y = y * x.  On the right the program has showed the steps that comprise a proof of the goal statement. This is a simple one, that students starting an Algebra course in college should be able to do on their own. I put it here because it is reasonably easy to understand. But this same tool has been used to prove other results that are very hard.  Note: the underlying code of the theorem prover is from prover9 and mace4 (a pair of amazing tools by the late mathematician William McCune). ",
+            "date": "Answered October 31, 2019",
+            "views": "278",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "Comet",
+                    "user_href": "/profile/Comet-7"
+                },
+                {
+                    "user_id": "Bob Dener",
+                    "user_href": "/profile/Bob-Dener"
+                }
+            ]
+        }
+    ]
+}

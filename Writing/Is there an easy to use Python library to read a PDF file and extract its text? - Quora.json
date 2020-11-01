@@ -1,0 +1,393 @@
+{
+    "title": "Is there an easy to use Python library to read a PDF file and extract its text? - Quora",
+    "tags": [
+        "Adobe Acrobat",
+        "PDF Readers",
+        "Python Libraries",
+        "Learning Python",
+        "PDF (file format)",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Naftali Michalowsky",
+                "href": "/profile/Naftali-Michalowsky"
+            },
+            "answer_text": "the answer is pdfminer as others have said, but if the libraries aren\u2019t working for you, it\u2019s likely because you are expecting too much from them. You need to understand how the pdf file format works, as opposed to how text format works. Specifically, we all expect to be able to use a library to parse some file format for text and be able to iterate through the text line by line, but what if the text has no line characters? How would the library know what constitutes a line? Most libraries won\u2019t try to guess at that, and honestly we wouldn\u2019t want them to, because if the line isn\u2019t represented by a line character, then the concept of line isn\u2019t really part of the text (is it?) and we are using the library to extract *text*. In pdf, text is laid out, meaning that a particular text object get displayed at a particular x,y position on the page. So what you might think of as 3 lines would actually be 3 text objects, displayed at (x,y), (x, y-20), (x, y-40), so a text extraction library would just pull out the text, but you\u2019d have no line data. (IRRC pdfminer hands you String as output, just a big String, not a (line) iterable, it was because PDFMiner didn\u2019t work for me that I had to study up and learn a bit about pdf to get what I wanted out of the files). The upside is this \u2014 You finally get a chance to \u2018roll your own.\u2019 Fortunately, extracting the text out of a pdf is very well defined and simple goal. And fortuanately, PDF is a very well documented and very well understood file format, so google is going to be very helpful. If push comes to shove, the text rendering part of the spec is less than 200 pages, but you won\u2019t need to go there. Start here: Introduction to PDF Then read the wikipedia article which is super well written. Then you will have to open the file in text editor and study it, which won\u2019t be hard if you are interested only in text. Use this as a tool to understand the stream writing operators: Adobe Portable Document Format The accepted answer to the following SO tells you what you need to investigate to understand how text is encoded within the pdf: Programatically rip text from a PDF File (by hand) - Missing some text Google anything you wish to understand, and you will be brought to cool sites like planetpdf, where they have great articles. It should take you a day or two to hand write your parser and you will learn a lot in the process about something pretty common. The libraries have to be general, so they are going to be limited. (perhaps irrelevant, the pdfs I was working with are linearized\u2014see the linked references\u2014which made studying the text in the pdf and mapping to the layout on the screen super simple, I didn\u2019t study an non-linearized files because i didn\u2019t have to, but if it makes things harder there\u2019s a ton of code out there to linearize a pdf but not a lot out there that can go the otherway) ",
+            "date": "Updated June 15, 2020",
+            "views": "319",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "B Harsha Kiran Chowdary",
+                    "user_href": "/profile/B-Harsha-Kiran-Chowdary"
+                },
+                {
+                    "user_id": "Namaji Srinivasan",
+                    "user_href": "/profile/Namaji-Srinivasan"
+                },
+                {
+                    "user_id": "Aditya Kaushik",
+                    "user_href": "/profile/Aditya-Kaushik-20"
+                },
+                {
+                    "user_id": "Nihal Vishwanath",
+                    "user_href": "/profile/Nihal-Vishwanath"
+                },
+                {
+                    "user_id": "Amit Trivedi",
+                    "user_href": "/profile/Amit-Trivedi-1"
+                },
+                {
+                    "user_id": "Rickard Lundstedt",
+                    "user_href": "/profile/Rickard-Lundstedt"
+                },
+                {
+                    "user_id": "Karan Ahuja",
+                    "user_href": "/profile/Karan-Ahuja"
+                },
+                {
+                    "user_id": "Shankar Pach",
+                    "user_href": "/profile/Shankar-Pach"
+                },
+                {
+                    "user_id": "Singh Lovepreet",
+                    "user_href": "/profile/Singh-Lovepreet"
+                },
+                {
+                    "user_id": "SAHIL SAINI",
+                    "user_href": "/profile/SAHIL-SAINI-192"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Joseph-M-44"
+                },
+                {
+                    "user_id": "Ashish Jha",
+                    "user_href": "/profile/Ashish-Jha-41"
+                },
+                {
+                    "user_id": "Venu Gopal Venu",
+                    "user_href": "/profile/Venu-Gopal-Venu-8"
+                },
+                {
+                    "user_id": "Priancy Gehlot",
+                    "user_href": "/profile/Priancy-Gehlot"
+                },
+                {
+                    "user_id": "Anung Ariwibowo",
+                    "user_href": "/profile/Anung-Ariwibowo"
+                },
+                {
+                    "user_id": "Bhavesh Praveen",
+                    "user_href": "/profile/Bhavesh-Praveen"
+                },
+                {
+                    "user_id": "Praneeth Kruthiventi",
+                    "user_href": "/profile/Praneeth-Kruthiventi-1"
+                },
+                {
+                    "user_id": "Tony Dawson",
+                    "user_href": "/profile/Tony-Dawson-2"
+                },
+                {
+                    "user_id": "Ganesha Gandadi",
+                    "user_href": "/profile/Ganesha-Gandadi"
+                },
+                {
+                    "user_id": "Alexander Popov",
+                    "user_href": "/profile/Alexander-Popov-29"
+                },
+                {
+                    "user_id": "Veronica Wenqian Cheng",
+                    "user_href": "/profile/Veronica-Wenqian-Cheng"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kayla Andersen",
+                "href": "/profile/Kayla-Andersen-1"
+            },
+            "answer_text": "PyPDF2 has an extractText() function is very easy to use. As other people have noted, it is harder than it seems to get to text out of a PDF and the extractText is known not to work on every PDF, especially if it's formatted in a complicated way (e.g. pictures with captions, columns). I've heard it also has trouble with non-English language PDFs, but I haven't tried it. That said, it has worked fine for me in the past on simple PDFs, and only takes a few lines of code to get it going (although the resulting string will probably be in need of some regex massaging after). May be worth a shot for your case. A good tutorial is here: Chapter 13 - Working with PDF and Word Documents  Example: def get_pdf_content(pdf_path, page_nums=[0]):\u00a0\tcontent = ''\u00a0\tp = file(pdf_path, \"rb\")\u00a0\tpdf = pyPdf2.PdfFileReader(p)\u00a0\tfor page_num in page_nums:\u00a0\t\tcontent += pdf.getPage(page_num).extractText()\u00a0\treturn content\u00a0",
+            "date": "Answered March 8, 2016",
+            "views": "287",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sharan Sajiv Menon",
+                    "user_href": "/profile/Sharan-Sajiv-Menon"
+                },
+                {
+                    "user_id": "Fanny Vieira",
+                    "user_href": "/profile/Fanny-Vieira-1"
+                },
+                {
+                    "user_id": "Nataraj Pinakapani",
+                    "user_href": "/profile/Nataraj-Pinakapani"
+                },
+                {
+                    "user_id": "Ishan Nigam",
+                    "user_href": "/profile/Ishan-Nigam"
+                },
+                {
+                    "user_id": "Swarnim Bhardwaj",
+                    "user_href": "/profile/Swarnim-Bhardwaj"
+                },
+                {
+                    "user_id": "Choy Edmund",
+                    "user_href": "/profile/Choy-Edmund"
+                },
+                {
+                    "user_id": "Vamsi Krishna Kavuru",
+                    "user_href": "/profile/Vamsi-Krishna-Kavuru"
+                },
+                {
+                    "user_id": "Vaibhav Sagar",
+                    "user_href": "/profile/Vaibhav-Sagar-2"
+                },
+                {
+                    "user_id": "Sohel Khan",
+                    "user_href": "/profile/Sohel-Khan-14"
+                },
+                {
+                    "user_id": "\u30a2\u30df\u30e9 \u30a2\u30eb\u30e4",
+                    "user_href": "/profile/\u30a2\u30df\u30e9-\u30a2\u30eb\u30e4"
+                },
+                {
+                    "user_id": "Izzatbir Singh",
+                    "user_href": "/profile/Izzatbir-Singh"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paulina Jonu\u0161ait\u0117",
+                "href": "/profile/Paulina-Jonu\u0161ait\u0117"
+            },
+            "answer_text": "This may come to you as a surprise, but PDF was never actually intended as a format for easy text extraction. Indeed, its primary purpose is to make sure that whatever is in the document would be displayed in a consistent manner across multiple platforms, as well as print identically (as much as that is possible) everywhere. This is achieved in many different ways, and sometimes goes as far as literally saying \"this letter goes here, this letter goes here, and this letter goes here\" in its internal language. So yes, the libraries to extract text from PDF are insanely complicated by necessity, and they sometimes do not even function properly, because PDF is not meant for that. ",
+            "date": "Answered March 7, 2016",
+            "views": "301",
+            "upvotes": " View 30 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jim Dennis",
+                    "user_href": "/profile/Jim-Dennis-1"
+                },
+                {
+                    "user_id": "Shubham Chauhan",
+                    "user_href": "/profile/Shubham-Chauhan-174"
+                },
+                {
+                    "user_id": "Alok Jha",
+                    "user_href": "/profile/Alok-Jha-43"
+                },
+                {
+                    "user_id": "Marouane Fakir",
+                    "user_href": "/profile/Marouane-Fakir"
+                },
+                {
+                    "user_id": "Akash Kumar",
+                    "user_href": "/profile/Akash-Kumar-369"
+                },
+                {
+                    "user_id": "Swaroop Gudipalle",
+                    "user_href": "/profile/Swaroop-Gudipalle"
+                },
+                {
+                    "user_id": "Swarnim Bhardwaj",
+                    "user_href": "/profile/Swarnim-Bhardwaj"
+                },
+                {
+                    "user_id": "Anung Ariwibowo",
+                    "user_href": "/profile/Anung-Ariwibowo"
+                },
+                {
+                    "user_id": "Swapnil Paranjape",
+                    "user_href": "/profile/Swapnil-Paranjape"
+                },
+                {
+                    "user_id": "Boris Kheyfets",
+                    "user_href": "/profile/Boris-Kheyfets"
+                },
+                {
+                    "user_id": "Jorge Lor\u00eda",
+                    "user_href": "/profile/Jorge-Lor\u00eda"
+                },
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Jo-317"
+                },
+                {
+                    "user_id": "Larry Eisenstein",
+                    "user_href": "/profile/Larry-Eisenstein"
+                },
+                {
+                    "user_id": "Barry Rountree",
+                    "user_href": "/profile/Barry-Rountree"
+                },
+                {
+                    "user_id": "Absalon Rosas",
+                    "user_href": "/profile/Absalon-Rosas"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                },
+                {
+                    "user_id": "Tikhon Jelvis",
+                    "user_href": "/profile/Tikhon-Jelvis"
+                },
+                {
+                    "user_id": "Sanket Ghorpade",
+                    "user_href": "/profile/Sanket-Ghorpade-2"
+                },
+                {
+                    "user_id": "Victor Eijkhout",
+                    "user_href": "/profile/Victor-Eijkhout"
+                },
+                {
+                    "user_id": "Cody Dostal",
+                    "user_href": "/profile/Cody-Dostal"
+                },
+                {
+                    "user_id": "Paul Bissex",
+                    "user_href": "/profile/Paul-Bissex-1"
+                },
+                {
+                    "user_id": "Steven Foster",
+                    "user_href": "/profile/Steven-Foster-2"
+                },
+                {
+                    "user_id": "Alexander Gorelyshev",
+                    "user_href": "/profile/Alexander-Gorelyshev"
+                },
+                {
+                    "user_id": "Miguel Brito",
+                    "user_href": "/profile/Miguel-Brito"
+                },
+                {
+                    "user_id": "Gabriel Vilela",
+                    "user_href": "/profile/Gabriel-Vilela-1"
+                },
+                {
+                    "user_id": "Azmi Sudrajat",
+                    "user_href": "/profile/Azmi-Sudrajat-1"
+                },
+                {
+                    "user_id": "Jesus Balbastro",
+                    "user_href": "/profile/Jesus-Balbastro"
+                },
+                {
+                    "user_id": "Tobias Kommerell",
+                    "user_href": "/profile/Tobias-Kommerell"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Berwa Alain Roberto",
+                "href": "/profile/Berwa-Alain-Roberto"
+            },
+            "answer_text": "Python has many libraries on reading PDF and extracting its text. I would suggest you to use PyPDF2 simply because it is easy to use, and it gives more other functionalities such as ordering pages, encrypting, and decrypting files. So go for PyPDF2. Here are some links to help you navigate: mstamy2/PyPDF2: the official source code of this library Automate the Boring Stuff with Python: A chapter in this AMAZING book pretty much talks about PyPDF2. Wait! PyPDF2 is pretty basic. If you want accuracy and more precise functionalities such spaces and a bit of image processing, try to use PDFminer. Here is a link to help you navigate: pdfminer 20140328 ",
+            "date": "Answered April 14, 2018",
+            "views": "124",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "JL Redon",
+                    "user_href": "/profile/JL-Redon"
+                },
+                {
+                    "user_id": "Martinez Mki",
+                    "user_href": "/profile/Martinez-Mki-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ankita Sharma",
+                "href": "/profile/Ankita-Sharma-880"
+            },
+            "answer_text": "You can use the library pypdf2 for reading PDF file and Extracting it\u2019s text to a text file. Here\u2019s the code : !apt-get install python3-pypdf2 import PyPDF2 pdfFileObj = open('filename.pdf','rb') pdfReader = PyPDF2.PdfFileReader(pdfFileObj) number_of_pages = pdfReader.numPages count = 0 text = \"\" while count < number_of_pages: pageObj = pdfReader.getPage(count) count +=1 text += pageObj.extractText() print(text) This parses the file page by page and convert it into a text file and store the text in the variable name \u2018text\u2019 which you can use for the further purpose. ",
+            "date": "Answered June 26, 2019",
+            "views": "15",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tobias Kommerell",
+                "href": "/profile/Tobias-Kommerell"
+            },
+            "answer_text": "Easy to use libraries will have a hard time extracting information from a PDF. Usually you will find space characters randomly in the text, or what seems like one line are actually two lines on top of each other  (so if the pdf says \"Hello World\" your library might read it as \"H l  W r d\\n el o or l\"). However the guys and gals at https://www.gini.net/ have a service that you can easily integrate into a python program that will extract information from the pdf (also works on images, etc.). ",
+            "date": "Answered March 7, 2016",
+            "views": "92",
+            "upvotes": " Answer requested by Timothy Kassis",
+            "upvoters": [
+                {
+                    "user_id": "Shailendra Sengar",
+                    "user_href": "/profile/Shailendra-Sengar-8"
+                },
+                {
+                    "user_id": "David Costello",
+                    "user_href": "/profile/David-Costello-28"
+                },
+                {
+                    "user_id": "Swarnim Bhardwaj",
+                    "user_href": "/profile/Swarnim-Bhardwaj"
+                },
+                {
+                    "user_id": "Jingwen Wang",
+                    "user_href": "/profile/Jingwen-Wang-5"
+                },
+                {
+                    "user_id": "Gourab Ghosh",
+                    "user_href": "/profile/Gourab-Ghosh-7"
+                },
+                {
+                    "user_id": "Mubashar Hussain",
+                    "user_href": "/profile/Mubashar-Hussain"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adarsh Kumar",
+                "href": "/profile/Adarsh-Kumar-399"
+            },
+            "answer_text": "Yeah, you can easily read pdf text content using 3rd party library called PyPDF2. # import the module\u00a0import PyPDF2\u00a0\u00a0# create an object \u00a0file = open('example.pdf', 'rb')\u00a0\u00a0# create a pdf reader object\u00a0pdfReader = PyPDF2.PdfFileReader(file)\u00a0\u00a0# get the number of pages in pdf file\u00a0pages = pdfReader.numPages\u00a0\u00a0for i in range(pages):\u00a0 #extract the page\u00a0 page = pdfReader.getPage(i)\u00a0\u00a0 #print the page text content along with page number\u00a0 print(\"Page no:\",i)\u00a0 print(page.extractText())\u00a0For full explanation I encourage you to go and check the simple steps to read pdf in python. ",
+            "date": "Answered February 5, 2020",
+            "views": "430",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Chien Nguyen",
+                "href": "/profile/Chien-Nguyen-2"
+            },
+            "answer_text": "Since Python is designed as a language to process data of various types, it is natural to think of using Python extract and manipulate text data in the ubiquitous format PDF. For reading PDF files, you can use PyPDF module (see Chapter 13 - Working with PDF and Word Documents). For writing PDF files, I would recommend using the ReportLab library, which appears to be quite mature and has been deployed in many systems (Windows, Linux, etc.). See here: Content to PDF Solutions. ",
+            "date": "Answered May 25, 2016",
+            "views": "237",
+            "upvotes": " View 6 Upvoters"
+        },
+        {
+            "author_info": {
+                "name": "Kain Diab",
+                "href": "/profile/Kain-Diab"
+            },
+            "answer_text": "As a .NET developer, I use iDiTect.PDF tool, create and read pdf document in c#, extract text from pdf in .net,all the work is just easy and fast. Sorry for poor knowledge of python, I searched google, and find one library call pdfminder, maybe you can have a try. ",
+            "date": "Answered October 30, 2018",
+            "views": "24",
+            "upvotes": "0"
+        }
+    ]
+}

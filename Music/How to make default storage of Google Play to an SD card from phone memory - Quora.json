@@ -1,0 +1,114 @@
+{
+    "title": "How to make default storage of Google Play to an SD card from phone memory - Quora",
+    "tags": [
+        "SD Cards",
+        "Memory Cards",
+        "Android Devices"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Siddharth",
+                "href": "/profile/Siddharth-164"
+            },
+            "answer_text": "Once again I'll have to reiterate this: you haven't specified your phone model and more importantly the version of Android your phone's running on. Secondly , this question is framed incorrectly - you want to move apps downloaded from Play Store to SD card. You don't want to move the Play Store app to microSD card. Anyway , the solution I'm going to propose is universal means it works across all Android versions: Root your phone and install Link2SD app from Play Store ,Partition your microSD card into two drives of which one is formatted under ext4 filesystem - this will store all of your apps and their data (you'll probably need a Linux distro like Ubuntu or a free to try windows software for this ; hope you have a Ubuntu LiveCD at hand or are already in dual-boot config) - and the other is formatted as FAT32 or exFAT - to store things like files , photos , music and videos.Set up Link2SD - Make it aware of the drive you've chosen in your card that stores apps by digging into the settings of this app. You can also search for tutorials (there's one on their website) and you're good to go.** Android 5.0 Lollipop - It definitely allows apps to write / store files on microSD card but I don't think it allows moving apps to SD card. *** Android 6.0 Marshmallow - It will allow moving apps to SD card without root , but there's a condition that you will have to use the feature called adopt storage in which the microSD card gets formatted using a Linux filesystem like ext4 instead of FAT32 or exFAT seen in Windows. The downside to this method is that your card gets tied to the phone in which it was formatted for use as adoptable storage means you'll have to backup and format your microSD card as adoptable storage every time you want to use it with a new phone. ",
+            "date": "Answered August 18, 2016",
+            "views": "1968",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Leni Enauch",
+                    "user_href": "/profile/Leni-Enauch"
+                },
+                {
+                    "user_id": "Pie Re",
+                    "user_href": "/profile/Pie-Re"
+                },
+                {
+                    "user_id": "Anadozie Chinenye",
+                    "user_href": "/profile/Anadozie-Chinenye"
+                },
+                {
+                    "user_id": "Travis Cee",
+                    "user_href": "/profile/Travis-Cee"
+                },
+                {
+                    "user_id": "Chad Oliver",
+                    "user_href": "/profile/Chad-Oliver-17"
+                },
+                {
+                    "user_id": "Tom Ward",
+                    "user_href": "/profile/Tom-Ward-124"
+                },
+                {
+                    "user_id": "Emil Trott",
+                    "user_href": "/profile/Emil-Trott"
+                },
+                {
+                    "user_id": "Muhammad Ovais",
+                    "user_href": "/profile/Muhammad-Ovais-13"
+                },
+                {
+                    "user_id": "Marc Pacey",
+                    "user_href": "/profile/Marc-Pacey-1"
+                },
+                {
+                    "user_id": "Malikpur Thakur",
+                    "user_href": "/profile/Malikpur-Thakur"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Leon May",
+                "href": "/profile/Leon-May-6"
+            },
+            "answer_text": "Thanks for A2A! You can move all the installed apps from your Phone Storage to SD card except \u2018pre-installed System Apps\u2018. Pre-installed system apps can only be moved if your Android device is rooted. So After testing lots of tools & Apps, I have got following 2 best methods to move apps to SD card to save internal storage. [Source Reference]: How to Make SD Card as default storage for Google Play Apps  #1. Moving Apps to SD Card through Application Manager There is a way around using \u2018Developer Options\u2019. By-default, this option is not available for every user. Once you have enabled developer options, now follow the steps give below: Go To Device \u2018Settings\u2019 \u2013> Scroll down and tap on \u2018Developer options\u2019 \u2013> Scroll Down and enable \u2018Force allow apps on external\u2019. This makes any app eligible to be written to external storage.Now, again go to device \u2018Settings\u2019 \u2013> \u2018Apps\u2019. Select \u2018WhatsApp\u2019 and here it is, you will get the option to \u2018Change\u2019 storage location. Just tap on \u2018Change\u2019 button and select \u2018SD Card\u2019 as default storage location. That\u2019s It.Now, you can move apps to SD card by just changing the storage location. 2. Using \u2018AppMgr III\u2019 (App 2 SD, Hide and Freeze apps) This is one of the best available apps for managing all Apps in your Android device. Apart from moving apps from phone storage to SD Card, it gives you extra features to \u2018Hide Apps\u2019 and \u2018Freeze Apps\u2019. Just Install this app and Select Apps you want to move into Internal Storage and change the location. That\u2019s IT. ",
+            "date": "Answered March 14, 2020",
+            "views": "263",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Harsh Prakash",
+                    "user_href": "/profile/Harsh-Prakash-24"
+                },
+                {
+                    "user_id": "Chad Oliver",
+                    "user_href": "/profile/Chad-Oliver-17"
+                },
+                {
+                    "user_id": "Osonwa Chukwunonso",
+                    "user_href": "/profile/Osonwa-Chukwunonso"
+                },
+                {
+                    "user_id": "Amberly Alvarado",
+                    "user_href": "/profile/Amberly-Alvarado"
+                },
+                {
+                    "user_id": "Amanda Allison",
+                    "user_href": "/profile/Amanda-Allison-72"
+                },
+                {
+                    "user_id": "Sneha Kapoor",
+                    "user_href": "/profile/Sneha-Kapoor-53"
+                },
+                {
+                    "user_id": "Harold Matthew",
+                    "user_href": "/profile/Harold-Matthew-1"
+                },
+                {
+                    "user_id": "Billy Gordan",
+                    "user_href": "/profile/Billy-Gordan"
+                },
+                {
+                    "user_id": "Matthew Morgan",
+                    "user_href": "/profile/Matthew-Morgan-190"
+                },
+                {
+                    "user_id": "Eddie Lane",
+                    "user_href": "/profile/Eddie-Lane-9"
+                }
+            ]
+        }
+    ]
+}

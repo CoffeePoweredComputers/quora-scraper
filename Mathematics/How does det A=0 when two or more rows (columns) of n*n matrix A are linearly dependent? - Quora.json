@@ -1,0 +1,45 @@
+{
+    "title": "How does det A=0 when two or more rows (columns) of n*n matrix A are linearly dependent? - Quora",
+    "tags": [
+        "Matrix Computations",
+        "Matrices (mathematics)",
+        "Linear Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Krunoslav Popovic",
+                "href": "/profile/Krunoslav-Popovic"
+            },
+            "answer_text": "det [a, \u03bba, b, c,..] , so in the beginning first two columns are linearly dependant =det [a, -\u03bba+\u03bba, b, c,..] , then the first column multipled by -lambda is added to the second column (first column should be unchanged here) =det [a, [0], b, c,..] , now we have second column full of 0\u2019s, and we do Laplace expansion on that second column =0 ",
+            "date": "Answered July 4, 2020",
+            "views": "152",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vance Faber",
+                "href": "/profile/Vance-Faber"
+            },
+            "answer_text": "Suppose row j is a linear combination of other rows. Then one property of any matrix is that you can subtract a linear combination of these other rows from row j to get a new matrix with the same determinant. When you do this, the new matrix has a row which is entirely 0. So now your question becomes why is the determinant of a matrix with a 0 row equal to 0? The definition of the determinant is a sum of products of the entries. Each of the products has one entry from every row so because the entry in row j is 0, every product is 0. This means the determinant is 0. P.S. There are several equivalent definitions of the determinant. Another one is that it the unique multi linear function on the rows which takes the value 1 on the identity matrix. Using that definition it is also easy to prove that the matrix with row j identically 0 must have 0 determinant. The linearity in the jth entry forces the value of the determinant to be 0 for the same reason that any linear function f(x) must have f(0)=0. ",
+            "date": "Answered July 4, 2020",
+            "views": "121",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Bilal Shah",
+                    "user_href": "/profile/Bilal-Shah-337"
+                },
+                {
+                    "user_id": "Timothy Norfolk",
+                    "user_href": "/profile/Timothy-Norfolk-1"
+                }
+            ]
+        }
+    ]
+}

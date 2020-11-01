@@ -1,0 +1,134 @@
+{
+    "title": "How do random number generators work? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Eliezer",
+                "href": "/profile/David-Eliezer"
+            },
+            "answer_text": "The simplest random number generator is called a \u201clinear congruential\u201d generator. The way it works is that it starts with a seed, multiplies it by a huge number, such that it is almost guaranteed to overflow the precision of the machine many, many times over, and then adds another very large number. By doing some fancy number theory I do not know about, you can choose the multiplicand and the summand so that, when applied repeatedly to any seed number, the result will hit all the numbers that the integer can hold, before it starts repeating itself. It\u2019s kind of like taking one of those old mechanical odometers in the older cars, and spinning many many times. A random number generator that does not repeat until it has hit every possible number below the maximum that the integer can hold has a marginal distribution that is uniform on that set of numbers, and if you divide the result by the maximum allowable value, you get a pseudo-random generator on the unit interval. Having a generator with a uniform distribution is a good and useful thing, as long as it doesn\u2019t start repeating too soon, so the next thing we care about in a quality random number generator is the \u201cperiod\u201d, i.e. the number of draws we can make from the generator before it starts repeating. A large period generator with a uniform marginal distribution is useful for lots of simple computing tasks, but for mathematical applications more is required. For example, Monte Carlo simulation is used to compute very high dimensional integrals, but it does not compute them accurately unless the correlation between different draws in the sequence is zero, or close to it. And, in general, mathematical applications will require many of the higher moments be zero. Many of these properties can be realized, at least to some extent, by composing linear congruential generators together in various ways. And by applying transformations to the uniform draws, i.e. applying the inverse cumulative distribution to the uniformly distributed draws, we can make a generator that is distributed according to any probability distribution we like. For those without analytic formulae for the distribution, there is also the rejection method. A nice, intuitive explanation of the way these generators work is given in Numerical Recipes, Ch 7, where I learned all of this. It is the best book I know for clean, intuitive explanations of numerical algorithms. ",
+            "date": "Answered September 21, 2019",
+            "views": "211",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gary Kulwin",
+                    "user_href": "/profile/Gary-Kulwin"
+                },
+                {
+                    "user_id": "Michael Zorn",
+                    "user_href": "/profile/Michael-Zorn-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daeyoung Lim",
+                "href": "/profile/Daeyoung-Lim-1"
+            },
+            "answer_text": "RNGs are in fact not random. They can only \u201cmimic\u201d randomness. The discussion of what randomness really is becomes very philosophical and hasn\u2019t been settled as far as I know. So all we can hope for is to create a deterministic sequence of numbers and to hope those numbers resemble what random numbers would look like. Hence, we call it a pseudo- random number generator. There are much more than a single way to construct an RNG. For a beginner, the most basic generator would be what we call the Linear congruential generator - Wikipedia. Once you have a seed number, it spits out another number sequentially according to a recurrence relation. However, in most cases, you will be using the Mersenne Twister - Wikipedia generator unless the desired level of randomness is very strict. You must note that the distribution that these RNGs are mimicking is the continuous uniform distribution. Once you can generate from a uniform distribution, there are many algorithms to transform the random numbers into random numbers from other distributions like normal, exponential, beta, and Cauchy distributions to name a few. ",
+            "date": "Answered August 9, 2018",
+            "views": "873",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joshua Kim",
+                    "user_href": "/profile/Joshua-Kim-36"
+                },
+                {
+                    "user_id": "Koushik Kumar Das",
+                    "user_href": "/profile/Koushik-Kumar-Das-4"
+                },
+                {
+                    "user_id": "Hyun Jin Lee",
+                    "user_href": "/profile/Hyun-Jin-Lee-7"
+                },
+                {
+                    "user_id": "Ravi",
+                    "user_href": "/profile/Ravi-1499"
+                },
+                {
+                    "user_id": "Michael Zorn",
+                    "user_href": "/profile/Michael-Zorn-9"
+                },
+                {
+                    "user_id": "Adrian Tambunan",
+                    "user_href": "/profile/Adrian-Tambunan"
+                },
+                {
+                    "user_id": "Tejasvi Chauhan",
+                    "user_href": "/profile/Tejasvi-Chauhan-5"
+                },
+                {
+                    "user_id": "JQ Veenstra",
+                    "user_href": "/profile/JQ-Veenstra"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Townsend",
+                "href": "/profile/David-Townsend-37"
+            },
+            "answer_text": "A random number generator on a computer is an algorithm which produces a sequence of numbers which are considered random since there is little correlation between the consecutive values. There are several different implementations, the most common is a sequence of state machines which feed outputs from one machine into the next through some xor gates and there are feedback loops which control these gates, so as the random number generates values, the values are \u2018fedback\u2019 into earlier states and this creates the randomness, the machine is tuned to give a realistic sequence of random numbers. The numbers are really \u2018pseudo\u2019 random since the the random number generator will generate the same sequence if initialize with the same values (seed), but that is usually good enough for most purposes. ",
+            "date": "Answered September 21, 2019",
+            "views": "93",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Zorn",
+                    "user_href": "/profile/Michael-Zorn-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "There are three main ways to do it. Monitor some natural phenomenon that has equally likely states, such as patterns in radioactive decay to generate your numbersUse some mechnical random number generator, which of course could easily have some bias; Vegas seems to trust dice, provided they are fair, but their dice probably cost a lot more than the ones from the game storeUse a mathematical formula that creates equally likely outcomes for as long as you want; the big downside is that it\u2019s 100% predictable IF you know what the initial value is. Initial values can be generated from \u201centropy\u201d events such as some hash on recent packets, mouse movements, or other unpredictable data ( sufficiently processed to make a reasonable initial value for a random number generator formula)Computers tend to use (3). There are electronic random number generator cards for computers, if someone\u2019s needs preclude a formulaic method. I believe they may run into the thousands of dollars for a sophisticated one, but TrueRNG, available in USB is $50 USD. TrueRNG uses electrical noise I think, for it\u2019s source of randomness. ",
+            "date": "Answered September 21, 2019",
+            "views": "154",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Zorn",
+                    "user_href": "/profile/Michael-Zorn-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mahmoud Mellal",
+                "href": "/profile/Mahmoud-Mellal"
+            },
+            "answer_text": "hi. if you think in abstract mathematics, its system based on combination as we study in algebra, but if you want to add physics in to the subject its quite difference. random in physics can means free degree of liberty also means multiple solution also means non linear process. all of them are connected. but if we use human comprehensions we can resize that. for example ask some random people about the weather condition , let say its exactly 75 degree but those people say to you as example its nice , little hot, its feel little warmer then yesterday. but no one can tell you precisely how much the its right now . as we think in global disc-our . we can build algorithm imitate that compression . but linked to physical process to resize or control its variation\u2026\u2026. ",
+            "date": "Answered August 19, 2018",
+            "views": "75",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Zorn",
+                    "user_href": "/profile/Michael-Zorn-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tanishk Gupta",
+                "href": "/profile/Tanishk-Gupta-17"
+            },
+            "answer_text": "RNG is an integral part of gaming applications today. In simple terms, the server selects a random value out of all specified values on a click. ",
+            "date": "Answered January 18, 2020",
+            "views": "93",
+            "upvotes": "0"
+        }
+    ]
+}

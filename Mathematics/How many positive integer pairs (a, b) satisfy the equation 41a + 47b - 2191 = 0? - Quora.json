@@ -1,0 +1,41 @@
+{
+    "title": "How many positive integer pairs (a, b) satisfy the equation 41a + 47b - 2191 = 0? - Quora",
+    "tags": [
+        "Integers",
+        "Number Theory",
+        "Equations",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Martin Pettet",
+                "href": "/profile/Martin-Pettet-1"
+            },
+            "answer_text": "For the moment, let's find all (not necessarily positive) integer solutions of the equation [math]41a+47b=2191[/math]. If [math](a,b)[/math] and [math](a',b')[/math] are any two such solutions, then [math]41a+47b = 2191 = 41a'+47b'[/math] so [math]41(a-a')= 47(b'-b)[/math]. Since 41 and 47 are relatively prime, [math]a-a' = 47x[/math] and [math]b'-b = 41x[/math] for some integer [math]x[/math] and so [math]a'= a-47x[/math] and [math]b' = b+41x[/math]. Therefore, if we can find one solution, say [math](a_0,b_0)[/math] then all solutions will be of the form [math](a_0-47x, b_0 + 41x)[/math] for some integer [math]x[/math]. From the relative primeness of 41 and 47 it also follows that the equation [math]41a+47b=1[/math] has a solution, say [math](a,b) = (x_0,y_0)[/math] and then [math](2191x_0, 2191y_0)[/math] will be a solution of [math]41a+47b = 2191[/math]. The Euclidean algorithm tells us how to find a solution of [math]41a+47b = 1[/math], namely write [math]47= 41+6[/math], [math]41 = 6\\cdot 6+5[/math], [math]6 = 5+1[/math] and so, working backwards, [math]1 = 6-5 = 6-(41-6\\cdot6) = -41 +7\\cdot 6 = -41 + 7\\cdot(47-41) = -8\\cdot 41 + 7\\cdot 47[/math] Therefore, [math](x_0,y_0) = (-8,7)[/math] is a solution of [math]41a+47b=1[/math] and for a solution [math](a_0,b_0)[/math] of [math]41a+47b=2191[/math], we can take [math](-8\\cdot2191,7\\cdot 2191) = (-17528, 15337)[/math]. Therefore, all solutions are of the form [math](a,b) = (-17528-47x, 15337+ 41x)[/math]. Finally, we impose the restriction that [math]a[/math] and [math]b[/math] are both positive. Thus, [math]-17528-47x>0[/math] (so [math]x <-17528/47 <-372[/math]) and [math]15337+41x>0[/math] (so [math]x>-15337/41 >-375[/math]). Therefore,[math]x= -373[/math] or [math]-374[/math], yielding two solutions in positive integers, respectively [math](a,b) = (3,44)[/math] and [math](a,b) = (50, 3)[/math]. ",
+            "date": "Answered November 4, 2018",
+            "views": "410",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Larry Storeling",
+                    "user_href": "/profile/Larry-Storeling"
+                },
+                {
+                    "user_id": "Yahya Abdal-Aziz",
+                    "user_href": "/profile/Yahya-Abdal-Aziz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Olaru",
+                "href": "/profile/Paul-Olaru"
+            },
+            "answer_text": "For such equations the answer is either \u201cinfinitely many\u201d or \u201cnot at all\u201d. If we take the greatest common divisor of 41 and 47 (which is 1), we have to check that it divides the remaining \u201c-2901\u201d term. Since it does, there is at least one solution, and there are infinitely many in fact. The Extended Euclidean Algorithm can help find one of the solutions and then the others can be obtained. I'm not sure if I can find ALL the solutions but I know for a fact there are infinitely many and I can find an infinite subset of them. ",
+            "date": "Answered November 3, 2018",
+            "views": "222",
+            "upvotes": "0"
+        }
+    ]
+}

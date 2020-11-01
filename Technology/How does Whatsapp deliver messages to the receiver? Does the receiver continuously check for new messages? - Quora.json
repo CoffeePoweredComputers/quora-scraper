@@ -1,0 +1,30 @@
+{
+    "title": "How does Whatsapp deliver messages to the receiver? Does the receiver continuously check for new messages? - Quora",
+    "tags": [
+        "Messaging",
+        "WhatsApp (product)",
+        "Text Messaging"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Baraka Andrew",
+                "href": "/profile/Baraka-Andrew"
+            },
+            "answer_text": "The receiver\u2019s phone is always connected to the server. There\u2019s a service that always runs in the background which ensures you are connected to their servers all the time, when a network is cut, it will just stay there waiting for you to come back online, once you do you get connected to the server again. Basically how it works is, user A sends a message to user B, it reaches Whatsapp servers, the server checks, is userB connected to me right now? if Yes, send the message to the user\u2019s phone, if no then put it in a queue, when the user reconnects, the server checks if userB\u2019s queue is not empty then pushes all the messages to userB\u2019s phone. Its bidirectional. You might want to read on XMPP, MQTT, you\u2019ll get to understand how they work, there\u2019s also Long polling. Each of these fit based on the application. I choose a queue data structure because I think it\u2019s obvious on messaging applications due to its First In First Out (FIFO) rule, do they use it in memory or use some kinda database idk. You get the idea though. ",
+            "date": "Answered January 13, 2017",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Costas Vourtsas",
+                    "user_href": "/profile/Costas-Vourtsas"
+                },
+                {
+                    "user_id": "Raj Sharma",
+                    "user_href": "/profile/Raj-Sharma-347"
+                }
+            ]
+        }
+    ]
+}

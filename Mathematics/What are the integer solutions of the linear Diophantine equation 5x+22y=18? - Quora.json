@@ -1,0 +1,54 @@
+{
+    "title": "What are the integer solutions of the linear Diophantine equation 5x+22y=18? - Quora",
+    "tags": [
+        "Diophantine Equations",
+        "Integers",
+        "Number Theory",
+        "Linear Algebra",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Goldstone",
+                "href": "/profile/Richard-Goldstone"
+            },
+            "answer_text": "There\u2019s a straightforward algorithm for solving linear congruences via the Euclidean algorithm for greatest common divisors, but with small coefficients, ad hoc methods work fine as well. If we view the equation [math]5x+22y=18[/math] modulo 5, it becomes [math]2y \\equiv 3 \\equiv -2 \\pmod{5}, \\quad y \\equiv -1 \\pmod{5}, \\quad y=-1 + 5t, \\quad t \\in \\mathbb{Z}.[/math] Substitute [math]y=-1+5t[/math] into [math]5x+22y=18[/math], do some simple algebra, and get [math]x=8\u201322t,[/math] so the general solution is [math]\\boxed{x=8\u201322t, \\quad y=-1+5t}[/math] These two results give all solutions as [math]t[/math] ranges over all integers (obviously there are infinitely many solutions). But perhaps it should be noted that there is no uniqueness for the solution formulas. For example, we can change both occurrences of the parameter [math]t[/math] by any 1\u20131 onto function of the integers and get different but just as valid parametric formulas using [math]f(t)[/math] in place of [math]t[/math]. These formulas will look different but output the same solution pairs. We cannot simultaneously have [math]8\u201322t>0[/math] and [math]-1+5t>0[/math] for any integer value of [math]t[/math], since this would require [math]\\frac15 < t < \\frac{4}{11}[/math], so there are no solutions with both [math]x[/math] and [math]y[/math] positive. The first few solutions [math](x,y)[/math] for [math]t=0,1,2,3[/math] are [math](8,-1)[/math], [math](-14,4)[/math], [math](-36,9)[/math], [math](-58,14)[/math]. The slope of the line is [math]-5/22[/math], so each time [math]x[/math] goes up (or down) by 22, [math]y[/math] goes down (or up) by 5. ",
+            "date": "Answered January 14, 2020",
+            "views": "339",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "Chakravarty",
+                    "user_href": "/profile/Chakravarty"
+                },
+                {
+                    "user_id": "Dennis Stevenson",
+                    "user_href": "/profile/Dennis-Stevenson-1"
+                },
+                {
+                    "user_id": "Vance Faber",
+                    "user_href": "/profile/Vance-Faber"
+                },
+                {
+                    "user_id": "Victor Duarte",
+                    "user_href": "/profile/Victor-Duarte-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Douglas Keyes",
+                "href": "/profile/Andrew-Douglas-Keyes"
+            },
+            "answer_text": "I skipped my Diophantine classes at university so I tend to do these by the seat of my pants, whatever that means. Write he equation as [math]x = \\frac{{18 - 22y}}{5} = \\frac{{15 - 20y + 3 - 2y}}{5} = 3 - 4y + \\frac{{3 - 2y}}{5}[/math]. Now the numbers are small enough for inspection. The values of [math]y[/math] for which 5 divides [math]3\u20132y[/math] are -1,4,9, \u2026 ah ha, a pattern. This is an arithmetic sequence with general term [math]-1+5t[/math]. Then we can write after substituting back for y and get [math]x = 8 - 22t[/math]. Note that there are an infinity of ways to write these solutions. I skipped my Diophantine classes at university so I tend to do these by the seat of my pants, whatever that means. Write he equation as [math]x = \\frac{{18 - 22y}}{5} = \\frac{{15 - 20y + 3 - 2y}}{5} = 3 - 4y + \\frac{{3 - 2y}}{5}[/math]. Now the numbers are small enough for inspection. The values of [math]y[/math] for which 5 divides [math]3\u20132y[/math] are -1,4,9, \u2026 ah ha, a pattern. This is an arithmetic sequence with general term [math]-1+5t[/math]. Then we can write after substituting back for y and get [math]x = 8 - 22t[/math]. Note that there are an infinity of ways to write these solutions. ",
+            "date": "Answered January 15, 2020",
+            "views": "91",
+            "upvotes": "0"
+        }
+    ]
+}

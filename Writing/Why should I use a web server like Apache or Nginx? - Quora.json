@@ -1,0 +1,54 @@
+{
+    "title": "Why should I use a web server like Apache or Nginx? - Quora",
+    "tags": [
+        "Local Server Testing",
+        "Web Servers",
+        "Servers (computers)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Miguel Paraz",
+                "href": "/profile/Miguel-Paraz"
+            },
+            "answer_text": "Putting Apache or nginx in front of a scripting language's web server gives a layer of protection against the Internet. One can think of it as an application-layer firewall which will deal with requests and has a chance to look at them, before forwarding to the more fragile inner layer. ",
+            "date": "Answered March 22, 2013",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "NIcolae Tarlapan",
+                    "user_href": "/profile/NIcolae-Tarlapan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Kurlak",
+                "href": "/profile/John-Kurlak"
+            },
+            "answer_text": "While you technically can use the Flask server for deployment, it's not a good idea, and here's why: the Flask server was designed to be a development server.  What this means is that it is most likely lacking a number of features of a production server.  For example, it might not scale well for a large number of users.  It might not have GZIP support.  It might not be multi-threaded.  It might not be as secure as it needs to be.  And I'm sure there are a number of other reasons.  In summary, if you deploy using the Flask server, your website might run slowly and be open for attacks.  You can think of it like going to a Chinese restaurant and ordering pizza.  Sure, you'll get pizza, but it won't be as good as pizza prepared by someone from Italy who has been making it for twenty years. ",
+            "date": "Updated October 8, 2015",
+            "views": "15",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "NIcolae Tarlapan",
+                    "user_href": "/profile/NIcolae-Tarlapan"
+                },
+                {
+                    "user_id": "Anisha Kumar",
+                    "user_href": "/profile/Anisha-Kumar-7"
+                },
+                {
+                    "user_id": "Shobhit Bakliwal",
+                    "user_href": "/profile/Shobhit-Bakliwal"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                }
+            ]
+        }
+    ]
+}

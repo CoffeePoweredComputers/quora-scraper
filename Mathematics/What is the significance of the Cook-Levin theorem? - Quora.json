@@ -1,0 +1,77 @@
+{
+    "title": "What is the significance of the Cook-Levin theorem? - Quora",
+    "tags": [
+        "Computational Complexity Theory",
+        "Theoretical Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marc Khoury",
+                "href": "/profile/Marc-Khoury-1"
+            },
+            "answer_text": "Nothing I say in the following few paragraphs could possibly convey the importance of the Cook-Levin Theorem. It is one of the most important theorems in all of computer science.  The goal of complexity theory is to identify interesting complexity classes and their relationships to each other. The notion of completeness is probably one of the few approaches we have to separate complexity classes. It allows us to focus only on the hardest problems in any complexity class. The Cook-Levin Theorem is actually very simple to state. Consider the following problem:[math]SAT = \\{\\phi : \\phi \\text{ is satisfiable}\\}[/math] Given a boolean formula [math]\\phi[/math] SAT asks if there exists some assignment [math]x[/math] to the variables of [math]\\phi[/math] such that [math]\\phi(x)[/math] evaluates to true. This problem is clearly in NP. The Cook-Levin Theorem then states: SAT is NP-Complete. This means that for every problem [math]L \\in[/math] NP I can reduce [math]L[/math] to SAT in polynomial time, meaning that for a given input [math]y \\in \\{0,1\\}^*[/math] I can construct a boolean expression [math]\\phi[/math] that is satisfiable if and only if [math]y \\in L[/math]. In essence SAT is the hardest problem in NP, since I can solve any problem with only polynomial time overhead if I have an algorithm for SAT. The fact that such a problem even exists is remarkable.  Cook proved his theorem by brute force. For any language [math]L \\in [/math] NP he considered the non-deterministic Turing machine that decided that language. Then he encoded every single aspect of that machine as a boolean formula. The proof is deep, insightful, and laborious.  It turns out that a bunch of problems are NP-Complete. But now thanks to the Cook-Levin theorem we have a much easier technique to show that problem NP-Complete. To show any new problem is NP-Complete one need only provide a polynomial time reduction from a known NP-Complete problem to your new problem. Polynomial time reductions are composable, so if I have a reduction from SAT to a new problem then I also have a reduction from every problem in NP to my new problem by first applying Cook's reduction and then my own. This is exactly what Richard Karp did in his seminal work showing that 21 important problems are NP-Complete. Now you can start asking the following question: do other complexity classes have complete problems. It turns out that a lot of complexity classes have complete problems and that SAT is a very natural complete problem. Variants of SAT turn out to be the canonical complete problems at every step of the polynomial hierarchy, all the way up to PSPACE.  The reduction used in the proof of the Cook-Levin theorem has applications all throughout complexity theory. It can be used to prove that, assuming P=NP, there exists efficient methods to actually produce solutions to the decision problems in NP, not just verify that a solution exists. This is easily seen when you notice that the reduction used in the Cook-Levin theorem maps a certificate for a language to a computational path in a non-deterministic Turning machine in such a way that the certificate can be retrieved. The Cook-Levin theorem can be used to show results about the relationship between each step of the polynomial hierarchy and NP given certain oracles. It comes into play when showing that TQBF (totally quantified boolean formulas) is PSPACE-Complete, that #SAT is #P-Complete, and that P [math]\\subset[/math] P\\poly.  The significance of the Cook-Levin theorem cannot be understated. It is one of the most important breakthroughs in complexity theory and it would be hard to imagine what the field would look like without the notion of complete problems. ",
+            "date": "Answered February 6, 2014",
+            "views": "48",
+            "upvotes": " View 38 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yupan Liu",
+                    "user_href": "/profile/Yupan-Liu"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Vadim Yakovlevich",
+                    "user_href": "/profile/Vadim-Yakovlevich"
+                },
+                {
+                    "user_id": "Bennett Gould",
+                    "user_href": "/profile/Bennett-Gould"
+                },
+                {
+                    "user_id": "Saisampath Mahajan",
+                    "user_href": "/profile/Saisampath-Mahajan"
+                },
+                {
+                    "user_id": "Hitesh Gorana",
+                    "user_href": "/profile/Hitesh-Gorana-3"
+                },
+                {
+                    "user_id": "Suraj Kumar",
+                    "user_href": "/profile/Suraj-Kumar-1459"
+                },
+                {
+                    "user_id": "Nicholas Mwakatobe",
+                    "user_href": "/profile/Nicholas-Mwakatobe"
+                },
+                {
+                    "user_id": "Hamish Reddy",
+                    "user_href": "/profile/Hamish-Reddy"
+                },
+                {
+                    "user_id": "Mayank Tiwari",
+                    "user_href": "/profile/Mayank-Tiwari-74"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kay Scarpetta",
+                "href": "/profile/Kay-Scarpetta-8"
+            },
+            "answer_text": "The Cook-Levin theorem shows that SAT is atleast as hard as all other problems in NP by formulating the execution of a non deterministic polynomial time turing machine for a language in NP as a problem in CNF whose satisfying assignments are inputs decided to be in the language that the turing machine accepts. A strong statement of this kind is extremely important since determining lower bounds for problems to classify them into complexity classes is equivalent to finding all possible algorithms for solving a problem which is equivalent to Hilbert\u2019s 10th problem which is undecidable. Why do you need lower bounds? To make statements like P!=NP. If P=NP, you would need to prove that every problem in NP is solvable in polynomial time. Instead if you show that the hardest problem in NP is solvable in polynomial time, then NP=P. If you show that atleast one problem in NP is not solvable in polynomial time, you can say P!=NP. For both these cases it would be enough to prove a lower bound or upper bound for a single problem SAT! Complexity theory is all about making conjectures of complexity classes and finding problems in those classes that are the hardest so that to prove a conjecture true or false, we would narrow down the efforts on those problems. Sometimes hardest problems in complexity classes are not known to exist and yet existence of complexity classes is conjectured using the relationships to other classes. These conjectures are harder to prove. Some try to define a complete language which is intimately tied to the notion of Turing machines or circuits. These languages are not very helpful since they do not correspond to a known real problem instance in the real world and less likely to be taken to be solved. And last, because all NP problems reduce to SAT, there have been tremendous efforts into algorithms for checking satisfiability of CNF formulas. There are efficient SAT-solvers in the market that can check satisfiability for formulas with thousands of variables, yet they are not complete in the sense they can return unsatisfiable for a satisfiable formula, since there is no algorithm discovered that runs in polynomial time as of now. ",
+            "date": "Answered September 29, 2020",
+            "views": "66",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Bill Smith",
+                    "user_href": "/profile/Bill-Smith-1326"
+                }
+            ]
+        }
+    ]
+}

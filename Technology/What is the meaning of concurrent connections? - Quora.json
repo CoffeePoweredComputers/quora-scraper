@@ -1,0 +1,88 @@
+{
+    "title": "What is the meaning of concurrent connections? - Quora",
+    "tags": [
+        "Computer Programming Word Definitions, Terminology, and Jargon",
+        "Concurrency (computer science)",
+        "Connections",
+        "Word Definitions, Terminology, and Jargon",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Eric des Courtis",
+                "href": "/profile/Eric-des-Courtis"
+            },
+            "answer_text": "It typically means that many sockets (probably TCP/IP sockets) are connected at the same time.  For example an HTTP server disconnects after the client has received all of the files it requires or after the pipeline has exceeded its maximum number of requests (WebSockets are an exception to this by the way). This means that if you have say 1 million users on HTTP you may only have say 80,000 concurrent connections at any one time. If on the other hand you have 1 million users using WebSockets you will have 1 million concurrent connections. When designing a system it's important to know how many concurrent connections we intend to serve. This is because different techniques are used to get vertical and horizontal scaling. A server that is designed to serve only 50 concurrent connections will not generally use the same techniques that a server designed to serve 1 million concurrent connections will.  Say you need only 50 concurrent connections you could for example opt to use separate processes or threads for each connection. If on the other hand you need to handle more than say 100. You will probably need to switch to something like the select() method. If you need millions it gets more complicated because you need fault tolerance. You don't want for example a single error to take down the entire system so you need to find ways to isolate your connections. That aside looking at it purely from a performance point of view you need to use things like kqueue() and epoll() to get this sort of vertical scaling (search for the C10K problem on google). For the fault tolerance you can get this by adding more servers and spreading the work and looking for technologies that specialize in fault tolerance and isolation such as Erlang and Elixir.  ",
+            "date": "Answered April 21, 2016",
+            "views": "123",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arun Kumar",
+                    "user_href": "/profile/Arun-Kumar-2080"
+                },
+                {
+                    "user_id": "Ravisankar Sivasubramaniam",
+                    "user_href": "/profile/Ravisankar-Sivasubramaniam-1"
+                },
+                {
+                    "user_id": "Jean Hsu",
+                    "user_href": "/profile/Jean-Hsu-1"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Mitesh Joshi",
+                    "user_href": "/profile/Mitesh-Joshi"
+                },
+                {
+                    "user_id": "Katherine Giron Pe",
+                    "user_href": "/profile/Katherine-Giron-Pe-1"
+                },
+                {
+                    "user_id": "Peter Menhart",
+                    "user_href": "/profile/Peter-Menhart"
+                },
+                {
+                    "user_id": "Gregory Ranger",
+                    "user_href": "/profile/Gregory-Ranger"
+                },
+                {
+                    "user_id": "Arif Hussain Bangash",
+                    "user_href": "/profile/Arif-Hussain-Bangash"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bernhard St\u00f8cker",
+                "href": "/profile/Bernhard-St\u00f8cker"
+            },
+            "answer_text": "Concurrency in programming is having asynchronous workers or processes doing tasks. Asynchronous connection are not much different. Here is an example of one of our background services. The company I work for develops software for workforce management mainly for call centers. To receive data from their telephone system we establish connections e.g. via TCP sockets (depending on the telephone system. Sometimes we neeed to fetch data via http as well). Since every customer has it's own installation we need to handle many connections in parallel. They are concurrent connections to our system. You see the same in e.g. a whatsapp chat within groups. You send a message and all members of that group get this message. I don't know the implementation details here, but I would assume that whatsapp connects via TCP socket to some whatsapp server which updates all its related clients.  Especially functional languages like Erlang or Elixir have great concurrency features and libraries (maybe that's why whatsapp was written in Erlang). ",
+            "date": "Answered April 28, 2016",
+            "views": "52",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jean Hsu",
+                    "user_href": "/profile/Jean-Hsu-1"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Jeni Gooley",
+                    "user_href": "/profile/Jeni-Gooley"
+                },
+                {
+                    "user_id": "Katherine Giron Pe",
+                    "user_href": "/profile/Katherine-Giron-Pe-1"
+                }
+            ]
+        }
+    ]
+}

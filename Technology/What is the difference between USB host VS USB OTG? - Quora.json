@@ -1,0 +1,52 @@
+{
+    "title": "What is the difference between USB host VS USB OTG? - Quora",
+    "tags": [
+        "USB On-The-Go (OTG)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sushil Kumar Yadav",
+                "href": "/profile/Sushil-Kumar-Yadav-42"
+            },
+            "answer_text": "OTG = On The Go = A protocol for two OTG devices to negotiate who will be HOST.These two devices need to know exactly what they are connecting to before you connect the cable. USB On-The-Go, often abbreviated to USB OTG or just OTG, is a specification first used in late 2001 that allows USB devices such as digital audio players or mobile phones to act as a host, allowing other USB devices such as USB flash drives, digital cameras, mice or keyboards to be attached to them. Difference in working of Host & OTG peripheral: Two connected devices take turns functioning as the bus host and the peripheral, thus maintaining the current USB host/peripheral architecture model. The OTG host always initiates communication with a normal bus-enumeration process (bus reset, acquisition of USB descriptors, and peripheral-device configuration). After these steps, the device serving as OTG host may transfer data to and from an OTG device performing as a peripheral. The OTG specification defines a mechanism for exchanging the roles of OTG host and peripheral. For example a your desktop PC is a USB host, and any peripherals that you plug into it are clients. Extra Details : There are two types of OTG devices: dual-role devices and peripheral-only devices. A dual-role device can function as either a USB peripheral or an OTG host. Dual-role devices must be able to supply at least 8 mA on VBUS. Though a peripheral-only device has no host capabilities, it must be able to request a dual-role device to communicate with it. Dual-role devices must minimally operate at full speed. Operation at high speed is optional. Peripheral-only OTG devices may operate at any of USB's three signaling rates. ",
+            "date": "Answered October 19, 2016",
+            "views": "276",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Lopingco",
+                    "user_href": "/profile/Joseph-Lopingco"
+                },
+                {
+                    "user_id": "Paulin Kantue",
+                    "user_href": "/profile/Paulin-Kantue"
+                },
+                {
+                    "user_id": "Lewis GM Laws",
+                    "user_href": "/profile/Lewis-GM-Laws"
+                },
+                {
+                    "user_id": "Ehsan Habib",
+                    "user_href": "/profile/Ehsan-Habib-2"
+                },
+                {
+                    "user_id": "Null Byte",
+                    "user_href": "/profile/Null-Byte-1"
+                },
+                {
+                    "user_id": "Chris Stucky",
+                    "user_href": "/profile/Chris-Stucky"
+                },
+                {
+                    "user_id": "Daniel Manzano",
+                    "user_href": "/profile/Daniel-Manzano-10"
+                },
+                {
+                    "user_id": "Gloria Magtrayo",
+                    "user_href": "/profile/Gloria-Magtrayo"
+                }
+            ]
+        }
+    ]
+}

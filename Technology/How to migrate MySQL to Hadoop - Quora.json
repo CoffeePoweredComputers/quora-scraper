@@ -1,0 +1,55 @@
+{
+    "title": "How to migrate MySQL to Hadoop - Quora",
+    "tags": [
+        "Apache Hadoop",
+        "MySQL",
+        "Big Data",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shawn Hermans",
+                "href": "/profile/Shawn-Hermans"
+            },
+            "answer_text": "Original question: How do I migrate MySQL to Hadoop? There are many different ways to migrate MySQL data into Hadoop. Before I can figure out the best way to do that, I need to have a better understanding of your use case. In my experience, there are a few typical use cases. TLDR; Sqoop is your best option if you want to do period data dumps of a MySQL database into a Hadoop cluster. Kafka is your best option if you want to replicate a MySQL database in near real-time, but it adds a lot of additional complexity. Lastly, you can use HBase or Accumulo as a replacement for MySQL, but don't expect the migration to be a simple and easy process. Don't choose this option unless you absolutely need it. Use Case 1: Using Hadoop as a Data Lake with Batch Updates In this use case, you will continue to use the MySQL database, but replicate the data into a Hadoop-based data lake. Simply put, a data lake[1] collects data from a bunch of different data sources and puts them all in the same place. A typical data lake will contain data from multiple different sources. This may include data dumps from relational databases with different vendors. It may include semi-structured data such as web server logs. For this use case, I suggest updating the data in the data lake using a periodic batch process. The batch process can run daily, weekly, or even monthly depending on how often you need to update the data. You can also choose to do incremental updates or full updates. There are various options available to import MySQL data into a Hadoop cluster. Here are a few options I have used to transfer data from relational databases (Oracle and Postgres) to Hadoop. Sqoop is designed as a way to transfer data between Hadoop and structured datastores (e.g. relational databases). In my experience, Sqoop is the best tool to use if you want to reliably replicate an entire database to Hadoop. The Sqoop user guide[2] has information on options for importing data into Hadoop. More than likely, you will want to import the data into Hive or directly into HDFS using a file format like Parquet or Avro.If you are comfortable with using Python, Java, or Scala, you can use Spark to read data from JDBC databases, including MySQL[3]. I would use this option if you would rather keep the data in a MySQL database and just want to do your processing on Hadoop. You can use it to replicate data, but Sqoop is probably a better choice for replication.Embulk is another open-source bulk data transfer tool. Embulk is a good option if you work with a lot of non-Hadoop, non-database sources. As an example, you could use Embulk to store the history of a Slack channel in a database or on a Hadoop cluster. It has plugins for Amazon S3, MySQL, Postgres, Oracle, Google Cloud Storage, Amazon RedShift, MongoDB, Jira, Google Analytics, Elasticsearch, Slack, Google Spreadsheets, and many, many more. I have run into a few issues when trying to import binary data types from Oracle, but I do not know if the MySQL plugin has similar issues.Lastly, you will probably need a scheduler to run the batch jobs. Oozie, Falcon, Azkaban are the three most popular Hadoop workflow engines. If the workflow isn't too complicated, you could also use Cron. Use Case 2: Using Hadoop as a Data Lake with Real-Time Updates If you want to update the data in near real-time, you will probably want to use something like Kafka[4]. A word of warning, updating data in real-time is more complicated than batch updates. I would suggest avoiding real-time updates unless you absolutely need them as they add a lot of extra complexity. Use Case 3: Using Hadoop as a Scalable, Real-time Read/Write Data Store Replacing MySQL (or any OLTP database for that matter) with Hadoop is much more complicated than just using Hadoop as a data lake. Migrating from one database to another (e.g. MySQL to Oracle or MySQL to Postgres) is rarely a trivial task. Migrating a traditional OLTP database to Hadoop is even more difficult. I would not recommend migrating to Hadoop unless you are running into significant issues with your existing solution and cannot find a way to solve them within MySQL. Apache HBase and Apache Accumulo are the two open source, NoSQL data stores that are bundled with most Hadoop distributions. Accumulo and HBase are key/value stores and work differently than your typical relational database. Apache Phoenix adds a user-friendly SQL layer on top of HBase but does not abstract away all of the differences between a key/value store and an RDBMS. In other words, do not expect HBase or Accumulo to function as a drop-in replacement for MySQL. Luckily, if you are replacing MySQL with HBase or Accumulo, you shouldn't need to worry about setting up something to sync the data on a periodic basis. You just need to figure out a way to do a one-time migration of the data. As was the case with batch updates, there a few different ways to migrate the data into HBase or Accumulo. Sqoop supports importing data into both HBase[5] and Accumulo[6]. Since they use a different model from a traditional relational database, you may need to make changes to your existing data model.Pig also supports storing data into HBase[7] and Accumulo[8], but it does not support reading from a MySQL database, so you would have to use Sqoop to transfer the data to Hadoop and then use Pig to store it in HBase or Accumulo. You may want to consider this option if you need to transform your data before storing it in HBase or Accumulo.Summary and Recommendations A Hadoop-based data lake is a great way to get started with Hadoop. Usually, there will be minimal impact on existing operational systems as you can schedule batch jobs during normal system maintenance or during non-peak hours. Sqoop is probably the best tool to use for copying database tables to Hadoop. Updating the data lake in near real-time is possible, but adds a lot of complexity. I recommend using smaller batch times (e.g. hourly instead of daily) instead of more complicated solutions. If you absolutely need faster updates (more than likely you really don't), use something like Kafka. Lastly, replacing a traditional OLTP system like MySQL with Hadoop is not a trivial task. Hadoop's NoSQL datastores work differently than traditional relational databases. If you really do need a Hadoop-based OLTP replacement (you probably don't), then make sure you are willing to commit the required time, expertise, and cost needed to migrate from MySQL to a NoSQL solution. Footnotes[1] Data Lake vs Data Warehouse: Key Differences[2] Sqoop User Guide (v1.4.6)[3] Connecting to SQL Databases using JDBC[4] Streaming MySQL tables in real-time to Kafka[5] Sqoop User Guide (v1.4.6)[6] Sqoop User Guide (v1.4.6)[7] Built In Functions[8] Built In Functions",
+            "date": "Answered May 2, 2017",
+            "views": "46",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kamar Hamzah",
+                    "user_href": "/profile/Kamar-Hamzah"
+                },
+                {
+                    "user_id": "Hammad Jafri",
+                    "user_href": "/profile/Hammad-Jafri-1"
+                },
+                {
+                    "user_id": "Son Mai",
+                    "user_href": "/profile/Son-Mai-20"
+                },
+                {
+                    "user_id": "Asdf Asdf",
+                    "user_href": "/profile/Asdf-Asdf-1127"
+                },
+                {
+                    "user_id": "Satish Satish",
+                    "user_href": "/profile/Satish-Satish-36"
+                },
+                {
+                    "user_id": "Martin Soderstrom",
+                    "user_href": "/profile/Martin-Soderstrom-1"
+                },
+                {
+                    "user_id": "Saquib Rajvi Ahmed",
+                    "user_href": "/profile/Saquib-Rajvi-Ahmed"
+                },
+                {
+                    "user_id": "Marwan Zakariya",
+                    "user_href": "/profile/Marwan-Zakariya"
+                }
+            ]
+        }
+    ]
+}

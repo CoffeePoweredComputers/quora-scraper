@@ -1,0 +1,30 @@
+{
+    "title": "How to stop WiFi jammers - Quora",
+    "tags": [
+        "Signal Jammer",
+        "Cell Phone Jammers",
+        "Wireless Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Leyno Zappa",
+                "href": "/profile/Leyno-Zappa"
+            },
+            "answer_text": "It\u2019s most likely not intentional jamming, and there may not be much you can do about it. WiFi operates in an unlicensed part of the 2.4 Ghz spectrum known as the ISM (industrial, scientific, medical) band which is also used by security cameras, cordless phones, and baby monitors. FCC Part 15 regulations limit these emissions to < 100 mw. This part of the spectrum is an RF soup. To make matters worse, WiFi is a broadband spread-spectrum signal which is hard to differentiate from background noise. This makes it difficult to locate the source of a signal with radio direction-finding equipment unless you\u2019re almost on top of it. This same property also makes WiFi difficult to jam, although it can be done. Switch your wireless routers or access points to another channel and see if the interference goes away. Most are set from the factory to channel 6, and few people change the default setting. If your router is a dual-band type capable of operation on the 5 Ghz band, try those channels. Less traffic so they should be quieter. Or better yet, run ethernet cable everywhere you can so all of your desktop computers have a wired connection. ",
+            "date": "Answered April 22, 2020",
+            "views": "95",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Eric Hakanson",
+                "href": "/profile/Eric-Hakanson-1"
+            },
+            "answer_text": "The simple answer is to unplug them, or remove the battery. But you have to find them first. That can be tricky. The easiest method to describe is using a spectrum analyzer and a directional antenna, but that works best outdoors, and most people don\u2019t have easy access to these tools. The part that makes this particularly difficult is that there is pretty constant WiFi traffic. Maybe there is less in the early morning, but the jammer might be off then as well. So here are some steps to take: How do you know there is a jammer? If suddenly your traffic goes to zero, that\u2019s a pretty good clue. Other than that, it just might be interference from other access points. You can get a clue about this from the SSIDs that are available to connect to. If you can\u2019t get any traffic sometimes, and there are no other SSIDs to connect to, then you have a pretty good clue there is a jammer. I doubt that happens much however.On a spectrum analyzer, the edges of the jammer spectrum will look different than WiFi traffic. That\u2019s a great clue, but again with less-available tools. There are low-cost SDR receivers that can be used for this; the only real question is the frequency coverage & bandwidth of the one you find.Once you know there is a jammer, finding it is the next step. I think the simplest way to do this is to connect to your access point with your laptop, tablet, or phone. Then walk around to see where you get good throughput & where you don\u2019t. But there are many reasons you\u2019ll get poor throughput. So you\u2019ll have to sort out if this is because of a jammer, poor signal strength, or interference from other access points. Signal strength is relatively easy, and you should get some throughput even with other access points competing for connections; if your throughput drops to zero, that\u2019s a pretty good clue.You may have to move your access point, or use a repeater, to be able to get enough signal to continue the search.How do you know when you\u2019ve found the jammer? If you see a plain box with an antenna, or better yet multiple antennas of different sizes, you\u2019ve probably found it.If you have access to the suspected jammer, and can turn it off, that\u2019s a great test to prove it\u2019s a jammer. If you have no throughput, then turning off the box suddenly gives a lot, that\u2019s pretty good evidence.The hardest part of this, unfortunately, is if the jammer is one someone else\u2019s property. You have to negotiate with the owner to fix the problem. This can range from them not even knowing that the jammer is there (say a friend is pranking them) to being totally belligerent. In the latter case you\u2019ll have to get the FCC (or other regulator in other countries) involved. They probably get lots of cases of people complaining about \u201cinterference\u201d when it\u2019s just too many people trying to use WiFi. The 2.4 GHz band also gets used for lots of non-WiFi RF stuff, and you just have to live with it. If you know there is a jammer, and have evidence to prove it (a spectrum analyzer screenshot is perfect for this), this will help a lot.",
+            "date": "Answered April 22, 2020",
+            "views": "38",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "title": "How to use NOR gates to implement the Boolean expressions X=(A+B) (C+D) - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Seshadri Kesavan",
+                "href": "/profile/Seshadri-Kesavan"
+            },
+            "answer_text": "We know De Morgan's theorem: [math]\\overline{X+Y} = \\overline{X}.\\overline{Y}[/math] So, [math]\\overline{\\overline{X}+\\overline{Y}} = \\overline{\\overline{X}}.\\overline{\\overline{Y}}[/math] By theorem of Boolean Algebra, we know that [math]\\hspace{1mm} \\overline{\\overline{X}} = X.[/math] Therefore, [math]\\overline{\\overline{X}+\\overline{Y}} = X.Y[/math] Think of X as (A+B) and Y as (C+D). [math]\\overline{\\overline{(A+B)}+\\overline{(C+D)}} = (A+B).(C+D)[/math] Now recognize that the equation of NOR gate is: [math]Y = \\overline{(A+B)}[/math] Use a NOR gate to find [math]\\hspace{1mm} \\overline{(A+B)}.\\hspace{1mm}[/math] Use another NOR gate to find [math]\\hspace{1mm} \\overline{(C+D)}.\\hspace{1mm}[/math] Use another NOR gate to NOR these two outputs to get [math]\\hspace{1mm}(A+B).(C+D) \\hspace{1mm}[/math] as we have derived it above (by applying De Morgan's theorem). Hence the logic circuit would be:  ",
+            "date": "Answered January 13, 2019",
+            "views": "12",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kavitha Rathore",
+                    "user_href": "/profile/Kavitha-Rathore"
+                },
+                {
+                    "user_id": "Rubina Das",
+                    "user_href": "/profile/Rubina-Das-1"
+                },
+                {
+                    "user_id": "Abhishek Oza",
+                    "user_href": "/profile/Abhishek-Oza-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gregory Schoenmakers",
+                "href": "/profile/Gregory-Schoenmakers"
+            },
+            "answer_text": "We can write X\u2019 = ( (A+B)(C+D) )\u2019 = (A+B)\u2019 + (C+D)\u2019 (by De-Morgan\u2019s Theorem) Therefore, X = ( (A+B)\u2019 + (C+D)\u2019 )\u2019 which is an equation written in a form that can be implemented exclusively with NOR gates.  ",
+            "date": "Answered April 26, 2018",
+            "views": "28",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shaleheen Oyon",
+                    "user_href": "/profile/Shaleheen-Oyon-\u09b8\u09be\u09b2\u09c7\u09b9\u09c0\u09a8-\u0985\u09df\u09a8"
+                },
+                {
+                    "user_id": "Rubina Das",
+                    "user_href": "/profile/Rubina-Das-1"
+                },
+                {
+                    "user_id": "Ritesh",
+                    "user_href": "/profile/Ritesh-185"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "  So by DeMorgan's theorem,  The implementation is as shown below.  ",
+            "date": "Answered December 28, 2018",
+            "views": "668",
+            "upvotes": "0"
+        }
+    ]
+}

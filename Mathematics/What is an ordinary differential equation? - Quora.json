@@ -1,0 +1,34 @@
+{
+    "title": "What is an ordinary differential equation? - Quora",
+    "tags": [
+        "Ordinary Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "Obtain the time-varying electric charge [math]q(t)[/math] on a capacitor in an RLC series electrical circuit. There is no external voltage [math]E(t) = 0[/math] which means the circuit is discharging the capacitor. [math]L = 1, R = 6, C = \\frac{1}{9}, E(t) = 0[/math] [math]q(0) = q_{0}, i(0) = i_{0}[/math] initial conditions [math]L\\frac{d^2q}{dt^2} + R\\frac{dq}{dt} + \\frac{1}{C}q = E(t)[/math]  Assume the circuit elements, inductor [math]L[/math], resistor [math]R[/math], and capacitor [math]C[/math], all have the correct units. Then, this is a homogenous linear second order differential equation with constant coefficents. [math]Lq''(t) + Rq'(t) + \\frac{1}{C}q(t) = E(t), E(t) \\equiv 0[/math] OR [math]q''(t) + 6q'(t) + 9q(t) = 0[/math] Let [math]q(t) = e^{rt}[/math] be a fundamental solution. There should be two fundamental solutions to a second order equation. [math]q(t) = e^{rt}, q'(t) = re^{rt}, q''(t) = r^2e^{rt}[/math] Substitute [math]q(t)[/math] and its derivatives into the original differential equation. [math]r^2e^{rt} + 6re^{rt} + 9e^{rt} = 0[/math] Then, divide by [math]e^{rt}[/math] to get the characteristic polynomial. The roots [math]r[/math] provide the general solution to the original differential equation. [math]r^2 + 6r + 9 = 0 = (r + 3)^2[/math] This is a real root of multiplicity 2 as given in the original question. The reader should be able to substitute [math]r = (-3)[/math] into the equation pattern given.  A second order equation has two constants of integration. Use the initial conditions to find them. [math]q(0) = q_{0}, i(0) = i_{0}[/math] initial conditions Observe that the current [math]i(t) = \\frac{dq}{dt}(t)[/math] is the first time derivative of the charge. [math]q(t) = k_{1}e^{-3t} + k_{2}te^{-3t}[/math] [math]i(t) = \\frac{dq}{dt}(t) = (-3)k_{1}e^{-3t} + k_{2}e^{-3t} + (-3)k_{2}te^{-3t}[/math] Set each equation to time [math]t = 0[/math] to create a system of linear equations. [math]q(0) = k_{1}e^{0} + k_{2}(0)e^{0} = q_{0}[/math] [math]i(0) = (-3)k_{1}e^{0} + k_{2}e^{0} - 3k_{2}(0)e^{0} = i_{0}[/math] Solve for [math]k_{1}, k_{2}[/math]. [math]k_{1} = q_{0}[/math] [math](-3)k_{1} + k_{2} = i_{0} \\iff k_{2} = (i_{0} + 3k_{1}) = (i_{0} + 3q_{0})[/math]  Answer [math]q(t) = q_{0}e^{-3t} + (i_{0} + 3q_{0})te^{-3t}[/math] ",
+            "date": "Updated September 20, 2020",
+            "views": "166",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Jefferson Negreiros",
+                    "user_href": "/profile/Jefferson-Negreiros"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Duffy",
+                "href": "/profile/Michael-Duffy-9"
+            },
+            "answer_text": "It\u2019s a differential equation where the dependent variable is a function of only a single independent variable. The equation contains the dependent variable function and one or more terms that contain derivatives of the dependent variable with respect to the independent variable. The highest order derivative sets the order of the equation. The equation can be linear or non linear. ",
+            "date": "Answered January 7, 2018",
+            "views": "170",
+            "upvotes": "0"
+        }
+    ]
+}

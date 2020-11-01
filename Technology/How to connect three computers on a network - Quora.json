@@ -1,0 +1,38 @@
+{
+    "title": "How to connect three computers on a network - Quora",
+    "tags": [
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Clark Powell",
+                "href": "/profile/Clark-Powell-3"
+            },
+            "answer_text": "Using most current common network technology. The computers must have a networking capability, hardwired network interface (ethernet RJ45) or a wireless capability (802.11), and software that \u201ctalks\u201d networking. Most operating systems (OS) have this capability built in. If using wired capability the network connections physically are point to point. An additional piece of hardware to connect the three machines together is required, network hub, switch, or router. If using a wireless capability a wireless wireless access point provides the connection capability. Under the hood the TCP/IP network protocol requires unique local addresses for each computer. These IP addresses can be assigned manually or the network hardware can request and address to use in the network. This requires a server to issue IP addresses (DHCP server) this is often build into a network switch or router. If running windows OS and dynamic IP\u2019s, if no DHCP server is available and the three computers are on an isolated network the computers will self-assign addresses and be able to talk to each other. ",
+            "date": "Answered August 24, 2019",
+            "views": "533",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anirudh Ramesh",
+                    "user_href": "/profile/Anirudh-Ramesh-7"
+                },
+                {
+                    "user_id": "Larry Storeling",
+                    "user_href": "/profile/Larry-Storeling"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikola Pavlicevic",
+                "href": "/profile/Nikola-Pavlicevic"
+            },
+            "answer_text": "You can do it using cable or not. If it is cable, most likely choice is CAT 5 (category 5) Ethernet cable having RJ45 connectors at each end. To actually connect computers together, the steps kind of go like this. Starting from your modem run a line to gate machine or router (these run filters to protect your machines from external traffic). If your router has additional ports you can connect rest of machines and be done. If not, connect a hub or switch and then rest of machines. If you need really neat connections, just use a patch panel. Any fine tuning is explained in the manual of manufactures. It is safe to assume at start that equipment runs some distribution of Linux and associated set of commands. If you are not using cable, connections are handled according to 802.11 specification. In this case all you need to enable is NAT (network address translation) in order for nearby devices to receive IP address and have a connection. This may be enabled by default on your modem or router but better make sure. Also note, if you need to cover larger floor area, signal repeater may be required. It is just another device connected as described in the first part. ",
+            "date": "Answered August 24, 2019",
+            "views": "324",
+            "upvotes": "0"
+        }
+    ]
+}

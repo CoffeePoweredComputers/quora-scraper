@@ -1,0 +1,103 @@
+{
+    "title": "What programming language do people hate the most, and why? - Quora",
+    "tags": [
+        "Worst of X",
+        "Hate",
+        "Programming Languages",
+        "Computer Programming"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Van Wolverton",
+                "href": "/profile/Van-Wolverton"
+            },
+            "answer_text": "We in\u2014or in my case, on the periphery of\u2014the wonderful world of computing machinery, have a long and inillustrious\u00b9 history of internecine warfare. I'll skip blithely past the unanswerable question of who should get the credit for inventing the computer. Turing, von Neumann, Atasanoff, Eckert, and Mauchly all have their (often passionate) proponents; a historic court case purported to resolve it but didn't end the arguments. The icky truth is that probably no one person can or should be credited; these computational creators stood upon many shoulders: M. Jacquard, whose crafty invention threw thousands of loom operators out of work and inspired riots in Paris (the City of Light and Civic Quietude); Charles Babbage and Augusta Ada King, Countess Lovelace; and the original fold-spindle-mutilate guy, Herman Hollerith; to name just a few. But several unseemly contretemps remain, some of which are probably lost in the trackless waste of history to many of today's young (under 40) software adepts, viz. (partial list of the most notable): IBM vs. others:  Big Blue became the enemy of All That Is Good And Pure when Tom Watson Sr. made it clear that marketing was more important than engineering.Enter vs =:  The Reverse Polish Notation of HP (and programming purists) vs the plebian high school algebra of TI. (OK, this involved handheld calculators not computers, but the dispute intensified when these devices gained the ability to store a series of steps, which sounds suspiciously like a program).Unix vs. DOS:  Real Operating System vs. file system. Academic CS purists against the Whore of Bellevue who sold out to IBM (cf. IBM vs. others, swap Bill Gates for Tom Watson Sr.).Logon vs. Login:  (cf.Unix vs. DOS;  also, IBM says Login).Mac vs. Windows:  Perhaps more accurately Apple vs. everyone else so this can encompass iOS vs. Android. The Mac was launched in the famous one-off Super Bowl commercial showing an athletic young lady dashing down a theater aisle and hurling a hammer at a screenful of suits (universal symbol of IBM). Apple has nurtured (dare one say parlayed?) this anti-establishment ethos so well that it now has the largest market cap of all publicly traded corporations in the world. Microsoft is #3. IBM is #30. Marketing is still more important than engineering. N.B. IBM appears on the unenlightened side of all but the calculator dispute. As personal computers proliferated and margins shrank (except for Apple\u2019s, thanks to their superb marketing) IBM\u2019s stature fell. As recently as 1990 they were #1 in worldwide market cap; they sank to #8 in 1991, fell out of the top 10 in 1992, and drifts among the second tier. Now we\u2019re choosing up sides on languages. This is a singularly unnuanced\u00b9 argument, with few allowances for when a language was developed, by whom, and for what purpose. Given the carps about COBOL I\u2019m surprised no one bitched about 1401 Autocoder or JCL\u2014although I have a feeling that one or more of my grandsons will receive a utility bill (if he doesn\u2019t opt to pay online) printed with a program running in a virtual machine somewhere in the cloud that in turn is running a COBOL program inside a 7090 emulator). I don\u2019t hate any language, and I don\u2019t believe anyone should (even the most talented and dedicated of software adepts). The best language is one I already know unless my employer (which could be me) says to use some other language to develop a saleable (not to be confused with marketable) product. Unless the language is APL. One must draw the line somewhere. 1    A word that apparently doesn\u2019t exist but should. ",
+            "date": "Answered January 21, 2015",
+            "views": "15",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alex Chen",
+                    "user_href": "/profile/Alex-Chen-290"
+                },
+                {
+                    "user_id": "Edward De Jong",
+                    "user_href": "/profile/Edward-De-Jong"
+                },
+                {
+                    "user_id": "Ivan I. Kurdov",
+                    "user_href": "/profile/Ivan-I-Kurdov"
+                },
+                {
+                    "user_id": "Arne Babenhauserheide",
+                    "user_href": "/profile/Arne-Babenhauserheide"
+                },
+                {
+                    "user_id": "Tobias Eckardt",
+                    "user_href": "/profile/Tobias-Eckardt-2"
+                },
+                {
+                    "user_id": "Kenneth McLaughlin",
+                    "user_href": "/profile/Kenneth-McLaughlin-3"
+                },
+                {
+                    "user_id": "Alex Tsukerman",
+                    "user_href": "/profile/Alex-Tsukerman"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dan Lenski",
+                "href": "/profile/Dan-Lenski"
+            },
+            "answer_text": "I'm glad that Jaap Weel already covered LabView. The language that I hate the most is the JMP Scripting Language used by the JMP statistics and graphing package which is used extensively in my workplace. There are numerous things that are terrible about this programming language, largely due to its ad-hoc creation in a manner reminiscent of PHP. Problems with JSL include: Frequent inconsistencies in naming that put a huge mental burden on programmers (e.g. some GUI controls use the Get method while others use the Get Value)This stupid win32/COM+ automation bug which I reported 2 years ago, documented thoroughly, and eventually came up with a horrible workaround for. The best answer I got from SAS was, \"don't do that.\"The language has a function called Munger. As the manual cheerily explains it, \"Munger works many different ways, depending on what you specify for its arguments: Munger(string, offset, find | length, ).\" It literally does 9 different things depending on the order, type, and number of arguments given to it.The language completely violates the principle of least surprise at almost every chance. For example, if you try to concatenate tables of length N and M, you get a table of length N+M. So far so good. It is possible to construct a table of length zero, however if M=0 then concatenating the two tables gives an (unhelpful) error rather than simply returning the first table.The language has many fundamental datatypes which are not documented anywhere but can be produced all over the place. For example, the null-like value Missing is of numeric type, whereas the other null-like value Empty is a singleton of sui generis type. Exercise for the reader: which of these two nulls is returned by the Regex function, which returns a string in the case of a successful match, when there is no match?In my opinion the worst thing about JSL is that it's possible but maddeningly difficult to write self-introspecting or self-constructing code... which is necessary because there are many types of built-in objects which cannot be expressed in any other way. The language treats the \"expression\" data type as implicitly evaluated in most contexts, but implicitly unevaluated in arguments to some-but-not-all built-in functions, and it's totally undocumented. Nearly every attempt to write robust, generic code is an exercise in trial-and-error until you learn to use a very restricted subset of the language--and every skilled user settles on a slightly different subset. ",
+            "date": "Answered June 7, 2015",
+            "views": "62",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alex Chen",
+                    "user_href": "/profile/Alex-Chen-290"
+                },
+                {
+                    "user_id": "Anshul Agrawal",
+                    "user_href": "/profile/Anshul-Agrawal-224"
+                },
+                {
+                    "user_id": "Daren Scot Wilson",
+                    "user_href": "/profile/Daren-Scot-Wilson"
+                },
+                {
+                    "user_id": "Ankit Kuchhangi",
+                    "user_href": "/profile/Ankit-Kuchhangi"
+                },
+                {
+                    "user_id": "Tae Lim Kook",
+                    "user_href": "/profile/Tae-Lim-Kook"
+                },
+                {
+                    "user_id": "Florent Heyworth",
+                    "user_href": "/profile/Florent-Heyworth"
+                },
+                {
+                    "user_id": "Bruce-Robert Pocock",
+                    "user_href": "/profile/Bruce-Robert-Pocock"
+                },
+                {
+                    "user_id": "Ahmed Mohamed Abd El-Hamid",
+                    "user_href": "/profile/Ahmed-Mohamed-Abd-El-Hamid"
+                },
+                {
+                    "user_id": "Ian Oliver",
+                    "user_href": "/profile/Ian-Oliver-4"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

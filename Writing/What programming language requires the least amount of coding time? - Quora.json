@@ -1,0 +1,101 @@
+{
+    "title": "What programming language requires the least amount of coding time? - Quora",
+    "tags": [
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Glyn Williams",
+                "href": "/profile/Glyn-Williams"
+            },
+            "answer_text": "This is an interesting question. A simple solution would suggest that a language with an ultra compact syntax would meet the requirement.  Because, you know, less typing.  But any programmer who has more than a week's experience will tell you that typing represents about 1% of programming time. As an activity we spend far more time doing other stuff.First we have to break down the problem space into a programmable solution. This often means applying this reduction method to the program space.  Then when each reduced element is simple enough, we can turn that into code.  Or employ a pre-existing library which includes that solution. The language itself should make the transcription of the problem fast.A rich language has many options to solve the same problem, but sometimes all those options can lead to obfuscated code and unorthodox solutions. A less powerful language, might simply the process, but make other problems difficult to express. And the biggest single amount of time invested in coding, is taking the written code and getting it to work because of bugs, and unintended consequences. So the most efficient language might have the following properties.1) Is associated with a big-ass library of reliable, readable, pre-written solutions which can be exploited by the programmer to not-write code in the first place.   2) The language offers a breath of expression forms. So is applicable to different programming styles.  For instance it could support booth OOP and FP. 3) The language forces best practice all the time. It checks that variables are initialised, that case statements deal with all cases. It demands type safety, and compels the programmer to handle error cases, and explicitly deal with null pointers.  The language makes it hard to get into trouble with common issues. 4) It makes memory management automatic and fast.  5) The readability of the code is good, with a concise readable syntax. And functions require named parameters.  6) It is old enough and stable enough to allow the programmer to find extensive examples.  7) Compiler errors are super informative, steering the programmer towards the true error. I would suggest my new favourite language, but currently 6 and 7 are weak spots. ",
+            "date": "Answered July 6, 2015",
+            "views": "202",
+            "upvotes": " View 72 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ernestas Ju\u0161ka",
+                    "user_href": "/profile/Ernestas-Ju\u0161ka"
+                },
+                {
+                    "user_id": "Suleman Mehmood Khan",
+                    "user_href": "/profile/Suleman-Mehmood-Khan"
+                },
+                {
+                    "user_id": "Rich Wingerter",
+                    "user_href": "/profile/Rich-Wingerter"
+                },
+                {
+                    "user_id": "Rod Ishungry",
+                    "user_href": "/profile/Rod-Ishungry"
+                },
+                {
+                    "user_id": "Rufei Zhao",
+                    "user_href": "/profile/Rufei-Zhao"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "David Amunga",
+                    "user_href": "/profile/David-Amunga"
+                },
+                {
+                    "user_id": "Maxim Aba",
+                    "user_href": "/profile/Maxim-Aba"
+                },
+                {
+                    "user_id": "Robobenklein",
+                    "user_href": "/profile/Robobenklein"
+                },
+                {
+                    "user_id": "Charilaos Skiadas",
+                    "user_href": "/profile/Charilaos-Skiadas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeremy Dean Lakey",
+                "href": "/profile/Jeremy-Dean-Lakey"
+            },
+            "answer_text": "Python definitely.  Ruby is somewhat close. Functional languages will take much longer even though they have less code.  Statically typed languages will take an order of magnitude longer.  Non-memory-managed languages will take another order of magnitude longer. Dynamic vs static - for small projects, dynamic is much much faster, including debug time.  Static typed languages add a lot of complexity.  They reduce type errors, but type errors are easy to fix in most languages and I don't see them that often.  Arguably, the dynamic/static comparison turns upside down on large projects. Here's an interesting website I saw the other day that discusses, among other things the productivity of dynamic vs static languages: Popularity vs Productivity vs Performance REPL - languages with REPLs also tend to have shorter development times.  This is because you can write and test your code simultaneously, allowing you to figure out problems quicker and correct errors much earlier. Clean code - Python has the simplest, cleanest and most readable code of any language, which makes a huge difference.  It's the central focus of Python.  This is the main reason that Python trumps other languages for most small projects. Memory managed - Memory management takes a lot of extra code and a lot of extra thought and a LOT of extra debugging. Memory managed languages are a big win for productivity. Expressiveness - Several languages beat Python in terms of expressiveness.  For example, Ruby is more expressive.  However, Ruby has too much complexity and too much magic and can be hard to debug.  Functional programming languages can also be more powerful, but they are much harder to write and harder to read.  So those fewer lines will cost you much more time per line to write, read, and debug. (Acknowledging the problems with functional programming languages is blasphemy though, so I'll probably get downvoted for this by the zealots). Libraries - Python comes \"batteries included\", which means the standard libraries are powerful and extensive.  Additionally, they are easy to use.  When coding python, I spend very little time on Google and stack overflow because the libraries are so easy to work with. ",
+            "date": "Updated July 19, 2015",
+            "views": "35",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Sid-Go-2"
+                },
+                {
+                    "user_id": "Alex Dillingham",
+                    "user_href": "/profile/Alex-Dillingham"
+                },
+                {
+                    "user_id": "Eric Kuritzky",
+                    "user_href": "/profile/Eric-Kuritzky"
+                },
+                {
+                    "user_id": "Engin Girisgen",
+                    "user_href": "/profile/Engin-Girisgen"
+                },
+                {
+                    "user_id": "Jackson Ehrenworth",
+                    "user_href": "/profile/Jackson-Ehrenworth"
+                },
+                {
+                    "user_id": "Azeezah Muhammad",
+                    "user_href": "/profile/Azeezah-Muhammad"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        }
+    ]
+}

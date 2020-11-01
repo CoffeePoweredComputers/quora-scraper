@@ -1,0 +1,56 @@
+{
+    "title": "What is the loss function of the standard perceptron algorithm? - Quora",
+    "tags": [
+        "Mathematical Optimization",
+        "Algorithms",
+        "Artificial Intelligence"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Zejun Lin",
+                "href": "/profile/Zejun-Lin-5"
+            },
+            "answer_text": "Emmmmm, it\u2019s crazy\u2026 I\u2019m surprised by these answers. A standard perceptron algorithm uses hinge loss as its loss function! For other loss functions mentioned this question: MSE (mean squared error): it is usually used by regression problems but not logistic problem.1\u20130 loss: well, this one is indeed used as a loss function of logistic models but it is non-differentiable! Usually we choose another loss function like hinge loss.The following contrast 1\u20130 loss with hinge loss [math]L_{hinge}(s) := max\\{0, 1-s\\}[/math]  For a perceptron algorithm, every time we pick a training example \u2014 call it [math](x_t, y_t)[/math] \u2014 misclassified by [math]w^{t-1}[/math] and update using: [math]w^{t} := w^{t-1} - \\bigtriangledown L_{hinge}(y_tx_t^Tw^{(t-1)})[/math] Because it is misclassified, we have [math]y_tx_t^Tw^{(t-1)}<0 [/math] so, [math] L_{hinge}(y_tx_t^Tw^{(t-1)}) = 1 - y_tx_t^Tw^{(t-1)} > 0[/math] so [math]\\bigtriangledown L_{hinge}(y_tx_t^Tw^{(t-1)}) = L_{hinge}'(y_tx_t^Tw^{(t-1)}) \\cdot y_tx_t = -1 y_tx_t[/math] So the update is [math]w^{t} := w^{t-1} + y_tx_t[/math] ",
+            "date": "Answered December 11, 2019",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Muhammad Iqbal Tawakal",
+                "href": "/profile/Muhammad-Iqbal-Tawakal"
+            },
+            "answer_text": "For single example.[math]max(0, -t * y) [/math]Or for the whole dataset[math]L_p(D,w) = \\sum^n_i max(0, -t_i*y_i)[/math]where t is the target label and y is the output of the network. The intuition behind this is as follows. The perceptron only updates the weight when the output produced is different from the target labels. Therefore, if the label is -1 and the output is also -1, the loss for this data is zero. However, if the label and output are different, then the loss function will return 1. ",
+            "date": "Answered September 22, 2015",
+            "views": "82",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abhijeet Mulgund",
+                    "user_href": "/profile/Abhijeet-Mulgund"
+                },
+                {
+                    "user_id": "\u675c\u5efa\u9716",
+                    "user_href": "/profile/\u675c\u5efa\u9716"
+                },
+                {
+                    "user_id": "Leonid Boytsov",
+                    "user_href": "/profile/Leonid-Boytsov"
+                },
+                {
+                    "user_id": "Modestas Filipavi\u010dius",
+                    "user_href": "/profile/Modestas-Filipavi\u010dius"
+                },
+                {
+                    "user_id": "Pramod Reddy",
+                    "user_href": "/profile/Pramod-Reddy-74"
+                },
+                {
+                    "user_id": "Yanchuan Sim",
+                    "user_href": "/profile/Yanchuan-Sim"
+                }
+            ]
+        }
+    ]
+}

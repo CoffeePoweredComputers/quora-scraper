@@ -1,0 +1,43 @@
+{
+    "title": "What is an example of Poisson distribution (statistics)? - Quora",
+    "tags": [
+        "Poisson Distribution",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Maurice Dupre",
+                "href": "/profile/Maurice-Dupre"
+            },
+            "answer_text": "Let X be the number of buses that pass by during a given 2 hour period tomorrow at a certain intersection. If the bus company says the buses pass by every 15 minutes on average, 24 hours a day 7 days a week, then certainly E(X)=8. But, you might see 10 buses go by or maybe only 7 during that 2 hour period tomorrow. The X is an unknown which obeys the Poison distribution if we assume that the number if buses during disjoint time periods are independent, and for a very small interval of time, where you expect much lass than one bus, the expected number is approximately the probability of seeing one bus during that time interval. Thus, at 4 buses per hour on average, during one minute you only expect 4/60=1/15 buses, less than a whole bus, but you are not going to ever see 1/15 buses. You either see a whole number, and as the length of time you observe goes to zero, you should be able to argue that the chance of seeing more than one bus is negligible, so the expected number is just the probability of seeing one whole bus during that small interval of time. So it is reasonable to treat the distribution of X in this example as a Poisson distribution. ",
+            "date": "Answered March 30, 2020",
+            "views": "135",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Prakash Hiremath (\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0ccd \u0cb9\u0cbf\u0cb0\u0cc7\u0cae\u0ca0)",
+                    "user_href": "/profile/Prakash-Hiremath-\u0caa\u0ccd\u0cb0\u0c95\u0cbe\u0cb6\u0ccd-\u0cb9\u0cbf\u0cb0\u0cc7\u0cae\u0ca0"
+                },
+                {
+                    "user_id": "Alethea Alexandria",
+                    "user_href": "/profile/Alethea-Alexandria"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Livingston",
+                "href": "/profile/Daniel-Livingston-15"
+            },
+            "answer_text": "Average counts of something in a certain time period. Hardly anything follows a poisson distribution in real practice. The mean has to equal the variance, and it almost never does. You may have better luck using the negative binomial instead. That gives you an extra lever to play with. Someone shared a really nice notebook on how they dialed in the extra parameter. I can dig it up if anyone is interested. ",
+            "date": "Answered December 16, 2019",
+            "views": "57",
+            "upvotes": " Answer requested by Tim Sandle"
+        }
+    ]
+}

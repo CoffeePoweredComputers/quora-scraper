@@ -1,0 +1,43 @@
+{
+    "title": "How to simplify the Boolean expression {[ (a xor b) (b xor c)]'* [(a'+b')' (a+c)']}' - Quora",
+    "tags": [
+        "Combinatory Logic",
+        "Algebraic Combinatorics",
+        "Boolean Expression",
+        "Boolean Algebra",
+        "Logic (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Igor Belkov (\u0418\u0433\u043e\u0440\u044c \u0411\u0435\u043b\u044c\u043a\u043e\u0432)",
+                "href": "/profile/Igor-Belkov-\u0418\u0433\u043e\u0440\u044c-\u0411\u0435\u043b\u044c\u043a\u043e\u0432"
+            },
+            "answer_text": "{[ (a xor b) (b xor c)]'* [(a'+b')' (a+c)']}'=[(a xor b+a xor c+b xor b+b xor c)'*(a'+b'+a+c)']'=[(a xor b+a xor c+b xor c)'*1']'=[(a xor b+a xor c+b xor c)'*0]'=0'=1 ",
+            "date": "Answered April 8, 2017",
+            "views": "12",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Suleyman Mulayim",
+                    "user_href": "/profile/Suleyman-Mulayim-1"
+                },
+                {
+                    "user_id": "Greg Prescott",
+                    "user_href": "/profile/Greg-Prescott-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gregory Schoenmakers",
+                "href": "/profile/Gregory-Schoenmakers"
+            },
+            "answer_text": "Unless * doesn\u2019t mean AND, the whole expression should simplify to 1. The term to the right of * is (a\u2019+b\u2019)\u2019(a+c)\u2019 = ab.a\u2019c\u2019 (De Morgan) = 0 { [ \u2026 ]\u2019 * 0}\u2019 = {0}\u2019 = 1 ",
+            "date": "Answered April 9, 2017",
+            "views": "13",
+            "upvotes": " Answer requested by Mouad kai Kun"
+        }
+    ]
+}

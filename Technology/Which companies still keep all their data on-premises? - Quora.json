@@ -1,0 +1,24 @@
+{
+    "title": "Which companies still keep all their data on-premises? - Quora",
+    "tags": [
+        "Data"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bob Hannent",
+                "href": "/profile/Bob-Hannent"
+            },
+            "answer_text": "Let me quietly tell you some heresy: The cloud cannot do everything and the cloud is more expensive than on-prem for sustained workloads on optimised hardware. The main reason that the cloud is successful is: it is an outsourcing business model and this is always popular with money men because OpEx is always seen as better than CapEx + depreciation + replacement cycles. Fixed assets are liabilities in our current business climate.Software development teams want to abstract themselves from worrying about hardware. They want to think of compute as an abstract construct that just works for them, push a button and some more compute resources become available. They are developers, not hardware engineers after all.Most modern workloads are peaky, you don't have consistent demand, so in on-prem, often you have under utilised hardware. With cloud you can shut down and not pay for resources your aren't using.Who is still using on premises? Organisations who need high performance computing with reliable interconnect. Cloud vendors don't provide good and reliable interconnect, certainly not at ultra-low latency (not compared to infiniband connectivity between racks in the same DC). Organisations who have sustained compute demand and the teams to manage that. At a certain scale if you outsource anything you are just giving someone else profit margin. If you are using so much capacity that effectively you are paying the equivalent of operational overhead to someone else then why not pay it to your own staff and not pay profits to someone else? Remember, while Netflix uses the cloud for their compute infrastructure, they use on-prem hardware for their CDN offloading. Managing tens of thousands of cache nodes is an operational headache, but worth it for Netflix. Organisations who cannot legally use the cloud (some government applications). Azure now offers Azure on premises boxes for customers who aren't allowed to migrate their content to the cloud. Organisations who are not allowed to have variable cost structures dictated by other companies. I was chatting with someone who had to build their own CDN because their legal structure didn't allow them to use cloud services (e.g. OpEx). It didn't matter that a commercial CDN service would work better or service more customers, they couldn't do it. ",
+            "date": "Answered November 8, 2018",
+            "views": "255",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sendy Filemon",
+                    "user_href": "/profile/Sendy-Filemon"
+                }
+            ]
+        }
+    ]
+}

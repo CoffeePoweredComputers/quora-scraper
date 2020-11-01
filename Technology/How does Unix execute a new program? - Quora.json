@@ -1,0 +1,19 @@
+{
+    "title": "How does Unix execute a new program? - Quora",
+    "tags": [
+        "Unix",
+        "Software and Applications"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Edward Falk",
+                "href": "/profile/Edward-Falk-1"
+            },
+            "answer_text": "In Unix, there\u2019s the \u201cfork\u201d system call. When a program calls fork(), it effectively splits in two, like a cell dividing. The two copies of the program are considered to be parent and child. The child calls exec() which tells the operating system to replace it with a different program. So for example, you give the name of a program to run to the command line (called a shell). The shell executes fork(), creating two instances of the shell. The child instance then calls exec(), specifying the new program to run. That instance of the shell then ceases to exist, having been replaced by the new program, which takes over the role of child. The parent process then monitors the child and waits for it to exit. Higher-level view: Unix has a \u201cmaster\u201d program, typically called init. This is process zero. The init program then checks a configuration file that tells it what to do. In the old days, it would fork off an instance of the \u201clogin\u201d program for each terminal port. Now that we have window systems, the init program also forks off an instance of the window system which then displays a login prompt on the screen. On embedded systems, the init program is likely to do something else. For example, on an Android phone, it launches the Android UI program. ",
+            "date": "Answered January 27, 2020",
+            "views": "64",
+            "upvotes": "0"
+        }
+    ]
+}

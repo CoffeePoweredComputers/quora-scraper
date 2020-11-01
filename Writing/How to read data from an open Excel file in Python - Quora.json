@@ -1,0 +1,97 @@
+{
+    "title": "How to read data from an open Excel file in Python - Quora",
+    "tags": [
+        "Microsoft Excel",
+        "Data"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mayank Srivastava",
+                "href": "/profile/Mayank-Srivastava-40"
+            },
+            "answer_text": " Steps Step 1 : The first step is to import the xlrd library. We use xlrd package to read the data from Excel spreadsheets. If xlrd library is not installed, you can download from here. import xlrd\u00a0Step 2 : In this step, we will open an Excel file \u201cData.xlsx\u201d in the current directory. ExcelFileName= 'Data.xlsx'\u00a0workbook = xlrd.open_workbook(ExcelFileName)\u00a0worksheet = workbook.sheet_by_name(\"Sheet1\") # We need to read the data \u00a0#from the Excel sheet named \"Sheet1\"\u00a0Step 3 : In the current example, we know that the data is saved in Column A and Column B. However, if we have to read multiple rows and columns and donot exactly how many rows and columns, we need to first obtain the number of rows and columns num_rows = worksheet.nrows #Number of Rows\u00a0num_cols = worksheet.ncols #Number of Columns\u00a0Step 4 : The last step is to parse through each row and each column and read the data in the current cell. result_data =[]\u00a0 for curr_row in range(0, num_rows, 1):\u00a0 row_data = []\u00a0 for curr_col in range(0, num_cols, 1):\u00a0 data = worksheet.cell_value(curr_row, curr_col) # Read the data in the current cell\u00a0 #print(data)\u00a0 row_data.append(data)\u00a0 result_data.append(row_data)\u00a0Credits : Stack Overflow - Where Developers Learn, Share, & Build Careers Creating Excel files with Python and XlsxWriter ",
+            "date": "Updated November 9, 2018",
+            "views": "392",
+            "upvotes": " View 26 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ben Jennies",
+                    "user_href": "/profile/Ben-Jennies"
+                },
+                {
+                    "user_id": "Vitorino M\u00fcller",
+                    "user_href": "/profile/Vitorino-M\u00fcller"
+                },
+                {
+                    "user_id": "Michael Lewis",
+                    "user_href": "/profile/Michael-Lewis-361"
+                },
+                {
+                    "user_id": "Shruti",
+                    "user_href": "/profile/Shruti-167"
+                },
+                {
+                    "user_id": "Amruthraj Koparde",
+                    "user_href": "/profile/Amruthraj-Koparde"
+                },
+                {
+                    "user_id": "Somayan Basu",
+                    "user_href": "/profile/Somayan-Basu"
+                },
+                {
+                    "user_id": "Dileep Kumar",
+                    "user_href": "/profile/Dileep-Kumar-3392"
+                },
+                {
+                    "user_id": "Arpit Rathod",
+                    "user_href": "/profile/Arpit-Rathod-1"
+                },
+                {
+                    "user_id": "Promod George",
+                    "user_href": "/profile/Promod-George"
+                },
+                {
+                    "user_id": "Christelle Tedong",
+                    "user_href": "/profile/Christelle-Tedong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Dayne",
+                "href": "/profile/John-Dayne-2"
+            },
+            "answer_text": "You can read from an Excel file with the pandas module. This module has a single method to read an excel file read_excel(): df = pd.read_excel('File.xlsx', sheetname='Sheet1')\u00a0As parameters it takes the filename and the sheet name. The sheet name must match with the sheet you want to fetch the data from. The excel sheet data will be in an object named a data frame, which is more or less like an array. You can convert values from the data frame immediately to Python variables, as shown in the video below:  ",
+            "date": "Answered August 12, 2018",
+            "views": "251",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dennis Mwai",
+                    "user_href": "/profile/Dennis-Mwai-8"
+                },
+                {
+                    "user_id": "Arpit Rathod",
+                    "user_href": "/profile/Arpit-Rathod-1"
+                },
+                {
+                    "user_id": "Phpyouth Team",
+                    "user_href": "/profile/Phpyouth-Team"
+                },
+                {
+                    "user_id": "Aryaman Kumar",
+                    "user_href": "/profile/Aryaman-Kumar-11"
+                },
+                {
+                    "user_id": "Rikin Patel",
+                    "user_href": "/profile/Rikin-Patel-24"
+                },
+                {
+                    "user_id": "Prashant Sajwan",
+                    "user_href": "/profile/Prashant-Sajwan-1"
+                }
+            ]
+        }
+    ]
+}

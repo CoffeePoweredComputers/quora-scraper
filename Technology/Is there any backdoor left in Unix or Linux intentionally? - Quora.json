@@ -1,0 +1,108 @@
+{
+    "title": "Is there any backdoor left in Unix or Linux intentionally? - Quora",
+    "tags": [
+        "Unix",
+        "Systems Programming",
+        "Linux",
+        "Existence Question",
+        "Operating Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Max D. Bellasys",
+                "href": "/profile/Max-D-Bellasys"
+            },
+            "answer_text": "I appreciate the OP\u2019s position. I have long thought of this, and realized that unless I was willing to custom code literally every component used in my stack, including proprietary encryption algorithms (read: no openssl or anything like it) then I was exposing myself, my business, and ultimately every piece of code I write to the public. For that matter, in 1999 I raised my right hand and swore an oath to relinquish the notion that privacy actually existed in the post-post-modern computing age. If it\u2019s on the internet, or connected to the internet, it\u2019s exposed to the public- and if it isn\u2019t connected then it isn\u2019t significant. Security and privacy are perhaps not total illusions, they are a matter of degrees. I don\u2019t know if anyone else has considered how trivial it would be to gain https access to any site if some agreement could be created with the CA\u2019s, so agencies like the NSA could easily gain access performing a MITM using supposedly private keys. The reality is that there are many more vulnerabilities than the Kernel code. The answer mentioning the hardware drivers, etc. poses the most intelligent case to sidestep the entire question of bothering to go the Nth degree securing code, which is more or less why I decided a long time ago not to fight it, or spend too much time obsessing over security whether personally or professionally. I care greatly about security, but I also put everything in perspective and decide where to spend my time. The type of trust spoken of here is a social contract that has been around- and has been broken- since people first started gathering in communities. So the ultimate answer seems to be \u201cEffectively, yes, although the vulnerabilities are not necessarily limited or even greatest in the Kernel.\u201d ",
+            "date": "Answered November 29, 2016",
+            "views": "67",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Little-Devil-53"
+                },
+                {
+                    "user_id": "Douglas James Cameron",
+                    "user_href": "/profile/Douglas-James-Cameron"
+                },
+                {
+                    "user_id": "Jon Aju",
+                    "user_href": "/profile/Jon-Aju"
+                },
+                {
+                    "user_id": "Kocsis Laszlo",
+                    "user_href": "/profile/Kocsis-Laszlo"
+                },
+                {
+                    "user_id": "Bogdan Mustiata",
+                    "user_href": "/profile/Bogdan-Mustiata"
+                },
+                {
+                    "user_id": "William Bryant",
+                    "user_href": "/profile/William-Bryant-4"
+                },
+                {
+                    "user_id": "El Ray",
+                    "user_href": "/profile/El-Ray-3"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Rapier",
+                "href": "/profile/Chris-Rapier-1"
+            },
+            "answer_text": "Many years ago Ken Thompson (one of the early C developers) built a backdoor into the C compiler so that anytime the program 'login' was compiled it would insert a backdoor (Page on c2.com). He made it self-referential so that when the c compiler itself was compiled it would include that backdoor. You could remove the backdoor from the source code but because it was in the binary used by the compiler itself (and other later compilers) the backdoor would propagate even without it being explicitly in the source code. This was, of course, eventually removed. That being said, maybe Dennis Ritchie put in a couple of his own. Maybe someone else dropped a few into GCC. Who knows? It could be that every C application (which would include the Linux kernel) is awash with compiler inserted backdoors. Code review wouldn't discover these backdoors because we make the *assumption* that the compiler binary is secure - but being that backdoors can be self propagating we'd never actually know without a really really really deep inspection. Of course, even with a deep inspection we'd mostly have to compare the resulting binary with what we expect to see. However, if the backdoor has been in place long enough there won't be any reference binary to compare against. Essentially, there is a very very long chain of trust that stretches back decades in some cases. My hope is that Dennis Ritchie did drop in a backdoor/hack and on his 100th birthday every C program will print out \"Happy Birthday Old Man!\" ",
+            "date": "Updated July 22, 2020",
+            "views": "3664",
+            "upvotes": " View 1.7K Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kalpak Gadre",
+                    "user_href": "/profile/Kalpak-Gadre"
+                },
+                {
+                    "user_id": "Ian Hoffman",
+                    "user_href": "/profile/Ian-Hoffman-11"
+                },
+                {
+                    "user_id": "Puneet Ugru",
+                    "user_href": "/profile/Puneet-Ugru"
+                },
+                {
+                    "user_id": "Samer Adra",
+                    "user_href": "/profile/Samer-Adra"
+                },
+                {
+                    "user_id": "Alex Arthur",
+                    "user_href": "/profile/Alex-Arthur-38"
+                },
+                {
+                    "user_id": "Abhijit Naik",
+                    "user_href": "/profile/Abhijit-Naik-44"
+                },
+                {
+                    "user_id": "James Kirk",
+                    "user_href": "/profile/James-Kirk-132"
+                },
+                {
+                    "user_id": "Jonathan Weazel",
+                    "user_href": "/profile/Jonathan-Weazel"
+                },
+                {
+                    "user_id": "Walter Holtgrefe",
+                    "user_href": "/profile/Walter-Holtgrefe"
+                },
+                {
+                    "user_id": "Steve Onotsky",
+                    "user_href": "/profile/Steve-Onotsky"
+                }
+            ]
+        }
+    ]
+}

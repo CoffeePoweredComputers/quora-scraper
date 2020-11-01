@@ -1,0 +1,114 @@
+{
+    "title": "Can cryptography still be secure once quantum computers are efficient enough to find the prime factorization of large numbers? - Quora",
+    "tags": [
+        "Quantum Cryptography",
+        "Cryptography",
+        "Quantum Computing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alon Amit",
+                "href": "/profile/Alon-Amit"
+            },
+            "answer_text": "Yes. Besides the fact that \u201ccryptography\u201d is a really big field, even if we focus on public-key cryptography (which is likely what you had meant), there exist protocols which are not known to be breakable efficiently even assuming an efficient factorization algorithm. Some of the most well-known such protocols go by the name Elliptic-curve cryptography, and they rely on the hardness of inverting the \u201cmultiply-by-[math]m[/math]\u201d operation on the group of points of an elliptic curve over a finite field. (This is sometimes called the \u201cdiscrete logarithm problem over elliptic curves\u201d but that\u2019s a pretty confusing name.) And there are various other methods, such as NTRU. Mapping out the possibilities for public-key protocols and the (presumably) hard problems they rely on is an active field of research. ",
+            "date": "Answered February 16, 2018",
+            "views": "76",
+            "upvotes": " View 226 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arbash Nazeer",
+                    "user_href": "/profile/Arbash-Nazeer"
+                },
+                {
+                    "user_id": "Ana Clara Padilha",
+                    "user_href": "/profile/Ana-Clara-Padilha-1"
+                },
+                {
+                    "user_id": "Vatsal Limbachia",
+                    "user_href": "/profile/Vatsal-Limbachia"
+                },
+                {
+                    "user_id": "Kamran Khan",
+                    "user_href": "/profile/Kamran-Khan-92"
+                },
+                {
+                    "user_id": "Antonio Bosnjak",
+                    "user_href": "/profile/Antonio-Bosnjak"
+                },
+                {
+                    "user_id": "Elliot Stenquist",
+                    "user_href": "/profile/Elliot-Stenquist"
+                },
+                {
+                    "user_id": "Trinh Quoc Anh",
+                    "user_href": "/profile/Trinh-Quoc-Anh"
+                },
+                {
+                    "user_id": "Debiprasad Ghosh",
+                    "user_href": "/profile/Debiprasad-Ghosh"
+                },
+                {
+                    "user_id": "Asif Mallik",
+                    "user_href": "/profile/Asif-Mallik"
+                },
+                {
+                    "user_id": "Ayan Hore",
+                    "user_href": "/profile/Ayan-Hore-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anirban Mandal",
+                "href": "/profile/Anirban-Mandal-5"
+            },
+            "answer_text": "The underlying assumption is that cryptographic methods depends only on the factorisation of large numbers. That is not true. There are other cryptographic methods such as rhe one shown below: Hidden subgroup problem - Wikipedia Shor's algorithm essential transforms the prime factorisation problem to a problem related to some operations on Abelian (commutative) groups. The hidden subgroup problem cannot be solved by the approach Shor's algorithm uses so is still unsolvable by that method. This is just about what my limited knowledge is which I acquired from the Quantum Computing course by Prof. Apoorva Patel I am taking this semester. ",
+            "date": "Updated February 26, 2018",
+            "views": "15",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ganesh Chandra Lakkaraju",
+                    "user_href": "/profile/Ganesh-Chandra-Lakkaraju"
+                },
+                {
+                    "user_id": "Aneek Roy",
+                    "user_href": "/profile/Aneek-Roy"
+                },
+                {
+                    "user_id": "Rishav Dutta(\u098b\u09b7\u09ad \u09a6\u09a4\u09cd\u09a4)",
+                    "user_href": "/profile/Rishav-Dutta-\u098b\u09b7\u09ad-\u09a6\u09a4\u09cd\u09a4"
+                },
+                {
+                    "user_id": "Anin Mandal",
+                    "user_href": "/profile/Anin-Mandal"
+                },
+                {
+                    "user_id": "Sanaya",
+                    "user_href": "/profile/Sanaya-33"
+                },
+                {
+                    "user_id": "Usman Siddiqui",
+                    "user_href": "/profile/Usman-Siddiqui-13"
+                },
+                {
+                    "user_id": "Megh Patel",
+                    "user_href": "/profile/Megh-Patel-7"
+                },
+                {
+                    "user_id": "Mrinal Pandey",
+                    "user_href": "/profile/Mrinal-Pandey-18"
+                },
+                {
+                    "user_id": "Tamoghna Chowdhury",
+                    "user_href": "/profile/Tamoghna-Chowdhury"
+                },
+                {
+                    "user_id": "Alexandru Ionescu",
+                    "user_href": "/profile/Alexandru-Ionescu-6"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,119 @@
+{
+    "title": "What is an intuitive explanation of Bayes' Rule? - Quora",
+    "tags": [
+        "Intuitive Explanations in Probability",
+        "Bayes' Theorem",
+        "Intuitive Explanations",
+        "Bayesian Inference",
+        "Teaching Mathematics",
+        "Layman's Explanations",
+        "Probability (statistics)",
+        "Mathematics Education"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew Handy",
+                "href": "/profile/Matthew-Handy"
+            },
+            "answer_text": "You want to go out for a walk this afternoon, but you're worried that it might rain. You turn on the television: the forecast is for rain. Should you give up on your walk? You decide to do a little research. You go to the weather forecaster's website and discover that they claim a 90% accuracy rate: out of 100 days on which it rained, they predicted it would rain on 90 of those days. Sounds pretty good. Digging a little deeper you discover that out of 100 days on which it did not rain, they correctly predicted it would be dry on 80 of those days. That's not too bad, either. It looks like the forecaster is pretty reliable. You decide to go ahead with your walk but you take an umbrella with you. It's bright sunshine the whole time! You didn't need the umbrella at all! Why? Because you didn't use Bayes theorem. You see, it turns out that it rains only 10% of the time where you live. So in 100 days, it rains on 10 of those days. And the weather forecaster, with its 90% accuracy rate, would correctly predict rain on 9 of those 10 days. However, it doesn't rain on 90 out of 100 days. But the weather forecaster would wrongly predict that it would rain on 20% of these. So on 18 days the forecast would be for rain when it didn't actually rain. In total then, the weather forecaster predicts rain on 9 + 18 = 27 days out of 100. But on only 9 of those days does it actually rain. So the proportion of days on which it rains when the weather forecaster has predicted rain is 9/27, which is only one third. That's pretty unreliable. The impressive statistic (\"90% accuracy!\") on the weather forecaster's website was the answer to the following question: \"Given that it rained, what is the probability that the forecast was for rain?\" The problem arose because this question is the wrong way round. What you really want to know is, \"Given that the forecast is for rain, what is the probability that it will actually rain?\" The statistic here is much less impressive: about 33%. Why did this happen? Although the weather forecaster often correctly predicts rain when it actually rains, it doesn't rain very often, so the number of days on which it rains and on which rain is predicted is small (9 days). And although the weather forecaster rarely predicts rain when it doesn't rain, there are many days on which it doesn't rain, so there are many opportunities for an incorrect forecast (18 days out of 100). Thus a prediction of rain is more often associated with a dry day than with a wet day. And that's what happened to you today. That's Bayes theorem. *** I've only just seen that you're interested in medical statistics. For rain read \"disease\"; for forecast read \"diagnostic test\". Bayes theorem says that the question of interest is \"Given that the test is positive, what is the probability that the patient actually has the disease?\" There are two things we wish to avoid. A false negative occurs when a patient with the disease is diagnosed as being healthy. A false positive occurs when a healthy patient is diagnosed as having the disease. The answer to our question \u2013 \"Given that the test is positive, what is the probability that the patient actually has the disease?\" \u2013 is the ratio of the number of sick patients who get a positive test result divided by the number of patients (both sick and healthy) who get a positive rest result. (If you like: true positives divided by all positives.) For this ratio to be high (i.e. for the diagnostic test to be reliable) we need the number of false positives to be very low. For example if we have 10 true positives and 1 false positive, then the proportion of true positives is 10/11, which is very high. But if we have 10 true positives and 10 false positives, then the proportion is 10/20, which is no better than diagnosis by tossing a coin! Problems arise when the base rate of the disease amongst people who are tested is low. In a screening programme for a rare disease, even a low rate of false positives will throw up a large number of positive test results, because so many of the people tested will be healthy and a small proportion of a large amount is still a reasonable number of people, all of whom will be wrongly diagnosed. And even if the test is very good at identifying sick people, the actual number of sick people is low (because the disease is rare) so that number of true positives may not be very high. Thus the ratio true positives to all positives may, therefore, not be very high, as in my rain example. ",
+            "date": "Answered August 3, 2012",
+            "views": "294",
+            "upvotes": " View 279 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Darrell Freeman",
+                    "user_href": "/profile/Darrell-Freeman-4"
+                },
+                {
+                    "user_id": "Vladimir Novakovski",
+                    "user_href": "/profile/Vladimir-Novakovski"
+                },
+                {
+                    "user_id": "Giriraj Sharma",
+                    "user_href": "/profile/Giriraj-Sharma-1"
+                },
+                {
+                    "user_id": "Manhong Guo",
+                    "user_href": "/profile/Manhong-Guo"
+                },
+                {
+                    "user_id": "Bernard Doyle",
+                    "user_href": "/profile/Bernard-Doyle"
+                },
+                {
+                    "user_id": "Dmitriy Razin",
+                    "user_href": "/profile/Dmitriy-Razin"
+                },
+                {
+                    "user_id": "Aleti Vardhan",
+                    "user_href": "/profile/Aleti-Vardhan"
+                },
+                {
+                    "user_id": "Akash Chandra",
+                    "user_href": "/profile/Akash-Chandra-4"
+                },
+                {
+                    "user_id": "Michael Wong",
+                    "user_href": "/profile/Michael-Wong-195"
+                },
+                {
+                    "user_id": "Bob Chamberlain",
+                    "user_href": "/profile/Bob-Chamberlain-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "What is an intuitive explanation of Bayes' Rule? I\u2019ve read some of the 63 answers given, and skimmed most of the others. There are several very good explanations of how to use and interpret Bayes\u2019 rule, but not many that address the explanation, and especially not an intuitive explanation. It is quite simple intuitively, but it often gives answers that contradict our naive intuition. People are often not good judges of conditional probabilities, although we can become better with practice. For example if you have had a positive screening test for tuberculosis you are understandably worried, especially if you are told that only 5% of those without tuberculosis have positive tests. You might feel that you have a 95% chance of having tuberculosis. But this is false reasoning (well, not reasoning, it\u2019s just a bad guess): actually, in Western countries tuberculosis is quite rare. You have to take account of this in your judgment. Bayes\u2019 theorem allows you to do this. Bayes\u2019 rule is just an application of conditional probability. So first you need an intuitive understanding of conditional probability. You can gain this by thinking about simple examples such as successive draws of cards without replacement from a pack. Now if you know the proportion of people in the population who have tuberculosis, and the proportions of true positives (those with the disease who have a positive test) and false negatives (those with the disease who have a negative test) then you can calculate the conditional probability that you have tuberculosis given that the test was positive. If you intuitively understand conditional probability, it is easy. You calculate the probability of a positive test and having tuberculosis in two ways (P(A|B) means the conditional probability of A given B): P(positive and tuberculosis) = P(tuberculosis) P(positive|tuberculosis) P(positive and tuberculosis ) = P(positive) P(tuberculosis|positive) P(tuberculosis) is the incidence in the population. (I\u2019ll sometimes use disease for tuberculosis to prevent line breaks in the middle of a formula.) Bayes theorem is just obtained by equating these intuitive statements P(disease|positive) = P(disease) P(positive|disease)/P(positive). This is Bayes theorem but people often complicate it by working out P(positive). You can get a positive result in two ways, it can be a true positive or a false positive, i.e. you can have the disease or not have it. Therefore P(positive) = P(positive and disease) + P(positive and no disease) i.e. P(positive) = P(disease) P(positive|disease) + P(no disease) P(positive|no disease). So that\u2019s the intuition. Now let\u2019s see how it works out in this case. Suppose there are 5% false positives (i.e. 95% true positives) and 8% false negatives. Also suppose only one person in 100000 has tuberculosis. Then P(disease) = 1/100000, P(positive|disease) = 0.92 and P(positive|no disease) = 0.05. Therefore P(positive) = 0.92*0.00001 + 0.05*0.99999. Finally P(tuberculosis|positive) = (0.92*0.00001) / (0.92*0.00001 + 0.05*0.99999) = 0.92/(0.92 + 0.05*99999) = 0.0184. So the result isn\u2019t as dire as you might have thought. Your intuitive 95% is really only about 1.8%. It is worth having a more precise test, but don\u2019t worry in the meantime. Of course if you are a recent immigrant from a country where tuberculosis is endemic, the one in 100000 doesn\u2019t apply to you and you need information about your country of origin to make a judgement. ",
+            "date": "Answered May 21, 2018",
+            "views": "29",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Bernard Doyle",
+                    "user_href": "/profile/Bernard-Doyle"
+                },
+                {
+                    "user_id": "Lakshay Sood",
+                    "user_href": "/profile/Lakshay-Sood"
+                },
+                {
+                    "user_id": "Oliver Tjalve",
+                    "user_href": "/profile/Oliver-Tjalve"
+                },
+                {
+                    "user_id": "Bob Chamberlain",
+                    "user_href": "/profile/Bob-Chamberlain-7"
+                },
+                {
+                    "user_id": "Klaire Hoang",
+                    "user_href": "/profile/Klaire-Hoang"
+                },
+                {
+                    "user_id": "Shane F OConnell",
+                    "user_href": "/profile/Shane-F-OConnell"
+                },
+                {
+                    "user_id": "Reg Hody",
+                    "user_href": "/profile/Reg-Hody"
+                },
+                {
+                    "user_id": "E Douglas Jensen",
+                    "user_href": "/profile/E-Douglas-Jensen"
+                },
+                {
+                    "user_id": "Ben J\u00f8rgensen",
+                    "user_href": "/profile/Ben-J\u00f8rgensen-1"
+                }
+            ]
+        }
+    ]
+}

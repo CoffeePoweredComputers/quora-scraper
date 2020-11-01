@@ -1,0 +1,47 @@
+{
+    "title": "What is (2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1? - Quora",
+    "tags": [
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Calvin Campbell",
+                "href": "/profile/Calvin-Campbell-3"
+            },
+            "answer_text": "What is (2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1? Let\u2019s analyze this: n = 1, ( 2 + 1) = 2^2^0 +1 =3 = 2^2 -1 n = 2, (2 +1)(2^2^1 +1) = 3 * 5 = 15 = 2^4 -1 n = 3, (2 + 1) (2^2 + 1) (2^4 + 1) = 15 * (2^4 +1) = 15 * 17 = 255 = 2^8 -1 n = 4, (2 + 1) (2^2 + 1) (2^4 + 1)( 2^2^3 +1) = 255 * 257 = 65535 = 2^16 -1 So far, it can be seen that the nth product is 2 ^(2^n) - 1. Therefore, continuing in that way, multiplying by the 11th term, (2^2^10 + 1 ) will result in a product of 2^(2^11) - 1. Adding the final 1 in the expression we get, 2^(2^11) - 1 + 1 = 2^(2^11) = 2^2048. Here is a Python (2.7) solution: print \"What is (2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1?\"\u00a0def product2n(n): # Function to calculate 2^(2^(n)) -1\u00a0\treturn 2**(2**(n)) - 1\u00a0print \"\"\u00a0print \"(2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1 is:\"\u00a0print \"2^\"+str(2**11),\" -1 + 1 = 2^\"+str(2**11)\"\u00a0print \"=\",product2n(11) + 1 \u00a0Here is the output: What is (2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1? (2 + 1) (2^2 + 1) (2^4 + 1) \u2026 (2^2^10 + 1) + 1 is: 2^2048 -1 + 1 = 2^2048 = 32317006071311007300714876688669951960444102669715484032130345427524655138867890893197201411522913463688717960921898019494119559150490921095088152386448283120630877367300996091750197750389652106796057638384067568276792218642619756161838094338476170470581645852036305042887575891541065808607552399123930385521914333389668342420684974786564569494856176035326322058077805659331026192708460314150258592864177116725943603718461857357598351152301645904403697613233287231227125684710820209725157101726931323469678542580656697935045997268352998638215525166389437335543602135433229604645318478604952148193555853611059596230656 >>> Good luck! ",
+            "date": "Answered January 26, 2019",
+            "views": "882",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "  We will use the identity,        ",
+            "date": "Answered September 27, 2020",
+            "views": "418",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rajesh Bhowmick",
+                    "user_href": "/profile/Rajesh-Bhowmick-29"
+                },
+                {
+                    "user_id": "Lai Johnny",
+                    "user_href": "/profile/Lai-Johnny"
+                },
+                {
+                    "user_id": "Alberto Cid",
+                    "user_href": "/profile/Alberto-Cid-1"
+                },
+                {
+                    "user_id": "Sanjay Upreti",
+                    "user_href": "/profile/\u0938\u0902\u091c\u092f-\u0909\u092a\u094d\u0930\u0947\u0924\u0940-Sanjay-Upreti"
+                }
+            ]
+        }
+    ]
+}

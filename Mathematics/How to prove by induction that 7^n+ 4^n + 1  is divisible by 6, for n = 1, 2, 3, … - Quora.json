@@ -1,0 +1,87 @@
+{
+    "title": "How to prove by induction that 7^n+ 4^n + 1  is divisible by 6, for n = 1, 2, 3, \u2026 - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harshit Bishnoi",
+                "href": "/profile/Harshit-Bishnoi-4"
+            },
+            "answer_text": "Let\u2019s test the given statement for a scenario where [math]n = 1[/math] , [math]7^n + 4^n + 1 = 7^1 + 4^1 + 1 = 12 = 6(2)[/math] Therefore we can conclude that this statement holds true for [math]n = 1 .[/math] If we prove that this statement holds true for 2, 3, 4, 5 and subsequently all natural numbers, our task will be accomplished. Let\u2019s make an assumption: [math]7^n + 4^n + 1[/math] divides [math]6[/math] , when [math]n = k[/math] If we prove that [math]7^n + 4^n + 1[/math] divides [math]6[/math] , even when [math]n = k + 1[/math], then we will have an endless loop, because this will imply that this statement will also hold true for [math]n = (k + 1) + 1[/math], and our statement will be proved for all natural numbers from [math]k.[/math] [math]7^k + 4^k + 1[/math] divides 6. [math]  7^{k + 1} + 4^{k + 1} + 1 - (7^k + 4^k + 1)[/math] [math]= 7(7^k) - (7^k) + 4(4^k) - 4^k[/math] [math]= 6(7^k) + 3(4^k)[/math] [math]= 6(7^k) + 6(2^{2k - 1})[/math] [math]= 6(7^k + 2^{2k - 1})[/math] [math]6(7^k + 2^{2k - 1})[/math] divides 6 If we add a multiple of 6 to a multiple of 6 [math](7^k + 4^k + 1)[/math], we are bound to obtain a multiple of 6. We already know a value of k that satisfies the statement to be proved - 1. This implies that the theorem (currently a conjecture) will hold true for all natural numbers from 1, which is the domain for which the statement has to be proved. Hence we have proved this statement for all natural numbers, and subsequently, [math]7^n + 4^n + 1[/math] divides [math]6[/math] , when n is a natural number, has been proved by the principle of induction. (Now a proved theorem) ",
+            "date": "Answered October 12, 2018",
+            "views": "21",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Morgan Lee",
+                    "user_href": "/profile/Morgan-Lee-195"
+                },
+                {
+                    "user_id": "Bipolar Bear Wuggzy",
+                    "user_href": "/profile/Bipolar-Bear-Wuggzy"
+                },
+                {
+                    "user_id": "Aondongu Semaka",
+                    "user_href": "/profile/Aondongu-Semaka-1"
+                },
+                {
+                    "user_id": "Harshit Bishnoi",
+                    "user_href": "/profile/Harshit-Bishnoi-7"
+                },
+                {
+                    "user_id": "William Morin-Laberge",
+                    "user_href": "/profile/William-Morin-Laberge"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                },
+                {
+                    "user_id": "Leslie Keith Koller",
+                    "user_href": "/profile/Leslie-Keith-Koller"
+                },
+                {
+                    "user_id": "Peter Andriszak",
+                    "user_href": "/profile/Peter-Andriszak"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tazwar Sikder",
+                "href": "/profile/Tazwar-Sikder"
+            },
+            "answer_text": "Let [math]S(n)[/math] be the statement: [math]7^{n}+4^{n}+1[/math] is divisible by [math]6[/math]; [math]n\\in\\mathbb{Z^{+}}[/math] Basis step: [math]S(1)[/math]: [math]7^{(1)}+4^{(1)}+1[/math] [math]\\hspace{25.5 mm}=7+4+1[/math] [math]\\hspace{25 mm}=12[/math], which is divisible by [math]6[/math] Inductive step: Assume [math]S(k)[/math] is true, i.e. assume that [math]7^{k}+4^{k}+1[/math] is divisible by [math]6[/math]; [math]k\\in\\mathbb{Z^{+}}[/math] [math]\\hspace{60 mm}\\Rightarrow 7^{k}+4^{k}+1=6A[/math]; [math]A\\in\\mathbb{N}[/math] [math]\\hspace{60 mm}\\Rightarrow 7^{k}=6A-4^{k}-1[/math] [math]S(k+1)[/math]: [math]7^{k+1}+4^{k+1}+1[/math] [math]\\hspace{13 mm}=7\\bullet{7^{k}}+4\\bullet{4^{k}}+1[/math] [math]\\hspace{13 mm}=7\\hspace{1 mm}(6A-4^{k}-1)+4\\bullet{4^{k}}+1[/math] [math]\\hspace{13 mm}=42A-7\\bullet{4^{k}}-7+4\\bullet{4^{k}}+1[/math] [math]\\hspace{13 mm}=42A-3\\bullet{4^{k}}-6[/math] [math]\\hspace{13 mm}=6\\hspace{1 mm}(7A-\\dfrac{1}{2}\\bullet{4^{k}}-1)[/math], which is divisible by [math]6[/math] So, [math]S(k+1)[/math] is true whenever [math]S(k)[/math] is true. Therefore, [math]7^{n}+4^{n}+1[/math] is divisible by [math]6[/math]; [math]n\\in\\mathbb{Z^{+}}[/math]. ",
+            "date": "Answered June 26, 2016",
+            "views": "28",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Adriana Nenciu",
+                    "user_href": "/profile/Adriana-Nenciu"
+                },
+                {
+                    "user_id": "Nuvo Abrid",
+                    "user_href": "/profile/Nuvo-Abrid-1"
+                },
+                {
+                    "user_id": "Jibon Kumar Paul",
+                    "user_href": "/profile/Jibon-Kumar-Paul"
+                },
+                {
+                    "user_id": "Emily Vizcarra",
+                    "user_href": "/profile/Emily-Vizcarra"
+                },
+                {
+                    "user_id": "Benjamin Schak",
+                    "user_href": "/profile/Benjamin-Schak-1"
+                }
+            ]
+        }
+    ]
+}

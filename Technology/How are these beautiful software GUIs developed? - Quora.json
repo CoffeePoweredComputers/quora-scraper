@@ -1,0 +1,112 @@
+{
+    "title": "How are these beautiful software GUIs developed? - Quora",
+    "tags": [
+        "Graphical User Interfaces"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bj\u00f6rn David Paulsen",
+                "href": "/profile/Bj\u00f6rn-David-Paulsen"
+            },
+            "answer_text": "Windows and graphical elements are handled by the GUI portion of the operating system. Every graphical operating system has its own API, that is, its own functions that a program can call in order to draw graphics, open windows etc in a systems-friendly way. Back in the days of 16-bit programming, going via the operating system was often seen as unacceptably slow, so you would draw pixels directly into memory. \u201cBanging the metal\u201d was unsafe and didn\u2019t play nice with the rest of the operating system, but some applications still used it, even for GUI elements. This is a no-go today, when all graphics operations involve abstraction layers, so in order to have a GUI, you will have to use OS abstractions. (As as Dragi Raos notes, sometimes there are additional layers of abstractions such as when the OS is kept separate from the windowing system, as with X11.) Frameworks like QT take it one step further. To put things simply, where the Windows API (which you could access in code produced by Visual Studio) allows you to open a popup window in a Windows environment (by calling Windows functions to do so), QT allows you to open a popup window in any environment for which QT exists (by calling the appropriate platform specific function based on the OS QT is installed in). It\u2019s just an added abstraction layer to make things easier and more streamlined. As for whether you need to draw them in a visual environment, you don\u2019t, really. The visual part is just shortcut: when you draw in a visual editor, that editor produces the appropriate code. You could write that code directly if you so choose; sometimes you have to, since visual editors sometimes hide nonstandard GUI functions. Abstractions are good for the vast majority of cases, though. Unless you work in embedded or very specific niches, it\u2019s unlikely you\u2019ll ever be faced with a situation in which you\u2019ll need to sidestep the OS and work on bare metal. ",
+            "date": "Updated September 3, 2020",
+            "views": "12",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sunil Bohara",
+                    "user_href": "/profile/Sunil-Bohara-9"
+                },
+                {
+                    "user_id": "Wegis Silveira",
+                    "user_href": "/profile/Wegis-Silveira"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "AbdelRahman Mahmoud",
+                    "user_href": "/profile/AbdelRahman-Mahmoud-44"
+                },
+                {
+                    "user_id": "Marvin Nyaranga",
+                    "user_href": "/profile/Marvin-Nyaranga"
+                },
+                {
+                    "user_id": "Hari Krishnan",
+                    "user_href": "/profile/Hari-Krishnan-110"
+                },
+                {
+                    "user_id": "Azra Akimoto",
+                    "user_href": "/profile/Azra-Akimoto"
+                },
+                {
+                    "user_id": "Oktavian Toka",
+                    "user_href": "/profile/Oktavian-Toka-1"
+                },
+                {
+                    "user_id": "Jeff Green",
+                    "user_href": "/profile/Jeff-Green-210"
+                },
+                {
+                    "user_id": "Mario Acevedo",
+                    "user_href": "/profile/Mario-Acevedo-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alan Kay",
+                "href": "/profile/Alan-Kay-11"
+            },
+            "answer_text": "There is \u201cwhat?\u201d and there is \u201chow?\u201d. We can guess that \u201cwhat?\u201dis difficult in numerous ways, because there are many poor UI designs to be seen these days, even with components supplied by OSs and libraries. Quite a bit of good UI design requires deep understanding of how we humans \u201cwork in the world\u201d, and it is certainly the case that most computerists today have missed this learning. There are many more roads that could be taken besides the combination of ideas in the Parc GUI (overlapping windows(views), icons, pointing, modeless, 2+D, models-views-controllers, etc.). Here is an essay I was asked to write in 1989 about this approach http://www.vpri.org/pdf/hc_user_interface.pdf The \u201chow?\u201d part is relatively easy if you don\u2019t have to optimize: e.g. if you can refresh the \u201cvirtual display screen\u201d after each graphics change, if you can afford to march through all of the boundaries of the regions that are supposed to be sensitive to the pointing action, and so forth. It will really be a worthwhile exercise for you to do a simple from scratch system that can be manipulated by an end-user. You will have arrays of 32 bit numbers that will represent pictures with a pixel being 3 12-bit fields \u2014 for red, green, blue \u2014 of each number. Write a routine that will copy one of these \u2014 it will have associated with it the x and y and width etc of the picture \u2014 into a very large array that will be your simulated display (you will hand this off to the OS for display after each major action). Associate a \u201cdepth number\u201d with each picture and put pointers to the pictures into an array that will hold the pointers in deepest order first. Write a routine to clear the display array and copy each picture into it. This will manifest as the familiar \u201c2 1/2 D\u201d graphics most often used. To deal with pointing actions, write a routine that marches through the picture rectangles (you have the x, y, width and height as parameters for each picture) to see which rectangles the pointer point is in (note that you generally want to give precedence to the topmost one). You might try to set up two UI actions: -clicking-, which will bring a picture to the top (meaning that you\u2019ve changed its depth to \u201chighest\u201d which means that the redisplay will display it last, and this will appear to have moved it to the top), and -dragging-, where you will have to remember where the pointer was so you can appropriately change the x and y parameters of the picture you are pointing at so the redisplay will appear to move the picture to its new x and y location. This will motivate writing routines for figuring out pointing actions. For example, a \u201cclick\u201d will start with a \u201cmouseDown\u201d and be followed in some max time with a \u201cmouseUp\u201d action. If the max time is exceeded then this would be called a \u201cmouseStillDown\u201d and this might be associated with a -drag- action (as given above). And this will motivate writing an event handler of some kind. A simple one is a kind of conditional scheduler consisting of a loop that has tests for various pointing actions with the \u201cthen\u201d part calling the appropriate action routine. And this will motivate getting around many of the things that are too primitive in C to be reasonably used directly. For example, a good ploy in lower level programming of any kind is to set up your own multitasking scheduler. A very simple way to do this is \u201cloopless\u201d programming, where you don\u2019t trap control into long loops, but instead thread the control through each iteration in all the \u201cvirtual loops\u201d that need to be happening in each simulated process. All that I\u2019ve mentioned can be done in a few hundred lines of C at the most. What\u2019s intricate about it is the various higher-level architectures put on top of C that you need to think through. Speaking of that, one of the biggest motivations for \u201creal object oriented programming\u201d was computer graphics, starting with Ivan Sutherland\u2019s Sketchpad system in 1962. So many things in interactive graphical systems are much more \u201cobject-like\u201d than simple data-structure-like. A final thing you might try as part of your test architecture is to ponder that \u201cthings made from things that are made from things\u201d appear overlapped on a 2D screen. So a pointing action is really a ray going down through all of the layers. This means that it is not clear which of the objects\u2019 handlers should be called. Note, that it is often the case that it is the \u201cbigger\u201d \u201coutermost\u201d picture that will have the \u201cinner\u201d ones as parts. It\u2019s often the case that the \u201couter\u201d object will need to have the first cut at figuring out what to do \u2014 on the other hand, many operations will want to be done with the \u201cinnermost\u201d object. This suggests that some form of associations will need to be set up to deal with \u201cownership\u201d (a two way relationship) and with bundling all the hits from a pointing action into a structure that can help sort out who will do what. All of the above starts to motivate moves away from simple data-structures to more comprehensive ways to deal with relationships. And this should motivate a move away from C and C-like languages, which are almost as far away from these ideas as machine code. But, for learning, it can be a good thing to deal directly with some of these mechanisms. Meanwhile, the much larger part of all of this is to learn \u201cthe art of understanding humans\u201d and this leads to \u201cthe art of user interface design\u201d. ",
+            "date": "Answered September 17, 2016",
+            "views": "66",
+            "upvotes": " View 34 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jeel Rajodiya",
+                    "user_href": "/profile/Jeel-Rajodiya"
+                },
+                {
+                    "user_id": "Alex Noria",
+                    "user_href": "/profile/Alex-Noria"
+                },
+                {
+                    "user_id": "Uros Isakovic",
+                    "user_href": "/profile/Uros-Isakovic"
+                },
+                {
+                    "user_id": "Yoshiki Ohshima",
+                    "user_href": "/profile/\u5927\u5cf6-\u82b3\u6a39-Yoshiki-Ohshima"
+                },
+                {
+                    "user_id": "AbdelRahman Mahmoud",
+                    "user_href": "/profile/AbdelRahman-Mahmoud-44"
+                },
+                {
+                    "user_id": "NANDITA POKHRIYAL",
+                    "user_href": "/profile/NANDITA-POKHRIYAL"
+                },
+                {
+                    "user_id": "Liaquat Hayat",
+                    "user_href": "/profile/Liaquat-Hayat-1"
+                },
+                {
+                    "user_id": "Shahad Zawinski",
+                    "user_href": "/profile/Shahad-Zawinski"
+                },
+                {
+                    "user_id": "Jeff Green",
+                    "user_href": "/profile/Jeff-Green-210"
+                },
+                {
+                    "user_id": "Carlos Hernandez",
+                    "user_href": "/profile/Carlos-Hernandez-103"
+                }
+            ]
+        }
+    ]
+}

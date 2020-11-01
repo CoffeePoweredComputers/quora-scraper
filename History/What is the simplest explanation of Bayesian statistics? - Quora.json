@@ -1,0 +1,114 @@
+{
+    "title": "What is the simplest explanation of Bayesian statistics? - Quora",
+    "tags": [
+        "Bayesian Networks",
+        "Bayesian Inference",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "JQ Veenstra",
+                "href": "/profile/JQ-Veenstra"
+            },
+            "answer_text": "Some very good answers here.  I'll give a simpler explanation that hopefully encapsulates the fundamental nature of Bayesian statistics (going for simple rather than complete).  Then I'll explain what it can let us do.  Then a little on history.  Then a little on why it's natural.  But FIRST (it was going to be last, but it's the most important), I'll give the philosophical difference between how a Bayesian looks at data as compared to a frequentist.  (I'm talking about the differences since frequentism is still considered classical statistics.) Philosophical difference between how a Bayesian looks at data and how a frequentist looks at data: Bayesian:  says the data are fixed, and any parameters (i.e. for height of people as an example, the reason that people of a population are a given height) are random. Frequentist:  the data are randomly drawn from a process with a fixed set of population parameters.  This is a necessary assumption for frequentist theory.  Another necessary assumption is that we can draw samples from that process an infinite number of times. Explanation of the Bayesian approach: A Bayesian statistical procedure requires a prior model on the parameters of whatever model we're using to analyse the data at hand.  (Often in the form of a likelihood function.)  This prior can come from previous research or expert knowledge or can be drawn out of a hat (meant to be a joke on how to do Bayesian statistics poorly, but actually, putting good notions in a hat and drawing at random is itself a prior on the prior.  I won't get into that.) What it can do: Using Bayesian notions, we can actually calculate a probability, given the model, data, and prior, of, for example, a predicted value.  Technically we cannot do this using frequentist statistics.  Being Bayesian about things can give us a lot more predictive power. A brief history of Bayesian and frequentist methods and why they disagree: When probability was first studied in the 1800's (maybe a little earlier), Bayesian methods were the initial ones studied - to Bayes and Laplace and Gauss, it was the natural way to think about things.  It became evident that for any reasonable model, however, the calculations were too complex.  And thus frequentist statistics (without priors) was born.  Proponents of frequentism are mostly in that camp because that's the way it's been done in all science, etc, for a long time.  But frequentism never would have had a chance if there had been the computing power we had today back then, and never mind that computers would not have been possible without a lot of science based on frequentist statistics. Frequentists also say that putting a prior on things is bad science.  I'll talk about that in the next section.   Why it's natural: I was a rabid frequentist myself (being \"brought up\" that way - i.e. in my undergrad, master's, and most of my PhD, Bayesian methods were rarely mentioned without derision at the schools I attended at that time) until I thought about what it really means to have prior information, and why it's so natural.  Even watching how I think has convinced me that even though I was a frequentist by choice, my thinking has always been Bayesian in nature.  I'm sure a lot of people think like this:  they form an opinion on a subject, even with no knowledge.  They get data (learn things) about said subject, and modify their opinion, but it's always true that the first (prior) opinion affects things.  Here \"subject\" can be anything, such as climate change or who's the best baseball player. And science has always had hypotheses before experiments.  And the experiment guides the creation of new hypotheses.   This is longer than originally intended, but it's also more complete.  I'll stop here, and I hope this helps. ",
+            "date": "Updated January 20, 2016",
+            "views": "86",
+            "upvotes": " View 41 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tanveer Khan",
+                    "user_href": "/profile/Tanveer-Khan-611"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "Chiedu Nwozo",
+                    "user_href": "/profile/Chiedu-Nwozo-1"
+                },
+                {
+                    "user_id": "Aymeric Dekerdanet",
+                    "user_href": "/profile/Aymeric-Dekerdanet"
+                },
+                {
+                    "user_id": "Tim Timntimn",
+                    "user_href": "/profile/Tim-Timntimn"
+                },
+                {
+                    "user_id": "\u0410\u043d\u0434\u0440\u0435\u0439 \u0412\u043e\u043b\u043a\u043e\u0432",
+                    "user_href": "/profile/\u0410\u043d\u0434\u0440\u0435\u0439-\u0412\u043e\u043b\u043a\u043e\u0432"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/A-Meesa"
+                },
+                {
+                    "user_id": "Helene Hoegsbro Thygesen",
+                    "user_href": "/profile/Helene-Hoegsbro-Thygesen"
+                },
+                {
+                    "user_id": "Piyush Jain",
+                    "user_href": "/profile/Piyush-Jain-36"
+                },
+                {
+                    "user_id": "Arash Jamshidi",
+                    "user_href": "/profile/Arash-Jamshidi-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Konstantin Tretyakov",
+                "href": "/profile/Konstantin-Tretyakov"
+            },
+            "answer_text": "Although the answer by Joe Blitzstein is quite exhaustive, let me add a bit of perspective. I feel that the \"Bayesian\" approach is best explained by comparing to a \"non-Bayesian\" one. As noted by Joe, one of the primary concepts of a Bayesian approach is the the desire to model everything as a probability distribution. However, it is not like classical statisticians do not do it. The difference is somewhat more subtle and primarily philosophical. Consider the question \"what is your height?\". For a classical statistician there exists some abstract \"true answer\", say \"180cm\", which is a fixed number - your one and only height. The problem is, of course, you do not know this number because every measurement is slightly different, so the classical statistician will add that \"there is a normally-distributed measurement error\". In the world of a pure Bayesian there are almost no \"fixed numbers\" - everything is a probability distribution, and so is your height! That is, a Bayesian should say that \"your height is a Normal distribution centered around 180cm\". Note that from the mathematical perspective there is no difference between the two representations - in both cases the number 180cm is mentioned, and the normal distribution. However, from a philosophical, methodological and \"mental\" perspectives this tends to have serious implications, and there has been historically a kind of an ongoing intellectual feud between the statisticians who lend more towards the first or the second approach (it is somewhat resemblant of how there is a divide among the physicists with regard to their support of the Copenhagen interpretation of quantum mechanics). One of the implications of denying the fact that things in the world are mostly fixed (and are all pure distributions instead) is that you may not use many of the common sense inference methods directly. What is my height if I stand on a chair? \"Well, it is your height plus the height of a chair\", a classical statistician would say. He can keep in mind the measurement errors, if necessary, but those could be dealt with later. In the Bayesian world heights are not numbers, so the procedure of adding heights  implies convoluting two distributions to get the resulting distribution. If both distributions are Gaussian, the result will match that of the \"common sense\", but note that now the common sense somehow became \"just one special case\".Moreover, a Bayesian might even keep the possibility that \"your height and the height of the chair are dependent\" in the back of his mind, just in case. Because when you speak about two numbers in the Bayesian world, you must immediately start thinking about their joint distribution. On the other hand, modeling everything in probabilities lets you use probability theory inference methods (Bayes rule, convolutions, marginalizations, etc) everywhere, without the need to differentiate between \"fixed numbers\" and \"random measurement errors\" and this adds peace of mind as well as tends to make your explanations clearer. A Bayesian confidence interval, for example, is a \"fixed interval such that 95% of height measurements fall into it\". A classical confidence interval, on the other hand, is \"a random interval such that the true height may fall into it with 95% probability\". Again, mathematically and numerically those may be the same, but think how different the two explanations are.  Bayesian \"thinking\" tends to be more flexible for complex models. Many classical statistics models would stick to fixed parameters, point or \"interval\" inferences, and try to \"hide\" the complexity of probability distributions as much as possible. As a result, reasoning about a system with many highly interconnected concepts becomes flawed. Consider a sequence of three questions: What the height of this truck?Will it fit under this 3m bridge?Do we need pick another route?In the \"classical\" mindset you would tend to give fixed answers to the questions.  \"Height of the truck is 297\". \"Yes, 297<300, hence it will fit\". \"No, we do not need\".Sometimes you may be more careful and work with confidence intervals, but it still feels unwieldy: \"The confidence interval on the height of the truck is 290..310\"\".. aahm, it *might* not fit...\"\"let's pick another route, just in case\"Note, if a followup question appears that depends on the previous inferences (e.g. \"do we need to remodel the truck\") answering it becomes even harder because the true uncertainty is \"lost\" in the intermediate steps. Such problems are never present if you are disciplined as a Bayesian. Note the answers: \"The height of the truck is a normal distribution N(297, 10)\"\"It will fit under the bridge with probability 60%\"\"We need another route with probability 40%\"At any point is information about the uncertainty is preserved in the distributions and you are free to combine it further, or apply a decision-theoretic utility model. This makes Bayesian networks possible, for example. But all in all, labeling things as \"Bayesian\" or \"non-Bayesian\" is largely a philosophical choice. For example, there are methods in machine learning, ensemble learners, that are somewhy never labeled/marketed as being \"Bayesian\" nor were they probably invented by someone \"Bayesian\", although at their core those would among the best examples of where a Bayesian approach is different from a classical one. Those are also among the best performant models quite often, by the way. ",
+            "date": "Answered November 24, 2014",
+            "views": "9",
+            "upvotes": " View 81 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Eric Lecoutre",
+                    "user_href": "/profile/Eric-Lecoutre"
+                },
+                {
+                    "user_id": "Christian Castagna",
+                    "user_href": "/profile/Christian-Castagna-4"
+                },
+                {
+                    "user_id": "Ya\u015far Qamar",
+                    "user_href": "/profile/Ya\u015far-Qamar"
+                },
+                {
+                    "user_id": "Tanveer Khan",
+                    "user_href": "/profile/Tanveer-Khan-611"
+                },
+                {
+                    "user_id": "Sergei Bogdanov",
+                    "user_href": "/profile/Sergei-Bogdanov-1"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "Niko Mitropoulos",
+                    "user_href": "/profile/Niko-Mitropoulos-1"
+                },
+                {
+                    "user_id": "Vivian Chang",
+                    "user_href": "/profile/Vivian-Chang-86"
+                },
+                {
+                    "user_id": "Ronald K\u00fcnneth",
+                    "user_href": "/profile/Ronald-K\u00fcnneth"
+                },
+                {
+                    "user_id": "Cristine Chen",
+                    "user_href": "/profile/Cristine-Chen"
+                }
+            ]
+        }
+    ]
+}

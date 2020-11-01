@@ -1,0 +1,30 @@
+{
+    "title": "How does microprocessors use electricity? - Quora",
+    "tags": [
+        "Microprocessors",
+        "Central Processing Units",
+        "Electricity"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ethar Alali",
+                "href": "/profile/Ethar-Alali"
+            },
+            "answer_text": "The CPU is mounted on a motherboard, which is a regular PCB (Printed Circuit Board). Each such board has tracks which take control signals and data from one place to another. Below is an example of a mini-PCB, which I'll use for illustration, but it has some important features which are the same as a regular motherboard (because it is one - it's the Raspberry Pi mainboard) of which, some are on the other side. You can clearly see the green lines between the chip and connector layouts.  As can be seen on the bottom left, near this text, is the word \u201cPower\u201d. The connector mounted on the visible copper, links to the power supply, which contains the transformer and rectifier circuits to convert AC to DC power. That connector drives the power through the PCB tracks on the other side of this board. The tracks take the power to the chips, via various other sub-circuits, including capacitors and potential dividers. The chips have at least two poles on two or more pins. One for the positive and the other for the \u201cGround\u201d or 0V. Conventionally, the tracks which carry power are normally thicker than the signal tracks on the board, which makes them easier to identify, as you only have to look at them. However, sometimes power is just as thick and sometimes signals are thicker than usual (usually, if there is a driver circuit in there) it depends on the board and its function. This smaller example extends more generally to normal sized motherboards. It is what the Raspberry Pi is for, after all. Learning :) ",
+            "date": "Answered September 4, 2016",
+            "views": "363",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kennedy Mumba",
+                    "user_href": "/profile/Kennedy-Mumba"
+                },
+                {
+                    "user_id": "Hanumant Shinde",
+                    "user_href": "/profile/Hanumant-Shinde-2"
+                }
+            ]
+        }
+    ]
+}

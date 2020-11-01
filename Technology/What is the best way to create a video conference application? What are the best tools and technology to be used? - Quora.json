@@ -1,0 +1,29 @@
+{
+    "title": "What is the best way to create a video conference application? What are the best tools and technology to be used? - Quora",
+    "tags": [
+        "Video Conferencing",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Daviel",
+                "href": "/profile/Andrew-Daviel"
+            },
+            "answer_text": "Personally, I\u2019d go with WebRTC and HTML5 and just do the client side in a modern browser, offloading the camera and audio control on someone else. So the client-side application becomes a web page.You still need a central server to do multi-point, probably with transcoding and bandwidth matching (A,B and C talking but C is on a slow line and can\u2019t keep up, so you downconvert their video feed rather than dropping packets). Also since most home users are on NAT, you can\u2019t just connect endpoints together directly. You really need a server in each region that you service, you can\u2019t just have everyone on the planet connect via Cuba because the latency will be annoying. So you need a lot of cloud services in different countries, which at least is easier than opening your own data centres. ",
+            "date": "Answered January 19, 2020",
+            "views": "518",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Nancy Drew",
+                "href": "/profile/Nancy-Drew-229"
+            },
+            "answer_text": "Here are multiple questions asked in the single one - Best way to create video conference applicationBest ToolBest applicationSo here are the answers of all The best technology for video conferencing application is WebRTCFor creating a website you will require technical knowledge, so if you are a non-techie person then you can simply hire a video conferencing app development company.The best that comes to my mind is \u201crtcweb(.)in\u201d a custom WebRTC application development company based in the USA. For more information visit the website. ",
+            "date": "Answered April 9, 2020",
+            "views": "282",
+            "upvotes": "0"
+        }
+    ]
+}

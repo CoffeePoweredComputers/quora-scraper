@@ -1,0 +1,108 @@
+{
+    "title": "If 2% of the electric bulbs manufactured by a certain company are defective, what is the probability that in a sample of 200 bulbs, fewer than 2 bulbs and more than 3 bulbs are defective (e^4=.0183)? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Partha Chattopadhyay",
+                "href": "/profile/Partha-Chattopadhyay-2"
+            },
+            "answer_text": "Since the probability of a bulb being defective is very small (p=0.02) and number of bulbs being moderately large, X (number of defective bulbs) may be assumed to be distributed as a Poisson distribution with parameter  i.e.  where  Now,     Again,   Calculation is left to you taking  ",
+            "date": "Answered June 23, 2018",
+            "views": "49",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "KATTA MONIKA",
+                    "user_href": "/profile/KATTA-MONIKA-4"
+                },
+                {
+                    "user_id": "Shohidul Islam",
+                    "user_href": "/profile/Shohidul-Islam-137"
+                },
+                {
+                    "user_id": "Habibi",
+                    "user_href": "/profile/Habibi-4"
+                },
+                {
+                    "user_id": "Jidesh Vaidya",
+                    "user_href": "/profile/Jidesh-Vaidya"
+                },
+                {
+                    "user_id": "Maxime Phillot",
+                    "user_href": "/profile/Maxime-Phillot"
+                },
+                {
+                    "user_id": "Sandip Dasgupta",
+                    "user_href": "/profile/Sandip-Dasgupta-14"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Brown",
+                "href": "/profile/Aaron-Brown-165"
+            },
+            "answer_text": "Zero. It\u2019s impossible for fewer than 2 and more than 3 bulbs to be defective. If you mean the probability for each event separately, there is not enough information to answer the question. For example, if there is one defective bulb followed by 49 good bulbs in regular sequence, and you take 200 bulbs in a row, you will always have exactly four defective bulbs. On the other hand, suppose the defective bulbs come in long runs. Then you will almost always get zero defective bulbs, but if you get one, you will usually get a large number. ",
+            "date": "Answered June 23, 2018",
+            "views": "31",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Harsh Seth",
+                    "user_href": "/profile/Harsh-Seth-16"
+                },
+                {
+                    "user_id": "Christine Sutton",
+                    "user_href": "/profile/Christine-Sutton-7"
+                },
+                {
+                    "user_id": "Robert Taylor",
+                    "user_href": "/profile/Robert-Taylor-315"
+                },
+                {
+                    "user_id": "Zane Jakobs",
+                    "user_href": "/profile/Zane-Jakobs"
+                },
+                {
+                    "user_id": "Hingwala Abdul",
+                    "user_href": "/profile/Hingwala-Abdul"
+                },
+                {
+                    "user_id": "Steven Smith",
+                    "user_href": "/profile/Steven-Smith-440"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Marilley",
+                "href": "/profile/David-Marilley"
+            },
+            "answer_text": "P(X<2)=P(0)+P(1)= .98^200+200\u00d7.98^199\u00d7.02=.98^199(.98+4)=4.98\u00d7.98^199=.089375+ P(X<4)=P(X<2)+P(2)+P(3)=4.98\u00d7.98^199+200C2\u00d7.98^198\u00d7.02^2+200C3\u00d7.98^197\u00d7.02^3=4.98\u00d7.98^199+(7.8008+10.5072)\u00d7.98^197=.089375+.34212\u2014=.43149+. So P(X>3)=1-P(X<4)=.5685+. ",
+            "date": "Answered July 22, 2018",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shohidul Islam",
+                    "user_href": "/profile/Shohidul-Islam-137"
+                },
+                {
+                    "user_id": "Christine Sutton",
+                    "user_href": "/profile/Christine-Sutton-7"
+                }
+            ]
+        }
+    ]
+}

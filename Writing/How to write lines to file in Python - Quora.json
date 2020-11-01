@@ -1,0 +1,43 @@
+{
+    "title": "How to write lines to file in Python - Quora",
+    "tags": [
+        "Python (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Crosley",
+                "href": "/profile/Tom-Crosley-1"
+            },
+            "answer_text": "The method write () writes a string str to the file. Here is a simple filter function that reads all the text of a file into a single string, makes a string replace, and then writes the file back out: def replace(file, pattern, subst):\u00a0    try:\u00a0        ifh = open(file, 'r')\u00a0    except:\u00a0        msg = \"couldn't find file \"+file\u00a0        print(msg)\u00a0        exit(1)\u00a0    file_string = ifh.read()    # read contents as a single string    \u00a0    ifh.close()\u00a0\u00a0    file_string = file_string.replace(pattern, subst)\u00a0\u00a0    ofh = open(file, 'w')\u00a0    ofh.write(file_string)\u00a0    ofh.close()\u00a0\u00a0replace(\"c:/temp/test.txt\",\"foo\",\"fox\")\u00a0Here\u2019s another version, except this one reads the file line by line, so it has to use a separate output file: def replace(file, pattern, subst):\u00a0    try:\u00a0        ifh = open(file, 'r')\u00a0    except:\u00a0        msg = \"couldn't find file \"+file\u00a0        print(msg)\u00a0        exit(1)\u00a0    ofh = open(file+\".out\", 'w')\u00a0\u00a0    line = ifh.readline()\u00a0    line = line.replace(pattern, subst)\u00a0    ofh.write(line)\u00a0    while line:\u00a0        line = ifh.readline()\u00a0        line = line.replace(pattern, subst)\u00a0        ofh.write(line)\u00a0    ifh.close()\u00a0    ofh.close()\u00a0\u00a0replace(\"c:/temp/test.txt\",\"foo\",\"fox\")\u00a0",
+            "date": "Answered April 24, 2019",
+            "views": "615",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "James Ryan",
+                    "user_href": "/profile/James-Ryan-164"
+                },
+                {
+                    "user_id": "Kutub Talukder",
+                    "user_href": "/profile/Kutub-Talukder-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nirmit Gupta",
+                "href": "/profile/Nirmit-Gupta-5"
+            },
+            "answer_text": "In Python, there is no need for importing external library to read and write files. Python provides an inbuilt function for creating, writing and reading files. Create a file:f= open(\"file_tst.txt\",\"w+\")open will take two arguments.\u201cw\u201d is for writing\u201cr\u201d is for reading\u201ca\u201d is used for appending.\u201c+\u201d is used for creating a file if it doesn\u2019t existsUsing the write function to enter data into the file:for i in range(10): f.write(\"This is line %d\\r\\n\" % (i+1))for loop is used for writing 10 lines in a file.write() function will insert the 10 lines in the file.Using close() function to close the instance of the file:f.close()The code will look like as shown in the image below:  Happy coding in python :p There are two ways to write error-free programs; only the third one works :p ",
+            "date": "Answered April 24, 2019",
+            "views": "180",
+            "upvotes": "0"
+        }
+    ]
+}

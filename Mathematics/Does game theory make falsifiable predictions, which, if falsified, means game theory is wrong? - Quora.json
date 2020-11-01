@@ -1,0 +1,88 @@
+{
+    "title": "Does game theory make falsifiable predictions, which, if falsified, means game theory is wrong? - Quora",
+    "tags": [
+        "Falsifiability in Physics",
+        "Science and Mathematics",
+        "Game Theory",
+        "Philosophy of Science",
+        "Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tom Kawai",
+                "href": "/profile/Tom-Kawai"
+            },
+            "answer_text": "It makes falsifiable predictions which if falsified means the game and parameters were wrong for certain types of people or species. Example 1 You don't drive left in German traffic. You don't drive right in the UK. It's the same 2x2 coordination game, but you apply need different parameters (payoffs) in two countries. If you falsify German parameters in the UK, it still is correct in Germany. And you haven't changed the structure of 2x2 nor the idea of dominated strategies. Example 2 There is a game in which the predicted outcome must be 1. By pure logic, it's 1. Not 2, 3 or whatever. If you tell everybody that the game's outcome is 1 and then you let everybody play the game, including yourself, you see that the real outcomes are anywhere between 1 and 20, typically skewed to 1 to 10. I've done it lately on the Coursera course website by Stanford/Columbia. It's hilarious, because everybody on that website playing the game is supposed to have watched the lecture. So even if everybody knows what to play, because the outcome is tied to a strategy, action, and choice, you still get outcomes that are NOT what the prediction is. The game to be played is Keynes beauty contest aka 2/3 of the average prediction. You have to pick a number from 1 to 100. You win, if your choice equals or is closest to the 2/3 of the average of all choices . If everybody picks 100, the winning choice would be 99 because you are closer to 2/3 of the average (of 0.66 \u00d7 100 = 66) than the rest. Of course, 66 would be spot on, winning against 99. Since everybody knows about the 66, you better pick 2/3 of 66. Since everybody knows about 2/3 of the 2/3 of 2/3 of 2/3 ... 2/3 of 100, you end up picking 1. Roundig applies. However, some people shirk and play 5 or 12. They skew the average and choosing 1 is no longer closest to the average anymore, it's dominated. So, the parameters are wrong because you have to add a human error term, namely 1 + \"Errr\".  Long story short, the strategy 1 is wrong and falsified, because the players speculate whether the other guys are idiots who don't play according to logic. Since you want to win, you become an idiot yourself and play no longer to the original logic, too. So I played 2, 3, 4 ... sometimes 11. But the general idea of 2/3 of 2/3 of 2/3 ... is largely correct if you know that the other guys are math genius themselves. I bet that John Nash and Reinhard Selten would play 1 and so I would play 1, too.  Question is how would you play the game without thinking about 2/3 of 2/3 of 2/3 of the average plus \"Errr\"? ",
+            "date": "Answered February 25, 2015",
+            "views": "502",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "John Knight",
+                    "user_href": "/profile/John-Knight-19"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Joyce",
+                "href": "/profile/David-Joyce-11"
+            },
+            "answer_text": "Let's take an example from the Von Neumann-Morgenstern theory so it's easy to explain in a forum like this.  This will be a two-player, simultaneous, zero-sum game. Let the players be A and B, and take the payoff matrix for A to be  [math]\\begin{bmatrix}4&-2\\\\2&3\\end{bmatrix}[/math] Each player has two choices.  A can play \"top\" or \"bottom\", and B can play \"left\" or \"right\".  So, for example, if A plays \"top\" and B plays \"right\", then A loses 2 points to B. The minimax theorem of game theory says that there exists a value V and a mixed strategy for each player so that given B's strategy, the best possible payoff for A has value V for A which is achieved with A's strategy, and given A's strategy, the best possible payoff for B has value \u2013V for B which is achieved with B's strategy.  The theorem also tells you how to find those strategies. A mixed strategy for A is to play \"top\" with probability x and \"bottom\" with probability 1 \u2013 x.  A mixed strategy for B is to play \"left\" with probability y and \"right\" with probability 1 \u2013 y.  The payoff for A for the pair (x,y) is graphed below.  A wants the point on the surface to be high but can only choose the x-coordinate.  B wants the point on the surface to be low but can only choose the y-coordinate.  The minimax strategy gives the saddle point where there's a horizontal tangent plane to the surface.  That occurs when (x,y)=(1/7,5/7), and z equals 16/7, the value V mentioned in the theorem.    Now, can this theory be tested?  Yes.  Play the game repeatedly and you will find that it's correct.   If you're player A and you play the mixed strategy x = 1/7, then it doesn't matter what B plays, you're return will average about 16/7 per game.  Furthermore, if you choose any other mixed strategy x \u2260 1/7, there is some strategy for player B where you get less than 16/7 per game. On the other hand, if you're player B and you play the mixed strategy y = 5/7, then it doesn't matter what A plays, you'll lose on average about 16/7 per game.  Furthermore, if you choose any other mixed strategy y \u2260 5/7, there is some strategy for player A where you'll lose more than 16/7 per game. Game theory is scientific. Can it turn out wrong?  Sure, of course it could.  You could do that experiment repeatedly a million times and get an average return far from V. ",
+            "date": "Updated May 28, 2015",
+            "views": "87",
+            "upvotes": " View 57 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "Daniel Pont",
+                    "user_href": "/profile/Daniel-Pont"
+                },
+                {
+                    "user_id": "Narasimhan M.G.",
+                    "user_href": "/profile/Narasimhan-M-G"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Alec Zander",
+                    "user_href": "/profile/Alec-Zander"
+                },
+                {
+                    "user_id": "Nathan Coules",
+                    "user_href": "/profile/Nathan-Coules"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Natalia-Nezvanova"
+                },
+                {
+                    "user_id": "Alioune Ngom",
+                    "user_href": "/profile/Alioune-Ngom"
+                },
+                {
+                    "user_id": "Sabhya Kaushal",
+                    "user_href": "/profile/Sabhya-Kaushal"
+                },
+                {
+                    "user_id": "Adrian Wolanski",
+                    "user_href": "/profile/Adrian-Wolanski"
+                }
+            ]
+        }
+    ]
+}

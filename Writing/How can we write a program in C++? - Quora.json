@@ -1,0 +1,73 @@
+{
+    "title": "How can we write a program in C++? - Quora",
+    "tags": [
+        "Learning C++",
+        "C++ (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Muskan Banthia",
+                "href": "/profile/Muskan-Banthia-2"
+            },
+            "answer_text": "There are infinitely many ways to program computers. Ultimately, it is the choice of the programmer how to accomplish what they need. There are, however, many \"best practices\" for styles and function usage for better compilation and safer programs. Some care should be taken to ensure that future programmers on your project can read and understand your code. Commenting- Though comments in programming don't change how the code works, it is important in communicating what a program does to future developers. Commenting is more important in larger programs, but is also good to use for smaller programs to develop good habits. There are two basic ways to comment. The first is the line comment. Any line that starts with \\\\ is a comment. Also any code between /* and */ are comments. This is shown in the picture corresponding to this step.#include Directives- After comments, #include statements are written. These lines allow us to specify libraries, or to use code we have written in other files. In the example program, we include a library to use C++ input and output streams, a library to be able to use strings, the c standard library, and a time library. These libraries will enable us to use more operations further on in the program.Main Function- The main file must include a function called main(). This is where execution of the program begins. From here, you should be calling functions, instantiating classes, etc. Other files of your application as well as libraries can be included into this file.Variables and Variable Types- A variable is a way of referring to a storage area in a computer program. This memory location holds values\u2014numbers, text or more complicated types of data like payroll records. Types of variable are- int, null, char, bool, float, double and decimal.Printing to Console- In C++, text can be printed to the console by sending data to std::cout. This can include basic data types. The std::endl adds a new line to the output. This is the C++ way to do this. C++ supports most functionality from C.Reading From the Console- In C++, text can be read from the console by sending data from std::cin and storing in a variable. The console waits until user input when the std::cin function is called. After the user types something in, the program will attempt to store it in guess. In this example, no error checking is done, so if something other than an integer were typed in, the program would likely crash.Arithmetic Operations and Assignment Operator- An operator is simply a method implemented in a programming language to modify, replace, or combine values represented by variables. Without operators, a programming language would not be very useful because the programmer would not be able to store or manipulate the data. The arithmetic operators manipulate numerical values and the assignment operator stores a value to a variable. As the name implies, an assignment operator (or = ) assigns the right hand side expression or a value to a variable on the left hand side.Conditional (if) Statements- An if statement is a programming conditional statement that, if proved true, performs a function or displays information. Below is a general example of an if statement, not specific to any particular programming language. An if statement can be followed by an optional else if...else statement, which is very useful to test various conditions using single if...else if statement.Loops- A loop is a sequence of instruction s that is continually repeated until a certain condition is reached. Typically, a certain process is done, such as getting an item of data and changing it, and then some condition is checked such as whether a counter has reached a prescribed number. If it hasn't, the next instruction in the sequence is an instruction to return to the first instruction in the sequence and repeat the sequence. If the condition has been reached, the next instruction \"falls through\" to the next sequential instruction or branches outside the loop. A loop is a fundamental programming idea that is commonly used in writing programs.If you\u2019re interested in learning various concepts of c++, here\u2019s a list of various websites from where you can easily learn- Learn C++C programming.com - Learn C and C++ Programming - Cprogramming.comLearn C++ - Best C++ tutorials | Hackr.io",
+            "date": "Answered July 13, 2017",
+            "views": "248",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Saurabh Hooda",
+                    "user_href": "/profile/Saurabh-Hooda-1"
+                },
+                {
+                    "user_id": "Meghna Choudhary",
+                    "user_href": "/profile/Meghna-Choudhary-9"
+                },
+                {
+                    "user_id": "Surendra Banthia",
+                    "user_href": "/profile/Surendra-Banthia"
+                },
+                {
+                    "user_id": "Padma Banthia",
+                    "user_href": "/profile/Padma-Banthia"
+                },
+                {
+                    "user_id": "Aakash Rohatgi",
+                    "user_href": "/profile/Aakash-Rohatgi"
+                },
+                {
+                    "user_id": "Muskan Banthia",
+                    "user_href": "/profile/Muskan-Banthia"
+                },
+                {
+                    "user_id": "Dherya Singh",
+                    "user_href": "/profile/Dherya-Singh-1"
+                },
+                {
+                    "user_id": "Rishabh Gupta",
+                    "user_href": "/profile/Rishabh-Gupta-1008"
+                },
+                {
+                    "user_id": "Arun Puri",
+                    "user_href": "/profile/Arun-Puri-17"
+                },
+                {
+                    "user_id": "Yukta Jain",
+                    "user_href": "/profile/Yukta-Jain-13"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Quora User",
+                "href": "/profile/Thelaughingwood"
+            },
+            "answer_text": "How to write that program in C++? The program should display 5 products with quantity of each. User should be able to pick a product and wanted quantity. The program must check if the quantity does not exceed the quantity of the product , then update the stock and come back to the updated display of products. At least 2 functions ( 1 additional to main() ). Please help \ud83d\ude1e ",
+            "date": "Answered March 5, 2020",
+            "views": "19",
+            "upvotes": "0"
+        }
+    ]
+}

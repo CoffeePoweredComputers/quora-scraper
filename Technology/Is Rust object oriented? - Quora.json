@@ -1,0 +1,67 @@
+{
+    "title": "Is Rust object oriented? - Quora",
+    "tags": [
+        "Knoldus Inc",
+        "Rust (programming language)",
+        "Object-Oriented Programming",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Craig Cruden",
+                "href": "/profile/Craig-Cruden"
+            },
+            "answer_text": "I would not consider Rust to be object-oriented. It shares some characteristics of an object-oriented language, but not all. Rust does not really implement the concept of inheritance. In Rust you can define structs (as pure structs - with no behavior), or you can add functions to that struct if you so desire. You can define structs as data only. It also shares some characteristics of a functional language, but not all. By default it is immutable (to make things mutable is more verbose \u2014 I take that as a hint), but then idiomatic Rust is more mutable than many functional purists may be comfortable with. The feel to me is that it is more functional oriented, but not at the cost of performance. One of it\u2019s main goals/selling points is that it provides \u201czero cost abstractions\u201d - therefore the features it includes from either of those paradigms tend to be measured against that standard. The other selling point is that it is a \u201csystems language\u201d, and at the hardware level everything is mutable - so if it went to far implementing functional theory on top of it \u2014 it\u2019s abstraction would take it to far away from the hardware level to meet the requirement of \u201czero cost abstraction\u201d. Abstractions in Rust tend to be done through Traits and Generics. There are things in the future that are of interest to the language creators, but are still at the concept stage\u2026 i.e. HKT (Higher Kinded Types - which is very much functional oriented). Basically, depending on your criteria, Rust could be considered object-oriented, or not, or functional, or not\u2026 but I think the language is more influenced by functional concepts than object-oriented ones. ",
+            "date": "Answered July 9, 2019",
+            "views": "42",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anton Alstes",
+                    "user_href": "/profile/Anton-Alstes"
+                },
+                {
+                    "user_id": "Mo Aboulmagd",
+                    "user_href": "/profile/Mo-Aboulmagd"
+                },
+                {
+                    "user_id": "Aaron Uriel Guzman Cardoso",
+                    "user_href": "/profile/Aaron-Uriel-Guzman-Cardoso"
+                },
+                {
+                    "user_id": "Pavel Morava",
+                    "user_href": "/profile/Pavel-Morava"
+                },
+                {
+                    "user_id": "Archis Gore",
+                    "user_href": "/profile/Archis-Gore"
+                },
+                {
+                    "user_id": "Miroslav \u0160upica",
+                    "user_href": "/profile/Miroslav-\u0160upica"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matthew Smedberg",
+                "href": "/profile/Matthew-Smedberg"
+            },
+            "answer_text": "Short answer, no. Long answer, Rust only satisfies one of the three competing definitions of object-orientation. Is Rust object oriented? A quick refresher: there are three competing things that \u201cobject-oriented\u201d can mean. The oldest definition, historically due to Alan Kay, is that a language is \u201cobject-oriented\u201d if the fundamental unit of behavior in the language is one object sending a \u201cmessage\u201d to another. This is not a recognizable paradigm in Rust. The more common definition these days has to do with private state management: a language is \u201cobject-oriented\u201d if values can have private state which affects their behavior as seen from the outside world. Rust clears this definition with room to spare. (It also satisfies other properties that are frequently discussed on the same page as this definition, such as supporting interfaces and polymorphism.) The last definition (which I learned[1] from \u201cUncle\u201d Bob Martin, but I\u2019m not sure it originated with him) is the one that\u2019s most correct and least popular: a language is object-oriented if it binds behaviors to data \u201clate\u201d, i.e. at runtime. The result is code where the compiler cannot know what specific code will be run by a method invocation \u2014 the code will have be resolved by a runtime lookup of some sort. Rust does not do this. A particular type cannot have abstract or overridable methods, and an interface must be fully resolvable for any particular mention of it in code. Footnotes[1] Clean Coder Blog",
+            "date": "Updated June 9, 2020",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Torbj\u00f6rn Gannholm",
+                    "user_href": "/profile/Torbj\u00f6rn-Gannholm"
+                },
+                {
+                    "user_id": "Pavel Morava",
+                    "user_href": "/profile/Pavel-Morava"
+                }
+            ]
+        }
+    ]
+}

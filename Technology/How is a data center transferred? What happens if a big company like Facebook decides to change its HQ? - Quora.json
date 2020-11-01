@@ -1,0 +1,41 @@
+{
+    "title": "How is a data center transferred? What happens if a big company like Facebook decides to change its HQ? - Quora",
+    "tags": [
+        "Internet Data Centers",
+        "Data Center Management",
+        "Data Center Locations",
+        "Headquarters",
+        "Data Centers",
+        "Facebook (company)",
+        "Big Data",
+        "Facebook (product)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Simon Greenwood",
+                "href": "/profile/Simon-Greenwood-1"
+            },
+            "answer_text": "A2A: How is a data center transferred? What happens if a big company like Facebook decides to change its HQ? Can\u2019t think why you are asking that today :) Of course, as always, this will vary. A company the size of Facebook should have no data that is stored in a single location and in theory it should be possible to populate a new datacentre with data from existing datacentres, or just start it from no data at all, or seed data. It\u2019s quite possible that Facebook Engineering have documented this although I can\u2019t actually see it at a quick look. For lesser mortals, again it varies. Depending on the size of your data it may be possible to transfer it over a network but there comes a time when what Scott McNealy of Sun called Yachtnet comes into its own, the theory broadly being that you ask yourself whether it would be quicker to transfer your data across the network, or ship it as disks, perhaps on a yacht. ",
+            "date": "Answered May 29, 2020",
+            "views": "39",
+            "upvotes": " Answer requested by Frederico Montenegro",
+            "upvoters": [
+                {
+                    "user_id": "Emily Bowman",
+                    "user_href": "/profile/Emily-Bowman-62"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles T Goolsbee",
+                "href": "/profile/Charles-T-Goolsbee"
+            },
+            "answer_text": "Facebook has \u201cchanged its HQ\u201d at least three times in its history. Two locations in Palo Alto, and its current location in Menlo Park. I worked at Facebook during the last (Palo Alto to Menlo Park) move. It was no big deal and was phased over several weeks. The datacenters operate independently from HQ. HQ is where software gets slapped together. The datacenters is where the software runs once in production. They\u2019re unconnected in terms of operational impact. FB has datacenters all over the world and the data is replicated between them all the time. In fact, they can (and regularly do) \u201cshut down a datacenter campus/region\u201d and their end users have no idea, since the impact of doing so is unnoticeable. ",
+            "date": "Answered May 29, 2020",
+            "views": "51",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

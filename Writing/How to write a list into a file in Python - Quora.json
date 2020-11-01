@@ -1,0 +1,57 @@
+{
+    "title": "How to write a list into a file in Python - Quora",
+    "tags": [
+        "Python (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Deepa Huddar",
+                "href": "/profile/Deepa-Huddar"
+            },
+            "answer_text": "It very simple. All you need to do is follow the steps: open the file to which u want to write.Iterate through the list and write to the file at the same timeBelow is the code: x=['a', 'b', 'c'] with open(\u2018path\\to\\file\\filename.txt', mode='wt', encoding='utf-8') as myfile: myfile.write('\\n'.join(str(line) for line in x)) ",
+            "date": "Answered April 21, 2017",
+            "views": "64",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jatin Falwaria",
+                    "user_href": "/profile/Jatin-Falwaria"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mukesh A",
+                "href": "/profile/Mukesh-A-7"
+            },
+            "answer_text": "Consider you have the list with name: myList. And you have the python file open with the object: myFile. for item in myList:\u00a0  myFile.write(\"%s\\n\" % item)\u00a0",
+            "date": "Answered April 14, 2017",
+            "views": "167",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Patel Utsav",
+                    "user_href": "/profile/Patel-Utsav-13"
+                },
+                {
+                    "user_id": "Jiten Bana",
+                    "user_href": "/profile/Jiten-Bana-1"
+                },
+                {
+                    "user_id": "Mehdi Zitouni",
+                    "user_href": "/profile/Mehdi-Zitouni"
+                },
+                {
+                    "user_id": "Shriram Jayachandran",
+                    "user_href": "/profile/Shriram-Jayachandran"
+                },
+                {
+                    "user_id": "Ashutosh Nayak",
+                    "user_href": "/profile/Ashutosh-Nayak-39"
+                }
+            ]
+        }
+    ]
+}

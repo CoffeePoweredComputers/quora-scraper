@@ -1,0 +1,113 @@
+{
+    "title": "How to use different coding languages in one program - Quora",
+    "tags": [
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wim ten Brink",
+                "href": "/profile/Wim-ten-Brink"
+            },
+            "answer_text": "There are actually various ways to integrate multiple programming languages with one another so there is no single answer.  You could e.g. call another application and capture the output of this application. (Which is easy for console applications.)  You could compile one piece of code to a library (e.g. dynamic link library) which exports several methods and call those methods.  Or you use two compilers to generate object files and have the Linker combine them in a single application.  And in the case of Assembly, well... Languages like C, C++ and Delphi/ObjectPascal have a special keyword telling the compiler that part of the code is written in Assembly, not the regular language. With .NET, you generally create assemblies that you can combine together, no matter which language they're written in. And in really special situations, you just create two applications but allow them to communicate with one another through shared memory oth other inter-process techniques. I have, in the past, used Turbo Pascal and Turbo C to create applications as a single executable. (Really decades ago.) This was possible because Turbo Pascal could combine code and object files into a single executable. It had a lot of limitations, though, since you needed to include all C libraries that were used by the C code too. In the same way, Turbo Pascal could also be combined with other programming languages if those compilers would create object files. It wasn't easy, though. It required some good knowledge of how the C and Pascal code would work together. But that was the DOS era and Windows makes it much easier through DLL's. Same with Linux and Mac OS X, though. Modern operating systems support external, shared libraries. With Java things are a bit more complex because Java compiles to Java bytecode while most programming languages compile to either .NET bytecode or machinecode. You can't combine machinecode and bytecode that well as you'd like. You can still call a Java library from C++, though. But Java is meant to be platform-independant while other programming languages are generally limited to a specific platform. (But you could use emulators to work around this.) Combining more than one language can become a bit messy and you need to know what you're doing. For the inexperienced ones: please practice at this! Learn to understand the languages you're using and how you can combine their forces! ",
+            "date": "Answered December 21, 2015",
+            "views": "124",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Belal Noor",
+                    "user_href": "/profile/Belal-Noor-2"
+                },
+                {
+                    "user_id": "Nayan Parate",
+                    "user_href": "/profile/Nayan-Parate-3"
+                },
+                {
+                    "user_id": "Pratik Roy",
+                    "user_href": "/profile/Pratik-Roy-45"
+                },
+                {
+                    "user_id": "Ehab Latif",
+                    "user_href": "/profile/Ehab-Latif-1"
+                },
+                {
+                    "user_id": "Prosenjit Sardar",
+                    "user_href": "/profile/Prosenjit-Sardar-3"
+                },
+                {
+                    "user_id": "Elcan Ibrahimov",
+                    "user_href": "/profile/Elcan-Ibrahimov"
+                },
+                {
+                    "user_id": "Valeriy Ivanov",
+                    "user_href": "/profile/Valeriy-Ivanov-5"
+                },
+                {
+                    "user_id": "Esha Sharma",
+                    "user_href": "/profile/Esha-Sharma-137"
+                },
+                {
+                    "user_id": "Tharindu Dilshan",
+                    "user_href": "/profile/Tharindu-Dilshan-27"
+                },
+                {
+                    "user_id": "Ashley Shawl",
+                    "user_href": "/profile/Ashley-Shawl"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul King",
+                "href": "/profile/Paul-King-2"
+            },
+            "answer_text": "There are three main approaches to combining multiple languages into a single problem. 1. Syntax embedding -- Many languages allow an secondary language to be embedded into the syntax of the first. This requires a start and end marker in the outer program's syntax where the end marker is not a valid token of the inner language (so it is not confused as part of the inner program). For example C and C++ allow assembly language to be embedded with the syntax asm(\"assembly code goes here\"). PHP is in the HTML syntax with embedded PHP inside an HTML tag as <?php php code goes here ?>. HTML and SQL are often embedded inside programs using strings like \"HTML code\" or \"SQL code\". 2. Embedded function binding -- Some languages allow functions from an alternative integrated language to be called. For example MATLAB can call Java functions directly. Often there are binding libraries between languages that will call into one language's VM interpreter from another language inside the same executing process. For example Jython is a version of python written on top of the Java JVM that can easily call into Java code which can call back into python code. 3. Interprocess function binding -- The last way to combine languages is via interprocess function binding. With method, the part of the program in the embedded language is written as a stand-alone server process with a RPC (remote procedure call) external interface. A \"stub library\" is then written in the outer language that uses interprocess communication (e.g. TCP/IP) to translate the source parameters into serialized bytes which are sent as a block to the target server process. The target server executes the function with the parameters and serializes the return results, which are then decoded out the source code. This approach carries a lot of overhead and requires context switches at the CPU level, so the handoffs are much slower. It's advantage is that it can scale across server machines and even across data centers. \"Thrift\" is a popular interlanguage function-binding and protocol translation technology used for creating cross-language services. One of the trickiest aspects of multi-language coding, regardless of the scheme used, is referencing the variables and data objects of one language universe from the other language universe. Various machinations are often necessary to reference one side of the language wall from the other in a way that won't violate the expectations of either programming paradigm. Calling back and forth (A calls into B which calls back into A) can get particularly tricky. ",
+            "date": "Answered December 26, 2015",
+            "views": "116",
+            "upvotes": " View 25 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Xiaohui Liu",
+                    "user_href": "/profile/Xiaohui-Liu-3"
+                },
+                {
+                    "user_id": "Belal Noor",
+                    "user_href": "/profile/Belal-Noor-2"
+                },
+                {
+                    "user_id": "Amerta Saget",
+                    "user_href": "/profile/Amerta-Saget"
+                },
+                {
+                    "user_id": "Charan Korrapati",
+                    "user_href": "/profile/Charan-Korrapati"
+                },
+                {
+                    "user_id": "Valeriy Ivanov",
+                    "user_href": "/profile/Valeriy-Ivanov-5"
+                },
+                {
+                    "user_id": "Jermaine Harris",
+                    "user_href": "/profile/Jermaine-Harris-2"
+                },
+                {
+                    "user_id": "Bernus PL",
+                    "user_href": "/profile/Bernus-PL"
+                },
+                {
+                    "user_id": "Antonio Intini",
+                    "user_href": "/profile/Antonio-Intini-1"
+                },
+                {
+                    "user_id": "Akshata Savadi",
+                    "user_href": "/profile/Akshata-Savadi"
+                },
+                {
+                    "user_id": "Kausik Sriram",
+                    "user_href": "/profile/Kausik-Sriram"
+                }
+            ]
+        }
+    ]
+}

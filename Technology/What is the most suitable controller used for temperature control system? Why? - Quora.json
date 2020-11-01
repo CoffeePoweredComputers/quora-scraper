@@ -1,0 +1,50 @@
+{
+    "title": "What is the most suitable controller used for temperature control system? Why? - Quora",
+    "tags": [
+        "PID Controllers",
+        "Control Theory",
+        "Control Engineering",
+        "Sensors",
+        "Control",
+        "Temperature",
+        "Thermodynamics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Deep Shekhar Acharya",
+                "href": "/profile/Deep-Shekhar-Acharya"
+            },
+            "answer_text": "In this era of \u201csmart-everything\u201d, a controller based on Fuzzy Logic, Neural Network, Multi agents, AI, etc would be efficient and intelligent enough for mostly any kind of applications. But, given the simplicity of your \u201ctemperature control problem\u201d, the most suitable controller will obviously be a Proportional-Integral-Drivative (PID) controller. Without going into explanations and spitting out technical jargons, I would like to assert that due to the structural simplicity and ease of implementation, a PID Controller is the most widely used controller, even for pretty complex systems. According to a survey, more than 90% closed loops in industries employ PID Controller. PID controllers have been employed to control a plethora and variety of plants, both stable as well as unstable, such as inverted pendulum, magnetic levitation, motor speed control, power electronics based converters\u2026.the list is pretty long. They have been reported to exhibit excellent response on proper tuning. I hope I have answered your question to some extent, at least. ",
+            "date": "Answered April 11, 2019",
+            "views": "80",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shivangi Joshi",
+                    "user_href": "/profile/Shivangi-Joshi-25"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhishek Choudhary",
+                "href": "/profile/Abhishek-Choudhary-10"
+            },
+            "answer_text": "A seemingly straightforward choice of controller is PID Control action due to of its low cost and a conventional approach. But it will require a lot of tuning in parameters by heat and trial process. Since temperature in a room or anywhere else is continuously affected by various uncontrollable disturbances, its inevitable that we have to provide some tolerance of offset. Since temperature controlling task, usually in commercial areas, don\u2019t require a precise maintenance of temperature every time, we are free to reduce the I action of PID controller so that it doesn\u2019t put pressure on power drive of appliances. Whereas in areas where high precision is required we have to inculcate a feed forward controller too, which will assist the PID controller separately about the disturbances. If cost is not the issue, we can use a higher degree controller based on IMP or internal model principle. PID controller is not an all time full proof control strategy for any system. ",
+            "date": "Answered March 29, 2019",
+            "views": "231",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dev Raj",
+                    "user_href": "/profile/Dev-Raj-1034"
+                },
+                {
+                    "user_id": "Nikhesh Muralidharan",
+                    "user_href": "/profile/Nikhesh-Muralidharan-1"
+                }
+            ]
+        }
+    ]
+}

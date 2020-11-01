@@ -1,0 +1,34 @@
+{
+    "title": "How many average write cycles does an SSD have? - Quora",
+    "tags": [
+        "Solid-State Drives (SSD)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jerry Lucas",
+                "href": "/profile/Jerry-Lucas-2"
+            },
+            "answer_text": "It depends on the brand name, flash technology used, SSD capacity, and the user average workload. Data centers that use SSDs in servers need to determine the average workload and the SSD's endurance, which is generally measured in terabytes written (TBW). A home user or small business will have a light workload, compared to a 24-hour data center. Each flash memory cell has a finite lifetime, or endurance, measured in terms of its program/erase (P/E) cycles. Write Acceleration Index (WAI) is the multiplication ratio of the data size actually written to the physical memory, compared to the size of the data written by the host system. TBW = (SSD physical capacity X NAND endurance)/WAI SSDs have a rating for TBW. Look at the specifications. SSD users can check the current amount of data written by using SMART information. An oversized SSD may be used to provide more storage space for wear leveling and longer life. Samsung SSD V-NAND technology boasts 10 times higher endurance than the conventional NAND, suitable for demanding data center uses, with write-intensive applications. I use Samsung Pro series SSD. Samsung V-NAND technology is built to handle 300 terabytes written (TBW),* which equates to a 40 GB daily read/write workload over a 10-year period. It comes with the industry's top-level 10-year limited warranty. Samsung SSD Model 850 PRO 128/256 GB: 150 TBW512 GB/1 TB/2 TB: 300 TBW ",
+            "date": "Answered February 6, 2017",
+            "views": "65",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Barrett Goss",
+                    "user_href": "/profile/Barrett-Goss"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Leo Sayer",
+                "href": "/profile/Leo-Sayer-2"
+            },
+            "answer_text": "Generally each cell inside an ssd (depending on the technology used) can be anywhere between 3000 and 100000 writes (the average used to be 10000) in life. You will really only see TBW and DWPD quoted (TBW mostly). This is the garanteed maximum amount of data that can be writted/daily writes per day (to an empty drive), given each cell having even writes (hence a half full drive may have a shorter life) before the chance of cell failure. TRIM helps keep you drive in good condition and tries its best to even out cell/cluster/sector wear, but isnt totally infallable. ",
+            "date": "Answered October 19, 2018",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

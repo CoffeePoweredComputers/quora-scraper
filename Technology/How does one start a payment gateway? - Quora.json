@@ -1,0 +1,92 @@
+{
+    "title": "How does one start a payment gateway? - Quora",
+    "tags": [
+        "Online Payment Forum",
+        "Startup Advice",
+        "Online and Mobile Payment Startups",
+        "Payment Gateways",
+        "E-Commerce"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Faisal Khan",
+                "href": "/profile/Faisal-Khan-1"
+            },
+            "answer_text": "Assuming you want to get started in the US. To start a payment gateway, you would need to be an MSP / ISO of a bank. MSP: Member Service Provider means the financial institution (i.e. bank) through which you will be validating the registration and transactions of the card holder (i.e. VISA, Mastercard, Amex, Discover, etc.) An MSP is also the party who is making access to acquiring services available through that membership ISO: Independent Sales Organization would be a sales agent (i.e. you), as registered with the card associations (i.e. VISA, Mastercard, Amex, Discover, etc.), sponsored by an MSP (i.e. a financial institution) that is allowed to secure point of sale acquiring (be it online or offline) If you talk to banks like Wells-Fargo, Chase or Bank of America to name a few, you will get all the necessary financial requirements, corporate requirements and technical requirements enabling you to become a payment gateway. Your technology background will come in handy in making a layer (portal) on top of the APIs and interconnects that the bank you work with provides.  References:  Merchant Account: http://en.wikipedia.org/wiki/Merchant_accountMasterCard MSP Rules Manual (PDF) - gives you a good example of what the rule sets are all about. See http://www.mastercard.com/za/wce/PDF/13000_MSP-Entire_Manual.pdfChase ISO Program - http://iso.chasepaymentech.com/Wells Fargo Merchant Services (couldn't find their ISO link) https://www.wellsfargo.com/biz/merchant/",
+            "date": "Updated August 20, 2013",
+            "views": "913",
+            "upvotes": " View 101 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mike Townsend",
+                    "user_href": "/profile/Mike-Townsend"
+                },
+                {
+                    "user_id": "Farzad Keyhani",
+                    "user_href": "/profile/Farzad-Keyhani"
+                },
+                {
+                    "user_id": "Indigo Shaman",
+                    "user_href": "/profile/Indigo-Shaman"
+                },
+                {
+                    "user_id": "Angel Meece",
+                    "user_href": "/profile/Angel-Meece-3"
+                },
+                {
+                    "user_id": "Marcelo Vieira",
+                    "user_href": "/profile/Marcelo-Vieira-15"
+                },
+                {
+                    "user_id": "Adeel Shekhani",
+                    "user_href": "/profile/Adeel-Shekhani"
+                },
+                {
+                    "user_id": "S.J Okure",
+                    "user_href": "/profile/S-J-Okure"
+                },
+                {
+                    "user_id": "Roy Clark",
+                    "user_href": "/profile/Roy-Clark-55"
+                },
+                {
+                    "user_id": "Namazbek Bekarisuly",
+                    "user_href": "/profile/Namazbek-Bekarisuly"
+                },
+                {
+                    "user_id": "Chalk Rave",
+                    "user_href": "/profile/Chalk-Rave"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Egor Kaleynik",
+                "href": "/profile/Egor-Kaleynik"
+            },
+            "answer_text": "As far as I see, this is just art for art\u2019s sake. If yes, then you could build something most uncomplicated to satisfy your curiosity. First of all, you should clearly understand what differs a proper payment gateway from the bad. There are some fundamental features of the excellent payment solution from different points of view: 1. Security Users' payment details must be stored as secure as necessary. Setting the breach chance to near-zero level is a must. Otherwise, the merchant will lose its customers\u2019 trust in one moment. A PCI-DSS Compliance suffices for this purpose. No matter your project is a play or real, do your best to make it as secure as it is possible. 2. Fast processing The processing time of payments is a critical feature for a wide range of businesses. Slow processing leads to high abandon rates among users. For your project, which highly likely will be rather simple, the processing speed won\u2019t be a challenge. 3. Low fees Today\u2019s businesses generally have low margins due to high competitiveness. The lowest possible fee level is a total must, while the highest costs mean great dissatisfaction from users. As you can see, this point doesn\u2019t matter in your case. 4. Proper documentation and friendly support Poor documentation and deficient support are two main pains for the developers here. These two issues make integration longer, more expensive, and often decrease its quality. And you, as a developer, should think of documentation no matter will it be a real business solution or not. 5. Fewer bugs The more bugs a specific payment system has, the more issues your customers will face. Moreover, bugs in the payments sometimes cause massive financial losses. Believe me, there are hordes of different payment systems globally, which are crowded with bugs. Please do not create another one! 6. Resistance to chargebacks If the chargebacks become a regular thing, the business will face heavy losses. It\u2019s right for declined transactions too. This part may be quite hard for you to implement as it requires real experience, understanding of patterns of users\u2019 behavior, as well as historical data on how chargebacks occurred. 7. Mobile-friendliness Mobile payments are trendy across the globe. If your payment solution is incompatible with mobile devices, in most cases, your customers will ignore your tool. As you are focusing on web development only, it\u2019ll be quite hard for you to make something more than just an adaptive web version. 8. Stable sandbox Do not force your customers to test the solution using real payments. It may lead to losses and massive dissatisfaction. At the same time, it may be rather hard for you alone to arrange functional, integration, performance, and security tests. 9. Compatibility over time Sometimes software tools are updating and getting new features. The payment system should stay functioning after these updates, even if some libraries it uses have been changing significantly. Of course, without a coding team and going offline on maintenance for several days. My answer came rather late, but I hope someone else will find it helpful. ",
+            "date": "Answered December 17, 2019",
+            "views": "29",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Liew",
+                    "user_href": "/profile/Daniel-Liew-26"
+                },
+                {
+                    "user_id": "Zaki Dandoti",
+                    "user_href": "/profile/Zaki-Dandoti-1"
+                },
+                {
+                    "user_id": "Hussein Menahi",
+                    "user_href": "/profile/Hussein-Menahi"
+                },
+                {
+                    "user_id": "Maria Kot",
+                    "user_href": "/profile/Maria-Kot"
+                }
+            ]
+        }
+    ]
+}

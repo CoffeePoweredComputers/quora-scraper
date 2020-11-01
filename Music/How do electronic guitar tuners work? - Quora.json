@@ -1,0 +1,45 @@
+{
+    "title": "How do electronic guitar tuners work? - Quora",
+    "tags": [
+        "Guitars",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Derek Chandler",
+                "href": "/profile/Derek-Chandler"
+            },
+            "answer_text": "Although Anthony Foster mentions the possibility of using a Fourier transform, the resolution or accuracy would be too low for a guitar tuner. Using zero-crossings will be inaccurate since it will most likely detect the frequency of the second harmonic due to the magnitude of harmonics that create the timbre of the guitar. The most likely implementation of a guitar tuner is a peak/trough detector with detects the highest and lowest amplitudes of a signal (provided by a pick-up or microphone). By measuring the time between peaks (or troughs) the tuner determines the period of the signal and calculate the frequency as the reciprocal of the period. ",
+            "date": "Answered October 23, 2011",
+            "views": "44",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jackson Matheson",
+                    "user_href": "/profile/Jackson-Matheson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anthony Foster",
+                "href": "/profile/Anthony-Foster"
+            },
+            "answer_text": "(Here's a guess) You take a sample of the sound, and do a Fourier transform on it. A Fourier transform converts a voltage vs time plot into a frequency vs amplitude one (if we ignore the phase of the wave for simplicity). Then you can find the peak in the Fourier domain which will be a frequency, corresponding to the note being played. However, I think that doing a Fourier transform (even a FFT) is overkill and I think that guitar tuners might actually use a zero-crossing counter which I do not know much about . ",
+            "date": "Answered June 13, 2011",
+            "views": "2",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Supriya Joshi",
+                    "user_href": "/profile/Supriya-Joshi-2"
+                },
+                {
+                    "user_id": "Abhishek Pohankar",
+                    "user_href": "/profile/Abhishek-Pohankar"
+                }
+            ]
+        }
+    ]
+}

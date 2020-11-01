@@ -1,0 +1,36 @@
+{
+    "title": "What is the need of routing algorithms? - Quora",
+    "tags": [
+        "Routing Protocols",
+        "Routing",
+        "Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Roger Dolce",
+                "href": "/profile/Roger-Dolce"
+            },
+            "answer_text": "Routing is the process of selecting best paths in a network.[a] Routing is performed for many kinds of networks, including the public switched telephone network (circuit switching), electronic data networks (such as the Internet), and transportation networks. This article is concerned primarily with routing in electronic data networks using packet switching technology. In packet switching networks, routing directs packet forwarding (the transit of logically addressed network packets from their source toward their ultimate destination) through intermediate nodes. Intermediate nodes are typically network hardware devices such as routers, bridges, gateways, firewalls, or switches. General-purpose computers can also forward packets and perform routing, though they are not specialized hardware and may suffer from limited performance. The routing process usually directs forwarding on the basis of routing tables, which maintain a record of the routes to various network destinations. Thus, constructing routing tables, which are held in the router's memory, is very important for efficient routing. Most routing algorithms use only one network path at a time. Multipath routing techniques enable the use of multiple alternative paths. ",
+            "date": "Answered September 28, 2016",
+            "views": "12",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Faiz Akram",
+                    "user_href": "/profile/Faiz-Akram-29"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike Taylor",
+                "href": "/profile/Mike-Taylor-60"
+            },
+            "answer_text": "Not sure of your background, but consider taking a trip across the country. What kinds of criteria would affect your decision of which roads to take? Would you go south to avoid snow? Would you go north to avoid heat? Would you want the fastest route, or maybe you prefer a scenic route? Do you need it to involve airplanes in addition to cars? Would a train work better for you? Just as you consider your criteria for a long trip, a router has its own criteria to consider. Each routing algorithm is designed to focus on different types of criteria and then to make a decision on which route best meets the criteria. It would be nice if a router could select a \u2018best path\u2019 and that path would be set in place from start to finish ahead of sending the data. But it does not quite work that way. Network traffic is traveling very fast and it can get congested, potentially causing vast slowdowns across the Internet. For that reason, each router in the path to a destination, can make an independent decision regarding the current best path. It would be like looking at your GPS and seeing \u2018red\u2019 zones on your intended path. You abandon your original path to look for alternate routes. A routing algorithm can do that as well. The algorithms have historically developed in a linear fashion. Which is to say that each one did something that a previous one was not designed to do. RIP used a hop by hop count of the routers, which works for smallish networks. OSPF largely abandoned hop count in favor of just using bandwidth. EIGRP can use both hop count and bandwidth, but also includes other criteria, such as examining the delay on the network. BGP was developed for large scale networks, has many variables, and is mostly used by Internet Service Providers (ISPs). Note that the math on these algorithms is relatively simple math, at worse, a little algebra. They are not that complex to master with effort. ",
+            "date": "Answered March 16, 2018",
+            "views": "11",
+            "upvotes": "0"
+        }
+    ]
+}

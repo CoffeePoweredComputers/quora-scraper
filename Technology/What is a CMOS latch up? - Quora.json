@@ -1,0 +1,25 @@
+{
+    "title": "What is a CMOS latch up? - Quora",
+    "tags": [
+        "Latches",
+        "Complementary metal\u2013oxide\u2013Semiconductor (CMOS)",
+        "CMOS Battery",
+        "CMOS Sensor",
+        "Digital Electronics",
+        "Analog Electronics",
+        "Sensors",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Getsla",
+                "href": "/profile/Robert-Getsla"
+            },
+            "answer_text": "CMOS Latch Up is a problem that happens especially with older CMOS chip designs. It happens when one of the logic input pins is momentarily pulled more positive than the VDD pin voltage. This turns on a parasitic SCR that is built into the layered structure of the CMOS device. Normally, this should never happen, but transient events, such as power supply overshoots coming from CMOS logic devices powered by different power supplies can induce it, as can multi-voltage power supplies that do not sequence up in the correct order. Once that parasitic SCR structure has turned on, the currents that can flow through the device can literally destroy the chip involved. Most manufacturers have built their newer devices to be more resistant to this than the earlier designs were. But if a logic input never EVER becomes more positive than the VDD supply pin to the CMOS chip, then \u201cCMOS Latch Up\u201d should not be a problem. ",
+            "date": "Answered April 20, 2020",
+            "views": "55",
+            "upvotes": "0"
+        }
+    ]
+}

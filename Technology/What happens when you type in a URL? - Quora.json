@@ -1,0 +1,219 @@
+{
+    "title": "What happens when you type in a URL? - Quora",
+    "tags": [
+        "Uniform Resource Locators (URLs)",
+        "Web Browsers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steve Johnsen",
+                "href": "/profile/Steve-Johnsen-5"
+            },
+            "answer_text": "Paula, When you type the URL of a web page into your browser, it triggers a very complicated chain reaction to get the web page loaded. The URL has multiple parts. The second part of the URL is a file path. Here is the URL of the page I am typing on: https:// + http://www.quora.com + /What-happens-when-you-type-in-a-URL + ?__nsrc__=4 The first part, https://, is the protocol your computer will use to communicate with the remote computer. The second part, www.quora.com, is the domain name. The domain name is usually a reference to a specific computer (or at least a physical location) somewhere on the Internet. The third part, /What-happens-when-you-type-in-a-URL, is the file path. This tells the remote computer what you are looking for. The last part, ?__nsrc__=4, is the query string. It tells the remote server additional information about how to handle your request. Here is what happens when you type the full URL into your browser: Your browser asks your computer where the domain name (www.quora.com) is located.If your computer does not know, it asks your DNS server. Your DNS server is set up when you connect to the Internet, and it is usually provided by your Internet Service Provider (ISP). A DNS server is like a phone book with records of the IP addresses for many different domain names.If your ISP\u2019s DNS server does not know where www.quora.com is located, it asks the Internet registration authority who has the authoritative records for quora.com.The Internet registration authority tells your ISP\u2019s DNS server who maintains the address records for quora.com. In this case, a server with domain name ns-1143.awsdns-14.org maintains quora.com\u2019s records. This is called a nameserver.Your ISP\u2019s DNS server then asks the nameserver where www.quora.com lives. www.quora.com has an IP address of 151.101.69.2. This is the IP address of a computer in Amazon\u2019s data center.Your ISP\u2019s DNS server then sends this IP address back to your PC. Your PC stores the IP address in its local cache (its local address book).Your PC sends a request to 151.101.69.2 for the web page.The computer that is hosting quora\u2019s web page receives the request and parses it. Based on the protocol, the domain name, the file path and the query string, the software running on that remote computer collect all the text and image files that comprise this web page and send them back to your PC.This is the simple version. I\u2019ve left out the fact that requests going out over the Internet are passed from computer to computer to computer until they reach their destination. So your request(s) may have been passed among 50 or more computers before you finally get the web page back! Steve ",
+            "date": "Answered December 17, 2018",
+            "views": "1",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sonam Jamtsho",
+                    "user_href": "/profile/Sonam-Jamtsho-110"
+                },
+                {
+                    "user_id": "Ahmed Emad",
+                    "user_href": "/profile/Ahmed-Emad-156"
+                },
+                {
+                    "user_id": "Xi Li",
+                    "user_href": "/profile/Xi-Li-77"
+                },
+                {
+                    "user_id": "Manoj Kulkarni",
+                    "user_href": "/profile/Manoj-Kulkarni-14"
+                },
+                {
+                    "user_id": "Mark Bishop",
+                    "user_href": "/profile/Mark-Bishop-36"
+                },
+                {
+                    "user_id": "William Mussatto",
+                    "user_href": "/profile/William-Mussatto"
+                },
+                {
+                    "user_id": "Dave Mackey",
+                    "user_href": "/profile/Dave-Mackey"
+                },
+                {
+                    "user_id": "Alexander Lehmann",
+                    "user_href": "/profile/Alexander-Lehmann"
+                },
+                {
+                    "user_id": "Paula Doromal",
+                    "user_href": "/profile/Paula-Doromal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gabriel Bell",
+                "href": "/profile/Gabriel-Bell-18"
+            },
+            "answer_text": "It\u2019s like this :- (Note - this is not going to be the technical answer. More of an artistic explanation, so to speak. Mostly because the technical explanation involves a lot of crap you really don\u2019t want, or need to know). So - you type in the URL. Say Archive of Our Own The browser takes this and passes it to the network subsystem on the computer (PC, Laptop, Mac, Phone - whatever you are on it is just a computer). The network subsystem passes it through a \u201cDNS\u201d - Domain Name System. This is a technical term for something that turns a name (archive of our own) to an address (aaa xxx yyy zzz) \u2014 this is because computers on the internet don\u2019t have names, they have addresses, and every address is unique. Much like every house in the world has a unique address, every computer has a unique address. Once your computer knows the address of the remote computer, it sends an HTTP request to get the web page you asked for. (HTTP stands for Hypertext Transfer Protocol \u2014 another technical term for the way web pages are transferred across the web \u2014 and allows text, images and so on to be moved around the web. The page is transferred from the remote computer in a set of packets (bundles of data) that are sent all over the world via the quickest route possible. They are then reassembled on your computer and the browser interprets the data and displays the web page. And that is essentially it. As I said there is a lot more to it (involving layers and more protocols and addressing formats and packet formats) but that is WAY beyond the scope of this answer, and the majority of the people who use the web don\u2019t need to know any of this. And that, dear readers, is what happens when you type a URL in a browser. ",
+            "date": "Answered October 16, 2019",
+            "views": "175",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mohammed Saiful Alam Siddiquee",
+                    "user_href": "/profile/Mohammed-Saiful-Alam-Siddiquee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tristan Wong",
+                "href": "/profile/Tristan-Wong-29"
+            },
+            "answer_text": "There\u2019ll be a TL;DR at the bottom of this don\u2019t worry! Something called a DNS lookup occurs - here\u2019s how it works: You type in a URL into an address bar in a browser.Your OS (Operating System) sends a query to the DNS recursive resolver (resolver) configured to it.The resolver picks up the request and checks the cached data to see if the domain name you entered is there. If it is, the resolver will send the IP address of the domain name back to your web browser.If it isn\u2019t, the resolver queries the DNS root nameserver (nameserver).The nameserver responds with the IP address of the TLD DNS server (TLD).The resolver makes a request to the specified TLD (like .com, .org, etc).The TLD responds with the IP address of the domain\u2019s nameserver (the website you want to visit).The resolver queries the domain\u2019s nameserver.The nameserver responds with the IP address of the domain.The resolver responds to the web browser with the domain\u2019s IP address.You access the website you want to visit.TL;DR: when you want to visit a website, something called DNS needs to translate the domain name (for instance, \u201cgoogle.com\u201d) into an IP address (like 216.58.204.14). ",
+            "date": "Answered August 28, 2020",
+            "views": "23",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Beam Davis",
+                "href": "/profile/Beam-Davis"
+            },
+            "answer_text": "First, let's start with the URL itself. The URL can be divided into 3 basic parts. Let's take this URL, for example: http://[math]quora.com[/math]/profile/Beam-Davis The string before the colon is the protocol. Each protocol has a default TCP port associated with it. On a UNIX/Linux system, the translation of protocol to port is in a file called \u201cservices\" in the \u201c/etc\u201d directory where configuration files are stored. Windows has this file, too. It's (usually) stored in the folder \u201cC:\\Windows\\System32\\drivers\\etc\u201d. The port assignments in this file are standardized and are basically the same on all systems. This file associates the \u201chttp\u201d protocol (which stands for \u201cHypertext Transfer Protocol\u201d) to TCP port 80. This can be overridden though, but we'll get back to that later. So, the \u201chttp:\u201d tells us this URL will be using the \u201chttp\u201d protocol and the \u201cservices\u201d file tells use we will be connecting use port 80. URL stands for Uniform Resource Locator, and can be used for many protocols. A URL could, for example, be \u201chttps\u201d for the secure encrypted version of HTTP, which the \u201cservices\u201d file assigns to port 443, or it could be \u201cftp\u201d, which connects on port 21. There are many other possible protocols: \u201cmailto\", \u201crsync\u201d, \u201cgopher\u201d, \u201ctelnet\u201d\u2026 All are assigned to their respective ports via the \u201cservices\u201d file. The next part of the URL is (usually) the fully qualified domain name or FQDN. In this case it\u2019s \u201c[math]quora.com[/math]\u201d, where \u201c[math]quora[/math]\u201d is the domain name and \u201c[math]com[/math]\u201d is the top-level domain name where \u201c[math]quora[/math]\u201d is registered. Since, in this example, we are not providing a host or service name, such as \u201c[math]www[/math]\u201d, the \u201c[math]quora.com[/math]\u201d domain's default server(s) will send our request to the default host or service, which happens to be \u201c[math]www[/math]\u201d in this case. \u201c[math]www[/math]\u201d is probably not a single server, but rather a pool of servers all grouped together via a load-balancer under the service name \u201c[math]www[/math]\u201d given the amount of traffic \u201c[math]www.quora.com[/math]\u201d receives. As I mentioned above, the protocol assigned by default by the \u201cservices\u201d file can be overridden. \u201c[math]quora.com[/math]\u201d could have a separate \u201chttp\u201d service running on a different port, say, for example, port 8080. To connect to that service instead of the default one on port 80, we would specify the port by putting a second colon after the top-level domain \u2014 so \u201c :8080\u201d. Back to our example\u2026 Everything after to first \u201c/\u201d after the FQDN is basically a directory tree where directories and document have been \u201cmounted\u201d. In this case we want to access the directory \u201c/profile/Beam-Davis\u201d. The web server will serve use the default document in that directory. The default document is often \u201cindex.html\u201d or \u201cindex.htm\u201d, but that is completely configurable on the web server. In this case, \u201c/profile/Beam-Davis\u201d most probably points to some sort of script which is run on the server and generates the page for us. All of this just covers the URL itself. When you type this URL into your browser, the browser first has to look up the IP address of the default server at \u201c[math]quora.com[/math]\u201d. This is done via the DNS service, which uses TCP port 53. The DNS server you\u2019re using is probably being set by your ISP, but you can override it in you computer's network settings or on your router. The DNS server will translate \u201c[math]quora.com[/math]\u201d as IP address 34.234.29.67. Your browser will then connect to this IP address on port 80 and request \u201c/profile/Beam-Davis\u201d from the web server. This is done by sending what is called an HTTP GET request. This is just a text message sent on port 80 that looks like this: GET http://[math]quora.com[/math]/profile/Beam-Davis HTTP/1.1 The 1.1 refers to the version of the HTTP request, which can be 1.1 or, with older browsers, 1.0. This just lets the web server know what version of HTTP responses the browser can understand. The web server will then send a text message back on port 80 starting with: HTTP/1.1 200 OK This let's the browser know that the web server understood the request and is sending the requested page. If the web server couldn't find the page, it would send back: HTTP/1.1 404 Not Found This is why \u201c404\u201d pages are called that. Following this status message will be the header, which will contain, amoungst other things, this line: Context-Type: text/html \u201ctext/html\u201d is called the MIME type. I won't go into MIME types except to say that they identify the type of document that is to follow. This will be followed by a blank line. The blank line signify the end of the header message and what follows is the actual web page. This is also just text and will start with: <HTML> This means that what follows will be in the Hypertext Markup Language. The browser will then render this text using the rules of HTML. Even the images on the web site are converted into text and then the browser converts them back into images. And that's what happens when you type in a URL. ",
+            "date": "Updated January 29, 2019",
+            "views": "761",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Bishop",
+                    "user_href": "/profile/Mark-Bishop-36"
+                },
+                {
+                    "user_id": "Gabriel Bell",
+                    "user_href": "/profile/Gabriel-Bell-18"
+                },
+                {
+                    "user_id": "Dave Mackey",
+                    "user_href": "/profile/Dave-Mackey"
+                },
+                {
+                    "user_id": "Joe Maldonado",
+                    "user_href": "/profile/Joe-Maldonado-11"
+                },
+                {
+                    "user_id": "Paula Doromal",
+                    "user_href": "/profile/Paula-Doromal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Remi Grumeau",
+                "href": "/profile/Remi-Grumeau"
+            },
+            "answer_text": "What do they teach you at school ?!  your browser checks if it\u2019s a domain name (aka quora.com) or an IP address (192.168.0.1).it asks your system if this domain or IP is in the hostname list.if it\u2019s a domain name, it asks DNS servers (Domain Names System) what is the IP registered for this domain.If a DNS entry exists, then it asks this IP address (web server) if it has something for this given URL.if so, then the server returns the corresponding data with a mime type (aka image/jpg, video/mp4, text/html, \u2026)If browser knows this mime type, it renders it. Otherwise it just download it as a file.isn\u2019t that obvious ?!  There is at very least a hundred scenarios going on when you type a URL. See wikipedia DNS page Domain Name System - Wikipedia ",
+            "date": "Answered December 22, 2018",
+            "views": "236",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Paula Doromal",
+                    "user_href": "/profile/Paula-Doromal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Juan Arias",
+                "href": "/profile/Juan-Arias-73"
+            },
+            "answer_text": "The url will be routed to various other servers until it is eventually connected with a DNS server. The Domain name server will take the url and find the IP address of that domain. Once the client machine is connected to the machine serving the content, the server will have to check and see if that content is available. It will issue some status code along with content being requested if successful. This is done in the form of a header file. Your browser will read this header file and display that content to you. If the request is not successful then you will see an error message and status code for why it could not connect. ",
+            "date": "Answered June 8, 2020",
+            "views": "42",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vagelis Grassos",
+                "href": "/profile/Vagelis-Grassos"
+            },
+            "answer_text": "URL type of www.xxxx.xxx is only a short cut of an IP address. It is easier to remember the URL than a number 123.123.231.212 for each website you want to visit. The nearest DNS server will take your input (the URL you provide) and will translate it to the equal IP number. Then your computer will get the response (e.g. website content) from that IP ",
+            "date": "Answered December 16, 2018",
+            "views": "232",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Paula Doromal",
+                    "user_href": "/profile/Paula-Doromal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikhil",
+                "href": "/profile/Nikhil-1052"
+            },
+            "answer_text": "Your request will be forwarded only after you hit enter after typing URL. Browser forwards the request to web client on your machine and then web client forwards it to website. ",
+            "date": "Answered March 11, 2019",
+            "views": "84",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Dunbar",
+                "href": "/profile/Lawrence-Dunbar"
+            },
+            "answer_text": "Really? Have you never used a browser before? How the heck did you manage to post this question without using a URL and actually seeing what it does? ",
+            "date": "Answered September 14, 2020",
+            "views": "21",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "John Janes",
+                "href": "/profile/John-Janes-2"
+            },
+            "answer_text": "Here\u2019s a great article on exactly that ",
+            "date": "Answered December 18, 2018",
+            "views": "173",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Randall W. Jordan",
+                    "user_href": "/profile/Randall-W-Jordan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vikas Kumra",
+                "href": "/profile/Vikas-Kumra-3"
+            },
+            "answer_text": "Please refer to the link below for details: What happens when you type an URL in the browser and press enter? ",
+            "date": "Answered December 19, 2018",
+            "views": "131",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Chris Chovanek",
+                "href": "/profile/Chris-Chovanek"
+            },
+            "answer_text": "Letters begin to appear in the text area ",
+            "date": "Answered December 21, 2018",
+            "views": "20",
+            "upvotes": " Answer requested by Paula Doromal"
+        }
+    ]
+}

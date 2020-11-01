@@ -1,0 +1,81 @@
+{
+    "title": "How long did it take you to install MySQL on your computer? - Quora",
+    "tags": [
+        "MySQL Performance",
+        "MySQL",
+        "SQL",
+        "Database Systems",
+        "Computers",
+        "Software and Applications"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Harrison",
+                "href": "/profile/Mark-Harrison-2"
+            },
+            "answer_text": "It took me about 30 seconds. I can\u2019t remember how long it took the laptop to then actually run the installation. That\u2019s because I run installations like this. docker run --name=mysql1 -p 3306:3306 -d mysql/mysql-server\u00a0And I find out the new root password like this: docker logs mysql1 2>&1 | grep GENERATED\u00a0.... shows a line like:\u00a0.... GENERATED ROOT PASSWORD: 0d5aSADEHaHEJYHk@N@pwaceJdOb\u00a0That\u2019s to say, for things like MySQL, I will always use Docker on a dev machine. I need to switch between versions of MySQL just enough that even if I could be bothered to work out how to install it \u201cnative\u201d, then it would be a world of pain. I\u2019d never have done that in the days of VMs\u2026 but containers really are an incredibly different experience from the perspective of performance on older hardware. I then connect to it like this: docker exec -it mysql1 /bin/mysql -uroot -p\u00a0Enter password: \u00a0... paste the password I saw earlier\u00a0And sure enough, I get: Welcome to the MySQL monitor.  Commands end with ; or \\g.\u00a0Your MySQL connection id is 21\u00a0Server version: 8.0.19\u00a0Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.\u00a0Oracle is a registered trademark of Oracle Corporation and/or its affiliates. Other names may be trademarks of their respective owners.\u00a0Type 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\u00a0mysql> \u00a0It\u2019s probably worth either changing the root password, or setting up a sql user account with a better one :-) ",
+            "date": "Updated February 19, 2020",
+            "views": "1",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Jomin Yu",
+                    "user_href": "/profile/Jomin-Yu"
+                },
+                {
+                    "user_id": "Jakob Jungherr",
+                    "user_href": "/profile/Jakob-Jungherr"
+                },
+                {
+                    "user_id": "Zachary Carlini",
+                    "user_href": "/profile/Zachary-Carlini"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Philip Newton",
+                    "user_href": "/profile/Philip-Newton"
+                },
+                {
+                    "user_id": "Trinh Quoc Anh",
+                    "user_href": "/profile/Trinh-Quoc-Anh"
+                },
+                {
+                    "user_id": "Aaron Dwi",
+                    "user_href": "/profile/Aaron-Dwi"
+                },
+                {
+                    "user_id": "Keldon Alleyne",
+                    "user_href": "/profile/Keldon-Alleyne-1"
+                },
+                {
+                    "user_id": "Rafael de Oliveira",
+                    "user_href": "/profile/Rafael-de-Oliveira"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alexander Lehmann",
+                "href": "/profile/Alexander-Lehmann"
+            },
+            "answer_text": "In Windows maybe 5 minutes by using WAMP. In Linux about 5 minutes with apt-get install mysql ",
+            "date": "Answered February 15, 2020",
+            "views": "46",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Davidson Julot",
+                    "user_href": "/profile/Davidson-Julot-1"
+                }
+            ]
+        }
+    ]
+}

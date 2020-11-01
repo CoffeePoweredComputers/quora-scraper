@@ -1,0 +1,71 @@
+{
+    "title": "How to count the number of characters in a text file using C++ programming language - Quora",
+    "tags": [
+        "C++ (programming language)",
+        "C (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Irn\u00e9 Barnard",
+                "href": "/profile/Irn\u00e9-Barnard"
+            },
+            "answer_text": "A few things here. I think it\u2019s already mentioned - you\u2019re not closing the file, this will cause problems. Is the file in ASCII / ANSI encoding? C++ doesn\u2019t handle stuff like UTF-8 properly the way you\u2019re doing it. So it may count characters wrongly if there are some special multi-byte characters in the file. The way you\u2019re going about it is a very convoluted method. You\u2019ll be reading that file for each character in your set of characters to test. I.e. you\u2019re reading through the entire file 36 times. I think you\u2019re missing the point of this exercise - if I\u2019d guess it\u2019s something just after you\u2019ve learnt about such things as binary search trees and/or hashmaps. If you use these you\u2019d only need to read through the file once, and you have the calculations for all chars already. The idea would be to use the char value as key on which to search, the value portion being an integer of how many have already been found. If you had to use this \u201cnaive\u201d way then I\u2019d see if it\u2019s not possible to rather read the entire file into a buffer sized large enough to fit all of its size - RAM permitting. Then rather step through the in-memory buffer instead of opening, reading & closing the file for each test. This would already be a lot faster, though still not as fast as using some lookup datastructure would be. Actually this could be made extremely simply, yet still be (at least) as fast as using a hashmap (probably faster): Instead of a list of 32 chars, have an array of 256 integers - all initialized to 0. As you read through the file one char at a time, use that char\u2019s value as the index into that array, each time incrementing the value stored in that index position. After which you can use the chars you want to search for as indexes into that same array - extracting each of their counts. ",
+            "date": "Answered February 2, 2017",
+            "views": "63",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bruce Wedding",
+                    "user_href": "/profile/Bruce-Wedding"
+                },
+                {
+                    "user_id": "Sabapathy Nagarajan",
+                    "user_href": "/profile/Sabapathy-Nagarajan"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sudhansu Bhusan Mishra",
+                "href": "/profile/Sudhansu-Bhusan-Mishra"
+            },
+            "answer_text": "Didn\u2019t you write a lot more than needed? #include <iostream>\u00a0#include <fstream>\u00a0\u00a0int main() {\u00a0    std::ifstream fin(\"myfile.in\");\u00a0    char character; int count = 0;\u00a0    while (fin >> character) ++count;\u00a0    std::cout << count << \"characters\\n\";\u00a0    return 0;\u00a0}\t// This doesn't check spaces use std::noskipws for that\u00a0// For newline or EOL checks use the std::getline() get the string add two or one, that's it.\u00a0There\u2019s no need to write a hundred lines for that! ",
+            "date": "Answered February 1, 2017",
+            "views": "99",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Priyanshu Mishra",
+                    "user_href": "/profile/Priyanshu-Mishra-156"
+                },
+                {
+                    "user_id": "Guyo Baraqo",
+                    "user_href": "/profile/Guyo-Baraqo"
+                },
+                {
+                    "user_id": "Nishi Gupta",
+                    "user_href": "/profile/Nishi-Gupta-22"
+                },
+                {
+                    "user_id": "Raghuram Prabhu",
+                    "user_href": "/profile/Raghuram-Prabhu-2"
+                },
+                {
+                    "user_id": "Christopher Di Bella",
+                    "user_href": "/profile/Christopher-Di-Bella"
+                },
+                {
+                    "user_id": "Arihant Bansal",
+                    "user_href": "/profile/Arihant-Bansal-3"
+                }
+            ]
+        }
+    ]
+}

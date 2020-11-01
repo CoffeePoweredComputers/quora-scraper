@@ -1,0 +1,113 @@
+{
+    "title": "What are the applications of graph theory? - Quora",
+    "tags": [
+        "Graph Theory",
+        "Mathematics and Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christina Lee",
+                "href": "/profile/Christina-Lee-8"
+            },
+            "answer_text": "Cell Signalling.  Graph theory is the language of biological networks.  (SHARP project- the retinoblastoma pathway) Research performed by Avi Ma'ayan's group at the Mount Sinai School of Medicine shows some fascinating applications of mathematics to this biological discipline Using shortest path-algorithms on already known connections, Bromberg et al predicted a new use for a signalling protein, and a new way for a signal to get from one place to another.  Graph theory points the way for how information actually travels in the network.The vertex degree (number of connections per vertex) shows a power law distribution, characteristic of heterogeneous systems where nodes have a wide variety of different functions.Motifs such as the bifan, feedback loop, and feed-forward loop contribute to noise filtering, stability, time delays, and can amplify signals.  Mathematical analyses show that the bifan motif occurs most often, and negative feedback occurs more often than positive feedback near the cell surface.    http://www.medscape.com/viewarticle/754501_5 A nice review that I've been getting most of my information from:http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2645810/ ",
+            "date": "Answered November 18, 2014",
+            "views": "223",
+            "upvotes": " View 74 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Mimi Chang",
+                    "user_href": "/profile/Mimi-Chang-2"
+                },
+                {
+                    "user_id": "Ronan Mandra",
+                    "user_href": "/profile/Ronan-Mandra"
+                },
+                {
+                    "user_id": "Marc Serra",
+                    "user_href": "/profile/Marc-Serra-3"
+                },
+                {
+                    "user_id": "Theo Reos",
+                    "user_href": "/profile/Theo-Reos"
+                },
+                {
+                    "user_id": "Prabhanjan Sahoo",
+                    "user_href": "/profile/Prabhanjan-Sahoo-4"
+                },
+                {
+                    "user_id": "Andrew Li",
+                    "user_href": "/profile/Andrew-Li-85"
+                },
+                {
+                    "user_id": "Anirudh Bharadwaj",
+                    "user_href": "/profile/Anirudh-Bharadwaj-16"
+                },
+                {
+                    "user_id": "Mostafa Cherif",
+                    "user_href": "/profile/Mostafa-Cherif"
+                },
+                {
+                    "user_id": "Mahera Roksana",
+                    "user_href": "/profile/Mahera-Roksana-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Simon Kinahan",
+                "href": "/profile/Simon-Kinahan"
+            },
+            "answer_text": "Integrated circuit design, in a surprising number of different ways:  In calculating whether a digital circuit can run at a given clock frequency, a process known as static timing analysis. This is modeled as a longest path problem.In estimating the lengths of wires. This is an NP complete problem called a minimum rectilinear Steiner tree, which starts from a regular minimum spanning treeIn standard cell placement, where the goal is to minimize the total wire length or some function of it, the circuit may be modeled as a hypergraph and various techniques such as minimum cost cuts may be applied.In Spice and related analog simulators, networks of transistors, resistances and capacitances are modeled as graphs. I'm not familiar enough with this area to know what the algorithms applied are - they may be more numerical.Routing signals through pre-defined networks (eg. in FPGAs) may use breadth first or A* routing or even more complex search heuristics.There are probably more I've forgotten. Circuits lend themselves well to graph models. ",
+            "date": "Updated November 25, 2014",
+            "views": "116",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Deniz \u015eu\u00f6zer",
+                    "user_href": "/profile/Deniz-\u015eu\u00f6zer-1"
+                },
+                {
+                    "user_id": "Jordan Shen",
+                    "user_href": "/profile/Jordan-Shen-4"
+                },
+                {
+                    "user_id": "Tumul Kumar",
+                    "user_href": "/profile/Tumul-Kumar-2"
+                },
+                {
+                    "user_id": "Casey Hawthorne",
+                    "user_href": "/profile/Casey-Hawthorne"
+                },
+                {
+                    "user_id": "Eric Meier",
+                    "user_href": "/profile/Eric-Meier-5"
+                },
+                {
+                    "user_id": "Pradeep Singh",
+                    "user_href": "/profile/Pradeep-Singh-39"
+                },
+                {
+                    "user_id": "J\u00f3zef Urbanowicz",
+                    "user_href": "/profile/J\u00f3zef-Urbanowicz"
+                },
+                {
+                    "user_id": "Kgadile Ez\u00e8 (Naar-Kie)",
+                    "user_href": "/profile/Kgadile-Ez\u00e8-Naar-Kie"
+                },
+                {
+                    "user_id": "Henry Savit",
+                    "user_href": "/profile/Henry-Savit"
+                },
+                {
+                    "user_id": "Nihal Balani",
+                    "user_href": "/profile/Nihal-Balani"
+                }
+            ]
+        }
+    ]
+}

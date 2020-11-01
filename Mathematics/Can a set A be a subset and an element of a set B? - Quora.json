@@ -1,0 +1,55 @@
+{
+    "title": "Can a set A be a subset and an element of a set B? - Quora",
+    "tags": [
+        "Set Theory",
+        "Theoretical Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Uchiha Clannie",
+                "href": "/profile/Uchiha-Clannie"
+            },
+            "answer_text": "Q: Can a set A be a subset and an element of a set B? Yes. Not for all sets, but it is possible. Whenever you get such questions, always consider the empty set \u2018[math]\\emptyset[/math]\u2019. All sets have the property of having the empty set, and thus, all sets have at least one element in common, that is, the empty set.  Consider: [math]A = \\emptyset[/math][math]B = \\{\\emptyset\\}[/math]Since all sets have the empty set in common, [math]A[/math] is an element of [math]B[/math]. And since [math]B[/math] has [math]\\{\\emptyset \\}[/math] it means that [math]A[/math] is also a subset of [math]B[/math].  For clarity, an additional way of defining the previous sets is: [math]A = \\{\\}[/math][math]B = \\{\\{\\}\\}[/math] If you are unsure you might use the powerset function, but it can be quite tedious.  Corrections and additions are welcome by using the comment section. ",
+            "date": "Answered November 17, 2018",
+            "views": "25",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Brian Howard",
+                "href": "/profile/Brian-Howard-22"
+            },
+            "answer_text": "Other answers, such as {1} and {{1}, 1}, are correct, but might seem artificial. Here are two sets with the property that \"occur naturally\" early on in working with sets: A = {}, the empty set. Note that one of the properties of {} is that it is a subset of every set.B = P(X), the power set of some arbitrary set X. This is the set of all subsets of X; for example, if X = {1, 2}, then the elements of P(X) are {1, 2}, {1}, {2}, and {}.Now notice that A is an element of B, and A is also a subset of B. ",
+            "date": "Answered October 10, 2015",
+            "views": "53",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Chase Molenaar",
+                    "user_href": "/profile/Chase-Molenaar"
+                },
+                {
+                    "user_id": "Jossie Calderon",
+                    "user_href": "/profile/Jossie-Calderon"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Greg Bronevetsky",
+                    "user_href": "/profile/Greg-Bronevetsky"
+                },
+                {
+                    "user_id": "Dan Christensen",
+                    "user_href": "/profile/Dan-Christensen-8"
+                },
+                {
+                    "user_id": "Daniela Ruiz",
+                    "user_href": "/profile/Daniela-Ruiz-2"
+                }
+            ]
+        }
+    ]
+}

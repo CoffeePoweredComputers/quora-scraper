@@ -1,0 +1,72 @@
+{
+    "title": "How to use conditional formatting in Excel to change cell font & background to different styles depending on multiple different text possibilities - Quora",
+    "tags": [
+        "Excel Tricks",
+        "Typeface Identification",
+        "Typefaces and Fonts",
+        "Spreadsheets",
+        "Microsoft Excel"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Learn Vern",
+                "href": "/profile/Learn-Vern-2"
+            },
+            "answer_text": "In this worksheet, we see the information we want by using conditional formatting, driven by two rules that each contain a formula. The first rule, in column A, formats future birthdays, and the rule in column C formats cells as soon as \u201cY\u201d is entered, indicating that the birthday greeting has been sent.  To create the first rule: Select cells A2 through A7. Do this by dragging from A2 to A7.Then, click Home > Conditional Formatting > New Rule.In the New Formatting Rule dialog box, click Use a formula to determine which cells to format.Under Format values where this formula is true, type the formula: =A2>TODAY()The formula uses the TODAY function to see if the dates in column A are greater than today (in the future). If so, the cells are formatted.Click Format.In the Color box, select Red. In the Font Style box, select Bold.Click OK until the dialog boxes are closed.The formatting is applied to column A.To create the second rule: Select cells C2 through C7.Repeat steps 2 through 4 above, and enter this formula: =C2=\"Y\"The formula tests to see if the cells in column C contain \u201cY\u201d (the quotation marks around the Y tell Excel that this is text). If so, the cells are formatted.In the Color box, select White. In the Font Style box, select Bold.Click the Fill tab and select Green.The formatting is applied to column C.To Know More With Free Videos Visit: Conditional Formatting in Excel ",
+            "date": "Answered March 3, 2018",
+            "views": "13",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ted Pettit",
+                "href": "/profile/Ted-Pettit-1"
+            },
+            "answer_text": "From your comment, it looks like you are asking if you can apply multiple Conditional Formatting rules to the same cell or range of cells. The answer is yes, definitely you can! As Brad mentioned, Conditional Formatting (CF) is limited in several ways. CF cannot change the Font itself or the size but it can change the style (Bold, Italic, etc) and its color. Why the limitations? Only Microsoft knows\u2026 Selecting the range that CF applies to can be done in a couple of ways: The most straightforward way is to select the cell or range of cells first and then set up the CF. The less straightforward way is to write your CF formula so that it fills the range correctly and then assign the range that the formula will fill afterwards. We will use the most straightforward method here and save the other for another day. Select the range of cells and then click Conditional Formatting on the Ribbon under the Home tab. A dialog dropdown opens, click Highlight Cells Rules and then click Text that Contains\u2026  Another dialog box opens, type in the text that will trigger the CF (yellow) and then select Custom Format\u2026 and another dialog box opens. Under the Font tab, choose your font color and style if needed:  and then choose your cell fill color under the Fill tab:  Click OK and OK and you will see your CF in action:  Repeat for the other text CF you want to apply:  Checking to see that they work in all cells in the range:  Keep adding colors using the method shown above:  Switch the text around to check and:  There you have it! ",
+            "date": "Answered May 21, 2017",
+            "views": "39",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chris Chua",
+                    "user_href": "/profile/Chris-Chua-21"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Yenj-Yenj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elizabeth Nofs",
+                "href": "/profile/Elizabeth-Nofs"
+            },
+            "answer_text": "Conditional Formatting is an excellent method for highlighting the Text in a spreadsheet. Each word or phrase can have different formatting for the Font and Cell Fill. This sample spreadsheet has three products: Legs, Eggs, and Pigs that are sold each day. The goal is to format each product with a different color. Here are the steps.  Try This: Use Conditional Formatting to Format Cells Based on TextSelect Column B, the one with the products.Go to Home ->Styles.Go to Conditional Formatting.Go to Highlight Cell Rules.Select: Text that Contains...  You will be prompted to enter the Text you want to format. You can choose one of the built-in options if you wish. You can also click on Custom and select the Font and Cell formatting.  Please repeat these steps for each different word or phrase you want to format. In this example, these are three rules: one for Legs, one for Eggs, and another for Pigs.  That should work. Please let me know if I answered your question.Thanks, eBeth Elizabeth Nofs, the Computer Mama Here is a YouTube video that shows more options:  Microsoft Excel 2013 Advanced: Tables Work for Me! New Subscribers Welcome: https://thecomputermama.us Buy the books at Amazon: https://thecomputermama.us/books-page/ ",
+            "date": "Updated July 7, 2017",
+            "views": "33",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gyana Prakash Sahoo",
+                    "user_href": "/profile/Gyana-Prakash-Sahoo"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Yenj-Yenj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Brad Yundt",
+                "href": "/profile/Brad-Yundt"
+            },
+            "answer_text": "In Excel 2007 and later, I believe the number of different Conditional Formats you can apply to a cell is limited by available memory. You will need to choose \u201cUse a formula to determine which cells to format.\u201d Note that Conditional Formatting can change the font style (Roman, bold, italic, bold italic), but not the font name or size. Conditional Formatting can also change the font color and highlight (background or fill) color. Depending on what you want, you can apply more than one Conditional Format at the same time. Or you can check the box to \u201cStop\u201d after satisfying a criteria and apply no Conditional Formats past that point. If you need to change the font size or font name, then you will need to use VBA code. For example, you could use a Worksheet_Change sub to trap a text possibility as the user enters it. Or you could use a macro to process all cells in a certain range. If you need more specific suggestions, please post exactly what you want to accomplish. ",
+            "date": "Answered May 21, 2017",
+            "views": "27",
+            "upvotes": "0"
+        }
+    ]
+}

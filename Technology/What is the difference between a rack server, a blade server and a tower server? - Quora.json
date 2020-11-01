@@ -1,0 +1,96 @@
+{
+    "title": "What is the difference between a rack server, a blade server and a tower server? - Quora",
+    "tags": [
+        "Rack Servers",
+        "Local Server Testing",
+        "Web Servers",
+        "Servers (computers)",
+        "Comparisons"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shaishav Babar",
+                "href": "/profile/Shaishav-Babar"
+            },
+            "answer_text": "Rack Server VS Blade Server VS Tower Server Tower Servers are the normal boxes (in appearance) you would have seen in Visio Diagrams. Of course they are very powerful & have bundled software tools to manage them. The problem with Tower Severs is the space they occupy, management personnel they require, and cost of operating them (power, network, etc.). Rack Servers are servers mounted inside a Rack (something like we normally use to manage our letters, office files, etc.) Major Racks available out there adhere to an IEEE standard and are measured in rack units or \u201cU\u2019s\u201d (each U is 19\u201d wide and 1.75\u201d tall). So a rack server size is typically in multiplication of these \u201cU\u2019s\u201d. Motivation here is to scale vertically than horizontally with more compact physical servers. In addition to this, there are many other electronic devices which adhere to this IEEE standard for instance \u2013 Rack Consoles, SAN devices, Power Backup devices, etc. Advantage being that you can fix them into rack as well along with your servers. Not to mention that the hardware vendors (Dell, HP, IBM, etc.) provide additional software tools that help you effectively manage these servers and in some cases the supported devices also. Blade Servers are an additional level of innovation on top of Rack Servers. Blade Servers are typically placed inside a blade enclosure, and together they form a blade system. A Blade system normally meets the IEEE standard of Rack Units, which means that the entire Blade system can be placed inside the rack along with other electronic equipments. The benefits of blade enclosure includes hot plugging (normally blade servers have a handle attached to them, for transferring them in and out of the blade enclosure \u2013 it\u2019s an easy way of identifying them) and stripped modular design (e.g. shared network ports, power connections, switches, etc.). For instance the hardware we ordered allows us to pack 16 blade servers inside a 10U space. I remember meeting an Oracle Consultant few months back where he was touting about a server with no disk. Such scenarios are possible (and are cheaper) by coupling a blade system and SAN storage. All these boils down to further space reduction, cost savings (power, administration staff) & easy management. Bundle this with Virtualization and you have a very powerful infrastructure at your disposal. ",
+            "date": "Answered September 8, 2016",
+            "views": "593",
+            "upvotes": " View 30 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Chandrashekhar Koparkar",
+                    "user_href": "/profile/Chandrashekhar-Koparkar-1"
+                },
+                {
+                    "user_id": "Aquinas J. Masakha",
+                    "user_href": "/profile/Aquinas-J-Masakha"
+                },
+                {
+                    "user_id": "Mohamad Sadegh Ghasemiyan",
+                    "user_href": "/profile/Mohamad-Sadegh-Ghasemiyan"
+                },
+                {
+                    "user_id": "Karan Sumbly",
+                    "user_href": "/profile/Karan-Sumbly-1"
+                },
+                {
+                    "user_id": "Chad Urdy",
+                    "user_href": "/profile/Chad-Urdy"
+                },
+                {
+                    "user_id": "Subramanya Rajendra",
+                    "user_href": "/profile/Subramanya-Rajendra"
+                },
+                {
+                    "user_id": "Sri Chaithanya Erra",
+                    "user_href": "/profile/Sri-Chaithanya-Erra"
+                },
+                {
+                    "user_id": "Ghiridhar Sriganesan",
+                    "user_href": "/profile/Ghiridhar-Sriganesan"
+                },
+                {
+                    "user_id": "Natworpong Loyswai",
+                    "user_href": "/profile/Natworpong-Loyswai"
+                },
+                {
+                    "user_id": "Tupou Leca",
+                    "user_href": "/profile/Tupou-Leca"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Ruedeman",
+                "href": "/profile/Dave-Ruedeman"
+            },
+            "answer_text": "A rack server is meant to be installed in an 19 inch wide equipment rack. Their height is measured in rack units , 1 3/4 inches high. A common server size these days is a 1U rack or a 1 3/4 inch high. They typically have dual power supplies, dual (or more) Ethernet NICs and have server processors. These are Xeons or Opterons which have error-correcting memory interfaces and multiple cores. Storage can be locally attached but more commonly are attached through iSCSI or fibre channel. A blade server is a plug-in card into a larger chassis. There can be a dozen or more blade servers in a chassis. The chassis has multiple power supplies and multiple network and storage connections. There is logic in the chassis to distribute network and storage connectivity to each blade server. Typically there would be less Network and Storage connections to the chassis than would be otherwise if all the servers were individual rack mounted servers. They are architecturally similar to rack servers with server processors, ECC memory and Network/Storage connections. A so-called tower server is a desktop mounted computer used for server purposes. They can be placed sideways in trays in racks. There is less standardization with these as they can be regular Desktop PCs pressed into service. Or server quality systems as mentioned above. Server systems are designed for longer life ,more reliability, and usually have remote maintenance features not present in Desktop systems. ",
+            "date": "Answered August 30, 2017",
+            "views": "196",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chad Urdy",
+                    "user_href": "/profile/Chad-Urdy"
+                },
+                {
+                    "user_id": "Sagar Chhatrala",
+                    "user_href": "/profile/Sagar-Chhatrala"
+                },
+                {
+                    "user_id": "Kiran Kumar Subramanian",
+                    "user_href": "/profile/Kiran-Kumar-Subramanian"
+                },
+                {
+                    "user_id": "Zbyszek Swirski",
+                    "user_href": "/profile/Zbyszek-Swirski"
+                },
+                {
+                    "user_id": "Nishith Gupta",
+                    "user_href": "/profile/Nishith-Gupta-6"
+                }
+            ]
+        }
+    ]
+}

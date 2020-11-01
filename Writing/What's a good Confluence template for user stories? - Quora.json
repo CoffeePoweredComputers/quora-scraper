@@ -1,0 +1,82 @@
+{
+    "title": "What's a good Confluence template for user stories? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sherif Mansour",
+                "href": "/profile/Sherif-Mansour"
+            },
+            "answer_text": "I've been meaning to write a blog post for how we use Confluence for requirements/specifications at Atlassian - sorry I haven't gotten around to it.  At Atlassian, if we are just writing pure one-line user stories (\"As a A, I want to do B so that C\") - we probably just create those issues straight into JIRA/GreenHopper and go from there. This is really what we strive for. In fact  a big caveat to this answer: We really try to avoid writing specs!  If we are breaking the problems down into really small chunks, creating documentation to track what is often already well defined and agreed upon (often verbally, through a mockup or visual design) can be excessive. But, quite often and especially as your software ages, there are many more considerations and things you need to think about other than a simple user story. So what we end up doing is collaborating over a wiki page with multiple user stories.  Let me quickly share the benefits I've seen from our internal use (and from interviewing stacks of customers):1. One page, one source, one problemKeep it simple. We usually create one page that holds the epic. Within that page there will be multiple stories that fit into that epic. Tracking it all in one page makes it easy to source the information. In addition, a \"Not doing\" list, especially for complex products is another thing that usually appears on this page. I've spoken to quite a few customers that have re-iterated the importance of this list in terms of getting everyone on the same page. This helps reduce any ambiguity and gives the team greater focus and management greater predictability of what is in and out. 2. Flexible structureOne of the awesome thing about using a wiki vs a dedicated requirements management tool is that you can be agile about your documentation! You don't have to follow a format every time - do what you need, when you need it and be agile about it. 3. Dive in for context and detail (linking)Linking is core to a wiki. We use of this a lot. Linking to detail may include links to:* Customer interviews for context* Pages and blogs where similar ideas were proposed* Previous discussion or technical documentation* Links to external sources This allows you to produce a simple document and consumers can dive in for detail as needed 4. Living Stories: Stay updated, track and report on progressI see a lot of customers do this as well. Once the stories have been roughly thought out - they often use the JIRA integration features in Confluence quite a bit. From the page they create GH stories in Confluence. These are automatically embedded in a Confluence page with two-way syncing from JIRA. So you instantly get progress reports of how the story is tracking with your dev team, right from your user story page on your wiki.  5. Use your collective wisdomEspecially if you are in a large organisation - documenting this stuff on your wiki makes it easy for other people in different teams to contribute and suggest things. I've been amazed at the amount of times someone else from another team jumps into the conversation with great feedback, suggestions or things we were not aware of. 6. Collaborate!Probably one of the most important aspects of this is getting everyone involved. Never write a spec by yourself you should always have a developer with you and write it together. Share the page with the team and get feedback. Comment, ask questions, encourage others to contribute with thoughts and ideas. This is also a huge asset for a distributed team.   7. Make them dynamic and engaging Use diagramming tools like Gliffy or Balsamiq to better communicate the problems to your team or embed external images, videos and dynamic content. Do what you need to do to communicate the problems you are trying to solve to the rest of your team.  Some of the challenges I've experienced and observed: 1. Documentation can sometimes go staleWhat happens when you implement a story and get feedback and then modify the solution? Does someone go back and update the wiki with the final implementation? This is a general challange with any type of documentation - It's always worth questioning the value of this for your organisation. 2. Culture of open collaboration\"What can I do to encourage people to comment?\", \"What can I do to encourage people to write more specs and stories on the wiki?\". This is really a tough one to crack and really comes back down to various wiki adoption techniques in your organisation. There are plenty of resources to help you here (See: http://confluence.atlassian.com/pages/viewpage.action?pageId=178258668 and http://www.wikipatterns.com) 3. Getting startedAlthough you don't want to enforce structure on people and you want to keep it as agile as possible, some people need a guide or an example for how to get started writing these things. Consider writing a light-weight, short and simple page template to encourage people to collaborate this way. This has really just been a quick brain-dump of what I've been thinking about writing for a while. I'm sure there is a lot more in both these sections. I should probably take some screenshots with some examples... You've inspired me to get cracking on that blog post again - I've bumped that in my todo list!  Hope this has helped, or given you some ideas. Let me know if I can help or if you've got suggestions as well! ",
+            "date": "Answered April 17, 2012",
+            "views": "19",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Melissa Keesing",
+                    "user_href": "/profile/Melissa-Keesing"
+                },
+                {
+                    "user_id": "Bartek Matoga",
+                    "user_href": "/profile/Bartek-Matoga"
+                },
+                {
+                    "user_id": "Michael Covington",
+                    "user_href": "/profile/Michael-Covington"
+                },
+                {
+                    "user_id": "Tracy Holmes",
+                    "user_href": "/profile/Tracy-Holmes-5"
+                },
+                {
+                    "user_id": "Tech Comm",
+                    "user_href": "/profile/Tech-Comm-2"
+                },
+                {
+                    "user_id": "Stefanos Karakasis",
+                    "user_href": "/profile/Stefanos-Karakasis-1"
+                },
+                {
+                    "user_id": "Deniz Er\u00e7elebi",
+                    "user_href": "/profile/Deniz-Er\u00e7elebi"
+                },
+                {
+                    "user_id": "Dan Radigan",
+                    "user_href": "/profile/Dan-Radigan"
+                },
+                {
+                    "user_id": "Ksenia Makarova",
+                    "user_href": "/profile/Ksenia-Makarova"
+                },
+                {
+                    "user_id": "Alejandro Arnes",
+                    "user_href": "/profile/Alejandro-Arnes"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Travis De Silva",
+                "href": "/profile/Travis-De-Silva"
+            },
+            "answer_text": "G'Day Sherif. Now you just need to copy and paste your quora post into your Atlassian blog and you are done..  Having worked with you previously, you are spot on with your comments above. Just wanted to comment on one item in relation to software projects. About the challenge of \"Documentation can sometimes go stale\", I feel the best documentation is the code and system itself. I am not referring to product documentation such as user guides etc which is different to what we are discussing.  I think user stories etc are good to brainstorm and come with product requirements/features. But once it's developed and there are no new features getting added, then you are better off tracking the changes as tasks in a tool like Jira with a reference to the original user story. This way you are not just updating the documentation just for the sake of it or for just completeness. If there is good product documentation like user guides and the code is written quite well with good self documentation techniques, then that should be sufficient. ",
+            "date": "Answered May 7, 2012",
+            "views": "7",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Melissa Keesing",
+                    "user_href": "/profile/Melissa-Keesing"
+                },
+                {
+                    "user_id": "Tech Comm",
+                    "user_href": "/profile/Tech-Comm-2"
+                },
+                {
+                    "user_id": "Harmen Voortman",
+                    "user_href": "/profile/Harmen-Voortman"
+                }
+            ]
+        }
+    ]
+}

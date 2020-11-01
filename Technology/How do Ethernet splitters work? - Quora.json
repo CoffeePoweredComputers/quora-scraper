@@ -1,0 +1,45 @@
+{
+    "title": "How do Ethernet splitters work? - Quora",
+    "tags": [
+        "Ethernet",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Dickens",
+                "href": "/profile/Michael-Dickens-5"
+            },
+            "answer_text": "There are a few good answers here (though also quite a few bad ones), I\u2019ll answer with a little more detail An Ethernet splitter works by using half of the pairs for one network/connection, and the other half of the pairs for another network/connection, allowing you to run two networks/connections over one cable An Ethernet Cable (CAT5/e, CAT6/a) has 4 colored pairs BlueOrangeGreenBrownEach pair has 2 wires, solid and striped (white stripe) So in total, you have BlueWhite-BlueOrangeWhite-orangeGreenWhite-GreenBrownWhite-BrownThere are two standards you can use, T568A and T568B, T568B is more common and what I will use to explain things The pinout for T568B is (pin 1 being the leftmost side of the plug when facing away from you, like you are plugging it in) White-OrangeOrangeWhite-GreenBlueWhite-BlueGreenWhite-BrownBrownT568A swaps the orange pair with the green pair respectively, so pin 1 is White-Green, pin 2 is Green, pin3 is White-Orange and pin 6 is Orange  Now in 10Mb and 100Mb networks, only pairs 2 (Orange) and 3 (Green) are used, meaning only pins 1, 2, 3 and 6 are used, pairs 1 (Blue) and 4 (Brown) are just sitting there doing nothing (except for maybe grounding or PoE), meaning pins 4, 5, 7, and 8 are unused Now in the case the device does not use the blue or brown pairs for grounding or PoE (Power over Ethernet), the device is not doing anything with them (and some jacks may not even have pins in those positions), and you are not running a 1000Mb/1Gb (gigabit) network, the blue and brown pairs are of no use  An Ethernet splitter utilizes the unused pairs in a cable for another network or connection, so the connection would go something like this Pin 1 goes to Pin 1, Jack 1Pin 2 goes to Pin 2, Jack 1Pin 3 goes to Pin 3, Jack 1Pin 4 goes to Pin 3, Jack 2Pin 5 goes to Pin 6, Jack 2Pin 6 goes to Pin 6, Jack 1Pin 7 goes to Pin 1, Jack 2Pin 8 goes to Pin 2, Jack 2In this case, the brown pair serves the same purpose as the orange pair, and the blue pair serves the same purpose as the green pair, just for different connections Repeat this to have 2 splitters, now connect two cables between the splitter and the switch (or two different switches), connect a third cable going off to a different location, connect your other splitter to the other end, then connect your devices to the appropriate ports  Now this should really only be used in a couple niche cases, you really should have enough cables ran from the modem/router/switch location to the location where the devices are, short of that, you should use a switch instead of splitters, really the only reason you should be using splitters is if you have to have access to two different networks in a certain location that only has one Ethernet Jack/cable ",
+            "date": "Answered August 1, 2019",
+            "views": "32",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Scott King Walker",
+                    "user_href": "/profile/Scott-King-Walker"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "An Ethernet splitter works for 10 Mbps and 100 Mbps UTP Ethernet installations and is used to allow two devices to share a single (long or embedded) cable between the devices and your router or switch. A standard UTP cable carries 4 pairs (8 conductors), but for 10 and 100 Mbps Ethernet only 2 pairs are used. The splitter works by using the remaining 2 pairs as though they were a second Ethernet cable. Splitters come in various forms but generally look like this:  You have to use them in back to back pairs. For example, if you have a built in Ethernet cable between two rooms, you would plug the RJ45 plugs into the wall ports in both rooms. Then you would run separate Ethernet cables from one of the splitters to two devices such as two PCs or a PC and a games console. At the other end, you would run separate Ethernet cables from the splitter to two ports on your router. The router sees two separately cabled devices. With faster Ethernet such as 1 Gbps, all 4 pairs are used, and splitters cannot be used. ",
+            "date": "Answered April 3, 2019",
+            "views": "59",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hu Jinqin",
+                    "user_href": "/profile/Hu-Jinqin"
+                },
+                {
+                    "user_id": "Liam Diamond",
+                    "user_href": "/profile/Liam-Diamond-2"
+                }
+            ]
+        }
+    ]
+}

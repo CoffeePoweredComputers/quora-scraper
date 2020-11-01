@@ -1,0 +1,44 @@
+{
+    "title": "How to calculate the probability of one success for very small individual probability and very large number of trials (binomial distribution) - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel Jenkins",
+                "href": "/profile/Daniel-Jenkins-80"
+            },
+            "answer_text": "The probability of at least one success (probability p) in n trials is the probability that you do not have all failures: [math]1-(1-p)^{n}[/math] To approximate this for very small p and large n you can use the following limit: [math]\\lim_{n \\to \\infty}(1-x/n)^n = 1/e^x[/math] So for n large we can use the approximation: [math](1-x/n)^n \\approx 1/e^x[/math] Or: [math]1-(1-x/n)^n \\approx 1-1/e^x[/math] Setting: [math]x = np[/math] Gives: [math]1-(1-p)^{n} \\approx 1-1/e^{np}[/math] In your (edited) example np would be 1/10^6 and the approximation also works out to be about 1/10^6. In fact approximating the approximation to first order gives another approximation of np for values of np close to 0. If you had the original, reversed exponents in the example np would be 10^6, which is large enough that the approximation is essentially identical to 1. The same will be true for even modestly large values of np, due to the nature of exponential growth. If np is not very close to 0 and is not too much bigger than 1 just evaluate [math]1-1/e^{np}[/math] directly. ",
+            "date": "Answered May 17, 2017",
+            "views": "451",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Claire Choi",
+                    "user_href": "/profile/Claire-Choi-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Smith",
+                "href": "/profile/Steven-Smith-440"
+            },
+            "answer_text": "Poisson approximation. When n is large and p is small,  and you can approximate binomial with Poisson with parameter   For the problem you mentioned, the calculation would go like this:  the denominator of the fraction is so large that you would have to use 434295 significant digits to get anything other than 1. The fraction calculates out to approximately  ",
+            "date": "Answered May 17, 2017",
+            "views": "164",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Giovanni Papini",
+                "href": "/profile/Giovanni-Papini-2"
+            },
+            "answer_text": "I think that R is what you are looking for: The Comprehensive R Archive Network. You can use it just as a calculator. In any case, the response to your example is very very very close to 1. ",
+            "date": "Answered May 18, 2017",
+            "views": "161",
+            "upvotes": "0"
+        }
+    ]
+}

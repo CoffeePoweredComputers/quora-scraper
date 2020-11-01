@@ -1,0 +1,73 @@
+{
+    "title": "Why can't every linear transformation be a matrix transformation? - Quora",
+    "tags": [
+        "Transformation",
+        "Linear Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew Estes",
+                "href": "/profile/Matthew-Estes-3"
+            },
+            "answer_text": "It might be worth sharing Kenneth Wang's excellent answer to a very similar question:  Just to expand a bit on the previous answer, a linear map is far more general than a matrix. Any linear map T over a vector space V over a field F, just needs to satisfy two properties: For  [math]v,w\\in V[/math] and [math]c\\in F[/math], then [math]T(v+w)=T(v)+T(w)[/math] and [math]T(cv)=cT(v)[/math]. Notice that these properties are satisfied by matrices. However, to actually construct a matrix, one needs more than a map. One also needs a basis. Without a basis, there is no matrix! This is why multiple matrices can represent the same linear map (albeit in different bases!). The problem of creating a \"nice\" matrix to compute with forms the central motivation for the theory of eigenvectors and eigenvalues.  Moreover, matrices are sometimes more powerful than general linear maps, because there is a whole well developed theory of how to compute with them. Computationally speaking, matrices are fantastically useful! However, once again, we can only have a matrix given a map AND a basis. To expand a bit on what Kenneth  says  in the second paragraph, your vector space [math]V[/math] does not have to be a subset of [math]\\mathbb{R}^n[/math]; instead, it can be an abstract vector space of functions, where you may or may not be able to specify a finite number of basis functions for the space. In particular, if you're dealing with an infinite dimensional vector space, then you cannot use a matrix to represent that space precisely because there are not a finite number of basis vectors. ",
+            "date": "Answered April 28, 2016",
+            "views": "5",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andrei Muresanu",
+                    "user_href": "/profile/Andrei-Muresanu-3"
+                },
+                {
+                    "user_id": "Narendran Solai Sridharan",
+                    "user_href": "/profile/Narendran-Solai-Sridharan"
+                },
+                {
+                    "user_id": "Joseph R\u00edos",
+                    "user_href": "/profile/Joseph-R\u00edos"
+                },
+                {
+                    "user_id": "Marios Gretsa",
+                    "user_href": "/profile/Marios-Gretsa"
+                },
+                {
+                    "user_id": "Lamrini Younes",
+                    "user_href": "/profile/Lamrini-Younes"
+                },
+                {
+                    "user_id": "Monira Fatma",
+                    "user_href": "/profile/Monira-Fatma"
+                },
+                {
+                    "user_id": "Shauli Ravfogel",
+                    "user_href": "/profile/Shauli-Ravfogel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tom McNamara",
+                "href": "/profile/Tom-McNamara-4"
+            },
+            "answer_text": "Panavia Shou's answer is the reason why not.  An example of a linear transformation that isn't easily expressible as a matrix transformation is the derivative:  [math]\\displaystyle{Df(t)=\\frac{d}{dt}f(t)}[/math] D is linear. That is, we always have have [math]D(af_1 + bf_2) = aDf_1 + bDf_2[/math][math]. [/math] But I don't have a finite number of dimensions so I can't just write down a matrix for this in the obvious way.  But even then people will use matrix ideas by writing f(t) in terms of some basis set over a finite range of t. For example I might use a Fourier series to represent [math]f(t) [/math]for [math]  [/math]0<t<1[math]: [/math] [math]\\displaystyle{f(t) = \\sum_{n=-\\infty}^{\\infty}a_n \\exp(i2\\pi n t)}.[/math] Then I take the derivative of that (i.e. apply my operator [math]D[/math] to it):  [math]\\displaystyle{Df(t) = \\sum_{n=-\\infty}^{\\infty}(i2\\pi n) a_n \\exp(i2\\pi n t)}. [/math] This looks like a mess but it's not. Because now I can write D in terms of its \"matrix elements\":  [math]\\displaystyle{<n|D|m> = i2\\pi n \\delta_{nm}}[/math],  where [math]\\delta_{nm}[/math] is the Kroenecker delta. It's unity when [math]n=m[/math] and zero otherwise. I can say [math]<n|D|m>[/math] = [math]D_{nm}[/math], the nth by mth element of some infinitely large matrix [math]D[/math]. And if I'm careful not to rely on any properties that only work for finite matrices, I'm fine.  So it's common to talk at least informally about a \"matrix\" that's really infinitely large.  But you have to kind of sneak up on it, and it's nice to be able to learn linear operators with derivatives in them without having to go through all that.  ",
+            "date": "Answered December 7, 2015",
+            "views": "29",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Cristian Camilo Garcia Barrera",
+                    "user_href": "/profile/Cristian-Camilo-Garcia-Barrera"
+                },
+                {
+                    "user_id": "Ankur Prakash",
+                    "user_href": "/profile/Ankur-Prakash-32"
+                },
+                {
+                    "user_id": "Lamrini Younes",
+                    "user_href": "/profile/Lamrini-Younes"
+                }
+            ]
+        }
+    ]
+}

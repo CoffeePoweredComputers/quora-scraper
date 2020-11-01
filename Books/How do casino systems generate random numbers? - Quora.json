@@ -1,0 +1,57 @@
+{
+    "title": "How do casino systems generate random numbers? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Randomness (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dominic Connor",
+                "href": "/profile/Dominic-Connor-1"
+            },
+            "answer_text": "Let\u2019s start with the great divide. Random numbers and pseudo random numbers. If you\u2019ve done a bit of programming you will have been told that a program that is given the same input should produce the same output, which is the opposite of what we think of as random. I\u2019m going to use Excel VBA to illustrate this since it\u2019s the simple coding environment you are most likely to have Function dice() As Long r = 3 dice = 3 End Function That\u2019s not good at all. I need to explain a bit of maths you may already have done. The modulus sometimes called clock arithmetic. If we use a 24 hour clock than any hour must be between 0 and 24. So if we look 49 hours in the future we divide by 24 to get two days and have one hour left over. The modulus is the one left over. So 7 mod 5 is 2 , 8 mod 4 is also 2 We now have a function that whatever number we put in, the output is always within a range of 0 to N where N is the number you\u2019re modding by. So start Excel and go into VBA (Alt-F11) and insert this Sub first_rand() Static counter As Long counter = counter + 57 counter = counter Mod 20 Debug.Print counter End Sub (CTRL-G will make a window with the output appear) Every time you call a function in VBA it throws away the value of any variables that were there last time. But by calling it static I\u2019m saying to remember it So what I\u2019m saying in effect is add 57 to your counter divide by 20 and keep the remainer use the remainer for the counter next time So each time we run this code (by pressing key F5) we get a different value. However let\u2019s make it roll dice by making two changes. First change is to Mod with 6 but that will give us 0 to 5 so we add one counter = counter Mod 6 This looks random the first few times we run it, but we notice that after a while it repeats. That\u2019s actually good enough for simple games where you want the alien you\u2019re shooting at to not move in an easily predictable way. Some early machines used pretty much this sort of code. You can make it less predictable by something like Sub first_rand() Static counter As Long Static other_counter As Long other_counter = other_counter + 19 counter = counter + other_counter counter = counter Mod 6 Debug.Print counter + 1 End Sub You will see that this takes longer to cycle round and we can kludge it until the loop is long enough. But it will always follow the same pattern. That means if you know the pattern, it is not too hard to work out what comes next. But sad to say and I fear this may shock you, some people try to cheat at Casinos. I could use the time function in VBA that uses the system clock counter = counter + Time This will not be easily so predictable, but there are problems Firstly your PC, phone, etc will have a lot of other things to do, which makes the time taken to execute a bit of code a bit random. For us this is good, but really bad for a driverless car which you don\u2019t want to ignore the road whilst it handles an incoming tweet. Casino machines were first built just to do gambling with no interruptions, so we again hit the problem that another computer, you can see where it might be repeating. also if you run my code you will see that it seems to give the same number twice in succession more often than feels right. This is a standard problem with random number generators, they often have some connection between recent numbers and previous numbers and often favour certain numbers or ranges of numbers in their output. Anything less than completely random and unpredictable means that an adversary can monitor the sequences and start winning. The gold standard for this is radioactivity. It turns out that it is absolutely physically impossible to predict when an atom will decay. So you can build a device with a little Americium in it (the stuff inside your smoke detector) that is basically a Geiger counter. But Americium isn\u2019t all that radioactive (which is way it is safe to put in smoke detectors) so you don\u2019t get many random bits of data from it. Also until quite recently they were pretty expensive. Casino machines are not usually networked so you can share a random source. Of course someone who is both unfair and prejudiced against Casino operators might wrongly claim that this allows the Casino to cheat, but I reject this idea with contempt. A cheap alternative is the microphone in your device or even a webcam. These are sources of thousands of bits of randomness per second if a microphone or hundreds of thousands if a webcam. The Mod trick I showed right at the start allows you to take a source of randomness like radioactivity or the sound/video input and generate sub-cryptographic quality random numbers. Turns out that even if a physical phenomenon is truly random, the device that measures it usually has a bias or simply misses a range of input, but MOD, and the logical operator XOR and barrel shifing, will get you to cryptographic levels as used by major nation states to protect nuclear weapons. That's worth explaining . If you have deep pockets you can use a One Time Pad. Fill a USB stick with 16 billion truly random numbers, and give it to someone you want to communicate securely with. That\u2019s 1,000 of hours of speech and much more than you will ever read or write in your life. One-time pad - Wikipedia You use the pad to encrypt the data, but only use it once. This makes it actually impossible to crack. I don\u2019t mean really hard, but provably impossible. cf The Shannon Limit. I cite Shannon because he invented this stuff (he is the reason computers use binary), but also because he used his genius and worked with Ed Thorp (who invented the Hedge Fund) to devise technology to cheat at Casinos. Claude Shannon - Wikipedia ed thorp - Google Search So why don\u2019t we all use one time pads ? I mentioned the deep pockets\u2026 For N people, you need N * N pads to allow them to talk. Thus if you wanted to encrypt (say) all Snapchat users, you\u2019d need more than the mass of the Earth as storage. Also you need to get the USB stick to your friend. It can be intercepted, read and delivered as if nothing happened. So you send M different USB sticks in tamper-evident packaging using your best physical security. At the other end they combine all the data into one pad. If one does not get there or looks tampered you repeat and each captured stick is of no value. M is a function of budget vs paranoia. One would hope that M is high for command and control of nuclear weapons. ",
+            "date": "Answered September 15, 2019",
+            "views": "727",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yosef Mirsky",
+                    "user_href": "/profile/Yosef-Mirsky"
+                },
+                {
+                    "user_id": "Roysten Vaz",
+                    "user_href": "/profile/Roysten-Vaz"
+                },
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Ron Barry",
+                    "user_href": "/profile/Ron-Barry-2"
+                },
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Frank Ripperger",
+                "href": "/profile/Frank-Ripperger-1"
+            },
+            "answer_text": "Computer, a random number generator in the machine. Every slot machine has one. Look up RNG on your computer. ",
+            "date": "Answered September 15, 2019",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ramkumar Parthipan",
+                    "user_href": "/profile/Ramkumar-Parthipan"
+                }
+            ]
+        }
+    ]
+}

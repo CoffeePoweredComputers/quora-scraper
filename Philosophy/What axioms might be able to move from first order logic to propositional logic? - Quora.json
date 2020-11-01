@@ -1,0 +1,73 @@
+{
+    "title": "What axioms might be able to move from first order logic to propositional logic? - Quora",
+    "tags": [
+        "First-order Logic",
+        "Axioms (logic and mathematics)",
+        "Logic (mathematics)",
+        "Logic (philosophy)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Gould",
+                "href": "/profile/John-Gould-6"
+            },
+            "answer_text": "Question originally answered: What axioms makes be able to move from first order logic to propositional logic?  There are no such axioms. At best one can define a translation from predicate logic to propositional logic. In general the translation of any specific predicate logic proposition would result in a much weaker proposition in propositional logic.  We are speaking here about two different systems of logic. Basic Propositional Logic and First Order Predicate Logic. These are two different systems of logic and both have different languages. Not only do they have different languages, but as a consequence, in general they have their own axioms. This has to do with what a system of logic actually is. A system of logic is a collection, if you will, of four things: A language, with which to express propositions about some class of worlds.A collection of axioms, used to specify the base assumptions concerning that class of worlds. Of course expressed in the language mentioned above.A collection of inference rules, which allow you to compute potentially \u2018new\u2019 propositions from propositions that you already have.Some way of interpreting these propositions so that we see what it is that these propositions are saying about the worlds.Now, in propositional logic, all that we have in the way of propositions are the propositional variables and combinations of these, built with the logical connectives such as \u2018and\u2019, \u2018or\u2019, etc. In predicate logic, as traditionally taught, we don\u2019t have propositional variables as the base kind of proposition, although there is no problem in having propositional variables in predicate logic and I generally do include them. What we do have are some ways to build propositions from variables, predicate constants, quantifiers and terms, where a term should for our purposes here simply be considered as an object identifier, that is a way to identify a specific object. Predicate logic then provides a few different ways to use these terms to build a proposition: Predication of equality. That is equating two terms by writing [math]t_1 = t_2[/math], or perhaps [math]=(t_1, t_2)[/math]. This syntax represents the proposition that the objects referenced by [math]t_1[/math] and [math]t_2[/math], are one and the same object. Really, this is just a special case of the next point.Predication of a property. This takes the form [math]P^n(t_1, \\cdots, t_n)[/math]. This syntax takes the object(s) and then asserts the proposition that these objects stand together in the relationship specified by [math]P[/math].Quantification. This generally takes the form [math]\\mathcal{Q}x.(P(... x ...))[/math], where [math]\\mathcal{Q}[/math] is either [math]\\forall[/math] or [math]\\exists[/math]. This syntax takes a term which might have [math]x[/math] as a free variable and asserts the proposition that some property [math]P[/math] holds true for some or all of the objects that exist, if we let [math]x[/math] take on values from that collection of objects. So, the best you can do is use the three types of predicate logic propositions mentioned above as the propositional variable of your propositional logic, in the process losing all information about the internal fine structure of the original proposition. It\u2019s kind of like seeing a dog, and then forgetting everything about the dog, beside the fact that it is an animal. All detail is lost. ",
+            "date": "Updated February 13, 2018",
+            "views": "612",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mukesh Tiwari",
+                    "user_href": "/profile/Mukesh-Tiwari"
+                },
+                {
+                    "user_id": "Nimish Bongale",
+                    "user_href": "/profile/Nimish-Bongale"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Timothy Eshing",
+                    "user_href": "/profile/Timothy-Eshing"
+                },
+                {
+                    "user_id": "Matthew Conklin",
+                    "user_href": "/profile/Matthew-Conklin-7"
+                },
+                {
+                    "user_id": "Bill Threewits",
+                    "user_href": "/profile/Bill-Threewits"
+                },
+                {
+                    "user_id": "Valerie Yip",
+                    "user_href": "/profile/Valerie-Yip-5"
+                },
+                {
+                    "user_id": "Leander Choris Hero",
+                    "user_href": "/profile/Leander-Choris-Hero"
+                },
+                {
+                    "user_id": "Shreeram Murali",
+                    "user_href": "/profile/Shreeram-Murali"
+                },
+                {
+                    "user_id": "Henry Brice",
+                    "user_href": "/profile/Henry-Brice"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nathan Coppedge",
+                "href": "/profile/Nathan-Coppedge"
+            },
+            "answer_text": "What moves from first order logic like A = A or B is B to propositional logic like A is B therefore B is A? (Also, it may be somewhat a matter of definition whether we are moving from \u2018is\u2019 to \u2018therefore\u2019, or from \u2018is therefore is\u2019 to 'is therefore is therefore is\u2019.) You see what I mean? However, what you are looking for is qualification, I suppose. Like\u2026 'A IS B, therefore B is A\u2019 \u2026 but in what way? Math would say there's nothing to add, but perhaps there is fertile ground for some type of philosophical education? A is B, and B is C, therefore there might be some qualification in how C is A. However, math again says there's nothing to add, or not universally. But we can say, if the 'is\u2019 has a vector, like if A is B, but we don't know B is A, or B is C, but we don't know C is B, then the intermediate step is that C is A, but A is not necessarily C. That depends on whether the statements that were made always hold. For example, if the statements hold with a vector, but they do not always hold, we can still say C is A. If they hold universally, we can also say A is C. However, what if we could measure existence somehow? Then we would have something else to notice. We could qualify something universally or causally, non-causally, or informally. It would be interesting, but it is not currently how the system works, because we don't know how to measure existence empirically. ",
+            "date": "Updated February 23, 2018",
+            "views": "52",
+            "upvotes": "0"
+        }
+    ]
+}

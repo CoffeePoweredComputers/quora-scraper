@@ -1,0 +1,91 @@
+{
+    "title": "How does reverb work? - Quora",
+    "tags": [
+        "Acoustics",
+        "Sound Engineering",
+        "How Things Work",
+        "Music Recording"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jeff Russert",
+                "href": "/profile/Jeff-Russert"
+            },
+            "answer_text": "Digital Methods: There are many methods of creating reverberation, both digital and analog.  In addition to the convolution method described by Rob Weir is the Schroeder reverberation algorithm.  This is a relatively simple method first suggested by Manfred Schroeder.  An example of this is shown in the diagram below:   As described above, the input is split and sent both directly to the output and also through the reverb algorithm (note: most plug-ins are not designed to perform this split and it must be done manually by creating an auxiliary track.  For a more complete explanation of this feel free to ask further questions.)  The signal is then delayed, and split again.  The signal is sent back through the delay circuit and also to the output.  As you can imagine, this process needs to occur a great many times before it produces the effect of reverberation. In acoustics the terms \"reverberation\" and \"echo\" differ in that an echo is a discrete reflection of sound, and reverberation is a dense blend of many echos.  This is the same in signal processing.  Reverb is created by blending the rapidly produced echos created by a delay circuit. To answer the rest of your question we can think about what tools the above diagram gives us.   First we can change the delay time.  This gives us the effect of a larger hall.  If a space is very large it will take a longer period of time for the reflections to reach your ears after the direct sound.  This is an important part of how we judge the size of a room, even when using our eyes. Then we can change the gain in a few different ways.  We can change the gain of the direct sound, the processed reverberant sound, and the sound as it loops back through the delay circuit.  The effect of these techniques is a little harder to describe, but it changes how lively the room feels.  If we make the reverberant sound louder than the direct sound it may sound muffled.  If we lower the gain on the processed reverb it will sound \"deader.\"  By adjusting the gain on the delay loop we can vary the decay time and intensity.  This can affect the clarity, presence, etc. By modifying the algorithm we can get even more effects.  In a real space, the intensity of a reflection varies at different frequencies, and higher frequencies are more affected by air absorption (humidity) than low frequencies.  To simulate this we would add a filter to the circuit.  For instance, by adding a low pass filter to the circuit we could make a rooms sound \"boomy.\"  The frequency selectivity might be better approximated by the convolution method described by Rob Weir, but this can have higher processing demands and is more difficult to do in real time. Analog Methods (briefly): Guitar amps typically use an analog method of reverb simulation known as a \"spring reverb.\"  This uses a transducer, such as a speaker, to stimulate a spring.  These vibrations are then picked up by another transducer such as a microphone and summed into the original signal.  If you kick your guitar amp (lightly) you'll hear the spring shake.  This is also fairly similar to how a plate reverb works, which are most commonly found in recording studios.  In some cases the \"dry\" (non-reverberant) sound is played in a reverberant room and picked up by microphones.  The Schroeder method could also be applied in an analog circuit, but is typically digital. Because of the ease and low cost of digital processing, these methods are becoming less common.  They often have a unique sound that may be desirable or undesirable depending on the application and the ear. ",
+            "date": "Updated June 8, 2011",
+            "views": "55",
+            "upvotes": " View 18 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Leigh",
+                    "user_href": "/profile/David-Leigh-1"
+                },
+                {
+                    "user_id": "Stavros Piliaris",
+                    "user_href": "/profile/Stavros-Piliaris"
+                },
+                {
+                    "user_id": "Grosu Robert",
+                    "user_href": "/profile/Grosu-Robert"
+                },
+                {
+                    "user_id": "Nic Starke",
+                    "user_href": "/profile/Nic-Starke"
+                },
+                {
+                    "user_id": "Andrew Marian",
+                    "user_href": "/profile/Andrew-Marian-2"
+                },
+                {
+                    "user_id": "\u00c1ron L\u0151rinc",
+                    "user_href": "/profile/\u00c1ron-L\u0151rinc"
+                },
+                {
+                    "user_id": "Jason Salvatori",
+                    "user_href": "/profile/Jason-Salvatori"
+                },
+                {
+                    "user_id": "Ashley Komoda",
+                    "user_href": "/profile/Ashley-Komoda"
+                },
+                {
+                    "user_id": "Tim Johnson",
+                    "user_href": "/profile/Tim-Johnson-7"
+                },
+                {
+                    "user_id": "Joseph Linnett",
+                    "user_href": "/profile/Joseph-Linnett"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jason Salvatori",
+                "href": "/profile/Jason-Salvatori"
+            },
+            "answer_text": "The other 2 answers give great information, so I won't repost that portion.  what you should know is what the computer is simulating.  In the analogue days, there were 3 main types of reverb added to a recording.  Jeff mentions them briefly at the bottom of his post.  The one you are specifically asking about would be a room reverb.  In old recording studios, there would be a large empty room with hard surfaces on all 4 walls, floor and ceiling.  The track would be pumped in to the room with a speaker, and then re-recorded via a microphone in the room.  The reverberations within the room were therefore recorded on another track to be mixed in to the final cut.  Large recording facilities would have multiple rooms of different sizes, to give different reverb characteristics.  Also, sound dampening material could be added or subtracted from some of the surfaces to change the sound / style of the reverb.When you are changing settings within your software, you are doing the equivalent of changing the characteristics of this room. Room size is usually the first  option, and does as you'd expect.  Next is the high-pass.  This is like putting batting in the corners of the room to cancel some of the bass frequencies.  Amplitude would be changing how loud the initial track fed to the room is.If you try to picture what would be done to a physical room to change the reverb in a given way, it will help you to relate to what the controls are doing in the digital realm. ",
+            "date": "Answered December 3, 2013",
+            "views": "14",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aaron Andrews",
+                    "user_href": "/profile/Aaron-Andrews-49"
+                },
+                {
+                    "user_id": "Andrew Marian",
+                    "user_href": "/profile/Andrew-Marian-2"
+                },
+                {
+                    "user_id": "\u00c1ron L\u0151rinc",
+                    "user_href": "/profile/\u00c1ron-L\u0151rinc"
+                },
+                {
+                    "user_id": "Jay Person",
+                    "user_href": "/profile/Jay-Person"
+                }
+            ]
+        }
+    ]
+}

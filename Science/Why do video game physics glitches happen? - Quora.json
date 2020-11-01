@@ -1,0 +1,113 @@
+{
+    "title": "Why do video game physics glitches happen? - Quora",
+    "tags": [
+        "Video Game Glitches",
+        "Glitch (data loss)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dale Thomas",
+                "href": "/profile/\u30c8\u30fc\u30de\u30b9-\u30c7\u30fc\u30eb-Dale-Thomas"
+            },
+            "answer_text": "Thanks for the A2A Marianne. Lots of great answers here. The main problem is how forces are integrated. In the real world, collision detection and response are happening continuously (well, within the known limits of the universe like Planck time and distance, but that's off-topic). But in a simulation, the physics equations are sampled at discrete time intervals. For example, between sample n and sample n+1 gravity has been continuously pulling an object down, thus affecting, velocity, thus affecting position, the entire time. But calculations can only be done at discrete samples, so it has to fudge those values a bit.  The simplest integration is Euler method. But you can see how it quickly diverges from the true integration of an equation here:    The problem is that the position and velocity get out of sync pretty quickly. And if you have large forces, the velocity can grow and grow and it can lead to an explosion (which is what you are seeing in games). Another problem is that collisions can happen between samples, so how do you deal with that?  You could recursively break the timestep and resample at every collision, but this would lead to infinite regress, when objects are in contact the system would grind to a halt. You could also store the collisions that happen between samples and assume they all happen at the next timestep, but then you have implicitly added energy. Speaking of adding energy, when real collisions occur, atoms push against other atoms and energy is moved around and transformed. But in a simulation, objects are just represented by surfaces. They have no volume, no real atoms. So rigid body collisions are highly abstracted and handled with \"impulses,\" instantaneous changes to velocity. These are non-physically plausible, and again it's very easy to add energy if not careful. Most physics engines use an adaptive timestep, to put lots more calculations in where it is needed and avoid unnecessary work. But even so, it has to have its limit. With a box lying on another box, you theoretically need to go down to zero timestep. So resting contacts are often handled differently.  Computers also have limited precision. Real values are stored in a limited number of bits, so tiny amounts of energy can be lost or gained simple because of this limited memory available for floating point numbers. This is not a huge problem, and often they cancel out, but it can become a problem and a physics programmer needs to be aware of it.  Things can be done to improve accuracy. Reducing the timestep between the samples is good, but that means running the whole physics simulation a lot more, which can slow a game down. You can also use higher order physics calculations, which need more samples, and therefore take more calculation, but do allow you to take larger timesteps with increased accuracy. One common method for this is 4th order Runge Kutta.   To increase stability, there are a couple of things that can be done. First, position-based simulations do away with storing velocity explicitly, and work it out implicitly in the equations of motion. This means that velocity can never get out of sync with position, and this the simulation can never explode. Lots of games use Verlet integration for this reason. It is as simple and as fast as Euler integration, but trades accuracy for stability. I use Verlet integration in a lot of my smaller games, such as Octopoppi:   Games like this, with lots and lots of resting contacts, need speed and stability over accuracy, so Verlet is the perfect choice. Another thing that can be done is to have a lot of damping in the system. Damping models things like air resistance, inelastic collisions, surface friction, etc. Whenever I write a fast, simple physics system that doesn't need to be truly accurate, I will multiply the velocity every frame by a number just smaller than 1, say, 0.995. This will subtly pull down the energy in the system and help with stability. As for objects clipping though other objects, I address that particular problem here:Dale Thomas (\u30c8\u30fc\u30de\u30b9 \u30c7\u30fc\u30eb)'s answer to Are projectiles in modern video games \"real\"? Real in a sense that they're actually rendered in the game world as solid objects that hit something, as opposed to being just some sort of effect that you see on your crosshairs. For your point about limbs becoming fixed in awkward positions, this is a problem with Inverse kinematics (IK). The meshes of characters in games are moved by moving an underlying skeleton. The relative orientations of the \"bones\" of the skeleton are set with angles, which are worked out with IK from where the animators positions their bodies, like controlling marionettes. The problem comes from the fact that multiple configurations of angles can satisfy the constraints. Also, IK is solved iteratively, meaning that the pose simply moves towards the desired pose from where it currently is. So, if a physics system provides a powerful force to knock a limb far from where it should be, the system will move to the closest configuration of angles that satisfy it.  A two-bone skeleton arm can touch a point (x,y) in 2 different ways:   Knee pose desired by the animator:  Knee pose which satisfies the foot position constraints:   TL;DR Basically, due to the discrete nature of computers, and their limited precision, any physical simulation is always going to have errors. For games, speed is very important so a lot of compromise of accuracy and stability is needed. The trick is to hack physics so that it is plausibly realistic, fast and doesn't explode. It's not easy to balance accuracy, plausibility, speed, stability and ease-of-implementation, and most solutions will fail under certain situations. ",
+            "date": "Answered December 1, 2015",
+            "views": "54",
+            "upvotes": " View 90 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Maratea",
+                    "user_href": "/profile/Mark-Maratea"
+                },
+                {
+                    "user_id": "Jiexiang Shen",
+                    "user_href": "/profile/Jiexiang-Shen-1"
+                },
+                {
+                    "user_id": "Muhamad Prades",
+                    "user_href": "/profile/Muhamad-Prades"
+                },
+                {
+                    "user_id": "Bruce Vieira Lopes",
+                    "user_href": "/profile/Bruce-Vieira-Lopes"
+                },
+                {
+                    "user_id": "Tom Bouley",
+                    "user_href": "/profile/Tom-Bouley"
+                },
+                {
+                    "user_id": "Bill Williams",
+                    "user_href": "/profile/Bill-Williams-62"
+                },
+                {
+                    "user_id": "Nawal Mahmood",
+                    "user_href": "/profile/Nawal-Mahmood"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Keldon Alleyne",
+                    "user_href": "/profile/Keldon-Alleyne-1"
+                },
+                {
+                    "user_id": "Joshua Duncan",
+                    "user_href": "/profile/Joshua-Duncan-21"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Adams",
+                "href": "/profile/Aaron-Adams-67"
+            },
+            "answer_text": "The reason video games have glitches are because they are really programs written by people. People make mistakes, and if a mistake is made, the console or computer has no choice but to just roll with it. They blindly follow all instructions they are given, even bad ones. Here's an example of a glitch in a video game that I made myself, when I was a beginner. I was writing a program similar to Jetpack Joyride. If you're unfamiliar with it, you basically steal a jetpack and try to fly the furthest distance possible while avoiding obstacles. In the original game, any hit at all will kill you instantly. My spinoff gave you 3 chances to get hit. The health starts at 3, and is lowered by 1 every time you are hit. I programmed the game to end when the player's health equals 0. Someone discovered, however, if you are at 1HP and two things hit you at the same time, then your health becomes -1. The game sees that -1 is not equal to 0, and doesn't kill the player. This allows the player to become invincible. Funnily enough, if they ran into a health pack, they died because their health was raised to 0 again and the game would end. I fixed the problem by telling the game to end if the player's health is equal to or less than 0, which prevented this invincibility bug from happening.  Similar bugs can happen anywhere in a video game (or in everyday software like a website or app). Everything is programmed by humans, even the physics, and if the humans put a mistake into the program, the computer doesn't \u201cknow\u201d that something broken should instead act a certain way; it just follows the bad instructions. One could write a calculator and accidentally program the computer to multiply instead of adding. Even though the button has a plus sign on it, it multiplies everything.  Similar bugs will cause crashes in video games. These are cases where something happens that the developer didn't account for. An example might be like this: If a dog is in a room, a light turns red. If a cat is in a room, a light turns green. Now I'll delete the light. If a dog enters the room, the program tries to turn on a light that doesn't exist. The programmers didn't tell the game what to do if this happens, so the game crashes. Here's a possible fix: If a dog is in a room, and a light is also in the room, the light turns red. If a cat is in a room, and a light is also in the room, the light turns green. This way, the program \u201cknows\u201d only to activate a light if there is one in the room.  The list of possible ways a programmer could mistakenly cause a bug are endless. Sometimes, a bug happens that is so hilarious that the developers intentionally leave it in the game, like in Skyrim when you are killed by a giant and your corpse flies miles into the air. ",
+            "date": "Answered November 23, 2017",
+            "views": "29",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aidan Benny",
+                    "user_href": "/profile/Aidan-Benny"
+                },
+                {
+                    "user_id": "Jean Oosthuizen",
+                    "user_href": "/profile/Jean-Oosthuizen-4"
+                },
+                {
+                    "user_id": "Jordan Edwards",
+                    "user_href": "/profile/Jordan-Edwards-50"
+                },
+                {
+                    "user_id": "James Boehm",
+                    "user_href": "/profile/James-Boehm-7"
+                },
+                {
+                    "user_id": "Stephen Brimhall",
+                    "user_href": "/profile/Stephen-Brimhall-3"
+                },
+                {
+                    "user_id": "Catreece MacLeod",
+                    "user_href": "/profile/Catreece-MacLeod"
+                },
+                {
+                    "user_id": "Rafael Barros Nagazai",
+                    "user_href": "/profile/Rafael-Barros-Nagazai"
+                },
+                {
+                    "user_id": "Vandit Bhatnagar",
+                    "user_href": "/profile/Vandit-Bhatnagar"
+                },
+                {
+                    "user_id": "Marcus Vin\u00edcius De Carvalho",
+                    "user_href": "/profile/Marcus-Vin\u00edcius-De-Carvalho"
+                },
+                {
+                    "user_id": "Alex Boxall",
+                    "user_href": "/profile/Alex-Boxall-4"
+                }
+            ]
+        }
+    ]
+}

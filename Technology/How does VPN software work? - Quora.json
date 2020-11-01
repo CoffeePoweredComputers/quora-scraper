@@ -1,0 +1,81 @@
+{
+    "title": "How does VPN software work? - Quora",
+    "tags": [
+        "VPN Software",
+        "Virtual Private Networks"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Flint Million",
+                "href": "/profile/Flint-Million"
+            },
+            "answer_text": "To explain VPNs, let\u2019s start at a similar construct in a non-electronic world. Suppose you and your significant other are in class together and you would like to pass notes. However, you don\u2019t want anyone else to be able to read your notes (especially the teacher!). Between you and your SO, there\u2019s two students. They\u2019ve both agreed to hand notes on in either direction for you as inconspicuously as possible. However, you also would prefer these two students not be able to read your professions of love or your romantic poetry. Without a VPN, you would just be writing your notes as-is and passing them back and forth, going through the two middle students each time. The thing is, your note was written in plain English. Either of the two students could easily just read the note before passing it on. Worse yet, the teacher could come by, take the note and read it aloud for the whole class. How embarrassing. So instead, you and your SO decide beforehand on a way to encrypt your notes. You\u2019ll write in some form of code that nobody other than the two of you knows how to read and write. Now, you\u2019ve created a secure channel between the two of you. The two students or the teacher can try to read the notes you\u2019re writing, but they\u2019ll make absolutely no sense. The teacher will simply shake his/her head and wonder what medication you\u2019re taking. What I just described is the \u201csecure tunnel\u201d part of a VPN. On the Internet, your traffic passes through many routers on its way to its destination - these are the two students who pass your notes on for you. The teacher in this scenario is the eavesdropper - an ISP, government agency, snoopy network admin - who\u2019s trying to passively intercept your traffic. By encrypting your messages, none of these entities can make any sense of them. The simplest VPN is simply two computers exchanging information over the Internet in a way that no eavesdropper in the middle would be able to read and understand. On the Internet, industry standard cryptography algorithms are used which, so far, have been largely proven to be unbreakable (other than by brute-force, which could take many times the age of the Universe to compute). However, this \u201csecure tunnel\u201d doesn\u2019t necessarily mean \u201cVPN\u201d. In fact, most of the time today, you\u2019re using secure tunnels to communicate with servers all over the Internet. Your connection with Gmail, YouTube, your bank, Quora, you name it, are almost certainly being done inside a secure tunnel. What differentiates a VPN is the \u201cN\u201d part - Network. VPN technology is most often used to allow access to more than one computer over the secure channel. Remember, the secure tunnel doesn\u2019t care about the data it carries. The encryption doesn\u2019t care if you\u2019re sending poetry, music, video, or network management and routing traffic. Thus, a VPN typically uses the secure tunnel to encapsulate network packets. The discussion of how this works tends to get technical quite quickly, but suffice it to say, you can imagine the VPN in this case as being equivalent to you plugging your laptop into another network - but one that\u2019s in a different location than you are. The Internet becomes the \u201ccable\u201d - and your information is protected by the encryption. Hence the sum of the parts: \u201cVirtual\u201d meaning over the Internet and not physically, \u201cPrivate\u201d meaning encrypted, and \u201cNetwork\u201d meaning a group of computers connected together. The two most common types of VPNs people will hear about are corporate network VPNs and anonymizing VPNs. The corporate VPN scenario serves the purpose of allowing people working remotely to \u201cvirtually\u201d connect into an office network at another location. For security, most office networks restrict access to internal resources (databases, applications, etc.) to computers running within their internal network. If you\u2019re not physically in the office, how do you get on that network to do your job? You use a VPN. By using the VPN, you use your secure tunnel as a sort of extra-long Ethernet cable, and thus from a logical point of view you appear to be on the physical office network. The second kind is easier to explain if we go back to our classroom example. Suppose you want your SO to inform one of their friends about something. So, in one of your encrypted messages you ask your SO to pass along some piece of information. Later on, your SO relays the information as you requested. This is similar to what an anonymizing VPN does. When you connect to such a VPN, every request you make to the Internet does not go directly from your computer to the Internet, it goes over the secure tunnel. The server at the other end takes all of your requests and forwards them on your behalf to the actual Internet, and sends back to you any replies that come back. But notice one key change: the servers you connect to on the Internet do not see the traffic as coming from you, but rather as coming from the VPN server. This is the key - neither the servers you\u2019re accessing nor anyone in between the VPN server and that server (on the public Internet) is able to determine who you are. VPN servers will usually stick hundreds to thousands of customers behind a single public IP address, so even though anyone spying on the public Internet could see your traffic coming from the VPN\u2019s IP, they can\u2019t tell which VPN user is generating it. The best VPNs explicitly refuse to log any information (such as your real IP) that could be used to identify you. The final caveat here is that you cannot hide the fact that you\u2019re using a VPN from your ISP or anyone between them and your VPN provider. The tunnel simply protects the information you\u2019re sending back and forth, but not the fact that you\u2019re sending that information in the first place. Again, though, good anonymizing VPNs will take steps (such as not logging your IP and routing you to different public IPs each time you connect) to help make it hard to impossible to actually associate unencrypted Internet traffic leaving your VPN provider from encrypted tunnel traffic between you and the VPN. (The scariest thing I can imagine is a world in which the use of a VPN in and of itself is cause for suspicion. Sadly, with the state of affairs we\u2019re in today, we may not be far off from that day\u2026) ",
+            "date": "Answered January 31, 2018",
+            "views": "35",
+            "upvotes": " View 21 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Wyomesh Tripathi",
+                    "user_href": "/profile/Wyomesh-Tripathi-1"
+                },
+                {
+                    "user_id": "Bruno Augusto",
+                    "user_href": "/profile/Bruno-Augusto-3-1"
+                },
+                {
+                    "user_id": "Abhinav Thapa",
+                    "user_href": "/profile/Abhinav-Thapa-16"
+                },
+                {
+                    "user_id": "Vignesh J",
+                    "user_href": "/profile/Vignesh-J-115"
+                },
+                {
+                    "user_id": "Paul Li",
+                    "user_href": "/profile/Paul-Li-145"
+                },
+                {
+                    "user_id": "Ashiq",
+                    "user_href": "/profile/Ashiq-10"
+                },
+                {
+                    "user_id": "\u0421\u0435\u0440\u0433\u0435\u0439 \u041a\u0430\u0440\u0430\u0442\u0430\u0447",
+                    "user_href": "/profile/\u0421\u0435\u0440\u0433\u0435\u0439-\u041a\u0430\u0440\u0430\u0442\u0430\u0447"
+                },
+                {
+                    "user_id": "Kanhaiya Kumar",
+                    "user_href": "/profile/Kanhaiya-Kumar-595"
+                },
+                {
+                    "user_id": "Sangjin Lee",
+                    "user_href": "/profile/Sangjin-Lee-12"
+                },
+                {
+                    "user_id": "Aadam Ahmad",
+                    "user_href": "/profile/Aadam-Ahmad"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Juergen Fiedler",
+                "href": "/profile/Juergen-Fiedler"
+            },
+            "answer_text": "The executive summary goes something like this: The VPN first established a regular network connection between point A (the VPN client) and point B (the VPN server). It then establishes a virtual network interface that routes all traffic from point A to the rest of the world through that connection. That is technically it. There are exceptions: Some VPN\u2019s, for example, only route traffic to specific destinations over the VPN, but those are special cases that you typically don\u2019t have to concern yourself with. There are two assumptions that hold practically universally true: The traffic between client and server is encrypted on top of any other form of encryption you may be using. This is important for users that have to access sensitive but poorly protected data (FTP servers, etc) from insecure networks (hotels and airports, for example).When the VPN server forwards the traffic from the client to the Internet at large, the Internet sees the traffic as coming from the VPN server - the original source of the traffic is obfuscated. This gives rise to the misconception that VPN\u2019s will hide your IP address from \u2018hackers\u2019. They do, to some extent, but are by no means the magic shield they are made out to be. It does mean, though, that you can watch Brazilian Netflix, if you connect to a VPN server in Brazil (that hasn\u2019t been blocked by Netflix yet).",
+            "date": "Answered July 3, 2019",
+            "views": "487",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Wicklow",
+                    "user_href": "/profile/Daniel-Wicklow"
+                },
+                {
+                    "user_id": "Randall Stephens",
+                    "user_href": "/profile/Randall-Stephens-5"
+                }
+            ]
+        }
+    ]
+}

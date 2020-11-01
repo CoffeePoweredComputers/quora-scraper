@@ -1,0 +1,77 @@
+{
+    "title": "Is an adjacency matrix good for storing a directed graph, an undirected graph, or both? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Phil Scovis",
+                "href": "/profile/Phil-Scovis"
+            },
+            "answer_text": "An undirected graph can be thought of as a directed graph where the adjacency relation is symmetric. This means that any way of representing directed graphs will work for undirected graphs as well. (Although, it may take up twice as much space!). As far as a representation being \u201cgood\u201d, it depends on what you need from it. An adjacency matrix is certainly adequate to represent any graph, but you may have additional virtues you need such as space constraints, time-complexity of determining adjacency, or iterating over neighbors, etc. Adjacency matrixes are generally a poor choice for large \u201csparse\u201d graphs (graphs with not very many edges, as the size of the matrix increases quadratically with the number of nodes. ",
+            "date": "Answered December 23, 2018",
+            "views": "169",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Marion Barbee",
+                    "user_href": "/profile/Marion-Barbee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "Adjacency matrixes are useful for both directed and undirected graphs. For undirected graphs, the matrix is symmetric, which may permit storage savings in some representations. Let me recommend a book: Graph Algorithms in the Language of Linear Algebra This book explains how to put those adjacency matrices to work. Very large graphs are also often very sparse, which can lead to wasteful matrix representations if you aren\u2019t careful. There are quite good sparse matrix packages that have quite efficient representations and still let you do all the linear algebra. Another place to start is Graph BLAS ",
+            "date": "Answered December 19, 2018",
+            "views": "37",
+            "upvotes": " View 19 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mod Shah",
+                    "user_href": "/profile/Mod-Shah"
+                },
+                {
+                    "user_id": "Raghavendra Purohit",
+                    "user_href": "/profile/Raghavendra-Purohit-2"
+                },
+                {
+                    "user_id": "Ashish Barthwal",
+                    "user_href": "/profile/Ashish-Barthwal-1"
+                },
+                {
+                    "user_id": "Ryan Saridar",
+                    "user_href": "/profile/Ryan-Saridar"
+                },
+                {
+                    "user_id": "Gadiraju Venkata Padma Raju",
+                    "user_href": "/profile/Padmaraju-GV"
+                },
+                {
+                    "user_id": "Lovey Agrawal",
+                    "user_href": "/profile/Lovey-Agrawal"
+                },
+                {
+                    "user_id": "Sami Smaili",
+                    "user_href": "/profile/Sami-Smaili"
+                },
+                {
+                    "user_id": "Anand Saminathan",
+                    "user_href": "/profile/Anand-Saminathan-4"
+                },
+                {
+                    "user_id": "Manish Verma",
+                    "user_href": "/profile/Manish-Verma-690"
+                },
+                {
+                    "user_id": "Chandan Malpotra",
+                    "user_href": "/profile/Chandan-Malpotra"
+                }
+            ]
+        }
+    ]
+}

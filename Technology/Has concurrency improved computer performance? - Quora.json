@@ -1,0 +1,35 @@
+{
+    "title": "Has concurrency improved computer performance? - Quora",
+    "tags": [
+        "Concurrency (computer science)",
+        "Computer Hardware Performance",
+        "Parallel Computing",
+        "High Performance Computing",
+        "Central Processing Units",
+        "Processors",
+        "Computer Science",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Huseyin Tugrul Buyukisik",
+                "href": "/profile/Huseyin-Tugrul-Buyukisik"
+            },
+            "answer_text": "With time-slicing, you can stop UI being non-responsive while computing something so that user can enter new values from task panel. When a thread can not yield, another thread can not enter core or at least it needs to be preempted there. But still processor runs at same speed with or without these. Compute performance is about back-end part of CPU where pipelines reside. If there are two independent pipelines, with proper instructions, two jobs can be issued on two pipelines to achieve concurrency. This is what concurrency looks like in a slow single-core CPU:   <---- time --->\u00a0^\u00a0|        read    compute       write\u00a0|            read       compute     write\u00a0job  read                                compute    write\u00a0|                                               read     compute\u00a0|   \u00a0v             \u00a0They overlap their total work but necessarily in parallel. With a dual core or a single core with hyper-threading   <---- time --->\u00a0^\u00a0|       read compute write\u00a0|           read compute write\u00a0job             read compute write\u00a0|                   read compute write\u00a0|                       read compute write\u00a0v \u00a0This time, parts of each job can overlap. Still concurrent but much faster. ",
+            "date": "Answered April 16, 2020",
+            "views": "74",
+            "upvotes": " Answer requested by Kabwela Matanga"
+        },
+        {
+            "author_info": {
+                "name": "Anton Carver",
+                "href": "/profile/Anton-Carver"
+            },
+            "answer_text": "Concurrency is about dealing with multiple tasks. It has nothing particular to do with computer performance, though people often muddle it up with a related concept \u2014 parallelism. Parallelism has already been able to deliver improved performance, but only for tasks that are parallelizable (Amdahl's law - Wikipedia) and only when they are implemented to exploit parallelism. ",
+            "date": "Answered April 16, 2020",
+            "views": "50",
+            "upvotes": "0"
+        }
+    ]
+}

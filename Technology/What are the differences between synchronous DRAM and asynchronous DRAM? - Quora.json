@@ -1,0 +1,62 @@
+{
+    "title": "What are the differences between synchronous DRAM and asynchronous DRAM? - Quora",
+    "tags": [
+        "DRAM",
+        "Random-Access Memory",
+        "Personal Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Sporer",
+                "href": "/profile/Michael-Sporer-1"
+            },
+            "answer_text": "This is going to blow your mind, but actually the DRAM storage array at the heart of every synchronous DRAM, is an asynchronous device. But before I get into that I think you are asking about the differences of the memory interface? Synchonous versus Asynchonous? That\u2019s easy. A Synchonous DRAM has a clock to which commands and data are aligned. An asynchronous DRAM is self-timed, you toggle four control lines (and the address bus) in a particular order to tell the device what to do. Then the device performs a self timed read or write, then, if you are reading you wait until the access time has elapsed and you sample the data lines. When you are done return the device to the idle state by toggling those control signals back. It\u2019s actually easier than it sounds, but in order to both simplify the control and also to be able to pipeline the datapath synchronous DRAM was introduced. \u2014\u2014\u2014\u2014\u2014\u2014 That\u2019s right, whether SDR, DDR, DDR2/3/4/5, GDDRx LPDDR, PSRAM, RLDRAM, LLDRAM, and every other permutation, every one of these variations of Synchronous DRAM has an asynchronous core. Why? \u2026 power consumption. A DRAM has more transistors than a high end CPU. If these transistors each needed a clock the power consumption would be astronomical, and while a CPU can be running many operational paths concurrently a DRAM activates only one page out of thousands at a time. All the pages not being used are just sitting there and leaking until they need to be refreshed. Historically one of the most challenging problems to overcome in SDRAM design was self-refresh exit. When an SDRAM is operating the refresh is controlled external by synchronous commands, but when it goes into self-refresh mode it is turned over to an internal timer because the external clock is allowed to be stopped. So when you exit self refresh you need to hand off from the internal timer, to the external synchronous timer, and this handoff is IMPOSSIBLE to test because it is a statistical event, it is the alignment of two independent free running clocks. Because the system wants to minimize the delay of waking up the self-refresh exit timings are a bit aggressive and has caused a lot of problems that have escaped into the field. Have you ever own a computer that occasionally would fail to come out of sleep? Well this could very well be the reason why. RECALL: HP Notebook Recall on Memory Modules | NotebookReview.com Fun fact: the first SDRAM had a longer latency than the Asynch DRAM which they replaced. ",
+            "date": "Updated May 5, 2018",
+            "views": "45",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Cole Johnson",
+                    "user_href": "/profile/Cole-Johnson-13"
+                },
+                {
+                    "user_id": "Ujjwel Balwal",
+                    "user_href": "/profile/Ujjwel-Balwal"
+                },
+                {
+                    "user_id": "David Holt",
+                    "user_href": "/profile/David-Holt-126"
+                },
+                {
+                    "user_id": "Mark Farley",
+                    "user_href": "/profile/Mark-Farley"
+                },
+                {
+                    "user_id": "Kiran Habib",
+                    "user_href": "/profile/Kiran-Habib-2"
+                },
+                {
+                    "user_id": "Ramdas Mozhikunnath",
+                    "user_href": "/profile/Ramdas-Mozhikunnath"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Howard Gilbert",
+                "href": "/profile/Howard-Gilbert-1"
+            },
+            "answer_text": "This is a difference that applies to almost everything in a computer and goes back as far as the old mainframes. Initially every given circuit (serial port, parallel port, bus, \u2026) starts out asynchronous meaning that either side (the computer or the device) starts an operation by sending a signal down a wire to indicate there is a command or operation starting. Then in a write it sends a single unit of data or in a read it waits for the other side to present data. Some other wire sends a signal after the data should be present and stable and this trailing signal tells the receiver to look at the values on the data wires. In single wire situations (like the serial port) there may be a sequence of values that follow one after another based on a clock, but the sequence is short and this only works for one wire because the only way to coordinate the arrival of data on two or more wires (parallel) is to send the trailing signal. The time between data transmissions is arbitrary and generally either side can take as long as it needs to process each unit of data, so the transmission speed is determined by the slowest device at either end. In Synchronous DRAM the CPU sends an address to the RAM and then read back exactly one unit of data at that address. When it needs another value from memory, it sends another address even if that happens to be the next address following the previous request. Synchronous means that there is more than one unit of data sent per operation, and it can be quite a lot of data. In a USB you send a large block of disk data, in a LAN you send a whole packet, and in Synchronous DRAM you send a \u201cline of cache\u201d. That means that the CPU presents an address, and then the RAM replies with the data at that address, but then it rounds the address down to a multiple of four 32 bit units and sends the other three units \u201cnear to\u201d the address sent by the CPU and all four units are stored in the CPU cache. There is a clock and the subsequent three blocks of data are transmitted based on the clock pulse. This gets rid of the \u201cI want to do something. What do you want? Here is the operation. I am ready to receive. Here is the data. I got the data, now what do you want to do?\u201d back and forth for every byte or word transmitted in an Asych operation. However, what this means is that all systems are ultimately asynchronous, and the difference is the scale of the unit being processed. Asynch tends to be variable between each byte, while synchronous transmits a block of data on the clock but then has some async startup protocol between transmissions. So asking for a entire sector of disk data is asynchronous (you ask when you need the data), but then the entire sector is transmitted synchronously with a clock determining the speed of the bits and bytes in the sector. One other point. SDRAM takes longer to respond when the address you send is \u201cfarther away\u201d rather than \u201cnext to\u201d the previous address. However, the maximum delay is decided when the memory characteristics are determined at power up time. So when the CPU sends an address it knows whether there will be a fast response or a slow (CAS latency) response and waits an appropriate number of clock ticks based on the difference between the current address and the last address. In an asynchronous protocol, the memory would have signaled the CPU when it was ready to perform the operation rather than negotiating a guaranteed response time at power up. ",
+            "date": "Answered April 15, 2018",
+            "views": "32",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "AMISHA SHREYA",
+                    "user_href": "/profile/AMISHA-SHREYA-2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "title": "What is the relationship between RAM and the CPU? - Quora",
+    "tags": [
+        "Random-Access Memory",
+        "Central Processing Units",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Craig Prall",
+                "href": "/profile/Craig-Prall-1"
+            },
+            "answer_text": "Without more context, there are a number of ways to interpret that question. A few are: How does a CPU and RAM work together to run an application?How does the CPU and RAM communicate (given that they operate at different clock frequencies)?Is there a specific amount of RAM that is optimal based on the architecture of the CPU?Is there a limit to the amount of RAM based on the architecture of the CPU?There\u2019s even more possible ways to interpret that based on the definition of \u201cCPU.\u201d For this question, is \u201cCPU\u201d limited to is in an individual processing core of a modern CPU? Or is it what\u2019s in the CPU package that you can pick up and hold? The latter may have 1, 2, 4 or more cores, some amount of onboard L2 and L3 cache (which is a special type of RAM) and all the hardware for communicating with the other components in the system (such as RAM). I\u2019m going to choose the first one for my answer and limit it to an individual core. I\u2019ll touch on the second one as well without much in the way of details. The CPU at the very lowest level has the ability to fetch a \u201cword\u201d of data from memory or store a word of data into memory (where a word is typically 32 or 64 bits). A \u201cword\u201d could be either an instruction that is part of an executable application or data that the application is manipulating. The CPU can perform arithmetic operations (e.g., add these two words together) on data words or control operations (e.g., if this word is greater than this other word, fetch instructions [more words] from here, otherwise fetch instructions from there) based on instruction words. In either case, the data is internally stored within the CPU for the time it is needed. (I\u2019m purposely going to avoid talking about registers inside the CPU.) A CPU has a very limited amount of storage for words. It only has room to hold the words that it is executing control with or operating on arithmetically plus a tiny bit extra. All of the internal storage of the CPU has to operate at the speed of the CPU. Having a lot of room for instructions/data at this speed in inside the core is expensive. Because of this, the majority of an application\u2019s instructions (i.e., the program itself) and data is stored in one or more types of RAM: L1, L2 (and often L3) cache memory and traditional system RAM modules that today typically consist of one or more DIMMs. The later is the RAM a user would buy and install in a motherboard. How fast words can be transferred between the CPU and RAM depends on their relative speeds, but it\u2019s safe to say that today\u2019s CPUs operate much faster than RAM can retrieve or store words. To alleviate that problem a bit, a typical CPU core today will also include some amount of L1 cache. You can think of L1 Cache as RAM - although implemented differently than system RAM - that operates at nearly the speed of the CPU. At one time, L1 cache operated close to CPU speeds, but CPU speed (frequency) increases have outpaced RAM access times (i.e., the ability to do fetches and stores), so that\u2019s no longer the case. Still, compared to the system RAM, L1 cache is lightning fast. However, it\u2019s also expensive and complicates the core architecture by adding heat, increasing circuit traces (lines) and increases the possibility of manufacturing defects (because of the increased number of transistors and traces to support it). Instead, larger, but slower L2 and even larger and even slower L3 caches are used (and L4 caches are coming into popularity, too). L2 is faster than L3, but slower than L1. All, however, are much faster than the system RAM on DIMMs. They are also much more expensive to produce when compared to system RAM. I ignored many specifics because they are dissertations onto themselves: CPU core data pre-fetching, branch prediction, etc.Cache associative architecture and taggingHow the CPU knows where to find/store data since it may be in L1, L2 or L3 caches or system RAM. (Including cache hits/misses and cache replacement algorithms).L1 cache is typically split into separate sections for data and instruction wordsExactly where L2 and L3 caches are kept (as in are they kept in a core package vs shared between cores)",
+            "date": "Answered June 12, 2016",
+            "views": "141",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kon Pozz Hr",
+                    "user_href": "/profile/Kon-Pozz-Hr"
+                },
+                {
+                    "user_id": "Kevin Brown",
+                    "user_href": "/profile/Kevin-Brown-1131"
+                },
+                {
+                    "user_id": "Emran Daas",
+                    "user_href": "/profile/Emran-Daas-1"
+                },
+                {
+                    "user_id": "Kerry Parker",
+                    "user_href": "/profile/Kerry-Parker-39"
+                },
+                {
+                    "user_id": "Ashok Koyi",
+                    "user_href": "/profile/Ashok-Koyi"
+                },
+                {
+                    "user_id": "Naveen Kumar",
+                    "user_href": "/profile/Naveen-Kumar-5867"
+                },
+                {
+                    "user_id": "Yasharth Singh",
+                    "user_href": "/profile/Yasharth-Singh-7"
+                },
+                {
+                    "user_id": "A Velaris",
+                    "user_href": "/profile/A-Velaris"
+                },
+                {
+                    "user_id": "Lekan Oyegbami",
+                    "user_href": "/profile/Lekan-Oyegbami"
+                },
+                {
+                    "user_id": "Jay Gee",
+                    "user_href": "/profile/Jay-Gee-345"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Kestner",
+                "href": "/profile/Michael-Kestner"
+            },
+            "answer_text": "Conceptually, you can think of the relationship between RAM and CPU as similar to the relationship between a desk and the person using it. The desk (RAM) is a workspace where the person (CPU) lays paperwork and other things he/she needs to have immediately within reach to do their work efficiently. Increasing the amount of RAM is analogous to buying a bigger desk : You have more space to spread out that important paperwork you need to look at, or whatever the case may be. Just like buying a bigger desk, there\u2019s a limit to the benefit as well. You don\u2019t need to have an entire filing cabinet\u2019s worth of documents spread out on your desk to get your days work done, so there\u2019s not really a benefit to having a desk big enough to do so. It\u2019s the same with RAM. At some point adding more RAM to a system won\u2019t increase performance any more, because the work your CPU is doing doesn\u2019t require it. There\u2019s also several layers of cache on the CPU that serve the same function, but are even faster than RAM, though they can hold only a tiny fraction of the information. So only the absolute highest priority information is stored there instead of RAM. I tend to think of the cache on the CPU as analogous to the piece of paper you\u2019re reading right that instant on your desk. Maybe the analogy isn\u2019t perfect, but I think it makes the relationship easier to visualize. ",
+            "date": "Answered June 14, 2016",
+            "views": "92",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Gautam",
+                    "user_href": "/profile/Vaibhav-Gautam-24"
+                },
+                {
+                    "user_id": "Mathaba Bahari",
+                    "user_href": "/profile/Mathaba-Bahari"
+                },
+                {
+                    "user_id": "Muhammad Zubair",
+                    "user_href": "/profile/Muhammad-Zubair-992"
+                },
+                {
+                    "user_id": "Mohammed Ali",
+                    "user_href": "/profile/Mohammed-Ali-2189"
+                },
+                {
+                    "user_id": "Sanjeev Rai",
+                    "user_href": "/profile/Sanjeev-Rai-88"
+                },
+                {
+                    "user_id": "Ma Ahmed",
+                    "user_href": "/profile/Ma-Ahmed-5"
+                },
+                {
+                    "user_id": "Kerry Parker",
+                    "user_href": "/profile/Kerry-Parker-39"
+                },
+                {
+                    "user_id": "Barb Davey",
+                    "user_href": "/profile/Barb-Davey"
+                },
+                {
+                    "user_id": "Hedwig Victoria Pearl Baidoo",
+                    "user_href": "/profile/Hedwig-Victoria-Pearl-Baidoo-1"
+                },
+                {
+                    "user_id": "Full King",
+                    "user_href": "/profile/Full-King"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+{
+    "title": "How to solve this partial differential equation - Quora",
+    "tags": [
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "Find  given partial differential equation below.   This is a linear first order partial differential equation. The method of characteristics allows it become a system of ordinary differential equations.  Method of Characteristics Suppose  is a single variable equation for the parameter . Then,  relates  to  by the chain rule.  This is the same as the system of ordinary differential equations below. Solve them to get characteristic curves.    A two variable problem may be simplified to make  the parameter. This eliminates one ordinary differential equation.    Solve this PDE.   Solve the simplified system of ODEs given that  equals one, and  is the parameter. Each one is a separable ODE.   Finally, recognize the constant of integration  is really an arbitrary function  tracing the characteristic curve . Answer The arbitrary function  is determined by unspecified boundary conditions.  ",
+            "date": "Answered May 20, 2020",
+            "views": "231",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Emad Noujeim",
+                "href": "/profile/Emad-Noujeim"
+            },
+            "answer_text": "The given equation is a first-order linear partial differential equation of the form :  I will give the solution to this equation with the help of Mathematica . The Mathematica built-in function DSolve[] can be used to solve ordinary as well as partial differential equations . Taking into account the given initial condition and typing : sol= DSolve[{x D[u[x, y], x] + y D[u[x, y], y] == 1, u[1, y] == y}, u[x, y], {x, y}]\u00a0yields the following result or output : {u[x, y] -> (y + x Log[x])/x}\u00a0which is the solution . This can be expressed as :  A 3D plot of the solution can be made by typing : Plot3D[u[x, y] /. sol, {x, -2, 6}, {y, -2, 6}, PlotRange -> {-1, 20},  Mesh -> None]\u00a0And the following plot is obtained :  ",
+            "date": "Answered June 29, 2016",
+            "views": "690",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Samim Ul Islam",
+                    "user_href": "/profile/Samim-Ul-Islam"
+                },
+                {
+                    "user_id": "Akinwande Emily",
+                    "user_href": "/profile/Akinwande-Emily"
+                }
+            ]
+        }
+    ]
+}

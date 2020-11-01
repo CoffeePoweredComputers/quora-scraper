@@ -1,0 +1,73 @@
+{
+    "title": "How to quickly know if a function is convex - Quora",
+    "tags": [
+        "Convex Optimization",
+        "Mathematical Optimization",
+        "Computer Science",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Rubin",
+                "href": "/profile/Paul-Rubin-6"
+            },
+            "answer_text": "I assume you\u2019re referring to a scalar function. If it\u2019s a twice differentiable function of one variable, check that the second derivative is nonnegative (strictly positive if you need strong convexity). If it\u2019s a twice differentiable function of several variables, check that the Hessian (second derivative) matrix is positive semidefinite (positive definite if you need strong convexity). I\u2019m not aware of a quick test of convexity in any other cases (other than, as mentioned elsewhere, plotting the function \u2026 if you trust both the resolution of the plot and the resolution of your vision). Update: I left out one other possibility, namely that a theoretical result lets you recognize your function as being convex. For example, suppose you know that [math]f()[/math] and [math]g()[/math] are both convex and [math]f()[/math] is also monotonically nondecreasing. Then [math]h(x)=f(g(x))[/math] is automatically a convex function. ",
+            "date": "Answered June 21, 2016",
+            "views": "16",
+            "upvotes": " View 22 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ed Cueto",
+                    "user_href": "/profile/Ed-Cueto-1"
+                },
+                {
+                    "user_id": "Adam Harris",
+                    "user_href": "/profile/Adam-Harris-269"
+                },
+                {
+                    "user_id": "Sampada Chourasia",
+                    "user_href": "/profile/Sampada-Chourasia"
+                },
+                {
+                    "user_id": "Ayu Nazrah",
+                    "user_href": "/profile/Ayu-Nazrah"
+                },
+                {
+                    "user_id": "Christian Howard",
+                    "user_href": "/profile/Christian-Howard-2"
+                },
+                {
+                    "user_id": "Ramesh Krishnan",
+                    "user_href": "/profile/Ramesh-Krishnan-160"
+                },
+                {
+                    "user_id": "Bioye Ajala",
+                    "user_href": "/profile/Bioye-Ajala"
+                },
+                {
+                    "user_id": "Raquel Redondo",
+                    "user_href": "/profile/Raquel-Redondo"
+                },
+                {
+                    "user_id": "Nelvin Tan",
+                    "user_href": "/profile/Nelvin-Tan"
+                },
+                {
+                    "user_id": "Riya Joshi",
+                    "user_href": "/profile/Riya-Joshi-57"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chris Reid",
+                "href": "/profile/Chris-Reid-7"
+            },
+            "answer_text": "A function can be either or both, depending on the range you are given. At any given instant, however you can determine the direction, and slope from the first derivative sign and magnitude, then doing it again at a tiny intervalbeyond and before that point. The first derivative is \u201cslope\u201dThe second derivative is \u201crate of change of slope\u201d So the table becomes: [math]f\u2019 + , f\u2019\u2019 + = concave[/math] [math]f\u2019 + , f\u2019\u2019 - = convex[/math] [math]f\u2019 -, f\u2019\u2019 +  = concave[/math] [math]f\u2019 -, f\u2019\u2019 -  = convex[/math]  [math]A = f = sin(x) B = f\u2019 = cos(x) C = f\u2019\u2019= -sin(x)[/math] Notice above that the cosine (first derivative of sine) has peaks and valleys at the inflection points of the sine function. Reply ",
+            "date": "Answered August 7, 2018",
+            "views": "46",
+            "upvotes": "0"
+        }
+    ]
+}

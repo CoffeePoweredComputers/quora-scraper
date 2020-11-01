@@ -1,0 +1,57 @@
+{
+    "title": "What is the sum (or difference) of two binomial distribution? - Quora",
+    "tags": [
+        "Binomials",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Pravat Kumar Hati",
+                "href": "/profile/Pravat-Kumar-Hati"
+            },
+            "answer_text": "If there are two binomial random variable with same probability of success same say, p . Then there sum also follow binomial distribution i.e [math]X \\sim bin(n,p)[/math] and [math]Y \\sim bin(m,p) [/math] then [math]x+Y \\sim bin(n+m,p)[/math] you can prove it easily by using MGF or by using the fact that binomial random variable is the sum of Bernoulli random variables . Now we see that if [math]x \\sim bin(n,p)[/math] then [math](n-x) \\sim bin(n,1-p)[/math] . It's also easy to prove just use the fact that [math]{n \\choose x} = {n \\choose {n-x}} [/math] So, [math]P(X-Y = k ) \\Rightarrow P(X+m-Y = m+k ) = {{n+m} \\choose {m+k}} {p}^{m+k} {(1-p)}^{n-k} [/math] , where k= -m,\u2026,n .Here we just use the above mentioned fact .It is the pmf of difference of two binomial random variable with same probability of success. ",
+            "date": "Answered June 7, 2020",
+            "views": "599",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Code With Sola",
+                    "user_href": "/profile/Code-With-Sola"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "There is no way to answer this question without making assumptions about the way the two binomal random variables depend on one another.   There is one easy special case that we can quickly answer.  Suppose X is binomal(n,p) and Y is binomial(m,p) and suppose that they are independent.  Then X+Y is binomial(n+m,p).  That follows immediately from the interpretation of the two binomials as sums of independent Bernoulli(p) random variables. I cannot immediately think of any other interesting special cases that are worth discussing AND have an easy result. (There are some trivial cases like if X is binomial and Y=X then with probability one, X-Y=0.) ",
+            "date": "Answered April 6, 2016",
+            "views": "37",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Rahul Verma",
+                    "user_href": "/profile/Rahul-Verma-3826"
+                },
+                {
+                    "user_id": "Malcolm Walker",
+                    "user_href": "/profile/Malcolm-Walker-34"
+                },
+                {
+                    "user_id": "Yiming Xu",
+                    "user_href": "/profile/Yiming-Xu-16"
+                },
+                {
+                    "user_id": "Ezra Bloemendaal",
+                    "user_href": "/profile/Ezra-Bloemendaal"
+                }
+            ]
+        }
+    ]
+}

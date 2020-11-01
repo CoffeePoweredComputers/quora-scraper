@@ -1,0 +1,43 @@
+{
+    "title": "If the area of a circle decreases 25%, then how much decreases the circumference of this circle? - Quora",
+    "tags": [
+        "Circumference",
+        "Geometry of Circles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ronald Schermerhorn",
+                "href": "/profile/Ronald-Schermerhorn"
+            },
+            "answer_text": "Let\u2019s define the initial area of the circle as A. Then the new circle will have an area of 0.75*A.I\u2019ll call the inital radius of the circle r. The x in the undermentioned equation stands for the factor with which the initial radius is multiplied to get the radius of the new circle. (So r*x is the radius of the new circle.) Thus the equations we get are(1) A = \u03c0*r^2(2) 0.75*A = \u03c0 * (r*x)^2 = \u03c0 * r^2 * x^2Rewriting (1) and (2) givesr^2 = A/\u03c0r^2 = 0.75*A/(\u03c0*x^2)(For the sake of clarity, \u201cr\u201d represents the radius of the initial circle and not the one of the new; see my definitions at the beginning.) And we know that r^2 = r^2, so apparently A/\u03c0 = 0.75*A/(\u03c0*x^2)I want to find the value of x. Multiplying both sides by \u03c0 and dividing both sides by A gives1 = 0.75/x^2So x^2 = 0.75x = sqrt(0.75) The circumference of the initial circle was 2*\u03c0*r. The circumference of the new circle is 2*\u03c0*r*x = 2*\u03c0*r*sqrt(0.75) Hence the decrease in circumference is2*\u03c0*r - 2*\u03c0*r*sqrt(0.75) = 2*\u03c0*r*(1-sqrt(0.75)) As a percentage of the initial circumference, this is equal to2*\u03c0*r*(1-sqrt(0.75)) / (2*\u03c0*r) * 100% = (1-sqrt(0.75)) * 100% \u2248 13.4% Hope this helped :) ",
+            "date": "Answered February 6, 2018",
+            "views": "12",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Romain Mondon-Cancel",
+                "href": "/profile/Romain-Mondon-Cancel-1"
+            },
+            "answer_text": "[math]\\mathcal{A} = \\pi r^2[/math] [math]\\mathcal{C} = 2\\pi r[/math] [math]\\mathcal{A} = \\frac1{4\\pi}\\mathcal{C}^2[/math] [math]\\frac{\\mathcal{A}'}{\\mathcal{A}} = \\frac{\\mathcal{C}'^2}{\\mathcal{C}^2}[/math] [math]\\frac{\\mathcal{C}'}{\\mathcal{C}} = \\sqrt{\\frac{\\mathcal{A}'}{\\mathcal{A}}}[/math] All that to say, the ratio of the circumferences evolves as the square root of the ratio of the areas. If the area decreases by [math]25\\%[/math], then the ratio is [math]0.75[/math], which means the ratio of the circumferences is about [math]0.866[/math], which finally means the circumference decreases by about [math]13.4\\%[/math]. ",
+            "date": "Answered February 6, 2018",
+            "views": "15",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gaurav Gaira Vlogs",
+                    "user_href": "/profile/Gaurav-Gaira-Vlogs"
+                },
+                {
+                    "user_id": "Jyoti Sahoo",
+                    "user_href": "/profile/Jyoti-Sahoo-46"
+                },
+                {
+                    "user_id": "C\u00e9cile B\u00e9du",
+                    "user_href": "/profile/C\u00e9cile-B\u00e9du"
+                }
+            ]
+        }
+    ]
+}

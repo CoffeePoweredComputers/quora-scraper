@@ -1,0 +1,77 @@
+{
+    "title": "How to minimize (A+B+C\u2019) (B+C) (A\u2019+C) using Boolean Algebra - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Raymond Paseman",
+                "href": "/profile/Raymond-Paseman"
+            },
+            "answer_text": "Minimize it to what? Sum-of-products or product-of-sums? For minimizing it to sum-of-products, Aditya DS gave a good answer for that. For product-of-sums, you can do: (A+B+C\u2019) (B+C) (A\u2019+C) = (given) (B+(A+C\u2019) (C)) (A\u2019+C) = (distributivity) (B+AC)(A\u2019+C) = (distributivity + complement + identity) (B+A)(B+C)(A\u2019+C) (distributivity) You can then simplify that even more with: (B+A)(B+C)(A\u2019+C) = (B+A)(0+B+C)(A\u2019+C) = (identity) (B+A)((A\u2019A)+B+C)(A\u2019+C) = (complement) (B+A)(A+B+C)(A\u2019+B+C)(A\u2019+C) = (distributivity) (B+A)(A\u2019+C) (absorption) You can then convert this to a sum-of-products with some distributivity: (B+A)(A\u2019+C) = A\u2019B + BC + AA\u2019 + AC = (distributivity) A\u2019B + BC + AC You can then simplify that in a similar way as we did before: A\u2019B + BC + AC = A\u2019B + 1BC + AC = (identity) A\u2019B + (A\u2019+A)BC + AC = (complement) A\u2019B + A\u2019BC+ABC + AC = (distributivity) A\u2019B + AC (absorption) ",
+            "date": "Updated March 18, 2018",
+            "views": "18",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Augusto Camargo",
+                    "user_href": "/profile/Augusto-Camargo"
+                },
+                {
+                    "user_id": "Aditya DS",
+                    "user_href": "/profile/Aditya-DS"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "   We know,       We know         ",
+            "date": "Answered April 29, 2020",
+            "views": "106",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Aditya DS",
+                "href": "/profile/Aditya-DS"
+            },
+            "answer_text": "[math](A+B+\\overline{C})(B+C)(\\overline{A}+C)[/math] [math]=(AB+AC+BB+BC+B\\overline{C}+C\\overline{C})(\\overline{A}+C)[/math] [math]=(AB+AC+B)(\\overline{A}+C)[/math] [math]=\\overline{A}AB+\\overline{A}AC+\\overline{A}B+ABC+ACC+BC[/math] [math]=\\overline{A}B+ABC+AC+BC[/math] Converting into SSOP (Standard Sum of Products) form, we get: [math]=\\overline{A}B(C+\\overline{C})+ABC+A(B+\\overline{B})C+(A+\\overline{A})BC[/math] [math]=\\overline{A}BC+\\overline{A}B\\overline{C}+ABC+ABC+A\\overline{B}C+ABC+\\overline{A}BC[/math] [math]=\\overline{A}BC+ABC+A\\overline{B}C+\\overline{A}B\\overline{C}[/math] [math]=\\overline{A}B(C+\\overline{C})+AC(B+\\overline{B})[/math] [math]=\\overline{A}B+AC[/math] Thus, [math]\\boxed{\\boxed{(A+B+\\overline{C})(B+C)(\\overline{A}+C)=\\overline{A}B+AC}}[/math] One can verify the answer by using a K-map.  ",
+            "date": "Answered March 16, 2018",
+            "views": "383",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mihlali Sonamzi",
+                    "user_href": "/profile/Mihlali-Sonamzi"
+                },
+                {
+                    "user_id": "Alberto Cid",
+                    "user_href": "/profile/Alberto-Cid-1"
+                },
+                {
+                    "user_id": "Raymond Paseman",
+                    "user_href": "/profile/Raymond-Paseman"
+                },
+                {
+                    "user_id": "Augusto Camargo",
+                    "user_href": "/profile/Augusto-Camargo"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jerry O'Hogan",
+                "href": "/profile/Jerry-OHogan"
+            },
+            "answer_text": "(A+B+C\u2019) (B+C) (A\u2019+C) expand (B+C) (A\u2019+C) (A+B+C\u2019)(AB + BC + A'C + CC) expand the above into three terms and simplify with XX = X et-al and XX' = 0 (1) A AB + A BC + A A'C + A CC AB +ABC + AC (2)A B B + B BC + A' B C + B CC AB + BC + A'BC +BC (3)AB C\u2019 + BC C\u2019 + A'C C\u2019 + CC C\u2019 ABC' combine (1) (2) and (3) and clean up AB +ABC + AC + AB + BC + A'BC +BC + ABC' AB +ABC + AC + BC + A'BC + ABC' simplefy XY' + XY = X and XY + XY = XY AB +ABC + AC + BC + A'BC + ABC' clean it up AB +AB + AC + BC + A'BC AB + AC + BC + A'BC AB + AC + BC(1 + A') AB + AC + BC ",
+            "date": "Answered March 16, 2018",
+            "views": "218",
+            "upvotes": "0"
+        }
+    ]
+}

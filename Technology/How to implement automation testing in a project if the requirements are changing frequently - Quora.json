@@ -1,0 +1,39 @@
+{
+    "title": "How to implement automation testing in a project if the requirements are changing frequently - Quora",
+    "tags": [
+        "Automated Testing",
+        "Automation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Anand Singh",
+                "href": "/profile/Anand-Singh-692"
+            },
+            "answer_text": "Hi Anisha,  Thank you for A2A. In automation testing company, term \"Requirement changes\" refers to two cases as mentioned below   1. Application module workflow remains same, however look and feel is changing for responsive UI or only few new objects added in the UI 2. Changes in the application workflow and many new mandatory objects added in the UI For both of above scenarios, there are different approaches 1. Application flow or module flow remains same, but look and feel of application changed or only few new objects added in the UI: In this case, you can talk to the Development team to add permanent/unique Ids to the UI objects. Even if the look and feel of the object changes, id should remain same. Use same Ids in your automation framework and your scripts will not fail even if the UI changes. Further, I would prefer you to use Page Object model based framework, so that in-case any new objects added in the UI, then POM based frameworks provides easy maintenance i.e. adding new objects and their actions in the Pages will quickly reflect the changes in test scripts 2. Changes in the application flow and many new mandatory objects added in the UI: This situation is not preferable to start automation, until the application flow is finalized. However, one approach can be possible, if you can setup a call with Dev team and Stakeholders to prioritize the modules to freeze the requirements i.e. Dev team should pick each module based upon defined priority, freeze its requirements after discussion and develop the modules as per requirements. In near future, no/minimum changes should be done in that module after freezing the requirements. So, you can start developing your Framework pages or Test scripts as per the same priority, as there will be no or minimum changes. However, in-case the Dev team is changing the application flow on random basis, then automation is not preferred as the success rate would be very low during execution and you repetitive effort to analyze failure and update scripts.  Regards, Anand ",
+            "date": "Answered May 29, 2018",
+            "views": "204",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sangeeta Bhatia",
+                    "user_href": "/profile/Sangeeta-Bhatia-9"
+                },
+                {
+                    "user_id": "Deepali Patil",
+                    "user_href": "/profile/Deepali-Patil-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aliver Daniel",
+                "href": "/profile/Aliver-Daniel"
+            },
+            "answer_text": "Mostly automation testing will be done for the repeated stuff that we are doing in testing (mostly Regression) For the project where the requirements are changing we can do automation until the changes are small. If your requirements changes drastically from where its started, Then manual testing will be the efficient one. We can handle the changes upto some extent. For example : If a web application is under development and obviously there will be changes in placement of text boxes, naming changes, font size changes.. In that case we can use selenium with page object model(POM) approach with some relevant frameworks. But when the requirement changes telling you to change the whole functionality or to change the application format.. Then automation is very hard to achieve. So, when requirements changes are small and considerable then automation is possible with enhanced or customised frameworks which are specially designed for these types of development.. But when the changes getting out of hand its almost impossible to automate. ",
+            "date": "Answered May 22, 2018",
+            "views": "202",
+            "upvotes": "0"
+        }
+    ]
+}

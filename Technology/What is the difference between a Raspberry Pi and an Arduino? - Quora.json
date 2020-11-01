@@ -1,0 +1,29 @@
+{
+    "title": "What is the difference between a Raspberry Pi and an Arduino? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Arduino (company)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ranjit Bhinge",
+                "href": "/profile/Ranjit-Bhinge"
+            },
+            "answer_text": "I figured this out by building a Home Automation product using both. Arduino and Raspberry Pi are designed for different kinds of use, so there\u2019s no real way to compare them. Having said that, I had similar questions at the beginning of my journey of product development, and I got a lot of answers by developing my Home Automation product using both of them. In essence, it is like comparing a bicycle with a Ferrari. One makes more sense than the other depending on where you are taking it - to the park or on the freeway. Here\u2019s what I learnt from this experience in more detail: Arduino v/s Raspberry Pi \u2014 what\u2019s the difference? I found out by using both. Most IoT systems including Smart Homes are designed to work with a central Server that manages many Nodes. In such an arrangement, the Server needs to be a powerful computer that can process decision-making, user interfacing, database maintenance, and more. On the other hand, the Nodes are specialized in more specific tasks like controlling lights or sensing human presence, so they really don\u2019t need to be very powerful. Using this example to draw differences between Arduino and Raspberry Pis: Raspberry Pis are mini computers, and are ideal for universal tasks, processing, multi-tasking and user interactionPis are great at being the leader (Server) in an IoT systemPis are not that efficient at doing very specific and repetitive tasksArduinos are less powerful but are ideal for repeatedly doing the same simple task reliablyArduinos physically don\u2019t have the capability to even come close to being a powerful leader (Server) in an IoT system like the PiArduinos are very efficient at being foot-soldiers (Clients) in IoT systems, and doing simple tasks when they are told toAgain, you can\u2019t compare apples and oranges. Arduinos are fantastic when used for the applications they are designed for, and Pis are awesome for their intended applications. As a beginner, it might be a good idea to start with Arduino and then work your way up to Raspberry Pi as you learn. Eventually you will realize that these are both great tools in your kit and you can use either of them where they are most applicable, or you can use them both together! ",
+            "date": "Answered September 13, 2019",
+            "views": "83",
+            "upvotes": " Answer requested by Sharnam Bhattacharjee"
+        },
+        {
+            "author_info": {
+                "name": "Vinod Kumar",
+                "href": "/profile/Vinod-Kumar-381"
+            },
+            "answer_text": "Arduino is a minimum 8 bit processor board . It can run one program of embedded system. It has 13 digital io and 6 analogue inputs. It has one serial port and one I2C port to connect to the outside world. It has a memory range from 8kbyts to about 256kbytes depending upon the version. The speed of the processor is 16MHz. Raspberry Pi is a complete small personal computer. It runs a Linux like operating system. It can run multi threaded programs. It has about 10 I/O pins. It has many interfaces to connect to the outside world, HDMI, usb, ethernet, LCD connector, camera, and many more. Ram in raspberry Pi ranges from 256kbytes to 1 MBytes. Program memory depends on the SD card you connect. It runs at about 1GHz of speed. In some cases raspberry Pi can be used as a embedded system, but it is far more powerful compared to Arduino. Arduino has its own place in the embedded world. It can do many small things by itself which raspberry Pi will need some other interfaces for. But raspberry has its own place in the intelligent systems world, where Arduino can not even think of doing anything. Speed, memory, O.S. camera, LCD, USB, ethernet/WiFi, Bluetooth make the raspberry better for advanced level work in the embedded world. Simplicity, low power consumption, availablity of digital I/O, Analogue inputs , I2C interface make the Arduino suitable for lower end of embedded applications. ",
+            "date": "Answered April 2, 2019",
+            "views": "236",
+            "upvotes": "0"
+        }
+    ]
+}

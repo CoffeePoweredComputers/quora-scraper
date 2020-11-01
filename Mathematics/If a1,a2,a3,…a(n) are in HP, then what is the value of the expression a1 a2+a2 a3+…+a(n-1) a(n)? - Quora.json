@@ -1,0 +1,76 @@
+{
+    "title": "If a1,a2,a3,\u2026a(n) are in HP, then what is the value of the expression a1 a2+a2 a3+\u2026+a(n-1) a(n)? - Quora",
+    "tags": [
+        "Grade Point Averages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Giuseppe Re",
+                "href": "/profile/Giuseppe-Re"
+            },
+            "answer_text": "Each answer should depend at least on two terms of the progression, since each HP is uniquely identified by two of its elements. In this caseI think the answer is [math]S_n=(n-1)a_1a_n.[/math] We can show it by induction on [math]n[/math]. Note that: [math]a_1a_2+a_2a_3 = a_1a_2a_3 \\cdot \\left( \\frac{1}{a_1} + \\frac{1}{a_3}\\right)[/math] Now for each HP, for three consecutive items holds by definition: [math]\\frac{1}{a_3}- \\frac{1}{a_2}= \\frac{1}{a_2}- \\frac{1}{a_1}[/math] Which is equivalent to [math]\\frac{1}{a_1}+ \\frac{1}{a_3}=\\frac{2}{a_2}[/math] Therefore [math]a_1a_2+a_2a_3 = 2a_1a_3[/math] This shows the case [math]n=2[/math], (n=1 is trivial) but it holds for each three consecutive elements in a HP. For larger value of [math]n[/math], we can apply induction. Then [math]S_n = S_{n-1}+a_{n-1}a_n=((n-1)-1)a_1a_{n-1}+a_{n-1}a_n = (n-2)a_1a_{n-1}+a_{n-1}a_n[/math] Similarly as before, now [math]S_n = a_1a_{n-1}a_n \\cdot \\left( \\frac{n-2}{a_n} + \\frac{1}{a_1} \\right)[/math] By definition of HP (look at the indices: [math](n-1)-1 = (n-2) \\cdot (n-(n-1))[/math]): [math]\\frac{1}{a_{n-1}}- \\frac{1}{a_1}=(n-2) \\cdot \\left( \\frac{1}{a_n}- \\frac{1}{a_{n-1}} \\right)[/math] Which is equivalent to [math]\\frac{n-2}{a_n}+ \\frac{1}{a_1}=\\frac{n-1}{a_{n-1}}[/math] Therefore [math]S_n = (n-1)a_1a_n[/math] ",
+            "date": "Answered July 26, 2017",
+            "views": "33",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vibhor Mudgal",
+                    "user_href": "/profile/Vibhor-Mudgal-2"
+                },
+                {
+                    "user_id": "Mamata Kusa",
+                    "user_href": "/profile/Mamata-Kusa"
+                },
+                {
+                    "user_id": "Yogesh Ambhore",
+                    "user_href": "/profile/Yogesh-Ambhore-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sachit Shanbhag",
+                "href": "/profile/Sachit-Shanbhag"
+            },
+            "answer_text": " SS ",
+            "date": "Answered June 6, 2017",
+            "views": "19",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rajeev Rangarajan",
+                    "user_href": "/profile/Rajeev-Rangarajan"
+                },
+                {
+                    "user_id": "Diljeet Vadgama",
+                    "user_href": "/profile/Diljeet-Vadgama"
+                },
+                {
+                    "user_id": "Anshul Garg",
+                    "user_href": "/profile/Anshul-Garg-340"
+                },
+                {
+                    "user_id": "Devyani Patharkar",
+                    "user_href": "/profile/Devyani-Patharkar"
+                },
+                {
+                    "user_id": "Russ Frith",
+                    "user_href": "/profile/Russ-Frith-1"
+                },
+                {
+                    "user_id": "Instagram Funny Video",
+                    "user_href": "/profile/Instagram-Funny-Video"
+                },
+                {
+                    "user_id": "Arpit Shukla",
+                    "user_href": "/profile/Arpit-Shukla-149"
+                },
+                {
+                    "user_id": "Rexx Rj",
+                    "user_href": "/profile/Rexx-Rj"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "title": "What are data packets made of? - Quora",
+    "tags": [
+        "TCP/IP"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Phillip Remaker",
+                "href": "/profile/Phillip-Remaker"
+            },
+            "answer_text": "Packets are just electromagnetic or photonic disturbances on some medium (cable, fiber, a vacuum) in order to represent a digital signal (a stream of zeroes and ones).   You experience the same phenomenon with all forms of digital communication, whether Wi-Fi, USB, SATA, IDE, FireWire, Cable TV, or any other.  The modulation (disturbance) schemes vary, but the zeroes and ones are conveyed with a disturb-and-detect system. You can absolutely \"see\" a packet if you interface an appropriate detecting device to the medium.  At the lowest level, an oscilloscope will show the modulation constellation:  This is what we would call \"Layer 1\" in OSI parlance, the lowest level of communication carrying raw ones and zeroes. A packet itself is a separate construct, independent of the transmission medium.  This is why it gets its own \"layer,\" which we call \"Layer 2.\"  While just a stream of zeroes and ones, a packet has structure to help the far end decide what to do. Typically a packet structure has addressing and administrative information, a payload (data) and an integrity check (CRC, Hash, etc) to make sure that the medium transmitted the data faithfully. The layer 1 transmitter will add a preamble to wake up the detector before sending the packet, if the medium requires that. You can look at packets directly with a tool like Wireshark. ",
+            "date": "Answered May 2, 2015",
+            "views": "114",
+            "upvotes": " View 67 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                },
+                {
+                    "user_id": "Mukembi Leviticus",
+                    "user_href": "/profile/Mukembi-Leviticus-2"
+                },
+                {
+                    "user_id": "Prachi Raut",
+                    "user_href": "/profile/Prachi-Raut-22"
+                },
+                {
+                    "user_id": "Nathan Sims",
+                    "user_href": "/profile/Nathan-Sims-43"
+                },
+                {
+                    "user_id": "Depp Deng",
+                    "user_href": "/profile/Depp-Deng"
+                },
+                {
+                    "user_id": "Konroy Boeckel",
+                    "user_href": "/profile/Konroy-Boeckel-1"
+                },
+                {
+                    "user_id": "Ak Tgi",
+                    "user_href": "/profile/Ak-Tgi"
+                },
+                {
+                    "user_id": "KRISHNAKAMAL DAS SMFAL",
+                    "user_href": "/profile/KRISHNAKAMAL-DAS-SMFAL"
+                },
+                {
+                    "user_id": "Ali Tariq",
+                    "user_href": "/profile/Ali-Tariq-20"
+                },
+                {
+                    "user_id": "Pravallika T",
+                    "user_href": "/profile/Pravallika-T"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Diwakar Tundlam",
+                "href": "/profile/Diwakar-Tundlam-1"
+            },
+            "answer_text": "In networking, packets are logical entities. They don't have any physical association. One could say packets are made of bytes, but then bytes are logical entities also. Think of it as a sentence in English. What are the words made of? If you say alphabet, then I'd say alphabets are also logical. In packets, the equivalent is bytes. This is a great question as it is the fundamental difference between software products and other physical products. You can't make a usable copy of a product like Coke, pencil, car, jewels, etc. But it's trivially simple for software. This leads to vastly different marketing, sales and security problems with software. Companies can increase the number of units of their software product cheaply by copying, but have to invest a lot more to prevent others from doing the same, for example. Back to packets, the bits of information in them can be encoded in any physical form or medium and stored or transmitted. When these bits of information travel on a wire as electrical signals carrying the information, that's what we generally refer to as packets. But it's far more intricate than just that.. ",
+            "date": "Updated February 4, 2020",
+            "views": "843",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                },
+                {
+                    "user_id": "Muhammad Ahmed Bilal",
+                    "user_href": "/profile/Muhammad-Ahmed-Bilal-2"
+                },
+                {
+                    "user_id": "Keon Hercules",
+                    "user_href": "/profile/Keon-Hercules"
+                }
+            ]
+        }
+    ]
+}

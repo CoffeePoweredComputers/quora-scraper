@@ -1,0 +1,45 @@
+{
+    "title": "How to display image in Pygame window - Quora",
+    "tags": [
+        "Pygame-python module",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Himanshu Sharma",
+                "href": "/profile/Himanshu-Sharma-703"
+            },
+            "answer_text": "Hey, that is easy. See the code below. import pygame, sys\u00a0from pygame.locals import*\u00a0\u00a0def loadImage(address):\u00a0\timg = pygame.image.load(address) # loads image in the memory\u00a0\u00a0\u00a0\twhite = (255, 255, 255)\u00a0\tSIZE = img.get_rect().size\u00a0\u00a0\tscreen = pygame.display.set_mode(SIZE) # define the screen size exactly as the dimensions of image.\u00a0\u00a0\tscreen.fill((white)) # first fill the screen with white color.\u00a0\trunning = 1\u00a0\u00a0\u00a0\twhile running:\u00a0\t\ttry:\u00a0    \t\tscreen.fill((white))\u00a0    \t\tscreen.blit(img,(0,0))\u00a0    \t\tpygame.display.update()\u00a0\t\texcept KeyboardInterrupt: # if you press CTRL+C, the window is closes.\u00a0\t\t\tsys.exit()\u00a0Hope that helps. If you have further doubt, feel free to ask. ",
+            "date": "Answered July 25, 2017",
+            "views": "521",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kriti Sahu",
+                    "user_href": "/profile/Kriti-Sahu-4"
+                },
+                {
+                    "user_id": "Archita Asthana",
+                    "user_href": "/profile/Archita-Asthana-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Saransh Gupta",
+                "href": "/profile/Saransh-Gupta-41"
+            },
+            "answer_text": "The following piece of code makes a program that allows an image to follow the mouse pointer on screen. The comments should be helpful. Also, refer to documentation for a detailed overview. In particular, you should read the documentation for display.blit and display.update   ",
+            "date": "Answered July 26, 2017",
+            "views": "920",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Jyothish Kumar",
+                    "user_href": "/profile/Jyothish-Kumar-75"
+                }
+            ]
+        }
+    ]
+}

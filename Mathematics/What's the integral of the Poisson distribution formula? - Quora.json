@@ -1,0 +1,60 @@
+{
+    "title": "What's the integral of the Poisson distribution formula? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sumedha Sengupta",
+                "href": "/profile/Sumedha-Sengupta"
+            },
+            "answer_text": "A variable x following a Poisson Distribution with parameter \u03bc, is a discrete variable and assumes integer values on the +ve  axis of X. It represents \" rare\" events or occurrences and the probability p(x<=k ) is given by the summation,Being discrete variable , it is the summation and not an integral. That , probability is given by \u03a3p(x), where you already have probability expression. With a known, \u03bc or the best unbiased estimate of it. Where the limits on the summation is from x=0,1,2,3,4 .....k. For a large n, that is as n tends to infinity, the Poisson distribution tends to a Normal distribution. Which, by the way also involves an exponential function. You can look up the proof in any text book on Mathematical Statistics. In such a case, the probability can be approximated by the Normal, specifically from the probability tables of the Standard Normal Variate. ",
+            "date": "Answered June 24, 2015",
+            "views": "76",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Trevor Yonkman",
+                    "user_href": "/profile/Trevor-Yonkman-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Apratim Dey",
+                "href": "/profile/Apratim-Dey-1"
+            },
+            "answer_text": "Assuming you meant integration w.r.t. [math]\\mu>0[/math] (as otherwise I am misinterpreting the question), [math]x[/math] being a fixed nonnegative integer, [math]\\int_0^\\infty\\dfrac{e^{-\\mu}\\mu^x}{x!}d\\mu=1[/math] since the Poisson p.m.f. is also the Gamma([math]1,x+1[/math]) p.d.f. There is an interesting relationship between a Poisson distribution and a Gamma (not only Exponential) distribution as well. See Gamma distribution.  Can you try to prove it? ",
+            "date": "Answered June 24, 2015",
+            "views": "77",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Pattern Mu",
+                    "user_href": "/profile/Pattern-Mu"
+                },
+                {
+                    "user_id": "Samim Ul Islam",
+                    "user_href": "/profile/Samim-Ul-Islam"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Abhijeet Patil",
+                    "user_href": "/profile/Abhijeet-Patil-5"
+                },
+                {
+                    "user_id": "Khelil Kridi",
+                    "user_href": "/profile/Khelil-Kridi"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,76 @@
+{
+    "title": "Which programming language is mostly used for creating websites? - Quora",
+    "tags": [
+        "HTML5 Mobile",
+        "HTML5",
+        "Web Design",
+        "Programming Languages",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sam Gavis-Hughson",
+                "href": "/profile/Sam-Gavis-Hughson"
+            },
+            "answer_text": "UPDATE: I published a blog post where I go into this in a bit more detail: What is a website? - Byte by Byte Yes. HTML and CSS are the basic building blocks of websites because they actually define what the website looks like, even though they are not technically programming languages. HTML provides the structure of the web page. This essentially translates to \"checkbox here, text box there\" and looks something like <p>Paragraph here</p>. To get into a little more detail, HTML (or HyperText Markup Language) is a language of tags (<p></p>, <div></div>, etc.) that surround blocks of text and tell the browser how to display them. To understand this, say you wanted a sentence to be italicized. HTML has a tag called <em></em>, which stands for emphasis, and is commonly represented in browsers as italics. You then would have to surround your text that you wanted to be italicized within these tags so it would look like <em>italicized text</em>. Hopefully you can sort of see how this could translate into the layout of an entire page. You have other tags that define paragraphs and various page elements like checkboxes and textboxes. Despite all of the things you can do with HTML, it is really really really unbelievably ugly without CSS. To get a sense of this you should check out what Quora or Facebook looks like without the CSS. You can do that in Chrome using Developer Tools (http://superuser.com/a/447272). CSS allows you to style elements on your page in ways other than the default. For example, the website background is white by default in most (all?) web browsers. However maybe you want your site to be purple. Different browsers have different default fonts (Web Browser Font Defaults) but maybe you want your site to always display using Arial (although God knows why). CSS allows you to target specific tags in your HTML and apply additional styles. It might look something like this: em {\u00a0font-family: Arial\u00a0color: red\u00a0}\u00a0This would set the font of our italicized text above to be Arial and the color to be red. CSS also allows you to change the layout of the page to a certain degree. In HTML by default, everything is the full width of the page, one thing after another. CSS allows you to change the width and move elements so they are next to, rather than above and below, one another. You may have noticed when looking at some other sites that the layout seemed sort of weird without the CSS. This just goes to show what kind of difference CSS can make in the layout of a page. Another piece that other people have mentioned is Javascript. I love the expression \"Java is to Javascript as car is to carpet.\" i.e. There's no relationship whatsoever other than in name. Javascript is, however, very valuable for a lot of websites, depending on the desired functionality of the website. Javascript is a programming language that runs in the web browser when a person visits a webpage. Let's say you wanted to have a form appear to collect email addresses when someone clicks on a button on your site. There is no easy way to do that with HTML and CSS alone, but Javascript is designed to allow you to actually modify the HTML/CSS of the site in real time. Therefore you could simply have the Javascript insert an extra element into your website when the user clicked on the button. You have probably also seen on sites like Facebook how the site can refresh its content without reloading the page. This is another cool feature of Javascript called AJAX (Asynchronous Javascript And Xml) that means you can do pretty much anything without having to reload the entire webpage. OKAY so. Deep breaths, we're halfway there. I know this sounds like a lot so far, but it all works together quite seamlessly so its not as bad as it looks. Thus far everything we've talked about happened on the user's computer. But how do you know what information to display to the user? Sure you could just show the same webpage to everyone, but most of the time we want to display different things depending on who is visiting, whether they're logged in, etc. For this we have server-side programming. On the server side, there are a lot of different languages to choose from. PHP used to be popular but people tend to dislike it. Perl also used to be a thing, and Java is being used more and more, but at this point I would say you should definitely be choosing between Python and Ruby, particularly as a beginner. These are both relatively easy to learn and have huge communities. I personally have experience with Python so I'll talk a little about that specifically, but Ruby would be an equally valid option. Python is primarily used with a web framework, either Django or Flask. What these frameworks do is to provide you with a way to easily interact with a database and control the different pages of your site. A potential way that you might use it would be as follows: Receive a request for a webpage about a certain userUse a Django function to look up the user in the databaseFill that information into a premade HTML templateSend that template back to the requester's computerThis may sound like a lot, and it sort of is. Python and Django are both quite elaborate systems so you'll need to spend a good amount of time learning your way around, but with a little practice, it all makes a lot of sense. Assuming you take the time to learn this whole process, you can totally create a website for free. However be warned that particularly if you don't have prior experience, this may take a lot of effort. You may realize along the way that you can cut out some of the things that I described. For example, Javascript is not strictly necessary, more of a 'nice to have'. Either way, I would recommend starting with HTML/CSS and then moving on to other things as you find them necessary. Best of luck to you! Resources:W3Schools Online Web TutorialsOnline video tutorials & trainingLearn to codeHead First HTML and CSS: Elisabeth Robson, Eric Freeman: 9780596159900: Amazon.com: Books ",
+            "date": "Updated July 17, 2015",
+            "views": "17",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jean \u0160adl-Fer\u0161",
+                    "user_href": "/profile/Jean-\u0160adl-Fer\u0161"
+                },
+                {
+                    "user_id": "Max Muc",
+                    "user_href": "/profile/Max-Muc-1"
+                },
+                {
+                    "user_id": "Katya Beloguzova",
+                    "user_href": "/profile/Katya-Beloguzova"
+                },
+                {
+                    "user_id": "Brijit Auxsheelia",
+                    "user_href": "/profile/Brijit-Auxsheelia"
+                },
+                {
+                    "user_id": "Evans",
+                    "user_href": "/profile/Evans-37"
+                },
+                {
+                    "user_id": "Umang Parekh",
+                    "user_href": "/profile/Umang-Parekh"
+                },
+                {
+                    "user_id": "Joachim Pense",
+                    "user_href": "/profile/Joachim-Pense"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joachim Pense",
+                "href": "/profile/Joachim-Pense"
+            },
+            "answer_text": "HTML is a page description language. It is used to define the content of your web pages. CSS is used to define the layout of these web pages. Both are not considered programming languages. Javascript is used to have some dynamic content in your web site; it is run by the browser. Java also puts dynamic and logic into your web site, but on a much bigger scale. Java can be used to build a complete web site with components running on the server and on the client. Perl (which is better than its reputation, but not so much in use anymore today) and PHP (which is worse than its reputation) are in use for building web sites, as is Ruby with its Web framework builder \"Ruby on Rails\". ",
+            "date": "Answered July 14, 2015",
+            "views": "984",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Amina O",
+                    "user_href": "/profile/Amina-O"
+                },
+                {
+                    "user_id": "Eldar Kersebaum",
+                    "user_href": "/profile/Eldar-Kersebaum"
+                },
+                {
+                    "user_id": "Tilman Ahr",
+                    "user_href": "/profile/Tilman-Ahr"
+                }
+            ]
+        }
+    ]
+}

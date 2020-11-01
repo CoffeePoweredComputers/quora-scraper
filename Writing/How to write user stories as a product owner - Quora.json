@@ -1,0 +1,214 @@
+{
+    "title": "How to write user stories as a product owner - Quora",
+    "tags": [
+        "User Stories",
+        "Product Owners",
+        "Product Management"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shaheen Khatieb",
+                "href": "/profile/Shaheen-Khatieb"
+            },
+            "answer_text": "I actually wrote a short how-to guide for my colleagues who were knee to agile. It wasn't immediately taken up, but after about 9 months all of the other BA's are adopting it. I generally like to write my User Stories in a way that gives the Devs just enough info to code what they need (and not too much info, that they may end up ignoring). I also like to make sure that my stories guide the testers in how they should be setting up their test cases. I use the basis of As a System User, I want to be able to xxxxxx so that xxxxxx.Then I break it down into its component parts. GIVEN THAT (This can be written in the last tense and this sets up the pre-conditions)WHEN (This is the trigger and also mentions any requirements that must be coded)THEN (this is the system action)Acceptance CriteriaI also created one positive scenario, one negative and one alternative scenario for each User Story. That way the tester also has enough information to write their own test cases without being dictated to by the BA. Here's an example: As the System Integrator, I want persist a message I receive from MiddelwareGIVEN THAT Middelware config is setup to send messages over a topic via MQWHEN I receive that messageTHEN I unmarshall it, read it and persist itAcceptance Criteria (Positive Scenario):The message is a valid messageIt is sent from MiddelwareIt is persistedAcceptance Criteria (Negative Scenario):The message is a valid messageIt is sent from MiddelwareIt is not persistedAcceptance Criteria (Alternative Scenario):The message is a valid messageIt is sent from MiddelwareIt is persisted to the wrong databaseThat's how I do it. I'm also following the question for any other updates. If you have comments or suggestions for improvements, please feel free to make them, I will read and respond. I'll also try and add the original sources that led me to creating this. ",
+            "date": "Answered August 19, 2017",
+            "views": "414",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fredrik Holmberg",
+                    "user_href": "/profile/Fredrik-Holmberg-5"
+                },
+                {
+                    "user_id": "Muhammad Naseer Ahmad",
+                    "user_href": "/profile/Muhammad-Naseer-Ahmad-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tushar Jain",
+                "href": "/profile/Tushar-Jain-29"
+            },
+            "answer_text": "As a PO, I am assuming you have knowledge about the product at present and what it will be in future. PO also need to interact with current & potential customers & users, and stakeholders. This ensures that PO head is bubbling up with new ideas which he needs to jot down in user stories. There are several formats to write down user stories: One of the most popularAs a <role>, I want <goal/desire> so that <benefit> 2. One which eliminates the cause As a <role>, I want <goal/desire> 3. One which emphasize the benefit In order to <receive benefit> as a <role>, I want <goal/desire> 4. Based on the Five Ws As <who> <when> <where>, I <what> because <why> 5. Now emphasis is on capability As a <role>, I can <action with system> so that <external benefit> 6. Focus is on persona and \u201cWHY\u201d As <persona>, I want <what?> so that <why?> 7. Focus is on \u201cWHY\u201d and \u201cconditions\u201d When <situation>, I want to <motivations & forces>, so I can <expected output> Consult with the team and zero on one format. Last one but not the least refine the stories regularly and believe your team for any technical story. Author: The Agile Manifesto in English Blog: Agile, Scrum, Kanban, Solution Architecture Twitter: @tjain ",
+            "date": "Answered August 22, 2017",
+            "views": "364",
+            "upvotes": " Answer requested by Muhammad Naseer Ahmad",
+            "upvoters": [
+                {
+                    "user_id": "Colm Toomey",
+                    "user_href": "/profile/Colm-Toomey"
+                },
+                {
+                    "user_id": "Abram Bachtiar",
+                    "user_href": "/profile/Abram-Bachtiar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elad Simon",
+                "href": "/profile/Elad-Simon-1"
+            },
+            "answer_text": "We actually published a short guide on the Craft blog a while back, on how to create user stories, here\u2019s the gist of it: How to Write Epic User Stories User stories are those tiny bits of functionalities written from the user perspective. Here are few examples: \u201cAs a college student, I would like to see the total price of my cart as I add items, so I can fit my budget\u201d \u2013 This will probably result in a cart summary near the shopping cart icon \u201cAs a busy manager, I would like to see the social updates from my family and close friends first, so I can spend my time efficiently\u201d \u2013 This story will prioritize the news feed into relevant segments \u201cAs a frequent traveler, I would like to get my flight details added to my calendar, so I could easily plan ahead\u201d \u2013 This one will add a feature of automatically syncing booking info with the calendar This is one of the common practices of structuring the user story. As you can see, they all have a similar structure:  How is it different from writing specs and requirements? The fact that the user story is written from the user perspective allows designers and developers to relate to the task and understand the reasoning behind it. The format of the user stories enables teams to better understand the task and how is it relates to the other parts of the product. For collaborative teams, many times this will spark new ideas and discussions relating to the user stories, ultimately contributing to improvement of solutions. As opposed to one-way definition of specs and requirements, user stories leave room for discussion and improvements. The rest of the post details the relationship between Themes, Epics and User Stories, and provides some use cases. You can read it here: How to Write Epic User Stories in Agile Product Development ",
+            "date": "Answered August 20, 2017",
+            "views": "993",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shashank Srinivasan",
+                    "user_href": "/profile/Shashank-Srinivasan-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Raphael Alexis",
+                "href": "/profile/Raphael-Alexis"
+            },
+            "answer_text": "[This long post includes a guide on how to write and use meaningful user stories]  In order to write meaningful user stories, one must first explore what they are for. Explain the desired high level mechanicsExpress the introduced added product valueProvide testable approval criteriaThen one must consider what they are NOT for. Implementation detail documentationInterface specificationsEnumeration of tasksSpeaking of tasks, there is a difference between user stories and tasks: Tasks are about expected actionsUser Stories are about expected outcomes Let\u2019s walk you through how this can look. I\u2019ll hand you a format here which has worked well for me in the past and present - you\u2019re free to adopt and change it to your heart\u2019s content. It\u2019s the concepts behind it that matter, not how it looks. (1) - \u201cThe Headline\u201d Every user story has a headline which should allow anyone looking at the backlog to immediately grasp what it is about. It should be: clearly communicating the outcome of its implementationas brief as possible, as verbose as necessarycommunicating where the outcome would be seen in the productMy usual scheme is such: [location in the product][iteration number][outcome summary][revision number] i.e. Home Screen [ IIX ] (\u201cUser Can See Delivery Status\u201d) #3This translates to \u201cthe user can see the status of their deliveries on the home screen of the application and this is the 8th planned iteration of the home screen and this is the third revision for this outcome\u201d Your shorthand notation may vary. Notice the additional iteration numbers in the headline, they allow the team to better communicate on the story ans refer to it as \u201cHome Screen 8 #3\u201d instead of \u201cAP-2183\u201d, which is less cryptic. You may use special fields in your chosen backlog management software to hold the different morsels of information, concatenating them into a single string in the headline is not necessary but for this guide, we\u2019ll assume you do not have special fields and you\u2019re essentially using a spreadsheet for your backlog management.  (2) - \u201cThe Story\u201d Your user story has different levels of granularity. The headline is the lowest level, the story is the next level up. It should answer the following questions: who wants something? (the agent)what is it that they want? (the feature)why would they want this? (the value)These are tools that later allow you to quickly find all user stories that cater to a particular persona or create a given kind of value or introduce a kind of feature. Many people will simply use \u201cuser\u201d or \u201cend user\u201d for all their stories as their agent, but in projects where some research has been done beforehand, you may have various personas with different interests that warrant invoking them in your stories. Decide for yourself whether this is useful for your product backlog. My usual scheme is such: AS A [agent name] I WANT [feature summary] SO I CAN [received value] There are many ways these three questions can be answered, this approach compels the writer to frame them in a particularly useful way. You have to first think about which kind of user will actually interact with this feature you intend to introduce. All users? Only registered users? Only users over the age of 18? You have to think about what it would be that such user would really want. Don\u2019t describe here what YOU want, instead find a way to express what you think such a USER would want. You have to contemplate what the principal value of the feature should be. No feature serves itself, they should enable a certain value to emerge from them. The feature is the means to an end, and you need to spell out what that end should be. In many cases you\u2019ll find yourself thinking \u201cAs a user, I want this thing, so it won\u2019t be so horrible to use the product\u201d. Don\u2019t fall for that, it\u2019s a trap. Always find a positive frame to express the added value - \u201cAs a user, I want this thing, so I can do this action quickly\u201d is much more representative of why you want to introduce this feature than \u201cotherwise the product sucks\u201d. Your feature summary should be very to the point. What is the gist of what you want to see in the product? Again, as brief as possible, as verbose as necessary. When you find yourself writing any of these points over more than one line, needing enumerations, several sentences or references to previous stories - you\u2019ll know your story is too large already.  (3) - \u201cThe Expectations\u201d Expectations are a kind of approval criteria. There are a couple of best practice formats to express them and you should talk with your team about which works best for them. I\u2019ll be showing you two ways of doing this one which has worked well for the majority of teams I\u2019ve worked with, and one alternative which works well on less refined stories. You may find your own format as you and your team become more experienced, that\u2019s expected. Option A) - the \u201cPositive Flow\u201d model. In this model, you describe a linear experience flow with a limited set of possible cases. You write this flow in reference to the intended agent\u2019s identity and direct observations. Each statement will be interpreted in sequence and each statement must be testable on its own in that context. There are keywords starting a new statement as follows: WHEN Denotes a condition i.e. that the user is looking at this and that location in the product, or the user executes this and that interaction with the productTHEN Denotes a result observable by the user following from the previous statementAND Denotes further results observable by the user simultaneous with the last THEN type statementSubsequent WHEN type statements in the same linear flow may be THEN WHEN to make the flow more readable by more clearly indicating the sequential nature of the flow. They are no different from simple WHEN statements. This positive flow should not contain any branching behavior, no conditional logic, no IF type statements. For different cases, start a new flow instead. Each flow should be testable in one go from start to finish. Additional flows that would require repetition may be abbreviated by changing the entry point to a further point within the primary flow. Secondary flows handling edge cases may be skipped, depending on the structural clarity of the UX design and the team\u2019s understanding of the design.  (4) - \u201cThe Limitations\u201d When you frame your user story somewhat brief and high level, you might want to give some facts setting clear limits to the scope of such story. A good way to do this is to include a series of individual statements that complement the positive flow by e.g. excluding certain functionality also present in the design of the screens used for this story, by giving context information such as where the data should be stored, what kind of security measures are expected or specifically not expected. While this is generally free-form, try to keep things as brief and uniform as possible so as not to let your story become long and difficult to read.  (5) - \u201cThe Documentation\u201d Your team may want you to include documentation in your stories, but you must resist this. Stories are not the right place for detailed documentation to happen. They are hard to maintain, risk becoming inconsistent and spread the decisions out so far that conflicts may arise. You\u2019ll want to have a single source of truth, a place where your documentation lives. Or several places for different kinds of documentation. Sure enough, the backlog documents the business-level requirements and a list of features expected in the product, but it makes no mention of how they are to be implemented on a technical, visual or auditory level. Your stories should, where available, link to the relevant documents so people working on implementation and design can quickly access such documentation. Documentation often includes: links to screen designs (Zeplin, InVision etc. )links to systems design documents (readthedocs, confluence etc. )links to special assets ( input data files, sound files etc. ) (6) - \u201cThe Deviations\u201d Your team may not always be able to stick 100% with the requirements they made a commitment to during your planning, which may cause QA to block the story\u2019s progress. When this happens, they may want to document these necessary deviations so QA would be aware of them and allow for them to move on with the story. Note that this is not a necessary part of a story, it\u2019s merely pragmatic to include where necessary. Many teams use comments for this, it\u2019s however simpler to maintain when documented within the body of the story instead, without disturbing the original story details. You may want to establish with your team just how much they may deviate from their commitments without escalating this to you first to avoid wasting time and money on things you cannot accept.  Here\u2019s an example story for you to use as a reference. HEADLINE:\u00a0Home Screen [ IIX ] (\u201cUser Can See Delivery Status\u201d) #3\u00a0\u00a0STORY:\u00a0AS A registered user\u00a0I WANT to see the delivery-status of my last order\u00a0SO I CAN understand when I will get my delivery\u00a0\u00a0EXPECTATIONS:\u00a0WHEN registered user opens the app\u00a0THEN registered user sees the home screen\u00a0THEN WHEN registered user scrolls to the bottom of the page\u00a0THEN registered user sees a delivery status indicator\u00a0THEN WHEN user taps on the delivery status indicator\u00a0THEN registered user sees the delivery details screen\u00a0AND registered user sees the same progress indicator as on the home screen\u00a0AND registered user sees a back button on the page\u00a0\u00a0LIMITATIONS:\u00a0- the back button on the delivery details screen leads back to the home \u00a0  screen.\u00a0- when there is no pending delivery, do not show the element at all.\u00a0- the sorting priority of the delivery status indicator element in the home \u00a0  screen element list is 700.\u00a0\u00a0DOCUMENTATION:\u00a0The Home Screen (Design): [link]\u00a0The Delivery Status Indicator (Design): [link]\u00a0The Delivery Status Indicator (Mechanics): [link]\u00a0The Delivery Details Screen (Design): [Link]\u00a0",
+            "date": "Answered June 12, 2018",
+            "views": "546",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shashank Srinivasan",
+                    "user_href": "/profile/Shashank-Srinivasan-1"
+                },
+                {
+                    "user_id": "Colm Toomey",
+                    "user_href": "/profile/Colm-Toomey"
+                },
+                {
+                    "user_id": "Bartek Nowak",
+                    "user_href": "/profile/Bartek-Nowak-9"
+                },
+                {
+                    "user_id": "Muhammad Naseer Ahmad",
+                    "user_href": "/profile/Muhammad-Naseer-Ahmad-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roman Bord",
+                "href": "/profile/Roman-Bord-1"
+            },
+            "answer_text": "Hi there :) A User Story represents the smallest piece of work that delivers some value to end users and can be implemented within 1 iteration (usually, a two-week long Sprint). As a rule of thumb, all User Story templates are very similar: As a [type of user], I want [an action] so that [a benefit/a value] For example, if you\u2019re working on some taxi mobile application, possible User Stories are: As a driver, I want to add photos of my car in my profile so that I can attract more users.As a passenger, I want several available drivers to be displayed so that I can choose the most suitable option for me. Image by Joshua Krohn So here are some tips and hints on writing good User Stories: The key idea here is that your User Stories should represent some value to end users. Not to your development team. Not to your Product Owner or Product Manager. But to your end users.Add an acceptance criteria in which you\u2019ll provide more specific details on how the User Story should work to be confirmed as done.Split complex and big Stories into smaller once until there\u2019s nothing to split. Remember the rule 1 action per 1 Story.Make sure your User Story matches INVEST criteria - it\u2019s independent, negotiable, valuable, estimable, small, testable.Always discuss Stories with your team. So, this is a brief answer to your question. Also, I recommend you read the article \u201cHow to Write a Good User Story: with Examples & Templates\u201d by my team and me. There we discuss: What the User Story is.Why it is important to write them.INVEST criteria.How to write good [user], [action] and [benefit] parts.Our team\u2019s workflow on writing User Stories.Enjoy! :) ",
+            "date": "Answered August 1, 2018",
+            "views": "181",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Cherry Winters",
+                "href": "/profile/Cherry-Winters"
+            },
+            "answer_text": "Writing user stories requires a mindset shift from writing requirements. With requirements you are focussed on writing the best possible narration of the functionality to ensure you communicate the right thing to teams who will use the requirements to build the software. With user stories you focus on writing enough to have a conversation about what to build. With user stories you identify who is the user, what the user is doing and the benefit of that functionality to the user. It follows a standard template that the other answers already have and very importantly includes an acceptance criteria. The acceptance criteria tells the developers what all the conditions are for the user story to be considered completed. Here is a video with more info:  ",
+            "date": "Answered June 13, 2018",
+            "views": "187",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rafa\u0142 Konieczny",
+                "href": "/profile/Rafa\u0142-Konieczny-1"
+            },
+            "answer_text": "I would like to recommend two excellent books on this topic. First User Stories Applied: For Agile Software Development by Mike Cohn. It may feel a bit too detailed, but I am sure you want miss any detail. Second book is focused more on getting full story understanding with the team and getting right stories prioritized. This is User Story Mapping: Discover the Whole Story, Build the Right Product by Jeff Patton. If you are serious about Product Owner role those two books are really helpful. ",
+            "date": "Answered August 19, 2017",
+            "views": "335",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tom Winter",
+                    "user_href": "/profile/Tom-Winter-13"
+                },
+                {
+                    "user_id": "Daniel Zielinski",
+                    "user_href": "/profile/Daniel-Zielinski-5"
+                },
+                {
+                    "user_id": "Aaron Rothschild",
+                    "user_href": "/profile/Aaron-Rothschild"
+                },
+                {
+                    "user_id": "Gloria Ziencina-Kawula",
+                    "user_href": "/profile/Gloria-Ziencina-Kawula"
+                },
+                {
+                    "user_id": "Claudia Slowik",
+                    "user_href": "/profile/Claudia-Slowik"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kasia Kowalska",
+                "href": "/profile/Kasia-Kowalska-7"
+            },
+            "answer_text": "Hi, at Droids On Roids we wrote a great blogpost about How to Write User Stories and Why They are Crucial for Successful App Development. We came up with this User Story template:  where it\u2019s clearly visible who is an actor, how does he interact with the system\u2019s component(s) and why or where does the interaction take place. Using this pattern and remembering these three elements allows us to write simple and understandable stories every time and usually for each case. If you want to test yourself, check out our blogpost! I guess the best way is just to practice and talk with your development team a lot! Good luck! ",
+            "date": "Answered May 15, 2018",
+            "views": "415",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sergii Khlivnenko",
+                    "user_href": "/profile/Sergii-Khlivnenko-1"
+                },
+                {
+                    "user_id": "Joey Seymour",
+                    "user_href": "/profile/Joey-Seymour-4"
+                },
+                {
+                    "user_id": "Joseph Rowena",
+                    "user_href": "/profile/Joseph-Rowena"
+                },
+                {
+                    "user_id": "Alex Alyk",
+                    "user_href": "/profile/Alex-Alyk"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ed Finna",
+                "href": "/profile/Ed-Finna"
+            },
+            "answer_text": "My bullet points for User Story: DoD requirementavailability of keywords \"I as\" \"want to\"...description of real motiveavailability of call to action and motivationrealistic of user storyChecking my userstory with Writing Assistant UserStoryTop",
+            "date": "Answered June 12, 2020",
+            "views": "29",
+            "upvotes": " View 4 Upvoters"
+        },
+        {
+            "author_info": {
+                "name": "Stefan Wolpers",
+                "href": "/profile/Stefan-Wolpers"
+            },
+            "answer_text": "\u201cYou\u201d should not write user stories. That\u2019s a team exercise. The user story is merely a token for discussion to make sure everyone on the team is on the page as far as the why, how & what is concerned. For regular insights consider subscribing to my newsletter. ",
+            "date": "Answered August 20, 2017",
+            "views": "202",
+            "upvotes": " Answer requested by Muhammad Naseer Ahmad"
+        },
+        {
+            "author_info": {
+                "name": "Naveen Kumar Singh",
+                "href": "/profile/Naveen-Kumar-Singh-3"
+            },
+            "answer_text": "Better to start with reading Mike Cohn book - User Story Applied. Then try your hand. If you still struggle then reach out to me. My contact details available on agilemania website. ",
+            "date": "Answered August 26, 2017",
+            "views": "167",
+            "upvotes": " Answer requested by Muhammad Naseer Ahmad"
+        },
+        {
+            "author_info": {
+                "name": "Richard Cook",
+                "href": "/profile/Richard-Cook-62"
+            },
+            "answer_text": "Research INVEST User Stories Wikipedia, short and sweet;) ",
+            "date": "Answered August 25, 2017",
+            "views": "65",
+            "upvotes": "0"
+        }
+    ]
+}

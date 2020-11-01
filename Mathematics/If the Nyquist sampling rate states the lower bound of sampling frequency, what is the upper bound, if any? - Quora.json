@@ -1,0 +1,26 @@
+{
+    "title": "If the Nyquist sampling rate states the lower bound of sampling frequency, what is the upper bound, if any? - Quora",
+    "tags": [
+        "Sampling (signal processing)",
+        "Sampling (statistics)",
+        "Signal Processing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sreejeet Maity",
+                "href": "/profile/Sreejeet-Maity"
+            },
+            "answer_text": "Interesting! Let me try to answer this question step by step. First of all, according to the sampling theorem, a band-limited signal of finite energy can be completely reconstructed from the samples taken uniformly at a rate greater than twice the signal bandwidth. So, we have a lower limit. Now, let us take an arbitrary signal of our choice and sample it with frequency more than twice the signal bandwidth. Let us take the signal bandwidth \u03c9(b) and the sampling frequency \u03c9(s) ( Here, \u03c9(s)>2\u03c9(b)) and let us draw the spectrum of the sampled signal.  We see that there is no overlap between the shifted spectrum of F(\u03c9 ). Thus as long as the sampling frequency greater than twice the signal bandwidth of f(t) (that arbitrary signal) can be recovered by passing the sampled signal through a low pass filter having a bandwidth between [\u03c9(b)] and [\u03c9(s)-\u03c9(b)] rad/sec. Now, comes the question of upper limit we see that if we increase the sample rate seamlessly the availability of bandwidth of a low pass filter meant to retrieve the signal also increases and we can roughly estimate the corner frequency of an R-C Low pass filter as 1/RC but the smallest capacitor value lies in the range of picofarads so by increasing frequency the circuit will become practically non-realizable due to lack of smaller capacitance values(smaller than picofarad). In a nutshell, theoretically, we may not have any distinguishing upper limit for sampling theorem but practically, the low pass filter circuit meant for retrieving the sampled signal may not be physically realizable if we use \u03c9(s)>>\u03c9(b) as the components we use to design the filter has its own feasible range and limitations. Thanks\u201d. ",
+            "date": "Updated July 9, 2019",
+            "views": "341",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aritri Chakraborty",
+                    "user_href": "/profile/Aritri-Chakraborty"
+                }
+            ]
+        }
+    ]
+}

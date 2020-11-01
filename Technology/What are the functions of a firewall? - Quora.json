@@ -1,0 +1,56 @@
+{
+    "title": "What are the functions of a firewall? - Quora",
+    "tags": [
+        "Firewalls"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alina Sapkota",
+                "href": "/profile/Alina-Sapkota-2"
+            },
+            "answer_text": "The main function of a firewall is network security. The firewall does this by filtering network traffic and blocking suspicious traffic. Suspicious traffic is determined by using various rules and conditions. Below are some of the basic methods of filtering used by a firewall to secure the network-: Packet level filtering (Network layer filtering) The network layer uses the source IP address and destination IP address to route and deliver the data packet across the network. These addresses are present in every data packet. So, these addresses can be used to configure a firewall to filter the traffic. For example, the IP addresses of the two computers are 10.10.10.10 and 20.20.20.20. On a path that connects both the computer a firewall is placed. When the first computer sends a data packet to the second computer, the way the firewall is configured determines whether the packet will reach the second computer or not. The firewall may be configured to disallow the computer of IP address 20.20.20.20 to host the data packets of the computer having the IP address 10.10.10.10. Circuit level filtering (Transport layer filtering) This is more complex than packet-level filtering. This type of firewall filters the traffic based on port numbers that identify the destination application. A feature known as the three-way handshake process is used to guarantee data delivery. Sender computer sets up a temporary connection with the computer receiving the data in this process. Firewalls can be configured in such a way that-: A firewall can allow or deny a packet based on its destination port number.A firewall can approve outgoing and return traffic.Application-level filtering (Application layer filtering) This is the advanced level of filtering. Application layer protocols such as HTTP and FTP are used to filter data through this process. It can also stop the traffic temporarily for more advanced investigation or actions. Both packet and service level filtering is used in application-level filtering for network security. Configuring a software firewall for application-level filtering can slow down your computer. So, use this configuration only for a hardware firewall. ",
+            "date": "Answered July 5, 2020",
+            "views": "2",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ravin CJS",
+                    "user_href": "/profile/Ravin-CJS"
+                },
+                {
+                    "user_id": "Regunathan Umapathy",
+                    "user_href": "/profile/Regunathan-Umapathy"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marc L. Mintz",
+                "href": "/profile/Marc-L-Mintz"
+            },
+            "answer_text": "Every process on a computer that communicates with another computer (file sharing, printing, web server, etc.) communicates through a logical port. These ports are numbered 1\u201365,535. For example, when you open a browser page to Quora, your browser goes to the server named www within the Quora domain, and knocks on port 80 (websites typically communicate through port 80), when answered by the quora server software, it will send what will become the webpage within your browser. To communicate, the receiving computer (in this case, www at quora) must meet the following requirements: The designated port must be \u201copen\u201d (available to accept incoming packets)There must be an application that is listening on that port (in the case of websites, this is often Apache)The communication coming into the port must be in a language that is understood by the application.A firewall can have several functions: Close down a port completelyOpen a port to only specific IP addressesBlock (blacklist) specific IP addressesKeep ports closed, except when \u201cinvited\u201d in by the user. This is called Stateful Packet Inspection. If the user \u201cinvites\u201d another computer, that computer can come in through a port specified by the user. More specifically, the user launches an application, the application reaches out to a server, the server responds and is allowed past the firewall.Open ports only during specific time framesMany firewalls include VPN services as well, allowing encrypted communication with designated users from outside of the local area network",
+            "date": "Answered July 2, 2017",
+            "views": "93",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Maher Arslan",
+                    "user_href": "/profile/Maher-Arslan-6"
+                },
+                {
+                    "user_id": "Dennis Chong",
+                    "user_href": "/profile/Dennis-Chong-14"
+                },
+                {
+                    "user_id": "Yathukulan Mahendran",
+                    "user_href": "/profile/Yathukulan-Mahendran"
+                },
+                {
+                    "user_id": "Allada Sai Nitin",
+                    "user_href": "/profile/Allada-Sai-Nitin"
+                }
+            ]
+        }
+    ]
+}

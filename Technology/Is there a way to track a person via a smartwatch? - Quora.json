@@ -1,0 +1,42 @@
+{
+    "title": "Is there a way to track a person via a smartwatch? - Quora",
+    "tags": [
+        "Tracking",
+        "Tracking (physical)",
+        "GPS Devices",
+        "Smart Watches",
+        "Global Positioning System",
+        "Wearable Technology",
+        "Watches",
+        "Software and Applications",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ashlyn Ember",
+                "href": "/profile/Ashlyn-Ember-1"
+            },
+            "answer_text": "First of all, I do not recommend doing this without consent OR this person has stolen your watch. If you have an Android (Wear OS) watch: First, make sure you are signed into your Google account on your watch, the GPS in your watch is on (also, this won't work if your watch lacks GPS), and Wear OS is updated to the latest version. Now you can either download the \u201cGoogle Find My Device\u201d app on Google Play, or you can visit the website (https://www.google.com/android/find) on an iPhone (the app isn't on the Apple App Store) or desktop. Log into whichever option you chose with the same Google account you used in your watch (if you used multiple Google accounts on the watch, any of them will work), and then you should see a map with all of your devices linked to Find My Device marked on this map. This should include your watch. If it doesn't, visit Be ready to find a lost Android device to troubleshoot. If you have an Apple device, you must enable the find my device settings in your Apple smartwatch. After that, you can locate it either by using the find my device app on your iPhone (which should have been pre-installed) or by using the iCloud website (https://www.icloud.com/#find), and again, with either option, you must be signed in on the same Apple iCloud account on both your smartwatch and your iPhone or the iCloud website. As with Android's Find My Device app, you should see a GPS map with the locations of all of your connected devices marked. Assuming that the reason you're doing this is because you believe someone has stolen your smartwatch, it is vital you attempt to acquire its location as soon as possible after you notice that it's missing, because if the thief shuts down the watch, the watch runs out of battery, or the thief factory resets the watch, you will lose the location. ",
+            "date": "Answered October 27, 2020",
+            "views": "99",
+            "upvotes": " Answer requested by Derek Harris",
+            "upvoters": [
+                {
+                    "user_id": "Ram Ventures",
+                    "user_href": "/profile/Ram-Ventures"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joseph Newcomer",
+                "href": "/profile/Joseph-Newcomer-2"
+            },
+            "answer_text": "Several. It depends on what resources are available, what privacy settings are set, and what apps can run. For example, if the watch has a GPS unit, you can put an app in that will try to send the current GPS position to a known IP/socket pair. If the GPS requires permission, disguise the app as an app which does something useful and requires permission. If it is a child you are tracking there are apps that can do this already. If the smartwatch has a SIM card, it can report periodically by sending a message (the usual standard-messaging-rates-apply disclaimer goes here) any time it can establish contact. If it does not, it has to depend on finding an unsecured WiFi hotspot. If all it has is Bluetooth, it is much more complicated, but it might exploit a connection to a smartphone. If you are concerned that you are being tracked by malware on your watch (malware only has to do something bad), you will need to monitor the transmissions from your watch. It is a requirement that the IP and Socket be sent in plaintext in the header, so if you see a message go out, track who it is going to. Note that if it is going to a VPN, it is already suspect, unless you are the subscriber to that VPN. In which case, it is still probably a bit suspect unless you know what program is sending it. You can also get a \u201cWiFi sniffer\u201d (free downloads from lots of places) and see if there is any unexpected WiFi transmissions going out, especially if you are near an unsecured public access point. Bluetooth is harder because of the pairing requirements, but if you see traffic from your smartwatch to your smartphone, and then traffic from your smartphone to unknown, be suspicious. ",
+            "date": "Answered September 29, 2020",
+            "views": "1",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

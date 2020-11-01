@@ -1,0 +1,78 @@
+{
+    "title": "How to split an ethernet cable - Quora",
+    "tags": [
+        "Ethernet",
+        "Cables",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ayden Beeson",
+                "href": "/profile/Ayden-Beeson-1"
+            },
+            "answer_text": "Splitting ethernet cables is a an old technique that was used to make a single cable run into two. It was done where you couldn't run new cables, or cost was prohibitive to do so, but as it relied on older standards that only used 4 of the 8 pins it is no longer commonly used and will most likely have a serious detriment to the quality of the connection. The trick was that 100base-t (and 10base-t before it) used only the green and orange pairs (pins 1, 2, 3 and 6), leaving the other 4 unused. With a special adaptor you could split those pins out onto a second port, wired up to appear as the original 4 pins, and by adding another adaptor at the other end do the same at the switch end, giving you the two outlets on a single cable. With the release of 1000base-t and now more advanced power over Ethernet the cable now uses all four pairs so the trick no longer works and will result in a 10x reduction of bandwidth as the clients negotiate down to 100mbit, if they even work at all and don't rely on the PoE to function. The splitters also made working in the comms cupboard filled with them very difficult if they weren't cabled meticulously neatly, so whilst they were a nice little tool for the occasional use, I don't mourn their loss now! ",
+            "date": "Updated July 22, 2019",
+            "views": "54",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Scott King Walker",
+                    "user_href": "/profile/Scott-King-Walker"
+                },
+                {
+                    "user_id": "Keith Washington",
+                    "user_href": "/profile/Keith-Washington-31"
+                },
+                {
+                    "user_id": "Dennis Eichenlaub",
+                    "user_href": "/profile/Dennis-Eichenlaub"
+                },
+                {
+                    "user_id": "Gareth Jones",
+                    "user_href": "/profile/Gareth-Jones-106"
+                },
+                {
+                    "user_id": "Geoff Fellows",
+                    "user_href": "/profile/Geoff-Fellows"
+                },
+                {
+                    "user_id": "Rick Dunn",
+                    "user_href": "/profile/Rick-Dunn-17"
+                },
+                {
+                    "user_id": "Marion Barbee",
+                    "user_href": "/profile/Marion-Barbee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Allen",
+                "href": "/profile/Mark-Allen-15"
+            },
+            "answer_text": "Realistically, the only reason you\u2019d split an Ethernet cable is to eavesdrop on it (as a PhySec hacker), or to check wiring continuity and tone. If you had something more mundane in mind, read farther down. The splitting-to-eavesdrop procedure involves stripping the outer jacket and each pair\u2019s jacket, then placing alligator clips on the bare wires to connect each corresponding pair to another Ethernet cable that has undergone the same denuding. You\u2019d connect the second cable to your mirroring port. If the impedance doesn\u2019t hit 100 Ohms, you may need to use resistors. This is more easily done with Cat5 than Cat5e or higher-bandwidth cabling, given the lower frequency of 100 MHz.  If you want to passively split an Ethernet port, you\u2019d pair two 8P8C/RJ45 splitters as shown below, with a single cable running between the splitters. Both splitter end require two cables each, and only one cable can be in use at any given time.  If you want to connect a single Ethernet cable to multiple devices in concurrent use, then you need an active switch. This requires its own power supply, and has a processor for managing the broadcast domain, along with medium dependent interface/MDI crossover (MDI/MDIX).  Below is a link to building a Cat5 cable tap, as attempted based on an article in 2600: Passively Cable Tapping Cat5 ",
+            "date": "Answered November 9, 2017",
+            "views": "48",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Keith Washington",
+                    "user_href": "/profile/Keith-Washington-31"
+                },
+                {
+                    "user_id": "Geoff Fellows",
+                    "user_href": "/profile/Geoff-Fellows"
+                },
+                {
+                    "user_id": "Chris Owen",
+                    "user_href": "/profile/Chris-Owen-53"
+                },
+                {
+                    "user_id": "Aly Badawy",
+                    "user_href": "/profile/Aly-Badawy-1"
+                }
+            ]
+        }
+    ]
+}

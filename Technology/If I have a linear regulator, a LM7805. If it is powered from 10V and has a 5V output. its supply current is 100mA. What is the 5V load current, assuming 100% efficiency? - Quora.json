@@ -1,0 +1,51 @@
+{
+    "title": "If I have a linear regulator, a LM7805. If it is powered from 10V and has a 5V output. its supply current is 100mA. What is the 5V load current, assuming 100% efficiency? - Quora",
+    "tags": [
+        "Analog Circuits",
+        "Power Supplies",
+        "Microcontrollers",
+        "Electrical and Electronics Engineering",
+        "Voltage",
+        "Electricity",
+        "Electronics",
+        "Electrical Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Loring Chien",
+                "href": "/profile/Loring-Chien"
+            },
+            "answer_text": "There is no 100% efficient LM7805. It is inherently less than 100%. In your scenario the efficiency could never be better than 50%. The approximate equation for currents is Iin = Iout+Iq Where Iq is the quiescent current of the device at zero load. I haven\u2019t looked it up in years but I think it probably around 5\u201310 mA. There are a number of variants on 78xx series parts so it may different from one to another; I also expect some small differences based on load current. You will find it listed on the spec sheet. Why don\u2019t people ever read them? ",
+            "date": "Updated March 9, 2020",
+            "views": "110",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ira J Perlow",
+                    "user_href": "/profile/Ira-J-Perlow"
+                },
+                {
+                    "user_id": "Mikael Bengtsson",
+                    "user_href": "/profile/Mikael-Bengtsson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mikael Bengtsson",
+                "href": "/profile/Mikael-Bengtsson"
+            },
+            "answer_text": "You have two contradictory statements in the question. If you assume 100% efficiency, the incoming power and outgoing power are equal. If you have a linear regulator, the input current equals the output current (+ a quiescent current that is used to pet the device itself, and is directed to the ground pin). Do you, by \u201c100% efficiency\u201d, mean power efficiency (if so, not a linear regulator), or that the quiescent current is zero? (If the latter, you have the answer in the question) ",
+            "date": "Answered February 23, 2020",
+            "views": "130",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Betsy Megas",
+                    "user_href": "/profile/Betsy-Megas"
+                }
+            ]
+        }
+    ]
+}

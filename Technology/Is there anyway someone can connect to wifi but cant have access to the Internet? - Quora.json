@@ -1,0 +1,114 @@
+{
+    "title": "Is there anyway someone can connect to wifi but cant have access to the Internet? - Quora",
+    "tags": [
+        "Internet Access",
+        "Wi-Fi",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Dickens",
+                "href": "/profile/Michael-Dickens-5"
+            },
+            "answer_text": "Wi-Fi is just a wireless network connection, Internet is not required to set up a Wi-Fi LAN, so yes, you can get Wi-Fi without Internet The only device you need is a Wireless Access Point (WAP) First, you need to set up the WAP with an SSID (network name) and maybe security (Like WPA), WAPs come with a preset SSID, so if you\u2019re fine with the name it comes with, you can probably skip that step From there, you just need to connect to it, go into your network settings and set a static IP So for device one, you would type something like this IP: 192.168.1.1 Netmask: 255.255.255.0 For device 2, you would type something like this IP: 192.168.1.2 Netmask: 255.255.255.0 So on and so forth, for each device you connect, just go one number up on the last group of numbers (called an octet), you can connect up to 254 different devices (any more devices than that, then you have to change the netmask, where you see the 255 in the netmask above, that\u2019s the network side, where you see the 0 that\u2019s the device side, the netmask above is for a class C network) At this point, you should be able to transfer data over the Wi-Fi network from one device to another Okay, so setting static IPs can get a bit confusing, so you can automate the process by using dynamic IP addressing instead, for this, you need a device acting as a DHCP (Dynamic Host Configuration Protocol) Server, this is as simple as a computer running DHCP hosting software, this can be done with a device like a Raspberry Pi connected to the Ethernet port of the WAP, running Linux and the appropriate DHCP software Okay, so maybe that\u2019s getting a little confusing too The easiest way in this case is to replace the WAP with a wireless router (or connect a wired router to the WAP), you don\u2019t really need a router per se (being there is no Internet connection), but a router will have the DHCP server built-in, and is already set up, making the whole process easier With that, it\u2019s just a matter of connecting to the WAP/router and that\u2019s it, you\u2019ll be connected to the LAN and you can share data between devices ",
+            "date": "Answered July 4, 2019",
+            "views": "1026",
+            "upvotes": " View 44 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kenneth Odoh",
+                    "user_href": "/profile/Kenneth-Odoh-2"
+                },
+                {
+                    "user_id": "Sonya O. Robertson",
+                    "user_href": "/profile/Sonya-O-Robertson"
+                },
+                {
+                    "user_id": "Perspects Editor",
+                    "user_href": "/profile/Perspects-Editor"
+                },
+                {
+                    "user_id": "Brad Swinehart",
+                    "user_href": "/profile/Brad-Swinehart"
+                },
+                {
+                    "user_id": "Imran",
+                    "user_href": "/profile/Imran-603"
+                },
+                {
+                    "user_id": "Bradley Lincoln",
+                    "user_href": "/profile/Bradley-Lincoln-3"
+                },
+                {
+                    "user_id": "Natasha Robarge",
+                    "user_href": "/profile/Natasha-Robarge"
+                },
+                {
+                    "user_id": "Shruti Meshram",
+                    "user_href": "/profile/Shruti-Meshram-40"
+                },
+                {
+                    "user_id": "Robin Griffith",
+                    "user_href": "/profile/Robin-Griffith-20"
+                },
+                {
+                    "user_id": "Abul Basar Pias",
+                    "user_href": "/profile/Abul-Basar-Pias"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jon-Paul Ward",
+                "href": "/profile/Jon-Paul-Ward"
+            },
+            "answer_text": "Your basic definitions are skewed. Since the most ubiquitous networking medium is Ethernet, I\u2019ll assume that\u2019s the networking technology you are inferring with your question. The Internet is a collection of interconnected computer systems. A very large global WAN (Wide Area Network). It is a very specific thing like an Interstate highway. The only way to connect to \u201cThe Internet\u201d is through an Internet Service Provider (ISP) on a service plan much like one would sign up for electricity or telephone phone service. Wi-Fi is a type of wireless network medium used at the local level and as such is call a WLAN (Wireless Local Area Network); which is a type of LAN (Local Area Network). The device used to move between discontiguous networks is called a Router & operates on Layer 3 of the OSI model. Most consumers use off the shelf devices call Wi-Fi routers. These are multi-purpose devices made up of a multi-port bridge (Switch), Wi-Fi Access Point, and a Router with a WAN uplink port. The basic visual is: Source(s) <-> Wi-Fi <-> Wi-Fi Access Point on Wifi router + Sources <-> Ethernet Cable <-> RJ45 port on switch portion of Wifi router + ISP <-> Medium <-> RJ45 WAN uplink port on Wifi router As you can see, there are three different networks here. All networks can function without the others. This is a simplistic view, but valid. Say, one month you lapse on your ISP payment and they stop your ISP service, both your Ethernet WiFi and your hardwired Ethernet will continue to function without even knowing access to \u201cthe Internet\u201d stopped. So, yes, \u201cyou can get WiFi without the internet\u201d, and the above answer explains how that is possible. ",
+            "date": "Updated February 11, 2020",
+            "views": "859",
+            "upvotes": " View 52 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Linda Walls",
+                    "user_href": "/profile/Linda-Walls-42"
+                },
+                {
+                    "user_id": "Kenneth Odoh",
+                    "user_href": "/profile/Kenneth-Odoh-2"
+                },
+                {
+                    "user_id": "Kara \u015eensoy",
+                    "user_href": "/profile/Kara-\u015eensoy"
+                },
+                {
+                    "user_id": "NeNe Leakes",
+                    "user_href": "/profile/NeNe-Leakes-3"
+                },
+                {
+                    "user_id": "Stacey Keller",
+                    "user_href": "/profile/Stacey-Keller-16"
+                },
+                {
+                    "user_id": "Fallon Goodman",
+                    "user_href": "/profile/Fallon-Goodman-1"
+                },
+                {
+                    "user_id": "Chris Findley",
+                    "user_href": "/profile/Chris-Findley-2"
+                },
+                {
+                    "user_id": "Amanda Slawikowski",
+                    "user_href": "/profile/Amanda-Slawikowski"
+                },
+                {
+                    "user_id": "Frances Powell",
+                    "user_href": "/profile/Frances-Powell-18"
+                },
+                {
+                    "user_id": "Florence Robertson",
+                    "user_href": "/profile/Florence-Robertson-3"
+                }
+            ]
+        }
+    ]
+}

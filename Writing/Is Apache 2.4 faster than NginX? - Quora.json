@@ -1,0 +1,48 @@
+{
+    "title": "Is Apache 2.4 faster than NginX? - Quora",
+    "tags": [
+        "Nginx (web server)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brendon Rapp",
+                "href": "/profile/Brendon-Rapp"
+            },
+            "answer_text": "It's hard to say for certain. People have run benchmarks and gotten picked on because the setup was claimed to not be \"fair\" or other such complaints. Sure, it is hard to do a perfect apples-to-apples comparison, and one person's web server load will be different from another's. One thing I find interesting, though: of all those unscientific let's-just-try-it benchmarks, none of them ever favor Apache. If they were on such equal ground, you'd think the unscientific fudge-factor would work in Apache's favor sometimes. Maybe that just speaks to Apache needing a lot more config TLC to match Nginx, but that right there is a result in itself. ",
+            "date": "Answered May 23, 2012",
+            "views": "31",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Martin Garcia",
+                    "user_href": "/profile/Martin-Garcia-27"
+                },
+                {
+                    "user_id": "Turab Qureshi",
+                    "user_href": "/profile/Turab-Qureshi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nicolas Guerinet",
+                "href": "/profile/Nicolas-Guerinet"
+            },
+            "answer_text": "I have used Apache 2.4 & Nginx 1.8 I am sorry but in 100% of cases Nginx 1.8 was faster than Apache 2.4 with event MPM.  I guess some apache modules were involved but even after tuning up Apache (loading only what was necessary) it didn't change anything. It is quite impressive to see that Nginx out of the box without any configuration performs better. ",
+            "date": "Answered May 8, 2015",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Peter Mortensen",
+                    "user_href": "/profile/Peter-Mortensen"
+                },
+                {
+                    "user_id": "Abhishek Ganguly",
+                    "user_href": "/profile/Abhishek-Ganguly-6"
+                }
+            ]
+        }
+    ]
+}

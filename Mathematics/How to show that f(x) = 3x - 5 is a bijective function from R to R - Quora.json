@@ -1,0 +1,113 @@
+{
+    "title": "How to show that f(x) = 3x - 5 is a bijective function from R to R - Quora",
+    "tags": [
+        "Functions (mathematics)",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Adam Aker",
+                "href": "/profile/Adam-Aker"
+            },
+            "answer_text": "First you need to show that the function is one-to-one: put into precise mathematical terms, this means [math]f(x)=f(y)\\Rightarrow x=y[/math] Or in English: if [math]f(x)=f(y)[/math], then [math]x=y[/math] Suppose [math]f(x)=f(y)[/math] which means [math]3x-5=3y-5[/math] so [math]3x=3y[/math]which means [math]x=y[/math]. Therefore, [math]f(x)[/math] is one-to-one. Now we need to show [math]f(x)[/math] is onto [math]\\mathbb{R}[/math] This means that [math]\\mathbb{R}=Rng(f)[/math]. Now the range of f is the set of values that f maps to from the domain. Now, we need to show that [math]\\mathbb{R}\\subseteq Rng(f)[/math](we know that [math]Rng(f)\\subseteq\\mathbb{R}[/math] since f is a function) So, suppose [math]y\\in\\mathbb{R}[/math] and let [math]x=\\frac{y+5}{3}[/math]. Since [math]y\\in\\mathbb{R}[/math] that means [math]x\\in\\mathbb{R}[/math]. Now consider [math]f(x)[/math]. [math]f(x)=3(\\frac{y+5}{3})-5[/math] [math]f(x)=y+5-5=y[/math]. This means [math]y\\in Rng(f)[/math]; thus, [math]\\mathbb{R}\\subseteq Rng(f)[/math] and [math]Rng(f)\\subseteq \\mathbb{R}[/math] which together mean [math]\\mathbb{R}=Rng(f)[/math]; thus, f is onto. Since f is one-to-one and onto, it is by definition a bijection. Q.E.D ",
+            "date": "Answered February 21, 2019",
+            "views": "151",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jason Kabar",
+                    "user_href": "/profile/Jason-Kabar"
+                },
+                {
+                    "user_id": "Aishwarya Maurya",
+                    "user_href": "/profile/Aishwarya-Maurya-6"
+                },
+                {
+                    "user_id": "Geoff Patterson",
+                    "user_href": "/profile/Geoff-Patterson-2"
+                },
+                {
+                    "user_id": "Donellia Salmon",
+                    "user_href": "/profile/Donellia-Salmon"
+                },
+                {
+                    "user_id": "Nikita Bengani",
+                    "user_href": "/profile/Nikita-Bengani-1"
+                },
+                {
+                    "user_id": "Sayan Surya",
+                    "user_href": "/profile/Sayan-Surya"
+                },
+                {
+                    "user_id": "RUTIKA PAWAR",
+                    "user_href": "/profile/RUTIKA-PAWAR-5"
+                },
+                {
+                    "user_id": "Aryan K",
+                    "user_href": "/profile/Aryan-K-94"
+                },
+                {
+                    "user_id": "Tejal Gupta",
+                    "user_href": "/profile/Tejal-Gupta-13"
+                },
+                {
+                    "user_id": "Meenakshi Padhi",
+                    "user_href": "/profile/Meenakshi-Padhi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wayne Wigfield",
+                "href": "/profile/Wayne-Wigfield"
+            },
+            "answer_text": "To prove the function is surjective you must show that for any point \u201ca\u201d in the range there is a point \u201cb\u201d in the domain such that f(b)=a. This is easily shown by letting a=3x-5 and therefore b must be (a+5)/3. Since this is a real number it is in the domain. To prove the function is injective you must show if f(a)=c and f(b)=c then a=b. Let f(a)=c and f(b)=c -> c=3a-5 and c=3b-5 -> 3b-5=3a-5 -> 3b=3a -> b=a Since it is both injective and surjective we can say that f(x) is a bijection from R to R ",
+            "date": "Answered March 18, 2017",
+            "views": "105",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sravan Dsp Sravan",
+                    "user_href": "/profile/Sravan-Dsp-Sravan"
+                },
+                {
+                    "user_id": "Shreyash Zope",
+                    "user_href": "/profile/Shreyash-Zope"
+                },
+                {
+                    "user_id": "SAURABH YADAV",
+                    "user_href": "/profile/SAURABH-YADAV-599"
+                },
+                {
+                    "user_id": "Ayush Mishra",
+                    "user_href": "/profile/Ayush-Mishra-333"
+                },
+                {
+                    "user_id": "Alain Gosselin",
+                    "user_href": "/profile/Alain-Gosselin-1"
+                },
+                {
+                    "user_id": "Syed Kazmi",
+                    "user_href": "/profile/Syed-Kazmi-2"
+                },
+                {
+                    "user_id": "Prahalad Atreyaa",
+                    "user_href": "/profile/Prahalad-Atreyaa"
+                },
+                {
+                    "user_id": "Oluwatoba Oyekanmi",
+                    "user_href": "/profile/Oluwatoba-Oyekanmi"
+                },
+                {
+                    "user_id": "Uzair Nor Jasmin",
+                    "user_href": "/profile/Uzair-Nor-Jasmin"
+                },
+                {
+                    "user_id": "Jonatan Sundqvist",
+                    "user_href": "/profile/Jonatan-Sundqvist-1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "title": "What are the increasing and decreasing intervals for f'(x) =(x-1) (x-2) (x-3)? - Quora",
+    "tags": [
+        "Intervals",
+        "Equations",
+        "Functions (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Peterson",
+                "href": "/profile/Brian-Peterson-172"
+            },
+            "answer_text": "The question is confusing because it\u2019s not clear whether it\u2019s [math]f(x)[/math] or [math]f^{\\prime}(x)[/math] for which we want intervals of increase and decrease. The basic fact from calculus is that if [math]g(x)[/math] is a continuous function, then [math]g[/math] is increasing (resp. decreasing) on any interval where it is defined if [math]g^{\\prime}[/math] has positive values (resp. negative values) at all interior points of that interval. If the question is about [math]f(x)[/math], it is convenient that [math]f^{\\prime}[/math] has been given in factored form. It is straightforward to list intervals where [math]f^{\\prime}[/math] is positive or negative. But if it\u2019s about the function [math](x-1)(x-2)(x-3)[/math] itself, you will want to multiply it out, compute its derivative (which will be a quadratic polynomial) and factor that so you can determine where that derivative is positive and negative. ",
+            "date": "Answered October 21, 2019",
+            "views": "266",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dodie Cowan",
+                "href": "/profile/Dodie-Cowan"
+            },
+            "answer_text": "The first thing to note is that the zeros of the derivative occur at x=1, x=2, and x=3. So, you must select a number on each of the intervals (-inf,1), (1,2), (2,3), and (3,inf) to determine if the derivative is positive or negative on that interval. If it is positive, then the function is increasing on that interval. If negative, the function is decreasing. Selecting 0 from (-inf, 1), we see that f\u2019(x)=neg\u2022neg\u2022neg, so therefore negative. The function is decreasing on (-inf,1) Selecting 1.5 on the interval (1,2), we see that f\u2019(x)=pos\u2022neg\u2022neg, so f\u2019(x)>0 on that interval and therefore f(x) is increasing on (1,2). Selecting 2.5 on the interval (2,3), we determine that f\u2019(x)=pos\u2022pos\u2022neg<0, so f(x) is decreasing on (2,3). Finally, selecting 4 on the interval (3,inf), we find that f\u201d(x)=pos\u2022pos\u2022pos>0, so f(x) is increasing on (3,inf). In summary, f(x) is increasing on (1,2)U(3,inf) and decreasing on (-inf,1)U(2,3). ",
+            "date": "Answered October 26, 2019",
+            "views": "53",
+            "upvotes": "0"
+        }
+    ]
+}

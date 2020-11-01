@@ -1,0 +1,73 @@
+{
+    "title": "What is the best way to handle 25000 concurrent requests toward the database? - Quora",
+    "tags": [
+        "Concurrency (computer science)",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jennica Pounds",
+                "href": "/profile/Jennica-Pounds"
+            },
+            "answer_text": "First, 25,000 concurrent requests are truly world class. To put it in perspective, Amazon Prime Day 2016 resulted in 600 items sold per second. Companies that support that kind of traffic also do not dispatch every HTTP request as an individual database access; these instead go through several layers of service performing caching and other business logic that ultimately result in far fewer actual database connections than the raw traffic numbers would imply. So I would question any architecture requiring that volume of database accesses first and foremost. That aside \u2014 The number of connections isn't as important as what these connections are doing. You'd have to understand exactly what each connection is doing and design a scalable architecture for that. These designs are rarely just the database - but also incorporate the cache layer (if any), service interface, load balancer setup... Here's a partial listing of strategies to mitigate the load on a database: Optimize the schema and query for your database. That comes first and foremost. If, for instance, you're doing an uncacheable regular expression search on terabytes of data with three tables joined together, you're in for a challenge to say the least. Key goal: minimize extraneous rows touched in a query.Replication. Replicate the data on multiple servers. However, there is a necessary tradeoff in how writes can be reflected in other replica. Perhaps you've picked something like HBase, and your writes won't return until it's been written to all the HDFS buckets. Perhaps you've picked something like Cassandra, and there's a lag in the data freshness as the gossip protocols resolve.Partitioning. Figure a way to evenly distribute queries and split data on multiple nodes accordingly.",
+            "date": "Answered January 9, 2019",
+            "views": "35",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yugander Krishan Singh",
+                    "user_href": "/profile/Yugander-Krishan-Singh"
+                },
+                {
+                    "user_id": "Tomaz Kunaver",
+                    "user_href": "/profile/Tomaz-Kunaver"
+                },
+                {
+                    "user_id": "Manideep Bora",
+                    "user_href": "/profile/Manideep-Bora"
+                },
+                {
+                    "user_id": "Sarvapriya Tripathi",
+                    "user_href": "/profile/Sarvapriya-Tripathi-1"
+                },
+                {
+                    "user_id": "Sudarshan Konge",
+                    "user_href": "/profile/Sudarshan-Konge"
+                },
+                {
+                    "user_id": "Tushar Saha",
+                    "user_href": "/profile/Tushar-Saha-2"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Stanton",
+                "href": "/profile/Steven-Stanton-3"
+            },
+            "answer_text": "I would not ever have 2,500 servers contacting a single database. There would be no point to it. You obviously have a distributed system but the database leads to a single point of failure. This would lead to a very unbalanced and unstable system.  You should look into using a DDBMS for Database replication and use multiple database servers. It would be a small drop in the bucket at that level to spin up 10 additional servers so each server only had to handle 250 servers each. Then use Database Replication to handle the data distribution between them. If you know every 2 minutes your servers will be requesting data you can have data propagate between them every minute between the calls.  I would also use private networking if all droplets are located in the same datacenter. I mention this again below because it is a great idea in your case.  The biggest unknown here is how you plan to handle database requests and how complex each object is. You told us the properties but not what data is in them. a bit is easier to handle than an int which is easier to handle than a string. For Json MongoDB is a great database to use. I would test it and scale up. Using Digital Ocean you have virtual CPU cores not real CPU's. So how many connections you can handle at once will be determined by the complexity of the data and how well the virtual cores handle the data. I would try for a DDBMS as I mention above, or look at aws and some of their database solutions.  Doing some napkin math.. If each property was 1 bit... just 1 bit.. 7*7000 *2,500 so your passing 122 Mb every 2 minutes Then 3.4 Gbps an hour 82 gigabit a day 2.646 Tb per 30 day month. They do have plans that allow for this traffic. So your looking at a 20 dollar a month plan for the database at the very least just from that Edit:  This is some good reading for that problem as well SSME_QueueingTheory.pdf ",
+            "date": "Answered April 4, 2016",
+            "views": "61",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kurt Behnke",
+                    "user_href": "/profile/Kurt-Behnke"
+                },
+                {
+                    "user_id": "Bhavesh Patel",
+                    "user_href": "/profile/Bhavesh-Patel-98"
+                },
+                {
+                    "user_id": "Chaim Peck",
+                    "user_href": "/profile/Chaim-Peck"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "title": "How do front end and back end technologies work together? - Quora",
+    "tags": [
+        "Backend Development",
+        "Front-End Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Josh Begleiter",
+                "href": "/profile/Josh-Begleiter-1"
+            },
+            "answer_text": "I think to answer this question we should start with the abstraction that we often refer to as a design pattern, and in this particular case the design pattern \u201cMVC\u201d. This stands for Model, View, and Controller, and in many contexts the front-end is the \u201cView\u201d (what the user sees), the back-end is the \u201cController\u201d (what does the work), and the database or other permanent data store is the \u201cModel\u201d (what stores the information for later). I like to build middle-out meaning that I first consider what my application needs to DO (like, log in users, or update account information, or run queries, etc.), and then build out the business logic that it will use to accomplish this. In doing this, it helps me define what I need to store (the model), and how the front-end will interact with the back-end. Now, going into great detail on how the front-end and back-end are integrated. The View takes many forms, but at its heart, on the web, it is HTML, JavaScript, and CSS. A given view (like your homepage, or accounts page), or a partial view (perhaps your header, or footer) may be integrated to your framework (as with ERB templates in Ruby on Rails, or Django templates in Django), or it may be entirely separate (and potentially written with a front-end JavaScript framework, like Angular, or Backbone, or Ember). This means that in the former example, where a view is integrated with the framework, as a request is made to the back-end (I\u2019ll come back to this later), what is returned is HTML that has been pre-rendered by the back-end engine, that may or may not use values from the controller, and can even do logic using the templating language (like ERB templating for Ruby on Rails or Django templating in Django, as above). In the latter example, everything is HTML, CSS, and JavaScript (potentially with a JavaScript framework), and this changes the way that the back-end returns data to the front-end. Now, for the important part: how does the front-end really communicate with the back-end? The front-end always makes a call, meaning a GET or a POST request generally. A call can be made actively, by a user clicking on a link, in response to some event (in JavaScript), or passively (on a timer, also in JavaScript). A GET request is one that has all of the values that it will pass to the back-end in the URL itself (like mywebsite.com/someservice?somekey=somevalue&anotherkey=anothervalue). In this example, when the call is made it makes a get request to the \u201csomeservice\u201d endpoint of your back-end and has passed the parameters \u201csomekey\u201d and \u201canotherkey\u201d with values \u201csomevalue\u201d and \u201canothervalue\u201d. A POST request is one that has all of the values it will pass to the back-end encoded in the request body. In this case you would invoke mywebsite.com/someservice, but the values would encoded in the request body itself. This happens whenever you fill out a form, in which case the request body is multi-part form-encoded content. This too can be done actively (e.g., a user submits a form), passively (e.g., the form is submitted in response to all fields being filled out), or on a timer (e.g., the front-end checks the back-end for some value in the form and validates it using the back-end every 5 seconds). And this is the meat of the answer: a call is made from the front-end to the back-end through either a user interaction with the page, listening to an event in JavaScript, or using JavaScript as a timed event. In all three cases we have a choice: will the request by synchronous, or asynchronous? Synchronous typically means that the user makes a request and waits for the response. Asynchronous typically means that the request is made in the background, and the page (or elements of the page) are updated when the response from the request is received. Asynchronous requests are all done through XML HTTP Requests (XHR), which you can do using plain JavaScript or any JavaScript framework (even jQuery makes this very easy). The next big question is, how does the back-end, once it receives a call from the front-end, know what to do with this information? What happens is this: a back-end receives a call from the front-end (as above, we\u2019ll use the GET request as the example), and it takes apart the request, classifying the following: It\u2019s a GET requestThe domain is mywebsite.comThe port is 80, for http, or 443, for https (by default)The endpoint is \u201csomeservice\u201dIt then takes that information to route the request appropriately, passing the request body as well. What do I mean by route? Let\u2019s assume the back-end is set up in a typical way, with a web server (like Apache or NginX), and an application server (like Passenger or uWSGI, which would mount and provide the gateway to a Ruby on Rails or Django application respectively). The web server takes this information and, assuming it knows the host and the port, and the resource is allowed, will pass on the information to the application through the gateway. When the application receives the call it too needs to route the request appropriately, which is where \u201croutes.rb\u201d and \u201chttp://urls.py\u201d come into place (for Ruby on Rails and Django respectively). These files say: if a request matches a given pattern (endpoint, request method, and potentially arguments, typically), then the router should route the request to a given controller and action (often a method within a given controller). When the controller receives the request, finally, it comes complete with the request body, so all of your passed keys and values are present. The controller action (your method in your controller) then does the \u201cbusiness logic,\u201d potentially communicating with a database (to store or read information), or doing some calculation, etc. What\u2019s important about the different ways of making a request (synchronously or asynchronously) is in two parts: What does the back-end return? XML, JSON, or HTML typically, and a single method may return any one of the three depending on how the request was made. This is what \u201cresponds_to\u201d does in Ruby on Rails, when dealing with an asynchronous request. Render, and redirect, are the statements we use in Ruby on Rails when we wish to render a view or redirect to another action. This is also something we\u2019ve typically decided through architecture, in deciding whether or not our front-end is integrated as a template in our back-end, or not. When a front-end is integrated as a template, we may be returning a view (rendering a view), in which case we pass on values to that view, the back-end engine renders it all as HTML, and it is then returned to the consumer. When we\u2019re receiving an asynchronous request, our controller must return XML, or JSON, or HTML, depending on how the front-end will receive and interpret the results. A good example of this would be in making any long-running request (like a large database query): the consumer doesn\u2019t want to wait to get a request, it\u2019s likely that their browser would time out before the response is returned. As a result, the request would be made asynchronously, and either the user could remain on the page and wait for an update, in which the back-end returns a block of HTML, or a JSON object representing the query results, or a timer could be set up on the front-end to listen for such an event, probing the back-end periodically.This brings us to the second part for making a request: what does the front-end do with the returned data? When making a synchronous request, it renders that data (necessarily), meaning it shows a whole page typically, like when you log into a service and are \u201cforwarded\u201d to your account page. When making an asynchronous request, the front-end has to decide what to do with the results. It may take those results and render them to the page in a particular spot (like the query results above); it can do anything as a result of or using the response from the back-end.Let\u2019s add in a quick example, step-by-step, for the scenario where user visits your homepage: The user types in your website to their browser URL bar and hits enter, making a GET request to mywebsite.comThe back-end receives this request, and knowing the domain, port, method, and endpoint (\u201c/\u201d), it passes it to the applicationThe application receives this request, and knowing the endpoint and method, it passes it to the correct controller action (we\u2019ll say Application controller and home method)The application controller home method simply renders the HTML associated to the home page as a view, passing back to the consumer rendered HTMLThe browser interprets the HTML, and the user sees the homepageLet\u2019s do a second scenario, one where we make a query using a form and then the results of that query should be rendered to a text box on the page some time later: The user enters information into a form related to their query (maybe date ranges, or IDs, etc.), and hits the \u201csubmit\u201d buttonJavaScript (that you\u2019ve written) captures the event (prevents the default from occurring), wraps up the request parameters, and makes a POST request asynchronously to your endpoint (we\u2019ll say mywebsite.com/query)The back-end receives the request, and knowing the domain, port, method, and endpoint (\u201c/query\u201d), it passes it to the applicationThe application receives this request, and knowing the endpoint and method, it passes it to the correct controller action (we\u2019ll say Application controller and query method)The application controller query method needs to do some business logic to start the query and provides a query ID, which it then returns to the front-end as JSON (e.g., {\u2018query_id\u2019: 1234})The front-end receives this response through the asynchronous listener you wrote, and sets up a timer to listen for query completionThe front-end uses JavaScript (that you\u2019ve written) to make a POST request to the back-end every 5 seconds, (we\u2019ll say, mywebsite.com/queryresults), passing the \u201cquery_id\u201d we received in the previous step as the request bodyOnce again, the back-end routes the request appropriately, this time to a controller action that asks if the query is done yet (I won\u2019t go into detail on the how of this today)If the query is done, the back-end returns the results as JSON, e.g., {'query_complete': true, \u2018query_results\u2019: \u2018somequeryresults\u2019, 'success': true, 'msg': ''}If the query is not done, the back-end returns the same structured JSON but with different values (note that you don\u2019t need to maintain the structure, but again I won\u2019t go into the why of this now), e.g. {'query_complete': false, \u2018query_results\u2019: \u2018\u2019, 'success': false, 'msg': ''}It could also return an error message using the structure above, where query_complete is true, but success if false, and a message accompanies it in the msg parameter.Once again, the front-end must decide what to do with the results:It does nothing with the results if the query isn\u2019t done yetIt renders the results in the appropriate place if the query is completed successfullyIt tells the user there\u2019s an error when the query has failed, for whatever reasonHope this helps! ",
+            "date": "Answered July 8, 2017",
+            "views": "325",
+            "upvotes": " View 125 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Simple Tutors",
+                    "user_href": "/profile/Simple-Tutors"
+                },
+                {
+                    "user_id": "Chinmay Dixit",
+                    "user_href": "/profile/Chinmay-Dixit-11"
+                },
+                {
+                    "user_id": "Latha Anbarasu",
+                    "user_href": "/profile/Latha-Anbarasu"
+                },
+                {
+                    "user_id": "Emmanuel Tific",
+                    "user_href": "/profile/Emmanuel-Tific"
+                },
+                {
+                    "user_id": "Prosper Mugare",
+                    "user_href": "/profile/Prosper-Mugare"
+                },
+                {
+                    "user_id": "Kartik Agarwal",
+                    "user_href": "/profile/Kartik-Agarwal-94"
+                },
+                {
+                    "user_id": "Aditya Nambiar",
+                    "user_href": "/profile/Aditya-Nambiar"
+                },
+                {
+                    "user_id": "Jam Shid",
+                    "user_href": "/profile/Jam-Shid-2"
+                },
+                {
+                    "user_id": "Himanshu Yadav",
+                    "user_href": "/profile/Himanshu-Yadav-24"
+                },
+                {
+                    "user_id": "Allen Walker",
+                    "user_href": "/profile/Allen-Walker-156"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alec Menke",
+                "href": "/profile/Alec-Menke"
+            },
+            "answer_text": "A typical transaction goes something like this.  A browser connects to a server. That server sends the front-end to the browser.From there, the front-end explains how the browser should communicate with the server.  You're absolutely right! The back-end sets up a series of functions, and the front-end expects them to be there and work correctly.  I always find I learn best when I see an example, so with that in mind let's get started on an example. Let's say we have a personal nutrition website that shows you how many calories your friends have eaten today so that you can make fun of them. It'll have a button on it that grabs the latest metrics, so you can choose which one of those \"fatties\" you should bully in order to feel better about your painful childhood. Sound good?  So right now we have a basic front-end built. This is good. The button is all green and pretty... And it's built using HTML and CSS, but how do we get this into other people's browsers, and also, how do we make it so the button can grab our \"fatty metrics\"? Simple we build a back-end server. Our backend server will have two routes: /home - sends this button to the browser along with JavaScript code that will retrieve data from the second route when the button is hit and find a way to visually display the information it receives./api/getUserMetrics - sends the fatty metrics to the browser when called.Well now we have a website built! What happens when a user connects? User: Googles \"How do I become a bully?\", and finds a link to our site. User: clicks the link opening \"https://www.healthylifestyles.com/home\". Back-end: receives request and sends UI (button) and JavaScript to the browser. User: clicks on button. Javascript code (front-end):  detects click, and requests information from \"https://www.healthylifestyles.com/api/getUserMetrics\". Back-end: sends user information forward. JavaScript code (front-end): renders information on page. Wallah~!  Perfect! Are you ready to go zero to one? Are you ready to make millions? Elon Musk better watch out!  Visit our new website: https://www.healthylifestyles.com/home  ",
+            "date": "Answered February 22, 2016",
+            "views": "96",
+            "upvotes": " View 23 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hari Shankar",
+                    "user_href": "/profile/Hari-Shankar-147"
+                },
+                {
+                    "user_id": "Dewanshu Kumar",
+                    "user_href": "/profile/Dewanshu-Kumar-6"
+                },
+                {
+                    "user_id": "Chris Gravel",
+                    "user_href": "/profile/Chris-Gravel"
+                },
+                {
+                    "user_id": "Uchil Suhanaa",
+                    "user_href": "/profile/Uchil-Suhanaa"
+                },
+                {
+                    "user_id": "Karthik Desai",
+                    "user_href": "/profile/Karthik-Desai-4"
+                },
+                {
+                    "user_id": "TROLL SENPAI",
+                    "user_href": "/profile/TROLL-SENPAI-1"
+                },
+                {
+                    "user_id": "Rajesh Nair",
+                    "user_href": "/profile/Rajesh-Nair-353"
+                },
+                {
+                    "user_id": "Kawsar Hassan",
+                    "user_href": "/profile/Kawsar-Hassan-2"
+                },
+                {
+                    "user_id": "Mengmei Chen",
+                    "user_href": "/profile/Mengmei-Chen"
+                },
+                {
+                    "user_id": "Subin Roy",
+                    "user_href": "/profile/Subin-Roy"
+                }
+            ]
+        }
+    ]
+}

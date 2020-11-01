@@ -1,0 +1,152 @@
+{
+    "title": "Ok so if f(x) =x^9 e^x then the ninth derivative of f(x) at x=0 is given by? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew Wong",
+                "href": "/profile/Matthew-Wong-97"
+            },
+            "answer_text": "To make this easier, let\u2019s just use a general case [math]f(x) = x^n e^x[/math] [math]f\u2019(x) = n x^{n-1}e^x + x^n e^x = n x^{n-1}e^x + f(x)[/math] [math]f\u2019\u2019(x) = n(n-1)x^{n-2}e^x +n x^{n-1} e^x + f\u2019(x) [/math] Ok so you can see how factors are coming down as you differentiate and include terms in x and and the original function. Since you only need the value at x=0, you can focus directly on the term where the power becomes 0 (i.e. the constant). All other terms include an x with power of at least 1, so they will equate to 0 when you include it. You don\u2019t actually need to calculate the final derivative (which is very laborious). All you need is to see the pattern and extrapolate. The final term with power of 0 would be [math]n(n-1)(n-2)\u2026(n-(k-1)) = k! \\binom{n}{k} = 9![/math] (where n = 9 and k=9) Or alternatively note when you differentiate once you get a 9, differentiate twice, 9 x 8, three times 9 x 8 x 7, etc. This is [math]\\frac{n!}{(n-k)!}[/math] Differentiate 9 times and you get [math]\\frac{9!}{(9\u20139)!} = 9![/math] ",
+            "date": "Answered April 19, 2019",
+            "views": "165",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                },
+                {
+                    "user_id": "Leonardo Silveira",
+                    "user_href": "/profile/Leonardo-Silveira-3"
+                },
+                {
+                    "user_id": "Lukas Schmidinger",
+                    "user_href": "/profile/Lukas-Schmidinger-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeremy Bohrer",
+                "href": "/profile/Jeremy-Bohrer"
+            },
+            "answer_text": " We can keep going here, but we see a pattern emerging quickly. The only term that matters in the end is the first, which, for  will be . Everything else will have a factor of , which means that when we let , all of those terms will be zero as well. However, when , . ",
+            "date": "Answered April 19, 2019",
+            "views": "62",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lukas Schmidinger",
+                "href": "/profile/Lukas-Schmidinger-1"
+            },
+            "answer_text": "Ok so if f(x) =x^9 e^x then the ninth derivative of f(x) at x=0 is given by?  Ok        From Wolfram Alpha  ",
+            "date": "Answered April 19, 2019",
+            "views": "93",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Amar Prakash",
+                    "user_href": "/profile/Amar-Prakash-10"
+                },
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Moon",
+                "href": "/profile/Alex-Moon-76"
+            },
+            "answer_text": "well I\u2019d just use taylor series to avoid the combinatorics involve in repeat differentiation of x\u207fe\u02e3 x\u2079\ufe0e+x\u00b9\u2070\ufe0e+x\u00b9\u00b9/2+\u2026 only the first term will matter after we differentiate 9 times anyway but we could write out the sum in summation notation. (9!/0!)x\u2070\ufe0e+(10!/1!)x\u00b9+(11!/2!)x\u00b2/2 and at x=0, we get 9! ",
+            "date": "Answered April 19, 2019",
+            "views": "22",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Greg Simay",
+                "href": "/profile/Greg-Simay"
+            },
+            "answer_text": "The answer is 9! Let\u2019s look at the first two derivatives of (x^9)(e^x): 1st derivative: 9 x^8 e^x + x^9 e^x 2nd derivative: (9)(8) x^7 e^x + 9 x^8 e^x + 9 x^8 e^x + x^9 e^x Carrying this to the 9th derivative, you can see that the leftmost term becomes 9! e^x and the other terms are still multiplied by a power of x. So at x=0, we\u2019re left with 9! e^0 = 9!(1) = 9! ",
+            "date": "Answered April 19, 2019",
+            "views": "234",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                },
+                {
+                    "user_id": "Lukas Schmidinger",
+                    "user_href": "/profile/Lukas-Schmidinger-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Donald Hartig",
+                "href": "/profile/Donald-Hartig"
+            },
+            "answer_text": "  ",
+            "date": "Answered April 24, 2019",
+            "views": "69",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Claydon",
+                    "user_href": "/profile/Daniel-Claydon-2"
+                },
+                {
+                    "user_id": "Jan van Delden",
+                    "user_href": "/profile/Jan-van-Delden-2"
+                },
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Leonardo Silveira",
+                "href": "/profile/Leonardo-Silveira-3"
+            },
+            "answer_text": "Apply the multiplication rule, this is 9! or 9!e\u2070.   Notice the recurrence. Also, any term having x is gonna be 0 by the end of it.Reminder:Derivative Multiplication rule of f(x) = g(x)h(x) is f\u2019(x) = g\u2019(x)h(x) + g(x)h\u2019(x). ",
+            "date": "Answered April 19, 2019",
+            "views": "31",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Daniel",
+                    "user_href": "/profile/Thomas-Daniel-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marek Brudka",
+                "href": "/profile/Marek-Brudka"
+            },
+            "answer_text": "Wolfram|Alpha: Making the world\u2019s knowledge computable ",
+            "date": "Answered April 19, 2019",
+            "views": "12",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "title": "Does changing the SD card change the MAC address for Raspberry Pi? - Quora",
+    "tags": [
+        "MAC Addresses",
+        "Raspberry Pi",
+        "SD Cards",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniele Quasimodo",
+                "href": "/profile/Daniele-Quasimodo"
+            },
+            "answer_text": "The MAC address is an univocal hexadecimal code hardcoded in every network interface (ethernet adapters embeded in motherboards, PCIe wifi cards, bluetooth dongles, LTE modems in smartphones, etc). You can\u2019t change it in any way except, maybe, flashing a modified firmware on the network interface. That said, you don\u2019t need change it. When your computer needs to tell someone its MAC, it reads it on the network adapter\u2019s chip and then use the same network adapter to send it. One can simply tell the computer to use a MAC address that\u2019s different from the one written on the network adapter. GitHub -- alobbs/macchanger Debian -- Details of package macchanger in buster MAC address - Wikipedia MAC spoofing - Wikipedia ",
+            "date": "Answered February 13, 2020",
+            "views": "161",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/J-T-Cray"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Lane",
+                "href": "/profile/Mark-Lane-1"
+            },
+            "answer_text": "No, the MAC address is assigned to network devices when they are made. If you need to have the raspberry pi use another MAC address, you can assign a MAC address in your network settings. This only masks the hardware MAC address while that OS is running. ",
+            "date": "Answered February 7, 2020",
+            "views": "206",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/J-T-Cray"
+                },
+                {
+                    "user_id": "Jonathan Busby",
+                    "user_href": "/profile/Jonathan-Busby"
+                },
+                {
+                    "user_id": "David Sandoz",
+                    "user_href": "/profile/David-Sandoz-1"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                }
+            ]
+        }
+    ]
+}

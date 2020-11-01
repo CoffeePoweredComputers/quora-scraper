@@ -1,0 +1,29 @@
+{
+    "title": "How would I find the probability for this statistics problem below? - Quora",
+    "tags": [
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aaron Brown",
+                "href": "/profile/Aaron-Brown-165"
+            },
+            "answer_text": "Are you looking for an exact answer or an approximation? The mean of X is 0.6*50 = 30. The standard deviation of X is approximately sqrt(0.6*0.4*50) = 3.4641. The distribution of X is close to normal in the center, so approximate answers to your questions are (A) 1 - Normdist(30.5,30,3.4641,true) = 0.4426, and (B) Normdist(26.5,30,3.4641,true) = 0.4426. I\u2019m using the Excel notation. Using N as the standard cumulative normal distribution function you would write the answers as (A) 1 - N[(30.5 - 30)/3.4641] and (B) N[(26.5 - 30)/3.4641]. For the exact answer, the number of ways you can get a sample with X = x is C(9000,x)*C(6000,50-x). The sum of these is C(15000,50). The probability of X = x is just the ratio, C(9000,x)*C(6000,50-x)/C(15000,50). That gives slightly different answers, (A) 0.1559 and (B) 0.4462. However the normal approximation is much less reliable in the tails. It gives a probability nearly 1,000 times too high for x = 50, nearly five times too high for x = 45 and 30% too large for x = 40. So be careful for using it on low probability events. ",
+            "date": "Answered March 25, 2017",
+            "views": "547",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Steven Smith",
+                "href": "/profile/Steven-Smith-440"
+            },
+            "answer_text": "This problem is over sample proportion with normal approximation. The values you need to use are:   Where  and  ",
+            "date": "Answered March 22, 2017",
+            "views": "287",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "title": "How to explain Bayesian probability in layman's term - Quora",
+    "tags": [
+        "Bayesian Inference",
+        "Layman's Explanations",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alberto Lumbreras",
+                "href": "/profile/Alberto-Lumbreras"
+            },
+            "answer_text": "Bayesian probability tries to quantify our uncertainty. Imagine we want to figure out if God exists. First, we need to agree on some method to measure it. Something like \u2018if God existed, then peace should be 10 times more likely than war\u2019. This is called the likelihood function. With this likelihood function, we can check country by country whether there is war or peace. We need the total likelihood of the state of the world, which is the product of likelihoods of every country. Imagine there are only three countries A, B in C and that they are in war, war and peace: If God exists, the likelihood is something like 0.1*0.1*0.9If God does not exist, the likelihood is something like 09*0.9*0.1 (if you do the maths, the evidence is 1 to 9 against the existence of God) Second, you build an initial guess or hypothesis. Something like \u201cI bet two to one that God does not exist.\u201d. This is called the prior probability. Something like based on my faith \u201dI bet 10 to 1 that God does exist\u201d. So: God exists: 0.9God doesn\u2019t exist: 0.1 Third, you connect both using Bayes theorem. Your belief a posteriori once you observed the data is: [math]p(God | Data) = K \\times likelihood \\times prior[/math] Which gives you the (Bayesian) probability for each of the two possibilities: p(God = Yes | Data) = K * (0.1*0.1*0.9) * 0.9 = 0.0081p(God = No | Data) = K * (0.9*0.9*0.1) * 0.1 = 0.0081 K is just some normalization constant to make the total sum up to 1, while keeping the proportions. It\u2019s clear that the final result is: p(God = Yes | Data) = 0.5p(God = No | Data) = 0.5 So, you started as a person of Faith, thinking quite dogmatically (9 to 1) that God did exist, and you ended up as an agnostic! Summary: Note that Bayesian probability is like a logic of probability, where we walk from initial hypothesis (prior) to final beliefs through premises (likelihood) and observations (data). In other words, it is a tool to do by maths what the economist J.M. Keynes put in words: When the Facts Change, I Change My Mind. What Do You Do, Sir? ",
+            "date": "Updated October 31, 2016",
+            "views": "14",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Divay Kanotra",
+                    "user_href": "/profile/Divay-Kanotra"
+                },
+                {
+                    "user_id": "Narmada Deve",
+                    "user_href": "/profile/Narmada-Deve"
+                },
+                {
+                    "user_id": "Aditya Dutta",
+                    "user_href": "/profile/Aditya-Dutta-107"
+                },
+                {
+                    "user_id": "Mohd Imran",
+                    "user_href": "/profile/Mohd-Imran-11"
+                },
+                {
+                    "user_id": "Luis Hiyo",
+                    "user_href": "/profile/Luis-Hiyo"
+                },
+                {
+                    "user_id": "Messi Bautista",
+                    "user_href": "/profile/Messi-Bautista"
+                },
+                {
+                    "user_id": "Jay Bhalla",
+                    "user_href": "/profile/Jay-Bhalla-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikola Kasarov",
+                "href": "/profile/Nikola-Kasarov"
+            },
+            "answer_text": "You think of an event (any event) and ask yourself \"How likely is it to occur if...\" You think, on a scale of 0 to 1, that the probability is 0.4You witness the events happen. You witness it again. Your 0.4 assumption appears not be working - the event is either occurring more often or less frequently. You change it to 0.3You watch things happen again. Eventually, you may reach the actual (or best possible) probability.  ",
+            "date": "Answered May 1, 2016",
+            "views": "574",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Divay Kanotra",
+                    "user_href": "/profile/Divay-Kanotra"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhijit Oka",
+                "href": "/profile/Abhijit-Oka-1"
+            },
+            "answer_text": "Chance of you getting hit by lightening at the top of a tall building is high compared to on the ground. Hence information about the location changes the probability. Bayesian tries to interpret such additional information in terms of probability. Given your location , we can have more precise probability of an event , than a \"any location\" or a \"generic location\".   ",
+            "date": "Answered April 27, 2016",
+            "views": "721",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Divay Kanotra",
+                    "user_href": "/profile/Divay-Kanotra"
+                },
+                {
+                    "user_id": "Hardik Jamnal",
+                    "user_href": "/profile/Hardik-Jamnal"
+                },
+                {
+                    "user_id": "Messi Bautista",
+                    "user_href": "/profile/Messi-Bautista"
+                }
+            ]
+        }
+    ]
+}

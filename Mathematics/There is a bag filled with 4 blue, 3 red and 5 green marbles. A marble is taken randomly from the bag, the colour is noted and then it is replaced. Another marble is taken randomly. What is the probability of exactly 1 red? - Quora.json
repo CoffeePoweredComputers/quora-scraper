@@ -1,0 +1,57 @@
+{
+    "title": "There is a bag filled with 4 blue, 3 red and 5 green marbles. A marble is taken randomly from the bag, the colour is noted and then it is replaced. Another marble is taken randomly. What is the probability of exactly 1 red? - Quora",
+    "tags": [
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Henry Schaffer",
+                "href": "/profile/Henry-Schaffer"
+            },
+            "answer_text": "Back to basics: Why make a problem more complicated than it needs to be? Since the only color mentioned by name in the problem is \u201cred\u201d, then this really is about 3 red and 9 not-red marbles. Next: Two marbles are taken, without replacement. There are two mutually exclusive ways that there could be \u201cexactly 1 red.\u201d They are 1) red first then not-red, and 2) not-red first then red. We need to calculate the two probabilities and then add them since they are for mutually exclusive outcomes. Each of those outcomes consists of two successive draws. They are \u201cdependent\u201d draws/events and the probability is calculated by (1) P{red first} x P{not-red next}, and (2) P{not-red first} x P{red next}. In each case we should understand that the probability of the first draw is the number of marbles specified divided by the number of the marbles in the bag. The probability of the second draw is basically the same, adjusting the number in the bag to reflect what happened in the first draw (hence \u201cdependent\u201d.) The formula being used is P{A and B} = P{A} x P{B|A}. P|B|A} is read as \u201cProbability of B given that A has occurred.\u201d Doing the arithmetic is left as an exercise for the reader. ",
+            "date": "Answered April 23, 2020",
+            "views": "574",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ben Thackray",
+                    "user_href": "/profile/Ben-Thackray-4"
+                },
+                {
+                    "user_id": "Julio Gomez",
+                    "user_href": "/profile/Julio-Gomez-20"
+                },
+                {
+                    "user_id": "Mary McQuinn",
+                    "user_href": "/profile/Mary-McQuinn"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Marilley",
+                "href": "/profile/David-Marilley"
+            },
+            "answer_text": "This is binomial. You get zero, one or two red. P(red)=.25. You get no red 9/16 of the time, two red 1/16 of the time and one red 6/16 =3/8 of the time based on .25^2, .75^2, and 2\u00d7.25\u00d7.75= .25\u00d7.75+.75\u00d7.25. ",
+            "date": "Answered October 17, 2018",
+            "views": "11",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ben Thackray",
+                    "user_href": "/profile/Ben-Thackray-4"
+                },
+                {
+                    "user_id": "John Bartlett",
+                    "user_href": "/profile/John-Bartlett-141"
+                },
+                {
+                    "user_id": "Peter Butcher",
+                    "user_href": "/profile/Peter-Butcher-13"
+                }
+            ]
+        }
+    ]
+}

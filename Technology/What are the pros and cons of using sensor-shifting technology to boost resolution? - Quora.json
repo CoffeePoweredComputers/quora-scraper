@@ -1,0 +1,84 @@
+{
+    "title": "What are the pros and cons of using sensor-shifting technology to boost resolution? - Quora",
+    "tags": [
+        "Superresolution",
+        "Pentax Cameras",
+        "Micro Four-Thirds Camera Sensors",
+        "Image Sensors",
+        "Olympus Cameras",
+        "Sensors",
+        "Pros and Cons",
+        "Cameras",
+        "Photography"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rick Rhay",
+                "href": "/profile/Rick-Rhay"
+            },
+            "answer_text": "Sensor shifting technology enables a camera of a given sensor size to shoot photos at essentially double its native pixel dimensions by moving the sensor effectively half a pixel between two successive photos of the same scene, and then combining the two photos into one hyper-resolution image. The pros are that you can get much higher pixel dimensions than with the same sized sensor without sensor shifting. This allows for much greater detail, beyond even the limitations of what the lens can resolve. The cons are that they are entirely unusable for moving scenes, and require a tripod to ensure that the camera doesn't move between the photos. Additionally, the extra pixels acquired may provide more detail for some scenes, but most amateur and even professional photographers will experience significant diminished returns on images in excess of 20 million pixels. At that level of resolution, most images will not benefit from doubling the pixel dimensions of the image. These cameras may produce more detailed images, but beyond a certain threshold, those details are less and less perceptible by the average or even advanced viewer. Beyond that, the added costs of the technologies and the greater difficulties involved in shooting with them must be balanced against the rewards they provide. The Great Megapixel Race has essential ended for most models of professional and high-level amateur cameras. 20 to 25 megapixel cameras are readily available in the market, and have been for years. Those cameras approximate closely the the level of detail available on even the finest 35mm film cameras, with the highest-grade professional films, and the best developing systems and practices. Going beyond the current levels of detail available in modern professional digital cameras would take us into the realm of medium-format film cameras. A number of medium-format digital cameras today are producing images that rival even that level of detail, but at prices in the 30,000 to 60,000 USD range. Most (read: nearly all) photographers would rarely benefit from that level of detail, and those added pixels are seldom worth the additional cost of acquiring them. Shifting sensor systems are billed as a bargain-priced way to get medium-format pixel dimensions, but they utility of those systems has its limits. ",
+            "date": "Answered May 29, 2015",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mike Lambert",
+                    "user_href": "/profile/Mike-Lambert-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "The pros are numerous. The cons\u2026 there are a few. But you can turn them off. What Is It? In case you\u2019re unfamiliar, several companies have come up with the technology to improve both spatial and color resolution in photos by shooting multiple images in-camera coupled with very tightly controlled motion of the sensor. Hasselblad was the first to do this, and both Olympus and Pentax have versions of this that run in-camera, by repurposing their in-body image stabilization (IBIS) hardware.  I\u2019ll consider the Olympus system here, since I have two cameras from Olympus that do this. We\u2019ll discuss the Pen F, well, because it\u2019s easier to type \u201cPen F\u201d then \u201cOM-D E-M5 Mark II\u201d. The Pen F has a physical sensor that records 20 megapixels. The so-called hi-res shot works like this. The camera shoots 8 shots. In-between each shot, the sensor moves by 1/2 or by 1 pixel. How do it know? For IBIS, the camera has to have ultra-precise control of the image sensor, to move against motion. This works because the IBIS system knows the focal length of the lens (or the one you type in with a manual lens) and thus, it calculates the exact amount of motion for sensor reposition needed to offset physical camera motion. This is all sub-pixel and very accurate, so hitting 1/2 pixel motion isn\u2019t difficult (but it\u2019s got constraints). So in moving the sensor, the camera shoots both 1-pixel and 1/2-pixel offset images, relative to the original sensor position. The end result is a stack of images that represents the original sensor position but with red, blue, and two green samples per pixel. And another stack of images that\u2019s red, blue, and two green samples as a 1/2 pixel offset in both dimensions. If you wanted to represent this as a single image for the Pen F, you\u2019d have a 20 megapixel full RGB image with a second 20 megapixel full RGB image interstitially overlapped. So full color, no Bayer interpolation, and a total of 40 megapixels of data. What Do You Get From All That? You can\u2019t actualy do much of anything with an interstitial matrix \u2014 some of Fujifilm\u2019s old cameras had this same issue, as they put in a sensor rotated by 45 degrees. In both cases, the thing to do to get any reasonable image to work with is to interpolate to a normal rectangular matrix. Which doubles the pixel count, but of course not really the resolution, since you can\u2019t create more resolution from less. So on the Pen F, I wind up with an 80 megapixel image that\u2019s got 2x the actual spatial resolution of a normal Bayer sensor camera, 3x the color sampling, and somewhere between 1/4 and 1/2 the luma noise from the sensor, due to the multiple sampling of the same pixel. All good.. but what to do with it? The raw file, as one might expect, keeps that 80 megapixels of data.. in fact, it stores all eight original 20 megapixel images. The JPEG reduces that to 50 megapixels, which is essentially what Olympus engineers feel is the real value of that multi-shot. Why not 40 megapixels? The usual Bayer interpolation on a standard camera sensor is interpolating the result of two out of three colors for every pixel on the sensor. Ideally, that doesn\u2019t yield a result much different than a full RGB image. Worst-case, the interpolation generates false colors. But on average, since you\u2019re also interpolating luminance to a degree, Bayer interpolation reduces the actual sensor\u2019s resolution by about 25% (yes, anti-Bayer matrix pundits will put this as 33%-50%, but no one really has proven any of that). So scaling based on the enhanced color accuracy gets you 50 megapixels, the result of shooting in JPEG. But here\u2019s another thing to think about: time. In the days of film, you probably took a little time to think about your composition. Large format people always do. But in the time it took me to write this paragraph, some mad Olympus OM-D E-M1 mark II shooter just fired off 600 shots. The limits and strengths of this technology requires you to spend a little time setting up your shot. That\u2019s not a terrible thing. Disadvantages, Then? Well, ok, better color, better pixel resolution, and it\u2019s basically free? Ship it! But here\u2019s the thing\u2026 it\u2019s eight shots. And it\u2019s repurposing the image stabilization. So unless you have your Pen F on a tripod, this mode is useless. And if you\u2019re shooting a moving subject, the results aren\u2019t prefect. The latest version (in the OM-D EM-1 Mark II) of the Olympus image processing will lower effective resolution on moving parts of the image, to not totally waste it, but this is fundamentally there for still, tripod-based shots. The other issue is the same as any other high resolution shot with any other camera: your lens. If your lens is only good enough for a sharp shot at 20 megapixels, you\u2019re not going to get an improvement in resolution going to the multi-shot mode. You still do get a boost in color, of course. When Canon came out with the Canon EOS 5Ds, their 50 megapixel camera, they also put out a list of recommended lenses. The thing there was simple: the 5Ds had twice the resolution of any prior Canon camera. So no one necessarily designed lenses to be that sharp. You\u2019ll want to use the better m43 lenses with hires mode. Not the kit lens. It\u2019s also the case that most people have no actual use for 40\u201350 megapixel images. You can\u2019t even necessaily upload them many places (I make 100-shot composites and panoramas, I know the downrezzes needed for different sites). Do you have the HDD space for 80 megapixel raw images? I do \u2014 my PC was actually built-out for video, but I don\u2019t shoot that much video anymore. So I have some reasonable HDD space. Are you archiving all that data? At least in the Olympus implementation, the multi-shot high-resolution mode also puts some tighter limits on ISO and shutter speed range. Not a big deal, just sayin\u2019. Olympus was pretty reasonable about expectations, building the JPEG modes based on reasonable analysis of the imagery. They had originally developed this technology for microscope photography, so they understood its actual value. Hasselblad finally built this into a camera, the Read More Olympus E-M5 II Review - High-Resolution Mode High-Res Mode in the Olympus E-M1 Mk.II Making the EM5 mk 2 High Res Mode Sing By Brad Nichol  Pentax K-1 Pixel Shift Resolution: Updated Field Test {{header.title || 'DigitalRev - Focus on photography'}}  HASSELBLAD INTRODUCES THE H6D-400c MS, A 400 MEGAPIXEL MULTI-SHOT CAMERA ",
+            "date": "Updated April 3, 2018",
+            "views": "45",
+            "upvotes": " View 23 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Paul Haas",
+                    "user_href": "/profile/Paul-Haas-4"
+                },
+                {
+                    "user_id": "Thomas Gires",
+                    "user_href": "/profile/Thomas-Gires"
+                },
+                {
+                    "user_id": "Anthony May",
+                    "user_href": "/profile/Anthony-May-2"
+                },
+                {
+                    "user_id": "Poul Bundgaard",
+                    "user_href": "/profile/Poul-Bundgaard-1"
+                },
+                {
+                    "user_id": "Mihajlo Strelec",
+                    "user_href": "/profile/Mihajlo-Strelec"
+                },
+                {
+                    "user_id": "Karen Schmidt",
+                    "user_href": "/profile/Karen-Schmidt-24"
+                },
+                {
+                    "user_id": "Ben Tischler",
+                    "user_href": "/profile/Ben-Tischler"
+                },
+                {
+                    "user_id": "Krishna Chaudhari",
+                    "user_href": "/profile/Krishna-Chaudhari-6"
+                },
+                {
+                    "user_id": "James Berg",
+                    "user_href": "/profile/James-Berg-21"
+                },
+                {
+                    "user_id": "Dan Davies",
+                    "user_href": "/profile/Dan-Davies-37"
+                }
+            ]
+        }
+    ]
+}

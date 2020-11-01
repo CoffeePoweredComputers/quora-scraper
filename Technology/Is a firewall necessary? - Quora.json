@@ -1,0 +1,40 @@
+{
+    "title": "Is a firewall necessary? - Quora",
+    "tags": [
+        "Firewalls",
+        "Network Security",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Daviel",
+                "href": "/profile/Andrew-Daviel"
+            },
+            "answer_text": "No. Or rather, not always. If you want to place an old device on a network, there\u2019s a good chance you do need a firewall, or more likely, a VPN or proxy. Some older devices do not support secure remote login - they may only support telnet, for instance, and may have no rate limiting to slow down a dictionary attack, and no access control, either. In that case you would want a firewall that only allow connections from machines you trust. That would include firewalling a critical machine not just from the internet, but from any other networks with PCs, webservers or anything else that could be compromised. Ideally, such old devices should be retired, but that does not always happen if it\u2019s too expensive and there is no modern equivalent that works - we read of military equipment still being controlled by floppy disks, for instance. If you connect a PC or a webserver to the internet, a simple firewall will not protect it. The firewall blocks port 80 inbound to the PC, but the PC was not listening anyway. The firewall can\u2019t block port 80 inbound to a webserver, because that would stop it working completely. The firewall does not block outbound traffic from the PC, because that would prevent the user from accessing the internet. But in practice, the user is the threat - they get a virus in email, or they download something malicious and run it deliberately because they were tricked, and it creates outbound traffic. A firewall, however, will act as a redundant layer of defense in case of misconfiguration or compromise. The PC was not supposed to be listening on port 80, but it was because the user accidentally installed a webserver along with some other program. They will have to configure the firewall, too, in order to get it to work. Millions of people connect smartphones and laptops to the internet every day with no firewall, and generally speaking, they remain safe. There is in fact no way that they could install a firewall in any case, since they have no access to the cellular data network used by their device. They could use a software firewall inside the device itself, but that is limited since any malware that could compromise their device could in theory compromise the firewall, too - on Windows, many malicious programs have routines to disable or evade common firewalls. ",
+            "date": "Answered June 14, 2016",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Geoff Leigh",
+                "href": "/profile/Geoff-Leigh-1"
+            },
+            "answer_text": "Firewalls on a computer can restrict the open ports and inspect and prevent network traffic.  It is a necessity if you wish to ensure your computer is not compromised or \u2018 hacked\u2019 and any secrets you may have or personal or financial account information and transactions are not stolen. Without one or more firewalls protecting a network it is like a road with entry to homes and factories with no gates or access control so that it is relatively easy for a burglar to access- or a hacker or malware program to exploit. Gates and security inspections will not absolutely prevent a burglar, but will make it harder. Firewalls will not prevent every potentially bad act, bit if they are configured appropriately can make things harder. A firewall may be implemented in a specific appliance or dedicated computer and or totally as part of a software tool installation such as Norton 360 or Kaspersky internet security. The default is to prevent all access through the firewall, and then add \u2018rules' or permissions for certain data traffic to pass through, like a guard in a guardhouse inspecting person and vehicles arriving at a gate and only allowing what has been authorized through. This sometimes prevents valid traffic through if the firewall does not \u2018learn' automatically what actions are permitted. So to prevent your computer from having your information stolen or a rogue malware using your computer to create mischief, a firewall is an essential and prudent thing to enable on a computer or network router or install a device or software that will help ensure a better level of security. I have 3 firewalls at my home. A network access device modem with a feature that limits inbound traffic and outbound traffic to a'normal' range of internet access; a router that has advanced packet inspection for inbound traffic to detect and stop some known malware and suspicious activity, and software on my home computers. Windows 10 defender on it's own is pretty good, but on some of my older devices as well as an iPhone, android phone and android tablets, a software security package firewall is active. So far I can be confdent that my time when banking, stock trading, sharing and using projects in git, my azure and aws development projects and some internal databases with client data have not been compromised or accessed without an authorized user or ip address being tracked as an origin. That it is 100% impenetrable no computer security professional would ever attest. I obtained a CISSP certification so I am pretty confident I know what I am talking about here! Firewall hacking is not as it is portrayed on entertainment tv and films. It is usually done by finding a loophole in the firewall or its access control, by running tools such as wafwoof or other penetration tools to find a port that is open that has little or no packet monitoring, and then using that port to run malicious exploitation code. If the firewalls are all worked around then your system is exposed, but it would take dedicated effort and time and expertise to complete. But good firewalls can also react against these actions and cut off the traffic by its source ip address, or a network counter hacker can add the rule that will block this attack as soon as it is detected, and as long as default port settings and route access default passwords on applications, databases and service components have been changed to strong passwords that wouod not easily be guessed. ",
+            "date": "Answered November 30, 2019",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dreezy Mida",
+                    "user_href": "/profile/Dreezy-Mida"
+                },
+                {
+                    "user_id": "Jow Yuzo",
+                    "user_href": "/profile/Jow-Yuzo"
+                }
+            ]
+        }
+    ]
+}

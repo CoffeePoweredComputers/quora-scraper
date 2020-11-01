@@ -1,0 +1,70 @@
+{
+    "title": "Given a field where 1+1 is not equal to  0, must (-1)(-1)=1? - Quora",
+    "tags": [
+        "Fields (mathematics)",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dean Rubine",
+                "href": "/profile/Dean-Rubine"
+            },
+            "answer_text": "Yes, that\u2019s true in all fields. There\u2019s no particular need for the qualification. If [math]1+1=0,[/math] i.e. if [math]1=-1,[/math] that\u2019s a field of characteristic two, and [math](-1)(-1) = (1)(1) = 1[/math]. We\u2019ll assume all our numbers are drawn from field [math]\\mathbb F[/math]. Let\u2019s go back to the field axioms and prove our result from first principals. We need to prove a couple of basic algebra rules. Lemma: [math]a0 = 0a = 0[/math] Multiplication by zero gives zero. Proof: [math]a0 = a0 + 0 \\quad[/math] def additive identity [math]a0 = a0 + ( a0 + -a0 ) \\quad[/math] existence & def of additive inverses [math]a0 = ( a0 + a0) + -a0  \\quad[/math] associativity [math]a0 = a(0+ 0) + -a0 \\quad [/math]distributive law [math]a0 = a0 + -a0 \\quad[/math] def identity ([math]0+0=0[/math]) [math]a0 = 0 \\quad [/math] def additive inverse [math]\\quad\\checkmark[/math] [math]0a = 0 \\quad [/math]Commutativity of multiplication [math] \\quad\\checkmark[/math] Even these simple proofs require some cleverness. Lemma: [math](-1)a = -a[/math] This says negation is the same as multiplication by -1. Proof: [math] (-1)a  +  1 a = (-1)a + 1 a  \\quad [/math]reflexivity of equality [math](-1)a + a = (-1 + 1) a \\quad [/math]def mult. identity, distributive law [math](-1)a + a = 0 a \\quad[/math] def additive inverse [math](-1)a + a = 0  \\quad [/math]by the first lemma [math](-1)a = -a \\quad [/math]def additive inverse [math]\\quad\\checkmark[/math] OK, we\u2019re ready to show: Theorem: [math](-1)(-1)=1[/math] [math]1 + -1 = 0 \\quad [/math] Existence and definition of the additive inverse [math](-1)(1 + -1) = (-1)(0) \\quad[/math] Multiplying equals by equals [math](-1)(1) + (-1)(-1) = 0 \\quad[/math] Distributive law, Lemma above [math]-1 + (-1)(-1) =0 \\quad[/math] def multiplicative identity [math]1 + (-1 + (-1)(-1)) = 1 + 0 \\quad[/math] adding equals to both sides [math](1 + -1) + (-1)(-1) = 1  \\quad[/math] Associativity, def additive identity [math]0 + (-1)(-1)=1 \\quad[/math] def additive inverse [math](-1)(-1)=1  \\quad[/math] def additive identity [math]\\quad\\checkmark[/math] It\u2019s a lot of work to prove the obvious, but worth it to assure ourselves our foundations are strong. ",
+            "date": "Answered September 3, 2020",
+            "views": "232",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Jonathan Devor",
+                    "user_href": "/profile/Jonathan-Devor"
+                },
+                {
+                    "user_id": "Jan van Delden",
+                    "user_href": "/profile/Jan-van-Delden-2"
+                },
+                {
+                    "user_id": "Gordon Dewis",
+                    "user_href": "/profile/Gordon-Dewis"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Alberto Cid",
+                    "user_href": "/profile/Alberto-Cid-1"
+                },
+                {
+                    "user_id": "Travis Brauer",
+                    "user_href": "/profile/Travis-Brauer"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Benjamin Keilty",
+                "href": "/profile/Benjamin-Keilty"
+            },
+            "answer_text": "Yes. In any field, [math]-1[/math] is the number [math]k[/math] such that [math]k+1=0[/math]. So then [math](k+1)(k-1)=0(k-1)=0[/math] as well. But expanding out the product, [math]0=(k+1)(k-1)=k^2-1[/math], proving [math]k^2=1[/math] or equivalently, [math](-1)(-1)=1.\\qed[/math] ",
+            "date": "Answered September 3, 2020",
+            "views": "54",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Matthias Zurbuchen",
+                    "user_href": "/profile/Matthias-Zurbuchen"
+                },
+                {
+                    "user_id": "Jo\u00ebl Ganesh",
+                    "user_href": "/profile/Jo\u00ebl-Ganesh"
+                }
+            ]
+        }
+    ]
+}

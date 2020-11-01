@@ -1,0 +1,34 @@
+{
+    "title": "What is a good video editing software for low end computers? - Quora",
+    "tags": [
+        "Video Editing and Production",
+        "Software Recommendations",
+        "Video Editing Software",
+        "Video Production",
+        "Video Editing",
+        "Computer Science",
+        "Videos"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Larye Parkins",
+                "href": "/profile/Larye-Parkins-1"
+            },
+            "answer_text": "In a pinch, if you are not averse to the command-line, you could use ffmpeg, which is a multi-platform open-source command-line tool and the back-end for many graphical video editors. I\u2019ve used ffmpeg on a Raspberry Pi Model B (512 MB RAM, single-core Atom CPU) to assemble timelapse videos from a sequence of still images. It takes about 2 hours to render a 4-minute video that takes about four minutes to render on a quad-core Xeon CPU with 8 GB RAM. You can\u2019t get much low-power than that. ffmpeg isn\u2019t exactly intuitive, but if you have video clips and know where you want to cut them, you can assemble them with or without audio, add audio tracks, etc. On the graphical editor side, if you have at least 4 GB RAM and a decent graphics capability, and enough disk space to configure a large swap space or page file, you can use the open-source OpenShot or Kdenlive tools that were developed for Linux but are now multi-platform. These are memory hogs (hence the large swap space for low-memory machines) and will run very slowly, but can be used if you are patient and need a visual-type editor. Graphics is a big deal with these tools. I have an old netbook with fixed 8MB shared-memory on-board graphics, and it won\u2019t play any video at any resolution, let alone edit video with any degree of success. The machines I do my visual video editing on have i7 CPUs, 8 GB and 16 GB RAM with 2 GB Nvidia and Radeon GPUs, respectively, and need at least 8 GB swap space to run without crashing, when working with 30\u201340 video clips of 15 seconds to two minutes each. I use ffmpeg to transcode 4K video from the camera to 1080p for editing for YouTube and Vimeo, and for consistent source, since I use several cameras with different resolution. The video I process on the Raspberry Pi is 800x600 VGA, so that\u2019s another way to edit video on a low-power machine: reduce the resolution with command-line tools for visual editing, if you don\u2019t need high resolution, or use visual at low res for mapping the cuts and render the high-res version with the command line. ",
+            "date": "Answered January 14, 2020",
+            "views": "26",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jonathan H. Pienaar",
+                "href": "/profile/Jonathan-H-Pienaar"
+            },
+            "answer_text": "My vote would go to KDEnlive, a free and open source video editor originally built for linux, but now quite at home in windows. A lot also depends on the type of footage \u2014 you\u2019re going to struggle with 4K or even HD footage, if your processor and graphics card aren\u2019t up to spec. If you repost or reply with your specific specs we can give you better advice. ",
+            "date": "Answered January 14, 2020",
+            "views": "419",
+            "upvotes": "0"
+        }
+    ]
+}

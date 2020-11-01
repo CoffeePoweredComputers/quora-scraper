@@ -1,0 +1,21 @@
+{
+    "title": "Is there a technology to receive a response of bulk messaging from receivers? - Quora",
+    "tags": [
+        "Bulk SMS",
+        "Messages",
+        "Messaging",
+        "Text Messaging"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Coogan",
+                "href": "/profile/Brian-Coogan"
+            },
+            "answer_text": "Any bulk messaging provider can help you with this (eg: Clickatell, Twilio, many others). When the incoming messages are received by your provider they either send them to your receiver script on your server (often called a \u201cweb hook\u201d) which deals with them as you require, or they allow you to periodically check (\u201cpoll\u201d) for new messages by calling their supplied API. The provider typically includes the number the message came from, as well as other details such as the ID of the message they were replying to. ",
+            "date": "Answered October 23, 2020",
+            "views": "16",
+            "upvotes": "0"
+        }
+    ]
+}

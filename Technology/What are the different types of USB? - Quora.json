@@ -1,0 +1,56 @@
+{
+    "title": "What are the different types of USB? - Quora",
+    "tags": [
+        "Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Akhil Vijayakumar",
+                "href": "/profile/Akhil-Vijayakumar-6"
+            },
+            "answer_text": "USB (Universal Serial Bus) is a communication standard introduced for interconnecting various computer peripherals. The USB consists of two parts- USB connector specification and USB protocol specification. USB connector specification (Electrical and mechanical connector specifications) All connectors have Receptacle (R) and Plus (P). Receptacle will be in host side (for example USB port in PC, mobile phone etc) and Plug is in cable (For example the charging cable micro B connector in mobile chargers) Type-A (Standard)- Supports Low speed, Full speed and High speedType-A SuperSpeed connector (more pins)Type A Mini or Mini-A connectorType A Micro or Micro-A connectorType-B Standard connectorType-B SuperSpeed connectorType-B Mini or Mini-B connectorType-B Micro or Micro-B connectorType-C connector USB communication protocols USB 1.0 and USB 1.1 - First version of USB protocol released in early 1996, which supports data transfer rate of 1.5Mbps (called as Low speed) and 12Mbps (Full speed). USB 1.1 introduced as enhancement to USB 1.0, because USB 1.0 protocol had some timing and power limitations.USB 2.0 - USB 2.0 increased the maximum transfer speed to 480Mbps (High speed). USB 2.0 protocol received more acceptance in as a communication compared to its prior versionUSB 3.0/3.1/3.2 - The USB 3.0 protocol supports signalling rate up to 5Gbps, called Super speed USB. In early 2013, USB 3.0 updated to USB 3.1 with higher transfer rate of 10Gbps (SuperSpeed+). Next generation, protocol is called USB 3.2 and have a maximum speed of 20Gbps (SuperSpeed+).Note 1: The protocol not only varies in data transfer speed, but also the signals, decoding scheme, signalling scheme, physical layer implementation and many other parameters. Note 2: USB 3.0 is also called USB 3.1 Gen 1 and USB 3.2 Gen 1x1. Similarly USB 3.2 is called USB 3.1 Gen2 and USB 3.2 Gen 2x1. Note 3: USB specifications are not only defined in protocol and connectors, but in power delivery, USB charging, Cabling, Signalling etc.. ",
+            "date": "Answered January 15, 2018",
+            "views": "21",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Cpk Kk",
+                    "user_href": "/profile/Cpk-Kk"
+                },
+                {
+                    "user_id": "Mogolo Stephano",
+                    "user_href": "/profile/Mogolo-Stephano"
+                },
+                {
+                    "user_id": "Venkata Ramana Ayalasomayajula",
+                    "user_href": "/profile/Venkata-Ramana-Ayalasomayajula"
+                },
+                {
+                    "user_id": "John Doe",
+                    "user_href": "/profile/John-Doe-9582"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Grimshaw",
+                "href": "/profile/Paul-Grimshaw-6"
+            },
+            "answer_text": "You have to distinguish between signalling, connector types, and power capabilities. There\u2019s a degree of mix and match between these so the total number of possible combinations is large. I\u2019ll skip obsolete types. For signalling variants we currently have: USB 2.0 (480Mbps)USB 3.1 gen 1 (5Mbps)USB 3.1 gen 2 (10Mbps)USB 3.2 (20Mbps)For connectors we have type A for hosts, type B for peripherals and type C for both. Type C supersedes types A and B, but we\u2019re in a transition period where all three types are common. Type A can talk to types B or C, and type B can talk to types A or C. Types A and B can be standard or micro size. There\u2019s just the one size of type C at the moment. All types A and B support USB 2.0, and have a variant for adding in USB 3.1 support. USB 3.2 is not supported. Type C supports all four signalling variants, but actual support is manufacturer specific other than the rule that for a given signalling variant all lower numbered variants must also be supported. Type C also supports alternative signalling protocols, commonly DisplayPort but also HDMI, MHL, and Thunderbolt 3 (as of August 2018). The first three of these are directional, however Type C can handle either end of the link. In addition there are a variety of power delivery capabilities available. The latest USB PD standard caters for up to 100W using 20V at 5A. All cables should be able to support up to 3A, but only a particular variant of a type C to type C cable can support up to 5A. According to the standards USB PD up to 60W (20V 3A) could be provided on types A/B, but in practice these tend to be limited by manufacturers to just 5V power variants, up to 3A (except for Quick Charge and other proprietary power standards which are not officially part of USB). Type A is limited to being a power source and type B a power sink. Type C has bidirectional power support. Again specific port power implementations are manufacturer specific, but note that power handling is NOT limited by USB signalling variant, although it used to be - hence the commonly quoted out of date limits. In fact newer PD standards and also port types are retrofitted to the older signalling standards as they are defined. ",
+            "date": "Answered August 19, 2018",
+            "views": "308",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Stephen Nie",
+                    "user_href": "/profile/Stephen-Nie"
+                },
+                {
+                    "user_id": "Akshay Gidwani",
+                    "user_href": "/profile/Akshay-Gidwani-4"
+                }
+            ]
+        }
+    ]
+}

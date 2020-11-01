@@ -1,0 +1,39 @@
+{
+    "title": "How to add a Facebook Like button to my Fan page tab - Quora",
+    "tags": [
+        "Facebook Fan Pages",
+        "Facebook Like Button"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Fenil Desai",
+                "href": "/profile/Fenil-Desai"
+            },
+            "answer_text": "Steps to add a Facebook Like button to a fan page tab: You can use the fb:comments FBML tag to have like button on a fan page. So in ur fan page, just add a FBML box & add the following code to it, to have only the like button. /* This css will hide the comment box & display only the like button */ \t<style type=\"text/css\">            div.comment_body{            display:none;            }        </style>         <fb:comments xid=\"my_comments\" canpost=\"true\" candelete=\"false\"\treturnurl=\"urltobeliked/\">            <fb:title>Title</fb:title>                    </fb:comments> Check this link for more - http://fenildesai.com/how-to-add-a-facebook-like-button-to-your-facebook-fan-page-tab/ ",
+            "date": "Answered March 17, 2011",
+            "views": "905",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Brad Williams",
+                "href": "/profile/Brad-Williams-6"
+            },
+            "answer_text": "Since Facebook is phasing out FBML. You are going to have to add an iFrame application to your fan page. Here is a guide: http://braginteractive.com/how-to-add-facebook-iframe-page/ Once you do that, head over to Facebook developers(http://developers.facebook.com/docs/reference/plugins/like/) and create your like button and add the code to your iFrame page. ",
+            "date": "Answered March 17, 2011",
+            "views": "32",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Na Sy",
+                    "user_href": "/profile/Na-Sy"
+                },
+                {
+                    "user_id": "Jonathan Thompson",
+                    "user_href": "/profile/Jonathan-Thompson"
+                }
+            ]
+        }
+    ]
+}

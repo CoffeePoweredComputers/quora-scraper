@@ -1,0 +1,24 @@
+{
+    "title": "Suppose x has the Poisson distribution with parameter \u03bb. If x is even -1 and x is odd, what is the distribution of y? - Quora",
+    "tags": [
+        "Poisson Distribution (probability)",
+        "Odd Numbers",
+        "Probability (statistics)",
+        "Functions (mathematics)",
+        "Statistics (academic discipline)",
+        "Calculus",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jan van Delden",
+                "href": "/profile/Jan-van-Delden-2"
+            },
+            "answer_text": "We are given a random variable  having a Poisson distribution with parameter :  This makes sure that we have, for all :  And we define , for all negative values of . These probabilities add to :   I don\u2019t quite get the question. The question states something about  but doesn\u2019t relate it to a new distribution . The fact that  should be even minus  and  is odd might be two separate ways of describing the same property you are after. And actually you should make a distinction between a random variable, like  and its realizations. It could be that your are interested in , for , which states that you are interested in a new distribution, which is defined for every value of , but will itself only take on odd values . It could be that you are interested in a distribution  which is defined for the odd values of . We could write . Where the constant  has to be chosen such that the sum of the probabilities is . My money is on this one. In that case we may write:  Where we must calculate  such that:  Or  Which means that we should compute:  Where we may multiply with  later on, this is just a constant.  I\u2019ll assume you know the Taylor series of .  We may retrieve the sum we\u2019d like to know, by substituting  and studying the odd indices. We do this by using a trick:  If  is even the term  equals  and it equals  if  is odd. This is precisely what we need. That means that our constant equals:  And we find:   Try to pick the even values yourself, i.e. compute  such that . ",
+            "date": "Answered August 7, 2020",
+            "views": "444",
+            "upvotes": "0"
+        }
+    ]
+}

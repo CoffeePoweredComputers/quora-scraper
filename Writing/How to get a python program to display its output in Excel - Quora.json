@@ -1,0 +1,48 @@
+{
+    "title": "How to get a python program to display its output in Excel - Quora",
+    "tags": [
+        "Working with Excel Using Python",
+        "Microsoft Excel",
+        "Python (programming language)",
+        "How-to Question",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jason Gilliland",
+                "href": "/profile/Jason-Gilliland"
+            },
+            "answer_text": "The real question (to me) is: \"why an Excel spreadsheet?\". What are you really hoping to do? The simplest answer, in my mind, is if what you really want is a tabular output of the results that you can open up and view in Excel. For this, you need only the python built-in csv module. This lets you easily wrap up outputting a CSV, which you can then open in Excel (or any other spreadsheet program, for that matter). If you want to display the results in some kind of formatting, you may be better off having your python script generate a (basic) HTML page and then launching it in the system default browser using os.system(). If you want to plug in the results of the calculation to an Excel workbook that already has other calculations built into it (as formulas), then you might be able to find something to allow you to modify a fully featured Excel workbook, but you would probably be better off either re-implimenting your Excel calculations in python, or vice versa. In general, it's better to frame these types of questions in terms of what you hope to accomplish overall, rather than by specifying which 2 technologies you hope to stitch together, whether or not a better solution to your real problem may exist. ",
+            "date": "Answered January 19, 2016",
+            "views": "36",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Oscar Law",
+                    "user_href": "/profile/Oscar-Law-10"
+                },
+                {
+                    "user_id": "Shuyang Sheng",
+                    "user_href": "/profile/Shuyang-Sheng"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shuyang Sheng",
+                "href": "/profile/Shuyang-Sheng"
+            },
+            "answer_text": "You can checkout the data management toolbox pandas, which has a function to export data to an excel file (.xslx): pandas.DataFrame.to_excel - pandas 0.17.1 documentation  Then you can use os.system() in Python to open the newly generated file. If you are only looking to display the results in a good format, you probably don't even need to interact with excel. Pandas can display a DataFrame with a very pretty format in a browser. ",
+            "date": "Answered January 19, 2016",
+            "views": "29",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Oscar Law",
+                    "user_href": "/profile/Oscar-Law-10"
+                }
+            ]
+        }
+    ]
+}

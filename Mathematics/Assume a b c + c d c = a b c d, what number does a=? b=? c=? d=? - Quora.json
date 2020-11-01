@@ -1,0 +1,28 @@
+{
+    "title": "Assume a b c + c d c = a b c d, what number does a=? b=? c=? d=? - Quora",
+    "tags": [
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Manny August FitzStephen Bono",
+                "href": "/profile/Manny-August-FitzStephen-Bono-1"
+            },
+            "answer_text": "Two three-digit numbers can not add more than 999 + 999 = 1998 We take for 'a' the value of 1: a = 1 We take for 'd' the value of 8: d = 8 For 'c' we can take values \u200b\u200bfrom 0 to 9 If we take the value 9, then cdc = 989 Then abc + cdc = 1b9 + 989 = 1b98 We have a = 1, c = 9, d = 8, b =? We lack 'b'. What is the value of 'b' if 1b9 + 989 = 1b98? If we take b = 9, then 199 + 989 = 1188: (does not end in 98) If we take b = 8, then 189 + 989 = 1178: (does not end in 98) If we take b = 7, then 179 + 989 = 1168: (does not end in 98) If we take b = 6, then 169 + 989 = 1158: (does not end in 98) If we take b = 5, then 159 + 989 = 1148: (does not end in 98) If we take b = 4, then 149 + 989 = 1138: (does not end in 98) If we take b = 3, then 139 + 989 = 1128: (does not end in 98) If we take b = 2, then 129 + 989 = 1118: (does not end in 98) If we take b = 1, then 119 + 989 = 1108: (does not end in 98) If we take b = 0, then 109 + 989 = 1098: (yes it ends in 98) So if abcd = 1b98, only if we take b = 0 would it be congruent, since none of the addends where b \u2260 0 gives result 98 in its last two digits, except in the case of b = 0. Then the numbers a, b, c and d would be: a = 1 b = 0 c = 9 d = 8 The number in question: 1098 ",
+            "date": "Answered February 14, 2019",
+            "views": "12",
+            "upvotes": " Answer requested by Ken Yu"
+        },
+        {
+            "author_info": {
+                "name": "Ellis Cave",
+                "href": "/profile/Ellis-Cave"
+            },
+            "answer_text": "Using the J programming language: Brute force approach - Generate all possible single-digit combinations of a, b, c, and d, and then list the number of combinations generated (10,000 combinations of 4 digits). $ 'a b c d'=.|:f=.odo 10 10 10 10 4 10000 Find out what combinations of a, b, c, & d solve the equation: f#~((10#.a,.b,.c)+(10#.c,.d,.c))=(10#.a,.b,.c,.d) 0 0 0 0 1 0 9 8 So there are two solutions: a=0, b=0, c=0, and d=0. or a =1, b=0, c=9, and d=8. ",
+            "date": "Answered February 15, 2019",
+            "views": "344",
+            "upvotes": " Answer requested by Ken Yu"
+        }
+    ]
+}

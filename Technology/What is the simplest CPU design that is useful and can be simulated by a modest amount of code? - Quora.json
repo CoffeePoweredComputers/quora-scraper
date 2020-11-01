@@ -1,0 +1,57 @@
+{
+    "title": "What is the simplest CPU design that is useful and can be simulated by a modest amount of code? - Quora",
+    "tags": [
+        "Central Processing Units",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Othman Ahmad",
+                "href": "/profile/Othman-Ahmad"
+            },
+            "answer_text": "Try the MANO RISC CPU described by Mano in his book Digital Logic and Computer Design. Based on this design, I had proposed and filed a patent for the simplest scalable processor. Very hard for anyone to make it simpler because there is very little decoding for the instructions because the opcodes control the CPU hardware directly. The next step is to show how useful it is. Even the simplest can input and output data to lights etc, as shown by simple commercial procesosrs such as PIC microcontrollers, but these are still too complicated especially if you want to just light LEDs etc. The next question is how to show that a CPU can still be useful despite being so simple? Turn it into a random number generator. You do not need sophisticated instructions to implement an RNG. Just add and subtract. I had written code in PIC and tested in a simulator. I had also just finished writing code using the simplest processor. There are tricks required, but there is little problem in implementing an RNG, even industrial strength. Additive Lagged Fibonacci Number Generator is a good starting point. To make it even better, you can combine it with another generator as shown in the literature. ",
+            "date": "Answered August 2, 2018",
+            "views": "889",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jer Ram",
+                    "user_href": "/profile/Jer-Ram"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Irn\u00e9 Barnard",
+                "href": "/profile/Irn\u00e9-Barnard"
+            },
+            "answer_text": "Useful? Depends what use you put it to I guess. I mean, even a simple light-on-light-off may be useful enough in some situations. But anything for general purpose computing is likely to be rather complex, MIPS probably being one of the lowest complexities there is. If all you really want is to learn how these things work, then I can highly recommend this course: The Elements of Computing Systems - From NAND to Tetris. They\u2019ve got a HDL (Hardware Description Language) interpreter built in Java, which you then send your CPU design into, it then simulates your design and allows you to send your own assembly-biult and higher-level programs to it. The end result is to get a tetris game to work on it. ",
+            "date": "Answered September 6, 2016",
+            "views": "12",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nathaniel Cassidy",
+                    "user_href": "/profile/Nathaniel-Cassidy-1"
+                },
+                {
+                    "user_id": "Phillip Graham",
+                    "user_href": "/profile/Phillip-Graham-10"
+                },
+                {
+                    "user_id": "Basile Starynkevitch",
+                    "user_href": "/profile/Basile-Starynkevitch"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Mumeed Melkavi",
+                    "user_href": "/profile/Mumeed-Melkavi"
+                }
+            ]
+        }
+    ]
+}

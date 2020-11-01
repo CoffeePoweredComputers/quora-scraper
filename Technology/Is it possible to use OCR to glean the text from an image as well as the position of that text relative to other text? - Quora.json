@@ -1,0 +1,26 @@
+{
+    "title": "Is it possible to use OCR to glean the text from an image as well as the position of that text relative to other text? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amit Jnagal",
+                "href": "/profile/Amit-Jnagal"
+            },
+            "answer_text": "The short answer to your question is Yes. Raw OCR engines can give you extracted text from a document along with the position of the text. You can use that to infer the nature, meaning and intent of the text but why stop there? Machine learning systems begin their work where OCR engines stop. Each signal that you can plug into the learning system can increase the accuracy of extraction. For instance: Words before and after a wordNature of the expected data - number, date, address, etc.Context - type of document - receipt, invoice, bank statement, etc.Historical data for the user extracting the dataHistorical data for the merchantWisdom of the crowd - insights from other similar document typesFeedback Loop - let the user correct an output and feed it back to you.Lookup Data - Match against a list of expected valuesAnd a ton more\u2026We do some extremely complex data extraction work and use a plethora of technologies and signals together to make sense of the raw OCR data.Submit ",
+            "date": "Answered March 26, 2018",
+            "views": "730",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vecent Li",
+                "href": "/profile/Vecent-Li-1"
+            },
+            "answer_text": "Of course, Tesseract OCR engine can recognize text from image, and it supports find the associate character while the engine can't detect accurate. For example, if the is a \"B\" in the image, however the \"B\" is not clear enough to read, tesseract ocr tool will return you a \"8\" to replace.I know a c# ocr converter using tesseract ocr engine, if you like, you can go to have a try. ",
+            "date": "Updated June 11, 2017",
+            "views": "217",
+            "upvotes": "0"
+        }
+    ]
+}

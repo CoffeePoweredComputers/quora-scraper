@@ -1,0 +1,91 @@
+{
+    "title": "How are OLED TVs able to produce more contrast than CRT TVs? - Quora",
+    "tags": [
+        "CRT Monitors",
+        "OLED Displays",
+        "Display Technologies",
+        "Television Sets"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bob Myers",
+                "href": "/profile/Bob-Myers-5"
+            },
+            "answer_text": "I hate to disagree with another response, but a CRT really doesn't provide terrific contrast - and yes, an OLED can do considerably better. Both are emissive displays, meaning that unlike an LCD (which is just a light valve), they produce their own light instead of relying on a constantly-on backlight (which will always see SOME leakage through an LCD panel, thus increasing the black level and reducing the contrast). There are two problems with CRTs, though, that tend to limit the delivered contrast. First is the fact that the cutoff point of the electron gun drifts and cannot be maintained precisely at the \"black level\" of the incoming video signal. It really shouldn't be set exactly at the black level anyway, because as you get close to the CRT cutoff point its behavior is becoming very nonlinear, which would distort the bottommost gray levels. So a proper CRT setup places the black level just out of cutoff, meaning that the beam won't quite be extinguished when the video level is at black. (Unfortunately, the cutoff point will continue to drift as the CRT ages, which means that you can't maintain this adjustment for very long; I've seen some professional users who insisted on readjustment weekly if not daily. This is another reason for not setting the black right at cutoff, as it will very soon be below cutoff and take the bottommost grays with it.) Second, while there are some contrast-enhancing tricks that can be played with the CRT - such as a \"black matrix\" surround around all of the phosphor dots on the screen - the phosphor screen is pretty reflective, being backed by a nice shiny metal layer. So with any ambient lighting at all, the true limit on the contrast ratio that can be delivered is actually reflected ambient light. Under typical home or office viewing conditions, it's very typical to see delivered contrast ratios of not more than 50:1 to 100:1. OLEDs suffer from some of the same problems, but given the digital nature of the video chain driving them and the OLED drivers themselves, it's relatively easy to ensure that the OLED is actually not emitting at all when a black level signal is received, while still showing all the gray levels with the correct tone response (\"gamma\") curve. OLEDs have also very often included a front circular polarizing filter, which has the effect of greatly reducing reflected ambient light. ",
+            "date": "Answered May 22, 2018",
+            "views": "19",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steve Mazza",
+                    "user_href": "/profile/Steve-Mazza-8"
+                },
+                {
+                    "user_id": "Lankey Kong",
+                    "user_href": "/profile/Lankey-Kong"
+                },
+                {
+                    "user_id": "J C",
+                    "user_href": "/profile/J-C-2732"
+                },
+                {
+                    "user_id": "Ankur Sonker",
+                    "user_href": "/profile/Ankur-Sonker-3"
+                },
+                {
+                    "user_id": "Marshall Goldberg",
+                    "user_href": "/profile/Marshall-Goldberg"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Joey-Of-Texel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeroen Van Duyn",
+                "href": "/profile/Jeroen-Van-Duyn"
+            },
+            "answer_text": "Hi, Bob is right that phosphor is reflective, it is a white powder after all. Ambient light is your enemy. That is why the black matrix and/or dark glass were introduced, to attenuate the reflection of the ambient light. Colored phospors or color filters between the phospor and the glass would help too, but were too expensive. The CRT rear-projectors had a lenticular that would focus the light through a very black matrix, i.e. narrow openings shared by R,G,B. LCDs and OLEDs have more effective anti-reflex measures, on the principle of (circular) polarisation. It was said that LCD looks better in a bright shop, and CRT (and late plasma) looks better in a dark living room. Bob is not right about the cutoff voltage drifting. When I joined Philips in 1987 we already had automatic black level stabilization (TDA4580, and probably the one before that), so the black was adjustment-free. Later we also got white level stabilization (TDA4680). At black the beam current was really low, not a problem. Another thing that people forget is backscattering. If there is a white block on the screen then some of the electrons that hit the shadow mask bounce back and fly to another location where they can generate light. If that area was supposed to be black then it is now grey. If it was supposed to be red then it is now more like orange\u2026 The electrons are free to travel because most of the CRT volume is field-free, everything is at anode voltage. Some shadow masks were deliberately coated (with carbon ?) to reflect instead of absorb electrons, to reduce dissipation and warping (\u201clocal doming\u201d) which leads to landing errors. OLEDs have no backscattering problem, of course. Black is black, although you could argue that the current sources that drive the pixels can be imperfect too. LCD is fighting back with 2D-dimmable backlights, now up to 5000 segments, and dual panels where a rear monochrome panel serves as a backlight modulator. Even global dynamic backlight dimming makes a better black, at least on dark scenes. Everybody is fighting for a piece of the HDR cake. ",
+            "date": "Answered June 1, 2019",
+            "views": "590",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steve Mazza",
+                    "user_href": "/profile/Steve-Mazza-8"
+                },
+                {
+                    "user_id": "Lankey Kong",
+                    "user_href": "/profile/Lankey-Kong"
+                },
+                {
+                    "user_id": "J C",
+                    "user_href": "/profile/J-C-2732"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Macdonnel",
+                "href": "/profile/Dave-Macdonnel"
+            },
+            "answer_text": "Actually they can\u2019t. A properly set up CRT can produce the highest contrast of any display. On a properly set up CRT display the beam can go from full cut off to 100% in a linear predictable slope. OLED are simply organic agents that produce ultravilot light when sttimulated by electric current. Like plasma TVs the light level is produced by how long they are switched on. They are very good, but like a plasma set they have a specific range of brightness that moved in steps from 0 to 100%. A CRT being an analog device can output levels between these steps. Most people never experienced a properly set up HDTV CRT, but if peoperly calibrated, there is not much that can touch one. ",
+            "date": "Answered May 21, 2018",
+            "views": "763",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rhett Krecic",
+                    "user_href": "/profile/Rhett-Krecic"
+                },
+                {
+                    "user_id": "Jonathan Carl",
+                    "user_href": "/profile/Jonathan-Carl-1"
+                }
+            ]
+        }
+    ]
+}

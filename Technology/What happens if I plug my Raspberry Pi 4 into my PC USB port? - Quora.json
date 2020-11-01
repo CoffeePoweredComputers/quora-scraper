@@ -1,0 +1,36 @@
+{
+    "title": "What happens if I plug my Raspberry Pi 4 into my PC USB port? - Quora",
+    "tags": [
+        "Raspberry Pi Zero",
+        "Raspberry Pi 2",
+        "Raspberry Pi",
+        "Universal Serial Bus (USB)",
+        "Personal Computers",
+        "Computer Hardware",
+        "Electronics",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Yan",
+                "href": "/profile/David-Yan-53"
+            },
+            "answer_text": "I presume you mean plugging the power draw into the PC's USB port? You might get the red LED (power) lighting up but not much else. It may be able to boot, just about, but it will shut down and will try and boot again, going into a boot loop. While 5v meets the voltage requirements, the Pi4 also requires at least 2+amps (recommended 3amps) and the PC's usb port can only supply around 500ma. If you mean USB to USB, again nothing unless there is some communication protocol occurring between the devices. You need to be running some kind of software at either end to transmit and listen. The default situation depends on what operating system the devices are running and how the ports get configured. ",
+            "date": "Answered January 12, 2020",
+            "views": "438",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jeff Drobman",
+                    "user_href": "/profile/Jeff-Drobman"
+                },
+                {
+                    "user_id": "Rod Nussbaumer",
+                    "user_href": "/profile/Rod-Nussbaumer-1"
+                }
+            ]
+        }
+    ]
+}

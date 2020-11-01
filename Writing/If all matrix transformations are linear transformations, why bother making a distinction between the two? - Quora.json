@@ -1,0 +1,48 @@
+{
+    "title": "If all matrix transformations are linear transformations, why bother making a distinction between the two? - Quora",
+    "tags": [
+        "Matrices (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Arun Iyer",
+                "href": "/profile/Arun-Iyer-1"
+            },
+            "answer_text": "Given a linear map [math]T:V \\mapsto W[/math], we can \"represent\" this is as a matrix when [math]V[/math] and [math]W[/math] are finite dimensional. The keyword here is \"represent\". Matrix is a form of representation for a linear map and a very useful one because many of the properties of a matrix like determinants, trace etc. characterize somethings about the linear map. What if [math]V[/math] or [math]W[/math] or both are infinite? While we can still represent (some/all?) these maps as infinite matrix, many of the properties like determinants, trace etc don't necessarily follow through for all matrices (We do have specialized definitions like Fredholm determinant). Dealing with linear maps on infinite dimensional spaces simply as linear maps turns out to be much easier than handling them as matrices. ",
+            "date": "Answered January 16, 2015",
+            "views": "489",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shauli Ravfogel",
+                    "user_href": "/profile/Shauli-Ravfogel"
+                },
+                {
+                    "user_id": "Brando Miranda",
+                    "user_href": "/profile/Brando-Miranda"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Josel Cioppa",
+                "href": "/profile/Josel-Cioppa"
+            },
+            "answer_text": "In practise, we often don't distinguish between them, because for the finite dimensional case, the two spaces (of matrices and transformations) the same in all important ways. However it's important to know what you're talking about in math! Though [math]M_n(\\mathbb{C}) \\cong End(\\mathbb{C}^n) \\cong \\mathbb{C}^n \\otimes \\mathbb{C}^n \\cong (\\mathbb{C}^n)^* \\otimes \\mathbb{C}^n, [/math]none of these spaces are  the same. If you went through your mathematical life thinking that the definition of a linear map was an array of scalars, you'd be mistaken, and likely confused when reading any sort of math literature.  ",
+            "date": "Answered February 17, 2016",
+            "views": "290",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dominic Mills",
+                    "user_href": "/profile/Dominic-Mills-6"
+                }
+            ]
+        }
+    ]
+}

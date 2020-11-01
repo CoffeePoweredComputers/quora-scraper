@@ -1,0 +1,113 @@
+{
+    "title": "What precisely is a differential equation? - Quora",
+    "tags": [
+        "Differential Equations",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chris Hall",
+                "href": "/profile/Chris-Hall-26"
+            },
+            "answer_text": "Let's take an example. Imagine a desert island where a deadly virus takes hold. Every day, a tenth of the population dies. We might say that: Number dying per day = 0.1 x population Let's now write this using maths symbols: - dN / dt = 0.1 x N where: dN / dt = Number dying per day The negative sign tells us that people dying decreases the population (it's a negative change) N = Population WHAT WILL HAPPEN TO THE POPULATION, N ? The population, N, will obviously decrease every day. This means that the number of people dying every day will also decrease. For example: On day zero the population is 10 000 and then the virus arrives On day one the population starts at 10 0000 so 1000 die On day two the population starts at 9000 so 900 die On day three the population starts at 8100 so 810 die and so on. CAN I WORK OUT HOW MANY PEOPLE WILL BE ALIVE AFTER 12 DAYS? Well, you could work it out like as I have done it above for three days, but just keep going until you get to day 12. But that would be a bit tedious. So a quicker way is look at our equation again. Here it is: - dN / dt = 0.1 x N This type of equation is called a differential equation. The nice thing about differential equations is that we can write them in a different way. So we can write any differential equation in a way that looks totally different. When we do this we say that we are going to \"solve the differential equation.\" If we solve: - dN / dt = 0.1 x N We get: N = n x e^-0.1xt n= the population to begin with (on day zero) e = 2.71 ( this is an important number in maths and physics called the exponential constant) t = the number of days I am interested in N = the population after t days. So, after 12 days: N = n x e^-0.1xt N = 10 000 x e^-0.1x12 N = 10 000 x e^-1.2 If you use your scientific calculator to work out e^-1.2 you will get 0.30 So: N = 10 000 x 0.30 N = 3000 After 12 days the population will be 3000. HOW DO I SOLVE DIFFERENTIAL EQUATIONS? If you study calculus this is one of the things you will learn to do. WHY ARE DIFFERENTIAL EQUATIONS IMPORTANT? All sorts of things in the world around us can be described by differential equations. So they are really important in Physics. And by knowing how to solve them we can work things out much more quickly than having to go through lots of steps. HERE ARE SOME OTHER EXAMPLES OF DIFFERENTIAL EQUATIONS 1. The change in height per day of water in a particular tank that has a hole in its base. - dH / dt = 0.2 H dH / dt = change in height of water per day H = height of water in the tank You will see that the leaking water means the height of water in the tank drops by one fifth of its new height every day. Notice the negative sign again because the height is decreasing. The solution of this differential equation is: H = h x e^-0.2 x t So we can work out the height, H, of water t days after the tank was full at a height, h. The 0.2 will be a different number for a different tank as it depends on the size of the hole. 2. The amount of charge, Q, that flows every second from a capacitor (a device that stores charge). - dQ / dt = 0.04 x Q dQ / dt = charge flowing from the capacitor every second. Q = charge stored in the capacitor. In this example, the capacitor loses 4% of its remaining charge every second. The solution of this differential equation is: Q = q x[math] [/math]e^-0.04 x t So we can work out the charge, Q, still stored in the capacitor t seconds after the capacitor had a full charge, q. The 0.04 will depend on the type of capacitor and the electrical resistance of the circuit. 3. The number of radioactive atoms that emit radiation every second - dN / dt = 0.0005 N dN / dt = the number of atoms that emit radiation every second N = number of radioactive atoms that have not yet emitted radiation So we see that 0.05 % of the atoms that have not yet emitted radiation will emit radiation every second. QUESTION You might like to have a go at this question: (a) Write down what you think is the solution of this differential equation (b) If a sample of this radioactive material contains one million atoms that have not emitted radiation, how many atoms will there be that have still not emitted after 60 seconds? [You should get an answer of about 970 446 atoms] THERE ARE LOTS OF TYPES OF DIFFERENTIAL EQUATION THAT YOU WILL COME ACROSS IN CALCULUS. Isaac Newton invented calculus to help him explain his theories. It is still as useful today as it was over three hundred years ago. ",
+            "date": "Updated June 24, 2017",
+            "views": "115",
+            "upvotes": " View 148 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nisarga Mridha",
+                    "user_href": "/profile/\u09a8\u09bf\u09b8\u09b0\u09cd\u0997-\u09ae\u09c3\u09a7\u09be-Nisarga-Mridha"
+                },
+                {
+                    "user_id": "Aser Ahmad",
+                    "user_href": "/profile/Aser-Ahmad"
+                },
+                {
+                    "user_id": "Rts",
+                    "user_href": "/profile/Rts-9"
+                },
+                {
+                    "user_id": "Chetna Kesarwani",
+                    "user_href": "/profile/Chetna-Kesarwani-2"
+                },
+                {
+                    "user_id": "Anne Han",
+                    "user_href": "/profile/Anne-Han-11"
+                },
+                {
+                    "user_id": "Jatin Chenani",
+                    "user_href": "/profile/Jatin-Chenani"
+                },
+                {
+                    "user_id": "Abraar Ahmedh",
+                    "user_href": "/profile/Abraar-Ahmedh"
+                },
+                {
+                    "user_id": "Santiago Maciel",
+                    "user_href": "/profile/Santiago-Maciel-2"
+                },
+                {
+                    "user_id": "Nirupama Laishram",
+                    "user_href": "/profile/Nirupama-Laishram-5"
+                },
+                {
+                    "user_id": "James Chrisa",
+                    "user_href": "/profile/James-Chrisa"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Chen",
+                "href": "/profile/Alex-Chen-619"
+            },
+            "answer_text": "An equation is a mathematical \"sentence,\" of sorts, that describes the relationship between two or more things. If you say a = b, then you've just described the (trivially simple) relationship between a and b. A differential equation is a particular type of equation that includes not just things, but the rates of change of things. For example, consider the simple fact that if you drive at 50 miles an hour for one hour, you will have driven 50 miles. That's so obvious as to seem intuitive, because you already have a deep working understanding of how cars and their speedometers work. But if we look at the equation a little more deeply, we can see some interesting things. Your position (50 miles from some chosen starting point) is a function of both time (how long you drive) and the rate of change of your position with respect to time. We're here describing a relationship between a thing and the rate of change of that thing: position and the rate of change of position with respect to time. Why is this an interesting insight? Because what if you didn't drive at a constant speed? What if your speed varied along the trip? Then figuring out how far you went isn't so simple as multiplying a number \u2014 your constant speed \u2014 times the time you spent driving. It's a harder problem to solve. (And in fact, solving the problem involves understanding the relationship between your rate-of-change-of-speed and time, turning it into an equation, and then integrating that equation over the time you were driving \u2026 but that's just a sidebar, and not directly relevant to your question.) These kinds of equations \u2014 where a thing is related to its own rate of change \u2014 come up all the time both in nature and in what I'll call the \"invented sciences,\" things like sociology and economics. For example, you have a plate of hot soup sitting on the table. How long will it be before the soup is room temperature? One might naively guess that the soup will \"lose heat\" to the environment at a constant rate until it reaches room temp, but this turns out to be wrong. It turns out the rate at which the soup's temperature changes depends on the soup's temperature. So you need to use a differential equation to predict what the temperature will be at some given time, or how long it'll take for the temperature to reach some chosen value. A different, but fundamentally similar, example, is this: Say you have some bacteria in a petri dish, and those bacteria multiply periodically. How many bacteria will you have tomorrow? That depends on the rate of change of the population over time \u2026 and in fact, in that case it turns out the rate of change of the population is itself related to the population. (Expand on those ideas \u2014 where the rate of change of a thing depends on the thing itself \u2014 for a little bit and you stumble across the exponential function e to the x, which is so rich and widely applicable as to basically be its own sub-branch of mathematics.) But getting back to basics, a differential equation is any equation that includes both things and also rates of change of those things. They're worth studying in the abstract because you can't (generally) use algebra to solve equations like that; you need to use different methods, and those methods are worth learning a bit about. ",
+            "date": "Answered January 12, 2019",
+            "views": "2",
+            "upvotes": " View 19 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rts",
+                    "user_href": "/profile/Rts-9"
+                },
+                {
+                    "user_id": "Anne Han",
+                    "user_href": "/profile/Anne-Han-11"
+                },
+                {
+                    "user_id": "Jay Bee",
+                    "user_href": "/profile/Jay-Bee-93"
+                },
+                {
+                    "user_id": "Jayaram Kuruguntla",
+                    "user_href": "/profile/Jayaram-Kuruguntla"
+                },
+                {
+                    "user_id": "Ritam Cruise Mukherjee",
+                    "user_href": "/profile/Ritam-Cruise-Mukherjee"
+                },
+                {
+                    "user_id": "Dave Davis",
+                    "user_href": "/profile/Dave-Davis-4"
+                },
+                {
+                    "user_id": "Steven Van Loon",
+                    "user_href": "/profile/Steven-Van-Loon"
+                },
+                {
+                    "user_id": "Ihsan Abdurrahman",
+                    "user_href": "/profile/Ihsan-Abdurrahman"
+                },
+                {
+                    "user_id": "Amit Singh",
+                    "user_href": "/profile/Amit-Singh-12816"
+                },
+                {
+                    "user_id": "Edward Khrushchev",
+                    "user_href": "/profile/Edward-Khrushchev"
+                }
+            ]
+        }
+    ]
+}

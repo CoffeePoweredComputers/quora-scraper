@@ -1,0 +1,120 @@
+{
+    "title": "How to write text in the first line of an existing file using Python - Quora",
+    "tags": [
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shardul Kulkarni",
+                "href": "/profile/Shardul-Kulkarni-30"
+            },
+            "answer_text": "Upd8: I guess the code also works with python3.x Your question is to Prepend a string or line to existing file, having some text(lines) already. Here\u2019s an example (File: text.txt , before executing program) first line\u00a0second line\u00a0Python code (2.7.x) #We read the existing text from file in READ mode\u00a0src=open(\"text.txt\",\"r\")\u00a0fline=\"newly added FIRST LINE\\n\"    #Prepending string\u00a0oline=src.readlines()\u00a0#Here, we prepend the string we want to on first line\u00a0oline.insert(0,fline)\u00a0src.close()\u00a0\u00a0\u00a0#We again open the file in WRITE mode \u00a0src=open(\"text.txt\",\"w\")\u00a0src.writelines(oline)\u00a0src.close()\u00a0(File: text.txt, after execution of code) newly added FIRST LINE\u00a0first line\u00a0second line\u00a01)I extracted the existing text from text.txt in oline, in python it saves in form of a LIST. 2)Using insert() function I added another element (i.e. fline which is string) at 0th position in the list oline. 3)I closed the file, as it was opened in READ mode 4)i Reopened the file in WRITE mode , and using writelines() added the new oline. ",
+            "date": "Updated August 10, 2020",
+            "views": "31",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sadha Sivam",
+                    "user_href": "/profile/Sadha-Sivam-103"
+                },
+                {
+                    "user_id": "Satrajit Chakraborty",
+                    "user_href": "/profile/Satrajit-Chakraborty"
+                },
+                {
+                    "user_id": "Michael Leech",
+                    "user_href": "/profile/Michael-Leech"
+                },
+                {
+                    "user_id": "Salman Eleo",
+                    "user_href": "/profile/Salman-Eleo"
+                },
+                {
+                    "user_id": "Venkatesan Paramasivam",
+                    "user_href": "/profile/Venkatesan-Paramasivam"
+                },
+                {
+                    "user_id": "Joko Priambodo",
+                    "user_href": "/profile/Joko-Priambodo"
+                },
+                {
+                    "user_id": "SHAMBHAVI KULKARNI",
+                    "user_href": "/profile/SHAMBHAVI-KULKARNI-12"
+                },
+                {
+                    "user_id": "John McKee",
+                    "user_href": "/profile/John-McKee-21"
+                },
+                {
+                    "user_id": "Vinay Kumar Eamme",
+                    "user_href": "/profile/Vinay-Kumar-Eamme"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sunny Dhoke",
+                "href": "/profile/Sunny-Dhoke"
+            },
+            "answer_text": "Ahh, other answers made me write this one. Also, for an approach, I would suggest using stack overflow instead of quora for technical queries. Quora is not yet ready for technical write-ups Here we go. with open(\"yourfile.txt\") as f:\u00a0    lines = f.readlines() #read\u00a0\u00a0#modify\u00a0lines[0] = \"Your new line.\\n\" #you can replace zero with any line number.\u00a0\u00a0with open(\"yourfile.txt\", \"w\") as f:\u00a0    f.writelines(lines) #write back\u00a0Tips: Always use  with  when doing file operations. You dont want other processes to mess up with your file while you working on it. A good practice. And, save some time and ask suck stuff on Stack overflow if you are actually serious about stuff. Visit this[1] Footnotes[1] Page on giyf.com",
+            "date": "Updated April 20, 2020",
+            "views": "36",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tony Flury",
+                "href": "/profile/Tony-Flury"
+            },
+            "answer_text": "there are two ways: You create a new file, write your new first line, and then copy the rest of the old file line by line into the new file. you then close the files, and either delete (Or rename) the old file and rename the new one so it has the old name.If you are very very luck and all of your lines in your file have exactly the same number of characters and you never need them any longer, then you can open the file do a seek(0) onto the file and then write the data. It is very very rare that all lines in a text file will be exactly the same length.",
+            "date": "Answered July 7, 2020",
+            "views": "13",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Paul McQuesten",
+                    "user_href": "/profile/Paul-McQuesten-1"
+                },
+                {
+                    "user_id": "Aaron Dwi",
+                    "user_href": "/profile/Aaron-Dwi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Srinivas Beerge",
+                "href": "/profile/Srinivas-Beerge-1"
+            },
+            "answer_text": "Suppose that you want to append: \u201cline to append\u201d #here we are trying to read the data from the file\u00a0with open(r\"C:\\Python27\\test.txt\", \"r+\") as f:\u00a0    a = f.read()\u00a0    print a\u00a0#Now writing into the file with the prepend line + old file data\u00a0    with open(r\"C:\\Python27\\test.txt\", \"w+\") as f:\u00a0        f.write(\"line to append\" + a)\u00a0        #below code to verify the data in the file\u00a0        with open(r\"C:\\Python27\\test.txt\", \"r+\") as f:\u00a0            b = f.read()\u00a0            print b\u00a0Using with open is better since it closes the file after computation Hope its helpful.. happy coding ",
+            "date": "Answered May 29, 2018",
+            "views": "166",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shivi Yadav",
+                    "user_href": "/profile/Shivi-Yadav-48"
+                },
+                {
+                    "user_id": "Gianni Abbate",
+                    "user_href": "/profile/Gianni-Abbate"
+                },
+                {
+                    "user_id": "Dibya Ranjan Mishra",
+                    "user_href": "/profile/Dibya-Ranjan-Mishra"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "MICHAEL DEVINE",
+                "href": "/profile/MICHAEL-DEVINE-36"
+            },
+            "answer_text": "with open('somefile.txt') as f:\u00a0\tupdatedfile='NewLineInsertedAtTop'+'\\n'+f.read()\u00a0with open('somefile.txt','w') as f:\u00a0\tf.write(updatedfile)\u00a0",
+            "date": "Answered May 7, 2018",
+            "views": "947",
+            "upvotes": "0"
+        }
+    ]
+}

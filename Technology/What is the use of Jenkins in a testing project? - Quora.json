@@ -1,0 +1,114 @@
+{
+    "title": "What is the use of Jenkins in a testing project? - Quora",
+    "tags": [
+        "Hudson CI",
+        "Apache Maven",
+        "Jenkins CI"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Cody Reichert",
+                "href": "/profile/Cody-Reichert-1"
+            },
+            "answer_text": "Jenkins is really useful tool for automating just about anything, but it\u2019s most commonly used for continuous integration and delivery to build, test, and deploy software projects. With regards to testing, Jenkins is a powerful way to define when, where, and how to run your automated tests. I wrote a more in-depth post about how to set up automated API testing with Jenkins, but here are some more notes: Set up a Jenkins job that describes how to run your tests (see this section of my post).The most useful part of a Jenkins job is that you can tell it to do pretty much anything. For testing, you can add shell commands to your job that initiate your tests. Automate when and how to run your tests (see this section of my post)There\u2019s many different options for automating jobs in Jenkins, but most commonly you will use a \u201cschedule\u2019 to run your tests at a specified interval. This Stack Overflow answer has a good walk-through on setting that up w/ cron. Additionally, with your tests set up to run from Jenkins, you can always run them at any time by clicking \u201cBuild now\u201d. This is super useful, as you don\u2019t have to go down to the CLI, etc:  Notice that, this Jenkins project so far doesn\u2019t have any steps for building/deploying code. You don\u2019t need to be building code to automate API tests from Jenkins, just set up a job with a couple of build steps! So there you have, a testing project set up on Jenkins for automation. Hope this helps! ",
+            "date": "Answered May 17, 2017",
+            "views": "167",
+            "upvotes": " View 26 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mikhail Fedotov",
+                    "user_href": "/profile/Mikhail-Fedotov-3"
+                },
+                {
+                    "user_id": "Mpend Zond",
+                    "user_href": "/profile/Mpend-Zond"
+                },
+                {
+                    "user_id": "Mark Waite",
+                    "user_href": "/profile/Mark-Waite-4"
+                },
+                {
+                    "user_id": "Christopher Reichert",
+                    "user_href": "/profile/Christopher-Reichert-2"
+                },
+                {
+                    "user_id": "Vatsala Nirjhar",
+                    "user_href": "/profile/Vatsala-Nirjhar"
+                },
+                {
+                    "user_id": "Poonam Dogra",
+                    "user_href": "/profile/Poonam-Dogra-14"
+                },
+                {
+                    "user_id": "Avanibedi",
+                    "user_href": "/profile/Avanibedi"
+                },
+                {
+                    "user_id": "Pooja Pareek",
+                    "user_href": "/profile/Pooja-Pareek-19"
+                },
+                {
+                    "user_id": "Sangeetha",
+                    "user_href": "/profile/Sangeetha-175"
+                },
+                {
+                    "user_id": "Roohi Kanwal",
+                    "user_href": "/profile/Roohi-Kanwal-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vishal Sahasrabuddhe",
+                "href": "/profile/Vishal-Sahasrabuddhe-1"
+            },
+            "answer_text": "You can consider Jenkins is a dumb tool, it exactly does what you are asking him to do. Jenkins is automation tool to automate anything including build, deployment, test automation, reporting. You can even use jenkins to do any automation task other then build, deployment, test like running script on remote machinetaking backupsperforming health checketc.Infact you can any script on jenkins to do anything on any connected machine. The beauty of jenkins is its plugin based architecture. You can plugin in anything you want and get things working. If you do not want you can remove plugin and save memory and optimize your jenkins application. Now, coming to your actual question. You can run your testing automation on destination machine via jenkins remotely.You can generate testing report.You can make threshold as per test cases.Send the notification of your test report.schedule your automation at midnight.As i said you can automate your tasks via jenkins. ",
+            "date": "Answered September 16, 2016",
+            "views": "92",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vivek Deevi",
+                    "user_href": "/profile/Vivek-Deevi-1"
+                },
+                {
+                    "user_id": "Amit Dash",
+                    "user_href": "/profile/Amit-Dash"
+                },
+                {
+                    "user_id": "Sunil Venkata",
+                    "user_href": "/profile/Sunil-Venkata-1"
+                },
+                {
+                    "user_id": "Lakshmi",
+                    "user_href": "/profile/Lakshmi-421"
+                },
+                {
+                    "user_id": "Smridhi Puri",
+                    "user_href": "/profile/Smridhi-Puri"
+                },
+                {
+                    "user_id": "Reema Chaudhary",
+                    "user_href": "/profile/Reema-Chaudhary-11"
+                },
+                {
+                    "user_id": "Keith Harrod",
+                    "user_href": "/profile/Keith-Harrod"
+                },
+                {
+                    "user_id": "Pronomita Dey",
+                    "user_href": "/profile/Pronomita-Dey"
+                },
+                {
+                    "user_id": "Ismail Shaikh",
+                    "user_href": "/profile/Ismail-Shaikh-8"
+                },
+                {
+                    "user_id": "Ruchita Lakhe",
+                    "user_href": "/profile/Ruchita-Lakhe"
+                }
+            ]
+        }
+    ]
+}

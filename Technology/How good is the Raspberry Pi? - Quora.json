@@ -1,0 +1,88 @@
+{
+    "title": "How good is the Raspberry Pi? - Quora",
+    "tags": [
+        "Programming Computer Applications",
+        "Raspberry Pi",
+        "Electronics",
+        "Software and Applications",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Madi Connors",
+                "href": "/profile/Madi-Connors"
+            },
+            "answer_text": "How would you define \"good\"? My experience is that it's barely adequate as a desktop system, but great as a media box or the core of a DIY project. It isn't the fastest kid on the block, but it's cheap and has a huge community to support you. (Just try getting Mathematica or Minecraft on a Beaglebone without stealing packages from Raspbian.) There are a few people, Richard Stallman from the FSF among them, that find the RPi environment to be unacceptably crippled for various reasons, most of them having to do with the binary blob of firmware the GPU needs to boot the whole system or the fact that it isn't open source hardware, but the RPi community as a whole manifestly does not care. (Besides, the Raspberry Pi Foundation's head, Eben Upton, works for Broadcom. In such a situation, one takes what one can get, and Upton has managed to get a lot.) As for accessories, the only things you really need are a network connection (either an Ethernet cable or a Wifi adapter) and a power supply; if you're comfortable working in SSH on the Linux command line, you're good to go. However, there's a couple things that it helps to have: A monitor and HDMI cable. The RPis have always supported up to 1080p video with no issues. (You can also recycle an old analog TV by using a camcorder composite video cable, but why?)A keyboard and mouse. Or, if you wish, a keyboard/trackpad combo; I use the Logitech k400, but that's far from the only one on the market. (You'll need a separate mouse for RISC OS, because of its rather quirky way of using the buttons, but it's sufficient for any Linux system.)  A case. Especially for the RPi 2, which is susceptible to crashes when its power regulator chip is exposed to very bright strobe lights and the like. (This was fixed in the Zero and RPi 3.)The RPi 3 can probably use a heat sink; I don't think it's strictly necessary, but the BCM2837 SoC runs very hot, so if you can get one, better safe than sorry. A Bluetooth adapter. Even on the RPi 3, which as I write does not yet have working software support for its internal Bluetooth hardware. You can get Bluetooth/Wifi combo adapters, but the easiest ones to find and use only support up to Bluetooth 3 and lack Bluetooth LE support, which would be a bit of a conundrum in a Zero or A+ project. (I have the Cirago BTA7300. It's very small for a dual-function dongle, and as long as you don't have a pressing need for BLE or 5GHz Wifi, it should be sufficient.) If you're going to do any significant amount of physical computing or other DIY stuff, you'll need a GPIO breakout. Adafruit and Canakit, among others, make them (Adafruit's is called the Cobbler). If you're getting into black magic territory, you'll probably want a USB console cable. Most people probably won't need it since you can just SSH in if you want, but there are times that you'll need to do it the hard way, and this is how. Beyond that, the Raspberry Pi equivalent of an Arduino shield is the HAT standard, and there's a few of those on the market with things like motor interfaces, sensors, displays, and light arrays.  ",
+            "date": "Answered March 19, 2016",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ph\u1ea1m \u0110\u1ee9c T\u00e0i",
+                    "user_href": "/profile/Ph\u1ea1m-\u0110\u1ee9c-T\u00e0i-1"
+                },
+                {
+                    "user_id": "Pranav Mittal",
+                    "user_href": "/profile/Pranav-Mittal-7"
+                },
+                {
+                    "user_id": "Satyaraj Sharma",
+                    "user_href": "/profile/Satyaraj-Sharma"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Hand",
+                "href": "/profile/Peter-Hand-4"
+            },
+            "answer_text": "As a computer, it does a tolerable job of performing a limited number of jobs. It will run a web browser and many open-source Linux applications, albeit not very fast. Since its only \"disk drive\" is an SD card run in SPI mode, it has severe speed and capacity limitations. The only peripherals you can add are USB devices for which the drivers have been compiled in. It's a fun little toy that produces lots of \"ooh\"s and \"ahh\"s when you show it off as an internet appliance, but then when you come down to earth and realize the keyboard and the SD card cost more than the thing they're plugged in to and the monitor was half the cost of a laptop, it doesn't seem like that great a deal. As a small embedded computer for the IoT, it's an entirely different matter. The standard operating system package (which you have to install using a different computer) has a desktop, editors, GCC and Python, and you can create your own software. There's an expansion connector giving access to lots of processor IO pins, though you will have to make your own peripheral hardware to use it. Best of all it has a TCP/IP stack and socket - you can plug it right in to your home network (or use a wireless adaptor) to keep an eye on whatever it is you connected it to, or build something insanely cool like this internet enabled  \"magic mirror\" -Xonay Labs | Michael Teeuw ",
+            "date": "Answered July 2, 2015",
+            "views": "49",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daniel Barzagli",
+                    "user_href": "/profile/Daniel-Barzagli"
+                },
+                {
+                    "user_id": "Pranav Mittal",
+                    "user_href": "/profile/Pranav-Mittal-7"
+                },
+                {
+                    "user_id": "Ramit Kundu",
+                    "user_href": "/profile/Ramit-Kundu-2"
+                },
+                {
+                    "user_id": "Alexandru Lazar",
+                    "user_href": "/profile/Alexandru-Lazar-2"
+                },
+                {
+                    "user_id": "Satyaraj Sharma",
+                    "user_href": "/profile/Satyaraj-Sharma"
+                },
+                {
+                    "user_id": "Joel Lindegger",
+                    "user_href": "/profile/Joel-Lindegger"
+                },
+                {
+                    "user_id": "Harvey Johnson",
+                    "user_href": "/profile/Harvey-Johnson-77"
+                },
+                {
+                    "user_id": "Jayadeep Karnati",
+                    "user_href": "/profile/Jayadeep-Karnati"
+                },
+                {
+                    "user_id": "Madhu Siddalingaiah",
+                    "user_href": "/profile/Madhu-Siddalingaiah"
+                },
+                {
+                    "user_id": "Kelvin Mutuma",
+                    "user_href": "/profile/Kelvin-Mutuma-1"
+                }
+            ]
+        }
+    ]
+}

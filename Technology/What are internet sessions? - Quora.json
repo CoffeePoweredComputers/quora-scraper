@@ -1,0 +1,44 @@
+{
+    "title": "What are internet sessions? - Quora",
+    "tags": [
+        "Layman's Explanations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Manikandan Palaniappan",
+                "href": "/profile/Manikandan-Palaniappan"
+            },
+            "answer_text": "A session is a time frame of communication between two or more communicating devices. The two computers discussed here maybe a server and a client, or two personal computers too. A session is set up at a certain point of time and then is closed after some time when the communication is either finished or in the case of a timed session, when the timer expires. A session may be either stateful (i.e atleast one of the parties maintains information regarding the communication) or stateless (independent requests with responses). So a very simple diagram explaining how a connection is formed, before we go have a look at how sessions are initiated across different layers of the OSI model:    As you can see the initiator sends a ping request to check if it can reach the acceptor. Once it receives a reply from acceptor, it then sends an establish connection request which is met with an appropriate response (It can either accept or reject it). Then once, the connection is established, the initiator and acceptor exchange connection parameters. And then communication starts.   There are different types of sessions that are initiated across different layers of the OSI model. The above diagram is a sample HTTP session between a web client and a web server. As you can see, The client initially sends a HTTP request to the server and the server sends a response along with a cookie. A cookie is a small piece of data sent from a server to a client and is stored in the browser of the client. So from now on, the client sends the cookie along with the request to enable the server to remember stateful information (let's say you ordered items online or login information to determine whether you are logged in or not). Once the server receives the request along with the cookie, it then sends the necessary response. I'll update about more types of sessions and the function of the session layer in the OSI model soon. References:Session (computer science)OSI modelWhat is user session?What is session? - Definition from WhatIs.comSession DefinitionHTTP cookie ",
+            "date": "Answered August 25, 2014",
+            "views": "38",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mubashira Khanum",
+                    "user_href": "/profile/Mubashira-Khanum-1"
+                },
+                {
+                    "user_id": "Prabhat Soni",
+                    "user_href": "/profile/Prabhat-Soni-6"
+                },
+                {
+                    "user_id": "Mukka Prateek",
+                    "user_href": "/profile/Mukka-Prateek"
+                },
+                {
+                    "user_id": "Sahil Khaneja",
+                    "user_href": "/profile/Sahil-Khaneja"
+                },
+                {
+                    "user_id": "Roshini Syed",
+                    "user_href": "/profile/Roshini-Syed"
+                },
+                {
+                    "user_id": "Nandha Kishore",
+                    "user_href": "/profile/Nandha-Kishore-2"
+                }
+            ]
+        }
+    ]
+}

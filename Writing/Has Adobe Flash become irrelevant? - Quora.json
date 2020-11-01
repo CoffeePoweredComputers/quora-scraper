@@ -1,0 +1,893 @@
+{
+    "title": "Has Adobe Flash become irrelevant? - Quora",
+    "tags": [
+        "Adobe Flash",
+        "HTML5",
+        "User Experience",
+        "User Interface Design",
+        "User Interfaces",
+        "Web Design"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michel Jansen",
+                "href": "/profile/Michel-Jansen"
+            },
+            "answer_text": "I think the question is incomplete. Has Flash become irrelevant where? If I look at the more traditional usage of Flash as a tool to create entire websites, then I certainly think that time is pretty much over. There may be some stubborn perfume manufacturers' websites left that are still entirely in Flash, but those are more the exception than the rule. For those purposes, Flash simply no longer has anything to offer that cannot be done with more modern techniques (HTML5/Javascript/CSS animation etc.) that are not proprietary. However, Flash is still really strong in animated graphics and graphics-heavy interactive applications, because of the extensive tool support. Looking at the history of Flash, this is not so strange; Flash used to be an interactive vector animation tool that was later repurposed for \"rich internet applications\". I believe in the vector animation part, Flash may eventually be surpassed by open alternatives based on SVG, but for now this is not the case. What remains are those graphics-heavy interactive applications I mentioned. If you want to develop or prototype an interactive application with a lot of transitions, animations etc. there are simply really few alternatives that allow you to do it quickly. It seems Flash as a \"tool for graphics animation designers that evolved into a platform for interactive applications\" is still less awkward in this regard than HTML5 as a \"document markup standard that evolved into a platform for interactive applications\". The two technologies are evolving into a similar direction from a different starting point and Flash at this point simply is one step ahead in the interactive department. Adobe has done a very good job of finding a middle ground where both (visual) designers and programmers can feel relatively comfortable. Flash Professional is not a bad vector/motion editing suite (it integrates pretty well with the rest of Adobe Creative Suite) and ActionScript/Flex are not bad as programming environments. Combine that with pretty decent external tools and libraries (3D libraries, touch support etc.) and you can really quickly go from idea to execution. This makes it ideal for rapid prototyping. I believe it is precisely the proprietary nature of the platform that makes this possible. HTML5/CSS/JS are managed by big consortia and the development and adoption of new technologies is relatively slow. Try to make an application that tries out new multi-touch gestures to interact with a 3D model in HTML5 and we will talk (actually, I see this has recently become possible, but it will not be easy. I hope you still catch my point). Because Adobe is the sole agency that controls the Flash runtime, they can be faster than browsers in adopting new stuff. They are also closer to the hardware if they want to be (hardware acceleration, device I/O etc.), since they don't have to be standard (especially if you think about Air). For an example, compare http://www.contrast.ie/blog/the-state-of-html-5-audio-support/ and http://www.hulstkamp.com/2008/09/12/sound-in-flash-10-beta-generating-waveforms-timbre-and-pitch/175 and note that the second article predates the first by nearly two years. Of course Flash is not the only technology for which these points are true. Microsoft's Silverlight is the most obvious example (not surprisingly, it is one of the technologies that power Windows Phone 7), but it is by far the oldest and as such it has a pretty solid foot in the interactive apps market. I strongly feel that the days of Flash on the web are counted and I will not shed a single tear to see it disappear. However, I certainly see some future for Flash on desktop, mobile and embedded devices. I am no big fan of Air, but I have gotten a lot of value out of Flash as a rapid prototyping tool. It has allowed me to quickly build highly graphical and animation-heavy interactive prototypes in a fraction of the time it would have taken me to do that using Apple's IOS SDK or other more \"serious\" development environments. ",
+            "date": "Answered April 14, 2011",
+            "views": "460",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Geoff Yuen",
+                    "user_href": "/profile/Geoff-Yuen"
+                },
+                {
+                    "user_id": "Hite Jote",
+                    "user_href": "/profile/Hite-Jote"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marcus Geduld",
+                "href": "/profile/Marcus-Geduld"
+            },
+            "answer_text": "UPDATE: The answer below was true when I wrote it in 2011, but in 2014 Flash has become largely irrelevant, at least as a programming tool. (It is still used by animators.) Online rich-media development is now very centered around Standards-based technologies, such as Javascript, CSS, and HTML. I have not been asked to touch Flash or Actionscript for a couple of years.  Not even slightly. Disclaimer: my job title is \"Senior Flash Developer.\" However, I am not a Flash fanboy, and I don't think of myself as a Flash Developer. I am a developer. If you told me that I was going to have to stop writing Flash apps tomorrow and write HTML5 apps instead, I wouldn't shed a single tear. I think Javascript is a really cool language. I don't care which technology \"wins.\" Either way, I'll keep right on developing. That said: lots and lots and lots of MAJOR web companies use Flash, and many use it as their core client technology. Google uses it heavily. AOL uses it heavily. Yahoo uses it heavily. The TV networks use it heavily... 90% of all the Flash vs. JS discussions I've read are bullshit and/or politics. It's entirely possible that in five or ten years, no one will use Flash (or Javascript?) any more. Who knows? But -- today -- Flash is extremely popular. And there's not even a trend that is moving it towards being unpopular. (By popular, I mean \"used all over the place,\" not \"whether or not people are fans of it.\") The bullshit occurs because people are JS experts who know little about Flash (but think they know a lot) or Flash experts that know little about JS (but think they know a lot). Recently, on Quora, there was a thread where someone asked whether he should learn ActionScript (Flash's language) or Javascript. I was STUNNED by how many developers told him that the two languages were practically identical. They used to be, but they've diverged. JS is closer to being a functional programming language, like Scheme. ActionScript 3.0 is very much like Java. Both languages and platforms have their technological strengths and weaknesses. There are definitely reasons, form a technical and performances point-of-view, to be irritated by Flash. (There are also PLENTY of reasons to be irritated by JS.) What's weird to me is how often my fellow developers have tunnel vision and think the fact that something is inelegant under-the-hood translates to \"it's dead.\"  As we all know, no one uses the Windows OS any more. Everyone uses Linux. And thank GOD we don't have to mess with those QWERTY keyboards any more! The politics comes into play because JS is open and Flash is proprietary. This is true, and maybe it's a bad thing. But whether Flash is \"good\" or \"evil\" has nothing to do with it being alive or dead. That's a totally different discussion, and it's funny to me that the two topics get all mixed up in people's minds. Here are some things Flash currently does that HTML5 can't do -- or can't do as well: 1. Play STREAMING video. When I tell people this, they talk about how they watch streaming HTML5 video all the time. No. They watch PROGRESSIVE HTML5 video all the time. \"Streaming\" does not mean that the video starts playing before it's downloaded. Both streaming AND progressive video do that. Streaming video is special in that it doesn't cache on your machine. If you watch YouTube video -- which is progressive -- by the time you're done, the entire file is in your temporary Internet folder. This is unacceptable to big media companies, like NBC. They insist on streaming solutions, which only cache the few frames you're watching as you're watching them. (In case I confused you with my YouTube reference, because most YouTube videos are in Flash format, note that Flash can handle both progressive and streaming video. On YouTube, google has chosen to use progressive. If you watch a show on CBS.com, it will play in the Flash player and it will be streaming.) 2. Microphone and webcam access. 3. A full, complex text-rendering engine, allowing you to embed any font you want and allowing you do complex text manipulation (kerning, wrapping text in complex ways around images, etc). 4. (In the latest version of Flash) an optimized 3D engine that renders using video cards if they're present on the user's system. 5. The ability to work the same way in every browser on all platforms. (This is more of a promise than a reality, but Flash's ability to do it is WAY better than JS's. Libraries like jquery even the playing field somewhat, but not all companies can use them. I work in web advertising, and we can't use jquery, because it's too big. And so we have a major pain getting JS to play nice in on all the different browsers and platforms. We don't have that problem with Flash.) 6. The ability to embed / compartmentalize functionality. Currently a single flash swf file is self sufficient in handling the complete events, server communication and integration with the rest of the page only by just embedding it in the page as an object. Compare this to HTML where the closest we come to is iFrames, even which has issues with JS objects namespacing, onReady() intializers - a real mess. Sure, JS will catch up and be able to do all these things. It already can do some of them to some degree. But the problem is that changes to JS need to be adopted by ALL browsers and then the majority of consumers need to install the latest versions of those browsers. My company has a mandate to still support IE6. I think 15% of people still use it -- something like that. That's too big a chunk of people for many businesses to ignore. So if HTML5 gets adopted tomorrow -- and if it can stream video as well as Flash -- how soon will your mother be using a browser that supports these features? But there's a good chance your mother has the latest Flash player, because people tend to adopt it way sooner than they adopt new browsers. Let's say that it's 2016, and JS can now do everything Flash can do now, and everyone has updated their browsers. The problem is that Adobe hasn't been sitting around all that time. They are aggressively adding features to Flash. So there's a good chance Flash will STILL be relevant.   Flash can die an ignoble death for all I care. But here in 2011, it's thriving. It has more competition than it used to, which is great! We need both Flash and JS to have competition. But it's not even close to dead. It's not even sick. ",
+            "date": "Updated January 8, 2015",
+            "views": "95",
+            "upvotes": " View 115 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Coroi Alexandru Mihai",
+                    "user_href": "/profile/Coroi-Alexandru-Mihai"
+                },
+                {
+                    "user_id": "Tiltedplay",
+                    "user_href": "/profile/Tiltedplay"
+                },
+                {
+                    "user_id": "Ovi Bucur",
+                    "user_href": "/profile/Ovi-Bucur"
+                },
+                {
+                    "user_id": "Terry R. Schussler",
+                    "user_href": "/profile/Terry-R-Schussler"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/ITC-2"
+                },
+                {
+                    "user_id": "Nguyen Tran Tuyen",
+                    "user_href": "/profile/Nguyen-Tran-Tuyen"
+                },
+                {
+                    "user_id": "Haem Zaff",
+                    "user_href": "/profile/Haem-Zaff"
+                },
+                {
+                    "user_id": "Siok Xin Ng",
+                    "user_href": "/profile/Siok-Xin-Ng"
+                },
+                {
+                    "user_id": "Andris Batraks",
+                    "user_href": "/profile/Andris-Batraks"
+                },
+                {
+                    "user_id": "Don Slish",
+                    "user_href": "/profile/Don-Slish"
+                },
+                {
+                    "user_id": "Daniel Freeman",
+                    "user_href": "/profile/Daniel-Freeman-10"
+                },
+                {
+                    "user_id": "Eyal Livne",
+                    "user_href": "/profile/Eyal-Livne"
+                },
+                {
+                    "user_id": "Eugene Young",
+                    "user_href": "/profile/Eugene-Young-6"
+                },
+                {
+                    "user_id": "Lisa Henry Harper",
+                    "user_href": "/profile/Lisa-Henry-Harper"
+                },
+                {
+                    "user_id": "Tushar Parashar",
+                    "user_href": "/profile/Tushar-Parashar"
+                },
+                {
+                    "user_id": "Rohit Falor",
+                    "user_href": "/profile/Rohit-Falor"
+                },
+                {
+                    "user_id": "David Muro II",
+                    "user_href": "/profile/David-Muro-II"
+                },
+                {
+                    "user_id": "Naren Bellala",
+                    "user_href": "/profile/Naren-Bellala"
+                },
+                {
+                    "user_id": "Vivek Girotra",
+                    "user_href": "/profile/Vivek-Girotra"
+                },
+                {
+                    "user_id": "Hank Chen",
+                    "user_href": "/profile/Hank-Chen-5"
+                },
+                {
+                    "user_id": "Will Robbins",
+                    "user_href": "/profile/Will-Robbins"
+                },
+                {
+                    "user_id": "Annual Aardvark",
+                    "user_href": "/profile/Annual-Aardvark"
+                },
+                {
+                    "user_id": "Chris Gilbert",
+                    "user_href": "/profile/Chris-Gilbert"
+                },
+                {
+                    "user_id": "Kati Llewellyn",
+                    "user_href": "/profile/Kati-Llewellyn"
+                },
+                {
+                    "user_id": "Edalene Tay",
+                    "user_href": "/profile/Edalene-Tay"
+                },
+                {
+                    "user_id": "Jeremy Tellier",
+                    "user_href": "/profile/Jeremy-Tellier"
+                },
+                {
+                    "user_id": "Glenn Galen",
+                    "user_href": "/profile/Glenn-Galen"
+                },
+                {
+                    "user_id": "John Surdakowski",
+                    "user_href": "/profile/John-Surdakowski"
+                },
+                {
+                    "user_id": "Jonas Hummelstrand",
+                    "user_href": "/profile/Jonas-Hummelstrand"
+                },
+                {
+                    "user_id": "Jay Wyche",
+                    "user_href": "/profile/Jay-Wyche"
+                },
+                {
+                    "user_id": "Numan Salati",
+                    "user_href": "/profile/Numan-Salati"
+                },
+                {
+                    "user_id": "Mayur Mohite",
+                    "user_href": "/profile/Mayur-Mohite"
+                },
+                {
+                    "user_id": "Douglas Coleman",
+                    "user_href": "/profile/Douglas-Coleman-1"
+                },
+                {
+                    "user_id": "Rob Haggart",
+                    "user_href": "/profile/Rob-Haggart"
+                },
+                {
+                    "user_id": "Anton Borzov",
+                    "user_href": "/profile/Anton-Borzov"
+                },
+                {
+                    "user_id": "Asdf",
+                    "user_href": "/profile/Asdf-444"
+                },
+                {
+                    "user_id": "Kirk Elliott",
+                    "user_href": "/profile/Kirk-Elliott"
+                },
+                {
+                    "user_id": "Cody Peterson",
+                    "user_href": "/profile/Cody-Peterson"
+                },
+                {
+                    "user_id": "Oday Nasser",
+                    "user_href": "/profile/Oday-Nasser"
+                },
+                {
+                    "user_id": "Noel Lastrella",
+                    "user_href": "/profile/Noel-Lastrella"
+                },
+                {
+                    "user_id": "Stan Hirson",
+                    "user_href": "/profile/Stan-Hirson"
+                },
+                {
+                    "user_id": "Binh Nguyen",
+                    "user_href": "/profile/Binh-Nguyen"
+                },
+                {
+                    "user_id": "Elliott Hamai",
+                    "user_href": "/profile/Elliott-Hamai"
+                },
+                {
+                    "user_id": "Kien T. Nguyen",
+                    "user_href": "/profile/Kien-T-Nguyen"
+                },
+                {
+                    "user_id": "Alex Kamil",
+                    "user_href": "/profile/Alex-Kamil"
+                },
+                {
+                    "user_id": "Adriaan Pelzer",
+                    "user_href": "/profile/Adriaan-Pelzer"
+                },
+                {
+                    "user_id": "Yano Jp",
+                    "user_href": "/profile/Yano-Jp"
+                },
+                {
+                    "user_id": "Leonardo Graterol",
+                    "user_href": "/profile/Leonardo-Graterol"
+                },
+                {
+                    "user_id": "Dave Ackerman",
+                    "user_href": "/profile/Dave-Ackerman"
+                },
+                {
+                    "user_id": "Graeme Bull",
+                    "user_href": "/profile/Graeme-Bull"
+                },
+                {
+                    "user_id": "Justin Clarke",
+                    "user_href": "/profile/Justin-Clarke"
+                },
+                {
+                    "user_id": "Jason Ostrander",
+                    "user_href": "/profile/Jason-Ostrander"
+                },
+                {
+                    "user_id": "John Manoogian",
+                    "user_href": "/profile/John-Manoogian"
+                },
+                {
+                    "user_id": "Daniel Sedlacek",
+                    "user_href": "/profile/Daniel-Sedlacek"
+                },
+                {
+                    "user_id": "Ka\u00efs Miled",
+                    "user_href": "/profile/Ka\u00efs-Miled"
+                },
+                {
+                    "user_id": "Est Meta",
+                    "user_href": "/profile/Est-Meta"
+                },
+                {
+                    "user_id": "Robert Dawson",
+                    "user_href": "/profile/Robert-Dawson"
+                },
+                {
+                    "user_id": "Anthony Mattheakakis",
+                    "user_href": "/profile/Anthony-Mattheakakis"
+                },
+                {
+                    "user_id": "Mark Harrison",
+                    "user_href": "/profile/Mark-Harrison-2"
+                },
+                {
+                    "user_id": "Marc Bodnick",
+                    "user_href": "/profile/Marc-Bodnick"
+                },
+                {
+                    "user_id": "Aaron Stein",
+                    "user_href": "/profile/Aaron-Stein"
+                },
+                {
+                    "user_id": "Andrew Pedersen",
+                    "user_href": "/profile/Andrew-Pedersen"
+                },
+                {
+                    "user_id": "Hite Jote",
+                    "user_href": "/profile/Hite-Jote"
+                },
+                {
+                    "user_id": "Matt Wallace",
+                    "user_href": "/profile/Matt-Wallace"
+                },
+                {
+                    "user_id": "Bobby Schultz",
+                    "user_href": "/profile/Bobby-Schultz"
+                },
+                {
+                    "user_id": "Martin Pagh Ludvigsen",
+                    "user_href": "/profile/Martin-Pagh-Ludvigsen"
+                },
+                {
+                    "user_id": "Gerald Yeo",
+                    "user_href": "/profile/Gerald-Yeo"
+                },
+                {
+                    "user_id": "Zuzana Love",
+                    "user_href": "/profile/Zuzana-Love"
+                },
+                {
+                    "user_id": "Eason Pai",
+                    "user_href": "/profile/Eason-Pai"
+                },
+                {
+                    "user_id": "Chris Cook",
+                    "user_href": "/profile/Chris-Cook-2"
+                },
+                {
+                    "user_id": "Akshey Jawa",
+                    "user_href": "/profile/Akshey-Jawa-1"
+                },
+                {
+                    "user_id": "Yariv Sadan",
+                    "user_href": "/profile/Yariv-Sadan"
+                },
+                {
+                    "user_id": "Bennett Feely",
+                    "user_href": "/profile/Bennett-Feely"
+                },
+                {
+                    "user_id": "Tomaz Stolfa",
+                    "user_href": "/profile/Tomaz-Stolfa"
+                },
+                {
+                    "user_id": "Byron Dumbrill",
+                    "user_href": "/profile/Byron-Dumbrill"
+                },
+                {
+                    "user_id": "Avjinder Sekhon",
+                    "user_href": "/profile/Avjinder-Sekhon"
+                },
+                {
+                    "user_id": "Kunal Anand",
+                    "user_href": "/profile/Kunal-Anand"
+                },
+                {
+                    "user_id": "Michael Bean",
+                    "user_href": "/profile/Michael-Bean-1"
+                },
+                {
+                    "user_id": "Dmitry Buterin",
+                    "user_href": "/profile/Dmitry-Buterin"
+                },
+                {
+                    "user_id": "James P Gilbert",
+                    "user_href": "/profile/James-P-Gilbert"
+                },
+                {
+                    "user_id": "Artur M\u00fcller",
+                    "user_href": "/profile/Artur-M\u00fcller"
+                },
+                {
+                    "user_id": "Steve Gardner",
+                    "user_href": "/profile/Steve-Gardner-1"
+                },
+                {
+                    "user_id": "Anthony Onumonu",
+                    "user_href": "/profile/Anthony-Onumonu"
+                },
+                {
+                    "user_id": "Javor Vatchkov",
+                    "user_href": "/profile/Javor-Vatchkov"
+                },
+                {
+                    "user_id": "Dylan Tan",
+                    "user_href": "/profile/Dylan-Tan-6"
+                },
+                {
+                    "user_id": "Kevin Vo",
+                    "user_href": "/profile/Kevin-Vo-104"
+                },
+                {
+                    "user_id": "Shamik Sharma",
+                    "user_href": "/profile/Shamik-Sharma"
+                },
+                {
+                    "user_id": "Annie Chang",
+                    "user_href": "/profile/Annie-Chang"
+                },
+                {
+                    "user_id": "Kaushik Mhadeshwar",
+                    "user_href": "/profile/Kaushik-Mhadeshwar"
+                },
+                {
+                    "user_id": "James H. Kelly",
+                    "user_href": "/profile/James-H-Kelly"
+                },
+                {
+                    "user_id": "Brian Rue",
+                    "user_href": "/profile/Brian-Rue"
+                },
+                {
+                    "user_id": "Gaurish Sharma",
+                    "user_href": "/profile/Gaurish-Sharma"
+                },
+                {
+                    "user_id": "Patrick Ryan",
+                    "user_href": "/profile/Patrick-Ryan"
+                },
+                {
+                    "user_id": "Philipp M. W. Hoffmann",
+                    "user_href": "/profile/Philipp-M-W-Hoffmann"
+                },
+                {
+                    "user_id": "Kamil Tusznio",
+                    "user_href": "/profile/Kamil-Tusznio"
+                },
+                {
+                    "user_id": "Arkid Mitra",
+                    "user_href": "/profile/Arkid-Mitra"
+                },
+                {
+                    "user_id": "Pete Petrash",
+                    "user_href": "/profile/Pete-Petrash"
+                },
+                {
+                    "user_id": "Tyson Rosage",
+                    "user_href": "/profile/Tyson-Rosage"
+                },
+                {
+                    "user_id": "Ming Yeow Ng",
+                    "user_href": "/profile/Ming-Yeow-Ng"
+                },
+                {
+                    "user_id": "Stuart Crick",
+                    "user_href": "/profile/Stuart-Crick"
+                },
+                {
+                    "user_id": "Reem Saied",
+                    "user_href": "/profile/Reem-Saied-1"
+                },
+                {
+                    "user_id": "Tim O'Neil",
+                    "user_href": "/profile/Tim-ONeil-1"
+                },
+                {
+                    "user_id": "Will Swain",
+                    "user_href": "/profile/Will-Swain"
+                },
+                {
+                    "user_id": "Cal Paterson",
+                    "user_href": "/profile/Cal-Paterson"
+                },
+                {
+                    "user_id": "Misha Kvakin",
+                    "user_href": "/profile/Misha-Kvakin"
+                },
+                {
+                    "user_id": "Prajna Zhang",
+                    "user_href": "/profile/Prajna-Zhang"
+                },
+                {
+                    "user_id": "Pete Griffiths",
+                    "user_href": "/profile/Pete-Griffiths"
+                },
+                {
+                    "user_id": "Adam Leigh",
+                    "user_href": "/profile/Adam-Leigh-1"
+                },
+                {
+                    "user_id": "Nicolas Schmitt",
+                    "user_href": "/profile/Nicolas-Schmitt"
+                },
+                {
+                    "user_id": "Harry Northover",
+                    "user_href": "/profile/Harry-Northover"
+                },
+                {
+                    "user_id": "David Tuite",
+                    "user_href": "/profile/David-Tuite"
+                },
+                {
+                    "user_id": "Sam Rhee",
+                    "user_href": "/profile/Sam-Rhee"
+                },
+                {
+                    "user_id": "Justin Shaw",
+                    "user_href": "/profile/Justin-Shaw-1"
+                },
+                {
+                    "user_id": "Michal",
+                    "user_href": "/profile/Michal-167"
+                },
+                {
+                    "user_id": "Jun Thong",
+                    "user_href": "/profile/Jun-Thong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marc Canter",
+                "href": "/profile/Marc-Canter"
+            },
+            "answer_text": "Ding Dong the witch is DEAD!   Little did we realize that 25 years later that the owners of our technology would become the evil dark side.  That's certainly not why we invented it - or what we had hoped it would turn into. Opens standards, lock-in strategies and working with others - were vague notions back in the '80's.  But throughout the 90's it became clear that Macromedia was going to try and lock-in the entire industry into their format - and they succeeded.  However they didn't understand the subtle issues - that they were perpetuating - which would come back to haunt them. Hidden backdoor access, playing favorites, incompetent waystation and 'central' platform plays, horrible internal company culture, executives who didn't use the product - all these factors contributed to turning Macromedia into a truly evil company. The final straw - merging with Adobe - was so perfect.  Two mating dinosaurs hopelessly left behind. Remember the quality of HTML code that Dreamweaver prioduced?  Well go look at the code of the Flash->HTML5 convertor! We've seen the precipice of Flash - there's only one way to go - and that's downhill.  20 years from now they'll still be Flash apps and services - but they are so gone - they don't even know it. Steve Gillmor used to talk about \"Office is Dead\" Now Robert Scoble talks about \"Flash is Dead\" They're both living zombies. Walking dead. ",
+            "date": "Answered April 28, 2011",
+            "views": "219",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Howie Burke",
+                    "user_href": "/profile/Howie-Burke"
+                },
+                {
+                    "user_id": "Ianus Keller",
+                    "user_href": "/profile/Ianus-Keller"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Myrne Stol",
+                "href": "/profile/Myrne-Stol"
+            },
+            "answer_text": "Two cents from someone who thinks that *in theory* he could do without Flash, since he does not really use that much Flash in daily browsing:The Youtube HTML5 player is so sucky that I left the youtube HTML5 trial *twice* (after joining it twice). IMO this either shows that HTML5 (even between two Google controlled entities, Youtube and Chrome) can't be made right, or that Google doesn't care about getting it right, or perhaps considers half-hearted support to be strategic. I think Flash only can become irrelevant when enough \"media\" companies (and certainly those as big as Google) start to take the \"HTML5-only\" experience seriously. Having bundled Flash player with Chrome, Google actually have seemed to have (temporarily?) ceded for a world where Flash remains a standard.  That's a whole lot different than Apple, who has actually pushed Flash out of OS X / Safari. In my mind, Flash has currently the blessing of Google, and I think that's enough to keep it relevant in the short-run, and maybe even in long-run. Maybe Google hopes they can somehow lay pressure on Apple or so... Really hard for me to understand the rationale behind it. I'm not sure about the state of Flash on Android. I heard it was less than perfect. If I were Adobe, I'd pay Google big bucks to get this right. ",
+            "date": "Answered April 18, 2011",
+            "views": "259",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mayur Mohite",
+                    "user_href": "/profile/Mayur-Mohite"
+                },
+                {
+                    "user_id": "Bj\u00f8rn Rostad",
+                    "user_href": "/profile/Bj\u00f8rn-Rostad"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aditya Ulman",
+                "href": "/profile/Aditya-Ulman"
+            },
+            "answer_text": "Flash is just a Tool. Like any other technology, there are advancements coming in and the old ones (here, referring to Flash) are being replaced with newer ones (Animate CC) to make the overall process of completing a task (here, referring to animation) easier.However, old ones have not become irrelevant. In fact, older ones are quite simple to configure, use and they don\u2019t require your system to have high-end specifications. I use Macromedia Flash 2004 version to make animations (just as a hobby). I draw frames/make my animation solely with a mouse.Even with an old software(Flash) and a mouse, it\u2019s possible to create stuff. Some animations which I\u2019ve made in Flash 2004 version with a mouse:      So, Flash has not become irrelevant, it\u2019s just that the name along with some features have been changed/added. However, the ones who\u2019re using the older ones can manage to create things in the same way they\u2019re created in the newer versions. ",
+            "date": "Answered January 25, 2018",
+            "views": "922",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Reddy Surendra",
+                    "user_href": "/profile/Reddy-Surendra-6"
+                },
+                {
+                    "user_id": "Saji Philip",
+                    "user_href": "/profile/Saji-Philip-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bennett von Bennett",
+                "href": "/profile/Bennett-von-Bennett"
+            },
+            "answer_text": "There are still so many things that Flash/Flex does better than the alternatives - for example animating and dynamic modeling of complex data - and from the developer side there is no comparison as to ease of use in such cases. The ability to \"write once, run everywhere\" makes it much more time efficient to develop web or AIR apps than HTML/CSS3/JS. One of the reasons I became a Flash developer all those years ago was because I was sick of browser sniffing and conditional coding and inconsistent behavior and display across platforms and browsers etc.  Trying to determine the support for CSS3 and HTML5 for different devices, browsers, platforms etc has me feeling some unpleasant deja-vu.  Obviously this will smooth out in time but for the moment it's quite a PITA. I recently had to port a Flash site over to HTML5 and getting it to appear and behave in a consistent manner in all the various scenarios drove me up the wall - and as for IE6 users - of which there are still millions - well, forget it. Granted I am not a HTML5 dev, and a specialist would probably know a lot more tricks than I do and probably has a ready-made bunch of scripts to take care of a lot of the conditional coding - but still, I'm willing to bet that if we 'ran a race' between a Flash team and a HTML5 team the Flash team would be kicking back and drinking beers while the HTML5 team was still trying to sort out their Javascript and CSS animations. The other thing I will say is that Flash is hard to beat when it comes to presentations, mockups, rapid protoyping. PowerPoint? whatever - I can whip up an eye-catching and well crafted presentation in little more than a few hours that would beat the pants off that bullet-point crapola, and for rapid protyping it's fast handy and impressive.  I think that a big part of the problem is also that there's lots of bad Actionscript out there - I've certainly been guilty of it over the years (being on of those who 'learned on the job') - and I will also say that Adobe has not done a very good job of making the Flash player a \"lean mean\" machine. In recent years especially the API has ballooned considerably.I mean just to take a simple example, why not make all the 3D stuff out of the Player and put it into a downloadable-on-demand external library? The truth is that there are lots of built in classes that really aren't necessary for 90% of the Flash content out there and if the player didn't have all the extra 'features' perhaps Jobs wouldn't have banned it in the first place (well - of course he would've but at least he wouldn't have had a good excuse). Anyway - my point is this: I can do without Flash ads myself (hate em even tho I used to make em!), and 'all Flash' websites are too clunky and clumsy to be viable anymore - but judicious use of Flash and well crafted Actionscript can really make some sites shine, and for online multimedia and information graphics Flash/Flex continues to be the go-to tool for the moment (not that it couldn't use some tweaking). ... that's just my 2\u00a2 ",
+            "date": "Answered May 2, 2011",
+            "views": "210",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jens Meydam",
+                    "user_href": "/profile/Jens-Meydam"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tommy Oddo",
+                "href": "/profile/Tommy-Oddo"
+            },
+            "answer_text": "Flash is just another tool in a designer's/developer's toolbox. For some projects it will be irrelevant, and for others, it won't be. The real questions are: Who are you targeting? What are you trying to accomplish? What are the technical requirements for the project (e.g., mostly iPad users?)? What are your success metrics? How will traffic be generated? And so on. Having said all that, it would help to have some context with which to answer this question. Are you (as a designer/developer) trying to decide if Flash is worth learning? Are you primarily interested in game development? Are you a non-designer/developer running a small business and considering using Flash on your website? Otherwise, Flash certainly has a PR problem-- most of which is due to the way some designers and developers have used the product in the past. I've made a good living designing for/with Flash, but I'm now more focused on HTML5/jQuery, etc. (and NOT because these are replacements for Flash). I believe the iPad (and other mobile devices) are going to have a major impact on how we design websites in the future. ",
+            "date": "Answered April 14, 2011",
+            "views": "477",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aaron Kupferberg",
+                    "user_href": "/profile/Aaron-Kupferberg"
+                },
+                {
+                    "user_id": "Kirk Elliott",
+                    "user_href": "/profile/Kirk-Elliott"
+                },
+                {
+                    "user_id": "Simon Hogg",
+                    "user_href": "/profile/Simon-Hogg-1"
+                },
+                {
+                    "user_id": "Chris Juric",
+                    "user_href": "/profile/Chris-Juric"
+                },
+                {
+                    "user_id": "Evan Brown",
+                    "user_href": "/profile/Evan-Brown-1"
+                },
+                {
+                    "user_id": "Jun Thong",
+                    "user_href": "/profile/Jun-Thong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Manish Malik",
+                "href": "/profile/Manish-Malik"
+            },
+            "answer_text": "Did you realize what Adobe has been doing recently? I won't compare Flash to HTML5 for 'web'. I am seeing it becoming a viable alternative for all types of app development on mobile and tablet devices. For BlackBerry PlayBook, Adobe AIR/Flash is the one of the few, and probably the easiest approach available to make apps on it. In fact, a number of developers just adapted their existing Flash apps for the PlayBook when RIM ran the Free PlayBook offer. For MeeGo and Android, Adobe AIR/Flash is again one of the few (not sure about easiest yet) approaches to make apps on it. TweetDeck (which a substantial number of desktop Twitter users use) is made on Adobe AIR (effectively, Flash for the purpose of this discussion). I see Adobe gaining ground on these platforms fast. They would continue finding ways to keep Flash relevant. Disclaimer: I have worked with Adobe as an employee in the past, but didn't work on anything-Flash then. ",
+            "date": "Answered May 2, 2011",
+            "views": "216",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Amir Memon",
+                "href": "/profile/Amir-Memon"
+            },
+            "answer_text": "He's right 90% of the HTML5 fanfare is BS. Bottom line is a plugin enables a web browser to do things it can't. HTML5 only implements a subset of what Flash provides, and by the time it becomes ubiquitous enough, Flash will have had innovated a lot more. This summer we'll provide the ability to make full on hardware-accelerated 3D games, and a year or two later you'll see big name titles built on it. DRM is out and gaining speed with the hollywood companies... and even if HTML5 wanted DRM, how in the wolrd could they possibly implement it, let alone agree on it as a standard. The great thing about all this HTML5 hype is that it's scaring away our competitors -- MSFT is backing off of Silverlight, Oracle/Sun backing off of JavaFX, etc... meanwhile we've got some amazing features coming down the pipe... for desktop, mobile, and in between.   As they say in Silicon valley, \"innovate or die\" ",
+            "date": "Answered April 28, 2011",
+            "views": "203",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mayur Mohite",
+                    "user_href": "/profile/Mayur-Mohite"
+                },
+                {
+                    "user_id": "Hite Jote",
+                    "user_href": "/profile/Hite-Jote"
+                },
+                {
+                    "user_id": "Myrne Stol",
+                    "user_href": "/profile/Myrne-Stol"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Mellinger",
+                "href": "/profile/Michael-Mellinger"
+            },
+            "answer_text": "Irrelevant is probably too strong.  The use cases for Flash have been greatly reduced because of HTML5, JavaScript improvements, CSS3, etc.  There are a lot fewer reasons to use Flash today.  HTML5 is starting to mature and browsers are improving at a rapid pace.  Even Microsoft is doing yearly updates.   However, the big game changer is the iPad.  There will probably be 50 million units sold by the end of 2011, and close to 100 million by 2012.  Is it really worth doing a site that can't be view on the iPad?  In some cases yes, but in most cases the answer is no.  Flash has yet to prove itself on any mobile device.  So, when  Android tablets do catch on, you're probably better off with HTML5. ",
+            "date": "Answered April 14, 2011",
+            "views": "217",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Harsh Gupta",
+                    "user_href": "/profile/Harsh-Gupta-766"
+                },
+                {
+                    "user_id": "Geoff Yuen",
+                    "user_href": "/profile/Geoff-Yuen"
+                },
+                {
+                    "user_id": "John Polacek",
+                    "user_href": "/profile/John-Polacek"
+                },
+                {
+                    "user_id": "Adam Sofineti",
+                    "user_href": "/profile/Adam-Sofineti"
+                },
+                {
+                    "user_id": "Robert Dawson",
+                    "user_href": "/profile/Robert-Dawson"
+                },
+                {
+                    "user_id": "Douglas Sellers",
+                    "user_href": "/profile/Douglas-Sellers"
+                },
+                {
+                    "user_id": "Alan Morrison",
+                    "user_href": "/profile/Alan-Morrison"
+                },
+                {
+                    "user_id": "Jens Wuerfel",
+                    "user_href": "/profile/Jens-Wuerfel"
+                },
+                {
+                    "user_id": "Anthony Castillo",
+                    "user_href": "/profile/Anthony-Castillo"
+                },
+                {
+                    "user_id": "Chris Beach",
+                    "user_href": "/profile/Chris-Beach"
+                },
+                {
+                    "user_id": "Chris Jagers",
+                    "user_href": "/profile/Chris-Jagers"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sajid Hussain",
+                "href": "/profile/Sajid-Hussain"
+            },
+            "answer_text": "Flash would be in market but for public use websites like cms,blogging , they want to be free from this plugin dependant solutions as they have to servoer allot of devices. Adobe is even also keeping their employees busy to convert flash animations into html utilities,flex applications into mobiles as their native applications . but I dont understand one thing how many applications client has to instal to view their specific website ,The at the end solution would be Browser base Apple just deny flash with their ios.Html 5 is just missing advanse multimedia features , and they are really working on it and it dont have that much strong development ide like Flash Builder. if u think maqetta its worst :) http://www.dacoders.com/2011/04/15/maqetta-vs-flash-or-silverlight/ ",
+            "date": "Answered April 16, 2011",
+            "views": "973",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Brian H\u00e9nocq",
+                "href": "/profile/Brian-H\u00e9nocq"
+            },
+            "answer_text": "It looks to me like Flash is a product that to some extent solves a problem we no longer have. It's very difficult to look at a something as entrenched as Flash and imagine that some day it will be gone, but it's similar to Real Player, which once upon a time was the predominant audio format/player. It has gone because it solved a problem we no longer have. That's not to say that Flash is completely dead, and I'm sure there are still uses for it. But as regards video streaming I can't see that it has a future. To my mind that was always something of a perversion of what Flash was about anyway. It was a great solution for packaging vector graphics, but video in a Flash wrapper always just seemed weird, and not what it was about at all. ",
+            "date": "Answered April 28, 2011",
+            "views": "225",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Polacek",
+                    "user_href": "/profile/John-Polacek"
+                },
+                {
+                    "user_id": "Hal Helms",
+                    "user_href": "/profile/Hal-Helms"
+                },
+                {
+                    "user_id": "Ted Goas",
+                    "user_href": "/profile/Ted-Goas"
+                },
+                {
+                    "user_id": "Jamie Mason",
+                    "user_href": "/profile/Jamie-Mason"
+                },
+                {
+                    "user_id": "Jens Wuerfel",
+                    "user_href": "/profile/Jens-Wuerfel"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Saptarshi Mukherjee",
+                "href": "/profile/Saptarshi-Mukherjee-86"
+            },
+            "answer_text": "In a single word - \u201cNO\u201d. There are lots of things you can perform using Adobe Flash. Though there is some other software to help you with dynamic modelling and animating complexed data structures. In some cases, a Flash file turns to be a bit heavier than the other software. For this reason. people tend not to use Adobe Flash in some situations. The basic animating in Adobe Flash is still better to perform than in other software. I still love using the \u201cmasking\u201d in Adobe Flash. There are still opportunities for efficient Flash developers in our country. So learning the basics of Abobe Flash will be effective if you are into a web development career. ",
+            "date": "Answered September 3, 2019",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Joel Finnstr\u00f6m",
+                "href": "/profile/Joel-Finnstr\u00f6m"
+            },
+            "answer_text": "Flash is absolutely a good technology, but as been said in this thread before, it's been miss used. For me there are now at least 3 great cases for flash; mobile development, games and as a tool for creating digital signage(for malls, exhibits and so forth). The idea of the flash website is for sure dead. Perhaps not due to the raise of HTML5 but more due to the raise of social media. When users but their persons into what they're doing online they start making demands, mostly demands for great content and historically flashsites has been bad on delivering these beyond the first encounter. ",
+            "date": "Answered April 14, 2011",
+            "views": "393",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fredrik von S\u00e4fsten",
+                    "user_href": "/profile/Fredrik-von-S\u00e4fsten"
+                },
+                {
+                    "user_id": "Jens Wuerfel",
+                    "user_href": "/profile/Jens-Wuerfel"
+                },
+                {
+                    "user_id": "Michel Jansen",
+                    "user_href": "/profile/Michel-Jansen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bella Semenyuk",
+                "href": "/profile/Bella-Semenyuk"
+            },
+            "answer_text": "Hmmm not really, Adobe Flash has not become irrelevant at all and people and different kind of users are still using it for fulfilling their different purposes, it might be irrelevant for developers if they think so but its demand in market is still high anyhow for more details regarding adobe follow the site [certmagic dot com] ",
+            "date": "Answered February 22, 2016",
+            "views": "12",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Atom McCree",
+                "href": "/profile/Atom-McCree"
+            },
+            "answer_text": "In websites as a complete web design strategy: Yes. As part of your design UI: No  While HTML5 & Apple can attempt to shift trends, Flash has become strongly rooted in many sites. As an interactive format it has a great future but as a complete website strategy I would not recommend it. ",
+            "date": "Answered April 28, 2011",
+            "views": "134",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Will Grant",
+                "href": "/profile/Will-Grant-1"
+            },
+            "answer_text": "Flash was built and became popular because it does things that couldn't be done in a browser alone. HTML5 makes a lot of those things possible, trivial even. The natural evolution is, self-evidently, that Flash will become unnecessary as developers can move more to the native browser and away from plugins. Time-scale is unpredictable, but Flash's demise in inevitable. ",
+            "date": "Answered April 18, 2011",
+            "views": "470",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nathan Monk",
+                    "user_href": "/profile/Nathan-Monk-1"
+                },
+                {
+                    "user_id": "Kushal Hada",
+                    "user_href": "/profile/Kushal-Hada"
+                },
+                {
+                    "user_id": "Jens Wuerfel",
+                    "user_href": "/profile/Jens-Wuerfel"
+                },
+                {
+                    "user_id": "Charles Hall",
+                    "user_href": "/profile/Charles-Hall"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Miles Price",
+                "href": "/profile/Miles-Price"
+            },
+            "answer_text": "HTML 5 is growing in popularity but flash is still used on most sites and when those sites see that their flash isn't working, they flip out. Flash won't become irrelevant but another delivery service for flash elements, just like HTML 5 - they are all streaming embedded systems for browsers and apps ",
+            "date": "Answered April 17, 2011",
+            "views": "74",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andy Burr",
+                "href": "/profile/Andy-Burr-2"
+            },
+            "answer_text": "Some will balk, but Flash for animation is great for RAPID quick and dirty prototyping usage. You can animate any rational micro interactions for web or native app and it's UI is simpler with much less clutter than After Effects.   I'm very curious what Project Comet will have to offer for animation and how much creative control you have versus things being baked in.  ",
+            "date": "Answered February 3, 2016",
+            "views": "91",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Sam Rhee",
+                "href": "/profile/Sam-Rhee"
+            },
+            "answer_text": "I wouldn't say so, but it's starting to FINALLY settle into the niches that it does best. I still think that there are instances where a complete Flash implementation is the best solution, but 99% of the time, it's not the case. ",
+            "date": "Answered April 14, 2011",
+            "views": "23",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Kevin Suttle",
+                "href": "/profile/Kevin-Suttle"
+            },
+            "answer_text": "Hard to deny data. http://www.adobe.com/products/player_census/flashplayer/version_penetration.html ",
+            "date": "Answered April 14, 2011",
+            "views": "248",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tommaso Bufano",
+                    "user_href": "/profile/Tommaso-Bufano"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Greathouse",
+                "href": "/profile/John-Greathouse"
+            },
+            "answer_text": "What's \"Adobe Flash\"? ",
+            "date": "Answered April 14, 2011",
+            "views": "24",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Justin Shaw",
+                    "user_href": "/profile/Justin-Shaw-1"
+                }
+            ]
+        }
+    ]
+}

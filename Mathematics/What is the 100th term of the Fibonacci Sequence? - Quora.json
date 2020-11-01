@@ -1,0 +1,174 @@
+{
+    "title": "What is the 100th term of the Fibonacci Sequence? - Quora",
+    "tags": [
+        "Fibonacci Sequence",
+        "Fibonacci Numbers",
+        "Sums and Series (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Awais",
+                "href": "/profile/Awais-58"
+            },
+            "answer_text": "The Fibonacci Sequence is the series of numbers: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, ... The next number is found by adding up the two numbers before it. The 2 is found by adding the two numbers before it (1+1)The 3 is found by adding the two numbers before it (1+2),And the 5 is (2+3),and so on!Similarly we have to calculate the 100th term so for this we have a rule we can write the rule: The Rule is Xn=Xn-1+Xn-2 where: xn is term number \"n\"xn-1 is the previous term (n-1)xn-2 is the term before that (n-2)Here n=100 So we can write the rule as X100=X100-1+X100-2 = X99+X98 =135301852344706746049+218922995834555169026 =354224848179261915075 So this is the 100th term of Fibonacci Sequence ",
+            "date": "Answered December 10, 2018",
+            "views": "162",
+            "upvotes": " View 12 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Julius Dave Nolasco",
+                    "user_href": "/profile/Julius-Dave-Nolasco"
+                },
+                {
+                    "user_id": "Prakash Tiwari",
+                    "user_href": "/profile/Prakash-Tiwari-32"
+                },
+                {
+                    "user_id": "Nameless",
+                    "user_href": "/profile/Nameless-275"
+                },
+                {
+                    "user_id": "Isha Mani",
+                    "user_href": "/profile/Isha-Mani-2"
+                },
+                {
+                    "user_id": "Nathan Ormond",
+                    "user_href": "/profile/Nathan-Ormond-3"
+                },
+                {
+                    "user_id": "Phillip Courtney",
+                    "user_href": "/profile/Phillip-Courtney-4"
+                },
+                {
+                    "user_id": "Vikas Meena",
+                    "user_href": "/profile/Vikas-Meena-34"
+                },
+                {
+                    "user_id": "Benno Eidus",
+                    "user_href": "/profile/Benno-Eidus"
+                },
+                {
+                    "user_id": "Lieze Mae Jabalde",
+                    "user_href": "/profile/Lieze-Mae-Jabalde"
+                },
+                {
+                    "user_id": "Gobinda Khanal",
+                    "user_href": "/profile/Gobinda-Khanal-1"
+                },
+                {
+                    "user_id": "Meme Lord",
+                    "user_href": "/profile/Meme-Lord-113"
+                },
+                {
+                    "user_id": "Roie Knaanie",
+                    "user_href": "/profile/Roie-Knaanie"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chuck Coker",
+                "href": "/profile/Chuck-Coker"
+            },
+            "answer_text": "Those other answers look complicated and I\u2019m not that good at math. So I went to https://pari.math.u-bordeaux.fr/gp.html and used the online PARI/GP calculator. I typed: fibonacci(100)\u00a0PARI/GP responded: %1 = 354224848179261915075\u00a0So the answer is 354,224,848,179,261,915,075.  You could also try this to get the same result. \\\\ PARI/GP\u00a0\\\\ Calculate the nth Fibonacci number.\u00a0nth_fibonacci(n) = {\u00a0    my (phi = (1 + sqrt(5)) / 2);\u00a0    return(\u00a0        floor(\u00a0            (phi^n - (-1 / phi)^n) / (2 * phi - 1)\u00a0        )\u00a0    );\u00a0}\u00a0print(nth_fibonacci(100)); \\\\ my fibonacci function\u00a0print(fibonacci(100));     \\\\ built-in fibonacci function\u00a0\u00a0354224848179261915075\u00a0354224848179261915075\u00a0 Original question: \u201cWhat is the 100th term of the Fibonacci Sequence?\u201d This question was merged with: \u201cWhat is the 30th term in the Fibonacci series?\u201d Here\u2019s the answer to that one: fibonacci(30)\u00a0%1 = 832040\u00a0",
+            "date": "Answered June 28, 2019",
+            "views": "44",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vikas Meena",
+                    "user_href": "/profile/Vikas-Meena-34"
+                },
+                {
+                    "user_id": "Jonas Oberhauser",
+                    "user_href": "/profile/Jonas-Oberhauser"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Angelos Tsirimokos",
+                "href": "/profile/Angelos-Tsirimokos"
+            },
+            "answer_text": "There is an explicit formula for the n-th term of the Fibonacci sequence. It is[((1+\u221a5)/2)\u207f - ((1-\u221a5)/2)\u207f]/\u221a5.Since |(1-\u221a5)/2| < 1, ((1-\u221a5)/2)\u207f is very small if n is at all large. So you can simply take the integer closest to ((1+\u221a5)/2)\u207f/\u221a5.The 100th term of the Fibonacci sequence is thus very nearly ((1+\u221a5)/2)^100/\u221a5, which any good calculator will tell you is almost exactly 354224848179261915075. ",
+            "date": "Answered December 10, 2018",
+            "views": "67",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Seif Boukhatem",
+                    "user_href": "/profile/Seif-Boukhatem-1"
+                },
+                {
+                    "user_id": "Yiding Li",
+                    "user_href": "/profile/Yiding-Li-6"
+                },
+                {
+                    "user_id": "Adithya Kamath",
+                    "user_href": "/profile/Adithya-Kamath-5"
+                },
+                {
+                    "user_id": "Vikas Meena",
+                    "user_href": "/profile/Vikas-Meena-34"
+                },
+                {
+                    "user_id": "Hrithik George",
+                    "user_href": "/profile/Hrithik-George"
+                },
+                {
+                    "user_id": "Gobinda Khanal",
+                    "user_href": "/profile/Gobinda-Khanal-1"
+                },
+                {
+                    "user_id": "Wolf Boehrendt",
+                    "user_href": "/profile/Wolf-Boehrendt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michel Tambwe",
+                "href": "/profile/Michel-Tambwe"
+            },
+            "answer_text": " ",
+            "date": "Answered May 21, 2020",
+            "views": "851",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janie Boy Andaya",
+                    "user_href": "/profile/Janie-Boy-Andaya-1"
+                },
+                {
+                    "user_id": "Gurbaksh Singh",
+                    "user_href": "/profile/Gurbaksh-Singh-86"
+                },
+                {
+                    "user_id": "Arpit Kaushal",
+                    "user_href": "/profile/Arpit-Kaushal"
+                },
+                {
+                    "user_id": "Saxon Supple",
+                    "user_href": "/profile/Saxon-Supple-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sreeja Gundu",
+                "href": "/profile/Sreeja-Gundu"
+            },
+            "answer_text": "c program:  Output: 100th term is:  ",
+            "date": "Answered October 6, 2019",
+            "views": "18",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Saikiran",
+                    "user_href": "/profile/Saikiran-89"
+                }
+            ]
+        }
+    ]
+}

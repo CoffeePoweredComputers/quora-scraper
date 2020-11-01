@@ -1,0 +1,32 @@
+{
+    "title": "What technology do I use to offer free conference video calls on my website? - Quora",
+    "tags": [
+        "Conference Calls",
+        "Video Conferencing",
+        "Videos",
+        "Websites",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dmitriy Komarovskiy",
+                "href": "/profile/Dmitriy-Komarovskiy"
+            },
+            "answer_text": "It depends on how you plan to use video calls. 1) If you want to create a video calling for the consultation of your visitors to the sales department, you can use TrueConf API. Algorithm is simple: 1. Your website visitor click on the link or button (any visible DOM element). For example:   2. jQuery (AJAX) sending request to script that will create a video conference on the server using RESTful API, in response script will send a conference link. 3. Next, jQuery must initialize the iframe from that link on the page to load the area  with video conference.   4. Website visitor should enter to conference as guest, without any passwords, just need to enter the name.   5. Enjoy!    2) If you want to allow users to communicate with each other - Read about WebRTC technology. ",
+            "date": "Updated March 25, 2016",
+            "views": "633",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Roland C Harcker",
+                "href": "/profile/Roland-C-Harcker"
+            },
+            "answer_text": "This can all be proficient with PHP, however that is presumably not the most prudent arrangement, as it is not the most ideal device for the occupation on all sides. Blaze is considerably more productive at a/v catch and transport on the client end. You can attempt to do this without blaze, yet you will have migraines. HTML5 might make your life less demanding, yet in the event that you're shooting for most extreme similarity, glimmer is the least difficult approach to go for making the client. At that point, similarly as the real server side that will transfer the sound/video, you could compose a talk server in php, yet you're in an ideal situation utilizing an open source venture. ",
+            "date": "Answered December 25, 2015",
+            "views": "390",
+            "upvotes": "0"
+        }
+    ]
+}

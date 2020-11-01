@@ -1,0 +1,130 @@
+{
+    "title": "How to implement a Boolean expression using NOR gate for ((A+B) C)'D - Quora",
+    "tags": [
+        "Boolean Expression"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Akriti Gupta",
+                "href": "/profile/Akriti-Gupta-31"
+            },
+            "answer_text": "Firstly, we need to know how to realize basic logic gates ( AND, OR, NOT) with NOR gate.  The above image shows how you can realize the basic LOGIC GATES with NOR. Now coming to the Boolean Expression, ((A+B) C)'D. You need to segregate various basic gates that are required to make the whole expression. Follow the steps. Realize the following with NOR gate. A+B (OR gate with NOR, inputs are A and B)(A+B) C (AND gate with NOR, inputs are A+B [From step 1] and C)D\u2019 (NOT gate with NOR, inputs are D and D)((A+B) C)'D) (AND gate with NOR, inputs are (A+B) C [From step 2] and D\u2019 [From step 3]Therefore, the circuit in below image is the required design to make ((A+B) C)'D)  After designing the expression with basic gates, we can remove the redundant NOR gates that are solving the same purpose. For example, after the Gate No. 8 we will obtain the expression as D, which we are giving input to Gate No. 7. So we can, directly give input D to Gate No. 9. Hope the explanation is understandable and helps you. All the best! ",
+            "date": "Answered April 15, 2017",
+            "views": "217",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Asma Aktar",
+                    "user_href": "/profile/Asma-Aktar-2"
+                },
+                {
+                    "user_id": "Jeffrey Amora",
+                    "user_href": "/profile/Jeffrey-Amora"
+                },
+                {
+                    "user_id": "Adithiiyer Adithiiyer",
+                    "user_href": "/profile/Adithiiyer-Adithiiyer"
+                },
+                {
+                    "user_id": "Kanagadhileepan Kamalavelan",
+                    "user_href": "/profile/Kanagadhileepan-Kamalavelan"
+                },
+                {
+                    "user_id": "Ayush Shinde",
+                    "user_href": "/profile/Ayush-Shinde-22"
+                },
+                {
+                    "user_id": "G Pawan Harish",
+                    "user_href": "/profile/G-Pawan-Harish"
+                },
+                {
+                    "user_id": "Dikshita Hazarika",
+                    "user_href": "/profile/Dikshita-Hazarika-4"
+                },
+                {
+                    "user_id": "Shantanu Kaushik",
+                    "user_href": "/profile/Shantanu-Kaushik-13"
+                },
+                {
+                    "user_id": "English Kid",
+                    "user_href": "/profile/English-Kid-1"
+                },
+                {
+                    "user_id": "Riya Raju",
+                    "user_href": "/profile/Riya-Raju-11"
+                },
+                {
+                    "user_id": "Kritika",
+                    "user_href": "/profile/Kritika-23"
+                },
+                {
+                    "user_id": "Kruthi M",
+                    "user_href": "/profile/Kruthi-M-2"
+                },
+                {
+                    "user_id": "Kshitij Surve",
+                    "user_href": "/profile/Kshitij-Surve"
+                },
+                {
+                    "user_id": "Anojan Sivaranjan",
+                    "user_href": "/profile/Anojan-Sivaranjan"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Naymul Kabir Turjo",
+                    "user_href": "/profile/Naymul-Kabir-Turjo"
+                },
+                {
+                    "user_id": "Abbosbek Mahamadaminov",
+                    "user_href": "/profile/Abbosbek-Mahamadaminov"
+                },
+                {
+                    "user_id": "Deepanshu Mehta",
+                    "user_href": "/profile/Deepanshu-Mehta-20"
+                },
+                {
+                    "user_id": "Hafizullah Tokhi",
+                    "user_href": "/profile/Hafizullah-Tokhi"
+                },
+                {
+                    "user_id": "Malini Rajendra",
+                    "user_href": "/profile/Malini-Rajendra"
+                },
+                {
+                    "user_id": "Nikhil",
+                    "user_href": "/profile/Nikhil-1372"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": " This can be simplified in two ways towards either SOP form or POS form.      Or       ",
+            "date": "Answered June 9, 2020",
+            "views": "13",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Gayathri Nisha",
+                    "user_href": "/profile/Gayathri-Nisha-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Samhitha Sree",
+                "href": "/profile/Samhitha-Sree"
+            },
+            "answer_text": "Samhitha Sree's answer to How can I take a circuit diagram and implement the same logic with only NAND gates? First realize the given function normally then follow the steps mentioned in the above question. Hope this will give a clear view of how a function can be realized using NAND and NOR logic. happy learning!!! Do follow and upvote if u like the way I presented the answer. ",
+            "date": "Answered March 16, 2019",
+            "views": "39",
+            "upvotes": "0"
+        }
+    ]
+}

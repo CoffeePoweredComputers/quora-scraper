@@ -1,0 +1,783 @@
+{
+    "title": "What technology is used in WhatsApp? - Quora",
+    "tags": [
+        "WhatsApp (product)",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aradhya Sharma",
+                "href": "/profile/Aradhya-Sharma-50"
+            },
+            "answer_text": "Source : The WhatsApp Architecture Facebook Bought For $19 Billion - High Scalability Here is the general explanation from the link WhatsApp server is almost completely implemented in Erlang.Server systems that do the backend message routing are done in Erlang.Great achievement is that the number of active users is managed with a really small server footprint. Team consensus is that it is largely because of Erlang.Interesting to note Facebook Chat was written in Erlang in 2009, but they went away from it because it was hard to find qualified programmers.WhatsApp server has started from ejabberdEjabberd is a famous open source Jabber server written in Erlang.Originally chosen because its open, had great reviews by developers, ease of start and the promise of Erlang\u2019s long term suitability for large communication system.The next few years were spent re-writing and modifying quite a few parts of ejabberd, including switching from XMPP to internally developed protocol, restructuring the code base and redesigning some core components, and making lots of important modifications to Erlang VM to optimize server performance.To handle 50 billion messages a day the focus is on making a reliable system that works. Monetization is something to look at later, it\u2019s far far down the road.A primary gauge of system health is message queue length. The message queue length of all the processes on a node is constantly monitored and an alert is sent out if they accumulate backlog beyond a preset threshold. If one or more processes falls behind that is alerted on, which gives a pointer to the next bottleneck to attack.Multimedia messages are sent by uploading the image, audio or video to be sent to an HTTP server and then sending a link to the content along with its Base64 encoded thumbnail (if applicable).Some code is usually pushed every day. Often, it\u2019s multiple times a day, though in general peak traffic times are avoided. Erlang helps being aggressive in getting fixes and features into production. Hot-loading means updates can be pushed without restarts or traffic shifting. Mistakes can usually be undone very quickly, again by hot-loading. Systems tend to be much more loosely-coupled which makes it very easy to roll changes out incrementally.What protocol is used in Whatsapp app? SSL socket to the WhatsApp server pools. All messages are queued on the server until the client reconnects to retrieve the messages. The successful retrieval of a message is sent back to the whatsapp server which forwards this status back to the original sender (which will see that as a \"checkmark\" icon next to the message). Messages are wiped from the server memory as soon as the client has accepted the messageHow does the registration process work internally in Whatsapp? WhatsApp used to create a username/password based on the phone IMEI number. This was changed recently. WhatsApp now uses a general request from the app to send a unique 5 digit PIN. WhatsApp will then send a SMS to the indicated phone number (this means the WhatsApp client no longer needs to run on the same phone). Based on the pin number the app then request a unique key from WhatsApp. This key is used as \"password\" for all future calls. (this \"permanent\" key is stored on the device). This also means that registering a new device will invalidate the key on the old device.",
+            "date": "Updated December 7, 2017",
+            "views": "212",
+            "upvotes": " View 33 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bagas Wahyu Hidayah",
+                    "user_href": "/profile/Bagas-Wahyu-Hidayah"
+                },
+                {
+                    "user_id": "Jawaad Khan",
+                    "user_href": "/profile/Jawaad-Khan-1"
+                },
+                {
+                    "user_id": "Ani Ifeatu",
+                    "user_href": "/profile/Ani-Ifeatu"
+                },
+                {
+                    "user_id": "Karan R. Bobade",
+                    "user_href": "/profile/Karan-R-Bobade"
+                },
+                {
+                    "user_id": "Hussam Elshehawy",
+                    "user_href": "/profile/Hussam-Elshehawy"
+                },
+                {
+                    "user_id": "Pradeep Kanyal",
+                    "user_href": "/profile/Pradeep-Kanyal"
+                },
+                {
+                    "user_id": "Govind Kumar",
+                    "user_href": "/profile/Govind-Kumar-5"
+                },
+                {
+                    "user_id": "Max Wilder",
+                    "user_href": "/profile/Max-Wilder-3"
+                },
+                {
+                    "user_id": "Sainath Avadhuta",
+                    "user_href": "/profile/Sainath-Avadhuta-1"
+                },
+                {
+                    "user_id": "Heena Sorathiya",
+                    "user_href": "/profile/Heena-Sorathiya-5"
+                },
+                {
+                    "user_id": "Harshal Talele",
+                    "user_href": "/profile/Harshal-Talele-1"
+                },
+                {
+                    "user_id": "Tirumal Jallepalli",
+                    "user_href": "/profile/Tirumal-Jallepalli"
+                },
+                {
+                    "user_id": "Chandrasekhar Marpuri",
+                    "user_href": "/profile/Chandrasekhar-Marpuri"
+                },
+                {
+                    "user_id": "Winston Rodrigues",
+                    "user_href": "/profile/Winston-Rodrigues"
+                },
+                {
+                    "user_id": "Ernesto Rodriguez",
+                    "user_href": "/profile/Ernesto-Rodriguez-81"
+                },
+                {
+                    "user_id": "Shiva Prasad",
+                    "user_href": "/profile/Shiva-Prasad-991"
+                },
+                {
+                    "user_id": "Ahmad Yazid",
+                    "user_href": "/profile/Ahmad-Yazid-6"
+                },
+                {
+                    "user_id": "Kishan Kumar",
+                    "user_href": "/profile/Kishan-Kumar-1626"
+                },
+                {
+                    "user_id": "Amiran Guruli",
+                    "user_href": "/profile/Amiran-Guruli-1"
+                },
+                {
+                    "user_id": "Abhishek Sanju",
+                    "user_href": "/profile/Abhishek-Sanju"
+                },
+                {
+                    "user_id": "Hasnat Babur",
+                    "user_href": "/profile/Hasnat-Babur"
+                },
+                {
+                    "user_id": "Sohan Shetty",
+                    "user_href": "/profile/Sohan-Shetty-9"
+                },
+                {
+                    "user_id": "Chinmayee Rao",
+                    "user_href": "/profile/Chinmayee-Rao"
+                },
+                {
+                    "user_id": "Taofeek Olalekan",
+                    "user_href": "/profile/Taofeek-Olalekan-3"
+                },
+                {
+                    "user_id": "Sriram J",
+                    "user_href": "/profile/Sriram-J-10"
+                },
+                {
+                    "user_id": "Showmik Choudhury",
+                    "user_href": "/profile/Showmik-Choudhury"
+                },
+                {
+                    "user_id": "Martin Mok",
+                    "user_href": "/profile/Martin-Mok"
+                },
+                {
+                    "user_id": "Vansh Sodhi",
+                    "user_href": "/profile/Vansh-Sodhi"
+                },
+                {
+                    "user_id": "Benjamin Sims",
+                    "user_href": "/profile/Benjamin-Sims-1"
+                },
+                {
+                    "user_id": "Vivek B Solanki",
+                    "user_href": "/profile/Vivek-B-Solanki"
+                },
+                {
+                    "user_id": "Nathan Sinclair",
+                    "user_href": "/profile/Nathan-Sinclair-14"
+                },
+                {
+                    "user_id": "Shrikant Singh",
+                    "user_href": "/profile/Shrikant-Singh-16"
+                },
+                {
+                    "user_id": "Harish Pandey",
+                    "user_href": "/profile/Harish-Pandey-96"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hardik Bhatt",
+                "href": "/profile/Hardik-Bhatt-15"
+            },
+            "answer_text": "I need to you take through some technical info first, Whats App is Chat application.  We call them Instant Messaging.  This means the messaging between sender and receive should happen in real time, unlike email (offline).  So you need to first understand challenge here to understand how chat apps work.  If you store something on database, then you pass again to another user, it becomes offline (not in real time).  If you pass any message and it stores and also pass at same to other user, it becomes IM (Instant messaging).   Now in development, there are different PROTOCOLS that help achieve things.  For Emails its: SMTP, POP3 etc. For Chat its: XMPP (Extensible Messaging and Presence Protocol) It is protocol based on another format named XML (like html, not exactly, but to give you idea).  Using XMPP protocol, XML as communication medium and setting up this on a server, that host it and helps pass all communication and also setup logic on this server (Basically coding).  So there are many server created with protocol XMPP like eJabber. Interestingly, WhatsApp is related to \"Yowsup\" , a Python library.  Python is a programming language on which Quora, YouTube etc. are built! You can find this Yowsup library on tgalal/yowsup. So now lets put together all above information. A user A has internet and a client application (whats app) installed on say Android phone), A user B has internet and has same client application (Whatsapp) installed on his iPhone. (So basically cross platform). A types message \"Hi\" to B.  The message is passed via Web Services to XMPP server, The XMPP server has list of all WhatsApp user, based on unique phone number, it will detect B and XMPP server will then send message \"Hi\" to B with web service.  B will recieve this message on iPhone.  In between there will coding done with business rules on server, database level and on client applications as well.  Below is simple architecture of same. Redirect Notice  ",
+            "date": "Answered March 21, 2016",
+            "views": "372",
+            "upvotes": " View 52 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ankita Tripathy",
+                    "user_href": "/profile/Ankita-Tripathy"
+                },
+                {
+                    "user_id": "Skandan KA",
+                    "user_href": "/profile/Skandan-KA-1"
+                },
+                {
+                    "user_id": "Rajan Sharma",
+                    "user_href": "/profile/Rajan-Sharma-65"
+                },
+                {
+                    "user_id": "Shahar Dekel",
+                    "user_href": "/profile/Shahar-Dekel"
+                },
+                {
+                    "user_id": "Jajati K Mohanty",
+                    "user_href": "/profile/Jajati-K-Mohanty"
+                },
+                {
+                    "user_id": "Divyesh Govardhanan",
+                    "user_href": "/profile/Divyesh-Govardhanan"
+                },
+                {
+                    "user_id": "Shivam Sohane",
+                    "user_href": "/profile/Shivam-Sohane-1"
+                },
+                {
+                    "user_id": "Shashikanth Chila",
+                    "user_href": "/profile/Shashikanth-Chila"
+                },
+                {
+                    "user_id": "Himani Mittal",
+                    "user_href": "/profile/Himani-Mittal-9"
+                },
+                {
+                    "user_id": "Ashish Ghorpade",
+                    "user_href": "/profile/Ashish-Ghorpade-1"
+                },
+                {
+                    "user_id": "Neeraj Rathore",
+                    "user_href": "/profile/Neeraj-Rathore-23"
+                },
+                {
+                    "user_id": "Sathya Naren",
+                    "user_href": "/profile/Sathya-Naren-2"
+                },
+                {
+                    "user_id": "Bhavesh Solanki",
+                    "user_href": "/profile/Bhavesh-Solanki-18"
+                },
+                {
+                    "user_id": "Mallesh Peruboyina",
+                    "user_href": "/profile/Mallesh-Peruboyina"
+                },
+                {
+                    "user_id": "Aslam Shaik",
+                    "user_href": "/profile/Aslam-Shaik-27"
+                },
+                {
+                    "user_id": "Linda Griffin",
+                    "user_href": "/profile/Linda-Griffin-11"
+                },
+                {
+                    "user_id": "Divyanshu Gupta",
+                    "user_href": "/profile/Divyanshu-Gupta-86"
+                },
+                {
+                    "user_id": "Sandip Kumar Singh",
+                    "user_href": "/profile/Sandip-Kumar-Singh-17"
+                },
+                {
+                    "user_id": "Wanjohi Kibui",
+                    "user_href": "/profile/Wanjohi-Kibui"
+                },
+                {
+                    "user_id": "Subashini Ganesh",
+                    "user_href": "/profile/Subashini-Ganesh"
+                },
+                {
+                    "user_id": "Anita Agrawal",
+                    "user_href": "/profile/Anita-Agrawal-7"
+                },
+                {
+                    "user_id": "Sagar Vyas",
+                    "user_href": "/profile/Sagar-Vyas-15"
+                },
+                {
+                    "user_id": "Mahaboob Pasha",
+                    "user_href": "/profile/Mahaboob-Pasha-7"
+                },
+                {
+                    "user_id": "Promeet Ganguly",
+                    "user_href": "/profile/Promeet-Ganguly"
+                },
+                {
+                    "user_id": "SPREAD KNOWLEDGE",
+                    "user_href": "/profile/SPREAD-KNOWLEDGE"
+                },
+                {
+                    "user_id": "Isha Bharti",
+                    "user_href": "/profile/Isha-Bharti-12"
+                },
+                {
+                    "user_id": "Kamaljeet Narang",
+                    "user_href": "/profile/Kamaljeet-Narang"
+                },
+                {
+                    "user_id": "Martin Mok",
+                    "user_href": "/profile/Martin-Mok"
+                },
+                {
+                    "user_id": "Pranesh Kumar",
+                    "user_href": "/profile/Pranesh-Kumar-43"
+                },
+                {
+                    "user_id": "Nathan Sinclair",
+                    "user_href": "/profile/Nathan-Sinclair-14"
+                },
+                {
+                    "user_id": "Kabir Ahuja",
+                    "user_href": "/profile/Kabir-Ahuja-1"
+                },
+                {
+                    "user_id": "Someone Crazy",
+                    "user_href": "/profile/Someone-Crazy-2"
+                },
+                {
+                    "user_id": "Kishore Kumar",
+                    "user_href": "/profile/Kishore-Kumar-917"
+                },
+                {
+                    "user_id": "Swetha Sharma",
+                    "user_href": "/profile/Swetha-Sharma-17"
+                },
+                {
+                    "user_id": "Disha Patel",
+                    "user_href": "/profile/Disha-Patel-155"
+                },
+                {
+                    "user_id": "Luki Centuri",
+                    "user_href": "/profile/Luki-Centuri-1"
+                },
+                {
+                    "user_id": "Viji Sankar",
+                    "user_href": "/profile/Viji-Sankar-6"
+                },
+                {
+                    "user_id": "Bhavishya B Varu",
+                    "user_href": "/profile/Bhavishya-B-Varu"
+                },
+                {
+                    "user_id": "Akshay Dalvi",
+                    "user_href": "/profile/Akshay-Dalvi-42"
+                },
+                {
+                    "user_id": "Sayan Nandan",
+                    "user_href": "/profile/Sayan-Nandan-2"
+                },
+                {
+                    "user_id": "Shivam Kurzekar",
+                    "user_href": "/profile/Shivam-Kurzekar"
+                },
+                {
+                    "user_id": "Ahmad Bashir",
+                    "user_href": "/profile/Ahmad-Bashir-1"
+                },
+                {
+                    "user_id": "Deepesh Kumar",
+                    "user_href": "/profile/Deepesh-Kumar-53"
+                },
+                {
+                    "user_id": "Santhoshi Saraswathi",
+                    "user_href": "/profile/Santhoshi-Saraswathi"
+                },
+                {
+                    "user_id": "BesarD DGT",
+                    "user_href": "/profile/BesarD-DGT"
+                },
+                {
+                    "user_id": "Areej B-W",
+                    "user_href": "/profile/Areej-B-W"
+                },
+                {
+                    "user_id": "Shree Lakshmi",
+                    "user_href": "/profile/Shree-Lakshmi-37"
+                },
+                {
+                    "user_id": "Mandilakhe Kolisile",
+                    "user_href": "/profile/Mandilakhe-Kolisile"
+                },
+                {
+                    "user_id": "Madhav Ver",
+                    "user_href": "/profile/Madhav-Ver"
+                },
+                {
+                    "user_id": "Md Siraj",
+                    "user_href": "/profile/Md-Siraj-5"
+                },
+                {
+                    "user_id": "Prabhat Nath",
+                    "user_href": "/profile/Prabhat-Nath-2"
+                },
+                {
+                    "user_id": "Saloni Garg",
+                    "user_href": "/profile/Saloni-Garg-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Boris Esanu",
+                "href": "/profile/Boris-Esanu"
+            },
+            "answer_text": "Tools & Frameworks That Were Used to Build WhatsApp (Android) The article talks about the tools & frameworks that got used to build WhatsApp mobile application for Android platform. The reason why I decided to write this article is the acquisition of WhatsApp by Facebook in $19 billion and, my curiosity on what could have gone in building such application from technology perspective. The objective is to let Android developers take a peek into WhatsApp Android application and, get appropriate information on tools & frameworks that could be used to build a messaging application such as WhatsApp. Thanks for reading it further. Tools & Frameworks Used in WhatsApp Following is a list of tools & frameworks that were found to be used in the most latest version of WhatsApp mobile application. Please give a shout if you disagree with one or more entries listed below. UI-focusedActionBarSherlock: ActionBarSherlock is an extension of Android support library designed to facilitate the use of the action bar design pattern across all versions of Android with a single API. The library got used in components such as GalleryPicker, ImageGallery etc.StickyGridHeaders: An Android library that provides a GridView that shows items in sections with headers. By default the section headers stick to the top like the People app in Android 4.x but this can be turned off. StickyGridHeaders also automatically sizes its rows to the largest item in the row.Integration with Google Maps, Google+Google Play Services SDK: It helped WhatsApp take advantage of the Google-powered features such as Google Maps, Google+.Platform updates distributionGoogle Play Services SDK: It helped in distributing automatic platform updates as an APK through the Google Play store. This made it faster for the users to receive the updatesMediaMp4Parser: As part of Mp4Parser, ISOParser and ISOViewer got used to read and write the MP4 file structure and, visualize the MP4 box structure respectively.MessagingCloud to Device Messaging Framework: Android Cloud to Device Messaging (C2DM) is a service that helps in sending data from servers to WhatsApp application on Android devices. The service provides a simple, lightweight mechanism that servers can use to tell mobile applications to contact the server directly, to fetch updated application or user data. The C2DM service handles all aspects of queueing of messages and delivery to the target application running on the target device.In the application, there are two key components. They are C2DMBroadcastReceiver and C2DMRegistrar.DatabaseSQLite: SQLite is an Open Source database that supports standard relational database features like SQL syntax, transactions and prepared statements. The database requires limited memory at runtime (approx. 250 KByte) which makes it a good candidate from being embedded into other runtimes.PlatformAndroid SDKAspectJ: A seamless aspect-oriented extension to the Java programming language that is used for modularization of crosscutting concerns, such as error checking and handling, synchronization, context-sensitive behavior, performance optimizations, monitoring and logging, debugging support, and multi-object protocols.What was done to decompile WhatsApp (Android)? Following are set of things I did to decompile WhatsApp (apk) files. The same instructions could be used for any mobile app with apk extension. Download WhatsApp.apk file from WhatsApp.Download Dex2jar toolExecute following command to extract WhatsApp.apk in form *smali files: d2j-dex2jar.bat WhatsApp.apkDownload JD-GUI and execute following command: jd-gui.exe WhatsApp-dex2jar.jarFrom executing jd-gui command, what you get is Java source code file which could be viewed and studied. Following is the screenshot of JD-GUI tool displaying WhatsApp code.  fig: jd-gui displaying WhatsApp code Credit to: AJITESH KUMAR ( https://vitalflux.com/tools-frameworks-got-used-whatsapp/ )  Ideaction.io (http://ideaction.io/) is one of the top mobile app design and development agencies in the US. We are based in San Francisco, with offices in Europe allowing us to build high quality mobile applications and scale businesses at affordable rates wherever you are in the world. We've assembled a team of product whizzes, design masters, development geniuses, and growth hackers to build products that people want. We have all the tools to make your ideas come to life: User Interface DesignInteraction DesignBrandingUser Experience DesignWireframingPrototypingMobile DesignProduct DesignProduct ManagementProduct developmentConsultingUser feedbackIterationFundraising",
+            "date": "Answered April 26, 2018",
+            "views": "48",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Taofeek Olalekan",
+                    "user_href": "/profile/Taofeek-Olalekan-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "BV Narasimha Rao",
+                "href": "/profile/BV-Narasimha-Rao"
+            },
+            "answer_text": "WhatsApp uses a customised version of the open standard Extensible Messaging and Presence Protocol (XMPP) upon installation.The Extensible Messaging and Presence Protocol (XMPP) is an application profile of the Extensible Markup Language (XML) for streaming XML data in close to real time between any two or more network-aware entities. The address format for XMPP entities was originally developed in the Jabber Open Source Community in 1999. It functions between or among servers, and facilitates near-real-time operation. The Protocol may eventually allow internet users to send instant messages to anyone else on the Internet, regardless of differences in Operating systems and browsers. XMPP is sometimes called the Jabber protocol, but this is a technical misnomer. Jabber, an IM application similar to ICQ (I Seek You) and others, is based on XMPP, but there are many applications besides Jabber that are supported by XMPP. The IEEE XMPP working group, a consortium of engineers and programmers, is adapting XMPP for use as an Internet Engineering Task Force (IETF) technology. In addition, the Messaging and Presence Interoperability Consortium (MPIC) is considering XMPP as an important interoperability technology. Eventually, XMPP is expected to support IM applications with authentication, access control, a high measure of privacy, hop-by-hop encryption, end-to-end encryption, and compatibility with other protocols. ",
+            "date": "Answered December 2, 2017",
+            "views": "103",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Harish Kandekar",
+                    "user_href": "/profile/Harish-Kandekar"
+                },
+                {
+                    "user_id": "Jay Panchal",
+                    "user_href": "/profile/Jay-Panchal-116"
+                },
+                {
+                    "user_id": "Sandip Kumar Singh",
+                    "user_href": "/profile/Sandip-Kumar-Singh-17"
+                },
+                {
+                    "user_id": "Sahil Rohira",
+                    "user_href": "/profile/Sahil-Rohira-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kautkar Rohit",
+                "href": "/profile/Kautkar-Rohit"
+            },
+            "answer_text": "A2A: The following technology stack is used:  Screen shot: stack. Io Erlang - The programming language used to script the real-time chat app system FreeBSD - Advanced computer operating system handpicked for everything from desktops to tiny devices. Yaws - An Erlang based web server that can also run as a standalone web server Lighttpd - Another web server that is highly secure, swift, flexible and compliant with web server standards. PHP - Open-source general-purpose scripting language best fit for web development. XMPP - XMPP is the backbone that makes it possible to send real-time messages, online presence indicators, XML routing features and much more. Thanks. ",
+            "date": "Updated March 4, 2019",
+            "views": "20",
+            "upvotes": " View 69 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nikhil Singh",
+                    "user_href": "/profile/Nikhil-Singh-1013"
+                },
+                {
+                    "user_id": "Pradeep Kanyal",
+                    "user_href": "/profile/Pradeep-Kanyal"
+                },
+                {
+                    "user_id": "Eduardo Grasso",
+                    "user_href": "/profile/Eduardo-Grasso"
+                },
+                {
+                    "user_id": "Charles \"Ocean\" Erie",
+                    "user_href": "/profile/Charles-Ocean-Erie"
+                },
+                {
+                    "user_id": "Marcelo Oliveira Soares",
+                    "user_href": "/profile/Marcelo-Oliveira-Soares-1"
+                },
+                {
+                    "user_id": "Webwing Fresher",
+                    "user_href": "/profile/Webwing-Fresher"
+                },
+                {
+                    "user_id": "Roberto Ram\u00edrez",
+                    "user_href": "/profile/Roberto-Ram\u00edrez-8"
+                },
+                {
+                    "user_id": "Sukbu",
+                    "user_href": "/profile/Sukbu"
+                },
+                {
+                    "user_id": "Gautam Kumar",
+                    "user_href": "/profile/Gautam-Kumar-750"
+                },
+                {
+                    "user_id": "Shivam Chouhan",
+                    "user_href": "/profile/Shivam-Chouhan-8"
+                },
+                {
+                    "user_id": "Rahul Yadav",
+                    "user_href": "/profile/Rahul-Yadav-228"
+                },
+                {
+                    "user_id": "Mir Entafaz Ali",
+                    "user_href": "/profile/Mir-Entafaz-Ali-1"
+                },
+                {
+                    "user_id": "Sheetal Kumar",
+                    "user_href": "/profile/Sheetal-Kumar-7"
+                },
+                {
+                    "user_id": "Nachiket Kanore",
+                    "user_href": "/profile/Nachiket-Kanore"
+                },
+                {
+                    "user_id": "Muthu Raja",
+                    "user_href": "/profile/Muthu-Raja-39"
+                },
+                {
+                    "user_id": "Saksham Sharma",
+                    "user_href": "/profile/Saksham-Sharma-115"
+                },
+                {
+                    "user_id": "Gunjal Gajjar",
+                    "user_href": "/profile/Gunjal-Gajjar"
+                },
+                {
+                    "user_id": "Ram Suriya",
+                    "user_href": "/profile/Ram-Suriya-2"
+                },
+                {
+                    "user_id": "Sai Mani Thrishool",
+                    "user_href": "/profile/Sai-Mani-Thrishool"
+                },
+                {
+                    "user_id": "Shubham Biradar",
+                    "user_href": "/profile/\u0936\u0941\u092d\u092e-\u092c\u093f\u0930\u093e\u0926\u093e\u0930-Shubham-Biradar"
+                },
+                {
+                    "user_id": "Swapnil Chauhan",
+                    "user_href": "/profile/Swapnil-Chauhan-15"
+                },
+                {
+                    "user_id": "Madhav Palagani",
+                    "user_href": "/profile/Madhav-Palagani"
+                },
+                {
+                    "user_id": "Bhanu Excalibur",
+                    "user_href": "/profile/Bhanu-Excalibur"
+                },
+                {
+                    "user_id": "ANIRUDDHA BODKHE",
+                    "user_href": "/profile/ANIRUDDHA-BODKHE-1"
+                },
+                {
+                    "user_id": "Madhu Sudhan",
+                    "user_href": "/profile/Madhu-Sudhan-214"
+                },
+                {
+                    "user_id": "Jash Shah",
+                    "user_href": "/profile/Jash-Shah-69"
+                },
+                {
+                    "user_id": "Nuthan Gopal",
+                    "user_href": "/profile/Nuthan-Gopal"
+                },
+                {
+                    "user_id": "Jehil Vora",
+                    "user_href": "/profile/Jehil-Vora"
+                },
+                {
+                    "user_id": "Pooja Sharma",
+                    "user_href": "/profile/\u092a\u0942\u091c\u093e-\u0936\u0930\u094d\u092e\u093e-Pooja-Sharma-1"
+                },
+                {
+                    "user_id": "Sathvik Udupa",
+                    "user_href": "/profile/Sathvik-Udupa"
+                },
+                {
+                    "user_id": "Lovepreet Singh",
+                    "user_href": "/profile/Lovepreet-Singh-164"
+                },
+                {
+                    "user_id": "Samiksha Varshney",
+                    "user_href": "/profile/Samiksha-Varshney"
+                },
+                {
+                    "user_id": "Bruce Wayne",
+                    "user_href": "/profile/Bruce-Wayne-1950"
+                },
+                {
+                    "user_id": "Jeeva",
+                    "user_href": "/profile/Jeeva-131"
+                },
+                {
+                    "user_id": "Harish Buddha",
+                    "user_href": "/profile/Harish-Buddha-2"
+                },
+                {
+                    "user_id": "Prabhala SivaShobhan",
+                    "user_href": "/profile/Prabhala-SivaShobhan"
+                },
+                {
+                    "user_id": "Tarun Krishnaswamy",
+                    "user_href": "/profile/Tarun-Krishnaswamy"
+                },
+                {
+                    "user_id": "Prasanjeet Debnath",
+                    "user_href": "/profile/Prasanjeet-Debnath"
+                },
+                {
+                    "user_id": "Allwin Edilbert",
+                    "user_href": "/profile/Allwin-Edilbert"
+                },
+                {
+                    "user_id": "Jahnavi",
+                    "user_href": "/profile/Jahnavi-104"
+                },
+                {
+                    "user_id": "Venkatesh Palanivel",
+                    "user_href": "/profile/Venkatesh-Palanivel"
+                },
+                {
+                    "user_id": "Kirtisheel Bagde",
+                    "user_href": "/profile/Kirtisheel-Bagde"
+                },
+                {
+                    "user_id": "Hemanth Kumar",
+                    "user_href": "/profile/Hemanth-Kumar-3954"
+                },
+                {
+                    "user_id": "Aman Srivastava",
+                    "user_href": "/profile/Aman-Srivastava-186"
+                },
+                {
+                    "user_id": "Thiru Vengadam",
+                    "user_href": "/profile/Thiru-Vengadam-1"
+                },
+                {
+                    "user_id": "Ashish Agarwal",
+                    "user_href": "/profile/Ashish-Agarwal-235"
+                },
+                {
+                    "user_id": "Pavan Kalyan",
+                    "user_href": "/profile/Pavan-Kalyan-441"
+                },
+                {
+                    "user_id": "Saurabh Suman",
+                    "user_href": "/profile/\u0938\u094c\u0930\u092d-\u0938\u0941\u092e\u0928-Saurabh-Suman"
+                },
+                {
+                    "user_id": "Bunny Goutham",
+                    "user_href": "/profile/Bunny-Goutham"
+                },
+                {
+                    "user_id": "Abhishekh Kumar",
+                    "user_href": "/profile/Abhishekh-Kumar-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Duong Nguyen",
+                "href": "/profile/Duong-Nguyen-6"
+            },
+            "answer_text": "At Siftery, we\u2019re tracking more than 24 products used at Whatsapp. The data is collected by our team and where possible verified by vendors and employees at Whatsapp.  Products used to build Whatsapp include: Ampersand.js, Erlang, HTML5, PHP, Twilio, Gupshup, DigiCert, DuoSecurity, Dyn DNS, Modernizir, Facebook comments, and Adobe Typekit. Also, products used internally: Customer Support: ZendeskMarketing: ClickatellAnalytics: Google AnalyticsProductivity: G Suite, Microsoft Office 365, ProofpointFor a complete list of software used by Whatsapp, check out Whatsapp\u2019s tech stack on Siftery. ",
+            "date": "Answered August 10, 2017",
+            "views": "48",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sayan Nandan",
+                    "user_href": "/profile/Sayan-Nandan-2"
+                },
+                {
+                    "user_id": "Kumar",
+                    "user_href": "/profile/Kumar-1950"
+                },
+                {
+                    "user_id": "Gerry Giacoman Colyer",
+                    "user_href": "/profile/Gerry-Giacoman-Colyer"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wallis Dudhnath",
+                "href": "/profile/Wallis-Dudhnath"
+            },
+            "answer_text": "As highlighted Erlang is a programming language that has it\u2019s origins with Ericsson, a well known Telecommunication Vendor. Erlang was meant to be the language to power the new set of Telecommunication equipment for 3G. Erlang provides a great environment to build the type of distributed, scalable, and high-performance discrete applications that are often used to support modern network and web-based applications. For the above reason, WhatsApp is powered by Erlang code. Reference: Erlang Programming Language Inside Erlang \u2013 creator Joe Armstrong tells his story ",
+            "date": "Answered October 26, 2017",
+            "views": "31",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Knowles",
+                    "user_href": "/profile/Thomas-Knowles-6"
+                },
+                {
+                    "user_id": "Ike Alisson",
+                    "user_href": "/profile/Ike-Alisson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chintan Rathod",
+                "href": "/profile/Chintan-Rathod-3"
+            },
+            "answer_text": "WhatsApp is written in Erlang language. Erlang is a general-purpose, concurrent, garbage collected programming language and runtime system. WhatsApp uses a customized version of the open standard Extensible Messaging and Presence Protocol (XMPP). Upon installation, it creates a user account using one's phone number as the username. Reference   https://en.m.wikipedia.org/wiki/WhatsApp",
+            "date": "Answered September 21, 2015",
+            "views": "35",
+            "upvotes": " Answer requested by Sachin Patil",
+            "upvoters": [
+                {
+                    "user_id": "Mayur Padalkar",
+                    "user_href": "/profile/Mayur-Padalkar"
+                },
+                {
+                    "user_id": "Naman Arya",
+                    "user_href": "/profile/Naman-Arya-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Balu Sangem",
+                "href": "/profile/Balu-Sangem"
+            },
+            "answer_text": "How whats app build whats app see here for software stack see image below:(source:quora)   WhatsApp uses Ejabberd(XMPP -eXtensible Messaging and Presence Protocol) to handle the message delivery system. Ejabberd written in Erlang programming language. ",
+            "date": "Answered January 21, 2016",
+            "views": "3",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Neo You Ming",
+                    "user_href": "/profile/Neo-You-Ming"
+                },
+                {
+                    "user_id": "MALLIKARJUNAN KUNJANNAIR",
+                    "user_href": "/profile/MALLIKARJUNAN-KUNJANNAIR"
+                },
+                {
+                    "user_id": "Wan Fahmi",
+                    "user_href": "/profile/Wan-Fahmi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shammah Agwor",
+                "href": "/profile/Shammah-Agwor"
+            },
+            "answer_text": "Php,Erlang,softlayer,lighttpd, ",
+            "date": "Answered January 22, 2016",
+            "views": "11",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nisha M",
+                    "user_href": "/profile/Nisha-M-96"
+                },
+                {
+                    "user_id": "Neo You Ming",
+                    "user_href": "/profile/Neo-You-Ming"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Swati Kushwaha",
+                "href": "/profile/Swati-Kushwaha-10"
+            },
+            "answer_text": "Technical. WhatsApp uses a customized version of the open standard Extensible Messaging and Presence Protocol (XMPP). Upon installation, it creates a user account using one's phone number as the username (Jabber ID: [phone number]@s.whatsapp.net ) ",
+            "date": "Answered December 1, 2017",
+            "views": "17",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Hilary Soita",
+                "href": "/profile/Hilary-Soita"
+            },
+            "answer_text": "i believe the answer you are looking for is in here.  WhatsApp  :: Open_source  ",
+            "date": "Answered January 23, 2016",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ramnit Kamboj",
+                    "user_href": "/profile/Ramnit-Kamboj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rahul Raaj Jamuar",
+                "href": "/profile/Rahul-Raaj-Jamuar"
+            },
+            "answer_text": "As said by everyone, Erlang is the programming language used for developing this app. Thanx for A2A ",
+            "date": "Answered September 29, 2015",
+            "views": "29",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Josh Maiden",
+                "href": "/profile/Josh-Maiden"
+            },
+            "answer_text": "computing technology ",
+            "date": "Answered January 22, 2016",
+            "views": "281",
+            "upvotes": "0"
+        }
+    ]
+}

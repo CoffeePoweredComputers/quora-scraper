@@ -1,0 +1,32 @@
+{
+    "title": "How do no-neutral wire smart switches work? - Quora",
+    "tags": [
+        "Switches (electrical)",
+        "Electrical Wiring",
+        "Electrical and Electronics Engineering",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Mccullough",
+                "href": "/profile/John-Mccullough-26"
+            },
+            "answer_text": "They capture some energy from current flowing in the hot wire. Suppose the lamp load is incandescent, and the design of the smart switch is such that instead of being turned completely off, there will be a small minimum current allowed to flow continuously. Not enough to glow the filament. A small transformer is in line with this circuit, and the transformer secondary output is rectified for use in the smart switch. The design isn\u2019t perfect, because if you use a low current LED light, the amount of current allowed through at all times is enough to cause the light to light up dimly when off. In that case, the homeowner has to install an additional load resistor across the LED lamp. See US10123393B1 - Power supply for a two-wire smart switch and lighting loads thereof - Google Patents I have a two wire motion sensor (no neutral) that works fine. It even works a LED light without flickering- but the instructions do mention that there are some LED lights that need the resistor across the lamp, just like described in the patent referenced above. ",
+            "date": "Answered April 3, 2020",
+            "views": "135",
+            "upvotes": " Answer requested by Dipankar Pal"
+        },
+        {
+            "author_info": {
+                "name": "Rick Yost",
+                "href": "/profile/Rick-Yost-2"
+            },
+            "answer_text": "It seems \u201cno neutral wire smart switches\u201d are implemented the same way manual \u201cno neutral wire switches\u201d are. The switch basically is placed in series with the \u201chot\u201d or black wire in the US. Here, I found a web site for you with pictures well worth a thousand words: Smart Switches - No Neutral Wire? | theIOTpad: DIY Home Automation ",
+            "date": "Answered August 31, 2019",
+            "views": "87",
+            "upvotes": "0"
+        }
+    ]
+}

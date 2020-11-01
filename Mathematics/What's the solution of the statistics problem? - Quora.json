@@ -1,0 +1,38 @@
+{
+    "title": "What's the solution of the statistics problem? - Quora",
+    "tags": [
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Nichols",
+                "href": "/profile/Robert-Nichols-34"
+            },
+            "answer_text": "What's the solution of the statistics problem? There is a casino game where three fair dice are rolled simultaneously. You bet a single dollar on 5s, which has the following payoffs. If at least one five is rolled, your dollar is returned, and you are given an additional dollar for every 5 that appears. You lose your dollar if and only if no 5s are rolled. (a) If X represents the amount of money won or lost during this game (where negative numbers imply a loss of money), compute all of the values in X, and then write out the probability distribution function for p(x). (b) Calculate E(X), Var(X), and Standard deviation(X) for this game. Three dice means 216 equally likely outcomes, since 6\u00b3 = 216 There are 125 rolls with no 5\u2019s, so each die has 5 good options, 5 x 5 x 5 = 125There are 75 rolls with exactly one 5, this is because there are 3 locations for your one and only 5, and 5 choices for each of the other two dice to be; 3 x 5 x 5 = 75There are 15 rolls with exactly two 5\u2019s, this is because there are 3 locations for your one and only not 5, and 5 choices for your not 5 to be; 3 x 5 = 15There is one roll with three 5\u2019s125 + 75 + 15 + 1 = 216Your values are -1, 0, 1, 2. P(-1) = 125/216 or approximately 57.9%P(0) = 75/216 or approximately 34.7%P(1) = 15/216 or approximately 6.9%P(2) = 1/216 or approximately 0.5%Your expected values are P(-1) = 125/216 x (-1) = -125/216P(0) = 75/216 x (0) = 0P(1) = 15/216 x 1 = 15/216P(2) = 1/216 x 2 = 2/216Total is -125/216 + 0 + 15/216 + 2/216 = -108/216 = -0.5This means you should expect to lose 50 cents on every bet in the long run, play 1000 times expect to net a loss of $500. To calculate the variance, take each expected value subtract the mean value, then square this result multiplied by the probability of that result. (-1) = [(-1) - (-0.5)]\u00b2 x (125/216) = (1/4) x (125/216) = 1/864P(0) = [0 - (-0.50)]\u00b2 x (75/216) = (1/4) x (75/216) = 75/864P(1) = [1 - (-0.50]\u00b2 x (15/216) = (9/4) x (15/216) = 135/864P(2) = [2 - (-0.5)]\u00b2 x 1/216 = (25/4) x (1/216) = 50/864Total is 1/864 + 75/864 + 135/864 + 50/864 = 261/864 = 29/86The variance is 29/86 or approximately 0.3372 or approximately 34 cents The standard deviation is the square root of the variance, approximately 0.5807 ",
+            "date": "Answered May 5, 2020",
+            "views": "66",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Zachary Taylor",
+                "href": "/profile/Zachary-Taylor-3"
+            },
+            "answer_text": "This looks like a straightforward homework problem. Unfortunately there are two existing answers with long calculations that lead to different solutions, a state of affairs that I cannot ignore. Rather than repeat the calculations, I\u2019m going to show you another approach which will hopefully be useful in your studies: Recognize known distributions. Your problem asks about a bet where you pay a dollar, three dice are rolled, and then you receive a dollar for every 5. Call the number of 5s [math]Y[/math] and note that [math]Y[/math] is a binomial distribution with [math]p = \\frac{1}{6}[/math] and [math]n = 3[/math]. Hopefully you already know what a binomial distribution is; if not you should read the article I just linked. Note that your payoff here (which the problem statement denotes [math]X[/math]) is Y[math] - 1[/math], because it costs a dollar to make a bet. Now, how can we solve the problem using known properties of the binomial distribution? The probability distribution for [math]Y - 1[/math] is exactly the same as the probability distribution for [math]Y[/math], shifted down by 1. That is:[math]\\displaystyle Y = \\begin{cases} -1 &\\mbox { with probability } (1-p)^3 \\\\ 0 &\\mbox { with probability } 3 p (1-p)^2 \\\\ 1 &\\mbox { with probability } 3 p^2 (1-p) \\\\ 2 &\\mbox { with probability } p^3 \\end{cases}[/math] A basic property you should know is that expectations are additive. Thus, the mean of [math]Y - 1[/math] is just the mean of [math]Y[/math], minus 1. So the mean is [math]np - 1 = 3 \\times \\frac{1}{6} - 1 = - \\frac{1}{2}[/math].The variance of [math]Y - 1[/math] is the same as the variance of [math]Y[/math], and the standard deviation is just the square root. The variance of a binomial is is [math]n p (1-p) [/math], plugging in [math]n[/math] and [math]p[/math] gives us [math]3 \\times \\frac{1}{6} \\times \\frac{5}{6} = \\frac{5}{12} \\approx 0.417[/math]. So Robert has a math error somewhere and Dedinio was correct, albeit with some rounding.",
+            "date": "Answered May 9, 2020",
+            "views": "169",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alon Amit",
+                    "user_href": "/profile/Alon-Amit"
+                },
+                {
+                    "user_id": "Skiea Fiedem",
+                    "user_href": "/profile/Skiea-Fiedem"
+                }
+            ]
+        }
+    ]
+}

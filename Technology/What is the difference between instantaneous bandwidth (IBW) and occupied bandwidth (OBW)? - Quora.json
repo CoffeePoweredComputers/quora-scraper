@@ -1,0 +1,31 @@
+{
+    "title": "What is the difference between instantaneous bandwidth (IBW) and occupied bandwidth (OBW)? - Quora",
+    "tags": [
+        "Bandwidth Optimization",
+        "Radio Waves",
+        "Global System for Mobile Communications (GSM)",
+        "Bandwidth",
+        "Long Term Evolution (LTE)",
+        "Radio",
+        "Wireless Technology",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Graham Stephens",
+                "href": "/profile/Graham-Stephens-3"
+            },
+            "answer_text": "This relates to data distribution over contended infrastructure such as the public internet. In the early days of the internet there was a lot of anger about \u201cbest efforts\u201d delivery by telcos/ISPs. This arose because, although there were \u201ccaps\u201d on total data delivered to each subscriber, to provide fair access to a limited resource, there were no limits on delivery bandwidth. If your web page took a little longer to download because of congestion in the disribution infrastructure or international gateway so what? TCP/IP meant that it still arrived - eventually. All that changed with the advent of real-time live streaming of audio and then video. Now it was the bandwidth that mattered most, not the total data cap. This streaming relied, and still does, on data buffering at the receiver to smooth out the changes in available bandwidth. A small buffer risked underflowing, resulting in breaks in the stream. A large buffer implied long latency where the stream could no longer be truthfully called \u201clive\u201d. Hence the concepts of IBW and OBW were born. Everyone knows that a Netflix HD stream requires 5Mbps on average. This is the OBW. But in order to overcome the occasions when the stream capacity falls below this figure, the Netflix app will grab more than 5Mbps in order to keep the buffer data fill \u201cwatermark\u201d somewhere close to, but not exceeding, overflow, thus ensuring as far as possible, that the underflow situation never occurs. This variation above and below 5Mbps is called the IBW. Since streaming video and audio now occupies around 80% of total internet usage your telco/ISP will contract with you to supply bandwidth, again on a best efforts basis, rather than using data caps to enforce a fair access policy. But as you rarely if ever get the full bandwidth you have paid for, in a domestic contended scenario anyway, I recommend that you buy more capacity than you strictly speaking need when multiplying the maximum number of simultaneous users in your household by the OBW per user. This headroom is not easily defined but can vary between 25% and 50% according to how contended the internet delivery infrastructure is in your area. ",
+            "date": "Answered October 7, 2020",
+            "views": "70",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jo\u00e3o Carlos",
+                    "user_href": "/profile/Jo\u00e3o-Carlos-114"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "title": "How to prove that any integer x, x (x^2 - 1) (x-2) is divisible by 4 using discrete mathematics - Quora",
+    "tags": [
+        "Discrete Mathematics",
+        "Algebraic Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sayan Banerjee",
+                "href": "/profile/Sayan-Banerjee-1"
+            },
+            "answer_text": "The expression can be written as ,  x.(x+1).(x-1).(x-2)      [Since a^2 - b^2 = (a+b).(a-b)] Rearranging the four integers , we have,  (x+1).(x).(x-1).(x-2). Now of the four consecutive integers making up the product, at least one exists which is divisible by 4. It could be any one integer though, we cannot guess which one. It is in fact possible to state a stronger statement, which states that product of four consecutive integers is divisible by 4! = 24. This is a result in Number theory which is proved well in Barnard and Child. ",
+            "date": "Answered December 26, 2015",
+            "views": "141",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tim Farage",
+                "href": "/profile/Tim-Farage-1"
+            },
+            "answer_text": "You want to show that if x is an integer then  is divisible by 4. Consider these two cases: 1) x is even. Then the factors x and (x-2) are both even, so the expression is divisible by 4. 2) x is odd. Then the factor . Since x is odd, both of these factors must be even. And if you multiply two evens you get a multiple of 4.  Thus, whether x is odd or even,  is divisible by 4. ",
+            "date": "Answered December 11, 2015",
+            "views": "479",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ordep Cifna",
+                    "user_href": "/profile/Ordep-Cifna"
+                },
+                {
+                    "user_id": "Aydar Mynbay",
+                    "user_href": "/profile/Aydar-Mynbay"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "Abhishek Khatri",
+                    "user_href": "/profile/Abhishek-Khatri-13"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "title": "How to separate network use on a single computer using 2 different WAN connections - Quora",
+    "tags": [
+        "Wide Area Networks",
+        "Local Area Networks",
+        "Networks",
+        "Routers (networking)",
+        "Wi-Fi",
+        "Computer Networking",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel Spahn",
+                "href": "/profile/Daniel-Spahn"
+            },
+            "answer_text": "Simplest solution that assumes basic networking knowledge and an infrastructure environment: Use one router. It will need two WAN cards in it. first Wan (\u201cWAN1\u201d) into WAN1 on the router second wan (\u201cWAN2\u201d) Into WAN2 on the router Configure static routes on the router to route requests for each WAN according to how you need to direct those requests. use ACL\u2019s on VLANS inside the router. You can do this with physical LAN connections as well. Assuming this is a single computer instead: if you cannot configure those routes on the router then use the ROUTE ADD command assuming Windows computers to perform your routing. this will work regardless of wired versus wireless networks. ",
+            "date": "Answered May 17, 2020",
+            "views": "42",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Azzam",
+                    "user_href": "/profile/Joseph-Azzam-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Endre Enyedy",
+                "href": "/profile/Endre-Enyedy-2"
+            },
+            "answer_text": "Yes, you can. There are several way to do that - what solution to pick really depends on the purpose of the connections and the way you want to use your networks. Not knowing what you want to accomplish, can not tell you what you could do. You can look up different solutions, from using two NICs to using one NIC and 3 routers. Caveat: installing any of the solutions requires some basic networking know-how. ",
+            "date": "Answered May 17, 2020",
+            "views": "52",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Azzam",
+                    "user_href": "/profile/Joseph-Azzam-2"
+                }
+            ]
+        }
+    ]
+}

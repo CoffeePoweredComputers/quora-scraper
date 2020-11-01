@@ -1,0 +1,171 @@
+{
+    "title": "How to formally prove that the set which contains all the finite subsets of \u2115 is countable - Quora",
+    "tags": [
+        "Set Theory",
+        "Infinity (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tyler Singer-Clark",
+                "href": "/profile/Tyler-Singer-Clark-1"
+            },
+            "answer_text": "This is a wonderful use case for dovetailing. You can interleave which axes you increment, thus covering every possible set at some point in the list. In this case, the axes are \"integers included in the set\" and \"size of the set\". So we continually increase the set of integers we are including in the subsets we are listing, and for each of these we will iterate through the possible sizes of sets. In other words, we will list all sets using the number 1, then all the sets including 1 and 2, then all the sets including 1 and 2 and 3, etc. And within each of those steps, we will list all the sets of size 1, all the sets of size 2, all the sets of size 3, etc. Integers included: 1. Size: 1.So begin with all sets including the integers 1 and of size at most 1. That gives us just {1}. Integers included: 1, 2. Size: 1.   <- incremented integers included, put size back to 1.Next do all sets including the integers 1 and 2 of size at most 1. That gives us {2} (because we skip repeats, and have already done {1}). Integers included: 1, 2. Size: 2.   <- incremented size.Next do all sets including the integers 1 and 2 of size at most 2. That gives us {1, 2}. Integers included: 1, 2, 3. Size 1.   <- incremented integers included, put size back to 1.Next do all sets including the integers 1, 2, and 3 of size at most 1. That gives us {3} (again skipping repeats). Integers included: 1, 2, 3. Size 2.   <- incremented size.Next do all sets including the integers 1, 2, and 3 of size at most 2. That gives us {1, 3}, {2, 3} (again skipping repeats). Integers included: 1, 2, 3. Size 3.   <- incremented size.Next do all sets including the integers 1, 2, and 3 of size at most 3. That gives us {1, 2, 3}. Integers included: 1, 2, 3, 4. Size 1.   <- incremented integers included, put size back to 1.Next do all sets including the integers 1, 2, 3, and 4 of size at most 1. That gives us {4} (again skipping repeats). Integers included: 1, 2, 3, 4. Size 2.   <- incremented size.Next do all sets including the integers 1, 2, 3, and 4 of size at most 2. That gives us {1, 4}, {2, 4}, {3, 4} (again skipping repeats). And so on... The above process yields the following sequence so far:{1}, {2}, {1, 2}, {3}, {1, 3}, {2, 3}, {1, 2, 3}, {4}, {1, 4}, {2, 4}, {3, 4}, ... One can see that any finite set of integers would show up in this sequence if you continue it long enough. Use this ordering to define a bijection between N and the finite sets of integers:1->{1}2->{2}3->{1, 2}4->{3}... And thus, the set containing all finite sets of integers is countable. ",
+            "date": "Updated November 7, 2015",
+            "views": "22",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Michael DuPlessis",
+                    "user_href": "/profile/Michael-DuPlessis"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Souradeep Purkayastha",
+                "href": "/profile/\u09b8\u09cc\u09b0\u09a6\u09c0\u09aa-\u09aa\u09c1\u09b0\u0995\u09be\u09df\u09b8\u09cd\u09a5-Souradeep-Purkayastha"
+            },
+            "answer_text": "Hints: Notating , and ,  Show that Show that each  is countable being a finite cartesian product of  countable sets.Show that a countable union of countable sets is countable, implying that  is countable.",
+            "date": "Answered September 30, 2015",
+            "views": "898",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Frank Hubeny",
+                    "user_href": "/profile/Frank-Hubeny"
+                },
+                {
+                    "user_id": "Ricardo Jordi Guerrero",
+                    "user_href": "/profile/Ricardo-Jordi-Guerrero"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Webb",
+                "href": "/profile/Peter-Webb-9"
+            },
+            "answer_text": "Here is a really easy bijection with N. Every finite subset corresponds to a binary number in the following way: {1, 2, 7, 9} <-> 1100000101 in base 2. (It happens to be 773 in decimal). Where the nth digit from the left is a \u201c1\u201d if n is an element of the set, and \u201c0\u201d otherwise. Note all such numbers are finite, as a finite subset must have a largest element. Every subset corresponds to one number, and every number corresponds to one finite subset of N. This is a direct bijection between natural numbers and the finite subsets of N, proving the latter is countable. ",
+            "date": "Answered March 6, 2017",
+            "views": "1",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Frank Hubeny",
+                    "user_href": "/profile/Frank-Hubeny"
+                },
+                {
+                    "user_id": "Martin Epstein",
+                    "user_href": "/profile/Martin-Epstein-2"
+                },
+                {
+                    "user_id": "Amik Mandal",
+                    "user_href": "/profile/Amik-Mandal"
+                },
+                {
+                    "user_id": "Chang Henry",
+                    "user_href": "/profile/Chang-Henry-2"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Jay Cashen",
+                    "user_href": "/profile/Jay-Cashen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Duncan Mc Cornock",
+                "href": "/profile/Duncan-Mc-Cornock"
+            },
+            "answer_text": "I am assuming N is the set of positive integers. The method to prove this type of thing is to construct a map from the set that we want to prove is countable into N. Then show the map is one-to-one. Let S = the set of all finite subsets of N. Define f on S as follows: f(s) = (Summation over x in s of 2^x) + 1 Since each member of S is a finite subset of N, f is a well defined function. Show that f is 1\u20131 as an exercise. ",
+            "date": "Answered March 6, 2017",
+            "views": "645",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Hans Hyttel",
+                "href": "/profile/Hans-Hyttel"
+            },
+            "answer_text": "A subset  [math]S \\subseteq \\mathbb{N}[/math] can be thought of as a binary sequence [math]\\{ b_n \\}[/math]. If [math]n \\in S[/math], then [math]b_n = 1[/math] and otherwise [math]b_n = 0[/math].  For instance, the set of even numbers corresponds to the sequence 01010101010101... where every even position in the sequence has a 1 and all other positions have a 0. A finite subset of [math]\\mathbb{N}[/math] then corresponds to a unique finite binary string  which is the binary sequence that has been cut off after the last occurrence of 1. Such a string corresponds to the binary representation of a natural number. Conversely, every finite binary string gives rise to a unique finite subset of [math]\\mathbb{N}[/math]. ",
+            "date": "Answered November 7, 2015",
+            "views": "21",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Conor Sheridan",
+                    "user_href": "/profile/Conor-Sheridan-10"
+                },
+                {
+                    "user_id": "Shaswata Saha",
+                    "user_href": "/profile/Shaswata-Saha-3"
+                },
+                {
+                    "user_id": "Parth Chauhan",
+                    "user_href": "/profile/Parth-Chauhan-89"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Jay Cashen",
+                    "user_href": "/profile/Jay-Cashen"
+                },
+                {
+                    "user_id": "Daniil Kozhemiachenko (\u0414\u0430\u043d\u0438\u0438\u043b \u041a\u043e\u0436\u0435\u043c\u044f\u0447\u0435\u043d\u043a\u043e)",
+                    "user_href": "/profile/Daniil-Kozhemiachenko-\u0414\u0430\u043d\u0438\u0438\u043b-\u041a\u043e\u0436\u0435\u043c\u044f\u0447\u0435\u043d\u043a\u043e"
+                },
+                {
+                    "user_id": "Ron Tanner",
+                    "user_href": "/profile/Ron-Tanner"
+                },
+                {
+                    "user_id": "Varun Tripathi",
+                    "user_href": "/profile/Varun-Tripathi-2"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Henning Breede",
+                "href": "/profile/Henning-Breede"
+            },
+            "answer_text": "You can get a bijection to the natural numbers by    As the subsets are finite the sums are finite, therefore natural numbers. As  is countable  is countable too. The cool computer science people could now see that this is equivalent to using binary strings. ",
+            "date": "Answered March 6, 2017",
+            "views": "694",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Lev Kruglyak",
+                    "user_href": "/profile/Lev-Kruglyak"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                }
+            ]
+        }
+    ]
+}

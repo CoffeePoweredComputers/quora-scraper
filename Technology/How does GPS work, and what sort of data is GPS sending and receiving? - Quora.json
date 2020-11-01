@@ -1,0 +1,36 @@
+{
+    "title": "How does GPS work, and what sort of data is GPS sending and receiving? - Quora",
+    "tags": [
+        "Navigation Systems",
+        "Geolocation",
+        "GPS Navigation",
+        "GPS Devices",
+        "Global Positioning System",
+        "Satellites",
+        "Data",
+        "Big Data",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jesse Pollard",
+                "href": "/profile/Jesse-Pollard-1"
+            },
+            "answer_text": "How does GPS work, and what sort of data is GPS sending and receiving? GPS works by transmitting coded information that locates where the satellite is for a given message. The only non positioning information ever transmitted is for the ground control station that is monitoring the status of the satellite. Using multiple such messages allows the receiver to compute distance to where the satellite was during the transmission. With multiple satellites, that allows the receiver to compute the intersection of 4 spheres (each centered on one of the satellites), with the result of that point being the location of the receiver. As a side benefit the computation also produces the current time when the messages were received. The only data GPS receives is from a controlled ground station that updates its clock, directs the satellite to correct its orbit, to enter a dead zone when the satellite is no longer in service, or to activate a backup satellite. ",
+            "date": "Answered June 24, 2020",
+            "views": "74",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mark Pagura",
+                "href": "/profile/Mark-Pagura"
+            },
+            "answer_text": "Basically GPS works by a receiver determining the time-of-flight of at least 4 signals from satellites with precisely known orbits with precise clocks on board. The multiple receiver channels rely on spread-spectrum demodulation by digging out of the noise a weak signal that has a 1024 bit pseudo-random pattern using correlation. This process has an inherent process gain which is how the sequence is extracted. From this timing information can be derived by sliding the codes and locking the receiver channels. Data is also transmitted by inverting or not inverting the sequence and this extracted data has all the information needed to compute the position of the receiver. Things like ephemeris data of the satellite orbits is needed and this loading of the ephemeris is why an initial acquisition takes some time. The beautiful thing about GPS is that it needs corrections from General Relativity to work. With this much beauty, who needs a god? ",
+            "date": "Answered June 24, 2020",
+            "views": "41",
+            "upvotes": "0"
+        }
+    ]
+}

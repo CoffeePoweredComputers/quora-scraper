@@ -1,0 +1,39 @@
+{
+    "title": "Is there any event whose probability is greater than 1? - Quora",
+    "tags": [
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steven de Rooij",
+                "href": "/profile/Steven-de-Rooij"
+            },
+            "answer_text": "No. This follows directly from the axioms of probability. It is explained pretty well on the wikipedia page. What this question is looking for is called the \u201cNumeric Bound\u201d, which states that for all events [math]E[/math] in the event space, we have [math]0\\le P(E)\\le 1[/math] The article shows how this can be derived directly from the axioms. What may possibly be somewhat confusing in this context is the fact that a density function can exceed one. For example, the density of a normal distribution with variance [math]\\sigma^2[/math], evaluated at its mean, is [math]1/\\sqrt{2\\pi\\sigma^2}[/math], which exceeds one if the variance is smaller than [math]2\\pi[/math]. However, densities are not probabilities. The probability of any event is always the integral of the density over the considered event, and that can never exceed one. ",
+            "date": "Answered July 2, 2020",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kirstin Huiber",
+                    "user_href": "/profile/Kirstin-Huiber"
+                },
+                {
+                    "user_id": "Eivind Kj\u00f8rstad",
+                    "user_href": "/profile/Eivind-Kj\u00f8rstad"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Timothy Sly",
+                "href": "/profile/Timothy-Sly"
+            },
+            "answer_text": "No. And here\u2019s a common example where intuitively we make this mistake. Consider an event that carries a risk of a fatality that is very small - say once in 1,000 times, and this event is carried out three times a day. If the fatality risk is 0.001 for the first event, what is the risk that you would have at least one fatality by the end of the first day? -or the tenth day? Most people would simply multiply the risk for one event (0.001) by 3 for the first day or by 30 for the 10th day. For these very low numbers, this approach is close but incorrect. If this was correct, then what would be the risk at the end of a year? 0.001 x (3) x 365.25 days? That\u2019s a probability of 1.095! It cannot be. Probabilities must occur within the range of 0 to +1.0 The correct solution to the above problem is that the probability of at least one fatality at the end of 1 year would be 0.666 or about 67%. You calculate it by first asking what is the probability of NOT having any fatalities at the end of the first year, and that is found as [1 - P(fatality in one event)]^(number of events) \u2026. or to use our example 0.999^(3x365.25) = 0.3341 or 33.4% as the probability of no fatality in 1 year. Thus the probability of at least one fatality in one year is 1- 0.334, or 67% ",
+            "date": "Answered October 9, 2016",
+            "views": "24",
+            "upvotes": "0"
+        }
+    ]
+}

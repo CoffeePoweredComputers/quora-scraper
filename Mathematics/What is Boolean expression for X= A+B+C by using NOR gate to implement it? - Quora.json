@@ -1,0 +1,49 @@
+{
+    "title": "What is Boolean expression for X= A+B+C by using NOR gate to implement it? - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Boolean Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steven Smith",
+                "href": "/profile/Steven-Smith-440"
+            },
+            "answer_text": "As mentioned by another answer, OR(A,B) = NOR(NOR(A,B),NOR(A,B)) If you want to see proof, look here: [math]\\overline{(\\overline{A+B})+(\\overline{A+B})}[/math] Using DeMorgan\u2019s Law: [math](\\overline{\\overline{A+B}}) (\\overline{\\overline{A+B}})[/math] By the double complement: [math](A+B)(A+B)[/math] By the distributive property: [math]AA + AB + BA + BB[/math] By the distributive property again: [math]AA + B(A + A + B)[/math] By the law of absorption: [math]AA + B[/math] By the idempotent law: [math]A+B[/math] Therefore, I have shown those 2 are equivalent. Using that information, you can just replace your OR gates with 2 NOR gates. The end result will look like this (I made it in paint, so it won\u2019t look pretty):  ",
+            "date": "Answered March 30, 2018",
+            "views": "2",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ian McKenzie",
+                    "user_href": "/profile/Ian-McKenzie-35"
+                },
+                {
+                    "user_id": "David Lambert",
+                    "user_href": "/profile/David-Lambert-86"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elad Ben-Tzedeff",
+                "href": "/profile/Elad-Ben-Tzedeff"
+            },
+            "answer_text": "First you need to understand that NOT is the same as Nor(x,y)=NOT(OR(x,y)) andOr(x,y)=not(nor(x,y))Second we need to implement not 3. Not(a)=Nor(a,a) Plug eq 3 in eq 2 and you get 4. Or(x,y)= nor(nor(x,y),nor(x,y)) And the last one is 5. or(a,b,C)=or(or(a,b),C). And now you plug eq 4 into 5 and you're set ",
+            "date": "Answered March 29, 2018",
+            "views": "807",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tom Crosley",
+                "href": "/profile/Tom-Crosley-1"
+            },
+            "answer_text": "First, using WolframAlpha:  The NOR form is shown as (A nor B nor C)\u2019 This makes sense since a NOR gate is just an OR gate with the output inverted. So we just need to invert it a second time. But a inverter, or NOT can be implemented by tying the inputs of a NOR together, so this could be implemented using two gates from a 74x27 (triple 3-input NOR gate), e.g.:  ",
+            "date": "Answered April 3, 2020",
+            "views": "269",
+            "upvotes": "0"
+        }
+    ]
+}

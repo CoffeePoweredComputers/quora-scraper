@@ -1,0 +1,38 @@
+{
+    "title": "Which data type can hold a 32-bit signed integer? - Quora",
+    "tags": [
+        "32-Bits"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ken Gregg",
+                "href": "/profile/Ken-Gregg"
+            },
+            "answer_text": "It depends on the programming language and on the specific implementation of the language. For example: If you\u2019re talking about C or C++, the int data type might be 16-bit, 32-bit, 64-bit, or more, varying from one compiler implementation to another. A long or long int might be 32 bits, 64 bits, or more. Even a short or short int might be 32 bits in some implementations.But the fixed width integer type int32_t, defined in stdint.h in C and cstdint in C++, is guaranteed to occupy 32 bits.If you\u2019re talking about C#, the int keyword is a shorthand for the struct System.Int32, which is guaranteed to occupy 32 bits.If you\u2019re talking about Java, int is always 32 bits.In some environments, including various assembly languages, a word data type might be 16 bits, 32 bits, or 64 bits. A doubleword (DWORD) might be 32 bits or 64 bits.There are many programming languages, and many possible data types in which a 32-bit signed integer data type might be specified. In some cases, just specifying the programming language only tells part of the story. In some cases, you also need to choose a specific implementation of the language to pin down which signed integer data types occupy 32 bits. ",
+            "date": "Answered March 29, 2019",
+            "views": "12",
+            "upvotes": " Answer requested by Amar Kolla"
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "In C, the language defines \u201cint32_t\u201d in the header file stdint.h. On most 32 bit and 64 bit platforms these days, \u201cint\u201d is also 32 bits which you can check via sizeof(int) == sizeof(int32_t). On C for microcontrollers, int is likely to be 16 bits, but int32_t should still be 32 bits. ",
+            "date": "Answered March 29, 2019",
+            "views": "468",
+            "upvotes": " Answer requested by Amar Kolla"
+        },
+        {
+            "author_info": {
+                "name": "Michael Hobson",
+                "href": "/profile/Michael-Hobson-9"
+            },
+            "answer_text": "In what programming language? You failed to specify the language and the type names are different from language to language. ",
+            "date": "Answered March 29, 2019",
+            "views": "293",
+            "upvotes": "0"
+        }
+    ]
+}

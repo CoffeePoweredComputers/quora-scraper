@@ -1,0 +1,25 @@
+{
+    "title": "How to find a given rank of a linear transformation - Quora",
+    "tags": [
+        "Linear Transformation",
+        "Non-Linear Models",
+        "Transformation",
+        "Matrices (mathematics)",
+        "Linear Algebra",
+        "Algorithms",
+        "Machine Learning",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ethan Martin",
+                "href": "/profile/Ethan-Martin-81"
+            },
+            "answer_text": "Find its matrix representation, and compute its reduced echelon form. The pivot columns of this matrix correspond to the linearly independent columns of the original matrix. Therefore the number of pivots would be the rank of the transformation. Just to briefly explain why this works: the series of elementary transformations applied to the matrix to put it in REF are invertible. Composing linear maps with automorphisms (invertible linear maps from a vector space to itself) does not actually affect the image or kernel of of the original map. In other words, for a linear map [math]T[/math] and elementary linear transformation [math]E[/math], [math]\\operatorname{Im}(T)=\\operatorname{Im}(ET)[/math] and inductively, for any series of elementary linear transformations [math]E_1, E_2, \\dots, E_n[/math], [math]\\operatorname{Im}(T)=\\operatorname{Im}(E_1 E_2 \\dots E_n T)[/math]. The same proposition applies to the kernel as well. ",
+            "date": "Answered August 19, 2019",
+            "views": "468",
+            "upvotes": "0"
+        }
+    ]
+}

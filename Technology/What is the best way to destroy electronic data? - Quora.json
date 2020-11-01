@@ -1,0 +1,32 @@
+{
+    "title": "What is the best way to destroy electronic data? - Quora",
+    "tags": [
+        "Destruction",
+        "Data Storage",
+        "Data",
+        "Data Analysis",
+        "Big Data",
+        "Data Science",
+        "Computer Science",
+        "Electronics",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andy White",
+                "href": "/profile/Andy-White-341"
+            },
+            "answer_text": "It depend on the medium you\u2019ve used to store it. With a mechanical HDD you re-align (relatively) big chunks of iron particles with a magnet on a spindle - so the \u201cbeam\u201d isn\u2019t precise it\u2019s subject to wear and vibration so - it causes some \u201cscatter\u201d also if you bend particles one way then another \u2026 there is no guarantee you\u2019ll get all of them every time - it\u2019s this general untidiness that recovery relies on, whatever the main area says, the fringes just might still hold a shadow of the older data. With electronic storage you are altering switches - and as with everything digital only two states are possible - either on or off (there are no \u201cgrey\u201d areas). Nor are there shadows of past movements. The drive firmware tries to ensure that every switch in the drive gets the same amount of wear as the rest so it will scatter your data throughout the matrix of switches arranged in small \u201cpages\u201d of data. These pages are initially cached and only copied into main storage when the page is full so writes are controlled and only happen once per page If you delete that data it (same as on the HDD) still exists as 1s and 0s but the first character of the FAT entry is modified to indicate it\u2019s deleted. Unlike the mechanical type - when a page of data is full it is transferred from cache to main storage if it is a \u201cwrite\u201d and if its a \u201cremove\u201d the firmware issues a trim command which resets the switches ready for the next time Because there are no residual \u201cshadows\u201d at that point - the data is gone and cant be recovered. So issuing if you delete the data then issue a Trim command the data is irretrievably erased. This is a grossly over simplified description but it would take a thick book to do the full process justice. ",
+            "date": "Answered October 21, 2020",
+            "views": "18",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Om Kaushik",
+                    "user_href": "/profile/\u0913\u092e-\u0915\u094c\u0936\u093f\u0915-Om-Kaushik"
+                }
+            ]
+        }
+    ]
+}

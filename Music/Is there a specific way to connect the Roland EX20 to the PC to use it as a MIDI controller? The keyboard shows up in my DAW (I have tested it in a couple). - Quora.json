@@ -1,0 +1,26 @@
+{
+    "title": "Is there a specific way to connect the Roland EX20 to the PC to use it as a MIDI controller? The keyboard shows up in my DAW (I have tested it in a couple). - Quora",
+    "tags": [
+        "MIDI Controllers",
+        "MIDI",
+        "Keyboards (instrument)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Chalil",
+                "href": "/profile/Paul-Chalil-1"
+            },
+            "answer_text": "FYI, unless you've separate midi slots in your keyboard, there's no way to connect your ex20 to your system other than through your USB B female to USB A female system slot. Guess you might be wondering what would an audio interface do actually. As the name implies, it collects all the analogue signals and provides digital output to your system through the USB B slot in the AI. You can obviously connect your ex20 keyboard through your R-L outputs to the AI, also add a mic as per your desire and get the signal in a single channel that too the input as from your AI you use. In this case the keyboard maynot function as a midi controller. To help you with the process, Install the USB midi drive for your keyboard by downloading it from the vendor's website. ( I believe your system requirements may adhere what they say)Restart your system and connect your keyboard to the system using a USB A male to USB B Male cable and turn your board on.Install ASIO sound driver to get the low latency feedback. Hence this may work as your primary sound driver while you open any of your DAWs.If you've got any VST plugin direct play applications, open and check the input, It should reflect your keyboard and output should be set as ASIO.Now play something and see the digital input has been reflected int he application, if so. It's good to go. If not then restart your system and your board.So for your clarification, I guess this will bring you to some basic understanding. ",
+            "date": "Answered March 23, 2020",
+            "views": "386",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Divya Divya",
+                    "user_href": "/profile/Divya-Divya-126"
+                }
+            ]
+        }
+    ]
+}

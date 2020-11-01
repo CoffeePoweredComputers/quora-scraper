@@ -1,0 +1,79 @@
+{
+    "title": "What are the alternative set theories to ZFC set theory in math? - Quora",
+    "tags": [
+        "Axioms (logic and mathematics)",
+        "Sets (mathematics)",
+        "Set Theory",
+        "Logic (mathematics)",
+        "Logic (philosophy)",
+        "Theory and Theories"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Keith Ramsay",
+                "href": "/profile/Keith-Ramsay"
+            },
+            "answer_text": "There is a theory called G\u00f6del -Bernays (GB) or sometimes von Neumann-G\u00f6del-Bernays (NBG) which is in some respects very similar to ZFC, but which is a theory of sets and classes. The class theory allows GB to be finitely axiomatized, because the axiom schemes of ZF are replaced by axioms which quantify over classes. GB is conservative over ZFC for statements only about sets. The axiom of foundation can be replaced by the anti-foundation axiom (AFA) which gives a set theory of equivalent strength but in which sets can be members of themselves or have membership cycles. Quine created a set theory that is somewhat eccentric compared to most, which he called New Foundations (NF). This is sometimes modified to allow \u201cur-elements\u201d, atoms which are not sets and have no members (NFU). NFU was proven consistent, and there was an attempt to prove NF consistent but I haven\u2019t heard it confirmed that it succeeded. In NFU one can define a set [math]\\{x:P(x)\\}[/math] as long as the property [math]P(x)[/math] is \u201cstratified\u201d, meaning its variables can be assigned ranks so that membership is only considered from a variable of one rank to a variable of the next rank. Because [math]x=x[/math] is stratified, there is a universal set in NF or NFU. If you think about it you can see also that there is a set of all sets having [math]n[/math] elements for finite [math]n[/math]. Set theorists sometimes use Kripke-Platek set theory (KP) as a base theory. There are set theories CZF and IZF which are in some sense constructive. Type theory is usually considered as a different field from set theory, but in some respects type theories act like alternative set theories. ",
+            "date": "Answered April 20, 2019",
+            "views": "351",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Scott Brickner",
+                    "user_href": "/profile/Scott-Brickner"
+                },
+                {
+                    "user_id": "Robert Langner",
+                    "user_href": "/profile/Robert-Langner-4"
+                },
+                {
+                    "user_id": "Marco Penso",
+                    "user_href": "/profile/Marco-Penso-3"
+                },
+                {
+                    "user_id": "Clive Hunt",
+                    "user_href": "/profile/Clive-Hunt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Thorsten Altenkirch",
+                "href": "/profile/Thorsten-Altenkirch"
+            },
+            "answer_text": "It depends how narrow you interpret the word \u201cset theory\u201d. You see there is a fundamental problem with standard set theory: we talk about elements and mathematical statements depend on encodings. So for example you can ask wether the empty set is a natural number. This is a stupid question but since you can ask it statements about the natural numbers are not stable under isomorphism. However, any sensible statement about the natural number *is* stable under isomorphism. If you want to do abstract Mathematics you need to think structural and set theory is a mathematical assembly language. But there is an alternative : Type Theory. Everything you say is stable under isomorphism and using the univalence principle isomorphic sets are equal. Yes, we do have sets too, they are types with a simple structure. Not every type is a set, so for example the type of sets is not a set. No this is not Russell, it isn\u2019t even true that the type of small sets is a large set. It isn\u2019t true because equality of sets is isomorphism and this is not a proposition but a structure. Here is the book to read about this stuff (it is free): The HoTT Book ",
+            "date": "Answered April 17, 2019",
+            "views": "215",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kevin Williams",
+                    "user_href": "/profile/Kevin-Williams-1050"
+                },
+                {
+                    "user_id": "Michael McClennen",
+                    "user_href": "/profile/Michael-McClennen"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles Broming",
+                "href": "/profile/Charles-Broming"
+            },
+            "answer_text": "There is also von Neumann-G\u00f6del-Bernays set theory. This theory admits classes as well as sets. Classes differ from sets in that they can\u2019t be members or subsets of sets. There is class of all sets, but not a set of all sets. ",
+            "date": "Answered April 18, 2019",
+            "views": "32",
+            "upvotes": "0"
+        }
+    ]
+}

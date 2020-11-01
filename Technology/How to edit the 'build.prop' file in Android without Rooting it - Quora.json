@@ -1,0 +1,103 @@
+{
+    "title": "How to edit the 'build.prop' file in Android without Rooting it - Quora",
+    "tags": [
+        "Rooting (Android)",
+        "Android Application Development",
+        "Android Devices",
+        "Android Applications"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harshit Raghuvanshi",
+                "href": "/profile/Harshit-Raghuvanshi"
+            },
+            "answer_text": "Yes, you can edit build.prop without root. In fact, you can change any system files without rootI have edited build.prop on my android one this way when there was no root for marshmallow Why can't you do it normally?Because you don't have permissions to or your system is read only. Root provides you with root permissions, which lets you modify those system files and/or make system read write system  How toHere's how to do it. You need permissions. But you don't want root.Alright so move to somewhere where you won't need those permissions or you have enough permissions to do so. I'd recommend recovery mode. You have full access to system files in recovery mode, but only if it is mounted. Many stock recoveries don't have option to mount system partition or don't have adb access for commands. You might want a custom recovery for this. And no, you don't need root for custom recovery. I'll talk about this in next partSo now all you need to do is, boot into recovery (custom preferred), mount system and then using adb, pull the build.prop file  adb pull /system/build.prop <path to save file> Now edit the file you just extracted and save it Push it back to your phone via adb  adb push <path to your file> /system/build.prop You're not done yet. You need to set permissions too So open she'll via terminal adb shell Now from shell, set the right permissions  chmod 644 /system/build.prop And you're doneReboot your phone and see the changes Using custom recovery without rootWell, there are two ways to do so1. Install custom recoverySimply install custom recovery via fastboot and boot into it.P.S this requires unlocking bootloader 2. Temporarily boot into recoverySo you need recovery image for this Boot into recovery via fastboot fastboot boot recovery.img Where revocery.img is path to img file of recoveryP.S some phones might require unlocked bootloader even for this ",
+            "date": "Answered November 20, 2015",
+            "views": "1701",
+            "upvotes": " View 45 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Subramanian Moothiringode",
+                    "user_href": "/profile/Subramanian-Moothiringode-1"
+                },
+                {
+                    "user_id": "\u0637\u063a\u06cc\u0627\u0646 Lim",
+                    "user_href": "/profile/\u0637\u063a\u06cc\u0627\u0646-Lim"
+                },
+                {
+                    "user_id": "Antho G-Mac",
+                    "user_href": "/profile/Antho-G-Mac"
+                },
+                {
+                    "user_id": "Logan Confair",
+                    "user_href": "/profile/Logan-Confair"
+                },
+                {
+                    "user_id": "Jeff Sprinkle",
+                    "user_href": "/profile/Jeff-Sprinkle-2"
+                },
+                {
+                    "user_id": "Shawn Belieu",
+                    "user_href": "/profile/Shawn-Belieu"
+                },
+                {
+                    "user_id": "Michael Janda",
+                    "user_href": "/profile/Michael-Janda-4"
+                },
+                {
+                    "user_id": "DONALD TROTTER",
+                    "user_href": "/profile/DONALD-TROTTER-2"
+                },
+                {
+                    "user_id": "Achik Jennie",
+                    "user_href": "/profile/Achik-Jennie"
+                },
+                {
+                    "user_id": "RAYVIE .",
+                    "user_href": "/profile/RAYVIE"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dharmendra Singh",
+                "href": "/profile/Dharmendra-Singh-277"
+            },
+            "answer_text": "Build Properties aka \u201cbuild.prop\u201d is a file in system folder of your phone which defines the A-Z details of your phone, model, brand, android version, etc. You can tweak build.prop to change the way your device behaves. You can boost internet speed, change phone specifications, increase system performance, make almost all apps compatible or trick websites to display a tablet interface. So here\u2019s how to edit Build.prop file. This are only a few things you can do if you edit your build.prop. In this tutorial I am going to teach you how to edit LCD density by editing build.prop. You can follow this tutorial for tweaking almost everything inside the build.prop file. Before we start, note that we need a rooted android device to edit this file.Changing the LDC density will result like you\u2019ve changed the screen\u2019s resolution. You\u2019ll have the ability to easily read small text or see small images clearly. You can also make things like icons smaller on screen while still making it clear and legible. Here\u2019s how we do it. 1.Using Root Explorer:Note: download \u201cSpareparts\u201d before you continue. https://play.google.com/store/apps/details?id=com.droidgram.spareparts Open Root Explorer and allow superuser access and you should be at the root partition.Scroll down and select \u201csystem\u201dSelect \u201cMount R/W\u201d button located at the top. Clicking the \u201cr/o\u201d button should change to \u201cr/w\u201d.Long press \u201cbuild.prop\u201d and select \u201cOpen in Text Editor\u201dScroll down and find the line \u201cro.sf.lcd_density=240\u201d and change it to the value like 167, 180, 200, 220.Press the \u201cMenu\u201d button on your phone and select \u201cSave Changes\u201d.Open Spareparts and make sure you uncheck \u201cCompatibility Mode\u201d.Reboot your phone2.Using ES File Explorer: Open ES File Explorer and press your \u201cMenu\u201d button and then select \u201cSettings\u201dScroll down and check \u201cRoot Explorer\u201d and select \u201cYes\u201d for experimental features. Allow superuser access and check \u201cremember\u201dCheck \u201cMount File System\u201d and press your back button.When in sdcard partition, select the sdcard image in the top left and it should change to home image. You are now at root.Scroll down and select \u201csystem\u201d.Press \u201cbuild.prop\u201d and select \u201cES Note Editor\u201d.Scroll down and find \u201cro.sf.lcd_density=240\u201d and change it to a value like 167, 180, 200,220.Press \u201cMenu\u201d button on your phone and select \u201csave\u201dOpen Spareparts and uncheck \u201cCompatibility Mode\u201dReboot your phone.",
+            "date": "Answered June 3, 2016",
+            "views": "645",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Manish Pathak",
+                    "user_href": "/profile/Manish-Pathak-58"
+                },
+                {
+                    "user_id": "Patricia Garrett",
+                    "user_href": "/profile/Patricia-Garrett-24"
+                },
+                {
+                    "user_id": "Aditya Ajg",
+                    "user_href": "/profile/Aditya-Ajg"
+                },
+                {
+                    "user_id": "Dr.Adharsh Km",
+                    "user_href": "/profile/Dr-Adharsh-Km"
+                },
+                {
+                    "user_id": "Vigneswaran Ramu",
+                    "user_href": "/profile/Vigneswaran-Ramu"
+                },
+                {
+                    "user_id": "Krishna Reddy B",
+                    "user_href": "/profile/Krishna-Reddy-B"
+                },
+                {
+                    "user_id": "Abhishek Thanvi",
+                    "user_href": "/profile/Abhishek-Thanvi-2"
+                }
+            ]
+        }
+    ]
+}

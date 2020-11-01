@@ -1,0 +1,112 @@
+{
+    "title": "What is Unix, and why is it important? - Quora",
+    "tags": [
+        "Unix"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Reiber",
+                "href": "/profile/Paul-Reiber"
+            },
+            "answer_text": "UNIX is a family of operating systems with its earliest roots in Bell Labs.  To see the full-sized version of the above visit  www.freebsdnews.net slash wp-content/uploads/unix_family_history_tree_1600x1200.jpg  (Quora's not letting me put in just the URL - it keeps expanding it to a picture) There are a lot of other family trees out there:    Google says there are around 139,000 results for  an image search for \"unix family tree\" - so describing the history of UNIX is clearly something a LOT of people have put time into.  EACH and EVERY ONE of the \"nodes\" on these trees is a version of UNIX - a \"distro\", or \"release\", or \"product version\".   As you can see - there have been a tremendous number of different versions of UNIX over the decades - with thousands upon thousands of people working on them.   IBM, HP, Sun (er... Oracle), and many other hardware vendors all have their own versions of UNIX, and often also have compatible versions of Linux available as well. On to your next question - \"Why is it important?\" UNIX is important because it changed everything, and it's still changing everything.  Previous to UNIX, if you bought a computer from a vendor, it came with that vendor's OS - and nothing more.  You were locked in. If you bought an IBM - it had a proprietary IBM operating system.   If you bought a DEC - likewise, a proprietary DEC operating system.    Sometimes vendors cross-licensed operating systems, but it was rare, and expensive to the end-users (both expensive in initial cost, and expensive in that support requests often resulted in finger-pointing loops) UNIX implemented the concept of cross-platform standardization. All of a sudden, your program could be recompiled for various architectures... and in most cases, it would just WORK.  That was a god-send.  You didn't have to change the implementation (much, or at all) for each platform, so long as that hardware platform was running a UNIX. So, we now have UNIX running on massive mainframes, on distributed clusters, on PCs, on Apples, on tablets, on smartphones, on wristwatches, in automobiles... it really is ubiquitous; you can even make Windows \"POSIX compliant\" if you work at it. ",
+            "date": "Answered October 10, 2012",
+            "views": "112",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Evan Smith",
+                    "user_href": "/profile/Evan-Smith-537"
+                },
+                {
+                    "user_id": "Chopra Pawan",
+                    "user_href": "/profile/Chopra-Pawan"
+                },
+                {
+                    "user_id": "Songpol Anannetikul",
+                    "user_href": "/profile/Songpol-Anannetikul"
+                },
+                {
+                    "user_id": "Ryan Smith",
+                    "user_href": "/profile/Ryan-Smith-2835"
+                },
+                {
+                    "user_id": "Gavin Steven",
+                    "user_href": "/profile/Gavin-Steven"
+                },
+                {
+                    "user_id": "Isaac Ng",
+                    "user_href": "/profile/Isaac-Ng-60"
+                },
+                {
+                    "user_id": "Tom Cruise",
+                    "user_href": "/profile/Tom-Cruise-111"
+                },
+                {
+                    "user_id": "Marco Antonio",
+                    "user_href": "/profile/Marco-Antonio-91"
+                },
+                {
+                    "user_id": "Bernard Doyle",
+                    "user_href": "/profile/Bernard-Doyle"
+                },
+                {
+                    "user_id": "Siddharth B",
+                    "user_href": "/profile/\u0938\u093f\u0926\u094d\u0927\u093e\u0930\u094d\u0925-Siddharth-B"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "Wow. A super interesting set of answers here. None of which really capture it, while all are at least partially correct. So, let\u2019s roll the timeline back a bit, to BEFORE circa 1980. \u201cThe Internet\u201d doesn\u2019t exist. The ARPAnet does, but is limited - about a hundred hosts, all directly attached, running NCP. The catenet model was becoming widely accepted and this notion of a \u201cnetwork of networks\u201d as opposed to \u201ca network of hosts\u201d was gaining momentum as TCP and IP were being developed. IEN 2 in 1977 posits that you need to split the TCP and IP portion into two different protocols (and births IPv0) - that\u2019s where it all starts. By the time IEN 54 was published in late 1978 - which eventually became RFC 791 the canonical description of IPv4 - the whole \u201cwe will have networks of networks\u201d thing was well codified. But it still wasn\u2019t commonplace, because (a) local area networks were still nascent - remember, Uncle Bob didn\u2019t start 3Com until June 1979, and there were no commercial Ethernet adapters before that = and (b) systems capable of running the spiffy new still experimental TCP/IP stack cost hundreds of thousands of dollars. Contemporaneously, a couple of things were happening. The operant TCP/IP stacks were mainly for DEC PDP-10 and PDP-20 systems, but due to the nature of how computer science research was conducted, in many places the system of choice was UNIX - either V7 on PDP-11s, or post 3 BSD, on VAX-11/780s. In January 1982, BBN issued a patch kit for installing TCP/IP in the 4.1BSD release. This was updated in the 4.1aBSD release in summer 1982, which included the BBN code without you having to have separate licenses from both BBN and UCB. That\u2019s where things get interesting. Note that this is a year before the Jan 1, 1983 \u2018flag day\u2019 where we cut hard and deprecated all the NCP traffic. In that interval, if you were doing \u201cInternet work\u201d you were probably on a VAX, running 4.1BSD. THAT is where UNIX in \u201cThe Internet\u201d becomes important. Following the flag day, 4.2BSD had a well developed TCP/IP stack baked in, and that was the basis for Sun, and a ton of other systems. And in that interval as well, John Romkey developed the MIT LCS IBM PC TCP/IP stack (best acronym string ever!) which he later commercialized at FTP Software making it possible for people to use significantly less expensive hardware NOT running UNIX. And that summer as well, we built the software for implementing TCP/IP over X.25 for CSNET also on hardware plugged into VAX-11/750s running 4.2BSD. I\u2019d argue that the fully routed traffic between the ARPAnet and the CSNET was the actual birth of \u201cThe Internet\u201d, and UNIX was right there. It\u2019s been all downhill from there. But this is -or should be - the takeaway: No UNIX, and none of the really pivotal software would have existed, none of the experimental work would have been done, in that interval when something had to happen. And Tony Li\u2019s assertion to the contrary, it\u2019s significantly less than clear that \u201csomething else\u201d would have filled the gap. It was a magical time and many many things happened \u201cby accident\u201d because we happened to have the resources. It\u2019s completely less than clear that absent that, any of it would have happened, or that someone would have felt the void and created something to fill it. ",
+            "date": "Answered January 10, 2019",
+            "views": "42",
+            "upvotes": " View 55 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Terry Lambert",
+                    "user_href": "/profile/Terry-Lambert"
+                },
+                {
+                    "user_id": "Michael Gautier",
+                    "user_href": "/profile/Michael-Gautier-1"
+                },
+                {
+                    "user_id": "Jayam Thaker",
+                    "user_href": "/profile/Jayam-Thaker"
+                },
+                {
+                    "user_id": "Amrith Nayak",
+                    "user_href": "/profile/Amrith-Nayak"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Henri Hyyryl\u00e4inen",
+                    "user_href": "/profile/Henri-Hyyryl\u00e4inen"
+                },
+                {
+                    "user_id": "Ilgaz Er",
+                    "user_href": "/profile/Ilgaz-Er"
+                },
+                {
+                    "user_id": "Fares Tareq",
+                    "user_href": "/profile/Fares-Tareq"
+                },
+                {
+                    "user_id": "Yvo Staal",
+                    "user_href": "/profile/Yvo-Staal"
+                },
+                {
+                    "user_id": "Theo Burden",
+                    "user_href": "/profile/Theo-Burden"
+                }
+            ]
+        }
+    ]
+}

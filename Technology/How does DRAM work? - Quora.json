@@ -1,0 +1,86 @@
+{
+    "title": "How does DRAM work? - Quora",
+    "tags": [
+        "DRAM",
+        "Computer Memory",
+        "Computer Architecture"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "DRAM is based on storing a charge in a capacitor.  It matters because capacitors can be made quite compact, and they hold a charge long enough to be useful.  The basic idea is to split the memory address into two parts, which correspond to row/column coordinates in a grid of capacitors, each storing one bit. There are row and column lines (wires) across the grid, and at each intersection is a capacitor which connects to the column bus through a transistor, which is gated by the row bus.  The row portion of the memory address is decoded, and selects one row wire.  This activates the transistor in all the row's storage cells (bits), so each capacitor's charge is \"read out\" through the column wire to a \"sense amplifier\" and then into a buffer.  The second part of the address is decoded, and selects bits from the this read-out buffer.  To write, the same sort of row/column selection happens, but to set a bit, charge into the capacitor. Remember that capacitors are volatile, though: this means that each one has to be \"refreshed\" periodically (on the order of milliseconds).  Essentially, this is done by reading each row, amplifying and writing it back, and cycling through all the rows. The structure of a real DRAM chip is somewhat more complicated than this, since many of these simple 2D array structures exist on the chip, some operating in parallel and some selected by other portions of the memory address.  The DRAM protocol is very low-level, though, so a CPU has to provide a very complicated controller to run through the various states - putting portions of the address on the memory bus, waiting specific numbers of clocks, then other signals, etc.  Probably the most important single timing parameter is the amount of time between providing the address and receiving data in a read operation - this latency has improved over years and DRAM generations, but has actually fallen dramatically behind the speed of CPUs.  (It's on the order of 50 ns, which is hundreds of CPU clock cycles...) ",
+            "date": "Answered February 9, 2015",
+            "views": "33",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sai Mallikarjuna",
+                    "user_href": "/profile/Sai-Mallikarjuna"
+                },
+                {
+                    "user_id": "Kyro Gibling",
+                    "user_href": "/profile/Kyro-Gibling"
+                },
+                {
+                    "user_id": "Sherwin Anthony Arellano",
+                    "user_href": "/profile/Sherwin-Anthony-Arellano"
+                },
+                {
+                    "user_id": "Geine Zhang",
+                    "user_href": "/profile/Geine-Zhang"
+                },
+                {
+                    "user_id": "Shantanu Vashishtha",
+                    "user_href": "/profile/Shantanu-Vashishtha-1"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Abhishek Verma",
+                    "user_href": "/profile/Abhishek-Verma-79"
+                },
+                {
+                    "user_id": "\u4e0a \u9ad8",
+                    "user_href": "/profile/\u4e0a-\u9ad8"
+                },
+                {
+                    "user_id": "Joseph Price",
+                    "user_href": "/profile/Joseph-Price-14"
+                },
+                {
+                    "user_id": "Nitika Shrivastava",
+                    "user_href": "/profile/Nitika-Shrivastava-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Sporer",
+                "href": "/profile/Michael-Sporer-1"
+            },
+            "answer_text": "The answer from Mark Hahn is spot on.  I might add the distinction that the operation of accessing the bitcell (for a DRAM the capacitor) is an analogue timed (asynchronous) operation and has been since the beginning.  Starting with SDRAM (synchronous DRAM) and all subsequent devices the interface of the device was aligned to a clock to speed the transfer rate, but the DRAM core still remains asynchronous.  The performance of the interface is unrelated to the performance of the core. As Mark  noted the latency of DRAM has fallen way behind non-DRAM devices. This is because the speed (latency) of the core is proportional to the ratio of the capacitance of the bitcell to the parasitic capacitance of the sense circuitry.  Lower latency DRAM has bigger capacitors, but the overall market for DRAM favors chip capacity over low latency, so the manufacturers use the smallest possible capacitor in order to minimize the die size for a given chip capacity. ",
+            "date": "Updated January 31, 2016",
+            "views": "34",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Joseph Price",
+                    "user_href": "/profile/Joseph-Price-14"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "title": "What is binomial probability? - Quora",
+    "tags": [
+        "Binomials",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Noah Forman",
+                "href": "/profile/Noah-Forman"
+            },
+            "answer_text": "The Binomial probability distribution, with parameters n and p , sometimes denoted \"Binomial(n,p)\" or \"Binom(n,p),\" is a discrete probability distribution. It describes a type of random number X that can equal anything from 0 up to n. The formula for this probability distribution is[math]\\displaystyle\\mathbf{P}(X = k) = \\binom{n}{k}p^k(1-p)^{n-k} = \\frac{n!}{k!(n-k)!}p^k(1-p)^{n-k}.[/math]This probability distribution models the following situation: you have a (potentially unfair) coin, that has probability p of giving heads on each toss. You flip it n times and count the number of heads. Then the probability that you get exactly k heads (and therefore n-k tails) equals the formula above. Here's why. Let's say n=6 and k=2, and the coin has a 2/3 chance of giving heads with each toss. Then the probability of getting the sequence TTHTHT, for example, is:[math]\\frac13\\cdot\\frac13\\cdot\\frac23\\cdot\\frac13\\cdot\\frac23\\cdot\\frac13 = (\\frac23)^2\\cdot (1 - \\frac23)^4.[/math]This formula works out the same way for any of the sequences - or \"words\" - that have four 'T's and two 'H's. So in order to find the overall odds of getting just two heads out of six tosses, you need to multiply this formula by the number of different \"words\" that you can make up with 4 'T's and 2 'H's. The number of such words is a quantity called \"six choose two,\" since out of the six \"slots\" in the word, you choose two of them to be filled by 'H's. The formula for six choose two is[math]\\binom62 = \\frac{6!}{2!(6-2)!}.[/math](You can probably find an explanation of that formula on Wikipedia, or elsewhere on Quora. It's pretty cool, and tremendously useful.) The numbers of this form, \"n choose k,\" are also called \"binomial coefficients,\" because they come up when you raise a binomial (x+y) to a power. Look up \"The Binomial Theorem\" for more on this. And in fact, that formula for [math]\\mathbf{P}(X = k)[/math] is very similar to a formula that comes up in the binomial theorem; hence the name of the probability distribution. ",
+            "date": "Answered November 17, 2015",
+            "views": "213",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bhavin Javiya",
+                    "user_href": "/profile/Bhavin-Javiya"
+                },
+                {
+                    "user_id": "Tony Travia",
+                    "user_href": "/profile/Tony-Travia"
+                },
+                {
+                    "user_id": "Shreejesh Sasidharan",
+                    "user_href": "/profile/Shreejesh-Sasidharan"
+                },
+                {
+                    "user_id": "Kingshuk Bandyopadhyay",
+                    "user_href": "/profile/Kingshuk-Bandyopadhyay"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Fivelsdal",
+                "href": "/profile/Jonathan-Fivelsdal"
+            },
+            "answer_text": "I\u2019m assuming that you want the probability mass function (pmf) instead of the cumulative distribution function (cdf). If you want the cdf instead, the cdf is presented on the Wikipedia page here: Binomial distribution - Wikipedia The binomial distribution is a generalized version of the Bernoulli distribution (a Bernoulli distribution is a binomial distribution with n = 1). The approach I will show uses the property that a binomial random variable can be represented by a sum of independent Bernoulli random variables and I will use moment generating functions. A Bernoulli random variable takes on two values (0 and 1). The probability that the Bernoulli random variable takes on the value \u201c0\u201d is 1 - p (we will call this q) and the probability that it takes on the value \u201c1\u201d is p. The moment-generating function (MGF) of a discrete random variable (a Bernoulli random variable is a discrete random variable) is the following sum: [math]E[e^{tX}] = \\sum_{x \\in X}^{} e^{tx}p(x)[/math] where [math]p(x)[/math] is the probability mass function. For a Bernoulli random variable we have the following MGF: [math]E[e^{tX}] = \\sum_{i = 0}^{1} e^{tx}p(x)[/math] [math]          = e^{t(0)}p(x = 0) + e^{t(1)}p(x = 1)[/math] [math]= p(x = 1)e^{t} + p(x = 0)[/math] [math] = pe^{t} + q[/math] We use the MGF for a Bernoulli distribution to find the MGF for a Binomial distribution. A theorem states that the MGF of a sum of independent random variables is equal to the product of the MGF of each individual random variable. Since a binomial random variable can be represented as a sum of \u201cn\u201d independent Bernoulli random variables and each of the Bernoulli random variables will have the same MGF (the probability has to be constant across all trials for a binomial and so the \u201cn\u201d independent Bernoulli random variables are also identically distributed), we have the following: MGF of binomial = [math](pe^{t} + q)^{n}[/math] Note that the Binomial Theorem is the following: [math](x + y)^{n} = \\sum_{k = 0}^{n} \\binom{n}{k}x^{k}y^{n-k}[/math] Let [math]x = pe^{t}[/math][math],[/math] [math]y = q[/math] and [math]k = x[/math], then we have the following: [math](pe^{t} + q)^{n} = \\sum_{x = 0}^{n} \\binom{n}{x}(pe^{t})^{x}(q)^{n-x}[/math] [math]\\sum_{x = 0}^{n} e^{tx}\\binom{n}{x}p^{x}q^{n-x}[/math] Remember that [math]E[e^{tX}] = \\sum_{x \\in X}^{} e^{tx}p(x)[/math] and by comparison we have [math]\\sum_{x = 0}^{n} e^{tx}p(x)  = \\sum_{x = 0}^{n} e^{tx}\\binom{n}{x}p^{x}q^{n-x}[/math] and from the above we get that [math]p(x) = \\binom{n}{x}p^{x}q^{n-x}[/math] where [math]p(x)[/math] is the probability mass function for a binomial random variable. ",
+            "date": "Answered August 9, 2017",
+            "views": "141",
+            "upvotes": "0"
+        }
+    ]
+}

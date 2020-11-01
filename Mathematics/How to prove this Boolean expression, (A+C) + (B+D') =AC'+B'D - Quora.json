@@ -1,0 +1,61 @@
+{
+    "title": "How to prove this Boolean expression, (A+C) + (B+D') =AC'+B'D - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Holloway",
+                "href": "/profile/Paul-Holloway-15"
+            },
+            "answer_text": "As others have rightly pointed out in the case where A,B and C are true the left hand must be true and the right hand must be false so the statements are not equivalent. However, in general Boolean identities are so much easier to prove than ordinary algebraic identities. All you do is hammer out a truth table. If you have one variable you have 2^1 rows in your truth table, if you have 2 variables you have 2^2 rows etc. In this case you\u2019d have 2^4 or 16 rows covering all 16 possible combinations. First let\u2019s see how it\u2019s supposed to work. Let\u2019s prove an identity we know is true: (A.B)' = A' + B' This is called DeMorgan\u2019s Law but it doesn\u2019t matter if some clever person said it, it\u2019s not true unless it\u2019s proved to be true. Appeals to authority are invalid arguments. So forget who said it, let\u2019s prove it\u2019s true. In any form of mathematics a statement is true if it holds true for all permissible values that a variable can hold but in Boolean algebra a variable can only hold two values, that is 0 or 1 or True or False or On or Off or however you want to word it. 0 = false = off and 1 = true = on. Listing all possible combinations then is easy.  A truth table however doesn\u2019t just prove a relationship is valid, it can also prove a relationship invalid. If the two columns do no match up then the two statements are not equivalent. So if you ever get into a situation where you want to know if statement 1 is equivalent to statement 2, just draw a truth table of all possible combinations. ",
+            "date": "Answered October 20, 2020",
+            "views": "73",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nitin P",
+                    "user_href": "/profile/Nitin-P-63"
+                },
+                {
+                    "user_id": "Diya Rahman",
+                    "user_href": "/profile/Diya-Rahman-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roger Larson",
+                "href": "/profile/Roger-Larson-11"
+            },
+            "answer_text": "You can\u2019t it\u2019s wrong The left side is true when A + C +B+ D\u2019 that is its true for A or C or B being true or D being false While the right side AC\u2019 + B\u2019D is true when A is true and C is false or B is false and ad is true Now (A\u2019 + C)\u2019 + ( B +D\u2019)\u2019 = AC\u2019 + B\u2019D This follows from DeMorgans theorem (A\u2019 + C)\u2019 = A\u201dC\u2019 = AC\u2019 (B + D\u2019)\u2019 = B\u2019D\u201d = B\u2019D ",
+            "date": "Answered October 20, 2020",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Diya Rahman",
+                    "user_href": "/profile/Diya-Rahman-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Diedrich Ehlerding",
+                "href": "/profile/Diedrich-Ehlerding"
+            },
+            "answer_text": "You can\u2019t. Question was: How do I prove this Boolean expression, (A+C) + (B+D') =AC'+B'D? Assume B,C =true, then the left side is true, the right side is false (irrespective of A and D). Are you sure that you didn\u2019t mistype your question? ",
+            "date": "Answered October 20, 2020",
+            "views": "28",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Milind Bengeri",
+                    "user_href": "/profile/Milind-Bengeri"
+                }
+            ]
+        }
+    ]
+}

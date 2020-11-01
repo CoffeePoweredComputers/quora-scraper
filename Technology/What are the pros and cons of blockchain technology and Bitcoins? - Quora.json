@@ -1,0 +1,77 @@
+{
+    "title": "What are the pros and cons of blockchain technology and Bitcoins? - Quora",
+    "tags": [
+        "Blockchain (database)",
+        "Bitcoin"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alexandra Goldberg",
+                "href": "/profile/Alexandra-Goldberg-2"
+            },
+            "answer_text": "Here are the pros and cons of bitcoin and blockchain he exact things that make bitcoin attractive \u2013 anonymity, ease of transfer from one party to another, lack of government oversight, accessible in any country without capital controls, not subject to banking regulations \u2013 are denounced by national governments. Think of everything governments stand to lose. They\u2019d no longer be able to expand or contract credit through money supply and interest rates, effectively losing their ability to steer their economies. They couldn\u2019t track, control, or tax currency moved out of the country. They couldn\u2019t snoop into our bank accounts when they suspected wrongdoing. And there would be almost no way to enforce tax laws regarding payments among private parties. (Think of paying your plumber in bitcoin.) The world of financial enforcement would turn on self-reporting, leaving cheaters free to cheat. I can\u2019t see government officials giving up any, much less all, of these tools. The legal and economic costs are too high. And yet, like most people, it\u2019s what I would dearly like to have. Unlike my kids, I hold out hope that I can keep some areas of my life private. I don\u2019t want to be on camera 24/7, and I don\u2019t want the government \u2013 or any other entity \u2013 knowing what I do with my assets. They are mine. I earned the funds, paid the taxes, and now I\u2019m free to do what I want. Or, at least, that\u2019s the fantasy in my head. In reality, I know my kids are right. Every banking transaction I make is scrutinized as regulators look for foul play. My picture is taken, and my actions recorded, in most public places and along highways. Traffic cams note my license plate at various locations so that my path can be reconstructed. And don\u2019t get me started on smartphones and devices that work off voice commands. You might as well leave your blinds up at night and the door unlocked. But back to bitcoin. While its attributes put a government target on its back, there\u2019s one aspect that could be, and should be, adopted by governments around the world. It\u2019s the process by which bitcoin tracks transactions, called blockchain. There\u2019s a lot of technical jargon involved at this point, but essentially a dispersed group of administrators who operate nodes (computers connected to the bitcoin network) verify every bitcoin transaction, which is on display for the world to see on a public network. It\u2019s like a lot of people having a copy of the same spreadsheet, and anyone can add an entry. Every time an entry is made, everyone updates their copy of the spreadsheet. And all the copies are open for anyone to see. The block is the active part of the transaction, or spreadsheet entry, and the combined series of blocks, or total spreadsheet, is the chain. The administrators\u2019 computers do this as they solve puzzles, and vie for the chance to earn newly\u2013minted bitcoin with the transaction. In other words, they get paid. The important point is that since many different entities verify transactions, it\u2019s impossible to fake a transaction or to record a mistake. Wouldn\u2019t that be nice in daily life? Case in point: As part of our recent move, I had to register my cars in Cyprus. The Department of Motor Vehicles (DMV) rejected one of the titles, which meant I had to make another trip to the local tax office. The officer told me my car was either rebuilt or salvaged, which had to be put on the title. I knew that claim was wrong, but the officer wouldn\u2019t budge. It showed up on a national database, she told me. It couldn\u2019t be wrong. My only path out was to pay $65, have the car inspected for work, and get a title issued as rebuilt. I refused. I got on the phone with the state DMV, who reviewed my title over the phone (which they would not do the first time). They found a coding error, and referred me back to the title office. When I arrived, the same officer smiled and waved me up to the front. Apparently she had also dug into the issue a bit more after I left (Thank you Officer Sams!), and found a coding error at the local office as well as the state DMV. So much for no chance of an error. If we used blockchain for car titles, or in other areas of business, none of this would happen. What about land titles? I just paid four figures for title insurance on my new home. With open-sourced blockchain recording of land titles, ownership transactions would be available for everyone to see. We wouldn\u2019t need title insurance, which would save homebuyers\u2019 millions of dollars. In the private sector, financial institutions are exploring how to use blockchain for transaction records. Presumably a banking association would set up a system of administrators to disseminate information, making it virtually impossible for records to be altered. Of course, this all hinges on the notion that every record is encrypted and masks the party that owns the car, buys the home, or withdraws $300 from his bank account. Do we trust the government or private companies to safeguard that data and not share it? If our identity is linked with an open-record transaction, then we really are exposed for all the world to see. ",
+            "date": "Answered November 14, 2017",
+            "views": "741",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Ash Arish",
+                    "user_href": "/profile/Ash-Arish"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kiran Vegireddy",
+                "href": "/profile/Kiran-Vegireddy"
+            },
+            "answer_text": "The biggest advantage:q The core value of a blockchain is that it enables a database to be directly shared without a central administrator. Rather than having some centralized application logic, blockchain transactions have their own proof of validity and authorization to enforce the constraints. Hence, with the blockchain acting as a consensus mechanism to ensure the nodes stay in sync, transactions can be verified and processed independently. But why is disintermediation good for us? Because a database is still a tangible thing even though is just bits and bytes. If the contents of a database are stored in the memory and disk of a particular computer system run by a third party even if it is a trusted organization like banks and governments, anyone who somehow got access to that system can easily corrupt the data within. Thus the third-party organizations especially those who control important databases need to hire many people and design many processes to prevent that database being tampered with. Unavoidably, all this takes a great amount of time and money. However, with blockchains, we can now replace these third-party organizations with a distributed database, locked down by clever cryptography. \u201cLike so much that has come before, they leverage the ever-increasing capacity of computer systems to provide a new way of replacing humans with code. And once it\u2019s been written and debugged, code tends to be an awful lot cheaper\u201d (Gideon Greenspan). Other advantages are :  The biggest disadvantage: Performance Because of the nature of blockchains, it will always be slower than centralized databases. When a transaction is being processed, a blockchain has to do all the same things just like a regular database does, but it carries three additional burdens as well: Signature verification. Every blockchain transaction must be digitally signed using a public-private cryptography scheme such as ECDSA. This is necessary because transactions propagate between nodes in a peer-to-peer fashion, so their source cannot otherwise be proven. The generation and verification of these signatures is computationally complex, and constitutes the primary bottleneck in products like ours. By contrast, in centralized databases, once a connection has been established, there is no need to individually verify every request that comes over it.Consensus mechanisms. In a distributed database such as a blockchain, effort must be expended in ensuring that nodes in the network reach consensus. Depending on the consensus mechanism used, this might involve significant back-and-forth communication and/or dealing with forks and their consequent rollbacks. While it\u2019s true that centralized databases must also contend with conflicting and aborted transactions, these are far less likely where transactions are queued and processed in a single location.Redundancy. This isn\u2019t about the performance of an individual node, but the total amount of computation that a blockchain requires. Whereas centralized databases process transactions once (or twice), in a blockchain they must be processed independently by every node in the network. So lots more work is being done for the same end result.Other disadvantages are:  ",
+            "date": "Answered October 8, 2017",
+            "views": "76",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mukesh Mali",
+                    "user_href": "/profile/Mukesh-Mali-20"
+                },
+                {
+                    "user_id": "Joseph Zhang",
+                    "user_href": "/profile/Joseph-Zhang-20"
+                },
+                {
+                    "user_id": "Kpvs Nikhil",
+                    "user_href": "/profile/Kpvs-Nikhil"
+                },
+                {
+                    "user_id": "Teresa Bhat",
+                    "user_href": "/profile/Teresa-Bhat"
+                },
+                {
+                    "user_id": "Jon Miller",
+                    "user_href": "/profile/Jon-Miller-165"
+                },
+                {
+                    "user_id": "Saravanan M",
+                    "user_href": "/profile/Saravanan-M-41"
+                },
+                {
+                    "user_id": "Shivam Sharma",
+                    "user_href": "/profile/Shivam-Sharma-1231"
+                },
+                {
+                    "user_id": "Marmik Patel",
+                    "user_href": "/profile/Marmik-Patel-9"
+                },
+                {
+                    "user_id": "Arnav Sinha",
+                    "user_href": "/profile/Arnav-Sinha-10"
+                },
+                {
+                    "user_id": "Victoria Lopez Negrete",
+                    "user_href": "/profile/Victoria-Lopez-Negrete"
+                }
+            ]
+        }
+    ]
+}

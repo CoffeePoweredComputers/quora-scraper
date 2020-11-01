@@ -1,0 +1,36 @@
+{
+    "title": "Is Arduino like Raspberry Pi? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Arduino (company)",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mike Sweeney",
+                "href": "/profile/Mike-Sweeney-135"
+            },
+            "answer_text": "They are\u2026similar. Both are a small general-purpose computer on a single circuit board, intended for applications where you want a little automation or other computational power but don\u2019t want to bury a laptop or similar inside your project. To understand the differences, start with a sort of philosophy of intended application. The Arduino is optimized for inputs and outputs. The Pi is optimized towards serial data streams. The Arduino is tough, flexible about power requirements, able to handle noisy inputs and drive a decent amount of power off the outputs. You run code on it, basically C; it is rare for an Arduino program to be more than a few hundred lines, and if it crashes, it boots up again in a fraction of a second. The Pi is a small computer and really wants conditioned power and shielded inputs and a nice host of peripherals (like keyboard and display). It runs on an actual OS, boots up like a desktop computer does, and crashes are a lot more serious. It also has the horsepower, both in raw CPU and in the framework of the OS and code environment, to get into image processing and software synthesis and natural language and all sorts of other computationally heavy stuff.  But let\u2019s be specific. I\u2019ve had Arduinos tucked into multiple theater effects devices; a remote MIDI trigger for sound effects, a servo-driven flapper to remotely shutter a video projector, the central brains of a costume strewn with some ten watts of LEDs, the guts of some radio-controlled flicker candles. The Arduino is dynamite for fish in a barrel like this, but it is there and easy to set up and not that expensive. I\u2019ve done custom boards and prototyping and laying out PCBs and so on is way too much to go through for a one-off effect. The Pi? Mostly I\u2019ve played with my Pi, but I keep meaning to run a soft-sampler on it for a simple piano sound module I can use with my practice keyboard. I\u2019ve also thought about doing a \u201cstars going by\u201d standing display and there\u2019s a dozen languages I could write that in on the Pi, and drive a nice big LCD directly from the Pi \u2014 that is, assuming I didn\u2019t want to just add a flash drive and run a canned video. ",
+            "date": "Answered October 22, 2020",
+            "views": "62",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Douglas Duncan Pickard",
+                "href": "/profile/Douglas-Duncan-Pickard"
+            },
+            "answer_text": "Not much. A Raspberry is like a mini, low-powered linux PC. It has an operating system (linux) and a graphical output. You can plug in a keyboard and mouse and use it as a word processor. Arduino is a low-power microcontroller with an easy to use IDE you can use to program it. Note, the IDE runs on a seperate computer. It has no display (and if you hook one up it will be tiny and slow). You can't just plug in a keyboard or mouse, at least not without writing some software. They are however able to run \u201creal-time\" controller applications very well. Both are computers, but they do completely different things by default. ",
+            "date": "Answered October 22, 2020",
+            "views": "119",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Paul Kerrigan",
+                    "user_href": "/profile/Paul-Kerrigan-7"
+                }
+            ]
+        }
+    ]
+}

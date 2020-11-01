@@ -1,0 +1,59 @@
+{
+    "title": "What does it mean when we say that a function is bounded? - Quora",
+    "tags": [
+        "Numerical Mathematics",
+        "Numerical Analysis",
+        "Polynomials",
+        "Polynomial Functions",
+        "Algebraic Equations",
+        "Applied Mathematics",
+        "Equations",
+        "Functions (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Yasha Berchenko-Kogan",
+                "href": "/profile/Yasha-Berchenko-Kogan"
+            },
+            "answer_text": "Let's do an example. Let's say [math]f(x)=x^3-2x^2+5x-10[/math]. You might notice that 2 is a root of [math]f(x)=0[/math] by plugging it in. A consequence is that we can factor out [math]x-2[/math] to get [math]f(x)=(x-2)(x^2+5)[/math]. What's left, [math]x^2+5[/math], is the [math]g(x)[/math] in the statement. Notice that [math]g(2)\\neq0[/math]. Now instead consider the function [math]f(x)=(x-2)^2(x+7)[/math]. Here, 2 is a double root. Now, if we factor out [math]x-2[/math], we get [math]f(x)=(x-2)g(x)[/math], where [math]g(x)=(x-2)(x+7)[/math]. Here, [math]g(2)=0[/math], because 2 was not a simple root. It was a double root. The reason they say bounded is that they don't want to allow you to \"factor\" [math]f(x)=x^2+3[/math] as [math](x-2)\\frac{x^2+3}{x-2}[/math] with [math]g(x)=\\frac{x^2+3}{x-2}[/math]. In this example, f does not have a root at 2, so this factorization has to be invalid. Indeed, g blows up to infinity as x approaches 2. ",
+            "date": "Answered April 6, 2015",
+            "views": "5",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Aditya Pai",
+                    "user_href": "/profile/Aditya-Pai-31"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Harun \u0160iljak",
+                "href": "/profile/Harun-\u0160iljak"
+            },
+            "answer_text": "It means it is limited by a constant, i.e. it's not blowing up to infinity anywhere. In this particular case, it's good to know since otherwise for  it could go to infinity and make an indeterminate form .  Still, this doesn't feel right. It was never stated that f is bounded itself. If it isn't, if it has some, say, poles, then this whole story is nil (i.e. you couldn't guarantee boundedness of g on the whole domain). ",
+            "date": "Answered January 26, 2015",
+            "views": "22",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gauranga Das",
+                    "user_href": "/profile/Gauranga-Das-1"
+                },
+                {
+                    "user_id": "John Palmore Jr",
+                    "user_href": "/profile/John-Palmore-Jr"
+                },
+                {
+                    "user_id": "Shubham Satyam",
+                    "user_href": "/profile/Shubham-Satyam"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

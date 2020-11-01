@@ -1,0 +1,34 @@
+{
+    "title": "What is a .so file in Android? - Quora",
+    "tags": [
+        "Android Studio (IDE)",
+        "File Formats",
+        "File Systems",
+        "Android Application Development",
+        "Android Devices",
+        "Android Applications",
+        "Android (operating system)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rlogical Techsoft Pvt. Ltd",
+                "href": "/profile/Rlogical-Techsoft-Pvt-Ltd"
+            },
+            "answer_text": "SO file is know as Shared Library file. When you write code in C or C++, you compile all the C++ code into the .SO file. The .SO file is the shared object library which can be dynamically loaded at the runtime of Android. Library files are bigger in size, typically in the range of 2MB to 10MB. This results in bloating up the app size. Another point to note is that in order to support multiple architectures like armeabi and x86, multiple .SO files should be bundled in the APK. Learn more here: Reduce the size of your app by moving .SO files to over-the-air ",
+            "date": "Answered October 24, 2019",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mac Lee",
+                "href": "/profile/Mac-Lee-40"
+            },
+            "answer_text": "SO is an abbreviation of Shared Library file, which contains information that can be used by more than 1 program to offload resources. As a result, .so file doesn\u2019t have to provide actual SO file. They can even be updated or replaced without those programs that have to make changes to their own code. .so file is similar to DDL (Dynamic Link Library) file used in Windows. If you want to open it, you can use GNU Compiler Collection. But it\u2019s just stored in specific folder and will automatically used by programs, so maybe you cannot understand the content you see. ",
+            "date": "Answered October 24, 2019",
+            "views": "778",
+            "upvotes": "0"
+        }
+    ]
+}

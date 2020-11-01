@@ -1,0 +1,84 @@
+{
+    "title": "How to find the prime factorization of N factorial - Quora",
+    "tags": [
+        "Prime Factorization",
+        "Factorial (function)",
+        "Mathematics and Algorithms",
+        "Prime Numbers",
+        "Theoretical Computer Science",
+        "Number Theory",
+        "Algorithms",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "Use Legendre's formula to compute the exponent on each prime  between 1 and . The highest power of  dividing  is  where  is the \u201cfloor\u201d function; round  down to an integer. Each sum has only finitely many terms; you can quit when . Calculate this value for  and that gives you the exponents on the prime factorization:  ",
+            "date": "Answered March 16, 2020",
+            "views": "395",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Gustavo S\u00e1nchez",
+                    "user_href": "/profile/Gustavo-S\u00e1nchez-8"
+                },
+                {
+                    "user_id": "Helena Reis",
+                    "user_href": "/profile/Helena-Reis-5"
+                },
+                {
+                    "user_id": "Walter Wright",
+                    "user_href": "/profile/Walter-Wright-6"
+                },
+                {
+                    "user_id": "Clarence Chew",
+                    "user_href": "/profile/Clarence-Chew-7"
+                },
+                {
+                    "user_id": "Aditya Sharma",
+                    "user_href": "/profile/Aditya-Sharma-2267"
+                },
+                {
+                    "user_id": "Lai Johnny",
+                    "user_href": "/profile/Lai-Johnny"
+                },
+                {
+                    "user_id": "Aman Karunakaran",
+                    "user_href": "/profile/Aman-Karunakaran"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "Vladimir Pitch",
+                    "user_href": "/profile/Vladimir-Pitch"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "Well N! is divisible by all natural numbers up to N, prime or not. Therefore its prime factors are exactly the prime numbers up to N. Next, you must determine how many copies of each there are among the factors. For each prime up to N, find the highest power of that prime that also divides N. So. divide N! by 2 until you can\u2019t any more. Then divide what\u2019s left by 3 until you can\u2019t anymore. Etc. ",
+            "date": "Answered March 16, 2020",
+            "views": "162",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Brandon Anderson",
+                    "user_href": "/profile/Brandon-Anderson-577"
+                }
+            ]
+        }
+    ]
+}

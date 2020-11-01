@@ -1,0 +1,45 @@
+{
+    "title": "What is the purpose of sampling theorem? - Quora",
+    "tags": [
+        "Sampling (signal processing)",
+        "Theorems and Lemmas"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Anton Fahlgren",
+                "href": "/profile/Anton-Fahlgren-2"
+            },
+            "answer_text": "The sampling theorem is, of course, about sampling. For a continuous signal [math]x(t)[/math], sampling means that we are measuring [math]x(t)[/math] at (evenly spaced) discrete points [math]t_1, t_2, t_3,\\dots, t_N[/math] to obtain the set of samples [math]\\{x(t_1),x(t_2),\\dots,x(t_N)\\}[/math]. The sampling theorem, or the Nyquist\u2013Shannon sampling theorem, says that if [math]x(t)[/math] does not oscillate too quickly, then we can actually reproduce [math]x(t)[/math] exactly from the set of samples [math]\\{x(t_1),x(t_2),\\dots,x(t_N)\\}[/math], which is quite amazing since x(t) takes on (uncountably) infinitely many values! Specifically, if [math]x(t)[/math] does not contain frequencies above [math]M[/math] Hz[math]^1[/math], then it is enough to sample [math]x(t)[/math] at points [math]1/(2M)[/math] seconds apart to reproduce [math]x(t)[/math] exactly from these samples. This is applicable to music recording, for example. As you may know, the human ear can\u2019t hear frequencies above 20 kHz or so. Therefore, it is enough to sample a human voice about 40 000 times per second to then be able to reproduce an exact replica of the original. This is why the standard sample rate on wav files is often set to 44 100 Hz! [math]^1[/math] This is technically a statement about the Fourier transform of x. ",
+            "date": "Answered September 5, 2018",
+            "views": "384",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                },
+                {
+                    "user_id": "Aamer",
+                    "user_href": "/profile/Aamer-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Thakur Rana",
+                "href": "/profile/Thakur-Rana-9"
+            },
+            "answer_text": "Sampling theorem defines the minimum frequency at which sampling should be done so that we can get our original signal from sample. Watch this video you will understand the purpose of sampling theorem.  ",
+            "date": "Answered April 7, 2020",
+            "views": "28",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Priyanka Verma",
+                    "user_href": "/profile/Priyanka-Verma-481"
+                }
+            ]
+        }
+    ]
+}

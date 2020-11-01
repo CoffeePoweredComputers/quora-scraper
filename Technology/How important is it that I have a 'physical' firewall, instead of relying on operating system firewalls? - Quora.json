@@ -1,0 +1,82 @@
+{
+    "title": "How important is it that I have a 'physical' firewall, instead of relying on operating system firewalls? - Quora",
+    "tags": [
+        "Firewalls",
+        "Network Security",
+        "Information Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shlomo Weintroub",
+                "href": "/profile/Shlomo-Weintroub"
+            },
+            "answer_text": "While having a hardware component to your security is certainly preferred, it would depend on your use and needs. For businesses, especially larger enterprises and the healthcare industry, it is becoming increasingly clear that perimeter security alone just won\u2019t cut it. The firewall is a \u201cperimeter wall\u201d around your network, controlling the flow of traffic, and keeping out potential intruders. What happens when the intruder gets past your wall? The traditional firewall/perimeter security model assumes that all threats come from outside the network. Today, this is unfortunately not the case. The BYOD/Work From Anywhere environment pervasive in today\u2019s business landscape potentially allows for malicious software on an employees device (which could have been infected at their home or local coffee shop\u2019s free wifi) to enter the network, bypassing the firewall, since the employee has authorization to join the work networkPotentially harmful software can be installed (be it knowingly or not) by an employee, who is already inside the networkThird party vendors present unique risks as well. If they are software vendors, the software may have its own set of vulnerabilities exposing your network. If they are on-site third party vendors performing a service, they may also gain access to sensitive information without the hindrance of a firewall. (I read today that a large insurance provider suffered a data breach affecting 18,000 customers, caused by a third party vendors emailing themselves the information. The breach was discovered by the vendor and not the insurance provider).IoT devices, becoming increasingly present in our lives and businesses, can also put a hole in the wall. Many of these connected devices has software flaws and backdoors which can be accessed by hackers looking for an entry point into your network. The default username and passwords are left on these devices more often than you would imagine. Pertaining to the healthcare industry, many new devices and equipment have vulnerabilities that can allow a hacker to either gain access to the network or completely control the device (e.g. X-Rays, Pacemakers, Drug Dispensers)From my experience, there is no all-in-one solution to cybersecurity, and no one product alone can meet all of your security needs. There is also no out-of-the-box solution, each tool needs to be tailored to the unique needs and fingerprint of the business and its network environment. It is important to find the right combination and to understand potential threats facing your enterprise and how they are evolving. Full network visibility is crucial towards creating a secure environment. My firm employs wire data analytics to monitor the east-west traffic on a network. We have a real-time alerting system and also implemented automated responses based on certain events and criteria (e.g. We have a Ransomware killswitch that shuts down a session as soon as Ransomware begins encrypting files, preventing it from spreading onto the network). ",
+            "date": "Answered August 1, 2017",
+            "views": "174",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tracy Jane Miner",
+                    "user_href": "/profile/Tracy-Jane-Miner"
+                },
+                {
+                    "user_id": "Miroslav Rusev",
+                    "user_href": "/profile/Miroslav-Rusev-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "I can\u2019t imagine having a network - home or business - without a physical firewall. Period. Full stop. I built one of the first firewalls, in 1988. It used two Sun workstations with three Ethernet connections and one wide area connections and a bunch of double-proxy technology to keep any packet from the Internet from ever arriving at the interior network without having previously been handled and inspected. It had the distinction of being one of the only protective devices that kept the Morris worm out of a network connected to the ARPAnet. (I received a very nice award and bonus from Shell for that) I licensed the design to a company that produced a very, very effective and ridiculously expensive commercial version for a number of years. That was a long time ago. The number of Internet related threats was nearly zero - in fact, before Robert Morris unleashed his bit of nastiness, most people didn\u2019t believe that network-borne attacks were an issue outside of a few corners of the government where there had been active discussion of these things for years. The people who authorized me to build it understood that it wasn\u2019t possible to understand the threats, and wanted protection against the unknown. Today? We still don\u2019t know what all is out there. Nearly 1 million new malware threats released every day was reported two years ago, and it\u2019s not hyperbole. (There is a pile of double-counting, as people will take Virus X, and whack on it a little bit to turn it into X-prime, etc, but if you\u2019re using strict signature-based identification, it\u2019s completely true) And the impact is huge, and growing. From the current IBM X-Force Threat Intelligence report, take a look at this for the number of penetrations and their impact.  So, that\u2019s just businesses. Note that this numbers are for data breaches. Note the number of exposed records, versus the number of actual breaches. Wanna take odds as to how many of those personal records exposures are used to compromise other accounts held by the individuals in question? Particularly given that most people still use the same login credentials for every freaking account that they have? Not good. That\u2019s not to even mention zombie botnets, malware droppers casually inserted in normally trusted sites (that\u2019s a big new business for organized cybercrime groups), people not having good network hygiene and surfing places they shouldn\u2019t be anyway without taking precautions to prevent that from blowing them up, etc. You don\u2019t need a massive, ridiculously expensive firewall. These days, all the heavy lifting is done in the cloud - in fact, the new business model is to sell relatively cheap hardware, with an annual subscription to the cloud service that keeps it all up to date. And that\u2019s a good thing for everyone - any weird stuff that shows up on your firewall informs all the other firewalls, and vice versa. I have a similar view on portable computing devices. If you\u2019re wandering around with your laptop, attaching it to random WiFi hotspots because they happen to be convenient, and you\u2019re not using a good, solid, paid VPN service, a personal firewall on your computer that completely puts it in stealth mode, and good anti-malware software, that\u2019s like dropping yourself into the middle of an Ebola outbreak just for grins. I don\u2019t make blanket recommendations for products or services. I\u2019ve got some strong opinions about what I consider best-in-breed, but it\u2019s a moving target, and anything I recommend today is likely to be obsolete or compromised tomorrow. But I take this stuff very seriously. It\u2019s what I do, professionally (OK, it\u2019s part of what I do professionally). Your specific need will require a specific solution to address it. If you have on-site servers, you have different needs than if you have only outbound user traffic. If you have multiple sites, you have different needs than if you have one site. The variables are many, and complex. But you need SOMETHING. And you probably need a competent professional to help you make the selection, install, maintain, and do something to review the logs on a daily basis. (That\u2019s a huge part that nearly no one gets right, BTW - if you\u2019re blocking stuff, and you\u2019re logging stuff, and you\u2019re not paying attention to what is going on\u2026. yeah) I hope this helps, rather than just scaring the crap out of you. But you should be genuinely concerned, if not scared, and you should take action. ",
+            "date": "Answered May 3, 2017",
+            "views": "19",
+            "upvotes": " View 37 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Barry Rountree",
+                    "user_href": "/profile/Barry-Rountree"
+                },
+                {
+                    "user_id": "Rob Riley",
+                    "user_href": "/profile/Rob-Riley"
+                },
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Ezechi Nnabugwu",
+                    "user_href": "/profile/Ezechi-Nnabugwu"
+                },
+                {
+                    "user_id": "Svetlomir Balevski",
+                    "user_href": "/profile/Svetlomir-Balevski"
+                },
+                {
+                    "user_id": "Howard Johnson",
+                    "user_href": "/profile/Howard-Johnson-13"
+                },
+                {
+                    "user_id": "Karen Marie Shelton",
+                    "user_href": "/profile/Karen-Marie-Shelton"
+                },
+                {
+                    "user_id": "Daniel Bell",
+                    "user_href": "/profile/Daniel-Bell-39"
+                },
+                {
+                    "user_id": "Alfred Wandati",
+                    "user_href": "/profile/Alfred-Wandati"
+                },
+                {
+                    "user_id": "Thaddeus Vinson",
+                    "user_href": "/profile/Thaddeus-Vinson-1"
+                }
+            ]
+        }
+    ]
+}

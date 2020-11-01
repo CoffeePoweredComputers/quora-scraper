@@ -1,0 +1,108 @@
+{
+    "title": "Is clicking on .onion links on a regular browser bad? - Quora",
+    "tags": [
+        "Deep Web Technologies",
+        "Tor (The Onion Router)",
+        "Deep Web",
+        "Network Security",
+        "Web Browsers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ken Breeman",
+                "href": "/profile/Ken-Breeman"
+            },
+            "answer_text": "Clicking on a .onion URL from a regular browser while not running TOR will fail due to DNS resolution. Your computer issues a DNS request to your default DNS server (in clear text) requesting the A record for the domain, since most ISP's do not run TOR the DNS response will be \"no such name\" and your browser will display an error message. Anyone observing your connections would be able to determine which onion site you are attempting to reach (e.g. asdfasdfasdf.onion) but not the full path. Some less-reputable ISP's will forge a DNS response to this DNS failure and redirect you to their site, primarily to serve advertisements. Ultimately it depends on your definition of \"bad\", but \"probably not\" is a safe response. ",
+            "date": "Answered January 26, 2016",
+            "views": "192",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Md Ibrahim Khalil",
+                    "user_href": "/profile/Md-Ibrahim-Khalil-48"
+                },
+                {
+                    "user_id": "Charan G",
+                    "user_href": "/profile/Charan-G"
+                },
+                {
+                    "user_id": "Alan Kevan",
+                    "user_href": "/profile/Alan-Kevan"
+                },
+                {
+                    "user_id": "Ricardo Santiago",
+                    "user_href": "/profile/Ricardo-Santiago-47"
+                },
+                {
+                    "user_id": "Jesse Moy",
+                    "user_href": "/profile/Jesse-Moy"
+                },
+                {
+                    "user_id": "Kacper Kilian",
+                    "user_href": "/profile/Kacper-Kilian"
+                },
+                {
+                    "user_id": "Jake Vinyard",
+                    "user_href": "/profile/Jake-Vinyard"
+                },
+                {
+                    "user_id": "Vaishali Sharma",
+                    "user_href": "/profile/Vaishali-Sharma-31"
+                },
+                {
+                    "user_id": "Divyank Karolia",
+                    "user_href": "/profile/Divyank-Karolia"
+                },
+                {
+                    "user_id": "Chandra",
+                    "user_href": "/profile/Chandra-37"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mayur Yewale",
+                "href": "/profile/Mayur-Yewale"
+            },
+            "answer_text": "First thing google chrome, mozilla firefox will not be able to open .onion link. It will give the message \"This webpage is not available\".  It is not bad at all to click .onion sites. No traffic will be coming or going so it is 100% safe. Also no one will be punished. But there are many ways to open .onion links using normal browser. Example is chrome extension \"OnionLink .onion plugin\". You can install this plugin by using your gmail credential. Of course google will know that who are browsing .onion links. This .onion link is open using google chrome.    ",
+            "date": "Answered February 4, 2016",
+            "views": "141",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Charan G",
+                    "user_href": "/profile/Charan-G"
+                },
+                {
+                    "user_id": "Darla B",
+                    "user_href": "/profile/Darla-B"
+                },
+                {
+                    "user_id": "Vaishali Sharma",
+                    "user_href": "/profile/Vaishali-Sharma-31"
+                },
+                {
+                    "user_id": "Daniel Kuroshv",
+                    "user_href": "/profile/Daniel-Kuroshv"
+                },
+                {
+                    "user_id": "Thanusha Rameshwara Irugalbandara",
+                    "user_href": "/profile/Thanusha-Rameshwara-Irugalbandara"
+                },
+                {
+                    "user_id": "Aditya Singh",
+                    "user_href": "/profile/Aditya-Singh-209"
+                },
+                {
+                    "user_id": "Iris Merilo",
+                    "user_href": "/profile/Iris-Merilo"
+                },
+                {
+                    "user_id": "Shreyansh Dixit",
+                    "user_href": "/profile/Shreyansh-Dixit-\u0936\u094d\u0930\u0947\u092f\u093e\u0902\u0936-\u0926\u0940\u0915\u094d\u0937\u093f\u0924"
+                }
+            ]
+        }
+    ]
+}

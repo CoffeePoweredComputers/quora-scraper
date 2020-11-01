@@ -1,0 +1,80 @@
+{
+    "title": "How do URL shorteners manage to create short but still unique URLs? - Quora",
+    "tags": [
+        "Uniform Resource Locators (URLs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Derric Haynie",
+                "href": "/profile/Derric-Haynie"
+            },
+            "answer_text": "Most URL shorteners simply hash and index all URLs stored under a certain domain, then when a new random URL slug is being created, they use a random number generator to create a random string (or add characters to a string). This is then quickly checked against a hash table of all other values under the domain and if nothing is found, the URL can be created. The odds of something being found are pretty slim. Even with Bitly, if you were to type in bit(dot)ly/ and choose 5 random characters to put on the end, you would probably spend all day going to 404 pages. Meaning even if we generate strings at random, the odds of generating 2 strings that are the same, are so low that we almost don\u2019t need to check (until we have extremely heavy usage under that domain or something). For that reason, its fairly simple to create random URL strings for a URL shortener. Note: Some URL shorteners are case sensitive while others are not, thus reducing the level of complexity. All that being said, I still always recommend using a custom URL slug rather than letting the URL shortener fill it in randomly, and I always recommend using a custom URL shortener rather than a generic one. For more about common mistakes people make when shortening URLs, check out this post I made called, \u201cThe 7 Deadly Sins of URL Shortening.\u201d To start using your own custom URL shortener, I\u2019d recommend taking a look at Rebrandly. ",
+            "date": "Answered September 10, 2016",
+            "views": "23",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David De Guz",
+                    "user_href": "/profile/David-De-Guz"
+                },
+                {
+                    "user_id": "Samantha Owens",
+                    "user_href": "/profile/Samantha-Owens-23"
+                },
+                {
+                    "user_id": "Shana Haynie",
+                    "user_href": "/profile/Shana-Haynie"
+                },
+                {
+                    "user_id": "ClickMeter Link Tracking",
+                    "user_href": "/profile/ClickMeter-Link-Tracking"
+                },
+                {
+                    "user_id": "Josh Fechter",
+                    "user_href": "/profile/Josh-Fechter"
+                },
+                {
+                    "user_id": "Max Cechina",
+                    "user_href": "/profile/Max-Cechina"
+                },
+                {
+                    "user_id": "Gianni Fiore",
+                    "user_href": "/profile/Gianni-Fiore"
+                },
+                {
+                    "user_id": "Sian",
+                    "user_href": "/profile/Sian-86"
+                },
+                {
+                    "user_id": "Vincent Magaline",
+                    "user_href": "/profile/Vincent-Magaline"
+                },
+                {
+                    "user_id": "Daniel Virgo",
+                    "user_href": "/profile/Daniel-Virgo-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Scott Welch",
+                "href": "/profile/Scott-Welch"
+            },
+            "answer_text": "This is a fairly trivial compression problem. ",
+            "date": "Updated January 6, 2015",
+            "views": "605",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ross Rheingans-Yoo",
+                    "user_href": "/profile/Ross-Rheingans-Yoo"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                }
+            ]
+        }
+    ]
+}

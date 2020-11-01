@@ -1,0 +1,76 @@
+{
+    "title": "What are the differences Between objective probability and subjective probability? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "JQ Veenstra",
+                "href": "/profile/JQ-Veenstra"
+            },
+            "answer_text": "When people doing Bayesian statistics have to come up with a prior, there are usually three ways of doing it.  This is usually where the words \"objective\" and \"subjective\" come into play with regards to probability, with the addition of \"easy\". The first is to use the conjugate prior of the likelihood.  This is still done, but it isn't as necessary since we have computers to do MCMC now.  It eases computation (often making things quite simple), but sometimes (perhaps often) the conjugate prior is not as appropriate as others.  This is the \"easy\" way. The second is to use information about the data (like maximum entropy) or knowledge about the data (say, the results of a past experiment) to specify the prior.  We'll call these \"objective\" and \"scientific objective\" to distinguish between them. The third way is \"subjective.\"  It uses the personal beliefs of the statistician/machine learner/data scientist (or otherwise investigator - statisticians/machine learners/data scientists aren't the only ones who analyze data), and it has a range of possibilities.  It could be a gut feeling, or from logical reasoning.  The appropriateness of this method really is determined by the expertise of the investigator (or research done, in some cases) in the type of data being analyzed.   The thing is, an \"objective\" prior that is poorly calibrated can come to \"worse\" (however you want to define that) conclusions than a \"subjective\" prior chosen by an expert.  Even the \"scientific objective\" prior can do \"poorly\" if the data generating process has changed, or previous experiments were done poorly. The good thing is, if you get enough data, the data swamps the prior.  The prior has less and less effect.  In \"small data\" studies, Bayesian methods are more important (because often frequentism can't analyze them well), and that's where you need to be very careful about choosing a prior. So, there is a difference between how priors are chosen, but which one is \"best\" really depends on a lot of things. ",
+            "date": "Answered October 11, 2015",
+            "views": "61",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sri Chakradhar K",
+                    "user_href": "/profile/Sri-Chakradhar-K"
+                },
+                {
+                    "user_id": "Olivia Angiuli",
+                    "user_href": "/profile/Olivia-Angiuli"
+                },
+                {
+                    "user_id": "Suraj Adhikari",
+                    "user_href": "/profile/Suraj-Adhikari-13"
+                },
+                {
+                    "user_id": "Maraim",
+                    "user_href": "/profile/Maraim"
+                },
+                {
+                    "user_id": "Isabelle E",
+                    "user_href": "/profile/Isabelle-E"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven de Rooij",
+                "href": "/profile/Steven-de-Rooij"
+            },
+            "answer_text": "They are two different interpretations of probability theory. In the frequentist school, one can only talk about the probability of an event in a repeatable experiment, and the probability is then the limit value of the frequency of the event, if you repeat it infinitely often. For example, the probability that a fair coin comes up heads is 1/2, because if you flip the coin over and over again, the frequency of heads converges to 1/2. On the other hand, you cannot talk about the probability that it will rain tomorrow, because there is only one tomorrow so there is no repeatable event.Hypothesis testing and confidence intervals belong squarely in this first category. In the Bayesian school, this restriction is dropped and a probability instead expresses a degree of belief in a certain proposition. So now we can talk about the probability that it will rain tomorrow, or even the probability that alien life exists, anything really. The Bayesian procedure is to start by defining a \"prior \" distribution that captures ones prior beliefs about all the unknown quantities. Then data are collected, and the prior beliefs are updated with the new data by conditioning. The advantage is that, after defining the prior distribution, no further assumptions need to be made and all inference can be done via probability theory. Bayesian networks, graphical models, Hidden Markov Models, MCMC methods, all these techniques apply to Bayesian reasoning, which has become very popular in recent years because of its applications in machine learning. There is some debate on how the prior should be defined. Some refer to De Finetti's theorem and hold that the prior should express one's subjective beliefs about the world. But in practice many people instead choose their priors in such a way that the formulas work out nice mathematically. And still others emphasize that the prior should be chosen in such a way that the results of inference depend as little as possible on the prior, or choose the prior for other technical reasons. The later philosophy is called \"objective Bayesian\". I'm not sure whether in this question the distinction \"subjective\" vs \"objective\" probability corresponds to the distinction \"Bayesian\" vs \"frequentist\", or to the distinction \"subjective Bayesian\" vs \"objective Bayesian\". Hope that helps. ",
+            "date": "Answered October 10, 2015",
+            "views": "42",
+            "upvotes": " Answer requested by Idongesit Udofia",
+            "upvoters": [
+                {
+                    "user_id": "ANMOL KUMAR",
+                    "user_href": "/profile/ANMOL-KUMAR-416"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joni Pinkney",
+                "href": "/profile/Joni-Pinkney-1"
+            },
+            "answer_text": "Thanks for the A2A. My area is statistics for the social sciences, and I teach at the community college level. This question pertains to business and finance, so it\u2019s a bit outside of my area. However, I\u2019ll take a shot at it. I see the other answers are more technical, and perhaps some readers may desire a more basic answer. In statistics, there are two ways we can come upon these known facts: by observational data, or by combinatorical analysis, that is, theoretical counting techniques. The former is known as experimental probability and the latter as theoretical probability. In either case, probability of an event is calculated as number of ways event can happen / total number of events Probability, however it is calculated or estimated, is always between 0 and 1, with an impossible event having probability 0 and an event which is certain to occur having probability 1. In areas of business and finance, objective probability is based on known facts about observable systems. This would correspond to experimental probability as discussed above. We use observational data when it is available, since theoretical counting techniques often don\u2019t apply. For example, insurance companies calculate rates by considering the probability of an event, say, a car accident, by counts of how many accidents occur per miles driven, or per number of drivers, or per unit time such as 1 year. This is regarded as constant although it may change slowly, due to changes in the data set over time. However, sometimes this information is not available, especially for rare or unique events. Then, all we can do is make an educated guess, based on our experience with many related events, to estimate a probability. Since it is based on subjective criteria, this is known as subjective probability. The quality of a subjective probability estimate, excellent to poor, depends on the knowledge and expertise of the person who made the estimate. It can change as more information becomes available, often changing rapidly over a short time. ",
+            "date": "Answered September 9, 2017",
+            "views": "36",
+            "upvotes": " View 1 Upvoter"
+        },
+        {
+            "author_info": {
+                "name": "Kenneth Ganning",
+                "href": "/profile/Kenneth-Ganning"
+            },
+            "answer_text": "The vast majority of problems involving probability fall into 1 of three categories: Theoretical which is based on assumptions and calculation (the birthday problem is a good example since I need to assume independence, uniformity and no on was born on 2/29.) Empirical which is based on observed data (what is the likelihood someone is left-handed). Subjective based on intuition and SWAGS. What is the probability Bernie Sanders will be elected president in 2020). The hall mark of subjective probability is that there is no (or limited) actual evidence or assumptions to draw upon. ",
+            "date": "Answered September 9, 2017",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

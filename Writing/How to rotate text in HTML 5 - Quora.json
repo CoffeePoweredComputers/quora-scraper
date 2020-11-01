@@ -1,0 +1,78 @@
+{
+    "title": "How to rotate text in HTML 5 - Quora",
+    "tags": [
+        "HTML5",
+        "HTML",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Fon Noel",
+                "href": "/profile/Fon-Noel"
+            },
+            "answer_text": "You can achieve this by putting the text in a parent element like a div which has an id or a class.After doing that you can simply use css rules to rotate the element you use it alongside javascript to make it more practical and dynamic. Short Example <div id=\u201dmytext\u201d>Hello</div> <style> #mytext { transform:rotate(90deg); webkit-transform:rotate(90deg); /*You should handle several browsers*/  }  </style>  <script> //Assumming you have jquery you can dynamically rotate the text in this manner when an event happens $(document).on(\u201c#event\u201d, \u201c#element\u201d, function(event){ $(\u201c# mytext\u201d).css(\u201ctransform\u201d, \u201crotate(60)\u201d); }); </script> The above example rotates mytext by 90degrees using css and js rotates it again by 60 degrees. Not very cool but gives you an idea goodluck! ",
+            "date": "Answered November 4, 2016",
+            "views": "147",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Micha Slavytich",
+                    "user_href": "/profile/Micha-Slavytich"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marcin Nowacki",
+                "href": "/profile/Marcin-Nowacki-3"
+            },
+            "answer_text": "You need to use CSS. You can\u2019t do it with HTML5 only. .rotate {\u00a0/* Safari, Chrome */\u00a0-webkit-transform: rotate(-90deg);\u00a0\u00a0/* Firefox */\u00a0-moz-transform: rotate(-90deg);\u00a0\u00a0\u00a0/* IE */\u00a0\u00a0-ms-transform: rotate(-90deg);\u00a0\u00a0\u00a0\u00a0/* Opera */\u00a0\u00a0-o-transform: rotate(-90deg);\u00a0\u00a0\u00a0\u00a0/* Older versions of IE */\u00a0\u00a0filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);\u00a0\u00a0\u00a0\u00a0/* CSS3 standard as defined here: http://www.w3.org/TR/css3-transforms/ */\u00a0\u00a0transform: rotate(-90deg);\u00a0\u00a0\u00a0\u00a0}\u00a0More about rotation in CSS you can find here: Text Rotation with CSS ",
+            "date": "Answered November 10, 2016",
+            "views": "112",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gagan Kumar",
+                    "user_href": "/profile/Gagan-Kumar-107"
+                },
+                {
+                    "user_id": "Mariia Ruban",
+                    "user_href": "/profile/Mariia-Ruban"
+                },
+                {
+                    "user_id": "Kuba Rogalski",
+                    "user_href": "/profile/Kuba-Rogalski"
+                },
+                {
+                    "user_id": "Mariia Ruban",
+                    "user_href": "/profile/Mariia-Ruban-1"
+                },
+                {
+                    "user_id": "Kristen Borg",
+                    "user_href": "/profile/Kristen-Borg"
+                },
+                {
+                    "user_id": "Monika Ciemiecka",
+                    "user_href": "/profile/Monika-Ciemiecka"
+                },
+                {
+                    "user_id": "Julia Foremnik",
+                    "user_href": "/profile/Julia-Foremnik"
+                },
+                {
+                    "user_id": "Tom Zietek",
+                    "user_href": "/profile/Tom-Zietek"
+                },
+                {
+                    "user_id": "Dasha Oliinyk",
+                    "user_href": "/profile/Dasha-Oliinyk"
+                },
+                {
+                    "user_id": "Piotr Zaniewicz",
+                    "user_href": "/profile/Piotr-Zaniewicz"
+                }
+            ]
+        }
+    ]
+}

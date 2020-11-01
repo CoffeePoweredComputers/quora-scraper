@@ -1,0 +1,209 @@
+{
+    "title": "How to show that a set is countably infinite - Quora",
+    "tags": [
+        "Set Theory",
+        "Infinity (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Rutter",
+                "href": "/profile/David-Rutter-2"
+            },
+            "answer_text": "A set is countable if it can be placed in surjective correspondence with the natural numbers. So a proof of countability amounts to providing a function that maps natural numbers to the set, and then proving it is surjective. It is not necessary that the function be an injection: you can map several different natural numbers to the same number in your set. You only need to make sure that there will be nothing in your set that doesn\u2019t have a natural number mapped to it. To prove your mapping is a surjection, you only need to provide a right-inverse for it: a function for taking an element of the set in question and finding the natural number that maps to it. There are other ways of showing that every member of your set gets hit by your function, but this is the most rigorous in my opinion. As an example, you can prove that a countable Cartesian product of countable sets (e.g. [math]\\mathbb{Z}^\\infty[/math]) is countable, by providing the function that maps 1 to the first element of the first set, 2 to the 2nd element of the first set, 3 to the first element of the second set, 4 to the third element of the first set, 5 to the second element of the second set, and so on. In general, you map the nth triangular number to the first element of the nth set, one less than the n+1st triangular number to the second element of the nth set, two less than the n+2nd triangular number to the third element of the nth set, and so on. We know that this function is a surjection because we know that the ith element of the nth set is mapped to by the natural number i less than the n+i-1st triangular number. ",
+            "date": "Updated January 20, 2017",
+            "views": "25",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vance Faber",
+                    "user_href": "/profile/Vance-Faber"
+                },
+                {
+                    "user_id": "GIB",
+                    "user_href": "/profile/GIB-5"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Lev Kruglyak",
+                    "user_href": "/profile/Lev-Kruglyak"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                },
+                {
+                    "user_id": "Burak \u00d6zt\u00fcrk",
+                    "user_href": "/profile/Burak-\u00d6zt\u00fcrk-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bruce Balden",
+                "href": "/profile/Bruce-Balden"
+            },
+            "answer_text": "Some sets are not. The simplest way is to demonstrate a 1\u20131 correspondence with the integers. Sometimes, however, that\u2019s very hard or even impossible. Here\u2019s a sketch of how to demonstrate the number of rational numbers is countable. Step 1: Consider all pairs of integers (a,b) and devise an order for them, something first. For instance we might start at (0,0) and proceed in circles (a spiral): (0,0),(1,0),(1,1),(0,1),(-1,-1),(-1,0),(-1,-1),(-1,0),(1,-1),(2,0), \u2026.. This gets every integer point on the plane. Every point z=(x,y) represents the number r=x/y provided that [math]y\\ne 0.[/math] There are two problems: [a] a lot of points have y=0 [b] a lot of numbers are represented by more than 1 point on the plane. However, consider Z the subset of these points representing unique rational numbers. Since it is a subset of a countable set, it cannot be of greater cardinality, and since it contains, in particular, representatives of the integers, it is not finite. ",
+            "date": "Answered January 16, 2017",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joseph Noonan",
+                    "user_href": "/profile/Joseph-Noonan-5"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                },
+                {
+                    "user_id": "Burak \u00d6zt\u00fcrk",
+                    "user_href": "/profile/Burak-\u00d6zt\u00fcrk-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prajakta Bedekar",
+                "href": "/profile/Prajakta-Bedekar"
+            },
+            "answer_text": "Use the definition of countable. Can you count the set, ie, is there a correspondence between natural numbers and the given set? To check this, try to find a one-one map from the given set to natural numbers/a subset of natural numbers/any set you have already proved to be countable. For example, if you are concerned about integers, the map might be so that [math]f(0)=1[/math] [math]f(-1)=2[/math] [math]f(1)=3[/math] And so on. . You can notice the general term is- [math]f(-k)=2k[/math] [math]f(k)=2k+1[/math] ",
+            "date": "Answered January 16, 2017",
+            "views": "11",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Isaac Vega",
+                    "user_href": "/profile/Isaac-Vega-1"
+                },
+                {
+                    "user_id": "Burak \u00d6zt\u00fcrk",
+                    "user_href": "/profile/Burak-\u00d6zt\u00fcrk-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "Constructing an explicit bijection is great if you can do it, but at times that can be challenging. The Schr\u00f6der\u2013Bernstein theorem is a very powerful tool that allows you to conclude that two sets are the same size without needing to construct an explicit bijection, and it\u2019s definitely worth considering for problems where it might apply. ",
+            "date": "Answered January 16, 2017",
+            "views": "11",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alon Amit",
+                    "user_href": "/profile/Alon-Amit"
+                },
+                {
+                    "user_id": "Tom McFarlane",
+                    "user_href": "/profile/Tom-McFarlane"
+                },
+                {
+                    "user_id": "Luka Tako",
+                    "user_href": "/profile/Luka-Tako"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "Gregor Kikelj",
+                    "user_href": "/profile/Gregor-Kikelj"
+                },
+                {
+                    "user_id": "\u0141ukasz Golon",
+                    "user_href": "/profile/\u0141ukasz-Golon"
+                },
+                {
+                    "user_id": "Vinayak S",
+                    "user_href": "/profile/Vinayak-S"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Kostis Gourgoulias",
+                    "user_href": "/profile/Kostis-Gourgoulias"
+                },
+                {
+                    "user_id": "Jared Ronning",
+                    "user_href": "/profile/Jared-Ronning"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lukas Schmidinger",
+                "href": "/profile/Lukas-Schmidinger-1"
+            },
+            "answer_text": "Show there is some bidirectional function the natural numbers (0, 1, 2, 3, \u2026 (you can also start it from 1 (or any other other integer) what ever you feel more comfortable as long as you have infinite many integers)). I recommend you take a look at some proofs for prime numbers, integers, rational numbers, algebraic numbers, finite strings, \u2026 ",
+            "date": "Answered November 16, 2019",
+            "views": "166",
+            "upvotes": " Answer requested by Funny Videos",
+            "upvoters": [
+                {
+                    "user_id": "Aniruddha Guha",
+                    "user_href": "/profile/Aniruddha-Guha-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adam Callison",
+                "href": "/profile/Adam-Callison"
+            },
+            "answer_text": "Find a prescription to map each and every one of its elements to the natural numbers in such a way that each and every natural numbers is mapped to by exactly one element. This is called a bijective map, and proves that the set has the same cardinality as the naturals; that is, it's countably infinite. ",
+            "date": "Answered January 16, 2017",
+            "views": "532",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "B.L. Srivastava",
+                "href": "/profile/B-L-Srivastava"
+            },
+            "answer_text": "If you are able to put the given set say A into a one-to-one correspondence with the set of positive integers N . In other words if there exist a function f : N\u2192A which is one -one & onto . ",
+            "date": "Answered November 16, 2019",
+            "views": "130",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Garrett Borawski",
+                "href": "/profile/Garrett-Borawski"
+            },
+            "answer_text": "You must find a bijection (a function that is one to one and onto) that maps elements from the set in question to the set of natural numbers. ",
+            "date": "Answered January 16, 2017",
+            "views": "258",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mark van Hoeij",
+                "href": "/profile/Mark-van-Hoeij"
+            },
+            "answer_text": "To show that a set S is countably infinite, you have to write down a sequence a.1, a.2, a.3, \u2026. that contains all elements of S. ",
+            "date": "Answered January 16, 2017",
+            "views": "228",
+            "upvotes": "0"
+        }
+    ]
+}

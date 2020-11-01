@@ -1,0 +1,45 @@
+{
+    "title": "Why do streamed videos buffer when you rewind? - Quora",
+    "tags": [
+        "Vimeo",
+        "Netflix (product)",
+        "Streaming Video Content",
+        "Online Video",
+        "Videos",
+        "YouTube Videos"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "James Schek",
+                "href": "/profile/James-Schek"
+            },
+            "answer_text": "Most streaming video implementations try to limit the size of the video buffer and are optimized for normal playback. They usually keep a rolling buffer of video that continuously moves forward with the playback. Video that has already been watched is purged in favor of video that will be played back soon. If this buffer were 60 seconds, then it may keep the last 5 seconds of video and try to keep the next 55 seconds of video in the buffer.   When you rewind, there's a good chance that part of the video has already been replaced with a future part of the video. So the player has to rebuffer the video starting at the new playback location. ",
+            "date": "Answered August 7, 2014",
+            "views": "15",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Harsh Pancholi",
+                    "user_href": "/profile/Harsh-Pancholi-4"
+                },
+                {
+                    "user_id": "Muzammil Usman",
+                    "user_href": "/profile/Muzammil-Usman"
+                },
+                {
+                    "user_id": "Sagar Jhobalia",
+                    "user_href": "/profile/Sagar-Jhobalia"
+                },
+                {
+                    "user_id": "Gary Sheynkman",
+                    "user_href": "/profile/Gary-Sheynkman"
+                },
+                {
+                    "user_id": "Tommy Ng",
+                    "user_href": "/profile/Tommy-Ng-1"
+                }
+            ]
+        }
+    ]
+}

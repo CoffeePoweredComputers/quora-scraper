@@ -1,0 +1,72 @@
+{
+    "title": "My laptop battery is not charging after 60%? - Quora",
+    "tags": [
+        "Linux Advice",
+        "Battery Advice",
+        "Laptop Batteries",
+        "Laptop Advice",
+        "Lenovo",
+        "Battery Life",
+        "Linux",
+        "Batteries",
+        "Laptops"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aman Sh",
+                "href": "/profile/Aman-Sh-2"
+            },
+            "answer_text": "There isn\u2019t a straight \u2018out of the box\u2019 solution to this. However, you can install TLP in Ubuntu. There\u2019s a specific battery threshold setting available for you to tinker with. I\u2019ll try making it as easy to follow as possible. To install TLP on Ubuntu, open your terminal (Ctrl + Alt + T) and paste the below lines one by one: sudo add-apt-repository ppa:linrunner/tlp\u00a0sudo apt-get update\u00a0sudo apt-get install tlp tlp-rdw\u00a0TLP will automatically start upon system startup, but to avoid having to restart the system to get it running for the first time, you can start it (required only the first time) using the following command: sudo tlp start\u00a0The above process is for nearly every laptop out there, for your Lenovo laptop and it\u2019s battery threshold settings, install a few more packages by the following command: sudo apt-get install tp-smapi-dkms acpi-call-tools\u00a0While the default TLP configuration should be enough to provide optimised power saving out of the box, you will have to modify the TLP settings and access some advanced features by editing the TLP configuration file to remove the battery threshold called \"tlp\" located under /etc/default/. To open this file as root with Gedit, use the following command: gksudo gedit /etc/default/tlp\u00a0Enter your password and search (Ctrl + F) for \u201cthreshold\u201d. You\u2019ll get something like this: # Battery charge thresholds (ThinkPad only, tp-smapi or acpi-call kernel module\u00a0# required). Charging starts when the remaining capacity falls below the\u00a0# START_CHARGE_THRESH value and stops when exceeding the STOP_CHARGE_THRESH value.\u00a0# Main / Internal battery (values in %)\u00a0#START_CHARGE_THRESH_BAT0=75\u00a0#STOP_CHARGE_THRESH_BAT0=80\u00a0# Ultrabay / Slice / Replaceable battery (values in %)\u00a0#START_CHARGE_THRESH_BAT1=75\u00a0#STOP_CHARGE_THRESH_BAT1=80\u00a0Don\u2019t worry about it saying \u2018Thinkpad only\u2019, lenovo uses the same settings for nearly every laptop of theirs and so it\u2019ll work on yours as well. Now set your desired setting, save and enjoy your Ubuntu experience. :) ",
+            "date": "Answered September 1, 2016",
+            "views": "107",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ahmed Negm",
+                    "user_href": "/profile/Ahmed-Negm-34"
+                },
+                {
+                    "user_id": "Czarek Si\u0142uszyk",
+                    "user_href": "/profile/Czarek-Si\u0142uszyk"
+                },
+                {
+                    "user_id": "Sudhir Kumar",
+                    "user_href": "/profile/Sudhir-Kumar-58"
+                },
+                {
+                    "user_id": "Paul Orkhipov",
+                    "user_href": "/profile/Paul-Orkhipov"
+                },
+                {
+                    "user_id": "Sarthak Negi",
+                    "user_href": "/profile/Sarthak-Negi-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Brain",
+                "href": "/profile/Brain-73"
+            },
+            "answer_text": "Kudos to the Conservation-mode on your laptop (I\u2019m guessing its a Lenovo laptop). Do not panic because you\u2019ll understand why this is happening. Conservation-mode turned on: Laptop charges only upto 60% (It\u2019s going to show 60% plugged-in). Conservation-mode turned off: Laptop is going to charge to its full capacity as usual. Now how do you disable it? If your laptop is using Lenovo Vantage then open up Vantage and look for System Tools then Battery and then in Battery Settings you should find the Conservation Mode turned on. Or you might have to go to Device then Device Settings and then Battery to look for the Conservation Mode. If your laptop is using Lenovo Settings then open up Settings and look for Energy Management to find the Conservation Mode. If your laptop has OneKey Optimizer preloaded then open up Optimizer and look for Save Power and then Battery Conservation to find the Conservation Mode. Now that you know how to enable or disable this key-feature, do you have to enable it or disable it? When the Conservation Mode is turned on, the battery only charges upto a range of 55%-60%. This particular concept helps in extending your battery life- that\u2019s an Advantage now! (Ever heard a fact that you should not charge your phones to 100%). There\u2019s also a Disadvantage now, the battery discharge rate is a bit faster with this mode turned on compared to usual discharge rate. (I don\u2019t why..) Protip: Keep the power cable plugged in and turn on the conservation mode for an all-round performance (extended battery life and uninterrupted usage). If you are in situation where you cannot have a continuous power supply then turning off the conservation mode and charging it to maximum would be the best option. Turn-on or Turn-off- It\u2019s all about you Buddy! ",
+            "date": "Answered September 18, 2020",
+            "views": "375",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sebastian D'Cruz",
+                    "user_href": "/profile/Sebastian-DCruz-1"
+                },
+                {
+                    "user_id": "Suraj Mani Dubey",
+                    "user_href": "/profile/Suraj-Mani-Dubey"
+                },
+                {
+                    "user_id": "Kpop Trash",
+                    "user_href": "/profile/Kpop-Trash-202"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "title": "Is updating from MySQL 5.1 to MySQL 5.6 worth it? - Quora",
+    "tags": [
+        "MySQL"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bill Karwin",
+                "href": "/profile/Bill-Karwin"
+            },
+            "answer_text": "MySQL 5.1 is end of life as of 2013-12-31, and is now covered by Oracle's \"sustaining support\" policy. Aside from that fact, this is a question that no one can answer for you. We don't know what your project requirements are. MySQL 5.5 and 5.6 and improved performance nicely for multi-threaded workloads. That is, the more clients you have running concurrently, the more you will benefit from the newer software.  But benchmarks have shown that single-threaded performance has suffered slightly in the newer versions. Not much, but a little bit. There are also new features in every new major version of MySQL, like performance_schema, security features, new partitioning options, buffer pool instances, purge thread, optimizer enhancements, etc. Do any of these new features benefit you, or are they irrelevant to your usage? No one can know this about your project but you. The point being that an answer to your question \"is it worth it?\" depends on how you use MySQL. Do you have multiple clients, or just one at a time? Would you use the new features and options?  You should read the manual about what's new: What Is New in MySQL 5.5What Is New in MySQL 5.6And also set up a test instance for your project and run some benchmarks to see if your application on your server hardware is going to benefit from the new version's performance. ",
+            "date": "Answered September 2, 2014",
+            "views": "44",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Feng Qi (\u5947\u5cf0)",
+                    "user_href": "/profile/Feng-Qi-\u5947\u5cf0"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Russell Smith",
+                "href": "/profile/Russell-Smith-1"
+            },
+            "answer_text": "Yes, there are a long list of reasons for each release: 5.6 has some great ones - http://dev.mysql.com/tech-resources/articles/whats-new-in-mysql-5.6.html - interesting to all will be the performance improvements! ",
+            "date": "Answered September 3, 2014",
+            "views": "3",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Charlie Field",
+                    "user_href": "/profile/Charlie-Field-1"
+                },
+                {
+                    "user_id": "Jacob Harper",
+                    "user_href": "/profile/Jacob-Harper-8"
+                },
+                {
+                    "user_id": "Reece Roberts",
+                    "user_href": "/profile/Reece-Roberts-1"
+                },
+                {
+                    "user_id": "Jonathan Parry",
+                    "user_href": "/profile/Jonathan-Parry-3"
+                }
+            ]
+        }
+    ]
+}

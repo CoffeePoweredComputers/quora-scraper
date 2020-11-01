@@ -1,0 +1,45 @@
+{
+    "title": "When can, or when should one apply variable separable form in partial differential equations? - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Natalie Kalos",
+                "href": "/profile/Natalie-Kalos"
+            },
+            "answer_text": "It actually is something you assume and then see if it works - you assume that, say, U(x, y) = X(x)Y(y), so that U(x, y) is just the multiplication of two functions, one only depending on x and one only depending on y. You then apply the partial derivatives and see if you can get all variation of one variable on one side of the equation and the other variables on the other side. So that you can call both sides equal to the same arbitrary constant (which I'll call C). So let's look at an example- the heat equation is the partial differential equation(PDE) Uxx = Ut, where xx is the second partial derivative with respect to x and t means the first partial derivative with respect to t. Applying the first assumption that u is in the form u(x, t) = X(x)T(t), we rewrite (X(x)T(t))xx = (X(x)T(t))t Using apostrophes to denote derivatives and applying partial derivatives, I rewrite X\u2019\u2019(x)T(t) = T\u2019(t)X(x) Divide by X(x)T(t), we get X\u2019\u2019/X = T\u2019/T Ah ha, all the X\u2019s and it's derivatives are on one side and all of T\u2019s and it's derivatives are on the other. But they're different variables - how could that be? If they're both equal to the same constant(doesn't matter what it is, and it turns out for this case there's usually an infinite number leading to the solution being an infinite series), it makes sense because they both don't actually have an x or t variable left. So then we have, where C is an arbitrary constant, X\u2019\u2019/X = T\u2019/T = C That we can do algebra to show that\u2026 X\u2019\u2019 - CX = 0 and T\u2019 - CT = 0 Those are related ordinary differential equations that can be solved to then recover what u(x, t) would be (usually an infinite series of the multiplication of various instances of X(x) and T(t) in this case, since for each possible C, there's a different X(x) and T(t)). If you can get something like those final ODEs via assuming it's a multiplication of functions of a different single variable and then applying the partial derivatives, then you're golden and have shown separation of variables can produce a solution for the PDE. In general, I believe whenever the equation is written such that it has all partial derivatives with respect to one variable on one side and all partial derivatives with respect to the other variable(s) on the other side, like Uxx=Ut, you should try separation of variables for the solution because it'll probably work. Especially if none of the partial derivatives are mixed(as you'll see some examples of) So, then, I believe that separation of variables should apply to the following as well. Notice the pattern here Uxx=Utt (the 1-D wave equation)Uxx + Uyy + Uzz = 0 (Laplace\u2019s equation in 3D)Uxxx = Uyy, Uxxx = Uy, and Uxx + Uyy = Ut",
+            "date": "Answered October 1, 2017",
+            "views": "396",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gabriel Ve Vance",
+                    "user_href": "/profile/Gabriel-Ve-Vance"
+                },
+                {
+                    "user_id": "Arko Chatterjee",
+                    "user_href": "/profile/Arko-Chatterjee-2"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                },
+                {
+                    "user_id": "Mishra Neel",
+                    "user_href": "/profile/Mishra-Neel"
+                },
+                {
+                    "user_id": "Justin Busch",
+                    "user_href": "/profile/Justin-Busch"
+                },
+                {
+                    "user_id": "William Lawyer",
+                    "user_href": "/profile/William-Lawyer-1"
+                }
+            ]
+        }
+    ]
+}

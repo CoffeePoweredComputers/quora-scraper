@@ -1,0 +1,76 @@
+{
+    "title": "My USB drive has 32gb space, but I can only use 1.04gb. How can I fix this? - Quora",
+    "tags": [
+        "Flash Drives",
+        "Computer Advice",
+        "Universal Serial Bus (USB)",
+        "Data Storage",
+        "Tech Support",
+        "Computer Hardware",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "The units are GB (Giga Bytes) not g (acceleration due to gravity) or b (bits). If the drive was originally a working 32 GB drive, then there are two possible scenarios I can think of: There are one or more hidden or system files or folders that are taking up space.The drive has been re-partitioned and what you are seeing is a small partition rather than the whole drive.Try the following (I have done this in Windows 8.1 and 10): Right click on start and select \u201cCommand Prompt (Admin)\u201d.In the command line window, enter the command diskpart and press Enter.Now enter the following command to diskpart:List diskPlug in the USB drive.Now enter the List disk again. You should see there is an extra drive in the list. It will probably appear something like \u201cDisk 2 Online 32 GB \u2026\u201dEnter the command Select disk ? into diskpart where \u2018?\u2019 is replaced with the new disk number. In my example it would be \u20182\u2019.Next enter the command List partition into diskpart. This will show you the partitions on the drive and how big they are.Type exit to close diskpart and again to close the command line window.If there are multiple partitions or just one partition of 1.04 GB, then you will not see the full drive size. Something has repartitioned the drive and has caused your problem. It is possible to correct the partition table on a USB drive, but diskpart is a very powerful tool so I am reluctant to give detailed instructions. If something goes wrong you could wreck your PC. If the partition table needs to be reconfigured, I suggest you seek help in getting the drive corrected. The advantage of a USB drive is that they are highly portable. If the problem is hidden or system files or folders, setting File Explorer to display these files. then you can delete them within File Explorer. There is another alternative. The firmware on the drive has been hacked so that it misreports the size of the drive. It is unusual for the size to be hacked to appear smaller than the actual storage space in the storage chip although this is a possibility. The final alternative is that the drive is at its end of life, and it has marked 30+ GB of space as being no longer working leaving only 1.04 GB still working. The solution is a new USB drive. ",
+            "date": "Answered May 30, 2019",
+            "views": "384",
+            "upvotes": " View Sharers",
+            "upvoters": [
+                {
+                    "user_id": "Rajib Shrestha",
+                    "user_href": "/profile/Rajib-Shrestha-14"
+                },
+                {
+                    "user_id": "Abhishek Menon",
+                    "user_href": "/profile/Abhishek-Menon-54"
+                },
+                {
+                    "user_id": "Marcello Zerboni",
+                    "user_href": "/profile/Marcello-Zerboni"
+                },
+                {
+                    "user_id": "\u0110\u00e0o L\u1ea1p",
+                    "user_href": "/profile/\u0110\u00e0o-L\u1ea1p"
+                },
+                {
+                    "user_id": "John Brown",
+                    "user_href": "/profile/John-Brown-2681"
+                },
+                {
+                    "user_id": "Kenn Omosh",
+                    "user_href": "/profile/Kenn-Omosh"
+                },
+                {
+                    "user_id": "Thomas P. Buehner",
+                    "user_href": "/profile/Thomas-P-Buehner"
+                },
+                {
+                    "user_id": "Lance Minor",
+                    "user_href": "/profile/Lance-Minor-5"
+                },
+                {
+                    "user_id": "Andrey Yermolov",
+                    "user_href": "/profile/Andrey-Yermolov"
+                },
+                {
+                    "user_id": "Oliver Ashton",
+                    "user_href": "/profile/Oliver-Ashton-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Joseph Reinemann",
+                "href": "/profile/Joseph-Reinemann"
+            },
+            "answer_text": "While the other advice here is a good first step, I think you might want to ask yourself where you got this USB drive, and if you got it for what seemed like a really good deal. Inside your drive is a device called a memory controller, whose job is to work out how to store the data sent to it by the computer. This device is pre-programmed with a variety of information on the device it manages, including its capacity. If you know what you're doing, it's not very hard to reprogram that memory controller to report that it has 32gb of storage when in fact it only has 1, then install the whole assembly in a cheap case reading \u201c32gb.\u201d It's a very common scam, particularly on online auction sites or storefronts that offer products from 3rd party vendors. They'll buy cheap low capacity or used flash drives in bulk, reprogram them so that they look like a brand new top of the line product, then put them up for sale at a fraction of the price of a genuine product so that people will buy them thinking they just got a great deal. When the marks receive their flash drives and plug them in, everything seems legit right up until they discover that there's a weirdly low ceiling on how much stuff they can fit. But since they don't necessarily know how easy it is to fake higher capacity memory, they just assume the drive broke rather than complaining about a possible scam. They may even leave a positive review for the experience. ",
+            "date": "Answered May 30, 2019",
+            "views": "97",
+            "upvotes": " View 23 Upvoters "
+        }
+    ]
+}

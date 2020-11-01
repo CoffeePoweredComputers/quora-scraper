@@ -1,0 +1,102 @@
+{
+    "title": "Why are partial differential equations hard to solve? - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Goldsmith",
+                "href": "/profile/David-Goldsmith-14"
+            },
+            "answer_text": "There are several reasons, but _perhaps_ the most fundamental is simply the \"rate\" at which potential complexity increases as one introduces more independent variables into the model: as opposed to ODE's, where only so much can \"go wrong\" (and for which we've largely mapped out what can go wrong, and what's necessary to deal with that, even if such necessities aren't all technically achievable yet) for PDE's, with _each_ new independent variable we add, we simultaneously add _both_ another degree of freedom _and_ (at least) one more constraint--the potential complexity of the solution just skyrockets with each new ind. var.  To describe just one example, consider the difference between an ODE boundary value problem (BVP) and a two ind. var. PDE BVP, i.e., an analogous problem, with just one more ind. var.  For the ODE BVP, all we need to specify (in general) to fix a unique (in principle) solution is the value of the solution at one point per order of the ODE.  On the other hand, for the analogous PDE problem, to achieve the same \"level of solution,\" we need to specify the value of the solution (or some function thereof and/or its partial derivative(s)) over one whole curve, per degree of the PDE!  (Thus, for example, a 2-D, second-order PDE requires specification of the solution over some curve and (some function of) the solution's partial derivatives over another, possibly but not necessarily the same, curve.) Now, on the surface, one's reaction might be: \"well, that's splendid, really, because that's an infinite amount more data we can use to try to find the solution.\"  But significantly outweighing that is the infinitely greater variety of data we might be asked to satisfy: conceptually, and in practice, it's much, MUCH, more difficult to find a solution to match all the data along an arbitrary curve than it is to match the data at a single point!  And for a 3-D PDE, one needs to match data over an entire surface, for a 4-D, throughout an entire 3-volume, etc.  It just gets way \"out of control,\" even for \"small\" numbers of ind. vars.   That's why, in an introductory ODE course, one can rather easily dispense with pretty general \"special cases\" (once the patterns are made clear) and move on to really general problems; whereas in an introductory PDE course, it can be the most we can do to teach simply how to find solutions to the most commonly-encountered PDE's subject to BC's on only the simplest of boundaries.  (This problem of potential boundary complexity and how it complicates both the solution and our means of finding it, can't be overstated: it is arguably the single biggest obstacle to achieving results for PDE's of a generality analogous to such that have been achieved for ODE's.) ",
+            "date": "Updated December 17, 2015",
+            "views": "37",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ray Adams",
+                    "user_href": "/profile/Ray-Adams-17"
+                },
+                {
+                    "user_id": "Sivaji Ganesh S",
+                    "user_href": "/profile/Sivaji-Ganesh-S"
+                },
+                {
+                    "user_id": "Sahil Salem",
+                    "user_href": "/profile/Sahil-Salem"
+                },
+                {
+                    "user_id": "Francesco Mastrangelo",
+                    "user_href": "/profile/Francesco-Mastrangelo"
+                },
+                {
+                    "user_id": "Joshua Dawes",
+                    "user_href": "/profile/Joshua-Dawes"
+                },
+                {
+                    "user_id": "Alice Lovelace",
+                    "user_href": "/profile/Alice-Lovelace"
+                },
+                {
+                    "user_id": "Matthew Hassell",
+                    "user_href": "/profile/Matthew-Hassell"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alice Lovelace",
+                "href": "/profile/Alice-Lovelace"
+            },
+            "answer_text": "Just short addon to previous comprehensive answer. Less technical intuition: first ask, what is it actually, \"a solution\" of DE? It is some function with time as main parameter (t), returning system state information. Having that, you can get system state from any moment in time, future whether past, doesn't matter. It's like a time machine. Differential equations on other hand describe what is NOW, i.e. incremental changes dependent on other changes. If you have current state information, you can \"playback\" the system numerically in time, moment after moment. Note that in this meaning you don't need analytical solution, since DE written out with well given conditions - is already a \"solution\" - a sufficient information on system behavior. By aiming at getting analytical solution of DE, you aspire to an Oracle status, wanting to know everything everywhere in any time, immediately. It's really asking a lot, in fact. For instance, nature with all its computational power, generally doesn't use analytical solution of own states, but operates using DEs - without shortcuts in time, playing things out moment by moment. Analytical solution and DE/integral form are two ways to grasp system behavior, either to understand or control it. For solution forms, the language itself is currently, with overburdened yet clunky calculus-and-all, too rigid and stiff to express the dynamic (meaning: fast, multithreaded, perplexing, intertwined) nature of things. DEs do that easily, and to use them as \"solution\", level of maths requirements drops significantly. Often it's not more than simple arithmetics (executed many-many times). ",
+            "date": "Answered December 17, 2015",
+            "views": "65",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Abdennour Emna",
+                    "user_href": "/profile/Abdennour-Emna"
+                },
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Alex Francis",
+                    "user_href": "/profile/Alex-Francis-38"
+                },
+                {
+                    "user_id": "H. Fatoorehchi",
+                    "user_href": "/profile/H-Fatoorehchi"
+                },
+                {
+                    "user_id": "Omar Elshimi",
+                    "user_href": "/profile/Omar-Elshimi"
+                },
+                {
+                    "user_id": "Paolo Magalini",
+                    "user_href": "/profile/Paolo-Magalini"
+                },
+                {
+                    "user_id": "Arnav Rawat",
+                    "user_href": "/profile/Arnav-Rawat-3"
+                },
+                {
+                    "user_id": "Aakash Shubhankar Bhowmick",
+                    "user_href": "/profile/Aakash-Shubhankar-Bhowmick"
+                },
+                {
+                    "user_id": "Francesco Mastrangelo",
+                    "user_href": "/profile/Francesco-Mastrangelo"
+                },
+                {
+                    "user_id": "Gordon McDonald",
+                    "user_href": "/profile/Gordon-McDonald-5"
+                }
+            ]
+        }
+    ]
+}

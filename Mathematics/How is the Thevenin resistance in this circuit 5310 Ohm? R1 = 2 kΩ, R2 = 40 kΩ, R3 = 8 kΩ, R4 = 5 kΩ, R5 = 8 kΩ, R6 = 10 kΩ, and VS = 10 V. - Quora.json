@@ -1,0 +1,118 @@
+{
+    "title": "How is the Thevenin resistance in this circuit 5310 Ohm? R1 = 2 k\u03a9, R2 = 40 k\u03a9, R3 = 8 k\u03a9, R4 = 5 k\u03a9, R5 = 8 k\u03a9, R6 = 10 k\u03a9, and VS = 10 V. - Quora",
+    "tags": [
+        "Circuits",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bilal Patel",
+                "href": "/profile/Bilal-Patel-6"
+            },
+            "answer_text": "Do you understand how to reduce a circuit down to it\u2019s equivelant resistance? Normally in a reduction problem you will reduce the branches furthest away and work your way down to the source (From the right most, output of the circuit down to the source) so in other words start at R6 and move back to the source. To solve a Thevenin: Start by replacing Vs with a short and then begin reducing the circuit from R1 down to the output. In Thevenin\u2019s you are measuring the resistance from the output terminals, as though you have a multimeter connected to points A and B. In which case to solve for it, you need to reduce the circuit from left to right. In other words from R1 working your way to R6. Your final answer should be a circuit with Vs 10 V and one resistor 5310 R. I have worked it out myself so it is definitely correct. ",
+            "date": "Answered May 24, 2017",
+            "views": "363",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Clifford Dicarlo",
+                    "user_href": "/profile/Clifford-Dicarlo"
+                },
+                {
+                    "user_id": "J. Smith",
+                    "user_href": "/profile/J-Smith-212"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matija Hr\u017ei\u0107",
+                "href": "/profile/Matija-Hr\u017ei\u0107"
+            },
+            "answer_text": "Voltage source = short circuitCurrent source= broken circuit\u2026 So you have voltage source and instead of it you imagine piece of wire with no resistance. So you need to calculate resistance from a to b: On left side you have simple parallel of resistance R1 and R2, calculate resistance R12 which can replace them:R12=R1*R2/(R1+R2)=1.9 kOhmsOk so in the place of R2 resistor you can put resistance R12 which replace parallel of R1 and R2. Ofc. you can delete these brench where is R1 resistor, because his resistance is included in R23 resistor.So now you have circuit with 5 resistors, R6,R5,R4,R3,R12 (in place of R2).You can easily see that our R12 in a place of R2 is in series connection with resistor R3\u2026So easily: R123=R3+R23=8+1.9=9.9 kOhm, R123 represents all that three resistance R1,R2,R3\u2026 So in a place of R3 put resistor R123, and delete resistor R23 (change him with a piece of wire).After you deleted resistance R23 (place of R2) you can easily see that resistor R123 (placed instead of R3) is in parallel with resistor R4 (they are on same potential)\u2026You can easily see that because they are connected between same nods. So we will will calculate equivalent resistance R1234=R123*R4/(R123+R4)=9.9*5/(9.9+5)=3.3 kOhm, after that put resistance R1234 instead of R4 and delete R3.Our R1234 (in place of R4) and R5 are in series so we sum their valuesR12345=R1234+R5=3.3+8=11.3 kOhm, delete R4 and in place of R5 put our resistor R12345\u2026 And you will for the end see that our R12345 is in parallel with R6 resistor\u2026 So our thevenin resistance is Rt=R12345*R6/(R12345+R6)=11.3*10/(11.3+10)=5.3 kOhm=5300 OhmsIf you in your calculation use more decimal digits than me (i only used one) you will get 5311 Ohms.",
+            "date": "Answered May 26, 2017",
+            "views": "220",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Joe Koch",
+                "href": "/profile/Joe-Koch-8"
+            },
+            "answer_text": "To solve this problem, you will need to know how to convert between the two Thevenin equivalent models; 1) voltage source with series resistance and 2) current source with parallel resistance. Recall that the resistance stays the same when you convert between models, but you must use the following to convert between current/voltage sources: [math]I_s * R = V_s[/math] Now to solving. The goal is to reduce the entire ladder to one equivalent resistor. We will start on the left and work to the right. First, convert [math]V_s[/math] to [math]I_s[/math] and put [math]R_1[/math] in parallel instead of in series. This lets you combine [math]R_1[/math] and [math]R_2[/math] in parallel. Next, convert the current source back to a voltage source and [math]R_1[/math] || [math]R_2[/math] (this means [math]R_1[/math] parallel with [math]R_2[/math]) to a resistor in series with [math]R_3[/math]. Combine [math]R_1[/math] || [math]R_2[/math] with [math]R_3[/math]. Repeat this technique to reduce the ladder until you get a final, equivalent resistance. ",
+            "date": "Answered May 25, 2017",
+            "views": "118",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Wilmshurst",
+                "href": "/profile/David-Wilmshurst"
+            },
+            "answer_text": "Not sure why, but it seems that at least two of us cannot see the resistance values when we look at the question. I note that when I look at the preview (or whatever the local dialectic word is) I see... How is the Thevenin resistance in this circuit 5310 Ohm? R1 = 2 k\u03a9, R2 = 40 k\u03a9, R3 = 8 k\u03a9, R4 = 5 k\u03a9, R5 = 8 k\u03a9, R6 = 10 k\u03a9, and VS = 10 V. ",
+            "date": "Answered May 25, 2017",
+            "views": "77",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Joe Wall",
+                "href": "/profile/Joe-Wall-2"
+            },
+            "answer_text": "The equivalent resistance between a and b is found as follows: R1 and R2 are in parallel their equivalent R12 is R1xR2/(R1+r2). Then R12 and R3 are in series so R123 is R12+R3. Now R123 and R4 are in parallel so again R1234 is R123xR4/(R123+R4). Then R1234 and R5 are in series so R12345 is R1234+R5. Finally, R12345 and R6 are in parallel so the total equivalent resistance is R123435xR6/(R12345+R6). Notice that this is independent of VS. And it looks to be about 5310 ohm! ",
+            "date": "Answered May 30, 2017",
+            "views": "73",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Emilio Garavaglia",
+                "href": "/profile/Emilio-Garavaglia"
+            },
+            "answer_text": "Just calculate the voltage on a-b and the current that will flow in a short circuit connecting a with b. You can do this using Thevenin reduction first replacing Vs-R1-R2 with a thevening equivalent, than that equivalent with R3-R4 with a new equivalent, and finally that new equivalent with R5-R6 with the searched one. ",
+            "date": "Answered May 24, 2017",
+            "views": "129",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Peter Scott Coutts",
+                "href": "/profile/Peter-Scott-Coutts"
+            },
+            "answer_text": "In order to even find the Thevenin resistance, you need to have the values of each resistor. ",
+            "date": "Answered May 24, 2017",
+            "views": "23",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ellis Nicholas",
+                    "user_href": "/profile/Ellis-Nicholas"
+                },
+                {
+                    "user_id": "Siddharth Mungekar",
+                    "user_href": "/profile/Siddharth-Mungekar"
+                },
+                {
+                    "user_id": "Alex Rose",
+                    "user_href": "/profile/Alex-Rose-108"
+                },
+                {
+                    "user_id": "David Wilmshurst",
+                    "user_href": "/profile/David-Wilmshurst"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bart Milne",
+                "href": "/profile/Bart-Milne"
+            },
+            "answer_text": "This looks like homework. Compute the ratio of open circuit voltage (voltage between a and b with no load), to short circuit current (current between a and b when a and b are shorted together). That is the Thevenin resistance. ",
+            "date": "Answered May 24, 2017",
+            "views": "112",
+            "upvotes": "0"
+        }
+    ]
+}

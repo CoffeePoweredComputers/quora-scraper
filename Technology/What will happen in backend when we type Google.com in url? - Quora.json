@@ -1,0 +1,212 @@
+{
+    "title": "What will happen in backend when we type Google.com in url? - Quora",
+    "tags": [
+        "Web Backend",
+        "Uniform Resource Locators (URLs)",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Piyush Mishra",
+                "href": "/profile/Piyush-Mishra-111"
+            },
+            "answer_text": "In an extremely rough and simplified sketch, assuming the simplest possible HTTP request, no proxies and IPv4 (this would work similarly for IPv6-only client, but I have yet to see such workstation):  browser checks cache; if requested object is in cache and is fresh, skip to #9browser asks OS for server's IP addressOS makes a DNS lookup and replies the IP address to the browserbrowser opens a TCP connection to server (this step is much more complex with HTTPS)browser sends the HTTP request through TCP connectionbrowser receives HTTP response and may close the TCP connection, or reuse it for another requestbrowser checks if the response is a redirect (3xx result status codes), authorization request (401), error (4xx and 5xx), etc.; these are handled differently from normal responses (2xx)if cacheable, response is stored in cachebrowser decodes response (e.g. if it's gzipped)browser determines what to do with response (e.g. is it a HTML page, is it an image, is it a sound clip?)browser renders response, or offers a download dialog for unrecognized typesAgain, discussion of each of these points have filled countless pages; take this as a starting point. Also, there are many other things happening in parallel to this (processing typed-in address, adding page to browser history, displaying progress to user, notifying plugins and extensions, rendering the page while it's downloading, pipelining, connection tracking for keep-alive, etc.).  Originally was answered on stackoverflow.com And thanks for the A2A ",
+            "date": "Answered November 19, 2015",
+            "views": "41",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dharani Ulaganathan",
+                    "user_href": "/profile/Dharani-Ulaganathan"
+                },
+                {
+                    "user_id": "Akshay Surya",
+                    "user_href": "/profile/Akshay-Surya-7"
+                },
+                {
+                    "user_id": "Abhishek",
+                    "user_href": "/profile/Abhishek-2260"
+                },
+                {
+                    "user_id": "Swa",
+                    "user_href": "/profile/Swa-9"
+                },
+                {
+                    "user_id": "Aarti Modani",
+                    "user_href": "/profile/Aarti-Modani"
+                },
+                {
+                    "user_id": "Andrei V\u00een\u0103toru",
+                    "user_href": "/profile/Andrei-V\u00een\u0103toru"
+                },
+                {
+                    "user_id": "Manju Ramesh",
+                    "user_href": "/profile/Manju-Ramesh"
+                },
+                {
+                    "user_id": "Sambit Sarkar",
+                    "user_href": "/profile/Sambit-Sarkar-11"
+                },
+                {
+                    "user_id": "Animesh Dhokare",
+                    "user_href": "/profile/Animesh-Dhokare"
+                },
+                {
+                    "user_id": "Kunal Arora",
+                    "user_href": "/profile/Kunal-Arora-2"
+                },
+                {
+                    "user_id": "Festina Antony",
+                    "user_href": "/profile/Festina-Antony"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bhaskar Teja",
+                "href": "/profile/Bhaskar-Teja-16"
+            },
+            "answer_text": "What happens when a user searches for a webpage for eg: google :- This is a very layman description of what happens in the back end. I tried not to use any big technical jargons. 1. As soon as we enter the web address name(Google) in our browser (chrome) and press enter the browser will send this web address name i.e(Domain name) to the ISP(internet service provider like airtel , hatway etc) asking for the IP address of the webpage. 2. Since ISP doesnt have the IP address it will in turn send a request to DNS(Domain Name Server) asking for the IP address. DNS will search for the IP address mapped with the webpage and will return that to the ISP who in turn will return it to the browser. 3. Browser now will dial in the IP address of the particular website and this will directly send request from your system to web page server(google server) through your ISP where the google server will send you back the required information to display on your browser.  ",
+            "date": "Answered July 6, 2020",
+            "views": "532",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Anshul Singh",
+                    "user_href": "/profile/Anshul-Singh-282"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhi Yadav",
+                "href": "/profile/Abhi-Yadav-30"
+            },
+            "answer_text": "Let me tell you the entire procedure, that how a browser fetch all these results when an end user queried (type a request in the browser search box). As We( end user) type the domain name to the related website or service, which may reside at other end .The browser take these queries to the DNS which may having the IP address of that server associated with the service or web page .Then the DNS return the IP address of that server to the browser.After getting the IP address of that server, browser sends a request to that related server for the requested service or web pages.After the entire procedure the server provides the related web pages in the form of HTML or other files.Similarly when you type the Google into the browser\u2019s search box it will follow the above procedure to get the appropriate result. ",
+            "date": "Answered April 6, 2017",
+            "views": "27",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anshul Singh",
+                    "user_href": "/profile/Anshul-Singh-282"
+                },
+                {
+                    "user_id": "Saket Mishra",
+                    "user_href": "/profile/Saket-Mishra-40"
+                },
+                {
+                    "user_id": "Akhil Shalil",
+                    "user_href": "/profile/Akhil-Shalil-1"
+                },
+                {
+                    "user_id": "Cassandra Archibald",
+                    "user_href": "/profile/Cassandra-Archibald-1"
+                },
+                {
+                    "user_id": "Sowmya Bysani",
+                    "user_href": "/profile/Sowmya-Bysani-2"
+                },
+                {
+                    "user_id": "Aashish Humagain",
+                    "user_href": "/profile/Aashish-Humagain-4"
+                },
+                {
+                    "user_id": "Vishnu Mohan",
+                    "user_href": "/profile/Vishnu-Mohan-209"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anjali Rajan",
+                "href": "/profile/Anjali-Rajan-17"
+            },
+            "answer_text": "When a pc boots up it obtains its own IP address, IP address of DNS server and Default gateway and subnet block using DHCP (Dynamic Host Control Protocol).To send DNS query for name-to-IP address translation of requested web page, it requires MAC address of Default router, and for this it uses Address Resolution Protocol (ARP) and obtains physical Address of the default gateway router.Then sends DNS query to the DNS server, which replies back with DNS response with the IP address of requested web page, that is cached into the forwarding table.Now the client creates a TCP socket to interact with the web server and sends a tcp sync message. Server replies back with tcp sync ack message.Now we can move ahead with HTTP get message, and the server will respond back with HTTP response.It is an elaborate process which covers most of the network related topics. For detailed explanation of the above and for step by step procedure you can visit my blog A Day in the Life of Web-Page Request. I hope it will provide you with better clarity and understanding of what goes in. ",
+            "date": "Answered November 6, 2017",
+            "views": "47",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nikhilesh Koshti",
+                    "user_href": "/profile/Nikhilesh-Koshti-2"
+                },
+                {
+                    "user_id": "Harjeet Singh Matharu",
+                    "user_href": "/profile/Harjeet-Singh-Matharu"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/N-B-313"
+                },
+                {
+                    "user_id": "Erick Bastidas",
+                    "user_href": "/profile/Erick-Bastidas"
+                },
+                {
+                    "user_id": "Neeli Anusha",
+                    "user_href": "/profile/Neeli-Anusha"
+                },
+                {
+                    "user_id": "Ayoub Merzak",
+                    "user_href": "/profile/Ayoub-Merzak"
+                },
+                {
+                    "user_id": "Renjini Rajan",
+                    "user_href": "/profile/Renjini-Rajan"
+                },
+                {
+                    "user_id": "Ajay Rajan",
+                    "user_href": "/profile/Ajay-Rajan-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vavilapalli Sandeep",
+                "href": "/profile/Vavilapalli-Sandeep"
+            },
+            "answer_text": "I presume, when we type Google it will be sent to the near by DNS server to resolve the FQDN(eg.. Google) to an ip address (systems do not understand domain names, it is for our convenience we created the so called domain names). If the DNS server fails to resolve it then it will send to another near by DNS server which is capable of resolving it. When it met the required DNS server, it will give an ip address of the system which hosts this particular domain. And from now that particular system establishes a session with your system and solves your queries. ",
+            "date": "Answered September 25, 2015",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nilesh Khemkar",
+                    "user_href": "/profile/Nilesh-Khemkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tejwinder Singh",
+                "href": "/profile/Tejwinder-Singh-7"
+            },
+            "answer_text": "Well nothing happens when you just TYPE www.google.com, unless you press Enter or otherwise proceed with some action. So by typing www.google.com , what happens is you get in front of you www.google.com as a text written with cursor blinking at the end. You can watch this for eternity provided you got enough power for the device and enough insanity for yourself. \\U0001f609 ",
+            "date": "Answered November 20, 2015",
+            "views": "17",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "ABy Boy",
+                    "user_href": "/profile/ABy-Boy"
+                },
+                {
+                    "user_id": "Vishnu Sureshkumar",
+                    "user_href": "/profile/Vishnu-Sureshkumar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shiva.j.dhamanwala Shiva.j.dhamanwala",
+                "href": "/profile/Shiva-j-dhamanwala-Shiva-j-dhamanwala"
+            },
+            "answer_text": "To be non technical (Google Website will be accessed by your browser) ",
+            "date": "Answered September 25, 2015",
+            "views": "176",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "title": "How does Google store their data? - Quora",
+    "tags": [
+        "Google",
+        "Data"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vishna Thedon",
+                "href": "/profile/Vishna-Thedon"
+            },
+            "answer_text": "These servers don\u2019t all serve the same purpose, of course. Instead, each server has designated tasks. Let\u2019s look at some of Google\u2019s server types and the tasks they are responsible for carrying out. 1. Web Servers: Google\u2019s web servers are those that will probably resonate most with the common user, as they are responsible for handling the queries that we enter into Google Search. When a user enters a query, web servers carry out the process of interacting with other server types (e.g. index, spelling, ad, etc.) and returning results/serving ads in HTML format. Web servers are the \u2018results-gathering\u2019 servers, if you will. 2. Data-Gathering Servers: Data-gathering servers do the work of collecting and organizing information for Google. These servers \u201cspider\u201d or crawl the internet via Googlebot (Google\u2019s web crawler), searching for newly-added and existing content. These servers have the responsibility of indexing content, updating the index and ranking pages based on Google\u2019s search algorithms. 3. Index Servers: Google\u2019s index servers are where a lot of the \u201cmagic\u201d behind Google Search happens. These servers are responsible for returning lists of document IDs that correspond to \u201cdocuments\u201d (or indexed web pages) wherein the user\u2019s query is present. 4. Document Servers: Document servers store the document version of web page content. Each page has content saved in the form of JPEG files, PDF files, and more, all of which is stored in several servers depending on the type of information. Document servers provide snippets of information to users based on the search terms entered and are capable of returning entire documents, as well.The document IDs returned by index servers correspond to documents housed by these servers. Due to the influx of indexed documents each and every day, these servers require more disk space than others. If we were to answer the question \u2013 Where does Google store its data? \u2013 with one server type, it\u2019d most certainly be the document server. 5. Ad Servers: Ad servers are vital to both Google\u2019s revenue stream and the livelihood of thousands of businesses. These servers are responsible for managing the advertisements that are integral to Google\u2019s AdWords and AdSense services. Web servers interact with these ad servers when deciding which ads (if any) should be displayed for a particular query. 6. Spelling Servers: We didn\u2019t all get A\u2019s in spelling during school and some of us need a little help when searching. If you have ever searched for something in Google and the results came up with the phrase, \u201cDid you mean correct spelling \u201d know that a spelling server was at work. No matter how search terms are entered, spelling servers work to perform the search anyway, taking advantage of the opportunity to learn, correct and better locate what users seek. ",
+            "date": "Answered December 24, 2014",
+            "views": "112",
+            "upvotes": " View 68 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Kuss",
+                    "user_href": "/profile/David-Kuss-1"
+                },
+                {
+                    "user_id": "Narsing",
+                    "user_href": "/profile/Narsing-4"
+                },
+                {
+                    "user_id": "Ionut Radu",
+                    "user_href": "/profile/Ionut-Radu-6"
+                },
+                {
+                    "user_id": "Anurag Mishra",
+                    "user_href": "/profile/Anurag-Mishra-672"
+                },
+                {
+                    "user_id": "Vincent M. Eddow",
+                    "user_href": "/profile/Vincent-M-Eddow"
+                },
+                {
+                    "user_id": "Khairul Islam",
+                    "user_href": "/profile/Khairul-Islam-449"
+                },
+                {
+                    "user_id": "Zhang Wen Han",
+                    "user_href": "/profile/Zhang-Wen-Han"
+                },
+                {
+                    "user_id": "Vrutansh Patel",
+                    "user_href": "/profile/Vrutansh-Patel-1"
+                },
+                {
+                    "user_id": "Ashish Meher",
+                    "user_href": "/profile/Ashish-Meher-6"
+                },
+                {
+                    "user_id": "Janjajanm Nagabhaskarao Jbr",
+                    "user_href": "/profile/Janjajanm-Nagabhaskarao-Jbr"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhiram Iyer",
+                "href": "/profile/Abhiram-Iyer"
+            },
+            "answer_text": "Google and any other company which generates huge amount of data uses cloud to store it's data. Given that the number of users are always volatile, the data generated on a day's scale is also volatile. Therefore Google doesn't use an off the shelf type of storage to store their data.  Purchasing 20 PB of hardware everyday is out of question. Google not only needs a scalable data, but at the same time needs durable one. Google's solution to this: Distributed File System, Big Table and Object Based Storage! Object Based Storage In simple words, it is storing data as objects. An object constitutes of the data, metadata(which is basically information about the data stored, Eg:Size,Type etc), and a global identifier.  Distributed File System A Distributed File System is a way of storing data and reading across different servers, but through the same interface as accessing a local file. Google uses it's own file system based on DFS to solve its problem of scalability by incorporating the object based storage, known as the Google File System.  The GFS consists of 3 layers, The Client: Handles requests for data from applications.The Master: It stores the metadata. Mainly, the names of data files and the location of their chunksThe chunk server: Huge amounts of data, are broken down into chunks of few hundred MBs and stored across servers with replicas for back up. :)This is one cluster of course, with a single master.  Google uses a distributed master system that can handle hundreds of masters, each of which can handle about 100 million files. So a distributed master system on top of a distributed file system.  BigTable For Google's enormous scale, the GFS is not enough. It needs to scale everyday, that's where BigTable comes into play. It solves the problem of scaling petabytes of storage everyday. BigTable stores data in tables. A row is a URL name.A column can be the features of the web pageA cell, contains the data which is time-stamped.  The row ranges are broken up into partitions called tabletsThe tablets are distributed across multiple servers for load balancing.The concept of tablets is what gives enormous power of handling such huge data to BigTable.  So a BigTable with a distributed master system controlling an army of distributed file systems is the secret for the Google's infinite scalability.  In a nutshell, BigTable enables the huge scalabilty of storage for Google. It consists of a cluster management system, which is the more like a distributed master system.At the atomic level, data is stored using the Google file system in millions of chunk servers.  References:1. The GFS,  Page on brown.edu2. The Great Disk Drive in the Sky: How Web giants store big\u2014and we mean big\u2014data 3. Google\u2019s Bigtable Distributed Storage System, Pt. I  PS: Please correct me if I am wrong anywhere. :) ",
+            "date": "Updated December 11, 2014",
+            "views": "543",
+            "upvotes": " View 338 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Krunal Patel",
+                    "user_href": "/profile/Krunal-Patel-15"
+                },
+                {
+                    "user_id": "Dave Kasper",
+                    "user_href": "/profile/Dave-Kasper-1"
+                },
+                {
+                    "user_id": "Shobha Yadav",
+                    "user_href": "/profile/Shobha-Yadav-130"
+                },
+                {
+                    "user_id": "Vinay Kale",
+                    "user_href": "/profile/Vinay-Kale-3"
+                },
+                {
+                    "user_id": "Jay Gopal",
+                    "user_href": "/profile/Jay-Gopal-2"
+                },
+                {
+                    "user_id": "Faisal Rehman",
+                    "user_href": "/profile/Faisal-Rehman-10"
+                },
+                {
+                    "user_id": "Giorgos Makris",
+                    "user_href": "/profile/Giorgos-Makris-10"
+                },
+                {
+                    "user_id": "Narsing",
+                    "user_href": "/profile/Narsing-4"
+                },
+                {
+                    "user_id": "Vivek Anand",
+                    "user_href": "/profile/Vivek-Anand-1335"
+                },
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                }
+            ]
+        }
+    ]
+}

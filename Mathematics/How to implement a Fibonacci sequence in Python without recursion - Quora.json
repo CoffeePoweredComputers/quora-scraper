@@ -1,0 +1,141 @@
+{
+    "title": "How to implement a Fibonacci sequence in Python without recursion - Quora",
+    "tags": [
+        "Fibonacci Sequence",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Darryl Nester",
+                "href": "/profile/Darryl-Nester"
+            },
+            "answer_text": "I can think of three methods: with a loopwith a loop and \u201cmemory\u201dwith the closed-form expression known as Binet\u2019s formula.The first approach is fairly simple (and inefficient, although it\u2019s not as bad as a purely recursive method): def fib(n: int) -> int:\u00a0   if n == 0: return 0\u00a0   value1, value2 = 1, 1\u00a0   while n > 2:\u00a0      value1, value2 = value2, value1+value2\u00a0      n -= 1\u00a0   return value2\u00a0The second approach is demonstrated nicely in Tom McNamara's answer to What is a simple and detailed explanation of how to create a Fibonacci sequence in Python? The third approach could be implemented like this: import math\u00a0SQRT5 = math.sqrt(5)\u00a0PHI = (1+SQRT5)/2\u00a0def fib2(n: int) -> int:\u00a0   return int(PHI ** n / SQRT5 + 0.5)\u00a0How do you implement a Fibonacci sequence in Python without recursion? ",
+            "date": "Answered December 30, 2017",
+            "views": "44",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bandari Abhinaya",
+                    "user_href": "/profile/Bandari-Abhinaya"
+                },
+                {
+                    "user_id": "Anirudh Natarajan",
+                    "user_href": "/profile/Anirudh-Natarajan-4"
+                },
+                {
+                    "user_id": "Sowmya V",
+                    "user_href": "/profile/Sowmya-V-17"
+                },
+                {
+                    "user_id": "Nikhil Pabelkar",
+                    "user_href": "/profile/Nikhil-Pabelkar"
+                },
+                {
+                    "user_id": "Sandy Perlmutter",
+                    "user_href": "/profile/Sandy-Perlmutter"
+                },
+                {
+                    "user_id": "Yebraw Mada",
+                    "user_href": "/profile/Yebraw-Mada"
+                },
+                {
+                    "user_id": "Nabarun Mondal",
+                    "user_href": "/profile/Nabarun-Mondal-3"
+                },
+                {
+                    "user_id": "Mark Thomas",
+                    "user_href": "/profile/Mark-Thomas-23"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Natale Jr.",
+                "href": "/profile/John-Natale-Jr"
+            },
+            "answer_text": "You could write a method that uses a while-loop and input limit that tells the program when to stop calculating numbers. This method starts with 0, and not 1 as I\u2019ve seen some website do for some reason. def fib(limit):\u00a0   counter = 0\u00a0   first = 0\u00a0   secnd = 1\u00a0   shift = 0\u00a0 \u00a0   while counter <= limit:\u00a0      print(first)\u00a0      shift = first + secnd\u00a0      first = secnd\u00a0      secnd = shift\u00a0      counter+=1\u00a0Limit is the nth value of the sequence that you would like to cut off at. So when I run the method with 20 as the input limit I get the following output: 0\u00a01\u00a01\u00a02\u00a03\u00a05\u00a08\u00a013\u00a021\u00a034\u00a055\u00a089\u00a0144\u00a0233\u00a0377\u00a0610\u00a0987\u00a01597\u00a02584\u00a04181\u00a06765\u00a0Thanks to fancy code formatting on Quora you can see the 20th element of the Fibonacci sequence is 6765 according to my method. Assume the first print (0) is the 0th element, not the 1st. Here, lets go make sure I\u2019m correct: Planet Math: n = 20, f(n) = 6765 Wikipedia: F of 20 is 6765 ",
+            "date": "Answered December 30, 2017",
+            "views": "28",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Siddharth Sharma",
+                    "user_href": "/profile/Siddharth-Sharma-275"
+                },
+                {
+                    "user_id": "Pavithu Sweety",
+                    "user_href": "/profile/Pavithu-Sweety"
+                },
+                {
+                    "user_id": "Antony C Mundackal",
+                    "user_href": "/profile/Antony-C-Mundackal"
+                },
+                {
+                    "user_id": "Nabarun Mondal",
+                    "user_href": "/profile/Nabarun-Mondal-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marc Weyl",
+                "href": "/profile/Marc-Weyl"
+            },
+            "answer_text": "import os output_file = open(\"One_Million_Fibonacci.txt\", \"w\") Fibonacci_number=0 prior_Fibonacci_number=1 prior_prior_Fibonacci_number=0 count=1 while (count <= 1000000): prior_prior_Fibonacci_number=prior_Fibonacci_number prior_Fibonacci_number=Fibonacci_number Fibonacci_number=prior_Fibonacci_number+prior_prior_Fibonacci_number output_file.write(str(Fibonacci_number)) output_file.write(\"\\n\") count=count+1 if (count % 1000) == 0: print(str(count)) print(\"Done\") output_file.flush output_file.close The above code produces the first million numbers. It takes a while to run. I am not saying it is the best way, just something quick and dirty. One day I just got to thinking \u2026 what is the 1,000,000th Fibonacci number\u2026when we are in an AGILE meeting and I came up with that. ",
+            "date": "Answered May 12, 2020",
+            "views": "326",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Saad Allali",
+                    "user_href": "/profile/Saad-Allali"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paras Meena",
+                "href": "/profile/Paras-Meena"
+            },
+            "answer_text": "I will tell you a way to get fibonacci sequence without recusion. Well this solution is not a language specific,you can implement it in any language. Pseudo code. Adjust intial values accordingly. Function Fib(Integer N) :\u00a0       Sequence (0) := 1\u00a0       Sequence (1) := 1\u00a0       Loop from i := 2 to N :\u00a0           Sequence (i) := Sequence(i - 1) + Sequence (i - 2)\u00a0       Print Sequence\u00a0\u00a0Fib(5) # gives 1 1 2 3 5 8\u00a0",
+            "date": "Answered December 30, 2017",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nabarun Mondal",
+                    "user_href": "/profile/Nabarun-Mondal-3"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Oan Ahmed",
+                    "user_href": "/profile/Oan-Ahmed"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Oan Ahmed",
+                "href": "/profile/Oan-Ahmed"
+            },
+            "answer_text": "Use a list or tuple initially containing 0 and 1 as two separate integer elements and then get the next element by adding the previous two elements with each other. This way no recursion is required. ",
+            "date": "Answered December 30, 2017",
+            "views": "17",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Honza Sedlo\u0148",
+                "href": "/profile/Honza-Sedlo\u0148"
+            },
+            "answer_text": "This should work perfectly def Fib(n):\u00a0    a,b = 0,1\u00a0    for i in range(n):\u00a0        a,b = b, a+b\u00a0    return a\u00a0",
+            "date": "Answered December 30, 2017",
+            "views": "157",
+            "upvotes": "0"
+        }
+    ]
+}

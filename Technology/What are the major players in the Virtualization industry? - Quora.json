@@ -1,0 +1,110 @@
+{
+    "title": "What are the major players in the Virtualization industry? - Quora",
+    "tags": [
+        "VirtualBox",
+        "VMware (company)",
+        "Virtualization"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Boring",
+                "href": "/profile/Andrew-Boring"
+            },
+            "answer_text": "Off the top of my head.... VMware is the industry leader in virtualizing on Intel platforms. They have a comprehensive suite of software products to managed small and large environments, both for internal IT staff and for service providers offering virtualized cloud infrastructure for their clients. VMware's biggest advantage is that it has been around longer and has developed as an Enterprise-grade virtualization technology.  Xen is an open source hypervisor, commercialized by Xensource and currently developed by Citrix who is trying to provide a similar set of virtualization and cloud management software as VMware. Xen is the hypervisor used by Amazon EC2, and is available in many Linux distributions to use as well. It's biggest feature is the ability to run \"paravirtualized\" guests, where the guest machine runs much faster by making modifications to the guest OS rather than translating everything through the hypervisor. Another advantage is that Xen can run on older processors KVM (kernel virtual machine) is an open source hypervisor based on QEMU and adopted by the Linux community when Citrix bought Xensource and stopped playing nice with the Linux distributions. Red Hat and others gave Citrix the finger and switched to KVM. KVM's biggest advantage is that it runs as a kernel module (similar to a .dll file in Windows), so that it can run on any Linux system and has even been ported to FreeBSD and other operating systems. KVM requires newer processors with hardware-assisted virtualization extensions (Intel-VT and AMD-V) I forgot who originally developed Virtualbox, but they were acquired by Sun Microsystems, and are now part of Oracle. VIrtualbox runs really well as a desktop virtualization platform (similar to Parallels Desktop and VMware Workstation/Fusion). Even though most people run Virtualbox as a desktop system, it works on servers too. It's based on the QEMU emulator, I think. Although Virtualbox seems to be getting regular software updates, I don't see obvious new features regularly, so I don't know if Oracle is giving it any real attention right now. If you've got a Mac and want to run Windows, or have Windows and want to try Linux, or have Linux and corporate policy says to run Outlook, *AND* you want to do it for free, Virtualbox is your answer. It's cross-platform, which is always a winning choice. Parallels developed Virtuozzo, an OS virtualization technology that runs a single operating system and partitions out the memory and runs multiple \"copies\" of the same operating system in each virtualized container. The biggest advantage is the extremely low overhead (less resources used = more virtual machines per hardware). This quickly made it a favorite in the VPS hosting industry. The downside is that you can only run Linux, and not any other operating system. Parallels later developed (acquired? I dunno) their Bare Metal Hypervisor, which is more like VMware/Xen/KVM.   Speaking of Virtuozzo, they released an open source version called OpenVZ, which is can be installed on most major Linux distributions and is the foundation of many low-cost Parallels software competitors (SolusVM, Proxmox, etc). If you like the idea of OpenVZ, FreeBSD has Jails and Solaris has Zones, which work in a very similar manner. There is also LXC (Linux Containers) and Linux Vserver, but I haven't used either one.  Microsoft released HyperV. Um. I'm a Linux guy, so I can't talk much about this other than it's a good option for Windows-only shops.  Market share? That would take some more research. But.... VMware probably has the largest *revenue* based market share, at least in the Enterprise market. They sell an expensive product and have been around for about 13 years. KVM has a potentially huge install base, given that it's available for free with every (newer) Linux server installed right now (Red Hat, Ubuntu, Debian, etc). But there's very little revenue directly tied to it. Xen's market share includes Amazon EC2 and many other cloud providers who prefer Xen over KVM. There are more open source installation than commercial Citrix Xen installations, so sheer install base probably counts more than revenue. Parallels is primarily in the service provider industry (VPS hosting). So whatever that market number is for the big (and long-time) VPS hosting companies. Smaller players now seem to opt for the cheaper alternatives based on OpenVZ. ",
+            "date": "Answered October 30, 2012",
+            "views": "22",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sandeep Kowligi",
+                    "user_href": "/profile/Sandeep-Kowligi"
+                },
+                {
+                    "user_id": "Vizay Soni",
+                    "user_href": "/profile/Vizay-Soni"
+                },
+                {
+                    "user_id": "David Martinez",
+                    "user_href": "/profile/David-Martinez-5"
+                },
+                {
+                    "user_id": "Kevin Xiong",
+                    "user_href": "/profile/Kevin-Xiong"
+                },
+                {
+                    "user_id": "Padraig Moran",
+                    "user_href": "/profile/Padraig-Moran-1"
+                },
+                {
+                    "user_id": "Scott Russell",
+                    "user_href": "/profile/Scott-Russell-1"
+                },
+                {
+                    "user_id": "Derek Glanz",
+                    "user_href": "/profile/Derek-Glanz"
+                },
+                {
+                    "user_id": "Elaine Sun",
+                    "user_href": "/profile/Elaine-Sun"
+                },
+                {
+                    "user_id": "Jerry Young",
+                    "user_href": "/profile/Jerry-Young"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven Higashi",
+                "href": "/profile/Steven-Higashi"
+            },
+            "answer_text": "Adding to Andrew who made a great response, Just to clarify that VMware is not the actual virtualizaton, it's the company and its suite of products.  The actual virtualization is called ESX and ESXi.  ESX was used by an older product called VMView if I remember correctly and the updated version called ESXi was used in version 4 and v5. XEN is split up a bit when it comes to Citrix.  There is the XEN source which is the open sourced version and XEN Server which is the Citrix product.  Xen Server has a lot of key features to make it enterprise ready, especially when it comes to housing MSFT applications.  Amazon does use Xen Source I believe because when checking the version used on their site it states 3.x whih is a Xen Source Version and not XenServer.  As for how customized it is.  I am sure it is to accommodate the AWS feature sets. KVM is known as a Type II Hypervisor, though some would argue that.  Redhat did take them over so you never know what's going to happen next.  It has a lot of throughput capabilities compared to XEN. Virtualbox is a nifty Type II Hypervisor as well (runs on the OS level and not bare metal), but hasn't really gone mainstream.  It seems to have found its place well amongst end users, but doesn't seem to be a product that service providers are actively selling.  It's famous for it's easy to deploy and use desktop application.  I personally like Virtualbox and think it's wonderful, but it's just not something I have seen ISPs package together to sell to end users. HyperV is a product from MSFT and it is their take on virtualization.  There is a tug of war between SFT and the Linux community with MSFT buckling fromt eh pressure of their enterprise clients because they run both Linux and Windows, so in theory, HyperV should support both.  To be honest, they still have a ways to go to really fully support Linux, but if you are running Microsoft specific applications like Sharepoint, Exchange, Azure etc, you ARE better off using HyperV and it is not uncommon for companies to use more than one virtualization option.  I would personally advise it because you are never going to satisfy all the functionality that you want in one virtualization environment.  Just like a car...all will take you from point A to point B, but you may like the comfort in one more than the other...but you may want to drive another car for a different type of trip. Parallels Virtuozzo/OpenVZ, FreeBSD Jail, Solaris Jail (still jails) and LXC are considered \"containers\" and are not virtualization.  The technical term is \"Non VM Based IaaS\".  They have their weaknesses, but are fantastic with supporting SaaS based applications due to its on demand scalability capabilities.    Just search non vm based infrastructure as a service for more info on that.   All of the ones above are pretty standard in the areas of commodity and enterprise, however, there are more and usually they are tied to companies and big solutions.   There is still OracleVM which is based on the Xen Hypervisor, but since Oracle is such a big company, they can push this solution and much like Microsoft, it works fantastic with their products...of which, they have many. IBM's virtualization is called z/VM and it is deployed in a product (orchestration layer) called Smart Cloud which can also deploy XEN and KVM hypervisors as well as HyperV is I remember correctly. There are other hypervisors out there, but I think these are the main ones.   Oracles and IBM are PURE enterprise.  You will never find those solutions in a small business, though they are trying to move into the SMB market lately.   VMWare/ESXi has the market in general for the private cloud.  When talking about public cloud, it's just not feasible.  This is not because it can't be done, but it's just too costly (licenses). The race for public clouds will be between XEN and KVM. ie. Amazon uses Xen and Joyent uses KVM Update:  I didn't realize this, until shortly after I wrote this answer, but Parallels ALSO has created their own Hypervisor.  I don't know much about it yet.  I am not sure if you can operate it under the same infrastructure or not, however, I will find out and update this answer Update 2:  Hitatchi has what I \"think\" is called an embedded hypervisor, because it is run by firmware.  It is Hitatchi hardware specific and ONLY works on their Blade Symphony  models 300, 500 and 2000.  Personally, I don't know anyone using this.  It must be large enterprises.  I've honestly got no clue.  They call their Hypervisor Virtage. ",
+            "date": "Updated June 3, 2013",
+            "views": "21",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Christian Nygaard",
+                    "user_href": "/profile/Christian-Nygaard"
+                },
+                {
+                    "user_id": "Ravi Upadhye",
+                    "user_href": "/profile/Ravi-Upadhye"
+                },
+                {
+                    "user_id": "Scott Russell",
+                    "user_href": "/profile/Scott-Russell-1"
+                },
+                {
+                    "user_id": "Kouji Kun",
+                    "user_href": "/profile/Kouji-Kun"
+                },
+                {
+                    "user_id": "Rohitha Dassanayake",
+                    "user_href": "/profile/Rohitha-Dassanayake"
+                },
+                {
+                    "user_id": "Derek Glanz",
+                    "user_href": "/profile/Derek-Glanz"
+                },
+                {
+                    "user_id": "Mackenzie Davidson",
+                    "user_href": "/profile/Mackenzie-Davidson"
+                },
+                {
+                    "user_id": "Jerry Young",
+                    "user_href": "/profile/Jerry-Young"
+                },
+                {
+                    "user_id": "Nenshad Bardoliwalla",
+                    "user_href": "/profile/Nenshad-Bardoliwalla"
+                },
+                {
+                    "user_id": "Dushyant Bansal",
+                    "user_href": "/profile/Dushyant-Bansal"
+                }
+            ]
+        }
+    ]
+}

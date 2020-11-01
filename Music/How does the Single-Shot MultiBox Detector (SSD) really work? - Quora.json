@@ -1,0 +1,76 @@
+{
+    "title": "How does the Single-Shot MultiBox Detector (SSD) really work? - Quora",
+    "tags": [
+        "Single Shot MultiBox Detector"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mahmood Salah",
+                "href": "/profile/Mahmood-Salah"
+            },
+            "answer_text": " The image above, taken from the paper, illustrates how SSD works. SSD matches objects with default boxes of different aspects (shown as dashed rectangles in the image). Each element of the feature map has a number of default boxes associated with it. Any default box with an IOU of 0.5 or greater with a ground truth box is considered a match. Two of the 8x8 boxes are matched with the cat (shown in blue), and one of the 4x4 boxes is matched with the dog (shown in red). It is important to note that the boxes in the 8x8 feature map are smaller than those in the 4x4 feature map: SSD has six feature maps in total, each responsible for a different scale of objects, allowing it to identify objects across a large range of scales. For each default box in each cell, the network outputs: A probability vector of length c, where c is the number of classes, representing the probabilities of the box containing an object of each class (including a background class indicating that there is no object in the box).An offset vector with 4 entries containing the predicted offsets required to make the default box match the underlying object\u2019s bounding box. They are given in the format (cx, cy, w, h) \u2013 centre x, centre y, and width & height offsets, and are only meaningful if there actually is an object contained in the default box.In the case of the image above, all probability labels would indicate the background class with exception of the three matched boxes (two for the cat, one for the dog). *pic taken from the original paper more here: How we Built and Trained an SSD Multibox Detector in Tensorflow ",
+            "date": "Answered September 10, 2017",
+            "views": "47",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mohammad Haghighat",
+                    "user_href": "/profile/Mohammad-Haghighat"
+                },
+                {
+                    "user_id": "David Phooter",
+                    "user_href": "/profile/David-Phooter"
+                },
+                {
+                    "user_id": "Warren Smith",
+                    "user_href": "/profile/Warren-Smith-26"
+                },
+                {
+                    "user_id": "Faraz Gerrard Jamal",
+                    "user_href": "/profile/Faraz-Gerrard-Jamal"
+                },
+                {
+                    "user_id": "Korlepara Deepika",
+                    "user_href": "/profile/Korlepara-Deepika"
+                },
+                {
+                    "user_id": "Jui Chang",
+                    "user_href": "/profile/Jui-Chang"
+                },
+                {
+                    "user_id": "Sergen \u00c7etin",
+                    "user_href": "/profile/Sergen-\u00c7etin-1"
+                },
+                {
+                    "user_id": "Saad Yousuf",
+                    "user_href": "/profile/Saad-Yousuf-3"
+                },
+                {
+                    "user_id": "J\u00fcrgen Brauer",
+                    "user_href": "/profile/J\u00fcrgen-Brauer"
+                },
+                {
+                    "user_id": "Suvroneil Ghosh",
+                    "user_href": "/profile/Suvroneil-Ghosh"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Helen Murphy",
+                "href": "/profile/Helen-Murphy-15"
+            },
+            "answer_text": "its a check u get monthly social security disability ",
+            "date": "Answered April 15, 2017",
+            "views": "375",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "John Matthew",
+                    "user_href": "/profile/John-Matthew-65"
+                }
+            ]
+        }
+    ]
+}

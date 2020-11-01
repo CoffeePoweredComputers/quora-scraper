@@ -1,0 +1,25 @@
+{
+    "title": "What is 'filtered' in particle filtering? - Quora",
+    "tags": [
+        "Particle Filters",
+        "Water Purifiers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chiang-Heng Alex",
+                "href": "/profile/Chiang-Heng-Alex"
+            },
+            "answer_text": "Assume that from time t=0, system state is recorded at each time in a specific system. Without loss of generality, every state is not totally accurate due to noise or uncertainties, and thus it is not preferable to be used for further applications. There are basically three categories of revising such noisy system states: Smoothing: Estimating a previous state based on system states recorded from time t=0 to the current time.Filtering: Estimating the current state based on system states recorded from time t=0 to the current time.Prediction: Estimating a future state based on system states recorded from time t=0 to the current time.Since particle filter algorithm follows the basic idea of Bayesian filter and Markov assumption (assuming that the current state is only dependent on the previous one), which employ the previous data to estimate the \u201ccurrent state\u201d, it is therefore considered as a \u201cfiltering\u201d problem. Similar approach such as Kalman filter also inherits the above-mentioned ideas. Upon my personal opinion, that the implication of \u201cfiltering\u201d in particle filter is to filter out unreliable states and remains the most probable one as the ultimate estimation of the current state. That\u2019s why in every iteration, particle filter has to re-sample particles. I hope this helps. If you have any further interesting questions, feel free to comment and ask! ",
+            "date": "Updated February 17, 2017",
+            "views": "369",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ahin Banerjee",
+                    "user_href": "/profile/Ahin-Banerjee"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "title": "Why are octa-core processors still uncommon in laptops compared to phones? - Quora",
+    "tags": [
+        "Central Processing Units",
+        "Processors",
+        "Laptops",
+        "Computer Hardware",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "The octacore processors in phones use a technique called ARM big.LITTLE In big.LITTLE some of the cores are significantly less performant than others. That means that you can spend a pile less power driving the lower performance cores, but still have live cores with active tasks for critical functions, and if need arises trivially context switch back to a performant core. Not all the same as multiple cores in an Intel or AMD CPU which are symmetric. (Not talking about Intel\u2019s hyper-threading where you get essentially two virtual cores for every real core; actual cores are symmetric) It\u2019s all about power, in both dimensions. In phones, you need to be able to crank it up to 11 very very rarely but you need to conserve power constantly. In laptops you more frequently do more demanding tasks and managing power consumption is less important. ",
+            "date": "Answered January 28, 2019",
+            "views": "42",
+            "upvotes": " View 114 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Samuel Teague",
+                    "user_href": "/profile/Samuel-Teague-6"
+                },
+                {
+                    "user_id": "Keith Robison",
+                    "user_href": "/profile/Keith-Robison"
+                },
+                {
+                    "user_id": "Agnij Mallick",
+                    "user_href": "/profile/\u0985\u0997\u09cd\u09a8\u09bf\u099c-\u09ae\u09b2\u09cd\u09b2\u09bf\u0995-Agnij-Mallick"
+                },
+                {
+                    "user_id": "Bill Williams",
+                    "user_href": "/profile/Bill-Williams-62"
+                },
+                {
+                    "user_id": "Gary Warren",
+                    "user_href": "/profile/Gary-Warren-37"
+                },
+                {
+                    "user_id": "Nicola Bova",
+                    "user_href": "/profile/Nicola-Bova"
+                },
+                {
+                    "user_id": "Antonio Strickland",
+                    "user_href": "/profile/Antonio-Strickland-2"
+                },
+                {
+                    "user_id": "Nithin Kumar.R",
+                    "user_href": "/profile/Nithin-Kumar-R-2"
+                },
+                {
+                    "user_id": "Awerness Ariya Sk",
+                    "user_href": "/profile/Awerness-Ariya-Sk"
+                },
+                {
+                    "user_id": "Rostislav Kondratenko",
+                    "user_href": "/profile/Rostislav-Kondratenko"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Lloyd Lee",
+                "href": "/profile/Michael-Lloyd-Lee"
+            },
+            "answer_text": "Octa-core processors in phones use a different configuration to laptops and that configuration is arguably less important in laptops. In a Intel/AMD laptop all X cores are identical. In a phone you have X slow cores and Y fast cores. This allows the phone to turn off the fast cores when it doing simple things (such as when it is in sleep mode) and then switch to the fast cores when doing something difficult (like playing a video game). Up until recently a phone could only use one set of cores at a time. As phones have to be on all the time it makes sense for them to use a very aggressive power saving technology. Laptops are not on all the time. Even if you were to select a model that was, getting a notification when the lid is closed is significantly less important than on a phone. A laptop can instead concentrate on providing more raw performance for your buck. ",
+            "date": "Answered January 28, 2019",
+            "views": "241",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Bharadwaj Varma",
+                    "user_href": "/profile/Bharadwaj-Varma-1"
+                }
+            ]
+        }
+    ]
+}

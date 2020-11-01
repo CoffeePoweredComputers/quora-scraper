@@ -1,0 +1,115 @@
+{
+    "title": "Which company's processors are better: AMD or Intel? - Quora",
+    "tags": [
+        "AMD Vs. Intel",
+        "AMD Processors",
+        "Intel Processors",
+        "Advanced Micro Devices (company)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Heikki Kultala",
+                "href": "/profile/Heikki-Kultala-1"
+            },
+            "answer_text": "The most obvious difference is the company that develops and sells them. Intel processors are developed, manufactured and sold by Intel. AMD processors are developed and sold by AMD, and manufactured by TSMC or GlobalFoundries. (AMD pays for TSMC or Globalfoundries for manufacturing them) Technically, it then depends on the actual models of the processors. But lets assume we are comparing AMDs ryzen-series processors with Intels core i-series processors From high-level perspective, the differences are much smaller than the commonalities: The processors cores of both ryzen and core i-series processors are based on the exactly same principles; They run the same x86\u201386 instruction set, and their working principle is the same: They are speculative out-of-order-execution cores with Physical Register File(PRF)-type Out-Of-Order engine. They both also perform simultaneous MultiThreading (SMT). Intel calls it \u201cHyperThreading\u201d, but technically it\u2019s exactly the same thing what AMD\u2019s Ryzen does, \u201cHyperThreading\u201d is only Intels trademarked marketing name for SMT. However, from low-level perspective, they are totally different processors, everything has been designed separately by these two companies. It\u2019s like comparing Honda Civic and Toyota Corolla: They look very similar, they may have the same number of wheels, same type of engine, same type of transmission, most of the controls and meters are in the exactly same place. Still, they are two totally different card that share no common parts, and the small details differences everywhere make them perform slightly differently But lets go to some of the most important actual differences that do have some effect on how they perform: L3 cache On Intel core i-series processors, the L3 cache is share by all the cores on the die. This means 2\u20138 cores on desktop processors and even 28 cores on some very expensive server models. Any of the cores can use the whole cache for itself, and if some core has loaded the data to the L3 cache, others can immediately use it. On AMD ryzen, maximum of 4 cores share the L3 cache; On 8-core desktop model there are two separate 16 MiB L3 caches, and on a 64-core AMD server processors, there are 16 separate 16 MiB L3 caches. Sharing the L3 cache with only 3 cores makes the L3 cache faster for these 4 cores, but if a fifth core wants to access the same data that is in the L3 cache of some other 4 cores, it has to copy the data to its own L3 cache first, and single thread can only benefit from it\u2019s own 16 megabyte L3 cache. For single thread, the L3 cache works like it\u2019s size was only 16 megabytes even though there is total of 256 MiB of L3 in 64-core AMD server processor. On the next \u201czen3\u201d generation which will be released at the end of 2020, AMD will move into architecture where 8 cores will share and L3 cache, instead of the current 4. Monolitic die vs \u201cchiplets (multiple dies in a package, MCM)\u201d All the Intel core i-series CPUs, and AMDs mobile ryzen models consist of a single die. But AMDs zen2-based server and desktop processors (ryzen 3000-series without iGPU) consist of multiple chips in the same package. Using these multiple chips allow AMD to make versions with higher core counts with reasonable cost, even 16 on desktop 3950X and 64 on some servger models, and to use cheaper and older \u201c12nm\u201d or \u201c14nm\u201d manufacturing process for non-performance-critical parts (IO functionality) while producing the CPU cores with the most advanced \u201c7nm\u201d manufacturing process. However, having the memory controller and CPU cores on different dies adds some memory latency, which have slight negative effect on performance. To offset this, AMD uses (multiple) huge 16 MiB L3 caches in these destop and server zen2 models. ",
+            "date": "Answered April 27, 2020",
+            "views": "11",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Amlan Das",
+                    "user_href": "/profile/Amlan-Das-88"
+                },
+                {
+                    "user_id": "Antony Rbe Bermuda",
+                    "user_href": "/profile/Antony-Rbe-Bermuda"
+                },
+                {
+                    "user_id": "SIDDHESH MANE",
+                    "user_href": "/profile/SIDDHESH-MANE-12"
+                },
+                {
+                    "user_id": "Felippe Henrique",
+                    "user_href": "/profile/Felippe-Henrique-1"
+                },
+                {
+                    "user_id": "Swati Chattar",
+                    "user_href": "/profile/Swati-Chattar-1"
+                },
+                {
+                    "user_id": "Geralt",
+                    "user_href": "/profile/Geralt-27"
+                },
+                {
+                    "user_id": "Gokul Ramakrishnan",
+                    "user_href": "/profile/Gokul-Ramakrishnan-12"
+                },
+                {
+                    "user_id": "Mythra Varuna",
+                    "user_href": "/profile/Mythra-Varuna-1"
+                },
+                {
+                    "user_id": "Abin Joseph",
+                    "user_href": "/profile/Abin-Joseph-2"
+                },
+                {
+                    "user_id": "Ph\u1ea1m \u0110\u1ee9c T\u00e0i",
+                    "user_href": "/profile/Ph\u1ea1m-\u0110\u1ee9c-T\u00e0i-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wasim Momin",
+                "href": "/profile/Wasim-Momin-1"
+            },
+            "answer_text": "Lets start with the big player, THE INTEL! Pros - Best known for power saving performance.Less prone to heating.Performs great when it comes about single core performance.Cons - Falls behind AMD when it's about multi - core performance.Intel Processors are expensive as everyone knows.Integrated graphics that comes with the processor wont let you play latest high end games smoothly in high & ultra graphic settings that most of us wanna play. Even in medium settings, they'll lag somewhere.Overclocking is not so easy.Now, Intel's one & only Rival alive, that is AMD (Advanced Micro Devices) Pros - Lightning fast multi - core performance.It handles heavy games as the lightest oneVALUE FOR MONEY. (Hope you understood why I've typed in Capitals. Yes, really they're.)You really ain't be needing separate dedicated graphics card to play latest high end games such as Battlefield 4, Far Cry 3, Assasins Creed: Black Flag, Call of Duty Modern Warfare Series & Black Ops Series. All these games that I've mentioned above will let you play at least @ Medium graphic settings without lag.Overclocking becomes easy due to AMD's Turbo Boost Technology.Cons - AMD CPU's are behind that those of Intel's as Intel is best in single core performance.AMD CPU's are prone to excessive heating. Yeah they are; but ryzen and later processor are much cooler than ever; though cooling equipments for your desktop or laptop CPU aren't that much expensive. So, this shouldn't be taken as a con.More power hungry. 1*1/2 times power is consumed as compared to Intel's core i series.OBJECTIONS READERS MIGHT RAISE - Actually, this is a gamer's review. Yeah I am a heavy gamer man! So the people who are not, they'll love Intel & they should. Because day to day basic tasks are easily handled by Intel processors easily like net surfing, document editing, watching movies etc. opposite to this where high end games, AutoCad functions & other heavy graphical work demand high power supply & high processing power, AMD Processor does it with an ease. it's not that I am a damn crazy fan of AMD.I have a lappy powered by intel's 4th gen core i3 4005U & my friend has his lappy powered by AMD A8 6th gen Quad Core CPU. My friend can play all the games that I've mentioned above in high settings but for sure with AMD Radeon's Dedicated Graphics Card, without any lag. Where my lappy too has Dedicated Graphics, still it freezes sometimes when I try to play all these games. So I am real Jealous on him... ;-D THAT'S ALL BUDDIES. UPVOTE OR DOWNVOTE, IT'S YOUR CHOICE.. Edit : This is the most anticipated edit & was much requested by the readers in comment section. The latest Ryzen series from AMD does not heat as it used to in their old models. So you won\u2019t be needing separate cooling equipment unless you don\u2019t want your device to get warm at all.There was a typo error \u2018without zero lag\u2019. Now it has been corrected to \u2018without any lag\u2019.",
+            "date": "Updated October 10, 2019",
+            "views": "1943",
+            "upvotes": " View 887 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Adhitya Swamyathan",
+                    "user_href": "/profile/Adhitya-Swamyathan"
+                },
+                {
+                    "user_id": "Vihang Parikh",
+                    "user_href": "/profile/Vihang-Parikh"
+                },
+                {
+                    "user_id": "Tarun Sonkar",
+                    "user_href": "/profile/\u0924\u0930\u0941\u0923-\u0938\u094b\u0928\u0915\u0930-Tarun-Sonkar"
+                },
+                {
+                    "user_id": "Comander Green",
+                    "user_href": "/profile/Comander-Green"
+                },
+                {
+                    "user_id": "Just That Guy Gaming",
+                    "user_href": "/profile/Just-That-Guy-Gaming-1"
+                },
+                {
+                    "user_id": "Vinith Gujili Raguraman",
+                    "user_href": "/profile/Vinith-Gujili-Raguraman"
+                },
+                {
+                    "user_id": "Lay Ng",
+                    "user_href": "/profile/Lay-Ng-1"
+                },
+                {
+                    "user_id": "Koosal King",
+                    "user_href": "/profile/Koosal-King"
+                },
+                {
+                    "user_id": "KK Raman",
+                    "user_href": "/profile/KK-Raman-1"
+                },
+                {
+                    "user_id": "Yasser Ryan",
+                    "user_href": "/profile/Yasser-Ryan"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "title": "Is it normal for an older furnace shut off and turn on again in the process of trying to reach the set heat value? - Quora",
+    "tags": [
+        "Natural Gas Furnaces",
+        "Thermostats",
+        "Furnaces",
+        "Heating"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Montgomery",
+                "href": "/profile/Paul-Montgomery-7"
+            },
+            "answer_text": "If I am interpreting you question correctly, no. Here is what I think you are asking about. Your furnace comes on and goes through a heat cycle the following things happen. The oil burner is turned on and starts delivering heat to the heat exchanger.The fan limit switch, located in the heat exchanger reaches the fan on temperature setpoint and turns on the fan that supplies hot air to your home.The burner stays on until the thermostat opens, indicating your home is now at temperature or the upper temperature limit is reached on the fan limit switch.The fan stays on after the burner has shut off until the temperature of the heat exchanger goes below the fan off temperature setpoint.The furnace waits until the next on signal from the thermostat.What I suspect you are trying to describe is a condition where, after the fan shuts off, it comes back on after a few seconds and runs for a few seconds. This is abnormal and can indicate a couple of things that could be wrong with your furnace. The fan is turning back on because the heat exchanger is creeping back up to the fan on setpoint. This is normal and it\u2019s why there are temperature setting for fan on and fan off. The temperature difference is called dead band in control system terminology. Here is a video explaining the working of a fan limit switch.  . So here are the reason why the limit switch might be turning the fan back on. Someone has mis-adjusted the setting on the limit switch to have too small of a dead band.The limit switch is malfunctioning. I\u2019ve seen them start sticking.The heat exchanger is dirty inside and needs cleaning.You can widen the space between the on temperature and the off temperature and cure this right now. It takes only a few minutes. The temperatures are adjustable without any tools. I just did this to my furnace a few months ago, but I also know the inside of the heat exchanger is dirty. The furnace was run for years without the proper filter in place. It\u2019s due for a major cleaning after the heating season is over. If you make this adjustment, you should also know you may be covering up some issues with the furnace like a dirty heat exchanger or sticking fan switch. ",
+            "date": "Answered February 23, 2019",
+            "views": "60",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Gary Beaty",
+                "href": "/profile/Gary-Beaty-1"
+            },
+            "answer_text": "By saying heat value, I\u2019m going to assume you meant temperature, because \u201cHeat Value\u201d is something totally different, and since I\u2019m not interested in writing a course on Thermodynamics in this space, I\u2019ll leave it be. Temperature control systems divide neatly into two kinds: Proportional, and On/Off. Proportional systems are used in industry, but for the most part, they\u2019re too expensive to use in residential settings. An On/Off system simply measures the temperature, and if the measured value is low, turns on a heat source, and if it\u2019s high, turns it off. Problem is, all sources of heat, store heat. So, suppose you turn on a furnace which is heated by some source that\u2019s much above the desired temperature. Let\u2019s say the set temperature is 75, and the internal parts of the furnace have reached several hundred degrees - frequently hot enough to emit light. The room temperature eventually reaches the setpoint, and the furnace turns off. Parts of the heat source are still very hot, so the room temperature will tend to increase until the furnace has cooled to room temperature. In control theory, this is called overshoot, and it's generally a bad thing. You could vent the excess heat outdoors, but that would be a tragic waste. So, what some more sophisticated temperature controllers (thermostats) will do is estimate the first derivative of the temperature (rate of rise) and project the future temperature. Then, it can turn off the furnace/heat source when it calculates the residual heat will make it to the setpoint. Various vendors have various names for the function, one vendor calls it \u201cPreact\u201d. This type of control algorithm can have two goals. Either \u201cquickest time to setpoint and damn the overshoot\u201d or \u201cminimize the overshoot\u201d which will result in slower time to setpoint. Since the \u201cminimize the overshoot\u201d processes are generally conservative, what you get is several on/off cycles of the heat source. Nowadays, with electronic hardware such things are common, and work very well. I\u2019ve seen a $25 electronic thermostat that could execute Preact very nicely including learning all the coefficients on its own. In \u2018the olden days\u2019 with less sophisticated hardware, you do things like arranging for some of the outlet heated air from a duct to blow directly on the thermostat. (You\u2019d be surprised how well that works) In practice, you\u2019d see an outlet near a thermostat. So, with all this as preamble, is it normal, YES. Orig Question: Is it normal for an older furnace shut off and turn on again in the process of trying to reach the set heat value? ",
+            "date": "Answered February 23, 2019",
+            "views": "143",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Ward",
+                    "user_href": "/profile/Andrew-Ward-25"
+                },
+                {
+                    "user_id": "Jackie Kazil",
+                    "user_href": "/profile/Jackie-Kazil"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "title": "How to figure out if someone else is connecting to your Bluetooth - Quora",
+    "tags": [
+        "Bluetooth Headsets",
+        "Bluetooth Devices",
+        "Bluetooth",
+        "Wireless Technology",
+        "Computer Networking",
+        "Computers",
+        "Technology",
+        "Dating and Relationships",
+        "Interpersonal Interaction"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Weintraub",
+                "href": "/profile/John-Weintraub"
+            },
+            "answer_text": "I haven't read the other answers, so I may be repeating what someone else has written. I don't think that you can determine if someone else is attached to your Bluetooth. However, it is possible to determine if something else is attached to your Bluetooth device. I can't tell you what's true for Windows or the macOS, but I can tell you about Linux and Android. However, I will focus on Linux, specifically Ubuntu Linux, though what's true for Ubuntu should be true for virtually all distros of Linux. Part of the problem is that Bluetooth isn't very secure. Its sole \u201csecurity\u201d feature is a numerical pairing technique, which is pretty easy to overcome. What one can do is to not use pairing and \u201cforce\" Bluetooth to recognize the device. I don't do it often, so I can't explain how one does so, but like most things Linux, it either works spectacularly, or fails spectacularly. No connecting \u2018sort of'. It works, or it doesn't. Moreover, devices are identified by their MAC address. That's the Media Access Control; one part of the second lowest layer of the OSI network stack model. That model's layers are, from top to bottom, Application, Presentation, Session, Transport, Network, Datalink, Physical. And the Datalink layer subdivides into Logical Link Control (LLC) and Media Access Control (MAC). All networkable devices have a MAC address and it's the MAC address that Bluetooth uses to attach devices to itself. Apple Corp manufactured networking devices should all have MAC addresses, but please don't confuse MAC addresses with Mac computers and other Apple Corp devices. The MAC address in Linux can be discovered using the Bluetooth Manager, which also allows device attachment, although there are other apps that manage devices, adapters, or both. These include BlueWho, BlueProximity, and a couple of others. (My computer took it upon itself to uninstall most of my Bluetooth software, in one of its rare, brainless, Microsoft moments. That sucks, oh well). So you can use BlueProximity to determine what Bluetooth devices are nearby, and Bluetooth Manager to determine which devices are attached to your Bluetooth adapter(s). Do be aware that the Bluetooth adapter that you get with (good quality) wireless keyboards and mice will, if all goes well, automatically connect the devices it's pre-programmed to accept; but it won't accept other devices not manufactured by that company. It does this for security reasons. You wouldn't want unwanted devices to use the manufacturer-specific Bluetooth adapter to become a means for intrusive Bluetooth devices to sneak-attach themselves to your computer. So you may need to have two Bluetooth adapters, one manufacturer-specific/device-specific, and the other one being generic, to attach speakers, smartphones, etc. The Bluetooth adapters can be \u2018seen\u2019 in the Bluetooth Adapter software application, and because I use Ubuntu Mate, the Bluetooth Adapter and Manager apps will be found in the Control Center. The specific application you would use to discover for yourself what devices are attached to your Bluetooth adapter(s) is Bluetooth Manager. It should list what devices are attached, and to which specific adapter. Then it becomes a matter of detective-work to figure out which devices are yours, and which ones aren't. Also, just as an aside, not many Bluetooth adapters are Linux compatible. If you're buying one, and it fails to mention Linux, it isn't Linux-compatible. No compromise on the point. As for Android, it has better, built-in tools, but I strongly urge people to make sure that their mobile phone is not visible to other devices except when you are trying to connect to a PC or a laptop or tablet computer. Frankly, Linux doesn't have Bluetooth working very well, and I think that is because a lot of Linux developers have little use for or faith in Bluetooth. For file transfer between my Android phone and my Linux computers, I use FOSS software called KDE Connect, which uses WiFi instead; WiFi uses Ethernet and is, with the right additions, considerably more secure than Bluetooth. I'm not very familiar with the frontend of the macOS, so I can't help with that, and as for Windows, I stopped using it and had switched to Linux long ago, well before Bluetooth was really useable on Windows. Sorry about that. I hope that this information will help. Thanks for the A2A ",
+            "date": "Answered February 14, 2020",
+            "views": "179",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Marc Bloemers",
+                    "user_href": "/profile/Marc-Bloemers"
+                },
+                {
+                    "user_id": "Jim Moore",
+                    "user_href": "/profile/Jim-Moore-122"
+                },
+                {
+                    "user_id": "Emily Yeh",
+                    "user_href": "/profile/Emily-Yeh-24"
+                },
+                {
+                    "user_id": "J Money",
+                    "user_href": "/profile/J-Money-286"
+                },
+                {
+                    "user_id": "James Ferris",
+                    "user_href": "/profile/James-Ferris-3"
+                },
+                {
+                    "user_id": "D Tallz",
+                    "user_href": "/profile/D-Tallz"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/SEXY-K-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bradley Ross",
+                "href": "/profile/Bradley-Ross-25"
+            },
+            "answer_text": "If you have a Apple computer with MacOS, the first things to look at are the Bluetooth system preferences panel and the System Report panel under About This Mac. Bluetooth system preferences will tell you if your computer is discoverable by Bluetooth devices and the name it uses to connect to Bluetooth devices. It will also provide a list of bluetooth devices to which you can connect, including which you are currently connected to. System Report will list Bluetooth devices which you have been connected to unless you hit \u201cforget this device\u201d. Now hacking somebody else\u2019s Bluetooth headset, microphone, earphones, keyboard is pretty simple if the device is discoverable since you will simply use the system preferences panel to connect. However, forcing a connection to your tablet, computer, smartphone is harder because the system connecting to the Bluetooth device normally has to initiate the connection. However, the system preference panel will also indicate anything currently connected to your system. You can check the system preferences panel and the System Report to look for strange entries. Some Bluetooth items use different colors to show that they are currently paired. For example, I have a Bluetooth audio transmitter that will send information to Bluetooth microphones, speakers, headsets, etc. If the light on the transmitter shows that it is paired and I\u2019m not picking it up on anything, it means that something else is connecting to it. I\u2019m not sure if anything can pair with the transmitter unless I press a button on the transmitter. Now if two devices are paired, I don\u2019t believe that it is practical to intercept information or pair to another device that is already paired. There is some encryption in the protocols. Remember that Bluetooth is very short range. For somebody to be close enough to force pairing on a device, they would probably be close enough to use a microphone with a parabolic reflector similar to what is used by birdwatchers. If you are worried, you can also turn off all Bluetooth devices and disable Bluetooth and WiFi on the computing devices. You could also devise specialized hardware that would detect Bluetooth and WiFi at a longer distance. Such devices are often used to insure that people have not installed WiFi access points without permission. I\u2019m sure that there are similar devices for Bluetooth, although the need would not be as great. By the way, some wireless keyboards and mice that use dongles instead of the computers built in Bluetooth do not implement the full set of Bluetooth protocols. The main impact that I have seen in the past has been that changes in operating systems or new versions have often prevented connections, especially if you are attempting to use an \u201cofficial\u201d set of protocols. I wouldn\u2019t be surprised if the security protocols are also unimplemented in this case. ",
+            "date": "Answered August 18, 2020",
+            "views": "4",
+            "upvotes": " Answer requested by Marc Bloemers"
+        }
+    ]
+}

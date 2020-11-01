@@ -1,0 +1,61 @@
+{
+    "title": "What are the steps to writing a VST plugin? - Quora",
+    "tags": [
+        "Virtual Studio Technology",
+        "Music Production Software and Apps"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Patrice Tarabbia",
+                "href": "/profile/Patrice-Tarabbia"
+            },
+            "answer_text": "Assuming you want to develop a VST for commercial purposes, and that you are starting from scratch: Step 1: The Idea. Probably the hardest part.... Get an idea for a new, original, unique plugin. Then check if such a plugin already exists (chances are that it does....)... and repeat until you come up with something original. The world doesn't need another EQ or compressor plugin. Step 2: PrototypingDevelop and test the core DSP algorithms that your plugin will use. You can use public domain algorithms from www.musicdsp.org, develop your own, or team up with some DSP experts to develop algorithms to your specifications. You will gain a lot of time by using a visual environment like synthedit, synthmaker or Reaktor, where you can assemble blocks graphically without having to write code. The first 2 can generate a complete vst plugin  for you, so it is worth considering, depending on your goal. However, commercial plugins developed with these tools are generally frowned upon by users. Step 3: UI designMock up the user interface. At this point you are thinking not only about looks and graphics, but also (and most importantly) about user workflow and interaction. Basically, how do you access the plugin features in a way that makes sense from a music making perspective ? Step 4: DevelopmentDevelop your UI and integrate it with your prototype code. Most plugins have a enormous amount of code for the UI, typically 90% UI code vs. 10% DSP code.You will gain a lot of time by using some kind of framework, like Juce or IPlug. Step 5: UI refinementGet a graphic artist to redesign your user interface, and integrate the changes. Step 6: OptimizationAt this stage you have a working version of your plugin but it is probably quite slow. Use a profiler to identify where the main performance bottleneck is, optimize, and repeat.  Step 7: TestingTest the plugin in as many configurations as you can. As the time of this writing you typically want to support 4 versions of OSX (Snow Leopard, Lion, Mountain Lion, Mavericks), and 2 versions of Windows (7.1, 8.1). On these systems you need 32 and 64bits versions of your plugin, tested on as many hosts as you can (typically, Ableton Live, Cubase, Reaper, ....) For commercial projects it is not uncommon to have a team with dozens of testers, spending months on this phase and the next one. Step 8: Bugs fixing and enhancements.Fix bugs... no need to say more...Very often, during the previous step, testers will come up with very interesting suggestions for improving the plugin. Depending on your schedule you might want to implement them, or keep track of them for future updates.Any time you change something in the code.... go to step 4. Step 9: Sound designCreate content for your plugin. You can do that yourself or team up with sound designers. Step 10a: Copy protectionAssuming your plugin is a commercial one, you will want some kind of copy protection. You can use an off-the-shelf product like PACE or E-Licenser, or come up with your own.  Step 10b: Release !Distribute your plugin to the world... Step 10c: Cry....A cracked version of your plugin will be available on pirate sites the next day after your initial release. Just get ready for this. Step 11: Users support.No matter how much time you spent on testing and bug fixes, users will find bugs. Expect to spend a significant amount of time answering questions. And there you have it.... depending on the complexity, between 6 months and 2 years of your life... ",
+            "date": "Answered March 26, 2014",
+            "views": "53",
+            "upvotes": " View 36 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Eden Maestro",
+                    "user_href": "/profile/Eden-Maestro"
+                },
+                {
+                    "user_id": "Th\u00e9o Cote",
+                    "user_href": "/profile/Th\u00e9o-Cote"
+                },
+                {
+                    "user_id": "Rafael Jonah",
+                    "user_href": "/profile/Rafael-Jonah"
+                },
+                {
+                    "user_id": "Sudharsan Zenith",
+                    "user_href": "/profile/Sudharsan-Zenith"
+                },
+                {
+                    "user_id": "Jose Manuel Ruiz",
+                    "user_href": "/profile/Jose-Manuel-Ruiz-3"
+                },
+                {
+                    "user_id": "Jeremy Burns",
+                    "user_href": "/profile/Jeremy-Burns-46"
+                },
+                {
+                    "user_id": "Djalma Bina",
+                    "user_href": "/profile/Djalma-Bina"
+                },
+                {
+                    "user_id": "Kelly Fisher",
+                    "user_href": "/profile/Kelly-Fisher-131"
+                },
+                {
+                    "user_id": "Prime Kien",
+                    "user_href": "/profile/Prime-Kien"
+                },
+                {
+                    "user_id": "Anders Ekl\u00f6v",
+                    "user_href": "/profile/Anders-Ekl\u00f6v"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+{
+    "title": "B, G, Y, Q, J and O are sitting in a row. J and O are in the centre. B and G are at the ends. Y is sitting to the left of B. Who is to the right of G? - Quora",
+    "tags": [
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kostyantyn Mazur",
+                "href": "/profile/Kostyantyn-Mazur"
+            },
+            "answer_text": "We have, from J and O in the centre and B and G at the ends, the row being (left to right, slash meaning \u201cone of the two\u201d): B/G, ?, J/O, O/J, ?, G/B The two ?s can only be the other two letters, Q and Y; thus, the row is: B/G, Q/Y, J/O, O/J, Y/Q, G/B Y is to the left of B. Thus, B cannot be at the left end, leaving: G, Q/Y, J/O, O/J, Y/Q, B Now, there are two possible interpretations of \u201cto the right\u201d. It could mean: a) \u201cin the next seat to the right\u201d, or b) \u201cin the next seat to the right, at the right end, or anything in between\u201d. In either case, \u201cto the left\u201d should mean the reverse of \u201cto the right\u201d. With interpretation a), Y is in the next-to-rightmost seat: G, Q, J/O, O/J, Y, B Thus, Q is to the right of G. With interpretation b), everyone else (B, Y, Q, J, and O) is to the right of G. ",
+            "date": "Answered July 19, 2017",
+            "views": "2",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael J\u00f8rgensen",
+                    "user_href": "/profile/Michael-J\u00f8rgensen-2"
+                },
+                {
+                    "user_id": "Lucas L\u00f3pez Santib\u00e1\u00f1ez",
+                    "user_href": "/profile/Lucas-L\u00f3pez-Santib\u00e1\u00f1ez"
+                },
+                {
+                    "user_id": "Grace O'Brien",
+                    "user_href": "/profile/Grace-OBrien-26"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vladislav Zorov",
+                "href": "/profile/Vladislav-Zorov"
+            },
+            "answer_text": "Here\u2019s a Prolog program that kind of just encodes what you asked: valid_seating(Seats) :-\u00a0    length(Seats,6),\u00a0    centre(j,Seats),\u00a0    centre(o,Seats),\u00a0    at_end(b,Seats),\u00a0    at_end(g,Seats),\u00a0    to_left(y,b,Seats),\u00a0    anywhere(q,Seats).\u00a0\u00a0centre(X, [_,_,X,_,_,_]).\u00a0centre(X, [_,_,_,X,_,_]).\u00a0\u00a0at_end(X, [X,_,_,_,_,_]).\u00a0at_end(X, [_,_,_,_,_,X]).\u00a0\u00a0to_left(X, Y, Seats) :-\u00a0    append([_,[X,Y],_], Seats).\u00a0\u00a0to_right(X, Y, Seats) :-\u00a0    append([_,[Y,X],_], Seats).\u00a0\u00a0anywhere(X, Seats) :-\u00a0    member(X, Seats).\u00a0You can run it on SWISH -- SWI-Prolog for SHaring; just hit the blue button in the lower-right corner. It gives two answers, both of them Q: ?- valid_seating(Seats),to_right(Who,g,Seats).\u00a0Who = q,\u00a0Seats = [g, q, j, o, y, b] ;\u00a0Who = q,\u00a0Seats = [g, q, o, j, y, b]\u00a0Thanks to Anne Ogborn for this beautiful example. I mean, the code even looks like people sitting in seats! How cool is that?! ",
+            "date": "Answered July 22, 2017",
+            "views": "17",
+            "upvotes": " View 34 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Paulina Jonu\u0161ait\u0117",
+                    "user_href": "/profile/Paulina-Jonu\u0161ait\u0117"
+                },
+                {
+                    "user_id": "Dyson Ye",
+                    "user_href": "/profile/Dyson-Ye"
+                },
+                {
+                    "user_id": "Anas Limouri",
+                    "user_href": "/profile/Anas-Limouri-1"
+                },
+                {
+                    "user_id": "Stoycho Ganev",
+                    "user_href": "/profile/Stoycho-Ganev-1"
+                },
+                {
+                    "user_id": "Pratyush Adhikary",
+                    "user_href": "/profile/Pratyush-Adhikary-1"
+                },
+                {
+                    "user_id": "Stan Marian",
+                    "user_href": "/profile/Stan-Marian-2"
+                },
+                {
+                    "user_id": "Evance Oguma",
+                    "user_href": "/profile/Evance-Oguma"
+                },
+                {
+                    "user_id": "Theodore Michailidis",
+                    "user_href": "/profile/Theodore-Michailidis"
+                },
+                {
+                    "user_id": "Barry Rountree",
+                    "user_href": "/profile/Barry-Rountree"
+                },
+                {
+                    "user_id": "Rezu Munna",
+                    "user_href": "/profile/Rezu-Munna"
+                }
+            ]
+        }
+    ]
+}

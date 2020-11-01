@@ -1,0 +1,114 @@
+{
+    "title": "Is there a solution for x+y=xy=2? - Quora",
+    "tags": [
+        "Algebraic Equations",
+        "Arithmetic",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Emad Noujeim",
+                "href": "/profile/Emad-Noujeim"
+            },
+            "answer_text": "This question or problem has the following complex valued solution : [math]x = 1+i[/math] and [math]y = 1-i [/math] or : [math]x = 1-i[/math] and [math]y = 1+i[/math] In fact : [math]\\displaystyle (1+i)(1-i) = 1- i^2 = 1+1 = 2[/math] , and [math] \\displaystyle 1+ i + 1 - i = 2[/math] The answer above can be verified with Mathematica by typing : Reduce[x + y == x y == 2 , {x, y}, Reals]\u00a0which gives the result : False\u00a0which means there are no real solutions . A contour plot shows also that there are no (real) solutions :  However by typing : Reduce[x + y == x y == 2 , {x, y}]\u00a0the required complex valued solution is obtained . The Mathematica built-in function FindInstance[] can also be used to obtain and verify the correct answer . Another or an equivalent way to solve this problem is to do some algebraic manipulations in order to get the equation : [math]\\displaystyle \\frac{2}{x} = 2 - x[/math] or [math]x^2\u20132 x +2 = 0[/math] , then find the complex valued solutions for [math]x[/math] , and then obtain the same result as above for [math]x[/math] and [math]y[/math] . ",
+            "date": "Updated October 17, 2016",
+            "views": "42",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Steve Clarke",
+                    "user_href": "/profile/Steve-Clarke-84"
+                },
+                {
+                    "user_id": "Kimani Nduta",
+                    "user_href": "/profile/Kimani-Nduta-1"
+                },
+                {
+                    "user_id": "William Gerst",
+                    "user_href": "/profile/William-Gerst"
+                },
+                {
+                    "user_id": "Jarrod Maloney",
+                    "user_href": "/profile/Jarrod-Maloney"
+                },
+                {
+                    "user_id": "Benjy Wiener",
+                    "user_href": "/profile/Benjy-Wiener"
+                },
+                {
+                    "user_id": "Nishtha Srivastava",
+                    "user_href": "/profile/Nishtha-Srivastava-16"
+                },
+                {
+                    "user_id": "Roger Johnson",
+                    "user_href": "/profile/Roger-Johnson-138"
+                },
+                {
+                    "user_id": "Ashish Shivkhand",
+                    "user_href": "/profile/Ashish-Shivkhand"
+                },
+                {
+                    "user_id": "Mike Wazowski",
+                    "user_href": "/profile/Mike-Wazowski-59"
+                },
+                {
+                    "user_id": "Giovanni Sartori",
+                    "user_href": "/profile/Giovanni-Sartori"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Trevor Squires",
+                "href": "/profile/Trevor-Squires"
+            },
+            "answer_text": "Is there a solution for x+y = xy = 2? I\u2019m going to assume you meant a real solution. And while I\u2019m sure there will be many people to put their own mathematical spin on this, let\u2019s show one that you can do at home. We have that  and  Solving for , ,  Plotting these two on Desmos Graphing Calculator gives us the following graph  And there looks to be exactly  solutions to your equations. Sorry mate. Cheers ",
+            "date": "Answered October 7, 2016",
+            "views": "29",
+            "upvotes": " View 27 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Agneshka Rohra",
+                    "user_href": "/profile/Agneshka-Rohra"
+                },
+                {
+                    "user_id": "Steve Clarke",
+                    "user_href": "/profile/Steve-Clarke-84"
+                },
+                {
+                    "user_id": "Andrei Streche",
+                    "user_href": "/profile/Andrei-Streche-1"
+                },
+                {
+                    "user_id": "Tolu Onafowokan",
+                    "user_href": "/profile/Tolu-Onafowokan-1"
+                },
+                {
+                    "user_id": "Eric Bezaire",
+                    "user_href": "/profile/Eric-Bezaire"
+                },
+                {
+                    "user_id": "David Zhang",
+                    "user_href": "/profile/David-Zhang-265"
+                },
+                {
+                    "user_id": "Jarrod Maloney",
+                    "user_href": "/profile/Jarrod-Maloney"
+                },
+                {
+                    "user_id": "Amit Levy",
+                    "user_href": "/profile/Amit-Levy-4"
+                },
+                {
+                    "user_id": "Kannan",
+                    "user_href": "/profile/Kannan-108"
+                },
+                {
+                    "user_id": "Umar Tahir",
+                    "user_href": "/profile/Umar-Tahir"
+                }
+            ]
+        }
+    ]
+}

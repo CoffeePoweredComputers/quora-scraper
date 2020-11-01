@@ -1,0 +1,109 @@
+{
+    "title": "Is there any advantage of 5-pin MIDI over USB MIDI for a synthesizer? - Quora",
+    "tags": [
+        "MIDI Controllers",
+        "Synthesizers",
+        "MIDI",
+        "Audio and Acoustical Engineering",
+        "Keyboards (instrument)",
+        "Electronic Music"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frank Mangera",
+                "href": "/profile/Frank-Mangera"
+            },
+            "answer_text": "Yes there definitely is. I use a laptop rig on gigs, with a midi controller that has both USB and 5-pin midi. I used to use the USB port exclusively because it\u2019s way more convenient \u2013 a single cable that supplies power to the keyboard, as well as two-way midi communication (though I rarely needed midi in both directions \u2013 midi just from the keyboard to my laptop rig works for gigs). One night I played a gig on a large stage, and my laptop was behind me as usual but much farther away. No problem, I carry a USB extension cable. That\u2019s when I discovered that USB has a limit with the cable length! My rig did not work with the extension. That night I wound up bringing my laptop closer to me, sitting on the drum riser, and using my normal USB cable. Our bandleader didn\u2019t like the visual but it was the only way to get through the gig. A while later our band played at a festival opening up for a major star. This was a plum gig and one I couldn\u2019t afford to have my gear screw up on. It was also a huge stage, and my laptop would be very far away. I got myself a 35-foot long midi cable and used that and it worked perfectly. Now I use 5-pin midi exclusively for my touring rig. MIDI is old tech, but it\u2019s mature tech, while USB can still have issues with inconsistent quality of driver software and possible incompatibilities with operating systems \u2013 not to mention a much shorter maximum cable length! In a controlled environment like a production studio, using USB midi is fine if you spend the time to get your system together and use it enough to know that it works, and are smart about when you upgrade the various components like OSes, midi software drivers, DAWs, etc. For live gigs, I now prefer the peace of mind of old-fashioned 5-pin midi. ",
+            "date": "Answered July 12, 2019",
+            "views": "3",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Etornam Afutu",
+                    "user_href": "/profile/Etornam-Afutu"
+                },
+                {
+                    "user_id": "Pablo Schaaf",
+                    "user_href": "/profile/Pablo-Schaaf"
+                },
+                {
+                    "user_id": "Brian Fields",
+                    "user_href": "/profile/Brian-Fields-3"
+                },
+                {
+                    "user_id": "Tyler Gutherman",
+                    "user_href": "/profile/Tyler-Gutherman"
+                },
+                {
+                    "user_id": "Daisy Hudson",
+                    "user_href": "/profile/Daisy-Hudson-3"
+                },
+                {
+                    "user_id": "David Palmer",
+                    "user_href": "/profile/David-Palmer-49"
+                },
+                {
+                    "user_id": "Paul Wright",
+                    "user_href": "/profile/Paul-Wright-165"
+                },
+                {
+                    "user_id": "Trevor Lien",
+                    "user_href": "/profile/Trevor-Lien"
+                },
+                {
+                    "user_id": "Jean Prate",
+                    "user_href": "/profile/Jean-Prate"
+                },
+                {
+                    "user_id": "Jesse Burch",
+                    "user_href": "/profile/Jesse-Burch-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Philippe Chambin",
+                "href": "/profile/Philippe-Chambin"
+            },
+            "answer_text": "If your keyboard (synth or simply controller) has both 5-pin MIDI and USB implementation, then expect a bit more latency if using the 5-pin output connector. Indeed, you'd be adding two unnecessary steps which are bottlenecked at MIDI's 31.25 kbps rate. I only see the point in having 5-pin MIDI output connectors on a computer interface, if you own gear from the late '80s and '90s that you'd like to integrate in your productions. Having a 5-pin MIDI input on the computer interface then becomes a plus when performing some forms of data bulk dumps, as some protocols require a handshake (checksum) between the sending and receiving device. EDIT (June 2020): I just thought of another advantage of good ol\u2019 5-pin DIN MIDI: no ground loops! The whole MIDI interface was designed to not add any potential ground loop via the MIDI connections. This is why there\u2019s opto-coupling on the Thru port so that there\u2019s complete galvanic isolation in between each device. Except Korg, which are a naughty naughty company, which violate the regulations of MIDI which clearly states that the manufacturers should not link the connector\u2019s chassis to ground. Yet they\u2019ve been doing it for years! Whereas you\u2019re bound to have ground loop issues when using MIDI over USB. Hope that helps in informing your decision. ",
+            "date": "Updated June 16, 2020",
+            "views": "82",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Pablo Schaaf",
+                    "user_href": "/profile/Pablo-Schaaf"
+                },
+                {
+                    "user_id": "Brian Fields",
+                    "user_href": "/profile/Brian-Fields-3"
+                },
+                {
+                    "user_id": "Issaf Ismael",
+                    "user_href": "/profile/Issaf-Ismael-1"
+                },
+                {
+                    "user_id": "Dave Richardson",
+                    "user_href": "/profile/Dave-Richardson-13"
+                },
+                {
+                    "user_id": "Hershel Flemming",
+                    "user_href": "/profile/Hershel-Flemming"
+                },
+                {
+                    "user_id": "Esteban Acosta",
+                    "user_href": "/profile/Esteban-Acosta-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Kess-Efski"
+                },
+                {
+                    "user_id": "Diliup Gabadamudalige",
+                    "user_href": "/profile/Diliup-Gabadamudalige"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "title": "What is the difference between Rack Server and Blade Server? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Foti Panagio",
+                "href": "/profile/Foti-Panagio-1"
+            },
+            "answer_text": "So you want to know what the differences are between rackmount servers and blade servers eh? As a network administrator at EuroVPS I\u2019ve got plenty of experience setting up Blade Servers as well as Rackmount servers for high density production environments so I felt like it\u2019d be a crime not to answer it! Let\u2019s start with how they are similar: Blade Servers and Rack Mount servers are both servers! Beyond this obvious fact, there\u2019s very little else that I can say, so let me jump into the meat of the question - what the hell are the differences?Rack mount Servers  Rack mount servers are servers that are mounted in a rack! Ha! Ok, moving on: Rackmount servers are self-sufficient meaning the cooling, power supplies, hard disks, processors, memory, raid controller are all enclosed within that single server.Rackmount servers are awesome because you can fit loads of drives inside of them (vs. just 2 drives in a blade server) and therefore are perfect for situations when you need a crap load of IOPS or storage for a single use case.Rackmount servers are cheaper because you don\u2019t need to buy anything extra to make them work like you do with Blade Servers. A blade server needs a blade enclosure, whereas with a rack mount server, all you need is a rack, a power plug to plug it in, and a network uplink to plug into your servers\u2019 NIC card.Blade Servers Blade servers like the one seen below are no different to rack mount servers in that they\u2019ve got all the typical server components required. Check out what the insides look like!  Below you can see a boat load of Blade servers ready to be installed in a c7000 blade enclosure.  And below you can see a full c7000 blade enclosure with 16 x BL460c G7 blade servers in operation.  In our 14 years experience providing VPS and Cloud hosting, no other server platform provides the availability, reliability, performance, and flexibility as the HP Proliant BL460c platform. Such redundancy and live-expandability is unmatched by all other manufacturers, not IBM, SuperMicro, or Dell can even remotely compare to HP\u2019s c7000. There is a reason why the HP BladeSystem is world re-known as the leading blade server chosen by Fortune 100\u2018s worldwide. Here are some benefits we\u2019ve personally found working with blade servers over rack mount servers: - Better for environment. We saw a 50% decrease in power consumption. - Reduces administration overhead by 75% - 90 percent reduction in cabling requirements - 10x Fans with RPM offset in case of failure - 6x Redundant Power Supply Units (4 can fail) managed by dual redundant Onboard administrators providing Lights Out management and alerting.  Take a look at the back side of a Blade Enclosure above. With blade servers you can forge through electrical feed failures, switch failures, fan failures, power supply failures, even Management processors are fully redundant. Every major component, which affects the lifecycle of blade servers is fully redundant within the HP c7000 BladeSystem. Caveats You can slaughter the potential reliability of a blade server by not installing enough line cards in the back end though. The awesomeness of a blade system really depends on your budget for redundancy. In our datacenter setup, all line cards are completely redundant and while we could run it with 1/4 the amount of them (at 1/4 the cost), there wouldn\u2019t really be a point then in having blades in the first place! If your\u2019e going to do it - do it right! But this adds a significant cost overhead so if you\u2019re on a budget, Blade Servers are a terrible choice as it will seriously hurt your wallet. But if you\u2019re after high density computing and need at least 8 x servers, a blade system\u2019s a great choice. Otherwise, rack mount\u2019s are probably the best way for you to go. Buy itRack itInstall itUse itSimple. Oh yea, if anyone\u2019s looking for either blade servers or rack mount servers, we\u2019ve got both options available for leasing so you don\u2019t have to spend the big bucks to setup your own costly colocation infrastructure! ",
+            "date": "Answered December 15, 2017",
+            "views": "23",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pabelyn Labesores",
+                    "user_href": "/profile/Pabelyn-Labesores"
+                },
+                {
+                    "user_id": "Marina Suraieva",
+                    "user_href": "/profile/Marina-Suraieva"
+                },
+                {
+                    "user_id": "Sonny Johnson",
+                    "user_href": "/profile/Sonny-Johnson-14"
+                },
+                {
+                    "user_id": "Maria Papa",
+                    "user_href": "/profile/Maria-Papa-24"
+                },
+                {
+                    "user_id": "Jessica Volbrecht",
+                    "user_href": "/profile/Jessica-Volbrecht"
+                },
+                {
+                    "user_id": "Shatabdi Todkar",
+                    "user_href": "/profile/Shatabdi-Todkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chester Timberblake",
+                "href": "/profile/Chester-Timberblake"
+            },
+            "answer_text": "Difference between Blade and Rack Server Let us compare blade server and rack server advantages. Are they saving space?The blade Server saves more space than the rack server. For example, when dealing with 1024 nodes in high-density computing server environment, we need to deploy 24 racks to install those 1U rack servers. It doesn\u2019t include the Ethernet switching hub. However, if we use the blade server chassis which is plugged 8 blades, we only need to deploy 9 racks. In the meantime, it includes the Ethernet switching hub. Are they easy to deploy cables or manage?These Blade servers in the room have unified wiring network cabling and power lines. Each blade servers do not require engineers cabling. The rack server, respectively, each server need network cabling and power cord wiring. If a 42U cabinet when installing multiple 1U servers, cables behind the cabinets are very much. It will seem very messy. For the TCO needs, the blade servers are easier to manage, providing more processing power in smaller spaces, and less cost What is their flexibility?Most of the blade servers are less flexible than those rack servers. For example, in high-performance database applications, the external RAID card of blade severs can\u2019t be equipped with a disk array. In addition, if the user needs large-capacity memory database server, but do not want to build the cluster mode, the blade servers will also be powerless. It\u2019s because a rack server with 16 memory slots is readily available on the market. Most blade servers only support 4-8 memory slots. The blade server flexibility is relatively weak, even if there is a suitable product, the price is extremely high. How about the cost of them?People think that the full cost of the blade server, compared to the same vendor's most expensive rack server, the cost is still a lot of savings. However, in fact, if the user is doing \"gradually increase the blade in the chassis\", you will find that the rack server is more cost-effective, because most blades and related products are more expensive than their corresponding rack products. A typical blade chassis costs between $ 4,000 and $ 8,000 and a blade is more expensive than a 1U rack. Can their functions be extended?The benefits of 1U rack sever are it uses standard server design technology, standard ports, in order to work alone. It can\u2019t be upgrade more functions but it can extend its functions through connecting Expansion cabinet. When we increase the new blade server unit, we just plug the new one into the chassis. It\u2019s over. Blade servers can plug into the expanded infrastructure. In addition, option modules inside the chassis allow us to add the ability to share functions once connected externally. Modular design of blade server technology has rapid expansion. 6.Are they easy to maintain? When using rack servers, there are many messy cables, causing hidden problems but there is not any cable problem with the blade servers. As the blade server units are hot-swappable, they are easy to troubleshooting. The rack servers are standalone devices so that it\u2019s more difficult to troubleshooting. Both of blade servers and rack servers can provide the useful functions for different needs. The Rack server meets the needs of user applications, while the blade server integration is too dense, with standard, cooling has not been completely resolved. Furthermore, the blade server works with a large number of machines together to form a cluster for the user. In short, the blade servers still can\u2019t replace the rack servers. info: Rack Server Vs Blade Server ",
+            "date": "Answered May 16, 2018",
+            "views": "486",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael Lambert",
+                    "user_href": "/profile/Michael-Lambert-86"
+                },
+                {
+                    "user_id": "Leland Jackson",
+                    "user_href": "/profile/Leland-Jackson-1"
+                }
+            ]
+        }
+    ]
+}

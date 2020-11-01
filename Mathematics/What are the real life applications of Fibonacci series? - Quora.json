@@ -1,0 +1,2061 @@
+{
+    "title": "What are the real life applications of Fibonacci series? - Quora",
+    "tags": [
+        "Fibonacci Numbers",
+        "Applied Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Constantinescu",
+                "href": "/profile/Brian-Constantinescu"
+            },
+            "answer_text": "The Fibonacci sequence is claimed to have been created by Mr. Leonardo Pisano Bigollo in the early 13th century, although it was known long before by Indian mathematicians around the 6th century. Either way, the Fibonacci sequence as it\u2019s now called has captivated mathematicians and artists alike for its beautiful relationship to the constant phi ([math]\\phi[/math]), and its aesthetic nature. But does the Fibonacci sequence have anything to do with nature? [math]0, 1, 1,2, 3,5,8,13,21,34,55,89,144,233...\\tag*{}[/math] As you can see, the sequence is but a mathematical construct, a human creation. A series of infinite numbers that follow the simple recursive pattern [math]a_{n}=a_{n-2}+a_{n-1}[/math]. It is not in any way, shape, or form a product of nature. It was not modeled after any pattern or occurrence in nature. It just is, and people like it. So, they turned the sequence into a nautilus. With the dawn of photo editing software, some have chosen to apply the Fibonacci sequence to \u201cprove\u201d certain pictures to be \u201caesthetic.\u201d As a running joke, many have slapped this spiral on top of random pictures and claimed them to have a profound mathematical allure and grandeur. Some have even gone as far as to try and prove the spiral really does appear in nature - in the petals of plants and the spiders on my balcony; everywhere you look, Fibonacci is waving at you.  I, for one, am horrendous at using photo editing software. So I can\u2019t use the Fibonacci sequence like this in my everyday life. In light of this, I\u2019ve searched long and hard to find other ways to apply the Fibonacci sequence to my everyday life. I just couldn\u2019t live without it. As an American who travels places a lot and likes to read road signals riding in the backseat of a old Toyota Corolla, I\u2019ve found myself wanting to convert between miles and kilometers a lot. Sadly, speedometers can\u2019t really do that for you. Well, you can either Bing, Yahoo, or Google for a conversion and you\u2019ll have it in seconds. Turns out, a mile is about [math]1.61[/math] kilometers. With a little pencil and paper, you could even do the math yourself in a couple of seconds. However, I get pretty bored on very long car rides, so a multiplication that takes only a couple seconds doesn\u2019t help at all. Here is where Fibonacci comes in. You might recall a fancy property of the Fibonacci sequence, that [math]\\lim\\limits_{n\\to\\infty}\\frac{a_{n}}{a_{n-1}} = \\phi \\approx 1.618[/math] Put simply, the ratio between successive terms in the Fibonacci sequence converges on the value of phi, which is about [math]1.618[/math]. This just so happens to be very similar to the conversion ratio between miles and kilometers. So how can we apply this to our own daily lives? Well, say I\u2019m driving freaky fast down Autobahn highway in that 1995 Toyota Corolla when I see this:  I look down at my speedometer and I find I\u2019m only going about [math]75[/math]. So I rev up quickly to [math]135[/math], my engine crying for help. About six minutes pass by and now I\u2019m getting flagged by the Polizei. Whaaaa\u2026? \u201cSir, do you know how fast you were going?\u201d \u201cOne minute guy, let me calculate it using the Fibonacci Sequence!\u201d Let\u2019s take a closer look at [math]135[/math]. In terms of Fibonacci numbers, it can be written as: [math]0, 1, \\underbrace{1},2,\\underbrace{3},5,\\underbrace{8},13,21,\\underbrace{34},55,\\underbrace{89},144,233...\\tag*{}[/math] [math]89+34+8+3+1=135\\tag*{}[/math] Now, let\u2019s go up one from each of the numbers we chose and add those instead! [math]0, 1, 1,2, 3,\\underbrace{5},8,\\underbrace{13},21,34,\\underbrace{55},89,\\underbrace{144},233...\\tag*{}[/math] [math]5+13+55+144=217\\tag*{}[/math] I look at the officer and proudly announce my number, \u201cAbout [math]217[/math] kilometers per hour I reckon guy.\u201d The officer looks back at me and what I had written on my paper, obviously very impressed. \u201cIt was actually more like [math]217.261[/math] kilometers per hour, but that was cool. I\u2019ll let you off the hook if you teach me how you did that.\u201d Well, let\u2019s get to business. By Zeckendorf\u2019s theorem we have that every positive integer can be represented uniquely as the sum of one or more distinct Fibonacci numbers in such a way that the sum does not include any two consecutive Fibonacci numbers. Therefore, we can convert any speed that has a value in the integers. By using the Greedy algorithm we can choose the largest Fibonacci numbers smaller than our target speed value, and substract from it over and over again until we find a unique sum of Fibonacci numbers for that target speed. Next, we have to convert this target speed between miles and kilometers. If we want to convert from miles to kilometers, we must switch every Fibonacci number in our sum with the next highest Fibonacci number. Meanwhile, if we want to convert from kilometers to miles, we must switch every Fibonacci number in our sum with the next lowest Fibonacci number (the reverse). The officer looks at me again and says, \u201cHey, can we do another example I think I\u2019m getting this.\u201d \u201cSure thing guy!\u201d Let\u2019s figure out how much [math]135[/math] kilometers really is in terms of miles so I don\u2019t give the police another heart attack. Using our previous Fibonacci representation we have: [math]1+3+8+34+89=135\\tag*{}[/math] Now we want to switch it to miles so we will lower each of these numbers to the Fibonacci numbers on their left. [math]0,, \\underbrace{1}, 1,\\underbrace{2}, 3,\\underbrace{5},8,13,\\underbrace{21},34,\\underbrace{55},89,144,233...\\tag*{}[/math] Let\u2019s compute the sum of these Fibonacci numbers! [math]1+2+5+21+55=84\\tag*{}[/math] \u201cHold up, you\u2019re telling me I should\u2019ve been going [math]83[/math] miles per hour?!\u201d \u201cWell, more like [math]83.8851[/math] miles per hour, but that\u2019s still pretty good.\u201d Picture of Nautilus Picture of Confusing Speed Sign ",
+            "date": "Answered April 21, 2019",
+            "views": "567",
+            "upvotes": " View 77 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Emmanuel Dy",
+                    "user_href": "/profile/Emmanuel-Dy"
+                },
+                {
+                    "user_id": "Christian Joel Lazo",
+                    "user_href": "/profile/Christian-Joel-Lazo"
+                },
+                {
+                    "user_id": "Wayne Siegel",
+                    "user_href": "/profile/Wayne-Siegel-1"
+                },
+                {
+                    "user_id": "Wayne Hardy",
+                    "user_href": "/profile/Wayne-Hardy-6"
+                },
+                {
+                    "user_id": "Liyang Zhou",
+                    "user_href": "/profile/Liyang-Zhou-1"
+                },
+                {
+                    "user_id": "Sai Eswar",
+                    "user_href": "/profile/Sai-Eswar-5"
+                },
+                {
+                    "user_id": "Srikrishna Polthel",
+                    "user_href": "/profile/Srikrishna-Polthel"
+                },
+                {
+                    "user_id": "Diya Choudhury",
+                    "user_href": "/profile/Diya-Choudhury-2"
+                },
+                {
+                    "user_id": "Srihari Venkatesan",
+                    "user_href": "/profile/Srihari-Venkatesan-2"
+                },
+                {
+                    "user_id": "Rajeev Jain",
+                    "user_href": "/profile/Rajeev-Jain-41"
+                },
+                {
+                    "user_id": "Sushanta Seal",
+                    "user_href": "/profile/Sushanta-Seal"
+                },
+                {
+                    "user_id": "Lychele Amaro",
+                    "user_href": "/profile/Lychele-Amaro"
+                },
+                {
+                    "user_id": "Ellen Mendoza",
+                    "user_href": "/profile/Ellen-Mendoza-14"
+                },
+                {
+                    "user_id": "Himanshu Shekhar",
+                    "user_href": "/profile/Himanshu-Shekhar-3"
+                },
+                {
+                    "user_id": "Shilpa Vijay",
+                    "user_href": "/profile/Shilpa-Vijay-10"
+                },
+                {
+                    "user_id": "Sagar Chowdhury",
+                    "user_href": "/profile/Sagar-Chowdhury-8"
+                },
+                {
+                    "user_id": "Prabhanjan Sahoo",
+                    "user_href": "/profile/Prabhanjan-Sahoo-4"
+                },
+                {
+                    "user_id": "Christopher Barnes",
+                    "user_href": "/profile/Christopher-Barnes-119"
+                },
+                {
+                    "user_id": "Sakib Avdiba\u0161i\u0107",
+                    "user_href": "/profile/Sakib-Avdiba\u0161i\u0107"
+                },
+                {
+                    "user_id": "Pran Kumar Sarkar",
+                    "user_href": "/profile/Pran-Kumar-Sarkar"
+                },
+                {
+                    "user_id": "Vasu Poply",
+                    "user_href": "/profile/Vasu-Poply"
+                },
+                {
+                    "user_id": "Selva Mathan",
+                    "user_href": "/profile/Selva-Mathan-1"
+                },
+                {
+                    "user_id": "Gowtham KS",
+                    "user_href": "/profile/Gowtham-KS"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Omkar Joshi",
+                    "user_href": "/profile/Omkar-Joshi-134"
+                },
+                {
+                    "user_id": "Alok Sahoo",
+                    "user_href": "/profile/Alok-Sahoo-3"
+                },
+                {
+                    "user_id": "Vaishnavi Ruikar",
+                    "user_href": "/profile/Vaishnavi-Ruikar"
+                },
+                {
+                    "user_id": "Dibajyoti Nag",
+                    "user_href": "/profile/Dibajyoti-Nag"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Ramasamy Pp",
+                    "user_href": "/profile/Ramasamy-Pp"
+                },
+                {
+                    "user_id": "Mavunduri Lakshminarayana",
+                    "user_href": "/profile/Mavunduri-Lakshminarayana"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Kabir Belgikar",
+                    "user_href": "/profile/Kabir-Belgikar"
+                },
+                {
+                    "user_id": "L\u0103n T\u0103n",
+                    "user_href": "/profile/L\u0103n-T\u0103n"
+                },
+                {
+                    "user_id": "Piyush Kant",
+                    "user_href": "/profile/Piyush-Kant-11"
+                },
+                {
+                    "user_id": "Pattie Huggins Deitrick",
+                    "user_href": "/profile/Pattie-Huggins-Deitrick"
+                },
+                {
+                    "user_id": "Sayan Ghosh",
+                    "user_href": "/profile/Sayan-Ghosh-254"
+                },
+                {
+                    "user_id": "Nikhil Cohen",
+                    "user_href": "/profile/Nikhil-Cohen"
+                },
+                {
+                    "user_id": "Jameel Ahamed",
+                    "user_href": "/profile/Jameel-Ahamed-7"
+                },
+                {
+                    "user_id": "Sri Charan",
+                    "user_href": "/profile/Sri-Charan-170"
+                },
+                {
+                    "user_id": "Fanis Gafiatyllin",
+                    "user_href": "/profile/Fanis-Gafiatyllin"
+                },
+                {
+                    "user_id": "Pranav Murthy",
+                    "user_href": "/profile/Pranav-Murthy-7"
+                },
+                {
+                    "user_id": "Akash James",
+                    "user_href": "/profile/Akash-James-5"
+                },
+                {
+                    "user_id": "Sagar Vaswani",
+                    "user_href": "/profile/Sagar-Vaswani-3"
+                },
+                {
+                    "user_id": "Niyamot Ullah Noyon",
+                    "user_href": "/profile/Niyamot-Ullah-Noyon"
+                },
+                {
+                    "user_id": "Julianne Mac",
+                    "user_href": "/profile/Julianne-Mac"
+                },
+                {
+                    "user_id": "Kathleen Entac",
+                    "user_href": "/profile/Kathleen-Entac"
+                },
+                {
+                    "user_id": "Ganapathi",
+                    "user_href": "/profile/Ganapathi-27"
+                },
+                {
+                    "user_id": "M K",
+                    "user_href": "/profile/M-K-4169"
+                },
+                {
+                    "user_id": "Aman Choudhary",
+                    "user_href": "/profile/Aman-Choudhary-26"
+                },
+                {
+                    "user_id": "ANJALI M",
+                    "user_href": "/profile/ANJALI-M-19"
+                },
+                {
+                    "user_id": "Hussainali Hudani",
+                    "user_href": "/profile/Hussainali-Hudani"
+                },
+                {
+                    "user_id": "Anish Saha",
+                    "user_href": "/profile/Anish-Saha-9"
+                },
+                {
+                    "user_id": "Tia Carravetta",
+                    "user_href": "/profile/Tia-Carravetta"
+                },
+                {
+                    "user_id": "Rathin Bhargava",
+                    "user_href": "/profile/Rathin-Bhargava"
+                },
+                {
+                    "user_id": "Indu Saxena",
+                    "user_href": "/profile/Indu-Saxena"
+                },
+                {
+                    "user_id": "Rakesh Sinha",
+                    "user_href": "/profile/Rakesh-Sinha-142"
+                },
+                {
+                    "user_id": "Harikrishnan Venugopal",
+                    "user_href": "/profile/Harikrishnan-Venugopal-12"
+                },
+                {
+                    "user_id": "Samridhi",
+                    "user_href": "/profile/Samridhi-38"
+                },
+                {
+                    "user_id": "Rakesh Jain",
+                    "user_href": "/profile/Rakesh-Jain-1111"
+                },
+                {
+                    "user_id": "Rajiv Thapa",
+                    "user_href": "/profile/Rajiv-Thapa-9"
+                },
+                {
+                    "user_id": "Phakamani Makhathini",
+                    "user_href": "/profile/Phakamani-Makhathini"
+                },
+                {
+                    "user_id": "Alhad Sethi",
+                    "user_href": "/profile/Alhad-Sethi"
+                },
+                {
+                    "user_id": "Frank Wang",
+                    "user_href": "/profile/Frank-Wang-354"
+                },
+                {
+                    "user_id": "Walt McKelvie",
+                    "user_href": "/profile/Walt-McKelvie"
+                },
+                {
+                    "user_id": "Sami Chaoui",
+                    "user_href": "/profile/Sami-Chaoui-1"
+                },
+                {
+                    "user_id": "Joseph Holdom",
+                    "user_href": "/profile/Joseph-Holdom"
+                },
+                {
+                    "user_id": "Benjamin Meier",
+                    "user_href": "/profile/Benjamin-Meier-5"
+                },
+                {
+                    "user_id": "Husnain Afsar",
+                    "user_href": "/profile/Husnain-Afsar-1"
+                },
+                {
+                    "user_id": "Arnab Rahman",
+                    "user_href": "/profile/Arnab-Rahman-3"
+                },
+                {
+                    "user_id": "Craig Petersen",
+                    "user_href": "/profile/Craig-Petersen-2"
+                },
+                {
+                    "user_id": "Harsh Deep",
+                    "user_href": "/profile/Harsh-Deep-4"
+                },
+                {
+                    "user_id": "Allen Thompson",
+                    "user_href": "/profile/Allen-Thompson-3"
+                },
+                {
+                    "user_id": "Hyoseon Lee",
+                    "user_href": "/profile/Hyoseon-Lee"
+                },
+                {
+                    "user_id": "Akash Pandey",
+                    "user_href": "/profile/Akash-Pandey-229"
+                },
+                {
+                    "user_id": "Andrew Paul",
+                    "user_href": "/profile/Andrew-Paul-53"
+                },
+                {
+                    "user_id": "Sivakali Dasari",
+                    "user_href": "/profile/Sivakali-Dasari"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sudip Maji",
+                "href": "/profile/Sudip-Maji-2"
+            },
+            "answer_text": "You can use Fibonacci numbers to calculate from Miles to Kilometer and vice versa quickly and roughly (Obviously not accurate but accurate enough). Explanation:Sequence: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ... Take any two consecutive numbers from this series as example 13 and 21 or 34 and 55.Now smaller number is in miles = the other one in Kilometerorbigger number is in Kilometers = the smaller one in Miles (The other way around). 34 Miles = round(54.72) Kilometers = 55 Kilometers21 Kilometers = round(13.05) Miles = 13 Miles For distances which are not exact fibonacci values you can always proceed by splitting the distance into two or more fibonacci values.  As example, for converting 15 km into miles we can proceed as following:15 km  = 13 km + 2 km 13 km -> 8 mile2 km  -> 1 mile 15 km  -> 8+1 = 9 mile Another example, for converting 170km into miles we can proceed as:170 km = 10*17 km17 km = 13 km + 2 km + 2 km  = 8 + 1 + 1 miles = 10 miles (approximately) Now, 170 km = 10*10 miles = 100 miles  (approximately)  So, either way we can proceed. For bigger numbers we can proceed as above.  Now, why this works?  Pretty simple, as we move toward bigger numbers in fibonacci series, the consecutive number grows as: F(n) = 1.618*F(n-1)The constant 1.61803 is called Golden ratio.  On the other hand, the mile to kilometer ratio happen to be 1.60934 which is too close to golden ratio. That's why we can use fibonacci series to convert miles to kilometers and vice versa. ",
+            "date": "Answered January 1, 2015",
+            "views": "443",
+            "upvotes": " View 94 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jumie Cabarrubias",
+                    "user_href": "/profile/Jumie-Cabarrubias"
+                },
+                {
+                    "user_id": "Sachidananda Naik",
+                    "user_href": "/profile/Sachidananda-Naik-2"
+                },
+                {
+                    "user_id": "Chloe Aquino",
+                    "user_href": "/profile/Chloe-Aquino-2"
+                },
+                {
+                    "user_id": "Rohit Pal",
+                    "user_href": "/profile/Rohit-Pal-7"
+                },
+                {
+                    "user_id": "Naga Ajay K",
+                    "user_href": "/profile/Naga-Ajay-K"
+                },
+                {
+                    "user_id": "Kartikeyan Ramamurthy",
+                    "user_href": "/profile/Kartikeyan-Ramamurthy"
+                },
+                {
+                    "user_id": "Sagar Chowdhury",
+                    "user_href": "/profile/Sagar-Chowdhury-8"
+                },
+                {
+                    "user_id": "Srinath KR",
+                    "user_href": "/profile/\u0bb8\u0bcd\u0bb0\u0bc0\u0ba8\u0bbe\u0ba4\u0bcd-\u0b95\u0bc7-\u0b86\u0bb0\u0bcd-Srinath-KR"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Prasad Cholake",
+                    "user_href": "/profile/Prasad-Cholake"
+                },
+                {
+                    "user_id": "Keith Everett Brooks",
+                    "user_href": "/profile/Keith-Everett-Brooks"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Raghavender Singh",
+                    "user_href": "/profile/Raghavender-Singh"
+                },
+                {
+                    "user_id": "Vijey Yuvaraj",
+                    "user_href": "/profile/Vijey-Yuvaraj"
+                },
+                {
+                    "user_id": "Bart De Maesschalck",
+                    "user_href": "/profile/Bart-De-Maesschalck-1"
+                },
+                {
+                    "user_id": "Chandransh Srivastava",
+                    "user_href": "/profile/Chandransh-Srivastava"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Oyeyemi Aito",
+                    "user_href": "/profile/Oyeyemi-Aito"
+                },
+                {
+                    "user_id": "Nia Kenela",
+                    "user_href": "/profile/Nia-Kenela"
+                },
+                {
+                    "user_id": "Ann Hatt",
+                    "user_href": "/profile/Ann-Hatt-1"
+                },
+                {
+                    "user_id": "Sasanka Samaratunga",
+                    "user_href": "/profile/Sasanka-Samaratunga"
+                },
+                {
+                    "user_id": "Ben Cornish",
+                    "user_href": "/profile/Ben-Cornish"
+                },
+                {
+                    "user_id": "Brett Basco",
+                    "user_href": "/profile/Brett-Basco"
+                },
+                {
+                    "user_id": "Suhail A.S",
+                    "user_href": "/profile/Suhail-A-S-2"
+                },
+                {
+                    "user_id": "Lucien Windrich",
+                    "user_href": "/profile/Lucien-Windrich"
+                },
+                {
+                    "user_id": "Ziad Soliman",
+                    "user_href": "/profile/Ziad-Soliman-2"
+                },
+                {
+                    "user_id": "Pattie Huggins Deitrick",
+                    "user_href": "/profile/Pattie-Huggins-Deitrick"
+                },
+                {
+                    "user_id": "Maria Canache",
+                    "user_href": "/profile/Maria-Canache"
+                },
+                {
+                    "user_id": "Adithya Vin",
+                    "user_href": "/profile/Adithya-Vin"
+                },
+                {
+                    "user_id": "Baptist Monteiro",
+                    "user_href": "/profile/Baptist-Monteiro"
+                },
+                {
+                    "user_id": "Aryan Sidhwani",
+                    "user_href": "/profile/Aryan-Sidhwani"
+                },
+                {
+                    "user_id": "Dave Lossman",
+                    "user_href": "/profile/Dave-Lossman"
+                },
+                {
+                    "user_id": "RAJEEV MAURYA",
+                    "user_href": "/profile/RAJEEV-MAURYA-18"
+                },
+                {
+                    "user_id": "Jaama Larane",
+                    "user_href": "/profile/Jaama-Larane"
+                },
+                {
+                    "user_id": "Ujjawal Kumar",
+                    "user_href": "/profile/Ujjawal-Kumar-184"
+                },
+                {
+                    "user_id": "Tia Carravetta",
+                    "user_href": "/profile/Tia-Carravetta"
+                },
+                {
+                    "user_id": "Austin Gae",
+                    "user_href": "/profile/Austin-Gae-1"
+                },
+                {
+                    "user_id": "Ankur Ghosh",
+                    "user_href": "/profile/Ankur-Ghosh-1"
+                },
+                {
+                    "user_id": "Rupal Moharana",
+                    "user_href": "/profile/Rupal-Moharana-1"
+                },
+                {
+                    "user_id": "Abhijit Kalita",
+                    "user_href": "/profile/Abhijit-Kalita-46"
+                },
+                {
+                    "user_id": "Rajasimha Rao",
+                    "user_href": "/profile/Rajasimha-Rao"
+                },
+                {
+                    "user_id": "Jase Joe",
+                    "user_href": "/profile/Jase-Joe"
+                },
+                {
+                    "user_id": "Shon Camarlinghi",
+                    "user_href": "/profile/Shon-Camarlinghi-1"
+                },
+                {
+                    "user_id": "Sakshay Mahna",
+                    "user_href": "/profile/Sakshay-Mahna-1"
+                },
+                {
+                    "user_id": "Jerald Britto",
+                    "user_href": "/profile/Jerald-Britto"
+                },
+                {
+                    "user_id": "Daya Patel",
+                    "user_href": "/profile/Daya-Patel-10"
+                },
+                {
+                    "user_id": "Navya A",
+                    "user_href": "/profile/Navya-A-13"
+                },
+                {
+                    "user_id": "Eyad Essam",
+                    "user_href": "/profile/Eyad-Essam-1"
+                },
+                {
+                    "user_id": "Tanya Gupta",
+                    "user_href": "/profile/Tanya-Gupta-518"
+                },
+                {
+                    "user_id": "Alex Yursha",
+                    "user_href": "/profile/Alex-Yursha-2"
+                },
+                {
+                    "user_id": "Darshan Patel",
+                    "user_href": "/profile/Darshan-Patel-42"
+                },
+                {
+                    "user_id": "Ted Malita",
+                    "user_href": "/profile/Ted-Malita"
+                },
+                {
+                    "user_id": "Anurag Maurya",
+                    "user_href": "/profile/Anurag-Maurya-54"
+                },
+                {
+                    "user_id": "Rishabh Ramdhave",
+                    "user_href": "/profile/Rishabh-Ramdhave"
+                },
+                {
+                    "user_id": "Ankit",
+                    "user_href": "/profile/Ankit-1179"
+                },
+                {
+                    "user_id": "Bhavesh Doshi",
+                    "user_href": "/profile/\u092d\u093e\u0935\u0947\u0936-\u0926\u094b\u0936\u0940-Bhavesh-Doshi"
+                },
+                {
+                    "user_id": "Rakesh Vanam",
+                    "user_href": "/profile/Rakesh-Vanam-1"
+                },
+                {
+                    "user_id": "Sarat Chandra Y.V.S",
+                    "user_href": "/profile/Sarat-Chandra-Y-V-S"
+                },
+                {
+                    "user_id": "Marcus Morry",
+                    "user_href": "/profile/Marcus-Morry"
+                },
+                {
+                    "user_id": "Sagar Vaswani",
+                    "user_href": "/profile/Sagar-Vaswani-3"
+                },
+                {
+                    "user_id": "Nitin Gupta Mauji",
+                    "user_href": "/profile/Nitin-Gupta-Mauji"
+                },
+                {
+                    "user_id": "Chandrasekhar Goka",
+                    "user_href": "/profile/Chandrasekhar-Goka"
+                },
+                {
+                    "user_id": "Ruchismita Dash",
+                    "user_href": "/profile/Ruchismita-Dash"
+                },
+                {
+                    "user_id": "Jagannath Chowdary",
+                    "user_href": "/profile/Jagannath-Chowdary"
+                },
+                {
+                    "user_id": "Imogen Porter",
+                    "user_href": "/profile/Imogen-Porter-2"
+                },
+                {
+                    "user_id": "Ryan Schulz",
+                    "user_href": "/profile/Ryan-Schulz-22"
+                },
+                {
+                    "user_id": "Deepak Wani",
+                    "user_href": "/profile/Deepak-Wani"
+                },
+                {
+                    "user_id": "Subhankar Ghosh",
+                    "user_href": "/profile/Subhankar-Ghosh-92"
+                },
+                {
+                    "user_id": "Srilakshmi",
+                    "user_href": "/profile/Srilakshmi-44"
+                },
+                {
+                    "user_id": "Stacy Murray",
+                    "user_href": "/profile/Stacy-Murray"
+                },
+                {
+                    "user_id": "Joseph LionMoziah King",
+                    "user_href": "/profile/Joseph-LionMoziah-King"
+                },
+                {
+                    "user_id": "Parth Shukla",
+                    "user_href": "/profile/Parth-Shukla-91"
+                },
+                {
+                    "user_id": "Minda Ugas",
+                    "user_href": "/profile/Minda-Ugas"
+                },
+                {
+                    "user_id": "Leslie Mae Vael",
+                    "user_href": "/profile/Leslie-Mae-Vael"
+                },
+                {
+                    "user_id": "Vaghesh Patel",
+                    "user_href": "/profile/Vaghesh-Patel"
+                },
+                {
+                    "user_id": "Sahana Javgal",
+                    "user_href": "/profile/Sahana-Javgal"
+                },
+                {
+                    "user_id": "Anunaya Srivastava",
+                    "user_href": "/profile/Anunaya-Srivastava"
+                },
+                {
+                    "user_id": "MANU RAGHUVANSHI",
+                    "user_href": "/profile/MANU-RAGHUVANSHI-1"
+                },
+                {
+                    "user_id": "Tapiwa Ushe",
+                    "user_href": "/profile/Tapiwa-Ushe-1"
+                },
+                {
+                    "user_id": "Hemant Joshi",
+                    "user_href": "/profile/\u0939\u0947\u092e\u0902\u0924-\u091c\u094b\u0936\u0940-Hemant-Joshi"
+                },
+                {
+                    "user_id": "Divy Sitlani",
+                    "user_href": "/profile/Divy-Sitlani"
+                },
+                {
+                    "user_id": "Akshay Mallya",
+                    "user_href": "/profile/Akshay-Mallya-2"
+                },
+                {
+                    "user_id": "Deepak Pandey",
+                    "user_href": "/profile/Deepak-Pandey-19"
+                },
+                {
+                    "user_id": "Sajal Agrawal",
+                    "user_href": "/profile/Sajal-Agrawal-9"
+                },
+                {
+                    "user_id": "Sujata Sharma",
+                    "user_href": "/profile/Sujata-Sharma-1"
+                },
+                {
+                    "user_id": "Pragya Mishra",
+                    "user_href": "/profile/Pragya-Mishra-11"
+                },
+                {
+                    "user_id": "Neerav Basant",
+                    "user_href": "/profile/Neerav-Basant"
+                },
+                {
+                    "user_id": "Niranjan Satam",
+                    "user_href": "/profile/Niranjan-Satam"
+                },
+                {
+                    "user_id": "Sampath Pillai Abhishek",
+                    "user_href": "/profile/Sampath-Pillai-Abhishek"
+                },
+                {
+                    "user_id": "Akanksha Singh",
+                    "user_href": "/profile/Akanksha-Singh-26"
+                },
+                {
+                    "user_id": "Raja Shekar",
+                    "user_href": "/profile/Raja-Shekar-59"
+                },
+                {
+                    "user_id": "Chetandeep Singh Pahuja",
+                    "user_href": "/profile/Chetandeep-Singh-Pahuja"
+                },
+                {
+                    "user_id": "Yash Gandhi",
+                    "user_href": "/profile/Yash-Gandhi-27"
+                },
+                {
+                    "user_id": "Mohit Pathak",
+                    "user_href": "/profile/Mohit-Pathak-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kilgore Trout",
+                "href": "/profile/Kilgore-Trout-53"
+            },
+            "answer_text": "Here is just a small snippet of the greater file I have, but this is all I have right now. Looks like a very early draft version of the final document. Tons more if I can find the full deal. Just a few math notes right now. Not especially practical, but if you're a math nerd it may be interesting somehow: * A Fibonacci prime is a Fibonacci number that is prime (duh). The first few are:    2, 3, 5, 13, 89, 233, 1597, 28657, 514229, ... * They are intimately connected with the golden ratio, for example theclosest rational approximations to the ratio are 2/1, 3/2, 5/3, 8/5... * The Fibonacci numbers are also an example of a complete sequence.This means that every positive integer can be written as a sum ofFibonacci numbers, where any one number is used once at most.Specifically, every positive integer can be written in a unique way asthe sum of one or more distinct Fibonacci numbers in such a way thatthe sum does not include any two consecutive Fibonacci numbers. Thisis known as Zeckendorf's theorem, and a sum of Fibonacci numbers thatsatisfies these conditions is called a Zeckendorf representation. TheZeckendorf representation of a number can be used to derive itsFibonacci coding. * With the exceptions of 1, 8 and 144, every Fibonacci number has aprime factor that is not a factor of any smaller Fibonacci number. * 144 is the only nontrivial square Fibonacci number. Only 8 and 144are non-trivial perfect powers. * No Fibonacci number greater than 8 is one greater or one less thanany prime number. * Any three consecutive Fibonacci numbers, taken two at a time, arerelatively prime. * Starting with 5, every second Fibonacci number is the length of thehypotenuse of a right triangle with integer sides, or in other words,the largest number in a Pythagorean triple. The length of the longerleg of this triangle is equal to the sum of the three sides of thepreceding triangle in this series of triangles, and the shorter leg isequal to the difference between the preceding bypassed Fibonaccinumber and the shorter leg of the preceding triangle. ",
+            "date": "Answered May 4, 2014",
+            "views": "304",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lea Gawagaw",
+                    "user_href": "/profile/Lea-Gawagaw"
+                },
+                {
+                    "user_id": "Paul Zimmermann",
+                    "user_href": "/profile/Paul-Zimmermann-4"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Wesley Neill",
+                    "user_href": "/profile/Wesley-Neill"
+                },
+                {
+                    "user_id": "Piyush Kant",
+                    "user_href": "/profile/Piyush-Kant-11"
+                },
+                {
+                    "user_id": "Petar Sokoloski",
+                    "user_href": "/profile/Petar-Sokoloski-1"
+                },
+                {
+                    "user_id": "Akshay Zade",
+                    "user_href": "/profile/Akshay-Zade-11"
+                },
+                {
+                    "user_id": "Saumya Bandyopadhyay",
+                    "user_href": "/profile/Saumya-Bandyopadhyay-2"
+                },
+                {
+                    "user_id": "Shaan Mutreja",
+                    "user_href": "/profile/Shaan-Mutreja"
+                },
+                {
+                    "user_id": "Lucien Windrich",
+                    "user_href": "/profile/Lucien-Windrich"
+                },
+                {
+                    "user_id": "Suruchi Sharan",
+                    "user_href": "/profile/Suruchi-Sharan-1"
+                },
+                {
+                    "user_id": "Josh Manson",
+                    "user_href": "/profile/Josh-Manson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rohit Parab",
+                "href": "/profile/Rohit-Parab-5"
+            },
+            "answer_text": "There are many real life applications of Fibonacci series. Recently I found its use in Agile Methodology. Suppose we have one User Story/ problem Statement in front of us that need to be resolved but in order to estimate the efforts, tentative time lines, we have to determine the complexity of the problem. Its very difficult to estimate this as we just have very high level information about the problem at this stage. so for doing this initial estimation, we prefer Fibonacci series over normal scale of 1 to 10. Fibonacci Series: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89 so let me tell you how it works, if you feel you have all the relevant information to solve the problem, you can rate the difficulty as 1 but if you feel the problem statement is yet not clear and it will take more time and resources to solve the problem, then you have to start traversing the series from left to right and have to add current number to previous number to estimate the complexity/difficulty of the problem. You can take these estimated numbers from your entire team for one particular user story/Problem Statement, then you can compare these numbers with them and can have discussion with them to determine final estimated complexity. This estimated complexity of user story/Problem Statement will help you to do initial level resource planning and estimate timelines to resolve this problem. ",
+            "date": "Updated November 14, 2016",
+            "views": "469",
+            "upvotes": " View 35 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Naga Ajay K",
+                    "user_href": "/profile/Naga-Ajay-K"
+                },
+                {
+                    "user_id": "Kartikeyan Ramamurthy",
+                    "user_href": "/profile/Kartikeyan-Ramamurthy"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Wesley Neill",
+                    "user_href": "/profile/Wesley-Neill"
+                },
+                {
+                    "user_id": "Pradeep Singh",
+                    "user_href": "/profile/Pradeep-Singh-66"
+                },
+                {
+                    "user_id": "Piyush Kant",
+                    "user_href": "/profile/Piyush-Kant-11"
+                },
+                {
+                    "user_id": "Elga Graves",
+                    "user_href": "/profile/Elga-Graves"
+                },
+                {
+                    "user_id": "Rivv Love",
+                    "user_href": "/profile/Rivv-Love"
+                },
+                {
+                    "user_id": "Abdul Basit Shaikh",
+                    "user_href": "/profile/Abdul-Basit-Shaikh-14"
+                },
+                {
+                    "user_id": "Alex Yursha",
+                    "user_href": "/profile/Alex-Yursha-2"
+                },
+                {
+                    "user_id": "Julina De Ocampo",
+                    "user_href": "/profile/Julina-De-Ocampo"
+                },
+                {
+                    "user_id": "Manju Prasad K S",
+                    "user_href": "/profile/Manju-Prasad-K-S"
+                },
+                {
+                    "user_id": "Sashikanth Avasarala",
+                    "user_href": "/profile/Sashikanth-Avasarala"
+                },
+                {
+                    "user_id": "Anne Ramos",
+                    "user_href": "/profile/Anne-Ramos-23"
+                },
+                {
+                    "user_id": "Parth Shukla",
+                    "user_href": "/profile/Parth-Shukla-91"
+                },
+                {
+                    "user_id": "Dipankar Das",
+                    "user_href": "/profile/Dipankar-Das-84"
+                },
+                {
+                    "user_id": "Pulkit Gupta",
+                    "user_href": "/profile/Pulkit-Gupta-294"
+                },
+                {
+                    "user_id": "Arjun T",
+                    "user_href": "/profile/Arjun-T-22"
+                },
+                {
+                    "user_id": "Deepak Gopalakrishnan",
+                    "user_href": "/profile/Deepak-Gopalakrishnan-1"
+                },
+                {
+                    "user_id": "Chethan Patel",
+                    "user_href": "/profile/Chethan-Patel-6"
+                },
+                {
+                    "user_id": "John Thomas Miller",
+                    "user_href": "/profile/John-Thomas-Miller"
+                },
+                {
+                    "user_id": "LikhithaReddy",
+                    "user_href": "/profile/LikhithaReddy-1"
+                },
+                {
+                    "user_id": "Nithya Thiyagarajan",
+                    "user_href": "/profile/Nithya-Thiyagarajan"
+                },
+                {
+                    "user_id": "Billa Sriram",
+                    "user_href": "/profile/Billa-Sriram"
+                },
+                {
+                    "user_id": "Harsh Bhardwaj",
+                    "user_href": "/profile/Harsh-Bhardwaj-206"
+                },
+                {
+                    "user_id": "Harsh Sulakhe",
+                    "user_href": "/profile/Harsh-Sulakhe"
+                },
+                {
+                    "user_id": "Astha Sirohi",
+                    "user_href": "/profile/Astha-Sirohi"
+                },
+                {
+                    "user_id": "Manisha Parab",
+                    "user_href": "/profile/Manisha-Parab-4"
+                },
+                {
+                    "user_id": "Arulraj Aboorvasamy",
+                    "user_href": "/profile/Arulraj-Aboorvasamy"
+                },
+                {
+                    "user_id": "Thulasi Tenkayala",
+                    "user_href": "/profile/Thulasi-Tenkayala-1"
+                },
+                {
+                    "user_id": "Pankaj Shet",
+                    "user_href": "/profile/Pankaj-Shet"
+                },
+                {
+                    "user_id": "Pooja Raja",
+                    "user_href": "/profile/Pooja-Raja"
+                },
+                {
+                    "user_id": "Priyanshu Sharma",
+                    "user_href": "/profile/Priyanshu-Sharma-106"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Avenius",
+                "href": "/profile/Mark-Avenius-1"
+            },
+            "answer_text": "First off, Fibonacci numbers manifest themselves in nature already: How are Fibonacci numbers expressed in nature? However, to answer the question directly, one example of potential use would be to determine how to scale up the size of something programmatically. Say you are coding something, and you need a list of items. You start with an arbitrary size, based on how much capacity you expect to need. Then, as items are added and you reach the capacity, you expand to a new capacity (allocating some more memory for additional items.) Say you started with a capacity of 1. Then you have an item added, so you double the size (add room for 1 more item.) Another item is added, so you add room for 2 more items. Two more are added, so you add capacity for 3 more. Then 5, 8, 13, etc. In reality, given the relatively ample processing power and available memory in today's hardware, doing these reallocations (and calculating the next number in the sequence) is probably more expensive than, say, doubling the capacity each time you run out of room. Microsoft's .NET framework actually uses this doubling method on each reallocation for this reason. (The do not by default start with a capacity of 1, however, as this would require many reallocations in almost any case, which would slow down lookup times dramatically.) However, if you are on an embedded system with limited resources, using Fibonacci numbers for this purpose could be a good tradeoff, so you don't waste more memory than you actually expect to use. ",
+            "date": "Answered December 10, 2014",
+            "views": "226",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Chuck Gafford",
+                    "user_href": "/profile/Chuck-Gafford"
+                },
+                {
+                    "user_id": "Combat Authority Fitness",
+                    "user_href": "/profile/Combat-Authority-Fitness"
+                },
+                {
+                    "user_id": "Sarvpriya Dewan",
+                    "user_href": "/profile/Sarvpriya-Dewan"
+                },
+                {
+                    "user_id": "Pulkit Gupta",
+                    "user_href": "/profile/Pulkit-Gupta-294"
+                },
+                {
+                    "user_id": "Yasasvi Attaluri",
+                    "user_href": "/profile/Yasasvi-Attaluri-1"
+                },
+                {
+                    "user_id": "Ginger Bread",
+                    "user_href": "/profile/Ginger-Bread-26"
+                },
+                {
+                    "user_id": "Tapiwa Ushe",
+                    "user_href": "/profile/Tapiwa-Ushe-1"
+                },
+                {
+                    "user_id": "Gunjan Kothari",
+                    "user_href": "/profile/Gunjan-Kothari-3"
+                },
+                {
+                    "user_id": "Nick Denomme",
+                    "user_href": "/profile/Nick-Denomme"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sofien Kaabar",
+                "href": "/profile/Sofien-Kaabar"
+            },
+            "answer_text": "Leonardo Bonacci also known as Leonardo Fibonacci (which is a nickname to say son of Bonacci), has created one of the most fascinating series in our universe using simple addition techniques while observing rabbit populations. Now, to be fair, there is some evidence that suggest Indian mathematicians knew this sequence beforehand, we will stick to the widely accepted fact that Fibonacci came up with the sequence (Although, knowing the bright scientific and mathematical history of Indian researchers, I wouldn\u2019t be surprised to know that they were the ones who discovered it first). Fibonacci numbers are simply obtained using the following simple formula for n > 2:  This gives us the following sequence that goes to infinity: 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, \u2026. The beauty of this sequence is that it is related to nature. For example, it appears the flowering of the artichoke, some flower petals such as Daisies, honeybees, etc.. Does it even occur in the galaxy spirals? There is even a very interesting observation based on facts that suggests that the dimensions of the Earth and Moon are in Phi relationship, forming a Triangle based on 1.618, by Gary Meisner. But what is Phi, and what is this 1.618? If we take any two successive numbers in the sequence, their ratio (Xn / Xn-1) gets closer to 1.618 which is what we call the golden ratio:3 / 2 = 1.513 / 8 = 1.66655 / 34 = 1.61764233 / 144 = 1.61805\u2026317,811 / 196,418 = 1.61803 Going to infinity, the ratios get closer to 1.618, also known as Phi (\u03d5). We will discuss Phi in greater details down the list.  The Fibonacci Spiral. The sequence is used in many applications in financial trading (I\u2019ve written about this here: Harmonic patterns in the FX market. How to detect them? Focus on ABCD\u2019s), planning poker, and other fields. We have already discussed this ratio, but it is probably the most important ratio in the world (It was named by the Greeks). Here\u2019s a list of its characteristics: The reciprocal of 0.618 is simply 1 + 0.618. Hence, 1 / \u03d5 \u2248 1 + \u03d5It appears in Nature (as previously mentioned). Some tree branches are an example. The main trunk will grow until it produces a branch thus creating two new starting points. One of the starting points will grow two others while the other will not. The pattern is similar to the Fibonacci pattern. It is believed to represent Beauty and even though this belief is not proven, it remains interesting to know how our minds define beauty. For example, the face. Now, the following is probably not the most accurate research made but Dr. Schmid has a 10 scale ratio with 10 as the highest (most beautiful person) with most people scoring between 4 and 6. The beauty metric is first measured by the length and the width of the face then divides by the width. The optimal result is 1.618. Meaning a beautiful person\u2019s face is 1.618 longer than it\u2019s width. Later on, other ratios are calculated such as the bottom of the nose to the bottom of the chin. Finally, symmetry tests are performed to check out more beauty metrics. Dr. Schmid says that the length of the ear should be equal to the length of the nose on a perfect face, among other characteristics.It is believed that the ratio of our arm to our forehand is equal to \u03d5.It is present in Geometry. Many buildings and artworks have the Golden Ratio in them, An example would be the Parthenon in Greece.The pantagram has the golden ratio embedded inside of it.",
+            "date": "Answered September 15, 2020",
+            "views": "23",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nina Williams",
+                    "user_href": "/profile/Nina-Williams-202"
+                },
+                {
+                    "user_id": "Nicolas Fley",
+                    "user_href": "/profile/Nicolas-Fley-1"
+                },
+                {
+                    "user_id": "Maria Elena",
+                    "user_href": "/profile/Maria-Elena-185"
+                },
+                {
+                    "user_id": "Nate Clover",
+                    "user_href": "/profile/Nate-Clover"
+                },
+                {
+                    "user_id": "Andre Johansson",
+                    "user_href": "/profile/Andre-Johansson-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vivek GBS",
+                "href": "/profile/Vivek-GBS"
+            },
+            "answer_text": "A great real time application of Fibonacci series that\u2019s used mostly these days as an unknown fact are the mile to kilometer conversion & Kilometer to mile conversion\u2026.. Let\u2019s now see the Fibonacci series : 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144,\u2026 For example : Mile to kilometer conversion : If we take a number from Fibonacci series i.e., 8 then the kilometer value will be 12.874752 by formulae, which is nearly 13 by rounding.Kilometer to mile conversion : If we take a number from Fibonacci series i.e., 89 as kilometer value then mile value will be 55.30203610912272 by formulae, which could be considered as 55 by rounding.Finally in both conversions, the left element will be considered as mile value and right element will be considered as Kilometer value in the Fibonacci series. ",
+            "date": "Answered August 5, 2017",
+            "views": "487",
+            "upvotes": " View 112 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kyra Alexie Advincula",
+                    "user_href": "/profile/Kyra-Alexie-Advincula-1"
+                },
+                {
+                    "user_id": "Andy Hu",
+                    "user_href": "/profile/Andy-Hu-114"
+                },
+                {
+                    "user_id": "Kruthik H.m",
+                    "user_href": "/profile/Kruthik-H-m"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Sumit Singh",
+                    "user_href": "/profile/Sumit-Singh-370"
+                },
+                {
+                    "user_id": "Akinwande Emily",
+                    "user_href": "/profile/Akinwande-Emily"
+                },
+                {
+                    "user_id": "Akash Jyothivas",
+                    "user_href": "/profile/Akash-Jyothivas"
+                },
+                {
+                    "user_id": "Gunasekaran A",
+                    "user_href": "/profile/Gunasekaran-A-2"
+                },
+                {
+                    "user_id": "Gideon Emmanuel",
+                    "user_href": "/profile/Gideon-Emmanuel"
+                },
+                {
+                    "user_id": "Sharath Chandra",
+                    "user_href": "/profile/Sharath-Chandra-116"
+                },
+                {
+                    "user_id": "Kalel Sourabh",
+                    "user_href": "/profile/Kalel-Sourabh"
+                },
+                {
+                    "user_id": "Kandra Vamsi (\u0c15\u0c3e\u0c02\u0c21\u0c4d\u0c30 \u0c35\u0c02\u0c36\u0c40)",
+                    "user_href": "/profile/Kandra-Vamsi-\u0c15\u0c3e\u0c02\u0c21\u0c4d\u0c30-\u0c35\u0c02\u0c36\u0c40"
+                },
+                {
+                    "user_id": "Mohammed Mohsin Khan",
+                    "user_href": "/profile/Mohammed-Mohsin-Khan-20"
+                },
+                {
+                    "user_id": "Thilakraj RK",
+                    "user_href": "/profile/Thilakraj-RK"
+                },
+                {
+                    "user_id": "Android Developer",
+                    "user_href": "/profile/Android-Developer-106"
+                },
+                {
+                    "user_id": "Raphael Gerstel",
+                    "user_href": "/profile/Raphael-Gerstel"
+                },
+                {
+                    "user_id": "Vijey Yuvaraj",
+                    "user_href": "/profile/Vijey-Yuvaraj"
+                },
+                {
+                    "user_id": "Ramasamy Pp",
+                    "user_href": "/profile/Ramasamy-Pp"
+                },
+                {
+                    "user_id": "Sayak Chakrabarty",
+                    "user_href": "/profile/Sayak-Chakrabarty-1"
+                },
+                {
+                    "user_id": "Hong Hanh Do",
+                    "user_href": "/profile/Hong-Hanh-Do-4"
+                },
+                {
+                    "user_id": "Khaled Sobhy",
+                    "user_href": "/profile/Khaled-Sobhy-6"
+                },
+                {
+                    "user_id": "Rohit Sawant",
+                    "user_href": "/profile/Rohit-Sawant-203"
+                },
+                {
+                    "user_id": "Deleted person",
+                    "user_href": "/profile/Deleted-person-1"
+                },
+                {
+                    "user_id": "Ann Hatt",
+                    "user_href": "/profile/Ann-Hatt-1"
+                },
+                {
+                    "user_id": "Naveen Anand",
+                    "user_href": "/profile/Naveen-Anand-14"
+                },
+                {
+                    "user_id": "Sasanka Samaratunga",
+                    "user_href": "/profile/Sasanka-Samaratunga"
+                },
+                {
+                    "user_id": "Saurabh Sethy",
+                    "user_href": "/profile/Saurabh-Sethy"
+                },
+                {
+                    "user_id": "Suhail A.S",
+                    "user_href": "/profile/Suhail-A-S-2"
+                },
+                {
+                    "user_id": "Harshitha Thummalapalli",
+                    "user_href": "/profile/Harshitha-Thummalapalli"
+                },
+                {
+                    "user_id": "Balaji Reddy",
+                    "user_href": "/profile/Balaji-Reddy-77"
+                },
+                {
+                    "user_id": "Saptarshi Sabui",
+                    "user_href": "/profile/Saptarshi-Sabui-1"
+                },
+                {
+                    "user_id": "Deepak Goyal",
+                    "user_href": "/profile/Deepak-Goyal-275"
+                },
+                {
+                    "user_id": "Harsh Kulkarni",
+                    "user_href": "/profile/Harsh-Kulkarni-12"
+                },
+                {
+                    "user_id": "Jameel Ahamed",
+                    "user_href": "/profile/Jameel-Ahamed-7"
+                },
+                {
+                    "user_id": "Christian Edgar Gonzalez Hrisuk",
+                    "user_href": "/profile/Christian-Edgar-Gonzalez-Hrisuk"
+                },
+                {
+                    "user_id": "Arjun B Nair",
+                    "user_href": "/profile/Arjun-B-Nair-1"
+                },
+                {
+                    "user_id": "Sri Charan",
+                    "user_href": "/profile/Sri-Charan-170"
+                },
+                {
+                    "user_id": "Ashish Pathak",
+                    "user_href": "/profile/Ashish-Pathak-181"
+                },
+                {
+                    "user_id": "Sumit Bhise",
+                    "user_href": "/profile/Sumit-Bhise-2"
+                },
+                {
+                    "user_id": "Siddhi Goel",
+                    "user_href": "/profile/Siddhi-Goel-3"
+                },
+                {
+                    "user_id": "Nishant Soni",
+                    "user_href": "/profile/Nishant-Soni-143"
+                },
+                {
+                    "user_id": "Narayan Dalai",
+                    "user_href": "/profile/Narayan-Dalai"
+                },
+                {
+                    "user_id": "Priyanshu Joshi",
+                    "user_href": "/profile/Priyanshu-Joshi-14"
+                },
+                {
+                    "user_id": "Nagarjuna Annu",
+                    "user_href": "/profile/Nagarjuna-Annu"
+                },
+                {
+                    "user_id": "Kamal",
+                    "user_href": "/profile/Kamal-469"
+                },
+                {
+                    "user_id": "Ganapathi",
+                    "user_href": "/profile/Ganapathi-27"
+                },
+                {
+                    "user_id": "Kazi Mehebub Rahaman",
+                    "user_href": "/profile/\u0995\u09be\u099c\u09c0-\u09ae\u09c7\u09b9\u09c7\u09ac\u09c1\u09ac-\u09b0\u09b9\u09ae\u09be\u09a8-Kazi-Mehebub-Rahaman"
+                },
+                {
+                    "user_id": "Azmat Jahan",
+                    "user_href": "/profile/Azmat-Jahan-1"
+                },
+                {
+                    "user_id": "Nikhilsai Chiluveru",
+                    "user_href": "/profile/Nikhilsai-Chiluveru"
+                },
+                {
+                    "user_id": "Daya Patel",
+                    "user_href": "/profile/Daya-Patel-10"
+                },
+                {
+                    "user_id": "Dale Archer",
+                    "user_href": "/profile/Dale-Archer-6"
+                },
+                {
+                    "user_id": "Zack Roberts",
+                    "user_href": "/profile/Zack-Roberts-3"
+                },
+                {
+                    "user_id": "Anil Kumar",
+                    "user_href": "/profile/Anil-Kumar-874"
+                },
+                {
+                    "user_id": "Arbind Kumar",
+                    "user_href": "/profile/Arbind-Kumar-4"
+                },
+                {
+                    "user_id": "Petar Sokoloski",
+                    "user_href": "/profile/Petar-Sokoloski-1"
+                },
+                {
+                    "user_id": "Justine Riant",
+                    "user_href": "/profile/Justine-Riant"
+                },
+                {
+                    "user_id": "Pratik Ganguly",
+                    "user_href": "/profile/Pratik-Ganguly-6"
+                },
+                {
+                    "user_id": "Harshinee Mahesh",
+                    "user_href": "/profile/Harshinee-Mahesh"
+                },
+                {
+                    "user_id": "Sarat Chandra Y.V.S",
+                    "user_href": "/profile/Sarat-Chandra-Y-V-S"
+                },
+                {
+                    "user_id": "Manju Prasad K S",
+                    "user_href": "/profile/Manju-Prasad-K-S"
+                },
+                {
+                    "user_id": "Prabhakar Bhaskaran",
+                    "user_href": "/profile/Prabhakar-Bhaskaran"
+                },
+                {
+                    "user_id": "Ray Daapala",
+                    "user_href": "/profile/Ray-Daapala"
+                },
+                {
+                    "user_id": "Rashedul Alam",
+                    "user_href": "/profile/Rashedul-Alam-12"
+                },
+                {
+                    "user_id": "Sallagonda Avinash Reddy",
+                    "user_href": "/profile/Sallagonda-Avinash-Reddy"
+                },
+                {
+                    "user_id": "Joe Wezorek",
+                    "user_href": "/profile/Joe-Wezorek"
+                },
+                {
+                    "user_id": "Srilakshmi",
+                    "user_href": "/profile/Srilakshmi-44"
+                },
+                {
+                    "user_id": "Avinandan Patel",
+                    "user_href": "/profile/Avinandan-Patel-3"
+                },
+                {
+                    "user_id": "Abilash",
+                    "user_href": "/profile/Abilash-21"
+                },
+                {
+                    "user_id": "Gaurav Yaduvanshi",
+                    "user_href": "/profile/Gaurav-Yaduvanshi-2"
+                },
+                {
+                    "user_id": "Siva Chandran",
+                    "user_href": "/profile/Siva-Chandran-1"
+                },
+                {
+                    "user_id": "Palak Jain",
+                    "user_href": "/profile/Palak-Jain-286"
+                },
+                {
+                    "user_id": "Santosh Singh",
+                    "user_href": "/profile/Santosh-Singh-1541"
+                },
+                {
+                    "user_id": "Malneedi Vamsi",
+                    "user_href": "/profile/Malneedi-Vamsi"
+                },
+                {
+                    "user_id": "Sanjay Mucharla",
+                    "user_href": "/profile/Sanjay-Mucharla"
+                },
+                {
+                    "user_id": "Ericka Malimban",
+                    "user_href": "/profile/Ericka-Malimban"
+                },
+                {
+                    "user_id": "Vinod Kumar",
+                    "user_href": "/profile/Vinod-Kumar-2906"
+                },
+                {
+                    "user_id": "Dhivya Thulasi",
+                    "user_href": "/profile/Dhivya-Thulasi"
+                },
+                {
+                    "user_id": "Vaghesh Patel",
+                    "user_href": "/profile/Vaghesh-Patel"
+                },
+                {
+                    "user_id": "Shubham Singh",
+                    "user_href": "/profile/\u0936\u0941\u092d\u092e-\u0938\u093f\u0902\u0939-Shubham-Singh"
+                },
+                {
+                    "user_id": "Abdallah M",
+                    "user_href": "/profile/Abdallah-M-3"
+                },
+                {
+                    "user_id": "Khang Nguyen",
+                    "user_href": "/profile/Khang-Nguyen-1"
+                },
+                {
+                    "user_id": "Muhammed Rifas",
+                    "user_href": "/profile/Muhammed-Rifas-1"
+                },
+                {
+                    "user_id": "Prashant Pathak",
+                    "user_href": "/profile/Prashant-Pathak-19"
+                },
+                {
+                    "user_id": "Bigya Bajracharya",
+                    "user_href": "/profile/Bigya-Bajracharya"
+                },
+                {
+                    "user_id": "Deepak Gopalakrishnan",
+                    "user_href": "/profile/Deepak-Gopalakrishnan-1"
+                },
+                {
+                    "user_id": "Sahana Javgal",
+                    "user_href": "/profile/Sahana-Javgal"
+                },
+                {
+                    "user_id": "Joel Suovaniemi",
+                    "user_href": "/profile/Joel-Suovaniemi"
+                },
+                {
+                    "user_id": "Atul Chaturvedi",
+                    "user_href": "/profile/Atul-Chaturvedi-6"
+                },
+                {
+                    "user_id": "Vaishnav Dhore",
+                    "user_href": "/profile/Vaishnav-Dhore"
+                },
+                {
+                    "user_id": "Vidhi Mehta",
+                    "user_href": "/profile/Vidhi-Mehta-82"
+                },
+                {
+                    "user_id": "Rithvik Kranti",
+                    "user_href": "/profile/Rithvik-Kranti-1"
+                },
+                {
+                    "user_id": "Sushant Maurya",
+                    "user_href": "/profile/Sushant-Maurya-2"
+                },
+                {
+                    "user_id": "Geethu Ravikkumar",
+                    "user_href": "/profile/Geethu-Ravikkumar"
+                },
+                {
+                    "user_id": "LikhithaReddy",
+                    "user_href": "/profile/LikhithaReddy-1"
+                },
+                {
+                    "user_id": "Hari Atharsh",
+                    "user_href": "/profile/Hari-Atharsh"
+                },
+                {
+                    "user_id": "Chaitanya Bonagiri",
+                    "user_href": "/profile/Chaitanya-Bonagiri-2"
+                },
+                {
+                    "user_id": "Rashmi Kant Nagar",
+                    "user_href": "/profile/Rashmi-Kant-Nagar"
+                },
+                {
+                    "user_id": "Srivignesh Rajan",
+                    "user_href": "/profile/Srivignesh-Rajan-1"
+                },
+                {
+                    "user_id": "Shaan Mutreja",
+                    "user_href": "/profile/Shaan-Mutreja"
+                },
+                {
+                    "user_id": "Subrahmanyam Vemuri",
+                    "user_href": "/profile/Subrahmanyam-Vemuri-1"
+                },
+                {
+                    "user_id": "Robin Chawla",
+                    "user_href": "/profile/Robin-Chawla-2"
+                },
+                {
+                    "user_id": "Amit Haldar",
+                    "user_href": "/profile/Amit-Haldar"
+                },
+                {
+                    "user_id": "Sridhar Arumugasamy",
+                    "user_href": "/profile/Sridhar-Arumugasamy-1"
+                },
+                {
+                    "user_id": "Selenia Nights",
+                    "user_href": "/profile/Selenia-Nights"
+                },
+                {
+                    "user_id": "Arjun Gulyani",
+                    "user_href": "/profile/Arjun-Gulyani"
+                },
+                {
+                    "user_id": "Vivek S",
+                    "user_href": "/profile/Vivek-S-45"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Abc-Def-193"
+                },
+                {
+                    "user_id": "Alok Pandey",
+                    "user_href": "/profile/Alok-Pandey-23"
+                },
+                {
+                    "user_id": "Lakshay Kainth",
+                    "user_href": "/profile/Lakshay-Kainth"
+                },
+                {
+                    "user_id": "Pramila Khemka",
+                    "user_href": "/profile/Pramila-Khemka"
+                },
+                {
+                    "user_id": "Vinayak Pal",
+                    "user_href": "/profile/Vinayak-Pal-1"
+                },
+                {
+                    "user_id": "Shashanka Bharath",
+                    "user_href": "/profile/Shashanka-Bharath"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Meghashree Bakshetti",
+                "href": "/profile/Meghashree-Bakshetti"
+            },
+            "answer_text": " In music- In a scale dominant note is the 5th note of major scale which is also the 8th note of all 13 notes that comprise octave. This provides an added instance of fibonacci numbers in key musical relationship interestingly,8/13 is .61538 which approximates Phi.  Fibonacci sequences appear in biological setting in two consecutive fibonacci numbers, such as branching of trees,arrangement of leaves on stem,the fruitlets of pineapple ,the flowering of artichoke & arrangement of pine cone & family tree of honeybees.  The seeds on a sunflower ,the spirals of shells & the curves of waves. A one dimensional optimization technique method called the fibonacci search techniques uses fibonacci numbers.The fibonacci numbers are also an example of acomplete sequnce this means that every pisitive integer can be written as a sum of fibonacci numbers,where any one number is used once at most.They are also used in planning poker which is step in estimating in software development that use the scrum(software development) methodology.",
+            "date": "Answered November 10, 2017",
+            "views": "183",
+            "upvotes": " View 31 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vidhi Upadhyay",
+                    "user_href": "/profile/Vidhi-Upadhyay-22"
+                },
+                {
+                    "user_id": "MPDSN",
+                    "user_href": "/profile/MPDSN"
+                },
+                {
+                    "user_id": "Natasha Carlos",
+                    "user_href": "/profile/Natasha-Carlos-2"
+                },
+                {
+                    "user_id": "Vibha Phatak",
+                    "user_href": "/profile/Vibha-Phatak"
+                },
+                {
+                    "user_id": "Dibajyoti Nag",
+                    "user_href": "/profile/Dibajyoti-Nag"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Wesley Neill",
+                    "user_href": "/profile/Wesley-Neill"
+                },
+                {
+                    "user_id": "Suraj Kumar",
+                    "user_href": "/profile/Suraj-Kumar-2013"
+                },
+                {
+                    "user_id": "Chuck Gafford",
+                    "user_href": "/profile/Chuck-Gafford"
+                },
+                {
+                    "user_id": "Kumar Sameer",
+                    "user_href": "/profile/Kumar-Sameer-2"
+                },
+                {
+                    "user_id": "Alara John",
+                    "user_href": "/profile/Alara-John"
+                },
+                {
+                    "user_id": "Devansh Bansal",
+                    "user_href": "/profile/Devansh-Bansal-23"
+                },
+                {
+                    "user_id": "Mina Coco",
+                    "user_href": "/profile/Mina-Coco"
+                },
+                {
+                    "user_id": "Shamaila Hassnain",
+                    "user_href": "/profile/Shamaila-Hassnain-1"
+                },
+                {
+                    "user_id": "Anirudh Krishnan",
+                    "user_href": "/profile/Anirudh-Krishnan-19"
+                },
+                {
+                    "user_id": "Abdul Basit Shaikh",
+                    "user_href": "/profile/Abdul-Basit-Shaikh-14"
+                },
+                {
+                    "user_id": "Alex Yursha",
+                    "user_href": "/profile/Alex-Yursha-2"
+                },
+                {
+                    "user_id": "Petar Sokoloski",
+                    "user_href": "/profile/Petar-Sokoloski-1"
+                },
+                {
+                    "user_id": "Prashanth Reddy",
+                    "user_href": "/profile/Prashanth-Reddy-192"
+                },
+                {
+                    "user_id": "Tar Gos",
+                    "user_href": "/profile/Tar-Gos"
+                },
+                {
+                    "user_id": "Malar Gengagaran",
+                    "user_href": "/profile/Malar-Gengagaran"
+                },
+                {
+                    "user_id": "Bhupendra Charan",
+                    "user_href": "/profile/Bhupendra-Charan-1"
+                },
+                {
+                    "user_id": "Ashly Paul",
+                    "user_href": "/profile/Ashly-Paul-6"
+                },
+                {
+                    "user_id": "Rahul Sargam",
+                    "user_href": "/profile/\u0930\u093e\u0939\u0941\u0932-\u0938\u0930\u0917\u092e-Rahul-Sargam"
+                },
+                {
+                    "user_id": "Ivan Sam Santosham",
+                    "user_href": "/profile/Ivan-Sam-Santosham"
+                },
+                {
+                    "user_id": "Pallav Kumar",
+                    "user_href": "/profile/Pallav-Kumar-33"
+                },
+                {
+                    "user_id": "Rohan Birari",
+                    "user_href": "/profile/Rohan-Birari"
+                },
+                {
+                    "user_id": "Lokesh B",
+                    "user_href": "/profile/Lokesh-B-19"
+                },
+                {
+                    "user_id": "Indransh Bhadauria",
+                    "user_href": "/profile/Indransh-Bhadauria"
+                },
+                {
+                    "user_id": "Padmanabhan Bharadwaj",
+                    "user_href": "/profile/Padmanabhan-Bharadwaj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Purtee",
+                "href": "/profile/Steve-Purtee-1"
+            },
+            "answer_text": "There really aren't any. Rabbits don't actually multiply following the sequence. Natural spirals like galaxies and snail shells kinda follow the Golden Spiral, which is tangentially related to the sequence. But all spirals kinda do, if you fudge the numbers a bit. The Fibonacci Sequence is a somewhat interesting sequence to use as an example when teaching recussively defined sequences, but that's about it. Mathematicians don't really care about it all that much, and it really has no metaphysical properties. Dan Brown just made it out to be much more than it really is. ",
+            "date": "Answered April 21, 2019",
+            "views": "49",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Medico-26"
+                },
+                {
+                    "user_id": "Soroush Al",
+                    "user_href": "/profile/Soroush-Al-1"
+                },
+                {
+                    "user_id": "Krishnan Trichur Narayanan",
+                    "user_href": "/profile/Krishnan-Trichur-Narayanan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Lossman",
+                "href": "/profile/Dave-Lossman"
+            },
+            "answer_text": "How about when you oscillate into existence? The heart is the first spec of life to materialize from the miracle of life. It\u2019s spirals out the rest of you over about nine months and then finds it\u2019s way to the exact center of your biomass. Understanding how everything is fractal reality within ourselves to our world and out to the endless sea of space. Insight to how all things grow, spread and evolve. The movement of energy, blood, air, clouds, storms, water\u2026 Just stop pumping metallic ratio questions folks, no one gives any kind of crap. Never going to profit from such a dead topic. I\u2019m done either way, it\u2019s been a pleasure, my favorite topic. Thanks, Peace, DjL. ",
+            "date": "Answered October 25, 2019",
+            "views": "3",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Pen Boole",
+                    "user_href": "/profile/Pen-Boole"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Rising",
+                "href": "/profile/Justin-Rising"
+            },
+            "answer_text": "Fibonacci numbers are used in Fibonacci heaps, which are a data structure that can be used to speed up some very practical algorithms. ",
+            "date": "Updated December 19, 2017",
+            "views": "963",
+            "upvotes": " View 34 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vidhi Upadhyay",
+                    "user_href": "/profile/Vidhi-Upadhyay-22"
+                },
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                },
+                {
+                    "user_id": "Robert Shelley",
+                    "user_href": "/profile/Robert-Shelley-21"
+                },
+                {
+                    "user_id": "Shanelle Panganiban",
+                    "user_href": "/profile/Shanelle-Panganiban-1"
+                },
+                {
+                    "user_id": "Alex Yursha",
+                    "user_href": "/profile/Alex-Yursha-2"
+                },
+                {
+                    "user_id": "Abilash",
+                    "user_href": "/profile/Abilash-21"
+                },
+                {
+                    "user_id": "Jake E. Hubilla",
+                    "user_href": "/profile/Jake-E-Hubilla"
+                },
+                {
+                    "user_id": "Pulkit Gupta",
+                    "user_href": "/profile/Pulkit-Gupta-294"
+                },
+                {
+                    "user_id": "Jimmy Chris",
+                    "user_href": "/profile/Jimmy-Chris-3"
+                },
+                {
+                    "user_id": "N O",
+                    "user_href": "/profile/N-O-101"
+                },
+                {
+                    "user_id": "John Thomas Miller",
+                    "user_href": "/profile/John-Thomas-Miller"
+                },
+                {
+                    "user_id": "Vaishnavi Rastogi",
+                    "user_href": "/profile/Vaishnavi-Rastogi-7"
+                },
+                {
+                    "user_id": "Shashank Jm",
+                    "user_href": "/profile/Shashank-Jm-1"
+                },
+                {
+                    "user_id": "Darius Umarov",
+                    "user_href": "/profile/Darius-Umarov"
+                },
+                {
+                    "user_id": "Ben Ghrist",
+                    "user_href": "/profile/Ben-Ghrist"
+                },
+                {
+                    "user_id": "Trish Wallace",
+                    "user_href": "/profile/Trish-Wallace-4"
+                },
+                {
+                    "user_id": "Selenia Nights",
+                    "user_href": "/profile/Selenia-Nights"
+                },
+                {
+                    "user_id": "Sumia Irshad",
+                    "user_href": "/profile/Sumia-Irshad"
+                },
+                {
+                    "user_id": "Bhasker Thapa",
+                    "user_href": "/profile/Bhasker-Thapa"
+                },
+                {
+                    "user_id": "John Roberson",
+                    "user_href": "/profile/John-Roberson"
+                },
+                {
+                    "user_id": "Cooper Rush",
+                    "user_href": "/profile/Cooper-Rush"
+                },
+                {
+                    "user_id": "Suresh Sankaranarayanan",
+                    "user_href": "/profile/Suresh-Sankaranarayanan-1"
+                },
+                {
+                    "user_id": "Carson Johnson",
+                    "user_href": "/profile/Carson-Johnson-9"
+                },
+                {
+                    "user_id": "Emilin K. Baby",
+                    "user_href": "/profile/Emilin-K-Baby"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Vali-Gi-1"
+                },
+                {
+                    "user_id": "Nilesh Shukla",
+                    "user_href": "/profile/Nilesh-Shukla-6"
+                },
+                {
+                    "user_id": "Coleen Vitor",
+                    "user_href": "/profile/Coleen-Vitor"
+                },
+                {
+                    "user_id": "M\u00e1t\u00e9 Kov\u00e1cs",
+                    "user_href": "/profile/M\u00e1t\u00e9-Kov\u00e1cs-3"
+                },
+                {
+                    "user_id": "Tikhon Jelvis",
+                    "user_href": "/profile/Tikhon-Jelvis"
+                },
+                {
+                    "user_id": "Toby Thain",
+                    "user_href": "/profile/Toby-Thain"
+                },
+                {
+                    "user_id": "R. Shreevatsa",
+                    "user_href": "/profile/R-Shreevatsa"
+                },
+                {
+                    "user_id": "Edwin Khoo",
+                    "user_href": "/profile/Edwin-Khoo"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Andy-cai-20"
+                },
+                {
+                    "user_id": "Alok Tripathy",
+                    "user_href": "/profile/Alok-Tripathy-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vikrant Badhani",
+                "href": "/profile/Vikrant-Badhani"
+            },
+            "answer_text": "The Fibonacci sequence has a greater significance than simply answering hypothetical rabbit breeding questions. This mysterious sequence appears all around us in nature. The petals of a flower, the seeds of fruits, rows of seeds on a sun flower or the lobes of pinecones and even the spirals on a shell develop or add up to the Fibonacci numbers.  ",
+            "date": "Answered November 22, 2016",
+            "views": "241",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quilbenhembra John",
+                    "user_href": "/profile/Quilbenhembra-John"
+                },
+                {
+                    "user_id": "Vijay Shinde",
+                    "user_href": "/profile/Vijay-Shinde-42"
+                },
+                {
+                    "user_id": "Debasmit Roy",
+                    "user_href": "/profile/Debasmit-Roy-1"
+                },
+                {
+                    "user_id": "Chuck Gafford",
+                    "user_href": "/profile/Chuck-Gafford"
+                },
+                {
+                    "user_id": "Pulkit Gupta",
+                    "user_href": "/profile/Pulkit-Gupta-294"
+                },
+                {
+                    "user_id": "Tejaswynnee Chatla",
+                    "user_href": "/profile/Tejaswynnee-Chatla"
+                },
+                {
+                    "user_id": "Subbu Senthil",
+                    "user_href": "/profile/Subbu-Senthil"
+                },
+                {
+                    "user_id": "Sidvin Hegde",
+                    "user_href": "/profile/Sidvin-Hegde"
+                },
+                {
+                    "user_id": "Shaan Mutreja",
+                    "user_href": "/profile/Shaan-Mutreja"
+                },
+                {
+                    "user_id": "Nisha Deshmukh",
+                    "user_href": "/profile/Nisha-Deshmukh-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Faisal Khan",
+                "href": "/profile/Faisal-Khan-1"
+            },
+            "answer_text": "They are used in charting analysis (technical analysis) in stock trading along with trend lines and candlestick graphs. ",
+            "date": "Answered December 17, 2014",
+            "views": "155",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Emmanuel Ayodele",
+                    "user_href": "/profile/Emmanuel-Ayodele-1"
+                },
+                {
+                    "user_id": "Ravi Kamath",
+                    "user_href": "/profile/Ravi-Kamath-6"
+                },
+                {
+                    "user_id": "Wesley Neill",
+                    "user_href": "/profile/Wesley-Neill"
+                },
+                {
+                    "user_id": "Vatsa Narayanan",
+                    "user_href": "/profile/Vatsa-Narayanan"
+                },
+                {
+                    "user_id": "Ashok Chaudhuri",
+                    "user_href": "/profile/Ashok-Chaudhuri-1"
+                },
+                {
+                    "user_id": "Abdul Basit Shaikh",
+                    "user_href": "/profile/Abdul-Basit-Shaikh-14"
+                },
+                {
+                    "user_id": "Nenad Cakic",
+                    "user_href": "/profile/Nenad-Cakic"
+                },
+                {
+                    "user_id": "Tongcheng Li",
+                    "user_href": "/profile/Tongcheng-Li"
+                },
+                {
+                    "user_id": "Marc Bodnick",
+                    "user_href": "/profile/Marc-Bodnick"
+                },
+                {
+                    "user_id": "Bhumija Singh",
+                    "user_href": "/profile/Bhumija-Singh"
+                },
+                {
+                    "user_id": "Snigdh Aman",
+                    "user_href": "/profile/Snigdh-Aman"
+                },
+                {
+                    "user_id": "Fariz Hamid",
+                    "user_href": "/profile/Fariz-Hamid"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Faizan-Ali"
+                },
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Timo Junolainen",
+                "href": "/profile/Timo-Junolainen"
+            },
+            "answer_text": "Well, first association from real life, which comes to mind, is golden ratio. Lets imagine sequence of fibonacci numbers: [math]1,1,2,3,5,8...[/math] Ok. Now suppose we divide each member of sequence by previous: 1/1=12/1=23/2=1.55/3=1.66..\u2026When this thing runs indefinitely, we get 1.615\u2026Sea shells use fibonacci numbers, although I must say that shells might not always develop according to golden ration.  ",
+            "date": "Answered March 1, 2017",
+            "views": "89",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dibajyoti Nag",
+                    "user_href": "/profile/Dibajyoti-Nag"
+                },
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Chuck Gafford",
+                    "user_href": "/profile/Chuck-Gafford"
+                },
+                {
+                    "user_id": "Navya A",
+                    "user_href": "/profile/Navya-A-13"
+                },
+                {
+                    "user_id": "Gustavo Sandoval Kingwergs",
+                    "user_href": "/profile/Gustavo-Sandoval-Kingwergs"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bill Bell",
+                "href": "/profile/Bill-Bell-1"
+            },
+            "answer_text": "Two related applications are the Golden-section search - Wikipedia, for finding the maximum or minimum of a function within an interval, and the Fibonacci search technique - Wikipedia, for searching a sorted array in a manner somewhat similar to binary search. ",
+            "date": "Answered February 10, 2018",
+            "views": "74",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alok Garg",
+                    "user_href": "/profile/Alok-Garg-45"
+                },
+                {
+                    "user_id": "Khang Nguyen",
+                    "user_href": "/profile/Khang-Nguyen-1"
+                },
+                {
+                    "user_id": "Shivanand Dessai Gaonkar",
+                    "user_href": "/profile/Shivanand-Dessai-Gaonkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Naveen Kbs",
+                "href": "/profile/Naveen-Kbs"
+            },
+            "answer_text": "Wikipedia page Fibonacci number has lot of information on this.Few more links:Applications of the Fibonacci sequenceThe Fibonacci Numbers in Nature ",
+            "date": "Answered August 21, 2014",
+            "views": "10",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Prasanth Reddy",
+                    "user_href": "/profile/Prasanth-Reddy-98"
+                },
+                {
+                    "user_id": "Ranga Teja",
+                    "user_href": "/profile/Ranga-Teja"
+                },
+                {
+                    "user_id": "Harish Sharma",
+                    "user_href": "/profile/Harish-Sharma-533"
+                },
+                {
+                    "user_id": "Darwin Emol",
+                    "user_href": "/profile/Darwin-Emol"
+                },
+                {
+                    "user_id": "Usman Rana Ghani",
+                    "user_href": "/profile/Usman-Rana-Ghani"
+                },
+                {
+                    "user_id": "Bhavana Rawlani",
+                    "user_href": "/profile/Bhavana-Rawlani"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rikky Yoelanda Putra",
+                "href": "/profile/Rikky-Yoelanda-Putra"
+            },
+            "answer_text": "Hi, I can't explain most of it since fibbonacci sequences was known as \"nature's numbers\". Maybe this article can help you out, it's describe most of them :www.maths.surrey.ac.uk/hosted-sites/R.Knott/Fibonacci/fibnat.html ",
+            "date": "Answered May 25, 2013",
+            "views": "361",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "SaRan Kumar",
+                    "user_href": "/profile/SaRan-Kumar-43"
+                },
+                {
+                    "user_id": "Vijaya Lakshmi Rv",
+                    "user_href": "/profile/Vijaya-Lakshmi-Rv"
+                },
+                {
+                    "user_id": "Rohit Kar",
+                    "user_href": "/profile/Rohit-Kar"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "title": "How to prove by mathematical induction that n! \u22652^(n-1) for n\u22651 - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Discrete Mathematics",
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "\u00c1lvaro Cuestas",
+                "href": "/profile/\u00c1lvaro-Cuestas-1"
+            },
+            "answer_text": "Let [math]p(n) := n! \u2265 2^{n-1}[/math]. First we check [math]p(1)[/math] holds. Since [math]p(1)[/math] is [math]1! \u2265 2^0[/math], which is the same as [math]1 = 1[/math], we know the property holds for [math]1[/math]. Now we go for the inductive step. Let [math]a = n![/math] and [math]b = 2^{n-1}[/math]. If we assume [math]p(n)[/math], it follows that [math]a\u2265b[/math], and since for all [math]n\u22651[/math] either [math]n+1[/math] is [math]2[/math] or greater than [math]2[/math], then it must be that [math](n+1)a\u22652b[/math]. That proves [math]p(n)\u2192p(n+1)[/math]. And since we have proven [math]p(1)[/math] and [math]p(n) \u2192 p(n+1)[/math], we now know [math]p(n)[/math] holds for any [math]n\u22651[/math]. I think that proof is correct. Maybe you need to prove that if [math]c\u22651[/math] and [math]a\u2265b[/math], then [math]ca\u2265cb[/math]. If you also need to prove no natural number can escape a proof by induction, just consider briefly that well-ordering implies that if one or more than one [math]n[/math] misbehaves (there is a set [math]S[/math] of natural numbers for which [math]p[/math] does not hold), then no other natural smaller than [math]s[/math] (the smallest member of [math]S[/math]) misbehaves. But we proved [math]p(1)[/math], so [math]s[/math] can't be [math]1[/math], and it cannot be the successor of [math]s-1[/math] either, since [math]s-1[/math] is not in [math]S[/math], and we have already proved that [math]p(s-1)[/math] implies [math]p(s)[/math]. Since the existence of [math]S [/math]is contradictory, it must follow that [math]S[/math] does not exist (if this step is troublesome for you, assume \u201ceither [math]p[/math] or not [math]p[/math]\u201d is given). ",
+            "date": "Answered February 7, 2020",
+            "views": "103",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eleftherios Argyropoulos",
+                "href": "/profile/Eleftherios-Argyropoulos"
+            },
+            "answer_text": "We can prove this by at least two ways. First proof: The equality holds only for [math]n = 1[/math] and [math]n = 2[/math]. For every integer bigger than [math]2,[/math] we have: [math]n > 2 => (1)(2)(3)\u2026n > (2)(2)\u2026(2) = 2^{n-1} => n! > 2^{n-1}[/math] Second proof: For [math]n = 1 => 1! = 2^{1\u20131} => 1 = 1[/math] true For [math]n = 2 => 2! = 2^{2\u20131} => 2 = 2[/math] true For [math]n = 3 => 3! > 2^{3\u20131} => 6 > 4[/math] true As we observed before, the equality holds only for [math]n = 1[/math] and [math]n = 2[/math]. We assume that for [math]n = k[/math] we have: [math]k! > 2^{k-1} \u2026 (1)[/math] We will show that: [math](k+1)! > 2^{(k+1)-1} => (k+1)! > 2^k \u2026 (2)[/math] We multiply both sides of [math](1)[/math] by [math]k+1[/math] and we obtain: [math](k+1)k! > (k+1)2^{k-1} => (k+1)! >  (k+1)2^{k-1} \u2026 (3)[/math] Now, we observe that for every [math]k > 2[/math], we have: [math](k+1)2^{k-1} > 2^k[/math] Therefore, since [math](k+1)2^{k-1} > 2^k[/math] and since [math](k+1)! > (k+1)2^{k-1}[/math] it follows that: [math](k+1)! > 2^k[/math] and we are done. ",
+            "date": "Updated February 15, 2020",
+            "views": "100",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                }
+            ]
+        }
+    ]
+}

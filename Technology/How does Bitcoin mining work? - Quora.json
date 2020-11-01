@@ -1,0 +1,113 @@
+{
+    "title": "How does Bitcoin mining work? - Quora",
+    "tags": [
+        "Data Mining",
+        "Virtual Currencies"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tawanda Kembo",
+                "href": "/profile/Tawanda-Kembo"
+            },
+            "answer_text": "What is Bitcoin Mining Unlike traditional Financial Services systems, Bitcoin has no central clearing house. Bitcoin transactions are verified in a decentralised clearing system where people contribute computing resources to verify transactions. This process of verifying transactions in called mining. It's probably called mining because it's analogous to mining of commodities like gold - mining gold requires a lot of effort and resources but there is only so much gold in the earth hence a limited supply and and amount of gold that is mined every year is roughly the same. Similarly, a lot of computing power in consumed in the process of mining Bitcoin and the number of bitcoins that are generated from mining dwindles over time. Also there's a limited supply - only 21 million bitcoins will ever be created. The fact that Bitcoin is a currency with a limited supply is the reason why it's called a deflationary currency. The Purpose of Bitcoin Mining Bitcoin Mining is done to allow Bitcoin Nodes to reach a secure, temper-resistant consensus and people who contribute computing power to Mine Bitcoins are rewarded with transactions fees that were paid in that block and newly created bitcoins. How Bitcoin Mining works Miners verify transactions by running a computer program called a Bitcoin miner. A Bitcoin miner (the computer program) puts together all the transactions that happened in a specific time period (roughly ten minutes) and this group of transactions is called a block. The block is then added to the Blockchain - An immutable historical record of all the Bitcoin transactions. All the miners are trying to guess the hash of the next block so it makes many guesses per second. The first miner to guess the hash gets a reward. Proof of Work & How Miners get Rewarded A proof of work is a piece of data that is produces for a purpose but is difficult (in the sense of time consuming or expensive) to produce. In Bitcoin this difficulty self-adjusts every 2016 blocks (roughly two weeks) and it self-adjusts to get it to take 10 minutes to mine a block. So if, for example, it takes less than two weeks to get 2016 blocks, the difficulty increases. And similarly, if it takes more than two weeks to get 2016 blocks, then the difficulty goes down. When a block is found, the first Miner to find the block may award themselves a certain number of bitcoins (let's call this the bounty) and this is a number that is agreed upon by everybody who using bitcoin (whether they know it or not). At the time of writing (March 2o15) that bounty is 25 bitcoins. When mining started (in 2009) the bounty was 50 bitcoins.  The Bitcoin Protocol is designed such that the bounty halves after every 210000 blocks (roughly every 4 years). When you do the math you will see that only about 21 million bitcoins can ever be generated and the last bitcoins will be generated at around the year 2140.  Miners also get the transactions fees that are paid by users sending transactions. The fee is an incentive for a miner to include the transaction in the next block. Over time, the number of Bitcoins that can be acquired from mining will dwindle but because the number of Bitcoin transactions is expected to increase, at one point in the future, the miners will get most of their income from transaction fees. ASICs & the History of Bitcoin Mining In the early days of Bitcoin (2009), people used to mine on their personal computers using their CPUs. Then a few years later they discovered that Graphics Cards (GPUs) could generate more hashes per unit time than CPUs could so miners began switching to GPU Mining to be more competitive. As more people moved to GPU mining, the difficulty increased thus rendering CPU mining unprofitable. Miners then started moving to computers that were designed specifically for Bitcoin Mining. These computers were called ASICs, which stands for Application Specific Integrated Circuits. Today, it's no longer profitable to mine bitcoin using CPUs and GPUs and miners are now using ASICs for Bitcoin Mining. Mining Pools Mining is really a gamble - only the first miner to uncover the block get the reward. So if everybody is competing for the reward, everybody will go for long, indefinite periods of time before they get the next reward. Miners started to organise themselves into groups and these groups of miners are called Mining Pools. The idea is to combine computing power with everybody else in the group to increase the chances and frequency of getting a block and then sharing the reward with every miner in the pool fairly. References https://en.bitcoin.it/wiki/Mininghttps://en.bitcoin.it/wiki/Proof_of_work",
+            "date": "Updated April 9, 2019",
+            "views": "136",
+            "upvotes": " View 67 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ruben Tomas",
+                    "user_href": "/profile/Ruben-Tomas"
+                },
+                {
+                    "user_id": "Temi Olatunji",
+                    "user_href": "/profile/Temi-Olatunji-7"
+                },
+                {
+                    "user_id": "Albert Green",
+                    "user_href": "/profile/Albert-Green-48"
+                },
+                {
+                    "user_id": "Adam Lapointe",
+                    "user_href": "/profile/Adam-Lapointe-2"
+                },
+                {
+                    "user_id": "Amit Ambastha",
+                    "user_href": "/profile/Amit-Ambastha-3"
+                },
+                {
+                    "user_id": "Vincent Tiong",
+                    "user_href": "/profile/Vincent-Tiong-1"
+                },
+                {
+                    "user_id": "Ayush Mazumdar",
+                    "user_href": "/profile/Ayush-Mazumdar-3"
+                },
+                {
+                    "user_id": "Bill Teeter",
+                    "user_href": "/profile/Bill-Teeter-3"
+                },
+                {
+                    "user_id": "Joseph Jones",
+                    "user_href": "/profile/Joseph-Jones-240"
+                },
+                {
+                    "user_id": "Jacquline White",
+                    "user_href": "/profile/Jacquline-White"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Revett Eldred",
+                "href": "/profile/Revett-Eldred"
+            },
+            "answer_text": "First, the miner takes an unverified transaction out of the unverified transactions pool and verifies it.  This involves tracking back through the blockchain to make sure the sender actually has the bitcoins being sent, checking that the sender is actually the sender and not someone pretending to be him (this through the use of digital signatures), and checking that the recipient is a valid \u2018wallet\u2019 that can accept the transfer.  It then copies that transaction to the block it is building and picks the next unverified transaction in the pool and repeats the validation process on it. When it has amassed the requisite number of transactions to comprise a full block (I\u2019m not sure what that number is at the moment, but it is probably around 500), the miner hashes each transaction.  That just means it applies a standard piece of code (SHA256) against the transaction, which calculates a hash, an otherwise meaningless 256-bit number.  It does this for all transactions in the block. Then it pairs each of the hashes it just produced, and calculates a new hash for each hash pair.  There are now half as many hashes.  It repeats this by pairing the new hashes and hashing them.  Now there are a quarter as many.  It continues doing this, halving the number of hashes each time until it is left with just one hash.  The process is called building a Merkle Tree, and the final resulting hash is called the Merkle Root, named after the guy who conceived it.  (To clarify: His name is Ralph Merkle, not Merkle Root.) Now the miner takes the ID of the previous block in the block chain (ie: the current highest block in the chain), the Merkle Root it just calculated, a time stamp, and a random number called a nonce, and it hashes all them as one, producing yet another 256-bit hash value.  This value is then compared against a system-maintained reference value.  The value just computed has to be less than the reference value to be valid.  Chances are it isn\u2019t, since the reference value is set to be very hard to undercut.  (Example: If the reference value \u2014 itself a 256-bit number \u2014 starts with, say, 25 zeroes, the chance of a random hash also starting with 25 zeroes is 2 to the power 25 against, or over 33 million to one.)  So the miner increases the nonce by 1 and tries again.  One of the characteristics of hashing is that even with a change of just 1 to the nonce, the new hash will be totally and utterly different from the previous one, so finding a hash that starts with 25 zeroes has the same probability each time.  If there are, indeed, 25 leading zeroes as a requirement, it will require, on average, half of 33 million tries to meet the condition, or about 16,000,000 tries.  That\u2019s 16 million hash calculations.  This is what Bitcoin describes as \u2018proof of work\u2019. If and when the miner\u2019s hash finally meets the condition, the miner shouts \u2018Bingo!\u2019 (that\u2019s a technical software term) and appends his new block to the top end of the existing blockchain.  As a reward, he gets to keep an amount of newly minted bitcoins \u2014 the coinbase \u2014 as well as any transaction fees embedded in the transactions in the new block.  This is the incentive for miners to keep on mining. But there is a catch.  (Isn\u2019t there always?) While the miner is doing this, hundreds of other miners are busily doing the same thing.  But only one new block can be validated, so it becomes a race to see who can do all those hashing computations the fastest.  When some miner shouts Bingo, all other miners stop what they are doing and check his work.  It only requires one hash calculation to do that as the nonce that gave the winning number is visible in the new block\u2019s header. This explains why a lot of miners use dozens of computers, each capable of doing as much as 10 million hashes a second.  We\u2019re talking serious computing power here by machines that are designed exclusively for hash calculation.  It also explains why many miners join into pools, in which, regardless of which miner in the pool wins the race, the reward is shared between all of them. But what if two miners create a new block at exactly the same time?  Glad you asked.  But that\u2019s a different answer. I hope this helps.  If not I hope you remain confused but at a higher level. ",
+            "date": "Answered January 25, 2017",
+            "views": "25",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Devin Miller",
+                    "user_href": "/profile/Devin-Miller-63"
+                },
+                {
+                    "user_id": "Albert Green",
+                    "user_href": "/profile/Albert-Green-48"
+                },
+                {
+                    "user_id": "Peter Armstrong",
+                    "user_href": "/profile/Peter-Armstrong-67"
+                },
+                {
+                    "user_id": "Greg Dexter",
+                    "user_href": "/profile/Greg-Dexter-1"
+                },
+                {
+                    "user_id": "Victor Pomary",
+                    "user_href": "/profile/Victor-Pomary"
+                },
+                {
+                    "user_id": "Daka Vishnu Reddy",
+                    "user_href": "/profile/Daka-Vishnu-Reddy"
+                },
+                {
+                    "user_id": "Robert Hendricks",
+                    "user_href": "/profile/Robert-Hendricks-23"
+                },
+                {
+                    "user_id": "Bill Teeter",
+                    "user_href": "/profile/Bill-Teeter-3"
+                },
+                {
+                    "user_id": "Joseph Jones",
+                    "user_href": "/profile/Joseph-Jones-240"
+                },
+                {
+                    "user_id": "Susan Cook",
+                    "user_href": "/profile/Susan-Cook-68"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+{
+    "title": "What does 'empirical unbiased samples tend towards theoretical probability distributions, with increasing sample size' mean? - Quora",
+    "tags": [
+        "Sampling (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ted Wrigley",
+                "href": "/profile/Ted-Wrigley"
+            },
+            "answer_text": "This is common sense, if you consider it in reverse. Let\u2019s say we have a population of 1,000,000 people, and we take large samples from this population without replacement. If we take: a sample of 1,000,000 people, our sample must look exactly like our population, because our sample must contain everyone in our populationa sample of 999,999 people, our sample looks almost exactly like our population, because it is only missing one random persona sample of 999,998 people, our sample looks just a little bit less like our population, because it is only missing two random people\u2026The smaller the sample we choose, the more people are left out of our sample, and the more that chance variability comes into play. So by converse, the larger the sample we choose, the more people are included in our sample, and the less chance variability affects the outcome. We can make a similar argument for \u2018with replacement\u2019 scenarios. In fact, one way of understanding a probability density function is to say that if we took a sample of infinite size of a random event, that sample would look exactly like the probability density function: it would effectively exhaust every possible outcome of that random event. Of course, we normally want to think about this at the other end of the spectrum: how small a sample can we take so that chance variability still gives us a decent approximation of the populations. But still the idea is that if we could take a sample that exhausts all the possible outcomes of a random event, that sample would ipso facto equal the population distribution. ",
+            "date": "Answered May 24, 2017",
+            "views": "420",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                },
+                {
+                    "user_id": "Will Connelly",
+                    "user_href": "/profile/Will-Connelly-3"
+                },
+                {
+                    "user_id": "Benjamin McGraw",
+                    "user_href": "/profile/Benjamin-McGraw-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "It means that the large samples tend to look like the population. Obviously the observations must be selected from the probability distribution (unbiased). \u2018Empirical\u2019 just means \u2018observed\u2019. \u2018Tend to\u2019 means the larger the sample the closer the fit. One interpretation is that a curve through the tops of the bars of a histogram of the sample should look like the density function, so long as the class intervals are small and the sample is large. You can modify this for a discrete distribution. (Actually, there is no proof of this. It can be taken as an axiom. The problem is that it is in theory possible for all observations to be in some small range or something equally peculiar. However, this sort of thing is extremely unlikely\u2014and that can be proved.) ",
+            "date": "Answered May 24, 2017",
+            "views": "178",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Akua Mercy",
+                    "user_href": "/profile/Akua-Mercy-1"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                }
+            ]
+        }
+    ]
+}

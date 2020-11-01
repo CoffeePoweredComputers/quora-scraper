@@ -1,0 +1,82 @@
+{
+    "title": "What is the difference between a pseudo random number and a truly random number? - Quora",
+    "tags": [
+        "Random Number Generators (RNG)",
+        "Randomness (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jo van Schalkwyk",
+                "href": "/profile/Jo-van-Schalkwyk"
+            },
+            "answer_text": "Several good answers already that mostly boil down to: If you\u2019re looking for apparent randomness, a good quality pseudorandom number generator will serve you well unless you\u2019re doing cryptography. For \u2018good quality\u2019 you want something based on e.g. the Mersenne Twister. This is the basis of many current PRNGs. These are deterministic. Changing the seed changes the starting point\u2014but they\u2019re still completely predictable. Use of these for cryptography will utterly compromise your system.If you want truly* random, your choices are limited. Useful options are:Obtaining noise from an electronic circuitBackground noise (e.g. radio noise**)Radioactive decay (usually an expensive option).***Of these, the first is perhaps the most useful. Some modern processors have a built-in random noise generator based on this principle, but if you don\u2019t have access to this, here\u2019s a practical circuit that\u2019s easy to build.  The basic idea is that the reverse-biased Zener diode (1N5235 or similar) provides the noise, which is amplified. (Disclaimer: if you break your PC or the circuit doesn\u2019t work, that\u2019s your responsibility. I provide no guarantees whatsoever. Remember to put the electrolytic caps in the right way around :) If you have some vague skill with electronics, you should be able to breadboard it, plug in a 9V battery, and read the voltage on Vout using the microphone socket of your PC. This is the sort of noise spectrum you\u2019ll get:  The circuit is designed so the noise tapers off above about 20kHz. On your PC you should be able to select the microphone as the source, and listen to the resulting white noise. To actually capture the data, in Linux you might say something like: arecord -f S16_LE -r8000 |od -N1024 -An -j44 -t d2 \u00a0The noise will be normally distributed and likely have an offset bias. Have fun! My 2c, Jo.  *Okay, some determinists will argue that nothing is random. For practical purposes, their blathering can almost be used as a source of entropy :) **There\u2019s a widespread story that some of the noise you get on an old-fashioned TV comes from cosmic background microwave radiation. Claims abound (e.g. Origins: CERN: Ideas: The Big Bang | Exploratorium) but here are some calculations (it\u2019s likely very tiny). ***There are some online sources (mostly broken) but you do have to ask \u201cWho is listening\u201d if you use these for cryptography. You can obtain some \u2018true randomness\u2019 from generators in your operating system, but be very careful, as the entropy of these sources may be limited (among other problems). In Linux, try playing with: cat /dev/urandom | aplay\u00a0",
+            "date": "Answered April 6, 2018",
+            "views": "33",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jan Bours",
+                    "user_href": "/profile/Jan-Bours-1"
+                },
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Gaurav Maheshwari",
+                    "user_href": "/profile/Gaurav-Maheshwari-11"
+                },
+                {
+                    "user_id": "Steven J Owens",
+                    "user_href": "/profile/Steven-J-Owens"
+                },
+                {
+                    "user_id": "Vivienne Marcus",
+                    "user_href": "/profile/Vivienne-Marcus"
+                },
+                {
+                    "user_id": "Michael Penn",
+                    "user_href": "/profile/Michael-Penn-12"
+                },
+                {
+                    "user_id": "Jared Bryan Espiritu",
+                    "user_href": "/profile/Jared-Bryan-Espiritu"
+                },
+                {
+                    "user_id": "Mohamed Hassan",
+                    "user_href": "/profile/Mohamed-Hassan-840"
+                },
+                {
+                    "user_id": "Vikas Dubey",
+                    "user_href": "/profile/\u0bb5\u0bbf\u0b95\u0bbe\u0bb8\u0bcd-\u0ba4\u0bc1\u0baa\u0bc7\u0baf\u0bcd-Vikas-Dubey"
+                },
+                {
+                    "user_id": "Mike Mo",
+                    "user_href": "/profile/Mike-Mo-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mikko Kotila",
+                "href": "/profile/Mikko-Kotila-1"
+            },
+            "answer_text": "First some relevant terminology. There are basically four categories of random numbers: Pseudo randomRegularCryptographically SecureQuasi random (e.g. Sobol and Halton sequences)True randomQuantum randomThe first distinction to make here is between \u201ctrue\u201d and \u201ctruly\u201d random. Whereas \u201ctrue\u201d refers to a type of randomness, \u201ctruly\u201d refers to a state which is perfectly random. One might argue that true and quantum random are somewhat the same thing, but in this categorization quantum refers to a method that implements some form of quantum mechanical contraption to produce the states. In each of these examples, an element of observation is present and therefore none can be consider as \u201ctruly\u201d random. Observation (i.e. identifying a given state) implies affecting the outcome, whereas whatever comes out can\u2019t be random. For example, when we setup a given experiment (instead of some other experiment) to produce true random numbers (e.g. in the style of True Random Number Service), we will get certain kind of output because we decided to use that method. Randomness is a riddle of a sort; once you say random, it can no longer be random. The fact that we are pointing out something limits it from being random, because there is a sense of determinism in us pointing something out.  Research focused on randomness can be described as trying to climb a steep hill that is covered in ice. You might think that you have a strong foothold or grip, but the moment you try to move, you find out that you didn\u2019t ",
+            "date": "Answered October 4, 2018",
+            "views": "19",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Rutter",
+                    "user_href": "/profile/David-Rutter-2"
+                },
+                {
+                    "user_id": "Aditya",
+                    "user_href": "/profile/Aditya-809"
+                }
+            ]
+        }
+    ]
+}

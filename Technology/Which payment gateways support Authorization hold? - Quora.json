@@ -1,0 +1,78 @@
+{
+    "title": "Which payment gateways support Authorization hold? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dean Young",
+                "href": "/profile/Dean-Young-4"
+            },
+            "answer_text": "Let's talk about API payment processors: There are many APIs out there that are as powerful, if not more powerful than traditional payment gateways. To name a few: Stripe, WePay, Braintree, Balanced, and even good ol' PayPal. On the topic of cost, authorization holds (similar to hotels and car rentals) cost money, typically $0.15 per authorization. Some companies absorb this cost. In terms of implementing authorization holds, there are API solutions that are pretty creative and essentially result in essentially the same outcome, but have varying levels of risk and complexity.  $0 authorization - there is a check to see whether a card/account exists and that it can be charged, but no funds are put on holddelayed payouts - the card is charged, then the amount is held in reserve by the platform until authorized or a time limit is met, at which point they are refunded (usually useful for merchants selling physical goods - WePay (company) holds these funds for 14 days before sending them to the merchant)tipping point - a $0 authorization (or I suppose a 14 day delayed payout could be setup if you really wanted to) is put on a card until a goal is met (this is typically useful for crowdfunding campaigns that have an \"all-or-nothing\" model)At the end of the day, it really just comes down to what your use case is and what implementation makes the most sense for your product. ",
+            "date": "Answered August 21, 2013",
+            "views": "31",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Leonid Dashko",
+                    "user_href": "/profile/Leonid-Dashko"
+                },
+                {
+                    "user_id": "Kevin Xu",
+                    "user_href": "/profile/Kevin-Xu-8"
+                },
+                {
+                    "user_id": "Alejandro Villamarin",
+                    "user_href": "/profile/Alejandro-Villamarin"
+                },
+                {
+                    "user_id": "Mark Harris",
+                    "user_href": "/profile/Mark-Harris-14"
+                },
+                {
+                    "user_id": "Tina Hsiao",
+                    "user_href": "/profile/Tina-Hsiao"
+                },
+                {
+                    "user_id": "Santiago Seira",
+                    "user_href": "/profile/Santiago-Seira"
+                },
+                {
+                    "user_id": "Richard B Aberman",
+                    "user_href": "/profile/Richard-B-Aberman"
+                },
+                {
+                    "user_id": "Tyler Gaffney",
+                    "user_href": "/profile/Tyler-Gaffney"
+                },
+                {
+                    "user_id": "Faisal Khan",
+                    "user_href": "/profile/Faisal-Khan-1"
+                },
+                {
+                    "user_id": "Georgia Trakinat",
+                    "user_href": "/profile/Georgia-Trakinat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christine Speedy",
+                "href": "/profile/Christine-Speedy"
+            },
+            "answer_text": "Virtually every gateway I know of supports authorization hold, including authorize.net, Paypal Pro, and CenPOS.  Note that there are specific operating requirements for T&E Merchants- Airline, Car Rental Company, Hotel, or Cruise Line whose primary function is to provide travel- related services. A wholesale distributor with future delivery or equipment rental company that gets authorizations upfront for future settlement each have  different sets of rules.  The card issuing bank determines the hold period, the time when funds are held, typically 3-5 days. The card issuing bank will typically honor an authorization for up to 29 days. However, The Number of Days Between Authorization and Clearing are a factor in interchange fees, the primary cost associated with processing credit/debit cards. A difference between auth amount and settled amount also can impact fees, depending on the industry.  While almost any gateway supports authorization hold, there can be a vast difference in how gateways perform to help merchants manage risk, security, and costs associated with auth and future clearing. CenPOS (I sell this) is an intelligent gateway that offers solutions to merchants seeking more control over transactions. ",
+            "date": "Answered February 26, 2013",
+            "views": "32",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kevin Xu",
+                    "user_href": "/profile/Kevin-Xu-8"
+                },
+                {
+                    "user_id": "Alejandro Villamarin",
+                    "user_href": "/profile/Alejandro-Villamarin"
+                }
+            ]
+        }
+    ]
+}

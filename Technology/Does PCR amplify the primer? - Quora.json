@@ -1,0 +1,47 @@
+{
+    "title": "Does PCR amplify the primer? - Quora",
+    "tags": [
+        "Polymerase Chain Reaction (PCR)",
+        "Laboratory Techniques in Biology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Antonio Carusillo",
+                "href": "/profile/Antonio-Carusillo"
+            },
+            "answer_text": "All the answers provided above, are clear and correct. But i d like just to say that PCR is not SUPPOSED to amply the primers . In the PCR mix you have the sequence you\u2019d like to amply the buffers and of course the primers. What may happen is the primers annealing. In particular when you load tons of primers and few of your sequence of interest you can get a false positive because the primers ( forward and reverse ) are annealing to each other and getting amplified, so most of the signal may came from the amplification of the primers themself instead of you sequence. That's why , in PCR you can carry out a negative controll where you can prepare your PCR mix without the sequence and see If you see any amplification product, mind that this is the condition where primers ( since you have only primers and no sequence ) are most likely to anneal and get amplified. If you get no signal, then you can be sure the primers will not anneal to themself in the real experiment, if you get a signal you should be carefull about what you get from the experiment and suspect a probable primer annelaing. In this case it should be better to redesign your primers. Most of primer design software can give you a score that predicts the probability to have a primer annealing. Note that you can perform a qPCR instead of the PCR and the qPCR software has already an inside program that by showing you the melting curve and the annealing curve may give you information about presence or not of primer annelaing. ",
+            "date": "Answered March 6, 2017",
+            "views": "24",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Freeman Adobe",
+                    "user_href": "/profile/Freeman-Adobe"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/LUCY-JEPKEMOI"
+                },
+                {
+                    "user_id": "Dan Calvano",
+                    "user_href": "/profile/Dan-Calvano"
+                },
+                {
+                    "user_id": "Connor Gallimore",
+                    "user_href": "/profile/Connor-Gallimore"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Donato Calabrese",
+                "href": "/profile/Donato-Calabrese"
+            },
+            "answer_text": "Hi! No, it doesn\u2019t! But more interesting, actually, the number of your primer stay constant and it is the number of filament you will get at the end of the PCR cycle. Think it like\u2026 Every filament of DNA you will get, have to start with a primer, and that primer will stay inside the filament. So, if you drop into the thermocycler 40 primers (It\u2019s just an approximation, you know, there are some consideration on the 5\u2032\u21923\u2032/3\u2032\u21925\u2032, and to be really pedants, you have to take account of the initial number of strands in your solution\u2026 But it\u2019s just to get the idea), at the end of the cycle you will get 40 new filaments of DNA. Not 39, not 41. You can\u2019t get 41 strands because you have finished your primers. They have been inserted in your newly synthetized DNA. So, if you want an huge amount of amplification, you have to mix an huge amount of Primers, that will limit your Dna strand\u2019s number. ",
+            "date": "Answered March 5, 2017",
+            "views": "689",
+            "upvotes": "0"
+        }
+    ]
+}

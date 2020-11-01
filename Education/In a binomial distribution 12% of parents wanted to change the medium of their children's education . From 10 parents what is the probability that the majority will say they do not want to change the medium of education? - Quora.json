@@ -1,0 +1,34 @@
+{
+    "title": "In a binomial distribution 12% of parents wanted to change the medium of their children's education . From 10 parents what is the probability that the majority will say they do not want to change the medium of education? - Quora",
+    "tags": [
+        "Binomial Distribution",
+        "Binomials",
+        "Probability Distributions",
+        "Probability (statistics)",
+        "Statistics (academic discipline)",
+        "Higher Education",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alan Silver",
+                "href": "/profile/Alan-Silver-8"
+            },
+            "answer_text": "To use the binomial distribution , you have to assume the total number of parent used to determine the 12% value is a lot move than 10. If you know the totals number of parents used to determine the 12% value and it wasn\u2019t more larger than 10, then it would be more accurate to use the hyper-geometric distribution. Let\u2019s assume that the 12% is from a sample much larger than 10 or it is infinite. Out of 10 parents, you want the probability that at least 6 (a majority ) randomly chosen parents will says they don\u2019t want to change the medium. P( majority says) = P( k = 6) +P(K=7) + P(k =8) +P(K =9) + P(k =10 ) so plug in the probabilities into the binomial distribution formula for exactly k responses. P( exactly k successes) = (n k ) p^(k) (1-p)^(n-k) where p =probability of success in one trial = 1 - 0.12 = 0.88 n = number of trials = 10 k goes from 6 to 10 (n k ) = nCk = n! / ( k! (n-k)! ) P(k=6) = (10 6 ) (0.88)^6(0.12)^4 P(k =7) = (10 7) (0.88)^7 (0.12)^3 P(k=8) = (10 8) (0.88)^8 (0.12)^2 P(k = 9) = (10 9) (0.88)^9 (0.12) P(k=10) = (10 10) (0.88)^10 so (10 6) = 10!/ (6!4!) = 10*9*8*7/24 =10*9*1*7/3 =10*3*1*7/1 = 210 (10 7) = 10!/ (7!3!) = 10*9*8/6= 10*9*4/3 = 10*3*4 = 120 (10 8) = 10!/ (8! 2!) = 10*9/2 = 45 (10 9) = 10! / (9! 1!) = 10 (10 10) = 10! / (10! 0!) =1 so plug back into the formulas from above P(k=6) = 210 (0.88)^6(0.12)^4 = 0.020222755 P(k =7) = 120 (0.88)^7 (0.12)^3 =0.084742972 P(k=8) = 45 (0.88)^8 (0.12)^2 = 0.233043172 P(k = 9) = 10 (0.88)^9 (0.12) = 0.379774058 P(k=10) = 1 (0.88)^10 = 0.278500976 P(K>=6) = 0.020222755 + 0.084742972+ 0.233043172 + 0.379774058+ 0.278500976 answer: P(K>=6) = 0.996283933 So this is highly likely. 99.628 % chance ",
+            "date": "Answered October 25, 2020",
+            "views": "280",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Charles Grutman",
+                "href": "/profile/Charles-Grutman"
+            },
+            "answer_text": "This is a strange question. 12 percent of ten parents want to change the medium. That is 1.2 parents Out of 10. It\u2019s the 1/5 of a parent that gets me. If the question was 12 percent of 100 parents the answer would be 88 percent. With 10, the probability is closer to 90 percent unless parents can split their vote. ",
+            "date": "Answered October 24, 2020",
+            "views": "207",
+            "upvotes": "0"
+        }
+    ]
+}

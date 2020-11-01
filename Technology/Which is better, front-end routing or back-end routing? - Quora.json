@@ -1,0 +1,53 @@
+{
+    "title": "Which is better, front-end routing or back-end routing? - Quora",
+    "tags": [
+        "Routing",
+        "Backend Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mike Ritchie",
+                "href": "/profile/Mike-Ritchie-2"
+            },
+            "answer_text": "Both if you can do it. The front-end routing will allow you to use AJAX and other dynamic scripting to update the page content and URL, but will appear faster because only the content needs to be updated, not the entire page with its other extraneous content. The backend routing will allow you to render the entire page with all the layout elements, if the user opens a page from a bookmark or a clicked link. For the front-end the key is the HTML5 History API. It lets you change the URL without changing the page itself. There's a bit more to it because you also have to handle the \u201cback\u201d button. For the back-end the key is to have all your controller methods first check to see if the request comes via AJAX, and if so only send the main content partial, otherwise add the layout wrapper to the response. Good luck! ",
+            "date": "Answered August 26, 2017",
+            "views": "19",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fatemeh",
+                    "user_href": "/profile/Fatemeh-36"
+                },
+                {
+                    "user_id": "Muhammad Waleed",
+                    "user_href": "/profile/Muhammad-Waleed-32"
+                },
+                {
+                    "user_id": "Mohamed Adel",
+                    "user_href": "/profile/Mohamed-Adel-133"
+                },
+                {
+                    "user_id": "Stan Marian",
+                    "user_href": "/profile/Stan-Marian-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nathan Daily",
+                "href": "/profile/Nathan-Daily"
+            },
+            "answer_text": "It depends, if you need all the routes to be indexed by Google, you should do backend. If you don't need the routes to be indexed frontend could be a good option, but there is a lot to consider. If someone hits refresh with backend routing it isn't a big deal, but it can be a pain for frontend routing. ",
+            "date": "Answered August 26, 2017",
+            "views": "774",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mohamed Adel",
+                    "user_href": "/profile/Mohamed-Adel-133"
+                }
+            ]
+        }
+    ]
+}

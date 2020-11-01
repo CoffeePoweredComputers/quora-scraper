@@ -1,0 +1,85 @@
+{
+    "title": "What is Bayesian inference in statistics? When and how is Bayesian inference used? - Quora",
+    "tags": [
+        "Bayesian Inference",
+        "Scientific Method"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ben Packer",
+                "href": "/profile/Ben-Packer-1"
+            },
+            "answer_text": "I like Michael Hochster's answer, and I\u2019ll give a related take. Bayesian modeling allows us to encode our prior beliefs about what our statistical models should look like, independent of what the data tells us. This is especially useful when we don\u2019t have a ton of data to confidently learn our model. It also allows us to express uncertainty about an outcome that we\u2019re modeling. A simple example is learning a model of a flipped coin. The model for a particular coin predicts that coin\u2019s probability of landing on heads when it\u2019s flipped \u2014 we\u2019ll call that probability the model\u2019s parameter. One way (a non-Bayesian way) to learn this model is to flip the coin 10 times, and set the model\u2019s parameter to be the percentage of flips that were heads. So if it was 5 heads, 5 tails, then the parameter is 50%, if it was 7 heads then the parameter is 70%, etc. One problem with this method is that with limited data (only 10 flips), you\u2019re likely to end up with a parameter that isn\u2019t correct. Fortunately, you know from your experience as a human that most coins are about 50\u201350. So you can use Bayesian modeling to encode this prior knowledge. Specifically, you could use a Beta distribution with parameters [math]\\alpha[/math] and [math]\\beta[/math], which basically pretends that we\u2019ve previously seen [math]\\alpha[/math] and [math]\\beta[/math] heads and tails, respectively, before we perform our 10 flips so that we effectively have more data from which to perform our estimate. (This is often used because it\u2019s easy to specify, and is also mathematically convenient to calculate the resulting model parameter because the Beta distribution is a Conjugate prior of the Bernoulli distribution.) Alternatively, you could specify that in your experience, almost all (say, 98%) of coins you come across are fair coins, while the rest are biased on some way. (See here for an approach along these lines: Predicting a coin toss[1].) Once you\u2019ve specified this prior belief, you can now come up with an estimate for your model\u2019s parameter given both your prior belief and the newly observed data (the 10 flips). Using that latter model that assumes a 98% chance of a fair coin, if your flips showed 7 heads and 3 tails, rather than saying \u201cthis coin is a 70\u201330 biased coin,\u201d you now say something like, \u201cI\u2019m 98.4% certain it\u2019s a fair coin, and if it\u2019s not, it\u2019s probably somewhere near a bias of 70\u201330.\u201d Note that not only have we used our prior belief to get a (hopefully) better answer, we\u2019re now also expressing uncertainty in answering the question of whether it\u2019s a fair coin, rather than sticking to a single answer. To give you a sense of how this works, here\u2019s how our estimate looks with different outcomes and amounts of data:  Things to notice: With only 10 flips, the prior belief has a lot of influence. Even the most extreme observation \u2014 10 heads and 0 tails \u2014 leaves us with a 34% chance of the coin still being fair.As we gather more observations, the prior belief starts to get swamped out. With 70% observed heads but only 10 flips, we\u2019re still very certain that it\u2019s a fair coin, but with the same proportion over 100 flips, it\u2019s now very unlikely to be a fair coin, and with the same proportion over 1000 flips, we\u2019re basically certain that it\u2019s not a fair coin. This is the reason for my point in bold above, that Bayesian reasoning is most useful when we have relatively little data.Bayesian inference not only gives you the ability to encode these priors, but also the ability to express a distribution over possible models after observing data (\u201cI\u2019m 98.4% certain it\u2019s a fair coin, and if it\u2019s not, it\u2019s probably somewhere near a bias of 70\u201330\u201d) rather than choosing one model.Moving beyond the coin example, the following are examples of encoding prior beliefs in realistic machine learning models: In a standard Linear regression model, you can encode your belief that most features don\u2019t matter by using Regularization.In a Bayesian Network, if you have some prior real-world knowledge corresponding to some part of the model, you can encode that directly. For example, in a network for medical diagnosis (e.g., this one for the diagnosis of liver disorders[2]), if one parameter corresponds to the probability of an enlarged spleen given a particular liver disorder, and a published journal study has produced an estimate of that probability, you can encode a prior that pushes your model\u2019s estimate towards that probability.If you\u2019re trying to model a particular problem and you have a lot of data from a related problem, you can use Bayesian hierarchical modeling or other forms of Bayesian Transfer Learning where you\u2019re essentially using the related problem to form a prior belief for your current problem.While most Deep Learning models don\u2019t use Bayesian modeling, this has started to change in recent years and there was a Bayesian Deep Learning Workshop[3] at the most recent NIPS conference.Footnotes[1] Predicting a coin toss[2] http://www.pitt.edu/~druzdzel/psfiles/cbmi99a.pdf[3] Bayesian Deep Learning Workshop | NIPS 2016",
+            "date": "Answered January 16, 2017",
+            "views": "6",
+            "upvotes": " View 39 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Yair Livne",
+                    "user_href": "/profile/Yair-Livne"
+                },
+                {
+                    "user_id": "Sharath Raj",
+                    "user_href": "/profile/Sharath-Raj-48"
+                },
+                {
+                    "user_id": "Ryan Fox Squire",
+                    "user_href": "/profile/Ryan-Fox-Squire"
+                },
+                {
+                    "user_id": "Farhan Saif",
+                    "user_href": "/profile/Farhan-Saif-6"
+                },
+                {
+                    "user_id": "Muskula Nikhil",
+                    "user_href": "/profile/Muskula-Nikhil"
+                },
+                {
+                    "user_id": "Alex Gilgur",
+                    "user_href": "/profile/Alex-Gilgur"
+                },
+                {
+                    "user_id": "Aanchit Nayak",
+                    "user_href": "/profile/Aanchit-Nayak"
+                },
+                {
+                    "user_id": "Andr\u00e9 Carrington",
+                    "user_href": "/profile/Andr\u00e9-Carrington"
+                },
+                {
+                    "user_id": "Tom Saltsman",
+                    "user_href": "/profile/Tom-Saltsman-2"
+                },
+                {
+                    "user_id": "Vincent Chee",
+                    "user_href": "/profile/Vincent-Chee-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Kramer",
+                "href": "/profile/Aaron-Kramer-1"
+            },
+            "answer_text": "Michael Hochster\u2019s answer is great overview; ill also link to an short introduction here. I\u2019ll touch on the when and how parts of your question. Bayesian inference, as a means of producing a posterior distribution, is useful whenever you\u2019d like to evaluate and compare the plausibility of many facts, as opposed to just picking the most plausible fact (because we want to asses how certain we are), or the most plausible fact with some measure of dispersion (which may not accurately describe how certain we are about something, google \u201cmultimodal posteriors\u201d), or as a frequentist, a sample estimate with a confidence interval (which is related but fundamentally different in philosophy and interpretation). In addition, we might belief that empirical evidence does not adequately represent all of the information we have about some random variable. We might have related populations that provide some context. Or maybe we have expert/domain knowledge about a system, such as knowing that the word \u201cexcellent\u201d generally has a positive connotation, though we might not have any available data to reflect that. In this way, we as researchers can use prior distributions to regularize our beliefs according to something not apparent in the data. In terms of how, we generally set up some probability model that approximates how we think any data we have may have been generated. For instance, if we have data on whether or not some email in our dataset was labelled as spam, we might think of those labels as being generated by a Bernoulli experiment with a probability p. If were interested in evaluating the true value of p, we can exploit this model to determine how likely our data is given some assumption about p (the likelihood function). We then multiply that likelihood, conditioning on a value of p, by our prior probability of that value, and normalize that expression by the probability of the data under all possible values of p so our final result corresponds to a proper probability distribution (our posterior). Sometimes this can be done analytically if we know things about that posterior. For instance, we know that all we need to fully specify a normal distribution is its mean and variance, and we know formulas that take our sample estimates and convert those into estimates of means and variances. We generally are not so lucky, and our posteriors are usually distributions we\u2019ve never seen before, so we have to rely on numerical methods like MCMC to get the shape of the posterior, or approximate methods like variational inference. These sorts of models can be built and trained using probabilistic programming languages like PyMC, Stan, Dimple, Figaro, and others. ",
+            "date": "Answered December 13, 2016",
+            "views": "952",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fred Feinberg",
+                    "user_href": "/profile/Fred-Feinberg"
+                },
+                {
+                    "user_id": "Yuting Gui",
+                    "user_href": "/profile/Yuting-Gui"
+                },
+                {
+                    "user_id": "Nikki Castle",
+                    "user_href": "/profile/Nikki-Castle"
+                }
+            ]
+        }
+    ]
+}

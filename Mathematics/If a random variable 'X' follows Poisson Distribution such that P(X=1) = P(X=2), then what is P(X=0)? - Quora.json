@@ -1,0 +1,85 @@
+{
+    "title": "If a random variable 'X' follows Poisson Distribution such that P(X=1) = P(X=2), then what is P(X=0)? - Quora",
+    "tags": [
+        "Poisson Distribution",
+        "Probability Distributions",
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Krishna Singh",
+                "href": "/profile/Krishna-Singh-710"
+            },
+            "answer_text": "Thanks for A2A, Ananya Chatterjee If a random variable 'X' follows Poisson Distribution such that P(X=1) = P(X=2), then what is P(X=0)? Given, [math]\u201cX\u201d[/math] follows Poisson distribution. We know that the density function of Poisson distribution is[math] ~\\boxed{\\frac{e^{-\\lambda}\\left(\\lambda \\right)^{x}}{x!}}[/math] Here, [math]\u201cX\u201d[/math] is random variable and [math]\\lambda[/math] is the parameter of distribution. Remember: Parameter of a distribution defines the character of the population. So, if we got the value of parameter, we can find the probability for any value of random variable [math]\u201cX\u201d[/math] that it assumes[math] ~\u201c(x)\"[/math]. [math]P(X = 1) ~= ~P(X=2)[/math] [math]\\implies~\\frac{e^{-\\lambda}\\left(\\lambda \\right)^{1}}{1!}~=~\\frac{e^{-\\lambda}\\left(\\lambda \\right)^{2}}{2!}[/math] [math]\\implies~2e^{-\\lambda}{\\lambda}~=~ e^{-\\lambda}{\\lambda^{2}}[/math] [math]\\implies~2 ~ \\lambda ~=~ \\lambda^{2}[/math] [math]\\implies~\\huge{\\huge{\\boxed{\\lambda~=~2}}}[/math] Thus, we just need to put the value of parameter in the required probability. [math]P(X=0)~=~\\frac{e^{-\\lambda}\\left(\\lambda \\right)^{0}}{0!}[/math] [math]\\implies~\\huge{\\boxed{\\boxed{P(X=0)~=~e^{-2}~=~0.1353}}}[/math] That's it, In the case we haven't met before, I'm Krishna Singh Thanks! [math]~\\huge{\\huge{\\boxed{\\boxed{\\ddot{\\smallsmile}}}}}[/math] ",
+            "date": "Answered November 20, 2019",
+            "views": "44",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anmol Pandey",
+                    "user_href": "/profile/Anmol-Pandey-170"
+                },
+                {
+                    "user_id": "Lesuuda Lekwarie",
+                    "user_href": "/profile/Lesuuda-Lekwarie"
+                },
+                {
+                    "user_id": "Hector Chima-Okereke",
+                    "user_href": "/profile/Hector-Chima-Okereke"
+                },
+                {
+                    "user_id": "Jigar Parvate",
+                    "user_href": "/profile/Jigar-Parvate"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jithendra A B",
+                "href": "/profile/Jithendra-A-B-1"
+            },
+            "answer_text": "Since it is Poisson distributed Random variable P(X=k)=[\u03bb^k.e^(-\u03bb)]/k! Given, P(X=1) we get P(X=1)=[\u03bb.e^(-\u03bb)]/(1!) P(X=1)=\u03bbe^(-\u03bb)\u2026.(1) P(X=2)=[\u03bb\u00b2.e^(-\u03bb)]/2! P(X=2)=[\u03bb\u00b2.e^(-\u03bb)]/2\u2026.(2) Given equation (1) and (2) P(X=1)=P(X=2) \u03bb.e^(-\u03bb) = [\u03bb\u00b2.(e^(-\u03bb)]/2 2\u03bbe^(-\u03bb)=\u03bb\u00b2e^(-\u03bb) Since e^(\u00b1x) is always greater than zero we can cancel it on both the sides, we get 2\u03bb=\u03bb\u00b2 \u03bb\u00b2-2\u03bb=0 \u03bb(\u03bb-2)=0 \u03bb=0 \u03bfr \u03bb=2 But \u03bb cannot be zero as it is a mean, hence \u03bb=2 We require to find the probability at X=0 so, P(X=k)=(\u03bb^ke^(-\u03bb))/k! At X=0 the probability is derived by putting k=0 So, P(X=0)=(\u03bb^(0).e^(-\u03bb))/0! P(X=0)=(1.e^(-\u03bb))/1 P(X=0)=e^(-\u03bb) But \u03bb=2, so, P(X=0)=e-\u00b2 P(X=0)=1/e\u00b2 P(X=0)=0.135335283236 ",
+            "date": "Answered February 19, 2020",
+            "views": "14",
+            "upvotes": " View Sharers",
+            "upvoters": [
+                {
+                    "user_id": "Sejal Abrol",
+                    "user_href": "/profile/Sejal-Abrol-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "B.L. Srivastava",
+                "href": "/profile/B-L-Srivastava"
+            },
+            "answer_text": "For a poisson variate X with parameter m, P(X = r) = exp(-m) m^r/r! ; r = 0, 1, 2, 3, \u2026. \u2026. ; it is given that P(X = 1) = P(X = 2) ==> exp(-m) m^1/ 1! = exp(-m) m^2/2! ==> m^2 - 2m = 0 ==> m = 2 (as m is not zero) . Hence ; P(X = 0) = exp(-m) m^0/0! = exp(-2) . ",
+            "date": "Answered May 12, 2019",
+            "views": "12",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Deep Vora",
+                "href": "/profile/Deep-Vora-33"
+            },
+            "answer_text": "So ,as we know Poisson distribution is P(X)= e^-l*l^x/X! As P(X=1)=P(X=2), so l=2 as l>0 Now P(X=0)= e^-2/0!=1/e^2 ",
+            "date": "Answered February 22, 2020",
+            "views": "468",
+            "upvotes": " Answer requested by Aditya Raj"
+        },
+        {
+            "author_info": {
+                "name": "SusaiRaj",
+                "href": "/profile/SusaiRaj-2"
+            },
+            "answer_text": " ",
+            "date": "Answered December 8, 2019",
+            "views": "749",
+            "upvotes": " Answer requested by Aditya Raj"
+        }
+    ]
+}

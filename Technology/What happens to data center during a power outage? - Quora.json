@@ -1,0 +1,105 @@
+{
+    "title": "What happens to data center during a power outage? - Quora",
+    "tags": [
+        "Outages",
+        "Power Outages",
+        "Data Center Locations",
+        "Data Centers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Angel Castillo",
+                "href": "/profile/Angel-Castillo-14"
+            },
+            "answer_text": "If it\u2019s the case of a datacenter located in a third world country, like ours, it goes thru a couple of power outages a month. Sometimes even one or more outages every week. The datacenter is equipped with UPS and generator. As the street power goes out, the illumation lights in the Datacenter go out and the UPS instantly kick in and no service is affected. The room goes dark but it usually doesn\u2019t matter as it\u2019s usually dark anyway. The UPS start beeping indicating the load they are taking (in % of total capacity) and the estimated time left in their batteries to completely die. In our case it\u2019s usually around 60 to 45 minutes in one UPS and the same in the other (they run in parallel). While this goes on, there is a device called a \u201cpower transfer\u201d that is connected to the street power and also to the generator. It has a small cpu and controls the source of power we get at the datacenter. This power transfer is usually located outside the datacenter but on the same building. When the street power goes out it has a timer of X number of seconds to wait in case street power returns right away. If no street power is detected after X number of seconds they it sends a signal to the generator to start. The generator starts like a regular diesel or gasoline engine. The power transfer allows the generator to warm up for a few more seconds, although the generator is usually pre-warmed from street power when it\u2019s not in use to speed up the warming process when needed. Once a few seconds have passed to allow the generator to warm up, the power transfer switches the source of power from street to generator. At this point the UPS and the building (receive power again and things go back to normal. The datacenter itself didn\u2019t flinch during this time. As the generator are the only ones with capacity to power the air conditioning it is imperative that the generator runs before AC turns on again. However since this all happens in less than 50 seconds the loss of cooling during that time doesn\u2019t affect datacenter temperature. When street power returns, the power transfer monitors the street power checking voltage, phase and other parameters. When they are within range it switches power source from generator to street and the UPS blink momentarily and the datacenter lights also blink for a second. A few minutes later the generator is signaled to power off. That is standard power outage: There are different variants for power outages: Generator failure to startGenerator fails after X number of hours runningStreet power fails partially (usually one one of three phases)UPS fail to switch to batteryUPS fails to switch from battery to input powerUPS continues to run due to street and generator failure. datacenter total outage is inminent.I\u2019ve experienced each of those and have interesting stories about them. I had a partial street failure just yesterday. ",
+            "date": "Answered January 26, 2017",
+            "views": "26",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Steve Waddington",
+                    "user_href": "/profile/Steve-Waddington"
+                },
+                {
+                    "user_id": "Eliza Talvola",
+                    "user_href": "/profile/Eliza-Talvola-2"
+                },
+                {
+                    "user_id": "Elizabeth Swett",
+                    "user_href": "/profile/Elizabeth-Swett-5"
+                },
+                {
+                    "user_id": "Caesar Ekene",
+                    "user_href": "/profile/Caesar-Ekene"
+                },
+                {
+                    "user_id": "Russell Romney",
+                    "user_href": "/profile/Russell-Romney"
+                },
+                {
+                    "user_id": "Faisal Khan Mughal",
+                    "user_href": "/profile/Faisal-Khan-Mughal"
+                },
+                {
+                    "user_id": "Rachmad Igen",
+                    "user_href": "/profile/Rachmad-Igen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles T Goolsbee",
+                "href": "/profile/Charles-T-Goolsbee"
+            },
+            "answer_text": "In an actual outage internal to the facility, which are very rare due to the backup power systems everyone else mentions, it gets unnaturally quiet. The servers and all the cooling systems make a LOT of \u201cwhite noise\u201d. So much so that after a lifetime of working in datacenters I am suffering partial hearing loss, especially at the frequencies of computer cooling fans. I have a lot of trouble hearing mid-tone noises, particularly women's voices. But back to what happens: It goes from very noisy to eerily quiet in an instant. When the noise stops so do the hearts of anyone who works professionally in a datacenter, because they know that their day, maybe even their entire coming week, has been ruined. Immediately people work to get systems running again while simultaneously finding the root cause of the outage. ",
+            "date": "Answered December 18, 2016",
+            "views": "25",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kee Nethery",
+                    "user_href": "/profile/Kee-Nethery"
+                },
+                {
+                    "user_id": "Sahil Makhija",
+                    "user_href": "/profile/Sahil-Makhija-18"
+                },
+                {
+                    "user_id": "Trevor Hartley",
+                    "user_href": "/profile/Trevor-Hartley-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mark Garrett",
+                "href": "/profile/Mark-Garrett-20"
+            },
+            "answer_text": "Just to supplement Willem Meter\u2019s answer a bit, there is a device called a Rotary UPS that is a very heavy, large, fast-spinning flywheel that stores energy in simple kinetic motion. It\u2019s a cylinder of metal floating on a magnetic bearing. When the power cuts out, this thing acts as a huge inductance coil to prevent the voltage from dropping. All the energy gets sucked out of it in 10 or 20 seconds, during which time the diesel generators start up and come on line. Once the diesels are running, they can keep the DC up indefinitely, as long as you have fuel trucks arriving periodically. There is a short video about Rotary UPS in a Cisco DC here . ",
+            "date": "Answered December 16, 2016",
+            "views": "13",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ian Lang",
+                "href": "/profile/Ian-Lang-16"
+            },
+            "answer_text": "A UPS provides power to the farm, and a (usually automatic) generator starts to provide power. because of the UPS the changeover is generally seamless as far as the equipment is concerned. ",
+            "date": "Answered December 16, 2016",
+            "views": "531",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ken Larson",
+                "href": "/profile/Ken-Larson-2"
+            },
+            "answer_text": "If it is owned by an astute enterprise, it is switched to auxiliary back-up power in less than 1 second. ",
+            "date": "Answered December 16, 2016",
+            "views": "178",
+            "upvotes": "0"
+        }
+    ]
+}

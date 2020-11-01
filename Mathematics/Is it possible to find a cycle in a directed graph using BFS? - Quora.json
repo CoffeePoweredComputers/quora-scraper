@@ -1,0 +1,45 @@
+{
+    "title": "Is it possible to find a cycle in a directed graph using BFS? - Quora",
+    "tags": [
+        "BFS (Breadth-first search)",
+        "Graph Algorithms",
+        "Graph Theory",
+        "Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christian Mayer",
+                "href": "/profile/Christian-Mayer-21"
+            },
+            "answer_text": "Yes, BFS finds you cycles. Suppose there is a cycle in the graph. In BFS, you are iteratively traversing all incident out-edges of a vertex. At some instance during BFS, one such incident out-edge will point to an already visited vertex \u2014 congrats, you have found a cycle! ",
+            "date": "Answered October 5, 2017",
+            "views": "22",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rianwiz Gitonga",
+                    "user_href": "/profile/Rianwiz-Gitonga"
+                },
+                {
+                    "user_id": "Vishwas Jha",
+                    "user_href": "/profile/Vishwas-Jha-2"
+                },
+                {
+                    "user_id": "Ebram Shehata",
+                    "user_href": "/profile/Ebram-Shehata"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Kinnear",
+                "href": "/profile/Andrew-Kinnear-7"
+            },
+            "answer_text": "Given a single node and asked to detect if the graph loops back to that specific node. Don\u2019t see why not, but a DFS may be more efficient. An un-directed graph may be quicker with a BFS, as it would meet half way. ",
+            "date": "Answered April 28, 2017",
+            "views": "18",
+            "upvotes": "0"
+        }
+    ]
+}

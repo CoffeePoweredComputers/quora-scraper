@@ -1,0 +1,60 @@
+{
+    "title": "How to know when to use simple induction versus strong induction - Quora",
+    "tags": [
+        "Mathematical Induction"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kieran Cavanagh",
+                "href": "/profile/Kieran-Cavanagh"
+            },
+            "answer_text": "Typically, if the inductive hypothesis in regular induction (that  is true) doesn\u2019t give you enough information to prove that  is true, you should use strong induction. With strong induction, you assume that  are true, so you have much more information to prove the truth of . Induction proofs obviously vary, so I\u2019ll give you an example. Let\u2019s say you wanted to prove that every positive integer has a prime factorization . Let  be the statement that an integer  has a prime factorization. We\u2019ll proceed by strong induction. The basis is pretty clear, so I\u2019ll leave it out. Next we\u2019ll assume that  are true.  can either be prime or composite, and if it\u2019s prime we\u2019re done, so we\u2019ll assume it\u2019s composite. That means  can be written as a product of two positive integers, i.e. , with . We can write , and , which implies that  and . Here is why we need strong induction: if we had simply supposed  was true for arbitrary , we would be stuck. However, we supposed that  was true for every positive integer up to , so we have much more information to work with. Because we supposed this, we know that  and  are true, i.e. that  and  can be represented as a product of primes. We were able to reduce the problem down to a point where  and  were in a range, and since our inductive hypothesis in strong induction supposes that  is true for a range of values (rather than just one arbitrary ), we can now use it to prove the truth of . So, to complete the proof, we note that  and  are in the range of values covered by the inductive hypothesis, so they each have prime factorizations, and since  is a product of  and , it must also be a product of primes and hence has a prime factorization. ",
+            "date": "Answered December 23, 2017",
+            "views": "92",
+            "upvotes": " View 35 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jason",
+                    "user_href": "/profile/Jason-1092"
+                },
+                {
+                    "user_id": "TonyHe",
+                    "user_href": "/profile/TonyHe"
+                },
+                {
+                    "user_id": "Jude Molloy",
+                    "user_href": "/profile/Jude-Molloy-1"
+                },
+                {
+                    "user_id": "Marlon Hu",
+                    "user_href": "/profile/Marlon-Hu-1"
+                },
+                {
+                    "user_id": "Priyanka Iranimose",
+                    "user_href": "/profile/Priyanka-Iranimose"
+                },
+                {
+                    "user_id": "Rin Liu",
+                    "user_href": "/profile/Rin-Liu-2"
+                },
+                {
+                    "user_id": "Akash Patalwanshi",
+                    "user_href": "/profile/Akash-Patalwanshi"
+                },
+                {
+                    "user_id": "Christopher Jacob",
+                    "user_href": "/profile/Christopher-Jacob-33"
+                },
+                {
+                    "user_id": "Jennifer Tse",
+                    "user_href": "/profile/Jennifer-Tse-7"
+                },
+                {
+                    "user_id": "Abd el Rhman",
+                    "user_href": "/profile/Abd-el-Rhman-1"
+                }
+            ]
+        }
+    ]
+}

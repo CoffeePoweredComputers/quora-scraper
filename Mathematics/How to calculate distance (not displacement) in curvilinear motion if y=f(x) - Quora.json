@@ -1,0 +1,46 @@
+{
+    "title": "How to calculate distance (not displacement) in curvilinear motion if y=f(x) - Quora",
+    "tags": [
+        "Displacement (physics)",
+        "Distance (physics and mathematics)",
+        "Motion (physics)",
+        "Calculations",
+        "Integration (mathematics)",
+        "Functions (mathematics)",
+        "Calculus",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gary Ward",
+                "href": "/profile/Gary-Ward-171"
+            },
+            "answer_text": "How can I calculate distance (not displacement) in curvilinear motion if y=f(x)? My apologies for previous answer before this correction. If y = f(x) represent a path on a map using x and y coordinates and that path still meets all the requirements of a function you can take the integral from start, a, to finish, b, of sqrt(1 + [f\u2019(x)]^2) to get the distance.  If y = f(x) is position vs time you are looking for the sum of the absolute values of the differences between the end point y-values and the y-values of the points where the slope is zero. Example:  y=x^3 - 5x^2 + 6x - 1 from time 0 to time 3 seconds. Plug in 0 then 3 to find the y-values of the end points, -1 and -1. Now we need to find the points where the slope equals zero, where the direction has changed, so we need the first derivative set to zero. Set y\u2019 = 3x^2 -10x +6 = 0 ; x = 5/3 +/- sqrt(100 - 4*3*6)/6 = (5 +/- sqrt(7))/3 x= 0.785 and x = 2.549 The x-values are plugged into the equation to get the y-values . From the least x to the most x is (0, -1), (0.785, 1.113), (2.549, -1.631) and (3, -1) Calculate absolute values of differences in y of adjacent pairs left to right. |1.113 - (-1)| =2.113; |-1.631 - (1.113)| = 2.744 ; |-1 - (-1.631)| = 0.631 Now sum the absolute values of the differences: 2.113 + 2.744 + 0.631 = 5.488 units 5.488 units would be the distance traveled. This method works fine for movement in one dimension. If y = f(x) is velocity vs time you are looking for the absolute values of the integrals from start to finish. Every place that the function crosses the x-axis the integral is separated so the answer becomes the sum of the absolute values of the integrals from start to finish. ",
+            "date": "Answered October 24, 2020",
+            "views": "101",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Haresh Sagar",
+                    "user_href": "/profile/Haresh-Sagar"
+                },
+                {
+                    "user_id": "Khanh Nguyen",
+                    "user_href": "/profile/Khanh-Nguyen-373"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric S. Coy",
+                "href": "/profile/Eric-S-Coy"
+            },
+            "answer_text": "Use Arc Length L = \u222b [1 + [\u0192\u2032(x)]\u00b2]^.5 dx This means 1st, take the derivative with respect to x of your displacement function f(x). 2nd add 1 and square it. 3rd take the square root 4th Find the anti derivative of the square root of 1 plus the squared derivative 5th Evaluated the anti derivative over the limits of the f(x) in which you want the displacement. Example: If f(x) = x, find arc length over x from 0 to 1 f\u2032(x)= 1 [f\u2032(x)]\u00b2 = 1 \u221a[1+1] approximately 1.41 \u222b 1.41dx = 1.41x Evaluate 1.41x over 0 and 1 1.41- 0 = 1.41 ",
+            "date": "Answered October 24, 2020",
+            "views": "67",
+            "upvotes": "0"
+        }
+    ]
+}

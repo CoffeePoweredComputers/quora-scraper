@@ -1,0 +1,116 @@
+{
+    "title": "What technologies are behind payment networks like VISA and MasterCard? - Quora",
+    "tags": [
+        "Payment Networks",
+        "MasterCard Products and Services",
+        "Visa (payments)",
+        "Credit Cards Vs. Debit Cards",
+        "Payment Gateways",
+        "Credit Card Processing",
+        "Payment Processing",
+        "Debit Cards",
+        "Payments"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nikita Abdullin",
+                "href": "/profile/Nikita-Abdullin"
+            },
+            "answer_text": "Visa website states: \"VisaNet handles an average of 150 million transactions every day and is capable of handling more than 24,000 transactions per second\" and \"Source: Based on testing conducted in August 2010 with IBM\".  So from public data like that press release we can guess that Visa handles on average 2000 transactions per second, and runs on some kind of IBM platforms. The international payment schemes have been running non-stop since the 70s, so we can guess that at least some of their solutions might still run on IBM mainframes. IBM mainframes do upgrade and scale up pretty well with the progress, and that may even be cheaper and less error-prone than painfully migrating to new platforms every 5-10-15 years for systems as large and critical as the payment schemes' ones. Aside from the mainframes (\"System Z\") the other high-performance platform IBM offers is IBM Power, also present in various critical solutions worldwide. From this article http://www-935.ibm.com/services/multimedia/VISA_apr_2011.pdf  we can see that at least Visa Europe uses IBM AIX as the server OS, WebSphere middleware implements the business logic, and the database is IBM DB2. The payment schemes must obviously use large relational databases, as the nature of the calculations they do is heavily bound by CAP theorem. The two most powerful enterprise relational database solutions are Oracle RDBMS and IBM DB2, both running on high-end RISC systems, both in the market for more than three decades, both claiming high availability and waging war on each other in performance benchmarks ever since. From this announcement MasterCard and QMF: Providing Analytics for More Than DB2 we can guess that MasterCard too uses IBM DB2 for their main data flow.  We can safely assume that for some of the payment schemes' systems Oracle RDBMS may be used too. Payment schemes are large old companies with lots of systems, anyway. Any technology or solution you name might be used by them or might have been used by them in the past.  Some business, technical and compliance concepts behind the data flows and processes inside a payment scheme are already mentioned in the other answer. The payment scheme acts as a transport network for online authorization messages, helps the members calculate their net total position and fees during settlement, and provides lots of other services related to different stages of the life cycle of a payment card or any other device involved. ",
+            "date": "Answered May 4, 2016",
+            "views": "48",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shankar Subramaniam",
+                    "user_href": "/profile/Shankar-Subramaniam-1"
+                },
+                {
+                    "user_id": "Colin Hause",
+                    "user_href": "/profile/Colin-Hause"
+                },
+                {
+                    "user_id": "Pritesh Kakani",
+                    "user_href": "/profile/Pritesh-Kakani"
+                },
+                {
+                    "user_id": "Gilbert Chia Yao Jun",
+                    "user_href": "/profile/Gilbert-Chia-Yao-Jun"
+                },
+                {
+                    "user_id": "Adam Kania",
+                    "user_href": "/profile/Adam-Kania"
+                },
+                {
+                    "user_id": "Abdullah Habib",
+                    "user_href": "/profile/Abdullah-Habib-22"
+                },
+                {
+                    "user_id": "Sathish Manoharan",
+                    "user_href": "/profile/Sathish-Manoharan-9"
+                },
+                {
+                    "user_id": "Claudio Perlini",
+                    "user_href": "/profile/Claudio-Perlini"
+                },
+                {
+                    "user_id": "Lee Xin",
+                    "user_href": "/profile/Lee-Xin-3"
+                },
+                {
+                    "user_id": "Mohamad Indra Wicaksono",
+                    "user_href": "/profile/Mohamad-Indra-Wicaksono"
+                },
+                {
+                    "user_id": "Julius Galih",
+                    "user_href": "/profile/Julius-Galih"
+                },
+                {
+                    "user_id": "Ahmad Shrif",
+                    "user_href": "/profile/Ahmad-Shrif-1"
+                },
+                {
+                    "user_id": "Nabyl Benmlih-Taya",
+                    "user_href": "/profile/Nabyl-Benmlih-Taya"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jordan Ale",
+                "href": "/profile/Jordan-Ale"
+            },
+            "answer_text": "Here's a few that encompass the transaction process SettlementAuthorizationEMV Chip CardsNFCTokenization & compliancePayment terminalsChargeback systemsPCI",
+            "date": "Answered April 18, 2016",
+            "views": "22",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shankar Subramaniam",
+                    "user_href": "/profile/Shankar-Subramaniam-1"
+                },
+                {
+                    "user_id": "Amit Agrawal",
+                    "user_href": "/profile/Amit-Agrawal-641"
+                },
+                {
+                    "user_id": "Claudio Perlini",
+                    "user_href": "/profile/Claudio-Perlini"
+                },
+                {
+                    "user_id": "Austin Vrabel",
+                    "user_href": "/profile/Austin-Vrabel"
+                },
+                {
+                    "user_id": "Esakki Raj",
+                    "user_href": "/profile/Esakki-Raj"
+                },
+                {
+                    "user_id": "Ahmad Shrif",
+                    "user_href": "/profile/Ahmad-Shrif-1"
+                }
+            ]
+        }
+    ]
+}

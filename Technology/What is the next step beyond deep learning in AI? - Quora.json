@@ -1,0 +1,114 @@
+{
+    "title": "What is the next step beyond deep learning in AI? - Quora",
+    "tags": [
+        "Artificial Neural Networks",
+        "Deep Learning",
+        "Artificial Intelligence"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ajit Rajasekharan",
+                "href": "/profile/Ajit-Rajasekharan"
+            },
+            "answer_text": "Asked to answer... My understanding is too shallow to speculate on what is beyond deep learning, other than to cite a paper published in Science yesterday (Dec 11 2015) that perhaps gives a glimpse of what may be coming after deep learning. The paper describes a computational model with ability to produce a variation of a character in an unfamiliar writing system, on the first try, that is indistinguishable from that of humans.  Specifically, the paper  introduces a Bayesian program learning framework capable of  Learning with few samples of data unlike current deep learning models that require huge sets of training data creative generalization capabilites that are in many cases indistinguishable from humans Figure from Human-level concept learning through probabilistic program induction, 11 Dec 2015, Science Three core principles analyzed in the paper are   Compositionality, which is the idea that representations are built up from simpler primitives. Causality, which is that the model represents the abstract causal structure of how characters are generated. Learning to learn,  this idea that knowledge of previous concepts can help support the learning of new concepts. Given these principles are relatively general, the authors claim, they can not only apply to characters, but  to many other types of concepts (although this remains to be seen). In the approach described in this paper, concepts are represented as simple probabilistic programs - that is, probabilistic generative models expressed as structured procedures in an abstract description language. [4], [3],  [5]  Figure from Human-level concept learning through probabilistic program induction, 11 Dec 2015, Science  Figure from Human-level concept learning through probabilistic program induction, 11 Dec 2015, Science References Computer system passes \u201cvisual Turing test\", MIT News, 10 Dec 2015Human-level concept learning through probabilistic program induction, 11 Dec 2015, ScienceProbabilistic machine learning and artificial intelligence, May  2015, Nature  The Conceptual Mind: New Directions in the Study of Concepts: Eric Margolis, Stephen Laurence: 9780262028639: Amazon.com: Books Probabilistic Models of Cognition ",
+            "date": "Answered December 13, 2015",
+            "views": "109",
+            "upvotes": " View 32 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kuldeep Ghildiyal",
+                    "user_href": "/profile/Kuldeep-Ghildiyal-2"
+                },
+                {
+                    "user_id": "Philippe Bouaziz (Data Scientist/PhD)",
+                    "user_href": "/profile/Philippe-Bouaziz-Data-Scientist-PhD"
+                },
+                {
+                    "user_id": "Sidd Sahay",
+                    "user_href": "/profile/Sidd-Sahay"
+                },
+                {
+                    "user_id": "Rohan Majumdar",
+                    "user_href": "/profile/Rohan-Majumdar"
+                },
+                {
+                    "user_id": "Josh Nursing",
+                    "user_href": "/profile/Josh-Nursing"
+                },
+                {
+                    "user_id": "Tauseef Hussain",
+                    "user_href": "/profile/Tauseef-Hussain-5"
+                },
+                {
+                    "user_id": "Travis Millman",
+                    "user_href": "/profile/Travis-Millman"
+                },
+                {
+                    "user_id": "Truong Nguyen",
+                    "user_href": "/profile/Truong-Nguyen-4"
+                },
+                {
+                    "user_id": "Chaz Tikov",
+                    "user_href": "/profile/Chaz-Tikov"
+                },
+                {
+                    "user_id": "Bilwaj K Gaonkar",
+                    "user_href": "/profile/Bilwaj-K-Gaonkar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chomba Bupe",
+                "href": "/profile/Chomba-Bupe"
+            },
+            "answer_text": "In order to discuss about the next \"big thing\" to replace deep learning it might be necessary to look at what AI is and how much deep learning has achieved and it's shortcomings. AI aims to build intelligence in machines so that other intelligent agents i.e humans can perceive them as intelligent. We humans must judge and conclude that the said system is truly intelligent by any measure of intelligence. We normally judge intelligence as the ability to learn from examples or experiences with minimal supervision, usually by interactions with the environment or other intelligent agents. Like a child would learn a new language with minimal supervision together with other complex tasks like navigating through the environment. The ability to successfully learn a new task and generalize it to other otherwise unrelated tasks is a very good indicator of intelligence. Deep learning is itself a revolutionary idea from its humble beginnings in the 80's to it becoming a state-of-the-art learning algorithm today, it has undergone many changes and has achieved a lot. Deep learning has out performed many traditional algorithms in areas such image classification, natural language understanding, speech recognition and many more. Deep learning does show some intelligence in the sense that it can generalize remarkably very well but only when the tasks are related. It is hard for the system to transfer its learnt representation to other unrelated tasks. One thing deep learning is very good at is mapping. Deep learning literally only learns to map a high dimensional vector to another output vector with some tolerance to certain transformations. But it doesn't do the following very well. One-shot learning: Deep learning is clearly not a one-shot learner. Deep learning requires a lot of training data due to the large amount of parameters needed to be tuned. One-shot learning is true intelligence as observed in humans ability to learn from few examples.Extracting meaning: For example the output layer just gives a score showing which classes are present and nothing else. It doesn't extract geometric meaning or usage meaning. Perhaps a better example is in grammar, if I ask a talking robot \"can you get me something I can drink from?\" or \"can you get me a cup?\" how can it respond? the two statements have the same meaning. This example might not be a better example but it is clear that there are many ways of saying the same thing as evident in human-to-human conversations. Meaning is hard to define but it involves finding relationships between unrelated events or tasks sort of like a knowledge graph.Unsupervised learning: most of deep learning architectures like convolutional neural networks are supervised learning models. Much of true AI is based on unsupervised learning models. To learn with minimal supervision is a good sign of intelligence like most humans can learn complex stuff without supervision.Flexibility: Deep learning is cumbersome requiring high-end machines in order to learn large models. Once the system learns it becomes rigid plus it's functionality is limited only to the tasks it learnt. You do notice that a fruit fly or an ant has just about 250K neurons but it's brain exhibits a multitude of functionalities compared to current large scale state-of-the-art deep neural nets.Thus my argument here is that whatever will have to replace deep learning must obviously do well in the above mentioned points and in addition to the following points: Computational efficiency: I believe the deep neural architecture is too naively implemented. The neurons in the biological brains are clearly not always active. There must be a way in which computations can be sped up by utilizing sparsity in the nature of neural activation patterns not just by using GPUs. Thus signal propagation through the network would be directed to the right network regions, sort of like divide and conquer hence speeding things up further.One-shot learner: usually such a system can be realized by extracting meaningful atomic representations or components in the training signals so that when a new signal is encountered the system would guess correctly. Unlike deep learning the learnt components maybe learnt in a single layer and may be more meaningful.Incremental learner: learning never stops in humans, we are always learning at a conscious and sub-conscious level. A true AI system needs to have the ability to learn continuously. This is important in cases such as robotic applications.Knowledge transfer: Learning one task improves a previously learnt unrelated task. This is a concept of knowledge transfer and can result in novel and totally new idea generation processes such as in art and music whereby machines would produce what we people call \"works of art\". The ability to transfer knowledge is actually necessary for one-shot learning. This is a very important concept in machine learning but hard to realize in reality.There is a lot that needs to be done in AI to truly realize intelligence in machines. Deep learning maybe the current state-of-the-art but doesn't mean it's here to stay. In addition to what has been said already there are a lot of issues with deep learning that makes it incapable in some setups. Future algorithms will probably try to mimic more of the way humans solve problems rather than trying to emulate the brain neurons. Like airplanes don't flap wings, sometimes mimicking exact biological systems might not be the best approach to building a real AI system. There might be other motivations as to why biological neurons are structured the way they are other than for computational reasons alone. Hope this helps. ",
+            "date": "Updated September 27, 2016",
+            "views": "316",
+            "upvotes": " View 123 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shashank Shekhar",
+                    "user_href": "/profile/Shashank-Shekhar-134"
+                },
+                {
+                    "user_id": "Eric Jang",
+                    "user_href": "/profile/Eric-Jang"
+                },
+                {
+                    "user_id": "Michael P",
+                    "user_href": "/profile/Michael-P-87"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Jeff-Z-44"
+                },
+                {
+                    "user_id": "Anvesh Reddy",
+                    "user_href": "/profile/Anvesh-Reddy-70"
+                },
+                {
+                    "user_id": "Alp Erer",
+                    "user_href": "/profile/Alp-Erer"
+                },
+                {
+                    "user_id": "Chinlock Oh",
+                    "user_href": "/profile/Chinlock-Oh"
+                },
+                {
+                    "user_id": "Thomas Jalabert",
+                    "user_href": "/profile/Thomas-Jalabert"
+                },
+                {
+                    "user_id": "Gilles Malfreyt",
+                    "user_href": "/profile/Gilles-Malfreyt"
+                },
+                {
+                    "user_id": "William Profit",
+                    "user_href": "/profile/William-Profit"
+                }
+            ]
+        }
+    ]
+}

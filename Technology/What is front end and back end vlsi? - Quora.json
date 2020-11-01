@@ -1,0 +1,112 @@
+{
+    "title": "What is front end and back end vlsi? - Quora",
+    "tags": [
+        "Very-Large-Scale Integration"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ziyaul Huque",
+                "href": "/profile/Ziyaul-Huque-1"
+            },
+            "answer_text": "Hi, To be very precise to your question I can say in Frontend we just try to design and analyse the Circuits on simulation tool to see if your design is actually matching the specification or not. In backend we actually try to Make the Design with help of CAD tools like Innovus,ICC ,ICC2. I can understand you are still not very clear.Lets forget all these technical terms and think in a layman way. How about taking an example of how an Idol is made for Durga Pooja. 1st step: They will first Create the shape ,size etc to estimate the area,time and other cost functions and also they will see if that design is going be like goddess Durga or not so they will simulate the same in Paint,Adobe Photoshop etc so here you are just simulating the design.The same task is done in Frontend using HDL code like Verilog,System Verilog and they Simulate and verify using various methodologies like UVM,OVM etc. 2nd Step:Now whatever you have simulated will actually be Implemented So you may now use proper scaling and measurement and try to now actually give a final touch to the Replica but Here also you are not actually designing You have just given the Layout taking care of which part should be placed where I mead Head at its place,hands at there etc. Etc. These all things are done By a Physical design engineer and it's a Part of Backend . Here various steps Like Floorplanning,placement,Clock tree synthesis,routing and close timing power and area and finally handover GDSii to layout team which has exact location of various component use to make your design 3rd. Now actual implementation of that Godess Durga idol is done by using Jute replica,clay replica and Final idol\u2026..same way we do In Layout part which is also a backend part. So to conclude the Function Design and Verification Part is done in Front end where they use High level languages to Design and verify your Code.,and the same thing is Now converted to Real picture as a form Of Integrated circuits using various CAD tools. May God bless you :) ",
+            "date": "Answered May 21, 2018",
+            "views": "35",
+            "upvotes": " View 23 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mohd Muktadar Mohiuddin",
+                    "user_href": "/profile/Mohd-Muktadar-Mohiuddin"
+                },
+                {
+                    "user_id": "Ishtiaque Ovee",
+                    "user_href": "/profile/Ishtiaque-Ovee"
+                },
+                {
+                    "user_id": "Sasi Kumar",
+                    "user_href": "/profile/Sasi-Kumar-2715"
+                },
+                {
+                    "user_id": "Selva Kumar",
+                    "user_href": "/profile/Selva-Kumar-329"
+                },
+                {
+                    "user_id": "Kamlesh Khagad",
+                    "user_href": "/profile/Kamlesh-Khagad"
+                },
+                {
+                    "user_id": "Karthigeyan K",
+                    "user_href": "/profile/Karthigeyan-K-1"
+                },
+                {
+                    "user_id": "Harshit Agrawal",
+                    "user_href": "/profile/Harshit-Agrawal-217"
+                },
+                {
+                    "user_id": "Dhruvajit Ghosh",
+                    "user_href": "/profile/Dhruvajit-Ghosh"
+                },
+                {
+                    "user_id": "Kartik S Bhat",
+                    "user_href": "/profile/Kartik-S-Bhat"
+                },
+                {
+                    "user_id": "Divya Vinod",
+                    "user_href": "/profile/Divya-Vinod-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sougata Bhattacharjee",
+                "href": "/profile/Sougata-Bhattacharjee-2"
+            },
+            "answer_text": "The whole VLSI can be subdivided into two major categories and they are primarily called as Frontend and Backend. Frontend in VLSI refers to Design and Verification. In general Frontend comprises of RTL Design of a particular chip using either of HDL or HDVL called as VHDL/Verilog/SystemVerilog.Microarchitecture Specification understanding is also a major area in Frontend. Timing Analysis of the circuit comes under Frontend as well. Frontend also consist of Verification of the RTL Design being used by creating a Verification Environment and Writing Testcases,Functional and Code coverage using Methodologies like UVM/OVM/VMM or HVL language like SystemVerilog. Assertion based verification also comes under Frontend. Precisely,from the ASIC flow point of view Frontend only comprises until Design and Verification of the chip.  The second major area in VLSI is Backend. Backend in VLSI refers to the Physical Design of the circuit which in general consist of Floorplan,Placement and Routing,DFT & Scan Chain Insertion,DRC and LVS check,Spef analysis. The final mapped file that is being generated is in GDS2 format. Analog Layout and Design and various metal layer rules also comes under Backend of VLSI. CMOS understanding is very essential for Backend. Then the chip bring up process starts and then it's Tape out and rest all parameters are taken care at foundary. ",
+            "date": "Answered November 22, 2019",
+            "views": "24",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Raja Sekhar Reddy",
+                    "user_href": "/profile/Raja-Sekhar-Reddy-159"
+                },
+                {
+                    "user_id": "Akshay Raj",
+                    "user_href": "/profile/Akshay-Raj-109"
+                },
+                {
+                    "user_id": "Trishita Chatterjee",
+                    "user_href": "/profile/Trishita-Chatterjee-8"
+                },
+                {
+                    "user_id": "Harshit Agrawal",
+                    "user_href": "/profile/Harshit-Agrawal-217"
+                },
+                {
+                    "user_id": "Sai Prasad",
+                    "user_href": "/profile/Sai-Prasad-327"
+                },
+                {
+                    "user_id": "Nirav Shah",
+                    "user_href": "/profile/Nirav-Shah-126"
+                },
+                {
+                    "user_id": "Rakshit Bhatia",
+                    "user_href": "/profile/Rakshit-Bhatia-7"
+                },
+                {
+                    "user_id": "Mohammed Riyas K P",
+                    "user_href": "/profile/Mohammed-Riyas-K-P"
+                },
+                {
+                    "user_id": "Sougata Paul",
+                    "user_href": "/profile/Sougata-Paul-5"
+                },
+                {
+                    "user_id": "Pratham Anchan",
+                    "user_href": "/profile/Pratham-Anchan"
+                }
+            ]
+        }
+    ]
+}

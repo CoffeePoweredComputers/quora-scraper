@@ -1,0 +1,75 @@
+{
+    "title": "Is there any relation between halting problem and Godel's incompleteness theorems? - Quora",
+    "tags": [
+        "Halting Problem",
+        "Mathematical Logic",
+        "G\u00f6del\u2019s Incompleteness Theorem",
+        "Computational Complexity Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Juspreet-Singh Sandhu",
+                "href": "/profile/Juspreet-Singh-Sandhu"
+            },
+            "answer_text": "Great question. The answer is that there is most DEFINITELY a relation. In fact, you can look at the Halting Theorem as the Computational Theoretic equivalent of the Godel's First Incompleteness Thm. Godel's First Incompleteness Thm: \"Any consistent formal system F within which a certain amount of elementary arithmetic can be carried out is incomplete; i.e., there are statements of the language of F which can neither be proved nor disproved in F.\" (Raatikainen 2015)\" The alphabet for the Turing Machine is known, and it belongs to a consistent formal system F. More specifically, the richest language a Turning Machine can recognize is countably infinite. However, the Diagonlization proof limits computation. If you read Godel's original work, diagonlization is a standard techinque used for many countably infinite systems in First-Order Logic. Halting Thm: \" For some language L(M), there exists an input w, such that, T loops indefinitely. \" -> In other words, the TM cannot converge based on the functional algebraic protocols. In other words, a decision can't be reached by the Turing Machine (0/1 ?). Godel's Incompleteness Thms are a black-hole in all of Mathematical Logic, and express limitations of ALL formal systems that are consistent (specially, omega-consistency). The Turing Machine is a functional algebra over just one such Formal System. Think of the Halting Theorem as a result that is correlated and consistent with Godel's Theorem. To argue which one is 'first' or 'later' can be tricky, and I recommend some reading that can shed light on the development of the issue, historically and conceptually. Here is some reading on the matter that may help:1) ' \"Instead, I simply observe G\u00f6del\u2019s Theorem as a trivial corollary of what I see as its conceptually-prior (even though historically-later) cousin\": Turing\u2019s Theorem on the unsolvability of the halting problem. ' - http://www.scottaaronson.com/blog/?p=710 ",
+            "date": "Updated June 21, 2020",
+            "views": "17",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Victor Magallanes",
+                    "user_href": "/profile/Victor-Magallanes-1"
+                },
+                {
+                    "user_id": "Ali Taheri Nassaj",
+                    "user_href": "/profile/Ali-Taheri-Nassaj"
+                },
+                {
+                    "user_id": "Jonas Oberhauser",
+                    "user_href": "/profile/Jonas-Oberhauser"
+                },
+                {
+                    "user_id": "Jay Cashen",
+                    "user_href": "/profile/Jay-Cashen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonas Oberhauser",
+                "href": "/profile/Jonas-Oberhauser"
+            },
+            "answer_text": "Take the turing machine that searches for proofs of a given statement. It terminates once it finds a proof of the statement. If you could solve the halting problem, you could find out whether a proof of a statement can be found by checking if that program terminates when you pass the statement as its argument. If on the other hand for each statement or its negation there was a proof, you could run that program on the statements \u2018program y halts' and \u2018program y diverges\u2019 in parallel; since there is a proof for one of these, one of the runs must terminate. Which of the two terminates tells you whether y halts. So you could solve the halting problem. ",
+            "date": "Answered June 26, 2019",
+            "views": "432",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Victor Magallanes",
+                    "user_href": "/profile/Victor-Magallanes-1"
+                },
+                {
+                    "user_id": "Sebastian Crites",
+                    "user_href": "/profile/Sebastian-Crites"
+                },
+                {
+                    "user_id": "Mark-Anthony Canty",
+                    "user_href": "/profile/Mark-Anthony-Canty"
+                },
+                {
+                    "user_id": "Christian Howard",
+                    "user_href": "/profile/Christian-Howard-2"
+                },
+                {
+                    "user_id": "Jon Jermey",
+                    "user_href": "/profile/Jon-Jermey"
+                }
+            ]
+        }
+    ]
+}

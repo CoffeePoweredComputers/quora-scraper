@@ -1,0 +1,113 @@
+{
+    "title": "If A union B equals to B, how to prove that A is a subset of B? - Quora",
+    "tags": [
+        "Set Theory",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jan Hidders",
+                "href": "/profile/Jan-Hidders"
+            },
+            "answer_text": "The question is about the following two statements: (i) [math]A \\cup B = B[/math] (ii) [math]A \\subseteq B[/math] We will show here the proof of an even stronger result, namely that (i) and (ii) are equivalent, and so (i) implies (ii) and vice versa. Let us start with writing down (i) in full according to the definition of set equality: (iii )[math]\\forall x : x \\in A \\cup B \\leftrightarrow x \\in B[/math] Using the definition of the set union, this is equivalent to: (iv)[math]\\forall x : (x \\in A \\vee x \\in B) \\leftrightarrow x \\in B[/math] At this point we have a formula of the form [math](P \\vee Q) \\leftrightarrow Q[/math], for which it can be shown (in simple propositional logic) that it is equivalent to [math]P \\to Q[/math]. So, (iv) is equivalent to: (v)[math]\\forall x : x \\in A \\to x \\in B[/math] Since this is equivalent to (ii) according to the definition of the set inclusion, we have now shown that (i) and (ii) are in fact equivalent. QED We come back to the claim that that [math](P \\vee Q) \\leftrightarrow Q[/math] and [math]P \\to Q[/math] are equivalent. We can prove this in propositional logic in several ways. We show a proof that proceeds by equational reasoning. We start with: [math](P \\vee Q) \\leftrightarrow Q[/math]By definition of [math]\\leftrightarrow[/math]:[math]\\Longleftrightarrow ((P \\vee Q) \\rightarrow Q) \\wedge ((P \\vee Q) \\leftarrow Q)[/math]By definition of [math]\\rightarrow[/math] :[math]\\Longleftrightarrow (\\neg(P \\vee Q) \\vee Q) \\wedge ((P \\vee Q) \\vee  \\neg{Q})[/math]Since [math]\\vee[/math] is associative and [math]Q \\vee \\neg{Q}[/math] is equivalent to [math]\\textbf{true}[/math]:[math]\\Longleftrightarrow (\\neg(P \\vee Q) \\vee Q) \\wedge (P \\vee \\textbf{true})[/math]Since [math]P \\vee \\textbf{true}[/math] is equivalent to [math]\\textbf{true}[/math]:[math]\\Longleftrightarrow (\\neg(P \\vee Q) \\vee Q) \\wedge \\textbf{true}[/math]Since [math]R \\wedge \\textbf{true}[/math] is equivalent to [math]R[/math]:[math]\\Longleftrightarrow \\neg(P \\vee Q) \\vee Q[/math]De Morgan:[math]\\Longleftrightarrow (\\neg{P} \\wedge \\neg{Q}) \\vee Q[/math]Distributing [math]\\vee[/math] over [math]\\wedge[/math]:[math]\\Longleftrightarrow (\\neg{P} \\vee Q) \\wedge (\\neg{Q} \\vee Q)[/math]Since [math](\\neg{Q} \\vee Q)[/math] is equivalent to [math]\\textbf{true}[/math]:[math]\\Longleftrightarrow \\neg{P} \\vee Q[/math]Definition of [math]\\to[/math]:[math]\\Longleftrightarrow P \\to Q[/math]QED ",
+            "date": "Updated August 25, 2020",
+            "views": "59",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Abhishek Gupta",
+                    "user_href": "/profile/Abhishek-Gupta-776"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "SusaiRaj",
+                "href": "/profile/SusaiRaj-2"
+            },
+            "answer_text": "To show that A is a subset of B it is enough to show that any element in A is in B.Let a be any element in A. Then a will be in A union B. But A union B = B. So a is in B. Since the element is arbitrary, every element of A is in B. ie. A is a subset of B. ",
+            "date": "Answered September 14, 2018",
+            "views": "67",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Azharul Islam",
+                    "user_href": "/profile/Azharul-Islam-141"
+                },
+                {
+                    "user_id": "YashVardhan Shalihotri",
+                    "user_href": "/profile/YashVardhan-Shalihotri"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tanu Shyam Majumder",
+                "href": "/profile/Tanu-Shyam-Majumder"
+            },
+            "answer_text": "AUB=B is given condition. Let x\u20acB which imply x\u20acAUB=> so x\u20acA or x\u20acB.Since x\u20acB imply x\u20acA or x\u20acB.Which is only possible when A is subset of B. Conversely,If we consider y\u20acAUB which imply y\u20acB(given condition) i.e. if y\u20acA or y\u20acB=>y\u20acB As given condition. Which is only possible when A is subset of B. ",
+            "date": "Answered September 15, 2018",
+            "views": "157",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aman Rai",
+                    "user_href": "/profile/Aman-Rai-698"
+                },
+                {
+                    "user_id": "Deepika Sharma",
+                    "user_href": "/profile/Deepika-Sharma-1767"
+                },
+                {
+                    "user_id": "Jagannath Biswas",
+                    "user_href": "/profile/Jagannath-Biswas-15"
+                },
+                {
+                    "user_id": "Rajput Pratiksha",
+                    "user_href": "/profile/Rajput-Pratiksha"
+                },
+                {
+                    "user_id": "Sanjay Chatterjee",
+                    "user_href": "/profile/Sanjay-Chatterjee-59"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sanjay Chakradeo",
+                "href": "/profile/Sanjay-Chakradeo"
+            },
+            "answer_text": "A U B = B. AUB is a set that has all the elements of set A & all the elements of set B. Which is set B (given) It means that set B contains all the elements of set A, plus also uncommon elements. So all the elements of set A, are contained in set B. So set A is Subset of set B. Sanjay C. ",
+            "date": "Answered September 15, 2018",
+            "views": "66",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "JATINDER SINGH JEETU",
+                    "user_href": "/profile/JATINDER-SINGH-JEETU-1"
+                },
+                {
+                    "user_id": "Anjum Kaushal",
+                    "user_href": "/profile/Anjum-Kaushal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhi",
+                "href": "/profile/Abhi-932"
+            },
+            "answer_text": "A U B = B A + B - AB = B A = AB Implying A is a subset of B ",
+            "date": "Answered September 14, 2018",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mable Namwawa",
+                    "user_href": "/profile/Mable-Namwawa"
+                }
+            ]
+        }
+    ]
+}

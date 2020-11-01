@@ -1,0 +1,112 @@
+{
+    "title": "Is the sampling of an analog signal a lossless process? - Quora",
+    "tags": [
+        "Digital Signal Processing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jim Moore",
+                "href": "/profile/Jim-Moore-122"
+            },
+            "answer_text": "You can get an different answer depending upon your scope of analysis. I\u2019ll keep it theoretical because this sampling process is a theoretical process. The most obvious omission in this analysis is quantitization. We assume ideal sampling. Mathematically sampling is represented as the product in time of a periodic set of impulse wave forms (infinite height, zero width, unit energy). The Nyquist theorem say that for a periodic waveform you can accurately reconstruct the analog waveform so long as you sample at least twice the highest frequency. There is only this bandwidth constraint on the signal for ideal sampling chains. Sampling is a process of converting a signal (for example, a function of continuous time and/or space) into a numeric sequence (a function of discrete time and/or space). Shannon's version of the theorem states: [2] If a function x(t) contains no frequencies higher than B hertz, it is completely determined by giving its ordinates at a series of points spaced 1/(2B) seconds apart. Nyquist\u2013Shannon sampling theorem - Wikipedia Now lets us consider a non-periodic waveform subjected to the same sampling train. Does the Nyquist theorem still hold? Not really, but the question still remains, have we lost anything? As Richard Comroe, has described, the answer to that question relates to \u201creversibility\u201d or from a system theoretic stand point \u201creconstruct-ability\u201d. Can we reconstruct what we had before the sampling process. Now we get into what is known as estimation theory which deals with \u201cbest estimates\u201d or \u201cleast squares estimates\u201d. The classic example is the Kalman filter. Kalman filter - Wikipedia Which now relates to another fundamental concept, observability of discrete time processes. It is known that you need at least N samples of the output of a linear process before the system is observable. N has to do with the order or complexity of the signal you are looking at. Mathematically when you have a signal, that can be represented by a bounded linear process of Rank N, that signal is reconstructable with at least N samples. This is the definition of \u201cObservability\u201d in discrete time systems. Definition 3. The state model (1) (or the pair (A, C) ) is said to be observable if any initial state x(0) can be uniquely determined from the knowldge of output y(k) and input sequence u(k), for k = 0, 1, 2, \u00b7 \u00b7 \u00b7 , N, where N is some finite time. Otherwise the state model (1) is unobservable. https://nptel.ac.in/courses/108103008/PDF/module8/m8_lec1.pdf Without going any further down this rate hole, what we can say is that assuming the process we are observing is constrained to be the output of a bounded linear system (i.e. a stable pre or anti aliasing filter rank N) then we can reconstruct the signal after N samples. Under these circumstances we will say that that the sampling process is lossless. So when does it not hold. An example of central importance is if the signal is random involving white noise , this implies that the Rank N is infinite. This implies that we will never get enough samples N to make it observable. In the absence of these infinite number of samples, we settle for a least squares approach which gives us the best answer for a finite rank N process. Controllability/Observability after sampling Question: If a continuous time system is undergone a sampling process will its controllability or observability property be maintained? The answer to the question depends on the sampling period T and the location of the eigenvalues of A. \u2022 Loss of controllability and/or observability occurs only in presence of oscillatory modes of the system. \u2022 A sufficient condition for the discrete model with sampling period T to be controllable is that whenever Re[\u03bbi \u2212 \u03bbj ] = 0, |Im[\u03bbi \u2212 \u03bbj ]| 6= 2\u03c0m/T for m = 1, 2, 3, ... \u2022 The above is also a necessary condition for a single input case. Note: If a continuous time system is not controllable or observable, then its discrete time version, with any sampling period, is not controllable or observable. ",
+            "date": "Answered August 20, 2018",
+            "views": "403",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sharumathy B",
+                    "user_href": "/profile/Sharumathy-B"
+                },
+                {
+                    "user_id": "Md. Al-Imran Abir",
+                    "user_href": "/profile/Md-Al-Imran-Abir"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Comroe",
+                "href": "/profile/Richard-Comroe"
+            },
+            "answer_text": "The attribute called \u201clossless\u201d is generally a description of reversibility. Since an analog signal can be composed of energy across an infinite frequency, then no \u2026 the sampling process mirrors the frequency response that is not reversible. Within a bound frequency range (fs/2) then the mirroring attribute of sampling may be ignored. The process of quantization itself introduces a finite noise \u2026 quantization defined by the quantization level or representation precision. In terms of realizable reversibility there is the need to convert back to analog, where the process of reproduction introduces overtones that can also be considered loss. Removal of reproduction overtones requires analog filtering that can introduce distortion, that are lessened the higher one samples above the bound original signal spectrum. \u201cLossless\u201d is generally an attribute used to describe digital transformation (such as compression) where it is a more straightforward question whether the digital transformation is reversible. ",
+            "date": "Answered August 20, 2018",
+            "views": "183",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ashiv Hans Dhondea",
+                    "user_href": "/profile/Ashiv-Hans-Dhondea"
+                },
+                {
+                    "user_id": "Md. Al-Imran Abir",
+                    "user_href": "/profile/Md-Al-Imran-Abir"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Scholnik",
+                "href": "/profile/Stephen-Scholnik"
+            },
+            "answer_text": "Here is short and to-the-point summary of the other good answers: From a practical point view: No! See Lawrence Stewart\u2019s answer. From a theoretical point of view: Yes \u2014 if the signal is band limited. In plain English, if the signal has no frequency components at or above 1/2 the sample rate you can capture it completely. \u2026 But, no real analog signal is band limited. .. But, if you don\u2019t care about the frequency content above the band limit (a common situation) and you actually remove the high frequency content with a filter, leaving only a very very small amount of high frequency white noise, then you can that pretend that ideal sampling is near lossless for this band limited signal. \u2026 But, no sampling is ideal. \u2026 But for many applications (like audio) it can be made so good that you don\u2019t care. ",
+            "date": "Answered August 20, 2018",
+            "views": "101",
+            "upvotes": " Answer requested by Md. Al-Imran Abir",
+            "upvoters": [
+                {
+                    "user_id": "Jessica Pin",
+                    "user_href": "/profile/Jessica-Pin-2"
+                },
+                {
+                    "user_id": "Arivarasi Kesawaram",
+                    "user_href": "/profile/Arivarasi-Kesawaram"
+                },
+                {
+                    "user_id": "Bruce Levens",
+                    "user_href": "/profile/Bruce-Levens"
+                },
+                {
+                    "user_id": "Ashiv Hans Dhondea",
+                    "user_href": "/profile/Ashiv-Hans-Dhondea"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gonzalo Perez",
+                "href": "/profile/Gonzalo-Perez-9"
+            },
+            "answer_text": "Is the sampling of an analog signal a lossless process? No. Sampling takes a \u2018snapshot\u2019 of the real signal at regular times, and discards the information between samples. Reconstruction assumes the signal behaves in a predictable way, such that the missing data can be re-generated from the samples. This only applies if the signal\u2019s bandwidth is equal or less than twice the sampling frequency (meets the Nyquist rule). An analogy would be judging people from pictures taken every night at 4AM: we would think they are a bunch of lazy a55es that spend the whole year sleeping. ",
+            "date": "Answered August 20, 2018",
+            "views": "95",
+            "upvotes": " Answer requested by Md. Al-Imran Abir",
+            "upvoters": [
+                {
+                    "user_id": "Md. Al-Imran Abir",
+                    "user_href": "/profile/Md-Al-Imran-Abir"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lawrence Stewart",
+                "href": "/profile/Lawrence-Stewart-1"
+            },
+            "answer_text": "Nothing you can do to an analog signal is lossless! Every wire you run it through, even completely passive ones, adds a tiny bit of thermal noise to the signal, degrading it ever so slightly. Sampling is worse than most things you could do because it necessarily loses high frequency information above twice the sampling rate. It also adds quantization noise, if you are sampling to a digital representation, or adds analog noise if you are sampling to an analog representation. Conversion to digital form is not lossless, but after that you can at least keep the digital representation from degrading further. ",
+            "date": "Answered August 20, 2018",
+            "views": "299",
+            "upvotes": " View 4 Upvoters "
+        },
+        {
+            "author_info": {
+                "name": "Jeffrey Johnson",
+                "href": "/profile/Jeffrey-Johnson-16"
+            },
+            "answer_text": "Sampling is implemented by a sample-hold or track-hold circuit. The 'hold' function is realized by a low leakage capacitor. This capacitor's sampled voltage value may be influenced by the sampling pulse. Both this and the leakage of the capacitor can be measured and corrected for until and analog to digital conversion can be executed. This tine interval can be picoseconds, so within the error budget afforded by the characteristics of the components and circuitry employed, the process can be made 'practically' lossless. ",
+            "date": "Answered August 20, 2018",
+            "views": "102",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

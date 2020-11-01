@@ -1,0 +1,127 @@
+{
+    "title": "How to solve xy' + y = 0, y(2) =2 - Quora",
+    "tags": [
+        "Ordinary Differential Equations",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Raida Innab",
+                "href": "/profile/Raida-Innab"
+            },
+            "answer_text": "Ordinary differential equations: x (dy/dx) +y = 0 when x = 2, then the function y(2)=2 rearrange x (dy/dx) + y =0 (dy/dx) = -y/x rearrange and integrate both sides -(dy/y) = (dx/x) integrate both sides - ln (y) + c = ln (x) + c or - ln (y) - ln (x) = c multiply by -1 the entire equation ln (y) + ln (x) = -c or ln (xy) = -c the inverse of ln is e^ take the inverse of both sides of the equation: e ^(ln xy) = e ^-c or xy = e^-c substitute for x =2, y(2) =2 or simply y=2 (2)(2) = e^-c 4= e^(-c) alternatively: c= - ln 4 ln 4 = log 4 ; decimal approximation 1.38 in which case c is approx. -1.38\u2026 log 4 is a transcendental number; also 2 log(2) in the general function , for x not equal to 0: x!=0, y = e^(-c)/x and there are integer solutions for c=0, x= -1 y= -1; and c=0, x=1, y=1 integrate both sides of the equation: ",
+            "date": "Answered September 21, 2019",
+            "views": "13",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ido Levin",
+                "href": "/profile/Ido-Levin"
+            },
+            "answer_text": "I guess you mean that  and  then, it is a separable ODE and hence:  now we can integrate both sides to get : where  is the constant of integration. We can then deduce that  where  (you can plug this solution into the equation to see that it is indeed valid). Using  we can fing  and finally  ",
+            "date": "Answered December 23, 2015",
+            "views": "687",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bennett Gould",
+                    "user_href": "/profile/Bennett-Gould"
+                },
+                {
+                    "user_id": "Jason Bullett",
+                    "user_href": "/profile/Jason-Bullett"
+                },
+                {
+                    "user_id": "Nikhil US",
+                    "user_href": "/profile/Nikhil-US"
+                },
+                {
+                    "user_id": "Jonathan Sullivan",
+                    "user_href": "/profile/Jonathan-Sullivan-10"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Ash-Dew-1"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elaine Dawe",
+                "href": "/profile/Elaine-Dawe"
+            },
+            "answer_text": "         ",
+            "date": "Answered September 7, 2018",
+            "views": "183",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Raida Innab",
+                    "user_href": "/profile/Raida-Innab"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sjoerd Nijsten",
+                "href": "/profile/Sjoerd-Nijsten"
+            },
+            "answer_text": "Given: xy'+y=0 and y(2)=2.  If you substitute y=k\u00d7x^n (supposing the solution has this form), you get x\u00d7n\u00d7x^(n-1) + x^n =0. And this must be true for all values of x. If this were true then clearly n=-1. So if our supposition about the form were true then the solution is of the form k/x. Since y(2)=2 we get k/2=2 => k=4. So a solution to the differential equation and the extra condition is y=4/x.  ",
+            "date": "Answered January 28, 2016",
+            "views": "677",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bennett Gould",
+                    "user_href": "/profile/Bennett-Gould"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Divya",
+                "href": "/profile/Divya-1512"
+            },
+            "answer_text": "xy'+y=0 ,y(2)=2 1stly, y'=dy/dx so,x*dy/dx+y=0 By simplifying, x*dy/dx=-y Now we will do V.S.F(variable separable form) dy/dx=-y/x dy/-y=dx/x Integrating, -logy=logx+c logx+logy=-c log(xy)=logk \u2026\u2026\u2026\u2026(logk~c) xy=k Now we have,y(2)=2 i.e. when x=2 then y=2 Hence k=2*2 [k=4] ",
+            "date": "Answered August 8, 2019",
+            "views": "87",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jamiu Olasunkanmi",
+                "href": "/profile/Jamiu-Olasunkanmi-1"
+            },
+            "answer_text": "xy' + y = 0 xy' = -y xdy = -ydx \u00b9/y dy = -\u00b9/x dx ln(y) = -ln(x) + ln(c) ln(y) = ln(c) - ln(x) ln(y) = ln (c/x) y = c/x xy = c Given x =2 when y= 2 c = 2(2) =4 Therefore, xy=4 ",
+            "date": "Answered December 31, 2018",
+            "views": "261",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Robert Paxson",
+                "href": "/profile/Robert-Paxson"
+            },
+            "answer_text": "This differential equation is first-order separable. It is also exact. x*dy + y*dx = 0 d(x*y) = 0 x*y = C 2*2 = 4 y = 4/x ",
+            "date": "Answered January 30, 2020",
+            "views": "84",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Samar Das",
+                "href": "/profile/Samar-Das-92"
+            },
+            "answer_text": " ",
+            "date": "Answered October 17, 2019",
+            "views": "237",
+            "upvotes": "0"
+        }
+    ]
+}

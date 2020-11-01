@@ -1,0 +1,45 @@
+{
+    "title": "Why is this VBA code getting a name error? - Quora",
+    "tags": [
+        "Excel Vba Finance",
+        "Visual Basic for Applications (VBA)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brad Yundt",
+                "href": "/profile/Brad-Yundt"
+            },
+            "answer_text": "#NAME? errors usually mean the function is either misspelled or stored in the wrong place. I tested your code in a newly created Excel 2016 workbook, and it worked as expected when the code was in a regular module sheet. It failed with #NAME? error when I moved the code to either ThisWorkbook or a worksheet code pane. If that doesn\u2019t explain your problem, please post a sample workbook that reproduces the problem. The Range.Formula and Range.FormulaArray properties both return the formula in the cell. In Excel 2016, it does not matter whether that formula has been array-entered or not. Nevertheless, if you want to be consistent in your use of the two properties, I suggest: Function getformula(r As Range) As String\u00a0Application.Volatile\u00a0If r.HasArray Then\u00a0    getformula = \"<-- \" & _\u00a0        \" {\" & r.FormulaArray & \"}\"\u00a0Else\u00a0    getformula = \"<-- \" & _\u00a0        \" \" & r.Formula\u00a0End If\u00a0End Function\u00a0Your original code used the Range.FormulaLocal property. You might want that when you are working with Excel in a language other than English. If you use Excel with French localization, for example, the .FormulaLocal property would return or set the formula using the French names for the functions and semicolon as list separator character. The .Formula and .FormulaArray properties would return or set the formula using the American names for the functions and a comma as list separator character. ",
+            "date": "Answered May 29, 2017",
+            "views": "25",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Arturs Jaunosans",
+                "href": "/profile/Arturs-Jaunosans-1"
+            },
+            "answer_text": "That\u2019s because you have sub called \u201cgetformula\u201d AND function called \u201cgetformula\u201d.Change your sub name and try again. Reason: You can\u2019t have more than 1 identical name in your code. ",
+            "date": "Answered June 1, 2017",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jean-Yves Hemlin",
+                    "user_href": "/profile/Jean-Yves-Hemlin-1"
+                },
+                {
+                    "user_id": "Serdar Yal\u00e7\u0131n",
+                    "user_href": "/profile/Serdar-Yal\u00e7\u0131n-1"
+                }
+            ]
+        }
+    ]
+}

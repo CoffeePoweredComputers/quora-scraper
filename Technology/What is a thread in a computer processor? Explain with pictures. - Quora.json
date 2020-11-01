@@ -1,0 +1,25 @@
+{
+    "title": "What is a thread in a computer processor? Explain with pictures. - Quora",
+    "tags": [
+        "Thread",
+        "Threading (computer science)",
+        "Central Processing Units",
+        "Processors",
+        "Computer Science",
+        "Computer Hardware",
+        "Electronics",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael de Santa",
+                "href": "/profile/Michael-de-Santa-36"
+            },
+            "answer_text": "can't do pictures sorry about that (lack of good ones online) Now suppose you and your three friends are together 4 cores of CPU I am a program and what I do is ask you to solve a problem for me and the while you are solving problem I'll ask you to drink water. Now you can do mental calculation while drinking water. These two activities doesn't interfere so you perform these two activities together. Thus two execution threads. What if I ask you to solve another problem while solving the first one? simple your friends will do it for me. This is a thread but in a different core of CPU. Check for specs in your pc and you'll notice OS basically treat each core as a seperate CPU which helps in performing multiple operations at a same time (in a single clock signal). This is different than concurrency in CPU where time slice is divided among processes so that it \u201clooks and feels\u201d like two processes are running at a dame timr but that's certainly not the case. We always consider that there is a single program control that's executes the binary of your compiled c++ code line after line and we always put this into perspective while programming. We never think of two method calls happening at a same time or two loops running in parallel. But in theory OS does some clever trickery and calls multiple execution threads. consider this: int main(){ int a = 0; int b = 5; std::cout<< b; a = a + b; std::cout<< a; } compiler will reduce this code to (pseudocode) display (b); display (a+b); and these two will have seperate threads and will process at a same time. This is because the first print instruction doesn't affect the second so there's no point in waiting for the first one to finish. Now what if you want to control the threads for your program? in gnu/linux you have a standard called POSIX the C++ library allows you to create instance of threads, which is basically an object of thread class In Java, since Java programs runs on JVM in a JRE environment, the JRE itself acts as a tiny-miny OS. I mean common, the V literally stands for Virtual. So that means you don't have to worry about windows not following POSIX. You can easily create and execute threads. ",
+            "date": "Answered June 27, 2020",
+            "views": "19",
+            "upvotes": " Answer requested by Piyush Raj"
+        }
+    ]
+}

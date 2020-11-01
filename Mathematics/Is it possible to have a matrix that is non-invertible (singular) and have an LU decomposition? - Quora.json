@@ -1,0 +1,43 @@
+{
+    "title": "Is it possible to have a matrix that is non-invertible (singular) and have an LU decomposition? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Numerical Linear Algebra",
+        "Isomorphisms",
+        "Decomposition",
+        "Matrix Computations",
+        "Matrices (mathematics)",
+        "Linear Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "Yes, a singular matrix can have an LU decomposition. A sufficient condition for a matrix of rank , is if the matrix\u2019s first  leading principal minors are nonzero. Let\u2019s create a 3x3 example. Suppose we want  to be a noninvertible matrix. The determinant of the first matrix is  and the determinant of the second matrix is  so if the product has zero determinant, one of those entries needs to be zero. Let\u2019s pick  and fill in everything else with 1\u2019s:  This is a singular matrix, of rank 2, but we got it by multiplying a lower-triangular and upper-triangular matrix, so it must have an LU decomposition. Unfortunately, Wolfram Alpha won\u2019t perform LU decomposition on any singular matrix, but we can get SciPy to do it: >>> import scipy.linalg\u00a0>>> import numpy as np\u00a0>>> A = np.array( [[1,1,1],[1,1,2],[1,1,3]] )\u00a0>>> P, L, U = scipy.linalg.lu( A )\u00a0>>> P\u00a0array([[1., 0., 0.],\u00a0       [0., 1., 0.],\u00a0       [0., 0., 1.]])\u00a0>>> L\u00a0array([[1., 0., 0.],\u00a0       [1., 1., 0.],\u00a0       [1., 0., 1.]])\u00a0>>> U\u00a0array([[1., 1., 1.],\u00a0       [0., 0., 1.],\u00a0       [0., 0., 2.]])\u00a0P is the permutation matrix, which was unnecessary in this case. ",
+            "date": "Answered January 4, 2020",
+            "views": "306",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Gulshan Kharbanda",
+                    "user_href": "/profile/Gulshan-Kharbanda-4"
+                },
+                {
+                    "user_id": "Rohit Ramakrishnan",
+                    "user_href": "/profile/Rohit-Ramakrishnan-8"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "title": "What is face recognition technology and how does it work? - Quora",
+    "tags": [
+        "Face Recognition (software techniques)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Parameswaran B Annapoorani",
+                "href": "/profile/Parameswaran-B-Annapoorani"
+            },
+            "answer_text": "A face recognition technology or face recognition system is a computer application capable of identifying or verifying a person from a digital image or a video frame from a video source. One of the ways to do this is by comparing selected facial features from the image and a face database.  These are the few steps in facial recognition: Identification of light source: Every system uses some kind of camera/sensor to capture light. It\u2019s important for these sensors to know that the light it\u2019s receiving is from a natural source or is from its own light emitting diode so that it doesn\u2019t get tricked by light from other screensFace detection: From the light the sensors are receiving, the algorithm has to find the face to go ahead with validationFace validation: There are a lot of sub processor within thisFace calibration: For the algorithm to understand your face, you should train the algorithm with your face. This is called calibration. The data from your face would be used to train the algorithm. Most common algorithm used is \u201cSupport vector machine\u201d or \u201cRandom Forest\u201dNodal point detection and calculation: Most systems use a set of points on faces to understand the face. These set of points are called \u201cNodal points\u201d. An example for a nodal point set would be the width of your mouth or distance between eyes. The algorithm identifies nodal points by colors (E.g. eye= combination of black and white)Face print: Once nodal points are detected, the algorithm creates a face-print by coding each nodal point with some unique alpha numeric characters. This is done in a 3-dimensional way so that the face can be identified at any position/angleFace validation: Each time a face comes in-front of the sensor, the algorithm generates that face\u2019s face print and tries to match with the calibrated one. If it matches, then the system unlocks.Of-course all of these are involved with some margin of error and each system varies from one another. Kindly watch the video for more explanation! ",
+            "date": "Answered December 24, 2017",
+            "views": "1",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ahmed Hafez",
+                    "user_href": "/profile/Ahmed-Hafez-25"
+                },
+                {
+                    "user_id": "Abhishek Nagappanavar",
+                    "user_href": "/profile/Abhishek-Nagappanavar"
+                },
+                {
+                    "user_id": "Arathi C Padmanabhan",
+                    "user_href": "/profile/Arathi-C-Padmanabhan"
+                },
+                {
+                    "user_id": "Naomi K",
+                    "user_href": "/profile/Naomi-K-17"
+                },
+                {
+                    "user_id": "Dishant",
+                    "user_href": "/profile/Dishant-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike C",
+                "href": "/profile/Mike-C-242"
+            },
+            "answer_text": "Humans have always had the innate ability to recognize and distinguish between faces, yet computers only recently have shown the same ability. In the mid 1960s, scientists began work on using the computer to recognize human faces. Since then, facial recognition software has come a long way. Every face has numerous, distinguishable landmarks, the different peaks and valleys that make up facial features. Apps defines these landmarks as nodal points. Each human face has approximately 80 nodal points. Here are some of them: Distance between the eyesWidth of the noseDepth of the eye socketsThe shape of the cheekbonesThe length of the jaw lineThese nodal points are measured creating a numerical code, called a faceprint, representing the face in the database. A newly-emerging trend in facial recognition software uses a 3D model, which claims to provide more accuracy. Capturing a real-time 3D image of a person's facial surface, 3D facial recognition uses distinctive features of the face -- where rigid tissue and bone is most apparent, such as the curves of the eye socket, nose and chin -- to identify the subject. These areas are all unique and don't change over time. Using depth and an axis of measurement that is not affected by lighting, 3D facial recognition can even be used in darkness and has the ability to recognize a subject at different view angles with the potential to recognize up to 90 degrees (a face in profile). The system then measures the curves of the face on a sub-millimeter (or microwave) scale and creates a template.  Representation The system translates the template into a unique code. This coding gives each template a set of numbers to represent the features on a subject's face. Matching If the image is 3D and the database contains 3D images, then matching will take place without any changes being made to the image. However, there is a challenge currently facing databases that are still in 2D images. 3D provides a live, moving variable subject being compared to a flat, stable image. New technology is addressing this challenge. When a 3D image is taken, different points (usually three) are identified.[1] You can try some apps for facial recognition. For example, upload a photo to the Haystack AI API, which uses artificial intelligence, and see for yourself. It can determine age, gender, emotion and ethnicity. Hope this helps! Footnotes[1] How Facial Recognition Systems Work",
+            "date": "Answered October 4, 2017",
+            "views": "31",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Starmagic Garcia",
+                    "user_href": "/profile/Starmagic-Garcia"
+                },
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Heath Ahrens",
+                    "user_href": "/profile/Heath-Ahrens"
+                },
+                {
+                    "user_id": "Raushan Kumar",
+                    "user_href": "/profile/Raushan-Kumar-693"
+                },
+                {
+                    "user_id": "Celina Alvares",
+                    "user_href": "/profile/Celina-Alvares"
+                }
+            ]
+        }
+    ]
+}

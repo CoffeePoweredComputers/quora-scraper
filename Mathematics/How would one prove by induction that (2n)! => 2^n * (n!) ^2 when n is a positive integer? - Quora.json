@@ -1,0 +1,60 @@
+{
+    "title": "How would one prove by induction that (2n)! => 2^n * (n!) ^2 when n is a positive integer? - Quora",
+    "tags": [
+        "Integers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mohammad Afzaal Butt",
+                "href": "/profile/Mohammad-Afzaal-Butt"
+            },
+            "answer_text": "[math](2 n)!\\ge 2^n\\times (n!)^2[/math] [math]\\text{The result is true for n = 1}[/math] [math]( 2 n)! = 2! = 2^1\\times (1!)^2= 2[/math] [math]\\text{Let the result be true for n = k, that is}[/math] [math](2 k)!\\ge 2^k\\times (k!)^2[/math] [math]\\text{We need to prove that the result is also true for n = k + 1, that is}[/math] [math](2 k + 2)!\\ge 2^{k + 1}\\times [(k + 1)!]^2[/math] [math]\\text{by our assumption}[/math] [math](2 k)!\\ge 2^k\\times (k!)^2[/math] [math]\\text{multiplying both sides by (2 k + 1) (2 k + 2)}[/math] [math](2 k)! (2 k + 1) (2 k + 2)\\ge 2^k\\times (k!)^2  (2 k + 1) (2 k + 2)[/math] [math]\\implies (2 k + 2)!\\ge 2^k \\times (k!)^2 (4 k^2 + 6 k + 2)[/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 (2 k^2 + 3 k + 1)[/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 (2 k^2 + 2 k + k +  1)[/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 [2 k (k + 1) + 1(k + 1)][/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 [(2 k + 1)(k + 1)][/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 [(k + 1 + k)(k + 1)][/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 [(k + 1)^2 + k (k + 1)]\\tag 1[/math] [math](k + 1)^2 + k (k + 1)]\\gt (k + 1)^2 \\quad \\text{for all k}\\in\\Z^{+}[/math] [math]\\text{replacing}\\,\\, (k + 1)^2 + k (k + 1) \\,\\,\\text{with}\\,\\, (k + 1)^2\\,\\,\\text{in (1) will not effect the inequality}[/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times (k!)^2 (k + 1)^2[/math] [math]\\implies (2 k + 2)!\\ge 2^{k + 1}\\times [(k  + 1)!]^2 [/math] [math]\\therefore\\,\\,\\text{The result is also true for n = k + 1. Hence by the principle of}[/math] [math]\\text{mathematical induction the result is true for n}\\in\\Z^{+} [/math] ",
+            "date": "Updated September 30, 2019",
+            "views": "235",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Saksham Goel",
+                    "user_href": "/profile/Saksham-Goel-84"
+                },
+                {
+                    "user_id": "James K. Charlie",
+                    "user_href": "/profile/James-K-Charlie"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jake Januzelli",
+                "href": "/profile/Jake-Januzelli"
+            },
+            "answer_text": "I know OP asked for a proof by induction, but IMO this isn\u2019t the way you should prove this: there\u2019s a much simpler combinatorial proof. Claim: there are at least [math]2^n[/math] strings on [math]\\{0, 1\\}[/math] of length [math]2n[/math] that have exactly [math]n[/math] ones. Proof: Take a length [math]n[/math] string on [math]\\{0, 1\\}[/math]. This clearly has at most [math]n[/math] ones, so we can add [math]n[/math] more zeros and ones onto the end of this string to get a string of length [math]2n[/math] with exactly [math]n[/math] ones. Since there are [math]2^n[/math] length [math]n[/math] strings on [math]\\{0, 1\\}[/math] we\u2019re done. The requested result now follows immediately since [math]\\binom{2n}{n}[/math] is the number of strings on [math]\\{0, 1\\}[/math] with exactly [math]n[/math] ones, and [math]\\binom{2n}{n} = \\frac{(2n)!}{(n!)^2}[/math]. ",
+            "date": "Answered September 26, 2019",
+            "views": "401",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gaurav Goel",
+                    "user_href": "/profile/Gaurav-Goel-341"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Sachin Govind",
+                    "user_href": "/profile/Sachin-Govind-1"
+                },
+                {
+                    "user_id": "Reed Jacobs",
+                    "user_href": "/profile/Reed-Jacobs-2"
+                },
+                {
+                    "user_id": "Shamindra Shrotriya",
+                    "user_href": "/profile/Shamindra-Shrotriya"
+                }
+            ]
+        }
+    ]
+}

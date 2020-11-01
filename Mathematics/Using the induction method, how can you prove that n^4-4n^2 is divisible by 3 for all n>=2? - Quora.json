@@ -1,0 +1,50 @@
+{
+    "title": "Using the induction method, how can you prove that n^4-4n^2 is divisible by 3 for all n>=2? - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "Let [math]P(n)=n^4-4n^2[/math] As it is given, [math]n\\ge 2[/math] Let's check for [math]n=2,[/math] [math]P(2)=2^4-4\u00d72^2=16-16=0[/math] So [math]3\\mid P(2),[/math] so it's true for [math]P(2)[/math] Now for induction step we will assume it's true for [math]n=k,[/math] [math]P(k)=k^4-4k^2[/math] Now we will prove its true for [math]n=k+1,[/math] [math]P(k+1)=(k+1)^4-4 (k+1)^2[/math] [math]=\\underbrace{k^4}_{(1)}+4k^3+6k^2+4k+1-\\underbrace{4k^2}_{(2)}-8k-4[/math] [math]=\\underbrace{k^4-4k^2}_{P(k)}+4k^3-4k+6k^2-3[/math] [math]=P(k)+4k(k^2-1)+3(2k^2-1)[/math] [math]=P(k)+\\underbrace{4k(k-1)(k+1)}_{4(k-1)k(k+1)}+\\underbrace{3(2k^2-1)}_{\\text{multiple of 3 }}[/math] The first is true as per our assumption, second term is product of three consecutive numbers which ensures it to be divisible by [math]3[/math] and third term is having [math]3[/math] as one of the factor. Hence, [math]3\\mid P(k+1)[/math] Q.E.D. [math]\\quad \\blacksquare[/math] ",
+            "date": "Answered September 9, 2020",
+            "views": "180",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Apurva Kumar",
+                    "user_href": "/profile/Apurva-Kumar-56"
+                },
+                {
+                    "user_id": "Chetna Kesarwani",
+                    "user_href": "/profile/Chetna-Kesarwani-2"
+                },
+                {
+                    "user_id": "Max Cossu",
+                    "user_href": "/profile/Max-Cossu-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohammad Afzaal Butt",
+                "href": "/profile/Mohammad-Afzaal-Butt"
+            },
+            "answer_text": "[math]\\text{The result is true for n = 1}[/math] [math]n^4 - 4 n^2 = 1 - 4 = -3\\quad 3\\,|\\,(-3)[/math] [math]\\text{The result is also true for n = 2}[/math] [math]n^4 - 4 n^2 = 2^4 - 4 (2^2) = 0\\quad 3\\,|\\, 0[/math] [math]\\text{Let the result be true for n = k, that is}[/math] [math]3\\,|\\, k^4 - 4 k^2[/math] [math]\\text{we need to prove that the result is also true for n = k + 1, that is}[/math] [math]3\\,|\\, (k + 1)^4 - 4 (k + 1)^2[/math] [math](k + 1)^4 - 4 (k + 1)^2 = k^4 + 4 k^3 + 6 k^2 + 4 k + 1 - 4 (k^2 + 2 k + 1)[/math] [math]=k^4 + 4 k^3 + 2 k^2 - 4 k - 3[/math] [math]= (k^4 - 4 k^2) + 4 k^3 + 6 k^2 - 4 k - 3[/math] [math]= (k^4 - 4 k^2) + 4 k^3 - 4 k  + 6 k^2 - 3[/math] [math]= (k^4 - 4 k^2) + 4 k (k^2 - 1) + 3 ( k^2 - 1)[/math] [math]= (k^4 - 4 k^2) + 4 k (k - 1) (k +1) + 3 ( k^2 - 1)[/math] [math]= (k^4 - 4 k^2) + 4 (k - 1)(k) (k +1) + 3 ( k^2 - 1)[/math] [math]\\text{by our assumption}[/math] [math]3\\,|\\, k^4 - 4 k^2\\qquad \\text{also}\\qquad 3\\,|\\, 4 (k - 1)(k) (k +1)[/math] [math]\\because\\,\\,\\text{ (k - 1)(k) (k +1) is a product of three consecutive integers and is divisible by 3.}[/math] [math]\\implies\\,\\,3\\,|\\, (k^4 - 4 k^2) + 4 (k - 1)(k) (k +1) + 3 ( k^2 - 1)[/math] [math]\\implies 3\\,|\\, (k + 1)^4 - 4 (k + 1)^2[/math] [math]\\therefore\\,\\,\\text{the result is also true for n = k + 1. Hence by the principle of}[/math] [math]\\text{mathematical induction the result is true for all n}\\in\\Z^{+}[/math] [math]\\text{Please note that the result is also true for n= 0 and for all negative integers.}[/math] [math]\\therefore\\,\\,\\text{The result is true for all integers.}[/math] ",
+            "date": "Answered September 9, 2020",
+            "views": "85",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chetna Kesarwani",
+                    "user_href": "/profile/Chetna-Kesarwani-2"
+                }
+            ]
+        }
+    ]
+}

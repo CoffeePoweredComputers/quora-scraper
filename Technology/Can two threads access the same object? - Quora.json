@@ -1,0 +1,34 @@
+{
+    "title": "Can two threads access the same object? - Quora",
+    "tags": [
+        "Threading (computer science)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tony Wallace",
+                "href": "/profile/Tony-Wallace-1"
+            },
+            "answer_text": "Yes. Threads share memory. It is safe if both threads are reading, but if either of them writes care has to be taken so that the other thread reads the shared object in a consistent manner. This is accomplished with access control objects such as mutex or semaphore. If a thread wants to update an object, it should wait until the other object has finished reading it, lock the other tread out, do its updates, then clear any locks. ",
+            "date": "Answered January 1, 2020",
+            "views": "366",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "Of course - that's the main point of threads. When multiple threads read the same object, there is no difficulty. When one or more threads writes the object, some form of synchronization must happen, unless there is a hardware-based atomic access method. In fact this synchronization is the main difficulty in thread programming - getting it right and making it fast. ",
+            "date": "Answered January 1, 2020",
+            "views": "224",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alex Hayley Riley",
+                    "user_href": "/profile/Alex-Hayley-Riley"
+                }
+            ]
+        }
+    ]
+}

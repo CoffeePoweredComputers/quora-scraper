@@ -1,0 +1,80 @@
+{
+    "title": "What is fork() call system and wait() explain? - Quora",
+    "tags": [
+        "Fork (system call)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amar Prasad Rath",
+                "href": "/profile/Amar-Prasad-Rath"
+            },
+            "answer_text": "1: fork():  Forking is the basic mechanism for creating a process in UNIX and Linux. Upon a fork system call, kernel suspends the executing process , creates another process which is a replica of parent process (the one executing fork()), resumes both parent and child(the replicated process) , runs them concurrently. fork() system call returns  0 to the child process and process-identifier(PID) of child process to the parent process. Execution in both child and parent process begins from the instruction following fork(). In the example bellow this point is if statement in line 10. Example : #include<stdio.h>\u00a0#include<stdlib.h>\u00a0#include<unistd.h>\u00a0#include<sys/types.h>\u00a0\u00a0int main(int argc, char **argv)\u00a0{\u00a0\tpid_t pid;\u00a0\tpid = fork();\u00a0\tif(pid==0)\u00a0\t{\u00a0\t\tprintf(\"It is the child process..with pid %d\\n\",getpid());\u00a0\t\texit(0);\u00a0\t}\u00a0\telse if(pid > 0)\u00a0\t{\u00a0\t\tprintf(\"It is the parent process..with pid %d\\n\",getpid());\u00a0  \t}\u00a0\telse\u00a0\t{\u00a0\t\tprintf(\"Error in forking..\\n\");\u00a0\t\texit(EXIT_FAILURE);\u00a0\t}\u00a0\treturn 0;\u00a0} \u00a0In  the above example in line 9 the parent process calls fork(). As a result another process is created which is a replica of parent process. After fork() returns :-  Child process gets return value 0. In child process  if(pid==0)  test computes true and it executes line 12 and exits. Parent process gets a return value which is pid of child process. else if(pid>0) test  computes true and it executes line 17 and exits.  If any error occurs fork() returns -1,  else clause (line 19) is selected and it executes line 21 and exits. In this case no child process is created. Note :-  - getpid() is a system call which returns the PID of the process executing it. It is used here to show that different process are executing the print statements. - init is the first user process executed in linux system. It has PID=1. All other processes are forked from init or init's descendants. 2: wait(): wait() is another system call in UNIX/Linux system. It provides a mechanism for synchronization of 2 or more related processes. In usage it is issued by a parent process to wait for its children. When the parent process executes wait() it is suspended until any of its child process completes its execution. wait() takes an argument which is a pointer to an integer. This value is examined in parent process to collect exit status of child process. Example:- #include<stdio.h>      // printf()\u00a0#include<stdlib.h>     // exit()\u00a0#include<sys/types.h>  // pid_t\u00a0#include<sys/wait.h>   // wait()\u00a0#include<unistd.h>     // fork\u00a0\u00a0\u00a0int main(int argc, char **argv)\u00a0{\u00a0\tpid_t pid;\u00a0\tpid = fork();\u00a0\tif(pid==0)\u00a0\t{\u00a0\t\tprintf(\"It is the child process..with pid %d\\n\",getpid());\u00a0\t\tint i=0;\u00a0\t\tfor(i=0;i<100000;i++)\u00a0\t\t{\u00a0\t\t\tprintf(\"%d\\n\",i);\u00a0\t\t}\u00a0\t\texit(0);\u00a0\t}\u00a0\telse if(pid > 0)\u00a0\t{\u00a0\t\tprintf(\"It is the parent process..with pid %d\\n\",getpid());\u00a0\t\tint status;\u00a0\t\twait(&status);\u00a0\t\tprintf(\"Child reaped\\n\");\u00a0  \t}\u00a0\telse\u00a0\t{\u00a0\t\tprintf(\"Error in forking..\\n\");\u00a0\t\texit(EXIT_FAILURE);\u00a0\t}\u00a0\treturn 0;\u00a0} \u00a0In  this example after fork() returns in child process , it prints up to 100000 and exits. in parent process, it waits for the child process to finish it's execution and then prints the statement on line 27. Note that line 27 prints only after child process prints all integers up to 100000, thus provides a basic mechanism of synchronization. waitpid() is another system call which waits for a specified process of given PID in the arguments. There is another family of system call exec which executes a given binary in the running processes context. fork()-exec()-wait()  is a well-known mechanism to run many process and achieve synchronization. For more information: 1 - fork(2): create child process -- fork() man-page 2 - wait(2): wait for process to change state -- wait() man-page 3 - A fork() Primer -- Beej's guide  ",
+            "date": "Answered February 21, 2016",
+            "views": "65",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Prabhala SivaShobhan",
+                    "user_href": "/profile/Prabhala-SivaShobhan"
+                },
+                {
+                    "user_id": "\u0110\u1eb7ng Ph\u00fa B\u00ecnh",
+                    "user_href": "/profile/\u0110\u1eb7ng-Ph\u00fa-B\u00ecnh"
+                },
+                {
+                    "user_id": "Kunal Nain",
+                    "user_href": "/profile/Kunal-Nain-2"
+                },
+                {
+                    "user_id": "Prachika Sharma",
+                    "user_href": "/profile/Prachika-Sharma"
+                },
+                {
+                    "user_id": "Karthik CS",
+                    "user_href": "/profile/Karthik-CS-2"
+                },
+                {
+                    "user_id": "Gaurang Rathod",
+                    "user_href": "/profile/Gaurang-Rathod"
+                },
+                {
+                    "user_id": "Kaushik",
+                    "user_href": "/profile/Kaushik-96"
+                },
+                {
+                    "user_id": "Aditya Tayade",
+                    "user_href": "/profile/Aditya-Tayade-1"
+                },
+                {
+                    "user_id": "Ashish Dubey",
+                    "user_href": "/profile/Ashish-Dubey-115"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shivam Mitra",
+                "href": "/profile/Shivam-Mitra"
+            },
+            "answer_text": "When a process uses fork(), it creates a duplicate copy of itself and this duplicates becomes the child of the process. The fork() is implemented using clone() system call in linux which returns twice from kernel. A non-zero value(Process ID of child) is returned to the parent.A value of zero is returned to the child.In case the child is not created successfully due to any issues like low memory, -1 is returned to the fork().Let\u2019s understand this with an example: pid = fork(); \u00a0// Both child and parent will now start execution from here.\u00a0if(pid < 0) {\u00a0\t//child was not created successfully\u00a0\treturn 1;\u00a0}\u00a0else if(pid == 0) {\u00a0\t// This is the child process\u00a0\t// Child process code goes here\u00a0}\u00a0else {\u00a0\t// Parent process code goes here\u00a0}\u00a0printf(\"This is code common to parent and child\");\u00a0In the example, we have assumed that exec() is not used inside the child process. But a parent and child differs in some of the PCB(process control block) attributes. These are: 1. PID - Both child and parent have a different Process ID. 2. Pending Signals - The child doesn\u2019t inherit Parent\u2019s pending signals. It will be empty for the child process when created. 3. Memory Locks - The child doesn\u2019t inherit its parent\u2019s memory locks. Memory locks are locks which can be used to lock a memory area and then this memory area cannot be swapped to disk. 4. Record Locks - The child doesn\u2019t inherit its parent\u2019s record locks. Record locks are associated with a file block or an entire file. 5. Process resource utilisation and CPU time consumed is set to zero for the child. 6. The child also doesn\u2019t inherit timers from the parent. But what about the child memory? Is a new address space created for a child? The answers in no. After the fork(), both parent and child share the memory address space of parent. In linux, these address space are divided into multiple pages. Only when the child writes to one of the parent memory pages, a duplicate of that page is created for the child. This is also known as copy on write(Copy parent pages only when the child writes to it). Let\u2019s understand copy on write with an example.\u00a0int x = 2;\u00a0pid = fork();\u00a0if(pid == 0) {\u00a0\tx = 10;\u00a0\t// child is changing the value of x or writing to a page\u00a0\t// One of the parent stack page will contain this local \t\t   \t  variable. That page will be duplicated for child and it will store the value 10 in x in duplicated page.  \u00a0}\u00a0else {\u00a0\tx = 4;\u00a0}\u00a0But why is copy on write necessary? A typical process creation takes place through fork()-exec() combination. Let\u2019s first understand what exec() does. Exec() group of functions replaces the child\u2019s address space with a new program. Once exec() is called within a child, a separate address space will be created for the child which is totally different from the parent\u2019s one. If there was no copy on write mechanism associated with fork(), duplicate pages would have created for the child and all the data would have been copied to child\u2019s pages. Allocating new memory and copying data is a very expensive process(takes processor\u2019s time and other system resources). We also know that in most cases, the child is going to call exec() and that would replace the child\u2019s memory with a new program. So the first copy which we did would have been a waste if copy on write was not there. pid = fork();\u00a0if(pid == 0) {\u00a0\texeclp(\"/bin/ls\",\"ls\",NULL);\u00a0\tprintf(\"will this line be printed\"); // Think about it\u00a0\t// A new memory space will be created for the child and that   memory will contain the \"/bin/ls\" program(text section), it's stack, data section and heap section\u00a0else {\u00a0\twait(NULL);\u00a0\t// parent is waiting for the child. Once child terminates, parent will get its exit status and can then continue\u00a0}\u00a0return 1; // Both child and parent will exit with status code 1.\u00a0Why does parent waits for a child process? The parent can assign a task to it\u2019s child and wait till it completes it\u2019s task. Then it can carry some other work.Once the child terminates, all the resources associated with child are freed except for the process control block. Now, the child is in zombie state. Using wait(), parent can inquire about the status of child and then ask the kernel to free the PCB. In case parent doesn\u2019t uses wait, the child will remain in the zombie state.Why is exec() system call necessary? It\u2019s not necessary to use exec() with fork(). If the code that the child will execute is within the program associated with parent, exec() is not needed. But think of cases when the child has to run multiple programs. Let\u2019s take the example of shell program. It supports multiple commands like find, mv, cp, date etc. Will be it right to include program code associated with these commands in one program or have child load these programs into the memory when required? It all depends on your use case. You have a web server which given an input x that returns the 2^x to the clients. For each request, the web server creates a new child and asks it to compute. Will you write a separate program to calculate this and use exec()? Or you will just write computation code inside the parent program? Usually, a process creation involves a combination of fork(), exec(), wait() and exit() calls. If you find my explanation useful, you can also watch my videos on process creation using fork(), exec(), wait() and exit().   ",
+            "date": "Answered August 14, 2019",
+            "views": "12",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andressantiagor .",
+                    "user_href": "/profile/Andressantiagor"
+                },
+                {
+                    "user_id": "Noor Abou Yassin",
+                    "user_href": "/profile/Noor-Abou-Yassin"
+                },
+                {
+                    "user_id": "Senthamil Selvi",
+                    "user_href": "/profile/Senthamil-Selvi-43"
+                }
+            ]
+        }
+    ]
+}

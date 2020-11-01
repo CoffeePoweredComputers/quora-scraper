@@ -1,0 +1,92 @@
+{
+    "title": "What is graph theory? - Quora",
+    "tags": [
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jack Lion Heart",
+                "href": "/profile/Jack-Lion-Heart"
+            },
+            "answer_text": "Graph theory is the mathematical study of connections between things. This is formalized through the notion of nodes (any kind of entity) and edges (relationships between nodes). There is a notion of undirected graphs, in which the edges are symmetric, and directed graphs, where the edges are not symmetric (see examples below). Sometimes the graph is weighted: you can assign numeric values to the edges to indicate which relationships are stronger or more costly than others. Some examples: Social networks. The \"nodes\" are people, and the \"edges\" are friendships.  You can have a directional model (a la Twitter) or an undirected model (a la Facebook). College applications. Here, the nodes are both people and colleges, and there's a edge between a person and a college if the person applied to a college; there are no edges between two people or two colleges. (This form of a graph is called bipartite because it has two distinct sets of nodes.) Further, you could add weights to the edges based on how much the college liked the person's application and/or how much the person wants to attend that school.Company hierarchy. A edge from person X to person Y if X were Y's boss.  This is a what's known as a directed acyclic graph: directed because the relationship is asymmetric (it's different to be the boss and the direct report) and acyclic because the edges will never form a circle (I can't be your boss if you're my boss's boss). It's probably more specifically a tree: each node (person) has a most one incoming edge (boss), although it might have multiple outgoing edges (direct reports).The world wide web. The nodes are web pages, and the edges are links between the web pages.The food chain. There's an edge from one animal to another if the first animal eats the second.Some key problems that graph theory can be used to solve: The \"shortest path\" problem: What's the quickest way to get from one node to another? For example, LinkedIn tells you how many degrees of introduction you are away from another person. Likewise, the internetz solves this problem to figure out how to quickly send messages between your computer and Quora's server. This is probably the single most important problem in graph theory.The \"matching\" problem: What's the best way to to pair up nodes in a graph? This is often interesting in the bipartite context. For example, you may wish to assign people to colleges in such a way that everyone ends up happy. Again, this has an analogue in software: you may wish to distribute jobs to servers (or people) in such a way to maximize the efficiency or total work done.The \"random walk\" problem: If you start at a random node on the graph and randomly cross edges, where are you likely to end up? This is the problem that Google's PageRank solves: which websites are cited a lot by websites that are cited a lot? These are the websites we should trust. It could also be used for QuoraRank: who are the people considered experts by the people considered experts? These are the people we should trust. Likewise with Yelp (which reviewers are legit) or Facebook (whose updates do I care about), &c.With this lay perspective in mind, you're probably now ready for the more technical http://en.wikipedia.org/wiki/Graph_theory. ",
+            "date": "Updated May 24, 2012",
+            "views": "152",
+            "upvotes": " View 156 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Abby Villarreal",
+                    "user_href": "/profile/Abby-Villarreal-5"
+                },
+                {
+                    "user_id": "Kevin Erwins",
+                    "user_href": "/profile/Kevin-Erwins"
+                },
+                {
+                    "user_id": "Chinnayan Prasannakumar",
+                    "user_href": "/profile/Chinnayan-Prasannakumar"
+                },
+                {
+                    "user_id": "Harshith Kumar S K",
+                    "user_href": "/profile/Harshith-Kumar-S-K"
+                },
+                {
+                    "user_id": "Jorge Luis Reyes Ch\u00e1vez",
+                    "user_href": "/profile/Jorge-Luis-Reyes-Ch\u00e1vez"
+                },
+                {
+                    "user_id": "Shrikrishna Dere",
+                    "user_href": "/profile/Shrikrishna-Dere"
+                },
+                {
+                    "user_id": "Gejo M Mathew",
+                    "user_href": "/profile/Gejo-M-Mathew"
+                },
+                {
+                    "user_id": "Rob Randall",
+                    "user_href": "/profile/Rob-Randall-8"
+                },
+                {
+                    "user_id": "Ayush Sharma",
+                    "user_href": "/profile/Ayush-Sharma-1764"
+                },
+                {
+                    "user_id": "Eko Travada Suprapto",
+                    "user_href": "/profile/Eko-Travada-Suprapto"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Janice Gates",
+                "href": "/profile/Janice-Gates"
+            },
+            "answer_text": "Graph theory is the study of points and lines. In particular, it involves the ways in which sets of points, called vertices, can be connected by lines or arcs, called edges. Graphs in this context differ from the more familiar coordinate plots that portray mathematical relations and functions. Graphs are classified according to their complexity, the number of edges allowed between any two vertices, and whether or not directions (for example, up or down) are assigned to edges. Various sets of rules result in specific properties that can be stated as theorems. Graph theory has proven useful in the design of integrated circuits ( IC s) for computers and other electronic devices. These components, more often called chip s, contain complex, layered microcircuits that can be represented as sets of points interconnected by lines or arcs. Using graph theory, engineers develop chips with maximum component density and minimum total interconnecting conductor length. This is important for optimizing processing speed and electrical efficiency. ",
+            "date": "Answered December 30, 2015",
+            "views": "12",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hulk",
+                    "user_href": "/profile/Hulk-85"
+                },
+                {
+                    "user_id": "Murali Krishna",
+                    "user_href": "/profile/Murali-Krishna-4896"
+                },
+                {
+                    "user_id": "Eko Travada Suprapto",
+                    "user_href": "/profile/Eko-Travada-Suprapto"
+                },
+                {
+                    "user_id": "Walied Ahmed",
+                    "user_href": "/profile/Walied-Ahmed-1"
+                },
+                {
+                    "user_id": "Pradeep Singh",
+                    "user_href": "/profile/Pradeep-Singh-39"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "title": "How to check whether an undirected graph can be divided into two complete subgraphs or not - Quora",
+    "tags": [
+        "Graphs (visualization)",
+        "Graph Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rob Gofekyetsev",
+                "href": "/profile/Rob-Gofekyetsev"
+            },
+            "answer_text": "If you are not intimately familiar with any of the following terms, look them up on Wikipedia: Complete graphCliqueConnected Component (Undirected)Vertex DegreeAdjacentPartitionJust to make your question clear, do you mean \u201chow do we know if the graph is exactly two connected components, where each component is a complete subgraph\u201d? Then read the claims below. EDIT: Finding cliques is much harder, I now realize, and that must be the original problem the question was asking. I\u2019ll think about the problem and try to find a new solution but I won\u2019t post it here. Claim 1: If G is a graph with two connected components G1 and G2, and G1 and G2 are complete graphs of size m and n, then every node of G1 has degree m - 1 and every node of G2 has degree n - 1 . Thus each node in G has either degree m - 1 or degree n - 1(This is obvious). Claim 2: If G is as described in claim 1, there is no node u with degree m - 1 and node v with degree n - 1 such that u and v are adjacent (unless all the nodes in both connected components have the same degree. In this case, proceed with the following claims). Claim 3: If G has two connected components G1 and G2 of size m and n and any node of G1 has degree < m - 1 or any node of G2 has degree < n - 1, then either G1 or G2 is not a complete graph (By definition of complete graph). Claim 4: If G has two connected components G1 and G2 of size m and n and every node of G1 has degree = m - 1 and every node of G2 has degree n - 1, then G1 and G2 are both complete graphs. I deliberately wrote this post as a series of insights about the structure of the desired graph instead of a description of an algorithm so that you have to do the hard work yourself. Enjoy. Bonus problem: Generalize the problem to n connected components, where component C_i is a complete graph of size s_i. (Shouldn\u2019t be hard if you get the 2 connected component case.) ",
+            "date": "Updated September 10, 2016",
+            "views": "815",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Parth",
+                    "user_href": "/profile/Parth-87"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Devesh Jagwani",
+                "href": "/profile/Devesh-Jagwani"
+            },
+            "answer_text": "I know this is the question of a running long challenge in code chef in which I am taking part too. So I will answer after the contest. Just want to say that if you don't know an answer try to find it. This will help in future by developing your brain. Be persistent. ",
+            "date": "Answered September 5, 2016",
+            "views": "469",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shikhar Kunal",
+                    "user_href": "/profile/Shikhar-Kunal"
+                }
+            ]
+        }
+    ]
+}

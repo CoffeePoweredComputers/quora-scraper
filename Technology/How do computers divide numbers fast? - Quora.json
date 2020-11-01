@@ -1,0 +1,53 @@
+{
+    "title": "How do computers divide numbers fast? - Quora",
+    "tags": [
+        "Division (mathematics)",
+        "Numbers (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Allen Smiths",
+                "href": "/profile/Allen-Smiths"
+            },
+            "answer_text": "Computers perform dazzlingly complex tasks, but the microprocessor chips inside them are only capable of performing very basic mathematical operations, such as adding and comparing binary numbers. Utilizing this limited toolset to perform calculus and other advanced mathematical operations was a signal achievement of the early days of electronic computing. Institute professor and former dean of engineering Joel Moses was part of that revolutionary effort, and explains that the solution lay in breaking down large and complex problems into smaller and simpler ones. Complex math requires the handling of two types of operations: numerical ones that involve specific numerical values, and symbolicones, such as those in algebra and calculus, that involve symbols like \u201cx\u201d and \u201cy.\u201d Moses notes that numerical operations can be broken into addition, subtraction, multiplication, and division, which are bread-and-butter tasks for a microprocessor. To accommodate a wider range of numerical values without overwhelming memory and processing resources, computers use the floating-point system, replacing common numbers (say, 1,300,000) with floating-point values (say, 1.3 x 106). This approach usually produces only an approximation of the result, but with some care it renders values extremely close to the \u201ccorrect\u201d answer. (One notable exception: some Intel Pentium chips in the early 1990s had a floating-point bug that in rare cases caused incorrect calculations.) Symbolic operations are a bigger challenge. \u201cThe first problem,\u201d explains Moses, \u201cis how to represent symbols using only the 0s and 1s available in a binary computer. This is done with coding, where \u2018x\u2019 is represented by one number and \u2018y\u2019 by another.\u201d The computer hardware and software understands these as codes, rather than numerical values. More complex expressions can be represented via a decomposition of expressions into simpler parts, which are connected by pointers in the computer\u2019s memory. This allows representation and processing of expressions such as \u201cx + 2y.\u201d For example, a differentiation can be reduced into steps that differentiate simpler expressions. The results of such differentiated expressions can be represented as sums, products, constants, and variables. The ultimate result is a procedure that incorporates a complete differentiation algorithm but uses only computer-friendly numbers and functions. Other operations, such as symbolic integration, can be even more complex, but the basic concept is usually the same: reduce the complex problem into simpler ones, and compute. While these procedures can be lengthy and sometimes time-consuming, today\u2019s microprocessors are so powerful that they make short work of them by performing billions operations per second. ",
+            "date": "Answered October 16, 2017",
+            "views": "27",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Max Zhao",
+                    "user_href": "/profile/Max-Zhao-16"
+                },
+                {
+                    "user_id": "Abdullah Syahmi Ahamad Fouzi",
+                    "user_href": "/profile/Abdullah-Syahmi-Ahamad-Fouzi"
+                },
+                {
+                    "user_id": "Leo Ho",
+                    "user_href": "/profile/Leo-Ho-14"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Bauers",
+                "href": "/profile/Michael-Bauers"
+            },
+            "answer_text": "In general, CPUs use more efficient algorithms than the ones humans are taught, and implement them using logic gates. I can provide some links, which give some details. Division algorithm - Wikipedia CMSC 313 Lecture 20, https://pdfs.semanticscholar.org/e4e6/5d5dacea911cb596404920fe3e380b58b8ce.pdf ",
+            "date": "Answered November 4, 2019",
+            "views": "646",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Paul Sun",
+                    "user_href": "/profile/Paul-Sun-39"
+                },
+                {
+                    "user_id": "Michael J\u00f8rgensen",
+                    "user_href": "/profile/Michael-J\u00f8rgensen-2"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "title": "Where can I learn all about networking? - Quora",
+    "tags": [
+        "Social Networks",
+        "Beginning Computer Programming Advice",
+        "Computer Networking",
+        "Learning New Things",
+        "Learning to Program"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Thirumal Venkat",
+                "href": "/profile/Thirumal-Venkat-1"
+            },
+            "answer_text": "Computer Networks is a very broad field.. you might think that a packet just goes from here to there but internally A LOT happens to just fetch a page from Google. This should be your first baby step in understanding Computer Networks: What are the series of steps that happen when a URL is requested from the address field of a browser? Once you're done with that.. here's a whitepaper you might want to read: How Does the Internet Work? This might be a bit dry but give you a complete nutshell picture of how the Internet actually works. Now you'd know the big picture of computer networking, you'd want to have a reference handy so that you can lookup terms with ease. Here's one I frequently refer to: An Introduction to Computer Networks. Before diving into anything else you'll also need to understand a bit about computer security. Quoting your example, here are two terms you should know: OpenSSH -  the way you  operate on a remote machine without being snooped upon. This was on what Mark Zuckerberg was asking interviewees to gain root access into.The Open Source toolkit for SSL/TLS - You might have noticed that green icon in the left part of your browser's address bar when you hit Google? This says that nobody else apart from Google can know what you search. This is where SSL comes into picture. It encrypts traffic between you and the server. So once you've successfully hacked into the server you could use a packet sniffing tool like tcpdump and see what is being sent out of the server.To learn more on Cryptographic algorithms and what algorithms you use to encrypt traffic on the wire you might want to checkout courses given out by Stanford's Dan Boneh on Coursera. As with any competitor even Udacity offers Applied Cryptography. The first one is a bit complex, the latter usually would be simple (if this follows Udacity's methodology). Moving on.. you'd want to know some tools and terms in the trade. You have to be familiar with them: Wireshark \u00b7 Go Deep. - The king of all network tools! You can view the traffic going out of your laptop to Google, you can see what exactly goes on the wire. This is also used as a packet sniffing tool by which you can reconstruct the network traffic which was sent by you. Command line alternatives you might be interested in: TCPDUMP/LIBPCAP public repositorytraceroute - tells you where all your packet has travelled before it reaches Google! or any other websiteBy no means this list is exhaustive. I've heard about Kali Linux, you might want to check that out as well. Here are some legal sites which you can try to hack into: ::[ www.try2hack.nl ]::A site to test and learn about web hackingThe Happy Hacker -- Computers that you can legally break into!Google \"hack practice\", if you enjoy hacking such websites. PS: Don't fall into the trap of using third-party developed hack tools. They themselves contain malwares which help the original developer keep track of you and play with you! ",
+            "date": "Answered August 18, 2014",
+            "views": "12",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Deathstroke",
+                    "user_href": "/profile/Deathstroke-34"
+                },
+                {
+                    "user_id": "Adam Lemons",
+                    "user_href": "/profile/Adam-Lemons-1"
+                },
+                {
+                    "user_id": "Rishav Pipal",
+                    "user_href": "/profile/Rishav-Pipal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Przemys\u0142aw Hugh Kaznowski",
+                "href": "/profile/Przemys\u0142aw-Hugh-Kaznowski"
+            },
+            "answer_text": "Read about TCP, IP, ICMP, UDP, ARP, Ethernet protocols. Just those, nothing else.If you don't know how to program, learn the very basics of python.Check out the O'Reilly Cookbook for python on sockets (internet connections) in Python. SOCK_STREAM basically means TCP and SOCK_DGRAM I never understood anyway. The point is, when you make your first steps don't worry if you don't understand it all. You solve a puzzle by starting with the bits you know.Set up Virtual Box with a virtual machine or 2 and play with those.Also learn about security issues with the protocols I mentioned in #1. Knowing and understanding the flaws in these protocols gives you a better understanding of how they work.From there you can move onto more complex things like topology.",
+            "date": "Answered October 21, 2015",
+            "views": "592",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Deathstroke",
+                    "user_href": "/profile/Deathstroke-34"
+                },
+                {
+                    "user_id": "Khalid Ajjaoui",
+                    "user_href": "/profile/Khalid-Ajjaoui"
+                },
+                {
+                    "user_id": "Berat \u00d6zbay",
+                    "user_href": "/profile/Berat-\u00d6zbay-1"
+                }
+            ]
+        }
+    ]
+}

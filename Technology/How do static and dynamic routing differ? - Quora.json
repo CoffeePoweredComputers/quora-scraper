@@ -1,0 +1,35 @@
+{
+    "title": "How do static and dynamic routing differ? - Quora",
+    "tags": [
+        "Dynamic Routing",
+        "Static Routing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sree Naidu",
+                "href": "/profile/Sree-Naidu-2"
+            },
+            "answer_text": "In static routing the Admin specifies which network will take which route eg: 10.0.0.0/24 network eth1/1 this command means that all packets destined to the 10.x.x.x/24 network will exit through the eth1/1 interface on the router. This works well if the network is a SOHO ( Small office Home Office) where the network is small and manageable. if there is any change in this network the admin has to login to the router and change the static routes to reflect the changes But imagine a huge banking enterprise or a media company spread across many nations, its impossible as networks and the interconnecting ISPs will constantly change their networks, there could be outages etc . Dynamic routing shines here, each router when enabled with a dynamic routing protocol will try to connect to its neighboring routers sending hello packets on specific ports. Once they establish a neighbour hood they exchange their peers and thru this way each router builds a map of the entire network with all routers as nodes. and then they find the nearest path to the networks using different algorithms and metrics which the admin can configure or show preference to a particular metric. Once the costs are calculated only the best routers are then pushed to the routing table. Any changes in the network topology is communicated by the dynamic routing protocol to all its neighbors and all neighbors then recalculate their network topology to converge . These are the differences between static and dynamic routing protocols ",
+            "date": "Answered October 30, 2019",
+            "views": "98",
+            "upvotes": " Answer requested by Srujan",
+            "upvoters": [
+                {
+                    "user_id": "Ajay Bhat",
+                    "user_href": "/profile/Ajay-Bhat-42"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Deepanshu Gupta",
+                "href": "/profile/Deepanshu-Gupta-26"
+            },
+            "answer_text": "Static routing is when you statically configure a router to send traffic for particular destinations in preconfigured directions. Dynamic routing is when you use a routing protocol such as OSPF, ISIS, EIGRP, and/or BGP to figure out what paths traffic should take. There are very few situations in the real world where you would use one method of routing exclusively. A typical network will use a dynamic protocol such as OSPF to determine the best routes within an enterprise, BGP to determine the best exit points to the rest of the Internet, and static routing to glue it all together with reasonable default routes, and to send specific traffic over specific paths for traffic engineering reasons. ",
+            "date": "Answered April 19, 2017",
+            "views": "527",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

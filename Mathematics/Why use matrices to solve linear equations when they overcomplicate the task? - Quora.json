@@ -1,0 +1,62 @@
+{
+    "title": "Why use matrices to solve linear equations when they overcomplicate the task? - Quora",
+    "tags": [
+        "Matrices (mathematics)",
+        "Linear Algebra",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dean Rubine",
+                "href": "/profile/Dean-Rubine"
+            },
+            "answer_text": "Even in the 2x2 case matrices offer a rote way to recall the solution. Let\u2019s make up a problem, solution [math](-2,3)[/math]. [math]5x + 7y = 11[/math] [math]13x + 17y = 25[/math] We could solve that the usual way or just write [math]\\pmatrix{5 & 7 \\\\ 13 & 17}\\pmatrix{x \\\\ y} =  \\pmatrix{11 \\\\ 25} [/math] has solution [math]\\pmatrix{x \\\\ y} = \\pmatrix{5 & 7 \\\\ 13 & 17}^{-1} \\pmatrix{11 \\\\ 25} [/math] [math]\\pmatrix{x \\\\ y} = \\dfrac{1}{5(17)-7(13)} \\pmatrix{17 & -7 \\\\ -13 & 5} \\pmatrix{11 \\\\ 25} [/math] [math]\\pmatrix{x \\\\ y} = \\dfrac{1}{-6} \\pmatrix{17(11) + -7(25) \\\\ -13(11) + 5(25)} = -\\dfrac{1}{6} \\pmatrix{12 \\\\ -18} = \\pmatrix{-2 \\\\ 3 } \\quad\\checkmark[/math] With a little practice it\u2019s easy to go from the equations right to the second to last step. Essentially the same method makes it possible to do a three by three system mindlessly by hand.  There\u2019s also the projective geometry solution to a 2x2 system. We have two lines [math]5X + 7Y - 11 = 0[/math] [math]13X + 17Y - 25 = 0[/math] We use capitalized coordinates because we\u2019re imagining this XY Cartesian system is embedded in three space, as the plane [math]z=1,[/math] so [math](X,Y)[/math] is the point [math](X,Y,1)[/math] in three space. We can consider each of our two lines as formed by a plane through the origin [math](0,0,0)[/math] intersecting the [math]z=1[/math] plane. These planes must be: [math]5x + 7y - 11z = 0[/math] [math]13x + 17y - 25z = 0[/math] The line that\u2019s the intersection of these two planes is perpendicular to the normals of both planes, so it\u2019s in the direction of the cross product of the two normals: [math] (5,7,-11) \\times(13, 17, -25) \\\\\\quad = (7(-25)-(-11)(17), -11(13)-5(-25), 5(17)-7(13)) \\\\\\quad = (12, -18, -6)[/math] That means our line is parametrically [math](x,y,z)=t(12,-18,-6)[/math] so intersects our plane [math]z=1[/math] at the point [math]\\left(\\frac{12}{-6}, \\frac{-18}{-6} \\right)=(-2,3) \\quad\\checkmark[/math] Again with practice we can skip right to the three D cross product to get the two numerators and the denominator that form the solution to our 2x2 system. There\u2019s no cross product or corresponding geometry in higher dimensions so this solution doesn\u2019t generalize to higher dimensions. ",
+            "date": "Answered November 27, 2019",
+            "views": "309",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ajit Kumar Sahoo",
+                    "user_href": "/profile/Ajit-Kumar-Sahoo-24"
+                },
+                {
+                    "user_id": "Jonne Muhonen",
+                    "user_href": "/profile/Jonne-Muhonen"
+                },
+                {
+                    "user_id": "Gaurav Goel",
+                    "user_href": "/profile/Gaurav-Goel-341"
+                },
+                {
+                    "user_id": "Anggi Sasmito",
+                    "user_href": "/profile/Anggi-Sasmito"
+                },
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bennett Gould",
+                "href": "/profile/Bennett-Gould"
+            },
+            "answer_text": "If you ask the same question on Reddit, prepare to be reamed by angry mathematicians. In the case of 2 equations with 2 variables, matrices do, in a sense, make the task more complicated. The study of linear algebra covers a vast amount of information with many forays into more complicated, closely connected topics. So, yes, if you have to go and learn all of that background information and then throw 99% in long term storage to solve your 2 equation-2 variable system then it is unnecessarily complicated and protracted. You will often see linear algebra come as a higher course number than Calculus 2 in college math degrees\u2026 but why? Linear algebra is just algebra so it should be way easier than The Calculus, right? Linear algebra is often listed as a higher course number because in many ways (within the breadth of a college course) it is more abstract than calculus. The biggest strength and also the biggest hurdle for students taking lin al is that it is so general; almost everything you study can be generalized to n dimensions or n rows or n columns - this is where it gets \u201cbeautiful.\u201d Now, personally, I think lin al is ugly, but that is largely a result of my biases towards liking other topics so much more. On the other hand, is it useful? Yes, very! Linear algebra is considered one of the most dead mathematical research fields and is in many ways viewed more as a tool or building block for other, newer ideas. Let\u2019s say you are working with stats data in R and an answer isn\u2019t matching your calculated theoretical value, with lin al you can read and interpret the lower level code under the hood to see how the method is working. I assure you that you don\u2019t want to use the substitution method when working with 53,000 equations with 8 variables each. Moreover, the methods learned in linear algebra translate to computers very nicely; matrices in math are essentially arrays to computers. If you want to program something using calculus on the computer, expect to get very deep in series or other more obscure numerical methods, however, if you want to program something that does lin al all you need to do is know how to handle errors and edge cases. ",
+            "date": "Answered November 26, 2019",
+            "views": "286",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ben Zhang",
+                    "user_href": "/profile/Ben-Zhang-105"
+                },
+                {
+                    "user_id": "Jake Forsyth Hughes",
+                    "user_href": "/profile/Jake-Forsyth-Hughes"
+                }
+            ]
+        }
+    ]
+}

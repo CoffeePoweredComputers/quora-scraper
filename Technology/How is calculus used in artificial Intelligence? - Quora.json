@@ -1,0 +1,114 @@
+{
+    "title": "How is calculus used in artificial Intelligence? - Quora",
+    "tags": [
+        "Artificial General Intelligence",
+        "Artificial Intelligence",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Chomba Bupe",
+                "href": "/profile/Chomba-Bupe"
+            },
+            "answer_text": "Artificial intelligence (AI) is a vastly huge field of study with many different approaches. Machine learning (ML), a sub-field of AI, is a more specialized field that deals with algorithms that improve with training examples. Just as a child would learn to recognize an elephant in a photo by seeing photos of an elephant, an ML model can also learn to recognize an elephant in a photo given only examples of photos containing an elephant. So what does it mean for a machine to learn? In mathematical terms we are talking about defining a measure of performance that must be optimized. In most cases we consider a cost function that is evaluated over the whole training examples and the goal is to minimize that cost which is naturally error based. So given a set of training examples: [math]t = [(x_1,y_1), (x_2,y_2),\u2026,(x_{n},y_{n})][/math] An ML model can be visualized as a mapping function [math]f()[/math] with parameters [math]w[/math] such that: [math]\\hat{y}=f(x;w)[/math] where [math]\\hat{y}[/math]=actual output. And the performance measure can be defined as an objective we wish to satify mathematically defined by: [math]L(t,w)=\\frac{1}{n}\\sum_{i}^{n}l(y_{i},\\hat{y}_{i})[/math] The loss function [math]l()[/math] can be anything like the squared error, the hinge loss or cross entropy loss functions. An ML algorithm is tasked to find a set of optimal parameters defined by [math]\\hat{w}[/math] such that [math]L(t,\\hat{w})[/math] has an acceptable low value, preferably the lowest possible value. In short, the ML algorithms need to solve: [math]\\hat{w}[/math]= arg min [math]L(t,w)[/math] This requires searching for the optimal parameters and anyone who has some knowledge in mathematical optimization can clearly see a way to solve such a problem, via gradient descent (GD) based optimization algorithms. This takes us to calculus, since GD based learning methods need derivatives in order to minimize the cost function. It is as simple as evaluating [math]\\frac{\\partial L}{\\partial w}[/math] and update the weights at each iteration using: [math]w \\leftarrow w - \\lambda\\frac{\\partial L}{\\partial w}[/math] where [math]\\lambda[/math]=learning rate, which has to be small to avoid overshooting the minimum point but not too small because it can lead to a painfully slow convergence rate. The issue is now with the evaluation of the actual derivatives of the cost with respect to the weight parameters in each layer. It is easy to do so when there is just one layer but extremely tricky when there are multiple layers one atop the other. Since a single layered model, except if we use the kernel trick, cannot handle the exclusive OR, exclusive NOR or non-linearly separable problems, multi-layer perceptrons (MLP) fell out of favor quickly due to the inherent difficulty of training them. This is where a lot of researchers got stuck in the 80's before Geoffrey Hinton showed that chain rule from calculus can be used to propagate errors through the neural network archtecture backwards in order to evaluate the derivative of the cost with respect to any weight parameter provided the activation functions used in those nodes are piece-wise differentiable. It took several years before finally in 2012 Geoffrey Hinton and his group managed to train a deep learning (DL) model in an end-to-end manner using backprop on the challenging 1000-class ImageNet challenge. This is what really energized the AI community and brought forth the DL revolution as we know it today.  Let's move a little in depth about this backprop magic. We will assume an n-layered NN given by: [math]f(x;w)= f_{n}(f_{n-1}(\u2026f_{2}(f_{1}(x;w_{1});w_{2})\u2026;w_{n-1});w_{n})[/math] In English, it means the function [math]f_1()[/math] feeds into [math]f_2()[/math] and [math]f_{n-1}()[/math] feeds into [math]f_{n}()[/math]. We can also assume an intermediary linear [math]g_{i}()[/math] mapping stage in layer i as defined by: [math]f_{i}=\\phi_{i}(f_{i-1}w_{i}^{T}) = \\phi_{i}(g_{i}(f_{i-1},w_{i}))[/math] Where [math]\\phi_{i}[/math]= activation function at layer i, [math]g_{i}()[/math]= dot product between the input [math]f_{i-1}[/math] and the weights [math]w_{i}[/math] The idea is to find the derivatives of the cost with respect to parameters in any given layer i. [math]\\frac{\\partial L}{\\partial w_{i}}=\\frac{\\partial L}{\\partial f_{i}}\\frac{\\partial f_{i}}{\\partial w_{i}}[/math] we can denote [math]\\delta_{i}=\\frac{\\partial L}{\\partial f_{i}}[/math] which is the back error signal that can be easily evaluated at the output layer and propagated from layer to layer in a backward manner hence the term backpropagation (backprop) algorithm. [math]\\frac{\\partial L}{\\partial w_{i}}=\\frac{\\partial f_{i}}{\\partial w_{i}}\\delta_{i}[/math] [math]\\frac{\\partial f_{i}}{\\partial w_{i}}=\\frac{\\partial f_{i}}{\\partial g_{i}}\\frac{\\partial g_{i}}{\\partial w_{i}}[/math] [math]\\frac{\\partial g_{i}}{\\partial w_{i}}= f_{i-1}[/math] [math]\\frac{\\partial f_{i}}{\\partial g_{i}}= \\Phi_{i}(g_{i})[/math] Where [math]\\Phi_{i}(a) =\\frac{\\partial \\phi_{i}}{\\partial a}[/math], the derivative of the activation function. So [math]\\frac{\\partial L}{\\partial w_{i}}=f_{i-1}\\Phi_{i}\\delta_{i}[/math] But we still need to determine how the deltas are propagated back. We can use chain rule as well here. [math]\\frac{\\partial L}{\\partial f_{i}}=\\frac{\\partial L}{\\partial f_{i+1}}\\frac{\\partial f_{i+1}}{\\partial f_{i}}[/math] and [math]\\delta_{i+1}=\\frac{\\partial L}{\\partial f_{i+1}}[/math] and further chain rule [math]\\frac{\\partial f_{i+1}}{\\partial f_{i}}=\\frac{\\partial f_{i+1}}{\\partial g_{i+1}}\\frac{\\partial g_{i+1}}{\\partial f_{i}}[/math] And [math]\\frac{\\partial f_{i+1}}{\\partial g_{i+1}}=\\Phi_{i+1}[/math] [math]\\frac{\\partial g_{i+1}}{\\partial f_{i}}= w_{i+1}[/math] So this gives [math]\\frac{\\partial f_{i+1}}{\\partial f_{i}}=\\Phi_{i+1}w_{i+1}[/math] And finally [math]\\delta_{i}=\\Phi_{i+1}w_{i+1}\\delta_{i+1}[/math]  Calculus is thus used in the popular backprop algorithm that is used to train deep NNs. Hope this helps. ",
+            "date": "Answered October 4, 2017",
+            "views": "71",
+            "upvotes": " View 56 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Satish Ghosh",
+                    "user_href": "/profile/Satish-Ghosh-4"
+                },
+                {
+                    "user_id": "Trey Thompson",
+                    "user_href": "/profile/Trey-Thompson-7"
+                },
+                {
+                    "user_id": "John P Benfield",
+                    "user_href": "/profile/John-P-Benfield"
+                },
+                {
+                    "user_id": "Muzain Khan",
+                    "user_href": "/profile/Muzain-Khan-3"
+                },
+                {
+                    "user_id": "Siddhant Pathak",
+                    "user_href": "/profile/Siddhant-Pathak-17"
+                },
+                {
+                    "user_id": "Vishnu Dutt",
+                    "user_href": "/profile/Vishnu-Dutt-115"
+                },
+                {
+                    "user_id": "Mirza Mahrab Hossain",
+                    "user_href": "/profile/Mirza-Mahrab-Hossain"
+                },
+                {
+                    "user_id": "Sumeet Kumar",
+                    "user_href": "/profile/Sumeet-Kumar-579"
+                },
+                {
+                    "user_id": "Hardik Raja",
+                    "user_href": "/profile/Hardik-Raja-1"
+                },
+                {
+                    "user_id": "Shamiul Haque Sami",
+                    "user_href": "/profile/Shamiul-Haque-Sami"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Zhao",
+                "href": "/profile/David-Zhao-28"
+            },
+            "answer_text": "Artificial neural networks. First, what is a neural network? I\u2019m going to keep this as non-technical as possible. Essentially, you have a bunch \u201cneurons\u201d or nodes. These nodes are organized into layers, where a node in one layer is connected with nodes in the next layer, shown in the picture below.[1]  At every node, you sum up all the inputs and apply what\u2019s called an activation function. One way to think about this is that each node looks at the sum of the signals coming in and decides whether or not to send that signal through. Mathematically, this activation function is typically either sigmoid, ReLU, or tanh, shown below.[2]  Also, the connection between nodes have a weight associated with them. A signal passing through will be multiplied by the weight before it reaches the next node. With the knowledge of what happens at each node and at each connection, you can now input values into the neural network and get a set of outputs. To make the outputs meaningful though, you need training data, a collection of input data you know the expected outputs for. When you send an input through, you get an output. You can compare this output with the expected output. You calculate an error, oftentimes with [math]E = \\Sigma (y_i - \\hat{y}_i)^2[/math], where [math]y_i[/math] is the actual output and [math]\\hat{y}_i[/math] is the expected output. That error equation represents a 3-D surface, with a minimum. The goal of training is to find that minimum, which would yield you the best model for predicting the correct output from an input. Here\u2019s where calculus comes in. At any point on the 3-D surface represented by the error function, you have a slope in all directions. However, you probably want to \u201ctravel\u201d in the direction of greatest descent. To determine the direction of steepest descent, you calculate the gradient. Then, you adjust the weights of your neural network to step your error in that direction. Calculating how much to adjust the weights in your neural network, known as back propagation, requires calculus as well. Essentially, you need the partial derivative with respect to each weight. This result is determined using chain rule. Partial derivative of error with respect to output nodes, PD of output nodes with respect to every other node, and PD of every other node with respect to the weights of their input connections, chained together yield the PD of error with weights. Using these numbers, you can adjust the weights accordingly over many small steps to minimize the error of your model. The technique described in this answer is gradient descent, where you reduce your error by slowly stepping in the right direction until you hit your minimum. So, there you have it. Training neural networks are founded in a pile of partial derivatives. Be glad modules like NumPy exist to help you. Thanks, bye. Footnotes[1] Artificial neural network - Wikipedia[2] A Practical Introduction to Deep Learning with Caffe and Python",
+            "date": "Answered October 4, 2017",
+            "views": "58",
+            "upvotes": " View 37 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Venkata Trived Menta",
+                    "user_href": "/profile/Venkata-Trived-Menta"
+                },
+                {
+                    "user_id": "Bret Mishler",
+                    "user_href": "/profile/Bret-Mishler"
+                },
+                {
+                    "user_id": "Tisighe Livingstone",
+                    "user_href": "/profile/Tisighe-Livingstone"
+                },
+                {
+                    "user_id": "Rin Liu",
+                    "user_href": "/profile/Rin-Liu-2"
+                },
+                {
+                    "user_id": "Chris Bastille",
+                    "user_href": "/profile/Chris-Bastille"
+                },
+                {
+                    "user_id": "Nikhil Vellanki",
+                    "user_href": "/profile/Nikhil-Vellanki"
+                },
+                {
+                    "user_id": "Booshan Raj",
+                    "user_href": "/profile/Booshan-Raj-1"
+                },
+                {
+                    "user_id": "Shaiju Janardhanan",
+                    "user_href": "/profile/Shaiju-Janardhanan"
+                },
+                {
+                    "user_id": "Chinmaya HN",
+                    "user_href": "/profile/Chinmaya-HN"
+                },
+                {
+                    "user_id": "Jaideep Warrier",
+                    "user_href": "/profile/Jaideep-Warrier"
+                }
+            ]
+        }
+    ]
+}

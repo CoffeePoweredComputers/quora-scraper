@@ -1,0 +1,45 @@
+{
+    "title": "How to drop all tables in a MySQL database - Quora",
+    "tags": [
+        "MySQL",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "KB Benton",
+                "href": "/profile/KB-Benton"
+            },
+            "answer_text": "Op asked: How do I drop all tables in a MySQL database? If you don\u2019t want any of the other parts that go with the database (procedures, functions, events, privileges, or database defaults), a simple DROP DATABASE dbname\u00a0command will do nicely. If you do want to preserve those other elements, there is more work to do. For example, if your goal is to remove all the data from a database without destroying the tables in it, I would write SQL to generate SQL that will truncate each of the tables like this: SELECT CONCAT(\u2018TRUNCATE TABLE \u2018, table_name, \u2018;\u2019) AS \u2018command\u2019 FROM information_schema.tables WHERE table_schema = \u2018dbname\u2019;\u00a0Then I would take the output of that and run it on the database server in the target database. If my goal was to truly drop each of the tables, I would use the same method above but replace the TRUNCATE command with the DROP command. Need to be able to go back? Make sure that you take a backup of what you\u2019re about to destroy first. Blessed is the pessimist for he\u2019th made backups. Without knowing more about your requirements, it\u2019s difficult to say more without feeling like I\u2019m over engineering a solution. Good luck and thanks for the A2A ",
+            "date": "Updated March 9, 2020",
+            "views": "439",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Joachim Pense",
+                    "user_href": "/profile/Joachim-Pense"
+                },
+                {
+                    "user_id": "Mark Harrison",
+                    "user_href": "/profile/Mark-Harrison-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Subhrajyoti Moitra",
+                "href": "/profile/Subhrajyoti-Moitra"
+            },
+            "answer_text": "Seems the evergreen tool `mysqladmin` is not very popular nowadays. From the cmd line \u201cmysqladmin -umeuser -p drop mydb\u201d This will prompt for password of the user \u201cmeuser\u201d. To create a DB use, \u201cmysqladmin -umeuser -p create mydb\u201d. Another way, mysql -umeuser -p -e \u201cdrop database mydb\u201d mysql -umeuser -p -e \u201ccreate database mydb\u201d All the above will drop the entire DB as well as all the tables in it. HTH. ",
+            "date": "Answered August 13, 2019",
+            "views": "203",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Olan Profit",
+                    "user_href": "/profile/Olan-Profit"
+                }
+            ]
+        }
+    ]
+}

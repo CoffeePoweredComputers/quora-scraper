@@ -1,0 +1,361 @@
+{
+    "title": "What is the Nyquist (Shannon) sampling theorem? - Quora",
+    "tags": [
+        "Nyquist-Shannon Sampling Theorem",
+        "Digital Communication",
+        "Signals and Systems",
+        "Signal Processing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nikhil Panikkar",
+                "href": "/profile/Nikhil-Panikkar"
+            },
+            "answer_text": "The sampling theorem is not by Nyquist. It was derived by Shannon. Nyquist\u2019s theorem deals with the maximum signalling rate over a channel of given bandwidth. Since the results are similar, people often associate Nyquist\u2019s name with the sampling theorem. But this is not correct. Hereafter, I will refer to the result as Shannon\u2019s sampling theorem. Anyway, here goes: The Shannon sampling theorem can be understood by using the analogy of a rotating wheel.  Consider a wheel with eight spokes spaced 45 degrees apart.(you can choose any angular spacing you like, this is only an illustration.) Now suppose you rotate the spokes at 45 degrees per second in the anti-clockwise direction. Then it would take eight seconds for each spoke to return to its original position. Now you have a analog signal before your eyes(with your eyes being the recording instrument.) Now suppose you take a camera and take photos after 8 seconds, 16 seconds, 24 seconds and so on as you keep rotating the flywheel at 45 degrees/second. Now take a look at the photos. Do you see any difference? No. Each of the photographs shows the spokes in their original positions, even though they have rotated, because their final position is the same. This has happened because in the sampling period(8 seconds) an integral number of cycles of the wheel\u2019s rotation can pass. What happens if you rotate the flywheel in the clockwise direction? Does it make any difference? No, because the spokes are still in their original positions at the end of the sampling period. Thus we discover an important constraint: A sampling period that covers an integral number of cycles of an analog phenomenon cannot detect phase(state) change. Lets try to improve upon this constraint.If you take the photos at a rate faster than 8 seconds, then perhaps you might be able to capture the movement of the spokes? Lets try taking photos at intervals of 4 seconds. In 4 seconds, the flywheel covers only a half cycle. So yes, you can detect rotations. But there is a glitch. What about the clockwise rotation? Are you able to distinguish between it and the anti-clockwise version? No. So this half cycle point represents a limiting condition. While we are able to distinguish between each clockwise rotation, we are not able to distinguish them form their anti-clockwise counterparts. Now lets try to improve upon this. Lets consider taking photos at a faster rate than 4 seconds. Say every 3 seconds. In 3 seconds, the flywheel covers only 135 degrees and whichever direction you rotate it clockwise or anti-clockwise, the rotation can be distinguished. This is the Shannon sampling theorem, that the sampling frequency should be greater than twice the maximum frequency of the original analog signal,failing which aliasing(phase/frequency ambiguity) will occur. Also see the following two answers: Nikhil Panikkar's answer to What is the difference between Nyquist\u2019s signalling theorem and Shannon\u2019s sampling theorem? Nikhil Panikkar's answer to Why is the Nyquist(Shannon) sampling rate exactly 2 times the maximum frequency? Where is the proof for that constant 2? ",
+            "date": "Updated May 1, 2019",
+            "views": "107",
+            "upvotes": " View 65 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shri Ganesh",
+                    "user_href": "/profile/Shri-Ganesh-2"
+                },
+                {
+                    "user_id": "Tumul Kumar",
+                    "user_href": "/profile/Tumul-Kumar-2"
+                },
+                {
+                    "user_id": "Abhijit Kumar",
+                    "user_href": "/profile/Abhijit-Kumar-150"
+                },
+                {
+                    "user_id": "Mohana Sri Krishna Yerasuri",
+                    "user_href": "/profile/Mohana-Sri-Krishna-Yerasuri-1"
+                },
+                {
+                    "user_id": "Pradeep Varma",
+                    "user_href": "/profile/Pradeep-Varma-74"
+                },
+                {
+                    "user_id": "Satvik Patel",
+                    "user_href": "/profile/Satvik-Patel-15"
+                },
+                {
+                    "user_id": "BHUMIKA SHARMA",
+                    "user_href": "/profile/BHUMIKA-SHARMA-184"
+                },
+                {
+                    "user_id": "Kiran Hasda",
+                    "user_href": "/profile/Kiran-Hasda"
+                },
+                {
+                    "user_id": "Peter Christiansen",
+                    "user_href": "/profile/Peter-Christiansen-14"
+                },
+                {
+                    "user_id": "Rachita Panda",
+                    "user_href": "/profile/Rachita-Panda"
+                },
+                {
+                    "user_id": "Anubhab Sen",
+                    "user_href": "/profile/Anubhab-Sen-3"
+                },
+                {
+                    "user_id": "Abhi M",
+                    "user_href": "/profile/Abhi-M-63"
+                },
+                {
+                    "user_id": "Sumit",
+                    "user_href": "/profile/Sumit-765"
+                },
+                {
+                    "user_id": "Salsabila Yuganto",
+                    "user_href": "/profile/Salsabila-Yuganto"
+                },
+                {
+                    "user_id": "Kaustubh Shankar",
+                    "user_href": "/profile/Kaustubh-Shankar"
+                },
+                {
+                    "user_id": "Pranesh Krishnan",
+                    "user_href": "/profile/Pranesh-Krishnan"
+                },
+                {
+                    "user_id": "Shubha Shastri",
+                    "user_href": "/profile/Shubha-Shastri"
+                },
+                {
+                    "user_id": "Kumar Chandan Mathur",
+                    "user_href": "/profile/Kumar-Chandan-Mathur"
+                },
+                {
+                    "user_id": "Gustaf Blomqvist",
+                    "user_href": "/profile/Gustaf-Blomqvist"
+                },
+                {
+                    "user_id": "Snehal",
+                    "user_href": "/profile/Snehal-3"
+                },
+                {
+                    "user_id": "Triscia Katerina",
+                    "user_href": "/profile/Triscia-Katerina-1"
+                },
+                {
+                    "user_id": "Rajashekar Vanamala",
+                    "user_href": "/profile/Rajashekar-Vanamala"
+                },
+                {
+                    "user_id": "Anshul Mittal",
+                    "user_href": "/profile/Anshul-Mittal-91"
+                },
+                {
+                    "user_id": "Jaafar Atiku",
+                    "user_href": "/profile/Jaafar-Atiku"
+                },
+                {
+                    "user_id": "Bert Ghat",
+                    "user_href": "/profile/Bert-Ghat"
+                },
+                {
+                    "user_id": "Aditya Pawar",
+                    "user_href": "/profile/Aditya-Pawar-222"
+                },
+                {
+                    "user_id": "Akshatha Patil",
+                    "user_href": "/profile/Akshatha-Patil-11"
+                },
+                {
+                    "user_id": "Ashwin D Iyer",
+                    "user_href": "/profile/Ashwin-D-Iyer"
+                },
+                {
+                    "user_id": "Mario Lopez",
+                    "user_href": "/profile/Mario-Lopez-65"
+                },
+                {
+                    "user_id": "Pragya Tiwary",
+                    "user_href": "/profile/Pragya-Tiwary-2"
+                },
+                {
+                    "user_id": "Suryakant Tibrewal",
+                    "user_href": "/profile/Suryakant-Tibrewal-1"
+                },
+                {
+                    "user_id": "Sneha Chattopadhyay",
+                    "user_href": "/profile/Sneha-Chattopadhyay"
+                },
+                {
+                    "user_id": "Nick Ace",
+                    "user_href": "/profile/Nick-Ace-12"
+                },
+                {
+                    "user_id": "Divya Shri",
+                    "user_href": "/profile/Divya-Shri-6"
+                },
+                {
+                    "user_id": "Piyush Bajpai",
+                    "user_href": "/profile/Piyush-Bajpai"
+                },
+                {
+                    "user_id": "Rishik Mani Tripathi",
+                    "user_href": "/profile/Rishik-Mani-Tripathi"
+                },
+                {
+                    "user_id": "Gio Eufshi",
+                    "user_href": "/profile/Gio-Eufshi"
+                },
+                {
+                    "user_id": "Anna Kompogiannopoulou",
+                    "user_href": "/profile/Anna-Kompogiannopoulou"
+                },
+                {
+                    "user_id": "Soumi Dasgupta",
+                    "user_href": "/profile/Soumi-Dasgupta-2"
+                },
+                {
+                    "user_id": "Shridhar Hegde",
+                    "user_href": "/profile/Shridhar-Hegde-23"
+                },
+                {
+                    "user_id": "NITHES KUMAR S",
+                    "user_href": "/profile/NITHES-KUMAR-S"
+                },
+                {
+                    "user_id": "Gaurav Shandilya \u3010\u0917\u094c\u0930\u0935 \u0936\u093e\u0902\u0921\u093f\u0932\u094d\u092f\u3011",
+                    "user_href": "/profile/Gaurav-Shandilya-\u0917\u094c\u0930\u0935-\u0936\u093e\u0902\u0921\u093f\u0932\u094d\u092f"
+                },
+                {
+                    "user_id": "Bhaskar Banerjee",
+                    "user_href": "/profile/Bhaskar-Banerjee-64"
+                },
+                {
+                    "user_id": "Abubakar Shaikh",
+                    "user_href": "/profile/Abubakar-Shaikh"
+                },
+                {
+                    "user_id": "Vanessa Mercea",
+                    "user_href": "/profile/Vanessa-Mercea"
+                },
+                {
+                    "user_id": "Alugoju Srikar",
+                    "user_href": "/profile/Alugoju-Srikar"
+                },
+                {
+                    "user_id": "SOMDUTTA PAL",
+                    "user_href": "/profile/SOMDUTTA-PAL-1"
+                },
+                {
+                    "user_id": "Sricharan Sunder",
+                    "user_href": "/profile/Sricharan-Sunder"
+                },
+                {
+                    "user_id": "Selva Kumar",
+                    "user_href": "/profile/Selva-Kumar-127"
+                },
+                {
+                    "user_id": "Abhijeet Pal",
+                    "user_href": "/profile/Abhijeet-Pal-5"
+                },
+                {
+                    "user_id": "Irfan Baig",
+                    "user_href": "/profile/Irfan-Baig-6"
+                },
+                {
+                    "user_id": "Rahul Mishra",
+                    "user_href": "/profile/Rahul-Mishra-868"
+                },
+                {
+                    "user_id": "Maria Karanikolaou",
+                    "user_href": "/profile/Maria-Karanikolaou"
+                },
+                {
+                    "user_id": "Sankalp Deshpande",
+                    "user_href": "/profile/Sankalp-Deshpande-4"
+                },
+                {
+                    "user_id": "Rahul Ekhande",
+                    "user_href": "/profile/Rahul-Ekhande"
+                },
+                {
+                    "user_id": "Shamad Munauwar",
+                    "user_href": "/profile/Shamad-Munauwar"
+                },
+                {
+                    "user_id": "Ahmed Reda",
+                    "user_href": "/profile/Ahmed-Reda-26"
+                },
+                {
+                    "user_id": "Fahad Hashmi",
+                    "user_href": "/profile/Fahad-Hashmi-1"
+                },
+                {
+                    "user_id": "Ayush Parashar",
+                    "user_href": "/profile/Ayush-Parashar-5"
+                },
+                {
+                    "user_id": "Shubham Shinde",
+                    "user_href": "/profile/Shubham-Shinde-86"
+                },
+                {
+                    "user_id": "Madan Mohan Jha",
+                    "user_href": "/profile/Madan-Mohan-Jha"
+                },
+                {
+                    "user_id": "Siddhartha Ganguly",
+                    "user_href": "/profile/Siddhartha-Ganguly-5"
+                },
+                {
+                    "user_id": "Mauro Sobreira",
+                    "user_href": "/profile/Mauro-Sobreira"
+                },
+                {
+                    "user_id": "Gurudev Kumar",
+                    "user_href": "/profile/Gurudev-Kumar"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jose Soares Augusto",
+                "href": "/profile/Jose-Soares-Augusto"
+            },
+            "answer_text": "A note about the naming of the ST: the \u201cdiscovery\u201d of the ST is attributed not only to Nyquist and Shannon, but also to Whittaker and Kotelnikov. Quoting Nyquist\u2013Shannon sampling theorem - Wikipedia: \u201cThe name Nyquist\u2013Shannon sampling theorem honors Harry Nyquist and Claude Shannon. The theorem was also discovered independently by E. T. Whittaker, by Vladimir Kotelnikov, and by others. It is thus also known by the names Nyquist\u2013Shannon\u2013Kotelnikov, Whittaker\u2013Shannon\u2013Kotelnikov, Whittaker\u2013Nyquist\u2013Kotelnikov\u2013Shannon, and cardinal theorem of interpolation.\u201d According to the Wikipedia article above, the pioneer was Whittaker who published the result in 1915. There is a link to the paper in the Wikipedia article. Besides the theoretical value of the ST, it has the merit of explaining aliasing (Aliasing - Wikipedia) and the drawbacks and \u201cgood\u201d applications of this phenomenon, such as undersampling of bandpass signals (or bandlimited signals) to bring them to lower frequencies (to the baseband). This is also known as sampling of non-baseband signals and has important applications, such as in the \u201csoftware defined radio\u201d (see page 5 of http://www.sdradio.eu/doc/DgtlRcvrHbk43.pdf). Interesting extensions of the ST exist, such as the one for random sampling (regarding the sampling instant), at an average rate inferior to the Nyquist rate, defined has [math]f_N=f_{samp}/2[/math] in uniform sampling (with constant sampling interval [math]T_{samp}=1/f_{samp}[/math]). See http://label2.ist.utl.pt/vilela/Cursos/Sampling_And_SuperSL3.pdf and http://ieeexplore.ieee.org/document/1703843/?arnumber=1703843. ",
+            "date": "Answered September 7, 2017",
+            "views": "55",
+            "upvotes": " Answer requested by Eddie Schodowski and Bhavesh Thakkar",
+            "upvoters": [
+                {
+                    "user_id": "Chiranjeeb Gogoi",
+                    "user_href": "/profile/Chiranjeeb-Gogoi"
+                },
+                {
+                    "user_id": "Christopher Hong",
+                    "user_href": "/profile/Christopher-Hong-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anh Nguyen",
+                "href": "/profile/Anh-Nguyen-460"
+            },
+            "answer_text": "You have a periodic analog signal, let\u2019s say f(t). You can\u2019t not store this signal in your computer as it is because one cannot simply save infinite number of functional values. However, when f(t) is band-limited (that is, the period is a finite number, let\u2019s say Ts=1/Fs), you can perfectly reconstruct f(t) from 2Fs measurements per period of f(t) by doing something called sinc interpolation. In practice, to make sure f(t) is band-limited, we need to apply an anti-aliasing filter before sampling. ",
+            "date": "Answered September 27, 2016",
+            "views": "26",
+            "upvotes": " Answer requested by Eddie Schodowski",
+            "upvoters": [
+                {
+                    "user_id": "Bandi Naveen",
+                    "user_href": "/profile/Bandi-Naveen-2"
+                },
+                {
+                    "user_id": "Vlad Bespalov",
+                    "user_href": "/profile/Vlad-Bespalov"
+                },
+                {
+                    "user_id": "Eddie Schodowski",
+                    "user_href": "/profile/Eddie-Schodowski"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Alfred-72"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Konstantinos Konstantinides",
+                "href": "/profile/Konstantinos-Konstantinides"
+            },
+            "answer_text": "The Nyquist theorem says that when you digitize an analog signal of bandwidth W, the sampling frequency must be at least double (2W) (or the distance between samples is 1/2W) to guarantee reconstruction. For example, for speech bounded at 20 kHz, a typical sampling rate is 44.1 kHz. Nyquist\u2013Shannon sampling theorem ",
+            "date": "Answered September 5, 2016",
+            "views": "55",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kumar Chandan Mathur",
+                    "user_href": "/profile/Kumar-Chandan-Mathur"
+                },
+                {
+                    "user_id": "Crystal Watson",
+                    "user_href": "/profile/Crystal-Watson-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christopher Hong",
+                "href": "/profile/Christopher-Hong-5"
+            },
+            "answer_text": "The Nyquist theorem states that, in order to perfectly reconstruct a baseband signal with bandwidth W, you need to sample it at at least frequency 2W. ",
+            "date": "Answered September 5, 2016",
+            "views": "22",
+            "upvotes": " View 2 Upvoters "
+        }
+    ]
+}

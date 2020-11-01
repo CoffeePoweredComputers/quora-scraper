@@ -1,0 +1,16 @@
+{
+    "title": "What is the use of JMX? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gabor Jakab",
+                "href": "/profile/Gabor-Jakab"
+            },
+            "answer_text": "Provides a simple, standard way of managing software resources such as applications, devices, and services. Using JMX MBeans one can monitor and manage Java resources including the JVM. There is the JMX specification which defines the standards how to create and implement management and monitoring solution of applications and networks in Java. Using JMX, resources are instrumented by so called Managed Beans - MBeans which are registered and managed by an MBean Server. The MBean server is an JMX agent which can run on all Java Platform devices. Once a resource has been instrumented by MBeans, it can be managed through a JMX agent. JMX technology instrumentation can be accessed in many different ways, either through existing management protocols such as the Simple Network Management Protocol (SNMP) or through proprietary protocols.The MBean server relies on protocol adaptors and connectors to make a JMX agent accessible from management applications outside the agent's Java Virtual Machine. JMX is using other Java standards and technology e.g. JNDI, RMI, Jini etc... Java Monitoring and Management tools are using JMX. The Java SE platform includes the JConsole monitoring and management tool, which complies with the JMX specification. JConsole uses the extensive instrumentation of the Java VM (the platform MXBeans) to provide information about the performance and resource consumption of applications that are running on the Java platform. JConsole is a good example of a JMX application.  ",
+            "date": "Answered October 27, 2020",
+            "views": "224",
+            "upvotes": " Answer requested by Dhruval Patel"
+        }
+    ]
+}

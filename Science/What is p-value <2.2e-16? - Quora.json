@@ -1,0 +1,378 @@
+{
+    "title": "What is p-value <2.2e-16? - Quora",
+    "tags": [
+        "Statistics Software",
+        "P-value (statistics)",
+        "Computational Science and Scientific Computing",
+        "R (programming language)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sravan Kanukolanu",
+                "href": "/profile/Sravan-Kanukolanu-1"
+            },
+            "answer_text": "Here as you mentioned that you're working on some exercises in Stats, I will assume that you know the basics of Hypothesis Testing and terminology including what P-Value means and what are decision rules or boundaries and what is level of significance of the test. If you don't know these, I suggest you to learn them to understand the crux of what you're seeing in the results. Now, the value 2.2e-16 actually means 2.2 X 10 ^ -16. It is just a way R prints numbers that are either too big or too small. As you said that if the P-Value is less than 0.05, we reject the null hypothesis in case of test with 95% confidence or 5% significance. In general, we reject the null hypothesis when the P-value is less then the level of significance of the test. And if you're doing at test with 95% confidence or 5% significance, P-value of 2.2 X 10 ^-16 is very less compared to 5%=0.05. So you will reject the null hypothesis. Decision Rule in Hypothesis Testing using P-Value approach is: Reject null hypothesis if P-value is less than level of significance I.e. Alpha ",
+            "date": "Updated October 13, 2016",
+            "views": "427",
+            "upvotes": " View 15 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Eric Blanc",
+                    "user_href": "/profile/Eric-Blanc-9"
+                },
+                {
+                    "user_id": "Scarlett Wang",
+                    "user_href": "/profile/Scarlett-Wang-38"
+                },
+                {
+                    "user_id": "Omar Arellano",
+                    "user_href": "/profile/Omar-Arellano"
+                },
+                {
+                    "user_id": "May Mulato",
+                    "user_href": "/profile/May-Mulato-1"
+                },
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                },
+                {
+                    "user_id": "Saikat Basu",
+                    "user_href": "/profile/Saikat-Basu-63"
+                },
+                {
+                    "user_id": "Roma Kayla",
+                    "user_href": "/profile/Roma-Kayla"
+                },
+                {
+                    "user_id": "Anni Zou",
+                    "user_href": "/profile/Anni-Zou"
+                },
+                {
+                    "user_id": "Marwan",
+                    "user_href": "/profile/Marwan-45"
+                },
+                {
+                    "user_id": "PRAJAKTA AMBEKAR",
+                    "user_href": "/profile/PRAJAKTA-AMBEKAR-2"
+                },
+                {
+                    "user_id": "Viviane Schneider",
+                    "user_href": "/profile/Viviane-Schneider"
+                },
+                {
+                    "user_id": "Betty Sun",
+                    "user_href": "/profile/Betty-Sun-5"
+                },
+                {
+                    "user_id": "Karan Khajuria",
+                    "user_href": "/profile/Karan-Khajuria-3"
+                },
+                {
+                    "user_id": "Tanya Arora",
+                    "user_href": "/profile/Tanya-Arora-76"
+                },
+                {
+                    "user_id": "Aakash Sacheti",
+                    "user_href": "/profile/Aakash-Sacheti"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rebecca Warner",
+                "href": "/profile/Rebecca-Warner-4"
+            },
+            "answer_text": "This value is given in scientific notation: Scientific notation - Wikipedi The scientific notation E to the -16 power tells you that the value 2.2 is divided by 10 raised to the 16th power. This divisor is enormous. This tells you that your p value is < .00000000000000022 So yes: this p value is much smaller than the conventional value of .05 that is often used as a criterion for statistical significance. However, this p value is SO small that it makes me wonder if there is something odd going on. Perhaps the sample size is enormous or perhaps the routine that calculates p is incorrect. ",
+            "date": "Answered December 26, 2016",
+            "views": "42",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                },
+                {
+                    "user_id": "William Hoffman",
+                    "user_href": "/profile/William-Hoffman-60"
+                },
+                {
+                    "user_id": "Caelan Weller",
+                    "user_href": "/profile/Caelan-Weller"
+                },
+                {
+                    "user_id": "N Kaber",
+                    "user_href": "/profile/N-Kaber"
+                },
+                {
+                    "user_id": "Calvin Naidoo",
+                    "user_href": "/profile/Calvin-Naidoo-4"
+                },
+                {
+                    "user_id": "Ramya Selvam",
+                    "user_href": "/profile/Ramya-Selvam-2"
+                },
+                {
+                    "user_id": "Jacek",
+                    "user_href": "/profile/Jacek-30"
+                },
+                {
+                    "user_id": "Michael O Iyiade",
+                    "user_href": "/profile/Michael-O-Iyiade"
+                },
+                {
+                    "user_id": "Aggfa Sat",
+                    "user_href": "/profile/Aggfa-Sat"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yilun (Tom) Zhang",
+                "href": "/profile/\u5f35-\u9038\u502b-Yilun-Tom-Zhang"
+            },
+            "answer_text": "This number just means that your variable is very very significant. 2.2e-16 is 2.2 to the power of -16, so it is a very small number. 2.2e-16 is the smallest number larger than 0 that can be stored by the floating system in our computer. ",
+            "date": "Answered September 21, 2015",
+            "views": "421",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                },
+                {
+                    "user_id": "Ashish Pathak",
+                    "user_href": "/profile/Ashish-Pathak-78"
+                },
+                {
+                    "user_id": "Clark Miller",
+                    "user_href": "/profile/Clark-Miller-13"
+                },
+                {
+                    "user_id": "Cameron Williams",
+                    "user_href": "/profile/Cameron-Williams-203"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Anmol-316"
+                },
+                {
+                    "user_id": "Jo\u00e3o Paulo",
+                    "user_href": "/profile/Jo\u00e3o-Paulo-230"
+                },
+                {
+                    "user_id": "David Kao",
+                    "user_href": "/profile/David-Kao-25"
+                },
+                {
+                    "user_id": "Nathan Appleby",
+                    "user_href": "/profile/Nathan-Appleby"
+                },
+                {
+                    "user_id": "Laura Al Jarf",
+                    "user_href": "/profile/Laura-Al-Jarf"
+                },
+                {
+                    "user_id": "Ti Go Goer",
+                    "user_href": "/profile/Ti-Go-Goer"
+                },
+                {
+                    "user_id": "Michael O Iyiade",
+                    "user_href": "/profile/Michael-O-Iyiade"
+                },
+                {
+                    "user_id": "Niels Ohlsen",
+                    "user_href": "/profile/Niels-Ohlsen-1"
+                },
+                {
+                    "user_id": "Vasif Durarbayli",
+                    "user_href": "/profile/Vasif-Durarbayli"
+                },
+                {
+                    "user_id": "Adam Zhong",
+                    "user_href": "/profile/Adam-Zhong"
+                },
+                {
+                    "user_id": "Shivani Shah",
+                    "user_href": "/profile/Shivani-Shah-22"
+                },
+                {
+                    "user_id": "Cheng Jia",
+                    "user_href": "/profile/Cheng-Jia-10"
+                },
+                {
+                    "user_id": "Komal Rathi",
+                    "user_href": "/profile/Komal-Rathi-4"
+                },
+                {
+                    "user_id": "Tanya Zyabkina",
+                    "user_href": "/profile/Tanya-Zyabkina"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                },
+                {
+                    "user_id": "Jeremy Miles",
+                    "user_href": "/profile/Jeremy-Miles"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kim Xu",
+                "href": "/profile/Kim-Xu-7"
+            },
+            "answer_text": "Please refer to the definition of p-value. The p-value is defined as the probability of obtaining a result equal to or \"more extreme\" than what was actually observed, when the null hypothesis is true. Smaller P value means the probability of getting the extreme case was lower. I believe 2.2e-16 is just the smallest possible number the system can show, it is basically zero. ",
+            "date": "Answered November 10, 2016",
+            "views": "428",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                },
+                {
+                    "user_id": "Betty Sun",
+                    "user_href": "/profile/Betty-Sun-5"
+                },
+                {
+                    "user_id": "Priti Raychoudhury",
+                    "user_href": "/profile/Priti-Raychoudhury"
+                },
+                {
+                    "user_id": "Rakshit Murali",
+                    "user_href": "/profile/Rakshit-Murali"
+                },
+                {
+                    "user_id": "Giovanni Papini",
+                    "user_href": "/profile/Giovanni-Papini-2"
+                },
+                {
+                    "user_id": "Nathaniel James Pitts",
+                    "user_href": "/profile/Nathaniel-James-Pitts"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Muhammad Anees",
+                "href": "/profile/Muhammad-Anees-3"
+            },
+            "answer_text": "Although I complete endorse all the other answers in this thread, but I would make another silly point here. You can reject a null statement with a mere chance of 1 over Quadrillion 1,000,000,000,000,000 if that make sense to disagree with. So, you either assume it is simply zero because we dont have more than 8 Billions people to disagree with one of them or you can say, the rejection of your null statement is a perfect situation, more ideally, so. ",
+            "date": "Answered September 8, 2017",
+            "views": "193",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maxwell Peterson",
+                "href": "/profile/Maxwell-Peterson-1"
+            },
+            "answer_text": "The p < 0.05 or < 0.01 guidelines you're seeing in the text are just guidelines. If we are testing to see if the null hypothesis can be rejected at a 95% confidence level, then we reject the null hypothesis if we get p < 0.05. Your p value does satisfy this condition, so if you were testing at a 95% confidence level, then you could say you reject the null hypothesis because p < 0.05. However, it's a bit painful to say that you reject the null hypothesis at 95% significance when your p value is as low as this one. So it's common for people to also report the p value itself, rather than just saying it's less than 0.05. One more push against the idea that 0.05 or 0.01 are somehow special - p is a continuous variable, and thus can take on any positive value less than 1 (of course it's not a property of continuous variables to all be less than 1, but p is calculated in such a way that 0 < p < 1). There is no reason to expect p to be near 0.05, or near 0.01 - as you've seen, it can turn out to be far smaller. ",
+            "date": "Answered September 21, 2015",
+            "views": "199",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                },
+                {
+                    "user_id": "Tom\u00e1s Metcalfe",
+                    "user_href": "/profile/Tom\u00e1s-Metcalfe-1"
+                },
+                {
+                    "user_id": "Siva Kumar",
+                    "user_href": "/profile/Siva-Kumar-1350"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Hoffman",
+                "href": "/profile/William-Hoffman-60"
+            },
+            "answer_text": "It\u2019s important that rejection of nothing happened (the null hypothesis) does not prove your hypothesis is correct. Correlations can often be found that have p<<.05. The correlation of human population with AGW is in this range, particularly when the time span is 150 years. As Lanning says in I Robot, you have to ask the right question. ",
+            "date": "Answered March 12, 2019",
+            "views": "25",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "William Rutherford",
+                "href": "/profile/William-Rutherford-18"
+            },
+            "answer_text": "Very, very small. It means the hypothesis is overwhelmingly true, with only a tiny chance that we assumed the hypothesis was true, when it is in false. Basically, your hypothesis is highly likely. ",
+            "date": "Answered March 11, 2020",
+            "views": "383",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Janvi Sheth",
+                    "user_href": "/profile/Janvi-Sheth-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Clayton Bingham, Ph.D.",
+                "href": "/profile/Clayton-Bingham-Ph-D"
+            },
+            "answer_text": "This means less than 2.2*e^-16 where e is approximately 2.71. This is a very very small number indicating that your test can reject the null hypothesis with a high degree of significance. ",
+            "date": "Updated April 20, 2017",
+            "views": "114",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shivani Shah",
+                    "user_href": "/profile/Shivani-Shah-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ralph Winters",
+                "href": "/profile/Ralph-Winters"
+            },
+            "answer_text": "Which package? I have seen some package print bogus pvalues for a variety of reasons. ",
+            "date": "Answered September 26, 2015",
+            "views": "152",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Oleksandr Fialko",
+                "href": "/profile/Oleksandr-Fialko"
+            },
+            "answer_text": "Type .Machine in R console and see the result. 2.2e-16 looks like machine epsilon. It means basically your p-value is 0 in computer language. ",
+            "date": "Answered December 7, 2016",
+            "views": "41",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Daniel Jordan",
+                "href": "/profile/Daniel-Jordan-29"
+            },
+            "answer_text": "e^-16 means 1/10^16! You're p value is tiny, so yes we can state p to be significant. ",
+            "date": "Answered September 21, 2015",
+            "views": "21",
+            "upvotes": "0"
+        }
+    ]
+}

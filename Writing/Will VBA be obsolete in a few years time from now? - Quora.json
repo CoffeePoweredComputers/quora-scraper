@@ -1,0 +1,109 @@
+{
+    "title": "Will VBA be obsolete in a few years time from now? - Quora",
+    "tags": [
+        "Obsolete Technologies",
+        "Visual Basic for Applications (VBA)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brad Yundt",
+                "href": "/profile/Brad-Yundt"
+            },
+            "answer_text": "Will VBA be obsolete in a few years time? Only in your dreams. The rest of the world will still be building VBA-powered tools like mad, because work has to get done and VBA is both mature and fully supported by Microsoft. I attended a Microsoft presentation in 2007 about a possible successor to VBA. Microsoft realized at the time that computer software majors didn\u2019t consider Visual Basic to be a cool language. They also felt that a \u201cmanaged language\u201d would be superior to one (like VBA) that was unmanaged. Managed code means that it runs under management of a Common Language Runtime virtual machine like the .NET Framework. That particular proposal was later abandoned, but Microsoft continued thinking about a successor to VBA. Office-js has been identified as the successor to VBA. Code written in that language will be stored on a server so it can be easily updated. It will run on every Office application endpoint (e.g. Windows and Mac desktop Excel, Excel Online, Excel for iOS, etc.). There is an online store where you can buy Office Add-Ins that are written in Office-js. Documentation for Office-js is available on GitHub and technical support on StackOverflow questions posted with an Office-js tag. That said, VBA is the language that over 99% of people use today when automating Excel or other Office applications. Microsoft has promised to extend VBA in Windows and Mac Office to support features, objects, methods and properties as they are added to the application. The macro recorder makes it easy to figure out how to do stuff because it exposes the objects, methods and properties that directly correspond to what you just did to your workbook or document. To back up that promise of future support for VBA, I\u2019ll point out that Excel 2016 still supports Excel4 macros, a language that debuted with Excel 4 in 1993 and was made functionally obsolete by VBA in Excel 5 in 1994. Very few people ever built Excel4 macros, but they continue to run because some businesses might be depending on them. VBA code is many orders of magnitude more important to business customers, so I expect it to be supported as long as desktop Excel and Word are relevant.  I really don\u2019t understand the enmity that people feel towards VBA. Almost all of the code in a macro involves the objects, methods and properties inherent to an Excel workbook or Word document. That\u2019s where the complexity lies, and that complexity will be there no matter whether the macro language is based on Visual Basic (VBA), JavaScript (Office-js), Python or R. To write a macro, you only need to master the dozen or so keywords needed for variable declaration, looping and performing conditional logic. If you have studied any programming language previously, it shouldn\u2019t take more than an hour or so to learn these skills. All the rest of the language is learning how to manipulate the objects, methods and properties of Excel, Word, etc. VBA continues to dominate Office automation for many reasons: The macro recorder makes it easy to learn the languageThe language is easy to read, even by non-programmersThere is no need to reinvent the wheel by programming an algorithm for common tasks, such as sorting or drawing a chart from primitive elements. Just use Excel\u2019s native methods (sort or chart add in these instances), and the job will be done with a couple of statements in VBA.Each user already has 100% of the tools and permissions he or she needs to begin automating. There is no need to buy anything, go for advanced training, beg IT to give you access to a Server, or convince a boss to sign off on your project. Just do it!Documentation is available online, and you access it from within the VBA Editor.Technical support is ubiquitous\u2014if a colleague doesn\u2019t know the answer, you can easily find it in one of the many help forums and websites maintained by experts.I would readily agree that VBA is not the best language to use for solving many problems. But you need to know a language to build a solution in it. And if you are like most people and work on a variety of problems, using the best language for each problem likely means learning umpteen different languages. The beauty of VBA is that it is \u201cgood enough\u201d to be used to solve every Office automation problem. VBA truly is the language for the rest of us. Who wouldn\u2019t want to double their personal productivity? VBA can do that. And if your colleagues do similar work, they can benefit from your tools just as much. If you learn VBA to solve one problem, the next problem leverages those skills and becomes easier to solve.  One of the people behind the Office-js initiative made the very interesting statement that Office-js is taking so long to implement because they are building a modern framework for each of the objects and methods in all of the Office applications. Once this framework is completed, it would be an easy task to \u201creskin\u201d it with a different language. While the Office automation path forward is based on JavaScript today, that same framework could be used to implement Python or R as a macro language should they decide to do so. But if Microsoft does implement Python or R as the basis for a macro language, the finished language is going to bear no more than a passing familiarity to someone who already knows Python or R. You will still have the complexity of learning and using all those objects, methods and properties inherent with Excel or Word. ",
+            "date": "Updated December 26, 2017",
+            "views": "78",
+            "upvotes": " View 48 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Manish Chandra",
+                    "user_href": "/profile/Manish-Chandra-216"
+                },
+                {
+                    "user_id": "Eduardo Alexandre Mendes",
+                    "user_href": "/profile/Eduardo-Alexandre-Mendes"
+                },
+                {
+                    "user_id": "Hasan Namik Hazim",
+                    "user_href": "/profile/Hasan-Namik-Hazim"
+                },
+                {
+                    "user_id": "Yury Suturin",
+                    "user_href": "/profile/Yury-Suturin"
+                },
+                {
+                    "user_id": "Danielle O'Connell",
+                    "user_href": "/profile/Danielle-OConnell-5"
+                },
+                {
+                    "user_id": "Erni Yunita",
+                    "user_href": "/profile/Erni-Yunita"
+                },
+                {
+                    "user_id": "D\u00e1niel Szal\u00f3k",
+                    "user_href": "/profile/D\u00e1niel-Szal\u00f3k"
+                },
+                {
+                    "user_id": "Mark Jason Lleno",
+                    "user_href": "/profile/Mark-Jason-Lleno-1"
+                },
+                {
+                    "user_id": "Jose Corona",
+                    "user_href": "/profile/Jose-Corona-7"
+                },
+                {
+                    "user_id": "Jamil Mohammad",
+                    "user_href": "/profile/Jamil-Mohammad-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ross Ledehrman",
+                "href": "/profile/Ross-Ledehrman"
+            },
+            "answer_text": "The question, even though interesting, is quite irrelevant. All these languages will become more or less relevant, irrelevant or even obsolete. VBA might become obsolete. Great! It might not. Great! But that shouldn't preferent you doing anything in VBA right now for example. You work with the tools of today to achieve greatness. Whatever comes your way, will then be used. All those coding languages are rather straightforward. Using a language now which might be used (or more used) - in the future is just a gamble. I much rather use what I have now. I still know multinational organizations with over 50.000 FTE who work with XP. Yes.. XP. And the best they have is Excel 03\u2026 And I know guys who speak garbage of VBA. Look, do the best with what you have, complexity doesn't mean better software. I see that with a lot of fintech and JAVA coders. More is better\u2026 No. Simple models rather than complex ones always have my preference. If you can do it complex, you can do it easily. Whether you code in VBA, Chinese, Dutch, or JAVA, it doesn't matter. ",
+            "date": "Answered September 28, 2017",
+            "views": "39",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Jason Lleno",
+                    "user_href": "/profile/Mark-Jason-Lleno-1"
+                },
+                {
+                    "user_id": "Fahri Gafarzade",
+                    "user_href": "/profile/Fahri-Gafarzade"
+                },
+                {
+                    "user_id": "Pat Deehan",
+                    "user_href": "/profile/Pat-Deehan"
+                },
+                {
+                    "user_id": "Babis Tsoutsas",
+                    "user_href": "/profile/Babis-Tsoutsas"
+                },
+                {
+                    "user_id": "Jiamin Zhuo",
+                    "user_href": "/profile/Jiamin-Zhuo"
+                },
+                {
+                    "user_id": "Julian Lin",
+                    "user_href": "/profile/Julian-Lin-5"
+                },
+                {
+                    "user_id": "Eugenio Grant",
+                    "user_href": "/profile/Eugenio-Grant"
+                },
+                {
+                    "user_id": "Guzman Safon",
+                    "user_href": "/profile/Guzman-Safon"
+                },
+                {
+                    "user_id": "Bogdan Petre",
+                    "user_href": "/profile/Bogdan-Petre"
+                }
+            ]
+        }
+    ]
+}

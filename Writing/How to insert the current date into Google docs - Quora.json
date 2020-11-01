@@ -1,0 +1,88 @@
+{
+    "title": "How to insert the current date into Google docs - Quora",
+    "tags": [
+        "Google Docs"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kris Hogh",
+                "href": "/profile/Kris-Hogh"
+            },
+            "answer_text": "Add this code in the Script Editor (In the doc go to Tools > Script Editor) then paste this in: \u2014\u2014\u2014\u2014\u2014\u2014-COPY BELOW THIS LINE\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 function onOpen() { // Add a menu with some items, some separators, and a sub-menu. DocumentApp.getUi().createMenu('Utilities') .addItem('Insert Date', 'insertAtCursor') .addToUi(); } /** * Inserts the date at the current cursor location in boldface. */ function insertAtCursor() { var cursor = DocumentApp.getActiveDocument().getCursor(); if (cursor) { // Attempt to insert text at the cursor position. If insertion returns null, // then the cursor's containing element doesn't allow text insertions. var date = Utilities.formatDate(new Date(), \"GMT\", \"dd-MM-yyyy\"); // \"yyyy-MM-dd'T'HH:mm:ss'Z'\" var element = cursor.insertText(date); if (element) { element.setBold(false); } else { DocumentApp.getUi().alert('Cannot insert text at this cursor location.'); } } else { DocumentApp.getUi().alert('Cannot find a cursor in the document.'); } } \u2014\u2014\u2014\u2014\u2014\u2014-COPY ABOVE THIS LINE\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014 Then save and close the editor, refresh your doc and you will see a \u201cUtilities\u201d menu\u2026 click the insert date option and BAM\u2026 you have a date\u2026 it can be formatted how you like in the script editor in the line: var date = Utilities.formatDate(new Date(), \"GMT\", \"dd-MM-yyyy\"); Just change the dd-MM-yyy part to the format you need (Date format by country - Wikipedia ",
+            "date": "Answered December 9, 2016",
+            "views": "395",
+            "upvotes": " View 24 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Suresh Koneru",
+                    "user_href": "/profile/Suresh-Koneru"
+                },
+                {
+                    "user_id": "Karyn Ward",
+                    "user_href": "/profile/Karyn-Ward-10"
+                },
+                {
+                    "user_id": "Libor Supcik",
+                    "user_href": "/profile/Libor-Supcik"
+                },
+                {
+                    "user_id": "Dejan Perov",
+                    "user_href": "/profile/Dejan-Perov"
+                },
+                {
+                    "user_id": "Marvin Alcantara",
+                    "user_href": "/profile/Marvin-Alcantara"
+                },
+                {
+                    "user_id": "WMS-Sample Student",
+                    "user_href": "/profile/WMS-Sample-Student"
+                },
+                {
+                    "user_id": "Alin",
+                    "user_href": "/profile/Alin-1"
+                },
+                {
+                    "user_id": "Rh Jones",
+                    "user_href": "/profile/Rh-Jones"
+                },
+                {
+                    "user_id": "Josh Young",
+                    "user_href": "/profile/Josh-Young-27"
+                },
+                {
+                    "user_id": "Glauber Carvalho",
+                    "user_href": "/profile/Glauber-Carvalho-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ly Tran",
+                "href": "/profile/Ly-Tran-72"
+            },
+            "answer_text": "From Google Docs , select Tools menu and click Open Script Editor. Paste the following script to the editor function onOpen() {\u00a0  var ui = DocumentApp.getUi();\u00a0  // Or FormApp or SpreadsheetApp.\u00a0  ui.createMenu('Custom Menu')\u00a0      .addItem('Insert Date', 'insertDate')\u00a0      .addToUi();\u00a0\u00a0}\u00a0\u00a0function insertDate() {\u00a0  var cursor = DocumentApp.getActiveDocument().getCursor();\u00a0  if (cursor) {\u00a0      // Attempt to insert text at the cursor position. If insertion returns null,\u00a0      // then the cursor's containing element doesn't allow text insertions.\u00a0      var d = new Date();\u00a0      var dd = d.getDate();\u00a0      dd = pad(dd, 2)\u00a0      var mm = d.getMonth() + 1; //Months are zero based\u00a0      mm = pad(mm, 2)\u00a0      var yyyy = d.getFullYear();\u00a0      var date = dd + \"-\" + mm + \"-\" + yyyy;\u00a0      var element = cursor.insertText(date);\u00a0      if (element) {\u00a0        element.setBold(true);\u00a0      } else {\u00a0        DocumentApp.getUi().alert('Cannot insert text at this cursor location.');\u00a0      }\u00a0    } else {\u00a0      DocumentApp.getUi().alert('Cannot find a cursor in the document.');\u00a0  }\u00a0\u00a0}\u00a0function pad (str, max) {\u00a0  str = str.toString();\u00a0  return str.length < max ? pad(\"0\" + str, max) : str;\u00a0}\u00a0",
+            "date": "Answered September 15, 2018",
+            "views": "198",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Amer Afzal",
+                    "user_href": "/profile/Amer-Afzal"
+                },
+                {
+                    "user_id": "Esben Vilhelm Hansen",
+                    "user_href": "/profile/Esben-Vilhelm-Hansen"
+                },
+                {
+                    "user_id": "Tanvir Hossain",
+                    "user_href": "/profile/Tanvir-Hossain-179"
+                },
+                {
+                    "user_id": "Werner Klinger",
+                    "user_href": "/profile/Werner-Klinger"
+                }
+            ]
+        }
+    ]
+}

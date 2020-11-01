@@ -1,0 +1,115 @@
+{
+    "title": "How is functional analysis related to the study of differential equations? - Quora",
+    "tags": [
+        "Functional Analysis",
+        "Ordinary Differential Equations",
+        "Mathematical Analysis",
+        "Partial Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Winkler",
+                "href": "/profile/Andrew-Winkler-15"
+            },
+            "answer_text": "A standard strategy for studying differential equations is to first cast as wide a net as possible, and then to try to prove that what you caught in the net is actually a suitable solution. The way the net is constructed, is via duality. In order to integrate f times g, the nicer g is, the nastier f is allowed to be. For example, if g has compact support, then it doesn\u2019t matter how extremely f eventually grows. On the other hand, the smoother g is, the more crazy f can be. As one example along these lines, if both g and its first derivative are square integrable, then f can be any function that has \u201cbounded mean oscillation\u201d. The next step is to define differential operators on f, by transposition. In essence you convert integration by parts from a theorem to a definition. Now a linear differential equation Du = f becomes <u, D*g> = <f,g> for all g that are really nice, like smooth with compact support, say. It\u2019s generally much easier to prove that such a u exists; you have all the tools of functional analysis at your disposal. Then you can go about trying to show that u is actually a function, that actually has derivatives, and bounds on its growth, and so on. As one example, if D is \u201celliptic\u201d, then u will have as many derivatives as f has in a very precise sense. and moreover in the general case there is a Hamiltonian flow related to D that precisely controls the places and directions in which u can fail to be smooth, relating to the places and directions in which f fails to. The broader answer to your question is that functional analysis was created for the purpose of studying differential equations. Like most mathematical fields, it has taken on a life of its own. ",
+            "date": "Answered June 17, 2019",
+            "views": "38",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Abhishek Tiwari",
+                    "user_href": "/profile/Abhishek-Tiwari-551"
+                },
+                {
+                    "user_id": "Alberto Bietti",
+                    "user_href": "/profile/Alberto-Bietti"
+                },
+                {
+                    "user_id": "Muntasir Raihan Rahman",
+                    "user_href": "/profile/Muntasir-Raihan-Rahman"
+                },
+                {
+                    "user_id": "Nagesh Adluru",
+                    "user_href": "/profile/Nagesh-Adluru"
+                },
+                {
+                    "user_id": "Sean Ippolito",
+                    "user_href": "/profile/Sean-Ippolito-1"
+                },
+                {
+                    "user_id": "Paul Wiering",
+                    "user_href": "/profile/Paul-Wiering-1"
+                },
+                {
+                    "user_id": "David Xu Huang",
+                    "user_href": "/profile/David-Xu-Huang"
+                },
+                {
+                    "user_id": "Jos\u00e9 Luis Aguilar",
+                    "user_href": "/profile/Jos\u00e9-Luis-Aguilar-1"
+                },
+                {
+                    "user_id": "Dominador Sabanal",
+                    "user_href": "/profile/Dominador-Sabanal"
+                },
+                {
+                    "user_id": "Mayank Jha",
+                    "user_href": "/profile/Mayank-Jha-29"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Platt",
+                "href": "/profile/Eric-Platt-9"
+            },
+            "answer_text": "Differential Equations tend to make more sense in a rigorous sense when you are working with 'weak derivatives' instead of traditional derivatives. Some background is needed to understand what is going on. In calculus you learn about integration by parts. We can derive integration by parts from the product rule. [math]d(uv) = du \\cdot v + u \\cdot dv[/math] [math]\\Rightarrow uv = \\int v du + \\int u dv[/math] [math]\\Rightarrow [/math][math]\\int u dv = uv - \\int v du[/math] Now notice that the integration by parts rule in a sense relates two functions to their derivatives (each gets a chance of getting differentiated), and that the derivatives are inside of integrals. Integrals don't care about sets of measure zero so we can do the following to generalize derivatives A weak derivative of [math]u[/math] is a function [math]v[/math] s.t [math]\\int u(t)\\phi'(t)dt = -\\int v(t)\\phi(t)dt[/math] for all test functions [math]\\phi \\in C^{\\infty}_0 [/math], that is the functions that are infinitely differentiable and 0 on the boundary of the set you are integrating. So a weak derivative can be thought of as a function that is the derivative almost everywhere. As an example[math] f(x) = |x| [/math]is not traditionally differentiable because of the point at zero. But any function that is -1 on the left, and 1 on the right almost everywhere is a weak derivative of [math]f[/math]. The space of functions where it has weak derivatives, and the function and it's weak derivatives are all[math] L^p[/math] functions are the Sobolev spaces [math]W^{p,n}[/math]. If you want to be working with a Hilbert space then you want all of the weak derivatives to be [math] L^2 [/math]and the space is called [math]H^n[/math]. The space of differentiable functions are not complete, but the Sobolev spaces are. The study of Sobolev spaces is built entirely on functional analysis. You need to know the definitions, theorems of Lebesgue integration, Banach and Hilbert spaces, types of convergence of operators and functionals, and so on. ",
+            "date": "Updated September 6, 2016",
+            "views": "31",
+            "upvotes": " View 31 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Matthew Graham",
+                    "user_href": "/profile/Matthew-Graham-86"
+                },
+                {
+                    "user_id": "Kristian Georgiev",
+                    "user_href": "/profile/Kristian-Georgiev-4"
+                },
+                {
+                    "user_id": "Yasa Syed",
+                    "user_href": "/profile/Yasa-Syed"
+                },
+                {
+                    "user_id": "Mohammed Gha\u00efth",
+                    "user_href": "/profile/Mohammed-Gha\u00efth"
+                },
+                {
+                    "user_id": "Mario Acevedo",
+                    "user_href": "/profile/Mario-Acevedo-4"
+                },
+                {
+                    "user_id": "Bilal Jafar Karaki",
+                    "user_href": "/profile/Bilal-Jafar-Karaki"
+                },
+                {
+                    "user_id": "William Mansley",
+                    "user_href": "/profile/William-Mansley"
+                },
+                {
+                    "user_id": "Rafael Gon\u00e7alves de Lima",
+                    "user_href": "/profile/Rafael-Gon\u00e7alves-de-Lima"
+                },
+                {
+                    "user_id": "Juan Quiroa",
+                    "user_href": "/profile/Juan-Quiroa"
+                },
+                {
+                    "user_id": "Subhrajyoti Nayak",
+                    "user_href": "/profile/Subhrajyoti-Nayak-4"
+                }
+            ]
+        }
+    ]
+}

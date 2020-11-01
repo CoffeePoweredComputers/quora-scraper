@@ -1,0 +1,53 @@
+{
+    "title": "What is the method for designing the primer for quantitative real-time PCR? - Quora",
+    "tags": [
+        "DNA Primers",
+        "Polymerase Chain Reaction (PCR)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Antonio Carusillo",
+                "href": "/profile/Antonio-Carusillo"
+            },
+            "answer_text": "I\u2019ll brefly describe what I ve actually done for designing primers for qPCR employing SYBR Green as detectable marker during the amplification process. The purpose of my realtime qPCR was the detection of a mRNA I was interested into. Being said that my sequence of interest was actually a transgene with an HA tag at the N-terminus. So what I wanted to design was a forward primer to target the HA sequence and a revers primer to target the sequence of interest at the 3\u2032 end. Now I\u2019ll list step by step what I did: Go to PubMED and search for the gene of interest. Then I get the CDS ( coding sequence, the mRNA already spliced ) and downloaded the FASTA format of the CDS.Then I opened the FASTA in SNAPGene Application ( this is not the only one, but in my lab all use it ). The program will show you the CDS sequence with both the 5\u2032-3\u2032 and the 3\u2032-5\u2032 strands, along with many features helping you to identify the region that is most suitable for amplification.Now I had to design the Forward primer so that I could amplify the HA-N-terminus of my gene of interest. So I simply looked for the HA sequence ( I\u2019ve found it on Wikipedia, no joking ! ) and after copy that I pasted it in an online tool called IDT Oligo Analyzer. This is an usefull tool that by analyzing the sequence you pasted it tells you :Temperature of Melting (Tm, which means at which temperature the two double strands of the DNA, to cDNA in my case, start opening ): this should be between 55\u201360\u00b0 CelsiusHarpin: it tells how much the primer is likely to form hairpins within itself. If the primer forms hairpins it may not bind to your target sequence and you won\u2019t see much amplification or no amplification at all , underestimating the quantity of your gene of interest.G/C composition: G-C are linked by three hydrogen bounds instead of two like A-T. So it occurs more energy ( and thereby an higher temperature ) to unbound them. So the G/C composition, directly affects the Tm.DeltaG: it should be around -9/-10 kcal and this value is related to the possibility of primers to form self-dimers.The Fw primer, has to amplify the region running from 3\u2032 to 5\u2032, so the HA tag sequence I pasted into IDT is the Fw primer sequence itself!For the reverse primer is the same. By looking at the FASTA displayed on SNAPGene you can choose the region you would like to design the primer for ( literally you can select it with the Mouse. Of course know you have to amplify the opposite strand. So you will look on the region running from 5\u2032-3\u2032 and design an a primer able to bind on the opposite regione ). Mind that the primer for an efficient qPCR should be aotynd 30bp long. Once you selected it , you copy and paste into IDT Oligo Analyzer and check if the characteristics are suitable for amplification ( Tm, Harpin %, G/C composition and DeltaG Value). Once you verified your Fw and Rv primers you can order them. Hope it helps. ",
+            "date": "Answered April 27, 2017",
+            "views": "709",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Francesco Comezzi",
+                    "user_href": "/profile/Francesco-Comezzi"
+                },
+                {
+                    "user_id": "Jeffrey Brender",
+                    "user_href": "/profile/Jeffrey-Brender"
+                },
+                {
+                    "user_id": "Alejandro Casco",
+                    "user_href": "/profile/Alejandro-Casco"
+                },
+                {
+                    "user_id": "Dan Calvano",
+                    "user_href": "/profile/Dan-Calvano"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohamed Abdel-Maboud",
+                "href": "/profile/Mohamed-Abdel-Maboud"
+            },
+            "answer_text": "Firstly a lot of criteria must be considered to find the most accurate probe and to avoid the formation of primer-dimers, again the main foucos is to find the potential primers and probes that are specific qPCR assays. A lot of tools as software programs and websites are available and professional in doing so. I refer you to this reference ProbeLibrary: A new method for faster design and execution of quantitative real-time PCR ",
+            "date": "Answered April 23, 2017",
+            "views": "190",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Ff Ff",
+                    "user_href": "/profile/Ff-Ff-225"
+                }
+            ]
+        }
+    ]
+}

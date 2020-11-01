@@ -1,0 +1,19 @@
+{
+    "title": "Where are private IPv4 addresses and public IPv4 addresses used? - Quora",
+    "tags": [
+        "IPv4",
+        "IPv6"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harvey Miller",
+                "href": "/profile/Harvey-Miller-10"
+            },
+            "answer_text": "From a historical perspective, originally all addresses other than the loop back addresses were public and companies were assigned a range. For large companies, they were given a class A address which allowed them to have many unique addresses. Similarly smaller companies were assigned class B or C address ranges. Unfortunately the number addresses assigned this way were all assigned some time ago and IPv6 was too difficult to migrate to. So there were 3 ranges that were set aside for private addresses which meant that a company could assign computers within their private network without worrying about any addresses outside of that network. To access the Internet, a private ip had to be translated (NAT) to a public ip, but traffic within the private network would use the private ip. A typical home user has a private ip that can be seen with the ipconfig (Windows) or ifconfig (Linux) command. The home router forwards requests and translates the private ip to a public one. ",
+            "date": "Answered July 3, 2018",
+            "views": "322",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "title": "How to find the day of the week given a date - Quora",
+    "tags": [
+        "Dating Advice",
+        "Dating and Relationships"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Steele",
+                "href": "/profile/John-Steele-88"
+            },
+            "answer_text": "Sensible answer: Find a calendar app that will display a monthly calendar app for the month and year. Math nerd answer (me): There are numerous algorithms, Zeller\u2019s is pretty famous. These algorithms use a variety of definitions for how they number months and days of week. Be sure you read the definitions for the one you use. Astronomers use Julian Days, a count of days since Noon, Jan 1, 4713 BC. If you take Julian Day mod 7, you get day of week, 0 = Monday. This is a large inconvenient number around 2.45 million. You can cast out obvious multiples of 7 and get the numbers smaller. The following is valid for Gregorian dates, and generates fairly small numbers (3 digit). Gregorian didn\u2019t exist before 1582, but it does proleptic Gregorian from 1 AD or CE. March-December are months 3\u201312 as normal. January and February are taken as months 13 and 14 of year-1. Partition the corrected year into Y = 100*c +y, where y is the two digit year. All divisions are integer divisions, discard remainders. dow = (1 + day + (26*m-73)\\10 +y + y\\4 +5*c +c\\4) mod7 Test 2020\u201307-15 = 156mod 7 = 2 = Wednesday The month correction may be written in numerous other valid forms, but the above is quite robust to fp rounding when done in binary floating point, using the integer or floor function to do integer divide. Some others are not. Note: On a calculator, the following is OK dow = (1 + day + INT(2.6m - 7.3) + INT(1.25y) + INT(5.25c))mod7 ",
+            "date": "Answered July 15, 2020",
+            "views": "52",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rakesh Ramesh",
+                "href": "/profile/Rakesh-Ramesh-10"
+            },
+            "answer_text": "I'd worked out a solution when I was in school ( Not a fool-proof solution, as I hadn't really rigorously tested it, and I'm yet to ) 1) Given a date, try to find out what day of the week does the day fall on in the current year.    ( I was born on 6th September, 1989. So, I'd check the day 6th September would fall on this year, i.e 2014. I would calculate the day 6th of the current month would be, and then easily deduce the same for 6th of September of the current year. It is Saturday ) 2) Subtract the year in the given date from the current year, and consider it's mod.  ( 2014 -1989 = 25 ) 3) Calculate the remainder of this difference when divided by 7   ( 25 % 7 = 4 ) 3) Calculate the number of leap years between the said period.   ( 1992, '96, '00, '04, '08, '12 i.e: 6 ) 4) Calculate the remainder of this number when divided by 7   ( 6 % 7 = 6 ) 5) Add the two remainders. If greater than 7, divide by 7 and find the remainder once again.    ( 6 + 4 = 10. 10 % 7 = 3) The final step. As the date, 6th Sep., 1989 is from the past, I'd count 3 days back from Saturday: The answer would be Wednesday.  If the given date is from the future, count ahead from Saturday. If the final result would have been 0, then it means 6th Sep. 1989 was also a Saturday.  PS: Do cross check it. And, please do correct me as in the absence of testing, I believe this solution isn't fool-proof. :-) ",
+            "date": "Answered May 26, 2014",
+            "views": "528",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Snehal Punekar",
+                    "user_href": "/profile/Snehal-Punekar-1"
+                },
+                {
+                    "user_id": "Suneet Shukla",
+                    "user_href": "/profile/Suneet-Shukla-5"
+                }
+            ]
+        }
+    ]
+}

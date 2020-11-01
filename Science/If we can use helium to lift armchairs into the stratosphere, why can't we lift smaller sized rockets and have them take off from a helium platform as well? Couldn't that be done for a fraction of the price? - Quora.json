@@ -1,0 +1,88 @@
+{
+    "title": "If we can use helium to lift armchairs into the stratosphere, why can't we lift smaller sized rockets and have them take off from a helium platform as well? Couldn't that be done for a fraction of the price? - Quora",
+    "tags": [
+        "Stratosphere",
+        "Helium",
+        "Balloons",
+        "Rocket Science",
+        "Rockets",
+        "Atmospheric Sciences",
+        "Physics of Everyday Life",
+        "Science",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Duncan Oliver",
+                "href": "/profile/Duncan-Oliver-1"
+            },
+            "answer_text": "For suborbital sounding rockets? Sure. This concept exists already and is known as a \u201cRockoon.\u201d For orbital flight? It\u2019s much less practical. There are a couple of companies working on different concepts for this, such as JP Aerospace and Zero 2 Infinity, but there are some fundamental limitations of balloon launch to orbit. 1: You can\u2019t really steer a balloon, and stratospheric winds are fast. You can\u2019t precisely control where the rocket stage launches from, which could mean imprecise orbits. There are some orbital customers who aren\u2019t picky about what orbit they end up in, but those general consist of smaller satellites that can get a fairly cheap launch by having a bunch of little satellites piggyback on a launch with a much larger primary payload. 2: You\u2019re not saving that much weight on the rocket, especially with larger vehicles (which have a higher ballistic coefficient and don\u2019t end up losing that much delta-V to atmospheric drag). Gravity losses make up most of the delta-V used on a flight that doesn\u2019t go directly into the vehicle\u2019s velocity, but keep in mind that even if the balloon gets you to about 40 kilometers (note: the air gets exponentially thinner with altitude, which means the size of the balloon relative to the size of the payload grows very rapidly the higher you want to go) that\u2019s only 10% of the way to the orbital height of the ISS, and that\u2019s towards the low end of orbits actually used for satellites. There\u2019s not a linear correlation between launch altitude and gravity losses, but it still translates to relatively minor savings. Because the rocket equation is exponential, a minor delta-V saving can result in fairly big mass savings. But\u2026 let\u2019s just throw some numbers out there as an example. If the rocket\u2019s first stage would need to provide 4000 m/s of delta-V launching from the ground, but only 3500 m/s launching from a high-altitude balloon (this saves roughly 1/3 of the total drag+gravity losses on a typical orbital launch IIRC), and it has a specific impulse of 300 s (reasonable for a low-cost, small-scale launch vehicle lower stage), the rocket\u2019s mass at launch would only have to be about 3.3 times the mass when the first stage burns out instead of 3.9 times that mass. Assuming the first stage is 95% fuel (this is a pretty good mass ratio), the launch mass has to be around 4.6 times the mass of the second stage and everything above it launching from the ground, but only 3.7 times that mass launching from a balloon. So, that\u2019s a total weight savings on the order of maybe 20% for the same payload, if the upper stages are the same? There are a few other factors involved, e.g. you can use engines with bigger and more efficient nozzles on the first stage if they never have to operate in high atmospheric pressure conditions, but it\u2019s all fairly minor savings. 3: You\u2019re limited to smaller payloads. Making a rocket bigger is\u2026 if not easy, it\u2019s easier than scaling up other types of aircraft. A balloon has to displace its own weight in air, and at very high altitudes the air density is extremely low (which is the whole point of trying to launch from up there) - but this means you need a HUGE balloon, and for the balloon\u2019s envelope to not be so heavy it can\u2019t fly this envelope has to be extremely, extremely thin. NASA flies balloons made of plastic film about the same thickness as kitchen film, and these still need to be football-field-sized to lift just a few tons of payload. Even small orbital launchers are generally in the tens of tons of mass at liftoff. What if you use a bigger balloon? Well, the laws of physics don\u2019t technically stop you, but helium is (a) not exactly cheap, and (b) is most likely going to get more expensive because it\u2019s not renewable on a human timescale. Balloon launch to orbit is probably possible for payload sizes that would compete with the other \u201csmallsat\u201d launchers out there, but there are serious practical concerns, and it may not be economically practical when competing with new generations of ground-launched rockets. You\u2019re not competing in the same market niche as the Delta IV or Ariane, you\u2019re going to have to compete in a market where liftoff mass and payload fraction are at far less of a premium for ground-launched rockets because the big, expensive lower stages are being recovered and flying multiple times, and eventually the upper stages may be as well. ",
+            "date": "Answered October 23, 2020",
+            "views": "940",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gouthro",
+                    "user_href": "/profile/Mark-Gouthro"
+                },
+                {
+                    "user_id": "Martin Sol",
+                    "user_href": "/profile/Martin-Sol-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kim Aaron",
+                "href": "/profile/Kim-Aaron"
+            },
+            "answer_text": "If we can use helium to lift armchairs into the stratosphere, why can't we lift smaller sized rockets and have them take off from a helium platform as well? Couldn't that be done for a fraction of the price? This has been suggested many times (here on Quora as well as elsewhere). This would cost far more than the way we do it now. It adds a lot of complexity for incredibly little gain. Almost all of the energy needed to get into orbit is increasing the speed to orbital speed. The potential energy of going uphill 100 km or so is quite small in comparison to the kinetic energy you need. And the potential energy of going up say 10 km by balloon is a fraction of that already small fraction of the total energy needed. Except for quite small rockets, it is impractical to build a balloon large enough to lift the rocket. And large balloons are very difficult to launch. A balloon launch campaign can involved waiting months for the winds to be low enough to inflate the balloon. It\u2019s sooooo much easier just to launch a rocket from the ground. And \u201csooooo much easier\u201d translates into cheaper. Let\u2019s do some simple math. Calculate kinetic energy and potential energy for a spacecraft getting into low earth orbit. I copied the following plot from Circular orbital speed and period as a function of altitude for LEO. It shows the orbital speed at various altitudes in LEO.  Let\u2019s use 7.8 km/s and 200 km. Let\u2019s take a 1 kg mass for simplicity. But it doesn\u2019t matter because mass will cancel out. KE = 1/2 m V[math]^2[/math] = 1/2 x 1 kg x (7800 m/s)[math]^2[/math] = 30 million joules. PE = m g h = 1 kg x 9.8 m/s[math]^2[/math] x 200,000 m = 2 million joules. See? The ratio is 30/2 = 15. By using a balloon to climb the first 10,000 m, you\u2019d save 0.1 million joules. That\u2019s 0.3% of the total energy. Whoop di doo. We typically carry about 3% margin extra fuel just to cover uncertainties. So the balloon would save us one tenth of the extra fuel we plan not even to use. Just ain\u2019t worth it. ",
+            "date": "Answered October 24, 2020",
+            "views": "22",
+            "upvotes": " View 25 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gerard van Wilgen",
+                    "user_href": "/profile/Gerard-van-Wilgen"
+                },
+                {
+                    "user_id": "Brian Rauchfuss",
+                    "user_href": "/profile/Brian-Rauchfuss-1"
+                },
+                {
+                    "user_id": "Igor Milat",
+                    "user_href": "/profile/Igor-Milat"
+                },
+                {
+                    "user_id": "Mikael Saarenp\u00e4\u00e4",
+                    "user_href": "/profile/Mikael-Saarenp\u00e4\u00e4"
+                },
+                {
+                    "user_id": "Ciro Pabon",
+                    "user_href": "/profile/Ciro-Pabon"
+                },
+                {
+                    "user_id": "Steve Ryan",
+                    "user_href": "/profile/Steve-Ryan-33"
+                },
+                {
+                    "user_id": "Petr Titera",
+                    "user_href": "/profile/Petr-Titera-1"
+                },
+                {
+                    "user_id": "Ashutosh Srivastav",
+                    "user_href": "/profile/Ashutosh-Srivastav-5"
+                },
+                {
+                    "user_id": "Timothy S Sullivan",
+                    "user_href": "/profile/Timothy-S-Sullivan"
+                },
+                {
+                    "user_id": "Andrew Forrest",
+                    "user_href": "/profile/Andrew-Forrest-40"
+                }
+            ]
+        }
+    ]
+}

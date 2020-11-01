@@ -1,0 +1,108 @@
+{
+    "title": "How does one fix a python EOF error when using raw_input (' ')? - Quora",
+    "tags": [
+        "Error and Errors",
+        "Learning Python",
+        "Python (programming language)",
+        "Learning to Program",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vladimiro Casinha",
+                "href": "/profile/Vladimiro-Casinha"
+            },
+            "answer_text": "I usually don\u2019t give code answers, even if we were colleagues. I discuss ideas and concepts, not code. Unless the code is really bad or messy, and then we need to understand what it is supposed to do and discuss that concept. If I give you the answer, you\u2019ll never truly learn. I suggest you to learn the basics with assistance, a friend, a teacher or a tool like \u201cLearn Python - Free Interactive Python Tutorial\u201d (just googled \u201cPython tutorial online\u201d). Fight the urge to lookup the code answer to your problem, try to understand your problem, once you understand it, your problem is solved. Think more in the lines of: What is EOF?Why EOF?Am I doing something wrong or is this normal?Should I check for EOF?Good luck Adam. ",
+            "date": "Answered March 29, 2017",
+            "views": "232",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rishabh Deep Singh",
+                    "user_href": "/profile/Rishabh-Deep-Singh"
+                },
+                {
+                    "user_id": "Shyam Tiwari(\u0936\u094d\u092f\u093e\u092e \u0924\u093f\u0935\u093e\u0930\u0940)",
+                    "user_href": "/profile/Shyam-Tiwari-\u0936\u094d\u092f\u093e\u092e-\u0924\u093f\u0935\u093e\u0930\u0940"
+                },
+                {
+                    "user_id": "Lakkoju Sai Revanth",
+                    "user_href": "/profile/Lakkoju-Sai-Revanth"
+                },
+                {
+                    "user_id": "Suky Kunnu",
+                    "user_href": "/profile/Suky-Kunnu"
+                },
+                {
+                    "user_id": "SwayamS Mohapatra",
+                    "user_href": "/profile/SwayamS-Mohapatra"
+                },
+                {
+                    "user_id": "Kritidipto Ghosh",
+                    "user_href": "/profile/Kritidipto-Ghosh"
+                },
+                {
+                    "user_id": "Lendra Dwi",
+                    "user_href": "/profile/Lendra-Dwi"
+                },
+                {
+                    "user_id": "Manel Bouazza",
+                    "user_href": "/profile/Manel-Bouazza"
+                },
+                {
+                    "user_id": "Gagandeep Singh Khurana",
+                    "user_href": "/profile/Gagandeep-Singh-Khurana"
+                },
+                {
+                    "user_id": "Rahul Kr",
+                    "user_href": "/profile/Rahul-Kr-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrea Nalon",
+                "href": "/profile/Andrea-Nalon"
+            },
+            "answer_text": "As suggested by Wubao Li, you should use try/except when reading your input string, and if an EOF error has been risen you could set the check to an empty string before printing its content, for example: try:\u00a0    check = raw_input (\"would you like to continue?: \")\u00a0except EOFError:\u00a0    print (\"Error: EOF or empty input!\")\u00a0    check = \"\"\u00a0print check\u00a0",
+            "date": "Answered February 27, 2016",
+            "views": "422",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sumit Yenugwar",
+                    "user_href": "/profile/Sumit-Yenugwar"
+                },
+                {
+                    "user_id": "Jeevan Emmanual Joy",
+                    "user_href": "/profile/Jeevan-Emmanual-Joy"
+                },
+                {
+                    "user_id": "Vinothini M",
+                    "user_href": "/profile/Vinothini-M-34"
+                },
+                {
+                    "user_id": "Govind Kothari",
+                    "user_href": "/profile/Govind-Kothari-5"
+                },
+                {
+                    "user_id": "Rene Dohmen",
+                    "user_href": "/profile/Rene-Dohmen-1"
+                },
+                {
+                    "user_id": "Jim Dennis",
+                    "user_href": "/profile/Jim-Dennis-1"
+                },
+                {
+                    "user_id": "Tushar Khustule",
+                    "user_href": "/profile/Tushar-Khustule"
+                },
+                {
+                    "user_id": "Osei J",
+                    "user_href": "/profile/Osei-J"
+                }
+            ]
+        }
+    ]
+}

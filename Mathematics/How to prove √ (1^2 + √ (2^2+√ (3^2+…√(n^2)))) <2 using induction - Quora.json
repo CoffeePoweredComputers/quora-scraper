@@ -1,0 +1,30 @@
+{
+    "title": "How to prove \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026\u221a(n^2)))) <2 using induction - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bernard Leak",
+                "href": "/profile/Bernard-Leak"
+            },
+            "answer_text": "Let's unwind this backwards. Peel off the outermost layer, so we start with [math]\\sqrt{2^2 + \\sqrt{3^2 + \\dots}}[/math] This must, of course, be shown to be less than [math]2^2 - 1^2[/math]. This is [math]3[/math]; and it's greater than [math]2[/math] (because [math]3[/math] just is). Say [math]r_0 = 3[/math]. Peel off another layer, so we start with [math]\\sqrt{3^2 + \\sqrt{4^2 + \\dots}}[/math] This must be shown to be less than [math](2^2 - 1^2)^2 - 2^2[/math]; and that's [math]5[/math], and greater than [math]3[/math]. This time, [math]r_1 = r_0^2 - 2^2 = 5[/math]. After the next step, we end up with something which must be less than [math]5^2 - 3^2[/math], or [math]16[/math], and greater than [math]4[/math]. [math]r_2 = r_1^2 - 3^2 = 16[/math]. and so continuing with [math]r_{i + 1} = r_i^2 - (i + 2)^2[/math] until eventually we get to the innermost radical [math]\\sqrt{n^2}[/math] which must be less than [math]r_{n - 2}[/math]. But of course we can stop now; [math]\\sqrt{n^2} = n[/math]. As long as we can guarantee [math]r_i > (i + 2)^2[/math], we're home. We see that it's true for the first few iterations; now, induction to the rescue. We might need a stronger induction hypothesis, but it's obvious enough that the [math]r_i[/math] are growing fast. We need [math]r_i = r_{i - 1}^2 - (i + 1)^2 > (i + 2)^2[/math], or [math]r_{i - 1}^2 > (i + 1)^2 + (i + 2)^2[/math], for [math]i \\geq 0[/math]. Just a sanity-test; we do have [math]r_0^2 = 9 > 5 = 1^2 + 2^2[/math]. Now [math]r_{i + 1} = r_i^2 - (i + 2)^2 > ((i + 2)^2 + (i + 3)^2)^2 - (i + 2)^2[/math] We need this to be at least [math](i + 3)^2 + (i + 4)^2[/math] [math]((i + 2)^2 + (i + 3)^2)^2 \\geq (i + 2)^2 + (i + 3)^2 + (i + 4)^2[/math] We have [math](i + 2)^4 \\geq (i + 2)^2[/math], [math](i + 3)^4 \\geq (i + 3)^2[/math], and it's sufficient to have [math]2(i + 2)^2 (i + 3)^2 \\geq (i + 4)^2[/math]; but [math]2(i + 2)(i + 3) > (i + 2)(i + 3) = i^2 + 5i + 6 > i + 4[/math]. And, really, it's not even close! ",
+            "date": "Answered May 13, 2020",
+            "views": "35",
+            "upvotes": " Answer requested by Cecily Huang"
+        },
+        {
+            "author_info": {
+                "name": "Said Arabi",
+                "href": "/profile/Said-Arabi"
+            },
+            "answer_text": "For n=1 \u2192 \u221a (1^2 )=1 <2 correct if it is correct for n then : \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026\u221a(n^2)))) <2\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026n)))) <2\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026n)))) = maximum 2we have to prove that it is correct for (n+1) . so we have to prove that \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026\u221a((n+1)^2)))) <2The solution: \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2))))=\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2+n+1)))))=\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2+2n-n+1)))))=\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n+1)^2\u2013n )))))< \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n+1)^2 )))))\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n+1)^2\u2013n )))))< \u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+n+1 )))))\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2))))<\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+n+1 )))))\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2))))<\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+n )))))+ x\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2))))<maximum 2+ x\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2)))) -x <maximum 2\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2)))) <maximum 2\u221a (1^2 + \u221a (2^2+\u221a (3^2+\u2026+\u221a(n^2)+\u221a((n+1)^2)))) < 2",
+            "date": "Answered May 13, 2020",
+            "views": "39",
+            "upvotes": "0"
+        }
+    ]
+}

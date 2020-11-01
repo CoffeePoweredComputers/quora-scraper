@@ -1,0 +1,90 @@
+{
+    "title": "What is the intuitive rationale for the equality of the mean and the variance of the Poisson distribution? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tong Zh",
+                "href": "/profile/Tong-Zh"
+            },
+            "answer_text": "A short answer: it says something about the memoryless property of the Poisson distribution. The long answer: First, let us look at the meaning of memoryless. For a distribution to be memoryless it has this property: [math]Pr(X > x + y | X > y) = Pr(X > x)[/math], and this somehow requries the survival function (1-cdf) of the distribution to either has the form like [math]e^{-k x}[/math]  or [math](1-x/c)^{\\beta}[/math]. And this form will somehow further induce the variance of the distribution to be most likely sharing one same parameter with the mean.  Take a look at those common distributions with memoryless property:  Exponential: mean [math]\\alpha[/math]    variance [math]\\alpha^2[/math]Poisson:       mean [math]\\alpha[/math]    variance [math]\\alpha[/math]Geometric:   mean [math]\\alpha[/math]    variance [math]\\alpha^2-\\alpha[/math] Then, if you look at this way, the equality of the variance and mean of the possion distribution is nothing more special than equality of the standard deviation and mean of the exponential distribution, the common fact is that they are both memoryless distribution. Memoeryless is a quite meaningful concept and is big part of the reason why poisson and exponential distributions are seen in random processes everywhere. Also,  [math]\\frac{variance}{mean}[/math] (Fano factor or Index of dispersion) is a very useful measure of the dispersion of a distribution. Here, possion distribution is very unique to have this measure to be 1, which is invariant to the parameters of the distribution, and it makes Poission a standard distribution to compare to just as Normal distribution in other cases.  And if you want to measure the dispersion of a distribution with standard [math]\\frac{s.d.}{mean}[/math], you would make exponential a standard distribution the standard one. ",
+            "date": "Answered June 1, 2014",
+            "views": "42",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Chandranshu Jain",
+                    "user_href": "/profile/Chandranshu-Jain-1"
+                },
+                {
+                    "user_id": "Vidhyalakshmi Kalaichelvan",
+                    "user_href": "/profile/Vidhyalakshmi-Kalaichelvan"
+                },
+                {
+                    "user_id": "\u946b\u96e8 \u5085",
+                    "user_href": "/profile/\u946b\u96e8-\u5085"
+                },
+                {
+                    "user_id": "Xiaohui Guo",
+                    "user_href": "/profile/Xiaohui-Guo-1"
+                },
+                {
+                    "user_id": "Wei Zou",
+                    "user_href": "/profile/Wei-Zou-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Hochster",
+                "href": "/profile/Michael-Hochster"
+            },
+            "answer_text": "Here's an explanation with too much math to be intuitive but not enough math to be rigorous. Perfect! A Poisson random variable with mean [math]\\lambda[/math] is approximately a binomial random variable with a very large [math]n[/math] (number of trials) and a correspondingly small [math]p[/math] (success probability) so that [math]np = \\lambda[/math]. The variance of this binomial random variable is [math]np(1-p)[/math]. I don't know an \"intuitive\" way to see this, but we can show it in a couple of lines by writing the binomial as a sum of independent Bernoulli random variables. Since [math]np = \\lambda[/math], the variance of this approximately-Poisson binomial is [math]\\lambda(1-p).[/math] But we are thinking of [math]n[/math] tending to infinity and [math]p[/math] tending to 0 so as to maintain [math] \\lambda = np[/math]. So [math] \\lambda(1-p) \\approx \\lambda.[/math] This is one way to sort-of show that the variance of the Poisson is also [math]\\lambda[/math]. ",
+            "date": "Answered April 6, 2012",
+            "views": "39",
+            "upvotes": " View 35 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Ross Kravitz",
+                    "user_href": "/profile/Ross-Kravitz"
+                },
+                {
+                    "user_id": "Aishwarya Ray",
+                    "user_href": "/profile/Aishwarya-Ray-38"
+                },
+                {
+                    "user_id": "\u715c\u7a0b \u5f20",
+                    "user_href": "/profile/\u715c\u7a0b-\u5f20"
+                },
+                {
+                    "user_id": "Arash Jamshidi",
+                    "user_href": "/profile/Arash-Jamshidi-2"
+                },
+                {
+                    "user_id": "Kerem Demirtas",
+                    "user_href": "/profile/Kerem-Demirtas-3"
+                },
+                {
+                    "user_id": "Vivek Chandra",
+                    "user_href": "/profile/Vivek-Chandra-1"
+                },
+                {
+                    "user_id": "Miguel Benavides",
+                    "user_href": "/profile/Miguel-Benavides"
+                },
+                {
+                    "user_id": "Thaddeus Gutierrez",
+                    "user_href": "/profile/Thaddeus-Gutierrez"
+                },
+                {
+                    "user_id": "Claudio Casellato",
+                    "user_href": "/profile/Claudio-Casellato"
+                }
+            ]
+        }
+    ]
+}

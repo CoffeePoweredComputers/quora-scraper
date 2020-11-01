@@ -1,0 +1,58 @@
+{
+    "title": "How do internet packets know which way to go? - Quora",
+    "tags": [
+        "Data Packets",
+        "Networks",
+        "TCP/IP",
+        "Internet Service Providers",
+        "Computer Networking",
+        "Computer Science",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vivek Tulja",
+                "href": "/profile/Vivek-Tulja"
+            },
+            "answer_text": "If you mail an old-fashioned letter, does it know which way to go? It doesn\u2019t, but the sender has written on it its destination address (and also sometimes its source address) which is used by those responsible for routing it to figure out where to send it next. Let us say, you live in Wichita, Kansas, USA, and want to write to your friend who lives in Hiroshima, Japan. You would put your friend\u2019s postal address on the envelope and also your return address, affix the necessary postage, and then drop it in a mailbox. How does the letter get routed? The routing of the letter could be something like Wichita \u2192 Seattle \u2192 Tokyo \u2192 Hiroshima. Or, Wichita \u2192 San Francisco \u2192 Osaka \u2192 Hiroshima. Or, Wichita \u2192 Chicago \u2192 Anchorage \u2192 Tokyo \u2192 Hiroshima. In the postal routing facilities in various towns and cities, the persons responsible for routing letters have multiple bins in which to drop incoming letters depending on their respective destinations. The routers don\u2019t need to know the entire path; they just need to know the next destination for each letter. All that the router in Wichita needs to know is not to put the letter in a bin that goes east (e.g. to New York) or south (e.g. Houston) because then the letter will take longer to arrive in Japan. Now, Wichita is a fairly large city and their local post office most likely can route letters in multiple directions depending on destination. What if the sender lived in a really small town? In such cases, all that the local post office does is send the letter to a nearby big city where they know how to route things further. Now replace the street address with IP address, replace the letter with an IP packet, and the human routers with electronic routers and gateways, and you get the picture. All routing schemes for public networks work this way. A lot of young people these days don\u2019t know about the old landline phones, but a \u201ctrunk call\u201d \u2026 for those of us old enough to remember them \u2026 between Wichita and Hiroshima will get routed in a very similar manner. Or, in modern mobile networks such as Vodafone, AT&T, NTT, a call between a Wichita caller and a Hiroshima callee gets routed in a very similar way: At each network node, the node knows where to forward the call request and then the next node decides what to do with it. Routing schemes in packet switching work similarly; if a person in Wichita wants to access the Toyota website which might be located in Nagoya, each packet has a destination address which is used to route the packet to its destination. Although, in packet switching there is no reason why an individual packet from Wichita to Nagoya can\u2019t be routed across the Atlantic. That\u2019s the beauty of packet switching; however in the modern world we have so many networks and peering points and so much network capacity that packets do not need to take weird routes to get to their destinations. ",
+            "date": "Answered June 11, 2020",
+            "views": "121",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Subhadeep Dey",
+                    "user_href": "/profile/Subhadeep-Dey-2"
+                },
+                {
+                    "user_id": "Liam Finch",
+                    "user_href": "/profile/Liam-Finch-2"
+                },
+                {
+                    "user_id": "Sudhath Jain",
+                    "user_href": "/profile/Sudhath-Jain"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bernard Doyle",
+                "href": "/profile/Bernard-Doyle"
+            },
+            "answer_text": "The short answer is that they don\u2019t know. The job is done by devices known as routers when their ultimate destination is outside the originating LAN. When the ultimate destination and the source are in the same LAN, the packets are sent directly from source host to destination host. Here\u2019s a longer answer outlining the journey of an IP packet that goes from one LAN to another LAN, where both LANs are connected to the internet, but are geographically very far apart. Once the Packet has left its originating LAN, but before it reaches its destination LAN its journey is a series of hops between routers. Each router has a table called a routing table ( sometimes called a forwarding table ). The routing table entries are made up of a network address and the corresponding router interface to reach that network. A properly configured router will also have a default route. Any packet whose destination network is not in the list will be sent out the default network interface. Routers start to build their routing tables by exchanging data with connected routers. Initially all they know about is networks they are directly connected to. Later on they exchange data about networks they are not directly connected to but which they have heard about from other routers. The exchange of data between routers is done using routing protocols. Some commonly used routing protocols are EIGRP, OSPF and BGP. Eventually all the routers have a complete picture of the Internet. Some destination networks may be amalgamated together using a technique known as summarisation. This stops the routing table from becoming too long and unwieldy. ",
+            "date": "Updated August 18, 2020",
+            "views": "203",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Subhadeep Dey",
+                    "user_href": "/profile/Subhadeep-Dey-2"
+                },
+                {
+                    "user_id": "Desikan Jeyaram",
+                    "user_href": "/profile/Desikan-Jeyaram"
+                }
+            ]
+        }
+    ]
+}

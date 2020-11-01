@@ -1,0 +1,40 @@
+{
+    "title": "How to determine whether an improper integral diverges without solving the integral - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jorden Roberts",
+                "href": "/profile/Jorden-Roberts-1"
+            },
+            "answer_text": "You can use what is known as the Comparison Theorem for Integrals. Basically, if you\u2019re taking the integral of some function f(x) which is either too difficult to solve or for which you are only asked about the convergence/divergence of it, you find some similar (but simpler) funtion g(x) to compare it with. If you know that g(x) is less than or equal to f(x) on the interval of integration, and you find that g(x) diverges, then it must be the case that f(x) also diverges since its value is larger than that of g(x) on the interval. Now if g(x) is greater than or equal to f(x) on the interval of integration, and you find that g(x) converges, then it must also be the case that f(x) converges since the convergence of the larger function g(x) implies that any similar function of lesser value will behave in the same manner on the given interval. ",
+            "date": "Answered March 10, 2017",
+            "views": "350",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alexandria Wai",
+                    "user_href": "/profile/Alexandria-Wai"
+                },
+                {
+                    "user_id": "Caroline Postnov",
+                    "user_href": "/profile/Caroline-Postnov"
+                },
+                {
+                    "user_id": "Bob Eckert",
+                    "user_href": "/profile/Bob-Eckert-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eial Teomy",
+                "href": "/profile/Eial-Teomy"
+            },
+            "answer_text": "Here\u2019s a rule of thumb that works ONLY if the integrand doesn\u2019t oscillates as it approaches the problematic point. If one of the integration limits is infinity and the integrand decays to zero at least as fast as [math]x^{-1-\\epsilon}[/math] for some [math]\\epsilon>0[/math] then the integral converges, otherwise it doesn\u2019t converge. If the problematic point is some finite [math]x_0[/math], then the integral converges if near that point the function doesn\u2019t go to infinity faster than [math]|x-x_0|^{-1+\\epsilon}[/math] for some [math]\\epsilon>0[/math]. Again, note that this rule of thumb only works if the function does not oscillates. If it does oscillates, it might still converge even if this rule says that it should diverge (but not the other way around). ",
+            "date": "Answered March 11, 2017",
+            "views": "238",
+            "upvotes": "0"
+        }
+    ]
+}

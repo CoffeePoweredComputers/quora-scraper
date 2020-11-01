@@ -1,0 +1,61 @@
+{
+    "title": "What is a mature technology for indoor navigation? - Quora",
+    "tags": [
+        "Indoor Positioning",
+        "Navigation"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ayush Dattagupta",
+                "href": "/profile/Ayush-Dattagupta"
+            },
+            "answer_text": "Indoor navigation consists of two parts: 1)Localization- Finding the location of the user.2)RoutingWith regards to Localization there are a number of of different methods used in the market today that use of BLE(Bluetooth Low Energy) beacons such as the iBeacon or Wifi Routers for indoor localization.The problem with BLE beacons is that they don't really find the distance of the user from the sensor but only can only detect proximity(near,moderate and far) and thus it would require a number of such beacons to actually be able to determine a persons location accurately.This makes the technique quite expensive. The current accuracy from using such technology is approximately 5-8 meters.Wifi routers can be used to determine the location of a user. The most common methods used are Trilateration and Fingerprinting.Trilateration uses signal strength to determine the distance of a user from a particular wifi router and a combination of signals from these routers are used to judge the position of the user. This method is highly inaccurate as the variation of signal strength is a lot in the presence of obstacles and changes the readings drastically. This method provides an accuracy of more than 10 meters. Fingerprinting is a more accurate method for finding the location of a user as it uses an offline phase to actually record the signal strength readings of all the routers and stores it in a file or a database. The data can then be used to 'guess' the location of the user by using the current signal strength data and comparing it to the data in the database using several probabilistic methods and algorithms such as the KNN algorithm and its variations. The accuracy of this method is better(~2-5 meters) but requires a time consuming and laborious collection of wifi data at various checkpoints on the map and accuracy increases with increase in sample points.Methods such as dead reckoning are also being explored. Dead reckoning relies on sensor data existing in the mobile phones- accelerometer, magnetometer etc. It counts the number of steps and the direction of travel combined with data regarding the length of each step taken by a user to calculate the new position of the user. It is somewhat like using the data from a pedometer application and compass application to calculate the position of the user. A combination of two or more methods can be used to improve the accuracy. For example Dead reckoning can be used with BLE sensors or wifi fingerprinting and can improve the accuracy and at the same time reduce the number of sensors required for BLE or the number of points to be sampled in the case of fingerprinting. Routing is pretty much the same even for indoor spaces as it is for outdoor. You just need to create an indoor map and can use a variety of software like Leaflet JS to create a map application. Routing just requires the data of all the paths in your map and your current location. The rest is just an implementation of Shortest Path algorithms and whatever else you may need to do. ",
+            "date": "Answered July 26, 2015",
+            "views": "456",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Masud Rashid",
+                    "user_href": "/profile/Masud-Rashid"
+                },
+                {
+                    "user_id": "Olesia Shybkaia",
+                    "user_href": "/profile/Olesia-Shybkaia-1"
+                },
+                {
+                    "user_id": "Arpan Dasgupta",
+                    "user_href": "/profile/Arpan-Dasgupta-4"
+                },
+                {
+                    "user_id": "Henry Qin",
+                    "user_href": "/profile/Henry-Qin-3"
+                },
+                {
+                    "user_id": "Pulkit Yadav",
+                    "user_href": "/profile/Pulkit-Yadav-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matti Saarinen",
+                "href": "/profile/Matti-Saarinen"
+            },
+            "answer_text": "There are two parts in what people usually mean by indoor navigation; first is indoor positioning (where am I?) and the second is indoor routing (how to get from A to B?).  There's a great number of indoor positioning techs out there; I'd say there is probably a hundred companies altogether, each one developing their own indoor positioning technology. Most of the more mature ones use mainly WiFi and/or BLE beacons and they won't achieve the best accuracy in the market; but they have probably the fewest hiccups, which is what you asked. Look for a company that has a realistic promise for accuracy and that has a reference implementation that you can go and try yourself. I'd look for a company in my area, because the installation work may take days and you probably want to concentrate on adding value on the application level. For higher accuracy, IndoorAtlas is worth of trying.  What comes to the second part (indoor maps/routing), our company indoor.io 3D indoor maps (since 2007) provides a toolchain for drawing indoor maps with routing and rendering them in 2D, 2.5D or 3D. The maps can be used in mobile apps and web together with an indoor positioning technology to build a true indoor navigation experience. ",
+            "date": "Answered March 10, 2015",
+            "views": "855",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Zeeshan Raza",
+                    "user_href": "/profile/Zeeshan-Raza-69"
+                },
+                {
+                    "user_id": "Liisa Parv",
+                    "user_href": "/profile/Liisa-Parv-1"
+                }
+            ]
+        }
+    ]
+}

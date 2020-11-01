@@ -1,0 +1,54 @@
+{
+    "title": "How should I package my JavaScript library for distribution? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kiran",
+                "href": "/profile/Kiran-651"
+            },
+            "answer_text": "This depends a lot (a LOT) on the specifics of your library and your requirements. 1. How big is your library ? Is this a small utility library or a medium to mega sized project ? (Solution: Modules for organization)2. Does your library use a wide variety of third party libraries ? (Solution: Package Management)3. You would likely have to distribute in several formats (self-contained, minified, un-crunched individual modules etc) (Solution: Build System) Organizing your Javascript codebase:Recommendation: AMD The CommonJS format is not really ideal for the browser, since it was designed for Node JS modules on the server side. AMD is designed for the browser, is asynchronous and RequireJS is just plain excellent loader. If your library is really simple (just a couple of files, the overhead of using modules is probably not worth it, unless you expect it to grow by leaps and bounds). But I am assuming a non-trivial size and therefore not using AMD might create maintenance nightmares. People consuming your library will need to use RequireJS or an equivalent loader, but you can easily provide a lightweight shim like Almond.js.  [Update]: For AMD, since your library is only a few hundred lines of production code, I just recommend that you internally detect if you are in AMD loading environment and call define and register yourself as an AMD module with the loader.  if (typeof define === \"function\")\u00a0{\u00a0   define( \"yourModuleName\", [], function() {return yourModule;} );\u00a0}\u00a0 This way your code will work both as a simple script tag download and via the AMD loader and you don't have to worry about bundling the loader yourself. If someone is not using the loader, they will just load your script via script tag and the above code would not execute. If they use a loader (require or any other), your script will automatically register itself as a module and will work with the loader. JQuery follows this approach.  Package Management System:Recommendation: Jam or (Bower + Jake) This is tricky, since pretty much all the package management systems (Jam, Ender, Bower, component, volo) work quite well. I chose Jam here specifically since it works quite well with AMD format (i.e if you commit to the first recommendation). It also includes a neat build system, so you do not have to deal with using a separate build system. Bower is a no-frills package system and does not force any format (like AMD or Common JS ) on you. Ender and component force you to commit to CommonJS style and Jam forces you to commit to AMD style. Bower has the most collection of packages in its repository. It does not include a build component or a loader. And yes, once you load all the packages, you will commit them to your repo and only update them if you need to.  [Update]: For Package Management, yes, you could publish your library across all package systems, but I would do it on a need by need basis. Start with Bower (the most widely used one) and add to other systems on a need by need basis. Build System:Recommendation: Jake I prefer Jake over Grunt. The CommonJS syntax used in Jake is much easier to deal with, especially if you are used to writing modules in AMD or CommonJS format. I do not recommend custom build scripts. ",
+            "date": "Answered May 22, 2013",
+            "views": "26",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Munga Boi",
+                    "user_href": "/profile/Munga-Boi"
+                },
+                {
+                    "user_id": "Mohamed Mansour",
+                    "user_href": "/profile/Mohamed-Mansour-1"
+                },
+                {
+                    "user_id": "Sameer Goyal",
+                    "user_href": "/profile/Sameer-Goyal"
+                },
+                {
+                    "user_id": "Kenn Sippell",
+                    "user_href": "/profile/Kenn-Sippell"
+                },
+                {
+                    "user_id": "Jonathan Bergeron",
+                    "user_href": "/profile/Jonathan-Bergeron"
+                },
+                {
+                    "user_id": "Karthik Pattabiraman",
+                    "user_href": "/profile/Karthik-Pattabiraman"
+                },
+                {
+                    "user_id": "Bulat Bochkariov",
+                    "user_href": "/profile/Bulat-Bochkariov"
+                },
+                {
+                    "user_id": "Vinay Patel",
+                    "user_href": "/profile/Vinay-Patel-2"
+                },
+                {
+                    "user_id": "Clay McClure",
+                    "user_href": "/profile/Clay-McClure"
+                }
+            ]
+        }
+    ]
+}

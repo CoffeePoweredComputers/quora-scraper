@@ -1,0 +1,63 @@
+{
+    "title": "It is not known if there are polynomial time integer factorization algorithm, but are there any proven bounds on the minimal degree of polynomial for possible polynomial algorithm for integer factorization? - Quora",
+    "tags": [
+        "Algorithms and Complexities",
+        "Integer Factorization",
+        "P vs. NP",
+        "Number Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alon Amit",
+                "href": "/profile/Alon-Amit"
+            },
+            "answer_text": "Yes\u2026 kind of. Probably not as good as you\u2019re hoping for. If you want to know if a number is even, you need to merely check a single bit. So \u201cInteger Parity\u201d is a problem that can be solved in constant time, namely [math]O(1)[/math]. In terms of polynomial degrees, this is degree [math]0[/math]. Similarly you can determine if an integer is divisible by [math]4[/math] or [math]8[/math] or any power of [math]2[/math] by examining a constant number of bits. But you can\u2019t do that with divisibiliy by [math]3[/math]. To check that, you need to examine the entire sequence of input bits. See if you can prove that. (Note: I\u2019m assuming, of course, that the input to the algorithm is a binary representation of a natural number. If a representation in some other base is used, other primes may become easy, but any prime not dividing the base would be similarly impossible to check in constant time.) Using similar arguments you can show that Integer Factorization requires at least linear time, [math]O(n)[/math]. An algorithm which ignores most input bits cannot correctly factor an integer. This seems depressingly obvious, but it\u2019s pretty much all we have. No superpolynomial lower bound is available for IF or most any other problem, except if we severely restrict the computational model to be artificially weak. Such results are often highly non-trivial and interesting, but so far they still fall far short of proving any meaningful lower bounds. ",
+            "date": "Answered December 28, 2017",
+            "views": "59",
+            "upvotes": " View 98 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Max Zelich",
+                    "user_href": "/profile/Max-Zelich"
+                },
+                {
+                    "user_id": "Deniz \u015eu\u00f6zer",
+                    "user_href": "/profile/Deniz-\u015eu\u00f6zer-1"
+                },
+                {
+                    "user_id": "Pablo Emanuel",
+                    "user_href": "/profile/Pablo-Emanuel"
+                },
+                {
+                    "user_id": "Venkat Panchadi",
+                    "user_href": "/profile/Venkat-Panchadi"
+                },
+                {
+                    "user_id": "Rajorshi Chaudhuri",
+                    "user_href": "/profile/Rajorshi-Chaudhuri"
+                },
+                {
+                    "user_id": "Zachary Carlini",
+                    "user_href": "/profile/Zachary-Carlini"
+                },
+                {
+                    "user_id": "Ilia Semenkov",
+                    "user_href": "/profile/Ilia-Semenkov"
+                },
+                {
+                    "user_id": "Silas Barta",
+                    "user_href": "/profile/Silas-Barta"
+                },
+                {
+                    "user_id": "Tima Peshin",
+                    "user_href": "/profile/Tima-Peshin"
+                },
+                {
+                    "user_id": "Ashutosh Srivastav",
+                    "user_href": "/profile/Ashutosh-Srivastav-5"
+                }
+            ]
+        }
+    ]
+}

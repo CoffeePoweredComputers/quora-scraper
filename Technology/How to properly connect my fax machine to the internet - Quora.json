@@ -1,0 +1,18 @@
+{
+    "title": "How to properly connect my fax machine to the internet - Quora",
+    "tags": [
+        "Fax Machines"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Winston Weinmann",
+                "href": "/profile/Winston-Weinmann"
+            },
+            "answer_text": "There are essentially two ways to do this. Using a VoIP provider which supports faxing, with a direct connection of the fax machine\u2019s phone cord to the VoIP device. These can still have reliability problems, but many VoIP providers claim to support fax. If you want to try this, ask about support for T.38, which is a VoIP standard which attempts to make faxing work.Using a Fax over IP provider which supplies a fax adapter. A fax adapter connects to your fax machine with the standard phone cord, and to the internet via an ethernet cord. When you send a fax, the fax adapter actually answers the fax machine\u2019s outgoing call, received the analog fax signal, converts it into an encrypted digital signal, then sends it over the internet to the FoIP company\u2019s fax server. The fax server then sends it out as a regular fax. Receiving faxes works similarly: the fax adapter receives the fax over the internet, converts it from digital to analog form, then \u201ccalls\u201d your fax machine to deliver the fax. FoIP providers also have an online system which allows you to upload a PDF file to be sent as a fax, or download a received fax as a PDF file, and options to send a PDF to their server as an email or receive faxes as email attachments. There are two fax adapters I am aware of, the FaxBridge by Axacore/Scrypt, and the HTTPS FAX ATA by AudioCodes/FaxBack. You would need the one used by the specific FoIP provider you use - they are not interchangeable. Take a look at Nextiva as a starting point for an FoIP provider.Some VoIP providers may also offer a fax service like that described by Paul Freeman, with an online portal and email access, but without the fax adapter.",
+            "date": "Answered March 17, 2017",
+            "views": "330",
+            "upvotes": "0"
+        }
+    ]
+}

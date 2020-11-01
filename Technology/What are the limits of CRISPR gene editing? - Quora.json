@@ -1,0 +1,82 @@
+{
+    "title": "What are the limits of CRISPR gene editing? - Quora",
+    "tags": [
+        "CRISPR/Cas9 Gene Editing",
+        "CRISPR",
+        "Genetic Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sunil Kumar",
+                "href": "/profile/Sunil-Kumar-145"
+            },
+            "answer_text": "CRISPR gene editing is one of the most exciting area of research these days. It is very frequently used by researchers around the world for gene editing. Researchers use CRISPR for two purpose. Making specific changes in the geneKnowing out the geneThe technique is very simple. I am not going into the technical details as this question is related to limitations. Suppose you want same cell-lines with specific mutation like Proline in place of Arginine. Now you need to perform CRISPR editing experiment with wild type strain. You are not starting with single cell here. You have a large number of cells in which you add the CRISPR reagents for desired editing. Now following things can happen which limit your goal. You have a large number of cells in which you add the CRISPR reagents for desired editing. All cells will not get modified gene editing. Now, the most tough part of the experiment will be how to differentiate between modified vs not modified. Now, you need to separate those modified with those still the wild type. This needs certain markers which will confirm your desired editing. Suppose you got the desired mutation using your marker, now you have following questions.Whats is the guarantee that your isolated mutant cells (with your desired mutation) will not have other undesirable mutations. Your ideal condition is that your desired mutant cells have modified only at that location. However, there are some off targets for CRISPR editing which will complicate your situations.Although you got the right mutation, it is not a guarantee that your CRISPR targeting was 100 perfect location specific.CRISPR-Cas9 technique need cutting DNA at first step before doing any editing. There are mechanism inside every cell to repair DNA damage which is collectively called as DNA damage response. There are set of proteins expressed which try to repair DNA in whatever possible ways like HDR ( Homology Direct Repair) and NHEJ (Non Homologus End Joining ). NHEJ may lead to incomplete editing and instead it results in joining of the deleted sequences leading to a gene knockout as it will create out of frame translation.CRISPR technology is still improving to overcome these issues. I hope that with more research we can overcome these limitations. ",
+            "date": "Answered August 19, 2018",
+            "views": "494",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Virender Prasad",
+                    "user_href": "/profile/Virender-Prasad-12"
+                },
+                {
+                    "user_id": "Ryan Littlefield",
+                    "user_href": "/profile/Ryan-Littlefield-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Antonio Carusillo",
+                "href": "/profile/Antonio-Carusillo"
+            },
+            "answer_text": "HDR to NHEJ ratio is pretty much the biggest issue in using CRISPR-Cas9 for gene editing. Now, when I talk about Editing I\u2019m not referring to just knock that or this gene out, but to edit it so precisely change s in the sequence that may somehow affect the gene function happen. So how you achieve this? The idea is: transfect the cells with the Cas 9 + the sgRNA ( the guiding RNA that will target the Cas 9 to your gene of interest and repair sequenceThe Cas9 + sgRNA cause a Double Strand Break ( DSB ) in the DNA, this turns on the DR ( Damage Response ) cascadeAt this point you have provided a repair sequence ( this may be a double strand DNA or a single strand DNA ). THis repair sequence possess flanking regions that are the same to the flanking regions where you induced the DSB. Now, if the HDR ( homology Direct Repair ) mechanism is used to repair the DSB, your repair sequence is used as template to repair the damage by \u201cfilling the gap \u201c so whatever is contained between the flanking regions will be inserted where you induced the DSB.This in theory. IN reality cells posses other pathways that are involved in the DNA repair, one of this is the NHEJ ( non homologus end joining ), this mechanism ( along with Alt-NHEJ- alternative NHEJ- and SSA - single strand annealing -) is an error-prone mechanism that just take the the two ends flanking the DSB and put them togheter. So whatever was cut by the Cas9 + sgRNA, is lost. Now although this is the mechanism used when researchers wantsto do a KO, this is what we want to avoid when we wish to EDIT a gene, cause NHEJ won\u2019t use the repair sequence we provided! DO you see what I mean? And the problem is that compared to HDR, the NHEJ occurs more and more often than HDR ( this depends on cell cycle and chromatin landscape ) so that in most of cases less than 10% of cells are edited correctly. THis is a very big issue since it requires a big time consuming clones selection ( the few cells that are successfully edited ) and amplifciation steps. That\u2019s way literature is plenty of groups publishing papers about ways and approaches to improve the HDR to NHEJ ratio ( sinthetizing different Cas9, use of modified Cas9, different way to deliver the Cas9 and so on ). But most of them are characterized by an high variability so that in some cases this approach works while in others works less and in others it does not work at all. ",
+            "date": "Answered November 6, 2017",
+            "views": "18",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Madhusmita Pala",
+                    "user_href": "/profile/Madhusmita-Pala"
+                },
+                {
+                    "user_id": "Ryan Littlefield",
+                    "user_href": "/profile/Ryan-Littlefield-4"
+                },
+                {
+                    "user_id": "Joey Hensley",
+                    "user_href": "/profile/Joey-Hensley-4"
+                },
+                {
+                    "user_id": "Martin M",
+                    "user_href": "/profile/Martin-M-85"
+                },
+                {
+                    "user_id": "Naomi Pan",
+                    "user_href": "/profile/Naomi-Pan-2"
+                },
+                {
+                    "user_id": "Shawn Chang",
+                    "user_href": "/profile/Shawn-Chang-12"
+                },
+                {
+                    "user_id": "Terrence Yang",
+                    "user_href": "/profile/Terrence-Yang-4"
+                },
+                {
+                    "user_id": "Xuanzi Zerene (\u0415\u0440\u0435\u043c\u0435\u0439 \u0421\u0435\u043d\u044c\u043a\u043e)",
+                    "user_href": "/profile/Xuanzi-Zerene-\u0415\u0440\u0435\u043c\u0435\u0439-\u0421\u0435\u043d\u044c\u043a\u043e"
+                },
+                {
+                    "user_id": "Tom Willis",
+                    "user_href": "/profile/Tom-Willis-28"
+                },
+                {
+                    "user_id": "Ladan Dayyani",
+                    "user_href": "/profile/Ladan-Dayyani"
+                }
+            ]
+        }
+    ]
+}

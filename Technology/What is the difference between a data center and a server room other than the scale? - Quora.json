@@ -1,0 +1,78 @@
+{
+    "title": "What is the difference between a data center and a server room other than the scale? - Quora",
+    "tags": [
+        "Server Room",
+        "Data Centers",
+        "Comparisons"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kirill Pertsev",
+                "href": "/profile/Kirill-Pertsev"
+            },
+            "answer_text": "If the question means \u201cserver room in the office\u201d then two major differences other than scale are connectivity and power. In your office you are typically limited by the options provided by the company which owns and/or operates the office building. Sometimes you can bring a link from another telecom operator, but very often you can only choose from a limited set of operators which have contracts with building operator. With power the situation is even worse, the choice of office buildings with redundant power for IT equipment is very limited and such power is typically very expensive. In the datacenter power redundancy equipment takes a considerable amount of the whole building volume (batteries, generators and fuel for generators). It\u2019s just too expensive for office buildings which are typically built on much more expensive land. Power feeds are also not redundant in offices. With power comes cooling. Datacenters are designed for much higher power densities than offices. Typical 42U rack in the datacenter can consume (and thus dissipate) 10\u201312kW of power while occupying just a few sq. ft. of floor space. The cooling system should be able to cope with this dissipation. Office cooling system is designed to dissipate solar energy entering through the windows, one human warm body per tens of sq. ft. and a bunch of office electronics which sleeps most of the time and do not dissipate considerable amounts of energy. This is orders of magnitude difference in modern office building. So even if you have a large and well equipped server room and can get redundant power there and can negotiate redundant connectivity you would not be able to put enough servers there because they will overheat. In other words, the \u201cquality of life\u201d for your servers are worse in the server room than in the datacenter. There are exceptions to this of course, like former MCI building in San Jose, CA (55 S. Market st) or One Wilshire in LA. ",
+            "date": "Answered November 25, 2016",
+            "views": "125",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Jeremiah Hendon",
+                    "user_href": "/profile/Jeremiah-Hendon"
+                },
+                {
+                    "user_id": "Constance Konamah",
+                    "user_href": "/profile/Constance-Konamah"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Hesse",
+                "href": "/profile/Aaron-Hesse-2"
+            },
+            "answer_text": "A data center is a facility where the entire structure\u2019s function is primarily to house network equipment. A large server room inside a corporate building may have all the same equipment, right down to cooling and electrical, but the purpose of the building is something different and has a large server room inside of it. For example, many large server rooms I have designed in the past could function as stand alone data centers. Dual utility feeds, dual emergency generators, dual UPS and power feeds to the racks. Some with pretty high power densities and highly scalable cabling designs. The difference is the building was something else, then we added a data center style server room. This has some implications. Primarily that the utility service and building location were not considered when building the building. Things like security and utilities are subject to the building the owner already had. Otherwise they could easily be identical but one is a data center and the other is a well designed server room. ",
+            "date": "Updated July 16, 2018",
+            "views": "14",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "David Conner",
+                    "user_href": "/profile/David-Conner-8"
+                },
+                {
+                    "user_id": "PK Vinayachandran",
+                    "user_href": "/profile/PK-Vinayachandran-1"
+                },
+                {
+                    "user_id": "Sankardev",
+                    "user_href": "/profile/Sankardev"
+                },
+                {
+                    "user_id": "Anshika Chitkara",
+                    "user_href": "/profile/Anshika-Chitkara"
+                },
+                {
+                    "user_id": "Courtney Harper",
+                    "user_href": "/profile/Courtney-Harper-28"
+                },
+                {
+                    "user_id": "Stanford Mazhindu",
+                    "user_href": "/profile/Stanford-Mazhindu"
+                },
+                {
+                    "user_id": "Alan Wu",
+                    "user_href": "/profile/Alan-Wu-13"
+                },
+                {
+                    "user_id": "Rob Lion",
+                    "user_href": "/profile/Rob-Lion"
+                }
+            ]
+        }
+    ]
+}

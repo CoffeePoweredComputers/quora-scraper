@@ -1,0 +1,67 @@
+{
+    "title": "Do QR codes need a white background? - Quora",
+    "tags": [
+        "QR Code Reader",
+        "2D Barcodes",
+        "CodesXKPL",
+        "QR Codes",
+        "Barcodes",
+        "Mobile Applications"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Peter C. Miller",
+                "href": "/profile/Peter-C-Miller"
+            },
+            "answer_text": "Sadly, the answer is \u2018Yes and No\u2019, as driven by two primary factors: The tolerance of the specific software being used to scan the QR code,The specification of QR codes allows for some tone/shade/brightness tolerance, which can be affected by the environment at the time of scanning.The big one is the scanner software. There are many different scanning apps out there, though this is now consolidating to much less numbers as cellphone operating systems are starting to supply QR code scanning as a baseline function of their baseline operating system features. Some of the scanning apps out there will even process a tonally inverted QR code (white dots on black), even though the proper specification of QR codes is that the background be white. So, the technical specification of QR codes is that the background should be white, but it is not always the case that the scanning software has that limitation. Also, the specification of QR codes is that the background be white, but the specification is also designed to be tolerant of QR code damage. So you on the one hand you can have a very faded QR code that scans under certain lighting just fine, or you can have a red background (which is commonly converted to grayscale as very dark for image processing) which visually looks quite clear to people but is un-scannable. There\u2019s certainly a good practice to keep the background lighter than the code pixels, but I suspect over time the scanning software out there will become more and more tolerant of custom colors, and even inverted codes. For today however, by keeping the background as white as possible, you lower the chances of scanning difficulties. ",
+            "date": "Answered September 6, 2019",
+            "views": "866",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nathan Long",
+                    "user_href": "/profile/Nathan-Long-133"
+                },
+                {
+                    "user_id": "Gurjeet Singh",
+                    "user_href": "/profile/Gurjeet-Singh-159"
+                },
+                {
+                    "user_id": "Garry Taylor",
+                    "user_href": "/profile/Garry-Taylor-5"
+                },
+                {
+                    "user_id": "Vlad Racovita",
+                    "user_href": "/profile/Vlad-Racovita-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Desmond Shaw",
+                "href": "/profile/Desmond-Shaw-13"
+            },
+            "answer_text": "No. But white is the best choice. Here is an example of a QR code. As you can see from the image, the code has a quiet zone.  The quiet zone border is a required border used by scanner software to determine when a QR code physically begins and ends. This area can be white, red, yellow, or any other color. It depends on the barcode printer. Basically, the printer only generates a black-white image so that most of the QR codes have a white quite zone. If you want to decode a colorful QR code image, the scanner will transfer the image into a grayscale image at first and then binarization converts it to a black/white image. Therefore, white and black pictures with white quite zone make the pre-processing much easier. ",
+            "date": "Answered July 3, 2020",
+            "views": "318",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": " Wanjohi",
+                    "user_href": "/profile/Wanjohi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan R Strong",
+                "href": "/profile/Jonathan-R-Strong"
+            },
+            "answer_text": "No - not at all. This, for example, if a perfectly valid QR code:  ",
+            "date": "Answered September 6, 2019",
+            "views": "238",
+            "upvotes": "0"
+        }
+    ]
+}

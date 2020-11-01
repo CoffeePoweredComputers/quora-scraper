@@ -1,0 +1,22 @@
+{
+    "title": "How to create a large file in C++ - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Nebeker",
+                "href": "/profile/Brian-Nebeker"
+            },
+            "answer_text": "It depends on your purpose for in creating a large file but I will go with what I have done in the past. I want a way of filling up a hardware drive as quickly as possible for the purpose of causing my application to fail. This allowed me to test my error handling code. I used the Windows File API functions to get the best possible speed but it basically works the same way using C IO functions as shown below: #include <io.h> int main(int argc, char *argv[]); int BlockSize = 4096; char Buffer[BlockSize]; // Create a buffer memset(Buffer, BlockSize, \u2018\\0\u2019); // Fill the buffer with 0 bytes or anything else you like unsigned long long Size = atoll(argv[2]); // Get size from second run parameter // Open the file for writing using the filename from the first run parameter int fd = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, O_WRONLY); while(Size > 0) { if (Size >= BlockSize) Size -= write(fd, Buffer, BlockSize); else Size -= write(fd, Buffer, Size); } close(fd); } This code will write (BlockSize) or 4096 bytes at a time which works pretty well with most file systems. The fastest writes occur when an entire block is written to disk at once. Writing less than an entire block will result in having to rewrite the same block multiple times. Note that with SSD\u2019s and caching by the OS the optimal size may be different. The code is not perfect as it does have at least two things that need to be done better. The writes to disk can fail for a variety or reasons, this code does not catch these failures. Allows it will probably complain in the second write about the size of the (Size) variable. You should also check the number of input parameters to make sure enough parameters where provided. I leave these flaws for you to resolve for yourself as they are not difficult to resolve and are valuable for learning about how C and C++ work. ",
+            "date": "Answered January 30, 2017",
+            "views": "467",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jovan Bunjevacki",
+                    "user_href": "/profile/Jovan-Bunjevacki"
+                }
+            ]
+        }
+    ]
+}

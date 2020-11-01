@@ -1,0 +1,43 @@
+{
+    "title": "Why is data encrypted when transmitted over a network? - Quora",
+    "tags": [
+        "Encryption",
+        "Information Security",
+        "Data",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kjell Lindberg",
+                "href": "/profile/Kjell-Lindberg"
+            },
+            "answer_text": "Data is normally not encrypted when sent over a network. The network it self have no possibility to encrypt data. Encryption happens on a higher level. So data can be encrypted but it is always encapsulated with unencrypted data otherwise it would not reach its destination. So content can be encrypted. Endpoints can be hidden by encryption, but it is all like an union, multiple layers that each adds overhead (wasted performance). So encryption can be done and it have the purpose of hiding all or something specific for somebody else, or just encrypt it all to give so much encrypted data that the stuff that really needs encryption is hidden someware deep inside. In all cases it wastes resorces so it should never be as a basic level. ",
+            "date": "Answered October 17, 2020",
+            "views": "26",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nelson Butterworth",
+                "href": "/profile/Nelson-Butterworth"
+            },
+            "answer_text": "Certain portions of a data packet cannot be encrypted when transmitting across a network. Source and destination IP, source and destination MAC, TCP sequence numbers and flags, IP flags, packet size, and several other elements must remain in the clear to cross a network. However, the data portion can be encrypted, but is not by default unless using a protocol or service that is explicitly encrypted, such as HTTPS or SSH. Data is encrypted so that it cannot easily be read or changed by a third party in transit. Anything can be intercepted as it travels across networks, but encryption makes it harder to access and potentially use that data by someone who isn\u2019t authorized to access it. ",
+            "date": "Answered October 19, 2020",
+            "views": "26",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        }
+    ]
+}

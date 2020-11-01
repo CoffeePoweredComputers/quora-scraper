@@ -1,0 +1,50 @@
+{
+    "title": "What is a function? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Eaton",
+                "href": "/profile/David-Eaton-6"
+            },
+            "answer_text": "In Mathematics, it's something that takes some input (usually 1 or more numbers) and gives you an output (almost always 1 number). Example:I want a function that tells me what the area of a circle is, assuming we know its diameter. We usually give the function a name, like \"A\" for \"area of a circle\".  And then, we need a place for the input to go, which is usually in parentheses.  So we say \"A()\".  Finally, we need an input.  In our case, the diameter of the circle, which we'll call \"d\".  So we get \"A(d)\". So, OK, we've named our function, but what's in it?  The area of a circle is \u03c0 times the radius squared.  And the radius is half of the diameter.  So we find out that our function should be: A(d) = \u03c0 * ((1/2) * d)^2 or, simplified: A(d) = \u03c0 * (d^2)/4 Now, we can test it with a sample diameter, like 6. A(6) = \u03c0 * (6^2)/4 A(6) = \u03c0 * 36/4 A(6) = \u03c0 * 9 Cool, so we've defined a function that tells us the area of a circle. Usually, in mathematics, most arbitrary functions are called \"F(x)\", because mathematicians like \"x\" for a variable, and they like \"F\" for functions.  Go figure. In computer programming, a function is a piece of code that usually takes some input and performs a particular task (or gives you some output). Example:I want a function that writes the current time to a file on my computer. I like Perl, so I'll use that, because, why not?  In Perl, we declare a function like this:  sub print_time_to_file { }  Now we've made a function called \"print_time_to_file\". But it doesn't do anything yet.  We tell it what to do by putting in extra commands inside of the curly braces:  sub print_time_to_file {    my $time = localtime();    open($FH,\">\",\"my_filename\");    print $FH $time;    close $FH;}  Now we've put some commands inside the curly braces to make it get the time and print it into a file. Now, we can invoke our function from somewhere else in our program:  #!/usr/bin/perl sub print_time_to_file {    my $time = localtime();    open($FH,\">\",\"my_filename\");    print $FH $time;    close $FH;} print_time_to_file();sleep 300;print_time_to_file();  And presto, now when we run the program, it will call the function, write the time to the file, wait for 5 minutes (300 seconds), and then write the time to the file again. ",
+            "date": "Answered August 27, 2014",
+            "views": "962",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Suman Singh",
+                    "user_href": "/profile/Suman-Singh-741"
+                },
+                {
+                    "user_id": "Ashish Tiwari",
+                    "user_href": "/profile/Ashish-Tiwari-439"
+                },
+                {
+                    "user_id": "Prajakti Jina",
+                    "user_href": "/profile/Prajakti-Jina"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andratos Bachzart",
+                "href": "/profile/Andratos-Bachzart"
+            },
+            "answer_text": "I see that there are some very technical answers about this, so I will try to give you a more intuitive way of thinking about functions, and I'll do it through a metaphor. Imagine there is a group of archers and another one of targets. Let's call the set of archers \u201cdomain\u201d, and the set of targets \u201ccodomain\u201d. Now, a function is a rule that relates the archers to the targets (in this example,, the rule is \u201chit by an arrow\u201d). In particular, these are the rules: Each archer can shoot only one arrowAll archers have to shoot their arrowAnd that's it! All elements of the first set (the domain) are related to one and only one element in the second set (the codomain). The set of all targets that are actually hit by the arrows (which does not necessarily correspond to the codomain, because no rule says that all targets have to be hit) is called \u201cimage\u201d. Now, there can be some particular combinations that have a name: If every target that is hit has been hit only by one arrow (or also, all targets have been hit either zero times or only once, but no more!), then the function is said to be \u201cinjective\u201d.If all of the targets in the set of targets were hit by at least one arrow, then the function is said to be \u201csurjective\u201d. Notice this means that the codomain corresponds to the image.If all of the targets in the set of targets were hit by exactly one arrow (which means it is both injective and surjective), the function is said to be \u201cbijective\u201d (there is a one-to-one correspondence between archers and targets).Another thing that is worth noticing is that a bijective function can be inverted, meaning that if we were to switch the archers with the targets and viceversa while retaining the arrow connections equal, the relation would still be a valid function (according to the rules we talked about before). This intuitive view of what a function is applies to all kinds of functions (also in more than one dimension). ",
+            "date": "Answered May 14, 2018",
+            "views": "452",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Barrett",
+                    "user_href": "/profile/David-Barrett-14"
+                },
+                {
+                    "user_id": "Ivan Iordanov",
+                    "user_href": "/profile/Ivan-Iordanov"
+                }
+            ]
+        }
+    ]
+}

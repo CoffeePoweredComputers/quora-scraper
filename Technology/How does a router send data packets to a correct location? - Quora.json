@@ -1,0 +1,73 @@
+{
+    "title": "How does a router send data packets to a correct location? - Quora",
+    "tags": [
+        "Data Packets",
+        "Location Data",
+        "Wireless Routers",
+        "TCP/IP",
+        "Routers (networking)",
+        "Wireless Technology",
+        "Wi-Fi",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ellery Davies",
+                "href": "/profile/Ellery-Davies"
+            },
+            "answer_text": "I respectfully disagree with the other answers. They refer to internal address tables within the router. I don't think you were asking about local packets or a very small number of cached addresses. I assume that your wish to know how a router knows where to send data or new internet request that originate within your home or office. In most residential environments, the router is configured or pre-configured with the IP address of one or two Domain Name Servers. This tells your network from where to grab the translation table between character domain names and internet IP addresses (these are numerical). If you do not override the domain name server within your PC or local network, the process begins by swapping an IP address for the common name that you type or that is in a web link that you click. (Same applies to FTP, News, UseNet, and other internet protocols). The router asks a DNS server for an IP translation of the specified domain. Residential / consumer routers, are typically pre-programmed to use the DNS server at the ISP or one that they prefer. However, you can easily change this to any DNS service that you wish. The most popular ones have slight advantages over the typical ISP default. Google and OpenDNS are among the most popular. incidentally, it is not difficult to operate your own DNS server, even within a home. The process is simple and free, Any old PC can do the job as long as it is never turned off. It needn't be a powerful PC or even a recent model. The DNS lookup step in routing packets can be a vector for spoofing, hijacking, and malware \u2014 especially since this important step is not encrypted. If the user loses control over what service is used to provide DNS translation, you can no longer be assured of what server you are connecting to. Of course, your second line of defense is to inspect the SSL certificate or look for a padlock (https) in the browser URL address bar. ",
+            "date": "Answered October 13, 2019",
+            "views": "189",
+            "upvotes": " Answer requested by Dex Jackson",
+            "upvoters": [
+                {
+                    "user_id": "Steve Ulrich",
+                    "user_href": "/profile/Steve-Ulrich"
+                },
+                {
+                    "user_id": "Hu\u1ef3nh Quang Th\u1ea3o",
+                    "user_href": "/profile/Hu\u1ef3nh-Quang-Th\u1ea3o"
+                },
+                {
+                    "user_id": "Thomas Moser",
+                    "user_href": "/profile/Thomas-Moser-2"
+                },
+                {
+                    "user_id": "Robert Mudry",
+                    "user_href": "/profile/Robert-Mudry"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Sandeep Gusain",
+                    "user_href": "/profile/Sandeep-Gusain-8"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Thoran-5"
+                },
+                {
+                    "user_id": "Winston Chen",
+                    "user_href": "/profile/Winston-Chen-3"
+                },
+                {
+                    "user_id": "Shantanu Hadgekar",
+                    "user_href": "/profile/Shantanu-Hadgekar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Li",
+                "href": "/profile/Tony-Li-19"
+            },
+            "answer_text": "A router runs one or more routing protocols (Border Gateway Protocol (BGP), Open Shortest Path First (OSPF) Routing Protocol, IS-IS Routing Protocol) or learns a default gateway from upstream via DHCP. Data from these are collected into a routing table. In high-end implementations, the details of the routing table are downloaded into an ASIC that contains a forwarding table. When a packet arrives, the router extracts the destination address and performs a Longest Prefix Match search on the routing/forwarding table. The result of this is the next hop to forward the packet to. In particular, this will contain the outbound interface and the L2 address (i.e., MAC address) of the next hop. The router then creates the appropriate L2 header and sends the packet. On dense routers, the results of the longest match lookup may be a set of next hops. This happens in the case of Equal-cost Multi-path Routing or the more rare case of Unequal-cost Multi-path Routing. ",
+            "date": "Answered October 13, 2019",
+            "views": "645",
+            "upvotes": " View 9 Upvoters "
+        }
+    ]
+}

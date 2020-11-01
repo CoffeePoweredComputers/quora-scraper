@@ -1,0 +1,77 @@
+{
+    "title": "How to get past school wifi - Quora",
+    "tags": [
+        "Wi-Fi Access Points",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Maupin",
+                "href": "/profile/Mark-Maupin"
+            },
+            "answer_text": "What do you mean get past it? If you\u2019re talking about bypassing restrictions set by the router or a proxy that block certain types of sites then you could always set up an SSH tunnel. I used to use one when I was at the local library to access sites related to hacking, which were blocked by the libraries proxy. I won\u2019t go into great detail on how to set it up, but basically you set up an ssh server on a computer at your house, and then when you\u2019re at a location where you have blocked sites, your open a command prompt and start the ssh client with an option that keeps it running in the background and starts listening on a port you specify. Then you configure your web browser to use that as a proxy connection. Then all of your traffic will go through an encrypted tunnel through the proxy. I had mine running on FreeBSD, but you can install openssh on windows as well, and if I remember correctly I once read that Microsoft was finally going to include ssh in Windows 10. Here is the 1st result I found on google about ssh tunneling: Quick-Tip: SSH Tunneling Made Easy I haven\u2019t read it, but a quick glance made it look like it\u2019s only covering the command line switches for the SSH client you\u2019d use on your laptop. However, there\u2019s tons of information online about getting your SSH server set up. Keep in mind that different versions of open source programs can have difference in their command line switches, so if you run into trouble you may need to search for your specific version, and maybe even which operating system you\u2019re using. Another thing to keep in mind is that Linux or FreeBSD will use -f while many programs ported to windows would use /f. I can\u2019t remember how it was with openssh on windows now though, it\u2019s been years since I used to do this. The downside of this, obviously, is that you have to have a computer running the ssh server at home that will be on any time you need it. If this isn\u2019t an option for you than you can try a vpn. There are a few good free VPNs out there. One option is Home - riseup.net, Although, if you are talking about doing anything with your phone you\u2019ll have to look it up unless someone else here has suggestions. I only do what I have to on my phone when it comes to web browsing. ",
+            "date": "Answered April 29, 2018",
+            "views": "868",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rishki Kaysh (\u0bb0\u0bbf\u0bb7\u0bcd\u0b95\u0bbf \u0b95\u0bc7\u0bb7\u0bcd)",
+                "href": "/profile/Rishki-Kaysh-\u0bb0\u0bbf\u0bb7\u0bcd\u0b95\u0bbf-\u0b95\u0bc7\u0bb7\u0bcd"
+            },
+            "answer_text": "Use a proxy. A lazy solution is to install TorBrowser Bundle. These find another route to route your connection, but, this may send warning messages to your E-mail because it usually appears to come from another country, from Instagram's perspective. There is a negative side to this as well - you may be exposed to the Dark Web where there is content which probably would not want to see, and, it is generally slow, but NOT TOO SLOW. In Android, there is OrBot and a browser, and you can still configure Firefox to go through TOR with little effort. If you want to play around, and you know what kind of block is in place - then you can change your DNS servers to Google's or OpenDNS's; or, you can simply tweak your hosts file and hardcode the zone. This is often faster, and you can access such very quickly; sometimes even quicker than someone would access another site there. If what I said does not appear to make sense to you, stick with the former, but proceed with your own risk. ",
+            "date": "Answered October 9, 2015",
+            "views": "29",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Julius Vsivak",
+                    "user_href": "/profile/Julius-Vsivak"
+                },
+                {
+                    "user_id": "Vithusha Nataraja",
+                    "user_href": "/profile/Vithusha-Nataraja"
+                },
+                {
+                    "user_id": "Arpit Bansal",
+                    "user_href": "/profile/Arpit-Bansal-36"
+                },
+                {
+                    "user_id": "Alex Zadorozhny",
+                    "user_href": "/profile/Alex-Zadorozhny"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vivek Singh",
+                "href": "/profile/Vivek-Singh-1122"
+            },
+            "answer_text": "It's hard as your cell phone, bypassing wifi through phone is pretty hard as there are not much apps available which provide you proxies.  Anyway there is way i think might work. Download your freedom app on your phone and use it as guest. It will make you access internet using tunnels and will allow you to open any website without any blocking . :) ",
+            "date": "Answered November 5, 2015",
+            "views": "427",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Chris Leffler",
+                "href": "/profile/Chris-Leffler-1"
+            },
+            "answer_text": "Most often overlooked method, is to bypass DNS! Find the IP address by any other means, and plug that into the address bar. To be fair, I haven't tested this. But it goes way beyond the \u2018lazy-law\u2019 that most IT departments implement to try and block by IP, and opt to block by domain. ",
+            "date": "Answered May 11, 2018",
+            "views": "572",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dave Rane",
+                "href": "/profile/Dave-Rane"
+            },
+            "answer_text": "Buy yourself a hotspot, and bring your own laptop. You can charge your fellow classmates to use your hotspot as well so you'll be basically getting free internet.  Or check if your school doesn't have proxies blocked. You can always download Epic Privacy Browser, and hope for the best. ",
+            "date": "Answered October 21, 2015",
+            "views": "522",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "title": "What is your experience with virtualization? - Quora",
+    "tags": [
+        "VMware (company)",
+        "Virtualization",
+        "Cloud Computing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Samuel Smith",
+                "href": "/profile/Samuel-Smith-100"
+            },
+            "answer_text": "I have several years' experience with virtualization, first with Microsoft's Hyper-V, then VMware's ESXi environment in production. At home I've also tried ProxMox, a Linux hypervisor but did not get good results with it. I'm planning to learn Xen next as it appears to be another solid virtualization product according to my peers. My takeaway: once we converted all our servers to one virtual cluster it was easier to manage and adapt to changing situations. When our file server ran out of room, assigning more drive space required no downtime, for example. We found that having a completely virtual system meant that we found more uses for it than anticipated. New servers can be spun up in minutes with no extra hardware required (up to a point.) Simply install, license and configure as needed on demand. So, be sure to account for future growth when planning your system. There was a learning curve, as well as a transition period that was not as smooth as we'd hoped. The server hosts crashed at random until we found and fixed the problem - yet this illustrated another benefit to virtualization: when the host crashed, the VM's started automatically on another host. Downtime was small enough no one noticed. Now that our hosts and VMs are up-to-date and tuned properly, managing the servers is much easier. Future upgrades will also be easier to implement because we can move running servers from one physical host to another with no downtime. ",
+            "date": "Answered January 11, 2016",
+            "views": "329",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Nikita Abdullin",
+                "href": "/profile/Nikita-Abdullin"
+            },
+            "answer_text": "Virtualization on a workstation is an efficient way to create a personal sandbox for QA, research and development, and so on. I have been using different VMMs and hypervisors on my personal and work machines for more than 7 years. Virtualization on an enterprise server level is a way to create a flexible streamlined process to manage all server environments for both IT R&D and generic IT operations. Almost everything can be virtualized, and most server roles will benefit from it. There is a learning curve and operation expenses associatied with building and maintaining a virtualization platform, but the benefits normally outweigh the costs. Good hardware + good virtualization tech = less physical machines, less downtime, transparent backup, cloning, deployment, etc. I have seen properly implemented virtualized infrastructure in companies I worked for and their customers, and I cannot imagine going back to pre-virtualization era. Now the downsides. I will focus on security and computation performance. From a security perspective, a hardware-assisted hypervisor provides a reasonable level of isolation beetween the guest VMs and the host, but to stay safe you need to properly configure it, and you must update the hypervisor regularly and immediately as soon as the vendor publishes security advisories.The attack surface of a bare-metal hypervisor is huge, especially from the network perspective. Even from a guest VM perspective it exists, as each complex interface that the hypervisor exposes to the guest VMs may contain unknown vulnerabilities to be used by a VM escape exploit some day.The performance of more than one VM running on one hypervisor host is not guaranteed at all. If you can give 50% of RAM and half of the CPU cores to one VM and the rest to another, each of them will work slower than two physical machines having half of RAM and CPU cores of the host machine, and no one knows what is the performance bottleneck at any given moment (e.g. IO on x86 platforms does not scale/share well at all, so if two VMs do 1 second of very critical IO once in an minute, and this second happens to be simultaneously used by them both, there will be some slowdown). Same issues may arise when sharing network cards between VMs. For performance-critical applications the best practice is to assign dedicated resources to the VMs: CPU cores, RAM slots, network or HBA cards, etc. Still, depending on the architecture of your platform, some bottlenecks may appear. I have seen enterprise RISC platforms virtualize better and with less cross-VM interference than x86-based ones, but it is the TCO of the final solution that is the key decision factor in platform choice.Virtual networks are easy to configure and easy to mess up = potential security issues. Actually, it is easier to break cross-VM isolation by misconfiguration of networking than by anything else.",
+            "date": "Answered January 12, 2016",
+            "views": "871",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Simarpreet Sareen",
+                    "user_href": "/profile/Simarpreet-Sareen"
+                }
+            ]
+        }
+    ]
+}

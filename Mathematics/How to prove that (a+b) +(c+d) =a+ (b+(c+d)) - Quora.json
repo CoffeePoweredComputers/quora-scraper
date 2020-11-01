@@ -1,0 +1,57 @@
+{
+    "title": "How to prove that (a+b) +(c+d) =a+ (b+(c+d)) - Quora",
+    "tags": [
+        "Proofs (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul K. Young",
+                "href": "/profile/Paul-K-Young-3"
+            },
+            "answer_text": "First write the associative property as (x+y)+z = x+(y+z). This way you won\u2019t confuse the a,b, c and d of your equation with the a, b and c of the associative property. Now we just need to figure out the appropriate substitution. Looking at the left-hand side of the equation x=a, y=b and z=(c+d) might be a good thing to try. (a+b) + (c+d) = (x + y) + z - substitution = x + (y + z) - by associativity = a + (b + (c+d)) - substitution We got it! Suppose we had tried x=(a+b), y=c and z=d, what would we get? (a+b) + (c+d) = x + (y + z) = substitution = (x + y) + z - by associativity = ((a + b) + c) + d - substitution So that\u2019s backwards. If you happened to pick this substitution on your first try then don\u2019t worry. Just pick new values and try again. Note that by combining the results we get\u2026 a + (b + (c+d)) = (a + b) + (c + d) = ((a + b) + c) + d So we\u2019ve directly proved equality of three of the five forms. The other two are (a + (b + c)) + d a + ((b + c) + d) They\u2019re also equivalent but I\u2019ll leave the proof as an exercise. (And if you\u2019re interested in how we know there\u2019s only five check out the Catalin Numbers.) These proofs are a bit formal. Once you\u2019ve worked through a few example like this it\u2019s usually enough to say that any change in parentheses will result in the same value. Just be careful if you\u2019re mixing operations. (a + b) * c isn\u2019t the same as a + (b * c). ",
+            "date": "Answered September 28, 2016",
+            "views": "14",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Adam Bartlett",
+                    "user_href": "/profile/Adam-Bartlett-17"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Amrith Nayak",
+                    "user_href": "/profile/Amrith-Nayak"
+                },
+                {
+                    "user_id": "Daniel Gonzalez Rodriguez",
+                    "user_href": "/profile/Daniel-Gonzalez-Rodriguez"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "Addition is associative, i.e. (a+b)+c = a+(b+c). You need to apply this law. I won\u2019t do it for you, but I\u2019ll give you a hint: Treat c+d as one thing. ",
+            "date": "Answered September 28, 2016",
+            "views": "66",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "John Calligy",
+                    "user_href": "/profile/John-Calligy"
+                }
+            ]
+        }
+    ]
+}

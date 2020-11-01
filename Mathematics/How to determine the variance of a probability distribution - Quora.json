@@ -1,0 +1,50 @@
+{
+    "title": "How to determine the variance of a probability distribution - Quora",
+    "tags": [
+        "Variance (statistics)",
+        "Normal Distribution (probability)",
+        "Statistics (collected data)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mike Anderson",
+                "href": "/profile/Mike-Anderson-79"
+            },
+            "answer_text": "Let  be a real-valued random variable. be the probability that a draw from  takes some value  (if  is discrete), or the probability density at  (if  is continuous). be the expected value (aka the mean) of . be the variance of .If  is continuous then:  If  is discrete and can take  different values then:  This explanation is very general, but that\u2019s only because the question was very general. I should be able to answer more specific follow-up questions. ",
+            "date": "Updated August 31, 2017",
+            "views": "584",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Kotsigamis",
+                    "user_href": "/profile/Kotsigamis"
+                },
+                {
+                    "user_id": "Simon Zhang",
+                    "user_href": "/profile/Simon-Zhang-63"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dennis Clason",
+                "href": "/profile/Dennis-Clason"
+            },
+            "answer_text": "I am going to assume that you are asking for methods. Brute force: find  directly.Use a bit of finesse: find Use a little more finesse: find the characteristic function   Differentiate  with respect to  and evaluate at  (this is ). Find the second derivative of  and evaluate at  (this is . Now use method 2.Use more finesse yet: find the second derivative of the cumulant generating function,  defined above and evaluate it at .",
+            "date": "Answered February 9, 2017",
+            "views": "427",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sean Crossan",
+                    "user_href": "/profile/Sean-Crossan"
+                },
+                {
+                    "user_id": "Kotsigamis",
+                    "user_href": "/profile/Kotsigamis"
+                }
+            ]
+        }
+    ]
+}

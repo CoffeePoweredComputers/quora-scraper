@@ -1,0 +1,52 @@
+{
+    "title": "How should I interpret Bayesian probability? - Quora",
+    "tags": [
+        "Bayesian Inference",
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Roland Acra",
+                "href": "/profile/Roland-Acra"
+            },
+            "answer_text": "The basic philosophy of the Bayesian approach is to update your prior beliefs based on the experimental (or observational) data, to end up with posterior beliefs that should be more robust as they're based on additional evidence (namely, the data produced by your experiment or observation). Going slightly deeper, the Bayesian approach to inference is predicated on working with probability distributions over the entire ranges of the parameters of interest, rather than just single values. In that sense, Bayesian statistics maintain broader \"peripheral vision\" towards a range of possible values for the parameter of interest, instead of taking a \"tunnel vision\" to the single - most likely - value based on the data at hand. Stated otherwise, the Bayesian approach considers that there's more to the inference than the evidence produced by the present experiment or observation alone, and that what the new data contributes is another evidence-based chisel to a shape of belief that existed beforehand. As an example, let's say you're trying to infer the mean of some population parameter based on observing a sample of that population (let's say the height of humans): - The frequentist approach would measure the sample average and infer that the most likely value for the population mean is the value of that sample's average that you just measured. Based on assumptions of the distribution of heights, you can also state a confidence interval (e.g., 95%) for the parameter that is the subject of your inference (mean height). The confidence interval says that if you could repeat the experiment a large number of times (i.e., take samples from the population a large number of times, and calculate the corresponding confidence intervals for human height), then the corresponding intervals would include the true value of the parameter about 95% of the time. Note that this is different from saying that the one interval that you got from your actual experiment or observation contains the true value with 95% confidence (which is meaningless in the frequentist context because this single interval either does contain it or it doesn't...). - Instead, the Bayesian approach would have you state what you initially thought the probabilities of various values for mean height were, prior to the sampling experiment or observation. For instance, you'd say that you believe the mean population-wide height can take any value between 5 feet and 6 feet, all equally likely (i.e., the population mean height is uniformly distributed over the range between 5 feet and 6 feet). You then calculate a posterior probability distribution for the population mean by properly combining the prior distribution (e.g., uniform over the range from 5ft to 6ft) with the observed data, and you end up with an updated, posterior distribution for the population mean. For instance, you would now believe that the true population mean has probabilities that are shaped with a peak close to the measured sample average, instead of the previous flat shape that said that any value between 5 feet and 6 feet was equally likely to be the population mean height. So where does the prior distribution come from? Depending on the circumstances, it could either be a subjective belief based on intuition or expertise, or it could be the accumulation of some initial subjective beliefs at genesis time augmented with the results of many experimental or observational inferences. In other words, the latest experiment's prior could be the posterior after an entire suite of data gathering and inference exercises. Critics of the Bayesian approach dislike the fact that it requires an initial subjective statement of the prior distribution of the parameter of interest (at the dawn of time, so to speak), due to the perception of arbitrariness of such a cornerstone to the subsequent edifice. They also sometimes point out that Bayesians often choose \"non-informative\" priors (i.e., flat probability distributions for the priors), which is a bit of a cop-out... Bayesian practitioners retort that all forms of inference make assumptions on the distribution governing the population data itself (Gaussian, Poisson, Binomial, etc.).They point out that such assumptions around the population distribution are no less arbitrary than allowing for the fact that the distribution's parameter of interest (mean, standard deviation, etc.) could itself take a range of values weighted by some probability distribution that needs a prior. When the amount of data in a sample is not large, the Bayesian approach can often lead to better results because it essentially brings to bear the benefit of whatever previously accumulated wisdom (results of initial beliefs plus all prior evidence), rather than only relying on skimpy data. Even somewhat non-informative priors could serve to dampen spurious inferences made from sample sizes that are too small to confidently rely on the laws of large numbers or central limit theorems. Lastly, one of the previous handicaps of Bayesian statistics was that it quickly ran into formulas and integrals that had no easy closed forms, making them practically useless especially when the parameter space was multi-dimensional. This has radically changed with the ability to solve these challenges computationally, using Monte Carlo based sampling and simulation methods. ",
+            "date": "Answered December 3, 2015",
+            "views": "863",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Terr-No",
+                    "user_href": "/profile/Terr-No"
+                },
+                {
+                    "user_id": "Venugopal Murali",
+                    "user_href": "/profile/Venugopal-Murali"
+                },
+                {
+                    "user_id": "Vidhyalakshmi Kalaichelvan",
+                    "user_href": "/profile/Vidhyalakshmi-Kalaichelvan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "Roland Acra has given a full answer. The short answer is that Bayesian probabilities may be interpreted as degrees of belief, often about fixed values which cannot vary. Frequentist probabilites, however, in theory at least, represent relative frequencies in a series of trials where the outcomes can vary. That's not quite true, though. We often use a model, but the probabilities given by the model theoretically represent the approximate relative frequencies we would have obtained if we did sufficiently many trials. ",
+            "date": "Answered January 6, 2016",
+            "views": "181",
+            "upvotes": "0"
+        }
+    ]
+}

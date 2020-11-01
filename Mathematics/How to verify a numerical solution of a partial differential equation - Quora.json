@@ -1,0 +1,36 @@
+{
+    "title": "How to verify a numerical solution of a partial differential equation - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marc H. Williams",
+                "href": "/profile/Marc-H-Williams"
+            },
+            "answer_text": "First of all\u2026 it is WRONG! Your task is to try to quantify the error. You should plan to test it out on similar problems that have accepted solutions. If you can\u2019t match, you are probably doing something wrong. You should check for discretization error. This comes down to comparing the results from at least two significantly different meshes. It helps a lot if you know the way error is supposed to scale with mesh spacing. Say it scales like h^2.Then halving the mesh should reduce the error by 4. You can look for that behavior in the results. But errors can come in from other sources as well, like boundary conditions and \u201cmodelling\u201d issues ( like turbulence). This is a very complicated issue, though it is one anybody who sets out to do numerical solutions of PDEs needs to address. Most journals will not publish without an error assessment. ",
+            "date": "Answered November 3, 2017",
+            "views": "233",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aaron Dunbrack",
+                    "user_href": "/profile/Aaron-Dunbrack-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Townsend",
+                "href": "/profile/David-Townsend-37"
+            },
+            "answer_text": "For many PDE problems, if you have a solution that fits on the boundaries and solves the equation in the region of interest, then that is a unique solution. So if your numerical solution matches the boundary conditions and solves the equation to some degree of accuracy, then that's a good solution. The question would be how close you are to the theoretical solution, that is a matter of judgement and understanding the physical phenomena that the PDE is modelling. ",
+            "date": "Answered November 5, 2017",
+            "views": "79",
+            "upvotes": "0"
+        }
+    ]
+}

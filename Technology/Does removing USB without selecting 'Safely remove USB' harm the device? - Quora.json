@@ -1,0 +1,50 @@
+{
+    "title": "Does removing USB without selecting 'Safely remove USB' harm the device? - Quora",
+    "tags": [
+        "USB 3.0",
+        "USB Powered Devices",
+        "Flash Drives",
+        "Universal Serial Bus (USB)",
+        "Laptops",
+        "Computer Hardware",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Anjan Karjigi",
+                "href": "/profile/Anjan-Karjigi"
+            },
+            "answer_text": " You\u2019ve probably heard that you always need to use the Safely Remove Hardware icon before unplugging a USB device. However, there\u2019s also a good chance that you\u2019ve unplugged a USB device without using this option and everything worked fine. Windows itself tells you that you don\u2019t need to use the Safely Remove Hardware option if you use certain settings \u2013 the default settings \u2013 but the advice Windows provides is misleading. Quick Removal vs. Better Performance Windows allows you to optimize your USB device for quick removal or improved performance. By default, Windows optimizes USB devices for quick removal. You can access this setting from the device manager \u2013 open the Start menu, type Device Manager, and press Enter to launch it.  Expand the Disk drives section in the Device Manager, right-click your device, and select Properties.   Select the Policies tab in the Properties window. You\u2019ll notice that Windows says you can disconnect your USB device safely without using the Safely Remove Hardware notification icon, so this means you can unplug your USB device without ever safely removing it, right? Not so fast.  Data Corruption Danger The Windows dialog shown above is misleading. If you unplug your USB device while data is being written to it \u2013 for example, while you\u2019re moving files to it or while you\u2019re saving a file to it \u2013 this can result in data corruption. No matter which option you use, you should ensure that your USB device isn\u2019t in-use before unplugging it \u2013 some USB sticks may have lights on them that blink while they\u2019re being used.  However, even if the USB device doesn\u2019t appear to be in-use, it may still be in-use. A program in the background may be writing to the drive \u2013 so data corruption could result if you unplugged the drive. If your USB stick doesn\u2019t appear to be in-use, you can probably unplug it without any data corruption occurring \u2013 however, to be safe, it\u2019s still a good idea to use the Safely Remove Hardware option. When you eject a device, Windows will tell you when it\u2019s safe to remove \u2013 ensuring all programs are done with it. Write Caching If you select the Better Performance option, Windows will cache data instead of writing it to the USB device immediately. This will improve your device\u2019s performance \u2013 however, data corruption is much more likely to occur if you unplug the USB device without using the Safely Remove Hardware option. If caching is enabled, Windows won\u2019t write the data to your USB device immediately \u2013 even if the data appears to have been written to the device and all file progress dialogs are closed, the data may just be cached on your system. When you eject a device, Windows will flush the write cache to the disk, ensuring all necessary changes are made before notifying you when it\u2019s safe to remove the drive.  While the Quick Removal option decreases USB performance, it\u2019s the default to minimize the chances of data corruption in day-to-day use \u2013 many people may forget to use \u2013 or never use \u2013 the Safely Remove Hardware option when unplugging USB devices. Safely Removing Hardware Ultimately, no matter which option you use, you should use the Safely Remove Hardware icon and eject your device before unplugging it. You can also right-click it in the Computer window and select Eject. Windows will tell you when it\u2019s safe to remove the device, eliminating any changes of data corruption.  This advice doesn\u2019t just apply to Windows \u2013 if you\u2019re using Linux, you should use the Eject option in your file manager before unplugging a USB device, too. The same goes for Mac OS X.  In Linux systems we face some issues that Linux says the data has been sent but actually it was not its being transferring still in background , buy the time if you unplug the pen-drive data got corrupted it may cause loss of all data in the pen-drive. I faced this issue in past, Here he asked interesting question you can get what was real cause to it. USB write: delay between when Ubuntu says its done and it actually being done It happens because Ubuntu takes all the data from the disk that is to be written to the USB and save it in the RAM buffer (Depends on the capacity of RAM). Then Ubuntu shows that the data has been written to the USB but actually data is being transferred from the buffer to the USB at that time. So, if you remove your USB during the transfer (although Ubuntu has shown you the transfer is done), you'll find that all data has not been transferred. You can use sudo iotop to check for real time transfer between disk and other I/O and when you found that the transfer has really been done then you can safely remove the USB. That\u2019s why everyone suggest to safety removal(EJECT) of per drive before unplug.!! Ref : Do You Really Need to Safely Remove USB Flash Drives? Hope it helps you\u2026.! ",
+            "date": "Answered May 5, 2019",
+            "views": "859",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "B.J.",
+                    "user_href": "/profile/B-J-239"
+                },
+                {
+                    "user_id": "Aditya Raj",
+                    "user_href": "/profile/Aditya-Raj-703"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "Although Windows now claims by default to offer safe removal of external storage I have lost data by not using the \u201cSafely remove Hardware and Eject Media\u201d. You can change the policy setting for each specific external storage device to improve performance, but specifically requiring that you genuinely eject media before unplugging a drive. Other devices such as printers, mice, etc tend to be plug (and unplug) and play without any problems. However, I have found that after using a external USB DVD rewriter drive, USB will not accept normal external storage without a restart first. Although the default policy is to allow USB storage devices to be unplugged as soon as the Windows process finishes, I would recommend always using the safe removal tool. There are two reasons: The policy for a particular drive might be set for optimum performance rather than safe removal. In this case, writes to the drive may be cached in RAM when the process doing the writing ends. Pulling the drive can eave files incomplete.There may be maintenance operations such as virus and malware scans or defragmentation taking place in the back ground. You might not see these processes are running, and simply pulling the drive may interrupt changes being made by these maintenance operations.",
+            "date": "Answered May 29, 2019",
+            "views": "690",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Cristian M Ioan",
+                    "user_href": "/profile/Cristian-M-Ioan-1"
+                }
+            ]
+        }
+    ]
+}

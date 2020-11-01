@@ -1,0 +1,67 @@
+{
+    "title": "How many Firewall types are there? - Quora",
+    "tags": [
+        "Firewalls",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Pankaj Sharma",
+                "href": "/profile/Pankaj-Sharma-7359"
+            },
+            "answer_text": "One of the most critical activity for an organization is to protect their IT infrastructure assets and firewall is the tool that can assist. Firewall is cyber-security tool (software and hardware) that protects businesses by filtering traffic in IT networks. There are different types of Firewalls available as following: Network Firewalls: These provide high level protection using security rules to control access (through permission) to the IT network. It allows only traffic targeted for specific intended ports aligned to specific applications using security protocol / IP addresses.Next-Generation Firewalls: These provide high level protection using observing at the contents of each data packet other than protocols, ports, source and destination IP addresses. It allows you to restrict access /usage of targeted applications for example, by allowing Zoom to be used for VOIP calls but no content sharing.Web Application Firewalls: These provide high level protection using a proxy server between application user and the application hosted on IT network server. It protects the application from malicious activities such as port scans etc.Database Firewalls: These provide high level of protection like web application firewalls but cater to security of databases. These can be installed directly on the intended database server or near the IT network gateway to secure multiple databases on different servers.Unified Threat Management Firewalls: These provide medium level of protection and consists of traditional firewall, security system to detect malicious attack and provides security to IT network gateway. It offers basic features like blocking unwanted sites, scanning emails and attachments etc.Cloud Firewalls: These provide high level protection and provided as a service. It offers all time availability with fewer instances of unavailability (downtime etc) and allows mobile users to connect via proxy and VPN. There configuration involves corporate routers to divert traffic to cloud-based firewall.There are Container Firewalls / Network Segmentation Firewalls as well which basically provides protection to targeted sections within the IT network especially internal ones.. Many organizations face challenge about which firewall to choose, what is the need, its usefulness, cost benefit analysis and Return On Investment etc. Ideally it is recommended to have multiple layers of firewalls as additional Firewalls provides greater protection. Hughes Systique provides network design services including consulting focused on cyber-security and fraud prevention using best practices based on ISO 27k (Information Security Management System) experience. For more information refer Hughes Systique Corp. > Services > Product Engineering Services > Network Infrastructure Engineering Services ",
+            "date": "Answered April 16, 2020",
+            "views": "761",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vivek Parmar",
+                    "user_href": "/profile/Vivek-Parmar-3"
+                },
+                {
+                    "user_id": "Ajay Gupta",
+                    "user_href": "/profile/Ajay-Gupta-320"
+                },
+                {
+                    "user_id": "Narendra Sharma",
+                    "user_href": "/profile/Narendra-Sharma-53"
+                },
+                {
+                    "user_id": "Manoj Kumar",
+                    "user_href": "/profile/Manoj-Kumar-7363"
+                },
+                {
+                    "user_id": "Aman Batra",
+                    "user_href": "/profile/Aman-Batra-3"
+                },
+                {
+                    "user_id": "Rakesh Shukla",
+                    "user_href": "/profile/Rakesh-Shukla-359"
+                },
+                {
+                    "user_id": "Pankaj Sharma",
+                    "user_href": "/profile/Pankaj-Sharma-634"
+                },
+                {
+                    "user_id": "Vinod Sood",
+                    "user_href": "/profile/Vinod-Sood"
+                },
+                {
+                    "user_id": "Niharika Singhai",
+                    "user_href": "/profile/Niharika-Singhai"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sakibul Hasan",
+                "href": "/profile/Sakibul-Hasan-13"
+            },
+            "answer_text": "Packet filtering Packet filtering or network layer (Layer 3) firewalls make decisions based on the source and destination addresses and ports in IP packets. This basic form of firewall protection is really no more than a simple sorting algorithm. Generally, they enable you to have some control through the use of access lists. Packet filtering can also often be performed by other network devices such as routers and is generally what you get when you download free firewall software. Packet filtering works well for small networks but when applied to larger networks can quickly become very complex and difficult to configure. Packet filtering also cannot be used for content-based filtering and cannot, for instance, remove e-mail attachments. This type of firewall has little or no logging capability, making it difficult to determine if it\u2019s been attacked. Proxy The more sophisticated proxy or application layer firewalls deal with network traffic bypassing all packets through a separate \u201cproxy\u201d application that examines data at an application level. A proxy firewall doesn\u2019t allow a direct connection between your network and the Internet. Instead, it accepts requests and executes them on behalf of the user. For instance, if you\u2019re behind a proxy firewall and type black box, the request goes to the firewall, which gets the page on your behalf and passes it to you. This process is transparent to the usersThis proxy system enables you to set a firewall to accept or reject packets based on addresses, port information, and application information. For instance, you can set the firewall to filter out all incoming packets belonging to EXE files, which are often infected with viruses and worms. Proxy firewalls generally keep very detailed logs, including information on the data portions of packets. Proxy firewalls are slower and require more hardware than packet filtering; however, their greater versatility enables you to enforce tighter security policies. Stateful inspection When a firewall is described as a stateful inspection, it means that it examines packets at the network layer like packet filtering does but, rather than just applying simple filtering rules to this information, it uses it in an intelligent way to block out unauthorized traffic. It analyzes data to make sure connection requests occur in the proper sequence. This firewall tracks each communications session from start to end and enforces set rules based on protocol, port and source, and destination addresses. By maintaining all session data, the firewall can quickly verify that new incoming packets meet the criteria for authorized traffic. Packets that aren\u2019t part of an authorized session are rejected. Stateful inspection firewalls have the advantage of being both smart and fast. Hybrid Packet-based, proxy and stateful inspection used to be distinctly different types of firewalls, but today nearly all modern firewall appliances are hybrids which provide packet-based, proxy and stateful inspection firewalling. To learn more Please visit this link Firewall security service. ",
+            "date": "Answered June 7, 2019",
+            "views": "388",
+            "upvotes": "0"
+        }
+    ]
+}

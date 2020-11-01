@@ -1,0 +1,95 @@
+{
+    "title": "What are some good ways to learn ReactJS? - Quora",
+    "tags": [
+        "Learning JavaScript",
+        "JavaScript Frameworks",
+        "React (JavaScript library)",
+        "Front-End Web Development",
+        "JavaScript (programming language)",
+        "Learning",
+        "List Question",
+        "Learning to Program"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ian Delairre",
+                "href": "/profile/Ian-Delairre"
+            },
+            "answer_text": "After torturing myself learning React with two newbie projects in the last year, I think I am somewhat qualified to answer. I think your best bet besides the usual \u201cgo build something\u201d, \u201cread this\u201d or \u201cdo this or that tutorial\u201d advice is to study completed React projects, try different Yeoman generators, and to read about React. One of the appeals of React is that it is \u201cjust Javascript\u201d and there is no learning curve in this regard. That is to say, its idiomatic and doesn\u2019t rely on external libraries (Backbone code, for instance, is typically laden with lodash/underscore and jQuery syntax while Angular 1 has proprietary implementations of functions like \u201cangular.forEach\u201d so they are not considered idiomatic) and really tries to make sure you are never writing code that manipulates the DOM. The learning curve with React is far more conceptual and bears more on structuring your app. I highly recommend reading their surprisingly useful bits and getting a good handle on the concept of web components, state, immutable data, and unidirectional data-flow (reading about Redux, even if you don\u2019t use the framework, is quite instructive). React and its various libraries are brilliant because there is really an ideology governing the logic of the framework and reading about it actually pays off. The nitty-gritty of React is encapsulating your components into containers, transferring props down your component hierarchy, and the component life-cycle. Most of the teeth grinding you will likely experience is with the life-cycle since this is where state and props mingle (I\u2019ve also always thought the naming choices for their life-cycle methods were slightly weird and blur together). If your app has async code, which it probably does, you will also need to create a data-layer (this can get hairy, there is some criticism of React/Flux in this regard) that responds to your component\u2019s events and triggers state changes. There are a few React/Flux implementations that do this, my favorite\u2014as always\u2014is Alt but React really leaves it up to you to figure out how to handle this. React conceives of itself as a framework singularly purposed to build user interfaces and which can integrate easily into the prototyping process. Isolating whether you have a good use-case for React with some research pays dividends. Those last sentences might sound obvious but one of my first React projects was also my first D3 project and after a month of trying to get the frameworks to work together it was clear I was jumping through unnecessary hoops. As it happens, D3 with its prototype chaining syntax/use of HTML selectors and DOM manipulation does not easily integrate with React and its concept of state and component hierarchy. You can learn React more easily by focusing on things that React does well. The trouble with learning every framework is that you are taking on a certain amount of that infamous technical-debt and are inheriting the idiosyncrasies and problems of the framework which can hurt you in the long run. React, it turns out, is somewhat bad with routing and complex isomorphic applications with express middle-ware have to be built in order to overcome this limitation. Keep this in mind once you move past your TodoMVC tutorials. React is also typically married to the Webpack module bundler, which in my opinion is very tedious to configure and suffers from horrible documentation. Configuring your transpiler/task-runner can become a real pain-point while you are learning React so make sure you are familiar with it. Many React starters include configuration for routing middle-ware and hot-loading modules which can look bizarre at first so I have to recommend looking into hot-loading. In regards to transpilers, if you haven\u2019t taken the plunge into to ES6 yet, React is a great way to do so and having a good concept of ES6 classes, inheritance and Javascript OOP will help you grasp React and make it seem less magical. I therefore highly recommend learning how to configure a transpiler so you can use JSX and ES6\u20137 features in your React code (definitely look at function binding and static-properties, these can make your React components very readable). I would actually say ES6 is the only way to go with React unless you have a requirement that dictates otherwise. Look out for these pitfalls and scope your project so you can keep actually learn React and not just slog through problems. All in all React is quite fun and you can develop a workflow with it very rapidly, I can honestly say I wish all my projects were in React. ",
+            "date": "Answered July 14, 2016",
+            "views": "163",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jackson Davis",
+                    "user_href": "/profile/Jackson-Davis-3"
+                },
+                {
+                    "user_id": "Ezequiel Ventura Valdez",
+                    "user_href": "/profile/Ezequiel-Ventura-Valdez"
+                },
+                {
+                    "user_id": "Amel Alispahic",
+                    "user_href": "/profile/Amel-Alispahic"
+                },
+                {
+                    "user_id": "Baldeep Singh",
+                    "user_href": "/profile/Baldeep-Singh-82"
+                },
+                {
+                    "user_id": "Keenan Hammonds",
+                    "user_href": "/profile/Keenan-Hammonds-3"
+                },
+                {
+                    "user_id": "Ahmed Khan",
+                    "user_href": "/profile/Ahmed-Khan-124"
+                },
+                {
+                    "user_id": "Rajesh T",
+                    "user_href": "/profile/Rajesh-T-102"
+                },
+                {
+                    "user_id": "\u0986\u09b6\u09bf\u0995\u09c1\u09b0 \u09b0\u09b9\u09ae\u09be\u09a8 \u0986\u09b6\u09bf\u0995",
+                    "user_href": "/profile/\u0986\u09b6\u09bf\u0995\u09c1\u09b0-\u09b0\u09b9\u09ae\u09be\u09a8-\u0986\u09b6\u09bf\u0995"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Semper-Fidelis-9"
+                },
+                {
+                    "user_id": "Tejas Bhalerao",
+                    "user_href": "/profile/Tejas-Bhalerao-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Maxin Adams",
+                "href": "/profile/Maxin-Adams"
+            },
+            "answer_text": "There is no way to learn something the easy way. You have to be patient. ReactJS is a declarative, efficient, and flexible JavaScript library for building reusable UI components. It is an open-source, component-based front end library which is responsible only for the view layer of the application. It was initially developed and maintained by Facebook and later used in its products like WhatsApp & Instagram. A roadmap from beginner to advanced Basic knowledge of HTML, CSS, and JavaScript.Some ES6 features of Javascript likeLet and ConstArrow FunctionsClass and \u2018this\u2019 keywordFundamentals of NodeJS & Code EditorsHTML, CSS, JavaScript: HTML can be considered as the structure or \u201cSkeleton\u201d, of the body which tells what has to come where.CSS defines the style which is the \u201cSkin, Flesh\u201d, tells how a particular segment should look like what should be its Color, Height, Width, etc.,JavaScript defines the functionality which is the part of the \u201cBrain\u201d which tells each of the parts to do what.ES6 features of Javascript: ES6 is the version of JavaScript and there are a lot of features of ES6. To get started with React you need to know about Arrow Functions, Let and Const, Class and \u2018this\u2019 keyword.Arrow Function: Arrow function allows you to write the shorter syntax for function. It makes your code clean and more readable. Check the code snippet below\u2026 Let and Const: You will be using \u2018let\u2019 and \u2018const\u2019 instead of \u2018var\u2019 keyword. Both are different than var, in simple words\u2026 Let defines a local variable limiting their scope to the block in which they are declared.Const define a constant variable whose values cannot be changed.Class and \u2018this\u2019 Keyword: You will have to learn the Object-Oriented Programming concepts like Class, Method, Objects in ES6. You might have learned about these concepts in other languages such as C++ or Java. Read about this from ES6 | Classes and follow this video tutorial to understand this. NodeJS Fundamentals & Code Editors: Understanding of NodeJS fundamentals is important to work on ReactJS. In simple language, NodeJS is an execution environment for javascript. A lot of people consider that it\u2019s a programming language which is not true. Every browser has JavaScript Engine which is embedded into browsers, for example, Chrome has a V8 engine and Mozilla Firefox has SpiderMonkey. Now you might have quite familiar with NodeJs so let\u2019s discuss are all the features of Node you must know to learn React. NPM (Node Package Manager): NPM is a package manager to install node modules and packages to your project just like PIP for python.IMPORT and EXPORT keywords.Import: Once you will install the Node module using NPM in your project you will have to use \u2018import\u2019 keyword to use that module.Export: Use this keyword when you are creating a module/component and you have to return only a part, not all the methods and variables.",
+            "date": "Answered September 22, 2020",
+            "views": "684",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Viraj Londhe",
+                    "user_href": "/profile/Viraj-Londhe"
+                },
+                {
+                    "user_id": "Laxman Suthar",
+                    "user_href": "/profile/Laxman-Suthar-67"
+                },
+                {
+                    "user_id": "SK",
+                    "user_href": "/profile/SK-954"
+                },
+                {
+                    "user_id": "Denny Zorb",
+                    "user_href": "/profile/Denny-Zorb"
+                }
+            ]
+        }
+    ]
+}

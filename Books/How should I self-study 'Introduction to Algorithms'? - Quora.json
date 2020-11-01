@@ -1,0 +1,113 @@
+{
+    "title": "How should I self-study 'Introduction to Algorithms'? - Quora",
+    "tags": [
+        "Introduction to Algorithms (book by Cormen, Leiserson, Rivest and Stein)",
+        "Self Study"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Praful Krishna",
+                "href": "/profile/Praful-Krishna"
+            },
+            "answer_text": "This may come out as a tad controversial, but I think algorithms is an acquired skill, like riding a bicycle, that you can learn only by practice. Try these steps: Pick any computational problem that you fancy. Any simple ones from grade 10 math book will do. Lets say generating prime numbers less than N.Solve it the best you can. You don't really need to know much about algorithms at this stage. Think about the simple math behind things and solve the problem.Then think about if this is the most efficient algo. Can this be done in a better way? How would you measure that?Now the fun starts. Look at the complexity of your solution. If lets say N = 100, how many steps will your program have to make. Lets call that t. Now how does that change when N = 1,000? Can that be reduced? Can you get to an algo where t is linearly dependent on N? Better than that?Next, think about how much storage your program is taking. Do you have to store long list of numbers? Can that be avoided? What is the trade-off between complexity and storage. Now you are talking real algos like professionals.Finally, how robust is your algo. If something breaks, how easy is it to recover. Surprisingly, many many software engineers doing this day in day out miss this point.Now think about how much time did it take you to go through these six steps. What is the intuition that would have let you come up with the best answers in the first attempt? Time to try the next problem, right from step 1.Sure there are books and stuff that give you some good ideas. So would stack overflow. Just pick the problem and get started! ",
+            "date": "Updated June 26, 2020",
+            "views": "133",
+            "upvotes": " View 46 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Munai Chak",
+                    "user_href": "/profile/Munai-Chak"
+                },
+                {
+                    "user_id": "Pooja M",
+                    "user_href": "/profile/Pooja-M-325"
+                },
+                {
+                    "user_id": "Renu Arora",
+                    "user_href": "/profile/Renu-Arora-235"
+                },
+                {
+                    "user_id": "King Khan",
+                    "user_href": "/profile/King-Khan-243"
+                },
+                {
+                    "user_id": "Dibyajyoti Parida",
+                    "user_href": "/profile/Dibyajyoti-Parida-7"
+                },
+                {
+                    "user_id": "Alejandro Recalde",
+                    "user_href": "/profile/Alejandro-Recalde-1"
+                },
+                {
+                    "user_id": "Khubaib Abdullah",
+                    "user_href": "/profile/Khubaib-Abdullah"
+                },
+                {
+                    "user_id": "Samuel",
+                    "user_href": "/profile/Samuel-1167"
+                },
+                {
+                    "user_id": "Zach Thomas",
+                    "user_href": "/profile/Zach-Thomas-191"
+                },
+                {
+                    "user_id": "Atul Mishra",
+                    "user_href": "/profile/Atul-Mishra-939"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhijeet Mohanty",
+                "href": "/profile/Abhijeet-Mohanty-8"
+            },
+            "answer_text": "I suppose that a good way to truly gain from the book is to first read and along side implement algorithms using your preferred programming language (Java, C or C++ would be better). Though I have not read CLRS in its entirety, what I have done is to segregate topics based on algorithm design paradigms and data structures I would need to solve problems. In my personal opinion, an exhaustive study probably could follow once you have familiarised yourself with basic data structures. For instance, after covering the basics of binary trees and its related operations (searching, insertion and deletion), you could delve deeper into more complex tree implementations such as self-balancing trees (AVL or red black trees). Basically focus on a simple data structure, read about it, implement its related operations and move onto more complex data structures based on the simple data structure sort of like an iterative deepening learning technique. As far as reading proof of correctness is concerned, I would recommend it to be read for classical algorithms such as those for sorting and searching. Other than correctness of proof, it is necessary to have an idea as to the different kinds of input cases an algorithm can take and weeding out edge cases which would make the algorithm fail. CLRS illustrates very well, the trace of an algorithm and therefore instead of jumping into the algorithm itself, it would do you a world of good if you were to try and implement an algorithm from its trace itself. An even more important thing is computing the time and space complexity of an algorithm, which would give you a better idea as to how to eliminate redundant operations, to cache results for better optimisation etc. Whenever approaching try enumerating prerequisites required for understanding algorithms. For instance, for divide and conquer, it would be integral to read up on recursion and how function calls are stacked up so as to do so. And like how Kamila Hasanbega has stated, it is integral to ensure that your learning curve is as steep as possible thus maximising learning. CLRS provides a rather holistic way of looking at an algorithm rather than simply implementing it and helps us to get much more than just an essence of what an algorithm does. A good lecture series which would compliment very well the book would be the Stanford one by Tim Rougharden (It has a part 2 as well along with pretty useful problem sets) :- Algorithms: Design and Analysis, Part 1 - Stanford University | Coursera ",
+            "date": "Answered October 4, 2016",
+            "views": "223",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Munai Chak",
+                    "user_href": "/profile/Munai-Chak"
+                },
+                {
+                    "user_id": "Khubaib Abdullah",
+                    "user_href": "/profile/Khubaib-Abdullah"
+                },
+                {
+                    "user_id": "Origa Kennan",
+                    "user_href": "/profile/Origa-Kennan"
+                },
+                {
+                    "user_id": "Yashwant Gahlot",
+                    "user_href": "/profile/Yashwant-Gahlot"
+                },
+                {
+                    "user_id": "Ove Bepari",
+                    "user_href": "/profile/\u0985\u09ad\u09bf-\u09ac\u09cd\u09af\u09be\u09aa\u09be\u09b0\u09c0-Ove-Bepari"
+                },
+                {
+                    "user_id": "Arif Azim",
+                    "user_href": "/profile/Arif-Azim"
+                },
+                {
+                    "user_id": "Vartika",
+                    "user_href": "/profile/Vartika-62"
+                },
+                {
+                    "user_id": "Shashank Jaiswal",
+                    "user_href": "/profile/Shashank-Jaiswal-36"
+                },
+                {
+                    "user_id": "Julian Grodzicky",
+                    "user_href": "/profile/Julian-Grodzicky"
+                },
+                {
+                    "user_id": "James Hazuga",
+                    "user_href": "/profile/James-Hazuga"
+                }
+            ]
+        }
+    ]
+}

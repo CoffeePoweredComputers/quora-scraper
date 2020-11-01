@@ -1,0 +1,31 @@
+{
+    "title": "How to load an excel sheet and clean the data in python - Quora",
+    "tags": [
+        "Working with Excel Using Python",
+        "Spreadsheets",
+        "Microsoft Excel",
+        "Microsoft Office"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Pratyush Prateek",
+                "href": "/profile/Pratyush-Prateek"
+            },
+            "answer_text": "This is the question -Load the energy data from the file Energy Indicators.xls, which is a list of indicators of energy supply and renewable electricity production from the United Nations for the year 2013, and should be put into a DataFrame with the variable name of energy. Keep in mind that this is an Excel file, and not a comma separated values file. Also, make sure to exclude the footer and header information from the datafile. The first two columns are unneccessary, so you should get rid of them, and you should change the column labels so that the columns are: ['Country', 'Energy Supply', 'Energy Supply per Capita', '% Renewable'] Convert Energy Supply to gigajoules (there are 1,000,000 gigajoules in a petajoule). For all countries which have missing data (e.g. data with \"...\") make sure this is reflected as np.NaN values. Rename the following list of countries (for use in later questions): \"Republic of Korea\": \"South Korea\", \"United States of America\": \"United States\", \"United Kingdom of Great Britain and Northern Ireland\": \"United Kingdom\", \"China, Hong Kong Special Administrative Region\": \"Hong Kong\" There are also several countries with numbers and/or parenthesis in their name. Be sure to remove these, e.g. 'Bolivia (Plurinational State of)' should be 'Bolivia', 'Switzerland17' should be 'Switzerland'. Next, load the GDP data from the file world_bank.csv, which is a csv containing countries' GDP from 1960 to 2015 from World Bank. Call this DataFrame GDP. Make sure to skip the header, and rename the following list of countries: \"Korea, Rep.\": \"South Korea\", \"Iran, Islamic Rep.\": \"Iran\", \"Hong Kong SAR, China\": \"Hong Kong\" Finally, load the Sciamgo Journal and Country Rank data for Energy Engineering and Power Technology from the file scimagojr-3.xlsx, which ranks countries based on their journal contributions in the aforementioned area. Call this DataFrame ScimEn. Join the three datasets: GDP, Energy, and ScimEn into a new dataset (using the intersection of country names). Use only the last 10 years (2006-2015) of GDP data and only the top 15 countries by Scimagojr 'Rank' (Rank 1 through 15). The index of this DataFrame should be the name of the country, and the columns should be ['Rank', 'Documents', 'Citable documents', 'Citations', 'Self-citations', 'Citations per document', 'H index', 'Energy Supply', 'Energy Supply per Capita', '% Renewable', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015']. This function should return a DataFrame with 20 columns and 15 entries. and I am also attaching my code here too so please someone help me !! import pandas as pd from pandas import ExcelWriter from pandas import ExcelFile pd.set_option('display.max_columns', None) pd.set_option('display.max_rows', None) energy = pd.read_excel('Energy Indicators.xls') energy.drop(energy.columns[[0,1]],axis=1,inplace=True) energy.columns=['Country','Energy Supply','Energy Supply per Capita','% Renewable'] energy['Energy Supply']*=1000000 energy['Country'] = energy['Country'].str.replace(r\"\\(.*\\)\",\"\") energy['Country'] = energy['Country'].str.replace(\"[0-9()]+$\", \"\") missing_values = \"...\" missing = energy[energy['Country'].isnull()] #energy['Country'].str.strip() #energy['Country'] = energy['Country'].replace(r'[,\\\"\\']','', regex=True).replace(r'\\s*([^\\s]+)\\s*', r'\\1', regex=True) energy.replace('Republic of Korea','South Korea', inplace = True) energy.replace('United States of America','United States', inplace = True) energy.replace('United Kingdom of Great Britain and Northern Ireland','United Kingdom', inplace = True) energy.replace('China, Hong Kong Special Administrative Region','Hong Kong', inplace = True) print (energy['Country']) import pandas as pd GDP = pd.read_csv('world_bank.csv', index_col=0, header=None) GDP = GDP.drop(['Data Source']) GDP = GDP.dropna() GDP = GDP.reset_index() GDP.columns = GDP.iloc[0] GDP.drop(GDP.index[[0,3]], inplace=True) GDP = GDP.rename(columns={'Country Name': 'Country'}) GDP.replace(',','-', inplace=True) GDP = GDP.replace('Korea, Rep.','South Korea') GDP = GDP.replace('Iran, Islamic Rep.','Iran') GDP = GDP.replace('Hong Kong SAR, China','Hong Kong') import pandas as pd from pandas import ExcelWriter from pandas import ExcelFile pd.set_option('display.max_columns', None) pd.set_option('display.max_rows', None) ScimEn = pd.read_excel('scimagojr-3.xlsx') b = pd.merge(pd.merge(energy,GDP,on='Country'),ScimEn,on='Country') a = pd.merge(pd.merge(energy,GDP,on='Country'),ScimEn,on='Country') a = a.sort(['Rank'], ascending=[True]) a = a[a[\"Rank\"] < 16] a=a.rename(columns = {'2006.0':'abc'}) a.columns.values[53] = \"2006\" a.columns.values[54] = \"2007\" a.columns.values[55] = \"2008\" a.columns.values[56] = \"2009\" a.columns.values[57] = \"2010\" a.columns.values[58] = \"2011\" a.columns.values[59] = \"2012\" a.columns.values[60] = \"2013\" a.columns.values[61] = \"2014\" a.columns.values[62] = \"2015\" a = a[['Country', 'Rank', 'Documents', 'Citable documents', 'Citations', 'Self-citations', 'Citations per document', 'H index', 'Energy Supply', 'Energy Supply per Capita', '% Renewable', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015']] a = a.set_index('Country') def ans(): return a ans() by using this code i only able to get 10 rows instead of 15 , so need someone help to see where is the problem as i am not able to find it out thankyou ",
+            "date": "Answered March 17, 2017",
+            "views": "25",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Zefeng Jin",
+                    "user_href": "/profile/Zefeng-Jin"
+                },
+                {
+                    "user_id": "Sara Zz",
+                    "user_href": "/profile/Sara-Zz-2"
+                }
+            ]
+        }
+    ]
+}

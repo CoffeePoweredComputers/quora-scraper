@@ -1,0 +1,82 @@
+{
+    "title": "Are stochastic partial differential equations relevant in machine learning? - Quora",
+    "tags": [
+        "Partial Differential Equations",
+        "Differential Equations",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amal Agarwal",
+                "href": "/profile/Amal-Agarwal"
+            },
+            "answer_text": "If you count Deep Learning as a sub-field of Machine Learning then yes there is a \u201cdeeper\u201d connection shown recently, and PDEs are quite relevant! A recent paper in Neural Computation titled \u201cMachine Learning: Deepest Learning as Statistical Data Assimilation Problems\u201d by Abarbanel et al. [1] points out the connection between deep learning and PDEs like the Euler\u2013Lagrange equations, which have been used in statistical physics for similar problems. The paper first shows the correspondence between layer number in a feedforward artificial network setting and time in the statistical data assimilation setting. Therefore, the search of a global minimum of a cost functional, to optimize the weights in the network, can be translated to a data assimilation problem. In data assimilation problems, if you take the limit such that time becomes continuous, you will obtain a partial differential equation! Equivalently, the layers become continuous. The authors call this \u201cdeepest learning.\u201d The resulting Euler\u2013Lagrange equations turn out to be a two-point boundary value problem, which can be considered within the framework of variational methods. Known methods are likely to get stuck in local minima or saddle points and adding noise [2] can lead to much-improved solutions. Active research has been going on to include stochasticity in the above formulation, following which the original deep learning optimization problem will be hopefully reformulated as the study of a SPDEs. This will likely make all analysis techniques and numerical approximation methods in SPDEs readily available as mathematical tools in deep learning. References: [1] Abarbanel, Henry DI, Paul J. Rozdeba, and Sasha Shirman. \"Machine Learning; Deepest Learning as Statistical Data Assimilation Problems.\" Neural computation Early Access (2018): 1-31. [2] Lang, Annika. Simulation of stochastic partial differential equations and stochastic active contours. Diss. Universit\u00e4t Mannheim, 2007. ",
+            "date": "Answered October 14, 2018",
+            "views": "13",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Pasquale Ferrara",
+                    "user_href": "/profile/Pasquale-Ferrara"
+                },
+                {
+                    "user_id": "Thomas Rust",
+                    "user_href": "/profile/Thomas-Rust-1"
+                },
+                {
+                    "user_id": "O\u011fuz K\u0131rman",
+                    "user_href": "/profile/O\u011fuz-K\u0131rman"
+                },
+                {
+                    "user_id": "Milos Cipovic",
+                    "user_href": "/profile/Milos-Cipovic"
+                },
+                {
+                    "user_id": "Matthias Misiewicz",
+                    "user_href": "/profile/Matthias-Misiewicz-1"
+                },
+                {
+                    "user_id": "Ryan Brigden",
+                    "user_href": "/profile/Ryan-Brigden-1"
+                },
+                {
+                    "user_id": "Jeffrey Brender",
+                    "user_href": "/profile/Jeffrey-Brender"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Colleen Farrelly",
+                "href": "/profile/Colleen-Farrelly-1"
+            },
+            "answer_text": "Quite a bit, actually. SPDEs are particularly useful in a lot of machine learning applications to network data and graphs in general (heat flow, epidemic/information spread...). They are also commonly used in training algorithms like deep learning, where numerical methods need to be used for computing gradients and other high-dimensional mathematics. ",
+            "date": "Answered October 16, 2018",
+            "views": "812",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Joshua Siktar",
+                    "user_href": "/profile/Joshua-Siktar"
+                },
+                {
+                    "user_id": "Taimia Hussain",
+                    "user_href": "/profile/Taimia-Hussain-1"
+                },
+                {
+                    "user_id": "Jdleanne Jdleanne",
+                    "user_href": "/profile/Jdleanne-Jdleanne"
+                },
+                {
+                    "user_id": "Eric Lee Emerson",
+                    "user_href": "/profile/Eric-Lee-Emerson"
+                },
+                {
+                    "user_id": "Daniel Watkins",
+                    "user_href": "/profile/Daniel-Watkins-5"
+                }
+            ]
+        }
+    ]
+}

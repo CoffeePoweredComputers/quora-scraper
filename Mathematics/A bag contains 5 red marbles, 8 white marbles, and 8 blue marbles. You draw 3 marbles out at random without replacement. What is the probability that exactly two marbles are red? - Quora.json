@@ -1,0 +1,35 @@
+{
+    "title": "A bag contains 5 red marbles, 8 white marbles, and 8 blue marbles. You draw 3 marbles out at random without replacement. What is the probability that exactly two marbles are red? - Quora",
+    "tags": [
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christopher Pellerito",
+                "href": "/profile/Christopher-Pellerito"
+            },
+            "answer_text": "Straightforward application of the hypergeometric distribution here. There are 5C2 = 10 ways to have two red marbles.There are 16C1 = 16 ways to have one non-red marble.There are 21C3 = 1330 ways to pull three marbles total. So the probability is 160/1330 = .12030075\u2026. Let\u2019s check our work in Excel:=HYPGEOM.DIST(2,3,5,21,FALSE)=0.12030075\u2026\u2026. ",
+            "date": "Answered October 23, 2018",
+            "views": "56",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Henk Brozius",
+                    "user_href": "/profile/Henk-Brozius"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dan Reinhart",
+                "href": "/profile/Dan-Reinhart-1"
+            },
+            "answer_text": "red/red/non-red = 5/21 x 4/20 x 16/19 = 320/7980 = .04010025 non-red/red/red = 16/21 x 5/20 x 4/19 = 320/7980 = .04010025 red/non-red/red = 5/21 x 16/20 x 4/19 = 320/7980 = .04010025 So 3 x .04010025 = .12030075 = Slightly greater than a 12% chance of getting any combination of 3 red and one non-red marble. ",
+            "date": "Answered June 23, 2020",
+            "views": "740",
+            "upvotes": "0"
+        }
+    ]
+}

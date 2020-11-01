@@ -1,0 +1,99 @@
+{
+    "title": "What makes OLED displays more energy efficient than LCD displays? - Quora",
+    "tags": [
+        "OLED Displays",
+        "Liquid-Crystal Display (LCD)",
+        "Display Technologies",
+        "Energy Efficiency"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sid Hazra",
+                "href": "/profile/Sid-Hazra"
+            },
+            "answer_text": "Richard Cox\u2019s answer is correct, but in a kinda, sorta way. It is accurate to say that it takes less energy to draw light out from a single OLED pixel than an equivalent LCD pixel. But any claim that OLED displays are in general more energy efficient is really a marketing claim. There are things that need to be done to solve OLED lifetime issues that you don\u2019t need to do with LC panels - that adds costs in power as wells as system complexity. At high brightness levels, OLEDs literally suck, but LC panels are far more robust. And modern LC panels can also be more efficient per unit joule with modern solid state lighting and zone based backplanes. For example, Samsung\u2019s flagships with their SAM OLEDs didn\u2019t really create any breakthroughs in terms of longer battery lifes per charge. Where did all that efficiency go? Don\u2019t get me wrong - OLEDs are the only way atm to achieve the kind of contrast ratios, overall displays specs etc, that they do. But the claim of \u2018energy efficiency\u2019 is not a hard technology claim and is specious without understanding the system environment or architecture. ",
+            "date": "Answered October 18, 2018",
+            "views": "23",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Marc Boutet",
+                    "user_href": "/profile/Marc-Boutet"
+                },
+                {
+                    "user_id": "Dark Titan",
+                    "user_href": "/profile/Dark-Titan-3"
+                },
+                {
+                    "user_id": "Rajnish Kumar",
+                    "user_href": "/profile/Rajnish-Kumar-1341"
+                },
+                {
+                    "user_id": "Jenin Jose",
+                    "user_href": "/profile/Jenin-Jose-1"
+                },
+                {
+                    "user_id": "Matthew Andress",
+                    "user_href": "/profile/Matthew-Andress-1"
+                },
+                {
+                    "user_id": "Alexander Lee",
+                    "user_href": "/profile/Alexander-Lee-\u6885\u6cbb-\u65b0\u592a"
+                },
+                {
+                    "user_id": "Debopam Bose",
+                    "user_href": "/profile/\u09a6\u09c7\u09ac\u09cb\u09aa\u09ae-\u09ac\u09cb\u09b8-Debopam-Bose"
+                },
+                {
+                    "user_id": "Keaton Mustard",
+                    "user_href": "/profile/Keaton-Mustard"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Huang ZheYu",
+                "href": "/profile/Huang-ZheYu"
+            },
+            "answer_text": "Theoretically, yes. The simpler reason is that LCD does not emit the lights itself, but acts like a curtain that throttles the lights emitted from the backlight. Because the power supplied by the backlight remains the same, whatever the image is displayed, the power consumption remains unchanged. OLED OTOH emits lights itself, so the intensity of each pixel can be modulated by simply varying the power output. As a result, the darker portion of the image consumes less power than the brighter portion. But that's far from the whole story. To better understand it we need to delve into their underlying mechanisms. Let's first understand how LCD works. The LCD panel looks like a semitransparent film, which can become clearer or darker in response to the voltage applied. The key component is a liquid crystal layer sandwiched between two polarizers. Polarizers are made of a special material, which allows lights of parallel polarization to pass though, while blocking lights of perpendicular polarization (lights in between are partially absorbed). The liquid crystal does not absorb any lights, but rotates their polarization direction by a certain angle, which is dependent on the voltage applied. So by varying the voltage, we can change the polarization angle, thereby controlling how much light passes through.   But here comes a problem: for LCD to work, the incoming lights should be polarized as well, as nonpolarized lights rotated by liquid crystal are still nonpolarized. However, except for lasers, most light sources are nonpolarized, which always have equal amount of parallel and perpendicular components, so another polarizer must be placed to filter out lights of one polarization, while leaving another polarization alone. As a result, LCD panels are 50% transparent at most. That's why LCD panels always look greyish, but never as clear as glass. Another problem is that LCD panel alone can't yield a colored image, as LCD has no color. It can either become clearer or darker, but never become red, green or blue. To achieve an RGB color output, each pixel is divided into three RGB subpixels. A color filter is placed at each subpixel to filter out two colors, leaving only red, green or blue light. The LCD modules control each subpixel independently, thereby yielding a combined color of each pixel.  So as we can see, the energy loss in LCD devices is huge. The color filters filtered 2/3 of the energy, while the polarizer filtered half of the remaining, which means at least 5/6 of the lights from the backlight are wasted. OLED OTOH doesn't have such problem, as OLED doesn't require the LCD, hence there\u2019s no polarizer loss. OLED doesn't need color filters either, as each subpixel can be made to emit only red, green or blue lights, thereby eliminating the filter loss. So OLED is theoretically at least 6 times more efficient than LCD. However, by theoretical I mean such difference is much less dramatic in reality. The white LED bulbs used as the backlight are highly efficient. In contrast, OLED although being named as \u201cLED\u201d (O stands for organic), has a much poorer efficiency, which almost offset its advantages. Another thing is that large OLED panels like televisions still require color filters, as direct patterning of OLED still suffers from a higher failure rate. Moreover, LCD is also improving, as recent products have used quantum dots to replace the filters, which enhanced the energy efficiency as well as color performance.  ",
+            "date": "Updated September 21, 2019",
+            "views": "34",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Naveen Bharathi",
+                    "user_href": "/profile/Naveen-Bharathi-17"
+                },
+                {
+                    "user_id": "POLIMERA VENKATA SAI TANUJ 1913018",
+                    "user_href": "/profile/POLIMERA-VENKATA-SAI-TANUJ-1913018"
+                },
+                {
+                    "user_id": "Navneeth Subramanian",
+                    "user_href": "/profile/Navneeth-Subramanian"
+                },
+                {
+                    "user_id": "Liam Gillis",
+                    "user_href": "/profile/Liam-Gillis"
+                },
+                {
+                    "user_id": "Dark Titan",
+                    "user_href": "/profile/Dark-Titan-3"
+                },
+                {
+                    "user_id": "Harshvardhan Mishra",
+                    "user_href": "/profile/Harshvardhan-Mishra"
+                },
+                {
+                    "user_id": "Raja Manivas Vennapu",
+                    "user_href": "/profile/Raja-Manivas-Vennapu"
+                },
+                {
+                    "user_id": "Tirumalai Kamala",
+                    "user_href": "/profile/Tirumalai-Kamala"
+                }
+            ]
+        }
+    ]
+}

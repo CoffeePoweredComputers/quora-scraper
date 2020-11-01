@@ -1,0 +1,42 @@
+{
+    "title": "How does Rust eliminate race conditions? - Quora",
+    "tags": [
+        "Race Conditions",
+        "Rust (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jack O'Connor",
+                "href": "/profile/Jack-OConnor"
+            },
+            "answer_text": "It's worth adding to User-13501526829375066160's answer, that Rust doesn't prevent all types of race conditions. It specifically prevents \"data races\", where two threads are accessing the same piece of data in memory in an unsafe way. There are many other kinds of race conditions that Rust can't prevent. If two threads are both printing to stdout for example, the order of their output could be a race condition, depending on whether it matters to the user. ",
+            "date": "Answered July 31, 2015",
+            "views": "15",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ian Warburton",
+                    "user_href": "/profile/Ian-Warburton-1"
+                },
+                {
+                    "user_id": "Archis Gore",
+                    "user_href": "/profile/Archis-Gore"
+                },
+                {
+                    "user_id": "Dmitry Tsarevich",
+                    "user_href": "/profile/Dmitry-Tsarevich"
+                },
+                {
+                    "user_id": "Steve Klabnik",
+                    "user_href": "/profile/Steve-Klabnik"
+                },
+                {
+                    "user_id": "Eduardo Apolinario",
+                    "user_href": "/profile/Eduardo-Apolinario"
+                }
+            ]
+        }
+    ]
+}

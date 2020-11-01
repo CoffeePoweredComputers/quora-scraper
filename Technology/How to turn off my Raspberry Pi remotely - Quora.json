@@ -1,0 +1,40 @@
+{
+    "title": "How to turn off my Raspberry Pi remotely - Quora",
+    "tags": [
+        "Raspberry Pi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrew Silverman",
+                "href": "/profile/Andrew-Silverman-10"
+            },
+            "answer_text": "The Raspberry Pi series have no means of completely turning off all power without additional external hardware, since the power supply is not part of what you get when you buy one. There is therefore no standard means of signaling to an external power supply to shut off from a software initiated command. When a shutdown is performed, the OS shuts down cleanly, but the board just goes into a low power state and stays there indefinitely until power is actually removed and restored in order to start the boot sequence again. That said, there are a variety of add-ons out there which will use the GPIO pins to send signals to an external device which can control a power supply and force the Pi to turn off at a safe point in the shutdown sequence. Of course, having done so, some local physical action is usually required to boot it again. ",
+            "date": "Answered July 5, 2020",
+            "views": "83",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rishabh Tomar",
+                "href": "/profile/Rishabh-Tomar-17"
+            },
+            "answer_text": "If you have a telnet or an ssh connection, then you are having a terminal in front of you.You can just do poweroff\u00a0if logged in via root or sudo poweroff\u00a0if logged in via a sudo account. But remember to run this command while testing only, if you are doing some serious stuff, pi won\u2019t bother to power itself off after these command. So just be aware. Keep learning \ud83d\ude0a ",
+            "date": "Answered July 5, 2020",
+            "views": "40",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        }
+    ]
+}

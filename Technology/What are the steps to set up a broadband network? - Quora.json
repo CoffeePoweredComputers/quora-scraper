@@ -1,0 +1,27 @@
+{
+    "title": "What are the steps to set up a broadband network? - Quora",
+    "tags": [
+        "Broadband Networks",
+        "Mobile Broadband",
+        "Broadband",
+        "Internet Service Providers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Dickens",
+                "href": "/profile/Michael-Dickens-5"
+            },
+            "answer_text": "First, what do you mean by \u201cbroadband network\u201d? Do you mean like hosting a broadband service (ISP) or setting up your broadband service? If you mean hosting your own ISP, you would need quite a bit for it to even be feasible, you would need multiple servers, multiple routers, some sort of cable plant (distribution lines to customers) unless it\u2019s a wireless ISP As for setting up a broadband service, it would depend on the ISP\u2026 You need to call an ISP to initiate service, for many ISPs, that\u2019s all you need to do, they will send over an installer that will install their modem and get the service up and runningIf the ISP doesn\u2019t do the install, assuming you already have a live signal from the ISP (like if you already have cable TV from a cable ISP or landline phone service from your phone company), they will usually enable your internet service and send you a modem (or give you a list of compatible modems you can go out and buy)Once you have your modem, connect it to the appropriate connection, if it\u2019s cable, connect the cable modem to a coax cable TV Jack on your wall, if it\u2019s DSL, connect the modem to your phone line and install the required filters on your phones, connect the modem to power, for some ISPs and modems, that may be all that\u2019s required, just connect a PC (either Ethernet or Wi-Fi) to it and open a web browser, it should redirect to the setup page automatically if required and you\u2019ll be onlineIf your ISP requires you call in to initiate service, call the number (usually automated), and provide pertinent information, your modem should now be online and communicating with the ISP (check the link lights to see if the modem is online), you may need to log into your modem by typing the modem\u2019s IP address into your web browser and type in your ISP information on the webpage, some modems don\u2019t have a built-in router, if you plan on only connecting one computer, this is fine, but keep in mind that if you don\u2019t have a router, your computer is more susceptible to attacks due to the lack of a firewall or NAT, it is preferred you install a software firewall like ZoneAlarmIf you plan to connect multiple computers to your modem and your modem doesn\u2019t have a built-in router, you will need to purchase one separately, a router uses NAT (Network Address Translation) to separate networks allowing you to set multiple local IPs using one ISP IP, this also gives you a layer of security like a firewall as ports (except for widely used ports like port 80 for internet traffic) are usually blocked unless specifically opened for forwarded, most routers also contain a DHCP server, which will assign dynamic IPs automaticallyKeep in mind a router is not \u201cWi-Fi\u201d or a \u201chub/switch\u201d, it simply separates networks allowing multiple connections over one ISP IP, all SOHO (small office/home office) routers will include a built-in 4 port switch and some (not all) will include built-in Wi-Fi, if that\u2019s all you need a simple Wi-Fi router will work fineIn a situation where you need to connect more wired devices than 4 or your Wi-Fi range doesn\u2019t go as far as you would like, you will need a switch and/or a WAP (wireless access point), don\u2019t get switch confused with router, a router is simply a network separator, a switch gives you more Ethernet ports to connect to, a WAP is a wireless bridge, it converts Ethernet to Wi-Fi and serves as a Wi-Fi switch of sorts and can be placed anywhere you wantAfter all that is set up, finally comes configuration, each component (Modem, router, WAPs) should include a configuration/setup page, simply type in the IP of the given device in a web browser and a webpage should come up allowing you to change settings like SSID (Wi-Fi name) and password, ISP information, forward or open ports if needed, check the status of your connection and many other things",
+            "date": "Answered February 22, 2018",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Avadhut Patil",
+                    "user_href": "/profile/Avadhut-Patil-50"
+                }
+            ]
+        }
+    ]
+}

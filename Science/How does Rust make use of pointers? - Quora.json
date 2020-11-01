@@ -1,0 +1,66 @@
+{
+    "title": "How does Rust make use of pointers? - Quora",
+    "tags": [
+        "Rust (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matej \u013dach",
+                "href": "/profile/Matej-\u013dach"
+            },
+            "answer_text": "To understand how does Rust make use of pointers, it is useful to first understand how/why are pointers being used in general and then how does Rust improve on them. In programming languages, there are two general models of storing/accessing objects in memory - by value or by reference. The \"by value\" model is generally used by the more traditional languages, such as C, where all allocations default on the stack, unless the programmers allocates memory on the heap explicitly ie by calling `malloc()`.The stack is very efficient but quite small in size, (cca 8MB default on Linux) and not good for storing global/long-living objects that are to be passed between functions.This is why for anything that is not local function data, we tend to use the heap, a much larger, free store for any of our data structures and such.  The problem is that, were we to use the \"copy by value\" model for objects stored on the heap, that would mean that when passing things around to functions as parameters, we would have to copy the large data structures around each time, which besides the inneficiency with copyting the same bits over and over that it would introduce, it would also have the potential of blowing up the stack if our heap object cannot fit onto the stack. So to solve this problem, the \"reference\" model comes into play, which is the default for most functional and scripting languages. In this model, when you want to pass an object tha's on the heap to a function, you simply \"point to\" its memory location with a local variable that is very cheap. In languages such as C, where the default is \"pass by value\", but we also need to manage the heap and so use references, the concept of a reference is what pointer means. This concept of \"pointers\" is very, very useful, but turned out to be also quite a headache to deal with.  Specifically, it is often not explicitly clear which local variable is responsible for de-allocating the memory occupied by a heap object. It may seem clear that it is the one who originally requested that chunk of heap memory to be allocated for the object it then wants to point to, however since pointers are very often passed around to other functions that did not originally \"create\" them, the owner question becomes harder to answer and keep track of.  As such, C programmers would often create a pointer in one function, pass it around to another temporarily, forget in the meantime, (or team-members would not realize) , that the function that borrowed the pointer doesn't own it, free the heap memory in the borrowee function and when the original function wants to use that pointer again later on, there's nothing to use, since the pointer now points to free memory, whoops! Rust uses pointers much to the same purpose as C does, but improves on the semantics and safety of using them, Specifically, we have an explicit notion of an \"owner\", it's the variable that allocated the object on the heap. If you pass it around, you're also passing the \"ownership\" around, ie if you pass a handle to an object to another function, it is now that other function's responsibility to de-allocate that object, but the original function can no longer use that original variable, because it may contain garbage! This is called \"move semantics\" and it expressess the notion that there can be only a single owner of a heap object, who is solely responsible for de-allocating it when it is no longer needed. (Strictly speaking, this notion also applies to the stack, unless the types implement the Copy trait, in which case they are copied in full, rather than moved, when assigned to a new binding or passed into a function, which is the case for all primitive types, like i32, which are cheap enough to copy around -- but it is easier to explain the cincept using the heap). Sometimes, a function doesn't need full ownership of a resource, it only wants it for a while to ie read it, or modify it and then return it back to its original owner. This cincep is called \"borrowing\" and works hand in hand with \"ownership\" to achieve Rust's pointer safety, despite the fact that C and Rust pointers are the exact same under the hood, used for the exact same purposes.  For how all this translates to code, see: Matej \u013dach's answer to What does Rust do best, and what are projects for someone new to the language that highlights these strengths? ",
+            "date": "Answered December 1, 2015",
+            "views": "2",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lance Pollard",
+                    "user_href": "/profile/Lance-Pollard"
+                },
+                {
+                    "user_id": "\u00c1lex LR",
+                    "user_href": "/profile/\u00c1lex-LR"
+                },
+                {
+                    "user_id": "Arbab Khan",
+                    "user_href": "/profile/Arbab-Khan-34"
+                },
+                {
+                    "user_id": "Denis Baltor",
+                    "user_href": "/profile/Denis-Baltor"
+                },
+                {
+                    "user_id": "Behnam Esfahbod",
+                    "user_href": "/profile/Behnam-Esfahbod"
+                },
+                {
+                    "user_id": "C\u0103t\u0103lin Moraru",
+                    "user_href": "/profile/C\u0103t\u0103lin-Moraru-1"
+                },
+                {
+                    "user_id": "Soeng Kanel",
+                    "user_href": "/profile/Soeng-Kanel"
+                },
+                {
+                    "user_id": "Laurent Delpoux",
+                    "user_href": "/profile/Laurent-Delpoux"
+                },
+                {
+                    "user_id": "Frank Edward Daza Gonz\u00e1lez",
+                    "user_href": "/profile/Frank-Edward-Daza-Gonz\u00e1lez"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Supreet Patra",
+                "href": "/profile/Supreet-Patra"
+            },
+            "answer_text": "Rust is a general-purpose, multi-paradigm, compiled programming language developed by Mozilla Research.[12] It is designed to be a \"safe, concurrent, practical language\",[13][14] supporting pure-functional, concurrent-actor[dubious \u2013 discuss][citation needed], imperative-procedural, and object-oriented styles.The language grew out of a personal project by Mozilla employee Graydon Hoare. Mozilla began sponsoring the project in 2009[15] and announced it for the first time in 2010.[16] The same year, work shifted from the initial compiler(written in OCaml) to the self-hosting compiler written in Rust.[17] Known as rustc, it successfully compiled itself in 2011.[18] The self-hosted compiler uses LLVM as its back end.The first numbered pre-alpha release of the Rust compiler occurred in January 2012.[19] Rust 1.0, the first stable release, was released on May 15, 2015.[1]Rust is developed entirely in the open and solicits feedback and contributions from the community. The design of the language has been refined through the experiences of writing the Servo[20] layout engine and the Rust compiler. Although its development is sponsored by Mozilla, it is a community project. A large portion of current commits are from community members.[21] ",
+            "date": "Answered July 29, 2015",
+            "views": "442",
+            "upvotes": "0"
+        }
+    ]
+}

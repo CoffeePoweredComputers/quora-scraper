@@ -1,0 +1,58 @@
+{
+    "title": "How to store and retrieve data in Angular 4 - Quora",
+    "tags": [
+        "Angular 2/4/5",
+        "AngularJS",
+        "Data Recovery Solutions"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Adhikari Krishna",
+                "href": "/profile/Adhikari-Krishna"
+            },
+            "answer_text": "It's the same as every FrontEnd does. Use localStorage or Session storage. There is an NPM module which can help you out. ngx-webstorage . There are other modules out there, but this is going to support future versions of Angular as per the modules documentation. Import the modules class into the app.module.ts file and your component where you want to access the ngx-webstorage. You can access the stored variables or data along the different components throughout the application. The documentation is good enough to help you out. If you want to \u2026below is the sample code to understand it's simplicity. PS: This code is an edited version from the documentation itself. import {Component} from '@angular/core';\u00a0import {LocalStorageService} from 'ngx-webstorage';\u00a0 \u00a0@Component({\u00a0    selector: 'foo',\u00a0    template: `\u00a0        <div></div>\u00a0    `,\u00a0})\u00a0export class FooComponent {\u00a0 \u00a0    attribute;\u00a0 \u00a0    constructor(private storage:LocalStorageService) {}\u00a0\u00a0//Store method stores/saves your data\u00a0this.storage.store('key', this.attribute);\u00a0\u00a0//retrieve method helps you access the value stored, don't forget to use the string that you stored the value with\u00a0\u00a0 this.storage.retrieve('key');\u00a0}\u00a0",
+            "date": "Answered February 21, 2018",
+            "views": "7",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Muthukrishnan",
+                    "user_href": "/profile/Muthukrishnan-10"
+                },
+                {
+                    "user_id": "Jeet Poria",
+                    "user_href": "/profile/Jeet-Poria"
+                },
+                {
+                    "user_id": "Sandeep Nutalapati",
+                    "user_href": "/profile/Sandeep-Nutalapati-1"
+                },
+                {
+                    "user_id": "Srinivasan G",
+                    "user_href": "/profile/Srinivasan-G-4"
+                },
+                {
+                    "user_id": "Swarnim Bhardwaj",
+                    "user_href": "/profile/Swarnim-Bhardwaj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hardik Pithva",
+                "href": "/profile/Hardik-Pithva-1"
+            },
+            "answer_text": "There are many libraries available for storing and retrieving data as mentioned in other answers. I would suggest it depends on your use case, you can approach for native Web Storage API or Client-Side Storage - HTML5 Rocks. However, if it\u2019s more of UI state management in your app then I recommend introducing NgRx in the app for storing and retrieving the state of the app, otherwise native storge window.localStorage or Window.sessionStorage or IndexedDB API would also be okay to use. ",
+            "date": "Answered September 14, 2018",
+            "views": "39",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Jignesh Panchal",
+                    "user_href": "/profile/Jignesh-Panchal-116"
+                }
+            ]
+        }
+    ]
+}

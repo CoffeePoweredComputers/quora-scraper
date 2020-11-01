@@ -1,0 +1,34 @@
+{
+    "title": "How to place an image over text in HTML and CSS or any tools - Quora",
+    "tags": [
+        "HTML and CSS",
+        "CSS3",
+        "HTML5",
+        "Cascading Style Sheets",
+        "HTML",
+        "Web Design",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Peter Mueller",
+                "href": "/profile/Peter-Mueller-10"
+            },
+            "answer_text": "My first question would be why are you putting an image over text? Unless you have a transparency on the image of some kind, your text will not show up and there\u2019s not point. My second question is what do you mean by \u201cor any tools?\u201d If you are putting this on a website, HTML and CSS are your only tools for this. Well, you could use other languages to do it but technically HTML and CSS will be the languages used. But to directly answer your question: The best option is to use CSS positioning. Make sure your parent container has a position:relative; on it and then you will put a position:absolute; on your image. With top, bottom, left, and right you can position the image where ever you want. If you use a Web Developer tool in your browser, you can easily visually see where the position is as you change the CSS numbers. You also will want to put a z-index:1; on your image to make sure it is on top of the text. If the image doesn\u2019t show up on top, you can put a position:relative; and z-index:0; on your text. That will ensure the image is on top. Below is some example code: <style>\u00a0\tdiv#parentContainer { padding:50px; position:relative; }\u00a0\tp#textToBeCovered { color:green; font-size:30px; position:relative; z-index:0; }\u00a0\timg#imageOnTop { background-color:rgba(0,0,0,.7); height:120px; left:5px; position:absolute; top:5px; width:150px; z-index:1; }\u00a0</style>\u00a0\u00a0<div id=\"parentContainer\">\u00a0\t<p id=\"textToBeCovered\">I'm going to be covered up by an image.</p>\u00a0\t<img id=\"imageOnTop\" src=\"../path/to/yourImage.png\" alt=\"top image\" />\u00a0</div>\u00a0I added some extra styles so you can directly paste this into an html page and see it in a browser. ",
+            "date": "Answered May 30, 2019",
+            "views": "22",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rajat Parashar",
+                "href": "/profile/Rajat-Parashar-1"
+            },
+            "answer_text": "Hi there, Well I don\u2019t find use of putting a image over a text(unless you want image to be transparent or text over image). However, it is also acheivable, but it\u2019d be better if the question was \u201cHow can I place text over an image\u201d. I\u2019ve written a simple piece of code. It\u2019s right there below. <!DOCTYPE html>\u00a0<html>\u00a0<head>\u00a0 <meta charset=\"utf-8\">\u00a0 <title>CSS</title>\u00a0 <style> \u00a0 h1 {\u00a0 position: absolute;\u00a0 top: 100px;\u00a0 z-index: -1;\u00a0 } \u00a0 img {\u00a0 opacity: 0.7;\u00a0 } \u00a0 </style>\u00a0</head>\u00a0<body>\u00a0 <div>\u00a0 <h1>That is my some text XYZ.</h1>\u00a0 <img src=\"https://www.w3schools.com/html/img_chania.jpg\" width=\"30%\">\u00a0 </div>\u00a0</body>\u00a0</html>\u00a0Below is the attached screenshot of this code.  Hope it helps. Happy Learning.!! ",
+            "date": "Answered July 14, 2019",
+            "views": "12",
+            "upvotes": "0"
+        }
+    ]
+}

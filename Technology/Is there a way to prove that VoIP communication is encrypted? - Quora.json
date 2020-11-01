@@ -1,0 +1,53 @@
+{
+    "title": "Is there a way to prove that VoIP communication is encrypted? - Quora",
+    "tags": [
+        "VoIP Software and Services",
+        "VoIP"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matt Martin",
+                "href": "/profile/Matt-Martin-161"
+            },
+            "answer_text": "Depending on the handset or software you are using to make/receive the calls it is common for an indicator that the call is secured with, for example, a lock icon.  Some softphones also have a \u201ccall details\u201d view when on-call that will show the connection type in and protocols used. From a more technical stand point you can use Wireshark as mentioned to view the packets in Real-time if you know what you\u2019re looking for. These packets will be marked by TLS headers as well as the audio will not be captures by the packet sniff. For more info on how to do this and what the difference in packets looks like you can read on through this article; Encrypting SIP Using TLS & SRTP - A Look With Wireshark (there\u2019s also a video walk-through on Youtube). ",
+            "date": "Answered November 8, 2017",
+            "views": "182",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ameed Jamous",
+                    "user_href": "/profile/Ameed-Jamous-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Itzik Kotler",
+                "href": "/profile/Itzik-Kotler"
+            },
+            "answer_text": "VoIP is a group of technologies, some are network protocols that if configured can use encryption or tunneled over an encrypted protocol. There\u2019s an easy way to test if it\u2019s one or the other, running a sniffer (i.e. Wireshark) and capturing the traffic will let you know if it\u2019s encrypted or not. ",
+            "date": "Answered November 6, 2017",
+            "views": "117",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Faiz Ul Islam",
+                    "user_href": "/profile/Faiz-Ul-Islam-7"
+                },
+                {
+                    "user_id": "Ameed Jamous",
+                    "user_href": "/profile/Ameed-Jamous-2"
+                },
+                {
+                    "user_id": "Back Space",
+                    "user_href": "/profile/Back-Space-12"
+                },
+                {
+                    "user_id": "Shalahuddin Ahmad",
+                    "user_href": "/profile/Shalahuddin-Ahmad"
+                }
+            ]
+        }
+    ]
+}

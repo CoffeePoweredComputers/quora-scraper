@@ -1,0 +1,90 @@
+{
+    "title": "How to understand mean and variance of the sample mean - Quora",
+    "tags": [
+        "Variance (statistics)",
+        "Sampling (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "I want to post a more general answer on the off chance that a newer stats student stumbles on this question.  I suspect parts of this answer are already well-known to you. The first thing to understand is that the SAMPLE MEAN  is, itself, a random variable (just like the individual  are random variables).  Since the sample mean is a random variable, it has a distribution.  (Recall that to say something has a distribution is to say that it has a set of possible values and some measure of how likely those values are to occur -- probably a density function or a probability mass function if this is your first course on the subject.) Since the sample mean has a distribution, it's reasonable to wonder what the \"middle\" of that distribution is.  The most common description of the middle is the expected value.  Confusingly the expected value is ALSO CALLED THE MEAN!?!?, but don't confuse this use of the word mean with the sample mean as they are COMPLETELY different kinds of things.  (The sample mean is a random variable that can take on many different possible values depending on the data.  The expected value is always just a fixed number you need to calculate -- perhaps by doing some integral or summation -- and is not at all random.) OK, so we know the sample mean is a random variable.  We want to find the middle (i.e. the expected value / the mean) of its distribution.  Normally, to find the expected value, we have to integrate the density function multiplied by x (or sum the mass function multiplied by x).  (From this point, I'll just assume the continuous case.)  But of course to do that, we'd have to first FIGURE OUT the density of .  That seems like a lot of work.  Is it necessary? Thankfully, the answer is no.  The basic rules of expectation allow us to quickly and easily conclude what the answer is, and thankfully, that answer is the only possible answer that could ever make sense.  Unfortunately, right when you are about to understand what's going on, you run right back into the same brick wall caused by the ambiguity in the word mean. The mean of the sample mean is the population mean.   I firmly believe that this single sentence is why so many students hate their first stats course.  What kind of sadist uses the same word to talk about three different things?  Here's the same idea made a little easier... The expected value of the random variable  is the number, , which happens to be exactly the same number that is the expected value of each of the individual random variable data points () that were sampled from the population. In other words, the \"middle\" value of the sample mean's distribution agrees with the \"middle\" value of the population distribution.  How could it be otherwise?  If the average IQ in the world is 100 and if we randomly select 25 people and average their IQs, how could we expect to get an average that is higher than 100?  (Of course, sometimes the average will be higher and sometimes it will be lower because the 25 people were chosen at random.  But we shouldn't EXPECT it to be one way or the other - we should expect it to agree with the average IQ in the world, 100.) So that's good news, we don't have to try to do some intricate calculation to learn what is almost obvious intuitively.  We know without finding the density of  what its expected value is.  What's the next most reasonable question to ask about a distribution once we know its expected value?  Next, we probably want to know what is the variance of ?   Maybe now we need to do the hard work of finding the density of  and do the integration, after all, that's the most basic way to find a variance.  Or maybe, we'll get lucky and learn (as we just did with the expected value) that the variance of the sample mean is the same as the variance of the population?  Actually, neither is right.  Once again, we are saved by the properties of expectation to avoid a difficult calculation.  It isn't hard to show that: The variance of the sample mean is the variance of the population divided by the sample size.  (People usually denote the population variance as .) While this exact result isn't necessarily one you'd guess immediately, it should make REALLY good sense once you understand what it tells you.  It says that as you average more and more people, the distribution of  gets narrower and narrower.  In other words, the density becomes more and more peaked around the \"middle\" value (i.e. the number ).    Not only do we know that the sample mean has its distribution centered where it should be at ; now, we also know that with more and more data, the chances of getting an answer very far away from  grow vanishingly small.  The law of large numbers just tells us that with infinitely much data, the random variable  would cease to be random.  ALL the probability would be concentrated at  because that    would converge to zero. ",
+            "date": "Answered August 6, 2014",
+            "views": "33",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Rising",
+                    "user_href": "/profile/Justin-Rising"
+                },
+                {
+                    "user_id": "Mbuso Mbambo",
+                    "user_href": "/profile/Mbuso-Mbambo-1"
+                },
+                {
+                    "user_id": "Chang Liu",
+                    "user_href": "/profile/Chang-Liu-362"
+                },
+                {
+                    "user_id": "Wei Han",
+                    "user_href": "/profile/Wei-Han-56"
+                },
+                {
+                    "user_id": "Aditya Prasad",
+                    "user_href": "/profile/Aditya-Prasad-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Tharrmashastha-SAPV"
+                },
+                {
+                    "user_id": "Abu",
+                    "user_href": "/profile/Abu-47"
+                },
+                {
+                    "user_id": "Xia Liu",
+                    "user_href": "/profile/Xia-Liu-15"
+                },
+                {
+                    "user_id": "Abby Markazer",
+                    "user_href": "/profile/Abby-Markazer"
+                },
+                {
+                    "user_id": "Beichen Jiang",
+                    "user_href": "/profile/Beichen-Jiang-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Justin Ma",
+                "href": "/profile/Justin-Ma"
+            },
+            "answer_text": "This is how I've taught it, and how I first understood it intuitively.  It helps some: Here's the thought experiment: Take a population distribution.  If your sample size n is equal to the entire population, what will be the sample mean?  It will be the population mean.  And the only number you get will be the population mean.  That's the distribution of the sample mean of maximum size.  So the variance is zero. Take the same population distribution.  If your sample size is 1, what will be the sample mean?  Well, it'll change every time.  It will vary, a lot - as much as the population distribution.  What distribution are you drawing from?  You're drawing from the population distribution.  So the sample mean of sample size 1 is the same as drawing a random observation from the population distribution.  And the variance of the sample mean will be the population variance. So now that we've established the two extremes, what's left?  Well, we'll know it'll be something in between.  At that point, you want to go to the math, and I'd follow Michael Lamar's excellent answer. ",
+            "date": "Answered August 6, 2014",
+            "views": "11",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wei Han",
+                    "user_href": "/profile/Wei-Han-56"
+                },
+                {
+                    "user_id": "Beichen Jiang",
+                    "user_href": "/profile/Beichen-Jiang-1"
+                },
+                {
+                    "user_id": "Jason Chaw",
+                    "user_href": "/profile/Jason-Chaw"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

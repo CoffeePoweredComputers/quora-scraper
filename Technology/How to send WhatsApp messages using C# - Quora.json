@@ -1,0 +1,129 @@
+{
+    "title": "How to send WhatsApp messages using C# - Quora",
+    "tags": [
+        "C# (programming language)",
+        "Mobile Application Development",
+        "WhatsApp (product)",
+        "Text Messaging"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rahul Singh",
+                "href": "/profile/Rahul-Singh-4654"
+            },
+            "answer_text": "Sending WhatsApp Message Through .NET Application by Using C# Coding C# Coding C# Coding : Namespace using System;\u00a0using System.Collections.Generic;\u00a0using System.ComponentModel;\u00a0using System.Data;\u00a0using System.Drawing;\u00a0using System.Linq;\u00a0using System.Text;\u00a0using System.Windows.Forms;\u00a0using WhatsApp_Application;\u00a0using WhatsAppApi;\u00a0C# Coding : To Send WhatsApp Message namespace WhatsApp_Application\u00a0{\u00a0    public partial class Form1 : Form\u00a0    {\u00a0        public Form1()\u00a0        {\u00a0            InitializeComponent();\u00a0        }\u00a0\u00a0        private void btn_send_Click(object sender, EventArgs e)\u00a0        {\u00a0            string from = \"9199876543210\"; //(Enter Your Mobile Number)\u00a0            string to = txt_to.Text;\u00a0            string msg = txt_msg.Text;\u00a0            WhatsApp wa = new WhatsApp(from, \"WhatsAppPassword\", \"NickName\", false, false);\u00a0            wa.OnConnectSuccess += () =>\u00a0            {\u00a0                MessageBox.Show(\"Connected to WhatsApp...\");\u00a0                wa.OnLoginSuccess += (phonenumber, data) =>\u00a0                    {\u00a0                        wa.SendMessage(to, msg);\u00a0                        MessageBox.Show(\"Message Sent...\");\u00a0                    };\u00a0                wa.OnLoginFailed += (data) =>\u00a0                    {\u00a0                        MessageBox.Show(\"Login Failed : {0} : \", data);\u00a0                    };\u00a0\u00a0                wa.Login();\u00a0            };\u00a0            wa.OnConnectFailed += (Exception) =>\u00a0                {\u00a0                    MessageBox.Show(\"Connection Failed...\");\u00a0                };           \u00a0        }\u00a0    }\u00a0}\u00a0",
+            "date": "Answered December 21, 2016",
+            "views": "193",
+            "upvotes": " View 24 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Disha Bisht",
+                    "user_href": "/profile/Disha-Bisht-2"
+                },
+                {
+                    "user_id": "Lasindu Nuwanga",
+                    "user_href": "/profile/Lasindu-Nuwanga"
+                },
+                {
+                    "user_id": "John Bassett",
+                    "user_href": "/profile/John-Bassett-1"
+                },
+                {
+                    "user_id": "Rahul Verma",
+                    "user_href": "/profile/Rahul-Verma-3147"
+                },
+                {
+                    "user_id": "Vineeth Gs",
+                    "user_href": "/profile/Vineeth-Gs-1"
+                },
+                {
+                    "user_id": "Anand Chincholi",
+                    "user_href": "/profile/Anand-Chincholi-1"
+                },
+                {
+                    "user_id": "Nom Frost",
+                    "user_href": "/profile/Nom-Frost"
+                },
+                {
+                    "user_id": "Mouli Maruvada",
+                    "user_href": "/profile/Mouli-Maruvada"
+                },
+                {
+                    "user_id": "CRISTIAN JOHNATAN PE\u00d1A CUEVAS",
+                    "user_href": "/profile/CRISTIAN-JOHNATAN-PE\u00d1A-CUEVAS"
+                },
+                {
+                    "user_id": "Govardhana Vigneshwaranandan",
+                    "user_href": "/profile/Govardhana-Vigneshwaranandan"
+                },
+                {
+                    "user_id": "Sathiyan S",
+                    "user_href": "/profile/Sathiyan-S-1"
+                },
+                {
+                    "user_id": "Raju Pathak",
+                    "user_href": "/profile/Raju-Pathak-17"
+                },
+                {
+                    "user_id": "Raj Singh",
+                    "user_href": "/profile/Raj-Singh-2500"
+                },
+                {
+                    "user_id": "Jagriti Singh",
+                    "user_href": "/profile/Jagriti-Singh-63"
+                },
+                {
+                    "user_id": "Yuppie GO",
+                    "user_href": "/profile/Yuppie-GO"
+                },
+                {
+                    "user_id": "Seth Spearman",
+                    "user_href": "/profile/Seth-Spearman"
+                },
+                {
+                    "user_id": "Prashant Gupta",
+                    "user_href": "/profile/Prashant-Gupta-377"
+                },
+                {
+                    "user_id": "Arun Kumar",
+                    "user_href": "/profile/Arun-Kumar-424"
+                },
+                {
+                    "user_id": "CodeinMood",
+                    "user_href": "/profile/CodeinMood"
+                },
+                {
+                    "user_id": "Cristian Leal",
+                    "user_href": "/profile/Cristian-Leal-1"
+                },
+                {
+                    "user_id": "Mrunal Ahirao (\u092e\u0943\u0923\u093e\u0932 \u0905\u0939\u093f\u0930\u093e\u0935)",
+                    "user_href": "/profile/Mrunal-Ahirao-\u092e\u0943\u0923\u093e\u0932-\u0905\u0939\u093f\u0930\u093e\u0935"
+                },
+                {
+                    "user_id": "Ajmot Sk",
+                    "user_href": "/profile/Ajmot-Sk"
+                },
+                {
+                    "user_id": "Arasu",
+                    "user_href": "/profile/Arasu-7"
+                },
+                {
+                    "user_id": "Shobhit Aggarwal",
+                    "user_href": "/profile/Shobhit-Aggarwal-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Komalpreet Virk",
+                "href": "/profile/Komalpreet-Virk"
+            },
+            "answer_text": "Dont no ",
+            "date": "Answered July 31, 2018",
+            "views": "469",
+            "upvotes": "0"
+        }
+    ]
+}

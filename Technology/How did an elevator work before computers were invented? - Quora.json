@@ -1,0 +1,58 @@
+{
+    "title": "How did an elevator work before computers were invented? - Quora",
+    "tags": [
+        "Elevators and Lifts"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Justin Wearne",
+                "href": "/profile/Justin-Wearne"
+            },
+            "answer_text": "Like many control systems before computers, elevator control systems relied on electr0-mechanical logic (and later transistor logic). Elevators need a number of basic sensors\u2026 Position sensors (what floor am I on?)Call buttons (outside lift) - which floor do I need to stop on to pick-up passengers?Destination buttons - which floor am I am traveling to drop people off?Direction control - am I going-up or down?Safety sensors - particularly over speed sensors and limit sensors (top and bottom)Door open / closed sensors & person standing in door sensorThose are the basic ones - there are others. When I say \u201csensor\u201d, I really mean a robust mechanical switch (either a push button for user input or a switch activated by the travel of the elevator car) Control tasks use these sensors (switches) to make decisions\u2026. When traveling-up Stop at the next floor where an up button (outside the lift) is pushed.Stop at the the next floor where a floor button is pushed (inside the lift)No buttons pushed? STOP and park at this floor (or return to ground).When traveling-down Stop at the next floor where a down button (outside the lift) is pushed.Stop at the the next floor where a floor button is pushed (inside the lift)No buttons pushed? STOP and park at this floor (or return to ground).Without a computer the logic that controls this is done using either banks of relays (older systems) or TTL logic circuits using discrete transistors and later TTL chips. Essentially, in the control room was a logic panel that received the voltage signals from sensors and buttons and activated relays. Latching relays were used to track which floor the lift was positioned - Latch-on when rising, Latch-off when descending. Later Flip-Flop circuits (discrete transistors and later TTL logic chips) were used in place of latching relays. Not to say that things didn\u2019t get complicated, with large panels of relays in the lift control room to keep track of all the logic. The design of the circuitry was done using a discipline called \u201crelay logic\u201d. Relay logic - Wikipedia So, switches and relays really were just representing 1\u2019s or Zeros the same as they do in a computer, so the underlying logic hasn\u2019t changed - just the convenience, sophistication and robustness. It was even possible to achieve quite complex logic using mechanical relays and other electro-mechanical devices, for example to park the elevator at floors where call requests were most frequent by using cascade counters. Of course, sometimes the senors that tracked the lift car\u2019s travel (switches activated by a wheel on the end of an arm) might not trip and the system would automatically reset. They even had logic for that. The lift would be sent to the bottom and all position relays would be resest. ",
+            "date": "Answered March 12, 2019",
+            "views": "291",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Doug Guderian",
+                "href": "/profile/Doug-Guderian"
+            },
+            "answer_text": "Typically with lots of relays and roller switches or magnetic reed switches to get the signals. There are still many elevators running with this type of technology today. I would estimate that about 5% to 10% of the elevators in North America are still running on this type of technology today. With a good maintenance program on some of the better relay equipment, you can sometimes still get reasonable performance from these systems. This gets harder to do every year though as the equipment ages and as the technicians who understand the older equipment retire and as replacement parts become obsolete. ",
+            "date": "Answered September 10, 2018",
+            "views": "312",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nate Godin",
+                    "user_href": "/profile/Nate-Godin"
+                },
+                {
+                    "user_id": "KUAN QIAN",
+                    "user_href": "/profile/KUAN-QIAN"
+                },
+                {
+                    "user_id": "Rolly Mechler",
+                    "user_href": "/profile/Rolly-Mechler"
+                },
+                {
+                    "user_id": "Nibedita Datta",
+                    "user_href": "/profile/Nibedita-Datta-6"
+                },
+                {
+                    "user_id": "Akshay Khanna",
+                    "user_href": "/profile/Akshay-Khanna-2"
+                },
+                {
+                    "user_id": "Jon Mixon",
+                    "user_href": "/profile/Jon-Mixon-1"
+                },
+                {
+                    "user_id": "Brad Woods",
+                    "user_href": "/profile/Brad-Woods-19"
+                }
+            ]
+        }
+    ]
+}

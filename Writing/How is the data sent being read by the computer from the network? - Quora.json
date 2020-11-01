@@ -1,0 +1,40 @@
+{
+    "title": "How is the data sent being read by the computer from the network? - Quora",
+    "tags": [
+        "Data",
+        "Computer Networking",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Urwin",
+                "href": "/profile/Richard-Urwin-1"
+            },
+            "answer_text": "That is a huge, huge question and a full answer is post-degree level \u2014 or at least a big book worth of reading. The computer is generally connected to the network by a cable. (WiFi works similarly but is even more complex.) The Ethernet cable has eight wires in it aranged in four pairs. Each pair of wires has a varying voltage between its two wires. At any given time the voltage can have one of five different values. If we label those voltages 0,1,2,3 and 4, then together all four pairs can have 5x5x5x5 = 625 different states at any moment. Those states are mapped into 8 bits of data (256 different states). Because most of the states are not used, the computer can usually tell when the data is corrupted. Those bytes are used to implement the lowest level of network protocol. This provides enough information for the computer to recognise where data starts and where it ends. It starts with seven bytes of alternating 1s and 0s, and it ends with twelve bytes of zeros. Between these two is the data, which is called a \u201cpacket\u201d, the first byte is a constant 10101011, designed simply to end the alternating ones and zeros and mark the start of the actual data, and the next six are the MAC address of the computer that the packet is being sent to. A MAC address of all 1s is used to send a packet to all the computers on the network. Following that is the MAC address of the computer that sent the message, and following that are two bytes that describe the type of protocol being used in the rest of the packet. That leaves between 46 and 1500 bytes for the Ethernet payload. Ethernet doesn\u2019t care what that data is. It just looks at the two-byte type and passes the data up to the next level of protocol. Between the payload and the end of the packet is a four-byte error check number (CRC) This is used to allow the computer to check that the packet has not been corrupted. If the CRC is wrong then it will quietly ignore the whole packet and wait for the next one. So far we can get a packet of data from one computer on an Ethernet network to another computer on the same Ethernet network. That\u2019s all well and good, but Facebook is not on the same Ethernet network as your computer, so we need a way to make data pass from network to network until it finds the computer that it wants to get to. That is done by Internet Protocol, the \u201cIP\u201d bit of \u201cTCP/IP\u201d. If the Ethernet type number is 2048, then the payload is to be understood as an IP (version 4) packet. There\u2019s a whole lot of stuff in there, see IPv4 - Wikipedia if you\u2019re curious, but among other things there are the four-byte IP addresses for the computer that sent the packet and the computer that it is being sent to, along with another two-byte protocol number. Then most of the packet is just payload again to be passed up to the next level of protocol. So if your computer wants to send data to Facebook, the destination IP address in the IP packet will be for Facebook\u2019s server. However the Ethernet MAC address will be your router\u2019s address. Your router receives the packet, determines that it is for some computer outside your house and passes it on down the telephone wire. Likewise a packet from Facebook comes into your router from outside and your router adds an Ethernet protocol wrapping around it with a destination address of your computer. One of the protocols that the IP payload can be is TCP. It is TCP\u2019s job to handle connections between specific programs on each end of the conversation. IP has made a connection between two computers. Now TCP makes a connection between two programs. It does that with port numbers. A TCP conection is between a port on your computer and a port on the other computer. Usually one of those, the one on the server, is a well-known number. For example all World-Wide-Web servers use the port number 80 unless there is some reason to hide them. TCP handles all error detection, retransmitting lost data and throwing away duplicate data, so it provides a simple byte-stream to whatever is listening to a port. There are no packets any more, just a continuous stream of bytes. One of the protocols that uses TCP is HTTP (HyperText Transfer Protocol). When you give a web address to your web-browser, the first few letters are the name of the protocol that it will use. That\u2019s what the \u201chttp:\u201d means at the start of every web address (https is encrypted http.) Your web-browser makes a TCP connection to the web server\u2019s port 80 and sends it a request for a page. The web-browser replies with a status number and the contents of the page. If all goes well the status is 200. If something goes wrong then the status will show what happened. Statii in the 300 range are redirections. Statii in the 500 range are security violations. Whereas statii in the 400 range mean that the page could not be fetched for some reason, the most famous of course is 404 \u2014 the page does not exist. ",
+            "date": "Answered April 5, 2017",
+            "views": "11",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Agrawal",
+                    "user_href": "/profile/Vaibhav-Agrawal-49"
+                },
+                {
+                    "user_id": "Biren",
+                    "user_href": "/profile/Biren-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Cooper",
+                "href": "/profile/David-Cooper-158"
+            },
+            "answer_text": "Richard Urwin gives a detailed answer but if you want a simplified metaphor: The data to be sent by an application moves down the processing stack and is assigned to a pathway previously established. The pathway has a source and a destination address that helps the computer at the far end send the data to the correct application. These addresses are called ports. As it moves down the stack it will be broken into small parcels, or what we call packets. These too have a source and a destination address, only this time to find the far end computer through the network. These addresses are called IP addresses. Lastly the parcels will each be wrapped into another parcel called a frame. The frame has a source and a destination, but this time only to find the next router in the network, this address is only locally significant. These are called MAC or hardware addresses. At the receiver, the frame arrives with the destination address of the network card, and is unwrapped. The packet has the destination address of the computer, and the parcels are assembled into the original message. The complete message is sent to the application using the port number for identification. ",
+            "date": "Answered April 5, 2017",
+            "views": "342",
+            "upvotes": "0"
+        }
+    ]
+}

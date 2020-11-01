@@ -1,0 +1,40 @@
+{
+    "title": "What is the power series of (x^2-4) y\u201d+3xy\u2019+y=0? - Quora",
+    "tags": [
+        "Functions (mathematics)",
+        "Calculus",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alex Jones",
+                "href": "/profile/Alex-Jones-1227"
+            },
+            "answer_text": "Why would you want a power series when you can solve this outright in closed form? Just notice that [math](x^2-4)'' = 2[/math] and [math](3x)' = 3[/math], so [math]1 = (3x)' - (x^2-4)''[/math]. The coefficient for [math]y[/math] is also [math]1[/math], so we can make that substitution to get a new form of the equation [math]\\displaystyle (x^2-4)y'' - (x^2-4)''y + (3x)y' + (3x)'y = 0[/math] You should be getting some very product rule vibes from this, especially those last two terms, which are clearly an expansion of [math](3xy)'[/math]. The first two terms are a bit more difficult, so let\u2019s write out the product rule for second derivatives [math]\\displaystyle (fg)'' = f''g + 2f'g' + fg''[/math] Now we can manipulate the right hand side to get something that looks like the first two terms in our equation [math]\\displaystyle (fg)'' - 2f'g' - 2f''g = fg'' - f''g[/math] and then notice the other product rule that cropped up in the second and third terms [math]\\displaystyle (fg)'' - 2(f'g)' = fg'' - f''g[/math] Now use this new \u201crule\u201d to rewrite the first two terms of our equation [math]\\displaystyle ((x^2-4)y)'' - 2((x^2-4)'y)' + (3xy)' = 0[/math] Combine the two first derivatives and move them to the right side of the equation [math]\\displaystyle ((x^2-4)y)'' = (xy)'[/math] Since there\u2019s an extra derivative on each side, we can just integrate it off [math]\\displaystyle ((x^2-4)y)' = c_1 + xy[/math] Now we can unwrap that product rule on the left and rearrage a bit [math]\\displaystyle (x^2-4)y' + xy = c_1[/math] And one more time, we\u2019re gonna use the product rule. But since it\u2019s not a product rule by itself, we need to multiply by something that will make it a product rule, which is [math]\\displaystyle \\frac{1}{x^2-4}\\exp\\int \\frac{x}{x^2-4} \\text dx = \\frac{1}{\\sqrt{x^2-4}}[/math] So we divide everything by [math]\\sqrt{x^2-4}[/math] to get [math]\\displaystyle \\sqrt{x^2-4}y' + \\frac{x}{\\sqrt{x^2-4}}y = \\frac{c_1}{\\sqrt{x^2-4}}[/math] Now we can actually use that product rule [math]\\displaystyle (\\sqrt{x^2-4}y)' = \\frac{c_1}{\\sqrt{x^2-4}}[/math] Then just integrate off the derivative and divide by [math]\\sqrt{x^2-4}[/math] again [math]\\displaystyle \\int (\\sqrt{x^2-4}y)' \\text dx = \\int \\frac{c_1}{\\sqrt{x^2-4}}\\text dx[/math] [math]\\displaystyle \\sqrt{x^2-4}y = c_1\\log(\\sqrt{x^2-4}+x) + c_2 [/math] [math]\\displaystyle y = \\frac{c_1\\log(\\sqrt{x^2-4}+x) + c_2}{\\sqrt{x^2-4}} = c_1\\frac{\\log(\\sqrt{x^2-4}+x)}{\\sqrt{x^2-4}} + c_2\\frac{1}{\\sqrt{x^2-4}}[/math] ",
+            "date": "Updated July 9, 2020",
+            "views": "381",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Shaz Siebert",
+                "href": "/profile/Shaz-Siebert"
+            },
+            "answer_text": "8 ",
+            "date": "Answered June 14, 2020",
+            "views": "202",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Marco Biagini",
+                "href": "/profile/Marco-Biagini-1"
+            },
+            "answer_text": " ",
+            "date": "Answered June 14, 2020",
+            "views": "445",
+            "upvotes": "0"
+        }
+    ]
+}

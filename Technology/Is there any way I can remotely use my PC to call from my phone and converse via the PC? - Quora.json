@@ -1,0 +1,42 @@
+{
+    "title": "Is there any way I can remotely use my PC to call from my phone and converse via the PC? - Quora",
+    "tags": [
+        "Personal Computers",
+        "Android (operating system)",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ronald Swaine",
+                "href": "/profile/Ronald-Swaine"
+            },
+            "answer_text": "I think the word \u201cremotely\u201d in the original question causes there to be confusion.My understanding of the question:\u201cIs there a way to place calls from my PC, remotely using my phone\u2019s hardware\u201d If you are looking to remotely VIEW and CONTROL your phone, any of the previously mentioned remoting tools (Teamviewer, etc) are fine, but are not designed to make calls over. I feel the OP is looking for something like this: Remote Phone Callallowing a PC user to control their phone\u2019s communications. Note they have multiple setups, that require different capabilities from your phone. Their typical setup suggests you still pair your BT voice-device (ie. headset) with the phone directly anyway, although not necessary in their hands-free setup. Recently, however, Windows 10\u2019s Your Phone app can now act like a car might when paired via BT, allowing calls to be made through your PC.Setting up and using calls Bluetooth, in these cases are your best option for good quality communications, but may not be appropriate if the OP is looking to leave their phone outside of BT range. So\u2026 If looking for close range - get a GOOD bluetooth interface for your PC, and check out the above methods. If looking for LAN/Wifi/WAN use, without some hacky methods, and dealing with latency and dynamic IP issues, you\u2019re better off using a VoIP service. They typically have good proprietary software, or are compatible with 3rd party software and VoIP USB devices. You can even install a VoIP app on your phone/tablets, so that could use the same account from all devices. A bit more technical on why we don\u2019t see easier mobile-to-pc connections more\u2026. IIRC, there are security restrictions on the embedded APIs (or even no user-API available), concerning access to the audio IO streams inside the enclosed ADC-codec-BT-Baseband-modem/network setup. This prevents applications from messing with things it shouldn\u2019t be concerned with. So outside of BT connectivity (being limited to BT abilities and specs) there isn\u2019t going to be a lot of options. For now. For those looking to have a more scalable solution\u2026 Allowing PC and phones alike, to share calls, conference, handle voicemail, have extensions - via Wifi/LAN/WAN - checkout Open Standards Communications Solution - 3CX IP PBX.Even a low powered VM can run an office and be connected-to externally. (You can think of it as having your own local private VoIP service, based on a real VoIP subscription) ",
+            "date": "Answered March 5, 2020",
+            "views": "431",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Al Crowley",
+                    "user_href": "/profile/Al-Crowley-8"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ronald 'Ron' J. Ellis",
+                "href": "/profile/Ronald-Ron-J-Ellis"
+            },
+            "answer_text": "If I understand correctly the question aims to use a smart phone to initiate a call from a PC that you can hear and participate in from the smart phone, and as a result the person being called would be called only from the PC. I\u2019ve not tried this but I\u2019d expect it to work:: Equip a smart phone and PC with remote control software to access your PC from the phone (GoToMyPC, Microsoft Remote Desktop, Splashtop, TeamViewer, LogMeIn, and more are all possibilities. See our related Quora answer: Connectivity: Whats better for remote access LogMeIn, GoToMyPC or another?)Acquire a PC-based phone number with a service like Skype, MagicJack, etc.Initiate a remote control session from the smart phone to the PC.Initiate a call from the PC to your smart phone.While the line remains open continue to use the smart phone\u2019s remote access software to make the desired call using the 3\u2013way calling feature.At this point your smart phone has voice and data connections to the PC and your smart phone should be able to \u201c\u2026remotely use my PC to call from my phone and converse via the PC\u201d. ",
+            "date": "Answered August 7, 2017",
+            "views": "13",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Al Crowley",
+                    "user_href": "/profile/Al-Crowley-8"
+                }
+            ]
+        }
+    ]
+}

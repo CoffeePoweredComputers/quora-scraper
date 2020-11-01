@@ -1,0 +1,112 @@
+{
+    "title": "What are the applications of complex numbers? - Quora",
+    "tags": [
+        "Complex Numbers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Horia Tudosie",
+                "href": "/profile/Horia-Tudosie"
+            },
+            "answer_text": "Sometimes you may need to square the root(s) of an equation, but the roots of a quadratic equation are not always real. Then, without imaginary roots, your ability to solve a problem stops there... However, complex number applications are a lot more extensive. In mathematics there are operators and functions which can reduce a complex operation to a simple one. For example, logarithms can easy the multiplication by reducing it to addition: using logarithmic tables, one may transform large factors to logarithm terms, add them and reverse again obtaining the multiplication result. (Not in use anymore since hand-held computers...) With complex numbers the same is possible for transforming differential equations in algebraic ones. Algebraic equation are a lot easier to solve then differential, while differential calculus governs a lot of dynamic processes as electricity, mechanic, acoustic, aero and hydro- dynamics etc. Even more, simple conventions may reduce the dynamics of variable process (as alternate currents, or even signals of any sort) to static-like behaviors.  For example, in an electric circuit there are resistors, capacitors and inductances. It is easy to solve a circuit with only resistors, but adding capacitors, inductances and AC makes the life a lot more difficult for the electric engineer. Yet, as an application of complex numbers theories, the capacitor may be represented as a resistance of -j/wC, and the inductance as jwL (where w stands for omega - related to AC, j is sqrt(-1) conveniently noted as such for not confusing with i - intensity of the current.)  With these conventions, now the circuit can be solved as in DC (algebraic, linear equations.) The roots (currents and/or node potentials in the circuit) are functions of w, so giving values to w for the frequency of interest we get frequency-determined roots whose real parts represent the amplitude of AC, while the factor of the exponent in the polar representation of the complex roots represent the phase of the signal. But wait - there is no need to convert or solve the algebraic equation!  The complex theory of electric circuits tells us (and we should relay on the interpretation of those theories' theorems) that the equation of a circuit (passive or not!) reduces itself to a fraction of polynomials, and the polynomials can be reduced to some products of 1 or two order polynomials. We call the roots of the upper poly - zeros, and the other one (denominator) - poles. Knowing the zeros and poles of the equation, the electric engineer can depict directly the behavior of the circuit on logarithmic graphs with straight lines which would be the asymptotic behavior (amplitude/phase) on frequency in dB (decibels - units for physiologic response of human senses to signals' intensity (as in acoustic sounds.)) And this is not all: by combining in a Cartesian graph the real and imaginary parts of the circuit's function (by eliminating w in the process,) we obtain a curve which tells easily the stability of an active circuit: if this curve goes behind the point (-1, 0) - the circuit is not stable! (do you know that high-pitch sound produced sometimes by microphones?) This example was about electronics, but in mechanics, mass (inertia) is like inductance, elasticity is like capacitance and friction - like resistance, so same theory applies in evaluating the response of a mechanical system to vibrations (like in to a car or airplane that should not vibrate (too much) because of its engine to any speed.) And also in aerodynamics (an airplane should not vibrate or go unstable because of air flow around it.) To make the story interesting, almost half century ago, I was student in CS University.  One day, in the afternoon the teacher-assistant came in class with a magazine he wanted to read. He has put a circuit schema on the blackboard asking us for the next 2 hours to figure out what it was.  By the time he went back to his desk, I said - \"I know what it is!\" I gave the functionality of the circuit (active tone corrector) and picture the graphs.on the board. He was amazed - how could I have done so fast! - I have had learned in the morning the theory from the head professor of Automation ans System Theory!  \"Yes - can be done this way, but I was not aware you have assimilated that theory yet! This is how I wanted you to do! (differential calculus)\"  And he has spent the next two hours solving on the board the circuit using the old-fashion method and integrating partial differential equations... ",
+            "date": "Answered May 30, 2014",
+            "views": "76",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Fa Fa",
+                    "user_href": "/profile/Fa-Fa-71"
+                },
+                {
+                    "user_id": "Sarvan",
+                    "user_href": "/profile/Sarvan-28"
+                },
+                {
+                    "user_id": "SHREEDHAR ANEHOSUR",
+                    "user_href": "/profile/SHREEDHAR-ANEHOSUR"
+                },
+                {
+                    "user_id": "Niraj Patil",
+                    "user_href": "/profile/Niraj-Patil-87"
+                },
+                {
+                    "user_id": "Aashwin Shrivastava",
+                    "user_href": "/profile/Aashwin-Shrivastava"
+                },
+                {
+                    "user_id": "Aniruddh Viswanathan",
+                    "user_href": "/profile/Aniruddh-Viswanathan"
+                },
+                {
+                    "user_id": "Soumalya Ghosh",
+                    "user_href": "/profile/Soumalya-Ghosh-13"
+                },
+                {
+                    "user_id": "History Pandey",
+                    "user_href": "/profile/History-Pandey"
+                },
+                {
+                    "user_id": "Sayak Bal",
+                    "user_href": "/profile/Sayak-Bal"
+                },
+                {
+                    "user_id": "Scarlett Hu",
+                    "user_href": "/profile/Scarlett-Hu-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Krishna Harish",
+                "href": "/profile/Krishna-Harish"
+            },
+            "answer_text": "Part 1: imaginary numbersYou can't take the square root of a negative number. Let's say you are using the quadratic formula on certain equations. You can end up with a \"complex\" number - that is, a number with a \"real\" part, plus a part that has the square root of a negative number - for example, 3 + sqrt(-4), which can be simplified to 3 + 2*sqrt(-1). That number is actually useless in its current form, because like I said, you can't take the square root of a negative. However, just because it's useless in its current form doesn't mean we should throw it away. Let's say we use the answer from the quadratic formula in another equation. And in that equation, our number gets squared. Look at that - the square root disappears! Suddenly we have a real number again! So when we get the square root of -1, we don't ignore it. We replace it with the shortcut i, which is called the \"imaginary\" number because negative square roots don't actually exist (and it's much easier to keep writing i than to write out the square root every time). That way, we keep the \"imaginary\" number just in case we will make the number useful again later in another equation by squaring it or multiplying it by a different imaginary number or something. And it turns out, in EE, this happens all the time. (Also note that EEs like to use j as the imaginary number because they use i for other things - but the math is exactly the same.)Part 2: SinusoidsIn EE, we deal with sine waves a lot. A sine wave looks like this. AC electricity is a sine wave. Sound is a whole bunch of sine waves added together. Sine waves are special because they only have 1 frequency (a frequency refers to how fast the sine wave goes up and down and back up). Because they only have a single frequency, they are used everywhere in EE, because most systems can be measured by how they affect different frequencies (whether power systems like the power in your wall, communications systems like in a cell phone, or digital signal processing systems like when you play music on your computer). However, frequency is only one part of a sine wave. The other important part is something called phase. Look at that picture again - see how the sine wave \"starts\" at exactly 0 degrees? What if we wanted the same wave, but starting at a different point? Maybe at 45 degrees? Or 90 degrees? Or 180 degrees? Sometimes that's what we want. Here's where we start using cosine waves too. A cosine is exactly the same thing as a sine, except it starts at -90 degrees, like this (see how the cosine is just like the sine except shifted to the left?) This means that a cosine has the same frequency as a sine, but a different phase. It turns out, thanks to how the math works out, we can make a wave starting at any phase by adding together different amounts of a sine and a cosine. This is very useful, because we can make a wave starting at 120 degrees (like in 3-phase power), or at 180 degrees (which is an upside-down sine wave), or really any phase we want. When we have a combination of sines and cosines that make up a single wave with one frequency but any phase, we call this a sinusoid because it's sine-shaped but not quite exactly a sine because of its different phase. So what does this have to do with complex numbers? A long time ago, a mathematician named Euler was doing math with complex numbers. He had his special number ewhich was useful with powers for various reasons. Because we usually see it with powers, we will often see ex . He tried to figure out what would happen if this x was a complex number. It turns out, if x is imaginary - for example eix, the math actually works out so that eix = cos(x) + isin(x). (Explaining the math of why this is true is actually very hard - I use this formula every single day and I still don't fully understand why it works.) Anyway, remember how EEs work with sines and cosines a lot? By using this formula, we can easily make a combination of a sine and cosine that has any phase. If we change the variable x to a t for time (like this: eit ) we get a sinusoid that is changing in time (like this), and that's where our sine wave becomes a signal like in music or in AC electricity. By using different complex numbers as the power of e, we can adjust both the frequency and phase of the sinusoid. e2it would be a cosine wave with a frequency of 2. e to the power of t times our complex number from before (et(3+2i)) would have another different frequency and phase. We can make a sine with any frequency and any phase by using a different complex number as this power. So now, instead of having to write out a sine and a cosine every time, we can just express our sinusoid in eit form, which is much easier to work with. Not only is it faster to write, but it is much easier to do math with too. For example, we can multiply two sinusoids together easily. If we had to do that using individual sines and cosines, the math would get messy very quick.So there's the basics of how complex numbers work, and why EEs use them. ",
+            "date": "Answered November 16, 2013",
+            "views": "73",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Marijani Nyindo",
+                    "user_href": "/profile/Marijani-Nyindo"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/NIHARIKA-SMITH"
+                },
+                {
+                    "user_id": "Ay Limo",
+                    "user_href": "/profile/Ay-Limo"
+                },
+                {
+                    "user_id": "Alfred Rossman",
+                    "user_href": "/profile/Alfred-Rossman"
+                },
+                {
+                    "user_id": "David Landman Landaleip",
+                    "user_href": "/profile/David-Landman-Landaleip"
+                },
+                {
+                    "user_id": "Gurupratap Singh Matharu",
+                    "user_href": "/profile/Gurupratap-Singh-Matharu"
+                },
+                {
+                    "user_id": "Andrew Ragone",
+                    "user_href": "/profile/Andrew-Ragone"
+                },
+                {
+                    "user_id": "Harshit Singh",
+                    "user_href": "/profile/Harshit-Singh-489"
+                },
+                {
+                    "user_id": "Aditya Suri",
+                    "user_href": "/profile/Aditya-Suri-2"
+                },
+                {
+                    "user_id": "Pratap Koritala",
+                    "user_href": "/profile/Pratap-Koritala"
+                }
+            ]
+        }
+    ]
+}

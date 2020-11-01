@@ -1,0 +1,64 @@
+{
+    "title": "How to connect to the Internet on Windows XP Professional - Quora",
+    "tags": [
+        "Microsoft Windows Tech Support",
+        "Computer Tech Support",
+        "Microsoft Windows XP",
+        "Windows and PC Tech Support",
+        "Internet Connection",
+        "Tech Support",
+        "Personal Computers",
+        "Microsoft Windows",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Taylor",
+                "href": "/profile/Richard-Taylor-147"
+            },
+            "answer_text": "I have an XP laptop on which I have installed the Enhanced Write Filter (EWF). You might be able to download EWF from \u2018EWF.zip\u2019. You probably need a minimum of 512 MB of RAM - my laptop has 1 GB. I only have EWF working on C:. D: works normally. I use D: to backup the memory cards from from my cameras. I also have music and films on D: that I can use when I am away from home. After doing something on the Internet, I restart the laptop to get back to a clean C:, as provided by EWF, before going elsewhere on the Internet. Although it is possible for an infection to get on to D:, with a clean start of C: providing I don\u2019t access files on D: further Internet access should be free from the effects of viruses, trojans, etc that would need to be on C: to be dangerous. With EWF, C: is treated as a read only filesystem and any writes to C: are cached in RAM rather than going to C: itself. Any reads that access data that is cached use the RAM copy rather than the original data. Any changes you make disappear when XP shuts down (or restarts). Other drives work normally, at least in my laptop. There are a few constraints. Any files that get saved to C: (actually the RAM cache) will use up some of the RAM. If the files are then deleted, the RAM space becomes available for use by the cache, but is not released back to the rest of the OS. For example, if I copy a 500 MB file to C:, the free RAM goes down by 500 MB. In my 1 GB of RAM, I cannot copy another 600 MB to C: until I delete the first file. After deleting the first file an extra 100 MB of RAM is used when I copy the second file. If I delete the second file, the 600 MB of RAM is not released until XP starts again although the space can be reused for caching further files. There are a few settings to consider: Disable System Restore. Each start of XP is effectively a restore.Disable any updates - XP updates should Microsoft choose to release any more. Browser updates. etc. These will be lost each time XP starts.Remove all anti-virus and malware packages - they won\u2019t keep any updates and will quickly become out of date and will need to update each time. Until the update is completed the protection will not catch the latest infections.Make sure hibernate is turned off. Hibernate saves to C:, and the hibernate file will be lost when XP restarts.Turn off swap file, or put it in a different drive. I have the swap file on D:. There is no sense in paging RAM to C: cached in RAM as all it does is waste some performance and RAM space. Some of my applications use a lot of RAM, so paging to D: can avoid running out of real/virtual memory.There is a mechanism for turning off EWF if you need to make a permanent change. Restart XP immediately before making a change and disabling EWF to save the change then re-enable EWF immediately after making a change. After installing EWF, if you get a message on each boot saying that the system has not closed down properly, run the script to save changes and re-enable EWF. This script is included along with the install script in the EWF.zip file. On my laptop, C: is about 11.5 GB and has about 10 GB of operating system and Apps on it. As a demo, I can uninstall a number of Apps and get the used space showing in Windows Explorer down by several GB. When I restart XP, all the uninstalled Apps are back exactly as they were. Even deleting Windows own files is not a disaster. Deleting files may prevent shutdown working properly and I have to hold the power button for 20 seconds to shut down. Boot up again and everything in Windows is working normally again. ",
+            "date": "Answered October 13, 2018",
+            "views": "363",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "John Cao",
+                    "user_href": "/profile/John-Cao-43"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carolyn Breninger",
+                "href": "/profile/Carolyn-Breninger"
+            },
+            "answer_text": "That is mostly a fruitless endeavor. It is not secure and the current software technologies are not compatible with it. The best suggestion is to move on to newer technology. Even a product like Malwarebytes Anti-malware says this - \u201cMalwarebytes is committed to continue support for Windows XP, for as long as Microsoft allows us to. In fact, we're one of the few providers still willing to do so. This stand means that we'll continue offering our core anti-malware protection to the best of our ability, given technical limitations. New features added over time will be supported as technically feasible.\u201d What that means is, if something leaks through (and it could, because of the differences), then it was vulnerable, because of those differences. If you have anything you wish to safeguard on that machine, not a good idea to attach it to the internet. ",
+            "date": "Answered September 25, 2018",
+            "views": "254",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Cao",
+                    "user_href": "/profile/John-Cao-43"
+                },
+                {
+                    "user_id": "Charles Goggins",
+                    "user_href": "/profile/Charles-Goggins"
+                },
+                {
+                    "user_id": "Vitalie Vrabie",
+                    "user_href": "/profile/Vitalie-Vrabie"
+                },
+                {
+                    "user_id": "Jeff Gerckens",
+                    "user_href": "/profile/Jeff-Gerckens"
+                },
+                {
+                    "user_id": "Sanchit Sharma",
+                    "user_href": "/profile/Sanchit-Sharma-16"
+                }
+            ]
+        }
+    ]
+}

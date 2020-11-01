@@ -1,0 +1,25 @@
+{
+    "title": "What are the pros and cons of replicating on-prem data to cloud near real time? - Quora",
+    "tags": [
+        "Real-time Data",
+        "Cloud Computing"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Paul Painter",
+                "href": "/profile/Paul-Painter-4"
+            },
+            "answer_text": "The pros are: that you can have a Recovery Point Objective (RPO) that\u2019s measured in secondsDepending on software used to replicate, your Recovery Time Objective (RTO) might be minutes, but no worse than an hour or two.Some replication software includes journaling which allows you to rollback your RPO. This is handy if your data were corrupted and it\u2019s worth giving up some RPO to recover the site or server in a proper, recoverable state.It\u2019s testableDepending on replication software used, it may keep a log of tests run, handy for presenting to an auditor shoulder they need to see it.Depending on replication software used, it may replicate a group of servers together so that they are all in transactional lockstep at the replica site. A scenerario might be an app that stores files on a file server, and records the name of the file and other data in a database. You don\u2019t want a file to be recorded in the database without a file created on the file server. Conversely you don\u2019t want a file on the fileserver without a corresponding record on the database server.The cons are: You may need to virtualize your servers if you haven\u2019t already done so. The most options are for virtual machines.If you have metal servers, you may need to pay for some rather expensive application licensing to replicate your database (ex: Microsoft SQL Server Enterprise Edition, Oracle RAC or Oracle Dataguard)The replication software costs money, as do resources at the recovery siteYou need to factor extra storage a time the recovery site to accommodate journaling and scratch space. This is difficult to accurately estimate since you need to know your source site rate of change. Depending on software used, I add 30% to 60% extra to the replica site.",
+            "date": "Answered February 25, 2018",
+            "views": "364",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Andy Ryan",
+                    "user_href": "/profile/Andy-Ryan-5"
+                }
+            ]
+        }
+    ]
+}

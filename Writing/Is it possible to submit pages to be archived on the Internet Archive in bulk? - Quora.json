@@ -1,0 +1,40 @@
+{
+    "title": "Is it possible to submit pages to be archived on the Internet Archive in bulk? - Quora",
+    "tags": [
+        "Internet Archive",
+        "Archives and Archiving",
+        "History of the Internet",
+        "Uniform Resource Locators (URLs)",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Trevin Chow",
+                "href": "/profile/Trevin-Chow"
+            },
+            "answer_text": "This doesn't completely answer your question, but this will get you part way there. Their submission form ends up making a request in this format for a URL you submit through the web form: http://web.archive.org/save/<url> where <url> is the fully qualified URL of the page you want to archive. So you can write a batch script to iterate through a list of URLs and make GET requests to each one using the syntax above. ",
+            "date": "Answered January 27, 2016",
+            "views": "14",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nicolai Weitkemper",
+                    "user_href": "/profile/Nicolai-Weitkemper"
+                },
+                {
+                    "user_id": "Jennifer Taylor",
+                    "user_href": "/profile/Jennifer-Taylor-729"
+                },
+                {
+                    "user_id": "Rush Mayo",
+                    "user_href": "/profile/Rush-Mayo"
+                },
+                {
+                    "user_id": "Jo\u00ebl Galeran",
+                    "user_href": "/profile/Jo\u00ebl-Galeran"
+                }
+            ]
+        }
+    ]
+}

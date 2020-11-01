@@ -1,0 +1,30 @@
+{
+    "title": "What is the easy method to solve partial differential equation? - Quora",
+    "tags": [
+        "Laplace Transforms",
+        "Partial Differential Equations",
+        "Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joshua Siktar",
+                "href": "/profile/Joshua-Siktar"
+            },
+            "answer_text": "Well, the thing is, a very basic course in partial differential equations (PDE) might give you the false sense of security that just because a select handful of PDE can be solved explicitly, that all PDE can be solved explicitly. That couldn't be further from the truth. In fact, nowadays teams of mathematicians are cranking out 80+ page papers just to show that a solution to a PDE exists and/or is unique under certain conditions that are of interest for mathematical or physical reasons. In many of these cases there is no semblance of understanding of what the solution looks like. Two thirds of the famous PDE book by Lawrence Craig Evans predominantly focus on understanding the analytic structure of solutions, namely what types of function spaces does it make sense to solve a PDE in. And what do we even mean by solve? I talk about how this book introduces PDE in my recent book review/overview: Partial Differential Equations with Evans: An In-Depth Guide. Now, to more directly answer your question, I expect you might mean to ask what are some of the most basic methods used to solve PDE, given that you now know they will not work most of the time. The two that come to mind right away as being fairly intuitive and not too computationally intensive are: Separation of variables\u2014odds are you saw this in an ordinary differential equations courseSymmetry techniques\u2014some PDE are solved by finding solutions with a certain symmetry property, for instance assuming that a solution is radial, finding what that solution must be, and then checking that it actually solves the PDEThere are many more but I think these are the first two I learned. Another fun one that\u2019s a bit more advanced is the Cole-Hopf Transform. ",
+            "date": "Answered June 29, 2020",
+            "views": "342",
+            "upvotes": " View Sharers"
+        },
+        {
+            "author_info": {
+                "name": "Thiruvali Sadagoapan Shrinivaasan (\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bbe\u0bb2\u0bbf \u0b9a\u0b9f\u0b95\u0bcb\u0baa\u0ba9\u0bcd \u0bb8\u0bcd\u0bb0\u0bc0\u0ba8\u0bbf\u0bb5\u0bbe\u0bb8\u0ba9\u0bcd)",
+                "href": "/profile/Thiruvali-Sadagoapan-Shrinivaasan-\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bbe\u0bb2\u0bbf-\u0b9a\u0b9f\u0b95\u0bcb\u0baa\u0ba9\u0bcd-\u0bb8\u0bcd\u0bb0\u0bc0\u0ba8\u0bbf\u0bb5\u0bbe\u0bb8\u0ba9\u0bcd"
+            },
+            "answer_text": "Actually a constant function would be a legitimate solution of any homogeneous partial differential equation. So isn't that an easy solution? But that is called a trivial solution and there's nothing interesting about that solution. So based in the kind of equation you need to solve and based on your past experience, you may have to figure out which method works. There are many methods like variable separation, Fourier/Laplace transforms, superposition, reducing the PDE to a system of ODEs etc. Based on the kind of assumptions which each method calls for, we have to analyse whether a particular method is suitable for the problem at hand. So whether this procedure is easy or tough is to be decided by the one who solves the equation. The following answer is also on a similar note. Thiruvali Sadagoapan Shrinivaasan (\u0ba4\u0bbf\u0bb0\u0bc1\u0bb5\u0bbe\u0bb2\u0bbf \u0b9a\u0b9f\u0b95\u0bcb\u0baa\u0ba9\u0bcd \u0bb8\u0bcd\u0bb0\u0bc0\u0ba8\u0bbf\u0bb5\u0bbe\u0bb8\u0ba9\u0bcd)'s answer to What are some tricks to solve partial differentiation? ",
+            "date": "Answered December 2, 2018",
+            "views": "438",
+            "upvotes": "0"
+        }
+    ]
+}

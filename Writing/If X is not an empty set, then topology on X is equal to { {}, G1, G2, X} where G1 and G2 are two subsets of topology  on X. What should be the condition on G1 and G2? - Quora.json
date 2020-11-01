@@ -1,0 +1,52 @@
+{
+    "title": "If X is not an empty set, then topology on X is equal to { {}, G1, G2, X} where G1 and G2 are two subsets of topology  on X. What should be the condition on G1 and G2? - Quora",
+    "tags": [
+        "Empty Set",
+        "Sets (mathematics)",
+        "Algebraic Topology",
+        "Topology",
+        "Set Theory",
+        "Functions (mathematics)",
+        "Calculus",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Henk Brozius",
+                "href": "/profile/Henk-Brozius"
+            },
+            "answer_text": "You call [math]G_1[/math] and [math]G_2[/math] \u201csubsets of topology\" but actually they are elements of the mentioned topology. To avoid trivial cases let us assume that the sets [math]\\{\\}=\\varnothing[/math], [math]G_1[/math], [math]G_2[/math], [math]X[/math] are distinct sets. A topology is closed under finite intersections so also the intersection of [math]G_1[/math] and [math]G_2[/math] must be an element of the topology. That gives 3 possibilities: [math]G_1\\cap G_2=\\varnothing[/math][math]G_1\\cap G_2=G_1[/math] or equivalently [math]G_1\\subseteq G_2[/math][math]G_1\\cap G_2=G_2[/math] or equivalently [math]G_2\\subseteq G_1[/math]If one the conditions under second and third bullet is satisfied then we can easily check that collection [math]\\{\\varnothing, G_1,G_2,X\\}[/math] is a topology. This by nothing more than checking whether the conditions posed in the definition of the concept topology are satisfied. If the condition under the first bullet is satisfied then it appears that another condition is necessary. This because in that case the union [math]G_1\\cup G_2[/math] cannot coincide with [math]G_1[/math] or [math]G_2[/math]. This union is also a set of the topology because a topology is by definition closed under unions. Then only one choice remains: we must have [math]G_1\\cup G_2=X[/math]. In short there are 3 possibilities: [math]\\{G_1,G_2\\}[/math] is a partition on [math]X[/math][math]G_1\\subseteq G_2[/math][math]G_2\\subseteq G_1[/math]",
+            "date": "Answered October 18, 2020",
+            "views": "117",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Alex Sadovsky",
+                    "user_href": "/profile/Alex-Sadovsky"
+                },
+                {
+                    "user_id": "Samuel Gomes da Silva",
+                    "user_href": "/profile/Samuel-Gomes-da-Silva"
+                },
+                {
+                    "user_id": "Mitch Cohen",
+                    "user_href": "/profile/Mitch-Cohen-32"
+                },
+                {
+                    "user_id": "Eric Platt",
+                    "user_href": "/profile/Eric-Platt-9"
+                },
+                {
+                    "user_id": "Vincent Hsu",
+                    "user_href": "/profile/Vincent-Hsu-22"
+                },
+                {
+                    "user_id": "Nazia Ahmad",
+                    "user_href": "/profile/Nazia-Ahmad-43"
+                }
+            ]
+        }
+    ]
+}

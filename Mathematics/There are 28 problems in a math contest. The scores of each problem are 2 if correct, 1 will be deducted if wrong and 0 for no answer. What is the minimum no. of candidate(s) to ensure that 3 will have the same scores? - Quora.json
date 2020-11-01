@@ -1,0 +1,71 @@
+{
+    "title": "There are 28 problems in a math contest. The scores of each problem are 2 if correct, 1 will be deducted if wrong and 0 for no answer. What is the minimum no. of candidate(s) to ensure that 3 will have the same scores? - Quora",
+    "tags": [
+        "Math Competition Problems",
+        "Puzzles and Trick Questions",
+        "Numbers (mathematics)",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amitabha Tripathi",
+                "href": "/profile/Amitabha-Tripathi"
+            },
+            "answer_text": "I hope to establish a more complete argument in support of my answer than the ones I see in the current posts. At the end of my answer, I will also generalize the argument.  Suppose a candidate has [math]a[/math] correct, [math]b[/math] no answers, and [math]c[/math] wrong answers. Then he scores [math]2a-c[/math], and [math]a+b+c=28[/math]. We claim that the equation [math]2a-c=n[/math] is solvable in nonnegative integers [math]a[/math],[math]c[/math], [math]a+c \\le 28[/math], if and only if [math]n \\in [-28,56] \\setminus \\{55\\}. \\quad \\ldots \\quad (1)[/math] If [math]2a-c=55[/math], then [math]c[/math] must be odd. Hence, [math]c \\ge 1[/math], and so [math]a \\le 27[/math], implying [math]2a-c \\le 53[/math]. Therefore, [math]55[/math] is not in the range of the expression [math]2a-c[/math].If [math]n \\in [-28,56] \\setminus \\{55\\}[/math], then [math]2a-c=n[/math] has a solution given by [math](a,c) = \\begin{cases} \\left(\\frac{n}{2},0\\right), & n \\in [0,56], n \\:\\text{even}; \\\\ \\left(\\frac{n+1}{2},1\\right), & n \\in [1,53], n \\:\\text{odd}; \\\\ \\left(0,-n\\right), & n \\in [-28,-1]. \\\\ \\end{cases} [/math]This proves our claim in [math](1)[/math]. In order to determine the least number of candidates such that three of them have identical scores, note that there are [math]\\left| [-28,56] \\setminus \\{55\\} \\right|=84[/math] distinct possibilities of scores that the candidates may achieve. By Pigeonhole Principle, [math](2 \\cdot 84)+1[/math] candidates must include three with identical scores. [math]([/math]If each score was attained by at most two candidates, there can be at most [math]2 \\cdot 84[/math] candidates.[math])[/math] The least number of candidates such that at least three of them attain identical scores is [math]\\boxed{169}[/math]. [math]\\blacksquare[/math]  Generalization. Suppose [math]N[/math] students take an exam with [math]+2[/math],[math]0[/math],[math]-1[/math] marking scheme, as above, in a test consisting of [math]p[/math] problems. The least [math]N[/math] such that [math]r[/math] among these students necessarily have identical marks is [math]\\boxed{3p(r-1)+1}[/math]. Sketch of solution. With the same notation as in the special case above, we first establish that [math]2a-c=n[/math] is solvable in nonnegative integers [math]a[/math],[math]c[/math], [math]a+c \\le p[/math], if and only if [math]n \\in [-p,2p] \\setminus \\{2p-1\\}. \\quad \\ldots \\quad (2)[/math] The argument in the special case above carries over. If [math]2a-c=2p-1[/math], then [math]c[/math] must be odd. Hence, [math]c \\ge 1[/math], and so [math]a \\le p-1[/math], implying [math]2a-c \\le 2(p-1)-1[/math]. Therefore, [math]2p-1[/math] is not in the range of the expression [math]2a-c[/math].If [math]n \\in [-p,2p] \\setminus \\{2p-1\\}[/math], then [math]2a-c=n[/math] has a solution given by [math](a,c) = \\begin{cases} \\left(\\frac{n}{2},0\\right), & n \\in [0,2p], n \\:\\text{even}; \\\\ \\left(\\frac{n+1}{2},1\\right), & n \\in [1,2p-3], n \\:\\text{odd}; \\\\ \\left(0,-n\\right), & n \\in [-p,-1]. \\\\ \\end{cases} [/math]This proves our claim in [math](2)[/math]. The rest of the argument in the special case also carries over. There are [math]3p[/math] possible scores, [math](r-1)(3p)[/math] is the maximum number of candidates for whom it is possible to avoid [math]r[/math] candidates with identical scores. The least number of candidates that ensure [math]r[/math] among them have identical scores is therefore [math]\\boxed{3p(r-1)+1}[/math]. [math]\\blacksquare[/math] ",
+            "date": "Answered April 22, 2020",
+            "views": "888",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Januka Bhujel",
+                    "user_href": "/profile/Januka-Bhujel-3"
+                },
+                {
+                    "user_id": "Saikat Das",
+                    "user_href": "/profile/Saikat-Das-321"
+                },
+                {
+                    "user_id": "Manjunath Bhat",
+                    "user_href": "/profile/Manjunath-Bhat-57"
+                },
+                {
+                    "user_id": "Zenith",
+                    "user_href": "/profile/Zenith-97"
+                },
+                {
+                    "user_id": "Girija Warrier",
+                    "user_href": "/profile/Girija-Warrier"
+                },
+                {
+                    "user_id": "Harshit Singh",
+                    "user_href": "/profile/Harshit-Singh-72"
+                },
+                {
+                    "user_id": "Shlok Nemani",
+                    "user_href": "/profile/Shlok-Nemani"
+                },
+                {
+                    "user_id": "Shubham Raghuvanshi",
+                    "user_href": "/profile/Shubham-Raghuvanshi-34"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Girija Warrier",
+                "href": "/profile/Girija-Warrier"
+            },
+            "answer_text": "Question is how many sufficient number of candidates should appear, so that any 3 candidates have the same score. If only 3 candidates appear, they may or may not score the same marks. There is no guarantee. So, the question is .. to guarantee( or to ensure) that at least 1 score appears 3 times , how many just sufficient number of candidates need to appear in the test? That's what is to be calculated here\u2026. Highest marks any one can score= 28x2= 56 Since in the test there is negative marking.. ie for any 1 wrong attempt, marks granted = -1 So, lowest score = -28 => any appearing candidate can score.. either -28, or -27, or -26, \u2026\u2026\u2026 0, 1, 2, 3, 4,\u2026\u2026 54 or 56 Here only 55 is not possible. No candidate can score 55. Because 2x27\u20131 = 53 & 2x27 + 1NA = 54 +1x0= 54, 2x28 = 56, \u2026.. we continue 2 x 26 +2x0 = 52, 2x26 -1 +0 = 51, 2x25 +3x0 = 50 \u2026\u2026\u2026\u2026\u2026 This way, up to -28 , every integer is possible.. So, no of candidates = -28, -27, -26, \u2026\u20260, 1, 2, 3, \u2026\u2026\u2026 54 & 56 It's an AP series Tn = a+ (n-1)x d = 54 => -28 + (n-1)*1 = 54 => n = 54 +28 +1 = 83 candidate + 1 candidate scoring 56 => no of candidates = 84 Now, if we take 84 candidates more, ie if 84+84 = 168 candidates appear in the test , any score is likely to appear 2 times. If 1 more candidate appears , whatever marks is secured by that 169th candidate. That score has already appeared 2 times. => sufficient no of candidates = 169 . . . . . . . . . Ans Explanation of \u2026 Why all integers except 55 are attainable\u2026 [1]: One set of answers in which there are only Right & wrong answers.. So, possible marks will be 53, 50, 47, \u2026\u2026 5, 2, -1, -4, -7 \u2026\u2026\u2026.. -22,-25,-28 (in AP series) [2]: Second set of answers in which there are only Right answers & Not attempted So possible marks.. 54, 52, 50, 48, 46, 44, \u2026\u2026\u2026. 6, 4, 2 , 0 [3]: Third set of answers in which there are only Wrong answers & Not attempted, So possible marks .. -27, -26, -25, -25, -24, \u2026\u2026\u2026\u2026\u2026. -3, -2, -1 [4]: Fourth set of answers in which there are Right, Wrong & Not attempted , So possible marks .. 56, (not 55), 53, 51, 49, 47, 45\u2026 \u2026\u2026\u2026.. 7, 5, 3, 1 4th set scores are being shown below\u2026 56 = 28 Right x2 +no wrong+ nothing left 53 = 27 Right x2 -1 Wrong + nothing left (here if nothing wrong & 1 left, score= 54, which has been included in set 2) 51= 26 Right x2 -1 Wrong + 1 left 49 = 25 Right x2 - 1 Wrong + 2 left ( here if 2 wrong & 1 left, then score= 48 , which has been included in set 2. 47= 24 Right x2 - 1 wrong + 3 left ( here if 3 wrong & 1 left then score= 45.) 45 = 23 Right x2 -1 wrong + 4 left \u2026\u2026\u2026\u2026\u2026. Continue up to 1 This way, we attain marks from -28 through 54 and 56 => total candidates 84, another 84 is taken then any score appears twice. So one more candidate is required ie 84+84+1 = 169 ",
+            "date": "Answered April 22, 2020",
+            "views": "11",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Har Simran Singh",
+                    "user_href": "/profile/Har-Simran-Singh"
+                }
+            ]
+        }
+    ]
+}

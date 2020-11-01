@@ -1,0 +1,44 @@
+{
+    "title": "How do NFC devices read the data from a NFC tag? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tim Baker",
+                "href": "/profile/Tim-Baker-1"
+            },
+            "answer_text": "An NFC tag consists of an NFC chip and an antenna. The NFC device creates a radio frequency field which is transformed by the antenna into an electric current and so powers up the chip.On top of this radio frequency field the NFC device adds variations (modulation) which are filtered (demodulation) by the NFC Tag chip into commands and data (e.g. read/write/lock). To send information back to the NFC device the NFC Tag absorbs more or less power from the radio frequency field and the NFC device can detect these variations and so demodulate them to extract the information. That is the basic technical process. In an NFC phone (eg Galaxy S II) there is an option to \"turn on\" the NFC function. What this is doing is turning on the radio frequency field to detect any NFC tags that may be close. This uses battery power and various techniques are used to save as much power as possible, such as turning the radio field on, seeing if a tag replies, and if not turn the radio field off for a short while and try again later. The time scale for this is normally less than a second. So as long as the NFC function is turned on, and the home screen is unlocked, then as soon as you get in range (usually less than 4 cm) the tag read process starts, and according to the content of the tag, the phone will launch the right application. This is the process that makes NFC the next best thing in User Interface. ",
+            "date": "Answered May 30, 2012",
+            "views": "3",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Tak Wong",
+                    "user_href": "/profile/Tak-Wong-5"
+                },
+                {
+                    "user_id": "Kaixuan Wang",
+                    "user_href": "/profile/Kaixuan-Wang-5"
+                },
+                {
+                    "user_id": "Rishi Shah",
+                    "user_href": "/profile/Rishi-Shah-24"
+                },
+                {
+                    "user_id": "Omar Seyal",
+                    "user_href": "/profile/Omar-Seyal"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jaideep Khanduja",
+                "href": "/profile/Jaideep-Khanduja"
+            },
+            "answer_text": "NFC device is an active deice or a reader, NFC tag can or cannot be a active tag. So for example when an active reader (say an NFC phone) reads a passive tag (an NFC tag), it scans and captures its tag ID. Similarly when an active reader (say an NFC phone) comes into the vicinity of reading range of another active device acting as NFC reader, say another NFC phone, it depends on which device is trying to read which device. Means one device will act as a reader and another as a passive tag. ",
+            "date": "Answered March 24, 2013",
+            "views": "13",
+            "upvotes": "0"
+        }
+    ]
+}

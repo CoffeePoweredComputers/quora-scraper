@@ -1,0 +1,27 @@
+{
+    "title": "How to rewrite a username to a subdomain using the mod_rewrite Apache module - Quora",
+    "tags": [
+        "Apache HTTP Server",
+        "Uniform Resource Locators (URLs)",
+        "PHP (programming language)",
+        "Search Engine Optimization (SEO)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Prince Antony",
+                "href": "/profile/Prince-Antony-3"
+            },
+            "answer_text": "RewriteEngine on // If the host is just mydomain.com, do nothing moreRewriteCond %{HTTP_HOST} ^(www\\.)?mydomain\\.com$ [NC]RewriteRule ^.*$ - [L] // Otherwise strip off everything before mydomain// And add it to the start of the requestRewriteCond %{HTTP_HOST} ^(.*?)\\.(www\\.)?mydomain\\.com$ [NC]RewriteRule ^.*$ http://mydomain.com/%1%{REQUEST_URI} [L] ",
+            "date": "Answered April 11, 2014",
+            "views": "771",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Andi Muqsith",
+                    "user_href": "/profile/Andi-Muqsith-1"
+                }
+            ]
+        }
+    ]
+}

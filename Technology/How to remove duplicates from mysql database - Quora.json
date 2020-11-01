@@ -1,0 +1,40 @@
+{
+    "title": "How to remove duplicates from mysql database - Quora",
+    "tags": [
+        "MySQL",
+        "Database Systems",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Teddy Alleppey",
+                "href": "/profile/Teddy-Alleppey"
+            },
+            "answer_text": "BEFORE CREATING A TABLE You can use a PRIMARY KEY or UNIQUE Index on a table with appropriate fields to stop duplicate records. Let's take one example: The following table contains no such index or primary key, so it would allow duplicate records for first_name and last_name. CREATE TABLE person_tbl \u00a0( \u00a0first_name CHAR(20), \u00a0last_name CHAR(20), \u00a0sex CHAR(10) \u00a0);\u00a0Removing Duplicates Using Table Replacement: If you have duplicate records in a table and you want to remove all the duplicate records from that table, then here is the procedure: mysql> CREATE TABLE tmp SELECT last_name, first_name, sex -> FROM person_tbl; -> GROUP BY (last_name, first_name); mysql> DROP TABLE person_tbl; mysql> ALTER TABLE tmp RENAME TO person_tbl;\u00a0An easy way of removing duplicate records from a table is to add an INDEX or PRIMAY KEY to that table. Even if this table is already available, you can use this technique to remove duplicate records and you will be safe in future as well. mysql> ALTER IGNORE TABLE person_tbl -> ADD PRIMARY KEY (last_name, first_name);\u00a0",
+            "date": "Answered January 8, 2016",
+            "views": "355",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vasil Frans",
+                    "user_href": "/profile/Vasil-Frans"
+                },
+                {
+                    "user_id": "Ruslan Akhmyatzanov",
+                    "user_href": "/profile/Ruslan-Akhmyatzanov"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dennis Anikin",
+                "href": "/profile/Dennis-Anikin"
+            },
+            "answer_text": "1. Select the distinct list of all the fields into a temporary table 2. Drop the original table 3. Rename the temporary table to the original table ",
+            "date": "Answered January 8, 2016",
+            "views": "133",
+            "upvotes": " Answer requested by Akash Chougale"
+        }
+    ]
+}

@@ -1,0 +1,114 @@
+{
+    "title": "What's the easiest way to prove the Heisenberg uncertainty principle? - Quora",
+    "tags": [
+        "Major Concepts in Quantum Mechanics",
+        "Heisenberg Uncertainty Principle",
+        "Quantum Mechanics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark John Fernee",
+                "href": "/profile/Mark-John-Fernee"
+            },
+            "answer_text": "I think the easiest way to prove the Heisenberg uncertainty principle is to use the property that conjugate observables do not commute. That means you can use linear algebra to quickly derive the uncertainty principle. The benefit of using this approach is that you obtain a more general condition and show in addition that the Heisenberg uncertainty principle is a property that arises as a fundamental consequence of the axioms of quantum theory. One of the fundamental axioms of quantum mechanics is that physical observables are represented by Hermitian operators. Hermitian matrices are defined in linear algebra to be matrices that have real eigenvalues. There is a direct correspondence between a Hermitian operator and a Hermitian matrix. Once we know that we are dealing with quantum operators being mapped onto matrices, we immediately know that the product of two matrices do not commutative. Therefore for two matrices, [math]A[/math] and [math]B[/math], we have in general, [math]AB\\neq BA[/math] which we can write as [math][A,B] \\equiv AB-BA \\neq 0[/math] This is the only property we need to reveal the Heisenberg uncertainty relation. Let\u2019s define the fluctuation in each measurement as [math]\\sigma_A \\equiv |\\langle A-\\langle A\\rangle\\rangle|[/math] [math]\\sigma_B \\equiv |\\langle B-\\langle B\\rangle\\rangle|[/math] If we write the product of the squares of the fluctuations, [math]|\\sigma_A|^2 \\, |\\sigma_B|^2[/math] We can show that each squared factor has the form of a vector inner product. (It\u2019s not hard, but I won\u2019t do it for brevity) That allows us to use the Cauchy-Schwarz inequality, which states that for two vectors, [math]\\vec{u}[/math] and [math]\\vec{v}[/math], [math]|\\vec{u}|^2\\, |\\vec{v}|^2 \\geq |\\vec{u}\\cdot\\vec{v}|^2[/math] Now we can write the product of the squares of the fluctuations as follows, [math]|\\sigma_A|^2 \\, |\\sigma_B|^2\\geq|\\langle (A-\\langle A\\rangle)(B-\\langle B\\rangle)\\rangle|^2[/math] The expression inside the modulus squared is in general a complex number. Therefore we can write the modulus squared as, the square of the real part plus the square of the imaginary part. We can just consider the imaginary part and the inequality will still hold. For some complex number, [math]c[/math], we can write, [math]Im(c)=\\dfrac{1}{2i}(c-c^*)[/math] Now we can write the product of the squares of the fluctuations, which simplifies as follows, [math]|\\sigma_A|^2 \\, |\\sigma_B|^2\\geq|\\dfrac{1}{2i}\\langle AB-BA\\rangle|^2[/math] or simply, [math]|\\sigma_A|^2 \\, |\\sigma_B|^2\\geq|\\dfrac{1}{2i}\\langle [A,B]\\rangle|^2[/math] Taking the square root of both sides gives the general uncertainty relation expressed in terms of the commutation relation. [math]|\\sigma_A| \\, |\\sigma_B|\\geq|\\dfrac{1}{2i}\\langle [A,B]\\rangle|[/math] Now let\u2019s consider the commutation relation for the position and momentum quantum operators (which can be represented by matrices), [math]\\hat{x} [/math]and [math]\\hat{p}[/math], [math][\\hat{x},\\hat{p}] = i\\hbar[/math] Then the general uncertainty relation is simply the well known Heisenberg uncertainty relation. [math]\\sigma_x \\, \\sigma_p \\geq \\dfrac{\\hbar}{2}[/math] I think this is quite a simple and direct derivation of the HUP, which has the advantage of revealing that there is a general uncertainty between any two noncommuting operators. All we used was the commutation property, the Cauchy- Schwarz inequality and a property of complex numbers and very few steps to arrive at the desired result. ",
+            "date": "Answered August 31, 2018",
+            "views": "18",
+            "upvotes": " View 24 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rohan Chaudhary",
+                    "user_href": "/profile/Rohan-Chaudhary-180"
+                },
+                {
+                    "user_id": "Hamza Kamran",
+                    "user_href": "/profile/Hamza-Kamran-20"
+                },
+                {
+                    "user_id": "Manju Maladkar (\u0cae\u0c82\u0c9c\u0cc1 \u0cae\u0cbe\u0cb3\u0ca6\u0c95\u0cb0\u0ccd))",
+                    "user_href": "/profile/Manju-Maladkar-\u0cae\u0c82\u0c9c\u0cc1-\u0cae\u0cbe\u0cb3\u0ca6\u0c95\u0cb0\u0ccd"
+                },
+                {
+                    "user_id": "Bob Gluck",
+                    "user_href": "/profile/Bob-Gluck-3"
+                },
+                {
+                    "user_id": "Swagata Hazra",
+                    "user_href": "/profile/Swagata-Hazra-1"
+                },
+                {
+                    "user_id": "Krishna Murthy",
+                    "user_href": "/profile/Krishna-Murthy-240"
+                },
+                {
+                    "user_id": "Hector Avila",
+                    "user_href": "/profile/Hector-Avila"
+                },
+                {
+                    "user_id": "John Gould",
+                    "user_href": "/profile/John-Gould-6"
+                },
+                {
+                    "user_id": "Tyler Riordan",
+                    "user_href": "/profile/Tyler-Riordan-5"
+                },
+                {
+                    "user_id": "Benyamin Kellow",
+                    "user_href": "/profile/Benyamin-Kellow"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Muller",
+                "href": "/profile/Richard-Muller-3"
+            },
+            "answer_text": "Easiest, for me, is to use the theorem from advanced calculus, derived by Fourier about 100 years before Heisenberg did his work.  He showed that a superposition of waves could not have both a small size and also a small number of frequencies.  Specifically, he showed that  [math]\\Delta k \\Delta x \\ge 1/2[/math] In this equation, k is the \"wavenumber\", or the \"spatial frequency\", equal to 2\u03c0/wavelength. I emphasize that this equation is only based on the mathematics of Fourier transforms.  It has nothing to do with quantum mechanics. Now recognize that for the wave function, the momentum of the particle is given by p = (h/2\u03c0)k.  So take the Fourier equation, multiply both sides by (h/2\u03c0), and you get [math]\\Delta p \\Delta x \\ge h/4\u03c0[/math] Since the wave function is a wave, this equation is an immediate consequence.  This is Heisenberg's uncertainty relationship.  Because it is quantum physics, we no longer interpret [math]\\Delta p[/math] as a range of spatial frequencies, but as an uncertainty.  That's because the standard (\"Copenhagen\") interpretation of quantum mechanics says that a measurement will detect only one of the many waves that compose the pulse.  This derivation is not an approximation or a heuristic argument, but a correct derivation, and as a result it gives the exact Heisenberg relationship.  Of course, in order to understand it, you have to understand the properties of waves, and that was worked out by Fourier.   There are other \"heuristic\" ways to see the relationship.  Some of these refer to the fact that measurement \"must disturb\" the particle.  In fact, the only assumption that you need to make in modern quantum physics is that a measurement causes the wave function to \"collapse\", meaning that only one of its many components will be detected. ",
+            "date": "Answered October 23, 2015",
+            "views": "525",
+            "upvotes": " View 524 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vaibhav Sharma",
+                    "user_href": "/profile/Vaibhav-Sharma-18"
+                },
+                {
+                    "user_id": "Hongwan Liu",
+                    "user_href": "/profile/Hongwan-Liu"
+                },
+                {
+                    "user_id": "Daniel Slosberg",
+                    "user_href": "/profile/Daniel-Slosberg-1"
+                },
+                {
+                    "user_id": "Venkatesh V Ranjan",
+                    "user_href": "/profile/Venkatesh-V-Ranjan"
+                },
+                {
+                    "user_id": "Tom Hendrix",
+                    "user_href": "/profile/Tom-Hendrix-2"
+                },
+                {
+                    "user_id": "Jeremy Lim",
+                    "user_href": "/profile/Jeremy-Lim-66"
+                },
+                {
+                    "user_id": "Allan Steinhardt",
+                    "user_href": "/profile/Allan-Steinhardt"
+                },
+                {
+                    "user_id": "Mike Richmond",
+                    "user_href": "/profile/Mike-Richmond-1"
+                },
+                {
+                    "user_id": "Amratansh Gupta",
+                    "user_href": "/profile/Amratansh-Gupta"
+                },
+                {
+                    "user_id": "Rohan Chaudhary",
+                    "user_href": "/profile/Rohan-Chaudhary-180"
+                }
+            ]
+        }
+    ]
+}

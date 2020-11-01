@@ -1,0 +1,1077 @@
+{
+    "title": "What are the hardest concepts in physics for video game developers to get right? - Quora",
+    "tags": [
+        "Video Game Developers",
+        "Video Game Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Matthew S. Stenquist",
+                "href": "/profile/Matthew-S-Stenquist"
+            },
+            "answer_text": "This is a tough question because there\u2019s a lot of physics in games these days. There\u2019s getting the physics component right and then ensuring that it feels right via game feel. Game feel is about how the game feels to the player. It\u2019s the UX of game mechanics and dynamics. It\u2019s one thing to know physics, and it\u2019s another to make physics work and feel well in the game world (aka: magic circle). Another thing to make note of is the use of physics in relation to what you want to accomplish for your game. Do you want to make a platformer, or a first person shooter? Both these genres are entirely different, and make use of physics differently. Below are some challenging physics game developers often struggle with. Ray-tracing / casting / Hitscanning physics.Ray-tracing, hit scanning, and casting is fairly difficult to get right and to make it feel good (game feel) requires a lot of finesse. This is the bread and butter to first person shooters and a lot of game mechanics. If a bullet doesn\u2019t feel right it could be its weight to anything in between ray-casting, and hit scanning. Collision can also be casted and if it doesn\u2019t feel good this could be the result of bad casting.Cloth Simulation / HairThis is hard to achieve on your own so using a middleware such as PhysX Clothing helps developers achieve realistic results - PhysX ClothingDense Crowd Simulation AI and physics.If there\u2019s one company in games that has a master on this it would be Ubisoft and its Assassins Creed franchise. Simulating crowds can be extremely difficult because there\u2019s so much to account for. Let\u2019s just run through this process in a rather crude example: Did body_001 hit body_002?Which direction is body_002 now facing? What forces are at play? Is body_001 and body_002 sliding on the ground? What physics should then be re-simulated? Is body_001, and body_002\u2019s interaction against each other now affecting body_003\u2013400? Etc, etc.AI Swarming and Path FindingGood AI that can read your games environment is a hard thing to tackle. Now imagine having AI cluster into groups that can hone towards a player and detect whether or not a player is standing on a platform or is on the same height as them. How do they physically interact with the world? What information do they know and what are the physics that they\u2019re allowed to perform.This process is handled mostly by engines these days, but doing path finding on your own using A* is fairly hard to get right especially if you want to do something more custom outside of what comes with the engine.Machine Learning Particle Physics.Simulating particle physics is somewhat hard. Simulating particles with Machine Learning is much more difficult.ML is an interesting field in relation to games development simply because it hasn\u2019t been widely used and adopted in games development. This is because you have to run simulations that then feed back to the end user. The trick is here is making sure you don\u2019t \u201cskynet\u201d your simulation. ML simulations can become so evolutionary that they start cheating or overpower the desired result you want to simulate. It\u2019s about balance in games design, and its a challenging process to code. Do you opt for a decision making tree, or do you use an evolutionary algorithm? Both of which can drastically affect the outcome of the simulation.Some references: Machine Learning Could Help Video Game Water Look Better Than EverPostmortem: Developing Systemic Crowd Events on Assassin's Creed UnityDesign in Detail: Changing the Time Between Shots for the Sniper Rifle from 0.5 to 0.7 Seconds for Halo 3HitscanRay tracing (graphics)Ray castinghttp://www.gamasutra.com/blogs/AlexandruVoica/20140318/213148/Practical_techniques_for_ray_tracing_in_games.php",
+            "date": "Updated June 26, 2016",
+            "views": "109",
+            "upvotes": " View 88 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rimas Ikrak",
+                    "user_href": "/profile/Rimas-Ikrak"
+                },
+                {
+                    "user_id": "Balazs Gobel",
+                    "user_href": "/profile/Balazs-Gobel"
+                },
+                {
+                    "user_id": "John Tomilson",
+                    "user_href": "/profile/John-Tomilson"
+                },
+                {
+                    "user_id": "Avihai Ozana",
+                    "user_href": "/profile/Avihai-Ozana-1"
+                },
+                {
+                    "user_id": "Diego Lodi Torezan",
+                    "user_href": "/profile/Diego-Lodi-Torezan"
+                },
+                {
+                    "user_id": "Umair Zia",
+                    "user_href": "/profile/Umair-Zia-4"
+                },
+                {
+                    "user_id": "Alec Benner",
+                    "user_href": "/profile/Alec-Benner-1"
+                },
+                {
+                    "user_id": "Arkin Dharawat",
+                    "user_href": "/profile/Arkin-Dharawat-1"
+                },
+                {
+                    "user_id": "Francis Chen",
+                    "user_href": "/profile/Francis-Chen-2"
+                },
+                {
+                    "user_id": "Michael Hsiu",
+                    "user_href": "/profile/Michael-Hsiu-1"
+                },
+                {
+                    "user_id": "Akshay Rajput",
+                    "user_href": "/profile/Akshay-Rajput-3"
+                },
+                {
+                    "user_id": "AbdelHameed Hamed",
+                    "user_href": "/profile/AbdelHameed-Hamed"
+                },
+                {
+                    "user_id": "Suraj Dubey",
+                    "user_href": "/profile/Suraj-Dubey"
+                },
+                {
+                    "user_id": "Saurav Shekhar",
+                    "user_href": "/profile/Saurav-Shekhar-1"
+                },
+                {
+                    "user_id": "Shreyans Doshi",
+                    "user_href": "/profile/Shreyans-Doshi"
+                },
+                {
+                    "user_id": "David A Robinson",
+                    "user_href": "/profile/David-A-Robinson"
+                },
+                {
+                    "user_id": "Murat Ozdemir",
+                    "user_href": "/profile/Murat-Ozdemir-2"
+                },
+                {
+                    "user_id": "Darshan Tank",
+                    "user_href": "/profile/Darshan-Tank-3"
+                },
+                {
+                    "user_id": "Sagar Sinha",
+                    "user_href": "/profile/Sagar-Sinha-2"
+                },
+                {
+                    "user_id": "Srinivas Lakshminarayan",
+                    "user_href": "/profile/Srinivas-Lakshminarayan"
+                },
+                {
+                    "user_id": "Vikas Jha",
+                    "user_href": "/profile/Vikas-Jha-26"
+                },
+                {
+                    "user_id": "Ashutosh Marwah",
+                    "user_href": "/profile/Ashutosh-Marwah"
+                },
+                {
+                    "user_id": "Samarth Sinha",
+                    "user_href": "/profile/Samarth-Sinha-3"
+                },
+                {
+                    "user_id": "Siddharth Gupta",
+                    "user_href": "/profile/Siddharth-Gupta-33"
+                },
+                {
+                    "user_id": "Abhash Kumar Singh",
+                    "user_href": "/profile/Abhash-Kumar-Singh"
+                },
+                {
+                    "user_id": "Abhisek Chaudhuri",
+                    "user_href": "/profile/Abhisek-Chaudhuri-1"
+                },
+                {
+                    "user_id": "Ankit Malasi",
+                    "user_href": "/profile/Ankit-Malasi-1"
+                },
+                {
+                    "user_id": "Thomas George",
+                    "user_href": "/profile/Thomas-George-76"
+                },
+                {
+                    "user_id": "Fatih",
+                    "user_href": "/profile/Fatih-11"
+                },
+                {
+                    "user_id": "Aditya Gupta",
+                    "user_href": "/profile/Aditya-Gupta-149"
+                },
+                {
+                    "user_id": "Nicholas Lu",
+                    "user_href": "/profile/Nicholas-Lu-5"
+                },
+                {
+                    "user_id": "Hareendra Reddy Donapati",
+                    "user_href": "/profile/Hareendra-Reddy-Donapati"
+                },
+                {
+                    "user_id": "Vandan Phadke",
+                    "user_href": "/profile/Vandan-Phadke"
+                },
+                {
+                    "user_id": "Rohit Shinde",
+                    "user_href": "/profile/Rohit-Shinde-2"
+                },
+                {
+                    "user_id": "Raj Sharma",
+                    "user_href": "/profile/Raj-Sharma-347"
+                },
+                {
+                    "user_id": "Ky Lam Ngo",
+                    "user_href": "/profile/Ky-Lam-Ngo"
+                },
+                {
+                    "user_id": "Martin Fox",
+                    "user_href": "/profile/Martin-Fox-3"
+                },
+                {
+                    "user_id": "Justin Herchel",
+                    "user_href": "/profile/Justin-Herchel"
+                },
+                {
+                    "user_id": "Tom Cheng",
+                    "user_href": "/profile/Tom-Cheng-8"
+                },
+                {
+                    "user_id": "Tharik Oliveira Hajar",
+                    "user_href": "/profile/Tharik-Oliveira-Hajar"
+                },
+                {
+                    "user_id": "Saksham Sinha",
+                    "user_href": "/profile/Saksham-Sinha-1"
+                },
+                {
+                    "user_id": "Itay Rosenbach",
+                    "user_href": "/profile/Itay-Rosenbach"
+                },
+                {
+                    "user_id": "Ricky Winata",
+                    "user_href": "/profile/Ricky-Winata"
+                },
+                {
+                    "user_id": "Kelly Schultz Dailey",
+                    "user_href": "/profile/Kelly-Schultz-Dailey"
+                },
+                {
+                    "user_id": "Slater Dixon",
+                    "user_href": "/profile/Slater-Dixon"
+                },
+                {
+                    "user_id": "V\u00edtor Lu\u00eds",
+                    "user_href": "/profile/V\u00edtor-Lu\u00eds"
+                },
+                {
+                    "user_id": "Jagjeet Singh",
+                    "user_href": "/profile/Jagjeet-Singh-40"
+                },
+                {
+                    "user_id": "Miguel Valdespino",
+                    "user_href": "/profile/Miguel-Valdespino"
+                },
+                {
+                    "user_id": "Kashish Jagga",
+                    "user_href": "/profile/Kashish-Jagga"
+                },
+                {
+                    "user_id": "Anush",
+                    "user_href": "/profile/Anush-25"
+                },
+                {
+                    "user_id": "Dinesh Kumar",
+                    "user_href": "/profile/Dinesh-Kumar-71"
+                },
+                {
+                    "user_id": "Abhikalp Unakal",
+                    "user_href": "/profile/Abhikalp-Unakal"
+                },
+                {
+                    "user_id": "Maruf Morshed Khan",
+                    "user_href": "/profile/Maruf-Morshed-Khan"
+                },
+                {
+                    "user_id": "Sumit Bhanushali",
+                    "user_href": "/profile/Sumit-Bhanushali"
+                },
+                {
+                    "user_id": "Shobhit Bakliwal",
+                    "user_href": "/profile/Shobhit-Bakliwal"
+                },
+                {
+                    "user_id": "Afiq C. Man",
+                    "user_href": "/profile/Afiq-C-Man"
+                },
+                {
+                    "user_id": "Yash Vardhan Verma",
+                    "user_href": "/profile/Yash-Vardhan-Verma"
+                },
+                {
+                    "user_id": "Soumik Bhattacharyya",
+                    "user_href": "/profile/Soumik-Bhattacharyya-1"
+                },
+                {
+                    "user_id": "Sadeep Darshana",
+                    "user_href": "/profile/Sadeep-Darshana"
+                },
+                {
+                    "user_id": "Nige Fongster",
+                    "user_href": "/profile/Nige-Fongster"
+                },
+                {
+                    "user_id": "Sidharth Samant",
+                    "user_href": "/profile/Sidharth-Samant"
+                },
+                {
+                    "user_id": "Poojan Shrestha",
+                    "user_href": "/profile/Poojan-Shrestha"
+                },
+                {
+                    "user_id": "Sahil Juneja",
+                    "user_href": "/profile/Sahil-Juneja-1"
+                },
+                {
+                    "user_id": "Ashray Manepalli",
+                    "user_href": "/profile/Ashray-Manepalli"
+                },
+                {
+                    "user_id": "Derrick Bol",
+                    "user_href": "/profile/Derrick-Bol"
+                },
+                {
+                    "user_id": "Mark Farrell",
+                    "user_href": "/profile/Mark-Farrell-6"
+                },
+                {
+                    "user_id": "Sourabh Patil",
+                    "user_href": "/profile/Sourabh-Patil"
+                },
+                {
+                    "user_id": "Vaibhav Tulsyan",
+                    "user_href": "/profile/Vaibhav-Tulsyan"
+                },
+                {
+                    "user_id": "Trevor Hartley",
+                    "user_href": "/profile/Trevor-Hartley-1"
+                },
+                {
+                    "user_id": "Premsai Reddy",
+                    "user_href": "/profile/Premsai-Reddy"
+                },
+                {
+                    "user_id": "Karan Shah",
+                    "user_href": "/profile/Karan-Shah-33"
+                },
+                {
+                    "user_id": "Aradhya Makkar",
+                    "user_href": "/profile/Aradhya-Makkar-1"
+                },
+                {
+                    "user_id": "Srikar Mutnuri",
+                    "user_href": "/profile/Srikar-Mutnuri-1"
+                },
+                {
+                    "user_id": "Akash Tandon",
+                    "user_href": "/profile/Akash-Tandon-1"
+                },
+                {
+                    "user_id": "Vidit Jain",
+                    "user_href": "/profile/Vidit-Jain"
+                },
+                {
+                    "user_id": "Sandeep Regulla",
+                    "user_href": "/profile/Sandeep-Regulla"
+                },
+                {
+                    "user_id": "Bhavya Pruthi",
+                    "user_href": "/profile/Bhavya-Pruthi"
+                },
+                {
+                    "user_id": "Manish Sharma",
+                    "user_href": "/profile/Manish-Sharma-33"
+                },
+                {
+                    "user_id": "Karthikeya Devaprasad",
+                    "user_href": "/profile/Karthikeya-Devaprasad"
+                },
+                {
+                    "user_id": "Thomas Aquinas",
+                    "user_href": "/profile/Thomas-Aquinas-1"
+                },
+                {
+                    "user_id": "Johnny Duong",
+                    "user_href": "/profile/Johnny-Duong-3"
+                },
+                {
+                    "user_id": "Anurag Ghosh",
+                    "user_href": "/profile/Anurag-Ghosh-3"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Alecia Li Morgan",
+                    "user_href": "/profile/Alecia-Li-Morgan"
+                },
+                {
+                    "user_id": "Joseph Anthony",
+                    "user_href": "/profile/Joseph-Anthony-30"
+                },
+                {
+                    "user_id": "Jeff Wilson",
+                    "user_href": "/profile/Jeff-Wilson-32"
+                },
+                {
+                    "user_id": "Tom Musgrove",
+                    "user_href": "/profile/Tom-Musgrove"
+                },
+                {
+                    "user_id": "Sabrina Ali",
+                    "user_href": "/profile/Sabrina-Ali-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Al Nelson",
+                "href": "/profile/Al-Nelson"
+            },
+            "answer_text": "Very few. It is not that difficult to type in the math from a physics textbook. We even have coders with a physics background. PhD mathematicians too. Known physics concepts that can be described can be simulated on computers by game devs or physics profs. The question, in my view, is what are the hardest physics to simplify and shortcut, to function well on the end user\u2019s hardware. The limits are at delivery. We have always created first order approximations of the physics in racing and flying games, for instance, because the classical methods hinder frame rate. It is possible to understand the dynamics of a given vehicle, with specific properties, with certain road conditions, to considerable depth. I\u2019ve participated in that kind of exercise for a litigation animation that was able to analyze the cause of a terrible tractor/trailer accident where no participants were left alive. We had to document and certify our methods to the court\u2019s satisfaction. We didn\u2019t have to run the physics-rich animation on a normal PC, however. In another example, a game team I worked with was pulled into court and charged with getting inappropriate access to the military\u2019s own, high end, fighter plane, flight simulation code. The claimant said our fighter game was impossibly close to the classified simulator in look and feel. Our response was to point out, that to render enough polygons to maintain performance, the military required a custom made, 6 million dollar computer. Our game ran as fast and looked as good, on a first generation Pentium PC from Best Buy. \u201cCase dismissed\u201d. We knew the kind of math the real sim used, but we approximated it to feel close enough, without costing so many clock cycles. That is the art. So, as I often say, upgrade often. We\u2019ll do as much as end user\u2019s machine can manage. ",
+            "date": "Answered June 23, 2016",
+            "views": "21",
+            "upvotes": " View 30 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Ninad Jadhav",
+                    "user_href": "/profile/Ninad-Jadhav-13"
+                },
+                {
+                    "user_id": "Petra Blackstone",
+                    "user_href": "/profile/Petra-Blackstone-1"
+                },
+                {
+                    "user_id": "George Stepanek",
+                    "user_href": "/profile/George-Stepanek"
+                },
+                {
+                    "user_id": "Tim Miller",
+                    "user_href": "/profile/Tim-Miller-132"
+                },
+                {
+                    "user_id": "Gerard van Wilgen",
+                    "user_href": "/profile/Gerard-van-Wilgen"
+                },
+                {
+                    "user_id": "Jordan Shank",
+                    "user_href": "/profile/Jordan-Shank-2"
+                },
+                {
+                    "user_id": "Brendan Chase",
+                    "user_href": "/profile/Brendan-Chase-2"
+                },
+                {
+                    "user_id": "Andrei Streche",
+                    "user_href": "/profile/Andrei-Streche-1"
+                },
+                {
+                    "user_id": "Kashyap Chitloor Ravindranath",
+                    "user_href": "/profile/Kashyap-Chitloor-Ravindranath"
+                },
+                {
+                    "user_id": "Elias Mossholm",
+                    "user_href": "/profile/Elias-Mossholm"
+                },
+                {
+                    "user_id": "Brendan Burkhart",
+                    "user_href": "/profile/Brendan-Burkhart"
+                },
+                {
+                    "user_id": "Vishal Desai",
+                    "user_href": "/profile/Vishal-Desai-5"
+                },
+                {
+                    "user_id": "Paul Johnson",
+                    "user_href": "/profile/Paul-Johnson-2"
+                },
+                {
+                    "user_id": "Vivek Padmaji",
+                    "user_href": "/profile/Vivek-Padmaji"
+                },
+                {
+                    "user_id": "Karthikeya Devaprasad",
+                    "user_href": "/profile/Karthikeya-Devaprasad"
+                },
+                {
+                    "user_id": "Domen Grabec",
+                    "user_href": "/profile/Domen-Grabec"
+                },
+                {
+                    "user_id": "Morgen Peschke",
+                    "user_href": "/profile/Morgen-Peschke"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                },
+                {
+                    "user_id": "Christopher Reddington",
+                    "user_href": "/profile/Christopher-Reddington"
+                },
+                {
+                    "user_id": "Mitch Siegel",
+                    "user_href": "/profile/Mitch-Siegel-2"
+                },
+                {
+                    "user_id": "Mike Prinke",
+                    "user_href": "/profile/Mike-Prinke"
+                },
+                {
+                    "user_id": "Dan Dragan",
+                    "user_href": "/profile/Dan-Dragan-2"
+                },
+                {
+                    "user_id": "Nathan Winstone",
+                    "user_href": "/profile/Nathan-Winstone"
+                },
+                {
+                    "user_id": "Jos\u00e9 Miguel Arroyo",
+                    "user_href": "/profile/Jos\u00e9-Miguel-Arroyo"
+                },
+                {
+                    "user_id": "Saurabh Saralaya",
+                    "user_href": "/profile/Saurabh-Saralaya"
+                },
+                {
+                    "user_id": "Ankit Kumar",
+                    "user_href": "/profile/Ankit-Kumar-535"
+                },
+                {
+                    "user_id": "Matthew S. Stenquist",
+                    "user_href": "/profile/Matthew-S-Stenquist"
+                },
+                {
+                    "user_id": "Jeff Wilson",
+                    "user_href": "/profile/Jeff-Wilson-32"
+                },
+                {
+                    "user_id": "Rodger Branson",
+                    "user_href": "/profile/Rodger-Branson"
+                },
+                {
+                    "user_id": "Sabrina Ali",
+                    "user_href": "/profile/Sabrina-Ali-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Matti Porkka",
+                "href": "/profile/Matti-Porkka"
+            },
+            "answer_text": "Most video game developers never touch any hard physics concepts in games. Why? Because 99% of games that are ever developed are incredibly simple! Seriously. This is because most gamers are relatively simple people by their understanding of physics and by their willingness to dig into complex issues. In general games mostly try to avoid any complexity and are always moving in the direction of simplicity and abstraction. From my experience working on my own projects I think it was quite the effort to get orbital model approximations right and I didn\u2019t even do it the hard way but instead used the incredibly simple and elegant Keplerian approximation for calculating orbital positions from initial parameters. I\u2019ve also had a hobby when designing games - I try to design game mechanics that abstract how physics actually work into game mechanics and rules. But in general most designers simply make up rules without this design challenge so that they can more easily arrive at rules that end up with fun gameplay. I would agree with what Daniel Super answered to a similar question. Physics in games is incredibly easy. But we don\u2019t get to play with physics a lot. When a game needs physics we usually end up having to abstract and emulate it\u2019s effects. Essentially we\u2019ll be tasked to cheat and approximate results that are similar to real physics with minimal CPU and memory usage. But there\u2019s one aspect of physics that\u2019s really hard and which we want in games: Fluids! There are several algorithms for dealing with fluids and they\u2019re mostly divided into two categories: realistic ones that are incredibly costly on the CPU and mostly don\u2019t actually work during runtime in a gamecheap ones that can be used during runtime that look pretty awful and unrealisticBesides fluids there are things like sand etc. that would be nice to have behaving realistically in a game. But things like dynamically shifting terrains are hard to handle during runtime, not just visualizing them right but getting the entire world to react to the changes appropriately \u201cintelligently\u201d. ",
+            "date": "Answered June 29, 2016",
+            "views": "63",
+            "upvotes": " View 33 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Herr F\u00fchrer",
+                    "user_href": "/profile/Herr-F\u00fchrer"
+                },
+                {
+                    "user_id": "Daniel Svensson",
+                    "user_href": "/profile/Daniel-Svensson-31"
+                },
+                {
+                    "user_id": "Jack Dubs",
+                    "user_href": "/profile/Jack-Dubs-1"
+                },
+                {
+                    "user_id": "Gerard van Wilgen",
+                    "user_href": "/profile/Gerard-van-Wilgen"
+                },
+                {
+                    "user_id": "Doron Yariv",
+                    "user_href": "/profile/Doron-Yariv"
+                },
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Niels Peter Rasmussen",
+                    "user_href": "/profile/Niels-Peter-Rasmussen"
+                },
+                {
+                    "user_id": "Raghav Mishra",
+                    "user_href": "/profile/Raghav-Mishra-1"
+                },
+                {
+                    "user_id": "Maxwell Riley",
+                    "user_href": "/profile/Maxwell-Riley"
+                },
+                {
+                    "user_id": "Reuben Painter",
+                    "user_href": "/profile/Reuben-Painter"
+                },
+                {
+                    "user_id": "Dallas Herrmann",
+                    "user_href": "/profile/Dallas-Herrmann"
+                },
+                {
+                    "user_id": "Abhishek Sharma",
+                    "user_href": "/profile/Abhishek-Sharma-1042"
+                },
+                {
+                    "user_id": "Bart Loews",
+                    "user_href": "/profile/Bart-Loews"
+                },
+                {
+                    "user_id": "Willy George Amaral Petrenko",
+                    "user_href": "/profile/Willy-George-Amaral-Petrenko"
+                },
+                {
+                    "user_id": "Swapnil Bhattacharjee",
+                    "user_href": "/profile/Swapnil-Bhattacharjee"
+                },
+                {
+                    "user_id": "Philip Sutanto",
+                    "user_href": "/profile/Philip-Sutanto"
+                },
+                {
+                    "user_id": "Daniel Spar",
+                    "user_href": "/profile/Daniel-Spar-1"
+                },
+                {
+                    "user_id": "Ricky Tan",
+                    "user_href": "/profile/Ricky-Tan-18"
+                },
+                {
+                    "user_id": "William Chen",
+                    "user_href": "/profile/William-Chen-6"
+                },
+                {
+                    "user_id": "Brendan Chase",
+                    "user_href": "/profile/Brendan-Chase-2"
+                },
+                {
+                    "user_id": "Harrison Lo",
+                    "user_href": "/profile/Harrison-Lo-2"
+                },
+                {
+                    "user_id": "Nitin Gautam",
+                    "user_href": "/profile/Nitin-Gautam-2"
+                },
+                {
+                    "user_id": "Sabrina Ali",
+                    "user_href": "/profile/Sabrina-Ali-2"
+                },
+                {
+                    "user_id": "Brian N Tran",
+                    "user_href": "/profile/Brian-N-Tran"
+                },
+                {
+                    "user_id": "Christopher Reddington",
+                    "user_href": "/profile/Christopher-Reddington"
+                },
+                {
+                    "user_id": "Jen Gronroos",
+                    "user_href": "/profile/Jen-Gronroos"
+                },
+                {
+                    "user_id": "Anika Perera",
+                    "user_href": "/profile/Anika-Perera-1"
+                },
+                {
+                    "user_id": "Khang Nguyen",
+                    "user_href": "/profile/Khang-Nguyen-18"
+                },
+                {
+                    "user_id": "Saurabh Saralaya",
+                    "user_href": "/profile/Saurabh-Saralaya"
+                },
+                {
+                    "user_id": "Nur Endah Safitri",
+                    "user_href": "/profile/Nur-Endah-Safitri"
+                },
+                {
+                    "user_id": "Joseph Anthony",
+                    "user_href": "/profile/Joseph-Anthony-30"
+                },
+                {
+                    "user_id": "Daniel Super",
+                    "user_href": "/profile/Daniel-Super"
+                },
+                {
+                    "user_id": "Rajvir \"Daniel\" Singh",
+                    "user_href": "/profile/Rajvir-Daniel-Singh"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Ritson",
+                "href": "/profile/William-Ritson"
+            },
+            "answer_text": "In terms of sheer technical difficulty probably making truly realistic simulations of extremely computationally expensive phenomena. For example simulating the fluid and thermodynamics of a fire accurately. Doing that at real time is pretty much an unsolved problem. Fortunately its possible to make approximations of these things that work well enough for graphical or gameplay purposes. For example the look of a fire can be simulated using relatively simple particle systems (compared to the true physics of the situation). The gameplay of a spreading fire can be approximated using cellular automata. So while simulating a physically accurate fire is an very hard problem its not an extremely important one. Generally developers just limit the role of fire in there game or use an approximation that is good enough for their needs. Sometimes the approximation is actually better simply because it fits the design goals and is easier for players to understand and predict. Other fluid and softbody simulation problems are similarly infeasible to do in real time. Games tend to fake them in various ways. For example by using a pre created mesh for waves in the ocean then simply adding some procedural distortion rather than trying to actually simulate the water. ",
+            "date": "Answered June 23, 2016",
+            "views": "440",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mike Prinke",
+                    "user_href": "/profile/Mike-Prinke"
+                },
+                {
+                    "user_id": "Daniel Super",
+                    "user_href": "/profile/Daniel-Super"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Super",
+                "href": "/profile/Daniel-Super"
+            },
+            "answer_text": "It isn't really the concepts that are difficult to get right. Physics is fairly easy to model with a computer and even much of the complexity of using efficient to calculate approximations has been solved many times. What's difficult is the tuning of what you build with the physics. Even in a simple rigid body based physics simulation, every object has at least a half dozen parameters, mass, bouncyness, static friction, dynamic friction, linear drag, and angular drag. Adding in joints and motors makes for way more parameters to deal with. It's like one of those graphic equalizer you\u2019d get on a car stereo\u2026 You know, one of these things.  Except instead of 8 little sliders, you have hundreds, and if you put them in the wrong place the whole thing blows up. ",
+            "date": "Answered June 23, 2016",
+            "views": "38",
+            "upvotes": " View 77 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "John Tomilson",
+                    "user_href": "/profile/John-Tomilson"
+                },
+                {
+                    "user_id": "James Pappas",
+                    "user_href": "/profile/James-Pappas-2"
+                },
+                {
+                    "user_id": "Matt Shores",
+                    "user_href": "/profile/Matt-Shores-3"
+                },
+                {
+                    "user_id": "Mark Underwood",
+                    "user_href": "/profile/Mark-Underwood-36"
+                },
+                {
+                    "user_id": "Vib (\u0935\u093f\u092d\u093e\u0902\u0936\u0941)",
+                    "user_href": "/profile/Vib-\u0935\u093f\u092d\u093e\u0902\u0936\u0941"
+                },
+                {
+                    "user_id": "Sam McCormack",
+                    "user_href": "/profile/Sam-McCormack-7"
+                },
+                {
+                    "user_id": "Henrique Gomes",
+                    "user_href": "/profile/Henrique-Gomes-13"
+                },
+                {
+                    "user_id": "Kalyan Ayyagari",
+                    "user_href": "/profile/Kalyan-Ayyagari-1"
+                },
+                {
+                    "user_id": "Nitin Parmar",
+                    "user_href": "/profile/Nitin-Parmar-14"
+                },
+                {
+                    "user_id": "Filip \u0160vec",
+                    "user_href": "/profile/Filip-\u0160vec"
+                },
+                {
+                    "user_id": "Ivan Lim",
+                    "user_href": "/profile/Ivan-Lim-143"
+                },
+                {
+                    "user_id": "Chris Wright",
+                    "user_href": "/profile/Chris-Wright-61"
+                },
+                {
+                    "user_id": "Samrat Luitel",
+                    "user_href": "/profile/Samrat-Luitel"
+                },
+                {
+                    "user_id": "Sandeep Tuniki",
+                    "user_href": "/profile/Sandeep-Tuniki-1"
+                },
+                {
+                    "user_id": "Saul Tobin",
+                    "user_href": "/profile/Saul-Tobin"
+                },
+                {
+                    "user_id": "Louis Vaught",
+                    "user_href": "/profile/Louis-Vaught"
+                },
+                {
+                    "user_id": "Tim King",
+                    "user_href": "/profile/Tim-King-23"
+                },
+                {
+                    "user_id": "Filippo Romani",
+                    "user_href": "/profile/Filippo-Romani"
+                },
+                {
+                    "user_id": "Oskar Stangenberg",
+                    "user_href": "/profile/Oskar-Stangenberg"
+                },
+                {
+                    "user_id": "Kyle Ockerlund",
+                    "user_href": "/profile/Kyle-Ockerlund-1"
+                },
+                {
+                    "user_id": "Brendon Egolf",
+                    "user_href": "/profile/Brendon-Egolf"
+                },
+                {
+                    "user_id": "Saurabh Kulkarni",
+                    "user_href": "/profile/Saurabh-Kulkarni-46"
+                },
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "Jordan Shank",
+                    "user_href": "/profile/Jordan-Shank-2"
+                },
+                {
+                    "user_id": "Jackson Wolkins",
+                    "user_href": "/profile/Jackson-Wolkins"
+                },
+                {
+                    "user_id": "Wes Whiting",
+                    "user_href": "/profile/Wes-Whiting"
+                },
+                {
+                    "user_id": "Joel Lindegger",
+                    "user_href": "/profile/Joel-Lindegger"
+                },
+                {
+                    "user_id": "Ahmad Fauzan",
+                    "user_href": "/profile/Ahmad-Fauzan-7"
+                },
+                {
+                    "user_id": "Damien Laird",
+                    "user_href": "/profile/Damien-Laird"
+                },
+                {
+                    "user_id": "Jack Dubs",
+                    "user_href": "/profile/Jack-Dubs-1"
+                },
+                {
+                    "user_id": "Juan Fernandes",
+                    "user_href": "/profile/Juan-Fernandes-1"
+                },
+                {
+                    "user_id": "Wren Jayasekara",
+                    "user_href": "/profile/Wren-Jayasekara"
+                },
+                {
+                    "user_id": "Astrid King",
+                    "user_href": "/profile/Astrid-King"
+                },
+                {
+                    "user_id": "James McNaughton",
+                    "user_href": "/profile/James-McNaughton"
+                },
+                {
+                    "user_id": "Itay Rosenbach",
+                    "user_href": "/profile/Itay-Rosenbach"
+                },
+                {
+                    "user_id": "Ankit Mehrotra",
+                    "user_href": "/profile/Ankit-Mehrotra-7"
+                },
+                {
+                    "user_id": "Vaibhav Krishan",
+                    "user_href": "/profile/Vaibhav-Krishan"
+                },
+                {
+                    "user_id": "Derry Redjeki",
+                    "user_href": "/profile/Derry-Redjeki"
+                },
+                {
+                    "user_id": "Abhishek Sharma",
+                    "user_href": "/profile/Abhishek-Sharma-1042"
+                },
+                {
+                    "user_id": "Courtney Frederick",
+                    "user_href": "/profile/Courtney-Frederick-3"
+                },
+                {
+                    "user_id": "Satya Pranav",
+                    "user_href": "/profile/Satya-Pranav-1"
+                },
+                {
+                    "user_id": "Daniel Spar",
+                    "user_href": "/profile/Daniel-Spar-1"
+                },
+                {
+                    "user_id": "Ramon Carroll",
+                    "user_href": "/profile/Ramon-Carroll"
+                },
+                {
+                    "user_id": "Daniel Linds\u00e4th",
+                    "user_href": "/profile/Daniel-Linds\u00e4th"
+                },
+                {
+                    "user_id": "Predrag Maksimovich",
+                    "user_href": "/profile/Predrag-Maksimovich"
+                },
+                {
+                    "user_id": "Dave Cahill",
+                    "user_href": "/profile/Dave-Cahill-2"
+                },
+                {
+                    "user_id": "Riad Abdallah",
+                    "user_href": "/profile/Riad-Abdallah-3"
+                },
+                {
+                    "user_id": "David Amunga",
+                    "user_href": "/profile/David-Amunga"
+                },
+                {
+                    "user_id": "Manpal Sidhu",
+                    "user_href": "/profile/Manpal-Sidhu"
+                },
+                {
+                    "user_id": "Sabrina Ali",
+                    "user_href": "/profile/Sabrina-Ali-2"
+                },
+                {
+                    "user_id": "Richard Feynman",
+                    "user_href": "/profile/Richard-Feynman-26"
+                },
+                {
+                    "user_id": "Theo Horsmeier",
+                    "user_href": "/profile/Theo-Horsmeier"
+                },
+                {
+                    "user_id": "Kawsar Hassan",
+                    "user_href": "/profile/Kawsar-Hassan"
+                },
+                {
+                    "user_id": "Ben Grant",
+                    "user_href": "/profile/Ben-Grant-17"
+                },
+                {
+                    "user_id": "Vishal Desai",
+                    "user_href": "/profile/Vishal-Desai-5"
+                },
+                {
+                    "user_id": "Ryan Knightly",
+                    "user_href": "/profile/Ryan-Knightly-1"
+                },
+                {
+                    "user_id": "Matti Porkka",
+                    "user_href": "/profile/Matti-Porkka"
+                },
+                {
+                    "user_id": "Cyril Anderson",
+                    "user_href": "/profile/Cyril-Anderson"
+                },
+                {
+                    "user_id": "Zhiyuan Qi",
+                    "user_href": "/profile/Zhiyuan-Qi"
+                },
+                {
+                    "user_id": "Irvin L. Ortega",
+                    "user_href": "/profile/Irvin-L-Ortega"
+                },
+                {
+                    "user_id": "Mitch Siegel",
+                    "user_href": "/profile/Mitch-Siegel-2"
+                },
+                {
+                    "user_id": "Vijay Vishwa",
+                    "user_href": "/profile/Vijay-Vishwa-6"
+                },
+                {
+                    "user_id": "Steve Jones",
+                    "user_href": "/profile/Steve-Jones-235"
+                },
+                {
+                    "user_id": "Paul Johnson",
+                    "user_href": "/profile/Paul-Johnson-2"
+                },
+                {
+                    "user_id": "Vojt\u011bch Patschka",
+                    "user_href": "/profile/Vojt\u011bch-Patschka"
+                },
+                {
+                    "user_id": "Tristan Harris",
+                    "user_href": "/profile/Tristan-Harris-5"
+                },
+                {
+                    "user_id": "Karthikeya Devaprasad",
+                    "user_href": "/profile/Karthikeya-Devaprasad"
+                },
+                {
+                    "user_id": "Mike Prinke",
+                    "user_href": "/profile/Mike-Prinke"
+                },
+                {
+                    "user_id": "Gustavo Suarez",
+                    "user_href": "/profile/Gustavo-Suarez-1"
+                },
+                {
+                    "user_id": "Ion Caesar",
+                    "user_href": "/profile/Ion-Caesar"
+                },
+                {
+                    "user_id": "Brian N Tran",
+                    "user_href": "/profile/Brian-N-Tran"
+                },
+                {
+                    "user_id": "Harsh Deep",
+                    "user_href": "/profile/Harsh-Deep-4"
+                },
+                {
+                    "user_id": "Arav Singhal",
+                    "user_href": "/profile/Arav-Singhal-1"
+                },
+                {
+                    "user_id": "Horatio Oswald",
+                    "user_href": "/profile/Horatio-Oswald"
+                },
+                {
+                    "user_id": "Bradley Gray-Hall",
+                    "user_href": "/profile/Bradley-Gray-Hall"
+                },
+                {
+                    "user_id": "Jean Amarante",
+                    "user_href": "/profile/Jean-Amarante"
+                },
+                {
+                    "user_id": "Sahil Baviskar",
+                    "user_href": "/profile/Sahil-Baviskar-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Charles Wood",
+                "href": "/profile/Charles-Wood-28"
+            },
+            "answer_text": "The physics of a pool game, mostly just the drag on a ball. The drag is based on the balls weight, not it\u2019s velocity. (There is some air resistance.) So basically you have a constant force slowing balls down. This force will make your balls change direction if the force only needs .001 seconds of it to stop the ball, but frame time is .015 seconds. Most online pool games base the drag on velocity (makes it easier), but it takes forever for the balls to slow down and stop. But each ball has 3 different states. Sliding, Rolling and Stopped. You end up moving forward (especially on the break) nanoseconds of frame time and recalculating. And yet, in every game I\u2019ve played, sometimes a ball just rolls right through the cushion. I made a multiplayer billiards site in Java applets once. Ran it for years (with a profit) until all the browsers stopped supporting applets. It had, as my players said, \u201cThe best physics in the world for online pool.\u201d Maybe a 3D downloadable game had a little better physics (balls in the air). I\u2019d like to get it live again, but I\u2019m not coding all that javascript. No way. ",
+            "date": "Answered July 13, 2016",
+            "views": "421",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Grigory Yakushev",
+                "href": "/profile/Grigory-Yakushev"
+            },
+            "answer_text": "Some good answers already, so I mention a few things they miss: Accurate cloth/hair simulation. There\u2019s a lot of progress in this field recently, but I still see a lot of bugs/artifacts even in the best products. Destructible environments. Again, a lot of progress in this area, but games tend to fall into two buckets: either fully destructible but very simplified world like Minecraft. Or artistically rich but mostly non-destructible environments.Physics-based combat. Even in the best games swords won\u2019t connect at the right point and leave injury at the point of connect. Best products use animations instead of physics for this.",
+            "date": "Answered June 24, 2016",
+            "views": "887",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Janna Ukoko",
+                    "user_href": "/profile/Janna-Ukoko"
+                },
+                {
+                    "user_id": "Hans Wurst",
+                    "user_href": "/profile/Hans-Wurst-124"
+                },
+                {
+                    "user_id": "John Tomilson",
+                    "user_href": "/profile/John-Tomilson"
+                },
+                {
+                    "user_id": "Shreyas Dutt",
+                    "user_href": "/profile/Shreyas-Dutt-1"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/King-Volpes"
+                },
+                {
+                    "user_id": "Dinesh Kumar",
+                    "user_href": "/profile/Dinesh-Kumar-71"
+                },
+                {
+                    "user_id": "Sabrina Ali",
+                    "user_href": "/profile/Sabrina-Ali-2"
+                },
+                {
+                    "user_id": "Indrajeet Patil",
+                    "user_href": "/profile/Indrajeet-Patil-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hunter Johnson",
+                "href": "/profile/Hunter-Johnson-43"
+            },
+            "answer_text": "Fluid mechanics & dynamics. An interactive body of water that behaves realistically is far too computationally intensive for any gaming console to simulate. Accurate simulations of water systems and their properties for scientific applications usually require a supercomputer or at least several GPUs in parallel. ",
+            "date": "Answered June 23, 2016",
+            "views": "362",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Shaffer",
+                    "user_href": "/profile/David-Shaffer-14"
+                },
+                {
+                    "user_id": "Dale Leung",
+                    "user_href": "/profile/Dale-Leung"
+                },
+                {
+                    "user_id": "Cole Fun",
+                    "user_href": "/profile/Cole-Fun"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "V. Lakshman",
+                "href": "/profile/V-Lakshman-3"
+            },
+            "answer_text": "I'd agree with all the previous answers. From my perspective it's how physics can aid in realistic behavior of AI opponents. In general, I've found it very easy to discern between human and AI opponents on a mixed battlefield in most fps shooters, flight sims, sports games, or action RPGs. This includes raycasting (as mentioned before), collision detection, object / character interaction (act - react systems), and any kind of softbody or fluid dynamics (also previously mentioned). On the AI front, my fingers are crossed for a adaptive learning AI that evolves because of player actions. Not sure if this'll ever be done to a human being\u2019s satisfaction but thought I'd mention it. :) ",
+            "date": "Answered June 23, 2016",
+            "views": "456",
+            "upvotes": "0"
+        }
+    ]
+}

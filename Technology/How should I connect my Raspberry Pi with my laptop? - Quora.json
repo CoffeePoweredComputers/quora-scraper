@@ -1,0 +1,85 @@
+{
+    "title": "How should I connect my Raspberry Pi with my laptop? - Quora",
+    "tags": [
+        "HDMI",
+        "Raspberry Pi",
+        "Laptops",
+        "Electronics",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Madi Connors",
+                "href": "/profile/Madi-Connors"
+            },
+            "answer_text": "I guess it depends on what you mean by \u201cconnect\u201d. If you\u2019re trying to create a USB device built around a Raspberry Pi, the only model that can do that is the Zero, which has a USB OTG port. All of the other Pis use their USB-in port solely for power, so you can only connect to them through a network; most people would use Ethernet or Wifi, and the RPi 3 adds on-board Bluetooth support as well as Wifi. If all you need is a way to connect through ssh or whatever, a network connection will be sufficient. However, if you need a USB device (for example, as far as I know not even the Pi 3 supports Power over Ethernet), keep in mind that the Pi Zero still uses the BCM2835 CPU that shipped on the original Raspberry Pi models and therefore is rather limited in terms of computational power. If your USB device needs more oomph than the 2835 can deliver (especially if you need the NEON vector unit), I\u2019d skip the Pi family altogether and go with a BeagleBone (Black or Green, doesn\u2019t matter unless you need HDMI out too), and offload as much of the GPIO workload as you can to the Sitara\u2019s real-time cores. Maybe at some point they\u2019ll ship a quad-core version of the Zero, but until then, use the right tool for the job. ",
+            "date": "Answered September 13, 2016",
+            "views": "32",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Angela Gilhotra",
+                    "user_href": "/profile/Angela-Gilhotra"
+                },
+                {
+                    "user_id": "Jayasimha Reddy",
+                    "user_href": "/profile/Jayasimha-Reddy-53"
+                },
+                {
+                    "user_id": "Cai Linjin",
+                    "user_href": "/profile/Cai-Linjin"
+                },
+                {
+                    "user_id": "Harman Farwah",
+                    "user_href": "/profile/Harman-Farwah"
+                },
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                },
+                {
+                    "user_id": "Narottam Goyal",
+                    "user_href": "/profile/Narottam-Goyal"
+                },
+                {
+                    "user_id": "Chak Mark",
+                    "user_href": "/profile/Chak-Mark"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Hassan Ashraf",
+                "href": "/profile/Hassan-Ashraf-10"
+            },
+            "answer_text": "There are many ways to connect your Raspberry Pi to your laptop. But I am going to tell you about the cheapest and the best method according to me. The only piece of hardware that you need is an Ethernet cable to connect your pi to the laptop and you can use your laptops keyboard and mouse to send commands to the pi and even access the pi GUI.  Some pieces of software like Mobaxterm, Putty, DHCP server are needed.  Steps: Install and run DHCP server on your laptop. This is done to assign an IP to your Raspberry Pi when you connect it with your laptop.Connect your laptop and pi using the Ethernet cable. Run Mobaxterm and search the list of devices connected in your network. The Pi is the one which has SSH port open. Note the IP of pi shown there.Run putty and using the IP obtained from Mobaxterm establish a SSH connection. And you are done.You can even view the PI GUI by establishing a X server-client session using putty. ",
+            "date": "Answered April 29, 2016",
+            "views": "27",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dhiraj Kapoor",
+                    "user_href": "/profile/Dhiraj-Kapoor-7"
+                },
+                {
+                    "user_id": "Manish Joshi",
+                    "user_href": "/profile/Manish-Joshi-113"
+                },
+                {
+                    "user_id": "Faraz Ahmad",
+                    "user_href": "/profile/Faraz-Ahmad-38"
+                },
+                {
+                    "user_id": "Bobraphtone Afwata",
+                    "user_href": "/profile/Bobraphtone-Afwata"
+                },
+                {
+                    "user_id": "Raj Venkat",
+                    "user_href": "/profile/Raj-Venkat-12"
+                }
+            ]
+        }
+    ]
+}

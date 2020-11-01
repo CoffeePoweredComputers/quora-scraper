@@ -1,0 +1,104 @@
+{
+    "title": "Is learning C++ still worthwhile to learn? - Quora",
+    "tags": [
+        "Is learning X worthwhile?",
+        "Learning C++",
+        "C++ (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Greg Herlihy",
+                "href": "/profile/Greg-Herlihy-1"
+            },
+            "answer_text": "\"Worthwhile\" is a little hard to quantify, and in the long run we'll all be dead, so by that measure I would say nothing is worthwhile, so the answer would be an unequivocal \"no\". Assuming however that you think that there exists a programming that is worth your while to learn, then I would be forced to change my answer to \"yes\" it is definitely worth your while to learn C++. Why? It's not because  C++ is best computing language ever created (you'll find no consensus on that), or that C++ programming jobs are high-paying and plentiful (they seem to be, but that could always change), or that learning C++ is so easy that it can be picked up in an afternoon (I don't know anyone who has), or that you will enjoy writing C++ code so much you will devote no time to anything else (I guess that could happen, but it would be a pretty weird outcome).  No, the reason to learn C++ is because it's a language of multiple paradigms. Basically there's a lot in there. To master C++ you will need to learn about classes, inheritance, multiple inheritance, macros, virtual methods, overloaded and overriden functions, undefined and unspecified behavior, function templates, class templates, RAII, SPINAE, (and this list is just from what I remember) and on top of that C++11 threw in lots more to learn: move semantics, lambda expressions, delegating constructors, automatic type deduction, user-defined literals, constant expressions and plenty more. But by no means is C++ a finished work - much more is on the way. The C++ ISO committee is very active, very open, and not afraid to extend that language in new and often interesting directions. Now I'm not saying that all of these features are great or even useful. And certainly any of them can be (and have been) misused. I'm not even saying it's wonderful to have so much richness in a single language (some like it, a lot don't) for the purposes of writing software. But what I am saying is that it is very convenient to have them all in one language for educational purposes. Mastering C++ means that you will be exposed to all of these concepts and techniques, so even if you never become a C++ programmer, it's almost certain that whatever language you will adopt will have many of the same concepts and techniques (possibly improved, of course). And these ideas will instantly be familiar to you. In some ways if you learn C++, you've also learned lots of other programming languages, you just won't realize it right away. (As an aside, I would point out that if you do master C++, you can probably make a better living writing books and giving lectures to engineers less gifted than you. Make no mistake, learning C++ completely is a tough slog that not everyone who starts it will finish. And yes, there are plenty of easier programming languages to learn, but why waste your time with them if you have the talent? So I say forget C, forget Java, go straight to C++. You can thank me in your will). Lastly, it's almost unnecessary to point out that C++ is a mature language, with a vast literature, an active community of programers, tons of open source C++ programs available, an active and open ISO Standards Group,. The language is supported by a wide range of excellent compilers and and you can write C++ programs for practically any architecture or OS. And you can use all of these resources to your benefit, and most of them are free. So I can't predict whether, after learning C++, you will love the language, despise it, or be completely indifferent to it. Certainly all three outcomes are possible. But I am willing to predict that whatever your eventual opinion of the language turns out to be, you will not regret the effort you put in to learn it. ",
+            "date": "Answered November 7, 2015",
+            "views": "167",
+            "upvotes": " View 70 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "LAXMAN PAWAR",
+                    "user_href": "/profile/LAXMAN-PAWAR-63"
+                },
+                {
+                    "user_id": "Syakir Mokhtar",
+                    "user_href": "/profile/Syakir-Mokhtar"
+                },
+                {
+                    "user_id": "Ayushi Sambyal",
+                    "user_href": "/profile/Ayushi-Sambyal"
+                },
+                {
+                    "user_id": "Sakura Ryuu",
+                    "user_href": "/profile/Sakura-Ryuu"
+                },
+                {
+                    "user_id": "Amr Ayman",
+                    "user_href": "/profile/Amr-Ayman-6"
+                },
+                {
+                    "user_id": "Sagar Sharma",
+                    "user_href": "/profile/Sagar-Sharma-49"
+                },
+                {
+                    "user_id": "James Sa",
+                    "user_href": "/profile/James-Sa-6"
+                },
+                {
+                    "user_id": "FF Absurd",
+                    "user_href": "/profile/FF-Absurd"
+                },
+                {
+                    "user_id": "Aldrin Funes",
+                    "user_href": "/profile/Aldrin-Funes"
+                },
+                {
+                    "user_id": "Caspian Ahlberg",
+                    "user_href": "/profile/Caspian-Ahlberg"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eli Mendez",
+                "href": "/profile/Eli-Mendez-1"
+            },
+            "answer_text": "Unless all you want to do is develop single-platform games or mobile apps you're going to need C++ (and even then, if you have C++ in your toolbox you'll find it easier and/or better to do certain things in it). C and C++ are the only multi-use, high-level languages that can still be easily ported to different platforms (well, depending on how much you rely on proprietary libraries like DirectX). If you code something right in C and C++ it should only require, at most, rewriting the GUI (since different platforms utilize different GUI conventions and libraries). Most even slightly complex command line programs will compile perfectly fine on Linux, Mac, or Windows completely unchanged. While, yes, Java, in theory, can do this (in fact you only need to compile it once), but then you're relying on a proprietary, third-party system. The next time Java updates you have no guarantee that what you compiled before will still run. There's also a massive amount of overhead involved with Java, and tends to be extremely memory hungry (it'll pretty much eat up as much memory as you've allowed it before the automatic garbage collection starts being called). C# has all the problems of Java, but is supported on even fewer platforms. Scripting languages like Lua or Python are great, but they don't scale well. You certainly don't want to write a massive and complex program in a scripting language. If you ever want to code embedded chips or anything real-time you're going to need, at the very least, C++ (there are no Java Real Machines, although it would be interesting to see someone try to make one). I've found that sometimes it helps to know how to do things in a C-style as it can give you more control over what processor instructions are actually occurring, allowing you to fine-tune speed and memory optimization. Compilers do a pretty good job of optimization most of the time, but if you want to make sure you squeeze every single memory bit and clock cycle you're going to need to learn Assembly, which is more a class of somewhat similar  languages than any single language. This is why low-level programming is often done as a combination of mostly C with some inserted assembly code (which is easy enough with the __asm keyword). ",
+            "date": "Answered March 1, 2015",
+            "views": "3",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Sa",
+                    "user_href": "/profile/James-Sa-6"
+                },
+                {
+                    "user_id": "Ahmed Arat",
+                    "user_href": "/profile/Ahmed-Arat"
+                },
+                {
+                    "user_id": "Jasdeep Sandhu",
+                    "user_href": "/profile/Jasdeep-Sandhu-1"
+                },
+                {
+                    "user_id": "Teodor Radu",
+                    "user_href": "/profile/Teodor-Radu-5"
+                },
+                {
+                    "user_id": "Jay Sistar",
+                    "user_href": "/profile/Jay-Sistar"
+                },
+                {
+                    "user_id": "Teodor Mihai",
+                    "user_href": "/profile/Teodor-Mihai-2"
+                },
+                {
+                    "user_id": "Mohammad Husain",
+                    "user_href": "/profile/Mohammad-Husain"
+                }
+            ]
+        }
+    ]
+}

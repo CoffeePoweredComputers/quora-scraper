@@ -1,0 +1,53 @@
+{
+    "title": "What is Windows firewall and how does it work? - Quora",
+    "tags": [
+        "Firewalls",
+        "Computer Security"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sohan Amos",
+                "href": "/profile/Sohan-Amos"
+            },
+            "answer_text": "WINDOWS FIREWALL A firewall, at its most basic level, permits or denies communications between computers, between networks, or between computers and networks (for example, your home computer and the Internet) based on the firewall\u2019s configuration rules. You can access the settings for Windows Firewall through the Network and Security section in the Control Panel. Almost all computers and networks communicate by establishing connections between two hosts using an IP address and a port. Although there are many types of firewalls, the most common type of firewall (and the type used in Windows 7, provided by Windows Firewall) permits or denies communications based on IP address and port information. Only connections that are explicitly allowed, using firewall rules, are permitted. Windows Firewall, by default, allows all outboundconnections, and permits only established inbound connections (that is, an inbound connection that is in direct response to an outbound connection initiated from your computer or network). There are firewalls protecting Microsoft\u2019s Web servers and your ISP\u2019s DNS servers. In order for your computer to connect to Microsoft\u2019s Web servers, Microsoft must first create firewall rules to allow the communication. This is accomplished by creating a firewall rule that essentially says to allow any inbound IP address to connect to 207.46.232.182 (Microsoft\u2019s Web server) on port 80 (HTTP). Your ISP must create a similar rule on their firewall that essentially says to allow any inbound IP address to connect to its DNS servers on port 53 \u2014 which is the standard port for DNS. Windows Firewall permits your outbound DNS request to your ISP\u2019s DNS server, and your computer\u2019s outbound HTTP request to Microsoft\u2019s Web server. In your outbound request, your computer first sends the DNS request to your ISP\u2019s DNS server on port 53, and tells your ISP\u2019s DNS server on what port it will be listening for a response. Your computer selects a random port number between 49,152 and 65,535, and Windows Firewall automatically creates a temporary rule that allows an inbound connection from the IP address of your ISP\u2019s DNS server to the IP address of your computer, on that random port number. After the response is received (or if a response is not received within a specified period of time, say 30 seconds), the rule is automatically deleted from the firewall and the connection is again blocked. A similar process is then repeated to connect to Microsoft\u2019s Web server. Source :wiki,beeping computers, computer for dummies ",
+            "date": "Answered July 28, 2017",
+            "views": "37",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jiban Gogoi",
+                    "user_href": "/profile/Jiban-Gogoi-5"
+                },
+                {
+                    "user_id": "Cappy Cross",
+                    "user_href": "/profile/Cappy-Cross"
+                },
+                {
+                    "user_id": "Marc Wilson",
+                    "user_href": "/profile/Marc-Wilson-1"
+                },
+                {
+                    "user_id": "Chris Jones",
+                    "user_href": "/profile/Chris-Jones-1176"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rahul Jain",
+                "href": "/profile/Rahul-Jain-187"
+            },
+            "answer_text": "A firewall, at its most basic level, permits or denies communications between computers, between networks, or between computers and networks (for example, your home computer and the Internet) based on the firewall\u2019s configuration rules. You can access the settings for Windows Firewall through the Network and Security section in the Control Panel.Almost all computers and networks communicate by establishing connections between two hosts using an IP address and a port.  Although there are many types of firewalls, the most common type of firewall (and the type used in Windows 7, provided by Windows Firewall) permits or denies communications based on IP address and port information.Only connections that are explicitly allowed, using firewall rules, are permitted. Windows Firewall, by default, allows all outbound connections, and permits onlyestablished inbound connections (that is, an inbound connection that is in direct response to an outbound connection initiated from your computer or network). There are firewalls protecting Microsoft\u2019s Web servers and your ISP\u2019s DNS servers. In order for your computer to connect to Microsoft\u2019s Web servers, Microsoft must first create firewall rules to allow the communication. This is accomplished by creating a firewall rule that essentially says to allow any inbound IP address to connect to 207.46.232.182 (Microsoft\u2019s Web server) on port 80 (HTTP). Your ISP must create a similar rule on their firewall that essentially says to allow any inbound IP address to connect to its DNS servers on port 53 \u2014 which is the standard port for DNS.Windows Firewall permits your outbound DNS request to your ISP\u2019s DNS server, and your computer\u2019s outbound HTTP request to Microsoft\u2019s Web server. In your outbound request, your computer first sends the DNS request to your ISP\u2019s DNS server on port 53, and tells your ISP\u2019s DNS server on what port it will be listening for a response.Your computer selects a random port number between 49,152 and 65,535, and Windows Firewall automatically creates a temporary rule that allows an inbound connection from the IP address of your ISP\u2019s DNS server to the IP address of your computer, on that random port number.After the response is received (or if a response is not received within a specified period of time, say 30 seconds), the rule is automatically deleted from the firewall and the connection is again blocked. A similar process is then repeated to connect to Microsoft\u2019s Web server. Source:- What are Windows Firewall and Windows Defender? ",
+            "date": "Answered September 28, 2015",
+            "views": "16",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nga Pyi",
+                    "user_href": "/profile/Nga-Pyi"
+                }
+            ]
+        }
+    ]
+}

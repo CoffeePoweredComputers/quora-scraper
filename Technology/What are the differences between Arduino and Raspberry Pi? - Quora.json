@@ -1,0 +1,82 @@
+{
+    "title": "What are the differences between Arduino and Raspberry Pi? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Arduino (company)",
+        "Comparisons"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Greg London",
+                "href": "/profile/Greg-London-1"
+            },
+            "answer_text": "Arduino runs on \"bare metal\". That is slang for saying it runs its software without an operating system. The Raspberry pi usually runs rasphian,  a linux deruvative.   An operating system can give you a lot of high level functionalty, such as dealing with your network, your user interface, file system, security, and others.  But  an operating system such as raspian is not \"real time\", which means, it does things as needed, and sometimes it might spend a bunch of time dealing with your USB, and not sample the position sensor for your robot for a while.  Bare metal software runs only the code you give it. This means you have to deal wih scheduling on your own. But it also means there arent any \"black holes\" of code out there, things that might suck up the processor or memory for a while. If you are designing something to monitor a limit switch and shut a motor off if the switch is hit to prevent robot self destruction, then you dont want your application software to miss it. For any real time application like that, you probably want a bare metal arduino monitoring it constantly. The languages for your application are different too. The arduino defaults to using a thin layer on top of c code.  A lot of examples for the raspberry pi  use python. C is an older language, that was designed to be one step above assembly.  Python is a fairly recent scripting language that has a lot of high level language features, which can make it easier to do complex algorithms.  The pi is also a linu, operating system, so if you know how to install languages on linux, you could put a new language in your pi.   The arduino has a fairly small memory to store code. I think 16k. The pi has either 512k or 1024k of memory to run your code. So if your application is a complex algorithm in software, you may need a pi. The other issue is IO pins. The arduino has a bunch of gpios that can act as a digital or analog input or output.  The digital pins can handle something like 10 or 20 milliamps. The analog inputs let you read analog sensors like a temp sensor or a variable resistor with an analog to digital converter. The raspbery pi has only digital io, no analog. And the digital outputs can only handle 3 milliamps of load.  There are some workarounds to sample an analog resistance. They involve discharging a capacitor, then charging it through the variable resistance you want to measure, counting the time it takes to switch from a zero to a one,  then converting the time to a resistance. Obviously, there will be some accuracy issues with this approach. If you need to control a couple of digital io and maybe a rough estimate of an analog signal, then the pi will do. If you need more than that, then you may want to use the arduino, or you will have to buy a plug in board for the pi to give you the extra IO pins you need. The pi and arduino have a i2c interface, which is a low level serial interface.  There are analog to digital converter chips that sample 1 of 8 analog signals and then let you read the value through i2c. Some low level displays might use i2c. Motor controllers might use it. Basically any board that the pi wants to talk to might communicate through i2c. So a common way to expand the pi is to use the i2c interface to talk to external controllers.  Maybe even an arduino. Which brings us to the final point. The arduino is a low level microcontroller. The pi is a high level processor. For a really complex design, you might have the pi act as your \"brains\" and one or more arduinos acting as your \"muscles\" and sensors.  And then have them talk to each other over i2c. ",
+            "date": "Answered October 9, 2015",
+            "views": "196",
+            "upvotes": " View 48 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Subha Sikdar",
+                    "user_href": "/profile/Subha-Sikdar-1"
+                },
+                {
+                    "user_id": "Sajay Raj",
+                    "user_href": "/profile/Sajay-Raj-2"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/MJ-870"
+                },
+                {
+                    "user_id": "Rex Hayashi",
+                    "user_href": "/profile/Rex-Hayashi"
+                },
+                {
+                    "user_id": "Moises Jafet Cornelio-Vargas",
+                    "user_href": "/profile/Moises-Jafet-Cornelio-Vargas"
+                },
+                {
+                    "user_id": "Mehmet Bodur",
+                    "user_href": "/profile/Mehmet-Bodur-2"
+                },
+                {
+                    "user_id": "Hannu Soini",
+                    "user_href": "/profile/Hannu-Soini"
+                },
+                {
+                    "user_id": "Abhishek Sengupta",
+                    "user_href": "/profile/Abhishek-Sengupta-51"
+                },
+                {
+                    "user_id": "Andrew Rothman",
+                    "user_href": "/profile/Andrew-Rothman-6"
+                },
+                {
+                    "user_id": "Pinky Prk",
+                    "user_href": "/profile/Pinky-Prk-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Viktor Bednarik",
+                "href": "/profile/Viktor-Bednarik"
+            },
+            "answer_text": "I use Arduinos connected to Raspberry. And i will list small details, explaining why i use both. Arduino have Analog input, Raspberry doesn\u2019t.Raspberry audio output is interrupted by PWM.If you screw something experimenting, it\u2019s cheaper to burn Arduino than RPi. Good habit to experiment on Arduino.For encoders i have separate arduino to not miss any step. It needs to be precise. (which RPi on linux and handling TCP communication in my application is too risky, probably would not be fast enough} So I have separate subsystem on its own, which i can observe or even command over I2C.Arduino has no ethernet, audio output, video output, camera input, usb peripherals, as external sound card for mic in, keyboard, mouse, bluetooth/wifiI use FastLED library to light \u201csmart\u201d addressable led strips. Not so easy with RPi and it has some limitations.Arduino is 5V or 3,3V version. Raspberry only 3,3V. For example you can buy smart led strip 5V or 12V version, no need to level shift if you choose 5V strip with arduino, hence less wiring.As a programmer i found that there are bigger chance to find premade library within arduino community (eg. library for stepper motor drivers Tmc2208, dSpin). Simple quick 1 click to include library vs. reading 81 pages of manual to dig registers addresses and program it on its own.On Arudino i have Wire library to communicate with Raspberry over I2C.On Raspberry i use PiGPIO library for I2C and GPIO handling. I use I2C to connect also other modules as MCP23017, PCA9685, MPR121 etc. So I use Arduino just like another module as PWM, GPIO expander, which provides less pins but more versatile than \u201cspecialized\u201d modules. ",
+            "date": "Updated June 5, 2018",
+            "views": "559",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sajay Raj",
+                    "user_href": "/profile/Sajay-Raj-2"
+                },
+                {
+                    "user_id": "Choe Hoong Choong",
+                    "user_href": "/profile/Choe-Hoong-Choong"
+                }
+            ]
+        }
+    ]
+}

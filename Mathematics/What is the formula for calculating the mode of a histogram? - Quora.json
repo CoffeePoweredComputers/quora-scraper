@@ -1,0 +1,42 @@
+{
+    "title": "What is the formula for calculating the mode of a histogram? - Quora",
+    "tags": [
+        "Histogram",
+        "Calculators",
+        "Graphs (visualization)",
+        "Mathematical Formulae ",
+        "Calculations",
+        "Image Processing",
+        "Statistics (academic discipline)",
+        "Algebra",
+        "Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Edward Cashin",
+                "href": "/profile/Edward-Cashin"
+            },
+            "answer_text": "You create a histogram by choosing \u201cbins\u201d in which to count values. For each bin, there\u2019s a range of values that are eligible for counting. So the maximum count is the mode of the histogram, assuming a single mode exists. The mode is already known, because by the time you\u2019ve created the histogram by counting in the bins, you have all the counts, and you just ask, \u201cWhich is the maximum?\u201d For example, in R, the hist function can create a plot or can be interrogated for its bin counts. > x <- rbeta(1000, 10, 200)\u00a0> hist(x)\u00a0 \u2026 but look at its structure: > str(hist(x))\u00a0List of 6\u00a0 $ breaks  : num [1:11] 0.01 0.02 0.03 0.04 0.05 0.06 0.07 0.08 0.09 0.1 ...\u00a0 $ counts  : int [1:10] 8 88 242 291 178 126 40 18 5 4\u00a0 $ density : num [1:10] 0.8 8.8 24.2 29.1 17.8 ...\u00a0 $ mids    : num [1:10] 0.015 0.025 0.035 0.045 0.055 0.065 0.075 0.085 0.095 0.105\u00a0 $ xname   : chr \"x\"\u00a0 $ equidist: logi TRUE\u00a0 - attr(*, \"class\")= chr \"histogram\"\u00a0> \u00a0\u2026 and you\u2019ll see that the counts are right there. > max(hist(x)$counts)\u00a0[1] 291\u00a0> \u00a0You still have to check for multi-modality yourself. If you just ask for the max, > x2 <- rbeta(1000, 0.5, 0.5)\u00a0> max(hist(x2)$counts)\u00a0[1] 198\u00a0> \u00a0\u2026 you\u2019ll miss the other mode:  ",
+            "date": "Answered October 21, 2020",
+            "views": "143",
+            "upvotes": " View Sharers ",
+            "upvoters": [
+                {
+                    "user_id": "Florens de Wit",
+                    "user_href": "/profile/Florens-de-Wit"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Graham",
+                "href": "/profile/William-Graham-101"
+            },
+            "answer_text": "There isn't a formula as such for finding the mode, like there is for finding the mean. You look for the sample value that occurs the most frequently: that is the mode. Plotted on a histogram, that will be the sample value with the longest bar. It's mostly a matter of counting. There could be more than one bar with the same, maximum length, in which case there is more than one mode. To illustrate this idea algorithmically, here is a little python script that: generates a list (L) of 100 random integers from 1 to 25,finds the frequency of each one (F, the frequency histogram), andtells you the most frequent one(s), i.e. the mode(s).from random import *\u00a0N = 100\u00a0M = 25\u00a0L = [randint(1,M) for i in range(N)]\u00a0print (L)\u00a0\u00a0F = [0 for i in range(M+1)]\u00a0for i in L:\u00a0  F[i] += 1\u00a0for i in range(len(F)):\u00a0  print(i, F[i])\u00a0\u00a0mode = [ ]\u00a0for i in range(len(F)):\u00a0  if F[i] == max(F):\u00a0    mode += [i]\u00a0print(\"mode = \", mode)\u00a0",
+            "date": "Answered October 24, 2020",
+            "views": "85",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

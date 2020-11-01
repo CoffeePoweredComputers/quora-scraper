@@ -1,0 +1,67 @@
+{
+    "title": "How to remove write protection from a USB pen drive - Quora",
+    "tags": [
+        "Write Protection",
+        "Flash Drives",
+        "Data Storage",
+        "How-to Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vinaya",
+                "href": "/profile/Vinaya-15"
+            },
+            "answer_text": "USB\u2019s sticks can be problematic after being used for a while. In my life I been used a lot of USB\u2019s stick with many brands like Sony, Scandisk, HP etc. The write protect is not a software issue, most of the times this is due to the life cycle of the USB drive. USB drive is a NAND flash memory which will eventually wear out with the time. There are tiny bit of change that it might have caused due to the registry in the system but most of the times it becomes un-Writable due to the end of life. Actually all the NAND flash chips have very tiny register inside which stores data as the form of charge, there are only certain number of times you can erase and rewrite on the same block. Its like a pencil on a paper, You can write and erase a specific part of a page for certain numbers of time if you do more the page will get tear and wont be usable at all. There is a CHIP or Micro controller inside which block the write input once the charge reached to its maximum capacity. SSD\u2019s works in the same way, they also consist NAND flash memory which will eventually wear out in the time which can be also reflected on the warranty polices. TBW(Terabyte written)Time period(Like 5 years)Even if the maximum TBW is reached within 2 years the warranty will be canceled due to the maximum life cycle completes. Then the SSD is on the hand of the user and can be die any time soon. Same happens with USB Sticks but sure they only comes with Time period warranty as companies knows already no one will write as much data which will wear out the USB within 1 year of standard warranty period. If you ask me, I will suggest you to buy a GOOD USB stick and not to waste much time on the same to repair. I\u2019ve tried Samsung, HP, SANDISK and the most impressive performance came out of SANDISK. They are the old storage makers and have specialty on USBs and SD cards. Go for Sandisk on Amazon and thank me later. :D Still if you want to give it a try fixing the Write protect issue then please follow the steps below. Open regedit and go to the location mentioned below. \u201cComputer\\HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\StorageDevicePolicies\u201d Double-click on the WriteProtect value in the right-hand pane. You can now change the Value data from 1 to 0. Then click OK to save the change. Close Regedit and restart your computer. Connect your USB drive again and, with a bit of luck, you should find it is no longer write protected. Thanks!! Cheers :D ",
+            "date": "Answered April 22, 2019",
+            "views": "109",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Saurabh Sharma",
+                    "user_href": "/profile/Saurabh-Sharma-3244"
+                },
+                {
+                    "user_id": "Raja Rajan",
+                    "user_href": "/profile/Raja-Rajan-211"
+                },
+                {
+                    "user_id": "Scott Laws",
+                    "user_href": "/profile/Scott-Laws-5"
+                },
+                {
+                    "user_id": "Patrick Ira DonEgan",
+                    "user_href": "/profile/Patrick-Ira-DonEgan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pt. Prashant Tripathi",
+                "href": "/profile/Pt-Prashant-Tripathi"
+            },
+            "answer_text": "METHOD 1 Open Registry editor of your PCFor this you should type command \u201cregedit\u201d on run.Successively navigate to following link HKEYLOCALMACHINE\\SYSTEM\\Currentcontrolset\\control\\storatedevicepolicies ( Note: if you can\u2019t find \u201d storatedevicepolicies \u201d after \u201ccontrol\u201d folder then you need to create it. For that follow instructions mentioned below )Open a new notepad file.Copy thiscd\\reg add \u201cHKLM\\System\\CurrentControlSet\\Control\\StorageDevicePolicies\u201d /t Regdword /v\u00a0WriteProtect /f /d 0save it as DISABLEWP.BAT\u00a0Then copy it to start up folder.In right side u will be getting writeprotect option, just right click that and modify the hexadecimal value from 1 toRestart your PC and enjoy!!!!Note: Still having problem??? Don\u2019t worry try other methods below METHOD 2 If you have transcend pen drive infected by 9u.exe which is a write protect virus then the following works like a charm: Download JetFlash onlineRun the programSpecify the capacity of your drive eg.512 MB, 1 GB \u2026..etcChoose \u201crepair and erase all data\u201d OR \u201d repair and keep existing data\u201dProgress bar starts\u2026\u2026.completesNotification appears \u2014\u201d format complete\u201dUnplug and plug your driveenjoy!!!! Note: Still having problem ? Don\u2019t worry try other methods below. Method 3 Start > Run -> type \u201cCMD\u201d and press entertype< diskparttype< list volumetype< select volume # (# is the number of the USB HDD you\u2019ve pluged in)type< attributes disk clear readonlyNote: if you need help while typing commands then type \u201cHELP FORMAT\u201d on command prompt. METHOD 4 There are a series of options in the Group Policy Object Editor that deal with read/write permissions on hard drives and removable media. I basically changed their individual settings from \u201cNot configured\u201d to \u201cDisabled\u201d.Start -> Run\u2026 -> gpedit.msc -> OKComputer Configuration -> Administrative Templates -> System -> Removable Storage AccessIn here I disabled all of the \u201cDeny read access/write access\u201d options; you may only want to disable the ones relating directly to the type of media that you want to access.Here are the ones I changed:Removable Disks:  Deny execute access\u00a0Removable Disks:  Deny read access\u00a0Removable Disks:  Deny write access\u00a0Double-click each one and select the \u2018Disabled\u2018 radio button.Do the same as above, except the first step is \u201cUser Configuration\u201d instead of \u201cComputer Configuration\u201dNote: best result if you try both method #1 and method #4 together Share To Help Us ",
+            "date": "Answered August 24, 2020",
+            "views": "22",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "M Rafiq",
+                    "user_href": "/profile/M-Rafiq-12"
+                },
+                {
+                    "user_id": "Jasper Ong",
+                    "user_href": "/profile/Jasper-Ong-12"
+                },
+                {
+                    "user_id": "Rational Muslims",
+                    "user_href": "/profile/Rational-Muslims"
+                },
+                {
+                    "user_id": "Mohan Bhole",
+                    "user_href": "/profile/Mohan-Bhole-2"
+                }
+            ]
+        }
+    ]
+}

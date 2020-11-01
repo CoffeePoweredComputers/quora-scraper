@@ -1,0 +1,61 @@
+{
+    "title": "How does voice recognition work? - Quora",
+    "tags": [
+        "Speech Recognition",
+        "Artificial Intelligence"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hitesh Tulsiani",
+                "href": "/profile/Hitesh-Tulsiani"
+            },
+            "answer_text": "To get to the answer it is necessary to understand the question.  What do we mean when we say voice/speech recognition?Speech recognition is basically the task of identifying (in text form) what is being uttered by a speaker. The utterance can be an isolated word or sentence or may even be a paragraph. Let us think of simple speech recognition system which can identify only isolated word say digits from 0 to 9. We will call this as digit recognition system. What could be a naive approach for digit recognition system?One simple approach would be to just compare waveforms i.e you store the waveforms of digits 0 to 9 and then just compare your test utterance waveform with all of the stored templates and determine which of the stored waveform is the closest match to your test waveform.  So, there you are, you are done with the task. But wait, is it so simple? And as you may guessed it the answer is NO. So where's the fall? We can't really compare the waveforms directly, Isn't it? Waveforms will be different even when the same person is uttering the same word at different times. Just think of how you utter the same word in different emotional states; sometimes you may stretch the word and at other times you may not. Correct? Abstract Speech \tRecognition SystemOkay, \tso now we at least know we can't compare waveforms directly. Hence we \tneed to do some processing on speech waveform and convert it to some \tsuitable form for comparison. This is called feature extraction i.e \twe extract some suitable features from our speech signal and then we \tcompare them.   This is the basic framework behind every speech recognition system. So essentially we can play with 2 major blocks:1. Feature Extraction2. Comparison techniques  Most of the present speech recognition system use MFCC (Mel Frequency Cepstral Coefficients) features (feature extraction) and GMM-HMM (Gaussian Mixture Model \u2013 Hidden Markov Model) framework for comparison. Recently, even Neural network \u2013 HMM based frameworks have also been developed for feature comparison. P.S: This answer is just an attempt (without getting into technical details) to explain the science behind speech recognition in a very very abstract way. Speech Recognition Systems are a lot more complex but the basic framework remains the same. Hope this helps! ",
+            "date": "Answered December 5, 2014",
+            "views": "32",
+            "upvotes": " View 40 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shrikant Venkataramani",
+                    "user_href": "/profile/Shrikant-Venkataramani"
+                },
+                {
+                    "user_id": "Amarnath Chowdhury",
+                    "user_href": "/profile/Amarnath-Chowdhury"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Raghav-422"
+                },
+                {
+                    "user_id": "Mansoor Khan",
+                    "user_href": "/profile/Mansoor-Khan-29"
+                },
+                {
+                    "user_id": "Sekine Nuriyeva",
+                    "user_href": "/profile/Sekine-Nuriyeva"
+                },
+                {
+                    "user_id": "Harsh Mishra",
+                    "user_href": "/profile/Harsh-Mishra-49"
+                },
+                {
+                    "user_id": "Lau Louis",
+                    "user_href": "/profile/Lau-Louis-2"
+                },
+                {
+                    "user_id": "Sarah Lababidi",
+                    "user_href": "/profile/Sarah-Lababidi"
+                },
+                {
+                    "user_id": "Gaurang Joshi",
+                    "user_href": "/profile/Gaurang-Joshi-37"
+                },
+                {
+                    "user_id": "Test Test",
+                    "user_href": "/profile/Test-Test-2107"
+                }
+            ]
+        }
+    ]
+}

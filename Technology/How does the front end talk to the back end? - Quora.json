@@ -1,0 +1,45 @@
+{
+    "title": "How does the front end talk to the back end? - Quora",
+    "tags": [
+        "Backend Development",
+        "Front-End Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ohmel Paguirigan",
+                "href": "/profile/Ohmel-Paguirigan"
+            },
+            "answer_text": "It\u2019s kinda tricky to just ask how, because it depends on the framework you\u2019re working on. For example, if you are using a Framework for PHP (let\u2019s say Yii), is an MVC type framework that both have features for both front and back ends of your application. Since Yii\u2019s (as an example) frontend is defined inside the backend and each action has it\u2019s own rendered page, the communication between the front and back are pretty much like just actions requested to the server and the server just returns a whole rendered HTML pre processed by PHP. This is one example. Another example of communication between front and back, is by the use of API\u2019s. Your frontend might be using a different framework than of your backend. Let\u2019s say your Frontend is built on AngularJs and your Backend is built over Laravel Framework. Your backend will stand as a request handler from your frontend by means of AJAX. The backend will then catch the request and process it returning a XML or JSON result. Your frontend will then parse the returned result at render it as data on the page. It depends on the structure you are going to work on. Happy Backending and Frontending! ",
+            "date": "Answered October 20, 2017",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Zhaoxia(Cathy) Qian",
+                    "user_href": "/profile/Zhaoxia-Cathy-Qian"
+                },
+                {
+                    "user_id": "Tatjana",
+                    "user_href": "/profile/Tatjana-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mike Ritchie",
+                "href": "/profile/Mike-Ritchie-2"
+            },
+            "answer_text": "The original approach is either via clicking on links or submitting forms. This would supply the backend with an URL that would indicate which resource to load, as well as user-provided parameters. The resource on the backend would then do something with the parameters, and afterwards would either render a new page, or send a command to the browser to redirect to a new page. Even though this approach is 25 years old, it works perfectly well and many apps that use this technique are still in service today. The modern approach is via JavaScript, using a technique known as AJAX which fetches data from a backend API, typically formatted as JSON. Following this paradigm makes it possible to react to user input without having to physically reload the page, which is why it\u2019s so popular on the modern web, and the backend server is still pretty much the same: it still uses an URL to choose the resources to load, and it still takes in user parameters. In fact, it\u2019s entirely possible to support both approaches in your backend, and serve up either a full rendered page or a JSON response depending on the request type. Hope that helps! ",
+            "date": "Answered October 17, 2020",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ashwin Krishna",
+                    "user_href": "/profile/Ashwin-Krishna-59"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "title": "What are the steps to reduce a Boolean expression F (a,b, c) = (A+C) (AB + AB') + AC + C and create its logic gates for the original and reduced function? - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Logic Gates",
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "        ",
+            "date": "Answered January 25, 2019",
+            "views": "657",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Genius Turner",
+                    "user_href": "/profile/Genius-Turner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lu\u00eds Fernando Negr\u00e3o",
+                "href": "/profile/Lu\u00eds-Fernando-Negr\u00e3o"
+            },
+            "answer_text": "First of all, use the distributive property of algebra: AAB+AAB'+CAB+CAB'+AC After this, you can simplify \u201cA and A\u201d substituting it by a single \u201cA\u201d and use the distributive property to put \u201cC and A\u201d as a common term. 1B+1B\u2019+CA(B+B')+AC (B+B')+CA(B+B')+AC Every \u201cX or not X\u201d boolean expression can be reduced can be reduced to 1. So, we can do this to \u201cB or not B\u201d 1+CA1+AC Using algebras commutative property, we get: AC+AC And, finally, \u201cAC and AC\u201d can be reduced to: AC So: F(A,B,C) = AC ",
+            "date": "Answered January 25, 2019",
+            "views": "660",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ruben D. Bersonda",
+                "href": "/profile/Ruben-D-Bersonda"
+            },
+            "answer_text": "(A+C) (AB+AB\u2019) +AC+C BY Distribution: AAB+ AAB\u2019 + ABC+AB\u2019C+AC+C AB+AB\u2019+ABC+AB\u2019C+AC+C FACTORING: A( B+B\u2019)+ABC+AB\u2019C+AC+C A+ABC+AB\u2019C+AC+C Factoring ABC+AB\u2019C= AC(B+B\u2019)=AC so: A+AC+AC+C and AC+AC=AC so: A+AC+C by factoring again: A( 1 + C ) + C= A+C ",
+            "date": "Answered January 27, 2019",
+            "views": "646",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Abhishek Oza",
+                    "user_href": "/profile/Abhishek-Oza-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eugen Simon",
+                "href": "/profile/Eugen-Simon-1"
+            },
+            "answer_text": "F (a,b, c) = (A+C) (AB + AB') + AC + C= (A+C) A(B + B') + C(A+ 1)=(A+C) A + C =A +C(A+1)=A+C one OR gate inputs are A,C then output is result A+C ",
+            "date": "Answered January 27, 2019",
+            "views": "203",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Chhatra Saud",
+                    "user_href": "/profile/Chhatra-Saud-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Elad Ben-Tzedeff",
+                "href": "/profile/Elad-Ben-Tzedeff"
+            },
+            "answer_text": "F(a,b,c)=(a+c)(ab+ab')+ac+c=(a+c)a(b+b')+(a+1)c=(a+c)a(1)+(1)c=aa+ca+c=a+c(a+1)=a+c And that's just \"a or b\". ",
+            "date": "Answered September 27, 2019",
+            "views": "127",
+            "upvotes": "0"
+        }
+    ]
+}

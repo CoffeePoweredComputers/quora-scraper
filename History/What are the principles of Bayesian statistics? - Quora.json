@@ -1,0 +1,66 @@
+{
+    "title": "What are the principles of Bayesian statistics? - Quora",
+    "tags": [
+        "Bayesian Statistics",
+        "Bayesian Networks",
+        "Bayesian Inference"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wray Buntine",
+                "href": "/profile/Wray-Buntine"
+            },
+            "answer_text": "There is at least one great answer (Terry\u2019s) already that goes into detail. I\u2019ll give a broader philosophical version. Key Principle: Any coherent and consistent method for reasoning about belief and taking actions should: treat beliefs the same way we would treat frequencies over the state space;take action as if there is a linear dual in the state space to this \u201cbelief as frequency,\u201d usually referred to as utility, and the action should seek to maximise their dot product.Now, notably: This doesn\u2019t mean you have to be Bayesian to be optimal, rather what you do should somehow approximate what a Bayesian might do.This is why I\u2019m not troubled when staunch non-Bayesian\u2019s do great work \u2026 invariably I find there is a Bayesian approximation underneath, or they are operating in a context (\u201cdata rich\u201d) where Bayesian methods are irrelevant.People often use intuitions to come up with great work. Don\u2019t straight-jacket them in Bayesian theory.This means if you are \u201cdata poor\u201d you should think carefully about and use prior information.In statistics a method \u201csocially acceptable\u201d to staunch non-Bayesians is regularisation. So be it.I\u2019ve done a large number of papers applying this principle.In contrast, if you are \u201cdata rich\u201d then Bayesian methods are unnecessary.In computationally complex situations, full Bayesian reasoning is impossible so if a good approximation isn\u2019t possible then the above key principle is invalid!A good example where this holds is reinforcement learning on complex spaces, i.e., many problems requiring arbitrary intelligence.This is not well understood in Bayesian statistics because the computational issues are usually not considered.",
+            "date": "Answered June 6, 2017",
+            "views": "837",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Lewis Ofili",
+                    "user_href": "/profile/Lewis-Ofili"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "Let\u2019s contrast frequentist with Bayesian statistics. In frequentist statistics we have data from a family of distributions and we wish to determine, as accurately as possible, which member of the family the data comes from. Usually the family has parameters that determine the distribution so we wish to estimate those parameters, or maybe some of them. The family of data distributions could be known or just postulated based on past experience of similar data. In principle it could be tested by taking an enormous sample and plotting a histogram of the frequencies or some other graphics. However such a test is impractical. The difference with Bayesian statistics is that the unknown parameters are treated as having probability distributions. These distributions cannot be tested, even in principle because the parameters are usually fixed but unknown. However the probability distribution makes sense as a measure of our degrees of belief in the different possible values. This is subjective and varies from one person to another. There are a variety of methods. I\u2019ll just talk about decision theory. This assigns a cost (known as a loss function) to each pair consisting of a parameter and our estimate of it. In frequentist methods, we want to minimise the loss averaged over all possible samples. There is no unique minimum, but we can look for admissible estimators. That is we want an estimator that can\u2019t be beaten (in terms of risk\u2014average loss) for all possible parameter values. Another estimator might be better for some parameter values, but not always better. As the parameters are unknown, we can\u2019t say one admissible estimator is any better than another. In Bayesian statistics, once we have chosen a prior distribution for the parameters, i.e. our subjective probabilities for the parameters, we can minimise the Bayes risk. That is the average loss over the parameter distribution. This gives a Bayes estimator. Bayes estimators are admissible, so a frequentist should look for Bayes estimators. (There are also estimators that are almost Bayes in some sense and also admissible.) Outside of decision theory, there is an ingredient of Bayes methods unmatched by frequentist methods. The prior distribution (before we observe the data) is updated by the data to give a posterior distribution which represents our beliefs in the parameter values after we have seen the data. ",
+            "date": "Answered May 28, 2017",
+            "views": "22",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Stephen Boesch",
+                    "user_href": "/profile/Stephen-Boesch"
+                },
+                {
+                    "user_id": "MR AJ NORTON",
+                    "user_href": "/profile/MR-AJ-NORTON"
+                },
+                {
+                    "user_id": "Maxime Phillot",
+                    "user_href": "/profile/Maxime-Phillot"
+                },
+                {
+                    "user_id": "Charles Lee",
+                    "user_href": "/profile/Charles-Lee-151"
+                },
+                {
+                    "user_id": "Gleb Yarnykh",
+                    "user_href": "/profile/Gleb-Yarnykh"
+                },
+                {
+                    "user_id": "Lewis Ofili",
+                    "user_href": "/profile/Lewis-Ofili"
+                },
+                {
+                    "user_id": "Alexei Vink",
+                    "user_href": "/profile/Alexei-Vink-1"
+                }
+            ]
+        }
+    ]
+}

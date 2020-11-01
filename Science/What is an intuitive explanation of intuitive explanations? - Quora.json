@@ -1,0 +1,85 @@
+{
+    "title": "What is an intuitive explanation of intuitive explanations? - Quora",
+    "tags": [
+        "Layman's Explanations",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Hochster",
+                "href": "/profile/Michael-Hochster"
+            },
+            "answer_text": "Referring to the question details: intuitive explanations aren\u2019t necessarily condensed. Intuitive explanations are appealing because they meet you halfway, by conveying something useful in a way that\u2019s not too hard to digest. Intuitive explanations might be oversimplified, or incomplete, or possibly even a little bit wrong. But they leave you better informed than no explanation, or an explanation that is correct but unintelligible. My most popular intuitive explanation on Quora is here: Michael Hochster's answer to What is an intuitive explanation of Bayes' Rule?. The answer is highly incomplete. It doesn\u2019t even state Bayes\u2019 rule! Or mention probability theory. It certainly doesn\u2019t explain the role of Bayes\u2019 rule as the foundation of all of Bayesian inference. But it does get one thing across: that you can use Bayes\u2019 rule to find [math]P(B|A)[/math] when you know [math]P(A|B), P(A)[/math] and [math]P(B)[/math] (though I don\u2019t use this notation). And it almost proves this, by working through a simple example. The example is almost a proof because you can see how it would go through if you replaced the specific numbers with some other ones. It would become a proof if the specific numbers were replaced with letters. But it\u2019s often easier to understand a numerical example than the same idea expressed a little more generally. Maybe a bit paradoxically, a specific example sometimes gets the general idea across more clearly than the general idea expressed more directly. That\u2019s one way intuitive explanations can work. ",
+            "date": "Answered April 17, 2017",
+            "views": "23",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Okasha Uddin",
+                    "user_href": "/profile/Okasha-Uddin-2"
+                },
+                {
+                    "user_id": "Mohieddine Shebaro",
+                    "user_href": "/profile/Mohieddine-Shebaro-1"
+                },
+                {
+                    "user_id": "Bidu Bug",
+                    "user_href": "/profile/Bidu-Bug"
+                },
+                {
+                    "user_id": "Karan Shukla",
+                    "user_href": "/profile/Karan-Shukla-7"
+                },
+                {
+                    "user_id": "Zachary Thomas",
+                    "user_href": "/profile/Zachary-Thomas-2"
+                },
+                {
+                    "user_id": "Drew Kamp",
+                    "user_href": "/profile/Drew-Kamp-1"
+                },
+                {
+                    "user_id": "Fernando Gonzalez-Morales",
+                    "user_href": "/profile/Fernando-Gonzalez-Morales"
+                },
+                {
+                    "user_id": "Kashish Jagga",
+                    "user_href": "/profile/Kashish-Jagga"
+                },
+                {
+                    "user_id": "Joel Chan",
+                    "user_href": "/profile/Joel-Chan"
+                },
+                {
+                    "user_id": "Shane Lewin",
+                    "user_href": "/profile/Shane-Lewin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kishan Panaganti Badrinath",
+                "href": "/profile/Kishan-Panaganti-Badrinath"
+            },
+            "answer_text": "I\u2019ll try to address this via an illustration. What is the motivation for the term \"expectation\" in the literature of Probability theory? Let\u2019s say that we get our hands on an empirical average of the outcomes in a large experiment. This quantity is precisely what is referred to as the expectation. Some set up. Let [math]X[/math] be a discrete random variable (equivalent to saying, outcome of some random experiment) taking values in [math]\\left\\lbrace x_{1}, x_{2}, \\ldots, x_{m} \\right\\rbrace [/math]with [math] p_{i} = \\mathbb{P}(X=x_{i})[/math](Probability that [math]X[/math] takes the value [math]x_i[/math]). Expectation of the random variable [math]X[/math] is [math]\\sum_{i=1}^{m} x_{i}p_{i}.[/math] But how is this formula connected with the empirical average that we talked about earlier? In this regard read the following. Now conduct [math]N[/math] (where [math]N\\gg m[/math]) independent trials of this above experiment mentioned. Let the sequence of outcomes be denoted as [math]{x^{(1)}, x^{(2)}, \\ldots, x^{(N)}} [/math]. So with intuition we can say that, [math]x_{i}[/math] appears [math]Np_{i}[/math] times. Now, the arithmetic average is [math]\\frac{\\sum_{j=1}^{N} x^{(j)}}{N}[/math]. Therefore, [math]\\sum_{j=1}^{N} x^{(j)} \\approx \\sum_{i=1}^{m} x_{i}(Np_{i}).[/math] Equivalently, [math]\\frac{\\sum_{j=1}^{N} x^{(j)}}{N} \\approx \\frac{\\sum_{i=1}^{m} x_{i}(Np_{i})}{N}[/math][math]= \\sum_{i=1}^{m} x_{i}p_{i}.[/math] And so expected value of a random variable is thought as an empirical average of the outcomes in a large experiment.  Here knowing that the expectation of the random variable [math]X[/math] to be just by the formula [math]\\sum_{i=1}^{m} x_{i}p_{i}[/math] doesn\u2019t make sense unless one has an actual intuition (like the one explained above). Also look at Kishan Panaganti Badrinath (\u0c95\u0cbf\u0cb6\u0ca8\u0ccd \u0caa\u0cbe\u0ca8\u0c97\u0c82\u0c9f\u0cbf \u0cac\u0ca6\u0ccd\u0cb0\u0cbf\u0ca8\u0cbe\u0ca5\u0ccd)'s answer to What is an intuitive explanation of expected value? ",
+            "date": "Answered April 10, 2017",
+            "views": "475",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sajil Kuriakose",
+                    "user_href": "/profile/Sajil-Kuriakose"
+                },
+                {
+                    "user_id": "Toms Thomas",
+                    "user_href": "/profile/Toms-Thomas"
+                },
+                {
+                    "user_id": "Malini Rajendra",
+                    "user_href": "/profile/Malini-Rajendra"
+                }
+            ]
+        }
+    ]
+}

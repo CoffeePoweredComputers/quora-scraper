@@ -1,0 +1,51 @@
+{
+    "title": "Why don\u2019t we use millimeter waves in mobile communication networks? - Quora",
+    "tags": [
+        "Millimeter Wave Communications",
+        "Waves (physics)",
+        "Communication",
+        "Mobile Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Fred",
+                "href": "/profile/David-Fred-3"
+            },
+            "answer_text": "The higher the frequency, the higher the path loss, so for a given transmit power, the range is shorter. 30\u2013300 GHz is considered millimeter wavelength. Roughly where I've drawn the fat red line.  At only 1 kilometer distance, at 30 GHz, you get 122 db of loss. So your signal would be 1/6.31 X 10^-13 of the original transmitted power. Because of that, extremely high gain antennas, 30db and up are used, mostly in the form of parabolic dishes, like the round ones this tower is festooned with. When we engineered point to point 30 GHz microwave hops, we tried not to exceed 8 miles or so, because we deal with a fair amount of rain and snow, which dramatically impacts loss. If you have satellite TV, and ever seen it go \u201cbelly up\u201d in heavy rain or snow, that's why.  They focus the energy to a very narrow beamwidth, perhaps 1 degree or less. Consequently the receiving antenna must be precisely aligned with the transmit antenna, they must be capable of literally seeing each other. If you cannot visually see the receiving antenna from the transmit antenna, using binoculars or a telescope, or more commonly today a laser, the system won't work. Keeping that high degree of alignment between a tower and a mobile device would be impossible, and even if it were, only other mobiles within that 1 degree of arc, vertically and horizontally, could receive the signal. So use of frequencies that high are referred to as \u201cline of sight\u201d. Your infrared TV remote falls in that category, as does the proposed LiFi implementations. ",
+            "date": "Answered March 9, 2017",
+            "views": "813",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Dipesh Kumar Gautam",
+                    "user_href": "/profile/Dipesh-Kumar-Gautam"
+                },
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                },
+                {
+                    "user_id": "Pratik Shetty",
+                    "user_href": "/profile/Pratik-Shetty-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bob Hannent",
+                "href": "/profile/Bob-Hannent"
+            },
+            "answer_text": "There is WiGig which is using 60GHz, and there is a wireless HDMI standard with 60GHz. Experiments have been conducted with mmWave satellite payloads, there is an odd advantage in that at very high mmWave the absorption drops off a little and yet it performs better than laser communication. So, while some companies are experimenting with laser optical communication with satellites, others are saying mmWave and above might be better. The problem with mmWave as everyone points out is that it doesn't really work outside of line of sight and it gets attenuated very easily even in air. ",
+            "date": "Answered March 16, 2017",
+            "views": "302",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Rupert Baines",
+                    "user_href": "/profile/Rupert-Baines"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "title": "Who provides internet access (ISP) for Google? - Quora",
+    "tags": [
+        "Internet Service Providers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ian Beyer",
+                "href": "/profile/Ian-Beyer-1"
+            },
+            "answer_text": "Let\u2019s back up for a minute. Your fundamental premise here is flawed. \u201cThe Internet\u201d is nothing more than a series of networks connected to each other using a standard protocol (the Internet Protocol, or IP). The name \u201cInternet\u201d literally means \u201cInter-Network\u201d. As part of this, there are additional protocols to help packets get from one IP address to another. A device that connects one network to another is called a \u201crouter\u201d because it routes IP packets from one network to another. It\u2019s not some big pipe that someone plugs into. The internet is created when one network operator connects to another network operator, and so on. All a consumer ISP does is connect your home network to their network via a router and some sort of network medium, be that wireless, fiber optics, copper cables, etc. They then have their network connected to others. So, Google doesn\u2019t have an \u201cInternet Service Provider\u201d as such. They are part of the internet. Google\u2019s networks are connected (the industry term is \u201cpeered\u201d) with the networks of other companies. In most cases, these are companies that provide \u201cbackbone\u201d networks, which don\u2019t offer any services other than acting as a network between other networks. Large companies that do provide services such as Facebook, Microsoft, or Amazon, will also connect their networks to several of these backbone providers, as well as each other. When a packet goes from A to B, a series of routers determine the best way to get that packet to its destination (and get the response back). Even companies like Google have multiple networks within the company, not one large network, and those networks are often in separate locations. Sometimes, they will build their own connectivity between these sites. Microsoft and Facebook recently built an undersea fiber-optic link between Florida and Spain capable of carrying 160Tbps, to not only connect their facilities together but to carry internet traffic as well. ",
+            "date": "Answered September 26, 2018",
+            "views": "87",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Manan Varma",
+                    "user_href": "/profile/Manan-Varma"
+                },
+                {
+                    "user_id": "Kel Doll",
+                    "user_href": "/profile/Kel-Doll-1"
+                },
+                {
+                    "user_id": "Andrija Stevanovic",
+                    "user_href": "/profile/Andrija-Stevanovic-3"
+                },
+                {
+                    "user_id": "Khurram Malik",
+                    "user_href": "/profile/Khurram-Malik-27"
+                },
+                {
+                    "user_id": "Ying Chen",
+                    "user_href": "/profile/Ying-Chen-253"
+                },
+                {
+                    "user_id": "Andrew Francis",
+                    "user_href": "/profile/Andrew-Francis-152"
+                },
+                {
+                    "user_id": "Pr\u00e1ka\u015bh Ag\u00e3rwal",
+                    "user_href": "/profile/Pr\u00e1ka\u015bh-Ag\u00e3rwal"
+                },
+                {
+                    "user_id": "Ralph Benitez",
+                    "user_href": "/profile/Ralph-Benitez-4"
+                },
+                {
+                    "user_id": "Rondell Borel",
+                    "user_href": "/profile/Rondell-Borel"
+                },
+                {
+                    "user_id": "Sharmi R",
+                    "user_href": "/profile/Sharmi-R-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Lacy",
+                "href": "/profile/Steve-Lacy"
+            },
+            "answer_text": "Google is not their own ISP by the traditional sense of the word, but they do operate a global network large enough to meet the criteria for what many people would call an \"ISP\".  But, this is a private network that only routes data to and from google hosted services, so is not used by the general purpose internet.  With respect to connectivity between Google servers and the rest of the internet, there are many, many individual connection points, and the majority of these are \"Peering\" relationships between local or regional ISPs, and the nearest Google network POPs.  (http://en.wikipedia.org/wiki/Peering) You can easily see how your traffic routes from your computer to Goggle by using tools like traceroute (http://en.wikipedia.org/wiki/Traceroute) or mtr ( http://en.wikipedia.org/wiki/MTR_(software) ) combined with whois lookups on the resulting IP addresses. Usually, what you should learn from these tools is that traffic goes through a couple of routers at your ISP, then hits a router that connects your ISP with Google, and then a couple more hops inside google's network before terminating at the nearest web frontend. This architecture will be true for most large internet companies (Google, Yahoo, Amazon, Facebook, etc.)  Smaller web sites will have different, slightly longer paths, or be hosted via Amazon, Rackspace, or some other large hosting company. ",
+            "date": "Answered February 1, 2011",
+            "views": "136",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Manan Varma",
+                    "user_href": "/profile/Manan-Varma"
+                },
+                {
+                    "user_id": "Lukas Franca",
+                    "user_href": "/profile/Lukas-Franca"
+                },
+                {
+                    "user_id": "Nick Williams",
+                    "user_href": "/profile/Nick-Williams-393"
+                },
+                {
+                    "user_id": "Andrew Francis",
+                    "user_href": "/profile/Andrew-Francis-152"
+                },
+                {
+                    "user_id": "Manikandan Kondappan",
+                    "user_href": "/profile/Manikandan-Kondappan"
+                },
+                {
+                    "user_id": "Rolx Watcher",
+                    "user_href": "/profile/Rolx-Watcher"
+                },
+                {
+                    "user_id": "Arun J",
+                    "user_href": "/profile/Arun-J-10"
+                },
+                {
+                    "user_id": "Priya Sharma",
+                    "user_href": "/profile/Priya-Sharma-1595"
+                },
+                {
+                    "user_id": "Stefan Caliaro",
+                    "user_href": "/profile/Stefan-Caliaro"
+                },
+                {
+                    "user_id": "Abhiram Nair",
+                    "user_href": "/profile/Abhiram-Nair-3"
+                }
+            ]
+        }
+    ]
+}

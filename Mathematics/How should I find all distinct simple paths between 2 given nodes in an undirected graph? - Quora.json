@@ -1,0 +1,76 @@
+{
+    "title": "How should I find all distinct simple paths between 2 given nodes in an undirected graph? - Quora",
+    "tags": [
+        "Graph Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Apoorv Khandelwal",
+                "href": "/profile/Apoorv-Khandelwal"
+            },
+            "answer_text": "A slightly modified depth-first search will work just fine. Just keep track of the nodes visited during the recursion, ensuring not to repeat a node on the current path. If the search reaches the destination node, save the current path as one of the answers and backtrack. Example:  For the above graph, my described depth-first search returns all [math]8[/math] distinct simple paths from [math]A[/math] to [math]Z[/math], in this order: [math]\\{[A, B, D, F, Z], [A, B, D, Z], [A, C, D, F, Z], [A, C, D, Z], [A, E, F, D, Z], [A, E, F, Z], [A, G, H, Z], [A, G, I, H, Z]\\}[/math]. Code: Below is a Python script which outputs, for a given undirected graph, all distinct simple paths from a source node to a destination node. def main():\u00a0    nodeToNodes = dict()\u00a0    nodeToNodes['A'] = ['B', 'C', 'E', 'G', 'J', 'L']\u00a0    nodeToNodes['B'] = ['A', 'D']\u00a0    nodeToNodes['C'] = ['A', 'D']\u00a0    nodeToNodes['D'] = ['B', 'C', 'F', 'Z']\u00a0    nodeToNodes['E'] = ['A', 'F']\u00a0    nodeToNodes['F'] = ['D', 'E', 'M', 'Z']\u00a0    nodeToNodes['G'] = ['A', 'H', 'I']\u00a0    nodeToNodes['H'] = ['G', 'I', 'Z']\u00a0    nodeToNodes['I'] = ['G', 'H']\u00a0    nodeToNodes['J'] = ['A', 'K', 'L']\u00a0    nodeToNodes['K'] = ['J']\u00a0    nodeToNodes['L'] = ['A', 'J']\u00a0    nodeToNodes['M'] = ['F']\u00a0    nodeToNodes['Z'] = ['D', 'F', 'H']\u00a0    print str(getAllSimplePaths('A', 'Z', nodeToNodes))\u00a0\u00a0#\u00a0# Return all distinct simple paths from \"originNode\" to \"targetNode\".\u00a0# We are given the graph in the form of a adjacency list \"nodeToNodes\".\u00a0#\u00a0def getAllSimplePaths(originNode, targetNode, nodeToNodes):\u00a0    return helpGetAllSimplePaths(targetNode,\u00a0                                 [originNode],\u00a0                                 set(originNode),\u00a0                                 nodeToNodes,\u00a0                                 list())\u00a0\u00a0#\u00a0# Return all distinct simple paths ending at \"targetNode\", continuing\u00a0# from \"currentPath\". \"usedNodes\" is useful so we can quickly skip\u00a0# nodes we have already added to \"currentPath\". When a new solution path\u00a0# is found, append it to \"answerPaths\" and return it.\u00a0#    \u00a0def helpGetAllSimplePaths(targetNode,\u00a0                          currentPath,\u00a0                          usedNodes,\u00a0                          nodeToNodes,\u00a0                          answerPaths):\u00a0    lastNode = currentPath[-1]\u00a0    if lastNode == targetNode:\u00a0        answerPaths.append(list(currentPath))\u00a0    else:\u00a0        for neighbor in nodeToNodes[lastNode]:\u00a0            if neighbor not in usedNodes:\u00a0                currentPath.append(neighbor)\u00a0                usedNodes.add(neighbor)\u00a0                helpGetAllSimplePaths(targetNode,\u00a0                                      currentPath,\u00a0                                      usedNodes,\u00a0                                      nodeToNodes,\u00a0                                      answerPaths)\u00a0                usedNodes.remove(neighbor)\u00a0                currentPath.pop()\u00a0    return answerPaths\u00a0\u00a0if __name__ == '__main__':\u00a0    main()\u00a0",
+            "date": "Updated December 21, 2016",
+            "views": "101",
+            "upvotes": " View 11 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hasan Rashaideh",
+                    "user_href": "/profile/Hasan-Rashaideh"
+                },
+                {
+                    "user_id": "Joseph Dung",
+                    "user_href": "/profile/Joseph-Dung"
+                },
+                {
+                    "user_id": "Girish",
+                    "user_href": "/profile/Girish-354"
+                },
+                {
+                    "user_id": "Miguel Pignatelli",
+                    "user_href": "/profile/Miguel-Pignatelli"
+                },
+                {
+                    "user_id": "Alex Wolfe",
+                    "user_href": "/profile/Alex-Wolfe"
+                },
+                {
+                    "user_id": "Andrey Grehov",
+                    "user_href": "/profile/Andrey-Grehov"
+                },
+                {
+                    "user_id": "Subhajit Manna",
+                    "user_href": "/profile/Subhajit-Manna-2"
+                },
+                {
+                    "user_id": "Jee Vang",
+                    "user_href": "/profile/Jee-Vang"
+                },
+                {
+                    "user_id": "Michael Preston",
+                    "user_href": "/profile/Michael-Preston-35"
+                },
+                {
+                    "user_id": "Matteo Silvestro",
+                    "user_href": "/profile/Matteo-Silvestro"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shibam Senapati",
+                "href": "/profile/Shibam-Senapati"
+            },
+            "answer_text": "Simple dfs will work fine. Keep track of the visited nodes by marking them while visiting them and unmarking them while getting out from it. When we get to the destination node print the nodes that we marked . In order to mark and print in order you can keep a stack(you can use c++ vector it would be good for traversing the elements) for that and marking them means pushing that element into the stack and unmarking means poping the element from the stack. vector<int> s;//stack to store the ordering of the elements in the path\u00a0vector<int> g[n];//it stores the adjacent elements of each nodes\u00a0bool visited[n];//it will prevent us from the cycles\u00a0void dfs(int baap)\u00a0{\u00a0\tif(baap == destination)//if we found our destination\u00a0\t{\u00a0\t\t//print all the nodes from lower stack to top stack\u00a0\t\tfor(int i=0;i<s.size();i++)\u00a0\t\t\tprintf(\"%d \",s[i]);\u00a0\t\tprintf(\"%d\\n\",destination);\u00a0\t\treturn;\u00a0\t}\u00a0\u00a0\tvisited[baap] = true;\u00a0\ts.push_back(baap);//pushing the elements while we explore them\u00a0\u00a0\tfor(int i=0;i<g[baap].size();i++)\u00a0\t{\u00a0\t\tint beta = g[baap][i];\u00a0\t\tif(!visited[beta])\u00a0\t\t{\u00a0\t\t\tdfs(beta);\u00a0\t\t}\u00a0\t}\u00a0\tvisited[baap] = false;\u00a0\ts.pop_back();//poping the elements while we go out from it\u00a0} \u00a0",
+            "date": "Answered July 22, 2018",
+            "views": "39",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "\u680b\u6881 \u5d14",
+                    "user_href": "/profile/\u680b\u6881-\u5d14"
+                }
+            ]
+        }
+    ]
+}

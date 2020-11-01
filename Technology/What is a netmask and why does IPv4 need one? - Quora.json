@@ -1,0 +1,77 @@
+{
+    "title": "What is a netmask and why does IPv4 need one? - Quora",
+    "tags": [
+        "IPv4",
+        "IP Addresses"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tony Li",
+                "href": "/profile/Tony-Li-19"
+            },
+            "answer_text": "Netmask was the original way of describing the separation between the network and subnet portions of the address. In 1992, we deprecated that in favor of prefix notation, but implementations mostly didn\u2019t adapt. If it ain\u2019t broke\u2026 Prefix notation is used exclusively with IPv6. ",
+            "date": "Answered October 12, 2016",
+            "views": "624",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Erik Fair",
+                    "user_href": "/profile/Erik-Fair"
+                },
+                {
+                    "user_id": "Scott Helms",
+                    "user_href": "/profile/Scott-Helms-8"
+                },
+                {
+                    "user_id": "Shantanu Hadgekar",
+                    "user_href": "/profile/Shantanu-Hadgekar"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                },
+                {
+                    "user_id": "Clark Wierda",
+                    "user_href": "/profile/Clark-Wierda"
+                },
+                {
+                    "user_id": "Aaron Schoots",
+                    "user_href": "/profile/Aaron-Schoots"
+                },
+                {
+                    "user_id": "Steven Merz",
+                    "user_href": "/profile/Steven-Merz"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Brad Tipton",
+                "href": "/profile/Brad-Tipton"
+            },
+            "answer_text": "The subnet mask of a network defines the scope of the network (subnet). Until I learned about networking I did not realize how meaningful the mask is. The most common mask that is seen by most is 255.255.255.0, aka /24. What this means is that there are 256 hosts, 254 usable. Another common subnet mask is 255.255.255.252, aka /30 which allows for 4 hosts, only 2 are usable. This is used for a point-to-point connection where only each end has an IP address on the subnet. I see 255.255.254.0 used more commonly these days because it allows for 512 hosts, 510 usable. 254 hosts has become too few even for mid-sized networks because of bring your own device. If you have a subnet any larger than that the overhead becomes a bit much and VLANs should be introduced. That is a lengthy discussion in its own right so I will not bring it up here. Apologies if I am rambling but this is a fascinating topic to me. ",
+            "date": "Answered October 14, 2016",
+            "views": "691",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jan Thelme",
+                    "user_href": "/profile/Jan-Thelme"
+                },
+                {
+                    "user_id": "Richard Nwachukwu",
+                    "user_href": "/profile/Richard-Nwachukwu-1"
+                },
+                {
+                    "user_id": "Yash Krishan Verma",
+                    "user_href": "/profile/Yash-Krishan-Verma"
+                }
+            ]
+        }
+    ]
+}

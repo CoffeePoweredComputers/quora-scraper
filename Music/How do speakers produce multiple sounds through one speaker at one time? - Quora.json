@@ -1,0 +1,108 @@
+{
+    "title": "How do speakers produce multiple sounds through one speaker at one time? - Quora",
+    "tags": [
+        "Loudspeakers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jeff Annis",
+                "href": "/profile/Jeff-Annis-1"
+            },
+            "answer_text": "Pretty much the same way that your ear hears multiple sounds at one time. Sound is complex interaction of sources on air pressure. Directionality of sound comes from the fact that we have two ears separated by a large mass that feed the slightly different sounds to our brains that can discern the difference and thus figure out from which direction a sound comes. Your pinna (external ear) collects/affects sound in a way the brain understands/decides and also helps determine direction. But only one wavefront of sound pressure reaches each ear at a time\u2026ever\u2026always. The same applies to a microphone, or (converted to an electrical impulse) an individual output of a mixer, or a left or right output of your headphone jack (or Bluetooth signal or whatever). As such, it is quite easy for that single series of impulses to be fed into a speaker (be it in a large box or a tiny earbud) and for that speaker to move in a fashion analogous to the way that complex blending of sounds created that wavefront. One more analogy. If you come across a small pond (or large puddle) and the water is still (quiet), then through a disturbance such as a rock being tossed into the pond, you see a wave form (ripples) that move in a pretty orderly fashion, yes? Now toss in 20 rocks all over the pond at once or in close succession. Now the waves are like chaos moving all over the place bouncing off each other and the edges of the pond, moving back toward their source. Now, think of placing your ear (or a perpendicular microphone, if easier) in one solitary spot in that pond. It will be exposed to exactly one wavefront at a time, right? Even if these waves are coming from all directions and are modulating (affecting) each other, it is still only one waveform at any given point, yes? if you think of a speaker as the opposite of a microphone, and that air is a medium for wavefronts, just like water, I think you can visualize how it would reproduce the sound of that chaotic pond we call our soundscape. I hope this helps. ",
+            "date": "Updated November 10, 2019",
+            "views": "66",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Harrison Read",
+                    "user_href": "/profile/Harrison-Read-1"
+                },
+                {
+                    "user_id": "Mason Wickersham",
+                    "user_href": "/profile/Mason-Wickersham-2"
+                },
+                {
+                    "user_id": "Mudit Agrawal",
+                    "user_href": "/profile/Mudit-Agrawal-5"
+                },
+                {
+                    "user_id": "Harri K. Hiltunen",
+                    "user_href": "/profile/Harri-K-Hiltunen"
+                },
+                {
+                    "user_id": "Jack Stanek",
+                    "user_href": "/profile/Jack-Stanek-3"
+                },
+                {
+                    "user_id": "Paulius Buidovas",
+                    "user_href": "/profile/Paulius-Buidovas"
+                },
+                {
+                    "user_id": "Stephen Knotts",
+                    "user_href": "/profile/Stephen-Knotts-4"
+                },
+                {
+                    "user_id": "Joe Smith",
+                    "user_href": "/profile/Joe-Smith-1508"
+                },
+                {
+                    "user_id": "Gregory Garner",
+                    "user_href": "/profile/Gregory-Garner"
+                },
+                {
+                    "user_id": "Bawvamarika Baby",
+                    "user_href": "/profile/Bawvamarika-Baby"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Marc Klynhans",
+                "href": "/profile/Marc-Klynhans"
+            },
+            "answer_text": "If you want to think about different sounds, you have to break them down into individual frequencies; that\u2019s the most fundamental level I\u2019d say you need to get this answer started. So how does a speaker produce multiple frequencies at once? I\u2019m going to define \u201cat once\u201d as over the same time period. I\u2019m not going to get into maths, I\u2019ll just explain in as plain English as I can. Any signal can be broken up into individual frequencies of different amplitude. Doing this is generally known as a Fourier transform, or in other words, the spectrum. This is where your thinking is. This is also why the visualizations in media players are aptly named \u201cspectrum\u201d something or other:    These spectrum visualizers show the audio spectrum over a window period, just the same as a screen shows pixels for a certain time, with a refresh rate (each refresh being a time period), like a snapshot. For any given image of a spectrum there are multiple frequencies shown at once. But thinking about the spectrum of an audio signal is more analytical. You need to see what is happening in real life, in the TIME domain. Audio is a varying pressure wave, and a speaker (I\u2019m referring to a single driver) moves in and out to create this pressure wave. If you look at one frequency, it looks like this:  If you add another, it could look like this:  Add another 6 frequencies, and it could look like this (that\u2019s looking more like a music signal!):  The same can be seen by a \u201cwave\u201d kind of visualization in a media player. I\u2019m going to zoom in to one smaller period, or window, of time (or \u201cat once\u201d):  An audio signal is electrically represented as a voltage. When this voltage is applied to a speaker, it moves in and out, depending on whether the voltage is positive or negative. In the above image, let\u2019s assume that when the signal is above the solid line, the speaker moves out, and when it is below the solid line, the speaker moves in. As you can see, it starts in, moves to 0, then moves out, and then back in, etc. The speaker simply moves in and out according to this waveform, and our ears hear the spectrum (we have cool ears). The wave above can be shown as an FFT (Fast Fourier Transform), or spectrum:  Each spike shows a frequency. So although multiple frequencies are played, the actual, real-life wave is simply a signal which goes up and down. The moving up and down of the signal can be said to contain a spectrum of frequencies, and we hear that spectrum. You could think of it that the wave is all the frequencies mixed together. A better way to say all of this is that a signal can be represented in the time domain [f(t)] as a waveform, and in the frequency domain [F(f)] as a series of frequencies. A speaker produces the audio as it is mathematically represented in the time domain, and our ears hear the audio as it is mathematically represented in the frequency domain. Both are valid representations of the same signal. Maths is everything. ",
+            "date": "Answered May 9, 2019",
+            "views": "2",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Harrison Read",
+                    "user_href": "/profile/Harrison-Read-1"
+                },
+                {
+                    "user_id": "Max Rado",
+                    "user_href": "/profile/Max-Rado"
+                },
+                {
+                    "user_id": "Kaarel Kurm",
+                    "user_href": "/profile/Kaarel-Kurm"
+                },
+                {
+                    "user_id": "Mudit Agrawal",
+                    "user_href": "/profile/Mudit-Agrawal-5"
+                },
+                {
+                    "user_id": "Lankey Kong",
+                    "user_href": "/profile/Lankey-Kong"
+                },
+                {
+                    "user_id": "Jean-Christophe Lafrance-Beaulieu",
+                    "user_href": "/profile/Jean-Christophe-Lafrance-Beaulieu"
+                },
+                {
+                    "user_id": "Bawvamarika Baby",
+                    "user_href": "/profile/Bawvamarika-Baby"
+                },
+                {
+                    "user_id": "David Joseph",
+                    "user_href": "/profile/David-Joseph-208"
+                },
+                {
+                    "user_id": "Zhen Bradley",
+                    "user_href": "/profile/Zhen-Bradley"
+                }
+            ]
+        }
+    ]
+}

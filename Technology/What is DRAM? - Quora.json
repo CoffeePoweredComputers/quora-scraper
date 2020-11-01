@@ -1,0 +1,53 @@
+{
+    "title": "What is DRAM? - Quora",
+    "tags": [
+        "DRAM",
+        "Computer Memory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "A capacitor is a device which holds charge temporarily.  DRAM uses a vast array of capacitors to store one bit in each.  There are a couple complications to this arrangement: capacitors leak, so need to be refreshed periodically.  Refresh just means reading out the bit and writing it back.reading out a charge empties the capacitor, so you have to write-back what you just read.to read out bits, the address has to be decided, and this can't reasonably be done for every bit.  instead a whole row is read out at once (thousands of bits), and the other part of the address is used to select within this row.Ironically, this row-wise behavior is arguably not actually \"random access\", since accessing bits within an already-read-out row is significantly faster.  But DRAM is good enough to provide data in about 50ns, and by combining many such arrays, plenty of bandwidth.  So \"main memory\" for most computers is thus constantly decaying charges... By contrast, static RAM stores a bit in a \"flip-flop\", which consumes power to stay in either 0 or 1 state.  But it is also faster, so is used in certain applications, especially cache. By another contrast, FLASH is a little like DRAM, in that it consists of huge arrays of cells, each holding a charge.  Reading flash cells isn't destructive, but writing them is, a little - actually you can't write them, only erase them, and have to do a whole array at once, and they wear out after a few thousand erase cycles!  On the other hand, each cell can store different levels of charge (eg: 8 levels means three bits per cell), and the charge is non-volatile (maintained without power). As a further aside, I'm always amazed how primitive the DRAM interface is.  You'd think by now the CPU would just say \"write this at that address\" or \"gimme what's at this address\".  But in fact, it's a nasty protocol involving all sorts of modes and phases and don't forget to wait tCAS cycles after doing a Foo except when Bar.  This surprises me because DRAM chips have a lot of internal concurrency, but the protocol doesn't expose it well, and requires very complicated, high-speed memory controllers...  ",
+            "date": "Answered February 8, 2016",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Arush Mani",
+                    "user_href": "/profile/Arush-Mani"
+                },
+                {
+                    "user_id": "Sherwin Anthony Arellano",
+                    "user_href": "/profile/Sherwin-Anthony-Arellano"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vigneshwaran Natarajan",
+                "href": "/profile/Vigneshwaran-Natarajan-2"
+            },
+            "answer_text": "Dynamic Random Access Memory-DRAM DRAM is a common type of random access memory,used in personal computers (PCs), workstations and servers,it stores each bit of data into a separate capacitor in an integrated circuit. The capacitor can be discharged or charged and these two states represent the two values of a bit (0 and 1). A DRAM storage cell is dynamic in that it needs to be refreshed or given a new electronic charges every few milliseconds to compensate for charge leaks from the capacitor. ",
+            "date": "Answered January 9, 2016",
+            "views": "803",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Michael Sporer",
+                    "user_href": "/profile/Michael-Sporer-1"
+                },
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "Aravindh.v Veeramani.k",
+                    "user_href": "/profile/Aravindh-v-Veeramani-k"
+                }
+            ]
+        }
+    ]
+}

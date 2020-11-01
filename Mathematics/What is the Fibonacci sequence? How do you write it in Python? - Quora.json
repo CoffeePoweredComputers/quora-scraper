@@ -1,0 +1,41 @@
+{
+    "title": "What is the Fibonacci sequence? How do you write it in Python? - Quora",
+    "tags": [
+        "Fibonacci Sequence",
+        "Fibonacci Numbers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mukesh Tiwari",
+                "href": "/profile/Mukesh-Tiwari"
+            },
+            "answer_text": "From Wikipedia (Fibonacci number ), The sequence  of Fibonacci numbers is defined by the recurrence relation:  with seed value   import itertools as it\u00a0\u00a0def fib():\u00a0    f, s = 0, 1\u00a0    while True:\u00a0        yield f\u00a0        f, s = s, f + s\u00a0\u00a0for x in it.islice(fib(), 10):\u00a0    print x\u00a0\u00a0u5935541@newport:~$ python fib.py \u00a00\u00a01\u00a01\u00a02\u00a03\u00a05\u00a08\u00a013\u00a021\u00a034\u00a0",
+            "date": "Answered April 27, 2018",
+            "views": "497",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shriprakash Gaurav",
+                    "user_href": "/profile/Shriprakash-Gaurav-1"
+                },
+                {
+                    "user_id": "Rahul Ranjan",
+                    "user_href": "/profile/Rahul-Ranjan-22"
+                },
+                {
+                    "user_id": "Shishir Chandrol",
+                    "user_href": "/profile/Shishir-Chandrol"
+                },
+                {
+                    "user_id": "Aryan Soman",
+                    "user_href": "/profile/Aryan-Soman"
+                },
+                {
+                    "user_id": "Ashok Vijay",
+                    "user_href": "/profile/Ashok-Vijay"
+                }
+            ]
+        }
+    ]
+}

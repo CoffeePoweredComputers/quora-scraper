@@ -1,0 +1,39 @@
+{
+    "title": "What can a while loop be used for that a for loop cannot, and vice versa? - Quora",
+    "tags": [
+        "Programming Loops",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tony Wallace",
+                "href": "/profile/Tony-Wallace-1"
+            },
+            "answer_text": "I see here a lot of answers saying that they are interchangeable. While certainly true for C style languages it is not true in general. Even then I assert using a FOR statement when the number of iteration is not known when the loop is entered is bad practice. A WHILE loop should be used in those situations instead. Here is the GWBASIC FOR statement manual entry: FOR ... NEXT Statements Purpose: To execute a series of instructions a specified number of times in a loop. Syntax: FOR variable=x TO y [STEP z] \u00a0. \u00a0. \u00a0. \u00a0NEXT [variable][,variable...]\u00a0Comments: variable is used as a counter. x,y, and z are numeric expressions. STEP z specifies the counter increment for each loop. The first numeric expression (x) is the initial value of the counter. The second numeric expression (y) is the final value of the counter. Program lines following the FOR statement are executed until the NEXT statement is encountered. Then, the counter is incremented by the amount specified by STEP. If STEP is not specified, the increment is assumed to be 1. A check is performed to see if the value of the counter is now greater than the final value (y). If it is not greater, GW-BASIC branches back to the statement after the FOR statement, and the process is repeated. If it is greater, execution continues with the statement following the NEXT statement. This is a FOR-NEXT loop. The body of the loop is skipped if the initial value of the loop times the sign of the step exceeds the final value times the sign of the step. If STEP is negative, the final value of the counter is set to be less than the initial value. The counter is decremented each time through the loop, and the loop is executed until the counter is less than the final value. FOR <integer variable> = <start value> TO <end value> [STEP <value>] It is important to note the intention of statement, which is to iterate a counter over a loop. In practice it was possible to modify loop counters and loop termination values within the loop, but doing so is ugly coding. For comparison here is the gwbasic while statement: WHILE ... WEND Statement Purpose: To execute a series of statements in a loop as long as a given condition is true. Syntax: WHILE expression\u00a0.\u00a0.\u00a0.\u00a0[loop statements]\u00a0.\u00a0.\u00a0.\u00a0END \u00a0Comments: If expression is nonzero (true), loop statements are executed until the WEND statement is encountered. GW-BASIC then returns to the WHILE statement and checks expression. If it is still true, the process is repeated. If it is not true, execution resumes with the statement following the WEND statement. WHILE and WEND loops may be nested to any level. Each WEND matches the most recent WHILE. An unmatched WHILE statement causes a \"WHILE without WEND\" error. An unmatched WEND statement causes a \"WEND without WHILE\" error. Examples: 90 'BUBBLE SORT ARRAY A$\u00a0100 FLIPS=1\u00a0110 WHILE FLIPS\u00a0115 FLIPS=0\u00a0120 FOR N=1 TO J-1\u00a0130 IF A$(N)>A$(N+1) THEN SWAP A$(N), A$(N+1): FLIPS=1\u00a0140 NEXT N\u00a0150 WEND\u00a0This is the structure for a loop with an indeterminate number of iterations. However when using while loops it is normal to have a number of statements setting up the loop before it starts executing, for example the statement FLIPS=1 in the above example. It can be argued that the C style for statement, with its loop initiation clause associates loop initiation with the loop itself, and given that the control variable is neither auto-incremented nor auto checked and in ALGOL and FORTRAN inspired languages such a usage makes sense. The syntax of a for loop in C programming language is \u2212 for ( init; condition; increment ) {\u00a0   statement(s);\u00a0}\u00a0Here is the flow of control in a 'for' loop \u2212 The init step is executed first, and only once. This step allows you to declare and initialize any loop control variables. You are not required to put a statement here, as long as a semicolon appears.Next, the condition is evaluated. If it is true, the body of the loop is executed. If it is false, the body of the loop does not execute and the flow of control jumps to the next statement just after the 'for' loop.After the body of the 'for' loop executes, the flow of control jumps back up to the increment statement. This statement allows you to update any loop control variables. This statement can be left blank, as long as a semicolon appears after the condition.The condition is now evaluated again. If it is true, the loop executes and the process repeats itself (body of loop, then increment step, and then again condition). After the condition becomes false, the 'for' loop terminates.",
+            "date": "Answered October 19, 2020",
+            "views": "41",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Andrew Droffner",
+                    "user_href": "/profile/Andrew-Droffner"
+                },
+                {
+                    "user_id": "Laszlo Weber",
+                    "user_href": "/profile/Laszlo-Weber"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Seth D. Fulmer",
+                "href": "/profile/Seth-D-Fulmer"
+            },
+            "answer_text": "Question: What can a while loop be used for that a for loop cannot, and vice versa? Nothing - You can rewrite any loop structure as any other loop structure using another keyword - For example: For: for(int iLength = 50, iLoop = 0; iLoop < iLength; iLoop++)\u00a0\tprintf(\"%d\", iLoop);\u00a0The same thing as a While loop: int iLength = 50, iLoop = 0;\u00a0\u00a0while(iLoop < iLength)\u00a0\tprintf(\"%d\", iLoop++);\u00a0The same thing as a do\u2026while loop: int iLength = 50, iLoop = 0;\u00a0\u00a0do\u00a0\t{\u00a0\tprintf(\"%d\", iLoop);\u00a0\t}\u00a0while(++iLoop < iLength);\u00a0You could even change the 2nd and 3rd ones(even the first perhaps) around by instead of using the pre or postfix ++ in the printf or loop comparison statement, to do a separate assignment within the body of the loop to increment the variable in a single simple statement instead of a compound one. But possibly the only thing you can\u2019t do with a while/do\u2026while loop that you can do with a for loop is all that initialization and incrementing within the loop statement itself - In the \u201cwhile\u201d varieties, the initialization will need to happen prior to the loop and the incrementing will usually have to happen within the body of the loop, possibly in the while statement if you use a properly placed ++/\u2014 in the comparison you can do both comparison and increment the loop variable at the same time\u2026but it has to be coded properly or you\u2019ll increment the loop variable prematurely and possibly test the variable on a value that is either not valid yet or is no longer true based on circumstances. ",
+            "date": "Answered October 21, 2020",
+            "views": "39",
+            "upvotes": " Answer requested by Aaron Davis"
+        }
+    ]
+}

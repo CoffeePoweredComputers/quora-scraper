@@ -1,0 +1,65 @@
+{
+    "title": "Why are the mean and variance the same in the Poisson distribution? - Quora",
+    "tags": [
+        "Poisson Distribution",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Partha Chattopadhyay",
+                "href": "/profile/Partha-Chattopadhyay-2"
+            },
+            "answer_text": "Let [math]x[/math] be a variable following a Poisson Distribution with parameter [math]\\lambda[/math] with a probabilty mass function as [math]f(x)= e^{-\\lambda}\\frac{\\lambda^x}{x!}, x=0,1,2,...  [/math] Now, mean of x [math]=E(x)=\\sum_{x=0}^{\\infty}xf(x)[/math] [math]=\\sum_{x=0}^{\\infty}xe^{-\\lambda}\\frac{\\lambda^x}{x!}[/math] [math]=e^{-\\lambda}\\lambda\\sum_{x=1}^{\\infty}\\frac{\\lambda^{x-1}}{(x-1)!}[/math] [math]=e^{-\\lambda}\\lambda e^{\\lambda}=\\lambda.....(1)[/math] Again, variance of x [math]=[E(x-E(x))^2]=Ex^2-[E(x)]^2 ....(2)[/math] [math]E(x^2)=Ex(x-1)+E(x)... (3)[/math] [math]Ex(x-1)=\\sum_{x=0}^{\\infty}x(x-1)e^{-\\lambda}\\frac{\\lambda^x}{x!}[/math] [math]=e^{-\\lambda}\\lambda^2\\sum_{x=2}^{\\infty}\\frac{\\lambda^{x-2}}{(x-2)!}[/math] [math]=e^{-\\lambda}\\lambda^2e^{\\lambda}[/math] [math]=\\lambda^2[/math] From (1),(2) and (3), Variance of x =[math]\\lambda^2+\\lambda-\\lambda^2=\\lambda[/math] Hence, for a Poisson Distribution, mean and variance are same with parameter [math]\\lambda.[/math] ",
+            "date": "Answered September 1, 2018",
+            "views": "13",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Sabir Siddiqui",
+                    "user_href": "/profile/Sabir-Siddiqui-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Borovcnik Manfred",
+                "href": "/profile/Borovcnik-Manfred"
+            },
+            "answer_text": "It should be no surprise that there are distributions that have the same value for their mean and variance. The answer of Partha Chattopadhyaya perfectly shows the mathematical details of proving that the values are the same for the Poisson distribution. However, the demonstration does give no insight why this is so. If you consider that the Poisson distribution is an approximation to the binomial if n is large and p is small, then you can see it directly. For the binomial distribution B(n, p), mean = np and variance = np(1\u2013p). If p is very small, 1\u2013p is close to 1 so that variance is close to np, i.e., the mean. One may make the consideration precise by a limit theorem but there is no need for it here to make this intuitive argument again more complicated. ",
+            "date": "Answered September 2, 2018",
+            "views": "24",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bob Byers",
+                    "user_href": "/profile/Bob-Byers-3"
+                },
+                {
+                    "user_id": "Diya Nag Chaudhury",
+                    "user_href": "/profile/Diya-Nag-Chaudhury"
+                },
+                {
+                    "user_id": "Syed Ali Zain",
+                    "user_href": "/profile/Syed-Ali-Zain"
+                },
+                {
+                    "user_id": "Rajarshi Chatterjee",
+                    "user_href": "/profile/Rajarshi-Chatterjee-23"
+                },
+                {
+                    "user_id": "Syed Amjad Ali",
+                    "user_href": "/profile/Syed-Amjad-Ali-5"
+                },
+                {
+                    "user_id": "Dharmaraj Sinh Jadeja",
+                    "user_href": "/profile/Dharmaraj-Sinh-Jadeja-1"
+                },
+                {
+                    "user_id": "Srivignesh Rajan",
+                    "user_href": "/profile/Srivignesh-Rajan-1"
+                }
+            ]
+        }
+    ]
+}

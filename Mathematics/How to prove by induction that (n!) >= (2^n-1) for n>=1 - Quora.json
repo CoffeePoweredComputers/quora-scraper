@@ -1,0 +1,50 @@
+{
+    "title": "How to prove by induction that (n!) >= (2^n-1) for n>=1 - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Discrete Mathematics",
+        "Induction (Electromagnetism)",
+        "Mathematics and Algorithms",
+        "Proofs (mathematics)",
+        "Number Theory",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Richard Lindsay",
+                "href": "/profile/Richard-Lindsay-53"
+            },
+            "answer_text": "True for n=1 (1! =1, 2^(1\u20131) = 2^0 =1; so 1! >= 2(1\u20131). Now assume true for n; that is n! >=1 2^(n-1). Try to prove from that that (n+1)! >= 2^ (n). take n! >= 2^(n-1) Multiply both sides by n+1; that is a positive number >=1, so the >= relation is maintained. So I have (n+1)*n! >= (n+1)* 2^(n-1); but (n+1)*n = (n+1)! So I have (n+1)! >= (n+1)* 2^(n-1) But since n>1, (n+1)>2; say n+1 = 2*k where k>=1, Then we ask see that (2*k) * 2^(n-1) = k*2*2^(n-1) = k*2^n. So is (n+1)! >= k*2^n? Yes, (since k>=1) So (n+1)! >= 2^(n) QED. ",
+            "date": "Answered May 1, 2020",
+            "views": "36",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Faisal Hamad",
+                    "user_href": "/profile/Faisal-Hamad-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eduardo Di Santi",
+                "href": "/profile/Eduardo-Di-Santi"
+            },
+            "answer_text": "Prove it for n=1, then prove it for n+1 so it will hold for n. e.g. 2^(n - 1) when n = 1 its 1 while n! = 1, proved now, to prove for any n we fix this n as \u201ck\u201d, so n=k therefore, our induction hypothesis (A) is: k! >= 2^(k-1) now make n=k+1, therefore, (k+1)!>=2^(k+1\u20131) or (k+1)! >= 2^k, Rewrite the expression as: (k+1) * k! >= 2^(k-1)*2 so as k+1 >=2 and because k! >= 2^(k-1) its true because of inductive hypothesis (A) then (k+1) * k! >= 2^(k-1)*2 => (k+1)! >= 2^k ",
+            "date": "Answered May 1, 2020",
+            "views": "64",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Faisal Hamad",
+                    "user_href": "/profile/Faisal-Hamad-7"
+                }
+            ]
+        }
+    ]
+}

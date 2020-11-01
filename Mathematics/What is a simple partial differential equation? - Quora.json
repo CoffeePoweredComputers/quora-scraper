@@ -1,0 +1,48 @@
+{
+    "title": "What is a simple partial differential equation? - Quora",
+    "tags": [
+        "Ordinary Differential Equations",
+        "Partial Differential Equations",
+        "Applied Mathematics",
+        "Differential Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lance Diduck",
+                "href": "/profile/Lance-Diduck"
+            },
+            "answer_text": "Probably the simplest and one of the first you encounter is the Laplacian [math]\\nabla^2  B=0 [/math] Which in Cartesian coordinates is [math]\\frac{\\partial^2 B}{\\partial x^2 }+\\frac{\\partial^2 B}{\\partial y^2 }+\\frac{\\partial^2 B}{\\partial z^2 }=0 [/math] One easy solution is [math]B=xyz[/math] If you've studied vector calculus, you'd recognize this as the divergence of the gradient [math]\\nabla \\cdot \\nabla B=0[/math] In physics, this is a special case of the diffusion equation when the system is in equilibrium, I e. [math]\\nabla^2 B=\\frac{\\partial B}{\\partial t}[/math] where [math]t[/math] is time. If B were a temperature for example, the pde models the evolution of a the scalar feild temperature of that solid over time. If it is in equilibrium , the first -order time derivative is 0. Then we only need boundary conditions to complete, e.g.. B(0,x,y) =w, B(100, x,y) =u, and so forth to find the interesting solution. ",
+            "date": "Answered January 4, 2020",
+            "views": "180",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Mikey Haynes",
+                    "user_href": "/profile/Mikey-Haynes-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohammed Gha\u00efth",
+                "href": "/profile/Mohammed-Gha\u00efth"
+            },
+            "answer_text": "On [math]\\mathbb{R}^n[/math], we set [math]\\dfrac{\\partial^n u}{\\partial x_1 \\partial x_2 \\cdots \\partial x_n}=0.\\tag*{}[/math] This PDE is an easy and simple one. Without complicating things and instead of dealing with [math]n[/math] variables, we just pick two. So, on [math]\\mathbb{R}^2[/math], the PDE [math]\\dfrac{\\partial^2 u}{\\partial x\\partial y}=0, \\tag{1}[/math] has the following solution [math]u(x,y)=A(x)+B(y), \\tag*{}[/math] for any two-times differentiable functions [math]A[/math] and [math]B[/math]. That is, the functions [math]u_1(x,y)=\\alpha x+y, \\alpha\\in\\mathbb{R},\\tag*{}[/math] [math]u_2(x,y)=e^x+e^{-2 y}, \\tag*{}[/math] [math]u_3(x,y)=\\cosh(x-6)-5 \\sin(\\pi y), \\tag*{}[/math] are all solutions to [math](1)[/math] in [math]\\mathbb{R}^2[/math]. ",
+            "date": "Answered January 4, 2020",
+            "views": "286",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                },
+                {
+                    "user_id": "Mikey Haynes",
+                    "user_href": "/profile/Mikey-Haynes-3"
+                }
+            ]
+        }
+    ]
+}

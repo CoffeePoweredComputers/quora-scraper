@@ -1,0 +1,102 @@
+{
+    "title": "Is 5G faster than Wi-Fi? - Quora",
+    "tags": [
+        "Wireless Internet",
+        "5G (wireless communication)",
+        "Wireless Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "Huh? \u201c5G\u201d \u2014 5G-NR Cellular Radio \u2014 is wireless. No one\u2019s hooking wires up to your next-generation phone. So is it faster than other forms of wireless? Maybe. All wireless systems have the same kind of limits: for any given wireless band, there\u2019s the \u201cspectral efficiency\u201d of the actual wireless protocol: how well can I transmit data over this connection? That\u2019s been improving over time, and most of the latest wireless protocols, 5G-NR, LTE, 802.11ac/ax, etc. are very, very efficient. Next is the available bandwidth: how fat is the pipe? 802.11 currently allows channels up to 160MHz wide (part of 802.11ax, also dubbed \u201cWiFi 6\u201d). This is kind of a magic trick, too, as it\u2019s not a single 160MHz-wide channel, but two separate 80MHz channels \u201cbonded\u201d to act as one. In the 5GHz WiFi band, there\u2019s room for only five 160MHz channels. But since your 802.11 router probably only impacts you house and maybe sorta-kinda reaches a neighbor or two, you can realistically set this up at your home and run a full 160MHz channel. That can deliver up to about 1,900 Mb/s\u2026 a total of 9,600Mb/s across the whole 5GHz band. And this spring I think it is, they\u2019re opening up the 6GHz band to WiFi. You\u2019ll need a WiFi 6E device to access those 7 additional 160MHz channels, but this is more than doubling the bandwidth available to WiFi. So the bottom line is that you could very realistically have 160MHz channels and something like 1,900Mb/s at home. Now, how useful that is depends on what you\u2019re doing. I have really fast optical internet at home, and that\u2019s still only about 960Mb/s to the ISP, and generally much slower once it\u2019s out there competing with everything else on the Internet. So everything at home is based around gigabit Ethernet and 802.11ac routers connected to that\u2026 not really much point in trying to go faster. But I could.  So if you look at bandwidth, again, it\u2019s going to depend. I have T-Mobile, and they\u2019re running 5G-NR radio on the 600MHz (n71) wireless band. That\u2019s 617MHz-698MHz, so 81MHz available. Cellular radio generally uses separate upstream and downstream channels, so you\u2019d expect this to be split into two 40MHz channels. However, I read that at least in testing, T-Mobile was using 600MHz only for 5G downlink, so about 80MHz available \u2014 you get your uplink on an LTE channel. In practice, folks are seeing peak speeds at around 230Mb/s. But keep in mind that you don\u2019t get the entire 80MHz for yourself \u2014 a cellular radio is shared. And while there aren\u2019t that many 5G users in most areas yet, this low-band is designed to cover a very large area. T-Mobile won the 600MHz band, formerly part of the UHF television band, and decided to make this one of their 5G bands because it wasn\u2019t used by anyone else, and because lower frequencies travel much farther than higher frequencies. So they can put 5G cells on existing towers built in the 2G, 3G, and 4G era and get great coverage. But it\u2019s not all that much faster than LTE/4G, simply because LTE/4G itself is very efficient. A big part of 5G is adding bandwidth.  And I think T-Mobile\u2019s offering an honest 5G at 600MHz. But let\u2019s look at AT&T. Earlier this year, they were branding LTE-Advanced, a 4G technology, as \u201c5GE\u201d on their 5G phones. They didn\u2019t actually have 5G service in many areas, but they were trying to fool you, to make you feel better about the 5G phone you just bought. They actually did the same thing in the 3G era, relabeling HSPA+ as \u201c4G\u201d on their 4G phones. But there\u2019s even more fun from AT&T. They have been rolling out 5G in many areas. And in some locale, in-city, they have real hi-band 5G, and we\u2019ll get to that. But they also have low-band 5G on 850MHz, which is the old 1G/2G/3G band. There\u2019s about 40MHz of bandwidth on that band, but AT&T shares it with Verizon, and it has to go two directions. So they\u2019re only running 5G in those areas on 5MHz channels. Now, you ever run a recent LTE phone and actually look at the channels available, LTE is on a bunch of different frequencies. And better than that, like WiFi 6, you can \u201cchannel bond\u201d\u2026 so your actual LTE connection may be sharing 20MHz or 40MHz over a number of different actual channels, depending on what\u2019s available and what your hardware is capable of. And in fact, if you\u2019re using AT&T\u2019s 5G on 850MHz, you\u2019re being told it\u2019s 5G, but you\u2019re probably running most of your data over bonded 4G channels. And yet, you may find that this is slower than a 4G channel in the same location. That\u2019s due to another LTE magic trick. LTE-Advanced introduced a thing called License Assisted Access (LAA). Remember that big chunk of WiFi bandwidth, about 800MHz in the 5GHz radio band? That\u2019s not strictly WiFi spectrum, but \u201cISM\u201d bandwidth, unlicensed spectrum available for multiple uses. So using LAA, an LTE-Advanced cell can start a connective via LTE in one of the licensed bands (depending on your carrier), but, after checking for anyone using the 5GHz band, bond in 5GHz channels. This is supported by LTE, and while it\u2019s possible for 5G-NR, that hasn\u2019t been rolled out yet. The end result is that, depending on where you are, your 4G could run faster than a 5G-NR connection.  Next, we have 5G mid-band. These are basically frequencies over 1GHz but below 6GHz\u2026 so that LAA connection is essentially mid-band. Right now, there are a few cellular frequencies that cover mid-band, though the only one I know being planned exclusively for 5G-NR is the 2500MHz (n41) band. That\u2019s where Sprint ran their short-lived WiMax 4G, before LTE took over as the 4G radio of choice. One of the main reasons T-Mobile bought Sprint was to get that mid-band spectrum. Using the whole band, T-Mobile has managed 2500Mb/s connections. Now, two questions emerge from this. No, you\u2019ll never get 2500Mb/s on a mid-band 5G connection, because just like all the other bands, this has to be shared between users. There\u2019s 100MHz of bandwidth here, not a whole lot more than on T-Mobile\u2019s 600MHz band. But remember the rule I pointed out near the start of this, that higher frequencies don\u2019t go as far? Well, the 2500MHz band is much like your 2400MHz WiFi\u2026 sure, they put it up on towers, but it\u2019s much shorter range than 600MHz. That\u2019s actually a Good Thing, because building out a very, very fast cellular network counts on frequency reuse. If you can run four cell towers on the same channel in the space of one tower, the infrastructure costs more, most likely, but you get four times the bandwidth out to the customer. So you can expect, in general, that mid-band 5G will offer faster speeds than low-band, even though they\u2019re pretty similar in available bandwidth. This was still in testing last I checked, but you can probably expect peaks of around 400Mb/s-700Mb/z on mid-band 5G\u2026 some of that will depend on where your network provider places a speed cap, if they do. It\u2019s up to them, basically. As with all wireless, of course, it depends on how many users are on the same tower, it depends on the backhaul, etc.  And now we get to what everyone wants: crazy fast cellular with 5G-NR, which is on hi-band cellular. The widest band for 5G right now is the n260 band, at 37000-40000 MHz, so a whole 5GHz available for use. That\u2019s the good news. The bad news is that radio up at 37GHz is really, really short range. You can expect a hi-band radio tower to be within about 1,000ft of you if you\u2019re getting any sort of hi-band performance. Even with towers, this is going to seem quite a bit more like municipal WiFi than traditional cellular, in that it\u2019ll be really easy to be out of range of a hi-band connection.  Instead of seeing the big, big towers (with or without the fauxliage covers)\u2026  \u2026 at least out of city centers, you\u2019ll probably see more mini-cells, built into street lights and other regularly repeating structures. At least for those parts of the country likely to ever seen hi-band radio. If you do get good hi-band 5G, you can probably expect peaks in the 1000Mb/s-3000Mb/s range, depending on just how your cellular network provider is provisioning their network. And, of course, the capabilities of your receiver. So yeah, this can be after than WiFi 6, but of course, with more people able to share that spectrum, it\u2019s likely more variable than your wireless at home.  I lived in rural South Jersey for almost exactly eighteen years. It was a great place to raise kids, a huge house, 26.3 acres, etc. But network coverage\u2026 not good. The forest pretty much killed T-Mobile and Sprint, neither of whom had lower-band cellular channels back in the 3G era (both only on 1900MHz). Trees eat certain frequencies very effectively. And no was willing to bring in cables for cable TV or even DSL. So my television and network choices were, practically, satellite, satellite, or dial-up. This place was on a major(ish) Highway, US Route 40, which runs from I-95 to Atlantic City. If they had lines the highway with hi-band cells, I still wouldn\u2019t get anything in my house (okay, I\u2019m an engineer, I could have rigged a fixed cellular modem in a weatherproof box somewhere near the highway and run my own connection to the house and STILL spend less than I did on satellite internet). Lots of people aren\u2019t getting 5G-NR at their homes, not soon for sure, and possible never. I actually don\u2019t care\u2026 my internet connection is fast enough. But this hasn\u2019t been missed, either\u2026 for places where they do reach, the cellular providers are planning to offer fixed 5G modems, to complete with wired internet services. Read More What is LTE License Assisted Access (LAA)? ",
+            "date": "Answered October 16, 2020",
+            "views": "85",
+            "upvotes": " View 68 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ravi Raj Saxena",
+                    "user_href": "/profile/Ravi-Raj-Saxena"
+                },
+                {
+                    "user_id": "Haam Tham",
+                    "user_href": "/profile/Haam-Tham"
+                },
+                {
+                    "user_id": "Kirill Kovshov",
+                    "user_href": "/profile/Kirill-Kovshov"
+                },
+                {
+                    "user_id": "DoraBabu Pindi",
+                    "user_href": "/profile/DoraBabu-Pindi"
+                },
+                {
+                    "user_id": "Anurag Joshi",
+                    "user_href": "/profile/Anurag-Joshi-33"
+                },
+                {
+                    "user_id": "Nitish B",
+                    "user_href": "/profile/Nitish-B-8"
+                },
+                {
+                    "user_id": "Mark Allen",
+                    "user_href": "/profile/Mark-Allen-15"
+                },
+                {
+                    "user_id": "Najib Fadil",
+                    "user_href": "/profile/Najib-Fadil"
+                },
+                {
+                    "user_id": "Zoey Weiss",
+                    "user_href": "/profile/Zoey-Weiss"
+                },
+                {
+                    "user_id": "Matt Lawrence",
+                    "user_href": "/profile/Matt-Lawrence-58"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jim Grup\u00e9",
+                "href": "/profile/Jim-Grup\u00e9"
+            },
+            "answer_text": "\u201cIs 5G faster than Wi-Fi?\u201d It can be. Theoretically, 5G cellular could reach 20Gbps, but that\u2019s in part because of being allocated an operating frequency up to 86GHz. WiFi (802.11ac) operates in a 2.4GHz or 5GHz band and currently peaks at less than 1Mbps (866Mbps). HOWEVER.. .. As a practical matter, because high frequencies have a very short range , it very likely that early 5G cellular networks will depend on use of an operating frequency at the low end of their range - which means 6GHz, and a much lower bandwidth. At 6GHz, carriers can use their existing towers.There is also the practical issue of supporting millions of users on their backbone. There are some carriers offering \u201c5G\u201d that can\u2019t handle the 4G traffic on their legacy networks.Thus, you might be offered \u201c5G\u201d cellular service, but it won\u2019t be the 20Gbps variety. 5G will probably be limited to about 100Mbps. To go any faster, carriers will have to build thousands more cellular towers and seriously upgrade their backbone networks. In a big country like the USA, the cost would be immense. Meanwhile, WiFi continues to advance. Some routers enable concurrent parallel connections. Wider channels would enable higher bandwidth. Maybe some spectrum up in the 80GHz range could be allocated to WiFi, and then it would blow 5G cellular away in terms of raw bandwidth. It still won\u2019t be mobile, however, and THAT is the big draw for 5G cellular. ",
+            "date": "Answered February 26, 2019",
+            "views": "26",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Radoslav Linev",
+                    "user_href": "/profile/Radoslav-Linev"
+                },
+                {
+                    "user_id": "Mohamed Amine El Bekhti",
+                    "user_href": "/profile/Mohamed-Amine-El-Bekhti"
+                },
+                {
+                    "user_id": "Nor Shazira",
+                    "user_href": "/profile/Nor-Shazira"
+                },
+                {
+                    "user_id": "Lance Wenzel",
+                    "user_href": "/profile/Lance-Wenzel-2"
+                },
+                {
+                    "user_id": "David LING (COM)",
+                    "user_href": "/profile/David-LING-COM"
+                },
+                {
+                    "user_id": "John Maria",
+                    "user_href": "/profile/John-Maria-3"
+                },
+                {
+                    "user_id": "Vo Nghi Nguyen",
+                    "user_href": "/profile/Vo-Nghi-Nguyen"
+                }
+            ]
+        }
+    ]
+}

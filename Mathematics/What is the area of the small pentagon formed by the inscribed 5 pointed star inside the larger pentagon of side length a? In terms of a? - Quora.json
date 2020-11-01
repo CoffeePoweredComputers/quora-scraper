@@ -1,0 +1,94 @@
+{
+    "title": "What is the area of the small pentagon formed by the inscribed 5 pointed star inside the larger pentagon of side length a? In terms of a? - Quora",
+    "tags": [
+        "Pentagons (geometry) ",
+        "Shapes",
+        "Triangles in Geometry",
+        "Triangles",
+        "Trigonometry (mathematics)",
+        "Geometry",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christopher Pellerito",
+                "href": "/profile/Christopher-Pellerito"
+            },
+            "answer_text": " If the black outer pentagon has side length a, then the internal pentagon has side length [math]\\frac{a}{\\phi^2}[/math] where [math]\\phi = \\frac{1+\\sqrt{5}}{2} = 1.618033989\u2026[/math] aka Ye Olde Golden Ratio. Since [math]\\phi^2[/math] is the same as [math]\\phi[/math] + 1, then the length of the outer is 2.618033989\u2026 times the inner. Consider the two shaded triangles in the figure below. The gold triangle is a 36\u201336\u2013108 isosceles triangle, and in such a triangle, the ratio [math]\\frac{a}{b}[/math] will be [math]\\phi[/math] since cos36\u00b0 = [math]\\frac{\\phi}{2}[/math]. The blue triangle is a 36\u201372\u201372 isosceles, and in such a triangle, the ratio [math]\\frac{b}{c}[/math] will also be [math]\\phi[/math] since sin18\u00b0 = [math]\\frac{\\phi-1}{2}[/math]. Thus the ratio [math]\\frac{a}{c}[/math] will be [math]\\frac{a}{b} \\frac{b}{c} = \\phi^2.[/math]  You had also asked about the areas of the figures. The area of a regular pentagon as a function of its side length a isn\u2019t anything pretty: [math]A=\\frac{a^2\\sqrt{5(2+\\sqrt{5})}}{4}[/math]. Since the pentagons\u2019 sides are in proportion [math]\\phi^2[/math], their areas will be in proportion [math]\\phi^4[/math]. The area of the interior pentagon, as a function of the exterior side, will be [math]A'=\\frac{a^2\\sqrt{5(2+\\sqrt{5})}}{4\\phi^4}[/math]. ",
+            "date": "Answered May 10, 2019",
+            "views": "717",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Richard Morris",
+                    "user_href": "/profile/Richard-Morris-34"
+                },
+                {
+                    "user_id": "Richard A. Sami",
+                    "user_href": "/profile/Richard-A-Sami"
+                },
+                {
+                    "user_id": "Mobis Dikas",
+                    "user_href": "/profile/Mobis-Dikas"
+                },
+                {
+                    "user_id": "Baptist Monteiro",
+                    "user_href": "/profile/Baptist-Monteiro"
+                },
+                {
+                    "user_id": "James Fitzpatrick",
+                    "user_href": "/profile/James-Fitzpatrick-55"
+                },
+                {
+                    "user_id": "Ray Van Raamsdonk",
+                    "user_href": "/profile/Ray-Van-Raamsdonk-1"
+                },
+                {
+                    "user_id": "Ranjan Khandavalli",
+                    "user_href": "/profile/Ranjan-Khandavalli-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jace Wayland",
+                "href": "/profile/Jace-Wayland-18"
+            },
+            "answer_text": "The side length of the larger pentagon is [math]a[/math]. Let the side lengths [math]s[/math] and [math]a_2[/math] be marked as follows:  There\u2019s enough information on the diagram to enable you to show why the marked angles are [math]36 \u00b0[/math] and [math]72 \u00b0[/math] exactly. So let\u2019s dig in! Using sine-rule, we can write [math]s[/math] in terms of [math]a[/math] as follows: [math]\\begin{align}s=a\\dfrac{\\sin(36 \u00b0)}{\\sin(108 \u00b0)}=a\\dfrac{\\sqrt{\\dfrac{5}{8}-\\dfrac{\\sqrt{5}}{8}}}{\\sqrt{\\dfrac{5}{8}+\\dfrac{\\sqrt{5}}{8}}}=\\dfrac{a}{2}(\\sqrt{5}-1)\\tag*{}\\end{align}[/math] Now we can use cosine-rule in the triangle with sides [math]a,a[/math] and [math](s+a_2+s)[/math]and angle of [math]108 \u00b0[/math] as follows: [math](2s+a_2)^2=a^2+a^2-2(a)(a)\\cos(108 \u00b0)\\tag*{}[/math] [math]\\implies 2s+a_2=a(\\sqrt{2-2\\cos(108 \u00b0 )})\\tag*{}[/math] [math]\\displaystyle =a\\sqrt{2-2\\left(\\dfrac{1}{4}-\\dfrac{\\sqrt{5}}{4}\\right)}\\tag*{}[/math] [math]=\\dfrac{a}{2}(\\sqrt{5}+1)\\tag*{}[/math] [math][=a\\varphi][/math] Now, [math]a_2=(2s+a_2)-2s[/math] [math]\\implies \\displaystyle a_2=a \\left(\\dfrac{\\sqrt{5}+1}{2}-(\\sqrt{5}-1)\\right)\\tag*{}[/math] [math]=\\dfrac{a}{2}(3-\\sqrt{5})\\tag*{}[/math] The formula for area of a regular pentagon of side length [math]a[/math] is [math]\\dfrac{a^2}{4}\\sqrt{5(5+2\\sqrt{5})}\\tag*{}[/math] So the area of the smaller pentagon is: [math]\\displaystyle \\dfrac{\\left(\\dfrac{a}{2}(3-\\sqrt{5})\\right)^2}{4}\\sqrt{5(5+2\\sqrt{5})}\\tag*{}[/math] [math]=\\dfrac{a^2}{4}\\sqrt{\\dfrac{5}{2}(25-11\\sqrt{5})}\\tag*{}[/math] [math]=\\dfrac{a^2}{8}\\sqrt{250-110\\sqrt{5}}\\tag*{}[/math] ",
+            "date": "Updated May 18, 2019",
+            "views": "886",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Ray Van Raamsdonk",
+                    "user_href": "/profile/Ray-Van-Raamsdonk-1"
+                },
+                {
+                    "user_id": "Isabelle Munro",
+                    "user_href": "/profile/Isabelle-Munro"
+                },
+                {
+                    "user_id": "Wizard",
+                    "user_href": "/profile/Wizard-64"
+                },
+                {
+                    "user_id": "Christopher Pellerito",
+                    "user_href": "/profile/Christopher-Pellerito"
+                },
+                {
+                    "user_id": "Clarissa Fray",
+                    "user_href": "/profile/Clarissa-Fray-10"
+                }
+            ]
+        }
+    ]
+}

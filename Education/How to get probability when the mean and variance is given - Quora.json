@@ -1,0 +1,92 @@
+{
+    "title": "How to get probability when the mean and variance is given - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Arunangshu Biswas",
+                "href": "/profile/Arunangshu-Biswas"
+            },
+            "answer_text": "I am afraid that you DO NOT get the EXACT probabilities given only the mean and the variance. In fact, there can exist more than one distribution with the same mean and variance. See the moment problem Moment problem - Wikipedia for the exact statement. You can, however, do some approximations using, for example, the Chebychev\u2019s inequality Chebyshev's inequality - Wikipedia. So, for example, if the mean is 2 and the standard deviation is 1 for a distribution whose exact form is unknown then on has the inequality that P(|X - 2| <= 3) >= 1 - 1/(3^2) = 8/9. This means that for this distribution the probability is at least 8/9 that the r.v. lies between -1 to 5 is 8/9. Note that this is true irrespective of the distribution. Stronger inequalities also exist, see, for example, Chernoff bound - Wikipedia. ",
+            "date": "Answered October 23, 2018",
+            "views": "41",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Henk Brozius",
+                "href": "/profile/Henk-Brozius"
+            },
+            "answer_text": "Mean and variance of a random variable (if they exist) are both determined by its distribution. But backwards its distribution is not determined by its mean and variance. So in principle you cannot find \u201cprobability given mean and variance\u201d. Often we know more than mean and variance. For instance what \u201ckind\u201d of distribution we are dealing with (e.g. normal, binomial, et cetera). Then mean and variance can be looked at as parameters and in many cases (not always) they determine the distribution. ",
+            "date": "Answered April 30, 2020",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Akash Munshi",
+                "href": "/profile/Akash-Munshi"
+            },
+            "answer_text": "It is possible in case of Binomial Distribution. In Binomial Distribution Mean=np and variance = npq now Where n=total sample, p= probability of success and q = probability of failure. From this is mean and variance is given you can obtain q I.e. q=(npq)/np And from this get the p I.e. p+q=1 which implies p=1-q I hope it will be helpful ",
+            "date": "Answered April 13, 2017",
+            "views": "8",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Riya Rajput",
+                    "user_href": "/profile/Riya-Rajput-164"
+                },
+                {
+                    "user_id": "Tornyo Joan Fafa",
+                    "user_href": "/profile/Tornyo-Joan-Fafa"
+                },
+                {
+                    "user_id": "Upasana Dey",
+                    "user_href": "/profile/Upasana-Dey-1"
+                },
+                {
+                    "user_id": "Shripad Bhat",
+                    "user_href": "/profile/Shripad-Bhat-5"
+                },
+                {
+                    "user_id": "Learner.",
+                    "user_href": "/profile/Learner-159"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nirav (PowerHouse)",
+                "href": "/profile/Nirav-PowerHouse"
+            },
+            "answer_text": "You cannot determine probability if mean and variance is known. Mean and variance calculation includes a set of observations while probability calculation includes type of sample and no of sample. But if in case you are asking for Normal distribution then If mean = 5 and sigma = 10 Then you can find the probability using the formula for Z and then compare that value in the normal table. Hope so i have cleared your question at least to some extent. ",
+            "date": "Answered April 11, 2017",
+            "views": "33",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roushan Mishra",
+                    "user_href": "/profile/Roushan-Mishra-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sarnath K",
+                "href": "/profile/Sarnath-K"
+            },
+            "answer_text": "MEAN and variance tells you about values taken by random variable. Probability can be about the occurrence of the random variable itself\u2026 or about the values taken by the variable if n when it occurs.. Density distributions are your best bet to know the Random variable. Some distribution do not have mean or expected values\u2026 so you can eliminate such distributions\u2026 Out of the distributions that have both mean and variance, the rand variable can belong to any of them.. ",
+            "date": "Answered March 19, 2017",
+            "views": "37",
+            "upvotes": "0"
+        }
+    ]
+}

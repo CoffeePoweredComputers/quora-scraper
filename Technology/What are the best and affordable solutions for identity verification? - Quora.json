@@ -1,0 +1,42 @@
+{
+    "title": "What are the best and affordable solutions for identity verification? - Quora",
+    "tags": [
+        "Healthcare IT"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Scott Rice",
+                "href": "/profile/Scott-Rice-7"
+            },
+            "answer_text": "The term Identity Verification can cover a wide array of information needs.   Several previous answers cover some of the types of ID verification but some can be fairly simple using just a REST or Soap API to verify that a particular combination of personal information attributes (like name, address, email, phone, etc.) have been seen out there somewhere before.   It's not fool proof, but it might help you peel off some of the bad guys out there.   You mention HIPAA compliance so you'll want to make sure they mention that they have BAAs (business associate agreements) in place; that's an important requirements for an information service provider to be HIPAA compliant.  That's going to narrow down your options quite a bit.   SSN verification is an option, but there are some pretty good options out there that support a mix of that, simple name and address, KBM as Ed Lin mentioned and telephone or other utility verification:  We (Data Services | PacificEast) supports many healthcare companies with these kinds of services as do some of our competitors.   Personally, though, I'd stay away from companies that sell consumer data to anyone with a credit card.   You'll get a lot better price, quality and service from a company that spends more time vetting customers. ",
+            "date": "Answered May 1, 2015",
+            "views": "22",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Marc McCabe",
+                "href": "/profile/Marc-McCabe"
+            },
+            "answer_text": "There are different elements to consider here - Companies and Solutions. Solutions (Highest to lowest fidelity) KBA (Knowledge Based Authentication): Users input combo of SSN/DOB/Address and get back \"out of wallet\" questions only they should be able to answer generated automatically.Payment Instrument: company makes a small deposit in user's account and then user must confirm this amountDocument Verification: Users scan or take a snap of their ID and then this is scanned against data automatically and in some cases manually.SSN Check: Basically KBA first step with no questionsSocial media profiles: LinkedIn, Facebook etc Companies  RSAIDologyIDanalyticsExperianEquifaxLexis Nexisand many many more",
+            "date": "Answered September 5, 2012",
+            "views": "3",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Daria Bulatovych",
+                    "user_href": "/profile/Daria-Bulatovych-1"
+                },
+                {
+                    "user_id": "John Lehmann",
+                    "user_href": "/profile/John-Lehmann"
+                },
+                {
+                    "user_id": "James Thornton",
+                    "user_href": "/profile/James-Thornton"
+                }
+            ]
+        }
+    ]
+}

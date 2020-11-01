@@ -1,0 +1,33 @@
+{
+    "title": "Is it remotely possible run macOS 11 on the Raspberry Pi, or does it not have the right kind of processor?  Why or why not? - Quora",
+    "tags": [
+        "Raspberry Pi 2",
+        "Raspberry Pi",
+        "macOS (operating system)",
+        "Operating Systems",
+        "Computer Hardware",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Josh Osborne",
+                "href": "/profile/Josh-Osborne-6"
+            },
+            "answer_text": "Apple has released a developer ARM Mac already, so a version of macos that runs on ARM is \u201cout in the wild\u201d. However being in the same processor family is only a small step. Most processors add instructions over time, and some actually remove some old ones. So you need the right version of the instruction set (in theory you can check to see what ISA a CPU has and conditionally use newer instructions, but new instructions frequently only save a few cycles and branching costs cycles, so this is frequently counterproductive. Sometimes you can compile an entire library or executable multiple times and select the \u201cright\u201d one to use. However Apple isn\u2019t going to be doing any of that to support older CPUs that are not CPUs they are using. So you need not just an ARM CPU but an ARM CPU with the same instruction set \u201coptions\u201d. For the moment lets pretend that the RPi has these, because there are more hurdles. Apple tends to do a lot of signing and verification. Getting around this is how a lot of jailbreaks work, so lets pretend we can find the right type of jailbreak to avoid this (or that they don\u2019t do it for ARM Macs). Now we have CPU related things that are not the instruction set. Like the MMU. The MMU tends to change over time and not be backwards compatible because \u201conly the operating system needs to deal with it\u201d. ARM\u2019s MMU actually is more consistent then many other CPUs, but it still has some options. Like large pages, which Apple absolutely uses because it helps get performance when you have large memory mapped peripherals, and even just large libraries you don\u2019t page. I don\u2019t know if the RPi has that MMU option, but lets pretend it does. The Secure Enclave is actually an ARM option, I forget what exactly the call it, but it involves a lot of MMU work, hardware signing and crypto of RAM access and a bunch of other stuff. I\u2019m very nearly positive that the Broadcomm CPU the RPi uses doesn\u2019t have it. We don\u2019t yet know if the ARM CPU in the Mac will, but I really expect it will to protect the user\u2019s keychain better then the x86 Macs do. Maybe we can emulate this in a software layer we jam into macOS somehow. Or maybe the ARM Macs won\u2019t actually use this, so we don\u2019t need to care. Then we get to peripheral support. The OS will expect graphics and disk I/O subsystems and USB and all sort of things to live at particular addresses and work in particular ways. The RPi may have similar subsystems, but not the ones macOS expects. Fortunately most of these are abstracted by driver layers and not too hard to make new drivers for new hardware. The hard one will be the GPU both because Apple has certain specific expectations of the GPU that I entirely doubt the RPi lives up to, and the RPi graphics layer isn\u2019t actually documented which will make it hard to say write your own Apple Metal driver for the undocumented (and likely less powerful) RPi graphics hardware. If you had the source code to macOS this sort of hardware bringup effort would take a talented team many months. Without the source code it is harder because you will have to reverse engineer things like the VM system to see how it expects the MMU to operate, and then jam in your own code where the MMU it expects is not like the MMU you actually have. Some of this work will ned to be done again for each new macOS release. So possible, but prohibitively expensive. ",
+            "date": "Answered October 22, 2020",
+            "views": "49",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Martin Jansche",
+                "href": "/profile/Martin-Jansche"
+            },
+            "answer_text": "Depends on how remote you want to go with \u201cremotely possible\u201d. You can get a Raspberry Pi 4 with 8GB of RAM, which is similar to the amount of RAM in recent entry-level Apple laptops. You can easily run several flavors of GNU/Linux and BSD on that Raspberry Pi, as the kernels and user-space programs have no issues running on the ARM CPUs found on Raspberry Pi boards. Since Apple has announced that macOS will support ARM architecture in the future, we have to assume that someone at Apple already has an internal version of macOS running on ARM hardware. If there were a strong business reason for Apple to support Raspberry Pi (hint: there isn\u2019t), it would seem feasible for Apple to get that working. Definitely remotely possible, if you\u2019re Apple. You\u2019ll need access to the macOS sources to do that though, beyond just the Darwin kernel. So that\u2019s unlikely to happen if you\u2019re not Apple. If you just want a small box that runs macOS, the cheapest Mac Mini is about 10x the price of a Raspberry Pi. Alternatively (humor alert): Apple Introduces Their Answer To The Raspberry Pi. ",
+            "date": "Answered October 22, 2020",
+            "views": "64",
+            "upvotes": "0"
+        }
+    ]
+}

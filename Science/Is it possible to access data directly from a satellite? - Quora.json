@@ -1,0 +1,53 @@
+{
+    "title": "Is it possible to access data directly from a satellite? - Quora",
+    "tags": [
+        "Satellite Communications",
+        "Satellites"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jesse Pollard",
+                "href": "/profile/Jesse-Pollard-1"
+            },
+            "answer_text": "Is it possible to access data directly from a satellite? If you have the right receiver\u2026 And the right protocol\u2026 And the right encryption (if any)\u2026 No problem. Of course, after to receive it you will have to process it before it is usable\u2026 The ones I had access to (a simple pioneer radio receiver and tape deck) had to have each satellite raster line registered and aligned with the other raster lines\u2026 Then to make the data visible it was necessary to run a histogram equalization pass to magnify the detected levels. Now days you have to do the same with each spectrum detected (UV, IR, as well as RGB). and if RGB you have to convert it to HIS (hue, intensity, saturation) so that the intensity can be balanced - then convert it back to RGB\u2026 You won\u2019t be able to compare it to ground truth measures done by the various agencies for the purpose of identifying what the image may mean. Doing that requires people going out and survey the area in question. ",
+            "date": "Answered November 2, 2018",
+            "views": "139",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Hamish O'Cahan",
+                    "user_href": "/profile/Hamish-OCahan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bob Hannent",
+                "href": "/profile/Bob-Hannent"
+            },
+            "answer_text": "Sure, get a satellite receiver and a dish, plug it in and you are getting TV pictures from a satellite directly. Want to actually see the data packets? Okay, get a satellite dish and a USB/PCIe satellite receiver device, plug it into your computer and use some transport stream analysis software such as TSReader. That way you can see digital TV signals directly, I know what I am doing with them and you could learn. Want satellite imagery? Other than some weather imagery from the likes of NOAA, you cannot access data from imaging satellites because they are secure and expensive systems which require massive amounts of processing of the huge data sets that they generate. Want satellite internet? See the TV example above but buy the modem and get a subscription. Want to \u201chack satellite internet\u201d, it isn\u2019t going to happen. Want to listen to satellite phone calls? There are videos on YouTube about Iridium hacking that are interesting to watch, you might learn something from them. It\u2019s worth noting that satellites aren\u2019t like they are in movies, whatever you think you know about them is probably wrong. ",
+            "date": "Answered November 2, 2018",
+            "views": "262",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ron Garrett",
+                    "user_href": "/profile/Ron-Garrett-2"
+                },
+                {
+                    "user_id": "John Savidge",
+                    "user_href": "/profile/John-Savidge"
+                },
+                {
+                    "user_id": "Ryan Toyota",
+                    "user_href": "/profile/Ryan-Toyota"
+                },
+                {
+                    "user_id": "Joakim Welde",
+                    "user_href": "/profile/Joakim-Welde"
+                }
+            ]
+        }
+    ]
+}

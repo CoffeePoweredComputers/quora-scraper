@@ -1,0 +1,32 @@
+{
+    "title": "How to count the number of positive integer solutions to a diophantine equation - Quora",
+    "tags": [
+        "Diophantine Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "In a comment, OP clarifies that he means a linear Diophantine equation. (Which is good, because otherwise the problem is undecidable\u2014 there\u2019s no algorithm to tell if a set of Diophantine equations has even one solution.) There is not really any shortcut, alas, but there is an elegant way to express the result using generating functions. Consider the power series  The coefficients encode all the ways that we can solve  for a positive integer . Read the coefficient on ; it\u2019s either  if  is not a multiple of , or  if  is a multiple of  So to handle two variables, we multiply two such power series. Suppose we have ; then  encodes, in the coefficient of , the number of positive integer solutions . This can be continued for as many variables as desired. So, any way to determine the coefficient on the power series gives a way to calculate the answer. One method to find the th coefficient is to calculate the th derivative and evaluate it at zero. You can use Cauchy's integral formula and perform numeric integration to make this work! However, I never took complex analysis so this is not my preferred method.  I did study lot of computer science, though, so there\u2019s a dynamic programming approach that is fairly easy to write, and not too hard to do by hand, if tedious. The key recurrence is as follows. Let  = number of ways to sum to N, using the first K variables in the linear diophantine equation with coefficients .  if  divides , and  if it does not. (This corresponds to the first power series above!)  This says that we can make  by making , and then adding . We might make  using the th variable, or a solution using only the  previous variables. We can work this out on a table. Suppose we want to find the number of ways to solve . We need a table with 3 columns and 22 rows. Start by filling in the first column, using the rule above for             x      xy     xyz\u00a0 1         0\u00a0 2         0\u00a0 3         0\u00a0 4         0\u00a0 5         1\u00a0 6         0\u00a0 ...\u00a0 20        1\u00a0 21        0\u00a0 22        0\u00a0Now fill in the second column. We can\u2019t make a total of 1, because  is not positive. Similarly for 2 and 3. For , we look at the previous entries of the table to get , which are both zero. Our first hit is  For each entry, we\u2019re adding the one 3 above and to the left, to the entry 3 above in the same column. We do the same thing for Z (using 2 instead of 3) and we get the following complete table:           5x      5x+3y     5x+3y+2z\u00a0 1         0        0           0\u00a0 2         0        0           0\u00a0 3         0        0           0\u00a0 4         0        0           0\u00a0 5         1        0           0\u00a0 6         0        0           0\u00a0 7         0        0           0\u00a0 8         0        1           0\u00a0 9         0        0           0\u00a0 10        1        0           1\u00a0 11        0        1           0\u00a0 12        0        0           1\u00a0 13        0        1 ------+-- 1\u00a0 14        0        1       |   1\u00a0 15        1 ---+-- 0       --> 2\u00a0 16        0    |   1           2\u00a0 17        0    |   1           2\u00a0 18        0    --> 1           3\u00a0 19        0        1           3\u00a0 20        1        1           4\u00a0 21        0        1           4\u00a0 22        0        1           5\u00a0Now, if you\u2019re doing this for a large number the table will be large, but the good news is that this is simple enough you can do it in a spreadsheet! Just create the sum in the first entry where it\u2019s possible (that  is positive) and autofill will get it right for the remainder of the column. (That\u2019s what I did to verify my work above.) ",
+            "date": "Updated April 13, 2020",
+            "views": "136",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Max Zelich",
+                    "user_href": "/profile/Max-Zelich"
+                },
+                {
+                    "user_id": "Parth Chavan",
+                    "user_href": "/profile/Parth-Chavan-30"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "title": "Why are probability and statistics considered difficult to learn? - Quora",
+    "tags": [
+        "Probability (statistics)",
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Drew Levin",
+                "href": "/profile/Drew-Levin-5"
+            },
+            "answer_text": "They aren\u2019t. In fact, I would argue that Probability and Statistics can be one of the easiest math subjects to learn. This is because most people have a very strong intuition about how to calculate probabilities, combinatorics, and statistics from a lifetime of real-world experience. The problem is that probability and statistics are often taught very formally and tightly coupled with formal terms and notation. Students can be taught what a factorial is, how to calculate the number of permutations, what a normal distribution looks like, but they will have a hard time understanding how to make use of those terms without first developing their intuition. Think about it. You understand that the probability of flipping a coin to get three heads in a row is less likely than flipping it to get 2 tails in a row. You would not take a bet with me if we agreed to wager $100 and you win if a fair six-sided die comes up either 1 or 2. You can figure out how many ways to invite two of your three best friends to a concert by simply going through the possibilities, and if you do, you can understand why choosing 2 out of 3 to come is the same problem as choosing 1 out of 3 not to come. The problem is that we teach the following questions in concert with formal notation and terminology. Along the way, the terminology becomes a stumbling block in a student\u2019s attempt to understand and apply basic probability theory: \u201cOh, I recognize this problem from class\u2026 the teacher was talking to us about factorials and permutations\u2026 or was it combinations? I forget\u2026 let\u2019s try looking up the equation for a permutation.. ok, does it work if I put the numbers from this question into that equation? I have no idea but let\u2019s try it.\u201d This is backwards. A good teacher will teach their students the intuition first using hands on examples. Only later should you attach the formal terms to the ideas behind them. Permutations mean nothing to a novice, but once you learn how to calculate how many ways to order a given number of items, you can then learn that a permutation is just the word we use to refer to that type of problem. It then makes intuitive sense that combinations are just permutations divided by the number of ways to order the selected items (and thus have the same equation, but with an extra k! term in the denominator). You don\u2019t need to remember the equations because you can always use your intuition to figure them out again on your own. Can you remember off the top of your head that the equation for the probability of a given binomial outcome is: [math]P(k; n, p) = {n\\choose k}p^k(1-p)^{n-k}[/math] Maybe, but you shouldn\u2019t try. You should have been taught the reasoning behind that equation. If you roll a fair six-sided die 3 times, what is the probability that it comes out either 1 or 2 exactly two times? Well\u2026 the probability that it comes out 1 or 2 is two sides out of six sides, or 1/3. That has to happen twice, so we need two 1/3 terms. We also need to roll a 3, 4, 5, or 6 once, and that probability is 4 sides out of 6, or 2/3. Now, how many ways could we order those rolls? We could roll a high number the first time, the second time, or the third time, so that makes three different ways to order the outcomes. Thus the answer is: [math]P(k=2; n=3, p=1/3) = (3)(1/3)^2(2/3) = 2/9[/math] No memorization required, yet you can put together the entire equation one piece at a time! Once you do that a few times, you can then begin to start with the algebraic form of the equation, and you will be doing it from the point of view of someone who understands the why, not just the what. ",
+            "date": "Answered February 6, 2017",
+            "views": "103",
+            "upvotes": " View 20 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Val Berbec",
+                    "user_href": "/profile/Val-Berbec"
+                },
+                {
+                    "user_id": "Seth Gibson",
+                    "user_href": "/profile/Seth-Gibson-10"
+                },
+                {
+                    "user_id": "Harsh Vaghani",
+                    "user_href": "/profile/Harsh-Vaghani-11"
+                },
+                {
+                    "user_id": "Andrew Kinyua",
+                    "user_href": "/profile/Andrew-Kinyua-5"
+                },
+                {
+                    "user_id": "Franz Luxembourg",
+                    "user_href": "/profile/Franz-Luxembourg"
+                },
+                {
+                    "user_id": "Trevor Hailey",
+                    "user_href": "/profile/Trevor-Hailey-4"
+                },
+                {
+                    "user_id": "Afreen Kader",
+                    "user_href": "/profile/Afreen-Kader"
+                },
+                {
+                    "user_id": "John Karson",
+                    "user_href": "/profile/John-Karson"
+                },
+                {
+                    "user_id": "Nicholas Jones",
+                    "user_href": "/profile/Nicholas-Jones-42"
+                },
+                {
+                    "user_id": "BENJAMIN MWEBE",
+                    "user_href": "/profile/BENJAMIN-MWEBE"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Lance Everett",
+                "href": "/profile/Lance-Everett-3"
+            },
+            "answer_text": "Contrary to certain answers and congruent with others, probability theory is often counterintuitive. Our intuition is generally faulty compared with formal mechanical logic, although probability theory and statistics are not really much different from any other particular area of mathematics as far as theorem-proving is concerned. What makes probability difficult is manifold: Probability theory and statistics, as evidence has convinced me, are poorly taught. Perhaps this is a Catch-22.People think they understand probability, even though they don't. To quote a translation of some commentary from the book of Zhuang-zi, \u201cEveryone in the world knows how to raise questions about what they don't know, but none know how to raise questions about what they already know.\u201d\u201cProbability\u201d is not probability. In mathematical terms, the word probability theory is reserved for a specific formal theory that is so general that it can only be written down in formal axiomatic language. It has nothing to do with how probable anything is, in my opinion the word \u201cprobability\u201d is a misnomer, and I think it should be renamed \u201cportion theory\u201d or something to that effect. A different word anyway, to reflect the fact that it is a mathematical and theoretical generalization of what we might colloquially call probability.The mathematics underpinning probability theory is deceptively simple. I.e. it is more complicated than it appears. For example, if you do not know about Fourier transforms, you're basically up a creek. You will be exposed to things like \u201cexpected values\u201d and are expected to go with the flow without questioning things like, what the Hell does this integral even mean?[math]\\displaystyle \\int_{-\\infty}^{\\infty}xP(x)dx[/math] \u201cProbability weighted average\u201d? OK\u2026 That's just a meaningless phrase that people convince themselves has some merit, when it actually makes no sense at all. The truth is that this integral is the first derivative at [math]0[/math] of the Characteristic Function (a Fourier transform) of the distribution. 5. Probability theory gets muddled up in philosophical nonsense. Rather than taking the theory as a mathematical model, whose consequences are socially agreed upon, and that can be scientifically tested, like any interesting model, folks tend to confuse themselves with the insistence that the theory means something particular. It doesn't, and that is by design, whether intelligent or evolutionary. Probability theory is useful in so many different areas precisely because of how little it is restricted by a specific interpretation. This can be said for the vast majority if not all of mathematics--this is exactly why abstraction and generalization are useful. That's some portion of my two cents anyway. ",
+            "date": "Updated February 1, 2020",
+            "views": "14",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Luis Enrique GO",
+                    "user_href": "/profile/Luis-Enrique-GO"
+                },
+                {
+                    "user_id": "John Karson",
+                    "user_href": "/profile/John-Karson"
+                },
+                {
+                    "user_id": "Martin Hauser",
+                    "user_href": "/profile/Martin-Hauser"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "title": "Which one is better: DRAM, SRAM, FRAM, MRAM or PRAM? - Quora",
+    "tags": [
+        "Computer Memory",
+        "Computer Engineering",
+        "Computer Hardware",
+        "Electronics",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ravi Patel",
+                "href": "/profile/Ravi-Patel-28"
+            },
+            "answer_text": "Finally something in my wheelhouse.  Better is really a complex question that depends on the application and requirements. Many of these technologies can be structured in such a way that the speed is limited primarily by circuit issues and not the device. So I'm going to break down this question into three basic application categories: Long term storage, main memory, and on-chip cache. Long term storage has classically been disk technology and more recently flash. These typically have a latency of 10s of milliseconds (HD Disk) to 100s of microseconds (Flash). Main memory is the primary operating space of a computer and utilizes DRAM technology. Modern main memory generally has an access time between 1 and 100 nanoseconds. These memories are also structured to be massively parallel, enabling the large bandwidth typically required by CPUs. The access energy of the memory technology is 1-100 nJ per device [1]. On-chip cache  is a small, very fast, very high bandwidth memory that is located on the same package or die as the the CPU. These can have access latencies that are between 10s of picoseconds to nanoseconds depending on the distance from the cpu core. Energy of these memories can range from 1 to 100 nanojoules [1].  All of these technologies rely on the principle of scaling to improve the capacity, speed, and bandwidth of these technologies as requirements progress. CMOS scaling is the process of reducing the dimentions of individual devices to fit more devices in the same area. The scalability of these technologies is very important to evaluating their usefulness. I'm now going to overview each of these technologies beginning first with the classic CMOS memory technologies and then moving on to the newer ones. I am also going to add an important one that you missed (ReRAM). DRAM:   This is a classic CMOS memory technology that is used in all computers today. Except for some specialized cases, the technology is used primarily for main memory. In terms of capacity, it can achieve 8Gb per chip in modern IC.  Physically the technology acts as a switch and a capacitor. Information is stored by either charging the capacitor with electrons (representing a logic '1'), or leaving the capacitor empty (represents a logic '0'). The switch acts like a valve that is open when you want to write to the capacitor, and closed when you don't. The problem with DRAM is that the switch is not a perfect valve, so electrons often \"leak\" away which can cause the device to lose information. This means that each capacitor needs to be periodically read and restored (called refresh). Luckly the time between refreshes can be sufficiently long as to avoid most conflicts (~99% of the time).  DRAM has always exhibited high capacity due to the fact that the memory cell is relatively simple. It consists of just two devices. But with scaling it become harder to fabricate the specialized switch and the capacitor. Moreover, switches become \"leakier\" over time, and thus require more aggressive refresh and error correction to maintain an uncorrupted system state. There is also the issue of cosmic rays which can cause random bitflips in the memory (ill go into more later). All in all scaling DRAM has become somewhat complicated.  SRAM This is the other classic memory technology that is used primarily for on-chip caches. Unlike DRAM, SRAM has a more complicated structure with active connections between power and ground. Modern SRAM has at least 6 switches.  hese switches are configured in such a manner that the device will retain state without any refresh. The active connections between power and ground provide a much more robust signal. SRAM is therefore much easier to read resulting in a smaller latency. However, the active connections make the device harder to write. Also these active connections can degrade the switches over time, causing reliability issues. The relative complexity (6 switches) means that each SRAM cell takes up more area, reducing the total capacity of an SRAM array. Caches are typically limited to 10s of MB---far less than DRAM. SRAM also exhibits the similar scalability issues as DRAM. There is also the issues of cosmic rays. As the SRAM is shrunk, the strength of the active connections becomes smaller. Eventually smaller cells can be inadvertently flipped by random radiation from the sky or even from the package of the IC. For this and other reasons, SRAM has become harder to scale.  Newer memory technologies The principle difference between these classic memory technologies and the newer ones mentioned, is that the new technologies are non-volatile. Both SRAM and DRAM need active connections to power to retain data. The newer technologies can be written and then disconnected from power sources. Classic memories leak power constantly, which when dealing with billions of devices can add up to a lot of power. The newer technologies don't leak and therefore can save a lot of static energy.  There is, however, a new metric that must be introduced when discussing non-volatile memories called the write endurance. Write endurance measures the number of times the device can be written before data cannot be reliably stored within the device (wear-out). This metric is important cause several non-volatile memory technologies are limited to specific applications due to endurance.  On-chip caches and cpu level structures typically need an endurance of >10^15 writes, main can get have >10^10, and long term storage can get away with 10^6 by playing games with the way you use organize the storage of information.  MRAM  Without going into the physics, MRAM stores information in nanoscale magnets. The read latency can be as fast as anything in the CPU but write latencies are on the order of nanoseconds. Sub-nanosecond switching has been demonstrated in some devices but these are not yet production mature. Switching energy is generally on the scale of 10s of femtoJoules per bit. MRAM is one of the only nonvolatile memories with practically infinite endurance. MRAM makes alot of sense for on-chip caches. Also the cell area is comparable to DRAM, making it a potential main memory replacement as well. Currently, MRAM is commercially available in small capacities. Main Memory scale fabricaton has proven difficult.  ReRAM Resistive ram, a modern replacement for flash technology has a similar structure and characteristics as MRAM (completely differnet physics). ReRAM has two advantages over MRAM. It exhibits higher resistances, which enables a more dense memory structure called a crosspoint. This results in less cell area. ReRAM can also store many levels per cell, enabling multi-bit storage. This means that an individual ReRAM array in increase its capacity without sacrificing any additional area. ReRAM with 7 bits per cell have been demonstrated. Two drawbacks, however, are the relativly high voltages required to write RRAM devices and the endurance of ReRAM. High voltage can contribute to power consumption and make integration with modern CMOS processes more difficult. Secondly, the endurance issue prevents the device from being used for caches.  Still at 10^12, its plenty for disk and potentially DRAM technologies. Generally the technology has achieved nanosecond reads and writes.  ReRAM has relatively simple fabrication and has been shown to scale down below 10 nm. This is below where CMOS is currently fabricated. ReRAM is a prototype technology nearing mass production PCM Phase change memory exhibits many of the same qualities as ReRAM. The physical mechanisms behind it are completely different. As a result, PCM has an low endurance of 10^8. However, system designers have created clever tricks and gotten it to work in DRAM replacement applications.  PCM has also been fabricated and DIMM compatible parts are available. FRAM  I'm not an expert on FRAM so take everything I say about it with a grain of salt. FRAM operates in a very similar manner as DRAM. The key difference is that the material in the capacitor is magnetic and therefore stores information by altering the value of capacitance. If you think of the capacitor as a bucket that stores charge, then you can think of this process as changing the size of the bucket to store information.  FRAM has very high endurance >10^15. There are a couple of issues with FRAM. The performance is similar to DRAM so non-volatility is the only advantage. The device technology is currently less dense. Its likely that the technology is theoretically comparable and better than DRAM, but the investment dollars haven't been pumped in at the same rate.  Summary There are three application classes for memories that define their speed and energy requirements: long term storage, main memory, and on-chip cache. SRAM and DRAM are classic memory technologies that are volatile and subject to scaling issues. Newer memory technologies exhibit faster performance and add the additional feature of non-volatility. This feature can save on static leakage power.  Of these technologies, MRAM and FRAM have the endurance to support on chip use. MRAM also exhibits the latency required for on chip circuits. RRAM and PCM are capable as DRAM replacement technologies, and easily outpace flash and disk for long term storage. ",
+            "date": "Updated February 8, 2016",
+            "views": "171",
+            "upvotes": " View 51 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Emily Bowman",
+                    "user_href": "/profile/Emily-Bowman-62"
+                },
+                {
+                    "user_id": "Bill Vlasak",
+                    "user_href": "/profile/Bill-Vlasak-1"
+                },
+                {
+                    "user_id": "Ajay Rajan",
+                    "user_href": "/profile/Ajay-Rajan-7"
+                },
+                {
+                    "user_id": "Samaksh Sethi",
+                    "user_href": "/profile/Samaksh-Sethi-2"
+                },
+                {
+                    "user_id": "Peter VanderStoep",
+                    "user_href": "/profile/Peter-VanderStoep"
+                },
+                {
+                    "user_id": "Matt Albert",
+                    "user_href": "/profile/Matt-Albert-14"
+                },
+                {
+                    "user_id": "Nikith Sai",
+                    "user_href": "/profile/Nikith-Sai-1"
+                },
+                {
+                    "user_id": "Nick Masur",
+                    "user_href": "/profile/Nick-Masur"
+                },
+                {
+                    "user_id": "Mustafa Kibar",
+                    "user_href": "/profile/Mustafa-Kibar"
+                },
+                {
+                    "user_id": "Daan Leijen",
+                    "user_href": "/profile/Daan-Leijen"
+                }
+            ]
+        }
+    ]
+}

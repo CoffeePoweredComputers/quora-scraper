@@ -1,0 +1,38 @@
+{
+    "title": "Is 32-bit safer than 64-bit? - Quora",
+    "tags": [
+        "32-Bits"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "L\u01b0u V\u0129nh Ph\u00fac",
+                "href": "/profile/L\u01b0u-V\u0129nh-Ph\u00fac"
+            },
+            "answer_text": "No! Old 32-bit CPUs don\u2019t have new security features like NX-bit or encryption hardware which makes them inherently a little more vulnerable. However even on the same platform with all same features available a 64-bit program is generally safer from attacks than a 32-bit one In Windows, 64-bit drivers are required to be signed, so they must come from a trusted party and be tested carefully before releasing. You can\u2019t install unsigned drivers like on 32-bit Windows unless you explicitly disable that on boot64-bit Windows kernel has the ability to do hot patching. That means you can install kernel updates without any computer reboot or program restart and enjoy the more secure kernel instantly. 32-bit kernel is only about 30% hot-patchable. 64-bit kernel also supports PatchGuard which is not available in 32-bit version.Hardware DEP is turned on by default on 64-bit WindowsModern OSes use address space layout randomization for preventing some types of exploitation. It works by putting the program code/stack/data\u2026 in random position each time the process started. In a 32-bit address space you don\u2019t have much address space to choose. If your program uses most of its 2/3 GB of space then it can\u2019t be moved anywhere. In a 64-bit address space you have 4 billion more choicesOn the flip side, as well as avoiding address space exhaustion problems, a security feature known as ASLR works much better in 64-bit applications than in 32-bit applications, so 64-bit Firefox will be slightly more secure. Firefox 64-bit for Windows can take advantage of more memory In addition, the 64-bit version of Chrome includes a 64-bit version of Adobe Flash. Google has worked with Adobe to improve Flash\u2019s protections against various type of attack, and these exploit mitigations are more effective on 64-bit versions of Chrome. There are other ways Chrome behaves more securely on 64-bit versions of Windows, too, but Google doesn\u2019t have a slick page explaining all of them. For example, a comment in this bug report notes that the 64-bit version of Chrome provides additional protection from third-party software\u2013like antivirus programs that shouldn\u2019t be touching the browser\u2013hooking into Chrome\u2019s sandboxed processes You Should Upgrade to 64-bit Chrome. It\u2019s More Secure, Stable, and Speedy Finally, on 64-bit, our defense in depth security mitigations such as Partition Alloc are able to far more effectively defend against vulnerabilities that rely on controlling the memory layout of objects. 64 bits of awesome: 64-bit Windows Support, now in Stable! Read more Is 64-bit Windows Safer Than 32-bit?Why the 64-bit Version of Windows is More SecureAn Open Letter To Microsoft: A 64-bit OS is Better Than a 32-bit OS",
+            "date": "Answered June 28, 2017",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Darian Sutedjo",
+                    "user_href": "/profile/William-Darian-Sutedjo"
+                },
+                {
+                    "user_id": "Vitalie Vrabie",
+                    "user_href": "/profile/Vitalie-Vrabie"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jan Harald",
+                "href": "/profile/Jan-Harald-1"
+            },
+            "answer_text": "no\u2026 it's like asking \u201cis this 10 unit high wall safer than that 100 unit one?\u201d if all other parameters are same(like same material, thickness etc)\u2026 no\u2026 32bit itself has no advantages over 64bit, but 32bit processors are a tiny bit different story\u2026because they've been out for so long most of their flaws are known\u2026 but 64bit is safer in the sense that 32bit stuff is getting left behind and abandoned\u2026kinda like you don't see 16bit programs anymore\u202664bit is actively protected right now, so when a flaw is found there are big teams who'll begin fixing it\u2026 ",
+            "date": "Answered June 28, 2017",
+            "views": "370",
+            "upvotes": "0"
+        }
+    ]
+}

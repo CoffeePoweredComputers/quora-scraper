@@ -1,0 +1,185 @@
+{
+    "title": "How to turn on a computer automatically when its PSU gets power (after being completely off) - Quora",
+    "tags": [
+        "Electronic Circuits",
+        "Electrical and Electronics Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Melvin Rook",
+                "href": "/profile/Melvin-Rook"
+            },
+            "answer_text": "I am not sure if there is any suitable, existing solution available, but I am sure you can achieve your goal with own creativity. As the pins provide 3.3V to 5V there is a solution possible with an Arduino. You can run a little program on an Arduino which activates as soon as the PWRSW pins are high. The program then shortens the pins to power on the computer and the program enters idle state again. The most interesting part is to define all states and make sure that the program can differentiate between powering on the computer and coming from idle state into activation mode. Previous answer: There is a more simple solution possible:  Enter the BIOS setup utility after powering on your computer.In the menus look for an option named like \"Restore on AC/Power Loss\" or \"AC Power Recovery\" (browse through the various menus, as they differ per manufacturer).Usually there are a few options, but the one you need to select is \"Power On\". Save the BIOS settings.Now your computer will power on as soon as the PSU gets power. After the event of power loss, the computer will be powered on again as the PSU gets power again. Make sure that there are no other programs or tools are blocking the start-up process. To control the PSU, you can use a switched RPDU (Remote Power Distribution Unit), which can either be a professional appliance or a simple module for home usage. Here make sure the module can handle the power load and that it's not a lightweight module which is intended for controlling lamps. More close to your question is a solution called \"WebReboot\" I experimented with for a large hosting provider. See the following video for a demonstration of the product: Servprise WebReboot Enterprise Demo The appliance was connected to the reset and power pins of a servers' mainboard and allowed remote soft- and hard reboots and power cycling. Unfortunately nowadays the product is not available anymore and I am not sure if there are any newer alternatives available. ",
+            "date": "Answered May 18, 2015",
+            "views": "42",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yuan Gao",
+                "href": "/profile/Yuan-Gao-5"
+            },
+            "answer_text": "If you FULLY understand the consequences of doing so, and I will stress that doing so is NOT RECOMMENDED, and that if you choose to do so, you bear all the responsibility of the consequences, which includes, and are not limited to: damage to equipment and electrical wiring, electrocution, fire, monetary loss, natural disasters, and divine retribution; and that you absolve me, the others who have answered your question, and Quora, of any and all responsibility for the actions you have chosen to take in response to this post...then here's how you do it: The thin green wire in the main 20 or 24-wire bundle between your PSU and motherboard controls the PSU.  All you need to do is to connect that to any of the black wires on that connector.  If you make a permanent connection, then the PSU will always be on whenever there is power.  I am unsure whether you need to cut the connection, or splice the connection in. The green wire is labelled PS_ON# in the below diagram.   ",
+            "date": "Answered May 18, 2015",
+            "views": "36",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Frist Listo",
+                    "user_href": "/profile/Frist-Listo"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Flemming Steffensen",
+                "href": "/profile/Flemming-Steffensen-1"
+            },
+            "answer_text": "I'm not aware of any commercially available solution for your question, so you'll have to build the circuit yourself. You are far from alone in this quest, and over the years I've seen several implementations of such a cuircuit. The Amiga community have several commercial available solutions, but solely targeted the specific Amiga computers.  Years ago EDN magazine showed an excellent solution, and I believe it's the one that will best suits your construction needs. I was able to digg up the article online: http://www.edn.com/design/analog/4329530/Autostart-circuit-helps-ATX-motherboards-resume-operation-after-power-interruptions Please keep us posted on your progress. ",
+            "date": "Answered May 31, 2015",
+            "views": "36",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hansi Mittermeier",
+                    "user_href": "/profile/Hansi-Mittermeier"
+                },
+                {
+                    "user_id": "Steven J Greenfield",
+                    "user_href": "/profile/Steven-J-Greenfield"
+                },
+                {
+                    "user_id": "Alexander Freiherr",
+                    "user_href": "/profile/Alexander-Freiherr"
+                },
+                {
+                    "user_id": "Isidora M\u00fcller",
+                    "user_href": "/profile/Isidora-M\u00fcller"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Redwan Hasan",
+                "href": "/profile/Redwan-Hasan-2"
+            },
+            "answer_text": "well if you force to turn it on by shorting the green it will damage your motherboard but you can do the following: you have to build a small circuit that momentarily shorts two wires, you can use a relay to short it out plus you will need some more components to control the relay, If you use a MCU it will be very easy, if you don't it will still be okay but you need some more calculation and the two pins that I'm talking about is the same pin of the motherboard's power switch.  what this circuit will do is simply press the power button for you, each time you provide power to it. and this method is 100% safe. if you want i can send you the circuit diagram. ",
+            "date": "Answered May 18, 2015",
+            "views": "18",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steven J Greenfield",
+                    "user_href": "/profile/Steven-J-Greenfield"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steven J Greenfield",
+                "href": "/profile/Steven-J-Greenfield"
+            },
+            "answer_text": "Here is what might work: +5VSB is 5V standby. It should come up when there is power to the power supply. Use that to power a 555 timer wired as a monostable. An RC delay will keep the !RESET pin low on the 555 for a few seconds to allow the power supply to stabilize, then the monostable will activate and put out a 1 second long pulse. This goes to a resistor, to the base of an NPN transistor. The collector of the transistor connects to the POWER ON wire and pulls it low during that 1 second (emitter to ground). I'll draw up a quick schematic and post it here momentarily. ",
+            "date": "Answered June 9, 2015",
+            "views": "22",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Hansi Mittermeier",
+                    "user_href": "/profile/Hansi-Mittermeier"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Kimmitt",
+                "href": "/profile/Jonathan-Kimmitt"
+            },
+            "answer_text": "Typical desktop CPUs do not power up immediately standby power is applied in case the switch off was not clean, there could be damage to data from a partial boot up. But if this is not a concern, many motherboards have the facility to boot on power being applied in the BIOS. If this does not work for you, and your computer is remote, and you lack a knowledge of electronics, an electronic lights out management (ELOM) motherboard, which is designed for remote operation, is your ideal solution. ",
+            "date": "Answered June 19, 2015",
+            "views": "12",
+            "upvotes": " Answer requested by Hansi Mittermeier",
+            "upvoters": [
+                {
+                    "user_id": "Alexander Freiherr",
+                    "user_href": "/profile/Alexander-Freiherr"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Paul Olaru",
+                "href": "/profile/Paul-Olaru"
+            },
+            "answer_text": "My old PC had such an option in the BIOS and it had it named \"Full-ON\", which contrasts with the other ones \"Soft-off\" and \"Memory\". My current laptop doesn't have anything like this I think (it's much simpler BIOS, and less capable) My guess is that shutting down makes the BIOS not work on some computers (my old one included, in fact other methods of booting besides the button require two attempts \u2013 the first one merely activates the BIOS and it's the second one which triggers the booting process) ",
+            "date": "Answered May 18, 2015",
+            "views": "813",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jeffrey Abaygar",
+                "href": "/profile/Jeffrey-Abaygar"
+            },
+            "answer_text": "The simplest and easiest but a little costly solution is to use an Uninterruptible Power Supply.  However, if you are a technically oriented person, what you can do is to construct a relay that will do a single shot when it is powered. What it does is that every time the power comes back, the relay contact will execute a momentary closure which will be connected in parallel with your PC start button. ",
+            "date": "Answered June 19, 2015",
+            "views": "13",
+            "upvotes": " Answer requested by Hansi Mittermeier"
+        },
+        {
+            "author_info": {
+                "name": "Dragos Florentin",
+                "href": "/profile/Dragos-Florentin"
+            },
+            "answer_text": "My opinion is that you require a circuit that does this for you. There is a pin that has to be shorted to ground for the psu to turn on. I believe is easy to build on a perfboard. If you want I can help. ",
+            "date": "Answered May 26, 2015",
+            "views": "622",
+            "upvotes": " View 1 Upvoter "
+        },
+        {
+            "author_info": {
+                "name": "Loring Chien",
+                "href": "/profile/Loring-Chien"
+            },
+            "answer_text": "I haven't the time right now to look it up but I believe most PC BIOses have an option that can be switched on to boot the computer after power is restored. ",
+            "date": "Answered June 10, 2015",
+            "views": "147",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dilshad Hossain",
+                "href": "/profile/Dilshad-Hossain"
+            },
+            "answer_text": "Automatically Shut down and Power up your computer  This link will help you . And if you got problem let me know :) ",
+            "date": "Answered May 18, 2015",
+            "views": "481",
+            "upvotes": " Answer requested by Hansi Mittermeier"
+        },
+        {
+            "author_info": {
+                "name": "Gregory Diana",
+                "href": "/profile/Gregory-Diana"
+            },
+            "answer_text": "Try this. How to setup your computer to auto Power On after power outage. ",
+            "date": "Answered June 9, 2015",
+            "views": "364",
+            "upvotes": " Answer requested by Isidora M\u00fcller"
+        }
+    ]
+}

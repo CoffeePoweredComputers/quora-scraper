@@ -1,0 +1,39 @@
+{
+    "title": "How can we connect a Raspberry Pi 3 B+ first time to a laptop with a formatted SD card? - Quora",
+    "tags": [
+        "Raspberry Pi 3",
+        "Raspberry Pi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "If you are talking about putting the image for an OS for the RPi onto a micro SD card using a Mac or Windows machine, see the following article: Install Raspbian on an SD card on OS X & Windows. The same method applies to any OS image whether it happens to be Raspbian or some other distro which has been prepared for the RPi. (I used Ubuntu MATE on mine.) The SD card does not have to have been formatted before you transfer the image to it. (I am assuming that the laptop does not run Linux; but there are similar utilities for putting an image on a SD card there too.) If you are talking about making an already working RPi and the laptop communicate, that is best done using file sharing over a LAN using Ethernet or Wi-Fi. If your Linux distro for the RPi does not come with Samba by default, you will have to install it. (On my LAN, I have a Linux Mint machine, my RPi, a Windows 7 machine, and 3 Windows 10 machines which can all exchange files using file sharing, some by Wi-Fi and others wired.) ",
+            "date": "Answered September 2, 2018",
+            "views": "931",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Louis Lampe",
+                "href": "/profile/Louis-Lampe"
+            },
+            "answer_text": "There is a lengthy discussion at wikihow\u2026. look for How to Connect Two Computers. If you still have a question you could rephrase this one. A Raspberry Pi is simply a computer with a different Operating System. As sold the raspberry needs an SD card formatted in Raspbian to function as RAM. I assume that is the card given in the question even though the grammar suggests that the card belongs to the laptop. Both computers need their own monitor, keyboard and mouse. I don\u2019t own or use a raspberry Pi but I don\u2019t see why there should be a problem. ",
+            "date": "Answered September 2, 2018",
+            "views": "537",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Shashank Jain",
+                "href": "/profile/Shashank-Jain-84"
+            },
+            "answer_text": "Can I start my Raspberry Pi with a laptop? If yes, how? You can refer to my answer to this question ",
+            "date": "Answered September 10, 2018",
+            "views": "391",
+            "upvotes": " Answer requested by Sharuu YeS"
+        }
+    ]
+}

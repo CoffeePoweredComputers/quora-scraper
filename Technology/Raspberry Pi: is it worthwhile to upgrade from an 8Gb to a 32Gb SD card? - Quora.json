@@ -1,0 +1,32 @@
+{
+    "title": "Raspberry Pi: is it worthwhile to upgrade from an 8Gb to a 32Gb SD card? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tim Elliot",
+                "href": "/profile/Tim-Elliot"
+            },
+            "answer_text": "For most normal projects it is not really necessary. But for remote projects where you are logging a lot of data (for instance, video) that cannot be sent on to a server, then a big card is a good idea. Make sure that you create a separate partition to hold /home, and make it a journalling file system (such as ext4), to ensure that there is no data loss if your Pi loses power and corrupts the SD card. So think carefully about the project you are using your Pi for, and fit a big SD card only if it is necessary. Footnote: IoT is absolutely NOT the only way to have fun with a Pi. In fact, it is probably the LEAST interesting way to have fun with a Pi. Check out the projects in the Mag-Pi Front page The MagPi Magazine - The official Raspberry Pi magazine and Back Issues (free to download) Back Issues & books - The MagPi Magazine",
+            "date": "Answered April 23, 2017",
+            "views": "407",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Gavin Probyn",
+                "href": "/profile/Gavin-Probyn"
+            },
+            "answer_text": "I would make sure first that you have a 512MB Pi, as opposed to a 256MB one. The speed difference is significant as the 512MB will rarely use the swap area on the SD card for most applications.Assuming you have a 512MB version, then I would stick with 8GB (or move to a faster 8GB one as others have said) and additional data you want access to is better placed on a shared NFS or CIFS/Samba drive that the Pi can access over your network. If you want to keep it self contained, a relatively inexpensive USB2 hard drive connected to the Pi will gain you a lot in performance. However, the boot command line (on the SD card) will need to be modified to mount the USB hard disk as its root partition. ",
+            "date": "Answered September 18, 2013",
+            "views": "11",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Yves Granger",
+                    "user_href": "/profile/Yves-Granger"
+                }
+            ]
+        }
+    ]
+}

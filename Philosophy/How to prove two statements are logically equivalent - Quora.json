@@ -1,0 +1,39 @@
+{
+    "title": "How to prove two statements are logically equivalent - Quora",
+    "tags": [
+        "Logically Equivalent Statements",
+        "Logical Equivalence"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Samuel Muldoon",
+                "href": "/profile/Samuel-Muldoon-1"
+            },
+            "answer_text": "There are an infinite number of ways to prove that two statements are logically equivalent. Suppose that the statements are named S1 and S2. BEGIN METHOD ONE Assume that S1 is true. Show that S2 follows. Now Start fresh (no more assuming that S1 is true) Assume that S2 is true. Show that S1 follows. END METHOD ONE BEGIN METHOD TWO Assume that S1 is true. Show that S2 follows. Now Start fresh (no more assuming that S1 is true) Assume that S2 is true and that S1 is false. Show that this implies a contradiction. END METHOD TWO BEGIN METHOD THREE Assume that S1 is true. Show that S2 follows. Now Start fresh (no more assuming that S1 is true) Assume that S1 is false. Show that it follows that S2 is false. END METHOD THREE BEGIN METHOD FOUR Assume that S2 is true. Show that S1 follows. Now Start fresh (no more assuming that S2 is true) Assume that S1 is true. Show that S2 follows. END METHOD FOUR BEGIN METHOD FIVE Assume that S2 is true. Show that S1 follows. Now Start fresh (no more assuming that S2 is true) Assume that S1 is true and that S2 is false. Show that this implies a contradiction. END METHOD FIVE BEGIN METHOD SIX Assume that S2 is true. Show that S1 follows. Now Start fresh (no more assuming that S2 is true) Assume that S2 is false. Show that it follows that S1 is false. END METHOD SIX  Suppose that you have two variables, P and Q. Then there are an infinite number of statements logically equivalent to the statement, \u201cP if and only if Q.\u201d Note that there are different definitions of equality. An equality relation is any relation which is symmetric, reflexive, and transitive. There are many many many different equality relations on logical statements. Thus, even if two statements are \u201clogically equivalent,\u201d they may not be equivalent by a different equality relation. In fact, it is possible to cook-up logical statements which are logically equivalent to just \u201cfalse,\u201d but it would take the fastest computers in the world hundreds of years to show that the statement is false. Human logicians and mathematicians would not be any faster either. ",
+            "date": "Answered March 16, 2019",
+            "views": "17",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mohamed Talaat Harb",
+                "href": "/profile/Mohamed-Talaat-Harb-1"
+            },
+            "answer_text": "There are two possible ways to examine the equivalence of two logical statements, The first method: is considering the value of the logical statement for every possible input; usually in the form of a truth table. The advantage of this method is that for statements with few inputs, this method is easily compute-able using computers and doesn\u2019t need you to do any logical manipulation of the statements. It is also easy to see the equivalence in the table as they are only equivalent if for every possible input they produce the same output. The disadvantage of this method is that for statements with large number of inputs, it takes longer and longer to do the calculations for listing the truth table. In fact it takes rows in the truth table where n is the number of inputs so the size of the table becomes very large very fast for anyone to be able to do the computations. The second method: is simplifying the statements to the simplest possible form using the rules of logic until we can compare the two statements and see if they are equivalent or not. This method requires the tools of logical reasoning, and thereby can be implemented using human intelligence, or (I believe) using the recursion based algorithms inside the implementation of Lisp like languages. This method is more intuitive for anyone learning logic, but since it it also needs a lot of intuition; it usually harder to perform and it gets complicated as the complexity of the statement increases. ",
+            "date": "Answered December 26, 2017",
+            "views": "14",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Yahya Abdal-Aziz",
+                    "user_href": "/profile/Yahya-Abdal-Aziz"
+                },
+                {
+                    "user_id": "Ahmed Abaza",
+                    "user_href": "/profile/Ahmed-Abaza-29"
+                }
+            ]
+        }
+    ]
+}

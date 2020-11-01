@@ -1,0 +1,42 @@
+{
+    "title": "How to root my LG Stylo 3 Android device - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Shane Britton",
+                "href": "/profile/Shane-Britton-3"
+            },
+            "answer_text": "The LG Stylo 3 is yet another one of those low to mid-range LG smartphones which is not supported by LG's bootloader unlocking portal. This, in and of itself, can be an almost insurmountable obstacle when it comes to rooting \u2014 at least by conventional methods. The locked bootloader prevents a custom recovery from being flashed to the /recovery partition. Moreover, the Stylo 3 employs LG's notorious secured boot chain protection, not to mention dm-verity mapping . So even if you managed to patch the stock boot image for Magisk systemless root, a SECURE BOOT ERROR notification would be displayed and the Android OS would fail to boot. However, there is still another root strategy available, but it's not for the faint of heart, and requires a good rudimentary understanding of the core operability of the Android OS and its root filesystem. It should first be emphasized that this method \u2014 if done improperly \u2014 has the potential to hard brick your device beyond any chance of repair. In a nutshell, you will need to dump a system image from your device using LG-UP Dev Edition. Transfer the image to your PC or laptop and use Cygwin w/Android Kitchen (or a suitable alternative) to inject root into the /system/xbin/su path. Convert the system directory back to an ext4 image file. Using LG-UP Dev Edition, choose the \u201cPartition DL\" option to push the rooted system image back to your device. Upon your first reboot, install SuperSU v2.82-sr5 apk. If you are notified that the root binaries need updated, choose the \u201cNormal\" update option. Reboot the device when finished. You now have system-wide root. Now is a good time to install the latest BusyBox binaries to /system/xbin/busybox. I have confirmed this method on my Sprint compatible LS777 LG Stylo 3. While this should work on other variants as well, I can only confirm the LS777. ",
+            "date": "Updated October 3, 2019",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Will Smith",
+                    "user_href": "/profile/Will-Smith-276"
+                },
+                {
+                    "user_id": "Free Jsjj",
+                    "user_href": "/profile/Free-Jsjj"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vickers Carter",
+                "href": "/profile/Vickers-Carter"
+            },
+            "answer_text": "You need to unlock your bootloader install the custom recovery TWRP then flush Supersu or magisk to it. The steps to do this are all explained in the link you need to open the link on the computer as you will need the computer to do most of this. [Recovery][ROOT] OFFICIAL TWRP V3 For LG STYLO 3 PLUS ",
+            "date": "Answered December 12, 2017",
+            "views": "1",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Karen Carmichael",
+                    "user_href": "/profile/Karen-Carmichael-7"
+                }
+            ]
+        }
+    ]
+}

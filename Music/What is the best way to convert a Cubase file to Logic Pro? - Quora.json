@@ -1,0 +1,45 @@
+{
+    "title": "What is the best way to convert a Cubase file to Logic Pro? - Quora",
+    "tags": [
+        "Cubase",
+        "Logic Studio",
+        "Logic Pro (OS X app)",
+        "File Conversions"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sabbir Ahmed",
+                "href": "/profile/Sabbir-Ahmed-541"
+            },
+            "answer_text": "DAWs do pretty much the same job, but they all work slightly differently: they may use different plug\u2011in protocols (TDM and RTAS plug\u2011ins for Pro Tools, Audio Units, VST or even Direct X for others); they may offer different amounts of gain above unity; and the implementation of audio and MIDI routing, of automation, VCA grouping, or the way they handle multi\u2011output virtual instruments or crossfades may also differ. By default, Macs and PCs use different drive formats (NTFS on Windows; HFS+ on a Mac) and without additional software, neither OS can write to the other's drives. To get around this, you have two options, the first of which is to use a FAT32\u2011formatted drive (which is read/writable on both operating systems), and the second to install the software (freebies are available) that enables your OS to read drives of the other format. If you're working with very large files, such as HD video, or audio projects in a single ZIP file, you'll need to use the latter approach, as FAT32 can't deal with single files over 4GB in size. If you're planning to transfer via the web instead, none of this matters, though there are some further considerations that I'll discuss later. However, if the same instruments and patches are available in the second DAW, you'll be able to use the MIDI files to get those instruments to play the same things back \u2014 although you won't have any effects or level automation on the virtual instrument output channels. It's for this reason that I tend to bounce virtual instruments as audio, which can be edited and processed in the usual way, and only use MIDI as a backup. There are a few quirks to watch out for, such as identical instruments having different presets on each machine, or how multitrack MIDI files are exploded on to different tracks, but exporting and importing MIDI files is generally a pretty painless process. As long as you use a standard, uncompressed audio file type such as WAV, BWF or AIFF, any DAW will be able to read these files \u2014 so even if you don't plan to transfer your projects, it's a good practice to archive them in this way after you've completed the project. I prefer to bounce two versions: one pre\u2011fader (pre effects and level automation); and another post\u2011fader, with effects and processors 'printed'. That way, whatever changes in technology come along, you'll be able to re\u2011open the project in any multitrack software. ",
+            "date": "Answered February 25, 2020",
+            "views": "752",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tony Thompson",
+                "href": "/profile/Tony-Thompson-44"
+            },
+            "answer_text": "I would bounce down all the audio tracks individually, from bar 1 beat 1, being careful to include/exclude processing as necessary - if there are plugins on the source system unavailable in Logic, which make a difference, include that processing, but also bounce down a version without for safety. Remember to bypass any mix bus processing and think hard about level automation. I believe you might be able to bounce all tracks at once in Cubase. I would also save a standard MIDI file of the Cubase project. ",
+            "date": "Answered September 16, 2017",
+            "views": "15",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bent Jacobsen",
+                    "user_href": "/profile/Bent-Jacobsen-2"
+                },
+                {
+                    "user_id": "Bastiaan Van Zwieten",
+                    "user_href": "/profile/Bastiaan-Van-Zwieten"
+                },
+                {
+                    "user_id": "Trey Pope",
+                    "user_href": "/profile/Trey-Pope"
+                }
+            ]
+        }
+    ]
+}

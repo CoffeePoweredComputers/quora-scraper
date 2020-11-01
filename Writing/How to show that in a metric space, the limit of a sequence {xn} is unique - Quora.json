@@ -1,0 +1,114 @@
+{
+    "title": "How to show that in a metric space, the limit of a sequence {xn} is unique - Quora",
+    "tags": [
+        "Metric Spaces",
+        "Metrics",
+        "Sums and Series (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Amitabha Tripathi",
+                "href": "/profile/Amitabha-Tripathi"
+            },
+            "answer_text": "Suppose [math]\\{x_n\\}[/math] is a sequence in a metric space [math]\\big(X,d\\big)[/math], and suppose it converges in [math]X[/math] to both [math]{\\ell}_1[/math] and [math]{\\ell}_2[/math], with [math]{\\ell}_1 \\ne {\\ell}_2[/math]. Then there exist positive integers [math]N_1[/math] and [math]N_2[/math] such that [math]\\big| x_n - {\\ell}_1\\big| < \\frac{|{\\ell}_1-{\\ell}_2|}{2}[/math] whenever [math]n>N_1[/math], and [math]\\big| x_n - {\\ell}_2\\big| < \\frac{|{\\ell}_1-{\\ell}_2|}{2}[/math] whenever [math]n>N_2[/math]. Thus whenever [math]n>N=\\max\\{N_1,N_2\\}[/math], we have [math]\\big| x_n - {\\ell}_1\\big| < \\frac{|{\\ell}_1-{\\ell}_2|}{2}[/math] and [math]\\big| x_n - {\\ell}_2\\big| < \\frac{|{\\ell}_1-{\\ell}_2|}{2}[/math]. But this leads to the impossibility [math]\\big| {\\ell}_1 - {\\ell}_2 \\big| = \\big| \\big(x_n-{\\ell}_2\\big) - \\big(x_n-{\\ell}_1\\big) \\big| [/math] [math]\\le \\big| x_n - {\\ell}_1\\big| + \\big| x_n - {\\ell}_2\\big|[/math] [math]< \\frac{|{\\ell}_1-{\\ell}_2|}{2} + \\frac{|{\\ell}_1-{\\ell}_2|}{2} [/math] = [math]\\big| {\\ell}_1 - {\\ell}_2 \\big|[/math]. It follows that [math]{\\ell}_1={\\ell}_2[/math]. [math]\\blacksquare[/math] Note. This is the same argument to prove the uniqueness of the limit in Calculus. ",
+            "date": "Answered June 5, 2017",
+            "views": "798",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mayank Jha",
+                    "user_href": "/profile/Mayank-Jha-29"
+                },
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Philips George John",
+                    "user_href": "/profile/Philips-George-John"
+                },
+                {
+                    "user_id": "Shirish H. Phatak",
+                    "user_href": "/profile/Shirish-H-Phatak"
+                },
+                {
+                    "user_id": "Manan Raheja",
+                    "user_href": "/profile/Manan-Raheja"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Manny Condas",
+                    "user_href": "/profile/Manny-Condas"
+                },
+                {
+                    "user_id": "Eric Platt",
+                    "user_href": "/profile/Eric-Platt-9"
+                },
+                {
+                    "user_id": "Nikhil Jain",
+                    "user_href": "/profile/Nikhil-Jain-212"
+                },
+                {
+                    "user_id": "Ashutosh Srivastav",
+                    "user_href": "/profile/Ashutosh-Srivastav-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Platt",
+                "href": "/profile/Eric-Platt-9"
+            },
+            "answer_text": "I can\u2019t particularly add much to the approach given by Prof. Tripathi. However here is an alternative way of looking at it. All metric spaces are Hausdorff topological spaces. In a topological space [math](X,\\tau)[/math] we say that a sequence [math]a_n[/math] converges to [math]a[/math] if [math]\\forall U \\in \\tau , a \\in U \\ \\exists N [/math] s.t [math]  n>N \\Rightarrow a_n \\in U[/math] That is for every open set including [math]a[/math] eventually our sequence will be in that set. A Hausdorff topological space is one where we can separate all distinct points by disjoint open sets. [math]\\forall x,y \\in X \\ \\exists U,V \\in \\tau [/math] s.t [math]x \\in U, y \\in V, U \\cap V = \\emptyset[/math] This also implies that a convergent sequence has a unique limit. You can show this with the definition of Hausdorff combined with the definition of a limit of a sequence. You can show that metric spaces are Hausdorff by defining a basis of your topology with the set of open balls. If you have 2 distinct points you can put each of them in an open ball with radius less than half the distance to the other point. ",
+            "date": "Updated June 6, 2017",
+            "views": "621",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Samuel Gomes da Silva",
+                    "user_href": "/profile/Samuel-Gomes-da-Silva"
+                },
+                {
+                    "user_id": "Dima Karam",
+                    "user_href": "/profile/Dima-Karam-1"
+                },
+                {
+                    "user_id": "Finlay Stafford",
+                    "user_href": "/profile/Finlay-Stafford"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                },
+                {
+                    "user_id": "Bramhatanu Banerjee",
+                    "user_href": "/profile/Bramhatanu-Banerjee"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Lev Kruglyak",
+                    "user_href": "/profile/Lev-Kruglyak"
+                },
+                {
+                    "user_id": "Alexander Farrugia",
+                    "user_href": "/profile/Alexander-Farrugia"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                }
+            ]
+        }
+    ]
+}

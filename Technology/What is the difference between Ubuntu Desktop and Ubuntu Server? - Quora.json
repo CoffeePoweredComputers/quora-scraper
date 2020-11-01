@@ -1,0 +1,114 @@
+{
+    "title": "What is the difference between Ubuntu Desktop and Ubuntu Server? - Quora",
+    "tags": [
+        "Ubuntu Desktop",
+        "Ubuntu Server",
+        "Linux Distributions",
+        "Ubuntu (operating system)",
+        "Servers (computers)",
+        "Linux",
+        "Operating Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jack Wu",
+                "href": "/profile/Jack-Wu-87"
+            },
+            "answer_text": "I will never mess up Desktop version with Server version and vise versa. This 5 cent tip comes out from real experiences and lessons I paid with couple days time on struggling to make a use of Server version as terminal only box. It is true that you can always add Desktop packages on Server version or vise versa. But the result are quite different from respective versions, it has many problems and troubles. Most people noticed that the difference of packages Server and Desktop versions have, but no one pay attention that these two versions have quite different configurations. The problems of miss-use versions caused by different configuration are elided or ignored. The Server version is meant for server. Here are at least two things that affect you when you use Server version as your daily terminal console box: It is optimized for the server, assuming always has a wired network, always are power on (it does not reboot often). So your box will have much longer boot time. If you use WiFi only machine (most new style laptops do), the Server version of Ubuntu boot-up procedure can hang on there for 3 to 5 minutes, because lot modules on server depend on network when load it, but at that stage, WiFi network is not available yet, indeed, the Server version default setting doesn\u2019t come with whole WiFi package. These are only two little things that could catch you and give you headache. Try searching online for Ubuntu hangs on boot\u2026. The solution for that is cumbersome and not clean. oh, I did not mention the users you created on Server version on terminal console won\u2019t shown-up on Desktop login GUI if later you add Desktop packages, nor the GUI Users manage utilities. \u2026. just another issue in the list. So I will say Server and Desktop version are different enough that you do not miss-use them, although you can add packages to get certain features from other version, you will encounter problems caused by different configuration. Although by saying that, I would suggest to use Desktop version for most of case, adding Server packages to Desktop version won\u2019t affect much of your daily usage experience. You can easily change setting to disable GUI and use it as Terminal console. Use the Server version for server solely. What we really lack is Ubuntu Terminal version: A version that is light, but optimized for daily laptop terminal usages only. ",
+            "date": "Answered October 25, 2017",
+            "views": "237",
+            "upvotes": " View 20 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Stephen Kuhn",
+                    "user_href": "/profile/Stephen-Kuhn-2"
+                },
+                {
+                    "user_id": "W Washington",
+                    "user_href": "/profile/W-Washington"
+                },
+                {
+                    "user_id": "Sree Hari",
+                    "user_href": "/profile/Sree-Hari-498"
+                },
+                {
+                    "user_id": "Abhay Patil",
+                    "user_href": "/profile/Abhay-Patil-92"
+                },
+                {
+                    "user_id": "Sinicha Jeftic",
+                    "user_href": "/profile/Sinicha-Jeftic"
+                },
+                {
+                    "user_id": "Vikas Adhav",
+                    "user_href": "/profile/Vikas-Adhav-2"
+                },
+                {
+                    "user_id": "Peter Pynchon",
+                    "user_href": "/profile/Peter-Pynchon-1"
+                },
+                {
+                    "user_id": "Jaros\u0142aw Siemi\u0144ski",
+                    "user_href": "/profile/Jaros\u0142aw-Siemi\u0144ski"
+                },
+                {
+                    "user_id": "Ankit Singh",
+                    "user_href": "/profile/Ankit-Singh-532"
+                },
+                {
+                    "user_id": "Min Latt",
+                    "user_href": "/profile/Min-Latt-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zhu Victor",
+                "href": "/profile/Zhu-Victor"
+            },
+            "answer_text": "The following is copy from the help.ubuntu.com: Business Questions What's the difference between desktop and server? The first difference is in the CD contents. The \"Server\" CD avoids including what Ubuntu considers desktop packages (packages like X, Gnome or KDE), but does include server related packages (Apache2, Bind9 and so on). Using a Desktop CD with a minimal installation and installing, for example, apache2 from the network, one can obtain the exact same result that can be obtained by inserting the Server CD and installing apache2 from the CD-ROM.The Ubuntu Server Edition installation process is slightly different from the Desktop Edition. Since by default Ubuntu Server doesn't have a GUI, the process is menu driven, very similar to the Alternate CD installation process.Before 12.04, Ubuntu server installs a server-optimized kernel by default. Since 12.04, there is no difference in kernel between Ubuntu Desktop and Ubuntu Server since linux-image-server is merged into linux-image-generic.For Ubuntu LTS releases before 12.04, the Ubuntu Desktop Edition only receives 3 years of support. This was increased to 5 years in Ubuntu LTS 12.04 In contrast, all Ubuntu LTS Server Edition releases are supported for 5 years.The conclusion is, after 12.04, there is no significant difference between the two except that you have a GUI comes along with the desktop version while there is no GUI for the server one. ",
+            "date": "Answered September 15, 2016",
+            "views": "283",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Stephen Kuhn",
+                    "user_href": "/profile/Stephen-Kuhn-2"
+                },
+                {
+                    "user_id": "Giridharan Dhanasekar",
+                    "user_href": "/profile/Giridharan-Dhanasekar"
+                },
+                {
+                    "user_id": "Aparesh P",
+                    "user_href": "/profile/Aparesh-P"
+                },
+                {
+                    "user_id": "Ananya Chakraborty",
+                    "user_href": "/profile/Ananya-Chakraborty-97"
+                },
+                {
+                    "user_id": "Jo Bru",
+                    "user_href": "/profile/Jo-Bru"
+                },
+                {
+                    "user_id": "Israel Chand",
+                    "user_href": "/profile/Israel-Chand"
+                },
+                {
+                    "user_id": "Zen Ventzi",
+                    "user_href": "/profile/Zen-Ventzi"
+                },
+                {
+                    "user_id": "Horia Faliboga",
+                    "user_href": "/profile/Horia-Faliboga"
+                },
+                {
+                    "user_id": "Madhu Satyanarayana Panitini",
+                    "user_href": "/profile/Madhu-Satyanarayana-Panitini"
+                }
+            ]
+        }
+    ]
+}

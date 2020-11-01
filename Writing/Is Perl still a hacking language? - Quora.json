@@ -1,0 +1,110 @@
+{
+    "title": "Is Perl still a hacking language? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bryan Mcguire",
+                "href": "/profile/Bryan-Mcguire"
+            },
+            "answer_text": "Perl is old, but there are still a lot of people who know it, literally, inside and out.  By that, I mean they know internals of the interpreter, and how to accomplish useful things by undocumented (or obscurely documented) side-effects.  Perl experts can write code that's extremely compact and difficult to understand for more casual Perl users.  In the heyday of the language, Perl programmers competed against each other on Usenet newsgroups and in IRC channels to write perl more compact and obfuscated than each other -- they prided themselves on it. For example, it is documented that \"q\" is a quote like operator that's equivalent to single quotes, and sometimes you will see it used in perl like this: $foo = q/hello, world!/; which is equivalent to this: $foo = 'hello, world!'; It's also documented that you can use any character following the \"q\" as a delimiter, so this is also valid: $foo = q+hello, world!+; so, if you wanted to say $foo=''  (an empty string), you could also say this: $foo = q++; That's very intentionally unclear.  It's meant to confuse the reader into believing a variable is being incremented when in fact that's not the case at all. This pissing contest went on for years and years, and the people participating got very good at both writing and deciphering crazy, obfuscated perl. It was immature, but for a lot of people it was also a lot of fun.  I'm not sure this makes Perl a \"hacking language,\" but this is where the \"just another perl hacker\" signatures came from. ",
+            "date": "Answered September 30, 2014",
+            "views": "57",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Morgan Zhang",
+                    "user_href": "/profile/Morgan-Zhang-22"
+                },
+                {
+                    "user_id": "Robert Lee",
+                    "user_href": "/profile/Robert-Lee-22"
+                },
+                {
+                    "user_id": "Kaustubh Gupta",
+                    "user_href": "/profile/Kaustubh-Gupta-17"
+                },
+                {
+                    "user_id": "Mridul Krishna Mishra",
+                    "user_href": "/profile/Mridul-Krishna-Mishra-2"
+                },
+                {
+                    "user_id": "Jamison Cooper-Leavitt",
+                    "user_href": "/profile/Jamison-Cooper-Leavitt"
+                },
+                {
+                    "user_id": "Randal L. Schwartz",
+                    "user_href": "/profile/Randal-L-Schwartz"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Sathya",
+                    "user_href": "/profile/Sathya-167"
+                },
+                {
+                    "user_id": "Max De Mendiz\u00e1bal",
+                    "user_href": "/profile/Max-De-Mendiz\u00e1bal"
+                },
+                {
+                    "user_id": "Pujan Patel",
+                    "user_href": "/profile/Pujan-Patel-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Christian Walde",
+                "href": "/profile/Christian-Walde"
+            },
+            "answer_text": "Consider this page please: hacker Are you talking about hacker in the sense of 1., or hacker in the the often falsely understood sense of 8., as popularized by Fox News? If the latter, you should not be asking these kinds of questions. If the former: Perl is a generic language. You can literally implement anything in it, with no restrictions* and it is made to allow beginners to quickly start being productive, even if they do not understand the whole language yet, while still having a lot of depth to allow experts to still learn new things. In the past it was the first language to offer these things, which is why it became widely used. Nowadays there are many other languages that follow the path Perl traced, but offer other things, such as different ways to handle OO, or simply a smaller scope. So the field has widened and people can choose depending on their preferences and do so. This has given some the false impression that Perl is being used less, when all that means is that there are more programmers, using more languages. And that leads me to the most important point. If you wish to be a hacker in the sense of 1.: Learn as many languages as you can and do cool things with them. Perl is an excellent choise of a language to learn, and if you choose to learn it, i encourage you to start at Perl Tutorial Hub. However by restricting yourself to one language, you will restrict your ability to think in algorithms, and lock yourself to thinking in the syntax of that language. So learn all of them. * Though some things would require an unreasonable effort to implement in Perl and are easier in others, and vice versa. Choose the right tool for the job. ",
+            "date": "Answered May 24, 2013",
+            "views": "97",
+            "upvotes": " View 23 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nishendra Tennakoon",
+                    "user_href": "/profile/Nishendra-Tennakoon"
+                },
+                {
+                    "user_id": "Jonathan Briggs",
+                    "user_href": "/profile/Jonathan-Briggs-1"
+                },
+                {
+                    "user_id": "Brad Gilbert",
+                    "user_href": "/profile/Brad-Gilbert-5"
+                },
+                {
+                    "user_id": "Ahmed Elhady",
+                    "user_href": "/profile/Ahmed-Elhady-8"
+                },
+                {
+                    "user_id": "Karim Heredia",
+                    "user_href": "/profile/Karim-Heredia"
+                },
+                {
+                    "user_id": "Max De Mendiz\u00e1bal",
+                    "user_href": "/profile/Max-De-Mendiz\u00e1bal"
+                },
+                {
+                    "user_id": "Mike Williams",
+                    "user_href": "/profile/Mike-Williams-184"
+                },
+                {
+                    "user_id": "Alex Chistyakov",
+                    "user_href": "/profile/Alex-Chistyakov"
+                },
+                {
+                    "user_id": "Siva Vigneash",
+                    "user_href": "/profile/Siva-Vigneash"
+                },
+                {
+                    "user_id": "Damian James",
+                    "user_href": "/profile/Damian-James-1"
+                }
+            ]
+        }
+    ]
+}

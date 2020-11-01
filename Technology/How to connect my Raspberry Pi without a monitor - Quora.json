@@ -1,0 +1,53 @@
+{
+    "title": "How to connect my Raspberry Pi without a monitor - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Computer Monitors and Screens"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rod Nussbaumer",
+                "href": "/profile/Rod-Nussbaumer-1"
+            },
+            "answer_text": "I will answer, with some assumptions: You want to use some other host that has a monitor, keyboard, etc.By \u2018connect to\u2019, you want shell access and the ability to run programs on the PiFirst, use the RPi docs to configure your Pi to boot with a SSH server enabled. It\u2019s simple to do and only requires creation of a file, potentially empty, with the name \u2018SSH\u2019 or maybe \u2018ssh\u2019, I can\u2019t remember. Search for \u2018raspberry pi headless\u2019. Use an SSH client on your other host. If that other host is another Linux host, it will already be installed, and you simply run \u2018ssh pi@xxx.xxx.xxx.xxx\u2019 to get a secure shell login. You may or may not know, a priori, the IP address (the xxx.\u2019s above) of your Pi. If you don\u2019t, you\u2019ll have to figure it out somehow, and that all depends on where and how the Pi is getting it\u2019s network configuration. For me, it typically means I\u2019ve created an entry in a DHCP server on my network, and I\u2019ve set it up to dispense an IP address keyed to the MAC of the Pi. You might be able to use the logfiles of your DHCP server (perhaps built into a commodity home router) to search for the DHCPDISCOVER message when the Pi boots, and the accordant IP that gets sent in a DHCPACCEPT message. Alternatively, you might be able to st up the Pi\u2019s configuration offline, to give it a static IP of your choosing. If you\u2019ve already given yourself a user ID that isn\u2019t \u2018pi\u2019, you probably want to use that in your ssh login. If your host is a Windows PC, then you\u2019ll have to track down a SSH client. Putty seems to be one that some people prefer. I\u2019m more old school, and go for the Cygwin route, since it can optionally include an X server. Running the X server on your Windows host will allow you to tunnel the X traffic from your Pi to your Windows hosted X server, and run GUI applications on the Pi, with the result appearing in a window on the Windows host. If your host is Linux with a full desktop environment, then the X server is already there, and you\u2019re done. Most of the time, modern Linux\u2019s are set up to provide the tunnel automatically, but if not, connecting to the Pi with \u2018ssh -X xxx.xxx.xxx.xxx\u2019 will do the trick. Windows hosted SSH clients will have a box or somesuch to click in the client configuration, except the Cygwin version works just like the Linux version. Once you\u2019re in, type \u2018export | grep DISPLAY\u2019 to see what your Pi\u2019s applications will see as their X server address. If it looks like \"localhost:12.0\", where the number following the colon is some low valued integer, then you\u2019re ready to go. If not, then you haven\u2019t set up a tunnel. A more thorough test would be to run xdpyinfo. If it shows you a list of properties of your X server, it\u2019s pretty much a certainty that you can run X GUI applications on your Pi, and work with them on your host. Try running \u2018xev\u2019 and see if it creates a small window on your host, and reports all sorts of stuff when you move and click the mouse. If it does, your X server is connected to the Pi. For what it\u2019s worth, this is the standard model I use for almost all of the RPi setups I have. ",
+            "date": "Updated August 18, 2020",
+            "views": "204",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alan McDonley",
+                    "user_href": "/profile/Alan-McDonley"
+                },
+                {
+                    "user_id": "Praveen Reddy",
+                    "user_href": "/profile/Praveen-Reddy-731"
+                },
+                {
+                    "user_id": "Joseph Mwema",
+                    "user_href": "/profile/Joseph-Mwema-3"
+                },
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ken Burgett",
+                "href": "/profile/Ken-Burgett"
+            },
+            "answer_text": "You have to use a monitor to get an OS such as Raspbian installed, but once that is done, just download the NoMachine server for Raspberry PI and do the same for the other desktop machines on your network. That way, you can use the NoMachine client and access the PI from any client on your network. I also have an HDMI switch to share one of my monitors with the PI, and a USB switch to share keyboard/mouse setup. That is useful after a system update, which often will require a reboot. ",
+            "date": "Answered May 26, 2020",
+            "views": "79",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        }
+    ]
+}

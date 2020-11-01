@@ -1,0 +1,96 @@
+{
+    "title": "What is the 'giant component' in graph theory? - Quora",
+    "tags": [
+        "Discrete Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Daniel Zavala Svensson",
+                "href": "/profile/Daniel-Zavala-Svensson"
+            },
+            "answer_text": "First of all a component (sometimes called connected component) in a graph is a maximal connected subgraph. That is, a subgraph where there is a path between every pair of vertices, but no vertex in the component can have an edge to another component. You might call them the \u201cislands\u201d of the graph. For example, in the image below (from wikipedia) there are three components.  With that definition out of the way, a giant component is sometimes used in a very rigidly defined way, and sometimes more loosely. But in every case, it means a component that is much bigger than every other component. There is usually some context to this however, and it is usually about random graphs. And the question one asks is \u201cin this kind of random graph, will there be a giant component?\u201d The classic example I would say, the first one studied by mathematicians, is the Erd\u0151s\u2013R\u00e9nyi graph. It takes a number n of vertices, and a probability p that any two vertices are connected by an edge. So you get a graph of n vertices and the expected number of edges is [math]p\\frac{n(n-1)}{2}[/math]. And it turns out that if [math]p>1/n[/math] then there is probably a giant component, and if [math]p<1/n[/math] there is probably not. You have define of course what exactly is meant by a giant component (i.e. how much bigger than other components) but the idea hopefully is clear. This is an example of the formal way of defining the concept. Giant components arise in things like friendship graphs (for any two people A and B anywhere on earth, A probably knows someone who knows someone \u2026 who knows someone who knows B) ",
+            "date": "Answered May 30, 2018",
+            "views": "34",
+            "upvotes": " View 14 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                },
+                {
+                    "user_id": "Alisa Zhila",
+                    "user_href": "/profile/Alisa-Zhila-1"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Chen Jin",
+                    "user_href": "/profile/Chen-Jin-68"
+                },
+                {
+                    "user_id": "Sanket Jain",
+                    "user_href": "/profile/Sanket-Jain-46"
+                },
+                {
+                    "user_id": "Bob Dener",
+                    "user_href": "/profile/Bob-Dener"
+                },
+                {
+                    "user_id": "Alex Valbel",
+                    "user_href": "/profile/Alex-Valbel"
+                },
+                {
+                    "user_id": "Narrative Weaver",
+                    "user_href": "/profile/Narrative-Weaver"
+                },
+                {
+                    "user_id": "Sowmya R Krishnan",
+                    "user_href": "/profile/Sowmya-R-Krishnan"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Gyrorealm"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Luis Argerich",
+                "href": "/profile/Luis-Argerich"
+            },
+            "answer_text": "The \u201cgiant component\u201d is a principle that says that in social network graphs, and many other graphs there tends to be a single giant connected component. A good way to see this is to imagine we have not one but two giant components, if we add an edge to the graph chances are we will pick nodes in both components merging them, so eventually the two giant components become a single component, this can happen fast in many social graphs. In practice in many social networks we can find the single giant component and some islands or small isolated components. ",
+            "date": "Answered May 29, 2018",
+            "views": "17",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Adrian Sarno",
+                    "user_href": "/profile/Adrian-Sarno"
+                },
+                {
+                    "user_id": "Stan Hanks",
+                    "user_href": "/profile/Stan-Hanks"
+                },
+                {
+                    "user_id": "Ali Sabet",
+                    "user_href": "/profile/Ali-Sabet-6"
+                },
+                {
+                    "user_id": "Nate Waddoups",
+                    "user_href": "/profile/Nate-Waddoups"
+                },
+                {
+                    "user_id": "Muni Sreenivas Pydi",
+                    "user_href": "/profile/Muni-Sreenivas-Pydi"
+                },
+                {
+                    "user_id": "Peter Flom",
+                    "user_href": "/profile/Peter-Flom"
+                }
+            ]
+        }
+    ]
+}

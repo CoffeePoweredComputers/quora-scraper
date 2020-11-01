@@ -1,0 +1,114 @@
+{
+    "title": "What is the comparison among Newtonian, Lagrangian, Hamiltonian, and quantum mechanics? - Quora",
+    "tags": [
+        "Lagrangian Mechanics",
+        "Classical Mechanics",
+        "Quantum Mechanics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Josh Yablon",
+                "href": "/profile/Josh-Yablon"
+            },
+            "answer_text": "The other answers have been very math-heavy, so I\u2019ll give a more intuitive and hand-wavy explanation with almost zero math. The Newtonian, Hamiltonian and Lagrangian methods are based on different (but equivalent) interpretations of how the laws of physics unfold. The Newtonian way of looking at things is through forces and force body diagrams. If I drop a ball with mass m from a height of h, the only force acting on the ball is the downward force of gravity, mg. Since F=ma, the ball accelerates downwards at a rate of g=9.81 m/s^2 (assuming we\u2019re on planet Earth). From this, I can then calculate things like how long it takes for the ball to hit the ground, how fast the ball is moving the moment before it hits the ground, etc. The Hamiltonian way of looking at things is through conserved quantities. You\u2019ll most commonly see conservation of energy, momentum, and angular momentum. If I drop a ball with mass m from a height of h, I can say that the potential energy at time t=0 is mgh. Conservation of energy (which arises from the time-independence of a function called \u201cthe Hamiltonian\u201d) says that the total energy (kinetic plus potential) must remain constant, from which I can calculate that the acceleration is 9.81 m/s^2 downwards, from which I can then calculate the same things as I did with the Newtonian method. The Lagrangian way of looking at things is by saying that nature is lazy. The minimum-action principle (Hamilton's principle - Wikipedia) is the mathematical way of saying this. If I drop a ball from a height of h, the ball could go on an infinite number of possible paths. Out of all these paths, nature will choose the path that requires the least amount of action, which in this case turns out to be the path where it accelerates downward at a rate of 9.81 m/s^2. This minimum-action path is calculated by setting various derivatives of a function called \u201cthe Lagrangian\u201d equal to zero. These three methods are equivalent in that they all yield the same final result (it would be very concerning if they didn\u2019t yield the same result!) However certain methods are often more convenient to use for certain types of problems. Quantum mechanics is in a different category than the other three. To minimize confusion, you could call the other three \u201cNewtonian, Hamiltonian and Lagrangian methods\u201d rather than \u201cNewtonian, Hamiltonian and Lagrangian mechanics\u201d. Quantum mechanics is a branch of physics (specifically, the physics of very small things), while the other three are problem-solving methods based on different but equivalent interpretations of physics. ",
+            "date": "Updated September 10, 2018",
+            "views": "58",
+            "upvotes": " View 116 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Alex Davis",
+                    "user_href": "/profile/Alex-Davis-149"
+                },
+                {
+                    "user_id": "Braxton Boren",
+                    "user_href": "/profile/Braxton-Boren-1"
+                },
+                {
+                    "user_id": "Alex Hesson",
+                    "user_href": "/profile/Alex-Hesson-4"
+                },
+                {
+                    "user_id": "Ryan Schwiebert",
+                    "user_href": "/profile/Ryan-Schwiebert"
+                },
+                {
+                    "user_id": "Aryan Prasad",
+                    "user_href": "/profile/Aryan-Prasad-7"
+                },
+                {
+                    "user_id": "Promise Tewogbola",
+                    "user_href": "/profile/Promise-Tewogbola"
+                },
+                {
+                    "user_id": "Logan Ge",
+                    "user_href": "/profile/Logan-Ge-2"
+                },
+                {
+                    "user_id": "Sudheer Thunga",
+                    "user_href": "/profile/Sudheer-Thunga-1"
+                },
+                {
+                    "user_id": "Li Zhen Ning",
+                    "user_href": "/profile/Li-Zhen-Ning"
+                },
+                {
+                    "user_id": "Grant Gudmann",
+                    "user_href": "/profile/Grant-Gudmann"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Merthe",
+                "href": "/profile/Daniel-Merthe-1"
+            },
+            "answer_text": "Newtonian mechanics was the original mechanics. Way back in 1686, Newton wrote down three laws of motion: 1) Objects in motion tend to stay in the same motion, unless acted on by a \u201cforce\u201d. 2) The acceleration of an object, which is the rate of change of its velocity, is proportional to a function of its position (and occasionally its velocity). This function is called the \u201cforce\u201d and the proportionality constant is called the \u201cmass\u201d. 3) If any object A causes a force on any other object B, then object B causes the same force on object A, but in the opposite direction. The most important of these laws, in terms of building mathematical models, is the second law, based on which we can write down the second order differential equation, [math]m \\mathbf{a} = m \\ddot{\\mathbf{x}} = \\mathbf{F}(\\mathbf{x})[/math] where dots indicate time derivatives, [math]m[/math] is the mass, [math]\\mathbf{a}[/math] is the acceleration vector, [math]\\mathbf{x}[/math] is the coordinate vector and [math]\\mathbf{F}[/math] is the force vector. (They are vectors because every force has a direction and a magnitude. For example, the gravitational force on the Earth due the Sun is very big, and it points from the Earth towards the Sun, i.e. it is being pulled towards the sun.) By solving this equation for [math]\\mathbf{x}(t)[/math], you can know the position of the object and its trajectory for all time. This little equation was revolutionary because it described such a wide range of seemingly disparate phenomena, from the orbits of the planets to the swing of a clock pendulum to the fall of an apple. But as amazing as that was, this equation was often hard to solve, especially in more complicated systems or systems with a large number of interacting objects. In order to get around this problem, physicists developed Lagrangian mechanics. Whereas Newtonian mechanics is based on Cartesian coordinates, Lagrangian mechanics is independent of any particular coordinate system (although, the two formulations are physically equivalent). This allows for much greater flexibility in doing calculations. The starting point is the definition of the Lagrangian function [math]L(q_i,\\dot{q}_i;t)[/math] and the action, [math]S[\\{q_i(t)\\}] = \\int_{t_1}^{t_2} dt \\ L(q_i,\\dot{q}_i ; t)[/math] where the [math]q_i[/math] [math](i = 1, 2, 3,\u2026,[/math] # of degrees of freedom) are the generalized coordinates of the system and [math]\\dot{q}_i[/math] are the corresponding generalized velocities. The generalized coordinates can be any set of coordinates that you like, as long as they completely specify the state of the system. They can be distances, angles or whatever else quantifies the state. But the reason theoretical physicists went bonkers with the Lagrangian formulation is the elegant physical principle on which the dynamics is based (Hamilton\u2019s principle): The physical path that a system takes from time [math]t_1[/math] to time [math]t_2[/math] is the one for which the action ([math]S[/math]) is stationary. That is, nature seems to \u201cchoose\u201d the path that is either a minimum, maximum or saddle point of the action (but usually the minimum). It turns out that extremizing the action in this way results in the Euler-Lagrange equations of motion, [math]\\frac{d}{dt}\\frac{\\partial L}{\\partial \\dot{q}_i} = \\frac{\\partial L}{\\partial q_i}[/math] which is really just a generalized form of Newton\u2019s second law (the left side becomes mass times acceleration and right side is the generalized force). But, again, the strength here is that you can choose the coordinates [math]q_i[/math] that make this equation easiest to solve. For example, in systems with central forces (like gravity), it is advantageous to use spherical coordinates, such that you separate the dynamics into its angular and radial parts. You can then describe separately the radial and angular motion of the object, by solving the corresponding Euler-Lagrange equations. With this powerful formulation of mechanics, physicists were able to solve wider classes of problems more easily. Moreover, it facilitated the identification of conserved quantities in dynamical systems. If a quantity is conserved, its value does not change over time, and you do not need to keep track of it. Thus, finding the conserved quantities of a system simplifies the analysis. Recognizing the importance of conserved quantities, Hamiltonian mechanics was derived from the Lagrangian formulation. In Hamiltonian mechanics, the conserved quantities become more apparent. The Hamiltonian function [math]H[/math] is calculated from the Lagrangian via a change of variables called the Legendre transform, [math]H(q_i,p_i;t) = \\sum_{i}\\dot{q}_i p_i - L(q_i,\\dot{q}_i;t)[/math] where the momentum corresponding to the coordinate [math]q_i[/math] is defined as [math]p_i\\equiv\\frac{\\partial L}{\\partial \\dot{q}_i}[/math] Essentially, we replace the velocity coordinates with momentum coordinates, such that the physical state of the system at any time is described by the set of coordinates [math]\\{q_i,p_i\\}[/math]. Putting these two equations together with the Euler-Lagrange equation above, we get Hamilton\u2019s equations of motion, [math]\\dot{q}_i = \\frac{\\partial H}{\\partial p_i}[/math] and [math]\\dot{p}_i = -\\frac{\\partial H}{\\partial q_i}[/math] Lo and behold, the Hamitonian is a conserved quantity, [math]\\frac{dH}{dt} = \\sum_{i} \\frac{\\partial H}{\\partial q_i} \\frac{\\partial q_i}{\\partial t} + \\frac{\\partial H}{\\partial p_i}\\frac{\\partial p_i}{\\partial t}[/math] [math]= \\sum_{i} \\frac{\\partial H}{\\partial q_i} \\frac{\\partial H}{\\partial p_i} - \\frac{\\partial H}{\\partial p_i}\\frac{\\partial H}{\\partial q_i}=0[/math] Moreover, if the Hamiltonian does not depend explicitly on the coordinate [math]q_i[/math], then [math]\\frac{dp_i}{dt} = \\frac{\\partial H}{\\partial q_i}= 0[/math] which means that the corresponding momentum is also a conserved quantity! We get that right out of the box, with little knowledge about the particular system. In fact, the time dependence of any dynamical variable [math]A = A(q_i,p_i)[/math] is given by [math]\\frac{dA}{dt} = \\sum_{i} \\frac{\\partial A}{\\partial q_i} \\frac{\\partial q_i}{\\partial t} + \\frac{\\partial A}{\\partial p_i}\\frac{\\partial p_i}{\\partial t}[/math] [math]= \\sum_{i} \\frac{\\partial A}{\\partial q_i} \\frac{\\partial H}{\\partial p_i} - \\frac{\\partial A}{\\partial p_i}\\frac{\\partial H}{\\partial q_i}[/math] or more compactly, [math]\\frac{dA}{dt} = \\{A,H\\}[/math] where the thing on the right is called the Poisson bracket. If the Poisson bracket of a quantity with the Hamiltonian is zero, then it is invariant over time. The Lagrangian and Hamiltonian formulations describe the same physical processes. They are both equivalent to Newtonian mechanics, but have different advantages depending on what you want to calculate. If you want a conceptually simple and intuitive description of things, use Newtonian mechanics. If you have a potentially complicated system and you want to simplify and standardize the calculation as much as possible, start with Lagrangian mechanics. If you want to see symmetries and conserved quantities, go with Hamiltonian mechanics. But if you take any of these three approaches, you are doing classical mechanics. Quantum mechanics is a completely different theory of mechanics. It was first formulated as an extension of Hamiltonian mechanics (when the latter failed on small scales), and then later Feynman provided an alternative interpretation in terms of Lagrangian mechanics. The Hamiltonian version of quantum mechanics starts with the assertion that dynamical variables, such as position and momentum, are not numbers, but are instead operators. An operator is simply an object that acts on another object. When we make a measurement of some observable variable, we actually obtain certain values, called eigenvalues, associated with the corresponding operator. In many cases, these eigenvalues are discrete, or quantized (hence the name \u201cquantum\u201d). Moreover, the (eigen)values that we get from measurements are random. There is simply no way to know what the result of a future measurement will be. We can only calculate probabilities. So, instead of identifying the state of a system with the randomized observables (position, momentum, etc.), we identify it with the probability distribution of observed (eigen)values, or rather its proxy - the probability amplitude or wave function [math]\\Psi[/math]. The probability density is the magnitude square of the wave function. For example, if the wave function is defined in position space [math]\\Psi = \\Psi(x)[/math], then the probability density is [math]|\\Psi(x)|^2[/math] (the probability of measuring a position in a small neighborhood [math]dx[/math] about point [math]x[/math] is [math]|\\Psi(x)|^2 dx[/math]). In a way analogous to how the Poisson bracket above determines the time dependence of classical quantities, the time dependence of the wave function is given by the Schr\u00f6dinger equation, [math]\\frac{\\partial \\Psi }{\\partial t} = \\frac{1}{i\\hbar} \\hat{H} \\Psi[/math] where [math]\\hbar[/math] is the Planck constant and here the Hamiltonian is now the operator [math]\\hat{H}[/math], which acts on the wave function. To get this operator, you just write down the classical Hamiltonian function and replace the coordinates and momenta with the corresponding operators, which must obey the constraint, [math]\\hat{q}_i \\hat{p}_i - \\hat{p}_i \\hat{q}_i = i\\hbar [/math] known as the canonical commutation relation. Generally, any two operators do not commute (meaning that the order in which you apply them matters. Think of rotations, for example. A rotation about the z-axis followed by a rotation about the y-axis yields a result different from a rotation about the y-axis followed by another about the z-axis). This relation tells us that the position and momentum operators fail to commute by a very tiny amount - the Planck constant ([math]\\approx 6.626 \\times 10^{-34}[/math] m[math]^2[/math] kg / s). A consequence of this is that you cannot obtain arbitrarily precise measurements of both position and momentum simultaneously. This statement is often summarized as the famous Heisenberg uncertainty principle, [math]\\Delta q \\Delta p \\geq \\frac{\\hbar}{2}[/math] where [math]\\Delta q[/math] is the uncertainty in some coordinate [math]q[/math] and [math]\\Delta p[/math] is the uncertainty in the corresponding momentum. Whereas, in Newtonian, Lagrangian and Hamiltonian mechanics you solve for the coordinates as functions of time for the objects under study, here you solve for the wave function, which is a function of all these coordinates and a function of time. This adds an additional layer of complexity, which makes quantum mechanics problems generally more difficult to solve than their classical analogues. Feyman\u2019s path integral formulation of quantum mechanics is equivalent to the above version of quantum mechanics, but instead of writing down the Schr\u00f6dinger equation and trying to solve it, you just write down the solution in the form, [math]\\Psi = \\sum_{\\{q_i(t)\\}} \\exp \\left[ -\\frac{i}{\\hbar} S[q_i(t)] \\right][/math] where the sum is taken over all possible paths [math]\\{q_i(t)\\}[/math], and [math]S[\\{q_i(t)\\}][/math] is the classical action from Lagrangian mechanics above, which is a function of the path [math]\\{q_i(t)\\}[/math] that the system takes. What this says is that the wave function is really just the sum over all possible paths [math]\\{q_i(t)\\}[/math] of this exponential function of the action. This is a conceptually beautiful idea: a particle or system can take any possible path through space and you just sum up the probability amplitudes for each path to get the total wave function. But when you try to actually do this calculation, you run into a big problem: how do you define a sum over paths? how do you even count all the paths? This issue quickly complicates things, and even for simple systems the sum becomes quite messy. For this reason, the above formulation based on extending Hamiltonian mechanics is usually more straightforward. ",
+            "date": "Updated October 13, 2020",
+            "views": "293",
+            "upvotes": " View 410 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Frederic Rachford",
+                    "user_href": "/profile/Frederic-Rachford"
+                },
+                {
+                    "user_id": "Celso Gon\u00e7alves",
+                    "user_href": "/profile/Celso-Gon\u00e7alves-1"
+                },
+                {
+                    "user_id": "Nguyen Anh Tuan",
+                    "user_href": "/profile/Nguyen-Anh-Tuan-4"
+                },
+                {
+                    "user_id": "Michael Chien",
+                    "user_href": "/profile/Michael-Chien-9"
+                },
+                {
+                    "user_id": "Srinivas Charlu",
+                    "user_href": "/profile/Srinivas-Charlu-3"
+                },
+                {
+                    "user_id": "Rodolfo Patricio Mart\u00ednez y Romero",
+                    "user_href": "/profile/Rodolfo-Patricio-Mart\u00ednez-y-Romero"
+                },
+                {
+                    "user_id": "Cihad K\u0131br\u0131s",
+                    "user_href": "/profile/Cihad-K\u0131br\u0131s"
+                },
+                {
+                    "user_id": "Sean McCauley",
+                    "user_href": "/profile/Sean-McCauley-18"
+                },
+                {
+                    "user_id": "Francesco Damiani",
+                    "user_href": "/profile/Francesco-Damiani-6"
+                },
+                {
+                    "user_id": "Michael Sherman",
+                    "user_href": "/profile/Michael-Sherman-6"
+                }
+            ]
+        }
+    ]
+}

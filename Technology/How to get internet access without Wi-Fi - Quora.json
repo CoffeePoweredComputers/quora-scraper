@@ -1,0 +1,47 @@
+{
+    "title": "How to get internet access without Wi-Fi - Quora",
+    "tags": [
+        "Internet Access",
+        "Internet Service Providers",
+        "Wi-Fi",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dan Karas",
+                "href": "/profile/Dan-Karas-1"
+            },
+            "answer_text": "A Wi-Fi connection does not necessarily mean that you have a Internet connection. Wi-Fi is just one method of networking devices. Ethernet, Bluetooth, Serial, etc. are other methods of networking devices. That being said, A Internet connection requires a active ISP (Internet Service Provider) account. There are various types and prices for ISP services. Other than free WiFi services that are provided at some business locations such as hotels, restaurants, bookstores, etc. the cheapest and also the slowest type of Internet connection would be Dial-Up. Maximum Dial-Up speed is 56 Kbps. This type of connection requires a analog modem and a active telephone line. Currently dial-up ISP services cost around $10 a month or so. Dial-up was the most common type of Internet service 15 years ago and is still used in locations where faster broadband service is unavailable or too costly. DSL was a upgrade to the legacy dial-up Internet service. DSL used the same telephone lines but put the Internet data at higher frequencies and used a special DSL modem which then provided a Ethernet connection for a single device or was connected to a router for multiple devices to share the Internet connection. DSL speeds range from around 512 Kbps to over 12 Mbps. Cable TV providers offer high speed Internet via their existing coaxial television cables. Cable Internet services require a special cable modem to connect to the provider\u2019s Internet connection. Cable Internet speeds range from around 10 Mbps to over 300 Mbps. New advances in technology such as DOCSIS 3.1 even allow Gigabit (1000 Mbps) Internet connections. Fiber-Optic is typically the fastest Internet connection, often 1 Gbps or faster. Fiber Internet is only available in select locations. Google has fiber in several states. I personally have a fiber Internet connection from Cox Cable. Several other ISPs offer fiber and availability is rapidly expanding There is also Satellite Internet which is typically only used where other forms of broadband are unavailable due to the costs and delay (latency) due to the distance signals need to travel. Cellular, is another way to access the Internet. In addition to using a smartphone for access many providers offer hotspot plans so you can turn your smartphone into a mini wireless router and provide WiFi Internet access to other devices within range of your phone. This is great for portable Internet access, however the monthly data limits are typically low and buying extra data is expensive. Good Luck\u2026 ",
+            "date": "Answered December 28, 2016",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ratnesh Mishra",
+                    "user_href": "/profile/Ratnesh-Mishra-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dave Martindale",
+                "href": "/profile/Dave-Martindale-1"
+            },
+            "answer_text": "Sure - use hard-wired network connections instead. For example, our house Internet connection arrives via an ADSL modem, which piggybacks Internet data on a twisted pair of copper wires that also carries an ordinary baseband telephone connection. The ADSL modem in our basement includes a WiFi access point for both 2.4 and 5 GHz bands, but it also includes a 4-port gigabit switch. I connect one of the ports on that switch to another 8-port switch mounted nearby. This provides 10 open gigabit ports, which are then connected to a WD \"MyCloud\" NAS (file server) and hardwired Ethernet that runs to jacks in 9 different rooms of the house. The house contains 3 desktop computers plus a couple of printers which all have wired Ethernet ports, and these are all connected to the wired Ethernet at either 100 Mbps or 1 Gbps, depending on the capability of the individual devices. There are also a couple of TV sets, which also get their data through the same Ethernet, plus a wireless access point that improves wireless connectivity upstairs. The *only* devices which connect to the Internet wirelessly are the devices which have no hardwired Ethernet at all (phones and tablets) or a laptop which has both wired and wireless. Why do this? Because each hard-wired Ethernet link is capable of transmitting up to 1 Gbps in both directions simultaneously, and the hardwired switches have enough internal bandwidth to handle all of their ports running at full speed simultaneously, without interfering with each other. Desktop machine A can be in the middle of doing a backup to the file server in the basement, sending data at 800 Mbps for many minutes at a time. Meanwhile, desktop machine B can be downloading data from somewhere on the Internet at 100 Mbps (our maximum for outside-the-house connections), and desktop machine C may be sending a large document to the printer. None of these transfers affect each other, because each one is between a different pair of endpoints and the wired network can handle all the traffic. On the other hand, when one wireless device talks to another, it \"uses up\" that channel in that band for the duration of the packet, and no other devices can talk at the same time on that channel. Thus, all of the devices using a particular channel and band must compete with each other to share the air time that is available. 2.4 GHz and 5 GHz connections are independent, and it may be possible to use multiple channels in the 5 GHz band at once, but there's no way to get anything close to the 16 Gbps internal bandwidth of an 8-port gigabit switch. So, use wired Ethernet whenever you can, and save wireless for where it's really needed, to get mostly throttling-free connections. (There is a hidden bandwidth limit in my house setup: the single 1 Gbps connection between the 8-port and 4-port switch. If there is more than one data transfer where the endpoints are on the two different switches, then they will have to share that interconnection. I mostly avoid this by putting all of the computer-type devices on the 8-port switch while the TV-type devices are connected to the 4-port switch. The computers never talk to the TVs, so it's mostly Internet traffic (which is limited to 100 Mbps) that crosses the interconnect cable). ",
+            "date": "Answered August 23, 2019",
+            "views": "362",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Richard Taylor",
+                    "user_href": "/profile/Richard-Taylor-147"
+                },
+                {
+                    "user_id": "Vladislav Zorov",
+                    "user_href": "/profile/Vladislav-Zorov"
+                }
+            ]
+        }
+    ]
+}

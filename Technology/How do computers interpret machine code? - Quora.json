@@ -1,0 +1,106 @@
+{
+    "title": "How do computers interpret machine code? - Quora",
+    "tags": [
+        "Learning to Program",
+        "Computers",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jimmy Alan Treadway",
+                "href": "/profile/Jimmy-Alan-Treadway"
+            },
+            "answer_text": "It knows what to do with higher levels of code because of assemblers that assemble them into machine code: This is machine code: A0 2A 30 FA 2CAnd they are further interpreted to the 1s and 0s 0101 0011 byte and bit level, the real language of CPUs, the 1s and 0s.But that\u2019s not really your question. You want to know how computers know what to do with all of those 1s and 0s. Well, It comes down to how CPUs and GPUs are designed. You see CPUs and GPUs use silicon transistors that are probably doped to switch off whenever a negative electron passes through them or a 0 passes through them because 0 always means false in computer electronics terms, well, they somehow managed to associate the 0 to the negative electron. And whenever a positive proton passes through a silicon transistor it switches it to on, again they had somehow associated that proton to a 1 with the electron. However, it gets a little bit more detailed than that. Each transistor can act as logic gates depending on how they\u2019re doped\u2026 Like the logic gates: AND, OR, NOT. The logic gate: AND: will keep both and all of its 0\u2019s and 1s as 0\u2019s and 1s in all columns if they\u2019re the same but if they\u2019re different they\u2019re false: 0000 00100000 0011 =0000 0010The logic gate: OR: will keep the 1s and 0s in both columns as 1 and 0 but if they\u2019re different then they\u2019ll always be 1 as in true..: 0000 00100000 0011 =0000 0011The logic gate NOT: will flip different 1s and zeros in each column to the opposite that they are: 0000 1111 =1111 0000And with all of those logic gates, you can flip bits on or off in a sequence of 8 bits in a byte but most CPUs today will allow 2^64 bits or 8 bit pairs of 8 bytes of sequences to be processed today, and with these logic gates you can tell a computer to put a single digit to the screen or add two digits together or to print a char to the computers terminal or to get precision with floats. Think of logic gates as masking-tape over a harmonica \u2018s reeves holes so whenever you blow into it you can be sure that you are blowing into the right notes. Well. the holes that are covered are false and the ones that are uncovered are true and you can make some beautiful music with the ones that are left open, but how do CPUs know in which sequences to process the 1s and 0, it\u2019s the way that they\u2019re fed into the CPU, because CPUs are quite literalists, they process them in which ever direction you give them to the CPU. and this leads me to the ones compliment and the twos compliment that whenever you place a 0 or a 1 heading toward the CPU first it reads them as either a signed or an unsigned number. So, I hope my two explanations had helped you out\u2026 ",
+            "date": "Answered September 30, 2018",
+            "views": "43",
+            "upvotes": " View 13 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Brian Wang",
+                    "user_href": "/profile/Brian-Wang-124"
+                },
+                {
+                    "user_id": "Scott Currier",
+                    "user_href": "/profile/Scott-Currier"
+                },
+                {
+                    "user_id": "Yuvraj Dhillon",
+                    "user_href": "/profile/Yuvraj-Dhillon-8"
+                },
+                {
+                    "user_id": "Anatoly Kovalev",
+                    "user_href": "/profile/Anatoly-Kovalev-1"
+                },
+                {
+                    "user_id": "Pparad Paradoxy",
+                    "user_href": "/profile/Pparad-Paradoxy"
+                },
+                {
+                    "user_id": "Ajay Pal Singh",
+                    "user_href": "/profile/Ajay-Pal-Singh-36"
+                },
+                {
+                    "user_id": "Subramanyam Ganapathy",
+                    "user_href": "/profile/Subramanyam-Ganapathy"
+                },
+                {
+                    "user_id": "Ritesh Panda",
+                    "user_href": "/profile/Ritesh-Panda-1"
+                },
+                {
+                    "user_id": "Richard Kinne",
+                    "user_href": "/profile/Richard-Kinne"
+                },
+                {
+                    "user_id": "Tudor Arion",
+                    "user_href": "/profile/Tudor-Arion"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Cook",
+                "href": "/profile/Steve-Cook-49"
+            },
+            "answer_text": "Your question is generally an entire class in CS during early school, later another class that delves deeper into aspects of this, and in post grad classes can go even deeper. Your trying to ask a summation of math, science and computer science theory spanning the age of time, a slow evolution from early mechanical methods (as far back as Egypt) to track and evaluate data, to turing machine and state logic, and beyond. The best answer to start is to go back to the basic adding machine. Below is a youtube video that basically explains how it works.  If you look at multiplication, it is basically adding a number together a bunch of times.As such, this is multiplication. Well, sort of, we then look at the base algo-rithm, apply some binary shifts, doubling, and a few other aspects to our binary add. Each aspect and algorithm becomes more complex over time, while getting faster as a result. Then you add in miniaturization, additions numbers of adding machines and other \u201cor\u201d and \u201cand\u201d logical circuits, and you can continue to grow in complexity. The how we do it now, is a result of years worth of improvements, analysis, changes. We use increasing layers of abstraction to hide the basic building blocks, including common logical switch packs, moving on through higher levels of \u201cmachine language\u201d, then low level languages such as assembler, on to high level languages like Java. Each pixel on your screen has on off switches for each color, recorded in RGB language, and each key has a number associated with it\u2019s value. Most programmers instead of memorizing 1000s of possible keys (from all languages and keyboards of the world), have short cuts and codes to aid them. Instead of manipulating each pixel, we have libraries to load images into our graphical display. In fact, we don\u2019t even tell the CPU to go find the register for the keyboard and read the signal that represents the specific keys and their states, we rarely even work at the driver level or OS level, we did that, creating a common use way to get it, and this is what we use. ",
+            "date": "Answered August 5, 2016",
+            "views": "39",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Brian Wang",
+                    "user_href": "/profile/Brian-Wang-124"
+                },
+                {
+                    "user_id": "Joseph Reinemann",
+                    "user_href": "/profile/Joseph-Reinemann"
+                },
+                {
+                    "user_id": "Jackson Lasance",
+                    "user_href": "/profile/Jackson-Lasance"
+                },
+                {
+                    "user_id": "Brottor Comic",
+                    "user_href": "/profile/Brottor-Comic"
+                },
+                {
+                    "user_id": "Kang Liu",
+                    "user_href": "/profile/Kang-Liu-33"
+                },
+                {
+                    "user_id": "Richard Kinne",
+                    "user_href": "/profile/Richard-Kinne"
+                },
+                {
+                    "user_id": "Matan Peretz",
+                    "user_href": "/profile/Matan-Peretz"
+                },
+                {
+                    "user_id": "Tamra Tamara",
+                    "user_href": "/profile/Tamra-Tamara-16"
+                }
+            ]
+        }
+    ]
+}

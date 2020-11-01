@@ -1,0 +1,48 @@
+{
+    "title": "What is an example of cooling in combinatorial game theory? - Quora",
+    "tags": [
+        "Combinatorial Game Theory"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "\u201cEntrepreneurial Chess\u201d is a game analyzed by Elwyn Berlekamp and Richard M. Lo in a 2017 paper: https://math.berkeley.edu/~berlek/pubs/EchessFinal.pdf A black king, a white king, and a white rook are placed on an infinite chess board. Black may choose to \u201ccash out\u201d his current position  for a payment of . White tries to minimize Black\u2019s score by blocking his advancement up or to the right (in a manner similar to checkmating Black against the edge of a board.) As in normal chess, Black may not place himself in check, nor may White move her king adjacent to Black\u2019s king. Unlike normal chess, the players are not obligated to take turns\u2014 like many combinatorial games, the \u201cvalue\u201d of the game assumes that a player may choose to play in a different game instead. The ending positions in EChess are all loopy (or arbitrarily large, if Black succeeds at capturing the rook!) For example, figure 4 in the paper shows the following terminal position with Black at (0,0):  Black/Left gets a payout of 0 by ending the game, which dominates any choice to move further away. But White/Right\u2019s king at \u201ca\u201d can move to \u201cb\u201d, or from \u201cb\u201d back to \u201ca\u201d. a = 0 | b b = 0 | a This position has a value called OVER, or  in the paper. It\u2019s an infinitesimal, but ones that \u201cabsorbs\u201d other familiar infinitesimals. Here\u2019s a pair of positions (figure 6 in the paper) with value , where Black can score a point by moving right, or White can move her king to block any further advance:  Now, an interesting thing about EChess positions is that chilling (cooling by 1) removes  from any stopping position. Unlike the general case where chilling is a many-to-one homomorphism, in EChess it is one-to-one! The formal definition of cooling of a combinatorial game  is  for  up to the point where  is infinitesimally close to a number , and  thereafter. If we look at the game  then cooling by one gives   This must be a number, and so . What if we cool the other example position shown, ?  Cooling is a homomorphism, so    Because chilling is 1\u20131 in EChess, the game can be analyzed purely in terms of the cooled positions, then use \u201cheating\u201d to get back the original value. Some Go and Blockbusting positions have a similar property where cooling is 2-to-1, so the original game can be recovered by heating and a parity argument. We can think of the cooled version of the game as one where there\u2019s a \u201ctax\u201d on each move. In , Right would be perfectly happy moving between two equivalent positions forever. But if she had to pay any positive amount for the privilege, she\u2019d prefer not to make any move because Left\u2019s position doesn\u2019t get any worse. So, cooling simplifies the game in this case by eliminating a loopy option. ",
+            "date": "Updated May 13, 2020",
+            "views": "688",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Aur\u00e9lien Emmanuel",
+                    "user_href": "/profile/Aur\u00e9lien-Emmanuel"
+                },
+                {
+                    "user_id": "Sarah Minzer",
+                    "user_href": "/profile/Sarah-Minzer"
+                },
+                {
+                    "user_id": "William Bradley",
+                    "user_href": "/profile/William-Bradley-37"
+                },
+                {
+                    "user_id": "Andrew Li",
+                    "user_href": "/profile/Andrew-Li-85"
+                },
+                {
+                    "user_id": "Stefan Grosser",
+                    "user_href": "/profile/Stefan-Grosser"
+                },
+                {
+                    "user_id": "Theodore Weld Smith",
+                    "user_href": "/profile/Theodore-Weld-Smith"
+                },
+                {
+                    "user_id": "Valiant Asfar",
+                    "user_href": "/profile/Valiant-Asfar"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "title": "Why does the power set of an infinite set have 2 to the cardinality of that set elements? - Quora",
+    "tags": [
+        "Set Theory",
+        "Infinity (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Charles Slade",
+                "href": "/profile/Charles-Slade"
+            },
+            "answer_text": "This is what mathematicians sometimes call an \u201cabuse of notation.\u201d To be sure, they use that phrase somewhat affectionately. Here\u2019s the deal: If [math]X[/math] is a finite set, then the power set of [math]X[/math] has [math]2^{|X|}[/math] elements. It\u2019s nice notation, so they extend it beyond the context where it originally made sense \u2014 that is, they extend it to the infinite case. Without that extra definition, [math]2^{|X|}[/math] doesn\u2019t mean the same thing when [math]X[/math] is finite or infinite. In particular, that notation doesn\u2019t make obvious sense when [math]X[/math] is infinite. For example, I\u2019m not aware of a way to extend the notation to the full scope of what you can do with real-number exponents. I don\u2019t know what [math](1+X)^{Y/2}[/math] means when [math]X[/math] and [math]Y[/math] are infinite sets, for example. ",
+            "date": "Answered March 8, 2017",
+            "views": "838",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Logan R. Kearsley",
+                    "user_href": "/profile/Logan-R-Kearsley"
+                },
+                {
+                    "user_id": "Senia Sheydvasser",
+                    "user_href": "/profile/Senia-Sheydvasser"
+                },
+                {
+                    "user_id": "Christian Zamora",
+                    "user_href": "/profile/Christian-Zamora-10"
+                },
+                {
+                    "user_id": "Victor Naiff",
+                    "user_href": "/profile/Victor-Naiff"
+                },
+                {
+                    "user_id": "Wes Whiting",
+                    "user_href": "/profile/Wes-Whiting"
+                },
+                {
+                    "user_id": "Lev Kruglyak",
+                    "user_href": "/profile/Lev-Kruglyak"
+                },
+                {
+                    "user_id": "Jared Ronning",
+                    "user_href": "/profile/Jared-Ronning"
+                },
+                {
+                    "user_id": "Akash Vijay",
+                    "user_href": "/profile/Akash-Vijay-7"
+                },
+                {
+                    "user_id": "Tim Mastny",
+                    "user_href": "/profile/Tim-Mastny"
+                },
+                {
+                    "user_id": "Leo Kovacic",
+                    "user_href": "/profile/Leo-Kovacic"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alan Bustany",
+                "href": "/profile/Alan-Bustany"
+            },
+            "answer_text": "In cardinal arithmetic the cardinality of the set of functions from the set [math]Y[/math] to the set [math]X[/math] is denoted [math]|X|^{|Y|}[/math]. For finite sets this corresponds exactly to Natural number exponentiation. There is a simple bijection between the power set, [math]\\mathcal P(Y)[/math], and the set of functions from [math]Y[/math] to [math]\\{0,1\\}[/math] given by whether an element is in the subset. That is: [math]\\quad F\\in\\mathcal P(Y)\\leftrightarrow f(y)=\\begin{cases}0&\\text{if $y\\notin F$}\\\\1&\\text{if $y\\in F$}\\end{cases}[/math] Since [math]|\\{0,1\\}|=2[/math] we have [math]|\\mathcal P(Y)|=2^{|Y|}[/math]. Note that for any finite [math]n\\in\\mathbb N[/math] greater than [math]1[/math], and any non-finite [math]|Y|\\colon n^{|Y|}=2^{|Y|}[/math] (as Cardinal numbers). ",
+            "date": "Answered March 8, 2017",
+            "views": "1",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Edward James",
+                    "user_href": "/profile/Edward-James-27"
+                },
+                {
+                    "user_id": "Kevin Ferrucci",
+                    "user_href": "/profile/Kevin-Ferrucci"
+                },
+                {
+                    "user_id": "Peter Clark",
+                    "user_href": "/profile/Peter-Clark-44"
+                },
+                {
+                    "user_id": "Leo Kovacic",
+                    "user_href": "/profile/Leo-Kovacic"
+                },
+                {
+                    "user_id": "Eric Platt",
+                    "user_href": "/profile/Eric-Platt-9"
+                },
+                {
+                    "user_id": "Arjaita",
+                    "user_href": "/profile/Arjaita"
+                },
+                {
+                    "user_id": "Tim Farage",
+                    "user_href": "/profile/Tim-Farage-1"
+                },
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "Aman Karunakaran",
+                    "user_href": "/profile/Aman-Karunakaran"
+                },
+                {
+                    "user_id": "Danya Rose",
+                    "user_href": "/profile/Danya-Rose"
+                },
+                {
+                    "user_id": "Paul Olaru",
+                    "user_href": "/profile/Paul-Olaru"
+                },
+                {
+                    "user_id": "Jered Wasburn-Moses",
+                    "user_href": "/profile/Jered-Wasburn-Moses"
+                },
+                {
+                    "user_id": "Jorge Sawyer",
+                    "user_href": "/profile/Jorge-Sawyer"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Jared Ronning",
+                    "user_href": "/profile/Jared-Ronning"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Platt",
+                "href": "/profile/Eric-Platt-9"
+            },
+            "answer_text": "The power set  is the set of all subsets of . So given  how is a collection of subsets created? By having each element of  either be in our subset or not be in our subset. It is quite straightforward for finite sets, and the notation easily carries over to countable and uncountable infinite sets. ",
+            "date": "Answered March 9, 2017",
+            "views": "328",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                }
+            ]
+        }
+    ]
+}

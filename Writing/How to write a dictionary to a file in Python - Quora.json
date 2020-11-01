@@ -1,0 +1,88 @@
+{
+    "title": "How to write a dictionary to a file in Python - Quora",
+    "tags": [
+        "Dictionaries"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jim Dennis",
+                "href": "/profile/Jim-Dennis-1"
+            },
+            "answer_text": "If you truly want to write the contents of a Python dictionary to a file in the format you\u2019ve described (as simple lines of text with one key:value pair per line, separating the key from the value with a colon) than that would be as simple as: with open(myfile, 'w') as f:\u00a0    for key, value in a.items():\u00a0        f.write('%s:%s\\n' % (key, value))\u00a0To read that back you could use something like: data = dict()\u00a0with open(myfile) as raw_data:\u00a0    for item if raw_data:\u00a0        if ':' in item:\u00a0            key,value = item.split(':', 1)\u00a0            data[key]=value\u00a0        else:\u00a0            pass # deal with bad lines of text here\u00a0This does only the most minimal error checking. Also this imposes the limit that we cannot have : (colon) characters in any of our keys (strings). This will tolerate colon characters in the values; that\u2019s accomplished by adding the optional numeric argument to the .split() string method in my decoding loop. However I would not recommend this as the best approach for serializing your dictionary into a file. There are far better options depending on how you want to use the data later. The Obvious top choices are: JSONPickledbm (anydbm)YAMLSQLite3JSON is the most portable among these. If you write/serialize your data in JSON format you\u2019ll easily be able to read and update it from any modern programming or scripting language. For Python that code can be as easy as: import json\u00a0with open(mydatafile, 'w') as f:\u00a0    json.dump(a, f)\u00a0\u2026 where a is the name of your dictionary. Reading back the data is as simple: import json\u00a0with open(mydatafile) as f:\u00a0    a = json.load(f)\u00a0In addition to not constraining your keys (allowing them to contain colon characters) this also allows you to have arbitrarily nested collections \u2026 dictionaries of dictionaries or lists, lists of dictionaries or other lists, and so on; and it allows you to have values of types other than just strings. The json module has been part of the standard library since 2.6 and there\u2019s an optional python-cjson 1.1.0 module which is written in C and compiled into a native binary module (.so or \u201cshared object\u201d on Linux and many other forms of Unix, .dynlib on MacOS X or .DLL on MS Windows). That native compiled module can be a couple hundred times faster than the version that\u2019s included with Python which is implemented as interpreted (and byte compiled) Python source. (Update from 5 Dec 2019: there are also multiple options for high performance JSON handling in Python: Choosing a faster JSON library for Python). The Python pickle module has been in the standard libraries since 2.3 (which is, approximately, forever, in Internet years). The portions of the Pickle API for the purposes at hand are nearly identical to those I\u2019ve described for JSON. That\u2019s because the JSON and YAML modules for Python implement their equivalent functions (load, dump, loads and dumps) with the same names and parameter prototypes. So any of these three serialization formats can be used with very little change to your code. Using Pickle you\u2019d have no interoperability with other programming languages. Pickle is only used for serialization to (and deserialization from) other Python programs/processes. The Pickle format might be marginally more efficient than JSON. However the biggest difference, in semantics, would only become apparent if you\u2019re using data other than strings as keys. In Python the keys 1 and \u201c1\u201d are distinct. In JavaScript, Perl, awk, and a number of other programming and scripting languages the keys to a \u201cdictionary\u201d or \u201chash\u201d or \u201chashmap\u201d are evaluated (as \u201cscalars\u201d) before the lookup operations. Thus the number 1 (or 1.0) and the string \u201c1\u201d map to the same entry in those other languages while being distinct items in a Python dictionary JSON was based on the \u201cJavaScript Serial Object Notation\u201d \u2014- essentially a subset of JavaScript\u2019s literal source code syntax) \u2014- so the JSON module implements JavaScript compatible semantics for interoperability. YAML support is not currently included in the Python standard libraries. It\u2019s freely available as a third party module; the most well-known such version is: PyYAML. As noted above, the way you\u2019d use PyYAML is practically identical to the .load() and .dump() method calls we\u2019ve seen for Pickle and JSON. The other two options are for cases where you might want to have low latency random access to the data without necessarily having to load the entire file. DBM files are not simple text. They are stored in an indexed/sorted manner for efficient random access of data base on their keys (strings). The code for using the anydbm module looks like this: import anydbm\u00a0mydbm = anydbm.open(myfilename, 'c') # or 'n' to force a new file\u00a0for k,v in a.items():\u00a0    mydbm[k] = v\u00a0mydbm.close()\u00a0\u2026 and for access the data later: import anydbm\u00a0data = anydbm.open(myfilename, 'w') # or 'r' for read-only access\u00a0\u00a0# Now we access our \"data\" almost like we would with a dictionary:\u00a0# ... \u00a0value = data[somekey]\u00a0# ... use the value or whatever\u00a0data[somekey] = new_value\u00a0# automatically written out to the file on .sync() or .close()\u00a0\u00a0# iterate over all the data:\u00a0for key in data.keys():\u00a0    print('%s: %s' % (key, data[key]))\u00a0Note that the anydbm module doesn\u2019t implement all the methods that you see in Python\u2019s dictionary type. Notably you don\u2019t have .items() and .update() for example. If you select a specific dbm module you may get more extensive features. The anydbm module is there to facilitate a simplest common denominator for your code \u2026 so it can be portable to any Python installation. Various versions and platforms might have any number of dbm modules enabled. The files generated by these various dbm modules are not all compatible with one another. (For Python 2.x there\u2019s a whichdb to help detect which DBM module created a given file and, thus, should be used to open and work with it; in Python3 that function is built into the dbm module). In general the \u201cdbm\u201d handling in Python is useful when you have potentially very large collections of simple key/value data which you might want to efficiently access and update. However, it has a number of limitations with regards to more complex data, access patterns other than through the key, and concurrent (write) access from multiple processes. Thus we also have the sqlite3 module. This is an interface to the SQLite3 library/subsystem. It allows you to access local \u201cflat\u201d files through abstraction layers which behave like an SQL RDBMS (but without the separate SQL server). This includes the ability to have complex tables, foreign and composite keys, triggers, multiple index (including composite indexes) and so on. That\u2019s totally overkill for simple key/value data sets. However, if you were going to be using various complex queries, sorting, and aggregate functions on the data \u2026 then writing it as a simple two column table in SQLite might actually make sense. Here\u2019s what a very simple SQLite approach to your problem might look like: import sqlite3\u00a0db = sqlite3.connect(somefilename)\u00a0cur = db.execute('CREATE TABLE keyvals (key TEXT PRIMARY KEY, value TEXT)')\u00a0db.commit()\u00a0cur.executemany('INSERT INTO keyvals VALUES (?, ?)', a.items())\u00a0# cur.rowcount can be used to confirm the number of inserted items\u00a0db.commit()\u00a0Once that database has been created it could be accessed with code like: import sqlite3\u00a0db = sqlite3.connect(somefilename)\u00a0query = db.execute('SELECT key, value FROM keyvals')\u00a0results = {k:v for k,v in query.fetchall()}\u00a0But, of course, the SELECT statement could be arbitrarily more complex. It could use all of the SQL WHERE and HAVING clauses, could include self JOIN statements and sub-queries, use ORDER BY, LIMIT, and OFFSET, and so on. (In my example I\u2019m loading the entire table as a dictionary; but we could access subsets of this data on demand. Also this example would work even if you defined that table, or altered it, to include additional columns. In other database statements you could fetch additional data. You could also define additional tables and SQLite will store all of them in the same file). In addition the SQLite3 libraries will automatically handle file/record locking and provide transactional support. So, much of those aspects of data/file handling are simply taken care of behind-the-scenes. (That\u2019s particularly handy if you\u2019re working with data which might ever be concurrently accessed by multiple processes, even on the same system or when the file is stored on a networked filesystem such as NFS). Another advantage of SQLite data files (similar to the advantage of JSON) is that the data will be readily accessible from many different languages. It may seem like I\u2019ve gone far afield from your original question. But this serves a purpose. If you only learn the simplest way to write data into a file then you won\u2019t be well prepared for the real world scenarios where you should be asking questions like: How will this data be used later?Will I always want to load the entire data set into memory?How will it be updated and maintained? How frequently?Will it ever be used concurrently? For read-only or with possible write contention?Does this data need to be access by other systems or code written in other languages? What are my interoperability concerns?How can I ensure the data\u2019s integrity? How can I handle any data corruption or formatting issues?I hope this will be helpful, to you and others, well beyond the immediate question. ",
+            "date": "Updated December 5, 2019",
+            "views": "829",
+            "upvotes": " View 54 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chirag Shah",
+                    "user_href": "/profile/Chirag-Shah-201"
+                },
+                {
+                    "user_id": "Raj T",
+                    "user_href": "/profile/Raj-T-110"
+                },
+                {
+                    "user_id": "Yogesh Nandal",
+                    "user_href": "/profile/Yogesh-Nandal-5"
+                },
+                {
+                    "user_id": "\u0409\u0443\u043f\u0447\u0435 \u0411\u043e\u0458\u0447\u0435\u0432\u0441\u043a\u0438",
+                    "user_href": "/profile/\u0409\u0443\u043f\u0447\u0435-\u0411\u043e\u0458\u0447\u0435\u0432\u0441\u043a\u0438"
+                },
+                {
+                    "user_id": "Gautam Agarwal",
+                    "user_href": "/profile/Gautam-Agarwal-41"
+                },
+                {
+                    "user_id": "India Johnson",
+                    "user_href": "/profile/India-Johnson-2"
+                },
+                {
+                    "user_id": "Alket Cecaj",
+                    "user_href": "/profile/Alket-Cecaj"
+                },
+                {
+                    "user_id": "Robert Saramet",
+                    "user_href": "/profile/Robert-Saramet"
+                },
+                {
+                    "user_id": "Rahul Kumar",
+                    "user_href": "/profile/Rahul-Kumar-2073"
+                },
+                {
+                    "user_id": "Kshitija Godse",
+                    "user_href": "/profile/Kshitija-Godse"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "CA Deep Gandhi",
+                "href": "/profile/CA-Deep-Gandhi"
+            },
+            "answer_text": "def write_dic(d): #you can also provide additional parameter for path\u00a0 f=open (\"path\",\"w\")\u00a0 keys=d.keys()\u00a0 for k in keys:\u00a0  f.write(str(k)+str(d[k])) #you can also provide formatting\u00a0  f.write(\"\\n\")\u00a0 f.close()\u00a0There is one another way, by making subclass of dictionary and overriding __str__ class mydic(dict):\u00a0 def __str__(self):\u00a0  k=self.keys()\u00a0  out=\"\"\u00a0  for j in k:\u00a0   out+=str(j)+\" \"+str(self[j])+\"\\n\" #you may provide formatting\u00a0  return out\u00a0\u00a0a=mydic({1:\"one\",2:\"two\"})\u00a0f=open(path,\"w\")\u00a0f.write(str(a))\u00a0f.close()\u00a0There is alternative for syntax in 2nd method a={1:\"one\",2:\"two\"}\u00a0f.open(path,\"w\")\u00a0f.write(str(mydic(a)))\u00a0f.close()\u00a0",
+            "date": "Answered August 24, 2018",
+            "views": "113",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rahul Kumar",
+                    "user_href": "/profile/Rahul-Kumar-2073"
+                },
+                {
+                    "user_id": "Aayush Sah",
+                    "user_href": "/profile/Aayush-Sah-2"
+                },
+                {
+                    "user_id": "Gandhi Sheet",
+                    "user_href": "/profile/Gandhi-Sheet"
+                },
+                {
+                    "user_id": "Nirbhay",
+                    "user_href": "/profile/Nirbhay-20"
+                }
+            ]
+        }
+    ]
+}

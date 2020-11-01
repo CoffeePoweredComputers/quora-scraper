@@ -1,0 +1,25 @@
+{
+    "title": "How to generate a Fibonacci sequence in Python - Quora",
+    "tags": [
+        "Fibonacci Sequence",
+        "Fibonacci Numbers",
+        "Learning Python",
+        "Sums and Series (mathematics)",
+        "Algorithms",
+        "Python (programming language)",
+        "Learning to Program",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Pranesh Pyara Shrestha",
+                "href": "/profile/Pranesh-Pyara-Shrestha"
+            },
+            "answer_text": "from functools import lru_cache\u00a0@lru_cache()\u00a0def fib(n):  \u00a0  if n == 1:    \u00a0    return 1   \u00a0 elif n==2:   \u00a0     return 1   \u00a0 elif n>2:      \u00a0  return fib(n-1)+fib(n-2)\u00a0for n in range(1,1001):  \u00a0 print(n, \":\", fib(n)) \u00a0Using this you can print Fibonacci Sequence :) ",
+            "date": "Answered April 28, 2020",
+            "views": "166",
+            "upvotes": "0"
+        }
+    ]
+}

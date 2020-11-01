@@ -1,0 +1,34 @@
+{
+    "title": "Is the AMS1117 more efficient than the LM317? If so, how does it achieve that given that they are both linear voltage regulators? - Quora",
+    "tags": [
+        "LM317",
+        "Voltage",
+        "Electricity"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ferenc Valenta",
+                "href": "/profile/Ferenc-Valenta"
+            },
+            "answer_text": "\u201cIs the AMS1117 more efficient than the LM317? If so, how does it achieve that given that they are both linear voltage regulators?\u201d The GND / Adj pin current (basically the supply current of the regulator itself) can be different. The effect of this current on the efficiency is usually negligible, however for low-power circuitry, it can be significant. Considering these two parts, the difference is small: both draw around 50 microampers. If the device itself consumes 20 microampers only, it\u2019s probably a good idea to look for a better efficiency regulator to conserve battery charge. If the GND / Adj pin current is small compared to the load, the efficiency of all linear regulators is Uout/Uin, regardless of the part or circuit details. All linear regulators have exactly the same efficiency. ",
+            "date": "Answered April 25, 2019",
+            "views": "539",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bart Klusek",
+                    "user_href": "/profile/Bart-Klusek"
+                },
+                {
+                    "user_id": "Steven J Greenfield",
+                    "user_href": "/profile/Steven-J-Greenfield"
+                },
+                {
+                    "user_id": "Leo Rauschenberger",
+                    "user_href": "/profile/Leo-Rauschenberger"
+                }
+            ]
+        }
+    ]
+}

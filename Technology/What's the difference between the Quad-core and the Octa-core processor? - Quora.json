@@ -1,0 +1,287 @@
+{
+    "title": "What's the difference between the Quad-core and the Octa-core processor? - Quora",
+    "tags": [
+        "English and Other Languages",
+        "Synonym and Antonym Identification",
+        "Comparisons",
+        "Word Definitions, Terminology, and Jargon",
+        "Processors",
+        "Vocabulary of the English Language"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sreekumar TP",
+                "href": "/profile/Sreekumar-TP"
+            },
+            "answer_text": "In simple terms octa core processor has 8 processors available for general purpose computing ,quad core has 4. I say general purpose computing because modern day processor have additional cores for specialized functioning - for example packet processing of network packets or video , audio decoding. It does appear that octa core processors will have twice the computing capability than quad core. Theoretically that is correct., practically not. For example, consider an octa core processor connected to RAM. Now there are 8 cores vying for access to RAM and a memory arbiter decides which core should get request should get access. What it means that even if all 8 cores were performing independent activities and has issues memory access request, all of them will not be granted at the same time. This induces latencies in the operations and hence wastage of CPU time. Now add to this numerous peripherals that perform IO operation and need access to memory. Latencies are further worsened. To cut the story short, more cores are better in terms of computing power, but 8 cores will not provide double the throughput when compared to similar set of 4 cores, unless parallel access to memory is possible. There could also be differences in terminologies used quad core could also mean 4 cores in Big.Little configuration as in ARM processors. Two powerful, Two not so powerful cores. ",
+            "date": "Answered March 20, 2018",
+            "views": "39",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Vasudeo Naik",
+                    "user_href": "/profile/Vasudeo-Naik"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bharathram Chandrasekaran",
+                "href": "/profile/Bharathram-Chandrasekaran"
+            },
+            "answer_text": "Short Answer : Not Always. There are certain tasks where an Octa-Core can out-perform and in some case it will Equal the performance. This mainly depends on the nature of the Task at hand. Please see the 3 tasks below. Why? - Unless the task at hand can utilize all 8 cores, then a Octa core processor cannot out-perform an Quad core processor. TASK - 1 - OCTA Core Can Out-perform Quad Core We have 200 packed boxes and our Task is to move them from place to another. it takes 1 min to move each box. Here if we have one guy moving them we have to make 200 moves. 4 guys we can do it 50 mins and 8 guys moving them can get it done in 25 mins. Consider boxes to be Data and guys moving them as processor Cores. Here if there is no dependency between the boxes(data) all 8 cores can work in parallel. If this is the case, then here an Octa(8) core processor will clearly Out-perform an Quad(4) Core processor. Task 2 - OCTA Core Equals performance of A Quad Core. We have 200 Packed Boxes, with serial numbers 001 to 200. we have to get boxes whose serial number is divisible by 50. Here we have only four such boxes 050,100,150 and 200. Here it is enough if we use 4 guys to move them. Even if we have 8 guys, only four are required to work the other are idle, because the current task don\u2019t require them. Here we are just retriving 4 boxes(data) from a set of 200. Stop here if you were looking for a simple explanation. The below explains How tasks with dependency works.( You have been Warned :-) ). Task 3 - Task with Dependencies. ( Complex, happens in most real life cases & Welcome to the Rebels who continued despite the Warning) We have 200 Packed Boxes, with serial numbers 001 to 200. We are required to move boxes present in another lists. The list will be brought from from 3 others says Mr. X, Mr.Y and Mr.Z. Assume, It takes 2 mins to compare lists in Quad core and 1 second in Octacore. It takes one min to move each box. X, Y and Z arrive with lists as below (a). At first, Mr.X brings 40 serial numbers to move. (b). 9 mins after Mr. X, Mr.Y Brings two sheets each with 20 Serial numbers and says move the first twenty and the next twenty move them only if the same serial is present in list brought by Mr.Z. (c). 10 mins after Mr. Y, later Mr.Z Brings a list with 40 serial numbers and says move them only if they are already in Mr.Y\u2019s list. The Execution - In a Quad Core: We get the list from Mr.X and start to move them. 40 boxes. 4 guys(cores) moving the 40 boxes present in Mr. X\u2019s list, so we need 10 (40/4) mins. Mr. Y comes with list\u2026but all cores/guys are busy moving the boxes for 10 mins. Mr.Y waits for 1 min and hands us the list. (This is called Stalling, A task has to wait because there are no cores/resources to handle them).Time spent so far - 10 mins.We see 40 boxes\u2026but we can move only first 20, so all 4 guys start moving them, finish moving in (20/4 = 5 mins). But, we can\u2019t move next 20 yet because we haven\u2019t got list from Mr.Z. So we have to wait for him. (This is called a Data Dependency).Time spent so far - 20 (10+5+5) mins.Finally Mr.Z comes and gives the list. We spend 2 mins to compare the list, find the boxes to be moved. ( say there are 16 common box numbers). So 4 guys take 4 mins to complete.Time spent on task - 26 (20 + 2 + 4) mins.The Execution - In a Octa Core: We get the list from Mr.X and start to move them. 40 boxes. 8 guys(cores) moving the 40 boxes present in Mr. X\u2019s list, so we need 5 (40/8) mins. 4 mins we are idle, Mr. Y comes with list Hands it.Time spent so far - 9 mins (5 mins moving + 4 mins Idle)We move first 20 in the list in 2.5 mins and wait for the rest 7.5 mins for Mr.Z to arrive.Time spent so far - 19 mins ( 9 + 2.5 + 7.5)Mr.Z gives his list, 1 mins to compare we get 16 boxes. 8 cores moves them in 2 mins(16/8).Time spent so far - 22 mins ( 19 + 1 + 2).Finally , with Some dependencies into play, we see an Marginal improvement in performance between Octa Core and Quad Core processors. ",
+            "date": "Answered February 27, 2017",
+            "views": "94",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mayur Dhamecha",
+                    "user_href": "/profile/Mayur-Dhamecha-1"
+                },
+                {
+                    "user_id": "Nisarg Mehta",
+                    "user_href": "/profile/Nisarg-Mehta-23"
+                },
+                {
+                    "user_id": "S.Sachin Dev",
+                    "user_href": "/profile/S-Sachin-Dev"
+                },
+                {
+                    "user_id": "Rahul Raj",
+                    "user_href": "/profile/Rahul-Raj-789"
+                },
+                {
+                    "user_id": "Saurav Roy",
+                    "user_href": "/profile/Saurav-Roy-97"
+                },
+                {
+                    "user_id": "Mahesh Madiri",
+                    "user_href": "/profile/Mahesh-Madiri"
+                },
+                {
+                    "user_id": "Atulaya Shresth",
+                    "user_href": "/profile/Atulaya-Shresth"
+                },
+                {
+                    "user_id": "Rutuja Kajale",
+                    "user_href": "/profile/Rutuja-Kajale-2"
+                },
+                {
+                    "user_id": "Margaret Carr",
+                    "user_href": "/profile/Margaret-Carr-24"
+                },
+                {
+                    "user_id": "Sathya Rahul",
+                    "user_href": "/profile/Sathya-Rahul-1"
+                },
+                {
+                    "user_id": "Prashanth Hyd",
+                    "user_href": "/profile/Prashanth-Hyd-1"
+                },
+                {
+                    "user_id": "Steven Kumar",
+                    "user_href": "/profile/Steven-Kumar-3"
+                },
+                {
+                    "user_id": "EK P",
+                    "user_href": "/profile/EK-P"
+                },
+                {
+                    "user_id": "Manish Pamnani",
+                    "user_href": "/profile/Manish-Pamnani"
+                },
+                {
+                    "user_id": "Priyansh Jain",
+                    "user_href": "/profile/Priyansh-Jain-171"
+                },
+                {
+                    "user_id": "Kwan Mah",
+                    "user_href": "/profile/Kwan-Mah"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Branko Jovanovic",
+                "href": "/profile/Branko-Jovanovic-5"
+            },
+            "answer_text": "Basically, quad-core CPU has four physical cores, while octa-core has eight physical cores. For the average user, a quad-core CPU in a mobile device or a Pc is sufficient. However, for more demanding users, that use CPU heavy applications such as video editing, image editing, virtual machine\u2026 etc. an octa-core CPU may be a better option as they could finish their work faster. On a side note, for PC gamers a six-core AMD or Intel CPU is plenty enough, though we may expect some games that will be utilized even more than six cores. That is because the Microsoft Xbox One X console is built with an eight-core CPU (octa-core) so the games that are ported from this console to PC may have a use for more physical cores. For example, Forza series on PC can utilize up to 10 logical threads, though not all are optimized for maximal usage. ",
+            "date": "Answered June 8, 2018",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Debojyoti Chakraborty",
+                    "user_href": "/profile/Debojyoti-Chakraborty-42"
+                },
+                {
+                    "user_id": "Dinesh Shukla",
+                    "user_href": "/profile/Dinesh-Shukla-91"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vishwa Patel",
+                "href": "/profile/Vishwa-Patel-32"
+            },
+            "answer_text": "I will try to make it short and easy to understand. TECHNICAL TERMS : It is basically not about the power of the processor but the octa core and quad core represents the numbers of cores in a CPU. Quad Core means it has 4 physical cores , while in the case of octa core it has 8 physical cores in the cpu. NON-TECHNICAL TERMS : Suppose you have a assigned a task! Let\u2019s name it X. Now imagine which is more efficient Four people doing the task X (i.e Is Quad core) Now imagine if the same task is done by Eight People , i.e all the eight people are assigned to the task X.(i.e it is Octa Core) . So this how it was. ",
+            "date": "Answered July 21, 2018",
+            "views": "863",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dan Duncalf",
+                "href": "/profile/Dan-Duncalf"
+            },
+            "answer_text": "The other answers don't really mention mobile processors, where there is some recent marketing confusion over what octa-core means.  There are processors that are designated as big.LITTLE, where they have 8 cores, but not all of them run at the same time.  I'm speaking specifically about the Samsun Exynos Octa chips.   Quote below if from Samsung Exynos Octa 7420 By using the big.LITTLE heterogenous computing architecture, the Samsung Exynos Octa 7420 couples slower, low-power processor cores with relatively faster, high-power processor cores in order to reduce energy consumption. The \"big\" or faster cores are used for computation-intensive tasks such as gaming, whereas the \"little\" or slower cores are used for less intensive tasks. The phone's OS can switch quickly between one core type, and another to improve performance, and battery savings, but at the end of the day, in an outright sprint, a non-switching four core mobile CPU probably outperforms the same price point octa-core mobile CPU if electricity consumption is not factored in to performance. Desktop processors don't do this.  An 8-Core desktop processor is probably still clocked slower then it's 4 Core counterpart, but still generally performs better assuming the software is taking full advantage of the CPU. ",
+            "date": "Answered April 19, 2016",
+            "views": "25",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Subrahmanyam Aharam",
+                    "user_href": "/profile/Subrahmanyam-Aharam"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Janne Miettunen",
+                "href": "/profile/Janne-Miettunen"
+            },
+            "answer_text": "Depends on the software used. For example in video encoding the encoder such as FFmpeg utilizes every core it can thus improving encoding performance. Legacy software or poorly designed/written software may not utilize cores efficiently or uses only one core and thus cannot gain advantage on multiple cores. Please note that if the quad core processor has atleast twice more performance per core than the octa core, there may not be any advantage on that scenario. More cores can improve performance on multi tasking where there's multiple heavy programs stressing one or more cores as one core has limitations on requests it can handle at a time and if stress is divided evenly performance can improve even though octa core processor may be less performing per core, but how well this is utilized depends on the software used and operating system controlling the hardware. ",
+            "date": "Answered July 31, 2015",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alp Berker",
+                    "user_href": "/profile/Alp-Berker"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Girish",
+                "href": "/profile/Girish-38"
+            },
+            "answer_text": "Imagine that you have to distribute 80 books to students by calling out their names. If you take the help of four students to do the work, it takes lesser time for the work. But if you take the help of 8 students, the work will be done even more quickly. In the same way an octa core processor is more efficient than a quad core processor. ",
+            "date": "Answered August 6, 2016",
+            "views": "16",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dinesh Shukla",
+                    "user_href": "/profile/Dinesh-Shukla-91"
+                },
+                {
+                    "user_id": "Amirl Malcomx",
+                    "user_href": "/profile/Amirl-Malcomx"
+                },
+                {
+                    "user_id": "Jay Kumar",
+                    "user_href": "/profile/Jay-Kumar-249"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Victor Eijkhout",
+                "href": "/profile/Victor-Eijkhout"
+            },
+            "answer_text": "The question does not make sense. Increased core counts typically go with progress in microprocessor technology. In other words, your 8-core processor is most likely more recent and therefore more advanced, more efficient, more powerful per core, than your 4-core one. ",
+            "date": "Answered April 12, 2016",
+            "views": "679",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bhupesh",
+                    "user_href": "/profile/Bhupesh-16"
+                },
+                {
+                    "user_id": "Haressh Sambathkumar",
+                    "user_href": "/profile/Haressh-Sambathkumar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Al Klein",
+                "href": "/profile/Al-Klein"
+            },
+            "answer_text": "The faster the CPU operates, the more problems are caused (electrons get \u201cwider\u201d when they travel faster). Eventually the electron can\u2019t get through the channel and the CPU is just a heat sink. Make that 8 separate CPUs, each one operating at 1/9 the speed of the first one, and you\u2019ll get almost the same throughput as the fast single-core one. ",
+            "date": "Answered August 14, 2016",
+            "views": "39",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Debojyoti Chakraborty",
+                    "user_href": "/profile/Debojyoti-Chakraborty-42"
+                },
+                {
+                    "user_id": "Matt Elsen",
+                    "user_href": "/profile/Matt-Elsen-1"
+                },
+                {
+                    "user_id": "Toms Thomas",
+                    "user_href": "/profile/Toms-Thomas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Robert Zack Jaidyn Norris-Karr",
+                "href": "/profile/Robert-Zack-Jaidyn-Norris-Karr"
+            },
+            "answer_text": "Octa-core has eight cores, whereas quad-core has four. The clock-speed\u2014given in \u2018GHz\u2019, or giga-hertz\u2014is the speed at which each core can process instructions. In general, more cores means lower clock-speed. ",
+            "date": "Answered June 8, 2018",
+            "views": "334",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Dinesh Shukla",
+                    "user_href": "/profile/Dinesh-Shukla-91"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kenneth McLaughlin",
+                "href": "/profile/Kenneth-McLaughlin-3"
+            },
+            "answer_text": "It depends on the task. Assuming all else is equal, some tasks will see an improvement while others won't. Single-threaded tasks, tasks that use only one core, couldn't care less how many cores you have, they just care about how the individual cores perform. Primarily single-threaded tasks include gaming and using video editing software. Some single-threaded tasks will actually suffer with more cores because more cores generally means less individual core performance due to the extra voltage needed and the extra heat generated by more cores. In multi-threaded tasks, having more cores is definitely helpful. The most common multi-threaded task is rendering. Because multi-threaded tasks can use all the cores you have, having more cores is definitely helpful. ",
+            "date": "Answered July 31, 2015",
+            "views": "12",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Malik S",
+                "href": "/profile/Malik-S-10"
+            },
+            "answer_text": "Quad core means your system has 4 processor cores making it smoother to handle multitaasking \u2026whereas Octa core the processor core count is 8 so double the perfomance of Quad core..its the simple answer. ",
+            "date": "Answered March 21, 2018",
+            "views": "286",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Monish Palanikumar",
+                "href": "/profile/Monish-Palanikumar"
+            },
+            "answer_text": " ",
+            "date": "Answered March 20, 2018",
+            "views": "865",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aakash Deva Thirukonda",
+                    "user_href": "/profile/Aakash-Deva-Thirukonda"
+                }
+            ]
+        }
+    ]
+}

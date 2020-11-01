@@ -1,0 +1,76 @@
+{
+    "title": "How to prove that 30 divides n^5-n, using induction - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Induction (Electromagnetism)",
+        "Proofs (mathematics)",
+        "Number Theory",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lu\u00eds Sequeira",
+                "href": "/profile/Lu\u00eds-Sequeira-2"
+            },
+            "answer_text": "The induction basis is the statement with n=1, i.e. Induction Basis: [math]30 \\mid (1^5\u20131)[/math] As is usually the case, this is a trivial statement, since any numbers divides zero. Induction Step: Assume as induction hypothesis that [math]30 \\mid (n^5\u2013n)[/math], and show that then also [math]30 \\mid ((n+1)^5\u2013(n+1))[/math] Proof: By the induction hypothesis, [math]n^5\u2013n = 30k[/math] for some integer [math]k[/math] Now, by the binomial theorem: [math] (n+1)^5\u2013(n+1) = n^5 + 5n^4 + 10n^3 + 10n^2 + 5n + 1 - (n+1)[/math] [math]= (n^5-n) + 5n(n^3+2n^2+2n+1) [/math] So all that is need is to show the last term is divisible by 30. We need only show that it is divisible by 2, 3 and 5, since 30 is the least common multiple of these numbers. [math] 5n(n^3+2n^2+2n+1)[/math] is obviously divisible by 5; it is also easily seen to be divisible by 2 (can you see that?). To see that it is divisible by 3, consider each of the cases [math]n \\equiv 0,1,2 [/math] modulo 3. So we get that [math](n+1)^5\u2013(n+1)[/math] is divisible by 30, which concludes the induction step and the proof. ",
+            "date": "Answered October 19, 2018",
+            "views": "336",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "James Gere",
+                    "user_href": "/profile/James-Gere"
+                },
+                {
+                    "user_id": "John Calligy",
+                    "user_href": "/profile/John-Calligy"
+                },
+                {
+                    "user_id": "Abderazak Abdou",
+                    "user_href": "/profile/Abderazak-Abdou"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeanne Petrov-Stojanovic",
+                "href": "/profile/Jeanne-Petrov-Stojanovic"
+            },
+            "answer_text": "I love this exercise ! Lets begin : [math]n^5-n = n(n^4-1)=n(n^2+1)(n^2-1)=n(n^2+1)(n+1)(n-1)[/math] and [math]30=5\\times2\\times3[/math] So the exercise consist in proving that 2, 3 and 5 divide [math]n(n+1)(n-1)(n^2+1)[/math]. In the case of 2 and 3 it is almost straightforward : [math]n(n+1)(n-1)[/math] is the multiplication of three consecutive numbers, therefore 2 and 3 divide [math]n(n+1)(n-1).[/math] Now to prove that 5 divides [math]n^5-n[/math] you have to condsider the five possible cases in order to take into account every integer there is. So we have to perform five different cases : [math]n=5k[/math] is really quick because we have n in the multiplication. The expression is divided by 5 in this case.[math]n=5k-1[/math] : we take the factor [math](n+1)[/math] and obtain a factor [math]5k[/math] in the multiplication : the expression is divided by 5 in this case also.[math]n=5k+1[/math] is the same than the case just before only we have to consider [math](n-1)[/math] to make 5k appear in the multiplication.[math]n=5k\\pm2[/math] : we consider the factor [math](n^2+1)[/math] which becomes [math](5k\\pm2)^2+1=25k^2\\pm20k+4+1=5(5k^2\\pm4k+1)[/math]. So the expression is indeed divided by 5 for [math]n=5k\\pm2.[/math]We proved that 5 divided the expression for any integer and that 2 andd 3 also divide said expression. Therefore, 30 divides [math]n^5-n.[/math] ",
+            "date": "Answered October 19, 2018",
+            "views": "739",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Andrea Ferrando",
+                    "user_href": "/profile/Andrea-Ferrando-3"
+                },
+                {
+                    "user_id": "Elhan Eki Dazdarevic",
+                    "user_href": "/profile/Elhan-Eki-Dazdarevic"
+                },
+                {
+                    "user_id": "John Calligy",
+                    "user_href": "/profile/John-Calligy"
+                },
+                {
+                    "user_id": "Abderazak Abdou",
+                    "user_href": "/profile/Abderazak-Abdou"
+                },
+                {
+                    "user_id": "Juan Garc\u00eda Bernal",
+                    "user_href": "/profile/Juan-Garc\u00eda-Bernal"
+                },
+                {
+                    "user_id": "Eial Teomy",
+                    "user_href": "/profile/Eial-Teomy"
+                },
+                {
+                    "user_id": "Kingsley Godson",
+                    "user_href": "/profile/Kingsley-Godson"
+                }
+            ]
+        }
+    ]
+}

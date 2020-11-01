@@ -1,0 +1,77 @@
+{
+    "title": "What is difference between SAP HANA modeling and SAP BW on HANA? - Quora",
+    "tags": [
+        "Sap Bi/bw",
+        "Sap Hana Modeling",
+        "SAP BW on HANA",
+        "SAP Business Intelligences",
+        "SAP Business Warehouse",
+        "SAP HANA"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ashish Jagani",
+                "href": "/profile/Ashish-Jagani"
+            },
+            "answer_text": "Your question needs a bit of correction. The question should be difference between Native hana and BW on HANA.  HANA modelling is a process of creating views in HANA , just like you create DSO's infobjects on BW. SAP HANA Modelling is designing of your whole Application by linking tables , creating sttribute views, analytical views and Calc views ( graphical and Scripted) on HANA in a way so that data can be consumed by reports.  In SAP BW on HANA its a split of this modelling in BW and on HANA.  So you create a few DSO's and MD on BW side. This gets imported as Attr views and ANalytical views and then you create models of CV which then provides data to reporting layer.  The benefit of BW on HANA is you are crating atleast half baked data which is easy to consume during runtime by reports.  In case of using pure native hana, you prepare the whole data required by reports during runtime itself. This increases the time required by reports to display data. ",
+            "date": "Answered May 8, 2016",
+            "views": "73",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anushi Sharma",
+                    "user_href": "/profile/Anushi-Sharma-16"
+                },
+                {
+                    "user_id": "Tilakkumar M",
+                    "user_href": "/profile/Tilakkumar-M"
+                },
+                {
+                    "user_id": "Paul Roshnee",
+                    "user_href": "/profile/Paul-Roshnee"
+                },
+                {
+                    "user_id": "Siddhesh Kadam",
+                    "user_href": "/profile/Siddhesh-Kadam-12"
+                },
+                {
+                    "user_id": "Sunil Assudani",
+                    "user_href": "/profile/Sunil-Assudani"
+                },
+                {
+                    "user_id": "Pavan Suhaney",
+                    "user_href": "/profile/Pavan-Suhaney"
+                },
+                {
+                    "user_id": "Paruchuri Haritha",
+                    "user_href": "/profile/Paruchuri-Haritha"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nikhil Dhawan",
+                "href": "/profile/Nikhil-Dhawan-9"
+            },
+            "answer_text": "Thanks for A2A.  In very simple terms  In SAP BW underlying Database is Oracle/DB2 etc. Now when we migrate to SAP BW on HANA  it will be replaced by In Memory data Base. (HANA). Here process of ETL almost remains the same, as that of before migration.  The advantages of migrating to SAP BW on HANA are - less development, reduced load time, faster data activation of data in DSOs, faster report runs and no need to cubes( there are some exceptions here).  HANA Modelling is basically creating different views like Attribute, Analytical and calculation views. These views can be created based on ECC tables or it can be pulled from SAP BW tables as well. And this can be used for further reporting.  I would say SAP BW on HANA is mostly used for complex reporting , as it may have too many look ups from transaction data/master data. Whereas SAP HANA modelling is used for simple or medium joins. ",
+            "date": "Answered May 12, 2016",
+            "views": "6",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Divyam Dubey",
+                    "user_href": "/profile/Divyam-Dubey-1"
+                },
+                {
+                    "user_id": "Paruchuri Haritha",
+                    "user_href": "/profile/Paruchuri-Haritha"
+                },
+                {
+                    "user_id": "Chetan Patil",
+                    "user_href": "/profile/Chetan-Patil-268"
+                }
+            ]
+        }
+    ]
+}

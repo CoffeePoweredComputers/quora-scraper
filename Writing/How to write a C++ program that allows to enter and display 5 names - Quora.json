@@ -1,0 +1,70 @@
+{
+    "title": "How to write a C++ program that allows to enter and display 5 names - Quora",
+    "tags": [
+        "Learning C++"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joe Zbiciak",
+                "href": "/profile/Joe-Zbiciak"
+            },
+            "answer_text": "This will require you to enter 5 names, and once you do, it will display 5 names. #include <iostream>\u00a0#include <string>\u00a0\u00a0int main() {\u00a0    std::string s;\u00a0\u00a0    while (true) {\u00a0        std::cout << \"Enter 5 names: \";\u00a0        std::getline(std::cin, s);\u00a0        if (s == \"5 names\") {\u00a0            break;\u00a0        }\u00a0        std::cout << \"That is not 5 names.  Please try again.\\n\";\u00a0    }\u00a0\u00a0    std::cout << \"Congratulations!  Now displaying: \" << s << '\\n';\u00a0    return 0;\u00a0}\u00a0That\u2019s how I write such a C++ program.* I suggest the way you write such a C++ program should look a bit different than that.  * Technically, that\u2019s the result of me writing the C++ program. For the actual how, I used vim inside an xterm window, and a keyboard to type it in. I then copied and pasted it here after testing it. You do test your code, right?  P.S. If you think this answer is overly literal, just wait until you\u2019ve dealt with the computer one-on-one. It has no sense of humor, and takes your input extremely literally. ",
+            "date": "Answered November 5, 2019",
+            "views": "56",
+            "upvotes": " View 129 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "V\u00e1clav Bla\u017eek",
+                    "user_href": "/profile/V\u00e1clav-Bla\u017eek"
+                },
+                {
+                    "user_id": "Umid Yusupov",
+                    "user_href": "/profile/Umid-Yusupov"
+                },
+                {
+                    "user_id": "Jakob Jungherr",
+                    "user_href": "/profile/Jakob-Jungherr"
+                },
+                {
+                    "user_id": "Amir Reza Riahi",
+                    "user_href": "/profile/Amir-Reza-Riahi"
+                },
+                {
+                    "user_id": "Sanskar Agrawal",
+                    "user_href": "/profile/Sanskar-Agrawal-9"
+                },
+                {
+                    "user_id": "Tom Hansen",
+                    "user_href": "/profile/Tom-Hansen-53"
+                },
+                {
+                    "user_id": "Rohen Giralt",
+                    "user_href": "/profile/Rohen-Giralt"
+                },
+                {
+                    "user_id": "Andy Wong",
+                    "user_href": "/profile/Andy-Wong-81"
+                },
+                {
+                    "user_id": "Niels Wouda",
+                    "user_href": "/profile/Niels-Wouda"
+                },
+                {
+                    "user_id": "Prasurjya Kashyap",
+                    "user_href": "/profile/Prasurjya-Kashyap-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Wolfgang Killmann",
+                "href": "/profile/Wolfgang-Killmann"
+            },
+            "answer_text": "Visit the C++ Tutorial at w3schools ",
+            "date": "Answered November 5, 2019",
+            "views": "78",
+            "upvotes": "0"
+        }
+    ]
+}

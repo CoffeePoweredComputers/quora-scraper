@@ -1,0 +1,73 @@
+{
+    "title": "If a>0 and a|b, then how do you prove or disprove that (a,b) = a? - Quora",
+    "tags": [
+        "Proofs (mathematics)",
+        "Number Theory",
+        "Numbers (mathematics)",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Moore",
+                "href": "/profile/Terry-Moore-32"
+            },
+            "answer_text": "If a>0 and a|b, then how do you prove or disprove that (a,b) = a? To disprove something you just need a counterexample. To prove this you can use Euclid\u2019s algorithm. Euclid showed that all divisors or [math]a[/math] and [math]b[/math] divide the remainder when [math]b[/math] is divided by [math]a[/math]. And conversely, all divisor of [math]a[/math] and the remainder divide [math]b[/math]. So you gain or lose no common divisors when you replace the greater of [math]a[/math] and [math]b[/math] by the remainder from dividing the greater by the smaller. So the process preserves the GCD. In your case you have already reached the last step of Euclid\u2019s algorithm. The remainder is zero and the GCD must be the GCD of [math]a[/math] and zero. As every number divides zero, the GCD must be [math]a[/math]. Note Euclid had never heard of zero, he had to finish the argument differently. ",
+            "date": "Answered February 23, 2020",
+            "views": "116",
+            "upvotes": " Answer requested by Nadiya Rahma",
+            "upvoters": [
+                {
+                    "user_id": "Ishan Jain",
+                    "user_href": "/profile/Ishan-Jain-43"
+                },
+                {
+                    "user_id": "Achintya Eeshan",
+                    "user_href": "/profile/Achintya-Eeshan"
+                },
+                {
+                    "user_id": "Mayank Jha",
+                    "user_href": "/profile/Mayank-Jha-29"
+                },
+                {
+                    "user_id": "Abhas Kumar Sinha",
+                    "user_href": "/profile/Abhas-Kumar-Sinha-2"
+                },
+                {
+                    "user_id": "Pratik Shastri",
+                    "user_href": "/profile/Pratik-Shastri"
+                },
+                {
+                    "user_id": "Mayank Magoo",
+                    "user_href": "/profile/Mayank-Magoo"
+                },
+                {
+                    "user_id": "Ujjayanta Bhaumik",
+                    "user_href": "/profile/Ujjayanta-Bhaumik"
+                },
+                {
+                    "user_id": "Aditya Garg",
+                    "user_href": "/profile/Aditya-Garg-38"
+                },
+                {
+                    "user_id": "Nirmalya Chakraborty | \u09a8\u09bf\u09b0\u09cd\u09ae\u09be\u09b2\u09cd\u09af \u099a\u0995\u09cd\u09b0\u09ac\u09b0\u09cd\u09a4\u09c0",
+                    "user_href": "/profile/Nirmalya-Chakraborty-\u09a8\u09bf\u09b0\u09cd\u09ae\u09be\u09b2\u09cd\u09af-\u099a\u0995\u09cd\u09b0\u09ac\u09b0\u09cd\u09a4\u09c0"
+                },
+                {
+                    "user_id": "Saptarshi Dey",
+                    "user_href": "/profile/Saptarshi-Dey-26"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Amitabha Tripathi",
+                "href": "/profile/Amitabha-Tripathi"
+            },
+            "answer_text": "For [math]n \\in \\mathbb Z[/math], let [math]{\\mathcal D}(n)=\\{d \\in \\mathbb Z: d \\mid n\\}[/math] denote the set of all divisors of [math]n[/math]. Note that [math]{\\mathcal D}(n)[/math] is a finite set, except when [math]n=0[/math]. For [math]a,b \\in \\mathbb Z[/math], [math]a,b[/math] not both zero, [math]{\\mathcal D}(a)\\,\\cap\\,{\\mathcal D}(b)[/math] is a finite set, and [math]\\gcd(a,b) = \\max \\left({\\mathcal D}(a)\\,\\cap\\,{\\mathcal D}(b) \\right)[/math]. Since [math]a \\in {\\mathcal D}(a)\\,\\cap\\,{\\mathcal D}(b)[/math] and since no [math]n>a[/math] can belong to [math]{\\mathcal D}(a)[/math], and hence also not to [math]{\\mathcal D}(a)\\,\\cap\\,{\\mathcal D}(b)[/math], we must have [math]\\gcd(a,b) = \\max \\left({\\mathcal D}(a)\\,\\cap\\,{\\mathcal D}(b) \\right) = a. \\blacksquare[/math] ",
+            "date": "Answered February 26, 2020",
+            "views": "324",
+            "upvotes": " View 11 Upvoters"
+        }
+    ]
+}

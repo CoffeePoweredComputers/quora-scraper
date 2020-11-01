@@ -1,0 +1,49 @@
+{
+    "title": "Is this a valid proof that 0 is not equal to 1? - Quora",
+    "tags": [
+        "Division by Zero",
+        "Zero (number)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Scott Brickner",
+                "href": "/profile/Scott-Brickner"
+            },
+            "answer_text": "No. If you don\u2019t know that [math]0 \\neq 1[/math], then you don\u2019t \u201cknow enough\u201d about numbers to talk about multiplication. When you\u2019re doing foundational-level proofs like this, you have to state what your axioms are. Using something like [math]a = b[/math] implies [math]ac = bc[/math] is only valid if it\u2019s either one of your axioms or it\u2019s a theorem derived from your axioms. Elementary proofs about numbers usually start with Peano\u2019s axioms.[1] In your case, the number 1 is defined to be [math]S(0)[/math] (where the successor function, [math]S[/math], and the natural number [math]0[/math] are defined in the axioms). The eighth axiom states that for every natural number [math]n[/math], [math]S(n)\\neq 0[/math], from which you can immediately conclude that [math]S(0)\\neq 0[/math]. The claim the [math]0\\neq 1[/math] is so foundational that any proof is either going to be using axioms that make it almost trivial (as with Peano\u2019s axioms), or else you\u2019ll have to spell out what it is you mean by zero and one\u2014you\u2019d need what\u2019s called a \u201cmodel\u201d of your numbers. Footnotes[1] Peano axioms - Wikipedia",
+            "date": "Answered September 21, 2018",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "Martin Epstein",
+                    "user_href": "/profile/Martin-Epstein-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Heitzman",
+                "href": "/profile/Alex-Heitzman-1"
+            },
+            "answer_text": "Hm\u2026 I would say it is a bit weird. I think it\u2019s just as obvious that 0 doesn't equal 1 as it is that not all numbers are equal. In informal mathematics, 0 =/= 1 is an obvious statement that doesn't require proof. In (more) formal mathematic, you have to deduce that 0 =/= 1 from the axioms that define the real numbers, or make it an axiom itself. My favorite system has an axiom that for all real numbers x, exactly one of the following is true: x is positive, -x is positive, x = 0. It also states that the positive numbers is a NON-EMPTY subset of real numbers closed under addition and multiplication. So if 0 = 1, then (as you proved) all real numbers equal 0, so there are no positive real numbers. So if you can prove that not all numbers are equal, then it's a valid proof. ",
+            "date": "Answered July 18, 2016",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Paul Oroborust",
+                    "user_href": "/profile/Paul-Oroborust"
+                },
+                {
+                    "user_id": "Sanjeev London",
+                    "user_href": "/profile/Sanjeev-London"
+                }
+            ]
+        }
+    ]
+}

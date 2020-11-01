@@ -1,0 +1,36 @@
+{
+    "title": "What is the purpose of Intel Rapid Storage Technology and Optane? - Quora",
+    "tags": [
+        "Intel Optane Memory",
+        "Intel Optane",
+        "Intel Processors",
+        "Solid-State Drives (SSD)",
+        "Intel (company)",
+        "Hard Disk Drives (HDD)",
+        "Data Storage",
+        "Computer Science",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Frank Ober",
+                "href": "/profile/Frank-Ober-2"
+            },
+            "answer_text": "The purpose in the extensions to RST that enabled Optane is to allow the driver to be an accelerator or namely a block cache for those files that are hot in the Operating System, including the paging file. You can see in the documentation that you can even \u201cpin\u201d application files and folders which would allow for faster loading only from the Optane. The idea is slower TLC or QLC NAND is your capacity storage, and very fast but small Optane can be used for paging and your most critical files. There is a line of drives labelled H drives, H10, soon H20, that combine an Optane-based SSD drive with a NAND-based SSD onto one M.2 form factor. It is really two drives that operate as one. Here the extensions of RST for Optane is required to allow that magic and this sells as a complete OEM solution, from Dell and others. ",
+            "date": "Answered August 27, 2020",
+            "views": "158",
+            "upvotes": " Answer requested by Alejandro Calle"
+        },
+        {
+            "author_info": {
+                "name": "David Vanderschel",
+                "href": "/profile/David-Vanderschel"
+            },
+            "answer_text": "A2A: Making a large mass memory system (typically implemented using large disk drives) perform much better by caching frequently used files and data in high-speed memory devices like SSDs or Optane memory. This is done in a way that is automatic and the regular OS does not have to worry about it. Their system claims to be particularly smart about how it decides what should be cached. It is analogous to the management of the caches for RAM that are implemented in processors chips. ",
+            "date": "Answered August 28, 2020",
+            "views": "169",
+            "upvotes": " Answer requested by Alejandro Calle"
+        }
+    ]
+}

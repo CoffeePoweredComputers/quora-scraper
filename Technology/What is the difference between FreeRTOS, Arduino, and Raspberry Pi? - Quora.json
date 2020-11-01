@@ -1,0 +1,62 @@
+{
+    "title": "What is the difference between FreeRTOS, Arduino, and Raspberry Pi? - Quora",
+    "tags": [
+        "FreeRTOS",
+        "Raspberry Pi",
+        "Arduino (company)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Alan Colby",
+                "href": "/profile/Alan-Colby-1"
+            },
+            "answer_text": "\u201cWhat is the difference between FreeRTOS, Ardunio, and Raspberry PI\u201d. Ardunio and Raspberry PIs are single board computers which are used by hobbiests use to control stuff. FreeRTOS is a Real Time Operating System library which provides professional embedded systems with the ability to multitask. Let\u2019s start with the easy one. The Raspberry Pi is a single board computer which despite being smaller than a pocket calculator, can be used as a desktop computer. It typically runs a special form of Linux OS called Raspian, but that does not matter. Technically, the Raspberry PI (RPI) is the circuit board, not the software which runs on it. With that said, there is lots of software and many programming languages written to allow newbies and hobbiests to easily write programs and control hardware on the RPI. It is so cheap and powerful that even professional hardware companies are using Raspberry PIs. Also, because it\u2019s a shrunken PC, it takes too much power to be battery operated, and must be shutdown and powered off formally the way your PC needs to be. Next we have Ardunio. Arduino was invented by an educator who wanted his students to learn how to program Embedded Systems for art projects. Embedded Systems are small chips which are mounted to a circuit board which are used to run things ranging from your microwave to an F16 fighter jet. Normally small embedded systems are very difficult to develop with. The biggest issue is that controlling all of the hardware requires that you write low level drivers from scratch. Despite the fact that zillions of companies may use a chip, each one needs to individually write the low level code themselves. You spend weeks dealing with drivers before you ever get to write your program. It\u2019s a huge task and requires a lot of experience and specialized knowledge. What the founder of Arduino did was write all of those drivers for you. He made a code base which had everything working, and just needs you to write a small program called a \u201csketch\u201d which calls all of the code they made for you. There is a wide variety of hardware designed for use with this system, including boards call \u201cshields\u201d where are designed to plug into an arduino board to give allow you to customize the hardware. They even give you simple software that runs on your PC and let\u2019s you type in programs and download it to your Ardunio board. The issue though, is that everything is optimized for simplicity. If you want to use it for professional applications it ends up being too slow and the tools lack basic features like debugging. With that said, if you want to control a simple mechanism, it\u2019s quick to get something going. I\u2019ve seen people create a working program in less than an hour. Remember the guys I mentioned before who write all their own drivers from scratch ? Well FreeRTOS is for that type of system. When you write an embedded program, one of the issues you deal with is how to get it to respond quickly to an event when you have many different types of events to respond to. When writing stuff from scratch, you waste a lot of effort trying to implement a tasking scheme to prevent the code from getting bogged down doing one thing, when another time critical event needs to be handled. Well, FreeRTOS (as well as other RTOSs ) provides a library which you can use to implement various forms of multi tasking. Unlike the PI or Ardunio, it does not provide you with hardware drivers or anything else to get your system up and running. You still have to code that from scratch. Also you really have to know what you are doing or you with crash your system faster than a drunk in a Ferrari. To that extent, if Arduino and RPI are apples and oranges, freeRTOS is a bag of seeds and a shovel. ",
+            "date": "Answered May 22, 2018",
+            "views": "28",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rinin Farina",
+                    "user_href": "/profile/Rinin-Farina"
+                },
+                {
+                    "user_id": "Steven Hsieh",
+                    "user_href": "/profile/Steven-Hsieh-19"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Raghav-422"
+                },
+                {
+                    "user_id": "Pablo Aymerich",
+                    "user_href": "/profile/Pablo-Aymerich"
+                },
+                {
+                    "user_id": "R Gaur",
+                    "user_href": "/profile/R-Gaur-2"
+                },
+                {
+                    "user_id": "Toyyib Olalekan",
+                    "user_href": "/profile/Toyyib-Olalekan"
+                },
+                {
+                    "user_id": "Fall Fall",
+                    "user_href": "/profile/Fall-Fall-1"
+                },
+                {
+                    "user_id": "Anastasios Lekkas",
+                    "user_href": "/profile/Anastasios-Lekkas"
+                },
+                {
+                    "user_id": "Kousik Bag",
+                    "user_href": "/profile/Kousik-Bag-2"
+                },
+                {
+                    "user_id": "Mercy Daniel-Aguebor",
+                    "user_href": "/profile/Mercy-Daniel-Aguebor-1"
+                }
+            ]
+        }
+    ]
+}

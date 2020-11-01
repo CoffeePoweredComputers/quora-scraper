@@ -1,0 +1,37 @@
+{
+    "title": "What are the IPv4 address classes? - Quora",
+    "tags": [
+        "IPv4",
+        "IPv6"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Hari Kishan",
+                "href": "/profile/Hari-Kishan-94"
+            },
+            "answer_text": "Internet Protocol hierarchy contains several classes of IP Addresses to be used efficiently in various situations as per the requirement of hosts per network. Broadly, the IPv4 Addressing system is divided into five classes of IP Addresses. All the five classes are identified by the first octet of IP Address.  Internet Corporation for Assigned Names and Numbers is responsible for assigning IP addresses. The first octet referred here is the left most of all. The octets numbered as follows depicting dotted decimal notation of IP Address:  The number of networks and the number of hosts per class can be derived by this formula:  When calculating hosts' IP addresses, 2 IP addresses are decreased because they cannot be assigned to hosts, i.e. the first IP of a network is network number and the last IP is reserved for Broadcast IP. Class A Address The first bit of the first octet is always set to 0 (zero). Thus the first octet ranges from 1 \u2013 127, i.e.  Class A addresses only include IP starting from 1.x.x.x to 126.x.x.x only. The IP range 127.x.x.x is reserved for loopback IP addresses. The default subnet mask for Class A IP address is 255.0.0.0 which implies that Class A addressing can have 126 networks (2 7 -2) and 16777214 hosts (2 24 -2). Class A IP address format is thus:0NNNNNNN.HHHHHHHH.HHHHHHHH.HHHHHHHH Class B Address An IP address which belongs to class B has the first two bits in the first octet set to 10, i.e.  Class B IP Addresses range from 128.0.x.x to 191.255.x.x. The default subnet mask for Class B is 255.255.x.x. Class B has 16384 (2 14 ) Network addresses and 65534 (2 16 -2) Host addresses. Class B IP address format is:10NNNNNN.NNNNNNNN.HHHHHHHH.HHHHHHHH Class C Address The first octet of Class C IP address has its first 3 bits set to 110, that is:  Class C IP addresses range from 192.0.0.x to 223.255.255.x. The default subnet mask for Class C is 255.255.255.x. Class C gives 2097152 (2 21 ) Network addresses and 254 (2 8 -2) Host addresses. Class C IP address format is:110NNNNN.NNNNNNNN.NNNNNNNN.HHHHHHHH Class D Address Very first four bits of the first octet in Class D IP addresses are set to 1110, giving a range of:  Class D has IP address rage from 224.0.0.0 to 239.255.255.255. Class D is reserved for Multicasting. In multicasting data is not destined for a particular host, that is why there is no need to extract host address from the IP address, and Class D does not have any subnet mask. Class E Address This IP Class is reserved for experimental purposes only for R&D or Study. IP addresses in this class ranges from 240.0.0.0 to 255.255.255.254. Like Class D, this class too is not equipped with any subnet mask. Source : IPv4 Address Classes ",
+            "date": "Answered July 1, 2016",
+            "views": "15",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Paran Saran",
+                    "user_href": "/profile/Paran-Saran"
+                },
+                {
+                    "user_id": "Uday Kumar",
+                    "user_href": "/profile/Uday-Kumar-428"
+                },
+                {
+                    "user_id": "Deepak Prabhu",
+                    "user_href": "/profile/Deepak-Prabhu-17"
+                },
+                {
+                    "user_id": "Janardhan Rt",
+                    "user_href": "/profile/Janardhan-Rt"
+                }
+            ]
+        }
+    ]
+}

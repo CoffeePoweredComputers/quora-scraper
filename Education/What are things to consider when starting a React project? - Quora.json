@@ -1,0 +1,40 @@
+{
+    "title": "What are things to consider when starting a React project? - Quora",
+    "tags": [
+        "Computer Programming Projects"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Zaid Alzyod",
+                "href": "/profile/Zaid-Alzyod"
+            },
+            "answer_text": "Before starting, you must have npm installed on you computer, which comes bundled with Node.js, you can install it from here. Folder Structure:  Folder structure for the React app You can create the above directories with these commands. mkdir react-boilerplate\u00a0cd react-boilerplate\u00a0mkdir -p src/components src/styles\u00a0Initialize the Project: All projects that uses node package manager(npm) must be initialized. To initialize a project enter below command in a terminal. This will create a package.json file. npm init\u00a0You\u2019ll be asked few questions related to the project, you can skip them by pressing enter, if you want to skip all the questions, add a -y flag. npm init -y\u00a0Now your package.json file will look something like this. {\u00a0\"name\": \"react-boilerplate\",\u00a0\"version\": \"1.0.0\",\u00a0\"description\": \"\",\u00a0\"main\": \"index.js\",\u00a0\"scripts\": {\u00a0  \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\u00a0},\u00a0\"keywords\": [],\u00a0\"author\": \"\",\u00a0\"license\": \"ISC\"\u00a0}\u00a0Installing Webpack: Webpack is a module bundler that lets us bundle our project files into a single file for production. So let\u2019s add webpack to our project. npm install webpack webpack-cli --save-dev\u00a0The above command will add webpack and webpack-cli as a dev dependency to our project.We installed webpack-cli so that we can use webpack in the command line. Installing React: Install react and react-dom as a dependency. npm install react react-dom --save\u00a0Installing Babel: In order for React to work, we need to install Babel alongside with it. We need Babel to transpile ES6 and JSX to ES5. Install babel-core, babel-loader, babel-preset-env, babel-preset-react as a dev dependency. npm install babel-core babel-loader babel-preset-env babel-preset-react --save-dev\u00a0babel-core: Transforms ES6 code to ES5babel-loader: Webpack helper to transpile code, given the the preset.babel-preset-env: Preset which helps babel to convert ES6, ES7 and ES8 code to ES5.babel-preset-react: Preset which Transforms JSX to JavaScript.Index.js : Create an index.js file inside root of the /src folder, for now add the following line code inside it.This file will be the entry point to our app. console.log(\"hello\");\u00a0",
+            "date": "Answered August 5, 2018",
+            "views": "371",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Saqalain Qassimali",
+                    "user_href": "/profile/Saqalain-Qassimali-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shelly Kapoor",
+                "href": "/profile/Shelly-Kapoor-3"
+            },
+            "answer_text": "First most thing is you have to Install react app Here are the steps - 1)Go to Google 2)search node js 3)Download latest version of node js version (11.X) 4)After download then install the node js on your PC or laptop by clicking next make sure npm packages are installed by installing setup 5)Go to cmd and type npm install -g yarn.Here is video  6)This will install necessary npm packages including react, react-dom,babel,node modules,dev server 7)You will get message that 63 or more packages are installed 8)Now change directory using cd desktop 9)Type create-react-app myapp(name of your project) 10)Type yarn start. This will open react app in your browser using dev server Now you can start creating your react app by adding dependicies according to your need ex-bootstrap, material-ui ",
+            "date": "Answered March 22, 2019",
+            "views": "423",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Narayana Nadiminti",
+                    "user_href": "/profile/Narayana-Nadiminti-1"
+                }
+            ]
+        }
+    ]
+}

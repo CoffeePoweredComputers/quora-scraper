@@ -1,0 +1,34 @@
+{
+    "title": "Why does a computer stop transmitting data over the network? - Quora",
+    "tags": [
+        "Data Transfer",
+        "Information Technology",
+        "Data",
+        "Wi-Fi",
+        "Data Science",
+        "Computer Networking",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christopher Hall",
+                "href": "/profile/Christopher-Hall-4"
+            },
+            "answer_text": "I one case I think the Ethernet chip crashed as all other cards were fine. As far as the OS was concerned it look OK, but nothing was on the wire, very strange. However I think modern Ethernet chips are really running some form of downloaded microcode so it may be possible that it became corrupted or there could be some bug in it. Another alternative is that the software driver had some problem, though as all other cards are the same it could only be some data corruption. Also could consider the possibility of missing interrupt, though I though most drivers also poll to account for this possibility. This combined interrupt/polling was even used on early PC printer ports as many printers did not implement the protocol correctly. ",
+            "date": "Answered August 8, 2019",
+            "views": "16",
+            "upvotes": " Answer requested by Oscar Oliver"
+        },
+        {
+            "author_info": {
+                "name": "Christian Hering",
+                "href": "/profile/Christian-Hering-5"
+            },
+            "answer_text": "Normally because it had nothing to say. If you're running Linux, for example, and you don't Install programs that generate background traffic, the only traffic you're likely to see is a little ARP traffic. Other than that, computers are pretty quiet\u2026 until you start talking about web browsers, Windows telemetry services, background updates/processes, etc. But that's a whole other issue. ",
+            "date": "Answered August 2, 2019",
+            "views": "20",
+            "upvotes": " Answer requested by Oscar Oliver"
+        }
+    ]
+}

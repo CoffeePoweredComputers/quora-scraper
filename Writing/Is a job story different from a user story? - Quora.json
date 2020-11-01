@@ -1,0 +1,89 @@
+{
+    "title": "Is a job story different from a user story? - Quora",
+    "tags": [
+        "User Stories",
+        "Agile Software Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jeffrey Bernard Yozwiak",
+                "href": "/profile/Jeffrey-Bernard-Yozwiak"
+            },
+            "answer_text": "The main risk when writing a feature story (be it a user story or jobs story) is that you'll prescribe a solution rather than clearly articulate a problem. As a PM, it's your job to get to heart of what a customer's problem really is. Often you may recommend ways to solve the customer's problem... But ultimately it's up to design and engineering to determine how best to meet the customer's needs. If a new feature is required \u2014 and sometimes it may not be \u2014 then design and engineering should determine the specifics.  Proponents of user stories and job stories will argue that their preferred format is better at not prescribing solutions than the other. I'm not going to jump into the debate here; suffice it to say that I've heard good arguments for both sides. I also don't think it's a stretch to say that the differences in wording \u2014 which to an outside observer can seem like splitting hairs \u2014 do actually cue the team to think differently about the product and the user. Here are the main arguments for each side (if I may be allowed to summarize):  Proponents of user stories believe that by putting the user front and center, you cue the product team to develop empathy for the user and that leads to a better solution. User stories avoid prescribing what the solution is, but they also rely on user personas grounded in actual customer research. If you've fudged your user personas, then user stories will fail.Proponents of jobs stories, on the other hand, argue that by focusing on the user's motivations and expected outcomes, you're able to develop a solution which more directly addresses the customer's needs within Clayton Christensen's \"jobs to be done\" framework (Christensen Institute). They also argue that user personas call to mind biases and assumptions since personas are inherently a simplification.Kyle Fiedler's team at thoughtbot switched from user stories to jobs stories a few months ago and he articulates why in a very persuasive, reasoned manner. From the blog post Converting To Jobs Stories:  Jobs stories slightly revise the format to be less prescriptive of a user action, and thereby give more meaningful information for the designer and developer to build for the user\u2019s expected outcome. . . . There is a very slight but meaningful difference between the two. By removing \u201cAs a __ \u201d from the user story, we remove any sort of biases that the team might have for that persona. Personas create assumptions about the users that might not be validated. In my experience, user stories have a tendency to be easily manipulated to proposing a solution rather than explaining an expected outcome for that particular user. In particular, I\u2019ve found people leave off the \u201cso that __\u201d in a user story with the feeling that it is optional. This leaves off the benefit that the user would get from adding new functionality. . . . Because the differences in wording are negligible, it was an easy transition to shift from writing user stories to jobs stories. During this process, I noticed that the entire team had more empathy for the user. By placing the user\u2019s situation upfront, our team had a better understanding how it felt to be in the user\u2019s shoes, as opposed to thinking about a particular persona. This allowed for more discussion of the expected outcome and how to best go about achieving said outcome for the user. So the difference is more than just \"don't suck.\" Regardless of which feature story format you use, the intent is to communicate the actual user's problem (rather than a solution) and avoid biases/assumptions. Proponents of user stories over job stories \u2014 and vice versa, as is often now the case \u2014 believe that the wording of their preferred format is better for this than the other. ",
+            "date": "Answered March 29, 2015",
+            "views": "3",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Amt-29"
+                },
+                {
+                    "user_id": "Jacques Steward",
+                    "user_href": "/profile/Jacques-Steward"
+                },
+                {
+                    "user_id": "Jonathan Thomas",
+                    "user_href": "/profile/Jonathan-Thomas-2"
+                },
+                {
+                    "user_id": "Fr\u00e9d\u00e9ric Gu\u00e9rin",
+                    "user_href": "/profile/Fr\u00e9d\u00e9ric-Gu\u00e9rin-1"
+                },
+                {
+                    "user_id": "Nicole Pay",
+                    "user_href": "/profile/Nicole-Pay"
+                },
+                {
+                    "user_id": "Jose Gonzalez",
+                    "user_href": "/profile/Jose-Gonzalez-119"
+                },
+                {
+                    "user_id": "Fredrik Arnell",
+                    "user_href": "/profile/Fredrik-Arnell-1"
+                },
+                {
+                    "user_id": "Udit Sajjanhar",
+                    "user_href": "/profile/Udit-Sajjanhar"
+                },
+                {
+                    "user_id": "Lorenzo Peroni",
+                    "user_href": "/profile/Lorenzo-Peroni"
+                },
+                {
+                    "user_id": "Andrew Liang",
+                    "user_href": "/profile/Andrew-Liang-10"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Warren Wise",
+                "href": "/profile/Warren-Wise"
+            },
+            "answer_text": "User stories originated in Extreme Programming (XP). They started as part of an XP practice called the Planning Game. In the Planning Game, they are used for planning releases, and to determine the content of an iteration. XP, and agile software development methods in general, would have a team solidify its understanding of customer requests through engaging, detailed conversations, rather than with detailed written artifacts. In XP, once the conversation has reached the point where both the customer and the developers can see they are on the same page, their mutual understanding is captured as customer acceptance tests. These tests are meant to represent expectations of system behavior, rather than assumptions. There could still be hidden assumptions about the system's behavior, but part of the point of getting an increment of valuable software into the customer's hands is to expose those remaining assumptions, if any. With agile methods, I've discovered that delivering a finished feature is actually part of the requirements elicitation process. Small increments of functionality can serve the same purpose a prototype does in plan-driven methods. So, XP prescribes an artifact (usually, an index card) that is a conversation placeholder, an actual conversation, and then the documentation of the resulting understanding from the conversation as acceptance tests. In XP, it's not a story until all three of these prescribed activities is completed. In Wikipedia's entry on the Exploration phase of XP's release planning, it says the business comes to the meeting with a problem, and that the development team tries to define the problem and get the requirements, and that based on those requirements, the customer then writes the story (in some cases, I imagine the customer would instead be \"completing\" the story with tests, as they'll probably come with some cards in hand, and they're having conversations about them in the meeting). If teams are creating user stories in the XP sense, job stories seem like over-engineered user stories; however, if they're helping teams have richer and more meaningful conversations, I'm not going to argue with anyone about it. I like to remind myself that user stories were designed to be an artifact that could easily be thrown away because the cost of creating them is supposed to be very low (I think XP teams use an index card to encourage this perspective). I like it as a guide for ensuring that I and my team continue to value \"individuals and interactions\" over \"processes and tools\". I've observed that I can easily lose site of that. ",
+            "date": "Answered April 18, 2015",
+            "views": "14",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nathan Elalouf",
+                    "user_href": "/profile/Nathan-Elalouf"
+                },
+                {
+                    "user_id": "Fr\u00e9d\u00e9ric Gu\u00e9rin",
+                    "user_href": "/profile/Fr\u00e9d\u00e9ric-Gu\u00e9rin-1"
+                },
+                {
+                    "user_id": "Jose Gonzalez",
+                    "user_href": "/profile/Jose-Gonzalez-119"
+                },
+                {
+                    "user_id": "Nhat Lan",
+                    "user_href": "/profile/Nhat-Lan"
+                }
+            ]
+        }
+    ]
+}

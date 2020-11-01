@@ -1,0 +1,88 @@
+{
+    "title": "What happens when the probability exceeds 100%? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robby Goetschalckx",
+                "href": "/profile/Robby-Goetschalckx"
+            },
+            "answer_text": "When I get a probability higher than [math]100\\%[/math], what I do next depends on the circumstances: If it is the result of a symbolic calculation, I double-check all my steps to see where I made a mistake.If it is the result of an approximation by computer, and it is only a tiny bit larger, I might assume it is a rounding error.If it is the result of an approximation by computer and the error is large, I double-check my calculations and my code.If you are dealing with your basic probability theory, all your probabilities should be in the interval [math][0,1][/math]. There are some obscure versions of probability theory that allow for other values, but you\u2019d only encounter those once you get to university level and specialize in this kind of thing. Some typical mistakes: You added probabilities of events that are not mutually exclusive. That is not OK: if [math]P(A \\cap B) \\neq 0[/math], [math]P(A \\cup B) \\neq P(A) + P(B)[/math].You are looking at a probability density function, which is used for continuous spaces, and can be used to give the probability that a variable lies in some interval. For such functions we can have values above [math]1[/math], but for any interval of size [math]s[/math] we have that the integral of the pdf over that interval cannot be larger than [math]\\frac{1}{s}[/math].You forgot to account for some aspect of a combinatorial problem.Double-check all your math. At each step, try to calculate the resulting probability and see when the problem occurs. If that doesn\u2019t help, turn your problem into something simpler and see if your assumptions hold in that case. If you\u2019re still stuck after all that, ask for help from your teacher, or Quora. Good luck! ",
+            "date": "Answered August 27, 2019",
+            "views": "385",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Syed Saad",
+                    "user_href": "/profile/Syed-Saad-9"
+                },
+                {
+                    "user_id": "George Tolson",
+                    "user_href": "/profile/George-Tolson-4"
+                },
+                {
+                    "user_id": "Winonah Drake",
+                    "user_href": "/profile/Winonah-Drake"
+                },
+                {
+                    "user_id": "Anthony Adam",
+                    "user_href": "/profile/Anthony-Adam-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Brown",
+                "href": "/profile/Aaron-Brown-165"
+            },
+            "answer_text": "In standard probability theory, all probabilities must be between zero and one. There are nonstandard probability theories that allow negative probabilities and probabilities greater than one. In most of these theories, a probability greater than one can only be assigned to an unobservable event. For a simple example, consider the probability of getting at least one number above 2 when rolling two standard six-sided dice. The standard calculation is to say the probability is equal to the probability of getting a number above 2 on the first die (2/3) plus the probability of getting a number above 2 on the second die (2/3) minus the probability of getting a number above 2 on both dice (4/9). [math]\\frac{2}{3}+\\frac{2}{3}-\\frac{4}{9}=\\frac{8}{9}[/math]. Now suppose that we cannot observe either individual die result, only whether or not at least one die had a number greater than 2. There\u2019s no mathematical contradiction to saying there is some unobservable event with probability [math]\\frac{4}{3}[/math] and another with probability [math]-\\frac{4}{9}[/math], the sum of which makes up the event that one die had a number greater than 2. For this simple problem there\u2019s no reason to do this. But there are more complicated problems in which it is more natural to allow adding up unobservable events to get probabilities greater than one, and assigning negative probabilities to other unobservable events. However when we collapse unobservable events to observable ones, the resulting probability has to be between zero and one. In a way this is no different for using negative numbers for things that cannot be negative. We have no trouble saying that a man started the day with 10 apples, gave away 20 apples and took in 15 apples to have five apples at the end of the day. There\u2019s no such thing as a negative apple (unless we allow things like apple IOUs), so the man could not have given away 20 apples before receiving at least five apples, but if we\u2019re only interested in the final apple balance, there\u2019s no need to track the order of transactions and insist that apples be added or subtracted in the order the transactions occurred. ",
+            "date": "Updated August 25, 2019",
+            "views": "121",
+            "upvotes": " View 44 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Edward M Young Jr",
+                    "user_href": "/profile/Edward-M-Young-Jr"
+                },
+                {
+                    "user_id": "William Mansley",
+                    "user_href": "/profile/William-Mansley"
+                },
+                {
+                    "user_id": "Adam Wang",
+                    "user_href": "/profile/Adam-Wang-111"
+                },
+                {
+                    "user_id": "Kamal Advani",
+                    "user_href": "/profile/Kamal-Advani-1"
+                },
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                },
+                {
+                    "user_id": "Jimmy Fung",
+                    "user_href": "/profile/Jimmy-Fung-7"
+                },
+                {
+                    "user_id": "Felipe Argolo",
+                    "user_href": "/profile/Felipe-Argolo"
+                },
+                {
+                    "user_id": "Dimitrios Kalemis",
+                    "user_href": "/profile/Dimitrios-Kalemis"
+                },
+                {
+                    "user_id": "Satya Prakash Singh",
+                    "user_href": "/profile/Satya-Prakash-Singh-117"
+                }
+            ]
+        }
+    ]
+}

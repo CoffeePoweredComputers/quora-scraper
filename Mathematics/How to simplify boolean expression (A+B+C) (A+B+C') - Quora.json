@@ -1,0 +1,83 @@
+{
+    "title": "How to simplify boolean expression (A+B+C) (A+B+C') - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ranjith Kumar",
+                "href": "/profile/Ranjith-Kumar-912"
+            },
+            "answer_text": "Let A+B = X; for typing convenience then (X+C).(X+C\u2019)= X.X+X.C\u2019+C.X+C.C\u2019 using boolean relations X.X=X(Idempotency) ; C.C\u2019 =0 ( complementarity) ; A+0=A ; A.1=A; ( identity); A+1=1 ( null) X.C=C.X ( commutative law ); And A.(B+C)=A.B+A.C ( distributive law) we get X.X+X.C\u2019+X.C +C.C\u2019 = X+X.C\u2019+X.C+0 = X+X.C\u2019+X.C =X.(1+C\u2019+C) =X.(1) =X =A+B So the answer is A+B. PS: For complete understanding of digital fundamental even for beginners try this book DIGITAL PRINCIPLES AND APPLICATIONS by Donald P Leach and Albert Paul Malvino. ",
+            "date": "Answered March 26, 2019",
+            "views": "12",
+            "upvotes": " Answer requested by Abhishek Mishra",
+            "upvoters": [
+                {
+                    "user_id": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                    "user_href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+                },
+                {
+                    "user_id": "Ayaz Kaif",
+                    "user_href": "/profile/Ayaz-Kaif"
+                },
+                {
+                    "user_id": "Divya Shah",
+                    "user_href": "/profile/Divya-Shah-60"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steppan Konoplev",
+                "href": "/profile/Steppan-Konoplev-1"
+            },
+            "answer_text": "If  is true, this is  If  is false, this is  Thus, the expression simplifies to  Alternatively, we note that  where the product in the middle expression is in any order since  Always be on the lookout for symmetry that allows you to eliminate casework. ",
+            "date": "Answered September 15, 2018",
+            "views": "593",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Harihara Sravan",
+                "href": "/profile/Harihara-Sravan"
+            },
+            "answer_text": "Let A+B is x. So the expression boils down to x + x.c\u2019 + x.c. Taking x out, \u201cx.(1+c'+c)=x So simplified answer is A+ B. ",
+            "date": "Answered September 15, 2018",
+            "views": "12",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vishakha Taparia",
+                    "user_href": "/profile/Vishakha-Taparia"
+                },
+                {
+                    "user_id": "Yagneesh Chikki",
+                    "user_href": "/profile/Yagneesh-Chikki"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "[math]S=(A+B+C) (A+B+C')[/math] Let [math]X=A+B[/math] [math]S=(X+C) (X+C')[/math] [math]S=XX+XC'+CX+CC'[/math] [math]S=X+X(C'+C)+0[/math] [math]S=X+X(1)[/math] [math]S=X+X=X[/math] [math]S=A+B[/math]  Lets simplify using K map in POS form  Hope it helps ",
+            "date": "Answered May 8, 2020",
+            "views": "271",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Samhitha Sree",
+                "href": "/profile/Samhitha-Sree"
+            },
+            "answer_text": " ",
+            "date": "Answered February 24, 2019",
+            "views": "23",
+            "upvotes": " View 2 Upvoters"
+        }
+    ]
+}

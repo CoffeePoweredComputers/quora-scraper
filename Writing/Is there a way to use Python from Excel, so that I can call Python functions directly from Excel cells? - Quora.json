@@ -1,0 +1,70 @@
+{
+    "title": "Is there a way to use Python from Excel, so that I can call Python functions directly from Excel cells? - Quora",
+    "tags": [
+        "Working with Excel Using Python",
+        "Microsoft Excel",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marouane Fakir",
+                "href": "/profile/Marouane-Fakir"
+            },
+            "answer_text": "Yeah, you can use xlwings or pyxll.And you still can use the COM approach using the PyWin32 module. But i suggest a better approach where you'll use EXCEL spreadsheets  as a data input support (excel is a very good tool at manipulating and normalizing data).And use Python as your main scripting and data mining tool, that way you'll get a good separation of data and logic.Take a look for IPython, Pandas, numpy, openpyxl and the Anaconda python distribution.Hope it helps. ",
+            "date": "Answered March 5, 2015",
+            "views": "29",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gobinda Khanal",
+                    "user_href": "/profile/Gobinda-Khanal-1"
+                },
+                {
+                    "user_id": "Tom Fan",
+                    "user_href": "/profile/Tom-Fan-3"
+                },
+                {
+                    "user_id": "Kenneth Yang",
+                    "user_href": "/profile/Kenneth-Yang-10"
+                },
+                {
+                    "user_id": "Christopher VanLang",
+                    "user_href": "/profile/Christopher-VanLang"
+                },
+                {
+                    "user_id": "Fernando Montenegro",
+                    "user_href": "/profile/Fernando-Montenegro-1"
+                },
+                {
+                    "user_id": "Mat Neben",
+                    "user_href": "/profile/Mat-Neben"
+                },
+                {
+                    "user_id": "Adamos Kyriakou",
+                    "user_href": "/profile/Adamos-Kyriakou"
+                },
+                {
+                    "user_id": "Riyaj Shaikh",
+                    "user_href": "/profile/Riyaj-Shaikh"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Arya Boudaie",
+                "href": "/profile/Arya-Boudaie"
+            },
+            "answer_text": "You can read in the Excel file as a csv, and then edit it via Python. There's also this article that came out earlier this year: Excel gets Python programming power, thanks to Xlwings library Otherwise this is how you read/write CSV: 13.1. csv - CSV File Reading and Writing - Python 2.7.9 documentation ",
+            "date": "Answered March 11, 2015",
+            "views": "22",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Christopher VanLang",
+                    "user_href": "/profile/Christopher-VanLang"
+                }
+            ]
+        }
+    ]
+}

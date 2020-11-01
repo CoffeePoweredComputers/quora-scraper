@@ -1,0 +1,30 @@
+{
+    "title": "How is bandwidth distributed among connected devices in a single WiFi network? - Quora",
+    "tags": [
+        "Bandwidth",
+        "Wireless Technology",
+        "Wi-Fi"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dennis Eichenlaub",
+                "href": "/profile/Dennis-Eichenlaub"
+            },
+            "answer_text": "Bandwidth is not distributed. At least not in consumer gear. All data is divided into packets of up to 1500 bytes. Packets are transmitted by devices. (\u201cDevices\u201d includes the router.) If a device wants to transmit a packet, it listens to make sure no other device is transmitting, then it sends the packet. If packets from two devices overlap, they detect the collision and stop transmitting mid-packet. Both devices wait a random amount of time before attempting to re-transmit. If a collision is not successfully detected, the device receiving the message will notice the missing packet and ask for it to be re-transmitted. This is true of Ethernet always and everywhere, not just WiFi. One of the great advantages of Ethernet cable over WiFi is that each device has its own dedicated channel (the cable) and there can\u2019t be collisions. The reason Ethernet is so successful is that there is no central controlling authority. Every device plays by the same cooperative rules. In the early days of networking, many engineers were opposed to Ethernet. They came up with all kinds of ways to enforce sharing, enforce bandwidth, create guaranteed delivery for high priority data, etc. All of those schemes were unsuccessful because they were just too complex. And in spite of their complexity and \u201cguaranteed performance\u201d, none of them worked as well as Ethernet. ",
+            "date": "Answered May 19, 2020",
+            "views": "669",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jesse Cox",
+                "href": "/profile/Jesse-Cox-2"
+            },
+            "answer_text": "It's a bit tricky to answer that. WiFi is spread-spectrum, or, it hops from frequency to frequency in a predetermined pattern to better share the channel with all devices. Essentially, all devices on a channel take turns communicating with the router. If two or more networks are on the same channel, members from all the networks take turns with each other communicating with their respective targets. That's why it's important to find a clear channel for your WiFi network or set you channel to auto. If a router had priority settings, then devices and connections with priority get more bandwidth. ",
+            "date": "Answered September 29, 2018",
+            "views": "926",
+            "upvotes": "0"
+        }
+    ]
+}

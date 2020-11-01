@@ -1,0 +1,73 @@
+{
+    "title": "How much bandwidth does YouTube consume daily and monthly and how much does it cost? - Quora",
+    "tags": [
+        "Bandwidth",
+        "Streaming Video Content",
+        "Online Video",
+        "YouTube"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rasty Turek",
+                "href": "/profile/Rasty-Turek"
+            },
+            "answer_text": "There are two components in the question that you have to address, storage and distribution of content. Storage Based on the available data, there is roughly 24TB of data uploaded daily to YouTube (What Happens On YouTube In 24 Hours? (Infographic)). Those are just the original videos.  YouTube generates many different profiles (different quality and size) for each video [well, it is generated based on the demand for a particular profile].   For our calculations we will consider the size of each original video uploaded to YouTube to be quadrupled by all additional profiles. 24TB * 4 * 365 (days in a year) = 35PB of data. As we can estimate that a little bit more than 110M videos is uploaded every year and there are some signs that YouTube contains over 1B videos, YouTube needs to store roughly 350PB of videos. We could count how much YouTube would pay for the disks directly, but we need to also count servers electricity and others, so we can use Google Cloud Platform Pricing Calculator to estimate all the costs we need. Lets calculate how much would cost YouTube to store 500PB of data annually on GCP  Roughly $164M.  Content distribution The question is How much it would cost to serve all YouTube videos. If we will serve the videos only once, the answer is very straight forward.  Based on CDN pricing we know that a GB of data cost at max $0.06.  500PB * $60,000 = $30M If we want to try to estimate how much it costs YouTube to run their CDN network, we need to consider some additional inputs. YouTube is very secretive about the real numbers, but based on Statistics \"every day people watch hundreds of millions of hours\". Lets assume people watch 100M hours of content a day. It is not hundreds of millions as they claim but seems like that's actually closer to the reality. Based on the infographic What Happens On YouTube In 24 Hours? (Infographic) an average video is 15 minutes long and represents 86MB of data. ((100M [hours] * 60 [minutes]) * (86MB / 15 [minutes]) = 32PB/day = 960PB/month Once again, based on CDN pricing to stream 1GB of data costs at max $0.06.  960PB * $60,000 = $57,6M/month We are still missing the infrastructure, but this is considerably way more complicated that to calculate the storage or distribution. ",
+            "date": "Answered December 26, 2015",
+            "views": "31",
+            "upvotes": " View 78 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Trevor Klinton",
+                    "user_href": "/profile/Trevor-Klinton"
+                },
+                {
+                    "user_id": "Mladen Mihajlovic",
+                    "user_href": "/profile/Mladen-Mihajlovic"
+                },
+                {
+                    "user_id": "Akshat Gupta",
+                    "user_href": "/profile/Akshat-Gupta-137"
+                },
+                {
+                    "user_id": "N R",
+                    "user_href": "/profile/N-R-461"
+                },
+                {
+                    "user_id": "Chad Dorsey",
+                    "user_href": "/profile/Chad-Dorsey-1"
+                },
+                {
+                    "user_id": "David Freeman",
+                    "user_href": "/profile/David-Freeman-199"
+                },
+                {
+                    "user_id": "Hany Yehia",
+                    "user_href": "/profile/Hany-Yehia-1"
+                },
+                {
+                    "user_id": "Akash Singh",
+                    "user_href": "/profile/Akash-Singh-860"
+                },
+                {
+                    "user_id": "Maple Hill Farm",
+                    "user_href": "/profile/Maple-Hill-Farm"
+                },
+                {
+                    "user_id": "Rod Zilla",
+                    "user_href": "/profile/Rod-Zilla-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Beverly Brooks",
+                "href": "/profile/Beverly-Brooks-28"
+            },
+            "answer_text": "#Questiion name: How much bandwidth does YouTube consume daily and monthly and how much does it cost? YT235666897 YouTube is currently the most powerful video-sharing platform in the world. Since its launch in 2005, it has produced numerous millionaires, with the highest-earrning star pulling in $12 million in revenue in 2015 (Forbes). Plus, according to YouTube, the number of channels that hit six figures in annual earrnings through the platform is doubling each year. I suggest you to create how-tos videos such as recipes, unboxing (where you open a product for viewers), food and travel reviews, music videos, comedy skits, and so on. On Mar 2015, I uploaed 42 videos to my channel, job guide niche. I made 1400 US dolllars from 220,000 views/month. If you want learn how to make moneey on Youtube, I recommend 2 ebooks below: Frree ebook 21 tricks to become a YouTube millionaireFrree ebook 18 tricks to get 1,000,000 views per videoTo dowloaad it, just visiit: YoutubeTips247 .info ",
+            "date": "Answered February 16, 2019",
+            "views": "894",
+            "upvotes": "0"
+        }
+    ]
+}

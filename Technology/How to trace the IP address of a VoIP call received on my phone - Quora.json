@@ -1,0 +1,87 @@
+{
+    "title": "How to trace the IP address of a VoIP call received on my phone - Quora",
+    "tags": [
+        "VoIP",
+        "TCP/IP",
+        "IP Addresses",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ciprian Frigioi",
+                "href": "/profile/Ciprian-Frigioi"
+            },
+            "answer_text": "It really depends on what you have access to. If you have access only to the phone, then you won\u2019t be able to tell much because nowadays servers/routers aren\u2019t using media flow-around for you to be able to see the initial location of RTP stream. If you have access to the server and the call was IP only, then you can see in the CDR/Logs where the call came from. If the call was TDM and came from a SS7/Landline, then you should either look on the logs or just ask the upstream provider. If the call was a scan from a sipvicious, then you should be able to look in the phone logs to see who, and where that call came from. All the calls can be traced down, especially if there is a real need for this, and authorities can use other meanings to solve these cases. ",
+            "date": "Answered November 5, 2017",
+            "views": "344",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Punit Kumar",
+                    "user_href": "/profile/Punit-Kumar-99"
+                },
+                {
+                    "user_id": "Lars Poulsen",
+                    "user_href": "/profile/Lars-Poulsen-2"
+                },
+                {
+                    "user_id": "Raul Rodriguez",
+                    "user_href": "/profile/Raul-Rodriguez-85"
+                },
+                {
+                    "user_id": "Renjit Mathew",
+                    "user_href": "/profile/Renjit-Mathew-2"
+                },
+                {
+                    "user_id": "Dawit Lisanework",
+                    "user_href": "/profile/Dawit-Lisanework"
+                },
+                {
+                    "user_id": "SULFIKER RASHID",
+                    "user_href": "/profile/SULFIKER-RASHID"
+                },
+                {
+                    "user_id": "Farrukh Javed",
+                    "user_href": "/profile/Farrukh-Javed-16"
+                },
+                {
+                    "user_id": "Mark Hawk",
+                    "user_href": "/profile/Mark-Hawk-6"
+                },
+                {
+                    "user_id": "Matt Shurts",
+                    "user_href": "/profile/Matt-Shurts-1"
+                },
+                {
+                    "user_id": "Ajay Xret",
+                    "user_href": "/profile/Ajay-Xret"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kevin Rome",
+                "href": "/profile/Kevin-Rome-2"
+            },
+            "answer_text": "You can\u2019t. Voip calls are routed through the voip service provider in order to route to traditional telephone networks. By the time you receive the call the IP isn\u2019t included in that information. Sometimes, the provider includes a caller ID if the caller has a permanent number associated with their service. However, if this is a legal/Criminal issue, it\u2019s possible your phone provider can see which service the call came from and provide information to authorities regarding the service provider. In turn, that service provider could check their internal logs to determine the source of the call. In such cases, there would probably have to be an official request from authorities. ",
+            "date": "Answered November 5, 2017",
+            "views": "249",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dilsia Martinez",
+                    "user_href": "/profile/Dilsia-Martinez-1"
+                },
+                {
+                    "user_id": "Deval Kathrecha",
+                    "user_href": "/profile/\u0926\u0947\u0935\u0932-\u0915\u0925\u094d\u0930\u0947\u091a\u093e-Deval-Kathrecha"
+                },
+                {
+                    "user_id": "Arbind Kumar",
+                    "user_href": "/profile/Arbind-Kumar-57"
+                }
+            ]
+        }
+    ]
+}

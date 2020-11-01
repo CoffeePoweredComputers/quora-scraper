@@ -1,0 +1,46 @@
+{
+    "title": "Why are CMOS sensors used in a DSLR? - Quora",
+    "tags": [
+        "CMOS Sensor",
+        "Sensors",
+        "DSLR Cameras",
+        "Cameras",
+        "Photography"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "The first CMOS sensors were used in very low quality cameras, such as webcams and low-end point and shoot cameras. The goal was to deliver a very low cost camera that would permit lower cost mass market products. The Dawn of the CMOS DSLR Why would CMOS be cheaper than the reigning king of camera sensors of the 1990s, the Charge Coupled Device (CCD)? After all, they were creating a whole new class of image sensor to compete with a mature technology. Right? The big advantage of CMOS is that it uses the same basic kind of process that has been perfected for making just about everything else: CPUs, GPUs, memory, peripherals, etc. CCD required a custom analog process. Also, there was no real advantage to using a tiny modern CMOS process for a CMOS sensor\u2026 you can only make your pixels so small for visible light use. So CMOS sensors could be r8n on long-paid-for, training edge CMOS chip lines. So CMOS chips were born, delivered into small, cheap cameras, but they rapidly improved. In 2000, Canon put an APS-C sized, 3 Megapixel camera with a CMOS sensor, the Canon D30, at a list price of $3,500. So for this, no cheap entry-level P&S camera, but one for the pro/prosumer market. The D30 produced a sharper image without the typical blotchy noise of CCD imagers. CMOS Ascendent It was about this time that CMOS started showing other natural advantages, aside from price. To understand why, take a look at the CCD versus the CMOS sensor. Based on the analog technology, there is very little on a CCD other than a sensor array. The sensors are photodiode, which conduct an electron when hit by a photon. That charge builds up in each pixel's \u201ccharge well\u201d, usually a p-doped MOS capacitor. Once an exposure is made, the charge buckets are shifted one-by-one, like a bucket-brigade of charge, into a charge-to-voltage converter and then an amplifier. That analog output feeds an analog-to-digital converter, often located in a separate image-processing chip. The CMOS sensor also includes an array of photodiode and charge-well capacitors. However, thanks to the capabilities of the CMOS process, each pixel also contains its own charge to voltage conversion and amplifier. With voltage at every pixel, the array functions much faster, potentially much lower in noise, and more capable of exploiting parallelism to speed things up. Early CMOS sensors for DSLR cameras employed some new noise reduction tricks. The speed of processing allowed the sensor to shoot a \u201cdark\u201d image before the actual exposure, eliminating regular pattern noise based on small variations in the photodiode circuitry. They output the same sort of analog serial stream as did CCDs. But then the Analog to Digital Converter (ADC) moved on-chip. This kept all analog in the relatively quiet domain of a single sensor chip, rather then needing to condition it and send it across a noisy digital PC board. This is how modern DSLRs get 14-bits of resolution out of each pixel. Using modern high speed digital interfaces like MIPI CSI-2 and CSI-3, sensor readout speeds increase all the time. Additional enhancements, such as backside illuminated (BSI) and stacked CMOS sensors further lowered noise and increased performance. However, so far, only Sony and Samsung have delivered BSI and/or stacked sensors for APS-C (Samsung) or full-frame (Sony) cameras (both used in mirrorless only to date, but the same sized chips found in DSLRs). Other Things So today, the main reason CMOS sensors are used in DSLRs and mirrorless ILCs is that they deliver better image quality: lower noise, higher sensitivity, and higher dynamic range. They also deliver higher speed: 4K video, 20fps full frame raw with the Sony A9, 60fps micro four-thirds with the Olympus OM-D E-M1 mark II, etc. See Also Dave Haynie's answer to BSI sensor is better. But why expensive DSLR Cameras uses CMOS sensor instead of BSI sensor? Dave Haynie's answer to Which one is better in terms of performance, durability, and likelihood of becoming obsolete, between a CCD sensor or CMOS sensor? ",
+            "date": "Answered May 22, 2017",
+            "views": "13",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jeff Verive",
+                    "user_href": "/profile/Jeff-Verive"
+                },
+                {
+                    "user_id": "Loring Chien",
+                    "user_href": "/profile/Loring-Chien"
+                },
+                {
+                    "user_id": "Fayzan Ali",
+                    "user_href": "/profile/Fayzan-Ali-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Debjyoti Banerjee",
+                "href": "/profile/Debjyoti-Banerjee-47"
+            },
+            "answer_text": "CMOS is complementary metal oxide semiconductor technology for either making transistor, diode or photo cells. CMOS is also a very low power consuming technology compared to charge coupled device (CCD) technology previously used in making digital camera. CMOS is also cheaper to manufacture and that's why DSLR market is flooded with very high tech specification cameras in very affordable price compared to previous decade. ",
+            "date": "Answered October 13, 2019",
+            "views": "46",
+            "upvotes": "0"
+        }
+    ]
+}

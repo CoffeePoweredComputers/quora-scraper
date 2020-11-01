@@ -1,0 +1,119 @@
+{
+    "title": "What is the technology stack behind Pinterest? - Quora",
+    "tags": [
+        "Pinterest Engineering",
+        "What Programming Language Is X Written In?",
+        "Pinterest API",
+        "What Technology Does X Use?",
+        "Technology Stacks and Platforms",
+        "Pinterest (product)",
+        "Software and Applications",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Gerry Giacoman Colyer",
+                "href": "/profile/Gerry-Giacoman-Colyer"
+            },
+            "answer_text": "Paul Sciarra already gave an excellent overview of Pinterest\u2019s technology stack so I will do my best to add to his answer. Products that make up Pinterest\u2019s tech stack include: Acquia, Adobe Typekit, Amazon (EC2, EMR, Route 53, S3, Web Services), Apache (Cassandra, Commons, Thrift, Zookeeper), Appbot, Atlassian JIRA, Backbone.js, Crashlytics, Crittercism, DigitCert, Django, Fabric, Fastly, jQuery, MongoDB, MySQL, Nginx, OneLogin, PagerDuty, Python, Redis, Sentry, SQLite, Underscore.js, and Varnish Cache. Additionally, here\u2019s a list of other software products that Pinterest is using internally: Marketing: Percolate, SendGrid, TrendKiteSales and Support: Directly, Hiver, ZendeskAnalytics: Branch Metrics, Google Analytics, Mixpanel, QuboleHR: Culture Amp, Greenhouse, Parklet, UpworkFinance: Abacus, Braintree Payments, Expensify, SquareProductivity: Asana, Google Apps for Work, join.me, SlackFor a complete list of software used by Pinterest, check out: Pinterest's Stack | Siftery (Disclaimer: The above data was pulled from Siftery and has been verified by individuals working at Pinterest) ",
+            "date": "Updated March 8, 2017",
+            "views": "157",
+            "upvotes": " View 67 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Samuel Huang",
+                    "user_href": "/profile/Samuel-Huang-6"
+                },
+                {
+                    "user_id": "Adli Fuddin",
+                    "user_href": "/profile/Adli-Fuddin"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Jody-84"
+                },
+                {
+                    "user_id": "Stavros Kaparelos",
+                    "user_href": "/profile/Stavros-Kaparelos"
+                },
+                {
+                    "user_id": "Partha Sarathy",
+                    "user_href": "/profile/Partha-Sarathy-269"
+                },
+                {
+                    "user_id": "Andrew Sungchul Kim",
+                    "user_href": "/profile/Andrew-Sungchul-Kim"
+                },
+                {
+                    "user_id": "Martin Kolesnac",
+                    "user_href": "/profile/Martin-Kolesnac"
+                },
+                {
+                    "user_id": "Nghia Duong Trung",
+                    "user_href": "/profile/Nghia-Duong-Trung-1"
+                },
+                {
+                    "user_id": "Jagdishsinh Jadeja",
+                    "user_href": "/profile/Jagdishsinh-Jadeja"
+                },
+                {
+                    "user_id": "Tehe",
+                    "user_href": "/profile/Tehe-5"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Kunal Anand",
+                "href": "/profile/Kunal-Anand"
+            },
+            "answer_text": "According to a recent post on High Scalability (http://highscalability.com/blog/2012/5/21/pinterest-architecture-update-18-million-visitors-10x-growth.html):  80 million objects stored in S3 with 410 terabytes of user data, 10x what they had in August. EC2 instances have grown by 3x. Pay for what you use saves money. Most traffic happens in the afternoons and evenings, so they reduce the number of instances at night by 40%. At peak traffic  $52 an hour is spent on EC2 and at night, during off peak, the spend is as little as $15 an hour. 150 EC2 instances in the web tier. 90 instances for in-memory caching, which removes database load. 35 instances used for internal purposes. 70 master databases with a parallel set of backup databases in different regions around the world for redundancy. Written in Python and Django. Sharding is used, a database is split when it reaches 50% of capacity, allows easy growth and gives sufficient IO capacity. ELB is used to load balance across instances. The ELB API makes it easy to move instances in and out of production. Hadoop-based Elastic Map Reduce is used for data analysis and costs only a few hundred dollars a month. ",
+            "date": "Answered May 21, 2012",
+            "views": "21",
+            "upvotes": " View 49 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jeff Carollo",
+                    "user_href": "/profile/Jeff-Carollo-1"
+                },
+                {
+                    "user_id": "Jagdishsinh Jadeja",
+                    "user_href": "/profile/Jagdishsinh-Jadeja"
+                },
+                {
+                    "user_id": "Abdul Kahaium",
+                    "user_href": "/profile/Abdul-Kahaium"
+                },
+                {
+                    "user_id": "Regie Gardoce",
+                    "user_href": "/profile/Regie-Gardoce"
+                },
+                {
+                    "user_id": "Saul Juan Antonio Cuautle",
+                    "user_href": "/profile/Saul-Juan-Antonio-Cuautle"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Connie-T-4"
+                },
+                {
+                    "user_id": "ChunJian Ye",
+                    "user_href": "/profile/ChunJian-Ye"
+                },
+                {
+                    "user_id": "He Yibo",
+                    "user_href": "/profile/He-Yibo"
+                },
+                {
+                    "user_id": "Chandra Shekhar Sharma",
+                    "user_href": "/profile/Chandra-Shekhar-Sharma-2"
+                },
+                {
+                    "user_id": "Vasanth Nair",
+                    "user_href": "/profile/Vasanth-Nair"
+                }
+            ]
+        }
+    ]
+}

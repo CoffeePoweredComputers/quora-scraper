@@ -1,0 +1,82 @@
+{
+    "title": "I have a hard drive and a SSD in my PC. The data goes into the hard drive. Windows is on SSD. Bizarre my SSD 128 is almost full. What is going on? - Quora",
+    "tags": [
+        "Computer Advice",
+        "Solid-State Drives (SSD)",
+        "Hard Disk Drives (HDD)",
+        "Personal Computers",
+        "Microsoft Windows",
+        "Computer Hardware",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Franklin Veaux",
+                "href": "/profile/Franklin-Veaux"
+            },
+            "answer_text": "What\u2019s going on is every time you do a Windows update, Windows saves all the update files. Every time you do a major Windows update, Windows saves a complete backup of the entire old version of Windows. Ten gigabytes here, seventeen gigabytes there, it adds up. Every so often, you need to clean that junk out. If you don\u2019t, your hard drive will fill up. Go to the File Manager. Go to My Computer, Right click your Windows drive and click Properties. You will see this window.  Hit Disk Cleanup. A progress bar will appear for a while. After the next window appears, hit Clean Up System Files.  The progress bar will appear AGAIN, because Windows. 0.o Click the checkboxes to clean up system files and previous Windows installs and hit OK. You\u2019ll probably get a ton of space back. I did this on a client\u2019s computer once and recovered 90GB(!) of space. While you\u2019re there, make sure automatic drive optimization is turned off. Leaving it on will wear out your SSD, and Microsoft, in their blind stupidity, not only turns it on by default, but turns it on again with each major system update. If you want to keep your hard drive from wearing, you need to turn it off every so often. Go to the File Manager. Go to My Computer, Right click your Windows drive and click Properties. Click Tools. Click Optimize. Make sure \u201cScheduled Optimization\u201d says Off. If it says On, like this:  click Change Settings, then turn off \u201cRun on a schedule (recommended)\u201d. Your SSD will thank you.  As I write this answer, someone on Quora is creating phony profiles that look just like mine, and using them to send abusive/harassing messages to people. If you receive an abusive PM or comment, check the profile carefully. It probably isn\u2019t me. ",
+            "date": "Answered July 6, 2019",
+            "views": "427",
+            "upvotes": " View 497 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Gove Johnson",
+                    "user_href": "/profile/Gove-Johnson-1"
+                },
+                {
+                    "user_id": "Neha Borade",
+                    "user_href": "/profile/Neha-Borade"
+                },
+                {
+                    "user_id": "Major Singh",
+                    "user_href": "/profile/Major-Singh-249"
+                },
+                {
+                    "user_id": "Dushyant Gautam",
+                    "user_href": "/profile/Dushyant-Gautam-3"
+                },
+                {
+                    "user_id": "Rajib Shrestha",
+                    "user_href": "/profile/Rajib-Shrestha-14"
+                },
+                {
+                    "user_id": "Himanshu Ramani",
+                    "user_href": "/profile/Himanshu-Ramani-1"
+                },
+                {
+                    "user_id": "Jorge Padilla",
+                    "user_href": "/profile/Jorge-Padilla-57"
+                },
+                {
+                    "user_id": "Budi Susanto",
+                    "user_href": "/profile/Budi-Susanto-14-1"
+                },
+                {
+                    "user_id": "Ricky D",
+                    "user_href": "/profile/Ricky-D-64"
+                },
+                {
+                    "user_id": "Dave Teddy",
+                    "user_href": "/profile/Dave-Teddy-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Richard Maxwell",
+                "href": "/profile/Richard-Maxwell-23"
+            },
+            "answer_text": "I have a hard drive and a SSD in my PC. The data goes into the hard drive. Windows is on SSD. Bizarre my SSD 128 is almost full. What is going on? What version of Windows are you using? If you are using Windows 7, I have seen an issue where it will never clean up the Windows\\Temp folder. There is nothing critical in that folder, so you can just select everything and permanently delete it. Run the Windows clean up tools. Empty out your recycling bin, go through your downloads folder and delete things you don\u2019t need. Are you installing your programs onto your HDD or just games? I don\u2019t know if it is still an issue, but Nvidia drivers used to stay in place and take up space. Whenever there was a new version, it was downloaded and installed, but the old downloads and installations were never removed. On PortableApps.com - Portable software for USB, portable, and cloud drives there is a program called WinDirStat, download it and run it. It will give you a nice GUI display of where your files are hiding at a what is taking up the most space. You can use that as a guide to determine what is gobbling up your drive space. ",
+            "date": "Answered July 12, 2019",
+            "views": "426",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Alan Delval",
+                    "user_href": "/profile/Alan-Delval-1"
+                }
+            ]
+        }
+    ]
+}

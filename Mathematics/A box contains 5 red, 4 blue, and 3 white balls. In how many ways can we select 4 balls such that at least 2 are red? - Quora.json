@@ -1,0 +1,129 @@
+{
+    "title": "A box contains 5 red, 4 blue, and 3 white balls. In how many ways can we select 4 balls such that at least 2 are red? - Quora",
+    "tags": [
+        "Permutations and Combinations",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Khanij Kumar S G",
+                "href": "/profile/Khanij-Kumar-S-G"
+            },
+            "answer_text": "Please refer Anirban Ghoshal response for the answer. For a very related question - why not the answer is [math]\\binom{5}{2}*\\binom{10}{2}?[/math] For this, you can read below. Let us take [math]r_1, r_2, r_3, r_4[/math] and [math]r_5[/math] as 5 red balls. Let us see if we can split the problem into two steps Selecting [math]2[/math] red balls from [math]5[/math] red balls.Selecting [math]2[/math] more balls from the remaining [math]10[/math] balls.If the above steps considered are independent of each other, then number of ways of doing them are respectively [math]\\binom{5}{2}[/math] & [math]\\binom{10}{2}[/math]. Let us consider the tasks as below. Task 1 : Select [math]r_1[/math] & [math] r_2[/math] in step 1; [math]r_3[/math] & [math] r_4 [/math]in step 2Task 2: Select [math]r_3[/math] & [math] r_4[/math] in step 1; [math]r_1[/math] & [math] r_2 [/math]in step 2Since the problem is about number of ways to select, the above two tasks are one and the same. But multiplying [math]\\binom{5}{2}[/math] and [math]\\binom{10}{2}[/math] treats these two tasks as different. Hence, one can not use [math]\\binom{5}{2}*\\binom{10}{2}[/math] to get the required number of ways. If one is interested in splitting the task into two steps mentioned above, one can follow the steps as follows. # of ways to select 2 red balls = [math]\\binom{5}{2}\\binom{7}{2}= 210[/math]# of ways to select 3 red balls = [math]\\dfrac{\\binom{5}{2}\\binom{3}{1}\\binom{7}{1}}{\\binom{3}{2}}= 70[/math]# of ways to select 4 red balls = [math]\\dfrac{\\binom{5}{2}\\binom{3}{2}}{\\binom{4}{2}}= 5[/math]The terms in the denominator is to get the number of distinct ways and to avoid the duplication of types shown in the above example ([math]r_1, r_2,r_3,r_4)[/math] Total number of required ways = 210+70+5=285 ",
+            "date": "Answered August 1, 2017",
+            "views": "58",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Escorpiuse Escorpiuse",
+                    "user_href": "/profile/Escorpiuse-Escorpiuse"
+                },
+                {
+                    "user_id": "Anjali Kumari",
+                    "user_href": "/profile/Anjali-Kumari-1031"
+                },
+                {
+                    "user_id": "Muhannad Ayoubi",
+                    "user_href": "/profile/Muhannad-Ayoubi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anirban Ghoshal",
+                "href": "/profile/Anirban-Ghoshal-1"
+            },
+            "answer_text": "You decline to mention whether balls of the same color are identical. If they are, then you have only [math]9[/math] ways to do so. Why? Two positions are dedicated to red. For the remaining two, you can have red, blue or white (all are sufficiently numerous to allow that) and so that's [math]3 \\times 3 = 9[/math] ways. If, on the other hand balls of the same color are non-identical, then you can select four balls of any color is [math]\\displaystyle \\binom{5 + 4 + 3}{4} = 495[/math] ways. No red ball is selected in [math]\\displaystyle \\binom{4 + 3}{4} = 35[/math] ways. Exactly one red ball is selected in [math]\\displaystyle 5 \\times \\binom{4 + 3}{3} = 175[/math] ways. Thus, you select at least two red balls in [math]495 - (35 + 175) = 285[/math] ways. ",
+            "date": "Answered March 6, 2016",
+            "views": "6",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Brine Young",
+                    "user_href": "/profile/Brine-Young"
+                },
+                {
+                    "user_id": "Escorpiuse Escorpiuse",
+                    "user_href": "/profile/Escorpiuse-Escorpiuse"
+                },
+                {
+                    "user_id": "Anjali Kumari",
+                    "user_href": "/profile/Anjali-Kumari-1031"
+                },
+                {
+                    "user_id": "Riyansh Biswas",
+                    "user_href": "/profile/Riyansh-Biswas"
+                },
+                {
+                    "user_id": "Gate Studies",
+                    "user_href": "/profile/Gate-Studies"
+                },
+                {
+                    "user_id": "Khanij Kumar S G",
+                    "user_href": "/profile/Khanij-Kumar-S-G"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Silverthorn",
+                "href": "/profile/William-Silverthorn-3"
+            },
+            "answer_text": "RRRR, RRRW, RRWR, RWRR, WRRR, RRRB, RRBR, RBRR, BRRR, RRBB, RBBR, BBRR, BRBR, RBRB, BRRB, RRWW, RWRW, WRRW, RWWR, WRWR, WWRR, RRBW, RBRW, BRRW, RRWB, RBWR, BRWR, RWRB, RWBR, BWRR, WRRB, WRBR, WBRR i count 33 different ways all Red x 1 +1 White x 4 +1 Blue x 4 +2 White x 6 +2 Blue x 6 +1 White and 1 Blue x 12= 33 ",
+            "date": "Answered February 24, 2017",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anjali Kumari",
+                    "user_href": "/profile/Anjali-Kumari-1031"
+                },
+                {
+                    "user_id": "Nikhil Kumar",
+                    "user_href": "/profile/Nikhil-Kumar-598"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Susmitha Grandhi",
+                "href": "/profile/Susmitha-Grandhi"
+            },
+            "answer_text": "Considering that balls are not identical, Total ways of selecting 4 balls from 5+4+3 balls is 12C4 = 495 Of those we need to remove the cases where we selected no red ball and only one red ball. No red ball: 7C4 = 35 Only one red ball: 5C1 x 7C3 = 175 Required answer is 12C4 -( 35 + 175 ) = 285 ways! ",
+            "date": "Answered August 1, 2017",
+            "views": "21",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Escorpiuse Escorpiuse",
+                    "user_href": "/profile/Escorpiuse-Escorpiuse"
+                },
+                {
+                    "user_id": "Saurabh Sharma",
+                    "user_href": "/profile/Saurabh-Sharma-1532"
+                },
+                {
+                    "user_id": "Himabindu Kondamudi",
+                    "user_href": "/profile/Himabindu-Kondamudi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tanmay Pandit",
+                "href": "/profile/Tanmay-Pandit-14"
+            },
+            "answer_text": "We've 5+ 4 +3 = 12 balls with 5 red out of which 4 are to be selected. But 2 of them must be red. So, we've to choose 2 balls from 10.No. of ways = 10C2 = 45. ",
+            "date": "Answered March 6, 2016",
+            "views": "14",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Lt.Kyleszs",
+                    "user_href": "/profile/Lt-Kyleszs"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,113 @@
+{
+    "title": "How hard is it to hack someone's cell phone if you just know their phone number? - Quora",
+    "tags": [
+        "Computer Hacking (security)",
+        "Telephone Numbers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Terry Lambert",
+                "href": "/profile/Terry-Lambert"
+            },
+            "answer_text": "It\u2019s not something your standard \u201cscript kiddie\u201d will be able to do.  It\u2019s pretty easy to listen in on everything that\u2019s going on between the cell phone and something else; a cell phone is primarily a communications devices, and the communications networks themselves are vulnerable. There are a number of \u201chacks\u201d that include decrypting encrypted traffic, primarily by either hacking a certificate authority (e.g. DigiNotar), or by having a security authority which is easily and cheaply bought (e.g. China Internet Network Information Center and StartCom/WoSign)  Totally \u201cp0wning\u201d a cell phone \u2014 as opposed to just listening in on all its communications \u2014 is a more complex task. It\u2019s easier on Android phones, harder on iPhones which have not been jailbroken. It universally involves three steps: Execution of arbitrary code on the phone \u2014 either through an exploit of software already on the phone, such as a web browser or the text message App \u2014 a remote exploit \u2014 or through a phishing attack or similar method of getting the user to run the code themselvesEscalation of privilege \u2014 since most Apps run in either a sandbox, do internal sandboxing, or have an assigned \u201crole account\u201d which partitions their access to other parts of the phone, you have to escalate privilege in order to get out of the box and gain access to the rest of the phoneInstallation of malware \u2014 this can be as simple as a one-time program to dump the phone to an external location, or as complex as a complete rootkit that permanently enables access to the phone contentsFor an Android phone or a jailbroken iPhone, for example, the easiest method is to modify the hosts file so that checks for OS and App updates go through a third party server, since the installer has to run with nearly complete privilege, and then install a root certificate that you created, so that you can decrypt all HTTPS traffic, and insert your own replacement content. This is usually less than around 4K for the X.509 root certificate and the host redirect combined. ",
+            "date": "Updated May 27, 2020",
+            "views": "653",
+            "upvotes": " View 30 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rose Gp",
+                    "user_href": "/profile/Rose-Gp"
+                },
+                {
+                    "user_id": "Rv Sireesha",
+                    "user_href": "/profile/Rv-Sireesha"
+                },
+                {
+                    "user_id": "Tina Lucy",
+                    "user_href": "/profile/Tina-Lucy-2"
+                },
+                {
+                    "user_id": "Debbie Blanchard",
+                    "user_href": "/profile/Debbie-Blanchard-21"
+                },
+                {
+                    "user_id": "Willcchi Will",
+                    "user_href": "/profile/Willcchi-Will"
+                },
+                {
+                    "user_id": "Sunny Dan",
+                    "user_href": "/profile/Sunny-Dan-3"
+                },
+                {
+                    "user_id": "Kartikey Mehrotra",
+                    "user_href": "/profile/Kartikey-Mehrotra-1"
+                },
+                {
+                    "user_id": "Ziyad Khaki",
+                    "user_href": "/profile/Ziyad-Khaki"
+                },
+                {
+                    "user_id": "Karina Lea",
+                    "user_href": "/profile/Karina-Lea-1"
+                },
+                {
+                    "user_id": "You Tube",
+                    "user_href": "/profile/You-Tube-1368"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Brad Brandon",
+                "href": "/profile/Brad-Brandon-3"
+            },
+            "answer_text": "Many years ago when it was still legal I used to have an app that would do just that. Basically I would type the number and message into the app and it would text the person that message. Back then they didn't have to open it, just look at it. From there I could see their address, current live (meaning moving in real time) location, full name, and even reboot or shut off their phone. All with the send of a text. I used it once (fun story). Someone kept harassing me with mean texts and I didn't know them. After a few days of telling them to leave me alone I got tired of it. As a final warning I told them I had this app and what it was capable of. They obviously didn't believe me. So I had the app send them the text. After that, I told them their full name, home address, current location, where they're going, what they look like, and who pays their phone bill. To put the icing on the cake I rebooted their phone as a \u201cmic drop\u201d. They profusely apologized, said they would never harass me again, and guess what? They never harassed me again. This app no longer exists for two reasons. Firstly, the laws have changed and doing this today is actually illegal unless they give permission or a warrant. Lastly, phones have changed and security/exploits are way tighter than they used to be, so even if you did get this app, it wouldn't work with a modern phone. This was back when froyo was the operating system of the future and still in development, so before frozen yogurt os. But BOY did I have a big laugh when he figuratively crapped himself! One of the best moments of my life. Moral of the story, check the laws first. I only did it because it was my last resort and it was legal back then. Wire tapping laws only applied to landlines and not cell phones then. Now, there are laws on cell phones and doing something like that could be a felony. ",
+            "date": "Answered July 19, 2020",
+            "views": "263",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Techto Nex",
+                    "user_href": "/profile/Techto-Nex"
+                },
+                {
+                    "user_id": "Wangari Wathigo",
+                    "user_href": "/profile/Wangari-Wathigo"
+                },
+                {
+                    "user_id": "Thomas Wald",
+                    "user_href": "/profile/Thomas-Wald"
+                },
+                {
+                    "user_id": "Simran Tanwar",
+                    "user_href": "/profile/Simran-Tanwar-17"
+                },
+                {
+                    "user_id": "Katrina Moore",
+                    "user_href": "/profile/Katrina-Moore-118"
+                },
+                {
+                    "user_id": "R Raja Sekhar",
+                    "user_href": "/profile/R-Raja-Sekhar"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Ys-L-14"
+                },
+                {
+                    "user_id": "Dalila Rodrigues",
+                    "user_href": "/profile/Dalila-Rodrigues-1"
+                },
+                {
+                    "user_id": "Maxim Radziuk",
+                    "user_href": "/profile/Maxim-Radziuk"
+                },
+                {
+                    "user_id": "Dhairya Thakkar",
+                    "user_href": "/profile/Dhairya-Thakkar-7"
+                }
+            ]
+        }
+    ]
+}

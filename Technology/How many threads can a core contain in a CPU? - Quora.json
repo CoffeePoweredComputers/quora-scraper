@@ -1,0 +1,31 @@
+{
+    "title": "How many threads can a core contain in a CPU? - Quora",
+    "tags": [
+        "Threading (computer science)",
+        "Central Processing Units",
+        "Processors",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Kra",
+                "href": "/profile/David-Kra"
+            },
+            "answer_text": "As Ashish Kulkarni pointed out, there are CPU SMT threads and there are OS and JVM threads. SMT threads: A second one per core adds about 20% to total throughput. Beyond the second there are usually severely diminishing returns. Enabling SMT means that several threads are sharing all levels of CPU cache. Unless a thread's working set of instructions and data is tiny, each thread ejects some of the other threads' cache content. All threads get hurt by this. OS and JVM threads: Too many threads will cause memory and I/O to become bottlenecks, will consume more resources for thread switching and CPU scheduling. All the threads share all levels of CPU cache. Unless a thread's working set of instructions and data is tiny, its execution ejects some of the other threads' cache content. All threads get hurt by this. Well tuned transaction processing systems often limit the number of active tasks to improve throughput and to reduce the possibility of running into memory constraints. See IBM Knowledge Center ",
+            "date": "Answered October 7, 2019",
+            "views": "784",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Axel Rietschin",
+                "href": "/profile/Axel-Rietschin"
+            },
+            "answer_text": "The appropriate number or threads per CPU core depends on what the threads are doing. If the workload consists essentially of CPU-intensive activity, such as number-crunching, then one thread per core is probably optimal. If the workload is I/O intensive and threads spend most of their time waiting for something to happen, then the number of threads per core can be higher than one. It is often better to use a thread pool and queue work items to the pool, and not worry about the details. The thread pool will allocate threads as necessary to cope with the workload and the constraints of the machine. ",
+            "date": "Answered October 4, 2019",
+            "views": "704",
+            "upvotes": "0"
+        }
+    ]
+}

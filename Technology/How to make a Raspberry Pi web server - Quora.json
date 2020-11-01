@@ -1,0 +1,50 @@
+{
+    "title": "How to make a Raspberry Pi web server - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Technology",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "William Wolff",
+                "href": "/profile/William-Wolff-14"
+            },
+            "answer_text": "I\u2019ve tried this. it depends on WHY you\u2019re trying to do it. (assuming you aren't going for worldwide access, which involves playing with your router and potentially costing you for DNS services, here's a good place to start) So if you want to access it outside your home, install LogMeIn Hamachi. It creates a virtual private network to avoid some of the problems with larger-scale servers (router stuff mentioned above), you can create a free virtual network, connecting the devices as if they were in the same local area network. Next, set a static IP for your raspberry pi, so that way when you boot it up you don\u2019t have to go fishing for the IP address every time it restarts. (and in other computers, you can save the number in code or text when you need to access it) I used Apache to create a server. I only ever did simple HTML, but you can add functionality for scripting here too. Depending on its function, you may need to change permissions in apache configuration files to allow access to other directories (to allow other devices to lets say, access some document drive you created, or access your raspberry pi\u2019s camera feed). This can cause security issues (but assuming you aren\u2019t allowing anyone outside your LogMeIn Hamachi group to access it, not a big deal in my opinion) Good Luck! ",
+            "date": "Answered March 25, 2019",
+            "views": "439",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Lucas Stacey",
+                    "user_href": "/profile/Lucas-Stacey-1"
+                },
+                {
+                    "user_id": "Sahal Ameen",
+                    "user_href": "/profile/Sahal-Ameen"
+                },
+                {
+                    "user_id": "Harsh Kumar",
+                    "user_href": "/profile/Harsh-Kumar-50"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Roger Davis",
+                "href": "/profile/Roger-Davis-34"
+            },
+            "answer_text": "When I ran some PI\u2019s a few years ago, I recall that I: Had some linux experienceHad a PC with an SD slotDownloaded some images, and some software to load images from windows to PI, and to backup an SD card.I grabbed this text from somewhere:NOOBS Setup To get started with Raspberry Pi you need an operating system. NOOBS (New Out Of the Box Software) is an easy operating system install manager for the Raspberry Pi. How to get and install NOOBS Buy a preinstalled SD Card The easiest way to get NOOBS is to buy an SD card with NOOBS preinstalled, available for \u00a34 at the Swag Store. Alternatively, if you have an SD card (8GB recommended), then you can download NOOBS for free and install it on your card. Download Using a computer with an SD card reader, visit the Downloads page. Click on the Download ZIP button under \u2018NOOBS (offline and network install)\u2019, and select a folder to save it to. Extract the files from the zip. Format your SD card It is best to format your SD card before copying the NOOBS files onto it. To do this: Visit the SD Association\u2019s website and download SD Formatter 4.0 for either Windows or Mac. Follow the instructions to install the software. Insert your SD card into the computer or laptop\u2019s SD card reader and make a note of the drive letter allocated to it, e.g. G:/ In SD Formatter, select the drive letter for your SD card and format it. Drag and drop NOOBS files Once your SD card has been formatted, drag all the files in the extracted NOOBS folder and drop them onto the SD card drive. The necessary files will then be transferred to your SD card. When this process has finished, safely remove the SD card and insert it into your Raspberry Pi. First boot Plug in your keyboard, mouse and monitor cables. Now plug in the USB power cable to your Pi. Your Raspberry Pi will boot, and a window will appear with a list of different operating systems that you can install. We recommend that you use Raspbian \u2013 tick the box next to Raspbian and click on Install. Raspbian will then run through its installation process. Note this can take a while. When the install process has completed, the Raspberry Pi configuration menu (raspi-config) will load. Here you are able to set the time and date for your region and enable a Raspberry Pi camera board, or even create users. You can exit this menu by using Tab on your keyboard to move to Finish. Logging in and accessing the graphical user interface The default login for Raspbian is username pi with the password raspberry. Note you will not see any writing appear when you type the password. This is a security feature in Linux. To load the graphical user interface type startx. Refer to our documentation for more information. NOOBS - Raspberry Pi Documentation ",
+            "date": "Answered May 29, 2020",
+            "views": "67",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "The Techie Scientist",
+                    "user_href": "/profile/The-Techie-Scientist"
+                }
+            ]
+        }
+    ]
+}

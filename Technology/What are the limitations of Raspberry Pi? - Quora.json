@@ -1,0 +1,65 @@
+{
+    "title": "What are the limitations of Raspberry Pi? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Clem Cole",
+                "href": "/profile/Clem-Cole"
+            },
+            "answer_text": "answered as: What are the disadvantages of Raspberry Pi? Hmm compared to what? This would have been a little like in the mid-1960s asking what are the disadvantages to a VW Beattle? The RPi was designed originally to be a low-cost computing platform in the UK, to help teach how to more directly use and interface to a computer, instead of trying to hide it as a PC/Windows does. In some ways, it was designed in competition to the slightly earlier Italian Arduino and in some other ways to do be more accessible for some groups of users. The Ardunio needs a mothership (the IDE), while the RPi can be used as a self-contained system. But in the end, like a Windows-based PC, a smartphone, a tablet, a Chromebook, or an Apple Mac, it's just a computer. Like many of the previously mentioned systems, it runs Linux which is a modern implementation of the Ken and Dennis wonderful ideas, called UNIX. As opposed to Windows or a dedicated embedded system like the Arduino family. It\u2019s cheap. But it\u2019s built it yourself. An RPi Zero CPU board is $10. But that assumes you\u2019ll have a case, keyboard, monitor, power supply, and SD card that you can use. If you need to pull everything together without a display it's about $50-$75 and then the display will set you back between $50-$150 more. So, a complete Chromebook is likely to be cheaper. An ESP2866 or 32 families can give you WiFi like the Zero, but they are less an $5 and in dedicated function can work quite well [yesterday I saw someone had implemented a VT-100 terminal as a \u2018computer console\u2019 for an old PDP-11 with a web interface, a ESP board and a MAX-232 chip, DB-25S connector and a $2 5 volt wall wart. Not even $7 for all the parts!! check out: ESPTERM Description, espterm-firmware, demo]. An Arduino Nano equivalent board can be had for the same $5-10 and a slightly more functional U3 for a little more, but you get all the I/O pins. But you need a power supply, might need an interface cable, and you\u2019ll need a PC, Mac or Linux box run the programming support. On the other hand, the chip in the Nano and on the U3 (ATMega328P) can be had about $1 in small quantities and any of the \u2018AT Tiny\u2019 CPUs can be had for pennies if they will do the job. One of my neighbors needs more \u2018screens\u2019 for their 3 primary school-aged kids trying to do remote schooling due to CV-19. They already had a Chromebook and she had her work based PC and a home printer, but she needed PC for her own work. So I loaned them two old VGA\u2019s, Keyboards Mice, 2 RPi3\u2019s in cases, and PS. Now all kids have a screen and can print as needed on her PC. So it all depends on what we want to do. If you have a dedicated task, it might be perfect, but it might be overkill. If you want to teach how to interface to hardware like sensors, it's a mixed bag compared to the smaller things. If you already have the extras, it hard to beat as a small computer and teaching platform. ",
+            "date": "Answered July 7, 2020",
+            "views": "610",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Marco-Luis Salcedo Tovar",
+                    "user_href": "/profile/Marco-Luis-Salcedo-Tovar"
+                },
+                {
+                    "user_id": "Hans Hackl",
+                    "user_href": "/profile/Hans-Hackl"
+                },
+                {
+                    "user_id": "Jaros\u0142aw Siemi\u0144ski",
+                    "user_href": "/profile/Jaros\u0142aw-Siemi\u0144ski"
+                },
+                {
+                    "user_id": "Michael Morey",
+                    "user_href": "/profile/Michael-Morey"
+                },
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Karsten Johansson",
+                "href": "/profile/Karsten-Johansson"
+            },
+            "answer_text": "The pi is awesome for learning technology. For example, I have the clusterhat, and have been learning to program C for supercomputing. This would be quite cost prohibitive if I were to build this with desktop or server class systems. Since it only burns 5 volts, it won\u2019t kill your electrical bill. Even if you have a lot of them. And they are so cheap, it isn\u2019t uncommon for folks to get quite a few of them ;p (I have 12) Since it can do high def on HDMI, I have it plugged into a huge HUGE screen and it looks *awesome*. It\u2019s one of my favourite pi features. The disadvantages I\u2019ve found - it isn\u2019t very good at all for streaming Youtube videos, no matter what a few overly-excitable fans say. It is purposely low-power (that\u2019s why it is so inexpensive!), so although there isn\u2019t all that much latency and drag for normal activities, you have only 1 core with the Zero, and 4 cores with the pi 3, so you have to curtail how much multitasking you might normally like to do (for example, opening lots of tabs in the web browser is a total killjoy). Finally, it has a very limited amount of memory. It does seem from my experience you can still run quite a bit on it without issue. BUT when you hit the ceiling, boy do you ever hit it. Since it is typically run off an SD card, you want to avoid a lot of swap thrashing. For lighter use (ie: not a gamer or people who need a lot of multiprocessing, not Internet-streamed video, etc etc) then you will do just fine and really get a lot out of it. Power users (ie: 3D modelling, modern \u201cgamer\u201d games, etc etc) will want a completely different system for those kinds of activities. As an educational device, it is pretty hard to beat. Also when it comes to specific projects like weather sensors, since full-scale PeeCees are serious overkill for those uses. ",
+            "date": "Answered January 9, 2018",
+            "views": "35",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Anupama Uc",
+                    "user_href": "/profile/Anupama-Uc"
+                },
+                {
+                    "user_id": "Zain Hoda",
+                    "user_href": "/profile/Zain-Hoda-1"
+                },
+                {
+                    "user_id": "Nilaksh Singh",
+                    "user_href": "/profile/Nilaksh-Singh"
+                }
+            ]
+        }
+    ]
+}

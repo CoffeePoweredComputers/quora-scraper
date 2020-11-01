@@ -1,0 +1,72 @@
+{
+    "title": "Is a topological order on the reverse graph the same as a topological order reversed? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Topology",
+        "Mathematics and Algorithms"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jeremy Kong",
+                "href": "/profile/Jeremy-Kong"
+            },
+            "answer_text": "Let [math]G = (V, E)[/math] be a graph, and let [math]P[/math] be a topological ordering of the nodes in [math]G[/math]. Let [math]G' = (V, E')[/math] be the graph with the edges flipped and [math]P'[/math] be [math]P[/math] reversed. Suppose for a contradiction that [math]P'[/math] is not a topological ordering of [math]G'[/math]. Then, by definition there must be two nodes [math]u[/math] and [math]v[/math] such that [math](v, u) \\in E'[/math] and [math]u[/math] comes before [math]v[/math] in [math]P'[/math]. But then, by definition of [math]E'[/math] we have [math](u, v) \\in E[/math], and by definition of [math]P'[/math] we must have [math]v[/math] coming before [math]u[/math] in [math]P[/math]. This contradicts that [math]P[/math] is a topological ordering of [math]G[/math]. Thus, [math]P'[/math] must be a topological ordering of [math]G'[/math]. Note: I'd be a little cautious about using the word 'same', since graphs can have multiple topological orderings. ",
+            "date": "Answered April 5, 2016",
+            "views": "35",
+            "upvotes": " View 15 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Peter Schachte",
+                    "user_href": "/profile/Peter-Schachte"
+                },
+                {
+                    "user_id": "Caviar Chen",
+                    "user_href": "/profile/Caviar-Chen"
+                },
+                {
+                    "user_id": "R\u00e9mi Marty",
+                    "user_href": "/profile/R\u00e9mi-Marty"
+                },
+                {
+                    "user_id": "Carlos Mendes",
+                    "user_href": "/profile/Carlos-Mendes-32"
+                },
+                {
+                    "user_id": "Praveer Tewari",
+                    "user_href": "/profile/Praveer-Tewari"
+                },
+                {
+                    "user_id": "Jakub Tu\u017cnik",
+                    "user_href": "/profile/Jakub-Tu\u017cnik"
+                },
+                {
+                    "user_id": "Kyle Osborne",
+                    "user_href": "/profile/Kyle-Osborne-4"
+                },
+                {
+                    "user_id": "Phil Scovis",
+                    "user_href": "/profile/Phil-Scovis"
+                },
+                {
+                    "user_id": "Yufeng Duan",
+                    "user_href": "/profile/Yufeng-Duan-1"
+                },
+                {
+                    "user_id": "Matthew Chung",
+                    "user_href": "/profile/Matthew-Chung-16"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Rajat Mishra",
+                "href": "/profile/Rajat-Mishra-26"
+            },
+            "answer_text": "Not at all. If a---->b is a graph then b----->a is reverse graph having 2 vertices and 1 edge. Topological sort of first one would be (a,b) and of second is (b,a). Obviously not same. ",
+            "date": "Answered December 24, 2014",
+            "views": "679",
+            "upvotes": "0"
+        }
+    ]
+}

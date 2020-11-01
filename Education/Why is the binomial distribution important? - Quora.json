@@ -1,0 +1,63 @@
+{
+    "title": "Why is the binomial distribution important? - Quora",
+    "tags": [
+        "Importance of Statistics",
+        "Pascal's Triangle"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Julius Bier Kirkegaard",
+                "href": "/profile/Julius-Bier-Kirkegaard"
+            },
+            "answer_text": "As with most probability distributions, it's important because it pops up so many places. Why does it pop up so frequently? Well, suppose you have [math]N[/math] (independent) random numbers [math]X_i[/math] that are equal to one with probability [math]p[/math] and equal to zero with probability [math]1-p[/math] (ie. Bernoulli variables). So any [math]X_i[/math] has this probability distribution [here p=0.3]:  Many situations can be described by such a variable. For instance flipping a coin - basically any event that has only two outcomes. Now suppose we flipped [math]N[/math] coins, or whatever, and asked: \"What is the distribution of number of heads?\" Ie. we ask what is the distribution of the sum of [math]X_i[/math]: [math]Y = \\sum^N_{i=1} X_i[/math] This turns out to be exactly the Binomial distribution (this is really simple to show if you use characteristic functions). In particular, it will be [math]Binomial(p,N)[/math]. So basically they pop up everywhere, and are thus important, because it is the distribution of the sum of any events that have only two outcomes - and those are pretty frequent. ",
+            "date": "Answered October 21, 2013",
+            "views": "76",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Wanrong Xu 'student'",
+                    "user_href": "/profile/Wanrong-Xu-student"
+                },
+                {
+                    "user_id": "Dominic Shum",
+                    "user_href": "/profile/Dominic-Shum"
+                },
+                {
+                    "user_id": "Vin\u00edcius Zanchini",
+                    "user_href": "/profile/Vin\u00edcius-Zanchini"
+                },
+                {
+                    "user_id": "Taha Yavuz Bodur",
+                    "user_href": "/profile/Taha-Yavuz-Bodur"
+                },
+                {
+                    "user_id": "Atul Kumar",
+                    "user_href": "/profile/Atul-Kumar-101"
+                },
+                {
+                    "user_id": "Onur Zort",
+                    "user_href": "/profile/Onur-Zort"
+                },
+                {
+                    "user_id": "R\u00f3gvi D\u00e1vid Arge",
+                    "user_href": "/profile/R\u00f3gvi-D\u00e1vid-Arge"
+                },
+                {
+                    "user_id": "Jonas Schj\u00f8nnemann",
+                    "user_href": "/profile/Jonas-Schj\u00f8nnemann"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sumit Rana",
+                "href": "/profile/Sumit-Rana-495"
+            },
+            "answer_text": "What Is Binomial Distribution might be various reasons for this, such as students are not able to understand the term what is binomial distribution? How to use its formula? Therefore, this post helps those students who are confused with such questions as it has all the details about: Binomial distribution definition?The Binomial distribution formula.Binomial distribution examples.So let\u2019s discuss all these terms step by step in the upcoming paragraphs. What is binomial distribution? It is a probability distribution of success or failure results in a survey or an experiment that might be used several times. That has two possible results. For instance, a coin is tossed that has two possible results: tails or heads. And the test could be resulted as pass or fail. It is a discrete distribution that is used in statistics that opposes a continuous distribution. The reason for this is that it only counts two states. That are represented as 0 (for failure) or 1 (for success) for a provided number of experiments. Therefore, it donates the probability for x successes in several trials n, giving the probability p of successive trails. This is the binomial distribution definition that helps you to understand the meaning of the binomial distribution now, we will discuss the criteria of it. Criteria of binomial distribution The criteria of the binomial distribution need to satisfy these three conditions: The number of trials or observation must be fixed: If you have a certain number of the trial. Then you can easily find out the probability of it. For example, if you throw a coin, then the probability of coming a head is 50%. But if you throw the coin almost 10 times. Then the probability of coming head is also increased up to almost 100%.The success\u2019 probability is the same as for another trial too.Each trial or observation must be independent: This means that any of the experiments do not have an effect on another or next trail.Before proceeding to the further details, let\u2019s discuss the Bernoulli Distribution and how these terms related to each other. What is Bernoulli Distribution? As per the Washington State University, \u201cIf every Bernoulli experiment is independent, the successive no. in Bernoulli experiment has a binomial distribution. In other words, the Bernoulli distribution is the binomial distribution that has a value of n=1.\u201d The Bernoulli distribution is the set of the Bernoulli experiment. Every trial has a possible result, selected from S (for success), F (for failure), and each trial\u2019s probability would be the same. The probability of success is 1 minus the probability of failure that is P(S) = 1- p. Finally, all Bernoulli experiment is independent of each other, and the success\u2019 probability does not alter from experiment to experiment. The real examples of what is binomial distributions Various examples are based on real-life. For instance: If a new medicine is launched to cure a particular disease. So there is the possibility of success and failure. Binomial distribution formula When you know about what is binomial distribution, let\u2019s get the details about it: b(x; n, P) = nCx * Px * (1 \u2013 P)n \u2013 x Where: b = binomial probability x = total number of \u201csuccesses\u201d (fail or pass, tails or heads, etc.) P = probability of success on an individual experiment n = number of experiment There is another formula to write it that is a slightly different way that is Binomial distribution examples: Now, we will describe the way to use the it. We use it to solve the different mathematics problems: Example 1: A coin is thrown 5 times. What is binomial distribution of coming exactly 3 heads? We are using the formula: b(x; n, P) \u2013 nCx * Px * (1 \u2013 P)n \u2013 x The no. of experients (n) is 5 The success\u2019 odds (\u201cgetting a heads\u201d) is 0.5 (therefore 1-p = 0.5) x = 3 P(x=3) = 5C3 * 0.5^3 * 0.5^2 = 10*0.125 * 0.25 = 0.3125. Example 2: 80% of persons who buy health insurance are men. If 6 health insurance buyers are chosen randomly. Find the binomial distribution that exactly 3 are men. 1st Step: Recognize \u2018n\u2019 from the question. In our binomial example 2, n (the number of chosen items randomly) is 6. 2nd Step: Find \u2018X\u2019 from the question. X is 3. 3rd Step: Solve the first portion of the formula. The first portion of the binomial distribution formula is n! / (n \u2013 X)! X! Put the values of each: 6! / ((6 \u2013 3)! \u00d7 3!) That is equal to 40. Now let\u2019s proceed to further discussion. 4th Step: Solve the value of p and q. p is the success\u2019 probability, and q is the failure\u2019s probability. We have the value of p = 80%, or .8. So the failure\u2019s probability is 1 \u2013 .8 = .2 (20%). 5th Step: Now proceed to the second portion of the formula. (p)^X = .8^3 = 0.512 6th Step: Solve the next portion of the formula. q(n \u2013 X) = .2(6-3) = .2^3 = .008 7th Step: Multiply the value from step 3, 5, and 6 together to get the desired answer. 40 \u00d7 .512 \u00d7 .008 = 0.16384. Conclusion The above-mentioned details will help you to solve the problems of it as this post have all the relevant information about what is binomial distribution, its formula, and examples to use those formulas. ",
+            "date": "Answered April 17, 2020",
+            "views": "355",
+            "upvotes": "0"
+        }
+    ]
+}

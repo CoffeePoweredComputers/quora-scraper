@@ -1,0 +1,52 @@
+{
+    "title": "What is the differential equation solution for (X^2 * y') + 2xy - y^3 =0? - Quora",
+    "tags": [
+        "Differential Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Diana Ferreira",
+                "href": "/profile/Diana-Ferreira-50"
+            },
+            "answer_text": "[math]x^2 y' + 2xy - y^3 = 0[/math] Start by noticing that [math]y = 0[/math] is a solution. All other solutions don\u2019t cancel. Then we can divide by [math]y^3[/math]. Rewrite the equation as: [math]x^2 \\dfrac{y'}{y^3} + 2x\\dfrac{1}{y^2} = 1[/math] Substitute [math]u = \\frac{1}{y^2}[/math], with [math]u' = -2\\frac{y'}{y^3}[/math]: [math]-\\dfrac{x^2}{2} u' + 2xu = 1[/math] For [math]x \\not= 0[/math], multiply by [math]-\\frac{2}{x^2}[/math]: [math]u' - \\dfrac{4}{x}u = - dfrac{2}{x^2}[/math] One integrating factor is [math]\\frac{1}{x^4}[/math]; multiplying: [math]\\dfrac{1}{x^4} u' + \\dfrac{-4}{x^5} u = - \\dfrac{2}{x^6}[/math] Now the LHS is a derivative: [math]\\left( \\dfrac{u}{x^4} \\right)' = - \\dfrac{2}{x^6}[/math] Integrating both sides: [math]\\dfrac{u}{x^4} = - \\dfrac{2}{5} \\dfrac{1}{x^5} + \\dfrac{C}{5}, \\ C \\in \\mathbb{R}[/math] Multiplying by [math]x^4[/math]: [math]u(x) = \\dfrac{C}{5}x^4 - \\dfrac{2}{5} \\dfrac{1}{x}[/math] this is, [math]u(x) = \\dfrac{Cx^5 - 2}{5x}[/math] We return to [math]y[/math]: [math]\\dfrac{1}{y^2(x)} = \\dfrac{Cx^5 - 2}{5x}[/math] This is, [math]y^2(x) = \\dfrac{5x}{Cx^5 - 2}[/math] Remember that this is for [math]x \\not= 0[/math]. Because we want differentiable solutions, they are continuous and so each solution is defined only for one of the following: [math]x > 0[/math] or [math]x < 0[/math]. Notice that [math]x[/math] and [math]Cx^5 - 2[/math] must have the same sign, since [math]y^2 > 0[/math] for all (real and non-trivial) solution [math]y[/math]. In those conditions, two general solutions are: [math]y(x) = - \\sqrt{ \\dfrac{5x}{Cx^5 - 2} }[/math] [math]y(x) = \\sqrt{ \\dfrac{5x}{Cx^5 - 2} }[/math] In conclusion, the solutions of the ODE are: [math]y(x) = 0, \\ \\forall x \\in \\mathbb{R}[/math] [math]y(x) = - \\sqrt{ \\dfrac{5x}{C_1x^5 - 2} }, \\ \\forall x \\in \\mathbb{R^-}[/math] [math]y(x) = \\sqrt{ \\dfrac{5x}{C_1x^5 - 2} }, \\ \\forall x \\in \\mathbb{R^-}[/math] [math]y(x) = - \\sqrt{ \\dfrac{5x}{C_2x^5 - 2} }, \\ \\forall x \\in \\mathbb{R^+}[/math] [math]y(x) = \\sqrt{ \\dfrac{5x}{C_2x^5 - 2} }, \\ \\forall x \\in \\mathbb{R^+}[/math] where [math]C_1, C_2 \\in \\mathbb{R}[/math] satisfy [math]C_1x^5 - 2 < 0[/math] and [math]C_2x^5 - 2 > 0[/math]. Note: Given an initial condition, only one of these is the particular solution of the associated Cauchy\u2019s problem; in other words, only one will satisfy the initial condition. ",
+            "date": "Answered January 7, 2020",
+            "views": "139",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Obaida R. Gharbia",
+                    "user_href": "/profile/Obaida-R-Gharbia"
+                },
+                {
+                    "user_id": "Ben Tennyson",
+                    "user_href": "/profile/Ben-Tennyson-127"
+                },
+                {
+                    "user_id": "Phillip Roodt",
+                    "user_href": "/profile/Phillip-Roodt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jean-Claude Colette",
+                "href": "/profile/Jean-Claude-Colette-2"
+            },
+            "answer_text": "We can change variable by putting  So  The equation  becomes  i.e.  y=0 is solution, suppose  (and ) , we have by integrating  We obtain  We deduce  or  Then  or  ",
+            "date": "Answered January 7, 2020",
+            "views": "62",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Eugen Simon",
+                "href": "/profile/Eugen-Simon-1"
+            },
+            "answer_text": "(X^2 * y') + 2xy - y^3 =0 (x^2 y)\u2019 - y^3 = 0 Let u = x^2 y then y^3 = u^3/x^6 u\u2019 - u^3/x^6 = 0 u\u2019/u^3 = 1/x^6 -(1/2) * 1/u^2= -(1/5) * 1/x^5 +C 5/(u^2)=2/x^5 -10C 5/u^2 = (2\u201310Cx^5)/x^5 u^2 = 5x^5/(2\u201310Cx^5) x^4y^2 = 5x^5/(2\u201310Cx^5) y^2 = 5x/(2\u201310Cx^5) y = +/- sqrt(|5x/(2\u201310Cx^5)|) ",
+            "date": "Answered January 7, 2020",
+            "views": "72",
+            "upvotes": "0"
+        }
+    ]
+}

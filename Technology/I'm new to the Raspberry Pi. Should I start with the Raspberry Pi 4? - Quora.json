@@ -1,0 +1,81 @@
+{
+    "title": "I'm new to the Raspberry Pi. Should I start with the Raspberry Pi 4? - Quora",
+    "tags": [
+        "Raspberry Pi 2",
+        "Raspberry Pi",
+        "Computer Science",
+        "Computer Hardware",
+        "Electronics",
+        "Computers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Clivant Yeo",
+                "href": "/profile/Clivant-Yeo"
+            },
+            "answer_text": "Congratulations in making the decision to learn the Raspberry Pi. I took that decision a couple of years ago and I am having lots of fun. As I have mentioned in my review on the Raspberry Pi 4B, comparing to the Pi 3B+, the Pi 4: has a better CPUhas faster (and more) RAMhas real Gigabit Ethernet speedhas two display ports that can deliver 4K video resolutionhas two USB 3.0 portsrequires a different power supplyIn addition to that, you will want to look at cases that can cool your Raspberry Pi 4B, especially if you want to use the 4K video resolution. Therefore, comparing with the Pi 3B+, you will spend more money to get started with a Pi 4B. If you are willing to spend more money, I will recommend to start with a Pi 4B with 8GB of ram. That will give you the best desktop performance. Since the GPIO pins and CSI camera port are compatible with previous versions, you can setup Raspbian Buster on your Pi 4B and get started with interacting with sensors through the GPIO pins and CSI camera. You can run your Pi 4B with two monitors while you develop your Python applications with the Thonny IDE. Whatever you build should be deployable to cheaper versions of Raspberry Pi. If you want to go with less initial investments, a Pi 3B+ is equally decent. You may even be able to reuse your old android phone microUSB chargers to power your Pi 3B+. This will not give you the luxury of having two monitor screens but it is decent enough to run a few Chrome tabs while you develop your Python applications to run on your Pi. Once you found a use case for a Raspberry Pi running 24/7, do remember that there is a Raspberry Pi Zero W. If your use case does not require a visual interface, you can setup Raspbian Lite on it to run your applications. So why buy the Raspberry Pi Zero W? Typically, we buy the Raspberry Pi Zero W when we have budget, space and energy consumption constraints. Such constraints are traded off with computation power. Just my 2 cents! All the best in your Raspberry Pi learning journey! ",
+            "date": "Updated August 1, 2020",
+            "views": "782",
+            "upvotes": " View 9 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bill Anderson",
+                    "user_href": "/profile/Bill-Anderson-39"
+                },
+                {
+                    "user_id": "Andrew Rothman",
+                    "user_href": "/profile/Andrew-Rothman-6"
+                },
+                {
+                    "user_id": "Robert Getsla",
+                    "user_href": "/profile/Robert-Getsla"
+                },
+                {
+                    "user_id": "Mihai Voicu",
+                    "user_href": "/profile/Mihai-Voicu-1"
+                },
+                {
+                    "user_id": "Alvin Lau",
+                    "user_href": "/profile/Alvin-Lau"
+                },
+                {
+                    "user_id": "Andy Heilveil",
+                    "user_href": "/profile/Andy-Heilveil"
+                },
+                {
+                    "user_id": "Walter Jones",
+                    "user_href": "/profile/Walter-Jones-38"
+                },
+                {
+                    "user_id": "Bob Geary",
+                    "user_href": "/profile/Bob-Geary"
+                },
+                {
+                    "user_id": "Patrick Fitzgerald",
+                    "user_href": "/profile/Patrick-Fitzgerald-12"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Walden Bj\u00f8rn-Yoshimoto",
+                "href": "/profile/Walden-Bj\u00f8rn-Yoshimoto"
+            },
+            "answer_text": "Q: I'm new to the Raspberry Pi. Should I start with the Raspberry Pi 4? Generally, I\u2019d say yes. #Disclaimer: I have a few handfuls of RPi\u2019s, spread over one or more RPi Zeroes and Zero W\u2019s, RPi2B, RPi3B, RPi3B+, and RPi4). I use/have used them for various things, including a Home Assistant server, LibreELEC/KODI boxes, NextCloud, a \u201cmini desktop\u201d, a NAS, a Minecraft server, as well as various smaller embedded systems. Most of them have been headless; so mostly I\u2019ve avoided attaching screens. However, the answer might vary depending on what you want to use it for. A few things that might help guide you: For RPi4: If you want to use it as a \u201cdesktop\u201d, then I\u2019d say get the RPi4.Though keep in mind that, as Christopher Hall points out, there were some initial problems. So be aware that you might not be able to use WiFi if connecting to a 2560 x 1440 monitor, and I\u2019d recommend getting the official power supply, unless you know that the one you get is not an \u201ce-marked USB-C\u201d.If you expect that you\u2019ll need more than 1GB RAM, then only the RPi4 is relevant.Keep in mind that memory is shared with GPU, so 1 GB means 1 GB total for both graphics and everything else.It\u2019s newer, faster, generally better specs.Only the RPi4 ethernet cable can run >300 Mbits/s (full gigabit).Only the RPi4 has USB3.Only the RPi4 has Bluetooth 5.For other version: If you have a specific use case, check if there are any issues with the RPi4.It is newer, and not all software is compatible yet (though this mostly relates to smaller projects where maybe one or two people are maintaining, or software that\u2019s no longer being actively developed).Maybe you can find an older version for lessIf you think you\u2019ll get additional RPi\u2019s at a later point, you could start with a cheaper version, and \u201cupgrade\u201d if needed.You could even start with a RPi zero W for ~$10, especially if you\u2019re not doing any GUI work.Early firmware for RPi4 caused overheating.A firmware update helped a lot, but it still runs a bit hotter. So if you want to stuff it somewhere with zero air circulation, where it\u2019s kind of warm, then the RPi4 might not be a good idea.If it\u2019s for a specific project, I\u2019d start by googling, and see how others have done this. If there are no guides for the RPi4, then maybe start with an older version, until you know your way around the RPis, and aren\u2019t as reliant on step-by-step guides for projects. Other than that, unless there\u2019s a lot of money to save (relatively speaking) and/or you wouldn\u2019t mind also having an older version (eventually you might get the RPi4, even if you start with an older version), then I\u2019d just start with the newer version. ",
+            "date": "Answered January 31, 2020",
+            "views": "191",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hans Liss",
+                    "user_href": "/profile/Hans-Liss"
+                },
+                {
+                    "user_id": "Bob Geary",
+                    "user_href": "/profile/Bob-Geary"
+                }
+            ]
+        }
+    ]
+}

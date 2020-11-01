@@ -1,0 +1,38 @@
+{
+    "title": "Is there a way to automatically restart after mysql crashed? - Quora",
+    "tags": [
+        "MySQL Performance"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dhruv Chaudhari",
+                "href": "/profile/Dhruv-Chaudhari"
+            },
+            "answer_text": "mysqld_safe \u2014 MySQL Server Startup Scriptmysqld_safe is the recommended way to start a mysqld server on Unix and NetWare. mysqld_safe adds some safety features such as restarting the server when an error occurs and logging runtime information to an error log file. Start mysqld as a service or from the startup script it recovers if the mysqld terminated in errorBut if you start manually like this \"/usr/sbin/mysqld &\" then it wont restart on error. Source: MySQL :: MySQL 5.0 Reference Manual :: 4.3.2 mysqld_safe ",
+            "date": "Answered August 28, 2013",
+            "views": "19",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bill Karwin",
+                    "user_href": "/profile/Bill-Karwin"
+                },
+                {
+                    "user_id": "Abhinav Gupta",
+                    "user_href": "/profile/Abhinav-Gupta-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Veer Bahadur",
+                "href": "/profile/Veer-Bahadur"
+            },
+            "answer_text": "There are lots of monitoring tools available which you can use like monit, zabbix, nagios etc. where you can monitor the MySQL service. There are few advantages of monitoring tools, they will check the other resources of your DB server which is making the MySQL service to stop like memory, CPU etc. Here is monit example for MySQL monitoringM/Monit | Wiki ",
+            "date": "Answered December 4, 2013",
+            "views": "14",
+            "upvotes": "0"
+        }
+    ]
+}

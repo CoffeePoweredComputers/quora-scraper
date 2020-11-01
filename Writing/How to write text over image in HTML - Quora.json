@@ -1,0 +1,116 @@
+{
+    "title": "How to write text over image in HTML - Quora",
+    "tags": [
+        "HTML5",
+        "Web Development Advice",
+        "HTML",
+        "How-to Question",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vijay Koushik",
+                "href": "/profile/Vijay-Koushik-3"
+            },
+            "answer_text": "Well, It\u2019s simple. Create a container for the image and make it\u2019s position relative. (to get along with the rest of the page)Place the image within the container.Place the text immediately below the image within the container and make it\u2019s position absolute (to overlay text on the image) and place it as you please.Finally, add some CSS tricks to suit your needs.Example: HTML <div class=\"image\"> <!-- the image container -->\u00a0<img src=\"images/3754004820_91a5c238a0.jpg\" alt=\"\" /> <!-- the image -->\u00a0<h2>\u00a0<span>A Movie in the Park:<span class='spacer'></span><br /><span class='spacer'></span>Kung Fu Panda</span> <!-- span tag to beautify it efficiently -->\u00a0</h2> <!-- the text -->\u00a0</div>\u00a0CSS .image \u00a0{ \u00a0position: relative; /* To help the image + text element to get along with the rest of the page*/ \u00a0width: 100%; /* for IE 6 */ \u00a0} \u00a0h2 \u00a0{ \u00a0position: absolute; /* To place the text on the image*/\u00a0top: 200px; /* The exact location of the text from the top of the image*/\u00a0left: 0; /* Other beautification stuff */\u00a0width: 100%; \u00a0}\u00a0/* Coloring time */\u00a0h2 span /* decorating the text within the span tag */\u00a0{ \u00a0color: white; \u00a0font: bold 24px/45px Helvetica, Sans-Serif; \u00a0letter-spacing: -1px; \u00a0background: rgb(0, 0, 0); /* fallback color */ \u00a0background: rgba(0, 0, 0, 0.7); padding: 10px; \u00a0}\u00a0h2 span.spacer { padding:0 5px; } /* to pad the background color of text to make it look more elegant */\u00a0When done it will look something like this  Enjoy! ",
+            "date": "Answered August 13, 2017",
+            "views": "573",
+            "upvotes": " View 27 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Omar Rashad",
+                    "user_href": "/profile/Omar-Rashad-11"
+                },
+                {
+                    "user_id": "Arpit Ghura",
+                    "user_href": "/profile/Arpit-Ghura-2"
+                },
+                {
+                    "user_id": "Arcot Sirichandana",
+                    "user_href": "/profile/Arcot-Sirichandana"
+                },
+                {
+                    "user_id": "Nwosu Ifeanyi",
+                    "user_href": "/profile/Nwosu-Ifeanyi-9"
+                },
+                {
+                    "user_id": "Arsam Sedighi",
+                    "user_href": "/profile/Arsam-Sedighi"
+                },
+                {
+                    "user_id": "Sapna Singh",
+                    "user_href": "/profile/Sapna-Singh-22"
+                },
+                {
+                    "user_id": "Tolu Adegboyega",
+                    "user_href": "/profile/Tolu-Adegboyega"
+                },
+                {
+                    "user_id": "Valerie Ng",
+                    "user_href": "/profile/Valerie-Ng-53"
+                },
+                {
+                    "user_id": "Elizabeth Stansberry",
+                    "user_href": "/profile/Elizabeth-Stansberry-5"
+                },
+                {
+                    "user_id": "Victoria Villagomez",
+                    "user_href": "/profile/Victoria-Villagomez-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mithu Mondal",
+                "href": "/profile/Mithu-Mondal"
+            },
+            "answer_text": "Use the background attribute.. <html>\u00a0   <body background=\"bgimage.jpg\">\u00a0\t <h1>Hello world!</h1>\u00a0\t <p>Bla bla bla</p>\u00a0   </body>\u00a0</html>\u00a0Or, create two div and change their z-indexes.. <html>\u00a0   <head>\u00a0\t<style>\u00a0\t\t.background-image {\u00a0  \t\t\tposition: fixed;\u00a0  \t\t\tleft: 0;\u00a0  \t\t\tright: 0;\u00a0  \t\t\tz-index: 1;\u00a0  \t\t\tdisplay: block;\u00a0  \t\t\tbackground-image: url('image.jpg');\u00a0  \t\t\twidth: 1200px;\u00a0  \t\t\theight: 800px;\u00a0\t       }\u00a0\u00a0\t\t.content {\u00a0  \t\t\tposition: absolute;\u00a0  \t\t\tleft: 0;\u00a0  \t\t\tright: 0;\u00a0  \t\t\tz-index: 9999;\u00a0  \t\t\tmargin-left: 20px;\u00a0  \t\t\tmargin-right: 20px;\u00a0\t\t\t}\u00a0\t</style>\u00a0   </head>\u00a0<body>\u00a0<div class=\"background-image\"></div>\u00a0<div class=\"content\">\u00a0  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aliquam erat in ante malesuada, facilisis semper nulla semper. Phasellus sapien neque, faucibus in malesuada quis, lacinia et libero. Sed sed turpis tellus. Etiam ac aliquam tortor, eleifend rhoncus metus. Ut turpis massa, sollicitudin sit amet molestie a, posuere sit amet nisl. Mauris tincidunt cursus posuere. Nam commodo libero quis lacus sodales, nec feugiat ante posuere. Donec pulvinar auctor commodo. Donec egestas diam ut mi adipiscing, quis lacinia mauris condimentum. Quisque quis odio venenatis, venenatis nisi a, vehicula ipsum. Etiam at nisl eu felis vulputate porta.</p>\u00a0  <p>Fusce ut placerat eros. Aliquam consequat in augue sed convallis. Donec orci urna, tincidunt vel dui at, elementum semper dolor. Donec tincidunt risus sed magna dictum, quis luctus metus volutpat. Donec accumsan et nunc vulputate accumsan. Vestibulum tempor, erat in mattis fringilla, elit urna ornare nunc, vel pretium elit sem quis orci. Vivamus condimentum dictum tempor. Nam at est ante. Sed lobortis et lorem in sagittis. In suscipit in est et vehicula.</p>\u00a0</div>\u00a0</body>\u00a0</html>\u00a0Hope that helps.. ",
+            "date": "Answered March 30, 2017",
+            "views": "342",
+            "upvotes": " View 12 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Preet Gagan",
+                    "user_href": "/profile/Preet-Gagan-20"
+                },
+                {
+                    "user_id": "Arsam Sedighi",
+                    "user_href": "/profile/Arsam-Sedighi"
+                },
+                {
+                    "user_id": "Harini Shanmugam",
+                    "user_href": "/profile/Harini-Shanmugam-3"
+                },
+                {
+                    "user_id": "Rebuldir",
+                    "user_href": "/profile/Rebuldir"
+                },
+                {
+                    "user_id": "Kiran Khanna",
+                    "user_href": "/profile/Kiran-Khanna-12"
+                },
+                {
+                    "user_id": "Yashika Chouhan",
+                    "user_href": "/profile/Yashika-Chouhan"
+                },
+                {
+                    "user_id": "Adeyinka Bukola",
+                    "user_href": "/profile/Adeyinka-Bukola-1"
+                },
+                {
+                    "user_id": "Bhavya Bethi",
+                    "user_href": "/profile/Bhavya-Bethi"
+                },
+                {
+                    "user_id": "Temilade Oluwadamilare",
+                    "user_href": "/profile/Temilade-Oluwadamilare"
+                },
+                {
+                    "user_id": "Pranshita Agrawal",
+                    "user_href": "/profile/Pranshita-Agrawal-2"
+                }
+            ]
+        }
+    ]
+}

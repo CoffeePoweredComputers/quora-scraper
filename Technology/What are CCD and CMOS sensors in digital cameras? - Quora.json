@@ -1,0 +1,84 @@
+{
+    "title": "What are CCD and CMOS sensors in digital cameras? - Quora",
+    "tags": [
+        "Charge-Coupled Devices",
+        "Image Sensors",
+        "CMOS Sensor",
+        "Sensors",
+        "DSLR Cameras",
+        "Digital Cameras",
+        "Digital Photography",
+        "Cameras",
+        "Photography"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dave Haynie",
+                "href": "/profile/Dave-Haynie"
+            },
+            "answer_text": "Let\u2019s start with a diode. A diode is a super-simple semiconductor. Without getting too complicated, it conducts electricity in just one direction. It can be used as a bunch of things, including a switch, which is a common function.  Most of us are familar with the light-emitting diode. These are used everywhere from idiot lights to TV and computer displays to every light bulb in my house. Electrons exist in discrete energy states, and in a diode, energy has to be at a specific level to cross a band gap. In an LED, light is emitted in the process, and based on the band gap, can be precisely defined in wavelength.  In a sense, the opposite of an LED is a photodiode. In a photodiode, photons strike the semiconductor material and excite electrons across the band gap. The more photons, the more electrons will flow. So the photodiode is one kind of light sensor. A solar cell is another kind of diode. The difference is that in a photodiode, there\u2019s already an electric bias to the diode, while in a solar cell, light is responsible for all of the current flow.  Now, the photodiode in a photon flux is delivering a photon flow, but that\u2019s not enough\u2026 we have to do something with those electrons. A photographic exposure is the recording of the effect of light over time (the exposure). So what if we captured all the electrons? That\u2019s actually pretty easy, since there\u2019s an electronic component, the capacitor, who\u2019s entire job is storing electric charge. That capacitor, in a camera sensor, is called a potential well or charge well.  Here\u2019s a very small 2-dimentional photodiode array. This wouldn\u2019t be very interesting for photography, but it might have some sensing applications.  Here\u2019s an actual camera sensor, in fact a 120 megapixel sensor made by Canon. The colorful rectangle is the actual photodiode array \u2014 the individual photodiodes are too small to see without a microscope. So now we have a way to create an electronic analog of photon activity\u2026 but where do we go from there? Up to this point, we haven\u2019t made a CCD or a CMOS sensor \u2014 that\u2019s the next step, as we figure out how to get the charge out of the charge wells and on to Instagram! Reading Out, CCD Style To make a CCD, you basically build a switch \u2014 a gate \u2014 between each charge well and the next, which can be controlled. We have charge and we\u2019re coupling the charge storage together in a useful way: CCD means Charge-Coupled Device. Together with some steering voltages, the whole CCD becomes a big analog shift register. What\u2019s a shift register? That\u2019s an electronic device that moves a value from one storge unit to the next. If the charge were collected raindrops instead of electrons, and the charge wells were, well, actual wells or maybe buckets, the CCD would be immediately recognizable as a bucket brigade. One charge \u201cbubble\u201d is moved to the next bucket, the bucket after that, and so on, out the chip. Willard S. Boyle and George E. Smith invented the CCD at Bell Laboratories in 1969. The charge bubble idea was actually being used on a thing called bubble memory, which used magnetic, rather than electric, bubbles as a non-volatile, serial memory. And in fact, Bell nearly killed the CCD idea, but Boyle and Smith managed to move extremely fast. Interestingly, the bubble memory was practically a dead end, while the CCD launched the era of solid-state imaging.  Well, almost out the chip. We can\u2019t do much with a charge coming out of the chip. So at the edge of the CCD, the charge is converted to a voltage. That voltage might be pretty weak, so there\u2019s likely some kind of amplifier, to help push that voltage above the noise level in the system. That analog voltage exits the CCD \u2014 a CCD is an entirely analog device, used in camcoders and even some analog electronic cameras, like the original Sony Mavicas, long before digital came along. In a digital system, the CCD\u2019s analog output would pass on to an analog to digital converter, which pops out a number that\u2019s representative of the analog value. Reading Out, CMOS Style While the CCD chip is a pure analog device, the CMOS chip is capable of both analog and digital. The early CMOS sensors did actually output analog voltages, just as the CCDs did, and in fact, they mimiced CCDs in that way to make them more or less drop into CCD-based camera systems. But over the years, they were improved, and today\u2019s do all the analog work on-chip. That\u2019s a major advantage, because the level of background noise on a chip can be significantly lower than the level of noise on a camera or computer circuit board.  In a CMOS sensor, the charge is typically converted to a voltage right at the charge well. Voltages can be easily and very quickly switched, and in fact, with voltages at every pixel cell after an exposure, the chip is read quite a bit like a memory chip. The modern CMOS sensor will have a gain block, as the CCD would. If you\u2019re looking for ISO, that\u2019s what it occurs, at least the hardware version (many cameras do digital amplification \u2014 if you have \u201cextended\u201d ISO on your camera, there\u2019s a pretty good chance that\u2019s done in software). Right after the amplifier, there\u2019s the digital-to-analog converter, now on-chip, rather than somewhere on the circuit board. And finally, there\u2019s some kind of transfer protocol. This is a bit oversimplified relative to a modern CMOS chip. To deliver very fast readouts, most chips have multiple ADCs on board, the fastest will have one per pixel. The digital data is usually transferred over some high-speed interface, such as the MIPI CSI2 or CSI3 interconnect. Like PCI Express, MIPI interfaces can use a variable number of lanes to increase bandwidth. The image processor in your camera, of course, has to offer up as many lanes, and it has to be able to process incoming raw sensor data as fast as the sensor can provide it, or the image processor, not the sensor, becomes the bottleneck. Read More Inside the Nobel Prize: How a CCD Works ",
+            "date": "Answered May 24, 2019",
+            "views": "32",
+            "upvotes": " View 37 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Renato Pierri",
+                    "user_href": "/profile/Renato-Pierri"
+                },
+                {
+                    "user_id": "Narayan Hegde",
+                    "user_href": "/profile/Narayan-Hegde"
+                },
+                {
+                    "user_id": "Alan Lee",
+                    "user_href": "/profile/Alan-Lee-307"
+                },
+                {
+                    "user_id": "Eldric Liew",
+                    "user_href": "/profile/Eldric-Liew"
+                },
+                {
+                    "user_id": "Venkata Krishna",
+                    "user_href": "/profile/Venkata-Krishna-337"
+                },
+                {
+                    "user_id": "Edward Attia",
+                    "user_href": "/profile/Edward-Attia"
+                },
+                {
+                    "user_id": "Saurabh Rana",
+                    "user_href": "/profile/Saurabh-Rana-73"
+                },
+                {
+                    "user_id": "Niven A. Nolte",
+                    "user_href": "/profile/Niven-A-Nolte-1"
+                },
+                {
+                    "user_id": "Carlos Fuensalida",
+                    "user_href": "/profile/Carlos-Fuensalida"
+                },
+                {
+                    "user_id": "Oluwajomiloju Odukoya",
+                    "user_href": "/profile/Oluwajomiloju-Odukoya"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "John Van Steenberg",
+                "href": "/profile/John-Van-Steenberg"
+            },
+            "answer_text": "These are two different design approaches to the device that converts light to electrical impulses that are used thereafter to describe the image electronically. CCD= charge coupled device CMOS= Complementary metal\u2013oxide\u2013semiconductor ",
+            "date": "Answered May 24, 2019",
+            "views": "70",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Hansel Sullivan",
+                    "user_href": "/profile/Hansel-Sullivan"
+                }
+            ]
+        }
+    ]
+}

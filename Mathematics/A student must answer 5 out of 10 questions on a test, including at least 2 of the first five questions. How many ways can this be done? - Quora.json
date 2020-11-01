@@ -1,0 +1,40 @@
+{
+    "title": "A student must answer 5 out of 10 questions on a test, including at least 2 of the first five questions. How many ways can this be done? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Troy Hoffman",
+                "href": "/profile/Troy-Hoffman-8"
+            },
+            "answer_text": "Robert Charles Lee was on the right track, but there are more than four possible ways to get 5 of 10 questions correct. You have to figure out the number of combinations of each set(nCr). After all, the two correct questions in the first set of five questions can be any two questions, not just the first two. This is calculated by using the fomula n!/(r!(n-r)!), where n is the number of objects (5 in this case) and r is the sample size (the number correct in each set). So, in the first possibility, you have two groups, one 2 of 5 and 3 of 5, which would be C(5, 2) and C(5, 3). C(5, 2) = 20C(5, 3) = 10 Since you can pair any of the possible combinations in the first set with any of the possible combinations in the second set, you multiple these together to get 200 possible combinations of getting 2 right in the first 5 and 3 in the second 5. 3 of 5 and 2 of 5: This is the opposite of the first group, so that\u2019s another 200. We\u2019re up to 400. 4 of 5 and 1 of 5: That\u2019s 5 and 5, so 25 more, bringing us up to 225. Finally, you have 5 of 5 and 0 of 5.: Each of those is 1, and 1 x 1 = 1, so the final answer is: 226. ",
+            "date": "Answered March 27, 2018",
+            "views": "15",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Lee Ballentine",
+                "href": "/profile/Lee-Ballentine"
+            },
+            "answer_text": "How many ways can a student answer 5 out of 10 questions on a test? Thete are infinitely many ways. Indeed there are infinitely many ways to answer any one of the questions. Suppose that the first question the student will answer is \"What is the best number?\" There are infinitely many ways to answer this question. So there are also infinitely many ways to answer the suite of questions. ",
+            "date": "Answered March 26, 2018",
+            "views": "502",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nicole Ballard",
+                    "user_href": "/profile/Nicole-Ballard"
+                },
+                {
+                    "user_id": "H A",
+                    "user_href": "/profile/H-A-835"
+                },
+                {
+                    "user_id": "Gage H. Leibman",
+                    "user_href": "/profile/Gage-H-Leibman"
+                }
+            ]
+        }
+    ]
+}

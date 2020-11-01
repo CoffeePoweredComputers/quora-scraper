@@ -1,0 +1,41 @@
+{
+    "title": "Why is my program giving the SIGSEGV error? - Quora",
+    "tags": [
+        "SIGSEGV Error",
+        "Error Messages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Dipan Nanda",
+                "href": "/profile/Dipan-Nanda"
+            },
+            "answer_text": "#include<iostream> #include<stdio.h> using namespace std; main() {int j,dn,xs,t,n,m,i,xz,count,salarygot,county=0,a[2],minSalary[100],qual[100][100],offeredSalary[100],canu[100][100],maxjoboffers[100],useful[100],hired[100]; cin>>t; if(t>=1 && t<=10){ chalu: if(t!=-1){while(t--){ for(i=0;i<2;i++) {cin>>a[i];if(i==0){n=a[i];} if(i==1){ m=a[i]; } } if(n>=1 && n<=1000) { if(m>=1 && m<=1000) { for(i=0;i<n;i++) { cin>>minSalary[i]; if(minSalary[i]>=1 && minSalary[i]<=1000000000){ continue;} else{ goto chalu;}} for(i=0;i<m;i++){ for(j=0;j<2;j++){ cin>>canu[i][j]; if(j==0){ offeredSalary[i]=canu[i][j]; if(offeredSalary[i]>=1 && offeredSalary[i]<=1000000000) {} else {goto chalu;}} if(j==1) { maxjoboffers[i]=canu[i][j]; if(maxjoboffers[i]>=1 && maxjoboffers[i]<=1000000000) {} else {goto chalu;}}}} for(i=0;i<n;i++){ cin>>useful[i];if(useful[i]>=0 && useful[i]<=111111111){ continue;}else{ goto chalu; }}for(i=0;i<n;i++){ for(j=m-1;j>=0;j--){ dn=useful[i];xs=0;xs=dn%10; if(xs==0 || xs==1){} else{goto chalu;} qual[i][j]=xs; dn=dn/10; useful[i]=dn;}} count=0; salarygot=0; for(i=0;i<m;i++){hired[i]=1000;} for(i=0;i<n;i++){ for(j=0;j<m;j++){ xz=qual[i][j]; if(xz==1){ if(offeredSalary[j]>=minSalary[i]){ if(maxjoboffers[j]>=1){ count=count+1; maxjoboffers[j]=maxjoboffers[j]-1; salarygot=salarygot+offeredSalary[j]; hired[j]=hired[j]-1; continue;} else{continue;}} else{continue;}} else if(xz==0){continue;} else{goto chalu;}}} for(i=0;i<m;i++){if(hired[i]==1000){county=county+1;} else{continue;}} cout<<count<<\" \"<<salarygot<<\" \"<<county;} else{goto chalu;}} else{goto chalu;} } } else{exit(0); }}else{exit(0);}} //This Code ",
+            "date": "Answered August 10, 2017",
+            "views": "166",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Ashish Singh",
+                    "user_href": "/profile/Ashish-Singh-1812"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vishal Tank",
+                "href": "/profile/Vishal-Tank-16"
+            },
+            "answer_text": "A SIGSEGV is an error(signal) caused by an invalid memory reference or a segmentation fault. You are probably trying to access an array element out of bounds or trying to use too much memory. Some of the other causes of a segmentation fault are : Using uninitialized pointers, dereference of NULL pointers, accessing memory that the program doesn\u2019t own. Source: Status Codes | CodeChef ",
+            "date": "Answered January 30, 2019",
+            "views": "158",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Nisarg Bhatt",
+                    "user_href": "/profile/Nisarg-Bhatt-21"
+                }
+            ]
+        }
+    ]
+}

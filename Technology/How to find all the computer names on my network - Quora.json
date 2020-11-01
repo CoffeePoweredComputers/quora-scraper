@@ -1,0 +1,37 @@
+{
+    "title": "How to find all the computer names on my network - Quora",
+    "tags": [
+        "Wi-Fi",
+        "Computer Networking",
+        "Computer Science Education",
+        "The Internet"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "James Ferris",
+                "href": "/profile/James-Ferris-3"
+            },
+            "answer_text": "hi and thanks for an excellent question. there are just as many ways to \u2018see\u2019 what\u2019s on a network as there are networks and OSs, so this answer can only be relevant for one or two, that I\u2019m familiar with. first: android - look for an app named \u2018Fing\u2019- this utility (free for basic use, and very powerful!) basically \u2018pings\u2019 all the local IP for a WiFi network. It will work from your cell phone or tablet as long as you are on WiFi, and it is a Private LAN (local area network \u2014 like for a home or small business).- along with the ping, it collects special data, as supplied by the ACK response, such as cpu network name and network interface MAC address - which supplies manufacturer - and then can gather additional information to list open Ports - which supplies data about services running on each machine second: Windows, linux, Unix, and MacOS - google for network utilities, or just read this wiki\u2026Network utility - Wikipedia.- this discusses all the built-in tools, such as Ping, TraceRoute, nsLookup, netstat, netsh, and ipConfig- plus has a link to the most useful network commands, and links to what each tool can be used for third: your LAN router - most modern routers have built in utilities which can at least list all the IP leased, and also list data very similar to what you obtain via Fing FYI I am not employed by Fing or in any way associated with it. and I find it to be a Very Useful network tool. Now if you are in a bigger business environment, this question would change immensely. But I\u2019m not particularly familiar with those tools - I used to know their names, and long to work with them in real time, but I\u2019ve even forgotten the names now. ",
+            "date": "Answered July 16, 2020",
+            "views": "79",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Som Dutt",
+                    "user_href": "/profile/Som-Dutt-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prem Kuni",
+                "href": "/profile/Prem-Kuni"
+            },
+            "answer_text": "You can only find all the devices connected to a network only if you\u2019re the administrator for the network or the devices connected are public. Devices connecting using private mode cannot be found unless you are controlling the network. If you\u2019re using windows Just run log in to the network and run a arp-a . This should give you all the connections. If you want more details there are plethora of scannign softwares available. I recommend Wireshark ",
+            "date": "Answered April 20, 2020",
+            "views": "100",
+            "upvotes": "0"
+        }
+    ]
+}

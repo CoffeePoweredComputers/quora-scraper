@@ -1,0 +1,98 @@
+{
+    "title": "How much faster is an NVMe SSD than a SATA SSD? - Quora",
+    "tags": [
+        "SATA",
+        "Solid-State Drives (SSD)",
+        "Hard Disk Drives (HDD)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Hahn",
+                "href": "/profile/Mark-Hahn-2"
+            },
+            "answer_text": "This is not a well-posed question, since there are slow NVMe whose performance dips lower than the bandwidth and latency of fast SATA. The better way to think of it is probably: The lower bound for SATA latency is probably around 100 us, but NVMe is mainly about the improved command/queue interface, which is how it gets down to 10 us. Which is still not that great, since PCIe devices can operate in the <1 us range (IB networks, for instance).The bandwidth actually depends on the number of channels of flash chips, though the interface also forms a limit. Mince a single modern flash chip is in the range of 400 MB/s, a single-channel NVMe controller, on the fastest PCIe possible, would not compare well to a decent SATA SSD (and could be matched by two ordinary spinning disks!)Particular workloads can care or be nearly oblivious to either factor. SSDs are mainly popular as a way to speed up seeky workloads like booting, and mainly in comparison to HDs (whose latency is 5\u201310 ms, so 40x slower). It\u2019s not all that clear that many people would notice dropping from 150 us to 50 us (SATA -> NVMe). There are also a few, very niche workloads that care about aggregate IOPS rather than latency. NVMe makes even more of a difference there because the interface offers much deeper queueing - but again, these are web/db-server things, not desktops. There are bandwidth-sensitive workloads as well, and a high-end NVMe can be a few GB/s (say, 3\u20136x faster than SATA). This is also relatively niche, since relatively few users perform sequential IO of that size (high-end media processing that is inexplicably not bottlenecked on compute - GPU-based transcoding, filtering perhaps?). Often, reporting in pop media will report only the peak data rate. That\u2019s impressive, but not entirely honest, since even if you can write at 3GB/s for 50-100G, the device is going to drop down to SATA bandwidth for anything extended. (This is because \u201cmodern\u201d flash trades off density (in bits-per-cell) for capacity, and QLC takes longer to write than MLC, etc). In other words, NVMe doesn\u2019t improve everything dramatically. ",
+            "date": "Answered February 8, 2019",
+            "views": "31",
+            "upvotes": " View 6 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Darrell Wicker",
+                    "user_href": "/profile/Darrell-Wicker-1"
+                },
+                {
+                    "user_id": "Null",
+                    "user_href": "/profile/Null-428"
+                },
+                {
+                    "user_id": "Wallace B. McClure",
+                    "user_href": "/profile/Wallace-B-McClure"
+                },
+                {
+                    "user_id": "Ryan Schlaffer",
+                    "user_href": "/profile/Ryan-Schlaffer-1"
+                },
+                {
+                    "user_id": "Varun Bandi",
+                    "user_href": "/profile/Varun-Bandi-6"
+                },
+                {
+                    "user_id": "Hariprasad Kannan",
+                    "user_href": "/profile/Hariprasad-Kannan-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yowan Rajcoomar",
+                "href": "/profile/Yowan-Rajcoomar"
+            },
+            "answer_text": "3.94 GB/s in theory if the M2 slot is used. NVME M2 SSDs run on-top PCI Express 3.0 x4 which offers a maximum link speed of 3.94 GB/s before any overhead. In fact, high end SSDs like the 960 Pro have already reached the 3.5 GB/s ceiling as far as sequential read throughput is concerned. However, on non-HEDT Intel systems, those SSDs will rarely achieve that maximum transfer rate because those PCIe 3.0 x4 lanes are electrically wired to the PCH (Chipset) PCIe controller which also shares bandwidth with the USB3, SATA3, Thunderbolt and Ethernet controllers. Not to mention that the CPU<=>PCH interconnect (DMI 3.0) which is essentially a PCIe 3.0 x4 link, is also limited to 3.94 GB/s. The Intel chipset itself splits those four lanes into 30 lanes (which Intel calls HSIO), 24 of which are usable but only 16 can be enabled for the PCIe slots (including M2 NVME). Depending on how the motherboard vendor configured the HSIO lane allocation, the PCIe 3.0 x4 lanes for the M2 slots could be multiplexed with the SATA and Gigabit Ethernet, which would effective decrease the bandwidth available to the SSD (see below).  On Ryzen, you could potentially achieve higher sustained transfer speeds because the PCIe 3.0 x4 link for the first M.2 slot is wired to the Ryzen PCIe controller which interfaces directly with the cores via Infinity Fabric. Note that desktop Ryzen skus have 24 lanes, i.e x4 for PCH link, x16 for single GPU or x8 + x8 for two GPUs and another x4 for M.2. Some enthusiast or entreprise-grade NVME SSDs may use PCIe Express x16 which would be wired to the second PCIe x16 slot (x8 electrically) on the mobo so you could in theory have better transfer rates. HEDT platforms which have more PCIe lanes are in theory not subjected to that DMI limitation since the M2 slots are directly mapped to the processor PCIe controller. This makes NVME RAID feasible and will grant you insane transfer rates. And if I\u2019m not mistaken, Threadripper and Skylake-X already support this feature. As for SSDs using legacy SATA3, which is already a huge bottleneck, their transfer rates is essentially limited to 600 MB/s. ",
+            "date": "Answered February 13, 2018",
+            "views": "135",
+            "upvotes": " View 22 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Darrell Wicker",
+                    "user_href": "/profile/Darrell-Wicker-1"
+                },
+                {
+                    "user_id": "Hank Zhang",
+                    "user_href": "/profile/Hank-Zhang-13"
+                },
+                {
+                    "user_id": "Artur Johny",
+                    "user_href": "/profile/Artur-Johny"
+                },
+                {
+                    "user_id": "Rony Kar",
+                    "user_href": "/profile/Rony-Kar"
+                },
+                {
+                    "user_id": "Robert Pesserl",
+                    "user_href": "/profile/Robert-Pesserl"
+                },
+                {
+                    "user_id": "\u0421\u0435\u0440\u0433\u0435\u0439 \u041a\u0430\u0440\u0430\u0442\u0430\u0447",
+                    "user_href": "/profile/\u0421\u0435\u0440\u0433\u0435\u0439-\u041a\u0430\u0440\u0430\u0442\u0430\u0447"
+                },
+                {
+                    "user_id": "Prateek Sharma",
+                    "user_href": "/profile/Prateek-Sharma-933"
+                },
+                {
+                    "user_id": "Pesclevei Dorin",
+                    "user_href": "/profile/Pesclevei-Dorin"
+                },
+                {
+                    "user_id": "Filip Vidak",
+                    "user_href": "/profile/Filip-Vidak"
+                },
+                {
+                    "user_id": "John Stampfel",
+                    "user_href": "/profile/John-Stampfel-1"
+                }
+            ]
+        }
+    ]
+}

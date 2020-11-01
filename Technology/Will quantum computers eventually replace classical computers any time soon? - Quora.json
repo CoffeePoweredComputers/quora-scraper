@@ -1,0 +1,807 @@
+{
+    "title": "Will quantum computers eventually replace classical computers any time soon? - Quora",
+    "tags": [
+        "Quantum Computing",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Borislav Agapiev",
+                "href": "/profile/Borislav-Agapiev"
+            },
+            "answer_text": "No, quantum computers will not displace classical computers completely, they will be used for special classes of problems where they will be proven superior.  Currently, as of 2019, such problems are mostly in cryptography, but other fields are slowly coming into the picture, e.g. recent breakthrough result by Ewin Tang who designed a new quantum-inspired classical algorithm that exponentially (!) improves on the previous best one. Her great result shows the quantum recommendation algorithm by Kerenidis and Prakash that was thought to be a showcase of exponential quantum speedup over classical is actually not so. Ewin Tang did it in a surprising way, by discovering a much faster classical algorithm, thus delaying, for the time being, quantum supremacy thought to be the case for recommendations. She has been working on generalizing her results to a new class of classical algorithms that are quantum-inspired and for which quantum supremacy, i.e. exponential speedup, is not true. There are two core problems right now with quantum computing that are to be solved and on which the fate of adoption of quantum computers will hinge: Hardware realization - which is a very tough problem as just getting a limited number of qubits to be in coherent states of entanglement for even very short periods is turning out to be very difficult. Qubits can become worthless very quickly and easily if quantum decoherence occurs.Software - programming of quantum computers is an incredibly difficult problem , with conceptual strangeness and complexity never seen before. At this point the basic quantum gates are well known, but we are currently at a loss how to define higher level programming constructs and come up with high-level quantum programming languages. Think of e.g. parallel programming which is even now an unsolved problem for general instruction streams and automatic extraction of parallelism. Quantum computing is (much) harder.One of the principal reasons why quantum algorithms and programming is so hard is because quantum computers exhibit speedups by very strange and poorly understood quantum interference effects where quantum cancellation of waves occurs. we are basically trying to harness this quantum interference by formulating a quantum solution where unwanted paths cancel (see a great presentation by Scott Aaronson on this subject).  In the early days of computers, it was relatively obvious how to come up with high-level programming constructs such as loops, conditionals, subroutines etc. This problem appears much harder for quantum computers. The current difficulties with quantum computing hardware realizations and software programming do not necessarily have to be insurmountable. We will likely come up with solutions. But we already know that quantum computers will not be a miracle solvers for any NP-complete problem, as some naive interpretations claim. They will most likely evolve to a separate class of computing used to solve and accelerate certain problems, along with classical computers. ",
+            "date": "Answered March 21, 2019",
+            "views": "42",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Daniel R. Page",
+                    "user_href": "/profile/Daniel-R-Page"
+                },
+                {
+                    "user_id": "Vijay Khare",
+                    "user_href": "/profile/Vijay-Khare-12"
+                },
+                {
+                    "user_id": "Arrobin Smith",
+                    "user_href": "/profile/Arrobin-Smith"
+                },
+                {
+                    "user_id": "Tray Plyler",
+                    "user_href": "/profile/Tray-Plyler"
+                },
+                {
+                    "user_id": "Sunil Patil",
+                    "user_href": "/profile/Sunil-Patil-489"
+                },
+                {
+                    "user_id": "Saeed Tafazzol",
+                    "user_href": "/profile/Saeed-Tafazzol"
+                },
+                {
+                    "user_id": "Tamirat Tilahun",
+                    "user_href": "/profile/Tamirat-Tilahun"
+                },
+                {
+                    "user_id": "Ananthu",
+                    "user_href": "/profile/Ananthu-19"
+                },
+                {
+                    "user_id": "Galen Matson",
+                    "user_href": "/profile/Galen-Matson"
+                },
+                {
+                    "user_id": "P\u00e1ll Haraldsson",
+                    "user_href": "/profile/P\u00e1ll-Haraldsson"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Pascal Heus",
+                "href": "/profile/Pascal-Heus"
+            },
+            "answer_text": "No. Not anytime soon, and certainly not the way you may think of it. First quantum computers are still a long way down the road (the problem being the engineering, not the theory).You may see systems emerge, most likely designed to solve a very specific problem, and some possibly \u201cprogrammable\u201d to a certain point (like D-Wave). But do not expect this to be your desktop or laptop. These systems will live in a remote facility or in the cloud and available as a service. But most importantly, it is fundamental to understand that quantum computers only fare better than classic systems when it comes to solve a very particularly category or class of problems (non-polynomial or NP), in other cases, their classic counterpart will perform as well or even better. We also only know today a handful of quantum algorithms (it\u2019s not obvious to program), and while in theory they should perform better, the \u201coptimized\u201d classic version can often easily beat them (Groover search being a good example). So the most likely scenario is that both classic and quantum computers will simply co-exist, the quantum system being there to complement the classic system when it comes to solve specific problems that would other take a long time to compute. I see this a bit similar to the \u201cco-processor\u201d. This is why is it important in my view for quantum computers, whenever they truly materialize, to be designed for interoperability with classic systems (e.g. cloud, web services, co-processing hardware). ",
+            "date": "Answered June 5, 2017",
+            "views": "12",
+            "upvotes": " View 54 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sanjay Sood",
+                    "user_href": "/profile/Sanjay-Sood-8"
+                },
+                {
+                    "user_id": "Jens Oliver Gutsfeld",
+                    "user_href": "/profile/Jens-Oliver-Gutsfeld"
+                },
+                {
+                    "user_id": "Barry Rountree",
+                    "user_href": "/profile/Barry-Rountree"
+                },
+                {
+                    "user_id": "Bob Barnes",
+                    "user_href": "/profile/Bob-Barnes-10"
+                },
+                {
+                    "user_id": "Fernando Gutierrez Torres",
+                    "user_href": "/profile/Fernando-Gutierrez-Torres"
+                },
+                {
+                    "user_id": "Owen Andersson",
+                    "user_href": "/profile/Owen-Andersson"
+                },
+                {
+                    "user_id": "Johnathan Black",
+                    "user_href": "/profile/Johnathan-Black-2"
+                },
+                {
+                    "user_id": "\u00c0aron Smith",
+                    "user_href": "/profile/\u00c0aron-Smith"
+                },
+                {
+                    "user_id": "Damian Szajnowski",
+                    "user_href": "/profile/Damian-Szajnowski"
+                },
+                {
+                    "user_id": "John Jimenez",
+                    "user_href": "/profile/John-Jimenez-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Mark Tomlinson",
+                "href": "/profile/William-Mark-Tomlinson"
+            },
+            "answer_text": "I agree totally with Pascal Heus\u2019 answer. I have been researching the latest info on quantum computers. Some scientist now believe that the human brain is a quantum computer, and that life itself would not be possible without quantum mechanics. Quantum computers are thought to be very fast for a particular type of problem. I read about an example problem that involved a complicated travel itinerary. Say you need to fly from Atlanta to Sydney with multiple stop overs for 2 -3 days in NY, London, and Paris,and Amsterdam. Your company is frugal and they want you to get the lowest price possible. Check all available airlines and all schedules factoring in any available promotions, advance purchase requirements, and frequent flier specials. Every leg of your travels could be a different airline. This problem probably has millions of possible outcomes and a quantum computer can check all possibilities simultaneously. Quantum computing is best at problems with many variables and unlimited possible outcomes. Experts say that with the most advanced quantum computers, it would only take days, hours or even minutes to solve problems that would take billions of years using classical computers (yes, you read that right: billions of years\u2026). Or: quantum computers may one day be able to perform more calculations simultaneously than there are atoms in the known universe. To date, no quantum computer has solved a problem faster than a classical computer. That level of performance is still theoretical, and a long way off. Yet after decades of pursuing this holy grail of computing, quantum computers are finally on the brink of viability \u2013 and that\u2019s huge news. Although quantum computing is still in its infancy, there\u2019s no question that a new age of computing has arrived \u2013 and it promises to impact every sector of society before long. ",
+            "date": "Answered June 27, 2019",
+            "views": "890",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sullay Sinnah",
+                    "user_href": "/profile/Sullay-Sinnah-2"
+                },
+                {
+                    "user_id": "Joanna Parisi",
+                    "user_href": "/profile/Joanna-Parisi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nate Bremmer",
+                "href": "/profile/Nate-Bremmer"
+            },
+            "answer_text": "Does your computer have a graphics card? Some people need it if they have specific demands for high-powered floating point computing, but some people don't. As foreseeable technology exploiting quantum-level phenomena appears now, that may be akin to how they could be used.  Any classical circuit can be designed in theory as a quantum circuit with Toffoli gates, but the as-yet few extant quantum algorithms limit the beneficial uses of quantum computation in practice to niche applications that your iPhone or laptop don't really need. For most computations a quantum computer would only be as fast as a classical computer (or slower), so it would be most useful as an auxiliary unit. Of the many models for quantum computing being developed (ion-trap, annealing, topological) the gate model would provide the universal functionality required for a CPU but it also seems to be the hardest to implement. Of course, the biggest roadblock to theorists so readily assumed that it's easy to forget: the current angle on quantum computing schemes dictates these designs operate in nearly impossible physical conditions including extreme cold and low magnetic interference, all of which preclude it from being employed widely.  But it's hardly a dead end. Classical computing bounced around various mechanical, physical and electrical designs until Shockley & co. invented the transistor, which proved to be the breakthrough needed to take computing mainstream. Take a look at the annealing device above: you can actually see the individual qubits that comprise the computing apparatus itself. It's still in the early years of quantum development so it just might take an innovation or two to take it mainstream. ",
+            "date": "Updated March 22, 2016",
+            "views": "149",
+            "upvotes": " View 46 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sally Zelerea",
+                    "user_href": "/profile/Sally-Zelerea"
+                },
+                {
+                    "user_id": "Joanna Parisi",
+                    "user_href": "/profile/Joanna-Parisi"
+                },
+                {
+                    "user_id": "Bhavya Srivastva",
+                    "user_href": "/profile/Bhavya-Srivastva"
+                },
+                {
+                    "user_id": "Melroy Dsouza",
+                    "user_href": "/profile/Melroy-Dsouza-10"
+                },
+                {
+                    "user_id": "Ammar Zidan",
+                    "user_href": "/profile/Ammar-Zidan-2"
+                },
+                {
+                    "user_id": "Akash Levy",
+                    "user_href": "/profile/Akash-Levy"
+                },
+                {
+                    "user_id": "Siranat Usawasutsakorn",
+                    "user_href": "/profile/Siranat-Usawasutsakorn"
+                },
+                {
+                    "user_id": "Ketan Deshmukh",
+                    "user_href": "/profile/Ketan-Deshmukh-25"
+                },
+                {
+                    "user_id": "Bennett Dunn",
+                    "user_href": "/profile/Bennett-Dunn"
+                },
+                {
+                    "user_id": "Vimal Tirkey",
+                    "user_href": "/profile/Vimal-Tirkey"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Scott Alexander",
+                "href": "/profile/Scott-Alexander-27"
+            },
+            "answer_text": "Quantum computer is something of a misnomer. Quantum computers perform a set of specialized operations. I usually use the analogy of a floating point unit. A good analogy would be a graphics chip. For certain computations, it can outperform a classical computer, but that doesn't mean that I want to move all of my computation there. Thus, if quantum computing is viable, I expect that we'll see quantum computing coprocessors in classical computers. I expect adoption to happen much as it happened with classical computing: First, there will be a few very expensive units dedicated to quantum computing. Eventually, there will be some universities that have quantum computing centers where it is possible to get some cycles on their quantum computer if you have the right combination of money and access. For example, the NSF might buy a quantum computer for a university for such a center and then the center will allow other researchers doing NSF-funded research access. As the prices continue to drop, then medium-sized companies will get them and eventually there will be units in your phone. Of course, some of this depends on how useful quantum computers are in daily computation. Currently, we have few practical quantum computing algorithms. If factoring and search of large, unsorted datasets are the only practical uses, then quantum coprocessors will be specialized devices that are purchased by people who have those needs. (In all of this, I ignore D-Wave since they do not provide a general quantum computer. However, their technology has started on the same curve with a few sold.) ",
+            "date": "Answered March 20, 2016",
+            "views": "59",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bob Giles",
+                    "user_href": "/profile/Bob-Giles-1"
+                },
+                {
+                    "user_id": "Thomas Appelflap",
+                    "user_href": "/profile/Thomas-Appelflap"
+                },
+                {
+                    "user_id": "Philip Butkus",
+                    "user_href": "/profile/Philip-Butkus"
+                },
+                {
+                    "user_id": "Galen Matson",
+                    "user_href": "/profile/Galen-Matson"
+                },
+                {
+                    "user_id": "Arul Bose",
+                    "user_href": "/profile/Arul-Bose-2"
+                },
+                {
+                    "user_id": "Kevin Zhang",
+                    "user_href": "/profile/Kevin-Zhang-334"
+                },
+                {
+                    "user_id": "Ian Davis",
+                    "user_href": "/profile/Ian-Davis-93"
+                },
+                {
+                    "user_id": "Robin Rademaker",
+                    "user_href": "/profile/Robin-Rademaker-1"
+                },
+                {
+                    "user_id": "Bennett Dunn",
+                    "user_href": "/profile/Bennett-Dunn"
+                },
+                {
+                    "user_id": "Josh Greig",
+                    "user_href": "/profile/Josh-Greig"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Filipe M. Cross",
+                "href": "/profile/Filipe-M-Cross"
+            },
+            "answer_text": "Lets see... D-Wave, a company based in Burnaby, Canada, has been selling quantum computers since 2011, The one you can buy today has a few requirements you may find difficult to get in your home. But it is not impossible.  \"It is Built around \u201cqubits\u201d rather than \u201cbits\u201d (qubits, can take the values 0 and 1 at the same time) A lattice of 1000 tiny superconducting circuits, known as qubits, is chilled close to absolute zero to get quantum effects Cooled to 180x colder than interstellar space (0.015 Kelvin) Shielded to 50,000\u00d7 less than Earth\u2019s magnetic field In a high vacuum: pressure is 10 billion times lower than atmospheric pressure 192 i/o and control lines from room temperature to the chip \"The Fridge\" and servers consume just 25kW of power\" The D-Wave 2X\u2122 System  \"D-Wave\u2019s Colin Williams is more certain, pointing out that the company\u2019s device finds the best solution in a very different way to regular algorithms. In a classical system, the solutions are poor to begin with but rapidly improve, and then they slowly converge on the best answer. D-Wave\u2019s computer reaches the best solution almost instantly. \u201cI\u2019ve never seen anything like that in a classical algorithm before.\u201d Commercial quantum computer leaves PC in the dust  Will you have a Quantum computer at home soon? I do not think so. But I am sure it will happen, one day. ",
+            "date": "Updated March 20, 2016",
+            "views": "317",
+            "upvotes": " View 98 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Steven S",
+                    "user_href": "/profile/Steven-S-50"
+                },
+                {
+                    "user_id": "Abhinav Bhatnagar",
+                    "user_href": "/profile/Abhinav-Bhatnagar-3"
+                },
+                {
+                    "user_id": "Vimal Tirkey",
+                    "user_href": "/profile/Vimal-Tirkey"
+                },
+                {
+                    "user_id": "Rugal Dourandi",
+                    "user_href": "/profile/Rugal-Dourandi"
+                },
+                {
+                    "user_id": "Aldy Koessurya",
+                    "user_href": "/profile/Aldy-Koessurya"
+                },
+                {
+                    "user_id": "Austin Hushower",
+                    "user_href": "/profile/Austin-Hushower"
+                },
+                {
+                    "user_id": "Aleksandra Kamburova",
+                    "user_href": "/profile/Aleksandra-Kamburova"
+                },
+                {
+                    "user_id": "Ed Soniat",
+                    "user_href": "/profile/Ed-Soniat"
+                },
+                {
+                    "user_id": "Zain Jafri",
+                    "user_href": "/profile/Zain-Jafri-13"
+                },
+                {
+                    "user_id": "Oliver Groves",
+                    "user_href": "/profile/Oliver-Groves-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bernard Andrews",
+                "href": "/profile/Bernard-Andrews-2"
+            },
+            "answer_text": "Currently it seems unlikely to impossible that quantum computers will be anything other than a highly specialised and limited tool. The theoretical advantages of quantum computers (the ability to represent and calculate the results of problems that would be impossible or ridiculously slow to deal with on conventional/classical computers) are part of a massive barrier to scaling them to sizes that would make them widely useful. Experts estimate that the number of qubits (quantum bits that can take more than only two states) needed for a useful quantum computer, one that could compete with your laptop in solving certain kinds of interesting problems, is between 1,000 and 100,000. So the number of continuous parameters describing the state of such a useful quantum computer at any given moment must be at least 2 to the power of 1,000, which is to say about 10 to the power of 300. That\u2019s a very big number indeed. How big? It is much, much greater than the number of subatomic particles in the observable universe (That's without adding in error correction which may need 1000 to 100,000 physical qubits to provide one reliable logical qubit). To repeat: A useful quantum computer needs to process a set of parameters that is larger than the number of subatomic particles in the observable universe. I have read many comments saying that it's only a matter of solving engineering problems but in attempting a physical description of this possible future technology, any honest hardheaded engineer is just going to loose interest. The Case Against Quantum Computing ",
+            "date": "Answered November 15, 2018",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Xia Ping",
+                    "user_href": "/profile/Xia-Ping-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Steve Adams",
+                "href": "/profile/Steve-Adams-213"
+            },
+            "answer_text": "No. Very few people can afford a quantum computer. And most homes are provided with no more than a 200 Ampere drop from the electric utility company. So there is simply not enough power in the typical home to run the refrigeration needed to keep the operating temperatures of almost 440 below 0 fahrenheit to run the thing. (Quantum computers have to be operated at a few degrees above absolute zero) And the power to run the thing is another matter\u2026\u2026 I really am surprised at the number of questions on quora that seem to treat quantum computers as potentially the next generation personal computer. They are ridiculously expensive, take a large amount of space, and a support team to keep them operational. Unless you have a mission critical need for several orders of magnitude more computing power than the vast majority of people need, they are way considerably more expensive and complicated to deal with than anyone wants to bother with. ",
+            "date": "Answered March 20, 2019",
+            "views": "472",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Arul Bose",
+                    "user_href": "/profile/Arul-Bose-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Rutledge",
+                "href": "/profile/Michael-Rutledge-1"
+            },
+            "answer_text": "I don\u2019t believe that it ever will. Quantum computing and classical computing are method of computation for solving completely different problems. There are some problems that are well suited to quantum computing, and some problems that are well suited to classical computing. For example the traveling salesman problem is an excellent example of a problem for which a quantum computing environment is a good solution. However something like sorting a very large list alphabetically, say a database sorting email addresses, is not a problem well suited to quantum computing and better served by classical computing. I believe that ultimately the approach will evolve into a hybrid computing environment with a modern processor and a quantum co-processor for specific applications, similar to how you have a GPU dedicated to geometric calculations and it complements your desktop CPU in order to provide the best performance. ",
+            "date": "Answered October 3, 2018",
+            "views": "911",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jussi Salmi",
+                    "user_href": "/profile/Jussi-Salmi-1"
+                },
+                {
+                    "user_id": "Dirac Drynx",
+                    "user_href": "/profile/Dirac-Drynx"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "shivam pandey",
+                "href": "/profile/shivam-pandey-174"
+            },
+            "answer_text": "Regardless of how powerful and widespread quantum computers will be in decades to come, the basic research being undertaken to construct these machines is already very useful in the construction of classical systems. One of the most promising uses for quantum computing today involves the use of single atoms coupled to silicon transistors. That is, the exact same components used in classical computers but scaled to single atoms. In this way, many of the things we learn in the pursuit of a quantum computer can be reused for the purpose of pushing classical ones yet a step further. Quantum computing won\u2019t provide us with a replacement to classical computers if and when Moore\u2019s Law comes to consideration but it will help solve some interesting and challenging problems in computing. Every new generation of computer hardware has roughly twice the processing power of the version two years before it. It\u2019s a phenomenon known as Moore\u2019s Law and it\u2019s held true for nearly 50 years. ",
+            "date": "Answered April 30, 2018",
+            "views": "994",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Sailaja",
+                    "user_href": "/profile/Sailaja-35"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bill C. Riemers",
+                "href": "/profile/Bill-C-Riemers-1"
+            },
+            "answer_text": "In 1946 the ENIAC cost about $400,000 to build, which is about $5 billion dollars today\u2026. In today\u2019s costs that is about the same as a quantum computer. But these are not general purpose quantum computers, but built for a specific task, like ENIAC. By 1980 general purpose digital computers were so common and cheap I could buy one with paper route money\u2026 So it is reasonable expect in 35 years time everyone will be able to afford a general purpose quantum computer. But keep in mine this would be the quantum computer equivalent of a VIC20 or TSR80. Meanwhile digital computers will have advanced by another 35 years. So more likely that quantum computer would be an add on like a math accelerator in the 80\u2019s, or a graphics card today. Just though as math accelerators were integrated in and now graphics cards, in say 50 to 60 years ago digital and quantum computers would be so seamlessly integrated together, there will be no distinction. We\u2019ll just call them computers. ",
+            "date": "Answered August 11, 2019",
+            "views": "437",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Klemen Stru\u0161nik",
+                "href": "/profile/Klemen-Stru\u0161nik"
+            },
+            "answer_text": "Definitely. Moore's Law states that the processing power of a computer will double each year. Processors are built out of transistors, more of them means faster computing capabilities. But unfortunately we are limited to the amount of transistors we can pack into the space of a processor. And the current Intel CEO Brian Krzanich is saying that Moore's Law is coming to an end and that people might not notice the differences in speed with new generations of laptops or phones. Quantum computing is a potential candidate to replace traditional processors. Here are some advantages and disadvantages of the latest quantum technology the D-Wave 2X quantum computer: cannot be used on conventional algorithms needs to be cooled near absolute zero faster computing capabilities (up to 15x with a customized parallelization approach)low power consumption (25kW compared to traditional supercomputer 3000kW) Sources: The D-Wave 2X\u2122 System International Journal of Engineering and Advanced Technology Why the era of Moore's Law may be coming to an end  ",
+            "date": "Answered March 18, 2016",
+            "views": "33",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nishant Sharma",
+                    "user_href": "/profile/Nishant-Sharma-1306"
+                },
+                {
+                    "user_id": "Muhammad Hakim",
+                    "user_href": "/profile/Muhammad-Hakim-35"
+                },
+                {
+                    "user_id": "Manica Markelj",
+                    "user_href": "/profile/Manica-Markelj"
+                },
+                {
+                    "user_id": "Basile Starynkevitch",
+                    "user_href": "/profile/Basile-Starynkevitch"
+                },
+                {
+                    "user_id": "Issam Mahmoudi",
+                    "user_href": "/profile/Issam-Mahmoudi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "David Johnston",
+                "href": "/profile/David-Johnston-147"
+            },
+            "answer_text": "No. At least not any time in the foreseeable future. First they have to exist. I guess they sorta exist but that needs to become less controversial. Quantum computers are only useful for solving problems that are intractable for classical computers. They get around certain problems of combinatorics. There is no need for them to replace classical computers for most of the things we use computers for now because they would just be more expensive and not any better. ",
+            "date": "Answered January 27, 2020",
+            "views": "246",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Yi Xiang Chong",
+                    "user_href": "/profile/Yi-Xiang-Chong"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Bob Castleman",
+                "href": "/profile/Bob-Castleman"
+            },
+            "answer_text": "Maybe. But it\u2019s not the right question. Technologically, it\u2019s a long way off. Room temperatures aren\u2019t a good fit for quantum coherence. Besides, they\u2019re barely out of the lab and doing real work. The real question is why? No manufacturer is going to make quantum capable end user devices without a use case that supports the R&D. There might be some potential in end to end encryption. Bu most of what consumer grade devices doesn\u2019t need quantum computing. Never say never, but I doubt it will happen in my lifetime. ",
+            "date": "Answered March 21, 2019",
+            "views": "201",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rich Hochstim",
+                "href": "/profile/Rich-Hochstim"
+            },
+            "answer_text": "No, for most applications there will only be disadvantages to using quantum computers. Classical computers will continue to do what they do well (and to improve). No one will even consider using far more complex, problematic, and expensive quantum systems for tasks where there is no advantage in doing so. What Sorts Of Problems Are Quantum Computers Good For? \"\u2026shifting to quantum computing is really only going to pay off in a big way for a limited set of possible problems. Most of the time, the process of engineering quantum waves to do a calculation, and protecting them from outside interference long enough for that calculation to finish, is just more hassle than it's worth.\" \"For a small subset of problems, though, quantum mechanics makes a dramatic difference.\" ",
+            "date": "Answered July 30, 2019",
+            "views": "279",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Valdis Kl\u0113tnieks",
+                "href": "/profile/Valdis-Kl\u0113tnieks"
+            },
+            "answer_text": "WIll quantum computers replace classical computers or are they so different that both will be common? To the best of our current knowledge, quantum computers can do some things very fast - but only if the problem can be expressed in terms of something called Shor\u2019s Algorithm or one of the few other algorithms discovered. Now, Shor\u2019s algorithm can factor large numbers, and other algorithms can solve a lot of problems, such as optimization problems (\u201cwhat\u2019s the shortest path to visit all the cities on this list\u201d, \u201cwhat mix of 15 different investments has the highest overall return\u201d, etc), and a bunch of other stuff. And people are interested, because if you can spend a few million dollars on a quantum computer to make better decisions on billions of dollars, it\u2019s a good deal. So lots of quantum computers will get sold to organizations that need answers to these sorts of questions. But here\u2019s the thing: Shor\u2019s algorithm, or any other quantum algorithm, won\u2019t make your web browser run faster. It won\u2019t make Microsoft Office faster. It won\u2019t make Skype or your video game run better. For 99.999998% or so of the things the *rest* of the world is doing, we\u2019re going to be using binary-based digital computers for a *long* time. ",
+            "date": "Updated January 11, 2020",
+            "views": "939",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jos\u00e9 Morataya",
+                    "user_href": "/profile/Jos\u00e9-Morataya-1"
+                },
+                {
+                    "user_id": "Robert Akridge",
+                    "user_href": "/profile/Robert-Akridge-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alec Cawley",
+                "href": "/profile/Alec-Cawley"
+            },
+            "answer_text": "No, except in very restricted areas. Quantum Computers may be able to solve particular mathematical problems much faster than classical computers. But most computers are not used for solving mathematical problems. They are mostly used for communications and control - where I could generating displays as a form of communications. The amount of heavy maths done by most computers is limited to the transforms used for video compression.  Quantum Computers may replace supercomputers in some applications, such as large scale simulations. But I do not see them in homes - people just don't ask that sort of question. Nor in the Internet infrastructure. ",
+            "date": "Answered March 22, 2016",
+            "views": "2",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vimal Tirkey",
+                    "user_href": "/profile/Vimal-Tirkey"
+                },
+                {
+                    "user_id": "Muhammad Hakim",
+                    "user_href": "/profile/Muhammad-Hakim-35"
+                },
+                {
+                    "user_id": "Misha Erementchouk",
+                    "user_href": "/profile/Misha-Erementchouk"
+                },
+                {
+                    "user_id": "Manzhuur Pontoh",
+                    "user_href": "/profile/Manzhuur-Pontoh"
+                },
+                {
+                    "user_id": "Zouhair El Yaagoubi",
+                    "user_href": "/profile/Zouhair-El-Yaagoubi-1"
+                },
+                {
+                    "user_id": "Bart Loews",
+                    "user_href": "/profile/Bart-Loews"
+                },
+                {
+                    "user_id": "Louis Henwood",
+                    "user_href": "/profile/Louis-Henwood"
+                },
+                {
+                    "user_id": "Ross Rheingans-Yoo",
+                    "user_href": "/profile/Ross-Rheingans-Yoo"
+                },
+                {
+                    "user_id": "Tilman Ahr",
+                    "user_href": "/profile/Tilman-Ahr"
+                },
+                {
+                    "user_id": "Scott Alexander",
+                    "user_href": "/profile/Scott-Alexander-27"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Cornelius Goodale",
+                "href": "/profile/Cornelius-Goodale"
+            },
+            "answer_text": "Probably, but, over the internet, dumb terminals at home, similar to: The Virtual Microscope is a NASA-funded project that provides simulated scientific instrumentation for students and researchers worldwide as part of NASA's Virtual Laboratory initiative . . . Virtual Microscope Bugscope Home . . . The Bugscope project provides free interactive access to a scanning electron microscope (SEM) so that students anywhere in the world can explore the microscopic world of insects. This educational outreach program from the Beckman Institute's Imaging Technology Group at the University of Illinois supports K-16 classrooms worldwide . . . Bugscope: Home ",
+            "date": "Answered March 19, 2019",
+            "views": "201",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Brian Newman",
+                "href": "/profile/Brian-Newman-8"
+            },
+            "answer_text": "I believe they will. Most computer software doesn\u2019t and will never require it. Quantum computers are particularly used for special applications. You\u2019ve read this in all the other answers. BUT, I believe we\u2019ll come to a point where the firewalls on classical computers just will not be able to resist sophisticated attacks from quantum computers. This will lead to quantum computers becoming more ubiquitous. ",
+            "date": "Answered September 29, 2020",
+            "views": "99",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Allan Steinhardt",
+                "href": "/profile/Allan-Steinhardt"
+            },
+            "answer_text": "Quantum computers will never replace classical computers. Never ever no way! They have awesome powers but also horrific theoretical limitations.  Among their limitations:   No ability to monitor computations directly or store results (see no cloning theorem)No ability to interact with other computers or the internetLimited to time reversible unitary operations making many tasks messy  ",
+            "date": "Answered March 24, 2016",
+            "views": "25",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Philip Rodriguez",
+                    "user_href": "/profile/Philip-Rodriguez-14"
+                },
+                {
+                    "user_id": "Zbv Zbv",
+                    "user_href": "/profile/Zbv-Zbv"
+                },
+                {
+                    "user_id": "Bernard Andrews",
+                    "user_href": "/profile/Bernard-Andrews-2"
+                },
+                {
+                    "user_id": "Vimal Tirkey",
+                    "user_href": "/profile/Vimal-Tirkey"
+                },
+                {
+                    "user_id": "M\u00fcge Mine",
+                    "user_href": "/profile/M\u00fcge-Mine"
+                },
+                {
+                    "user_id": "Camille St. Omer",
+                    "user_href": "/profile/Camille-St-Omer"
+                },
+                {
+                    "user_id": "Aur\u00e9lien",
+                    "user_href": "/profile/Aur\u00e9lien-6"
+                },
+                {
+                    "user_id": "Muhammad Hakim",
+                    "user_href": "/profile/Muhammad-Hakim-35"
+                },
+                {
+                    "user_id": "Ahmet Ssn",
+                    "user_href": "/profile/Ahmet-Ssn"
+                },
+                {
+                    "user_id": "Kushagra Singh",
+                    "user_href": "/profile/Kushagra-Singh-227"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Michael",
+                "href": "/profile/Peter-Michael-91"
+            },
+            "answer_text": "Quantum computers are useless to general users who do traditional stuff on a computer, internet, email, word processing, chatting, graphics, all binary tasks and gaming. So they will probably never be useful for people. They would however be invaluable for people who need to do research and calculations into theories and physics that might be needed to achieve things like warp drive, space and time relationships, faster than light travel, pulse frequency propagation, time and material effects of plasma streams and the like. ",
+            "date": "Answered May 16, 2019",
+            "views": "275",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Robert Akridge",
+                    "user_href": "/profile/Robert-Akridge-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nelson Ricks",
+                "href": "/profile/Nelson-Ricks"
+            },
+            "answer_text": "Nope. Quantum Computers wont. They are not better than current Processors you see today, but rather in special area. Think about the Graphics Processing Unit. It\u2019s used only to boost your graphics, and doesnt control the whole computer, right? Similarly, Quantum Processors are more specialized. What would take over classical computers eventually, isnt quantum, but photonic computers, because photonic computers are regular computers that simply use light. ",
+            "date": "Answered March 15, 2018",
+            "views": "731",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Russell Pollard",
+                    "user_href": "/profile/Russell-Pollard-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carlos Melbrook",
+                "href": "/profile/Carlos-Melbrook"
+            },
+            "answer_text": "Due to the fact that modern day quantum computers require larger amounts of cooling, laser, electromagnetic fields, etc to keep them running it\u2019s unlikely they\u2019ll become small enough to replace PCs or anything similar anytime soon. Although they could be used to make supercomputers, since For them size isn\u2019t a problem ",
+            "date": "Answered November 30, 2018",
+            "views": "273",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tech Blogs",
+                "href": "/profile/Tech-Blogs-8"
+            },
+            "answer_text": "No, Quantum Computers can not replace our normal computers because they are very enormous for rooms and need an efficient cooling system. A Quantum Computer needs a temperature of -460 Fahrenheit to keep it working. They are also very expensive, it would cost you an arm and a leg to purchase it. For more info on Quantum computer and how they work, please visit: atechblogs ",
+            "date": "Updated April 23, 2020",
+            "views": "82",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Tyler Johns",
+                "href": "/profile/Tyler-Johns-4"
+            },
+            "answer_text": "Are quantum computers likely to replace conventional computers in the near future? Nope. Quantum computers are only useful for a small set of problem domains that you don\u2019t typically see done on personal computers. Meanwhile, classical computers, like the one you almost certainly used to type this question, are much more generalized. If the general population ever does have access to quantum computing, my guess is that it will mostly be through a cloud-like infrastructure that allows you to rent computing time on a quantum computer. ",
+            "date": "Answered March 13, 2019",
+            "views": "347",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Zachary Zanussi",
+                "href": "/profile/Zachary-Zanussi"
+            },
+            "answer_text": "No, they don\u2019t do anything that the average person would ever want to do in their everyday life. If they ever did, there will be services to outsource your calculation on someone else\u2019s quantum computer (in fact, there already is). Not to mention that they are huge (and likely will never get very small like classical computers did) and very expensive (partly because you need to super cool the parts of the computer). ",
+            "date": "Answered March 21, 2019",
+            "views": "140",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Floyd Baker",
+                "href": "/profile/Floyd-Baker-8"
+            },
+            "answer_text": "Never. People just like to label everything quantum but there is nothing really possible in that direction. QT is an attempt to create an imagined digital copy of the analog universe. IMHO ",
+            "date": "Updated October 30, 2019",
+            "views": "118",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arul Bose",
+                    "user_href": "/profile/Arul-Bose-2"
+                },
+                {
+                    "user_id": "Yves Mulkers",
+                    "user_href": "/profile/Yves-Mulkers"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Franz Plochberger",
+                "href": "/profile/Franz-Plochberger"
+            },
+            "answer_text": "My opinion is, that Quantum Computer as type will never come, but Quantum Circuits will come for special orders (encryption, mathematically specialities).  So Quantum Computers will not replace classical computers in all cases.  ",
+            "date": "Answered March 19, 2016",
+            "views": "19",
+            "upvotes": " View 7 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Bernard Andrews",
+                    "user_href": "/profile/Bernard-Andrews-2"
+                },
+                {
+                    "user_id": "Muhammad Hakim",
+                    "user_href": "/profile/Muhammad-Hakim-35"
+                },
+                {
+                    "user_id": "Tejas Garhewal",
+                    "user_href": "/profile/Tejas-Garhewal-1"
+                },
+                {
+                    "user_id": "Nate Bremmer",
+                    "user_href": "/profile/Nate-Bremmer"
+                },
+                {
+                    "user_id": "Basile Starynkevitch",
+                    "user_href": "/profile/Basile-Starynkevitch"
+                },
+                {
+                    "user_id": "Godfrey McDonnell",
+                    "user_href": "/profile/Godfrey-McDonnell"
+                },
+                {
+                    "user_id": "Issam Mahmoudi",
+                    "user_href": "/profile/Issam-Mahmoudi"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carlo Traverso",
+                "href": "/profile/Carlo-Traverso-1"
+            },
+            "answer_text": "No. Not only quantum computers have difficulties in scaling, and can only give a probabilistic answer, but they lack an essential feature: they cannot execute an if\u2026then\u2026else command. They are essentially vectorial processors, as soon as you query a value, this ends the computation, and you cannot continue. So classical computers are better than a quantum computer for some tasks. ",
+            "date": "Answered September 12, 2018",
+            "views": "481",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tamirat Tilahun",
+                    "user_href": "/profile/Tamirat-Tilahun"
+                },
+                {
+                    "user_id": "Arul Bose",
+                    "user_href": "/profile/Arul-Bose-2"
+                },
+                {
+                    "user_id": "Bernard Andrews",
+                    "user_href": "/profile/Bernard-Andrews-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Stephen Walters Esq",
+                "href": "/profile/Stephen-Walters-Esq"
+            },
+            "answer_text": "No, As there very few machines that actually work, and few that do are huge, difficult to use and expensive to maintain, I would guess 20+ years before this kind of power hits anyone\u2019s desktop. Intel, has more to worry from ARM than quantum computing. ",
+            "date": "Answered January 7, 2018",
+            "views": "341",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Bernard Andrews",
+                    "user_href": "/profile/Bernard-Andrews-2"
+                },
+                {
+                    "user_id": "Muhammad Hakim",
+                    "user_href": "/profile/Muhammad-Hakim-35"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Norman Simenson",
+                "href": "/profile/Norman-Simenson-1"
+            },
+            "answer_text": "Not for many, many, many generations, if ever! The refrigeration equipment requirements alone would likely take up almost all of the space available in your house except for your \u201cdesktop.\u201d ",
+            "date": "Answered March 18, 2019",
+            "views": "87",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Scott Cooper",
+                "href": "/profile/Scott-Cooper-246"
+            },
+            "answer_text": "Probably they will\u2026. someday. However that isn\u2019t going to happen anytime soon, certainly not in 10 years, likely not in 30 years, very likely yes in 100 years. ",
+            "date": "Answered January 28, 2020",
+            "views": "41",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Uban Singh",
+                "href": "/profile/Uban-Singh"
+            },
+            "answer_text": "No. ",
+            "date": "Answered March 18, 2019",
+            "views": "105",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Tim Elliot",
+                    "user_href": "/profile/Tim-Elliot"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Emil Manvelyan",
+                "href": "/profile/Emil-Manvelyan"
+            },
+            "answer_text": "There is no real cuantum computer yet and nobody can say can or not. when cuanutm computers will made then people will think to replace classical computer ",
+            "date": "Answered March 8, 2018",
+            "views": "199",
+            "upvotes": "0"
+        }
+    ]
+}

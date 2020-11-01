@@ -1,0 +1,50 @@
+{
+    "title": "How is data stored in a database? - Quora",
+    "tags": [
+        "How Things Work",
+        "Relational Databases",
+        "Data Storage",
+        "Data",
+        "Big Data"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Fernando Jackson",
+                "href": "/profile/Fernando-Jackson"
+            },
+            "answer_text": "This is for a (single)client-server model: Here you have a client application (i.e., in your computer) communicating with the backend database, e.g., you have MS Access as a client and SQL server at the back-end. The SQL server serves the (processed) data to the Access client. Data tables, together with other data objects are stored in files called primary , secondary files. Data logs are stored separately. Data tables are stored in rows, in pages of 8KB each called extents. There is some book-keeping with IAM(Index Allocation Map)s to make sure different parts of a data table can be put together (since a data table may not fit in a single page) ,with offsets to keep track of where a given line starts and stops . Some info about the page, like page number, available space, indexes (See below) , etc.aka, \u201cmetadata\u201d on the page is stored in the page headers, and other \u201cmetadata\u201d is stored in data offsets at the bottom of the page. There are techniques, \u201ctricks\u201d used to speed up the access of data for queries, like the use of indexes, most important of which are the clustered and non-clustered types. See also: How is data stored in SQL server? ",
+            "date": "Updated October 23, 2016",
+            "views": "284",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aditya Rao",
+                    "user_href": "/profile/Aditya-Rao-133"
+                },
+                {
+                    "user_id": "Dsk Kamali",
+                    "user_href": "/profile/Dsk-Kamali"
+                },
+                {
+                    "user_id": "Adam Watson",
+                    "user_href": "/profile/Adam-Watson-72"
+                },
+                {
+                    "user_id": "Vikram Dutt",
+                    "user_href": "/profile/Vikram-Dutt"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Karla Samuel",
+                "href": "/profile/Karla-Samuel"
+            },
+            "answer_text": "Once you\u2019ve created the database table, you can begin storing binary data there using PHP. You may be surprised to see how simple that is. All that\u2019s required by the PHP script is a standard INSERT query, using the binary data for the file column value. To grab the file data to be used in the query, you must call the PHP file_get_contents() function, which reads a file into a string: $file_data = file_get_contents($file);\u00a0In a real-world script, the file itself would probably have been uploaded and validated, but for the sake of simplicity, I\u2019m using a static value here $file_data variable is a binary string of data. The PHP script also needs to determine the file\u2019s MIME type. This can easily be accomplished using the Fileinfo extension, enabled by default as of PHP 5.3. Using it is a two-step process. First, you have to identify what it is you want to discover about a file; in this case, its MIME type: $file_info = finfo_open(FILEINFO_MIME_TYPE);\u00a0Then you retrieve that information: $file_type = finfo_file($file_info, $file);\u00a0The SQL query also needs to know the size of the file: $file_size = filesize($file);\u00a0All that\u2019s left is to define and execute the query: $q = \"INSERT INTO files (id, name, file, file_type, file_size) VALUES\u00a0 (NULL, '$file', '\" . mysqli_real_escape_string($dbc, $file_data) . \"',\u00a0 '$file_type', $file_size)\";\u00a0As you can see in that line, to prevent the binary data from breaking the query, you either need to apply the mysqli_real_escape_string() function or use prepared statements. ",
+            "date": "Answered March 10, 2020",
+            "views": "17",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+{
+    "title": "What are the designing software used in 3D printing? - Quora",
+    "tags": [
+        "Software Design",
+        "3D Printers",
+        "3D Printing",
+        "Design"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ner Vine",
+                "href": "/profile/Ner-Vine"
+            },
+            "answer_text": "In my opinion there is no one best application for anything 3D printing related - whether we\u2019re talking about designing the 3d model, slicing the 3d model or even printing the model there are a bunch of different applications and it really depends on your wishes and needs to decide what works best for you. For designing a 3d model I have used the following programs: Doodle Transform: draw your 3D model using a pen and paper, take a picture and use Doodle Transform to transform your 2D drawing into a 3D model. Super quick and efficient, however also not as expansive as other tools.Tinkedcad: design a model by using predefined shapes, symbols, letters and numbers. Quick and easy to get started with, but has many features and the ability to create great designs.Sketchup: Sketchup now has a .STL plugin enabling you to import and export .STL files (which is the main 3D printing format). With Sketchup you can download a 3D model and edit it or create your own from scratch. Sketchup is a very powerful tool however it struggles with organic shapes. Very low barrier of entry, yet remaining very powerful software.Once you have your 3D model you need to prepare it for printing - a process called Slicing: Simplify3D: one of the most used software packages for slicing. Simplify3D (S3D for short) is probably the most feature packed slicer with one of the best slicing outputs available right now - however the software is quite expensive (going at 150$) and in most cases you\u2019d never use many of their specialty features.Cura: the slicing software developed by Ultimaker - has a nice interface that shouldn\u2019t take you too long to get used to and is packed with a bunch of nice features, the go-to software if you\u2019re using an Ultimaker printer.Katana: the only slicer in the list you can\u2019t download as standalone software - Katana is part of cloud platform Formide that has a bunch of presets for many different printers. In my experience Katana is the easiest slicer to use once you have everything setup properly, plus it has some great features not available with other slicers.Now that we have our files ready to print - all we have to do is print! SD Cards: The most straightforward way to print files - most consumer 3d printers have an SD Card slot, simply upload your file to the SD card, plug it in the printer and use the printers interface to start the print.OctoPrint: Another way to start your prints is to use a host software like OctoPrint (Or Repetier as Nolan already suggested), with OctoPrint you can control and monitor your printer remotely, however you have to open several ports in your router in order to use OctoPrint outside your (home) network.Formide: The cloud platform hosting the slicer Katana - Formide has a big database with many different printer and material presets so you as a user don\u2019t have to worry about specific settings (e.g. melting temperature of that specific filament, nozzle size of your printer, etc) however since Formide is cloud based you always have to upload your files to the cloud before you can slice them (and you need to download them if you don\u2019t connect your printer to Formide).Hope it helps, if you have any questions let me know! ",
+            "date": "Answered May 15, 2017",
+            "views": "16",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Stauffer",
+                    "user_href": "/profile/John-Stauffer-38"
+                },
+                {
+                    "user_id": "Nikhil Sapre",
+                    "user_href": "/profile/Nikhil-Sapre"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nolan Greene",
+                "href": "/profile/Nolan-Greene-6"
+            },
+            "answer_text": "There is usually two parts to the software component of 3D printing. There's the design part where you design parts to be printed using a CAD software. Then there's the control part which take in your model and sends it to the printer. Usually you can do a quick Google search for the designing software part and find all sorts of reviews an articles, so I'm going to assume you are looking for the control portion. There are quite a number of software's available to control your printer , but your printers specifications may narrow it down. For example if your printer communicates serially through a virtual com port, then you're going to need to get one that can support that. Also some software's can't handle certain printer configurations, such as Delta printers. Personally I use repetier host. It has a nice GUI, print preview, 4 slicers to choose from as well as a manual setting override. You can manually control every axis on your printer and get detailed stats like nozzel and bed temperatures and how much power it's giving them. Those are the general features of repetier host, but the real reason I use it is it's compatibility with my favorite slicing program Slic3r this program has dozens of settings to fine tune your printer, from z-offset, to extuder acceleration, to fill pattern. Slic3r is also available as a separate software but it's not as nice of a GUI, and doesn't have all the features of repetier host. Happy printing, Nolan ",
+            "date": "Answered May 11, 2017",
+            "views": "15",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Valdis Kl\u0113tnieks",
+                    "user_href": "/profile/Valdis-Kl\u0113tnieks"
+                }
+            ]
+        }
+    ]
+}

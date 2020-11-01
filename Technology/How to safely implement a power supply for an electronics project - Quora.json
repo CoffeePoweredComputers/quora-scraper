@@ -1,0 +1,35 @@
+{
+    "title": "How to safely implement a power supply for an electronics project - Quora",
+    "tags": [
+        "Electronics Projects",
+        "Power Electronics",
+        "Power Supplies",
+        "Electrical and Electronics Engineering",
+        "Projects",
+        "Computer Hardware",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Martin Clarke",
+                "href": "/profile/Martin-Clarke-53"
+            },
+            "answer_text": "How do you safely implement a power supply for an electronics project? A2A Depends on the project. I used to build 100w power amps, the power supply was a massive transformer, several massive capacitors, a bridge rectifier, and one or two more bits. Built into an earthed aluminium chassis, and correctly fused. Nowadays if I build a microcontroller project, they can mostly be supplied by 5v at 50mA - 1000mA. If mains powered, I use a USB brick. If battery powered, I use a small power bank - the auto-on versions, generally without switches. If power demand is below 80mA I have the microcontroller take a current pulse periodically to keep the bank turned on. ",
+            "date": "Answered July 17, 2019",
+            "views": "65",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Dave Cross",
+                "href": "/profile/Dave-Cross-11"
+            },
+            "answer_text": "This is one of those \u201cif you have to ask \u2026\u201d questions. Design, even build your project using a bench power supply, check the required current. Then go and buy a suitably rated sealed unit power supply. Project works, everyone is safe. Result! ",
+            "date": "Answered July 21, 2019",
+            "views": "73",
+            "upvotes": "0"
+        }
+    ]
+}

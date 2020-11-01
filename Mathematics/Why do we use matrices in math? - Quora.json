@@ -1,0 +1,178 @@
+{
+    "title": "Why do we use matrices in math? - Quora",
+    "tags": [
+        "Matrices (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Max Sklar",
+                "href": "/profile/Max-Sklar"
+            },
+            "answer_text": "Thanks for the A2A. At an elementary level matrices encode the information contained in a system of linear equations. In high school you likely learned about solving systems of equations to find intersection points of two straight lines or three planes. You hopefully also learned applications like mixture problems (how much 5% chlorine and 8% chlorine solutions must you mix to get 12 ounces of 6% chlorine solution?). It turns out matrices can be used to solve these systems. It also turns out these problems can grow in complexity. Instead of two equations and 2 unknowns or 3 and 3. We can build systems with many equations and many unknowns. The real world turns out to produce these problems more often than you think. But that is just scratching the surface. Enter the concept of the vector. Vectors are incredibly useful mathematical objects in a wide variety of applications. High school physics uses two and three dimensional vectors. But vectors can inhabit higher dimensions. The world a vector lives is called a vector space. In mathematics we became very interested in functions that take vectors as input and give vectors as output. Matrices turn out to be the right objects to study these functions. The study of vector spaces and the nature of these functions is called Linear Algebra. Basically linear algebra studies flat spaces. Matrices are incredibly useful in this subject. Furthermore Linear Algebra is really the only area of mathematics we actually understand. In calculus students learn that when we focus our attention on one point of a curve we are really interested in a straight line (the tangent line). Want to know about a curve? Pretend it\u2019s a straight line. It works! Mathematicians try to replicate this success. Want to know about a curved surface? Focus on a point and pretend the surface is a flat plane. This way of thinking leads us to methods for studying curved surfaces known as differential geometry. Linear algebra (and matrices) are fundamental to the study of differential geometry. My father split his career between education and industry work. Thanks to a research partner he met at age 19 or 20 he started consulting in the optics industry. Lenses are curved surfaces designed to achieve the desired bending of light to alter or correct vision. In many ways the human body doesn\u2019t seem to have been designed for long lifespans. By the time we reach our mid-forties the lenses in our eyes harden making it difficult to focus. This condition is known as presbyopia. The fix to this problem is to use glasses to aid our refocusing. Benjamin Franklin, frustrated by juggling glasses with different prescriptions, invented bifocals. Glasses that split two different curved surfaces bear a tell tale line across the center. By the 1980s wearing bifocals had become a sign of age. The vanity of the baby boom generation created a market for bifocals that didn\u2019t look like bifocals. My father first consulted with then took a full time job with a lens company. My father played an important part in the first designs of smooth bifocal lenses. The reason why they hired a mathematician was because the design required some differential geometry to create a surface that smoothly transitioned between two eyeglass prescriptions. As I laid out above, this mathematics naturally used matrices. This work allowed my family to make enough money to pay for the kids to go to college. Matrices and the vanity of the baby boom generation enabled me to get a college degree completely debt free. What was the purpose of learning matrices in high school? For most high school students it is understandable that matrices wouldn\u2019t serve a purpose. In fact, when I teach intermediate algebra and even precalculus I skip over the matrix sections. The techniques seem a little too tedious for the context they are taught in. For two and three dimensional algebra you can get away with substitution and elimination methods for solving equations. But for those wishing to go on in STEM matrices will become a crucial tool. I don\u2019t know the detailed history of the high school math curriculum. But there are a lot of artifacts from the cold war. Thanks to lessons learned from history, particularly world war II, we know national security may once again depend on having competent engineers and scientists available in the country. This leads to the bias towards the algebra and calculus pathways in the high school curriculum. I assume matrices made it into the curriculum because they are crucial for both theoretical and applied mathematics. It is one of those topics that gets shoved in so the students who do need it later will feel like they had seen it before. I\u2019m going to pass this A2A on to \u200eAlon Amit (\u05d0\u05dc\u05d5\u05df \u05e2\u05de\u05d9\u05ea)\u200e. He is always a good source for examples and he created a space dedicated to the teaching of linear algebra. ",
+            "date": "Updated August 17, 2020",
+            "views": "37",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Michael Narmo",
+                    "user_href": "/profile/Michael-Narmo"
+                },
+                {
+                    "user_id": "Vivek Mangal",
+                    "user_href": "/profile/Vivek-Mangal-29"
+                },
+                {
+                    "user_id": "Jagannathan Kuppu Rao",
+                    "user_href": "/profile/Jagannathan-Kuppu-Rao"
+                },
+                {
+                    "user_id": "Doug Reiss",
+                    "user_href": "/profile/Doug-Reiss"
+                },
+                {
+                    "user_id": "Dan Xi",
+                    "user_href": "/profile/Dan-Xi-7"
+                },
+                {
+                    "user_id": "Nithin",
+                    "user_href": "/profile/Nithin-199"
+                },
+                {
+                    "user_id": "Ivan Bettannier",
+                    "user_href": "/profile/Ivan-Bettannier"
+                },
+                {
+                    "user_id": "Manga Mounika S",
+                    "user_href": "/profile/Manga-Mounika-S"
+                },
+                {
+                    "user_id": "Vladimir Novakovski",
+                    "user_href": "/profile/Vladimir-Novakovski"
+                },
+                {
+                    "user_id": "Daniel Kaplan",
+                    "user_href": "/profile/Daniel-Kaplan"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Adam Catto",
+                "href": "/profile/Adam-Catto-1"
+            },
+            "answer_text": "I'll give an answer from a more pure math perspective. Matrices are useful for representing linear operators (or linear transformations). A linear operator [math] T: A \\rightarrow B [/math] is an operator which satisfies, for [math] a,b \\in A, k \\in K [/math], where A,B are finite-dimensional vector spaces and K is a field over both A and B: [math] T(a+b) = T(a) + T(b) \\forall a,b \\in [/math][math] T(ka) = kT(a) [/math]Recall that vector spaces require choice of basis, so that each vector in the space can be written as a unique linear combination of the basis vectors. Matrices require a choice of basis and properties (1) and (2) as well, so they can be used to represent linear operators. They're particularly useful because they can be used to make calculations easier, and additional properties of matrices, such as rank, determinant, invertability, etc. provide easy ways to observe properties of these operators, which wouldn't otherwise be easily notable. What also helps matrices win over people's hearts is that they are handled well by computers, so they are useful as data structures as well, with some motivation from computing, engineering, or what-have-you. ",
+            "date": "Answered July 13, 2016",
+            "views": "53",
+            "upvotes": " View 10 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sayak Bal",
+                    "user_href": "/profile/Sayak-Bal"
+                },
+                {
+                    "user_id": "Manga Mounika S",
+                    "user_href": "/profile/Manga-Mounika-S"
+                },
+                {
+                    "user_id": "Anmol Biranwar",
+                    "user_href": "/profile/Anmol-Biranwar"
+                },
+                {
+                    "user_id": "Jean Philius",
+                    "user_href": "/profile/Jean-Philius"
+                },
+                {
+                    "user_id": "Sanidhya Singh",
+                    "user_href": "/profile/Sanidhya-Singh-26"
+                },
+                {
+                    "user_id": "Santosh Reddy",
+                    "user_href": "/profile/Santosh-Reddy-42"
+                },
+                {
+                    "user_id": "Todea Cristian",
+                    "user_href": "/profile/Todea-Cristian-1"
+                },
+                {
+                    "user_id": "Anand Agrawal",
+                    "user_href": "/profile/Anand-Agrawal-61"
+                },
+                {
+                    "user_id": "Nitin K",
+                    "user_href": "/profile/Nitin-K-144"
+                },
+                {
+                    "user_id": "Martin Hauser",
+                    "user_href": "/profile/Martin-Hauser"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jack Vogt",
+                "href": "/profile/Jack-Vogt-7"
+            },
+            "answer_text": "I believe matrices just came into being as something of convenience when they first started to think about determinants, but now they are much more than that. For instance, I wonder how something like eigenvalues (characteristic values) could be even be described without matrics. Something that I thought was really cool when I first came across it is the Cayley-Hamilton Theorem: every square matrix is a zero of its characteristic polynomial. Try to imagine the truth of that theorem without the concept of matrices. ",
+            "date": "Answered September 5, 2019",
+            "views": "388",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "James Lowman",
+                "href": "/profile/James-Lowman-1"
+            },
+            "answer_text": "Matrix math is the heart and soul of Linear Algebra. It allows us to solve systems of linear equations very quickly. 100 equations with 100 unknowns? pretty hard by hand\u2026 Matrix math in a computer though? The closest thing to the instant you could imagine. Matrices are the next logical step after the introduction of the classic 2 equations with 2 unknowns educational track. Applied mathematicians, engineers, physicists have to use this stuff daily to make this very computer I type on transmit the information to your screen. ",
+            "date": "Updated October 25, 2019",
+            "views": "636",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sayak Bal",
+                    "user_href": "/profile/Sayak-Bal"
+                },
+                {
+                    "user_id": "Devbrat Dandotiya",
+                    "user_href": "/profile/Devbrat-Dandotiya"
+                },
+                {
+                    "user_id": "Ray Denback",
+                    "user_href": "/profile/Ray-Denback-1"
+                },
+                {
+                    "user_id": "Luis Gonzalez",
+                    "user_href": "/profile/Luis-Gonzalez-222"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alex Sadovsky",
+                "href": "/profile/Alex-Sadovsky"
+            },
+            "answer_text": "A2A, thanks. Alex Sadovsky's answer to What's the use of matrices in real life? ",
+            "date": "Answered October 23, 2019",
+            "views": "373",
+            "upvotes": " Answer requested by Daniel Kaplan",
+            "upvoters": [
+                {
+                    "user_id": "Martin Hauser",
+                    "user_href": "/profile/Martin-Hauser"
+                },
+                {
+                    "user_id": "Manga Mounika S",
+                    "user_href": "/profile/Manga-Mounika-S"
+                },
+                {
+                    "user_id": "Daniel Kaplan",
+                    "user_href": "/profile/Daniel-Kaplan"
+                },
+                {
+                    "user_id": "Max Sklar",
+                    "user_href": "/profile/Max-Sklar"
+                }
+            ]
+        }
+    ]
+}

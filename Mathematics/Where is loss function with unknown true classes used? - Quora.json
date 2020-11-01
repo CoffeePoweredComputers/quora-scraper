@@ -1,0 +1,22 @@
+{
+    "title": "Where is loss function with unknown true classes used? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Prashant Sharma",
+                "href": "/profile/Prashant-Sharma-12"
+            },
+            "answer_text": "The intuition is similar to that of supervised machine learning setting. Basically, in supervised learning, when you have the true label, say 1, then you incur no loss if the label assigned by the model is 1, while you incur a non-zero loss otherwise. For unsupervised learning, you don't have the true class. You have to learn a distribution P(x, C_k), which tells how likely is an example of being in class C_k. Now, intuitively, you would want to learn a distribution that puts more weight on favourable labellings that correspond to lower loss. As an example, consider the cancer example given in the text.P(x, cancer) = 0.3P(x, healthy) = 0.7using the distribution you have learnt so far. This means that according to your current beliefs, 'x' has cancer with probability 0.3, and is healthy with probability 0.7. Now, the loss minimization requires minimizingP(x, cancer)*(loss for true class = healthy and predicted class = cancer) + P(x, healthy)*(loss for true class = cancer and predicted class = healthy)= 0.3*1 + 0.7*1000= 700.3 If you now change the probabilities to 0.31 and 0.69 respectively, the above computation gives 690.31. So you are better off predicting cancer more often, which agrees with the loss matrix.(In this simple example, with only one x, you tend to move towards the corner solution, but when you have many points, the above problem will be more well-behaved). Note that since we don't have any true labels, we basically use some sort of soft labels - what is the probability of each point being in each of the classes. ",
+            "date": "Answered January 20, 2014",
+            "views": "19",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Sara Rojas",
+                    "user_href": "/profile/Sara-Rojas-16"
+                }
+            ]
+        }
+    ]
+}

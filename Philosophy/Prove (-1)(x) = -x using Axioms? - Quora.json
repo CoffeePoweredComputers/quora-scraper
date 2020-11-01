@@ -1,0 +1,98 @@
+{
+    "title": "Prove (-1)(x) = -x using Axioms? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Satvik Beri",
+                "href": "/profile/Satvik-Beri"
+            },
+            "answer_text": "Using the axioms of a ring with identity[0]: Lemma 1: 0*x = 0 for any element x.Proof: 0 = 0 + 0 (definition of 0)0*x = (0 + 0)*x = 0*x + 0*x (distributivity). Adding -(0*x) to both sides, we get:0 = 0*x + -(0*x) = 0*x + 0*x + -(0*x) = 0*x (additive inverse)Now we use the lemma to prove that (-1)*x = -x x = 1*x (definition of 1)1*x + (-1)*x = (1 + -1)*x (distributivity of multiplication over addition)= 0*x (definition of -1)= 0 (lemma 1)This implies that (-1)*x is the additive inverse of x, which by definition is -x, QED.  [0]: http://www.maths.nuigalway.ie/MA416/section1-2.pdf ",
+            "date": "Answered January 6, 2013",
+            "views": "73",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Robin Arjoonsingh",
+                    "user_href": "/profile/Robin-Arjoonsingh"
+                },
+                {
+                    "user_id": "Maisha Noor",
+                    "user_href": "/profile/Maisha-Noor-2"
+                },
+                {
+                    "user_id": "Aleksandar Bojanovi\u0107",
+                    "user_href": "/profile/Aleksandar-Bojanovi\u0107"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "Tom Har",
+                    "user_href": "/profile/Tom-Har-2"
+                },
+                {
+                    "user_id": "Robert Chin",
+                    "user_href": "/profile/Robert-Chin-3"
+                },
+                {
+                    "user_id": "Andrea Baisero",
+                    "user_href": "/profile/Andrea-Baisero"
+                },
+                {
+                    "user_id": "Pedro Vaz Pimenta",
+                    "user_href": "/profile/Pedro-Vaz-Pimenta"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "M\u00e1t\u00e9 Kov\u00e1cs",
+                "href": "/profile/M\u00e1t\u00e9-Kov\u00e1cs-3"
+            },
+            "answer_text": "TL;DR: The proof (and whether the statement is true at all) depends on the context and choice of axioms. In the most general interpretation I can think of, the statement is about vector spaces (modules over unit rings would be pushing it). It asserts that scaling any vector x by the additive inverse of the multiplicative neutral element of the associated field yields the additive inverse of x. Here's a proof based on the axioms of vector spaces:0*x = 0*x           : equality is reflexive0*x = (0+0)*x    : zero is the additive neutral element of the field0*x = 0*x + 0*x : scaling distributes over field addition0 = 0*x               : added -(0*x) to both sides0 = (1 + (-1))*x  : because -1 is the additive inverse of 10 = 1*x + (-1)*x : scaling distributes over field addition0 = x + (-1)*x     : because 1*x = x-x = (-1)*x          : added -x to both sides ",
+            "date": "Updated January 13, 2013",
+            "views": "84",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shawn Menezes",
+                    "user_href": "/profile/Shawn-Menezes-1"
+                },
+                {
+                    "user_id": "Maisha Noor",
+                    "user_href": "/profile/Maisha-Noor-2"
+                },
+                {
+                    "user_id": "Rahul Suresh",
+                    "user_href": "/profile/Rahul-Suresh-154"
+                },
+                {
+                    "user_id": "Paul Nguyen",
+                    "user_href": "/profile/Paul-Nguyen-67"
+                },
+                {
+                    "user_id": "Shadreck Lukumba",
+                    "user_href": "/profile/Shadreck-Lukumba"
+                },
+                {
+                    "user_id": "Thomas Jones",
+                    "user_href": "/profile/Thomas-Jones-24"
+                },
+                {
+                    "user_id": "Ozgur Atis",
+                    "user_href": "/profile/Ozgur-Atis"
+                },
+                {
+                    "user_id": "Satvik Beri",
+                    "user_href": "/profile/Satvik-Beri"
+                }
+            ]
+        }
+    ]
+}

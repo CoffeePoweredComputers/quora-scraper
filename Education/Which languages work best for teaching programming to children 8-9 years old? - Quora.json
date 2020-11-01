@@ -1,0 +1,115 @@
+{
+    "title": "Which languages work best for teaching programming to children 8-9 years old? - Quora",
+    "tags": [
+        "Child Development",
+        "Learning to Program",
+        "Programming Languages",
+        "Parenting"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andrei Volkov",
+                "href": "/profile/Andrei-Volkov"
+            },
+            "answer_text": "When my son was about 8 or 9 I introduced him to non-decimal base numbers -- we were playing aliens with 2 or 3 or 8 or 16 total fingers.  Now he is 11. We've been studying 8080 asm for about two weeks now, every evening. To my surprise, it's going extremely well. Now, to answer your question: Both \"enterprise\" languages (Java or C#) and \"open\" languages (Ruby, Javascript etc.) are overcomplicated. Most of modern languages are multiparadigm ones. This means on his first day he'll bump into elements of OOP, functions, closures and God knows what else. Then there are libraries. Then there are IDEs. Believe me, you don't want your kid to get overwhelmed on his first day. Most modern languages -- except pure functional ones like Haskell and the like -- have their syntaxis highly influenced by C. Why not learn C then? IMHO, that's a great idea. It does not have OOP, and is overall pretty simple. However, when learning C you will inevitably bump into things that are IMPOSSIBLE TO EXPLAIN without talking about RAM, stack, and registers. Unless of course you want to wave your arms and say that it's all computer magic. Now, to get to the point, ASM is not hard at all. I would even say it's simpler than any high-level programming language because of its narrow scope and small number of moving parts. You really only have a handful of registers, a few arithmetical commands, plus 1-2 instructions for moving stuff in/out of RAM. THAT'S ALL. With about a dozen instructions you can start writing meaningful algorithms. In a few weeks he can learn conditional logic, loops, and even arrays. Now, what you DON'T want to teach your child is the memory conventions, segments, and the process of compiling and linking an asm source file. Leave that for until after he knows C. That's why for our programming environment I chose SID -- this is a \"debugger-monitor\" running on a legacy OS called CP/M (running on a 8080 emulator). All you get is a black screen, with few simple commands (L100 to see a disasemmbly of instructions at address 100, A100 to start entering new instructions line by line, G100 to run the program etc.). I can't tell you how much it helps the focus to narrow the scope to a black screen with one command line. Here's what we have covered so far: Hex / Binary / Decimal conversion and arithmetic.Basics of von-Neumann architecture: CPU, registers, RAMBasic assembly mnemonics (Intel-style) \u2013 MOV, ADD, SUBCP/M debugger-monitor (SID) workflow and basic commands: A, L, T, Xi8080-specific mnemonics \u2013 MVI, ADI. Entering and running a simple program.The notion of loop. The FLAGS register. The Zero flag. New command JNZ. Implementing multiplication of two numbers via addition.More 8080 mnemonics \u2013 LXI, PCHL. Implementing a subprogram via jumps (don\u2019t know what stack is yet)More debugger commands: S, H. More 8080 mnemonics: INR. Reading from RAM.Implementing a program that sums elements of an array given a pointer to its head and a number of elements.The notion of carryover. The Carry flag. Implementing a two-byte addition by counting the carryovers. Enhanced the Sum Of Array program accordingly.More 8080 mnemonics: INX. Array of structures. Writing to RAM. Using flowcharts to visualize complex programs.Implemented a program that takes an array of triples, then for each element multiples first two bytes and stores the result into the third byte. Next, I\u2019m planning to introduce a concept of stack, and then, after a bunch of exercises we will move on to C. I\u2019m excited. As Joel Spolsky once said:  Trying to be a programmer without understanding how a CPU works is like trying to practice medicine without learning anatomy. Sure, you can have limited success curing patients with medical advice gleaned from Google, but on the whole you're going to be a pretty bad doctor. ",
+            "date": "Answered December 22, 2011",
+            "views": "17",
+            "upvotes": " View 14 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jules Reily",
+                    "user_href": "/profile/Jules-Reily"
+                },
+                {
+                    "user_id": "Ravindra Kumari",
+                    "user_href": "/profile/Ravindra-Kumari"
+                },
+                {
+                    "user_id": "Haritha Reddy",
+                    "user_href": "/profile/Haritha-Reddy-10"
+                },
+                {
+                    "user_id": "Perlin Vladimir",
+                    "user_href": "/profile/Perlin-Vladimir"
+                },
+                {
+                    "user_id": "Emil George",
+                    "user_href": "/profile/Emil-George"
+                },
+                {
+                    "user_id": "Mahmoud Emad",
+                    "user_href": "/profile/Mahmoud-Emad"
+                },
+                {
+                    "user_id": "Ben Stenger",
+                    "user_href": "/profile/Ben-Stenger"
+                },
+                {
+                    "user_id": "Minh Do",
+                    "user_href": "/profile/Minh-Do-2"
+                },
+                {
+                    "user_id": "Shua McLean",
+                    "user_href": "/profile/Shua-McLean"
+                },
+                {
+                    "user_id": "Gene Familiinet",
+                    "user_href": "/profile/Gene-Familiinet"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Nat Brown",
+                "href": "/profile/Nat-Brown"
+            },
+            "answer_text": "I also vote Scratch (http://scratch.mit.edu) -- it is excellent due to naturally teaching messaging/sync but also because it teaches logic, flow-control, and variables visually instead of abstractly or syntactically -- you simply grab logic bits and drag-drop them into place. It's also excellent because it allows kids to create interacitve Flash-like applications, animations and games -- these are the things they are playing with on computers and they naturally want to make their own, so it satisfies their desire to create what they're seeing. I wish the sharing and project discovery/categorization features were a bit stronger -- Scratch comes with lots of sample projects you can tear apart and tweak, which is awesome (my son has learned a lot from this) but it's not enough. You almost want a kids-only social network to make sharing better and more like how professionals share snippets and open-source -- even Spore's much more advanced \"social network\" for sharing creatures, planets, and quests isn't very useful, so i think there is some work needed in these tools to help kids better find examples that they can tear apart and modify. 2012 update with a few more tools that my 11-12yo son has tried and liked, and which I am hoping to get my 9yo daughter to work with, they are age appropriate: BYOB/Snap! (http://byob.berkeley.edu/) which is based on Scratch but has more & better blocks, things like lists (arrays).Scratch 2.0 coming out soon, which also fixes the rough edges BYOB/Snap! tried to fix. Scratch's social/sharing features I think are much better these days than they were when I first wrote my answer.Stencyl (http://www.stencyl.com/) which is like Scratch super-sized for building games on iOS/etc. I think the tool is a little bit too complicated for young kids, but if they are really into programming there are starting to be lots of free/example projects and tutorials that they can tear apart to learn how to build their own.Processing (http://processing.org/) which has more of a command-line approach, which on the one hand is weird but on the other hand feels a bit more empowering. It uses Java so it can sometimes be a little slow and less interactive feeling.Corona (http://www.coronalabs.com/) for iPhone app development. Also has an OK community of samples and tutorials.",
+            "date": "Updated June 20, 2012",
+            "views": "45",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jasmine Wong",
+                    "user_href": "/profile/Jasmine-Wong-274"
+                },
+                {
+                    "user_id": "K M Rakibul Islam",
+                    "user_href": "/profile/K-M-Rakibul-Islam"
+                },
+                {
+                    "user_id": "Kenneth Sizer",
+                    "user_href": "/profile/Kenneth-Sizer"
+                },
+                {
+                    "user_id": "Marcel Mengerink",
+                    "user_href": "/profile/Marcel-Mengerink"
+                },
+                {
+                    "user_id": "Eduard Setiawan",
+                    "user_href": "/profile/Eduard-Setiawan"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Dongle-Mailbags"
+                },
+                {
+                    "user_id": "Chastity Davis",
+                    "user_href": "/profile/Chastity-Davis"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Emanuel-Hayford"
+                },
+                {
+                    "user_id": "Joel Chan",
+                    "user_href": "/profile/Joel-Chan"
+                },
+                {
+                    "user_id": "Syed Ibtisam Tauhidi",
+                    "user_href": "/profile/Syed-Ibtisam-Tauhidi"
+                }
+            ]
+        }
+    ]
+}

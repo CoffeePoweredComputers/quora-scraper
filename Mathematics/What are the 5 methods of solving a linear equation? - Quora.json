@@ -1,0 +1,78 @@
+{
+    "title": "What are the 5 methods of solving a linear equation? - Quora",
+    "tags": [
+        "Algebraic Equations",
+        "Linear Algebra",
+        "Equations"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vishakh Rajendran",
+                "href": "/profile/Vishakh-Rajendran-1"
+            },
+            "answer_text": "A system of linear equations can be solved by using the following matrix methods- a. Matrix Inversion method. For a system of equations AX = B, where A = Co-efficients matrix, X = unknown variables matrix and C = Results matrix, we can solve for X using the equation X = A inverse * B. This is the matrix inversion method. Vishakh Rajendran's answer to How do I use matrix inversions to solve for a system of linear equations? b. Cramer\u2019s rule method. The solution is determined by the usage of Determinants. For a system of equations with 3 unknowns (x, y and z), it is possible to solve for \u2018x\u2019 without having to solve for y and z. Let us call the matrix A as D (the determinant matrix). If we replace the first Column of this matrix by the the answers Column (i.e., b matrix), then we get Dx. Similarly, if we replace the Second Column and third Columns by the answers Column, we get Dy and Dz. The solution for the system of equations is x = Dx / D , y = Dy / D and z = Dz / D. Vishakh Rajendran's answer to What is Cramer\u2019s Law? c. Rank Method You can test for the Consistency of a system of equations using the rank method and if Consistent, you need to reduce the matrix to it\u2019s echelon form. Once reduced to echelon form, it become very simpler to solve for the system of equation. What is the echelon form in matrices?  In addition to the above, there are the following two branches of methods. a. Direct Method Gauss Elimination MethodGauss Jordan Methodb. Iterative Methods (used in FEA Softwares) Jacobi\u2019s Iteration methodGauss - Seidal Iterative method.And there are also high level techniques available like the Cholesky Decomposition.  Gaussian Elimination method- a. Form the augmented matrix. b. Using elementary row operations (Note : row only), reduce the matrix into upper triangular form. c. By back substitution, we can arrive at the values for x, y and z. Vishakh Rajendran's answer to What is the Gauss elimination method?  Gauss Jordan Method Gauss Jordan is very similar to Gauss elimination method. We reduce the augumented matrix to a diagonal matrix instead of reducing it to upper triangular matrix (as with Gauss elimination). Vishakh Rajendran's answer to How does the Gauss-Jordan elimination method work?  Jacobi\u2019s Iterative method and Gauss - Seidel method For solving a system of linear equations, there are direct methods and iterative methods. The iterative methods are further classified as Jacobi\u2019s iteration method and Gauss - Seidel iterative method. Iterative algorithms are of much use in Finite Element softwares. In FEA softwares, we make approximations that iteratively takes us closer to the actual solution. So in iteration methods, we make an initial guess and the discrepancy between the actual results and the approximations keeps on decreasing with successive iterations. Vishakh Rajendran's answer to How can I understand Jacobi iteration and Gauss-seidel iteration?  Cholesky Decomposition It is always better to use simpler matrices in numerical calculations. There are many different matrix decompositions. Matrix decomposition is expressing a matrix as a product of many smaller simpler matrices. Cholesky decomposition is one of the ways to arrive at simpler matrices with which we can replace complex matrices. Cholesky is just decomposing a matrix into a product of a Lower triangular matrix (all entries above the main diagonal are zero) and it\u2019s conjugate transpose. Matrix A = L X L* , where L = Lower triangular matrix and L* is the complex conjugate transpose of the Lower triangular matrix L. A closely related decomposition technique to Cholesky is the LDL decomposition. A = L x D x L* where L = Lower triangular matrix and D = Diagonal matrix. ",
+            "date": "Answered July 7, 2020",
+            "views": "17",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Roksana Parvin Yasmin",
+                    "user_href": "/profile/Roksana-Parvin-Yasmin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "SK.M.M. Hussain",
+                "href": "/profile/SK-M-M-Hussain"
+            },
+            "answer_text": "There are different methods such as Direct method: which is again sub divided into three auch asElimination MethodSubstitution MethodCross multiplication Method2 .Matrix Method Crammer\u2019s RuleGauss Elemination MethodGauss-Jordan Elemination MethodTraingularization MethodCholeskey MethodPartition Method3.Iterative methods Jacobi Iterative MethodGauss-Seidel Iterative MethodSOR MethodThese are several methods \u2026and yeh 2 and 3 methods are usually used when problem is big. ",
+            "date": "Answered November 4, 2016",
+            "views": "112",
+            "upvotes": " View 18 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sana Khan",
+                    "user_href": "/profile/Sana-Khan-1806"
+                },
+                {
+                    "user_id": "Kaisar Ahmad Pandith",
+                    "user_href": "/profile/Kaisar-Ahmad-Pandith"
+                },
+                {
+                    "user_id": "Sakshi Gupta",
+                    "user_href": "/profile/Sakshi-Gupta-775"
+                },
+                {
+                    "user_id": "Aimal Rehman",
+                    "user_href": "/profile/Aimal-Rehman-1"
+                },
+                {
+                    "user_id": "Anil Kumar",
+                    "user_href": "/profile/Anil-Kumar-26477"
+                },
+                {
+                    "user_id": "Bharath Mannar",
+                    "user_href": "/profile/Bharath-Mannar"
+                },
+                {
+                    "user_id": "Ali Raza",
+                    "user_href": "/profile/Ali-Raza-588"
+                },
+                {
+                    "user_id": "Anmol Rastogi",
+                    "user_href": "/profile/Anmol-Rastogi-33"
+                },
+                {
+                    "user_id": "S P L Knowledge",
+                    "user_href": "/profile/S-P-L-Knowledge"
+                },
+                {
+                    "user_id": "Riya Singh",
+                    "user_href": "/profile/Riya-Singh-551"
+                }
+            ]
+        }
+    ]
+}

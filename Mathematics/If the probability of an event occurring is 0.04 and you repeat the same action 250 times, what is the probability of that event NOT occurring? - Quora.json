@@ -1,0 +1,68 @@
+{
+    "title": "If the probability of an event occurring is 0.04 and you repeat the same action 250 times, what is the probability of that event NOT occurring? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Lamar",
+                "href": "/profile/Michael-Lamar"
+            },
+            "answer_text": "If you want to be able to estimate these kinds of problems accurately, here's a nice approach.  (For your specific problem, [math]p=0.0[/math], [math]n=250[/math], and [math]k=10[/math].)  If the trials are independent and success on a trial has probability [math]p[/math],  then the probability of no successes in [math]n[/math] trials is [math](1-p)^n[/math].  Now, let us write [math]k=np[/math] so that our probability becomes [math](1-p)^{k/p}[/math].  As [math]p\\to 0[/math], this probability limits to [math]e^{-k}\\approx 10^{-0.434\\cdot k}[/math].  Since your value of [math]p[/math] is small, this limit is a good approximation.   So your answer is about [math] 10^{-4.34}[/math] which s a little more than 0.00004 (because it is close to the cube root of 100 times ten to the power of -5).  Of course, this is only an approximation.  Exact calculation reveals that the true answer is a little less than 0.00004, but our approximation gave us a good estimate that we could do in our head. ",
+            "date": "Updated January 19, 2016",
+            "views": "62",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Jonathan Garcia",
+                    "user_href": "/profile/Jonathan-Garcia-63"
+                },
+                {
+                    "user_id": "Indrasen Pal",
+                    "user_href": "/profile/Indrasen-Pal"
+                },
+                {
+                    "user_id": "Liam Roche",
+                    "user_href": "/profile/Liam-Roche"
+                },
+                {
+                    "user_id": "Mukund Purohit",
+                    "user_href": "/profile/Mukund-Purohit-3"
+                },
+                {
+                    "user_id": "James Daly",
+                    "user_href": "/profile/James-Daly-17"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "Jake Januzelli",
+                    "user_href": "/profile/Jake-Januzelli"
+                },
+                {
+                    "user_id": "Sai Mallikarjuna",
+                    "user_href": "/profile/Sai-Mallikarjuna"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Doug Skilton",
+                "href": "/profile/Doug-Skilton"
+            },
+            "answer_text": "This kind of problem can be solved using a binomial distribution function analysis as follows. Let (a +b)^N = N!{\u03a3 [a^(N-j+1)][b^(j-1)]/[(j-1)!][(N-j+1)!]}, with a = .96, the chance of non-occurrence and b = .04, the chance of occurrence. 1 \u2264 j \u2264 (N+1) where N, in this case = number of events = 250 and j-1 = number of non-occurrences, which in this case = 0. Therefore, the probability of 0 non-occurrences after 250 actions = 250![(.96)^250][(.04)^0]/(0!)(250!) = .0000369\u2026.,about .0037%. The forgoing expression offers the means to determine a comprehensive range of outcomes for a comprehensive range of inputs and is rather more than is needed to respond to this question. A simpler approach would be to say that if an event has a .96 probability of non occurrence subject to a certain action, then the probability of continued non-occurrence after 250 such actions would = .96^250 = .0000369\u2026., about .0037% exactly as determined above. ",
+            "date": "Answered February 12, 2018",
+            "views": "28",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Indrasen Pal",
+                    "user_href": "/profile/Indrasen-Pal"
+                }
+            ]
+        }
+    ]
+}

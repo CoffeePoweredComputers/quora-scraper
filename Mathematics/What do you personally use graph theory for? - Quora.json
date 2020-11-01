@@ -1,0 +1,115 @@
+{
+    "title": "What do you personally use graph theory for? - Quora",
+    "tags": [
+        "Graph Algorithms",
+        "Discrete Mathematics",
+        "Graph Theory",
+        "Applied Mathematics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "I\u2019m currently working on a generative art project called Emojiconomy, which uses a graph grammar, and an augmented Flow network. Soffit: The graph grammar is implemented in Soffit, my attempt at an easy-to-use graph rewriting system. (It didn\u2019t really succeed; I need to write a new version based on what I learned.) Soffit uses Double-Pushout (DPO) semantics, which I explained here: Double Pushouts on Graphs. This is a nice category-theory way to explain how the rule should work, but doesn\u2019t really drive the implementation, which is based on a constraint solver. More on Soffit: development log and examples on Steemit. First real Soffit examples links to earlier, untagged development log entries.More examples: mgritter/soffit/tree/master/doc/examples Emojiconomy: This year\u2019s project started out as an attempt to generate graphs like this:  that depict the flow of goods in a toy economy. Because the same good can be used in more than one way, it\u2019s an optimization problem to maximize the utility of consumption, given fixed inputs and some model of decreasing utility. For example, like this:  (Some intermediate goods can\u2019t be consumed directly\u2014 I am planning to add other, non-food goods once the engine is working as I would like.) We can also damage part of the graph, like removing the process indicated with a red arrow above, and re-calculate the maximum utility. Or, we can add external imports and see how they are most optimally distributed:  Setting up imports and exports between multiple versions of the same economy, all damaged in different ways, leads to another graph (though I haven\u2019t been able to come up with a visualization I like yet.)  My solver for the optimization problem uses two phases; the first is projected gradient descent, which doesn\u2019t use graph theory, but this produces fractional flows. To \u201cunrelax\u201d the problem back to a discrete version, I use a variant of the augmenting-path technique behind the Ford\u2013Fulkerson algorithm. I couldn\u2019t really figure out how to use better max-flow algorithms because the flow network contains nonlinear features (the equality and min annotations in the first graph) and the utility maximization is a nonlinear objective, too. More on Emojiconomy: mgritter/emojiconomy\u201cdevelopment log\u201d on Twitter: emojiconomy markgritter",
+            "date": "Answered November 24, 2019",
+            "views": "612",
+            "upvotes": " View 10 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Caio Ursulino",
+                    "user_href": "/profile/Caio-Ursulino"
+                },
+                {
+                    "user_id": "Sophie Mitchell",
+                    "user_href": "/profile/Sophie-Mitchell-124"
+                },
+                {
+                    "user_id": "Miguel Paraz",
+                    "user_href": "/profile/Miguel-Paraz"
+                },
+                {
+                    "user_id": "Dybenko Guajardo",
+                    "user_href": "/profile/Dybenko-Guajardo"
+                },
+                {
+                    "user_id": "Casey Hawthorne",
+                    "user_href": "/profile/Casey-Hawthorne"
+                },
+                {
+                    "user_id": "Evan Moore",
+                    "user_href": "/profile/Evan-Moore-24"
+                },
+                {
+                    "user_id": "Dhirendra Singh Yadav ( SHIVAY )",
+                    "user_href": "/profile/Dhirendra-Singh-Yadav-SHIVAY"
+                },
+                {
+                    "user_id": "Morgane Alina\u00ef",
+                    "user_href": "/profile/Morgane-Alina\u00ef"
+                },
+                {
+                    "user_id": "Matthew Drescher",
+                    "user_href": "/profile/Matthew-Drescher"
+                },
+                {
+                    "user_id": "Keith Mayhew",
+                    "user_href": "/profile/Keith-Mayhew-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Colin Reid",
+                "href": "/profile/Colin-Reid-5"
+            },
+            "answer_text": "I study group theory, specifically totally disconnected locally compact (tdlc) groups. Groups measure symmetries of things, and the groups I study occur very often as symmetries of infinite graphs. In fact, from a suitably coarse perspective (quasi-isometry is certainly coarse enough), describing all compactly generated tdlc groups is equivalent to describing all the connected graphs that are locally finite (each vertex has finitely many neighbours) and vertex-transitive (the graph \u2018looks the same\u2019 from the perspective of any given vertex). So graphs play a huge role in my research. Going the other way, group theory has been a big source of graphs of interest to graph theorists, e.g. deterministic constructions of families of expander graphs, or the remarkable graphs coming out of the project to classify the finite simple groups. That said, from a pure maths perspective I haven\u2019t used so much serious graph theory as such, e.g. I have never used Szemeredi\u2019s regularity lemma or the eigenvalues of a graph adjacency matrix. Actually you could say I deliberately avoided getting into graph theory, after getting the impression at Cambridge that far too many of my fellow students were into it. (This is still true, apparently: Cambridge is churning out combinatorialists in disproportionate numbers.) The distinction is that the highly symmetric graphs that tend to show up in group theory are a far cry from the combinatorial horrors of an arbitrary graph. Graphs are still always there though, and it\u2019s fair to say there is a lot of crossover between group theory and graph theory. ",
+            "date": "Answered November 27, 2019",
+            "views": "204",
+            "upvotes": " View 16 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Clifton Rhodes",
+                    "user_href": "/profile/Clifton-Rhodes-4"
+                },
+                {
+                    "user_id": "Tara George",
+                    "user_href": "/profile/Tara-George-47"
+                },
+                {
+                    "user_id": "Joanne Lewis",
+                    "user_href": "/profile/Joanne-Lewis-101"
+                },
+                {
+                    "user_id": "Julian Garrett",
+                    "user_href": "/profile/Julian-Garrett-9"
+                },
+                {
+                    "user_id": "Serenity Woods",
+                    "user_href": "/profile/Serenity-Woods-8"
+                },
+                {
+                    "user_id": "Annette Holmes",
+                    "user_href": "/profile/Annette-Holmes-20"
+                },
+                {
+                    "user_id": "Ann Riley",
+                    "user_href": "/profile/Ann-Riley-192"
+                },
+                {
+                    "user_id": "Dolores Bennett",
+                    "user_href": "/profile/Dolores-Bennett-2"
+                },
+                {
+                    "user_id": "Alvin Russell",
+                    "user_href": "/profile/Alvin-Russell-12"
+                },
+                {
+                    "user_id": "Claudia Diaz",
+                    "user_href": "/profile/Claudia-Diaz-183"
+                }
+            ]
+        }
+    ]
+}

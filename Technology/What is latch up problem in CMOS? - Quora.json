@@ -1,0 +1,117 @@
+{
+    "title": "What is latch up problem in CMOS? - Quora",
+    "tags": [
+        "Latch-up",
+        "CMOS Sensor",
+        "Analog Electronics",
+        "Electronic Devices",
+        "Semiconductors",
+        "Electronics and Communication Engineering"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Akanksha Kumari",
+                "href": "/profile/Akanksha-Kumari-84"
+            },
+            "answer_text": "Simply defined, Latch-Up is a functional chip failure associated with excessive current going through the chip, caused by weak circuit design. In some cases Latch-Up can be a temporary condition that can be resolved by power cycle, but unfortunately it can also cause a fatal chip failure. CMOS Latch-Up The following diagram is a drawing of a typical CMOS circuit. Notice the two transistors, NPN and PNP and their connection to VDD and GND supply rails. The two transistors are protected by resistors but if examined more closely, there\u2019s an SCR device that could possibly be triggered.  In a latch-up conduction, the current flows from VDD to GND directly via the two transistors, causing the dangerous condition of a short circuit. The resistors are bypassed and thus excessive current flows from VDD to Ground.  Latch-up Test There are many vendors that provide latch up testing services. The test is a series of attempts that trigger the SCR structure within the CMOS IC while the relevant pins are monitored for overcurrent behaviour. It\u2019s recommended to take the very first samples from the engineering lot or MPW run and send them to a Latch-up testing lab. The lab will apply the maximum possible supply power and then inject current to the chip inputs and outputs while measuring if a Latch-up occurs by monitoring the supply current. Hope this helps. ",
+            "date": "Answered May 12, 2017",
+            "views": "229",
+            "upvotes": " View 43 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Swetashree Mishra",
+                    "user_href": "/profile/Swetashree-Mishra"
+                },
+                {
+                    "user_id": "Alya Nabilah",
+                    "user_href": "/profile/Alya-Nabilah-2"
+                },
+                {
+                    "user_id": "Param",
+                    "user_href": "/profile/Param-54"
+                },
+                {
+                    "user_id": "Jatin Kumar",
+                    "user_href": "/profile/Jatin-Kumar-697"
+                },
+                {
+                    "user_id": "Peter Toth",
+                    "user_href": "/profile/Peter-Toth-1"
+                },
+                {
+                    "user_id": "Nagaraj Gaonkar",
+                    "user_href": "/profile/Nagaraj-Gaonkar-5"
+                },
+                {
+                    "user_id": "Gopi",
+                    "user_href": "/profile/Gopi-214"
+                },
+                {
+                    "user_id": "Rick Sheridan",
+                    "user_href": "/profile/Rick-Sheridan"
+                },
+                {
+                    "user_id": "Aditya Singh",
+                    "user_href": "/profile/Aditya-Singh-679"
+                },
+                {
+                    "user_id": "Lisa Blackman",
+                    "user_href": "/profile/Lisa-Blackman-20"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shubham Jain",
+                "href": "/profile/Shubham-Jain-74"
+            },
+            "answer_text": "Latch up is defined as the generation of a low-impedance path in CMOS chips between the power supply (VDD) and the ground (GND) due to the interaction of parasitic PNP and NPN bipolar junction transistors (BJTs).These BJTs form a silicon \u2013 controlled rectifier (SCR) with positive feedback and virtually short circuit VDD to ground, thus causing excessive current flows and even permanent device damage. In the equivalent circuit: Q1: vertical bipolar PNP transistorQ2: lateral bipolar NPN transistorRwell: the parasitic resistanceRsub: substrate resistance To know more about latch up and about its operation, then read: Latch-Up Problem in CMOS \u2013 VLSI Design \u2013 Buzztech ",
+            "date": "Answered December 14, 2017",
+            "views": "169",
+            "upvotes": " View 18 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Adwait Jadhav",
+                    "user_href": "/profile/Adwait-Jadhav-8"
+                },
+                {
+                    "user_id": "Deepika Bashipaka",
+                    "user_href": "/profile/Deepika-Bashipaka"
+                },
+                {
+                    "user_id": "Ba- One",
+                    "user_href": "/profile/Ba-One"
+                },
+                {
+                    "user_id": "Nisarga Malige",
+                    "user_href": "/profile/Nisarga-Malige"
+                },
+                {
+                    "user_id": "Shubham Majee",
+                    "user_href": "/profile/Shubham-Majee"
+                },
+                {
+                    "user_id": "Francesco Picciocchi",
+                    "user_href": "/profile/Francesco-Picciocchi"
+                },
+                {
+                    "user_id": "Adithya Amara",
+                    "user_href": "/profile/Adithya-Amara"
+                },
+                {
+                    "user_id": "Tanushree B",
+                    "user_href": "/profile/Tanushree-B-1"
+                },
+                {
+                    "user_id": "Hoi Ainee",
+                    "user_href": "/profile/Hoi-Ainee"
+                },
+                {
+                    "user_id": "BharGav Varma",
+                    "user_href": "/profile/BharGav-Varma-27"
+                }
+            ]
+        }
+    ]
+}

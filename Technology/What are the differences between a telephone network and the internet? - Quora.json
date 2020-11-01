@@ -1,0 +1,63 @@
+{
+    "title": "What are the differences between a telephone network and the internet? - Quora",
+    "tags": [
+        "Telecommunications",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "David Fred",
+                "href": "/profile/David-Fred-3"
+            },
+            "answer_text": "The telephone network is evolving. VoIP is transforming it. But traditionally, a telephone network is \u201ccircuit switched\u201d, which mean when you make a call, a path is setup through the network between you and the number you call, a dedicated \u201ccircuit\u201d. It is analog from you to the first switching office then digital between switching offices, and then converted back to analog on the other end, between the last switch and the person you called. And for the duration of the call, that entire circuit, end to end, is exclusively yours. It is very inefficient, because even when no one is talking, that circuit stays connected, and you in effect, monopolize it. The internet is called a \u201cpacket switched network. The network is entirely digital. The connection between you and the first switching node, is dedicated to you, known as \u201cthe local loop\u201d or \u201clast mile\u201dBut once you get to a switch, in this case a packet switch, the facilities between switches are shared. If no one is sending or receiving data at your end, the facility is assigned to someone else. In effect, you \u201ctime share\u201d the network.and since most of the time in a data session is idle time, the facility which used to be dedicated to you, can be shared. As. I sit here and type, I am using none of the network. It\u2019s only when I hit \u201csubmit\u201d that I generate traffic, and then only in a short burst, at which point thenetwork is available for the next person to hit \u201csubmit\u201d. It is way more complicated than that, as everything I send or receive is broken up into packets. Think of a post office. The postman has to carry a letter, that \u201clast mile\u201d to your home, but he has a bunch of other letters in that bag. He doesn\u2019t deliver yours, drive back to the post office, and then pick up the next letter for your neighbor. Similarly, in the post office itself, there is no single person who handles only your mail. A bunch of letters \u201cpackets\u201d come in, they are sorted, and then handed to a postman with a lot of other packets. It\u2019s only that trip up your driveway that is only for you, and the postman isn\u2019t the only one that can use it. The UPS driver has packets, the Amazon driver has packets, the pizza guy has packets. The internet, orvany packet switched network is the same way. A bunch of packets come in, get sorted, and then sent out, and all those resources are shared with other people sending and receiving packets. ",
+            "date": "Answered October 13, 2018",
+            "views": "23",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mathew Dino",
+                    "user_href": "/profile/Mathew-Dino-1"
+                },
+                {
+                    "user_id": "Dipanjan Shill",
+                    "user_href": "/profile/Dipanjan-Shill"
+                },
+                {
+                    "user_id": "Catherine Joseph",
+                    "user_href": "/profile/Catherine-Joseph-4"
+                },
+                {
+                    "user_id": "Joshua Ng",
+                    "user_href": "/profile/Joshua-Ng-100"
+                },
+                {
+                    "user_id": "Marlene Hunt",
+                    "user_href": "/profile/Marlene-Hunt"
+                },
+                {
+                    "user_id": "Nigel Vos",
+                    "user_href": "/profile/Nigel-Vos"
+                },
+                {
+                    "user_id": "Manny Marcel",
+                    "user_href": "/profile/Manny-Marcel"
+                },
+                {
+                    "user_id": "Ollie Sutton",
+                    "user_href": "/profile/Ollie-Sutton"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aruna Tripathy",
+                "href": "/profile/Aruna-Tripathy-4"
+            },
+            "answer_text": "A telephone network supports voice call only in the 300 Hz to 3400 Hz of audio whereas the internet supports audio, video and data and bandwidth is really not an issue these days. The telephone network is based on circuit switching while the internet is based on packet switching. Usually a star topology is followed for the central switch and the telephone subscribers in a telephone network wheras it need not be always a star topology in a server client model of a part of the internet. There are signalling protocols to be followed for setting up, maintaining and releasing the circuit used in a telephone network whereas it is IP V4 or mostly IP V6 these days for communication by internet. Telephone network supports real time traffic and internet supports both real time as well as offline traffic. Usually the traffic is kind of similar in a telephone network while it is asymmetric in an internet. Bandwidth usage remains fixed in a telephone network and it can be flexible in an internet based application. So, these days, it is telephony over internet supported by VOIP that exploits the flexibility of internet. ",
+            "date": "Answered October 5, 2020",
+            "views": "215",
+            "upvotes": "0"
+        }
+    ]
+}

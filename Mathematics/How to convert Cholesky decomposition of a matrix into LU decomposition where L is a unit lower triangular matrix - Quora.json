@@ -1,0 +1,25 @@
+{
+    "title": "How to convert Cholesky decomposition of a matrix into LU decomposition where L is a unit lower triangular matrix - Quora",
+    "tags": [
+        "Determinant (mathematics)",
+        "Decomposition"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Justin Cox",
+                "href": "/profile/Justin-Cox-111"
+            },
+            "answer_text": "Let [math]A[/math] be some matrix with the LU decomposition, [math]A = LU \\tag*{}[/math] Then the LDL decomposition of [math]A[/math] would be of the form [math]A = LDL^{T} \\tag*{}[/math] We can accomplish this by extracting the pivots of [math]U[/math] in order to construct the diagonal matrix [math]D= \\text{diag} \\left[ U_{11}, \\dots, U_{nn} \\right][/math]. From there, we can notice that [math]U[/math] can be written as [math]DL^{T}[/math]. Now, we could stop there since LDL decomposition is closely related to Cholesky decomposition, but we can take things even further if [math]A[/math] is positive semi-definite. Specifically, consider [math]\\sqrt{D} = \\text{diag} \\left[ \\sqrt{U_{11}}, \\dots, \\sqrt{U_{nn}} \\right][/math]. This allows us to write [math]A = LDL^{T} = \\left( L \\sqrt{D} \\right) \\left( \\sqrt{D} L^{T} \\right) \\tag*{}[/math] If we let [math]R = \\sqrt{D} L^{T}[/math], then we can further write [math]A = R^{T}R = R R^{T} \\tag*{}[/math] .. which is exactly the Cholesky decomposition. ",
+            "date": "Answered January 12, 2019",
+            "views": "294",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Reno Jackson",
+                    "user_href": "/profile/Reno-Jackson-2"
+                }
+            ]
+        }
+    ]
+}

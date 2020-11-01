@@ -1,0 +1,96 @@
+{
+    "title": "How to use a computer to control electronic components like LEDs and motors the way Raspberry Pi does - Quora",
+    "tags": [
+        "Electronic Components",
+        "Raspberry Pi",
+        "Arduino (company)",
+        "Light Emitting Diodes",
+        "Motors",
+        "Electronics",
+        "Electrical Engineering",
+        "Computers",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jim Parr",
+                "href": "/profile/Jim-Parr-4"
+            },
+            "answer_text": "Once upon a yesteryear, the once ubiquitous parallel printer port was the interface of choice for this sort of thing. As such ports disappeared from computers more than 20 years past, it is no longer an option for you (unless you still have a very old desktop running MS DOS or something like it). Your most straightforward option is to troll on the Web (particularly large Chinese vendor sites) for a USB interface of the correct type. These are normally quite low cost and not difficult to use. Among the sort of interfaces you can obtain that are USB 2 or 3 compliant are\u2026 USB to RS232USB to RS485USB to I2C (ftdi)USB to SPI (ftdi)USB to Dallas 1-wire.USB to stepper-motor controller (usually with microstepping).USB to 4/8/16/32 on/off digital/analogue input and/or output.USB to LED driver devices (including semiprofessional DMX512).USB to audio or video streaming (various analogue and digital standards). And so-on. In a more professional way, most of the above can also be obtained and more using ETHERNET network/s. This type of network has been in use for a number of years to control and monitor large factories of many types. The cost of such gear is usually a lot more expensive and carries mandatory industrial compliance as a significant portion of the cost. If you are more interested in remote/wireless (eg: controlling lights in your house), then there are also many options available here as well - most are Wi-Fi (some Bluetooth) and many are cloud-based (avoid the cloud based ones would be my suggestion). If you go in this direction you are firmly captured by the IOT upsurge - watch the hype and the hooks - of which there are many but too numerous to recount here. The goal-posts are moving all the time in this electronic control/monitoring sector. Good hunting. And \u201cCaveat Emptor\u201d. ",
+            "date": "Answered February 27, 2020",
+            "views": "102",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Axmed Nuur",
+                    "user_href": "/profile/Axmed-Nuur"
+                },
+                {
+                    "user_id": "Derek Wood",
+                    "user_href": "/profile/Derek-Wood"
+                },
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Uli Libal",
+                "href": "/profile/Uli-Libal"
+            },
+            "answer_text": "FOr some simple applications there is a kit connected to the USB which provides a PC GUI to control IOs via the USB interface: Usb experiment interface board I used that board for some simple test and measurement set-up. Or look to ARDUINO Boards which allow to send data via a serial interface and with some software to control the Arduino IOs. ",
+            "date": "Answered February 27, 2020",
+            "views": "49",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Axmed Nuur",
+                    "user_href": "/profile/Axmed-Nuur"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ken Burgett",
+                "href": "/profile/Ken-Burgett"
+            },
+            "answer_text": "Use a Raspberry Pi. But, also, put it on your network so that you can send it commands to the LEDs and motors you wish to control. You could use RabbitMQ so that you could organize commands as topics so that the devices could be controlled from any device capable of talking to the message broker. ",
+            "date": "Answered February 27, 2020",
+            "views": "49",
+            "upvotes": " Answer requested by Axmed Nuur",
+            "upvoters": [
+                {
+                    "user_id": "Alan Mellor",
+                    "user_href": "/profile/Alan-Mellor"
+                },
+                {
+                    "user_id": "David Wilmshurst",
+                    "user_href": "/profile/David-Wilmshurst"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ian Hendry",
+                "href": "/profile/Ian-Hendry-11"
+            },
+            "answer_text": "It is now practical to control LEDs and motors via Wi-Fi (local network) or the internet via a service for the internet of things (IOT). This very cheap unit is called an ESP32 Vroom, for sale on Banggood and similar sites, it programs from the relatively easy to learn Arduino IDE environment. ",
+            "date": "Answered February 29, 2020",
+            "views": "15",
+            "upvotes": " Answer requested by Axmed Nuur"
+        },
+        {
+            "author_info": {
+                "name": "Loring Chien",
+                "href": "/profile/Loring-Chien"
+            },
+            "answer_text": "you need to equip it with a I/O interface. Some will plug into expansion slots in desktops. others will plug into USB ports and both will have a number of screw terminals supporting various numbers of digital inputs, digital outputs, A/D ports and D/A ports of varying number and resolution. ",
+            "date": "Answered February 27, 2020",
+            "views": "82",
+            "upvotes": " View 2 Upvoters"
+        }
+    ]
+}

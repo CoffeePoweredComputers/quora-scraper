@@ -1,0 +1,111 @@
+{
+    "title": "What is the difference between a WAN and a LAN port? - Quora",
+    "tags": [
+        "Wide Area Networks",
+        "Local Area Networks",
+        "Routers (networking)",
+        "Comparisons"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Erik Fair",
+                "href": "/profile/Erik-Fair"
+            },
+            "answer_text": "In consumer-grade Routers, the distinction between a \u201cWAN port\u201d and a \u201cLAN port\u201d is typically driven by the default configuration of the firmware (software) in the device - the ports are typically both Ethernet interfaces. the \u201cWAN port\u201d is expected to be connected to Cable Modems or DSL modems, i.e. \u201ctowards\u201d Internet Service Providers (the entity that is connecting your computers & networks to the rest of The Internet). The router firmware will typically expect the ISP to answer to DHCP requests for configuration of IP Addresses, DNS Service, etc., on this interface.the \u201cLAN port\u201d is for your computer or network. The router firmware will typically provide DHCP service (hand out IP addresses & other configuration) to hosts attached to this interface as a combination of pre-configured \u201cprivate\u201d IP addresses (see RFC 1918), and information the router gleans from ISP DHCP requests it made on the WAN port.This model of router operation assumes that the router will be used to switch IP packets and provide Network Address Translation (NAT, required because private IP addresses can\u2019t be directly used on the public Internet) for a \u201cleaf\u201d or \u201cend\u201d network, i.e. a network that is not connected to any other networks and does not provide \u201ctransit\u201d for IP packets from elsewhere to elsewhere. Such a network has one connection to the rest of the Internet and thus a wide range of simplifying assumptions can be made about configuration. Any or all of this can change if the router firmware permits other modes of operation and the user/administrator changes the default configuration. ",
+            "date": "Answered August 22, 2016",
+            "views": "369",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Adal Alexander",
+                    "user_href": "/profile/Adal-Alexander"
+                },
+                {
+                    "user_id": "Miron Butoi",
+                    "user_href": "/profile/Miron-Butoi"
+                },
+                {
+                    "user_id": "Tyler Weigand",
+                    "user_href": "/profile/Tyler-Weigand"
+                },
+                {
+                    "user_id": "Tom Smith",
+                    "user_href": "/profile/Tom-Smith-1131"
+                },
+                {
+                    "user_id": "Vivek Subramanian",
+                    "user_href": "/profile/Vivek-Subramanian-10"
+                },
+                {
+                    "user_id": "Maire Oja",
+                    "user_href": "/profile/Maire-Oja"
+                },
+                {
+                    "user_id": "Liona Squires",
+                    "user_href": "/profile/Liona-Squires-2"
+                },
+                {
+                    "user_id": "Chen Chen",
+                    "user_href": "/profile/Chen-Chen-158"
+                },
+                {
+                    "user_id": "Kevin Kemper",
+                    "user_href": "/profile/Kevin-Kemper-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chester Timberblake",
+                "href": "/profile/Chester-Timberblake"
+            },
+            "answer_text": "We divided the networks into two types: Local Area Network (LAN) and Wide Area Network (WAN). The two networks are generally classified on the basis of their coverage area. Typically, a local area network exists in a house or a university campus, while a wide area network exists over many office buildings separated by a vast distance. The office buildings in a WAN may be in different countries or even continents. For example, the headquarters may be in USA, the regional office may be in the UK, and the branch office may be in India. The workers in these three buildings use a Wide Area Network to collaborate with each other. The Internet can also be considered as a WAN, with the Ethernet being a classic example of WAN. In a LAN, computers and hardware such as printers can be connected by cable (copper wiring), fibre optic cabling (glass fibres) or using a wireless (radio waves) connection. LAN and WAN play different roles in the networks. But what are their main functions and differences? Here let us check the main points of LAN and WAN. LANs, Advantages Hardware such as printers can be shared so individual workstations do not need their own printer. When they print, the data is stored in a queue on a server. The data is then passed to the printer.All the users work can be stored in a central place (the dedicated file server) so a user can access their work through any computer on the network.Software can be shared; software packages are stored on the server and downloaded to workstations as requested. Note that a license still has to be bought for each copy of the software needed.Data can be shared because database files stored in the server are available to users around the network; data from CD-ROMs can also be shared across the network.Central back-up can take place automatically at regular intervals. A user will usually be able to retrieve work that has been deleted by mistake.Messages can be sent to people working at other computers on the network which can save time and paper.It is possible to set up a local intranet such as that on the KLB school network. The web pages of information can be accessed only over the LAN. An intranet is free because it does not involve phone links.There is control over users\u2019 access rights to programs and data.Disadvantages of LANs Printing can be slow. Where a lot of workstations are served by only one or two printers, long print queues may develop.A virus can spread more easily. If a virus gets into one computer, it is likely to spread quickly across the network because it will get into the central backing store.As data is shared there is a greater need for security. Users of the network have to have authentication techniques such as user ids and passwords. Unique user ID\u2019s control access to the files and settings on the network while passwords prevent unauthorized users from logging onto the network. Data may also have to be encrypted so that it is meaningless if intercepted.If the server fails, all the workstations are affected. Work stored on shared hard disk drives will not be accessible and it will not be possible to use network printers either.The cost of installing the equipment is greater. Cabling can be expensive to buy and to install.Damage to cables can isolate computers. Some sections of the network can become isolated and will not be able to communicate with the rest of the network.Because networks can be complicated to maintain, a network manager may be need to be employed to run the system.We know that a Wide Area Network is not confined to one building. The computers and terminals forming part of the network can be spread around the world. External communication links such as satellites,microwaves, and telecommunication links and optical fibre will be used to connect the parts of a WAN. The connection must normally be paid for because the links are external. The Internet is a worldwide WAN and a LAN can be connected to it using a router. WANs, Advantages These are similar to those of LAN\u2019s except the scale of sharing etc. becomes far greater and can be world-wide.Disadvantages of WANs Again these are similar to those of LAN\u2019s except that issues such as security become even more important as potential hackers could break into a computer system from anywhere in the world rather than having to physically be in a building.Encryption of secure data such as financial transactions is necessary because it is even easier to intercept data.Revision points-you should be able to do the following: Explain what is meant by a network and know the benefits of networking computersDefine a LAN (Local Area Network) and a WAN (Wide Area Network) and discuss the advantages and disadvantages of eachFinally, I share you a quick comparison between LAN and WAN.  ",
+            "date": "Answered July 25, 2017",
+            "views": "171",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Monika",
+                    "user_href": "/profile/Monika-278"
+                },
+                {
+                    "user_id": "Anupa Jhawar",
+                    "user_href": "/profile/Anupa-Jhawar"
+                },
+                {
+                    "user_id": "Heng Suos",
+                    "user_href": "/profile/Heng-Suos"
+                },
+                {
+                    "user_id": "Hamza Chaiheder",
+                    "user_href": "/profile/Hamza-Chaiheder"
+                },
+                {
+                    "user_id": "Krishna Ashok",
+                    "user_href": "/profile/Krishna-Ashok-12"
+                },
+                {
+                    "user_id": "Sheikh Iflah",
+                    "user_href": "/profile/Sheikh-Iflah"
+                },
+                {
+                    "user_id": "Rishu Verma",
+                    "user_href": "/profile/Rishu-Verma-3"
+                },
+                {
+                    "user_id": "Imrose Reza Himel",
+                    "user_href": "/profile/Imrose-Reza-Himel"
+                },
+                {
+                    "user_id": "Kiran Kumar Royal",
+                    "user_href": "/profile/Kiran-Kumar-Royal-1"
+                },
+                {
+                    "user_id": "Mathias Sam",
+                    "user_href": "/profile/Mathias-Sam"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "title": "How is non-Euclidean geometry different from Euclidean geometry in curved surfaces? Are they identical? - Quora",
+    "tags": [
+        "Non-Euclidean Geometry",
+        "Euclidean Geometry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Senia Sheydvasser",
+                "href": "/profile/Senia-Sheydvasser"
+            },
+            "answer_text": "It depends on what you mean by \u201cnon-Euclidean.\u201d The most traditional reading of this would be \u201cspace satisfying all of the Euclidean axioms other than the Parallel Postulate.\u201d If that\u2019s our meaning, then the geometry induced on curved surfaces embedded in Euclidean space is more general. As a simple example, contrary to popular belief, the sphere isn\u2019t actually an example of a space that satisfies all the Euclidean axioms other than the Parallel Postulate, because in Euclidean geometry, any two points should determine a unique line, and this is false on a sphere if we choose two antipodal points.  (Thanks to Wikimedia user CheChe for the illustration.) What is an example of a space that satisfies all of the Euclidean axioms save the Parallel Postulate is the elliptic plane, which you get from the sphere by identifying antipodal points\u2014or, equivalently, by chopping the sphere in half, and specifying that if you travel off the side on the boundary, you return on the opposite antipodal point.  (This illustration, if I\u2019m not mistaken, is taken from Klein\u2019s original treatment on the subject.) It\u2019s much less obvious that this weird space can be thought of as a curved surface in some Euclidean space, isn\u2019t it? Nevertheless, it is true\u2014you can realize the elliptic plane as a surface in four dimensional Euclidean space, such that the geometry it inherits as a result matches with the geometry described here. We\u2019ll return to that point later. On the other hand, we might be much more loose with our requirement of what we mean by non-Euclidean space, and ask only that it be some space that satisfies some of the Euclidean axioms, but not all of them. In that case, non-Euclidean geometry is much, much more general than the study of Euclidean geometry in curved surfaces. As an example, consider the taxicab geometry, which is defined exactly like the standard Cartesian plane except that we redefine the distance, so that no longer do we have [math]\\displaystyle d\\left((x_1, y_1),(x_2,y_2)\\right) = \\sqrt{(x_1 - x_2)^2 + (y_1 - y_2)^2}, \\tag*{}[/math] but instead [math]\\displaystyle d\\left((x_1, y_1),(x_2,y_2)\\right) = |x_1 - x_2| + |y_1 - y_2|. \\tag*{}[/math] If you live in Manhattan, like I do, taxicab geometry is a decent approximation of the distance you need to travel between any two points. In any case, it turns out that taxicab geometry satisfies all of the Euclidean axioms, except for the side-angle-side axiom that if two triangles have two pairs of sides of equal length, and if the angles between those sides are equal, then the triangles are congruent.  (An example showing that SAS is false for the taxicab geometry\u2014the illustration is due to Clint McCrory, I believe.) You can see that taxicab geometry cannot possibly be realized as the geometry inherited by a surface in some Euclidean space, because the ratio of the circumference of a circle to the diameter in taxicab geometry is always [math]4[/math] (see my answer to Can one construct a non-Euclidean space where the ratio of the diameter to the circumference (not Pi) is a different number?, for instance), but if you take a small enough circle on a surface as above, this ratio will be approximately [math]\\pi[/math]. However, probably the most common modern usage of the phrase \u201cnon-Euclidean space\u201d is as follows: it is a space that is not Euclidean, but is still locally Euclidean, meaning that if you look at a small enough portion of it, it will be approximately Euclidean. The way to formalize this is to define Riemannian manifolds. Examples of Riemannian manifolds include the sphere, the cylinder, elliptic space, and the space seen in Pac-Man, Asteroids, Final Fantasy, and probably scores of other video games from the 80s and 90s, where you have a flat rectangular map such that if you go off one edge, you come back on the other edge. (I have a write-up about this space here.) Note that our examples include some that can certainly be realized as surfaces embedded in Euclidean space (such as the sphere and cylinder), and some where it is hardly clear that this is possible (such as elliptic space and Final Fantasy space). However, due to the conjunction of the Whitney embedding theorem and the Nash embedding theorem, it is true that any Riemannian manifold can be realized as a surface inside of some Euclidean space (and, in fact, for surfaces we can always be assured that four-dimensional Euclidean space will suffice). Note, on the other hand, that the first result was proved in the 1930s, and the second in the 1950s, so neither of them can possibly be thought of as easy or obvious. Furthermore, while you can think of two-dimensional Riemannian manifolds as surfaces inside of [math]\\mathbb{R}^4[/math], it is usually not in your best interests to do so\u2014having an explicit embedding in mind typically just gets in the way, and doesn\u2019t net you anything useful. ",
+            "date": "Answered September 5, 2018",
+            "views": "39",
+            "upvotes": " View 88 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Vincent Hsu",
+                    "user_href": "/profile/Vincent-Hsu-22"
+                },
+                {
+                    "user_id": "Prakhar Pratyush",
+                    "user_href": "/profile/Prakhar-Pratyush-3"
+                },
+                {
+                    "user_id": "Navjot Singh",
+                    "user_href": "/profile/Navjot-Singh-491"
+                },
+                {
+                    "user_id": "Sudipta Roy",
+                    "user_href": "/profile/Sudipta-Roy-1"
+                },
+                {
+                    "user_id": "Jo van Schalkwyk",
+                    "user_href": "/profile/Jo-van-Schalkwyk"
+                },
+                {
+                    "user_id": "Dhruv Gupta",
+                    "user_href": "/profile/Dhruv-Gupta-65"
+                },
+                {
+                    "user_id": "Henning Breede",
+                    "user_href": "/profile/Henning-Breede"
+                },
+                {
+                    "user_id": "Henri Maes",
+                    "user_href": "/profile/Henri-Maes"
+                },
+                {
+                    "user_id": "Ale Ballester",
+                    "user_href": "/profile/Ale-Ballester"
+                },
+                {
+                    "user_id": "Shailesh Sahasrabhojanee",
+                    "user_href": "/profile/Shailesh-Sahasrabhojanee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dennis Stevenson",
+                "href": "/profile/Dennis-Stevenson-1"
+            },
+            "answer_text": "Non-Euclidean geometry can be on a plane surface. Hyperbolic geometry - Wikipedia. The bases of non-Euclidean geometries revolves around how \u201cparallel lines\u201d work. Fascinating area. ",
+            "date": "Answered September 5, 2018",
+            "views": "119",
+            "upvotes": " Answer requested by Ragu Ram Nadarajan"
+        }
+    ]
+}

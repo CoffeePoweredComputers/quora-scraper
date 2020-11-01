@@ -1,0 +1,106 @@
+{
+    "title": "Is C++ a good first programming language? - Quora",
+    "tags": [
+        "Learning C++",
+        "Beginning Computer Programming Advice",
+        "Computer Programmers",
+        "Computer Science",
+        "Learning to Program",
+        "Computers",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Keef Aragon",
+                "href": "/profile/Keef-Aragon"
+            },
+            "answer_text": "Yes it is! In fact, it's maybe better to learn it first than to learn it second. Most of the people on this thread learned how to write C++ *after* some other language. That's a hard transition to make. Other programming languages are built around the business domain. C++ is built around the computer with a little sugar to make the business domain relationship easier to maintain. It's easy to go from C++ to another language because all other languages have the same underpinnings that make up C++. Going from another language to C++ is hard because you have the same concepts but now you actually have to understand the computer. So your old habits from the other language become bad ones and you need to relearn how to program all over again from the standpoint of the computer. It will however be a lot harder because rather than just learning how to point and click stuff on a screen, you have to learn how the computer actually works. And the point and click stuff on the screen is actually a long way away from the core language and really isn't an appropriate first project. What also freaks most people out about C++ first, is that the first project is often some UI tool that does something pretty. C++ can do that with the help of gigantic 3rd party libraries (other languages build those giant 3rd party libraries right into the language). But you're better off staying to the core language and STL to do some simple command line stuff.  But once you do that, if you get REALLY good at C++, you'll have a very easy time getting REALLY good at any other programming language built on top of a von Neumann computer (all computers / smart phones / tablets / servers, except a few in some research labs). Since C++ is running on the metal, you understand how computers, compilers, and languages work. And the \"magic\" of other platforms and languages is no longer magic, but easy to recognize systems and patterns that you can trace and understand in depth. That being said, it's also a lot *smaller*. If you were to learn Java, for example, sure! You don't need to understand memory management, compile time optimization, object organization and alignment, CPU cache, northbridge / southbridge mechanics. But there's this giant library full of THOUSANDS of classes that you'll have to learn to really be effective in the market. C++ has a few things to learn too. But it's more on the order of tens rather than thousands. So while it's much harder to grasp without an understanding of computers, there's FAR less there to learn. Once you deeply understand the way the computer works and the handful of features of the language, you are already really good. Whereas something like python, Java, etc... even though you know the features of the language, you've only just begun.  My family and friends who are trying to learn programming see me writing C# or Java and always ask, \"How do you remember all those classes and methods? There's so many! It seems impossible.\" And all I can say is, \"I don't know\" and think about how much I miss C++, where I actually confidently understand the libraries and all of the things they are doing when I use them. And have almost 100% confidence in my ability to assess the code that I'm writing, unlike C# and Java. There's just so much less to learn. The one caveat to being able to easily transition to other languages is that you'll have to make a mental shift to grasp functional languages, even though you'll understand the underpinnings way better than most of your peers who rave about functional languages. You can think of it like this: languages like Assembly, C++, and C are designed around the computer itself. Functional Languages are designed around an idea of a perfect language for the sake of a perfect language without regard to the business domain or the computer but just code expression. And most other major languages are built on top of the ideas of C++ but try to extract the programmer away from the computer so that they only need to think about the business domain. But they are still powered by C/C++. TL;DR; C++ is hard but it's easy to program in anything once you know it. One of the others you might get recommendations for are easier to learn but you start from almost scratch when shifting to a new language. There's also less to learn in C++ as far as the language itself is concerned. If you are willing to put in the effort, C++ is a GREAT first language. But you'll spend 20% of your learning time on C++ and 80% on how the computer actually works. ",
+            "date": "Answered May 15, 2015",
+            "views": "58",
+            "upvotes": " View 28 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Doming Vitug",
+                    "user_href": "/profile/Doming-Vitug"
+                },
+                {
+                    "user_id": "Owen Tyler",
+                    "user_href": "/profile/Owen-Tyler-11"
+                },
+                {
+                    "user_id": "Tausif Mohd",
+                    "user_href": "/profile/Tausif-Mohd-1"
+                },
+                {
+                    "user_id": "MSaraiva Publicidade",
+                    "user_href": "/profile/MSaraiva-Publicidade"
+                },
+                {
+                    "user_id": "Tynan Douglas",
+                    "user_href": "/profile/Tynan-Douglas"
+                },
+                {
+                    "user_id": "Hunter Chrisman",
+                    "user_href": "/profile/Hunter-Chrisman"
+                },
+                {
+                    "user_id": "Ajaj Alawneh",
+                    "user_href": "/profile/Ajaj-Alawneh"
+                },
+                {
+                    "user_id": "Bryan Gonzalez",
+                    "user_href": "/profile/Bryan-Gonzalez-20"
+                },
+                {
+                    "user_id": "NewbieJS",
+                    "user_href": "/profile/NewbieJS"
+                },
+                {
+                    "user_id": "Ali Artsuew",
+                    "user_href": "/profile/Ali-Artsuew"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tony Jay",
+                "href": "/profile/Tony-Jay-14"
+            },
+            "answer_text": "Is C++ a good first programming language? Yes, it can be a good first programming language. Whether it is the best is a much more slippery question\u2026 My take on C++ in 2018 is that depending on how it is taught (or how one chooses to learn it) will have a major impact. Many of the negative commentaries about C++ come from people who learnt it in another era. My guess is that those people look upon all the new additions to C++ (post C++11) with horror but that is not actually a valid response. C++, due to the additions, has actually become a language that is much easier to learn and apply\u2026 To start learning (or be taught) C++ as C with classes is a major mistake! This is so important that I will repeat it: To start learning (or be taught) C++ as C with classes is a major mistake! Having carefully scrutinised both university curricula offering C++ as a foundation programming language as well as YouTube C++ tutorial offerings the vast majority teach C++ in this hopelessly outdated way. (No doubt reflecting how they were originally taught!) One will definitely need to learn all about pointers, language level arrays, and C-style strings as well as several other so-called C style constructs. However, none of these topics need to be introduced until they become organically necessary to delve into the theory and mechanics of creating robust classes. In the meantime one should learn to use Standard Library vectors, strings, and smart pointers and become very familiar with their use. Introducing pointers, arrays, C-style strings etc in the appropriate context of reverse engineering some of the Standard Library classes like vector, string, iostream, and stringstream etc demonstrates the importance of these constructs, within their context, i.e. well encapsulated classes and functions that behave well and do not leak any resources is the way to go. The idea of forcing C++ newbies to use arrays as a first data container and only introduce the Standard Library containers much later is both distasteful and silly. The same goes for C-style strings and pointers. My point is this: If one learns C++ in an inappropriate way in 2018 the result will be uniformly negative and will likely just create a new generation of individuals where the mere mention of C++ elicits a visceral reaction of fear and hatred\u2026 Taught appropriately (taking into account just how much the language has changed and levering all the pedagogical advantages modern (post C++11) C++ offers the result will likely be much more positive\u2026 A couple of individuals have mentioned learning English as a comparison to learning C++. There is a lot to be said for this insight. In common with English, C++ is poorly constructed with grammar that is not well ordered, compared to most other languages, and, relative to other programming languages, has a big vocabulary. English is a very difficult language to learn, however, no native English speaker views the language in that way! Why? Because that is what they grew up with! In global terms English is a vitally important language in medical, scientific, and engineering circles. Why? Because it is a language with an unparalleled vocabulary and expressiveness in grammar! In software engineering terms much the same could be said for C++! Yes, some of its syntax is messy, it allows programming in many different styles (functional, object-orientated, generic), but all of these \u2018problems\u2019 gives C++ unparalleled power and expressivity as a language. One can learn or teach English, as a second language, in a manner similar to how C++ is largely taught, and the results will be poor\u2026 Or, one can take a lesson from how English is generally taught to individuals as a second language and the results will likely be a lot better\u2026 I do know that many university computer science departments are devoting a lot of research resources into trying to figure out how to better teach programming (and by extension actual programming languages) since by their own admission they are not, currently, particularly successful as a whole, and the demand for competent graduates just continues to grow\u2026 That said, I believe that, in common with trying to learn multiple spoken languages, not everyone is cut out for the task of learning C++, or any other programming language for that matter. However, success in learning C++ will give the insight to easily learn any other programming language\u2026 ",
+            "date": "Answered September 19, 2018",
+            "views": "25",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Santor6 .",
+                    "user_href": "/profile/Santor6"
+                },
+                {
+                    "user_id": "MSaraiva Publicidade",
+                    "user_href": "/profile/MSaraiva-Publicidade"
+                },
+                {
+                    "user_id": "Peter Steier",
+                    "user_href": "/profile/Peter-Steier-2"
+                },
+                {
+                    "user_id": "Daniel Hanson",
+                    "user_href": "/profile/Daniel-Hanson-17"
+                },
+                {
+                    "user_id": "Donatas Azaravi\u010dius",
+                    "user_href": "/profile/Donatas-Azaravi\u010dius"
+                },
+                {
+                    "user_id": "Magnus Bengtsson",
+                    "user_href": "/profile/Magnus-Bengtsson-4"
+                },
+                {
+                    "user_id": "Dan Allen",
+                    "user_href": "/profile/Dan-Allen-3"
+                }
+            ]
+        }
+    ]
+}

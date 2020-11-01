@@ -1,0 +1,68 @@
+{
+    "title": "How to simplify the Boolean expression (A+B) (\u0100+C) (B+C) - Quora",
+    "tags": [
+        "Boolean Expression",
+        "Boolean Search",
+        "Simplify",
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Roger Larson",
+                "href": "/profile/Roger-Larson-11"
+            },
+            "answer_text": "AC+ BC + BA\u2019 details you can use a brute force method where you expand out all the terms which I will do later or you can use a more intuitive method The intuitive method ( I use A\u2019 for A not) For this expression (A +B)(A\u2019 +C)(B+C) to be true all terms in parenthesis must be true if A is true the first term is true and C makes the second and third terms true So you have (A)(C)(C)= AC being an answer But the first term is true if B is true and As makes the second term true, the B term makes the third term true So (B)(A\u2019)(B) = A\u2019B is also an answer If B is true and C is true all three terms are true (B)(C)(B+C) = BC Thus AC+ BC + A\u2019B makes the above statement true The brute force method works as follows expand the first two terms (A +B)(A\u2019 +C)(A+ B) = ( AA\u2019 +AC + BA\u2019 + BC)(A + B)now AA\u2019=0 expand again (AC + BA\u2019+ BC)(A+B) = AAC + BA\u2019A + ABC +ABC +BBA\u2019 + BBC AAC = AC, BA\u2019A =0, BBA\u2019 = BA\u2019, and BBC = BC, two ABC terms are redundant AC + ABC +BA\u2019 +BC AC(1 + B) + BA\u2019 +BC = AC + BA\u2019 +BC same as we got earlier ",
+            "date": "Answered July 21, 2020",
+            "views": "285",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "        ",
+            "date": "Answered July 21, 2020",
+            "views": "61",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sayantan Chowdhury",
+                    "user_href": "/profile/Sayantan-Chowdhury-50"
+                },
+                {
+                    "user_id": "Derrin Gottlieb",
+                    "user_href": "/profile/Derrin-Gottlieb"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michiel Bogaert",
+                "href": "/profile/Michiel-Bogaert"
+            },
+            "answer_text": "A B C  A+B  -A+C  B+C  total\u00a00 0 0   0     1    0     0\u00a00 0 1   0     1    1     0\u00a00 1 0   1     1    1     1\u00a00 1 1   1     1    1     1\u00a01 0 0   1     0    0     0\u00a01 0 1   1     1    1     1\u00a01 1 0   1     0    1     0\u00a01 1 1   1     1    1     1\u00a0-AB + AC ",
+            "date": "Answered July 21, 2020",
+            "views": "177",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "David Klein",
+                    "user_href": "/profile/David-Klein-269"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Zack Woods",
+                "href": "/profile/Zack-Woods-5"
+            },
+            "answer_text": "[math] F = (A+B)(A'+C)(B+C) [/math] [math] (A+B)(B+C) = AB + BB + AC + BC = AC + B [/math] [math] F = (AC+B)(A'+C) [/math] You can put this in a sum of products form if you want. [math] F = AA'C + A'B + ACC + BC [/math] [math] F = AC + A'B + BC [/math] ",
+            "date": "Answered July 21, 2020",
+            "views": "59",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+{
+    "title": "How do we simplify A\u2019B + AB' (Boolean algebra)? - Quora",
+    "tags": [
+        "Boolean Algebra",
+        "Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ryan Whitelock-Jones",
+                "href": "/profile/Ryan-Whitelock-Jones"
+            },
+            "answer_text": "Since the result is true if both A and B are true, or if neither A nor B is true, you could express it as: [math]A= B, A\\equiv B[/math] If the system you are trying to express it in includes equality statements. This is probably the purest form if it is allowed. [math]\\overline{A\\oplus B}, \\neg(A\\oplus B)[/math] Literally, \u201cNot ( Exclusively A or B)\u201d. This is true exactly when A and B are not different, which is when they are the same. There might be other candidates I can\u2019t think of as well. Writing things in simplest form isn\u2019t an entirely clear task, and you could make a solid argument that this expression is in its simplest form already. ",
+            "date": "Answered August 27, 2019",
+            "views": "17",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Indresh Mukherjee",
+                    "user_href": "/profile/Indresh-Mukherjee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Sayeed Sajjad Razin",
+                "href": "/profile/Sayeed-Sajjad-Razin"
+            },
+            "answer_text": "It\u2019s already simplified enough (DNF). What you have written is the expansion of xor gate. A\u2019B + AB\u2019 = A\u2295B Heres a way to get CNF A\u2019B + AB' (A\u2019 + AB\u2019)(B + AB\u2019) (A\u2019 + A)(A\u2019+B\u2019)(B+B\u2019)(B+A) (A\u2019+B\u2019)(A+B) ",
+            "date": "Answered November 27, 2018",
+            "views": "148",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Deelaka Pathmabandu",
+                    "user_href": "/profile/Deelaka-Pathmabandu"
+                },
+                {
+                    "user_id": "Pavel Fedotov",
+                    "user_href": "/profile/Pavel-Fedotov-5"
+                },
+                {
+                    "user_id": "Hashir Hameed",
+                    "user_href": "/profile/Hashir-Hameed"
+                },
+                {
+                    "user_id": "Dasunika Nirmani Wickramasinghe",
+                    "user_href": "/profile/Dasunika-Nirmani-Wickramasinghe"
+                },
+                {
+                    "user_id": "Cesar Montemayor",
+                    "user_href": "/profile/Cesar-Montemayor"
+                },
+                {
+                    "user_id": "Indra Karki",
+                    "user_href": "/profile/Indra-Karki-1"
+                },
+                {
+                    "user_id": "Xianlong Li",
+                    "user_href": "/profile/Xianlong-Li-4"
+                },
+                {
+                    "user_id": "Suganya D",
+                    "user_href": "/profile/Suganya-D-17"
+                },
+                {
+                    "user_id": "Zhou",
+                    "user_href": "/profile/Zhou-123"
+                },
+                {
+                    "user_id": "Emilio Romero",
+                    "user_href": "/profile/Emilio-Romero-6"
+                },
+                {
+                    "user_id": "Charunie Hansika",
+                    "user_href": "/profile/Charunie-Hansika"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mubashir.m Mubu Manayath",
+                "href": "/profile/Mubashir-m-Mubu-Manayath"
+            },
+            "answer_text": "Boolean algebra finds its most practical use in the simplification of logic circuits. If we translate a logic circuit\u2019s function into symbolic (Boolean) form, and apply certain algebraic rules to the resulting equation to reduce the number of terms and/or arithmetic operations, the simplified equation may be translated back into circuit form for a logic circuit performing the same function with fewer components. If equivalent function may be achieved with fewer components, the result will be increased reliability and decreased cost of manufacture. To this end, there are several rules of Boolean algebra presented in this section for use in reducing expressions to their simplest forms. The identities and properties already reviewed in this chapter are very useful in Boolean simplification, and for the most part bear similarity to many identities and properties of \u201cnormal\u201d algebra. ",
+            "date": "Answered October 11, 2020",
+            "views": "380",
+            "upvotes": " Answer requested by Akhil Shetty",
+            "upvoters": [
+                {
+                    "user_id": "Akhil Shetty",
+                    "user_href": "/profile/Akhil-Shetty-45"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "The boolean expression [math](AB+A'B')[/math] can not be simplified further as it is in its simplified form already. Actually it's an expression for XNOR logic (gate). [math]\\overline{A\\oplus B}=A\\odot B=AB+A'B'[/math] ",
+            "date": "Answered October 2, 2020",
+            "views": "360",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Munwar Ali",
+                    "user_href": "/profile/Munwar-Ali-22"
+                },
+                {
+                    "user_id": "Chhatra Saud",
+                    "user_href": "/profile/Chhatra-Saud-1"
+                },
+                {
+                    "user_id": "Rahul Singh",
+                    "user_href": "/profile/Rahul-Singh-2859"
+                },
+                {
+                    "user_id": "Praveen",
+                    "user_href": "/profile/Praveen-1261"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ruben D. Bersonda",
+                "href": "/profile/Ruben-D-Bersonda"
+            },
+            "answer_text": "By distribution: (AB+AB\u2019) AB A(B+B\u2019) AB A(AB) A(1B) AB ",
+            "date": "Answered July 31, 2019",
+            "views": "328",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Chhatra Saud",
+                    "user_href": "/profile/Chhatra-Saud-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Federico Kereki",
+                "href": "/profile/Federico-Kereki"
+            },
+            "answer_text": "You cannot: this is the Exclusive or - Wikipedia operator, a[math]\\oplus[/math] b = a\u2019b+ab\u2019. You can also express it in terms of Logical equality - Wikipedia: a [math]\\ne[/math] b. ",
+            "date": "Answered February 3, 2019",
+            "views": "54",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alfonsas Misevicius",
+                "href": "/profile/Alfonsas-Misevicius"
+            },
+            "answer_text": "(AB+AB') (AB) = A (B + B') AB = A * 1 * AB = A * AB = (A * A) B = AB ",
+            "date": "Answered August 2, 2019",
+            "views": "151",
+            "upvotes": " View 1 Upvoter"
+        }
+    ]
+}

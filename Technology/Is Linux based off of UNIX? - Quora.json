@@ -1,0 +1,86 @@
+{
+    "title": "Is Linux based off of UNIX? - Quora",
+    "tags": [
+        "Early 20s (age)",
+        "Unix",
+        "Linux"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "John Weintraub",
+                "href": "/profile/John-Weintraub"
+            },
+            "answer_text": "Linux is, has always been, and will always been Unix-based. An extremely brief history of Linux and (one of) its (two) founder(s), Linus Torvalds, (the other being the rather interesting and maverick Richard M. Stallman \u2014 aka RMS, developer of the \u201cGNU\u201d portion of GNU/Linux) will tell you that LT wanted to run Unix on a personal computer, and so ended up basically writing out code that simulated a lot of what Unix does, but not 100% Unix; there are substantial, notable differences between the two. Effectively, LT wrote a \u201cUnix\u201d that was Unix-like, not a true Unix, \u201cbrought\u201d over for the PC and the various similar chip architectures. (Edited 13\u201303\u20132020 at 01:25 AM PDT) (original: wanted to run Unix on a personal computer, and so ended up basically porting gigantic chunks of Unix over for the PC and the various chip architecture). RMS also did not like the commercialised Unix, and set out to build a User Interface (and later on, a kernel named \u201cHurd\u201d) that was very, very \u201cUnix-like\u201d but would be available for anyone to download, rewrite, recompile, add to, subtract from, or just burn the paper hard-copies of, if one so wished; he created licensing schemes based on the idea of \u201ccopyleft\u201d, which is pretty much a literal free-for-all licensing scheme. Not to slag it; far from it. Computing would be so much the poorer without LT and RMS in it. The FOSS BSDs (I call them that to distinguish them from the Commercially licensed BSD Unix, from the UC Berkeley Board of Regents) is similar; BSD Unix got caught up in a huge, ten year lawsuit, and so a bunch of Unix programmers set out to make a version of Unix that was FOSS (Free and Open Source Software) but performed with extreme similarity to commercial Unix. Solaris Unix is a commercial version of the commercial Unix; Solaris is still, I believe, owned by Sun Microsystems. It is a \u201creal\u201d Unix, but it isn\u2019t the UC Berkeley Unix. At any rate, if you hear some OS described as a member of the \u2018nix family, it means that it\u2019s Unix-like. That therefore includes, inter alia, Linux, Android, (large parts of) the macOS, Solaris, and the FOSS BSDs (NetBSD, Dragonfly BSD, OpenBSD, FreeBSD, TrueOS, PFsense, etc.). There are others, but these are the main ones. Update 13\u201303\u20132020 at 1:20 AM PDT: I need to make a slight correction. Petr Titera rightly pointed out the following: \u201cJust beware Linus Torvalds did not port a lot of Unix code to PC. He together wit many other wrote Linux kernel from scratch. He has not any access to original Unix code.\u201d, to which I responded, \u201cSorry, I didn\u2019t mean to suggest that he actually physically ported the code over. I\u2019m not a programmer, so occasionally I\u2019ll slightly misuse programming terminology. I am aware he didn\u2019t literally port over Unix code, and that he wrote the Linux kernel from scratch, long before you pointed it out. I must have been a bit tired when I wrote the original response. I will make the appropriate change.\u201d I have made the appropriate change in the text of the response accordingly. See above. I hope this answers your question. Thanks for the A2A ",
+            "date": "Updated March 13, 2020",
+            "views": "311",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Janil Garcia Jr.",
+                    "user_href": "/profile/Janil-Garcia-Jr"
+                },
+                {
+                    "user_id": "Chimaroke Okwara",
+                    "user_href": "/profile/Chimaroke-Okwara"
+                },
+                {
+                    "user_id": "Broken Cookie",
+                    "user_href": "/profile/Broken-Cookie-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mohammed Isam",
+                "href": "/profile/Mohammed-Isam-2"
+            },
+            "answer_text": "The aim of Linus Torvalds was to make a UNIX clone that was completely free and open source, using the GNU Public License, without using a single line of code from the original UNIX system. Therefore, the Linux kernel does behave like UNIX. All the standard GNU tools that are used with the Linux kernel were modeled after their UNIX counterparts. That means when you run GNU\u2019s ls, you expect it to behave like UNIX\u2019s ls, giving you similar results and output. In order to achieve this behavior, the underlying kernel must also demonstrate UNIX-like behavior, or else the tools will fail to accomplish their intended jobs. What we are talking about here is merely the external behavior, i.e. the API that interfaces with the system. What the Linux kernel does inside is usually very different from what UNIX did, since no UNIX code was used in Linux. In other words, Linux gives you the same behavior as UNIX, but it does things very differently. That was the beginning of the journey. Along the years, GNU started to evolve on its own right, and so did Linux. Both of the projects started to add their own extensions, like Linux-specific syscalls, GNU-specific options (the idea of the long options, the ones that start with dash-dash \u2014, is GNU\u2019s, not UNIX\u2019s invention), among other specifics that are too many to list in here. I believe it is safe to say that Linux was based on UNIX in theory, but then it turned out to be a beast of its own kind. ",
+            "date": "Answered January 24, 2017",
+            "views": "26",
+            "upvotes": " View 13 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Weintraub",
+                    "user_href": "/profile/John-Weintraub"
+                },
+                {
+                    "user_id": "Bill Flewelling",
+                    "user_href": "/profile/Bill-Flewelling"
+                },
+                {
+                    "user_id": "Suresh Thagunna",
+                    "user_href": "/profile/Suresh-Thagunna"
+                },
+                {
+                    "user_id": "Jaymin Shah",
+                    "user_href": "/profile/Jaymin-Shah-6"
+                },
+                {
+                    "user_id": "Martin Sunday",
+                    "user_href": "/profile/Martin-Sunday-1"
+                },
+                {
+                    "user_id": "Robert Mari\u0107",
+                    "user_href": "/profile/Robert-Mari\u0107-1"
+                },
+                {
+                    "user_id": "Yuri Nagibovich",
+                    "user_href": "/profile/Yuri-Nagibovich"
+                },
+                {
+                    "user_id": "Mounaim Zaryouhi",
+                    "user_href": "/profile/Mounaim-Zaryouhi-2"
+                },
+                {
+                    "user_id": "Sergey Bugaev",
+                    "user_href": "/profile/Sergey-Bugaev-1"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

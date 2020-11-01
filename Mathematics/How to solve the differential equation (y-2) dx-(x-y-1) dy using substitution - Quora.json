@@ -1,0 +1,38 @@
+{
+    "title": "How to solve the differential equation (y-2) dx-(x-y-1) dy using substitution - Quora",
+    "tags": [
+        "Ordinary Differential Equations",
+        "Partial Differential Equations",
+        "Differential Equations",
+        "Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marco Biagini",
+                "href": "/profile/Marco-Biagini-1"
+            },
+            "answer_text": "Solve y(x) - 2 = (-x + y(x) + 1) ( dy(x))/( dx): Rewrite the equation: -2 + y(x) + (x - y(x) - 1) ( dy(x))/( dx) = 0 Let P(x, y) = y - 2 and Q(x, y) = x - y - 1. This is an exact equation, because (dP(x, y))/(dy) = 1 = (dQ(x, y))/(dx). Define f(x, y) such that (df(x, y))/(dx) = P(x, y) and (df(x, y))/(dy) = Q(x, y). Then, the solution will be given by f(x, y) = c_1, where c_1 is an arbitrary constant. Integrate (df(x, y))/(dx) with respect to x in order to find f(x, y): f(x, y) = integral(y - 2) dx = -2 x + x y + g(y) where g(y) is an arbitrary function of y. Differentiate f(x, y) with respect to y in order to find g(y): (df(x, y))/(dy) = d/(dy)(-2 x + y x + g(y)) = x + ( dg(y))/( dy) Substitute into (df(x, y))/(dy) = Q(x, y): x + ( dg(y))/( dy) = x - y - 1 Solve for ( dg(y))/( dy): ( dg(y))/( dy) = -y - 1 Integrate ( dg(y))/( dy) with respect to y: g(y) = integral(-y - 1) dy = -y^2/2 - y Substitute g(y) into f(x, y): f(x, y) = -2 x - y^2/2 - y + y x The solution is f(x, y) = c_1: -2 x - y^2/2 - y + y x = c_1 Solve for y: y(x) = x - sqrt(x^2 - 6 x - 2 c_1 + 1) - 1 or y(x) = x + sqrt(x^2 - 6 x - 2 c_1 + 1) - 1 Simplify the arbitrary constants: Answer: y(x) = x - sqrt(x^2 - 6 x + c_1) - 1 or y(x) = x + sqrt(x^2 - 6 x + c_1) - 1 ",
+            "date": "Answered July 22, 2020",
+            "views": "339",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "David Alexander",
+                "href": "/profile/David-Alexander-668"
+            },
+            "answer_text": "Do you mean [math](y-2)dx=-(x-y-1)dy[/math] ? If so then write it as [math](y-2)dx+(x-y-1)dy=0[/math] and look for a function [math]F(x,y)[/math] such that [math]dF(x,y)=(y-2)dx+(x-y-1)dy=0[/math] for then the solution is [math]F(x,y)=C.[/math] Well, [math]dF(x,y)=F_x(x,y)dx+F_y(x,y)dy[/math] so for this approach to work we need [math]F_x(x,y)=y-2[/math] and [math]F_y(x,y)=x-y-1[/math] and since [math]F_{xy}(x,y)=F_{yx}(x,y)[/math] for twice differentiable functions we have a condition to check (exactness): [math]F_{xy}(x,y)=1[/math] and [math]F_{yx}(x,y)=1.[/math] Since these are the same we know the solution is of the form [math]F(x,y)=C[/math]. To find [math]F[/math] integrate: Integrating [math]F_x(x,y)[/math] partially with respect to x gives: [math]F=\\int F_x(x,y)\\partial x = \\int (y-2)\\partial x =  xy-2x+g(y)[/math] for some function [math]g(y).[/math] Integrating [math]F_y(x,y)[/math] partially with respect to y gives: [math]F=\\int F_y(x,y)\\partial y = \\int (x-y-1)\\partial y = xy-\\frac{1}{2}y^2-y+h(x)[/math] for some function [math]h(x).[/math] Hence, by comparing the two expressions for [math]F[/math] we see that [math]g(y)=-\\frac{1}{2}y^2-y[/math] and [math]h(x)=-2x.[/math] Hence, [math]F(x,y)=xy-\\frac{1}{2}y^2-y-2x=C[/math] is the solution. ",
+            "date": "Answered March 18, 2020",
+            "views": "222",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Justine Estandarte",
+                    "user_href": "/profile/Justine-Estandarte"
+                }
+            ]
+        }
+    ]
+}

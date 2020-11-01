@@ -1,0 +1,57 @@
+{
+    "title": "Why do we use n-1 instead of n for a sample's variance? - Quora",
+    "tags": [
+        "Variance (statistics)",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jan van Delden",
+                "href": "/profile/Jan-van-Delden-2"
+            },
+            "answer_text": "A \u2018simple\u2019 answer is: In the formula with which you calculate the sample variance the value of the sample mean is used. We correct for \u2018adding data\u2019, because we assume the mean is known, by dividing through by [math]n-1[/math] instead of [math]n[/math]. A formal answer is: The sample variance should be an unbiased estimate of the population variance.And it is possible to proof that one needs to divide by [math]n-1[/math] in order to achieve this. An unbiased estimate is an estimate which will pinpoint exactly (on average) to what it is supposed to point at. Here \u2018on average\u2019 means that an expected value is calculated (of the estimate). If we divide by [math]n[/math] instead, the sample variance would underestimate the population variance. The result is called biased. If the sample size is big this bias is not large. But if you have a small sample size the difference can be huge.  A last way to look at it. Suppose you measure the length of 1 adult ([math]n=1[/math]) and want to estimate the average length of all adults. The average length of our sample is equal to the value we measured, say 1.80 m. So we estimate the mean of the population by 1.80 m. If we divide by [math]n=1[/math] in order to estimate the population's variance, we would estimate this by: [math]\\displaystyle \\text{var(length)} = \\frac{1.80-\\text{mean}}{1}=\\frac{1.80\u20131.80}{1}=0[/math] If we divide by [math]n-1=0[/math] we get: [math]\\displaystyle \\text{var(length)}= \\frac{1.80-\\text{mean}}{0}=\\frac{0}{0}=..\\text{??}[/math] It would be strange to estimate a variance if you have 1 measurement, now would it not? So the formula with [math]n-1[/math] protects you from this mistake!  Note: I avoided official notation in the left hand side of the two last expressions on purpose. ",
+            "date": "Answered October 15, 2018",
+            "views": "11",
+            "upvotes": " View 5 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Terry Moore",
+                    "user_href": "/profile/Terry-Moore-32"
+                },
+                {
+                    "user_id": "Larry Jackson",
+                    "user_href": "/profile/Larry-Jackson-275"
+                },
+                {
+                    "user_id": "Nilesh Pandey",
+                    "user_href": "/profile/Nilesh-Pandey-25"
+                },
+                {
+                    "user_id": "Cipi Steia",
+                    "user_href": "/profile/Cipi-Steia"
+                },
+                {
+                    "user_id": "Jens Adler Nielsen",
+                    "user_href": "/profile/Jens-Adler-Nielsen"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Murali Krishna",
+                "href": "/profile/Murali-Krishna-4896"
+            },
+            "answer_text": "TO avoid sample bias and To make sample variance un biased for n. degrees of freedom is n--1 Combined variance of 2 groups distributions Sd12 =[( N1--1) Sd1^2 +( N2--1) Sd2^2+N1 N2/Nq+N2 \u00d7 (X1^2 +X2^2 --2X1X2)] ^1/2 / N1+N2--1 Note smaller the sample size greater the standard error SE =Sd/ (N)^1/2 STANDARD error is the index of the estimate. OF parameter SEM The equation implies that sampling error decreases As The sample increases SE value is small for a large sample ",
+            "date": "Answered June 13, 2020",
+            "views": "107",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Niharika",
+                    "user_href": "/profile/Niharika-385"
+                }
+            ]
+        }
+    ]
+}

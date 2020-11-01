@@ -1,0 +1,26 @@
+{
+    "title": "What are the best graphic card HP Proliant dl380 G7? - Quora",
+    "tags": [
+        "Hewlett-Packard (company)",
+        "Graphics Cards",
+        "Computer Hardware"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Bobby Lockwood",
+                "href": "/profile/Bobby-Lockwood-3"
+            },
+            "answer_text": "Ok I don\u2019t know why Quora is asking me to answer this question 2 years later. For what it\u2019s worth, the HP Proliant Series can indeed support graphics cards. You will need a PCI Express riser and a GPU power cable (on the G6 its a 10 pin connector on the motherboard that can supply either 1 or 2 6 or 8 pin GPU connectors). You may need to upgrade the power supply units also [potentially]. Almost any graphics card that doesn\u2019t exceed 75 watts over the PCI Express bus should be fine (the rest can come from that connector mentioned earlier) and a maximum of 150W (for a total of 225 Watts). [Sources] PCI expansion slot definitions (DL380 G7) and DL380G7 and 150W graphics card support I cannot recommend a specific one but user benchmark at this time of writing has many G7\u2019s with a graphics card installed. ProLiant DL380 G7 [User Benchmark]. A single slot height graphics card such as a GTX 1050 should work. You can indeed use a double slot card, but it\u2019s a bit hacky and you may have to remove the rear shield on the graphics card to fit it. As for Jeff Rielley\u2019s question/answer \u201cWhy do you need to put a graphics card in a server?\u201d (who happens to work for Hewlett Packard). There are a number of reasons why you would install a graphics card in a \u201cserver\u201d. It DOES NOT necessarily mean it\u2019s doing graphics, but possibly extreme computation and/or AI. Rendering [as part of a farm] is also another option. Frankly coming from a representative of HP, shows a severe lack of vision. Even before the G7, HP had already considered the GPU within rack systems with its proprietary 10 pin connector. ",
+            "date": "Answered September 30, 2019",
+            "views": "962",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Tommy Laurin",
+                    "user_href": "/profile/Tommy-Laurin"
+                }
+            ]
+        }
+    ]
+}

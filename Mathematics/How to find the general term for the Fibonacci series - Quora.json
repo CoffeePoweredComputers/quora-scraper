@@ -1,0 +1,64 @@
+{
+    "title": "How to find the general term for the Fibonacci series - Quora",
+    "tags": [
+        "Fibonacci Numbers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Wendy Krieger",
+                "href": "/profile/Wendy-Krieger"
+            },
+            "answer_text": "The general pattern for finding the n th member of the fiboacci series, is similar to that used to find messerine primes, can be used with modular arithmetic.  I used this method to find the remainders of fibonacci numbers with 10^9 digits. Suppose it is desired to find the 75th member, with minimal calculations.  This relies on that the fibonacci series is an intertwine of two series that follow the rule t(n+1)=a.t(n)+t(n-1), and that alternating members follow the rule t(n+2)=(a\u00b2-2) t(n-2).  One repeats this until t(75) is found. call isoquad( 3, n%2 , 0+n // 2,  2 + n // 2  )  here n = 75,  // is MOD or remainder,  % is DIV or divisor.  isoquad:  procedure\u00a0parse arg a2, a0, a3, a4\u00a0if a0 = 0 then do; a4 = a3; a0 = 1; end\u00a0if a0 < 0 then do; a0 = -a0; a4 = a3*a2-a4; end\u00a0do forever; if a0 = 1 then leave\u00a0a1 = a0//2; a5 = a4*a2 - a3;\u00a0if a1 = 0 then a4 = a5\u00a0else do; a3 = a4; a4 = a5*a2 - a3; end\u00a0a0 = a0 % 2; a2 = a2 * a2 - 2; end\u00a0return a4\u00a0 This is an actual rex script used for this.  We enter it with a0 = 1, a2 = 3, a3 = 3, and a4 = 75.      The bit before the 'do forever' is handling special cases.  The do forever shows the binary tower, with the first two loops expanded.  a(n) is written as [n].  F(n) gives (n).  Other numbers are shown as they evaluate.     a0  a1  a2  a3   a4   a5\u00a0   37      [2] (1)  (3)\u00a0       1                *(5)\u00a0               (3) *(7)  (5)    37 is odd\u00a0   18      [4] (3)  (7)         [4] = [2]*[2] - 2\u00a0       0       (3)  (7) *(11)\u00a0           [8] (3) (11)  \u00a0   ----------------------------        \u00a0    9  1  [16] (11) (27) (43) ..\u00a0    4  0  [32] (11) (43) (75)\u00a0    2  0  [64] (11) (75)\u00a0    1        return (75)                \u00a0",
+            "date": "Answered September 28, 2015",
+            "views": "845",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Thomas Nykl",
+                    "user_href": "/profile/Thomas-Nykl"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Leonidas Artopoulos",
+                "href": "/profile/Leonidas-Artopoulos"
+            },
+            "answer_text": "There is a closed form formula for the n-th Fibonacci number:  This is called Binet's formula. You may notice that  is the golden ratio. ",
+            "date": "Answered September 10, 2015",
+            "views": "835",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Robby Goetschalckx",
+                    "user_href": "/profile/Robby-Goetschalckx"
+                },
+                {
+                    "user_id": "P Shreyas Shetty",
+                    "user_href": "/profile/P-Shreyas-Shetty"
+                },
+                {
+                    "user_id": "David Moberg",
+                    "user_href": "/profile/David-Moberg-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abhinav Antani",
+                "href": "/profile/Abhinav-Antani-2"
+            },
+            "answer_text": "F(x)=F(x-1)+F(x-2)Where F(x) is term not the number ",
+            "date": "Answered September 18, 2015",
+            "views": "160",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Krutarth Desai",
+                    "user_href": "/profile/Krutarth-Desai-5"
+                }
+            ]
+        }
+    ]
+}

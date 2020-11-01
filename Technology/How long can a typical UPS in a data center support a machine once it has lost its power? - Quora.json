@@ -1,0 +1,60 @@
+{
+    "title": "How long can a typical UPS in a data center support a machine once it has lost its power? - Quora",
+    "tags": [
+        "Data Center Management",
+        "Data Centers",
+        "Power Supplies"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Stan Hanks",
+                "href": "/profile/Stan-Hanks"
+            },
+            "answer_text": "Your base assumption is wrong. The datacenter has backup power generators. The battery backed UPS power is typically sufficient to allow time to spin the genset up to load capacity and initiate power transfer from the grid (which is presumed down) to the genset. That's on the order of 20-30 minutes, tops. If you have a smaller private data center, then you need to figure out how long you need to provide power. For instance, on servers in my office, the UPS is rated for about 1 hour, because historically any building power outage has been resolved in that time interval. Just in case, there's a \"low battery\" warning that fires an event via a USB cable to the servers, telling them to shut down gracefully. There's also a difference between on-line and off-line UPS. When I had an R&D lab in a heavy industrial complex, the power spiked frequently, including sags below rated input for our equipment. I used an on-line UPS, which meant that the grid input charged the batteries, and everything in-house ran off the inverter 100% of the time. Thus, there was never a chance of a power disruption, or of \"dirty power\" taking anything out. These \"on line\" UPS systems are more expensive to purchase and maintain, but worth it in some cases. (That's also how traditional -48VDC telephone systems work, but that's another story...) ",
+            "date": "Answered October 21, 2014",
+            "views": "19",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "Jeremiah Hendon",
+                    "user_href": "/profile/Jeremiah-Hendon"
+                },
+                {
+                    "user_id": "Karen Marie Shelton",
+                    "user_href": "/profile/Karen-Marie-Shelton"
+                },
+                {
+                    "user_id": "Karsten Stryger",
+                    "user_href": "/profile/Karsten-Stryger"
+                },
+                {
+                    "user_id": "Anurag Jain",
+                    "user_href": "/profile/Anurag-Jain-34"
+                },
+                {
+                    "user_id": "Leonid S. Knyshov",
+                    "user_href": "/profile/Leonid-S.-Knyshov"
+                },
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gabe Andrews",
+                "href": "/profile/Gabe-Andrews"
+            },
+            "answer_text": "How long do you want the UPS to support the data center / machines after loss of power? This is a decision that is required to be discussed in the design of the data center to truly understand what is a cost effective runtime requirement. Some mission critical facilities are requesting only a minimum time to allow for generators to take over runtime of the facility. For a design with quick pickup generators you can look at a rotary UPS that provides 1\u20135 minutes of runtime with a power loss. For longer durations you may consider a batter back up solution (VRLA, NiCad, LiION) to delivery an extended runtime. Batteries will provide you with 3\u201330 minutes of runtime in most common cases, but are able to go longer if you wish to pay the capital expense and maintenance for the batteries. The utilization of batteries is the most common UPS design. Additionally, you may consider a DRUPS that integrates the rotary UPS and generator systems to a single solution for your back up requirements. Another consideration for the owner to make in back up time is the ability to shut down non-critical systems in order to reduce load and improve runtime. This is discussion to be covered in the design phase as the decision made for non-critical equipment may allow for additional savings in total facility design. In the end you will be able to achieve the runtime you require ",
+            "date": "Answered December 4, 2019",
+            "views": "266",
+            "upvotes": "0"
+        }
+    ]
+}

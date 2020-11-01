@@ -1,0 +1,38 @@
+{
+    "title": "I want to connect 8 sensors wirelessly to my raspberry pi. What's the best way? - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Sensors",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harshit Aneja",
+                "href": "/profile/Harshit-Aneja"
+            },
+            "answer_text": "As per the details given by the OP the sensors are placed on doors in the whole house. So sensors don't have a line of sight and thus short range wireless protocols like bluetooth won't work. And my suggestion would be to use wifi instead of other long range networks. As it is to be used inside the house cheap wifi modules like ESP8266 can be used.. ESP13 provides with ample number of GPIO ports to connect to the sensor if sensor supports input through that. Otherwise atmega 8 or other simple microcontroller can be used to get data if SPI or I2C protocol is being used and transmit the data through wifi to Raspberry pi.  ",
+            "date": "Answered April 26, 2016",
+            "views": "13",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Salwan Arar",
+                    "user_href": "/profile/Salwan-Arar"
+                },
+                {
+                    "user_id": "Mahdi Zouch",
+                    "user_href": "/profile/Mahdi-Zouch"
+                },
+                {
+                    "user_id": "Hardik Tarpara",
+                    "user_href": "/profile/Hardik-Tarpara"
+                },
+                {
+                    "user_id": "Anil Battalahalli Sreenath",
+                    "user_href": "/profile/Anil-Battalahalli-Sreenath"
+                }
+            ]
+        }
+    ]
+}

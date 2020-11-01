@@ -1,0 +1,65 @@
+{
+    "title": "Is there any performance impact of using different engines for tables in a single database in MYSQL? - Quora",
+    "tags": [
+        "Impact",
+        "MySQL",
+        "Database Systems",
+        "Existence Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Scott Metcalf",
+                "href": "/profile/Scott-Metcalf"
+            },
+            "answer_text": "Yes, each MySQL storage engine will perform differently but the result will depend on the type of transaction.  Reads, Writes, Transaction size, HA requirements are a few of the factors that would effect performance for each storage engine choice.   Prior to MySQL 5.5 the default storage engine is MyISAM which performs great on reads.  With MySQL 5.5 the default storage engine is InnoDB which has improved performance over prior releases and allows a nice mix of performance and ACID compliance.  These are the 2 most popular storage engines but there are other storage engines like memory, blackhole, ndb and others that offer a unique value for specific applications.   Generally speaking the safe bet is to use InnoDB for most of your tables and revisit the choice after you hit a performance bottleneck and are looking to tune things.   The nice thing is it will be a simple task to change the storage engine for a table and provided the table size is not too great it shouldn't take too long to change and test each storage engine for your specific application. ",
+            "date": "Answered February 14, 2011",
+            "views": "12",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Farsan Rashid",
+                    "user_href": "/profile/Farsan-Rashid"
+                },
+                {
+                    "user_id": "Satyarth Praveen",
+                    "user_href": "/profile/Satyarth-Praveen"
+                },
+                {
+                    "user_id": "Bala Kumar",
+                    "user_href": "/profile/Bala-Kumar"
+                },
+                {
+                    "user_id": "Toby Thain",
+                    "user_href": "/profile/Toby-Thain"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Toby Thain",
+                "href": "/profile/Toby-Thain"
+            },
+            "answer_text": "While it will work, it raises issues such as duplicated buffer space; impossibility of cross-engine ACID or FK constraints (i.e. your schema won't have relational integrity); etc. Do you have a real need to do this? Is performance really the most important consideration? ",
+            "date": "Answered February 14, 2011",
+            "views": "392",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Bala Kumar",
+                    "user_href": "/profile/Bala-Kumar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ronald Bradford",
+                "href": "/profile/Ronald-Bradford"
+            },
+            "answer_text": "The biggest issues are more related to both tuning (i.e. appropriate memory allocation), and also disaster recovery.  When you mix transaction and non-transactional engines, you loose ACID compliance (i.e. consistency of more then one SQL statement in a transaction), and not all engines are crash safe. That means that your recovery process may be unnecessarily complex. ",
+            "date": "Answered January 4, 2013",
+            "views": "28",
+            "upvotes": "0"
+        }
+    ]
+}

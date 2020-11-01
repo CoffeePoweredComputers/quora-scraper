@@ -1,0 +1,48 @@
+{
+    "title": "How to add a table of content in Blogger - Quora",
+    "tags": [
+        "Table of Contents",
+        "Blogger (product)",
+        "Bloggers",
+        "Blogs",
+        "Blogging"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Harsh",
+                "href": "/profile/Harsh-1240"
+            },
+            "answer_text": "I hope you all are aware that, Google Blogger or Blogspot does not have Table of content plugin like WordPress. To install TOC in Blogger we need to add some Javascript, CSS and Codes. How to add table of contents in blogger? 1. Log into your Blogger 2.Select Template or Theme and Click on \"BACKUP\" then Click on \"EDIT HTML\". 3. Now search for the </head> and paste the below script just above the </head> tag. <script type='text/javascript'> //<![CDATA[ //*************TOC plugin function mbtTOC() {var mbtTOC=i=headlength=gethead=0; headlength = document.getElementById(\"post-toc\").getElementsByTagName(\"h2\").length;for (i = 0; i < headlength; i++) {gethead = document.getElementById(\"post-toc\").getElementsByTagName(\"h2\")[i].textContent;document.getElementById(\"post-toc\").getElementsByTagName(\"h2\")[i].setAttribute(\"id\", \"point\"+i);mbtTOC = \"<li><a href='#point\"+i+\"'>\"+gethead+\"</a></li>\";document.getElementById(\"mbtTOC\").innerHTML += mbtTOC;}}function mbtToggle() {var mbt = document.getElementById('mbtTOC');if (mbt .style.display === 'none') {mbt .style.display = 'block';} else {mbt .style.display = 'none';}} //]]> </script>\u00a04. Now search ]]></b:skin> and paste the following CSS code just above ]]></b:skin> line. .mbtTOC{border:5px solid #f7f0b8;box-shadow:1px 1px 0 #EDE396;background-color:#FFFFE0;color:#707037;line-height:1.4em;margin:30px auto;padding:20px 30px 20px 10px;font-family:oswald,arial;display:block;width:70%}.mbtTOC ol,.mbtTOC ul{margin:0;padding:0}.mbtTOC ul{list-style:none}.mbtTOC ol li,.mbtTOC ul li{padding:15px 0 0;margin:0 0 0 30px;font-size:15px}.mbtTOC a{color:#0080ff;text-decoration:none}.mbtTOC a:hover{text-decoration:underline}.mbtTOC button{background:#FFFFE0;font-family:oswald,arial;font-size:20px;position:relative;outline:none;cursor:pointer;border:none;color:#707037;padding:0 0 0 15px}.mbtTOC button:after{content:\"\\f0dc\";font-family:FontAwesome;position:relative;left:10px;font-size:20px}\u00a05. Lastly search for the <data:post.body/> , there will be more than 1 <data:post.body/> tag , Replace All of them with below code.  <div id=\"post-toc\"><data:post.body/></div>\u00a06. The coding part ends here, Click on \"SAVE\" and you are all done! NB: The above method will help you to install the required JS and CSS for TOC plugin. Now to Activate TOC in Blog Post you will need to add 2 codes in Blog Post. The Codes are available at How to add Table of Contents in Blogger I have personally tried this method in my blog, it's easy to install and doesn't require coding knowledge. Kindly note that I am just sharing the method to install TOC in Blogger, the credit to develop the code goes to their original developer. ",
+            "date": "Answered March 11, 2020",
+            "views": "283",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Harsh S",
+                    "user_href": "/profile/Harsh-S-69"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Muhammed Fasil K",
+                "href": "/profile/Muhammed-Fasil-K-1"
+            },
+            "answer_text": "Shortcode based TOC plugin for blogger with optimized Javascript and CSS  Just follow this tutorial Table of Contents in Blogger | Bloginos Hope this would help you. ",
+            "date": "Updated December 14, 2019",
+            "views": "198",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Prince Babu",
+                "href": "/profile/Prince-Babu-54"
+            },
+            "answer_text": "Make a image then fill with your details after do that compress the image then apply the image on blogger Thanks ",
+            "date": "Answered January 11, 2020",
+            "views": "68",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "title": "After reducing given circuit into equivalent Current source, what is the value of final current and resistance if R1=R2=10\u03a9, R3=20\u03a9, and I=4A for the circuit given below? * a) 4A, 10\u03a9 b) 2A, 10\u03a9 c) 2A, 4\u03a9 d) 4A, 4\u03a9 - Quora",
+    "tags": [
+        "Electronic Circuits",
+        "Resistance (physics)",
+        "Circuits",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Raheem Elsayed",
+                "href": "/profile/Raheem-Elsayed-2"
+            },
+            "answer_text": "Circuit:   First, we will use source transformation for the current source 4 A in parallel with the 10 \u03a9 resistor:  We will use Thevenin's theorem, first let\u2019s find :   Find the , short circuit the supply:   So finally the Thevenin's equivalent:  Use source transformation to get Norton\u2019s equivalent:  So the answer is a) 2A, 10\u03a9 ",
+            "date": "Answered August 25, 2020",
+            "views": "125",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ramon Shafer",
+                "href": "/profile/Ramon-Shafer"
+            },
+            "answer_text": "I did a simple nodal analysis where R1||(R2+R3) and came up with an Req circuit value of 7.5 Ohms@ 4A the equivalent circuit should have 20VDC at Vab. Either you did not include the original circuit or the answers are not correct, since answer a=40V b=2V c=8V and d=16. See comment i left for Raheem Elsayed. I also ran it in a spice program and came up with the same results. ",
+            "date": "Answered August 25, 2020",
+            "views": "45",
+            "upvotes": "0"
+        }
+    ]
+}

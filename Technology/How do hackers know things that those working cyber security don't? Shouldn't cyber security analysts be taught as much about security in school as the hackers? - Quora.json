@@ -1,0 +1,34 @@
+{
+    "title": "How do hackers know things that those working cyber security don't? Shouldn't cyber security analysts be taught as much about security in school as the hackers? - Quora",
+    "tags": [
+        "Hackers"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rok Ru\u017ei\u010d",
+                "href": "/profile/Rok-Ru\u017ei\u010d"
+            },
+            "answer_text": "So, let's make a few things clear here. The vast majority of security breaches happens on a social level, e.g. the notorious hacker Kevin Mitnick did most of his cyber intrusions by social engineering plots, for example, he called the secretary and said \u201cI am the VP of engineering, this is an emergency, give me the password for X right now\u201d and the secretary would give him the password. Nowadays, these things are a lot more tight, a secretary is highly unlikely to have a password for anything significant, anything beyond their corporate account (email and files and any internal services the company uses). But there is another issue. There are many more services to mind, many more services where a security hole might be discovered, so those working in security must keep minding everything. A modern tech company is going to be running literally hundreds of services, and for any of those, a zero day exploit can develop at any given time, and once an exploit is public, it's just a matter of time before someone is going to try to take advantage of it on your services. Additionally, the cloud presents another issue. People are using public services like github, and developers are liable to inadvertently store their login credentials into a publicly accessible repository. There are people scanning those repositories all the time, and it may be as little as 10 minutes between the time, when someone stores credentials into a github repository, and the time when someone tries to take advantage of them. There is really nothing overly technical about exploiting security holes, there is a class of people commonly referred to as script kiddies, who attempt to use publicly accessible security exploits on anything they can find. They get publicly accessible exploit scripts, and use them to try to get information from publicly accessible services. There is really nothing technical about it, it essentially comes down to running a program that someone else had written. So, for any modern company, that needs to keep some of its information publicly available, there is an ongoing struggle to keep any information, that must not be publicly available, out of those places, that are publicly available. In organizations of hundreds, thousands, tens of thousands of people, that is exceedingly difficult to maintain and monitor. ",
+            "date": "Answered October 18, 2020",
+            "views": "90",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Rilley Simon",
+                    "user_href": "/profile/Rilley-Simon"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mattia Campagnano",
+                "href": "/profile/Mattia-Campagnano"
+            },
+            "answer_text": "The way a hacker/pentester and a blue teamer work is pretty different. A hacker/pentester finds ways to get into systems, a blue teamer finds ways to detect attack patterns. Therefore, their perspective is different. This explains why a red teamer can see things a blue teamer can\u2019t, even though they\u2019re right there, because the blue teamer wasn\u2019t trained (or wired) to see them. Red teamers are trained and wired to break and mess things, not to work with them the way they\u2019re supposed to do. For example, a blue teamer focuses on getting visibility on the network and making sure all logs are shipped and processed and on correlation rules to work, while a red teamer tests any input fields, search fields or functionalities for possible vulnerabilities. Another example of how this mindset works is an upload functionality. A blue teamer would make sure all logs related to uploaded files would be collected, that no coding bugs are in place, etc. What I do, instead, is to try and upload a file type such as a PHP reverse shell or a reverse shell disguised as an image file, and I often find I can. Of course, my description above is a gross generalization and this blue team/red team dichotomy tends not to be so clear-cut, at least in larger companies. Nowadays, what you state in the question starts being understood and many organizations are trying to implement a so-called purple team, which implies a closer collaboration between (internal or third party) red team and their blue team, so that the two perspectives integrate and learn from each other. Blue teamers get a better idea of what they should look at, and red teamers can learn how to be stealthier, because they can see how their attacks emerge from log files and what a blue teamer can see when they launch a certain payload. This concept is starting being developed and taught as well now, because it presents undoubted benefits for both red team and blue team, as they can do a better job by helping one another. ",
+            "date": "Answered October 18, 2020",
+            "views": "66",
+            "upvotes": " Answer requested by Neil Kono"
+        }
+    ]
+}

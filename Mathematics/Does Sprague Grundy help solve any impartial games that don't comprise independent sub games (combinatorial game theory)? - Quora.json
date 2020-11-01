@@ -1,0 +1,25 @@
+{
+    "title": "Does Sprague Grundy help solve any impartial games that don't comprise independent sub games (combinatorial game theory)? - Quora",
+    "tags": [
+        "Combinatorial Game Theory",
+        "Algorithmic Game Theory",
+        "Game Theory",
+        "Board Games",
+        "Problem Solving",
+        "Games",
+        "Economics",
+        "Video Games"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Mark Gritter",
+                "href": "/profile/Mark-Gritter"
+            },
+            "answer_text": "A single Nim-heap is admittedly not a very interesting game. The Sprague-Grundy theorem is constructive; it tells us that a position\u2019s Nim-value is the minimal excluded value of its successor\u2019s Nim-values. Admittedly, this is not a significant advance over saying that a game is a P-position if all its followers are N-positions, and is a N-position if at least one of its followers is a P-position. So, if you don\u2019t have a combinations of independent positions, the nimber provides no additional information about the winner. But, sometimes calculating Nim-values can help establish a periodic sequence of P- and N-positions. At a very basic level, S-G helps establish a test for when a subtraction game or octal game has become periodic, though this can be accomplished without it\u2014 see What is a proof that all subtraction games are ultimately periodic? We could also show that a game is *not* periodic by showing an aperiodic Grundy function (such as one with unboundedly large values.) There may also be cases where a game that is not explicitly decomposable at has some invariant or optimal line of play that can be understood as a sum of games\u2014 but I admit I can\u2019t come up with an example at the moment. ",
+            "date": "Answered May 23, 2020",
+            "views": "59",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "title": "What is meant by the probability of an event? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Ed Caruthers",
+                "href": "/profile/Ed-Caruthers"
+            },
+            "answer_text": "There are multiple definitions of probability. They all express belief about how likly an event is to occur. One of the most common uses of \u201cprobability\u201d expresses the frequency with which an event would occur if exactly the same circumstances occurred thousands or millions of times. The probability of spinning a roulette wheel and getting a 7 is this kind of probability. The probability of the Yankees winning the 2017 world series is not this kind of probability, since this season will only happen once.Another definition of probability expresses a state of belief. If I flip a US quarter, I believe that there\u2019s a 50% chance that heads will come up. In this case my belief is related to the first kind of probability, since we\u2019ve all seen a lot of coin flips and heard about a lot more. And it includes my belief that the coin isn\u2019t loaded, or two headed, or something else non-standard. And it includes my ignorance of special circumstances that would change the probability.Another definition of probability expresses the likelihood of an event based on results of correlated events. E.g., you might poll a lot of potential voters about who they are going to vote for in an upcoming election. Based on your results, you estimate that candidate H has a 57% chance of winning and candidate T has only a 40% chance of winning. There\u2019s a lot of sampling science, questionnaire design, and statistical analysis involved in this kind of probability. Betting odds are a related kind of probability. 35 to 1 odds against a horse winning the Preakness are based on how many people have made different kinds of bets. This last kind of \u201cprobability\u201d is very common and seems to me to be significantly different from other uses. I think it merits recognition as a separate category.",
+            "date": "Answered May 20, 2017",
+            "views": "303",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nancy Mitchell",
+                    "user_href": "/profile/Nancy-Mitchell-29"
+                },
+                {
+                    "user_id": "Sohail Ahmed",
+                    "user_href": "/profile/Sohail-Ahmed-7"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Anton Fahlgren",
+                "href": "/profile/Anton-Fahlgren-2"
+            },
+            "answer_text": "Uh oh, here comes math. But, there will also be a picture. Strictly speaking, a probability space is a triple [math](\\Omega,\\mathcal{F}, P)[/math], where [math]\\Omega[/math] is the sample space, i.e. possible outcomes, [math]\\mathcal{F}\\subseteq P(\\Omega)[/math] are sets of events, and [math]P[/math] is a probability distribution. [math]P[/math] is the central part. The probability distribution is a special case of a measure, which is a way to assign values to sets. It is the function that decides how probable events in [math]\\mathcal{F}[/math] are. It\u2019s called a measure because it can be thought of as measuring the weight, length, size, whatever, of sets. If one event is highly probable, the measure of the corresponding set in [math]\\mathcal{F}[/math] is big. Example 1: Let [math]P[/math] be the uniform distribution over the unit interval, that is, a random variable [math]X[/math] attains a value between 0 and 1 with equal probability everywhere. What is the probability that [math]X\\in [0.5,1][/math]? You can probably guess. This probability is actually defined as the measure of [math][0.5,1][/math]. Since [math]P[/math] was uniform, it is simply decided by the size of the interval as compared to the total space. For any subinterval [math][a,b][/math], the probability of [math]X\\in [a,b][/math] is [math]a-b[/math]. As you guessed, the probability of [math]X\\in [0.5,1][/math] is [math]1-0.5=0.5[/math]. A measure defines a probability distribution if the measure of the total set of events is [math]1[/math] (and some other conditions hold). That is, the probability of any event happening at all should be [math]1[/math]. In the above example, [math]P([0,1])=1-0=1[/math]. Example 2: The normal distribution is a very common, and even fundamental, probability distribution that assigns greater measure, or probability, to values near the mean, denoted [math]\\mu[/math] in the picture below, from somewhere online (sue me). The area under the curve for a given interval gives the probability. We see that the likelihood of a random variable with this distribution taking on a value within what is called one standard deviation, [math]\\sigma[/math], of the mean is about 68%. More explicitly, the probability of a normally distributed variable with mean [math]\\mu=[/math][math]0[/math] and standard deviation [math]\\sigma=[/math][math]1[/math] attaining a value in any interval [math][a,b][/math] on the real line* is given by the integral [math]\\int_a^b\\frac{e^{-x^2/2}}{\\sqrt{2\\pi}} dx.[/math] Hurray, [math]e[/math] AND [math]\\pi[/math]! *Yes, the value (theoretically) of a normally distributed variable [math]X[/math] being between any two numbers on real line is non-zero. But, the probability becomes so small so quickly that events beyond a couple of standard deviations away from the mean are practically impossible. The height of humans is modelled well by the normal distribution, (though it\u2019s probably actually impossible for a human to become 3km tall, and definitely -3km).  ",
+            "date": "Answered May 20, 2017",
+            "views": "494",
+            "upvotes": " View 6 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Laura Lee Reynolds",
+                    "user_href": "/profile/Laura-Lee-Reynolds"
+                },
+                {
+                    "user_id": "Victor Addono",
+                    "user_href": "/profile/Victor-Addono"
+                },
+                {
+                    "user_id": "Jeffrey Goldberg",
+                    "user_href": "/profile/Jeffrey-Goldberg"
+                },
+                {
+                    "user_id": "Ali Merali",
+                    "user_href": "/profile/Ali-Merali-1"
+                },
+                {
+                    "user_id": "Clive Hunt",
+                    "user_href": "/profile/Clive-Hunt"
+                },
+                {
+                    "user_id": "Valar Morghulis",
+                    "user_href": "/profile/Valar-Morghulis-177"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,196 @@
+{
+    "title": "How would you find the original function given the derivative of that function? For example, find f(x) if f ' (x) =x^2. - Quora",
+    "tags": [
+        "Derivatives and Differentiation (mathematics)",
+        "Functions (mathematics)",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Nicholas McConnell",
+                "href": "/profile/Nicholas-McConnell-3"
+            },
+            "answer_text": "You use integration. After all, the Fundamental Theorems of Calculus state that, in some loose sense of the word, the derivative and integral are inverse one another: (I) [math]f(x)=\\frac d{dx}\\int_c^xf(t)\\,dt[/math] (II) [math]\\int_a^bf'(x)\\,dx=f(b)-f(a)[/math] Thus, for example, if [math]f'(x)=x^2[/math], then (II) tells us that [math]\\int_a^bx^2\\,dx=f(b)-f(a)[/math]. Now, the familiar rules of integration entail [math]\\int x^2\\,dx=\\frac 13x^3+A[/math]. Of course, we go around questioning what the heck [math]A[/math] is \u2014 it can be any constant real number whatsoever, and adding it will not change the derivative of the right-hand side. In this case [math]A[/math] is called the constant of integration. When taking a definite integral though, this constant cancels itself out: [math]\\int_a^bx^2\\,dx=\\left(\\frac 13b^3+A\\right)-\\left(\\frac 13a^3+A\\right)=\\frac 13(b^3-a^3)[/math] thus giving a well-defined value in result. Thus if [math]f'(x)=x^2[/math], then (II) implies [math]f(b)-f(a)=\\frac 13(b^3-a^3)[/math]. It follows that [math]f(x)-f(0)=\\frac 13x^3[/math]. If we take [math]A=f(0)[/math], then [math]A[/math] is a constant such that [math]f(x)=\\frac 13x^3+A[/math] for all [math]x\\in\\mathbb R[/math]. Thus, we have a consistent definition of [math]f(x)[/math], which depends on an arbitrary constant [math]A[/math] but covers all possible answers to the question. This method likewise leads you to the function when you are given its derivative. ",
+            "date": "Answered July 7, 2019",
+            "views": "83",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Neil Morrison",
+                "href": "/profile/Neil-Morrison-14"
+            },
+            "answer_text": "Basically, The Fundamental Theorem of Calculus says that Differentiation and Integration are inverse processes. So you can \u2018reverse\u2019 the differentiation by integrating. That is really easy with polynomials, you increase the power of x by one and divide by the new, larger power. So, [math]\\int x^2dx=\\frac{x^3}{3}+c[/math] The reason for the [math]+c[/math] is the reason that the answer to your question isn\u2019t as neat as you would like. The original function might have been [math]\\frac{x^3}{3}+4[/math] or [math]\\frac{x^3}{3}-\\pi[/math] or indeed any other function of the form [math]\\frac{x^3}{3}\\pm {a\\ constant}[/math] So you can not be sure exactly which one was the \u2018original function\u2019 unless you are given some additional information. For that reason, when doing an indefinite integral (which this is) you always add on the [math]+c[/math] to show that uncertainty. ",
+            "date": "Answered October 13, 2017",
+            "views": "8",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Henry Li",
+                    "user_href": "/profile/Henry-Li-52"
+                },
+                {
+                    "user_id": "Roger Vandenberg",
+                    "user_href": "/profile/Roger-Vandenberg"
+                },
+                {
+                    "user_id": "Alan Bustany",
+                    "user_href": "/profile/Alan-Bustany"
+                },
+                {
+                    "user_id": "Alex Mallen",
+                    "user_href": "/profile/Alex-Mallen-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Iyobosa Evbayowieru",
+                "href": "/profile/Iyobosa-Evbayowieru"
+            },
+            "answer_text": "It's the same thing as finding the integral of [math]f'(x)[/math], which is [often generally defined as] [math]f(x)[/math]. Integral Calculus tells us that if we want to find the integral [[math]f(x)[/math]] of a function [math]f'(x)=x^n[/math] with respect to [math]x[/math], then [math]f(x)=\\dfrac{x^{n+1}}{n+1}+C[/math]. We use [math]+C[/math] because we are working with an indefinite integral. So in this case, the integral of [math]f'(x)=x^2[/math] is [math]f(x)=\\dfrac{x^{2+1}}{2+1}=\\frac{1}{3}x^3+C[/math]. We can define [math]C[/math] if we know something about the original function [math]f(x)[/math]. This means if we know some particular value of [math]f(x_0)[/math] at [math]x=x_0[/math]. So, [math]f(x)=\\frac{1}{3}x^3+C[/math] ",
+            "date": "Answered October 18, 2018",
+            "views": "21",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roger Vandenberg",
+                    "user_href": "/profile/Roger-Vandenberg"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Abrar Jahin",
+                "href": "/profile/Abrar-Jahin-34"
+            },
+            "answer_text": "As we know, the inverse function of a function does the opposite of what the original function does and in the reverse order of what it is doing the opposite of. (i.e) If the original funtion is : F(x)=(x-3)/2, then, F`(x)=2x+3. Notice that the domain and range of F(x) are respectively the range and domain of F`(x).So, the inverse function of F`(x) is F(x). Let, y=f(x) So, x=f`(y). Now, f`(x)=x^2 \u27a1y=x^2 \u27a1x=y^(1/2) \u27a1 f`(y)=y^(1/2). Then,f`((f`(x))=x^(1/2). So, f(x)=x^(1/2). Hope it helps. ",
+            "date": "Answered November 29, 2018",
+            "views": "162",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nelson Mandela",
+                    "user_href": "/profile/Nelson-Mandela-71"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "D\u00e9rcio Bene",
+                "href": "/profile/D\u00e9rcio-Bene"
+            },
+            "answer_text": "I\u2019d use indefinite Integrals.  If [math]F'(x)=f(x)[/math], then [math]\\int f(x)  dx = F(x) + C[/math] where C is an arbitrary constant  For the case of your example,[math] F'(x)=x^2[/math][math], [/math]and we seek [math]F(x)[/math]. An integral of this kind may be found on a Table of Integrals [1]. [math]F(x)=\\int x^2 dx = \\frac{x^{3}}{3} +C[/math] Footnotes[1] http://integral-table.com/downloads/single-page-integral-table.pdf",
+            "date": "Answered October 13, 2017",
+            "views": "842",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Paul Holloway",
+                "href": "/profile/Paul-Holloway-16"
+            },
+            "answer_text": "Unfortunately you can\u2019t find the original function given its derivative. The best you can do is come up with a range of functions that would have the same derivative. We call this the antiderivative, sometimes called the indefinite integral. If f\u2019(x) = [math]x^2[/math] then f(x) = [math]\\frac{x^3}{3} + c[/math] where [math]c[/math] is a constant. Thus there are an infinite number of functions that have the same derivative, this is because the constant is lost when finding the derivative. In order to reconstruct the original function from the derivative we need a second piece of information that will allow us to find the value of the constant. ",
+            "date": "Answered December 28, 2018",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Rajshankar Maheswaran",
+                "href": "/profile/Rajshankar-Maheswaran"
+            },
+            "answer_text": "The integral of a function is its anti-derivative.  If the differential of a function [math]f(x) [/math] is [math]f'(x)[/math], if you integral the derivative, you get back the original function. i.e. [math]\\displaystyle\\int f'(x) dx = f(x) + C[/math] C is known as the integral constant in indefinite integrals.  If [math]f'(x) = x^2[/math], [math]f(x) = \\displaystyle\\int x^2 dx = \\dfrac{x^3}{3} + C[/math] Since, [math]\\displaystyle\\int x^n dx = \\dfrac{x^{n+1}}{n+1} + C[/math] ",
+            "date": "Answered October 14, 2017",
+            "views": "12",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Roger Vandenberg",
+                    "user_href": "/profile/Roger-Vandenberg"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Michael Menaker",
+                "href": "/profile/Michael-Menaker-2"
+            },
+            "answer_text": "I agree with Paul Halloway\u2019s comment. To find f(x) one must intgrate f\u2019(x). f\u2019(x) = x^2. So f(x) = (x^3)/3 + C, where C is an arbitrary constant. We need more information (say f\u2019s value at a particular x value) to determine C. ",
+            "date": "Answered October 4, 2020",
+            "views": "45",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Eric Dietrich",
+                "href": "/profile/Eric-Dietrich-8"
+            },
+            "answer_text": "Welcome to the world of integral calculus! The operation you\u2019re thinking of is the indefinite integral, also called the antiderivative. In the example you gave: [math]\\displaystyle\\int x^2\\,\\mathrm{d}x=\\frac{1}{3}x^3+C[/math] Here, [math]C[/math] is any ol\u2019 constant. ",
+            "date": "Answered October 13, 2017",
+            "views": "26",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Sebastian Anhalt",
+                    "user_href": "/profile/Sebastian-Anhalt"
+                },
+                {
+                    "user_id": "Raunakk Chandhoke",
+                    "user_href": "/profile/Raunakk-Chandhoke"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Yatharth Singh",
+                "href": "/profile/Yatharth-Singh-16"
+            },
+            "answer_text": "Find the integral of that function. In this case: F(x)=(x^3)/3 ",
+            "date": "Answered October 13, 2017",
+            "views": "129",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Zack Woods",
+                "href": "/profile/Zack-Woods-5"
+            },
+            "answer_text": "You can integrate it, which you learn in Calculus II. [math] \\int{x^a}dx = \\frac{1}{a+1}x^{a+1} + C [/math] where [math] a \\ne -1 [/math] and [math] C [/math] is a constant. [math] f(x) = \\frac{1}{3}x^3 + C [/math] Not all functions can be integrated though. ",
+            "date": "Answered April 8, 2020",
+            "views": "101",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Alex Bukenya",
+                "href": "/profile/Alex-Bukenya-4"
+            },
+            "answer_text": "2x ",
+            "date": "Answered October 6, 2018",
+            "views": "135",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Irish Nicole Javier",
+                "href": "/profile/Irish-Nicole-Javier"
+            },
+            "answer_text": "2x ",
+            "date": "Answered November 25, 2019",
+            "views": "82",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ipra Lutannaj",
+                "href": "/profile/Ipra-Lutannaj"
+            },
+            "answer_text": " ",
+            "date": "Answered December 11, 2018",
+            "views": "602",
+            "upvotes": "0"
+        }
+    ]
+}

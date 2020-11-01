@@ -1,0 +1,52 @@
+{
+    "title": "How does incompleteness follow from uncomputability? - Quora",
+    "tags": [
+        "Halting Problem",
+        "Computability Theory (computer science)",
+        "G\u00f6del\u2019s Incompleteness Theorem",
+        "Theory of Computation",
+        "Theoretical Computer Science",
+        "Logic (philosophy)",
+        "Followers",
+        "Philosophy",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joseph Lurie",
+                "href": "/profile/Joseph-Lurie-1"
+            },
+            "answer_text": "It doesn't. First-order logic is uncomputable but complete. That particular counterexample is a bit flip; it actually is correct, but it takes quite a bit of work to prove that it is so. \u201cComplete\u201d means something different in reference to logical systems than it does in the setting of computability theory and Godel's incompleteness theorems. The two senses are closely related; the fact that second-order logic is incomplete in the logical systems sense is a direct consequence of the incompleteness theorems. For the present purpose, a clearer approach is simply to recognize that incompleteness is a stronger concept than uncomputability: the former entails the latter, contrary to the OP. Incompleteness means that there is no answer to a question at all; uncomputability just means that there is no answer that can be calculated by a Turing machine. ",
+            "date": "Answered June 25, 2020",
+            "views": "46",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Robert Langner",
+                    "user_href": "/profile/Robert-Langner-4"
+                },
+                {
+                    "user_id": "Mark Gritter",
+                    "user_href": "/profile/Mark-Gritter"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Keith Ramsay",
+                "href": "/profile/Keith-Ramsay"
+            },
+            "answer_text": "There are different kinds of \u201ccompleteness\u201d and one has to be careful not to mix them up. In one familiar context, completeness does imply computability. Suppose we have an axiom system in first-order logic with computably enumerable axioms. An axiom system like ZFC which has some axiom schemes has infinitely many axioms, but they are computably enumerable. By the completeness of first-order logic, the theorems of such an axiom system are also computably enumerable. If such an axiom system is complete in the sense that for each sentence [math]A[/math], either [math]A[/math] is a theorem or [math]\\neg A[/math] is a theorem, then the truth or falsity of sentences is computable. One can write a program which when given a sentence [math]A[/math], enumerates the theorems of the axiom system until either [math]A[/math] appears or [math]\\neg A[/math] appears. This is not a practical algorithm, however. ",
+            "date": "Answered June 30, 2020",
+            "views": "88",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "John Brown",
+                    "user_href": "/profile/John-Brown-2633"
+                }
+            ]
+        }
+    ]
+}

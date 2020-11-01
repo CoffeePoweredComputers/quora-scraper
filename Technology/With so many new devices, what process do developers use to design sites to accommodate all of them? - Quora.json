@@ -1,0 +1,36 @@
+{
+    "title": "With so many new devices, what process do developers use to design sites to accommodate all of them? - Quora",
+    "tags": [
+        "Devices",
+        "Web Developers",
+        "User Interface Design",
+        "User Interfaces",
+        "Computer Programmers",
+        "Design",
+        "Web Design",
+        "Websites",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Carlos Araya",
+                "href": "/profile/Carlos-Araya-1"
+            },
+            "answer_text": "You don\u2019t design for specific devices or using specific frameworks\u2026 While all the frameworks mentioned in other answers are good, they marry you into their way of doing things which is not always the right way of doing things.. You\u2019ll hear a lot about Responsive Web Design and Responsive Web Design - What It Is And How To Use It and how frameworks will make it better but what it boils down to is: Design a base site, some people will go mobile first, designing for the smallest form factor they expect their clients to use. Some will design desktop first and design for regular or large displays. Which one you use will depend on what the majority of your clients are using. In your design stay away from static units like pixels and use relative units like em, rem or percentages. This will help make your design work when you change it with media queries (explained below) Use Media Queries to target groups of devices that are a combination of screen size and DPI resolution (Retina). Don\u2019t go crazy adding breakpoints for every single device or you\u2019ll go crazy. Instead group them in categories like phones, tablets, medium screens, large screens and extra large screens You can embellish the basic responsive site using Responsive images, and other bells and whistles. You don\u2019t need Javascript to create responsive designs but you can surely use it to enhance the user experience. Final note: I am not against frameworks. I\u2019ve used Foundation for sites extensively. However, I am against throwing a framework at a problem without knowing the basics of how to solve the prooblem without one and marrying to a framework or CMS without researching what they do and how they do it first. ",
+            "date": "Answered February 27, 2020",
+            "views": "24",
+            "upvotes": " Answer requested by Philip Terry"
+        },
+        {
+            "author_info": {
+                "name": "Wolfgang Killmann",
+                "href": "/profile/Wolfgang-Killmann"
+            },
+            "answer_text": "Responsive websites can even be built without using any framework. The main rule is that no specific screen resolution can be assumed. I have do this since many years and create responsive web designs with and without CMS. As CMS, I only use TYPO3 and Contao. This has the advantage that I have only to maintain editor manuals and tutorials for these two CMS. Especially Contao, formerly known as TYPOlight, is extremely easy to use for editors. As is known or at least should be known, Contao has nothing to do with TYPO3. ",
+            "date": "Answered February 27, 2020",
+            "views": "15",
+            "upvotes": " Answer requested by Philip Terry"
+        }
+    ]
+}

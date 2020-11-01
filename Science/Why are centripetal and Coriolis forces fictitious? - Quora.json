@@ -1,0 +1,77 @@
+{
+    "title": "Why are centripetal and Coriolis forces fictitious? - Quora",
+    "tags": [
+        "Coriolis Effect",
+        "Inertia"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lawrence Chiou",
+                "href": "/profile/Lawrence-Chiou"
+            },
+            "answer_text": "(Adapted from Lawrence Chiou's answer to What are some fictitious forces other than the centrifugal force?) In physics, the term fictitious force specifically refers to the additional terms that appear in a classical equation of motion for a body in a non-inertial frame of reference. In addition to the simple fictitious translation force, there are the centrifugal, azimuthal, and Coriolis forces. They are called \"fictitious\" because the physical forces leading to motion are accounted for in the construction of the non-inertial frame rather than being included as a \"real force\" term in the equation of motion. Instead, the terms are built into the equation of motion itself in a non-inertial frame. To see how these terms arise and how to interpret them, let us find the expression for the acceleration in a rotating frame of reference that spins with some nonzero angular velocity [math]\\Omega[/math], which I obtain in my answer to What exactly is centrifugal force?:  If the angular velocity measured in an inertial frame were measured to be [math]\\dot{\\theta}[/math], then in the rotating frame, the angular velocity would appear to be [math]\\dot{\\theta}' = \\dot{\\theta} - \\Omega[/math]. In polar coordinates, the acceleration is given by[math]\\ddot{\\mathbf{r}} = \\left(\\ddot{r} - r \\dot{\\theta}^2\\right) \\mathbf{\\hat{r}} + \\left(r\\ddot{\\theta} + 2\\dot{r}\\dot{\\theta}\\right) \\mathbf{\\hat{\\theta}}[/math].Using fictitious forces essentially amounts to saying that if we make the substitution [math]\\dot{\\theta} = \\dot{\\theta}' + \\Omega[/math], we will end up with extra terms for the acceleration [math]\\ddot{\\mathbf{r}}'[/math] in the rotating frame:[math]\\ddot{\\mathbf{r}}' = \\ddot{\\mathbf{r}} + \\underbrace{r\\Omega^2\\mathbf{\\hat{r}}}_{\\text{centrifugal}} \\: \\underbrace{-r\\dot{\\Omega}\\mathbf{\\hat{\\theta}}}_{\\text{azimuthal}} + \\underbrace{2\\Omega\\left(r\\dot{\\theta}'\\mathbf{\\hat{r}} - \\dot{r}\\mathbf{\\hat{\\theta}}\\right)}_{\\text{Coriolis}},[/math]where [math]\\ddot{\\mathbf{r}}' = \\left(\\ddot{r} - r \\dot{\\theta}'^2\\right) \\mathbf{\\hat{r}} + \\left(r\\ddot{\\theta}' + 2\\dot{r}\\dot{\\theta}'\\right) \\mathbf{\\hat{\\theta}}[/math]. Thus, to an observer in a rotating frame, it appears that there are three extra acceleration terms, traditionally known as the centrifugal, azimuthal, and Coriolis terms. We usually say that the forces associated with these terms are \"fictitious\" because they arise only in a rotating frame. In other words, Newton's laws don't directly apply to [math]\\ddot{\\mathbf{r}}[/math], so we must add the additional acceleration terms to make everything work. Since both approaches (using an inertial frame or using a non-inertial frame with fictitious forces) are mathematically equivalent, there is no reason why we should prevent ourselves from thinking of the additional terms as actual \"forces\" when working in a rotating frame. Rotating frames can be very useful problem solving tools. The centrifugal acceleration has a very simple interpretation. Whereas an inward centripetal acceleration [math]-r\\Omega^2\\mathbf{\\hat{r}}[/math] is necessary to confine a particle to a circular path in an inertial frame, in its absence the particle appears to be pushed outward in the rotating frame with acceleration [math]r\\Omega^2\\mathbf{\\hat{r}}[/math]. In fact, you're probably already quite familiar with the centrifugal force in action\u2014the motion of loose objects in a car or cell sludge in a centrifuge, for instance. To interpret the Coriolis term, we note that [math]r\\dot{\\theta}'\\mathbf{\\hat{r}} - \\dot{r}\\mathbf{\\hat{\\theta}}[/math] has the same magnitude as and is perpendicular to [math]\\dot{\\mathbf{r}}' = \\dot{r}\\mathbf{\\hat{r}} + r\\dot{\\theta}'\\mathbf{\\hat{\\theta}}[/math]. Thus, the Coriolis acceleration has magnitude [math]2\\Omega|\\dot{\\mathbf{r}}'|[/math] and points perpendicular to the velocity (with direction depending on the sign of [math]\\Omega[/math]). Thus, as a particle moves in a rotating frame, it feels the Coriolis force acting perpendicular to its direction of travel. Both inertial and non-inertial frames are equally valid ways of looking at the same phenomenon. It's simply a matter of whether you want to interpret the physical interaction behind the motion of a body as causing the acceleration of the body itself (in an inertial frame) or as the cause of the motion of the entire frame. ",
+            "date": "Answered June 4, 2015",
+            "views": "24",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Imre Nemeth",
+                    "user_href": "/profile/Imre-Nemeth-1"
+                },
+                {
+                    "user_id": "Michael Silva",
+                    "user_href": "/profile/Michael-Silva-2"
+                },
+                {
+                    "user_id": "Mazra Begum",
+                    "user_href": "/profile/Mazra-Begum"
+                },
+                {
+                    "user_id": "Felipe Louren\u00e7o",
+                    "user_href": "/profile/Felipe-Louren\u00e7o-4"
+                },
+                {
+                    "user_id": "Rohith Yadav",
+                    "user_href": "/profile/Rohith-Yadav-3"
+                },
+                {
+                    "user_id": "William Chen",
+                    "user_href": "/profile/William-Chen-6"
+                },
+                {
+                    "user_id": "Chuck Doswell",
+                    "user_href": "/profile/Chuck-Doswell"
+                },
+                {
+                    "user_id": "Kashish Jagga",
+                    "user_href": "/profile/Kashish-Jagga"
+                },
+                {
+                    "user_id": "Marc Bodnick",
+                    "user_href": "/profile/Marc-Bodnick"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Gustavo Marques Hobold",
+                "href": "/profile/Gustavo-Marques-Hobold"
+            },
+            "answer_text": "Because both centrifugal and Coriolis forces represent the tendency of an object of continuing its motion. It is the same reason why you are \"pulled\" by some sort of fictious force whenever you brake your car. There is no force, there's just the tendency of your body continuing its motion.    The figure above illustrates the Coriolis effect. If the Earth was not spinning, you would expect your projectile to hit the target if you had thrown it directly into the target. However, since the Earth is spinning, the projectile will tend to continue spinning with the Earth and will drift away from the target, as shown in the figure. This effect is only significant in large distances.    The figure above shows the centrifugal effect. As the nice little fella in the red shirt spins the rock, the rock, at every moment, has the tendency to drift away from the circle (in the figure shown as path of inertia) because it wants to use its instantaneous velocity to continue a linear motion. It takes force (the centripetal force) to change the path of the rock from wanting to go linear to going circular. The centripetal fictious force is simply the tendency of the rock to assume a linear motion. ",
+            "date": "Answered May 2, 2014",
+            "views": "13",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Gao Yu",
+                    "user_href": "/profile/Gao-Yu-32"
+                },
+                {
+                    "user_id": "Sanapala Sunil Madhav",
+                    "user_href": "/profile/Sanapala-Sunil-Madhav"
+                }
+            ]
+        }
+    ]
+}

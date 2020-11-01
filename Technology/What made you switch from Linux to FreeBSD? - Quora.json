@@ -1,0 +1,113 @@
+{
+    "title": "What made you switch from Linux to FreeBSD? - Quora",
+    "tags": [
+        "FreeBSD",
+        "Linux"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Russell Haley",
+                "href": "/profile/Russell-Haley-4"
+            },
+            "answer_text": "I started on PC-BSD, but have used GNU/Linux at my last two jobs. Some reasons I like FreeBSD over GNU/Linux: I use FreeBSD because I like a challenge. Nobody is ever going to say FreeBSD is easier than GNU/Linux. Using FreeBSD has forced me to learn and know things at a much lower level compared to using CentOS or other mainstream GNU/Linux distros. That said, it\u2019s still easier to get going than Arch or Slackware because it provides an installer.I like the licensing model.All the kernel and userland sources are in a single repository. Building the entire operating system from sources consists of around six commands.The \u201cPorts\u201d source tree is an easy way to get software. The binary package manager called pkg builds on top of Ports and works very well. It\u2019s far more intuitive than say, Pacman (IMHO).The handbook is excellent and has everything you need to get a system up and running.The C/C++ compiler and toolchain are built into the OS. Every instance of FreeBSD has the build tools at your fingertips right at installation.I love the history behind BSD.FreeBSD is entirely community driven, though, that\u2019s a double edged sword I\u2019ve come to find out.Jails + ZFS are a very powerful tool for isolating applications, users and processes. Jails are built into the kernel and ZFS is an installation option.I\u2019ve had lots of good conversations on the Arm mailing list and the IRC channel is usually active. The FreeBSD forum can also be a fun place to skulk.If you just want a desktop OS and you don\u2019t care to learn make, then there are many GNU/Linux distros that can provide that for you. If you really want to learn Unix skills, FreeBSD can be a good choice. Everything you learn on FreeBSD is transferable to some extent to a GNU/Linux environment. I didn\u2019t have much trouble transitioning from FreeBSD to other Unix-likes; the learning curve from FreeBSD to GNU/Linux is about the same as moving between say, Debian and Fedora. ",
+            "date": "Answered October 18, 2018",
+            "views": "82",
+            "upvotes": " View 35 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Arafath M",
+                    "user_href": "/profile/Arafath-M"
+                },
+                {
+                    "user_id": "Kakashi Hatake",
+                    "user_href": "/profile/Kakashi-Hatake-57"
+                },
+                {
+                    "user_id": "Claude Luiz S.B",
+                    "user_href": "/profile/Claude-Luiz-S-B"
+                },
+                {
+                    "user_id": "Jinsen Che",
+                    "user_href": "/profile/Jinsen-Che"
+                },
+                {
+                    "user_id": "Edward Tomasz Napiera\u0142a",
+                    "user_href": "/profile/Edward-Tomasz-Napiera\u0142a"
+                },
+                {
+                    "user_id": "Nimrod Cohen",
+                    "user_href": "/profile/Nimrod-Cohen-9"
+                },
+                {
+                    "user_id": "Karthikeya Kaza",
+                    "user_href": "/profile/Karthikeya-Kaza"
+                },
+                {
+                    "user_id": "Mauro Ymgch",
+                    "user_href": "/profile/Mauro-Ymgch"
+                },
+                {
+                    "user_id": "TomShine",
+                    "user_href": "/profile/TomShine-1"
+                },
+                {
+                    "user_id": "Maurice Basquin",
+                    "user_href": "/profile/Maurice-Basquin"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Mei Douthitt",
+                "href": "/profile/Mei-Douthitt"
+            },
+            "answer_text": "I\u2019ve gone back and forth between Linux and BSD. For me, it depends on what you want to do. Here\u2019s some situations in which I\u2019ve gone from Linux to BSD and the reasons. One would be when I encouraged the company I was at to switch from the Endian firewall to the pfsense firewall. The pfsense firewall was more powerful, is fully open source (in contrast to Endian, which is \u201cfreemium\u201d) and offered features like firewall clusters that Endian did not. BSD has also been shown to be more secure than Linux: consider the experience of the Public Unix Shell service SDF (from the Wikipedia page): In 1997, SDF (then with about 15,000 users) migrated to Linux. The migration to Linux marked a turning point, as the system started coming under attack like it never had before in its history. Jones calls the Linux period the dark age. In part due to the number of attacks undertaken by malicious users against SDF, the years 2000 and 2001 saw SDF migrate from Linux to NetBSD and from Intel x86 to DEC Alpha. They have apparently switched back to Linux as of 2018, but OpenBSD remains one of the most secure operating systems made today, whether UNIX, Linux, or BSD. The BSDs are also much smaller than Linux variants. A BSD will run in a space on hardware that Linux won\u2019t. I ran OpenBSD on several Macintosh Quadra 950s back around 2002 or so, as well as on a Macintosh IIci. With NetBSD, you also have the possibility of running BSD on pretty much anything you can imagine: Sega Dreamcast? Check. HP-9000 PARISC? Check. Itanium? Check. DEC VAX? Check. The motto for NetBSD is \u201cOf course it runs NetBSD!\u201d I also moved to BSD when I use MacOS X on a daily basis: Apple\u2019s polish on the BSD framework is incredible, and things just work here. MacOS X is a joy to use, offers applications you won\u2019t find anywhere else, and is just all around easy to use. There\u2019s also a wider number of technologies supported by the BSDs than Linux, which comes from the more scholarly origins of BSD, and the increased permissiveness of the BSD license over the GPL. A good example was the file system ZFS and the kernel profiler DTrace: both used the CDDL free software license, and there were conflicting views as to whether the CDDL conflicted with the Linux GPL free software license. Some considered items licensed with the CDDL and the GPL to be incompatible\u2014which would mean ZFS and DTrace could not be incorporated into the kernel. BSD uses the BSD license, which has no such conflicts with ZFS or DTrace, and incorporated both fairly quickly. So why use Linux? In short, there\u2019s a number of reasons: Linux is supported by many projects over BSD (Firefox and Chrome are only two quick examples)Linux is more widely known, and has wider community and commercial supportLinux is used as the base of more appliance projects (NAS, firewall, etc.)Linux has a wider \u201cmindshare\u201d which leads to more availability of system administrators who know at least a little LinuxWith a wider corporate installment base, it is better to know Linux than BSD for employmentThere are more certifications for Linux than for BSDThere are more desktops, free and commercial, and more polished desktopsIn short: you pick what works best for you! ",
+            "date": "Answered February 23, 2018",
+            "views": "34",
+            "upvotes": " View 21 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Edward Tomasz Napiera\u0142a",
+                    "user_href": "/profile/Edward-Tomasz-Napiera\u0142a"
+                },
+                {
+                    "user_id": "Claude Luiz S.B",
+                    "user_href": "/profile/Claude-Luiz-S-B"
+                },
+                {
+                    "user_id": "Maurice Basquin",
+                    "user_href": "/profile/Maurice-Basquin"
+                },
+                {
+                    "user_id": "Yves Granger",
+                    "user_href": "/profile/Yves-Granger"
+                },
+                {
+                    "user_id": "Anthony Ryan Moreno",
+                    "user_href": "/profile/Anthony-Ryan-Moreno"
+                },
+                {
+                    "user_id": "Nestor Carrasquillo",
+                    "user_href": "/profile/Nestor-Carrasquillo-1"
+                },
+                {
+                    "user_id": "Scott Reeves",
+                    "user_href": "/profile/Scott-Reeves-7"
+                },
+                {
+                    "user_id": "Geoff Fellows",
+                    "user_href": "/profile/Geoff-Fellows"
+                },
+                {
+                    "user_id": "Chad Zawistowski",
+                    "user_href": "/profile/Chad-Zawistowski"
+                },
+                {
+                    "user_id": "Tikken Grey",
+                    "user_href": "/profile/Tikken-Grey"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+{
+    "title": "How to prove that 3^n is greater than or equal to 2^n by mathematical induction - Quora",
+    "tags": [
+        "Mathematical Induction",
+        "Proofs (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vishnu Thakkar",
+                "href": "/profile/Vishnu-Thakkar-2"
+            },
+            "answer_text": " is true. So, the statement is true for n=1. Now let us assume that the statement is true for n. So, we assume that .     (As statement is true for)  We have established that the statement is true for n+1 [] if we assume that it is true for n. Hence, it is established that the statement is true for all natural numbers. p.s.: It is not always possible to prove all statements by mathematical induction.There are variants of [First] Principle of Mathematical Induction: In place of statement being correct for n, we can assume that statement is true for all naturals up to n and prove that it is true for n+1. In another variant, a non-empty subset of  has the smallest element is used. If a statement is false for some natural number then there is possible integer  such that it is true for all integers . In other words, if we can prove that if the statement is true for all natural numbers less than n implies that it is true for  then subset containing elements for which the statement is false is empty set and hence, it is true for all natural numbers. All the three principles are equivalent.",
+            "date": "Answered July 13, 2019",
+            "views": "871",
+            "upvotes": " View 1 Upvoter ",
+            "upvoters": [
+                {
+                    "user_id": "Muthusamy Piramanayagam ( \u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9a\u0bbe\u0bae\u0bbf \u0baa\u0bbf\u0bb0\u0bae\u0ba8\u0bbe\u0baf\u0b95\u0bae\u0bcd)",
+                    "user_href": "/profile/Muthusamy-Piramanayagam-\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9a\u0bbe\u0bae\u0bbf-\u0baa\u0bbf\u0bb0\u0bae\u0ba8\u0bbe\u0baf\u0b95\u0bae\u0bcd"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "B.L. Srivastava",
+                "href": "/profile/B-L-Srivastava"
+            },
+            "answer_text": "It is simple to prove. Since 3 > 2 therefore the statement 3^(n) > 2^(n) is true for n= 1. Similarly as 9 > 4 ==> statement is true for n= 2 as well. So let assume that statement be true for n = k i.e. 3^(k) > 2^(k) then to prove that it is true for n = (k + 1) also . For that , we see that, 3^(k+1) = 3 \u00b7 3^(k) > 3 \u00b7 2^(k) > 2 \u00b7 2^(k) = 2^(k+1). This shows that statement is true for n = (k+1) whenever it is true for n </= k . Therefore, by principle of mathematical induction it is true for all positive integers. ",
+            "date": "Answered July 14, 2019",
+            "views": "15",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Voigt",
+                    "user_href": "/profile/John-Voigt-4"
+                },
+                {
+                    "user_id": "Aniruddha Guha",
+                    "user_href": "/profile/Aniruddha-Guha-5"
+                }
+            ]
+        }
+    ]
+}

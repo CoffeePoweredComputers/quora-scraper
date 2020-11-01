@@ -1,0 +1,44 @@
+{
+    "title": "How does MIDI differ from digital audio? - Quora",
+    "tags": [
+        "MIDI Controllers",
+        "MIDI",
+        "Digital Audio"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "James Harrison",
+                "href": "/profile/James-Harrison-54"
+            },
+            "answer_text": "MIDI and digital audio are not related. They are distant cousins at best. Midi is more akin to printed sheet music than a digital audio recording. A MIDI file contains information on what notes were played when, for how long, and how hard the key was struck. Maybe also with how much pressure was the key held down. DIGITAL AUDIO in a nutshell When you strike a note on a piano, a hammer strikes a string with a force directly related to how hard the key was struck. This causes a string to vibrate and it will continue to do so until either it attenuates naturally or is damped or muted by some other mechanical means. (releasing the key causes a damper or mute to come into contact with the string greatly increasing the string\u2019s attenuation). Placing a microphone in the vicinity of the vibrating string will cause the microphone capsule to vibrate, and this creates electronic signals. These signals are \u201csampled\u201d so that an average momentary voltage measurement is taken. For consumer digital audio this happens 44,100 times each second. The sample is stored as a series of 1s and 0s, each combination of which will produce a specific voltage on playback. Stringing the series of 1s and 0s back to their original specified voltage at the same rate the original samples were taken produces movement in a speaker which approximates the movement of the original piano string. When you strike a note on a MIDI controller or digital piano, information is passed to a computer or microprocessor about how quickly you struck the key, how much force you apply to the key while it is depressed (aftertouch), how long the key is held down, which key was struck etc. The computer passes that information on to an oscillator (which may include sample playback device), feeding a signal into an amplifier, and possibly a filter controlled by a gate etc. That amplifier output is a voltage in a wire. This voltage can be connected to a speaker, and you can use a microphone, or the signal can be passed directly to a recording interface, which again samples the output, converts the signal to a binary representation which can later be played back. This is still in the realm of digital audio. MIDI in a nutshell MIDI allows the computer to record the performance rather than the output. Instead of recording the headphone feed, the computer can record a series of instruction similar to: at 0:00:00 begin playback of middleC, struck with 114 velocity at 0:00:00.4 raise modulation wheel from 0 to 4 at 0:00:00.6 raise modulation wheel from 4 to 7 at 0:00:00.7 increase aftertouch level from 0 to 17 at 0:00:00.9 decrease aftertouch level from 17 to 0 at 0:00.01 release playback of middleC, with release velocity of 26. MIDI also includes additional optional information such as program changes (switch from a piano sound to a flute sound for instance), MIDI channel (channel 1 = piano, channel 2 = flute for instance) allowing multi-timbral synths to play multiple instruments at once, MIDI volume control, Tone controls, MIDI clock synchronization and other information in addition to which note was played when, how hard, and for how long. Because synthesizers use computers internally (at least MIDI ones do), a synthesizer receiving the above series of commands from a MIDI controller would be indistinguishable from a synthesizer using it\u2019s own built-in keyboard, the recorded performance can be played back through the original instrument and sound identical to the original performance in every way. HOWEVER, unlike digital audio, should you decide that this note might sound better on a flute than on the organ sound you originally intended, you can change one parameter at the beginning of the performance and get a new, totally different sound. You can easily transpose an entire performance up or down by a specified number of semitones. You can change the tempo while preserving the pitch, formants, and relative timings of the individual performance elements. None of these features are readily available once the audio output has been captured and turned into digital audio. Warning about MIDI: If you have a great synth or sound generator, a MIDI file can sound excellent. However, MIDI playback is 100% dependent on hardware. If I create a MIDI file on my professional workstation keyboard, and e-mail it to someone with a stock soundblaster clone and Microsoft GM synth, regardless of what the performance sounds like on my end, it will sound really bad on theirs. All of the notes will still be there, and some of the other performance quirks which were recordable will still be there, but the sound is 100% generated by their hardware and may have little or nothing in common with your MIDI performance beyond the notes and timings in the melody and harmony lines. Contrast this with digital audio, where at least when you record a piano sound, it will always sound like a piano, no matter how crappy the speakers are it will never accidentally sound like a flute, a drum or a series of randomly sampled special fx. That is not guaranteed with MIDI unless you are using a 100% GeneralMidi compatible recorder along with a 100% GeneralMidi compatible playback device. Even then, it will likely be played back correctly on a Microsoft GM wavetable synth, but will still sound more like an 8-bit Nintendo than a professional recording. ",
+            "date": "Answered November 20, 2017",
+            "views": "874",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Dolly Kumari",
+                    "user_href": "/profile/Dolly-Kumari-411"
+                },
+                {
+                    "user_id": "Yayati Ekbote",
+                    "user_href": "/profile/Yayati-Ekbote"
+                },
+                {
+                    "user_id": "Ethan Smith",
+                    "user_href": "/profile/Ethan-Smith-148"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aaron Carey",
+                "href": "/profile/Aaron-Carey-13"
+            },
+            "answer_text": "The easiest way our students seem to remember it is to think of MIDI as prescriptive and audio as descriptive. Put another way. MIDI tell what (note, octave), when (both timing and relative point in the song, note length), how (CC\u2019s, aftertouch, velocity, etc) and where (preset, patch, which module, etc) performance you want to come out (and indirectly, by which modules are in the chain AND called by that particular message) possibly the family of sound you want. Or nothing to do with sound at all, and what lights, fx, automation you want to control. Audio usually describes the sound you hear, with all the myriad zillions of factors that go into both how its made and how you perceive it. ",
+            "date": "Answered November 21, 2017",
+            "views": "334",
+            "upvotes": "0"
+        }
+    ]
+}

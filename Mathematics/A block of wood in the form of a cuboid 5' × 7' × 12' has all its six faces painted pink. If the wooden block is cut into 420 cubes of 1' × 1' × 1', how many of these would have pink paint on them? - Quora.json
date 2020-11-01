@@ -1,0 +1,45 @@
+{
+    "title": "A block of wood in the form of a cuboid 5' \u00d7 7' \u00d7 12' has all its six faces painted pink. If the wooden block is cut into 420 cubes of 1' \u00d7 1' \u00d7 1', how many of these would have pink paint on them? - Quora",
+    "tags": [
+        "Mathematics Word Problems",
+        "Puzzles and Trick Questions"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Lee Kern Choong",
+                "href": "/profile/Lee-Kern-Choong"
+            },
+            "answer_text": "There are two ways to do this. One is a counting up method, where we take into account all cubes with painted faces. One is a complementary method, which takes into account all cubes with unpainted faces. The second method is a lot faster.  First, the short method: Realize that if you took all the painted cubes off the original cuboid, you\u2019d be left with a cuboid 2 inches shorter on every side (you\u2019ve removed one cube length from all sides). The resultant cuboid is now 3x5x10 inches. This new smaller cuboid, wholly unpainted, would have 3*5*10 = 150 cubes.  Next, the longer method: The long way to do them is this: There are 4 types of 1 inch cubes in this question. They are cubes with 0, 1, 2, and 3 pink faces on them. How do we determine how many faces of a cube have been painted? Simple - we look at how many of their vertices were on the surface of the block. For example, a small cube from the corner of the original block has 3 of the original blocks vertexes. Cubes with 3 sides painted pink are the corners of the original blocks. There are 8 of them. This goes for any cuboid. Cubes with 2 sides painted pink are from the sides of the original blocks. There are 12 vertices we need to account for - 4 each of the 5x7, 5x12, and 7x12 sides. But remember not to count the corner cubes! So, there are 3*4 + 10*4 + 5*4 cubes with 2 sides painted pink, which is a total of 72. Cubes with one side painted pink are in the middle of each face. Once we\u2019ve taken off the corners and the sides, the dimensions of the face are now two less in every way (we took one off from each side). So now they\u2019re 3x5, 3x10 and 5x10, and each one of those has their corresponding number of cubes (2*[3*5 + 3*10 + 5*10] = 190. So the total number of cubes with painted sides is 8 + 72 + 190 = 270.  Sanity check: 150 + 270 = 420. The final answer: 270 painted cubes; 150 unpainted cubes. ",
+            "date": "Answered July 18, 2019",
+            "views": "297",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Nehanjali Soni",
+                    "user_href": "/profile/Nehanjali-Soni-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jim Thomson",
+                "href": "/profile/Jim-Thomson-21"
+            },
+            "answer_text": "Hint: it is easier to calculate how many non-painted blocks there are by peeling off two layers each dimension. (2 layers because you are peeling off from each end). Imagine a 3x3x3 block (Rubiks cube). Peel off the top layer all around, how many are left? (3\u20132)*(3\u20132)*(3\u20132). General formula (h-2)*(l-2)*(d-2) The dimension of the 5x7x12 block with its top layer removed is 3x5x10 or 150 cubes. The question calls for how many were removed, 420\u2013150=270 cubes with paint ",
+            "date": "Answered July 18, 2019",
+            "views": "117",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "MASTERHBK GAMING",
+                    "user_href": "/profile/MASTERHBK-GAMING"
+                },
+                {
+                    "user_id": "Harish Sharma",
+                    "user_href": "/profile/Harish-Sharma-1342"
+                }
+            ]
+        }
+    ]
+}

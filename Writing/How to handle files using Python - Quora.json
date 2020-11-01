@@ -1,0 +1,40 @@
+{
+    "title": "How to handle files using Python - Quora",
+    "tags": [
+        "Python (programming language)",
+        "How-to Question",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Debashis Borgohain",
+                "href": "/profile/Debashis-Borgohain"
+            },
+            "answer_text": "One of the most important features in Python is File handling, which comes in handy while writing data to or reading data from file. In Python, file handling operations take place in the following order. Open a fileClose a fileOpen a file in read modePerform some write action and close the filePerform some append action and close the fileBefore discussing each step, here\u2019s a video that discusses File Handling in depth.  If you are into reading, here\u2019s blog on file handling you can refer to. Alright, let us understand each step with the help of a simple example. Here, our goal is to read or write to a file. Say, we have a .txt file named handling which looks something like this:  Open a file in Python: In order to read or write to a file, you need to open it first. To open a file in Python, use its built open() function. This function takes two parameters, file name and mode. Mode is nothing but a character representing the file open mode e.g. read, write, append. The open function looks something like this: f=open(file name, mode) Modes: Here\u2019s a list of a few common modes of open function. r: read onlya: appendw: writer+: for both reading and writingClose a file in Python: We use the close() function to close a file. Simple. Open a file in read mode: Open the file handle in \u2018r\u2019 mode as shown below. Example:  Open a file in write mode and close the file: Open the file handle in \u2018w\u2019 mode, when you want to overwrite the content in the file, as shown below. Example:  Now if you take a look at the file:  Everything is overwritten here. But what if we don\u2019t want to overwrite and just want to add something into the file? Well, we will use append for that. Open a file in append mode and close the file: Open the file handle in \u2018a\u2019 mode, when you want to append something to the file, without overwriting, as shown below. Example:  Take a look at the file again,  It was easy wasn\u2019t it. Well this was the basics of file handing, refer to the resources given above for in depth understanding of the same. ",
+            "date": "Answered May 30, 2019",
+            "views": "358",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shambhavi Shukla",
+                    "user_href": "/profile/Shambhavi-Shukla-6"
+                },
+                {
+                    "user_id": "Akanksha Rana",
+                    "user_href": "/profile/Akanksha-Rana-51"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Shubh",
+                "href": "/profile/Shubh-136"
+            },
+            "answer_text": "First, please write your question more specifically if you need answer for any specific topic in file handling with Python.  Generally, In Python: Simplest option is to open file using inbuilt \"open()\" functionSyntax: file object = open(file_name [, access_mode][, buffering]) *File_name: name of the file, if file is in current directory. Else location of file followed with name. *access_mode: Determines how the file has to be opened, like any other programming languages. i.e, read, write, append *buffering: This is optional, it determines if buffering has to take place - having integer option like 0 for no buffering, 1 for line buffering *file object - object identifier for your opened file. It has option to get different information about file like: file name, access mode in which file is opened. ** File_object.close() function is used to close file and flush any unwritten information (file buffers). After this, you will need to open file again.  Few general access modes: r - read only w - write only. Overwrites if file exists already else create new file. a - appending, write pointer is at EOF r+ - For both reading and writing a+ - For both appending and reading For binary format files, we have access modes like: rb , wb, ab, rb+, ab+ Functionality of these access modes are same as general one except these are for binary files.  Writing into file:  We have write() method, after you have opened a file - you can use this method to write into opened file. Syntax: file_object.write(data_to_write)  Reading from file: We have read() / readline() / readlines() method which are generally used - you can use these methods to read from file as per requirement: Syntax for read() method: file_object.read([count]); *Count : Optional parameter. Count is number of bytes to read from opened file. Syntax for readline() method: file_object.readline([size]); Readline() method reads single line from file at a time. *Size: Optional parameter. Number of bytes to read from file. While readlines() method read the file until EOF is not encountered and returns a list containing all the lines.  Example for creating a simple file / writing string into that file and read them back: #!/usr/bin/python file = open(\"example\", \"w\") file.write( \"This is an example file.\\n\"); file.close() Executing above code opens a file named example in your current directory (If there is already a file named example - it will overwrite the file) and write \"This is an example file\" in opened file.  Another example to read written data from file and then print them on screen: #!/usr/bin/python file = open(\"example\", \"r\") str = file.readline() print \"First line of your file is \", str file.close() Executing above code, open 'example' file in read mode and read the first line of your file. Then print that. Hence above code should **print:This is an example file.  **If you have not edited 'example' file which we created in first example. ",
+            "date": "Answered January 24, 2016",
+            "views": "649",
+            "upvotes": "0"
+        }
+    ]
+}

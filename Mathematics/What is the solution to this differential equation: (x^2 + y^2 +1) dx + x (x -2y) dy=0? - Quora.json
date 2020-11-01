@@ -1,0 +1,72 @@
+{
+    "title": "What is the solution to this differential equation: (x^2 + y^2 +1) dx + x (x -2y) dy=0? - Quora",
+    "tags": [
+        "Differential Equations",
+        "Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Marco Biagini",
+                "href": "/profile/Marco-Biagini-1"
+            },
+            "answer_text": "Solve 1 + x^2 + y(x)^2 + x ( dy(x))/( dx) (x - 2 y(x)) = 0: Let R(x, y) = x^2 + y^2 + 1 and S(x, y) = x (x - 2 y). This is not an exact equation, because (dR(x, y))/(dy) = 2 y!=2 x - 2 y = (dS(x, y))/(dx). Find an integrating factor \u03bc(x) such that \u03bc(x) R(x, y) + ( dy(x))/( dx) \u03bc(x) S(x, y) = 0 is exact. This means d/(dy)(\u03bc(x) R(x, y)) = d/(dx)(\u03bc(x) S(x, y)): 2 y \u03bc(x) = x ( d\u03bc(x))/( dx) (x - 2 y) + x \u03bc(x) + (x - 2 y) \u03bc(x) Isolate \u03bc(x) to the left-hand side: ((d\u03bc(x))/(dx))/\u03bc(x) = -2/x Integrate both sides with respect to x: log(\u03bc(x)) = -2 log(x) Take exponentials of both sides: \u03bc(x) = 1/x^2 Multiply both sides of 1 + x^2 + y(x)^2 + x ( dy(x))/( dx) (x - 2 y(x)) = 0 by \u03bc(x): (x^2 + y(x)^2 + 1)/x^2 + (-(2 y(x))/x + 1) ( dy(x))/( dx) = 0 Let P(x, y) = (x^2 + y^2 + 1)/x^2 and Q(x, y) = -(2 y)/x + 1. This is an exact equation, because (dP(x, y))/(dy) = (2 y)/x^2 = (dQ(x, y))/(dx). Define f(x, y) such that (df(x, y))/(dx) = P(x, y) and (df(x, y))/(dy) = Q(x, y). Then, the solution will be given by f(x, y) = c_1, where c_1 is an arbitrary constant. Integrate (df(x, y))/(dx) with respect to x in order to find f(x, y): f(x, y) = integral(x^2 + y^2 + 1)/x^2 dx = x + (-y^2 - 1)/x + g(y) where g(y) is an arbitrary function of y. Differentiate f(x, y) with respect to y in order to find g(y): (df(x, y))/(dy) = d/(dy)(x + (-y^2 - 1)/x + g(y)) = -(2 y)/x + ( dg(y))/( dy) Substitute into (df(x, y))/(dy) = Q(x, y): -(2 y)/x + ( dg(y))/( dy) = -(2 y)/x + 1 Solve for ( dg(y))/( dy): ( dg(y))/( dy) = 1 Integrate ( dg(y))/( dy) with respect to y: g(y) = integral1 dy = y Substitute g(y) into f(x, y): f(x, y) = x + y + (-y^2 - 1)/x The solution is f(x, y) = c_1: x + y + (-y^2 - 1)/x = c_1 Solve for y: y(x) = 1/2 (x - sqrt(5 x^2 - 4 c_1 x - 4)) or y(x) = 1/2 (x + sqrt(5 x^2 - 4 c_1 x - 4)) Simplify the arbitrary constants: Answer: y(x) = 1/2 (x - sqrt(5 x^2 + c_1 x - 4)) or y(x) = 1/2 (x + sqrt(5 x^2 + c_1 x - 4)) ",
+            "date": "Answered October 4, 2020",
+            "views": "841",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Darryl Nester",
+                "href": "/profile/Darryl-Nester"
+            },
+            "answer_text": "Note that [math]y'=\\dfrac{x^2+y^2+1}{x(2y-x)}[/math]. The substitution [math]u=(2y-x)^2[/math] transforms this to a linear DE: [math]\\begin{align*}u' &= 2(2y-x)(2y'-1)\\\\ &= 4(2y-x)\\cdot \\dfrac{x^2+y^2+1}{x(2y-x)} - 4y+2x\\\\ &=  \\dfrac{6x^2+4y^2-4xy+4}{x}\\\\ &=  \\dfrac{5x^2+(4y^2-4xy+x^2)+4}{x}\\\\ &=  5x+\\dfrac{u+4}{x}\\end{align*}\\tag*{}[/math] The linear DE [math]u'-u/x=5x+4/x[/math] has integrating factor [math]\\mu(x)=x^{-1}[/math], which leads to the solution [math]u=5x^2-4+Cx\\implies (2y-x)^2=5x^2-4+Cx\\tag*{}[/math] (Note: Because this looks like homework, I have left out some of the details, and the motivation for that substitution.) What is the solution to this differential equation: (x^2 + y^2 +1) dx + x (x -2y) dy=0? ",
+            "date": "Answered March 9, 2018",
+            "views": "21",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Kim Berns",
+                    "user_href": "/profile/Kim-Berns-5"
+                },
+                {
+                    "user_id": "Red Tyson Evans",
+                    "user_href": "/profile/Red-Tyson-Evans"
+                },
+                {
+                    "user_id": "Jean Valery",
+                    "user_href": "/profile/Jean-Valery"
+                },
+                {
+                    "user_id": "Valiant Asfar",
+                    "user_href": "/profile/Valiant-Asfar"
+                },
+                {
+                    "user_id": "Winnie RCM",
+                    "user_href": "/profile/Winnie-RCM"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Aldino Piva",
+                "href": "/profile/Aldino-Piva"
+            },
+            "answer_text": "The equation can be written as M(x,y)dx + N(x,y)dy = 0 with M = x^2 + y^2 +1 , N = x^2 - 2xy..This is not exact because M_y = 2y # N_x = 2(x - y) . However (M_y - N_x)/N = - 2/x depends only on x ,Then the integrating factor can be obtained as I.F. = 1/x^2. One obtains a new equation which is : P(x,y)dx + Q(x,y)dy =0, with P = 1 + y^2/x^2 + 1/x^2 Q = 1 - 2y/x This equation is an exact differential dF(x,y) = 0 because P_y = 2y/x^2 = Q_x. The solution is F(x,y) = C with F_x = P = 1 + y^2/x^2 + 1/x^2 F_y = Q = 1 -2y/x . Integrating the second equation leads to F(x,y) = y - (y^2)/x + G(x). Using the first equation gives G\u2019(x) = 1 + 1/x^2 so G(x) = x - 1/x + C. Substituting in the above expression leads to the solution F(x,y) = y + x - ( y^2 + 1 )/x = C. ",
+            "date": "Answered August 25, 2020",
+            "views": "659",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Justin Antipatia",
+                    "user_href": "/profile/Justin-Antipatia"
+                },
+                {
+                    "user_id": "Jhayson Taron",
+                    "user_href": "/profile/Jhayson-Taron"
+                }
+            ]
+        }
+    ]
+}

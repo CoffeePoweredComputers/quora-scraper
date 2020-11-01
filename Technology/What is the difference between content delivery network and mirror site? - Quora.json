@@ -1,0 +1,49 @@
+{
+    "title": "What is the difference between content delivery network and mirror site? - Quora",
+    "tags": [
+        "Content Delivery",
+        "Content Delivery Networks (CDNs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Brian Jackson",
+                "href": "/profile/Brian-Jackson-35"
+            },
+            "answer_text": "A content delivery network actually copies your assets (JS, CSS, images) to different edge servers (POPs) around the globe so they are delivered to end users faster. It minimizes latency by decreasing the distance. If you have a mirror site, you still have an issue with latency. If you use a pull zone, the CDN will copy all of your assets automatically. For example, if you are running like WordPress you can get up an going in a few minutes with the CDN Enabler plugin: CDN Enabler - WordPress CDN Plugin This is similiar to a mirror site, but not really because your initial HTML doc load is still being requested from your origin server and then the assets are delivered from CDN. Think of a CDN as an automatic copy of your site that handles the load. ",
+            "date": "Answered April 27, 2016",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Shivprasad Shetty",
+                    "user_href": "/profile/Shivprasad-Shetty-2"
+                },
+                {
+                    "user_id": "Peter Kovacs",
+                    "user_href": "/profile/Peter-Kovacs-22"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ashwini Naidu (Nikey)",
+                "href": "/profile/Ashwini-Naidu-Nikey"
+            },
+            "answer_text": "A mirror site is an exact full replica of your actual site and most often used for redundancy, fail over or disaster recovery. It also helps you serve content to your end users based on their location. For example, your actual site can cater to the US audience and the mirror site in London can cater to EMEA audience. A CDN on the other hand is not a full copy of your site. A CDN caches the static content of your site or any other content that is explicitly mentioned, so that they can be delivered to your end user from a location closer to them. CDN's offer your more PoPs in every geography and they serve the purpose of not just redundancy, fail over or disaster recovery but also provide you with optimal performance for your content delivery and also secure your content. ",
+            "date": "Answered May 2, 2016",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Prasannah Ganeshan",
+                    "user_href": "/profile/Prasannah-Ganeshan"
+                },
+                {
+                    "user_id": "Suyash Tilhari",
+                    "user_href": "/profile/Suyash-Tilhari"
+                }
+            ]
+        }
+    ]
+}

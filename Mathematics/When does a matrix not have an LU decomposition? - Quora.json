@@ -1,0 +1,79 @@
+{
+    "title": "When does a matrix not have an LU decomposition? - Quora",
+    "tags": [
+        "Matrix Decomposition",
+        "Decomposition",
+        "Matrix Computations",
+        "Matrices (mathematics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vishakh Rajendran",
+                "href": "/profile/Vishakh-Rajendran-1"
+            },
+            "answer_text": "LU decomposition is not always possible. LU decomposition is possible only when - a. The leading minors must be non zero. Leading minors are the determinant determined for the 1x1 , 2x2 and the 3x3 matrix for the pivot term. In the example below,  Example 2 - In the matrix below-  The second leading submatrix = 4 -4 = 0. Thus, LU factorization is not possible for this case. ",
+            "date": "Answered September 16, 2020",
+            "views": "972",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Sven Jakusch",
+                    "user_href": "/profile/Sven-Jakusch"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Alexey Godin",
+                "href": "/profile/Alexey-Godin-2"
+            },
+            "answer_text": "Let [math]\\Delta_1=a_{11}, \\Delta_2=\\begin{vmatrix} a_{11} & a_{12} \\\\ a_{21} & a_{22}\\end{vmatrix},\\dots,\\Delta_n=\\begin{vmatrix} a_{11} & \\cdots & a_{1n} \\\\ \\vdots & \\ddots & \\vdots \\\\ a_{n1} & \\cdots & a_{nn}\\end{vmatrix}[/math] - so called leading principal minors of the matrix. The LU decompositions exists iff [math]\\Delta_i \\neq 0, i\\in\\{1,\\dots,n\\}[/math] UPD.: Nemo Y , it is usually assumed that the matrix is non-degenerate for the LU decomposition. ",
+            "date": "Updated October 1, 2020",
+            "views": "85",
+            "upvotes": " View 15 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sven Jakusch",
+                    "user_href": "/profile/Sven-Jakusch"
+                },
+                {
+                    "user_id": "Abhay Arora",
+                    "user_href": "/profile/Abhay-Arora-7"
+                },
+                {
+                    "user_id": "Vishal Padips",
+                    "user_href": "/profile/Vishal-Padips"
+                },
+                {
+                    "user_id": "Anshum Gupta",
+                    "user_href": "/profile/Anshum-Gupta-7"
+                },
+                {
+                    "user_id": "Peter Hyun",
+                    "user_href": "/profile/Peter-Hyun-4"
+                },
+                {
+                    "user_id": "Vishnu Ajay",
+                    "user_href": "/profile/Vishnu-Ajay-5"
+                },
+                {
+                    "user_id": "Ernesto Fergo",
+                    "user_href": "/profile/Ernesto-Fergo"
+                },
+                {
+                    "user_id": "Nithin Dominic",
+                    "user_href": "/profile/Nithin-Dominic-5"
+                },
+                {
+                    "user_id": "Richard Goldstone",
+                    "user_href": "/profile/Richard-Goldstone"
+                },
+                {
+                    "user_id": "Avijit Panja",
+                    "user_href": "/profile/Avijit-Panja-6"
+                }
+            ]
+        }
+    ]
+}

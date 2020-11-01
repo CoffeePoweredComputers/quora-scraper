@@ -1,0 +1,34 @@
+{
+    "title": "A box contains 5 red marbles and 10 blue marbles. If 4 marbles are drawn randomly, what is the probability that at least two marbles are blue? - Quora",
+    "tags": [
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Andy Shick",
+                "href": "/profile/Andy-Shick"
+            },
+            "answer_text": "I concur. It is 12/13. It is the sum of the probabilities of 4 blue, 3 blue, and 2 blue. 4: 10/15 * 9/14 * 8/13 * 7/12 = 2/13 (or 14/91) 3: 4*(10/15 * 9/14 * 8/13 * 5/12)= 40/91 (where 4 is the number of possible positions for the red (first, second, third or fourth) and 5/12 represents the probability of drawing a red. If you had the red in the third position, it would be 10/15 * 9/14 *5/13 * 8/12, so it\u2019s the same thing. 2: 6*(10/15 * 9/14 * 5/13 * 4/12)= 30/91 (6 possible positions for red: first/second, first/third, first/fourth, second/third, second/fourth, third/fourth) The sum is 84/91, which is 12/13. There is an easier, shorter alternative as well. That is found by calculating the probability that less than 2 marbles (1 or 0) is blue and subtracting from 1. To do that, find the sum of the probabilities of 4 red and 3 red marbles: 4: 5/15 * 4/14 * 3/13 * 2/12 (I wrote them as 1/3 * 2/7 * 3/13 * 1/6 to make it easier to handle) = 1/273 3: 4*(1/3 * 2/7 * 3/13 * 5/6)=20/273 (where 5/6 represents 10 blue marbles out of 12 remaining and 4 is the number of possible positions). Sum is 21/273 =1/13. 1- 1/13= 12/13 ",
+            "date": "Answered April 8, 2018",
+            "views": "15",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Grant Andrews",
+                "href": "/profile/Grant-Andrews-8"
+            },
+            "answer_text": "Around 92.31%. Did this on the bus with my phone calculator so will need to check the maths properly when at a proper computer to write a worked solution. ",
+            "date": "Answered April 10, 2018",
+            "views": "584",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/Prem-Sekar-G-R-\u092a\u094d\u0930\u0947\u092e-\u0936\u0947\u0916\u0930-\u091c\u0940-\u0906\u0930"
+                }
+            ]
+        }
+    ]
+}

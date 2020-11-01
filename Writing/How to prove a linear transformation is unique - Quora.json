@@ -1,0 +1,63 @@
+{
+    "title": "How to prove a linear transformation is unique - Quora",
+    "tags": [
+        "Linear Transformation",
+        "Transformation",
+        "Laplace Transforms",
+        "Matrix Computations",
+        "Matrices (mathematics)",
+        "Proofs (mathematics)",
+        "Linear Algebra",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Erin Schram",
+                "href": "/profile/Erin-Schram"
+            },
+            "answer_text": "To prove that a linear transfomation is unique, start with a basis for the space being transformed (Basis (linear algebra) - Wikipedia). For example, for a three-dimensional vector space, a good basis is [math](1,0,0)[/math], [math](0,1,0)[/math], and [math](0,0,1)[/math]. Every point in the space can be written as a linear combination of basis elements; for example, [math](a,b,c) = a(1,0,0) + b(0,1,0) + c(0,0,1)[/math]. For a linear transformation [math]T[/math] and a basis [math]U = \\{u_1,u_2,u_3,\\ldots, u_n\\}[/math], defining the transformation on the basis elements [math]u_1,u_2,u_3,\\ldots, u_n[/math] uniquely defines the linear transformation. That is because to figure out [math]T(x)[/math] for a point [math]x[/math], we decompose [math]x[/math] into a linear combination of basis elements, [math]x = a_1u_1 + a_2u_2 + \\ldots + a_nu_n[/math] for some numbers [math]a_i[/math] in the underlying field, and then [math]T(x) = a_1T(u_1) + a_2T(u_2) + \\ldots a_nT(u_n)[/math]. For example, suppose our space is the set of points [math](a,b,c)[/math] with the requirement that [math]a+b+c=0[/math]. We define two linear transformations from that space to the 2-dimensional plan, [math]P[/math] and [math]Q[/math], with [math]P(a,b,c) = (a,b)[/math] and [math]Q(a,b,c) = -(b,a) - (c,c)[/math]. One basis for [math](a,b,c)[/math] with [math]a+b+c=0[/math] is [math]\\{(1,0,-1), (0,1,-1)\\}[/math], because [math](a,b,c) = (a,b,-a-b) = (a,0,-a)+(0,b,-b) = a(1,0,-1)+b(0,1,-1)[/math]. [math]P(1,0,-1) = (1,0)[/math], [math]P(0,1,-1) = (0,1)[/math], [math]Q(1,0,-1) = -(0,1)-(-1,-1) = (0,-1)+(1,1) = (1,0)[/math], and [math]Q(0,1,-1) = -(1,0)-(-1,-1) = (-1,0)+(1,1) = (0,1)[/math]. Thus, [math]P[/math] and [math]Q[/math] match on the basis elements, so they are the same unique linear transformation. ",
+            "date": "Answered June 16, 2019",
+            "views": "2",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Leopold Liu",
+                    "user_href": "/profile/Leopold-Liu-4"
+                },
+                {
+                    "user_id": "Aadhya Krishnakumar",
+                    "user_href": "/profile/Aadhya-Krishnakumar"
+                },
+                {
+                    "user_id": "Renqing Luo",
+                    "user_href": "/profile/Renqing-Luo"
+                },
+                {
+                    "user_id": "Kwang Hwee",
+                    "user_href": "/profile/Kwang-Hwee"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jeff Suzuki",
+                "href": "/profile/Jeff-Suzuki-5"
+            },
+            "answer_text": "To prove uniqueness, a pretty standard approach in higher mathematics is to suppose there are two, then to show they have to be the same thing. For example: \u201cFor a not equal to 0, the linear equation ax + b = c\u201d has a unique solution. Suppose there\u2019s y is another solution. Since it\u2019s a solution, then ay + b = c. So ax + b = ay + b ax = ay Since a is not equal to 0, we can divide by it: x =y So if there is another solution y, it\u2019s the same as the solution x. Hence uniqueness. ",
+            "date": "Answered July 10, 2020",
+            "views": "332",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David Joyce",
+                    "user_href": "/profile/David-Joyce-11"
+                },
+                {
+                    "user_id": "Ian Richard Arko",
+                    "user_href": "/profile/Ian-Richard-Arko"
+                }
+            ]
+        }
+    ]
+}

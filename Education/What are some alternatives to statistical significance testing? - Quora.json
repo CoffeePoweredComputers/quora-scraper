@@ -1,0 +1,100 @@
+{
+    "title": "What are some alternatives to statistical significance testing? - Quora",
+    "tags": [
+        "Statistics (academic discipline)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "William Chen",
+                "href": "/profile/William-Chen-6"
+            },
+            "answer_text": "You can use Bayesian methods (instead of frequentist hypothesis testing) to find the distribution of the unknown parameters. Instead of trying to reject the notion that [math]\\mu = 0[/math], you can actually construct a distribution for mu if you're willing to subscribe to Bayesian ideology and say that an unknown parameter can have a distribution that reflects one's uncertainty about the value.   For example, lets say that you're trying to estimate the probability parameter [math]\\theta[/math] of a binomial distribution (say, click-through rate). You set an initial flat prior for [math]\\theta[/math] to be[math]\\theta \\sim Beta(1, 1)[/math] Through Baye's Rule, you get your posterior distribution for [math]\\theta[/math] to be[math]P(\\theta | data) \\propto P(data | \\theta)P(\\theta)[/math]. Conveniently in this case, the distribution [math]\\theta | data \\sim Beta(1 + y, 1 + n)[/math] Where y is the number of observed successes (e.g. clicks) and n is the number of trials (e.g. impressions).   I've illustrated three Beta distributions below to illustrate what has happened. We start off with a Beta(1, 1), or flat, prior for our belief of the distribution of [math]\\theta[/math].  After observing 1 click in 4 impressions, we can update our belief of of the distribution of [math]\\theta[/math] to be Beta(2, 5). From the posterior distribution we can make judgements about what [math]\\theta[/math] is likely to be.    EDIT: If you're looking for a Bayesian alternative to hypothesis testing, check out the Bayes factor ",
+            "date": "Updated September 22, 2013",
+            "views": "18",
+            "upvotes": " View 17 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Don Marcs",
+                    "user_href": "/profile/Don-Marcs"
+                },
+                {
+                    "user_id": "Jennifer Blankertz",
+                    "user_href": "/profile/Jennifer-Blankertz"
+                },
+                {
+                    "user_id": "Jean Philius",
+                    "user_href": "/profile/Jean-Philius"
+                },
+                {
+                    "user_id": "Michael Zhang",
+                    "user_href": "/profile/Michael-Zhang-22"
+                },
+                {
+                    "user_id": "Jason He",
+                    "user_href": "/profile/Jason-He"
+                },
+                {
+                    "user_id": "Sushant Choudhary",
+                    "user_href": "/profile/Sushant-Choudhary-1"
+                },
+                {
+                    "user_id": "Rohit Mittal",
+                    "user_href": "/profile/Rohit-Mittal-2"
+                },
+                {
+                    "user_id": "Eric Benjamin Seufert",
+                    "user_href": "/profile/Eric-Benjamin-Seufert"
+                },
+                {
+                    "user_id": "Rodrigo Rivera Castro",
+                    "user_href": "/profile/Rodrigo-Rivera-Castro"
+                },
+                {
+                    "user_id": "Markus Schmaus",
+                    "user_href": "/profile/Markus-Schmaus"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Peter Flom",
+                "href": "/profile/Peter-Flom"
+            },
+            "answer_text": "You can look at all of statistics as a part of a principled argument (as in Robert Abelson's excellent book Statistics As Principled Argument: Robert P. Abelson: 9780805805284: Amazon.com: Books. I reviewed this book on my site Page on statisticalanalysisconsulting.com but, briefly, use the MAGIC criteria: Magnitude - how big is the effect?Articulation - how precisely is it stated?Generatlity - to how big a group does it apply?Interestingness - how interesting is it?Credibility - how believable is it? ",
+            "date": "Answered February 25, 2014",
+            "views": "833",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Chiu",
+                    "user_href": "/profile/William-Chiu"
+                },
+                {
+                    "user_id": "Ralph Winters",
+                    "user_href": "/profile/Ralph-Winters"
+                },
+                {
+                    "user_id": "Ryan Fox Squire",
+                    "user_href": "/profile/Ryan-Fox-Squire"
+                },
+                {
+                    "user_id": "Ahsan Ali",
+                    "user_href": "/profile/Ahsan-Ali"
+                },
+                {
+                    "user_id": "Tarik Adnan Moon",
+                    "user_href": "/profile/Tarik-Adnan-Moon"
+                },
+                {
+                    "user_id": "Jeremy Miles",
+                    "user_href": "/profile/Jeremy-Miles"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "title": "How long will CMOS technology sustain in VLSI? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Razvan Baba",
+                "href": "/profile/Razvan-Baba"
+            },
+            "answer_text": "23 Mar 2013:The next hot thing in semiconductors shifted some 10y ago from 'make it faster' to 'make it draw less power'.CMOS is here to stay. Why do I say that? there are telephony encoding chips that are a 35y old design done in a very crude process (1um) and are still being sold in desk phones. This is the extent of profitability of silicon factories. Even after they become obsolete, they can still produce workable products for the right market. CMOS is great because when it does nothing it draws no power beyond leakage currents. So design power optimisation is somewhat simple: make it switch less, so you use less power.  The next obvious thing to do is to make it s\u0336w\u0336i\u0336t\u0336c\u0336h\u0336 \u0336m\u0336o\u0336r\u0336e\u0336 \u0336e\u0336f\u0336f\u0336i\u0336c\u0336i\u0336e\u0336n\u0336t\u0336l\u0336y\u0336 [see note], because leakage currents are a given, and the constantly thinning sizes of the dielectrics does not help the issue. But current-gen silicon works with 0.8-1.1V[later note: operating voltage, many can switch all the way down to 0.1V]. We're reaching threshold voltages where switching will not work any more (work the transistor in an ohmic region). While this is great, it poses a challenge to traditional VLSI because it is disruptive. *  everything is better with an Intel graph. How do you prevent a latch-up if the transistor is an indeterminate state by default? How do you differentiate a data path from an oscillator? etc etc. are all questions that need to be answered by both physicists and engineers in order to reach the next development level.T\u0336h\u0336i\u0336s\u0336 \u0336i\u0336s\u0336 \u0336o\u0336n\u0336l\u0336y\u0336 \u0336p\u0336o\u0336s\u0336s\u0336i\u0336b\u0336l\u0336e\u0336 \u0336i\u0336f\u0336 \u0336w\u0336e\u0336 \u0336e\u0336x\u0336p\u0336l\u0336o\u0336r\u0336e\u0336  \u0336t\u0336h\u0336e\u0336 \u0336s\u0336t\u0336e\u0336a\u0336d\u0336y\u0336-\u0336s\u0336t\u0336a\u0336t\u0336e\u0336s\u0336 \u0336o\u0336f\u0336 \u0336q\u0336u\u0336a\u0336n\u0336t\u0336u\u0336m\u0336 \u0336w\u0336e\u0336l\u0336l\u0336s\u0336  \u0336a\u0336n\u0336d\u0336 \u0336q\u0336u\u0336a\u0336n\u0336t\u0336u\u0336m\u0336 \u0336d\u0336o\u0336t\u0336s\u0336.[see note] This state-of-the-art is done in labs as it involves a certain level of nanofabrication, as well as standard epitaxial growth, but it is not yet implementable on an industrial scale. This will d\u0336e\u0336f\u0336i\u0336n\u0336i\u0336t\u0336e\u0336l\u0336y\u0336 \u0336 happen some time in the next 30years or less. We definitely know what we want to achieve and how will it work, but we don't know yet how to make it profitable for the masses. However, looking sooner in the future, we're going after true 3D transistors, where the gate has a 3-deep layer of contacts and can have a much finer control level over a planar process -this will complicate traditional VLSI, but it can remain in the boundaries of what is done today, just by adding a few more components to libraries that have the foundry's manufacturing blueprints. Still 10y+ away though. I don't think there will be a requirement to switch from silicon to other semiconducting materials for mainstream logic/computing applications just yet. Besides, multi_Ghz transistors are no longer MOSFETs: there are HEMTs, HBTs, MESFETs and so on, the first two which are certainly a lot more expensive to build than MOSFETs.   We can get away with Si, because the power requirements in a chip section are quite low. GaAs, GaN, InP, InGaAsP, popular direct bandgap semiconductors, are better suited for 15GHz+Germanium (Ge) is coming back! Polycrystalline Si doped with Ge is proving to be very good for solar cells and as a gate adherent material in MOSFETs.  and it's dirt cheap, too. Minor how innovations like these can be are further evolutionary steps in transistor tech. 19 Nov 2013 note:   Ideally, we want to be changing the shape of the transistor first. we've already taken the first steps with a FinFET and Intel's Tri-gate transistor.Dyson's equations tell us that the perfect electromagnetic radiator is a sphere, which is where we would want to finally reach. But completely encapsulating a gate in dielectric is something beyond our current understand of physics.  Quantum dots have proven unreliable for transistors.   The problem is growing a surface with a relative uniformity, and that there is no known method to grow single quantum dots. instead, we have this: If you were expecting pretty and exciting, sorry. They do have applications in lasers used in special biomedical and telecomms equipment (they need less power to operate and preliminary evidence shows that they are quite tough over time compared to other optical semiconductors). Nanotechnology is still having an direct impact on VLSI silicon, but many of these quantum confinement tricks work in mid to low volumes (which is why they are expensive to make, and quite difficult to keep profitable with a decent price tag). Making a transistor switch more efficiently is quite difficult at this stage. They've been doing this since the 70s and it could be argued that they've already reached a technological peak. But a bit of engineering doesn't hurt. Transistors essentially move charge from point A to point B, and reducing the time this charge spends in the transistor is paramount to improve its upper frequency limit. A rather technical discussion on this here Transistors: What are the shallow emitter effects in BJTs?   * It's also of note that integrated circuits such as microprocessors have several layers of logic in a ladder; sometimes this arrangement may use different power configurations that may end up lowering the available switching voltage to the end transistor. A minimal margin on voltage input is required to ensure that the CPU logic will switch reliably at all time. Even though the EDA software does this very well, occasional defects in the fabrication may mean that practice !=theory.  Each 1-bit gate element has at least 4 transistors inside. ",
+            "date": "Updated November 19, 2014",
+            "views": "662",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Udit Agarwal",
+                    "user_href": "/profile/Udit-Agarwal-76"
+                },
+                {
+                    "user_id": "Neda Abasi",
+                    "user_href": "/profile/Neda-Abasi-1"
+                },
+                {
+                    "user_id": "Puneet Kaur",
+                    "user_href": "/profile/Puneet-Kaur-19"
+                },
+                {
+                    "user_id": "Pranav Kumar",
+                    "user_href": "/profile/Pranav-Kumar-74"
+                },
+                {
+                    "user_id": "Govind Narasimman",
+                    "user_href": "/profile/Govind-Narasimman"
+                },
+                {
+                    "user_id": "Gautham Sh",
+                    "user_href": "/profile/Gautham-Sh"
+                },
+                {
+                    "user_id": "Abhimanyu Gupta",
+                    "user_href": "/profile/Abhimanyu-Gupta-1"
+                }
+            ]
+        }
+    ]
+}

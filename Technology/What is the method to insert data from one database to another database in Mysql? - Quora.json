@@ -1,0 +1,71 @@
+{
+    "title": "What is the method to insert data from one database to another database in Mysql? - Quora",
+    "tags": [
+        "PHP MySQL",
+        "MySQL",
+        "PHP (programming language)",
+        "Database Systems"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sachin Khanna",
+                "href": "/profile/Sachin-Khanna-29"
+            },
+            "answer_text": "If you have command line access, then I would suggest to have backup of your current DB in sql file using mysql dump command as mysqldump -u [uname] -p[pass] db_name > db_backup.sql Then import exported file into new DB as: mysql -u [uname] -p db_name < db_backup.sql If you are using PHPMYADMIN, you have userinterface to copy DB Select the database you wish to copy (by clicking on the database from the phpMyAdmin home screen).Once inside the database, select the Operations tab.Scroll down to the section where it says \"Copy database to:\"Type in the name of the new database.Select \"structure and data\" to copy everything. Alternately, you can select \"Structure only\" if you want the columns but not the data.Check the box \"CREATE DATABASE before copying\" to create a new database.Check the box \"Add AUTO_INCREMENT value.\"Click on the Go button to proceed.",
+            "date": "Answered September 25, 2018",
+            "views": "63",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Roy Latham",
+                    "user_href": "/profile/Roy-Latham-1"
+                },
+                {
+                    "user_id": "Arun Dhariwal",
+                    "user_href": "/profile/Arun-Dhariwal-1"
+                },
+                {
+                    "user_id": "Devinder Kumar",
+                    "user_href": "/profile/Devinder-Kumar-97"
+                },
+                {
+                    "user_id": "Neeraj Joshi",
+                    "user_href": "/profile/Neeraj-Joshi-76"
+                },
+                {
+                    "user_id": "Vibha Khanna",
+                    "user_href": "/profile/Vibha-Khanna-3"
+                },
+                {
+                    "user_id": "Vaneet Kaushal",
+                    "user_href": "/profile/Vaneet-Kaushal"
+                },
+                {
+                    "user_id": "Arshdeep Sharma",
+                    "user_href": "/profile/Arshdeep-Sharma-2"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Naveed Ramzan",
+                "href": "/profile/Naveed-Ramzan"
+            },
+            "answer_text": "You can connect host and select database from where you need to get data. Then you need to select other database and insert into that.  $conn = mysql_connect('localhost','root','');mysql_select_db('database1',$conn); $row = mysql_fetch_assoc(mysql_query(\"select * from table\")); mysql_select_db('database2',$conn);mysql_query(\"insert query here\"); ",
+            "date": "Answered July 26, 2013",
+            "views": "56",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "David In\u00e1cio",
+                    "user_href": "/profile/David-In\u00e1cio-2"
+                },
+                {
+                    "user_id": "Ankesh Porwal",
+                    "user_href": "/profile/Ankesh-Porwal"
+                }
+            ]
+        }
+    ]
+}

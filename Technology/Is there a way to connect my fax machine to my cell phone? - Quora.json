@@ -1,0 +1,100 @@
+{
+    "title": "Is there a way to connect my fax machine to my cell phone? - Quora",
+    "tags": [
+        "Fax",
+        "Mobile Phones",
+        "Telecommunications",
+        "Computer Networking",
+        "Existence Question"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Winston Weinmann",
+                "href": "/profile/Winston-Weinmann"
+            },
+            "answer_text": "This answer focusses on answering the question of using an all-in-one printer to send a fax, as a fax, over a cellular data connection. There are many alternatives methods to send an image of a document, including taking photos of documents with a cell phone, or using scan and email, but that was not the question asked. Faxes will not, under pretty much any circumstances, go over a cellular connection directly from a fax machine. So far, cellular connections, even very fast ones, don\u2019t provide a signal in a way which is consistent enough to keep a fax machine (which was designed for a low-noise, constant, analog connection) from balking. There are no regular VoIP adapters, such as the Ooma mentioned in another post, which will allow you to use an all-in-one printer (or any other fax machine) over a cell phone data (internet) connection. However, there are two specialized fax adapters which do allow a fax to go over a cellular, or even a satellite phone, connection. Both convert the analog fax signal to an encrypted digital format which is compatible with any internet connection. The first part below is about how to use an all-in-one printer with a cell phone to send a fax. The second part discusses fax adapters, which bridge between a fax machine and an internet connection, including cell phone data/internet connections. Part 1 - How use an all-in-one printer to send a fax over a cellular connection There are essentially two ways to use an all-in-one printer to send a fax over a cellular connection: Scan the document you want to fax, then send it to an internet-based faxing service. Eric Lenington\u2019s company, FaxLogic, is one of these. (Mr. Lenington has another answer on this thread.) The scan can be emailed (less secure) or uploaded via an encrypted web site (more secure). The fax service then forwards the scan via fax to the recipient. If the cell phone can be used as a WiFi hot spot, then the fax could be sent over this connection. This assumes you have a computer to scan to, or software from the printer manufacturer which allows you to scan directly to your phone.Use an adapter between the fax machine and your internet connection, which would allow you to fax directly from the all-in-one printer. This is more complicated to do using a cellphone as the internet connection because the adapter needs an ethernet connection, which cell phones don\u2019t have. The solution is to put either a computer which can share its internet connection, or a router in bridge mode which can act as a WiFi client, between the cellphone and the fax adapter. Macs have been able to share an internet connection for many years. I assume there are also ways to do this on a Windows computer. Note that the fax adapter also requires that you have a compatible FoIP service, as these adapters require a server to receive the fax and forward it to the receiving fax machine.For #2, many routers can be put into a \u201cclient\u201d mode, where they connect to a WiFi connection and then give you an ethernet connection. There are also WiFi adapters which convert (\u201cbridge\u201d) from WiFi to ethernet, but when I\u2019ve priced these they are typically as expensive as a basic router. If you got a router which can act as a client, or a WiFi to ethernet adapter, you would not need to use a computer to share the cell phone\u2019s internet connection. You might already have an old router around which could do this. You would connect the all-in-one printer\u2019s phone jack to the fax adapter\u2019s phone jack, and the fax adapter to the router or WiFi adapter\u2019s ethernet port, after you have the router or WiFi adapter set up to connect to your cell phone\u2019s WiFi hot spot. Using a computer to bridge from the cell phone to the fax adapter is more complicated than using a router or WiFi to ethernet adapter, but you probably have all the needed parts already (except for the fax adapter). The setup for #2 using an iPhone and a Mac, for example, would be: iPhone put into Hotspot mode. The connection could be done over either WiFi or USB.Unplug the Mac from ethernet if it has an ethernet connection.Connect the Mac to the iPhone via the chosen connection (WiFi or USB) and make sure it\u2019s active. For USB you may need to go into System Preferences, the Network pane, and make sure USB is set up as an option for a network connection. Then make sure the Mac is getting internet, say by loading a web page.In the Mac\u2019s System Preferences, in the Sharing pane, turn on Internet Sharing by clicking on \u201cTo computers using:\u201d and click \u201cEthernet\u201d. Then make sure \u201cShare your connection from:\u201d is set to what you used to connect to the iPhone (WiFi or USB). Then click the box next to \u201cInternet Sharing\u201d and approve the popup.Then plug the the all-in-one\u2019s phone connection into the fax adaper, and the fax adapter into the Mac\u2019s ethernet port.Another alternative to using a router, WiFi adapter, or computer would be to use a cellular router which accepts a SIM card AND has a voice connection (for a regular phone). The cellular router would be used with your cell phone SIM card and give you an ethernet jack. You\u2019d want the voice connection so you would not miss voice calls when you used the cellular router with your cell phone SIM. Note that the voice connection on this type of router (a regular phone jack) will NOT work with a fax machine. Cellular routers are effectively cell phones with ethernet and (in some cases) a phone jack. Unfortunately, cellular routers which give you a phone jack are relatively rare, and you\u2019d have to take the SIM card out of the cell phone and put it into the router when you wanted to send a fax. Some of the other posts mention using a SIM card with a cellular router, but the cellular routers mentioned don\u2019t offer a voice jack, so you would lose the voice connection when using your cell phone\u2019s SIM in one of these. (Not to mention losing all the other things you use your cell phone for.) Part 2 - Fax Adapters which work with a cellular connection There are two \u201cbrands\u201d of fax adapter which can work with a cell phone internet connection. Both devices plug into the fax machine\u2019s phone jack, and when the fax machine makes a fax call, the device answers the call, records the fax, converts it from fax format (analog) to an encrypted digital format (both use HTTPS for the digital format), then sends the converted fax to a digital fax server. The server then re-converts the document from digital back to analog fax format, and forwards the fax to the receiving fax machine. There is not a consistent term that I\u2019ve found for this type of fax adapter. There is another fax-over-internet technology, called T.38, which is included in some VoIP adapters. However, these will NOT work with a cellular data connection. Probably the most consistent term for the two adapters I\u2019ve mentioned would be \u201cHTTPS fax adapter\u201d. Because the HTTPS encrypted fax has to go through a server, the fax adapters cannot work alone - you must have a subscription with a Fax over Internet Protocol (FoIP) company which supports the specific fax adapter. One benefit of having an FoIP provider, however, is that you can also send and receive faxes via an encrypted web page, or by email, using these services. (FoIP providers\u2019 main business is the web portal/email service. Offering the HTTPS fax adapter is an add-on service for the FoIP companies, which is why only a few of them offer this option.) Both brands of HTTPS fax adapter are effectively made by joint ventures, with one company providing the software, and another the hardware. The two fax adapters are: FaxBack/AudioCodes MP-202B HTTPS Enabled Fax ATA, Model: MP202B/S2/SIP/HTTPSFAX, Stock #: GGWV00426Scrypt/Axacore FaxBridge FXB21The MP-202B HTTPS Fax is made by AudioCodes, and uses software from FaxBack. Both companies market the fax adapter and related server products. Note that AudioCodes is not consistent about what they call their HTTPS fax adapter, and they also sell a non-fax enabled MP-202B, which adds to the confusion. Note that the MP-202B started life as a VoIP adapter, and the HTTPS Fax version can also work as a VoIP adapter. The FaxBridge FXB21 was made by Axacore, with FaxAgent software from Scrypt, but Scrypt has bought Axacore, so it\u2019s now under one company. The FaxBridge FXB21 does not currently support VoIP (i.e. it only works as an FoIP adapter), but it does have a second phone jack, and a voice feature might be added sometime. The FaxBridge is typically sold \u201cprivate label\u201d, so it may be branded with the FoIP provider\u2019s name, instead of Scrypt or Axacore. Both adapters sell for about $150, but prices vary. It\u2019s also worth asking if a discount might be available. It is not clear if you can \u201cbring your own\u201d AudioCodes MP- 202B HTTPS Fax. The companies which use the FaxBridge FXB21 set them up before shipping them, so you (supposedly) must get one from the FoIP provider you use. Here\u2019s a list of FoIP companies which offer the HTTPS fax adapters in North America. The list was current, as far as I could find, in spring 2016. Companies that use AudioCodes MP-202B HTTPS Fax ATA: 1. FaxLogic 2. Broadvoice 3. Nxgen.ca 4. SpectrumVoIP 5. FaxSIPIt (more expensive) 6. CCGTelecom 7. SIPCom 8. Vitelity (note: not recommended - when I asked them questions I found they really don\u2019t want any) Companies that use Scrypt/Axacore FaxBridge FXB21: 1. Nextiva (this is the one I use) 2. FoIPLY 3. Sfax Note: J2 Global owns several electronic fax brands, including eFax, MetroFax, SmartFax, MyFax, RapidFax, TrustFax and Fax dot com, to name a few. J2 Global has had problems with complaints. eFax may support the AudioCodes MP-202B HTTPS Fax. I did not look closely at any of the J2 Global brands. If you contact any of the FoIP providers who support HTTPS fax adapters, expect to find that their staff are wildly uninformed about how these work. You will probably not find anyone who will confirm that either the FaxBack/AudioCodes or the Scrypt/Axacore boxes will work with a cellular data connection. You may even be told that they will NOT work. I can confirm from extensive testing of the Scrypt/Axacore box that it works perfectly. I\u2019ve not tested the FaxBack/AudioCodes adapter, but have had extensive conversations with the company. I chose Nextiva as my FoIP provider based on great pre-sales support and good pricing. (Nextiva is also a VoIP provider, but you then need another adapter as the FaxBridge FXB21 only does fax, not voice. I did not need voice, as I am using a cellular router which has its own cellular voice connection.) Good luck. ",
+            "date": "Answered December 25, 2016",
+            "views": "245",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "William Jameson",
+                    "user_href": "/profile/William-Jameson-57"
+                },
+                {
+                    "user_id": "Harlan Weisman",
+                    "user_href": "/profile/Harlan-Weisman"
+                },
+                {
+                    "user_id": "Anton Modaresi",
+                    "user_href": "/profile/Anton-Modaresi"
+                },
+                {
+                    "user_id": "Sarfraz Cheema",
+                    "user_href": "/profile/Sarfraz-Cheema-3"
+                },
+                {
+                    "user_id": "LAWRENCE OWUBE",
+                    "user_href": "/profile/LAWRENCE-OWUBE"
+                },
+                {
+                    "user_id": "Eli Maier",
+                    "user_href": "/profile/Eli-Maier"
+                },
+                {
+                    "user_id": "Jennifer Cloutier",
+                    "user_href": "/profile/Jennifer-Cloutier-4"
+                },
+                {
+                    "user_id": "Pete Conrad",
+                    "user_href": "/profile/Pete-Conrad-6"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric Lenington",
+                "href": "/profile/Eric-Lenington"
+            },
+            "answer_text": "Without getting too technical, it is technically possible to send a fax over some kinds of cell/mobile systems, but the equipment needed to do it successfully isn't readily available, and even if it were, the speed of the fax is severely limited in most cases. That said, we designed our Fax Adapter specifically for this purpose--to let you use a conventional fax or multi-function machine without a phone line. It uses your existing Internet connection (and can actually use your cell phone, assuming it can be a WiFi hot spot, although that's generally more trouble than it's worth, as long as you have some sort of \"regular\" Internet service, like DSL, Cable, etc.). The Fax Adapter simply connects between your machine and your network, making the machine \"think\" it's connected to a regular phone line. Service plans start at about $15/month--much less than a business phone line and generally less than most residential phone lines, too. ",
+            "date": "Answered November 13, 2014",
+            "views": "292",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "William Emmanuel Yu",
+                    "user_href": "/profile/William-Emmanuel-Yu"
+                },
+                {
+                    "user_id": "Bruce Brown",
+                    "user_href": "/profile/Bruce-Brown-17"
+                },
+                {
+                    "user_id": "Alan Kelley",
+                    "user_href": "/profile/Alan-Kelley-14"
+                },
+                {
+                    "user_id": "Debra Johnson",
+                    "user_href": "/profile/Debra-Johnson-18"
+                },
+                {
+                    "user_id": "Pete Conrad",
+                    "user_href": "/profile/Pete-Conrad-6"
+                },
+                {
+                    "user_id": "Chuck Mobraten",
+                    "user_href": "/profile/Chuck-Mobraten"
+                },
+                {
+                    "user_id": "Raphael Ramatis",
+                    "user_href": "/profile/Raphael-Ramatis"
+                },
+                {
+                    "user_id": "Ryan Simms",
+                    "user_href": "/profile/Ryan-Simms-4"
+                }
+            ]
+        }
+    ]
+}

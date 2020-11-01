@@ -1,0 +1,31 @@
+{
+    "title": "Which technology can be used to protect VoIP against eavesdropping? - Quora",
+    "tags": [
+        "Eavesdropping",
+        "VoIP Software and Services",
+        "VoIP",
+        "Telecommunications"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "SipCo Systems",
+                "href": "/profile/SipCo-Systems"
+            },
+            "answer_text": "If you are using plain RTP then Voice Packets can be captured in the middle and reconstructed the voice using tools . You can test this by installing wireshark on your computer and capture packets while you are using some voip softphone on your computer . You can be able to replay the captured audio . Imagine if someone sits at the router in your network and capture the network packets , its called MITM . To protect against man-in-middle attacks you can use SIPS(TLS)/SRTP as most of the hardware phones (IP PHONES) support SRTP . Many softphones supports ZRTP ( best key negotiating protocol for voip) so you can just enable ZRTP on your softphone . Make sure both the end points ( callee and caller parties ) support ZRTP . SipCo Systems can help you securing your existing PBX , IP telephony systems or in implementing a new Secure IP communication platform. ",
+            "date": "Answered August 27, 2019",
+            "views": "11",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Bill Wing",
+                "href": "/profile/Bill-Wing-9"
+            },
+            "answer_text": "VOIP is carried over a transport layer protocol. Any encrypted transport layer protocol thus will encrypt a VOIP call. Of course, both ends of the call must agree on the encryption to be used. ",
+            "date": "Answered August 27, 2019",
+            "views": "697",
+            "upvotes": "0"
+        }
+    ]
+}

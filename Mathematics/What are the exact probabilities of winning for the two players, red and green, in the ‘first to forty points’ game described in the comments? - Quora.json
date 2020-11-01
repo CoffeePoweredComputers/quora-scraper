@@ -1,0 +1,38 @@
+{
+    "title": "What are the exact probabilities of winning for the two players, red and green, in the \u2018first to forty points\u2019 game described in the comments? - Quora",
+    "tags": [
+        "Probability Puzzles"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Christopher Pellerito",
+                "href": "/profile/Christopher-Pellerito"
+            },
+            "answer_text": "From the comment: A spinner, or eight-sided die, is thrown which has exactly 5 red faces and 3 green faces, each face is equally likely to be chosen on each spin. The die is thrown repeatedly. On each throw, if a red face results then Red is awarded 2 points; if a green face results then Green is awarded 4 points. Both Red and Green start with no points and the game finishes when the first of the players reaches 40 points. The player that does so is the winner. So Red needs to \u201cscore\u201d 20 times to win, and Green needs to \u201cscore\u201d 10 times. The game cannot last longer than 29 spins; after 28 spins th Continue Reading",
+            "date": "Answered April 20, 2020",
+            "views": "0",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Christian Schmidt",
+                "href": "/profile/Christian-Schmidt-47"
+            },
+            "answer_text": "For the generalized game we can assume that  are i.i.d random variables that take the value  with probability  (\u201cred\u201d) and the value  with probability (\u201cgreen\u201d). This means  counts how often red occurs in  trials. Clearly  is then Bernoulli distributed. The game is definitely finished after  rounds because then we can\u2019t have less than  red and less then  green at the same time. This means red wins if and only if  for some . Just to illustrate this here is a picture with  and :  The step function is  (whic Continue Reading",
+            "date": "Answered April 21, 2020",
+            "views": "0",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Roberts",
+                "href": "/profile/Jonathan-Roberts-13"
+            },
+            "answer_text": "Red needs to win [math]20[/math] times before Green gets to [math]10[/math] wins. So, if Red wins there will be between [math]20[/math] and [math]20+9=29[/math] throws (because Green must get thrown between [math]0[/math] and [math]9[/math] times) . Red must also be the result of the last throw with a probability of [math]\\frac{5}{8}[/math]  \\sum_{n=0}^{9}(5/8)^19\\times(3/8)^{n}\\times\\binom{19+n}{19}(5/8) - Wolfram|Alpha [math]=\\dfrac{11741204956531524658203125}{38685626227668133590597632}[/math] [math]\\approx 0.303503\\ldots[/math] To calculate Green\u2019s probability of winning it is just [math]1-P(\\text{R win})[/math] [math]=1 - \\dfrac{11741204956531524658203125}{38685626227668133590597632}[/math] [math]=\\dfrac{26944421271136608932394507}{38685626227[/math] Continue Reading",
+            "date": "Answered April 20, 2020",
+            "views": "0",
+            "upvotes": "0"
+        }
+    ]
+}

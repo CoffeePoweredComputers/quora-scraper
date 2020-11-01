@@ -1,0 +1,34 @@
+{
+    "title": "Web Browsers: How do I get the content of a URL bar when a net error occurs? - Quora",
+    "tags": [
+        "Location Bar",
+        "Adress Bar",
+        "Omnibox",
+        "HTTP",
+        "News Websites",
+        "Content Strategy",
+        "Uniform Resource Locators (URLs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Julier So",
+                "href": "/profile/Julier-So"
+            },
+            "answer_text": "Well, \"How do I get the content of a URL bar when a net error occurs?\" in the question detial I writed, it means how to get the URL( such as https://twitter.com) in the URL bar(omnibox), soved this, and then to think how to get the page content (such as use flow code as bookmarklet:javascript:var crurl;if(window.location.href=='data:text/html,chromewebdata') { crurl=document.title.match(/([^ ]*)/).pop();}else{crurl= document.location.href;};window.open('https://via.hypothes.is/'+crurl);) , Via http://stackoverflow.com/questions/29994512/get-browser-url-box-contents-with-javascript). Maybe , I had not ask clear , but try to edit this Quora queation, it pop \"Rich-text editing requires the iOS or Android App. Download it from the App Store or Google Play Store.\" I had Andriod only , But in China, most Android phone have not Google Play Market, hard to do beacuse of GFW I mentioned. Had to write here. ",
+            "date": "Answered September 11, 2015",
+            "views": "14",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Andrew Spode",
+                "href": "/profile/Andrew-Spode"
+            },
+            "answer_text": "In screenshot2, although your ISP is not giving you the content you request, it is still giving you content so a page is rendered and javascript is executed. In screenshot1, your ISP has blocked it and isn't giving you any content. Chrome therefore doesn't render a page and javascript is not executed. When I was writing my Chrome Extension, @Oh No You Didn't! I had a similar issue and exploited this \"feature\" to my benefit. What exactly are you trying to achieve? Maybe there is another way of doing it? ",
+            "date": "Answered April 12, 2015",
+            "views": "968",
+            "upvotes": " Answer requested by Julier So"
+        }
+    ]
+}

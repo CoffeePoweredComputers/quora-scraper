@@ -1,0 +1,61 @@
+{
+    "title": "What is the origin of the hypergeometric probability distribution? - Quora",
+    "tags": [
+        "Hypergeometric Probability",
+        "Probability (statistics)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Steven Smith",
+                "href": "/profile/Steven-Smith-440"
+            },
+            "answer_text": "It requires a finite population that contains 2 mutually exclusive groups. You are trying to find out the chance of your sample (without replacement) having a certain number of elements from the \u201csuccess\u201d group. For example: You have a population of 100 people. You know the population has 20 men and 80 women. All the names are put in a hat and mixed up until the names you pull are completely randomized. You draw 15 names from that hat without replacement. What is the chance that exactly 5 of those names are men? This would be a problem for the hypergeometric distribution. The information you have to have is the total population size, the number of successes in the total population, and the number of samples drawn from the population. The population size is often labelled as N. The number of successes in the total population often varies in labeling, I have seen it labelled as R, r, or K. The number of samples drawn from the population is often labelled as n. So from the sample problem I gave, N = 100, R = 20, n = 15. The distribution is the number of ways to choose x successes from the number of success in the population times the number of ways to draw the rest of the sample from the number of failures in the population, divided by the number of ways to draw any n values (success or failure) from the overall population. Therefore, you get probabilities like this: [math]\\displaystyle P(X=x)=\\cfrac{\\binom{R}{x} \\cdot \\binom{N-R}{n-x}}{\\binom{N}{n}}[/math] With the example problem I made, the calculation would go like this: [math]\\displaystyle P(X=5)=\\cfrac{\\binom{20}{5} \\cdot \\binom{80}{15-5}}{\\binom{100}{15}}[/math] The numbers get too large to display properly, so I will skip straight to the answer: [math]0.1007632735[/math] Or slightly over 10 percent. ",
+            "date": "Answered March 11, 2017",
+            "views": "785",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Latisha Khattar",
+                    "user_href": "/profile/Latisha-Khattar-1"
+                },
+                {
+                    "user_id": "Gaspard Sagot",
+                    "user_href": "/profile/Gaspard-Sagot"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Luis Fok",
+                "href": "/profile/Luis-Fok"
+            },
+            "answer_text": " The hypergeometric distribution is used to calculate probabilities when sampling without replacement, specifically it describes the number of successes in a sequence of n draws from a finite population without replacement. The name hypergeometric distribution, which seems to have nothing to do with sampling from a dichotomous population comes from a power series, which was studied by Leonhard Euler, Carl Friedrich Gauss, Bernhard Riemann, and others. A detailed description of how it started showing up in the math literature is given in: Earliest Known Uses of Some of the Words of Mathematics (H) ",
+            "date": "Answered March 21, 2017",
+            "views": "14",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Malavika An",
+                    "user_href": "/profile/Malavika-An"
+                },
+                {
+                    "user_id": "Eddy Zavala",
+                    "user_href": "/profile/Eddy-Zavala"
+                },
+                {
+                    "user_id": "Gaspard Sagot",
+                    "user_href": "/profile/Gaspard-Sagot"
+                },
+                {
+                    "user_id": "Steve Stevens",
+                    "user_href": "/profile/Steve-Stevens-9"
+                }
+            ]
+        }
+    ]
+}

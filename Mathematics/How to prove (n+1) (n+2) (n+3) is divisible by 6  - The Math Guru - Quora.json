@@ -1,0 +1,79 @@
+{
+    "title": "How to prove (n+1) (n+2) (n+3) is divisible by 6  - The Math Guru - Quora",
+    "tags": [
+        "Middle and High School Math Homework Question ",
+        "Quantitative Aptitude"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Vijay Mankar (\u0935\u093f\u091c\u092f \u092e\u093e\u0928\u0915\u0930)",
+                "href": "/profile/Vijay-Mankar-\u0935\u093f\u091c\u092f-\u092e\u093e\u0928\u0915\u0930"
+            },
+            "answer_text": "Let's prove it by mathematical induction. Let  Let's prove it for  Clearly  Let's assume it's ( true for , Let's prove by induction step that is to verify for     Here first term is  which as per our assumption is true. Second term consist of product of two consecutive numbers which ensures it to be even or to say divisible by  and one more factor as  hence it is divisible by  Hence proved. ",
+            "date": "August 27, 2020",
+            "views": "498",
+            "upvotes": " View 8 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Shreya Bhattacharyya",
+                    "user_href": "/profile/Shreya-Bhattacharyya-28"
+                },
+                {
+                    "user_id": "Ruchi Chhabra",
+                    "user_href": "/profile/Ruchi-Chhabra-4"
+                },
+                {
+                    "user_id": "Harsheen Kohli",
+                    "user_href": "/profile/Harsheen-Kohli-7"
+                },
+                {
+                    "user_id": "Govind Sharma",
+                    "user_href": "/profile/Govind-Sharma-1475"
+                },
+                {
+                    "user_id": "Sripad Sambrani",
+                    "user_href": "/profile/Sripad-Sambrani"
+                },
+                {
+                    "user_id": "Dithin Raj",
+                    "user_href": "/profile/Dithin-Raj-1"
+                },
+                {
+                    "user_id": "Muthusamy Piramanayagam ( \u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9a\u0bbe\u0bae\u0bbf \u0baa\u0bbf\u0bb0\u0bae\u0ba8\u0bbe\u0baf\u0b95\u0bae\u0bcd)",
+                    "user_href": "/profile/Muthusamy-Piramanayagam-\u0bae\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1\u0b9a\u0bbe\u0bae\u0bbf-\u0baa\u0bbf\u0bb0\u0bae\u0ba8\u0bbe\u0baf\u0b95\u0bae\u0bcd"
+                },
+                {
+                    "user_id": "Sanjay Upreti",
+                    "user_href": "/profile/\u0938\u0902\u091c\u092f-\u0909\u092a\u094d\u0930\u0947\u0924\u0940-Sanjay-Upreti"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Douglas Porter",
+                "href": "/profile/Douglas-Porter-17"
+            },
+            "answer_text": "As usual with proof by induction, show that the statement is true for n = 1 (or n = 0, if you like); assume it is true for n = k; then show that in that case it is true for n = k + 1. Here we\u2019ll take n = 0 as the starting point: 1 x 2 x 3 = 6 so that is OK. Assume n = k works, so assume 6 divides (k + 1)(k + 2)(k + 3) Then put n = k + 1, which gives us (k + 2)(k + 3)(k + 4). We can rewrite this as (k + 1)(k + 2)(k + 3) + 3(k + 2)(k + 3). Then the first expression is assumed to divide by 6, and since either k + 2 or k + 3 is even, the second expression divides by 6 also. Hence if n = k works, n = k + 1 does also, which is the standard proof by induction. Since we know n = 0 works, we have shown that in that case so does n = 1, and in that case so does n = 2, and so on without limit. ",
+            "date": "August 27, 2020",
+            "views": "67",
+            "upvotes": " ",
+            "upvoters": [
+                {
+                    "user_id": "Ruchi Chhabra",
+                    "user_href": "/profile/Ruchi-Chhabra-4"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Navneet Goyal",
+                "href": "/profile/Navneet-Goyal-7"
+            },
+            "answer_text": "There are two sets of cases in terms of a number [math]n[/math] divisible by [math]2[/math] and [math]3[/math]. The number is divisible by [math]2[/math] or not / even or not.The number is divisible by [math]3[/math] or not.Now let's assume that the number A. [math]n[/math] Is Even ie [math]n=2k[/math] ie [math]n+2=2(k+1)[/math] ie [math]n+2[/math] is divisible by [math]2[/math] B. [math]n[/math] Is Odd ie [math]n=2k+1[/math] ie [math]n+1=2k+1+1=2(k+1)[/math] ie [math]n+1[/math] is divisible by [math]2[/math] C. [math]n[/math] Is divisible by [math]3[/math] ie [math]n=3k[/math] ie [math]n+3=3k+3=3(k+1)[/math] ie [math]n+3[/math] is divisible by [math]3[/math]. D. [math]n[/math] is NOT DIVISIBLE by [math]3[/math] ie [math]n=3k+1[/math] or [math]n=3k+2[/math] ie [math]n+2=3k+1+2=3k+3[/math] OR [math]n+1=3k+2+1=3k+3[/math] respectively ie for both cases (of non divisible by [math]3[/math]), either [math]n+1[/math] or [math]n+2[/math] will be divisible by [math]3[/math]. So for any case of [math]n[/math] Atleast one factor of [math](n+1)(n+2)(n+3)[/math] will be divisible by [math]2[/math] And One factor of [math](n+1)(n+2)(n+3)[/math] will be divisible by [math]3[/math] So for any case of [math]n[/math], [math](n+1)(n+2)(n+3)[/math] will be divisible by [math]2\u00d73=6[/math]. ",
+            "date": "August 27, 2020",
+            "views": "78",
+            "upvotes": " View 1 Upvoter "
+        }
+    ]
+}

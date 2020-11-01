@@ -1,0 +1,34 @@
+{
+    "title": "How should I measure the speed of a moving vehicle from outside by some sensors? - Quora",
+    "tags": [
+        "Sensors"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Taylor",
+                "href": "/profile/Robert-Taylor-315"
+            },
+            "answer_text": "Very easily, with two sensors - most likely a beam of light, or a switch embedded in a strip across the path (remember those rubber cables that used to lay on the ground near fuel pumps, and made the \u201cding-ding\u201d sound when one drove over them?) broken by the vehicle as it passes them, and a timing apparatus to start with sensor 1 and stop with sensor 2. You would have to make certain assumptions: first, that only one vehicle can be in the test area at one time;the vehicle is moving at a constant rate.the distance between the sensor is >> the reaction time of your sensors and clock e.g. if both sensors are tripped faster than the resolution of your clock, you will not get a reliable reading.Now calculate v = ds/dt, or change in distance over change in time. If your beams are 100m apart and the time taken to traverse them is 10 seconds, the vehicle was traveling 10m/s. Research a drag strip, for ideas - they have \u201ctraps\u201d for measuring the ET and final speed. ",
+            "date": "Answered January 25, 2018",
+            "views": "250",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Aasim Khan",
+                    "user_href": "/profile/Aasim-Khan-68"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Tim Elliot",
+                "href": "/profile/Tim-Elliot"
+            },
+            "answer_text": "How should I measure the speed of a moving vehicle from outside by some sensors? There are several methods. You choose which one suits you: Arrange light beams across the road in two places. Use the time the vehicle breaks the beam and the distance between to calculate speed.Use a LIDAR sensor as a range finder. Take two distance measurements with a known time interval between, calculate the speed.Using an image sensor (for instance the Raspberry Pi Camera) to take photos. Compare them with OpenVision to calculate the change in apparent size of the vehicle. With the time between images, calculate the speed.",
+            "date": "Answered January 25, 2018",
+            "views": "260",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "title": "What is the equilibrium constant for 2CO(g) + O2(g) <-> 2CO2(g)? - Quora",
+    "tags": [
+        "Thermodynamic Equilibrium",
+        "Equilibrium Constant",
+        "Chemistry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Omar Abdelaty",
+                "href": "/profile/Omar-Abdelaty-3"
+            },
+            "answer_text": "The important concept to remember here is that equilibrium constant is a thermodynamic quantity that depends on temperature only. Change in Gibbs free energy of reaction and enthalpy are also important state function which help us calculate the equilibrium constant at different temperatures. Alternatively, one may try to find the equilibrium constant experimentally but that may not be easy to do. For such common gases, calculations are much easier. Now starting from the common equation as a function of composition [math]\u0394G_r=\u0394G\u00b0+RTln(Q)[/math] where superscript 0 indicates a standard quantity. at equilibrium \u0394[math]G_r=0[/math] and [math]Q=K[/math]; the eqn becomes [math]\u0394G\u00b0+RT_0 ln(K)=0[/math] Rearranging gives: [math]lnK=-\u0394G\u00b0/RT_0 [/math]-->[math] K_0=exp(-\u0394G\u00b0/RT_0) at T=T_0   ...(1)[/math] Now as we mentioned above, K is a function of temperature only. It is easy to show that [math]dlnK/dT=\u0394H/(RT^2)[/math] [math]dlnK=\u0394H/(RT^2)*dT[/math] integrating from [math]T_0[/math] to any temperature T and assuming the enthalpy change dependence on the temperature is weak. [math]ln(K/K_0)=-\u0394H\u00b0/R *(1/T-1/T_0) [/math] [math]K/K_0=exp(-\u0394H\u00b0/R *(1/T-1/T_0))[/math] [math]K=K_0*exp(-\u0394H\u00b0/R *(1/T-1/T_0))[/math] substituting from equation (1) above [math]K=exp(-\u0394G\u00b0/RT_0)*exp(-\u0394H\u00b0/R *(1/T-1/T_0))[/math] [math]K=exp(-\u0394G\u00b0/RT_0-\u0394H\u00b0/R *(1/T-1/T_0))[/math] Now the question is how does one find [math]\u0394G\u00b0 and \u0394H\u00b0[/math]; Also what if [math]\u0394H\u00b0[/math] depends strongly on temperature? For finding these values we turn to thermodynamic tables which are very abundant everywhere. Any standard thermodynamics book or physical chemistry book will have a short table of standard formation quantities [math]\u0394G_f\u00b0, \u0394H_f\u00b0, Cp[/math] etc. If the compound is less common, one has to use longer tables such as: Thermochemical Data of Elements and Compounds: Michael Binnewies, E. Milkeor Thermochemical data of pure substances, Parts I & II: Ihsan Barin Regardless, at 25 \u00b0C (298 K) [math]\u0394G\u00b0=2*-394.36-(2*-137.17+0)=-514.38 kJ/mol[/math] [math]\u0394H\u00b0=2*-393.51-(2*-110.53+0)=-565.96 kJ/mol[/math] Finally: [math]K=exp(514380/(8.3144*298)+565960/8.3144 *(1/T-1/298))[/math] [math]K=1.448*10[/math]^(90)[math]*exp(68.1*10^3*(1/T-1/298))[/math] Note 1: as expected the combustion reaction is very favorable at most temperatures and the reaction is almost invariably irreversible. The reverse reaction becomes significant at T>3000 K or something similar. At such temperatures the bonds will probably preferably break up leading to a lot of gaseous atoms and ions mixtures. Note 2: This says nothing about the rate of the reaction. If the temperature is not high enough or there is no catalyst the reaction may take infinite time to reach equilibrium.Note 3: Note also that at such high temperatures, the assumption that [math]\u0394H\u00b0[/math] depends weakly on temperature will fail and we will have to include the change in [math]\u0394H(T)[/math] as well which is calculated from [math]C_p [/math]values also reported in those tables. ____________________________________________________________ For calculation of [math]K[/math] dependence at such high temperatures far away from [math]T_0[/math] one will need the [math]C_p[/math] temperature dependence from tables. My thermo textEngineering and Chemical Thermodynamics: Koretsky uses a [math]C_p[/math] formula as follows:  this leads to an equilibrium dependence on temperature after integration as follows:  =D Honestly, it is not as bad as it looks. It is more tedious than complicated. But you probably won\u2019t need all these information. However, this is always applicable to any reaction as you might suspect. Which is why I hope this answer will be useful for other reactions as well. ",
+            "date": "Answered August 16, 2019",
+            "views": "23",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Ray Menon",
+                    "user_href": "/profile/Ray-Menon-3"
+                },
+                {
+                    "user_id": "Michelle Chartier",
+                    "user_href": "/profile/Michelle-Chartier-2"
+                },
+                {
+                    "user_id": "John Ellis",
+                    "user_href": "/profile/John-Ellis-491"
+                },
+                {
+                    "user_id": "Abhishek Mahato",
+                    "user_href": "/profile/Abhishek-Mahato-26"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "William Daily, PhD",
+                "href": "/profile/William-Daily-PhD"
+            },
+            "answer_text": "Keq = 1.28 x 10^45 ",
+            "date": "Answered August 17, 2019",
+            "views": "15",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Harris Lui",
+                    "user_href": "/profile/Harris-Lui"
+                },
+                {
+                    "user_id": "John Ellis",
+                    "user_href": "/profile/John-Ellis-491"
+                }
+            ]
+        }
+    ]
+}

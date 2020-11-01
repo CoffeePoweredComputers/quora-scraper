@@ -1,0 +1,29 @@
+{
+    "title": "How to parse an Excel file in Python - Quora",
+    "tags": [
+        "Microsoft Excel",
+        "Python (programming language)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Betty Chitty",
+                "href": "/profile/Betty-Chitty"
+            },
+            "answer_text": "There are many scenarios to consider, including the complexity of what you are trying to parse. Ex: (Do you have to clean you data? Do you have any extractions?) If you are just trying to open and read the file, use the pandas library to read the file and create a dataframe. import pandas as pd dataframe = pd.read_excel(r\u2019path excel file/name of file.xlsx\u2019) print(dataframe) \u2190 if you would like to see immediate results dataframe.to_excel(\u2018outputFileName.xlsx\u2019) \u2190 if you would like to save to a file ",
+            "date": "Answered September 6, 2020",
+            "views": "21",
+            "upvotes": " Answer requested by Mohammed Saiful Alam Siddiquee"
+        },
+        {
+            "author_info": {
+                "name": "Les Black",
+                "href": "/profile/Les-Black-8"
+            },
+            "answer_text": "You can interact and control Office using Python. You use the win32com.client library as shown in the following code. In this example I am writing to an Excel range of cells. You can easily assign a selected range to a variable and then parse that variable as you wish. For example : variable1 = xl.Range(\"B11:K11\").Select()\u00a0Example Code: from win32com.client.gencache import EnsureDispatch\u00a0from win32com.client import constants\u00a0\u00a0def Macro1():\u00a0    xl = EnsureDispatch(\"Excel.Application\")\u00a0    xl.Range(\"B11:K11\").Select()\u00a0    xl.Selection.AutoFill(Destination=xl.Range(\"B11:K16\"), Type=constants.xlFillDefault)\u00a0    xl.Columns(\"B:K\").Select()\u00a0    xl.Selection.ColumnWidth = 4\u00a0Macro1()\u00a0There are other answers on Quora all about wind32com.client for you to look up. If you found this answer useful please consider Upvoting it. Thanks. ",
+            "date": "Answered July 24, 2019",
+            "views": "315",
+            "upvotes": " Answer requested by Mohammed Saiful Alam Siddiquee"
+        }
+    ]
+}

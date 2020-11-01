@@ -1,0 +1,43 @@
+{
+    "title": "How do they program Lithium ion batteries? And are Lithium ion polymer batteries and Lithium ion batteries the same? - Quora",
+    "tags": [
+        "Lithium-Polymer",
+        "Rechargeable Batteries",
+        "Lithium",
+        "Polymer (molecule)",
+        "Lithium-Ion Batteries",
+        "Battery Life",
+        "Batteries",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kenzi Mudge",
+                "href": "/profile/Kenzi-Mudge"
+            },
+            "answer_text": "Lithium ion batteries (battery = cells plus required interface and protection circuitry) are made in a huge variety of ways. Simple ones (PCMs) have a simple protection chip that limits overcharge, overdischarge and overcurrent. Some of these are \u201cprogrammed\u201d to the right limits by use of a set resistor on the circuit. Some of the chips protect against overheating, or they prioritize charging power (PPMs) to the device so it can run even if the battery is dead, or they \u201clearn\u201d the chargers capability to maximize charging speed. This too is almost always programmed by a resistor. The fanciest battery circuits (BMS) track battery health and charge state. These usually use an I\u00b2C or SPI serial communication bus. They have internal EEPROM or CMOS, and a purpose-made ASIC. Very rarely, they may contain a low-power CPU instead. These are usually programmed by a JTAG or SWD at the factory, and some may accept updates over a serial protocol to the host device. Lithium polymer cells are lithium ion cells with modifications to the electrolyte formulation the make it sticky and flexible enough to hold to the electrolytes without needing to be rolled tightly together the way metal-cylinder lithium batteries are. They can have a slightly lower capacity by volume, but since cylinders don't fill the space in electronics as well, lithium polymers can fill volume better, giving them a capacity advantage nonetheless. ",
+            "date": "Answered May 2, 2020",
+            "views": "273",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "John Lluvia",
+                    "user_href": "/profile/John-Lluvia"
+                },
+                {
+                    "user_id": "Arne Haugsnes",
+                    "user_href": "/profile/Arne-Haugsnes"
+                },
+                {
+                    "user_id": "Chris Stanfield",
+                    "user_href": "/profile/Chris-Stanfield-3"
+                },
+                {
+                    "user_id": "Gil Hoffman",
+                    "user_href": "/profile/Gil-Hoffman-3"
+                }
+            ]
+        }
+    ]
+}

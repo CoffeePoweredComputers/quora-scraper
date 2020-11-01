@@ -1,0 +1,77 @@
+{
+    "title": "Is it effective to have a separate back-end and front-end? - Quora",
+    "tags": [
+        "Backend Development",
+        "Front-End Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Al Klein",
+                "href": "/profile/Al-Klein"
+            },
+            "answer_text": "Splitting the development into separate files is probably better than having the whole mess in a single file. But all files would be on the same server (or on multiple servers if you\u2019re using a Content Delivery Network). Putting server-side code on one computer and client-side code on another computer is a lot more inefficient. You need code for the back end to get the front end, to send it to the client (or code to redirect to a particular file on the \u201cfront end computer\u201d) which you don\u2019t need if all the files are served by a single server. (Even an API call or a curl call is more code, which means more time to develop and debug, and more chances of bugs.) Mixing front-end and back-end code in a single file, unless it\u2019s necessary (front- end code won\u2019t run in the server, so the back-end code has to access the database on the server side, then create the front-end code with the data that was retrieved) isn\u2019t such a good idea, but which computer your HTML, CSS and, say, PHP files sit on is a different matter. Having 2 servers doesn\u2019t mean having 2 computers (you can install 2 copies of, say, Apache, on the same computer, listening on different ports), but if you\u2019re going to install them on 2 computers, of course it doubles not only the cost of buying the computers, but of running them and maintaining them (including the off-site backups). And if you\u2019re going to use a CDN, that means doubling that cost too. ",
+            "date": "Answered July 29, 2017",
+            "views": "102",
+            "upvotes": " View 3 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Nelson Seixas",
+                    "user_href": "/profile/Nelson-Seixas-1"
+                },
+                {
+                    "user_id": "Jorge Bassig",
+                    "user_href": "/profile/Jorge-Bassig"
+                },
+                {
+                    "user_id": "Quora User",
+                    "user_href": "/profile/L-K-11"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Titus Wiguno",
+                "href": "/profile/Titus-Wiguno"
+            },
+            "answer_text": "Depends on what you mean by \u201ceffective\u201d. In terms of development and cost, it certainly is not \u201ceffective\u201d. It probably would double the cost (it\u2019s more complicated to build HTML application which connect to backend via API; and it most likely requires at least 2 different team to develop (debugging frontend application is another monster to backend application. In term of technicality, I\u2019d say it\u2019s preferable to split the development of these two. It\u2019s clearer because I could know which part is misbehaving: the data (backend), or the presentation (frontend). Also, in term of performance, I\u2019d say it\u2019s also preferable to split the development. Separating the servers would help the performance too (although it is NOT mandatory). The frontend \u201cserver\u201d will only serve static files, so the presentation/UI will arrive faster and appear more responsive to end-users. And it will ease the backend \u201cserver\u201d too by serving less data. ",
+            "date": "Answered July 23, 2017",
+            "views": "51",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Silviana Ho",
+                    "user_href": "/profile/Silviana-Ho"
+                },
+                {
+                    "user_id": "Luis Fernando Yupanqui Taco",
+                    "user_href": "/profile/Luis-Fernando-Yupanqui-Taco"
+                },
+                {
+                    "user_id": "Hengki Hengki",
+                    "user_href": "/profile/Hengki-Hengki"
+                },
+                {
+                    "user_id": "Zeb Irshad Reyaz",
+                    "user_href": "/profile/Zeb-Irshad-Reyaz"
+                },
+                {
+                    "user_id": "Annu Gulati",
+                    "user_href": "/profile/Annu-Gulati"
+                },
+                {
+                    "user_id": "Mika Kujapelto",
+                    "user_href": "/profile/Mika-Kujapelto-1"
+                },
+                {
+                    "user_id": "Suyash Patel",
+                    "user_href": "/profile/Suyash-Patel-1"
+                },
+                {
+                    "user_id": "Omar Furrer",
+                    "user_href": "/profile/Omar-Furrer"
+                }
+            ]
+        }
+    ]
+}

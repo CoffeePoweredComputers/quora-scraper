@@ -1,0 +1,48 @@
+{
+    "title": "What type of technology is an EMV card using for contactless payment? - Quora",
+    "tags": [
+        "Chip and PIN Credit/Debit Card Authentication",
+        "Radio Frequency Identification",
+        "Near Field Communication (NFC)",
+        "Online Payment Gateways and Processing",
+        "Payments"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Katherine Pensatori",
+                "href": "/profile/Katherine-Pensatori"
+            },
+            "answer_text": "Greetings! I am a product manager for UniPay Gateway at United Thinkers. Just like Carlos del Valle wrote, EMV contactless payments are based on near-field communication (NFC) technology, using radio-frequency identification (RFID) approach. It is, basically, the same as the one used in different contactless locks and passes. Advantages of EMV technology in comparison to magnetic stripe are as follows: Larger capacityMini-application allowing the card to interact with the terminalDirect communication between the card and the processor\u2019s system or payment gateway (bypassing the POS application)Point-to-point encryption functionality (not always, but often available)Some countries (such as the US) require you to input card PIN during EMV card transactions, while others countries (the UK, for example) don\u2019t. Here is a free white paper on EMV card solutions, providing more details: How To Choose The Right EMV Terminal Solution ",
+            "date": "Answered June 3, 2020",
+            "views": "291",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sandra Selezen",
+                    "user_href": "/profile/Sandra-Selezen"
+                },
+                {
+                    "user_id": "Lesya Prikhodko",
+                    "user_href": "/profile/Lesya-Prikhodko"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Carlos del Valle",
+                "href": "/profile/Carlos-del-Valle"
+            },
+            "answer_text": "They are kind of the same. RFID refers to any technology that uses RF waves to ID something. RFID HF (high frequency) uses the ISM (industrial, Scientific, Medical) band of 13.56MHz. There are three main standars in use: ISO14443A, ISO 14443B and ISO15693. NFC is trying to ease the use of that technology, by establishing data types and easier protocols that do not care much about the internal structure of the chip, but address the operational need (store medical info, banking transaction, virtual card, URL, etc). So, NFC has been built over ISO14443A/B (that\u2019s why NFC readers will read the UID of an ISO14443 \u201cMifare\u201d Card and are actually able to write/read\u2026 but those capabilities are usually non accesible). In brief, NFC uses the same frequency and parts of the previous protocol (ISO14443). EMV consortium uses NFC. ",
+            "date": "Answered January 12, 2017",
+            "views": "854",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Henry Marcy",
+                    "user_href": "/profile/Henry-Marcy"
+                }
+            ]
+        }
+    ]
+}

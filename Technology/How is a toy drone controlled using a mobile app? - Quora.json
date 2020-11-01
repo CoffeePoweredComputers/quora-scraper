@@ -1,0 +1,34 @@
+{
+    "title": "How is a toy drone controlled using a mobile app? - Quora",
+    "tags": [
+        "Android and iPhone Applications",
+        "Unmanned Aerial Vehicles and Drones",
+        "Mobile Application Development",
+        "iPhone Applications",
+        "Android Applications",
+        "Software and Applications",
+        "Technology"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kiran Vemuri",
+                "href": "/profile/Kiran-Vemuri-1"
+            },
+            "answer_text": "Let's choose a medium for the communication between your mobile app and the software running on the drone.  And for simplicity purpose, let it be WiFi. Now that your phone and the drone are connected to a WiFi network, they're just two machines connected to a network. You'll have a client-server kind of deployment. Your drone will be running the server program and your mobile app will be the client. Now that we have figured out how the software will be deployed, let's discuss how a client-server deployment works.  Your server program keeps on running. Just like your web server, or a database server , it is a process that keeps on running it is killed by a system shutdown or a user interrupt.Your client program sends appropriate messages to the server program based on the user input. These messages can be sent using http requests or REST calls. You can also have a socket open to receive messages or any other methodology that might be out there.Now your server program received a message to turn right, it interprets the message and passes a command to the hardware to do the appropriate action. Note: Am pretty sure the implementation would be similar with any medium you choose. Only the medium changes. Hope it helps!! ",
+            "date": "Answered May 16, 2015",
+            "views": "12",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Tejaswi Goel",
+                    "user_href": "/profile/Tejaswi-Goel-2"
+                },
+                {
+                    "user_id": "Ravi Teja Vemuri",
+                    "user_href": "/profile/Ravi-Teja-Vemuri"
+                }
+            ]
+        }
+    ]
+}

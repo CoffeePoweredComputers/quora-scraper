@@ -1,0 +1,69 @@
+{
+    "title": "What is a non-linear differential equation? - Quora",
+    "tags": [
+        "Differential Equations",
+        "Linear Algebra"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kieran Cavanagh",
+                "href": "/profile/Kieran-Cavanagh"
+            },
+            "answer_text": "A linear differential equation is a differential equation (an equation containing a function and its derivatives) where the function and its derivatives: appears in the equation raised to the power of 1 (or 0)has coefficients which are either functions of the independent variable (like time) or constantsHence, a nonlinear differential equation is any one that violates any of those two conditions. The defining feature of a nonlinear differential equation is roughly the fact that its solution \u201creacts back on itself.\u201d Nonlinear systems (which are governed by nonlinear DEs) involve things like fluid flow, population dynamics, certain mechanical problems, etc, which all have one thing in common: the problem changes once the solution changes. There\u2019s some sort of feedback that causes the problem you\u2019re trying to solve (like solving an ODE) to fundamentally change. With fluid flow, the effect of pulling something through water causes the water to act upon the object and change its motion, which in turn changes the motion of the water, which of course changes the motion of the object, etc. For example, a nonlinear ODE would be something like [math]3y = \\sin y - x^2 \\tag*{}[/math] due to the [math]\\sin y[/math] term\u2014 the function we\u2019re trying to solve for, [math]y[/math], is being used as the argument of another function ([math]\\sin[/math]), which is not allowed unless it\u2019s the argument of a linear function. However, the term [math]x^2[/math] is fine\u2014 here\u2019s another example, this time of a linear ODE (that may not appear linear) [math]e^{\\sin (x^2)}\\dfrac{d^3 y}{dx^3} + y \\ln x = x^3 \\tan x \\dfrac{dy}{dx} \\tag*{}[/math] It satisfies the requirements I laid out, the coefficients of the terms with [math]y[/math] and its derivatives are only functions of [math]x[/math] and those terms are only raised to the power of [math]1[/math]. ",
+            "date": "Updated June 11, 2018",
+            "views": "21",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Poojan Patel",
+                    "user_href": "/profile/Poojan-Patel-88"
+                },
+                {
+                    "user_id": "Adetomiwa Habeeb",
+                    "user_href": "/profile/Adetomiwa-Habeeb"
+                },
+                {
+                    "user_id": "Markus Garbiso",
+                    "user_href": "/profile/Markus-Garbiso-1"
+                },
+                {
+                    "user_id": "Manny Condas",
+                    "user_href": "/profile/Manny-Condas"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Dhrubajyoti Bhattacharjee",
+                "href": "/profile/Dhrubajyoti-Bhattacharjee-5"
+            },
+            "answer_text": "Generally, we know If a differential equation when expressed in the form of a polynomial involves the derivatives and dependent varible in the first power and there are no product of these, and also the coefficient of the various terms are either constants or functions of the independent variable, then it is said to be linear differential equation. Otherwise i.e., in all other cases it is a non-linear differential equation. Examples: [math]\\{f'''(x)\\}^3 -6f''(x) -4f(x) = 0;[/math] here, degree of the DE is [math]2[/math] and hence non-linear.[math]f'''(x) + \\{f'(x)\\}^2 +9f(x) = x;[/math]here, the differential coefficient [math]f^{\\prime}(x)[/math] has exponent [math]2[/math] and hence non-linear.3. [math](x^2 + y^2) \\mathrm{dx} - 2xy\\mathrm{dy} = 0;[/math] here, the exponent of dependent varible [math]y[/math] is [math]2[/math] and it involves the product of [math]y[/math] and [math]\\frac{\\mathrm{dy}}{\\mathrm{dx}}[\\text{on dividing both sides by }\\mathrm{dx}][/math] and hence non-linear.  Thank You! ",
+            "date": "Updated May 25, 2020",
+            "views": "38",
+            "upvotes": " View 5 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Hamsa Priya",
+                    "user_href": "/profile/Hamsa-Priya-47"
+                },
+                {
+                    "user_id": "Nem Shah",
+                    "user_href": "/profile/Nem-Shah"
+                },
+                {
+                    "user_id": "Srikanth Kanugula",
+                    "user_href": "/profile/Srikanth-Kanugula"
+                },
+                {
+                    "user_id": "Adetomiwa Habeeb",
+                    "user_href": "/profile/Adetomiwa-Habeeb"
+                },
+                {
+                    "user_id": "Showrav Acharjee",
+                    "user_href": "/profile/Showrav-Acharjee-1"
+                }
+            ]
+        }
+    ]
+}

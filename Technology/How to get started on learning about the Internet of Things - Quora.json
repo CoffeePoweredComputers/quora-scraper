@@ -1,0 +1,83 @@
+{
+    "title": "How to get started on learning about the Internet of Things - Quora",
+    "tags": [
+        "Getting Started",
+        "Learning About Computer Science",
+        "Internet of Things (IoT)",
+        "Computer Networking"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Akash Goswami",
+                "href": "/profile/Akash-Goswami-5"
+            },
+            "answer_text": "IoT is a jungle of technologies and it's easy to get lost. My advice to beginners in IoT is to start with a practical use case and figure out what is needed to make it happen. It will help you focus on one thing at a time. It also helps you appreciate the decision making process and reason behind multitude of protocols and devices. Let's take a concrete example of a smart plant watering device which will automatically water the plants when soil moisture is low.  Following questions need answers:- 1. How would you measure the soil moisture? Sensors like SparkFun Soil Moisture Sensor  2. Which embedded system you would use to read and process the data? We'll need a board with analog inputs. Something like Arduino Yun. If you are using Raspberry Pi, it would need an analog to digital converter. 3. How would you power the board? Solar / battery / wall outlet 4. Who will decide that moisture is low enough to start water pump?  Should we make this decision in the hardware or put this logic in a PC or a cloud based application? I would rather do it locally within the embedded board. Putting this decision to cloud will make your design completely different, but much more flexible. 5. How would you communicate to water pump ? Most likely through WiFi. Though powerline (Homeplug) is also an option. 6. How would you Control the water pump? By a WiFi relay. 7. How could you override the system and control the pump manually? We'll need reverse port forwarding from home router to arduino. Add an openvpn server for more security. There are many more factors to consider yet. 8. What if there is an impending rain forecast in next few hours, so watering the plants may not be needed at all? We would need to connect to weather APIs to get local forecast and decide whether we should water it or not. 9. What if there is no water in the tank to feed the water pump? We would need a water level sensor in the water tank as well, which will feed data to decision maker (device / cloud). And the list goes on.. Hope this well help you understand the complexity involved and go through a directed and enjoyable learning curve.   ",
+            "date": "Updated January 21, 2016",
+            "views": "33",
+            "upvotes": " View 11 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Rajesh Menon",
+                    "user_href": "/profile/Rajesh-Menon-2"
+                },
+                {
+                    "user_id": "Jorge David Baez",
+                    "user_href": "/profile/Jorge-David-Baez"
+                },
+                {
+                    "user_id": "Debaditya Barman",
+                    "user_href": "/profile/Debaditya-Barman"
+                },
+                {
+                    "user_id": "Somnath Banerjee",
+                    "user_href": "/profile/Somnath-Banerjee-62"
+                },
+                {
+                    "user_id": "Irfan",
+                    "user_href": "/profile/Irfan-53"
+                },
+                {
+                    "user_id": "Lokendra Singh Rathore",
+                    "user_href": "/profile/Lokendra-Singh-Rathore-5"
+                },
+                {
+                    "user_id": "Antony Hunzinger",
+                    "user_href": "/profile/Antony-Hunzinger"
+                },
+                {
+                    "user_id": "Bhargavi Pandey",
+                    "user_href": "/profile/Bhargavi-Pandey-2"
+                },
+                {
+                    "user_id": "Saroj Lade",
+                    "user_href": "/profile/Saroj-Lade"
+                },
+                {
+                    "user_id": "Sandy",
+                    "user_href": "/profile/Sandy-751"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Prasad Chaubal",
+                "href": "/profile/Prasad-Chaubal"
+            },
+            "answer_text": "Internet of Things (IoT) is a newcomputing concept where each and every physical object, live and dead, has uniqueidentifier and connected with each other without any human intervention,turning physical world in a huge information system. The term Internet of Things wasfirst coined by Kevin Aston in 1999 in a presentation to Proctor and Gamble, \"If we had computers that knew everything there was to know aboutthings - using data they gathered without any help from us - we would be ableto track and count everything, and greatly reduce waste, loss and cost. Wewould know when things needed replacing, repairing or recalling, and whetherthey were fresh or past their best. We need to empower computers with their own means of gatheringinformation, so they can see, hear and smell the world for themselves, in allits random glory.\u201d In computing world nearly 50Petabytes of data so far generated is through human intervention. With latestdevelopment in technology, convergences of wireless technology and ubiquitousand cheaply available sensors have made things smart in terms of datageneration, processing and data exchange. It\u2019s not far away that every objectwill be connected to internet. Gartner estimates that by 2020 internetconnected devices number would be 26 billion, excluding desktops, tablets andsmartphones. And revenue generated by them would be exceeding $300 billion. For e.g. today in car driver getsall kinds of indicators like fuel level, tire pressure, oil level etc\u2026directly on dashboard panel. It meanscar itself tells driver when it requires servicing and accordingly driver cantake action. In fact in future it might send automated email to authorizedservice station detailing all reports so that without any manual call car canbe serviced. One step ahead driver lesscar is another example where once destination is fed, it calculates route foryou considering meeting schedule from your calendar, traffic condition, tollroute etc\u2026 Smart refrigerators let you write grocery list on screen and syncsit with your phone. These are the few examples to show how IOT isrevolutionizing the world in coming years. Santander city in Spain has 12,000sensors monitoring everything from air pollution to parking lots. ",
+            "date": "Answered May 24, 2016",
+            "views": "630",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "RUMA TEOTIA",
+                    "user_href": "/profile/RUMA-TEOTIA-1"
+                },
+                {
+                    "user_id": "Siddhesh Thakur",
+                    "user_href": "/profile/Siddhesh-Thakur-5"
+                }
+            ]
+        }
+    ]
+}

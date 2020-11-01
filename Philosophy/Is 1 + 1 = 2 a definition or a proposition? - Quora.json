@@ -1,0 +1,36 @@
+{
+    "title": "Is 1 + 1 = 2 a definition or a proposition? - Quora",
+    "tags": [],
+    "response": [
+        {
+            "author_info": {
+                "name": "Tikhon Jelvis",
+                "href": "/profile/Tikhon-Jelvis"
+            },
+            "answer_text": "A proposition is just a statement in a formal system. So 1 + 1 = 2 is definitely a proposition. And, if you're using a reasonable system, it's a proposition you can prove. Being a definition and a proposition is not mutually exclusive. Even things like \"true\" or \"false\" are propositions. Depending on how the system you're using is defined, 1 + 1 = 2 may or may not be part of how the system is defined. So it could be a definition, or it could not. In some sense, this is completely arbitrary: you can often have multiple isomorphic systems which are defined in different terms\u2014what's a definition in one is derived in another. One nice way to define numbers and addition is in terms of \"Peano arithmetic\". The idea is very straightforward: we have Zero and a \"successor\" operation Succ. So 1 is Succ Zero and 2 is Succ (Succ Zero) and so on. In this system, you would usually define + recursively: n + Zero = n\u00a0n + (Succ m) = Succ n + m\u00a0(As a neat note, the above is actually valid Haskell code if you define the natural number type and don't mind shadowing +.) In this case, 1 + 1 = 2 is not really part of the definition: it emerges from the recursive definition of +. On the other hand, nothing stops you from defining some other system where 1 + 1 is part of the basic definition. ",
+            "date": "Answered February 27, 2014",
+            "views": "833",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Carl Christian Barfield",
+                    "user_href": "/profile/Carl-Christian-Barfield"
+                },
+                {
+                    "user_id": "Sameer Gupta",
+                    "user_href": "/profile/Sameer-Gupta"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Titus Tid",
+                "href": "/profile/Titus-Tid"
+            },
+            "answer_text": "The proof was written down in the Principia Mathematica in 1910, 1912 and 1913 by Alfred North Whitehead and Bertrand Russell. So because it is a proof the \u201cassumption\u201d [math]1+1=2[/math] is not a definition. Because it has been proven you can use this as an axiom or basic assumption for other proofs. \u201cPM has long been known for its typographical complexity. Famously, several hundred pages are required in PM to prove the validity of the proposition 1+1=2.\u201d[1] Bits and pieces of the proof can be found here: Prove that 1+1=2Why does [math]1+1=2[/math]?http://mathforum.org/library/drmath/view/51551.htmlBeside this the proof of can be done \u201cquite easily\u201d using the Peano Axioms. How you can use the Penao Axioms you\u2019ll find in Ed Smiley's answer to Why does 1+1=2? And in Dan Christensen's answer to Why does one need to prove that 1+1=2? And more about the defining part\u2026 in Buddha Buck's answer to What is there to prove about 1 + 1 = 2? Footnotes[1] Principia Mathematica - Wikipedia",
+            "date": "Answered December 6, 2016",
+            "views": "162",
+            "upvotes": "0"
+        }
+    ]
+}

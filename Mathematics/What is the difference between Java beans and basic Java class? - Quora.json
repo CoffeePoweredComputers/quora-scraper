@@ -1,0 +1,101 @@
+{
+    "title": "What is the difference between Java beans and basic Java class? - Quora",
+    "tags": [
+        "Feature Comparison",
+        "Java Bean",
+        "Programming Language Comparisons",
+        "Comparisons",
+        "Java (programming language)",
+        "Programming Languages"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sushma",
+                "href": "/profile/Sushma-55"
+            },
+            "answer_text": "A JavaBean is basically a Java class which satisfies a few simple rules (it must have a public no-arg constructor, no public instance variables, properties have getters and setters; actually, you can get around the last rule by supplying a BeanInfo object for your bean). JavaBeans were originally conceived for graphical application builder tools, but that emphasis has shifted considerably and they're now used almost everywhere. A Bean can have associated support classes: a BeanInfo class providing information about the bean, its properties and its events, and also property editors and a graphical customizer. A Bean is a Java class, but a Java class does not have to be a bean. In other words a bean in a specific Java class and has rules that have to be followed before you have a bean. ",
+            "date": "Answered April 29, 2016",
+            "views": "95",
+            "upvotes": " View 9 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Vishnu Gopal",
+                    "user_href": "/profile/Vishnu-Gopal-74"
+                },
+                {
+                    "user_id": "Karthikeyan Gunasekar",
+                    "user_href": "/profile/Karthikeyan-Gunasekar-3"
+                },
+                {
+                    "user_id": "Kevin Gresmer",
+                    "user_href": "/profile/Kevin-Gresmer"
+                },
+                {
+                    "user_id": "Damith Hathurusinghe",
+                    "user_href": "/profile/Damith-Hathurusinghe"
+                },
+                {
+                    "user_id": "Daksha P Sutar",
+                    "user_href": "/profile/Daksha-P-Sutar"
+                },
+                {
+                    "user_id": "Ghadah Fakhry",
+                    "user_href": "/profile/Ghadah-Fakhry"
+                },
+                {
+                    "user_id": "Mihai Godeanu",
+                    "user_href": "/profile/Mihai-Godeanu"
+                },
+                {
+                    "user_id": "Maya Ilias",
+                    "user_href": "/profile/Maya-Ilias"
+                },
+                {
+                    "user_id": "Vivek Sasikumar",
+                    "user_href": "/profile/Vivek-Sasikumar-3"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Srikanth Pasula",
+                "href": "/profile/Srikanth-Pasula-1"
+            },
+            "answer_text": "JavaBeans are classes that encapsulate many objects into a single object (the bean). They are serializable, have a zero-argument constructor, and allow access to properties using getter and setter methods. A class is nothing but a blueprint or a template for creating different objects which defines its properties and behaviors. Java class objects exhibit the properties and behaviors defined by its class. A class can contain fields and methods to describe the behavior of an object. ",
+            "date": "Answered April 30, 2016",
+            "views": "129",
+            "upvotes": " View 7 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Nishu Chauhan",
+                    "user_href": "/profile/Nishu-Chauhan-43"
+                },
+                {
+                    "user_id": "Bidur Khanal",
+                    "user_href": "/profile/Bidur-Khanal-5"
+                },
+                {
+                    "user_id": "Isaac Caleb",
+                    "user_href": "/profile/Isaac-Caleb-3"
+                },
+                {
+                    "user_id": "Shybin V Chacko",
+                    "user_href": "/profile/Shybin-V-Chacko"
+                },
+                {
+                    "user_id": "Shravan Kumar",
+                    "user_href": "/profile/Shravan-Kumar-115"
+                },
+                {
+                    "user_id": "Barbara Wright",
+                    "user_href": "/profile/Barbara-Wright-41"
+                },
+                {
+                    "user_id": "Neel Parikh",
+                    "user_href": "/profile/Neel-Parikh-23"
+                }
+            ]
+        }
+    ]
+}

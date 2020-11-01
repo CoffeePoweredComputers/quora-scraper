@@ -1,0 +1,30 @@
+{
+    "title": "What is the program to find the complement of two sets? - Quora",
+    "tags": [
+        "Binary (number system)",
+        "Theoretical Computer Science",
+        "Computer Science"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Enzo Santos",
+                "href": "/profile/Enzo-Santos-9"
+            },
+            "answer_text": "A = [1, 2, 3]\u00a0B = [2, 3, 4]\u00a0C = []\u00a0\u00a0for i in range(1,len(B)):\u00a0    for j in range(1,len(A)):\u00a0        if(A[j] == B[i]):\u00a0            x = x + 1\u00a0    if(x == 0):\u00a0        C.append(B[i])\u00a0    else:\u00a0        x = 0\u00a0Definition of complement: \u201cThe relative complement of A with respect to a set B, also termed the difference of sets A and B, written B \u2216 A, is the set of elements in B but not in A.\u201d The code above is an example in Python. First you have two sets, A and B, and a third set, C. In this set, there\u2019ll be the complement of A in respect to B. For each element in the set B, you compare for each element in the set A. If two elements of each set are equal, the counter x increases. If x = 0, it means that this element of set B is not equal to none element of set A. So this element is added to set C. ",
+            "date": "Answered August 5, 2018",
+            "views": "537",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Chris Reid",
+                "href": "/profile/Chris-Reid-7"
+            },
+            "answer_text": "Remove every element in set A from set B, if it is in set B of course.The result will be the complement of A with respect to B. std::set<int> A { 1, 3, 5, 7, 9};\u00a0std::set<int> B { 1, 2, 3, 4, 5, 6, 7, 8, 9};\u00a0\u00a0\u00a0for( int v :  A)\u00a0  {\u00a0     auto B_it = B.find(v); \u00a0\u00a0     if (B_it != B.end() ) B.erase(B_it);          \u00a0}\u00a0\u00a0\u00a0for( int v :  B)\u00a0    std::cout <<  B << \"\\t\" ;\u00a0    std::cout <<  \"\\n\" ;\u00a0\u00a02\t4\t6\t8\u00a0",
+            "date": "Answered August 1, 2020",
+            "views": "182",
+            "upvotes": "0"
+        }
+    ]
+}

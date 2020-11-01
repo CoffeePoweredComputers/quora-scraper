@@ -1,0 +1,97 @@
+{
+    "title": "What's the partial derivative of f (x, y) = log to the base x (y)? - Quora",
+    "tags": [
+        "Partial Derivatives (mathematics)",
+        "AP Calculus AB",
+        "AP Calculus BC",
+        "Derivatives and Differentiation (mathematics)",
+        "Differential Equations",
+        "Calculus"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Preetham Thelluri",
+                "href": "/profile/Preetham-Thelluri"
+            },
+            "answer_text": "A partial derivative of a function is nothing but its derivative with respect to specific variables. Since the question has not mentioned anything specific, I am just going to differentiate it with respect to [math]x[/math] and [math]y[/math] separately. [math]f(x,y) = \\displaystyle\\frac{\\ln y}{\\ln x}[/math] I skipped a step here, as I just applied the change of base formula to the parent function in the question. Now, let\u2019s differentiate with respect to [math]y[/math]: [math]\\dfrac{\\partial f(x,y)}{\\partial y} = \\dfrac{\\partial \\displaystyle\\frac{\\ln y}{\\ln x}}{\\partial y}[/math] Rule #1 in partial differentiation is to check the variable you are differentiating with respect to and shove out whatever doesn\u2019t contain your variable as a constant. [math]\\dfrac{\\partial \\displaystyle\\frac{\\ln y}{\\ln x}}{\\partial y} = \\displaystyle\\frac{(\\ln y)'}{\\ln x}[/math] Since the [math]\\displaystyle\\frac{1}{\\ln x}[/math] doesn\u2019t have a [math]y[/math] term, I could shove it out of my function as a constant. [math]\\displaystyle\\frac{(\\ln y)'}{\\ln x} = \\displaystyle\\frac{1}{y \\cdot\\ \\ln x}[/math] Therefore, [math]\\dfrac{\\partial f(x,y)}{\\partial y} = \\displaystyle\\frac{1}{y\\cdot\\ \\ln x}[/math] Now, let\u2019s differentiate with respect to [math]x[/math]: [math]\\dfrac{\\partial f(x,y)}{\\partial x} = \\displaystyle\\dfrac{\\partial \\displaystyle\\frac{\\ln y}{\\ln x}}{\\partial x}[/math] Like I mentioned earlier, the [math]\\ln y[/math] term can be shoved out of the function as a constant, since it does not have an [math]x[/math] term. [math]\\dfrac{\\partial \\displaystyle\\frac{\\ln y}{\\ln x}}{\\partial x} = \\ln y \\cdot\\ \\displaystyle\\dfrac{\\partial \\displaystyle\\frac{1}{\\ln x}}{\\partial x}[/math] Apply the chain rule to find the derivative of [math]\\displaystyle\\frac{1}{\\ln x}[/math] [math]\\ln y \\cdot\\ \\dfrac{\\partial \\displaystyle\\frac{1}{\\ln x}}{\\partial x} = \\displaystyle\\frac{-\\ln y}{x \\cdot\\ (\\ln(x))^{2}}[/math] Hope this helped! ",
+            "date": "Answered January 4, 2020",
+            "views": "374",
+            "upvotes": " View 8 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Sailaja Reddy",
+                    "user_href": "/profile/Sailaja-Reddy-137"
+                },
+                {
+                    "user_id": "Saipradhyum Thelluri",
+                    "user_href": "/profile/Saipradhyum-Thelluri"
+                },
+                {
+                    "user_id": "Muni Sekhar Reddy",
+                    "user_href": "/profile/Muni-Sekhar-Reddy"
+                },
+                {
+                    "user_id": "Bad Son",
+                    "user_href": "/profile/Bad-Son"
+                },
+                {
+                    "user_id": "Giri The Grinder",
+                    "user_href": "/profile/Giri-The-Grinder"
+                },
+                {
+                    "user_id": "Harsh Dwivedi",
+                    "user_href": "/profile/Harsh-Dwivedi-197"
+                },
+                {
+                    "user_id": "Duraideivamani Sankararajan",
+                    "user_href": "/profile/Duraideivamani-Sankararajan"
+                },
+                {
+                    "user_id": "Lucas De",
+                    "user_href": "/profile/Lucas-De"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Andrew Droffner",
+                "href": "/profile/Andrew-Droffner"
+            },
+            "answer_text": "Find the partial derivative(s) of  with respect to either or . The question failed to ask which partial derivative(s) to take, and both  and  will be taken.    ",
+            "date": "Answered October 18, 2019",
+            "views": "33",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Ajesh K C",
+                "href": "/profile/Ajesh-K-C-1"
+            },
+            "answer_text": " ",
+            "date": "Answered October 18, 2019",
+            "views": "49",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Enrico Gregorio",
+                    "user_href": "/profile/Enrico-Gregorio"
+                },
+                {
+                    "user_id": "Andrew Droffner",
+                    "user_href": "/profile/Andrew-Droffner"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vishal Kumar",
+                "href": "/profile/Vishal-Kumar-5402"
+            },
+            "answer_text": " ",
+            "date": "Answered October 18, 2019",
+            "views": "21",
+            "upvotes": "0"
+        }
+    ]
+}

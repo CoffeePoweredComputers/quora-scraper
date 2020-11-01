@@ -1,0 +1,60 @@
+{
+    "title": "In triangle ABC, where AC = 2 and BC = 1, why is 30 degrees the largest angle A can be? - Quora",
+    "tags": [
+        "Triangles in Geometry"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Kevin Samuels",
+                "href": "/profile/Kevin-Samuels-14"
+            },
+            "answer_text": "There have been geometric answers already, but here is how to power through the calculus. The plan: let [math]x[/math] be the missing side of the triangle. You can see that [math]1\\leq x\\leq 3[/math]. Get the missing angle [math]A[/math] as a function of [math]x[/math], and then maximize the function on this interval. Step 1: By the Law of Cosines, [math]1^2=2^2+x^2-4x\\cos(A)[/math] Step 2: Solve for [math]\\cos(A)[/math]: [math]1=4+x^2-4x\\cos(A)[/math] [math]\\frac{x^2+3}{4x}=\\cos(A)[/math] Step 3: We want to maximize [math]A[/math]. Since [math]\\cos(A)[/math] is a decreasing function on [math][0,180][/math], which is the set of possible angles in a triangle, this is the same as minimizing [math]\\cos(A)[/math]. So find the minimum. Find the derivative: [math]\\frac{d}{dx}\\frac{x^2+3}{4x}=\\frac{4x(2x)-4(x^2+3)}{16x^2}[/math] Set to zero (same as setting the numerator to zero): [math]8x^2-4x^2-12=0[/math] [math]x=\\sqrt{3}[/math] This value of [math]x[/math] lies in the desired interval. (The negative root does not.) I will not go through the full check that this is in fact the minimum. Now to find [math]A[/math], use the function found earlier: [math]\\frac{x^2+3}{4x}=\\cos(A)[/math] Plug in [math]x=\\sqrt{3}[/math]: [math]\\frac{6}{4\\sqrt{3}}=\\cos(A)[/math] [math]\\frac{\\sqrt{3}}{2}=\\cos(A)[/math] [math]A=30[/math] and we are done. ",
+            "date": "Answered April 17, 2018",
+            "views": "568",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jonathan Roberts",
+                "href": "/profile/Jonathan-Roberts-13"
+            },
+            "answer_text": "The largest angle is formed when the angle ACB is 90 degrees. This gives angle CAB 30 degrees. If you draw a point C then get a compass and draw two circles (A, B) with C the centre of radius 2 and 1 respectively. Then try to make a triangle you will see this is the case. ",
+            "date": "Answered April 17, 2018",
+            "views": "105",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Jos van Kan",
+                "href": "/profile/Jos-van-Kan"
+            },
+            "answer_text": "Draw a circle with radius 1 and center C. The largest angle A can obtain is where AB is tangent to the circle. Then ABC is a right angle and CAB is 30 degrees. ",
+            "date": "Answered April 17, 2018",
+            "views": "397",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Haresh Sagar",
+                    "user_href": "/profile/Haresh-Sagar"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Jesus Sanchez",
+                "href": "/profile/Jesus-Sanchez-447"
+            },
+            "answer_text": "if AC > BC then maximum A when B=90\u00b0, using sine law A=30\u00b0. TrianCal   ",
+            "date": "Answered April 17, 2018",
+            "views": "962",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Shashvat Singh",
+                    "user_href": "/profile/Shashvat-Singh-12"
+                }
+            ]
+        }
+    ]
+}

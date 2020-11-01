@@ -1,0 +1,21 @@
+{
+    "title": "How to write a PixiJS plugin - Quora",
+    "tags": [
+        "Pixi.js",
+        "Node.js",
+        "JavaScript (programming language)",
+        "Web Development"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Sukant Kumar",
+                "href": "/profile/Sukant-Kumar-17"
+            },
+            "answer_text": "The PixiJS Renderer API exposes Renderer.registerPlugin. Your plugin\u2019s constructor should accept one argument - the renderer hosting it. import * as PIXI from 'pixi.js';\u00a0 \u00a0class ExamplePlugin\u00a0{\u00a0\tconstructor(renderer: PIXI.Renderer)\u00a0\t{\u00a0\t\t// TODO:\u00a0\t}\u00a0 \u00a0\tfoo(): void\u00a0\t{\u00a0\t\t// Some API method\u00a0\t}\u00a0}\u00a0 \u00a0PIXI.Renderer.registerPlugin(\"example\", ExamplePlugin);\u00a0During renderer initialization, this example plugin will be instantiated and added to the renderer.plugins map. You can access it as follows: renderer.plugins.example.foo();\u00a0Some additional points to consider: Plugin Initialization: Your plugin is instantiated after all renderer systems have been setup but before the WebGL context is initialized. This means you cannot access renderer.gl in your constructor.Name Conflicts: Make sure your plugin\u2019s name doesn\u2019t conflict with other built-in plugins (\u201caccessibility\u201d, \u201cbatch\u201d, \u201cextract\u201d, \u201cinteraction\u201d, \u201cparticle\u201d, \u201cprepare\u201d, and \u201ctilingSprite\u201d are included in the standard pixi.js build)!",
+            "date": "Answered April 9, 2020",
+            "views": "149",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "title": "How to tell what model my Raspberry Pi 4 is - Quora",
+    "tags": [
+        "Raspberry Pi",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Robert Tonkavich",
+                "href": "/profile/Robert-Tonkavich"
+            },
+            "answer_text": "Hello Efrayim. I hope your day is going good. One way to find out the hardware configuration is to use the \u201clshw\u201d command and output an HTML file for viewing in a browser window. I can walk though a few of the details as that Raspberry Pi does not come with \u201clshw\u201d installed. So. From a terminal window. You would type at a command prompt: lshw If the return prints out something like the following \u201cbash: lshw: command not found\u201d it means that lshw is not installed. So simply type at the next command prompt sudo apt install lshw . Don\u2019t include the period. All lower case. You will be asked for your password so have that available. After a few moments lshw will load. You can then type lshw - -help you would type lshw-space-dash-dashhelp without any spaces except for the one right after lshw. This will bring up a description of lshw, you can also type man lshw for a more detailed view of what lshw can do. The next step to see what makes your Raspberry work at the next command prompt type: sudo lshw and it will output to the screen a complete listing of your Raspberry Pi including model number and memory. Memory is after the cpu listing. You can print out a file in HTML format that you can read it in a browser like Chrome or Firefox. At a command prompt in terminal type the following: sudo lshw -html > lshw-output.html . Make sure there is space before and after the \u201c>\u201d i/o direction sysmbol. Then type ls (Lower case \u201cL\u201d and Lower Case \u201cS\u201d) at a prompt. the output should show you a New file called lshw-output.html. You can then open that in Chrome or Firefox From man lshw you will see that lshw - list hardware. Make sense. It is a good file to have as it can help you diagnose connectivity, sound, and video problems. I really enjoyed helping you tonight. I hope you find my response to be helpful. Sincerely Robert Tonkavich Love my RPi\u2019s ",
+            "date": "Answered June 5, 2020",
+            "views": "68",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Efrayim Bulka",
+                    "user_href": "/profile/Efrayim-Bulka-1"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Afonso Klein",
+                "href": "/profile/Afonso-Klein"
+            },
+            "answer_text": "You need to check its revision code, using the command \u201ccat /proc/cpuinfo\u201d and look at this table: Raspberry Pi revision codes ",
+            "date": "Answered June 7, 2020",
+            "views": "24",
+            "upvotes": "0"
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{
+    "title": "How to change the base URL in TYPO3 - Quora",
+    "tags": [
+        "TYPO3",
+        "Uniform Resource Locators (URLs)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Jochen Weiland",
+                "href": "/profile/Jochen-Weiland"
+            },
+            "answer_text": "Log into the TYPO3 backend, select \u201cTemplate\u201d from the left menu and then click on the \u201croot\u201d page of your website. If not already active, select the \u201cInfo/Edit\u201d function from the drop down menu on the top of the right pane. If there is more than one template on that page, you need to select the \u201cmain template\u201d, if there is only one template, the selector box will not show. Click on the \u201cSetup\u201d link and scroll to the very bottom of the edit window. Enter this as the last line: config.baseURL = http://www.yourdomain.com If you have an SSL certificate for the domain, replace http with https. Save the setting (save icon on the top of the right pane) and your done. RegardsJochen ",
+            "date": "Answered August 21, 2016",
+            "views": "106",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Peter Gallagher",
+                    "user_href": "/profile/Peter-Gallagher-88"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Ravi",
+                "href": "/profile/Ravi-703"
+            },
+            "answer_text": "you can change it by the just replacing the baseURL to new baseURL as example below config.baseUrl = http://www.myexample,com/ this will you fine in the configuration file or in root setup of the template. ",
+            "date": "Answered September 13, 2016",
+            "views": "31",
+            "upvotes": "0"
+        }
+    ]
+}

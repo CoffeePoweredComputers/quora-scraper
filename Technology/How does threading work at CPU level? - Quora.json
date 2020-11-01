@@ -1,0 +1,85 @@
+{
+    "title": "How does threading work at CPU level? - Quora",
+    "tags": [
+        "Threading (computer science)",
+        "Central Processing Units"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Joe Zbiciak",
+                "href": "/profile/Joe-Zbiciak"
+            },
+            "answer_text": "It depends on what you mean by threading, and it also depends on the CPU.   I'll assume for the moment that you mean hardware threads (logical processors) sharing a single physical processor. I will try to describe what happens on a typical desktop CPU that offers multiple hardware threads. At a high level, hardware multithreading makes a single physical processor look like more than one processor.  I'll call these logical processors:  As far as the operating system and user are concerned, each hardware thread more or less looks like an additional processor, despite the fact that the threads share many of the same physical resources. For any given processor, there is a programmer's model of the processor.  This model describes the available registers, instructions, operating modes, and so on that are available to the programmer.  For example, the 32-bit x86 processor programming model includes registers such as EAX, EBX, ECX, EDX, ESI, EDI, EBP, ESP, EIP, various segment registers and control registers and so on. On a modern out-of-order, dynamically scheduled processor, these register names don't always refer to specific hardware structures.  Rather, the hardware contains a register renaming engine.  This block is responsible for mapping the register names in the original code (EAX, EBX, etc.) to physical registers.  The actual number of physical registers is much, much larger than the set exposed in the programmer's model.  This renaming step allows the processor to speculatively issue many instructions in parallel, using the original register names as a way of connecting the results from one instruction to another, without caring too much about the order in which they actually execute. Register renaming resolves false dependencies between instructions.  For example, suppose you had the following instruction sequence:     movl (%esi), %eax\u00a0    incl %eax\u00a0    movl %eax, (%esi)\u00a0    movl (%edi), %eax\u00a0    incl %eax\u00a0    movl %eax, (%edi)\u00a0Ignore for a moment whether that code is useful or even optimal, that's not the point.  This code reads a value at the location pointed to by %esi, increments it, and then stores it back.  It then does the same for a value at the location pointed to by %edi.  (This example uses GAS syntax: X86 Assembly/GAS Syntax  ) An out-of-order processor will determine that the EAX used for the first increment has no dependencies with respect to the EAX used for the second increment.  Under the hood, the first version of EAX (that holds the value at ESI) might go to register 40, and the second version of EAX (that holds the value at EDI) might go to register 50.  The increment on the value pointed to by EDI might happen first, if that value becomes available first.  That can happen because the processor's register renaming engine gave different names to both instances of EAX.   (Note: I'm simplifying quite a bit here.  But the general point is true.) Once you have this abstraction layer between the programmer's model of the hardware and the actual hardware, hardware multithreading becomes a straightforward extension.  If you have enough hardware resources (including renaming resources), you can actually provide two or more logical processors over the same physical hardware.  The processor just needs to keep track of the mapping of each logical processor's registers and related state to the actual physical state.  Two or more logical processors can share the same physical hardware; the hardware just tags which logical processor each operation belongs to. Now, again I'll state that this is a simplification.  There are some practical concerns.  But to a first order, that's what a modern x86 processor does when it allows multiple hardware threads to share the same physical processor. There are other multithreading techniques.  For example, Symmetric Multithreading (SMT) on a simpler in-order pipeline might just time-multiplex the same hardware across multiple threads.  Each thread has dedicated registers, and the pipeline alternates between the threads on a strict, fixed schedule.  There's no register renaming or other fancy stuff; rather, it's a simple rotation through the threads.  I believe Qualcomm's Hexagon processors work this way; however, I can't say for sure as I haven't studied them closely. Now, if you just mean software multithreading:  That is purely an operating system construct.  Software multithreading takes a monolithic program and breaks it up into multiple software threads.  The operating system then takes care of context switching between these multiple software threads, so that each thread gets a chance to execute on the CPU.  Context switching here means that the operating system takes care of saving/restoring registers and state in memory, etc. So... I realize my answer is still fairly high level (with the attendant inaccuracies that come from a high level view).  If this description is inadequate, what aspects/details are you interested in? ",
+            "date": "Answered December 24, 2015",
+            "views": "35",
+            "upvotes": " View 16 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "H\u00f4\u0300ng Mi\u00ean Nguy\u00ea\u0303n Thi\u0323",
+                    "user_href": "/profile/H\u00f4\u0300ng-Mi\u00ean-Nguy\u00ea\u0303n-Thi\u0323"
+                },
+                {
+                    "user_id": "Atik Ullah",
+                    "user_href": "/profile/Atik-Ullah-4"
+                },
+                {
+                    "user_id": "Gal Bezalel",
+                    "user_href": "/profile/Gal-Bezalel"
+                },
+                {
+                    "user_id": "Dern Hano",
+                    "user_href": "/profile/Dern-Hano"
+                },
+                {
+                    "user_id": "Alexey Timoshenko",
+                    "user_href": "/profile/Alexey-Timoshenko"
+                },
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "Gary Sanford",
+                    "user_href": "/profile/Gary-Sanford-2"
+                },
+                {
+                    "user_id": "Natechawin Suthison",
+                    "user_href": "/profile/Natechawin-Suthison"
+                },
+                {
+                    "user_id": "Lei Kou",
+                    "user_href": "/profile/Lei-Kou"
+                },
+                {
+                    "user_id": "Sudhanshu Kumar",
+                    "user_href": "/profile/Sudhanshu-Kumar-38"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Piyush Michael",
+                "href": "/profile/Piyush-Michael"
+            },
+            "answer_text": "If you're asking how the CPU manages threads and processes, I would have to tell youIt doesn't. Running multiple programs or processes or threads is not managed by the CPU but by the OS kernel. It has procedures to set timed (or untimed) interrupts and pass the control to another process/program/thread. When the interrupt is raised, the control is automatically passed to the kernel which then decides what to do next, be it passing control to another program or to run inbuilt procedures. To the CPU it looks exactly like calling a function - change context. By saving the return address and then jumping to another address to proceed execution. It doesn't differentiate between function calls, process swaps and all. I'm not aware if newer instruction sets do, but at the most basic level this is the case. The CPU just goes on executing the next instruction it gets. But if you're asking how CPUs manage to run multiple threads in a single core (called multi-threading or Hyperhtreading for Intel) then refer to this answer:Piyush Michael's answer to What is physically different between a hyperthreaded CPU and an otherwise identical non-hyperthreaded CPU? ",
+            "date": "Answered January 22, 2016",
+            "views": "11",
+            "upvotes": " View 3 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mark Hahn",
+                    "user_href": "/profile/Mark-Hahn-2"
+                },
+                {
+                    "user_id": "Parul Michael",
+                    "user_href": "/profile/Parul-Michael"
+                },
+                {
+                    "user_id": "Ricardo Nabinger Sanchez",
+                    "user_href": "/profile/Ricardo-Nabinger-Sanchez"
+                }
+            ]
+        }
+    ]
+}

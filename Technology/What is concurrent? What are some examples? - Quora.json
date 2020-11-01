@@ -1,0 +1,56 @@
+{
+    "title": "What is concurrent? What are some examples? - Quora",
+    "tags": [
+        "Concurrency (computer science)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Rich Altmaier",
+                "href": "/profile/Rich-Altmaier"
+            },
+            "answer_text": "This is a fairly tricky concept. Let me add some examples drawn from real activity, then relate that to programming. Suppose your tasking is to clear used dishes from a table to a sink, and wash the dishes and put them in a cabinet. Two tasks with different steps in each task. One solution is: move all the dishes from table to sink, stacking them in the sink. Then wash all the dishes one by one and place in the cabinet. *this is a serial solution*. Consider writing code for this where first there is the loop to move dishes from table to sink, followed by the loop to process dish by dish in cleaning. Perhaps the sink space is too small to hold all the dishes so instead solution 2 is: move a few dishes to the sink, then switch and wash those dishes into the cabinet, then switch back to moving dishes from table to sink, etc, until the task is done. *this is a concurrent solution*. The two algorithms are *not* coded one after the other! How do you code this algorithm? Concurrent code is a method in the language of specifying a \u201cthread of execution\u201d to start work on the first task, and immediately specify a second thread of execution to start work on the second task, together with some waiting method where the cleaning thread has to wait if there are no dishes in the sink, and the clearing task has to wait if the sink is full. NOTICE: still only one thing at a time is being performed, but the algorithms are interleaved with the waiting scheme allows the timing to be uncertain in how long either task fragment takes, yet there are no illegal states such as cleaning when there are really no dishes in the sink! Parallel systems, as mentioned by others, means there are *two people* performing the dish task! One clearing and one cleaning, and a more delicate locking between them so one can place dishes in the sink even while the second is busy washing. *this is a parallel solution*. The system has two CPUs or cores, and each executes their algorithm at the same time. Now even trickier locking is required. This case goes beyond your question! ",
+            "date": "Answered June 14, 2018",
+            "views": "13",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Saurabh Dwivedy",
+                    "user_href": "/profile/Saurabh-Dwivedy"
+                },
+                {
+                    "user_id": "Kelson Olson",
+                    "user_href": "/profile/Kelson-Olson"
+                },
+                {
+                    "user_id": "Jack Menendez",
+                    "user_href": "/profile/Jack-Menendez"
+                },
+                {
+                    "user_id": "Muller van As",
+                    "user_href": "/profile/Muller-van-As"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eric des Courtis",
+                "href": "/profile/Eric-des-Courtis-1"
+            },
+            "answer_text": "It simply means two or more activities progress at the same time. However, keep in mind that concurrent does not mean parallel. Parallel means they also execute at the same time. All parallel workloads are concurrent but not all concurrent workloads are parallel. A good example of something concurrent but not parallel is a TCP server implemented with the select() or epoll() system call and no threads (giving the illusion of executing at the same time by quickly switching between callbacks executing a little bit each time there is new data). For example Node.js is concurrent but not parallel by design because it multiplexes its activities on a single thread (with no automatic way to migrate work to a different cores). The Elixir language is parallel by design because it automatically distribute work across multiple cores. ",
+            "date": "Answered June 14, 2018",
+            "views": "795",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Mantas Ptakauskas",
+                    "user_href": "/profile/Mantas-Ptakauskas"
+                },
+                {
+                    "user_id": "Abuchu Bekele",
+                    "user_href": "/profile/Abuchu-Bekele-1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+{
+    "title": "What kind of diagnostic tools do Apple techs use? - Quora",
+    "tags": [
+        "Tools",
+        "Classification Question",
+        "Apple (company)"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Michael Vogel",
+                "href": "/profile/Michael-Vogel-5"
+            },
+            "answer_text": "Chuck Rogers listed a lot of great tools that technicians use that are also available to the average person. There are some tools that Apple Techs use that are exclusive to them as well.   Apple Service Toolkit (AST): AST contains multiple diagnostic tools, including Mac Resource Inspector (MRI) which tests all the internal components to make sure they are present and powering on. It also contains deep tests for checking S.M.A.R.T. status on a hard drive, battery diagnostic tool, multiple hardware stress testing tools that replaced Apple Service Diagnostic (ASD), display tests, and more. It also communicates with Apple, sending the diagnostic reports back to Apple and attaching them to the computer's serial number so they can be noted later. AST started off rocky but is not an indispensable tool for any Apple Technician and now includes support for iOS as well. Bootable Diagnostic Drive: Most technicians carry around a bootable diagnostic drive, usually on a flash drive, that contains an OS and many of the tools, both third party and native, for testing a computer that is having trouble. LCDTest: This is a simple test that displays various colors on your screen, identifying problems and making it clear if you have any dead pixels. Rember: A memory testing tool that tests the various blocks on the memory sticks, identifying problems directly related to memory. smcFanControl: A manual fan control program that allows you to control the speed of the fans. Essential for identifying fan failures, especially if there are multiple fans. Smart Utility: Even though it's functionality has been brought into AST and other programs as well, this handy little utility that checks the S.M.A.R.T. status of any hard drive is indispensable. MaxCPU: A simple utility that is a script for maximizing the CPU and graphics of the computer. It launches various CPU and graphically intensive programs and terminal commands that completely max out the system. It makes the machine basically unusable but when a problem only occurs when stress is put on the machine it is indispensable. Intuition: A lot of times people can explain a problem and I have no idea what the solution is. I pick up the computer and 30 seconds later know the solution.",
+            "date": "Answered August 11, 2015",
+            "views": "22",
+            "upvotes": " View 2 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Rodolfo Melchior",
+                    "user_href": "/profile/Rodolfo-Melchior"
+                },
+                {
+                    "user_id": "Michael Dixon",
+                    "user_href": "/profile/Michael-Dixon-29"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Chuck Rogers",
+                "href": "/profile/Chuck-Rogers-1"
+            },
+            "answer_text": "They have access to tools we mere mortals do not, but they also use a variety of third party tools, in addition to tools to which the rest of us can also use: - Diagnostics Mode. This is built-in to more recent Macs. Restart while holding down the \"D\" key. This opens up a screen that allows you to test the hardware components in your Mac. - Recovery Mode. Newer Macs have some space on the hard drive set aside for especially to assist with recovering a main partition with problems. To access it hold down the OPTION key while restarting. Keep holding down the OPTION key until you see some choices for how to boot up the machine. The Recovery disk should be one of them. - Disk Utility. This application is in your Utilities folder. It can repair simple to moderate directory damage and repair permissions on files and folders (useful if you are having problems opening certain files, or sometimes if an application quits unexpectedly). You can also reformat a disk or make copies of folders or entire disks to a disk image using Disk Utility. Disk Utility is the app you will use if you boot up from the Recovery partition. - Disk Warrior. (The Disk Utility for Mac Disk Repair, Mac Directory Repair, Mac Disk Recovery, Mac Data Recovery) I use Disk Warrior all the time. It is like Disk Utility's First Aid on steroids. - Tech Tool Pro. (TechTool Pro 8) I have seen Apple Geniuses use this and it used to come with AppleCare. It is a great utility that can diagnose a lot of hardware and hard drive issues. It's the next thing I usually go to if I am still having problems after running Disk Warrior. - Drive Genius. (Drive Genius 4 | Prosoft Engineering) Prosoft Engineering has some great products. This does a lot of the same things Tech Tool Pro does. It also allows you to create a bootable partition (useful for older Macs) and it will create a bootable USB thumb drive for you with it's software already installed. This is very convenient and useful. - Data Rescue. (Data Rescue 4 | Prosoft Engineering) When all else fails I run this. It will almost always recover stuff the other programs can't. If there is an area on your hard drive that is beyond repair, nothing can recover that data. But sometimes other utilities stop when they encounter bad blocks. Data Rescue will skip the bad blocks and keep plugging along. ",
+            "date": "Answered August 9, 2015",
+            "views": "48",
+            "upvotes": " View 4 Upvoters ",
+            "upvoters": [
+                {
+                    "user_id": "Michael Vogel",
+                    "user_href": "/profile/Michael-Vogel-5"
+                },
+                {
+                    "user_id": "Shaheel Shahzad",
+                    "user_href": "/profile/Shaheel-Shahzad"
+                },
+                {
+                    "user_id": "Rodolfo Melchior",
+                    "user_href": "/profile/Rodolfo-Melchior"
+                },
+                {
+                    "user_id": "Scott Terpkosh",
+                    "user_href": "/profile/Scott-Terpkosh"
+                }
+            ]
+        }
+    ]
+}

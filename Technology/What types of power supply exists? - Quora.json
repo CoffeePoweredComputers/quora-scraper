@@ -1,0 +1,144 @@
+{
+    "title": "What types of power supply exists? - Quora",
+    "tags": [
+        "Power Supplies",
+        "Electricity",
+        "Electronics"
+    ],
+    "response": [
+        {
+            "author_info": {
+                "name": "Meha Bhalodiya",
+                "href": "/profile/Meha-Bhalodiya"
+            },
+            "answer_text": "There are three major kinds of power supplies: unregulated (also called brute force), linear regulated, and switching. A fourth type of power supply circuit called the ripple-regulated, is a hybrid between the \u201cbrute force\u201d and \u201cswitching\u201d designs, and merits a subsection to itself. Unregulated An unregulated power supply is the most rudimentary type, consisting of a transformer, rectifier, and low-pass filter. These power supplies typically exhibit a lot of ripple voltage (i.e. rapidly-varying instability) and other AC \u201cnoise\u201d superimposed on the DC power. If the input voltage varies, the output voltage will vary by a proportional amount. The advantage of an unregulated supply is that it\u2019s cheap, simple, and efficient. Linear regulated A linear regulated supply is simply a \u201cbrute force\u201d (unregulated) power supply followed by a transistor circuit operating in its \u201cactive,\u201d or \u201clinear\u201d mode, hence the name linear regulator. (Obvious in retrospect, isn\u2019t it?) A typical linear regulator is designed to output a fixed voltage for a wide range of input voltages, and it simply drops any excess input voltage to allow a maximum output voltage to the load. This excess voltage drop results in significant power dissipation in the form of heat. If the input voltage gets too low, the transistor circuit will lose regulation, meaning that it will fail to keep the voltage steady. It can only drop excess voltage, not make up for a deficiency in voltage from the brute force section of the circuit. Therefore, you have to keep the input voltage at least 1 to 3 volts higher than the desired output, depending on the regulator type. This means the power equivalent of at least 1 to 3 volts multiplied by the full load current will be dissipated by the regulator circuit, generating a lot of heat. This makes linear regulated power supplies rather inefficient. Also, to get rid of all that heat they have to use large heat sinks which make them large, heavy, and expensive. Switching A switching regulated power supply (\u201cswitcher\u201d) is an effort to realize the advantages of both brute force and linear regulated designs (small, efficient, and cheap, but also \u201cclean,\u201d stable output voltage). Switching power supplies work on the principle of rectifying the incoming AC power line voltage into DC, re-converting it into high-frequency square-wave AC through transistors operated as on/off switches, stepping that AC voltage up or down by using a lightweight transformer, then rectifying the transformer\u2019s AC output into DC and filtering for final output. Voltage regulation is achieved by altering the \u201cduty cycle\u201d of the DC-to-AC inversion on the transformer\u2019s primary side. In addition to lighter weight because of a smaller transformer core, switchers have another tremendous advantage over the prior two designs: this type of power supply can be made so totally independent of the input voltage that it can work on any electric power system in the world; these are called \u201cuniversal\u201d power supplies. The downside of switchers is that they are more complex, and due to their operation they tend to generate a lot of high-frequency AC \u201cnoise\u201d on the power line. Most switchers also have significant ripple voltage on their outputs. With the cheaper types, this noise and ripple can be as bad as for an unregulated power supply; such low-end switchers aren\u2019t worthless, because they still provide a stable average output voltage, and there\u2019s the \u201cuniversal\u201d input capability. Expensive switchers are ripple-free and have noise nearly as low as for some a linear types; these switchers tend to be as expensive as linear supplies. The reason to use an expensive switcher instead of a good linear is if you need universal power system compatibility or high efficiency. High efficiency, light weight, and small size are the reasons switching power supplies are almost universally used for powering digital computer circuitry. Ripple regulated A ripple-regulated power supply is an alternative to the linear regulated design scheme: a \u201cbrute force\u201d power supply (transformer, rectifier, filter) constitutes the \u201cfront end\u201d of the circuit, but a transistor operated strictly in it\u2019s on/off (saturation/cutoff) modes transfers DC power to a large capacitor as needed to maintain the output voltage between a high and a low setpoint. As in switchers, the transistor in a ripple regulator never passes current while in its \u201cactive,\u201d or \u201clinear,\u201d mode for any substantial length of time, meaning that very little energy will be wasted in the form of heat. However, the biggest drawback to this regulatory scheme is the necessary presence of some ripple voltage on the output, as the DC voltage varies between the two voltage control setpoints. Also, this ripple voltage varies in frequency depending on load current, which makes final filtering of the DC power more difficult. Ripple regulator circuits tend to be quite a bit simpler than switcher circuitry, and they need not handle the high power line voltages that switcher transistors must handle, making them safer to work on. ",
+            "date": "Answered February 21, 2019",
+            "views": "33",
+            "upvotes": " View 4 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aira Blanquera",
+                    "user_href": "/profile/Aira-Blanquera"
+                },
+                {
+                    "user_id": "David M. Herd",
+                    "user_href": "/profile/David-M-Herd"
+                },
+                {
+                    "user_id": "Andrews Trevor",
+                    "user_href": "/profile/Andrews-Trevor"
+                },
+                {
+                    "user_id": "Krishna Reddy",
+                    "user_href": "/profile/Krishna-Reddy-695"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Daniel Smith",
+                "href": "/profile/Daniel-Smith-1298"
+            },
+            "answer_text": "Mainly DC-DC and AC-DC. DC-DC - these are the mode for supplying power. Switch-mode power supplies are a popular and sometimes necessary choice for DC-DC power conversion. These circuits offer distinct benefits and tradeoffs when compared to alternative methods of converting DC power. I think from Ecsintl, Energy Control Systems having years of work experience in this field will guide better. ",
+            "date": "Answered October 23, 2020",
+            "views": "59",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Pablo Samaritano",
+                "href": "/profile/Pablo-Samaritano"
+            },
+            "answer_text": "The term power supply normally refers to circuits designed to deliver DC to a particular load. In terms of efficiency and design there are two - linear and switch mode. Linear power supplies use diodes as main rectifying devices and may be categorised as half-wave, full wave - centre tapped, or full wave bridge type. Efficiency for this type of power supply is low, 31.8% for the half wave and 63.6 % for full wave. Due to the low frequency of the supply AC, it would be difficult to achieve high efficiency for this type of circuit. Switch mode power supplies use power MOSFETS and pulse width modulators to achieve an efficiency as high as 96% in commercial rectifier modules. ",
+            "date": "Answered September 17, 2018",
+            "views": "19",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Shaun Marsh",
+                "href": "/profile/Shaun-Marsh-17"
+            },
+            "answer_text": "Electronic Power SuppliesUninterruptible Power Supplies (UPS)Power SuppliesDC Power SuppliesAC Power SuppliesDC To DC Power SuppliesAC To DC Power SuppliesDC To AC Power Supplies",
+            "date": "Answered August 3, 2015",
+            "views": "14",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Aakash Saini",
+                    "user_href": "/profile/Aakash-Saini-2"
+                },
+                {
+                    "user_id": "Loring Chien",
+                    "user_href": "/profile/Loring-Chien"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Eugene Berti",
+                "href": "/profile/Eugene-Berti"
+            },
+            "answer_text": "Fundamentally two types, linear and switching power supplies. The later are cheaper, lighter, but noisier (electrically) and they have a lower MTBF. ",
+            "date": "Answered October 28, 2017",
+            "views": "1",
+            "upvotes": " View 2 Upvoters",
+            "upvoters": [
+                {
+                    "user_id": "Waldo Alvarez",
+                    "user_href": "/profile/Waldo-Alvarez"
+                },
+                {
+                    "user_id": "Ian McKenzie",
+                    "user_href": "/profile/Ian-McKenzie-35"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Johnny Sanders",
+                "href": "/profile/Johnny-Sanders-21"
+            },
+            "answer_text": "List of types of Commercial Power Supplies: UnregulatedLinear regulatedSwitchingRipple regulated",
+            "date": "Answered June 25, 2018",
+            "views": "43",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "BAU BI",
+                "href": "/profile/BAU-BI-2"
+            },
+            "answer_text": "AC Power SupplyDC Power Supply",
+            "date": "Answered October 28, 2017",
+            "views": "44",
+            "upvotes": " View 1 Upvoter",
+            "upvoters": [
+                {
+                    "user_id": "Michael Holman",
+                    "user_href": "/profile/Michael-Holman-15"
+                }
+            ]
+        },
+        {
+            "author_info": {
+                "name": "Vamshi Konda",
+                "href": "/profile/Vamshi-Konda-3"
+            },
+            "answer_text": "AC DC Battery ",
+            "date": "Answered October 11, 2019",
+            "views": "145",
+            "upvotes": "0"
+        },
+        {
+            "author_info": {
+                "name": "Mohan Rao",
+                "href": "/profile/Mohan-Rao-352"
+            },
+            "answer_text": "2 ",
+            "date": "Answered October 29, 2017",
+            "views": "45",
+            "upvotes": "0"
+        }
+    ]
+}
